@@ -1,5 +1,7 @@
 # Federal Program Inventory Pilot Data Extraction
-:warning: **This repository and README are still under active development and has not yet reached release stage.**
+
+> [!WARNING]
+> **This repository and README are still under active development and have not yet reached release stage.**
 
 ## About the data extraction
 The data extaction contained in this directory pulls data from SAM.gov and USASpending.gov, for use in the Federal Program Invetory (FPI) pilot. This pilot is designed to explore whether Assistance Listings data from SAM.gov is appropriate to use as a foundation for 
