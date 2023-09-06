@@ -37,7 +37,7 @@ If you would like to extract the data from USASpending.gov, ensure your system i
 
 1. Run `fetch-usa-spending.py`
 
-This process will generate one file per program in the `source_files/awards` directory, containing the necessary data in JSON format. Note that this process will make several thousand calls to SAM.gov's APIs to retrive the data, as many calls are required per program.
+This process will generate one file per program in the `source_files/awards` directory, containing the necessary data in JSON format. Note that this process will make several hundred thousand calls to USASpending.gov's APIs to retrive the data, as many calls are required per program.
 
 The FPI pilot team is exploring database-driven solutions to securing this data and will update this repository to reflect replication steps and related scripts, as appropriate.
 
