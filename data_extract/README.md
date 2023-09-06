@@ -14,7 +14,7 @@ Before getting started, you need to make sure that your system is setup properly
 
 ## Running the extact
 > [!NOTE]
-> This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh  data, it is likely sufficient to use these pre-existing files and skip the extract below.
+> This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh the data, it is likely sufficient to use these pre-existing files and skip the extract below.
 
 ### SAM.gov
 If you determine you need to extract the data from SAM.gov, ensure your system is setup, with your virtual environment enabled, and return to this directory. To extract the necessary data from SAM.gov:
@@ -41,7 +41,20 @@ This process will generate one file per program in the `source_files/awards` dir
 
 The FPI pilot team is exploring database-driven solutions to securing this data and will update this repository to reflect replication steps and related scripts, as appropriate.
 
-## Extraction methods
+## Processing the data
+> [!NOTE]
+> This repository already contains copies of the latest data processed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use these pre-existing files and skip the processing below.
+The data from the SAM.gov and USASpending.gov extracts is processed into flattened, purposed-built, relational CSVs. These CSVs are intended to be imported into PowerBI for analysis by the FPI pilot team. In future iterations of this project, data will be extracted to power the visualizations and data tables on the FPI pilot website.
+
+### SAM.gov
+Processing for the SAM.gov data is currently held in a Jupyter Notebook (`process-sam.ipynb`). To access this file using the Jupyter Notebook interface, run `jupyter notebook` from your virtual environment.
+
+The stages in the Jupyter Notebook are largely leftover from some initial analysis. As a result, it performs some unnecessary computation in the process of producing the flattened CSVs. To produce updated CSVs, perform the steps in the Jupyter Notebook from top-to-bottom. This will produce a number of related, summary CSVs suitable for analysis. The FPI pilot team may update this file in the future to further streamline the process.
+
+### USASpending.gov
+Processing for the USASpending.gov data is held in `process-usa-spending.py`. To process the USASpending.gov data, run this file. It will produce a flattened CSV with summary award data for each program.
+
+## A note on extraction methods
 
 ### SAM.gov
 The Assistance Listings data is extacted from SAM.gov using a variety of calls to public-facing APIs. While SAM.gov makes data publicly available for download in CSV format, use of this data had several issues:
