@@ -1,0 +1,4905 @@
+data.programNumber,value_assistanceUsage
+93.691,Health/Medical
+85.750,Economic Development
+85.750,Elementary/Secondary Education
+85.750,Employment/Labor/Management
+85.750,"Environment (water, air, solid waste, pesticides, radiation)"
+85.750,Food and Nutrition
+85.750,Health/Medical
+85.750,Higher Education (includes Research)
+85.750,Housing
+85.750,Income Security/Social Service/Welfare
+85.750,Agriculture/Forestry/Fish and Game
+85.750,International (includes Export/lmport)
+85.750,"Law, Justice, and Legal Services"
+85.750,"Natural Resources (mineral, water, wildlife, land)"
+85.750,Planning
+85.750,Regional Development
+85.750,Business/Commerce
+85.750,Training
+85.750,Youth Development
+85.750,Vocational Education
+85.750,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+85.750,Communications
+85.750,Community Development (includes Federal surplus property)
+85.750,Construction/Renewal/Rehabilitation
+85.750,Culture/Arts/Humanities
+64.125,Income Security/Social Service/Welfare
+42.011,Culture/Arts/Humanities
+98.008,Food and Nutrition
+93.873,Health/Medical
+93.831,Health/Medical
+93.831,Science and Technology
+93.893,Economic Development
+93.893,Health/Medical
+93.893,Planning
+93.893,Science and Technology
+93.893,Transportation
+93.893,Training
+93.893,Vocational Education
+93.893,Communications
+93.893,Consumer Protection
+64.127,Health/Medical
+64.130,No Functional Application/Unlimited Application
+98.003,International (includes Export/lmport)
+10.868,Energy
+10.868,Agriculture/Forestry/Fish and Game
+10.559,Food and Nutrition
+93.071,Health/Medical
+16.590,"Law, Justice, and Legal Services"
+16.590,Training
+16.888,"Law, Justice, and Legal Services"
+12.340,Science and Technology
+42.014,Culture/Arts/Humanities
+42.014,Libraries/lnformation/Statistics
+93.346,Health/Medical
+93.493,No Functional Application/Unlimited Application
+93.367,"Environment (water, air, solid waste, pesticides, radiation)"
+93.367,Food and Nutrition
+93.367,Training
+93.367,Consumer Protection
+16.556,"Law, Justice, and Legal Services"
+16.556,Training
+10.532,Training
+10.532,Food and Nutrition
+93.959,Health/Medical
+10.754,Business/Commerce
+10.754,Transportation
+10.754,Public Works
+93.053,Health/Medical
+10.767,Economic Development
+10.767,Regional Development
+10.767,Business/Commerce
+10.767,Community Development (includes Federal surplus property)
+93.345,Health/Medical
+42.010,Culture/Arts/Humanities
+42.010,Elementary/Secondary Education
+42.010,Higher Education (includes Research)
+42.010,Libraries/lnformation/Statistics
+42.010,Training
+93.078,Health/Medical
+93.632,Higher Education (includes Research)
+93.632,Training
+32.010,Communications
+93.761,Health/Medical
+10.384,Agriculture/Forestry/Fish and Game
+10.384,Business/Commerce
+10.384,Construction/Renewal/Rehabilitation
+10.384,Economic Development
+10.384,Food and Nutrition
+93.051,Health/Medical
+12.013,Elementary/Secondary Education
+12.013,Higher Education (includes Research)
+12.013,Science and Technology
+12.013,Training
+12.013,Youth Development
+93.044,Income Security/Social Service/Welfare
+93.044,Planning
+17.791,Employment/Labor/Management
+17.791,Higher Education (includes Research)
+15.437,No Functional Application/Unlimited Application
+15.437,"Natural Resources (mineral, water, wildlife, land)"
+15.435,"Natural Resources (mineral, water, wildlife, land)"
+15.438,No Functional Application/Unlimited Application
+15.438,"Natural Resources (mineral, water, wildlife, land)"
+15.439,No Functional Application/Unlimited Application
+15.439,"Natural Resources (mineral, water, wildlife, land)"
+15.440,No Functional Application/Unlimited Application
+15.440,"Natural Resources (mineral, water, wildlife, land)"
+15.682,Employment/Labor/Management
+15.682,"Natural Resources (mineral, water, wildlife, land)"
+10.223,Higher Education (includes Research)
+10.223,Agriculture/Forestry/Fish and Game
+10.223,"Natural Resources (mineral, water, wildlife, land)"
+10.311,Higher Education (includes Research)
+10.311,Agriculture/Forestry/Fish and Game
+10.311,"Natural Resources (mineral, water, wildlife, land)"
+10.311,Science and Technology
+15.680,"Natural Resources (mineral, water, wildlife, land)"
+15.683,"Natural Resources (mineral, water, wildlife, land)"
+10.329,Higher Education (includes Research)
+10.329,Agriculture/Forestry/Fish and Game
+10.329,"Natural Resources (mineral, water, wildlife, land)"
+10.329,Science and Technology
+10.212,Agriculture/Forestry/Fish and Game
+10.212,Science and Technology
+10.212,Business/Commerce
+15.430,"Natural Resources (mineral, water, wildlife, land)"
+15.981,"Natural Resources (mineral, water, wildlife, land)"
+97.005,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.107,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.040,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.131,Training
+97.034,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.088,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.050,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.048,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.046,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.061,Higher Education (includes Research)
+97.033,"Law, Justice, and Legal Services"
+97.024,Food and Nutrition
+97.024,Housing
+97.025,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.030,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.123,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.032,Health/Medical
+15.670,"Natural Resources (mineral, water, wildlife, land)"
+15.434,"Natural Resources (mineral, water, wildlife, land)"
+15.808,"Natural Resources (mineral, water, wildlife, land)"
+15.669,"Natural Resources (mineral, water, wildlife, land)"
+15.679,"Natural Resources (mineral, water, wildlife, land)"
+97.128,Communications
+97.120,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.076,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.696,Health/Medical
+10.231,Higher Education (includes Research)
+12.617,Economic Development
+12.617,Community Development (includes Federal surplus property)
+10.874,Health/Medical
+15.427,"Natural Resources (mineral, water, wildlife, land)"
+15.508,"Environment (water, air, solid waste, pesticides, radiation)"
+15.516,"Natural Resources (mineral, water, wildlife, land)"
+15.684,"Natural Resources (mineral, water, wildlife, land)"
+15.567,"Natural Resources (mineral, water, wildlife, land)"
+15.686,"Natural Resources (mineral, water, wildlife, land)"
+15.525,"Natural Resources (mineral, water, wildlife, land)"
+15.685,"Natural Resources (mineral, water, wildlife, land)"
+15.076,"Natural Resources (mineral, water, wildlife, land)"
+94.027,Community Development (includes Federal surplus property)
+10.328,Health/Medical
+10.328,Higher Education (includes Research)
+10.328,Agriculture/Forestry/Fish and Game
+10.328,"Natural Resources (mineral, water, wildlife, land)"
+10.328,Science and Technology
+10.328,Business/Commerce
+10.328,Consumer Protection
+64.014,Health/Medical
+64.015,Health/Medical
+64.026,Health/Medical
+64.053,Health/Medical
+15.635,"Natural Resources (mineral, water, wildlife, land)"
+15.634,"Natural Resources (mineral, water, wildlife, land)"
+87.003,Communications
+15.636,"Natural Resources (mineral, water, wildlife, land)"
+15.628,"Natural Resources (mineral, water, wildlife, land)"
+42.015,Culture/Arts/Humanities
+42.015,Elementary/Secondary Education
+42.015,Higher Education (includes Research)
+42.015,Libraries/lnformation/Statistics
+42.015,Recreation (includes Historic Preservation)
+42.015,Vocational Education
+15.629,"Natural Resources (mineral, water, wildlife, land)"
+15.655,"Natural Resources (mineral, water, wildlife, land)"
+15.616,Maritime
+97.138,Communications
+97.138,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.132,Income Security/Social Service/Welfare
+97.132,"Law, Justice, and Legal Services"
+97.132,Planning
+97.132,Training
+97.132,Vocational Rehabilitation
+15.657,"Natural Resources (mineral, water, wildlife, land)"
+97.043,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.069,"Natural Resources (mineral, water, wildlife, land)"
+97.018,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+11.303,Economic Development
+11.303,Training
+93.243,No Functional Application/Unlimited Application
+93.243,Training
+16.056,Planning
+16.056,"Law, Justice, and Legal Services"
+15.575,"Natural Resources (mineral, water, wildlife, land)"
+11.039,Business/Commerce
+11.039,Economic Development
+11.039,Higher Education (includes Research)
+11.039,Planning
+11.039,Public Works
+11.039,Regional Development
+11.039,Science and Technology
+11.039,Training
+93.347,Health/Medical
+12.610,Planning
+12.610,Community Development (includes Federal surplus property)
+98.001,International (includes Export/lmport)
+10.850,Energy
+10.850,Community Development (includes Federal surplus property)
+16.309,"Law, Justice, and Legal Services"
+15.637,"Natural Resources (mineral, water, wildlife, land)"
+93.698,Income Security/Social Service/Welfare
+15.639,"Natural Resources (mineral, water, wildlife, land)"
+15.640,"Natural Resources (mineral, water, wildlife, land)"
+15.666,Agriculture/Forestry/Fish and Game
+15.666,"Natural Resources (mineral, water, wildlife, land)"
+15.661,"Natural Resources (mineral, water, wildlife, land)"
+15.667,"Natural Resources (mineral, water, wildlife, land)"
+15.660,"Natural Resources (mineral, water, wildlife, land)"
+15.662,"Natural Resources (mineral, water, wildlife, land)"
+15.665,"Environment (water, air, solid waste, pesticides, radiation)"
+15.665,"Natural Resources (mineral, water, wildlife, land)"
+15.663,"Environment (water, air, solid waste, pesticides, radiation)"
+15.658,"Natural Resources (mineral, water, wildlife, land)"
+93.661,Health/Medical
+93.661,Science and Technology
+16.055,"Law, Justice, and Legal Services"
+19.019,International (includes Export/lmport)
+93.866,Higher Education (includes Research)
+93.866,Training
+16.021,"Law, Justice, and Legal Services"
+16.021,Planning
+16.021,Training
+97.067,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.308,Health/Medical
+93.308,Higher Education (includes Research)
+93.990,Health/Medical
+10.854,Economic Development
+10.854,Communications
+10.854,Community Development (includes Federal surplus property)
+12.600,Economic Development
+12.600,Planning
+12.600,Community Development (includes Federal surplus property)
+93.325,Income Security/Social Service/Welfare
+16.048,"Law, Justice, and Legal Services"
+93.234,Health/Medical
+93.234,Planning
+93.234,Training
+93.234,Communications
+16.587,Income Security/Social Service/Welfare
+16.587,"Law, Justice, and Legal Services"
+21.006,Income Security/Social Service/Welfare
+16.203,"Law, Justice, and Legal Services"
+84.019,Higher Education (includes Research)
+93.936,Health/Medical
+93.936,Higher Education (includes Research)
+16.589,Income Security/Social Service/Welfare
+16.589,"Law, Justice, and Legal Services"
+10.755,Business/Commerce
+10.755,Community Development (includes Federal surplus property)
+10.755,Construction/Renewal/Rehabilitation
+10.755,Employment/Labor/Management
+10.755,Regional Development
+10.860,Agriculture/Forestry/Fish and Game
+10.860,Business/Commerce
+10.860,Community Development (includes Federal surplus property)
+10.860,Economic Development
+10.860,Energy
+10.860,"Environment (water, air, solid waste, pesticides, radiation)"
+10.860,Food and Nutrition
+10.860,Health/Medical
+10.860,Regional Development
+10.860,Science and Technology
+96.007,Higher Education (includes Research)
+96.007,Income Security/Social Service/Welfare
+93.432,Vocational Education
+93.432,Vocational Rehabilitation
+16.026,Science and Technology
+11.400,Libraries/lnformation/Statistics
+93.734,Health/Medical
+11.804,Economic Development
+11.804,Business/Commerce
+16.027,"Law, Justice, and Legal Services"
+16.027,Training
+16.019,"Law, Justice, and Legal Services"
+10.870,Economic Development
+10.870,Business/Commerce
+10.870,Training
+10.858,Public Works
+10.858,Regional Development
+84.421,No Functional Application/Unlimited Application
+84.421,Vocational Rehabilitation
+98.006,Elementary/Secondary Education
+98.006,Higher Education (includes Research)
+93.343,Health/Medical
+10.574,Food and Nutrition
+10.574,Training
+97.008,Planning
+97.008,Transportation
+97.008,Training
+97.008,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.008,Communications
+10.871,Agriculture/Forestry/Fish and Game
+10.871,Business/Commerce
+10.871,Vocational Education
+97.075,Business/Commerce
+16.889,Income Security/Social Service/Welfare
+93.983,Health/Medical
+10.859,Energy
+10.771,Economic Development
+32.003,Communications
+12.614,Economic Development
+39.002,Community Development (includes Federal surplus property)
+93.876,Health/Medical
+93.876,Science and Technology
+93.876,Training
+97.044,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.292,Consumer Protection
+10.292,"Environment (water, air, solid waste, pesticides, radiation)"
+10.292,Higher Education (includes Research)
+10.417,Agriculture/Forestry/Fish and Game
+93.788,Health/Medical
+93.788,Planning
+93.788,Training
+10.867,Economic Development
+10.867,Energy
+10.867,Business/Commerce
+85.200,Higher Education (includes Research)
+85.200,Science and Technology
+97.045,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.056,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+11.034,Economic Development
+11.034,Business/Commerce
+93.041,Income Security/Social Service/Welfare
+93.285,Health/Medical
+10.782,Agriculture/Forestry/Fish and Game
+93.835,Health/Medical
+11.478,Maritime
+16.566,Higher Education (includes Research)
+16.566,"Law, Justice, and Legal Services"
+93.982,Health/Medical
+93.997,Health/Medical
+93.997,"Law, Justice, and Legal Services"
+16.524,"Law, Justice, and Legal Services"
+93.630,No Functional Application/Unlimited Application
+98.011,International (includes Export/lmport)
+93.883,Health/Medical
+93.882,Health/Medical
+16.752,"Law, Justice, and Legal Services"
+16.752,Consumer Protection
+16.752,Elementary/Secondary Education
+16.752,Training
+12.440,Higher Education (includes Research)
+12.369,Higher Education (includes Research)
+12.369,Youth Development
+12.558,Elementary/Secondary Education
+10.143,No Functional Application/Unlimited Application
+95.003,Training
+97.009,Income Security/Social Service/Welfare
+15.073,"Natural Resources (mineral, water, wildlife, land)"
+97.092,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.110,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.133,Planning
+97.133,Training
+97.133,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.436,No Functional Application/Unlimited Application
+15.436,"Natural Resources (mineral, water, wildlife, land)"
+15.815,"Natural Resources (mineral, water, wildlife, land)"
+15.817,"Natural Resources (mineral, water, wildlife, land)"
+15.812,"Natural Resources (mineral, water, wildlife, land)"
+15.978,"Natural Resources (mineral, water, wildlife, land)"
+15.818,Higher Education (includes Research)
+15.818,Science and Technology
+12.333,Science and Technology
+12.333,Training
+12.333,Communications
+12.333,Elementary/Secondary Education
+12.333,Employment/Labor/Management
+12.333,Energy
+12.333,Food and Nutrition
+12.333,Health/Medical
+12.333,Higher Education (includes Research)
+12.333,"Law, Justice, and Legal Services"
+12.333,Libraries/lnformation/Statistics
+12.333,Maritime
+12.333,Planning
+12.333,Public Works
+12.333,Regional Development
+12.333,Vocational Education
+12.333,International (includes Export/lmport)
+15.814,Science and Technology
+15.810,"Natural Resources (mineral, water, wildlife, land)"
+15.805,Higher Education (includes Research)
+15.805,Planning
+15.805,Training
+10.977,Agriculture/Forestry/Fish and Game
+16.058,"Law, Justice, and Legal Services"
+16.057,Income Security/Social Service/Welfare
+93.645,Income Security/Social Service/Welfare
+93.669,Income Security/Social Service/Welfare
+93.643,Income Security/Social Service/Welfare
+10.135,Agriculture/Forestry/Fish and Game
+93.472,Income Security/Social Service/Welfare
+97.127,Elementary/Secondary Education
+97.127,Higher Education (includes Research)
+97.127,Health/Medical
+97.127,Youth Development
+97.127,Training
+97.127,Vocational Education
+15.621,"Natural Resources (mineral, water, wildlife, land)"
+15.626,"Natural Resources (mineral, water, wildlife, land)"
+15.623,"Natural Resources (mineral, water, wildlife, land)"
+15.619,"Natural Resources (mineral, water, wildlife, land)"
+15.620,"Natural Resources (mineral, water, wildlife, land)"
+15.622,"Natural Resources (mineral, water, wildlife, land)"
+15.664,"Natural Resources (mineral, water, wildlife, land)"
+15.608,Agriculture/Forestry/Fish and Game
+15.608,"Natural Resources (mineral, water, wildlife, land)"
+15.605,Higher Education (includes Research)
+15.605,Agriculture/Forestry/Fish and Game
+15.605,Recreation (includes Historic Preservation)
+14.023,Community Development (includes Federal surplus property)
+14.023,Housing
+14.023,Planning
+14.023,Regional Development
+15.614,"Natural Resources (mineral, water, wildlife, land)"
+15.099,"Environment (water, air, solid waste, pesticides, radiation)"
+15.099,"Natural Resources (mineral, water, wildlife, land)"
+15.615,"Natural Resources (mineral, water, wildlife, land)"
+15.615,Planning
+15.647,"Natural Resources (mineral, water, wildlife, land)"
+15.643,"Natural Resources (mineral, water, wildlife, land)"
+15.645,"Natural Resources (mineral, water, wildlife, land)"
+15.651,"Natural Resources (mineral, water, wildlife, land)"
+97.082,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.653,Agriculture/Forestry/Fish and Game
+15.653,"Natural Resources (mineral, water, wildlife, land)"
+10.976,Agriculture/Forestry/Fish and Game
+11.023,Business/Commerce
+11.023,Economic Development
+11.023,Employment/Labor/Management
+11.023,Regional Development
+11.023,Science and Technology
+11.023,Training
+10.307,Higher Education (includes Research)
+10.307,Agriculture/Forestry/Fish and Game
+10.307,"Natural Resources (mineral, water, wildlife, land)"
+10.217,Higher Education (includes Research)
+10.319,Higher Education (includes Research)
+10.319,Agriculture/Forestry/Fish and Game
+10.319,Science and Technology
+10.322,Higher Education (includes Research)
+10.519,Elementary/Secondary Education
+10.519,Higher Education (includes Research)
+10.519,Vocational Rehabilitation
+10.220,Higher Education (includes Research)
+10.220,Agriculture/Forestry/Fish and Game
+10.220,Community Development (includes Federal surplus property)
+10.233,Libraries/lnformation/Statistics
+15.875,Economic Development
+15.875,Health/Medical
+15.875,Business/Commerce
+15.875,Community Development (includes Federal surplus property)
+15.875,Construction/Renewal/Rehabilitation
+15.875,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.875,Communications
+15.875,Energy
+15.875,"Environment (water, air, solid waste, pesticides, radiation)"
+15.875,Food and Nutrition
+15.875,"Law, Justice, and Legal Services"
+15.875,Libraries/lnformation/Statistics
+15.875,Maritime
+15.875,Public Works
+15.875,Recreation (includes Historic Preservation)
+15.875,Training
+15.875,Vocational Education
+15.875,Youth Development
+15.875,Culture/Arts/Humanities
+15.875,"Natural Resources (mineral, water, wildlife, land)"
+15.875,Planning
+15.875,Science and Technology
+15.875,Transportation
+15.875,Vocational Rehabilitation
+15.671,"Natural Resources (mineral, water, wildlife, land)"
+15.572,"Natural Resources (mineral, water, wildlife, land)"
+15.572,"Environment (water, air, solid waste, pesticides, radiation)"
+15.576,"Natural Resources (mineral, water, wildlife, land)"
+15.504,"Natural Resources (mineral, water, wildlife, land)"
+93.566,Employment/Labor/Management
+93.566,Health/Medical
+93.566,Income Security/Social Service/Welfare
+10.582,Food and Nutrition
+93.556,Income Security/Social Service/Welfare
+66.951,Agriculture/Forestry/Fish and Game
+66.951,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+66.951,Communications
+66.951,Culture/Arts/Humanities
+66.951,Elementary/Secondary Education
+66.951,"Environment (water, air, solid waste, pesticides, radiation)"
+66.951,Food and Nutrition
+66.951,Higher Education (includes Research)
+66.951,Training
+66.951,Youth Development
+66.950,"Environment (water, air, solid waste, pesticides, radiation)"
+66.950,Higher Education (includes Research)
+66.611,"Environment (water, air, solid waste, pesticides, radiation)"
+66.610,"Environment (water, air, solid waste, pesticides, radiation)"
+66.610,Planning
+66.610,Science and Technology
+66.610,Training
+10.137,Agriculture/Forestry/Fish and Game
+10.147,Agriculture/Forestry/Fish and Game
+10.147,Communications
+10.147,Training
+10.142,Agriculture/Forestry/Fish and Game
+66.959,Energy
+66.959,"Environment (water, air, solid waste, pesticides, radiation)"
+10.145,Agriculture/Forestry/Fish and Game
+10.117,Energy
+10.757,Economic Development
+10.757,Energy
+10.149,Agriculture/Forestry/Fish and Game
+93.087,Health/Medical
+93.087,Income Security/Social Service/Welfare
+93.567,Income Security/Social Service/Welfare
+93.587,Income Security/Social Service/Welfare
+93.587,Youth Development
+93.587,Communications
+93.587,Culture/Arts/Humanities
+11.040,Economic Development
+11.040,Higher Education (includes Research)
+11.040,International (includes Export/lmport)
+11.040,Public Works
+11.040,Regional Development
+11.040,Science and Technology
+11.040,Training
+11.040,Vocational Education
+11.040,Planning
+11.040,Business/Commerce
+93.600,Income Security/Social Service/Welfare
+66.129,Community Development (includes Federal surplus property)
+66.129,"Environment (water, air, solid waste, pesticides, radiation)"
+66.129,Planning
+66.129,Public Works
+66.129,Science and Technology
+66.129,Training
+15.566,"Environment (water, air, solid waste, pesticides, radiation)"
+15.566,"Natural Resources (mineral, water, wildlife, land)"
+15.535,"Natural Resources (mineral, water, wildlife, land)"
+93.564,Income Security/Social Service/Welfare
+93.597,Income Security/Social Service/Welfare
+66.125,"Environment (water, air, solid waste, pesticides, radiation)"
+66.312,"Environment (water, air, solid waste, pesticides, radiation)"
+66.306,Agriculture/Forestry/Fish and Game
+66.306,Communications
+66.306,Community Development (includes Federal surplus property)
+66.306,Economic Development
+66.306,Elementary/Secondary Education
+66.306,Employment/Labor/Management
+66.306,Energy
+66.306,"Environment (water, air, solid waste, pesticides, radiation)"
+66.306,Food and Nutrition
+66.306,Health/Medical
+66.306,Housing
+66.306,Planning
+66.306,Science and Technology
+66.306,Training
+66.306,Youth Development
+66.124,"Environment (water, air, solid waste, pesticides, radiation)"
+66.204,"Environment (water, air, solid waste, pesticides, radiation)"
+10.069,Agriculture/Forestry/Fish and Game
+66.605,"Environment (water, air, solid waste, pesticides, radiation)"
+66.615,Agriculture/Forestry/Fish and Game
+66.615,Communications
+66.615,Community Development (includes Federal surplus property)
+66.615,Construction/Renewal/Rehabilitation
+66.615,Culture/Arts/Humanities
+66.615,Elementary/Secondary Education
+66.615,Employment/Labor/Management
+66.615,Energy
+66.615,"Environment (water, air, solid waste, pesticides, radiation)"
+66.615,Food and Nutrition
+66.615,Health/Medical
+66.615,Housing
+66.615,Planning
+66.615,Public Works
+66.615,Recreation (includes Historic Preservation)
+66.615,Science and Technology
+66.615,Training
+66.615,Youth Development
+66.963,"Environment (water, air, solid waste, pesticides, radiation)"
+66.604,"Environment (water, air, solid waste, pesticides, radiation)"
+66.604,Agriculture/Forestry/Fish and Game
+66.604,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+66.604,Communications
+66.604,Community Development (includes Federal surplus property)
+66.604,Economic Development
+66.604,Elementary/Secondary Education
+66.604,Employment/Labor/Management
+66.604,Energy
+66.604,Food and Nutrition
+66.604,Health/Medical
+66.604,Housing
+66.604,Training
+66.604,Youth Development
+66.309,"Environment (water, air, solid waste, pesticides, radiation)"
+66.309,Community Development (includes Federal surplus property)
+66.309,Economic Development
+66.309,Planning
+66.309,Training
+10.051,Agriculture/Forestry/Fish and Game
+10.114,Agriculture/Forestry/Fish and Game
+66.965,"Environment (water, air, solid waste, pesticides, radiation)"
+66.965,Planning
+66.609,"Environment (water, air, solid waste, pesticides, radiation)"
+11.307,Economic Development
+11.307,Planning
+11.307,Training
+11.307,Business/Commerce
+11.307,Regional Development
+11.307,Science and Technology
+11.307,Vocational Education
+11.307,International (includes Export/lmport)
+15.431,"Natural Resources (mineral, water, wildlife, land)"
+11.312,Economic Development
+15.532,Agriculture/Forestry/Fish and Game
+15.532,"Natural Resources (mineral, water, wildlife, land)"
+15.980,"Natural Resources (mineral, water, wildlife, land)"
+11.300,Economic Development
+11.300,Regional Development
+97.062,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.106,"Law, Justice, and Legal Services"
+97.106,Maritime
+97.106,Planning
+97.106,Regional Development
+97.106,Training
+97.106,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.681,Agriculture/Forestry/Fish and Game
+15.681,"Natural Resources (mineral, water, wildlife, land)"
+97.130,Higher Education (includes Research)
+97.130,Planning
+93.591,Income Security/Social Service/Welfare
+93.671,Income Security/Social Service/Welfare
+93.592,Income Security/Social Service/Welfare
+93.497,Income Security/Social Service/Welfare
+93.496,Income Security/Social Service/Welfare
+93.489,Income Security/Social Service/Welfare
+93.489,Construction/Renewal/Rehabilitation
+97.141,Transportation
+97.141,Food and Nutrition
+97.141,Housing
+97.010,Employment/Labor/Management
+97.010,"Law, Justice, and Legal Services"
+97.010,Training
+64.037,No Functional Application/Unlimited Application
+93.674,Income Security/Social Service/Welfare
+93.674,Youth Development
+10.116,Agriculture/Forestry/Fish and Game
+10.449,No Functional Application/Unlimited Application
+10.099,Agriculture/Forestry/Fish and Game
+10.099,"Natural Resources (mineral, water, wildlife, land)"
+10.971,Agriculture/Forestry/Fish and Game
+10.971,Communications
+10.971,"Environment (water, air, solid waste, pesticides, radiation)"
+10.971,Food and Nutrition
+10.971,Higher Education (includes Research)
+10.971,"Natural Resources (mineral, water, wildlife, land)"
+10.971,Planning
+10.971,Regional Development
+10.971,Training
+10.971,Vocational Education
+14.228,Economic Development
+14.228,Community Development (includes Federal surplus property)
+10.146,Agriculture/Forestry/Fish and Game
+10.146,Communications
+10.146,Training
+10.460,Agriculture/Forestry/Fish and Game
+15.424,"Environment (water, air, solid waste, pesticides, radiation)"
+10.855,Health/Medical
+10.855,Libraries/lnformation/Statistics
+10.886,Communications
+15.423,"Natural Resources (mineral, water, wildlife, land)"
+15.442,Higher Education (includes Research)
+10.863,Agriculture/Forestry/Fish and Game
+10.461,Agriculture/Forestry/Fish and Game
+64.054,No Functional Application/Unlimited Application
+10.226,Higher Education (includes Research)
+10.521,Elementary/Secondary Education
+10.521,Higher Education (includes Research)
+10.521,Agriculture/Forestry/Fish and Game
+10.521,Training
+10.521,Vocational Education
+10.318,Higher Education (includes Research)
+10.318,Agriculture/Forestry/Fish and Game
+10.318,Science and Technology
+15.072,"Natural Resources (mineral, water, wildlife, land)"
+15.072,Science and Technology
+15.072,Training
+11.313,International (includes Export/lmport)
+11.313,Business/Commerce
+11.024,Business/Commerce
+11.024,Economic Development
+11.024,Higher Education (includes Research)
+11.024,International (includes Export/lmport)
+11.024,Regional Development
+11.024,Science and Technology
+15.820,"Natural Resources (mineral, water, wildlife, land)"
+15.820,Science and Technology
+15.807,"Natural Resources (mineral, water, wildlife, land)"
+10.336,Health/Medical
+10.336,Higher Education (includes Research)
+10.336,Agriculture/Forestry/Fish and Game
+10.336,Training
+10.331,Food and Nutrition
+10.331,Health/Medical
+10.331,Agriculture/Forestry/Fish and Game
+10.331,Regional Development
+10.331,Science and Technology
+10.331,Business/Commerce
+10.331,Community Development (includes Federal surplus property)
+93.872,Health/Medical
+93.872,Higher Education (includes Research)
+93.872,Income Security/Social Service/Welfare
+15.526,"Natural Resources (mineral, water, wildlife, land)"
+15.408,Energy
+15.511,"Natural Resources (mineral, water, wildlife, land)"
+15.540,"Natural Resources (mineral, water, wildlife, land)"
+15.428,"Environment (water, air, solid waste, pesticides, radiation)"
+15.428,Higher Education (includes Research)
+15.079,Employment/Labor/Management
+15.079,"Environment (water, air, solid waste, pesticides, radiation)"
+15.013,Higher Education (includes Research)
+15.019,Employment/Labor/Management
+15.441,"Natural Resources (mineral, water, wildlife, land)"
+15.422,"Environment (water, air, solid waste, pesticides, radiation)"
+15.421,"Natural Resources (mineral, water, wildlife, land)"
+97.077,Higher Education (includes Research)
+97.077,Science and Technology
+10.560,Food and Nutrition
+16.305,"Law, Justice, and Legal Services"
+85.402,Higher Education (includes Research)
+70.003,Economic Development
+70.003,International (includes Export/lmport)
+70.003,Business/Commerce
+90.601,Economic Development
+90.601,Employment/Labor/Management
+90.601,Energy
+90.601,"Environment (water, air, solid waste, pesticides, radiation)"
+90.601,Food and Nutrition
+90.601,Health/Medical
+90.601,Higher Education (includes Research)
+90.601,Agriculture/Forestry/Fish and Game
+90.601,"Natural Resources (mineral, water, wildlife, land)"
+90.601,Planning
+90.601,Public Works
+90.601,Recreation (includes Historic Preservation)
+90.601,Regional Development
+90.601,Business/Commerce
+90.601,Transportation
+90.601,Training
+90.601,Vocational Education
+90.601,Communications
+90.601,Community Development (includes Federal surplus property)
+90.601,Construction/Renewal/Rehabilitation
+90.601,Culture/Arts/Humanities
+16.303,"Law, Justice, and Legal Services"
+16.303,Training
+90.199,No Functional Application/Unlimited Application
+16.308,"Law, Justice, and Legal Services"
+16.308,Training
+16.602,Higher Education (includes Research)
+16.602,"Law, Justice, and Legal Services"
+16.602,Training
+16.601,"Law, Justice, and Legal Services"
+34.002,Economic Development
+34.002,Elementary/Secondary Education
+34.002,Employment/Labor/Management
+34.002,Energy
+34.002,Health/Medical
+34.002,Higher Education (includes Research)
+34.002,Regional Development
+34.002,Business/Commerce
+34.002,Training
+34.002,Construction/Renewal/Rehabilitation
+16.304,"Law, Justice, and Legal Services"
+16.710,"Law, Justice, and Legal Services"
+70.002,Economic Development
+70.002,International (includes Export/lmport)
+70.002,Business/Commerce
+85.400,Higher Education (includes Research)
+89.001,Libraries/lnformation/Statistics
+23.011,Economic Development
+85.002,Economic Development
+85.002,Energy
+85.002,"Environment (water, air, solid waste, pesticides, radiation)"
+85.002,Food and Nutrition
+85.002,Health/Medical
+85.002,Housing
+85.002,Agriculture/Forestry/Fish and Game
+85.002,"Law, Justice, and Legal Services"
+85.002,Libraries/lnformation/Statistics
+85.002,Regional Development
+85.002,Business/Commerce
+85.002,Transportation
+85.002,Training
+85.002,Communications
+85.002,Community Development (includes Federal surplus property)
+85.002,Construction/Renewal/Rehabilitation
+23.002,Economic Development
+23.002,Elementary/Secondary Education
+23.002,Employment/Labor/Management
+23.002,Energy
+23.002,"Environment (water, air, solid waste, pesticides, radiation)"
+23.002,Health/Medical
+23.002,Higher Education (includes Research)
+23.002,Housing
+23.002,International (includes Export/lmport)
+23.002,Planning
+23.002,Public Works
+23.002,Recreation (includes Historic Preservation)
+23.002,Regional Development
+23.002,Science and Technology
+23.002,Transportation
+23.002,Training
+23.002,Youth Development
+23.002,Vocational Education
+23.002,Vocational Rehabilitation
+23.002,Community Development (includes Federal surplus property)
+23.002,Construction/Renewal/Rehabilitation
+23.002,Culture/Arts/Humanities
+16.307,"Law, Justice, and Legal Services"
+45.400,Health/Medical
+45.400,Training
+23.009,Economic Development
+23.009,Planning
+16.300,"Law, Justice, and Legal Services"
+16.300,Training
+90.300,Higher Education (includes Research)
+90.300,International (includes Export/lmport)
+90.300,Libraries/lnformation/Statistics
+90.300,Training
+90.300,Culture/Arts/Humanities
+85.802,"Environment (water, air, solid waste, pesticides, radiation)"
+85.802,Food and Nutrition
+85.802,Health/Medical
+85.802,Higher Education (includes Research)
+85.802,Agriculture/Forestry/Fish and Game
+85.802,International (includes Export/lmport)
+85.802,"Natural Resources (mineral, water, wildlife, land)"
+85.802,Science and Technology
+90.100,Economic Development
+90.100,Energy
+90.100,"Environment (water, air, solid waste, pesticides, radiation)"
+90.100,Health/Medical
+90.100,Housing
+90.100,Transportation
+90.100,Training
+90.500,Communications
+96.002,Income Security/Social Service/Welfare
+96.001,Income Security/Social Service/Welfare
+96.001,Vocational Rehabilitation
+16.922,"Law, Justice, and Legal Services"
+89.003,Libraries/lnformation/Statistics
+89.003,Recreation (includes Historic Preservation)
+85.801,"Environment (water, air, solid waste, pesticides, radiation)"
+85.801,Food and Nutrition
+85.801,Health/Medical
+85.801,Higher Education (includes Research)
+85.801,Agriculture/Forestry/Fish and Game
+85.801,International (includes Export/lmport)
+85.801,"Natural Resources (mineral, water, wildlife, land)"
+85.801,Science and Technology
+31.007,No Functional Application/Unlimited Application
+23.003,Economic Development
+23.003,Transportation
+23.001,Economic Development
+23.001,Elementary/Secondary Education
+23.001,Employment/Labor/Management
+23.001,Energy
+23.001,Higher Education (includes Research)
+23.001,Housing
+23.001,Planning
+23.001,Public Works
+23.001,Regional Development
+23.001,Science and Technology
+23.001,Transportation
+23.001,Training
+23.001,Youth Development
+23.001,Vocational Education
+23.001,Vocational Rehabilitation
+23.001,Community Development (includes Federal surplus property)
+23.001,Construction/Renewal/Rehabilitation
+23.001,Culture/Arts/Humanities
+16.001,"Law, Justice, and Legal Services"
+92.002,Libraries/lnformation/Statistics
+86.001,Income Security/Social Service/Welfare
+16.301,"Law, Justice, and Legal Services"
+16.301,Training
+16.302,"Law, Justice, and Legal Services"
+16.302,Training
+16.003,"Law, Justice, and Legal Services"
+96.004,Income Security/Social Service/Welfare
+16.603,Higher Education (includes Research)
+16.603,"Law, Justice, and Legal Services"
+16.603,Training
+85.803,"Environment (water, air, solid waste, pesticides, radiation)"
+85.803,Food and Nutrition
+85.803,Higher Education (includes Research)
+85.803,Agriculture/Forestry/Fish and Game
+85.803,International (includes Export/lmport)
+85.803,"Natural Resources (mineral, water, wildlife, land)"
+85.803,Science and Technology
+16.610,"Law, Justice, and Legal Services"
+11.482,"Environment (water, air, solid waste, pesticides, radiation)"
+11.482,"Natural Resources (mineral, water, wildlife, land)"
+93.801,Health/Medical
+93.801,Training
+93.801,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+17.601,Health/Medical
+93.239,Higher Education (includes Research)
+93.239,Planning
+93.019,Health/Medical
+97.047,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.103,"Environment (water, air, solid waste, pesticides, radiation)"
+93.103,Food and Nutrition
+93.103,Health/Medical
+93.103,Higher Education (includes Research)
+93.103,Agriculture/Forestry/Fish and Game
+93.103,"Natural Resources (mineral, water, wildlife, land)"
+93.103,Science and Technology
+93.103,Training
+93.103,Consumer Protection
+93.103,Planning
+93.462,Health/Medical
+39.003,Community Development (includes Federal surplus property)
+93.054,Health/Medical
+93.054,Income Security/Social Service/Welfare
+10.865,Energy
+10.865,"Environment (water, air, solid waste, pesticides, radiation)"
+10.865,"Natural Resources (mineral, water, wildlife, land)"
+10.243,Agriculture/Forestry/Fish and Game
+98.009,Agriculture/Forestry/Fish and Game
+19.980,"Law, Justice, and Legal Services"
+19.980,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.205,Higher Education (includes Research)
+38.006,Consumer Protection
+93.344,Health/Medical
+30.008,Employment/Labor/Management
+30.008,"Law, Justice, and Legal Services"
+19.026,No Functional Application/Unlimited Application
+16.024,Income Security/Social Service/Welfare
+30.010,Employment/Labor/Management
+30.010,"Law, Justice, and Legal Services"
+10.383,Construction/Renewal/Rehabilitation
+10.290,Economic Development
+10.290,Energy
+10.290,"Environment (water, air, solid waste, pesticides, radiation)"
+10.290,Food and Nutrition
+10.290,Agriculture/Forestry/Fish and Game
+10.290,International (includes Export/lmport)
+10.290,"Natural Resources (mineral, water, wildlife, land)"
+97.042,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+16.526,"Law, Justice, and Legal Services"
+16.526,Training
+12.615,Economic Development
+93.324,Health/Medical
+93.324,Income Security/Social Service/Welfare
+97.029,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+38.008,Training
+38.008,Consumer Protection
+93.878,Health/Medical
+16.754,"Law, Justice, and Legal Services"
+93.355,Health/Medical
+93.355,Higher Education (includes Research)
+93.355,Training
+16.004,"Law, Justice, and Legal Services"
+10.700,Agriculture/Forestry/Fish and Game
+10.700,Libraries/lnformation/Statistics
+97.137,Science and Technology
+16.023,Income Security/Social Service/Welfare
+97.102,Community Development (includes Federal surplus property)
+93.043,Health/Medical
+93.043,Income Security/Social Service/Welfare
+10.206,No Functional Application/Unlimited Application
+10.206,Higher Education (includes Research)
+10.206,Agriculture/Forestry/Fish and Game
+10.291,"Environment (water, air, solid waste, pesticides, radiation)"
+10.291,Food and Nutrition
+10.291,Higher Education (includes Research)
+10.291,Agriculture/Forestry/Fish and Game
+10.291,"Natural Resources (mineral, water, wildlife, land)"
+30.013,Employment/Labor/Management
+30.013,"Law, Justice, and Legal Services"
+97.023,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.843,Training
+11.302,Economic Development
+11.302,Planning
+11.302,Regional Development
+96.006,Income Security/Social Service/Welfare
+17.807,Employment/Labor/Management
+17.807,Training
+93.137,Health/Medical
+10.245,Agriculture/Forestry/Fish and Game
+10.245,Food and Nutrition
+10.411,Housing
+93.340,Economic Development
+93.340,Higher Education (includes Research)
+93.340,Youth Development
+93.340,Culture/Arts/Humanities
+93.048,Income Security/Social Service/Welfare
+19.665,Communications
+19.665,Economic Development
+19.665,International (includes Export/lmport)
+19.665,Science and Technology
+30.001,Employment/Labor/Management
+30.001,"Law, Justice, and Legal Services"
+30.001,No Functional Application/Unlimited Application
+93.081,Health/Medical
+93.081,Planning
+93.081,Science and Technology
+19.973,No Functional Application/Unlimited Application
+16.578,"Law, Justice, and Legal Services"
+19.700,No Functional Application/Unlimited Application
+19.024,Communications
+19.024,Construction/Renewal/Rehabilitation
+10.239,"Environment (water, air, solid waste, pesticides, radiation)"
+64.128,Health/Medical
+19.207,Employment/Labor/Management
+19.207,Higher Education (includes Research)
+21.009,Income Security/Social Service/Welfare
+21.009,Business/Commerce
+44.002,Economic Development
+44.002,Income Security/Social Service/Welfare
+44.002,Planning
+44.002,Training
+44.002,Youth Development
+44.002,Community Development (includes Federal surplus property)
+44.002,Consumer Protection
+93.085,Health/Medical
+93.085,Higher Education (includes Research)
+93.085,Science and Technology
+93.072,Health/Medical
+93.072,Income Security/Social Service/Welfare
+11.420,"Natural Resources (mineral, water, wildlife, land)"
+64.104,Income Security/Social Service/Welfare
+93.311,Health/Medical
+97.139,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+64.105,Income Security/Social Service/Welfare
+19.777,No Functional Application/Unlimited Application
+11.419,"Natural Resources (mineral, water, wildlife, land)"
+11.419,Regional Development
+16.562,Higher Education (includes Research)
+93.104,Health/Medical
+16.529,Income Security/Social Service/Welfare
+16.529,"Law, Justice, and Legal Services"
+96.020,Income Security/Social Service/Welfare
+32.007,Health/Medical
+10.433,Housing
+10.433,Construction/Renewal/Rehabilitation
+16.736,Housing
+16.736,Income Security/Social Service/Welfare
+19.224,No Functional Application/Unlimited Application
+93.889,Health/Medical
+97.083,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+17.602,Training
+93.958,Health/Medical
+93.618,Health/Medical
+16.614,"Law, Justice, and Legal Services"
+16.028,Training
+64.110,Income Security/Social Service/Welfare
+16.557,Income Security/Social Service/Welfare
+16.557,"Law, Justice, and Legal Services"
+16.557,Training
+16.017,Income Security/Social Service/Welfare
+16.017,"Law, Justice, and Legal Services"
+12.022,Training
+97.134,"Law, Justice, and Legal Services"
+16.588,Income Security/Social Service/Welfare
+16.588,"Law, Justice, and Legal Services"
+93.470,Health/Medical
+93.825,Health/Medical
+93.825,Training
+11.999,Higher Education (includes Research)
+11.999,"Natural Resources (mineral, water, wildlife, land)"
+93.464,Science and Technology
+93.042,Income Security/Social Service/Welfare
+16.576,"Law, Justice, and Legal Services"
+96.008,Health/Medical
+96.008,Income Security/Social Service/Welfare
+16.052,"Law, Justice, and Legal Services"
+97.012,Maritime
+97.012,Recreation (includes Historic Preservation)
+12.604,Planning
+12.604,Community Development (includes Federal surplus property)
+93.297,Health/Medical
+93.433,Health/Medical
+93.433,Income Security/Social Service/Welfare
+19.791,No Functional Application/Unlimited Application
+97.007,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.127,Higher Education (includes Research)
+16.038,"Law, Justice, and Legal Services"
+97.057,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+64.100,Health/Medical
+64.100,Transportation
+12.618,Economic Development
+17.309,Employment/Labor/Management
+17.309,Libraries/lnformation/Statistics
+14.277,Housing
+19.792,No Functional Application/Unlimited Application
+97.052,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.500,Higher Education (includes Research)
+10.500,Agriculture/Forestry/Fish and Game
+10.500,"Natural Resources (mineral, water, wildlife, land)"
+10.500,Science and Technology
+16.528,Income Security/Social Service/Welfare
+16.528,"Law, Justice, and Legal Services"
+16.528,Training
+93.469,Health/Medical
+93.844,No Functional Application/Unlimited Application
+30.011,Employment/Labor/Management
+30.011,"Law, Justice, and Legal Services"
+15.231,"Natural Resources (mineral, water, wildlife, land)"
+38.009,Consumer Protection
+38.009,Planning
+38.009,Training
+93.089,Health/Medical
+42.012,Culture/Arts/Humanities
+42.012,Higher Education (includes Research)
+42.012,Libraries/lnformation/Statistics
+10.308,Higher Education (includes Research)
+93.362,Health/Medical
+93.362,Science and Technology
+64.109,Health/Medical
+64.109,Income Security/Social Service/Welfare
+10.759,Public Works
+93.225,Health/Medical
+93.225,Training
+10.916,Agriculture/Forestry/Fish and Game
+93.226,Health/Medical
+93.226,Higher Education (includes Research)
+10.862,Agriculture/Forestry/Fish and Game
+10.762,"Environment (water, air, solid waste, pesticides, radiation)"
+11.440,Higher Education (includes Research)
+11.440,Science and Technology
+66.815,"Environment (water, air, solid waste, pesticides, radiation)"
+66.815,Vocational Education
+11.417,No Functional Application/Unlimited Application
+20.901,Transportation
+20.237,Transportation
+93.431,Health/Medical
+93.456,Training
+93.380,Health/Medical
+64.051,Science and Technology
+45.160,Culture/Arts/Humanities
+45.169,Culture/Arts/Humanities
+10.907,Libraries/lnformation/Statistics
+10.907,"Natural Resources (mineral, water, wildlife, land)"
+10.932,"Environment (water, air, solid waste, pesticides, radiation)"
+10.932,"Natural Resources (mineral, water, wildlife, land)"
+93.603,Income Security/Social Service/Welfare
+10.134,Agriculture/Forestry/Fish and Game
+10.132,Agriculture/Forestry/Fish and Game
+10.920,Agriculture/Forestry/Fish and Game
+10.120,Agriculture/Forestry/Fish and Game
+10.054,"Environment (water, air, solid waste, pesticides, radiation)"
+10.054,Agriculture/Forestry/Fish and Game
+10.054,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.133,Agriculture/Forestry/Fish and Game
+10.406,Agriculture/Forestry/Fish and Game
+10.421,Agriculture/Forestry/Fish and Game
+10.056,Agriculture/Forestry/Fish and Game
+10.056,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.969,"Natural Resources (mineral, water, wildlife, land)"
+10.969,Agriculture/Forestry/Fish and Game
+97.108,Higher Education (includes Research)
+97.108,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.148,Agriculture/Forestry/Fish and Game
+10.102,Agriculture/Forestry/Fish and Game
+10.130,Agriculture/Forestry/Fish and Game
+59.065,Business/Commerce
+93.399,Health/Medical
+93.399,Higher Education (includes Research)
+20.611,Transportation
+10.447,Housing
+84.116,Higher Education (includes Research)
+10.477,Food and Nutrition
+10.477,Agriculture/Forestry/Fish and Game
+10.477,Business/Commerce
+11.481,Higher Education (includes Research)
+10.934,Agriculture/Forestry/Fish and Game
+15.529,"Natural Resources (mineral, water, wildlife, land)"
+59.058,Economic Development
+59.058,Higher Education (includes Research)
+59.058,Science and Technology
+59.058,Business/Commerce
+59.058,Training
+93.397,Health/Medical
+93.397,Higher Education (includes Research)
+93.396,Health/Medical
+93.396,Higher Education (includes Research)
+93.396,Science and Technology
+20.937,Transportation
+10.933,"Environment (water, air, solid waste, pesticides, radiation)"
+10.933,Agriculture/Forestry/Fish and Game
+10.933,"Natural Resources (mineral, water, wildlife, land)"
+10.933,Science and Technology
+10.494,Housing
+20.616,Transportation
+11.462,Higher Education (includes Research)
+66.440,"Environment (water, air, solid waste, pesticides, radiation)"
+10.053,"Environment (water, air, solid waste, pesticides, radiation)"
+10.053,Agriculture/Forestry/Fish and Game
+10.127,Agriculture/Forestry/Fish and Game
+10.136,Agriculture/Forestry/Fish and Game
+10.405,Housing
+10.405,Construction/Renewal/Rehabilitation
+93.664,Health/Medical
+10.438,Housing
+10.926,"Environment (water, air, solid waste, pesticides, radiation)"
+10.926,Agriculture/Forestry/Fish and Game
+10.926,"Natural Resources (mineral, water, wildlife, land)"
+10.925,Agriculture/Forestry/Fish and Game
+10.415,Housing
+10.415,Construction/Renewal/Rehabilitation
+10.093,"Natural Resources (mineral, water, wildlife, land)"
+11.553,No Functional Application/Unlimited Application
+11.029,Communications
+11.029,Economic Development
+11.029,Health/Medical
+11.031,Communications
+11.031,Economic Development
+10.758,Energy
+10.758,Economic Development
+64.204,Higher Education (includes Research)
+17.281,Training
+20.806,Higher Education (includes Research)
+20.806,Maritime
+12.560,No Functional Application/Unlimited Application
+12.560,Elementary/Secondary Education
+11.432,Higher Education (includes Research)
+11.432,Training
+12.014,Higher Education (includes Research)
+64.058,Employment/Labor/Management
+20.607,Transportation
+20.232,"Law, Justice, and Legal Services"
+20.232,Transportation
+10.921,Agriculture/Forestry/Fish and Game
+20.235,Transportation
+10.098,Agriculture/Forestry/Fish and Game
+10.927,Agriculture/Forestry/Fish and Game
+10.927,"Natural Resources (mineral, water, wildlife, land)"
+10.923,"Natural Resources (mineral, water, wildlife, land)"
+20.109,Higher Education (includes Research)
+20.109,Transportation
+10.761,"Environment (water, air, solid waste, pesticides, radiation)"
+10.761,Agriculture/Forestry/Fish and Game
+10.761,Training
+10.864,"Environment (water, air, solid waste, pesticides, radiation)"
+10.864,"Natural Resources (mineral, water, wildlife, land)"
+10.770,"Environment (water, air, solid waste, pesticides, radiation)"
+64.120,Higher Education (includes Research)
+64.120,Vocational Education
+20.113,Training
+10.760,"Environment (water, air, solid waste, pesticides, radiation)"
+10.763,"Environment (water, air, solid waste, pesticides, radiation)"
+64.124,Higher Education (includes Research)
+64.117,Higher Education (includes Research)
+64.117,Vocational Education
+64.024,Health/Medical
+64.024,Housing
+64.027,Higher Education (includes Research)
+64.032,Higher Education (includes Research)
+17.277,Training
+17.235,Employment/Labor/Management
+17.235,Training
+10.904,"Natural Resources (mineral, water, wildlife, land)"
+10.904,Planning
+10.904,Recreation (includes Historic Preservation)
+10.904,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.904,Construction/Renewal/Rehabilitation
+64.033,Housing
+10.914,Agriculture/Forestry/Fish and Game
+10.914,"Natural Resources (mineral, water, wildlife, land)"
+17.280,Employment/Labor/Management
+17.280,Training
+20.946,No Functional Application/Unlimited Application
+15.555,"Environment (water, air, solid waste, pesticides, radiation)"
+20.802,Maritime
+20.938,Transportation
+20.608,Transportation
+20.114,Employment/Labor/Management
+21.017,Elementary/Secondary Education
+21.017,Health/Medical
+21.017,Housing
+21.017,Income Security/Social Service/Welfare
+21.017,Vocational Education
+21.017,Youth Development
+20.106,Planning
+20.106,Construction/Renewal/Rehabilitation
+20.218,Transportation
+10.917,No Functional Application/Unlimited Application
+10.109,Agriculture/Forestry/Fish and Game
+10.929,Agriculture/Forestry/Fish and Game
+20.108,Higher Education (includes Research)
+15.648,"Natural Resources (mineral, water, wildlife, land)"
+15.521,"Natural Resources (mineral, water, wildlife, land)"
+15.509,"Natural Resources (mineral, water, wildlife, land)"
+15.678,Higher Education (includes Research)
+17.245,Employment/Labor/Management
+17.245,Business/Commerce
+17.245,Training
+17.245,Vocational Education
+15.677,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+64.035,No Functional Application/Unlimited Application
+15.564,"Natural Resources (mineral, water, wildlife, land)"
+10.128,Agriculture/Forestry/Fish and Game
+10.128,Business/Commerce
+10.128,Communications
+10.128,Economic Development
+10.407,Agriculture/Forestry/Fish and Game
+10.407,"Natural Resources (mineral, water, wildlife, land)"
+10.407,Youth Development
+10.913,Agriculture/Forestry/Fish and Game
+10.913,"Natural Resources (mineral, water, wildlife, land)"
+10.087,Energy
+10.087,Agriculture/Forestry/Fish and Game
+10.931,Agriculture/Forestry/Fish and Game
+10.931,"Natural Resources (mineral, water, wildlife, land)"
+10.129,Agriculture/Forestry/Fish and Game
+10.435,Agriculture/Forestry/Fish and Game
+10.404,Agriculture/Forestry/Fish and Game
+10.404,"Natural Resources (mineral, water, wildlife, land)"
+10.028,Agriculture/Forestry/Fish and Game
+10.028,"Natural Resources (mineral, water, wildlife, land)"
+10.025,"Environment (water, air, solid waste, pesticides, radiation)"
+10.025,Agriculture/Forestry/Fish and Game
+11.468,Science and Technology
+10.030,Agriculture/Forestry/Fish and Game
+10.935,Agriculture/Forestry/Fish and Game
+11.431,Higher Education (includes Research)
+11.431,Science and Technology
+10.475,Agriculture/Forestry/Fish and Game
+10.072,Agriculture/Forestry/Fish and Game
+10.072,"Natural Resources (mineral, water, wildlife, land)"
+10.479,Agriculture/Forestry/Fish and Game
+93.086,Income Security/Social Service/Welfare
+15.256,"Natural Resources (mineral, water, wildlife, land)"
+10.139,Agriculture/Forestry/Fish and Game
+10.974,Agriculture/Forestry/Fish and Game
+10.144,Agriculture/Forestry/Fish and Game
+10.752,No Functional Application/Unlimited Application
+10.189,Agriculture/Forestry/Fish and Game
+10.189,Business/Commerce
+10.189,Construction/Renewal/Rehabilitation
+10.189,Economic Development
+10.189,Food and Nutrition
+10.189,Regional Development
+10.189,Transportation
+10.617,International (includes Export/lmport)
+10.616,Business/Commerce
+10.600,Business/Commerce
+10.601,International (includes Export/lmport)
+10.601,Business/Commerce
+10.615,No Functional Application/Unlimited Application
+10.604,Agriculture/Forestry/Fish and Game
+10.605,Agriculture/Forestry/Fish and Game
+10.618,Business/Commerce
+10.618,International (includes Export/lmport)
+10.188,Agriculture/Forestry/Fish and Game
+10.188,Business/Commerce
+10.188,Construction/Renewal/Rehabilitation
+10.188,Economic Development
+10.188,Food and Nutrition
+10.188,Regional Development
+10.188,Transportation
+66.033,"Environment (water, air, solid waste, pesticides, radiation)"
+66.037,"Environment (water, air, solid waste, pesticides, radiation)"
+66.037,Science and Technology
+66.037,Training
+66.037,Youth Development
+66.037,Vocational Education
+66.037,Higher Education (includes Research)
+17.271,Employment/Labor/Management
+66.446,"Environment (water, air, solid waste, pesticides, radiation)"
+66.446,Public Works
+10.961,Economic Development
+10.961,Energy
+10.961,"Environment (water, air, solid waste, pesticides, radiation)"
+10.961,Food and Nutrition
+10.961,Higher Education (includes Research)
+10.961,Agriculture/Forestry/Fish and Game
+10.961,International (includes Export/lmport)
+10.961,"Natural Resources (mineral, water, wildlife, land)"
+10.961,Science and Technology
+10.961,Training
+10.960,"Environment (water, air, solid waste, pesticides, radiation)"
+10.960,Food and Nutrition
+10.960,Higher Education (includes Research)
+10.960,Agriculture/Forestry/Fish and Game
+10.960,International (includes Export/lmport)
+10.960,"Natural Resources (mineral, water, wildlife, land)"
+10.960,Science and Technology
+10.960,Training
+10.171,Agriculture/Forestry/Fish and Game
+93.590,Income Security/Social Service/Welfare
+10.111,Agriculture/Forestry/Fish and Game
+10.579,Food and Nutrition
+21.026,Housing
+21.026,Income Security/Social Service/Welfare
+93.276,"Law, Justice, and Legal Services"
+93.276,Youth Development
+21.027,No Functional Application/Unlimited Application
+21.019,Business/Commerce
+21.019,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+21.019,Communications
+21.019,Elementary/Secondary Education
+21.019,Employment/Labor/Management
+21.019,Food and Nutrition
+21.019,Health/Medical
+21.019,Higher Education (includes Research)
+21.019,Transportation
+21.019,Training
+21.029,Construction/Renewal/Rehabilitation
+21.028,Employment/Labor/Management
+20.933,Transportation
+84.126,Vocational Rehabilitation
+66.720,Agriculture/Forestry/Fish and Game
+66.720,Communications
+66.720,"Environment (water, air, solid waste, pesticides, radiation)"
+66.720,Health/Medical
+66.720,Training
+15.070,"Natural Resources (mineral, water, wildlife, land)"
+15.070,Training
+15.558,Planning
+15.558,Construction/Renewal/Rehabilitation
+17.273,Employment/Labor/Management
+17.273,Business/Commerce
+15.517,"Natural Resources (mineral, water, wildlife, land)"
+15.570,"Natural Resources (mineral, water, wildlife, land)"
+10.450,Agriculture/Forestry/Fish and Game
+10.089,Agriculture/Forestry/Fish and Game
+10.903,Libraries/lnformation/Statistics
+10.903,"Natural Resources (mineral, water, wildlife, land)"
+11.017,"Environment (water, air, solid waste, pesticides, radiation)"
+11.017,Maritime
+11.017,"Natural Resources (mineral, water, wildlife, land)"
+11.017,Planning
+11.017,Science and Technology
+11.017,Training
+15.821,"Natural Resources (mineral, water, wildlife, land)"
+15.821,Science and Technology
+15.821,Training
+15.821,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+64.101,Income Security/Social Service/Welfare
+32.008,Communications
+98.002,International (includes Export/lmport)
+16.041,"Law, Justice, and Legal Services"
+93.665,Health/Medical
+93.047,Health/Medical
+10.304,Agriculture/Forestry/Fish and Game
+10.312,Higher Education (includes Research)
+10.312,Agriculture/Forestry/Fish and Game
+10.312,"Natural Resources (mineral, water, wildlife, land)"
+10.312,Science and Technology
+10.312,Business/Commerce
+10.536,Food and Nutrition
+42.013,Culture/Arts/Humanities
+42.013,Higher Education (includes Research)
+42.013,Libraries/lnformation/Statistics
+93.631,No Functional Application/Unlimited Application
+93.045,Food and Nutrition
+93.045,Health/Medical
+93.045,Income Security/Social Service/Welfare
+93.150,Health/Medical
+10.751,Economic Development
+10.751,Employment/Labor/Management
+10.751,Energy
+10.751,"Environment (water, air, solid waste, pesticides, radiation)"
+10.751,Housing
+10.751,Business/Commerce
+10.751,Community Development (includes Federal surplus property)
+10.751,Construction/Renewal/Rehabilitation
+19.108,No Functional Application/Unlimited Application
+10.587,Food and Nutrition
+93.260,Health/Medical
+93.260,Income Security/Social Service/Welfare
+93.260,Training
+16.571,Income Security/Social Service/Welfare
+66.481,"Environment (water, air, solid waste, pesticides, radiation)"
+12.607,Economic Development
+12.607,Community Development (includes Federal surplus property)
+32.011,Communications
+32.009,Communications
+32.009,Elementary/Secondary Education
+32.009,Libraries/lnformation/Statistics
+97.039,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.041,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+32.006,Communications
+32.006,Health/Medical
+12.003,Community Development (includes Federal surplus property)
+16.525,"Law, Justice, and Legal Services"
+97.055,Communications
+19.888,International (includes Export/lmport)
+97.036,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.088,Health/Medical
+93.088,Higher Education (includes Research)
+93.088,Science and Technology
+16.029,Income Security/Social Service/Welfare
+16.029,"Law, Justice, and Legal Services"
+16.029,Training
+15.580,Construction/Renewal/Rehabilitation
+93.974,Health/Medical
+93.008,Health/Medical
+10.246,Construction/Renewal/Rehabilitation
+10.001,Libraries/lnformation/Statistics
+97.022,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+16.025,"Law, Justice, and Legal Services"
+93.007,Health/Medical
+10.997,Agriculture/Forestry/Fish and Game
+10.997,Food and Nutrition
+10.997,International (includes Export/lmport)
+10.997,Science and Technology
+97.111,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+98.004,International (includes Export/lmport)
+16.751,Training
+21.004,No Functional Application/Unlimited Application
+96.009,Health/Medical
+96.009,Income Security/Social Service/Welfare
+93.899,Health/Medical
+93.747,Health/Medical
+16.817,"Law, Justice, and Legal Services"
+16.817,Planning
+19.903,No Functional Application/Unlimited Application
+93.217,Health/Medical
+12.611,Planning
+98.005,Training
+64.206,No Functional Application/Unlimited Application
+19.023,Elementary/Secondary Education
+16.016,Income Security/Social Service/Welfare
+16.016,"Law, Justice, and Legal Services"
+10.872,Business/Commerce
+10.872,Community Development (includes Federal surplus property)
+10.872,Economic Development
+10.872,Energy
+10.872,Food and Nutrition
+10.872,Planning
+98.010,International (includes Export/lmport)
+93.851,Libraries/lnformation/Statistics
+11.473,Science and Technology
+93.369,Vocational Education
+93.369,Vocational Rehabilitation
+19.790,No Functional Application/Unlimited Application
+32.005,Health/Medical
+32.005,Communications
+97.089,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.052,Health/Medical
+16.615,Higher Education (includes Research)
+39.007,Community Development (includes Federal surplus property)
+93.763,Health/Medical
+93.763,Income Security/Social Service/Welfare
+93.763,Training
+93.360,Health/Medical
+93.360,International (includes Export/lmport)
+11.012,Energy
+11.012,"Environment (water, air, solid waste, pesticides, radiation)"
+11.012,Maritime
+11.012,"Natural Resources (mineral, water, wildlife, land)"
+11.012,Science and Technology
+93.826,Health/Medical
+93.826,Science and Technology
+10.766,Elementary/Secondary Education
+10.766,Energy
+10.766,Food and Nutrition
+10.766,Health/Medical
+10.766,Higher Education (includes Research)
+10.766,Libraries/lnformation/Statistics
+10.766,Maritime
+10.766,Public Works
+10.766,Transportation
+10.766,Youth Development
+10.766,Vocational Education
+10.766,Vocational Rehabilitation
+10.766,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.766,Communications
+10.766,Community Development (includes Federal surplus property)
+10.766,Construction/Renewal/Rehabilitation
+10.766,Culture/Arts/Humanities
+93.138,"Law, Justice, and Legal Services"
+98.007,Food and Nutrition
+98.012,Higher Education (includes Research)
+93.817,Health/Medical
+93.817,Training
+93.817,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.566,Food and Nutrition
+10.420,Housing
+10.420,Training
+10.420,Vocational Education
+10.420,Construction/Renewal/Rehabilitation
+10.968,Agriculture/Forestry/Fish and Game
+11.011,No Functional Application/Unlimited Application
+11.011,Economic Development
+11.011,Elementary/Secondary Education
+11.011,Employment/Labor/Management
+11.011,Energy
+11.011,"Environment (water, air, solid waste, pesticides, radiation)"
+11.011,Food and Nutrition
+11.011,Health/Medical
+11.011,Higher Education (includes Research)
+11.011,Housing
+11.011,Income Security/Social Service/Welfare
+11.011,Agriculture/Forestry/Fish and Game
+11.011,International (includes Export/lmport)
+11.011,"Law, Justice, and Legal Services"
+11.011,Libraries/lnformation/Statistics
+11.011,Maritime
+11.011,"Natural Resources (mineral, water, wildlife, land)"
+11.011,Planning
+11.011,Public Works
+11.011,Recreation (includes Historic Preservation)
+11.011,Regional Development
+11.011,Science and Technology
+11.011,Business/Commerce
+11.011,Transportation
+11.011,Training
+11.011,Youth Development
+11.011,Vocational Education
+11.011,Vocational Rehabilitation
+11.011,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+11.011,Communications
+11.011,Community Development (includes Federal surplus property)
+11.011,Construction/Renewal/Rehabilitation
+11.011,Consumer Protection
+11.011,Culture/Arts/Humanities
+10.950,Libraries/lnformation/Statistics
+10.951,Libraries/lnformation/Statistics
+10.962,Higher Education (includes Research)
+10.962,Agriculture/Forestry/Fish and Game
+10.962,International (includes Export/lmport)
+10.962,Science and Technology
+10.962,Training
+10.606,Economic Development
+10.606,Food and Nutrition
+10.606,Agriculture/Forestry/Fish and Game
+10.606,Training
+10.606,Construction/Renewal/Rehabilitation
+10.612,Food and Nutrition
+93.670,Income Security/Social Service/Welfare
+21.030,No Functional Application/Unlimited Application
+21.031,Business/Commerce
+21.031,Economic Development
+21.032,No Functional Application/Unlimited Application
+10.610,Economic Development
+10.610,Agriculture/Forestry/Fish and Game
+14.912,Housing
+10.603,Business/Commerce
+66.801,"Environment (water, air, solid waste, pesticides, radiation)"
+66.708,"Environment (water, air, solid waste, pesticides, radiation)"
+66.708,Regional Development
+66.708,Training
+66.708,Business/Commerce
+66.708,Economic Development
+66.708,Health/Medical
+66.708,Higher Education (includes Research)
+66.708,Planning
+10.179,Agriculture/Forestry/Fish and Game
+10.179,Food and Nutrition
+66.038,Communications
+66.038,"Environment (water, air, solid waste, pesticides, radiation)"
+66.038,Planning
+66.038,Training
+66.038,Vocational Education
+66.001,"Environment (water, air, solid waste, pesticides, radiation)"
+66.032,"Environment (water, air, solid waste, pesticides, radiation)"
+66.032,Community Development (includes Federal surplus property)
+66.032,Consumer Protection
+66.032,Housing
+66.032,Training
+10.190,Agriculture/Forestry/Fish and Game
+10.190,Business/Commerce
+10.190,Construction/Renewal/Rehabilitation
+10.190,Economic Development
+10.190,Food and Nutrition
+10.190,Regional Development
+10.190,Transportation
+66.034,"Environment (water, air, solid waste, pesticides, radiation)"
+66.045,Elementary/Secondary Education
+66.045,"Environment (water, air, solid waste, pesticides, radiation)"
+66.045,Transportation
+66.044,"Environment (water, air, solid waste, pesticides, radiation)"
+66.040,"Environment (water, air, solid waste, pesticides, radiation)"
+66.040,Transportation
+66.039,Transportation
+66.039,"Environment (water, air, solid waste, pesticides, radiation)"
+66.202,"Environment (water, air, solid waste, pesticides, radiation)"
+66.202,Science and Technology
+66.202,Training
+66.472,"Environment (water, air, solid waste, pesticides, radiation)"
+66.042,"Environment (water, air, solid waste, pesticides, radiation)"
+66.956,"Environment (water, air, solid waste, pesticides, radiation)"
+66.046,Energy
+66.046,"Environment (water, air, solid waste, pesticides, radiation)"
+66.046,Housing
+66.046,Planning
+66.046,Regional Development
+66.046,Transportation
+66.707,"Environment (water, air, solid waste, pesticides, radiation)"
+66.707,Vocational Education
+10.175,Agriculture/Forestry/Fish and Game
+10.176,Agriculture/Forestry/Fish and Game
+10.608,Elementary/Secondary Education
+10.608,Food and Nutrition
+10.608,International (includes Export/lmport)
+10.608,"Natural Resources (mineral, water, wildlife, land)"
+10.608,Youth Development
+10.619,Agriculture/Forestry/Fish and Game
+10.619,"Environment (water, air, solid waste, pesticides, radiation)"
+10.619,Food and Nutrition
+10.619,International (includes Export/lmport)
+10.619,"Natural Resources (mineral, water, wildlife, land)"
+10.619,Training
+10.619,Vocational Education
+10.619,Youth Development
+10.777,"Environment (water, air, solid waste, pesticides, radiation)"
+10.777,Food and Nutrition
+10.777,Higher Education (includes Research)
+10.777,Agriculture/Forestry/Fish and Game
+10.777,International (includes Export/lmport)
+10.777,"Natural Resources (mineral, water, wildlife, land)"
+10.777,Science and Technology
+10.613,Higher Education (includes Research)
+10.613,Training
+10.613,Agriculture/Forestry/Fish and Game
+14.024,Housing
+14.024,Planning
+14.024,Regional Development
+14.024,Community Development (includes Federal surplus property)
+10.620,Food and Nutrition
+97.091,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+66.805,"Environment (water, air, solid waste, pesticides, radiation)"
+21.015,Economic Development
+21.015,"Environment (water, air, solid waste, pesticides, radiation)"
+21.015,"Natural Resources (mineral, water, wildlife, land)"
+21.015,Recreation (includes Historic Preservation)
+66.921,"Environment (water, air, solid waste, pesticides, radiation)"
+66.518,"Environment (water, air, solid waste, pesticides, radiation)"
+66.814,"Environment (water, air, solid waste, pesticides, radiation)"
+66.814,Training
+66.714,"Environment (water, air, solid waste, pesticides, radiation)"
+66.804,"Environment (water, air, solid waste, pesticides, radiation)"
+66.717,"Environment (water, air, solid waste, pesticides, radiation)"
+66.717,Science and Technology
+66.716,"Environment (water, air, solid waste, pesticides, radiation)"
+66.716,Health/Medical
+66.716,Agriculture/Forestry/Fish and Game
+66.716,Communications
+66.716,Employment/Labor/Management
+66.716,Science and Technology
+66.716,Training
+66.716,Vocational Education
+66.475,"Environment (water, air, solid waste, pesticides, radiation)"
+10.177,Agriculture/Forestry/Fish and Game
+10.177,Employment/Labor/Management
+90.200,Economic Development
+90.200,Training
+10.173,Agriculture/Forestry/Fish and Game
+66.608,"Environment (water, air, solid waste, pesticides, radiation)"
+66.608,Science and Technology
+66.920,"Environment (water, air, solid waste, pesticides, radiation)"
+66.816,"Environment (water, air, solid waste, pesticides, radiation)"
+66.820,"Environment (water, air, solid waste, pesticides, radiation)"
+66.508,"Environment (water, air, solid waste, pesticides, radiation)"
+66.813,"Environment (water, air, solid waste, pesticides, radiation)"
+66.813,Training
+66.813,Science and Technology
+66.437,"Environment (water, air, solid waste, pesticides, radiation)"
+66.130,"Environment (water, air, solid waste, pesticides, radiation)"
+66.808,"Environment (water, air, solid waste, pesticides, radiation)"
+66.808,Training
+14.871,Housing
+66.110,"Environment (water, air, solid waste, pesticides, radiation)"
+66.110,Energy
+66.110,Training
+66.110,Youth Development
+66.484,"Environment (water, air, solid waste, pesticides, radiation)"
+66.812,"Environment (water, air, solid waste, pesticides, radiation)"
+14.856,Housing
+10.174,Agriculture/Forestry/Fish and Game
+10.451,Agriculture/Forestry/Fish and Game
+10.191,No Functional Application/Unlimited Application
+10.187,Food and Nutrition
+10.156,Agriculture/Forestry/Fish and Game
+10.138,Agriculture/Forestry/Fish and Game
+21.018,Employment/Labor/Management
+12.777,No Functional Application/Unlimited Application
+12.810,"Environment (water, air, solid waste, pesticides, radiation)"
+12.810,Health/Medical
+12.810,Science and Technology
+20.319,Transportation
+12.900,Elementary/Secondary Education
+12.900,Higher Education (includes Research)
+12.900,Science and Technology
+12.900,Training
+12.900,Youth Development
+11.435,"Natural Resources (mineral, water, wildlife, land)"
+93.286,Health/Medical
+93.286,Higher Education (includes Research)
+93.286,Science and Technology
+93.286,Training
+20.327,Transportation
+11.408,Agriculture/Forestry/Fish and Game
+11.408,Business/Commerce
+14.899,Housing
+14.157,Construction/Renewal/Rehabilitation
+14.157,Housing
+14.867,Housing
+14.867,Planning
+14.867,Construction/Renewal/Rehabilitation
+14.867,Regional Development
+14.269,Community Development (includes Federal surplus property)
+11.426,"Environment (water, air, solid waste, pesticides, radiation)"
+11.426,Science and Technology
+20.314,Transportation
+12.116,"Environment (water, air, solid waste, pesticides, radiation)"
+12.116,"Natural Resources (mineral, water, wildlife, land)"
+20.320,Transportation
+10.253,Food and Nutrition
+10.253,Agriculture/Forestry/Fish and Game
+20.315,Transportation
+11.436,"Natural Resources (mineral, water, wildlife, land)"
+20.326,Transportation
+14.275,Housing
+20.112,Vocational Education
+12.740,No Functional Application/Unlimited Application
+12.431,Higher Education (includes Research)
+12.431,Science and Technology
+20.301,Transportation
+20.301,Training
+11.429,"Environment (water, air, solid waste, pesticides, radiation)"
+11.429,Maritime
+11.429,"Natural Resources (mineral, water, wildlife, land)"
+14.873,Housing
+20.323,Transportation
+11.015,Economic Development
+11.015,Elementary/Secondary Education
+11.015,Higher Education (includes Research)
+11.015,Maritime
+11.015,Planning
+11.015,Science and Technology
+11.015,Business/Commerce
+11.015,Training
+11.015,Youth Development
+20.318,Transportation
+14.273,No Functional Application/Unlimited Application
+14.850,Housing
+20.820,Maritime
+20.820,Transportation
+10.250,Agriculture/Forestry/Fish and Game
+10.250,Libraries/lnformation/Statistics
+10.964,Agriculture/Forestry/Fish and Game
+14.181,Housing
+20.321,Transportation
+10.540,Food and Nutrition
+10.540,Health/Medical
+11.610,International (includes Export/lmport)
+11.610,Libraries/lnformation/Statistics
+11.616,Science and Technology
+64.031,No Functional Application/Unlimited Application
+93.341,Health/Medical
+59.046,Business/Commerce
+59.050,Business/Commerce
+11.805,Economic Development
+11.805,Business/Commerce
+21.016,"Law, Justice, and Legal Services"
+21.016,Transportation
+21.016,Training
+93.695,Higher Education (includes Research)
+59.073,Business/Commerce
+59.078,Business/Commerce
+11.802,Economic Development
+11.802,Business/Commerce
+64.055,Health/Medical
+64.055,Income Security/Social Service/Welfare
+64.055,"Law, Justice, and Legal Services"
+64.055,Food and Nutrition
+64.055,Transportation
+59.062,Economic Development
+59.062,Energy
+59.062,"Environment (water, air, solid waste, pesticides, radiation)"
+59.062,Food and Nutrition
+59.062,Health/Medical
+59.062,Higher Education (includes Research)
+59.062,Regional Development
+59.062,Science and Technology
+59.062,Business/Commerce
+59.062,Training
+59.062,Community Development (includes Federal surplus property)
+59.062,Construction/Renewal/Rehabilitation
+59.062,Culture/Arts/Humanities
+64.056,Housing
+64.056,"Law, Justice, and Legal Services"
+93.164,Health/Medical
+93.444,No Functional Application/Unlimited Application
+93.444,Health/Medical
+14.326,Housing
+66.432,"Environment (water, air, solid waste, pesticides, radiation)"
+11.427,Agriculture/Forestry/Fish and Game
+14.272,Planning
+14.272,Community Development (includes Federal surplus property)
+10.446,Economic Development
+10.446,Planning
+10.446,Training
+10.446,Community Development (includes Federal surplus property)
+12.800,Higher Education (includes Research)
+12.800,Science and Technology
+14.893,Housing
+14.893,Training
+11.433,Higher Education (includes Research)
+11.433,Agriculture/Forestry/Fish and Game
+11.433,"Natural Resources (mineral, water, wildlife, land)"
+20.325,Transportation
+14.862,Economic Development
+14.862,Housing
+14.862,Planning
+14.862,Public Works
+14.862,Training
+14.862,Community Development (includes Federal surplus property)
+14.862,Construction/Renewal/Rehabilitation
+11.407,Agriculture/Forestry/Fish and Game
+11.415,Agriculture/Forestry/Fish and Game
+11.415,Maritime
+11.415,Construction/Renewal/Rehabilitation
+12.114,Higher Education (includes Research)
+12.114,Construction/Renewal/Rehabilitation
+14.265,Economic Development
+14.265,Housing
+14.265,Planning
+14.265,Training
+14.265,Community Development (includes Federal surplus property)
+14.191,Housing
+11.463,Higher Education (includes Research)
+11.463,"Natural Resources (mineral, water, wildlife, land)"
+11.022,Economic Development
+11.022,"Environment (water, air, solid waste, pesticides, radiation)"
+11.022,Science and Technology
+11.022,Business/Commerce
+11.022,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+20.111,Vocational Education
+20.111,Training
+20.111,Youth Development
+20.111,Higher Education (includes Research)
+12.460,Construction/Renewal/Rehabilitation
+14.870,Housing
+11.437,"Natural Resources (mineral, water, wildlife, land)"
+20.317,Transportation
+20.313,Transportation
+14.252,Economic Development
+14.252,Housing
+14.252,Planning
+14.252,Training
+14.252,Community Development (includes Federal surplus property)
+20.328,Transportation
+20.328,Planning
+11.434,"Natural Resources (mineral, water, wildlife, land)"
+93.968,Health/Medical
+12.750,Health/Medical
+12.750,Higher Education (includes Research)
+66.444,"Environment (water, air, solid waste, pesticides, radiation)"
+93.284,Health/Medical
+11.467,Higher Education (includes Research)
+11.467,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.575,Economic Development
+10.575,Food and Nutrition
+10.575,Agriculture/Forestry/Fish and Game
+93.461,Health/Medical
+93.130,Health/Medical
+93.923,Health/Medical
+93.923,Higher Education (includes Research)
+93.923,Training
+93.928,Health/Medical
+93.273,Health/Medical
+93.273,Higher Education (includes Research)
+93.686,Health/Medical
+12.005,Agriculture/Forestry/Fish and Game
+14.225,Economic Development
+14.225,Community Development (includes Federal surplus property)
+93.162,Health/Medical
+93.162,Higher Education (includes Research)
+93.129,Planning
+93.129,Regional Development
+93.129,Training
+14.921,Housing
+14.921,Training
+14.921,Construction/Renewal/Rehabilitation
+93.224,Health/Medical
+93.224,Training
+10.123,Agriculture/Forestry/Fish and Game
+93.191,Health/Medical
+93.976,Training
+93.186,Health/Medical
+10.528,Food and Nutrition
+93.251,Health/Medical
+93.178,Health/Medical
+93.178,Training
+93.525,Health/Medical
+93.770,Health/Medical
+93.687,Health/Medical
+93.423,Income Security/Social Service/Welfare
+93.881,Health/Medical
+10.255,Food and Nutrition
+10.255,Agriculture/Forestry/Fish and Game
+93.640,Health/Medical
+93.413,Health/Medical
+93.413,Consumer Protection
+20.324,Transportation
+14.239,Housing
+14.865,Housing
+14.259,Planning
+14.259,Training
+11.601,Libraries/lnformation/Statistics
+10.569,Food and Nutrition
+10.568,Food and Nutrition
+10.541,Food and Nutrition
+93.332,Health/Medical
+93.779,Higher Education (includes Research)
+93.779,Income Security/Social Service/Welfare
+11.604,Libraries/lnformation/Statistics
+11.013,Elementary/Secondary Education
+11.013,Health/Medical
+11.013,Higher Education (includes Research)
+11.013,Business/Commerce
+11.013,Vocational Education
+11.603,Libraries/lnformation/Statistics
+12.632,"Natural Resources (mineral, water, wildlife, land)"
+12.632,Training
+11.438,"Natural Resources (mineral, water, wildlife, land)"
+12.401,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+12.420,Health/Medical
+93.060,Youth Development
+93.060,Training
+59.011,Business/Commerce
+12.901,Elementary/Secondary Education
+12.901,Higher Education (includes Research)
+12.901,Youth Development
+12.801,No Functional Application/Unlimited Application
+12.330,Elementary/Secondary Education
+12.330,Higher Education (includes Research)
+12.330,Youth Development
+59.072,Business/Commerce
+59.054,International (includes Export/lmport)
+59.075,Business/Commerce
+93.773,Health/Medical
+93.773,Income Security/Social Service/Welfare
+93.634,Health/Medical
+59.059,Economic Development
+59.059,Elementary/Secondary Education
+59.059,Energy
+59.059,"Environment (water, air, solid waste, pesticides, radiation)"
+59.059,Food and Nutrition
+59.059,Health/Medical
+59.059,Higher Education (includes Research)
+59.059,Housing
+59.059,Income Security/Social Service/Welfare
+59.059,Agriculture/Forestry/Fish and Game
+59.059,International (includes Export/lmport)
+59.059,"Law, Justice, and Legal Services"
+59.059,Libraries/lnformation/Statistics
+59.059,Maritime
+59.059,"Natural Resources (mineral, water, wildlife, land)"
+59.059,Planning
+59.059,Public Works
+59.059,Recreation (includes Historic Preservation)
+59.059,Regional Development
+59.059,Science and Technology
+59.059,Business/Commerce
+59.059,Transportation
+59.059,Training
+59.059,Youth Development
+59.059,Vocational Education
+59.059,Vocational Rehabilitation
+59.059,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+59.059,Communications
+59.059,Community Development (includes Federal surplus property)
+59.059,Construction/Renewal/Rehabilitation
+59.059,Culture/Arts/Humanities
+93.011,Health/Medical
+93.011,Planning
+93.011,Regional Development
+93.011,Training
+93.059,Health/Medical
+93.059,Planning
+93.059,Training
+93.236,Health/Medical
+93.236,Training
+93.236,Vocational Education
+93.526,Health/Medical
+93.107,Health/Medical
+93.107,Training
+93.501,Health/Medical
+93.291,"Environment (water, air, solid waste, pesticides, radiation)"
+93.291,Health/Medical
+93.291,Higher Education (includes Research)
+93.291,Housing
+93.291,Community Development (includes Federal surplus property)
+45.149,Culture/Arts/Humanities
+45.161,Culture/Arts/Humanities
+45.129,Culture/Arts/Humanities
+93.778,Health/Medical
+93.778,Income Security/Social Service/Welfare
+11.477,Business/Commerce
+11.474,"Natural Resources (mineral, water, wildlife, land)"
+11.474,Business/Commerce
+11.483,Economic Development
+11.483,"Environment (water, air, solid waste, pesticides, radiation)"
+11.483,Higher Education (includes Research)
+11.483,Agriculture/Forestry/Fish and Game
+11.483,Libraries/lnformation/Statistics
+11.483,Maritime
+11.483,"Natural Resources (mineral, water, wildlife, land)"
+11.483,Planning
+11.483,Public Works
+11.483,Regional Development
+11.483,Science and Technology
+11.483,Business/Commerce
+93.650,Health/Medical
+93.650,Higher Education (includes Research)
+11.439,"Natural Resources (mineral, water, wildlife, land)"
+17.604,Health/Medical
+17.604,Training
+11.454,"Natural Resources (mineral, water, wildlife, land)"
+11.451,"Environment (water, air, solid waste, pesticides, radiation)"
+11.451,"Natural Resources (mineral, water, wildlife, land)"
+11.469,Higher Education (includes Research)
+11.469,Science and Technology
+11.460,Higher Education (includes Research)
+11.460,Science and Technology
+11.460,Business/Commerce
+11.452,Higher Education (includes Research)
+11.452,"Natural Resources (mineral, water, wildlife, land)"
+11.452,Science and Technology
+11.472,"Natural Resources (mineral, water, wildlife, land)"
+11.441,"Environment (water, air, solid waste, pesticides, radiation)"
+11.455,Higher Education (includes Research)
+11.455,Science and Technology
+64.039,No Functional Application/Unlimited Application
+10.938,Training
+10.938,Science and Technology
+10.938,"Natural Resources (mineral, water, wildlife, land)"
+10.938,Planning
+10.938,Agriculture/Forestry/Fish and Game
+10.938,"Environment (water, air, solid waste, pesticides, radiation)"
+10.938,Higher Education (includes Research)
+11.457,Science and Technology
+11.457,Business/Commerce
+20.240,Transportation
+59.041,Economic Development
+20.233,Transportation
+59.066,Economic Development
+59.066,Vocational Education
+20.939,Transportation
+15.969,No Functional Application/Unlimited Application
+15.650,"Natural Resources (mineral, water, wildlife, land)"
+93.604,Health/Medical
+93.604,Income Security/Social Service/Welfare
+20.231,Transportation
+20.215,Training
+15.654,Higher Education (includes Research)
+15.654,Agriculture/Forestry/Fish and Game
+15.654,"Natural Resources (mineral, water, wildlife, land)"
+59.043,Business/Commerce
+59.043,Training
+59.079,Business/Commerce
+59.077,Business/Commerce
+20.219,"Environment (water, air, solid waste, pesticides, radiation)"
+20.219,"Natural Resources (mineral, water, wildlife, land)"
+20.219,Recreation (includes Historic Preservation)
+20.219,Transportation
+15.652,Higher Education (includes Research)
+15.652,Agriculture/Forestry/Fish and Game
+93.077,Health/Medical
+93.077,Higher Education (includes Research)
+93.077,Training
+59.044,Business/Commerce
+12.007,Higher Education (includes Research)
+14.021,Construction/Renewal/Rehabilitation
+14.021,Energy
+14.021,"Environment (water, air, solid waste, pesticides, radiation)"
+14.021,Housing
+93.352,Construction/Renewal/Rehabilitation
+20.200,Transportation
+15.649,"Natural Resources (mineral, water, wildlife, land)"
+59.026,Economic Development
+12.620,Elementary/Secondary Education
+12.620,Employment/Labor/Management
+12.620,Vocational Education
+97.142,Construction/Renewal/Rehabilitation
+97.142,"Law, Justice, and Legal Services"
+97.142,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.142,Communications
+97.142,Training
+20.947,Science and Technology
+20.947,Transportation
+20.947,Higher Education (includes Research)
+20.947,Construction/Renewal/Rehabilitation
+20.947,No Functional Application/Unlimited Application
+11.021,Science and Technology
+64.034,Recreation (includes Historic Preservation)
+64.034,Training
+10.576,Food and Nutrition
+10.576,Agriculture/Forestry/Fish and Game
+93.570,Economic Development
+93.570,Employment/Labor/Management
+93.570,Community Development (includes Federal surplus property)
+10.578,Food and Nutrition
+10.578,Science and Technology
+93.829,Health/Medical
+93.393,Health/Medical
+93.393,Higher Education (includes Research)
+93.393,Science and Technology
+10.922,Agriculture/Forestry/Fish and Game
+93.395,Health/Medical
+93.395,Higher Education (includes Research)
+10.936,"Environment (water, air, solid waste, pesticides, radiation)"
+10.936,"Natural Resources (mineral, water, wildlife, land)"
+10.936,Agriculture/Forestry/Fish and Game
+10.537,No Functional Application/Unlimited Application
+10.614,Economic Development
+10.614,Energy
+10.614,"Environment (water, air, solid waste, pesticides, radiation)"
+10.614,Food and Nutrition
+10.614,Higher Education (includes Research)
+10.614,Agriculture/Forestry/Fish and Game
+10.614,International (includes Export/lmport)
+10.614,"Natural Resources (mineral, water, wildlife, land)"
+10.614,Planning
+10.614,Regional Development
+10.614,Science and Technology
+10.614,Business/Commerce
+10.614,Training
+10.614,Youth Development
+64.114,Housing
+64.114,Construction/Renewal/Rehabilitation
+64.118,Housing
+84.428,Higher Education (includes Research)
+59.076,Business/Commerce
+20.600,Transportation
+10.108,Agriculture/Forestry/Fish and Game
+20.243,Training
+20.243,Transportation
+10.110,Agriculture/Forestry/Fish and Game
+45.164,Culture/Arts/Humanities
+45.163,Culture/Arts/Humanities
+93.547,Training
+11.038,Business/Commerce
+11.038,Communications
+11.038,Higher Education (includes Research)
+10.557,Food and Nutrition
+11.459,Higher Education (includes Research)
+10.572,Food and Nutrition
+14.913,Housing
+14.902,Housing
+10.113,Agriculture/Forestry/Fish and Game
+11.008,Elementary/Secondary Education
+11.008,"Environment (water, air, solid waste, pesticides, radiation)"
+11.008,Higher Education (includes Research)
+11.008,Maritime
+11.008,"Natural Resources (mineral, water, wildlife, land)"
+11.008,Science and Technology
+11.008,Youth Development
+84.329,Elementary/Secondary Education
+84.329,Higher Education (includes Research)
+10.965,Agriculture/Forestry/Fish and Game
+84.181,Youth Development
+64.106,Housing
+64.106,Construction/Renewal/Rehabilitation
+15.563,"Natural Resources (mineral, water, wildlife, land)"
+84.177,Vocational Rehabilitation
+20.934,Transportation
+93.124,Health/Medical
+93.124,Training
+93.117,Health/Medical
+93.117,Planning
+93.117,Training
+14.920,Construction/Renewal/Rehabilitation
+14.920,"Environment (water, air, solid waste, pesticides, radiation)"
+14.901,Housing
+93.378,Health/Medical
+11.405,Higher Education (includes Research)
+11.405,Agriculture/Forestry/Fish and Game
+64.201,No Functional Application/Unlimited Application
+12.902,Higher Education (includes Research)
+12.902,Science and Technology
+14.905,Housing
+12.903,Elementary/Secondary Education
+12.903,Higher Education (includes Research)
+12.903,Science and Technology
+12.903,Training
+12.903,Youth Development
+12.905,Elementary/Secondary Education
+12.905,Higher Education (includes Research)
+14.906,"Environment (water, air, solid waste, pesticides, radiation)"
+12.840,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.495,Housing
+10.937,Agriculture/Forestry/Fish and Game
+10.937,"Environment (water, air, solid waste, pesticides, radiation)"
+10.937,Science and Technology
+84.187,Vocational Rehabilitation
+15.569,"Natural Resources (mineral, water, wildlife, land)"
+95.010,No Functional Application/Unlimited Application
+95.006,"Law, Justice, and Legal Services"
+95.001,"Law, Justice, and Legal Services"
+95.004,"Law, Justice, and Legal Services"
+95.007,Higher Education (includes Research)
+95.008,Training
+95.005,"Law, Justice, and Legal Services"
+59.016,Business/Commerce
+93.884,Health/Medical
+93.884,Higher Education (includes Research)
+15.966,Culture/Arts/Humanities
+15.966,Higher Education (includes Research)
+15.966,Recreation (includes Historic Preservation)
+15.966,Community Development (includes Federal surplus property)
+15.966,Construction/Renewal/Rehabilitation
+15.966,Economic Development
+15.966,Planning
+15.966,Regional Development
+93.145,Health/Medical
+93.145,Training
+10.558,Food and Nutrition
+93.969,Health/Medical
+93.969,Training
+93.926,Health/Medical
+93.280,Health/Medical
+93.870,Health/Medical
+93.870,Planning
+93.870,Training
+14.247,Housing
+12.501,Higher Education (includes Research)
+12.501,Training
+93.157,Health/Medical
+93.157,Higher Education (includes Research)
+12.351,Science and Technology
+12.351,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.994,Health/Medical
+93.134,Health/Medical
+93.504,Health/Medical
+93.877,Health/Medical
+93.877,Higher Education (includes Research)
+93.877,Regional Development
+93.877,Training
+10.966,Agriculture/Forestry/Fish and Game
+93.127,Health/Medical
+93.127,Planning
+10.131,Agriculture/Forestry/Fish and Game
+93.924,Health/Medical
+93.153,Health/Medical
+12.008,"Natural Resources (mineral, water, wildlife, land)"
+93.680,Health/Medical
+93.680,Higher Education (includes Research)
+93.680,Training
+93.165,Health/Medical
+12.355,"Environment (water, air, solid waste, pesticides, radiation)"
+12.355,Health/Medical
+12.355,Science and Technology
+14.249,Housing
+93.220,Health/Medical
+93.822,Health/Medical
+93.925,Health/Medical
+93.925,Higher Education (includes Research)
+93.732,Health/Medical
+93.732,Training
+93.365,Health/Medical
+93.917,Health/Medical
+93.253,Health/Medical
+93.253,Planning
+93.253,Regional Development
+93.253,Training
+93.918,Health/Medical
+93.908,Health/Medical
+93.232,Health/Medical
+93.232,Higher Education (includes Research)
+10.216,Higher Education (includes Research)
+12.300,Higher Education (includes Research)
+12.300,Science and Technology
+17.600,Health/Medical
+11.413,Agriculture/Forestry/Fish and Game
+11.413,"Natural Resources (mineral, water, wildlife, land)"
+12.350,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+12.360,Health/Medical
+12.360,Higher Education (includes Research)
+12.360,Science and Technology
+12.113,"Environment (water, air, solid waste, pesticides, radiation)"
+12.010,Agriculture/Forestry/Fish and Game
+12.010,"Natural Resources (mineral, water, wildlife, land)"
+12.010,Recreation (includes Historic Preservation)
+12.010,Science and Technology
+12.010,Youth Development
+17.603,Health/Medical
+93.351,Health/Medical
+54.001,Higher Education (includes Research)
+45.025,Culture/Arts/Humanities
+45.024,Culture/Arts/Humanities
+10.729,"Natural Resources (mineral, water, wildlife, land)"
+10.724,"Natural Resources (mineral, water, wildlife, land)"
+10.718,"Natural Resources (mineral, water, wildlife, land)"
+10.718,Recreation (includes Historic Preservation)
+10.715,"Natural Resources (mineral, water, wildlife, land)"
+10.715,Agriculture/Forestry/Fish and Game
+10.717,"Natural Resources (mineral, water, wildlife, land)"
+97.140,Construction/Renewal/Rehabilitation
+10.716,"Natural Resources (mineral, water, wildlife, land)"
+10.716,Agriculture/Forestry/Fish and Game
+84.191,Vocational Education
+84.191,Training
+12.357,Higher Education (includes Research)
+93.980,Elementary/Secondary Education
+93.980,Health/Medical
+93.980,Planning
+93.980,Regional Development
+93.980,Science and Technology
+93.980,Training
+93.980,Youth Development
+93.980,Communications
+93.080,No Functional Application/Unlimited Application
+84.173,Elementary/Secondary Education
+20.724,Energy
+20.724,Higher Education (includes Research)
+20.724,Science and Technology
+20.724,Transportation
+93.161,Health/Medical
+93.988,Health/Medical
+20.521,Transportation
+93.322,Public Works
+93.067,Health/Medical
+93.135,Health/Medical
+93.135,Higher Education (includes Research)
+93.941,Health/Medical
+93.941,Training
+93.079,Elementary/Secondary Education
+93.079,Health/Medical
+93.079,Training
+93.079,Youth Development
+84.149,Higher Education (includes Research)
+20.526,Public Works
+20.526,Transportation
+20.526,Construction/Renewal/Rehabilitation
+93.845,Employment/Labor/Management
+93.845,Health/Medical
+93.845,Libraries/lnformation/Statistics
+93.845,Science and Technology
+93.845,Training
+93.845,Communications
+84.425,Elementary/Secondary Education
+84.425,Higher Education (includes Research)
+93.762,Food and Nutrition
+93.762,Health/Medical
+93.762,Training
+93.762,Youth Development
+93.762,Communications
+93.649,"Environment (water, air, solid waste, pesticides, radiation)"
+93.649,Food and Nutrition
+93.649,Health/Medical
+93.649,Higher Education (includes Research)
+93.649,Regional Development
+93.649,Transportation
+93.649,Training
+93.649,Youth Development
+20.531,Energy
+20.531,Higher Education (includes Research)
+20.531,Science and Technology
+20.531,Transportation
+20.531,Economic Development
+20.531,Employment/Labor/Management
+20.531,Planning
+20.531,Regional Development
+20.531,Training
+20.531,Vocational Education
+20.531,Youth Development
+93.816,Health/Medical
+93.833,Health/Medical
+93.349,Health/Medical
+93.069,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.465,"Law, Justice, and Legal Services"
+93.465,Youth Development
+20.530,Energy
+20.530,Higher Education (includes Research)
+20.530,Science and Technology
+20.530,Transportation
+20.530,Economic Development
+20.530,Employment/Labor/Management
+20.530,Planning
+20.530,Regional Development
+20.530,Training
+20.530,Vocational Education
+20.530,Youth Development
+93.283,Health/Medical
+93.269,Health/Medical
+93.495,Health/Medical
+93.898,Health/Medical
+93.097,Health/Medical
+93.809,Food and Nutrition
+93.809,Health/Medical
+93.998,No Functional Application/Unlimited Application
+93.366,Health/Medical
+12.016,Transportation
+93.534,Health/Medical
+93.099,Health/Medical
+93.323,Health/Medical
+93.323,Science and Technology
+93.323,Training
+93.494,Health/Medical
+59.053,Business/Commerce
+20.529,Transportation
+93.446,Health/Medical
+20.524,Construction/Renewal/Rehabilitation
+93.315,No Functional Application/Unlimited Application
+93.800,Health/Medical
+12.219,Science and Technology
+84.323,Elementary/Secondary Education
+84.323,Higher Education (includes Research)
+84.323,Training
+84.323,Vocational Rehabilitation
+93.136,Health/Medical
+93.136,Higher Education (includes Research)
+93.136,Training
+93.435,Health/Medical
+93.435,Communications
+93.799,Health/Medical
+93.799,Youth Development
+20.707,Energy
+20.707,Public Works
+20.707,Transportation
+20.707,Training
+93.376,Health/Medical
+93.314,No Functional Application/Unlimited Application
+84.011,Elementary/Secondary Education
+93.426,Health/Medical
+20.518,Transportation
+20.518,Training
+93.240,Health/Medical
+93.240,Regional Development
+84.240,Vocational Rehabilitation
+59.008,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.768,Economic Development
+10.768,"Environment (water, air, solid waste, pesticides, radiation)"
+10.768,Community Development (includes Federal surplus property)
+19.225,No Functional Application/Unlimited Application
+20.520,"Natural Resources (mineral, water, wildlife, land)"
+20.520,Public Works
+20.520,Transportation
+93.268,Health/Medical
+20.316,Transportation
+20.316,Public Works
+93.439,Health/Medical
+20.703,Transportation
+20.703,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+20.703,Training
+20.703,Planning
+93.772,No Functional Application/Unlimited Application
+93.436,Health/Medical
+93.977,Health/Medical
+93.977,Training
+93.421,Health/Medical
+93.262,Health/Medical
+93.387,Health/Medical
+84.235,Vocational Rehabilitation
+93.334,Health/Medical
+59.061,International (includes Export/lmport)
+59.061,Business/Commerce
+59.061,Training
+12.556,Elementary/Secondary Education
+93.738,Health/Medical
+20.721,Energy
+20.721,Public Works
+20.721,Transportation
+20.721,Training
+93.427,Health/Medical
+93.478,Health/Medical
+84.010,Elementary/Secondary Education
+93.354,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+84.145,Elementary/Secondary Education
+84.145,Health/Medical
+84.145,Higher Education (includes Research)
+93.197,Health/Medical
+93.073,Health/Medical
+93.940,Health/Medical
+93.940,Training
+93.184,Health/Medical
+93.391,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.185,Health/Medical
+93.185,Higher Education (includes Research)
+93.304,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.810,Health/Medical
+19.220,No Functional Application/Unlimited Application
+93.945,Health/Medical
+93.945,Communications
+59.007,Business/Commerce
+93.823,Health/Medical
+93.823,Science and Technology
+12.550,Higher Education (includes Research)
+84.022,Higher Education (includes Research)
+93.118,Health/Medical
+93.070,Health/Medical
+93.070,Higher Education (includes Research)
+93.070,Business/Commerce
+93.939,Health/Medical
+93.939,Training
+84.002,Training
+20.700,Energy
+20.700,Public Works
+20.700,Transportation
+20.700,Training
+84.328,Training
+84.328,Youth Development
+84.018,Elementary/Secondary Education
+84.018,Training
+93.943,Health/Medical
+93.065,Health/Medical
+10.645,Food and Nutrition
+81.009,Science and Technology
+15.611,Higher Education (includes Research)
+15.611,Agriculture/Forestry/Fish and Game
+81.139,"Environment (water, air, solid waste, pesticides, radiation)"
+81.139,Science and Technology
+81.251,Employment/Labor/Management
+81.251,Higher Education (includes Research)
+81.251,Training
+10.234,Agriculture/Forestry/Fish and Game
+93.140,Training
+10.309,Higher Education (includes Research)
+10.309,Agriculture/Forestry/Fish and Game
+10.309,"Natural Resources (mineral, water, wildlife, land)"
+10.309,Science and Technology
+10.309,Business/Commerce
+84.407,Higher Education (includes Research)
+20.500,Public Works
+20.500,Transportation
+20.500,Construction/Renewal/Rehabilitation
+10.928,"Environment (water, air, solid waste, pesticides, radiation)"
+10.928,Agriculture/Forestry/Fish and Game
+10.928,"Natural Resources (mineral, water, wildlife, land)"
+10.531,Food and Nutrition
+10.531,Training
+93.193,Health/Medical
+93.210,Health/Medical
+93.313,Higher Education (includes Research)
+93.313,Training
+84.417,No Functional Application/Unlimited Application
+84.120,Higher Education (includes Research)
+84.120,Science and Technology
+20.944,Transportation
+93.576,Income Security/Social Service/Welfare
+21.011,Economic Development
+21.011,Housing
+21.011,Community Development (includes Federal surplus property)
+93.787,Training
+93.787,Youth Development
+93.235,Health/Medical
+93.235,Training
+93.235,Youth Development
+93.092,Health/Medical
+93.092,Youth Development
+93.558,Income Security/Social Service/Welfare
+93.594,Income Security/Social Service/Welfare
+93.714,Income Security/Social Service/Welfare
+10.905,"Environment (water, air, solid waste, pesticides, radiation)"
+10.905,Agriculture/Forestry/Fish and Game
+10.905,"Natural Resources (mineral, water, wildlife, land)"
+93.971,Health/Medical
+93.596,Income Security/Social Service/Welfare
+10.228,Higher Education (includes Research)
+10.228,Agriculture/Forestry/Fish and Game
+93.970,Training
+10.310,Higher Education (includes Research)
+10.310,Agriculture/Forestry/Fish and Game
+10.310,Science and Technology
+93.623,Housing
+93.623,Income Security/Social Service/Welfare
+93.623,Youth Development
+10.230,Libraries/lnformation/Statistics
+10.330,Agriculture/Forestry/Fish and Game
+93.550,Income Security/Social Service/Welfare
+93.550,Youth Development
+10.232,Agriculture/Forestry/Fish and Game
+12.002,Business/Commerce
+12.002,Training
+15.243,"Natural Resources (mineral, water, wildlife, land)"
+15.243,Youth Development
+15.222,"Natural Resources (mineral, water, wildlife, land)"
+93.113,"Environment (water, air, solid waste, pesticides, radiation)"
+93.113,Health/Medical
+93.113,Science and Technology
+15.514,Business/Commerce
+93.853,Health/Medical
+93.853,Higher Education (includes Research)
+93.853,Science and Technology
+93.853,Training
+93.142,"Environment (water, air, solid waste, pesticides, radiation)"
+93.142,Health/Medical
+93.142,Science and Technology
+93.662,Health/Medical
+93.662,Science and Technology
+93.662,Construction/Renewal/Rehabilitation
+12.910,Higher Education (includes Research)
+12.910,Science and Technology
+93.855,Health/Medical
+93.855,Higher Education (includes Research)
+93.846,Health/Medical
+93.846,Higher Education (includes Research)
+15.244,Agriculture/Forestry/Fish and Game
+15.244,"Natural Resources (mineral, water, wildlife, land)"
+15.233,Agriculture/Forestry/Fish and Game
+93.663,Health/Medical
+93.663,Science and Technology
+15.542,"Natural Resources (mineral, water, wildlife, land)"
+64.203,Construction/Renewal/Rehabilitation
+10.527,Higher Education (includes Research)
+10.515,Agriculture/Forestry/Fish and Game
+10.515,"Natural Resources (mineral, water, wildlife, land)"
+10.313,Agriculture/Forestry/Fish and Game
+10.970,Agriculture/Forestry/Fish and Game
+93.579,Income Security/Social Service/Welfare
+10.518,Higher Education (includes Research)
+20.519,Transportation
+93.991,Health/Medical
+84.141,Elementary/Secondary Education
+93.270,Health/Medical
+93.270,Science and Technology
+93.270,Training
+93.326,"Environment (water, air, solid waste, pesticides, radiation)"
+93.326,Food and Nutrition
+93.326,Health/Medical
+93.326,Science and Technology
+20.534,No Functional Application/Unlimited Application
+93.061,Health/Medical
+20.223,Public Works
+20.223,Transportation
+59.012,Energy
+59.012,Business/Commerce
+90.800,No Functional Application/Unlimited Application
+20.527,Public Works
+20.527,Transportation
+20.527,Construction/Renewal/Rehabilitation
+93.317,Health/Medical
+93.317,Science and Technology
+93.317,Training
+93.082,Food and Nutrition
+93.082,Health/Medical
+93.978,Health/Medical
+93.488,Health/Medical
+93.488,Communications
+93.947,Health/Medical
+93.947,Training
+20.533,Transportation
+59.006,Business/Commerce
+93.850,Health/Medical
+93.850,Communications
+19.979,No Functional Application/Unlimited Application
+19.979,Health/Medical
+19.979,Agriculture/Forestry/Fish and Game
+19.979,"Law, Justice, and Legal Services"
+19.979,Maritime
+19.979,Training
+19.979,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.979,Construction/Renewal/Rehabilitation
+90.705,Agriculture/Forestry/Fish and Game
+90.705,Business/Commerce
+90.705,Communications
+90.705,Community Development (includes Federal surplus property)
+90.705,Construction/Renewal/Rehabilitation
+90.705,Culture/Arts/Humanities
+90.705,Economic Development
+90.705,Employment/Labor/Management
+90.705,Energy
+90.705,"Environment (water, air, solid waste, pesticides, radiation)"
+90.705,Food and Nutrition
+90.705,Health/Medical
+90.705,Higher Education (includes Research)
+90.705,"Law, Justice, and Legal Services"
+90.705,Maritime
+90.705,"Natural Resources (mineral, water, wildlife, land)"
+90.705,Planning
+90.705,Public Works
+90.705,Recreation (includes Historic Preservation)
+90.705,Regional Development
+90.705,Science and Technology
+90.705,Training
+90.705,Transportation
+90.705,Vocational Education
+93.684,Planning
+93.684,Training
+93.684,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.989,Economic Development
+93.981,Elementary/Secondary Education
+93.981,Food and Nutrition
+93.981,Health/Medical
+20.528,Transportation
+93.066,Health/Medical
+20.522,Planning
+20.522,Transportation
+93.116,Health/Medical
+93.116,Training
+20.720,Transportation
+93.834,Health/Medical
+93.834,Training
+93.348,Health/Medical
+93.261,Health/Medical
+93.479,Health/Medical
+93.874,Health/Medical
+84.196,Elementary/Secondary Education
+15.230,"Environment (water, air, solid waste, pesticides, radiation)"
+93.307,Health/Medical
+93.307,Higher Education (includes Research)
+93.307,Training
+93.172,Health/Medical
+93.172,Higher Education (includes Research)
+93.172,Science and Technology
+93.172,Training
+15.545,"Natural Resources (mineral, water, wildlife, land)"
+15.237,Agriculture/Forestry/Fish and Game
+15.232,"Natural Resources (mineral, water, wildlife, land)"
+20.614,Consumer Protection
+20.614,Health/Medical
+20.614,Higher Education (includes Research)
+20.614,"Law, Justice, and Legal Services"
+20.614,Public Works
+20.614,Training
+20.614,Transportation
+93.143,"Environment (water, air, solid waste, pesticides, radiation)"
+93.143,Health/Medical
+93.143,Science and Technology
+15.228,"Natural Resources (mineral, water, wildlife, land)"
+15.015,"Natural Resources (mineral, water, wildlife, land)"
+15.015,Agriculture/Forestry/Fish and Game
+93.187,Health/Medical
+93.187,Higher Education (includes Research)
+20.940,Transportation
+93.933,Health/Medical
+93.791,Health/Medical
+20.505,Planning
+84.382,Higher Education (includes Research)
+20.516,Transportation
+84.335,Higher Education (includes Research)
+20.615,Communications
+93.775,"Law, Justice, and Legal Services"
+84.200,Higher Education (includes Research)
+15.553,Public Works
+15.553,Regional Development
+93.624,Health/Medical
+21.020,Business/Commerce
+21.020,Economic Development
+21.020,Training
+21.020,Community Development (includes Federal surplus property)
+21.021,Economic Development
+21.021,Community Development (includes Federal surplus property)
+21.025,Economic Development
+21.025,Community Development (includes Federal surplus property)
+21.012,Economic Development
+21.012,Training
+21.012,Community Development (includes Federal surplus property)
+21.012,Business/Commerce
+84.031,Higher Education (includes Research)
+20.509,Transportation
+20.507,Transportation
+84.017,Higher Education (includes Research)
+84.017,Community Development (includes Federal surplus property)
+84.017,Culture/Arts/Humanities
+84.229,Higher Education (includes Research)
+15.524,"Natural Resources (mineral, water, wildlife, land)"
+93.382,Health/Medical
+93.382,Planning
+93.867,Health/Medical
+93.867,Higher Education (includes Research)
+93.441,Health/Medical
+84.274,Higher Education (includes Research)
+84.016,Higher Education (includes Research)
+84.015,Higher Education (includes Research)
+20.701,Transportation
+20.945,Transportation
+93.123,Training
+93.237,Health/Medical
+93.767,Health/Medical
+93.653,Health/Medical
+93.383,Health/Medical
+10.332,Higher Education (includes Research)
+10.332,Agriculture/Forestry/Fish and Game
+10.332,Health/Medical
+10.332,Science and Technology
+93.231,Health/Medical
+93.231,Science and Technology
+93.858,Food and Nutrition
+93.858,Health/Medical
+93.858,Training
+93.858,Community Development (includes Federal surplus property)
+93.946,Health/Medical
+93.946,Youth Development
+93.967,Health/Medical
+93.967,Planning
+93.967,Training
+93.967,Communications
+93.319,Food and Nutrition
+93.944,Health/Medical
+84.144,Elementary/Secondary Education
+84.144,Higher Education (includes Research)
+93.832,Health/Medical
+93.084,Health/Medical
+93.422,Health/Medical
+93.318,No Functional Application/Unlimited Application
+20.525,Public Works
+20.525,Transportation
+84.021,Higher Education (includes Research)
+93.377,Health/Medical
+20.532,Transportation
+19.222,No Functional Application/Unlimited Application
+93.083,Health/Medical
+93.068,Health/Medical
+19.223,No Functional Application/Unlimited Application
+20.514,Higher Education (includes Research)
+20.514,Transportation
+20.514,Planning
+20.514,Training
+20.514,Vocational Education
+20.514,Youth Development
+20.514,Economic Development
+20.514,Regional Development
+20.514,Employment/Labor/Management
+20.514,Energy
+20.514,Science and Technology
+93.860,Health/Medical
+93.860,Science and Technology
+93.860,Training
+20.936,Transportation
+93.336,Health/Medical
+19.706,No Functional Application/Unlimited Application
+20.706,Transportation
+20.706,Training
+20.706,Energy
+20.706,Public Works
+93.659,Income Security/Social Service/Welfare
+93.652,Income Security/Social Service/Welfare
+93.605,Income Security/Social Service/Welfare
+93.658,Income Security/Social Service/Welfare
+93.658,Youth Development
+93.599,Higher Education (includes Research)
+93.599,Income Security/Social Service/Welfare
+93.599,Youth Development
+93.586,Income Security/Social Service/Welfare
+93.471,Income Security/Social Service/Welfare
+93.090,Income Security/Social Service/Welfare
+93.648,Income Security/Social Service/Welfare
+93.648,Training
+93.796,Health/Medical
+10.975,Agriculture/Forestry/Fish and Game
+64.202,Income Security/Social Service/Welfare
+10.112,Agriculture/Forestry/Fish and Game
+84.161,Vocational Rehabilitation
+93.394,Health/Medical
+93.394,Higher Education (includes Research)
+64.205,No Functional Application/Unlimited Application
+84.334,Elementary/Secondary Education
+84.334,Higher Education (includes Research)
+84.334,Business/Commerce
+15.531,"Natural Resources (mineral, water, wildlife, land)"
+15.512,Maritime
+15.512,"Natural Resources (mineral, water, wildlife, land)"
+66.460,"Environment (water, air, solid waste, pesticides, radiation)"
+64.126,No Functional Application/Unlimited Application
+93.353,No Functional Application/Unlimited Application
+93.398,Health/Medical
+93.398,Higher Education (includes Research)
+93.398,Training
+20.941,Transportation
+20.816,Maritime
+20.816,Planning
+20.816,Regional Development
+20.816,Transportation
+20.817,"Environment (water, air, solid waste, pesticides, radiation)"
+20.817,Maritime
+20.115,Energy
+20.812,Maritime
+20.812,Construction/Renewal/Rehabilitation
+20.814,Business/Commerce
+20.808,Maritime
+20.803,Maritime
+20.803,Business/Commerce
+84.415,Elementary/Secondary Education
+84.101,Vocational Education
+20.821,Higher Education (includes Research)
+20.821,Maritime
+20.818,Higher Education (includes Research)
+20.818,Planning
+20.818,Transportation
+20.930,Transportation
+20.822,Economic Development
+20.822,"Environment (water, air, solid waste, pesticides, radiation)"
+20.822,International (includes Export/lmport)
+20.822,Maritime
+20.822,Planning
+20.822,Public Works
+20.822,Transportation
+20.822,Construction/Renewal/Rehabilitation
+20.819,Higher Education (includes Research)
+20.819,Maritime
+20.819,Planning
+20.819,Science and Technology
+20.819,Transportation
+84.299,Elementary/Secondary Education
+84.048,Training
+84.048,Vocational Education
+84.371,Elementary/Secondary Education
+84.245,Higher Education (includes Research)
+84.245,Vocational Education
+20.813,International (includes Export/lmport)
+20.813,Maritime
+20.813,Transportation
+20.807,Higher Education (includes Research)
+20.807,Maritime
+20.807,Training
+20.807,Transportation
+84.356,Elementary/Secondary Education
+20.823,Construction/Renewal/Rehabilitation
+84.060,Elementary/Secondary Education
+84.215,Elementary/Secondary Education
+84.215,Higher Education (includes Research)
+32.004,Elementary/Secondary Education
+32.004,Libraries/lnformation/Statistics
+32.004,Communications
+87.002,Health/Medical
+87.002,Consumer Protection
+84.295,Communications
+84.351,Elementary/Secondary Education
+84.351,Culture/Arts/Humanities
+84.051,Vocational Education
+20.825,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+20.824,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+20.824,Maritime
+20.824,Transportation
+84.362,Elementary/Secondary Education
+84.259,Vocational Education
+15.530,"Environment (water, air, solid waste, pesticides, radiation)"
+14.175,Housing
+12.987,"Environment (water, air, solid waste, pesticides, radiation)"
+14.198,Housing
+81.122,Energy
+17.150,Employment/Labor/Management
+17.268,Higher Education (includes Research)
+17.268,Regional Development
+17.268,Training
+17.268,Employment/Labor/Management
+15.930,Recreation (includes Historic Preservation)
+15.945,Training
+14.241,Housing
+84.358,Elementary/Secondary Education
+15.916,Planning
+15.916,Recreation (includes Historic Preservation)
+17.003,Libraries/lnformation/Statistics
+87.052,Economic Development
+87.052,"Environment (water, air, solid waste, pesticides, radiation)"
+87.052,"Natural Resources (mineral, water, wildlife, land)"
+17.005,Libraries/lnformation/Statistics
+17.002,Libraries/lnformation/Statistics
+93.569,Employment/Labor/Management
+93.569,Community Development (includes Federal surplus property)
+87.051,"Environment (water, air, solid waste, pesticides, radiation)"
+87.051,"Natural Resources (mineral, water, wildlife, land)"
+10.973,Agriculture/Forestry/Fish and Game
+15.946,Construction/Renewal/Rehabilitation
+15.935,"Natural Resources (mineral, water, wildlife, land)"
+17.004,No Functional Application/Unlimited Application
+15.253,"Natural Resources (mineral, water, wildlife, land)"
+15.255,"Natural Resources (mineral, water, wildlife, land)"
+15.255,Science and Technology
+15.254,"Environment (water, air, solid waste, pesticides, radiation)"
+15.254,Youth Development
+17.720,No Functional Application/Unlimited Application
+15.546,"Natural Resources (mineral, water, wildlife, land)"
+15.546,Training
+15.546,Youth Development
+84.220,Higher Education (includes Research)
+20.943,Transportation
+20.910,Training
+20.910,Economic Development
+20.942,Community Development (includes Federal surplus property)
+20.942,Planning
+20.942,Regional Development
+20.942,Transportation
+93.228,Health/Medical
+10.334,Agriculture/Forestry/Fish and Game
+93.777,Health/Medical
+84.153,Higher Education (includes Research)
+91.005,Higher Education (includes Research)
+91.005,International (includes Export/lmport)
+93.310,Health/Medical
+93.310,Science and Technology
+93.368,Science and Technology
+20.224,Planning
+20.224,Transportation
+20.224,Construction/Renewal/Rehabilitation
+15.668,"Natural Resources (mineral, water, wildlife, land)"
+20.205,Planning
+20.205,Public Works
+20.205,Transportation
+20.205,Construction/Renewal/Rehabilitation
+93.370,Science and Technology
+59.037,Business/Commerce
+59.037,Training
+93.676,Income Security/Social Service/Welfare
+20.234,Transportation
+93.774,Health/Medical
+93.774,Income Security/Social Service/Welfare
+15.250,"Environment (water, air, solid waste, pesticides, radiation)"
+15.250,"Natural Resources (mineral, water, wildlife, land)"
+93.840,"Environment (water, air, solid waste, pesticides, radiation)"
+93.840,Food and Nutrition
+93.840,Health/Medical
+93.840,Higher Education (includes Research)
+93.840,Science and Technology
+93.840,Training
+84.379,Higher Education (includes Research)
+93.350,Health/Medical
+93.350,Training
+93.847,Health/Medical
+93.847,Higher Education (includes Research)
+15.506,"Natural Resources (mineral, water, wildlife, land)"
+84.103,Elementary/Secondary Education
+84.103,Higher Education (includes Research)
+93.242,Health/Medical
+93.242,Higher Education (includes Research)
+84.427,Vocational Rehabilitation
+84.027,Elementary/Secondary Education
+93.702,Construction/Renewal/Rehabilitation
+93.838,Health/Medical
+93.838,Higher Education (includes Research)
+93.838,Youth Development
+84.424,Elementary/Secondary Education
+84.368,Elementary/Secondary Education
+84.042,Higher Education (includes Research)
+84.184,Higher Education (includes Research)
+84.184,Youth Development
+84.184,Elementary/Secondary Education
+81.121,Energy
+81.121,Science and Technology
+81.121,Higher Education (includes Research)
+81.121,Business/Commerce
+81.121,"Environment (water, air, solid waste, pesticides, radiation)"
+12.599,No Functional Application/Unlimited Application
+84.373,Higher Education (includes Research)
+93.233,Health/Medical
+93.233,Higher Education (includes Research)
+93.233,Youth Development
+84.044,Elementary/Secondary Education
+84.044,Higher Education (includes Research)
+84.044,Training
+93.173,Health/Medical
+93.173,Higher Education (includes Research)
+84.063,Higher Education (includes Research)
+84.004,Elementary/Secondary Education
+84.004,Training
+84.263,Vocational Rehabilitation
+84.411,Elementary/Secondary Education
+15.075,Construction/Renewal/Rehabilitation
+12.551,Higher Education (includes Research)
+84.326,Elementary/Secondary Education
+84.326,Training
+84.326,Youth Development
+84.013,Elementary/Secondary Education
+81.255,Energy
+17.272,Employment/Labor/Management
+17.272,Business/Commerce
+10.902,"Natural Resources (mineral, water, wildlife, land)"
+84.365,Elementary/Secondary Education
+84.246,Training
+84.246,Vocational Rehabilitation
+93.837,Health/Medical
+93.837,Higher Education (includes Research)
+84.336,Elementary/Secondary Education
+84.336,Higher Education (includes Research)
+84.380,Training
+84.380,Youth Development
+93.839,Health/Medical
+93.839,Higher Education (includes Research)
+12.006,No Functional Application/Unlimited Application
+12.006,Elementary/Secondary Education
+12.006,Higher Education (includes Research)
+12.006,Science and Technology
+12.006,Training
+12.006,Vocational Education
+12.006,Youth Development
+81.106,Energy
+81.106,"Environment (water, air, solid waste, pesticides, radiation)"
+81.106,"Natural Resources (mineral, water, wildlife, land)"
+81.106,Planning
+81.106,Regional Development
+84.282,Elementary/Secondary Education
+12.015,Training
+12.015,Science and Technology
+84.047,Elementary/Secondary Education
+84.324,Elementary/Secondary Education
+84.324,Higher Education (includes Research)
+84.426,Vocational Education
+11.617,Business/Commerce
+11.609,Higher Education (includes Research)
+11.609,Science and Technology
+11.611,Economic Development
+11.611,Regional Development
+11.611,Business/Commerce
+11.606,Libraries/lnformation/Statistics
+10.585,Food and Nutrition
+10.585,Higher Education (includes Research)
+81.086,Energy
+84.287,Elementary/Secondary Education
+81.042,Energy
+81.253,Energy
+66.448,"Environment (water, air, solid waste, pesticides, radiation)"
+15.955,Regional Development
+15.944,"Natural Resources (mineral, water, wildlife, land)"
+15.939,Recreation (includes Historic Preservation)
+17.503,Employment/Labor/Management
+81.041,Energy
+17.502,Health/Medical
+17.502,Higher Education (includes Research)
+17.502,Training
+15.962,"Natural Resources (mineral, water, wildlife, land)"
+84.206,Elementary/Secondary Education
+93.583,Income Security/Social Service/Welfare
+14.416,Housing
+14.416,Training
+14.416,"Law, Justice, and Legal Services"
+14.408,Housing
+15.533,"Environment (water, air, solid waste, pesticides, radiation)"
+84.066,Higher Education (includes Research)
+84.160,Higher Education (includes Research)
+84.160,Training
+84.160,Vocational Rehabilitation
+93.372,Science and Technology
+84.217,Higher Education (includes Research)
+84.033,Higher Education (includes Research)
+84.033,Vocational Education
+15.077,Construction/Renewal/Rehabilitation
+84.283,Elementary/Secondary Education
+84.305,Elementary/Secondary Education
+84.305,Higher Education (includes Research)
+84.374,Higher Education (includes Research)
+84.007,Higher Education (includes Research)
+84.264,Training
+84.264,Vocational Rehabilitation
+15.159,Higher Education (includes Research)
+15.159,Housing
+15.159,Science and Technology
+15.159,Culture/Arts/Humanities
+15.020,No Functional Application/Unlimited Application
+15.021,No Functional Application/Unlimited Application
+15.060,No Functional Application/Unlimited Application
+15.051,"Natural Resources (mineral, water, wildlife, land)"
+81.254,Energy
+81.254,Science and Technology
+81.254,Planning
+81.254,Economic Development
+15.057,No Functional Application/Unlimited Application
+19.022,Higher Education (includes Research)
+19.022,Culture/Arts/Humanities
+15.552,Public Works
+15.552,Construction/Renewal/Rehabilitation
+15.146,Vocational Education
+19.421,Higher Education (includes Research)
+19.402,Higher Education (includes Research)
+19.402,Culture/Arts/Humanities
+15.155,Higher Education (includes Research)
+15.155,"Law, Justice, and Legal Services"
+15.155,Community Development (includes Federal surplus property)
+19.015,Higher Education (includes Research)
+15.160,Training
+15.160,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.959,Elementary/Secondary Education
+19.451,Higher Education (includes Research)
+15.247,"Natural Resources (mineral, water, wildlife, land)"
+19.301,Economic Development
+19.452,Higher Education (includes Research)
+19.452,Culture/Arts/Humanities
+15.022,No Functional Application/Unlimited Application
+15.047,Elementary/Secondary Education
+66.442,"Environment (water, air, solid waste, pesticides, radiation)"
+15.674,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.631,"Natural Resources (mineral, water, wildlife, land)"
+15.630,"Natural Resources (mineral, water, wildlife, land)"
+47.076,Elementary/Secondary Education
+47.076,Higher Education (includes Research)
+47.076,Science and Technology
+47.074,Higher Education (includes Research)
+47.074,Science and Technology
+47.075,Science and Technology
+47.075,Higher Education (includes Research)
+47.070,Higher Education (includes Research)
+47.070,Science and Technology
+47.078,Science and Technology
+47.078,Higher Education (includes Research)
+47.079,International (includes Export/lmport)
+47.079,Higher Education (includes Research)
+47.079,Science and Technology
+47.083,Science and Technology
+47.083,Higher Education (includes Research)
+66.487,"Environment (water, air, solid waste, pesticides, radiation)"
+81.140,Planning
+81.140,Public Works
+81.140,Training
+81.140,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+47.041,Higher Education (includes Research)
+47.041,Science and Technology
+66.436,"Environment (water, air, solid waste, pesticides, radiation)"
+47.050,Higher Education (includes Research)
+47.050,Science and Technology
+15.676,Youth Development
+47.084,Higher Education (includes Research)
+47.084,Science and Technology
+16.540,"Law, Justice, and Legal Services"
+16.540,Youth Development
+16.544,Elementary/Secondary Education
+16.544,"Law, Justice, and Legal Services"
+10.448,Housing
+10.162,Agriculture/Forestry/Fish and Game
+16.830,Income Security/Social Service/Welfare
+16.830,Planning
+16.830,Training
+16.830,Youth Development
+10.172,Food and Nutrition
+10.172,Agriculture/Forestry/Fish and Game
+21.023,Housing
+21.023,Income Security/Social Service/Welfare
+10.180,Agriculture/Forestry/Fish and Game
+10.180,Food and Nutrition
+43.012,Science and Technology
+43.003,Elementary/Secondary Education
+43.003,Higher Education (includes Research)
+43.003,Libraries/lnformation/Statistics
+43.003,Science and Technology
+43.003,Training
+43.003,Youth Development
+43.007,Elementary/Secondary Education
+43.007,Higher Education (includes Research)
+43.007,Libraries/lnformation/Statistics
+43.007,Science and Technology
+43.007,Training
+43.007,Youth Development
+15.571,"Environment (water, air, solid waste, pesticides, radiation)"
+10.164,Agriculture/Forestry/Fish and Game
+10.222,Higher Education (includes Research)
+10.222,Agriculture/Forestry/Fish and Game
+16.818,"Law, Justice, and Legal Services"
+16.818,Youth Development
+16.832,"Law, Justice, and Legal Services"
+16.832,Libraries/lnformation/Statistics
+16.832,Training
+16.832,Youth Development
+16.831,"Law, Justice, and Legal Services"
+16.831,Libraries/lnformation/Statistics
+16.831,Training
+16.831,Youth Development
+10.167,Agriculture/Forestry/Fish and Game
+10.167,Transportation
+16.575,"Law, Justice, and Legal Services"
+16.758,"Law, Justice, and Legal Services"
+17.290,Training
+16.842,Planning
+16.842,Training
+16.123,"Law, Justice, and Legal Services"
+16.123,Youth Development
+16.321,"Law, Justice, and Legal Services"
+84.041,Elementary/Secondary Education
+84.041,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+84.423,Elementary/Secondary Education
+84.423,Higher Education (includes Research)
+12.019,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+12.019,Higher Education (includes Research)
+84.165,Elementary/Secondary Education
+84.165,Vocational Education
+12.631,Elementary/Secondary Education
+12.631,Higher Education (includes Research)
+12.631,Science and Technology
+12.631,Training
+12.631,Youth Development
+12.552,Higher Education (includes Research)
+93.279,Health/Medical
+93.279,Higher Education (includes Research)
+93.989,Health/Medical
+93.989,Higher Education (includes Research)
+93.989,Training
+84.369,Elementary/Secondary Education
+84.367,Elementary/Secondary Education
+15.074,"Natural Resources (mineral, water, wildlife, land)"
+84.403,Elementary/Secondary Education
+84.372,Elementary/Secondary Education
+84.325,Elementary/Secondary Education
+84.325,Higher Education (includes Research)
+84.325,Training
+84.325,Vocational Rehabilitation
+12.554,International (includes Export/lmport)
+12.554,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+84.129,Training
+84.129,Vocational Rehabilitation
+84.315,Higher Education (includes Research)
+84.315,Training
+84.315,Vocational Rehabilitation
+81.124,Higher Education (includes Research)
+81.124,Science and Technology
+10.561,Food and Nutrition
+90.404,Science and Technology
+90.404,Training
+90.404,Communications
+17.201,Employment/Labor/Management
+17.201,Business/Commerce
+17.201,Training
+17.201,Construction/Renewal/Rehabilitation
+93.356,Construction/Renewal/Rehabilitation
+66.509,"Environment (water, air, solid waste, pesticides, radiation)"
+66.509,Higher Education (includes Research)
+66.509,Science and Technology
+10.229,Higher Education (includes Research)
+10.229,Health/Medical
+10.229,Agriculture/Forestry/Fish and Game
+16.735,"Law, Justice, and Legal Services"
+16.030,Higher Education (includes Research)
+16.030,Planning
+16.036,"Law, Justice, and Legal Services"
+16.609,"Law, Justice, and Legal Services"
+16.042,"Law, Justice, and Legal Services"
+16.820,"Law, Justice, and Legal Services"
+93.384,Health/Medical
+16.050,"Law, Justice, and Legal Services"
+16.050,Science and Technology
+16.050,Transportation
+16.593,"Law, Justice, and Legal Services"
+16.742,"Law, Justice, and Legal Services"
+66.806,"Environment (water, air, solid waste, pesticides, radiation)"
+16.039,"Law, Justice, and Legal Services"
+16.039,Training
+17.270,Elementary/Secondary Education
+17.270,Employment/Labor/Management
+17.270,"Law, Justice, and Legal Services"
+17.270,Training
+17.270,Youth Development
+17.270,Vocational Education
+10.303,Higher Education (includes Research)
+10.303,Agriculture/Forestry/Fish and Game
+10.303,"Natural Resources (mineral, water, wildlife, land)"
+10.303,Science and Technology
+10.200,Higher Education (includes Research)
+10.200,Agriculture/Forestry/Fish and Game
+16.833,"Law, Justice, and Legal Services"
+93.557,Income Security/Social Service/Welfare
+93.557,Youth Development
+10.163,Agriculture/Forestry/Fish and Game
+10.163,Business/Commerce
+66.447,"Environment (water, air, solid waste, pesticides, radiation)"
+66.447,Planning
+66.433,"Environment (water, air, solid waste, pesticides, radiation)"
+10.237,Agriculture/Forestry/Fish and Game
+10.237,Economic Development
+19.800,Economic Development
+19.800,Health/Medical
+19.800,Regional Development
+19.800,Transportation
+19.800,Training
+19.800,Youth Development
+19.800,Vocational Education
+19.800,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.800,Communications
+15.559,Construction/Renewal/Rehabilitation
+15.147,Income Security/Social Service/Welfare
+15.151,Elementary/Secondary Education
+15.066,"Environment (water, air, solid waste, pesticides, radiation)"
+14.888,Housing
+15.046,Elementary/Secondary Education
+19.025,Recreation (includes Historic Preservation)
+19.025,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+19.025,Culture/Arts/Humanities
+15.065,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.027,Higher Education (includes Research)
+15.028,Higher Education (includes Research)
+19.400,Higher Education (includes Research)
+19.432,Higher Education (includes Research)
+15.130,Elementary/Secondary Education
+15.034,Agriculture/Forestry/Fish and Game
+19.012,Higher Education (includes Research)
+19.012,Culture/Arts/Humanities
+15.052,"Law, Justice, and Legal Services"
+15.033,Transportation
+15.042,Elementary/Secondary Education
+15.040,"Law, Justice, and Legal Services"
+15.032,Economic Development
+15.043,Elementary/Secondary Education
+15.043,Training
+15.043,Youth Development
+15.048,No Functional Application/Unlimited Application
+15.041,"Environment (water, air, solid waste, pesticides, radiation)"
+15.062,Elementary/Secondary Education
+15.148,Energy
+15.148,Science and Technology
+19.011,Higher Education (includes Research)
+15.163,Elementary/Secondary Education
+15.108,Employment/Labor/Management
+15.108,Income Security/Social Service/Welfare
+15.108,Training
+15.108,Vocational Education
+15.150,Vocational Rehabilitation
+14.400,"Law, Justice, and Legal Services"
+19.600,No Functional Application/Unlimited Application
+14.267,Housing
+14.267,Community Development (includes Federal surplus property)
+14.110,Housing
+14.162,Housing
+19.900,Business/Commerce
+19.900,Communications
+19.900,Community Development (includes Federal surplus property)
+14.151,Housing
+14.139,Housing
+14.129,Health/Medical
+14.129,Housing
+14.129,Construction/Renewal/Rehabilitation
+14.134,Housing
+14.311,Housing
+10.410,Housing
+10.410,Construction/Renewal/Rehabilitation
+14.155,Housing
+10.555,Food and Nutrition
+14.142,Housing
+14.142,Business/Commerce
+14.142,Agriculture/Forestry/Fish and Game
+10.556,Food and Nutrition
+10.352,Energy
+10.352,Agriculture/Forestry/Fish and Game
+10.352,Business/Commerce
+14.171,Housing
+14.171,"Law, Justice, and Legal Services"
+14.171,Consumer Protection
+14.316,Housing
+19.036,No Functional Application/Unlimited Application
+14.123,Housing
+14.123,Community Development (includes Federal surplus property)
+14.123,Construction/Renewal/Rehabilitation
+19.601,No Functional Application/Unlimited Application
+19.221,No Functional Application/Unlimited Application
+12.024,Science and Technology
+10.533,No Functional Application/Unlimited Application
+14.900,Housing
+81.008,Energy
+66.469,Agriculture/Forestry/Fish and Game
+66.469,"Environment (water, air, solid waste, pesticides, radiation)"
+66.469,Science and Technology
+10.593,Food and Nutrition
+93.575,Income Security/Social Service/Welfare
+93.434,Planning
+93.434,Health/Medical
+93.434,Training
+94.003,No Functional Application/Unlimited Application
+94.003,Community Development (includes Federal surplus property)
+66.600,"Environment (water, air, solid waste, pesticides, radiation)"
+66.126,"Environment (water, air, solid waste, pesticides, radiation)"
+66.126,Science and Technology
+45.309,Culture/Arts/Humanities
+45.309,Recreation (includes Historic Preservation)
+45.309,Training
+45.308,Culture/Arts/Humanities
+45.308,Elementary/Secondary Education
+45.308,Planning
+45.308,Recreation (includes Historic Preservation)
+45.308,Training
+45.308,Vocational Education
+45.308,Youth Development
+45.031,Culture/Arts/Humanities
+45.031,Training
+45.312,Culture/Arts/Humanities
+45.312,Higher Education (includes Research)
+45.312,Libraries/lnformation/Statistics
+45.312,Planning
+45.312,Science and Technology
+45.312,Training
+45.312,Recreation (includes Historic Preservation)
+17.259,Economic Development
+17.259,Training
+17.259,Youth Development
+17.259,Vocational Education
+17.258,Employment/Labor/Management
+17.258,Training
+17.278,Employment/Labor/Management
+17.278,Training
+45.301,Culture/Arts/Humanities
+45.301,Science and Technology
+45.301,Recreation (includes Historic Preservation)
+45.301,Training
+94.002,Income Security/Social Service/Welfare
+45.313,Higher Education (includes Research)
+45.313,Libraries/lnformation/Statistics
+45.313,Culture/Arts/Humanities
+45.313,Elementary/Secondary Education
+45.313,Planning
+45.313,Training
+17.207,Employment/Labor/Management
+10.699,Agriculture/Forestry/Fish and Game
+10.699,"Natural Resources (mineral, water, wildlife, land)"
+10.699,Recreation (includes Historic Preservation)
+10.699,Science and Technology
+10.699,Training
+10.699,Youth Development
+10.701,"Environment (water, air, solid waste, pesticides, radiation)"
+10.701,"Natural Resources (mineral, water, wildlife, land)"
+10.701,Recreation (includes Historic Preservation)
+93.110,Health/Medical
+93.110,Regional Development
+19.701,International (includes Export/lmport)
+19.701,"Law, Justice, and Legal Services"
+19.701,Training
+19.204,Agriculture/Forestry/Fish and Game
+19.204,Maritime
+93.932,Health/Medical
+93.932,Planning
+93.932,Regional Development
+10.379,Economic Development
+10.379,Energy
+10.379,Regional Development
+66.313,"Environment (water, air, solid waste, pesticides, radiation)"
+19.750,Economic Development
+19.750,Employment/Labor/Management
+19.750,Energy
+19.750,"Environment (water, air, solid waste, pesticides, radiation)"
+19.750,Housing
+19.750,Agriculture/Forestry/Fish and Game
+19.750,"Natural Resources (mineral, water, wildlife, land)"
+19.750,Planning
+19.750,Public Works
+19.750,Regional Development
+19.750,Science and Technology
+19.750,Business/Commerce
+19.750,Training
+19.750,Youth Development
+19.750,Community Development (includes Federal surplus property)
+14.248,Economic Development
+14.248,Housing
+14.248,Public Works
+14.248,Business/Commerce
+14.248,Community Development (includes Federal surplus property)
+14.248,Construction/Renewal/Rehabilitation
+93.257,Health/Medical
+10.380,Food and Nutrition
+10.380,Transportation
+93.913,Health/Medical
+93.498,Health/Medical
+93.288,Health/Medical
+93.288,Higher Education (includes Research)
+93.250,Health/Medical
+15.522,"Natural Resources (mineral, water, wildlife, land)"
+93.912,Health/Medical
+93.912,Planning
+93.912,Regional Development
+93.912,Training
+19.124,No Functional Application/Unlimited Application
+93.255,Health/Medical
+93.914,Health/Medical
+15.443,Economic Development
+15.443,Youth Development
+93.303,Health/Medical
+93.303,Higher Education (includes Research)
+93.303,Training
+93.364,Health/Medical
+93.364,Higher Education (includes Research)
+93.223,Health/Medical
+93.155,Health/Medical
+66.305,"Environment (water, air, solid waste, pesticides, radiation)"
+16.550,"Law, Justice, and Legal Services"
+15.444,Maritime
+15.444,"Natural Resources (mineral, water, wildlife, land)"
+19.087,Agriculture/Forestry/Fish and Game
+19.087,"Natural Resources (mineral, water, wildlife, land)"
+15.518,"Environment (water, air, solid waste, pesticides, radiation)"
+15.518,Agriculture/Forestry/Fish and Game
+15.518,"Natural Resources (mineral, water, wildlife, land)"
+10.524,Higher Education (includes Research)
+15.011,"Natural Resources (mineral, water, wildlife, land)"
+15.011,Training
+19.345,International (includes Export/lmport)
+16.824,"Law, Justice, and Legal Services"
+15.235,"Environment (water, air, solid waste, pesticides, radiation)"
+15.235,"Natural Resources (mineral, water, wildlife, land)"
+15.982,"Environment (water, air, solid waste, pesticides, radiation)"
+15.407,Employment/Labor/Management
+15.407,"Natural Resources (mineral, water, wildlife, land)"
+15.407,Recreation (includes Historic Preservation)
+19.021,Elementary/Secondary Education
+19.021,Higher Education (includes Research)
+19.021,International (includes Export/lmport)
+19.021,Training
+19.021,Youth Development
+19.021,Culture/Arts/Humanities
+19.121,Economic Development
+19.121,Employment/Labor/Management
+19.121,"Environment (water, air, solid waste, pesticides, radiation)"
+19.121,Health/Medical
+19.121,Higher Education (includes Research)
+19.121,International (includes Export/lmport)
+19.121,"Law, Justice, and Legal Services"
+19.121,Maritime
+19.121,"Natural Resources (mineral, water, wildlife, land)"
+19.121,Planning
+19.121,Public Works
+19.121,Recreation (includes Historic Preservation)
+19.121,Regional Development
+19.121,Science and Technology
+19.121,Training
+19.121,Youth Development
+19.121,Vocational Education
+19.121,Culture/Arts/Humanities
+81.012,Science and Technology
+81.012,No Functional Application/Unlimited Application
+81.012,Higher Education (includes Research)
+16.827,No Functional Application/Unlimited Application
+19.801,Economic Development
+19.801,Employment/Labor/Management
+19.801,"Environment (water, air, solid waste, pesticides, radiation)"
+19.801,Food and Nutrition
+19.801,"Law, Justice, and Legal Services"
+19.801,Science and Technology
+19.801,Training
+19.801,Youth Development
+19.801,Vocational Education
+19.801,Vocational Rehabilitation
+19.878,International (includes Export/lmport)
+16.046,Higher Education (includes Research)
+81.138,Energy
+19.808,No Functional Application/Unlimited Application
+16.816,"Law, Justice, and Legal Services"
+16.596,Construction/Renewal/Rehabilitation
+16.015,"Law, Justice, and Legal Services"
+15.017,"Natural Resources (mineral, water, wildlife, land)"
+15.016,"Natural Resources (mineral, water, wildlife, land)"
+19.303,Higher Education (includes Research)
+10.551,Food and Nutrition
+14.880,Housing
+93.647,Higher Education (includes Research)
+93.647,Income Security/Social Service/Welfare
+93.647,Youth Development
+10.238,Regional Development
+10.241,Regional Development
+14.889,Economic Development
+14.889,Elementary/Secondary Education
+14.889,Employment/Labor/Management
+14.889,Housing
+14.889,Planning
+14.889,Transportation
+10.728,Agriculture/Forestry/Fish and Game
+10.728,Business/Commerce
+10.728,Economic Development
+10.728,"Natural Resources (mineral, water, wildlife, land)"
+10.733,Agriculture/Forestry/Fish and Game
+10.733,"Natural Resources (mineral, water, wildlife, land)"
+10.731,Agriculture/Forestry/Fish and Game
+10.731,"Environment (water, air, solid waste, pesticides, radiation)"
+10.731,"Natural Resources (mineral, water, wildlife, land)"
+10.732,Agriculture/Forestry/Fish and Game
+10.732,"Natural Resources (mineral, water, wildlife, land)"
+10.732,Training
+10.679,Agriculture/Forestry/Fish and Game
+10.675,Agriculture/Forestry/Fish and Game
+10.730,Agriculture/Forestry/Fish and Game
+10.676,Agriculture/Forestry/Fish and Game
+10.727,Agriculture/Forestry/Fish and Game
+10.727,"Environment (water, air, solid waste, pesticides, radiation)"
+10.727,"Natural Resources (mineral, water, wildlife, land)"
+10.698,Agriculture/Forestry/Fish and Game
+10.734,Agriculture/Forestry/Fish and Game
+10.680,Agriculture/Forestry/Fish and Game
+10.680,Business/Commerce
+10.719,Agriculture/Forestry/Fish and Game
+10.681,Agriculture/Forestry/Fish and Game
+10.326,Higher Education (includes Research)
+10.326,Agriculture/Forestry/Fish and Game
+10.320,Higher Education (includes Research)
+10.535,Food and Nutrition
+93.972,Health/Medical
+17.401,Economic Development
+17.401,Elementary/Secondary Education
+17.401,Employment/Labor/Management
+17.401,International (includes Export/lmport)
+17.401,Training
+17.401,Youth Development
+17.401,Vocational Education
+17.401,Community Development (includes Federal surplus property)
+17.805,Employment/Labor/Management
+10.513,Higher Education (includes Research)
+10.513,Agriculture/Forestry/Fish and Game
+10.513,Libraries/lnformation/Statistics
+10.513,Construction/Renewal/Rehabilitation
+93.241,Health/Medical
+93.241,Regional Development
+93.241,Training
+93.965,Health/Medical
+93.342,Health/Medical
+93.342,Higher Education (includes Research)
+10.525,Agriculture/Forestry/Fish and Game
+93.697,Health/Medical
+93.211,Health/Medical
+16.750,"Law, Justice, and Legal Services"
+19.948,Economic Development
+19.948,"Law, Justice, and Legal Services"
+19.948,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+93.264,Health/Medical
+10.520,Employment/Labor/Management
+10.520,Agriculture/Forestry/Fish and Game
+93.359,Health/Medical
+93.359,Training
+93.530,Health/Medical
+93.530,Training
+10.155,Agriculture/Forestry/Fish and Game
+10.165,Business/Commerce
+16.053,"Law, Justice, and Legal Services"
+16.582,"Law, Justice, and Legal Services"
+16.841,Health/Medical
+16.841,"Law, Justice, and Legal Services"
+16.841,Planning
+16.841,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+16.583,"Law, Justice, and Legal Services"
+16.035,Training
+16.834,"Law, Justice, and Legal Services"
+16.320,"Law, Justice, and Legal Services"
+16.560,Higher Education (includes Research)
+16.560,"Law, Justice, and Legal Services"
+10.168,Agriculture/Forestry/Fish and Game
+10.181,Agriculture/Forestry/Fish and Game
+10.181,Food and Nutrition
+10.221,Higher Education (includes Research)
+10.221,Agriculture/Forestry/Fish and Game
+16.836,"Law, Justice, and Legal Services"
+16.823,"Law, Justice, and Legal Services"
+16.823,Planning
+16.731,"Law, Justice, and Legal Services"
+10.183,Agriculture/Forestry/Fish and Game
+10.182,Food and Nutrition
+10.182,Economic Development
+16.757,"Law, Justice, and Legal Services"
+10.912,"Natural Resources (mineral, water, wildlife, land)"
+10.924,Agriculture/Forestry/Fish and Game
+10.924,"Natural Resources (mineral, water, wildlife, land)"
+15.068,Economic Development
+15.068,Culture/Arts/Humanities
+15.068,Community Development (includes Federal surplus property)
+15.068,Construction/Renewal/Rehabilitation
+15.068,Recreation (includes Historic Preservation)
+15.541,"Natural Resources (mineral, water, wildlife, land)"
+15.565,"Environment (water, air, solid waste, pesticides, radiation)"
+10.186,Agriculture/Forestry/Fish and Game
+10.186,Food and Nutrition
+10.185,Food and Nutrition
+10.185,Economic Development
+10.184,Agriculture/Forestry/Fish and Game
+10.184,Business/Commerce
+10.184,Economic Development
+66.443,"Environment (water, air, solid waste, pesticides, radiation)"
+10.333,Food and Nutrition
+10.333,Training
+10.333,Vocational Education
+10.333,Agriculture/Forestry/Fish and Game
+10.333,Economic Development
+10.333,"Environment (water, air, solid waste, pesticides, radiation)"
+66.522,"Environment (water, air, solid waste, pesticides, radiation)"
+66.522,Higher Education (includes Research)
+66.522,Science and Technology
+10.210,Higher Education (includes Research)
+10.210,Agriculture/Forestry/Fish and Game
+43.009,Elementary/Secondary Education
+43.009,Higher Education (includes Research)
+43.009,Science and Technology
+43.009,Training
+66.521,"Environment (water, air, solid waste, pesticides, radiation)"
+66.521,Science and Technology
+66.521,Higher Education (includes Research)
+43.008,Elementary/Secondary Education
+43.008,Higher Education (includes Research)
+43.008,Libraries/lnformation/Statistics
+43.008,Science and Technology
+43.008,Training
+43.008,Youth Development
+14.117,Housing
+14.117,Construction/Renewal/Rehabilitation
+93.654,Health/Medical
+66.817,"Environment (water, air, solid waste, pesticides, radiation)"
+66.817,Training
+43.001,Elementary/Secondary Education
+43.001,Energy
+43.001,"Environment (water, air, solid waste, pesticides, radiation)"
+43.001,Health/Medical
+43.001,Higher Education (includes Research)
+43.001,Libraries/lnformation/Statistics
+43.001,"Natural Resources (mineral, water, wildlife, land)"
+43.001,Planning
+43.001,Science and Technology
+43.001,Training
+43.001,Youth Development
+15.252,"Environment (water, air, solid waste, pesticides, radiation)"
+15.252,"Natural Resources (mineral, water, wildlife, land)"
+15.252,Economic Development
+14.183,Housing
+17.274,Elementary/Secondary Education
+17.274,Training
+17.274,Youth Development
+17.274,Vocational Education
+43.002,Elementary/Secondary Education
+43.002,Higher Education (includes Research)
+43.002,Libraries/lnformation/Statistics
+43.002,Science and Technology
+43.002,Training
+43.002,Youth Development
+93.121,Health/Medical
+93.121,Science and Technology
+93.121,Training
+84.310,Youth Development
+84.310,Community Development (includes Federal surplus property)
+93.879,Health/Medical
+93.879,Higher Education (includes Research)
+93.879,Training
+93.213,Health/Medical
+93.213,Science and Technology
+84.327,Elementary/Secondary Education
+84.327,Higher Education (includes Research)
+84.327,Libraries/lnformation/Statistics
+84.327,Training
+84.327,Communications
+84.354,Elementary/Secondary Education
+15.078,"Natural Resources (mineral, water, wildlife, land)"
+15.078,Science and Technology
+12.630,Higher Education (includes Research)
+12.630,Science and Technology
+93.321,No Functional Application/Unlimited Application
+93.321,Science and Technology
+84.408,Higher Education (includes Research)
+84.040,Elementary/Secondary Education
+84.040,Construction/Renewal/Rehabilitation
+84.250,Vocational Rehabilitation
+15.550,Recreation (includes Historic Preservation)
+12.579,Higher Education (includes Research)
+12.579,Training
+84.268,Higher Education (includes Research)
+84.268,Training
+14.119,Housing
+14.119,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+66.456,"Environment (water, air, solid waste, pesticides, radiation)"
+14.133,Housing
+45.162,Culture/Arts/Humanities
+10.596,Elementary/Secondary Education
+10.596,Employment/Labor/Management
+10.596,Food and Nutrition
+10.596,Training
+10.596,Vocational Education
+10.596,Vocational Rehabilitation
+21.014,Economic Development
+21.014,Community Development (includes Federal surplus property)
+66.441,"Environment (water, air, solid waste, pesticides, radiation)"
+14.108,Housing
+14.108,Construction/Renewal/Rehabilitation
+14.022,Housing
+14.022,Consumer Protection
+17.289,Employment/Labor/Management
+17.289,Training
+17.289,Youth Development
+16.738,"Law, Justice, and Legal Services"
+81.123,Higher Education (includes Research)
+81.123,Science and Technology
+19.704,"Law, Justice, and Legal Services"
+15.245,Agriculture/Forestry/Fish and Game
+15.245,"Natural Resources (mineral, water, wildlife, land)"
+15.904,Higher Education (includes Research)
+15.904,Recreation (includes Historic Preservation)
+15.904,Community Development (includes Federal surplus property)
+15.904,Construction/Renewal/Rehabilitation
+15.904,Economic Development
+15.904,Culture/Arts/Humanities
+15.904,Planning
+15.904,Regional Development
+16.031,"Law, Justice, and Legal Services"
+19.035,International (includes Export/lmport)
+19.035,Planning
+19.035,Regional Development
+19.035,Training
+81.119,Energy
+14.878,Housing
+93.361,Health/Medical
+93.361,Higher Education (includes Research)
+19.322,No Functional Application/Unlimited Application
+14.874,Housing
+19.703,"Law, Justice, and Legal Services"
+19.703,Training
+81.131,Energy
+19.040,Elementary/Secondary Education
+19.040,Higher Education (includes Research)
+19.040,International (includes Export/lmport)
+19.040,"Law, Justice, and Legal Services"
+19.040,Science and Technology
+19.040,Training
+19.040,Youth Development
+19.040,Communications
+19.040,Culture/Arts/Humanities
+15.956,Recreation (includes Historic Preservation)
+15.956,Community Development (includes Federal surplus property)
+19.707,No Functional Application/Unlimited Application
+15.236,"Environment (water, air, solid waste, pesticides, radiation)"
+15.236,"Natural Resources (mineral, water, wildlife, land)"
+19.501,Economic Development
+19.501,Higher Education (includes Research)
+19.501,Libraries/lnformation/Statistics
+19.501,Planning
+19.501,Recreation (includes Historic Preservation)
+19.501,Training
+19.501,Youth Development
+19.501,Communications
+19.501,Culture/Arts/Humanities
+16.032,Science and Technology
+16.032,"Law, Justice, and Legal Services"
+15.229,"Natural Resources (mineral, water, wildlife, land)"
+19.033,Health/Medical
+19.033,Higher Education (includes Research)
+19.033,International (includes Export/lmport)
+19.033,"Law, Justice, and Legal Services"
+19.033,Science and Technology
+19.033,Training
+19.033,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+81.128,Energy
+19.666,International (includes Export/lmport)
+15.224,"Natural Resources (mineral, water, wildlife, land)"
+15.224,Recreation (includes Historic Preservation)
+19.663,No Functional Application/Unlimited Application
+19.029,Health/Medical
+19.705,"Law, Justice, and Legal Services"
+16.040,"Law, Justice, and Legal Services"
+14.892,Planning
+14.892,Housing
+14.892,Community Development (includes Federal surplus property)
+19.901,No Functional Application/Unlimited Application
+19.901,International (includes Export/lmport)
+19.901,Training
+19.027,Economic Development
+19.027,Energy
+19.027,"Natural Resources (mineral, water, wildlife, land)"
+15.012,Elementary/Secondary Education
+15.012,"Environment (water, air, solid waste, pesticides, radiation)"
+15.012,Higher Education (includes Research)
+15.012,"Natural Resources (mineral, water, wildlife, land)"
+15.012,Science and Technology
+15.012,Training
+16.044,"Law, Justice, and Legal Services"
+16.044,Training
+15.241,"Natural Resources (mineral, water, wildlife, land)"
+21.024,Business/Commerce
+21.024,Economic Development
+21.024,Community Development (includes Federal surplus property)
+21.024,Training
+21.033,Business/Commerce
+21.033,Economic Development
+21.033,Communications
+21.033,Community Development (includes Federal surplus property)
+21.033,Employment/Labor/Management
+21.033,Food and Nutrition
+21.033,Health/Medical
+21.033,Housing
+10.464,Economic Development
+10.464,Food and Nutrition
+10.464,Higher Education (includes Research)
+10.464,Agriculture/Forestry/Fish and Game
+10.464,Business/Commerce
+10.464,Community Development (includes Federal surplus property)
+10.443,Economic Development
+10.443,Food and Nutrition
+10.443,Higher Education (includes Research)
+10.443,Agriculture/Forestry/Fish and Game
+10.443,"Law, Justice, and Legal Services"
+10.443,"Natural Resources (mineral, water, wildlife, land)"
+10.443,Regional Development
+10.443,Training
+10.443,Youth Development
+10.443,Vocational Education
+97.026,Training
+97.026,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.028,Training
+97.028,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+97.027,Training
+97.027,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+45.130,Culture/Arts/Humanities
+11.619,No Functional Application/Unlimited Application
+12.400,Construction/Renewal/Rehabilitation
+12.335,Science and Technology
+12.021,"Environment (water, air, solid waste, pesticides, radiation)"
+12.021,Agriculture/Forestry/Fish and Game
+12.021,"Natural Resources (mineral, water, wildlife, land)"
+12.021,Recreation (includes Historic Preservation)
+12.404,Youth Development
+12.404,Vocational Education
+10.697,Agriculture/Forestry/Fish and Game
+10.708,Agriculture/Forestry/Fish and Game
+10.708,Energy
+10.689,Agriculture/Forestry/Fish and Game
+10.726,Economic Development
+10.720,Agriculture/Forestry/Fish and Game
+10.694,Agriculture/Forestry/Fish and Game
+12.020,Elementary/Secondary Education
+12.020,Science and Technology
+12.020,Youth Development
+15.059,No Functional Application/Unlimited Application
+15.133,Economic Development
+15.133,Business/Commerce
+15.067,Economic Development
+15.067,Training
+15.067,Vocational Education
+15.161,Higher Education (includes Research)
+15.113,Income Security/Social Service/Welfare
+15.030,"Law, Justice, and Legal Services"
+15.141,Housing
+15.141,Construction/Renewal/Rehabilitation
+19.401,Higher Education (includes Research)
+19.450,No Functional Application/Unlimited Application
+19.009,Higher Education (includes Research)
+15.025,No Functional Application/Unlimited Application
+19.990,"Law, Justice, and Legal Services"
+15.026,No Functional Application/Unlimited Application
+15.063,"Law, Justice, and Legal Services"
+15.149,Elementary/Secondary Education
+15.029,"Law, Justice, and Legal Services"
+15.031,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.114,Higher Education (includes Research)
+15.114,Training
+15.037,"Natural Resources (mineral, water, wildlife, land)"
+19.010,Higher Education (includes Research)
+15.038,Energy
+15.038,"Natural Resources (mineral, water, wildlife, land)"
+15.044,Elementary/Secondary Education
+15.144,Employment/Labor/Management
+15.144,Health/Medical
+15.144,Higher Education (includes Research)
+15.144,Housing
+15.144,Income Security/Social Service/Welfare
+15.144,"Law, Justice, and Legal Services"
+15.144,Training
+15.058,No Functional Application/Unlimited Application
+15.154,"Natural Resources (mineral, water, wildlife, land)"
+15.154,Recreation (includes Historic Preservation)
+15.960,Higher Education (includes Research)
+19.408,Higher Education (includes Research)
+15.156,"Environment (water, air, solid waste, pesticides, radiation)"
+15.156,Agriculture/Forestry/Fish and Game
+15.156,"Natural Resources (mineral, water, wildlife, land)"
+15.156,Planning
+15.156,Public Works
+15.156,Science and Technology
+15.156,Training
+15.156,Youth Development
+15.156,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+47.049,Higher Education (includes Research)
+47.049,Science and Technology
+66.462,"Environment (water, air, solid waste, pesticides, radiation)"
+66.462,Training
+66.485,"Environment (water, air, solid waste, pesticides, radiation)"
+10.514,Higher Education (includes Research)
+10.511,Energy
+10.511,Food and Nutrition
+10.511,Higher Education (includes Research)
+10.511,Agriculture/Forestry/Fish and Game
+10.511,Planning
+10.511,Science and Technology
+10.511,Training
+10.511,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.511,Community Development (includes Federal surplus property)
+43.014,Youth Development
+43.014,Science and Technology
+43.014,Training
+43.014,Higher Education (includes Research)
+10.227,Higher Education (includes Research)
+10.227,Agriculture/Forestry/Fish and Game
+66.424,"Environment (water, air, solid waste, pesticides, radiation)"
+81.137,Economic Development
+81.137,Higher Education (includes Research)
+81.137,Science and Technology
+81.137,Training
+81.137,Youth Development
+10.512,Higher Education (includes Research)
+10.236,"Environment (water, air, solid waste, pesticides, radiation)"
+66.418,"Environment (water, air, solid waste, pesticides, radiation)"
+66.418,Public Works
+66.445,"Environment (water, air, solid waste, pesticides, radiation)"
+10.890,Economic Development
+10.890,Energy
+10.890,Health/Medical
+10.890,Housing
+10.890,Agriculture/Forestry/Fish and Game
+10.890,Regional Development
+10.890,Business/Commerce
+10.890,Training
+10.890,Community Development (includes Federal surplus property)
+15.876,"Environment (water, air, solid waste, pesticides, radiation)"
+15.876,"Natural Resources (mineral, water, wildlife, land)"
+15.876,Recreation (includes Historic Preservation)
+15.876,Science and Technology
+15.876,Culture/Arts/Humanities
+15.876,Community Development (includes Federal surplus property)
+15.876,Agriculture/Forestry/Fish and Game
+19.511,International (includes Export/lmport)
+66.511,"Environment (water, air, solid waste, pesticides, radiation)"
+66.511,Higher Education (includes Research)
+66.511,Science and Technology
+66.511,Training
+81.117,"Environment (water, air, solid waste, pesticides, radiation)"
+81.117,Health/Medical
+81.117,Community Development (includes Federal surplus property)
+10.377,Agriculture/Forestry/Fish and Game
+10.377,Business/Commerce
+10.377,Economic Development
+10.377,Energy
+10.377,"Law, Justice, and Legal Services"
+10.377,Planning
+10.377,Training
+19.520,International (includes Export/lmport)
+19.522,International (includes Export/lmport)
+66.516,"Environment (water, air, solid waste, pesticides, radiation)"
+66.516,Science and Technology
+66.516,Higher Education (includes Research)
+93.865,Health/Medical
+93.865,Higher Education (includes Research)
+19.018,International (includes Export/lmport)
+19.523,International (includes Export/lmport)
+19.515,International (includes Export/lmport)
+19.519,International (includes Export/lmport)
+93.266,Health/Medical
+14.261,Housing
+14.218,Community Development (includes Federal surplus property)
+19.017,Economic Development
+19.017,Energy
+19.017,"Environment (water, air, solid waste, pesticides, radiation)"
+19.017,Health/Medical
+19.017,"Natural Resources (mineral, water, wildlife, land)"
+19.017,Science and Technology
+19.017,Training
+93.301,Health/Medical
+19.028,Higher Education (includes Research)
+93.528,Health/Medical
+93.528,Planning
+93.528,Regional Development
+93.516,Health/Medical
+93.516,Training
+10.523,Agriculture/Forestry/Fish and Game
+10.523,Training
+93.300,Employment/Labor/Management
+93.300,Health/Medical
+16.840,"Law, Justice, and Legal Services"
+93.247,Health/Medical
+93.247,Training
+93.527,Health/Medical
+66.818,"Environment (water, air, solid waste, pesticides, radiation)"
+66.818,Planning
+77.007,Higher Education (includes Research)
+10.516,Elementary/Secondary Education
+10.516,Health/Medical
+10.516,Higher Education (includes Research)
+10.516,Agriculture/Forestry/Fish and Game
+10.516,Science and Technology
+10.516,Training
+10.516,Community Development (includes Federal surplus property)
+66.614,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+66.614,Communications
+66.614,Community Development (includes Federal surplus property)
+66.614,Elementary/Secondary Education
+66.614,"Environment (water, air, solid waste, pesticides, radiation)"
+66.614,Food and Nutrition
+66.614,Higher Education (includes Research)
+66.614,Planning
+66.614,Transportation
+66.614,Training
+66.614,Youth Development
+66.489,"Environment (water, air, solid waste, pesticides, radiation)"
+14.879,Housing
+15.433,"Natural Resources (mineral, water, wildlife, land)"
+66.809,"Environment (water, air, solid waste, pesticides, radiation)"
+66.700,"Environment (water, air, solid waste, pesticides, radiation)"
+66.700,Training
+15.432,"Natural Resources (mineral, water, wildlife, land)"
+66.454,"Environment (water, air, solid waste, pesticides, radiation)"
+15.429,"Natural Resources (mineral, water, wildlife, land)"
+17.287,Higher Education (includes Research)
+17.287,Training
+17.287,Youth Development
+17.287,Vocational Education
+66.958,"Environment (water, air, solid waste, pesticides, radiation)"
+66.461,"Environment (water, air, solid waste, pesticides, radiation)"
+81.102,No Functional Application/Unlimited Application
+81.108,Energy
+81.092,"Environment (water, air, solid waste, pesticides, radiation)"
+81.065,Energy
+81.065,"Environment (water, air, solid waste, pesticides, radiation)"
+81.065,Science and Technology
+15.018,"Environment (water, air, solid waste, pesticides, radiation)"
+15.018,Construction/Renewal/Rehabilitation
+15.018,"Natural Resources (mineral, water, wildlife, land)"
+17.801,Employment/Labor/Management
+15.071,Culture/Arts/Humanities
+14.278,Housing
+14.278,Construction/Renewal/Rehabilitation
+15.014,No Functional Application/Unlimited Application
+15.957,Construction/Renewal/Rehabilitation
+84.422,Higher Education (includes Research)
+12.004,"Environment (water, air, solid waste, pesticides, radiation)"
+14.231,Housing
+14.231,"Law, Justice, and Legal Services"
+14.869,Housing
+15.948,Training
+15.948,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.954,Recreation (includes Historic Preservation)
+15.954,Community Development (includes Federal surplus property)
+15.921,Agriculture/Forestry/Fish and Game
+15.947,Recreation (includes Historic Preservation)
+15.923,Community Development (includes Federal surplus property)
+81.256,"Environment (water, air, solid waste, pesticides, radiation)"
+81.256,"Natural Resources (mineral, water, wildlife, land)"
+81.256,Science and Technology
+81.256,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+15.931,Recreation (includes Historic Preservation)
+15.931,Training
+15.931,Youth Development
+15.931,Higher Education (includes Research)
+84.370,Elementary/Secondary Education
+17.504,Employment/Labor/Management
+14.401,"Law, Justice, and Legal Services"
+45.201,Culture/Arts/Humanities
+14.251,Housing
+14.418,Housing
+14.418,"Law, Justice, and Legal Services"
+14.418,Training
+21.008,"Law, Justice, and Legal Services"
+81.057,Energy
+81.057,Higher Education (includes Research)
+81.057,"Natural Resources (mineral, water, wildlife, land)"
+81.057,Science and Technology
+81.057,Training
+15.537,"Natural Resources (mineral, water, wildlife, land)"
+81.087,Energy
+81.010,Energy
+81.010,Business/Commerce
+81.010,Employment/Labor/Management
+81.010,Regional Development
+15.543,"Natural Resources (mineral, water, wildlife, land)"
+15.574,"Environment (water, air, solid waste, pesticides, radiation)"
+81.089,Energy
+81.089,Business/Commerce
+14.417,Housing
+14.417,"Law, Justice, and Legal Services"
+14.417,Training
+10.427,Housing
+15.557,Economic Development
+15.557,"Natural Resources (mineral, water, wildlife, land)"
+15.554,"Environment (water, air, solid waste, pesticides, radiation)"
+15.554,"Natural Resources (mineral, water, wildlife, land)"
+15.507,"Natural Resources (mineral, water, wildlife, land)"
+10.594,Food and Nutrition
+10.529,Food and Nutrition
+10.529,Training
+17.261,Employment/Labor/Management
+17.261,Science and Technology
+10.649,Food and Nutrition
+10.580,Food and Nutrition
+64.005,Health/Medical
+64.005,Construction/Renewal/Rehabilitation
+77.008,Higher Education (includes Research)
+77.008,Science and Technology
+10.851,Communications
+10.565,Food and Nutrition
+32.002,Communications
+10.678,Agriculture/Forestry/Fish and Game
+10.664,Agriculture/Forestry/Fish and Game
+10.664,"Natural Resources (mineral, water, wildlife, land)"
+81.104,"Environment (water, air, solid waste, pesticides, radiation)"
+81.136,"Environment (water, air, solid waste, pesticides, radiation)"
+93.560,Income Security/Social Service/Welfare
+10.721,Agriculture/Forestry/Fish and Game
+10.725,Agriculture/Forestry/Fish and Game
+10.725,Business/Commerce
+10.725,Economic Development
+10.723,Agriculture/Forestry/Fish and Game
+10.203,Higher Education (includes Research)
+10.203,Agriculture/Forestry/Fish and Game
+10.203,Construction/Renewal/Rehabilitation
+10.205,Higher Education (includes Research)
+10.517,Higher Education (includes Research)
+10.215,Higher Education (includes Research)
+10.215,Agriculture/Forestry/Fish and Game
+10.215,"Natural Resources (mineral, water, wildlife, land)"
+10.215,Science and Technology
+17.265,Employment/Labor/Management
+17.265,Higher Education (includes Research)
+17.265,Training
+17.265,Vocational Education
+17.265,Vocational Rehabilitation
+10.207,"Environment (water, air, solid waste, pesticides, radiation)"
+10.207,Higher Education (includes Research)
+10.207,Science and Technology
+11.620,Higher Education (includes Research)
+11.620,Science and Technology
+11.620,Business/Commerce
+11.620,Training
+10.202,Higher Education (includes Research)
+10.202,Agriculture/Forestry/Fish and Game
+93.595,Income Security/Social Service/Welfare
+15.544,"Natural Resources (mineral, water, wildlife, land)"
+16.835,No Functional Application/Unlimited Application
+16.835,Higher Education (includes Research)
+16.835,"Law, Justice, and Legal Services"
+16.835,Libraries/lnformation/Statistics
+16.835,Maritime
+16.835,Planning
+16.835,Science and Technology
+16.835,Training
+16.741,"Law, Justice, and Legal Services"
+16.745,"Law, Justice, and Legal Services"
+16.838,"Law, Justice, and Legal Services"
+15.225,Recreation (includes Historic Preservation)
+15.225,"Natural Resources (mineral, water, wildlife, land)"
+16.813,"Law, Justice, and Legal Services"
+15.234,"Natural Resources (mineral, water, wildlife, land)"
+15.234,Construction/Renewal/Rehabilitation
+15.248,"Natural Resources (mineral, water, wildlife, land)"
+15.248,"Environment (water, air, solid waste, pesticides, radiation)"
+15.248,Recreation (includes Historic Preservation)
+15.248,Science and Technology
+16.746,"Law, Justice, and Legal Services"
+15.539,"Natural Resources (mineral, water, wildlife, land)"
+15.560,"Natural Resources (mineral, water, wildlife, land)"
+15.560,Planning
+16.756,"Law, Justice, and Legal Services"
+16.047,"Law, Justice, and Legal Services"
+16.844,"Law, Justice, and Legal Services"
+16.554,"Law, Justice, and Legal Services"
+15.239,"Natural Resources (mineral, water, wildlife, land)"
+16.726,Training
+16.726,Youth Development
+16.726,Vocational Rehabilitation
+15.214,"Natural Resources (mineral, water, wildlife, land)"
+16.045,Health/Medical
+16.045,Higher Education (includes Research)
+16.045,"Law, Justice, and Legal Services"
+16.045,Training
+16.045,Youth Development
+16.734,"Law, Justice, and Legal Services"
+16.753,"Law, Justice, and Legal Services"
+16.739,"Law, Justice, and Legal Services"
+16.051,"Law, Justice, and Legal Services"
+81.252,Science and Technology
+16.034,"Law, Justice, and Legal Services"
+16.034,Health/Medical
+16.607,"Law, Justice, and Legal Services"
+10.244,Food and Nutrition
+10.219,Higher Education (includes Research)
+10.219,Agriculture/Forestry/Fish and Game
+10.219,Science and Technology
+10.225,Food and Nutrition
+10.225,Agriculture/Forestry/Fish and Game
+10.225,Training
+10.225,Community Development (includes Federal surplus property)
+16.543,"Law, Justice, and Legal Services"
+16.548,"Law, Justice, and Legal Services"
+90.400,Training
+90.401,Science and Technology
+10.522,Elementary/Secondary Education
+10.522,Agriculture/Forestry/Fish and Game
+10.522,Training
+10.522,Youth Development
+66.616,"Environment (water, air, solid waste, pesticides, radiation)"
+19.517,International (includes Export/lmport)
+66.510,"Environment (water, air, solid waste, pesticides, radiation)"
+66.510,Higher Education (includes Research)
+66.510,Science and Technology
+66.517,"Environment (water, air, solid waste, pesticides, radiation)"
+66.517,Science and Technology
+66.517,Higher Education (includes Research)
+19.510,Income Security/Social Service/Welfare
+15.538,"Natural Resources (mineral, water, wildlife, land)"
+81.049,Energy
+81.049,Higher Education (includes Research)
+19.518,International (includes Export/lmport)
+15.520,"Environment (water, air, solid waste, pesticides, radiation)"
+15.520,"Natural Resources (mineral, water, wildlife, land)"
+15.124,Economic Development
+19.415,Higher Education (includes Research)
+19.415,Culture/Arts/Humanities
+15.246,Agriculture/Forestry/Fish and Game
+19.440,No Functional Application/Unlimited Application
+15.053,"Law, Justice, and Legal Services"
+15.036,No Functional Application/Unlimited Application
+15.162,Housing
+15.035,Agriculture/Forestry/Fish and Game
+15.024,No Functional Application/Unlimited Application
+15.061,No Functional Application/Unlimited Application
+15.061,Higher Education (includes Research)
+15.510,"Natural Resources (mineral, water, wildlife, land)"
+14.313,Housing
+14.169,Housing
+14.169,Planning
+14.169,Consumer Protection
+19.300,Higher Education (includes Research)
+14.126,Housing
+10.553,Food and Nutrition
+14.128,Health/Medical
+14.128,Housing
+19.013,Higher Education (includes Research)
+19.013,Training
+19.500,Economic Development
+19.500,Elementary/Secondary Education
+19.500,Employment/Labor/Management
+19.500,Higher Education (includes Research)
+19.500,"Law, Justice, and Legal Services"
+19.500,Regional Development
+19.500,Business/Commerce
+19.500,Training
+19.500,Youth Development
+19.500,Vocational Education
+19.500,Community Development (includes Federal surplus property)
+12.225,Science and Technology
+14.138,Housing
+14.122,Housing
+14.122,Construction/Renewal/Rehabilitation
+14.135,Housing
+19.020,Higher Education (includes Research)
+19.020,Training
+14.188,Housing
+14.322,Training
+14.322,Planning
+14.322,Communications
+14.195,Housing
+77.009,Higher Education (includes Research)
+77.009,Science and Technology
+81.135,Energy
+66.468,"Environment (water, air, solid waste, pesticides, radiation)"
+10.153,Agriculture/Forestry/Fish and Game
+81.113,Energy
+81.113,Higher Education (includes Research)
+81.113,Science and Technology
+12.017,Agriculture/Forestry/Fish and Game
+12.017,"Environment (water, air, solid waste, pesticides, radiation)"
+12.017,"Natural Resources (mineral, water, wildlife, land)"
+66.123,"Environment (water, air, solid waste, pesticides, radiation)"
+10.351,Business/Commerce
+10.705,Transportation
+10.711,Agriculture/Forestry/Fish and Game
+10.711,"Natural Resources (mineral, water, wildlife, land)"
+81.005,"Environment (water, air, solid waste, pesticides, radiation)"
+81.005,Higher Education (includes Research)
+85.751,Economic Development
+85.751,Elementary/Secondary Education
+85.751,Employment/Labor/Management
+85.751,"Environment (water, air, solid waste, pesticides, radiation)"
+85.751,Food and Nutrition
+85.751,Health/Medical
+85.751,Higher Education (includes Research)
+85.751,Housing
+85.751,Income Security/Social Service/Welfare
+85.751,Agriculture/Forestry/Fish and Game
+85.751,International (includes Export/lmport)
+85.751,"Law, Justice, and Legal Services"
+85.751,"Natural Resources (mineral, water, wildlife, land)"
+85.751,Planning
+85.751,Regional Development
+85.751,Business/Commerce
+85.751,Training
+85.751,Youth Development
+85.751,Vocational Education
+85.751,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+85.751,Community Development (includes Federal surplus property)
+85.751,Construction/Renewal/Rehabilitation
+85.751,Culture/Arts/Humanities
+10.714,Agriculture/Forestry/Fish and Game
+16.839,Elementary/Secondary Education
+16.839,Planning
+16.839,Science and Technology
+16.839,Training
+15.940,"Environment (water, air, solid waste, pesticides, radiation)"
+15.940,Recreation (includes Historic Preservation)
+15.940,Vocational Education
+20.725,Energy
+20.725,Public Works
+20.725,Transportation
+20.725,Training
+20.710,Transportation
+66.701,"Environment (water, air, solid waste, pesticides, radiation)"
+66.701,Training
+16.828,Employment/Labor/Management
+16.828,Health/Medical
+16.828,Higher Education (includes Research)
+16.828,"Law, Justice, and Legal Services"
+16.828,Training
+15.961,Recreation (includes Historic Preservation)
+16.606,"Law, Justice, and Legal Services"
+66.802,"Environment (water, air, solid waste, pesticides, radiation)"
+15.932,Construction/Renewal/Rehabilitation
+20.708,Employment/Labor/Management
+20.708,Energy
+20.708,"Environment (water, air, solid waste, pesticides, radiation)"
+20.708,Transportation
+16.043,"Law, Justice, and Legal Services"
+15.941,Community Development (includes Federal surplus property)
+15.912,Recreation (includes Historic Preservation)
+11.037,Construction/Renewal/Rehabilitation
+11.037,Economic Development
+11.037,Employment/Labor/Management
+11.037,Science and Technology
+11.037,Business/Commerce
+10.683,Agriculture/Forestry/Fish and Game
+14.872,Housing
+93.563,Income Security/Social Service/Welfare
+81.126,Economic Development
+81.126,Energy
+81.126,Regional Development
+81.126,Business/Commerce
+81.126,Transportation
+81.126,Construction/Renewal/Rehabilitation
+14.536,Higher Education (includes Research)
+14.536,Planning
+14.536,Science and Technology
+16.815,"Law, Justice, and Legal Services"
+16.815,Training
+16.815,Consumer Protection
+66.203,"Environment (water, air, solid waste, pesticides, radiation)"
+15.963,"Natural Resources (mineral, water, wildlife, land)"
+15.963,Planning
+16.825,Higher Education (includes Research)
+16.825,"Law, Justice, and Legal Services"
+16.825,Libraries/lnformation/Statistics
+16.825,Planning
+16.825,Science and Technology
+16.825,Training
+16.825,Communications
+16.825,Community Development (includes Federal surplus property)
+16.054,"Law, Justice, and Legal Services"
+81.112,Higher Education (includes Research)
+81.112,Science and Technology
+81.112,Training
+20.723,Energy
+20.723,Science and Technology
+20.723,Transportation
+15.965,Planning
+15.965,Youth Development
+15.965,"Environment (water, air, solid waste, pesticides, radiation)"
+15.922,Recreation (includes Historic Preservation)
+15.922,Culture/Arts/Humanities
+66.961,"Environment (water, air, solid waste, pesticides, radiation)"
+15.964,Culture/Arts/Humanities
+10.674,Agriculture/Forestry/Fish and Game
+10.682,Agriculture/Forestry/Fish and Game
+10.684,Agriculture/Forestry/Fish and Game
+15.929,"Natural Resources (mineral, water, wildlife, land)"
+10.693,Agriculture/Forestry/Fish and Game
+15.928,Recreation (includes Historic Preservation)
+15.406,Recreation (includes Historic Preservation)
+15.925,Maritime
+10.691,Agriculture/Forestry/Fish and Game
+16.812,"Law, Justice, and Legal Services"
+14.506,Housing
+93.327,Income Security/Social Service/Welfare
+93.327,Training
+45.310,Libraries/lnformation/Statistics
+45.310,Culture/Arts/Humanities
+10.690,Agriculture/Forestry/Fish and Game
+16.608,"Law, Justice, and Legal Services"
+66.931,"Environment (water, air, solid waste, pesticides, radiation)"
+15.933,Recreation (includes Historic Preservation)
+14.896,Housing
+15.942,"Environment (water, air, solid waste, pesticides, radiation)"
+15.942,Recreation (includes Historic Preservation)
+15.942,Community Development (includes Federal surplus property)
+20.513,Transportation
+15.958,Economic Development
+15.958,Planning
+15.958,Public Works
+15.958,Recreation (includes Historic Preservation)
+15.958,Regional Development
+17.225,Employment/Labor/Management
+17.225,Income Security/Social Service/Welfare
+10.652,Agriculture/Forestry/Fish and Game
+10.652,Science and Technology
+93.598,Health/Medical
+93.598,Income Security/Social Service/Welfare
+93.598,Training
+11.016,Libraries/lnformation/Statistics
+66.466,Agriculture/Forestry/Fish and Game
+66.466,Economic Development
+66.466,"Environment (water, air, solid waste, pesticides, radiation)"
+66.466,Maritime
+66.466,Public Works
+66.466,Recreation (includes Historic Preservation)
+66.466,Science and Technology
+66.964,"Environment (water, air, solid waste, pesticides, radiation)"
+66.964,Agriculture/Forestry/Fish and Game
+66.419,"Environment (water, air, solid waste, pesticides, radiation)"
+19.662,Business/Commerce
+10.170,Agriculture/Forestry/Fish and Game
+11.112,International (includes Export/lmport)
+93.667,Income Security/Social Service/Welfare
+66.458,"Environment (water, air, solid waste, pesticides, radiation)"
+10.378,No Functional Application/Unlimited Application
+64.116,Vocational Rehabilitation
+14.537,"Law, Justice, and Legal Services"
+14.537,Housing
+15.926,Recreation (includes Historic Preservation)
+15.926,Culture/Arts/Humanities
+16.037,"Law, Justice, and Legal Services"
+16.037,Science and Technology
+16.585,"Law, Justice, and Legal Services"
+15.938,Recreation (includes Historic Preservation)
+15.943,Economic Development
+15.943,"Environment (water, air, solid waste, pesticides, radiation)"
+15.943,"Natural Resources (mineral, water, wildlife, land)"
+15.943,Recreation (includes Historic Preservation)
+15.943,Regional Development
+15.943,Training
+15.943,Culture/Arts/Humanities
+10.666,Agriculture/Forestry/Fish and Game
+10.666,Public Works
+10.665,Elementary/Secondary Education
+10.665,Higher Education (includes Research)
+10.665,Agriculture/Forestry/Fish and Game
+10.712,Construction/Renewal/Rehabilitation
+94.011,No Functional Application/Unlimited Application
+30.005,"Law, Justice, and Legal Services"
+16.049,"Law, Justice, and Legal Services"
+94.008,No Functional Application/Unlimited Application
+11.028,Community Development (includes Federal surplus property)
+11.028,Communications
+94.006,No Functional Application/Unlimited Application
+10.702,Agriculture/Forestry/Fish and Game
+10.702,"Natural Resources (mineral, water, wildlife, land)"
+10.702,Recreation (includes Historic Preservation)
+10.702,Science and Technology
+10.702,Training
+10.702,Youth Development
+10.703,"Natural Resources (mineral, water, wildlife, land)"
+10.703,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+94.017,No Functional Application/Unlimited Application
+94.016,No Functional Application/Unlimited Application
+66.957,"Environment (water, air, solid waste, pesticides, radiation)"
+11.032,Communications
+11.032,Community Development (includes Federal surplus property)
+11.032,Economic Development
+11.032,Health/Medical
+11.032,Regional Development
+94.013,No Functional Application/Unlimited Application
+94.013,Economic Development
+94.013,Income Security/Social Service/Welfare
+10.704,"Law, Justice, and Legal Services"
+11.035,Economic Development
+11.035,Business/Commerce
+11.035,Communications
+11.035,Community Development (includes Federal surplus property)
+11.035,Regional Development
+94.021,No Functional Application/Unlimited Application
+10.577,Food and Nutrition
+10.577,Science and Technology
+94.014,No Functional Application/Unlimited Application
+10.539,Food and Nutrition
+10.545,Economic Development
+10.545,Food and Nutrition
+10.545,Business/Commerce
+10.545,Communications
+10.545,Community Development (includes Federal surplus property)
+11.033,Business/Commerce
+11.033,Communications
+11.033,Economic Development
+94.012,No Functional Application/Unlimited Application
+94.026,No Functional Application/Unlimited Application
+94.026,Higher Education (includes Research)
+94.020,No Functional Application/Unlimited Application
+94.020,"Environment (water, air, solid waste, pesticides, radiation)"
+94.020,Housing
+94.020,"Natural Resources (mineral, water, wildlife, land)"
+94.020,Youth Development
+94.020,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+94.020,Community Development (includes Federal surplus property)
+94.020,Construction/Renewal/Rehabilitation
+57.001,Income Security/Social Service/Welfare
+57.001,Transportation
+17.264,Employment/Labor/Management
+17.264,Housing
+17.264,Training
+17.264,Youth Development
+17.264,Vocational Education
+17.264,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+10.542,Food and Nutrition
+17.285,Training
+17.285,Vocational Education
+17.285,Vocational Rehabilitation
+17.285,Youth Development
+17.285,Employment/Labor/Management
+17.285,Economic Development
+17.285,Culture/Arts/Humanities
+93.581,"Environment (water, air, solid waste, pesticides, radiation)"
+93.581,Agriculture/Forestry/Fish and Game
+93.581,"Law, Justice, and Legal Services"
+93.581,"Natural Resources (mineral, water, wildlife, land)"
+10.382,Construction/Renewal/Rehabilitation
+10.382,Food and Nutrition
+93.499,"Environment (water, air, solid waste, pesticides, radiation)"
+10.350,Agriculture/Forestry/Fish and Game
+10.350,Business/Commerce
+10.381,Food and Nutrition
+93.859,Health/Medical
+93.859,Higher Education (includes Research)
+10.707,Agriculture/Forestry/Fish and Game
+66.121,"Environment (water, air, solid waste, pesticides, radiation)"
+15.519,"Natural Resources (mineral, water, wildlife, land)"
+17.302,Income Security/Social Service/Welfare
+17.701,Training
+14.276,Housing
+14.276,Youth Development
+14.276,Community Development (includes Federal surplus property)
+14.914,Housing
+17.310,Employment/Labor/Management
+12.025,Recreation (includes Historic Preservation)
+19.441,Economic Development
+19.441,Elementary/Secondary Education
+19.441,Employment/Labor/Management
+19.441,Energy
+19.441,"Environment (water, air, solid waste, pesticides, radiation)"
+19.441,Health/Medical
+19.441,Higher Education (includes Research)
+19.441,Agriculture/Forestry/Fish and Game
+19.441,International (includes Export/lmport)
+19.441,"Law, Justice, and Legal Services"
+19.441,Libraries/lnformation/Statistics
+19.441,"Natural Resources (mineral, water, wildlife, land)"
+19.441,Planning
+19.441,Public Works
+19.441,Recreation (includes Historic Preservation)
+19.441,Regional Development
+19.441,Science and Technology
+19.441,Transportation
+19.441,Training
+19.441,Youth Development
+19.441,Vocational Education
+19.441,Communications
+19.441,Community Development (includes Federal surplus property)
+19.441,Construction/Renewal/Rehabilitation
+19.441,Culture/Arts/Humanities
+14.327,Housing
+14.895,No Functional Application/Unlimited Application
+93.568,Energy
+66.962,"Environment (water, air, solid waste, pesticides, radiation)"
+66.962,Planning
+66.962,Public Works
+66.962,Recreation (includes Historic Preservation)
+66.962,Regional Development
+17.700,Employment/Labor/Management
+17.700,Higher Education (includes Research)
+17.700,"Law, Justice, and Legal Services"
+17.700,Libraries/lnformation/Statistics
+17.700,Science and Technology
+17.700,Training
+17.700,Vocational Education
+81.214,"Environment (water, air, solid waste, pesticides, radiation)"
+81.214,Higher Education (includes Research)
+81.214,Libraries/lnformation/Statistics
+81.214,"Natural Resources (mineral, water, wildlife, land)"
+81.214,Recreation (includes Historic Preservation)
+81.214,Science and Technology
+81.214,Training
+81.214,Civil Defense/Disaster Prevention and Relief/Emergency Preparedness
+81.214,Communications
+66.926,"Environment (water, air, solid waste, pesticides, radiation)"
+10.567,Food and Nutrition
+17.307,Income Security/Social Service/Welfare
+93.612,Economic Development
+93.612,Food and Nutrition
+93.612,Income Security/Social Service/Welfare
+93.612,Agriculture/Forestry/Fish and Game
+93.612,"Natural Resources (mineral, water, wildlife, land)"
+93.612,Planning
+93.612,Recreation (includes Historic Preservation)
+93.612,Training
+93.612,Community Development (includes Federal surplus property)
+93.612,Culture/Arts/Humanities
+93.612,Elementary/Secondary Education
+93.612,Transportation
+66.473,"Environment (water, air, solid waste, pesticides, radiation)"
+81.250,Energy
+81.250,"Environment (water, air, solid waste, pesticides, radiation)"
+45.311,Culture/Arts/Humanities
+45.311,Elementary/Secondary Education
+45.311,Higher Education (includes Research)
+45.311,Libraries/lnformation/Statistics
+45.311,Planning
+45.311,Training
+45.311,Vocational Education
+45.311,Youth Development
