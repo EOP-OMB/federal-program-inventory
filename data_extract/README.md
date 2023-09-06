@@ -44,6 +44,7 @@ The FPI pilot team is exploring database-driven solutions to securing this data 
 ## Processing the data
 > [!NOTE]
 > This repository already contains copies of the latest data processed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use these pre-existing files and skip the processing below.
+
 The data from the SAM.gov and USASpending.gov extracts is processed into flattened, purposed-built, relational CSVs. These CSVs are intended to be imported into PowerBI for analysis by the FPI pilot team. In future iterations of this project, data will be extracted to power the visualizations and data tables on the FPI pilot website.
 
 ### SAM.gov
