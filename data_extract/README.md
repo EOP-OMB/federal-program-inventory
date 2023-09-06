@@ -1,18 +1,45 @@
 # Federal Program Inventory Pilot Data Extraction
 
 > [!WARNING]
-> **This repository and README are still under active development and have not yet reached release stage.**
+> This repository and README are still under active development and have not yet reached release stage.
 
 ## About the data extraction
 The data extaction contained in this directory pulls data from SAM.gov and USASpending.gov, for use in the Federal Program Invetory (FPI) pilot. This pilot is designed to explore whether Assistance Listings data from SAM.gov is appropriate to use as a foundation for 
 
+## Setting up your environment
+Before getting started, you need to make sure that your system is setup properly. The data extract functionality is written in Python3 and has a number of dependencies. To setup your system:
+1. Navigate to the root directory of this repository (one level above this directory), and establish a virtual environment using `python3 -m venv venv` (note that different environments may use different aliases for Python3; e.g., `python` versus `python3`)
+2. Activate the virtual environment using `source venv/bin/activate`
+3. Install dependencies using `pip install -r requirements.txt`
+
 ## Running the extact
-To extract the necessary data from SAM.gov:
+> [!NOTE]
+> This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh  data, it is likely sufficient to use these pre-existing files and skip the extract below.
+
+### SAM.gov
+If you determine you need to extract the data from SAM.gov, ensure your system is setup, with your virtual environment enabled, and return to this directory. To extract the necessary data from SAM.gov:
+
 1. Run `fetch-assistance-listings.py`
 2. Run `fetch-dictionary.py`
 3. Run `fetch-organizations.py`
 
-This process will generate three files in the `source_files` directory that contain the data necessary to generate the underlying FPI summary data.
+This process will generate three files in the `source_files` directory that contain the data necessary to generate the underlying FPI summary data. Note that this process will make several thousand calls to SAM.gov's APIs to retrive the data.
+
+### USASpending.gov
+> [!NOTE]
+> USASpending.gov makes available a number of public-facing APIs to retrive data. They also make available a complete export of their database.
+>
+> Both methods of retriving the data come with significant disadvantages. For the API, retriving the necessary information takes hundreds of thousands of API calls. For the database, the size of the database is over 1TB and takes hours to restore.
+>
+> The FPI pilot team is exploring both options. Below is the information on API-based extraction. Note that, even on a powerful machine with high-speed internet, this process takes many hours to complete.
+
+If you would like to extract the data from USASpending.gov, ensure your system is setup, with your virtual environment enabled. From this directory:
+
+1. Run `fetch-usa-spending.py`
+
+This process will generate one file per program in the `source_files/awards` directory, containing the necessary data in JSON format. Note that this process will make several thousand calls to SAM.gov's APIs to retrive the data, as many calls are required per program.
+
+The FPI pilot team is exploring database-driven solutions to securing this data and will update this repository to reflect replication steps and related scripts, as appropriate.
 
 ## Extraction methods
 
@@ -23,5 +50,3 @@ The Assistance Listings data is extacted from SAM.gov using a variety of calls t
 3. **The data set was incomplete.** The CSV available for public download did not contain the necessary data elements to support the FPI pilot. Critical fields, such as Assistance Usage were not available in the CSV.
 
 Given these concerns with the downloadable CSV, the FPI pilot team began exploring alternative methods of securing the necessary data. The most transparent and least impactful method identified was gathering the data using SAM.gov's public-facing APIs that are used to power their public website. While these APIs were not documented, the team was able to identify the necessary data values based on comparison to public website renderings and exact the necessary data.
-
-### USASpending.gov
