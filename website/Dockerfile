@@ -32,4 +32,4 @@ FROM nginx:mainline-alpine AS runtime-image
 USER 101
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=0 /app/_site /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 8080
