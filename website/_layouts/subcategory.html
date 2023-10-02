@@ -70,8 +70,23 @@
           <div class="grid-row">
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2>Programs, by agency and FY{{ page.fiscal_year }} obligations</h2>
+                <h2>Top Programs, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="programs-visualization"></div>
+                <div class="usa-accordion">
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="programs-data"
+                    >
+                      View the underlying data
+                    </button>
+                  </h4>
+                  <div id="programs-data" class="usa-accordion__content usa-prose">
+                    <div id="programs-table"></div>
+                  </div>
+                </div>
               </section>
             </div>
             <div class="grid-col-12">
@@ -84,12 +99,12 @@
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
-                      aria-controls="agency-data"
+                      aria-controls="agencies-data"
                     >
                       View the underlying data
                     </button>
                   </h4>
-                  <div id="agency-data" class="usa-accordion__content usa-prose">
+                  <div id="agencies-data" class="usa-accordion__content usa-prose">
                     <div id="agencies-table"></div>
                   </div>
                 </div>
@@ -105,26 +120,20 @@
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
-                      aria-controls="applicant-type-data"
+                      aria-controls="applicant-types-data"
                     >
                       View the underlying data
                     </button>
                   </h4>
-                  <div id="applicant-type-data" class="usa-accordion__content usa-prose">
+                  <div id="applicant-types-data" class="usa-accordion__content usa-prose">
                     <div id="applicant-types-table"></div>
                   </div>
                 </div>
               </section>
             </div>
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2>All programs</h2>
-                <div id="program-table"></div>
-              </section>
-            </div>
-            </div>
           </div>
         </div>
+      </div>
     </div>
   </main>
 
@@ -137,22 +146,30 @@
   <script src="/assets/js/gridjs.umd.js"></script>
   <script>
 
-    const programs = {{ page.programs }};
+    const programs = {{ page.programs }}.sort((a, b) => b.total_obs - a.total_obs);
     const applicantTypes = {{ page.applicant_types }}.sort((a, b) => b.total_num_programs - a.total_num_programs);
     const agencies = {{ page.agencies }}.sort((a, b) => b.total_obs - a.total_obs);
 
-    // Generate and render programs treemap
-    programsVisualization = Treemap(d3.group(programs, (d) => d.agency), {
-      value: d => d.total_obs,
-      group: d => d.agency,
-      label: d => [d.title, d.total_obs.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })].join("\n"),
-      title: d => [d.title, d.total_obs.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })].join("\n"),
-      link: d => d.permalink,
-      linkTarget: '',
+    programsVisualization = Plot.plot({
+      marginLeft: 200,
       width: 836,
-      height: 400
-    });
-    d3.select("#programs-visualization").append(() => programsVisualization);
+      height: 300,
+      x: {
+        label: "Obligations (in millions of USD)",
+        axis: "top",
+        transform: (e) => e/1000000,
+        grid: true
+      },
+      y: {
+        label: "Program Name"
+      },
+      marks: [
+        Plot.ruleX([0]),
+        Plot.axisY({label: null, lineWidth: 18}),
+        Plot.barX(programs.slice(0,5), {x: "total_obs", y: "title", sort: {y: "x", reverse: true}})
+      ]
+    })
+    document.querySelector("#programs-visualization").append(programsVisualization);
 
     agenciesVisualization = Plot.plot({
       marginLeft: 200,
@@ -169,7 +186,7 @@
       },
       marks: [
         Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 15}),
+        Plot.axisY({label: null, lineWidth: 18}),
         Plot.barX(agencies.slice(0,5), {x: "total_obs", y: "title", sort: {y: "x", reverse: true}})
       ]
     })
@@ -189,7 +206,7 @@
       },
       marks: [
         Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 15}),
+        Plot.axisY({label: null, lineWidth: 18}),
         Plot.barX(applicantTypes.slice(0,5), {x: "total_num_programs", y: "title", sort: {y: "x", reverse: true}})
       ]
     })
@@ -265,11 +282,11 @@
       }],
       sort: true,
       pagination: {
-        limit: 10
+        limit: 5
       },
       search: true,
       data: programs
-    }).render(document.getElementById("program-table"));
+    }).render(document.getElementById("programs-table"));
 
   </script>
 
