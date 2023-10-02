@@ -29,6 +29,7 @@ RUN bundle exec jekyll build && \
 #          This stage is responsible for building the final nginx image that
 #          contains the static files generated in Stage 1.
 FROM nginx:mainline-alpine AS runtime-image
+USER 101
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=0 /app/_site /usr/share/nginx/html
 EXPOSE 80
