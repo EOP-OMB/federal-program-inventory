@@ -2,7 +2,7 @@
 #          This stage is responsible for using Jekyll to build the static
 #          files that are ultimately served by nginx. This is not the final
 #          image.
-FROM ruby:3.2.2
+FROM ruby:3.2.2 AS build-image
 ENV NODE_VERSION=18.17.1
 ENV NVM_DIR=/root/.nvm
 ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
@@ -28,7 +28,7 @@ RUN bundle exec jekyll build && \
 # Stage 2: Build the final nginx image
 #          This stage is responsible for building the final nginx image that
 #          contains the static files generated in Stage 1.
-FROM nginx:mainline-alpine
+FROM nginx:mainline-alpine AS runtime-image
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=0 /app/_site /usr/share/nginx/html
 EXPOSE 80
