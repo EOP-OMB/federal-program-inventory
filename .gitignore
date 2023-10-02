@@ -1,0 +1,9 @@
+.DS_Store
+.ipynb_checkpoints
+.jekyll-metadata
+.ruby-gemset
+.ruby-version
+node_modules
+venv
+/website/.sass-cache
+/website/_site

@@ -1,0 +1,13 @@
+@forward "uswds-theme";
+@forward "uswds";
+@forward "uswds-theme-custom-styles";
+
+.usa-logo img {
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.usa-logo .usa-logo__text a span {
+    vertical-align: middle;
+}

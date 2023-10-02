@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include _head.html %}
+
+<body>
+
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+  {% include _banner.html %}
+
+  {% include _header.html %}
+
+  <section class="bg-primary-dark">
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-12">
+          <p class="margin-top-2 margin-bottom-0 text-white text-italic">{{ page.agency }}</p>
+        </div>
+        <div class="grid-col-12">
+          <h1 class="margin-top-0 margin-bottom-2 text-white">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main-content" role="main" class="padding-top-4 bg-base-lightest text-base-dark">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="grid-col-3 bg-white border-right-1 border-base-lightest">
+          <h2 class="text-base-dark">Program information</h2>
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Assistance listing number</h3>
+            <p class="margin-top-0">{{ page.cfda }}</p>
+          </div>
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Agency</h3>
+            <p class="margin-top-0">{{ page.agency }}</p>
+          </div>
+
+          {% if page.sub-agency.size > 0 %}
+
+            <div>
+              <h3 class="margin-bottom-0 text-base-dark">Sub-agency</h3>
+              <p class="margin-top-0">{{ page.sub-agency }}</p>
+            </div>
+
+          {% endif %}
+
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Categories & sub-categories</h3>
+            <ul class="margin-top-0">
+
+              {% for x in page.categories %}
+
+                <li>{{ x }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </div>
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Types of assistance</h3>
+            <ul class="margin-top-0">
+
+              {% for x in page.assistance_types %}
+
+                <li>{{ x }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </div>
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Eligible applicants</h3>
+            <ul class="margin-top-0">
+
+              {% for x in page.applicant_types %}
+
+                <li>{{ x }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </div>
+          <div>
+            <h3 class="margin-bottom-0 text-base-dark">Beneficiaries</h3>
+            <ul class="margin-top-0">
+
+              {% for x in page.beneficiary_types %}
+
+                <li>{{ x }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </div>
+        </div>
+        <div class="grid-col-9 bg-white border-left-1 border-base-lightest">
+          <div>
+            <h3 class="text-base-dark">Program objective</h3>
+            <p class="usa-prose">{{ page.objective }}</p>
+          </div>  
+          <div>
+            <h3 class="text-base-dark">Program obligations (2019 - 2023)</h3>
+            <div id="spending-visualization"></div>
+            <p class="text-italic usa-prose">The above visualization shows obligations for the program, as reported by the agency on SAM.gov and USASpending.gov.</p>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  {% include _footer.html %}
+
+  <script src="{{ site.baseurl }}/assets/js/uswds.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/d3.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/plot.min.js"></script>
+  <script type="module">
+    const obligations = {{ page.obligations }};
+    const spendingVisualization = Plot.plot({
+      x: {axis: null},
+      y: {tickFormat: "s", grid: true},
+      color: {scheme: "paired", legend: true},
+      marks: [
+        Plot.barY(obligations, {
+          x: "key",
+          y: "amount",
+          fill: "key",
+          fx: "year"
+        }),
+        Plot.ruleY([0])
+      ]
+    })
+    document.querySelector("#spending-visualization").append(spendingVisualization);
+  </script>
+
+</body>
+
+</html>

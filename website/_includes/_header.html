@@ -1,0 +1,210 @@
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended">
+  <div class="usa-navbar">
+    <div class="usa-logo">
+      <em class="usa-logo__text">
+        <a href="/" title="Federal Program Inventory">
+          <img src="/assets/img/omb-logo.jpg" title="Executive Office of the President - Office of Management and Budget">
+          <span>Federal Program Inventory</span>
+        </a>
+      </em>
+    </div>
+    <button type="button" class="usa-menu-btn">Menu</button>
+  </div>
+  <nav aria-label="Primary navigation" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button type="button" class="usa-nav__close">
+        <img src="/assets/img/usa-icons/sprite.svg#close" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-mega-nav-section-one"
+          >
+            <span>Explore programs by category</span>
+          </button>
+          <div
+            id="extended-mega-nav-section-one"
+            class="usa-nav__submenu usa-megamenu"
+          >
+            <div class="grid-row grid-gap-4">
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+
+                  {% assign nav_column_one_size = site.category.size | divided_by: 4 %}
+                  {% assign nav_column_two_size = site.category.size | divided_by: 4 %}
+                  {% assign nav_column_three_size = site.category.size | divided_by: 4 %}
+
+                  {% assign nav_column_remainder = site.category.size | modulo: 4 %}
+                  {% if nav_column_remainder == 1 %}
+                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
+                  {% endif %}
+                  {% if nav_column_remainder == 2 %}
+                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
+                    {% assign nav_column_two_size = nav_column_two_size | plus: 1 %}
+                  {% endif %}
+                  {% if nav_column_remainder == 3 %}
+                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
+                    {% assign nav_column_two_size = nav_column_two_size | plus: 1 %}
+                    {% assign nav_column_three_size = nav_column_three_size | plus: 1 %}
+                  {% endif %}
+
+                  {% for c in site.category limit: nav_column_one_size %}
+
+                  <li class="usa-nav__submenu-item">
+                    <a href="{{ c.permalink }}">{{ c.title }}</a>
+                  </li>
+
+                  {% endfor %}
+
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+
+                  {% for c in site.category limit: nav_column_two_size offset: continue %}
+
+                  <li class="usa-nav__submenu-item">
+                    <a href="{{ c.permalink }}">{{ c.title }}</a>
+                  </li>
+
+                  {% endfor %}
+
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+
+                  {% for c in site.category limit: nav_column_three_size offset: continue %}
+
+                  <li class="usa-nav__submenu-item">
+                    <a href="{{ c.permalink }}">{{ c.title }}</a>
+                  </li>
+
+                  {% endfor %}
+
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+
+                  {% for c in site.category offset: continue %}
+
+                  <li class="usa-nav__submenu-item">
+                    <a href="{{ c.permalink }}">{{ c.title }}</a>
+                  </li>
+
+                  {% endfor %}
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="javascript:void(0);" class="usa-nav-link">Explore programs by search</a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-mega-nav-section-two"
+          >
+            <span>About the pilot</span>
+          </button>
+          <div
+            id="extended-mega-nav-section-two"
+            class="usa-nav__submenu usa-megamenu"
+          >
+            <div class="grid-row grid-gap-4">
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);"
+                      >&lt;A very long navigation link that goes onto two
+                      lines&gt;</a
+                    >
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links"></ul>
+        <section aria-label="Search component">
+          <form class="usa-search usa-search--small" id="search" role="search">
+            <label class="usa-sr-only" for="search-field">Search</label>
+            <input
+              class="usa-input"
+              id="search-field"
+              type="search"
+              name="search"
+              placeholder="10.001"
+              pattern="\d\d.\d\d\d"
+              inputmode="numeric"
+            />
+            <button class="usa-button" type="submit">
+              <img
+                src="/assets/img/usa-icons-bg/search--white.svg"
+                class="usa-search__submit-icon"
+                alt="Search"
+              />
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </nav>
+</header>
+
