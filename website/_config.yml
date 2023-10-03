@@ -54,8 +54,6 @@ defaults:
 collections:
   category:
     output: true
-  location:
-    output: true
   program:
     output: true
   subcategory:

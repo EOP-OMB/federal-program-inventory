@@ -23,31 +23,31 @@
       </div>
     </div>
   </section>
-  <main id="main-content" role="main" class="padding-top-4 bg-base-lightest text-base-dark">
+  <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
     <div class="grid-container">
       <div class="grid-row grid-gap">
-        <div class="grid-col-3 bg-white border-right-1 border-base-lightest">
-          <h2 class="text-base-dark">Program information</h2>
+        <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
+          <h3 class="text-base-dark">Program information</h3>
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Assistance listing number</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Assistance listing number</h4>
             <p class="margin-top-0">{{ page.cfda }}</p>
           </div>
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Agency</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Agency</h4>
             <p class="margin-top-0">{{ page.agency }}</p>
           </div>
 
           {% if page.sub-agency.size > 0 %}
 
             <div>
-              <h3 class="margin-bottom-0 text-base-dark">Sub-agency</h3>
+              <h4 class="margin-bottom-0 text-base-dark">Sub-agency</h4>
               <p class="margin-top-0">{{ page.sub-agency }}</p>
             </div>
 
           {% endif %}
 
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Categories & sub-categories</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Categories & sub-categories</h4>
             <ul class="margin-top-0">
 
               {% for x in page.categories %}
@@ -59,7 +59,7 @@
             </ul>
           </div>
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Types of assistance</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Types of assistance</h4>
             <ul class="margin-top-0">
 
               {% for x in page.assistance_types %}
@@ -71,7 +71,7 @@
             </ul>
           </div>
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Eligible applicants</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Eligible applicants</h4>
             <ul class="margin-top-0">
 
               {% for x in page.applicant_types %}
@@ -83,7 +83,7 @@
             </ul>
           </div>
           <div>
-            <h3 class="margin-bottom-0 text-base-dark">Beneficiaries</h3>
+            <h4 class="margin-bottom-0 text-base-dark">Beneficiaries</h4>
             <ul class="margin-top-0">
 
               {% for x in page.beneficiary_types %}
@@ -95,20 +95,44 @@
             </ul>
           </div>
         </div>
-        <div class="grid-col-9 bg-white border-left-1 border-base-lightest">
-          <div>
-            <h3 class="text-base-dark">Program objective</h3>
-            <p class="usa-prose">{{ page.objective }}</p>
-          </div>  
-          <div>
-            <h3 class="text-base-dark">Program obligations (2019 - 2023)</h3>
-            <div id="spending-visualization"></div>
-            <p class="text-italic usa-prose">The above visualization shows obligations for the program, as reported by the agency on SAM.gov and USASpending.gov.</p>
+        <div class="desktop:grid-col-9">
+
+          <div class="grid-row">
+            <div class="grid-col-12">
+              <section class="bg-white padding-2">
+                <h2 class="margin-top-0">Program objective</h2>
+                <div class="usa-prose">
+                  <p>{{ page.objective }}</p>
+                </div>
+              </section>
+            </div>
+            <div class="grid-col-12">
+              <section class="bg-white margin-top-3 padding-2">
+                <h2 class="margin-top-0">Program obligations, by FY (2019 - 2023)</h2>
+                <div id="spending-visualization"></div>
+                <div class="usa-accordion usa-accordion--bordered">
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="obligations-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="obligations-about" class="usa-accordion__content usa-prose">
+                    <p>
+                      The above visualization shows obligations for the program, as reported by
+                      the agency on SAM.gov and USASpending.gov.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
-          
         </div>
       </div>
-      
     </div>
   </main>
 
