@@ -1,45 +1,44 @@
 ---
-agencies: '[{"title": "Department of State", "total_num_programs": 5, "total_obs":
-  8759626}, {"title": "Department of the Interior", "total_num_programs": 6, "total_obs":
-  639398025}, {"title": "Department of Energy", "total_num_programs": 28, "total_obs":
-  6135123376}, {"title": "Department of Transportation", "total_num_programs": 6,
-  "total_obs": 248394671}, {"title": "Denali Commission", "total_num_programs": 1,
-  "total_obs": 0}, {"title": "Department of Health and Human Services", "total_num_programs":
-  2, "total_obs": 3931717211}, {"title": "Department of Agriculture", "total_num_programs":
-  13, "total_obs": 2736666154}, {"title": "Environmental Protection Agency", "total_num_programs":
-  3, "total_obs": 92000000}, {"title": "Inter-American Foundation", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Department of Defense", "total_num_programs": 2,
-  "total_obs": 2200000000}, {"title": "Department of Veterans Affairs", "total_num_programs":
-  1, "total_obs": 63978351819}, {"title": "Department of Education", "total_num_programs":
-  2, "total_obs": 695290000}, {"title": "Department of Housing and Urban Development",
-  "total_num_programs": 2, "total_obs": 6103180}, {"title": "Department of Labor",
-  "total_num_programs": 1, "total_obs": 0}, {"title": "Appalachian Regional Commission",
-  "total_num_programs": 1, "total_obs": 0}]'
-applicant_types: '[{"title": "Non-Government - General", "total_num_programs": 14},
-  {"title": "Other public institution/organization", "total_num_programs": 22}, {"title":
-  "Public nonprofit institution/organization (includes institutions of higher education
-  and hospitals)", "total_num_programs": 43}, {"title": "Specialized group (e.g. health
-  professionals, students, veterans)", "total_num_programs": 9}, {"title": "Federally
-  Recognized lndian Tribal Governments", "total_num_programs": 21}, {"title": "Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals", "total_num_programs": 30}, {"title": "Private nonprofit institution/organization
+agencies: '[{"title": "Department of Energy", "total_num_programs": 28, "total_obs":
+  6135123376}, {"title": "Denali Commission", "total_num_programs": 1, "total_obs":
+  0}, {"title": "Department of Agriculture", "total_num_programs": 13, "total_obs":
+  2736666154}, {"title": "Department of Housing and Urban Development", "total_num_programs":
+  2, "total_obs": 6103180}, {"title": "Department of State", "total_num_programs":
+  5, "total_obs": 8759626}, {"title": "Department of Transportation", "total_num_programs":
+  6, "total_obs": 248394671}, {"title": "Department of Education", "total_num_programs":
+  2, "total_obs": 695290000}, {"title": "Department of Health and Human Services",
+  "total_num_programs": 2, "total_obs": 3931717211}, {"title": "Department of the
+  Interior", "total_num_programs": 6, "total_obs": 639398025}, {"title": "Environmental
+  Protection Agency", "total_num_programs": 3, "total_obs": 92000000}, {"title": "Department
+  of Veterans Affairs", "total_num_programs": 1, "total_obs": 63978351819}, {"title":
+  "Department of Defense", "total_num_programs": 2, "total_obs": 2200000000}, {"title":
+  "Department of Labor", "total_num_programs": 1, "total_obs": 0}, {"title": "Appalachian
+  Regional Commission", "total_num_programs": 1, "total_obs": 0}, {"title": "Inter-American
+  Foundation", "total_num_programs": 1, "total_obs": 0}]'
+applicant_types: '[{"title": "Federally Recognized lndian Tribal Governments", "total_num_programs":
+  21}, {"title": "Interstate", "total_num_programs": 7}, {"title": "Native American
+  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  associations)", "total_num_programs": 13}, {"title": "Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)", "total_num_programs":
-  32}, {"title": "Profit organization", "total_num_programs": 28}, {"title": "State
+  43}, {"title": "State", "total_num_programs": 24}, {"title": "U.S. Territories and
+  possessions (includes institutions of higher education and hospitals)", "total_num_programs":
+  18}, {"title": "Anyone/general public", "total_num_programs": 14}, {"title": "Federal",
+  "total_num_programs": 9}, {"title": "Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)", "total_num_programs":
+  32}, {"title": "Profit organization", "total_num_programs": 28}, {"title": "Quasi-public
+  nonprofit institution/organization", "total_num_programs": 15}, {"title": "State
   (includes District of Columbia, public institutions of higher education and hospitals)",
-  "total_num_programs": 36}, {"title": "U.S. Territories and possessions (includes
-  institutions of higher education and hospitals)", "total_num_programs": 18}, {"title":
-  "Government - General", "total_num_programs": 9}, {"title": "Individual/Family",
-  "total_num_programs": 12}, {"title": "Quasi-public nonprofit institution/organization",
-  "total_num_programs": 15}, {"title": "State", "total_num_programs": 24}, {"title":
-  "U.S. Territories and possessions", "total_num_programs": 19}, {"title": "Anyone/general
-  public", "total_num_programs": 14}, {"title": "Minority group", "total_num_programs":
-  8}, {"title": "Native American Organizations (includes lndian groups, cooperatives,
-  corporations, partnerships, associations)", "total_num_programs": 13}, {"title":
-  "Small business (less than 500 employees)", "total_num_programs": 19}, {"title":
-  "Federal", "total_num_programs": 9}, {"title": "Interstate", "total_num_programs":
-  7}, {"title": "Intrastate", "total_num_programs": 5}, {"title": "Other private institutions/organizations",
-  "total_num_programs": 13}, {"title": "Sponsored organization", "total_num_programs":
-  6}]'
+  "total_num_programs": 36}, {"title": "Small business (less than 500 employees)",
+  "total_num_programs": 19}, {"title": "Non-Government - General", "total_num_programs":
+  14}, {"title": "Other private institutions/organizations", "total_num_programs":
+  13}, {"title": "Other public institution/organization", "total_num_programs": 22},
+  {"title": "Individual/Family", "total_num_programs": 12}, {"title": "Local (includes
+  State-designated lndian Tribes, excludes institutions of higher education and hospitals",
+  "total_num_programs": 30}, {"title": "U.S. Territories and possessions", "total_num_programs":
+  19}, {"title": "Minority group", "total_num_programs": 8}, {"title": "Intrastate",
+  "total_num_programs": 5}, {"title": "Government - General", "total_num_programs":
+  9}, {"title": "Sponsored organization", "total_num_programs": 6}, {"title": "Specialized
+  group (e.g. health professionals, students, veterans)", "total_num_programs": 9}]'
 fiscal_year: '2022'
 permalink: /category/energy
 sub_cats: '[{"title": "Conservation", "permalink": "/category/energy/conservation",

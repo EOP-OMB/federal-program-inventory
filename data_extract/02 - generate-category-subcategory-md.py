@@ -227,7 +227,7 @@ for sc in subcategory_list:
     subcategory_list[sc].pop('_programs', None)
 
     # build a markdown file for each program using Jekyll's required format
-    with open('../website/_subcategory/'+convert_to_url_string(subcategory_list[sc]['title'])+'.md', 'w') as file:
+    with open('../website/_subcategory/'+convert_to_url_string(subcategory_list[sc]['parent_title'])+'---'+convert_to_url_string(subcategory_list[sc]['title'])+'.md', 'w') as file:
         file.write('---\n') # Begin Jekyll Front Matter
         yaml.dump(subcategory_list[sc], file)
         file.write('---\n') # End Jekyll Front Matter
