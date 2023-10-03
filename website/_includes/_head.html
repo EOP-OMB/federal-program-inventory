@@ -5,11 +5,7 @@
 
 {% capture url_path %}{{site.domain}}{{site.baseurl}}{{page.url}}{% endcapture %}
 
-{% capture page_title %}{% if page.people_page %}{{ page.name }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
-
-{% capture share_image %}{% if page.people_page %}{{site.domain}}{{ site.baseurl }}/images/{{ page.image_name }}{% elsif page.project_page %}{{site.domain}}{{ site.baseurl }}/images/{{ page.carousel_image_name }}{% elsif page.social_image %}{{site.domain}}{{ site.baseurl }}/assets/img/{{ page.social_image }}{% else %}{{site.domain}}{{ site.baseurl }}/assets/img/{{ site.social_image }}{% endif %}{% endcapture %}
-
-{% capture page_description %}{% if page.description %}{{ page.description }}{% else %}{{ content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 30 }}{% endif %}{% endcapture %}
+{% capture page_title %}{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
 
     <title>{{ page_title }}</title>
 
@@ -30,18 +26,7 @@
 
     <script type="application/javascript" src="{{ site.baseurl }}/assets/js/uswds-init.min.js"></script>
 
-    {% if jekyll.environment == 'production' %}
-      <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
-      <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=EOP&amp;sub-agency=OMB" id="_fed_an_ua_tag"></script>
-
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132706295-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-132706295-1', { 'anonymize_ip': true });
-      </script>
-    {% endif %}
+    <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+    <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=EOP&amp;sub-agency=OMB" id="_fed_an_ua_tag"></script>
 
 </head>

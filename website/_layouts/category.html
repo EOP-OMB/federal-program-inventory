@@ -24,7 +24,7 @@
     <div class="grid-container">
       <div class="grid-row grid-gap">
         <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
-          <h2 class="text-base-dark">Sub-categories</h2>
+          <h3 class="text-base-dark">Sub-categories</h3>
           <nav aria-label="Side navigation">
             <ul class="usa-sidenav">
               
@@ -79,7 +79,38 @@
               <section class="bg-white margin-top-3 padding-2">
                 <h2 class="margin-top-0">Top sub-categories, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="subcategories-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="subcategories-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="subcategories-about" class="usa-accordion__content usa-prose">
+                    <p>
+                      When creating Assistance Listings for each of their programs, agencies are offered the
+                      opportunity to select one or many "functions" and "sub-functions" from a pre-defined list
+                      that best align with the program. The categories and sub-categories shown on this website
+                      are "functions" and "sub-functions" self-selected by agencies.
+                    </p>
+                    <p>
+                      Programs may be assigned to one or more "functions" and / or "sub-functions". The numbers
+                      in this visualization and data set may not sum to the cumulative figure displayed on this
+                      page, due to the existence of programs in multiple categories and sub-categories.
+                      Additionally, the numbers displayed on this page may not represent funding or number of
+                      programs associated exclusively with this category and / or sub-category.
+                    </p>
+                    <p>
+                      In selecting from the list of "functions" and "sub-functions" agencies are not offered
+                      guidance on their meaning, nor the number to select. As a result, the number and context
+                      of "functions" and "sub-functions" assigned to a program may vary by program. These values
+                      are selected by agencies and are published on SAM.gov.
+                    </p>
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
