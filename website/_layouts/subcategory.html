@@ -23,7 +23,7 @@
       </div>
     </div>
   </section>
-  <main id="main-content" role="main" class="padding-top-4 bg-base-lightest text-base-dark">
+  <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
     <div class="grid-container">
       <div class="grid-row grid-gap">
         <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
@@ -55,24 +55,36 @@
           </nav>
         </div>
         <div class="desktop:grid-col-9">
-          <div class="grid-row">
+          <div class="grid-row bg-white">
             <div class="grid-col-6">
-              <section class="bg-white padding-2">
-                {{ page.total_num_programs }}
+              <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
+                <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
+                <p class="margin-top-0">programs</p>
               </section>
             </div>
             <div class="grid-col-6">
-              <section class="bg-white padding-2">
-                {{ page.total_obs }}
+              <section class="padding-2 desktop:border-left-1 desktop:border-base-lightest">
+                <span class="font-body-3xl text-bold">
+                  {% if page.total_obs > 1000000000000 %}
+                    ${{ page.total_obs | divided_by: 1000000000000.0 | round: 2 }}T
+                  {% elsif page.total_obs > 1000000000 %}
+                    ${{ page.total_obs | divided_by: 1000000000.0 | round: 2 }}B
+                  {% elsif page.total_obs > 1000000 %}
+                    ${{ page.total_obs | divided_by: 1000000.0 | round: 2 }}M
+                  {% elsif page.total_obs > 1000 %}
+                    ${{ page.total_obs | divided_by: 1000.0 | round: 2 }}k
+                  {% endif %}
+                </span>
+                <p class="margin-top-0">in FY{{ page.fiscal_year }} obligations</p>
               </section>
             </div>
           </div>
           <div class="grid-row">
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2>Top Programs, by FY{{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top programs, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="programs-visualization"></div>
-                <div class="usa-accordion">
+                <div class="usa-accordion usa-accordion--bordered">
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -91,9 +103,9 @@
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2>Top agencies, by FY{{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top agencies, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="agencies-visualization"></div>
-                <div class="usa-accordion">
+                <div class="usa-accordion usa-accordion--bordered">
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -112,9 +124,9 @@
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2>Top applicant types, by number of programs</h2>
+                <h2 class="margin-top-0">Top applicant types, by number of programs</h2>
                 <div id="applicant-types-visualization"></div>
-                <div class="usa-accordion">
+                <div class="usa-accordion usa-accordion--bordered">
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -141,7 +153,6 @@
 
   <script src="/assets/js/uswds.min.js"></script>
   <script src="/assets/js/d3.min.js"></script>
-  <script src="/assets/js/d3.treemap.js"></script>
   <script src="/assets/js/plot.min.js"></script>
   <script src="/assets/js/gridjs.umd.js"></script>
   <script>
@@ -153,7 +164,7 @@
     programsVisualization = Plot.plot({
       marginLeft: 200,
       width: 836,
-      height: 300,
+      height: 350,
       x: {
         label: "Obligations (in millions of USD)",
         axis: "top",
@@ -164,17 +175,17 @@
         label: "Program Name"
       },
       marks: [
+        Plot.barX(programs.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", href: "permalink", sort: {y: "x", reverse: true}}),
         Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 18}),
-        Plot.barX(programs.slice(0,5), {x: "total_obs", y: "title", sort: {y: "x", reverse: true}})
+        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"}),
       ]
     })
-    document.querySelector("#programs-visualization").append(programsVisualization);
+    document.querySelector("#programs-visualization").append(programsVisualization)
 
     agenciesVisualization = Plot.plot({
       marginLeft: 200,
       width: 836,
-      height: 300,
+      height: 350,
       x: {
         label: "Obligations (in millions of USD)",
         axis: "top",
@@ -185,9 +196,9 @@
         label: "Agency"
       },
       marks: [
+        Plot.barX(agencies.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
         Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 18}),
-        Plot.barX(agencies.slice(0,5), {x: "total_obs", y: "title", sort: {y: "x", reverse: true}})
+        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
       ]
     })
     document.querySelector("#agencies-visualization").append(agenciesVisualization);
@@ -195,7 +206,7 @@
     applicantTypesVisualization = Plot.plot({
       marginLeft: 200,
       width: 836,
-      height: 300,
+      height: 350,
       x: {
         label: "Number of Programs",
         axis: "top",
@@ -205,9 +216,9 @@
         label: "Applicant Types"
       },
       marks: [
+        Plot.barX(applicantTypes.slice(0,5), {x: "total_num_programs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
         Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 18}),
-        Plot.barX(applicantTypes.slice(0,5), {x: "total_num_programs", y: "title", sort: {y: "x", reverse: true}})
+        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
       ]
     })
     document.querySelector("#applicant-types-visualization").append(applicantTypesVisualization);

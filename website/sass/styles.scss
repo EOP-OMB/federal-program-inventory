@@ -7,7 +7,19 @@
     margin-right: 10px;
     vertical-align: middle;
 }
-
 .usa-logo .usa-logo__text a span {
     vertical-align: middle;
+}
+
+.gridjs-wrapper, .gridjs-footer {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #f0f0f0;
+}
+.gridjs-pagination .gridjs-pages button:first-child,
+.gridjs-pagination .gridjs-pages button:last-child {
+    border-radius: 0;
+}
+th.gridjs-th {
+    background: #f0f0f0;
 }
