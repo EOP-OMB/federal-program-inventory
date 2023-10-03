@@ -44,6 +44,6 @@ jobs:
         with:
           context: website
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: release
           labels: ${{ steps.meta.outputs.labels }}
 
