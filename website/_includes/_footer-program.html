@@ -1,0 +1,18 @@
+<script type="module">
+  const obligations = {{ page.obligations }};
+  const spendingVisualization = Plot.plot({
+    x: {axis: null},
+    y: {tickFormat: "s", grid: true},
+    color: {scheme: "paired", legend: true},
+    marks: [
+      Plot.barY(obligations, {
+        x: "key",
+        y: "amount",
+        fill: "key",
+        fx: "year"
+      }),
+      Plot.ruleY([0])
+    ]
+  })
+  document.querySelector("#spending-visualization").append(spendingVisualization);
+</script>
