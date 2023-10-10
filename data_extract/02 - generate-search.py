@@ -329,27 +329,28 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                 for parent in r:
                     if category.get_parent().get_title() == parent['title']:
                         parent['sub_categories'].append(o)
-    return r
+    return sorted(r, key=lambda cat: cat['title'])
 
 with open('../website/pages/search.md', 'w') as file:
     file.write('---\n') # Begin Jekyll Front Matter
     page = {
         'layout': 'search',
         'permalink': '/search.html',
+        'fiscal_year': PRIMARY_FISCAL_YEAR,
         'agencies': generate_list_of_program_ids_for_category(agencies, True),
         'applicant_types': generate_list_of_program_ids_for_category(applicant_types),
         'assistance_types': generate_list_of_program_ids_for_category(assistance_types),
         'beneficiary_types': generate_list_of_program_ids_for_category(beneficiary_types),
         'categories': generate_list_of_program_ids_for_category(categories, True),
-        'programs': json.dumps([
+        'programs': json.dumps(sorted([
             {
                 'cfda': programs[p].get_id(),
                 'title': programs[p].get_title(),
-                'permalink': '/program/' + program.get_id(),
+                'permalink': '/program/' + programs[p].get_id(),
                 'agency': programs[p].get_top_level_agency_printable(),
                 'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual')
             } for p in programs
-        ], separators=(',', ':'))
+        ], key=lambda program: program['obligations'], reverse=True), separators=(',', ':'))
     }
     yaml.dump(page, file)
     file.write('---\n') # End Jekyll Front Matter

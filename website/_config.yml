@@ -33,6 +33,12 @@ defaults:
   -
     scope:
       path: ""
+    values: # default text values used throughout the site.
+      tooltip_programs: "Programs are individual Assistance Listings, as submitted by agencies to SAM.gov."
+      tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
+  -
+    scope:
+      path: ""
       type: "program"
     values:
       layout: "program"

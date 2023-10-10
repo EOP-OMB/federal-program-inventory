@@ -31,7 +31,7 @@ footer_include: _footer-search.html
                 Categories
               </button>
             </h4>
-            <div id="categories" class="usa-accordion__content">
+            <div id="categories" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset">
                   {% for c in page.categories %}
                     <div class="usa-checkbox">
@@ -73,7 +73,7 @@ footer_include: _footer-search.html
                 Agencies
               </button>
             </h4>
-            <div id="agencies" class="usa-accordion__content">
+            <div id="agencies" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset">
                 {% for a in page.agencies %}
                   <div class="usa-checkbox">
@@ -112,10 +112,10 @@ footer_include: _footer-search.html
                 aria-expanded="false"
                 aria-controls="applicants"
               >
-                Eligible Applicants
+                Eligible applicants
               </button>
             </h4>
-            <div id="applicants" class="usa-accordion__content">
+            <div id="applicants" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset">
                 {% for a in page.applicant_types %}
                   <div class="usa-checkbox">
@@ -140,10 +140,10 @@ footer_include: _footer-search.html
                 aria-expanded="false"
                 aria-controls="beneficiaries"
               >
-                Eligible Beneficiaries
+                Eligible beneficiaries
               </button>
             </h4>
-            <div id="beneficiaries" class="usa-accordion__content">
+            <div id="beneficiaries" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset">
                 {% for b in page.beneficiary_types %}
                   <div class="usa-checkbox">
@@ -168,10 +168,10 @@ footer_include: _footer-search.html
                 aria-expanded="false"
                 aria-controls="assistancetypes"
               >
-                Assistance Types
+                Assistance types
               </button>
             </h4>
-            <div id="assistancetypes" class="usa-accordion__content">
+            <div id="assistancetypes" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset">
                 {% for a in page.assistance_types %}
                   <div class="usa-checkbox">
@@ -197,13 +197,27 @@ footer_include: _footer-search.html
           <div class="tablet:grid-col-6">
             <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
               <span id="big-number-num-of-programs" class="font-body-3xl text-bold"></span>
-              <p class="margin-top-0">programs</p>
+              <p class="margin-top-0">
+                programs
+                <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/assets/img/sprite.svg#info"></use>
+                  </svg>
+                </span>
+              </p>
             </section>
           </div>
           <div class="tablet:grid-col-6">
             <section class="padding-2 desktop:border-left-1 desktop:border-right-1 desktop:border-base-lightest">
               <span id="big-number-obligations" class="font-body-3xl text-bold"></span>
-              <p class="margin-top-0">in FY{{ page.fiscal_year }} obligations</p>
+              <p class="margin-top-0">
+                in FY{{ page.fiscal_year }} obligations
+                <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/assets/img/sprite.svg#info"></use>
+                  </svg>
+                </span>
+              </p>
             </section>
           </div>
         </div>

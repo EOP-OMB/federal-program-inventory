@@ -2,8 +2,53 @@
 layout: default
 footer_include: _footer-category.html
 
-tooltip_programs: "Programs are individual Assistance Listings from SAM.gov."
-tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
+sub_categories_about_text: |
+  <p>
+    This visualization shows the top five sub-categories, by obligations, within this
+    category. Data for all sub-categories is available in table format via the link below.
+  </p>
+  <p>
+    When creating Assistance Listings for each of their programs, agencies are offered the
+    opportunity to select one or many "functions" and "sub-functions" from a pre-defined list
+    that best align with the program. The categories and sub-categories shown on this website
+    are "functions" and "sub-functions" self-selected by agencies.
+  </p>
+  <p>
+    Programs may be assigned to one or more "functions" and / or "sub-functions". The numbers
+    in this visualization and data set may not sum to the cumulative figure displayed on this
+    page, due to the existence of programs in multiple categories and sub-categories.
+    Additionally, the numbers displayed on this page may not represent funding or number of
+    programs associated exclusively with this category and / or sub-category.
+  </p>
+  <p>
+    In selecting from the list of "functions" and "sub-functions" agencies are not offered
+    guidance on their meaning, nor the number to select. As a result, the number and context
+    of "functions" and "sub-functions" assigned to a program may vary by program. These values
+    are selected by agencies and are published on SAM.gov.
+  </p>
+  <p>
+    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
+    total obligations reported by the agency to SAM.gov for the fiscal year.
+  </p>
+
+agencies_about_text: |
+  <p>
+    This visualization shows the top five agencies, by obligations, within this
+    category. Data for all agencies is available in table format via the link below.
+  </p>
+  <p>
+    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
+    total obligations reported by the agency to SAM.gov for the fiscal year.
+  </p>
+
+applicant_type_about_text: |
+  <p>
+    This visualization shows the top five applicant types, by number of programs, within this
+    category. Data for all applicant types is available in table format via the link below.
+  </p>
+  <p>
+    Programs are individual Assistance Listings, as submitted by agencies to SAM.gov.
+  </p>
 ---
 
   <section class="bg-primary-dark">
@@ -43,7 +88,14 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
             <div class="tablet:grid-col-4">
               <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
                 <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
-                <p class="margin-top-0">programs</p>
+                <p class="margin-top-0">
+                  programs
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
               </section>
             </div>
             <div class="tablet:grid-col-4">
@@ -59,7 +111,14 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                     ${{ page.total_obs | divided_by: 1000.0 | round: 2 }}k
                   {% endif %}
                 </span>
-                <p class="margin-top-0">in FY{{ page.fiscal_year }} obligations</p>
+                <p class="margin-top-0">
+                  in FY{{ page.fiscal_year }} obligations
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
               </section>
             </div>
             <div class="tablet:grid-col-4">
@@ -86,25 +145,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                     </button>
                   </h4>
                   <div id="subcategories-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      When creating Assistance Listings for each of their programs, agencies are offered the
-                      opportunity to select one or many "functions" and "sub-functions" from a pre-defined list
-                      that best align with the program. The categories and sub-categories shown on this website
-                      are "functions" and "sub-functions" self-selected by agencies.
-                    </p>
-                    <p>
-                      Programs may be assigned to one or more "functions" and / or "sub-functions". The numbers
-                      in this visualization and data set may not sum to the cumulative figure displayed on this
-                      page, due to the existence of programs in multiple categories and sub-categories.
-                      Additionally, the numbers displayed on this page may not represent funding or number of
-                      programs associated exclusively with this category and / or sub-category.
-                    </p>
-                    <p>
-                      In selecting from the list of "functions" and "sub-functions" agencies are not offered
-                      guidance on their meaning, nor the number to select. As a result, the number and context
-                      of "functions" and "sub-functions" assigned to a program may vary by program. These values
-                      are selected by agencies and are published on SAM.gov.
-                    </p>
+                    {{ layout.sub_categories_about_text }}
                   </div>
                   <h4 class="usa-accordion__heading">
                     <button
@@ -113,7 +154,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                       aria-expanded="false"
                       aria-controls="subcategories-data"
                     >
-                      View the underlying data
+                      View data for all sub-categories
                     </button>
                   </h4>
                   <div id="subcategories-data" class="usa-accordion__content usa-prose">
@@ -126,7 +167,20 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
               <section class="bg-white margin-top-3 padding-2">
                 <h2 class="margin-top-0">Top agencies, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="agencies-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="agencies-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="agencies-about" class="usa-accordion__content usa-prose">
+                    {{ layout.agencies_about_text }}
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -134,7 +188,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                       aria-expanded="false"
                       aria-controls="agencies-data"
                     >
-                      View the underlying data
+                      View data for all agencies
                     </button>
                   </h4>
                   <div id="agencies-data" class="usa-accordion__content usa-prose">
@@ -145,9 +199,22 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top applicant types, by number of programs</h2>
+                <h2 class="margin-top-0">Top eligible applicant types, by number of programs</h2>
                 <div id="applicant-types-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="applicant-types-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="applicant-types-about" class="usa-accordion__content usa-prose">
+                    {{ layout.applicant_type_about_text }}
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -155,7 +222,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                       aria-expanded="false"
                       aria-controls="applicant-types-data"
                     >
-                      View the underlying data
+                      View data for all eligible applicant types
                     </button>
                   </h4>
                   <div id="applicant-types-data" class="usa-accordion__content usa-prose">
