@@ -3,8 +3,37 @@ layout: default
 footer_include: _footer-subcategory.html
 header_link_tag: page.parent_permalink
 
-tooltip_programs: "Programs are individual Assistance Listings from SAM.gov."
-tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
+programs_about_text: |
+  <p>
+    This visualization shows the top five programs, by obligations, within this
+    sub-category. Data for all programs is available in table format via the link below.
+  </p>
+  <p>
+    Programs are individual Assistance Listings, as submitted by agencies to SAM.gov.
+  </p>
+  <p>
+    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
+    total obligations reported by the agency to SAM.gov for the fiscal year.
+  </p>
+
+agencies_about_text: |
+  <p>
+    This visualization shows the top five agencies, by obligations, within this
+    sub-category. Data for all agencies is available in table format via the link below.
+  </p>
+  <p>
+    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
+    total obligations reported by the agency to SAM.gov for the fiscal year.
+  </p>
+
+applicant_type_about_text: |
+  <p>
+    This visualization shows the top five applicant types, by number of programs, within this
+    sub-category. Data for all applicant types is available in table format via the link below.
+  </p>
+  <p>
+    Programs are individual Assistance Listings, as submitted by agencies to SAM.gov.
+  </p>
 ---
 
   <section class="bg-primary-dark">
@@ -57,8 +86,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                 <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
                 <p class="margin-top-0">
                   programs
-                  <span class="usa-tooltip" data-position="right"
-                        title="{{ layout.tooltip_programs }}">
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
                     <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
                       <use xlink:href="/assets/img/sprite.svg#info"></use>
                     </svg>
@@ -81,8 +109,7 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                 </span>
                 <p class="margin-top-0">
                   in FY{{ page.fiscal_year }} obligations
-                  <span class="usa-tooltip" data-position="right"
-                        title="{{ layout.tooltip_obligations }}">
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
                     <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
                       <use xlink:href="/assets/img/sprite.svg#info"></use>
                     </svg>
@@ -97,6 +124,19 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                 <h2 class="margin-top-0">Top programs, by FY{{ page.fiscal_year }} obligations</h2>
                 <div id="programs-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered">
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="programs-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="programs-about" class="usa-accordion__content usa-prose">
+                    {{ layout.programs_about_text }}
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -123,6 +163,19 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
+                      aria-controls="agencies-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="agencies-about" class="usa-accordion__content usa-prose">
+                    {{ layout.agencies_about_text }}
+                  </div>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
                       aria-controls="agencies-data"
                     >
                       View the underlying data
@@ -136,9 +189,22 @@ tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top applicant types, by number of programs</h2>
+                <h2 class="margin-top-0">Top eligible applicant types, by number of programs</h2>
                 <div id="applicant-types-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="applicant-types-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="applicant-types-about" class="usa-accordion__content usa-prose">
+                    {{ layout.applicant_type_about_text }}
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
