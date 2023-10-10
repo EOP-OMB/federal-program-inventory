@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-{% include _head.html %}
-
-<body>
-
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-
-  {% include _banner.html %}
-
-  {% include _header.html %}
+---
+layout: default
+footer_include: _footer-program.html
+---
 
   <section class="bg-primary-dark">
     <div class="grid-container">
@@ -135,31 +127,3 @@
       </div>
     </div>
   </main>
-
-  {% include _footer.html %}
-
-  <script src="{{ site.baseurl }}/assets/js/uswds.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/d3.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/plot.min.js"></script>
-  <script type="module">
-    const obligations = {{ page.obligations }};
-    const spendingVisualization = Plot.plot({
-      x: {axis: null},
-      y: {tickFormat: "s", grid: true},
-      color: {scheme: "paired", legend: true},
-      marks: [
-        Plot.barY(obligations, {
-          x: "key",
-          y: "amount",
-          fill: "key",
-          fx: "year"
-        }),
-        Plot.ruleY([0])
-      ]
-    })
-    document.querySelector("#spending-visualization").append(spendingVisualization);
-  </script>
-
-</body>
-
-</html>

@@ -1,0 +1,222 @@
+---
+layout: default
+
+header_title: Explore programs by search
+footer_include: _footer-search.html
+---
+
+<section class="bg-primary-dark">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h1 class="margin-top-2 margin-bottom-2 text-white">{{ layout.header_title }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
+        <form id="search-filters">
+          <h3 class="text-base-dark">Filters</h3>
+          <div class="usa-accordion">
+            <h4 class="usa-accordion__heading">
+              <button
+                type="button"
+                class="usa-accordion__button"
+                aria-expanded="false"
+                aria-controls="categories"
+              >
+                Categories
+              </button>
+            </h4>
+            <div id="categories" class="usa-accordion__content">
+              <fieldset class="usa-fieldset">
+                  {% for c in page.categories %}
+                    <div class="usa-checkbox">
+                      <input
+                        class="usa-checkbox__input parent"
+                        id="check-category-{{ forloop.index }}"
+                        type="checkbox"
+                        name="categories"
+                        value=""
+                      />
+                      <label class="usa-checkbox__label" for="check-category-{{ forloop.index }}">
+                        {{ c.title }}
+                      </label>
+                      {% for sc in c.sub_categories %}
+                        <div class="usa-checkbox margin-left-2">
+                          <input
+                            class="usa-checkbox__input child-check-category-{{ forloop.parentloop.index }}"
+                            id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                            type="checkbox"
+                            name="categories"
+                            value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                          />
+                          <label class="usa-checkbox__label" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                            {{ sc.title }}
+                          </label>
+                        </div>
+                      {% endfor %}    
+                  {% endfor %}
+                </div>
+              </fieldset>
+            </div>
+            <h4 class="usa-accordion__heading">
+              <button
+                type="button"
+                class="usa-accordion__button"
+                aria-expanded="false"
+                aria-controls="agencies"
+              >
+                Agencies
+              </button>
+            </h4>
+            <div id="agencies" class="usa-accordion__content">
+              <fieldset class="usa-fieldset">
+                {% for a in page.agencies %}
+                  <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input parent"
+                      id="check-agency-{{ forloop.index }}"
+                      type="checkbox"
+                      name="agencies"
+                      value=""
+                    />
+                    <label class="usa-checkbox__label" for="check-agency-{{ forloop.index }}">
+                      {{ a.title }}
+                    </label>
+                    {% for sa in a.sub_categories %}
+                      <div class="usa-checkbox margin-left-2">
+                        <input
+                          class="usa-checkbox__input child-check-agency-{{ forloop.parentloop.index }}"
+                          id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                          type="checkbox"
+                          name="agencies"
+                          value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                        />
+                        <label class="usa-checkbox__label" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                          {{ sa.title }}
+                        </label>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endfor %}
+              </fieldset>
+            </div>
+            <h4 class="usa-accordion__heading">
+              <button
+                type="button"
+                class="usa-accordion__button"
+                aria-expanded="false"
+                aria-controls="applicants"
+              >
+                Eligible Applicants
+              </button>
+            </h4>
+            <div id="applicants" class="usa-accordion__content">
+              <fieldset class="usa-fieldset">
+                {% for a in page.applicant_types %}
+                  <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input parent"
+                      id="check-applicant-{{ forloop.index }}"
+                      type="checkbox"
+                      name="applicants"
+                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                    />
+                    <label class="usa-checkbox__label" for="check-applicant-{{ forloop.index }}">
+                      {{ a.title }}
+                    </label>
+                  </div>
+                {% endfor %}
+              </fieldset>
+            </div>
+            <h4 class="usa-accordion__heading">
+              <button
+                type="button"
+                class="usa-accordion__button"
+                aria-expanded="false"
+                aria-controls="beneficiaries"
+              >
+                Eligible Beneficiaries
+              </button>
+            </h4>
+            <div id="beneficiaries" class="usa-accordion__content">
+              <fieldset class="usa-fieldset">
+                {% for b in page.beneficiary_types %}
+                  <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input parent"
+                      id="check-beneficiary-{{ forloop.index }}"
+                      type="checkbox"
+                      name="beneficiaries"
+                      value="{% for p in b.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                    />
+                    <label class="usa-checkbox__label" for="check-beneficiary-{{ forloop.index }}">
+                      {{ b.title }}
+                    </label>
+                  </div>
+                {% endfor %}
+              </fieldset>
+            </div>
+            <h4 class="usa-accordion__heading">
+              <button
+                type="button"
+                class="usa-accordion__button"
+                aria-expanded="false"
+                aria-controls="assistancetypes"
+              >
+                Assistance Types
+              </button>
+            </h4>
+            <div id="assistancetypes" class="usa-accordion__content">
+              <fieldset class="usa-fieldset">
+                {% for a in page.assistance_types %}
+                  <div class="usa-checkbox">
+                    <input
+                      class="usa-checkbox__input parent"
+                      id="check-assistancetype-{{ forloop.index }}"
+                      type="checkbox"
+                      name="assistancetypes"
+                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                    />
+                    <label class="usa-checkbox__label" for="check-assistancetype-{{ forloop.index }}">
+                      {{ a.title }}
+                    </label>
+                  </div>
+                {% endfor %}
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="desktop:grid-col-9">
+        <div class="grid-row bg-white">
+          <div class="tablet:grid-col-6">
+            <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
+              <span id="big-number-num-of-programs" class="font-body-3xl text-bold"></span>
+              <p class="margin-top-0">programs</p>
+            </section>
+          </div>
+          <div class="tablet:grid-col-6">
+            <section class="padding-2 desktop:border-left-1 desktop:border-right-1 desktop:border-base-lightest">
+              <span id="big-number-obligations" class="font-body-3xl text-bold"></span>
+              <p class="margin-top-0">in FY{{ page.fiscal_year }} obligations</p>
+            </section>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-col-12">
+            <section class="bg-white margin-top-3 padding-2">
+              <h2 class="margin-top-0">Programs</h2>
+              <div id="programs-table"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

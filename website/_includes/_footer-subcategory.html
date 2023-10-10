@@ -1,0 +1,143 @@
+<script>
+  const programs = {{ page.programs }}.sort((a, b) => b.total_obs - a.total_obs);
+  const applicantTypes = {{ page.applicant_types }}.sort((a, b) => b.total_num_programs - a.total_num_programs);
+  const agencies = {{ page.agencies }}.sort((a, b) => b.total_obs - a.total_obs);
+
+  programsVisualization = Plot.plot({
+    marginLeft: 200,
+    width: 836,
+    height: 350,
+    x: {
+      label: "Obligations (in millions of USD)",
+      axis: "top",
+      transform: (e) => e/1000000,
+      grid: true
+    },
+    y: {
+      label: "Program Name"
+    },
+    marks: [
+      Plot.barX(programs.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", href: "permalink", sort: {y: "x", reverse: true}}),
+      Plot.ruleX([0]),
+      Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"}),
+    ]
+  })
+  document.querySelector("#programs-visualization").append(programsVisualization)
+
+  agenciesVisualization = Plot.plot({
+    marginLeft: 200,
+    width: 836,
+    height: 350,
+    x: {
+      label: "Obligations (in millions of USD)",
+      axis: "top",
+      transform: (e) => e/1000000,
+      grid: true
+    },
+    y: {
+      label: "Agency"
+    },
+    marks: [
+      Plot.barX(agencies.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
+      Plot.ruleX([0]),
+      Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
+    ]
+  })
+  document.querySelector("#agencies-visualization").append(agenciesVisualization);
+
+  applicantTypesVisualization = Plot.plot({
+    marginLeft: 200,
+    width: 836,
+    height: 350,
+    x: {
+      label: "Number of Programs",
+      axis: "top",
+      grid: true
+    },
+    y: {
+      label: "Applicant Types"
+    },
+    marks: [
+      Plot.barX(applicantTypes.slice(0,5), {x: "total_num_programs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
+      Plot.ruleX([0]),
+      Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
+    ]
+  })
+  document.querySelector("#applicant-types-visualization").append(applicantTypesVisualization);
+
+
+  // Generate and render Agencies data table
+  new gridjs.Grid({
+    columns: [
+    {
+      "id": "title",
+      "name": "Agency"
+    },
+    {
+      "id": "total_num_programs",
+      "name": "Number of Programs"
+    },
+    {
+      "id": "total_obs",
+      "name": "Obligations",
+      formatter: (cell) => `${ cell.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }`
+    }],
+    sort: true,
+    pagination: {
+      limit: 5
+    },
+    data: agencies
+  }).render(document.getElementById("agencies-table"));
+
+  // Generate and render Applicant Types data table
+  new gridjs.Grid({
+    columns: [{
+      "id": "title",
+      "name": "Applicant Type"
+    },
+    {
+      "id": "total_num_programs",
+      "name": "Number of Programs"
+    }],
+    sort: true,
+    pagination: {
+      limit: 5
+    },
+    data: applicantTypes
+  }).render(document.getElementById("applicant-types-table"));
+
+
+  // Generate and render Programs data table
+  new gridjs.Grid({
+    columns: [{
+      id: "cfda",
+      name: "Number",
+      hidden: true
+    },
+    {
+      id: "title",
+      name: "Name",
+      formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
+    },
+    {
+      id: "agency",
+      name: "Agency"
+    },
+    {
+      id: "total_obs",
+      name: "Obligations",
+      formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
+    },
+    {
+      id: "permalink",
+      name: "Link",
+      hidden: true
+    }],
+    sort: true,
+    pagination: {
+      limit: 5
+    },
+    search: true,
+    data: programs
+  }).render(document.getElementById("programs-table"));
+</script>

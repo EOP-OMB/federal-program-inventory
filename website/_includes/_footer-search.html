@@ -1,0 +1,131 @@
+<script>
+  const programs = {{ page.programs }}.sort((a, b) => a.title - b.title);
+  var filteredProgramIds = new Set();
+  var tablePrograms = programs;
+  filterPrograms();
+
+  function filterPrograms(showAll = false) {
+    if (showAll) {
+      tablePrograms = programs;
+    } else {
+      tablePrograms = programs.filter((p) => filteredProgramIds.has(p.cfda));
+    }
+    searchGrid.updateConfig({
+      data: tablePrograms
+    }).forceRender();
+    getElementById('big-number-num-of-programs').html(tablePrograms.length);
+    let obs = 0;
+    for(let k of tablePrograms) {
+      obs = obs + tablePrograms[k].obligations;
+    }
+    getElementById('big-number-obligations').html(obs);
+  }
+
+  // Generate and render Programs data table
+  const searchGrid = new gridjs.Grid({
+    columns: [{
+      id: "cfda",
+      name: "Number",
+      hidden: true
+    },
+    {
+      id: "title",
+      name: "Name",
+      formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
+    },
+    {
+      id: "agency",
+      name: "Agency"
+    },
+    {
+      id: "obligations",
+      name: "Obligations",
+      formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
+    },
+    {
+      id: "permalink",
+      name: "Link",
+      hidden: true
+    }],
+    sort: true,
+    pagination: {
+      limit: 20
+    },
+    data: tablePrograms
+  }).render(document.getElementById("programs-table"));
+
+  var filterInputs = document.getElementById('search-filters').getElementsByTagName('input');
+  for (i = 0; i < filterInputs.length; ++i) {
+    filterInputs[i].addEventListener('change', (event) => {
+      let input = event.currentTarget;
+      if (input.classList.contains('parent')) {
+        c = document.getElementById('search-filters').getElementsByClassName('child-' + input.id);
+        if (input.checked) {
+          for (i = 0; i < c.length; ++i) {
+            c[i].checked = true;
+          }
+        } else {
+          for (i = 0; i < c.length; ++i) {
+            c[i].checked = false;
+          }
+        }
+      }
+      updateFilteredProgramIds();
+    });
+  }
+
+  function updateFilteredProgramIds() {
+    filteredProgramIds = new Set();
+
+    // If no filters are checked, show all programs
+    let allInputs = document.getElementById('search-filters').getElementsByTagName('input');
+    let totalChecked = 0;
+    for (i = 0; i < allInputs.length; ++i) {
+      if (allInputs[i].checked) {
+        totalChecked = totalChecked + 1;
+      }
+    }
+    if (totalChecked == 0) {
+      filterPrograms(true);
+      return;
+    }
+
+    // If filters checked, filter by OR (within type) and AND (between types)
+    let categoriesSet = getProgramIdsFromInputSubset('categories');
+    let agenciesSet = getProgramIdsFromInputSubset('agencies');
+    let applicantsSet = getProgramIdsFromInputSubset('applicants');
+    let beneficiariesSet = getProgramIdsFromInputSubset('beneficiaries');
+    let assistancetypesSet = getProgramIdsFromInputSubset('assistancetypes');
+    filteredProgramIds = new Set([...categoriesSet, ...agenciesSet, ...applicantsSet, ...beneficiariesSet, ...assistancetypesSet]);
+    if (categoriesSet.length > 0) {
+      filteredProgramIds = new Set([...filteredProgramIds].filter(i => categoriesSet.has(i)));
+    }
+    if (agenciesSet.length > 0) {
+      filteredProgramIds = new Set([...filteredProgramIds].filter(i => agenciesSet.has(i)));
+    }
+    if (applicantsSet.length > 0) {
+      filteredProgramIds = new Set([...filteredProgramIds].filter(i => applicantsSet.has(i)));
+    }
+    if (beneficiariesSet.length > 0) {
+      filteredProgramIds = new Set([...filteredProgramIds].filter(i => beneficiariesSet.has(i)));
+    }
+    if (categoriesSet.length > 0) {
+      assistancetypesSet = new Set([...filteredProgramIds].filter(i => assistancetypesSet.has(i)));
+    }
+    filterPrograms();
+  }
+
+  function getProgramIdsFromInputSubset(htmlId) {
+    let inputs = document.getElementById(htmlId).getElementsByTagName('input');
+    let rSet = new Set();
+    for (i = 0; i < inputs.length; ++i) {
+      if(inputs[i].checked) {
+        t = inputs[i].value.split(',');
+        for (var q = 0; q < t.length; q++) {
+          rSet.add(t[q]);
+        }
+      }
+    }
+    return rSet;
+  }
+</script>

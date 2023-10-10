@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+footer_include: _footer-subcategory.html
+header_link_tag: page.parent_permalink
 
-{% include _head.html %}
-
-<body>
-
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-
-  {% include _banner.html %}
-
-  {% include _header.html %}
+tooltip_programs: "Programs are individual Assistance Listings from SAM.gov."
+tooltip_obligations: "Obligations are agency-provided figures from SAM.gov."
+---
 
   <section class="bg-primary-dark">
     <div class="grid-container">
       <div class="grid-row">
         <div class="grid-col-12">
-          <p class="margin-top-2 margin-bottom-0"><a class="text-white text-italic" href="{{ page.parent_permalink}}">{{ page.parent_title }}</a></p>
+          <p class="margin-top-2 margin-bottom-0"><a class="text-white text-italic" href="{{ page.parent_permalink }}">{{ page.parent_title }}</a></p>
         </div>
         <div class="grid-col-12">
           <h1 class="margin-top-0 margin-bottom-2 text-white">{{ page.title }}</h1>
@@ -56,13 +52,21 @@
         </div>
         <div class="desktop:grid-col-9">
           <div class="grid-row bg-white">
-            <div class="grid-col-6">
+            <div class="tablet:grid-col-6">
               <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
                 <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
-                <p class="margin-top-0">programs</p>
+                <p class="margin-top-0">
+                  programs
+                  <span class="usa-tooltip" data-position="right"
+                        title="{{ layout.tooltip_programs }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
               </section>
             </div>
-            <div class="grid-col-6">
+            <div class="tablet:grid-col-6">
               <section class="padding-2 desktop:border-left-1 desktop:border-base-lightest">
                 <span class="font-body-3xl text-bold">
                   {% if page.total_obs > 1000000000000 %}
@@ -75,7 +79,15 @@
                     ${{ page.total_obs | divided_by: 1000.0 | round: 2 }}k
                   {% endif %}
                 </span>
-                <p class="margin-top-0">in FY{{ page.fiscal_year }} obligations</p>
+                <p class="margin-top-0">
+                  in FY{{ page.fiscal_year }} obligations
+                  <span class="usa-tooltip" data-position="right"
+                        title="{{ layout.tooltip_obligations }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
               </section>
             </div>
           </div>
@@ -148,159 +160,3 @@
       </div>
     </div>
   </main>
-
-  {% include _footer.html %}
-
-  <script src="/assets/js/uswds.min.js"></script>
-  <script src="/assets/js/d3.min.js"></script>
-  <script src="/assets/js/plot.min.js"></script>
-  <script src="/assets/js/gridjs.umd.js"></script>
-  <script>
-
-    const programs = {{ page.programs }}.sort((a, b) => b.total_obs - a.total_obs);
-    const applicantTypes = {{ page.applicant_types }}.sort((a, b) => b.total_num_programs - a.total_num_programs);
-    const agencies = {{ page.agencies }}.sort((a, b) => b.total_obs - a.total_obs);
-
-    programsVisualization = Plot.plot({
-      marginLeft: 200,
-      width: 836,
-      height: 350,
-      x: {
-        label: "Obligations (in millions of USD)",
-        axis: "top",
-        transform: (e) => e/1000000,
-        grid: true
-      },
-      y: {
-        label: "Program Name"
-      },
-      marks: [
-        Plot.barX(programs.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", href: "permalink", sort: {y: "x", reverse: true}}),
-        Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"}),
-      ]
-    })
-    document.querySelector("#programs-visualization").append(programsVisualization)
-
-    agenciesVisualization = Plot.plot({
-      marginLeft: 200,
-      width: 836,
-      height: 350,
-      x: {
-        label: "Obligations (in millions of USD)",
-        axis: "top",
-        transform: (e) => e/1000000,
-        grid: true
-      },
-      y: {
-        label: "Agency"
-      },
-      marks: [
-        Plot.barX(agencies.slice(0,5), {x: "total_obs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
-        Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
-      ]
-    })
-    document.querySelector("#agencies-visualization").append(agenciesVisualization);
-
-    applicantTypesVisualization = Plot.plot({
-      marginLeft: 200,
-      width: 836,
-      height: 350,
-      x: {
-        label: "Number of Programs",
-        axis: "top",
-        grid: true
-      },
-      y: {
-        label: "Applicant Types"
-      },
-      marks: [
-        Plot.barX(applicantTypes.slice(0,5), {x: "total_num_programs", y: "title", fill: "#28a0cb", sort: {y: "x", reverse: true}}),
-        Plot.ruleX([0]),
-        Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"})
-      ]
-    })
-    document.querySelector("#applicant-types-visualization").append(applicantTypesVisualization);
-
-
-    // Generate and render Agencies data table
-    new gridjs.Grid({
-      columns: [
-      {
-        "id": "title",
-        "name": "Agency"
-      },
-      {
-        "id": "total_num_programs",
-        "name": "Number of Programs"
-      },
-      {
-        "id": "total_obs",
-        "name": "Obligations",
-        formatter: (cell) => `${ cell.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }`
-      }],
-      sort: true,
-      pagination: {
-        limit: 5
-      },
-      data: agencies
-    }).render(document.getElementById("agencies-table"));
-
-    // Generate and render Applicant Types data table
-    new gridjs.Grid({
-      columns: [{
-        "id": "title",
-        "name": "Applicant Type"
-      },
-      {
-        "id": "total_num_programs",
-        "name": "Number of Programs"
-      }],
-      sort: true,
-      pagination: {
-        limit: 5
-      },
-      data: applicantTypes
-    }).render(document.getElementById("applicant-types-table"));
-
-
-    // Generate and render Programs data table
-    new gridjs.Grid({
-      columns: [{
-        id: "cfda",
-        name: "Number",
-        hidden: true
-      },
-      {
-        id: "title",
-        name: "Name",
-        formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
-      },
-      {
-        id: "agency",
-        name: "Agency"
-      },
-      {
-        id: "total_obs",
-        name: "Obligations",
-        formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
-      },
-      {
-        id: "permalink",
-        name: "Link",
-        hidden: true
-      }],
-      sort: true,
-      pagination: {
-        limit: 5
-      },
-      search: true,
-      data: programs
-    }).render(document.getElementById("programs-table"));
-
-  </script>
-
-</body>
-
-</html>
