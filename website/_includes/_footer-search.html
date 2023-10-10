@@ -2,24 +2,6 @@
   const programs = {{ page.programs }}.sort((a, b) => a.title - b.title);
   var filteredProgramIds = new Set();
   var tablePrograms = programs;
-  filterPrograms();
-
-  function filterPrograms(showAll = false) {
-    if (showAll) {
-      tablePrograms = programs;
-    } else {
-      tablePrograms = programs.filter((p) => filteredProgramIds.has(p.cfda));
-    }
-    searchGrid.updateConfig({
-      data: tablePrograms
-    }).forceRender();
-    getElementById('big-number-num-of-programs').html(tablePrograms.length);
-    let obs = 0;
-    for(let k of tablePrograms) {
-      obs = obs + tablePrograms[k].obligations;
-    }
-    getElementById('big-number-obligations').html(obs);
-  }
 
   // Generate and render Programs data table
   const searchGrid = new gridjs.Grid({
@@ -72,6 +54,23 @@
       }
       updateFilteredProgramIds();
     });
+  }
+
+  function filterPrograms(showAll = false) {
+    if (showAll) {
+      tablePrograms = programs;
+    } else {
+      tablePrograms = programs.filter((p) => filteredProgramIds.has(p.cfda));
+    }
+    searchGrid.updateConfig({
+      data: tablePrograms
+    }).forceRender();
+    document.getElementById('big-number-num-of-programs').html(tablePrograms.length);
+    let obs = 0;
+    for(let k of tablePrograms) {
+      obs = obs + tablePrograms[k].obligations;
+    }
+    document.getElementById('big-number-obligations').html(obs);
   }
 
   function updateFilteredProgramIds() {
@@ -128,4 +127,6 @@
     }
     return rSet;
   }
+
+  updateFilteredProgramIds();
 </script>
