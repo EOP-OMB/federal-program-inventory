@@ -124,7 +124,14 @@ applicant_type_about_text: |
             <div class="tablet:grid-col-4">
               <section class="padding-2 desktop:border-left-2 desktop:border-base-lightest">
                 <span class="font-body-3xl text-bold">{{ page.total_num_sub_cats }}</span>
-                <p class="margin-top-0">sub-categories</p>
+                <p class="margin-top-0">
+                  sub-categories
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_sub_categories }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
               </section>
             </div>
           </div>
