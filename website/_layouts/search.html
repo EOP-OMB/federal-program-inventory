@@ -14,7 +14,7 @@ footer_include: _footer-search.html
     </div>
   </div>
 </section>
-<main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark overflow-hidden">
+<main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
@@ -31,7 +31,7 @@ footer_include: _footer-search.html
                 Categories
               </button>
             </h4>
-            <div id="categories" class="usa-accordion__content">
+            <div id="categories" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
                   {% for c in page.categories %}
                     <div class="usa-checkbox">
@@ -73,7 +73,7 @@ footer_include: _footer-search.html
                 Agencies
               </button>
             </h4>
-            <div id="agencies" class="usa-accordion__content">
+            <div id="agencies" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
                 {% for a in page.agencies %}
                   <div class="usa-checkbox">
@@ -115,7 +115,7 @@ footer_include: _footer-search.html
                 Eligible applicants
               </button>
             </h4>
-            <div id="applicants" class="usa-accordion__content">
+            <div id="applicants" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
                 {% for a in page.applicant_types %}
                   <div class="usa-checkbox">
@@ -143,7 +143,7 @@ footer_include: _footer-search.html
                 Eligible beneficiaries
               </button>
             </h4>
-            <div id="beneficiaries" class="usa-accordion__content">
+            <div id="beneficiaries" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
                 {% for b in page.beneficiary_types %}
                   <div class="usa-checkbox">
@@ -171,7 +171,7 @@ footer_include: _footer-search.html
                 Assistance types
               </button>
             </h4>
-            <div id="assistancetypes" class="usa-accordion__content">
+            <div id="assistancetypes" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
                 {% for a in page.assistance_types %}
                   <div class="usa-checkbox">
