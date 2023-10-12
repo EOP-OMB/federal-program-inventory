@@ -1,0 +1,155 @@
+---
+layout: default
+footer_include: _footer-category-index.html
+
+categories_about_text: |
+  <p>
+    This visualization shows categories, by obligations. Data for all categories is available
+    in table format via the link below.
+  </p>
+  <p>
+    When creating Assistance Listings for each of their programs, agencies are offered the
+    opportunity to select one or many "functions" and "sub-functions" from a pre-defined list
+    that best align with the program. The categories and sub-categories shown on this website
+    are "functions" and "sub-functions" self-selected by agencies.
+  </p>
+  <p>
+    Programs may be assigned to one or more "functions" and / or "sub-functions". The numbers
+    in this visualization and data set may not sum to the cumulative figure displayed on this
+    page, due to the existence of programs in multiple categories and sub-categories.
+    Additionally, the numbers displayed on this page may not represent funding or number of
+    programs associated exclusively with this category and / or sub-category.
+  </p>
+  <p>
+    In selecting from the list of "functions" and "sub-functions" agencies are not offered
+    guidance on their meaning, nor the number to select. As a result, the number and context
+    of "functions" and "sub-functions" assigned to a program may vary by program. These values
+    are selected by agencies and are published on SAM.gov.
+  </p>
+  <p>
+    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
+    total obligations reported by the agency to SAM.gov for the fiscal year.
+  </p>
+
+---
+
+  <section class="bg-primary-dark">
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-12">
+          <h1 class="margin-top-2 margin-bottom-2 text-white">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
+          <h3 class="text-base-dark">Categories</h3>
+          <nav aria-label="Side navigation">
+            <ul class="usa-sidenav">
+              
+              {% for c in page.categories %}
+
+                  <li class="usa-sidenav__item">
+                    <a href="{{ c.permalink }}">{{ c.title }}</a>
+                  </li>
+
+              {% endfor %}
+
+            </ul>
+          </nav>
+        </div>
+        <div class="desktop:grid-col-9">
+          <div class="grid-row bg-white">
+            <div class="tablet:grid-col-4">
+              <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
+                <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
+                <p class="margin-top-0">
+                  programs
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
+              </section>
+            </div>
+            <div class="tablet:grid-col-4">
+              <section class="padding-2 desktop:border-left-1 desktop:border-right-1 desktop:border-base-lightest">
+                <span class="font-body-3xl text-bold">
+                  {% if page.total_obs > 1000000000000 %}
+                    ${{ page.total_obs | divided_by: 1000000000000.0 | round: 2 }}T
+                  {% elsif page.total_obs > 1000000000 %}
+                    ${{ page.total_obs | divided_by: 1000000000.0 | round: 2 }}B
+                  {% elsif page.total_obs > 1000000 %}
+                    ${{ page.total_obs | divided_by: 1000000.0 | round: 2 }}M
+                  {% elsif page.total_obs > 1000 %}
+                    ${{ page.total_obs | divided_by: 1000.0 | round: 2 }}k
+                  {% endif %}
+                </span>
+                <p class="margin-top-0">
+                  in FY{{ page.fiscal_year }} obligations
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
+              </section>
+            </div>
+            <div class="tablet:grid-col-4">
+              <section class="padding-2 desktop:border-left-2 desktop:border-base-lightest">
+                <span class="font-body-3xl text-bold">{{ page.categories | size }}</span>
+                <p class="margin-top-0">
+                  categories
+                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_sub_categories }}">
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#info"></use>
+                    </svg>
+                  </span>
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col-12">
+              <section class="bg-white margin-top-3 padding-2">
+                <h2 class="margin-top-0">Categories, by FY{{ page.fiscal_year }} obligations</h2>
+                <div id="categories-visualization"></div>
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="categories-about"
+                    >
+                      About this visualization & data
+                    </button>
+                  </h4>
+                  <div id="categories-about" class="usa-accordion__content usa-prose">
+                    {{ layout.categories_about_text }}
+                  </div>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="categories-data"
+                    >
+                      View data for all categories
+                    </button>
+                  </h4>
+                  <div id="categories-data" class="usa-accordion__content usa-prose">
+                    <div id="categories-table"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>

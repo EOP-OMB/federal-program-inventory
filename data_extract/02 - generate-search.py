@@ -302,6 +302,32 @@ for p in programs:
         file.write('---\n') # End Jekyll Front Matter
 
 # build a markdown file for each category & sub-category using Jekyll's required format
+with open('../website/pages/category.md', 'w') as file:
+    file.write('---\n') # Begin Jekyll Front Matter
+    listing = {
+        'title': 'Categories',
+        'layout': 'category-index',
+        'permalink': '/category.html',
+        'total_num_programs': len(programs),
+        'total_obs': sum(programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual') for p in programs),
+        'categories': sorted([
+            {
+                'title': categories[c].get_title(),
+                'permalink': '/category/'+categories[c].get_id(),
+                'total_obs': sum(p.get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual') for p in categories[c].get_programs())
+            } for c in categories if (categories[c].get_parent() is None)
+        ], key=lambda category: category['total_obs'], reverse=True),
+        'categories_json': json.dumps(sorted([
+            {
+                'title': categories[c].get_title(),
+                'total_num_programs': len(categories[c].programs),
+                'total_obs': sum(p.get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual') for p in categories[c].get_programs()),
+                'permalink': '/category/'+categories[c].get_id()
+            } for c in categories if (categories[c].get_parent() is None)
+        ], key=lambda category: category['total_obs'], reverse=True), separators=(',', ':'))
+    }
+    yaml.dump(listing, file)
+    file.write('---\n') # End Jekyll Front Matter
 
 
 # build the markdown file for the search page using Jekyll's required format

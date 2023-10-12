@@ -42,7 +42,7 @@ footer_include: _footer-search.html
                         name="categories"
                         value=""
                       />
-                      <label class="usa-checkbox__label" for="check-category-{{ forloop.index }}">
+                      <label class="usa-checkbox__label font-body-2xs" for="check-category-{{ forloop.index }}">
                         {{ c.title }}
                       </label>
                     </div>
@@ -55,7 +55,7 @@ footer_include: _footer-search.html
                           name="categories"
                           value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                         />
-                        <label class="usa-checkbox__label" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                        <label class="usa-checkbox__label font-body-2xs" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                           {{ sc.title }}
                         </label>
                       </div>
@@ -84,7 +84,7 @@ footer_include: _footer-search.html
                       name="agencies"
                       value=""
                     />
-                    <label class="usa-checkbox__label" for="check-agency-{{ forloop.index }}">
+                    <label class="usa-checkbox__label font-body-2xs" for="check-agency-{{ forloop.index }}">
                       {{ a.title }}
                     </label>
                   </div>
@@ -97,7 +97,7 @@ footer_include: _footer-search.html
                         name="agencies"
                         value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                       />
-                      <label class="usa-checkbox__label" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                      <label class="usa-checkbox__label font-body-2xs" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                         {{ sa.title }}
                       </label>
                     </div>
@@ -126,7 +126,7 @@ footer_include: _footer-search.html
                       name="applicants"
                       value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                     />
-                    <label class="usa-checkbox__label" for="check-applicant-{{ forloop.index }}">
+                    <label class="usa-checkbox__label font-body-2xs" for="check-applicant-{{ forloop.index }}">
                       {{ a.title }}
                     </label>
                   </div>
@@ -154,7 +154,7 @@ footer_include: _footer-search.html
                       name="beneficiaries"
                       value="{% for p in b.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                     />
-                    <label class="usa-checkbox__label" for="check-beneficiary-{{ forloop.index }}">
+                    <label class="usa-checkbox__label font-body-2xs" for="check-beneficiary-{{ forloop.index }}">
                       {{ b.title }}
                     </label>
                   </div>
@@ -182,7 +182,7 @@ footer_include: _footer-search.html
                       name="assistancetypes"
                       value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                     />
-                    <label class="usa-checkbox__label" for="check-assistancetype-{{ forloop.index }}">
+                    <label class="usa-checkbox__label font-body-2xs" for="check-assistancetype-{{ forloop.index }}">
                       {{ a.title }}
                     </label>
                   </div>

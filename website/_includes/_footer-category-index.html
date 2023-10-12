@@ -1,0 +1,53 @@
+<script>
+  const categories = {{ page.categories_json }}.sort((a, b) => b.total_obs - a.total_obs);
+
+  categoriesVisualization = Plot.plot({
+    marginLeft: 200,
+    width: 836,
+    height: 700,
+    x: {
+      label: "Obligations (in millions of USD)",
+      axis: "top",
+      transform: (e) => e/1000000,
+      grid: true
+    },
+    y: {
+      label: "Category Name"
+    },
+    marks: [
+      Plot.barX(categories, {x: "total_obs", y: "title", fill: "#28a0cb", href: "permalink", sort: {y: "x", reverse: true}}),
+      Plot.ruleX([0]),
+      Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"}),
+    ]
+  })
+  document.querySelector("#categories-visualization").append(categoriesVisualization)
+
+  // Generate and render Sub-categories data table
+  new gridjs.Grid({
+    columns: [{
+      id: "title",
+      name: "Name",
+      formatter: (_, row) => gridjs.html(`<a href="${row.cells[3].data}">${row.cells[0].data}</a>`)
+    },
+    {
+      id: "total_num_programs",
+      name: "Number of Programs"
+    },
+    {
+      id: "total_obs",
+      name: "Obligations",
+      formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
+    },
+    {
+      id: "permalink",
+      name: "Link",
+      hidden: true
+    }],
+    sort: true,
+    pagination: {
+      limit: 5
+    },
+    search: true,
+    data: categories
+  }).render(document.getElementById("categories-table"));
+</script>
