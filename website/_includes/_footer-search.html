@@ -13,15 +13,18 @@
     {
       id: "title",
       name: "Name",
+      width: '40%',
       formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
     },
     {
       id: "agency",
-      name: "Agency"
+      name: "Agency",
+      width: '30%'
     },
     {
       id: "obligations",
-      name: "Obligations",
+      name: "Obligations (FY {{page.fiscal_year}})",
+      width: '29%', // GridJS renders 1% too large, creating a scrollbar if this is set to 30%
       formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' }).format(cell) }`
     },
     {
@@ -29,6 +32,11 @@
       name: "Link",
       hidden: true
     }],
+    style: {
+      container: {
+        overflow: 'hidden'
+      }
+    },
     sort: true,
     pagination: {
       limit: 20
