@@ -82,12 +82,15 @@ footer_include: _footer-search.html
                       id="check-agency-{{ forloop.index }}"
                       type="checkbox"
                       name="agencies"
-                      value=""
+                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                     />
                     <label class="usa-checkbox__label font-body-2xs" for="check-agency-{{ forloop.index }}">
                       {{ a.title }}
                     </label>
                   </div>
+
+                  <!--
+
                   {% for sa in a.sub_categories %}
                     <div class="usa-checkbox margin-left-2">
                       <input
@@ -102,6 +105,8 @@ footer_include: _footer-search.html
                       </label>
                     </div>
                   {% endfor %}
+
+                  -->
                 {% endfor %}
               </fieldset>
             </div>

@@ -248,8 +248,10 @@ with open('source_files/assistance-listings.json') as f:
         if agencies.get(str(d['organizationId']), False):
             agency = agencies.get(str(d['organizationId']))
         program.set_agency(agency)
-        program.set_objective(str(d['objective']))
         program.get_agency().add_program(program)
+        if program.get_agency().get_parent() is not None:
+            program.get_agency().get_parent().add_program(program)
+        program.set_objective(str(d['objective']))
         programs[str(l['data']['programNumber'])] = program
         for o in l['data']['financial']['obligations']:
             for row in o.get('values', []):
