@@ -1,8 +1,14 @@
 <script type="module">
   const obligations = {{ page.obligations }};
+  let domainMin = d3.min(obligations, (d) => d.amount);
+  let domainMax = d3.max(obligations, (d) => d.amount);
+  if (domainMax < 10000) {
+    domainMax += 10000
+  }
   const spendingVisualization = Plot.plot({
+    marginLeft: 50,
     x: {axis: null},
-    y: {tickFormat: "s", grid: true},
+    y: {domain: [domainMin, domainMax], label: null, tickFormat: (x) => d3.format("$0.2s")(x).replace("G", "B"), grid: true},
     color: {scheme: "paired", legend: true},
     marks: [
       Plot.barY(obligations, {
@@ -14,5 +20,8 @@
       Plot.ruleY([0])
     ]
   })
+  if (d3.max(obligations, (d) => d.amount) < 1000) {
+
+  }
   document.querySelector("#spending-visualization").append(spendingVisualization);
 </script>
