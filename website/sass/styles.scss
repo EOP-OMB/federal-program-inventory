@@ -24,6 +24,10 @@ th.gridjs-th {
     background: #f0f0f0;
 }
 
+#search-filters label::before {
+    height: 1rem;
+    width: 1rem;
+}
 #search-filters .usa-checkbox {
     position: relative;
 }

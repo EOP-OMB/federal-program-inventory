@@ -12,7 +12,7 @@ DISPLAY_ENUM_ASSISTANCE_TYPES = {
     'DIRECT PAYMENTS FOR A SPECIFIED USE': 'Direct Payments for a Specified Use',
     'DIRECT PAYMENTS WITH UNRESTRICTED USE': 'Direct Payments with Unrestricted Use',
     'DIRECT LOANS': 'Direct Loans',
-    'GUARANTEED/INSURED LOANS': 'Guaranteed/Insured Loans',
+    'GUARANTEED/INSURED LOANS': 'Guaranteed / Insured Loans',
     'INSURANCE': 'Insurance',
     'SALE, EXCHANGE, OR DONATION OF PROPERTY OR GOODS': 'Sale, Exchange, or Donation of Property or Goods',
     'USE OF PROPERTY, FACILITIES, OR EQUIPMENT': 'Use of Property, Facilities, or Equipment',
@@ -24,6 +24,74 @@ DISPLAY_ENUM_ASSISTANCE_TYPES = {
     'FEDERAL EMPLOYMENT': 'Federal Employment',
     'SALARIES AND EXPENSES': 'Salaries and Expenses',
 }
+DISPLAY_ENUM_AGENCIES = {
+    'BARRY GOLDWATER SCHOLARSHIP AND EXCELLENCE IN EDUCATION FUND': 'Barry Goldwater Scholarship and Excellence in Education Fund',
+    'CONSUMER PRODUCT SAFETY COMMISSION': 'Consumer Product Safety Commission',
+    'CORPORATION FOR NATIONAL AND COMMUNITY SERVICE': 'Corporation for National and Community Service',
+    'DELTA REGIONAL AUTHORITY': 'Delta Regional Authority',
+    'DENALI COMMISSION': 'Denali Commission',
+    'RURAL HOUSING SERVICE': 'Rural Housing Service',
+    'RURAL UTILITIES SERVICE': 'Rural Utilities Service',
+    'USDA, Office of Partnerships and Public Engagement': 'Office of Partnerships and Public Engagement',
+    'IMMEDIATE OFFICE OF THE SECRETARY OF AGRICULTURE': 'Immediate Office of the Secretary of Agriculture',
+    'IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE': 'Immediate Office of the Secretary of Defense',
+    'DEPT OF THE NAVY': 'Department of the Navy',
+    'DEFENSE THREAT REDUCTION AGENCY (DTRA)': 'Defense Threat Reduction Agency (DTRA)',
+    'DEPT OF THE AIR FORCE': 'Department of the Air Force',
+    'DEFENSE HEALTH AGENCY (DHA)': 'Defense Health Agency (DHA)',
+    'U.S. ARMY CORPS OF ENGINEERS - CIVIL PROGRAM FINANCING ONLY': 'U.S. Army Corps of Engineers - Civil Program Financing Only',
+    'OFFICE OF LOCAL DEFENSE COMMUNITY COOPERATION': 'Office of Local Defense Community Cooperation',
+    'DEPT OF THE ARMY': 'Department of the Army',
+    'DEFENSE POW/MIA OFFICE': 'Defense POW / MIA Office',
+    'DEFENSE SECURITY COOPERATION AGENCY': 'Defense Security Cooperation Agency',
+    'NATIONAL SECURITY AGENCY/CENTRAL SECURITY SERVICE': 'National Security Agency / Central Security Service',
+    'DEFENSE ADVANCED RESEARCH PROJECTS AGENCY (DARPA)': 'Defense Advanced Research Projects Agency (DARPA)',
+    'DEFENSE INTELLIGENCE AGENCY': 'Defense Intelligence Agency',
+    'WASHINGTON HEADQUARTERS SERVICES (WHS)': 'Washington Headquarters Services (WHS)',
+    'DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA)': 'Department of Defense Education Activity (DODEA)',
+    'EDUCATION, DEPARTMENT OF': 'Department of Education',
+    'ENERGY, DEPARTMENT OF': 'Department of Energy',
+    'ADMINISTRATION FOR CHILDREN AND FAMILIES': 'Administration for Children and Families',
+    'OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION (ASA)': 'Office of the Assistant Secretary for Administration (ASA)',
+    'OFFICE OF ASSISTANT SECRETARY FOR HEALTH': 'Office of Assistant Secretary for Health',
+    'OFFICE OF THE NATIONAL COORDINATOR FOR HEALTH INFORMATION TECHNOLOGY (ONC)': 'Office of the National Coordinator for Health Information Technology (ONC)',
+    'ADMINISTRATION FOR COMMUNITY LIVING (ACL)': 'Administration for Community Living (ACL)',
+    'CENTERS FOR MEDICARE AND MEDICAID SERVICES': 'Centers for Medicare and Medicaid Services',
+    'SCIENCE AND TECHNOLOGY': 'Science and Technology',
+    'ASSISTANT SECRETARY FOR COMMUNITY PLANNING AND DEVELOPMENT': 'Assistant Secretary for Community Planning and Development',
+    'ASSISTANT SECRETARY FOR POLICY DEVELOPMENT AND RESEARCH': 'Assistant Secretary for Policy Development and Research',
+    'ASST SECRETARY FOR HOUSING--FEDERAL HOUSING COMMISSIONER': 'Assistant Secretary for Housing -- Federal Housing Commissioner',
+    'ASSISTANT SECRETARY FOR FAIR HOUSING AND EQUAL OPPORTUNITY': 'Assistant Secretary for Fair Housing and Equal Opportunity',
+    'ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING': 'Assistant Secretary for Public and Indian Housing',
+    'OFFICE OF LEAD HAZARD CONTROL AND HEALTHY HOMES': 'Office of Lead Hazard Control and Healthy Homes',
+    'OFFICE OF JUSTICE PROGRAMS': 'Office of Justice Programs',
+    'OFFICES, BOARDS AND DIVISIONS': 'Offices of Boards and Divisions',
+    'DEPARTMENTAL MANAGEMENT': 'Departmental Management',
+    'BUREAU OF INTERNATIONAL LABOR AFFAIRS': 'Bureau of International Labor Affairs',
+    'Veterans Employment and training Service': 'Veterans Employment and Training Service',
+    'OFFICE OF THE COORDINATOR FOR CYBER ISSUES': 'Office of the Coordinator for Cyber Issues',
+    'BUREAU OF ECONOMIC AND BUSINESS AFFAIRS': 'Bureau of Economic and Business Affairs',
+    'STATE, DEPARTMENT OF': 'Department of State',
+    'BUREAU OF INTERNATIONAL SECURITY AND NONPROLIFERATION': 'Bureau of International Security and Nonproliferation',
+    'FEDERAL MOTOR CARRIER SAFETY ADMINISTRATION': 'Federal Motor Carrier Safety Administration',
+    'UNDER SECRETARY FOR BENEFITS/VETERANS BENEFITS ADMINISTATION': 'Under Secretary for Benefits / Veterans Benefits Administration',
+    'DIRECTORY/NATIONAL CEMETERY ADMINISTRATION': 'Directory / National Cemetary Administration',
+    'DEPARTMENTAL OFFICES': 'Departmental Offices',
+    'EXECUTIVE OFFICE OF THE PRESIDENT': 'Executive Office of the President',
+    'FEDERAL FINANCIAL INSTITUTIONS EXAMINATION COUNCIL APPRAISAL SUBCOMMITTEE': 'Federal Financial Institutions Examination Council Appraisal Subcommittee',
+    'FEDERAL PERMITTING IMPROVEMENT STEERING COUNCIL': 'Federal Permitting Improvement Steering Council',
+    'FEDERAL COMMUNICATIONS COMMISSION': 'Federal Communications Commission',
+    'INTER-AMERICAN FOUNDATION': 'Inter-American Foundation',
+    'JAPAN-U.S. FRIENDSHIP COMMISSION': 'Japan-U.S. Friendship Commission',
+    'LIBRARY OF CONGRESS': 'Library of Congress',
+    'MORRIS K. UDALL SCHOLARSHIP AND EXCELLENCE IN NATIONAL ENVIRONMENTAL POLICY FOUNDATION': 'Morris K. Udall Scholarship and Excellence in National Environmental Policy Foundation',
+    'NATIONAL CREDIT UNION ADMINISTRATION': 'National Credit Union Administration',
+    'NORTHERN BORDER REGIONAL COMMISSION': 'Northern Border Regional Commission',
+    'OFFICE OF THE DIRECTOR OF NATIONAL INTELLIGENCE': 'Office of the Director of National Intelligence',
+    'SOUTHEAST CRESCENT REGIONAL COMMISSION': 'Southeast Crescent Regional Commission',
+    'THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES': 'The Institute of Museum and Library Services',
+    'UNITED STATES INSTITUTE OF PEACE': 'United States Institute of Peace'
+}
 
 """                    """
 """ BEGIN OBJECT SETUP """
@@ -32,10 +100,15 @@ DISPLAY_ENUM_ASSISTANCE_TYPES = {
 class GenericCategory:
     def __init__(self, id: str, title: str, type: str) -> None:
         self.id: str = id
-        self.title: str = title
         self.type: str = type
         self.parent: GenericCategory = None
         self.programs: set[Program] = set()
+        self.set_title(title)
+
+    def set_title(self, title: str) -> None:
+        if self.type == 'assistance_type' and title in DISPLAY_ENUM_ASSISTANCE_TYPES:
+            title = DISPLAY_ENUM_ASSISTANCE_TYPES[title]
+        self.title = title
 
     def add_program(self, p: 'GenericCategory') -> None:
         self.programs.add(p)
@@ -45,7 +118,10 @@ class GenericCategory:
 
     def get_id(self) -> str:
         return self.id
-    
+
+    def get_type(self) -> str:
+        return self.type    
+
     def get_title(self) -> str:
         return self.title
     
@@ -58,10 +134,15 @@ class GenericCategory:
 class Agency(GenericCategory):
     def __init__(self, id: str, title: str) -> None:
         self.id: str = id
-        self.title: str = title
         self.type: str = 'agency'
         self.parent: 'Agency' = None
         self.programs: set[Program] = set()
+        self.set_title(title)
+
+    def set_title(self, title: str) -> None:
+        if title in DISPLAY_ENUM_AGENCIES:
+            title = DISPLAY_ENUM_AGENCIES[title]
+        self.title = title
 
     def set_parent(self, parent: 'Agency') -> None:
         self.parent = parent
@@ -204,7 +285,7 @@ with open('source_files/dictionary.json') as f:
     for i in dictionary_list['_embedded']['jSONObjectList']:
         if i['id'] == 'assistance_type':
             for e in i['elements']:
-                assistance_types[str(e['element_id'])] = GenericCategory(str(e['element_id']), str(DISPLAY_ENUM_ASSISTANCE_TYPES[e['value']]), 'assistance_type')
+                assistance_types[str(e['element_id'])] = GenericCategory(str(e['element_id']), str(e['value']), 'assistance_type')
                 for s in e['elements']:
                     assistance_types[str(s['element_id'])] = GenericCategory(str(s['element_id']), str(s['value']), 'assistance_type')
                     assistance_types[str(s['element_id'])].set_parent(assistance_types[str(e['element_id'])])
@@ -375,12 +456,18 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                 'title': category.get_title(),
                 'programs': [p.get_id() for p in category.get_programs()]
             }
+            if len(o['programs']) == 0: # if there are no programs, don't add the category
+                continue
             if two_tier:
                 all_programs: set = set(p.get_id() for p in category.get_programs())
                 o['sub_categories']: list = []
                 for child_key in categories:
                     child: GenericCategory = categories[child_key]
-                    if child.get_parent() == category:
+                    # only process if the parent is equal to the parent category AND, if the type is an Agency, the child title
+                    # is not equal to the parent title. we should skip children that have the same name as the parent, as these
+                    # are not "sub-agencies," but rather data anomolies
+                    if child.get_parent() == category \
+                        and not (child.get_type() == 'agency' and child.get_title() == child.get_parent().get_title()):
                         o['sub_categories'].append(
                             {
                                 'title': child.get_title(),
@@ -388,11 +475,11 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                             }
                         )
                         all_programs -= set(p.get_id() for p in child.get_programs())
-                if len(all_programs):
+                if len(all_programs) and len(o['sub_categories']) > 0: # only include the "unspecified" sub-category if there are other sub-categories
                     o['sub_categories'].append(
                         {
                             'title': 'Unspecified',
-                            'programs': [p.get_id() for p in child.get_programs()]
+                            'programs': list(all_programs)
                         }
                     )
             r.append(o)

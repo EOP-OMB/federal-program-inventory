@@ -33,34 +33,58 @@ footer_include: _footer-search.html
             </h4>
             <div id="categories" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
+
                   {% for c in page.categories %}
-                    <div class="usa-checkbox">
-                      <input
-                        class="usa-checkbox__input parent"
-                        id="check-category-{{ forloop.index }}"
-                        type="checkbox"
-                        name="categories"
-                        value=""
-                      />
-                      <label class="usa-checkbox__label font-body-2xs" for="check-category-{{ forloop.index }}">
-                        {{ c.title }}
-                      </label>
-                    </div>
-                    {% for sc in c.sub_categories %}
-                      <div class="usa-checkbox margin-left-2">
+
+                    <div class="display-flex">
+                      <a class="padding-05 margin-0 toggle" id="toggle-for-check-category-{{ forloop.index }}" data-children-id="children-for-check-category-{{ forloop.index }}">
+                        <span class="font-body-md {% if c.sub_categories.size == 0 %} text-white {% else %} text-base-light {% endif %} margin-top-05">
+                          <svg class="usa-icon display-block" aria-hidden="true" focusable="false" role="img">
+                            <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                          </svg>
+                        </span>
+                      </a>
+                      <div class="usa-checkbox">
                         <input
-                          class="usa-checkbox__input child-check-category-{{ forloop.parentloop.index }}"
-                          id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                          class="usa-checkbox__input check-category-{{ forloop.index }} parent"
+                          id="check-category-{{ forloop.index }}"
                           type="checkbox"
                           name="categories"
-                          value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                          value="{% for p in c.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                         />
-                        <label class="usa-checkbox__label font-body-2xs" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                          {{ sc.title }}
+                        <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-category-{{ forloop.index }}">
+                          {{ c.title }}
                         </label>
                       </div>
-                    {% endfor %}    
+                    </div>
+
+                    {% if c.sub_categories.size > 0 %}
+
+                      <div id="children-for-check-category-{{ forloop.index }}" class="margin-left-6" style="display:none;">
+
+                        {% for sc in c.sub_categories %}
+
+                          <div class="usa-checkbox">
+                            <input
+                              class="usa-checkbox__input child-check-category-{{ forloop.parentloop.index }}"
+                              id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                              type="checkbox"
+                              name="categories"
+                              value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                            />
+                            <label class="usa-checkbox__label font-body-2xs text-italic" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                              {{ sc.title }}
+                            </label>
+                          </div>
+
+                        {% endfor %}
+
+                      </div>
+
+                    {% endif %}
+                    
                   {% endfor %}
+
               </fieldset>
             </div>
             <h4 class="usa-accordion__heading">
@@ -75,40 +99,64 @@ footer_include: _footer-search.html
             </h4>
             <div id="agencies" class="usa-accordion__content maxh-card-lg">
               <fieldset class="usa-fieldset maxh-card-lg">
+
                 {% for a in page.agencies %}
-                  <div class="usa-checkbox">
-                    <input
-                      class="usa-checkbox__input parent"
-                      id="check-agency-{{ forloop.index }}"
-                      type="checkbox"
-                      name="agencies"
-                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                    />
-                    <label class="usa-checkbox__label font-body-2xs" for="check-agency-{{ forloop.index }}">
-                      {{ a.title }}
-                    </label>
-                  </div>
 
-                  <!--
-
-                  {% for sa in a.sub_categories %}
-                    <div class="usa-checkbox margin-left-2">
+                  <div class="display-flex">
+                    <a class="padding-05 margin-0 toggle" id="toggle-for-check-agency-{{ forloop.index }}" data-children-id="children-for-check-agency-{{ forloop.index }}">
+                      <span class="font-body-md {% if a.sub_categories.size == 0 %} text-white {% else %} text-base-light {% endif %} margin-top-05">
+                        <svg class="usa-icon display-block" aria-hidden="true" focusable="false" role="img">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="usa-checkbox">
                       <input
-                        class="usa-checkbox__input child-check-agency-{{ forloop.parentloop.index }}"
-                        id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                        class="usa-checkbox__input check-agency-{{ forloop.index }} parent"
+                        id="check-agency-{{ forloop.index }}"
                         type="checkbox"
                         name="agencies"
-                        value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
                       />
-                      <label class="usa-checkbox__label font-body-2xs" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                        {{ sa.title }}
+                      <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-agency-{{ forloop.index }}">
+                        {{ a.title }}
                       </label>
                     </div>
-                  {% endfor %}
+                  </div>
 
-                  -->
+                  {% if a.sub_categories.size > 0 %}
+
+                    <div id="children-for-check-agency-{{ forloop.index }}" class="margin-left-6" style="display:none;">
+
+                      {% for sa in a.sub_categories %}
+
+                        <div class="usa-checkbox">
+                          <input
+                            class="usa-checkbox__input child-check-agency-{{ forloop.parentloop.index }}"
+                            id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                            type="checkbox"
+                            name="agencies"
+                            value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                          />
+                          <label class="usa-checkbox__label font-body-2xs text-italic" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                            {{ sa.title }}
+                          </label>
+                        </div>
+
+                      {% endfor %}
+
+                    </div>
+
+                  {% endif %}
+                  
                 {% endfor %}
-              </fieldset>
+
+            </fieldset>
+
+
+
+
+
             </div>
             <h4 class="usa-accordion__heading">
               <button
