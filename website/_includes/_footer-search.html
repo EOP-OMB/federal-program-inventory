@@ -63,10 +63,34 @@
             c[i].checked = false;
           }
         }
+      } else { // if child is unchecked, uncheck the parent
+        if (!input.checked) {
+          let explodedId = input.getAttribute('id').split('-');
+          let parent = document.getElementById(explodedId[0]+'-'+explodedId[1]+'-'+explodedId[2]);
+          parent.checked = false;
+        }
       }
 
       // Update the search table with filtered programs
       updateFilteredProgramIds();
+    });
+  }
+
+  var filterToggles = document.getElementById('search-filters').getElementsByClassName('toggle');
+  for (let i = 0; i < filterToggles.length; ++i) {
+
+    // Add a listener to filter toggles
+    filterToggles[i].addEventListener('click', (event) => {
+      let toggleButton = event.currentTarget;
+      let toggleButtonUseContainer = toggleButton.getElementsByTagName('use')[0];
+      let childrenContainer = document.getElementById(toggleButton.getAttribute('data-children-id'));
+      if (childrenContainer.style.display === "none") {
+        childrenContainer.style.display = "block";
+        toggleButtonUseContainer.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/assets/img/sprite.svg#expand_more');
+      } else {
+        childrenContainer.style.display = "none";
+        toggleButtonUseContainer.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/assets/img/sprite.svg#navigate_next');
+      }
     });
   }
 
