@@ -4,8 +4,9 @@
   var tablePrograms = programs;
 
   // Generate and render Programs data table
+  let obligationsTooltipHtml = '<span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/assets/img/sprite.svg#info"></use></svg></span>';
   var searchGrid = new gridjs.Grid({
-    columns: [{
+        columns: [{
       id: "cfda",
       name: "Number",
       hidden: true
@@ -14,7 +15,7 @@
       id: "title",
       name: "Name",
       width: '40%',
-      formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
+      formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}" target="_blank">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
     },
     {
       id: "agency",
@@ -23,7 +24,7 @@
     },
     {
       id: "obligations",
-      name: "Obligations (FY {{page.fiscal_year}})",
+      name: gridjs.html("Obligations (FY {{page.fiscal_year}}) " + obligationsTooltipHtml),
       width: '29%', // GridJS renders 1% too large, creating a scrollbar if this is set to 30%
       formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' }).format(cell) }`
     },
@@ -38,6 +39,7 @@
       }
     },
     sort: true,
+    search: true,
     pagination: {
       limit: 20
     },

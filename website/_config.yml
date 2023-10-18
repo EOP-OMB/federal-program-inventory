@@ -36,7 +36,11 @@ defaults:
     values: # default text values used throughout the site.
       tooltip_programs: "Programs are individual Assistance Listings, as submitted by agencies to SAM.gov."
       tooltip_obligations: "Actual obligations, as submitted by agencies to SAM.gov."
-      tooltip_sub_categories: "Categories and sub-categories are the agency-selected functions and sub-functions from SAM.gov."
+      tooltip_sub_categories: "Program functions (categories) and sub-functions (sub-categories), as submitted by agencies to SAM.gov."
+      tooltip_agencies: "Administering agency and sub-agency, as submitted by agencies to SAM.gov."
+      tooltip_eligible_applicants: "Entities that are eligible to apply for the program, as submitted by agencies to SAM.gov."
+      tooltip_eligible_beneficiaries: "Entities that are eligible to receive benefits from the program, as submitted by agencies to SAM.gov."
+      tooltip_assistance_types: "Type of financial assistance, as submitted by agencies to SAM.gov."
   -
     scope:
       path: ""

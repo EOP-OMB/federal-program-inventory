@@ -179,6 +179,8 @@ class Program:
         self.categories: set[GenericCategory] = set()
         self.spending: dict[str, GenericCategory] = {}
         self.objective: str = ''
+        self.sam_url: str = ''
+        self.popular_name: str = ''
         self.fiscal_years: list[str] = fiscal_years
         self.contruct_spending_objects()
 
@@ -191,6 +193,15 @@ class Program:
 
     def set_objective(self, objective: str) -> None:
         self.objective = objective
+    
+    def set_sam_url(self, hash_id: str) -> None:
+        self.sam_url = 'https://sam.gov/fal/' + hash_id + '/view'
+
+    def set_popular_name(self, name: str) -> None:
+        self.popular_name = name
+
+    def get_popular_name(self) -> str:
+        return self.popular_name
 
     def add_category(self, type: str, category: GenericCategory) -> None:
         getattr(self, type).add(category)
@@ -214,6 +225,9 @@ class Program:
     
     def get_objective(self) -> str:
         return self.objective
+    
+    def get_sam_url(self) -> str:
+        return self.sam_url
     
     def get_category_printable_list(self, type: str, include_top_level: bool = False, include_second_level: bool = False) -> list[str]:
         r = []
@@ -332,7 +346,10 @@ with open('source_files/assistance-listings.json') as f:
         program.get_agency().add_program(program)
         if program.get_agency().get_parent() is not None:
             program.get_agency().get_parent().add_program(program)
+        if len(d.get('alternativeNames', [])) > 0 and len(d['alternativeNames'][0]) > 0: # if the program has an alternative "popular name"
+            program.set_popular_name(d['alternativeNames'][0])
         program.set_objective(str(d['objective']))
+        program.set_sam_url(l['id'])
         programs[str(l['data']['programNumber'])] = program
         for o in l['data']['financial']['obligations']:
             for row in o.get('values', []):
@@ -403,6 +420,8 @@ for p in programs:
 
             'cfda': program.get_id(),
             'objective': program.get_objective(),
+            'sam_url': program.get_sam_url(),
+            'popular_name': program.get_popular_name(),
             'assistance_types': program.get_category_printable_list('assistance_types', True),
             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
             'applicant_types': program.get_category_printable_list('applicant_types', True),
@@ -488,7 +507,7 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
 with open('../website/pages/search.md', 'w') as file:
     file.write('---\n') # Begin Jekyll Front Matter
     page = {
-        'title': 'Search',
+        'title': 'Program search',
         'layout': 'search',
         'permalink': '/search.html',
         'fiscal_year': PRIMARY_FISCAL_YEAR,

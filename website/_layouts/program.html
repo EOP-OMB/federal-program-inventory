@@ -1,6 +1,16 @@
 ---
 layout: default
 footer_include: _footer-program.html
+
+obligations_about_text: |
+  <p>
+    The above chart shows obligations for the program, as reported by
+    the agency on SAM.gov and USASpending.gov.
+  </p>
+  <p>
+    As of the publication of this pilot, FY 2023 actual obligations
+    have not yet been submitted by agencies to SAM.gov.
+  </p>
 ---
 
   <section class="bg-primary-dark">
@@ -20,6 +30,16 @@ footer_include: _footer-program.html
       <div class="grid-row grid-gap">
         <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
           <h3 class="text-base-dark">Program information</h3>
+
+          {% if page.popular_name.size > 0 %}
+
+            <div>
+              <h4 class="margin-bottom-0 text-base-dark">Popular name</h4>
+              <p class="margin-top-0">{{ page.popular_name }}</p>
+            </div>
+
+          {% endif %}
+
           <div>
             <h4 class="margin-bottom-0 text-base-dark">Assistance listing number</h4>
             <p class="margin-top-0">{{ page.cfda }}</p>
@@ -86,6 +106,12 @@ footer_include: _footer-program.html
 
             </ul>
           </div>
+          <div>
+            <h4 class="margin-bottom-0 text-base-dark">External links</h4>
+            <ul class="margin-top-0">
+              <li><a href="{{ page.sam_url }}" target="_blank">View this program on SAM.gov</a></li>
+            </ul>
+          </div>
         </div>
         <div class="desktop:grid-col-9">
 
@@ -114,10 +140,7 @@ footer_include: _footer-program.html
                     </button>
                   </h4>
                   <div id="obligations-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      The above chart shows obligations for the program, as reported by
-                      the agency on SAM.gov and USASpending.gov.
-                    </p>
+                    {{ page.obligations_about_text }}
                   </div>
                 </div>
               </section>
