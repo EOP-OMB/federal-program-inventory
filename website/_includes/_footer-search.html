@@ -103,10 +103,6 @@
       tablePrograms = programs.filter((p) => filteredProgramIds.has(p.cfda));
     }
     searchGrid.updateConfig({
-      data: tablePrograms,
-      pagination: false // included to prevent JS error upon reload--known bug in GridJS
-    }).forceRender();
-    searchGrid.updateConfig({
       data: tablePrograms
     }).forceRender();
     document.getElementById('big-number-num-of-programs').innerHTML = tablePrograms.length.toLocaleString('en-US', { maximumFractionDigits: 0});
