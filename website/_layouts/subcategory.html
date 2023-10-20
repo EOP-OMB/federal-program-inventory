@@ -1,39 +1,6 @@
 ---
 layout: default
 footer_include: _footer-subcategory.html
-header_link_tag: page.parent_permalink
-
-programs_about_text: |
-  <p>
-    This chart shows the top programs, by obligations, within this
-    sub-category. Data for all programs is available in table format via the link below.
-  </p>
-  <p>
-    Programs are individual Assistance Listings, as submitted by agencies to SAM.gov.
-  </p>
-  <p>
-    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
-    total obligations reported by the agency to SAM.gov for the fiscal year.
-  </p>
-
-agencies_about_text: |
-  <p>
-    This chart shows the top agencies, by obligations, within this
-    sub-category. Data for all agencies is available in table format via the link below.
-  </p>
-  <p>
-    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
-    total obligations reported by the agency to SAM.gov for the fiscal year.
-  </p>
-
-applicant_type_about_text: |
-  <p>
-    This chart shows the top applicant types, by number of programs, within this
-    sub-category. Data for all applicant types is available in table format via the link below.
-  </p>
-  <p>
-    Programs are individual Assistance Listings, as submitted by agencies to SAM.gov.
-  </p>
 ---
 
   <section class="bg-primary-dark">
@@ -108,7 +75,7 @@ applicant_type_about_text: |
                   {% endif %}
                 </span>
                 <p class="margin-top-0">
-                  in FY{{ page.fiscal_year }} obligations
+                  in FY {{ page.fiscal_year }} obligations
                   <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
                     <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
                       <use xlink:href="/assets/img/sprite.svg#info"></use>
@@ -121,9 +88,9 @@ applicant_type_about_text: |
           <div class="grid-row">
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top programs, by FY{{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top programs, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="programs-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -131,11 +98,20 @@ applicant_type_about_text: |
                       aria-expanded="false"
                       aria-controls="programs-about"
                     >
-                      About this chart & data
+                      About the data
                     </button>
                   </h4>
                   <div id="programs-about" class="usa-accordion__content usa-prose">
-                    {{ layout.programs_about_text }}
+                    <p>
+                      This chart shows obligations for the top programs, within this sub-category. Data for all programs is
+                      available in table format below. All data for this chart and table were provided by the administering
+                      agency and sourced from SAM.gov.
+                    </p>
+                    <p>
+                      Obligations displayed represent actual obligations for FY 2022, as reported by the agency to SAM.gov
+                      after the fiscal year concludes. Programs are individual assistance listings, as submitted by agencies
+                      to SAM.gov.
+                    </p>
                   </div>
                   <h4 class="usa-accordion__heading">
                     <button
@@ -155,9 +131,9 @@ applicant_type_about_text: |
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top agencies, by FY{{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top agencies, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="agencies-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered">
+                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -165,11 +141,20 @@ applicant_type_about_text: |
                       aria-expanded="false"
                       aria-controls="agencies-about"
                     >
-                      About this chart & data
+                      About the data
                     </button>
                   </h4>
                   <div id="agencies-about" class="usa-accordion__content usa-prose">
-                    {{ layout.agencies_about_text }}
+                    <p>
+                      This chart shows total program obligations by agency for the top agencies in this category or
+                      sub-category. Data for all agencies is available in table format below. All data for this chart and table
+                      were provided by the administering agency and sourced from SAM.gov.
+                    </p>
+                    <p>
+                      Obligations displayed represent actual program obligations for FY {{ page.fiscal_year }}, as reported by
+                      the agency to SAM.gov after the fiscal year concludes. Programs are individual assistance listings, as
+                      submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                   <h4 class="usa-accordion__heading">
                     <button
@@ -199,11 +184,25 @@ applicant_type_about_text: |
                       aria-expanded="false"
                       aria-controls="applicant-types-about"
                     >
-                      About this chart & data
+                      About the data
                     </button>
                   </h4>
                   <div id="applicant-types-about" class="usa-accordion__content usa-prose">
-                    {{ layout.applicant_type_about_text }}
+                    <p>
+                      This chart shows total program obligations by eligible applicant type for the top eligible applicant
+                      types in this category or sub-category. Data for all eligible applicant types is available in table
+                      format below. All data for this chart and table were provided by the administering agency and sourced
+                      from SAM.gov.
+                    </p>
+                    <p>
+                      Eligible applicant types are entities identified by agencies when creating the assistance listing that
+                      are eligible to apply for each program. The main purpose of this is to inform potential applicants of the
+                      programs for which they can apply. Information on entities that received program awards can be found on
+                      USASpending.gov.
+                    </p>
+                    <p>
+                      Programs are individual assistance listings, as submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                   <h4 class="usa-accordion__heading">
                     <button

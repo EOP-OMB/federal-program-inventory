@@ -1,16 +1,6 @@
 ---
 layout: default
 footer_include: _footer-program.html
-
-obligations_about_text: |
-  <p>
-    The above chart shows obligations for the program, as reported by
-    the agency on SAM.gov and USASpending.gov.
-  </p>
-  <p>
-    As of the publication of this pilot, FY 2023 actual obligations
-    have not yet been submitted by agencies to SAM.gov.
-  </p>
 ---
 
   <section class="bg-primary-dark">
@@ -136,11 +126,31 @@ obligations_about_text: |
                       aria-expanded="false"
                       aria-controls="obligations-about"
                     >
-                      About this chart & data
+                      About the data
                     </button>
                   </h4>
                   <div id="obligations-about" class="usa-accordion__content usa-prose">
-                    {{ layout.obligations_about_text }}
+                    <p>
+                      This chart shows obligations for the program by fiscal year. All data for this chart was provided by the
+                      administering agency and sourced from SAM.gov or USASpending.gov.
+                    </p>
+                    <p>
+                      “SAM.gov actual” displays actual obligations for the fiscal year, as reported by the agency to SAM.gov
+                      after the fiscal year concludes.
+                    </p>
+                    <p>
+                      “SAM.gov estimate” displays estimated obligations for the fiscal year, as reported by the agency to
+                      SAM.gov before the fiscal year concludes. 
+                    </p>
+                    <p>
+                      “USAspending.gov obligations” displays the total obligations submitted by the agency to USAspending,
+                      linked to the assistance listing through its assistance listing number. USAspending.gov is the official
+                      source of federal spending information, displaying actual obligations made by agencies as they are
+                      committed.
+                    </p>
+                    <p>
+                      For more information on each of these data sources, please see the “About the data” page.
+                    </p>
                   </div>
                 </div>
               </section>

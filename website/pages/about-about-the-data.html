@@ -9,19 +9,16 @@ permalink: /about/about-the-data
     <h2 class="margin-top-0">Overview</h2>
     <div class="usa-prose">
       <p>
-        Pilot A leverages publicly accessible assistance listings (AL) data from SAM.gov and financial data
-        from USAspending.gov, linked to assistance listings through AL number. The functions and subfunctions
-        used to categorize the programs can be found in the Annual Publication of Assistance Listings
-        Functional Index. Agencies submit data for their programs directly to these sources.
-      </p>
-      <p>
-        This website, including all underlying data, is open source and accessible at: [GITHUB LINK].
+        This website leverages publicly accessible assistance listings (AL) data from SAM.gov and financial
+        data from USAspending.gov, linked to assistance listings through the AL number. The functions and
+        subfunctions used to categorize the programs can be found in the Annual Publication of Assistance
+        Listings Functional Index. Agencies submit data for their programs directly to these sources.
       </p>
     </div>
     <h2>Data updates</h2>
     <div class="usa-prose">
       <p>
-        This website and the underlying data are not continuously updated.The data used to build this website
+        This website and the underlying data are not continuously updated. Data used to build this website
         was last pulled on the following dates:
       </p>
       <ul>
@@ -29,17 +26,194 @@ permalink: /about/about-the-data
           <strong>SAM.gov assistance listings:</strong> October 10, 2023
         </li>
         <li>
-          <strong>SAM.gov assistance listing categories & sub-categories:</strong> December 2022
+          <strong>SAM.gov assistance listing categories & sub-categories:</strong> Annual Publication of
+          Assistance Listings
         </li>
         <li>
           <strong>USASpending.gov transaction data:</strong> August 8, 2023
         </li>
       </ul>
     </div>
-    <h2>Data dictionary & glossary of terms</h2>
+    <h2>Explanation of terms and concepts</h2>
+    <h3>Assistance Listing</h3>
     <div class="usa-prose">
       <p>
-        ...
+        Assistance listings are detailed public descriptions of federal programs that provide Federal
+        financial assistance such as grants, loans, scholarships, insurance, and other types of assistance
+        awards. Every assistance award must be aligned to an assistance listing, and every assistance listing
+        must be authorized by congressional statute. 2 CFR 200.203 identifies the Federal Assistance Listings
+        (ALs) as "the single, authoritative, governmentwide comprehensive source of Federal financial
+        assistance program information produced by the executive branch of the Federal Government."
+      </p>
+      <p>
+        Assistance Listings are created and maintained by the administering agency on SAM.gov and must be
+        updated annually.  
+      </p>
+    </div>
+    <h3>Assistance type</h3>
+    <div class="usa-prose">
+      <p>
+        Agencies identify the form in which the federal government provides assistance to the award
+        recipient, including contracts, grants, loans, insurance, and direct payment. An assistance listing
+        may provide different types of assistance.
+      </p>
+      <p>
+        Data source: SAM.gov
+      </p>
+    </div>
+    <h3>Category (sub-category)</h3>
+    <div class="usa-prose">
+      <p>
+        For the purposes of this pilot, categories and sub-categories are the functions and sub-functions
+        that can be found in the Functional Index in the Annual Publication of Assistance Listings on SAM.gov
+        (catalogue editions available for download here). When creating Assistance Listings for each of their
+        programs, agencies are offered the opportunity to select one or many functions and sub-functions that
+        best align with the program from a pre-defined list.
+      </p>
+      <p>
+        In selecting from the list of "functions" and "sub-functions" agencies are not offered guidance on
+        their meaning. As a result, the number and context of "functions" and "sub-functions" assigned to a
+        program may vary by program. 
+      </p>
+      <p>
+        Data source: SAM.gov (note that the function and sub-function(s) are not displayed on the assistance
+        listing. They can be found only in the Annual Publication of Assistance Listings.)
+      </p>
+    </div>
+    <h3>Eligible applicant type</h3>
+    <div class="usa-prose">
+      <p>
+        Agencies identify entities that are eligible to apply for each program when creating the assistance
+        listing. The main purpose of this is to inform potential applicants of the programs for which they
+        can apply. Information on award recipients can be found at USAspending.gov.
+      </p>
+      <p>
+        Additional specifics about eligible applicants for each program can be found on the program's
+        assistance listing on SAM.gov
+      </p>
+      <p>
+        Data source: SAM.gov
+      </p>
+    </div>
+    <h3>Eligible beneficiary</h3>
+    <div class="usa-prose">
+      <p>
+        Agencies specify who may receive the ultimate benefits from the program. Programs that provide
+        direct assistance from a Federal agency will generally have the same applicant and beneficiary. In
+        cases where assistance is provided through State and local governments, the applicants and
+        beneficiaries may be different since the assistance is transmitted to private sector beneficiaries
+        who do not have to request or apply for the benefits.
+      </p>
+      <p>
+        Additional specifics about eligible beneficiaries for each program can be found on the program's
+        assistance listing on SAM.gov. 
+      </p>
+      <p>
+        Data source: SAM.gov
+      </p>
+    </div>
+    <h3>Function (sub-function)</h3>
+    <div class="usa-prose">
+      <p>
+        Functions and sub-functions can be found in the Functional Index in the Annual Publication of
+        Assistance Listings on SAM.gov.
+      </p>
+      <p>
+        When creating Assistance Listings for each of their programs, agencies are offered the opportunity to
+        select one or many functions and sub-functions that best align with the program from a pre-defined
+        list.
+      </p>
+      <p>
+        In selecting from the list of "functions" and "sub-functions" agencies are not offered guidance on
+        their meaning. As a result, the number and context of "functions" and "sub-functions" assigned to a
+        program may vary by program. 
+      </p>
+      <p>
+        Data source: SAM.gov (note that the function and sub-function(s) are not displayed on the assistance
+        listing. They can be found only in the Annual Publication of Assistance Listings.)
+      </p>
+    </div>
+    <h3>Obligation</h3>
+    <div class="usa-prose">
+      <p>
+        When awarding funding, the U.S. government enters a binding agreement called an obligation. The
+        government promises to spend the money, either immediately or in the future. An agency incurs an
+        obligation, for example, when it places an order, signs a contract, awards a grant, purchases a
+        service, or takes other actions that require it to make a payment. Additional detail is provided in
+        OMB Circular A-11. 
+      </p>
+      <p>
+        Obligation information sourced from SAM.gov is provided by the administering agency for each
+        assistance listing via the table below.
+      </p>
+      <p>
+        <table>
+          <tbody class="text-base-dark">
+            <tr>
+              <th></th>
+              <th></th>
+              <th colspan="4">
+                <span class="text-bold">Obligation Value</span><br />
+                Enter whole dollar amount.
+              </th>
+            </tr>
+            <tr>
+              <th><span class="text-bold">Assistance Type / Salaries and Expenses</span></th>
+              <th><span class="text-bold">This is a Recovery and Reinvestment Act Obligation</span></th>
+              <th></th>
+              <th><span class="text-bold">Past Fiscal Year (20YY) Actual</span></th>
+              <th><span class="text-bold">Current Fiscal Year (20YY) Estimate</span></th>
+              <th><span class="text-bold">Budget Fiscal Year (20YY) Estimate</span></th>
+            </tr>
+            <tr>
+              <td rowspan="2"></td>
+              <td rowspan="2">Y or N</td>
+              <td></td>
+              <td>$</td>
+              <td>$</td>
+              <td>$</td>
+            </tr>
+            <tr>
+              <td><span class="text-bold">If obligation value cannot be entered, choose a reason</span></td>
+              <td>
+                <ol>
+                  <li>Not separately identifiable</li>
+                  <li>Not available (must be updated by the end of the year)</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>Not separately identifiable</li>
+                  <li>Not available (must be updated by the end of the year)</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>Not separately identifiable</li>
+                  <li>Not available (must be updated by the end of the year)</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </p>
+      <p>
+        Each year, agencies report actual obligations for the past fiscal year and estimated obligations for
+        the current and budget fiscal years. 
+      </p>
+      <p>
+        Obligation information sourced from USAspending.gov is provided by agencies in accordance with the
+        2014 DATA Act, which requires reporting on a quarterly and/or monthly basis. For the purposes of this
+        pilot, program obligations from USAspending.gov are calculated by taking the total of obligations
+        aligned to the assistance listing at the transaction level for the fiscal year. 
+      </p>
+    </div>
+    <h3>Program</h3>
+    <div class="usa-prose">
+      <p>
+        For the purposes of this pilot, a program is an individual assistance listing, as submitted by
+        agencies to SAM.gov.
       </p>
     </div>
   </section>

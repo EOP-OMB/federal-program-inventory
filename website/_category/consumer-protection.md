@@ -1,43 +1,44 @@
 ---
-agencies: '[{"title": "Department of Transportation", "total_num_programs": 6, "total_obs":
-  915050095}, {"title": "Department of Justice", "total_num_programs": 3, "total_obs":
-  41174834}, {"title": "Environmental Protection Agency", "total_num_programs": 1,
-  "total_obs": 8295000}, {"title": "Federal Communications Commission", "total_num_programs":
-  3, "total_obs": 5273500000}, {"title": "Department of Commerce", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Department of the Interior", "total_num_programs":
-  1, "total_obs": 1250000}, {"title": "Department of Housing and Urban Development",
-  "total_num_programs": 2, "total_obs": 4227408}, {"title": "Department of Agriculture",
-  "total_num_programs": 8, "total_obs": 444443669}, {"title": "Denali Commission",
-  "total_num_programs": 1, "total_obs": 0}, {"title": "Department of Energy", "total_num_programs":
-  1, "total_obs": 5126806}, {"title": "FEDERAL FINANCIAL INSTITUTIONS EXAMINATION
-  COUNCIL APPRAISAL SUBCOMMITTEE", "total_num_programs": 3, "total_obs": 0}, {"title":
-  "CONSUMER PRODUCT SAFETY COMMISSION", "total_num_programs": 1, "total_obs": 2000000},
-  {"title": "Department of Homeland Security", "total_num_programs": 1, "total_obs":
-  549996}]'
-applicant_types: '[{"title": "Local (includes State-designated lndian Tribes, excludes
-  institutions of higher education and hospitals", "total_num_programs": 10}, {"title":
-  "Other public institution/organization", "total_num_programs": 4}, {"title": "Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)", "total_num_programs": 8}, {"title": "Profit organization", "total_num_programs":
-  6}, {"title": "State (includes District of Columbia, public institutions of higher
-  education and hospitals)", "total_num_programs": 11}, {"title": "Federally Recognized
-  lndian Tribal Governments", "total_num_programs": 6}, {"title": "Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
-  associations)", "total_num_programs": 4}, {"title": "Quasi-public nonprofit institution/organization",
-  "total_num_programs": 3}, {"title": "Specialized group (e.g. health professionals,
-  students, veterans)", "total_num_programs": 2}, {"title": "Sponsored organization",
-  "total_num_programs": 1}, {"title": "State", "total_num_programs": 9}, {"title":
-  "U.S. Territories and possessions (includes institutions of higher education and
-  hospitals)", "total_num_programs": 4}, {"title": "Other private institutions/organizations",
-  "total_num_programs": 4}, {"title": "Public nonprofit institution/organization (includes
-  institutions of higher education and hospitals)", "total_num_programs": 6}, {"title":
-  "Federal", "total_num_programs": 3}, {"title": "Individual/Family", "total_num_programs":
-  3}, {"title": "Non-Government - General", "total_num_programs": 3}, {"title": "Small
-  business (less than 500 employees)", "total_num_programs": 1}, {"title": "Anyone/general
-  public", "total_num_programs": 3}, {"title": "Minority group", "total_num_programs":
-  1}, {"title": "Government - General", "total_num_programs": 1}, {"title": "Interstate",
-  "total_num_programs": 1}, {"title": "Intrastate", "total_num_programs": 1}, {"title":
-  "U.S. Territories and possessions", "total_num_programs": 2}]'
+agencies: '[{"title": "FEDERAL FINANCIAL INSTITUTIONS EXAMINATION COUNCIL APPRAISAL
+  SUBCOMMITTEE", "total_num_programs": 3, "total_obs": 0}, {"title": "Department of
+  Agriculture", "total_num_programs": 8, "total_obs": 444443669}, {"title": "CONSUMER
+  PRODUCT SAFETY COMMISSION", "total_num_programs": 1, "total_obs": 2000000}, {"title":
+  "Federal Communications Commission", "total_num_programs": 3, "total_obs": 5273500000},
+  {"title": "Department of Transportation", "total_num_programs": 6, "total_obs":
+  915050095}, {"title": "Environmental Protection Agency", "total_num_programs": 1,
+  "total_obs": 8295000}, {"title": "Department of Commerce", "total_num_programs":
+  1, "total_obs": 0}, {"title": "Department of Homeland Security", "total_num_programs":
+  1, "total_obs": 549996}, {"title": "Department of Energy", "total_num_programs":
+  1, "total_obs": 5126806}, {"title": "Department of the Interior", "total_num_programs":
+  1, "total_obs": 1250000}, {"title": "Department of Justice", "total_num_programs":
+  3, "total_obs": 41174834}, {"title": "Denali Commission", "total_num_programs":
+  1, "total_obs": 0}, {"title": "Department of Housing and Urban Development", "total_num_programs":
+  2, "total_obs": 4227408}]'
+applicant_types: '[{"title": "State", "total_num_programs": 9}, {"title": "U.S. Territories
+  and possessions", "total_num_programs": 2}, {"title": "State (includes District
+  of Columbia, public institutions of higher education and hospitals)", "total_num_programs":
+  11}, {"title": "Federal", "total_num_programs": 3}, {"title": "Government - General",
+  "total_num_programs": 1}, {"title": "Interstate", "total_num_programs": 1}, {"title":
+  "Intrastate", "total_num_programs": 1}, {"title": "Local (includes State-designated
+  lndian Tribes, excludes institutions of higher education and hospitals", "total_num_programs":
+  10}, {"title": "U.S. Territories and possessions (includes institutions of higher
+  education and hospitals)", "total_num_programs": 4}, {"title": "Non-Government -
+  General", "total_num_programs": 3}, {"title": "Federally Recognized lndian Tribal
+  Governments", "total_num_programs": 6}, {"title": "Native American Organizations
+  (includes lndian groups, cooperatives, corporations, partnerships, associations)",
+  "total_num_programs": 4}, {"title": "Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)", "total_num_programs":
+  8}, {"title": "Public nonprofit institution/organization (includes institutions
+  of higher education and hospitals)", "total_num_programs": 6}, {"title": "Individual/Family",
+  "total_num_programs": 3}, {"title": "Other private institutions/organizations",
+  "total_num_programs": 4}, {"title": "Profit organization", "total_num_programs":
+  6}, {"title": "Anyone/general public", "total_num_programs": 3}, {"title": "Specialized
+  group (e.g. health professionals, students, veterans)", "total_num_programs": 2},
+  {"title": "Quasi-public nonprofit institution/organization", "total_num_programs":
+  3}, {"title": "Sponsored organization", "total_num_programs": 1}, {"title": "Minority
+  group", "total_num_programs": 1}, {"title": "Other public institution/organization",
+  "total_num_programs": 4}, {"title": "Small business (less than 500 employees)",
+  "total_num_programs": 1}]'
 fiscal_year: '2022'
 permalink: /category/consumer-protection
 sub_cats: '[{"title": "Complaint Investigation", "permalink": "/category/consumer-protection/complaint-investigation",

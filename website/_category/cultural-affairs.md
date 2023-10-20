@@ -1,38 +1,38 @@
 ---
-agencies: '[{"title": "Department of the Interior", "total_num_programs": 7, "total_obs":
-  6042540}, {"title": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES", "total_num_programs":
-  7, "total_obs": 240987000}, {"title": "Library of Congress", "total_num_programs":
-  3, "total_obs": 0}, {"title": "Department of State", "total_num_programs": 11, "total_obs":
-  209853987}, {"title": "National Endowment for the Humanities", "total_num_programs":
-  9, "total_obs": 134777355}, {"title": "JAPAN-U.S. FRIENDSHIP COMMISSION", "total_num_programs":
-  1, "total_obs": 0}, {"title": "National Endowment for the Arts", "total_num_programs":
-  3, "total_obs": 225844388}, {"title": "Denali Commission", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Inter-American Foundation", "total_num_programs":
+agencies: '[{"title": "Department of State", "total_num_programs": 11, "total_obs":
+  209853987}, {"title": "Library of Congress", "total_num_programs": 3, "total_obs":
+  0}, {"title": "Department of the Interior", "total_num_programs": 7, "total_obs":
+  6042540}, {"title": "National Endowment for the Humanities", "total_num_programs":
+  9, "total_obs": 134777355}, {"title": "National Endowment for the Arts", "total_num_programs":
+  3, "total_obs": 225844388}, {"title": "Inter-American Foundation", "total_num_programs":
   1, "total_obs": 0}, {"title": "Department of Education", "total_num_programs": 1,
-  "total_obs": 36500000}]'
-applicant_types: '[{"title": "Native American Organizations (includes lndian groups,
-  cooperatives, corporations, partnerships, associations)", "total_num_programs":
-  6}, {"title": "Anyone/general public", "total_num_programs": 3}, {"title": "Federally
-  Recognized lndian Tribal Governments", "total_num_programs": 9}, {"title": "Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals", "total_num_programs": 9}, {"title": "Other private institutions/organizations",
-  "total_num_programs": 9}, {"title": "Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)", "total_num_programs":
-  31}, {"title": "Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)", "total_num_programs": 32}, {"title": "State",
-  "total_num_programs": 6}, {"title": "State (includes District of Columbia, public
-  institutions of higher education and hospitals)", "total_num_programs": 11}, {"title":
-  "U.S. Territories and possessions", "total_num_programs": 3}, {"title": "U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)", "total_num_programs":
-  6}, {"title": "Non-Government - General", "total_num_programs": 7}, {"title": "Other
-  public institution/organization", "total_num_programs": 11}, {"title": "Quasi-public
-  nonprofit institution/organization", "total_num_programs": 6}, {"title": "Interstate",
-  "total_num_programs": 1}, {"title": "Specialized group (e.g. health professionals,
-  students, veterans)", "total_num_programs": 5}, {"title": "Individual/Family", "total_num_programs":
-  6}, {"title": "Minority group", "total_num_programs": 2}, {"title": "Sponsored organization",
-  "total_num_programs": 2}, {"title": "Profit organization", "total_num_programs":
-  2}, {"title": "Federal", "total_num_programs": 1}, {"title": "Small business (less
-  than 500 employees)", "total_num_programs": 1}]'
+  "total_obs": 36500000}, {"title": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES",
+  "total_num_programs": 7, "total_obs": 240987000}, {"title": "JAPAN-U.S. FRIENDSHIP
+  COMMISSION", "total_num_programs": 1, "total_obs": 0}, {"title": "Denali Commission",
+  "total_num_programs": 1, "total_obs": 0}]'
+applicant_types: '[{"title": "Private nonprofit institution/organization (includes
+  institutions of higher education and hospitals)", "total_num_programs": 31}, {"title":
+  "Public nonprofit institution/organization (includes institutions of higher education
+  and hospitals)", "total_num_programs": 32}, {"title": "Federally Recognized lndian
+  Tribal Governments", "total_num_programs": 9}, {"title": "Individual/Family", "total_num_programs":
+  6}, {"title": "Local (includes State-designated lndian Tribes, excludes institutions
+  of higher education and hospitals", "total_num_programs": 9}, {"title": "State",
+  "total_num_programs": 6}, {"title": "U.S. Territories and possessions", "total_num_programs":
+  3}, {"title": "U.S. Territories and possessions (includes institutions of higher
+  education and hospitals)", "total_num_programs": 6}, {"title": "Native American
+  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  associations)", "total_num_programs": 6}, {"title": "Other private institutions/organizations",
+  "total_num_programs": 9}, {"title": "Other public institution/organization", "total_num_programs":
+  11}, {"title": "Profit organization", "total_num_programs": 2}, {"title": "Quasi-public
+  nonprofit institution/organization", "total_num_programs": 6}, {"title": "Small
+  business (less than 500 employees)", "total_num_programs": 1}, {"title": "Specialized
+  group (e.g. health professionals, students, veterans)", "total_num_programs": 5},
+  {"title": "Sponsored organization", "total_num_programs": 2}, {"title": "State (includes
+  District of Columbia, public institutions of higher education and hospitals)", "total_num_programs":
+  11}, {"title": "Non-Government - General", "total_num_programs": 7}, {"title": "Federal",
+  "total_num_programs": 1}, {"title": "Anyone/general public", "total_num_programs":
+  3}, {"title": "Minority group", "total_num_programs": 2}, {"title": "Interstate",
+  "total_num_programs": 1}]'
 fiscal_year: '2022'
 permalink: /category/cultural-affairs
 sub_cats: '[{"title": "Promotion of the Arts", "permalink": "/category/cultural-affairs/promotion-of-the-arts",
