@@ -1,36 +1,6 @@
 ---
 layout: default
 footer_include: _footer-category-index.html
-
-categories_about_text: |
-  <p>
-    This chart shows categories, by obligations. Data for all categories is available
-    in table format via the link below.
-  </p>
-  <p>
-    When creating Assistance Listings for each of their programs, agencies are offered the
-    opportunity to select one or many "functions" and "sub-functions" from a pre-defined list
-    that best align with the program. The categories and sub-categories shown on this website
-    are "functions" and "sub-functions" self-selected by agencies.
-  </p>
-  <p>
-    Programs may be assigned to one or more "functions" and / or "sub-functions". The numbers
-    in this chart and data set may not sum to the cumulative figure displayed on this
-    page, due to the existence of programs in multiple categories and sub-categories.
-    Additionally, the numbers displayed on this page may not represent funding or number of
-    programs associated exclusively with this category and / or sub-category.
-  </p>
-  <p>
-    In selecting from the list of "functions" and "sub-functions" agencies are not offered
-    guidance on their meaning, nor the number to select. As a result, the number and context
-    of "functions" and "sub-functions" assigned to a program may vary by program. These values
-    are selected by agencies and are published on SAM.gov.
-  </p>
-  <p>
-    Obligations are self-reported by agencies to SAM.gov. The figures displayed represent the
-    total obligations reported by the agency to SAM.gov for the fiscal year.
-  </p>
-
 ---
 
   <section class="bg-primary-dark">
@@ -90,7 +60,7 @@ categories_about_text: |
                   {% endif %}
                 </span>
                 <p class="margin-top-0">
-                  in FY{{ page.fiscal_year }} obligations
+                  in FY {{ page.fiscal_year }} obligations
                   <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
                     <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
                       <use xlink:href="/assets/img/sprite.svg#info"></use>
@@ -116,7 +86,7 @@ categories_about_text: |
           <div class="grid-row">
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Categories, by FY{{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Categories, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="categories-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">
@@ -126,11 +96,42 @@ categories_about_text: |
                       aria-expanded="false"
                       aria-controls="categories-about"
                     >
-                      About this chart & data
+                      About the data
                     </button>
                   </h4>
                   <div id="categories-about" class="usa-accordion__content usa-prose">
-                    {{ layout.categories_about_text }}
+                    <p>
+                      This chart shows total program obligations by category, for the top categories. Data for all
+                      categories is available in table format below. All data for this chart and table were provided
+                      by the administering agency and sourced from SAM.gov.
+                    </p>
+                    <p>
+                      When creating Assistance Listings for each of their programs, agencies are offered the
+                      opportunity to select one or many "functions" and "sub-functions" that best align with the
+                      program from a pre-defined list. The categories and sub-categories shown on this website
+                      are the "functions" and "sub-functions" self-selected by agencies. They can be found in the
+                      Functional Index of the
+                      <a href="https://sam.gov/content/assistance-listings" target="_blank">
+                        Annual Publication of Assistance Listings
+                      </a> on SAM.gov.
+                    </p>
+                    <p>
+                      Agencies may assign multiple "functions" and / or "sub-functions". The numbers in the chart
+                      and table may be greater than the cumulative figure displayed on this page, which represents
+                      the total number of dollars aligned to the category or sub-category without double counting.
+                      Additionally, the numbers displayed on this page should not be interpreted as funding or
+                      a number of programs associated exclusively with this category and / or sub-category.
+                    </p>
+                    <p>
+                      In selecting from the list of "functions" and "sub-functions" agencies are not offered
+                      guidance on their meaning. As a result, the number and context of "functions" and
+                      "sub-functions" assigned to a program may vary by program.
+                    </p>
+                    <p>
+                      Obligations displayed represent actual program obligations for FY {{ page.fiscal_year }}, as
+                      reported by the agency to SAM.gov after the fiscal year concludes. Programs are individual
+                      assistance listings, as submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                   <h4 class="usa-accordion__heading">
                     <button

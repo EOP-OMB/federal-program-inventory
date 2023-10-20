@@ -79,7 +79,7 @@
     },
     {
       "id": "total_obs",
-      "name": "Obligations",
+      "name": "Obligations (FY {{ page.fiscal_year }})",
       formatter: (cell) => `${ cell.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }) }`
     }],
     sort: true,
@@ -116,7 +116,7 @@
     },
     {
       id: "title",
-      name: "Name",
+      name: "Program",
       formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
     },
     {
@@ -125,7 +125,7 @@
     },
     {
       id: "total_obs",
-      name: "Obligations",
+      name: "Obligations (FY {{ page.fiscal_year }})",
       formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
     },
     {

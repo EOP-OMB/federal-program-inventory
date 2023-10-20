@@ -425,7 +425,7 @@ for p in programs:
             'assistance_types': program.get_category_printable_list('assistance_types', True),
             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
             'applicant_types': program.get_category_printable_list('applicant_types', True),
-            'categories': program.get_category_printable_list('categories', True, True),
+            'categories': program.get_category_printable_list('categories', False, True),
             'agency': program.get_top_level_agency_printable(),
             'sub-agency': program.get_second_level_agency_printable(),
             'obligations': program.get_obligations_json()

@@ -26,7 +26,7 @@
   new gridjs.Grid({
     columns: [{
       id: "title",
-      name: "Name",
+      name: "Category",
       formatter: (_, row) => gridjs.html(`<a href="${row.cells[3].data}">${row.cells[0].data}</a>`)
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       id: "total_obs",
-      name: "Obligations",
+      name: "Obligations (FY {{ page.fiscal_year }})",
       formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
     },
     {
