@@ -246,44 +246,6 @@ footer_include: _footer-search.html
               </fieldset>
             </div>
 
-
-            <h4 class="usa-accordion__heading">
-              <button
-                type="button"
-                class="usa-accordion__button"
-                aria-expanded="false"
-                aria-controls="beneficiaries"
-              >
-                Eligible beneficiaries
-                <span class="text-normal">
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_eligible_beneficiaries }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </span>
-              </button>
-            </h4>
-            <div id="beneficiaries" class="usa-accordion__content">
-              <fieldset class="usa-fieldset">
-                {% for b in page.beneficiary_types %}
-                  <div class="usa-checkbox">
-                    <input
-                      class="usa-checkbox__input parent"
-                      id="check-beneficiary-{{ forloop.index }}"
-                      type="checkbox"
-                      name="beneficiaries"
-                      value="{% for p in b.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                    />
-                    <label class="usa-checkbox__label font-body-2xs" for="check-beneficiary-{{ forloop.index }}">
-                      {{ b.title }}
-                    </label>
-                  </div>
-                {% endfor %}
-              </fieldset>
-            </div>
-
-
           </div>
         </form>
       </div>

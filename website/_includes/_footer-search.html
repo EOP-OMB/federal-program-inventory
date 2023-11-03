@@ -115,7 +115,7 @@
 
   function updateFilteredProgramIds() {
     filteredProgramIds = new Set(programs.map(v => v.cfda));
-    htmlIdList = ['categories', 'agencies', 'applicants', 'beneficiaries', 'assistancetypes'];
+    htmlIdList = ['categories', 'agencies', 'applicants', 'assistancetypes'];
     for (let i = 0; i < htmlIdList.length; ++i) {
       s = getProgramIdsFromInputSubset(htmlIdList[i]);
       if (s.size > 0) {
