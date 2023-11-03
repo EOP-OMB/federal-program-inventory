@@ -113,20 +113,11 @@ class GenericCategory:
     def add_program(self, p: 'GenericCategory') -> None:
         self.programs.add(p)
 
-    def set_parent(self, parent: 'GenericCategory') -> None:
-        self.parent = parent
-
     def get_id(self) -> str:
-        return self.id
-
-    def get_type(self) -> str:
-        return self.type    
+        return self.id  
 
     def get_title(self) -> str:
         return self.title
-    
-    def get_programs(self) -> set['GenericCategory']:
-        return self.programs
     
     def get_parent(self) -> 'GenericCategory':
         return self.parent
@@ -143,9 +134,6 @@ class Agency(GenericCategory):
         if title in DISPLAY_ENUM_AGENCIES:
             title = DISPLAY_ENUM_AGENCIES[title]
         self.title = title
-
-    def set_parent(self, parent: 'Agency') -> None:
-        self.parent = parent
 
     def get_top_level_agency(self) -> 'GenericCategory':
         agency = self
@@ -181,24 +169,10 @@ class Program:
         self.objective: str = ''
         self.sam_url: str = ''
         self.popular_name: str = ''
+        self.statute: str = ''
         self.fiscal_years: list[str] = fiscal_years
-        self.contruct_spending_objects()
-
-    def contruct_spending_objects(self) -> None:
         for y in self.fiscal_years:
             self.spending[y] = ProgramSpendingYear(y)
-
-    def set_agency(self, agency: Agency) -> None:
-        self.agency = agency
-
-    def set_objective(self, objective: str) -> None:
-        self.objective = objective
-    
-    def set_sam_url(self, hash_id: str) -> None:
-        self.sam_url = 'https://sam.gov/fal/' + hash_id + '/view'
-
-    def set_popular_name(self, name: str) -> None:
-        self.popular_name = name
 
     def get_popular_name(self) -> str:
         return self.popular_name
@@ -219,15 +193,6 @@ class Program:
 
     def get_title(self) -> str:
         return self.title
-
-    def get_agency(self) -> Agency:
-        return self.agency
-    
-    def get_objective(self) -> str:
-        return self.objective
-    
-    def get_sam_url(self) -> str:
-        return self.sam_url
     
     def get_category_printable_list(self, type: str, include_top_level: bool = False, include_second_level: bool = False) -> list[str]:
         r = []
@@ -241,7 +206,7 @@ class Program:
                         if p.id == c.parent.id:
                             r.append(p.title + ' - ' + c.title)
         return sorted(r)
-    
+
     def get_top_level_agency_printable(self) -> str:
         return self.agency.get_top_level_agency().title
 
@@ -249,13 +214,13 @@ class Program:
         if self.agency.get_second_level_agency() is None:
             return 'N/A'
         return self.agency.get_second_level_agency().title
-        
+
     def get_obligations_json(self, return_zeros: bool = True) -> str:
         r = []
         for y in self.spending:
             r += self.spending[y].get_list_of_dicts_per_year_per_value(return_zeros)
         return json.dumps(r, separators=(',', ':'))
-    
+
     def get_obligation_value(self, year: str, type: str, return_zeros: bool = True) -> float:
         if year not in self.fiscal_years:
             raise Exception("Provided year not in allowed range")
@@ -267,7 +232,7 @@ class ProgramSpendingYear:
         self.sam_estimate: Decimal = None
         self.sam_actual: Decimal = None
         self.usa_spending_actual: Decimal = None
-    
+
     def get_list_of_dicts_per_year_per_value(self, return_zeros: bool = True) -> list[dict]:
         sam_estimate = float(self.sam_estimate) if self.sam_estimate is not None else None
         sam_actual = float(self.sam_actual) if self.sam_actual is not None else None
@@ -302,7 +267,7 @@ with open('source_files/dictionary.json') as f:
                 assistance_types[str(e['element_id'])] = GenericCategory(str(e['element_id']), str(e['value']), 'assistance_type')
                 for s in e['elements']:
                     assistance_types[str(s['element_id'])] = GenericCategory(str(s['element_id']), str(s['value']), 'assistance_type')
-                    assistance_types[str(s['element_id'])].set_parent(assistance_types[str(e['element_id'])])
+                    assistance_types[str(s['element_id'])].parent = assistance_types[str(e['element_id'])]
         if i['id'] == 'applicant_types':
             for e in i['elements']:
                 applicant_types[str(e['element_id'])] = GenericCategory(str(e['element_id']), str(e['value']), 'applicant_type')
@@ -321,7 +286,7 @@ with open('source_files/organizations.json') as f:
     # assign parent Agency object, where appropriate
     for o in organizations_list:
         if o.get('parentOrgKey', False) and agencies.get(str(o['parentOrgKey']), False):
-            agencies[str(o['orgKey'])].set_parent(agencies[str(o['parentOrgKey'])])
+            agencies[str(o['orgKey'])].parent = agencies[str(o['parentOrgKey'])]
 
 categories: dict = {}
 with open('source_files/2022-program-to-function-sub-function.csv', newline='') as f:
@@ -331,7 +296,7 @@ with open('source_files/2022-program-to-function-sub-function.csv', newline='') 
             categories[convert_to_url_string(row[1])] = GenericCategory(convert_to_url_string(row[1]), str(row[1]), 'category')
         if convert_to_url_string(row[1]+'---'+row[2]) not in categories:
             categories[convert_to_url_string(row[1]+'---'+row[2])] = GenericCategory(convert_to_url_string(row[1]+'---'+row[2]), str(row[2]), 'category')
-            categories[convert_to_url_string(row[1]+'---'+row[2])].set_parent(categories[convert_to_url_string(row[1])])
+            categories[convert_to_url_string(row[1]+'---'+row[2])].parent = categories[convert_to_url_string(row[1])]
 
 programs: dict = {}
 with open('source_files/assistance-listings.json') as f:
@@ -342,14 +307,14 @@ with open('source_files/assistance-listings.json') as f:
         agency = agencies.get('unspecified') # default to 'unspecified' agency
         if agencies.get(str(d['organizationId']), False):
             agency = agencies.get(str(d['organizationId']))
-        program.set_agency(agency)
-        program.get_agency().add_program(program)
-        if program.get_agency().get_parent() is not None:
-            program.get_agency().get_parent().add_program(program)
+        program.agency = agency
+        program.agency.add_program(program)
+        if program.agency.get_parent() is not None:
+            program.agency.get_parent().add_program(program)
         if len(d.get('alternativeNames', [])) > 0 and len(d['alternativeNames'][0]) > 0: # if the program has an alternative "popular name"
-            program.set_popular_name(d['alternativeNames'][0])
-        program.set_objective(str(d['objective']))
-        program.set_sam_url(l['id'])
+            program.popular_name = d['alternativeNames'][0]
+        program.objective = str(d['objective'])
+        program.sam_url = 'https://sam.gov/fal/' + l['id'] + '/view'
         programs[str(l['data']['programNumber'])] = program
         for o in l['data']['financial']['obligations']:
             for row in o.get('values', []):
@@ -402,7 +367,6 @@ while len([a for a in agencies if agencies[a].get_parent() is not None and agenc
     for r in remove:
         agencies.pop(r)
 
-
 """                  """
 """ END OBJECT SETUP """
 """                  """
@@ -417,10 +381,9 @@ for p in programs:
             'layout': 'program',
             'permalink': '/program/' + program.get_id() + '.html',
             'fiscal_year': PRIMARY_FISCAL_YEAR,
-
             'cfda': program.get_id(),
-            'objective': program.get_objective(),
-            'sam_url': program.get_sam_url(),
+            'objective': program.objective,
+            'sam_url': program.sam_url,
             'popular_name': program.get_popular_name(),
             'assistance_types': program.get_category_printable_list('assistance_types', True),
             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
@@ -457,7 +420,7 @@ with open('../website/pages/category.md', 'w') as file:
             {
                 'title': categories[c].get_title(),
                 'total_num_programs': len(categories[c].programs),
-                'total_obs': sum(p.get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual') for p in categories[c].get_programs()),
+                'total_obs': sum(p.get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual') for p in categories[c].programs),
                 'permalink': '/category/'+categories[c].get_id()
             } for c in categories if (categories[c].get_parent() is None)
         ], key=lambda category: category['total_obs'], reverse=True), separators=(',', ':'))
@@ -473,12 +436,12 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
         if not two_tier or (two_tier and category.get_parent() is None):
             o = {
                 'title': category.get_title(),
-                'programs': [p.get_id() for p in category.get_programs()]
+                'programs': [p.get_id() for p in category.programs]
             }
             if len(o['programs']) == 0: # if there are no programs, don't add the category
                 continue
             if two_tier:
-                all_programs: set = set(p.get_id() for p in category.get_programs())
+                all_programs: set = set(p.get_id() for p in category.programs)
                 o['sub_categories']: list = []
                 for child_key in categories:
                     child: GenericCategory = categories[child_key]
@@ -486,14 +449,14 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                     # is not equal to the parent title. we should skip children that have the same name as the parent, as these
                     # are not "sub-agencies," but rather data anomolies
                     if child.get_parent() == category \
-                        and not (child.get_type() == 'agency' and child.get_title() == child.get_parent().get_title()):
+                        and not (child.type == 'agency' and child.get_title() == child.get_parent().get_title()):
                         o['sub_categories'].append(
                             {
                                 'title': child.get_title(),
-                                'programs': [p.get_id() for p in child.get_programs()]
+                                'programs': [p.get_id() for p in child.programs]
                             }
                         )
-                        all_programs -= set(p.get_id() for p in child.get_programs())
+                        all_programs -= set(p.get_id() for p in child.programs)
                 if len(all_programs) and len(o['sub_categories']) > 0: # only include the "unspecified" sub-category if there are other sub-categories
                     o['sub_categories'].append(
                         {

@@ -52,6 +52,10 @@
                     {% assign nav_column_three_size = nav_column_three_size | plus: 1 %}
                   {% endif %}
 
+                  <li class="usa-nav__submenu-item">
+                    <a href="/category">All Categories</a>
+                  </li>
+
                   {% for c in site.category limit: nav_column_one_size %}
 
                   <li class="usa-nav__submenu-item">
@@ -124,6 +128,9 @@
               <div class="usa-col">
                 <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
+                    <a href="/about/pilot">Current pilot (2023)</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
                     <a href="/about/background-on-the-fpi">Background on the FPI</a>
                   </li>
                 </ul>
@@ -131,14 +138,14 @@
               <div class="usa-col">
                 <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
-                    <a href="/about/exploratory-pilot-2020">Exploratory pilot (2020)</a>
+                    <a href="/about/past-pilot">Past pilot (2020)</a>
                   </li>
                 </ul>
               </div>
               <div class="usa-col">
                 <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
-                    <a href="/about/pilot-a-2023">Pilot A (2023)</a>
+                    <a href="/about/next-steps">Next steps</a>
                   </li>
                 </ul>
               </div>
