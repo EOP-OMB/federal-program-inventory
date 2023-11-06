@@ -1,0 +1,346 @@
+---
+layout: default
+---
+
+<div style="page-break-before: always;" id="program-{{forloop.index}}">
+    <h2>About the data</h2>
+
+    <div class="grid-row">
+        <section class="grid-col-12 bg-white padding-4">
+          <h3 class="margin-top-0">Overview</h3>
+          <div class="usa-prose">
+            <p>
+              This PDF leverages publicly accessible assistance listings (AL) data from SAM.gov and financial
+              data from USAspending.gov, linked to assistance listings through the AL number. The functions and
+              subfunctions used to categorize the programs can be found in the Annual Publication of Assistance
+              Listings Functional Index. Agencies submit data for their programs directly to these sources.
+            </p>
+          </div>
+          <h3>Data updates</h3>
+          <div class="usa-prose">
+            <p>
+              This PDF and the underlying data are not continuously updated. Data used to build this PDF
+              was last pulled on the following dates:
+            </p>
+            <ul>
+              <li>
+                <strong>SAM.gov assistance listings:</strong> October 10, 2023
+              </li>
+              <li>
+                <strong>SAM.gov assistance listing categories & sub-categories:</strong> Annual Publication of
+                Assistance Listings
+              </li>
+              <li>
+                <strong>USASpending.gov transaction data:</strong> August 8, 2023
+              </li>
+            </ul>
+          </div>
+          <h3>Explanation of terms and concepts</h3>
+          <h4>Assistance Listing</h4>
+          <div class="usa-prose">
+            <p>
+              Assistance listings are detailed public descriptions of Federal programs that provide Federal
+              financial assistance such as grants, loans, scholarships, insurance, and other types of assistance
+              awards. Every assistance award must be aligned to an assistance listing, and every assistance listing
+              must be authorized by congressional statute. 2 CFR 200.203 identifies the Federal Assistance Listings
+              (ALs) as "the single, authoritative, governmentwide comprehensive source of Federal financial
+              assistance program information produced by the executive branch of the Federal Government."
+            </p>
+            <p>
+              Assistance Listings are created and maintained by the administering agency on SAM.gov and must be
+              updated annually.  
+            </p>
+          </div>
+          <h4>Assistance type</h4>
+          <div class="usa-prose">
+            <p>
+              Agencies identify the form in which the Federal government provides assistance to the award
+              recipient, including contracts, grants, loans, insurance, and direct payment. An assistance listing
+              may provide different types of assistance.
+            </p>
+            <p>
+              Data source: SAM.gov
+            </p>
+          </div>
+          <h4>Category (sub-category)</h4>
+          <div class="usa-prose">
+            <p>
+              For the purposes of this pilot, categories and sub-categories are the functions and sub-functions
+              that can be found in the Functional Index in the Annual Publication of Assistance Listings on SAM.gov
+              (catalogue editions available for download here). When creating Assistance Listings for each of their
+              programs, agencies are offered the opportunity to select one or many functions and sub-functions that
+              best align with the program from a pre-defined list.
+            </p>
+            <p>
+              In selecting from the list of "functions" and "sub-functions" agencies are not offered guidance on
+              their meaning. As a result, the number and context of "functions" and "sub-functions" assigned to a
+              program may vary by program. 
+            </p>
+            <p>
+              Data source: SAM.gov (note that the function and sub-function(s) are not displayed on the assistance
+              listing. They can be found only in the Annual Publication of Assistance Listings.)
+            </p>
+          </div>
+          <h4>Eligible applicant type</h4>
+          <div class="usa-prose">
+            <p>
+              Agencies identify entities that are eligible to apply for each program when creating the assistance
+              listing. The main purpose of this is to inform potential applicants of the programs for which they
+              can apply. Information on award recipients can be found at USAspending.gov.
+            </p>
+            <p>
+              Additional specifics about eligible applicants for each program can be found on the program's
+              assistance listing on SAM.gov
+            </p>
+            <p>
+              Data source: SAM.gov
+            </p>
+          </div>
+          <h4>Eligible beneficiary</h4>
+          <div class="usa-prose">
+            <p>
+              Agencies specify who may receive the ultimate benefits from the program. Programs that provide
+              direct assistance from a Federal agency will generally have the same applicant and beneficiary. In
+              cases where assistance is provided through State and local governments, the applicants and
+              beneficiaries may be different since the assistance is transmitted to private sector beneficiaries
+              who do not have to request or apply for the benefits.
+            </p>
+            <p>
+              Additional specifics about eligible beneficiaries for each program can be found on the program's
+              assistance listing on SAM.gov. 
+            </p>
+            <p>
+              Data source: SAM.gov
+            </p>
+          </div>
+          <h4>Function (sub-function)</h4>
+          <div class="usa-prose">
+            <p>
+              Functions and sub-functions can be found in the Functional Index in the Annual Publication of
+              Assistance Listings on SAM.gov.
+            </p>
+            <p>
+              When creating Assistance Listings for each of their programs, agencies are offered the opportunity to
+              select one or many functions and sub-functions that best align with the program from a pre-defined
+              list.
+            </p>
+            <p>
+              In selecting from the list of "functions" and "sub-functions" agencies are not offered guidance on
+              their meaning. As a result, the number and context of "functions" and "sub-functions" assigned to a
+              program may vary by program. 
+            </p>
+            <p>
+              Data source: SAM.gov (note that the function and sub-function(s) are not displayed on the assistance
+              listing. They can be found only in the Annual Publication of Assistance Listings.)
+            </p>
+          </div>
+          <h4>Obligation</h4>
+          <div class="usa-prose">
+            <p>
+              When awarding funding, the U.S. government enters a binding agreement called an obligation. The
+              government promises to spend the money, either immediately or in the future. An agency incurs an
+              obligation, for example, when it places an order, signs a contract, awards a grant, purchases a
+              service, or takes other actions that require it to make a payment. Additional detail is provided in
+              OMB Circular A-11. 
+            </p>
+            <p>
+              Obligation information sourced from SAM.gov is provided by the administering agency for each
+              assistance listing.
+            </p>
+            <p>
+              Each year, agencies report actual obligations for the past fiscal year and estimated obligations for
+              the current and budget fiscal years. 
+            </p>
+            <p>
+              Obligation information sourced from USAspending.gov is provided by agencies in accordance with the
+              2014 DATA Act, which requires reporting on a quarterly and/or monthly basis. For the purposes of this
+              pilot, program obligations from USAspending.gov are calculated by taking the total of obligations
+              aligned to the assistance listing at the transaction level for the fiscal year. 
+            </p>
+          </div>
+          <h4>Program</h4>
+          <div class="usa-prose">
+            <p>
+              For the purposes of this pilot, a program is an individual assistance listing, as submitted by
+              agencies to SAM.gov.
+            </p>
+          </div>
+        </section>
+      </div>
+
+</div>
+<div style="page-break-before: always;" id="program-{{forloop.index}}">
+    <h2>Table of contents</h2>
+    <ul>
+    {% assign previous = "initial" %}
+    {% for p in page.programs %}
+        {% assign next = p.agency %}
+        {% if previous != next %}
+            <li>
+                <a href="#program-{{forloop.index}}">{{ p.agency }}</a>
+            </li>
+            {% assign previous = p.agency %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+
+
+{% for p in page.programs %}
+<div style="page-break-before: always;" id="program-{{forloop.index}}">
+    
+    <section class="bg-primary-dark">
+        <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-col-12">
+            <p class="margin-top-2 margin-bottom-0 text-white text-italic">{{ p.agency }}</p>
+            </div>
+            <div class="grid-col-12">
+            <h1 class="margin-top-0 margin-bottom-2 text-white">{{ p.title }}</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+    <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
+        <div class="grid-container">
+        <div class="grid-row grid-gap">
+            <div class="tablet:grid-col-3 bg-white tablet:border-right-1 tablet:border-base-lightest">
+            <h3 class="text-base-dark">Program information</h3>
+
+            {% if p.popular_name.size > 0 %}
+
+                <div>
+                <h4 class="margin-bottom-0 text-base-dark">Popular name</h4>
+                <p class="margin-top-0">{{ p.popular_name }}</p>
+                </div>
+
+            {% endif %}
+
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Assistance listing number</h4>
+                <p class="margin-top-0">{{ p.cfda }}</p>
+            </div>
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Agency</h4>
+                <p class="margin-top-0">{{ p.agency }}</p>
+            </div>
+
+            {% if p.sub-agency.size > 0 %}
+
+                <div>
+                <h4 class="margin-bottom-0 text-base-dark">Sub-agency</h4>
+                <p class="margin-top-0">{{ p.sub-agency }}</p>
+                </div>
+
+            {% endif %}
+
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Categories & sub-categories</h4>
+                <ul class="margin-top-0">
+
+                {% for x in p.categories %}
+
+                    <li>{{ x }}</li>
+
+                {% endfor %}
+
+                </ul>
+            </div>
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Assistance types</h4>
+                <ul class="margin-top-0">
+
+                {% for x in p.assistance_types %}
+
+                    <li>{{ x }}</li>
+
+                {% endfor %}
+
+                </ul>
+            </div>
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Eligible applicants</h4>
+                <ul class="margin-top-0">
+
+                {% for x in p.applicant_types %}
+
+                    <li>{{ x }}</li>
+
+                {% endfor %}
+
+                </ul>
+            </div>
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">Eligible beneficiaries</h4>
+                <ul class="margin-top-0">
+
+                {% for x in p.beneficiary_types %}
+
+                    <li>{{ x }}</li>
+
+                {% endfor %}
+
+                </ul>
+            </div>
+            <div>
+                <h4 class="margin-bottom-0 text-base-dark">External links</h4>
+                <ul class="margin-top-0">
+                <li><a href="{{ p.sam_url }}" target="_blank">View more information about this program on SAM.gov</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="tablet:grid-col-9">
+
+            <div class="grid-row">
+                <div class="grid-col-12">
+                <section class="bg-white padding-2">
+                    <h2 class="margin-top-0">Program objective</h2>
+                    <div class="usa-prose">
+                    <p>{{ p.objective }}</p>
+                    </div>
+                </section>
+                </div>
+                <div class="grid-col-12">
+                <section class="bg-white margin-top-3 padding-2">
+                    <h2 class="margin-top-0">Program obligations, by FY (2019 - 2023)</h2>
+                    <div id="spending-visualization-{{ forloop.index }}"></div>
+                </section>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script type="module">
+        const obligations = {{ p.obligations }};
+        let domainMin = d3.min(obligations, (d) => d.amount);
+        let domainMax = d3.max(obligations, (d) => d.amount);
+        if (domainMax < 10000) {
+        domainMax += 10000
+        }
+        const spendingVisualization = Plot.plot({
+        marginLeft: 50,
+        x: {axis: null},
+        y: {domain: [domainMin, domainMax], label: null, tickFormat: (x) => d3.format("$0.2s")(x).replace("G", "B"), grid: true},
+        color: {scheme: "paired", legend: true},
+        marks: [
+            Plot.barY(obligations, {
+            x: "key",
+            y: "amount",
+            fill: "key",
+            fx: "year"
+            }),
+            Plot.ruleY([0])
+        ]
+        })
+        if (d3.max(obligations, (d) => d.amount) < 1000) {
+    
+        }
+        document.querySelector("#spending-visualization-{{ forloop.index | }}").append(spendingVisualization);
+    </script>
+
+</div>
+
+
+{% endfor %}

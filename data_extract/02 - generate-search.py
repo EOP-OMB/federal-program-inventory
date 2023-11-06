@@ -2,6 +2,7 @@ import csv
 import json
 import yaml
 from decimal import Decimal
+from operator import itemgetter
 from typing import Optional
 
 FISCAL_YEARS = ['2019', '2020', '2021', '2022', '2023'] # this is the list of fiscal years calculated
@@ -395,6 +396,37 @@ for p in programs:
         }
         yaml.dump(listing, file)
         file.write('---\n') # End Jekyll Front Matter
+
+# build a markdown file to enable generation of an all program PDF
+with open('../website/pages/pdf.md', 'w') as file:
+    _programs_list: list = []
+    for p in programs:
+        program = programs[p]
+        _programs_list.append({
+            'title': program.get_title(),
+            'layout': 'program',
+            'permalink': '/program/' + program.get_id() + '.html',
+            'fiscal_year': PRIMARY_FISCAL_YEAR,
+            'cfda': program.get_id(),
+            'objective': program.objective,
+            'sam_url': program.sam_url,
+            'popular_name': program.get_popular_name(),
+            'assistance_types': program.get_category_printable_list('assistance_types', True),
+            'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
+            'applicant_types': program.get_category_printable_list('applicant_types', True),
+            'categories': program.get_category_printable_list('categories', False, True),
+            'agency': program.get_top_level_agency_printable(),
+            'sub-agency': program.get_second_level_agency_printable(),
+            'obligations': program.get_obligations_json()
+        })
+    file.write('---\n') # Begin Jekyll Front Matter
+    yaml.dump({
+        'title': 'Programs PDF',
+        'layout': 'pdf',
+        'permalink': '/pdf.html',
+        'programs': sorted(_programs_list, key=itemgetter('agency', 'sub-agency'))
+    }, file)
+    file.write('---\n') # End Jekyll Front Matter
 
 # build a markdown file for each category & sub-category using Jekyll's required format
 
