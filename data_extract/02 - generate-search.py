@@ -5,9 +5,9 @@ from decimal import Decimal
 from operator import itemgetter
 from typing import Optional
 
-FISCAL_YEARS = ['2019', '2020', '2021', '2022', '2023'] # this is the list of fiscal years calculated
-PRIMARY_FISCAL_YEAR = '2022' # this is the primary year used / displayed across the site
-DISPLAY_ENUM_ASSISTANCE_TYPES = {
+FISCAL_YEARS: list[str] = ['2019', '2020', '2021', '2022', '2023'] # this is the list of fiscal years calculated
+PRIMARY_FISCAL_YEAR: str = '2022' # this is the primary year used / displayed across the site
+DISPLAY_ENUM_ASSISTANCE_TYPES: dict[str, str] = {
     'FORMULA GRANTS': 'Formula Grants',
     'PROJECT GRANTS': 'Project Grants',
     'DIRECT PAYMENTS FOR A SPECIFIED USE': 'Direct Payments for a Specified Use',
@@ -25,7 +25,7 @@ DISPLAY_ENUM_ASSISTANCE_TYPES = {
     'FEDERAL EMPLOYMENT': 'Federal Employment',
     'SALARIES AND EXPENSES': 'Salaries and Expenses',
 }
-DISPLAY_ENUM_AGENCIES = {
+DISPLAY_ENUM_AGENCIES: dict[str, str] = {
     'Unspecified': 'Unspecified',
     'IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE': 'Immediate Office of the Secretary of Defense',
     'FOREIGN AGRICULTURAL SERVICE': 'Foreign Agricultural Service',
@@ -224,6 +224,32 @@ DISPLAY_ENUM_AGENCIES = {
     'COMMERCE, DEPARTMENT OF': 'Department of Commerce',
     'MARITIME ADMINISTRATION': 'Maritime Administration'
 }
+CFO_ACT_AGENCIES_LIST: list[str] = [
+    'Agency for International Development',
+    'Department of Agriculture',
+    'Department of Commerce',
+    'Department of Defense',
+    'Department of Education',
+    'Department of Energy',
+    'Department of Health and Human Services',
+    'Department of Homeland Security',
+    'Department of Housing and Urban Development',
+    'Department of the Interior',
+    'Department of Justice',
+    'Department of Labor',
+    'Department of State',
+    'Department of Transportation',
+    'Department of the Treasury',
+    'Department of Veterans Affairs',
+    'Environmental Protection Agency',
+    'General Services Administration',
+    'National Aeronautics and Space Administration',
+    'National Science Foundation',
+    'Nuclear Regulatory Commission',
+    'Office of Personnel Management',
+    'Small Business Administration',
+    'Social Security Administration'
+]
 
 """                    """
 """ BEGIN OBJECT SETUP """
@@ -638,7 +664,8 @@ with open('../website/pages/search.md', 'w') as file:
         'permalink': '/search.html',
         'fiscal_year': PRIMARY_FISCAL_YEAR,
 
-        'agencies': generate_list_of_program_ids_for_category(agencies, True),
+        'cfo_agencies': [a for a in generate_list_of_program_ids_for_category(agencies, True) if a['title'] in CFO_ACT_AGENCIES_LIST],
+        'other_agencies': [a for a in generate_list_of_program_ids_for_category(agencies, True) if a['title'] not in CFO_ACT_AGENCIES_LIST],
         'applicant_types': generate_list_of_program_ids_for_category(applicant_types),
         'assistance_types': generate_list_of_program_ids_for_category(assistance_types, True),
         'beneficiary_types': generate_list_of_program_ids_for_category(beneficiary_types),

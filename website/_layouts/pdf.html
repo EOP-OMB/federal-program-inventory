@@ -173,18 +173,30 @@ layout: default
     <h2>Table of contents</h2>
     <ul>
     {% assign previous = "initial" %}
+    {% assign previous_sub = "initial" %}
     {% for p in page.programs %}
         {% assign next = p.agency %}
+        {% assign next_sub = p.sub-agency %}
         {% if previous != next %}
             <li>
                 <a href="#program-{{forloop.index}}">{{ p.agency }}</a>
             </li>
             {% assign previous = p.agency %}
+            <li>
+                <a href="#program-{{forloop.index}}">---- {{ p.sub-agency }}</a>
+            </li>
+            {% assign previous_sub = p.sub-agency %}
+        {% else %}
+            {% if previous_sub != next_sub %}
+                <li>
+                    <a href="#program-{{forloop.index}}">---- {{ p.sub-agency }}</a>
+                </li>
+                {% assign previous_sub = p.sub-agency %}
+            {% endif %}
         {% endif %}
     {% endfor %}
     </ul>
 </div>
-
 
 {% for p in page.programs %}
 <div style="page-break-before: always;" id="program-{{forloop.index}}">
@@ -337,7 +349,7 @@ layout: default
         if (d3.max(obligations, (d) => d.amount) < 1000) {
     
         }
-        document.querySelector("#spending-visualization-{{ forloop.index | }}").append(spendingVisualization);
+        document.querySelector("#spending-visualization-{{ forloop.index }}").append(spendingVisualization);
     </script>
 
 </div>
