@@ -1,0 +1,29 @@
+{% for p in page.programs %}
+<script type="module">
+  const obligations = {{ p.obligations }};
+  let domainMin = d3.min(obligations, (d) => d.amount);
+  let domainMax = d3.max(obligations, (d) => d.amount);
+  if (domainMax < 10000) {
+    domainMax += 10000
+  }
+  const spendingVisualization = Plot.plot({
+    marginLeft: 50,
+    x: {axis: null},
+    y: {domain: [domainMin, domainMax], label: null, tickFormat: (x) => d3.format("$0.2s")(x).replace("G", "B"), grid: true},
+    color: {scheme: "paired", legend: true},
+    marks: [
+      Plot.barY(obligations, {
+        x: "key",
+        y: "amount",
+        fill: "key",
+        fx: "year"
+      }),
+      Plot.ruleY([0])
+    ]
+  })
+  if (d3.max(obligations, (d) => d.amount) < 1000) {
+
+  }
+  document.querySelector("#spending-visualization-{{ p.cfda }}").append(spendingVisualization);
+</script>
+{% endfor %}
