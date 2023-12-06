@@ -1,9 +1,6 @@
 ---
-agencies: '[{"title": "Department of State", "total_num_programs": 2, "total_obs":
-  6065980}, {"title": "Denali Commission", "total_num_programs": 1, "total_obs": 0},
-  {"title": "Department of Labor", "total_num_programs": 1, "total_obs": 19644358},
-  {"title": "CORPORATION FOR NATIONAL AND COMMUNITY SERVICE", "total_num_programs":
-  1, "total_obs": 2723511}]'
+agencies: '[{"title": "", "total_num_programs": 4, "total_obs": 28433849}, {"title":
+  "Denali Commission", "total_num_programs": 1, "total_obs": 0}]'
 applicant_types: '[{"title": "Other public institution/organization", "total_num_programs":
   3}, {"title": "Private nonprofit institution/organization (includes institutions
   of higher education and hospitals)", "total_num_programs": 3}, {"title": "Public
@@ -28,15 +25,14 @@ parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/federal-employment
 programs: '[{"cfda": "19.013", "title": "Thomas R. Pickering Foreign Affairs Fellowship
-  Program", "agency": "Department of State", "total_obs": 6065980, "permalink": "/program/19.013"},
-  {"cfda": "19.207", "title": "William D. Clarke, Sr. Fellowship", "agency": "Department
-  of State", "total_obs": 0, "permalink": "/program/19.207"}, {"cfda": "90.199", "title":
-  "Shared Services", "agency": "Denali Commission", "total_obs": 0, "permalink": "/program/90.199"},
+  Program", "agency": "", "total_obs": 6065980, "permalink": "/program/19.013"}, {"cfda":
+  "19.207", "title": "William D. Clarke, Sr. Fellowship", "agency": "", "total_obs":
+  0, "permalink": "/program/19.207"}, {"cfda": "90.199", "title": "Shared Services",
+  "agency": "Denali Commission", "total_obs": 0, "permalink": "/program/90.199"},
   {"cfda": "17.720", "title": "Disability Employment Policy Development", "agency":
-  "Department of Labor", "total_obs": 19644358, "permalink": "/program/17.720"}, {"cfda":
-  "94.026", "title": "AmeriCorps National Service and Civic Engagement Research Competition
-  94.026", "agency": "CORPORATION FOR NATIONAL AND COMMUNITY SERVICE", "total_obs":
-  2723511, "permalink": "/program/94.026"}]'
+  "", "total_obs": 19644358, "permalink": "/program/17.720"}, {"cfda": "94.026", "title":
+  "AmeriCorps National Service and Civic Engagement Research Competition 94.026",
+  "agency": "", "total_obs": 2723511, "permalink": "/program/94.026"}]'
 title: Federal Employment
 total_num_programs: 5
 total_obs: 28433849
