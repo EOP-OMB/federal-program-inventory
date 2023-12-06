@@ -376,7 +376,7 @@ class Program:
     def get_obligations_json(self, return_zeros: bool = True) -> str:
         r = []
         for y in self.spending:
-            r += self.spending[y].get_list_of_dicts_per_year_per_value(return_zeros)
+            r.append(self.spending[y].get_dict_of_spending_values(return_zeros))
         return json.dumps(r, separators=(',', ':'))
 
     def get_obligation_value(self, year: str, type: str, return_zeros: bool = True) -> float:
@@ -391,21 +391,17 @@ class ProgramSpendingYear:
         self.sam_actual: Decimal = None
         self.usa_spending_actual: Decimal = None
 
-    def get_list_of_dicts_per_year_per_value(self, return_zeros: bool = True) -> list[dict]:
+    def get_dict_of_spending_values(self, return_zeros: bool = True) -> dict:
         sam_estimate = float(self.sam_estimate) if self.sam_estimate is not None else None
         sam_actual = float(self.sam_actual) if self.sam_actual is not None else None
         usa_spending_actual = float(self.usa_spending_actual) if self.usa_spending_actual is not None else None
-        r = [
-            {'key': 'USASpending.gov Obligations', 'year': self.year, 'amount': usa_spending_actual}
-        ]
-        if sam_actual is not None:
-            r.append({'key': 'SAM.gov Actual', 'year': self.year, 'amount': sam_actual})
-        else:
-            r.append({'key': 'SAM.gov Estimate', 'year': self.year, 'amount': sam_estimate})
+        if sam_actual is not None: # if the actual value is set, no longer pass the estimate value
+            sam_estimate = None
         if return_zeros:
-            r[0]['amount'] = r[0]['amount'] if r[0]['amount'] is not None else float(0.0)
-            r[1]['amount'] = r[1]['amount'] if r[1]['amount'] is not None else float(0.0)
-        return r
+            sam_estimate = sam_estimate if sam_estimate is not None else float(0.0)
+            sam_actual = sam_actual if sam_actual is not None else float(0.0)
+            usa_spending_actual = usa_spending_actual if usa_spending_actual is not None else float(0.0)
+        return {'x': self.year, 'sam_estimate': sam_estimate, 'sam_actual': sam_actual, 'usa_spending_actual': usa_spending_actual}
 
     def get_obligation_value(self, type: str, return_zeros: bool = True) -> float:
         val = float(getattr(self, type)) if getattr(self, type) is not None else None
