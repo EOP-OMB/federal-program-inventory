@@ -5,7 +5,7 @@ from decimal import Decimal
 from operator import itemgetter
 from typing import Optional
 
-FISCAL_YEARS: list[str] = ['2019', '2020', '2021', '2022', '2023'] # this is the list of fiscal years calculated
+FISCAL_YEARS: list[str] = ['2022', '2023', '2024'] # this is the list of fiscal years calculated
 PRIMARY_FISCAL_YEAR: str = '2022' # this is the primary year used / displayed across the site
 DISPLAY_ENUM_ASSISTANCE_TYPES: dict[str, str] = {
     'FORMULA GRANTS': 'Formula Grants',
@@ -395,15 +395,17 @@ class ProgramSpendingYear:
         sam_estimate = float(self.sam_estimate) if self.sam_estimate is not None else None
         sam_actual = float(self.sam_actual) if self.sam_actual is not None else None
         usa_spending_actual = float(self.usa_spending_actual) if self.usa_spending_actual is not None else None
-        if return_zeros:
-            sam_estimate = sam_estimate if sam_estimate else float(0.0)
-            sam_actual = sam_actual if sam_actual else float(0.0)
-            usa_spending_actual = usa_spending_actual if usa_spending_actual else float(0.0)
-        return [
-            {'key': 'SAM.gov Estimate', 'year': self.year, 'amount': sam_estimate},
-            {'key': 'SAM.gov Actual', 'year': self.year, 'amount': sam_actual},
+        r = [
             {'key': 'USASpending.gov Obligations', 'year': self.year, 'amount': usa_spending_actual}
         ]
+        if sam_actual is not None:
+            r.append({'key': 'SAM.gov Actual', 'year': self.year, 'amount': sam_actual})
+        else:
+            r.append({'key': 'SAM.gov Estimate', 'year': self.year, 'amount': sam_estimate})
+        if return_zeros:
+            r[0]['amount'] = r[0]['amount'] if r[0]['amount'] is not None else float(0.0)
+            r[1]['amount'] = r[1]['amount'] if r[1]['amount'] is not None else float(0.0)
+        return r
 
     def get_obligation_value(self, type: str, return_zeros: bool = True) -> float:
         val = float(getattr(self, type)) if getattr(self, type) is not None else None
