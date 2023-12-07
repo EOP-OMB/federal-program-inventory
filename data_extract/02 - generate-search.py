@@ -325,9 +325,10 @@ class Program:
         self.categories: set[GenericCategory] = set()
         self.spending: dict[str, GenericCategory] = {}
         self.objective: str = ''
+        self.results: list[dict[str, str]] = []
         self.sam_url: str = ''
         self.popular_name: str = ''
-        self.statute: str = ''
+        self.authorizations: list[Authorization] = []
         self.fiscal_years: list[str] = fiscal_years
         for y in self.fiscal_years:
             self.spending[y] = ProgramSpendingYear(y)
@@ -409,6 +410,91 @@ class ProgramSpendingYear:
             val = float(0.0)
         return val
 
+class Authorization:
+    def __init__(self) -> None:
+        self.usc: bool = False
+        self.act: bool = False
+        self.statute: bool = False
+        self.public_law: bool = False
+        self.executive_order: bool = False
+        self.usc_title: str = ''
+        self.usc_section: str = ''
+        self.act_title: str = ''
+        self.act_part: str = ''
+        self.act_section: str = ''
+        self.act_description: str = ''
+        self.statute_volume: str = ''
+        self.statute_page: str = ''
+        self.public_law_congress_code: str = ''
+        self.public_law_number: str = ''
+        self.executive_order_title: str = ''
+        self.executive_order_part: str = ''
+        self.executive_order_section: str = ''
+        self.executive_order_description: str = ''
+
+    def parse_sam_dictionary(self, d: dict):
+        if d['authorizationTypes']['USC'] is not None and d.get('USC', False):
+            self.usc_title = d['USC'].get('title', '').strip() if d['USC'].get('title', '') is not None else ''
+            self.usc_section = d['USC'].get('section', '').strip() if d['USC'].get('section', '') is not None else ''
+            if len(self.usc_title + self.usc_section) > 0:
+                self.usc = True
+        if d['authorizationTypes']['act'] is not None and d.get('act', False):
+            self.act_title = d['act'].get('title', '').strip() if d['act'].get('title', '') is not None else ''
+            self.act_part = d['act'].get('part', '').strip() if d['act'].get('part', '') is not None else ''
+            self.act_section = d['act'].get('section', '').strip() if d['act'].get('section', '') is not None else ''
+            self.act_description = d['act'].get('description', '').strip() if d['act'].get('description', '') is not None else ''
+            if len(self.act_title + self.act_part + self.act_section + self.act_description) > 0:
+                self.act = True
+        if d['authorizationTypes']['statute'] is not None and d.get('statute', False):
+            self.statute_volume = d['statute'].get('volume', '').strip() if d['statute'].get('volume', '') is not None else ''
+            self.statute_page = d['statute'].get('page', '').strip() if d['statute'].get('page', '') is not None else ''
+            if len(self.statute_volume + self.statute_page) > 0:
+                self.statute = True
+        if d['authorizationTypes']['publicLaw'] is not None and d.get('publicLaw', False):
+            self.public_law_congress_code = d['publicLaw'].get('congressCode', '').strip() if d['publicLaw'].get('congressCode', '') is not None else ''
+            self.public_law_number = d['publicLaw'].get('number', '').strip() if d['publicLaw'].get('number', '') is not None else ''
+            if len(self.public_law_congress_code + self.public_law_number) > 0:
+                self.public_law = True
+        if d['authorizationTypes']['executiveOrder'] is not None and d.get('executiveOrder', False):
+            self.executive_order_title = d['executiveOrder'].get('title', '').strip() if d['executiveOrder'].get('title', '') is not None else ''
+            self.executive_order_part = d['executiveOrder'].get('part', '').strip() if d['executiveOrder'].get('part', '') is not None else ''
+            self.executive_order_section = d['executiveOrder'].get('section', '').strip() if d['executiveOrder'].get('section', '') is not None else ''
+            self.executive_order_description = d['executiveOrder'].get('description', '').strip() if d['executiveOrder'].get('description', '') is not None else ''
+            if len(self.executive_order_title + self.executive_order_part + self.executive_order_section + self.executive_order_description) > 0:
+                self.executive_order = True
+        
+    def generate_combined_string(self) -> str:
+        items = []
+        if self.act:
+            items.append(self.generate_act_string())
+        if self.statute:
+            items.append(self.generate_statute_string())
+        if self.public_law:
+            items.append(self.generate_public_law_string())
+        if self.usc:
+            items.append(self.generate_usc_string())
+        if self.executive_order:
+            items.append(self.generate_executive_order_string())
+        return '. '.join(items) + ('.' if not ''.join(items).endswith('.') else '')
+
+    def generate_usc_string(self) -> str:
+        return self.usc_title + ' U.S.C. &sect; ' + self.usc_section
+
+    def generate_act_string(self) -> str:
+        return ', '.join([p for p in [self.act_title, self.act_part, self.act_section, self.act_description] if len(p) > 0])
+
+    def generate_statute_string(self) -> str:
+        return ' Stat. '.join([p for p in [self.statute_volume, self.statute_page] if len(p) > 0])
+
+    def generate_public_law_string(self) -> str:
+        return 'Pub. L. ' + ', '.join([p for p in [self.public_law_congress_code, self.public_law_number] if len(p) > 0])
+
+    def generate_executive_order_string(self) -> str:
+        return ', '.join([p for p in [self.executive_order_title,
+                                      self.executive_order_part,
+                                      self.executive_order_section,
+                                      self.executive_order_description] if len(p) > 0])
+
 def convert_to_url_string(s: str) -> str:
     return str(''.join(c if c.isalnum() else '-' for c in s.lower()))
 
@@ -471,6 +557,16 @@ with open('source_files/assistance-listings.json') as f:
             program.popular_name = d['alternativeNames'][0]
         program.objective = str(d['objective'])
         program.sam_url = 'https://sam.gov/fal/' + l['id'] + '/view'
+        if d['financial']['accomplishments'].get('list', False):
+            if len(d['financial']['accomplishments']['list']) > 0:
+                for a in d['financial']['accomplishments']['list']:
+                    if str(a['fiscalYear']) in FISCAL_YEARS:
+                        program.results.append({'year': str(a['fiscalYear']), 'description': a['description']})
+        if d['authorizations'].get('list', False):
+            for sam_authorization_dict in d['authorizations'].get('list', False):
+                authorization = Authorization()
+                authorization.parse_sam_dictionary(sam_authorization_dict)
+                program.authorizations.append(authorization)
         programs[str(l['data']['programNumber'])] = program
         for o in l['data']['financial']['obligations']:
             for row in o.get('values', []):
@@ -491,6 +587,8 @@ with open('source_files/assistance-listings.json') as f:
         for e in l['data']['eligibility']['applicant']['types']:
                 program.add_category('applicant_types', applicant_types[e])
                 applicant_types[e].add_program(program)
+
+
 
 # populate USASpending.gov data into Programs
 with open('source_files/usaspending_db_obligations_by_program.csv', newline='') as f:
@@ -547,7 +645,9 @@ for p in programs:
             'categories': program.get_category_printable_list('categories', False, True),
             'agency': program.get_top_level_agency_printable(),
             'sub-agency': program.get_second_level_agency_printable(),
-            'obligations': program.get_obligations_json()
+            'obligations': program.get_obligations_json(),
+            'results': sorted(program.results, key=lambda res: res['year']),
+            'authorizations': [p.generate_combined_string() for p in program.authorizations]
         }
         yaml.dump(listing, file)
         file.write('---\n') # End Jekyll Front Matter
