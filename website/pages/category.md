@@ -42,11 +42,11 @@ categories:
   title: Transportation
 categories_json: '[{"title":"Income Security and Social Services","total_num_programs":214,"total_obs":2933002256330.7505,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":447,"total_obs":2077894285716.46,"permalink":"/category/health"},{"title":"Disaster
   Prevention and Relief","total_num_programs":141,"total_obs":363688764050.62,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Business
-  and Commerce","total_num_programs":226,"total_obs":284209417014.67,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":474,"total_obs":266060924340.25998,"permalink":"/category/education"},{"title":"Employment,
+  and Commerce","total_num_programs":226,"total_obs":284209417014.67,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":474,"total_obs":266060924340.26,"permalink":"/category/education"},{"title":"Employment,
   Labor, and Training","total_num_programs":132,"total_obs":229962176185.14,"permalink":"/category/employment--labor--and-training"},{"title":"Food
   and Nutrition","total_num_programs":84,"total_obs":197099341723.36,"permalink":"/category/food-and-nutrition"},{"title":"Housing","total_num_programs":109,"total_obs":187988370203.81,"permalink":"/category/housing"},{"title":"Transportation","total_num_programs":102,"total_obs":128728345552.26,"permalink":"/category/transportation"},{"title":"Community
-  Development","total_num_programs":266,"total_obs":109223041108.07,"permalink":"/category/community-development"},{"title":"Energy","total_num_programs":74,"total_obs":80880804062.109,"permalink":"/category/energy"},{"title":"Agricultural","total_num_programs":271,"total_obs":51529564189.95,"permalink":"/category/agricultural"},{"title":"Natural
-  Resources","total_num_programs":262,"total_obs":30541120852.519,"permalink":"/category/natural-resources"},{"title":"Science
+  Development","total_num_programs":266,"total_obs":109223041108.07,"permalink":"/category/community-development"},{"title":"Energy","total_num_programs":74,"total_obs":80880804062.10901,"permalink":"/category/energy"},{"title":"Agricultural","total_num_programs":271,"total_obs":51529564189.95,"permalink":"/category/agricultural"},{"title":"Natural
+  Resources","total_num_programs":262,"total_obs":30541120852.519005,"permalink":"/category/natural-resources"},{"title":"Science
   and Technology","total_num_programs":168,"total_obs":20614229539.78,"permalink":"/category/science-and-technology"},{"title":"Regional
   Development","total_num_programs":111,"total_obs":19456794284.25,"permalink":"/category/regional-development"},{"title":"Environmental
   Quality","total_num_programs":180,"total_obs":15491476551.859,"permalink":"/category/environmental-quality"},{"title":"Information

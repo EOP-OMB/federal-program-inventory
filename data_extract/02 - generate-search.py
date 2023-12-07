@@ -435,16 +435,15 @@ class Authorization:
     def parse_sam_dictionary(self, d: dict):
         if d['authorizationTypes']['USC'] is not None and d.get('USC', False):
             self.usc_title = d['USC'].get('title', '').strip() if d['USC'].get('title', '') is not None else ''
-            self.usc_section = d['USC'].get('title', '').strip() if d['USC'].get('title', '') is not None else ''
+            self.usc_section = d['USC'].get('section', '').strip() if d['USC'].get('section', '') is not None else ''
             if len(self.usc_title + self.usc_section) > 0:
                 self.usc = True
         if d['authorizationTypes']['act'] is not None and d.get('act', False):
             self.act_title = d['act'].get('title', '').strip() if d['act'].get('title', '') is not None else ''
-            self.act_act = d['act'].get('act', '').strip() if d['act'].get('act', '') is not None else ''
             self.act_part = d['act'].get('part', '').strip() if d['act'].get('part', '') is not None else ''
             self.act_section = d['act'].get('section', '').strip() if d['act'].get('section', '') is not None else ''
             self.act_description = d['act'].get('description', '').strip() if d['act'].get('description', '') is not None else ''
-            if len(self.act_title + self.act_act + self.act_part + self.act_section + self.act_description) > 0:
+            if len(self.act_title + self.act_part + self.act_section + self.act_description) > 0:
                 self.act = True
         if d['authorizationTypes']['statute'] is not None and d.get('statute', False):
             self.statute_volume = d['statute'].get('volume', '').strip() if d['statute'].get('volume', '') is not None else ''
@@ -458,11 +457,10 @@ class Authorization:
                 self.public_law = True
         if d['authorizationTypes']['executiveOrder'] is not None and d.get('executiveOrder', False):
             self.executive_order_title = d['executiveOrder'].get('title', '').strip() if d['executiveOrder'].get('title', '') is not None else ''
-            self.executive_order_act = d['executiveOrder'].get('act', '').strip() if d['executiveOrder'].get('act', '') is not None else ''
             self.executive_order_part = d['executiveOrder'].get('part', '').strip() if d['executiveOrder'].get('part', '') is not None else ''
             self.executive_order_section = d['executiveOrder'].get('section', '').strip() if d['executiveOrder'].get('section', '') is not None else ''
             self.executive_order_description = d['executiveOrder'].get('description', '').strip() if d['executiveOrder'].get('description', '') is not None else ''
-            if len(self.executive_order_title + self.executive_order_act + self.executive_order_part + self.executive_order_section + self.executive_order_description) > 0:
+            if len(self.executive_order_title + self.executive_order_part + self.executive_order_section + self.executive_order_description) > 0:
                 self.executive_order = True
         
     def generate_combined_string(self) -> str:
@@ -483,7 +481,7 @@ class Authorization:
         return self.usc_title + ' U.S.C. &sect; ' + self.usc_section
 
     def generate_act_string(self) -> str:
-        return ', '.join([p for p in [self.act_title, self.act_act, self.act_part, self.act_section, self.act_description] if len(p) > 0])
+        return ', '.join([p for p in [self.act_title, self.act_part, self.act_section, self.act_description] if len(p) > 0])
 
     def generate_statute_string(self) -> str:
         return ' Stat. '.join([p for p in [self.statute_volume, self.statute_page] if len(p) > 0])
@@ -493,7 +491,6 @@ class Authorization:
 
     def generate_executive_order_string(self) -> str:
         return ', '.join([p for p in [self.executive_order_title,
-                                      self.executive_order_act,
                                       self.executive_order_part,
                                       self.executive_order_section,
                                       self.executive_order_description] if len(p) > 0])
