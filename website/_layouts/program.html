@@ -155,6 +155,43 @@ footer_include: _footer-program.html
                 </div>
               </section>
             </div>
+
+            {% if page.authorizations.size > 0 %}
+
+            <div class="grid-col-12">
+              <section class="bg-white margin-top-3 padding-2">
+                <h2 class="margin-top-0">Authorizing statues</h2>
+                <div class="usa-prose">
+                  <ul>
+                  {% for a in page.authorizations %}
+                    <li>{{ a }}</li>
+                  {% endfor %}
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            {% endif %}
+
+            {% if page.results.size > 0 %}
+
+            <div class="grid-col-12">
+              <section class="bg-white margin-top-3 padding-2">
+                <h2 class="margin-top-0">Program results</h2>
+                
+                {% for r in page.results %}
+
+                <h3>{{ r.year }}</h3>
+                <div class="usa-prose">
+                  <p>{{ r.description }}</p>
+                </div>
+
+                {% endfor %}
+              </section>
+            </div>
+
+            {% endif %}
+
           </div>
         </div>
       </div>

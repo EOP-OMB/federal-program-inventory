@@ -35,7 +35,7 @@ footer_include: _footer-category-index.html
           <div class="grid-row bg-white">
             <div class="tablet:grid-col-4">
               <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
-                <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
+                <span class="font-body-3xl text-bold">{{ page.total_num_programs | slice: 0 }},{{ page.total_num_programs | slice: 1, 3 }}</span>
                 <p class="margin-top-0">
                   programs
                   <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
