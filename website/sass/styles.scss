@@ -31,3 +31,6 @@ th.gridjs-th {
 #search-filters .usa-checkbox {
     position: relative;
 }
+#search-filters input:disabled+label {
+    color: #a9aeb1;
+}
