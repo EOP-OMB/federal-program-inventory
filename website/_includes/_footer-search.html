@@ -122,6 +122,19 @@
         filteredProgramIds = new Set([...filteredProgramIds].filter(v => s.has(v)));
       }
     }
+
+    let inputs = document.getElementById('search-filters').getElementsByTagName('input');
+    for (let i = 0; i < inputs.length; i++) {
+      let input = inputs.item(i);
+      let inputSiblings = document.querySelectorAll('input[name="' + input.getAttribute('name') + '"]:checked');
+      let programs = new Set(input.value.split(',').filter(v => filteredProgramIds.has(v)));
+      if (programs.size == 0 && inputSiblings.length == 0) {
+        input.disabled = true;
+      } else {
+        input.disabled = false;
+      }
+    }
+
     filterPrograms();
   }
 

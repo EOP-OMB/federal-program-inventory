@@ -1,41 +1,41 @@
 ---
 agencies: '[{"title": "Department of the Interior", "total_num_programs": 164, "total_obs":
   9554003293}, {"title": "Department of Agriculture", "total_num_programs": 32, "total_obs":
-  4770836606}, {"title": "Department of Commerce", "total_num_programs": 19, "total_obs":
-  692564980}, {"title": "Gulf Coast Ecosystem Restoration Council", "total_num_programs":
-  2, "total_obs": 158403307}, {"title": "", "total_num_programs": 14, "total_obs":
-  149472187}, {"title": "Environmental Protection Agency", "total_num_programs": 18,
-  "total_obs": 6294905996}, {"title": "Department of the Treasury", "total_num_programs":
-  1, "total_obs": 91374127}, {"title": "Denali Commission", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Department of Defense", "total_num_programs": 6,
-  "total_obs": 2354315307}, {"title": "Department of Housing and Urban Development",
-  "total_num_programs": 3, "total_obs": 5497293000}, {"title": "National Aeronautics
-  and Space Administration", "total_num_programs": 1, "total_obs": 953452048}, {"title":
-  "Department of Energy", "total_num_programs": 1, "total_obs": 24500000}]'
-applicant_types: '[{"title": "Local (includes State-designated lndian Tribes, excludes
-  institutions of higher education and hospitals", "total_num_programs": 124}, {"title":
-  "Native American Organizations (includes lndian groups, cooperatives, corporations,
-  partnerships, associations)", "total_num_programs": 59}, {"title": "Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)",
-  "total_num_programs": 121}, {"title": "Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)", "total_num_programs":
-  123}, {"title": "Small business (less than 500 employees)", "total_num_programs":
-  14}, {"title": "State (includes District of Columbia, public institutions of higher
-  education and hospitals)", "total_num_programs": 130}, {"title": "State", "total_num_programs":
-  90}, {"title": "Federal", "total_num_programs": 50}, {"title": "Other private institutions/organizations",
+  4770836606}, {"title": "Gulf Coast Ecosystem Restoration Council", "total_num_programs":
+  2, "total_obs": 158403307}, {"title": "Department of the Treasury", "total_num_programs":
+  1, "total_obs": 91374127}, {"title": "Environmental Protection Agency", "total_num_programs":
+  18, "total_obs": 6294905996}, {"title": "", "total_num_programs": 14, "total_obs":
+  149472187}, {"title": "Department of Commerce", "total_num_programs": 19, "total_obs":
+  692564980}, {"title": "Denali Commission", "total_num_programs": 1, "total_obs":
+  0}, {"title": "Department of Defense", "total_num_programs": 6, "total_obs": 2354315307},
+  {"title": "Department of Energy", "total_num_programs": 1, "total_obs": 24500000},
+  {"title": "Department of Housing and Urban Development", "total_num_programs": 3,
+  "total_obs": 5497293000}, {"title": "National Aeronautics and Space Administration",
+  "total_num_programs": 1, "total_obs": 953452048}]'
+applicant_types: '[{"title": "Federally Recognized lndian Tribal Governments", "total_num_programs":
+  102}, {"title": "Local (includes State-designated lndian Tribes, excludes institutions
+  of higher education and hospitals", "total_num_programs": 124}, {"title": "Native
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  associations)", "total_num_programs": 59}, {"title": "Other private institutions/organizations",
   "total_num_programs": 45}, {"title": "Other public institution/organization", "total_num_programs":
-  65}, {"title": "Federally Recognized lndian Tribal Governments", "total_num_programs":
-  102}, {"title": "Government - General", "total_num_programs": 20}, {"title": "U.S.
-  Territories and possessions", "total_num_programs": 30}, {"title": "U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)", "total_num_programs":
-  39}, {"title": "Profit organization", "total_num_programs": 43}, {"title": "Quasi-public
-  nonprofit institution/organization", "total_num_programs": 39}, {"title": "Individual/Family",
-  "total_num_programs": 34}, {"title": "Interstate", "total_num_programs": 24}, {"title":
-  "Intrastate", "total_num_programs": 20}, {"title": "Anyone/general public", "total_num_programs":
-  24}, {"title": "Non-Government - General", "total_num_programs": 22}, {"title":
-  "Sponsored organization", "total_num_programs": 15}, {"title": "Specialized group
-  (e.g. health professionals, students, veterans)", "total_num_programs": 21}, {"title":
-  "Minority group", "total_num_programs": 6}]'
+  65}, {"title": "Private nonprofit institution/organization (includes institutions
+  of higher education and hospitals)", "total_num_programs": 121}, {"title": "Profit
+  organization", "total_num_programs": 43}, {"title": "Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)", "total_num_programs":
+  123}, {"title": "Quasi-public nonprofit institution/organization", "total_num_programs":
+  39}, {"title": "Small business (less than 500 employees)", "total_num_programs":
+  14}, {"title": "State", "total_num_programs": 90}, {"title": "State (includes District
+  of Columbia, public institutions of higher education and hospitals)", "total_num_programs":
+  130}, {"title": "Federal", "total_num_programs": 50}, {"title": "Individual/Family",
+  "total_num_programs": 34}, {"title": "Government - General", "total_num_programs":
+  20}, {"title": "U.S. Territories and possessions", "total_num_programs": 30}, {"title":
+  "Interstate", "total_num_programs": 24}, {"title": "Anyone/general public", "total_num_programs":
+  24}, {"title": "Intrastate", "total_num_programs": 20}, {"title": "Non-Government
+  - General", "total_num_programs": 22}, {"title": "U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)", "total_num_programs":
+  39}, {"title": "Specialized group (e.g. health professionals, students, veterans)",
+  "total_num_programs": 21}, {"title": "Sponsored organization", "total_num_programs":
+  15}, {"title": "Minority group", "total_num_programs": 6}]'
 fiscal_year: '2022'
 permalink: /category/natural-resources
 sub_cats: '[{"title": "Community Sewage Treatment Assistance", "permalink": "/category/natural-resources/community-sewage-treatment-assistance",
