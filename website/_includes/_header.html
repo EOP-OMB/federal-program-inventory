@@ -18,6 +18,9 @@
       </button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item">
+          <a href="/search" class="usa-nav-link">Program search</a>
+        </li>
+        <li class="usa-nav__primary-item">
           <button
             type="button"
             class="usa-accordion__button usa-nav__link"
@@ -109,16 +112,13 @@
           </div>
         </li>
         <li class="usa-nav__primary-item">
-          <a href="/search" class="usa-nav-link">Program search</a>
-        </li>
-        <li class="usa-nav__primary-item">
           <button
             type="button"
             class="usa-accordion__button usa-nav__link"
             aria-expanded="false"
             aria-controls="extended-mega-nav-section-two"
           >
-            <span>About the pilot</span>
+            <span>About the FPI</span>
           </button>
           <div
             id="extended-mega-nav-section-two"
@@ -128,24 +128,14 @@
               <div class="usa-col">
                 <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
-                    <a href="/about/pilot">Current pilot (2023)</a>
+                    <a href="/about/fpi">About the FPI</a>
                   </li>
+                </ul>
+              </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
                     <a href="/about/background-on-the-fpi">Background on the FPI</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-                  <li class="usa-nav__submenu-item">
-                    <a href="/about/past-pilot">Past pilot (2020)</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-                  <li class="usa-nav__submenu-item">
-                    <a href="/about/next-steps">Next steps</a>
                   </li>
                 </ul>
               </div>
@@ -156,26 +146,27 @@
                   </li>
                 </ul>
               </div>
+              <div class="usa-col">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__primary-item">
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a href="/about/feedback" class="usa-nav-link">Feedback</a>
         </li>
       </ul>
       <div class="usa-nav__secondary">
         <ul class="usa-nav__secondary-links"></ul>
         <section aria-label="Search component">
-          <form class="usa-search usa-search--small" id="search" role="search">
+          <form class="usa-search usa-search--small" id="search" role="search" action="/search">
             <label class="usa-sr-only" for="search-field">Search</label>
             <input
               class="usa-input"
               id="search-field"
               type="search"
-              name="search"
-              placeholder="Assistance listing (10.001)"
-              pattern="\d\d.\d\d\d"
-              inputmode="numeric"
+              name="q"
+              placeholder="Program search"
             />
             <button class="usa-button" type="submit">
               <img
