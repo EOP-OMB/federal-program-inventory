@@ -94,6 +94,19 @@ footer_include: _footer-category-index.html
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
+                      aria-controls="categories-data"
+                    >
+                      View data as a table
+                    </button>
+                  </h4>
+                  <div id="categories-data" class="usa-accordion__content usa-prose">
+                    <div id="categories-table"></div>
+                  </div>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
                       aria-controls="categories-about"
                     >
                       About the data
@@ -128,23 +141,15 @@ footer_include: _footer-category-index.html
                       "sub-functions" assigned to a program may vary by program.
                     </p>
                     <p>
-                      Obligations displayed represent actual program obligations for FY {{ page.fiscal_year }}, as
-                      reported by the agency to SAM.gov after the fiscal year concludes. Programs are individual
-                      assistance listings, as submitted by agencies to SAM.gov.
+                      Obligations displayed represent program obligations for FY {{ page.fiscal_year }}, as
+                      reported by the agency to SAM.gov after the fiscal year concludes. This number may not be
+                      the same as what is reported on USASpending.gov, which is the authoritative source for
+                      government spending data. Both SAM.gov and USASpending.gov obligations data are reported on
+                      each individual program pages, where available.
                     </p>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="categories-data"
-                    >
-                      View data for all categories
-                    </button>
-                  </h4>
-                  <div id="categories-data" class="usa-accordion__content usa-prose">
-                    <div id="categories-table"></div>
+                    <p>
+                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                 </div>
               </section>

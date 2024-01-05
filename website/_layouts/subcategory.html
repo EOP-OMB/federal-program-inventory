@@ -96,6 +96,19 @@ footer_include: _footer-subcategory.html
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
+                      aria-controls="programs-data"
+                    >
+                      View data as a table
+                    </button>
+                  </h4>
+                  <div id="programs-data" class="usa-accordion__content usa-prose">
+                    <div id="programs-table"></div>
+                  </div>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
                       aria-controls="programs-about"
                     >
                       About the data
@@ -108,23 +121,37 @@ footer_include: _footer-subcategory.html
                       agency and sourced from SAM.gov.
                     </p>
                     <p>
-                      Obligations displayed represent actual obligations for FY 2022, as reported by the agency to SAM.gov
-                      after the fiscal year concludes. Programs are individual assistance listings, as submitted by agencies
-                      to SAM.gov.
+                      When creating Assistance Listings for each of their programs, agencies are offered the
+                      opportunity to select one or many "functions" and "sub-functions" that best align with the
+                      program from a pre-defined list. The categories and sub-categories shown on this website
+                      are the "functions" and "sub-functions" self-selected by agencies. They can be found in the
+                      Functional Index of the
+                      <a href="https://sam.gov/content/assistance-listings" target="_blank">
+                        Annual Publication of Assistance Listings
+                      </a> on SAM.gov.
                     </p>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="programs-data"
-                    >
-                      View data for all programs
-                    </button>
-                  </h4>
-                  <div id="programs-data" class="usa-accordion__content usa-prose">
-                    <div id="programs-table"></div>
+                    <p>
+                      Agencies may assign multiple "functions" and / or "sub-functions". The numbers in the chart
+                      and table may be greater than the cumulative figure displayed on this page, which represents
+                      the total number of dollars aligned to the category or sub-category without double counting.
+                      Additionally, the numbers displayed on this page should not be interpreted as funding or the
+                      number of programs associated exclusively with this category and / or sub-category.
+                    </p>
+                    <p>
+                      In selecting from the list of "functions" and "sub-functions" agencies are not offered
+                      guidance on their meaning. As a result, the number and context of "functions" and
+                      "sub-functions" assigned to a program may vary by program.
+                    </p>
+                    <p>
+                      Obligations displayed represent program obligations for FY {{ page.fiscal_year }}, as
+                      reported by the agency to SAM.gov after the fiscal year concludes. This number may not be
+                      the same as what is reported on USASpending.gov, which is the authoritative source for
+                      government spending data. Both SAM.gov and USASpending.gov obligations data are reported on
+                      each individual program pages, where available.
+                    </p>
+                    <p>
+                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                 </div>
               </section>
@@ -134,6 +161,19 @@ footer_include: _footer-subcategory.html
                 <h2 class="margin-top-0">Top agencies, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="agencies-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
+                      aria-controls="agencies-data"
+                    >
+                      View data as a table
+                    </button>
+                  </h4>
+                  <div id="agencies-data" class="usa-accordion__content usa-prose">
+                    <div id="agencies-table"></div>
+                  </div>
                   <h4 class="usa-accordion__heading">
                     <button
                       type="button"
@@ -151,23 +191,15 @@ footer_include: _footer-subcategory.html
                       were provided by the administering agency and sourced from SAM.gov.
                     </p>
                     <p>
-                      Obligations displayed represent actual program obligations for FY {{ page.fiscal_year }}, as reported by
-                      the agency to SAM.gov after the fiscal year concludes. Programs are individual assistance listings, as
-                      submitted by agencies to SAM.gov.
+                      Obligations displayed represent program obligations for FY {{ page.fiscal_year }}, as
+                      reported by the agency to SAM.gov after the fiscal year concludes. This number may not be
+                      the same as what is reported on USASpending.gov, which is the authoritative source for
+                      government spending data. Both SAM.gov and USASpending.gov obligations data are reported on
+                      each individual program pages, where available.
                     </p>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="agencies-data"
-                    >
-                      View data for all agencies
-                    </button>
-                  </h4>
-                  <div id="agencies-data" class="usa-accordion__content usa-prose">
-                    <div id="agencies-table"></div>
+                    <p>
+                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
+                    </p>
                   </div>
                 </div>
               </section>
@@ -182,9 +214,22 @@ footer_include: _footer-subcategory.html
                       type="button"
                       class="usa-accordion__button"
                       aria-expanded="false"
+                      aria-controls="applicant-types-data"
+                    >
+                      View data for all eligible applicant types
+                    </button>
+                  </h4>
+                  <div id="applicant-types-data" class="usa-accordion__content usa-prose">
+                    <div id="applicant-types-table"></div>
+                  </div>
+                  <h4 class="usa-accordion__heading">
+                    <button
+                      type="button"
+                      class="usa-accordion__button"
+                      aria-expanded="false"
                       aria-controls="applicant-types-about"
                     >
-                      About the data
+                      View data as a table
                     </button>
                   </h4>
                   <div id="applicant-types-about" class="usa-accordion__content usa-prose">
@@ -198,24 +243,12 @@ footer_include: _footer-subcategory.html
                       Eligible applicant types are entities identified by agencies when creating the assistance listing that
                       are eligible to apply for each program. The main purpose of this is to inform potential applicants of the
                       programs for which they can apply. Information on entities that received program awards can be found on
-                      USASpending.gov.
+                      USASpending.gov. Note that the types of "eligible applicants" that are used on SAM.gov are not the same as
+                      types of "recipients" used on USASpending.gov.
                     </p>
                     <p>
-                      Programs are individual assistance listings, as submitted by agencies to SAM.gov.
+                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
                     </p>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="applicant-types-data"
-                    >
-                      View data for all eligible applicant types
-                    </button>
-                  </h4>
-                  <div id="applicant-types-data" class="usa-accordion__content usa-prose">
-                    <div id="applicant-types-table"></div>
                   </div>
                 </div>
               </section>

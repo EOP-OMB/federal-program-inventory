@@ -48,14 +48,3 @@
   {% include {{ layout.footer_include }} %}
 
 {% endif %}
-
-<script>
-  const searchForm = document.getElementById("search");
-  const searchField = document.getElementById("search-field");
-  searchForm.addEventListener("submit", function(event){
-    event.preventDefault();
-    if(searchField.value.match(/^\d{2}.\d{3}$/)) {
-      window.location.href = '/program/'+searchField.value;
-    }
-  });
-</script>
