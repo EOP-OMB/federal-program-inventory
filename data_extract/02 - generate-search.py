@@ -653,35 +653,69 @@ for p in programs:
         file.write('---\n') # End Jekyll Front Matter
 
 # build a markdown file to enable generation of an all program PDF
-with open('../website/pages/pdf.md', 'w') as file:
-    _programs_list: list = []
+# with open('../website/pages/pdf.md', 'w') as file:
+#     _programs_list: list = []
+#     for p in programs:
+#         program = programs[p]
+#         _programs_list.append({
+#             'title': program.get_title(),
+#             'layout': 'program',
+#             'permalink': '/program/' + program.get_id() + '.html',
+#             'fiscal_year': PRIMARY_FISCAL_YEAR,
+#             'cfda': program.get_id(),
+#             'objective': program.objective,
+#             'sam_url': program.sam_url,
+#             'popular_name': program.get_popular_name(),
+#             'assistance_types': program.get_category_printable_list('assistance_types', True),
+#             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
+#             'applicant_types': program.get_category_printable_list('applicant_types', True),
+#             'categories': program.get_category_printable_list('categories', False, True),
+#             'agency': program.get_top_level_agency_printable(),
+#             'sub-agency': program.get_second_level_agency_printable(),
+#             'obligations': program.get_obligations_json()
+#         })
+#     file.write('---\n') # Begin Jekyll Front Matter
+#     yaml.dump({
+#         'title': 'Programs PDF',
+#         'layout': 'pdf',
+#         'permalink': '/pdf.html',
+#         'programs': sorted(_programs_list, key=itemgetter('agency', 'sub-agency'))
+#     }, file)
+#     file.write('---\n') # End Jekyll Front Matter
+
+# generate a csv file that contains all program data
+with open('../website/assets/files/all-program-data.csv', 'w', newline='') as file:
+    csvwriter = csv.writer(file)
+    csvwriter.writerow([
+        'al_number',
+        'title',
+        'popular_name',
+        'agency',
+        'sub-agency',
+        'objective',
+        'sam_url',
+        'assistance_types',
+        'beneficiary_types',
+        'applicant_types',
+        'categories',
+        'obligations'
+    ])
     for p in programs:
         program = programs[p]
-        _programs_list.append({
-            'title': program.get_title(),
-            'layout': 'program',
-            'permalink': '/program/' + program.get_id() + '.html',
-            'fiscal_year': PRIMARY_FISCAL_YEAR,
-            'cfda': program.get_id(),
-            'objective': program.objective,
-            'sam_url': program.sam_url,
-            'popular_name': program.get_popular_name(),
-            'assistance_types': program.get_category_printable_list('assistance_types', True),
-            'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
-            'applicant_types': program.get_category_printable_list('applicant_types', True),
-            'categories': program.get_category_printable_list('categories', False, True),
-            'agency': program.get_top_level_agency_printable(),
-            'sub-agency': program.get_second_level_agency_printable(),
-            'obligations': program.get_obligations_json()
-        })
-    file.write('---\n') # Begin Jekyll Front Matter
-    yaml.dump({
-        'title': 'Programs PDF',
-        'layout': 'pdf',
-        'permalink': '/pdf.html',
-        'programs': sorted(_programs_list, key=itemgetter('agency', 'sub-agency'))
-    }, file)
-    file.write('---\n') # End Jekyll Front Matter
+        csvwriter.writerow([
+            program.get_id(),
+            program.get_title(),
+            program.get_popular_name(),
+            program.get_top_level_agency_printable(),
+            program.get_second_level_agency_printable(),
+            program.objective,
+            program.sam_url,
+            ','.join(program.get_category_printable_list('assistance_types', True, True)),
+            ','.join(program.get_category_printable_list('beneficiary_types', True, True)),
+            ','.join(program.get_category_printable_list('applicant_types', True, True)),
+            ','.join(program.get_category_printable_list('categories', True, True)),
+            program.get_obligations_json()
+        ])
 
 # build a markdown file for each category & sub-category using Jekyll's required format
 
