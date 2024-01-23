@@ -31,4 +31,4 @@ RUN bundle exec jekyll build && \
 FROM nginxinc/nginx-unprivileged:alpine AS runtime-image
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=0 /app/_site /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 8080
