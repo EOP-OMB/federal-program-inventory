@@ -327,6 +327,7 @@ class Program:
         self.objective: str = ''
         self.results: list[dict[str, str]] = []
         self.sam_url: str = ''
+        self.usaspending_url: str = ''
         self.popular_name: str = ''
         self.authorizations: list[Authorization] = []
         self.fiscal_years: list[str] = fiscal_years
@@ -540,6 +541,10 @@ with open('source_files/2022-program-to-function-sub-function.csv', newline='') 
             categories[convert_to_url_string(row[1]+'---'+row[2])] = GenericCategory(convert_to_url_string(row[1]+'---'+row[2]), str(row[2]), 'category')
             categories[convert_to_url_string(row[1]+'---'+row[2])].parent = categories[convert_to_url_string(row[1])]
 
+usaspending_program_search_hashes: dict = {}
+with open('source_files/usaspending-program-search-hashes.json') as f:
+    usaspending_program_search_hashes = json.load(f)
+
 programs: dict = {}
 with open('source_files/assistance-listings.json') as f:
     assistance_listings_list = json.load(f)
@@ -557,6 +562,7 @@ with open('source_files/assistance-listings.json') as f:
             program.popular_name = d['alternativeNames'][0]
         program.objective = str(d['objective'])
         program.sam_url = 'https://sam.gov/fal/' + l['id'] + '/view'
+        program.usaspending_url = 'https://www.usaspending.gov/search/?hash=' + usaspending_program_search_hashes.get(program.id, '')
         if d['financial']['accomplishments'].get('list', False):
             if len(d['financial']['accomplishments']['list']) > 0:
                 for a in d['financial']['accomplishments']['list']:
@@ -639,6 +645,7 @@ for p in programs:
             'objective': program.objective,
             'sam_url': program.sam_url,
             'popular_name': program.get_popular_name(),
+            'usaspending_url': program.usaspending_url,
             'assistance_types': program.get_category_printable_list('assistance_types', True),
             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
             'applicant_types': program.get_category_printable_list('applicant_types', True),
