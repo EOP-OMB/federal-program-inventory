@@ -126,6 +126,8 @@ with open('source_files/2022-program-to-function-sub-function.csv', newline='') 
                 'fiscal_year': FISCAL_YEAR,
                 'total_num_programs': 0,
                 'total_num_sub_cats': 0,
+                'total_num_agencies': 0,
+                'total_num_applicant_types': 0,
                 'total_obs': Decimal(0),
                 'sub_cats': [],
                 'agencies': [],
@@ -144,6 +146,8 @@ with open('source_files/2022-program-to-function-sub-function.csv', newline='') 
                 'fiscal_year': FISCAL_YEAR,
                 'total_obs': Decimal(0),
                 'total_num_programs': 0,
+                'total_num_agencies': 0,
+                'total_num_applicant_types': 0,
                 'agencies': [], # agencies
                 'applicant_types': [], # applicant types
                 'programs': [], # programs
@@ -187,6 +191,10 @@ for c in category_list:
             sub_cat['total_obs'] += programs[p]['total_obs']
         sub_cat['total_obs'] = int(sub_cat['total_obs'])
         category_list[c]['sub_cats'].append(sub_cat)
+    
+    # set total number of applicant types and agencies
+    category_list[c]['total_num_agencies'] = len(generate_agency_list(category_list[c]['_programs'], programs))
+    category_list[c]['total_num_applicant_types'] = len(generate_applicant_type_list(category_list[c]['_programs'], programs))
 
     # convert to the necessary format for frontend rendering
     category_list[c]['total_obs'] = int(category_list[c]['total_obs'])
@@ -219,7 +227,12 @@ for sc in subcategory_list:
         _p['total_obs'] = int(_p['total_obs'])
         _p.pop('applicant_types', None)
         subcategory_list[sc]['programs'].append(_p)
+    
+    # set total number of applicant types and agencies
+    subcategory_list[sc]['total_num_agencies'] = len(generate_agency_list(subcategory_list[sc]['_programs'], programs))
+    subcategory_list[sc]['total_num_applicant_types'] = len(generate_applicant_type_list(subcategory_list[sc]['_programs'], programs))
 
+    # convert to the necessary format for frontend rendering
     subcategory_list[sc]['agencies'] = json.dumps(generate_agency_list(subcategory_list[sc]['_programs'], programs))
     subcategory_list[sc]['applicant_types'] = json.dumps(generate_applicant_type_list(subcategory_list[sc]['_programs'], programs))
     subcategory_list[sc]['programs'] = json.dumps(subcategory_list[sc]['programs'])

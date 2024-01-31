@@ -3,6 +3,9 @@
   var filteredProgramIds = new Set();
   var tablePrograms = programs;
 
+  // get any params from the URL bar
+  let URLparams = (new URL(document.location)).searchParams;
+
   // Generate and render Programs data table
   let obligationsTooltipHtml = '<span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/assets/img/sprite.svg#info"></use></svg></span>';
   var searchGrid = new gridjs.Grid({
@@ -39,7 +42,9 @@
       }
     },
     sort: true,
-    search: true,
+    search: {
+      ignoreHiddenColumns: false
+    },
     pagination: {
       limit: 20
     },
@@ -96,7 +101,7 @@
     });
   }
 
-  function filterPrograms(showAll = false, searchQuery = false) {
+  function filterPrograms(showAll = false) {
     if (showAll) {
       tablePrograms = programs;
     } else {
@@ -105,11 +110,6 @@
     let settings = {
       data: tablePrograms
     };
-    if (searchQuery) {
-      settings['search'] = {
-        'keyword': searchQuery
-      }
-    }
     searchGrid.updateConfig(settings).forceRender();
     document.getElementById('big-number-num-of-programs').innerHTML = tablePrograms.length.toLocaleString('en-US', { maximumFractionDigits: 0});
     let obs = 0;
@@ -119,7 +119,7 @@
     document.getElementById('big-number-obligations').innerHTML = obs.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' });
   }
 
-  function updateFilteredProgramIds(searchQuery = false) {
+  function updateFilteredProgramIds() {
     filteredProgramIds = new Set(programs.map(v => v.cfda));
     htmlIdList = ['categories', 'agencies', 'applicants', 'assistancetypes'];
     for (let i = 0; i < htmlIdList.length; ++i) {
@@ -141,7 +141,7 @@
       }
     }
 
-    filterPrograms(searchQuery);
+    filterPrograms();
   }
 
   function getProgramIdsFromInputSubset(htmlId) {
@@ -158,5 +158,5 @@
     return rSet;
   }
 
-  updateFilteredProgramIds(searchQuery = "health");
+  updateFilteredProgramIds();
 </script>

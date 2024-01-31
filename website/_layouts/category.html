@@ -90,7 +90,7 @@ footer_include: _footer-category.html
           <div class="grid-row">
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top sub-categories, by FY {{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top {% if page.total_num_sub_cats > 4 %} 5 {% else %} {{ page.total_num_sub_cats }} {% endif %} sub-categories, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="subcategories-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">
@@ -160,7 +160,7 @@ footer_include: _footer-category.html
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top agencies, by FY {{ page.fiscal_year }} obligations</h2>
+                <h2 class="margin-top-0">Top {% if page.total_num_agencies > 4 %} 5 {% else %} {{ page.total_num_agencies }} {% endif %} agencies, by FY {{ page.fiscal_year }} obligations</h2>
                 <div id="agencies-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">
@@ -208,7 +208,7 @@ footer_include: _footer-category.html
             </div>
             <div class="grid-col-12">
               <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top eligible applicant types, by number of programs</h2>
+                <h2 class="margin-top-0">Top {% if page.total_num_applicant_types > 4 %} 5 {% else %} {{ page.total_num_applicant_types }} {% endif %} eligible applicant types, by number of programs</h2>
                 <div id="applicant-types-visualization"></div>
                 <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
                   <h4 class="usa-accordion__heading">

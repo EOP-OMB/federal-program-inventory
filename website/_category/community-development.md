@@ -1,60 +1,60 @@
 ---
-agencies: '[{"title": "Department of Transportation", "total_num_programs": 9, "total_obs":
-  47081763631}, {"title": "Department of Homeland Security", "total_num_programs":
-  7, "total_obs": 5683532958}, {"title": "Department of the Interior", "total_num_programs":
-  52, "total_obs": 1709053302}, {"title": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES",
-  "total_num_programs": 3, "total_obs": 35402000}, {"title": "Department of Agriculture",
-  "total_num_programs": 49, "total_obs": 12287487801}, {"title": "Department of Veterans
-  Affairs", "total_num_programs": 3, "total_obs": 46837953}, {"title": "Department
-  of Defense", "total_num_programs": 16, "total_obs": 385182021}, {"title": "Department
-  of State", "total_num_programs": 20, "total_obs": 414279193}, {"title": "National
-  Archives and Records Administration", "total_num_programs": 1, "total_obs": 0},
-  {"title": "Department of Health and Human Services", "total_num_programs": 12, "total_obs":
-  1321883632}, {"title": "Department of Education", "total_num_programs": 4, "total_obs":
-  1364122620}, {"title": "UNITED STATES INSTITUTE OF PEACE", "total_num_programs":
-  1, "total_obs": 1304045}, {"title": "Department of the Treasury", "total_num_programs":
-  13, "total_obs": 20769649053}, {"title": "Department of Commerce", "total_num_programs":
-  17, "total_obs": 825692721}, {"title": "Department of Housing and Urban Development",
-  "total_num_programs": 14, "total_obs": 5695874599}, {"title": "National Endowment
-  for the Arts", "total_num_programs": 1, "total_obs": 0}, {"title": "Department of
-  Justice", "total_num_programs": 10, "total_obs": 289047655}, {"title": "Environmental
-  Protection Agency", "total_num_programs": 11, "total_obs": 176859942}, {"title":
-  "General Services Administration", "total_num_programs": 3, "total_obs": 21282480},
-  {"title": "CORPORATION FOR NATIONAL AND COMMUNITY SERVICE", "total_num_programs":
-  4, "total_obs": 55666890}, {"title": "Department of Labor", "total_num_programs":
-  1, "total_obs": 3401200}, {"title": "Agency for International Development", "total_num_programs":
-  2, "total_obs": 26900000}, {"title": "Appalachian Regional Commission", "total_num_programs":
-  3, "total_obs": 0}, {"title": "Federal Communications Commission", "total_num_programs":
-  3, "total_obs": 10998800000}, {"title": "Department of Energy", "total_num_programs":
-  1, "total_obs": 21017410}, {"title": "NATIONAL CREDIT UNION ADMINISTRATION", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Denali Commission", "total_num_programs": 2, "total_obs":
-  0}, {"title": "Library of Congress", "total_num_programs": 1, "total_obs": 0}, {"title":
-  "Inter-American Foundation", "total_num_programs": 1, "total_obs": 0}]'
-applicant_types: '[{"title": "State", "total_num_programs": 70}, {"title": "Other
-  private institutions/organizations", "total_num_programs": 58}, {"title": "Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)", "total_num_programs": 125}, {"title": "Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)", "total_num_programs":
-  112}, {"title": "Quasi-public nonprofit institution/organization", "total_num_programs":
-  41}, {"title": "U.S. Territories and possessions", "total_num_programs": 47}, {"title":
-  "Federal", "total_num_programs": 27}, {"title": "Federally Recognized lndian Tribal
-  Governments", "total_num_programs": 99}, {"title": "Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals", "total_num_programs":
-  121}, {"title": "Native American Organizations (includes lndian groups, cooperatives,
+agencies: '[{"title": "Department of State", "total_num_programs": 20, "total_obs":
+  414279193}, {"title": "Department of Housing and Urban Development", "total_num_programs":
+  14, "total_obs": 5695874599}, {"title": "Department of Health and Human Services",
+  "total_num_programs": 12, "total_obs": 1321883632}, {"title": "Department of Commerce",
+  "total_num_programs": 17, "total_obs": 825692721}, {"title": "General Services Administration",
+  "total_num_programs": 3, "total_obs": 21282480}, {"title": "CORPORATION FOR NATIONAL
+  AND COMMUNITY SERVICE", "total_num_programs": 4, "total_obs": 55666890}, {"title":
+  "Department of the Interior", "total_num_programs": 52, "total_obs": 1709053302},
+  {"title": "Department of Agriculture", "total_num_programs": 49, "total_obs": 12287487801},
+  {"title": "Appalachian Regional Commission", "total_num_programs": 3, "total_obs":
+  0}, {"title": "Department of Transportation", "total_num_programs": 9, "total_obs":
+  47081763631}, {"title": "Federal Communications Commission", "total_num_programs":
+  3, "total_obs": 10998800000}, {"title": "Department of Justice", "total_num_programs":
+  10, "total_obs": 289047655}, {"title": "Department of the Treasury", "total_num_programs":
+  13, "total_obs": 20769649053}, {"title": "Department of Defense", "total_num_programs":
+  16, "total_obs": 385182021}, {"title": "Department of Homeland Security", "total_num_programs":
+  7, "total_obs": 5683532958}, {"title": "Library of Congress", "total_num_programs":
+  1, "total_obs": 0}, {"title": "Department of Labor", "total_num_programs": 1, "total_obs":
+  3401200}, {"title": "Department of Veterans Affairs", "total_num_programs": 3, "total_obs":
+  46837953}, {"title": "Department of Education", "total_num_programs": 4, "total_obs":
+  1364122620}, {"title": "Environmental Protection Agency", "total_num_programs":
+  11, "total_obs": 176859942}, {"title": "Denali Commission", "total_num_programs":
+  2, "total_obs": 0}, {"title": "Inter-American Foundation", "total_num_programs":
+  1, "total_obs": 0}, {"title": "NATIONAL CREDIT UNION ADMINISTRATION", "total_num_programs":
+  1, "total_obs": 0}, {"title": "Agency for International Development", "total_num_programs":
+  2, "total_obs": 26900000}, {"title": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES",
+  "total_num_programs": 3, "total_obs": 35402000}, {"title": "National Endowment for
+  the Arts", "total_num_programs": 1, "total_obs": 0}, {"title": "UNITED STATES INSTITUTE
+  OF PEACE", "total_num_programs": 1, "total_obs": 1304045}, {"title": "National Archives
+  and Records Administration", "total_num_programs": 1, "total_obs": 0}, {"title":
+  "Department of Energy", "total_num_programs": 1, "total_obs": 21017410}]'
+applicant_types: '[{"title": "Non-Government - General", "total_num_programs": 22},
+  {"title": "Other private institutions/organizations", "total_num_programs": 58},
+  {"title": "Other public institution/organization", "total_num_programs": 65}, {"title":
+  "Private nonprofit institution/organization (includes institutions of higher education
+  and hospitals)", "total_num_programs": 125}, {"title": "Profit organization", "total_num_programs":
+  50}, {"title": "Public nonprofit institution/organization (includes institutions
+  of higher education and hospitals)", "total_num_programs": 112}, {"title": "Quasi-public
+  nonprofit institution/organization", "total_num_programs": 41}, {"title": "Small
+  business (less than 500 employees)", "total_num_programs": 19}, {"title": "Government
+  - General", "total_num_programs": 21}, {"title": "State", "total_num_programs":
+  70}, {"title": "U.S. Territories and possessions", "total_num_programs": 47}, {"title":
+  "Federally Recognized lndian Tribal Governments", "total_num_programs": 99}, {"title":
+  "Interstate", "total_num_programs": 17}, {"title": "Intrastate", "total_num_programs":
+  20}, {"title": "Local (includes State-designated lndian Tribes, excludes institutions
+  of higher education and hospitals", "total_num_programs": 121}, {"title": "State
+  (includes District of Columbia, public institutions of higher education and hospitals)",
+  "total_num_programs": 101}, {"title": "Sponsored organization", "total_num_programs":
+  22}, {"title": "Native American Organizations (includes lndian groups, cooperatives,
   corporations, partnerships, associations)", "total_num_programs": 51}, {"title":
-  "Other public institution/organization", "total_num_programs": 65}, {"title": "Profit
-  organization", "total_num_programs": 50}, {"title": "Specialized group (e.g. health
-  professionals, students, veterans)", "total_num_programs": 20}, {"title": "Sponsored
-  organization", "total_num_programs": 22}, {"title": "State (includes District of
-  Columbia, public institutions of higher education and hospitals)", "total_num_programs":
-  101}, {"title": "Interstate", "total_num_programs": 17}, {"title": "Intrastate",
-  "total_num_programs": 20}, {"title": "Non-Government - General", "total_num_programs":
-  22}, {"title": "Small business (less than 500 employees)", "total_num_programs":
-  19}, {"title": "U.S. Territories and possessions (includes institutions of higher
-  education and hospitals)", "total_num_programs": 47}, {"title": "Individual/Family",
-  "total_num_programs": 20}, {"title": "Minority group", "total_num_programs": 10},
-  {"title": "Government - General", "total_num_programs": 21}, {"title": "Anyone/general
-  public", "total_num_programs": 18}]'
+  "Specialized group (e.g. health professionals, students, veterans)", "total_num_programs":
+  20}, {"title": "Federal", "total_num_programs": 27}, {"title": "Anyone/general public",
+  "total_num_programs": 18}, {"title": "Individual/Family", "total_num_programs":
+  20}, {"title": "U.S. Territories and possessions (includes institutions of higher
+  education and hospitals)", "total_num_programs": 47}, {"title": "Minority group",
+  "total_num_programs": 10}]'
 fiscal_year: '2022'
 permalink: /category/community-development
 sub_cats: '[{"title": "Construction, Renewal and Operations", "permalink": "/category/community-development/construction--renewal-and-operations",
@@ -77,6 +77,8 @@ sub_cats: '[{"title": "Construction, Renewal and Operations", "permalink": "/cat
   "/category/community-development/technical-assistance-and-services", "total_num_programs":
   79, "total_obs": 7779903813}]'
 title: Community Development
+total_num_agencies: 29
+total_num_applicant_types: 24
 total_num_programs: 265
 total_num_sub_cats: 11
 total_obs: 109215041108
