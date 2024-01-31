@@ -328,6 +328,7 @@ class Program:
         self.results: list[dict[str, str]] = []
         self.sam_url: str = ''
         self.usaspending_url: str = ''
+        self.grants_url: str = ''
         self.popular_name: str = ''
         self.authorizations: list[Authorization] = []
         self.fiscal_years: list[str] = fiscal_years
@@ -563,6 +564,7 @@ with open('source_files/assistance-listings.json') as f:
         program.objective = str(d['objective'])
         program.sam_url = 'https://sam.gov/fal/' + l['id'] + '/view'
         program.usaspending_url = 'https://www.usaspending.gov/search/?hash=' + usaspending_program_search_hashes.get(program.id, '')
+        program.grants_url = 'https://grants.gov/search-grants?cfda=' + program.id
         if d['financial']['accomplishments'].get('list', False):
             if len(d['financial']['accomplishments']['list']) > 0:
                 for a in d['financial']['accomplishments']['list']:
@@ -644,8 +646,9 @@ for p in programs:
             'cfda': program.get_id(),
             'objective': program.objective,
             'sam_url': program.sam_url,
-            'popular_name': program.get_popular_name(),
             'usaspending_url': program.usaspending_url,
+            'grants_url': program.grants_url,
+            'popular_name': program.get_popular_name(),
             'assistance_types': program.get_category_printable_list('assistance_types', True),
             'beneficiary_types': program.get_category_printable_list('beneficiary_types', True),
             'applicant_types': program.get_category_printable_list('applicant_types', True),
@@ -701,6 +704,8 @@ with open('../website/assets/files/all-program-data.csv', 'w', newline='') as fi
         'sub-agency',
         'objective',
         'sam_url',
+        'usaspending_url',
+        'grants_url',
         'assistance_types',
         'beneficiary_types',
         'applicant_types',
@@ -717,6 +722,8 @@ with open('../website/assets/files/all-program-data.csv', 'w', newline='') as fi
             program.get_second_level_agency_printable(),
             program.objective,
             program.sam_url,
+            program.usaspending_url,
+            program.grants_url,
             ','.join(program.get_category_printable_list('assistance_types', True, True)),
             ','.join(program.get_category_printable_list('beneficiary_types', True, True)),
             ','.join(program.get_category_printable_list('applicant_types', True, True)),
@@ -725,7 +732,7 @@ with open('../website/assets/files/all-program-data.csv', 'w', newline='') as fi
         ])
 
 # build a markdown file for each category & sub-category using Jekyll's required format
-
+# TODO: Merge `02 - generate-category-subcategory-md.py` into this file
 
 # build a markdown file for the category index page using Jekyll's required format
 with open('../website/pages/category.md', 'w') as file:

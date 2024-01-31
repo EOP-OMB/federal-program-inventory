@@ -1,10 +1,10 @@
-# Federal Program Inventory (FPI) Pilot website
-The Federal Program Inventory is a pilot website of the Office of Management & Budget (OMB), within the Executive Office of the President. The ongoing goal of this pilot is to explore how OMB 
+# Federal Program Inventory (FPI) website
+The Federal Program Inventory is a website of the Office of Management & Budget (OMB), within the Executive Office of the President.
 
 ## How the Federal Program Investory built & hosted
-The Federal Program Investory combines public data from several government websites to present a view of federal programs. This version of the pilot is primarily focused on Federal Assistance Listings, and the feasibility of using those listings as the foundation for a larger Federal Program Investory.
+The Federal Program Investory combines public data from several government websites to present a view of federal programs. This website is primarily focused on Federal Assistance Listings, and the feasibility of using those listings as the foundation for a larger Federal Program Investory.
 
-The Federal Program Investory Pilot website is built with:
+The Federal Program Investory website is built with:
 
 - [Jekyll](https://jekyllrb.com/) via the [github-pages gem](https://rubygems.org/gems/github-pages)
   - See [current dependencies](https://pages.github.com/versions/) for GitHub Pages

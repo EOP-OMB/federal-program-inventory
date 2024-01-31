@@ -45,11 +45,11 @@ categories_json: '[{"title":"Income Security and Social Services","total_num_pro
   and Commerce","total_num_programs":225,"total_obs":284179346283.67004,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":462,"total_obs":266162659096.28998,"permalink":"/category/education"},{"title":"Employment,
   Labor, and Training","total_num_programs":131,"total_obs":229961237945.14,"permalink":"/category/employment--labor--and-training"},{"title":"Food
   and Nutrition","total_num_programs":80,"total_obs":197019503923.36,"permalink":"/category/food-and-nutrition"},{"title":"Housing","total_num_programs":109,"total_obs":187988370203.81,"permalink":"/category/housing"},{"title":"Transportation","total_num_programs":102,"total_obs":128728345552.26,"permalink":"/category/transportation"},{"title":"Community
-  Development","total_num_programs":265,"total_obs":109215041108.07,"permalink":"/category/community-development"},{"title":"Energy","total_num_programs":74,"total_obs":80880804062.109,"permalink":"/category/energy"},{"title":"Agricultural","total_num_programs":258,"total_obs":50726135554.95,"permalink":"/category/agricultural"},{"title":"Natural
-  Resources","total_num_programs":262,"total_obs":30541120852.518997,"permalink":"/category/natural-resources"},{"title":"Science
+  Development","total_num_programs":265,"total_obs":109215041108.07,"permalink":"/category/community-development"},{"title":"Energy","total_num_programs":74,"total_obs":80880804062.10901,"permalink":"/category/energy"},{"title":"Agricultural","total_num_programs":258,"total_obs":50726135554.95,"permalink":"/category/agricultural"},{"title":"Natural
+  Resources","total_num_programs":262,"total_obs":30541120852.519,"permalink":"/category/natural-resources"},{"title":"Science
   and Technology","total_num_programs":164,"total_obs":20590165581.78,"permalink":"/category/science-and-technology"},{"title":"Regional
   Development","total_num_programs":111,"total_obs":19456794284.25,"permalink":"/category/regional-development"},{"title":"Environmental
-  Quality","total_num_programs":177,"total_obs":15467796593.859,"permalink":"/category/environmental-quality"},{"title":"Information
+  Quality","total_num_programs":177,"total_obs":15467796593.859001,"permalink":"/category/environmental-quality"},{"title":"Information
   and Statistics","total_num_programs":51,"total_obs":14246730886.25,"permalink":"/category/information-and-statistics"},{"title":"Law,
   Justice and Legal Services","total_num_programs":186,"total_obs":14098982689.8,"permalink":"/category/law--justice-and-legal-services"},{"title":"Consumer
   Protection","total_num_programs":32,"total_obs":6697544566.0,"permalink":"/category/consumer-protection"},{"title":"Cultural
