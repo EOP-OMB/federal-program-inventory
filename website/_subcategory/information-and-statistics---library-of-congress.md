@@ -10,19 +10,19 @@ applicant_types: '[{"title": "Federally Recognized lndian Tribal Governments", "
   of higher education and hospitals)", "total_num_programs": 1}, {"title": "State",
   "total_num_programs": 1}, {"title": "U.S. Territories and possessions", "total_num_programs":
   1}, {"title": "U.S. Territories and possessions (includes institutions of higher
-  education and hospitals)", "total_num_programs": 1}, {"title": "Specialized group
-  (e.g. health professionals, students, veterans)", "total_num_programs": 1}, {"title":
-  "Anyone/general public", "total_num_programs": 1}]'
+  education and hospitals)", "total_num_programs": 1}, {"title": "Anyone/general public",
+  "total_num_programs": 1}, {"title": "Specialized group (e.g. health professionals,
+  students, veterans)", "total_num_programs": 1}]'
 fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/library-of-congress
 programs: '[{"cfda": "42.013", "title": "Of the People: Community Collections Grants",
   "agency": "Library of Congress", "total_obs": 0, "permalink": "/program/42.013"},
-  {"cfda": "42.014", "title": "Affiliate Centers for the Book Programming Grants",
-  "agency": "Library of Congress", "total_obs": 0, "permalink": "/program/42.014"},
   {"cfda": "90.199", "title": "Shared Services", "agency": "Denali Commission", "total_obs":
-  0, "permalink": "/program/90.199"}]'
+  0, "permalink": "/program/90.199"}, {"cfda": "42.014", "title": "Affiliate Centers
+  for the Book Programming Grants", "agency": "Library of Congress", "total_obs":
+  0, "permalink": "/program/42.014"}]'
 title: Library of Congress
 total_num_agencies: 2
 total_num_applicant_types: 10

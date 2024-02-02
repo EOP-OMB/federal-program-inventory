@@ -121,16 +121,16 @@ for l in listings_json:
         try:
             r = requests.post('https://api.usaspending.gov/api/v2/references/filter/', data=json.dumps(obj, separators=(',', ':')), headers=headers)
         except requests.exceptions.ConnectionError as e:
-            print('Connection Error')
-        status_code = r.status_code
-        if status_code == 200:
-            d = r.json()
-            hashes[l['program_number']] = d['hash']
-            i += 1
-            print('Hashes: ' + str(i))
-        else:
+            print('Connection Error: {} {}'.format(str(tries), str(l['program_number'])))
+            status_code = 000
             time.sleep(tries)
-            print('Hashes FAIL: {} {} {} {}'.format(str(status_code), str(tries), str(l['program_number']), json.dumps(obj, separators=(',', ':'))))
+        else:
+            status_code = r.status_code
+            if status_code == 200:
+                d = r.json()
+                hashes[l['program_number']] = d['hash']
+                i += 1
+                print('Hashes: ' + str(i))
 
 # save the JSON of the hashes to be used by later scripts
 with open('source_files/usaspending-program-search-hashes.json', 'w') as file:
