@@ -604,7 +604,7 @@ with open('source_files/usaspending_db_obligations_by_program.csv', newline='') 
     next(r) # skip the header row
     for row in r:
         if str(row[1]) in programs:
-            programs[str(row[1])].add_spending(str(row[0]), 'usa_spending_actual', Decimal(row[3]))
+            programs[str(row[1])].add_spending(str(row[0]), 'usa_spending_actual', Decimal(row[2]))
 
 # populate Programs into Categories
 with open('source_files/2022-program-to-function-sub-function.csv', newline='') as f:
