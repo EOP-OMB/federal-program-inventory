@@ -1,7 +1,7 @@
 # Federal Program Inventory
 
 ## About the inventory
-The Federal Program Inventory (FPI) is a comprehensive, searchable tool with critical information about all Federal programs that provide grants, loans, or direct payments to individuals, governments, firms or other organizations. The FPI increases government transparency and accessibility and fulfills Congressional mandates to the Office of Management and Budget (OMB) to create and publicly post an inventory.
+The [Federal Program Inventory (FPI)](https://fpi.omb.gov/) is a comprehensive, searchable tool with critical information about all Federal programs that provide grants, loans, or direct payments to individuals, governments, firms or other organizations. The FPI increases government transparency and accessibility and fulfills Congressional mandates to the Office of Management and Budget (OMB) to create and publicly post an inventory.
 
 ## Building the website
 The FPI website is generated using data from SAM.gov and USASpending.gov. This repository contains all of the information used to build the current FPI website.
