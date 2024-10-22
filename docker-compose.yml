@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./api  # Build the FastAPI service from the api directory
+    ports:
+      - "8000:8000"  # Expose FastAPI on port 8000
+    depends_on:
+      - elasticsearch  # Ensure Elasticsearch is available before starting the API
+    environment:
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+    networks:
+      - internal
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0  # Use Elasticsearch official image
+    environment:
+      - discovery.type=single-node  # Run as a single node cluster
+    ports:
+      - "9200:9200"  # Expose Elasticsearch on port 9200
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
