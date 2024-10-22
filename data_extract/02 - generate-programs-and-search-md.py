@@ -386,6 +386,9 @@ class Program:
         if year not in self.fiscal_years:
             raise Exception("Provided year not in allowed range")
         return self.spending[year].get_obligation_value(type, return_zeros)
+    
+    def get_objective_value(self) -> str:
+        return self.objective
 
 class ProgramSpendingYear:
     def __init__(self, year: str) -> None:
@@ -822,7 +825,9 @@ with open('../website/pages/search.md', 'w') as file:
                 'title': programs[p].get_title(),
                 'permalink': '/program/' + programs[p].get_id(),
                 'agency': programs[p].get_top_level_agency_printable(),
-                'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual')
+                'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
+                'objectives': programs[p].get_objective_value(),
+                'popularName': programs[p].get_popular_name(),
             } for p in programs
         ], key=lambda program: program['obligations'], reverse=True), separators=(',', ':'))
     }
