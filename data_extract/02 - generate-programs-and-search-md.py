@@ -550,7 +550,7 @@ with open('source_files/usaspending-program-search-hashes.json') as f:
     usaspending_program_search_hashes = json.load(f)
 
 programs: dict = {}
-with open('source_files/assistance-listings.json') as f:
+with open('source_files/assistance-listings.json', encoding='utf-8') as f:
     assistance_listings_list = json.load(f)
     for l in assistance_listings_list:
         d = l['data']
@@ -697,7 +697,7 @@ for p in programs:
 #     file.write('---\n') # End Jekyll Front Matter
 
 # generate a csv file that contains all program data
-with open('../website/assets/files/all-program-data.csv', 'w', newline='') as file:
+with open('../website/assets/files/all-program-data.csv', 'w', newline='', encoding='utf-8') as file:
     csvwriter = csv.writer(file)
     csvwriter.writerow([
         'al_number',
@@ -819,17 +819,22 @@ with open('../website/pages/search.md', 'w') as file:
         'assistance_types': generate_list_of_program_ids_for_category(assistance_types, True),
         'beneficiary_types': generate_list_of_program_ids_for_category(beneficiary_types),
         'categories': generate_list_of_program_ids_for_category(categories, True),
-        'programs': json.dumps(sorted([
-            {
-                'cfda': programs[p].get_id(),
-                'title': programs[p].get_title(),
-                'permalink': '/program/' + programs[p].get_id(),
-                'agency': programs[p].get_top_level_agency_printable(),
-                'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
-                'objectives': programs[p].get_objective_value(),
-                'popularName': programs[p].get_popular_name(),
-            } for p in programs
-        ], key=lambda program: program['obligations'], reverse=True), separators=(',', ':'))
     }
     yaml.dump(page, file)
     file.write('---\n') # End Jekyll Front Matter
+
+    programs_data = sorted([
+        {
+            'cfda': programs[p].get_id(),
+            'title': programs[p].get_title(),
+            'permalink': '/program/' + programs[p].get_id(),
+            'agency': programs[p].get_top_level_agency_printable(),
+            'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
+            'objectives': programs[p].get_objective_value(),
+            'popularName': programs[p].get_popular_name(),
+        } for p in programs
+    ], key=lambda program: program['obligations'], reverse=True)
+
+    # Write to programs-table.json
+    with open('../website/data/programs-table.json', 'w', encoding='utf-8') as json_file:
+        json.dump(programs_data, json_file, separators=(',', ':'))
