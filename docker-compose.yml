@@ -10,22 +10,30 @@ services:
       - "9200:9200"
     volumes:
       - esdata:/usr/share/elasticsearch/data
-      - ./website/data:/usr/share/elasticsearch/data  # Mount the data folder into the elasticsearch container
-    command: >
-      bash -c "
-        elasticsearch-plugin install analysis-icu &&  # Install any plugins you might need
-        /usr/local/bin/docker-entrypoint.sh eswrapper &
-        sleep 10 &&  # Wait for Elasticsearch to be ready
-        python /usr/share/elasticsearch/data/index_programs.py  # Run your Python indexing script
-      "
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
-  jekyll:
-    # Your existing jekyll service
+  website:
+    # Your existing Jekyll service
     build: ./website
     ports:
       - "4000:4000"
     depends_on:
       - elasticsearch
+
+  indexer:
+    image: python:3.9
+    volumes:
+      - ./website/data:/app/data
+      - ./scripts:/app/scripts  # Assuming your Python script is in the scripts folder
+    working_dir: /app/scripts
+    depends_on:
+      elasticsearch:
+        condition: service_healthy  
+    command: ["python", "index_programs.py"]
 
 volumes:
   esdata:
