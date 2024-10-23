@@ -1,25 +1,22 @@
 version: '3.8'
 
 services:
-  web:
-    build: ./website
+  website:
+    build:
+      context: ./website   # Adjust the build context to point to the /website folder
     ports:
-      - "4000:4000"
+      - "8080:8080"         # Expose port 8080 for the website
+    depends_on:
+      - elasticsearch       # Ensure Elasticsearch starts before the website
     volumes:
-      - ./web:/srv/jekyll
-    command: jekyll serve --watch --host 0.0.0.0 --port 4000
-    networks:
-      - internal
+      - ./website:/app      # Mount the website directory to /app
+    environment:
+      - JEKYLL_ENV=production  # Set the environment to production
 
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
     environment:
       - discovery.type=single-node
-    expose:
-      - "9200"
-    networks:
-      - internal
-
-networks:
-  internal:
-    driver: bridge
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"         # Expose Elasticsearch on port 9200
