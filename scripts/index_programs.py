@@ -39,8 +39,11 @@ def load_data(json_file, index_name):
     # Prepare data for bulk upload
     actions = [
         {
+            "_op_type": "update",
+            "_id": program['cfda'],
             "_index": index_name,
-            "_source": program
+            "doc": program,
+            "doc_as_upsert": True
         }
         for program in programs
     ]
@@ -48,8 +51,17 @@ def load_data(json_file, index_name):
     helpers.bulk(es, actions)
     print(f"Loaded {len(actions)} documents into Elasticsearch index '{index_name}'")
 
+def delete_index(index_name):
+    if es.indices.exists(index=index_name):
+        es.indices.delete(index=index_name)
+        print(f"Index '{index_name}' deleted.")
+    else:
+        print(f"Index '{index_name}' does not exist.")
+
 if __name__ == "__main__":
     index_name = "programs"
+    # Delete the existing index
+    # delete_index(index_name)
     
     # Create the index with the custom mapping
     create_index_with_mapping(index_name)

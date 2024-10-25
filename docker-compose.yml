@@ -1,14 +1,14 @@
-version: '3.8'
 services:
   api:
-    build: ./api  # Build the FastAPI service from the api directory
+    build: ./api
     ports:
-      - "8000:8000"  # Expose FastAPI on port 8000
+      - "8000:8000"
     depends_on:
-      - elasticsearch  # Ensure Elasticsearch is available before starting the API
+      - elasticsearch
     environment:
-      - ELASTICSEARCH_HOST=elasticsearch
-      - ELASTICSEARCH_PORT=9200
+      - ES_HOST=elasticsearch
+      - ES_PORT=9200
+      - ES_SCHEME=http
     networks:
       - internal
 
@@ -16,8 +16,8 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
     environment:
       - discovery.type=single-node
-      - xpack.security.enabled=false  # Disable security features
-      - xpack.security.transport.ssl.enabled=false  # Disable transport SSL
+      - xpack.security.enabled=false
+      - xpack.security.transport.ssl.enabled=false
     ports:
       - "9200:9200"
     volumes:
@@ -27,25 +27,30 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - internal
 
   website:
-    # Your existing Jekyll service
     build: ./website
     ports:
       - "4000:4000"
     depends_on:
       - elasticsearch
+    networks:
+      - internal
 
   indexer:
     image: python:3.9
     volumes:
       - ./website/data:/app/data
-      - ./scripts:/app/scripts  # Assuming your Python script is in the scripts folder
+      - ./scripts:/app/scripts
     working_dir: /app/scripts
     depends_on:
       elasticsearch:
-        condition: service_healthy  
+        condition: service_healthy
     command: ["python", "index_programs.py"]
+    networks:
+      - internal
 
 volumes:
   esdata:
@@ -54,7 +59,3 @@ volumes:
 networks:
   internal:
     driver: bridge
-    
-
-  
-
