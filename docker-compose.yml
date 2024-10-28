@@ -8,8 +8,6 @@ services:
       - "8080:8080"         # Expose port 8080 for the website
     depends_on:
       - elasticsearch       # Ensure Elasticsearch starts before the website
-    volumes:
-      - ./website:/app      # Mount the website directory to /app
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
