@@ -1,25 +1,4 @@
-version: '3.8'
 services:
-  api:
-    build: ./api
-    ports:
-      - "8000:8000"
-    depends_on:
-      - elasticsearch
-    environment:
-      - ES_HOST=elasticsearch
-      - ES_PORT=9200
-      - ES_SCHEME=http
-    networks:
-      - internal
-  website:
-    build:
-      context: ./website   # Adjust the build context to point to the /website folder
-    ports:
-      - "8080:8080"         # Expose port 8080 for the website
-    depends_on:
-      - elasticsearch       # Ensure Elasticsearch starts before the website
-
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
     environment:
@@ -35,6 +14,36 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - internal
+
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-X", "GET", "http://localhost:8000/", "-H", "accept: application/json"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - ES_HOST=elasticsearch
+      - ES_PORT=9200
+      - ES_SCHEME=http
+    networks:
+      - internal
+
+  website:
+    build:
+      context: ./website
+    ports:
+      - "8080:8080"         
+    depends_on:
+      api:
+        condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
 
