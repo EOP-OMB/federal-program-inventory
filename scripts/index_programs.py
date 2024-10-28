@@ -39,8 +39,11 @@ def load_data(json_file, index_name):
     # Prepare data for bulk upload
     actions = [
         {
+            "_op_type": "update",
+            "_id": program['cfda'],
             "_index": index_name,
-            "_source": program
+            "doc": program,
+            "doc_as_upsert": True
         }
         for program in programs
     ]
