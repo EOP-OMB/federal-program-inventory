@@ -1,3 +1,4 @@
+version: '3.8'
 services:
   api:
     build: ./api
@@ -11,6 +12,13 @@ services:
       - ES_SCHEME=http
     networks:
       - internal
+  website:
+    build:
+      context: ./website   # Adjust the build context to point to the /website folder
+    ports:
+      - "8080:8080"         # Expose port 8080 for the website
+    depends_on:
+      - elasticsearch       # Ensure Elasticsearch starts before the website
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
@@ -19,7 +27,7 @@ services:
       - xpack.security.enabled=false
       - xpack.security.transport.ssl.enabled=false
     ports:
-      - "9200:9200"
+      - "9200:9200"         # Expose Elasticsearch on port 9200
     volumes:
       - esdata:/usr/share/elasticsearch/data
     healthcheck:
@@ -30,17 +38,8 @@ services:
     networks:
       - internal
 
-  website:
-    build: ./website
-    ports:
-      - "4000:4000"
-    depends_on:
-      - elasticsearch
-    networks:
-      - internal
-
   indexer:
-    image: python:3.9
+    image: python:3.11.9
     volumes:
       - ./website/data:/app/data
       - ./scripts:/app/scripts
