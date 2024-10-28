@@ -10,8 +10,6 @@ services:
       - elasticsearch       # Ensure Elasticsearch starts before the website
     volumes:
       - ./website:/app      # Mount the website directory to /app
-    environment:
-      - JEKYLL_ENV=production  # Set the environment to production
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
