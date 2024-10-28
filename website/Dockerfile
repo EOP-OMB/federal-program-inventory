@@ -1,4 +1,7 @@
 # Stage 1: Build the static HTML / CSS / JS bundle
+#          This stage is responsible for using Jekyll to build the static
+#          files that are ultimately served by nginx. This is not the final
+#          image.
 FROM ruby:3.2.2 AS build-image
 ENV NODE_VERSION=18.17.1
 ENV NVM_DIR=/root/.nvm
@@ -32,6 +35,8 @@ RUN bundle exec jekyll build && \
     npx gulp updateUswds
 
 # Stage 2: Build the final nginx image
+#          This stage is responsible for building the final nginx image that
+#          contains the static files generated in Stage 1.
 FROM nginxinc/nginx-unprivileged:alpine AS runtime-image
 
 # Copy nginx configuration and built site from Stage 1
