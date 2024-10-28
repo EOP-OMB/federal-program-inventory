@@ -17,10 +17,10 @@ async def search_programs(query: str = None, es: Elasticsearch = Depends(get_ela
                 "query": {
                     "bool": {
                         "should": [
-                            {"match": {"title": {"query": query, "operator": "and"}}},
-                            {"match": {"objectives": {"query": query, "operator": "and"}}},
-                            {"term": {"cfda": query}},
-                            {"match": {"popularName": {"query": query, "operator": "and"}}}
+                            {"wildcard": {"title": f"*{query}*"}},
+                            {"wildcard": {"objectives": f"*{query}*"}},
+                            {"wildcard": {"cfda": f"*{query}*"}},
+                            {"wildcard": {"popularName": f"*{query}*"}}
                         ]
                     }
                 }
