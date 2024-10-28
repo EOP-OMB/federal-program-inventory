@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   website:
     build:
@@ -15,7 +15,7 @@ services:
       - xpack.security.enabled=false  # Disable security features
       - xpack.security.transport.ssl.enabled=false  # Disable transport SSL
     ports:
-      - "9200:9200"
+      - "9200:9200"         # Expose Elasticsearch on port 9200
     volumes:
       - esdata:/usr/share/elasticsearch/data
     healthcheck:
@@ -25,7 +25,7 @@ services:
       retries: 5
 
   indexer:
-    image: python:3.9
+    image: python:3.11.9
     volumes:
       - ./website/data:/app/data
       - ./scripts:/app/scripts  # Assuming your Python script is in the scripts folder
