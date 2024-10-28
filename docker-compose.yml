@@ -1,5 +1,15 @@
 version: '3'
 services:
+  website:
+    build:
+      context: ./website   # Adjust the build context to point to the /website folder
+    ports:
+      - "8080:8080"         # Expose port 8080 for the website
+    depends_on:
+      - elasticsearch       # Ensure Elasticsearch starts before the website
+    volumes:
+      - ./website:/app      # Mount the website directory to /app
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
     environment:
@@ -15,14 +25,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-  website:
-    # Your existing Jekyll service
-    build: ./website
-    ports:
-      - "4000:4000"
-    depends_on:
-      - elasticsearch
 
   indexer:
     image: python:3.9
