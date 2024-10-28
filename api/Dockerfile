@@ -13,6 +13,8 @@ COPY ./app ./app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
+RUN pip install fastapi uvicorn
+
 # Expose the port that FastAPI will run on
 EXPOSE 8000
 

@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch, helpers
 import json
 import os
 
-#Elasticsearch client connected to elasticsearch service in Docker
+# Elasticsearch client connected to the service
 es = Elasticsearch(hosts=["http://elasticsearch:9200"])
 
 # Function to create an index with the custom mapping
@@ -11,10 +11,34 @@ def create_index_with_mapping(index_name):
         "mappings": {
             "properties": {
                 "cfda": { "type": "text" },
-                "title": { "type": "text" },
-                "agency": { "type": "text" },
+                "title": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "agency": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
                 "obligations": { "type": "float" },
-                "objectives": { "type": "text" },
+                "objectives": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
                 "popularName": { "type": "text" },
                 "permalink": {
                     "type": "text",
@@ -60,8 +84,8 @@ def delete_index(index_name):
 
 if __name__ == "__main__":
     index_name = "programs"
-    # Delete the existing index
-    # delete_index(index_name)
+    # Uncomment to delete the existing index if necessary
+    delete_index(index_name)
     
     # Create the index with the custom mapping
     create_index_with_mapping(index_name)

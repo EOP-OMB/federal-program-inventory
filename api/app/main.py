@@ -1,8 +1,18 @@
-from fastapi import FastAPI
 from app.routers import search
 from app.dependencies import get_elasticsearch
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+# Configure CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Elasticsearch dependency injection
 app.dependency_overrides[get_elasticsearch] = get_elasticsearch
