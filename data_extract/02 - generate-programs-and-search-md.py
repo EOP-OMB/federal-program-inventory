@@ -832,6 +832,10 @@ with open('../website/pages/search.md', 'w') as file:
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
+            'subAgency' : programs[p].get_second_level_agency_printable(),
+            'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
+            'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
+            'categories': programs[p].get_category_printable_list('categories', False, True),
         } for p in programs
     ], key=lambda program: program['obligations'], reverse=True)
 
