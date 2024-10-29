@@ -1,15 +1,22 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-class ProgramTable(BaseModel):
-    cfda: Optional[str] = None
+class Program(BaseModel):
+    cfda: str
     title: str
-    agency: str
     permalink: str
     agency: str
-    obligations: float
-    objectives: str
-    popularName: str
+    subAgency: Optional[str]
+    obligations: Optional[float]
+    objectives: Optional[str]
+    popularName: Optional[str]
+    assistanceTypes: Optional[List[str]]
+    applicantTypes: Optional[List[str]]
+    categories: Optional[List[str]]
 
-class SearchResponse(BaseModel):
-    programs: List[ProgramTable]
+class ProgramTable(BaseModel):
+    programs: List[Program]
+    total_obligations: float
+    count: int
+    page: int
+    page_size: int

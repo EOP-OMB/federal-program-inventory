@@ -1,62 +1,95 @@
-from fastapi import APIRouter, Depends, HTTPException, Query
-from elasticsearch import Elasticsearch, NotFoundError
-from app.models.programTable import SearchResponse, ProgramTable
+from elasticsearch import Elasticsearch
+from fastapi import APIRouter, HTTPException, Query, Depends
+from typing import List, Optional
+from app.models.programTable import ProgramTable
 from app.dependencies import get_elasticsearch
 
-router = APIRouter(
-    prefix="/api",
-    tags=["Search"]
-)
+router = APIRouter()
+INDEX_NAME = "programs"
 
-@router.get("/search/", response_model=SearchResponse)
-async def search_programs(
-    query: str = None,
-    page: int = Query(1, ge=1),
-    page_size: int = Query(10, ge=1),
-    sort_field: str = Query("title", regex="^(title|agency|obligations|objectives)$"),
-    sort_order: str = Query("asc", regex="^(asc|desc)$"),
+@router.get("/search/programsTable", response_model=ProgramTable)
+def search_programs(
+    query: Optional[str] = None,
+    subAgency: Optional[str] = None,
+    assistanceTypes: Optional[List[str]] = Query(None),
+    applicantTypes: Optional[List[str]] = Query(None),
+    categories: Optional[List[str]] = Query(None),
+    page: int = 1,
+    page_size: int = 10,
+    sort_field: str = "title",
+    sort_order: str = "asc",
     es: Elasticsearch = Depends(get_elasticsearch)
 ):
-    try:
-        # Calculate pagination offset
-        offset = (page - 1) * page_size
-        
-        # Determine the correct sort field (use .keyword for text fields)
-        if sort_field in ["title", "agency", "objectives"]:
-            sort_field += ".keyword"
-
-        # Construct the search body with sorting and pagination
-        search_body = {
-            "from": offset,
-            "size": page_size,
-            "sort": [{sort_field: {"order": sort_order}}],
-            "query": {
-                "bool": {
-                        "should": [
-                            {"wildcard": {"title": f"*{query}*"}},
-                            {"wildcard": {"objectives": f"*{query}*"}},
-                            {"wildcard": {"cfda": f"*{query}*"}},
-                            {"wildcard": {"popularName": f"*{query}*"}}
-                        ]
-                }
-            } if query else {"match_all": {}}
+    if page < 1 or page_size < 1:
+        raise HTTPException(status_code=400, detail="Page and page_size must be greater than 0")
+    
+    # Construct Elasticsearch query
+    search_query = {
+        "bool": {
+            "must": [],
+            "filter": []
         }
+    }
+    
+    # Search text query
+    if query:
+        search_query["bool"]["must"].append({
+            "multi_match": {
+                "query": query,
+                "fields": ["title^2", "agency", "objectives"]
+            }
+        })
 
-        # Execute the search request
-        response = es.search(index="programs", body=search_body)
-        
-        # Extract the program data from the response
-        programs = [ProgramTable(**hit["_source"]) for hit in response["hits"]["hits"]]
-        
-        # Return the paginated response
-        return SearchResponse(
-            programs=programs,
-            total=response["hits"]["total"]["value"],
-            page=page,
-            page_size=page_size
-        )
+    # Filtering conditions
+    if subAgency:
+        search_query["bool"]["filter"].append({"term": {"subAgency": subAgency}})
+    if assistanceTypes:
+        search_query["bool"]["filter"].append({"terms": {"assistanceTypes": assistanceTypes}})
+    if applicantTypes:
+        search_query["bool"]["filter"].append({"terms": {"applicantTypes": applicantTypes}})
+    if categories:
+        search_query["bool"]["filter"].append({"terms": {"categories": categories}})
+    
+    # Sorting
+    sort_options = {
+        "title": "title.keyword",
+        "agency": "agency.keyword",
+        "objectives": "objectives.keyword"
+    }
+    sort_field = sort_options.get(sort_field, "title.keyword")
+    sort = [{sort_field: {"order": sort_order}}]
+    
+    # Aggregation for obligations
+    aggregation = {
+        "total_obligations": {"sum": {"field": "obligations"}},
+        "count": {"value_count": {"field": "cfda"}}
+    }
+    
+    # Full Elasticsearch query
+    es_query = {
+        "query": search_query,
+        "sort": sort,
+        "from": (page - 1) * page_size,
+        "size": page_size,
+        "aggs": aggregation
+    }
+    
+    # Execute search
+    response = es.search(index=INDEX_NAME, body=es_query)
+    
+    # Parse results
+    hits = response["hits"]["hits"]
+    programs = [hit["_source"] for hit in hits]
+    total_obligations = response["aggregations"]["total_obligations"]["value"]
+    total_count = response["aggregations"]["count"]["value"]
 
-    except NotFoundError:
-        raise HTTPException(status_code=404, detail="Index not found")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    # Prepare response model
+    result = ProgramTable(
+        programs=programs,
+        total_obligations=total_obligations,
+        count=total_count,
+        page=page,
+        page_size=page_size
+    )
+    
+    return result

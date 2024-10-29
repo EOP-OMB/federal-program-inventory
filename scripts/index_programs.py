@@ -10,7 +10,7 @@ def create_index_with_mapping(index_name):
     mapping = {
         "mappings": {
             "properties": {
-                "cfda": { "type": "text" },
+                "cfda": { "type": "keyword" },
                 "title": {
                     "type": "text",
                     "fields": {
@@ -43,7 +43,19 @@ def create_index_with_mapping(index_name):
                 "permalink": {
                     "type": "text",
                     "index": False  # Store, but do not index permalink
-                }
+                },
+                "assistanceTypes": {
+                    "type": "keyword"
+                },
+                "applicantTypes": {
+                    "type": "keyword"
+                },
+                "categories": {
+                    "type": "keyword"
+                },
+                "subAgency": {
+                    "type": "keyword",
+                },
             }
         }
     }
