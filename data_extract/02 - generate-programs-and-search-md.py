@@ -389,6 +389,14 @@ class Program:
     
     def get_objective_value(self) -> str:
         return self.objective
+    
+    def get_agency_subagency(self) -> str:
+        subAgency = self.get_second_level_agency_printable()
+        agency = self.get_top_level_agency_printable()
+        if (subAgency == "N/A"):
+            return agency 
+        else:
+            return agency + " - " + subAgency
 
 class ProgramSpendingYear:
     def __init__(self, year: str) -> None:
@@ -832,7 +840,7 @@ with open('../website/pages/search.md', 'w') as file:
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
-            'subAgency' : programs[p].get_second_level_agency_printable(),
+            'agencySubAgency' : programs[p].get_agency_subagency(),
             'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
             'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
             'categories': programs[p].get_category_printable_list('categories', False, True),

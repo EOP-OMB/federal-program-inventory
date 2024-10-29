@@ -53,7 +53,7 @@ def create_index_with_mapping(index_name):
                 "categories": {
                     "type": "keyword"
                 },
-                "subAgency": {
+                "agencySubAgency": {
                     "type": "keyword",
                 },
             }
