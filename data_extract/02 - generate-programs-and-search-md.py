@@ -279,6 +279,19 @@ class GenericCategory:
     
     def get_parent(self) -> 'GenericCategory':
         return self.parent
+class GenericHierarchyObj:
+    def __init__(self, title: str, subTitle: str):
+        self.title = title
+        self.subTitle = subTitle
+
+    def __lt__(self, other):
+        return (self.title, self.subTitle) < (other.title, other.subTitle)
+
+    def __repr__(self):
+        return f"GenericHierarchyObj(title={self.title}, subTitle={self.subTitle})"
+
+    def to_dict(self):
+        return {"title": self.title, "subTitle": self.subTitle}
 
 class Agency(GenericCategory):
     def __init__(self, id: str, title: str) -> None:
@@ -390,13 +403,21 @@ class Program:
     def get_objective_value(self) -> str:
         return self.objective
     
-    def get_agency_subagency(self) -> str:
-        subAgency = self.get_second_level_agency_printable()
-        agency = self.get_top_level_agency_printable()
-        if (subAgency == "N/A"):
-            return agency 
-        else:
-            return agency + " - " + subAgency
+    def get_agency_subagency(self) -> GenericHierarchyObj:
+        subAgencyTitle = self.get_second_level_agency_printable()
+        agencyTitle = self.get_top_level_agency_printable()
+        if (subAgencyTitle == "N/A"):
+            return GenericHierarchyObj(agencyTitle, '')
+        return GenericHierarchyObj(agencyTitle, subAgencyTitle)
+
+    def get_categories_subcategories(self) -> list[GenericHierarchyObj]:
+        r = []
+        for c in getattr(self, 'categories'):
+            if c.get_parent() is not None:
+                for p in getattr(self, 'categories'):
+                    if p.id == c.parent.id:
+                        r.append(GenericHierarchyObj(p.title, c.title))
+        return sorted(r)
 
 class ProgramSpendingYear:
     def __init__(self, year: str) -> None:
@@ -836,14 +857,14 @@ with open('../website/pages/search.md', 'w') as file:
             'cfda': programs[p].get_id(),
             'title': programs[p].get_title(),
             'permalink': '/program/' + programs[p].get_id(),
-            'agency': programs[p].get_top_level_agency_printable(),
+            # 'agency': programs[p].get_top_level_agency_printable(),
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
-            'agencySubAgency' : programs[p].get_agency_subagency(),
+            'agency' : programs[p].get_agency_subagency().__dict__,
             'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
             'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
-            'categories': programs[p].get_category_printable_list('categories', False, True),
+            'categories': [item.to_dict() for item in programs[p].get_categories_subcategories()],
         } for p in programs
     ], key=lambda program: program['obligations'], reverse=True)
 
