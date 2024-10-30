@@ -29,6 +29,14 @@ def create_index_with_mapping(index_name):
                         }
                     }
                 },
+                "agencySubAgency": {
+                    "type": "keyword",
+                    "fields": {
+                        "parent": {
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "obligations": { "type": "float" },
                 "objectives": {
                     "type": "text",
@@ -42,20 +50,38 @@ def create_index_with_mapping(index_name):
                 "popularName": { "type": "text" },
                 "permalink": {
                     "type": "text",
-                    "index": False  # Store, but do not index permalink
+                    "index": False
                 },
                 "assistanceTypes": {
-                    "type": "keyword"
+                    "type": "keyword",
+                    "fields": {
+                        "parent": {
+                            "type": "keyword"
+                        }
+                    }
                 },
                 "applicantTypes": {
                     "type": "keyword"
                 },
                 "categories": {
-                    "type": "keyword"
-                },
-                "agencySubAgency": {
                     "type": "keyword",
-                },
+                    "fields": {
+                        "parent": {
+                            "type": "keyword"
+                        }
+                    }
+                }
+            }
+        },
+        "settings": {
+            "analysis": {
+                "analyzer": {
+                    "keyword_lowercase": {
+                        "type": "custom",
+                        "tokenizer": "keyword",
+                        "filter": ["lowercase"]
+                    }
+                }
             }
         }
     }
