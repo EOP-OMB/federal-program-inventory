@@ -5,6 +5,7 @@ from decimal import Decimal
 from operator import itemgetter
 from typing import Optional
 from dataclasses import dataclass, field, asdict
+from pydantic import BaseModel
 
 FISCAL_YEARS: list[str] = ['2022', '2023', '2024'] # this is the list of fiscal years calculated
 PRIMARY_FISCAL_YEAR: str = '2022' # this is the primary year used / displayed across the site
@@ -281,64 +282,19 @@ class GenericCategory:
     def get_parent(self) -> 'GenericCategory':
         return self.parent
     
-@dataclass(order=True)
-class SubAgency:
+class SubAgency(BaseModel):
     title: str
-
-    @classmethod
-    def from_dict(cls, data):
-        return cls(**data)
-
-@dataclass(order=True)
-class AgencySubAgency:
-    title: str
-    subAgency: SubAgency = field(default=None, compare=False)
-
-    def __post_init__(self):
-        # Custom comparison logic for subAgency
-        object.__setattr__(self, 'sort_key', (self.title, self.subAgency.title if self.subAgency else ''))
-
-    @classmethod
-    def from_dict(cls, data):
-        subAgency_data = data.get('subAgency')
-        subAgency = SubAgency.from_dict(subAgency_data) if subAgency_data else None
-        return cls(title=data['title'], subAgency=subAgency)
     
-@dataclass(order=True)
-class SubCategory:
+class AgencySubAgency(BaseModel):
+    title: str
+    subAgency: Optional[SubAgency] = None
+    
+class SubCategory(BaseModel):
     title: str
 
-    @classmethod
-    def from_dict(cls, data):
-        return cls(**data)
-
-@dataclass(order=True)
-class Category:
+class Category(BaseModel):
     title: str
-    subCategory: SubCategory = field(default=None, compare=False)
-
-    def __post_init__(self):
-        object.__setattr__(self, 'sort_key', (self.title, self.subCategory.title if self.subCategory else ''))
-
-@classmethod
-def from_dict(cls, data):
-    subCategory_data = data.get('subCategory')
-    subCategory = SubCategory.from_dict(subCategory_data) if subCategory_data else None
-    return cls(title=data['title'], subCategory=subCategory)
-
-class GenericHierarchyObj:
-    def __init__(self, title: str, subTitle: str):
-        self.title = title
-        self.subTitle = subTitle
-
-    def __lt__(self, other):
-        return (self.title, self.subTitle) < (other.title, other.subTitle)
-
-    def __repr__(self):
-        return f"GenericHierarchyObj(title={self.title}, subTitle={self.subTitle})"
-
-    def to_dict(self):
-        return {"title": self.title, "subTitle": self.subTitle}
+    subCategory: SubCategory = None
 
 class Agency(GenericCategory):
     def __init__(self, id: str, title: str) -> None:
@@ -449,30 +405,24 @@ class Program:
     
     def get_objective_value(self) -> str:
         return self.objective
-    
-    # def get_agency_subagency(self) -> GenericHierarchyObj:
-    #     subAgencyTitle = self.get_second_level_agency_printable()
-    #     agencyTitle = self.get_top_level_agency_printable()
-    #     if (subAgencyTitle == "N/A"):
-    #         return GenericHierarchyObj(agencyTitle, '')
-    #     return GenericHierarchyObj(agencyTitle, subAgencyTitle)
 
     def get_agency_subagency(self) -> AgencySubAgency:
         subAgencyTitle = self.get_second_level_agency_printable()
         agencyTitle = self.get_top_level_agency_printable()
         if (subAgencyTitle == "N/A"):
-            return AgencySubAgency(agencyTitle, None)
-        return AgencySubAgency(agencyTitle, SubAgency(subAgencyTitle))
+            return AgencySubAgency(title=agencyTitle)
+        return AgencySubAgency(title=agencyTitle, subAgency=SubAgency(title=subAgencyTitle))
+
 
     def get_categories_subcategories(self) -> list[Category]:
         r = []
-        for c in getattr(self, 'categories'):
+        categories = getattr(self, 'categories')
+        for c in categories:
             if c.get_parent() is not None:
-                for p in getattr(self, 'categories'):
+                for p in categories:
                     if p.id == c.parent.id:
-                        r.append(Category(p.title, SubCategory(c.title)))
-        return sorted(r)
-
+                        r.append(Category(title=p.title, subCategory=SubCategory(title=c.title)))
+        return sorted(r, key=lambda category: (category.title, category.subCategory.title if category.subCategory else ''))
 class ProgramSpendingYear:
     def __init__(self, year: str) -> None:
         self.year: str = year
@@ -915,10 +865,10 @@ with open('../website/pages/search.md', 'w') as file:
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
-            'agency' : asdict(programs[p].get_agency_subagency()),
+            'agency' : programs[p].get_agency_subagency().dict(),
             'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
             'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
-            'categories': [asdict(category) for category in programs[p].get_categories_subcategories()],
+            'categories': [category.dict() for category in programs[p].get_categories_subcategories()],
         } for p in programs
     ], key=lambda program: program['obligations'], reverse=True)
 
