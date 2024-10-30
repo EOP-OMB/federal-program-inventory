@@ -1,398 +1,114 @@
 <script>
-  // Base API URL
-  const API_BASE_URL = 'http://localhost:8000';
-  
-  // State management
-  const state = {
-    page: 1,
-    pageSize: 20,
-    sortField: 'title',
-    sortOrder: 'asc',
-    filters: {
-      categories: [],
-      agencySubAgency: [],
-      assistanceTypes: [],
-      applicantTypes: []
-    },
-    activeFilterType: null,
-    expandedCategories: new Set(),
-    expandedAgencies: new Set()
-  };
-  
-  // Utility functions
-  function formatCurrency(amount) {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(amount);
-  }
-  
-  // Event handlers
-  function handleFilterChange(filterType, value, checked) {
-    if (!state.activeFilterType && checked) {
-      state.activeFilterType = filterType;
-    }
-  
-    if (!state.activeFilterType || filterType === state.activeFilterType) {
-      if (checked) {
-        state.filters[filterType] = [...state.filters[filterType], value];
-      } else {
-        state.filters[filterType] = state.filters[filterType].filter(v => v !== value);
-        if (state.filters[filterType].length === 0) {
-          state.activeFilterType = null;
-        }
-      }
-      state.page = 1;
-      fetchAndUpdateResults();
-    }
-  }
-  
-  function handleParentCategoryChange(filterType, parentValue, checked) {
-    const childCheckboxes = document.querySelectorAll(`[data-parent="${parentValue}"] input[type="checkbox"]`);
-    const childValues = Array.from(childCheckboxes).map(cb => cb.value);
-    
-    if (!state.activeFilterType && checked) {
-      state.activeFilterType = filterType;
-    }
-  
-    if (!state.activeFilterType || filterType === state.activeFilterType) {
-      if (checked) {
-        const newValues = childValues.filter(v => !state.filters[filterType].includes(v));
-        state.filters[filterType] = [...state.filters[filterType], ...newValues];
-      } else {
-        state.filters[filterType] = state.filters[filterType].filter(v => !childValues.includes(v));
-        if (state.filters[filterType].length === 0) {
-          state.activeFilterType = null;
-        }
-      }
-      
-      childCheckboxes.forEach(cb => {
-        cb.checked = checked;
-      });
-  
-      state.page = 1;
-      fetchAndUpdateResults();
-    }
-  }
-  
-  function toggleExpand(elementId, button) {
-    const content = document.getElementById(elementId);
-    if (content) {
-      const isExpanded = content.style.display !== 'none';
-      content.style.display = isExpanded ? 'none' : 'block';
-      const icon = button.querySelector('img');
-      if (icon) {
-        icon.style.transform = isExpanded ? 'none' : 'rotate(90deg)';
-      }
-    }
-  }
-  
-  function handleSort(field) {
-    if (state.sortField === field) {
-      state.sortOrder = state.sortOrder === 'asc' ? 'desc' : 'asc';
-    } else {
-      state.sortField = field;
-      state.sortOrder = 'asc';
-    }
-    fetchAndUpdateResults();
-  }
-  
-  function handlePageChange(newPage) {
-    if (newPage >= 1) {
-      state.page = newPage;
-      fetchAndUpdateResults();
-    }
-  }
-  
-  // API interaction
-  async function fetchAndUpdateResults() {
-    const queryParams = new URLSearchParams({
-      page: state.page,
-      page_size: state.pageSize,
-      sort_field: state.sortField,
-      sort_order: state.sortOrder
-    });
-  
-    // Add filters to query params
-    Object.entries(state.filters).forEach(([key, values]) => {
-      if (values.length > 0) {
-        queryParams.append(key, values.join(','));
-      }
-    });
-  
+  // Set API URL with environment variable for production use
+  const API_BASE_URL = "http://localhost:8000/api/search/programsTable";
+
+  // Get URL search params to handle pagination, search, and sorting from URL
+  let URLparams = (new URL(document.location)).searchParams;
+
+  // Initialize an empty set for filtered programs
+  var filteredProgramIds = new Set();
+  var tablePrograms = [];
+
+  // Helper function to fetch programs from the API
+  async function fetchPrograms(queryParams = {}) {
+    const url = new URL(API_BASE_URL);
+    Object.keys(queryParams).forEach(key => url.searchParams.append(key, queryParams[key]));
+
     try {
-      const response = await fetch(`${API_BASE_URL}/search/programsTable?${queryParams}`);
+      const response = await fetch(url);
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error('Failed to fetch programs');
       }
       const data = await response.json();
-      updateUI(data);
+      return data.programs || [];
     } catch (error) {
-      console.error('Error fetching search results:', error);
+      console.error("Error fetching programs:", error);
+      return [];
     }
   }
-  
-  // UI update functions
-  function updateUI(data) {
-    updateTable(data.programs);
-    updateFacets(data.facets);
-    updatePagination(data.count);
-    updateSummaryStats(data.count, data.total_obligations);
-    updateSortIndicators();
+
+  // Initialize searchGrid for displaying programs data
+  var searchGrid = new gridjs.Grid({
+    columns: [
+      { id: "cfda", name: "Number", hidden: true },
+      {
+        id: "title",
+        name: "Name",
+        width: '40%',
+        formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}" target="_blank">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`)
+      },
+      { id: "agency", name: "Agency", width: '30%' },
+      {
+        id: "obligations",
+        name: "Obligations (FY {{page.fiscal_year}})",
+        width: '29%',
+        formatter: (cell) => `${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' }).format(cell)}`
+      },
+      { id: "permalink", name: "Link", hidden: true }
+    ],
+    style: { container: { overflow: 'hidden' } },
+    sort: true,
+    search: { ignoreHiddenColumns: false },
+    pagination: { limit: 20 },
+    data: []
+  }).render(document.getElementById("programs-table"));
+
+  // Function to update grid data based on filters, pagination, and sorting
+  async function updateGrid(query = '', page = 1, pageSize = 20, sortField = "title", sortOrder = "asc") {
+    tablePrograms = await fetchPrograms({
+      query,
+      page,
+      page_size: pageSize,
+      sort_field: sortField,
+      sort_order: sortOrder
+    });
+
+    searchGrid.updateConfig({ data: tablePrograms }).forceRender();
+    updateSummary();
   }
-  
-  function updateTable(programs) {
-    const tableBody = document.getElementById('programs-table-body');
-    if (!tableBody) return;
-  
-    tableBody.innerHTML = programs.map(program => `
-      <tr>
-        <td>
-          <a href="${program.permalink}" class="usa-link">
-            ${program.title}
-          </a>
-        </td>
-        <td>${program.agency}</td>
-        <td class="text-right">${formatCurrency(program.obligations)}</td>
-      </tr>
-    `).join('');
+
+  // Function to calculate and display the total number and obligations for displayed programs
+  function updateSummary() {
+    document.getElementById('big-number-num-of-programs').innerHTML = tablePrograms.length.toLocaleString('en-US', { maximumFractionDigits: 0 });
+    let totalObligations = tablePrograms.reduce((acc, program) => acc + (program.obligations || 0), 0);
+    document.getElementById('big-number-obligations').innerHTML = totalObligations.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' });
   }
-  
-  function updateFacets(facets) {
-    Object.entries(facets).forEach(([filterType, values]) => {
-      const container = document.getElementById(`${filterType}-list`);
-      if (!container) return;
-  
-      const structure = window.filterStructure[container.dataset.structureType];
-      if (!structure) return;
-  
-      let html = '';
-  
-      if (filterType === 'categories' || filterType === 'agencySubAgency') {
-        // Handle hierarchical facets
-        html = structure.map(parent => {
-          const parentCount = values.find(v => v.key === parent.title)?.doc_count || 0;
-          const isDisabled = state.activeFilterType && 
-                            state.activeFilterType !== filterType && 
-                            parentCount === 0;
-  
-          return `
-            <div class="filter-group">
-              <div class="display-flex">
-                ${parent.sub_categories?.length ? `
-                  <button class="toggle-button"
-                          onclick="toggleExpand('${filterType}-${parent.title}', this)"
-                          ${isDisabled ? 'disabled' : ''}>
-                    <img class="usa-icon" src="/assets/img/navigate_next.svg">
-                  </button>
-                ` : ''}
-                <div class="usa-checkbox">
-                  <input class="usa-checkbox__input"
-                         type="checkbox"
-                         id="${filterType}-${parent.title}"
-                         value="${parent.title}"
-                         ${state.filters[filterType].includes(parent.title) ? 'checked' : ''}
-                         ${isDisabled ? 'disabled' : ''}
-                         onchange="handleParentCategoryChange('${filterType}', '${parent.title}', this.checked)">
-                  <label class="usa-checkbox__label" for="${filterType}-${parent.title}">
-                    ${parent.title} (${parentCount})
-                  </label>
-                </div>
-              </div>
-              ${parent.sub_categories?.length ? `
-                <div id="${filterType}-${parent.title}"
-                     class="subcategories margin-left-4"
-                     style="display: ${state.expandedCategories.has(parent.title) ? 'block' : 'none'}">
-                  ${parent.sub_categories.map(sub => {
-                    const fullValue = `${parent.title} - ${sub.title}`;
-                    const subCount = values.find(v => v.key === fullValue)?.doc_count || 0;
-                    const isSubDisabled = state.activeFilterType && 
-                                        state.activeFilterType !== filterType && 
-                                        subCount === 0;
-                    
-                    return `
-                      <div class="usa-checkbox" data-parent="${parent.title}">
-                        <input class="usa-checkbox__input"
-                               type="checkbox"
-                               id="${filterType}-${fullValue}"
-                               value="${fullValue}"
-                               ${state.filters[filterType].includes(fullValue) ? 'checked' : ''}
-                               ${isSubDisabled ? 'disabled' : ''}
-                               onchange="handleFilterChange('${filterType}', '${fullValue}', this.checked)">
-                        <label class="usa-checkbox__label" for="${filterType}-${fullValue}">
-                          ${sub.title} (${subCount})
-                        </label>
-                      </div>
-                    `;
-                  }).join('')}
-                </div>
-              ` : ''}
-            </div>
-          `;
-        }).join('');
+
+  // Filter handling: Add listeners to checkboxes for applying filters
+  var filterInputs = document.getElementById('search-filters').getElementsByTagName('input');
+  for (let i = 0; i < filterInputs.length; ++i) {
+    filterInputs[i].addEventListener('change', () => applyFilters());
+  }
+
+  // Function to collect filters and apply them to the table
+  function applyFilters() {
+    let query = '';
+    let selectedFilters = document.querySelectorAll('#search-filters input:checked');
+    selectedFilters.forEach(filter => {
+      query += `${filter.value} `;
+    });
+
+    updateGrid(query.trim());
+  }
+
+  // Add toggle functionality for filter sections
+  var filterToggles = document.getElementById('search-filters').getElementsByClassName('toggle');
+  for (let i = 0; i < filterToggles.length; ++i) {
+    filterToggles[i].addEventListener('click', (event) => {
+      let toggleButton = event.currentTarget;
+      let toggleButtonUseContainer = toggleButton.getElementsByTagName('use')[0];
+      let childrenContainer = document.getElementById(toggleButton.getAttribute('data-children-id'));
+      if (childrenContainer.style.display === "none") {
+        childrenContainer.style.display = "block";
+        toggleButtonUseContainer.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/assets/img/sprite.svg#expand_more');
       } else {
-        // Handle flat facets
-        html = values.map(facet => {
-          const isDisabled = state.activeFilterType && 
-                            state.activeFilterType !== filterType && 
-                            facet.doc_count === 0;
-          
-          return `
-            <div class="usa-checkbox">
-              <input class="usa-checkbox__input"
-                     type="checkbox"
-                     id="${filterType}-${facet.key}"
-                     value="${facet.key}"
-                     ${state.filters[filterType].includes(facet.key) ? 'checked' : ''}
-                     ${isDisabled ? 'disabled' : ''}
-                     onchange="handleFilterChange('${filterType}', '${facet.key}', this.checked)">
-              <label class="usa-checkbox__label" for="${filterType}-${facet.key}">
-                ${facet.key} (${facet.doc_count})
-              </label>
-            </div>
-          `;
-        }).join('');
-      }
-  
-      container.innerHTML = html;
-    });
-  }
-  
-  function updateSummaryStats(totalCount, totalObligations) {
-    const programsElement = document.getElementById('big-number-num-of-programs');
-    const obligationsElement = document.getElementById('big-number-obligations');
-    
-    if (programsElement) {
-      programsElement.textContent = totalCount.toLocaleString();
-    }
-    
-    if (obligationsElement) {
-      obligationsElement.textContent = formatCurrency(totalObligations);
-    }
-  }
-  
-  function updatePagination(totalCount) {
-    const container = document.querySelector('.usa-pagination__list');
-    if (!container) return;
-  
-    const totalPages = Math.ceil(totalCount / state.pageSize);
-    
-    let html = `
-      <li class="usa-pagination__item usa-pagination__arrow">
-        <button class="usa-pagination__button usa-pagination__previous-page"
-                ${state.page === 1 ? 'disabled' : ''}
-                onclick="handlePageChange(${state.page - 1})">
-          <img class="usa-icon" src="/assets/img/navigate_before.svg" alt="Previous page">
-        </button>
-      </li>
-    `;
-  
-    for (let i = 1; i <= totalPages; i++) {
-      if (
-        i === 1 ||
-        i === totalPages ||
-        (i >= state.page - 2 && i <= state.page + 2)
-      ) {
-        html += `
-          <li class="usa-pagination__item usa-pagination__page-no">
-            <button class="usa-pagination__button ${i === state.page ? 'is-active' : ''}"
-                    onclick="handlePageChange(${i})">
-              ${i}
-            </button>
-          </li>
-        `;
-      } else if (
-        i === state.page - 3 ||
-        i === state.page + 3
-      ) {
-        html += `
-          <li class="usa-pagination__item usa-pagination__overflow">
-            <span>...</span>
-          </li>
-        `;
-      }
-    }
-  
-    html += `
-      <li class="usa-pagination__item usa-pagination__arrow">
-        <button class="usa-pagination__button usa-pagination__next-page"
-                ${state.page === totalPages ? 'disabled' : ''}
-                onclick="handlePageChange(${state.page + 1})">
-          <img class="usa-icon" src="/assets/img/navigate_next.svg" alt="Next page">
-        </button>
-      </li>
-    `;
-  
-    container.innerHTML = html;
-  }
-  
-  function updateSortIndicators() {
-    document.querySelectorAll('.sortable').forEach(header => {
-      const field = header.getAttribute('data-sort');
-      header.classList.remove('sort-asc', 'sort-desc');
-      if (field === state.sortField) {
-        header.classList.add(`sort-${state.sortOrder}`);
+        childrenContainer.style.display = "none";
+        toggleButtonUseContainer.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/assets/img/sprite.svg#navigate_next');
       }
     });
   }
-  
-  // Initialize the page
-  document.addEventListener('DOMContentLoaded', () => {
-    // Add click handlers to sortable headers
-    document.querySelectorAll('.sortable').forEach(header => {
-      header.addEventListener('click', () => {
-        handleSort(header.getAttribute('data-sort'));
-      });
-    });
-  
-    // Initial data fetch
-    fetchAndUpdateResults();
-  });
-  </script>
-  
-  <style>
-  .toggle-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  
-  .toggle-button[disabled] {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  .toggle-button img {
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .usa-checkbox__input[disabled] + .usa-checkbox__label {
-    color: #71767a;
-    cursor: not-allowed;
-  }
-  
-  .sortable {
-    cursor: pointer;
-  }
-  
-  .sortable::after {
-    content: '';
-    display: inline-block;
-    margin-left: 0.5em;
-  }
-  
-  .sort-asc::after {
-    border-bottom: 4px solid currentColor;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-  }
-  
-  .sort-desc::after {
-    border-top: 4px solid currentColor;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-  }
-  </style>
+
+  // Initialize the grid with data on page load
+  updateGrid();
+
+</script>

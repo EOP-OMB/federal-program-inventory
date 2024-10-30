@@ -4,7 +4,10 @@ from typing import List, Optional
 from app.models.programTable import ProgramTableWithFacets, SearchFacets, CategoryFacet, AgencyFacet, FacetBucket
 from app.dependencies import get_elasticsearch
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/api",
+    tags=["Search"]
+)
 INDEX_NAME = "programs"
 
 @router.get("/search/programsTable", response_model=ProgramTableWithFacets)
