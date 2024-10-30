@@ -4,6 +4,7 @@ import yaml
 from decimal import Decimal
 from operator import itemgetter
 from typing import Optional
+from dataclasses import dataclass, field, asdict
 
 FISCAL_YEARS: list[str] = ['2022', '2023', '2024'] # this is the list of fiscal years calculated
 PRIMARY_FISCAL_YEAR: str = '2022' # this is the primary year used / displayed across the site
@@ -279,6 +280,52 @@ class GenericCategory:
     
     def get_parent(self) -> 'GenericCategory':
         return self.parent
+    
+@dataclass(order=True)
+class SubAgency:
+    title: str
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(**data)
+
+@dataclass(order=True)
+class AgencySubAgency:
+    title: str
+    subAgency: SubAgency = field(default=None, compare=False)
+
+    def __post_init__(self):
+        # Custom comparison logic for subAgency
+        object.__setattr__(self, 'sort_key', (self.title, self.subAgency.title if self.subAgency else ''))
+
+    @classmethod
+    def from_dict(cls, data):
+        subAgency_data = data.get('subAgency')
+        subAgency = SubAgency.from_dict(subAgency_data) if subAgency_data else None
+        return cls(title=data['title'], subAgency=subAgency)
+    
+@dataclass(order=True)
+class SubCategory:
+    title: str
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(**data)
+
+@dataclass(order=True)
+class Category:
+    title: str
+    subCategory: SubCategory = field(default=None, compare=False)
+
+    def __post_init__(self):
+        object.__setattr__(self, 'sort_key', (self.title, self.subCategory.title if self.subCategory else ''))
+
+@classmethod
+def from_dict(cls, data):
+    subCategory_data = data.get('subCategory')
+    subCategory = SubCategory.from_dict(subCategory_data) if subCategory_data else None
+    return cls(title=data['title'], subCategory=subCategory)
+
 class GenericHierarchyObj:
     def __init__(self, title: str, subTitle: str):
         self.title = title
@@ -403,20 +450,27 @@ class Program:
     def get_objective_value(self) -> str:
         return self.objective
     
-    def get_agency_subagency(self) -> GenericHierarchyObj:
+    # def get_agency_subagency(self) -> GenericHierarchyObj:
+    #     subAgencyTitle = self.get_second_level_agency_printable()
+    #     agencyTitle = self.get_top_level_agency_printable()
+    #     if (subAgencyTitle == "N/A"):
+    #         return GenericHierarchyObj(agencyTitle, '')
+    #     return GenericHierarchyObj(agencyTitle, subAgencyTitle)
+
+    def get_agency_subagency(self) -> AgencySubAgency:
         subAgencyTitle = self.get_second_level_agency_printable()
         agencyTitle = self.get_top_level_agency_printable()
         if (subAgencyTitle == "N/A"):
-            return GenericHierarchyObj(agencyTitle, '')
-        return GenericHierarchyObj(agencyTitle, subAgencyTitle)
+            return AgencySubAgency(agencyTitle, None)
+        return AgencySubAgency(agencyTitle, SubAgency(subAgencyTitle))
 
-    def get_categories_subcategories(self) -> list[GenericHierarchyObj]:
+    def get_categories_subcategories(self) -> list[Category]:
         r = []
         for c in getattr(self, 'categories'):
             if c.get_parent() is not None:
                 for p in getattr(self, 'categories'):
                     if p.id == c.parent.id:
-                        r.append(GenericHierarchyObj(p.title, c.title))
+                        r.append(Category(p.title, SubCategory(c.title)))
         return sorted(r)
 
 class ProgramSpendingYear:
@@ -861,10 +915,10 @@ with open('../website/pages/search.md', 'w') as file:
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
-            'agency' : programs[p].get_agency_subagency().__dict__,
+            'agency' : asdict(programs[p].get_agency_subagency()),
             'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
             'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
-            'categories': [item.to_dict() for item in programs[p].get_categories_subcategories()],
+            'categories': [asdict(category) for category in programs[p].get_categories_subcategories()],
         } for p in programs
     ], key=lambda program: program['obligations'], reverse=True)
 
