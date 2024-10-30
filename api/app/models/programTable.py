@@ -1,13 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Dict
-
-# Models for nested structures
-class SubAgency(BaseModel):
-    title: str
-
-class Agency(BaseModel):
-    title: str
-    subAgency: Optional[SubAgency] = None
+from typing import List, Optional
 
 class SubCategory(BaseModel):
     title: str
@@ -16,7 +8,13 @@ class Category(BaseModel):
     title: str
     subCategory: SubCategory
 
-# Models for the program
+class SubAgency(BaseModel):
+    title: Optional[str]
+
+class Agency(BaseModel):
+    title: str
+    subAgency: Optional[SubAgency]
+
 class Program(BaseModel):
     cfda: str
     title: str
@@ -25,11 +23,10 @@ class Program(BaseModel):
     obligations: Optional[float]
     objectives: Optional[str]
     popularName: Optional[str]
-    assistanceTypes: Optional[List[str]]
-    applicantTypes: Optional[List[str]]
+    assistanceTypes: List[str]
+    applicantTypes: List[str]
     categories: List[Category]
 
-# Models for faceting
 class FacetBucket(BaseModel):
     key: str
     doc_count: int
@@ -50,13 +47,10 @@ class SearchFacets(BaseModel):
     assistance_types: List[FacetBucket]
     applicant_types: List[FacetBucket]
 
-# Main response models
-class ProgramTable(BaseModel):
+class ProgramTableWithFacets(BaseModel):
     programs: List[Program]
     total_obligations: float
     count: int
     page: int
     page_size: int
-
-class ProgramTableWithFacets(ProgramTable):
     facets: SearchFacets

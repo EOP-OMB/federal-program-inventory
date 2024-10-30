@@ -1,26 +1,21 @@
 from elasticsearch import Elasticsearch
 from fastapi import APIRouter, HTTPException, Query, Depends
 from typing import List, Optional
-from pydantic import BaseModel
+from app.models.programTable import ProgramTableWithFacets, SearchFacets, CategoryFacet, AgencyFacet, FacetBucket
 from app.dependencies import get_elasticsearch
-from app.models.programTable import (
-    Program, ProgramTable, ProgramTableWithFacets, 
-    SearchFacets, CategoryFacet, AgencyFacet, FacetBucket
-)
 
 router = APIRouter()
 INDEX_NAME = "programs"
 
-
 @router.get("/search/programsTable", response_model=ProgramTableWithFacets)
 def search_programs(
     query: Optional[str] = None,
-    agency: Optional[str] = None,
-    subAgency: Optional[str] = None,
+    agencyTitles: Optional[List[str]] = Query(None),
+    subAgencyTitles: Optional[List[str]] = Query(None),
     assistanceTypes: Optional[List[str]] = Query(None),
     applicantTypes: Optional[List[str]] = Query(None),
     categoryTitles: Optional[List[str]] = Query(None),
-    subCategories: Optional[List[str]] = Query(None),
+    subCategoryTitles: Optional[List[str]] = Query(None),
     page: int = 1,
     page_size: int = 10,
     sort_field: str = "title",
@@ -30,72 +25,82 @@ def search_programs(
     if page < 1 or page_size < 1:
         raise HTTPException(status_code=400, detail="Page and page_size must be greater than 0")
     
-    # Construct Elasticsearch query
+    # Start with match_all query as default
     search_query = {
         "bool": {
-            "must": [],
-            "should": [],
-            "minimum_should_match": 0
+            "must": [{"match_all": {}}],
+            "filter": []
         }
     }
     
     # Search text query
     if query:
-        search_query["bool"]["must"].append({
+        search_query["bool"]["must"] = [{
             "multi_match": {
                 "query": query,
                 "fields": ["title^2", "agency.title", "objectives"]
             }
-        })
+        }]
 
-    # Handle nested agency/subagency filter
-    if agency or subAgency:
-        nested_agency_query = {
-            "nested": {
-                "path": "agency",
-                "query": {
-                    "bool": {
-                        "must": []
-                    }
-                }
-            }
-        }
-        
-        if agency:
-            nested_agency_query["nested"]["query"]["bool"]["must"].append({
-                "term": {"agency.title.keyword": agency}
-            })
-        
-        if subAgency:
-            nested_agency_query["nested"]["query"]["bool"]["must"].append({
-                "nested": {
-                    "path": "agency.subAgency",
-                    "query": {
-                        "term": {"agency.subAgency.title.keyword": subAgency}
-                    }
-                }
-            })
-        
-        search_query["bool"]["must"].append(nested_agency_query)
+    filter_conditions = []
 
-    # Handle nested category/subcategory filter
-    if categoryTitles or subCategories:
-        category_queries = []
+    # Handle agency/subagency filters
+    if agencyTitles or subAgencyTitles:
+        agency_conditions = []
         
-        if categoryTitles:
-            for category_title in categoryTitles:
-                category_queries.append({
+        if agencyTitles:
+            for agency in agencyTitles:
+                agency_conditions.append({
                     "nested": {
-                        "path": "categories",
+                        "path": "agency",
                         "query": {
-                            "term": {"categories.title.keyword": category_title}
+                            "term": {"agency.title.keyword": agency}
                         }
                     }
                 })
 
-        if subCategories:
-            for subcategory in subCategories:
-                category_queries.append({
+        if subAgencyTitles:
+            for subagency in subAgencyTitles:
+                agency_conditions.append({
+                    "nested": {
+                        "path": "agency",
+                        "query": {
+                            "nested": {
+                                "path": "agency.subAgency",
+                                "query": {
+                                    "term": {"agency.subAgency.title.keyword": subagency}
+                                }
+                            }
+                        }
+                    }
+                })
+
+        if agency_conditions:
+            filter_conditions.append({
+                "bool": {
+                    "should": agency_conditions,
+                    "minimum_should_match": 1
+                }
+            })
+
+    # Handle category/subcategory filters
+    if categoryTitles or subCategoryTitles:
+        category_conditions = []
+        
+        if categoryTitles:
+            for category in categoryTitles:
+                category_conditions.append({
+                    "nested": {
+                        "path": "categories",
+                        "query": {
+                            "term": {"categories.title.keyword": category}
+                        }
+                    }
+                })
+
+        if subCategoryTitles:
+            for subcategory in subCategoryTitles:
+                category_conditions.append({
                     "nested": {
                         "path": "categories",
                         "query": {
@@ -109,18 +114,22 @@ def search_programs(
                     }
                 })
 
-        search_query["bool"]["should"].extend(category_queries)
-        if category_queries:
-            search_query["bool"]["minimum_should_match"] = 1
+        if category_conditions:
+            filter_conditions.append({
+                "bool": {
+                    "should": category_conditions,
+                    "minimum_should_match": 1
+                }
+            })
 
-    # Regular filters for assistance types and applicant types
     if assistanceTypes:
-        search_query["bool"]["should"].append({"terms": {"assistanceTypes": assistanceTypes}})
-        search_query["bool"]["minimum_should_match"] = 1
+        filter_conditions.append({"terms": {"assistanceTypes": assistanceTypes}})
     
     if applicantTypes:
-        search_query["bool"]["should"].append({"terms": {"applicantTypes": applicantTypes}})
-        search_query["bool"]["minimum_should_match"] = 1
+        filter_conditions.append({"terms": {"applicantTypes": applicantTypes}})
+
+    if filter_conditions:
+        search_query["bool"]["filter"] = filter_conditions
 
     # Sorting
     sort_options = {
@@ -130,11 +139,9 @@ def search_programs(
     sort_field = sort_options.get(sort_field, "title.keyword")
     sort = [{sort_field: {"order": sort_order}}]
 
-    # Aggregations for facets
+    # Aggregations
     aggregations = {
         "total_obligations": {"sum": {"field": "obligations"}},
-        "count": {"value_count": {"field": "cfda"}},
-        # Nested aggregation for categories
         "categories": {
             "nested": {"path": "categories"},
             "aggs": {
@@ -153,7 +160,6 @@ def search_programs(
                 }
             }
         },
-        # Nested aggregation for agencies
         "agencies": {
             "nested": {"path": "agency"},
             "aggs": {
@@ -172,7 +178,6 @@ def search_programs(
                 }
             }
         },
-        # Regular aggregations for assistance and applicant types
         "assistance_types": {
             "terms": {"field": "assistanceTypes", "size": 100}
         },
@@ -181,7 +186,6 @@ def search_programs(
         }
     }
 
-    # Full Elasticsearch query
     es_query = {
         "query": search_query,
         "sort": sort,
@@ -190,16 +194,13 @@ def search_programs(
         "aggs": aggregations
     }
 
-    # Execute search
     response = es.search(index=INDEX_NAME, body=es_query)
-
-    # Parse results
+    
     hits = response["hits"]["hits"]
     programs = [hit["_source"] for hit in hits]
     total_obligations = response["aggregations"]["total_obligations"]["value"]
     total_count = response["hits"]["total"]["value"]
 
-    # Process facets
     facets = SearchFacets(
         categories=[
             CategoryFacet(
@@ -239,8 +240,7 @@ def search_programs(
         ]
     )
 
-    # Prepare response
-    result = ProgramTableWithFacets(
+    return ProgramTableWithFacets(
         programs=programs,
         total_obligations=total_obligations,
         count=total_count,
@@ -248,5 +248,3 @@ def search_programs(
         page_size=page_size,
         facets=facets
     )
-
-    return result
