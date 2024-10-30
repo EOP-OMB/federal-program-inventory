@@ -49,11 +49,12 @@
 }
 </style>
 
-<!-- Main Script for Toggle and Grid Functionality -->
+<!-- Script for Toggle, Checkbox Synchronization, and Grid Functionality with Sorting -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize toggles and Grid.js
+    // Initialize toggles, checkbox synchronization, and Grid.js with sorting
     initializeToggles();
+    initializeCheckboxSync();
     initializeGrid();
 });
 
@@ -86,7 +87,24 @@ function initializeToggles() {
     });
 }
 
+function initializeCheckboxSync() {
+    // Handle checking/unchecking of all children when a parent checkbox is toggled
+    const parentCheckboxes = document.querySelectorAll('.parent');
+
+    parentCheckboxes.forEach((parentCheckbox) => {
+        parentCheckbox.addEventListener('change', function() {
+            const childrenId = this.id.replace('check-', 'children-for-check-');
+            const childCheckboxes = document.querySelectorAll(`#${childrenId} .usa-checkbox input[type="checkbox"]`);
+
+            childCheckboxes.forEach((childCheckbox) => {
+                childCheckbox.checked = this.checked;
+            });
+        });
+    });
+}
+
 function initializeGrid() {
+    // Set up Grid.js with sorting enabled for columns
     const tableContainer = document.getElementById('programs-table');
     if (tableContainer) {
         let currentPage = 1;
@@ -95,43 +113,26 @@ function initializeGrid() {
 
         const grid = new gridjs.Grid({
             columns: [
-                {
+                { 
+                    id: 'title',
                     name: 'Title',
-                    sort: {
-                        enabled: true
-                    },
-                    formatter: (cell, row) => {
-                        return `${cell} (${row.cells[1].data})`;
-                    }
+                    sort: true,
+                    formatter: (cell, row) => `${cell} (${row.cells[1].data})`
                 },
-                {
-                    name: 'CFDA',
-                    hidden: true
+                { id: 'cfda', name: 'CFDA', hidden: true },
+                { 
+                    id: 'agency', 
+                    name: 'Agency', 
+                    sort: true,
+                    formatter: cell => cell?.title || ''
                 },
-                {
-                    name: 'Agency',
-                    sort: {
-                        enabled: true
-                    },
-                    formatter: (cell) => cell?.title || ''
-                },
-                {
+                { 
+                    id: 'objectives',
                     name: 'Objectives',
-                    sort: {
-                        enabled: true
-                    }
+                    sort: true
                 }
             ],
-            pagination: {
-                enabled: true,
-                limit: 10,
-                server: {
-                    url: (prev, page) => {
-                        currentPage = page || 1;
-                        return constructUrl();
-                    }
-                }
-            },
+            pagination: { enabled: true, limit: 20 },
             sort: {
                 multiColumn: false,
                 server: {
@@ -150,7 +151,7 @@ function initializeGrid() {
                 }
             },
             server: {
-                url: 'http://localhost:8000/api/search/programsTable',
+                url: constructUrl(),
                 then: data => data.programs,
                 total: data => data.count
             },
@@ -168,6 +169,3 @@ function initializeGrid() {
     }
 }
 </script>
-
-<!-- Programs Table Rendering Location -->
-<div id="programs-table" class="gridjs-table-container"></div>
