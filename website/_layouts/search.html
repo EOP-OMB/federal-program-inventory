@@ -55,16 +55,17 @@ footer_include: _footer-search.html
                       </a>
                       <div class="usa-checkbox">
                         <input
-                          class="usa-checkbox__input check-category-{{ forloop.index }} parent"
-                          id="check-category-{{ forloop.index }}"
-                          type="checkbox"
-                          name="categories"
-                          value="{% for p in c.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                            class="usa-checkbox__input check-category-{{ forloop.index }} parent"
+                            id="check-category-{{ forloop.index }}"
+                            type="checkbox"
+                            name="categories"
+                            data-filter-type="category"
+                            value="{{ c.title }}"
                         />
                         <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-category-{{ forloop.index }}">
-                          {{ c.title }}
+                            {{ c.title }}
                         </label>
-                      </div>
+                    </div>
                     </div>
 
                     {% if c.sub_categories.size > 0 %}
@@ -79,7 +80,8 @@ footer_include: _footer-search.html
                               id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
                               type="checkbox"
                               name="categories"
-                              value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
+                              data-filter-type="sub-category"
+                              value="{{ c.title }} - {{ sc.title }}"
                             />
                             <label class="usa-checkbox__label font-body-2xs text-italic" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                               {{ sc.title }}
