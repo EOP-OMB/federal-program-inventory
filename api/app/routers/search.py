@@ -10,15 +10,18 @@ router = APIRouter(
 )
 INDEX_NAME = "programs"
 
+def parse_parent_child(value_string: str) -> tuple[str, Optional[str]]:
+    """Parse a string to get parent and optional child values."""
+    parts = value_string.split(" - ", 1)
+    return parts[0], parts[1] if len(parts) > 1 else None
+
 @router.get("/search/programsTable", response_model=ProgramTableWithFacets)
 def search_programs(
     query: Optional[str] = None,
-    agencyTitles: Optional[List[str]] = Query(None),
-    subAgencyTitles: Optional[List[str]] = Query(None),
+    agencySubAgency: Optional[List[str]] = Query(None),
+    categorySubcategory: Optional[List[str]] = Query(None),
     assistanceTypes: Optional[List[str]] = Query(None),
     applicantTypes: Optional[List[str]] = Query(None),
-    categoryTitles: Optional[List[str]] = Query(None),
-    subCategoryTitles: Optional[List[str]] = Query(None),
     page: int = 1,
     page_size: int = 10,
     sort_field: str = "title",
@@ -48,32 +51,41 @@ def search_programs(
     filter_conditions = []
 
     # Handle agency/subagency filters
-    if agencyTitles or subAgencyTitles:
+    if agencySubAgency:
         agency_conditions = []
         
-        if agencyTitles:
-            for agency in agencyTitles:
+        for agency_string in agencySubAgency:
+            agency, subagency = parse_parent_child(agency_string)
+            
+            if subagency:
+                # Query for specific agency and subagency combination
+                agency_conditions.append({
+                    "nested": {
+                        "path": "agency",
+                        "query": {
+                            "bool": {
+                                "must": [
+                                    {"term": {"agency.title.keyword": agency}},
+                                    {
+                                        "nested": {
+                                            "path": "agency.subAgency",
+                                            "query": {
+                                                "term": {"agency.subAgency.title.keyword": subagency}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                })
+            else:
+                # Query for agency only
                 agency_conditions.append({
                     "nested": {
                         "path": "agency",
                         "query": {
                             "term": {"agency.title.keyword": agency}
-                        }
-                    }
-                })
-
-        if subAgencyTitles:
-            for subagency in subAgencyTitles:
-                agency_conditions.append({
-                    "nested": {
-                        "path": "agency",
-                        "query": {
-                            "nested": {
-                                "path": "agency.subAgency",
-                                "query": {
-                                    "term": {"agency.subAgency.title.keyword": subagency}
-                                }
-                            }
                         }
                     }
                 })
@@ -87,32 +99,41 @@ def search_programs(
             })
 
     # Handle category/subcategory filters
-    if categoryTitles or subCategoryTitles:
+    if categorySubcategory:
         category_conditions = []
         
-        if categoryTitles:
-            for category in categoryTitles:
+        for category_string in categorySubcategory:
+            category, subcategory = parse_parent_child(category_string)
+            
+            if subcategory:
+                # Query for specific category and subcategory combination
+                category_conditions.append({
+                    "nested": {
+                        "path": "categories",
+                        "query": {
+                            "bool": {
+                                "must": [
+                                    {"term": {"categories.title.keyword": category}},
+                                    {
+                                        "nested": {
+                                            "path": "categories.subCategory",
+                                            "query": {
+                                                "term": {"categories.subCategory.title.keyword": subcategory}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                })
+            else:
+                # Query for category only
                 category_conditions.append({
                     "nested": {
                         "path": "categories",
                         "query": {
                             "term": {"categories.title.keyword": category}
-                        }
-                    }
-                })
-
-        if subCategoryTitles:
-            for subcategory in subCategoryTitles:
-                category_conditions.append({
-                    "nested": {
-                        "path": "categories",
-                        "query": {
-                            "nested": {
-                                "path": "categories.subCategory",
-                                "query": {
-                                    "term": {"categories.subCategory.title.keyword": subcategory}
-                                }
-                            }
                         }
                     }
                 })
