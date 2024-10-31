@@ -1,171 +1,184 @@
-<!-- Dependencies -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
-
-<!-- Custom styles -->
-<style>
-/* Grid.js styles */
-.gridjs-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.gridjs-th {
-    background-color: #f0f0f0;
-    padding: 0.75rem;
-    text-align: left;
-    font-weight: bold;
-}
-.gridjs-td {
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-}
-.gridjs-pagination {
-    padding: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-.gridjs-pagination button {
-    margin: 0 0.25rem;
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
-
-/* Toggle styles */
-.display-flex:hover {
-    cursor: pointer;
-}
-
-.usa-icon.display-block {
-    transition: transform 0.2s ease-in-out;
-}
-
-.display-flex.active .usa-icon.display-block {
-    transform: rotate(90deg);
-}
-</style>
-
-<!-- Script for Toggle, Checkbox Synchronization, and Grid Functionality with Sorting -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize toggles, checkbox synchronization, and Grid.js with sorting
-    initializeToggles();
-    initializeCheckboxSync();
-    initializeGrid();
-});
-
-function initializeToggles() {
-    // Set up category and agency toggle buttons for showing/hiding subcategories
-    const filterToggles = document.querySelectorAll('.toggle');
-    filterToggles.forEach((toggle) => {
-        toggle.addEventListener('click', function(event) {
-            event.preventDefault();
-            const childrenId = this.getAttribute('data-children-id');
-            const childrenContainer = document.getElementById(childrenId);
-            const icon = this.querySelector('use');
-
-            // Toggle visibility of the child container
-            if (childrenContainer.style.display === 'none' || childrenContainer.style.display === '') {
-                childrenContainer.style.display = 'block';
-                icon.setAttribute('xlink:href', '/assets/img/sprite.svg#expand_more');
-            } else {
-                childrenContainer.style.display = 'none';
-                icon.setAttribute('xlink:href', '/assets/img/sprite.svg#navigate_next');
-            }
-        });
-    });
-
-    // Prevent checkbox clicks from triggering the toggle
-    document.querySelectorAll('.usa-checkbox input[type="checkbox"]').forEach((checkbox) => {
-        checkbox.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-}
-
-function initializeCheckboxSync() {
-    // Handle checking/unchecking of all children when a parent checkbox is toggled
-    const parentCheckboxes = document.querySelectorAll('.parent');
-
-    parentCheckboxes.forEach((parentCheckbox) => {
-        parentCheckbox.addEventListener('change', function() {
-            const childrenId = this.id.replace('check-', 'children-for-check-');
-            const childCheckboxes = document.querySelectorAll(`#${childrenId} .usa-checkbox input[type="checkbox"]`);
-
-            childCheckboxes.forEach((childCheckbox) => {
-                childCheckbox.checked = this.checked;
-            });
-        });
-    });
-}
-
-function initializeGrid() {
-    // Set up Grid.js with sorting enabled for columns
-    const tableContainer = document.getElementById('programs-table');
-    if (tableContainer) {
-        let currentPage = 1;
-        let currentSortField = 'title';
-        let currentSortOrder = 'asc';
-
-        const grid = new gridjs.Grid({
-            columns: [
-                { 
-                    id: 'title',
-                    name: 'Title',
-                    sort: true,
-                    formatter: (cell, row) => `${cell} (${row.cells[1].data})`
-                },
-                { id: 'cfda', name: 'CFDA', hidden: true },
-                { 
-                    id: 'agency', 
-                    name: 'Agency', 
-                    sort: true,
-                    formatter: cell => cell?.title || ''
-                },
-                { 
-                    id: 'objectives',
-                    name: 'Objectives',
-                    sort: true
-                }
-            ],
-            pagination: { enabled: true, limit: 20 },
-            sort: {
-                multiColumn: false,
-                server: {
-                    url: (prev, columns) => {
-                        if (columns.length) {
-                            const fieldMap = {
-                                0: 'title',
-                                2: 'agency.title',
-                                3: 'objectives'
-                            };
-                            currentSortField = fieldMap[columns[0].index] || 'title';
-                            currentSortOrder = columns[0].direction === 1 ? 'asc' : 'desc';
-                        }
-                        return constructUrl();
-                    }
-                }
-            },
-            server: {
-                url: constructUrl(),
-                then: data => data.programs,
-                total: data => data.count
-            },
-            className: {
-                container: 'programs-table-container',
-                table: 'usa-table',
-                th: 'usa-table-header',
-                td: 'usa-table-cell'
-            }
-        }).render(tableContainer);
-
-        function constructUrl() {
-            return `http://localhost:8000/api/search/programsTable?page=${currentPage}&page_size=10&sort_field=${currentSortField}&sort_order=${currentSortOrder}`;
-        }
+    const apiBaseUrl = 'http://localhost:8000/api';
+    let currentPage = 1;
+    const pageSize = 20;
+    let currentSort = { field: 'title', order: 'asc' };
+    let currentQuery = '';
+  
+    // Initialize filter states
+    let selectedAgencySubAgency = [];
+    let selectedCategorySubcategory = [];
+    let selectedAssistanceTypes = [];
+    let selectedApplicantTypes = [];
+  
+    // Initialize programs data
+    let programs = [];
+    let totalCount = 0;
+    let totalObligations = 0;
+  
+    // Sort field mapping
+    const sortFieldMapping = {
+      'agency': 'agency.title',
+      'title': 'title',
+      'obligations': 'obligations'
+    };
+  
+    // Function to get correct sort field
+    function getSortField(columnId) {
+      return sortFieldMapping[columnId] || columnId || 'title';
     }
-}
+  
+    // Initialize Grid.js
+    let obligationsTooltipHtml = '<span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/assets/img/sprite.svg#info"></use></svg></span>';
+    const searchGrid = new gridjs.Grid({
+      columns: [
+        { id: "cfda", name: "Number", hidden: true },
+        { id: "title", name: "Name", width: '40%', formatter: (_, row) => gridjs.html(`<a href="${row.cells[4].data}" target="_blank">${row.cells[0].data + ' - ' + row.cells[1].data}</a>`), sortable: true },
+        { id: "agency", name: "Agency", width: '30%', formatter: (cell) => cell?.title || '', sortable: true },
+        { id: "obligations", name: gridjs.html("Obligations (FY {{page.fiscal_year}}) " + obligationsTooltipHtml), width: '29%', formatter: (cell) => `${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' }).format(cell)}`, sortable: true },
+        { id: "permalink", name: "Link", hidden: true }
+      ],
+      style: {
+        container: { overflow: 'hidden' }
+      },
+      search: {
+        server: {
+          url: (prev, keyword) => {
+            currentQuery = keyword;
+            currentPage = 1;
+            return fetchProgramsData(keyword); // Pass keyword directly to fetchProgramsData
+          }
+        }
+      },
+      pagination: {
+        limit: pageSize,
+        server: {
+          url: (prev, page) => {
+            currentPage = page + 1;
+            return fetchProgramsData();
+          }
+        }
+      },
+      sort: {
+        multiColumn: false,
+        server: {
+          url: (prev, columns) => {
+            if (columns && columns.length > 0) {
+              const column = columns[0];
+              currentSort = {
+                field: getSortField(column.id),
+                order: column.direction === 1 ? 'asc' : 'desc'
+              };
+            }
+            return fetchProgramsData();
+          }
+        }
+      },
+      server: {
+        url: fetchProgramsData(),
+        then: response => {
+          totalCount = response.count;
+          totalObligations = response.total_obligations;
+          updateUICounters();
+          return response.programs;
+        },
+        total: response => response.count,
+        handle: (res) => {
+          if (!res.ok) {
+            throw Error('Could not fetch data');
+          }
+          return res.json();
+        }
+      }
+    });
+  
+    // Function to update UI counters
+    function updateUICounters() {
+      document.getElementById('big-number-num-of-programs').innerHTML = totalCount.toLocaleString('en-US', { maximumFractionDigits: 0 });
+      document.getElementById('big-number-obligations').innerHTML = totalObligations.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2, notation: 'compact' });
+    }
+  
+    // Function to construct API URL with all parameters
+    function fetchProgramsData(keyword = currentQuery) {
+      const params = new URLSearchParams();
+      
+      if (keyword) {
+        params.append('query', keyword); // Use the passed keyword instead of currentQuery
+      }
+      
+      selectedAgencySubAgency.forEach(agency => params.append('agencySubAgency', agency));
+      selectedCategorySubcategory.forEach(category => params.append('categorySubcategory', category));
+      selectedAssistanceTypes.forEach(type => params.append('assistanceTypes', type));
+      selectedApplicantTypes.forEach(type => params.append('applicantTypes', type));
+      
+      params.append('page', Math.max(1, currentPage));
+      params.append('page_size', pageSize);
+      params.append('sort_field', currentSort.field);
+      params.append('sort_order', currentSort.order);
+
+      const url = `${apiBaseUrl}/search/programsTable?${params.toString()}`;
+      console.log('Fetching:', url);
+      return url;
+    }
+  
+    // Add event listeners for filters
+    const filterInputs = document.getElementById('search-filters').getElementsByTagName('input');
+    for (let input of filterInputs) {
+      input.addEventListener('change', (event) => {
+        handleFilterChange(event);
+        currentPage = 1; // Reset to first page on filter change
+        searchGrid.forceRender();
+      });
+    }
+  
+    // Handle filter changes
+    function handleFilterChange(event) {
+      const input = event.target;
+      const value = input.value;
+      const isChecked = input.checked;
+      const filterType = input.getAttribute('data-filter-type');
+  
+      switch(filterType) {
+        case 'agency':
+          isChecked ? selectedAgencySubAgency.push(value) : selectedAgencySubAgency = selectedAgencySubAgency.filter(v => v !== value);
+          break;
+        case 'category':
+          isChecked ? selectedCategorySubcategory.push(value) : selectedCategorySubcategory = selectedCategorySubcategory.filter(v => v !== value);
+          break;
+        case 'assistance':
+          isChecked ? selectedAssistanceTypes.push(value) : selectedAssistanceTypes = selectedAssistanceTypes.filter(v => v !== value);
+          break;
+        case 'applicant':
+          isChecked ? selectedApplicantTypes.push(value) : selectedApplicantTypes = selectedApplicantTypes.filter(v => v !== value);
+          break;
+      }
+    }
+  
+    // Debounced search input handling
+    let searchTimeout;
+    const searchInput = document.querySelector('#search-filters input[type="text"]'); // Get search input within search-filters
+  
+    if (searchInput) {
+      searchInput.addEventListener("input", (event) => {
+        clearTimeout(searchTimeout); // Clear the previous timeout
+        const keyword = event.target.value;
+        
+        searchTimeout = setTimeout(() => {
+          if (currentQuery !== keyword) {
+            currentQuery = keyword;
+            currentPage = 1; // Reset page on search
+            searchGrid.updateConfig({
+              server: {
+                url: () => fetchProgramsData(keyword) // Pass the updated keyword here
+              }
+            }).forceRender(); // Update server URL and re-render after debounce
+          }
+        }, 300); // Adjust the debounce delay as needed
+      });
+    } else {
+      console.error("Search input field not found");
+    }
+  
+    // Render grid once
+    searchGrid.render(document.getElementById("programs-table"));
 </script>
