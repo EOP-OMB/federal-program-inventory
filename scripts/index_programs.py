@@ -32,7 +32,12 @@ def create_index_with_mapping(index_name):
             "dynamic": "strict",  # Prevent automatic field creation
             "properties": {
                 "cfda": { 
-                    "type": "keyword"
+                    "type": "keyword",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
                 },
                 "title": {
                     "type": "text",
@@ -69,7 +74,12 @@ def create_index_with_mapping(index_name):
                     }
                 },
                 "obligations": { 
-                    "type": "float"
+                    "type": "float",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
                 },
                 "objectives": {
                     "type": "text",
@@ -80,7 +90,12 @@ def create_index_with_mapping(index_name):
                     }
                 },
                 "popularName": { 
-                    "type": "text"
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
                 },
                 "permalink": {
                     "type": "text",
