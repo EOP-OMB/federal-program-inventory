@@ -830,8 +830,7 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                 if len(all_programs) and len(o['sub_categories']) > 0: # only include the "unspecified" sub-category if there are other sub-categories
                     o['sub_categories'].append(
                         {
-                            'title': 'Unspecified',
-                            'programs': list(all_programs)
+                            'title': 'Unspecified'
                         }
                     )
             r.append(o)

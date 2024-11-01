@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 from fastapi import APIRouter, HTTPException, Query, Depends
 from typing import List, Optional, Dict, Any
-from app.models.programTable import ProgramTableWithFacets, SearchFacets, CategoryFacet, AgencyFacet, FacetBucket
+from app.models.programTable import ProgramTableWithFacets, SearchFacets, CategoryFacet, AgencyFacet, FacetBucket, SearchRequest
 from app.dependencies import get_elasticsearch
 
 router = APIRouter(
@@ -11,7 +11,6 @@ router = APIRouter(
 
 # Constants
 INDEX_NAME = "programs"
-DEFAULT_PAGE_SIZE = 10
 SEARCH_FIELDS = {
     "title": {"boost": 2},
     "objectives": {"boost": 1},
@@ -151,22 +150,24 @@ def parse_parent_child(value_string: str) -> tuple[str, Optional[str]]:
     parts = value_string.split(" - ", 1)
     return parts[0], parts[1] if len(parts) > 1 else None
 
-@router.get("/search/programsTable", response_model=ProgramTableWithFacets)
+@router.post("/search/programsTable", response_model=ProgramTableWithFacets)
 def search_programs(
-    query: Optional[str] = None,
-    agencySubAgency: Optional[List[str]] = Query(None),
-    categorySubcategory: Optional[List[str]] = Query(None),
-    assistanceTypes: Optional[List[str]] = Query(None),
-    applicantTypes: Optional[List[str]] = Query(None),
-    page: int = Query(1, gt=0),
-    page_size: int = Query(DEFAULT_PAGE_SIZE, gt=0),
-    sort_field: str = "title",
-    sort_order: str = Query("asc", regex="^(asc|desc)$"),
+    request: SearchRequest,
     es: Elasticsearch = Depends(get_elasticsearch)
 ) -> ProgramTableWithFacets:
     """
     Search programs with faceted filters and pagination.
     """
+    query = request.query
+    agencySubAgency = request.agencySubAgency
+    categorySubcategory = request.categorySubcategory
+    assistanceTypes = request.assistanceTypes
+    applicantTypes = request.applicantTypes
+    page = request.page
+    page_size = request.page_size
+    sort_field = request.sort_field
+    sort_order = request.sort_order
+
     try:
         # Validate sort field
         if sort_field not in VALID_SORT_FIELDS:
