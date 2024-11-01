@@ -10,12 +10,75 @@ def create_index_with_mapping(index_name):
     mapping = {
         "mappings": {
             "properties": {
-                "cfda": { "type": "text" },
-                "title": { "type": "text" },
-                "agency": { "type": "text" },
-                "obligations": { "type": "float" },
-                "objectives": { "type": "text" },
-                "popularName": { "type": "text" },
+                "cfda": { 
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "title": {
+                    "type": "text",
+                    "analyzer": "english",  # Add analyzer for stemming
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "agency": {
+                    "type": "nested",
+                    "properties": {
+                        "title": {
+                            "type": "text",
+                            "fields": {
+                                "keyword": {
+                                    "type": "keyword"
+                                }
+                            }
+                        },
+                        "subAgency": {
+                            "type": "nested",
+                            "properties": {
+                                "title": {
+                                    "type": "text",
+                                    "fields": {
+                                        "keyword": {
+                                            "type": "keyword"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "obligations": { 
+                    "type": "float",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    } 
+                },
+                "objectives": {
+                    "type": "text",
+                    "analyzer": "english",  # Add analyzer for stemming
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "popularName": { 
+                    "type": "text",
+                    "analyzer": "english",  # Add analyzer for stemming
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "permalink": {
                     "type": "text",
                     "index": False  # Store, but do not index permalink

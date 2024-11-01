@@ -4,6 +4,8 @@ import yaml
 from decimal import Decimal
 from operator import itemgetter
 from typing import Optional
+from dataclasses import dataclass, field, asdict
+from pydantic import BaseModel
 
 FISCAL_YEARS: list[str] = ['2022', '2023', '2024'] # this is the list of fiscal years calculated
 PRIMARY_FISCAL_YEAR: str = '2022' # this is the primary year used / displayed across the site
@@ -279,6 +281,20 @@ class GenericCategory:
     
     def get_parent(self) -> 'GenericCategory':
         return self.parent
+    
+class SubAgency(BaseModel):
+    title: str
+    
+class AgencySubAgency(BaseModel):
+    title: str
+    subAgency: Optional[SubAgency] = None
+    
+class SubCategory(BaseModel):
+    title: str
+
+class Category(BaseModel):
+    title: str
+    subCategory: SubCategory = None
 
 class Agency(GenericCategory):
     def __init__(self, id: str, title: str) -> None:
@@ -390,6 +406,23 @@ class Program:
     def get_objective_value(self) -> str:
         return self.objective
 
+    def get_agency_subagency(self) -> AgencySubAgency:
+        subAgencyTitle = self.get_second_level_agency_printable()
+        agencyTitle = self.get_top_level_agency_printable()
+        if (subAgencyTitle == "N/A"):
+            return AgencySubAgency(title=agencyTitle)
+        return AgencySubAgency(title=agencyTitle, subAgency=SubAgency(title=subAgencyTitle))
+
+
+    def get_categories_subcategories(self) -> list[Category]:
+        r = []
+        categories = getattr(self, 'categories')
+        for c in categories:
+            if c.get_parent() is not None:
+                for p in categories:
+                    if p.id == c.parent.id:
+                        r.append(Category(title=p.title, subCategory=SubCategory(title=c.title)))
+        return sorted(r, key=lambda category: (category.title, category.subCategory.title if category.subCategory else ''))
 class ProgramSpendingYear:
     def __init__(self, year: str) -> None:
         self.year: str = year
@@ -828,10 +861,14 @@ with open('../website/pages/search.md', 'w') as file:
             'cfda': programs[p].get_id(),
             'title': programs[p].get_title(),
             'permalink': '/program/' + programs[p].get_id(),
-            'agency': programs[p].get_top_level_agency_printable(),
+            # 'agency': programs[p].get_top_level_agency_printable(),
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
+            'agency' : programs[p].get_agency_subagency().dict(),
+            'assistanceTypes': programs[p].get_category_printable_list('assistance_types', True),
+            'applicantTypes': programs[p].get_category_printable_list('applicant_types', True),
+            'categories': [category.dict() for category in programs[p].get_categories_subcategories()],
         } for p in programs
     ], key=lambda program: program['obligations'], reverse=True)
 
