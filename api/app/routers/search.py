@@ -31,50 +31,28 @@ def search_programs(
     if page < 1 or page_size < 1:
         raise HTTPException(status_code=400, detail="Page and page_size must be greater than 0")
     
-    # Start with match_all query as default
+    # Initialize the compound query
     search_query = {
-    "bool": {
-        "must": [],
-        "filter": []
-    }
+        "bool": {
+            "must": [{"match_all": {}}],  # Default to match all
+            "filter": []
+        }
     }
     
-    # Search on specific fields
+    # Fuzzy search with explicitly specified fields
     if query:
         search_query["bool"]["must"] = [{
-            "bool": {
-                "should": [
-                    {
-                        "match": {
-                            "title": {
-                                "query": query,
-                                "boost": 2.0
-                            }
-                        }
-                    },
-                    {
-                        "match": {
-                            "objectives": {
-                                "query": query
-                            }
-                        }
-                    },
-                    {
-                        "match": {
-                            "cfda": {
-                                "query": query
-                            }
-                        }
-                    },
-                    {
-                        "match": {
-                            "popularName": {
-                                "query": query
-                            }
-                        }
-                    }
+            "multi_match": {
+                "query": query,
+                "fields": [
+                    "title^2",  # Boosted field
+                    "objectives",
+                    "cfda",
+                    "popularName"
                 ],
-                "minimum_should_match": 1
+                "type": "best_fields",
+                "operator": "and",
+                "fuzziness": "AUTO"  # Added fuzzy matching
             }
         }]
 
@@ -83,10 +61,8 @@ def search_programs(
     # Handle agency/subagency filters
     if agencySubAgency:
         agency_conditions = []
-        
         for agency_string in agencySubAgency:
             agency, subagency = parse_parent_child(agency_string)
-            
             if subagency:
                 agency_conditions.append({
                     "nested": {
@@ -117,7 +93,7 @@ def search_programs(
                         }
                     }
                 })
-
+        
         if agency_conditions:
             filter_conditions.append({
                 "bool": {
@@ -129,10 +105,8 @@ def search_programs(
     # Handle category/subcategory filters
     if categorySubcategory:
         category_conditions = []
-        
         for category_string in categorySubcategory:
             category, subcategory = parse_parent_child(category_string)
-            
             if subcategory:
                 category_conditions.append({
                     "nested": {
@@ -172,12 +146,14 @@ def search_programs(
                 }
             })
 
+    # Add exact match filters
     if assistanceTypes:
         filter_conditions.append({"terms": {"assistanceTypes": assistanceTypes}})
     
     if applicantTypes:
         filter_conditions.append({"terms": {"applicantTypes": applicantTypes}})
 
+    # Add all filters to the filter context
     if filter_conditions:
         search_query["bool"]["filter"] = filter_conditions
 
