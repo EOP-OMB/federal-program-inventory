@@ -39,20 +39,38 @@ def search_programs(
     }
     }
     
-    # Only search on title, objectives, cfda, and popularName with wildcard and stemming
+    # Search on specific fields
     if query:
         search_query["bool"]["must"] = [{
             "bool": {
                 "should": [
-                    {"wildcard": {"title": f"*{query}*"}},
-                    {"wildcard": {"objectives": f"*{query}*"}},
-                    {"wildcard": {"cfda": f"*{query}*"}},
-                    {"wildcard": {"popularName": f"*{query}*"}},
                     {
-                        "multi_match": {
-                            "query": query,
-                            "fields": ["title", "objectives", "cfda", "popularName"],
-                            "operator": "or"
+                        "match": {
+                            "title": {
+                                "query": query,
+                                "boost": 2.0
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "objectives": {
+                                "query": query
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "cfda": {
+                                "query": query
+                            }
+                        }
+                    },
+                    {
+                        "match": {
+                            "popularName": {
+                                "query": query
+                            }
                         }
                     }
                 ],
