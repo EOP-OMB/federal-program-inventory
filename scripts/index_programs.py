@@ -29,14 +29,21 @@ def create_index_with_mapping(index_name):
     """Create new index with mapping"""
     mapping = {
         "mappings": {
+            "dynamic": "strict",  # Prevent automatic field creation
             "properties": {
-                "cfda": { "type": "keyword" },
+                "cfda": { 
+                    "type": "keyword",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "title": {
                     "type": "text",
                     "fields": {
                         "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
+                            "type": "keyword"
                         }
                     }
                 },
@@ -47,8 +54,7 @@ def create_index_with_mapping(index_name):
                             "type": "text",
                             "fields": {
                                 "keyword": {
-                                    "type": "keyword",
-                                    "ignore_above": 256
+                                    "type": "keyword"
                                 }
                             }
                         },
@@ -59,8 +65,7 @@ def create_index_with_mapping(index_name):
                                     "type": "text",
                                     "fields": {
                                         "keyword": {
-                                            "type": "keyword",
-                                            "ignore_above": 256
+                                            "type": "keyword"
                                         }
                                     }
                                 }
@@ -68,17 +73,30 @@ def create_index_with_mapping(index_name):
                         }
                     }
                 },
-                "obligations": { "type": "float" },
+                "obligations": { 
+                    "type": "float",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "objectives": {
                     "type": "text",
                     "fields": {
                         "keyword": {
-                            "type": "keyword",
-                            "ignore_above": 256
+                            "type": "keyword"
                         }
                     }
                 },
-                "popularName": { "type": "text" },
+                "popularName": { 
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
                 "permalink": {
                     "type": "text",
                     "index": False
@@ -87,7 +105,9 @@ def create_index_with_mapping(index_name):
                     "type": "keyword"
                 },
                 "applicantTypes": {
-                    "type": "keyword"
+                    "type": "keyword",
+                    "index": True,
+                    "doc_values": True  # Keep this for aggregations
                 },
                 "categories": {
                     "type": "nested",
@@ -96,8 +116,7 @@ def create_index_with_mapping(index_name):
                             "type": "text",
                             "fields": {
                                 "keyword": {
-                                    "type": "keyword",
-                                    "ignore_above": 256
+                                    "type": "keyword"
                                 }
                             }
                         },
@@ -108,14 +127,20 @@ def create_index_with_mapping(index_name):
                                     "type": "text",
                                     "fields": {
                                         "keyword": {
-                                            "type": "keyword",
-                                            "ignore_above": 256
+                                            "type": "keyword"
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                }
+            }
+        },
+        "settings": {
+            "index": {
+                "query": {
+                    "default_field": ["title", "objectives", "cfda", "popularName"]
                 }
             }
         }

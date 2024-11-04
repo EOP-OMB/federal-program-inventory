@@ -15,6 +15,17 @@ class Agency(BaseModel):
     title: str
     subAgency: Optional[SubAgency]
 
+class SearchRequest(BaseModel):
+    query: Optional[str] = None
+    agencySubAgency: Optional[List[str]] = None
+    categorySubcategory: Optional[List[str]] = None
+    assistanceTypes: Optional[List[str]] = None
+    applicantTypes: Optional[List[str]] = None
+    page: int = 1
+    page_size: int = 10
+    sort_field: str = "title"
+    sort_order: str = "asc"
+
 class Program(BaseModel):
     cfda: str
     title: str

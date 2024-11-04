@@ -457,7 +457,18 @@ cfo_agencies:
   - title: Defense Security Cooperation Agency
   - title: Defense Advanced Research Projects Agency  (DARPA)
   - title: Immediate Office of the Secretary of Defense
-  - title: Unspecified
+  - programs:
+    - '12.225'
+    - '12.357'
+    - '12.554'
+    - '12.552'
+    - '12.551'
+    - '12.579'
+    - '12.550'
+    - '12.219'
+    - '12.556'
+    - '12.620'
+    title: Unspecified
   title: Department of Defense
 - sub_categories:
   - title: Office Of Career, Technical, And Adult Education
@@ -466,11 +477,62 @@ cfo_agencies:
   - title: Office of Human Resources and Administration
   - title: Institute of Education Sciences
   - title: Office of Elementary and Secondary Education
-  - title: Unspecified
+  - programs:
+    - '84.424'
+    - '84.417'
+    - '84.428'
+    - '84.422'
+    - '84.426'
+    - '84.425'
+    - '84.427'
+    - '84.421'
+    title: Unspecified
   title: Department of Education
 - sub_categories:
   - title: NNSA
-  - title: Unspecified
+  - programs:
+    - '81.087'
+    - '81.092'
+    - '81.065'
+    - '81.255'
+    - '81.138'
+    - '81.106'
+    - '81.135'
+    - '81.122'
+    - '81.252'
+    - '81.104'
+    - '81.131'
+    - '81.057'
+    - '81.214'
+    - '81.258'
+    - '81.108'
+    - '81.049'
+    - '81.112'
+    - '81.086'
+    - '81.089'
+    - '81.102'
+    - '81.254'
+    - '81.126'
+    - '81.123'
+    - '81.250'
+    - '81.008'
+    - '81.137'
+    - '81.117'
+    - '81.121'
+    - '81.140'
+    - '81.128'
+    - '81.005'
+    - '81.136'
+    - '81.041'
+    - '81.010'
+    - '81.119'
+    - '81.251'
+    - '81.113'
+    - '81.256'
+    - '81.253'
+    - '81.042'
+    - '81.124'
+    title: Unspecified
   title: Department of Energy
 - sub_categories:
   - title: Agency for Healthcare Research and Quality
@@ -488,7 +550,9 @@ cfo_agencies:
   - title: Administration for Children and Families
   - title: Office of Assistant Secretary for Health
   - title: ADMINISTRATION FOR STRATEGIC PREPAREDNESS AND RESPONSE
-  - title: Unspecified
+  - programs:
+    - '93.493'
+    title: Unspecified
   title: Department of Health and Human Services
 - sub_categories:
   - title: U.S. Citizenship and Immigration Services
@@ -499,7 +563,9 @@ cfo_agencies:
   - title: Federal Emergency Management Agency
   - title: U.S. Immigration and Customs Enforcement
   - title: Cybersecurity and Infrastructure Security Agency
-  - title: Unspecified
+  - programs:
+    - '97.102'
+    title: Unspecified
   title: Department of Homeland Security
 - sub_categories:
   - title: Assistant Secretary for Housing -- Federal Housing Commissioner
@@ -516,7 +582,11 @@ cfo_agencies:
   - title: Federal Prison System / Bureau of Prisons
   - title: Drug Enforcement Administration
   - title: Federal Bureau of Investigation
-  - title: Unspecified
+  - programs:
+    - '16.049'
+    - '16.041'
+    - '16.050'
+    title: Unspecified
   title: Department of Justice
 - sub_categories:
   - title: Employment and Training Administration
@@ -541,7 +611,37 @@ cfo_agencies:
   - title: Office of the Coordinator of U.S. Assistance to Europe and Eurasia
   - title: Political Military Affairs / Weapons Removal and Abatement
   - title: Office of Overseas Schools
-  - title: Unspecified
+  - programs:
+    - '19.127'
+    - '19.207'
+    - '19.501'
+    - '19.808'
+    - '19.205'
+    - '19.223'
+    - '19.706'
+    - '19.036'
+    - '19.700'
+    - '19.707'
+    - '19.790'
+    - '19.777'
+    - '19.013'
+    - '19.026'
+    - '19.225'
+    - '19.791'
+    - '19.989'
+    - '19.792'
+    - '19.020'
+    - '19.666'
+    - '19.888'
+    - '19.220'
+    - '19.024'
+    - '19.980'
+    - '19.303'
+    - '19.990'
+    - '19.108'
+    - '19.973'
+    - '19.441'
+    title: Unspecified
   title: Department of State
 - sub_categories:
   - title: Office of the Secretary
@@ -560,7 +660,14 @@ cfo_agencies:
   - title: Veterans Benefits Administration
   - title: National Cemetery System
   - title: Under Secretary for Benefits / Veterans Benefits Administation
-  - title: Unspecified
+  - programs:
+    - '64.037'
+    - '64.039'
+    - '64.056'
+    - '64.034'
+    - '64.130'
+    - '64.055'
+    title: Unspecified
   title: Department of Veterans Affairs
 - sub_categories:
   - title: Insular Affairs
@@ -574,13 +681,18 @@ cfo_agencies:
   - title: Bureau of Safety and Environmental Enforcement
   - title: U.S. Geological Survey
   - title: Bureau of Reclamation
-  - title: Unspecified
+  - programs:
+    - '15.088'
+    title: Unspecified
   title: Department of the Interior
 - sub_categories:
   - title: Community Development Financial Institutions
   - title: Internal Revenue Service
   - title: Departmental Offices
-  - title: Unspecified
+  - programs:
+    - '21.016'
+    - '21.009'
+    title: Unspecified
   title: Department of the Treasury
 - sub_categories: []
   title: Environmental Protection Agency
