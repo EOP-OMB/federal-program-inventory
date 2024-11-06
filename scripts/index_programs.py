@@ -106,8 +106,7 @@ def create_index_with_mapping(index_name):
                 },
                 "applicantTypes": {
                     "type": "keyword",
-                    "index": True,
-                    "doc_values": True  # Keep this for aggregations
+                    "index": True
                 },
                 "categories": {
                     "type": "nested",
