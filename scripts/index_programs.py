@@ -28,11 +28,19 @@ def delete_index(index_name):
 def create_index_with_mapping(index_name):
     """Create new index with mapping"""
     mapping = {
+        "settings": {
+            "index": {
+                "query": {
+                    "default_field": ["title", "objectives", "cfda", "popularName"]
+                }
+            }
+        },
         "mappings": {
             "dynamic": "strict",  # Prevent automatic field creation
             "properties": {
-                "cfda": { 
-                    "type": "keyword",
+                "cfda": {
+                    "type": "text",
+                    "analyzer": "english",  # Add stemming
                     "fields": {
                         "keyword": {
                             "type": "keyword"
@@ -41,6 +49,7 @@ def create_index_with_mapping(index_name):
                 },
                 "title": {
                     "type": "text",
+                    "analyzer": "english",  # Add stemming
                     "fields": {
                         "keyword": {
                             "type": "keyword"
@@ -73,7 +82,7 @@ def create_index_with_mapping(index_name):
                         }
                     }
                 },
-                "obligations": { 
+                "obligations": {
                     "type": "float",
                     "fields": {
                         "keyword": {
@@ -83,14 +92,16 @@ def create_index_with_mapping(index_name):
                 },
                 "objectives": {
                     "type": "text",
+                    "analyzer": "english",  # Add stemming
                     "fields": {
                         "keyword": {
                             "type": "keyword"
                         }
                     }
                 },
-                "popularName": { 
+                "popularName": {
                     "type": "text",
+                    "analyzer": "english",  # Add stemming
                     "fields": {
                         "keyword": {
                             "type": "keyword"
@@ -134,13 +145,6 @@ def create_index_with_mapping(index_name):
                             }
                         }
                     }
-                }
-            }
-        },
-        "settings": {
-            "index": {
-                "query": {
-                    "default_field": ["title", "objectives", "cfda", "popularName"]
                 }
             }
         }
