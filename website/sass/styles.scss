@@ -34,3 +34,34 @@ th.gridjs-th {
 #search-filters input:disabled+label {
     color: #a9aeb1;
 }
+
+  .banner-section {
+    background-image: url('../assets/img/banner.png');
+  }
+
+.usa-sidenav__sublist a:not(.usa-button) {
+    padding-left: 5px;
+  }
+
+  .usa-sidenav a:not(.usa-button) {
+    padding-left: 5px;
+}
+
+.usa-sidenav__sublist .usa-sidenav__sublist a:not(.usa-button) {
+    padding-left: 5px;
+}
+
+.usa-sidenav .expandable-button.toggle {
+    padding-right: 10px;
+}
+
+.usa-sidenav__sublist .usa-checkbox {
+    display: block;
+    width: 100%;
+}
+
+.usa-sidenav__sublist .usa-checkbox__label {
+    display: block;
+    width: auto;
+    word-wrap: break-word;
+}

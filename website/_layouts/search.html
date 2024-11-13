@@ -1,341 +1,395 @@
 ---
 layout: default
 
-header_title: Program search
+header_title: Program Search
 footer_include: _footer-search.html
 ---
-
-<section class="bg-primary-dark">
+<section class="bg-primary-darker padding-x-2 padding-y-3" style="background-image: url('../assets/img/banner.png'), linear-gradient(0deg, #272A63, #272A63);
+         background-position: center right; background-repeat: no-repeat; background-size: contain;">
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
-        <h1 class="margin-top-2 margin-bottom-2 text-white">{{ layout.header_title }}</h1>
+
+        <h1 class="usa-display usa-heading text-white font-heading-2xl text-light">{{
+          layout.header_title }}</h1>
       </div>
     </div>
   </div>
 </section>
-<main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
-  <div class="grid-container">
-    <div class="grid-row grid-gap">
-      <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
-        <form id="search-filters">
-          <h3 class="text-base-dark">Filters</h3>
-          <div class="usa-accordion  usa-accordion--bordered" data-allow-multiple>
-            
-            
-            <h4 class="usa-accordion__heading">
-              <button
-                type="button"
-                class="usa-accordion__button"
-                aria-expanded="false"
-                aria-controls="categories"
-              >
-                Categories
-                <span class="text-normal">
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_sub_categories }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </span>
+
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs,,">
+      <ol class="usa-breadcrumb__list">
+        <li class="usa-breadcrumb__list-item">
+          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
+        </li>
+        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+          <span>Program Search</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="grid-row grid-gap padding-top-1">
+    <div class="desktop:grid-col-3 bg-white desktop:border-base-lightest">
+      <form id="search-filters">
+        <h3 class="usa-display usa-heading font-heading-lg text-primary line-height-heading-3 text-light margin-0">
+          Filters</h3>
+        <div class="line-height-sans-3 padding-bottom-2">
+          Expand the filters below to select the filters you wish to apply.
+          <br />
+          <br />
+          Sub-agencies and sub-categories are included in their respective filter.
+        </div>
+        <!-- agency sub nav-->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="agency-section" data-content-id="agency-section">
+                <span class="font-sans-sm text-ink line-height-body-3">Agency</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
               </button>
-            </h4>
-            <div id="categories" class="usa-accordion__content">
-              <fieldset class="usa-fieldset">
 
-                  {% for c in page.categories %}
-
-                    <div class="display-flex">
-                      <a class="padding-05 margin-0 toggle" id="toggle-for-check-category-{{ forloop.index }}" data-children-id="children-for-check-category-{{ forloop.index }}">
-                        <span class="font-body-md {% if c.sub_categories.size == 0 %} text-white {% else %} text-base-light {% endif %} margin-top-05">
-                          <svg class="usa-icon display-block" aria-hidden="true" focusable="false" role="img">
-                            <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
-                          </svg>
-                        </span>
-                      </a>
-                      <div class="usa-checkbox">
-                        <input
-                            class="usa-checkbox__input check-category-{{ forloop.index }} parent"
-                            id="check-category-{{ forloop.index }}"
-                            type="checkbox"
-                            name="categories"
-                            data-filter-type="category"
-                            value="{{ c.title }}"
-                        />
-                        <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-category-{{ forloop.index }}">
-                            {{ c.title }}
-                        </label>
-                    </div>
-                    </div>
-
-                    {% if c.sub_categories.size > 0 %}
-
-                      <div id="children-for-check-category-{{ forloop.index }}" class="margin-left-6" style="display:none;">
-
-                        {% for sc in c.sub_categories %}
-
-                          <div class="usa-checkbox">
-                            <input
-                              class="usa-checkbox__input child-check-category-{{ forloop.parentloop.index }}"
-                              id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
-                              type="checkbox"
-                              name="categories"
-                              data-filter-type="sub-category"
-                              value="{{ c.title }} - {{ sc.title }}"
-                            />
-                            <label class="usa-checkbox__label font-body-2xs text-italic" for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                              {{ sc.title }}
-                            </label>
-                          </div>
-
-                        {% endfor %}
-
-                      </div>
-
-                    {% endif %}
-                    
-                  {% endfor %}
-
-              </fieldset>
-            </div>
-
-
-            <h4 class="usa-accordion__heading">
-              <button
-                type="button"
-                class="usa-accordion__button"
-                aria-expanded="false"
-                aria-controls="agencies"
-              >
-                Agencies
-                <span class="text-normal">
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_agencies }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </span>
-              </button>
-            </h4>
-            <div id="agencies" class="usa-accordion__content">
-              <fieldset class="usa-fieldset">
-
-                {% for a in page.cfo_agencies %}
-
-                  <div class="display-flex">
-                    <a class="padding-05 margin-0 toggle" id="toggle-for-check-agency-{{ forloop.index }}" data-children-id="children-for-check-agency-{{ forloop.index }}">
-                      <span class="font-body-md {% if a.sub_categories.size == 0 %} text-white {% else %} text-base-light {% endif %} margin-top-05">
-                        <svg class="usa-icon display-block" aria-hidden="true" focusable="false" role="img">
+              <!-- Agency Content -->
+              <div class="usa-sidenav__submenu margin-top-1" id="agency-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for a in page.cfo_agencies %}
+                  <!-- Parent Agency Container -->
+                  <div class="display-flex flex-align-start">
+                    <!-- Caret container -->
+                    <div class="padding-left-2 padding-top-1">
+                      {% if a.sub_categories.size > 0 %}
+                      <button
+                        class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
+                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
+                        aria-label="Toggle sub-items" tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </span>
-                    </a>
-                    <div class="usa-checkbox">
-                      <input
-                        class="usa-checkbox__input check-agency-{{ forloop.index }} parent"
-                        id="check-agency-{{ forloop.index }}"
-                        type="checkbox"
-                        name="agencies"
-                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                      />
-                      <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-agency-{{ forloop.index }}">
+                      </button>
+                      {% else %}
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                      {% endif %}
+                    </div>
+                    <!-- Checkbox container -->
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-agency-{{ forloop.index }}" type="checkbox" name="agencies"
+                        data-children-id="children-for-check-agency-{{ forloop.index }}"
+                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-agency-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
                     </div>
                   </div>
 
+                  <!-- Child Checkboxes -->
                   {% if a.sub_categories.size > 0 %}
-
-                    <div id="children-for-check-agency-{{ forloop.index }}" class="margin-left-6" style="display:none;">
-
-                      {% for sa in a.sub_categories %}
-
-                        <div class="usa-checkbox">
-                          <input
-                            class="usa-checkbox__input child-check-agency-{{ forloop.parentloop.index }}"
-                            id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}"
-                            type="checkbox"
-                            name="agencies"
-                            value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                          />
-                          <label class="usa-checkbox__label font-body-2xs text-italic" for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                            {{ sa.title }}
-                          </label>
-                        </div>
-
-                      {% endfor %}
-
+                  <div id="children-for-check-agency-{{ forloop.index }}" class="margin-left-9" hidden>
+                    {% for sa in a.sub_categories %}
+                    <div class="usa-checkbox">
+                      <input class="usa-checkbox__input child-checkbox width-2 height-2"
+                        id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
+                        name="agencies"
+                        value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                        {{ sa.title }}
+                      </label>
                     </div>
-
+                    {% endfor %}
+                  </div>
                   {% endif %}
-                  
-                {% endfor %}
+                  {% endfor %}
 
-                
-
-                  <div class="display-flex">
-                    <a class="padding-05 margin-0 toggle" id="toggle-for-check-agency-other" data-children-id="children-for-check-agency-other">
-                      <span class="font-body-md text-base-light margin-top-05">
-                        <svg class="usa-icon display-block" aria-hidden="true" focusable="false" role="img">
+                  <!-- Other Agencies Section -->
+                  <div class="display-flex flex-align-start">
+                    <!-- Caret container -->
+                    <div class="padding-left-2 padding-top-1">
+                      <button
+                        class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
+                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
+                        aria-label="Toggle sub-items" tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </span>
-                    </a>
-                    <div class="usa-checkbox">
-                      <input
-                        class="usa-checkbox__input check-agency-other parent"
-                        id="check-agency-other"
-                        type="checkbox"
-                        name="agencies"
-                        value=""
-                      />
-                      <label class="usa-checkbox__label font-body-2xs margin-left-1 margin-top-05" for="check-agency-other">
+                        </button>
+                    </div>
+                    <!-- Checkbox container -->
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2" id="check-agency-other"
+                        type="checkbox" name="agencies" data-children-id="children-for-check-agency-other" value="" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-agency-other">
                         Other agencies
                       </label>
                     </div>
                   </div>
 
-
-                    <div id="children-for-check-agency-other" class="margin-left-6" style="display:none;">
-                    
-                      {% for a in page.other_agencies %}
-
-                        <div class="usa-checkbox">
-                          <input
-                            class="usa-checkbox__input child-check-agency-other"
-                            id="check-agency-other-{{ forloop.index }}"
-                            type="checkbox"
-                            name="agencies"
-                            value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                          />
-                          <label class="usa-checkbox__label font-body-2xs text-italic" for="check-agency-other-{{ forloop.index }}">
-                            {{ a.title }}
-                          </label>
-                        </div>
-
-                      {% endfor %}
-
+                  <div id="children-for-check-agency-other" class="margin-left-9" hidden>
+                    {% for a in page.other_agencies %}
+                    <div class="usa-checkbox">
+                      <input class="usa-checkbox__input child-checkbox width-2 height-2"
+                        id="check-agency-other-{{ forloop.index }}" type="checkbox" name="agencies"
+                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-agency-other-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
                     </div>
-
-              </fieldset>
-            </div>
-
-
-            <h4 class="usa-accordion__heading">
-              <button
-                type="button"
-                class="usa-accordion__button"
-                aria-expanded="false"
-                aria-controls="assistancetypes"
-              >
-                Assistance types
-                <span class="text-normal">
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_assistance_types }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </span>
-              </button>
-            </h4>
-            <div id="assistancetypes" class="usa-accordion__content">
-              <fieldset class="usa-fieldset">
-                {% for a in page.assistance_types %}
-                  <div class="usa-checkbox">
-                    <input
-                      class="usa-checkbox__input parent"
-                      id="check-assistancetype-{{ forloop.index }}"
-                      type="checkbox"
-                      name="assistancetypes"
-                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                    />
-                    <label class="usa-checkbox__label font-body-2xs" for="check-assistancetype-{{ forloop.index }}">
-                      {{ a.title }}
-                    </label>
+                    {% endfor %}
                   </div>
-                {% endfor %}
-              </fieldset>
-            </div>
-
-
-            <h4 class="usa-accordion__heading">
-              <button
-                type="button"
-                class="usa-accordion__button"
-                aria-expanded="false"
-                aria-controls="applicants"
-              >
-                Eligible applicants
-                <span class="text-normal">
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_eligible_applicants }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </span>
-              </button>
-            </h4>
-            <div id="applicants" class="usa-accordion__content">
-              <fieldset class="usa-fieldset">
-                {% for a in page.applicant_types %}
-                  <div class="usa-checkbox">
-                    <input
-                      class="usa-checkbox__input parent"
-                      id="check-applicant-{{ forloop.index }}"
-                      type="checkbox"
-                      name="applicants"
-                      value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}"
-                    />
-                    <label class="usa-checkbox__label font-body-2xs" for="check-applicant-{{ forloop.index }}">
-                      {{ a.title }}
-                    </label>
-                  </div>
-                {% endfor %}
-              </fieldset>
-            </div>
-
-          </div>
-        </form>
-      </div>
-      <div class="desktop:grid-col-9">
-        <div class="grid-row bg-white">
-          <div class="tablet:grid-col-6">
-            <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
-              <span id="big-number-num-of-programs" class="font-body-3xl text-bold"></span>
-              <p class="margin-top-0">
-                programs
-                <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                    <use xlink:href="/assets/img/sprite.svg#info"></use>
-                  </svg>
-                </span>
-              </p>
-            </section>
-          </div>
-          <div class="tablet:grid-col-6">
-            <section class="padding-2 desktop:border-left-1 desktop:border-right-1 desktop:border-base-lightest">
-              <span id="big-number-obligations" class="font-body-3xl text-bold"></span>
-              <p class="margin-top-0">
-                in FY {{ page.fiscal_year }} obligations
-                <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                    <use xlink:href="/assets/img/sprite.svg#info"></use>
-                  </svg>
-                </span>
-              </p>
-            </section>
-          </div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-col-12">
-            <section class="bg-white margin-top-3 padding-2">
-              <h2 class="margin-top-0">Programs</h2>
-              <div id="programs-table"></div>
+                </fieldset>
               </div>
-            </section>
+            </li>
+          </ul>
+        </nav>
+        <!-- end agency sub nav-->
+        <!-- category sub nav-->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="categories-section" data-content-id="categories-section">
+                <span class="font-sans-sm text-ink line-height-body-3">Categories</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Categories Content -->
+              <div class="usa-sidenav__submenu margin-top-1" id="categories-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for c in page.categories %}
+                  <!-- Parent Category Container -->
+                  <div class="display-flex flex-align-start">
+                    <!-- Caret container -->
+                    <div class="padding-left-2 padding-top-1">
+                      {% if c.sub_categories.size > 0 %}
+                      <button
+                        class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
+                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
+                        aria-label="Toggle sub-items" tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </button>
+                      {% else %}
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                      {% endif %}
+                    </div>
+                    <!-- Checkbox container -->
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-category-{{ forloop.index }}" type="checkbox" name="categories"
+                        data-children-id="children-for-check-category-{{ forloop.index }}"
+                        value="{% for p in c.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-category-{{ forloop.index }}">
+                        {{ c.title }}
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Child Checkboxes -->
+                  {% if c.sub_categories.size > 0 %}
+                  <div id="children-for-check-category-{{ forloop.index }}" class="margin-left-9" hidden>
+                    {% for sc in c.sub_categories %}
+                    <div class="usa-checkbox">
+                      <input class="usa-checkbox__input child-checkbox width-2 height-2"
+                        id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
+                        name="categories"
+                        value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                        {{ sc.title }}
+                      </label>
+                    </div>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- end category sub nav-->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="program-type-section" data-content-id="program-type-section">
+                <span class="font-sans-sm text-ink line-height-body-3">Program type</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Program Type Content -->
+              <div class="usa-sidenav__submenu margin-top-1" id="program-type-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for a in page.assistance_types %}
+                  <div class="display-flex flex-align-start">
+                    <!-- Empty Caret container for alignment -->
+                    <div class="padding-left-2 padding-top-1">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-assistancetype-{{ forloop.index }}" type="checkbox" name="assistancetypes"
+                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-assistancetype-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Eligible Applicants sub nav -->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="eligible-applicants-section"
+                data-content-id="eligible-applicants-section">
+                <span class="font-sans-sm text-ink line-height-body-3">Eligible applicants</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Eligible Applicants Content -->
+              <div class="usa-sidenav__submenu margin-top-1" id="eligible-applicants-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for a in page.applicant_types %}
+                  <div class="display-flex flex-align-start">
+                    <!-- Empty Caret container for alignment -->
+                    <div class="padding-left-2 padding-top-1">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-applicant-{{ forloop.index }}" type="checkbox" name="applicants"
+                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                        for="check-applicant-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
+              <div class="border-bottom border-base-lighter"></div>
+            </li>
+          </ul>
+        </nav>
+      </form>
+    </div>
+    <div class="desktop:grid-col-9">
+      <div class="width-full text-primary font-sans-xl line-height-sans-2">Search for programs</div>
+      <div class="width-full text-ink font-sans-lg line-height-sans-3 padding-top-2">Programs listed here use data
+        pulled from SAM.gov and USASpending.gov</div>
+      <div class="width-full text-ink font-sans-sm text-bold padding-top-2">Search by program name, popular name, or
+        objective(s)</div>
+
+      <form class="usa-search usa-search--small padding-top-1 padding-bottom-2" role="search">
+        <label class="usa-sr-only" for="search-field-en-small">Search</label>
+        <input class="usa-input" id="search-field-en-small" type="search" name="search" />
+        <button class="usa-button" type="submit">
+          <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+        </button>
+      </form>
+
+      <div class="bg-info-lighter padding-2">
+        <div class="width-full text-primary font-sans-lg text-bold">Programs at a glance</div>
+        <div class="width-full font-sans-sm padding-top-1">
+          <span class="text-ink">The numbers below show </span>
+          <span class="text-ink text-bold">Programs</span>
+          <span class="text-ink">(individual Assistance Listings) and actual </span>
+          <span class="text-ink text-bold">Obligations</span>
+          <span class="text-ink">, both as submitted by agencies to </span>
+          <span class="text-primary">SAM.gov</span>
+          <span class="text-ink">.</span>
+        </div>
+      </div>
+      <div class="width-full">
+        <div class="grid-row padding-top-2 position-relative">
+          <div class="grid-col-auto">
+            <button class="usa-button usa-button--outline text-bold">
+              Clear Filters
+            </button>
+          </div>
+
+          <div class="grid-col display-flex flex-justify-end">
+            <span class="padding-right-2 padding-top-1 text-bold font-sans-sm">Show results by:</span>
+            <div class="display-flex">
+              <button class="usa-button height-5 margin-right-0 radius-top-lg radius-bottom-lg text-bold">
+                Obligations
+              </button>
+              <button class="usa-button usa-button--outline height-5 radius-top-lg radius-bottom-lg text-bold">
+                Program Name
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 </main>

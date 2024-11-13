@@ -249,64 +249,114 @@
     console.error("Search input field not found");
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    initializeToggles();
-    initializeCheckboxSync();
+  function initializeToggles() {
+  const filterToggles = document.querySelectorAll('.toggle.expandable-button');
+  filterToggles.forEach((toggle) => {
+    toggle.addEventListener('click', function (event) {
+      event.preventDefault();
+      // Get the content ID directly from data-content-id
+      const contentId = this.getAttribute('data-content-id');
+      const childrenContainer = document.getElementById(contentId);
+      const icon = this.querySelector('use');
+
+      // Toggle visibility using hidden attribute to match USWDS pattern
+      if (childrenContainer) {
+        childrenContainer.hidden = !childrenContainer.hidden;
+        
+        // Toggle the icon between navigate_next and expand_more
+        if (childrenContainer.hidden) {
+          icon.setAttribute('xlink:href', '/assets/img/sprite.svg#navigate_next');
+        } else {
+          icon.setAttribute('xlink:href', '/assets/img/sprite.svg#expand_more');
+        }
+      }
+    });
   });
 
-  function initializeToggles() {
-    const filterToggles = document.querySelectorAll(".toggle");
-    filterToggles.forEach((toggle) => {
-      toggle.addEventListener("click", function (event) {
-        event.preventDefault();
-        const childrenId = this.getAttribute("data-children-id");
-        const childrenContainer = document.getElementById(childrenId);
-        const icon = this.querySelector("use");
-
-        // Toggle visibility of the child container
-        if (
-          childrenContainer.style.display === "none" ||
-          !childrenContainer.style.display
-        ) {
-          childrenContainer.style.display = "block";
-          icon.setAttribute("xlink:href", "/assets/img/sprite.svg#expand_more");
-        } else {
-          childrenContainer.style.display = "none";
-          icon.setAttribute(
-            "xlink:href",
-            "/assets/img/sprite.svg#navigate_next"
-          );
-        }
+  // Prevent checkbox clicks from triggering the toggle
+  document
+    .querySelectorAll('.usa-checkbox input[type="checkbox"]')
+    .forEach((checkbox) => {
+      checkbox.addEventListener('click', function (event) {
+        event.stopPropagation();
       });
     });
+}
 
-    // Prevent checkbox clicks from triggering the toggle
-    document
-      .querySelectorAll('.usa-checkbox input[type="checkbox"]')
-      .forEach((checkbox) => {
-        checkbox.addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
-      });
-  }
-
-  function initializeCheckboxSync() {
-    const parentCheckboxes = document.querySelectorAll(".parent");
-
-    parentCheckboxes.forEach((parentCheckbox) => {
-      parentCheckbox.addEventListener("change", function () {
-        const childrenId = this.id.replace("check-", "children-for-check-");
-        const childCheckboxes = document.querySelectorAll(
-          `#${childrenId} .usa-checkbox input[type="checkbox"]`
-        );
-
-        childCheckboxes.forEach((childCheckbox) => {
+function initializeCheckboxSync() {
+  // Handle parent checkbox changes
+  document.querySelectorAll('.parent-checkbox').forEach(parentCheckbox => {
+    parentCheckbox.addEventListener('change', function() {
+      // Get the children container ID from the data attribute
+      const childrenId = this.getAttribute('data-children-id');
+      const childrenContainer = document.getElementById(childrenId);
+      
+      if (childrenContainer) {
+        // Get all child checkboxes in this container
+        const childCheckboxes = childrenContainer.querySelectorAll('input[type="checkbox"]');
+        
+        // Set all child checkboxes to match parent's checked state
+        childCheckboxes.forEach(childCheckbox => {
           childCheckbox.checked = this.checked;
         });
-      });
+      }
     });
-  }
+  });
 
-  // Render grid once
-  searchGrid.render(document.getElementById("programs-table"));
+  // Handle child checkbox changes
+  document.querySelectorAll('.child-checkbox').forEach(childCheckbox => {
+    childCheckbox.addEventListener('change', function() {
+      // Find the parent checkbox by traversing up the DOM
+      const childrenContainer = this.closest('[id^="children-for-check-agency-"]');
+      if (childrenContainer) {
+        const parentId = childrenContainer.id.replace('children-for-check-', '');
+        const parentCheckbox = document.getElementById(parentId);
+        
+        if (parentCheckbox) {
+          // Get all sibling checkboxes
+          const siblingCheckboxes = childrenContainer.querySelectorAll('.child-checkbox');
+          // Check if all siblings are checked
+          const allChecked = Array.from(siblingCheckboxes).every(cb => cb.checked);
+          // Update parent checkbox
+          parentCheckbox.checked = allChecked;
+        }
+      }
+    });
+  });
+}
+
+
+  function initializeCaretToggles() {
+  const expandButtons = document.querySelectorAll('.usa-sidenav__button');
+  
+  expandButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const contentId = this.getAttribute('data-content-id');
+      const content = document.getElementById(contentId);
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      
+      // Toggle aria-expanded
+      this.setAttribute('aria-expanded', !expanded);
+      
+      // Toggle hidden attribute on content
+      if (content) {
+        content.hidden = !content.hidden;
+      }
+
+      // Rotate the expand_more icon
+      const icon = this.querySelector('.usa-icon');
+      if (icon) {
+        icon.style.transform = expanded ? '' : 'rotate(180deg)';
+        icon.style.transition = 'transform 0.2s';
+      }
+    });
+  });
+}
+
+// Initialize caret toggles and other functions on DOM load
+document.addEventListener("DOMContentLoaded", function () {
+  initializeCaretToggles();
+  initializeToggles();
+  initializeCheckboxSync();
+});
 </script>
