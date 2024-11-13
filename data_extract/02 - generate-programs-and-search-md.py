@@ -806,10 +806,10 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
         category: GenericCategory = categories[key]
         if not two_tier or (two_tier and category.get_parent() is None):
             o = {
-                'title': category.get_title()
+                'title': category.get_title(),
+                'programs': [p.get_id() for p in category.programs]
             }
-            programs = [p.get_id() for p in category.programs]
-            if len(programs) == 0: # if there are no programs, don't add the category
+            if len(o['programs']) == 0: # if there are no programs, don't add the category
                 continue
             if two_tier:
                 all_programs: set = set(p.get_id() for p in category.programs)
@@ -823,7 +823,8 @@ def generate_list_of_program_ids_for_category(categories: list[GenericCategory],
                         and not (child.type == 'agency' and child.get_title() == child.get_parent().get_title()):
                         o['sub_categories'].append(
                             {
-                                'title': child.get_title()
+                                'title': child.get_title(),
+                                'programs': [p.get_id() for p in child.programs]
                             }
                         )
                         all_programs -= set(p.get_id() for p in child.programs)
@@ -859,6 +860,7 @@ with open('../website/pages/search.md', 'w') as file:
             'cfda': programs[p].get_id(),
             'title': programs[p].get_title(),
             'permalink': '/program/' + programs[p].get_id(),
+            # 'agency': programs[p].get_top_level_agency_printable(),
             'obligations': programs[p].get_obligation_value(PRIMARY_FISCAL_YEAR, 'sam_actual'),
             'objectives': programs[p].get_objective_value(),
             'popularName': programs[p].get_popular_name(),
