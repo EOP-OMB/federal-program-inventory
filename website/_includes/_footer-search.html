@@ -1,7 +1,7 @@
 <script>
   const apiBaseUrl = "http://localhost:8000/api";
   let currentPage = 1;
-  const pageSize = 20;
+  const pageSize = 10;
   let currentSort = { field: "title", order: "asc" };
   let currentQuery = "";
 
@@ -18,7 +18,6 @@
 
   // Sort field mapping
   const sortFieldMapping = {
-    agency: "agency.title",
     title: "title",
     obligations: "obligations",
   };
@@ -28,101 +27,223 @@
     return sortFieldMapping[columnId] || columnId || "title";
   }
 
-  // Initialize Grid.js
-  let obligationsTooltipHtml =
-    '<span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use xlink:href="/assets/img/sprite.svg#info"></use></svg></span>';
-  const searchGrid = new gridjs.Grid({
-    columns: [
-      { id: "cfda", name: "Number", hidden: true },
-      {
-        id: "title",
-        name: "Name",
-        width: "40%",
-        formatter: (_, row) =>
-          gridjs.html(
-            `<a href="${row.cells[4].data}" target="_blank">${
-              row.cells[0].data + " - " + row.cells[1].data
-            }</a>`
-          ),
-        sortable: true,
-      },
-      {
-        id: "agency",
-        name: "Agency",
-        width: "30%",
-        formatter: (cell) => cell?.title || "",
-        sortable: true,
-      },
-      {
-        id: "obligations",
-        name: gridjs.html(
-          "Obligations (FY {{page.fiscal_year}}) " + obligationsTooltipHtml
-        ),
-        width: "29%",
-        formatter: (cell) =>
-          `${new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-            maximumFractionDigits: 2,
-            notation: "compact",
-          }).format(cell)}`,
-        sortable: true,
-      },
-      { id: "permalink", name: "Link", hidden: true },
-    ],
-    style: {
-      container: { overflow: "hidden" },
-    },
-    search: {
-      server: {
-        url: (prev, keyword) => {
-          currentQuery = keyword;
-          currentPage = 1;
-          return fetchProgramsData(keyword); // Pass keyword directly to fetchProgramsData
-        },
-      },
-    },
-    pagination: {
-      limit: pageSize,
-      server: {
-        url: (prev, page) => {
-          currentPage = page + 1;
-          return fetchProgramsData();
-        },
-      },
-    },
-    sort: {
-      multiColumn: false,
-      server: {
-        url: (prev, columns) => {
-          if (columns && columns.length > 0) {
-            const column = columns[0];
-            currentSort = {
-              field: getSortField(column.id),
-              order: column.direction === 1 ? "asc" : "desc",
-            };
-          }
-          return fetchProgramsData();
-        },
-      },
-    },
-    server: {
-      url: fetchProgramsData(),
-      then: (response) => {
-        totalCount = response.count;
-        totalObligations = response.total_obligations;
-        updateUICounters();
-        return response.programs;
-      },
-      total: (response) => response.count,
-      handle: (res) => {
-        if (!res.ok) {
-          throw Error("Could not fetch data");
-        }
-        return res.json();
-      },
-    },
+  // Function to format currency in billions
+  function formatObligations(amount) {
+    const billion = 1000000000;
+    const inBillions = amount / billion;
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0
+    }).format(inBillions) + 'B';
+  }
+
+  function updatePagination(currentPage, totalPages) {
+    // Update the info text
+    const start = ((currentPage - 1) * pageSize) + 1;
+    const end = Math.min(currentPage * pageSize, totalCount);
+    
+    document.getElementById("results-start").textContent = start.toLocaleString();
+    document.getElementById("results-end").textContent = end.toLocaleString();
+    document.getElementById("results-total").textContent = totalCount.toLocaleString();
+    
+    // Generate the page numbers
+    generatePaginationNumbers(currentPage, totalPages);
+  }
+
+  function initializePaginationHandlers() {
+  const paginationList = document.querySelector('.usa-pagination__list');
+  
+  // Event delegation for all pagination clicks
+  paginationList.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = event.target.closest('a');
+    if (!target) return;
+
+    // Handle numbered page clicks
+    if (target.classList.contains('usa-pagination__button')) {
+      const newPage = parseInt(target.textContent);
+      if (!isNaN(newPage) && newPage !== currentPage) {
+        currentPage = newPage;
+        console.log('Clicked page:', currentPage);
+        fetchProgramsData();
+      }
+    }
+    
+    // Handle previous button
+    if (target.classList.contains('usa-pagination__previous-page')) {
+      if (currentPage > 1) {
+        currentPage--;
+        console.log('Previous page:', currentPage);
+        fetchProgramsData();
+      }
+    }
+    
+    // Handle next button
+    if (target.classList.contains('usa-pagination__next-page')) {
+      const totalPages = Math.ceil(totalCount / pageSize);
+      if (currentPage < totalPages) {
+        currentPage++;
+        console.log('Next page:', currentPage);
+        fetchProgramsData();
+      }
+    }
   });
+}
+
+  function generatePaginationNumbers(currentPage, totalPages) {
+  const paginationList = document.querySelector('.usa-pagination__list');
+  const prevButton = paginationList.querySelector('.usa-pagination__arrow:first-child');
+  const nextButton = paginationList.querySelector('.usa-pagination__arrow:last-child');
+  
+  // Remove existing page numbers
+  const existingNumbers = paginationList.querySelectorAll('.usa-pagination__page-no, .usa-pagination__overflow');
+  existingNumbers.forEach(item => item.remove());
+  
+  let pages = [];
+  
+  pages.push(1);
+  let rangeStart = Math.max(2, currentPage - 1);
+  let rangeEnd = Math.min(totalPages - 1, currentPage + 1);
+  
+  if (rangeStart > 2) pages.push('...');
+  
+  for (let i = rangeStart; i <= rangeEnd; i++) {
+    pages.push(i);
+  }
+  
+  if (rangeEnd < totalPages - 1) pages.push('...');
+  if (totalPages > 1) pages.push(totalPages);
+  
+  // Insert page numbers into DOM
+  pages.forEach(page => {
+    const li = document.createElement('li');
+    
+    if (page === '...') {
+      li.className = 'usa-pagination__item usa-pagination__overflow';
+      li.setAttribute('aria-label', 'ellipsis indicating non-visible pages');
+      li.innerHTML = '<span>…</span>';
+    } else {
+      li.className = 'usa-pagination__item usa-pagination__page-no';
+      const a = document.createElement('a');
+      a.href = 'javascript:void(0);';
+      a.className = 'usa-pagination__button' + (page === currentPage ? ' usa-current' : '');
+      a.setAttribute('aria-label', `Page ${page}`);
+      if (page === currentPage) {
+        a.setAttribute('aria-current', 'page');
+      }
+      a.textContent = page;
+      li.appendChild(a);
+    }
+    
+    paginationList.insertBefore(li, nextButton);
+  });
+  
+  // Update disabled states
+  const prevLink = prevButton.querySelector('a');
+  const nextLink = nextButton.querySelector('a');
+  
+  if (currentPage === 1) {
+    prevLink.classList.add('usa-pagination__link--disabled');
+    prevLink.setAttribute('aria-disabled', 'true');
+  } else {
+    prevLink.classList.remove('usa-pagination__link--disabled');
+    prevLink.removeAttribute('aria-disabled');
+  }
+  
+  if (currentPage === totalPages) {
+    nextLink.classList.add('usa-pagination__link--disabled');
+    nextLink.setAttribute('aria-disabled', 'true');
+  } else {
+    nextLink.classList.remove('usa-pagination__link--disabled');
+    nextLink.removeAttribute('aria-disabled');
+  }
+}
+  
+function renderPrograms(programs) {
+    const programList = document.getElementById("program-list");
+    const template = document.getElementById("program-template");
+
+    if (!template) {
+      console.error("Program template not found");
+      return;
+    }
+
+    programList.innerHTML = "";
+
+    programs.slice(0, pageSize).forEach((program) => {
+      const clone = template.content.cloneNode(true);
+
+      clone.querySelector(".program-title").textContent = program.title;
+      clone.querySelector(".program-title").href = program.permalink || "#";
+      clone.querySelector(".program-popular-name").textContent = program.popularName || "";
+      clone.querySelector(".program-agency").textContent = program.agency?.title || "";
+      clone.querySelector(".program-obligations").textContent = 
+        `${formatObligations(program.obligations)} in FY ${new Date().getFullYear() - 1} obligations`;
+
+      const objectivesEl = clone.querySelector(".program-objectives");
+      const readMoreBtn = clone.querySelector(".read-more-btn");
+
+      objectivesEl.textContent = program.objectives || "";
+
+      setTimeout(() => {
+        const isOverflowing = objectivesEl.scrollHeight > objectivesEl.clientHeight;
+        if (isOverflowing) {
+          readMoreBtn.style.display = "inline-block";
+
+          readMoreBtn.addEventListener("click", () => {
+            const isExpanded = objectivesEl.classList.contains("expanded");
+            objectivesEl.classList.toggle("expanded");
+            readMoreBtn.textContent = isExpanded ? "...read more" : "read less";
+          });
+        }
+      }, 0);
+
+      programList.appendChild(clone);
+    });
+  }
+
+  async function fetchProgramsData(keyword = currentQuery) {
+  console.log('Fetching data for page:', currentPage); // Debug log
+  
+  const requestBody = {
+    query: keyword || '',
+    page: currentPage,
+    page_size: pageSize,
+    sort_field: currentSort.field,
+    sort_order: currentSort.order,
+    agencySubAgency: selectedAgencySubAgency,
+    categorySubcategory: selectedCategorySubcategory,
+    assistanceTypes: selectedAssistanceTypes,
+    applicantTypes: selectedApplicantTypes
+  };
+  
+  try {
+    const response = await fetch(`${apiBaseUrl}/search/programsTable`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    totalCount = data.count;
+    totalObligations = data.total_obligations;
+    
+    updatePagination(currentPage, Math.ceil(data.count / pageSize));
+    renderPrograms(data.programs);
+    
+    return data;
+  } catch (error) {
+    console.error("Error fetching programs:", error);
+    return { programs: [], count: 0, total_obligations: 0 };
+  }
+}
 
   // Function to update UI counters
   function updateUICounters() {
@@ -137,37 +258,6 @@
       });
   }
 
-  // Function to construct API URL with all parameters
-  function fetchProgramsData(keyword = currentQuery) {
-    const params = new URLSearchParams();
-
-    if (keyword) {
-      params.append("query", keyword); // Use the passed keyword instead of currentQuery
-    }
-
-    selectedAgencySubAgency.forEach((agency) =>
-      params.append("agencySubAgency", agency)
-    );
-    selectedCategorySubcategory.forEach((category) =>
-      params.append("categorySubcategory", category)
-    );
-    selectedAssistanceTypes.forEach((type) =>
-      params.append("assistanceTypes", type)
-    );
-    selectedApplicantTypes.forEach((type) =>
-      params.append("applicantTypes", type)
-    );
-
-    params.append("page", Math.max(1, currentPage));
-    params.append("page_size", pageSize);
-    params.append("sort_field", currentSort.field);
-    params.append("sort_order", currentSort.order);
-
-    const url = `${apiBaseUrl}/search/programsTable?${params.toString()}`;
-    console.log("Fetching:", url);
-    return url;
-  }
-
   // Add event listeners for filters
   const filterInputs = document
     .getElementById("search-filters")
@@ -175,12 +265,12 @@
   for (let input of filterInputs) {
     input.addEventListener("change", (event) => {
       handleFilterChange(event);
-      currentPage = 1; // Reset to first page on filter change
-      searchGrid.forceRender();
+      currentPage = 1; 
+      fetchProgramsData();
     });
   }
+  
 
-  // Handle filter changes
   function handleFilterChange(event) {
     const input = event.target;
     const value = input.value;
@@ -220,143 +310,166 @@
     }
   }
 
-  // Debounced search input handling
-  let searchTimeout;
-  const searchInput = document.querySelector(
-    '#search-filters input[type="text"]'
-  ); // Get search input within search-filters
-
-  if (searchInput) {
-    searchInput.addEventListener("input", (event) => {
-      clearTimeout(searchTimeout); // Clear the previous timeout
-      const keyword = event.target.value;
-
-      searchTimeout = setTimeout(() => {
-        if (currentQuery !== keyword) {
-          currentQuery = keyword;
-          currentPage = 1; // Reset page on search
-          searchGrid
-            .updateConfig({
-              server: {
-                url: () => fetchProgramsData(keyword), // Pass the updated keyword here
-              },
-            })
-            .forceRender(); // Update server URL and re-render after debounce
-        }
-      }, 300); // Adjust the debounce delay as needed
-    });
-  } else {
-    console.error("Search input field not found");
-  }
-
   function initializeToggles() {
-  const filterToggles = document.querySelectorAll('.toggle.expandable-button');
-  filterToggles.forEach((toggle) => {
-    toggle.addEventListener('click', function (event) {
-      event.preventDefault();
-      // Get the content ID directly from data-content-id
-      const contentId = this.getAttribute('data-content-id');
-      const childrenContainer = document.getElementById(contentId);
-      const icon = this.querySelector('use');
+    const filterToggles = document.querySelectorAll(".toggle.expandable-button");
+    filterToggles.forEach((toggle) => {
+      toggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        const contentId = this.getAttribute("data-content-id");
+        const childrenContainer = document.getElementById(contentId);
+        const icon = this.querySelector("use");
 
-      // Toggle visibility using hidden attribute to match USWDS pattern
-      if (childrenContainer) {
-        childrenContainer.hidden = !childrenContainer.hidden;
-        
-        // Toggle the icon between navigate_next and expand_more
-        if (childrenContainer.hidden) {
-          icon.setAttribute('xlink:href', '/assets/img/sprite.svg#navigate_next');
-        } else {
-          icon.setAttribute('xlink:href', '/assets/img/sprite.svg#expand_more');
+        if (childrenContainer) {
+          childrenContainer.hidden = !childrenContainer.hidden;
+
+          if (childrenContainer.hidden) {
+            icon.setAttribute("xlink:href", "/assets/img/sprite.svg#navigate_next");
+          } else {
+            icon.setAttribute("xlink:href", "/assets/img/sprite.svg#expand_more");
+          }
         }
-      }
-    });
-  });
-
-  // Prevent checkbox clicks from triggering the toggle
-  document
-    .querySelectorAll('.usa-checkbox input[type="checkbox"]')
-    .forEach((checkbox) => {
-      checkbox.addEventListener('click', function (event) {
-        event.stopPropagation();
       });
     });
-}
 
-function initializeCheckboxSync() {
-  // Handle parent checkbox changes
-  document.querySelectorAll('.parent-checkbox').forEach(parentCheckbox => {
-    parentCheckbox.addEventListener('change', function() {
-      // Get the children container ID from the data attribute
-      const childrenId = this.getAttribute('data-children-id');
-      const childrenContainer = document.getElementById(childrenId);
-      
-      if (childrenContainer) {
-        // Get all child checkboxes in this container
-        const childCheckboxes = childrenContainer.querySelectorAll('input[type="checkbox"]');
-        
-        // Set all child checkboxes to match parent's checked state
-        childCheckboxes.forEach(childCheckbox => {
-          childCheckbox.checked = this.checked;
+    document
+      .querySelectorAll('.usa-checkbox input[type="checkbox"]')
+      .forEach((checkbox) => {
+        checkbox.addEventListener("click", function (event) {
+          event.stopPropagation();
         });
-      }
-    });
-  });
+      });
+  }
 
-  // Handle child checkbox changes
-  document.querySelectorAll('.child-checkbox').forEach(childCheckbox => {
-    childCheckbox.addEventListener('change', function() {
-      // Find the parent checkbox by traversing up the DOM
-      const childrenContainer = this.closest('[id^="children-for-check-agency-"]');
-      if (childrenContainer) {
-        const parentId = childrenContainer.id.replace('children-for-check-', '');
-        const parentCheckbox = document.getElementById(parentId);
-        
-        if (parentCheckbox) {
-          // Get all sibling checkboxes
-          const siblingCheckboxes = childrenContainer.querySelectorAll('.child-checkbox');
-          // Check if all siblings are checked
-          const allChecked = Array.from(siblingCheckboxes).every(cb => cb.checked);
-          // Update parent checkbox
-          parentCheckbox.checked = allChecked;
+  function initializeCheckboxSync() {
+    document.querySelectorAll(".parent-checkbox").forEach((parentCheckbox) => {
+      parentCheckbox.addEventListener("change", function () {
+        const childrenId = this.getAttribute("data-children-id");
+        const childrenContainer = document.getElementById(childrenId);
+
+        if (childrenContainer) {
+          const childCheckboxes = childrenContainer.querySelectorAll(
+            'input[type="checkbox"]'
+          );
+          childCheckboxes.forEach((childCheckbox) => {
+            childCheckbox.checked = this.checked;
+          });
         }
-      }
+      });
     });
-  });
-}
 
+    document.querySelectorAll(".child-checkbox").forEach((childCheckbox) => {
+      childCheckbox.addEventListener("change", function () {
+        const childrenContainer = this.closest(
+          '[id^="children-for-check-agency-"]'
+        );
+        if (childrenContainer) {
+          const parentId = childrenContainer.id.replace("children-for-check-", "");
+          const parentCheckbox = document.getElementById(parentId);
+
+          if (parentCheckbox) {
+            const siblingCheckboxes =
+              childrenContainer.querySelectorAll(".child-checkbox");
+            const allChecked = Array.from(siblingCheckboxes).every(
+              (cb) => cb.checked
+            );
+            parentCheckbox.checked = allChecked;
+          }
+        }
+      });
+    });
+  }
 
   function initializeCaretToggles() {
-  const expandButtons = document.querySelectorAll('.usa-sidenav__button');
-  
-  expandButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
-      const contentId = this.getAttribute('data-content-id');
-      const content = document.getElementById(contentId);
-      const expanded = this.getAttribute('aria-expanded') === 'true';
-      
-      // Toggle aria-expanded
-      this.setAttribute('aria-expanded', !expanded);
-      
-      // Toggle hidden attribute on content
-      if (content) {
-        content.hidden = !content.hidden;
-      }
+    const expandButtons = document.querySelectorAll(".usa-sidenav__button");
 
-      // Rotate the expand_more icon
-      const icon = this.querySelector('.usa-icon');
-      if (icon) {
-        icon.style.transform = expanded ? '' : 'rotate(180deg)';
-        icon.style.transition = 'transform 0.2s';
+    expandButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        const contentId = this.getAttribute("data-content-id");
+        const content = document.getElementById(contentId);
+        const expanded = this.getAttribute("aria-expanded") === "true";
+
+        this.setAttribute("aria-expanded", !expanded);
+
+        if (content) {
+          content.hidden = !content.hidden;
+        }
+
+        const icon = this.querySelector(".usa-icon");
+        if (icon) {
+          icon.style.transform = expanded ? "" : "rotate(180deg)";
+          icon.style.transition = "transform 0.2s";
+        }
+      });
+    });
+  }
+
+  function initializeSortButtons() {
+  const sortButtons = document.querySelectorAll('.grid-col.display-flex.flex-justify-end .usa-button');
+  
+  sortButtons.forEach(button => {
+    button.addEventListener('click', async function() {
+      // Remove outline class from all buttons
+      sortButtons.forEach(btn => {
+        btn.classList.add('usa-button--outline');
+      });
+      
+      // Remove outline class from clicked button
+      this.classList.remove('usa-button--outline');
+      
+      // Determine which sort field to use based on button text
+      const buttonText = this.textContent.trim().toLowerCase();
+      const sortField = buttonText === 'obligations' ? 'obligations' : 'title';
+      
+      // Toggle sort order if clicking the same field
+      if (currentSort.field === sortField) {
+        currentSort.order = currentSort.order === 'asc' ? 'desc' : 'asc';
+      } else {
+        // Set new sort field and default to ascending
+        currentSort.field = sortField;
+        currentSort.order = 'asc';
       }
+      
+      // Reset to first page when sorting
+      currentPage = 1;
+      
+      // Fetch data with new sort
+      await fetchProgramsData();
     });
   });
 }
 
-// Initialize caret toggles and other functions on DOM load
-document.addEventListener("DOMContentLoaded", function () {
-  initializeCaretToggles();
-  initializeToggles();
-  initializeCheckboxSync();
-});
+  function initializeSearchButton() {
+    const searchForm = document.querySelector(".usa-search");
+    const searchInput = searchForm?.querySelector('input[type="search"]');
+    const searchButton = searchForm?.querySelector('button[type="submit"]');
+
+    if (searchForm) {
+      searchForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        if (searchInput) {
+          const keyword = searchInput.value;
+          currentQuery = keyword;
+          currentPage = 1;
+
+          console.log("Searching for:", keyword);
+          const data = await fetchProgramsData(keyword);
+          console.log("Search results:", data);
+        }
+      });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", async function () {
+    initializeCaretToggles();
+    initializeToggles();
+    initializeCheckboxSync();
+    initializeSearchButton();
+    initializePaginationHandlers();
+    initializeSortButtons();
+
+    console.log("Making initial API call...");
+    const initialData = await fetchProgramsData();
+    console.log("Initial data loaded:", initialData);
+  });
 </script>

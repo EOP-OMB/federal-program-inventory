@@ -129,7 +129,7 @@ footer_include: _footer-search.html
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                        </button>
+                      </button>
                     </div>
                     <!-- Checkbox container -->
                     <div class="usa-checkbox flex-fill">
@@ -386,8 +386,95 @@ footer_include: _footer-search.html
               </button>
             </div>
           </div>
+
         </div>
       </div>
+      <!--programs table-->
+      <div class="program-results">
+        <div id="program-list" class="usa-collection">
+        </div>
+        <!-- pagination -->
+        <div class="grid-row">
+
+          <div class="grid-col-fill text-left pagination-y-2">
+            <span class="font-sans-sm" id="pagination-info">
+              Showing <span class="text-bold" id="results-start">1</span> to 
+              <span class="text-bold" id="results-end">10</span> of 
+              <span class="text-bold" id="results-total">0</span> results
+            </span>
+          </div>
+
+          <div class="grid-col-auto">
+            <nav aria-label="Pagination" class="usa-pagination">
+              <ul class="usa-pagination__list">
+                <li class="usa-pagination__item usa-pagination__arrow">
+                  <a href="javascript:void(0);" 
+                     class="usa-pagination__link usa-pagination__previous-page" 
+                     aria-label="Previous page"
+                     id="prev-page-button">
+                    <svg class="usa-icon" aria-hidden="true" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#navigate_before"></use>
+                    </svg>
+                    <span class="usa-pagination__link-text">Previous</span>
+                  </a>
+                </li>
+                <!-- Page numbers will be inserted here -->
+                <li class="usa-pagination__item usa-pagination__arrow">
+                  <a href="javascript:void(0);" 
+                     class="usa-pagination__link usa-pagination__next-page" 
+                     aria-label="Next page"
+                     id="next-page-button">
+                    <span class="usa-pagination__link-text">Next </span>
+                    <svg class="usa-icon" aria-hidden="true" role="img">
+                      <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+         <!-- end pagination -->
+      </div>
+       <!-- Template for each program -->
+       <template id="program-template">
+        <div class="padding-y-2 border-bottom border-base-lighter">
+          <div class="grid-row grid-gap">
+            <div class="tablet:grid-col-8">
+              <a href="#" class="usa-link text-primary-darker text-bold program-title">
+              </a>
+            </div>
+            <div class="tablet:grid-col-4">
+              <div class="grid-col-12 text-right font-italic program-obligations">
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="grid-col-12">
+                <span class="text-bold">Popular name:</span>
+                <span class="padding-right-2 program-popular-name"></span>
+              </div>
+              <div class="grid-col-12">
+                <span class="text-bold">Agency:</span>
+                <span class="program-agency"></span>
+              </div>
+            </div>
+            <div class="grid-row margin-top-1">
+              <div class="grid-col-12">
+                <div class="objectives-container">
+                  <p class="margin-y-0 line-height-sans-4 program-objectives text-truncate">
+                  </p>
+                  <button class="usa-button usa-button--unstyled read-more-btn" type="button">
+                    ...read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <!--programs table end-->
+
+
     </div>
   </div>
 </div>
