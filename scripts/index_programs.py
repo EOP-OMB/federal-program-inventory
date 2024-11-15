@@ -83,12 +83,7 @@ def create_index_with_mapping(index_name):
                     }
                 },
                 "obligations": {
-                    "type": "float",
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword"
-                        }
-                    }
+                    "type": "float"
                 },
                 "objectives": {
                     "type": "text",

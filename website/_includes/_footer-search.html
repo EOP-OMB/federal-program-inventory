@@ -15,6 +15,8 @@
   let programs = [];
   let totalCount = 0;
   let totalObligations = 0;
+  let globalProgramCount = 0;
+  let globalTotalObligations = 0;
 
   // Sort field mapping
   const sortFieldMapping = {
@@ -29,13 +31,14 @@
 
   // Function to format currency in billions
   function formatObligations(amount) {
-    const billion = 1000000000;
-    const inBillions = amount / billion;
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      maximumFractionDigits: 0
-    }).format(inBillions) + 'B';
+    const trillion = 1000000000000;
+  const billion = 1000000000;
+  
+  if (amount >= trillion) {
+    return `$${(amount / trillion).toFixed(2)}T`;
+  } else {
+    return `$${Math.round(amount / billion)}B`;
+  }
   }
 
   function updatePagination(currentPage, totalPages) {
@@ -50,6 +53,30 @@
     // Generate the page numbers
     generatePaginationNumbers(currentPage, totalPages);
   }
+
+  function updateProgramCounts() {
+  const filteredCountElement = document.getElementById('filtered-count');
+  const globalCountElement = document.getElementById('global-count');
+  
+  if (filteredCountElement) {
+    filteredCountElement.textContent = totalCount.toLocaleString();
+  }
+  
+  if (globalCountElement) {
+    globalCountElement.textContent = globalProgramCount.toLocaleString();
+  }
+
+  const filteredObligationsElement = document.getElementById('filtered-obligations');
+  const globalObligationsElement = document.getElementById('global-obligations');
+  
+  if (filteredObligationsElement) {
+    filteredObligationsElement.textContent = formatObligations(totalObligations);
+  }
+  
+  if (globalObligationsElement) {
+    globalObligationsElement.textContent = formatObligations(globalTotalObligations);
+  }
+}
 
   function initializePaginationHandlers() {
   const paginationList = document.querySelector('.usa-pagination__list');
@@ -234,8 +261,10 @@ function renderPrograms(programs) {
     const data = await response.json();
     totalCount = data.count;
     totalObligations = data.total_obligations;
-    
+    globalProgramCount = data.global_program_count;
+    globalTotalObligations = data.global_total_obligations;
     updatePagination(currentPage, Math.ceil(data.count / pageSize));
+    updateProgramCounts();
     renderPrograms(data.programs);
     
     return data;
@@ -272,43 +301,77 @@ function renderPrograms(programs) {
   
 
   function handleFilterChange(event) {
-    const input = event.target;
-    const value = input.value;
-    const isChecked = input.checked;
-    const filterType = input.getAttribute("data-filter-type");
+  const input = event.target;
+  const isChecked = input.checked;
+  const filterType = input.getAttribute("data-filter-type");
 
-    switch (filterType) {
-      case "agency":
-        isChecked
-          ? selectedAgencySubAgency.push(value)
-          : (selectedAgencySubAgency = selectedAgencySubAgency.filter(
-              (v) => v !== value
-            ));
-        break;
-      case "category":
-      case "sub-category":
-        isChecked
-          ? selectedCategorySubcategory.push(value)
-          : (selectedCategorySubcategory = selectedCategorySubcategory.filter(
-              (v) => v !== value
-            ));
-        break;
-      case "assistance":
-        isChecked
-          ? selectedAssistanceTypes.push(value)
-          : (selectedAssistanceTypes = selectedAssistanceTypes.filter(
-              (v) => v !== value
-            ));
-        break;
-      case "applicant":
-        isChecked
-          ? selectedApplicantTypes.push(value)
-          : (selectedApplicantTypes = selectedApplicantTypes.filter(
-              (v) => v !== value
-            ));
-        break;
-    }
+  switch (filterType) {
+    case "agency":
+      const agencyTitle = input.getAttribute("data-agency-title");
+      if (isChecked) {
+        selectedAgencySubAgency.push(agencyTitle);
+      } else {
+        selectedAgencySubAgency = selectedAgencySubAgency.filter(
+          item => item !== agencyTitle
+        );
+      }
+      break;
+    case "sub-agency":
+      const parentAgencyTitle = input.getAttribute("data-agency-title");
+      const subAgencyTitle = input.getAttribute("data-subagency-title");
+      const combinedAgencyTitle = `${parentAgencyTitle} - ${subAgencyTitle}`;
+      if (isChecked) {
+        selectedAgencySubAgency.push(combinedAgencyTitle);
+      } else {
+        selectedAgencySubAgency = selectedAgencySubAgency.filter(
+          item => item !== combinedAgencyTitle
+        );
+      }
+      break;
+    case "category":
+      const categoryTitle = input.getAttribute("data-category-title");
+      if (isChecked) {
+        selectedCategorySubcategory.push(categoryTitle);
+      } else {
+        selectedCategorySubcategory = selectedCategorySubcategory.filter(
+          item => item !== categoryTitle
+        );
+      }
+      break;
+    case "sub-category":
+      const parentCategoryTitle = input.getAttribute("data-category-title");
+      const subcategoryTitle = input.getAttribute("data-subcategory-title");
+      const combinedCategoryTitle = `${parentCategoryTitle} - ${subcategoryTitle}`;
+      if (isChecked) {
+        selectedCategorySubcategory.push(combinedCategoryTitle);
+      } else {
+        selectedCategorySubcategory = selectedCategorySubcategory.filter(
+          item => item !== combinedCategoryTitle
+        );
+      }
+      break;
+    case "assistance":
+      const assistanceTitle = input.getAttribute("data-assistance-title");
+      if (isChecked) {
+        selectedAssistanceTypes.push(assistanceTitle);
+      } else {
+        selectedAssistanceTypes = selectedAssistanceTypes.filter(
+          item => item !== assistanceTitle
+        );
+      }
+      break;
+    case "applicant":
+      const applicantTitle = input.getAttribute("data-applicant-title");
+      if (isChecked) {
+        selectedApplicantTypes.push(applicantTitle);
+      } else {
+        selectedApplicantTypes = selectedApplicantTypes.filter(
+          item => item !== applicantTitle
+        );
+      }
+      break;
   }
+}
 
   function initializeToggles() {
     const filterToggles = document.querySelectorAll(".toggle.expandable-button");
@@ -438,7 +501,57 @@ function renderPrograms(programs) {
   });
 }
 
-  function initializeSearchButton() {
+function initializeClearFiltersButton() {
+  const clearFiltersBtn = document.querySelector('.usa-button.usa-button--outline.text-bold');
+  if (clearFiltersBtn) {
+    clearFiltersBtn.addEventListener('click', clearAllFilters);
+  }
+}
+
+function clearAllFilters() {
+  // Clear all checkbox inputs
+  const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+  allCheckboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+
+  // Clear search input
+  const searchInput = document.querySelector('input[type="search"]');
+  if (searchInput) {
+    searchInput.value = '';
+  }
+
+  // Reset all filter arrays
+  selectedAgencySubAgency = [];
+  selectedCategorySubcategory = [];
+  selectedAssistanceTypes = [];
+  selectedApplicantTypes = [];
+  
+  // Reset current query
+  currentQuery = '';
+  
+  // Reset to first page
+  currentPage = 1;
+
+  // Reset sort to default
+  currentSort = { field: "title", order: "asc" };
+
+  // Reset sort button UI
+  const sortButtons = document.querySelectorAll('.grid-col.display-flex.flex-justify-end .usa-button');
+  sortButtons.forEach(button => {
+    // Add outline to all buttons first
+    button.classList.add('usa-button--outline');
+    // Remove outline from the "Program Name" button (default sort)
+    if (button.textContent.trim().toLowerCase() === 'program name') {
+      button.classList.remove('usa-button--outline');
+    }
+  });
+
+  // Re-fetch data with cleared filters and default sort
+  fetchProgramsData();
+}
+
+function initializeSearchButton() {
     const searchForm = document.querySelector(".usa-search");
     const searchInput = searchForm?.querySelector('input[type="search"]');
     const searchButton = searchForm?.querySelector('button[type="submit"]');
@@ -467,6 +580,7 @@ function renderPrograms(programs) {
     initializeSearchButton();
     initializePaginationHandlers();
     initializeSortButtons();
+    initializeClearFiltersButton();
 
     console.log("Making initial API call...");
     const initialData = await fetchProgramsData();

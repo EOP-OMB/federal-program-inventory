@@ -22,7 +22,7 @@ VALID_SORT_FIELDS = {
     "title": "title.keyword",
     "objectives": "objectives.keyword",
     "popularName": "popularName.keyword",
-    "obligations": "obligations.keyword"
+    "obligations": "obligations"
 }
 
 def build_multi_match_query(query: str) -> Dict[str, Any]:
@@ -103,6 +103,13 @@ def build_aggregations() -> Dict[str, Any]:
     """Build aggregations for faceted search."""
     return {
         "total_obligations": {"sum": {"field": "obligations"}},
+        "global_totals": {
+            "global": {},  # This makes the aggregation ignore query/filters
+            "aggs": {
+                "total_obligations": {"sum": {"field": "obligations"}},
+                "program_count": {"value_count": {"field": "cfda.keyword"}}
+            }
+        },
         "categories": {
             "nested": {"path": "categories"},
             "aggs": {
@@ -227,6 +234,11 @@ def search_programs(
         total_obligations = response["aggregations"]["total_obligations"]["value"]
         total_count = response["hits"]["total"]["value"]
 
+        # Get global totals
+        global_totals = response["aggregations"]["global_totals"]
+        global_total_obligations = global_totals["total_obligations"]["value"]
+        global_program_count = global_totals["program_count"]["value"]
+
         # Build facets
         facets = SearchFacets(
             categories=[
@@ -265,6 +277,8 @@ def search_programs(
             programs=programs,
             total_obligations=total_obligations,
             count=total_count,
+            global_total_obligations=global_total_obligations,
+            global_program_count=global_program_count,
             page=page,
             page_size=page_size,
             facets=facets

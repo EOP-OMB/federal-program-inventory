@@ -62,6 +62,8 @@ class ProgramTableWithFacets(BaseModel):
     programs: List[Program]
     total_obligations: float
     count: int
+    global_total_obligations: float
+    global_program_count: int
     page: int
     page_size: int
     facets: SearchFacets

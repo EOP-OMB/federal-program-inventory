@@ -69,17 +69,17 @@ footer_include: _footer-search.html
                       {% if a.sub_categories.size > 0 %}
                       <button
                         class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
-                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
-                        aria-label="Toggle sub-items" tabindex="0">
-                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        data-content-id="children-for-check-agency-{{ forloop.index }}"
+                        aria-expanded="false"
+                        aria-label="Toggle sub-items"
+                        tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </button>
                       {% else %}
                       <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </a>
@@ -88,25 +88,31 @@ footer_include: _footer-search.html
                     <!-- Checkbox container -->
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-agency-{{ forloop.index }}" type="checkbox" name="agencies"
-                        data-children-id="children-for-check-agency-{{ forloop.index }}"
-                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        id="check-agency-{{ forloop.index }}"
+                        type="checkbox"
+                        name="agencies"
+                        data-filter-type="agency"
+                        data-agency-title="{{ a.title }}"
+                        data-children-id="children-for-check-agency-{{ forloop.index }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-agency-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
                     </div>
                   </div>
-
+              
                   <!-- Child Checkboxes -->
                   {% if a.sub_categories.size > 0 %}
                   <div id="children-for-check-agency-{{ forloop.index }}" class="margin-left-9" hidden>
                     {% for sa in a.sub_categories %}
                     <div class="usa-checkbox">
                       <input class="usa-checkbox__input child-checkbox width-2 height-2"
-                        id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
+                        id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                        type="checkbox"
                         name="agencies"
-                        value="{% for p in sa.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        data-filter-type="sub-agency"
+                        data-agency-title="{{ a.title }}"
+                        data-subagency-title="{{ sa.title }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                         {{ sa.title }}
@@ -116,38 +122,46 @@ footer_include: _footer-search.html
                   </div>
                   {% endif %}
                   {% endfor %}
-
+              
                   <!-- Other Agencies Section -->
                   <div class="display-flex flex-align-start">
-                    <!-- Caret container -->
                     <div class="padding-left-2 padding-top-1">
                       <button
                         class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
-                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
-                        aria-label="Toggle sub-items" tabindex="0">
-                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        data-content-id="children-for-check-agency-other"
+                        aria-expanded="false"
+                        aria-label="Toggle sub-items"
+                        tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </button>
                     </div>
-                    <!-- Checkbox container -->
                     <div class="usa-checkbox flex-fill">
-                      <input class="usa-checkbox__input parent-checkbox width-2 height-2" id="check-agency-other"
-                        type="checkbox" name="agencies" data-children-id="children-for-check-agency-other" value="" />
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-agency-other"
+                        type="checkbox"
+                        name="agencies"
+                        data-filter-type="agency"
+                        data-agency-title="Other agencies"
+                        data-children-id="children-for-check-agency-other" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-agency-other">
                         Other agencies
                       </label>
                     </div>
                   </div>
-
+              
                   <div id="children-for-check-agency-other" class="margin-left-9" hidden>
                     {% for a in page.other_agencies %}
                     <div class="usa-checkbox">
                       <input class="usa-checkbox__input child-checkbox width-2 height-2"
-                        id="check-agency-other-{{ forloop.index }}" type="checkbox" name="agencies"
-                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        id="check-agency-other-{{ forloop.index }}"
+                        type="checkbox"
+                        name="agencies"
+                        data-filter-type="sub-agency"
+                        data-agency-title="Other agencies"
+                        data-subagency-title="{{ a.title }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-agency-other-{{ forloop.index }}">
                         {{ a.title }}
@@ -189,17 +203,17 @@ footer_include: _footer-search.html
                       {% if c.sub_categories.size > 0 %}
                       <button
                         class="toggle expandable-button text-ink border-0 bg-transparent cursor-pointer hover:text-primary-dark"
-                        data-content-id="children-for-check-agency-{{ forloop.index }}" aria-expanded="false"
-                        aria-label="Toggle sub-items" tabindex="0">
-                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        data-content-id="children-for-check-category-{{ forloop.index }}"
+                        aria-expanded="false"
+                        aria-label="Toggle sub-items"
+                        tabindex="0">
+                        <svg class="usa-icon text-ink" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </button>
                       {% else %}
                       <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </a>
@@ -208,25 +222,34 @@ footer_include: _footer-search.html
                     <!-- Checkbox container -->
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-category-{{ forloop.index }}" type="checkbox" name="categories"
-                        data-children-id="children-for-check-category-{{ forloop.index }}"
-                        value="{% for p in c.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        id="check-category-{{ forloop.index }}"
+                        type="checkbox"
+                        name="categories"
+                        data-filter-type="category"
+                        data-category-id="{{ c.id }}"
+                        data-category-title="{{ c.title }}"
+                        data-children-id="children-for-check-category-{{ forloop.index }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-category-{{ forloop.index }}">
                         {{ c.title }}
                       </label>
                     </div>
                   </div>
-
+              
                   <!-- Child Checkboxes -->
                   {% if c.sub_categories.size > 0 %}
                   <div id="children-for-check-category-{{ forloop.index }}" class="margin-left-9" hidden>
                     {% for sc in c.sub_categories %}
                     <div class="usa-checkbox">
                       <input class="usa-checkbox__input child-checkbox width-2 height-2"
-                        id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
+                        id="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}"
+                        type="checkbox"
                         name="categories"
-                        value="{% for p in sc.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        data-filter-type="sub-category"
+                        data-category-id="{{ c.id }}"
+                        data-category-title="{{ c.title }}"
+                        data-subcategory-id="{{ sc.id }}"
+                        data-subcategory-title="{{ sc.title }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                         {{ sc.title }}
@@ -263,19 +286,20 @@ footer_include: _footer-search.html
                 <fieldset class="usa-fieldset margin-0">
                   {% for a in page.assistance_types %}
                   <div class="display-flex flex-align-start">
-                    <!-- Empty Caret container for alignment -->
                     <div class="padding-left-2 padding-top-1">
                       <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-assistancetype-{{ forloop.index }}" type="checkbox" name="assistancetypes"
-                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        id="check-assistancetype-{{ forloop.index }}"
+                        type="checkbox"
+                        name="assistancetypes"
+                        data-filter-type="assistance"
+                        data-assistance-title="{{ a.title }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-assistancetype-{{ forloop.index }}">
                         {{ a.title }}
@@ -312,19 +336,20 @@ footer_include: _footer-search.html
                 <fieldset class="usa-fieldset margin-0">
                   {% for a in page.applicant_types %}
                   <div class="display-flex flex-align-start">
-                    <!-- Empty Caret container for alignment -->
                     <div class="padding-left-2 padding-top-1">
                       <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-applicant-{{ forloop.index }}" type="checkbox" name="applicants"
-                        value="{% for p in a.programs %}{{ p }}{% if forloop.last != true %},{% endif %}{% endfor %}" />
+                        id="check-applicant-{{ forloop.index }}"
+                        type="checkbox"
+                        name="applicants"
+                        data-filter-type="applicant"
+                        data-applicant-title="{{ a.title }}" />
                       <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
                         for="check-applicant-{{ forloop.index }}">
                         {{ a.title }}
@@ -366,6 +391,26 @@ footer_include: _footer-search.html
           <span class="text-primary">SAM.gov</span>
           <span class="text-ink">.</span>
         </div>
+        <div class="grid-row padding-top-2">
+          <div class="grid-col-8">
+            <div class="width-full">
+              <span class="text-primary font-heading-xl text-bold" id="filtered-count"></span>
+              <span class="text-primary font-heading-xl" id="total-programs"> of <span id="global-count"></span></span>
+            </div>
+            <div class="width-full">
+              <span class="text-ink font-sans-lg line-height-sans-4">programs</span>
+            </div>
+          </div>
+          <div class="grid-col-4">
+            <div class="width-full">
+              <span class="text-primary font-heading-xl text-bold" id="filtered-obligations"></span>
+              <span class="text-primary font-heading-xl" id="total-obligations"> of <span id="global-obligations"></span></span>
+            </div>
+            <div class="width-full">
+              <span class="text-ink font-sans-lg line-height-sans-4">in FY 2022 obligations</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="width-full">
         <div class="grid-row padding-top-2 position-relative">
@@ -396,7 +441,7 @@ footer_include: _footer-search.html
         <!-- pagination -->
         <div class="grid-row">
 
-          <div class="grid-col-fill text-left pagination-y-2">
+          <div class="grid-col-fill text-left padding-y-3">
             <span class="font-sans-sm" id="pagination-info">
               Showing <span class="text-bold" id="results-start">1</span> to 
               <span class="text-bold" id="results-end">10</span> of 
@@ -441,11 +486,11 @@ footer_include: _footer-search.html
         <div class="padding-y-2 border-bottom border-base-lighter">
           <div class="grid-row grid-gap">
             <div class="tablet:grid-col-8">
-              <a href="#" class="usa-link text-primary-darker text-bold program-title">
+              <a href="#" class="usa-link text-bold program-title">
               </a>
             </div>
             <div class="tablet:grid-col-4">
-              <div class="grid-col-12 text-right font-italic program-obligations">
+              <div class="grid-col-12 text-right text-italic program-obligations">
               </div>
             </div>
             <div class="grid-row">
