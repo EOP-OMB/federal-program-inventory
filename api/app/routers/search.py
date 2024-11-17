@@ -54,10 +54,10 @@ def build_nested_filter(path: str, conditions: List[Dict[str, Any]]) -> Dict[str
 def build_agency_filter(agency_strings: List[str]) -> Dict[str, Any]:
     """
     Build agency filter query from list of agency strings.
-    - For regular agencies without subagencies specified or with "Unspecified" subagency, 
-      match programs that either have no subagencies OR have a subagency matching the main agency.
-    - For "Other agencies", use the subagency portion to search on agency titles and include all matching programs
-      regardless of subagency presence.
+    Handles special cases including:
+    - "Unspecified" matches both null subagency AND subagency matching parent
+    - "Other agencies" special handling
+    - Regular agency + subagency pairs
     """
     if not agency_strings:
         return {}
@@ -69,12 +69,11 @@ def build_agency_filter(agency_strings: List[str]) -> Dict[str, Any]:
         # Special handling for "Other agencies"
         if agency.startswith("Other agencies"):
             if subagency:
-                # Search for the subagency text in agency titles, including all matches regardless of subagency
                 agency_conditions.append({
                     "nested": {
                         "path": "agency",
                         "query": {
-                            "match": {
+                            "term": {
                                 "agency.title.keyword": subagency
                             }
                         }
@@ -83,64 +82,77 @@ def build_agency_filter(agency_strings: List[str]) -> Dict[str, Any]:
             continue
 
         # Regular agency handling
-        if subagency and subagency != "Unspecified":
-            # Case 1: Agency with specific subagency (not "Unspecified")
-            agency_conditions.append({
-                "nested": {
-                    "path": "agency",
-                    "query": {
-                        "bool": {
-                            "must": [
-                                {"term": {"agency.title.keyword": agency}},
-                                {"nested": {
-                                    "path": "agency.subAgency",
-                                    "query": {"term": {"agency.subAgency.title.keyword": subagency}}
-                                }}
-                            ]
-                        }
-                    }
-                }
-            })
-        else:
-            # Case 2: Agency with no subagency or "Unspecified" subagency
-            agency_conditions.append({
-                "nested": {
-                    "path": "agency",
-                    "query": {
-                        "bool": {
-                            "must": [
-                                {"term": {"agency.title.keyword": agency}}
-                            ],
-                            "should": [
-                                # Either no subagency exists
-                                {
-                                    "bool": {
-                                        "must_not": [
-                                            {"nested": {
-                                                "path": "agency.subAgency",
-                                                "query": {
-                                                    "exists": {
-                                                        "field": "agency.subAgency.title"
+        if subagency:
+            if subagency == "Unspecified":
+                # For "Unspecified", match either:
+                # 1. No subagency exists, OR
+                # 2. Subagency title matches parent agency
+                agency_conditions.append({
+                    "nested": {
+                        "path": "agency",
+                        "query": {
+                            "bool": {
+                                "must": [
+                                    {"term": {"agency.title.keyword": agency}}
+                                ],
+                                "should": [
+                                    # Either no subagency exists
+                                    {
+                                        "bool": {
+                                            "must_not": [
+                                                {"nested": {
+                                                    "path": "agency.subAgency",
+                                                    "query": {
+                                                        "exists": {
+                                                            "field": "agency.subAgency.title"
+                                                        }
                                                     }
+                                                }}
+                                            ]
+                                        }
+                                    },
+                                    # OR subagency matches parent agency
+                                    {
+                                        "nested": {
+                                            "path": "agency.subAgency",
+                                            "query": {
+                                                "term": {
+                                                    "agency.subAgency.title.keyword": agency
                                                 }
-                                            }}
-                                        ]
-                                    }
-                                },
-                                # OR subagency title matches the main agency
-                                {
-                                    "nested": {
-                                        "path": "agency.subAgency",
-                                        "query": {
-                                            "term": {
-                                                "agency.subAgency.title.keyword": agency
                                             }
                                         }
                                     }
-                                }
-                            ],
-                            "minimum_should_match": 1
+                                ],
+                                "minimum_should_match": 1
+                            }
                         }
+                    }
+                })
+            else:
+                # Regular agency + subagency match
+                agency_conditions.append({
+                    "nested": {
+                        "path": "agency",
+                        "query": {
+                            "bool": {
+                                "must": [
+                                    {"term": {"agency.title.keyword": agency}},
+                                    {"nested": {
+                                        "path": "agency.subAgency",
+                                        "query": {"term": {"agency.subAgency.title.keyword": subagency}}
+                                    }}
+                                ]
+                            }
+                        }
+                    }
+                })
+        else:
+            # Just agency match (any subagency is fine)
+            agency_conditions.append({
+                "nested": {
+                    "path": "agency",
+                    "query": {
+                        "term": {"agency.title.keyword": agency}
                     }
                 }
             })
