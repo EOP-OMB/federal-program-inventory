@@ -2,7 +2,7 @@
   const apiBaseUrl = "http://localhost:8000/api";
   let currentPage = 1;
   const pageSize = 10;
-  let currentSort = { field: "title", order: "asc" };
+  let currentSort = { field: "obligations", order: "desc" };
   let currentQuery = "";
 
   // Initialize filter states
@@ -18,11 +18,127 @@
   let globalProgramCount = 0;
   let globalTotalObligations = 0;
 
+  // Initial filter state
+  let initialFilterState = {
+    query: "",
+    page: 1,
+    sort: { field: "obligations", order: "asc" },
+    agencies: [],
+    categories: [],
+    assistanceTypes: [],
+    applicantTypes: [],
+  };
+
   // Sort field mapping
   const sortFieldMapping = {
     title: "title",
     obligations: "obligations",
   };
+
+  function captureInitialState() {
+    initialFilterState = {
+      query: currentQuery,
+      page: currentPage,
+      sort: { ...currentSort },
+      agencies: [...selectedAgencySubAgency],
+      categories: [...selectedCategorySubcategory],
+      assistanceTypes: [...selectedAssistanceTypes],
+      applicantTypes: [...selectedApplicantTypes],
+    };
+  }
+
+  function initializePaginationHandlers() {
+    const paginationList = document.querySelector(".usa-pagination__list");
+
+    paginationList.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const target = event.target.closest("a");
+      if (!target) return;
+
+      let shouldUpdate = false;
+
+      // Handle numbered page clicks
+      if (target.classList.contains("usa-pagination__button")) {
+        const newPage = parseInt(target.textContent);
+        if (!isNaN(newPage) && newPage !== currentPage) {
+          currentPage = newPage;
+          shouldUpdate = true;
+        }
+      }
+
+      // Handle previous button
+      if (target.classList.contains("usa-pagination__previous-page")) {
+        if (currentPage > 1) {
+          currentPage--;
+          shouldUpdate = true;
+        }
+      }
+
+      // Handle next button
+      if (target.classList.contains("usa-pagination__next-page")) {
+        const totalPages = Math.ceil(totalCount / pageSize);
+        if (currentPage < totalPages) {
+          currentPage++;
+          shouldUpdate = true;
+        }
+      }
+
+      if (shouldUpdate) {
+        encodeFiltersToUrl();
+        await fetchProgramsData();
+        updateClearFilterButton(); // Add this line
+      }
+    });
+  }
+
+  function arraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    return arr1.every((item, index) => item === arr2[index]);
+  }
+
+  function hasFilterChanges() {
+    const currentState = {
+      query: currentQuery,
+      page: currentPage,
+      sort: currentSort,
+      agencies: selectedAgencySubAgency,
+      categories: selectedCategorySubcategory,
+      assistanceTypes: selectedAssistanceTypes,
+      applicantTypes: selectedApplicantTypes,
+    };
+
+    if (currentState.query !== initialFilterState.query) return true;
+
+    const hasSortChange =
+      currentState.sort.field !== initialFilterState.sort.field ||
+      currentState.sort.order !== initialFilterState.sort.order;
+
+    return (
+      currentState.page !== initialFilterState.page ||
+      hasSortChange ||
+      !arraysEqual(currentState.agencies, initialFilterState.agencies) ||
+      !arraysEqual(currentState.categories, initialFilterState.categories) ||
+      !arraysEqual(
+        currentState.assistanceTypes,
+        initialFilterState.assistanceTypes
+      ) ||
+      !arraysEqual(
+        currentState.applicantTypes,
+        initialFilterState.applicantTypes
+      )
+    );
+  }
+
+  function updateClearFilterButton() {
+    const clearFiltersBtn = document.querySelector(
+      ".usa-button.usa-button--outline.text-bold"
+    );
+    if (clearFiltersBtn) {
+      const hasChanges = hasFilterChanges();
+      clearFiltersBtn.disabled = !hasChanges;
+      clearFiltersBtn.classList.toggle("usa-button--disabled", !hasChanges);
+    }
+  }
 
   // Helper function to compress filter arrays
   function compressFilters(filters) {
@@ -331,10 +447,10 @@
       }
     }
 
-    // Restore sort state
-    const sortParam = params.get("s") || "ta";
-    currentSort.field = sortParam[0] === "o" ? "obligations" : "title";
-    currentSort.order = sortParam[1] === "d" ? "desc" : "asc";
+    // Restore sort state with default to obligations desc
+    const sortParam = params.get("s") || "od"; // Changed default to "od" (obligations desc)
+    currentSort.field = sortParam[0] === "t" ? "title" : "obligations"; // Changed logic
+    currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
 
     // Restore page number
@@ -636,19 +752,19 @@
   function initializePaginationHandlers() {
     const paginationList = document.querySelector(".usa-pagination__list");
 
-    // Event delegation for all pagination clicks
     paginationList.addEventListener("click", (event) => {
       event.preventDefault();
       const target = event.target.closest("a");
       if (!target) return;
+
+      let shouldUpdate = false;
 
       // Handle numbered page clicks
       if (target.classList.contains("usa-pagination__button")) {
         const newPage = parseInt(target.textContent);
         if (!isNaN(newPage) && newPage !== currentPage) {
           currentPage = newPage;
-          encodeFiltersToUrl();
-          fetchProgramsData();
+          shouldUpdate = true;
         }
       }
 
@@ -656,8 +772,7 @@
       if (target.classList.contains("usa-pagination__previous-page")) {
         if (currentPage > 1) {
           currentPage--;
-          encodeFiltersToUrl();
-          fetchProgramsData();
+          shouldUpdate = true;
         }
       }
 
@@ -666,9 +781,14 @@
         const totalPages = Math.ceil(totalCount / pageSize);
         if (currentPage < totalPages) {
           currentPage++;
-          encodeFiltersToUrl();
-          fetchProgramsData();
+          shouldUpdate = true;
         }
+      }
+
+      if (shouldUpdate) {
+        encodeFiltersToUrl();
+        fetchProgramsData();
+        updateClearFilterButton();
       }
     });
   }
@@ -767,9 +887,8 @@
         program.agency?.title || "";
       clone.querySelector(
         ".program-obligations"
-      ).textContent = `${formatObligations(program.obligations)} in FY ${
-        new Date().getFullYear() - 1
-      } obligations`;
+      ).textContent = `${formatObligations(program.obligations)} in FY ${new Date().getFullYear() - 1
+        } obligations`;
 
       const objectivesEl = clone.querySelector(".program-objectives");
       const readMoreBtn = clone.querySelector(".read-more-btn");
@@ -1055,35 +1174,35 @@
   }
 
   // Add CSS for disabled checkboxes
-  const style = document.createElement("style");
-  style.textContent = `
-  input[type="checkbox"]:disabled + label {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-  .count {
-    color: #71767a;
-    font-weight: normal;
-  }
-  /* Hide the expand button when parent checkbox is disabled */
-  .usa-checkbox input:disabled ~ .toggle.expandable-button {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-  /* Keep children container hidden when parent is disabled */
-  .usa-checkbox input:disabled ~ [id^="children-for-check"] {
-    display: none !important;
-  }
-  /* Prevent interaction with disabled checkboxes and their containers */
-  .usa-checkbox.disabled {
-    pointer-events: none;
-  }
-  .usa-checkbox input:disabled {
-    pointer-events: none;
-  }
-`;
-  document.head.appendChild(style);
+  //   const style = document.createElement("style");
+  //   style.textContent = `
+  //   input[type="checkbox"]:disabled + label {
+  //     opacity: 0.5;
+  //     cursor: not-allowed;
+  //     pointer-events: none;
+  //   }
+  //   .count {
+  //     color: #71767a;
+  //     font-weight: normal;
+  //   }
+  //   /* Hide the expand button when parent checkbox is disabled */
+  //   .usa-checkbox input:disabled ~ .toggle.expandable-button {
+  //     opacity: 0.5;
+  //     pointer-events: none;
+  //   }
+  //   /* Keep children container hidden when parent is disabled */
+  //   .usa-checkbox input:disabled ~ [id^="children-for-check"] {
+  //     display: none !important;
+  //   }
+  //   /* Prevent interaction with disabled checkboxes and their containers */
+  //   .usa-checkbox.disabled {
+  //     pointer-events: none;
+  //   }
+  //   .usa-checkbox input:disabled {
+  //     pointer-events: none;
+  //   }
+  // `;
+  //   document.head.appendChild(style);
 
   async function fetchProgramsData(keyword = currentQuery) {
     const requestBody = {
@@ -1147,10 +1266,10 @@
     const input = event.target;
 
     // Prevent changes to disabled checkboxes
-    if (input.disabled || input.closest('.usa-checkbox.disabled')) {
-        event.preventDefault();
-        event.stopPropagation();
-        return;
+    if (input.disabled || input.closest(".usa-checkbox.disabled")) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
     }
 
     const isChecked = input.checked;
@@ -1158,173 +1277,193 @@
 
     // Handle parent checkbox changes
     if (filterType === "agency" || filterType === "category") {
-        const childrenId = input.getAttribute("data-children-id");
-        const parentTitle = filterType === "agency"
-            ? input.getAttribute("data-agency-title")
-            : input.getAttribute("data-category-title");
+      const childrenId = input.getAttribute("data-children-id");
+      const parentTitle =
+        filterType === "agency"
+          ? input.getAttribute("data-agency-title")
+          : input.getAttribute("data-category-title");
 
-        const childrenContainer = childrenId
-            ? document.getElementById(childrenId)
-            : null;
-        const children = childrenContainer
-            ? childrenContainer.querySelectorAll('input[type="checkbox"]')
-            : [];
+      const childrenContainer = childrenId
+        ? document.getElementById(childrenId)
+        : null;
+      const children = childrenContainer
+        ? childrenContainer.querySelectorAll('input[type="checkbox"]')
+        : [];
 
-        if (isChecked) {
-            // Add parent selection only if it has no children
-            if (children.length === 0) {
-                if (filterType === "agency") {
-                    selectedAgencySubAgency.push(parentTitle);
-                } else if (filterType === "category") {
-                    selectedCategorySubcategory.push(parentTitle);
-                }
-            }
-
-            // Add enabled child selections
-            children.forEach((child) => {
-                if (!child.disabled) {
-                    const subTitle = filterType === "agency"
-                        ? child.getAttribute("data-subagency-title")
-                        : child.getAttribute("data-subcategory-title");
-                    const combinedTitle = `${parentTitle} - ${subTitle}`;
-                    if (filterType === "agency" && !selectedAgencySubAgency.includes(combinedTitle)) {
-                        selectedAgencySubAgency.push(combinedTitle);
-                    } else if (filterType === "category" && !selectedCategorySubcategory.includes(combinedTitle)) {
-                        selectedCategorySubcategory.push(combinedTitle);
-                    }
-                }
-            });
-        } else {
-            // Remove parent and enabled child selections while preserving disabled children
-            const disabledSelections = [];
-            children.forEach((child) => {
-                if (child.disabled && child.checked) {
-                    const subTitle = filterType === "agency"
-                        ? child.getAttribute("data-subagency-title")
-                        : child.getAttribute("data-subcategory-title");
-                    const combinedTitle = `${parentTitle} - ${subTitle}`;
-                    disabledSelections.push(combinedTitle);
-                }
-            });
-
-            if (filterType === "agency") {
-                selectedAgencySubAgency = selectedAgencySubAgency.filter((item) => {
-                    if (item === parentTitle) return false; // Remove parent filter
-                    if (item.startsWith(`${parentTitle} - `)) {
-                        return disabledSelections.includes(item); // Preserve disabled children
-                    }
-                    return true;
-                });
-            } else if (filterType === "category") {
-                selectedCategorySubcategory = selectedCategorySubcategory.filter((item) => {
-                    if (item === parentTitle) return false; // Remove parent filter
-                    if (item.startsWith(`${parentTitle} - `)) {
-                        return disabledSelections.includes(item); // Preserve disabled children
-                    }
-                    return true;
-                });
-            }
+      if (isChecked) {
+        // Add parent selection only if it has no children
+        if (children.length === 0) {
+          if (filterType === "agency") {
+            selectedAgencySubAgency.push(parentTitle);
+          } else if (filterType === "category") {
+            selectedCategorySubcategory.push(parentTitle);
+          }
         }
 
-        // Update checkbox states for enabled children
+        // Add enabled child selections
         children.forEach((child) => {
-            if (!child.disabled) {
-                child.checked = isChecked;
+          if (!child.disabled) {
+            const subTitle =
+              filterType === "agency"
+                ? child.getAttribute("data-subagency-title")
+                : child.getAttribute("data-subcategory-title");
+            const combinedTitle = `${parentTitle} - ${subTitle}`;
+            if (
+              filterType === "agency" &&
+              !selectedAgencySubAgency.includes(combinedTitle)
+            ) {
+              selectedAgencySubAgency.push(combinedTitle);
+            } else if (
+              filterType === "category" &&
+              !selectedCategorySubcategory.includes(combinedTitle)
+            ) {
+              selectedCategorySubcategory.push(combinedTitle);
             }
+          }
         });
-    } else {
-        // Handle individual checkbox changes (child or standalone)
-        switch (filterType) {
-            case "sub-agency":
-                const parentAgencyTitle = input.getAttribute("data-agency-title");
-                const subAgencyTitle = input.getAttribute("data-subagency-title");
-                const combinedAgencyTitle = `${parentAgencyTitle} - ${subAgencyTitle}`;
-                if (isChecked) {
-                    selectedAgencySubAgency.push(combinedAgencyTitle);
+      } else {
+        // Remove parent and enabled child selections while preserving disabled children
+        const disabledSelections = [];
+        children.forEach((child) => {
+          if (child.disabled && child.checked) {
+            const subTitle =
+              filterType === "agency"
+                ? child.getAttribute("data-subagency-title")
+                : child.getAttribute("data-subcategory-title");
+            const combinedTitle = `${parentTitle} - ${subTitle}`;
+            disabledSelections.push(combinedTitle);
+          }
+        });
 
-                    // Check if all enabled siblings are checked to determine parent state
-                    const parentContainer = input.closest('[id^="children-for-check-agency-"]');
-                    if (parentContainer) {
-                        const siblings = parentContainer.querySelectorAll('input[type="checkbox"]');
-                        const allEnabledChecked = Array.from(siblings).every(
-                            (sib) => sib.disabled || sib.checked
-                        );
-                        if (allEnabledChecked && !selectedAgencySubAgency.includes(parentAgencyTitle)) {
-                            selectedAgencySubAgency.push(parentAgencyTitle);
-                        }
-                    }
-                } else {
-                    selectedAgencySubAgency = selectedAgencySubAgency.filter((item) => item !== combinedAgencyTitle);
-                    // Remove parent from selection when any enabled child is unchecked
-                    selectedAgencySubAgency = selectedAgencySubAgency.filter((item) => item !== parentAgencyTitle);
-                }
-                break;
-
-            case "sub-category":
-                const parentCategoryTitle = input.getAttribute("data-category-title");
-                const subcategoryTitle = input.getAttribute("data-subcategory-title");
-                const combinedCategoryTitle = `${parentCategoryTitle} - ${subcategoryTitle}`;
-                if (isChecked) {
-                    selectedCategorySubcategory.push(combinedCategoryTitle);
-
-                    // Check if all enabled siblings are checked to determine parent state
-                    const parentContainer = input.closest('[id^="children-for-check-category-"]');
-                    if (parentContainer) {
-                        const siblings = parentContainer.querySelectorAll('input[type="checkbox"]');
-                        const allEnabledChecked = Array.from(siblings).every(
-                            (sib) => sib.disabled || sib.checked
-                        );
-                        if (allEnabledChecked && !selectedCategorySubcategory.includes(parentCategoryTitle)) {
-                            selectedCategorySubcategory.push(parentCategoryTitle);
-                        }
-                    }
-                } else {
-                    selectedCategorySubcategory = selectedCategorySubcategory.filter((item) => item !== combinedCategoryTitle);
-                    // Remove parent from selection when any enabled child is unchecked
-                    selectedCategorySubcategory = selectedCategorySubcategory.filter((item) => item !== parentCategoryTitle);
-                }
-                break;
-
-            case "assistance":
-                const assistanceTitle = input.getAttribute("data-assistance-title");
-                if (isChecked) {
-                    selectedAssistanceTypes.push(assistanceTitle);
-                } else {
-                    selectedAssistanceTypes = selectedAssistanceTypes.filter((item) => item !== assistanceTitle);
-                }
-                break;
-
-            case "applicant":
-                const applicantTitle = input.getAttribute("data-applicant-title");
-                if (isChecked) {
-                    selectedApplicantTypes.push(applicantTitle);
-                } else {
-                    selectedApplicantTypes = selectedApplicantTypes.filter((item) => item !== applicantTitle);
-                }
-                break;
+        if (filterType === "agency") {
+          selectedAgencySubAgency = selectedAgencySubAgency.filter((item) => {
+            if (item === parentTitle) return false; // Remove parent filter
+            if (item.startsWith(`${parentTitle} - `)) {
+              return disabledSelections.includes(item); // Preserve disabled children
+            }
+            return true;
+          });
+        } else if (filterType === "category") {
+          selectedCategorySubcategory = selectedCategorySubcategory.filter(
+            (item) => {
+              if (item === parentTitle) return false; // Remove parent filter
+              if (item.startsWith(`${parentTitle} - `)) {
+                return disabledSelections.includes(item); // Preserve disabled children
+              }
+              return true;
+            }
+          );
         }
+      }
+
+      // Update checkbox states for enabled children
+      children.forEach((child) => {
+        if (!child.disabled) {
+          child.checked = isChecked;
+        }
+      });
+    } else {
+      // Handle individual checkbox changes (child or standalone)
+      switch (filterType) {
+        case "sub-agency":
+          const parentAgencyTitle = input.getAttribute("data-agency-title");
+          const subAgencyTitle = input.getAttribute("data-subagency-title");
+          const combinedAgencyTitle = `${parentAgencyTitle} - ${subAgencyTitle}`;
+          if (isChecked) {
+            selectedAgencySubAgency.push(combinedAgencyTitle);
+
+            // Check if all enabled siblings are checked to determine parent state
+            const parentContainer = input.closest(
+              '[id^="children-for-check-agency-"]'
+            );
+            if (parentContainer) {
+              const siblings = parentContainer.querySelectorAll(
+                'input[type="checkbox"]'
+              );
+              const allEnabledChecked = Array.from(siblings).every(
+                (sib) => sib.disabled || sib.checked
+              );
+              if (
+                allEnabledChecked &&
+                !selectedAgencySubAgency.includes(parentAgencyTitle)
+              ) {
+                selectedAgencySubAgency.push(parentAgencyTitle);
+              }
+            }
+          } else {
+            selectedAgencySubAgency = selectedAgencySubAgency.filter(
+              (item) => item !== combinedAgencyTitle
+            );
+            // Remove parent from selection when any enabled child is unchecked
+            selectedAgencySubAgency = selectedAgencySubAgency.filter(
+              (item) => item !== parentAgencyTitle
+            );
+          }
+          break;
+
+        case "sub-category":
+          const parentCategoryTitle = input.getAttribute("data-category-title");
+          const subcategoryTitle = input.getAttribute("data-subcategory-title");
+          const combinedCategoryTitle = `${parentCategoryTitle} - ${subcategoryTitle}`;
+          if (isChecked) {
+            selectedCategorySubcategory.push(combinedCategoryTitle);
+
+            // Check if all enabled siblings are checked to determine parent state
+            const parentContainer = input.closest(
+              '[id^="children-for-check-category-"]'
+            );
+            if (parentContainer) {
+              const siblings = parentContainer.querySelectorAll(
+                'input[type="checkbox"]'
+              );
+              const allEnabledChecked = Array.from(siblings).every(
+                (sib) => sib.disabled || sib.checked
+              );
+              if (
+                allEnabledChecked &&
+                !selectedCategorySubcategory.includes(parentCategoryTitle)
+              ) {
+                selectedCategorySubcategory.push(parentCategoryTitle);
+              }
+            }
+          } else {
+            selectedCategorySubcategory = selectedCategorySubcategory.filter(
+              (item) => item !== combinedCategoryTitle
+            );
+            // Remove parent from selection when any enabled child is unchecked
+            selectedCategorySubcategory = selectedCategorySubcategory.filter(
+              (item) => item !== parentCategoryTitle
+            );
+          }
+          break;
+
+        case "assistance":
+          const assistanceTitle = input.getAttribute("data-assistance-title");
+          if (isChecked) {
+            selectedAssistanceTypes.push(assistanceTitle);
+          } else {
+            selectedAssistanceTypes = selectedAssistanceTypes.filter(
+              (item) => item !== assistanceTitle
+            );
+          }
+          break;
+
+        case "applicant":
+          const applicantTitle = input.getAttribute("data-applicant-title");
+          if (isChecked) {
+            selectedApplicantTypes.push(applicantTitle);
+          } else {
+            selectedApplicantTypes = selectedApplicantTypes.filter(
+              (item) => item !== applicantTitle
+            );
+          }
+          break;
+      }
     }
 
+    updateClearFilterButton();
     // Always sync checkbox states after changes
     syncParentCheckboxStates();
-}
-
-  
-  function initializeFilterSubmitButton() {
-    // Add a submit button to the filters section
-    const filtersSection = document.getElementById("search-filters");
-    const submitButton = document.createElement("button");
-    submitButton.className = "usa-button margin-top-2";
-    submitButton.textContent = "Apply Filters";
-    submitButton.id = "apply-filters-button";
-    filtersSection.appendChild(submitButton);
-
-    // Add click handler for the submit button
-    submitButton.addEventListener("click", () => {
-      currentPage = 1;
-      encodeFiltersToUrl();
-      fetchProgramsData();
-    });
   }
 
   function initializeToggles() {
@@ -1410,12 +1549,14 @@
       ".grid-col.display-flex.flex-justify-end .usa-button"
     );
 
-    updateSortButtons();
-
+    // Set initial button states
     sortButtons.forEach((button) => {
       const buttonText = button.textContent.trim().toLowerCase();
-      const isCurrentSort = buttonText === currentSort.field;
-      button.classList.toggle("usa-button--outline", !isCurrentSort);
+      if (buttonText === "obligations") {
+        button.classList.remove("usa-button--outline");
+      } else {
+        button.classList.add("usa-button--outline");
+      }
     });
 
     sortButtons.forEach((button) => {
@@ -1437,17 +1578,20 @@
         if (currentSort.field === sortField) {
           currentSort.order = currentSort.order === "asc" ? "desc" : "asc";
         } else {
-          // Set new sort field and default to ascending
+          // Set new sort field and default order based on field type
           currentSort.field = sortField;
-          currentSort.order = "asc";
+          currentSort.order = sortField === "obligations" ? "desc" : "asc";
         }
 
         // Reset to first page when sorting
         currentPage = 1;
 
-        // Fetch data with new sort
-        await fetchProgramsData();
+        // Update URL and fetch data
         encodeFiltersToUrl();
+        await fetchProgramsData();
+
+        // Update clear filters button
+        updateClearFilterButton();
       });
     });
   }
@@ -1487,7 +1631,7 @@
     currentPage = 1;
 
     // Reset sort to default
-    currentSort = { field: "title", order: "asc" };
+    currentSort = { field: "obligations", order: "desc" };
 
     // Reset sort button UI
     const sortButtons = document.querySelectorAll(
@@ -1495,14 +1639,17 @@
     );
     sortButtons.forEach((button) => {
       const buttonText = button.textContent.trim().toLowerCase();
-      button.classList.toggle(
-        "usa-button--outline",
-        buttonText !== "program name"
-      );
+      if (buttonText === "obligations") {
+        button.classList.remove("usa-button--outline");
+      } else {
+        button.classList.add("usa-button--outline");
+      }
     });
 
     window.history.pushState({}, "", window.location.pathname);
     // Re-fetch data with cleared filters and default sort
+    captureInitialState();
+    updateClearFilterButton();
     fetchProgramsData();
   }
 
@@ -1520,6 +1667,17 @@
           currentPage = 1;
           encodeFiltersToUrl();
           await fetchProgramsData(keyword);
+          updateClearFilterButton();
+        }
+      });
+    }
+
+    if (searchInput) {
+      // Update currentQuery immediately on input
+      searchInput.addEventListener("input", (event) => {
+        currentQuery = event.target.value;
+        if (!initialFilterState.query) {
+          updateClearFilterButton();
         }
       });
     }
@@ -1533,21 +1691,26 @@
     initializePaginationHandlers();
     initializeSortButtons();
     initializeClearFiltersButton();
-    initializeFilterSubmitButton();
+
+    // captureInitialState();
+    // updateClearFilterButton();
 
     // Handle browser navigation
-    window.addEventListener("popstate", function () {
+    window.addEventListener("popstate", async function () {
       console.log("Navigation occurred");
       decodeFiltersFromUrl();
-      fetchProgramsData();
+      await fetchProgramsData();
+      updateClearFilterButton();
     });
 
-    // Initial load
-    console.log("Starting initial load");
+    // // Initial load
+    // console.log("Starting initial load");
     try {
       // Decode filters and fetch data
       decodeFiltersFromUrl();
       await fetchProgramsData();
+      captureInitialState();
+      updateClearFilterButton();
     } catch (error) {
       console.error("Error during initialization:", error);
     }
