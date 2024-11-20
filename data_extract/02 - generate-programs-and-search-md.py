@@ -854,6 +854,21 @@ with open('../website/pages/search.md', 'w') as file:
     yaml.dump(page, file)
     file.write('---\n') # End Jekyll Front Matter
 
+with open('../website/pages/home.md', 'w') as file:
+    file.write('---\n') # Begin Jekyll Front Matter
+    page = {
+        'title': 'Home',
+        'layout': 'home',
+        'permalink': '/',
+        'cfo_agencies': [a for a in generate_list_of_program_ids_for_category(agencies, True) if a['title'] in CFO_ACT_AGENCIES_LIST],
+        'other_agencies': [a for a in generate_list_of_program_ids_for_category(agencies, True) if a['title'] not in CFO_ACT_AGENCIES_LIST],
+        'applicant_types': generate_list_of_program_ids_for_category(applicant_types),
+        'program_types': generate_list_of_program_ids_for_category(assistance_types, True),
+        'categories': generate_list_of_program_ids_for_category(categories, True),
+    }
+    yaml.dump(page, file)
+    file.write('---\n') # End Jekyll Front Matter
+
     programs_data = sorted([
         {
             'cfda': programs[p].get_id(),

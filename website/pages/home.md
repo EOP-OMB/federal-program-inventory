@@ -43,151 +43,6 @@ applicant_types:
 - title: U.S. Territories and possessions
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
-assistance_types:
-- sub_categories:
-  - title: Advisory Services and Counseling
-  - title: Advisory Services on Compliance
-  title: Advisory Services and Counseling
-- sub_categories:
-  - title: Direct Loans
-  title: Direct Loans
-- sub_categories:
-  - title: Direct Payments for Specified Use
-  - title: Direct Payments for Specified Use (Cooperative Agreements)
-  title: Direct Payments for a Specified Use
-- sub_categories:
-  - title: Direct Payments with Unrestricted Use
-  title: Direct Payments with Unrestricted Use
-- sub_categories:
-  - title: Dissemination of Technical Information
-  - title: Information
-  title: Dissemination of Technical Information
-- sub_categories:
-  - title: Formula Grants
-  - title: Formula Grants (Apportionments)
-  - title: Formula Grants (Cooperative Agreements)
-  - title: Formula Grants (Health Incentive Grants)
-  title: Formula Grants
-- sub_categories:
-  - title: Guaranteed/Insured Loans
-  - title: Guaranteed/Insured Loans (including Guaranty Participation Loans)
-  - title: Guaranteed/Insured Loans (including Immediate Participation Loans)
-  - title: Loan Guarantees/Grants
-  title: Guaranteed / Insured Loans
-- sub_categories:
-  - title: Insurance
-  - title: Insurance (Guaranteed Surety Bonds)
-  - title: Insurance (Reimbursement)
-  title: Insurance
-- sub_categories:
-  - title: Resolution of Disputes
-  - title: Investigation of Complaints
-  - title: Investigation of Complaints (Compliance Reviews)
-  title: Investigation of Complaints
-- sub_categories:
-  - title: Cooperative Agreements
-  - title: Cooperative Agreements (Discretionary Grants)
-  - title: Project Grants
-  - title: Project Grants (Capacity Building and Complaint Processing, Training)
-  - title: Project Grants (Contracts)
-  - title: Project Grants (Cooperative Agreements or Contracts)
-  - title: Project Grants (Cooperative Agreements)
-  - title: Project Grants (Discretionary)
-  - title: Project Grants (Fellowships)
-  - title: Project Grants (for administration projects authorized under Section
-  - title: Project Grants (for collaborative design of curriculum, production of
-  - title: Project Grants (for specified projects)
-  - title: Project Grants (including individual awards)
-  - title: Project Grants (including travel grants)
-  - title: Project Grants (Rehabilitation of existing indoor and outdoor recreat
-  - title: Project Grants (Special)
-  - title: Project Grants (to capitalize loan funds)
-  - title: Project Grants (with Formula Distribution)
-  title: Project Grants
-- sub_categories:
-  - title: Provision of Specialized Services
-  title: Provision of Specialized Services
-- sub_categories:
-  - title: Salaries and Expenses
-  title: Salaries and Expenses
-- sub_categories:
-  - title: Sale, Exchange, or Donation of Property and Goods
-  title: Sale, Exchange, or Donation of Property or Goods
-- sub_categories:
-  - title: Training
-  title: Training
-- sub_categories:
-  - title: Use of Property, Facilities, and Equipment
-  title: Use of Property, Facilities, or Equipment
-beneficiary_types:
-- title: Alcoholic
-- title: American Indian
-- title: Anyone/general public
-- title: Artist/Humanist
-- title: Asian
-- title: Black
-- title: Builder/Contractor/Developer
-- title: Child (6-15)
-- title: Consumer
-- title: Disabled (e.g. Deaf, Blind, Physically Disabled)
-- title: Drug Addict
-- title: Education (0-8)
-- title: Education (13+)
-- title: Education (9-12)
-- title: Education Professional
-- title: Engineer/Architect
-- title: Farmer/Rancher/Agriculture Producer
-- title: Federal
-- title: Federally Recognized Indian Tribal Governments
-- title: Graduate Student
-- title: Health Professional
-- title: Homeowner
-- title: Individual/Family
-- title: Industrialist/ Business person
-- title: Infant (0-5)
-- title: Interstate
-- title: Intrastate
-- title: Juvenile Delinquent
-- title: Land/Property Owner
-- title: Local
-- title: Low Income
-- title: Major Metropolis (over 250,000)
-- title: Mentally Disabled
-- title: Migrant
-- title: Minority group
-- title: Moderate Income
-- title: Native American Organizations
-- title: Other Non-White
-- title: Other Urban
-- title: Other private institution/organization
-- title: Other public institution/organization
-- title: Pension Recipient
-- title: Physically Afflicted (e.g. TB, Arthritis, Heart Disease)
-- title: Preschool
-- title: Private nonprofit institution/organization
-- title: Profit organization
-- title: Public nonprofit institution/organization
-- title: Quasi-public nonprofit organization
-- title: Refugee/Alien
-- title: Rural
-- title: School
-- title: Scientist/Researchers
-- title: Senior Citizen (60+)
-- title: Small Business Person
-- title: Small business
-- title: Spanish Origin
-- title: Specialized group (e.g. health professionals, students, veterans)
-- title: Sponsored organization
-- title: State
-- title: Student/Trainee
-- title: Suburban
-- title: U.S. Citizen
-- title: U.S. Territories
-- title: Unemployed
-- title: Veteran/Service person/Reservist (including dependents
-- title: Welfare Recipient
-- title: Women
-- title: Youth (16-21)
 categories:
 - sub_categories:
   - title: Forestry
@@ -596,8 +451,7 @@ cfo_agencies:
   title: Small Business Administration
 - sub_categories: []
   title: Social Security Administration
-fiscal_year: '2022'
-layout: search
+layout: home
 other_agencies:
 - sub_categories: []
   title: Appalachian Regional Commission
@@ -666,6 +520,82 @@ other_agencies:
   title: United States Institute of Peace
 - sub_categories: []
   title: Unspecified
-permalink: /search.html
-title: Program search
+permalink: /
+program_types:
+- sub_categories:
+  - title: Advisory Services and Counseling
+  - title: Advisory Services on Compliance
+  title: Advisory Services and Counseling
+- sub_categories:
+  - title: Direct Loans
+  title: Direct Loans
+- sub_categories:
+  - title: Direct Payments for Specified Use
+  - title: Direct Payments for Specified Use (Cooperative Agreements)
+  title: Direct Payments for a Specified Use
+- sub_categories:
+  - title: Direct Payments with Unrestricted Use
+  title: Direct Payments with Unrestricted Use
+- sub_categories:
+  - title: Dissemination of Technical Information
+  - title: Information
+  title: Dissemination of Technical Information
+- sub_categories:
+  - title: Formula Grants
+  - title: Formula Grants (Apportionments)
+  - title: Formula Grants (Cooperative Agreements)
+  - title: Formula Grants (Health Incentive Grants)
+  title: Formula Grants
+- sub_categories:
+  - title: Guaranteed/Insured Loans
+  - title: Guaranteed/Insured Loans (including Guaranty Participation Loans)
+  - title: Guaranteed/Insured Loans (including Immediate Participation Loans)
+  - title: Loan Guarantees/Grants
+  title: Guaranteed / Insured Loans
+- sub_categories:
+  - title: Insurance
+  - title: Insurance (Guaranteed Surety Bonds)
+  - title: Insurance (Reimbursement)
+  title: Insurance
+- sub_categories:
+  - title: Resolution of Disputes
+  - title: Investigation of Complaints
+  - title: Investigation of Complaints (Compliance Reviews)
+  title: Investigation of Complaints
+- sub_categories:
+  - title: Cooperative Agreements
+  - title: Cooperative Agreements (Discretionary Grants)
+  - title: Project Grants
+  - title: Project Grants (Capacity Building and Complaint Processing, Training)
+  - title: Project Grants (Contracts)
+  - title: Project Grants (Cooperative Agreements or Contracts)
+  - title: Project Grants (Cooperative Agreements)
+  - title: Project Grants (Discretionary)
+  - title: Project Grants (Fellowships)
+  - title: Project Grants (for administration projects authorized under Section
+  - title: Project Grants (for collaborative design of curriculum, production of
+  - title: Project Grants (for specified projects)
+  - title: Project Grants (including individual awards)
+  - title: Project Grants (including travel grants)
+  - title: Project Grants (Rehabilitation of existing indoor and outdoor recreat
+  - title: Project Grants (Special)
+  - title: Project Grants (to capitalize loan funds)
+  - title: Project Grants (with Formula Distribution)
+  title: Project Grants
+- sub_categories:
+  - title: Provision of Specialized Services
+  title: Provision of Specialized Services
+- sub_categories:
+  - title: Salaries and Expenses
+  title: Salaries and Expenses
+- sub_categories:
+  - title: Sale, Exchange, or Donation of Property and Goods
+  title: Sale, Exchange, or Donation of Property or Goods
+- sub_categories:
+  - title: Training
+  title: Training
+- sub_categories:
+  - title: Use of Property, Facilities, and Equipment
+  title: Use of Property, Facilities, or Equipment
+title: Home
 ---
