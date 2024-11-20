@@ -69,7 +69,7 @@ th.gridjs-th {
 .objectives-container {
     position: relative;
   }
-  
+
   .text-truncate {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -77,11 +77,11 @@ th.gridjs-th {
     overflow: hidden;
     transition: all 0.3s ease;
   }
-  
+
   .text-truncate.expanded {
     -webkit-line-clamp: unset;
   }
-  
+
   .read-more-btn {
     color: #005ea2;
     padding: 0;
@@ -89,7 +89,7 @@ th.gridjs-th {
     font-weight: normal;
     display: none; /* Hidden by default, shown via JS if needed */
   }
-  
+
   .read-more-btn:hover {
     color: #1a4480;
     background-color: transparent;
@@ -100,36 +100,53 @@ th.gridjs-th {
     cursor: not-allowed;
     pointer-events: none;
   }
-  
+
   .count {
     color: #71767a;
     font-weight: normal;
   }
-  
+
   /* Disabled expand button styles */
   .usa-checkbox input:disabled ~ .toggle.expandable-button {
     opacity: 0.5;
     pointer-events: none;
   }
-  
+
   /* Hidden children container for disabled parent */
   .usa-checkbox input:disabled ~ [id^="children-for-check"] {
     display: none !important;
   }
-  
+
   /* Disabled checkbox container styles */
   .usa-checkbox.disabled {
     pointer-events: none;
   }
-  
+
   .usa-checkbox input:disabled {
     pointer-events: none;
   }
-  
-  /* Clear filter button disabled state */
+
   .usa-button--disabled {
     background-color: #e6e6e6;
     color: #757575;
     cursor: not-allowed;
     pointer-events: none;
   }
+
+  .home-background {
+    background-image: url('/assets/img/home-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.width-full.bg-white {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-secondary {
+    position: relative;
+    z-index: 1;
+}

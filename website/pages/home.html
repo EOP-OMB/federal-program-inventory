@@ -1,65 +1,107 @@
 ---
 layout: default
 permalink: /
-
 ---
 
-<section class="bg-primary-dark">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12 margin-top-8 margin-bottom-8">
-        <h1 class="text-white measure-1">The U.S. Government administers more than 2,300 Federal financial assistance programs.</h1>
-        <a href="/category">
-          <button type="button" class="usa-button usa-button--secondary">
-            Explore programs by category
-          </button>
-        </a>
+<div class="home-background position-relative margin-bottom-7">
+  <div class="display-flex flex-column">
+    <div class="display-flex flex-justify-center padding-top-5">
+      <div class="grid-container-tablet-lg">
+        <div class="usa-layout-grid padding-3 radius-md bg-primary-darker">
+          <div class="width-full text-center text-white font-sans-3xl text-light line-height-sans-1">
+            The U.S. Federal Government administers over 2,300 federal financial assistance programs, totaling close to
+            $4.5 trillion.
+          </div>
+          <div class="display-flex flex-justify-center margin-top-3">
+            <a href="/category" class="usa-button bg-primary hover:bg-primary-dark font-sans-lg text-bold">
+              Explore programs by category
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="width-full bg-white margin-top-4" style="background-color: rgba(255, 255, 255, 0.9);">
+      <div class="grid-container-desktop-lg">
+        <h1 class="font-heading-2xl text-light text-primary">
+          Find programs in the Federal Program Inventory
+        </h1>
+        <div class="grid-row grid-gap-6">
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="text-bold" for="agency-select">
+              Agency
+            </label>
+            <select class="usa-select" id="agency-select">
+              <option value="">Select an agency</option>
+            </select>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="text-bold" for="category-select">
+              Category
+            </label>
+            <select class="usa-select" id="category-select">
+              <option value="">Select a category</option>
+            </select>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="text-bold" for="program-type">
+              Program type
+            </label>
+            <select class="usa-select" id="program-type">
+              <option value="">Select a program type</option>
+              <option value="advisory">Advisory Services & Counseling</option>
+              <option value="direct-loans">Direct Loans</option>
+              <option value="direct-payments">Direct Payments for a Specified Use</option>
+              <option value="technical">Dissemination of Technical Information</option>
+              <option value="formula">Formula Grants</option>
+            </select>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="text-bold" for="eligible-applicant">
+              Eligible applicant
+            </label>
+            <select class="usa-select" id="eligible-applicant">
+              <option value="">Select eligible applicant type</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="usa-button margin-top-205">Find Programs</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="width-full bg-secondary">
+  <div class="grid-container padding-bottom-1">
+    <div class="width-full text-white font-sans-xl line-height-sans-3 padding-top-5">About the Federal Program Inventory
+    </div>
+    <div class="width-full">
+      <p class="text-white font-sans-sm line-height-sans-3 margin-bottom-1">
+        In 2023, building upon the successful 2020 exploratory pilot effort and recommendations published in the 2021
+        Report to Congress, OMB launched the Federal Program Inventory, which focuses on Federal financial assistance.
+      </p>
+
+      <p class="text-white font-sans-sm text-bold line-height-sans-3 margin-bottom-1">
+        Why focus on financial assistance and assistance listings?
+      </p>
+
+      <p class="text-white font-sans-sm line-height-sans-3 margin-bottom-1">
+        Over the past several years, financial assistance has routinely accounted for over $3 trillion of spending and
+        constitutes a high proportion of Federal programs. Additionally, ALs are tied to agency financial data through
+        DATA Act reporting and to performance data through the requirement for agencies to report accomplishments within
+        them. By starting with assistance listings, OMB can build an FPI website that accounts for a significant portion
+        of all Federal programs.
+      </p>
+
+      <p class="text-white font-sans-sm text-bold line-height-sans-3">
+        <a href="/about/fpi" class="text-white text-no-underline">
+          Learn more >
+        </a>
+      </p>
     </div>
   </div>
 </section>
-<main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
-  <div class="grid-container">
-    <div class="grid-row grid-gap-4">
-      <div class="desktop:grid-col-4 desktop:border-right-2 desktop:border-base-lightest bg-white">
-        <h2>Search programs</h2>
-        <div class="usa-prose margin-bottom-2">
-          <p>
-            This website allows visitors to explore Federal financial assistance programs across
-            categories, agencies, eligible applicants, and more.
-          </p>
-          <p>
-            <a href="/search">Explore programs using search</a>
-          </p>
-        </div>
-      </div>
-      <div class="desktop:grid-col-4 desktop:border-left-1 desktop:border-right-2 desktop:border-base-lightest bg-white">
-        <h2 class="font-weight-light">About the FPI</h2>
-        <div class="usa-prose margin-bottom-2">
-          <p>
-            The Federal Program Inventory aggregates important information about the programs of the U.S. Government.
-            This website builds on lessons learned during the FPI Exploratory Pilot, launched in 2020, by significantly
-            increasing the number of programs, amount of spending, and information included.
-          </p>
-          <p>
-            <a href="/about/fpi">Learn more about the FPI</a>
-          </p>
-        </div>
-      </div>
-      <div class="desktop:grid-col-4 desktop:border-left-2 desktop:border-base-lightest bg-white">
-        <h2>Learn about the data</h2>
-        <div class="usa-prose margin-bottom-2">
-          <p>
-            This website uses publicly available, agency-provided data. This data is sourced from
-            <a href="https://sam.gov/" target="_blank">SAM.gov</a> and
-            <a href="https://usaspending.gov/" target="_blank">USASpending.gov</a>. All data used on this
-            website is available to download.
-          </p>
-          <p>
-            <a href="/about/about-the-data">Learn more about the data</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
