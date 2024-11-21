@@ -772,7 +772,7 @@
 
   function updatePagination(currentPage, totalPages) {
     // Update the info text
-    const start = (currentPage - 1) * pageSize + 1;
+    const start = totalCount === 0 ? 0 : (currentPage - 1) * pageSize + 1;
     const end = Math.min(currentPage * pageSize, totalCount);
 
     document.getElementById("results-start").textContent =
@@ -781,8 +781,116 @@
     document.getElementById("results-total").textContent =
       totalCount.toLocaleString();
 
+    // If there are no results, hide or disable pagination
+    const paginationList = document.querySelector(".usa-pagination__list");
+    if (totalCount === 0) {
+      if (paginationList) {
+        paginationList.style.display = "none";
+      }
+      return;
+    } else {
+      if (paginationList) {
+        paginationList.style.display = "";
+      }
+    }
+
     // Generate the page numbers
     generatePaginationNumbers(currentPage, totalPages);
+  }
+
+  // Update generatePaginationNumbers to also handle zero results
+  function generatePaginationNumbers(currentPage, totalPages) {
+    const paginationList = document.querySelector(".usa-pagination__list");
+    if (!paginationList || totalPages === 0) return;
+
+    const prevButton = paginationList.querySelector(
+      ".usa-pagination__arrow:first-child"
+    );
+    const nextButton = paginationList.querySelector(
+      ".usa-pagination__arrow:last-child"
+    );
+
+    // Remove existing page numbers
+    const existingNumbers = paginationList.querySelectorAll(
+      ".usa-pagination__page-no, .usa-pagination__overflow"
+    );
+    existingNumbers.forEach((item) => item.remove());
+
+    // If there are no pages, disable both navigation buttons and return
+    if (totalPages === 0) {
+      if (prevButton) {
+        const prevLink = prevButton.querySelector("a");
+        prevLink.classList.add("usa-pagination__link--disabled");
+        prevLink.setAttribute("aria-disabled", "true");
+      }
+      if (nextButton) {
+        const nextLink = nextButton.querySelector("a");
+        nextLink.classList.add("usa-pagination__link--disabled");
+        nextLink.setAttribute("aria-disabled", "true");
+      }
+      return;
+    }
+
+    let pages = [];
+
+    pages.push(1);
+    let rangeStart = Math.max(2, currentPage - 1);
+    let rangeEnd = Math.min(totalPages - 1, currentPage + 1);
+
+    if (rangeStart > 2) pages.push("...");
+
+    for (let i = rangeStart; i <= rangeEnd; i++) {
+      pages.push(i);
+    }
+
+    if (rangeEnd < totalPages - 1) pages.push("...");
+    if (totalPages > 1) pages.push(totalPages);
+
+    // Insert page numbers into DOM
+    pages.forEach((page) => {
+      const li = document.createElement("li");
+
+      if (page === "...") {
+        li.className = "usa-pagination__item usa-pagination__overflow";
+        li.setAttribute("aria-label", "ellipsis indicating non-visible pages");
+        li.innerHTML = "<span>…</span>";
+      } else {
+        li.className = "usa-pagination__item usa-pagination__page-no";
+        const a = document.createElement("a");
+        a.href = "javascript:void(0);";
+        a.className =
+          "usa-pagination__button" +
+          (page === currentPage ? " usa-current" : "");
+        a.setAttribute("aria-label", `Page ${page}`);
+        if (page === currentPage) {
+          a.setAttribute("aria-current", "page");
+        }
+        a.textContent = page;
+        li.appendChild(a);
+      }
+
+      paginationList.insertBefore(li, nextButton);
+    });
+
+    // Update disabled states for navigation buttons
+    const prevLink = prevButton.querySelector("a");
+    const nextLink = nextButton.querySelector("a");
+
+    if (currentPage === 1) {
+      prevLink.classList.add("usa-pagination__link--disabled");
+      prevLink.setAttribute("aria-disabled", "true");
+    } else {
+      prevLink.classList.remove("usa-pagination__link--disabled");
+      prevLink.removeAttribute("aria-disabled");
+    }
+
+    if (currentPage === totalPages) {
+      nextLink.classList.add("usa-pagination__link--disabled");
+      nextLink.setAttribute("aria-disabled", "true");
+    } else {
+      nextLink.classList.remove("usa-pagination__link--disabled");
+      nextLink.removeAttribute("aria-disabled");
+    }
   }
 
   function updateProgramCounts() {
