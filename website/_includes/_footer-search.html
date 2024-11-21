@@ -448,8 +448,8 @@
     }
 
     // Restore sort state with default to obligations desc
-    const sortParam = params.get("s") || "od"; // Changed default to "od" (obligations desc)
-    currentSort.field = sortParam[0] === "t" ? "title" : "obligations"; // Changed logic
+    const sortParam = params.get("s") || "od";
+    currentSort.field = sortParam[0] === "t" ? "title" : "obligations";
     currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
 
@@ -489,13 +489,46 @@
               const agencyCode = code.slice(1).replace("*", "");
               const agencyTitle = mapping[agencyCode];
               if (agencyTitle) {
+                // Add the parent agency title
                 selectedAgencySubAgency.push(agencyTitle);
+
+                // Find and check the parent checkbox
+                const parentCheckbox = document.querySelector(
+                  `input[data-filter-type="agency"][data-agency-title="${agencyTitle}"]`
+                );
+                if (parentCheckbox) {
+                  parentCheckbox.checked = true;
+
+                  // Also check all enabled child checkboxes if it's a parent selection
+                  const childrenId =
+                    parentCheckbox.getAttribute("data-children-id");
+                  if (childrenId && code.endsWith("*")) {
+                    const childrenContainer =
+                      document.getElementById(childrenId);
+                    if (childrenContainer) {
+                      const children = childrenContainer.querySelectorAll(
+                        'input[data-filter-type="sub-agency"]:not(:disabled)'
+                      );
+                      children.forEach((child) => {
+                        child.checked = true;
+                        const subAgencyTitle = child.getAttribute(
+                          "data-subagency-title"
+                        );
+                        if (subAgencyTitle) {
+                          selectedAgencySubAgency.push(
+                            `${agencyTitle} - ${subAgencyTitle}`
+                          );
+                        }
+                      });
+                    }
+                  }
+                }
               }
             }
           });
         }
 
-        // Process categories
+        // Process categories - similar logic as agencies
         if (decodedData.c && Array.isArray(decodedData.c)) {
           decodedData.c.forEach((code) => {
             if (!code) return;
@@ -515,7 +548,40 @@
               const categoryCode = code.slice(1).replace("*", "");
               const categoryTitle = mapping[categoryCode];
               if (categoryTitle) {
+                // Add the parent category title
                 selectedCategorySubcategory.push(categoryTitle);
+
+                // Find and check the parent checkbox
+                const parentCheckbox = document.querySelector(
+                  `input[data-filter-type="category"][data-category-title="${categoryTitle}"]`
+                );
+                if (parentCheckbox) {
+                  parentCheckbox.checked = true;
+
+                  // Also check all enabled child checkboxes if it's a parent selection
+                  const childrenId =
+                    parentCheckbox.getAttribute("data-children-id");
+                  if (childrenId && code.endsWith("*")) {
+                    const childrenContainer =
+                      document.getElementById(childrenId);
+                    if (childrenContainer) {
+                      const children = childrenContainer.querySelectorAll(
+                        'input[data-filter-type="sub-category"]:not(:disabled)'
+                      );
+                      children.forEach((child) => {
+                        child.checked = true;
+                        const subCategoryTitle = child.getAttribute(
+                          "data-subcategory-title"
+                        );
+                        if (subCategoryTitle) {
+                          selectedCategorySubcategory.push(
+                            `${categoryTitle} - ${subCategoryTitle}`
+                          );
+                        }
+                      });
+                    }
+                  }
+                }
               }
             }
           });
@@ -887,8 +953,9 @@
         program.agency?.title || "";
       clone.querySelector(
         ".program-obligations"
-      ).textContent = `${formatObligations(program.obligations)} in FY ${new Date().getFullYear() - 1
-        } obligations`;
+      ).textContent = `${formatObligations(program.obligations)} in FY ${
+        new Date().getFullYear() - 1
+      } obligations`;
 
       const objectivesEl = clone.querySelector(".program-objectives");
       const readMoreBtn = clone.querySelector(".read-more-btn");
@@ -1692,12 +1759,10 @@
     initializeSortButtons();
     initializeClearFiltersButton();
 
-    // captureInitialState();
-    // updateClearFilterButton();
-
     // Handle browser navigation
     window.addEventListener("popstate", async function () {
       console.log("Navigation occurred");
+      captureInitialState();
       decodeFiltersFromUrl();
       await fetchProgramsData();
       updateClearFilterButton();
@@ -1707,9 +1772,9 @@
     // console.log("Starting initial load");
     try {
       // Decode filters and fetch data
+      captureInitialState();
       decodeFiltersFromUrl();
       await fetchProgramsData();
-      captureInitialState();
       updateClearFilterButton();
     } catch (error) {
       console.error("Error during initialization:", error);

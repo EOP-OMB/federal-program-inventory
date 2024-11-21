@@ -1,0 +1,98 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get reference to form elements using IDs
+  const agencySelect = document.getElementById('agency-select');
+  const categorySelect = document.getElementById('category-select');
+  const programTypeSelect = document.getElementById('program-type-select');
+  const applicantSelect = document.getElementById('applicant-select');
+  const findProgramsBtn = document.getElementById('find-programs-button');
+
+  function compressFilters(filters) {
+    const mapping = new Map();
+    let counter = 0;
+
+    const getCode = (title) => {
+      if (!mapping.has(title)) {
+        mapping.set(title, counter.toString(36));
+        counter++;
+      }
+      return mapping.get(title);
+    };
+
+    const compressed = {
+      codes: {},
+      a: [], // Agency codes
+      c: [], // Category codes
+      t: [], // Assistance type codes
+      p: [], // Applicant type codes
+    };
+
+    // Process agency selection
+    if (filters.agency) {
+      const code = getCode(filters.agency);
+      compressed.codes[code] = filters.agency;
+      compressed.a.push(`p${code}*`); // Mark as parent with selectAll
+    }
+
+    // Process category selection
+    if (filters.category) {
+      const code = getCode(filters.category);
+      compressed.codes[code] = filters.category;
+      compressed.c.push(`p${code}*`); // Mark as parent with selectAll
+    }
+
+    // Process assistance type
+    if (filters.programType) {
+      const code = getCode(filters.programType);
+      compressed.codes[code] = filters.programType;
+      compressed.t.push(code);
+    }
+
+    // Process applicant type
+    if (filters.applicant) {
+      const code = getCode(filters.applicant);
+      compressed.codes[code] = filters.applicant;
+      compressed.p.push(code);
+    }
+
+    return compressed;
+  }
+
+  if (findProgramsBtn) {
+    findProgramsBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Create filters object from selected values
+      const filters = {
+        agency: agencySelect?.value || null,
+        category: categorySelect?.value || null,
+        programType: programTypeSelect?.value || null,
+        applicant: applicantSelect?.value || null
+      };
+
+      // Only include non-null values
+      Object.keys(filters).forEach(key => {
+        if (!filters[key]) delete filters[key];
+      });
+
+      // Create URL parameters
+      const params = new URLSearchParams();
+      
+      // If we have any filters, compress and encode them
+      if (Object.keys(filters).length > 0) {
+        const compressed = compressFilters(filters);
+        params.set('f', btoa(JSON.stringify(compressed)));
+      }
+
+      // Set default sort to obligations desc
+      params.set('s', 'od');
+      
+      // Navigate to search page with parameters
+      const searchUrl = `/search${params.toString() ? `?${params.toString()}` : ''}`;
+      window.location.href = searchUrl;
+    });
+  } else {
+    console.warn('Find Programs button not found. Make sure element with id="find-programs-button" exists.');
+  }
+});
+</script>
