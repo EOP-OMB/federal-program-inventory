@@ -37,9 +37,7 @@ permalink: /
                           {% for agency in page.cfo_agencies %}
                             <option value="{{ agency.title | slugify }}">{{ agency.title }}</option>
                           {% endfor %}
-                          {% for agency in page.other_agencies %}
-                            <option value="{{ agency.title | slugify }}">{{ agency.title }}</option>
-                          {% endfor %}
+                          <option value="other-agencies">Other agencies</option>
                         </select>
                       </div>
                     </div>
