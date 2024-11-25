@@ -150,3 +150,19 @@ th.gridjs-th {
     position: relative;
     z-index: 1;
 }
+
+@media (min-width: 64em) {
+  .usa-nav__primary > .usa-nav__primary-item > a {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem; /* Different value for bottom */
+    padding-left: 1rem;
+  }
+
+  .usa-nav__primary button {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem; /* Different value for bottom */
+    padding-left: 1rem;
+  }
+}
