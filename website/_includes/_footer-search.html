@@ -628,38 +628,11 @@
       checkbox.checked = false;
     });
 
-    // Helper function to expand sections
-    const expandSection = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.hidden = false;
-        const button = document.querySelector(
-          `[data-content-id="${sectionId}"]`
-        );
-        if (button) {
-          button.setAttribute("aria-expanded", "true");
-          const icon = button.querySelector(".usa-icon use");
-          if (icon) {
-            icon.setAttribute(
-              "xlink:href",
-              "/assets/img/sprite.svg#expand_more"
-            );
-          }
-        }
-      }
-    };
-
-    // Helper function to check checkbox and expand its section
-    const checkAndExpand = (selector, sectionId) => {
-      expandSection(sectionId);
+    // Helper function to check checkbox WITHOUT expanding its section
+    const checkBox = (selector) => {
       const checkbox = document.querySelector(selector);
       if (checkbox) {
         checkbox.checked = true;
-        // If it's a parent checkbox with children, expand children section
-        const childrenId = checkbox.getAttribute("data-children-id");
-        if (childrenId) {
-          expandSection(childrenId);
-        }
       }
     };
 
@@ -667,27 +640,13 @@
     selectedAgencySubAgency.forEach((title) => {
       if (title.includes(" - ")) {
         const [parentTitle, subTitle] = title.split(" - ");
-        expandSection("agency-section");
 
-        // Find parent checkbox and expand its section
-        const parentSelector = `input[data-filter-type="agency"][data-agency-title="${parentTitle}"]`;
-        const parentCheckbox = document.querySelector(parentSelector);
-        if (parentCheckbox) {
-          const childrenId = parentCheckbox.getAttribute("data-children-id");
-          if (childrenId) {
-            expandSection(childrenId);
-            // Find and check child checkbox
-            const childSelector = `input[data-filter-type="sub-agency"][data-agency-title="${parentTitle}"][data-subagency-title="${subTitle}"]`;
-            const childCheckbox = document.querySelector(childSelector);
-            if (childCheckbox) {
-              childCheckbox.checked = true;
-            }
-          }
-        }
+        // Find and check child checkbox
+        const childSelector = `input[data-filter-type="sub-agency"][data-agency-title="${parentTitle}"][data-subagency-title="${subTitle}"]`;
+        checkBox(childSelector);
       } else {
-        checkAndExpand(
-          `input[data-filter-type="agency"][data-agency-title="${title}"]`,
-          "agency-section"
+        checkBox(
+          `input[data-filter-type="agency"][data-agency-title="${title}"]`
         );
       }
     });
@@ -696,42 +655,28 @@
     selectedCategorySubcategory.forEach((title) => {
       if (title.includes(" - ")) {
         const [parentTitle, subTitle] = title.split(" - ");
-        expandSection("categories-section");
 
-        const parentSelector = `input[data-filter-type="category"][data-category-title="${parentTitle}"]`;
-        const parentCheckbox = document.querySelector(parentSelector);
-        if (parentCheckbox) {
-          const childrenId = parentCheckbox.getAttribute("data-children-id");
-          if (childrenId) {
-            expandSection(childrenId);
-            const childSelector = `input[data-filter-type="sub-category"][data-category-title="${parentTitle}"][data-subcategory-title="${subTitle}"]`;
-            const childCheckbox = document.querySelector(childSelector);
-            if (childCheckbox) {
-              childCheckbox.checked = true;
-            }
-          }
-        }
+        // Find and check child checkbox
+        const childSelector = `input[data-filter-type="sub-category"][data-category-title="${parentTitle}"][data-subcategory-title="${subTitle}"]`;
+        checkBox(childSelector);
       } else {
-        checkAndExpand(
-          `input[data-filter-type="category"][data-category-title="${title}"]`,
-          "categories-section"
+        checkBox(
+          `input[data-filter-type="category"][data-category-title="${title}"]`
         );
       }
     });
 
     // Process assistance types
     selectedAssistanceTypes.forEach((title) => {
-      checkAndExpand(
-        `input[data-filter-type="assistance"][data-assistance-title="${title}"]`,
-        "program-type-section"
+      checkBox(
+        `input[data-filter-type="assistance"][data-assistance-title="${title}"]`
       );
     });
 
     // Process applicant types
     selectedApplicantTypes.forEach((title) => {
-      checkAndExpand(
-        `input[data-filter-type="applicant"][data-applicant-title="${title}"]`,
-        "eligible-applicants-section"
+      checkBox(
+        `input[data-filter-type="applicant"][data-applicant-title="${title}"]`
       );
     });
 
@@ -760,14 +705,44 @@
 
   // Function to format currency in billions
   function formatObligations(amount) {
-    const trillion = 1000000000000;
-    const billion = 1000000000;
+    const trillion = 1000000000000; // 1T
+    const billion = 1000000000; // 1B
+    const million = 1000000; // 1M
+    const thousand = 1000; // 1K
+    const hundred = 100; // 100
 
+    // Handle 0 case
+    if (amount === 0) {
+      return "$0";
+    }
+
+    // Handle trillions
     if (amount >= trillion) {
       return `$${(amount / trillion).toFixed(2)}T`;
-    } else {
-      return `$${Math.round(amount / billion)}B`;
     }
+
+    // Handle billions
+    if (amount >= billion) {
+      return `$${(amount / billion).toFixed(2)}B`;
+    }
+
+    // Handle millions
+    if (amount >= million) {
+      return `$${(amount / million).toFixed(2)}M`;
+    }
+
+    // Handle thousands
+    if (amount >= thousand) {
+      return `$${(amount / thousand).toFixed(2)}K`;
+    }
+
+    // Handle hundreds and smaller
+    if (amount >= hundred) {
+      return `$${amount.toFixed(2)}`;
+    }
+
+    // Handle small numbers (less than 100)
+    return `$${amount.toFixed(2)}`;
   }
 
   function updatePagination(currentPage, totalPages) {
@@ -1055,8 +1030,15 @@
 
       clone.querySelector(".program-title").textContent = program.title;
       clone.querySelector(".program-title").href = program.permalink || "#";
-      clone.querySelector(".program-popular-name").textContent =
-        program.popularName || "";
+
+      const popularNameDiv = clone.querySelector('[data-popular-name-container]');
+        if (!program.popularName || program.popularName.trim() === '') {
+            popularNameDiv.remove();
+        } else {
+            clone.querySelector(".program-popular-name").textContent = program.popularName;
+        }
+
+
       clone.querySelector(".program-agency").textContent =
         program.agency?.title || "";
       clone.querySelector(
@@ -1089,29 +1071,23 @@
   }
 
   function updateCheckboxDisabledState(checkbox, isDisabled) {
-    checkbox.disabled = isDisabled;
     const checkboxContainer = checkbox.closest(".usa-checkbox");
     if (checkboxContainer) {
       if (isDisabled) {
-        checkboxContainer.classList.add("disabled");
+        checkboxContainer.classList.add("visually-inactive");
       } else {
-        checkboxContainer.classList.remove("disabled");
+        checkboxContainer.classList.remove("visually-inactive");
       }
     }
   }
 
   function updateFiltersFromFacets(facets) {
+    // Remove the count display helper since we don't want to show counts
     const addCountToLabel = (label, count) => {
+      // Remove any existing count spans
       const existingCount = label.querySelector(".count");
       if (existingCount) {
         existingCount.remove();
-      }
-
-      if (count !== undefined) {
-        const countSpan = document.createElement("span");
-        countSpan.className = "count text-base margin-left-1";
-        countSpan.textContent = `(${count})`;
-        label.appendChild(countSpan);
       }
     };
 
@@ -1142,46 +1118,20 @@
         const agencyTitle = checkbox.getAttribute("data-agency-title");
         const label = checkbox.closest(".usa-checkbox").querySelector("label");
         const childrenId = checkbox.getAttribute("data-children-id");
-        const childrenContainer = childrenId
-          ? document.getElementById(childrenId)
-          : null;
 
         if (agencyTitle === "Other agencies") {
-          // For "Other agencies", sum up agencies not in CFO list
           let otherAgenciesTotal = 0;
           for (const [facetAgencyTitle, agencyData] of agencyFacets.entries()) {
             if (!cfoAgencyTitles.includes(facetAgencyTitle)) {
               otherAgenciesTotal += agencyData.count;
             }
           }
-
           updateCheckboxDisabledState(checkbox, otherAgenciesTotal === 0);
-          addCountToLabel(label, otherAgenciesTotal);
+          addCountToLabel(label);
         } else {
           const agencyData = agencyFacets.get(agencyTitle);
-          if (agencyData) {
-            const totalCount = agencyData.count;
-            updateCheckboxDisabledState(checkbox, false);
-            addCountToLabel(label, totalCount);
-          } else {
-            updateCheckboxDisabledState(checkbox, true);
-            checkbox.checked = false;
-            addCountToLabel(label, 0);
-          }
-
-          // Handle children visibility and state
-          if (checkbox.disabled && childrenContainer) {
-            childrenContainer
-              .querySelectorAll('input[type="checkbox"]')
-              .forEach((childCheckbox) => {
-                childCheckbox.checked = false;
-                updateCheckboxDisabledState(childCheckbox, true);
-                const childLabel = childCheckbox
-                  .closest(".usa-checkbox")
-                  .querySelector("label");
-                addCountToLabel(childLabel, 0);
-              });
-          }
+          updateCheckboxDisabledState(checkbox, !agencyData);
+          addCountToLabel(label);
         }
       });
 
@@ -1193,31 +1143,15 @@
         const subAgencyTitle = checkbox.getAttribute("data-subagency-title");
         const label = checkbox.closest(".usa-checkbox").querySelector("label");
 
-        // Skip if parent is disabled
-        const parentCheckbox = document.querySelector(
-          `input[data-filter-type="agency"][data-agency-title="${agencyTitle}"]`
-        );
-        if (parentCheckbox && parentCheckbox.disabled) {
-          updateCheckboxDisabledState(checkbox, true);
-          checkbox.checked = false;
-          addCountToLabel(label, 0);
-          return;
-        }
-
         if (agencyTitle === "Other agencies") {
-          // For sub-agencies under "Other", look for this agency in facets
           const agencyData = agencyFacets.get(subAgencyTitle);
           const count = agencyData?.count || 0;
-
           updateCheckboxDisabledState(checkbox, count === 0);
-          addCountToLabel(label, count);
+          addCountToLabel(label);
         } else if (subAgencyTitle === "Unspecified") {
-          // For "Unspecified" sub-agencies
           const agencyData = agencyFacets.get(agencyTitle);
           if (agencyData) {
             let unspecifiedCount = agencyData.count;
-
-            // Only subtract subagency counts that don't match the parent agency
             for (const [
               subagencyName,
               count,
@@ -1226,27 +1160,17 @@
                 unspecifiedCount -= count;
               }
             }
-
             updateCheckboxDisabledState(checkbox, unspecifiedCount <= 0);
-            addCountToLabel(label, Math.max(0, unspecifiedCount));
+            addCountToLabel(label);
           } else {
             updateCheckboxDisabledState(checkbox, true);
-            checkbox.checked = false;
-            addCountToLabel(label, 0);
+            addCountToLabel(label);
           }
         } else {
-          // Regular sub-agency handling
           const agencyData = agencyFacets.get(agencyTitle);
           const subAgencyCount = agencyData?.subagencies.get(subAgencyTitle);
-
-          if (subAgencyCount !== undefined) {
-            updateCheckboxDisabledState(checkbox, false);
-            addCountToLabel(label, subAgencyCount);
-          } else {
-            updateCheckboxDisabledState(checkbox, true);
-            checkbox.checked = false;
-            addCountToLabel(label, 0);
-          }
+          updateCheckboxDisabledState(checkbox, subAgencyCount === undefined);
+          addCountToLabel(label);
         }
       });
 
@@ -1270,15 +1194,8 @@
         const categoryTitle = checkbox.getAttribute("data-category-title");
         const label = checkbox.closest(".usa-checkbox").querySelector("label");
         const categoryData = categoryFacets.get(categoryTitle);
-
-        if (categoryData) {
-          updateCheckboxDisabledState(checkbox, false);
-          addCountToLabel(label, categoryData.count);
-        } else {
-          updateCheckboxDisabledState(checkbox, true);
-          checkbox.checked = false;
-          addCountToLabel(label, 0);
-        }
+        updateCheckboxDisabledState(checkbox, !categoryData);
+        addCountToLabel(label);
       });
 
     // Handle subcategories
@@ -1294,15 +1211,8 @@
         const categoryData = categoryFacets.get(categoryTitle);
         const subCategoryCount =
           categoryData?.subcategories.get(subCategoryTitle);
-
-        if (subCategoryCount !== undefined) {
-          updateCheckboxDisabledState(checkbox, false);
-          addCountToLabel(label, subCategoryCount);
-        } else {
-          updateCheckboxDisabledState(checkbox, true);
-          checkbox.checked = false;
-          addCountToLabel(label, 0);
-        }
+        updateCheckboxDisabledState(checkbox, subCategoryCount === undefined);
+        addCountToLabel(label);
       });
 
     // Process Assistance Types
@@ -1315,15 +1225,8 @@
         const assistanceTitle = checkbox.getAttribute("data-assistance-title");
         const label = checkbox.closest(".usa-checkbox").querySelector("label");
         const count = assistanceFacets.get(assistanceTitle);
-
-        if (count !== undefined) {
-          updateCheckboxDisabledState(checkbox, false);
-          addCountToLabel(label, count);
-        } else {
-          updateCheckboxDisabledState(checkbox, true);
-          checkbox.checked = false;
-          addCountToLabel(label, 0);
-        }
+        updateCheckboxDisabledState(checkbox, count === undefined);
+        addCountToLabel(label);
       });
 
     // Process Applicant Types
@@ -1336,48 +1239,10 @@
         const applicantTitle = checkbox.getAttribute("data-applicant-title");
         const label = checkbox.closest(".usa-checkbox").querySelector("label");
         const count = applicantFacets.get(applicantTitle);
-
-        if (count !== undefined) {
-          updateCheckboxDisabledState(checkbox, false);
-          addCountToLabel(label, count);
-        } else {
-          updateCheckboxDisabledState(checkbox, true);
-          checkbox.checked = false;
-          addCountToLabel(label, 0);
-        }
+        updateCheckboxDisabledState(checkbox, count === undefined);
+        addCountToLabel(label);
       });
   }
-
-  // Add CSS for disabled checkboxes
-  //   const style = document.createElement("style");
-  //   style.textContent = `
-  //   input[type="checkbox"]:disabled + label {
-  //     opacity: 0.5;
-  //     cursor: not-allowed;
-  //     pointer-events: none;
-  //   }
-  //   .count {
-  //     color: #71767a;
-  //     font-weight: normal;
-  //   }
-  //   /* Hide the expand button when parent checkbox is disabled */
-  //   .usa-checkbox input:disabled ~ .toggle.expandable-button {
-  //     opacity: 0.5;
-  //     pointer-events: none;
-  //   }
-  //   /* Keep children container hidden when parent is disabled */
-  //   .usa-checkbox input:disabled ~ [id^="children-for-check"] {
-  //     display: none !important;
-  //   }
-  //   /* Prevent interaction with disabled checkboxes and their containers */
-  //   .usa-checkbox.disabled {
-  //     pointer-events: none;
-  //   }
-  //   .usa-checkbox input:disabled {
-  //     pointer-events: none;
-  //   }
-  // `;
-  //   document.head.appendChild(style);
 
   async function fetchProgramsData(keyword = currentQuery) {
     const requestBody = {
@@ -1431,9 +1296,7 @@
     .getElementsByTagName("input");
   for (let input of filterInputs) {
     input.addEventListener("change", (event) => {
-      // handleFilterChange(event);
-      // currentPage = 1;
-      // fetchProgramsData();
+      input.addEventListener("change", handleFilterChange);
     });
   }
 
@@ -1636,9 +1499,15 @@
       }
     }
 
+    currentPage = 1;
+
     updateClearFilterButton();
     // Always sync checkbox states after changes
     syncParentCheckboxStates();
+
+    // Trigger search with updated filters
+    encodeFiltersToUrl();
+    fetchProgramsData();
   }
 
   function initializeToggles() {
