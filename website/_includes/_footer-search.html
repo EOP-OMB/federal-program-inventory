@@ -1,5 +1,5 @@
 <script>
-  const apiBaseUrl = "http://localhost:8000/api";
+  const apiBaseUrl = "/api";
   let currentPage = 1;
   const pageSize = 10;
   let currentSort = { field: "obligations", order: "desc" };
@@ -86,7 +86,7 @@
       if (shouldUpdate) {
         encodeFiltersToUrl();
         await fetchProgramsData();
-        updateClearFilterButton(); // Add this line
+        updateClearFilterButton();
       }
     });
   }
@@ -540,13 +540,6 @@
             }
           });
         }
-
-        console.log("Processed filter arrays:", {
-          agencies: selectedAgencySubAgency,
-          categories: selectedCategorySubcategory,
-          assistance: selectedAssistanceTypes,
-          applicants: selectedApplicantTypes,
-        });
       }
     } catch (e) {
       console.error("Error decoding filters:", e);
@@ -1173,37 +1166,6 @@
       });
   }
 
-  // Add CSS for disabled checkboxes
-  //   const style = document.createElement("style");
-  //   style.textContent = `
-  //   input[type="checkbox"]:disabled + label {
-  //     opacity: 0.5;
-  //     cursor: not-allowed;
-  //     pointer-events: none;
-  //   }
-  //   .count {
-  //     color: #71767a;
-  //     font-weight: normal;
-  //   }
-  //   /* Hide the expand button when parent checkbox is disabled */
-  //   .usa-checkbox input:disabled ~ .toggle.expandable-button {
-  //     opacity: 0.5;
-  //     pointer-events: none;
-  //   }
-  //   /* Keep children container hidden when parent is disabled */
-  //   .usa-checkbox input:disabled ~ [id^="children-for-check"] {
-  //     display: none !important;
-  //   }
-  //   /* Prevent interaction with disabled checkboxes and their containers */
-  //   .usa-checkbox.disabled {
-  //     pointer-events: none;
-  //   }
-  //   .usa-checkbox input:disabled {
-  //     pointer-events: none;
-  //   }
-  // `;
-  //   document.head.appendChild(style);
-
   async function fetchProgramsData(keyword = currentQuery) {
     const requestBody = {
       query: keyword || "",
@@ -1218,7 +1180,7 @@
     };
 
     try {
-      const response = await fetch(`${apiBaseUrl}/search/programsTable`, {
+      const response = await fetch(`${apiBaseUrl}/api/search/programsTable`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1692,9 +1654,6 @@
     initializeSortButtons();
     initializeClearFiltersButton();
 
-    // captureInitialState();
-    // updateClearFilterButton();
-
     // Handle browser navigation
     window.addEventListener("popstate", async function () {
       console.log("Navigation occurred");
@@ -1704,9 +1663,7 @@
     });
 
     // // Initial load
-    // console.log("Starting initial load");
     try {
-      // Decode filters and fetch data
       decodeFiltersFromUrl();
       await fetchProgramsData();
       captureInitialState();
