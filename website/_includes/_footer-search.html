@@ -1,5 +1,5 @@
 <script>
-  const apiBaseUrl = "http://localhost:8000/api";
+  const apiBaseUrl = "/api";
   let currentPage = 1;
   const pageSize = 10;
   let currentSort = { field: "obligations", order: "desc" };
@@ -86,7 +86,7 @@
       if (shouldUpdate) {
         encodeFiltersToUrl();
         await fetchProgramsData();
-        updateClearFilterButton(); // Add this line
+        updateClearFilterButton();
       }
     });
   }
@@ -606,13 +606,6 @@
             }
           });
         }
-
-        console.log("Processed filter arrays:", {
-          agencies: selectedAgencySubAgency,
-          categories: selectedCategorySubcategory,
-          assistance: selectedAssistanceTypes,
-          applicants: selectedApplicantTypes,
-        });
       }
     } catch (e) {
       console.error("Error decoding filters:", e);
@@ -1258,7 +1251,7 @@
     };
 
     try {
-      const response = await fetch(`${apiBaseUrl}/search/programsTable`, {
+      const response = await fetch(`${apiBaseUrl}/api/search/programsTable`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1738,15 +1731,13 @@
 
     // Handle browser navigation
     window.addEventListener("popstate", async function () {
-      console.log("Navigation occurred");
       captureInitialState();
       decodeFiltersFromUrl();
       await fetchProgramsData();
       updateClearFilterButton();
     });
 
-    // // Initial load
-    // console.log("Starting initial load");
+    // Initial load
     try {
       // Decode filters and fetch data
       captureInitialState();
