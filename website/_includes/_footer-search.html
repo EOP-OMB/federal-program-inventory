@@ -448,8 +448,8 @@
     }
 
     // Restore sort state with default to obligations desc
-    const sortParam = params.get("s") || "od"; // Changed default to "od" (obligations desc)
-    currentSort.field = sortParam[0] === "t" ? "title" : "obligations"; // Changed logic
+    const sortParam = params.get("s") || "od";
+    currentSort.field = sortParam[0] === "t" ? "title" : "obligations";
     currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
 
