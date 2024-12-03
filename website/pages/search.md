@@ -1,20 +1,30 @@
 ---
 applicant_types:
+- title: Advisory Services and Counseling
 - title: Alaska Native and Native Hawaiian Serving Institutions
 - title: Anyone/general public
 - title: City or Township Government
 - title: County Government
+- title: Direct Loans
+- title: Direct Payments for a Specified Use
+- title: Direct Payments with Unrestricted Use
+- title: Dissemination of Technical Information
 - title: Federal
+- title: Federal Employment
 - title: Federally Recognized lndian Tribal Governments
 - title: For-Profit Organization (Other than Small Business)
+- title: Formula Grants
 - title: Government - General
+- title: Guaranteed / Insured Loans
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
 - title: Individual/Family
+- title: Insurance
 - title: Interstate
 - title: Intrastate
+- title: Investigation of Complaints
 - title: Local (includes State-designated lndian Tribes, excludes institutions of
     higher education and hospitals
 - title: Minority group
@@ -30,10 +40,13 @@ applicant_types:
 - title: Private nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Profit organization
+- title: Project Grants
+- title: Provision of Specialized Services
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
+- title: Sale, Exchange, or Donation of Property or Goods
 - title: Small business (less than 500 employees)
 - title: Special District Government
 - title: Specialized group (e.g. health professionals, students, veterans)
@@ -41,10 +54,12 @@ applicant_types:
 - title: State
 - title: State (includes District of Columbia, public institutions of higher education
     and hospitals)
+- title: Training
 - title: Tribally Controlled Colleges and Universities (TCCUs)
 - title: U.S. Territories and possessions
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
+- title: Use of Property, Facilities, or Equipment
 assistance_types:
 - title: Advisory Services and Counseling
 - title: Advisory Services on Compliance
@@ -53,14 +68,11 @@ assistance_types:
 - title: Direct Loans
 - title: Direct Payments for Specified Use
 - title: Direct Payments for Specified Use (Cooperative Agreements)
-- title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
-- title: Federal Employment
 - title: Formula Grants
 - title: Formula Grants (Apportionments)
 - title: Formula Grants (Cooperative Agreements)
-- title: Guaranteed / Insured Loans
 - title: Guaranteed/Insured Loans
 - title: Information
 - title: Insurance
@@ -85,10 +97,8 @@ assistance_types:
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
 - title: Sale, Exchange, or Donation of Property and Goods
-- title: Sale, Exchange, or Donation of Property or Goods
 - title: Training
 - title: Use of Property, Facilities, and Equipment
-- title: Use of Property, Facilities, or Equipment
 beneficiary_types:
 - title: Alcoholic
 - title: American Indian
@@ -178,7 +188,7 @@ categories:
   - title: Small Business
   - title: Special Technical Service
   - title: Statistics
-  title: Business And Commerce
+  title: Business and Commerce
 - sub_categories:
   - title: Construction, Renewal and Operations
   - title: Federal Surplus Property
@@ -206,7 +216,7 @@ categories:
   - title: Emergency Health Services
   - title: Emergency Preparedness, Civil Defense
   - title: Flood Prevention and Control
-  title: Disaster Prevention And Relief
+  title: Disaster Prevention and Relief
 - sub_categories:
   - title: Dental Education and Training
   - title: Educational Equipment and Resources
@@ -245,7 +255,7 @@ categories:
   - title: Planning, Research, and Demonstration
   - title: Program Development
   - title: Statistical
-  title: Employment Labor And Training
+  title: Employment, Labor, and Training
 - sub_categories:
   - title: Conservation
   - title: Education and Training
@@ -267,7 +277,7 @@ categories:
   - title: Food and Nutrition for Children
   - title: Food and Nutrition for Individual and Families
   - title: Research
-  title: Food And Nutrition
+  title: Food and Nutrition
 - sub_categories:
   - title: Alcoholism, Drug Abuse and Mental Health - General
   - title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
@@ -325,13 +335,13 @@ categories:
   - title: Training Assistance
   - title: Veterans Services
   - title: Youth Services
-  title: Income Security And Social Services
+  title: Income Security and Social Services
 - sub_categories:
   - title: Census Data
   - title: General
   - title: Libraries, Clearinghouses, Archives
   - title: Library of Congress
-  title: Information And Statistics
+  title: Information and Statistics
 - sub_categories:
   - title: Law Enforcement - Crime Analysis and Data
   - title: Law Enforcement - Narcotics and Dangerous Drugs
@@ -342,7 +352,7 @@ categories:
   - title: Legal Services - General Services
   - title: Legal Services - Housing Rights
   - title: Legal Services - Labor Management
-  title: Law Justice And Legal Services
+  title: Law, Justice and Legal Services
 - sub_categories:
   - title: Community Sewage Treatment Assistance
   - title: Community Water Supply Services
@@ -367,7 +377,7 @@ categories:
   - title: Information and Technical
   - title: Research - General
   - title: Research - Specialized
-  title: Science And Technology
+  title: Science and Technology
 - sub_categories:
   - title: Air Transportation
   - title: Highways, Public Roads, and Bridges
@@ -397,7 +407,6 @@ cfo_agencies:
   - title: Rural Housing Service
   - title: Rural Utilities Service
   - title: The Office of the Chief Economist
-  - title: U.S. CODEX OFFICE
   - title: USDA, OFFICE OF GENERAL COUNSEL
   title: Department of Agriculture
 - sub_categories:
@@ -410,66 +419,53 @@ cfo_agencies:
   - title: U.S. Census Bureau
   title: Department of Commerce
 - sub_categories:
-  - title: ACC-APG
+  - title: DEFENSE INTELLIGENCE AGENCY (DIA)
   - title: DEFENSE POW-MIA ACCOUNTING AGENCY (DPAA)
   - title: DEFENSE SECURITY COOPERATION AGENCY (DSCA)
   - title: Defense Advanced Research Projects Agency  (DARPA)
   - title: Defense Health Agency (DHA)
   - title: Defense Threat Reduction Agency (DTRA)
   - title: Department Of The Navy
-  - title: Department of Defense
   - title: Department of Defense Education Activity (DODEA)
   - title: Department of the Air Force
   - title: Department of the Army
   - title: Immediate Office of the Secretary of Defense
   - title: NATIONAL SECURITY AGENCY (NSA)
-  - title: ONR
   - title: Office of Local Defense Community Cooperation
   - title: Office of the Secretary of Defense
-  - title: SPAWAR
   - title: U.S. Army Corps of Engineers - Civil Program Financing Only
-  - title: USACE
-  - title: USMC
   - title: Uniformed Services University of the Health Sciences
-  - title: WASHINGTON HEADQUARTERS SERVICES
   - title: Washington Headquarters Services (WHS)
-  - title: Unspecified
   title: Department of Defense
 - sub_categories:
+  - title: Department of Education
   - title: Institute of Education Sciences
   - title: Office Of Career, Technical, And Adult Education
   - title: Office of Elementary and Secondary Education
   - title: Office of Federal Student Aid
   - title: Office of Human Resources and Administration
-  - title: Office of Postsecondary Education
   - title: Office of Special Education and Rehabilitative Services
-  - title: Unspecified
   title: Department of Education
 - sub_categories:
-  - title: AITO - ARTIFICIAL INTEL AND TECH
   - title: Department of Energy
   - title: NNSA
-  - title: Unspecified
   title: Department of Energy
 - sub_categories:
+  - title: ADMINISTRATION FOR STRATEGIC PREPAREDNESS AND RESPONSE
   - title: Administration for Children and Families
   - title: Administration for Community Living (ACL)
   - title: Agency for Healthcare Research and Quality
   - title: Centers for Disease Control and Prevention
   - title: Centers for Medicare and Medicaid Services
-  - title: Department of Health and Human Services
   - title: Food and Drug Administration
   - title: Health Resources and Services Administration
   - title: Indian Health Service
-  - title: NIH ADVANCED RESEARCH PROJECTS AGENCY FOR HEALTH (ARPA-H)
   - title: National Institutes of Health
   - title: Office Of The Assistant Secretary For Administration (ASA)
   - title: Office of Assistant Secretary for Health
-  - title: Office of Disease Prevention and Health Promotion
   - title: Office of the National Coordinator for Health Information Technology (ONC)
   - title: Office of the Secretary
   - title: Substance Abuse and Mental Health Services Administration
-  - title: Unspecified
   title: Department of Health and Human Services
 - sub_categories:
   - title: Citizenship & Immigration Services
@@ -480,7 +476,6 @@ cfo_agencies:
   - title: Science and Technology
   - title: United States Coast Guard (USCG)
   - title: United States Secret Service (USSS)
-  - title: Unspecified
   title: Department of Homeland Security
 - sub_categories:
   - title: Assistant Secretary for Community Planning and Development
@@ -492,14 +487,11 @@ cfo_agencies:
   - title: Office of Lead Hazard Control and Healthy Homes
   title: Department of Housing and Urban Development
 - sub_categories:
+  - title: Boards and Divisions Offices
   - title: Bureau of Prisons
-  - title: Criminal Division
-  - title: Department of Justice
   - title: Drug Enforcement Administration
   - title: Federal Bureau of Investigation
-  - title: Office of Community Oriented Policing Services
   - title: Office of Justice Programs
-  - title: Unspecified
   title: Department of Justice
 - sub_categories:
   - title: Bureau of International Labor Affairs
@@ -514,34 +506,17 @@ cfo_agencies:
   - title: Womens Bureau
   title: Department of Labor
 - sub_categories:
-  - title: Bureau of African Affairs
-  - title: Bureau of Conflict and Stabilization Operations
-  - title: 'Bureau of Counterterrorism '
-  - title: Bureau of Democracy, Human Rights and Labor
-  - title: Bureau of East Asian and  Pacific Affairs
   - title: Bureau of Economic and Business Affairs
-  - title: Bureau of Educational and Cultural Affairs
-  - title: 'Bureau of Energy Resources '
-  - title: Bureau of European and Eurasian Affairs
-  - title: Bureau of Intelligence and Research
   - title: Bureau of International Security and Nonproliferation
-  - title: Bureau of Near Eastern Affairs
-  - title: Bureau of Oceans and International Environmental and Scientific Affairs
-  - title: Bureau of Population, Refugees, and Migration
-  - title: Bureau of Western Hemisphere Affairs
   - title: Department of State
-  - title: International Narcotics and Law Enforcement Affairs
   - title: Office of Overseas Schools
   - title: Office of U.S. Global Aids Coordinator
   - title: Office of the Coordinator for Cyber Issues
   - title: Office of the Coordinator of U.S. Assistance to Europe and Eurasia
-  - title: Office of the Secretary of State
   - title: Office to Monitor and Combat Trafficking in Persons
   - title: Political Military Affairs/ Weapons Removal and Abatement
   - title: Secretary's Office of Global Women's Issues
   - title: U.S. Permanent Mission to the Organization of American States
-  - title: 'Under Secretary for Public Diplomacy and Public Affairs '
-  - title: Unspecified
   title: Department of State
 - sub_categories:
   - title: Federal Aviation Administration (FAA)
@@ -561,15 +536,12 @@ cfo_agencies:
   - title: Under Secretary for Benefits / Veterans Benefits Administation
   - title: VA Health Administration Center
   - title: Veterans Benefits Administration
-  - title: Unspecified
   title: Department of Veterans Affairs
 - sub_categories:
-  - title: ALASKA SUBSISTENCE MANAGEMENT
   - title: Bureau of Indian Education
   - title: Bureau of Land Management
   - title: Bureau of Reclamation
   - title: Bureau of Safety and Environmental Enforcement
-  - title: Department of the Interior
   - title: Departmental Offices
   - title: Fish and Wildlife Service
   - title: National Park Service
@@ -577,13 +549,11 @@ cfo_agencies:
   - title: Office of Surface Mining
   - title: The Bureau of Ocean Energy Management, Regulation, and Enforcement
   - title: U. S. Geological Survey
-  - title: Unspecified
   title: Department of the Interior
 - sub_categories:
   - title: Community Development Financial Institutions Fund
   - title: Departmental Offices
   - title: Internal Revenue Service (IRS)
-  - title: Unspecified
   title: Department of the Treasury
 - title: Environmental Protection Agency
 - title: General Services Administration
@@ -604,24 +574,20 @@ other_agencies:
 - title: Delta Regional Authority
 - sub_categories:
   - title: Denali Commission
-  - title: Unspecified
   title: Denali Commission
 - title: Equal Employment Opportunity Commission
 - sub_categories:
   - title: Executive Office of the President
-  - title: Unspecified
   title: Executive Office of the President
 - title: Export - Import Bank of the United States
 - sub_categories:
   - title: Federal Communications Commission
-  - title: Unspecified
   title: Federal Communications Commission
 - title: Federal Financial Institutions Examination Council Appraisal Subcommittee
 - title: Federal Permitting Improvement Steering Council
 - title: Gulf Coast Ecosystem Restoration Council
 - sub_categories:
   - title: Inter-American Foundation
-  - title: Unspecified
   title: Inter-American Foundation
 - title: Japan-U.S. Friendship Commission
 - sub_categories:
@@ -642,7 +608,6 @@ other_agencies:
 - title: Southeast Crescent Regional Commission
 - sub_categories:
   - title: The Institute of Museum and Library Services
-  - title: Unspecified
   title: The Institute of Museum and Library Services
 - title: U.S. Agency for Global Media
 - title: U.S. Election Assistance Commission
