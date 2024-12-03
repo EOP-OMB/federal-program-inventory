@@ -29,7 +29,37 @@ def get_obligations_data(cursor, program_id, fiscal_years):
             'usa_spending_actual': 0.0
         }
 
-        # Get USA spending obligations - now with aggregation, excluding negative numbers
+        # Check if we have actual data first
+        cursor.execute("""
+            SELECT SUM(amount) as actual_amount
+            FROM program_sam_spending
+            WHERE program_id = ? 
+            AND fiscal_year = ? 
+            AND is_actual = 1
+            GROUP BY fiscal_year
+        """, (program_id, year))
+        
+        actual_row = cursor.fetchone()
+        
+        if actual_row and actual_row['actual_amount']:
+            # If we have actual data, use that and ignore estimates
+            year_data['sam_actual'] = float(actual_row['actual_amount'])
+        else:
+            # Only if we don't have actual data, check for estimates
+            cursor.execute("""
+                SELECT SUM(amount) as estimated_amount
+                FROM program_sam_spending
+                WHERE program_id = ? 
+                AND fiscal_year = ? 
+                AND is_actual = 0
+                GROUP BY fiscal_year
+            """, (program_id, year))
+            
+            estimate_row = cursor.fetchone()
+            if estimate_row and estimate_row['estimated_amount']:
+                year_data['sam_estimate'] = float(estimate_row['estimated_amount'])
+
+        # Get USA spending obligations for reference
         cursor.execute("""
             SELECT ROUND(SUM(obligations), 2) as total_obligations 
             FROM usaspending_assistance_obligation_aggregation
@@ -41,58 +71,56 @@ def get_obligations_data(cursor, program_id, fiscal_years):
         if usa_row and usa_row['total_obligations'] is not None:
             year_data['usa_spending_actual'] = float(usa_row['total_obligations'])
 
-        # Get SAM spending data and order by is_actual
-        cursor.execute("""
-            SELECT fiscal_year, assistance_type, amount, is_actual
-            FROM program_sam_spending
-            WHERE program_id = ? AND fiscal_year = ?
-            ORDER BY is_actual DESC
-        """, (program_id, year))
-
-        sam_rows = cursor.fetchall()
-        
-        # Only set sam_estimate if we don't have actual
-        if sam_rows:
-            if sam_rows[0]['is_actual'] == 1:
-                year_data['sam_actual'] = float(sam_rows[0]['amount'])
-            else:
-                year_data['sam_estimate'] = float(sam_rows[0]['amount'])
-
         obligations.append(year_data)
+    
     return obligations
 
 def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_year: str) -> List[Dict[str, Any]]:
-    """Generate list of agencies with program counts and obligations for a set of programs."""
+    """
+    Generate list of agencies with program counts and obligations for a set of programs.
+    Uses SAM spending data for obligations calculations.
+    """
+    if not program_ids:
+        return []
+        
     cursor.execute("""
-        WITH program_totals AS (
-            SELECT 
-                a1.agency_name as agency_title,
-                COUNT(DISTINCT p.id) as program_count,
-                COALESCE(SUM(CASE 
-                    WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
-                    THEN ps.amount 
-                    ELSE 0 
-                END), 0) as total_obs
-            FROM program p
-            LEFT JOIN agency a ON p.agency_id = a.id
-            LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
-            WHERE p.id IN ({})
-            GROUP BY a1.agency_name
-            HAVING program_count > 0
-        )
         SELECT 
-            agency_title as title,
-            program_count as total_num_programs,
-            ROUND(total_obs, 0) as total_obs
-        FROM program_totals
-        ORDER BY total_obs DESC
+            a1.agency_name as title,
+            COUNT(DISTINCT p.id) as total_num_programs,
+            COALESCE(SUM(CASE 
+                WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
+                THEN ps.amount 
+                ELSE 0 
+            END), 0) as total_obs
+        FROM program p
+        LEFT JOIN agency a ON p.agency_id = a.id
+        LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
+        LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
+        WHERE p.id IN ({})
+        GROUP BY a1.agency_name
+        HAVING 
+            a1.agency_name IS NOT NULL 
+            AND total_num_programs > 0
+        ORDER BY total_obs DESC, title
     """.format(','.join('?' * len(program_ids))), [fiscal_year] + program_ids)
     
-    return [dict(row) for row in cursor.fetchall()]
+    agencies = []
+    for row in cursor.fetchall():
+        agencies.append({
+            'title': row['title'] or 'Unspecified',
+            'total_num_programs': row['total_num_programs'],
+            'total_obs': float(row['total_obs'])
+        })
+    
+    return agencies
 
 def generate_applicant_type_list(cursor: sqlite3.Cursor, program_ids: List[str]) -> List[Dict[str, Any]]:
-    """Generate list of applicant types with program counts for a set of programs."""
+    """
+    Generate list of applicant types with program counts for a set of programs.
+    """
+    if not program_ids:
+        return []
+        
     cursor.execute("""
         SELECT 
             c.name as title,
@@ -102,63 +130,206 @@ def generate_applicant_type_list(cursor: sqlite3.Cursor, program_ids: List[str])
         WHERE ptc.category_type = 'applicant'
         AND ptc.program_id IN ({})
         GROUP BY c.name
-        HAVING total_num_programs > 0
-        ORDER BY total_num_programs DESC
+        HAVING 
+            c.name IS NOT NULL 
+            AND total_num_programs > 0
+        ORDER BY total_num_programs DESC, title
     """.format(','.join('?' * len(program_ids))), program_ids)
     
-    return [dict(row) for row in cursor.fetchall()]
+    applicant_types = []
+    for row in cursor.fetchall():
+        applicant_types.append({
+            'title': row['title'],
+            'total_num_programs': row['total_num_programs']
+        })
+    
+    return applicant_types
 
 def convert_to_url_string(s: str) -> str:
     """Convert a string to URL-friendly format."""
     return str(''.join(c if c.isalnum() else '-' for c in s.lower()))
 
+# def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
+#     """Generate markdown files for categories."""
+#     ensure_directory_exists(output_dir)
+    
+#     # Get all parent categories
+#     cursor.execute("""
+#         SELECT DISTINCT 
+#             c.parent_id as id,
+#             c.parent_id as title
+#         FROM category c
+#         WHERE c.type = 'category'
+#         AND c.parent_id IS NOT NULL
+#     """)
+    
+#     parent_categories = cursor.fetchall()
+#     for parent in parent_categories:
+#         # Get all programs in this category (including subcategories)
+#         cursor.execute("""
+#             SELECT DISTINCT p.id
+#             FROM program p
+#             JOIN program_to_category ptc ON p.id = ptc.program_id
+#             JOIN category c ON ptc.category_id = c.id
+#             WHERE c.parent_id = ?
+#             AND ptc.category_type = 'category'
+#         """, (parent['id'],))
+        
+#         program_ids = [row['id'] for row in cursor.fetchall()]
+#         if not program_ids:
+#             continue
+            
+#         # Get subcategories with their stats
+#         cursor.execute("""
+#             SELECT 
+#                 c.name as title,
+#                 COUNT(DISTINCT ptc.program_id) as total_num_programs,
+#                 COALESCE(SUM(CASE 
+#                     WHEN uaoa.action_date_fiscal_year = ? 
+#                     THEN uaoa.obligations 
+#                     ELSE 0 
+#                 END), 0) as total_obs
+#             FROM category c
+#             JOIN program_to_category ptc ON c.id = ptc.category_id
+#             LEFT JOIN usaspending_assistance_obligation_aggregation uaoa 
+#                 ON ptc.program_id = uaoa.cfda_number
+#             WHERE c.parent_id = ?
+#             AND ptc.category_type = 'category'
+#             GROUP BY c.name
+#             HAVING total_num_programs > 0
+#         """, (fiscal_year, parent['id']))
+        
+#         subcats = [dict(row) for row in cursor.fetchall()]
+        
+#         # Calculate category totals
+#         cursor.execute("""
+#             SELECT 
+#                 COUNT(DISTINCT p.id) as total_num_programs,
+#                 COALESCE(SUM(CASE 
+#                     WHEN uaoa.action_date_fiscal_year = ? 
+#                     THEN uaoa.obligations
+#                     ELSE 0 
+#                 END), 0) as total_obs,
+#                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
+#                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
+#             FROM program p
+#             JOIN program_to_category ptc ON p.id = ptc.program_id
+#             JOIN category c ON ptc.category_id = c.id
+#             LEFT JOIN usaspending_assistance_obligation_aggregation uaoa 
+#                 ON p.id = uaoa.cfda_number
+#             LEFT JOIN agency a ON p.agency_id = a.id
+#             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
+#             LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id 
+#                 AND ptc_app.category_type = 'applicant'
+#             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
+#             WHERE c.parent_id = ?
+#             AND ptc.category_type = 'category'
+#         """, (fiscal_year, parent['id']))
+        
+#         totals = cursor.fetchone()
+        
+#         # Create category data
+#         display_title = ' '.join(word.capitalize() for word in parent['title'].replace('-', ' ').split())
+#         category_data = {
+#             'title': display_title,
+#             'permalink': f"/category/{convert_to_url_string(display_title)}",
+#             'fiscal_year': fiscal_year,
+#             'total_num_programs': totals['total_num_programs'],
+#             'total_num_sub_cats': len(subcats),
+#             'total_num_agencies': totals['total_num_agencies'],
+#             'total_num_applicant_types': totals['total_num_applicant_types'],
+#             'total_obs': float(totals['total_obs']),
+#             'sub_cats': json.dumps([{
+#                 'title': sub['title'],
+#                 'permalink': f"/category/{convert_to_url_string(display_title)}/{convert_to_url_string(sub['title'])}",
+#                 'total_num_programs': sub['total_num_programs'],
+#                 'total_obs': float(sub['total_obs'])
+#             } for sub in subcats], separators=(',', ':')),
+#             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
+#             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':'))
+#         }
+        
+#         # Write category markdown file
+#         file_path = os.path.join(output_dir, f"{convert_to_url_string(display_title)}.md")
+#         with open(file_path, 'w', encoding='utf-8') as file:
+#             file.write('---\n')
+#             yaml.dump(category_data, file, allow_unicode=True)
+#             file.write('---\n')
+        
+#         print(f"Created category markdown file for {display_title}")
+
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for categories."""
+    """Generate markdown files for categories with correct obligation calculations."""
     ensure_directory_exists(output_dir)
     
-    # Get all parent categories
+    # Get all parent categories with at least one program
     cursor.execute("""
+        WITH program_counts AS (
+            SELECT 
+                c.parent_id,
+                COUNT(DISTINCT p.id) as program_count
+            FROM category c
+            JOIN program_to_category ptc ON c.id = ptc.category_id
+            JOIN program p ON ptc.program_id = p.id
+            WHERE c.type = 'category'
+            AND ptc.category_type = 'category'
+            AND c.parent_id IS NOT NULL
+            GROUP BY c.parent_id
+            HAVING program_count > 0
+        )
         SELECT DISTINCT 
             c.parent_id as id,
             c.parent_id as title
         FROM category c
-        WHERE c.type = 'category'
-        AND c.parent_id IS NOT NULL
+        JOIN program_counts pc ON c.parent_id = pc.parent_id
     """)
     
     parent_categories = cursor.fetchall()
     for parent in parent_categories:
-        # Get all programs in this category (including subcategories)
+        # Get all programs in this category and their SAM obligations
         cursor.execute("""
-            SELECT DISTINCT p.id
-            FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id
-            WHERE c.parent_id = ?
-            AND ptc.category_type = 'category'
-        """, (parent['id'],))
-        
-        program_ids = [row['id'] for row in cursor.fetchall()]
-        if not program_ids:
-            continue
-            
-        # Get subcategories with their stats
-        cursor.execute("""
-            SELECT 
-                c.name as title,
-                COUNT(DISTINCT ptc.program_id) as total_num_programs,
+            SELECT DISTINCT 
+                p.id,
                 COALESCE(SUM(CASE 
                     WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
                     THEN ps.amount 
                     ELSE 0 
-                END), 0) as total_obs
+                END), 0) as total_obligations
+            FROM program p
+            JOIN program_to_category ptc ON p.id = ptc.program_id
+            JOIN category c ON ptc.category_id = c.id
+            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
+            WHERE c.parent_id = ?
+            AND ptc.category_type = 'category'
+            GROUP BY p.id
+        """, (fiscal_year, parent['id']))
+        
+        program_data = cursor.fetchall()
+        if not program_data:
+            continue
+            
+        program_ids = [row['id'] for row in program_data]
+        total_category_obs = sum(float(row['total_obligations']) for row in program_data)
+            
+        # Get subcategories with their stats using SAM actual obligations
+        cursor.execute("""
+            SELECT 
+                c.name as title,
+                COUNT(DISTINCT p.id) as program_count,
+                COALESCE(SUM(CASE 
+                    WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
+                    THEN ps.amount 
+                    ELSE 0 
+                END), 0) as total_obligations
             FROM category c
             JOIN program_to_category ptc ON c.id = ptc.category_id
-            LEFT JOIN program_sam_spending ps ON ptc.program_id = ps.program_id
+            JOIN program p ON ptc.program_id = p.id
+            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
             WHERE c.parent_id = ?
             AND ptc.category_type = 'category'
             GROUP BY c.name
-            HAVING total_num_programs > 0
+            HAVING program_count > 0
+            ORDER BY total_obligations DESC
         """, (fiscal_year, parent['id']))
         
         subcats = [dict(row) for row in cursor.fetchall()]
@@ -167,24 +338,19 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         cursor.execute("""
             SELECT 
                 COUNT(DISTINCT p.id) as total_num_programs,
-                COALESCE(SUM(CASE 
-                    WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
-                    THEN ps.amount 
-                    ELSE 0 
-                END), 0) as total_obs,
                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
             FROM program p
             JOIN program_to_category ptc ON p.id = ptc.program_id
             JOIN category c ON ptc.category_id = c.id
-            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id AND ptc_app.category_type = 'applicant'
+            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id 
+                AND ptc_app.category_type = 'applicant'
             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
             WHERE c.parent_id = ?
             AND ptc.category_type = 'category'
-        """, (fiscal_year, parent['id']))
+        """, (parent['id'],))
         
         totals = cursor.fetchone()
         
@@ -198,12 +364,12 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             'total_num_sub_cats': len(subcats),
             'total_num_agencies': totals['total_num_agencies'],
             'total_num_applicant_types': totals['total_num_applicant_types'],
-            'total_obs': float(totals['total_obs']),
+            'total_obs': total_category_obs,
             'sub_cats': json.dumps([{
                 'title': sub['title'],
                 'permalink': f"/category/{convert_to_url_string(display_title)}/{convert_to_url_string(sub['title'])}",
-                'total_num_programs': sub['total_num_programs'],
-                'total_obs': float(sub['total_obs'])
+                'total_num_programs': sub['program_count'],
+                'total_obs': float(sub['total_obligations'])
             } for sub in subcats], separators=(',', ':')),
             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':'))
@@ -215,15 +381,132 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             file.write('---\n')
             yaml.dump(category_data, file, allow_unicode=True)
             file.write('---\n')
+
+# def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
+#     """Generate markdown files for subcategories."""
+#     ensure_directory_exists(output_dir)
+    
+#     # Get all subcategories
+#     cursor.execute("""
+#         SELECT DISTINCT 
+#             c.id,
+#             c.name as title,
+#             c.parent_id,
+#             pc.name as parent_title
+#         FROM category c
+#         JOIN category pc ON c.parent_id = pc.id
+#         WHERE c.type = 'category'
+#         AND c.parent_id IS NOT NULL
+#     """)
+    
+#     subcategories = cursor.fetchall()
+#     for subcat in subcategories:
+#         # Get all programs in this subcategory with USA Spending obligations
+#         cursor.execute("""
+#             SELECT DISTINCT 
+#                 p.id,
+#                 p.name as title,
+#                 p.popular_name,
+#                 a1.agency_name as agency_name,
+#                 COALESCE(
+#                     (SELECT ROUND(SUM(obligations), 2)
+#                      FROM usaspending_assistance_obligation_aggregation uaoa
+#                      WHERE uaoa.cfda_number = p.id 
+#                      AND uaoa.action_date_fiscal_year = ?
+#                      GROUP BY cfda_number), 
+#                 0) as total_obs
+#             FROM program p
+#             JOIN program_to_category ptc ON p.id = ptc.program_id
+#             LEFT JOIN agency a ON p.agency_id = a.id
+#             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
+#             WHERE ptc.category_id = ?
+#             AND ptc.category_type = 'category'
+#         """, (fiscal_year, subcat['id']))
         
-        print(f"Created category markdown file for {display_title}")
+#         programs = cursor.fetchall()
+#         if not programs:
+#             continue
+        
+#         program_ids = [p['id'] for p in programs]
+        
+#         # Calculate subcategory totals with USA Spending obligations
+#         cursor.execute("""
+#             SELECT 
+#                 COUNT(DISTINCT p.id) as total_num_programs,
+#                 COALESCE(SUM(CASE 
+#                     WHEN uaoa.action_date_fiscal_year = ? 
+#                     THEN uaoa.obligations 
+#                     ELSE 0 
+#                 END), 0) as total_obs,
+#                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
+#                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
+#             FROM program p
+#             JOIN program_to_category ptc ON p.id = ptc.program_id
+#             LEFT JOIN usaspending_assistance_obligation_aggregation uaoa 
+#                 ON p.id = uaoa.cfda_number
+#             LEFT JOIN agency a ON p.agency_id = a.id
+#             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
+#             LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id 
+#                 AND ptc_app.category_type = 'applicant'
+#             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
+#             WHERE ptc.category_id = ?
+#             AND ptc.category_type = 'category'
+#         """, (fiscal_year, subcat['id']))
+        
+#         totals = cursor.fetchone()
+
+#         # Create subcategory data
+#         parent_title = ' '.join(word.capitalize() for word in subcat['parent_title'].replace('-', ' ').split())
+#         subcategory_data = {
+#             'title': subcat['title'],
+#             'permalink': f"/category/{convert_to_url_string(parent_title)}/{convert_to_url_string(subcat['title'])}",
+#             'parent_title': parent_title,
+#             'parent_permalink': f"/category/{convert_to_url_string(parent_title)}",
+#             'fiscal_year': fiscal_year,
+#             'total_num_programs': totals['total_num_programs'],
+#             'total_num_agencies': totals['total_num_agencies'],
+#             'total_num_applicant_types': totals['total_num_applicant_types'],
+#             'total_obs': float(totals['total_obs']),
+#             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
+#             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':')),
+#             'programs': json.dumps([{
+#                 'permalink': f"/program/{p['id']}",
+#                 'title': p['title'],
+#                 'popular_name': p['popular_name'],
+#                 'agency': p['agency_name'] or 'Unspecified',
+#                 'total_obs': float(p['total_obs'])
+#             } for p in programs], separators=(',', ':'))
+#         }
+        
+#         # Write subcategory markdown file
+#         file_path = os.path.join(output_dir, 
+#             f"{convert_to_url_string(parent_title)}---{convert_to_url_string(subcat['title'])}.md")
+#         with open(file_path, 'w', encoding='utf-8') as file:
+#             file.write('---\n')
+#             yaml.dump(subcategory_data, file, allow_unicode=True)
+#             file.write('---\n')
+        
+#         print(f"Created subcategory markdown file for {subcat['title']}")
 
 def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for subcategories."""
+    """Generate markdown files for subcategories with correct obligation calculations."""
     ensure_directory_exists(output_dir)
     
-    # Get all subcategories
+    # Get all subcategories that have at least one program
     cursor.execute("""
+        WITH subcategory_programs AS (
+            SELECT 
+                c.id,
+                COUNT(DISTINCT p.id) as program_count
+            FROM category c
+            JOIN program_to_category ptc ON c.id = ptc.category_id
+            JOIN program p ON ptc.program_id = p.id
+            WHERE c.type = 'category'
+            AND ptc.category_type = 'category'
+            AND c.parent_id IS NOT NULL
+            GROUP BY c.id
+            HAVING program_count > 0
+        )
         SELECT DISTINCT 
             c.id,
             c.name as title,
@@ -231,29 +514,31 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             pc.name as parent_title
         FROM category c
         JOIN category pc ON c.parent_id = pc.id
-        WHERE c.type = 'category'
-        AND c.parent_id IS NOT NULL
+        JOIN subcategory_programs sp ON c.id = sp.id
     """)
     
     subcategories = cursor.fetchall()
     for subcat in subcategories:
-        # Get all programs in this subcategory
+        # Get all programs with their SAM obligations
         cursor.execute("""
             SELECT DISTINCT 
                 p.id,
                 p.name as title,
                 p.popular_name,
                 a1.agency_name as agency_name,
-                COALESCE(ps.amount, 0) as total_obs
+                COALESCE(SUM(CASE 
+                    WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
+                    THEN ps.amount 
+                    ELSE 0 
+                END), 0) as total_obs
             FROM program p
             JOIN program_to_category ptc ON p.id = ptc.program_id
+            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id 
-                AND ps.fiscal_year = ? 
-                AND ps.is_actual = 1
             WHERE ptc.category_id = ?
             AND ptc.category_type = 'category'
+            GROUP BY p.id, p.name, p.popular_name, a1.agency_name
         """, (fiscal_year, subcat['id']))
         
         programs = cursor.fetchall()
@@ -261,28 +546,24 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             continue
         
         program_ids = [p['id'] for p in programs]
+        total_subcategory_obs = sum(float(p['total_obs']) for p in programs)
         
-        # Calculate subcategory totals including agency and applicant type counts
+        # Calculate subcategory totals
         cursor.execute("""
             SELECT 
                 COUNT(DISTINCT p.id) as total_num_programs,
-                COALESCE(SUM(CASE 
-                    WHEN ps.fiscal_year = ? AND ps.is_actual = 1 
-                    THEN ps.amount 
-                    ELSE 0 
-                END), 0) as total_obs,
                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
             FROM program p
             JOIN program_to_category ptc ON p.id = ptc.program_id
-            LEFT JOIN program_sam_spending ps ON p.id = ps.program_id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id AND ptc_app.category_type = 'applicant'
+            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id 
+                AND ptc_app.category_type = 'applicant'
             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
             WHERE ptc.category_id = ?
             AND ptc.category_type = 'category'
-        """, (fiscal_year, subcat['id']))
+        """, (subcat['id'],))
         
         totals = cursor.fetchone()
         
@@ -297,7 +578,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             'total_num_programs': totals['total_num_programs'],
             'total_num_agencies': totals['total_num_agencies'],
             'total_num_applicant_types': totals['total_num_applicant_types'],
-            'total_obs': float(totals['total_obs']),
+            'total_obs': total_subcategory_obs,
             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':')),
             'programs': json.dumps([{
@@ -316,8 +597,6 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             file.write('---\n')
             yaml.dump(subcategory_data, file, allow_unicode=True)
             file.write('---\n')
-        
-        print(f"Created subcategory markdown file for {subcat['title']}")
 
 def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> List[Dict[str, Any]]:
     """
@@ -430,6 +709,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
     print("Completed program object creation")
 
     return programs_data
+
 
 def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     """
@@ -691,24 +971,15 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     programs_json = []
     
     for program in programs_data:
-        # Get the current fiscal year's obligation amount
+        # Get the current fiscal year's obligation amount - now using sam_actual
         current_year_obligation = next(
-            (obl['sam_actual'] or obl['sam_estimate'] or 0 
-             for obl in program['obligations'] 
-             if obl['x'] == fiscal_year), 
+            (obl['sam_actual']
+            for obl in program['obligations'] 
+            if obl['x'] == fiscal_year), 
             0
         )
         
-        # Format categories with parent-child relationship
-        categories = []
-        for cat in program['categories']:
-            parts = cat.split(' - ', 1)
-            if len(parts) == 2:
-                categories.append({
-                    'title': parts[0],
-                    'subCategory': {'title': parts[1]}
-                })
-        
+        # Rest of the function remains the same...
         program_json = {
             'cfda': program['id'],
             'title': program['name'],
@@ -724,7 +995,10 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             },
             'assistanceTypes': program['assistance_types'],
             'applicantTypes': program['applicant_types'],
-            'categories': categories
+            'categories': [{
+                'title': cat.split(' - ')[0],
+                'subCategory': {'title': cat.split(' - ')[1]}
+            } for cat in program['categories'] if ' - ' in cat]
         }
         
         programs_json.append(program_json)
@@ -735,8 +1009,6 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as file:
         json.dump(programs_json, file, separators=(',', ':'))
-    
-    print(f"Successfully generated programs table JSON with {len(programs_json)} programs")
 
 def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str, Any]], 
                          output_path: str, fiscal_year: str):
@@ -753,30 +1025,48 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
     # Calculate totals and category stats
     category_stats = {}
     total_programs = len(programs_data)
-    total_obs = sum(
-        obl['sam_actual'] or obl['sam_estimate'] or 0 
-        for prog in programs_data 
-        for obl in prog['obligations'] 
-        if obl['x'] == fiscal_year
-    )
+    
+    # Get total obligations across all programs using SAM data
+    cursor.execute("""
+        SELECT COALESCE(SUM(CASE WHEN is_actual = 1 THEN amount ELSE 0 END), 0) as total_obs
+        FROM program_sam_spending
+        WHERE fiscal_year = ?
+    """, (fiscal_year,))
+    total_obs = float(cursor.fetchone()['total_obs'])
     
     for category in categories:
-        category_programs = [
-            p for p in programs_data 
-            if any(c.startswith(category + ' - ') for c in p['categories'])
-        ]
+        # Get programs for this category
+        program_ids_query = """
+            SELECT DISTINCT p.id
+            FROM program p
+            JOIN program_to_category ptc ON p.id = ptc.program_id
+            JOIN category c ON ptc.category_id = c.id
+            WHERE c.parent_id = (
+                SELECT id FROM category WHERE name = ?
+            )
+            AND ptc.category_type = 'category'
+        """
+        cursor.execute(program_ids_query, (category,))
+        program_ids = [row['id'] for row in cursor.fetchall()]
         
-        category_stats[category] = {
-            'title': category,
-            'total_num_programs': len(category_programs),
-            'total_obs': sum(
-                obl['sam_actual'] or obl['sam_estimate'] or 0 
-                for prog in category_programs 
-                for obl in prog['obligations'] 
-                if obl['x'] == fiscal_year
-            ),
-            'permalink': f"/category/{convert_to_url_string(category)}"
-        }
+        if program_ids:
+            # Calculate category obligations using SAM data
+            cursor.execute("""
+                SELECT 
+                    COUNT(DISTINCT ps.program_id) as total_num_programs,
+                    COALESCE(SUM(CASE WHEN is_actual = 1 THEN amount ELSE 0 END), 0) as total_obs
+                FROM program_sam_spending ps
+                WHERE ps.fiscal_year = ?
+                AND ps.program_id IN ({})
+            """.format(','.join('?' * len(program_ids))), [fiscal_year] + program_ids)
+            
+            stats = cursor.fetchone()
+            category_stats[category] = {
+                'title': category,
+                'total_num_programs': stats['total_num_programs'],
+                'total_obs': float(stats['total_obs']),
+                'permalink': f"/category/{convert_to_url_string(category)}"
+            }
     
     # Prepare categories list and JSON
     categories_list = [{
@@ -807,8 +1097,6 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         file.write('---\n')
         yaml.dump(category_page, file, allow_unicode=True)
         file.write('---\n')
-    
-    print(f"Successfully generated category page")
 
 def generate_program_csv(output_path: str, programs_data: List[Dict[str, Any]], fiscal_years: list[str]):
     """Generate CSV file containing all program data using pre-generated data."""
