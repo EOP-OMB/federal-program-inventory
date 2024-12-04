@@ -285,12 +285,23 @@
           const childrenContainer = document.getElementById(childrenId);
           if (childrenContainer) {
             const children = childrenContainer.querySelectorAll(
-              'input[data-filter-type="sub-agency"]'
+              'input[data-filter-type="sub-agency"]:not(:disabled)'
             );
-            const allChecked = Array.from(children).every(
+            const checkedChildren = Array.from(children).filter(
               (child) => child.checked
             );
-            parentCheckbox.checked = allChecked && children.length > 0;
+
+            // Set indeterminate and checked states
+            if (checkedChildren.length === 0) {
+              parentCheckbox.checked = false;
+              parentCheckbox.indeterminate = false;
+            } else if (checkedChildren.length === children.length) {
+              parentCheckbox.checked = true;
+              parentCheckbox.indeterminate = false;
+            } else {
+              parentCheckbox.checked = false;
+              parentCheckbox.indeterminate = true;
+            }
           }
         }
       });
@@ -304,12 +315,23 @@
           const childrenContainer = document.getElementById(childrenId);
           if (childrenContainer) {
             const children = childrenContainer.querySelectorAll(
-              'input[data-filter-type="sub-category"]'
+              'input[data-filter-type="sub-category"]:not(:disabled)'
             );
-            const allChecked = Array.from(children).every(
+            const checkedChildren = Array.from(children).filter(
               (child) => child.checked
             );
-            parentCheckbox.checked = allChecked && children.length > 0;
+
+            // Set indeterminate and checked states
+            if (checkedChildren.length === 0) {
+              parentCheckbox.checked = false;
+              parentCheckbox.indeterminate = false;
+            } else if (checkedChildren.length === children.length) {
+              parentCheckbox.checked = true;
+              parentCheckbox.indeterminate = false;
+            } else {
+              parentCheckbox.checked = false;
+              parentCheckbox.indeterminate = true;
+            }
           }
         }
       });
@@ -483,13 +505,19 @@
               const childTitle = mapping[childCode];
               if (parentTitle && childTitle) {
                 selectedAgencySubAgency.push(`${parentTitle} - ${childTitle}`);
+                // Check the checkbox
+                const childCheckbox = document.querySelector(
+                  `input[data-filter-type="sub-agency"][data-agency-title="${parentTitle}"][data-subagency-title="${childTitle}"]`
+                );
+                if (childCheckbox) {
+                  childCheckbox.checked = true;
+                }
               }
             } else if (code.startsWith("p")) {
               // Handle parent agency
               const agencyCode = code.slice(1).replace("*", "");
               const agencyTitle = mapping[agencyCode];
               if (agencyTitle) {
-                // Add the parent agency title
                 selectedAgencySubAgency.push(agencyTitle);
 
                 // Find and check the parent checkbox
@@ -499,7 +527,7 @@
                 if (parentCheckbox) {
                   parentCheckbox.checked = true;
 
-                  // Also check all enabled child checkboxes if it's a parent selection
+                  // Check all enabled child checkboxes if it's a parent selection
                   const childrenId =
                     parentCheckbox.getAttribute("data-children-id");
                   if (childrenId && code.endsWith("*")) {
@@ -528,7 +556,7 @@
           });
         }
 
-        // Process categories - similar logic as agencies
+        // Process categories
         if (decodedData.c && Array.isArray(decodedData.c)) {
           decodedData.c.forEach((code) => {
             if (!code) return;
@@ -542,13 +570,19 @@
                 selectedCategorySubcategory.push(
                   `${parentTitle} - ${childTitle}`
                 );
+                // Check the checkbox
+                const childCheckbox = document.querySelector(
+                  `input[data-filter-type="sub-category"][data-category-title="${parentTitle}"][data-subcategory-title="${childTitle}"]`
+                );
+                if (childCheckbox) {
+                  childCheckbox.checked = true;
+                }
               }
             } else if (code.startsWith("p")) {
               // Handle parent category
               const categoryCode = code.slice(1).replace("*", "");
               const categoryTitle = mapping[categoryCode];
               if (categoryTitle) {
-                // Add the parent category title
                 selectedCategorySubcategory.push(categoryTitle);
 
                 // Find and check the parent checkbox
@@ -558,7 +592,7 @@
                 if (parentCheckbox) {
                   parentCheckbox.checked = true;
 
-                  // Also check all enabled child checkboxes if it's a parent selection
+                  // Check all enabled child checkboxes if it's a parent selection
                   const childrenId =
                     parentCheckbox.getAttribute("data-children-id");
                   if (childrenId && code.endsWith("*")) {
@@ -593,6 +627,13 @@
             const assistanceTitle = mapping[code];
             if (assistanceTitle) {
               selectedAssistanceTypes.push(assistanceTitle);
+              // Check the checkbox
+              const checkbox = document.querySelector(
+                `input[data-filter-type="assistance"][data-assistance-title="${assistanceTitle}"]`
+              );
+              if (checkbox) {
+                checkbox.checked = true;
+              }
             }
           });
         }
@@ -603,6 +644,13 @@
             const applicantTitle = mapping[code];
             if (applicantTitle) {
               selectedApplicantTypes.push(applicantTitle);
+              // Check the checkbox
+              const checkbox = document.querySelector(
+                `input[data-filter-type="applicant"][data-applicant-title="${applicantTitle}"]`
+              );
+              if (checkbox) {
+                checkbox.checked = true;
+              }
             }
           });
         }
@@ -610,6 +658,8 @@
     } catch (e) {
       console.error("Error decoding filters:", e);
     }
+
+    updateAccordionCounts();
 
     // Update UI
     updateCheckboxStates();
@@ -1024,13 +1074,15 @@
       clone.querySelector(".program-title").textContent = program.title;
       clone.querySelector(".program-title").href = program.permalink || "#";
 
-      const popularNameDiv = clone.querySelector('[data-popular-name-container]');
-        if (!program.popularName || program.popularName.trim() === '') {
-            popularNameDiv.remove();
-        } else {
-            clone.querySelector(".program-popular-name").textContent = program.popularName;
-        }
-
+      const popularNameDiv = clone.querySelector(
+        "[data-popular-name-container]"
+      );
+      if (!program.popularName || program.popularName.trim() === "") {
+        popularNameDiv.remove();
+      } else {
+        clone.querySelector(".program-popular-name").textContent =
+          program.popularName;
+      }
 
       clone.querySelector(".program-agency").textContent =
         program.agency?.title || "";
@@ -1318,8 +1370,13 @@
         ? document.getElementById(childrenId)
         : null;
       const children = childrenContainer
-        ? childrenContainer.querySelectorAll('input[type="checkbox"]')
+        ? childrenContainer.querySelectorAll(
+            'input[type="checkbox"]:not(:disabled)'
+          )
         : [];
+
+      // Reset indeterminate state when parent is clicked
+      input.indeterminate = false;
 
       if (isChecked) {
         // Add parent selection only if it has no children
@@ -1498,6 +1555,8 @@
     // Always sync checkbox states after changes
     syncParentCheckboxStates();
 
+    updateAccordionCounts();
+
     // Trigger search with updated filters
     encodeFiltersToUrl();
     fetchProgramsData();
@@ -1647,7 +1706,10 @@
     const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
     allCheckboxes.forEach((checkbox) => {
       checkbox.checked = false;
+      checkbox.indeterminate = false;
     });
+
+    updateAccordionCounts();
 
     // Clear search input
     const searchInput = document.querySelector('input[type="search"]');
@@ -1720,6 +1782,97 @@
     }
   }
 
+  function updateAccordionCounts() {
+    // Update Agency count
+    const agencyButton = document.querySelector(
+      '[data-content-id="agency-section"]'
+    );
+    if (agencyButton) {
+      // Count sub-agencies
+      const agencyChecks = document.querySelectorAll(
+        'input[data-filter-type="sub-agency"]:checked'
+      );
+
+      // Count both standalone agencies and parent agencies with no children
+      const parentAgencyChecks = document.querySelectorAll(
+        'input[data-filter-type="agency"]:checked'
+      );
+      const parentCount = Array.from(parentAgencyChecks).filter((checkbox) => {
+        const childrenId = checkbox.getAttribute("data-children-id");
+        // Count if it has no children container or the container is empty
+        return (
+          !childrenId ||
+          !document
+            .getElementById(childrenId)
+            ?.querySelectorAll('input[type="checkbox"]').length
+        );
+      }).length;
+
+      const totalAgencyCount = agencyChecks.length + parentCount;
+
+      const spanElement = agencyButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Agency";
+        spanElement.textContent =
+          totalAgencyCount > 0 ? `${baseText} (${totalAgencyCount})` : baseText;
+      }
+    }
+
+    // Update Categories count (only counting subcategories)
+    const categoryButton = document.querySelector(
+      '[data-content-id="categories-section"]'
+    );
+    if (categoryButton) {
+      const categoryChecks = document.querySelectorAll(
+        'input[data-filter-type="sub-category"]:checked'
+      );
+      const count = categoryChecks.length;
+
+      const spanElement = categoryButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Categories";
+        spanElement.textContent =
+          count > 0 ? `${baseText} (${count})` : baseText;
+      }
+    }
+
+    // Update Program Type count
+    const programTypeButton = document.querySelector(
+      '[data-content-id="program-type-section"]'
+    );
+    if (programTypeButton) {
+      const programTypeChecks = document.querySelectorAll(
+        'input[data-filter-type="assistance"]:checked'
+      );
+      const count = programTypeChecks.length;
+
+      const spanElement = programTypeButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Program type";
+        spanElement.textContent =
+          count > 0 ? `${baseText} (${count})` : baseText;
+      }
+    }
+
+    // Update Eligible Applicants count
+    const applicantButton = document.querySelector(
+      '[data-content-id="eligible-applicants-section"]'
+    );
+    if (applicantButton) {
+      const applicantChecks = document.querySelectorAll(
+        'input[data-filter-type="applicant"]:checked'
+      );
+      const count = applicantChecks.length;
+
+      const spanElement = applicantButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Eligible applicants";
+        spanElement.textContent =
+          count > 0 ? `${baseText} (${count})` : baseText;
+      }
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", async function () {
     initializeCaretToggles();
     initializeToggles();
@@ -1728,6 +1881,8 @@
     initializePaginationHandlers();
     initializeSortButtons();
     initializeClearFiltersButton();
+
+    updateAccordionCounts();
 
     // Handle browser navigation
     window.addEventListener("popstate", async function () {
