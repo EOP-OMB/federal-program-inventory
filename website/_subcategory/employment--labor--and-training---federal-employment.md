@@ -30,18 +30,18 @@ fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, And Training
 permalink: /category/employment--labor--and-training/federal-employment
-programs: '[{"permalink":"/program/10.978","title":"Farm Labor Stabilization and Protection
-  Pilot Grant Program","popular_name":"Farm labor pilot program or FLSPP","agency":"Department
-  of Agriculture","total_obs":0.0},{"permalink":"/program/17.720","title":"Disability
+programs: '[{"cfda":"10.978","permalink":"/program/10.978","title":"Farm Labor Stabilization
+  and Protection Pilot Grant Program","popular_name":"Farm labor pilot program or
+  FLSPP","agency":"Department of Agriculture","total_obs":0.0},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":19644358.0},{"permalink":"/program/19.013","title":"Thomas
+  (ODEP)","agency":"Department of Labor","total_obs":19644358.0},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
   R. Pickering Foreign Affairs Fellowship Program","popular_name":"Pickering Fellowship
-  Program","agency":"Department of State","total_obs":6065980.0},{"permalink":"/program/19.207","title":"William
+  Program","agency":"Department of State","total_obs":6065980.0},{"cfda":"19.207","permalink":"/program/19.207","title":"William
   D. Clarke, Sr. Fellowship","popular_name":"Clarke Fellowship","agency":"Department
-  of State","total_obs":0.0},{"permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
-  Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/90.705","title":"Southeast
+  of State","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"permalink":"/program/94.026","title":"AmeriCorps
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
   for National and Community Service","total_obs":2723511.0}]'
 title: Federal Employment

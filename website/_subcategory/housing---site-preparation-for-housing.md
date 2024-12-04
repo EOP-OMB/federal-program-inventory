@@ -32,32 +32,32 @@ fiscal_year: '2022'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/site-preparation-for-housing
-programs: '[{"permalink":"/program/10.405","title":"Farm Labor Housing Loans and Grants","popular_name":"(Labor
-  Housing)","agency":"Department of Agriculture","total_obs":80383617.0},{"permalink":"/program/10.411","title":"Rural
+programs: '[{"cfda":"10.405","permalink":"/program/10.405","title":"Farm Labor Housing
+  Loans and Grants","popular_name":"(Labor Housing)","agency":"Department of Agriculture","total_obs":80383617.0},{"cfda":"10.411","permalink":"/program/10.411","title":"Rural
   Housing Site Loans and Self Help Housing Land Development Loans","popular_name":"(Section
-  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":10000000.0},{"permalink":"/program/10.415","title":"Rural
-  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":45000000.0},{"permalink":"/program/14.023","title":"Community
+  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":10000000.0},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
+  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":45000000.0},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.024","title":"Community
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.162","title":"Mortgage
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.162","permalink":"/program/14.162","title":"Mortgage
   Insurance Combination and Manufactured Home Lot Loans","popular_name":"Mortgage
   Insurance- Land and Manufactured Home or MH lot-(Title I)","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.218","title":"Community
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":1933000000.0},{"permalink":"/program/14.316","title":"Housing
+  and Urban Development","total_obs":1933000000.0},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
-  of Housing and Urban Development","total_obs":4227408.0},{"permalink":"/program/14.862","title":"Indian
+  of Housing and Urban Development","total_obs":4227408.0},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":53369096.0},{"permalink":"/program/14.867","title":"Indian
+  of Housing and Urban Development","total_obs":53369096.0},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":886000000.0},{"permalink":"/program/14.872","title":"Public
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":886000000.0},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
   Housing Capital Fund","popular_name":"(CFP)","agency":"Department of Housing and
-  Urban Development","total_obs":3144445584.0},{"permalink":"/program/15.124","title":"Indian
+  Urban Development","total_obs":3144445584.0},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
   Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
-  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/90.705","title":"Southeast
+  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0}]'
 title: Site Preparation for Housing

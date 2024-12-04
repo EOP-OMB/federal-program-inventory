@@ -33,42 +33,43 @@ fiscal_year: '2022'
 parent_permalink: /category/consumer-protection
 parent_title: Consumer Protection
 permalink: /category/consumer-protection/regulation--inspection--enforcement
-programs: '[{"permalink":"/program/10.163","title":"Market Protection and Promotion","popular_name":"Market
-  Protection and Promotion","agency":"Department of Agriculture","total_obs":62297000.0},{"permalink":"/program/10.475","title":"Cooperative
+programs: '[{"cfda":"10.163","permalink":"/program/10.163","title":"Market Protection
+  and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
+  of Agriculture","total_obs":62297000.0},{"cfda":"10.475","permalink":"/program/10.475","title":"Cooperative
   Agreements with States for Intrastate Meat and Poultry Inspection","popular_name":"(Meat
-  and Poultry Inspection State Programs)","agency":"Department of Agriculture","total_obs":44983075.0},{"permalink":"/program/10.477","title":"Meat,
+  and Poultry Inspection State Programs)","agency":"Department of Agriculture","total_obs":44983075.0},{"cfda":"10.477","permalink":"/program/10.477","title":"Meat,
   Poultry, and Egg Products Inspection","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":16868815.0},{"permalink":"/program/10.479","title":"Food
-  Safety Cooperative Agreements","popular_name":null,"agency":"Department of Agriculture","total_obs":3224999.0},{"permalink":"/program/11.413","title":"Fishery
+  Agriculture","total_obs":16868815.0},{"cfda":"10.479","permalink":"/program/10.479","title":"Food
+  Safety Cooperative Agreements","popular_name":null,"agency":"Department of Agriculture","total_obs":3224999.0},{"cfda":"11.413","permalink":"/program/11.413","title":"Fishery
   Products Inspection and Certification","popular_name":"(Inspection and Grading of
-  Fishery Products)","agency":"Department of Commerce","total_obs":0.0},{"permalink":"/program/16.528","title":"Enhanced
+  Fishery Products)","agency":"Department of Commerce","total_obs":0.0},{"cfda":"16.528","permalink":"/program/16.528","title":"Enhanced
   Training and Services to End Violence and Abuse of Women Later in Life","popular_name":"Abuse
-  in Later Life ","agency":"Department of Justice","total_obs":3650833.0},{"permalink":"/program/16.529","title":"Education,
+  in Later Life ","agency":"Department of Justice","total_obs":3650833.0},{"cfda":"16.529","permalink":"/program/16.529","title":"Education,
   Training, and Enhanced Services to End Violence Against and Abuse of Women with
   Disabilities ","popular_name":"(Disability Grant Program)","agency":"Department
-  of Justice","total_obs":4119788.0},{"permalink":"/program/16.589","title":"Rural
+  of Justice","total_obs":4119788.0},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
   Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program","popular_name":"Rural
-  Program","agency":"Department of Justice","total_obs":33404213.0},{"permalink":"/program/20.218","title":"Motor
-  Carrier Safety Assistance ","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":487714693.0},{"permalink":"/program/20.301","title":"Railroad
-  Safety","popular_name":null,"agency":"Department of Transportation","total_obs":1514320.0},{"permalink":"/program/20.700","title":"Pipeline
-  Safety Program State Base Grant ","popular_name":null,"agency":"Department of Transportation","total_obs":60000000.0},{"permalink":"/program/20.721","title":"PHMSA
+  Program","agency":"Department of Justice","total_obs":33404213.0},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
+  Carrier Safety Assistance ","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":487714693.0},{"cfda":"20.301","permalink":"/program/20.301","title":"Railroad
+  Safety","popular_name":null,"agency":"Department of Transportation","total_obs":1514320.0},{"cfda":"20.700","permalink":"/program/20.700","title":"Pipeline
+  Safety Program State Base Grant ","popular_name":null,"agency":"Department of Transportation","total_obs":60000000.0},{"cfda":"20.721","permalink":"/program/20.721","title":"PHMSA
   Pipeline Safety Program One Call Grant","popular_name":null,"agency":"Department
-  of Transportation","total_obs":1108713.0},{"permalink":"/program/20.725","title":"PHMSA
+  of Transportation","total_obs":1108713.0},{"cfda":"20.725","permalink":"/program/20.725","title":"PHMSA
   Pipeline Safety Underground Natural Gas Storage Grant ","popular_name":null,"agency":"Department
-  of Transportation","total_obs":4942369.0},{"permalink":"/program/38.006","title":"State
+  of Transportation","total_obs":4942369.0},{"cfda":"38.006","permalink":"/program/38.006","title":"State
   Appraiser Agency Support Grants","popular_name":null,"agency":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_obs":929269.0},{"permalink":"/program/38.009","title":"Board
+  Institutions Examination Council Appraisal Subcommittee","total_obs":929269.0},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
   Support and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0},{"permalink":"/program/66.032","title":"State
-  Indoor Radon Grants","popular_name":"SIRG","agency":"Environmental Protection Agency","total_obs":8295000.0},{"permalink":"/program/81.092","title":"Remedial
+  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0},{"cfda":"66.032","permalink":"/program/66.032","title":"State
+  Indoor Radon Grants","popular_name":"SIRG","agency":"Environmental Protection Agency","total_obs":8295000.0},{"cfda":"81.092","permalink":"/program/81.092","title":"Remedial
   Action and Waste Management","popular_name":"Federal Facility Agreement","agency":"Department
-  of Energy","total_obs":5126806.0},{"permalink":"/program/81.106","title":"Transport
+  of Energy","total_obs":5126806.0},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
   of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns,
   Proposed Solutions","popular_name":"Transport of Transuranic Waste to the Waste
   Isolation Pilot Plant (WIPP): States and Tribal Concerns, Proposed Solutions","agency":"Department
-  of Energy","total_obs":6539256.0},{"permalink":"/program/87.003","title":"Nicholas
+  of Energy","total_obs":6539256.0},{"cfda":"87.003","permalink":"/program/87.003","title":"Nicholas
   and Zachary Burt Memorial Carbon Monoxide Poisoning Prevention Grants","popular_name":null,"agency":"Consumer
-  Product Safety Commission","total_obs":0.0},{"permalink":"/program/90.199","title":"Shared
+  Product Safety Commission","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
 title: Regulation, Inspection, Enforcement
 total_num_agencies: 9

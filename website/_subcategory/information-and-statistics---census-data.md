@@ -21,12 +21,12 @@ fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
 parent_title: Information And Statistics
 permalink: /category/information-and-statistics/census-data
-programs: '[{"permalink":"/program/11.016","title":"Statistical, Research, and Methodology  Assistance","popular_name":null,"agency":"Department
-  of Commerce","total_obs":5373935.0},{"permalink":"/program/15.875","title":"Economic,
+programs: '[{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical, Research,
+  and Methodology  Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":5373935.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"permalink":"/program/16.750","title":"Support
+  of the Interior","total_obs":637250025.0},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
   for Adam Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
-  of Justice","total_obs":42929453.0},{"permalink":"/program/90.199","title":"Shared
+  of Justice","total_obs":42929453.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
 title: Census Data
 total_num_agencies: 4

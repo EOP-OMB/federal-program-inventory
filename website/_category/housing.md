@@ -51,14 +51,14 @@ sub_cats: '[{"title":"Homebuying, Homeownership","permalink":"/category/housing/
   Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":34676878850.0},{"title":"Cooperatives,
   Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":27274721710.0},{"title":"Indian
   Housing","permalink":"/category/housing/indian-housing","total_num_programs":18,"total_obs":6794580587.0},{"title":"Property
-  and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":6668557559.0},{"title":"Site
-  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":6156425705.0},{"title":"Land
-  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":6156425705.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":23,"total_obs":5803788349.81},{"title":"Experimental
+  and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":6668557559.0},{"title":"Land
+  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":6156425705.0},{"title":"Site
+  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":6156425705.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":23,"total_obs":5803788349.81},{"title":"Experimental
   and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":4496116326.0}]'
 title: Housing
 total_num_agencies: 15
 total_num_applicant_types: 39
 total_num_programs: 118
 total_num_sub_cats: 12
-total_obs: 475934052320.81
+total_obs: 188127981457.81
 ---

@@ -40,52 +40,52 @@ fiscal_year: '2022'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/energy
-programs: '[{"permalink":"/program/10.320","title":"Sun Grant Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":3252480.0},{"permalink":"/program/10.757","title":"Powering
+programs: '[{"cfda":"10.320","permalink":"/program/10.320","title":"Sun Grant Program","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":3252480.0},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
   Affordable Clean Energy (PACE) Program","popular_name":"22001","agency":"Department
-  of Agriculture","total_obs":0.0},{"permalink":"/program/10.758","title":"New Empowering
-  Rural America (New ERA) Program","popular_name":"22004","agency":"Department of
-  Agriculture","total_obs":0.0},{"permalink":"/program/10.858","title":"Denali Commission
-  Grants and Loans ","popular_name":"RUS - Denali Commission Grants","agency":"Department
-  of Agriculture","total_obs":1132805.0},{"permalink":"/program/11.039","title":"Regional
+  of Agriculture","total_obs":0.0},{"cfda":"10.758","permalink":"/program/10.758","title":"New
+  Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
+  of Agriculture","total_obs":0.0},{"cfda":"10.858","permalink":"/program/10.858","title":"Denali
+  Commission Grants and Loans ","popular_name":"RUS - Denali Commission Grants","agency":"Department
+  of Agriculture","total_obs":1132805.0},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0},{"permalink":"/program/14.023","title":"Community
+  of Commerce","total_obs":0.0},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.252","title":"Section
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.265","title":"Rural
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/15.875","title":"Economic,
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"permalink":"/program/19.750","title":"Bureau
+  of the Interior","total_obs":637250025.0},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0},{"permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
-  of State","total_obs":0.0},{"permalink":"/program/20.706","title":"Pipeline Emergency
-  Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":1036159.0},{"permalink":"/program/20.707","title":"Hazardous
+  WHA","agency":"Department of State","total_obs":8403924.0},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  of State","total_obs":0.0},{"cfda":"20.706","permalink":"/program/20.706","title":"Pipeline
+  Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":1036159.0},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
   Materials State Inspection (HMSI) Grant","popular_name":"HMSI Grant","agency":"Department
-  of Transportation","total_obs":414031.0},{"permalink":"/program/20.708","title":"Natural
+  of Transportation","total_obs":414031.0},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
   Gas Distribution Infrastructure Safety and Modernization Grant Program","popular_name":null,"agency":"Department
-  of Transportation","total_obs":195460230.0},{"permalink":"/program/23.001","title":"Appalachian
+  of Transportation","total_obs":195460230.0},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0},{"permalink":"/program/66.046","title":"Climate
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
   Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":0.0},{"permalink":"/program/66.475","title":"Geographic Programs
-  \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":17359022.0},{"permalink":"/program/66.721","title":"Reducing
+  Agency","total_obs":0.0},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":17359022.0},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0},{"permalink":"/program/81.012","title":"Artificial
+  Protection Agency","total_obs":0.0},{"cfda":"81.012","permalink":"/program/81.012","title":"Artificial
   Intelligence and Technology Office Financial Assistance Program","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0},{"permalink":"/program/90.003","title":"Denali Commission
-  Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":20.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/90.705","title":"Southeast
+  of Energy","total_obs":0.0},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
+  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":20.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"permalink":"/program/90.800","title":"Federal
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
   Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
-  Permitting Improvement Steering Council","total_obs":0.0},{"permalink":"/program/94.006","title":"AmeriCorps
+  Permitting Improvement Steering Council","total_obs":0.0},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
   for National and Community Service","total_obs":440817446.0}]'
 title: Energy

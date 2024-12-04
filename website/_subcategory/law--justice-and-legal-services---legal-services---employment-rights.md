@@ -29,24 +29,25 @@ fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
 parent_title: Law, Justice And Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
-programs: '[{"permalink":"/program/16.021","title":"Justice Systems Response to Families","popular_name":"Justice
-  for Families Program","agency":"Department of Justice","total_obs":14191208.0},{"permalink":"/program/16.045","title":"Community-Based
+programs: '[{"cfda":"16.021","permalink":"/program/16.021","title":"Justice Systems
+  Response to Families","popular_name":"Justice for Families Program","agency":"Department
+  of Justice","total_obs":14191208.0},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":92368221.0},{"permalink":"/program/16.825","title":"Smart
-  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":6775924.0},{"permalink":"/program/16.830","title":"Girls
+  of Justice","total_obs":92368221.0},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":6775924.0},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
   in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
-  in the Juvenile Justice system","agency":"Department of Justice","total_obs":6619856.0},{"permalink":"/program/16.831","title":"Children
+  in the Juvenile Justice system","agency":"Department of Justice","total_obs":6619856.0},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
   of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":8963641.0},{"permalink":"/program/16.922","title":"Equitable
-  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0},{"permalink":"/program/19.345","title":"International
+  ","agency":"Department of Justice","total_obs":8963641.0},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0},{"cfda":"19.345","permalink":"/program/19.345","title":"International
   Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
-  of State","total_obs":0.0},{"permalink":"/program/19.888","title":"Global Defense
-  Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":450000.0},{"permalink":"/program/19.948","title":"Organization
+  of State","total_obs":0.0},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":450000.0},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
   of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
-  of State","total_obs":5000000.0},{"permalink":"/program/30.005","title":"Employment
+  of State","total_obs":5000000.0},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
   Discrimination Private Bar Program","popular_name":"Employment Discrimination \u2013
-  Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/94.013","title":"AmeriCorps
+  Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
   To America","agency":"Corporation for National and Community Service","total_obs":22376854.0}]'
 title: Legal Services - Employment Rights

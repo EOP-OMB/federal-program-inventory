@@ -35,49 +35,49 @@ fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security And Social Services
 permalink: /category/income-security-and-social-services/indian-services
-programs: '[{"permalink":"/program/10.567","title":"Food Distribution Program on Indian
-  Reservations","popular_name":"FDPIR","agency":"Department of Agriculture","total_obs":126000000.0},{"permalink":"/program/15.025","title":"Services
+programs: '[{"cfda":"10.567","permalink":"/program/10.567","title":"Food Distribution
+  Program on Indian Reservations","popular_name":"FDPIR","agency":"Department of Agriculture","total_obs":126000000.0},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
   to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
-  of the Interior","total_obs":1767588.0},{"permalink":"/program/15.144","title":"Indian
+  of the Interior","total_obs":1767588.0},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
   Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":3187783.0},{"permalink":"/program/16.024","title":"Tribal
+  Interior","total_obs":3187783.0},{"cfda":"16.024","permalink":"/program/16.024","title":"Tribal
   Sexual Assault Services Program","popular_name":"TSASP","agency":"Department of
-  Justice","total_obs":3675000.0},{"permalink":"/program/16.027","title":"National
+  Justice","total_obs":3675000.0},{"cfda":"16.027","permalink":"/program/16.027","title":"National
   Clearinghouse on Sexual Assault of American Indian and Alaska Native Women","popular_name":"NTCSA","agency":"Department
-  of Justice","total_obs":0.0},{"permalink":"/program/16.525","title":"Grants to Reduce
-  Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus","popular_name":"Campus
-  Program","agency":"Department of Justice","total_obs":10688200.0},{"permalink":"/program/16.587","title":"Violence
+  of Justice","total_obs":0.0},{"cfda":"16.525","permalink":"/program/16.525","title":"Grants
+  to Reduce Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus","popular_name":"Campus
+  Program","agency":"Department of Justice","total_obs":10688200.0},{"cfda":"16.587","permalink":"/program/16.587","title":"Violence
   Against Women Discretionary Grants for Indian Tribal Governments","popular_name":"Tribal
-  Governments","agency":"Department of Justice","total_obs":28042963.0},{"permalink":"/program/16.841","title":"VOCA
+  Governments","agency":"Department of Justice","total_obs":28042963.0},{"cfda":"16.841","permalink":"/program/16.841","title":"VOCA
   Tribal Victim Services Set-Aside Program","popular_name":"VOCA Tribal Set-Aside
-  Program","agency":"Department of Justice","total_obs":129989910.0},{"permalink":"/program/21.009","title":"Volunteer
+  Program","agency":"Department of Justice","total_obs":129989910.0},{"cfda":"21.009","permalink":"/program/21.009","title":"Volunteer
   Income Tax Assistance (VITA) Matching Grant Program","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":25000000.0},{"permalink":"/program/32.003","title":"UNIVERSAL
+  of the Treasury","total_obs":25000000.0},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
   SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":584100000.0},{"permalink":"/program/64.055","title":"Staff
+  Communications Commission","total_obs":584100000.0},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":52500000.0},{"permalink":"/program/64.126","title":"Native
+  of Veterans Affairs","total_obs":52500000.0},{"cfda":"64.126","permalink":"/program/64.126","title":"Native
   American Veteran Direct Loan Program","popular_name":"(VA Native American Veterans
-  Housing Loan Program)","agency":"Department of Veterans Affairs","total_obs":11553000.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/93.047","title":"Special
+  Housing Loan Program)","agency":"Department of Veterans Affairs","total_obs":11553000.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
   Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
   to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0},{"permalink":"/program/93.054","title":"National Family
-  Caregiver Support, Title VI, Part C, Grants To Indian Tribes And Native Hawaiians","popular_name":"Native
+  Services","total_obs":0.0},{"cfda":"93.054","permalink":"/program/93.054","title":"National
+  Family Caregiver Support, Title VI, Part C, Grants To Indian Tribes And Native Hawaiians","popular_name":"Native
   American Caregiver Support Program, Title VI, Part C","agency":"Department of Health
-  and Human Services","total_obs":0.0},{"permalink":"/program/93.210","title":"Tribal
+  and Human Services","total_obs":0.0},{"cfda":"93.210","permalink":"/program/93.210","title":"Tribal
   Self-Governance Program: IHS Compacts/Funding Agreements ","popular_name":"(OTSG
-  Compacts )","agency":"Department of Health and Human Services","total_obs":3053223418.0},{"permalink":"/program/93.587","title":"Promote
+  Compacts )","agency":"Department of Health and Human Services","total_obs":3053223418.0},{"cfda":"93.587","permalink":"/program/93.587","title":"Promote
   the Survival and Continuing Vitality of Native American Languages","popular_name":"Native
   American Language Preservation and Maintenance (P&M) and the Esther Martinez Immersion
-  (EMI)","agency":"Department of Health and Human Services","total_obs":15761531.0},{"permalink":"/program/93.594","title":"Tribal
+  (EMI)","agency":"Department of Health and Human Services","total_obs":15761531.0},{"cfda":"93.594","permalink":"/program/93.594","title":"Tribal
   Work Grants","popular_name":"(Native Employment Works; NEW)","agency":"Department
-  of Health and Human Services","total_obs":7633287.0},{"permalink":"/program/93.698","title":"Elder
+  of Health and Human Services","total_obs":7633287.0},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0},{"permalink":"/program/93.893","title":"Health
+  of Health and Human Services","total_obs":0.0},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0},{"permalink":"/program/94.026","title":"AmeriCorps
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
   for National and Community Service","total_obs":2723511.0}]'
 title: Indian Services

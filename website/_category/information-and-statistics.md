@@ -55,5 +55,5 @@ total_num_agencies: 19
 total_num_applicant_types: 39
 total_num_programs: 54
 total_num_sub_cats: 4
-total_obs: 28417299490.25
+total_obs: 17235960886.25
 ---

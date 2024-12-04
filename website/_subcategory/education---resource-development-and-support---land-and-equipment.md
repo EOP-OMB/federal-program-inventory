@@ -35,31 +35,31 @@ fiscal_year: '2022'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---land-and-equipment
-programs: '[{"permalink":"/program/10.217","title":"Higher Education - Institution
-  Challenge Grants Program","popular_name":"Institution Challenge, Multicultural Scholars
-  & Graduate Fellowships Grant Program (Institution Higher Education Challenge)\r\n[Formerly:
-  Challenge or HEC Grants]","agency":"Department of Agriculture","total_obs":4500000.0},{"permalink":"/program/10.226","title":"Secondary
+programs: '[{"cfda":"10.217","permalink":"/program/10.217","title":"Higher Education
+  - Institution Challenge Grants Program","popular_name":"Institution Challenge, Multicultural
+  Scholars & Graduate Fellowships Grant Program (Institution Higher Education Challenge)\r\n[Formerly:
+  Challenge or HEC Grants]","agency":"Department of Agriculture","total_obs":4500000.0},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
   Education, Two-Year Postsecondary Education, and Agriculture in the K-12 Classroom","popular_name":"SPECA
-  Grants Program","agency":"Department of Agriculture","total_obs":800000.0},{"permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0},{"permalink":"/program/15.821","title":"USGS
+  Grants Program","agency":"Department of Agriculture","total_obs":800000.0},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0},{"cfda":"15.821","permalink":"/program/15.821","title":"USGS
   Cooperative Landslide Hazard Mapping and Assessment Program","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0},{"permalink":"/program/19.124","title":"East Asia
-  and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau of
-  East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0},{"permalink":"/program/32.004","title":"UNIVERSAL
+  of the Interior","total_obs":0.0},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":3224900000.0},{"permalink":"/program/45.301","title":"Museums
+  Communications Commission","total_obs":3224900000.0},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":27899000.0},{"permalink":"/program/66.306","title":"Environmental
+  and Library Services","total_obs":27899000.0},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":6719004.0},{"permalink":"/program/66.614","title":"Financial
+  Protection Agency","total_obs":6719004.0},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0},{"permalink":"/program/66.951","title":"Environmental
+  Protection Agency","total_obs":0.0},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3157934.0},{"permalink":"/program/84.145","title":"Federal
-  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/90.705","title":"Southeast
+  Protection Agency","total_obs":3157934.0},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"permalink":"/program/94.026","title":"AmeriCorps
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
   for National and Community Service","total_obs":2723511.0}]'
 title: Resource Development and Support - Land and Equipment

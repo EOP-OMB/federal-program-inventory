@@ -40,42 +40,42 @@ fiscal_year: '2022'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/housing
-programs: '[{"permalink":"/program/11.039","title":"Regional Technology and Innovation
-  Hubs","popular_name":"Tech Hubs","agency":"Department of Commerce","total_obs":0.0},{"permalink":"/program/12.460","title":"Fisher
-  House Foundation","popular_name":null,"agency":"Department of Defense","total_obs":5000000.0},{"permalink":"/program/14.023","title":"Community
+programs: '[{"cfda":"11.039","permalink":"/program/11.039","title":"Regional Technology
+  and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department of Commerce","total_obs":0.0},{"cfda":"12.460","permalink":"/program/12.460","title":"Fisher
+  House Foundation","popular_name":null,"agency":"Department of Defense","total_obs":5000000.0},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.024","title":"Community
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.251","title":"Economic
+  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.251","permalink":"/program/14.251","title":"Economic
   Development Initiative, Community Project Funding, and Miscellaneous grants","popular_name":"Congressional
-  Grants","agency":"Department of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.252","title":"Section
+  Grants","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.265","title":"Rural
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"permalink":"/program/14.921","title":"Older
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.921","permalink":"/program/14.921","title":"Older
   Adults Home Modification Grant Program","popular_name":null,"agency":"Department
-  of Housing and Urban Development","total_obs":14479633.0},{"permalink":"/program/15.098","title":"Native
+  of Housing and Urban Development","total_obs":14479633.0},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
   Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau","agency":"Department
-  of the Interior","total_obs":0.0},{"permalink":"/program/15.162","title":"Tiwahe
-  Housing","popular_name":null,"agency":"Department of the Interior","total_obs":0.0},{"permalink":"/program/15.875","title":"Economic,
+  of the Interior","total_obs":0.0},{"cfda":"15.162","permalink":"/program/15.162","title":"Tiwahe
+  Housing","popular_name":null,"agency":"Department of the Interior","total_obs":0.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"permalink":"/program/19.750","title":"Bureau
+  of the Interior","total_obs":637250025.0},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0},{"permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
-  of State","total_obs":0.0},{"permalink":"/program/21.011","title":"Capital Magnet
-  Fund","popular_name":"CMF","agency":"Department of the Treasury","total_obs":0.0},{"permalink":"/program/21.026","title":"Homeowner
-  Assistance Fund","popular_name":"HAF","agency":"Department of the Treasury","total_obs":0.0},{"permalink":"/program/23.001","title":"Appalachian
+  WHA","agency":"Department of State","total_obs":8403924.0},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  of State","total_obs":0.0},{"cfda":"21.011","permalink":"/program/21.011","title":"Capital
+  Magnet Fund","popular_name":"CMF","agency":"Department of the Treasury","total_obs":0.0},{"cfda":"21.026","permalink":"/program/21.026","title":"Homeowner
+  Assistance Fund","popular_name":"HAF","agency":"Department of the Treasury","total_obs":0.0},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0},{"permalink":"/program/66.475","title":"Geographic
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":17359022.0},{"permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"permalink":"/program/90.705","title":"Southeast
+  Protection Agency","total_obs":17359022.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"permalink":"/program/94.006","title":"AmeriCorps
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":440817446.0},{"permalink":"/program/94.013","title":"AmeriCorps
+  for National and Community Service","total_obs":440817446.0},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
   To America","agency":"Corporation for National and Community Service","total_obs":22376854.0}]'
 title: Housing

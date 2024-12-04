@@ -55,12 +55,12 @@ sub_cats: '[{"title":"Law Enforcement - Planning and Operations","permalink":"/c
   Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law-justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":2814078034.21},{"title":"Legal
   Services - Housing Rights","permalink":"/category/law-justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1091815228.0},{"title":"Legal
   Services - Employment Rights","permalink":"/category/law-justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":156745704.0},{"title":"Legal
-  Services - Labor Management","permalink":"/category/law-justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0},{"title":"Legal
-  Services - Claims Against Foreign Government","permalink":"/category/law-justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":120177642.0}]'
+  Services - Claims Against Foreign Government","permalink":"/category/law-justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":120177642.0},{"title":"Legal
+  Services - Labor Management","permalink":"/category/law-justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0}]'
 title: Law Justice And Legal Services
 total_num_agencies: 16
 total_num_applicant_types: 46
 total_num_programs: 195
 total_num_sub_cats: 9
-total_obs: 23400931600.43
+total_obs: 15434828290.8
 ---
