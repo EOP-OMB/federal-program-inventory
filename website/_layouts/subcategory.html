@@ -1,260 +1,364 @@
 ---
 layout: default
+header_title: Explore programs by category
 footer_include: _footer-subcategory.html
 ---
 
-  <section class="bg-primary-dark">
-    <div class="grid-container">
-      <div class="grid-row">
-        <div class="grid-col-12">
-          <p class="margin-top-2 margin-bottom-0"><a class="text-white text-italic" href="{{ page.parent_permalink }}">{{ page.parent_title }}</a></p>
-        </div>
-        <div class="grid-col-12">
-          <h1 class="margin-top-0 margin-bottom-2 text-white">{{ page.title }}</h1>
-        </div>
+<section
+  class="bg-primary-darker padding-x-2 padding-y-3"
+  style="
+    background-image: url('../../assets/img/banner.png'),
+      linear-gradient(0deg, #272a63, #272a63);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  "
+>
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h1
+          class="usa-display usa-heading text-white font-heading-2xl text-light"
+        >
+          {{ layout.header_title }}
+        </h1>
       </div>
     </div>
-  </section>
-  <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
-          <h3 class="text-base-dark">Sub-categories</h3>
-          <nav aria-label="Side navigation">
-            <ul class="usa-sidenav">
-              
-              {% for sc in site.subcategory %}
+  </div>
+</section>
 
-                {% if sc.parent_permalink == page.parent_permalink %}
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs,,">
+      <ol class="usa-breadcrumb__list">
+        <li class="usa-breadcrumb__list-item">
+          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
+        </li>
+        <li class="usa-breadcrumb__list-item">
+          <a href="{{ page.parent_permalink }}" class="usa-breadcrumb__link"
+            ><span>{{ page.parent_title }}</span></a
+          >
+        </li>
+        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+          <span>{{ page.title }}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="grid-row grid-gap padding-top-1">
+    <div class="width-full text-primary font-sans-xl line-height-sans-2">
+      {{ page.title }}
+    </div>
+    <div class="grid-col-8 line-height-sans-3 padding-top-1">
+      Programs (assistance listings), their functions (categories), and
+      sub-functions (sub-categories) listed on this page use data pulled from
+      SAM.gov and [other].
+      <br />
+      <br />
+      Select from the dropdown below to view a category. Once you’ve selected a
+      category, you can select a sub-category under it.
+    </div>
+  </div>
 
-                  <li class="usa-sidenav__item">
-                    <a href="{{ sc.permalink }}"
+  <div class="display-flex flex-wrap flex-align-end">
+    <div class="margin-right-205 margin-bottom-2">
+      <label class="usa-label" for="category"
+        >Select category
+        <span class="usa-label--required">(Required)</span></label
+      >
+      <select class="usa-select width-mobile" name="category" id="category">
+        <option value>All categories</option>
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+      </select>
+    </div>
+    <div class="margin-right-205 margin-bottom-2">
+      <label class="usa-label" for="subcategory">Select sub-category</label>
+      <select
+        class="usa-select width-mobile"
+        name="subcategory"
+        id="subcategory"
+      >
+        <option value>-Select-</option>
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+      </select>
+    </div>
+    <button id="category-button" class="usa-button bg-primary margin-bottom-2 padding-x-3">
+      Update category
+    </button>
+  </div>
 
-                      {% if page.permalink == sc.permalink %}
-                    
-                      class="usa-current"
-                    
-                      {% endif %}
-                    
-                    >{{ sc.title }}</a>
-                  </li>
+  <div class="border-1px border-ink radius-md margin-bottom-5">
+    <div class="margin-205">
+      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
+        {{ page.title }} obligations
+      </h3>
 
-                {% endif %}
-
-              {% endfor %}
-
-            </ul>
-          </nav>
-        </div>
-        <div class="desktop:grid-col-9">
-          <div class="grid-row bg-white">
-            <div class="tablet:grid-col-6">
-              <section class="padding-2 desktop:border-right-2 desktop:border-base-lightest">
-                <span class="font-body-3xl text-bold">{{ page.total_num_programs }}</span>
-                <p class="margin-top-0">
-                  programs
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_programs }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </p>
-              </section>
-            </div>
-            <div class="tablet:grid-col-6">
-              <section class="padding-2 desktop:border-left-1 desktop:border-base-lightest">
-                <span class="font-body-3xl text-bold">
-                  {% if page.total_obs > 1000000000000 %}
-                    ${{ page.total_obs | divided_by: 1000000000000.0 | round: 2 }}T
-                  {% elsif page.total_obs > 1000000000 %}
-                    ${{ page.total_obs | divided_by: 1000000000.0 | round: 2 }}B
-                  {% elsif page.total_obs > 1000000 %}
-                    ${{ page.total_obs | divided_by: 1000000.0 | round: 2 }}M
-                  {% elsif page.total_obs > 1000 %}
-                    ${{ page.total_obs | divided_by: 1000.0 | round: 2 }}k
-                  {% endif %}
-                </span>
-                <p class="margin-top-0">
-                  in FY {{ page.fiscal_year }} obligations
-                  <span class="usa-tooltip" data-position="right" title="{{ page.tooltip_obligations }}">
-                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                      <use xlink:href="/assets/img/sprite.svg#info"></use>
-                    </svg>
-                  </span>
-                </p>
-              </section>
-            </div>
+      <p class="text-ink font-sans-sm line-height-body-3">
+        The numbers below show
+        <span class="text-bold">Programs</span> (individual Assistance
+        Listings), actual Obligations, and their sub-functions (sub-categories),
+        all as submitted by agencies to
+        <a
+          href="https://sam.gov"
+          class="usa-link usa-link--external"
+          target="_blank"
+          rel="noopener noreferrer"
+          >SAM.gov</a
+        >.
+      </p>
+      <div class="display-flex margin-bottom-2">
+        <div class="padding-right-5 display-flex flex-column">
+          <div class="text-primary font-sans-3xl text-bold">
+            {{ page.total_num_programs }}
           </div>
-          <div class="grid-row">
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top {% if page.total_num_programs > 4 %} 5 {% else %} {{ page.total_num_programs }} {% endif %} programs, by FY {{ page.fiscal_year }} obligations</h2>
-                <div id="programs-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="programs-data"
-                    >
-                      View data as a table
-                    </button>
-                  </h4>
-                  <div id="programs-data" class="usa-accordion__content usa-prose">
-                    <div id="programs-table"></div>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="programs-about"
-                    >
-                      About the data
-                    </button>
-                  </h4>
-                  <div id="programs-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      This chart shows obligations for the top programs, within this sub-category. Data for all programs is
-                      available in table format below. All data for this chart and table were provided by the administering
-                      agency and sourced from SAM.gov.
-                    </p>
-                    <p>
-                      When creating Assistance Listings for each of their programs, agencies are offered the
-                      opportunity to select one or many "functions" and "sub-functions" that best align with the
-                      program from a pre-defined list. The categories and sub-categories shown on this website
-                      are the "functions" and "sub-functions" self-selected by agencies. They can be found in the
-                      Functional Index of the
-                      <a href="https://sam.gov/content/assistance-listings" target="_blank">
-                        Annual Publication of Assistance Listings
-                      </a> on SAM.gov.
-                    </p>
-                    <p>
-                      Agencies may assign multiple "functions" and / or "sub-functions". The numbers in the chart
-                      and table may be greater than the cumulative figure displayed on this page, which represents
-                      the total number of dollars aligned to the category or sub-category without double counting.
-                      Additionally, the numbers displayed on this page should not be interpreted as funding or the
-                      number of programs associated exclusively with this category and / or sub-category.
-                    </p>
-                    <p>
-                      In selecting from the list of "functions" and "sub-functions" agencies are not offered
-                      guidance on their meaning. As a result, the number and context of "functions" and
-                      "sub-functions" assigned to a program may vary by program.
-                    </p>
-                    <p>
-                      Obligations displayed represent program obligations for FY {{ page.fiscal_year }}, as
-                      reported by the agency to SAM.gov after the fiscal year concludes. This number may not be
-                      the same as what is reported on USASpending.gov, which is the authoritative source for
-                      government spending data. Both SAM.gov and USASpending.gov obligations data are reported on
-                      each program page, where available.
-                    </p>
-                    <p>
-                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top {% if page.total_num_agencies > 4 %} 5 {% else %} {{ page.total_num_agencies }} {% endif %} agencies, by FY {{ page.fiscal_year }} obligations</h2>
-                <div id="agencies-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="agencies-data"
-                    >
-                      View data as a table
-                    </button>
-                  </h4>
-                  <div id="agencies-data" class="usa-accordion__content usa-prose">
-                    <div id="agencies-table"></div>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="agencies-about"
-                    >
-                      About the data
-                    </button>
-                  </h4>
-                  <div id="agencies-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      This chart shows total program obligations by agency for the top agencies in this category or
-                      sub-category. Data for all agencies is available in table format below. All data for this chart and table
-                      were provided by the administering agency and sourced from SAM.gov.
-                    </p>
-                    <p>
-                      Obligations displayed represent program obligations for FY {{ page.fiscal_year }}, as
-                      reported by the agency to SAM.gov after the fiscal year concludes. This number may not be
-                      the same as what is reported on USASpending.gov, which is the authoritative source for
-                      government spending data. Both SAM.gov and USASpending.gov obligations data are reported on
-                      each program page, where available.
-                    </p>
-                    <p>
-                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Top {% if page.total_num_applicant_types > 4 %} 5 {% else %} {{ page.total_num_applicant_types }} {% endif %} eligible applicant types, by number of programs</h2>
-                <div id="applicant-types-visualization"></div>
-                <div class="usa-accordion usa-accordion--bordered" data-allow-multiple>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="applicant-types-data"
-                    >
-                      View data for all eligible applicant types
-                    </button>
-                  </h4>
-                  <div id="applicant-types-data" class="usa-accordion__content usa-prose">
-                    <div id="applicant-types-table"></div>
-                  </div>
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="applicant-types-about"
-                    >
-                      View data as a table
-                    </button>
-                  </h4>
-                  <div id="applicant-types-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      This chart shows total program obligations by eligible applicant type for the top eligible applicant
-                      types in this category or sub-category. Data for all eligible applicant types is available in table
-                      format below. All data for this chart and table were provided by the administering agency and sourced
-                      from SAM.gov.
-                    </p>
-                    <p>
-                      Eligible applicant types are entities identified by agencies when creating the assistance listing that
-                      are eligible to apply for each program. The main purpose of this is to inform potential applicants of the
-                      programs for which they can apply. Information on entities that received program awards can be found on
-                      USASpending.gov. Note that the types of "eligible applicants" that are used on SAM.gov are not the same as
-                      types of "recipients" used on USASpending.gov.
-                    </p>
-                    <p>
-                      Programs are defined as individual assistance listings, as submitted by agencies to SAM.gov.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </div>
+          <div class="font-heading-lg line-height-heading-5">programs</div>
+        </div>
+        <div class="display-flex flex-column">
+          <div id="obligations-total" class="text-primary font-sans-3xl text-bold">
+          </div>
+          <div class="font-heading-lg line-height-heading-5">
+            in FY {{ page.fiscal_year }} obligations
           </div>
         </div>
       </div>
+
+      <div
+        class="border-bottom-1px border-black width-full margin-bottom-3"
+      ></div>
+
+      <div
+        class="display-flex flex-justify-start flex-align-center grid-row grid-gap-3"
+      >
+        <div class="font-heading-lg line-height-heading-2">
+          View top FY {{ page.fiscal_year }} for:
+        </div>
+
+        <div class="usa-radio display-flex flex-align-center">
+          <input
+            class="usa-radio__input"
+            id="program"
+            type="radio"
+            name="view-options"
+            checked
+          />
+          <label
+            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            for="program"
+            >Program</label
+          >
+        </div>
+
+        <div class="usa-radio display-flex flex-align-center">
+          <input
+            class="usa-radio__input"
+            id="agency"
+            type="radio"
+            name="view-options"
+          />
+          <label
+            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            for="agency"
+            >Agency</label
+          >
+        </div>
+
+        <div class="usa-radio display-flex flex-align-center">
+          <input
+            class="usa-radio__input"
+            id="eligible-applicant"
+            type="radio"
+            name="view-options"
+          />
+          <label
+            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            for="eligible-applicant"
+            >Eligible applicant type</label
+          >
+        </div>
+      </div>
+
+      <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection" role="img"></svg>
+
+      <!-- Three tables, hidden/shown dynamically -->
+      <div id="table-container">
+        <div id="table-title" class="text-bold font-sans-lg text-primary">
+          <!-- The title will be dynamically updated here -->
+        </div>
+        <table class="usa-table width-full margin-bottom-0" id="programs-table">
+          <thead>
+            <tr>
+              <th
+                data-sortable
+                data-column="title"
+                scope="col"
+                class="width-mobile-lg"
+              >
+                <span class="header-text">Program</span>
+              </th>
+              <th
+                data-sortable
+                data-column="agency"
+                scope="col"
+                class="width-mobile"
+              >
+                <span class="header-text">Agency</span>
+              </th>
+              <th data-sortable data-column="total_obs" scope="col">
+                <span class="header-text"
+                  >Obligations (FY {{ page.fiscal_year }})</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div
+          class="usa-sr-only"
+          aria-live="polite"
+          id="programs-table-status"
+        ></div>
+
+        <table
+          class="usa-table width-full margin-bottom-0"
+          id="agencies-table"
+          style="display: none"
+        >
+          <thead>
+            <tr>
+              <th
+                data-sortable
+                data-column="title"
+                scope="col"
+                class="width-mobile-lg"
+              >
+                <span class="header-text">Agency</span>
+              </th>
+              <th
+                data-sortable
+                data-column="total_num_programs"
+                scope="col"
+                class="width-mobile"
+              >
+                <span class="header-text">Number of Programs</span>
+              </th>
+              <th data-sortable data-column="total_obs" scope="col">
+                <span class="header-text"
+                  >Obligations (FY {{ page.fiscal_year }})</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div
+          class="usa-sr-only"
+          aria-live="polite"
+          id="agencies-table-status"
+        ></div>
+
+        <table
+          class="usa-table width-full margin-bottom-0"
+          id="applicant-types-table"
+          style="display: none"
+        >
+          <thead>
+            <tr>
+              <th
+                data-sortable
+                data-column="title"
+                scope="col"
+                class="width-mobile-lg"
+              >
+                <span class="header-text">Applicant Type</span>
+              </th>
+              <th
+                data-sortable
+                data-column="total_num_programs"
+                scope="col"
+                class="width-mobile"
+              >
+                <span class="header-text">Number of Programs</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div
+          class="usa-sr-only"
+          aria-live="polite"
+          id="applicant-types-table-status"
+        ></div>
+      </div>
+
+      <!-- Pagination and Download -->
+      <div>
+        <div class="grid-row grid-gap flex-align-center">
+          <div class="grid-col-fill">
+            <span class="font-sans-sm" id="pagination-info">
+              Showing <span class="text-bold" id="results-start">1</span> to
+              <span class="text-bold" id="results-end">10</span> of
+              <span class="text-bold" id="results-total">0</span> results
+            </span>
+          </div>
+          <div class="grid-col-auto">
+            <nav aria-label="Pagination" class="usa-pagination">
+              <ul class="usa-pagination__list">
+                <li class="usa-pagination__item usa-pagination__arrow">
+                  <a
+                    href="javascript:void(0);"
+                    class="usa-pagination__link usa-pagination__previous-page"
+                    aria-label="Previous page"
+                    id="prev-page-button"
+                  >
+                    <svg class="usa-icon" aria-hidden="true" role="img">
+                      <use
+                        xlink:href="/assets/img/sprite.svg#navigate_before"
+                      ></use>
+                    </svg>
+                    <span class="usa-pagination__link-text">Previous</span>
+                  </a>
+                </li>
+                <li class="usa-pagination__item usa-pagination__arrow">
+                  <a
+                    href="javascript:void(0);"
+                    class="usa-pagination__link usa-pagination__next-page"
+                    aria-label="Next page"
+                    id="next-page-button"
+                  >
+                    <span class="usa-pagination__link-text">Next </span>
+                    <svg class="usa-icon" aria-hidden="true" role="img">
+                      <use
+                        xlink:href="/assets/img/sprite.svg#navigate_next"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-auto">
+            <button class="usa-button usa-button--outline border-2px">
+              <span>Download .csv file</span>
+              <svg
+                class="usa-icon margin-left-1"
+                aria-hidden="true"
+                focusable="false"
+                role="img"
+              >
+                <use xlink:href="/assets/img/sprite.svg#file_download"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
+</div>
+{% include _about-the-data.html %}

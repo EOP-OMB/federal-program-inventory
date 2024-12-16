@@ -1,30 +1,20 @@
 ---
 applicant_types:
-- title: Advisory Services and Counseling
 - title: Alaska Native and Native Hawaiian Serving Institutions
 - title: Anyone/general public
 - title: City or Township Government
 - title: County Government
-- title: Direct Loans
-- title: Direct Payments for a Specified Use
-- title: Direct Payments with Unrestricted Use
-- title: Dissemination of Technical Information
 - title: Federal
-- title: Federal Employment
 - title: Federally Recognized lndian Tribal Governments
 - title: For-Profit Organization (Other than Small Business)
-- title: Formula Grants
 - title: Government - General
-- title: Guaranteed / Insured Loans
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
 - title: Individual/Family
-- title: Insurance
 - title: Interstate
 - title: Intrastate
-- title: Investigation of Complaints
 - title: Local (includes State-designated lndian Tribes, excludes institutions of
     higher education and hospitals
 - title: Minority group
@@ -40,13 +30,10 @@ applicant_types:
 - title: Private nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Profit organization
-- title: Project Grants
-- title: Provision of Specialized Services
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
-- title: Sale, Exchange, or Donation of Property or Goods
 - title: Small business (less than 500 employees)
 - title: Special District Government
 - title: Specialized group (e.g. health professionals, students, veterans)
@@ -54,12 +41,10 @@ applicant_types:
 - title: State
 - title: State (includes District of Columbia, public institutions of higher education
     and hospitals)
-- title: Training
 - title: Tribally Controlled Colleges and Universities (TCCUs)
 - title: U.S. Territories and possessions
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
-- title: Use of Property, Facilities, or Equipment
 assistance_types:
 - title: Advisory Services and Counseling
 - title: Advisory Services on Compliance
@@ -68,11 +53,14 @@ assistance_types:
 - title: Direct Loans
 - title: Direct Payments for Specified Use
 - title: Direct Payments for Specified Use (Cooperative Agreements)
+- title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
+- title: Federal Employment
 - title: Formula Grants
 - title: Formula Grants (Apportionments)
 - title: Formula Grants (Cooperative Agreements)
+- title: Guaranteed / Insured Loans
 - title: Guaranteed/Insured Loans
 - title: Information
 - title: Insurance
@@ -97,8 +85,10 @@ assistance_types:
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
 - title: Sale, Exchange, or Donation of Property and Goods
+- title: Sale, Exchange, or Donation of Property or Goods
 - title: Training
 - title: Use of Property, Facilities, and Equipment
+- title: Use of Property, Facilities, or Equipment
 beneficiary_types:
 - title: Alcoholic
 - title: American Indian

@@ -96,6 +96,75 @@
     return arr1.every((item, index) => item === arr2[index]);
   }
 
+  // Helper function to check all enabled children of a parent
+  const checkAllEnabledChildren = (parentTitle, type) => {
+    if (type === "agency") {
+      // First check if this agency exists as a child under "Other agencies"
+      const otherAgenciesChildCheckbox = document.querySelector(
+        `input[data-filter-type="sub-agency"][data-agency-title="Other agencies"][data-subagency-title="${parentTitle}"]`
+      );
+
+      if (otherAgenciesChildCheckbox && !otherAgenciesChildCheckbox.disabled) {
+        otherAgenciesChildCheckbox.checked = true;
+        selectedAgencySubAgency.push(`Other agencies - ${parentTitle}`);
+        return; // Exit since we found it as a child of Other agencies
+      }
+    }
+
+    // Now check for it as a parent checkbox
+    const selector =
+      type === "agency"
+        ? `input[data-filter-type="agency"][data-agency-title="${parentTitle}"]`
+        : `input[data-filter-type="category"][data-category-title="${parentTitle}"]`;
+
+    const parentCheckbox = document.querySelector(selector);
+    if (!parentCheckbox) return;
+
+    // Check if this checkbox has actual children
+    const childrenId = parentCheckbox.getAttribute("data-children-id");
+    const childrenContainer = childrenId
+      ? document.getElementById(childrenId)
+      : null;
+    const children = childrenContainer?.querySelectorAll(
+      type === "agency"
+        ? 'input[data-filter-type="sub-agency"]:not(:disabled)'
+        : 'input[data-filter-type="sub-category"]:not(:disabled)'
+    );
+
+    // If no actual children found, treat as standalone
+    if (!children || children.length === 0) {
+      parentCheckbox.checked = true;
+      if (type === "agency") {
+        selectedAgencySubAgency.push(parentTitle);
+      } else {
+        selectedCategorySubcategory.push(parentTitle);
+      }
+      return;
+    }
+
+    // Process children if they exist
+    children.forEach((child) => {
+      child.checked = true;
+      const subTitle =
+        type === "agency"
+          ? child.getAttribute("data-subagency-title")
+          : child.getAttribute("data-subcategory-title");
+
+      if (subTitle) {
+        const combinedTitle = `${parentTitle} - ${subTitle}`;
+        if (type === "agency") {
+          if (!selectedAgencySubAgency.includes(combinedTitle)) {
+            selectedAgencySubAgency.push(combinedTitle);
+          }
+        } else {
+          if (!selectedCategorySubcategory.includes(combinedTitle)) {
+            selectedCategorySubcategory.push(combinedTitle);
+          }
+        }
+      }
+    });
+  };
+
   function hasFilterChanges() {
     const currentState = {
       query: currentQuery,
@@ -138,83 +207,6 @@
       clearFiltersBtn.disabled = !hasChanges;
       clearFiltersBtn.classList.toggle("usa-button--disabled", !hasChanges);
     }
-  }
-
-  // Helper function to compress filter arrays
-  function compressFilters(filters) {
-    // Initialize mapping for codes
-    const mapping = new Map();
-    let counter = 0;
-
-    // Helper to get or create code
-    const getCode = (title) => {
-      if (!mapping.has(title)) {
-        mapping.set(title, counter.toString(36));
-        counter++;
-      }
-      return mapping.get(title);
-    };
-
-    // Compress the filters
-    const compressed = {
-      codes: {}, // Will store our title-to-code mapping
-      a: [], // Agency codes
-      c: [], // Category codes
-      t: [], // Assistance type codes
-      p: [], // Applicant type codes
-    };
-
-    // Process agency filters
-    if (filters.agency && filters.agency.length > 0) {
-      filters.agency.forEach((filter) => {
-        const code = getCode(filter.title || filter);
-        compressed.codes[code] = filter.title || filter;
-
-        if (filter.type === "sub-agency") {
-          const parentCode = getCode(filter.parentTitle);
-          compressed.codes[parentCode] = filter.parentTitle;
-          compressed.a.push(`s${parentCode}:${code}`);
-        } else {
-          compressed.a.push(`p${code}${filter.selectAll ? "*" : ""}`);
-        }
-      });
-    }
-
-    // Process category filters
-    if (filters.category && filters.category.length > 0) {
-      filters.category.forEach((filter) => {
-        const code = getCode(filter.title || filter);
-        compressed.codes[code] = filter.title || filter;
-
-        if (filter.type === "sub-category") {
-          const parentCode = getCode(filter.parentTitle);
-          compressed.codes[parentCode] = filter.parentTitle;
-          compressed.c.push(`s${parentCode}:${code}`);
-        } else {
-          compressed.c.push(`p${code}${filter.selectAll ? "*" : ""}`);
-        }
-      });
-    }
-
-    // Process assistance types
-    if (filters.assistance && filters.assistance.length > 0) {
-      filters.assistance.forEach((filter) => {
-        const code = getCode(filter.title || filter);
-        compressed.codes[code] = filter.title || filter;
-        compressed.t.push(code);
-      });
-    }
-
-    // Process applicant types
-    if (filters.applicant && filters.applicant.length > 0) {
-      filters.applicant.forEach((filter) => {
-        const code = getCode(filter.title || filter);
-        compressed.codes[code] = filter.title || filter;
-        compressed.p.push(code);
-      });
-    }
-
-    return compressed;
   }
 
   // Helper function to decompress filter data
@@ -276,7 +268,7 @@
   }
 
   function syncParentCheckboxStates() {
-    // Sync agency parent checkboxes
+    // Sync parent checkboxes based on child states
     document
       .querySelectorAll('input[data-filter-type="agency"]')
       .forEach((parentCheckbox) => {
@@ -291,7 +283,7 @@
               (child) => child.checked
             );
 
-            // Set indeterminate and checked states
+            // Update parent checkbox state
             if (checkedChildren.length === 0) {
               parentCheckbox.checked = false;
               parentCheckbox.indeterminate = false;
@@ -306,7 +298,6 @@
         }
       });
 
-    // Sync category parent checkboxes
     document
       .querySelectorAll('input[data-filter-type="category"]')
       .forEach((parentCheckbox) => {
@@ -321,7 +312,6 @@
               (child) => child.checked
             );
 
-            // Set indeterminate and checked states
             if (checkedChildren.length === 0) {
               parentCheckbox.checked = false;
               parentCheckbox.indeterminate = false;
@@ -336,7 +326,6 @@
         }
       });
   }
-
   function getCheckedFilters() {
     const filters = {
       agency: [],
@@ -489,8 +478,6 @@
       const encodedFilters = params.get("f");
       if (encodedFilters) {
         const decodedData = JSON.parse(atob(encodedFilters));
-        console.log("Decoded filter data:", decodedData);
-
         const mapping = decodedData.codes || {};
 
         // Process agencies
@@ -505,7 +492,6 @@
               const childTitle = mapping[childCode];
               if (parentTitle && childTitle) {
                 selectedAgencySubAgency.push(`${parentTitle} - ${childTitle}`);
-                // Check the checkbox
                 const childCheckbox = document.querySelector(
                   `input[data-filter-type="sub-agency"][data-agency-title="${parentTitle}"][data-subagency-title="${childTitle}"]`
                 );
@@ -518,39 +504,7 @@
               const agencyCode = code.slice(1).replace("*", "");
               const agencyTitle = mapping[agencyCode];
               if (agencyTitle) {
-                selectedAgencySubAgency.push(agencyTitle);
-
-                // Find and check the parent checkbox
-                const parentCheckbox = document.querySelector(
-                  `input[data-filter-type="agency"][data-agency-title="${agencyTitle}"]`
-                );
-                if (parentCheckbox) {
-                  parentCheckbox.checked = true;
-
-                  // Check all enabled child checkboxes if it's a parent selection
-                  const childrenId =
-                    parentCheckbox.getAttribute("data-children-id");
-                  if (childrenId && code.endsWith("*")) {
-                    const childrenContainer =
-                      document.getElementById(childrenId);
-                    if (childrenContainer) {
-                      const children = childrenContainer.querySelectorAll(
-                        'input[data-filter-type="sub-agency"]:not(:disabled)'
-                      );
-                      children.forEach((child) => {
-                        child.checked = true;
-                        const subAgencyTitle = child.getAttribute(
-                          "data-subagency-title"
-                        );
-                        if (subAgencyTitle) {
-                          selectedAgencySubAgency.push(
-                            `${agencyTitle} - ${subAgencyTitle}`
-                          );
-                        }
-                      });
-                    }
-                  }
-                }
+                checkAllEnabledChildren(agencyTitle, "agency");
               }
             }
           });
@@ -570,7 +524,6 @@
                 selectedCategorySubcategory.push(
                   `${parentTitle} - ${childTitle}`
                 );
-                // Check the checkbox
                 const childCheckbox = document.querySelector(
                   `input[data-filter-type="sub-category"][data-category-title="${parentTitle}"][data-subcategory-title="${childTitle}"]`
                 );
@@ -583,39 +536,7 @@
               const categoryCode = code.slice(1).replace("*", "");
               const categoryTitle = mapping[categoryCode];
               if (categoryTitle) {
-                selectedCategorySubcategory.push(categoryTitle);
-
-                // Find and check the parent checkbox
-                const parentCheckbox = document.querySelector(
-                  `input[data-filter-type="category"][data-category-title="${categoryTitle}"]`
-                );
-                if (parentCheckbox) {
-                  parentCheckbox.checked = true;
-
-                  // Check all enabled child checkboxes if it's a parent selection
-                  const childrenId =
-                    parentCheckbox.getAttribute("data-children-id");
-                  if (childrenId && code.endsWith("*")) {
-                    const childrenContainer =
-                      document.getElementById(childrenId);
-                    if (childrenContainer) {
-                      const children = childrenContainer.querySelectorAll(
-                        'input[data-filter-type="sub-category"]:not(:disabled)'
-                      );
-                      children.forEach((child) => {
-                        child.checked = true;
-                        const subCategoryTitle = child.getAttribute(
-                          "data-subcategory-title"
-                        );
-                        if (subCategoryTitle) {
-                          selectedCategorySubcategory.push(
-                            `${categoryTitle} - ${subCategoryTitle}`
-                          );
-                        }
-                      });
-                    }
-                  }
-                }
+                checkAllEnabledChildren(categoryTitle, "category");
               }
             }
           });
@@ -627,7 +548,6 @@
             const assistanceTitle = mapping[code];
             if (assistanceTitle) {
               selectedAssistanceTypes.push(assistanceTitle);
-              // Check the checkbox
               const checkbox = document.querySelector(
                 `input[data-filter-type="assistance"][data-assistance-title="${assistanceTitle}"]`
               );
@@ -644,7 +564,6 @@
             const applicantTitle = mapping[code];
             if (applicantTitle) {
               selectedApplicantTypes.push(applicantTitle);
-              // Check the checkbox
               const checkbox = document.querySelector(
                 `input[data-filter-type="applicant"][data-applicant-title="${applicantTitle}"]`
               );
@@ -659,10 +578,9 @@
       console.error("Error decoding filters:", e);
     }
 
+    // Update UI states
     updateAccordionCounts();
-
-    // Update UI
-    updateCheckboxStates();
+    syncParentCheckboxStates();
   }
 
   function updateCheckboxStates() {
@@ -1115,180 +1033,6 @@
     });
   }
 
-  function updateCheckboxDisabledState(checkbox, isDisabled) {
-    const checkboxContainer = checkbox.closest(".usa-checkbox");
-    if (checkboxContainer) {
-      if (isDisabled) {
-        checkboxContainer.classList.add("visually-inactive");
-      } else {
-        checkboxContainer.classList.remove("visually-inactive");
-      }
-    }
-  }
-
-  function updateFiltersFromFacets(facets) {
-    // Remove the count display helper since we don't want to show counts
-    const addCountToLabel = (label, count) => {
-      // Remove any existing count spans
-      const existingCount = label.querySelector(".count");
-      if (existingCount) {
-        existingCount.remove();
-      }
-    };
-
-    // Create maps for agencies and their data from facets
-    const agencyFacets = new Map(
-      facets.agencies.map((a) => [
-        a.title,
-        {
-          count: a.doc_count,
-          subagencies: new Map(
-            a.subagencies.map((sa) => [sa.key, sa.doc_count])
-          ),
-        },
-      ])
-    );
-
-    // Get the list of main CFO agencies
-    const cfoAgencyTitles = Array.from(
-      document.querySelectorAll('input[data-filter-type="agency"]')
-    )
-      .map((checkbox) => checkbox.getAttribute("data-agency-title"))
-      .filter((title) => title !== "Other agencies");
-
-    // Handle agencies
-    document
-      .querySelectorAll('input[data-filter-type="agency"]')
-      .forEach((checkbox) => {
-        const agencyTitle = checkbox.getAttribute("data-agency-title");
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-        const childrenId = checkbox.getAttribute("data-children-id");
-
-        if (agencyTitle === "Other agencies") {
-          let otherAgenciesTotal = 0;
-          for (const [facetAgencyTitle, agencyData] of agencyFacets.entries()) {
-            if (!cfoAgencyTitles.includes(facetAgencyTitle)) {
-              otherAgenciesTotal += agencyData.count;
-            }
-          }
-          updateCheckboxDisabledState(checkbox, otherAgenciesTotal === 0);
-          addCountToLabel(label);
-        } else {
-          const agencyData = agencyFacets.get(agencyTitle);
-          updateCheckboxDisabledState(checkbox, !agencyData);
-          addCountToLabel(label);
-        }
-      });
-
-    // Handle subagencies
-    document
-      .querySelectorAll('input[data-filter-type="sub-agency"]')
-      .forEach((checkbox) => {
-        const agencyTitle = checkbox.getAttribute("data-agency-title");
-        const subAgencyTitle = checkbox.getAttribute("data-subagency-title");
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-
-        if (agencyTitle === "Other agencies") {
-          const agencyData = agencyFacets.get(subAgencyTitle);
-          const count = agencyData?.count || 0;
-          updateCheckboxDisabledState(checkbox, count === 0);
-          addCountToLabel(label);
-        } else if (subAgencyTitle === "Unspecified") {
-          const agencyData = agencyFacets.get(agencyTitle);
-          if (agencyData) {
-            let unspecifiedCount = agencyData.count;
-            for (const [
-              subagencyName,
-              count,
-            ] of agencyData.subagencies.entries()) {
-              if (subagencyName !== agencyTitle) {
-                unspecifiedCount -= count;
-              }
-            }
-            updateCheckboxDisabledState(checkbox, unspecifiedCount <= 0);
-            addCountToLabel(label);
-          } else {
-            updateCheckboxDisabledState(checkbox, true);
-            addCountToLabel(label);
-          }
-        } else {
-          const agencyData = agencyFacets.get(agencyTitle);
-          const subAgencyCount = agencyData?.subagencies.get(subAgencyTitle);
-          updateCheckboxDisabledState(checkbox, subAgencyCount === undefined);
-          addCountToLabel(label);
-        }
-      });
-
-    // Process Categories
-    const categoryFacets = new Map(
-      facets.categories.map((c) => [
-        c.title,
-        {
-          count: c.doc_count,
-          subcategories: new Map(
-            c.subcategories.map((sc) => [sc.key, sc.doc_count])
-          ),
-        },
-      ])
-    );
-
-    // Handle parent categories
-    document
-      .querySelectorAll('input[data-filter-type="category"]')
-      .forEach((checkbox) => {
-        const categoryTitle = checkbox.getAttribute("data-category-title");
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-        const categoryData = categoryFacets.get(categoryTitle);
-        updateCheckboxDisabledState(checkbox, !categoryData);
-        addCountToLabel(label);
-      });
-
-    // Handle subcategories
-    document
-      .querySelectorAll('input[data-filter-type="sub-category"]')
-      .forEach((checkbox) => {
-        const categoryTitle = checkbox.getAttribute("data-category-title");
-        const subCategoryTitle = checkbox.getAttribute(
-          "data-subcategory-title"
-        );
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-
-        const categoryData = categoryFacets.get(categoryTitle);
-        const subCategoryCount =
-          categoryData?.subcategories.get(subCategoryTitle);
-        updateCheckboxDisabledState(checkbox, subCategoryCount === undefined);
-        addCountToLabel(label);
-      });
-
-    // Process Assistance Types
-    const assistanceFacets = new Map(
-      facets.assistance_types.map((a) => [a.key, a.doc_count])
-    );
-    document
-      .querySelectorAll('input[data-filter-type="assistance"]')
-      .forEach((checkbox) => {
-        const assistanceTitle = checkbox.getAttribute("data-assistance-title");
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-        const count = assistanceFacets.get(assistanceTitle);
-        updateCheckboxDisabledState(checkbox, count === undefined);
-        addCountToLabel(label);
-      });
-
-    // Process Applicant Types
-    const applicantFacets = new Map(
-      facets.applicant_types.map((a) => [a.key, a.doc_count])
-    );
-    document
-      .querySelectorAll('input[data-filter-type="applicant"]')
-      .forEach((checkbox) => {
-        const applicantTitle = checkbox.getAttribute("data-applicant-title");
-        const label = checkbox.closest(".usa-checkbox").querySelector("label");
-        const count = applicantFacets.get(applicantTitle);
-        updateCheckboxDisabledState(checkbox, count === undefined);
-        addCountToLabel(label);
-      });
-  }
-
   async function fetchProgramsData(keyword = currentQuery) {
     const requestBody = {
       query: keyword || "",
@@ -1323,10 +1067,6 @@
       updatePagination(currentPage, Math.ceil(data.count / pageSize));
       updateProgramCounts();
       renderPrograms(data.programs);
-
-      if (data.facets) {
-        updateFiltersFromFacets(data.facets);
-      }
 
       return data;
     } catch (error) {
@@ -1549,15 +1289,16 @@
       }
     }
 
+    // Reset the current page and update states
     currentPage = 1;
 
     updateClearFilterButton();
-    // Always sync checkbox states after changes
-    syncParentCheckboxStates();
 
+    // Sync checkbox states
+    syncParentCheckboxStates();
     updateAccordionCounts();
 
-    // Trigger search with updated filters
+    // Update filters and fetch new data
     encodeFiltersToUrl();
     fetchProgramsData();
   }

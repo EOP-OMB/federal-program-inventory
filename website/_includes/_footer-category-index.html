@@ -1,53 +1,200 @@
 <script>
-  const categories = {{ page.categories_json }}.sort((a, b) => b.total_obs - a.total_obs);
+    document.addEventListener("DOMContentLoaded", function () {
 
-  categoriesVisualization = Plot.plot({
-    marginLeft: 200,
-    width: 836,
-    height: 700,
-    x: {
-      label: "Obligations (in millions of USD)",
-      axis: "top",
-      transform: (e) => e/1000000,
-      grid: true
-    },
-    y: {
-      label: "Category Name"
-    },
-    marks: [
-      Plot.barX(categories, {x: "total_obs", y: "title", fill: "#28a0cb", href: "permalink", sort: {y: "x", reverse: true}}),
-      Plot.ruleX([0]),
-      Plot.axisY({label: null, lineWidth: 16, fontSize: "12px"}),
-    ]
-  })
-  document.querySelector("#categories-visualization").append(categoriesVisualization)
+      const totalObligations = {{ page.total_obs }};
+      const pageTitle = "{{ page.title }}";
+      const categoriesChartJson = {{ page.categories_json | jsonify }};
+      const fiscalYear = "{{ page.fiscal_year }}";
+      const categoriesChartData = JSON.parse(categoriesChartJson)
+      const categoriesJson = {{ page.categories_hierarchy | jsonify }};
+      const categoriesData = categoriesJson;
+      const itemsPerPage = 10;
+      let currentPage = 1;
+      let currentChart = null;
+      let activeTable = "category";
 
-  // Generate and render Sub-categories data table
-  new gridjs.Grid({
-    columns: [{
-      id: "title",
-      name: "Category",
-      formatter: (_, row) => gridjs.html(`<a href="${row.cells[3].data}">${row.cells[0].data}</a>`)
-    },
-    {
-      id: "total_num_programs",
-      name: "Number of Programs"
-    },
-    {
-      id: "total_obs",
-      name: "Obligations (FY {{ page.fiscal_year }})",
-      formatter: (cell) => `${ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(cell) }`
-    },
-    {
-      id: "permalink",
-      name: "Link",
-      hidden: true
-    }],
-    sort: true,
-    pagination: {
-      limit: 10
-    },
-    search: true,
-    data: categories
-  }).render(document.getElementById("categories-table"));
+      const categorySelect = document.getElementById("category");
+      const subcategorySelect = document.getElementById("subcategory");
+      const updateButton = document.getElementById("category-button");
+
+      subcategorySelect.disabled = true;
+
+      // Populate categories dropdown
+      categorySelect.innerHTML = `
+      <option value="/category">All categories</option>
+      ${categoriesData
+        .map(
+          (category) => `
+        <option value="${category.permalink}">${category.title}</option>
+      `
+        )
+        .join("")}
+    `;
+
+      // Reset subcategory dropdown
+      function resetSubcategory() {
+        subcategorySelect.innerHTML = '<option value="">-Select-</option>';
+        subcategorySelect.disabled = true;
+      }
+
+      // Handle category selection
+      categorySelect.addEventListener("change", function () {
+        const selectedCategory = categoriesData.find(
+          (cat) => cat.permalink === this.value
+        );
+
+        if (!selectedCategory) {
+          resetSubcategory();
+          return;
+        }
+
+        // Enable and populate subcategory dropdown
+        subcategorySelect.disabled = false;
+        subcategorySelect.innerHTML = `
+        <option value="">-Select-</option>
+        ${selectedCategory.subcategories
+          .map(
+            (sub) => `
+          <option value="${sub.permalink}">${sub.title}</option>
+        `
+          )
+          .join("")}
+      `;
+      });
+
+      // Handle update button click
+      updateButton.addEventListener("click", function () {
+        const categoryValue = categorySelect.value;
+        const subcategoryValue = subcategorySelect.value;
+
+        if (!categoryValue) {
+          return; // Do nothing if no category selected
+        }
+
+        // Navigate to appropriate permalink
+        const targetUrl = subcategoryValue || categoryValue;
+        window.location.href = targetUrl;
+      });
+
+
+      function downloadTableData() {
+        const dataToExport = categoriesChartData;
+        let headers = ['Category', 'Number of Programs', `Obligations (FY${fiscalYear})`];
+
+        let csvContent = headers.join(",") + "\n";
+        dataToExport.forEach((item) => {
+           const row = [
+              `"${item.title}"`,
+              item.total_num_programs || 0,
+              `"${formatCurrency(item.total_obs || 0)}"`,
+            ]; 
+          csvContent += row.join(",") + "\n";
+        });
+
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement("a");
+        if (link.download !== undefined) {
+          const url = URL.createObjectURL(blob);
+          link.setAttribute("href", url);
+          link.setAttribute("download", `${activeTable}_data.csv`);
+          link.style.visibility = "hidden";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      }
+
+      function formatObligations(amount) {
+        if (!amount) return "$0";
+        const trillion = 1000000000000;
+        const billion = 1000000000;
+        const million = 1000000;
+        const thousand = 1000;
+
+        if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
+        if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
+        if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
+        if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
+        return `$${amount.toFixed(2)}`;
+      }
+
+      function formatCurrency(amount) {
+        return new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        }).format(amount);
+      }
+
+  function setDropdownsFromUrl() {
+      // Get the current pathname
+      const currentPath = window.location.pathname;
+
+      // Find matching category first
+      const matchingCategory = categoriesData.find(category =>
+        category.permalink === currentPath ||
+        category.subcategories.some(sub => sub.permalink === currentPath)
+      );
+
+      if (matchingCategory) {
+        // Set category dropdown
+        categorySelect.value = matchingCategory.permalink;
+
+        // Enable subcategory dropdown
+        subcategorySelect.disabled = false;
+
+        // Populate subcategories
+        subcategorySelect.innerHTML = `
+          <option value="">-Select-</option>
+          ${matchingCategory.subcategories
+            .map(sub => `
+              <option value="${sub.permalink}">${sub.title}</option>
+            `)
+            .join('')}
+        `;
+
+        // If we're on a subcategory page, set that too
+        const matchingSubcategory = matchingCategory.subcategories.find(
+          sub => sub.permalink === currentPath
+        );
+
+        if (matchingSubcategory) {
+          subcategorySelect.value = matchingSubcategory.permalink;
+        }
+      }
+    }
+
+    function createCategoryChart() {
+      const groomedCategoriesChartData = [...categoriesChartData]
+        .sort((a, b) => (b.total_obs || 0) - (a.total_obs || 0))
+        .map((category) => ({
+          title: category.title,
+          value: (category.total_obs || 0),
+          permalink: category.permalink,
+        }));
+
+      const { divisor, suffix } = getFormattingInfo(groomedCategoriesChartData);
+
+      createBarChart(groomedCategoriesChartData, {
+        xLabel: "Obligations in US Dollars",
+        yLabel: "Categories",
+        valueFormatter: (value) => formatObligations(value),
+        xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
+        onClickHandler: (category) => {
+          if (category.permalink) {
+            window.location.href = category.permalink;
+          }
+        },
+      });
+    }
+
+    document
+        .querySelector(".usa-button--outline")
+        .addEventListener("click", downloadTableData);
+
+      createCategoryChart();
+
+      setDropdownsFromUrl();
+    });
 </script>

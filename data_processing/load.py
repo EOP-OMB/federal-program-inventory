@@ -149,10 +149,68 @@ def convert_to_url_string(s: str) -> str:
     """Convert a string to URL-friendly format."""
     return str(''.join(c if c.isalnum() else '-' for c in s.lower()))
 
+def clean_string(s: str) -> str:
+    """Clean a string by removing newlines and excessive whitespace."""
+    return s.replace('\n', '').replace('\r', '').strip()
+
+def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
+    """
+    Generate a nested structure of categories and subcategories with explicit object construction.
+    """
+    # Fetch parent categories
+    cursor.execute("""
+        SELECT DISTINCT
+            pc.id as parent_id,
+            pc.name as parent_name
+        FROM category pc
+        LEFT JOIN category c ON c.parent_id = pc.id
+        JOIN program_to_category ptc ON ptc.category_id = c.id
+        JOIN program p ON ptc.program_id = p.id
+        WHERE ptc.category_type = 'category'
+        ORDER BY pc.name
+    """)
+
+    categories = []
+    for parent in cursor.fetchall():
+        parent_name = clean_string(parent['parent_name'])  # Clean parent name
+
+        # Construct the parent category object
+        category_obj = {
+            'title': parent_name,
+            'permalink': f"/category/{convert_to_url_string(parent_name)}",
+            'subcategories': []  # Initialize empty subcategories list
+        }
+
+        # Fetch subcategories for the current parent category
+        cursor.execute("""
+            SELECT 
+                c.name as sub_name
+            FROM category c
+            JOIN program_to_category ptc ON ptc.category_id = c.id
+            WHERE c.parent_id = ?
+            AND ptc.category_type = 'category'
+            GROUP BY c.name
+            ORDER BY c.name
+        """, (parent['parent_id'],))
+
+        for sub in cursor.fetchall():
+            sub_name = clean_string(sub['sub_name'])  # Clean subcategory name
+
+            # Construct subcategory object and append to parent
+            category_obj['subcategories'].append({
+                'title': sub_name,
+                'permalink': f"{category_obj['permalink']}/{convert_to_url_string(sub_name)}"
+            })
+
+        # Append the constructed category object to the list
+        categories.append(category_obj)
+
+    return categories
+
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for categories with correct obligation calculations."""
     ensure_directory_exists(output_dir)
-    
+
     # Get all parent categories with at least one program
     cursor.execute("""
         WITH program_counts AS (
@@ -276,7 +334,8 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
                 'total_obs': float(sub['total_obligations'])
             } for sub in subcats], separators=(',', ':')),
             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
-            'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':'))
+            'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':')),
+            'categories_subcategories': get_categories_hierarchy(cursor)
         }
         
         # Write category markdown file
@@ -379,6 +438,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             'total_obs': total_subcategory_obs,
             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':')),
+            'categories_subcategories': get_categories_hierarchy(cursor),
             'programs': json.dumps([{
                 'cfda': p['id'],
                 'permalink': f"/program/{p['id']}",
@@ -428,11 +488,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
     base_programs = cursor.fetchall()
     
     for program in base_programs:
-
-        # Get all categories with single query and print raw results
+        # Modified query to only use category.type
         cursor.execute("""
             SELECT DISTINCT
-                ptc.category_type,
+                c.type as category_type,
                 c.name as category_name,
                 pc.name as parent_category_name
             FROM program_to_category ptc
@@ -473,9 +532,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         }
         
         for cat in categories:
-            if cat['category_type'] in ['assistance', 'beneficiary', 'applicant']:
-                program_categories[cat['category_type']].add(cat['category_name'])
-            elif cat['category_type'] == 'category':
+            category_type = cat['category_type']
+            if category_type in ['assistance', 'beneficiary', 'applicant']:
+                program_categories[category_type].add(cat['category_name'])
+            elif category_type == 'category':
                 if cat['parent_category_name']:
                     program_categories['categories'].add(
                         f"{cat['parent_category_name']} - {cat['category_name']}"
@@ -508,7 +568,6 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
     print("Completed program object creation")
 
     return programs_data
-
 
 def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     """
@@ -605,7 +664,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
-        WHERE ptc.category_type = 'applicant'
+        WHERE c.type = 'applicant'
         ORDER BY c.name
     """)
     applicant_types = [{'title': row['title']} for row in cursor.fetchall()]
@@ -617,7 +676,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
-        WHERE ptc.category_type = 'assistance'
+        WHERE c.type = 'assistance'
         ORDER BY c.name
     """)
     assistance_types = [{'title': row['title']} for row in cursor.fetchall()]
@@ -629,7 +688,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
-        WHERE ptc.category_type = 'beneficiary'
+        WHERE c.type = 'beneficiary'
         ORDER BY c.name
     """)
     beneficiary_types = [{'title': row['title']} for row in cursor.fetchall()]
@@ -643,7 +702,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         JOIN category pc ON c.parent_id = pc.id
-        WHERE ptc.category_type = 'category'
+        WHERE c.type = 'category'
         ORDER BY pc.name
     """)
     
@@ -681,7 +740,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         'other_agencies': sorted(other_agencies, key=lambda x: x['title']),
         'applicant_types': applicant_types,
         'assistance_types': assistance_types,
-        'beneficiary_types': beneficiary_types,  # Added this line
+        'beneficiary_types': beneficiary_types,
         'categories': sorted(categories, key=lambda x: x['title'])
     }
 
@@ -888,7 +947,8 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         'total_num_programs': total_programs,
         'total_obs': total_obs,
         'categories': categories_list,
-        'categories_json': categories_json
+        'categories_json': categories_json,
+        'categories_hierarchy': get_categories_hierarchy(cursor)
     }
     
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
