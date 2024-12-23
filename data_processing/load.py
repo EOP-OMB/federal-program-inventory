@@ -521,7 +521,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             FROM program_authorization 
             WHERE program_id = ?
         """, (program['id'],))
-        authorizations = [row['text'] for row in cursor.fetchall()]
+        authorizations = [{'text': row['text'], 'url': row['url']} for row in cursor.fetchall()]
         
         # Use sets to prevent duplicates when organizing categories
         program_categories = {
@@ -769,7 +769,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'sub-agency': program['sub_agency_name'] or 'N/A',
             'obligations': json.dumps(program['obligations'], separators=(',', ':')),
             'results': program['results'],
-            'authorizations': program['authorizations']
+            'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']]
         }
 
         # Write markdown file
