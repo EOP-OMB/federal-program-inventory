@@ -441,7 +441,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---housing-rights
 programs: '[{"cfda":"14.401","permalink":"/program/14.401","title":"Fair Housing Assistance
   Program","popular_name":"(FHAP)","agency":"Department of Housing and Urban Development","total_obs":27224318.0},{"cfda":"14.408","permalink":"/program/14.408","title":"Fair

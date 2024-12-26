@@ -438,7 +438,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---claims-against-foreign-government
 programs: '[{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department

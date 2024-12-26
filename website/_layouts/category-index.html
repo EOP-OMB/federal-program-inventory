@@ -4,22 +4,17 @@ header_title: Explore programs by category
 footer_include: _footer-category-index.html
 ---
 
-<section
-  class="bg-primary-darker padding-x-2 padding-y-3"
-  style="
+<section class="bg-primary-darker padding-x-2 padding-y-3" style="
     background-image: url('../../assets/img/banner.png'),
       linear-gradient(0deg, #272a63, #272a63);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: contain;
-  "
->
+  ">
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
-        <h1
-          class="usa-display usa-heading text-white font-heading-2xl text-light"
-        >
+        <h1 class="usa-display usa-heading text-white font-heading-2xl text-light">
           {{ layout.header_title }}
         </h1>
       </div>
@@ -57,21 +52,15 @@ footer_include: _footer-category-index.html
 
   <div class="display-flex flex-wrap flex-align-end">
     <div class="margin-right-205 margin-bottom-2">
-      <label class="usa-label" for="category"
-        >Select category
-        <span class="usa-label--required">(Required)</span></label
-      >
+      <label class="usa-label" for="category">Select category
+        <span class="usa-label--required">(Required)</span></label>
       <select class="usa-select width-mobile" name="category" id="category">
         <option value>All categories</option>
       </select>
     </div>
     <div class="margin-right-205 margin-bottom-2">
       <label class="usa-label" for="subcategory">Select sub-category</label>
-      <select
-        class="usa-select width-mobile"
-        name="subcategory"
-        id="subcategory"
-      >
+      <select class="usa-select width-mobile" name="subcategory" id="subcategory">
         <option value>-Select-</option>
       </select>
     </div>
@@ -87,37 +76,41 @@ footer_include: _footer-category-index.html
       </h3>
 
       <p class="text-ink font-sans-sm line-height-body-3">
-        The numbers below show
-        <span class="text-bold">Programs</span> (individual Assistance
-        Listings), actual <span class="text-bold">Obligations</span>, and their <span class="text-bold">sub-functions</span> (sub-categories),
-        all as submitted by agencies to
-        <a
-          href="https://sam.gov"
-          class="usa-link usa-link--external"
-          target="_blank"
-          rel="noopener noreferrer"
-          >SAM.gov</a
-        >.
+        This chart shows total program obligations by category, for the top categories. To view data for all categories,
+        download the .csv file below. All data for this chart was provided by the administering agency and sourced from
+        <a href="https://sam.gov" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">SAM.gov</a>.
       </p>
 
-      <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection" role="img"></svg>
+      <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection"
+        role="img"></svg>
 
       <div class="grid-row">
         <div class="grid-col-auto">
           <button class="usa-button usa-button--outline border-2px">
             <span>Download .csv file</span>
-            <svg
-              class="usa-icon margin-left-1"
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-            >
+            <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
               <use xlink:href="/assets/img/sprite.svg#file_download"></use>
             </svg>
           </button>
         </div>
       </div>
 
+    </div>
+  </div>
+  <div class="border-1px border-ink radius-md margin-bottom-5">
+    <div class="margin-205">
+      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
+        Obligations by Type of Program
+      </h3>
+      <p class="text-ink font-sans-sm line-height-body-3">
+        This chart shows total program obligations by category, for the top categories. To view data for all categories,
+        download the .csv file below. All data for this chart was provided by the administering agency and sourced from
+        <a href="https://sam.gov" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">SAM.gov</a>.
+      </p>
+
+      <div id="obligations-pie-chart" class="width-full"></div>
     </div>
   </div>
 </div>

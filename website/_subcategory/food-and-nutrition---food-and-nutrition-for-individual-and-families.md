@@ -448,7 +448,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/food-and-nutrition
-parent_title: Food And Nutrition
+parent_title: Food and Nutrition
 permalink: /category/food-and-nutrition/food-and-nutrition-for-individual-and-families
 programs: '[{"cfda":"10.182","permalink":"/program/10.182","title":"Pandemic Relief
   Activities: Local Food Purchase Agreements with States, Tribes, and Local Governments","popular_name":"LFPA","agency":"Department

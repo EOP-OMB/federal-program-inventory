@@ -157,54 +157,48 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
     """
     Generate a nested structure of categories and subcategories with explicit object construction.
     """
-    # Fetch parent categories
+    # Fetch parent categories with their subcategories
     cursor.execute("""
         SELECT DISTINCT
             pc.id as parent_id,
-            pc.name as parent_name
+            pc.name as parent_name,
+            c.name as sub_name
         FROM category pc
         LEFT JOIN category c ON c.parent_id = pc.id
         JOIN program_to_category ptc ON ptc.category_id = c.id
         JOIN program p ON ptc.program_id = p.id
         WHERE ptc.category_type = 'category'
-        ORDER BY pc.name
+        ORDER BY pc.name, c.name
     """)
 
     categories = []
-    for parent in cursor.fetchall():
-        parent_name = clean_string(parent['parent_name'])  # Clean parent name
+    current_parent = None
+    current_category_obj = None
 
-        # Construct the parent category object
-        category_obj = {
-            'title': parent_name,
-            'permalink': f"/category/{convert_to_url_string(parent_name)}",
-            'subcategories': []  # Initialize empty subcategories list
-        }
+    for row in cursor.fetchall():
+        parent_name = clean_string(row['parent_name'])
 
-        # Fetch subcategories for the current parent category
-        cursor.execute("""
-            SELECT 
-                c.name as sub_name
-            FROM category c
-            JOIN program_to_category ptc ON ptc.category_id = c.id
-            WHERE c.parent_id = ?
-            AND ptc.category_type = 'category'
-            GROUP BY c.name
-            ORDER BY c.name
-        """, (parent['parent_id'],))
-
-        for sub in cursor.fetchall():
-            sub_name = clean_string(sub['sub_name'])  # Clean subcategory name
-
-            # Construct subcategory object and append to parent
-            category_obj['subcategories'].append({
+        if current_parent != parent_name:
+            if current_category_obj is not None:
+                categories.append(current_category_obj)
+            
+            current_parent = parent_name
+            current_category_obj = {
+                'title': parent_name,
+                'permalink': f"/category/{convert_to_url_string(parent_name)}",
+                'subcategories': []
+            }
+        
+        if row['sub_name']:
+            sub_name = clean_string(row['sub_name'])
+            current_category_obj['subcategories'].append({
                 'title': sub_name,
-                'permalink': f"{category_obj['permalink']}/{convert_to_url_string(sub_name)}"
+                'permalink': f"{current_category_obj['permalink']}/{convert_to_url_string(sub_name)}"
             })
 
-        # Append the constructed category object to the list
-        categories.append(category_obj)
-
+    if current_category_obj is not None:
+        categories.append(current_category_obj)
+    
     return categories
 
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
@@ -228,9 +222,10 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         )
         SELECT DISTINCT 
             c.parent_id as id,
-            c.parent_id as title
+            pc.name as title  -- Get the actual category name instead of using ID
         FROM category c
-        JOIN program_counts pc ON c.parent_id = pc.parent_id
+        JOIN category pc ON c.parent_id = pc.id  -- Join to get parent category name
+        JOIN program_counts pc_count ON c.parent_id = pc_count.parent_id
     """)
     
     parent_categories = cursor.fetchall()
@@ -316,11 +311,13 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         
         totals = cursor.fetchone()
         
+        # Use the actual category title from the database
+        category_title = clean_string(parent['title'])
+        
         # Create category data
-        display_title = ' '.join(word.capitalize() for word in parent['title'].replace('-', ' ').split())
         category_data = {
-            'title': display_title,
-            'permalink': f"/category/{convert_to_url_string(display_title)}",
+            'title': category_title,
+            'permalink': f"/category/{convert_to_url_string(category_title)}",
             'fiscal_year': fiscal_year,
             'total_num_programs': totals['total_num_programs'],
             'total_num_sub_cats': len(subcats),
@@ -329,7 +326,7 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             'total_obs': total_category_obs,
             'sub_cats': json.dumps([{
                 'title': sub['title'],
-                'permalink': f"/category/{convert_to_url_string(display_title)}/{convert_to_url_string(sub['title'])}",
+                'permalink': f"/category/{convert_to_url_string(category_title)}/{convert_to_url_string(sub['title'])}",
                 'total_num_programs': sub['program_count'],
                 'total_obs': float(sub['total_obligations'])
             } for sub in subcats], separators=(',', ':')),
@@ -339,7 +336,7 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         }
         
         # Write category markdown file
-        file_path = os.path.join(output_dir, f"{convert_to_url_string(display_title)}.md")
+        file_path = os.path.join(output_dir, f"{convert_to_url_string(category_title)}.md")
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write('---\n')
             yaml.dump(category_data, file, allow_unicode=True)
@@ -425,10 +422,12 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         totals = cursor.fetchone()
         
         # Create subcategory data
-        parent_title = ' '.join(word.capitalize() for word in subcat['parent_title'].replace('-', ' ').split())
+        parent_title = subcat['parent_title']
+        subcategory_title = subcat['title']
+        
         subcategory_data = {
-            'title': subcat['title'],
-            'permalink': f"/category/{convert_to_url_string(parent_title)}/{convert_to_url_string(subcat['title'])}",
+            'title': subcategory_title,
+            'permalink': f"/category/{convert_to_url_string(parent_title)}/{convert_to_url_string(subcategory_title)}",
             'parent_title': parent_title,
             'parent_permalink': f"/category/{convert_to_url_string(parent_title)}",
             'fiscal_year': fiscal_year,
@@ -442,7 +441,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             'programs': json.dumps([{
                 'cfda': p['id'],
                 'permalink': f"/program/{p['id']}",
-                'title': p['title'],  # Added CFDA number to title
+                'title': p['title'],
                 'popular_name': p['popular_name'],
                 'agency': p['agency_name'] or 'Unspecified',
                 'total_obs': float(p['total_obs'])
@@ -451,7 +450,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         
         # Write subcategory markdown file
         file_path = os.path.join(output_dir, 
-            f"{convert_to_url_string(parent_title)}---{convert_to_url_string(subcat['title'])}.md")
+            f"{convert_to_url_string(parent_title)}---{convert_to_url_string(subcategory_title)}.md")
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write('---\n')
             yaml.dump(subcategory_data, file, allow_unicode=True)
@@ -616,7 +615,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             
         cfo_agencies.append(agency)
     
-    # Get non-CFO agencies (same query but is_cfo_act_agency = 0)
+    # Get non-CFO agencies
     cursor.execute("""
         SELECT DISTINCT 
             a1.id,
@@ -697,41 +696,40 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     cursor.execute("""
         SELECT DISTINCT 
             pc.id as id,
-            pc.name as title
+            pc.name as title,
+            c.name as sub_title
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         JOIN category pc ON c.parent_id = pc.id
         WHERE c.type = 'category'
-        ORDER BY pc.name
+        ORDER BY pc.name, c.name
     """)
     
     categories = []
+    current_category = None
+    
     for row in cursor.fetchall():
         if not row['title']:
             continue
             
-        category = {'title': row['title']}
+        if current_category is None or current_category['title'] != row['title']:
+            current_category = {
+                'title': row['title'],
+                'sub_categories': []
+            }
+            categories.append(current_category)
         
-        cursor.execute("""
-            SELECT DISTINCT 
-                c.name as title
-            FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id
-            WHERE c.parent_id = ?
-            AND ptc.category_type = 'category'
-            ORDER BY c.name
-        """, (row['id'],))
-        
-        subcategories = [{'title': sub_row['title']} 
-                        for sub_row in cursor.fetchall() 
-                        if sub_row['title']]
-        
-        if subcategories:
-            category['sub_categories'] = subcategories
-            
-        categories.append(category)
+        if row['sub_title']:
+            sub_exists = False
+            for existing_sub in current_category['sub_categories']:
+                if existing_sub['title'] == row['sub_title']:
+                    sub_exists = True
+                    break
+            if not sub_exists:
+                current_category['sub_categories'].append({
+                    'title': row['sub_title']
+                })
 
     print("Completed shared data creation")
     
@@ -836,6 +834,21 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             if obl['x'] == fiscal_year), 
             0
         )
+
+        unique_categories = set()
+        categories_json = []
+
+        for cat in program['categories']:
+            parts = cat.split(' - ', 1)
+            if len(parts) == 2:
+                parent, subcategory = parts
+                category_tuple = (parent, subcategory)
+                if category_tuple not in unique_categories:
+                    unique_categories.add(category_tuple)
+                    categories_json.append({
+                        'title': parent,
+                        'subCategory': {'title': subcategory}
+                    })
         
         # Rest of the function remains the same...
         program_json = {
@@ -853,10 +866,7 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             },
             'assistanceTypes': program['assistance_types'],
             'applicantTypes': program['applicant_types'],
-            'categories': [{
-                'title': cat.split(' - ')[0],
-                'subCategory': {'title': cat.split(' - ')[1]}
-            } for cat in program['categories'] if ' - ' in cat]
+            'categories': categories_json
         }
         
         programs_json.append(program_json)

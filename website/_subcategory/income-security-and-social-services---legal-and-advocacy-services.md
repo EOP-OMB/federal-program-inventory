@@ -445,7 +445,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/legal-and-advocacy-services
 programs: '[{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency Solutions
   Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department

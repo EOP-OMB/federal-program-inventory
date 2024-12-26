@@ -445,7 +445,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/labor-management-services
 programs: '[{"cfda":"10.520","permalink":"/program/10.520","title":"Agriculture Risk
   Management Education Partnerships Competitive Grants Program  ","popular_name":"ARME","agency":"Department

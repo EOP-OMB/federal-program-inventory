@@ -443,7 +443,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/research--demonstration
 programs: '[{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections Training
   and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0},{"cfda":"21.017","permalink":"/program/21.017","title":"Social

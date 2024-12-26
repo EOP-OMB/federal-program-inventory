@@ -453,7 +453,7 @@ permalink: /category/food-and-nutrition
 sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":162661652986.36},{"title":"Food
   and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":60433439853.36},{"title":"Food
   Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":534600000.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":462939449.36}]'
-title: Food And Nutrition
+title: Food and Nutrition
 total_num_agencies: 12
 total_num_applicant_types: 39
 total_num_programs: 87

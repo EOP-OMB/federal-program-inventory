@@ -460,7 +460,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/science-and-technology
-parent_title: Science And Technology
+parent_title: Science and Technology
 permalink: /category/science-and-technology/research---general
 programs: '[{"cfda":"10.215","permalink":"/program/10.215","title":"Sustainable Agriculture
   Research and Education","popular_name":"(SARE)","agency":"Department of Agriculture","total_obs":37478000.0},{"cfda":"10.216","permalink":"/program/10.216","title":"1890

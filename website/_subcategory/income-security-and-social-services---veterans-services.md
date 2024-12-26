@@ -447,7 +447,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/veterans-services
 programs: '[{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
   Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department

@@ -443,7 +443,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/food-and-nutrition
-parent_title: Food And Nutrition
+parent_title: Food and Nutrition
 permalink: /category/food-and-nutrition/food-inspection
 programs: '[{"cfda":"10.225","permalink":"/program/10.225","title":"Community Food
   Projects","popular_name":"Community Foods","agency":"Department of Agriculture","total_obs":4800000.0},{"cfda":"10.518","permalink":"/program/10.518","title":"Food

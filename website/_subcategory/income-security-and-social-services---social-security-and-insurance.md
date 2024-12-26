@@ -435,7 +435,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/social-security-and-insurance
 programs: '[{"cfda":"16.571","permalink":"/program/16.571","title":"Public Safety
   Officers'' Benefits Program","popular_name":"(PSOB)","agency":"Department of Justice","total_obs":187823416.0},{"cfda":"17.150","permalink":"/program/17.150","title":"Employee

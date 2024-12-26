@@ -445,7 +445,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/commercial-fisheries
 programs: '[{"cfda":"10.331","permalink":"/program/10.331","title":"Gus Schumacher
   Nutrition Incentive Program","popular_name":"GusNIP, The Gus Schumacher Nutrition

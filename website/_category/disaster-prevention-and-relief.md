@@ -466,7 +466,7 @@ sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-preventio
   Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":177045178243.0},{"title":"Flood
   Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12797106601.0},{"title":"Emergency
   Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":77,"total_obs":8866258998.9}]'
-title: Disaster Prevention And Relief
+title: Disaster Prevention and Relief
 total_num_agencies: 21
 total_num_applicant_types: 40
 total_num_programs: 160

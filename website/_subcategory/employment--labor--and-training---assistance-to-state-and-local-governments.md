@@ -451,7 +451,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/assistance-to-state-and-local-governments
 programs: '[{"cfda":"10.182","permalink":"/program/10.182","title":"Pandemic Relief
   Activities: Local Food Purchase Agreements with States, Tribes, and Local Governments","popular_name":"LFPA","agency":"Department

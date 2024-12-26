@@ -446,7 +446,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
 programs: '[{"cfda":"15.030","permalink":"/program/15.030","title":"Indian Law Enforcement","popular_name":"Law
   Enforcement","agency":"Department of the Interior","total_obs":17440714.0},{"cfda":"16.001","permalink":"/program/16.001","title":"Law

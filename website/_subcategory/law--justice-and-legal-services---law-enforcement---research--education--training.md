@@ -449,7 +449,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/law-enforcement---research--education--training
 programs: '[{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced Manufacturing
   Technology - Office of the Secretary of Defense (OSD), Manufacturing Technology

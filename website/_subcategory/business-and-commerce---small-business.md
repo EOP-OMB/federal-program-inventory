@@ -457,7 +457,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/small-business
 programs: '[{"cfda":"10.142","permalink":"/program/10.142","title":"Food Safety Certification
   for Specialty Crops Program","popular_name":"FSCSC","agency":"Department of Agriculture","total_obs":200000000.0},{"cfda":"10.212","permalink":"/program/10.212","title":"Small

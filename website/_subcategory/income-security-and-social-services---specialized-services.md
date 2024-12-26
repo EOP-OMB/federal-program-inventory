@@ -449,7 +449,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/specialized-services
 programs: '[{"cfda":"15.011","permalink":"/program/15.011","title":"Experienced Services
   Program","popular_name":"ESP","agency":"Department of the Interior","total_obs":6734168.0},{"cfda":"16.016","permalink":"/program/16.016","title":"Culturally

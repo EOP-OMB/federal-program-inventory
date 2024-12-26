@@ -445,7 +445,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/statistical
 programs: '[{"cfda":"10.978","permalink":"/program/10.978","title":"Farm Labor Stabilization
   and Protection Pilot Grant Program","popular_name":"Farm labor pilot program or

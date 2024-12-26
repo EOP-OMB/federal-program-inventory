@@ -456,7 +456,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
-parent_title: Information And Statistics
+parent_title: Information and Statistics
 permalink: /category/information-and-statistics/general
 programs: '[{"cfda":"10.025","permalink":"/program/10.025","title":"Plant and Animal
   Disease, Pest Control, and Animal Care","popular_name":null,"agency":"Department

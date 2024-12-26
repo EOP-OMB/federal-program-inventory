@@ -442,7 +442,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/public-assistance
 programs: '[{"cfda":"14.879","permalink":"/program/14.879","title":"Mainstream Vouchers","popular_name":null,"agency":"Department
   of Housing and Urban Development","total_obs":457000000.0},{"cfda":"15.025","permalink":"/program/15.025","title":"Services

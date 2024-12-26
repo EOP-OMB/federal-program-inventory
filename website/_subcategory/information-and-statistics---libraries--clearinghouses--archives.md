@@ -443,7 +443,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
-parent_title: Information And Statistics
+parent_title: Information and Statistics
 permalink: /category/information-and-statistics/libraries--clearinghouses--archives
 programs: '[{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative Extension
   Service","popular_name":"(CES)","agency":"Department of Agriculture","total_obs":303422017.0},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL

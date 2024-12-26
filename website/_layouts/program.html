@@ -156,17 +156,16 @@ footer_include: _footer-program.html
         </h4>
         <div id="program-single-audit" class="usa-accordion__content">
           <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
-            Single Audit Applies (2 CFR Part 200 Subpart F): <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true" focusable="false" role="img">
+            Single Audit Applies (2 CFR Part 200 Subpart F): <svg class="usa-icon text-success margin-left-1"
+              style="width: 1.5rem; height: 1.5rem;" aria-hidden="true" focusable="false" role="img">
               <use href="/assets/img/sprite.svg#check_circle"></use>
             </svg>
           </p>
-          
+
           <p class="font-family-sans line-height-body-4">
-            For additional information on single audit requirements for this program, review the current 
-            <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/" 
-            class="usa-link usa-link--external"
-            target="_blank" rel="noopener noreferrer"
-            >Compliance Supplement.</a>
+            For additional information on single audit requirements for this program, review the current
+            <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
+              class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
           </p>
         </div>
       </div>
@@ -185,7 +184,9 @@ footer_include: _footer-program.html
           <div class="usa-alert usa-alert--warning">
             <div class="usa-alert__body">
               <p class="usa-alert__text font-family-sans">
-                OMB is working with the U.S. Government Accountability Office (GAO) and agency offices of inspectors general to include links to relevant oversight reports. This section will be updated once this information is made available.
+                OMB is working with the U.S. Government Accountability Office (GAO) and agency offices of inspectors
+                general to include links to relevant oversight reports. This section will be updated once this
+                information is made available.
               </p>
             </div>
           </div>
@@ -224,9 +225,10 @@ footer_include: _footer-program.html
             <li class="padding-bottom-2">
               <span class="font-sans-md">
                 {% if auth.url %}
-                  <a href="{{ auth.url }}" class="usa-link" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
+                <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
+                  auth.text }}</a>
                 {% else %}
-                  {{ auth.text }}
+                {{ auth.text }}
                 {% endif %}
               </span>
             </li>
@@ -252,9 +254,10 @@ footer_include: _footer-program.html
         {% assign sorted_categories = page.categories | sort %}
 
         {% for category in sorted_categories %}
-        {% assign parts = category | split: " - " %}
-        {% assign main_category = parts[0] %}
-        {% assign sub_category = parts[1] %}
+        {% assign first_dash = category | split: " - " | first %}
+        {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
+        {% assign main_category = first_dash %}
+        {% assign sub_category = remaining %}
 
         {% if main_category != last_category %}
         {% unless forloop.first %}
@@ -333,20 +336,23 @@ footer_include: _footer-program.html
     <div class="display-flex flex-column font-sans-md">
       <div class="margin-bottom-2">
         <span>View this program's</span>
-        <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">awards and recipients at
+        <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">awards and recipients at
           USASpending.gov</a>
         <i class="fa-solid fa-external-link margin-left-1"></i>
       </div>
 
       <div class="margin-bottom-2">
         <span">View this program's</span>
-          <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">assistance listing at SAM.gov</a>
+          <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">assistance listing at SAM.gov</a>
           <i class="fa-solid fa-external-link margin-left-1"></i>
       </div>
 
       <div class="margin-bottom-2">
         <span>View this program's</span>
-        <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">available grant opportunities at
+        <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">available grant opportunities at
           Grants.gov</a>
         <i class="fa-solid fa-external-link margin-left-1"></i>
       </div>

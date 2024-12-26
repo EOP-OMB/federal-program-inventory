@@ -446,7 +446,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/families-and-child-welfare-services
 programs: '[{"cfda":"12.369","permalink":"/program/12.369","title":"Marine Corps Systems
   Command Federal Assistance Program","popular_name":null,"agency":"Department of

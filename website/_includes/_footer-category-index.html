@@ -1,26 +1,160 @@
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+  const totalObligations = {{ page.total_obs }};
+  const pageTitle = "{{ page.title }}";
+  const categoriesChartJson = {{ page.categories_json | jsonify }};
+  const fiscalYear = "{{ page.fiscal_year }}";
+  const categoriesChartData = JSON.parse(categoriesChartJson)
+  const categoriesJson = {{ page.categories_hierarchy | jsonify }};
+  // const obligationData = {{ page.obligation_by_type }};
+  const categoriesData = categoriesJson;
+  const itemsPerPage = 10;
+  let currentPage = 1;
+  let currentChart = null;
+  let activeTable = "category";
+      
 
-      const totalObligations = {{ page.total_obs }};
-      const pageTitle = "{{ page.title }}";
-      const categoriesChartJson = {{ page.categories_json | jsonify }};
-      const fiscalYear = "{{ page.fiscal_year }}";
-      const categoriesChartData = JSON.parse(categoriesChartJson)
-      const categoriesJson = {{ page.categories_hierarchy | jsonify }};
-      const categoriesData = categoriesJson;
-      const itemsPerPage = 10;
-      let currentPage = 1;
-      let currentChart = null;
-      let activeTable = "category";
+  function formatCurrency(amount) {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(amount);
+  }
 
-      const categorySelect = document.getElementById("category");
-      const subcategorySelect = document.getElementById("subcategory");
-      const updateButton = document.getElementById("category-button");
+//   function createObligationsPieChart() {
+//   // Parse the JSON data from the frontmatter variables
+//   const obligationData = [
+//     {"title": "Financial Assistance", "total_obs": 6437338876.0},
+//     {"title": "Tax Credit", "total_obs": 800640550.0}
+//   ];
+//   const totalObs = 4460575665667.449;
 
-      subcategorySelect.disabled = true;
+//   // Set up dimensions
+//   const width = 800;
+//   const height = 500;
+//   const legendWidth = 180; // Width reserved for legend
+//   const margin = {top: 20, right: 20, bottom: 20, left: 20};
+//   const radius = Math.min(width - legendWidth - margin.left - margin.right, height - margin.top - margin.bottom) / 2;
 
-      // Populate categories dropdown
-      categorySelect.innerHTML = `
+//   // Clear any existing content
+//   d3.select("#obligations-pie-chart").html("");
+
+//   // Create SVG container
+//   const svg = d3.select("#obligations-pie-chart")
+//     .append("svg")
+//     .attr("width", width)
+//     .attr("height", height);
+
+//   // Calculate percentages
+//   const data = obligationData.map(d => ({
+//     title: d.title,
+//     total_obs: d.total_obs,
+//     percentage: (d.total_obs / totalObs) * 100
+//   }));
+
+//   // Color scale
+//   const color = d3.scaleOrdinal()
+//     .domain(data.map(d => d.title))
+//     .range(['#DD4A24', '#FFB396']);
+
+//   // Add legend at the top left
+//   const legendData = data.map(d => ({
+//     title: d.title,
+//     percentage: d.percentage
+//   }));
+
+//   const legend = svg.append("g")
+//     .attr("class", "legend")
+//     .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+//   const legendItems = legend.selectAll(".legend-item")
+//     .data(legendData)
+//     .enter()
+//     .append("g")
+//     .attr("class", "legend-item")
+//     .attr("transform", (d, i) => `translate(0, ${i * 25})`);
+
+//   // Add colored circles for legend
+//   legendItems.append("circle")
+//     .attr("cx", 9)
+//     .attr("cy", 9)
+//     .attr("r", 6)
+//     .style("fill", d => color(d.title));
+
+//   legendItems.append("text")
+//     .attr("x", 24)
+//     .attr("y", 9)
+//     .attr("dy", ".35em")
+//     .style("font-size", "12px")
+//     .text(d => `${d.title} (${d.percentage.toFixed(1)}%)`);
+
+//   // Create a group for the pie chart and position it in the center, aligned to top
+//   const pieGroup = svg.append("g")
+//     .attr("transform", `translate(${legendWidth + (width - legendWidth) / 2}, ${margin.top + radius})`);
+
+//   // Create pie generator
+//   const pie = d3.pie()
+//     .value(d => d.percentage)
+//     .sort(null);
+
+//   // Create arc generator
+//   const arc = d3.arc()
+//     .innerRadius(0)
+//     .outerRadius(radius);
+
+//   // Create tooltip
+//   const tooltip = d3.select("#obligations-pie-chart")
+//     .append("div")
+//     .attr("class", "tooltip")
+//     .style("opacity", 0)
+//     .style("position", "absolute")
+//     .style("background-color", "white")
+//     .style("padding", "8px")
+//     .style("border", "1px solid #ddd")
+//     .style("border-radius", "4px")
+//     .style("pointer-events", "none");
+
+//   // Create the pie chart
+//   const slices = pieGroup.selectAll("path")
+//     .data(pie(data))
+//     .enter()
+//     .append("path")
+//     .attr("d", arc)
+//     .attr("fill", d => color(d.data.title))
+//     .attr("stroke", "white")
+//     .style("stroke-width", "2px")
+//     .on("mouseover", function(event, d) {
+//       tooltip.transition()
+//         .duration(200)
+//         .style("opacity", 0.9);
+//       tooltip.html(`
+//         ${d.data.title}<br/>
+//         ${d.data.percentage.toFixed(1)}%<br/>
+//         $${d3.format(",.0f")(d.data.total_obs)}
+//       `)
+//         .style("left", (event.pageX + 10) + "px")
+//         .style("top", (event.pageY - 10) + "px");
+//     })
+//     .on("mouseout", function() {
+//       tooltip.transition()
+//         .duration(500)
+//         .style("opacity", 0);
+//     });
+// }
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+
+
+    const categorySelect = document.getElementById("category");
+    const subcategorySelect = document.getElementById("subcategory");
+    const updateButton = document.getElementById("category-button");
+
+    subcategorySelect.disabled = true;
+
+    // Populate categories dropdown
+    categorySelect.innerHTML = `
       <option value="/category">All categories</option>
       ${categoriesData
         .map(
@@ -31,26 +165,26 @@
         .join("")}
     `;
 
-      // Reset subcategory dropdown
-      function resetSubcategory() {
-        subcategorySelect.innerHTML = '<option value="">-Select-</option>';
-        subcategorySelect.disabled = true;
+    // Reset subcategory dropdown
+    function resetSubcategory() {
+      subcategorySelect.innerHTML = '<option value="">-Select-</option>';
+      subcategorySelect.disabled = true;
+    }
+
+    // Handle category selection
+    categorySelect.addEventListener("change", function () {
+      const selectedCategory = categoriesData.find(
+        (cat) => cat.permalink === this.value
+      );
+
+      if (!selectedCategory) {
+        resetSubcategory();
+        return;
       }
 
-      // Handle category selection
-      categorySelect.addEventListener("change", function () {
-        const selectedCategory = categoriesData.find(
-          (cat) => cat.permalink === this.value
-        );
-
-        if (!selectedCategory) {
-          resetSubcategory();
-          return;
-        }
-
-        // Enable and populate subcategory dropdown
-        subcategorySelect.disabled = false;
-        subcategorySelect.innerHTML = `
+      // Enable and populate subcategory dropdown
+      subcategorySelect.disabled = false;
+      subcategorySelect.innerHTML = `
         <option value="">-Select-</option>
         ${selectedCategory.subcategories
           .map(
@@ -60,74 +194,67 @@
           )
           .join("")}
       `;
+    });
+
+    // Handle update button click
+    updateButton.addEventListener("click", function () {
+      const categoryValue = categorySelect.value;
+      const subcategoryValue = subcategorySelect.value;
+
+      if (!categoryValue) {
+        return; // Do nothing if no category selected
+      }
+
+      // Navigate to appropriate permalink
+      const targetUrl = subcategoryValue || categoryValue;
+      window.location.href = targetUrl;
+    });
+
+
+    function downloadTableData() {
+      const dataToExport = categoriesChartData;
+      let headers = ['Category', 'Number of Programs', `Obligations (FY${fiscalYear})`];
+
+      let csvContent = headers.join(",") + "\n";
+      dataToExport.forEach((item) => {
+        const row = [
+          `"${item.title}"`,
+          item.total_num_programs || 0,
+          `"${formatCurrency(item.total_obs || 0)}"`,
+        ];
+        csvContent += row.join(",") + "\n";
       });
 
-      // Handle update button click
-      updateButton.addEventListener("click", function () {
-        const categoryValue = categorySelect.value;
-        const subcategoryValue = subcategorySelect.value;
-
-        if (!categoryValue) {
-          return; // Do nothing if no category selected
-        }
-
-        // Navigate to appropriate permalink
-        const targetUrl = subcategoryValue || categoryValue;
-        window.location.href = targetUrl;
-      });
-
-
-      function downloadTableData() {
-        const dataToExport = categoriesChartData;
-        let headers = ['Category', 'Number of Programs', `Obligations (FY${fiscalYear})`];
-
-        let csvContent = headers.join(",") + "\n";
-        dataToExport.forEach((item) => {
-           const row = [
-              `"${item.title}"`,
-              item.total_num_programs || 0,
-              `"${formatCurrency(item.total_obs || 0)}"`,
-            ]; 
-          csvContent += row.join(",") + "\n";
-        });
-
-        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-        const link = document.createElement("a");
-        if (link.download !== undefined) {
-          const url = URL.createObjectURL(blob);
-          link.setAttribute("href", url);
-          link.setAttribute("download", `${activeTable}_data.csv`);
-          link.style.visibility = "hidden";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const link = document.createElement("a");
+      if (link.download !== undefined) {
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", `${activeTable}_data.csv`);
+        link.style.visibility = "hidden";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
       }
+    }
 
-      function formatObligations(amount) {
-        if (!amount) return "$0";
-        const trillion = 1000000000000;
-        const billion = 1000000000;
-        const million = 1000000;
-        const thousand = 1000;
+    function formatObligations(amount) {
+      if (!amount) return "$0";
+      const trillion = 1000000000000;
+      const billion = 1000000000;
+      const million = 1000000;
+      const thousand = 1000;
 
-        if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
-        if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
-        if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
-        if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
-        return `$${amount.toFixed(2)}`;
-      }
+      if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
+      if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
+      if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
+      if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
+      return `$${amount.toFixed(2)}`;
+    }
 
-      function formatCurrency(amount) {
-        return new Intl.NumberFormat("en-US", {
-          style: "currency",
-          currency: "USD",
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0,
-        }).format(amount);
-      }
 
-  function setDropdownsFromUrl() {
+
+    function setDropdownsFromUrl() {
       // Get the current pathname
       const currentPath = window.location.pathname;
 
@@ -190,11 +317,12 @@
     }
 
     document
-        .querySelector(".usa-button--outline")
-        .addEventListener("click", downloadTableData);
+      .querySelector(".usa-button--outline")
+      .addEventListener("click", downloadTableData);
 
-      createCategoryChart();
+    createCategoryChart();
 
-      setDropdownsFromUrl();
-    });
+    setDropdownsFromUrl();
+  });
+  // createObligationsPieChart();
 </script>

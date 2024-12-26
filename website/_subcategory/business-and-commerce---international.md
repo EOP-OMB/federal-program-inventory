@@ -449,7 +449,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/international
 programs: '[{"cfda":"10.617","permalink":"/program/10.617","title":"PL-480 Market
   Development and Technical Assistance","popular_name":"Section 108","agency":"Department

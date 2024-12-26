@@ -446,7 +446,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/disabled-and-handicapped-services
 programs: '[{"cfda":"14.241","permalink":"/program/14.241","title":"Housing Opportunities
   for Persons with AIDS","popular_name":"HOPWA","agency":"Department of Housing and

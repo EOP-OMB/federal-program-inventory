@@ -447,7 +447,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/training-assistance
 programs: '[{"cfda":"11.023","permalink":"/program/11.023","title":"Science, Technology,
   Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM

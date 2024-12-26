@@ -446,7 +446,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/old-age-assistance
 programs: '[{"cfda":"10.565","permalink":"/program/10.565","title":"Commodity Supplemental
   Food Program","popular_name":"CSFP","agency":"Department of Agriculture","total_obs":332000000.0},{"cfda":"14.921","permalink":"/program/14.921","title":"Older

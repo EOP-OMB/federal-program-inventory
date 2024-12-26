@@ -444,7 +444,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/food-and-nutrition
-parent_title: Food And Nutrition
+parent_title: Food and Nutrition
 permalink: /category/food-and-nutrition/food-and-nutrition-for-children
 programs: '[{"cfda":"10.131","permalink":"/program/10.131","title":"Seafood Trade
   Relief Program (STRP)","popular_name":null,"agency":"Department of Agriculture","total_obs":612277.0},{"cfda":"10.185","permalink":"/program/10.185","title":"Local

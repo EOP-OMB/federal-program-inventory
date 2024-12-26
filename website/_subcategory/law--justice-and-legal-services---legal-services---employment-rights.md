@@ -439,7 +439,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
 programs: '[{"cfda":"16.021","permalink":"/program/16.021","title":"Justice Systems
   Response to Families","popular_name":"Justice for Families Program","agency":"Department

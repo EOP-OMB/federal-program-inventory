@@ -452,7 +452,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/disaster-prevention-and-relief
-parent_title: Disaster Prevention And Relief
+parent_title: Disaster Prevention and Relief
 permalink: /category/disaster-prevention-and-relief/emergency-health-services
 programs: '[{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever Extension
   Funding","popular_name":"1862 LGI\u2019s: 1862 CES (Smith-Lever) and DCPPERA, 1862

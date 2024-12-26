@@ -449,7 +449,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/emergency-and-crisis-assistance
 programs: '[{"cfda":"10.578","permalink":"/program/10.578","title":"WIC Grants To
   States (WGS) ","popular_name":"WIC Grants to States (WGS)","agency":"Department

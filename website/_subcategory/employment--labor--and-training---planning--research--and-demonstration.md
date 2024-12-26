@@ -450,7 +450,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/planning--research--and-demonstration
 programs: '[{"cfda":"10.872","permalink":"/program/10.872","title":"Healthy Food Financing
   Initiative","popular_name":"HFFI","agency":"Department of Agriculture","total_obs":25000000.0},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm

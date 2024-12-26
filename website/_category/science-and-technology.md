@@ -470,7 +470,7 @@ permalink: /category/science-and-technology
 sub_cats: '[{"title":"Research - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":121,"total_obs":17776170389.78},{"title":"Research
   - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":13258277920.78},{"title":"Information
   and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":76,"total_obs":6655743350.11}]'
-title: Science And Technology
+title: Science and Technology
 total_num_agencies: 24
 total_num_applicant_types: 42
 total_num_programs: 179

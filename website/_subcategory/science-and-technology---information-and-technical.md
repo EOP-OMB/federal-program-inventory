@@ -457,7 +457,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/science-and-technology
-parent_title: Science And Technology
+parent_title: Science and Technology
 permalink: /category/science-and-technology/information-and-technical
 programs: '[{"cfda":"10.230","permalink":"/program/10.230","title":"Farm of the Future","popular_name":null,"agency":"Department
   of Agriculture","total_obs":4000000.0},{"cfda":"10.232","permalink":"/program/10.232","title":"Blue

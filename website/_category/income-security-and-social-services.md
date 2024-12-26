@@ -477,7 +477,7 @@ sub_cats: '[{"title":"Old Age Assistance","permalink":"/category/income-security
   Veterans","permalink":"/category/income-security-and-social-services/disabled-veterans","total_num_programs":20,"total_obs":3304811722.0},{"title":"Specialized
   Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":1423323789.0},{"title":"Research,
   Demonstration","permalink":"/category/income-security-and-social-services/research--demonstration","total_num_programs":16,"total_obs":173512633.0}]'
-title: Income Security And Social Services
+title: Income Security and Social Services
 total_num_agencies: 22
 total_num_applicant_types: 39
 total_num_programs: 215

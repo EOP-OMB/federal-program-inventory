@@ -449,7 +449,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/facilities--planning--construction--and-equipment
 programs: '[{"cfda":"10.712","permalink":"/program/10.712","title":"Great American
   Outdoors Act Deferred Maintenance Program","popular_name":"GAOA","agency":"Department

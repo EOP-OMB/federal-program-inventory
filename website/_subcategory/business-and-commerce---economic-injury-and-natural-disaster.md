@@ -454,7 +454,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/economic-injury-and-natural-disaster
 programs: '[{"cfda":"10.056","permalink":"/program/10.056","title":"Farm Storage Facility
   Loans","popular_name":"FSFL and SSFL","agency":"Department of Agriculture","total_obs":484200000.0},{"cfda":"10.378","permalink":"/program/10.378","title":"Biofuel

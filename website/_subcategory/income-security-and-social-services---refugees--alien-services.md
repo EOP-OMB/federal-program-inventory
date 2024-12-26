@@ -437,7 +437,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/refugees--alien-services
 programs: '[{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement Support
   Centers (RSCs) for U.S. Refugee Resettlement","popular_name":null,"agency":"Department

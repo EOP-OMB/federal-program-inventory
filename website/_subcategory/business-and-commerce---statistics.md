@@ -444,7 +444,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/statistics
 programs: '[{"cfda":"11.013","permalink":"/program/11.013","title":"Education Quality
   Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed

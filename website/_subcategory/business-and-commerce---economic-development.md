@@ -460,7 +460,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/economic-development
 programs: '[{"cfda":"10.056","permalink":"/program/10.056","title":"Farm Storage Facility
   Loans","popular_name":"FSFL and SSFL","agency":"Department of Agriculture","total_obs":484200000.0},{"cfda":"10.232","permalink":"/program/10.232","title":"Blue

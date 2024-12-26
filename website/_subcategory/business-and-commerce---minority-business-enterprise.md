@@ -448,7 +448,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/minority-business-enterprise
 programs: '[{"cfda":"10.237","permalink":"/program/10.237","title":"From Learning
   to Leading: Cultivating the Next Generation of Diverse Food and Agriculture Professionals","popular_name":"NEXTGEN","agency":"Department

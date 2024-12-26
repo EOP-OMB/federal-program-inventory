@@ -455,7 +455,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
-parent_title: Business And Commerce
+parent_title: Business and Commerce
 permalink: /category/business-and-commerce/special-technical-service
 programs: '[{"cfda":"10.231","permalink":"/program/10.231","title":"Agriculture Business
   Innovation Center at HBCU","popular_name":null,"agency":"Department of Agriculture","total_obs":2000000.0},{"cfda":"10.377","permalink":"/program/10.377","title":"Agriculture

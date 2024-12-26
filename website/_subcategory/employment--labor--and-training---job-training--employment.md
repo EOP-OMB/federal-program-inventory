@@ -460,7 +460,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
-parent_title: Employment, Labor, And Training
+parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/job-training--employment
 programs: '[{"cfda":"10.532","permalink":"/program/10.532","title":"School Nutrition
   Training Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0},{"cfda":"10.699","permalink":"/program/10.699","title":"Partnership

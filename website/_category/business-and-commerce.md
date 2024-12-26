@@ -474,7 +474,7 @@ sub_cats: '[{"title":"Small Business","permalink":"/category/business-and-commer
   Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":6177534111.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":29,"total_obs":2368538342.0},{"title":"Special
   Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":2318209001.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":756687153.0},{"title":"Commercial
   Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":381410525.0}]'
-title: Business And Commerce
+title: Business and Commerce
 total_num_agencies: 28
 total_num_applicant_types: 39
 total_num_programs: 237

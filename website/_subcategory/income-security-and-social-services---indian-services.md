@@ -445,7 +445,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/indian-services
 programs: '[{"cfda":"10.567","permalink":"/program/10.567","title":"Food Distribution
   Program on Indian Reservations","popular_name":"FDPIR","agency":"Department of Agriculture","total_obs":126000000.0},{"cfda":"15.025","permalink":"/program/15.025","title":"Services

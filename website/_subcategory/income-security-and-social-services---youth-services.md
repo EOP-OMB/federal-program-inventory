@@ -444,7 +444,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/income-security-and-social-services
-parent_title: Income Security And Social Services
+parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/youth-services
 programs: '[{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative Extension
   Service","popular_name":"(CES)","agency":"Department of Agriculture","total_obs":303422017.0},{"cfda":"12.404","permalink":"/program/12.404","title":"National

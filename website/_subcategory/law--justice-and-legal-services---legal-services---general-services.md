@@ -446,7 +446,7 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
-parent_title: Law, Justice And Legal Services
+parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---general-services
 programs: '[{"cfda":"10.704","permalink":"/program/10.704","title":"Law Enforcement
   Agreements","popular_name":"Law Enforcement Agreements","agency":"Department of
