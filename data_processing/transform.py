@@ -756,7 +756,7 @@ def ingest_additional_programs():
     # Pull out all agency and subagency names for the ID map
     agency_names = df[df.agency.notnull()]['agency'].unique().tolist() + df[df.subagency.notnull()]['subagency'].unique().tolist()
     agency_names.append('Internal Revenue Service (IRS)') if 'Internal Revenue Service (IRS)' not in agency_names else agency_names
-    # Populate Agency ID map with key values of <Agency Name>: <Agency ID>
+    # Populate Agency ID Map with key value pairings, <Agency Name>: <Agency ID>
     try:
         cur.execute(f"SELECT * FROM agency WHERE agency_name in {tuple(agency_names)};")
     except Exception as e:
@@ -779,7 +779,8 @@ def ingest_additional_programs():
     the name of the category if category. Or combining the parent category and sub 
     category name for sub category.
     '''
-    # agencies and subagencies from database. 
+    for category in df[df.category.notnull()]['category'].unique():
+        df = pd.concat([df, pd.DataFrame([{'category': category}])])
     # category.type is 'category'
     df.insert(df.shape[1], 'category.type', 'category')
     df.insert(df.shape[1], 'program.agency_id', None)
@@ -852,7 +853,7 @@ def ingest_additional_programs():
 # load_sam_category()
 # load_sam_programs()
 # load_category_and_sub_category()
-ingest_additional_programs()
+# ingest_additional_programs()
 
 # close the db connection
 conn.close()
