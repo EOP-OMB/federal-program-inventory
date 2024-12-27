@@ -330,6 +330,7 @@ footer_include: _footer-program.html
     </div>
     {% endif %}
 
+    {% if page.program_type == "assistance_listing" %}
     <!-- Additional Resources Section -->
     <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-bottom-1 margin-top-0">Additional resources</h2>
 
@@ -357,12 +358,15 @@ footer_include: _footer-program.html
         <i class="fa-solid fa-external-link margin-left-1"></i>
       </div>
 
-      <!-- <div class="margin-bottom-2">
+      <div class="margin-bottom-2">
         <span>View this program's</span>
-        <a href="#" class="usa-link usa-link--external">single audits at FAC.gov</a>
+        <a href="https://fac.gov/" class="usa-link usa-link--external" target="_blank"
+        rel="noopener noreferrer">single audits at FAC.gov</a>
         <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div> -->
+      </div>
     </div>
+    <!-- Additional Resources Section End-->
+    {% endif %}
   </div>
   <!--- Program Column Display End --->
 </div>

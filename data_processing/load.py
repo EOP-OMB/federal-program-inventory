@@ -559,7 +559,8 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'categories': sorted(list(program_categories['categories'])),
             'obligations': obligations,
             'results': results,
-            'authorizations': authorizations
+            'authorizations': authorizations,
+            'program_type':program['program_type']
         }
         
         programs_data.append(program_data)
@@ -767,6 +768,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'sub-agency': program['sub_agency_name'] or 'N/A',
             'obligations': json.dumps(program['obligations'], separators=(',', ':')),
             'results': program['results'],
+            'program_type': program['program_type'],
             'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']]
         }
 
