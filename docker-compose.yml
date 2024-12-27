@@ -48,7 +48,7 @@ services:
       - internal
 
   indexer:
-    image: python:3.9
+    build: ./scripts
     volumes:
       - ./website/data:/app/data
       - ./scripts:/app/scripts

@@ -1,5 +1,12 @@
 <script>
   const obligationsJson = {{ page.obligations }};
+  {% if page.program_outlays %}
+    const outlaysJson = {{ page.program_outlays }};
+    {% else %}
+    const outlaysJson = [];
+  {% endif %}
+  const hasObligations = obligationsJson && obligationsJson.length > 0;
+  const hasOutlays = outlaysJson && outlaysJson.length > 0;
   function getYearBars(yearData) {
     const bars = [];
     if (yearData.sam_actual > 0) {
@@ -235,6 +242,242 @@
     window.addEventListener('resize', handleResize);
 }
 
+function createFiscalYearOutlaysChart(outlaysJson, {
+    container = '#outlaysChart'
+} = {}) {
+    // Parse data if needed
+    const outlays = typeof outlaysJson === 'string' ? JSON.parse(outlaysJson) : outlaysJson;
+
+    // Clear existing chart
+    d3.select(container).selectAll("*").remove();
+
+    // Get container width
+    const containerWidth = document.querySelector(container).getBoundingClientRect().width;
+    
+    // Make height responsive to width
+    const aspectRatio = 0.6;
+    const width = containerWidth;
+    const height = Math.max(300, width * aspectRatio);
+
+    // Responsive margins
+    const margin = {
+        top: Math.max(20, width * 0.05),
+        right: Math.max(20, width * 0.05),
+        bottom: Math.max(80, width * 0.12),
+        left: Math.max(60, width * 0.1)
+    };
+
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    // Create SVG with viewBox for better scaling
+    const svg = d3.select(container)
+        .append("svg")
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Get years and create scales
+    const years = outlays.map(d => d.x);
+
+    // X scale for year groups
+    const xScale = d3.scaleBand()
+        .domain(years)
+        .range([0, innerWidth])
+        .padding(0.6);
+
+    // Calculate stacked data
+    const stackedData = outlays.map(d => ({
+        year: d.x,
+        'Revenue losses': d.forgone_revenue || 0,
+        'Outlays': d.outlays || 0
+    }));
+
+    const stack = d3.stack()
+        .keys(['Revenue losses', 'Outlays']);
+
+    const series = stack(stackedData);
+
+    // Get max value for y scale
+    const maxValue = d3.max(series, d => d3.max(d, d => d[1]));
+
+    // Y scale
+    const yScale = d3.scaleLinear()
+        .domain([0, maxValue])
+        .range([innerHeight, 0])
+        .nice();
+
+    // Get formatting info for consistent formatting
+    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+
+    // Color scale
+    const colors = {
+        'Revenue losses': "rgb(21, 96, 130)", // Darker blue
+        'Outlays': "rgb(34, 186, 229)"  // Lighter blue
+    };
+
+    // Responsive font sizes
+    const fontSize = Math.max(10, Math.min(12, width / 50));
+    const legendFontSize = Math.max(10, Math.min(14, width / 45));
+
+    // Create axes
+    const xAxis = d3.axisBottom(xScale);
+    const yAxis = d3.axisLeft(yScale)
+        .ticks(5)
+        .tickFormat(d => formatAxisValues(d, divisor, suffix));
+
+    // Add axes
+    svg.append("g")
+        .attr("class", "x-axis")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .call(xAxis)
+        .style("font-size", `${fontSize}px`);
+
+    svg.append("g")
+        .attr("class", "y-axis")
+        .call(yAxis)
+        .style("font-size", `${fontSize}px`);
+
+    // Create stacked bars
+    svg.append("g")
+        .selectAll("g")
+        .data(series)
+        .join("g")
+        .attr("fill", d => colors[d.key])
+        .selectAll("rect")
+        .data(d => d)
+        .join("rect")
+        .attr("x", d => xScale(d.data.year))
+        .attr("y", d => yScale(d[1]))
+        .attr("height", d => yScale(d[0]) - yScale(d[1]))
+        .attr("width", xScale.bandwidth())
+        .on("mouseover", function(event, d) {
+            const value = d[1] - d[0];
+            const tooltip = d3.select("body").selectAll(".tooltip").data([null])
+                .join("div")
+                .attr("class", "tooltip")
+                .style("position", "absolute")
+                .style("background", "white")
+                .style("padding", "8px")
+                .style("border", "1px solid #ddd")
+                .style("border-radius", "4px")
+                .style("pointer-events", "none")
+                .style("font-size", `${fontSize}px`);
+
+            tooltip
+                .style("opacity", 1)
+                .html(formatObligations(value))
+                .style("left", `${event.pageX + 10}px`)
+                .style("top", `${event.pageY - 28}px`);
+
+            d3.select(this).attr("fill", d3.color(d3.select(this.parentNode).attr("fill")).darker(0.2));
+        })
+        .on("mouseout", function() {
+            d3.select("body").selectAll(".tooltip").remove();
+            d3.select(this).attr("fill", d3.select(this.parentNode).attr("fill"));
+        });
+
+    // Add legend
+    const legendData = [
+        { label: "Outlays", color: colors['Outlays'] },
+        { label: "Revenue losses", color: colors['Revenue losses'] }
+    ];
+
+    const itemSpacing = 180;
+    const legendY = innerHeight + 40;
+
+    const legend = svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", `translate(${innerWidth},${legendY})`);
+
+    const legendItems = legend.selectAll(".legend-item")
+        .data(legendData)
+        .enter()
+        .append("g")
+        .attr("class", "legend-item")
+        .attr("transform", (d, i) => `translate(${-((legendData.length - i) * itemSpacing)},0)`);
+
+    legendItems.append("rect")
+        .attr("width", 12)
+        .attr("height", 12)
+        .attr("fill", d => d.color);
+
+    legendItems.append("text")
+        .attr("x", 16)
+        .attr("y", 10)
+        .text(d => d.label)
+        .style("font-size", `${legendFontSize}px`);
+
+    // Add resize handler
+    const resizeChart = () => {
+        createFiscalYearOutlaysChart(outlays, { container });
+    };
+
+    let resizeTimer;
+    const handleResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resizeChart, 250);
+    };
+
+    window.removeEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
+}
+
+function initializeViewControls(hasObligations, hasOutlays) {
+    const viewControls = document.querySelector('.display-flex.flex-align-center');
+    const obligationsChart = document.querySelector('#obligationsChart');
+    const outlaysChart = document.querySelector('#outlaysChart');
+
+    // Handle view controls visibility
+    if (!hasObligations || !hasOutlays) {
+        // Hide view controls if we don't have both types of data
+        if (viewControls) {
+            viewControls.style.display = 'none';
+        }
+    }
+
+    // Initialize appropriate chart based on data availability
+    if (hasObligations && !hasOutlays) {
+        // Only show obligations chart
+        if (outlaysChart) outlaysChart.style.display = 'none';
+        createFiscalYearObligationsChart(obligationsJson, {
+            container: "#obligationsChart"
+        });
+    } else if (!hasObligations && hasOutlays) {
+        // Only show outlays chart
+        if (obligationsChart) obligationsChart.style.display = 'none';
+        createFiscalYearOutlaysChart(outlaysJson, {
+            container: "#outlaysChart"
+        });
+    } else if (hasObligations && hasOutlays) {
+        // Show obligations by default, hide outlays
+        if (outlaysChart) outlaysChart.style.display = 'none';
+        createFiscalYearObligationsChart(obligationsJson, {
+            container: "#obligationsChart"
+        });
+        
+        // Setup radio button event listeners
+        document.querySelectorAll("[name='view-options']").forEach((radio) => {
+            radio.addEventListener("change", (event) => {
+                if (event.target.id === 'obligations') {
+                    obligationsChart.style.display = 'block';
+                    outlaysChart.style.display = 'none';
+                    createFiscalYearObligationsChart(obligationsJson, {
+                        container: '#obligationsChart'
+                    });
+                } else {
+                    obligationsChart.style.display = 'none';
+                    outlaysChart.style.display = 'block';
+                    createFiscalYearOutlaysChart(outlaysJson, {
+                        container: '#outlaysChart'
+                    });
+                }
+            });
+        });
+    }
+}
+
 function formatCurrency(amount) {
         return new Intl.NumberFormat("en-US", {
           style: "currency",
@@ -257,6 +500,22 @@ function formatObligationsForCSV(data) {
             `"${formatCurrency(row.sam_actual || 0)}"`,
             `"${formatCurrency(row.sam_estimate || 0)}"`,
             `"${formatCurrency(row.usa_spending_actual || 0)}"`
+        ];
+        csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+}
+
+function formatOutlaysForCSV(data) {
+    const headers = ['Fiscal Year', 'Outlays', 'Revenue losses'];
+    let csvContent = headers.join(",") + "\n";
+
+    data.forEach((row) => {
+        const formattedRow = [
+            `"${row.x}"`,
+            `"${formatCurrency(row.outlays || 0)}"`,
+            `"${formatCurrency(row.forgone_revenue || 0)}"`
         ];
         csvContent += formattedRow.join(",") + "\n";
     });
@@ -347,35 +606,48 @@ function initializeProgramFilters() {
 }
 
 function initializeDownloadButton(){
-  const downloadButton = document.getElementById('downloadData');
+    const downloadButton = document.getElementById('downloadData');
     if (downloadButton) {
         downloadButton.addEventListener('click', function() {
-            // Get the obligations data
-            const data = obligationsJson;
+            let data, filename, csvContent;
+            
+            // Determine which chart is currently visible
+            const isOutlaysVisible = document.querySelector('#outlaysChart') && 
+                document.querySelector('#outlaysChart').style.display !== 'none' && 
+                document.getElementById('outlays')?.checked;
+
+            if (isOutlaysVisible && outlaysJson && outlaysJson.length > 0) {
+                data = outlaysJson;
+                filename = 'program-outlays.csv';
+                csvContent = formatOutlaysForCSV(data);
+            } else if (obligationsJson && obligationsJson.length > 0) {
+                data = obligationsJson;
+                filename = 'program-obligations.csv';
+                csvContent = formatObligationsForCSV(data);
+            }
+
             if (!data) {
-                console.error('No obligations data available');
+                console.error('No data available for download');
                 return;
             }
-            
-            // Format data as CSV
-            const csvContent = formatObligationsForCSV(data);
-            
-            // Create filename with program number if available
-            const filename = 'program-obligations.csv';
-            
-            // Trigger download
+
             downloadCSV(filename, csvContent);
         });
     }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get obligations data from page front matter
 
-    // Initialize the chart
-    createFiscalYearObligationsChart(obligationsJson, {
-      container: "#obligationsChart",
-    });
+    // // Initialize the chart
+    // createFiscalYearObligationsChart(obligationsJson, {
+    //   container: "#obligationsChart",
+    // });
+    // createFiscalYearOutlaysChart(outlaysJson, {
+    //   container: "#outlaysChart"
+    // });
+
+    initializeViewControls(hasObligations, hasOutlays);
+
     initializeDownloadButton();
     initializeProgramFilters();
 
