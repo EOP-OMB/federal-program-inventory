@@ -480,7 +480,9 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
              WHERE a2.id = a.tier_1_agency_id) as top_agency_name,
             (SELECT a2.agency_name 
              FROM agency a2 
-             WHERE a2.id = a.tier_2_agency_id) as sub_agency_name
+             WHERE a2.id = a.tier_2_agency_id) as sub_agency_name,
+            p.is_subpart_f,
+            p.rules_regulations
         FROM program p
         LEFT JOIN agency a ON p.agency_id = a.id
     """)
@@ -560,7 +562,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'categories': sorted(list(program_categories['categories'])),
             'obligations': obligations,
             'results': results,
-            'authorizations': authorizations
+            'authorizations': authorizations,
+            'is_subpart_f': program['is_subpart_f'],
+            'rules_regulations': program['rules_regulations']
+            
         }
         
         programs_data.append(program_data)
@@ -769,7 +774,9 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'sub-agency': program['sub_agency_name'] or 'N/A',
             'obligations': json.dumps(program['obligations'], separators=(',', ':')),
             'results': program['results'],
-            'authorizations': program['authorizations']
+            'authorizations': program['authorizations'],
+            'is_subpart_f': program['is_subpart_f'],
+            'rules_regulations': program['rules_regulations']
         }
 
         # Write markdown file

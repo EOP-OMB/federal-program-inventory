@@ -15,7 +15,7 @@ TEMP_DB_DISK_DIRECTORY = "./Volumes/CER01/"
 TEMP_DB_FILE_PATH = "temp_data.db"
 
 # transformed database, for use in the load / generate stage
-TRANSFORMED_FILES_DIRECTORY = "transformed/"
+TRANSFORMED_FILES_DIRECTORY = "./transformed/"
 TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
 
 # usaspending file paths; these riles are not stored in the primary
@@ -140,13 +140,15 @@ PROGRAM_CREATE_TABLE_SQL = """
         usaspending_awards_url TEXT,
         grants_url TEXT,
         program_type TEXT,
+        is_subpart_f BOOLEAN,
+        rules_regulations TEXT,
         FOREIGN KEY(agency_id) REFERENCES agency(id)
     );
     """
 
 PROGRAM_INSERT_SQL = """
     INSERT INTO program
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
     """
 
 PROGRAM_AUTHORIZATION_DROP_TABLE_SQL = """
@@ -552,7 +554,11 @@ def load_sam_programs():
                         + usaspending_hashes.get(d["programNumber"], ""),
                         "https://grants.gov/search-grants?cfda="
                         + d["programNumber"],
-                        "assistance_listing"])
+                        "assistance_listing",
+                        any(item.get("code")=="subpartF" and item.get("isSelected") is True 
+                            for item in d["compliance"]["CFR200Requirements"]["questions"]),
+                        d["compliance"]["documents"].get("description")
+                        ])
             # if the program has any results
             if d["financial"]["accomplishments"].get("list", False):
                 if len(d["financial"]["accomplishments"]["list"]) > 0:
@@ -744,8 +750,8 @@ def load_category_and_sub_category():
                         convert_to_url_string(p[1]+p[2]), "category"])
         conn.commit()
 
-def ingest_additional_programs():
-    path_to_dataset = './source/additional-programs.csv'
+def load_additional_programs():
+    path_to_dataset = './extracted/additional-programs.csv'
     # Does dataset file exist
     if not os.path.exists(path_to_dataset):
         # log error and break from function...
@@ -834,7 +840,7 @@ def ingest_additional_programs():
             print(f"ERROR - {ind}\n{program_query} ")
         # build query to ISNERT record into 'program_to_category' table
         program_to_category_query = f"""INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);"""
-        program_to_category_values = tuple([record['program.id'], record['category.id'], record['program_to_category.category_type']])
+        program_to_category_values = tuple([record['program.id'], record['category.id'], 'category'])
         try:
             cur.execute(program_to_category_query, program_to_category_values)
         except Exception as e:
@@ -853,7 +859,7 @@ def ingest_additional_programs():
 # load_sam_category()
 # load_sam_programs()
 # load_category_and_sub_category()
-# ingest_additional_programs()
+# load_additional_programs
 
 # close the db connection
 conn.close()
