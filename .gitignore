@@ -7,3 +7,4 @@ node_modules
 venv
 /website/.sass-cache
 /website/_site
+__pycache__/

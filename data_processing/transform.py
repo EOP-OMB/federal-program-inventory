@@ -8,9 +8,10 @@ import json
 import os
 import sqlite3
 import constants
+import pandas as pd
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "./temp/"
+TEMP_DB_DISK_DIRECTORY = "./Volumes/CER01/"
 TEMP_DB_FILE_PATH = "temp_data.db"
 
 # transformed database, for use in the load / generate stage
@@ -19,16 +20,19 @@ TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "./temp"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "/extracted/assistance"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "/extracted/delta/assistance"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "/extracted/contract"
-CONTRACT_DELTA_FILES_DIRECTORY = "/extracted/delta/contract"
+USASPENDING_DISK_DIRECTORY = "./Volumes/CER01/"
+ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance/"
+ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance/"
+CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract/"
+CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
+
+# additional programs dataset path
+ADDITIONAL_PROGRAMS_DATA_PATH = './extracted/additional-programs.csv'
 
 # extracted file paths
 REPO_DISK_DIRECTORY = \
-    ""#.//Users/codyreinold/Code/omb/offm/federal-program-inventory/"
-EXTRACTED_FILES_DIRECTORY = "./extracted/"
+    "./"
+EXTRACTED_FILES_DIRECTORY = "extracted/"
 
 USASPENDING_ASSISTANCE_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance;
@@ -749,17 +753,98 @@ def load_category_and_sub_category():
                         convert_to_url_string(p[1]+p[2]), "category"])
         conn.commit()
 
+def load_additional_programs():
+    # Does dataset file exist
+    if not os.path.exists(ADDITIONAL_PROGRAMS_DATA_PATH):
+        # log error and break from function...
+        print(f"{ADDITIONAL_PROGRAMS_DATA_PATH} - Not Found")
+        return
+    # Read in additional-programs.csv dataset
+    df = pd.read_csv(ADDITIONAL_PROGRAMS_DATA_PATH)
+    # Pull out all agency and subagency names for the ID map
+    agency_names = df[df.agency.notnull()]['agency'].unique().tolist() + df[df.subagency.notnull()]['subagency'].unique().tolist()
+    agency_names.append('Internal Revenue Service (IRS)') if 'Internal Revenue Service (IRS)' not in agency_names else agency_names
+    # Populate Agency ID Map with key value pairings, <Agency Name>: <Agency ID>
+    try:
+        cur.execute(f"SELECT * FROM agency WHERE agency_name in {tuple(agency_names)};")
+    except Exception as e:
+        print(str(e))
+        print(f"ERROR - Unable to query for agency_name ID's")
+        # break from function
+        return
+    response = cur.fetchall()
+    agency_id_map = {val[1]: val[0] for val in response}
+    # ADD COMMENT
+    for category in df[df.category.notnull()]['category'].unique():
+        df = pd.concat([df, pd.DataFrame([{'category': category}])])
+    # category.type is 'category'
+    df.insert(df.shape[1], 'category.type', 'category')
+    df.insert(df.shape[1], 'program.agency_id', None)
+    df.insert(df.shape[1], 'category.name', None)
+    df.insert(df.shape[1], 'category.id', None)
+    df.insert(df.shape[1], 'category.parent_id', None)
+    for ind, record in df.iterrows():
+        if not pd.isna(record.subagency):
+            df.at[ind, 'program.agency_id'] = agency_id_map[record.subagency]
+        elif not pd.isna(record.agency):
+            df.at[ind, 'program.agency_id'] = agency_id_map[record.agency]
+        if not pd.isna(record.subcategory):
+            df.at[ind, 'category.id'] = convert_to_url_string(record.category + record.subcategory)
+            df.at[ind, 'category.parent_id'] = convert_to_url_string(record.category)
+            df.at[ind, 'category.name'] = record.subcategory
+        elif not pd.isna(record.category):
+            df.at[ind, 'category.id'] = convert_to_url_string(record.category)
+            df.at[ind, 'category.parent_id'] = None
+            df.at[ind, 'category.name'] = record.category
+    # rename columns for easier readability/comprehension
+    df = df.rename(columns = {'type':'program_to_category.category_type', '`': 'program.id', 'name': 'program.name'})
+    # Column C maps to objective of program table
+    df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
+    # INSERT INTO category table
+    for ind, record in df[df['program.id'].notnull()].drop_duplicates(['category.id']).iterrows():
+        # build query to INSERT record into 'category' table
+        category_query = f"INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?);"
+        category_values = tuple([record['category.id'], record['category.type'], record['category.name'], record['category.parent_id']])
+        try:
+            cur.execute(category_query, category_values)
+        except Exception as e:
+            print(str(e))
+            print(f"ERROR - {ind}\n{category_query} ")
+    # INSERT INTO program and program_to_category tables
+    for ind, record in df[df['program.id'].notnull()].iterrows():
+        # build query to INSERT record into 'program' table
+        program_query = f"""INSERT INTO program 
+        (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);"""
+        program_values = tuple([record['program.id'], int(record['program.agency_id']), record['program.name'], None, record['program.objective'], None, None, None, None, record['program_to_category.category_type']])
+        try:
+            cur.execute(program_query, program_values)
+        except Exception as e:
+            # log error...
+            print(str(e))
+            print(f"ERROR - {ind}\n{program_query} ")
+        # build query to ISNERT record into 'program_to_category' table
+        program_to_category_query = f"""INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);"""
+        program_to_category_values = tuple([record['program.id'], record['category.id'], 'category'])
+        try:
+            cur.execute(program_to_category_query, program_to_category_values)
+        except Exception as e:
+            # log error...
+            print(str(e))
+            print(f"ERROR - {ind}\n{program_to_category_query} ")
+    conn.commit()
+
 
 # uncomment the necessary functions to database with data
 #
-#load_usaspending_initial_files()
-#load_usaspending_delta_files()
-#transform_and_insert_usaspending_aggregation_data()
-#load_agency()
-#load_sam_category()
-#load_sam_programs()
-#load_category_and_sub_category()
-#
+# load_usaspending_initial_files()
+# load_usaspending_delta_files()
+# transform_and_insert_usaspending_aggregation_data()
+# load_agency()
+# load_sam_category()
+# load_sam_programs()
+# load_category_and_sub_category()
+# load_additional_programs
 
 # close the db connection
 conn.close()
