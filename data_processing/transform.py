@@ -10,25 +10,25 @@ import sqlite3
 import constants
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "/Volumes/CER01/"
+TEMP_DB_DISK_DIRECTORY = "./temp/"
 TEMP_DB_FILE_PATH = "temp_data.db"
 
 # transformed database, for use in the load / generate stage
-TRANSFORMED_FILES_DIRECTORY = "transformed/"
+TRANSFORMED_FILES_DIRECTORY = "./transformed/"
 TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "/Volumes/CER01/"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance/"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance/"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract/"
-CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
+USASPENDING_DISK_DIRECTORY = "./temp"
+ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "/extracted/assistance"
+ASSISTANCE_DELTA_FILES_DIRECTORY = "/extracted/delta/assistance"
+CONTRACT_EXTRACTED_FILES_DIRECTORY = "/extracted/contract"
+CONTRACT_DELTA_FILES_DIRECTORY = "/extracted/delta/contract"
 
 # extracted file paths
 REPO_DISK_DIRECTORY = \
-    "/Users/codyreinold/Code/omb/offm/federal-program-inventory/"
-EXTRACTED_FILES_DIRECTORY = "data_processing/extracted/"
+    ""#.//Users/codyreinold/Code/omb/offm/federal-program-inventory/"
+EXTRACTED_FILES_DIRECTORY = "./extracted/"
 
 USASPENDING_ASSISTANCE_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance;
@@ -139,13 +139,15 @@ PROGRAM_CREATE_TABLE_SQL = """
         usaspending_awards_url TEXT,
         grants_url TEXT,
         program_type TEXT,
+        is_subpart_f BOOLEAN,
+        rules_regulations TEXT,
         FOREIGN KEY(agency_id) REFERENCES agency(id)
     );
     """
 
 PROGRAM_INSERT_SQL = """
     INSERT INTO program
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
     """
 
 PROGRAM_AUTHORIZATION_DROP_TABLE_SQL = """
@@ -551,7 +553,11 @@ def load_sam_programs():
                         + usaspending_hashes.get(d["programNumber"], ""),
                         "https://grants.gov/search-grants?cfda="
                         + d["programNumber"],
-                        "assistance_listing"])
+                        "assistance_listing",
+                        any(item.get("code")=="subpartF" and item.get("isSelected") is True 
+                            for item in d["compliance"]["CFR200Requirements"]["questions"]),
+                        d["compliance"]["documents"].get("description")
+                        ])
             # if the program has any results
             if d["financial"]["accomplishments"].get("list", False):
                 if len(d["financial"]["accomplishments"]["list"]) > 0:
@@ -746,13 +752,13 @@ def load_category_and_sub_category():
 
 # uncomment the necessary functions to database with data
 #
-# load_usaspending_initial_files()
-# load_usaspending_delta_files()
-# transform_and_insert_usaspending_aggregation_data()
-# load_agency()
-# load_sam_category()
-# load_sam_programs()
-# load_category_and_sub_category()
+#load_usaspending_initial_files()
+#load_usaspending_delta_files()
+#transform_and_insert_usaspending_aggregation_data()
+#load_agency()
+#load_sam_category()
+#load_sam_programs()
+#load_category_and_sub_category()
 #
 
 # close the db connection
