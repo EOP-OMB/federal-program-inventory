@@ -752,13 +752,13 @@ def load_category_and_sub_category():
 
 # uncomment the necessary functions to database with data
 #
-load_usaspending_initial_files()
-load_usaspending_delta_files()
-transform_and_insert_usaspending_aggregation_data()
-load_agency()
-load_sam_category()
-load_sam_programs()
-load_category_and_sub_category()
+#load_usaspending_initial_files()
+#load_usaspending_delta_files()
+#transform_and_insert_usaspending_aggregation_data()
+#load_agency()
+#load_sam_category()
+#load_sam_programs()
+#load_category_and_sub_category()
 #
 
 # close the db connection
