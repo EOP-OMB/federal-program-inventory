@@ -75,6 +75,38 @@ def get_obligations_data(cursor, program_id, fiscal_years):
     
     return obligations
 
+def get_outlays_data(cursor, program_id, fiscal_years):
+    """Get outlays data for specified fiscal years."""
+    outlays = []
+    for year in fiscal_years:
+        year_data = {
+            'x': year,
+            'outlay': 0.0,
+            'obligation': 0.0
+        }
+
+        # Get outlays data
+        cursor.execute("""
+            SELECT 
+                ROUND(SUM(outlay), 2) as total_outlay,
+                ROUND(SUM(obligation), 2) as total_obligation
+            FROM usaspending_assistance_outlay_aggregation
+            WHERE cfda_number = ? 
+            AND award_first_fiscal_year = ?
+            GROUP BY cfda_number, award_first_fiscal_year
+        """, (program_id, year))
+        
+        row = cursor.fetchone()
+        if row:
+            if row['total_outlay'] is not None:
+                year_data['outlay'] = float(row['total_outlay'])
+            if row['total_obligation'] is not None:
+                year_data['obligation'] = float(row['total_obligation'])
+
+        outlays.append(year_data)
+    
+    return outlays
+
 def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_year: str) -> List[Dict[str, Any]]:
     """
     Generate list of agencies with program counts and obligations for a set of programs.
@@ -479,7 +511,9 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
              WHERE a2.id = a.tier_1_agency_id) as top_agency_name,
             (SELECT a2.agency_name 
              FROM agency a2 
-             WHERE a2.id = a.tier_2_agency_id) as sub_agency_name
+             WHERE a2.id = a.tier_2_agency_id) as sub_agency_name,
+            p.is_subpart_f,
+            p.rules_regulations
         FROM program p
         LEFT JOIN agency a ON p.agency_id = a.id
     """)
@@ -501,8 +535,9 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         
         categories = cursor.fetchall()
         
-        # Get obligations data for all fiscal years
+        # Get obligations and outlays data for all fiscal years
         obligations = get_obligations_data(cursor, program['id'], fiscal_years)
+        outlays = get_outlays_data(cursor, program['id'], fiscal_years)
         
         # Get program results
         cursor.execute("""
@@ -558,9 +593,12 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'applicant_types': sorted(list(program_categories['applicant'])),
             'categories': sorted(list(program_categories['categories'])),
             'obligations': obligations,
+            'outlays': outlays,
             'results': results,
             'authorizations': authorizations,
-            'program_type':program['program_type']
+            'program_type':program['program_type'],
+            'is_subpart_f': program['is_subpart_f'],
+            'rules_regulations': program['rules_regulations']
         }
         
         programs_data.append(program_data)
@@ -767,9 +805,12 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'agency': program['top_agency_name'] or 'Unspecified',
             'sub-agency': program['sub_agency_name'] or 'N/A',
             'obligations': json.dumps(program['obligations'], separators=(',', ':')),
+            'outlays': json.dumps(program['outlays'], separators=(',', ':')),
             'results': program['results'],
             'program_type': program['program_type'],
-            'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']]
+            'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']],
+            'is_subpart_f': program['is_subpart_f'],
+            'rules_regulations': program['rules_regulations']
         }
 
         # Write markdown file
