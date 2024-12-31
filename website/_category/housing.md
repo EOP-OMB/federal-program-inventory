@@ -10,10 +10,10 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   of Transportation","total_num_programs":1,"total_obs":21500000.0},{"title":"Department
   of the Interior","total_num_programs":4,"total_obs":3187783.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":1053332.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Department of Health
-  and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":49},{"title":"Guaranteed
   / Insured Loans","total_num_programs":44},{"title":"Local (includes State-designated
@@ -442,6 +442,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -457,16 +492,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/housing
-sub_cats: '[{"title":"Homebuying, Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":140810497081.0},{"title":"Home
-  Improvement","permalink":"/category/housing/home-improvement","total_num_programs":34,"total_obs":122262832978.0},{"title":"Construction
-  Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":38,"total_obs":67680056892.0},{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":47153170578.0},{"title":"Rural
+sub_cats: '[{"title":"Land Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":6156425705.0},{"title":"Indian
+  Housing","permalink":"/category/housing/indian-housing","total_num_programs":18,"total_obs":6794580587.0},{"title":"Home
+  Improvement","permalink":"/category/housing/home-improvement","total_num_programs":34,"total_obs":122262832978.0},{"title":"Rural
   Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":34676878850.0},{"title":"Cooperatives,
-  Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":27274721710.0},{"title":"Indian
-  Housing","permalink":"/category/housing/indian-housing","total_num_programs":18,"total_obs":6794580587.0},{"title":"Property
-  and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":6668557559.0},{"title":"Land
-  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":6156425705.0},{"title":"Site
-  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":6156425705.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":23,"total_obs":5803788349.81},{"title":"Experimental
-  and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":4496116326.0}]'
+  Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":27274721710.0},{"title":"Experimental
+  and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":4496116326.0},{"title":"Site
+  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":6156425705.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":23,"total_obs":5803788349.81},{"title":"Property
+  and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":6668557559.0},{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":47153170578.0},{"title":"Construction
+  Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":38,"total_obs":67680056892.0},{"title":"Homebuying,
+  Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":140810497081.0}]'
 title: Housing
 total_num_agencies: 15
 total_num_applicant_types: 39

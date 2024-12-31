@@ -256,6 +256,24 @@ categories:
   - title: Research - Specialized
   title: Science and Technology
 - sub_categories:
+  - title: Agriculture
+  - title: Aid to State and Local Governments
+  - title: Commerce and Housing
+  - title: Community and Regional Development
+  - title: 'Education, Training, Employment, and Social Services '
+  - title: Energy
+  - title: General Purpose Fiscal Assistance
+  - title: General Science, Space, and Technology
+  - title: Health
+  - title: Income Security
+  - title: Interest
+  - title: International Affairs
+  - title: Natural Resources and Environment
+  - title: Social Security
+  - title: Transportation
+  - title: Veterans Benefits and Services
+  title: Tax Expenditures
+- sub_categories:
   - title: Air Transportation
   - title: Highways, Public Roads, and Bridges
   - title: Rail Transportation

@@ -5,10 +5,10 @@ agencies: '[{"title":"The Institute of Museum and Library Services","total_num_p
   Endowment for the Humanities","total_num_programs":9,"total_obs":134777355.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":36500000.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
-  of the Interior","total_num_programs":5,"total_obs":4531568.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library of Congress","total_num_programs":4,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of the Interior","total_num_programs":5,"total_obs":4531568.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":4,"total_obs":0.0},{"title":"Japan-U.S. Friendship
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":33},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":33},{"title":"Private nonprofit
@@ -435,6 +435,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -450,8 +485,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Promotion of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":36,"total_obs":663786044.0},{"title":"Promotion
-  of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":39,"total_obs":590149910.0}]'
+sub_cats: '[{"title":"Promotion of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":39,"total_obs":590149910.0},{"title":"Promotion
+  of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":36,"total_obs":663786044.0}]'
 title: Cultural Affairs
 total_num_agencies: 11
 total_num_applicant_types: 39

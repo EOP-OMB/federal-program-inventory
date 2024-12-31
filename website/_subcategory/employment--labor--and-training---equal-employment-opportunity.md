@@ -2,11 +2,12 @@
 agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Department
   of Labor","total_num_programs":2,"total_obs":228644358.0},{"title":"Department of
   the Interior","total_num_programs":1,"total_obs":3187783.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Equal
-  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Equal
+  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":6},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":6},{"title":"Private nonprofit
@@ -429,6 +430,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -446,27 +482,27 @@ fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/equal-employment-opportunity
-programs: '[{"cfda":"10.978","permalink":"/program/10.978","title":"Farm Labor Stabilization
-  and Protection Pilot Grant Program","popular_name":"Farm labor pilot program or
-  FLSPP","agency":"Department of Agriculture","total_obs":0.0},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
-  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":3187783.0},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
-  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":209000000.0},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
-  Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":19644358.0},{"cfda":"19.345","permalink":"/program/19.345","title":"International
-  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
-  of State","total_obs":0.0},{"cfda":"20.821","permalink":"/program/20.821","title":"Women
-  on the Water (WOW)","popular_name":"WOW Conference","agency":"Department of Transportation","total_obs":0.0},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
-  Discrimination Private Bar Program","popular_name":"Employment Discrimination \u2013
-  Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
-  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":584100000.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+programs: '[{"cfda":"17.720","permalink":"/program/17.720","title":"Disability Employment
+  Policy Development","popular_name":"Office of Disability Employment Policy (ODEP)","agency":"Department
+  of Labor","total_obs":19644358.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0}]'
+  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
+  Discrimination Private Bar Program","popular_name":"Employment Discrimination \u2013
+  Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.821","permalink":"/program/20.821","title":"Women
+  on the Water (WOW)","popular_name":"WOW Conference","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
+  Communications Commission","total_obs":584100000.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
+  Labor","total_obs":209000000.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
+  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":3187783.0,"program_type":"assistance_listing"}]'
 title: Equal Employment Opportunity
 total_num_agencies: 10
 total_num_applicant_types: 35

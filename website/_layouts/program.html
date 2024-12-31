@@ -105,10 +105,13 @@ footer_include: _footer-program.html
           </div>
         </div>
 
-        <svg id="obligationsChart" class="width-full" height="500" aria-label="Chart displaying data based on selection"
+        <svg id="obligationsChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
           role="img"></svg>
 
           <svg id="outlaysChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
+          role="img"></svg>
+
+          <svg id="taxExpendChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
           role="img"></svg>
 
         <!-- Download Button -->
@@ -198,7 +201,7 @@ footer_include: _footer-program.html
       <!-- Program oversight reports End -->
 
       <!-- Rules and regulations Start-->
-      {% unless page.rules_regulations == blank %}
+      {% if page.rules_regulations.present? %}
       <div class="usa-accordion">
         <h4 class="usa-accordion__heading">
           <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
@@ -210,7 +213,7 @@ footer_include: _footer-program.html
           {{ page.rules_regulations }}
         </div>
       </div>
-      {% endunless %}
+      {% endif %}
       <!-- Rules and regulations End-->
 
       <!-- Authorizations Start -->

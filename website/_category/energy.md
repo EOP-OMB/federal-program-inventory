@@ -12,10 +12,11 @@ agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":1,"to
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
   of State","total_num_programs":5,"total_obs":8759626.109},{"title":"Department of
   Housing and Urban Development","total_num_programs":2,"total_obs":6103180.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":48},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":48},{"title":"Direct Loans","total_num_programs":42},{"title":"State
@@ -442,6 +443,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -457,11 +493,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/energy
-sub_cats: '[{"title":"Facilities and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":68880664541.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":36,"total_obs":9460901378.109},{"title":"Research
-  and Development","permalink":"/category/energy/research-and-development","total_num_programs":46,"total_obs":4496440099.0},{"title":"Specialized
-  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":4052696796.0},{"title":"Education
+sub_cats: '[{"title":"Research and Development","permalink":"/category/energy/research-and-development","total_num_programs":46,"total_obs":4496440099.0},{"title":"Education
   and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":1224229232.0},{"title":"General
-  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":746919369.0}]'
+  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":746919369.0},{"title":"Specialized
+  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":4052696796.0},{"title":"Facilities
+  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":68880664541.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":36,"total_obs":9460901378.109}]'
 title: Energy
 total_num_agencies: 18
 total_num_applicant_types: 39

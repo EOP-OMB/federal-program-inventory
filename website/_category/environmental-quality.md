@@ -444,6 +444,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -459,12 +494,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/environmental-quality
-sub_cats: '[{"title":"Water Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":115,"total_obs":8524438594.109},{"title":"Solid
-  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":8218486696.109},{"title":"Research,
-  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":107,"total_obs":5313474633.109},{"title":"Air
-  Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":4064694355.359},{"title":"Pesticides
-  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":63,"total_obs":3801575802.609},{"title":"Radiation
-  Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":3367068148.109}]'
+sub_cats: '[{"title":"Radiation Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":3367068148.109},{"title":"Water
+  Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":115,"total_obs":8524438594.109},{"title":"Research,
+  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":107,"total_obs":5313474633.109},{"title":"Pesticides
+  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":63,"total_obs":3801575802.609},{"title":"Air
+  Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":4064694355.359},{"title":"Solid
+  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":8218486696.109}]'
 title: Environmental Quality
 total_num_agencies: 17
 total_num_applicant_types: 43

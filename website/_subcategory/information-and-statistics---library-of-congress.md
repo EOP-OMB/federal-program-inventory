@@ -1,6 +1,6 @@
 ---
-agencies: '[{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Library of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Advisory Services and Counseling","total_num_programs":1},{"title":"Anyone/general
   public","total_num_programs":1},{"title":"Federal Employment","total_num_programs":1},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":1},{"title":"Guaranteed
@@ -413,6 +413,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -430,11 +465,12 @@ fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/library-of-congress
-programs: '[{"cfda":"42.013","permalink":"/program/42.013","title":"Of the People:
-  Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library of Congress","total_obs":0.0},{"cfda":"42.014","permalink":"/program/42.014","title":"Affiliate
+programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
+  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.014","permalink":"/program/42.014","title":"Affiliate
   Centers for the Book Programming Grants","popular_name":null,"agency":"Library of
-  Congress","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
+  Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
+  the People: Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library
+  of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Library of Congress
 total_num_agencies: 2
 total_num_applicant_types: 16

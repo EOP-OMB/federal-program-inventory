@@ -18,10 +18,10 @@ agencies: '[{"title":"Social Security Administration","total_num_programs":3,"to
   for National and Community Service","total_num_programs":3,"total_obs":26153697.0},{"title":"Department
   of State","total_num_programs":6,"total_obs":14799750.0},{"title":"Department of
   Energy","total_num_programs":3,"total_obs":7106509.0},{"title":"Small Business Administration","total_num_programs":1,"total_obs":4464157.0},{"title":"Department
-  of Justice","total_num_programs":4,"total_obs":1000000.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Equal Employment
-  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Justice","total_num_programs":4,"total_obs":1000000.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Equal
+  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":70},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":70},{"title":"Private nonprofit
@@ -448,6 +448,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -463,16 +498,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/employment--labor--and-training
-sub_cats: '[{"title":"Job Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":170480835090.14},{"title":"Assistance
-  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":32,"total_obs":62691200543.0},{"title":"Facilities,
-  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":12636559948.0},{"title":"Assistance
-  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6948422829.0},{"title":"Program
-  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":4522242329.0},{"title":"Planning,
+sub_cats: '[{"title":"Assistance to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6948422829.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":683323073.0},{"title":"Job
+  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":170480835090.14},{"title":"Assistance
+  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":32,"total_obs":62691200543.0},{"title":"Labor
+  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":507907762.0},{"title":"Federal
+  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":28433849.0},{"title":"Planning,
   Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":25,"total_obs":944417115.0},{"title":"Equal
-  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":11,"total_obs":818655652.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":683323073.0},{"title":"Labor
-  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":507907762.0},{"title":"Bonding
-  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":284854962.0},{"title":"Federal
-  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":28433849.0}]'
+  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":11,"total_obs":818655652.0},{"title":"Program
+  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":4522242329.0},{"title":"Bonding
+  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":284854962.0},{"title":"Facilities,
+  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":12636559948.0}]'
 title: Employment, Labor, and Training
 total_num_agencies: 25
 total_num_applicant_types: 39

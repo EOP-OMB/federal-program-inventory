@@ -7,9 +7,9 @@ agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,
   Protection Agency","total_num_programs":3,"total_obs":9876938.0},{"title":"Department
   of Homeland Security","total_num_programs":2,"total_obs":7917880.0},{"title":"Department
   of Energy","total_num_programs":1,"total_obs":6539256.0},{"title":"Corporation for
-  National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Southeast Crescent Regional
+  National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":15},{"title":"Sale, Exchange,
@@ -436,6 +436,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -453,50 +488,50 @@ fiscal_year: '2022'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/nuclear-education-and-training
-programs: '[{"cfda":"11.013","permalink":"/program/11.013","title":"Education Quality
-  Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0},{"cfda":"12.351","permalink":"/program/12.351","title":"Scientific
-  Research - Combating Weapons of Mass Destruction","popular_name":null,"agency":"Department
-  of Defense","total_obs":77510287.0},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0},{"cfda":"19.903","permalink":"/program/19.903","title":"Cooperation
+programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
+  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.903","permalink":"/program/19.903","title":"Cooperation
   on Peaceful Uses of Nuclear Energy","popular_name":"Sustained Dialogue on Peaceful
-  Uses","agency":"Department of State","total_obs":0.0},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  Uses","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":3224900000.0},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
-  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":27899000.0},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
-  Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":6719004.0},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
-  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
-  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3157934.0},{"cfda":"77.007","permalink":"/program/77.007","title":"U.S.
-  Nuclear Regulatory Commission Minority Serving Institutions Program (MSIP)","popular_name":"NRC
-  Minority Serving Institutions Program","agency":"Nuclear Regulatory Commission","total_obs":0.0},{"cfda":"77.008","permalink":"/program/77.008","title":"U.S.
-  Nuclear Regulatory Commission Scholarship and Fellowship Program","popular_name":"NRC
-  Scholarship/Fellowship and Distinguished Faculty Advancement Program","agency":"Nuclear
-  Regulatory Commission","total_obs":16000000.0},{"cfda":"77.009","permalink":"/program/77.009","title":"U.S.
+  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"77.009","permalink":"/program/77.009","title":"U.S.
   Nuclear Regulatory Commission Office of Research Financial Assistance Program","popular_name":"NRC
   Office of Research Grant and Cooperative Agreement Program","agency":"Nuclear Regulatory
-  Commission","total_obs":277675.0},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
+  Commission","total_obs":277675.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
+  and Library Services","total_obs":27899000.0,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
+  and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":400439467.0,"program_type":"assistance_listing"},{"cfda":"77.007","permalink":"/program/77.007","title":"U.S.
+  Nuclear Regulatory Commission Minority Serving Institutions Program (MSIP)","popular_name":"NRC
+  Minority Serving Institutions Program","agency":"Nuclear Regulatory Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
+  Protection Agency","total_obs":6719004.0,"program_type":"assistance_listing"},{"cfda":"97.130","permalink":"/program/97.130","title":"National
+  Nuclear Forensics Expertise Development Program","popular_name":"National Nuclear
+  Forensics Expertise Development Program Nuclear Forensics Research Award ((NNFEDP
+  NFRA)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
   of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns,
   Proposed Solutions","popular_name":"Transport of Transuranic Waste to the Waste
   Isolation Pilot Plant (WIPP): States and Tribal Concerns, Proposed Solutions","agency":"Department
-  of Energy","total_obs":6539256.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
-  and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":400439467.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Energy","total_obs":6539256.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"77.008","permalink":"/program/77.008","title":"U.S.
+  Nuclear Regulatory Commission Scholarship and Fellowship Program","popular_name":"NRC
+  Scholarship/Fellowship and Distinguished Faculty Advancement Program","agency":"Nuclear
+  Regulatory Commission","total_obs":16000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0},{"cfda":"97.077","permalink":"/program/97.077","title":"Homeland
+  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"97.077","permalink":"/program/97.077","title":"Homeland
   Security Research, Development, Testing, Evaluation and Demonstration of Technologies
   Related to Countering Weapons of Mass Destruction","popular_name":"Homeland Security
   Research, Development, Testing, Evaluation and Demonstration of Technologies Related
-  to Countering Weapons of Mass Destruction","agency":"Department of Homeland Security","total_obs":7917880.0},{"cfda":"97.130","permalink":"/program/97.130","title":"National
-  Nuclear Forensics Expertise Development Program","popular_name":"National Nuclear
-  Forensics Expertise Development Program Nuclear Forensics Research Award ((NNFEDP
-  NFRA)","agency":"Department of Homeland Security","total_obs":0.0}]'
+  to Countering Weapons of Mass Destruction","agency":"Department of Homeland Security","total_obs":7917880.0,"program_type":"assistance_listing"},{"cfda":"12.351","permalink":"/program/12.351","title":"Scientific
+  Research - Combating Weapons of Mass Destruction","popular_name":null,"agency":"Department
+  of Defense","total_obs":77510287.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
+  Protection Agency","total_obs":3157934.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Nuclear Education and Training
 total_num_agencies: 13
 total_num_applicant_types: 35

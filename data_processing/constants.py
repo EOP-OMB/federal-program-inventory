@@ -350,3 +350,8 @@ CFO_ACT_AGENCY_NAMES = [
     "Small Business Administration",
     "Social Security Administration"
 ]
+
+PROGRAM_TYPE_MAPPING = {
+    "tax_expenditure": "Tax Credit",
+    "assistance_listing": "Financial Assistance"
+}

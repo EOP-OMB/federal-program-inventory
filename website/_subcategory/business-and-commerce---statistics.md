@@ -2,8 +2,8 @@
 agencies: '[{"title":"Department of Labor","total_num_programs":4,"total_obs":624070917.0},{"title":"Department
   of Health and Human Services","total_num_programs":4,"total_obs":75427164.0},{"title":"Department
   of Commerce","total_num_programs":6,"total_obs":48785148.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":9},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":9},{"title":"Sale, Exchange, or Donation of Property
@@ -429,6 +429,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -446,39 +481,39 @@ fiscal_year: '2022'
 parent_permalink: /category/business-and-commerce
 parent_title: Business and Commerce
 permalink: /category/business-and-commerce/statistics
-programs: '[{"cfda":"11.013","permalink":"/program/11.013","title":"Education Quality
-  Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0},{"cfda":"11.434","permalink":"/program/11.434","title":"Cooperative
-  Fishery Statistics","popular_name":null,"agency":"Department of Commerce","total_obs":15188032.0},{"cfda":"11.601","permalink":"/program/11.601","title":"Calibration
-  Program","popular_name":null,"agency":"Department of Commerce","total_obs":7646312.0},{"cfda":"11.604","permalink":"/program/11.604","title":"Standard
-  Reference Materials","popular_name":"Standard Reference Materials\r\n(SRM)","agency":"Department
-  of Commerce","total_obs":20973740.0},{"cfda":"11.606","permalink":"/program/11.606","title":"Weights
-  and Measures Service","popular_name":null,"agency":"Department of Commerce","total_obs":4977064.0},{"cfda":"17.002","permalink":"/program/17.002","title":"Labor
-  Force Statistics","popular_name":null,"agency":"Department of Labor","total_obs":296386841.0},{"cfda":"17.003","permalink":"/program/17.003","title":"Prices
-  and Cost of Living Data","popular_name":null,"agency":"Department of Labor","total_obs":228762151.0},{"cfda":"17.004","permalink":"/program/17.004","title":"Productivity
-  and Technology Data","popular_name":null,"agency":"Department of Labor","total_obs":11706212.0},{"cfda":"17.005","permalink":"/program/17.005","title":"Compensation
-  and Working Conditions","popular_name":null,"agency":"Department of Labor","total_obs":87215713.0},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+programs: '[{"cfda":"11.606","permalink":"/program/11.606","title":"Weights and Measures
+  Service","popular_name":null,"agency":"Department of Commerce","total_obs":4977064.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
-  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
-  of State","total_obs":0.0},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
-  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
-  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.604","permalink":"/program/11.604","title":"Standard
+  Reference Materials","popular_name":"Standard Reference Materials\r\n(SRM)","agency":"Department
+  of Commerce","total_obs":20973740.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
-  of Health and Human Services","total_obs":75327164.0},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
-  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
-  FHIR","agency":"Department of Health and Human Services","total_obs":100000.0},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  of Health and Human Services","total_obs":75327164.0,"program_type":"assistance_listing"},{"cfda":"17.002","permalink":"/program/17.002","title":"Labor
+  Force Statistics","popular_name":null,"agency":"Department of Labor","total_obs":296386841.0,"program_type":"assistance_listing"},{"cfda":"17.004","permalink":"/program/17.004","title":"Productivity
+  and Technology Data","popular_name":null,"agency":"Department of Labor","total_obs":11706212.0,"program_type":"assistance_listing"},{"cfda":"11.601","permalink":"/program/11.601","title":"Calibration
+  Program","popular_name":null,"agency":"Department of Commerce","total_obs":7646312.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
-  and Human Services","total_obs":0.0}]'
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
+  FHIR","agency":"Department of Health and Human Services","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.005","permalink":"/program/17.005","title":"Compensation
+  and Working Conditions","popular_name":null,"agency":"Department of Labor","total_obs":87215713.0,"program_type":"assistance_listing"},{"cfda":"11.434","permalink":"/program/11.434","title":"Cooperative
+  Fishery Statistics","popular_name":null,"agency":"Department of Commerce","total_obs":15188032.0,"program_type":"assistance_listing"},{"cfda":"17.003","permalink":"/program/17.003","title":"Prices
+  and Cost of Living Data","popular_name":null,"agency":"Department of Labor","total_obs":228762151.0,"program_type":"assistance_listing"}]'
 title: Statistics
 total_num_agencies: 6
 total_num_applicant_types: 35

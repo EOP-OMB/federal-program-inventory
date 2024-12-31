@@ -431,6 +431,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -448,43 +483,43 @@ fiscal_year: '2022'
 parent_permalink: /category/law--justice-and-legal-services
 parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
-programs: '[{"cfda":"15.030","permalink":"/program/15.030","title":"Indian Law Enforcement","popular_name":"Law
-  Enforcement","agency":"Department of the Interior","total_obs":17440714.0},{"cfda":"16.001","permalink":"/program/16.001","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory Publications","popular_name":"(Microgram)","agency":"Department
-  of Justice","total_obs":0.0},{"cfda":"16.004","permalink":"/program/16.004","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Training","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
-  Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":92368221.0},{"cfda":"16.320","permalink":"/program/16.320","title":"Services
-  for Trafficking Victims","popular_name":null,"agency":"Department of Justice","total_obs":166343930.0},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
-  Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
-  of Justice","total_obs":0.0},{"cfda":"16.731","permalink":"/program/16.731","title":"Tribal
-  Youth Program","popular_name":"(TYP)","agency":"Department of Justice","total_obs":21108450.0},{"cfda":"16.735","permalink":"/program/16.735","title":"PREA
-  Program: Strategic Support for PREA Implementation ","popular_name":"Prison Rape
-  Elimination Act (PREA)","agency":"Department of Justice","total_obs":22742232.0},{"cfda":"16.754","permalink":"/program/16.754","title":"Harold
-  Rogers Prescription Drug Monitoring Program","popular_name":"(PDMP)","agency":"Department
-  of Justice","total_obs":45509360.0},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
-  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":6775924.0},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
-  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
-  in the Juvenile Justice system","agency":"Department of Justice","total_obs":6619856.0},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
-  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":8963641.0},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
-  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0},{"cfda":"19.703","permalink":"/program/19.703","title":"Criminal
+programs: '[{"cfda":"16.754","permalink":"/program/16.754","title":"Harold Rogers
+  Prescription Drug Monitoring Program","popular_name":"(PDMP)","agency":"Department
+  of Justice","total_obs":45509360.0,"program_type":"assistance_listing"},{"cfda":"19.703","permalink":"/program/19.703","title":"Criminal
   Justice Systems","popular_name":"Rule of Law, Justice Systems","agency":"Department
-  of State","total_obs":179175633.0},{"cfda":"19.704","permalink":"/program/19.704","title":"Counter
-  Narcotics","popular_name":"Counter Narcotics, Interdiction, Demand Reduction","agency":"Department
-  of State","total_obs":75240606.0},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
-  Crime","popular_name":null,"agency":"Department of State","total_obs":401907036.21},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":450000.0},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
-  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
-  of State","total_obs":5000000.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"93.788","permalink":"/program/93.788","title":"Opioid
-  STR","popular_name":"Opioid Response Grants","agency":"Department of Health and
-  Human Services","total_obs":1500232431.0},{"cfda":"95.001","permalink":"/program/95.001","title":"High
+  of State","total_obs":179175633.0,"program_type":"assistance_listing"},{"cfda":"16.731","permalink":"/program/16.731","title":"Tribal
+  Youth Program","popular_name":"(TYP)","agency":"Department of Justice","total_obs":21108450.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":6775924.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.320","permalink":"/program/16.320","title":"Services
+  for Trafficking Victims","popular_name":null,"agency":"Department of Justice","total_obs":166343930.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
+  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
+  in the Juvenile Justice system","agency":"Department of Justice","total_obs":6619856.0,"program_type":"assistance_listing"},{"cfda":"16.001","permalink":"/program/16.001","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"95.001","permalink":"/program/95.001","title":"High
   Intensity Drug Trafficking Areas Program","popular_name":"(HIDTA)","agency":"Executive
-  Office of the President","total_obs":264200000.0}]'
+  Office of the President","total_obs":264200000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
+  Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
+  of Justice","total_obs":92368221.0,"program_type":"assistance_listing"},{"cfda":"19.704","permalink":"/program/19.704","title":"Counter
+  Narcotics","popular_name":"Counter Narcotics, Interdiction, Demand Reduction","agency":"Department
+  of State","total_obs":75240606.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
+  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
+  ","agency":"Department of Justice","total_obs":8963641.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
+  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
+  of State","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory Publications","popular_name":"(Microgram)","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.735","permalink":"/program/16.735","title":"PREA
+  Program: Strategic Support for PREA Implementation ","popular_name":"Prison Rape
+  Elimination Act (PREA)","agency":"Department of Justice","total_obs":22742232.0,"program_type":"assistance_listing"},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
+  Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":450000.0,"program_type":"assistance_listing"},{"cfda":"15.030","permalink":"/program/15.030","title":"Indian
+  Law Enforcement","popular_name":"Law Enforcement","agency":"Department of the Interior","total_obs":17440714.0,"program_type":"assistance_listing"},{"cfda":"93.788","permalink":"/program/93.788","title":"Opioid
+  STR","popular_name":"Opioid Response Grants","agency":"Department of Health and
+  Human Services","total_obs":1500232431.0,"program_type":"assistance_listing"},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
+  Crime","popular_name":null,"agency":"Department of State","total_obs":401907036.21,"program_type":"assistance_listing"},{"cfda":"16.004","permalink":"/program/16.004","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Training","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Law Enforcement - Narcotics and Dangerous Drugs
 total_num_agencies: 6
 total_num_applicant_types: 39

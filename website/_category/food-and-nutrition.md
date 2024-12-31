@@ -7,9 +7,9 @@ agencies: '[{"title":"Department of Agriculture","total_num_programs":59,"total_
   of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
   for National and Community Service","total_num_programs":3,"total_obs":26153697.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":4835000.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Education","total_num_programs":1,"total_obs":4835000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":40},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":33},{"title":"Sale,
   Exchange, or Donation of Property or Goods","total_num_programs":33},{"title":"Private
@@ -435,6 +435,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -450,9 +485,10 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":162661652986.36},{"title":"Food
-  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":60433439853.36},{"title":"Food
-  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":534600000.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":462939449.36}]'
+sub_cats: '[{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":462939449.36},{"title":"Food
+  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":534600000.0},{"title":"Food
+  and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":162661652986.36},{"title":"Food
+  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":60433439853.36}]'
 title: Food and Nutrition
 total_num_agencies: 12
 total_num_applicant_types: 39

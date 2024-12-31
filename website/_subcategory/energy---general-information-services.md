@@ -3,8 +3,8 @@ agencies: '[{"title":"Department of the Interior","total_num_programs":2,"total_
   Protection Agency","total_num_programs":3,"total_obs":92000000.0},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":8685731.0},{"title":"Department
   of State","total_num_programs":2,"total_obs":8403924.0},{"title":"Department of
-  Energy","total_num_programs":3,"total_obs":279689.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  Energy","total_num_programs":3,"total_obs":279689.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Direct Loans","total_num_programs":8},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -427,6 +427,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -444,33 +479,33 @@ fiscal_year: '2022'
 parent_permalink: /category/energy
 parent_title: Energy
 permalink: /category/energy/general-information-services
-programs: '[{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy Program
-  for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program","agency":"Department
-  of Agriculture","total_obs":8685731.0},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
-  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
-  of the Interior","total_obs":300000.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+programs: '[{"cfda":"15.875","permalink":"/program/15.875","title":"Economic, Social,
+  and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
+  Protection Agency","total_obs":64400000.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
+  Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program","agency":"Department
+  of Agriculture","total_obs":8685731.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
-  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":64400000.0},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
-  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":27600000.0},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
-  School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
-  Protection Agency","total_obs":0.0},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
-  of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0},{"cfda":"81.119","permalink":"/program/81.119","title":"State
-  Energy Program Special Projects","popular_name":"SEP Competitive Grants","agency":"Department
-  of Energy","total_obs":100000.0},{"cfda":"81.138","permalink":"/program/81.138","title":"State
-  Heating Oil and Propane Program","popular_name":"(SHOPP)","agency":"Department of
-  Energy","total_obs":179689.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0}]'
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
+  of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":null,"agency":"Department
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
+  Protection Agency","total_obs":27600000.0,"program_type":"assistance_listing"},{"cfda":"81.119","permalink":"/program/81.119","title":"State
+  Energy Program Special Projects","popular_name":"SEP Competitive Grants","agency":"Department
+  of Energy","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"81.138","permalink":"/program/81.138","title":"State
+  Heating Oil and Propane Program","popular_name":"(SHOPP)","agency":"Department of
+  Energy","total_obs":179689.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
+  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
+  of the Interior","total_obs":300000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
+  School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: General Information Services
 total_num_agencies: 7
 total_num_applicant_types: 35

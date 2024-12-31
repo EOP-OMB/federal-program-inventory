@@ -20,12 +20,12 @@ agencies: '[{"title":"Small Business Administration","total_num_programs":29,"to
   of Education","total_num_programs":2,"total_obs":6715623.0},{"title":"Environmental
   Protection Agency","total_num_programs":3,"total_obs":5825000.0},{"title":"National
   Credit Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":929269.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Delta Regional
-  Authority","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export
-  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"U.S.
-  Agency for Global Media","total_num_programs":1,"total_obs":0.0}]'
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":929269.0},{"title":"U.S.
+  Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":96},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -453,6 +453,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -468,11 +503,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"Small Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":174006942281.0},{"title":"Economic
-  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":155240805290.67},{"title":"Economic
-  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":62144707341.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":37,"total_obs":29846866156.0},{"title":"Minority
-  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":6177534111.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":29,"total_obs":2368538342.0},{"title":"Special
-  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":2318209001.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":756687153.0},{"title":"Commercial
+sub_cats: '[{"title":"Minority Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":6177534111.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":29,"total_obs":2368538342.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":756687153.0},{"title":"Economic
+  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":155240805290.67},{"title":"Special
+  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":2318209001.0},{"title":"Small
+  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":174006942281.0},{"title":"Economic
+  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":62144707341.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":37,"total_obs":29846866156.0},{"title":"Commercial
   Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":381410525.0}]'
 title: Business and Commerce
 total_num_agencies: 28

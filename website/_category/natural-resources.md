@@ -11,8 +11,8 @@ agencies: '[{"title":"Environmental Protection Agency","total_num_programs":22,"
   of Transportation","total_num_programs":1,"total_obs":73593308.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
   of Energy","total_num_programs":1,"total_obs":24500000.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":8759626.109},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  State","total_num_programs":3,"total_obs":8759626.109},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Direct Loans","total_num_programs":122},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":122},{"title":"Guaranteed
   / Insured Loans","total_num_programs":118},{"title":"Local (includes State-designated
@@ -445,6 +445,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -460,12 +495,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/natural-resources
-sub_cats: '[{"title":"Community Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":63,"total_obs":15827497337.109},{"title":"Land
-  Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":94,"total_obs":6248721372.059},{"title":"Water
-  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":94,"total_obs":5653328677.059},{"title":"Wildlife
-  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":91,"total_obs":4802917358.059},{"title":"Community
-  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":35,"total_obs":4228072408.109},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":45,"total_obs":2010347322.059},{"title":"Mineral
-  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":31,"total_obs":1146450376.059}]'
+sub_cats: '[{"title":"Land Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":94,"total_obs":6248721372.059},{"title":"Water
+  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":94,"total_obs":5653328677.059},{"title":"Community
+  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":35,"total_obs":4228072408.109},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":45,"total_obs":2010347322.059},{"title":"Wildlife
+  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":91,"total_obs":4802917358.059},{"title":"Mineral
+  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":31,"total_obs":1146450376.059},{"title":"Community
+  Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":63,"total_obs":15827497337.109}]'
 title: Natural Resources
 total_num_agencies: 15
 total_num_applicant_types: 47

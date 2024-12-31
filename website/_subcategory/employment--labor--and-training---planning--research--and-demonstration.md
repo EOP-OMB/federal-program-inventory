@@ -6,11 +6,11 @@ agencies: '[{"title":"Department of Labor","total_num_programs":5,"total_obs":63
   of Agriculture","total_num_programs":2,"total_obs":25000000.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":7421000.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":2468750.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
-  Interior","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+  of State","total_num_programs":1,"total_obs":2468750.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
+  and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":19},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":19},{"title":"Private nonprofit
@@ -435,6 +435,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -452,52 +487,52 @@ fiscal_year: '2022'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/planning--research--and-demonstration
-programs: '[{"cfda":"10.872","permalink":"/program/10.872","title":"Healthy Food Financing
-  Initiative","popular_name":"HFFI","agency":"Department of Agriculture","total_obs":25000000.0},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
-  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
-  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":2000000.0},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
-  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
-  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":100000000.0},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
-  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":2000000.0},{"cfda":"12.007","permalink":"/program/12.007","title":"Military
-  Health Services Research (MHSR)","popular_name":null,"agency":"Department of Defense","total_obs":10000000.0},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
-  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
-  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":124100000.0},{"cfda":"15.072","permalink":"/program/15.072","title":"USGS
+programs: '[{"cfda":"11.307","permalink":"/program/11.307","title":"Economic Adjustment
+  Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
+  of Commerce","total_obs":100000000.0,"program_type":"assistance_listing"},{"cfda":"15.072","permalink":"/program/15.072","title":"USGS
   Experienced Services Program","popular_name":"USGS ESP","agency":"Department of
-  the Interior","total_obs":0.0},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
-  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0},{"cfda":"17.235","permalink":"/program/17.235","title":"Senior
-  Community Service Employment Program","popular_name":"Senior Community Service Employment
-  Program (SCSEP)","agency":"Department of Labor","total_obs":398000000.0},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
-  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":209000000.0},{"cfda":"17.401","permalink":"/program/17.401","title":"International
-  Labor Programs","popular_name":null,"agency":"Department of Labor","total_obs":60296.0},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
-  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
-  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":3401200.0},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
-  Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":19644358.0},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"cfda":"20.530","permalink":"/program/20.530","title":"Public
-  Transportation Innovation","popular_name":"5312 Research Program","agency":"Department
-  of Transportation","total_obs":20033000.0},{"cfda":"20.531","permalink":"/program/20.531","title":"Technical
-  Assistance and Workforce Development","popular_name":"5314 Program","agency":"Department
-  of Transportation","total_obs":18565000.0},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
   and Technical Education -- National Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":7421000.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  of Education","total_obs":7421000.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
-  and Human Services","total_obs":0.0},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
+  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.530","permalink":"/program/20.530","title":"Public
+  Transportation Innovation","popular_name":"5312 Research Program","agency":"Department
+  of Transportation","total_obs":20033000.0,"program_type":"assistance_listing"},{"cfda":"17.401","permalink":"/program/17.401","title":"International
+  Labor Programs","popular_name":null,"agency":"Department of Labor","total_obs":60296.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
+  Labor","total_obs":209000000.0,"program_type":"assistance_listing"},{"cfda":"10.872","permalink":"/program/10.872","title":"Healthy
+  Food Financing Initiative","popular_name":"HFFI","agency":"Department of Agriculture","total_obs":25000000.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
+  Employment Policy Development","popular_name":"Office of Disability Employment Policy
+  (ODEP)","agency":"Department of Labor","total_obs":19644358.0,"program_type":"assistance_listing"},{"cfda":"12.007","permalink":"/program/12.007","title":"Military
+  Health Services Research (MHSR)","popular_name":null,"agency":"Department of Defense","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0}]'
+  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
+  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
+  Talent Challenge","agency":"Department of Commerce","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"20.531","permalink":"/program/20.531","title":"Technical
+  Assistance and Workforce Development","popular_name":"5314 Program","agency":"Department
+  of Transportation","total_obs":18565000.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.235","permalink":"/program/17.235","title":"Senior
+  Community Service Employment Program","popular_name":"Senior Community Service Employment
+  Program (SCSEP)","agency":"Department of Labor","total_obs":398000000.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
+  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
+  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":3401200.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
+  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
+  of Defense","total_obs":124100000.0,"program_type":"assistance_listing"}]'
 title: Planning, Research, and Demonstration
 total_num_agencies: 13
 total_num_applicant_types: 39

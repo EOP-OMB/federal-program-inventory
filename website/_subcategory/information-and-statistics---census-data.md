@@ -416,6 +416,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -433,13 +468,14 @@ fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/census-data
-programs: '[{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical, Research,
-  and Methodology  Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":5373935.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
+programs: '[{"cfda":"15.875","permalink":"/program/15.875","title":"Economic, Social,
+  and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
   for Adam Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
-  of Justice","total_obs":42929453.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
+  of Justice","total_obs":42929453.0,"program_type":"assistance_listing"},{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical,
+  Research, and Methodology  Assistance","popular_name":null,"agency":"Department
+  of Commerce","total_obs":5373935.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Census Data
 total_num_agencies: 4
 total_num_applicant_types: 19

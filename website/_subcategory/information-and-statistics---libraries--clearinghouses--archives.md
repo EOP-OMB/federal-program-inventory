@@ -2,10 +2,10 @@
 agencies: '[{"title":"Department of Health and Human Services","total_num_programs":2,"total_obs":10864925104.0},{"title":"Federal
   Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":303422017.0},{"title":"The Institute
-  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Library of Congress","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":0.0}]'
+  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"National
+  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -428,6 +428,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -445,29 +480,29 @@ fiscal_year: '2022'
 parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/libraries--clearinghouses--archives
-programs: '[{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative Extension
-  Service","popular_name":"(CES)","agency":"Department of Agriculture","total_obs":303422017.0},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
-  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":3224900000.0},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
-  the People: Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library
-  of Congress","total_obs":0.0},{"cfda":"45.310","permalink":"/program/45.310","title":"Grants
-  to States","popular_name":"G2S","agency":"The Institute of Museum and Library Services","total_obs":168803000.0},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
+programs: '[{"cfda":"93.600","permalink":"/program/93.600","title":"Head Start","popular_name":"Head
+  Start","agency":"Department of Health and Human Services","total_obs":10862653587.0,"program_type":"assistance_listing"},{"cfda":"45.310","permalink":"/program/45.310","title":"Grants
+  to States","popular_name":"G2S","agency":"The Institute of Museum and Library Services","total_obs":168803000.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
   American and Native Hawaiian Library Services","popular_name":"NANH-Libraries","agency":"The
-  Institute of Museum and Library Services","total_obs":5263000.0},{"cfda":"45.312","permalink":"/program/45.312","title":"National
-  Leadership Grants","popular_name":"NLG; NLG-L; NLG-M","agency":"The Institute of
-  Museum and Library Services","total_obs":21519000.0},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
+  Institute of Museum and Library Services","total_obs":5263000.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
+  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
   Bush 21st Century Librarian Program","popular_name":"LB21","agency":"The Institute
-  of Museum and Library Services","total_obs":10000000.0},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
-  5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
-  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0},{"cfda":"89.001","permalink":"/program/89.001","title":"National
-  Archives Reference Services Historical Research","popular_name":null,"agency":"National
-  Archives and Records Administration","total_obs":0.0},{"cfda":"89.003","permalink":"/program/89.003","title":"National
-  Historical Publications and Records Grants","popular_name":null,"agency":"National
-  Archives and Records Administration","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"93.499","permalink":"/program/93.499","title":"Low
+  of Museum and Library Services","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
+  Leadership Grants","popular_name":"NLG; NLG-L; NLG-M","agency":"The Institute of
+  Museum and Library Services","total_obs":21519000.0,"program_type":"assistance_listing"},{"cfda":"93.499","permalink":"/program/93.499","title":"Low
   Income Household Water Assistance Program","popular_name":"LIHWAP","agency":"Department
-  of Health and Human Services","total_obs":2271517.0},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":10862653587.0}]'
+  of Health and Human Services","total_obs":2271517.0,"program_type":"assistance_listing"},{"cfda":"89.003","permalink":"/program/89.003","title":"National
+  Historical Publications and Records Grants","popular_name":null,"agency":"National
+  Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
+  5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
+  Extension Service","popular_name":"(CES)","agency":"Department of Agriculture","total_obs":303422017.0,"program_type":"assistance_listing"},{"cfda":"89.001","permalink":"/program/89.001","title":"National
+  Archives Reference Services Historical Research","popular_name":null,"agency":"National
+  Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
+  the People: Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library
+  of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Libraries, Clearinghouses, Archives
 total_num_agencies: 8
 total_num_applicant_types: 30

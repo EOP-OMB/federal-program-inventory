@@ -2,10 +2,10 @@
 agencies: '[{"title":"Department of Transportation","total_num_programs":14,"total_obs":13203033369.0},{"title":"Environmental
   Protection Agency","total_num_programs":5,"total_obs":153927000.0},{"title":"Department
   of the Treasury","total_num_programs":2,"total_obs":57867208.67},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern Border Regional
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":15},{"title":"Provision
   of Specialized Services","total_num_programs":15},{"title":"State","total_num_programs":14},{"title":"Guaranteed
   / Insured Loans","total_num_programs":12},{"title":"Local (includes State-designated
@@ -429,6 +429,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -446,61 +481,62 @@ fiscal_year: '2022'
 parent_permalink: /category/transportation
 parent_title: Transportation
 permalink: /category/transportation/air-transportation
-programs: '[{"cfda":"20.106","permalink":"/program/20.106","title":"Airport Improvement
-  Program, COVID-19 Airports Programs, and Infrastructure Investment and Jobs Act
-  Programs","popular_name":"AIP, CARES, ARPA, and BIL","agency":"Department of Transportation","total_obs":7945322093.0},{"cfda":"20.114","permalink":"/program/20.114","title":"Aviation
-  Manufacturing Jobs Protection (AMJP) Program","popular_name":"AMJP","agency":"Department
-  of Transportation","total_obs":234652731.0},{"cfda":"20.224","permalink":"/program/20.224","title":"Federal
-  Lands Access Program","popular_name":"Federal Lands Access Program or FLAP","agency":"Department
-  of Transportation","total_obs":227824094.0},{"cfda":"20.703","permalink":"/program/20.703","title":"Interagency
+programs: '[{"cfda":"20.933","permalink":"/program/20.933","title":"National Infrastructure
+  Investments ","popular_name":"Rebuilding Transportation Infrastructure with Sustainability
+  and Equity (RAISE)/Better Utilizing Investments to Leverage Development (BUILD)
+  Grants","agency":"Department of Transportation","total_obs":2245000000.0,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
+  Transportation Program","popular_name":"Veterans Transportation Program/Grants for
+  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":3693000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.703","permalink":"/program/20.703","title":"Interagency
   Hazardous Materials Public Sector Training and Planning Grants","popular_name":"Hazardous
   Materials Emergency Preparedness Training and PlanningGrants (HMEP), Hazardous Materials
   Instructor Training Grants (HMIT), Supplemental Public Sector Training Grants (SPST),
   Assistance for Local Emergency Response Training Grants (ALERT), Community Safety
-  Grants (CS)","agency":"Department of Transportation","total_obs":31443550.0},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
-  Materials State Inspection (HMSI) Grant","popular_name":"HMSI Grant","agency":"Department
-  of Transportation","total_obs":414031.0},{"cfda":"20.901","permalink":"/program/20.901","title":"Payments
-  for Essential Air Services","popular_name":"EAS","agency":"Department of Transportation","total_obs":388593089.0},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
+  Grants (CS)","agency":"Department of Transportation","total_obs":31443550.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.027","permalink":"/program/21.027","title":"CORONAVIRUS
+  STATE AND LOCAL FISCAL RECOVERY FUNDS","popular_name":"Coronavirus State and Local
+  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":5963266.0,"program_type":"assistance_listing"},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
   for Small Community Air Service Development","popular_name":"Small Community Program
   or SCASDP Payments for Small Community Air Service Development","agency":"Department
-  of Transportation","total_obs":15000000.0},{"cfda":"20.933","permalink":"/program/20.933","title":"National
-  Infrastructure Investments ","popular_name":"Rebuilding Transportation Infrastructure
-  with Sustainability and Equity (RAISE)/Better Utilizing Investments to Leverage
-  Development (BUILD) Grants","agency":"Department of Transportation","total_obs":2245000000.0},{"cfda":"20.936","permalink":"/program/20.936","title":"Transportation
-  Demonstration Program","popular_name":"Transportation Demonstration Program","agency":"Department
-  of Transportation","total_obs":0.0},{"cfda":"20.937","permalink":"/program/20.937","title":"National
-  Infrastructure Project Assistance (Mega Projects)","popular_name":"Mega Projects,
-  49 USC Sec. 6701","agency":"Department of Transportation","total_obs":2000000000.0},{"cfda":"20.941","permalink":"/program/20.941","title":"Strengthening
-  Mobility and Revolutionizing Transportation (SMART) Grants Program","popular_name":"SMART","agency":"Department
-  of Transportation","total_obs":94783781.0},{"cfda":"20.945","permalink":"/program/20.945","title":"Asset
-  Concessions and Innovative Finance Assistance","popular_name":"Innovative Finance
-  and Asset Concession Grant Program","agency":"Department of Transportation","total_obs":20000000.0},{"cfda":"20.946","permalink":"/program/20.946","title":"Research
-  Partnership on Climate Change and Transportation","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0},{"cfda":"20.947","permalink":"/program/20.947","title":"Advanced
+  of Transportation","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"20.901","permalink":"/program/20.901","title":"Payments
+  for Essential Air Services","popular_name":"EAS","agency":"Department of Transportation","total_obs":388593089.0,"program_type":"assistance_listing"},{"cfda":"20.947","permalink":"/program/20.947","title":"Advanced
   Bridge Technology Clearinghouse (ABTC) Development","popular_name":"UTC Program","agency":"Department
-  of Transportation","total_obs":0.0},{"cfda":"21.018","permalink":"/program/21.018","title":"Coronavirus
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.936","permalink":"/program/20.936","title":"Transportation
+  Demonstration Program","popular_name":"Transportation Demonstration Program","agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
+  Protection Agency","total_obs":27600000.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
+  Border Regional Development","popular_name":"Direct Grants","agency":"Northern Border
+  Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.106","permalink":"/program/20.106","title":"Airport
+  Improvement Program, COVID-19 Airports Programs, and Infrastructure Investment and
+  Jobs Act Programs","popular_name":"AIP, CARES, ARPA, and BIL","agency":"Department
+  of Transportation","total_obs":7945322093.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
+  Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.018","permalink":"/program/21.018","title":"Coronavirus
   Relief - Pandemic Relief for Aviation Workers","popular_name":"Payroll Support Program
   (PSP1) and Payroll Support Program Extension (PSP2), and Third Payroll Support Program
-  (PSP3)","agency":"Department of the Treasury","total_obs":51903942.67},{"cfda":"21.027","permalink":"/program/21.027","title":"CORONAVIRUS
-  STATE AND LOCAL FISCAL RECOVERY FUNDS","popular_name":"Coronavirus State and Local
-  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":5963266.0},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
-  Transportation Program","popular_name":"Veterans Transportation Program/Grants for
-  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":3693000.0},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  (PSP3)","agency":"Department of the Treasury","total_obs":51903942.67,"program_type":"assistance_listing"},{"cfda":"20.224","permalink":"/program/20.224","title":"Federal
+  Lands Access Program","popular_name":"Federal Lands Access Program or FLAP","agency":"Department
+  of Transportation","total_obs":227824094.0,"program_type":"assistance_listing"},{"cfda":"20.941","permalink":"/program/20.941","title":"Strengthening
+  Mobility and Revolutionizing Transportation (SMART) Grants Program","popular_name":"SMART","agency":"Department
+  of Transportation","total_obs":94783781.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
   Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":64400000.0},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
-  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":27600000.0},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
+  Protection Agency","total_obs":64400000.0,"program_type":"assistance_listing"},{"cfda":"20.114","permalink":"/program/20.114","title":"Aviation
+  Manufacturing Jobs Protection (AMJP) Program","popular_name":"AMJP","agency":"Department
+  of Transportation","total_obs":234652731.0,"program_type":"assistance_listing"},{"cfda":"20.946","permalink":"/program/20.946","title":"Research
+  Partnership on Climate Change and Transportation","popular_name":null,"agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
   School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
-  Protection Agency","total_obs":0.0},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
-  Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":0.0},{"cfda":"66.956","permalink":"/program/66.956","title":"Targeted
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.945","permalink":"/program/20.945","title":"Asset
+  Concessions and Innovative Finance Assistance","popular_name":"Innovative Finance
+  and Asset Concession Grant Program","agency":"Department of Transportation","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
+  Materials State Inspection (HMSI) Grant","popular_name":"HMSI Grant","agency":"Department
+  of Transportation","total_obs":414031.0,"program_type":"assistance_listing"},{"cfda":"20.937","permalink":"/program/20.937","title":"National
+  Infrastructure Project Assistance (Mega Projects)","popular_name":"Mega Projects,
+  49 USC Sec. 6701","agency":"Department of Transportation","total_obs":2000000000.0,"program_type":"assistance_listing"},{"cfda":"66.956","permalink":"/program/66.956","title":"Targeted
   Airshed Grant Program","popular_name":"Targeted Airshed","agency":"Environmental
-  Protection Agency","total_obs":61927000.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
-  Border Regional Development","popular_name":"Direct Grants","agency":"Northern Border
-  Regional Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0}]'
+  Protection Agency","total_obs":61927000.0,"program_type":"assistance_listing"}]'
 title: Air Transportation
 total_num_agencies: 7
 total_num_applicant_types: 33

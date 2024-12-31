@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":2,"total_obs":73396000.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":2,"total_obs":73396000.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":2},{"title":"Individual/Family","total_num_programs":1},{"title":"Other
   (specify)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Training","total_num_programs":1}]'
 categories_subcategories:
@@ -403,6 +403,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -420,13 +455,13 @@ fiscal_year: '2022'
 parent_permalink: /category/consumer-protection
 parent_title: Consumer Protection
 permalink: /category/consumer-protection/complaint-investigation
-programs: '[{"cfda":"10.163","permalink":"/program/10.163","title":"Market Protection
-  and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
-  of Agriculture","total_obs":62297000.0},{"cfda":"10.165","permalink":"/program/10.165","title":"Perishable
-  Agricultural Commodities Act","popular_name":null,"agency":"Department of Agriculture","total_obs":11099000.0},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
+programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
+  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
   Support and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
+  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
+  Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
+  of Agriculture","total_obs":62297000.0,"program_type":"assistance_listing"},{"cfda":"10.165","permalink":"/program/10.165","title":"Perishable
+  Agricultural Commodities Act","popular_name":null,"agency":"Department of Agriculture","total_obs":11099000.0,"program_type":"assistance_listing"}]'
 title: Complaint Investigation
 total_num_agencies: 3
 total_num_applicant_types: 5

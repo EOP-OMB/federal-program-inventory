@@ -424,6 +424,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -441,54 +476,54 @@ fiscal_year: '2022'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/rural-housing
-programs: '[{"cfda":"10.405","permalink":"/program/10.405","title":"Farm Labor Housing
-  Loans and Grants","popular_name":"(Labor Housing)","agency":"Department of Agriculture","total_obs":80383617.0},{"cfda":"10.410","permalink":"/program/10.410","title":"Very
-  Low to Moderate Income Housing Loans and Loan Guarantees","popular_name":"(Section
-  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":31250000000.0},{"cfda":"10.411","permalink":"/program/10.411","title":"Rural
-  Housing Site Loans and Self Help Housing Land Development Loans","popular_name":"(Section
-  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":10000000.0},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
-  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":45000000.0},{"cfda":"10.420","permalink":"/program/10.420","title":"Rural
+programs: '[{"cfda":"10.427","permalink":"/program/10.427","title":"Rural Rental Assistance
+  Payments","popular_name":"(Rental Assistance)","agency":"Department of Agriculture","total_obs":1450000000.0,"program_type":"assistance_listing"},{"cfda":"10.420","permalink":"/program/10.420","title":"Rural
   Self-Help Housing Technical Assistance","popular_name":"(Section 523 Self-Help Housing)","agency":"Department
-  of Agriculture","total_obs":32000000.0},{"cfda":"10.427","permalink":"/program/10.427","title":"Rural
-  Rental Assistance Payments","popular_name":"(Rental Assistance)","agency":"Department
-  of Agriculture","total_obs":1450000000.0},{"cfda":"10.433","permalink":"/program/10.433","title":"Rural
-  Housing Preservation Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":16000000.0},{"cfda":"10.438","permalink":"/program/10.438","title":"Section
-  538 Rural Rental Housing Guaranteed Loans","popular_name":"Rural Rental Housing
-  Guaranteed Loans","agency":"Department of Agriculture","total_obs":250000000.0},{"cfda":"10.447","permalink":"/program/10.447","title":"Rural
-  Multi-Family Housing Revitalization Demonstration Program (MPR)","popular_name":"(Restructuring
-  Program)","agency":"Department of Agriculture","total_obs":146012915.0},{"cfda":"10.494","permalink":"/program/10.494","title":"Multi-Family
-  Housing Non-Profit Transfer Technical Assistance Grants","popular_name":"MFH NPTA
-  Grants","agency":"Department of Agriculture","total_obs":2100000.0},{"cfda":"10.890","permalink":"/program/10.890","title":"Rural
-  Development Cooperative Agreement Program","popular_name":"Rural Development''s
-  Investment Food Supply Chains","agency":"Department of Agriculture","total_obs":0.0},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.108","permalink":"/program/14.108","title":"Rehabilitation
+  of Agriculture","total_obs":32000000.0,"program_type":"assistance_listing"},{"cfda":"14.108","permalink":"/program/14.108","title":"Rehabilitation
   Mortgage Insurance","popular_name":"FHA Rehabilitation Mortgage- 203(k)","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.117","permalink":"/program/14.117","title":"Mortgage
-  Insurance Homes","popular_name":"FHA Home Mortgage Insurance- 203(b)","agency":"Department
-  of Housing and Urban Development","total_obs":255613001.0},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
-  4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
-  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.276","permalink":"/program/14.276","title":"Youth
-  Homelessness Demonstration Program","popular_name":"Youth Homelessness Demonstration
-  Program","agency":"Department of Housing and Urban Development","total_obs":155396908.0},{"cfda":"14.311","permalink":"/program/14.311","title":"Single
-  Family Property Disposition","popular_name":"HUD Homes","agency":"Department of
-  Housing and Urban Development","total_obs":0.0},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
-  of Housing and Urban Development","total_obs":4227408.0},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  of Housing and Urban Development","total_obs":4227408.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":53369096.0},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
+  of Housing and Urban Development","total_obs":53369096.0,"program_type":"assistance_listing"},{"cfda":"10.494","permalink":"/program/10.494","title":"Multi-Family
+  Housing Non-Profit Transfer Technical Assistance Grants","popular_name":"MFH NPTA
+  Grants","agency":"Department of Agriculture","total_obs":2100000.0,"program_type":"assistance_listing"},{"cfda":"10.410","permalink":"/program/10.410","title":"Very
+  Low to Moderate Income Housing Loans and Loan Guarantees","popular_name":"(Section
+  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":31250000000.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":886000000.0},{"cfda":"14.921","permalink":"/program/14.921","title":"Older
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":886000000.0,"program_type":"assistance_listing"},{"cfda":"10.433","permalink":"/program/10.433","title":"Rural
+  Housing Preservation Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":16000000.0,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
+  Labor Housing Loans and Grants","popular_name":"(Labor Housing)","agency":"Department
+  of Agriculture","total_obs":80383617.0,"program_type":"assistance_listing"},{"cfda":"14.276","permalink":"/program/14.276","title":"Youth
+  Homelessness Demonstration Program","popular_name":"Youth Homelessness Demonstration
+  Program","agency":"Department of Housing and Urban Development","total_obs":155396908.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.890","permalink":"/program/10.890","title":"Rural
+  Development Cooperative Agreement Program","popular_name":"Rural Development''s
+  Investment Food Supply Chains","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
+  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":20.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.447","permalink":"/program/10.447","title":"Rural
+  Multi-Family Housing Revitalization Demonstration Program (MPR)","popular_name":"(Restructuring
+  Program)","agency":"Department of Agriculture","total_obs":146012915.0,"program_type":"assistance_listing"},{"cfda":"10.411","permalink":"/program/10.411","title":"Rural
+  Housing Site Loans and Self Help Housing Land Development Loans","popular_name":"(Section
+  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.438","permalink":"/program/10.438","title":"Section
+  538 Rural Rental Housing Guaranteed Loans","popular_name":"Rural Rental Housing
+  Guaranteed Loans","agency":"Department of Agriculture","total_obs":250000000.0,"program_type":"assistance_listing"},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
+  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":45000000.0,"program_type":"assistance_listing"},{"cfda":"14.311","permalink":"/program/14.311","title":"Single
+  Family Property Disposition","popular_name":"HUD Homes","agency":"Department of
+  Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.117","permalink":"/program/14.117","title":"Mortgage
+  Insurance Homes","popular_name":"FHA Home Mortgage Insurance- 203(b)","agency":"Department
+  of Housing and Urban Development","total_obs":255613001.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":26296252.0,"program_type":"assistance_listing"},{"cfda":"14.921","permalink":"/program/14.921","title":"Older
   Adults Home Modification Grant Program","popular_name":null,"agency":"Department
-  of Housing and Urban Development","total_obs":14479633.0},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":26296252.0},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
-  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":20.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0}]'
+  of Housing and Urban Development","total_obs":14479633.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Rural Housing
 total_num_agencies: 4
 total_num_applicant_types: 32

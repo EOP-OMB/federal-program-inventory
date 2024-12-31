@@ -872,8 +872,8 @@ def load_additional_programs():
             cur.execute(PROGRAM_TAX_EXPENDITURE_SPENDING_INSERT_SQL, [
                 record['program.id'],
                 int(year),
-                record[columns[0]] if not pd.isna(record[columns[0]]) else None,
-                record[columns[1]] if not pd.isna(record[columns[1]]) else None,
+                0 if pd.isna(record[columns[0]]) or record[columns[0]] == 0 else record[columns[0]],
+                0 if pd.isna(record[columns[1]]) or record[columns[1]] == 0 else record[columns[1]],
                 'additional-programs.csv'
             ])
 
@@ -885,11 +885,11 @@ def load_additional_programs():
 # load_usaspending_initial_files()
 # load_usaspending_delta_files()
 # transform_and_insert_usaspending_aggregation_data()
-load_agency()
-load_sam_category()
-load_sam_programs()
-load_category_and_sub_category()
-load_additional_programs()
+# load_agency()
+# load_sam_category()
+# load_sam_programs()
+# load_category_and_sub_category()
+# load_additional_programs()
 
 # close the db connection
 conn.close()

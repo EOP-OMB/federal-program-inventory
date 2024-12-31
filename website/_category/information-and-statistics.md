@@ -10,13 +10,13 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
   of Justice","total_num_programs":4,"total_obs":42929453.0},{"title":"United States
   Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":450000.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
-  Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Library of Congress","total_num_programs":2,"total_obs":0.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
-  Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Transportation","total_num_programs":1,"total_obs":450000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Direct Loans","total_num_programs":24},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":24},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -444,6 +444,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation

@@ -5,11 +5,12 @@ agencies: '[{"title":"Department of the Interior","total_num_programs":4,"total_
   Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":12152774.0},{"title":"Department
   of State","total_num_programs":5,"total_obs":10872674.0},{"title":"Department of
-  Agriculture","total_num_programs":1,"total_obs":2000000.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  Agriculture","total_num_programs":1,"total_obs":2000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Guaranteed / Insured Loans","total_num_programs":15},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":15},{"title":"Public nonprofit institution/organization
@@ -436,6 +437,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -453,55 +489,56 @@ fiscal_year: '2022'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/resources-and-development
-programs: '[{"cfda":"10.755","permalink":"/program/10.755","title":"Rural Innovation
-  Stronger Economy","popular_name":"RISE Grant Program","agency":"Department of Agriculture","total_obs":2000000.0},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
-  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":45000000.0},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
-  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
-  4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
-  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0},{"cfda":"15.555","permalink":"/program/15.555","title":"San
-  Joaquin River Restoration ","popular_name":null,"agency":"Department of the Interior","total_obs":2511211.0},{"cfda":"15.558","permalink":"/program/15.558","title":"White
-  Mountain Apache Tribe Rural Water System ","popular_name":"Miner Flat Project","agency":"Department
-  of the Interior","total_obs":0.0},{"cfda":"15.574","permalink":"/program/15.574","title":"Water
-  Storage Enhancement","popular_name":null,"agency":"Department of the Interior","total_obs":19000000.0},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
-  in People in The Middle East and North Africa","popular_name":"Investing in people/
-  cultural/educational/alumni/information and media efforts in the Middle East and
-  North Africa.","agency":"Department of State","total_obs":0.0},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0},{"cfda":"19.601","permalink":"/program/19.601","title":"Syria
-  Assistance Program","popular_name":"NEA Syria ","agency":"Department of State","total_obs":0.0},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
-  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
-  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
-  of State","total_obs":0.0},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
-  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0},{"cfda":"23.009","permalink":"/program/23.009","title":"Appalachian
-  Local Development District Assistance","popular_name":"(LDD)","agency":"Appalachian
-  Regional Commission","total_obs":0.0},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
-  Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
-  Research)","agency":"Appalachian Regional Commission","total_obs":0.0},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+programs: '[{"cfda":"14.024","permalink":"/program/14.024","title":"Community Development
+  Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.601","permalink":"/program/19.601","title":"Syria
+  Assistance Program","popular_name":"NEA Syria ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":17359022.0},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Protection Agency","total_obs":17359022.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.755","permalink":"/program/10.755","title":"Rural
+  Innovation Stronger Economy","popular_name":"RISE Grant Program","agency":"Department
+  of Agriculture","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
+  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":45000000.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.009","permalink":"/program/23.009","title":"Appalachian
+  Local Development District Assistance","popular_name":"(LDD)","agency":"Appalachian
+  Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
+  Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
+  Research)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.555","permalink":"/program/15.555","title":"San
+  Joaquin River Restoration ","popular_name":null,"agency":"Department of the Interior","total_obs":2511211.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
+  State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
+  for National and Community Service","total_obs":440817446.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
   Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
-  Permitting Improvement Steering Council","total_obs":0.0},{"cfda":"93.762","permalink":"/program/93.762","title":"A
+  Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.558","permalink":"/program/15.558","title":"White
+  Mountain Apache Tribe Rural Water System ","popular_name":"Miner Flat Project","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"15.574","permalink":"/program/15.574","title":"Water
+  Storage Enhancement","popular_name":null,"agency":"Department of the Interior","total_obs":19000000.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.762","permalink":"/program/93.762","title":"A
   Comprehensive Approach to Good Health and Wellness in Indian County \u2013 financed
   solely by Prevention and Public Health ","popular_name":"Tribal Wellness","agency":"Department
-  of Health and Human Services","total_obs":12152774.0},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
-  State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":440817446.0}]'
+  of Health and Human Services","total_obs":12152774.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
+  in People in The Middle East and North Africa","popular_name":"Investing in people/
+  cultural/educational/alumni/information and media efforts in the Middle East and
+  North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Resources and Development
 total_num_agencies: 12
 total_num_applicant_types: 37

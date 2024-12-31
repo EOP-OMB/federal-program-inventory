@@ -17,10 +17,11 @@ agencies: '[{"title":"Department of the Treasury","total_num_programs":4,"total_
   of Health and Human Services","total_num_programs":3,"total_obs":37734645.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":12000000.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":4,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":4,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":69},{"title":"Sale, Exchange,
   or Donation of Property or Goods","total_num_programs":69},{"title":"Guaranteed
@@ -449,6 +450,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -464,11 +500,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/regional-development
-sub_cats: '[{"title":"Economic Development","permalink":"/category/regional-development/economic-development","total_num_programs":59,"total_obs":24053218859.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":7025757120.0},{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":5335513910.25},{"title":"Planning
-  and Technical Assistance","permalink":"/category/regional-development/planning-and-technical-assistance","total_num_programs":50,"total_obs":2649349551.0},{"title":"Health
-  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":2120584691.0},{"title":"Land
-  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":21,"total_obs":1560066841.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":1307594892.0},{"title":"Resources
-  and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":1186963152.0},{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":1148155654.0}]'
+sub_cats: '[{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":5335513910.25},{"title":"Health
+  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":2120584691.0},{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":1148155654.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":1307594892.0},{"title":"Planning
+  and Technical Assistance","permalink":"/category/regional-development/planning-and-technical-assistance","total_num_programs":50,"total_obs":2649349551.0},{"title":"Resources
+  and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":1186963152.0},{"title":"Economic
+  Development","permalink":"/category/regional-development/economic-development","total_num_programs":59,"total_obs":24053218859.0},{"title":"Land
+  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":21,"total_obs":1560066841.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":7025757120.0}]'
 title: Regional Development
 total_num_agencies: 23
 total_num_applicant_types: 43

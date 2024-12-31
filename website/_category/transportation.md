@@ -6,11 +6,12 @@ agencies: '[{"title":"Department of Transportation","total_num_programs":88,"tot
   Protection Agency","total_num_programs":6,"total_obs":153927000.0},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":103000000.0},{"title":"Department
   of Agriculture","total_num_programs":3,"total_obs":89451494.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Agency
-  for International Development","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
+  Development","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":50},{"title":"Guaranteed
   / Insured Loans","total_num_programs":48},{"title":"Local (includes State-designated
   lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":48},{"title":"Direct
@@ -438,6 +439,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -453,11 +489,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/transportation
-sub_cats: '[{"title":"Highways, Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":61,"total_obs":74167058382.59},{"title":"Urban
-  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":45,"total_obs":45677010796.0},{"title":"Rail
-  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":20491141611.0},{"title":"Air
-  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":25,"total_obs":13418520577.67},{"title":"Water
-  Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":27,"total_obs":5562096315.0}]'
+sub_cats: '[{"title":"Water Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":27,"total_obs":5562096315.0},{"title":"Rail
+  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":20491141611.0},{"title":"Highways,
+  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":61,"total_obs":74167058382.59},{"title":"Air
+  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":25,"total_obs":13418520577.67},{"title":"Urban
+  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":45,"total_obs":45677010796.0}]'
 title: Transportation
 total_num_agencies: 13
 total_num_applicant_types: 37

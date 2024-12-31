@@ -12,8 +12,9 @@ agencies: '[{"title":"Department of Justice","total_num_programs":122,"total_obs
   of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":22376854.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":3992467.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Equal
-  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Agriculture","total_num_programs":1,"total_obs":3992467.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Direct Loans","total_num_programs":98},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":98},{"title":"Guaranteed
   / Insured Loans","total_num_programs":92},{"title":"Local (includes State-designated
@@ -445,6 +446,41 @@ categories_subcategories:
   - permalink: /category/science-and-technology/research---specialized
     title: Research - Specialized
   title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -460,15 +496,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/law--justice-and-legal-services
-sub_cats: '[{"title":"Law Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":89,"total_obs":7690336365.21},{"title":"Law
-  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":100,"total_obs":4399304341.8},{"title":"Legal
-  Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":51,"total_obs":3868766101.0},{"title":"Law
-  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":3139530542.21},{"title":"Law
-  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":2814078034.21},{"title":"Legal
-  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1091815228.0},{"title":"Legal
-  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":156745704.0},{"title":"Legal
+sub_cats: '[{"title":"Legal Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0},{"title":"Legal
   Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":120177642.0},{"title":"Legal
-  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0}]'
+  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1091815228.0},{"title":"Law
+  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":3139530542.21},{"title":"Legal
+  Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":51,"total_obs":3868766101.0},{"title":"Law
+  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":100,"total_obs":4399304341.8},{"title":"Law
+  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":2814078034.21},{"title":"Legal
+  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":156745704.0},{"title":"Law
+  Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":89,"total_obs":7690336365.21}]'
 title: Law, Justice and Legal Services
 total_num_agencies: 16
 total_num_applicant_types: 46
