@@ -167,7 +167,7 @@ footer_include: _footer-category.html
             >Agency</label
           >
         </div>
-
+        {% if page.total_num_applicant_types > 0 %}
         <div class="usa-radio display-flex flex-align-center">
           <input
             class="usa-radio__input"
@@ -181,6 +181,7 @@ footer_include: _footer-category.html
             >Eligible applicant type</label
           >
         </div>
+        {% endif %}
       </div>
 
       <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection" role="img"></svg>

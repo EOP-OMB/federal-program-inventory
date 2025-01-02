@@ -506,8 +506,13 @@ categories_json: '[{"title":"Income Security and Social Services","total_num_pro
   Affairs","total_num_programs":46,"total_obs":800640550.0,"permalink":"/category/cultural-affairs"}]'
 fiscal_year: '2022'
 layout: category-index
+obligations_by_type:
+- title: Financial Assistance
+  total_obs: 4459820970482.449
+- title: Tax Credit
+  total_obs: 1977220000000.0
 permalink: /category.html
 title: Categories
 total_num_programs: 2437
-total_obs: 6437792665667.449
+total_obs: 6437040970482.449
 ---

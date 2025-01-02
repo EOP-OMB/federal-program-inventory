@@ -1,17 +1,31 @@
 <script>
   const totalObligations = {{ page.total_obs }};
-  const pageTitle = "{{ page.title }}";
+  const categoriesJson = {{ page.categories_hierarchy | jsonify }};
+  const obligationData = {{ page.obligations_by_type | jsonify }};
   const categoriesChartJson = {{ page.categories_json | jsonify }};
+  const pageTitle = "{{ page.title }}";
   const fiscalYear = "{{ page.fiscal_year }}";
   const categoriesChartData = JSON.parse(categoriesChartJson)
-  const categoriesJson = {{ page.categories_hierarchy | jsonify }};
-  // const obligationData = {{ page.obligation_by_type }};
+
   const categoriesData = categoriesJson;
   const itemsPerPage = 10;
   let currentPage = 1;
   let currentChart = null;
   let activeTable = "category";
       
+  function formatObligations(amount) {
+      if (!amount) return "$0";
+      const trillion = 1000000000000;
+      const billion = 1000000000;
+      const million = 1000000;
+      const thousand = 1000;
+
+      if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
+      if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
+      if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
+      if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
+      return `$${amount.toFixed(2)}`;
+    }
 
   function formatCurrency(amount) {
     return new Intl.NumberFormat("en-US", {
@@ -22,126 +36,120 @@
     }).format(amount);
   }
 
-//   function createObligationsPieChart() {
-//   // Parse the JSON data from the frontmatter variables
-//   const obligationData = [
-//     {"title": "Financial Assistance", "total_obs": 6437338876.0},
-//     {"title": "Tax Credit", "total_obs": 800640550.0}
-//   ];
-//   const totalObs = 4460575665667.449;
+  function createObligationsPieChart(obligationData) {
 
-//   // Set up dimensions
-//   const width = 800;
-//   const height = 500;
-//   const legendWidth = 180; // Width reserved for legend
-//   const margin = {top: 20, right: 20, bottom: 20, left: 20};
-//   const radius = Math.min(width - legendWidth - margin.left - margin.right, height - margin.top - margin.bottom) / 2;
 
-//   // Clear any existing content
-//   d3.select("#obligations-pie-chart").html("");
+  // Set up dimensions
+  const width = 800;
+  const height = 500;
+  const legendWidth = 180; // Width reserved for legend
+  const margin = {top: 20, right: 20, bottom: 20, left: 20};
+  const radius = Math.min(width - legendWidth - margin.left - margin.right, height - margin.top - margin.bottom) / 2;
 
-//   // Create SVG container
-//   const svg = d3.select("#obligations-pie-chart")
-//     .append("svg")
-//     .attr("width", width)
-//     .attr("height", height);
+  // Clear any existing content
+  d3.select("#obligations-pie-chart").html("");
 
-//   // Calculate percentages
-//   const data = obligationData.map(d => ({
-//     title: d.title,
-//     total_obs: d.total_obs,
-//     percentage: (d.total_obs / totalObs) * 100
-//   }));
+  // Create SVG container
+  const svg = d3.select("#obligations-pie-chart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
 
-//   // Color scale
-//   const color = d3.scaleOrdinal()
-//     .domain(data.map(d => d.title))
-//     .range(['#DD4A24', '#FFB396']);
+  // Calculate percentages
+  const data = obligationData.map(d => ({
+    title: d.title,
+    total_obs: d.total_obs,
+    percentage: (d.total_obs / totalObligations) * 100
+  }));
 
-//   // Add legend at the top left
-//   const legendData = data.map(d => ({
-//     title: d.title,
-//     percentage: d.percentage
-//   }));
+  // Color scale
+  const color = d3.scaleOrdinal()
+    .domain(data.map(d => d.title))
+    .range(['#DD4A24', '#FFB396']);
 
-//   const legend = svg.append("g")
-//     .attr("class", "legend")
-//     .attr("transform", `translate(${margin.left}, ${margin.top})`);
+  // Add legend at the top left
+  const legendData = data.map(d => ({
+    title: d.title,
+    percentage: d.percentage
+  }));
 
-//   const legendItems = legend.selectAll(".legend-item")
-//     .data(legendData)
-//     .enter()
-//     .append("g")
-//     .attr("class", "legend-item")
-//     .attr("transform", (d, i) => `translate(0, ${i * 25})`);
+  const legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-//   // Add colored circles for legend
-//   legendItems.append("circle")
-//     .attr("cx", 9)
-//     .attr("cy", 9)
-//     .attr("r", 6)
-//     .style("fill", d => color(d.title));
+  const legendItems = legend.selectAll(".legend-item")
+    .data(legendData)
+    .enter()
+    .append("g")
+    .attr("class", "legend-item")
+    .attr("transform", (d, i) => `translate(0, ${i * 25})`);
 
-//   legendItems.append("text")
-//     .attr("x", 24)
-//     .attr("y", 9)
-//     .attr("dy", ".35em")
-//     .style("font-size", "12px")
-//     .text(d => `${d.title} (${d.percentage.toFixed(1)}%)`);
+  // Add colored circles for legend
+  legendItems.append("circle")
+    .attr("cx", 9)
+    .attr("cy", 9)
+    .attr("r", 6)
+    .style("fill", d => color(d.title));
 
-//   // Create a group for the pie chart and position it in the center, aligned to top
-//   const pieGroup = svg.append("g")
-//     .attr("transform", `translate(${legendWidth + (width - legendWidth) / 2}, ${margin.top + radius})`);
+  legendItems.append("text")
+    .attr("x", 24)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("font-size", "12px")
+    .text(d => `${d.title} (${d.percentage.toFixed(1)}%)`);
 
-//   // Create pie generator
-//   const pie = d3.pie()
-//     .value(d => d.percentage)
-//     .sort(null);
+  // Create a group for the pie chart and position it in the center, aligned to top
+  const pieGroup = svg.append("g")
+    .attr("transform", `translate(${legendWidth + (width - legendWidth) / 2}, ${margin.top + radius})`);
 
-//   // Create arc generator
-//   const arc = d3.arc()
-//     .innerRadius(0)
-//     .outerRadius(radius);
+  // Create pie generator
+  const pie = d3.pie()
+    .value(d => d.percentage)
+    .sort(null);
 
-//   // Create tooltip
-//   const tooltip = d3.select("#obligations-pie-chart")
-//     .append("div")
-//     .attr("class", "tooltip")
-//     .style("opacity", 0)
-//     .style("position", "absolute")
-//     .style("background-color", "white")
-//     .style("padding", "8px")
-//     .style("border", "1px solid #ddd")
-//     .style("border-radius", "4px")
-//     .style("pointer-events", "none");
+  // Create arc generator
+  const arc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(radius);
 
-//   // Create the pie chart
-//   const slices = pieGroup.selectAll("path")
-//     .data(pie(data))
-//     .enter()
-//     .append("path")
-//     .attr("d", arc)
-//     .attr("fill", d => color(d.data.title))
-//     .attr("stroke", "white")
-//     .style("stroke-width", "2px")
-//     .on("mouseover", function(event, d) {
-//       tooltip.transition()
-//         .duration(200)
-//         .style("opacity", 0.9);
-//       tooltip.html(`
-//         ${d.data.title}<br/>
-//         ${d.data.percentage.toFixed(1)}%<br/>
-//         $${d3.format(",.0f")(d.data.total_obs)}
-//       `)
-//         .style("left", (event.pageX + 10) + "px")
-//         .style("top", (event.pageY - 10) + "px");
-//     })
-//     .on("mouseout", function() {
-//       tooltip.transition()
-//         .duration(500)
-//         .style("opacity", 0);
-//     });
-// }
+  // Create tooltip
+  const tooltip = d3.select("#obligations-pie-chart")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("position", "absolute")
+    .style("background-color", "white")
+    .style("padding", "8px")
+    .style("border", "1px solid #ddd")
+    .style("border-radius", "4px")
+    .style("pointer-events", "none");
+
+  // Create the pie chart
+  const slices = pieGroup.selectAll("path")
+    .data(pie(data))
+    .enter()
+    .append("path")
+    .attr("d", arc)
+    .attr("fill", d => color(d.data.title))
+    .attr("stroke", "white")
+    .style("stroke-width", "2px")
+    .on("mouseover", function(event, d) {
+  tooltip.transition()
+    .duration(200)
+    .style("opacity", 0.9);
+  tooltip.html(`
+    ${d.data.title}<br/>
+    ${formatObligations(d.data.total_obs)} of ${formatObligations(totalObligations)}
+  `)
+    .style("left", (event.pageX + 10) + "px")
+    .style("top", (event.pageY - 10) + "px");
+})
+    .on("mouseout", function() {
+      tooltip.transition()
+        .duration(500)
+        .style("opacity", 0);
+    });
+}
 
   document.addEventListener("DOMContentLoaded", function () {
 
@@ -238,19 +246,7 @@
       }
     }
 
-    function formatObligations(amount) {
-      if (!amount) return "$0";
-      const trillion = 1000000000000;
-      const billion = 1000000000;
-      const million = 1000000;
-      const thousand = 1000;
-
-      if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
-      if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
-      if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
-      if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
-      return `$${amount.toFixed(2)}`;
-    }
+    
 
 
 
@@ -324,5 +320,5 @@
 
     setDropdownsFromUrl();
   });
-  // createObligationsPieChart();
+  createObligationsPieChart(obligationData);
 </script>

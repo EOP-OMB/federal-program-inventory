@@ -82,7 +82,8 @@ function compressFilters(filters) {
     valueFormatter = (d) => d,
     xAxisFormatter = (d) => d3.format(",")(d),
     onClickHandler = null,
-    maxWidth = 180
+    maxWidth = 180,
+    yAxisFontSize = "11px"
   }) {
     // Clear existing chart
     d3.select(container).selectAll("*").remove();
@@ -139,6 +140,7 @@ function compressFilters(filters) {
     // Improved text wrapping for y-axis labels
     yAxisGroup.selectAll(".tick text")
       .style("cursor", "pointer")
+      .style("font-size", yAxisFontSize)
       .call(function(text) {
         text.each(function() {
           const text = d3.select(this);
