@@ -306,12 +306,12 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL = """
     GROUP BY cfda_number, award_first_fiscal_year;
     """
 
-PROGRAM_TAX_EXPENDITURE_SPENDING_DROP_TABLE_SQL = """
-    DROP TABLE IF EXISTS program_tax_expenditure_spending;
+OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS other_program_spending;
     """
 
-PROGRAM_TAX_EXPENDITURE_SPENDING_CREATE_TABLE_SQL = """
-    CREATE TABLE program_tax_expenditure_spending (
+OTHER_PROGRAM_SPENDING_CREATE_TABLE_SQL = """
+    CREATE TABLE other_program_spending (
         program_id TEXT NOT NULL,
         fiscal_year INTEGER NOT NULL,
         outlays REAL,
@@ -322,8 +322,8 @@ PROGRAM_TAX_EXPENDITURE_SPENDING_CREATE_TABLE_SQL = """
     );
     """
 
-PROGRAM_TAX_EXPENDITURE_SPENDING_INSERT_SQL = """
-    INSERT INTO program_tax_expenditure_spending
+OTHER_PROGRAM_SPENDING_INSERT_SQL = """
+    INSERT INTO other_program_spending
     VALUES (?, ?, ?, ?, ?);
     """
 
@@ -782,8 +782,8 @@ def load_additional_programs():
         return
     
     # Creation of tax expenditure spending table
-    cur.execute(PROGRAM_TAX_EXPENDITURE_SPENDING_DROP_TABLE_SQL)
-    cur.execute(PROGRAM_TAX_EXPENDITURE_SPENDING_CREATE_TABLE_SQL)
+    cur.execute(OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL)
+    cur.execute(OTHER_PROGRAM_SPENDING_CREATE_TABLE_SQL)
 
     # Read in additional-programs.csv dataset
     df = pd.read_csv(ADDITIONAL_PROGRAMS_DATA_PATH)
@@ -869,7 +869,7 @@ def load_additional_programs():
     
     for ind, record in df[df['program.id'].notnull()].iterrows():
         for year, columns in fiscal_years.items():
-            cur.execute(PROGRAM_TAX_EXPENDITURE_SPENDING_INSERT_SQL, [
+            cur.execute(OTHER_PROGRAM_SPENDING_INSERT_SQL, [
                 record['program.id'],
                 int(year),
                 0 if pd.isna(record[columns[0]]) or record[columns[0]] == 0 else record[columns[0]],

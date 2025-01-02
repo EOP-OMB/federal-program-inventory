@@ -76,7 +76,7 @@ def get_assistance_program_obligations(cursor, program_id, fiscal_years):
     
     return obligations
 
-def get_tax_expenditure_obligations(cursor, program_id, fiscal_years):
+def get_other_program_obligations(cursor, program_id, fiscal_years):
     """Get obligations data for tax expenditure programs."""
     tax_obligations = []
     for year in fiscal_years:
@@ -687,13 +687,13 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         categories = cursor.fetchall()
         
         # Get obligations based on program type
-        if program['program_type'] == 'tax_expenditure':
+        if program['program_type'] != 'assistance_listings':
             obligations = None
-            tax_expenditures = get_tax_expenditure_obligations(cursor, program['id'], fiscal_years)
+            other_program_spending = get_other_program_obligations(cursor, program['id'], fiscal_years)
             outlays = None
         else:
             obligations = get_assistance_program_obligations(cursor, program['id'], fiscal_years)
-            tax_expenditures = None
+            other_program_spending = None
             outlays = get_outlays_data(cursor, program['id'], fiscal_years)
         
         # Get program results
@@ -750,7 +750,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'applicant_types': sorted(list(program_categories['applicant'])),
             'categories': sorted(list(program_categories['categories'])),
             'obligations': obligations,
-            'tax_expenditures': tax_expenditures,
+            'other_program_spending': other_program_spending,
             'outlays': outlays,
             'results': results,
             'authorizations': authorizations,
@@ -972,14 +972,14 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
         }
 
         # Add obligations based on program type
-        if program['program_type'] == 'tax_expenditure':
-            listing['tax_expenditures'] = json.dumps(program['tax_expenditures'], separators=(',', ':'))
+        if program['program_type'] != 'assistance_listing':
+            listing['other_program_spending'] = json.dumps(program['other_program_spending'], separators=(',', ':'))
             listing['obligations'] = None
             listing['outlays'] = None
         else:
             listing['obligations'] = json.dumps(program['obligations'], separators=(',', ':'))
             listing['outlays'] = json.dumps(program['outlays'], separators=(',', ':'))
-            listing['tax_expenditures'] = None
+            listing['other_program_spending'] = None
 
         # Write markdown file
         markdown_file_path = os.path.join(output_dir, f"{program['id']}.md")
@@ -1039,10 +1039,10 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     
     for program in programs_data:
         # Calculate obligations based on program type
-        if program['program_type'] == 'tax_expenditure':
+        if program['program_type'] != 'assistance_listing':
             # For tax expenditure programs, sum outlays and forgone_revenue
             current_year_tax = next(
-                (tx for tx in program['tax_expenditures'] if tx['x'] == fiscal_year),
+                (tx for tx in program['other_program_spending'] if tx['x'] == fiscal_year),
                 {'outlays': 0, 'forgone_revenue': 0}
             )
             current_year_obligation = current_year_tax['outlays'] + current_year_tax['forgone_revenue']
@@ -1149,14 +1149,14 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         if not prog_ids:
             continue
             
-        if prog_type == 'tax_expenditure':
+        if prog_type != 'assistance_listing':
             placeholders = ','.join('?' * len(prog_ids))
             cursor.execute(f"""
                 SELECT SUM(total_tax) as total_obs
                 FROM (
                     SELECT DISTINCT program_id,
                            (outlays + forgone_revenue) as total_tax
-                    FROM program_tax_expenditure_spending
+                    FROM other_program_spending
                     WHERE fiscal_year = ?
                     AND program_id IN ({placeholders})
                 )
@@ -1224,14 +1224,14 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
                 if not prog_ids:
                     continue
                     
-                if prog_type == 'tax_expenditure':
+                if prog_type != 'assistance_listing':
                     placeholders = ','.join('?' * len(prog_ids))
                     cursor.execute(f"""
                         SELECT SUM(total_tax) as total_obs
                         FROM (
                             SELECT DISTINCT program_id,
                                    (outlays + forgone_revenue) as total_tax
-                            FROM program_tax_expenditure_spending
+                            FROM other_program_spending
                             WHERE fiscal_year = ?
                             AND program_id IN ({placeholders})
                         )
