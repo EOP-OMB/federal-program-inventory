@@ -1,45 +1,992 @@
 <script>
-  const ctx = document.getElementById('spending-visualization');
-  const data = {{ page.obligations }};
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['2022', '2023', '2024'],
-      datasets: [{
-        label: 'SAM.gov (Actual)',
-        data: data,
-        parsing: {
-          yAxisKey: 'sam_actual'
-        },
-        stack: 'SAM.gov',
-        backgroundColor: '#1f78b4'
-      }, {
-        label: 'SAM.gov (Estimate)',
-        data: data,
-        parsing: {
-          yAxisKey: 'sam_estimate'
-        },
-        stack: 'SAM.gov',
-        backgroundColor: '#adadad'
-      }, {
-        label: 'USASpending.gov',
-        data: data,
-        parsing: {
-          yAxisKey: 'usa_spending_actual'
-        },
-        stack: 'USASpending.gov',
-        backgroundColor: '#b2df8a'
-      }]
-    },
-    optionss: {
-      scales: {
-        x: {
-          stacked: true,
-        },
-        y: {
-          stacked: true
-        }
+  {% if page.outlays %}
+    const outlaysJson = {{ page.outlays }};
+    {% else %}
+    const outlaysJson = [];
+  {% endif %}
+  {% if page.outlays %}
+    const obligationsJson = {{ page.obligations }};
+    {% else %}
+    const obligationsJson = [];
+  {% endif %}
+  {% if page.tax_expenditures %}
+    const taxExpendJson = {{ page.tax_expenditures }};
+    {% else %}
+    const taxExpendJson = [];
+  {% endif %}
+  const isAssistanceListing =
+    "{{ page.program_type }}" === "assistance_listing";
+  const isTaxExpenditure = "{{ page.program_type }}" === "tax_expenditure";
+  const hasTaxExpenditures = taxExpendJson && taxExpendJson.length > 0;
+  const hasObligations = obligationsJson && obligationsJson.length > 0;
+  const hasOutlays = outlaysJson && outlaysJson.length > 0;
+  function getYearBars(yearData) {
+    const bars = [];
+    if (yearData.sam_actual > 0) {
+      bars.push({
+        type: "actual",
+        value: yearData.sam_actual,
+        color: "rgb(255, 127, 42)",
+      });
+    }
+    if (yearData.sam_estimate > 0) {
+      bars.push({
+        type: "estimate",
+        value: yearData.sam_estimate,
+        color: "rgb(41, 171, 226)",
+      });
+    }
+    if (yearData.usa_spending_actual > 0) {
+      bars.push({
+        type: "usaspending",
+        value: yearData.usa_spending_actual,
+        color: "rgb(17, 93, 115)",
+      });
+    }
+    return bars;
+  }
+  function formatObligations(amount) {
+    if (!amount) return "$0";
+    const trillion = 1000000000000;
+    const billion = 1000000000;
+    const million = 1000000;
+    const thousand = 1000;
+
+    if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
+    if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
+    if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
+    if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
+    return `$${amount.toFixed(2)}`;
+  }
+
+  function createFiscalYearObligationsChart(
+    obligationsJson,
+    { container = "#obligationsChart" } = {}
+  ) {
+    // Parse data if needed
+    const obligations =
+      typeof obligationsJson === "string"
+        ? JSON.parse(obligationsJson)
+        : obligationsJson;
+
+    // Clear existing chart
+    d3.select(container).selectAll("*").remove();
+
+    // Get container width
+    const containerWidth = document
+      .querySelector(container)
+      .getBoundingClientRect().width;
+
+    // Make height responsive to width
+    const aspectRatio = 0.6;
+    const width = containerWidth;
+    const height = Math.max(300, width * aspectRatio);
+
+    // Responsive margins
+    const margin = {
+      top: Math.max(20, width * 0.05),
+      right: Math.max(20, width * 0.05),
+      bottom: Math.max(80, width * 0.12),
+      left: Math.max(60, width * 0.1),
+    };
+
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    // Create SVG with viewBox for better scaling
+    const svg = d3
+      .select(container)
+      .append("svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Get years and create scales
+    const years = obligations.map((d) => d.x);
+
+    // X scale for year groups
+    const xScale = d3
+      .scaleBand()
+      .domain(years)
+      .range([0, innerWidth])
+      .padding(0.2);
+
+    // Y scale
+    const maxValue = d3.max(obligations, (d) =>
+      Math.max(
+        d.sam_actual || 0,
+        d.sam_estimate || 0,
+        d.usa_spending_actual || 0
+      )
+    );
+
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, maxValue])
+      .range([innerHeight, 0])
+      .nice();
+
+    // Get formatting info for consistent formatting
+    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+
+    // Responsive font sizes
+    const fontSize = Math.max(10, Math.min(12, width / 50));
+    const legendFontSize = Math.max(10, Math.min(14, width / 45));
+
+    // Create axes with responsive formatting
+    const xAxis = d3.axisBottom(xScale);
+    const yAxis = d3
+      .axisLeft(yScale)
+      .ticks(5)
+      .tickFormat((d) => {
+        return formatAxisValues(d, divisor, suffix);
+      });
+
+    // Add axes with styled text
+    svg
+      .append("g")
+      .attr("class", "x-axis")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(xAxis)
+      .style("font-size", `${fontSize}px`);
+
+    svg
+      .append("g")
+      .attr("class", "y-axis")
+      .call(yAxis)
+      .style("font-size", `${fontSize}px`);
+
+    // Create bar groups
+    const yearGroups = svg
+      .selectAll(".year-group")
+      .data(obligations)
+      .enter()
+      .append("g")
+      .attr("class", "year-group")
+      .attr("transform", (d) => `translate(${xScale(d.x)},0)`);
+
+    // Function to add bars with specific color and data
+    function addBars(selection, value, index, color, totalBars) {
+      if (value > 0) {
+        const xBarScale = d3
+          .scaleBand()
+          .domain(d3.range(totalBars))
+          .range([0, xScale.bandwidth()])
+          .padding(0.1);
+
+        selection
+          .append("rect")
+          .attr("x", xBarScale(index))
+          .attr("y", (d) => yScale(value))
+          .attr("width", xBarScale.bandwidth())
+          .attr("height", (d) => innerHeight - yScale(value))
+          .attr("fill", color)
+          .on("mouseover", function (event, d) {
+            const tooltip = d3
+              .select("body")
+              .selectAll(".tooltip")
+              .data([null])
+              .join("div")
+              .attr("class", "tooltip")
+              .style("position", "absolute")
+              .style("background", "white")
+              .style("padding", "8px")
+              .style("border", "1px solid #ddd")
+              .style("border-radius", "4px")
+              .style("pointer-events", "none")
+              .style("font-size", `${fontSize}px`);
+
+            tooltip
+              .style("opacity", 1)
+              .html(formatObligations(value))
+              .style("left", `${event.pageX + 10}px`)
+              .style("top", `${event.pageY - 28}px`);
+
+            d3.select(this).attr("fill", d3.color(color).darker(0.2));
+          })
+          .on("mouseout", function () {
+            d3.select("body").selectAll(".tooltip").remove();
+            d3.select(this).attr("fill", color);
+          });
       }
     }
+
+    // Add bars for each year group
+    yearGroups.each(function (d) {
+      const group = d3.select(this);
+      const bars = [];
+
+      if (d.sam_actual > 0)
+        bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
+      if (d.sam_estimate > 0)
+        bars.push({ value: d.sam_estimate, color: "rgb(34, 186, 229)" });
+      if (d.usa_spending_actual > 0)
+        bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
+
+      bars.forEach((bar, i) => {
+        addBars(group, bar.value, i, bar.color, bars.length);
+      });
+    });
+
+    // Add legend
+    // Add legend
+    const legendData = [
+      { label: "SAM.gov (Actual)", color: "rgb(250, 146, 65)" },
+      { label: "SAM.gov (Estimate)", color: "rgb(34, 186, 229)" },
+      { label: "USASpending.gov", color: "rgb(21, 96, 130)" },
+    ];
+
+    const itemSpacing = 180;
+    const legendY = innerHeight + 40;
+
+    // Create legend group aligned to the right
+    const legend = svg
+      .append("g")
+      .attr("class", "legend")
+      .attr("transform", `translate(${innerWidth},${legendY})`);
+
+    // Place items from right to left
+    const legendItems = legend
+      .selectAll(".legend-item")
+      .data(legendData)
+      .enter()
+      .append("g")
+      .attr("class", "legend-item")
+      .attr(
+        "transform",
+        (d, i) => `translate(${-((legendData.length - i) * itemSpacing)},0)`
+      );
+
+    legendItems
+      .append("rect")
+      .attr("width", 12)
+      .attr("height", 12)
+      .attr("fill", (d) => d.color);
+
+    legendItems
+      .append("text")
+      .attr("x", 16)
+      .attr("y", 10)
+      .text((d) => d.label)
+      .style("font-size", `${legendFontSize}px`);
+
+    // Add resize handler
+    const resizeChart = () => {
+      createFiscalYearObligationsChart(obligations, { container });
+    };
+
+    let resizeTimer;
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeChart, 250);
+    };
+
+    window.removeEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
+  }
+
+  function createFiscalYearOutlaysChart(
+    outlaysJson,
+    { container = "#outlaysChart" } = {}
+  ) {
+    // Parse data if needed
+    const outlays =
+      typeof outlaysJson === "string" ? JSON.parse(outlaysJson) : outlaysJson;
+
+    // Clear existing chart
+    d3.select(container).selectAll("*").remove();
+
+    // Get container width
+    const containerWidth = document
+      .querySelector(container)
+      .getBoundingClientRect().width;
+
+    // Make height responsive to width
+    const aspectRatio = 0.6;
+    const width = containerWidth;
+    const height = Math.max(300, width * aspectRatio);
+
+    // Responsive margins
+    const margin = {
+      top: Math.max(20, width * 0.05),
+      right: Math.max(20, width * 0.05),
+      bottom: Math.max(80, width * 0.12),
+      left: Math.max(60, width * 0.1),
+    };
+
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    // Create SVG with viewBox for better scaling
+    const svg = d3
+      .select(container)
+      .append("svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Get years and create scales
+    const years = outlays.map((d) => d.x);
+
+    // X scale for year groups
+    const xScale = d3
+      .scaleBand()
+      .domain(years)
+      .range([0, innerWidth])
+      .padding(0.2);
+
+    // X scale for bars within each year group
+    const xBarScale = d3
+      .scaleBand()
+      .domain([0, 1])
+      .range([0, xScale.bandwidth()])
+      .padding(0.1);
+
+    // Y scale
+    const maxValue = d3.max(outlays, (d) =>
+      Math.max(d.outlay || 0, d.obligation || 0)
+    );
+
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, maxValue])
+      .range([innerHeight, 0])
+      .nice();
+
+    // Get formatting info for consistent formatting
+    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+
+    // Responsive font sizes
+    const fontSize = Math.max(10, Math.min(12, width / 50));
+    const legendFontSize = Math.max(10, Math.min(14, width / 45));
+
+    // Create axes
+    const xAxis = d3.axisBottom(xScale);
+    const yAxis = d3
+      .axisLeft(yScale)
+      .ticks(5)
+      .tickFormat((d) => formatAxisValues(d, divisor, suffix));
+
+    // Add axes
+    svg
+      .append("g")
+      .attr("class", "x-axis")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(xAxis)
+      .style("font-size", `${fontSize}px`);
+
+    svg
+      .append("g")
+      .attr("class", "y-axis")
+      .call(yAxis)
+      .style("font-size", `${fontSize}px`);
+
+    // Create year groups
+    const yearGroups = svg
+      .selectAll(".year-group")
+      .data(outlays)
+      .enter()
+      .append("g")
+      .attr("class", "year-group")
+      .attr("transform", (d) => `translate(${xScale(d.x)},0)`);
+
+    // Add bars for outlays
+    yearGroups
+      .append("rect")
+      .attr("x", xBarScale(0))
+      .attr("y", (d) => yScale(d.outlay || 0))
+      .attr("width", xBarScale.bandwidth())
+      .attr("height", (d) => innerHeight - yScale(d.outlay || 0))
+      .attr("fill", "rgb(34, 186, 229)") // Light blue for outlays
+      .on("mouseover", function (event, d) {
+        const tooltip = d3
+          .select("body")
+          .selectAll(".tooltip")
+          .data([null])
+          .join("div")
+          .attr("class", "tooltip")
+          .style("position", "absolute")
+          .style("background", "white")
+          .style("padding", "8px")
+          .style("border", "1px solid #ddd")
+          .style("border-radius", "4px")
+          .style("pointer-events", "none")
+          .style("font-size", `${fontSize}px`);
+
+        tooltip
+          .style("opacity", 1)
+          .html(formatObligations(d.outlay))
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 28}px`);
+
+        d3.select(this).attr("fill", d3.color("rgb(34, 186, 229)").darker(0.2));
+      })
+      .on("mouseout", function () {
+        d3.select("body").selectAll(".tooltip").remove();
+        d3.select(this).attr("fill", "rgb(34, 186, 229)");
+      });
+
+    // Add bars for obligations
+    yearGroups
+      .append("rect")
+      .attr("x", xBarScale(1))
+      .attr("y", (d) => yScale(d.obligation || 0))
+      .attr("width", xBarScale.bandwidth())
+      .attr("height", (d) => innerHeight - yScale(d.obligation || 0))
+      .attr("fill", "rgb(21, 96, 130)") // Dark blue for obligations
+      .on("mouseover", function (event, d) {
+        const tooltip = d3
+          .select("body")
+          .selectAll(".tooltip")
+          .data([null])
+          .join("div")
+          .attr("class", "tooltip")
+          .style("position", "absolute")
+          .style("background", "white")
+          .style("padding", "8px")
+          .style("border", "1px solid #ddd")
+          .style("border-radius", "4px")
+          .style("pointer-events", "none")
+          .style("font-size", `${fontSize}px`);
+
+        tooltip
+          .style("opacity", 1)
+          .html(formatObligations(d.obligation))
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 28}px`);
+
+        d3.select(this).attr("fill", d3.color("rgb(21, 96, 130)").darker(0.2));
+      })
+      .on("mouseout", function () {
+        d3.select("body").selectAll(".tooltip").remove();
+        d3.select(this).attr("fill", "rgb(21, 96, 130)");
+      });
+
+    // Add legend
+    const legendData = [
+      { label: "Outlays", color: "rgb(34, 186, 229)" },
+      { label: "Obligations", color: "rgb(21, 96, 130)" },
+    ];
+
+    const itemSpacing = 180;
+    const legendY = innerHeight + 40;
+
+    const legend = svg
+      .append("g")
+      .attr("class", "legend")
+      .attr("transform", `translate(${innerWidth},${legendY})`);
+
+    const legendItems = legend
+      .selectAll(".legend-item")
+      .data(legendData)
+      .enter()
+      .append("g")
+      .attr("class", "legend-item")
+      .attr(
+        "transform",
+        (d, i) => `translate(${-((legendData.length - i) * itemSpacing)},0)`
+      );
+
+    legendItems
+      .append("rect")
+      .attr("width", 12)
+      .attr("height", 12)
+      .attr("fill", (d) => d.color);
+
+    legendItems
+      .append("text")
+      .attr("x", 16)
+      .attr("y", 10)
+      .text((d) => d.label)
+      .style("font-size", `${legendFontSize}px`);
+
+    // Add resize handler
+    const resizeChart = () => {
+      createFiscalYearOutlaysChart(outlays, { container });
+    };
+
+    let resizeTimer;
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeChart, 250);
+    };
+
+    window.removeEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
+  }
+
+  function createTaxCreditOutlaysChart(
+    taxExpendJson,
+    { container = "#taxExpendChart" } = {}
+  ) {
+    // Parse data if needed
+    const outlays =
+      typeof taxExpendJson === "string"
+        ? JSON.parse(taxExpendJson)
+        : taxExpendJson;
+
+    // Clear existing chart
+    d3.select(container).selectAll("*").remove();
+
+    // Get container width
+    const containerWidth = document
+      .querySelector(container)
+      .getBoundingClientRect().width;
+
+    // Make height responsive to width
+    const aspectRatio = 0.6;
+    const width = containerWidth;
+    const height = Math.max(300, width * aspectRatio);
+
+    // Responsive margins
+    const margin = {
+      top: Math.max(20, width * 0.05),
+      right: Math.max(20, width * 0.05),
+      bottom: Math.max(80, width * 0.12),
+      left: Math.max(60, width * 0.1),
+    };
+
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    // Create SVG with viewBox for better scaling
+    const svg = d3
+      .select(container)
+      .append("svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Get years and create scales
+    const years = outlays.map((d) => d.x);
+
+    // X scale for year groups
+    const xScale = d3
+      .scaleBand()
+      .domain(years)
+      .range([0, innerWidth])
+      .padding(0.6);
+
+    // Calculate stacked data
+    const stackedData = outlays.map((d) => ({
+      year: d.x,
+      "Revenue losses": d.forgone_revenue || 0,
+      Outlays: d.outlays || 0,
+    }));
+
+    const stack = d3.stack().keys(["Revenue losses", "Outlays"]);
+
+    const series = stack(stackedData);
+
+    // Get max value for y scale
+    const maxValue = d3.max(series, (d) => d3.max(d, (d) => d[1]));
+
+    // Y scale
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, maxValue])
+      .range([innerHeight, 0])
+      .nice();
+
+    // Get formatting info for consistent formatting
+    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+
+    // Color scale
+    const colors = {
+      "Revenue losses": "rgb(21, 96, 130)", // Darker blue
+      Outlays: "rgb(34, 186, 229)", // Lighter blue
+    };
+
+    // Responsive font sizes
+    const fontSize = Math.max(10, Math.min(12, width / 50));
+    const legendFontSize = Math.max(10, Math.min(14, width / 45));
+
+    // Create axes
+    const xAxis = d3.axisBottom(xScale);
+    const yAxis = d3
+      .axisLeft(yScale)
+      .ticks(5)
+      .tickFormat((d) => formatAxisValues(d, divisor, suffix));
+
+    // Add axes
+    svg
+      .append("g")
+      .attr("class", "x-axis")
+      .attr("transform", `translate(0,${innerHeight})`)
+      .call(xAxis)
+      .style("font-size", `${fontSize}px`);
+
+    svg
+      .append("g")
+      .attr("class", "y-axis")
+      .call(yAxis)
+      .style("font-size", `${fontSize}px`);
+
+    // Create stacked bars
+    svg
+      .append("g")
+      .selectAll("g")
+      .data(series)
+      .join("g")
+      .attr("fill", (d) => colors[d.key])
+      .selectAll("rect")
+      .data((d) => d)
+      .join("rect")
+      .attr("x", (d) => xScale(d.data.year))
+      .attr("y", (d) => yScale(d[1]))
+      .attr("height", (d) => yScale(d[0]) - yScale(d[1]))
+      .attr("width", xScale.bandwidth())
+      .on("mouseover", function (event, d) {
+        const value = d[1] - d[0];
+        const tooltip = d3
+          .select("body")
+          .selectAll(".tooltip")
+          .data([null])
+          .join("div")
+          .attr("class", "tooltip")
+          .style("position", "absolute")
+          .style("background", "white")
+          .style("padding", "8px")
+          .style("border", "1px solid #ddd")
+          .style("border-radius", "4px")
+          .style("pointer-events", "none")
+          .style("font-size", `${fontSize}px`);
+
+        tooltip
+          .style("opacity", 1)
+          .html(formatObligations(value))
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 28}px`);
+
+        d3.select(this).attr(
+          "fill",
+          d3.color(d3.select(this.parentNode).attr("fill")).darker(0.2)
+        );
+      })
+      .on("mouseout", function () {
+        d3.select("body").selectAll(".tooltip").remove();
+        d3.select(this).attr("fill", d3.select(this.parentNode).attr("fill"));
+      });
+
+    // Add legend
+    const legendData = [
+      { label: "Outlays", color: colors["Outlays"] },
+      { label: "Revenue losses", color: colors["Revenue losses"] },
+    ];
+
+    const itemSpacing = 180;
+    const legendY = innerHeight + 40;
+
+    const legend = svg
+      .append("g")
+      .attr("class", "legend")
+      .attr("transform", `translate(${innerWidth},${legendY})`);
+
+    const legendItems = legend
+      .selectAll(".legend-item")
+      .data(legendData)
+      .enter()
+      .append("g")
+      .attr("class", "legend-item")
+      .attr(
+        "transform",
+        (d, i) => `translate(${-((legendData.length - i) * itemSpacing)},0)`
+      );
+
+    legendItems
+      .append("rect")
+      .attr("width", 12)
+      .attr("height", 12)
+      .attr("fill", (d) => d.color);
+
+    legendItems
+      .append("text")
+      .attr("x", 16)
+      .attr("y", 10)
+      .text((d) => d.label)
+      .style("font-size", `${legendFontSize}px`);
+
+    // Add resize handler
+    const resizeChart = () => {
+      createTaxCreditOutlaysChart(taxExpendJson, { container });
+    };
+
+    let resizeTimer;
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeChart, 250);
+    };
+
+    window.removeEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
+  }
+
+  function initializeViewControls(
+    hasObligations,
+    hasOutlays,
+    hasTaxExpenditures
+  ) {
+    const viewControls = document.querySelector(
+      ".display-flex.flex-align-center"
+    );
+    const obligationsChart = document.querySelector("#obligationsChart");
+    const outlaysChart = document.querySelector("#outlaysChart");
+    const taxExpendChart = document.querySelector("#taxExpendChart");
+
+    // Handle view controls visibility
+    if (isAssistanceListing && hasObligations && hasOutlays) {
+      // Only show view controls if we have both types of data
+      if (viewControls) {
+        viewControls.classList.remove("display-none");
+        viewControls.classList.add("display-flex");
+      }
+    }
+
+    // Initialize appropriate chart based on data availability
+    if (isAssistanceListing) {
+      // Show obligations by default
+      if (obligationsChart) {
+        obligationsChart.classList.remove("display-none");
+        createFiscalYearObligationsChart(obligationsJson, {
+          container: "#obligationsChart",
+        });
+
+        // Setup radio button event listeners
+        document.querySelectorAll("[name='view-options']").forEach((radio) => {
+          radio.addEventListener("change", (event) => {
+            if (event.target.id === "obligations") {
+              if (outlaysChart) outlaysChart.classList.add("display-none");
+              if (obligationsChart) {
+                obligationsChart.classList.remove("display-none");
+                createFiscalYearObligationsChart(obligationsJson, {
+                  container: "#obligationsChart",
+                });
+              }
+            } else {
+              if (obligationsChart)
+                obligationsChart.classList.add("display-none");
+              if (outlaysChart) {
+                outlaysChart.classList.remove("display-none");
+                createFiscalYearOutlaysChart(outlaysJson, {
+                  container: "#outlaysChart",
+                });
+              }
+            }
+          });
+        });
+      }
+    } else if (isTaxExpenditure && hasTaxExpenditures) {
+      // Handle tax expenditure program type
+      // Hide the view controls since we only show one chart type
+      if (viewControls) {
+        viewControls.classList.add("display-none");
+      }
+
+      // Show and create the tax expenditure chart
+      if (taxExpendChart) {
+        taxExpendChart.classList.remove("display-none");
+        console.log("Tax Expend Data:", taxExpendJson);
+        createTaxCreditOutlaysChart(taxExpendJson, {
+          container: "#taxExpendChart",
+        });
+      }
+    }
+  }
+
+  function formatCurrency(amount) {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(amount);
+  }
+
+  function formatObligationsForCSV(data) {
+    // Create headers for the CSV
+    const headers = [
+      "Fiscal Year",
+      "SAM.gov (Actual)",
+      "SAM.gov (Estimate)",
+      "USASpending.gov",
+    ];
+
+    let csvContent = headers.join(",") + "\n";
+
+    // Add data rows
+    data.forEach((row) => {
+      const formattedRow = [
+        `"${row.x}"`,
+        `"${formatCurrency(row.sam_actual || 0)}"`,
+        `"${formatCurrency(row.sam_estimate || 0)}"`,
+        `"${formatCurrency(row.usa_spending_actual || 0)}"`,
+      ];
+      csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+  }
+
+  function formatOutlaysForCSV(data) {
+    const headers = ["Fiscal Year", "Outlay", "Obligation"];
+    let csvContent = headers.join(",") + "\n";
+
+    data.forEach((row) => {
+      const formattedRow = [
+        `"${row.x}"`,
+        `"${formatCurrency(row.outlay || 0)}"`,
+        `"${formatCurrency(row.obligation || 0)}"`,
+      ];
+      csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+  }
+
+  function formatTaxExpendituresForCSV(data) {
+    const headers = ["Fiscal Year", "Outlays", "Revenue losses"];
+    let csvContent = headers.join(",") + "\n";
+
+    data.forEach((row) => {
+      const formattedRow = [
+        `"${row.x}"`,
+        `"${formatCurrency(row.outlays || 0)}"`,
+        `"${formatCurrency(row.forgone_revenue || 0)}"`,
+      ];
+      csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+  }
+
+  function downloadCSV(filename, csvData) {
+    const blob = new Blob([csvData], { type: "text/csv;charset=utf-8;" });
+    const link = document.createElement("a");
+
+    if (link.download !== undefined) {
+      const url = URL.createObjectURL(blob);
+      link.setAttribute("href", url);
+      link.setAttribute("download", filename);
+      link.style.visibility = "hidden";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  }
+
+  function initializeProgramFilters() {
+    document.querySelectorAll(".program-filter").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const filterType = this.dataset.filterType;
+        let filters = {
+          agency: [],
+          category: [],
+          assistance: [],
+          applicant: [],
+        };
+
+        switch (filterType) {
+          case "agency":
+            filters.agency.push({
+              type: "agency",
+              title: this.dataset.agencyTitle,
+            });
+            break;
+
+          case "sub-agency":
+            filters.agency.push({
+              type: "sub-agency",
+              parentTitle: this.dataset.agencyTitle,
+              title: this.dataset.subagencyTitle,
+            });
+            break;
+
+          case "sub-category":
+            filters.category.push({
+              type: "sub-category",
+              parentTitle: this.dataset.categoryTitle,
+              title: this.dataset.subcategoryTitle,
+            });
+            break;
+
+          case "category":
+            filters.category.push({
+              type: "category",
+              selectAll: true,
+              title: this.dataset.categoryTitle,
+            });
+            break;
+
+          case "assistance":
+            filters.assistance.push({
+              type: "assistance",
+              title: this.dataset.assistanceTitle,
+            });
+            break;
+
+          case "applicant":
+            filters.applicant.push({
+              type: "applicant",
+              title: this.dataset.applicantTitle,
+            });
+            break;
+        }
+
+        const compressed = compressFilters(filters);
+        const encodedFilters = btoa(JSON.stringify(compressed));
+        window.location.href = `/search?f=${encodedFilters}`;
+      });
+    });
+  }
+
+  function initializeDownloadButton() {
+    const downloadButton = document.getElementById("downloadData");
+    if (downloadButton) {
+      downloadButton.addEventListener("click", function () {
+        let data, filename, csvContent;
+
+        if (isTaxExpenditure && hasTaxExpenditures) {
+          // Handle tax expenditure data
+          data = taxExpendJson;
+          filename = "program-tax-expenditures.csv";
+          csvContent = formatTaxExpendituresForCSV(data);
+        } else {
+          // Handle assistance listing data
+          const isOutlaysVisible =
+            document.querySelector("#outlaysChart") &&
+            document.querySelector("#outlaysChart").style.display !== "none" &&
+            document.getElementById("outlays")?.checked;
+
+          if (isOutlaysVisible && outlaysJson && outlaysJson.length > 0) {
+            data = outlaysJson;
+            filename = "program-outlays.csv";
+            csvContent = formatOutlaysForCSV(data);
+          } else if (obligationsJson && obligationsJson.length > 0) {
+            data = obligationsJson;
+            filename = "program-obligations.csv";
+            csvContent = formatObligationsForCSV(data);
+          }
+        }
+
+        if (!data) {
+          console.error("No data available for download");
+          return;
+        }
+
+        downloadCSV(filename, csvContent);
+      });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initializeViewControls(hasObligations, hasOutlays, hasTaxExpenditures);
+
+    initializeDownloadButton();
+    initializeProgramFilters();
   });
 </script>

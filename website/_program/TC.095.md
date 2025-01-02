@@ -1,0 +1,30 @@
+---
+agency: Department of the Treasury
+applicant_types: []
+assistance_types: []
+authorizations: []
+beneficiary_types: []
+categories:
+- Tax Expenditures - Community and Regional Development
+cfda: TC.095
+fiscal_year: '2022'
+grants_url: null
+is_subpart_f: null
+layout: program
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. Instead, under current law taxpayers that own Gulf and
+  Midwest Tax Credit bonds receive a non-refundable tax credit rather than interest.
+  The credit is included in gross income.
+obligations: null
+outlays: null
+permalink: /program/TC.095.html
+popular_name: ''
+program_type: tax_expenditure
+results: []
+rules_regulations: null
+sam_url: null
+sub-agency: Internal Revenue Service (IRS)
+tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
+title: Credit to holders of Gulf and Midwest Tax Credit Bonds .
+usaspending_url: null
+---

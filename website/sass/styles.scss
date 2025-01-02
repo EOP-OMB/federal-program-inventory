@@ -34,3 +34,141 @@ th.gridjs-th {
 #search-filters input:disabled+label {
     color: #a9aeb1;
 }
+
+  .banner-section {
+    background-image: url('../assets/img/banner.png');
+  }
+
+.usa-sidenav__sublist a:not(.usa-button) {
+    padding-left: 5px;
+  }
+
+  .usa-sidenav a:not(.usa-button) {
+    padding-left: 5px;
+}
+
+.usa-sidenav__sublist .usa-sidenav__sublist a:not(.usa-button) {
+    padding-left: 5px;
+}
+
+.usa-sidenav .expandable-button.toggle {
+    padding-right: 10px;
+}
+
+.usa-sidenav__sublist .usa-checkbox {
+    display: block;
+    width: 100%;
+}
+
+.usa-sidenav__sublist .usa-checkbox__label {
+    display: block;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.objectives-container {
+    position: relative;
+  }
+
+  .text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .text-truncate.expanded {
+    -webkit-line-clamp: unset;
+  }
+
+  .read-more-btn {
+    color: #4D53C5;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    display: none; /* Hidden by default, shown via JS if needed */
+  }
+
+  .read-more-btn:hover {
+    color: #272A63;
+    background-color: transparent;
+  }
+
+  input[type="checkbox"]:disabled + label {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .count {
+    color: #71767a;
+    font-weight: normal;
+  }
+
+  .usa-checkbox.visually-inactive {
+    opacity: 0.5;
+  }
+
+  /* Disabled expand button styles */
+  .usa-checkbox input:disabled ~ .toggle.expandable-button {
+    opacity: 0.5;
+  }
+
+  /* Disabled checkbox container styles */
+  .usa-checkbox.disabled {
+    opacity: 0.5;
+  }
+
+  .usa-checkbox input:disabled {
+    cursor: pointer;
+  }
+
+  .usa-button--disabled {
+    background-color: #e6e6e6;
+    color: #757575;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .home-background {
+    background-image: url('/assets/img/home-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.width-full.bg-white {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-secondary {
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 64em) {
+  .usa-nav__primary > .usa-nav__primary-item > a {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem; /* Different value for bottom */
+    padding-left: 1rem;
+  }
+
+  .usa-nav__primary button {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem; /* Different value for bottom */
+    padding-left: 1rem;
+  }
+}
+
+.usa-table thead td, .usa-table thead th {
+  background-color: #D3F1FA;
+}
+
+#myChart {
+  word-wrap: break-word;
+}

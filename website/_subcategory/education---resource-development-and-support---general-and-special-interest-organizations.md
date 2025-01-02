@@ -1,143 +1,586 @@
 ---
-agencies: '[{"title": "Environmental Protection Agency", "total_num_programs": 4,
-  "total_obs": 21871938}, {"title": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES",
-  "total_num_programs": 4, "total_obs": 56921000}, {"title": "Department of Education",
-  "total_num_programs": 15, "total_obs": 1440992278}, {"title": "Department of Health
-  and Human Services", "total_num_programs": 7, "total_obs": 10953982886}, {"title":
-  "CORPORATION FOR NATIONAL AND COMMUNITY SERVICE", "total_num_programs": 1, "total_obs":
-  2723511}, {"title": "Department of Veterans Affairs", "total_num_programs": 1, "total_obs":
-  15999684}, {"title": "Department of Agriculture", "total_num_programs": 2, "total_obs":
-  4747296}, {"title": "Department of Commerce", "total_num_programs": 2, "total_obs":
-  0}, {"title": "National Endowment for the Humanities", "total_num_programs": 1,
-  "total_obs": 14134400}, {"title": "Federal Communications Commission", "total_num_programs":
-  1, "total_obs": 3224900000}, {"title": "Denali Commission", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Department of State", "total_num_programs": 1, "total_obs":
-  0}, {"title": "Department of the Interior", "total_num_programs": 3, "total_obs":
-  5505198}, {"title": "Library of Congress", "total_num_programs": 1, "total_obs":
-  0}]'
-applicant_types: '[{"title": "Interstate", "total_num_programs": 1}, {"title": "Intrastate",
-  "total_num_programs": 1}, {"title": "Local (includes State-designated lndian Tribes,
-  excludes institutions of higher education and hospitals", "total_num_programs":
-  17}, {"title": "Native American Organizations (includes lndian groups, cooperatives,
-  corporations, partnerships, associations)", "total_num_programs": 11}, {"title":
-  "Non-Government - General", "total_num_programs": 5}, {"title": "Other public institution/organization",
-  "total_num_programs": 16}, {"title": "Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)", "total_num_programs":
-  29}, {"title": "Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)", "total_num_programs": 29}, {"title": "State",
-  "total_num_programs": 9}, {"title": "State (includes District of Columbia, public
-  institutions of higher education and hospitals)", "total_num_programs": 23}, {"title":
-  "U.S. Territories and possessions", "total_num_programs": 7}, {"title": "U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)", "total_num_programs":
-  13}, {"title": "Federally Recognized lndian Tribal Governments", "total_num_programs":
-  15}, {"title": "Other private institutions/organizations", "total_num_programs":
-  6}, {"title": "Minority group", "total_num_programs": 3}, {"title": "Profit organization",
-  "total_num_programs": 6}, {"title": "Quasi-public nonprofit institution/organization",
-  "total_num_programs": 4}, {"title": "Small business (less than 500 employees)",
-  "total_num_programs": 4}, {"title": "Federal", "total_num_programs": 1}, {"title":
-  "Government - General", "total_num_programs": 2}, {"title": "Anyone/general public",
-  "total_num_programs": 2}, {"title": "Specialized group (e.g. health professionals,
-  students, veterans)", "total_num_programs": 1}, {"title": "Sponsored organization",
-  "total_num_programs": 1}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":7,"total_obs":10953982886.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Education","total_num_programs":15,"total_obs":1440992278.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":5,"total_obs":56921000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":21871938.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":15999684.91},{"title":"National
+  Endowment for the Humanities","total_num_programs":1,"total_obs":14134400.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":5408503.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":4747296.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Private nonprofit institution/organization (includes
+  institutions of higher education and hospitals)","total_num_programs":33},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":33},{"title":"Sale, Exchange, or Donation of Property
+  or Goods","total_num_programs":33},{"title":"Direct Loans","total_num_programs":26},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":26},{"title":"Guaranteed
+  / Insured Loans","total_num_programs":21},{"title":"Local (includes State-designated
+  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":21},{"title":"Other
+  public institution/organization","total_num_programs":18},{"title":"Use of Property,
+  Facilities, or Equipment","total_num_programs":18},{"title":"Federally Recognized
+  lndian Tribal Governments","total_num_programs":16},{"title":"Provision of Specialized
+  Services","total_num_programs":16},{"title":"Advisory Services and Counseling","total_num_programs":14},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Native
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":13},{"title":"State","total_num_programs":10},{"title":"U.S.
+  Territories and possessions","total_num_programs":9},{"title":"Dissemination of
+  Technical Information","total_num_programs":6},{"title":"Non-Government - General","total_num_programs":6},{"title":"Other
+  private institutions/organizations","total_num_programs":6},{"title":"Profit organization","total_num_programs":6},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":6},{"title":"Formula Grants","total_num_programs":4},{"title":"Government
+  - General","total_num_programs":4},{"title":"Small business (less than 500 employees)","total_num_programs":4},{"title":"Direct
+  Payments for a Specified Use","total_num_programs":3},{"title":"Direct Payments
+  with Unrestricted Use","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Intrastate","total_num_programs":3},{"title":"Investigation
+  of Complaints","total_num_programs":3},{"title":"Minority group","total_num_programs":3},{"title":"Project
+  Grants","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Federal
+  Employment","total_num_programs":2},{"title":"Insurance","total_num_programs":2},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"Sponsored
+  organization","total_num_programs":2}]'
+categories_subcategories:
+- permalink: /category/agricultural
+  subcategories:
+  - permalink: /category/agricultural/forestry
+    title: Forestry
+  - permalink: /category/agricultural/marketing
+    title: Marketing
+  - permalink: /category/agricultural/production-and-operation
+    title: Production and Operation
+  - permalink: /category/agricultural/research-and-development
+    title: Research and Development
+  - permalink: /category/agricultural/resource-conservation-and-development
+    title: Resource Conservation and Development
+  - permalink: /category/agricultural/stabilization-and-conservation-service
+    title: Stabilization and Conservation Service
+  - permalink: /category/agricultural/technical-assistance--information-and-services
+    title: Technical Assistance, Information and Services
+  title: Agricultural
+- permalink: /category/business-and-commerce
+  subcategories:
+  - permalink: /category/business-and-commerce/commercial-fisheries
+    title: Commercial Fisheries
+  - permalink: /category/business-and-commerce/economic-development
+    title: Economic Development
+  - permalink: /category/business-and-commerce/economic-injury-and-natural-disaster
+    title: Economic Injury and Natural Disaster
+  - permalink: /category/business-and-commerce/international
+    title: International
+  - permalink: /category/business-and-commerce/maritime
+    title: Maritime
+  - permalink: /category/business-and-commerce/minority-business-enterprise
+    title: Minority Business Enterprise
+  - permalink: /category/business-and-commerce/small-business
+    title: Small Business
+  - permalink: /category/business-and-commerce/special-technical-service
+    title: Special Technical Service
+  - permalink: /category/business-and-commerce/statistics
+    title: Statistics
+  title: Business and Commerce
+- permalink: /category/community-development
+  subcategories:
+  - permalink: /category/community-development/construction--renewal-and-operations
+    title: Construction, Renewal and Operations
+  - permalink: /category/community-development/federal-surplus-property
+    title: Federal Surplus Property
+  - permalink: /category/community-development/fire-protection
+    title: Fire Protection
+  - permalink: /category/community-development/historical-preservation
+    title: Historical Preservation
+  - permalink: /category/community-development/indian-action-services
+    title: Indian Action Services
+  - permalink: /category/community-development/land-acquisition
+    title: Land Acquisition
+  - permalink: /category/community-development/planning-and-research
+    title: Planning and Research
+  - permalink: /category/community-development/recreation
+    title: Recreation
+  - permalink: /category/community-development/rural-community-development
+    title: Rural Community Development
+  - permalink: /category/community-development/site-acquisition
+    title: Site Acquisition
+  - permalink: /category/community-development/technical-assistance-and-services
+    title: Technical Assistance and Services
+  title: Community Development
+- permalink: /category/consumer-protection
+  subcategories:
+  - permalink: /category/consumer-protection/complaint-investigation
+    title: Complaint Investigation
+  - permalink: /category/consumer-protection/information-and-educational-services
+    title: Information and Educational Services
+  - permalink: /category/consumer-protection/regulation--inspection--enforcement
+    title: Regulation, Inspection, Enforcement
+  title: Consumer Protection
+- permalink: /category/cultural-affairs
+  subcategories:
+  - permalink: /category/cultural-affairs/promotion-of-the-arts
+    title: Promotion of the Arts
+  - permalink: /category/cultural-affairs/promotion-of-the-humanities
+    title: Promotion of the Humanities
+  title: Cultural Affairs
+- permalink: /category/disaster-prevention-and-relief
+  subcategories:
+  - permalink: /category/disaster-prevention-and-relief/disaster-relief
+    title: Disaster Relief
+  - permalink: /category/disaster-prevention-and-relief/emergency-health-services
+    title: Emergency Health Services
+  - permalink: /category/disaster-prevention-and-relief/emergency-preparedness--civil-defense
+    title: Emergency Preparedness, Civil Defense
+  - permalink: /category/disaster-prevention-and-relief/flood-prevention-and-control
+    title: Flood Prevention and Control
+  title: Disaster Prevention and Relief
+- permalink: /category/education
+  subcategories:
+  - permalink: /category/education/dental-education-and-training
+    title: Dental Education and Training
+  - permalink: /category/education/educational-equipment-and-resources
+    title: Educational Equipment and Resources
+  - permalink: /category/education/educational-facilities
+    title: Educational Facilities
+  - permalink: /category/education/elementary-and-secondary
+    title: Elementary and Secondary
+  - permalink: /category/education/general-research-and-evaluation
+    title: General Research and Evaluation
+  - permalink: /category/education/health-education-and-training
+    title: Health Education and Training
+  - permalink: /category/education/higher-education---general
+    title: Higher Education - General
+  - permalink: /category/education/indian-education
+    title: Indian Education
+  - permalink: /category/education/libraries-and-technical-lnformation-services
+    title: Libraries and Technical lnformation Services
+  - permalink: /category/education/medical-education-and-training
+    title: Medical Education and Training
+  - permalink: /category/education/nuclear-education-and-training
+    title: Nuclear Education and Training
+  - permalink: /category/education/nursing-education
+    title: Nursing Education
+  - permalink: /category/education/resource-development-and-support---elementary--secondary-education
+    title: Resource Development and Support - Elementary, Secondary Education
+  - permalink: /category/education/resource-development-and-support---general-and-special-interest-organizations
+    title: Resource Development and Support - General and Special Interest Organizations
+  - permalink: /category/education/resource-development-and-support---higher-education
+    title: Resource Development and Support - Higher Education
+  - permalink: /category/education/resource-development-and-support---land-and-equipment
+    title: Resource Development and Support - Land and Equipment
+  - permalink: /category/education/resource-development-and-support---school-aid
+    title: Resource Development and Support - School Aid
+  - permalink: /category/education/resource-development-and-support---sciences
+    title: Resource Development and Support - Sciences
+  - permalink: /category/education/resource-development-and-support---student-financial-aid
+    title: Resource Development and Support - Student Financial Aid
+  - permalink: /category/education/resource-development-and-support---vocational-education-and-handicapped-education
+    title: Resource Development and Support - Vocational Education and Handicapped
+      Education
+  - permalink: /category/education/special-education
+    title: Special Education
+  - permalink: /category/education/teacher-training
+    title: Teacher Training
+  - permalink: /category/education/vocational-development
+    title: Vocational Development
+  title: Education
+- permalink: /category/employment--labor--and-training
+  subcategories:
+  - permalink: /category/employment--labor--and-training/assistance-and-services-for-the-unemployed
+    title: Assistance and Services for the Unemployed
+  - permalink: /category/employment--labor--and-training/assistance-to-state-and-local-governments
+    title: Assistance to State and Local Governments
+  - permalink: /category/employment--labor--and-training/bonding-and-certification
+    title: Bonding and Certification
+  - permalink: /category/employment--labor--and-training/equal-employment-opportunity
+    title: Equal Employment Opportunity
+  - permalink: /category/employment--labor--and-training/facilities--planning--construction--and-equipment
+    title: Facilities, Planning, Construction, and Equipment
+  - permalink: /category/employment--labor--and-training/federal-employment
+    title: Federal Employment
+  - permalink: /category/employment--labor--and-training/job-training--employment
+    title: Job Training, Employment
+  - permalink: /category/employment--labor--and-training/labor-management-services
+    title: Labor Management Services
+  - permalink: /category/employment--labor--and-training/planning--research--and-demonstration
+    title: Planning, Research, and Demonstration
+  - permalink: /category/employment--labor--and-training/program-development
+    title: Program Development
+  - permalink: /category/employment--labor--and-training/statistical
+    title: Statistical
+  title: Employment, Labor, and Training
+- permalink: /category/energy
+  subcategories:
+  - permalink: /category/energy/conservation
+    title: Conservation
+  - permalink: /category/energy/education-and-training
+    title: Education and Training
+  - permalink: /category/energy/facilities-and-equipment
+    title: Facilities and Equipment
+  - permalink: /category/energy/general-information-services
+    title: General Information Services
+  - permalink: /category/energy/research-and-development
+    title: Research and Development
+  - permalink: /category/energy/specialized-technical-services
+    title: Specialized Technical Services
+  title: Energy
+- permalink: /category/environmental-quality
+  subcategories:
+  - permalink: /category/environmental-quality/air-pollution-control
+    title: Air Pollution Control
+  - permalink: /category/environmental-quality/pesticides-control
+    title: Pesticides Control
+  - permalink: /category/environmental-quality/radiation-control
+    title: Radiation Control
+  - permalink: /category/environmental-quality/research--education--training
+    title: Research, Education, Training
+  - permalink: /category/environmental-quality/solid-waste-management
+    title: Solid Waste Management
+  - permalink: /category/environmental-quality/water-pollution-control
+    title: Water Pollution Control
+  title: Environmental Quality
+- permalink: /category/food-and-nutrition
+  subcategories:
+  - permalink: /category/food-and-nutrition/food-inspection
+    title: Food Inspection
+  - permalink: /category/food-and-nutrition/food-and-nutrition-for-children
+    title: Food and Nutrition for Children
+  - permalink: /category/food-and-nutrition/food-and-nutrition-for-individual-and-families
+    title: Food and Nutrition for Individual and Families
+  - permalink: /category/food-and-nutrition/research
+    title: Research
+  title: Food and Nutrition
+- permalink: /category/health
+  subcategories:
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---general
+    title: Alcoholism, Drug Abuse and Mental Health - General
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement
+    title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---planning
+    title: Alcoholism, Drug Abuse and Mental Health - Planning
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---research
+    title: Alcoholism, Drug Abuse and Mental Health - Research
+  - permalink: /category/health/communicable-diseases
+    title: Communicable Diseases
+  - permalink: /category/health/education-and-training
+    title: Education and Training
+  - permalink: /category/health/facility-loans-and-insurance
+    title: Facility Loans and Insurance
+  - permalink: /category/health/facility-planning-and-construction
+    title: Facility Planning and Construction
+  - permalink: /category/health/general-health-and-medical
+    title: General Health and Medical
+  - permalink: /category/health/health-research---general
+    title: Health Research - General
+  - permalink: /category/health/health-services-planning-and-technical-assistance
+    title: Health Services Planning and Technical Assistance
+  - permalink: /category/health/indian-health
+    title: Indian Health
+  - permalink: /category/health/libraries--information-and-education-services
+    title: Libraries, Information and Education Services
+  - permalink: /category/health/maternity--infants--children
+    title: Maternity, Infants, Children
+  - permalink: /category/health/mental-health
+    title: Mental Health
+  - permalink: /category/health/occupational-safety-and-health
+    title: Occupational Safety and Health
+  - permalink: /category/health/physical-fitness
+    title: Physical Fitness
+  - permalink: /category/health/prevention-and-control
+    title: Prevention and Control
+  - permalink: /category/health/program-development
+    title: Program Development
+  - permalink: /category/health/specialized-health-research-and-training
+    title: Specialized Health Research and Training
+  - permalink: /category/health/veterans-health
+    title: Veterans Health
+  title: Health
+- permalink: /category/housing
+  subcategories:
+  - permalink: /category/housing/construction-rehabilitation
+    title: Construction Rehabilitation
+  - permalink: /category/housing/cooperatives--rental
+    title: Cooperatives, Rental
+  - permalink: /category/housing/experimental-and-development-projects
+    title: Experimental and Development Projects
+  - permalink: /category/housing/home-improvement
+    title: Home Improvement
+  - permalink: /category/housing/homebuying--homeownership
+    title: Homebuying, Homeownership
+  - permalink: /category/housing/indian-housing
+    title: Indian Housing
+  - permalink: /category/housing/land-acquisition
+    title: Land Acquisition
+  - permalink: /category/housing/multifamily
+    title: Multifamily
+  - permalink: /category/housing/planning
+    title: Planning
+  - permalink: /category/housing/property-and-mortgage-insurance
+    title: Property and Mortgage Insurance
+  - permalink: /category/housing/rural-housing
+    title: Rural Housing
+  - permalink: /category/housing/site-preparation-for-housing
+    title: Site Preparation for Housing
+  title: Housing
+- permalink: /category/income-security-and-social-services
+  subcategories:
+  - permalink: /category/income-security-and-social-services/disabled-veterans
+    title: Disabled Veterans
+  - permalink: /category/income-security-and-social-services/disabled-and-handicapped-services
+    title: Disabled and Handicapped Services
+  - permalink: /category/income-security-and-social-services/emergency-and-crisis-assistance
+    title: Emergency and Crisis Assistance
+  - permalink: /category/income-security-and-social-services/families-and-child-welfare-services
+    title: Families and Child Welfare Services
+  - permalink: /category/income-security-and-social-services/indian-services
+    title: Indian Services
+  - permalink: /category/income-security-and-social-services/information-and-referral-services
+    title: Information and Referral Services
+  - permalink: /category/income-security-and-social-services/legal-and-advocacy-services
+    title: Legal and Advocacy Services
+  - permalink: /category/income-security-and-social-services/nutrition
+    title: Nutrition
+  - permalink: /category/income-security-and-social-services/old-age-assistance
+    title: Old Age Assistance
+  - permalink: /category/income-security-and-social-services/prevention
+    title: Prevention
+  - permalink: /category/income-security-and-social-services/public-assistance
+    title: Public Assistance
+  - permalink: /category/income-security-and-social-services/refugees--alien-services
+    title: Refugees, Alien Services
+  - permalink: /category/income-security-and-social-services/research--demonstration
+    title: Research, Demonstration
+  - permalink: /category/income-security-and-social-services/social-security-and-insurance
+    title: Social Security and Insurance
+  - permalink: /category/income-security-and-social-services/specialized-family-and-child-welfare-services
+    title: Specialized Family and Child Welfare Services
+  - permalink: /category/income-security-and-social-services/specialized-services
+    title: Specialized Services
+  - permalink: /category/income-security-and-social-services/training-assistance
+    title: Training Assistance
+  - permalink: /category/income-security-and-social-services/veterans-services
+    title: Veterans Services
+  - permalink: /category/income-security-and-social-services/youth-services
+    title: Youth Services
+  title: Income Security and Social Services
+- permalink: /category/information-and-statistics
+  subcategories:
+  - permalink: /category/information-and-statistics/census-data
+    title: Census Data
+  - permalink: /category/information-and-statistics/general
+    title: General
+  - permalink: /category/information-and-statistics/libraries--clearinghouses--archives
+    title: Libraries, Clearinghouses, Archives
+  - permalink: /category/information-and-statistics/library-of-congress
+    title: Library of Congress
+  title: Information and Statistics
+- permalink: /category/law--justice-and-legal-services
+  subcategories:
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
+    title: Law Enforcement - Crime Analysis and Data
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
+    title: Law Enforcement - Narcotics and Dangerous Drugs
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---planning-and-operations
+    title: Law Enforcement - Planning and Operations
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---research--education--training
+    title: Law Enforcement - Research, Education, Training
+  - permalink: /category/law--justice-and-legal-services/legal-services---claims-against-foreign-government
+    title: Legal Services - Claims Against Foreign Government
+  - permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
+    title: Legal Services - Employment Rights
+  - permalink: /category/law--justice-and-legal-services/legal-services---general-services
+    title: Legal Services - General Services
+  - permalink: /category/law--justice-and-legal-services/legal-services---housing-rights
+    title: Legal Services - Housing Rights
+  - permalink: /category/law--justice-and-legal-services/legal-services---labor-management
+    title: Legal Services - Labor Management
+  title: Law, Justice and Legal Services
+- permalink: /category/natural-resources
+  subcategories:
+  - permalink: /category/natural-resources/community-sewage-treatment-assistance
+    title: Community Sewage Treatment Assistance
+  - permalink: /category/natural-resources/community-water-supply-services
+    title: Community Water Supply Services
+  - permalink: /category/natural-resources/land-conservation
+    title: Land Conservation
+  - permalink: /category/natural-resources/mineral-research
+    title: Mineral Research
+  - permalink: /category/natural-resources/recreation
+    title: Recreation
+  - permalink: /category/natural-resources/water-conservation-and-research
+    title: Water Conservation and Research
+  - permalink: /category/natural-resources/wildlife-research-and-preservation
+    title: Wildlife Research and Preservation
+  title: Natural Resources
+- permalink: /category/regional-development
+  subcategories:
+  - permalink: /category/regional-development/economic-development
+    title: Economic Development
+  - permalink: /category/regional-development/education
+    title: Education
+  - permalink: /category/regional-development/energy
+    title: Energy
+  - permalink: /category/regional-development/health-and-nutrition
+    title: Health and Nutrition
+  - permalink: /category/regional-development/housing
+    title: Housing
+  - permalink: /category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction
+    title: Land Acquisition and Rehabilitation and Facilities Construction
+  - permalink: /category/regional-development/planning-and-technical-assistance
+    title: Planning and Technical Assistance
+  - permalink: /category/regional-development/resources-and-development
+    title: Resources and Development
+  - permalink: /category/regional-development/transportation
+    title: Transportation
+  title: Regional Development
+- permalink: /category/science-and-technology
+  subcategories:
+  - permalink: /category/science-and-technology/information-and-technical
+    title: Information and Technical
+  - permalink: /category/science-and-technology/research---general
+    title: Research - General
+  - permalink: /category/science-and-technology/research---specialized
+    title: Research - Specialized
+  title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
+    title: Aid to State and Local Governments
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
+- permalink: /category/transportation
+  subcategories:
+  - permalink: /category/transportation/air-transportation
+    title: Air Transportation
+  - permalink: /category/transportation/highways--public-roads--and-bridges
+    title: Highways, Public Roads, and Bridges
+  - permalink: /category/transportation/rail-transportation
+    title: Rail Transportation
+  - permalink: /category/transportation/urban-mass-transit
+    title: Urban Mass Transit
+  - permalink: /category/transportation/water-navigation
+    title: Water Navigation
+  title: Transportation
 fiscal_year: '2022'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---general-and-special-interest-organizations
-programs: '[{"cfda": "66.951", "title": "Environmental Education Grants Program",
-  "agency": "Environmental Protection Agency", "total_obs": 3157934, "permalink":
-  "/program/66.951"}, {"cfda": "45.308", "title": "Native American/Native Hawaiian
-  Museum Services Program ", "agency": "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES",
-  "total_obs": 2272000, "permalink": "/program/45.308"}, {"cfda": "84.120", "title":
-  "Minority Science and Engineering Improvement", "agency": "Department of Education",
-  "total_obs": 14539000, "permalink": "/program/84.120"}, {"cfda": "66.306", "title":
-  "Environmental Justice Collaborative Problem-Solving Cooperative Agreement Program",
-  "agency": "Environmental Protection Agency", "total_obs": 6719004, "permalink":
-  "/program/66.306"}, {"cfda": "84.141", "title": "Migrant Education High School Equivalency
-  Program", "agency": "Department of Education", "total_obs": 23714278, "permalink":
-  "/program/84.141"}, {"cfda": "93.665", "title": "Emergency Grants to Address Mental
-  and Substance Use Disorders During COVID-19", "agency": "Department of Health and
-  Human Services", "total_obs": 0, "permalink": "/program/93.665"}, {"cfda": "94.026",
-  "title": "AmeriCorps National Service and Civic Engagement Research Competition
-  94.026", "agency": "CORPORATION FOR NATIONAL AND COMMUNITY SERVICE", "total_obs":
-  2723511, "permalink": "/program/94.026"}, {"cfda": "64.034", "title": "VA Grants
-  for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed
-  Forces", "agency": "Department of Veterans Affairs", "total_obs": 15999684, "permalink":
-  "/program/64.034"}, {"cfda": "45.312", "title": "National Leadership Grants", "agency":
-  "THE INSTITUTE OF MUSEUM AND LIBRARY SERVICES", "total_obs": 21519000, "permalink":
-  "/program/45.312"}, {"cfda": "84.116", "title": "Fund for the Improvement of Postsecondary
-  Education", "agency": "Department of Education", "total_obs": 76000000, "permalink":
-  "/program/84.116"}, {"cfda": "93.137", "title": "Community Programs to Improve  Minority
-  Health Grant Program", "agency": "Department of Health and Human Services", "total_obs":
-  0, "permalink": "/program/93.137"}, {"cfda": "66.716", "title": "Research, Development,
-  Monitoring, Public Education, Outreach, Training, Demonstrations, and Studies ",
-  "agency": "Environmental Protection Agency", "total_obs": 3700000, "permalink":
-  "/program/66.716"}, {"cfda": "84.103", "title": "TRIO Staff Training Program", "agency":
-  "Department of Education", "total_obs": 3921000, "permalink": "/program/84.103"},
-  {"cfda": "93.982", "title": "Mental Health Disaster Assistance and Emergency Mental
-  Health", "agency": "Department of Health and Human Services", "total_obs": 57309131,
-  "permalink": "/program/93.982"}, {"cfda": "93.648", "title": "Child Welfare Research
-  Training or Demonstration ", "agency": "Department of Health and Human Services",
-  "total_obs": 16763220, "permalink": "/program/93.648"}, {"cfda": "10.531", "title":
-  "State Agency: Farm to School Program Training and Curricula", "agency": "Department
-  of Agriculture", "total_obs": 747296, "permalink": "/program/10.531"}, {"cfda":
-  "45.301", "title": "Museums for America", "agency": "THE INSTITUTE OF MUSEUM AND
-  LIBRARY SERVICES", "total_obs": 27899000, "permalink": "/program/45.301"}, {"cfda":
-  "93.600", "title": "Head Start", "agency": "Department of Health and Human Services",
-  "total_obs": 10862653587, "permalink": "/program/93.600"}, {"cfda": "11.013", "title":
-  "Education Quality Award Ambassadorship", "agency": "Department of Commerce", "total_obs":
-  0, "permalink": "/program/11.013"}, {"cfda": "45.164", "title": "Promotion of the
-  Humanities Public Programs", "agency": "National Endowment for the Humanities",
-  "total_obs": 14134400, "permalink": "/program/45.164"}, {"cfda": "93.974", "title":
-  "Family Planning Service Delivery Improvement Research Grants", "agency": "Department
-  of Health and Human Services", "total_obs": 2845800, "permalink": "/program/93.974"},
-  {"cfda": "84.011", "title": "Migrant Education State Grant Program", "agency": "Department
-  of Education", "total_obs": 365626000, "permalink": "/program/84.011"}, {"cfda":
-  "84.144", "title": "Migrant Education Coordination Program", "agency": "Department
-  of Education", "total_obs": 3000000, "permalink": "/program/84.144"}, {"cfda": "84.283",
-  "title": "Comprehensive Centers", "agency": "Department of Education", "total_obs":
-  54000000, "permalink": "/program/84.283"}, {"cfda": "32.004", "title": "UNIVERSAL
-  SERVICE FUND - SCHOOLS and LIBRARIES", "agency": "Federal Communications Commission",
-  "total_obs": 3224900000, "permalink": "/program/32.004"}, {"cfda": "84.013", "title":
-  "Title I State Agency Program for Neglected and Delinquent Children and Youth",
-  "agency": "Department of Education", "total_obs": 48239000, "permalink": "/program/84.013"},
-  {"cfda": "93.088", "title": "Advancing System Improvements for Key Issues in Women''s
-  Health", "agency": "Department of Health and Human Services", "total_obs": 14411148,
-  "permalink": "/program/93.088"}, {"cfda": "45.309", "title": "Museum Grants for
-  African American History and Culture", "agency": "THE INSTITUTE OF MUSEUM AND LIBRARY
-  SERVICES", "total_obs": 5231000, "permalink": "/program/45.309"}, {"cfda": "90.199",
-  "title": "Shared Services", "agency": "Denali Commission", "total_obs": 0, "permalink":
-  "/program/90.199"}, {"cfda": "84.066", "title": "TRIO Educational Opportunity Centers",
-  "agency": "Department of Education", "total_obs": 63887000, "permalink": "/program/84.066"},
-  {"cfda": "11.460", "title": "Special Oceanic and Atmospheric Projects", "agency":
-  "Department of Commerce", "total_obs": 0, "permalink": "/program/11.460"}, {"cfda":
-  "19.124", "title": "East Asia and Pacific Grants Program", "agency": "Department
-  of State", "total_obs": 0, "permalink": "/program/19.124"}, {"cfda": "15.026", "title":
-  "Indian Adult Education", "agency": "Department of the Interior", "total_obs": 96695,
-  "permalink": "/program/15.026"}, {"cfda": "84.002", "title": "Adult Education -
-  Basic Grants to States", "agency": "Department of Education", "total_obs": 690455000,
-  "permalink": "/program/84.002"}, {"cfda": "42.010", "title": "Teaching with Primary
-  Sources", "agency": "Library of Congress", "total_obs": 0, "permalink": "/program/42.010"},
-  {"cfda": "15.144", "title": "Indian Child Welfare Act Title II Grants", "agency":
-  "Department of the Interior", "total_obs": 3187783, "permalink": "/program/15.144"},
-  {"cfda": "84.328", "title": "Special Education Parent Information Centers", "agency":
-  "Department of Education", "total_obs": 30152000, "permalink": "/program/84.328"},
-  {"cfda": "66.032", "title": "State Indoor Radon Grants", "agency": "Environmental
-  Protection Agency", "total_obs": 8295000, "permalink": "/program/66.032"}, {"cfda":
-  "15.546", "title": "Youth Conservation ", "agency": "Department of the Interior",
-  "total_obs": 2220720, "permalink": "/program/15.546"}, {"cfda": "84.004", "title":
-  "Civil Rights Training and Advisory Services (also known as Equity Assistance Centers)",
-  "agency": "Department of Education", "total_obs": 6526000, "permalink": "/program/84.004"},
-  {"cfda": "84.295", "title": "Ready-To-Learn Television", "agency": "Department of
-  Education", "total_obs": 30500000, "permalink": "/program/84.295"}, {"cfda": "84.327",
-  "title": "Special Education Educational Technology Media, and Materials for Individuals
-  with Disabilities", "agency": "Department of Education", "total_obs": 30433000,
-  "permalink": "/program/84.327"}, {"cfda": "84.145", "title": "Federal Real Property
-  Assistance Program", "agency": "Department of Education", "total_obs": 0, "permalink":
-  "/program/84.145"}, {"cfda": "10.523", "title": "Centers of Excellence at 1890 Institutions",
-  "agency": "Department of Agriculture", "total_obs": 4000000, "permalink": "/program/10.523"}]'
+programs: '[{"cfda":"93.665","permalink":"/program/93.665","title":"Emergency Grants
+  to Address Mental and Substance Use Disorders During COVID-19","popular_name":"Emergency
+  COVID-19","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
+  American/Native Hawaiian Museum Services Program ","popular_name":"NANH-Museums","agency":"The
+  Institute of Museum and Library Services","total_obs":2272000.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":10862653587.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
+  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"84.011","permalink":"/program/84.011","title":"Migrant
+  Education State Grant Program","popular_name":null,"agency":"Department of Education","total_obs":365626000.0,"program_type":"assistance_listing"},{"cfda":"84.144","permalink":"/program/84.144","title":"Migrant
+  Education Coordination Program","popular_name":null,"agency":"Department of Education","total_obs":3000000.0,"program_type":"assistance_listing"},{"cfda":"93.974","permalink":"/program/93.974","title":"Family
+  Planning Service Delivery Improvement Research Grants","popular_name":"Family Planning
+  Research Grants","agency":"Department of Health and Human Services","total_obs":2845800.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
+  Protection Agency","total_obs":3157934.0,"program_type":"assistance_listing"},{"cfda":"84.013","permalink":"/program/84.013","title":"Title
+  I State Agency Program for Neglected and Delinquent Children and Youth","popular_name":null,"agency":"Department
+  of Education","total_obs":48239000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
+  with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
+  and Library Services","total_obs":27899000.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.295","permalink":"/program/84.295","title":"Ready-To-Learn
+  Television","popular_name":null,"agency":"Department of Education","total_obs":30500000.0,"program_type":"assistance_listing"},{"cfda":"84.116","permalink":"/program/84.116","title":"Fund
+  for the Improvement of Postsecondary Education","popular_name":"(FIPSE)","agency":"Department
+  of Education","total_obs":76000000.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
+  of Education","total_obs":30433000.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
+  Leadership Grants","popular_name":"NLG; NLG-L; NLG-M","agency":"The Institute of
+  Museum and Library Services","total_obs":21519000.0,"program_type":"assistance_listing"},{"cfda":"84.141","permalink":"/program/84.141","title":"Migrant
+  Education High School Equivalency Program","popular_name":"(HEP)","agency":"Department
+  of Education","total_obs":23714278.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":14411148.0,"program_type":"assistance_listing"},{"cfda":"84.004","permalink":"/program/84.004","title":"Civil
+  Rights Training and Advisory Services (also known as Equity Assistance Centers)","popular_name":null,"agency":"Department
+  of Education","total_obs":6526000.0,"program_type":"assistance_listing"},{"cfda":"84.103","permalink":"/program/84.103","title":"TRIO
+  Staff Training Program","popular_name":null,"agency":"Department of Education","total_obs":3921000.0,"program_type":"assistance_listing"},{"cfda":"11.460","permalink":"/program/11.460","title":"Special
+  Oceanic and Atmospheric Projects","popular_name":"Disaster Relief Act of 2019","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.531","permalink":"/program/10.531","title":"State
+  Agency: Farm to School Program Training and Curricula","popular_name":"FY 24 Farm
+  to School Technical Assistance Cooperative Agreement","agency":"Department of Agriculture","total_obs":747296.0,"program_type":"assistance_listing"},{"cfda":"45.164","permalink":"/program/45.164","title":"Promotion
+  of the Humanities Public Programs","popular_name":null,"agency":"National Endowment
+  for the Humanities","total_obs":14134400.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
+  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.283","permalink":"/program/84.283","title":"Comprehensive
+  Centers","popular_name":null,"agency":"Department of Education","total_obs":54000000.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
+  Welfare Research Training or Demonstration ","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":16763220.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.066","permalink":"/program/84.066","title":"TRIO
+  Educational Opportunity Centers","popular_name":null,"agency":"Department of Education","total_obs":63887000.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":3187783.0,"program_type":"assistance_listing"},{"cfda":"66.032","permalink":"/program/66.032","title":"State
+  Indoor Radon Grants","popular_name":"SIRG","agency":"Environmental Protection Agency","total_obs":8295000.0,"program_type":"assistance_listing"},{"cfda":"84.328","permalink":"/program/84.328","title":"Special
+  Education Parent Information Centers","popular_name":null,"agency":"Department of
+  Education","total_obs":30152000.0,"program_type":"assistance_listing"},{"cfda":"93.137","permalink":"/program/93.137","title":"Community
+  Programs to Improve  Minority Health Grant Program","popular_name":"Minority Health
+  Community Programs","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
+  Education - Basic Grants to States","popular_name":null,"agency":"Department of
+  Education","total_obs":690455000.0,"program_type":"assistance_listing"},{"cfda":"66.716","permalink":"/program/66.716","title":"Research,
+  Development, Monitoring, Public Education, Outreach, Training, Demonstrations, and
+  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":3700000.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
+  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
+  of Defense","total_obs":124100000.0,"program_type":"assistance_listing"},{"cfda":"64.034","permalink":"/program/64.034","title":"VA
+  Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of
+  the Armed Forces","popular_name":"VA Grants for Adaptive Sports Programs for Disabled
+  Veterans and Disabled Members of the Armed Forces","agency":"Department of Veterans
+  Affairs","total_obs":15999684.91,"program_type":"assistance_listing"},{"cfda":"93.982","permalink":"/program/93.982","title":"Mental
+  Health Disaster Assistance and Emergency Mental Health","popular_name":"(Mental
+  Health Disaster Assistance)","agency":"Department of Health and Human Services","total_obs":57309131.0,"program_type":"assistance_listing"},{"cfda":"10.523","permalink":"/program/10.523","title":"Centers
+  of Excellence at 1890 Institutions","popular_name":"1890 Centers of Excellence (COEs)","agency":"Department
+  of Agriculture","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"15.546","permalink":"/program/15.546","title":"Youth
+  Conservation ","popular_name":null,"agency":"Department of the Interior","total_obs":2220720.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
+  Protection Agency","total_obs":6719004.0,"program_type":"assistance_listing"},{"cfda":"84.120","permalink":"/program/84.120","title":"Minority
+  Science and Engineering Improvement","popular_name":"(MSEIP)","agency":"Department
+  of Education","total_obs":14539000.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
+  Grants for African American History and Culture","popular_name":"AAHC","agency":"The
+  Institute of Museum and Library Services","total_obs":5231000.0,"program_type":"assistance_listing"},{"cfda":"45.031","permalink":"/program/45.031","title":"American
+  Latino Museum Internship and Fellowship Initiative","popular_name":"ALMIFI","agency":"The
+  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
+  5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Resource Development and Support - General and Special Interest Organizations
-total_num_agencies: 14
-total_num_applicant_types: 23
-total_num_programs: 44
-total_obs: 15741778191
+total_num_agencies: 16
+total_num_applicant_types: 37
+total_num_programs: 48
+total_obs: 15865781496.91
 ---
