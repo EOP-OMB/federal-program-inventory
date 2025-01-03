@@ -680,6 +680,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
     for program in base_programs:
         cursor.execute("""
             SELECT DISTINCT
+                c.id as category_id,
                 c.type as category_type,
                 CASE 
                     WHEN c.type = 'assistance' AND c.parent_id IS NOT NULL THEN pc.name
@@ -691,13 +692,6 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             LEFT JOIN category pc ON c.parent_id = pc.id
             WHERE ptc.program_id = ?
             AND c.type = ptc.category_type
-            AND NOT EXISTS (
-                -- Ensure this name is not used by any other category type
-                SELECT 1 
-                FROM category c2
-                WHERE (c2.name = c.name OR c2.name = pc.name)
-                AND c2.type != c.type
-            )
         """, (program['id'],))
         
         categories = cursor.fetchall()
@@ -732,23 +726,25 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         
         # Use sets to prevent duplicates when organizing categories
         program_categories = {
-            'assistance': set(),
-            'beneficiary': set(),
-            'applicant': set(),
-            'categories': set()
+            'assistance': {},
+            'beneficiary': {},
+            'applicant': {},
+            'categories': {}
         }
         
         for cat in categories:
             category_type = cat['category_type']
+            category_id = cat['category_id']
+            
             if category_type in ['assistance', 'beneficiary', 'applicant']:
-                program_categories[category_type].add(cat['category_name'])
+                program_categories[category_type][category_id] = cat['category_name']
             elif category_type == 'category':
                 if cat['parent_category_name']:
-                    program_categories['categories'].add(
+                    program_categories['categories'][category_id] = (
                         f"{cat['parent_category_name']} - {cat['category_name']}"
                     )
                 else:
-                    program_categories['categories'].add(cat['category_name'])
+                    program_categories['categories'][category_id] = cat['category_name']
         
         # Create comprehensive program data
         program_data = {
@@ -761,10 +757,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'grants_url': program['grants_url'],
             'top_agency_name': program['top_agency_name'],
             'sub_agency_name': program['sub_agency_name'],
-            'assistance_types': sorted(list(program_categories['assistance'])),
-            'beneficiary_types': sorted(list(program_categories['beneficiary'])),
-            'applicant_types': sorted(list(program_categories['applicant'])),
-            'categories': sorted(list(program_categories['categories'])),
+            'assistance_types': sorted(list(program_categories['assistance'].values())),
+            'beneficiary_types': sorted(list(program_categories['beneficiary'].values())),
+            'applicant_types': sorted(list(program_categories['applicant'].values())),
+            'categories': sorted(list(program_categories['categories'].values())),
             'obligations': obligations,
             'other_program_spending': other_program_spending,
             'outlays': outlays,
