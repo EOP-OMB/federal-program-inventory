@@ -50,12 +50,11 @@ footer_include: _footer-category.html
       {{ page.title }}
     </div>
     <div class="grid-col-8 line-height-sans-3 padding-top-1">
-      Programs (assistance listings), their functions (categories), and
-      sub-functions (sub-categories) listed on this page use data pulled from
-      SAM.gov and [other].
+      Programs and the related information listed on this page use data pulled from
+      SAM.gov, USASpending.gov, and Treasury.gov.
       <br />
       <br />
-      Select from the dropdown below to view a category. Once you’ve selected a
+      Select from the dropdown below to view a category. Once you've selected a
       category, you can select a sub-category under it.
     </div>
   </div>
@@ -88,21 +87,15 @@ footer_include: _footer-category.html
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
       <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        {{ page.title }} obligations
+        {{ page.title }} expenditures
       </h3>
 
       <p class="text-ink font-sans-sm line-height-body-3">
-        The numbers below show
-        <span class="text-bold">Programs</span> (individual Assistance
-        Listings), actual <span class="text-bold">Obligations</span>, and their <span class="text-bold">sub-functions</span> (sub-categories),
-        all as submitted by agencies to
-        <a
-          href="https://sam.gov"
-          class="usa-link usa-link--external"
-          target="_blank"
-          rel="noopener noreferrer"
-          >SAM.gov</a
-        >.
+        All data for this chart was provided by the administering agency and sourced from
+        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">SAM.gov</a> and
+        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
+          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
       </p>
       <div class="display-flex margin-bottom-2">
         <div class="padding-right-5 display-flex flex-column">
@@ -115,7 +108,7 @@ footer_include: _footer-category.html
           <div id="obligations-total" class="text-primary font-sans-3xl text-bold">
           </div>
           <div class="font-heading-lg line-height-heading-5">
-            in FY {{ page.fiscal_year }} obligations
+            in FY {{ page.fiscal_year }} expenditures
           </div>
         </div>
         <div class="display-flex flex-column">
@@ -212,7 +205,7 @@ footer_include: _footer-category.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Obligations (FY {{ page.fiscal_year }})</span
+                  >Expenditures (FY {{ page.fiscal_year }})</span
                 >
               </th>
             </tr>
@@ -250,7 +243,7 @@ footer_include: _footer-category.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Obligations (FY {{ page.fiscal_year }})</span
+                  >Expenditures (FY {{ page.fiscal_year }})</span
                 >
               </th>
             </tr>

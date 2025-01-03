@@ -109,11 +109,11 @@
 
         let headers = [];
         if (activeTable === "program") {
-          headers = ["Program", "Agency", `Obligations (FY${fiscalYear})`];
+          headers = ["Program", "Agency", `Expenditures (FY${fiscalYear})`];
         } else if (activeTable === "agency") {
-          headers = ["Agency", "Number of Programs", `Obligations (FY${fiscalYear})`];
+          headers = ["Agency", "Number of Programs", `Expenditures (FY${fiscalYear})`];
         } else {
-          headers = ["Applicant Type", `Obligations (FY${fiscalYear})`];
+          headers = ["Applicant Type", `Expenditures (FY${fiscalYear})`];
         }
 
         let csvContent = headers.join(",") + "\n";
@@ -451,7 +451,7 @@
     const { divisor, suffix } = getFormattingInfo(topPrograms);
 
     createBarChart(topPrograms, {
-      xLabel: "Obligations in US Dollars",
+      xLabel: "Expenditures in US Dollars",
       yLabel: "Programs",
       valueFormatter: value => formatObligations(value),
       xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
@@ -475,7 +475,7 @@
     const { divisor, suffix } = getFormattingInfo(topAgencies);
 
     createBarChart(topAgencies, {
-      xLabel: "Obligations in US Dollars",
+      xLabel: "Expenditures in US Dollars",
       yLabel: "Agencies",
       valueFormatter: value => formatObligations(value),
       xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
