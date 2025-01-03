@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":717611112579.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":717611000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -458,10 +458,10 @@ parent_permalink: /category/interest-on-the-public-debt
 parent_title: Interest on the Public Debt
 permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
 programs: '[{"cfda":"IN.001","permalink":"/program/IN.001","title":"Interest on the
-  Public Debt","popular_name":null,"agency":"Department of the Treasury","total_obs":717611112579.0,"program_type":"interest"}]'
+  Public Debt","popular_name":null,"agency":"Department of the Treasury","total_obs":717611000000.0,"program_type":"interest"}]'
 title: Interest on the Public Debt
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 1
-total_obs: 717611112579.0
+total_obs: 717611000000.0
 ---

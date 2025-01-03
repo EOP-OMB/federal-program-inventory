@@ -775,6 +775,7 @@ def load_category_and_sub_category():
         conn.commit()
 
 def load_additional_programs():
+    """Loads additional programs data from CSV and updates database tables."""
     if not os.path.exists(ADDITIONAL_PROGRAMS_DATA_PATH):
         print(f"{ADDITIONAL_PROGRAMS_DATA_PATH} - Not Found")
         return
@@ -802,8 +803,34 @@ def load_additional_programs():
     response = cur.fetchall()
     agency_id_map = {val[1]: val[0] for val in response}
 
-    df.insert(df.shape[1], 'category.type', 'category')
+    # Add assistance types first
+    assistance_entries = [
+        {
+            'id': 'interest',  # Lowercase to match existing pattern
+            'type': 'assistance',
+            'name': 'Interest',
+            'parent_id': None
+        },
+        {
+            'id': 'tax_expenditure', # Using standardized format
+            'type': 'assistance',
+            'name': 'Tax Expenditures',
+            'parent_id': None
+        }
+    ]
+
+    # Insert assistance type categories
+    for category in assistance_entries:
+        category_query = "INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING;"
+        category_values = (category['id'], category['type'], category['name'], category['parent_id'])
+        try:
+            cur.execute(category_query, category_values)
+        except Exception as e:
+            print(str(e))
+            print(f"ERROR - Assistance Category Insert Error\n{category_query}")
+
     df.insert(df.shape[1], 'program.agency_id', None)
+    df.insert(df.shape[1], 'category.type', 'category')
     df.insert(df.shape[1], 'category.name', None)
     df.insert(df.shape[1], 'category.id', None)
     df.insert(df.shape[1], 'category.parent_id', None)
@@ -849,7 +876,7 @@ def load_additional_programs():
                 unique_categories.append(subcategory_entry)
 
     for category in unique_categories:
-        category_query = f"INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?);"
+        category_query = f"INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING;"
         category_values = tuple([category['id'], category['type'], 
                                category['name'], category['parent_id']])
         try:
@@ -869,15 +896,37 @@ def load_additional_programs():
             cur.execute(program_query, program_values)
         except Exception as e:
             print(str(e))
-            print(f"ERROR - {ind}\n{program_query} ")
+            print(f"ERROR - {ind}\n{program_query}")
         
-        program_to_category_query = f"""INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);"""
-        program_to_category_values = tuple([record['program.id'], record['category.id'], 'category'])
-        try:
-            cur.execute(program_to_category_query, program_to_category_values)
-        except Exception as e:
-            print(str(e))
-            print(f"ERROR - {ind}\n{program_to_category_query} ")
+        # Insert regular category relation
+        if not pd.isna(record['category.id']):
+            program_to_category_query = f"""INSERT INTO program_to_category 
+                (program_id, category_id, category_type) VALUES (?, ?, ?) ON CONFLICT DO NOTHING;"""
+            program_to_category_values = tuple([record['program.id'], record['category.id'], 'category'])
+            try:
+                cur.execute(program_to_category_query, program_to_category_values)
+            except Exception as e:
+                print(str(e))
+                print(f"ERROR - {ind}\n{program_to_category_query}")
+        
+        # Insert assistance type relation
+        if not pd.isna(record['assistance_type']):
+            # Map the assistance type from the CSV to the category ID
+            assistance_value = record['assistance_type']
+            if assistance_value == 'Interest':
+                category_id = 'interest'
+            elif assistance_value == 'Tax Expenditures':
+                category_id = 'tax_expenditure'
+            
+            if category_id:
+                program_to_assistance_query = """INSERT INTO program_to_category 
+                    (program_id, category_id, category_type) VALUES (?, ?, ?) ON CONFLICT DO NOTHING;"""
+                program_to_assistance_values = (record['program.id'], category_id, 'assistance')
+                try:
+                    cur.execute(program_to_assistance_query, program_to_assistance_values)
+                except Exception as e:
+                    print(str(e))
+                    print(f"ERROR - Program to Assistance Category Mapping Error\n{program_to_assistance_query}")
 
     fiscal_years = {}
     for col in df.columns:
@@ -896,7 +945,7 @@ def load_additional_programs():
             ])
 
     conn.commit()
-      
+         
 # uncomment the necessary functions to database with data
 #
 # load_usaspending_initial_files()

@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":717611112579.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":717611000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -455,11 +455,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/interest-on-the-public-debt
-sub_cats: '[{"title":"Interest on the Public Debt","permalink":"/category/interest-on-the-public-debt/interest-on-the-public-debt","total_num_programs":1,"total_obs":717611112579.0}]'
+sub_cats: '[{"title":"Interest on the Public Debt","permalink":"/category/interest-on-the-public-debt/interest-on-the-public-debt","total_num_programs":1,"total_obs":717611000000.0}]'
 title: Interest on the Public Debt
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 1
 total_num_sub_cats: 1
-total_obs: 717611112579.0
+total_obs: 717611000000.0
 ---

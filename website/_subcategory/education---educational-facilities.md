@@ -489,64 +489,64 @@ fiscal_year: '2022'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/educational-facilities
-programs: '[{"cfda":"12.903","permalink":"/program/12.903","title":"GenCyber Grants
-  Program","popular_name":"GenCyber","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.942","permalink":"/program/15.942","title":"Environmental
-  Outreach and Conservation - North Cascades","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.608","permalink":"/program/10.608","title":"Food
-  for Education","popular_name":"McGovern-Dole International Food for Education and
-  Children Nutrition Program","agency":"Department of Agriculture","total_obs":226849192.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
-  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3157934.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
-  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":100488150.97,"program_type":"assistance_listing"},{"cfda":"39.007","permalink":"/program/39.007","title":"Sale
+programs: '[{"cfda":"19.501","permalink":"/program/19.501","title":"Public Diplomacy
+  Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy Programs
+  for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.007","permalink":"/program/39.007","title":"Sale
   of Federal Surplus Personal Property","popular_name":"(Sales Program)","agency":"General
-  Services Administration","total_obs":11243958.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
-  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.142","permalink":"/program/97.142","title":"National
-  Computer Forensics Institute Facility Expansion Grant Program","popular_name":null,"agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
-  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"47.070","permalink":"/program/47.070","title":"Computer
-  and Information Science and Engineering","popular_name":"(CISE)","agency":"National
-  Science Foundation","total_obs":1014724147.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
-  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":27899000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
-  Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
-  of the Treasury","total_obs":9872720729.0,"program_type":"assistance_listing"},{"cfda":"15.062","permalink":"/program/15.062","title":"Replacement
-  and Repair of Indian Schools","popular_name":null,"agency":"Department of the Interior","total_obs":132017.0,"program_type":"assistance_listing"},{"cfda":"84.417","permalink":"/program/84.417","title":"Directed
-  Grants and Awards","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
-  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.617","permalink":"/program/11.617","title":"Congressionally-Identified
-  Projects","popular_name":null,"agency":"Department of Commerce","total_obs":37598000.0,"program_type":"assistance_listing"},{"cfda":"15.012","permalink":"/program/15.012","title":"Outdoor
-  Schools in National Parks","popular_name":"Outdoor Schools In National Parks","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
-  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":4835000.0,"program_type":"assistance_listing"},{"cfda":"84.116","permalink":"/program/84.116","title":"Fund
-  for the Improvement of Postsecondary Education","popular_name":"(FIPSE)","agency":"Department
-  of Education","total_obs":76000000.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
-  Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
-  Programs for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.362","permalink":"/program/84.362","title":"Native
-  Hawaiian Education","popular_name":null,"agency":"Department of Education","total_obs":38897000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.002","permalink":"/program/39.002","title":"Disposal
-  of Federal Surplus Real Property","popular_name":null,"agency":"General Services
-  Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Pacific
-  Northwest and Hawaiian Islands Arts","popular_name":"PNW & HI Arts Program","agency":"Department
-  of the Interior","total_obs":1250000.0,"program_type":"assistance_listing"},{"cfda":"47.084","permalink":"/program/47.084","title":"NSF
-  Technology, Innovation, and Partnerships","popular_name":"NSF Directorate for Technology,
-  Innovation, and Partnerships (TIP)","agency":"National Science Foundation","total_obs":413085919.0,"program_type":"assistance_listing"},{"cfda":"12.360","permalink":"/program/12.360","title":"Research
+  Services Administration","total_obs":11243958.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
+  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":4835000.0,"program_type":"assistance_listing"},{"cfda":"12.360","permalink":"/program/12.360","title":"Research
   on Chemical and Biological Defense","popular_name":null,"agency":"Department of
-  Defense","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
-  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
-  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":122649000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Defense","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.608","permalink":"/program/10.608","title":"Food
+  for Education","popular_name":"McGovern-Dole International Food for Education and
+  Children Nutrition Program","agency":"Department of Agriculture","total_obs":226849192.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
+  Protection Agency","total_obs":3157934.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
+  and Library Services","total_obs":27899000.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
+  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":122649000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"15.012","permalink":"/program/15.012","title":"Outdoor
+  Schools in National Parks","popular_name":"Outdoor Schools In National Parks","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.903","permalink":"/program/12.903","title":"GenCyber
+  Grants Program","popular_name":"GenCyber","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.142","permalink":"/program/97.142","title":"National
+  Computer Forensics Institute Facility Expansion Grant Program","popular_name":null,"agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.617","permalink":"/program/11.617","title":"Congressionally-Identified
+  Projects","popular_name":null,"agency":"Department of Commerce","total_obs":37598000.0,"program_type":"assistance_listing"},{"cfda":"47.070","permalink":"/program/47.070","title":"Computer
+  and Information Science and Engineering","popular_name":"(CISE)","agency":"National
+  Science Foundation","total_obs":1014724147.0,"program_type":"assistance_listing"},{"cfda":"84.362","permalink":"/program/84.362","title":"Native
+  Hawaiian Education","popular_name":null,"agency":"Department of Education","total_obs":38897000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":6719004.0,"program_type":"assistance_listing"}]'
+  Protection Agency","total_obs":6719004.0,"program_type":"assistance_listing"},{"cfda":"47.084","permalink":"/program/47.084","title":"NSF
+  Technology, Innovation, and Partnerships","popular_name":"NSF Directorate for Technology,
+  Innovation, and Partnerships (TIP)","agency":"National Science Foundation","total_obs":413085919.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Pacific
+  Northwest and Hawaiian Islands Arts","popular_name":"PNW & HI Arts Program","agency":"Department
+  of the Interior","total_obs":1250000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
+  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"84.417","permalink":"/program/84.417","title":"Directed
+  Grants and Awards","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
+  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.062","permalink":"/program/15.062","title":"Replacement
+  and Repair of Indian Schools","popular_name":null,"agency":"Department of the Interior","total_obs":132017.0,"program_type":"assistance_listing"},{"cfda":"39.002","permalink":"/program/39.002","title":"Disposal
+  of Federal Surplus Real Property","popular_name":null,"agency":"General Services
+  Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.942","permalink":"/program/15.942","title":"Environmental
+  Outreach and Conservation - North Cascades","popular_name":null,"agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
+  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
+  Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
+  of the Treasury","total_obs":9872720729.0,"program_type":"assistance_listing"},{"cfda":"84.116","permalink":"/program/84.116","title":"Fund
+  for the Improvement of Postsecondary Education","popular_name":"(FIPSE)","agency":"Department
+  of Education","total_obs":76000000.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
+  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
+  and Space Administration","total_obs":100488150.97,"program_type":"assistance_listing"}]'
 title: Educational Facilities
 total_num_agencies: 17
 total_num_applicant_types: 39

@@ -1,7 +1,8 @@
 ---
 agency: Department of the Treasury
 applicant_types: []
-assistance_types: []
+assistance_types:
+- Interest
 authorizations: []
 beneficiary_types: []
 categories:
@@ -16,7 +17,7 @@ objective: The federal government is charged interest for the use of lenders’ 
   How much the government pays in interest depends on the total national debt and
   the various securities’ interest rates.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":717611112579.0,"forgone_revenue":0.0},{"x":"2023","outlays":879306558151.0,"forgone_revenue":0.0},{"x":"2024","outlays":1133036890149.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2022","outlays":717611000000.0,"forgone_revenue":0.0},{"x":"2023","outlays":879307000000.0,"forgone_revenue":0.0},{"x":"2024","outlays":1133040000000.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/IN.001.html
 popular_name: ''

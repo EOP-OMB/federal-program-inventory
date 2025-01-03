@@ -1,7 +1,8 @@
 ---
 agency: Department of the Treasury
 applicant_types: []
-assistance_types: []
+assistance_types:
+- Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
