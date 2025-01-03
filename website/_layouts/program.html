@@ -264,129 +264,131 @@ footer_include: _footer-program.html
 
       <!-- Categories Section -->
       {% if page.categories and page.categories.size > 0 %}
-<div class="margin-bottom-4">
-  <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
+      <div class="margin-bottom-4">
+        <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
 
-  {% assign last_category = "" %}
-  {% assign sorted_categories = page.categories | sort %}
+        {% assign last_category = "" %}
+        {% assign sorted_categories = page.categories | sort %}
 
-  {% for category in sorted_categories %}
-    {% assign first_dash = category | split: " - " | first %}
-    {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
-    {% assign main_category = first_dash %}
-    {% assign sub_category = remaining | default: main_category %}
+        {% for category in sorted_categories %}
+          {% assign first_dash = category | split: " - " | first %}
+          {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
+          {% assign main_category = first_dash %}
+          {% assign sub_category = remaining | default: main_category %}
 
-    {% if main_category != last_category %}
-      {% unless forloop.first %}
+          {% if main_category != last_category %}
+            {% unless forloop.first %}
+              </ul>
+            </div>
+            {% endunless %}
+
+            <div>
+              <a href="#" class="usa-link program-filter text-bold" data-filter-type="category" 
+                data-category-title="{{main_category}}">{{ main_category }}</a>
+              <ul class="usa-list padding-left-3 margin-y-0 text-primary">
+          {% endif %}
+
+          {% if sub_category != "" %}
+            <li>
+              <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
+                data-category-title="{{main_category}}" 
+                data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
+            </li>
+          {% endif %}
+
+          {% assign last_category = main_category %}
+
+          {% if forloop.last %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <!-- Program Types Section -->
+      {% if page.assistance_types and page.assistance_types.size > 0 %}
+      <div class="margin-bottom-4">
+        <h3 class="font-sans-md text-bold margin-bottom-1">Program types</h3>
+        <ul class="usa-list text-primary padding-left-3 margin-y-0">
+          {% for type in page.assistance_types %}
+          <li>
+            <a href="#" class="usa-link program-filter" data-filter-type="assistance" data-assistance-title="{{type}}">{{
+              type }}</a>
+          </li>
+          {% endfor %}
         </ul>
       </div>
-      {% endunless %}
+      {% endif %}
 
-      <div>
-        <a href="#" class="usa-link program-filter text-bold" data-filter-type="category" 
-           data-category-title="{{main_category}}">{{ main_category }}</a>
-        <ul class="usa-list padding-left-3 margin-y-0 text-primary">
-    {% endif %}
-
-    {% if sub_category != "" %}
-      <li>
-        <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
-           data-category-title="{{main_category}}" 
-           data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
-      </li>
-    {% endif %}
-
-    {% assign last_category = main_category %}
-
-    {% if forloop.last %}
+      <!-- Eligible Applicants Section -->
+      {% if page.applicant_types and page.applicant_types.size > 0 %}
+      <div class="margin-bottom-4">
+        <h3 class="font-sans-md text-bold margin-bottom-1">Eligible applicants</h3>
+        <ul class="usa-list text-primary padding-left-3 margin-y-0">
+          {% for type in page.applicant_types %}
+          <li>
+            <a href="#" class="usa-link program-filter" data-filter-type="applicant" data-applicant-title="{{type}}">{{
+              type }}</a>
+          </li>
+          {% endfor %}
         </ul>
       </div>
-    {% endif %}
-  {% endfor %}
-</div>
-{% endif %}
+      {% endif %}
 
-    <!-- Program Types Section -->
-    {% if page.assistance_types and page.assistance_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Program types</h3>
-      <ul class="usa-list text-primary padding-left-3 margin-y-0">
-        {% for type in page.assistance_types %}
-        <li>
-          <a href="#" class="usa-link program-filter" data-filter-type="assistance" data-assistance-title="{{type}}">{{
-            type }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    <!-- Eligible Applicants Section -->
-    {% if page.applicant_types and page.applicant_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible applicants</h3>
-      <ul class="usa-list text-primary padding-left-3 margin-y-0">
-        {% for type in page.applicant_types %}
-        <li>
-          <a href="#" class="usa-link program-filter" data-filter-type="applicant" data-applicant-title="{{type}}">{{
-            type }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    <!-- Eligible Beneficiaries Section -->
-    {% if page.beneficiary_types and page.beneficiary_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible beneficiaries</h3>
-      <ul class="usa-list padding-left-3 margin-y-0">
-        {% for type in page.beneficiary_types %}
-        <li>
-          <div>{{ type }}</div>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    {% if page.program_type == "assistance_listing" %}
-    <!-- Additional Resources Section -->
-    <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-bottom-1 margin-top-0">Additional resources</h2>
-
-    <div class="display-flex flex-column font-sans-md">
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">awards and recipients at
-          USASpending.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
+      <!-- Eligible Beneficiaries Section -->
+      {% if page.beneficiary_types and page.beneficiary_types.size > 0 %}
+      <div class="margin-bottom-4">
+        <h3 class="font-sans-md text-bold margin-bottom-1">Eligible beneficiaries</h3>
+        <ul class="usa-list padding-left-3 margin-y-0">
+          {% for type in page.beneficiary_types %}
+          <li>
+            <div>{{ type }}</div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
+      {% endif %}
 
-      <div class="margin-bottom-2">
-        <span">View this program's</span>
-          <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank"
-            rel="noopener noreferrer">assistance listing at SAM.gov</a>
+      {% if page.program_type == "assistance_listing" %}
+      <!-- Additional Resources Section -->
+      <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-bottom-1 margin-top-0">Additional resources</h2>
+
+      <div class="display-flex flex-column font-sans-md">
+        <div class="margin-bottom-2">
+          <span>View this program's</span>
+          <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">awards and recipients at
+            USASpending.gov</a>
           <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
+        </div>
 
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">available grant opportunities at
-          Grants.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
+        <div class="margin-bottom-2">
+          <span">View this program's</span>
+            <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank"
+              rel="noopener noreferrer">assistance listing at SAM.gov</a>
+            <i class="fa-solid fa-external-link margin-left-1"></i>
+        </div>
 
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="https://fac.gov/" class="usa-link usa-link--external" target="_blank"
-        rel="noopener noreferrer">single audits at FAC.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
+        <div class="margin-bottom-2">
+          <span>View this program's</span>
+          <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">available grant opportunities at
+            Grants.gov</a>
+          <i class="fa-solid fa-external-link margin-left-1"></i>
+        </div>
+
+        <div class="margin-bottom-2">
+          <span>View this program's</span>
+          <a href="https://fac.gov/" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">single audits at FAC.gov</a>
+          <i class="fa-solid fa-external-link margin-left-1"></i>
+        </div>
+        
       </div>
+      <!-- Additional Resources Section End-->
+      {% endif %}
     </div>
-    <!-- Additional Resources Section End-->
-    {% endif %}
   </div>
   <!--- Program Column Display End --->
 </div>
