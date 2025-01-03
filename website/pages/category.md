@@ -515,11 +515,11 @@ categories_json: '[{"title":"Income Security and Social Services","total_num_pro
 fiscal_year: '2022'
 layout: category-index
 obligations_by_type:
-- title: Financial Assistance
+- title: Federal Financial Assistance
   total_obs: 4459820970482.449
-- title: Interest on the National Debt
+- title: Interest on the Public Debt
   total_obs: 717611112579.0
-- title: Tax Credit
+- title: Tax Expenditures
   total_obs: 1961632000000.0
 permalink: /category.html
 title: Categories
