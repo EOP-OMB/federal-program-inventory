@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"total_obs":8612989084.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":2333159386.0},{"title":"Department
+  of Health and Human Services","total_num_programs":8,"total_obs":2187399626.0},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":1363529527.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":407587405.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":1,"total_obs":267787000.0},{"title":"Department
+  of Justice","total_num_programs":6,"total_obs":187823416.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":107457763.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":15},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":12},{"title":"State","total_num_programs":11},{"title":"State

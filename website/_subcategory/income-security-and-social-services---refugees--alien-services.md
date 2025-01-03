@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":5028105170.0},{"title":"Department
+  of State","total_num_programs":6,"total_obs":546665727.0},{"title":"Department of
+  Homeland Security","total_num_programs":2,"total_obs":22799249.61},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":8,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":11,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":5,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":10,"total_obs":5394986963.0},{"title":"Department
+  of the Treasury","total_num_programs":7,"total_obs":2245100565.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":1034268826.0},{"title":"Department
+  of Defense","total_num_programs":11,"total_obs":333109772.0},{"title":"Department
+  of Justice","total_num_programs":5,"total_obs":217900224.0},{"title":"Department
+  of Commerce","total_num_programs":5,"total_obs":150974087.0},{"title":"Department
+  of Agriculture","total_num_programs":5,"total_obs":91413664.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":3,"total_obs":35402000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":23100000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":8,"total_obs":22994942.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":20678746.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":18732782.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":12000000.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":2468750.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":38},{"title":"Private

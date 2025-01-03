@@ -1,13 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":37,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":37,"total_obs":4968885227.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":919700000.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":130000000.0},{"title":"Department
+  of Justice","total_num_programs":5,"total_obs":81026807.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":52500000.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":4955371.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":33},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":28},{"title":"Public nonprofit institution/organization

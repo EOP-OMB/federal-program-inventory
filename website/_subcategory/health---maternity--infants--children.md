@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":44,"total_obs":0.0},{"title":"Department of
-  Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":44,"total_obs":36446025951.96},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":734700000.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":365626000.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":307422017.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":38},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":34},{"title":"State

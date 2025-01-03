@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Agency for International Development","total_num_programs":3,"total_obs":527300000.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":7300000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
-  Development","total_num_programs":3,"total_obs":0.0}]'
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":6},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":4},{"title":"State (includes

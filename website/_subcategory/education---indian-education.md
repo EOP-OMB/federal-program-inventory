@@ -1,16 +1,17 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":14,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department of Education","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":7,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":7,"total_obs":11058877014.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Education","total_num_programs":7,"total_obs":231986100.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":100488150.97},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":3,"total_obs":35434000.0},{"title":"Department
+  of Agriculture","total_num_programs":7,"total_obs":34381580.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":13645765.0},{"title":"Department of
+  the Interior","total_num_programs":14,"total_obs":12465660.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":9876938.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":28},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":23},{"title":"Public nonprofit institution/organization

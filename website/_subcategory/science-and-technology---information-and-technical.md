@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"U.S. Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":2,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":2,"total_obs":0.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":6,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":5,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":15,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":9,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Energy","total_num_programs":5,"total_obs":1633959591.0},{"title":"National
+  Science Foundation","total_num_programs":2,"total_obs":1606396851.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":6,"total_obs":1171089470.11},{"title":"Department
+  of Agriculture","total_num_programs":9,"total_obs":830210780.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":701968576.0},{"title":"Department
+  of Health and Human Services","total_num_programs":10,"total_obs":165131729.0},{"title":"Department
+  of Commerce","total_num_programs":15,"total_obs":156456275.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":114049022.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":91374127.0},{"title":"Department
+  of State","total_num_programs":7,"total_obs":82403924.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":2,"total_obs":49418000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":31085005.0},{"title":"Department
+  of the Interior","total_num_programs":5,"total_obs":22000000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":200000.0},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":55},{"title":"Private nonprofit

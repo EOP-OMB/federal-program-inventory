@@ -1,8 +1,10 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":7,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":45,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":45,"total_obs":1803537659.0},{"title":"Department
+  of State","total_num_programs":7,"total_obs":664242025.21},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":487894909.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":183550949.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":305000.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":39},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":37},{"title":"Federally

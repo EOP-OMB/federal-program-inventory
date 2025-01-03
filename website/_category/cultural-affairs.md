@@ -1,13 +1,14 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":8,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":9,"total_obs":0.0},{"title":"National
-  Endowment for the Arts","total_num_programs":3,"total_obs":0.0},{"title":"Library
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":8,"total_obs":240987000.0},{"title":"Department
+  of State","total_num_programs":11,"total_obs":209853987.0},{"title":"National Endowment
+  for the Arts","total_num_programs":3,"total_obs":147694388.0},{"title":"National
+  Endowment for the Humanities","total_num_programs":9,"total_obs":134777355.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":36500000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of the Interior","total_num_programs":5,"total_obs":4531568.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library
   of Congress","total_num_programs":4,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":33},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":32},{"title":"State

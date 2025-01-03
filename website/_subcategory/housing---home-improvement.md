@@ -1,9 +1,10 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":23,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":5,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":3,"total_obs":64099895726.0},{"title":"Department
+  of Agriculture","total_num_programs":5,"total_obs":31451383617.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":23,"total_obs":26707312520.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":3187783.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":1053332.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":15},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

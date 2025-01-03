@@ -1,11 +1,11 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":11,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":11,"total_obs":2786405418.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":2048600000.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":457000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":96382725.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":4955371.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":10},{"title":"State","total_num_programs":10},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":8},{"title":"Private nonprofit institution/organization

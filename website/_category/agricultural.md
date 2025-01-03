@@ -1,17 +1,19 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":19,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":6,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":246,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
-  Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":246,"total_obs":50689666899.0},{"title":"Department
+  of Defense","total_num_programs":8,"total_obs":373986273.95},{"title":"Department
+  of the Interior","total_num_programs":19,"total_obs":243728230.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":151031867.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":131640116.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":27815800.0},{"title":"Agency
+  for International Development","total_num_programs":1,"total_obs":26300000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":1835621.0},{"title":"Federal Financial
+  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":997489.0},{"title":"Department
+  of State","total_num_programs":6,"total_obs":450000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":140},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and

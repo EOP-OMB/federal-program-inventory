@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":88,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Transportation","total_num_programs":88,"total_obs":126821479806.59},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":875343938.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":745499751.67},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":228151000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":153927000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":103000000.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":89451494.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
   Development","total_num_programs":1,"total_obs":0.0}]'

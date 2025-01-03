@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Environmental Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Housing and Urban Development","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":11,"total_obs":3814765128.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":370906000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":280000000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":6},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and

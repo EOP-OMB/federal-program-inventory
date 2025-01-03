@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":4,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":2,"total_obs":1027957572616.0},{"title":"Department
+  of Health and Human Services","total_num_programs":11,"total_obs":863154380282.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":7189800000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":398000000.0},{"title":"Department of
+  Agriculture","total_num_programs":1,"total_obs":332000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":4,"total_obs":192699998.0},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":25000000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":14479633.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":6734168.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":14},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"State

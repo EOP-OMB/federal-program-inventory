@@ -1,11 +1,11 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":4,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":2,"total_obs":10864925104.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":303422017.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"National
   Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

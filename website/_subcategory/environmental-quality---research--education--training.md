@@ -1,15 +1,18 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":55,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":4,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":9,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Defense","total_num_programs":3,"total_obs":2234100000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":55,"total_obs":1325127291.0},{"title":"Department
+  of Commerce","total_num_programs":11,"total_obs":552205716.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":440651079.0},{"title":"Department
+  of Agriculture","total_num_programs":9,"total_obs":343580260.0},{"title":"Gulf Coast
+  Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":91374127.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":71601368.109},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":45598000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Energy","total_num_programs":4,"total_obs":13822873.0},{"title":"Department of
+  the Interior","total_num_programs":5,"total_obs":10714360.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":72},{"title":"Private nonprofit

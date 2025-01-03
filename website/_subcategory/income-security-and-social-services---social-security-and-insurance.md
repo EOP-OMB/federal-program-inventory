@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":4,"total_obs":0.0},{"title":"Railroad
-  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":4,"total_obs":1266926284730.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":394452000000.0},{"title":"Railroad
+  Retirement Board","total_num_programs":1,"total_obs":13773000000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":3564209068.0},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":335965093.0},{"title":"Department of
+  Justice","total_num_programs":1,"total_obs":187823416.0},{"title":"Corporation for
+  National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":11},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and

@@ -1,14 +1,16 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Gulf
-  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":51,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":3,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Defense","total_num_programs":1,"total_obs":2100000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":51,"total_obs":1421321124.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":218954142.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":71601368.109},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
+  of Energy","total_num_programs":3,"total_obs":15558244.0},{"title":"Department of
+  Agriculture","total_num_programs":4,"total_obs":9085000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":49},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":39},{"title":"Private nonprofit institution/organization

@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":6,"total_obs":2495200238.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":1400283290.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":170168508.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":7406403.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":10},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

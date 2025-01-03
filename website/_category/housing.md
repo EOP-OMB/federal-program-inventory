@@ -1,16 +1,19 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":78,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":78,"total_obs":81955521021.81},{"title":"Department
+  of Veterans Affairs","total_num_programs":5,"total_obs":65283228350.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":34777810492.0},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":5610000000.0},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":323738275.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":90000000.0},{"title":"Department of
+  Justice","total_num_programs":1,"total_obs":35645932.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":21500000.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":3187783.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":1053332.0},{"title":"Denali
+  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":49},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education

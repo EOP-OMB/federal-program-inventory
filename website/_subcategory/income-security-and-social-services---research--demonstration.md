@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":10,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":10,"total_obs":117021504.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":15990000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":10055931.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":12},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Federally

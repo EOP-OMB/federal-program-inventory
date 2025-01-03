@@ -1,10 +1,11 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":14,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":14,"total_obs":596354665.0},{"title":"Department
+  of Justice","total_num_programs":5,"total_obs":78883417.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":75407013.59},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":4000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":16},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":12},{"title":"Private

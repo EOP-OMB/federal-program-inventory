@@ -1,15 +1,16 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Interior","total_num_programs":4,"total_obs":658761236.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":440817446.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":45000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":12152774.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":10872674.0},{"title":"Department of
+  Agriculture","total_num_programs":1,"total_obs":2000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":15},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

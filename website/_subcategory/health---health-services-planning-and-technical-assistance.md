@@ -1,15 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":88,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":88,"total_obs":17872437677.89},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":919700000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Department
+  of Justice","total_num_programs":5,"total_obs":78026807.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":52500000.0},{"title":"Department
+  of Labor","total_num_programs":3,"total_obs":47296506.0},{"title":"Department of
+  Agriculture","total_num_programs":3,"total_obs":13732650.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":4985484.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":65},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":63},{"title":"Private

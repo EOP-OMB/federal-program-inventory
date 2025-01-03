@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":16,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":30,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Small Business Administration","total_num_programs":1,"total_obs":123782944526.0},{"title":"Department
+  of Homeland Security","total_num_programs":16,"total_obs":39773432362.0},{"title":"Department
+  of Agriculture","total_num_programs":30,"total_obs":9688185846.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":4260111837.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":2115177776.0},{"title":"Department
+  of the Treasury","total_num_programs":4,"total_obs":2091770251.67},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":1557112000.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":638693822.0},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":273639168.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":53369096.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":24078026.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":7755272.0},{"title":"National Credit
+  Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
   and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":34},{"title":"Individual/Family","total_num_programs":29},{"title":"Local

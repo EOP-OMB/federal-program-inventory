@@ -1,21 +1,23 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":4,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Millennium
-  Challenge Corporation","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export - Import Bank
-  of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":9,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":9,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":8,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":17,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":17,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta
-  Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":31698162015.0},{"title":"Small
+  Business Administration","total_num_programs":4,"total_obs":9017308709.0},{"title":"Department
+  of the Treasury","total_num_programs":9,"total_obs":8845651256.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":5389369096.0},{"title":"Department
+  of Agriculture","total_num_programs":17,"total_obs":2556539218.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":2048600000.0},{"title":"Department
+  of Commerce","total_num_programs":17,"total_obs":1044187613.0},{"title":"Department
+  of the Interior","total_num_programs":9,"total_obs":907454508.0},{"title":"Department
+  of Defense","total_num_programs":8,"total_obs":352155233.0},{"title":"Department
+  of Health and Human Services","total_num_programs":6,"total_obs":134333112.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":1,"total_obs":90448634.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Millennium
+  Challenge Corporation","total_num_programs":1,"total_obs":13938358.0},{"title":"Department
+  of State","total_num_programs":11,"total_obs":12371174.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":5825000.0},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":52},{"title":"Public

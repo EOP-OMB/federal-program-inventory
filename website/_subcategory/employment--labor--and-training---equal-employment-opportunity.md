@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Equal
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":228644358.0},{"title":"Department of
+  the Interior","total_num_programs":1,"total_obs":3187783.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Equal
   Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":6},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":5},{"title":"Quasi-public

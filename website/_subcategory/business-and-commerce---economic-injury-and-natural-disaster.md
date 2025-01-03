@@ -1,16 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":5,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":7,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Small Business Administration","total_num_programs":5,"total_obs":130610573537.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":21342089895.0},{"title":"Department
+  of the Treasury","total_num_programs":4,"total_obs":2091770251.67},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":953452048.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":117500000.0},{"title":"Gulf Coast
+  Ecosystem Restoration Council","total_num_programs":1,"total_obs":67954673.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":12000000.0},{"title":"Department
+  of Defense","total_num_programs":4,"total_obs":10664710.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":8403924.0},{"title":"Department of
+  Transportation","total_num_programs":1,"total_obs":100000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":20},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":17},{"title":"State (includes

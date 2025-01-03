@@ -1,6 +1,7 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Homeland Security","total_num_programs":1,"total_obs":5330000000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":1338557559.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":5},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":5},{"title":"Federally Recognized lndian Tribal

@@ -1,15 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":168615627745.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":2115177776.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":1986369096.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":900600000.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":637293822.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":367312887.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":304649777.0},{"title":"Department
+  of Justice","total_num_programs":2,"total_obs":29416268.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":24786537.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":24078026.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":18},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":17},{"title":"Local (includes

@@ -1,8 +1,9 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Labor","total_num_programs":4,"total_obs":624070917.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":75427164.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":48785148.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":9},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":9},{"title":"State (includes District of Columbia,

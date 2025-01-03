@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":8,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":9,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":2,"total_obs":3931717211.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":2100000000.0},{"title":"Department
+  of Agriculture","total_num_programs":9,"total_obs":1307561990.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":695290000.0},{"title":"Department
+  of Energy","total_num_programs":8,"total_obs":661726274.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":637550025.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":92000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":8759626.109},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":17},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

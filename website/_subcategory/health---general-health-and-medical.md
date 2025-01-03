@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of State","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":109,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":109,"total_obs":1835487430656.89},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":2070311507.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":1762366084.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":919700000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":41062053.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":36851973.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":2468750.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":77},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":64},{"title":"State

@@ -1,13 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":46,"total_obs":0.0},{"title":"Department of
-  Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":46,"total_obs":8389074901.89},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":753800000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":52500000.0},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":30445198.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":4000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":39},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":30},{"title":"State

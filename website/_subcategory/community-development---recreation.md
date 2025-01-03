@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"General Services Administration","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":9,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":2,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":6,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":6,"total_obs":2582607924.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":1986369096.0},{"title":"Department
+  of the Interior","total_num_programs":9,"total_obs":920644880.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":176725390.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":170168508.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":115119856.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":73593308.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":31000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":17869684.91},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":7406403.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"General
+  Services Administration","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
+  Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":18},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

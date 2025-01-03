@@ -1,17 +1,17 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3959600000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":12,"total_obs":1236626516.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":208812480.01},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":1,"total_obs":27899000.0},{"title":"Agency
+  for International Development","total_num_programs":1,"total_obs":27122000.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":26264317.59},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":13576938.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":9153377.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":26},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":24},{"title":"Other

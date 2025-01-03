@@ -1,14 +1,16 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":2,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Interior","total_num_programs":3,"total_obs":640839301.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":440817446.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":227824094.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":100000000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":91374127.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":30980177.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":17359022.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":10872674.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":13},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":12},{"title":"Other

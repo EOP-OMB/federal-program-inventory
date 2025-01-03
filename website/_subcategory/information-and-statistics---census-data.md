@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":42929453.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":5373935.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":2},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":2},{"title":"U.S.

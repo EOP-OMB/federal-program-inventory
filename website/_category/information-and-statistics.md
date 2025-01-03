@@ -1,19 +1,22 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":4,"total_obs":0.0},{"title":"Southeast
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":10896365777.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Agriculture","total_num_programs":13,"total_obs":1098557735.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":866281272.0},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":624070917.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":125900008.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":79845509.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
+  of Justice","total_num_programs":4,"total_obs":42929453.0},{"title":"United States
+  Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":450000.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
   Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":13,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":24},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"Local

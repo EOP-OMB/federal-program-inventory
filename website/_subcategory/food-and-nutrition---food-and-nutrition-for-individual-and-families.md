@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of the
-  Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":29,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":29,"total_obs":159521730964.36},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":770329275.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":280000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":23430186.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":18},{"title":"Federally Recognized
   lndian Tribal Governments","total_num_programs":17},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":15},{"title":"Local

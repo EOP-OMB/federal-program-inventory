@@ -1,8 +1,9 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":23,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":23,"total_obs":26078221339.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":812426624.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":293293077.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":90780670.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":16},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

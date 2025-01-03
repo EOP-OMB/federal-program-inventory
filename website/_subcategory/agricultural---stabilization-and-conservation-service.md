@@ -1,14 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":7,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":29,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":29,"total_obs":24967790568.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":242873523.95},{"title":"Department
+  of the Interior","total_num_programs":7,"total_obs":52163633.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":27815800.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":22},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":20},{"title":"Private

@@ -1,7 +1,8 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":12,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":862268825571.0},{"title":"Department
+  of Agriculture","total_num_programs":12,"total_obs":42807161914.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":11},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Private

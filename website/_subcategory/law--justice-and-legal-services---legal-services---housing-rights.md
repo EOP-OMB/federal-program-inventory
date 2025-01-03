@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"total_obs":812426624.0},{"title":"Department
+  of Justice","total_num_programs":7,"total_obs":132268166.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":5,"total_obs":119293584.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":22376854.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":5450000.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":13},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":11},{"title":"Private

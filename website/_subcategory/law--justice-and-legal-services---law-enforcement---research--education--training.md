@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Executive Office of the President","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":18,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":66,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":66,"total_obs":2133150161.0},{"title":"Department
+  of State","total_num_programs":18,"total_obs":759269838.21},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":386034317.59},{"title":"Department
+  of Homeland Security","total_num_programs":5,"total_obs":342000000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Executive
+  Office of the President","total_num_programs":5,"total_obs":17500000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":58},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":56},{"title":"State

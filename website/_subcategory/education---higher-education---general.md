@@ -1,28 +1,32 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Office
-  of the Director Of National Intelligence","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":2,"total_obs":0.0},{"title":"National Endowment
-  for the Humanities","total_num_programs":2,"total_obs":0.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":6,"total_obs":0.0},{"title":"Morris
-  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":3,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":22,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":2,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":3,"total_obs":0.0},{"title":"Department of Education","total_num_programs":35,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":15,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":16,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Barry
-  Goldwater Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Education","total_num_programs":35,"total_obs":152593864970.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":6,"total_obs":9821838378.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"National
+  Science Foundation","total_num_programs":2,"total_obs":2389789923.0},{"title":"Department
+  of Commerce","total_num_programs":8,"total_obs":760858253.0},{"title":"Department
+  of Defense","total_num_programs":15,"total_obs":690442871.0},{"title":"Department
+  of Agriculture","total_num_programs":16,"total_obs":458753914.0},{"title":"Department
+  of State","total_num_programs":22,"total_obs":395868271.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":6,"total_obs":334714194.75},{"title":"Department
+  of Health and Human Services","total_num_programs":7,"total_obs":168149361.0},{"title":"Department
+  of Transportation","total_num_programs":6,"total_obs":143001561.0},{"title":"Department
+  of Energy","total_num_programs":3,"total_obs":39571931.0},{"title":"Agency for International
+  Development","total_num_programs":2,"total_obs":34562000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":32379000.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":1,"total_obs":27899000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":9876938.0},{"title":"National
+  Endowment for the Humanities","total_num_programs":2,"total_obs":8115350.0},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":6800000.0},{"title":"Office
+  of the Director Of National Intelligence","total_num_programs":1,"total_obs":3600000.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":3597001.0},{"title":"Barry Goldwater
+  Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":2600000.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":1250000.0},{"title":"Morris
+  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":3,"total_obs":140792.0},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":104},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and

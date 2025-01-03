@@ -1,14 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":753800000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":440817446.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":234903653.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":25581871.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":10872674.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":13},{"title":"Public

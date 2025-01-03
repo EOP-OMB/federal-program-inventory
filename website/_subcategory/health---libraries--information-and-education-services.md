@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":4,"total_obs":0.0},{"title":"Southeast
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":23,"total_obs":11843842204.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":335396705.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":62509000.0},{"title":"Corporation for
+  National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":23,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":27},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"State

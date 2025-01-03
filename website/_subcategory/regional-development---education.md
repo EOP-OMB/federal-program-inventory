@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3809000000.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":637250025.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":463194300.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":209000000.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":7,"total_obs":92069266.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":16000000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":10997453.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":10872674.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":19},{"title":"Local (includes

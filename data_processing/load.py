@@ -159,7 +159,7 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
                 'other_program': []
             }
         
-        if row['program_type'] == 'assistance listing':
+        if row['program_type'] == 'assistance_listing':
             agency_programs[agency_name]['regular'].append(row['program_id'])
         else:
             agency_programs[agency_name]['other_program'].append(row['program_id'])

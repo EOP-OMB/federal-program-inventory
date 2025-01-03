@@ -1,16 +1,18 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":2,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":1839000000.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":207116000.0},{"title":"Department
+  of Commerce","total_num_programs":11,"total_obs":195912638.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Small Business
+  Administration","total_num_programs":2,"total_obs":22282094.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Department of
+  Agriculture","total_num_programs":3,"total_obs":7500000.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":5000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":4690000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":978824.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":929269.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":100000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":16},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":13},{"title":"Public

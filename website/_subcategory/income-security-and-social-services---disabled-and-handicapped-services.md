@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":12,"total_obs":873309201909.0},{"title":"Social
+  Security Administration","total_num_programs":3,"total_obs":299750838014.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":794538142.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":373004000.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":294474718.0},{"title":"Department of
+  Labor","total_num_programs":2,"total_obs":259786000.0},{"title":"Department of the
+  Treasury","total_num_programs":2,"total_obs":55445198.0},{"title":"Corporation for
+  National and Community Service","total_num_programs":2,"total_obs":44742645.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":11},{"title":"Individual/Family","total_num_programs":9},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education

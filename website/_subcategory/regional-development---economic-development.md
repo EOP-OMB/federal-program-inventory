@@ -1,18 +1,21 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":6,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":8,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":9872720729.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":9014210000.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":1898631666.0},{"title":"Department
+  of the Interior","total_num_programs":6,"total_obs":852941525.0},{"title":"Department
+  of Commerce","total_num_programs":11,"total_obs":718755426.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":463194300.0},{"title":"Department
+  of State","total_num_programs":8,"total_obs":310347392.0},{"title":"Department of
+  Transportation","total_num_programs":2,"total_obs":227824094.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":61013453.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":23184022.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":31},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

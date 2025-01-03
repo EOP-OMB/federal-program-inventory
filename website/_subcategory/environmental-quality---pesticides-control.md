@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Gulf
-  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":42,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Defense","total_num_programs":3,"total_obs":2106504781.0},{"title":"Environmental
+  Protection Agency","total_num_programs":42,"total_obs":1056548342.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":390431376.0},{"title":"Gulf Coast
+  Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":71601368.109},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":13722623.0},{"title":"Department of
+  the Interior","total_num_programs":3,"total_obs":4364005.5},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":41},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":34},{"title":"Private nonprofit institution/organization

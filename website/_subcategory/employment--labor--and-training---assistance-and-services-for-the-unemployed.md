@@ -1,16 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"Railroad
-  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
-  Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Labor","total_num_programs":13,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Labor","total_num_programs":13,"total_obs":47413291358.0},{"title":"Railroad
+  Retirement Board","total_num_programs":1,"total_obs":13773000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":774850491.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Social
+  Security Administration","total_num_programs":2,"total_obs":58807601.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":3,"total_obs":26153697.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":4255946.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":17},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education

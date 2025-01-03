@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"U.S. Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":15,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
-  Development","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Agency for International Development","total_num_programs":3,"total_obs":29271000000.0},{"title":"Department
+  of State","total_num_programs":15,"total_obs":451396252.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":41422500.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":25715002.0},{"title":"Small Business
+  Administration","total_num_programs":1,"total_obs":24320527.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":6715623.0},{"title":"U.S. Agency
+  for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":21},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":18},{"title":"Non-Government

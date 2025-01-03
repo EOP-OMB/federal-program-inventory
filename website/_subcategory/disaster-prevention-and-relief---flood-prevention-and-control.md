@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Homeland Security","total_num_programs":5,"total_obs":6269786537.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":4016305792.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":2252996266.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":128151000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":68911226.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":53369096.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":7542887.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":43797.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Health
+  and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":20},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":19},{"title":"Private

@@ -1,18 +1,22 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":2,"total_obs":0.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":6,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":3,"total_obs":0.0},{"title":"Department of Education","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":4,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":11,"total_obs":3701077796.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Energy","total_num_programs":3,"total_obs":1527097841.0},{"title":"National Science
+  Foundation","total_num_programs":2,"total_obs":1427810066.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":750478804.0},{"title":"Department
+  of Education","total_num_programs":12,"total_obs":682073356.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":6,"total_obs":334714194.75},{"title":"Department
+  of Defense","total_num_programs":4,"total_obs":153073092.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":35382974.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":1,"total_obs":27899000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":21163065.0},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":13099416.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":9876938.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":52},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":51},{"title":"State

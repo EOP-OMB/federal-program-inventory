@@ -1,18 +1,21 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":26,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Export - Import Bank
-  of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Small Business Administration","total_num_programs":26,"total_obs":161336014763.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":5330000000.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":2143245396.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":2039866309.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":1933000000.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":953452048.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":172215000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":33000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":22076015.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":10872674.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":5825000.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":978824.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":100000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":39},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

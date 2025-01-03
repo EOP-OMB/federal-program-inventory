@@ -1,14 +1,16 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":7,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":9,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":9,"total_obs":47367940323.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":10227720729.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":10,"total_obs":5902182533.0},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":3561453269.0},{"title":"Department
+  of the Interior","total_num_programs":7,"total_obs":662999053.0},{"title":"Department
+  of Commerce","total_num_programs":5,"total_obs":234971055.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":191165961.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":32036403.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":28968269.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":23},{"title":"Federally

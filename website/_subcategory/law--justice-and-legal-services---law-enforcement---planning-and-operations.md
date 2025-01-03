@@ -1,10 +1,11 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":63,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Justice","total_num_programs":63,"total_obs":3728429294.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of State","total_num_programs":11,"total_obs":666345433.21},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":487894909.0},{"title":"Department
+  of Homeland Security","total_num_programs":5,"total_obs":443525000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":306641000.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":17634420.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":47},{"title":"Federally

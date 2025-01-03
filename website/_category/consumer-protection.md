@@ -1,15 +1,16 @@
 ---
-agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
-  Subcommittee","total_num_programs":3,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Consumer
-  Product Safety Commission","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":3,"total_obs":5273500000.0},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":555280095.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":444443669.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":97252462.0},{"title":"Department
+  of Justice","total_num_programs":3,"total_obs":41174834.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":11666062.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":8295000.0},{"title":"Consumer
+  Product Safety Commission","total_num_programs":2,"total_obs":2000000.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":3,"total_obs":1926758.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":1250000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":549996.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":11},{"title":"State","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Private

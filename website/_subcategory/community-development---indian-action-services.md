@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":11,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":3,"total_obs":10998800000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":5,"total_obs":1996369096.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":1405283290.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":170168508.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":153651148.0},{"title":"Department
+  of the Interior","total_num_programs":11,"total_obs":140410314.0},{"title":"Department
+  of Justice","total_num_programs":9,"total_obs":112322265.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":7406403.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":27},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":22},{"title":"Local (includes State-designated

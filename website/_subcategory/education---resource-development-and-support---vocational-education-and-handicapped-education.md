@@ -1,13 +1,14 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":20,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Education","total_num_programs":20,"total_obs":4045612438.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":209000000.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":1,"total_obs":27899000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":13576938.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":4255946.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"State

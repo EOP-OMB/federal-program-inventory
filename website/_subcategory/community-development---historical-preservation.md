@@ -1,15 +1,16 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":5,"total_obs":1986369096.0},{"title":"Department
+  of the Interior","total_num_programs":13,"total_obs":757851356.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":265749000.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":170168508.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":3,"total_obs":35402000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":7406403.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":603408.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
   Endowment for the Arts","total_num_programs":1,"total_obs":0.0},{"title":"National
   Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":13,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"Local

@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":34,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":34,"total_obs":45513427530.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":153927000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":5963266.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":3693000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
+  Development","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":26},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":22},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":17},{"title":"Public

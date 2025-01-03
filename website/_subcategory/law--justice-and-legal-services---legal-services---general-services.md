@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":8,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":29,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":2,"total_obs":1945377973.0},{"title":"Department
+  of Justice","total_num_programs":29,"total_obs":1810662968.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":44214974.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of State","total_num_programs":8,"total_obs":17918750.0},{"title":"Department of
+  the Treasury","total_num_programs":1,"total_obs":13000000.0},{"title":"Department
+  of the Interior","total_num_programs":5,"total_obs":7302717.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":3992467.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":28},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":26},{"title":"Private

@@ -1,22 +1,27 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":4,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":15,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":18,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":13,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":6,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":19,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":4,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":4,"total_obs":9964094856.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":9014210000.0},{"title":"Department
+  of Transportation","total_num_programs":18,"total_obs":5957156375.0},{"title":"Federal
+  Communications Commission","total_num_programs":4,"total_obs":4562800000.0},{"title":"Department
+  of Agriculture","total_num_programs":19,"total_obs":2105972956.0},{"title":"Department
+  of the Interior","total_num_programs":15,"total_obs":884776180.0},{"title":"Department
+  of Commerce","total_num_programs":11,"total_obs":718755426.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":463194300.0},{"title":"Department
+  of State","total_num_programs":13,"total_obs":317797392.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":209000000.0},{"title":"Department of
+  Defense","total_num_programs":6,"total_obs":191100582.0},{"title":"Environmental
+  Protection Agency","total_num_programs":12,"total_obs":132684787.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":10,"total_obs":106548899.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":54000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":37734645.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":12000000.0},{"title":"Denali
+  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":4,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":69},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":68},{"title":"Private

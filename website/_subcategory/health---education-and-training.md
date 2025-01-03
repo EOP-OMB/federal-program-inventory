@@ -1,16 +1,19 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":3,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":95,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":5,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":3,"total_obs":142334400954.0},{"title":"Department
+  of Health and Human Services","total_num_programs":95,"total_obs":7834117602.03},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":391100000.0},{"title":"Department
+  of Agriculture","total_num_programs":5,"total_obs":305829145.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":36851973.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":12287678.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":1,"total_obs":4985484.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":3700000.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":3699712.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":2000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":91},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":77},{"title":"State

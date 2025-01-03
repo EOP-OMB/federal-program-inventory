@@ -1,19 +1,23 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":9,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":4,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":8,"total_obs":2396476301.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":2125963732.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":788718991.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":638250025.0},{"title":"Department
+  of Commerce","total_num_programs":9,"total_obs":524627723.0},{"title":"Department
+  of State","total_num_programs":11,"total_obs":409207035.21},{"title":"Department
+  of Defense","total_num_programs":9,"total_obs":242891528.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":216645015.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":176725390.0},{"title":"Environmental
+  Protection Agency","total_num_programs":10,"total_obs":144375938.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":4,"total_obs":55666890.0},{"title":"Agency
+  for International Development","total_num_programs":2,"total_obs":26900000.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":21500000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":3401200.0},{"title":"National Credit
+  Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":45},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

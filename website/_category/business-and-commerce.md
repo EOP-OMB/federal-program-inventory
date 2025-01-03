@@ -1,27 +1,31 @@
 ---
-agencies: '[{"title":"U.S. Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":29,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Millennium
-  Challenge Corporation","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Export
-  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":14,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":11,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":13,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":22,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":51,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":39,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Small Business Administration","total_num_programs":29,"total_obs":168142893534.0},{"title":"Department
+  of Transportation","total_num_programs":13,"total_obs":32530974013.0},{"title":"Agency
+  for International Development","total_num_programs":3,"total_obs":29271000000.0},{"title":"Department
+  of Agriculture","total_num_programs":39,"total_obs":22611534783.0},{"title":"Department
+  of the Treasury","total_num_programs":14,"total_obs":11625054050.67},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":5392000000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":5389369096.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":3887600000.0},{"title":"Department
+  of Commerce","total_num_programs":51,"total_obs":1601362756.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":953452048.0},{"title":"Department
+  of the Interior","total_num_programs":11,"total_obs":908704508.0},{"title":"Department
+  of Labor","total_num_programs":5,"total_obs":730378917.0},{"title":"Department of
+  Defense","total_num_programs":10,"total_obs":476255233.0},{"title":"Department of
+  State","total_num_programs":22,"total_obs":452894752.0},{"title":"Gulf Coast Ecosystem
+  Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of Health and Human Services","total_num_programs":7,"total_obs":134333112.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Millennium
+  Challenge Corporation","total_num_programs":1,"total_obs":13938358.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":6715623.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":5825000.0},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":929269.0},{"title":"U.S.
+  Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":3,"total_obs":0.0}]'
+  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":96},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

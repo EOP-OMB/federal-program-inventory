@@ -1,17 +1,19 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":5,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":5,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":5,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":5,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":5,"total_obs":10932297018.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":7684200000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":5,"total_obs":266081290.35},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":5,"total_obs":233484000.0},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":225711132.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":20000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":9876938.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":9300000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":101005.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Library of
+  Congress","total_num_programs":5,"total_obs":0.0},{"title":"Japan-U.S. Friendship
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":34},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":33},{"title":"State

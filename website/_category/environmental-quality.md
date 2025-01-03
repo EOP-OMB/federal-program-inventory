@@ -1,18 +1,20 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":111,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":15,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":6,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":14,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":21,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":111,"total_obs":6126167535.0},{"title":"Department
+  of Agriculture","total_num_programs":21,"total_obs":2715910616.0},{"title":"Department
+  of Defense","total_num_programs":5,"total_obs":2240604781.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":1933000000.0},{"title":"Department
+  of the Interior","total_num_programs":15,"total_obs":921759527.5},{"title":"Department
+  of Commerce","total_num_programs":14,"total_obs":675736522.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":440651079.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":91374127.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":71601368.109},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":46048000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":17200000.0},{"title":"Department
+  of Energy","total_num_programs":6,"total_obs":15658494.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":111},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":109},{"title":"Private nonprofit institution/organization

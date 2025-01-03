@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
-  Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Consumer
-  Product Safety Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":3,"total_obs":5273500000.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":305970780.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":97252462.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":8295000.0},{"title":"Consumer
+  Product Safety Commission","total_num_programs":1,"total_obs":2000000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":1250000.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":997489.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":549996.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":6},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

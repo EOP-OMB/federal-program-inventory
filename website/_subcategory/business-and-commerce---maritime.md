@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":7,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":10,"total_obs":847811998.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":687632543.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":637250025.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":106308000.0},{"title":"Department of
+  Homeland Security","total_num_programs":1,"total_obs":50000000.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":30304127.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Department of
+  Agriculture","total_num_programs":1,"total_obs":827725.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":14},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":12},{"title":"Public

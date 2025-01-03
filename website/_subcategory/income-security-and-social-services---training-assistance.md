@@ -1,13 +1,14 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":17848529886.0},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":9903165927.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":212401200.0},{"title":"Social Security
+  Administration","total_num_programs":2,"total_obs":58807601.0},{"title":"Department
+  of Education","total_num_programs":3,"total_obs":22071650.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":2000000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":238036.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":13},{"title":"State","total_num_programs":12},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":10},{"title":"Private

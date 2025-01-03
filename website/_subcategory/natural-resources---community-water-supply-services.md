@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":28,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":10,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":9,"total_obs":6068453598.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":5326000000.0},{"title":"Department
+  of Agriculture","total_num_programs":10,"total_obs":2921208241.0},{"title":"Department
+  of the Interior","total_num_programs":28,"total_obs":974325313.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":228151000.0},{"title":"Gulf Coast
+  Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":91400000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":24500000.0},{"title":"Department of
+  State","total_num_programs":3,"total_obs":8759626.109},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":31},{"title":"State","total_num_programs":26},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":25},{"title":"Public

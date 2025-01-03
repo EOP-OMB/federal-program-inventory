@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Equal Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Justice","total_num_programs":4,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":6,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":6,"total_obs":10930072353.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":267787000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":52500000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Department
+  of Justice","total_num_programs":4,"total_obs":14191208.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":3187783.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":9},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":9},{"title":"State","total_num_programs":8},{"title":"Local

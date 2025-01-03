@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":74,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":74,"total_obs":7794470204.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":734700000.0},{"title":"Social
+  Security Administration","total_num_programs":2,"total_obs":58807601.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":20340341.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":4277602.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":53},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":53},{"title":"Private

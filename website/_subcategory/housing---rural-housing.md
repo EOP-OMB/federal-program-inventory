@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":11,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":11,"total_obs":33281496532.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":1369086046.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":12},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and

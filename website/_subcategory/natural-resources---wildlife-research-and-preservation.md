@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Gulf
-  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":54,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":4,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":14,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Defense","total_num_programs":4,"total_obs":2342873523.95},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":710421665.0},{"title":"Department
+  of the Interior","total_num_programs":54,"total_obs":695552933.0},{"title":"Department
+  of Commerce","total_num_programs":14,"total_obs":585654436.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":276751867.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":24500000.0},{"title":"Department of
+  State","total_num_programs":3,"total_obs":8759626.109},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":57},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":54},{"title":"Private

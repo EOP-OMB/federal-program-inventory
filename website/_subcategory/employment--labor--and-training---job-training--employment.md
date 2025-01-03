@@ -1,21 +1,24 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":9,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":25,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department of Education","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":7,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":142275593353.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":11943032236.0},{"title":"Department
+  of Labor","total_num_programs":25,"total_obs":5424200256.14},{"title":"Federal Communications
+  Commission","total_num_programs":2,"total_obs":3809000000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":1943000000.0},{"title":"Department
+  of Agriculture","total_num_programs":7,"total_obs":1564116346.0},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":850176033.0},{"title":"Department
+  of Education","total_num_programs":6,"total_obs":729774750.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":698117718.0},{"title":"Department
+  of the Interior","total_num_programs":9,"total_obs":671071353.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":210000000.0},{"title":"Department
+  of Commerce","total_num_programs":5,"total_obs":144151000.0},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":97626951.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":44676791.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":25100365.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":12331000.0},{"title":"Department of
+  Energy","total_num_programs":2,"total_obs":7106509.0},{"title":"Small Business Administration","total_num_programs":1,"total_obs":4464157.0},{"title":"Department
+  of Justice","total_num_programs":3,"total_obs":1000000.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":44},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":43},{"title":"Private

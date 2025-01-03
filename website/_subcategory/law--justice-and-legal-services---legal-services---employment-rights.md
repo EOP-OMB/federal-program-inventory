@@ -1,8 +1,9 @@
 ---
-agencies: '[{"title":"Equal Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":6,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":6,"total_obs":128918850.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":22376854.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":5450000.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":8},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":7},{"title":"Local (includes

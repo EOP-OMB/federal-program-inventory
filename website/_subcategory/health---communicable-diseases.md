@@ -1,12 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":53,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":53,"total_obs":7273746979.79},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2039866309.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":637250025.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":165900000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":83806786.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":74000000.0},{"title":"Department of
+  Agriculture","total_num_programs":3,"total_obs":10217120.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":50},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":39},{"title":"State

@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of the Interior","total_num_programs":3,"total_obs":637250025.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":463194300.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":6,"total_obs":14479633.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":10872674.0},{"title":"Department of
+  Defense","total_num_programs":1,"total_obs":5000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of State","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+  Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":14},{"title":"Public

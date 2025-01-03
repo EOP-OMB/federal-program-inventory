@@ -1,29 +1,35 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Transportation","total_num_programs":12,"total_obs":47464633631.0},{"title":"Department
+  of the Treasury","total_num_programs":13,"total_obs":20769649053.0},{"title":"Department
+  of Agriculture","total_num_programs":52,"total_obs":12266737801.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":10998800000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":17,"total_obs":6033412741.0},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":5683532958.0},{"title":"Department
+  of Defense","total_num_programs":18,"total_obs":2523000511.95},{"title":"Department
+  of Education","total_num_programs":4,"total_obs":1364122620.0},{"title":"Department
+  of Health and Human Services","total_num_programs":12,"total_obs":1321883632.0},{"title":"Department
+  of the Interior","total_num_programs":40,"total_obs":1235625962.0},{"title":"Department
+  of Commerce","total_num_programs":19,"total_obs":825692721.0},{"title":"Department
+  of State","total_num_programs":20,"total_obs":414279193.21},{"title":"Department
+  of Justice","total_num_programs":10,"total_obs":289047655.0},{"title":"Environmental
+  Protection Agency","total_num_programs":15,"total_obs":176859942.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":4,"total_obs":55666890.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":3,"total_obs":46837953.91},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":3,"total_obs":35402000.0},{"title":"Agency
+  for International Development","total_num_programs":2,"total_obs":26900000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":21017410.0},{"title":"General Services
+  Administration","total_num_programs":3,"total_obs":18282480.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":3401200.0},{"title":"National Credit
+  Union Administration","total_num_programs":1,"total_obs":2067163.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Denali
+  Commission","total_num_programs":3,"total_obs":20.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
   Endowment for the Arts","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
   Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"General
-  Services Administration","total_num_programs":3,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":15,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":13,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":40,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":3,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":20,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":10,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":17,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":18,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":19,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":52,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":3,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":4,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":2,"total_obs":0.0}]'
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":131},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education

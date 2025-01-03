@@ -1,22 +1,26 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":4,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":4,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Executive Office of
-  the President","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":14,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":9,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":12,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":335,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":6,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":16,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":335,"total_obs":1916534003959.88},{"title":"Social
+  Security Administration","total_num_programs":4,"total_obs":142350390954.0},{"title":"Department
+  of the Treasury","total_num_programs":6,"total_obs":11943032236.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":6,"total_obs":5192967779.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":14,"total_obs":4703718291.91},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":919700000.0},{"title":"Department
+  of Agriculture","total_num_programs":16,"total_obs":889240346.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":642205396.0},{"title":"Department
+  of Defense","total_num_programs":6,"total_obs":498305389.0},{"title":"Department
+  of Education","total_num_programs":4,"total_obs":400325712.0},{"title":"Department
+  of Labor","total_num_programs":6,"total_obs":236281506.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"Department
+  of Justice","total_num_programs":12,"total_obs":146797871.0},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":136515726.59},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":130151000.0},{"title":"Department
+  of State","total_num_programs":9,"total_obs":91447738.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":33407983.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":3,"total_obs":27076285.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Executive
+  Office of the President","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":259},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":237},{"title":"Private

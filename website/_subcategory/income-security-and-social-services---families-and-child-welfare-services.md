@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":32,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":32,"total_obs":45469028749.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":288787000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":15990000.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":14191208.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":4955371.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":4000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":24},{"title":"Federally Recognized
   lndian Tribal Governments","total_num_programs":23},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":17},{"title":"Private

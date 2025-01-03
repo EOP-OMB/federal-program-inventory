@@ -1,6 +1,6 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":5,"total_obs":114727642.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":5450000.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":6},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

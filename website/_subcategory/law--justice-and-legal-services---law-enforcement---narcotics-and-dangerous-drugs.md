@@ -1,8 +1,9 @@
 ---
-agencies: '[{"title":"Executive Office of the President","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":13,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":1,"total_obs":1500232431.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":661773275.21},{"title":"Department
+  of Justice","total_num_programs":13,"total_obs":370431614.0},{"title":"Executive
+  Office of the President","total_num_programs":1,"total_obs":264200000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":17440714.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":14},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education

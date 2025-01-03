@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":7,"total_obs":3076618236.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":584100000.0},{"title":"Department
+  of Justice","total_num_programs":5,"total_obs":172396073.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":126000000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":64053000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":25000000.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":4955371.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":14},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":9},{"title":"Private nonprofit institution/organization

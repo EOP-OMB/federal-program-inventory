@@ -1,21 +1,25 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":8,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":2,"total_obs":0.0},{"title":"Railroad
-  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Equal Employment Opportunity
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
-  Treasury","total_num_programs":9,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":23,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":7,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":25,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":82,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":7,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":82,"total_obs":1587352304168.0},{"title":"Social
+  Security Administration","total_num_programs":8,"total_obs":1267001380466.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":43246016382.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":23,"total_obs":15615389640.0},{"title":"Railroad
+  Retirement Board","total_num_programs":1,"total_obs":13773000000.0},{"title":"Department
+  of the Treasury","total_num_programs":9,"total_obs":12261325313.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":9822500000.0},{"title":"Department
+  of Homeland Security","total_num_programs":4,"total_obs":1386328776.61},{"title":"Department
+  of Housing and Urban Development","total_num_programs":5,"total_obs":1097804775.0},{"title":"Department
+  of Labor","total_num_programs":6,"total_obs":1052674293.0},{"title":"Department
+  of State","total_num_programs":7,"total_obs":841140445.0},{"title":"Department of
+  Education","total_num_programs":6,"total_obs":715013011.0},{"title":"Department
+  of Justice","total_num_programs":25,"total_obs":438451151.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":373004000.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":224997453.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":7,"total_obs":224385192.0},{"title":"Small
+  Business Administration","total_num_programs":2,"total_obs":12746251.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":11927575.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":2000000.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":87},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":87},{"title":"Private nonprofit institution/organization

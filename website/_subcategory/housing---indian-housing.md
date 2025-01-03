@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Environmental Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Housing and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":12,"total_obs":6791392804.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":3187783.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":11},{"title":"Native

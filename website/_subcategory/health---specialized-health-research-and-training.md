@@ -1,11 +1,13 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":60,"total_obs":24998583971.89},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":36851973.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":10217120.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":2000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":60,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":58},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":49},{"title":"State

@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Executive
-  Office of the President","total_num_programs":6,"total_obs":0.0},{"title":"Equal
-  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":8,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":22,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":122,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":122,"total_obs":5621837647.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":2236417258.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":2064671557.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":1806873431.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":812426624.0},{"title":"Department
+  of State","total_num_programs":22,"total_obs":769269838.21},{"title":"Department
+  of the Interior","total_num_programs":8,"total_obs":662187162.0},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":558374200.59},{"title":"Department
+  of Homeland Security","total_num_programs":8,"total_obs":444305000.0},{"title":"Executive
+  Office of the President","total_num_programs":6,"total_obs":281700000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":124100000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":22376854.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":3992467.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":98},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":92},{"title":"Public

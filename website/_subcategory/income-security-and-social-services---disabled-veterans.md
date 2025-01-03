@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":10,"total_obs":3235714174.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Small
+  Business Administration","total_num_programs":2,"total_obs":12746251.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":11887000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":10997453.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":298135.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":7},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":7},{"title":"Specialized group (e.g. health professionals,

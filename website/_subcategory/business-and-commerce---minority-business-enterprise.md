@@ -1,11 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":5,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of the
-  Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of State","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":11,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Small Business Administration","total_num_programs":5,"total_obs":3982600149.0},{"title":"Department
+  of Agriculture","total_num_programs":11,"total_obs":1886524468.0},{"title":"Department
+  of Commerce","total_num_programs":10,"total_obs":238518293.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":33000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":8403924.0},{"title":"Department of
+  the Interior","total_num_programs":3,"total_obs":2191025.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":21},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
