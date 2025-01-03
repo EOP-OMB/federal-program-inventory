@@ -5,21 +5,24 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.109
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow a deduction for personal expenditures.
-  In contrast, the Tax Code provides taxpayers a deduction for contributions to nonprofit
-  educational institutions that are similar to personal expenditures. Moreover, taxpayers
-  who donate capital assets to educational institutions can deduct the asset’s current
-  value without being taxed on any appreciation in value. An individual’s total charitable
-  contribution generally may not exceed 50 percent (60 percent for tax years 2018
-  through 2025) of adjusted gross income; a corporation’s total charitable contributions
-  generally may not exceed 10 percent of pre-tax income.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. Under current law, however, financial institutions that
+  own zone academy bonds receive a nonrefundable tax credit rather than interest.
+  The credit is included in gross income. Proceeds from zone academy bonds may only
+  be used to renovate, but not construct, qualifying schools and for certain other
+  school purposes. The total amount of zone academy bonds that may be issued was limited
+  to $1.4 billion in 2009 and 2010. As of March 2010, issuers of the unused authorization
+  of such bonds could opt to receive direct payment with the yield becoming fully
+  taxable. An additional $0.4 billion of these bonds with a tax credit was authorized
+  to be issued each year in 2011 through 2017.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":110000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0}]'
 outlays: null
 permalink: /program/TC.109.html
 popular_name: ''
@@ -28,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":7270000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":6230000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":9090000000.0}]'
-title: Deductibility of charitable contributions to educational institutions
+title: Credit for holders of zone academy bonds
 usaspending_url: null
 ---

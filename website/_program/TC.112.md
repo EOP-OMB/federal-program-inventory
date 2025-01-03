@@ -5,18 +5,22 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.112
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, should be included in taxable income. In contrast, the Tax
-  Code allows certain professionals who perform in underserved areas or specific fields,
-  and as a consequence have their student loans discharged, not to recognize such
-  discharge as income.
+objective: The baseline tax system would not allow a deduction for personal expenditures.
+  In contrast, the Tax Code provides taxpayers a deduction for contributions to nonprofit
+  educational institutions that are similar to personal expenditures. Moreover, taxpayers
+  who donate capital assets to educational institutions can deduct the asset’s current
+  value without being taxed on any appreciation in value. An individual’s total charitable
+  contribution generally may not exceed 50 percent (60 percent for tax years 2018
+  through 2025) of adjusted gross income; a corporation’s total charitable contributions
+  generally may not exceed 10 percent of pre-tax income.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":7270000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":6230000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":9090000000.0}]'
 outlays: null
 permalink: /program/TC.112.html
 popular_name: ''
@@ -25,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":80000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5910000000.0}]'
-title: Discharge of student loan indebtedness
+title: Deductibility of charitable contributions to educational institutions
 usaspending_url: null
 ---

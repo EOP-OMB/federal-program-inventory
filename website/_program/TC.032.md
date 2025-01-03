@@ -16,6 +16,7 @@ objective: The baseline tax system would not allow credits for particular activi
   returns from investment-like activities. In contrast, the Tax Code allows credits
   for alternative fuel vehicle refueling property.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":170000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":280000000.0}]'
 outlays: null
 permalink: /program/TC.032.html
 popular_name: ''
@@ -24,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":170000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":280000000.0}]'
 title: Tax credits for refueling property
 usaspending_url: null
 ---

@@ -5,16 +5,23 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Income Security
+- Tax Expenditures - Health
 cfda: TC.141
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, should be included in taxable income. However, workers compensation
-  is not subject to the income tax under current law.
+objective: The baseline tax system would not allow credits for particular activities
+  or targeted as specific groups. Under current law, however, self-employed individuals
+  are allowed a refundable credit equal for certain family or sick leave taken. In
+  general, the sick leave credit is equal to 100% of daily self-employment income
+  (equal to self-employment income divided by 260) during a period of qualified sick
+  leave, up to $511 per day for 10 days. The family leave credit is equal to two thirds
+  of daily self-employment income (but no greater than two thirds of $200) during
+  a period of qualified family leave for up to 10 weeks. Under current law, the credit
+  applies to leave taken prior to October 1, 2021.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":4490000000.0,"forgone_revenue":2790000000.0},{"x":"2023","outlays":130000000.0,"forgone_revenue":520000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.141.html
 popular_name: ''
@@ -23,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":9020000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":8870000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8780000000.0}]'
-title: Exclusion of workers' compensation benefits
+title: Credit for family and sick leave taken by self-employed individuals
 usaspending_url: null
 ---

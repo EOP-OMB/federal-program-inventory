@@ -17,6 +17,7 @@ objective: Under the baseline tax system, the United States taxes income earned 
   a deduction equal to 37.5 percent of “foreign-derived intangible income,” which
   is essentially
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":11900000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15950000000.0}]'
 outlays: null
 permalink: /program/TC.005.html
 popular_name: ''
@@ -25,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":11900000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15950000000.0}]'
 title: Deduction for foreign-derived intangible income derived from trade or business
   within the United States
 usaspending_url: null

@@ -11,21 +11,23 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities
-  or targeted at specific groups. In contrast, the Tax Code provides an EITC to low-income
-  workers at a maximum rate of 45 percent of income. In 2024, for a family with one
-  qualifying child, the credit is 34 percent of the first $12,390 of earned income.
-  The credit is 40 percent of the first $17,400 of income for a family with two qualifying
-  children, and it is 45 percent of the first $17,400 of income for a family with
-  three or more qualifying children. Low-income workers with no qualifying children
-  are eligible for a 7.65 percent credit on the first $8,260 of earned income. The
-  credit plateaus and then phases out with the greater of Adjusted Gross Income or
-  earnings at income levels and rates which depend upon how many qualifying children
-  are eligible and marital status. Earned income tax credits in excess of tax liabilities
-  are refundable to individuals. Beginning in 2018, the parameters of the EITC are
-  indexed by the chained CPI, which results in a smaller inflation adjustment than
-  previously.
+objective: 'Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income. In addition, investment
+  income would be taxed as earned. In contrast, employer-paid contributions (the value
+  of stock issued to the ESOP) are deductible by the employer as part of employee
+  compensation costs. They are not included in the employees’ gross income for tax
+  purposes, however, until they are paid out as benefits. In addition, the following
+  special income tax provisions for ESOPs are intended to increase ownership of corporations
+  by their employees: (1) annual employer contributions are subject to less restrictive
+  limitations than other qualified retirement plans; (2) ESOPs may borrow to purchase
+  employer stock, guaranteed by their agreement with the employer that the debt will
+  be serviced by the payment (deductible by firm) of a portion of wages (excludable
+  by the employees) to service the loan; (3) employees who sell appreciated company
+  stock to the ESOP may defer any taxes due until they withdraw benefits; (4) dividends
+  paid to ESOP-held stock are deductible by the employer; and (5) earnings are not
+  taxed as they accrue.'
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":210000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":280000000.0}]'
 outlays: null
 permalink: /program/TC.159.html
 popular_name: ''
@@ -34,7 +36,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":77290000000.0,"forgone_revenue":2410000000.0},{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0}]'
-title: Earned income tax credit
+title: Special Employee Stock Ownership Plan (ESOP) rules
 usaspending_url: null
 ---

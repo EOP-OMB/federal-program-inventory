@@ -11,14 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all income would generally be taxed under
-  the regular tax rate schedule. The baseline tax system would not allow preferentially
-  low (or zero) tax rates to apply to certain types or sources of income. In contrast,
-  the Tax Code allows an exclusion from a taxpayer’s taxable income for any discharge
-  of indebtedness of up to $750,000 ($375,000 in the case of a married individual
-  filing a separate return) from a qualified principal residence. The provision applies
-  to debt discharged after December 31, 2020, and before January 1, 2026.
+objective: Under a comprehensive economic income tax, the costs of acquiring a building
+  are capitalized and depreciated over time in accordance with the decline in the
+  property’s economic value due to wear and tear or obsolescence. This ensures that
+  the net income from the rental property is measured appropriately each year. Current
+  law allows depreciation that is accelerated relative to economic depreciation. However,
+  the depreciation provisions of the Tax Code are part of the reference tax law, and
+  thus do not give rise to tax expenditures under reference tax law. Under normal
+  tax baseline, in contrast, depreciation allowances reflect estimates of economic
+  depreciation.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":3490000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2440000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2300000000.0}]'
 outlays: null
 permalink: /program/TC.069.html
 popular_name: ''
@@ -27,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":380000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":150000000.0}]'
-title: Discharge of mortgage indebtedness
+title: Accelerated depreciation on rental housing (normal tax method)
 usaspending_url: null
 ---

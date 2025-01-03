@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":11,"total_obs":486820000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":12,"total_obs":494100000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,29 +457,31 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/health
-programs: '[{"cfda":"TC.127","permalink":"/program/TC.127","title":"Exclusion of employer
+programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of employer
   contributions for medical insurance premiums and medical care","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":362000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.128","permalink":"/program/TC.128","title":"Self-employed
-  medical insurance premiums","popular_name":null,"agency":"Department of the Treasury","total_obs":8200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.129","permalink":"/program/TC.129","title":"Medical
+  of the Treasury","total_obs":362000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.131","permalink":"/program/TC.131","title":"Self-employed
+  medical insurance premiums","popular_name":null,"agency":"Department of the Treasury","total_obs":8200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.132","permalink":"/program/TC.132","title":"Medical
   Savings Accounts / Health Savings Accounts","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":13000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.130","permalink":"/program/TC.130","title":"Deductibility
-  of medical expenses ","popular_name":null,"agency":"Department of the Treasury","total_obs":9910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.131","permalink":"/program/TC.131","title":"Exclusion
+  of the Treasury","total_obs":13000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
+  of medical expenses","popular_name":null,"agency":"Department of the Treasury","total_obs":9910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.134","permalink":"/program/TC.134","title":"Exclusion
   of interest on hospital construction bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":4040000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.132","permalink":"/program/TC.132","title":"Refundable
-  Premium Assistance Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":76310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Credit
-  for employee health insurance expenses of small business ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.134","permalink":"/program/TC.134","title":"Deductibility
+  of the Treasury","total_obs":4040000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
+  Premium Assistance Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":76310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Credit
+  for employee health insurance expenses of small business","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.137","permalink":"/program/TC.137","title":"Deductibility
   of charitable contributions to health institutions","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":10570000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Tax
-  credit for orphan drug research ","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":1970000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Special
-  Blue Cross/Blue Shield tax benefits ","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":320000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.137","permalink":"/program/TC.137","title":"Distributions
+  of the Treasury","total_obs":10570000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.138","permalink":"/program/TC.138","title":"Tax
+  credit for orphan drug research","popular_name":null,"agency":"Department of the
+  Treasury","total_obs":1970000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.139","permalink":"/program/TC.139","title":"Special
+  Blue Cross/Blue Shield tax benefits","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":320000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.140","permalink":"/program/TC.140","title":"Distributions
   from retirement plans for premiums for health and long-term care insurance","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":460000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":460000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.141","permalink":"/program/TC.141","title":"Credit
+  for family and sick leave taken by self-employed individuals","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":7280000000.0,"program_type":"tax_expenditure"}]'
 title: Health
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 11
-total_obs: 486820000000.0
+total_num_programs: 12
+total_obs: 494100000000.0
 ---

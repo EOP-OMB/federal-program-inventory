@@ -18,6 +18,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   2010, issuers of the unused authorization of such bonds could opt to receive direct
   payment with the yield becoming fully taxable.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":30000000.0}]'
 outlays: null
 permalink: /program/TC.019.html
 popular_name: ''
@@ -26,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":30000000.0}]'
 title: Qualified energy conservation bonds
 usaspending_url: null
 ---

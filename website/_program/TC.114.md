@@ -5,26 +5,19 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.114
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. Instead, it generally would seek to tax uniformly all
-  returns from investment-like activities. In contrast, the Tax Code provides employers
-  with a tax credit for qualified wages paid to individuals. The credit applies to
-  employees who began work on or before December 31, 2025 and who are certified as
-  members of various targeted groups. The amount of the credit that can be claimed
-  is 25 percent of qualified wages for employment less than 400 hours and 40 percent
-  for employment of 400 hours or more. Generally, the maximum credit per employee
-  is $2,400 and can only be claimed on the first year of wages an individual earns
-  from an employer. However, the credit for long-term welfare recipients can be claimed
-  on second year wages as well and has a $9,000 maximum. Also, certain categories
-  of veterans are eligible for a higher maximum credit of up to $9,600. Employers
-  must reduce their deduction for wages paid by the amount of the credit claimed.
+objective: The baseline tax system would not allow a deduction for personal expenditures.
+  In contrast, the Tax Code allowed educators in both public and private elementary
+  and secondary schools, who worked at least 900 hours during a school year as a teacher,
+  instructor, counselor, principal or aide, to subtract up to $300 of qualified expenses
+  when determining their adjusted gross income (AGI).
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":180000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":160000000.0}]'
 outlays: null
 permalink: /program/TC.114.html
 popular_name: ''
@@ -33,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1730000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2070000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2050000000.0}]'
-title: Work opportunity tax credit
+title: Special deduction for teacher expenses
 usaspending_url: null
 ---

@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,20 +457,20 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/natural-resources-and-environment
-programs: '[{"cfda":"TC.039","permalink":"/program/TC.039","title":"Expensing of exploration
-  and development costs, nonfuel minerals ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.040","permalink":"/program/TC.040","title":"Excess
-  of percentage over cost depletion, nonfuel minerals ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":190000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.041","permalink":"/program/TC.041","title":"Exclusion
+programs: '[{"cfda":"TC.040","permalink":"/program/TC.040","title":"Expensing of exploration
+  and development costs, nonfuel minerals","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.041","permalink":"/program/TC.041","title":"Excess
+  of percentage over cost depletion, nonfuel minerals","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":190000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.042","permalink":"/program/TC.042","title":"Exclusion
   of interest on bonds for water, sewage, and hazardous waste facilities","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":370000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.042","permalink":"/program/TC.042","title":"Capital
-  gains treatment of certain timber income ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.043","permalink":"/program/TC.043","title":"Expensing
-  of multiperiod timber growing costs ","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.044","permalink":"/program/TC.044","title":"Tax
-  incentives for preservation of historic structures ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":580000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.045","permalink":"/program/TC.045","title":"Carbon
-  oxide sequestration credit","popular_name":null,"agency":"Department of the Treasury","total_obs":360000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Deduction
+  of the Treasury","total_obs":370000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.043","permalink":"/program/TC.043","title":"Capital
+  gains treatment of certain timber income","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.044","permalink":"/program/TC.044","title":"Expensing
+  of multiperiod timber growing costs","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax
+  incentives for preservation of historic structures","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":580000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Carbon
+  oxide sequestration credit","popular_name":null,"agency":"Department of the Treasury","total_obs":360000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.047","permalink":"/program/TC.047","title":"Deduction
   for endangered species recovery expenditures","popular_name":null,"agency":"Department
   of the Treasury","total_obs":30000000.0,"program_type":"tax_expenditure"}]'
 title: Natural Resources and Environment

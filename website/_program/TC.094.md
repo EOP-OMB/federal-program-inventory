@@ -11,14 +11,14 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. However, the Tax Code allows taxpayers who make qualified
-  equity investments in a community development entity (CDE), which then make qualified
-  investments in low-income communities, to be eligible for a tax credit that is received
-  over 7 years. The total equity investment available for the credit across all CDEs
-  is generally $5 billion for each calendar year 2020 through 2025, the last year
-  for which credit allocations are authorized.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. In contrast, the Tax Code allows interest
+  earned on State and local bonds issued to finance high-speed rail facilities and
+  Government-owned airports, docks, wharves, and sport and convention facilities to
+  be tax-exempt. These bonds are not subject to a volume cap.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1350000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1050000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1480000000.0}]'
 outlays: null
 permalink: /program/TC.094.html
 popular_name: ''
@@ -27,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0}]'
-title: New markets tax credit
+title: Exclusion of interest for airport, dock, and similar bonds
 usaspending_url: null
 ---

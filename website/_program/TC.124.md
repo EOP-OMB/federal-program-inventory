@@ -5,19 +5,19 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.124
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, would be included in taxable income. Dedicated payments and
-  in-kind benefits represent accretions to wealth that do not differ materially from
-  cash wages. In contrast, the Tax Code allows an exclusion from a clergyman’s taxable
-  income for the value of the clergyman’s housing allowance or the rental value of
-  the clergyman’s parsonage.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. In contrast, the Tax Code provides small businesses
+  (less than $1 million in gross receipts or fewer than 31 full-time employees) a
+  50 percent credit for expenditures in excess of $250 to remove access barriers for
+  disabled persons. The credit is limited to $5,000.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
 outlays: null
 permalink: /program/TC.124.html
 popular_name: ''
@@ -26,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":970000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":959000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1160000000.0}]'
-title: 'Exclusion of parsonage allowances '
+title: Credit for disabled access expenditures
 usaspending_url: null
 ---

@@ -11,16 +11,16 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. Instead, it generally would seek to tax uniformly all
-  returns from investment-like activities. However, the Tax Code provides credits
-  for investments in semiconductor manufacturing equipment within the United States.
-  The credit is 25 percent for qualified property placed into service after December
-  31, 2022. Construction on a qualified facility must begin by December 31, 2025.
-  Owners of facilities that qualify for the advanced manufacturing investment credit
-  may elect to treat investment credits as a payment of tax equal to the amount of
-  the credit.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. In contrast, the Tax Code allows interest
+  earned on small issue industrial development bonds (IDBs) issued by State and local
+  governments to finance manufacturing facilities to be tax exempt. Depreciable property
+  financed with small issue IDBs must be depreciated, however, using the straight-line
+  method. The annual volume of small issue IDBs is subject to the unified volume cap
+  discussed in the mortgage housing bond section above.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":60000000.0}]'
 outlays: null
 permalink: /program/TC.084.html
 popular_name: ''
@@ -29,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":190000000.0},{"x":"2024","outlays":220000000.0,"forgone_revenue":3220000000.0}]'
-title: Advanced manufacturing investment credit
+title: Exclusion of interest on small issue bonds
 usaspending_url: null
 ---

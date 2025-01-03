@@ -15,10 +15,11 @@ objective: Under the baseline tax system, all income would generally be taxed un
   the regular tax rate schedule. The baseline tax system would not allow preferentially
   low (or zero) tax rates to apply to certain types or sources of income. In contrast,
   the Tax Code allows an exclusion from a taxpayer’s taxable income for any discharge
-  of qualified real property business indebtedness by taxpayers other than a C corporation.
-  If the canceled debt is not reported as current income, however, the basis of the
-  underlying property must be reduced by the amount canceled.
+  of indebtedness of up to $750,000 ($375,000 in the case of a married individual
+  filing a separate return) from a qualified principal residence. The provision applies
+  to debt discharged after December 31, 2020, and before January 1, 2026.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":380000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":150000000.0}]'
 outlays: null
 permalink: /program/TC.070.html
 popular_name: ''
@@ -27,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":-10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
-title: Discharge of business indebtedness
+title: Discharge of mortgage indebtedness
 usaspending_url: null
 ---

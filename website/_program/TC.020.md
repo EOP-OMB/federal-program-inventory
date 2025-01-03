@@ -19,6 +19,7 @@ objective: The baseline tax system generally takes a comprehensive view of taxab
   that would be taxable to the customer under the baseline tax system. In contrast,
   the Tax Code exempts these subsidies from the non-business customer’s gross income.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0}]'
 outlays: null
 permalink: /program/TC.020.html
 popular_name: ''
@@ -27,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0}]'
 title: Exclusion of utility conservation subsidies
 usaspending_url: null
 ---

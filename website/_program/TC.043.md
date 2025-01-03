@@ -11,11 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system requires the taxpayer to capitalize costs associated
-  with investment property. However, most of the production costs of growing timber
-  may be expensed under current law rather than capitalized and deducted when the
-  timber is sold, thereby accelerating cost recovery.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low tax rates to apply to certain
+  types or sources of income. However, under current law certain timber sales can
+  be treated as a capital gain rather than ordinary income and therefore subject to
+  the lower capital-gains tax rate. Current law allows capital gains to be taxed at
+  a preferentially low rate that is no higher than 20 percent (plus the 3.8 percent
+  surtax).
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":180000000.0}]'
 outlays: null
 permalink: /program/TC.043.html
 popular_name: ''
@@ -24,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":230000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":320000000.0}]'
-title: 'Expensing of multiperiod timber growing costs '
+title: Capital gains treatment of certain timber income
 usaspending_url: null
 ---

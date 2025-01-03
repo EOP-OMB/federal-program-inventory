@@ -11,15 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, the taxable income of a taxpayer who is
-  an owner-occupant would include the implicit value of gross rental income on housing
-  services earned on the investment in owner- occupied housing and would allow a deduction
-  for expenses, such as interest, depreciation, property taxes, and other costs, associated
-  with earning such rental income. In contrast, the Tax Code allows an exclusion from
-  taxable income for the implicit gross rental income on housing services, while in
-  certain circumstances allows a deduction for some costs associated with such income,
-  such as for mortgage interest and property taxes.
+objective: The baseline tax system would not allow deductions and exemptions for certain
+  types of income. In contrast, the Tax Code allows homeowners to exclude from gross
+  income up to $250,000 ($500,000 in the case of a married couple filing a joint return)
+  of the capital gains from the sale of a principal residence. To qualify, the taxpayer
+  must have owned and used the property as the taxpayer’s principal residence for
+  a total of at least two of the five years preceding the date of sale. In addition,
+  the exclusion may not be used more than once every two years.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":49200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":54410000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":59070000000.0}]'
 outlays: null
 permalink: /program/TC.065.html
 popular_name: ''
@@ -28,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":129000000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":147000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":165000000000.0}]'
-title: Exclusion of net imputed rental income
+title: Capital gains exclusion on home sales
 usaspending_url: null
 ---

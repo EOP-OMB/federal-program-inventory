@@ -16,6 +16,7 @@ objective: Under the baseline tax system, taxpayer earnings are subject to tax u
   of income from exports to be taxed at the qualified dividend rate which is no higher
   than 20 percent (plus a 3.8 percent surtax for high-income taxpayers).
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1140000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1620000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1860000000.0}]'
 outlays: null
 permalink: /program/TC.006.html
 popular_name: ''
@@ -24,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1140000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1620000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1860000000.0}]'
-title: 'Interest Charge Domestic International Sales Corporations (IC-DISCs) '
+title: Interest Charge Domestic International Sales Corporations (IC-DISCs)
 usaspending_url: null
 ---

@@ -5,20 +5,22 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.113
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. Instead, it generally would seek to tax uniformly all
-  returns from investment-like activities. In contrast, the Tax Code was modified
-  in 2009 to provide a tax credit in lieu of interest to holders of qualified school
-  construction bonds. The national volume limit is $22.4 billion over 2009 and 2010.
-  As of March 2010, issuers of such bonds could opt to receive direct payment with
-  the yield becoming fully taxable.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income because it represents
+  accretions to wealth that do not materially differ from cash wages. Under current
+  law, however, employer-provided educational assistance is excluded from an employee’s
+  gross income, even though the employer’s costs for this assistance are a deductible
+  business expense. The maximum exclusion is $5,250 per taxpayer. From March 27, 2020
+  through December 31, 2025 employer-provided student loan payments are considered
+  eligible educational assistance.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1510000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1700000000.0}]'
 outlays: null
 permalink: /program/TC.113.html
 popular_name: ''
@@ -27,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":560000000.0,"forgone_revenue":520000000.0},{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0}]'
-title: Qualified school construction bonds
+title: Exclusion of employer-provided educational assistance
 usaspending_url: null
 ---

@@ -11,13 +11,13 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow a deduction for personal expenditures
-  including charitable contributions. In contrast, the Tax Code provides individuals
-  and corporations a deduction for contributions to nonprofit health institutions.
-  Tax expenditures resulting from the deductibility of contributions to other charitable
-  institutions are listed under the education, training, employment, and social services
-  function.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. In contrast, under current law interest
+  earned on State and local government debt issued to finance hospital construction
+  is excluded from income subject to tax.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4040000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3490000000.0}]'
 outlays: null
 permalink: /program/TC.134.html
 popular_name: ''
@@ -26,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":10570000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":9000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10490000000.0}]'
-title: Deductibility of charitable contributions to health institutions
+title: Exclusion of interest on hospital construction bonds
 usaspending_url: null
 ---

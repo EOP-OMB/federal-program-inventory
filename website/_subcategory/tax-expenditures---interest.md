@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,8 +457,8 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/interest
-programs: '[{"cfda":"TC.170","permalink":"/program/TC.170","title":"Deferral of interest
-  on U.S. savings bonds ","popular_name":null,"agency":"Department of the Treasury","total_obs":830000000.0,"program_type":"tax_expenditure"}]'
+programs: '[{"cfda":"TC.174","permalink":"/program/TC.174","title":"Deferral of interest
+  on U.S. savings bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":830000000.0,"program_type":"tax_expenditure"}]'
 title: Interest
 total_num_agencies: 1
 total_num_applicant_types: 0

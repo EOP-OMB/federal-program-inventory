@@ -11,15 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, the Tax Code allows interest
-  earned on small issue industrial development bonds (IDBs) issued by State and local
-  governments to finance manufacturing facilities to be tax exempt. Depreciable property
-  financed with small issue IDBs must be depreciated, however, using the straight-line
-  method. The annual volume of small issue IDBs is subject to the unified volume cap
-  discussed in the mortgage housing bond section above.
+objective: Under a comprehensive economic income tax, the costs of acquiring a building
+  are capitalized and depreciated over time in accordance with the decline in the
+  property’s economic value due to wear and tear or obsolescence. This ensures that
+  the net income from the property is measured appropriately each year. Current law
+  allows depreciation deductions that differ from those under economic depreciation.
+  However, the depreciation provisions of the Tax Code are part of the reference tax
+  law, and thus do not give rise to tax expenditures under reference tax law. Under
+  normal tax baseline, in contrast, depreciation allowances reflect estimates of economic
+  depreciation.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":920000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":440000000.0}]'
 outlays: null
 permalink: /program/TC.081.html
 popular_name: ''
@@ -28,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":60000000.0}]'
-title: 'Exclusion of interest on small issue bonds '
+title: Depreciation of buildings other than rental housing (normal tax method)
 usaspending_url: null
 ---

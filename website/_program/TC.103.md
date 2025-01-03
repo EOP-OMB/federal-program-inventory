@@ -5,23 +5,25 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.103
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. Some States have adopted prepaid tuition
-  plans, prepaid room and board plans, and college savings plans, which allow persons
-  to pay in advance or save for college expenses for designated beneficiaries. Under
-  current law, investment income, or the return on prepayments, is not taxed when
-  earned, and is tax-exempt when withdrawn to pay for qualified expenses. Beginning
-  in 2018, the definition of a qualified expense was expanded to include up to $10,000
-  per child per year of expenses for primary or secondary education, including tuition
-  at religious schools.
+objective: Scholarships and fellowships are excluded from taxable income to the extent
+  they pay for tuition and course-related expenses of the grantee. Similarly, tuition
+  reductions for employees of educational institutions and their families are not
+  included in taxable income. From an economic point of view, scholarships and fellowships
+  are either gifts not conditioned on the performance of services, or they are rebates
+  of educational costs. Thus, under the baseline tax system of the reference tax law
+  method, this exclusion is not a tax expenditure because this method does not include
+  either gifts or price reductions in a taxpayer’s gross income. The exclusion, however,
+  is considered a tax expenditure under the normal tax method, which includes gift-like
+  transfers of Government funds in gross income. (Many scholarships are derived directly
+  or indirectly from Government funding.)
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4110000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4860000000.0}]'
 outlays: null
 permalink: /program/TC.103.html
 popular_name: ''
@@ -30,7 +32,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":2790000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3220000000.0}]'
-title: Qualified tuition programs (includes Education IRA)
+title: Exclusion of scholarship and fellowship income (normal tax method)
 usaspending_url: null
 ---

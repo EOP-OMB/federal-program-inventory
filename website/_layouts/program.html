@@ -111,12 +111,15 @@ footer_include: _footer-program.html
           <svg id="outlaysChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
           role="img"></svg>
 
-          <svg id="taxExpendChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
+          <svg id="otherProgramChart" class="width-full display-none" height="500" aria-label="Chart displaying data based on selection"
           role="img"></svg>
 
         <!-- Download Button -->
-        <button id="downloadData" class="usa-button usa-button--outline">
-          Download .csv file <i class="fa-solid fa-download margin-left-1"></i>
+        <button id="downloadData" class="usa-button usa-button--outline border-2px">
+          <span>Download .csv file</span>
+          <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="/assets/img/sprite.svg#file_download"></use>
+          </svg>
         </button>
       </div>
 
@@ -133,7 +136,8 @@ footer_include: _footer-program.html
           </button>
         </h4>
         <div id="program-results" class="usa-accordion__content">
-          <ol class="usa-process-list">
+          <div class = "usa-process-list--no-numbers">
+          <ol class="usa-process-list usa-process-list--no-numbers">
             {% assign sorted_results = page.results | sort: 'year' %}
             {% for result in sorted_results %}
             <li class="usa-process-list__item padding-bottom-4">
@@ -146,6 +150,7 @@ footer_include: _footer-program.html
             </li>
             {% endfor %}
           </ol>
+        </div>
         </div>
       </div>
       {% endif %}
@@ -162,10 +167,16 @@ footer_include: _footer-program.html
         </h4>
         <div id="program-single-audit" class="usa-accordion__content">
           <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
-            Single Audit Applies (2 CFR Part 200 Subpart F): <svg class="usa-icon text-success margin-left-1"
-              style="width: 1.5rem; height: 1.5rem;" aria-hidden="true" focusable="false" role="img">
-              <use href="/assets/img/sprite.svg#check_circle"></use>
-            </svg>
+            Single Audit Applies (2 CFR Part 200 Subpart F): 
+            {% if page.is_subpart_f == 1 %}
+              <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true" focusable="false" role="img">
+                <use href="/assets/img/sprite.svg#check_circle"></use>
+              </svg>
+            {% else %}
+              <svg class="usa-icon text-error margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true" focusable="false" role="img">
+                <use href="/assets/img/sprite.svg#cancel"></use>
+              </svg>
+            {% endif %}
           </p>
 
           <p class="font-family-sans line-height-body-4">
@@ -201,7 +212,7 @@ footer_include: _footer-program.html
       <!-- Program oversight reports End -->
 
       <!-- Rules and regulations Start-->
-      {% if page.rules_regulations.present? %}
+      {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
       <div class="usa-accordion">
         <h4 class="usa-accordion__heading">
           <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
@@ -253,44 +264,47 @@ footer_include: _footer-program.html
 
       <!-- Categories Section -->
       {% if page.categories and page.categories.size > 0 %}
-      <div class="margin-bottom-4">
-        <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
+<div class="margin-bottom-4">
+  <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
 
-        {% assign last_category = "" %}
-        {% assign sorted_categories = page.categories | sort %}
+  {% assign last_category = "" %}
+  {% assign sorted_categories = page.categories | sort %}
 
-        {% for category in sorted_categories %}
-        {% assign first_dash = category | split: " - " | first %}
-        {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
-        {% assign main_category = first_dash %}
-        {% assign sub_category = remaining %}
+  {% for category in sorted_categories %}
+    {% assign first_dash = category | split: " - " | first %}
+    {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
+    {% assign main_category = first_dash %}
+    {% assign sub_category = remaining | default: main_category %}
 
-        {% if main_category != last_category %}
-        {% unless forloop.first %}
+    {% if main_category != last_category %}
+      {% unless forloop.first %}
         </ul>
       </div>
       {% endunless %}
 
       <div>
-        <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
-          data-category-title="{{main_category}}">{{ main_category }}</a>
+        <a href="#" class="usa-link program-filter text-bold" data-filter-type="category" 
+           data-category-title="{{main_category}}">{{ main_category }}</a>
         <ul class="usa-list padding-left-3 margin-y-0 text-primary">
-          {% endif %}
+    {% endif %}
 
-          <li>
-            <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
-              data-category-title="{{main_category}}" data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
-          </li>
+    {% if sub_category != "" %}
+      <li>
+        <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
+           data-category-title="{{main_category}}" 
+           data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
+      </li>
+    {% endif %}
 
-          {% assign last_category = main_category %}
+    {% assign last_category = main_category %}
 
-          {% if forloop.last %}
+    {% if forloop.last %}
         </ul>
       </div>
-      {% endif %}
-      {% endfor %}
-    </div>
     {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
 
     <!-- Program Types Section -->
     {% if page.assistance_types and page.assistance_types.size > 0 %}

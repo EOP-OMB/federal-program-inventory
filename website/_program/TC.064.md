@@ -11,14 +11,19 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow deductions and exemptions for certain
-  types of income. In contrast, the Tax Code allows homeowners to exclude from gross
-  income up to $250,000 ($500,000 in the case of a married couple filing a joint return)
-  of the capital gains from the sale of a principal residence. To qualify, the taxpayer
-  must have owned and used the property as the taxpayer’s principal residence for
-  a total of at least two of the five years preceding the date of sale. In addition,
-  the exclusion may not be used more than once every two years.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates, or
+  deferral of tax, to apply to certain types or sources of income. Dealers in real
+  and personal property (i.e., sellers who regularly hold property for sale or resale)
+  cannot defer taxable income from installment sales until the receipt of the loan
+  repayment. Nondealers (i.e., sellers of real property used in their business) are
+  required to pay interest on deferred taxes attributable to their total installment
+  obligations in excess of $5 million. Only properties with sales prices exceeding
+  $150,000 are includable in the total. The payment of a market rate of interest eliminates
+  the benefit of the tax deferral. The tax exemption for nondealers with total installment
+  obligations of less than $5 million is, therefore, a tax expenditure.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1750000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0}]'
 outlays: null
 permalink: /program/TC.064.html
 popular_name: ''
@@ -27,7 +32,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":49200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":54410000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":59070000000.0}]'
-title: Capital gains exclusion on home sales
+title: Deferral of income from installment sales
 usaspending_url: null
 ---

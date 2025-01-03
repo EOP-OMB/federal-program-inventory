@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":3,"total_obs":64940000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":3,"total_obs":46860000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,15 +457,15 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-programs: '[{"cfda":"TC.167","permalink":"/program/TC.167","title":"Exclusion of interest
+programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of interest
   on public purpose State and local bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":38610000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Build
-  America Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":2500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Deductibility
+  of the Treasury","total_obs":38610000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.172","permalink":"/program/TC.172","title":"Build
+  America Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":2500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.173","permalink":"/program/TC.173","title":"Deductibility
   of nonbusiness State and local taxes other than on owner-occupied homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":23830000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":5750000000.0,"program_type":"tax_expenditure"}]'
 title: General Purpose Fiscal Assistance
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 3
-total_obs: 64940000000.0
+total_obs: 46860000000.0
 ---

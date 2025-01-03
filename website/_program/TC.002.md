@@ -25,6 +25,7 @@ objective: Under the baseline tax system, all compensation received by U.S. citi
   a specific allowance for housing expenses, they may deduct housing expenses up to
   the amount by which foreign earned income exceeds their foreign earned income exclusion.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":6700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0}]'
 outlays: null
 permalink: /program/TC.002.html
 popular_name: ''
@@ -33,7 +34,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":6700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0}]'
-title: 'Exclusion of income earned abroad by U.S. citizens '
+title: Exclusion of income earned abroad by U.S. citizens
 usaspending_url: null
 ---

@@ -47,47 +47,19 @@ applicant_types:
     and hospitals)
 assistance_types:
 - title: Advisory Services and Counseling
-- title: Advisory Services on Compliance
-- title: Cooperative Agreements
-- title: Cooperative Agreements (Discretionary Grants)
 - title: Direct Loans
-- title: Direct Payments for Specified Use
-- title: Direct Payments for Specified Use (Cooperative Agreements)
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
-- title: Federal Employment
 - title: Formula Grants
-- title: Formula Grants (Apportionments)
-- title: Formula Grants (Cooperative Agreements)
 - title: Guaranteed / Insured Loans
-- title: Guaranteed/Insured Loans
-- title: Information
 - title: Insurance
-- title: Insurance (Guaranteed Surety Bonds)
-- title: Insurance (Reimbursement)
 - title: Investigation of Complaints
-- title: Loan Guarantees/Grants
 - title: Project Grants
-- title: Project Grants (Capacity Building and Complaint Processing, Training)
-- title: Project Grants (Contracts)
-- title: Project Grants (Cooperative Agreements or Contracts)
-- title: Project Grants (Cooperative Agreements)
-- title: Project Grants (Discretionary)
-- title: Project Grants (Fellowships)
-- title: Project Grants (Special)
-- title: Project Grants (for administration projects authorized under Section
-- title: Project Grants (for specified projects)
-- title: Project Grants (including individual awards)
-- title: Project Grants (including travel grants)
-- title: Project Grants (to capitalize loan funds)
-- title: Project Grants (with Formula Distribution)
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
-- title: Sale, Exchange, or Donation of Property and Goods
 - title: Sale, Exchange, or Donation of Property or Goods
 - title: Training
-- title: Use of Property, Facilities, and Equipment
 - title: Use of Property, Facilities, or Equipment
 beneficiary_types:
 - title: Alcoholic
@@ -333,6 +305,9 @@ categories:
   - title: Library of Congress
   title: Information and Statistics
 - sub_categories:
+  - title: Interest on the Public Debt
+  title: Interest on the Public Debt
+- sub_categories:
   - title: Law Enforcement - Crime Analysis and Data
   - title: Law Enforcement - Narcotics and Dangerous Drugs
   - title: Law Enforcement - Planning and Operations
@@ -370,10 +345,9 @@ categories:
   title: Science and Technology
 - sub_categories:
   - title: Agriculture
-  - title: Aid to State and Local Governments
   - title: Commerce and Housing
   - title: Community and Regional Development
-  - title: 'Education, Training, Employment, and Social Services '
+  - title: Education, Training, Employment, and Social Services
   - title: Energy
   - title: General Purpose Fiscal Assistance
   - title: General Science, Space, and Technology
@@ -381,6 +355,7 @@ categories:
   - title: Income Security
   - title: Interest
   - title: International Affairs
+  - title: National Defense
   - title: Natural Resources and Environment
   - title: Social Security
   - title: Transportation

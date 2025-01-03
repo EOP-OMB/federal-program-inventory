@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,18 +457,18 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/community-and-regional-development
-programs: '[{"cfda":"TC.091","permalink":"/program/TC.091","title":"Exclusion of interest
+programs: '[{"cfda":"TC.094","permalink":"/program/TC.094","title":"Exclusion of interest
   for airport, dock, and similar bonds","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":1350000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.092","permalink":"/program/TC.092","title":"Exemption
-  of certain mutuals'' and cooperatives'' income ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.093","permalink":"/program/TC.093","title":"Empowerment
-  zones","popular_name":null,"agency":"Department of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.094","permalink":"/program/TC.094","title":"New
-  markets tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1170000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.095","permalink":"/program/TC.095","title":"Credit
+  the Treasury","total_obs":1350000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.095","permalink":"/program/TC.095","title":"Exemption
+  of certain mutuals'' and cooperatives'' income","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.096","permalink":"/program/TC.096","title":"Empowerment
+  zones","popular_name":null,"agency":"Department of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.097","permalink":"/program/TC.097","title":"New
+  markets tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1170000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.098","permalink":"/program/TC.098","title":"Credit
   to holders of Gulf and Midwest Tax Credit Bonds .","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.096","permalink":"/program/TC.096","title":"Recovery
-  Zone Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":240000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.097","permalink":"/program/TC.097","title":"Tribal
-  Economic Development Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.098","permalink":"/program/TC.098","title":"Opportunity
-  Zones","popular_name":null,"agency":"Department of the Treasury","total_obs":3740000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.099","permalink":"/program/TC.099","title":"Disaster
+  of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.099","permalink":"/program/TC.099","title":"Recovery
+  Zone Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":240000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.100","permalink":"/program/TC.100","title":"Tribal
+  Economic Development Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.101","permalink":"/program/TC.101","title":"Opportunity
+  Zones","popular_name":null,"agency":"Department of the Treasury","total_obs":3740000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.102","permalink":"/program/TC.102","title":"Disaster
   employee retention credit","popular_name":null,"agency":"Department of the Treasury","total_obs":110000000.0,"program_type":"tax_expenditure"}]'
 title: Community and Regional Development
 total_num_agencies: 1

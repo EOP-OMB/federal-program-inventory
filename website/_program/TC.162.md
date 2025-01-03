@@ -5,21 +5,23 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Social Security
+- Tax Expenditures - Income Security
 cfda: TC.162
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, employer contributions to Social Security
-  represent labor cost and are deductible expenses. Under current law, however, certain
-  employers are allowed a tax credit, instead of a deduction, against taxes paid on
-  tips received from customers in connection with the providing, delivering, or serving
-  of food or beverages for consumption. The tip credit equals the full amount of the
-  employer’s share of FICA taxes paid on the portion of tips, when added to the employee’s
-  non-tip wages, in excess of $5.15 per hour. The credit is available only with respect
-  to FICA taxes paid on tips.
+objective: Under the baseline tax system, neither the purchase of property nor insurance
+  premiums to protect the property’s value are deductible as costs of earning income.
+  Therefore, reimbursement for insured loss of such property is not included as a
+  part of gross income, and uninsured losses are not deductible. In contrast, the
+  Tax Code provides a deduction for uninsured casualty and theft losses of more than
+  $100 each, to the extent that total losses during the year exceed 10 percent of
+  the taxpayer’s adjusted gross income. In the case of taxable years beginning after
+  December 31, 2017, and before January 1, 2026, personal casualty losses are deductible
+  only to the extent they are attributable to a Federally declared disaster area.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.162.html
 popular_name: ''
@@ -28,8 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1520000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1740000000.0}]'
-title: 'Exclusion of social security benefits: Credit for certain employer contributions
-  to social security'
+title: Deductibility of casualty losses
 usaspending_url: null
 ---

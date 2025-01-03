@@ -25,6 +25,7 @@ objective: The baseline tax system accepts current law’s general rule limiting
   interests against nonpassive income without regard to whether they materially participate
   in the activity.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.013.html
 popular_name: ''
@@ -33,8 +34,7 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
-title: 'Exception from passive loss limitation for working interests in oil and gas
-  properties '
+title: Exception from passive loss limitation for working interests in oil and gas
+  properties
 usaspending_url: null
 ---

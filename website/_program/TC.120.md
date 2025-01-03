@@ -5,21 +5,21 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.120
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities
-  or targeted at specific groups. In contrast, the Tax Code provides a tax credit
-  to parents who work or attend school and who have child and dependent care expenses.
-  In taxable year 2023, expenditures up to a maximum $3,000 for one dependent and
-  $6,000 for two or more dependents are eligible for a nonrefundable credit. The credit
-  is equal to 35 percent of qualified expenditures for taxpayers with incomes of up
-  to $15,000. The credit is reduced to a minimum of 20 percent by one percentage point
-  for each $2,000 of income in excess of $15,000.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income. Taxpayers who adopt
+  eligible children from the public foster care system can receive monthly payments
+  for the children’s significant and varied needs and a reimbursement of up to $2,000
+  for nonrecurring adoption expenses; special needs adoptions receive the maximum
+  benefit even if that amount is not spent. These payments are excluded from gross
+  income under current law.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":650000000.0}]'
 outlays: null
 permalink: /program/TC.120.html
 popular_name: ''
@@ -28,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":7000000.0,"forgone_revenue":5850000000.0},{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0}]'
-title: Credit for child and dependent care expenses
+title: Assistance for adopted foster children
 usaspending_url: null
 ---

@@ -11,13 +11,16 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, unrealized capital gains would be taxed
-  when assets are transferred by gift. In contrast, when a gift of appreciated asset
-  is made under current law, the donor’s basis in the transferred property (the cost
-  that was incurred when the transferred property was first acquired) carries over
-  to the donee. The carryover of the donor’s basis allows a continued deferral of
-  unrealized capital gains.
+objective: The baseline tax system would not allow deductions and exemptions or provide
+  preferential treatment of certain sources of income or types of activities. In contrast,
+  the Tax Code provided an exclusion of 50 percent, applied to ordinary rates with
+  a maximum of a 28 percent tax rate, for capital gains from qualified small business
+  stock held by individuals for more than 5 years; 75 percent for stock issued after
+  February 17, 2009 and before September 28, 2010; and 100 percent for stock issued
+  after September 27, 2010. A qualified small business is a corporation whose gross
+  assets do not exceed $50 million as of the date of issuance of the stock.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1680000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1780000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0}]'
 outlays: null
 permalink: /program/TC.076.html
 popular_name: ''
@@ -26,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4590000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4830000000.0}]'
-title: 'Carryover basis of capital gains on gifts '
+title: Capital gains exclusion of small corporation stock
 usaspending_url: null
 ---

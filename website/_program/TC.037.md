@@ -11,13 +11,18 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. However, the Tax Code provides a 30 percent investment
-  credit for property used in a qualified advanced energy manufacturing project. The
-  Treasury Department may award up to $12.3 billion in tax credits for qualified investments.
-  Of the total $12.3 billion, $4 billion is reserved for projects located in energy
-  communities.
+objective: The baseline tax system would uniformly tax all returns to investments
+  and not allow credits for particular activities, investments, or industries. However,
+  the Tax Code provides a credit for the purchase of a qualified photovoltaic property
+  and solar water heating property, as well as for fuel cell power plants, geothermal
+  heat pumps, small wind property, and qualified battery storage technology used in
+  or placed on a residence. The credit is 30 percent for property placed in service
+  before January 1, 2020, 26 percent for property placed in service in 2020-2021,
+  30 percent for property placed in service in 2022-2032, 26 percent for property
+  placed in service in 2033, and 22 percent for property placed in service in 2034.
+  The credit expires after December 31, 2034.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0}]'
 outlays: null
 permalink: /program/TC.037.html
 popular_name: ''
@@ -26,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":1170000000.0}]'
-title: Advanced energy property credit
+title: Credit for residential energy efficient property
 usaspending_url: null
 ---

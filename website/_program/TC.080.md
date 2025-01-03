@@ -11,21 +11,13 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under a comprehensive economic income tax, the costs of acquiring machinery
-  and equipment are capitalized and depreciated over time in accordance with the decline
-  in the property’s economic value due to wear and tear or obsolescence. This ensures
-  that the net income from the property is measured appropriately each year. Current
-  law allows depreciation deductions that are accelerated relative to economic depreciation.
-  In particular, in 2023, 80 percent of the purchase cost of qualified property is
-  eligible to be expensed immediately; this percentage phases out to zero through
-  2027. Additionally, subject to investment limitations, the Tax Code allows up to
-  $1 million (indexed for inflation) in qualifying investments in tangible property
-  and certain computer software to be expensed rather than depreciated over time.
-  The depreciation provisions of the Tax Code are part of the reference tax law, and
-  thus do not give rise to tax expenditures under reference tax law. Under the normal
-  tax baseline, in contrast, depreciation allowances reflect estimates of economic
-  depreciation.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates, or
+  deferral of tax, to apply to certain types or sources of income. In contrast, current
+  law allows the deferral of accrued gains on assets transferred in qualified likekind
+  exchanges.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":3830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":7650000000.0}]'
 outlays: null
 permalink: /program/TC.080.html
 popular_name: ''
@@ -34,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":22780000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-4040000000.0}]'
-title: 'Accelerated depreciation of machinery and equipment (normal tax method) '
+title: Deferral of capital gains from like-kind exchanges
 usaspending_url: null
 ---

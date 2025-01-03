@@ -5,17 +5,18 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Commerce and Housing
+- Tax Expenditures - Agriculture
 cfda: TC.054
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, corporations pay taxes on their profits
-  under the regular tax rate schedule. However, in the Tax Code the earnings of credit
-  unions not distributed to members as interest or dividends are exempt from the income
-  tax.
+objective: The baseline tax system requires the taxpayer to capitalize costs associated
+  with an investment over time. In contrast, the Tax Code provides for the expensing
+  of the first $10,000 in reforestation expenditures with 7-year amortization of the
+  remaining expenses.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0}]'
 outlays: null
 permalink: /program/TC.054.html
 popular_name: ''
@@ -24,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":3070000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2450000000.0}]'
-title: 'Exemption of credit union income '
+title: Expensing of reforestation expenditures
 usaspending_url: null
 ---

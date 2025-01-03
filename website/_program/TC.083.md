@@ -11,13 +11,14 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow deductions and exemptions or preferentially
-  low (or zero) tax rates to apply to certain types or sources of income. In contrast,
-  for tax years 2018 to 2025, the Tax Code allows for a deduction equal to up to 20
-  percent of income attributable to domestic pass-through businesses, subject to certain
-  limitations.
+objective: Under the reference tax law baseline, the costs of acquiring tangible property
+  and computer software would be depreciated using the Tax Code’s depreciation provisions.
+  Under the normal tax baseline, depreciation allowances are estimates of economic
+  depreciation. However, subject to investment limitations, the Tax Code allows up
+  to $1 million (indexed for inflation) in qualifying investments in tangible property
+  and certain computer software to be expensed rather than depreciated over time.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":-910000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.083.html
 popular_name: ''
@@ -26,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":51070000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":37240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40230000000.0}]'
-title: Allow 20-percent deduction to certain pass-through income
+title: Expensing of certain small investments (normal tax method)
 usaspending_url: null
 ---

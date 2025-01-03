@@ -12,15 +12,17 @@ grants_url: null
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. However, the Tax Code provided an investment tax credit
-  for expenditures made on insulation, exterior windows, and doors that improved the
-  energy efficiency of homes and met certain standards. The Tax Code also provided
-  a credit for purchases of advanced main air circulating fans, natural gas, propane,
-  or oil furnaces or hot water boilers, and other qualified energy efficient property.
-  This provision expired on December 31, 2017, but legislation enacted in 2020 allowed
-  taxpayers to claim tax credits retroactively for three years. The credit was further
-  increased up to $3,200 and extended to homes acquired in 2023 through 2032.
+  investments, or industries. Instead, it generally would seek to tax uniformly all
+  returns from investment-like activities. However, the Tax Code allowed contractors
+  a tax credit of $2,000 for the construction of a qualified new energy-efficient
+  home that had an annual level of heating and cooling energy consumption at least
+  50 percent below the annual consumption under the 2006 International Energy Conservation
+  Code. The credit equaled $1,000 in the case of a new manufactured home that met
+  a 30 percent standard or requirements for EPA’s Energy Star homes. This provision
+  expired on December 31, 2017, but it was increased up to $5,000 and extended to
+  homes acquired in 2023 through 2032.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":210000000.0}]'
 outlays: null
 permalink: /program/TC.035.html
 popular_name: ''
@@ -29,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":450000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0}]'
-title: Credit for energy efficiency improvements to existing homes
+title: Credit for construction of new energy efficient homes
 usaspending_url: null
 ---

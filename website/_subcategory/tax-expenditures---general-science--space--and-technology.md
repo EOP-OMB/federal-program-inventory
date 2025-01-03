@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -453,9 +458,9 @@ parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/general-science--space--and-technology
 programs: '[{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing of research
-  and experimentation expenditures (normal tax method) ","popular_name":null,"agency":"Department
+  and experimentation expenditures (normal tax method)","popular_name":null,"agency":"Department
   of the Treasury","total_obs":-19820000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.008","permalink":"/program/TC.008","title":"Credit
-  for increasing research activities ","popular_name":null,"agency":"Department of
+  for increasing research activities","popular_name":null,"agency":"Department of
   the Treasury","total_obs":23260000000.0,"program_type":"tax_expenditure"}]'
 title: General Science, Space, and Technology
 total_num_agencies: 1

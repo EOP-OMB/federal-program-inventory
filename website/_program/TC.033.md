@@ -11,14 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow deductions in lieu of normal depreciation
-  allowances for particular investments in particular industries. Instead, it generally
-  would seek to tax uniformly all returns from investment-like activities. In contrast,
-  the Tax Code allows a deduction for certain energy efficient commercial building
-  property. The basis of such property is reduced by the amount of the deduction.
-  Starting in 2021, the maximum deduction amount per square foot will be increased
-  by a cost-of -living adjustment.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. Instead, it generally would seek to tax uniformly all
+  returns from investment-like activities. In contrast, the Tax Code allows credits
+  for plug-in electric-drive motor vehicles, alternative fuel vehicle refueling property,
+  two-wheeled plug-in electric vehicles, and fuel cell motor vehicles. These provisions,
+  except for the plug-in electric-drive motor vehicle credit, expired after December
+  31, 2017.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1082000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.033.html
 popular_name: ''
@@ -27,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":510000000.0}]'
-title: Allowance of deduction for certain energy efficient commercial building property
+title: Tax credits for clean-fuel burning vehicles and refueling property
 usaspending_url: null
 ---

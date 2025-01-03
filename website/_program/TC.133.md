@@ -11,24 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities
-  or targeted at specific groups. In contrast, the Tax Code provides a tax credit
-  to qualified small employers that make a certain level of non-elective contributions
-  towards the purchase of certain health insurance coverage for its employees. To
-  receive a credit, an employer must have fewer than 25 full-time-equivalent employees
-  whose average annual full-time-equivalent wages from the employer are less than
-  $50,000 (indexed for taxable years after 2013). However, to receive a full credit,
-  an employer must have no more than 10 full-time employees, and the average wage
-  paid to these employees must be no more than $25,000 (indexed for taxable years
-  after 2013). A qualifying employer may claim the credit for any taxable year beginning
-  in 2010, 2011, 2012, and 2013 and for up to two years for insurance purchased through
-  a Health Insurance Exchange thereafter. For taxable years beginning in 2010, 2011,
-  2012, and 2013, the maximum credit is 35 percent of premiums paid by qualified taxable
-  employers and 25 percent of premiums paid by qualified tax-exempt organizations.
-  For taxable years beginning in 2014 and later years, the maximum tax credit increases
-  to 50 percent of premiums paid by qualified taxable employers and 35 percent of
-  premiums paid by qualified tax-exempt organizations.
+objective: The baseline tax system would not allow a deduction for personal expenditures.
+  In contrast, under current law personal expenditures for medical care (including
+  the costs of prescription drugs) exceeding 7.5 percent of the taxpayer’s adjusted
+  gross income are deductible. For tax years beginning after 2012, only medical expenditures
+  exceeding 10 percent of the taxpayer’s adjusted gross income are deductible. However,
+  for the years 2013, 2014, 2015 and 2016, if either the taxpayer or the taxpayer’s
+  spouse turned 65 before the end of the taxable year, the threshold remained at 7.5
+  percent of adjusted income. Beginning in 2017, the 10 percent threshold applied
+  to all taxpayers, including those over 65.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":9910000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":12640000000.0}]'
 outlays: null
 permalink: /program/TC.133.html
 popular_name: ''
@@ -37,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
-title: 'Credit for employee health insurance expenses of small business '
+title: Deductibility of medical expenses
 usaspending_url: null
 ---

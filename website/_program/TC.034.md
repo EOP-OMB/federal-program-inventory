@@ -11,17 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. Instead, it generally would seek to tax uniformly all
-  returns from investment-like activities. However, the Tax Code allowed contractors
-  a tax credit of $2,000 for the construction of a qualified new energy-efficient
-  home that had an annual level of heating and cooling energy consumption at least
-  50 percent below the annual consumption under the 2006 International Energy Conservation
-  Code. The credit equaled $1,000 in the case of a new manufactured home that met
-  a 30 percent standard or requirements for EPA’s Energy Star homes. This provision
-  expired on December 31, 2017, but it was increased up to $5,000 and extended to
-  homes acquired in 2023 through 2032.
+objective: The baseline tax system would not allow deductions in lieu of normal depreciation
+  allowances for particular investments in particular industries. Instead, it generally
+  would seek to tax uniformly all returns from investment-like activities. In contrast,
+  the Tax Code allows a deduction for certain energy efficient commercial building
+  property. The basis of such property is reduced by the amount of the deduction.
+  Starting in 2021, the maximum deduction amount per square foot will be increased
+  by a cost-of -living adjustment.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":510000000.0}]'
 outlays: null
 permalink: /program/TC.034.html
 popular_name: ''
@@ -30,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":210000000.0}]'
-title: Credit for construction of new energy efficient homes
+title: Allowance of deduction for certain energy efficient commercial building property
 usaspending_url: null
 ---

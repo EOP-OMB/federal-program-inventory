@@ -11,11 +11,14 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated and
-  deferred payments, should be included in taxable income. In contrast, the Tax Code
-  provides for tax-free distributions of up to $3,000 from governmental retirement
-  plans for premiums for health and long term care premiums of public safety officers.
+objective: The baseline tax system would not allow a deduction for personal expenditures
+  including charitable contributions. In contrast, the Tax Code provides individuals
+  and corporations a deduction for contributions to nonprofit health institutions.
+  Tax expenditures resulting from the deductibility of contributions to other charitable
+  institutions are listed under the education, training, employment, and social services
+  function.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10570000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":9000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10490000000.0}]'
 outlays: null
 permalink: /program/TC.137.html
 popular_name: ''
@@ -24,8 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":460000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":470000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":490000000.0}]'
-title: Distributions from retirement plans for premiums for health and long-term care
-  insurance
+title: Deductibility of charitable contributions to health institutions
 usaspending_url: null
 ---

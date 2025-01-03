@@ -18,6 +18,7 @@ objective: The baseline tax system generally would tax all income under the regu
   the 3.8 percent surtax). Certain sales of coal under royalty contracts qualify for
   taxation as capital gains rather than ordinary income.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0}]'
 outlays: null
 permalink: /program/TC.017.html
 popular_name: ''
@@ -26,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0}]'
-title: 'Capital gains treatment of royalties on coal '
+title: Capital gains treatment of royalties on coal
 usaspending_url: null
 ---

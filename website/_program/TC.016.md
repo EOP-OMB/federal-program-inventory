@@ -17,6 +17,7 @@ objective: The baseline tax system allows taxpayers to deduct the decline in the
   in the United States to be amortized over two years for non-integrated oil companies,
   a span of time that is generally shorter than the economic life of the assets.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":140000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0}]'
 outlays: null
 permalink: /program/TC.016.html
 popular_name: ''
@@ -25,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":140000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0}]'
 title: Amortize all geological and geophysical expenditures over 2 years
 usaspending_url: null
 ---

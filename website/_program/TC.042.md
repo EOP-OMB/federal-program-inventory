@@ -12,13 +12,13 @@ grants_url: null
 is_subpart_f: null
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low tax rates to apply to certain
-  types or sources of income. However, under current law certain timber sales can
-  be treated as a capital gain rather than ordinary income and therefore subject to
-  the lower capital-gains tax rate. Current law allows capital gains to be taxed at
-  a preferentially low rate that is no higher than 20 percent (plus the 3.8 percent
-  surtax).
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. In contrast, the Tax Code allows interest
+  earned on State and local bonds used to finance construction of sewage, water, or
+  hazardous waste facilities to be exempt from tax. These bonds are generally subject
+  to the State private-activity bond annual volume cap.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":290000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":350000000.0}]'
 outlays: null
 permalink: /program/TC.042.html
 popular_name: ''
@@ -27,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":180000000.0}]'
-title: 'Capital gains treatment of certain timber income '
+title: Exclusion of interest on bonds for water, sewage, and hazardous waste facilities
 usaspending_url: null
 ---

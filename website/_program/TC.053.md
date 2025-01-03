@@ -11,11 +11,12 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system requires the taxpayer to capitalize costs associated
-  with an investment over time. In contrast, the Tax Code provides for the expensing
-  of the first $10,000 in reforestation expenditures with 7-year amortization of the
-  remaining expenses.
+objective: The baseline tax system generally subjects capital gains to taxes the year
+  that they are realized. However, the Tax Code allows a taxpayer who sells stock
+  in a farm refiner to a farmers’ cooperative to defer recognition of the gain if
+  the proceeds are re-invested in a qualified replacement property.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.053.html
 popular_name: ''
@@ -24,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0}]'
-title: Expensing of reforestation expenditures
+title: Deferral of gain on sale of farm refiners
 usaspending_url: null
 ---

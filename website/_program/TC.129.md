@@ -5,27 +5,21 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Health
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.129
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, should be included in taxable income. Also, the baseline tax
-  system would not allow a deduction for personal expenditures and generally would
-  tax investment earnings. In contrast, individual contributions to Archer Medical
-  Savings Accounts (Archer MSAs) and Health Savings Accounts (HSAs) are allowed as
-  a deduction in determining adjusted gross income whether or not the individual itemizes
-  deductions. Employer contributions to Archer MSAs and HSAs are excluded from income
-  and employment taxes. Archer MSAs and HSAs require that the individual have coverage
-  by a qualifying high deductible health plan. Earnings from the accounts are excluded
-  from taxable income. Distributions from the accounts used for medical expenses are
-  not taxable. The rules for HSAs are generally more flexible than for Archer MSAs
-  and the deductible contribution amounts are greater (in 2024, $4,150 for taxpayers
-  with individual coverage and $8,300 for taxpayers with family coverage). Thus, HSAs
-  have largely replaced MSAs.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. In contrast, current law provides a credit equal to
+  12.5 to 25 percent of wages paid to qualifying employees while on family and medical
+  leave for up to 12 weeks per year. In order to qualify for the credit, an employer
+  must have a written policy in place that provides at least two weeks of paid family
+  and medical leave per year for full-time workers; additionally, employers must pay
+  at least 50 percent of an employee’s normal wages while they are on paid leave.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0}]'
 outlays: null
 permalink: /program/TC.129.html
 popular_name: ''
@@ -34,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":13000000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12830000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":14020000000.0}]'
-title: Medical Savings Accounts / Health Savings Accounts
+title: Employer-provided paid family and medical leave credit
 usaspending_url: null
 ---

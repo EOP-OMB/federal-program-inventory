@@ -11,14 +11,11 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including deferred and
-  dedicated payments, should be included in taxable income. In addition, investment
-  income would be taxed as earned. In contrast, under current law certain contributions
-  to defined benefit pension plans are excluded from an employee’s gross income until
-  the money is withdrawn, even though employers can deduct their contributions. In
-  addition, the tax on the investment income earned by defined benefit pension plans
-  is deferred until the money is withdrawn.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income. However, workers compensation
+  is not subject to the income tax under current law.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":9020000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":8870000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8780000000.0}]'
 outlays: null
 permalink: /program/TC.145.html
 popular_name: ''
@@ -27,8 +24,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":69340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":70100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":68430000000.0}]'
-title: 'Net exclusion of pension contributions and earnings: Defined benefit employer
-  plans'
+title: Exclusion of workers' compensation benefits
 usaspending_url: null
 ---

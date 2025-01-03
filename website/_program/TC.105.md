@@ -5,18 +5,21 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.105
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, under current law interest
-  earned on State and local Government bonds issued to finance the construction of
-  facilities used by private nonprofit educational institutions is not taxed.
+objective: The baseline tax system accepts current law’s general rule limiting taxpayers’
+  ability to deduct non-business interest expenses. In contrast, taxpayers may claim
+  an above-the-line deduction of up to $2,500 on interest paid on an education loan.
+  In 2023, the maximum deduction is phased down ratably for taxpayers with modified
+  AGI between $165,000 and $195,000 if married filing jointly ($80,000 and $95,000
+  for other taxpayers). Married individuals filing separate returns cannot claim the
+  deduction.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":560000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":500000000.0}]'
 outlays: null
 permalink: /program/TC.105.html
 popular_name: ''
@@ -25,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":2960000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2800000000.0}]'
-title: 'Exclusion of interest on bonds for private nonprofit educational facilities '
+title: Deductibility of student-loan interest
 usaspending_url: null
 ---

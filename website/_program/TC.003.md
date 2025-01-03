@@ -21,6 +21,7 @@ objective: In general, all compensation received by U.S. citizens and residents 
   supplement wage income and cover expenses such as rent, education, and the cost
   of travel to and from the United States.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":330000000.0}]'
 outlays: null
 permalink: /program/TC.003.html
 popular_name: ''
@@ -29,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":330000000.0}]'
 title: Exclusion of certain allowances for Federal employees abroad
 usaspending_url: null
 ---

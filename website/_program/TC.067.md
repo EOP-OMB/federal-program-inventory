@@ -11,17 +11,19 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would uniformly tax all returns to investments
-  and not allow credits for particular activities, investments, or industries. However,
-  under current law taxpayers who invest in certain low-income housing projects are
-  eligible for a tax credit. The credit rate is set so that the present value of the
-  credit is equal to at least 70 percent of the building’s qualified basis for new
-  construction and 30 percent for (1) housing receiving other Federal benefits (such
-  as tax-exempt bond financing) or (2) substantially rehabilitated existing housing.
-  The credit can exceed these levels in certain statutorily defined and State designated
-  areas where project development costs are higher. The credit is allowed in equal
-  amounts over 10 years and is generally subject to a volume cap.
+objective: The baseline tax system accepts current law’s general rule limiting taxpayers’
+  ability to deduct losses from passive activities against nonpassive income (e.g.,
+  wages, interest, and dividends). Passive activities generally are defined as those
+  in which the taxpayer does not materially participate, and there are numerous additional
+  considerations brought to bear on the determination of which activities are passive
+  for a given taxpayer. Losses are limited in an attempt to limit tax sheltering activities.
+  Passive losses that are unused may be carried forward and applied against future
+  passive income. In contrast to the general restrictions on passive losses, the Tax
+  Code exempts certain owners of rental real estate activities from “passive income”
+  limitations. The exemption is limited to $25,000 in losses and phases out for taxpayers
+  with income between $100,000 and $150,000.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4970000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5470000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8330000000.0}]'
 outlays: null
 permalink: /program/TC.067.html
 popular_name: ''
@@ -30,7 +32,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":11280000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12800000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13620000000.0}]'
-title: Credit for low-income housing investments
+title: Exception from passive loss rules for $25,000 of rental loss
 usaspending_url: null
 ---

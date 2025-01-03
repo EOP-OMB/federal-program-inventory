@@ -5,19 +5,21 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.116
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. In contrast, current law provides a credit equal to
-  25 percent of qualified expenses for employee child care and 10 percent of qualified
-  expenses for child care resource and referral services. Employer deductions for
-  such expenses are reduced by the amount of the credit. The maximum total credit
-  is limited to $150,000 per taxable year.
+  investments, or industries. Instead, it generally would seek to tax uniformly all
+  returns from investment-like activities. In contrast, the Tax Code was modified
+  in 2009 to provide a tax credit in lieu of interest to holders of qualified school
+  construction bonds. The national volume limit is $22.4 billion over 2009 and 2010.
+  As of March 2010, issuers of such bonds could opt to receive direct payment with
+  the yield becoming fully taxable.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":560000000.0,"forgone_revenue":520000000.0},{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0}]'
 outlays: null
 permalink: /program/TC.116.html
 popular_name: ''
@@ -26,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
-title: Employer-provided child care credit
+title: Qualified school construction bonds
 usaspending_url: null
 ---

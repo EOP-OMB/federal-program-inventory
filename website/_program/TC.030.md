@@ -22,6 +22,7 @@ objective: The baseline tax system would not allow credits for particular activi
   beginning on the date such facility was originally placed in service. Qualifying
   facilities must be placed in service before December 31, 2033.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":340000000.0},{"x":"2024","outlays":310000000.0,"forgone_revenue":540000000.0}]'
 outlays: null
 permalink: /program/TC.030.html
 popular_name: ''
@@ -30,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":340000000.0},{"x":"2024","outlays":310000000.0,"forgone_revenue":540000000.0}]'
 title: Clean hydrogen production credit
 usaspending_url: null
 ---

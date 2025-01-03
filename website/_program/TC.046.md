@@ -11,15 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow deductions in addition to normal
-  depreciation allowances for particular investments in particular industries. Instead,
-  it generally would seek to tax uniformly all returns from investment-like activities.
-  In contrast, under current law farmers can deduct up to 25 percent of their gross
-  income for expenses incurred as a result of site and habitat improvement activities
-  that will benefit endangered species on their farm land, in accordance with site
-  specific management actions included in species recovery plans approved pursuant
-  to the Endangered Species Act of 1973.
+objective: The baseline tax system would uniformly tax all returns to investments
+  and not allow credits for particular activities, investments, or industries. In
+  contrast, the Tax Code allows a credit for qualified carbon oxide captured at a
+  qualified facility and disposed of in secure geological storage. In addition, the
+  provision allows a credit for qualified carbon oxide that is captured at a qualified
+  facility and used as a tertiary injectant in a qualified enhanced oil or natural
+  gas recovery project. The credit differs according to whether the carbon was captured
+  using equipment which was originally placed in service before February 9, 2018,
+  or thereafter.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":360000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":330000000.0},{"x":"2024","outlays":140000000.0,"forgone_revenue":180000000.0}]'
 outlays: null
 permalink: /program/TC.046.html
 popular_name: ''
@@ -28,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0}]'
-title: Deduction for endangered species recovery expenditures
+title: Carbon oxide sequestration credit
 usaspending_url: null
 ---

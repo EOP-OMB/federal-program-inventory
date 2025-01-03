@@ -11,18 +11,18 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates, or
-  deferral of tax, to apply to certain types or sources of income. Dealers in real
-  and personal property (i.e., sellers who regularly hold property for sale or resale)
-  cannot defer taxable income from installment sales until the receipt of the loan
-  repayment. Nondealers (i.e., sellers of real property used in their business) are
-  required to pay interest on deferred taxes attributable to their total installment
-  obligations in excess of $5 million. Only properties with sales prices exceeding
-  $150,000 are includable in the total. The payment of a market rate of interest eliminates
-  the benefit of the tax deferral. The tax exemption for nondealers with total installment
-  obligations of less than $5 million is, therefore, a tax expenditure.
+objective: Under the baseline tax system, expenses incurred in earning income would
+  be deductible. However, such expenses would not be deductible when the income or
+  the return on an investment is not taxed. In contrast, the Tax Code allows an exclusion
+  from a taxpayer’s taxable income for the value of owner-occupied housing services
+  and also allows the owner-occupant to deduct property taxes paid on real property.
+  In the case of taxable years beginning after December 31, 2017, and before January
+  1, 2026, (1) the deduction for foreign real property taxes paid is disallowed and
+  (2) the deduction for taxes paid in any taxable year, which includes the deduction
+  for property taxes on real property, is limited to $10,000 ($5,000 in the case of
+  a married individual filing a separate return).
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":5110000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":6910000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6360000000.0}]'
 outlays: null
 permalink: /program/TC.063.html
 popular_name: ''
@@ -31,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1750000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0}]'
-title: 'Deferral of income from installment sales '
+title: Deductibility of State and local property tax on owner-occupied homes
 usaspending_url: null
 ---

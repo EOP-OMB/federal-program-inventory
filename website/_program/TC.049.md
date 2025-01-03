@@ -11,15 +11,13 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Because loan forgiveness increases a debtors net worth the baseline tax
-  system requires debtors to include the amount of loan forgiveness as income or else
-  reduce their recoverable basis in the property related to the loan. If the amount
-  of forgiveness exceeds the basis, the excess forgiveness is taxable if the taxpayer
-  is not insolvent. For bankrupt debtors, the amount of loan forgiveness reduces carryover
-  losses, unused credits, and then basis, with the remainder of the forgiven debt
-  excluded from taxation. Qualified farm debt that is forgiven, however, is excluded
-  from income even when the taxpayer is solvent.
+objective: The baseline tax system requires the taxpayer to capitalize costs associated
+  with an investment over time. However, the production of livestock and crops with
+  a production period greater than two years is exempt from the uniform cost capitalization
+  rules (e.g., for costs for establishing orchards or structure improvements), thereby
+  accelerating cost recovery.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":250000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":270000000.0}]'
 outlays: null
 permalink: /program/TC.049.html
 popular_name: ''
@@ -28,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0}]'
-title: Treatment of loans forgiven for solvent farmers
+title: Expensing of certain multiperiod production costs
 usaspending_url: null
 ---

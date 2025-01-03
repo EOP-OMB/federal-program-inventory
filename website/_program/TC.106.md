@@ -5,23 +5,24 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.106
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. Under current law, however, financial institutions that
-  own zone academy bonds receive a nonrefundable tax credit rather than interest.
-  The credit is included in gross income. Proceeds from zone academy bonds may only
-  be used to renovate, but not construct, qualifying schools and for certain other
-  school purposes. The total amount of zone academy bonds that may be issued was limited
-  to $1.4 billion in 2009 and 2010. As of March 2010, issuers of the unused authorization
-  of such bonds could opt to receive direct payment with the yield becoming fully
-  taxable. An additional $0.4 billion of these bonds with a tax credit was authorized
-  to be issued each year in 2011 through 2017.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. Some States have adopted prepaid tuition
+  plans, prepaid room and board plans, and college savings plans, which allow persons
+  to pay in advance or save for college expenses for designated beneficiaries. Under
+  current law, investment income, or the return on prepayments, is not taxed when
+  earned, and is tax-exempt when withdrawn to pay for qualified expenses. Beginning
+  in 2018, the definition of a qualified expense was expanded to include up to $10,000
+  per child per year of expenses for primary or secondary education, including tuition
+  at religious schools.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2790000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3220000000.0}]'
 outlays: null
 permalink: /program/TC.106.html
 popular_name: ''
@@ -30,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":110000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0}]'
-title: Credit for holders of zone academy bonds
+title: Qualified tuition programs (includes Education IRA)
 usaspending_url: null
 ---

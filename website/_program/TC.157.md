@@ -11,12 +11,13 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, the standard deduction is allowed. An additional
-  standard deduction for a targeted group within a given filing status would not be
-  allowed. In contrast, the Tax Code allows taxpayers who are 65 years or older to
-  claim an additional $1,950 standard deduction if single or $1,550 if married in
-  2024.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income. In addition, investment
+  income would be taxed as earned. Under current law, employers may establish trusts
+  to pay supplemental unemployment benefits to employees separated from employment.
+  Investment income earned by such trusts is exempt from taxation.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0}]'
 outlays: null
 permalink: /program/TC.157.html
 popular_name: ''
@@ -25,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":6300000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7540000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8120000000.0}]'
-title: 'Additional deduction for the elderly '
+title: Income of trusts to finance supplementary unemployment benefits
 usaspending_url: null
 ---

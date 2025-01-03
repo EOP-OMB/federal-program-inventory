@@ -29,6 +29,7 @@ objective: The baseline tax system would not allow credits for particular activi
   facilities that qualify for the energy production credit may instead elect to take
   an energy investment credit at a rate specified by law.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":7340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":25970000000.0},{"x":"2024","outlays":1460000000.0,"forgone_revenue":24170000000.0}]'
 outlays: null
 permalink: /program/TC.023.html
 popular_name: ''
@@ -37,7 +38,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":7340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":25970000000.0},{"x":"2024","outlays":1460000000.0,"forgone_revenue":24170000000.0}]'
 title: Energy investment credit
 usaspending_url: null
 ---

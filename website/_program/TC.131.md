@@ -11,12 +11,16 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, under current law interest
-  earned on State and local government debt issued to finance hospital construction
-  is excluded from income subject to tax.
+objective: Under the baseline tax system, all compensation and remuneration, including
+  dedicated payments and in-kind benefits, should be included in taxable income. In
+  contrast, under current law selfemployed taxpayers may deduct their family health
+  insurance premiums. Taxpayers without self-employment income are not eligible for
+  this special deduction. The deduction is not available for any month in which the
+  self-employed individual is eligible to participate in an employer-subsidized health
+  plan and the deduction may not exceed the self-employed individual’s earned income
+  from self-employment.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":8200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":8150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8530000000.0}]'
 outlays: null
 permalink: /program/TC.131.html
 popular_name: ''
@@ -25,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":4040000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3490000000.0}]'
-title: Exclusion of interest on hospital construction bonds
+title: Self-employed medical insurance premiums
 usaspending_url: null
 ---

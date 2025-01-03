@@ -11,20 +11,25 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all profits under the regular
-  tax rate schedule using broadly applicable measures of baseline income. It would
-  not allow preferentially low tax rates to apply to certain types or sources of income.
-  In contrast, certain Blue Cross and Blue Shield (BC/BS) health insurance providers
-  and certain other health insurers are provided with special tax benefits, provided
-  that their percentage of total premium revenue expended on reimbursement for clinical
-  services provided to enrollees or for activities that improve health care quality
-  is not less than 85 percent for the taxable year. A qualifying insurer may take
-  as a deduction 100 percent of any net increase in its unearned premium reserves,
-  instead of the 80 percent allowed other insurers. A qualifying insurer is also allowed
-  a special deduction equal to the amount by which 25 percent of its health-claim
-  expenses exceeds its beginning-of-the-year accounting surplus. The deduction is
-  limited to the insurer’s taxable income determined without the special deduction.
+objective: The baseline tax system would not allow credits for particular activities
+  or targeted at specific groups. In contrast, the Tax Code provides a tax credit
+  to qualified small employers that make a certain level of non-elective contributions
+  towards the purchase of certain health insurance coverage for its employees. To
+  receive a credit, an employer must have fewer than 25 full-time-equivalent employees
+  whose average annual full-time-equivalent wages from the employer are less than
+  $50,000 (indexed for taxable years after 2013). However, to receive a full credit,
+  an employer must have no more than 10 full-time employees, and the average wage
+  paid to these employees must be no more than $25,000 (indexed for taxable years
+  after 2013). A qualifying employer may claim the credit for any taxable year beginning
+  in 2010, 2011, 2012, and 2013 and for up to two years for insurance purchased through
+  a Health Insurance Exchange thereafter. For taxable years beginning in 2010, 2011,
+  2012, and 2013, the maximum credit is 35 percent of premiums paid by qualified taxable
+  employers and 25 percent of premiums paid by qualified tax-exempt organizations.
+  For taxable years beginning in 2014 and later years, the maximum tax credit increases
+  to 50 percent of premiums paid by qualified taxable employers and 35 percent of
+  premiums paid by qualified tax-exempt organizations.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
 outlays: null
 permalink: /program/TC.136.html
 popular_name: ''
@@ -33,7 +38,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0}]'
-title: 'Special Blue Cross/Blue Shield tax benefits '
+title: Credit for employee health insurance expenses of small business
 usaspending_url: null
 ---

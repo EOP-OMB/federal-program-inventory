@@ -18,6 +18,7 @@ objective: The baseline tax system generally would tax all income under the regu
   to be exempt from tax. These bonds are generally subject to the State private-activity-bond
   annual volume cap.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.018.html
 popular_name: ''
@@ -26,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
-title: 'Exclusion of interest on energy facility bonds '
+title: Exclusion of interest on energy facility bonds
 usaspending_url: null
 ---

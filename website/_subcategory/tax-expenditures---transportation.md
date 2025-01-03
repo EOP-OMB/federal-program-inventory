@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,15 +457,15 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/transportation
-programs: '[{"cfda":"TC.085","permalink":"/program/TC.085","title":"Tonnage tax","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.086","permalink":"/program/TC.086","title":"Deferral
-  of tax on shipping companies","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.087","permalink":"/program/TC.087","title":"Exclusion
-  of reimbursed employee parking expenses ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1707000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.088","permalink":"/program/TC.088","title":"Exclusion
-  for employer-provided transit passes ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":341000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.089","permalink":"/program/TC.089","title":"Tax
+programs: '[{"cfda":"TC.088","permalink":"/program/TC.088","title":"Tonnage tax","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.089","permalink":"/program/TC.089","title":"Deferral
+  of tax on shipping companies","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.090","permalink":"/program/TC.090","title":"Exclusion
+  of reimbursed employee parking expenses","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":1707000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.091","permalink":"/program/TC.091","title":"Exclusion
+  for employer-provided transit passes","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":341000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.092","permalink":"/program/TC.092","title":"Tax
   credit for certain expenditures for maintaining railroad tracks","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":170000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.090","permalink":"/program/TC.090","title":"Exclusion
+  of the Treasury","total_obs":170000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.093","permalink":"/program/TC.093","title":"Exclusion
   of interest on bonds for Highway Projects and rail-truck transfer facilities","popular_name":null,"agency":"Department
   of the Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"}]'
 title: Transportation

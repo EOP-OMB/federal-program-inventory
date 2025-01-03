@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":2,"total_obs":73396000.0},{"title":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
+  Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":2},{"title":"Individual/Family","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Training","total_num_programs":1}]'
+  (specify)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -335,6 +335,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -407,8 +412,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -429,6 +432,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -455,10 +460,10 @@ fiscal_year: '2022'
 parent_permalink: /category/consumer-protection
 parent_title: Consumer Protection
 permalink: /category/consumer-protection/complaint-investigation
-programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
-  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
-  Support and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
+programs: '[{"cfda":"38.009","permalink":"/program/38.009","title":"Board Support
+  and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
   Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
   of Agriculture","total_obs":62297000.0,"program_type":"assistance_listing"},{"cfda":"10.165","permalink":"/program/10.165","title":"Perishable
   Agricultural Commodities Act","popular_name":null,"agency":"Department of Agriculture","total_obs":11099000.0,"program_type":"assistance_listing"}]'

@@ -1,17 +1,14 @@
 ---
 agencies: '[{"title":"Library of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Advisory Services and Counseling","total_num_programs":1},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Federal Employment","total_num_programs":1},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":1},{"title":"Guaranteed
-  / Insured Loans","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
+applicant_types: '[{"title":"Anyone/general public","total_num_programs":1},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Provision
-  of Specialized Services","total_num_programs":1},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Sale,
-  Exchange, or Donation of Property or Goods","total_num_programs":1},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Training","total_num_programs":1},{"title":"U.S.
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
   Territories and possessions","total_num_programs":1},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":1}]'
 categories_subcategories:
@@ -345,6 +342,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -417,8 +419,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -439,6 +439,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -466,11 +468,11 @@ parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/library-of-congress
 programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
-  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.014","permalink":"/program/42.014","title":"Affiliate
-  Centers for the Book Programming Grants","popular_name":null,"agency":"Library of
-  Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
+  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
   the People: Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library
-  of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.014","permalink":"/program/42.014","title":"Affiliate
+  Centers for the Book Programming Grants","popular_name":null,"agency":"Library of
+  Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Library of Congress
 total_num_agencies: 2
 total_num_applicant_types: 16

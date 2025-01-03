@@ -11,16 +11,12 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, would be included in taxable income. Dedicated payments and
-  in-kind benefits represent accretions to wealth that do not differ materially from
-  cash wages. In contrast, the Tax Code allows an exclusion from a taxpayer’s taxable
-  income for passes, tokens, fare cards, and vanpool expenses that are paid for by
-  an employer or that are received by the employee in lieu of wages to defray an employee’s
-  commuting costs. Due to a parity to parking provision, the maximum amount of the
-  transit exclusion is $315 per month in 2024. However, beginning in 2018, transit
-  expenses are no longer deductible to employers.
+objective: The baseline tax system generally would tax all profits and income under
+  the regular tax rate schedule. U.S. shipping companies may choose to be subject
+  to a tonnage tax based on gross shipping weight in lieu of an income tax, in which
+  case profits would not be subject to tax under the regular tax rate schedule.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":90000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0}]'
 outlays: null
 permalink: /program/TC.088.html
 popular_name: ''
@@ -29,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":341000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":369000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":390000000.0}]'
-title: 'Exclusion for employer-provided transit passes '
+title: Tonnage tax
 usaspending_url: null
 ---

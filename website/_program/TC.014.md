@@ -17,6 +17,7 @@ objective: A credit is provided equal to 15 percent of the taxpayer’s costs fo
   to the ratio of the excess over the $28 threshold to $6. Beyond a $6 difference,
   the credit is fully phased out.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":390000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":200000000.0}]'
 outlays: null
 permalink: /program/TC.014.html
 popular_name: ''
@@ -25,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":390000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":200000000.0}]'
 title: Enhanced oil recovery credit
 usaspending_url: null
 ---

@@ -25,6 +25,7 @@ objective: Under the baseline tax system, the costs of exploring and developing 
   may expense only 70 percent of intangible drilling costs and must amortize the remaining
   30 percent over five years. Non-integrated oil companies may expense all such costs.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":550000000.0}]'
 outlays: null
 permalink: /program/TC.009.html
 popular_name: ''
@@ -33,7 +34,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":550000000.0}]'
 title: Expensing of exploration and development costs, oil and gas
 usaspending_url: null
 ---

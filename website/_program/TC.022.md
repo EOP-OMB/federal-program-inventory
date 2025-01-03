@@ -27,6 +27,7 @@ objective: The baseline tax system would not allow credits for particular activi
   communities. Starting in 2025, the credit becomes a technology neutral credit, and
   it begins to phase out as early as 2034.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7450000000.0},{"x":"2024","outlays":370000000.0,"forgone_revenue":7220000000.0}]'
 outlays: null
 permalink: /program/TC.022.html
 popular_name: ''
@@ -35,7 +36,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":4160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7450000000.0},{"x":"2024","outlays":370000000.0,"forgone_revenue":7220000000.0}]'
 title: Energy production credit
 usaspending_url: null
 ---

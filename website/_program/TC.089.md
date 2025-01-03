@@ -11,13 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. However, the Tax Code allowed eligible taxpayers to
-  claim a credit equal to the lesser of 50 percent of maintenance expenditures and
-  the product of $3,500 and the number of miles of railroad track owned or leased.
-  This provision applies to maintenance expenditures in taxable years beginning before
-  January 1, 2017.
+objective: The baseline tax system generally would tax all profits and income under
+  the regular tax rate schedule. It would not allow preferentially low (or zero) tax
+  rates to apply to certain types or sources of income. In contrast, the Tax Code
+  allows certain companies that operate U.S. flag vessels to defer income taxes on
+  that portion of their income used for shipping purposes (e.g., primarily construction,
+  modernization and major repairs to ships, and repayment of loans to finance these
+  investments).
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.089.html
 popular_name: ''
@@ -26,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0}]'
-title: Tax credit for certain expenditures for maintaining railroad tracks
+title: Deferral of tax on shipping companies
 usaspending_url: null
 ---

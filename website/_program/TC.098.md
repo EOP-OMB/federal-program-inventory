@@ -11,17 +11,12 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow deferral or exclusion from income for investments
-  made within certain geographic regions. In contrast, the Tax Code allows the temporary
-  deferral of the recognition of capital gain if reinvested prior to December 31,
-  2026, in a qualifying opportunity fund which in turn invests in qualifying low-income
-  communities designated as opportunity zones. For qualifying investments held at
-  least 5 years, 10 percent of the deferred gain is excluded from income; this exclusion
-  increases to 15 percent for investments held for at least 7 years. In addition,
-  capital gains from the sale or exchange of an investment in a qualified opportunity
-  fund held for at least 10 years are excluded from gross income.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. Instead, under current law taxpayers that own Gulf and
+  Midwest Tax Credit bonds receive a non-refundable tax credit rather than interest.
+  The credit is included in gross income.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.098.html
 popular_name: ''
@@ -30,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":3740000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2080000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3040000000.0}]'
-title: Opportunity Zones
+title: Credit to holders of Gulf and Midwest Tax Credit Bonds .
 usaspending_url: null
 ---

@@ -11,12 +11,14 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates, or
-  deferral of tax, to apply to certain types or sources of income. In contrast, current
-  law allows the deferral of accrued gains on assets transferred in qualified likekind
-  exchanges.
+objective: Under the baseline tax system, unrealized capital gains would be taxed
+  when assets are transferred by gift. In contrast, when a gift of appreciated asset
+  is made under current law, the donor’s basis in the transferred property (the cost
+  that was incurred when the transferred property was first acquired) carries over
+  to the donee. The carryover of the donor’s basis allows a continued deferral of
+  unrealized capital gains.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4590000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4830000000.0}]'
 outlays: null
 permalink: /program/TC.078.html
 popular_name: ''
@@ -25,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":3830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":7650000000.0}]'
-title: Deferral of capital gains from like-kind exchanges
+title: Carryover basis of capital gains on gifts
 usaspending_url: null
 ---

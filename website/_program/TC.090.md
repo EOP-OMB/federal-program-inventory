@@ -11,12 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, the Tax Code provides
-  for $15 billion of tax-exempt bond authority to finance qualified highway or surface
-  freight transfer facilities.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, would be included in taxable income. Dedicated payments and
+  in-kind benefits represent accretions to wealth that do not differ materially from
+  cash wages. In contrast, the Tax Code allows an exclusion from taxable income for
+  employee parking expenses that are paid for by the employer or that are received
+  by the employee in lieu of wages. In 2024, the maximum amount of the parking exclusion
+  is $315 per month. The tax expenditure estimate does not include any subsidy provided
+  through employer-owned parking facilities. However, beginning in 2018, parking expenses
+  are no longer deductible to employers.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1707000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1827000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1950000000.0}]'
 outlays: null
 permalink: /program/TC.090.html
 popular_name: ''
@@ -25,8 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":140000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":140000000.0}]'
-title: Exclusion of interest on bonds for Highway Projects and rail-truck transfer
-  facilities
+title: Exclusion of reimbursed employee parking expenses
 usaspending_url: null
 ---

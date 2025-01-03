@@ -11,16 +11,13 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under a comprehensive economic income tax, the costs of acquiring a building
-  are capitalized and depreciated over time in accordance with the decline in the
-  property’s economic value due to wear and tear or obsolescence. This ensures that
-  the net income from the property is measured appropriately each year. Current law
-  allows depreciation deductions that differ from those under economic depreciation.
-  However, the depreciation provisions of the Tax Code are part of the reference tax
-  law, and thus do not give rise to tax expenditures under reference tax law. Under
-  normal tax baseline, in contrast, depreciation allowances reflect estimates of economic
-  depreciation.
+objective: The baseline tax system limits to $3,000 the write-off of losses from capital
+  assets, with carryover of the excess to future years. In contrast, the Tax Code
+  allows up to $100,000 in losses from the sale of small business corporate stock
+  (capitalization less than $1 million) to be treated as ordinary losses and fully
+  deducted.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0}]'
 outlays: null
 permalink: /program/TC.079.html
 popular_name: ''
@@ -29,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":2720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":920000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":440000000.0}]'
-title: 'Depreciation of buildings other than rental housing (normal tax method) '
+title: Ordinary income treatment of loss from small business corporation stock sale
 usaspending_url: null
 ---

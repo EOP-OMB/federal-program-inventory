@@ -20,6 +20,7 @@ objective: The baseline tax system would not allow credits for particular activi
   credit for biodiesel production, and a separate credit is available for qualified
   renewable diesel fuel mixtures. This provision expires on December 31, 2024.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":3660000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.028.html
 popular_name: ''
@@ -28,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":3660000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
 title: Bio-Diesel and small agri-biodiesel producer tax credits
 usaspending_url: null
 ---

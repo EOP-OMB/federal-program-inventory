@@ -5,17 +5,19 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Interest
+- Tax Expenditures - Veterans Benefits and Services
 cfda: TC.170
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would uniformly tax all returns to investments
-  and not allow an exemption or deferral for particular activities, investments, or
-  industries. In contrast, taxpayers may defer paying tax on interest earned on U.S.
-  savings bonds until the bonds are redeemed.
+objective: The baseline tax system generally would tax all income under the regular
+  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
+  apply to certain types or sources of income. In contrast, under current law, the
+  interest earned on general obligation bonds issued by State and local governments
+  to finance housing for veterans is excluded from taxable income.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":80000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0}]'
 outlays: null
 permalink: /program/TC.170.html
 popular_name: ''
@@ -24,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":910000000.0}]'
-title: 'Deferral of interest on U.S. savings bonds '
+title: Exclusion of interest on veterans housing bonds
 usaspending_url: null
 ---

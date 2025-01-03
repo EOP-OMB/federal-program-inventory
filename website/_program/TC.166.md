@@ -5,18 +5,22 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Veterans Benefits and Services
+- Tax Expenditures - Social Security
 cfda: TC.166
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, under current law, the
-  interest earned on general obligation bonds issued by State and local governments
-  to finance housing for veterans is excluded from taxable income.
+objective: Under the baseline tax system, employer contributions to Social Security
+  represent labor cost and are deductible expenses. Under current law, however, certain
+  employers are allowed a tax credit, instead of a deduction, against taxes paid on
+  tips received from customers in connection with the providing, delivering, or serving
+  of food or beverages for consumption. The tip credit equals the full amount of the
+  employer’s share of FICA taxes paid on the portion of tips, when added to the employee’s
+  non-tip wages, in excess of $5.15 per hour. The credit is available only with respect
+  to FICA taxes paid on tips.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1520000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1740000000.0}]'
 outlays: null
 permalink: /program/TC.166.html
 popular_name: ''
@@ -25,7 +29,7 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":80000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0}]'
-title: Exclusion of interest on veterans housing bonds
+title: 'Exclusion of social security benefits: Credit for certain employer contributions
+  to social security'
 usaspending_url: null
 ---

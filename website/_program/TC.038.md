@@ -12,15 +12,13 @@ grants_url: null
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
-  investments, or industries. However, the Tax Code provides credits of varying amounts
-  for the production within the United States and sale of specified eligible components,
-  including specified solar energy components, wind energy components, inverters,
-  qualifying battery components, and applicable critical minerals. The production
-  of an eligible component is only eligible for a credit if sold after 2022. For all
-  eligible components other than applicable critical minerals, the credit is phased
-  out from 2030 to 2032, with components other than critical minerals no longer receiving
-  any credit if sold after 2032.
+  investments, or industries. However, the Tax Code provides a 30 percent investment
+  credit for property used in a qualified advanced energy manufacturing project. The
+  Treasury Department may award up to $12.3 billion in tax credits for qualified investments.
+  Of the total $12.3 billion, $4 billion is reserved for projects located in energy
+  communities.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":1170000000.0}]'
 outlays: null
 permalink: /program/TC.038.html
 popular_name: ''
@@ -29,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":6000000000.0,"forgone_revenue":870000000.0}]'
-title: Advanced manufacturing production credit
+title: Advanced energy property credit
 usaspending_url: null
 ---

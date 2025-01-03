@@ -77,12 +77,12 @@ def get_assistance_program_obligations(cursor, program_id, fiscal_years):
     return obligations
 
 def get_other_program_obligations(cursor, program_id, fiscal_years):
-    """Get obligations data for tax expenditure programs."""
-    tax_obligations = []
+    """Get obligations data for other programs."""
+    other_program_obligations = []
     for year in fiscal_years:
         cursor.execute("""
             SELECT fiscal_year, outlays, forgone_revenue, source
-            FROM program_tax_expenditure_spending
+            FROM other_program_spending
             WHERE program_id = ? AND fiscal_year = ?
         """, (program_id, year))
         
@@ -92,9 +92,9 @@ def get_other_program_obligations(cursor, program_id, fiscal_years):
             'outlays': float(row['outlays']) if row and row['outlays'] is not None else 0.0,
             'forgone_revenue': float(row['forgone_revenue']) if row and row['forgone_revenue'] is not None else 0.0
         }
-        tax_obligations.append(year_data)
+        other_program_obligations.append(year_data)
 
-    return tax_obligations
+    return other_program_obligations
 
 def get_outlays_data(cursor, program_id, fiscal_years):
     """Get outlays data for specified fiscal years."""
@@ -131,7 +131,7 @@ def get_outlays_data(cursor, program_id, fiscal_years):
 def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_year: str) -> List[Dict[str, Any]]:
     """
     Generate list of agencies with program counts and obligations for a set of programs.
-    Includes both SAM spending and tax expenditure obligations.
+    Includes both SAM spending and other program obligations.
     """
     if not program_ids:
         return []
@@ -156,19 +156,20 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
         if agency_name not in agency_programs:
             agency_programs[agency_name] = {
                 'regular': [],
-                'tax_expenditure': []
+                'other_program': []
             }
         
-        if row['program_type'] == 'tax_expenditure':
-            agency_programs[agency_name]['tax_expenditure'].append(row['program_id'])
-        else:
+        if row['program_type'] == 'assistance listing':
             agency_programs[agency_name]['regular'].append(row['program_id'])
+        else:
+            agency_programs[agency_name]['other_program'].append(row['program_id'])
+            
 
     # Calculate obligations for each agency
     agencies = []
     for agency_name, programs in agency_programs.items():
         total_obs = 0
-        total_programs = len(programs['regular']) + len(programs['tax_expenditure'])
+        total_programs = len(programs['regular']) + len(programs['other_program'])
 
         # Get regular program obligations
         if programs['regular']:
@@ -185,15 +186,15 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
             
             total_obs += float(cursor.fetchone()['total_obs'])
 
-        # Get tax expenditure obligations
-        if programs['tax_expenditure']:
-            placeholders = ','.join('?' * len(programs['tax_expenditure']))
+        # Get other obligations
+        if programs['other_program']:
+            placeholders = ','.join('?' * len(programs['other_program']))
             cursor.execute(f"""
                 SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_obs
-                FROM program_tax_expenditure_spending
+                FROM other_program_spending
                 WHERE fiscal_year = ?
                 AND program_id IN ({placeholders})
-            """, [fiscal_year] + programs['tax_expenditure'])
+            """, [fiscal_year] + programs['other_program'])
             
             total_obs += float(cursor.fetchone()['total_obs'])
 
@@ -219,7 +220,8 @@ def generate_applicant_type_list(cursor: sqlite3.Cursor, program_ids: List[str])
             COUNT(DISTINCT ptc.program_id) as total_num_programs
         FROM category c
         JOIN program_to_category ptc ON c.id = ptc.category_id
-        WHERE ptc.category_type = 'applicant'
+        WHERE c.type = 'applicant'
+        AND c.type = ptc.category_type
         AND ptc.program_id IN ({})
         GROUP BY c.name
         HAVING 
@@ -227,7 +229,7 @@ def generate_applicant_type_list(cursor: sqlite3.Cursor, program_ids: List[str])
             AND total_num_programs > 0
         ORDER BY total_num_programs DESC, title
     """.format(','.join('?' * len(program_ids))), program_ids)
-    
+        
     applicant_types = []
     for row in cursor.fetchall():
         applicant_types.append({
@@ -294,7 +296,7 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
     return categories
 
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for categories with obligations from both regular and tax expenditure programs."""
+    """Generate markdown files for categories with obligations from both regular and other programs."""
     ensure_directory_exists(output_dir)
 
     # Get all parent categories with at least one program
@@ -337,8 +339,8 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             continue
 
         # Split programs by type
-        regular_program_ids = [p['id'] for p in programs if p['program_type'] != 'tax_expenditure']
-        tax_program_ids = [p['id'] for p in programs if p['program_type'] == 'tax_expenditure']
+        regular_program_ids = [p['id'] for p in programs if p['program_type'] == 'assistance_listing']
+        other_program_ids = [p['id'] for p in programs if p['program_type'] != 'assistance_listing']
 
         # Calculate total category obligations
         total_category_obs = 0
@@ -358,17 +360,17 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             
             total_category_obs += float(cursor.fetchone()['total_obligations'])
 
-        # Get obligations for tax expenditure programs
-        if tax_program_ids:
-            placeholders = ','.join('?' * len(tax_program_ids))
+        # Get obligations for other programs
+        if other_program_ids:
+            placeholders = ','.join('?' * len(other_program_ids))
             cursor.execute(f"""
-                SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_tax_obs
-                FROM program_tax_expenditure_spending
+                SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_other_obligation
+                FROM other_program_spending
                 WHERE fiscal_year = ?
                 AND program_id IN ({placeholders})
-            """, [fiscal_year] + tax_program_ids)
+            """, [fiscal_year] + other_program_ids)
             
-            total_category_obs += float(cursor.fetchone()['total_tax_obs'])
+            total_category_obs += float(cursor.fetchone()['total_other_obligation'])
 
         # Get subcategories with their stats
         cursor.execute("""
@@ -399,8 +401,8 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             subcat_programs = cursor.fetchall()
             
             # Split subcategory programs by type
-            sub_regular_ids = [p['id'] for p in subcat_programs if p['program_type'] != 'tax_expenditure']
-            sub_tax_ids = [p['id'] for p in subcat_programs if p['program_type'] == 'tax_expenditure']
+            sub_regular_ids = [p['id'] for p in subcat_programs if p['program_type'] == 'assistance_listing']
+            sub_other_ids = [p['id'] for p in subcat_programs if p['program_type'] != 'assistance_listing']
             
             # Calculate total obligations for subcategory
             subcat_total_obs = 0
@@ -421,17 +423,17 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
                 
                 subcat_total_obs += float(cursor.fetchone()['total_obligations'])
 
-            # Get tax expenditure obligations
-            if sub_tax_ids:
-                placeholders = ','.join('?' * len(sub_tax_ids))
+            # Get other obligations
+            if sub_other_ids:
+                placeholders = ','.join('?' * len(sub_other_ids))
                 cursor.execute(f"""
-                    SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_tax_obs
-                    FROM program_tax_expenditure_spending
+                    SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_other_obligation
+                    FROM other_program_spending
                     WHERE fiscal_year = ?
                     AND program_id IN ({placeholders})
-                """, [fiscal_year] + sub_tax_ids)
+                """, [fiscal_year] + sub_other_ids)
                 
-                subcat_total_obs += float(cursor.fetchone()['total_tax_obs'])
+                subcat_total_obs += float(cursor.fetchone()['total_other_obligation'])
 
             subcats.append({
                 'title': subcat['title'],
@@ -489,8 +491,10 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             yaml.dump(category_data, file, allow_unicode=True)
             file.write('---\n')
 
+    print("Successfully generated category markdown files")
+
 def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for subcategories with obligations from both regular and tax expenditure programs."""
+    """Generate markdown files for subcategories with obligations from both regular and other programs."""
     ensure_directory_exists(output_dir)
     
     # Get all subcategories that have at least one program
@@ -541,8 +545,8 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             continue
 
         # Split programs by type
-        regular_program_ids = [p['id'] for p in programs if p['program_type'] != 'tax_expenditure']
-        tax_program_ids = [p['id'] for p in programs if p['program_type'] == 'tax_expenditure']
+        regular_program_ids = [p['id'] for p in programs if p['program_type'] == 'assistance_listing']
+        other_program_ids = [p['id'] for p in programs if p['program_type'] != 'assistance_listing']
         
         # Initialize total obligations
         total_subcategory_obs = 0
@@ -567,17 +571,17 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
                 program_obligations[row['program_id']] = float(row['total_obs'])
                 total_subcategory_obs += float(row['total_obs'])
 
-        # Get obligations for tax expenditure programs
-        if tax_program_ids:
-            placeholders = ','.join('?' * len(tax_program_ids))
+        # Get obligations for other programs
+        if other_program_ids:
+            placeholders = ','.join('?' * len(other_program_ids))
             cursor.execute(f"""
                 SELECT program_id,
                     COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_obs
-                FROM program_tax_expenditure_spending
+                FROM other_program_spending
                 WHERE fiscal_year = ?
                 AND program_id IN ({placeholders})
                 GROUP BY program_id
-            """, [fiscal_year] + tax_program_ids)
+            """, [fiscal_year] + other_program_ids)
             
             for row in cursor.fetchall():
                 program_obligations[row['program_id']] = float(row['total_obs'])
@@ -638,6 +642,8 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             file.write('---\n')
             yaml.dump(subcategory_data, file, allow_unicode=True)
             file.write('---\n')
+    
+    print("Successfully generated sub-category markdown files")
 
 def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> List[Dict[str, Any]]:
     """
@@ -672,22 +678,32 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
     base_programs = cursor.fetchall()
     
     for program in base_programs:
-        # Modified query to only use category.type
         cursor.execute("""
             SELECT DISTINCT
                 c.type as category_type,
-                c.name as category_name,
+                CASE 
+                    WHEN c.type = 'assistance' AND c.parent_id IS NOT NULL THEN pc.name
+                    ELSE c.name 
+                END as category_name,
                 pc.name as parent_category_name
             FROM program_to_category ptc
-            JOIN category c ON ptc.category_id = c.id
+            INNER JOIN category c ON ptc.category_id = c.id 
             LEFT JOIN category pc ON c.parent_id = pc.id
             WHERE ptc.program_id = ?
+            AND c.type = ptc.category_type
+            AND NOT EXISTS (
+                -- Ensure this name is not used by any other category type
+                SELECT 1 
+                FROM category c2
+                WHERE (c2.name = c.name OR c2.name = pc.name)
+                AND c2.type != c.type
+            )
         """, (program['id'],))
         
         categories = cursor.fetchall()
         
         # Get obligations based on program type
-        if program['program_type'] != 'assistance_listings':
+        if program['program_type'] != 'assistance_listing':
             obligations = None
             other_program_spending = get_other_program_obligations(cursor, program['id'], fiscal_years)
             outlays = None
@@ -861,6 +877,8 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         WHERE c.type = 'applicant'
+        AND c.type = ptc.category_type
+        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id AND type = ptc.category_type)
         ORDER BY c.name
     """)
     applicant_types = [{'title': row['title']} for row in cursor.fetchall()]
@@ -868,12 +886,23 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     # Get simple categories for assistance types
     cursor.execute("""
         SELECT DISTINCT 
-            c.name as title
+            CASE 
+                WHEN c.parent_id IS NOT NULL THEN pc.name
+                ELSE c.name 
+            END as title
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
-        JOIN category c ON ptc.category_id = c.id
-        WHERE c.type = 'assistance'
-        ORDER BY c.name
+        JOIN category c ON ptc.category_id = c.id AND c.type = 'assistance' 
+        LEFT JOIN category pc ON c.parent_id = pc.id
+        WHERE c.type = ptc.category_type
+        AND NOT EXISTS (
+            -- Ensure this name is not used by any other category type
+            SELECT 1 
+            FROM category c2
+            WHERE (c2.name = c.name OR c2.name = pc.name)
+            AND c2.type != 'assistance'
+        )
+        ORDER BY title
     """)
     assistance_types = [{'title': row['title']} for row in cursor.fetchall()]
 
@@ -885,6 +914,8 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         WHERE c.type = 'beneficiary'
+        AND c.type = ptc.category_type
+        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id AND type = ptc.category_type)
         ORDER BY c.name
     """)
     beneficiary_types = [{'title': row['title']} for row in cursor.fetchall()]
@@ -900,6 +931,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN category c ON ptc.category_id = c.id
         JOIN category pc ON c.parent_id = pc.id
         WHERE c.type = 'category'
+        AND c.type = ptc.category_type    
         ORDER BY pc.name, c.name
     """)
     
@@ -1040,12 +1072,12 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     for program in programs_data:
         # Calculate obligations based on program type
         if program['program_type'] != 'assistance_listing':
-            # For tax expenditure programs, sum outlays and forgone_revenue
-            current_year_tax = next(
+            # For other programs, sum outlays and forgone_revenue
+            current_year_part_obligation = next(
                 (tx for tx in program['other_program_spending'] if tx['x'] == fiscal_year),
                 {'outlays': 0, 'forgone_revenue': 0}
             )
-            current_year_obligation = current_year_tax['outlays'] + current_year_tax['forgone_revenue']
+            current_year_obligation = current_year_part_obligation['outlays'] + current_year_part_obligation['forgone_revenue']
         else:
             # For assistance programs, use sam_actual
             current_year_obligation = next(
@@ -1093,10 +1125,11 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     
     # Sort by obligations descending
     programs_json.sort(key=lambda x: x['obligations'], reverse=True)
-    
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as file:
         json.dump(programs_json, file, separators=(',', ':'))
+    print("Successfully generated program json")
 
 def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str, Any]], 
                          output_path: str, fiscal_year: str):
@@ -1117,12 +1150,6 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         FROM program
     """)
     program_types = [row['program_type'] for row in cursor.fetchall()]
-    
-    # Define program type mapping
-    PROGRAM_TYPE_MAPPING = {
-        'tax_expenditure': 'Tax Credit',
-        'assistance_listing': 'Financial Assistance'
-    }
     
     # Calculate overall obligations by program type
     obligations_by_type = []
@@ -1152,10 +1179,10 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         if prog_type != 'assistance_listing':
             placeholders = ','.join('?' * len(prog_ids))
             cursor.execute(f"""
-                SELECT SUM(total_tax) as total_obs
+                SELECT SUM(total_other_obligation) as total_obs
                 FROM (
                     SELECT DISTINCT program_id,
-                           (outlays + forgone_revenue) as total_tax
+                           (outlays + forgone_revenue) as total_other_obligation
                     FROM other_program_spending
                     WHERE fiscal_year = ?
                     AND program_id IN ({placeholders})
@@ -1177,7 +1204,7 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
         type_total = float(cursor.fetchone()['total_obs'] or 0)
         if type_total > 0:
             obligations_by_type.append({
-                'title': PROGRAM_TYPE_MAPPING.get(prog_type, prog_type),
+                'title': constants.PROGRAM_TYPE_MAPPING.get(prog_type, prog_type),
                 'total_obs': type_total
             })
     
@@ -1227,10 +1254,10 @@ def generate_category_page(cursor: sqlite3.Cursor, programs_data: List[Dict[str,
                 if prog_type != 'assistance_listing':
                     placeholders = ','.join('?' * len(prog_ids))
                     cursor.execute(f"""
-                        SELECT SUM(total_tax) as total_obs
+                        SELECT SUM(total_other_obligation) as total_obs
                         FROM (
                             SELECT DISTINCT program_id,
-                                   (outlays + forgone_revenue) as total_tax
+                                   (outlays + forgone_revenue) as total_other_obligation
                             FROM other_program_spending
                             WHERE fiscal_year = ?
                             AND program_id IN ({placeholders})
@@ -1342,30 +1369,29 @@ try:
 
     programs_data = generate_program_data(cursor, FISCAL_YEARS)
 
-    # shared_data = generate_shared_data(cursor)
+    shared_data = generate_shared_data(cursor)
 
-    # generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
+    generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
 
-    # generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
+    generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
     
-    # search_path = os.path.join('../website', 'pages', 'search.md')
-    # generate_search_page(search_path, shared_data, FISCAL_YEARS[0])
+    search_path = os.path.join('../website', 'pages', 'search.md')
+    generate_search_page(search_path, shared_data, FISCAL_YEARS[0])
     
     category_path = os.path.join('../website', 'pages', 'category.md')
     generate_category_page(cursor, programs_data, category_path, FISCAL_YEARS[0])
     
-    # home_path = os.path.join('../website', 'pages', 'home.md')
-    # generate_home_page(home_path, shared_data, FISCAL_YEARS[0])
+    home_path = os.path.join('../website', 'pages', 'home.md')
+    generate_home_page(home_path, shared_data, FISCAL_YEARS[0])
     
-    # programs_json_path = os.path.join('../website', 'data', 'programs-table.json')
-    # generate_programs_table_json(programs_json_path, programs_data, FISCAL_YEARS[0])
+    programs_json_path = os.path.join('../website', 'data', 'programs-table.json')
+    generate_programs_table_json(programs_json_path, programs_data, FISCAL_YEARS[0])
     
-    # category_dir = os.path.join('../website', '_category')
-    # generate_category_markdown_files(cursor, category_dir, FISCAL_YEARS[0])
+    category_dir = os.path.join('../website', '_category')
+    generate_category_markdown_files(cursor, category_dir, FISCAL_YEARS[0])
     
-    # subcategory_dir = os.path.join('../website', '_subcategory')
-    # generate_subcategory_markdown_files(cursor, subcategory_dir, FISCAL_YEARS[0])
-    
+    subcategory_dir = os.path.join('../website', '_subcategory')
+    generate_subcategory_markdown_files(cursor, subcategory_dir, FISCAL_YEARS[0])
 
 except sqlite3.Error as e:
     print(f"Database error occurred: {e}")

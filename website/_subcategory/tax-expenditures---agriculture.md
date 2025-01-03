@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -452,17 +457,17 @@ fiscal_year: '2022'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/agriculture
-programs: '[{"cfda":"TC.047","permalink":"/program/TC.047","title":"Expensing of certain
-  capital outlays ","popular_name":null,"agency":"Department of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.048","permalink":"/program/TC.048","title":"Expensing
-  of certain multiperiod production costs ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":260000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.049","permalink":"/program/TC.049","title":"Treatment
+programs: '[{"cfda":"TC.048","permalink":"/program/TC.048","title":"Expensing of certain
+  capital outlays","popular_name":null,"agency":"Department of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.049","permalink":"/program/TC.049","title":"Expensing
+  of certain multiperiod production costs","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":260000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.050","permalink":"/program/TC.050","title":"Treatment
   of loans forgiven for solvent farmers","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.050","permalink":"/program/TC.050","title":"Capital
-  gains treatment of certain agriculture income ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.051","permalink":"/program/TC.051","title":"Income
-  averaging for farmers","popular_name":null,"agency":"Department of the Treasury","total_obs":200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.052","permalink":"/program/TC.052","title":"Deferral
+  of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.051","permalink":"/program/TC.051","title":"Capital
+  gains treatment of certain agriculture income","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":1500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.052","permalink":"/program/TC.052","title":"Income
+  averaging for farmers","popular_name":null,"agency":"Department of the Treasury","total_obs":200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.053","permalink":"/program/TC.053","title":"Deferral
   of gain on sale of farm refiners","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":15000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.053","permalink":"/program/TC.053","title":"Expensing
+  Treasury","total_obs":15000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.054","permalink":"/program/TC.054","title":"Expensing
   of reforestation expenditures","popular_name":null,"agency":"Department of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"}]'
 title: Agriculture
 total_num_agencies: 1

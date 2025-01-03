@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -453,7 +458,7 @@ parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/international-affairs
 programs: '[{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion of income
-  earned abroad by U.S. citizens ","popular_name":null,"agency":"Department of the
+  earned abroad by U.S. citizens","popular_name":null,"agency":"Department of the
   Treasury","total_obs":6700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.003","permalink":"/program/TC.003","title":"Exclusion
   of certain allowances for Federal employees abroad","popular_name":null,"agency":"Department
   of the Treasury","total_obs":260000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced
@@ -461,7 +466,7 @@ programs: '[{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion of
   of the Treasury","total_obs":30540000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.005","permalink":"/program/TC.005","title":"Deduction
   for foreign-derived intangible income derived from trade or business within the
   United States","popular_name":null,"agency":"Department of the Treasury","total_obs":11900000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.006","permalink":"/program/TC.006","title":"Interest
-  Charge Domestic International Sales Corporations (IC-DISCs) ","popular_name":null,"agency":"Department
+  Charge Domestic International Sales Corporations (IC-DISCs)","popular_name":null,"agency":"Department
   of the Treasury","total_obs":1140000000.0,"program_type":"tax_expenditure"}]'
 title: International Affairs
 total_num_agencies: 1

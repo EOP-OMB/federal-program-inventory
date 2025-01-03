@@ -23,6 +23,7 @@ objective: Under the baseline tax system, worldwide income forms the tax base of
   tax, and distributions out of active income are no longer taxed upon repatriation.
   These reductions and exemptions from U.S. taxation are considered tax expenditures.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":30540000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":45190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":36060000000.0}]'
 outlays: null
 permalink: /program/TC.004.html
 popular_name: ''
@@ -31,7 +32,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":30540000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":45190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":36060000000.0}]'
 title: Reduced tax rate on active income of controlled foreign corporations (normal
   tax method)
 usaspending_url: null

@@ -13,11 +13,16 @@ is_subpart_f: null
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
   tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, the Tax Code allows interest
-  earned on State and local bonds used to finance homes purchased by first-time, low-to-moderate-income
-  buyers to be exempt from tax. These bonds are generally subject to the State privateactivity-
-  bond annual volume cap.
+  apply to certain types or sources of income. Consumers pay for some deposit-linked
+  services, such as check cashing, by accepting a below-market interest rate on their
+  demand deposits. If they received a market rate of interest on those deposits and
+  paid explicit fees for the associated services, they would pay taxes on the full
+  market rate and (unlike businesses) could not deduct the fees. The Government thus
+  foregoes tax on the difference between the risk-free market interest rate and below-market
+  interest rates on demand deposits, which under competitive conditions should equal
+  the value of deposit services.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":7330000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":11100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15800000000.0}]'
 outlays: null
 permalink: /program/TC.059.html
 popular_name: ''
@@ -26,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1130000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1110000000.0}]'
-title: 'Exclusion of interest on owner-occupied mortgage subsidy bonds '
+title: Exclusion of interest spread of financial institutions
 usaspending_url: null
 ---

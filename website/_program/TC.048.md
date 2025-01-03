@@ -12,11 +12,11 @@ grants_url: null
 is_subpart_f: null
 layout: program
 objective: The baseline tax system requires the taxpayer to capitalize costs associated
-  with an investment over time. However, the production of livestock and crops with
-  a production period greater than two years is exempt from the uniform cost capitalization
-  rules (e.g., for costs for establishing orchards or structure improvements), thereby
-  accelerating cost recovery.
+  with investment property. However, farmers may expense certain expenditures for
+  feed and fertilizer, for soil and water conservation measures, and certain other
+  capital improvements under current law.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0}]'
 outlays: null
 permalink: /program/TC.048.html
 popular_name: ''
@@ -25,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":250000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":270000000.0}]'
-title: 'Expensing of certain multiperiod production costs '
+title: Expensing of certain capital outlays
 usaspending_url: null
 ---

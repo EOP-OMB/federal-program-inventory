@@ -5,20 +5,19 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - General Purpose Fiscal Assistance
+- Tax Expenditures - Veterans Benefits and Services
 cfda: TC.167
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system generally would tax all income under the regular
-  tax rate schedule. It would not allow preferentially low (or zero) tax rates to
-  apply to certain types or sources of income. In contrast, under current law the
-  interest earned on State and local government bonds issued to finance public purpose
-  construction (e.g., schools, roads, sewers), equipment acquisition, and other public
-  purposes is tax-exempt. The interest on bonds issued by Indian tribal governments
-  for essential governmental purposes is also tax-exempt.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income because they represent
+  accretions to wealth that do not materially differ from cash wages. In contrast,
+  all compensation due to death or disability paid by the Veterans Administration
+  is excluded from taxable income under current law.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10430000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":11640000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13400000000.0}]'
 outlays: null
 permalink: /program/TC.167.html
 popular_name: ''
@@ -27,7 +26,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":38610000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":29810000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":39920000000.0}]'
-title: Exclusion of interest on public purpose State and local bonds
+title: Exclusion of veterans death benefits and disability compensation
 usaspending_url: null
 ---

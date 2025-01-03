@@ -11,17 +11,17 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would uniformly tax all returns to investments
-  and not allow credits for particular activities, investments, or industries. However,
-  the Tax Code provides a credit for the purchase of a qualified photovoltaic property
-  and solar water heating property, as well as for fuel cell power plants, geothermal
-  heat pumps, small wind property, and qualified battery storage technology used in
-  or placed on a residence. The credit is 30 percent for property placed in service
-  before January 1, 2020, 26 percent for property placed in service in 2020-2021,
-  30 percent for property placed in service in 2022-2032, 26 percent for property
-  placed in service in 2033, and 22 percent for property placed in service in 2034.
-  The credit expires after December 31, 2034.
+objective: The baseline tax system would not allow credits for particular activities,
+  investments, or industries. However, the Tax Code provided an investment tax credit
+  for expenditures made on insulation, exterior windows, and doors that improved the
+  energy efficiency of homes and met certain standards. The Tax Code also provided
+  a credit for purchases of advanced main air circulating fans, natural gas, propane,
+  or oil furnaces or hot water boilers, and other qualified energy efficient property.
+  This provision expired on December 31, 2017, but legislation enacted in 2020 allowed
+  taxpayers to claim tax credits retroactively for three years. The credit was further
+  increased up to $3,200 and extended to homes acquired in 2023 through 2032.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":450000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0}]'
 outlays: null
 permalink: /program/TC.036.html
 popular_name: ''
@@ -30,7 +30,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0}]'
-title: 'Credit for residential energy efficient property '
+title: Credit for energy efficiency improvements to existing homes
 usaspending_url: null
 ---

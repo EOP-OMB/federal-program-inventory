@@ -30,6 +30,8 @@ categories:
   title: Income Security and Social Services
 - permalink: /category/information-and-statistics
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   title: Law, Justice and Legal Services
 - permalink: /category/natural-resources
@@ -373,6 +375,11 @@ categories_hierarchy:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -445,8 +452,6 @@ categories_hierarchy:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -467,6 +472,8 @@ categories_hierarchy:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -490,7 +497,8 @@ categories_hierarchy:
     title: Water Navigation
   title: Transportation
 categories_json: '[{"title":"Income Security and Social Services","total_num_programs":215,"total_obs":2955452388891.61,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":451,"total_obs":2085107449445.38,"permalink":"/category/health"},{"title":"Tax
-  Expenditures","total_num_programs":170,"total_obs":1962390000000.0,"permalink":"/category/tax-expenditures"},{"title":"Disaster
+  Expenditures","total_num_programs":174,"total_obs":1961632000000.0,"permalink":"/category/tax-expenditures"},{"title":"Interest
+  on the Public Debt","total_num_programs":1,"total_obs":717611112579.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Disaster
   Prevention and Relief","total_num_programs":160,"total_obs":364666692357.57,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Business
   and Commerce","total_num_programs":237,"total_obs":284321981774.67,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":466,"total_obs":265996772706.29,"permalink":"/category/education"},{"title":"Employment,
   Labor, and Training","total_num_programs":143,"total_obs":230131106308.14,"permalink":"/category/employment--labor--and-training"},{"title":"Food
@@ -509,10 +517,12 @@ layout: category-index
 obligations_by_type:
 - title: Financial Assistance
   total_obs: 4459820970482.449
+- title: Interest on the National Debt
+  total_obs: 717611112579.0
 - title: Tax Credit
-  total_obs: 1977220000000.0
+  total_obs: 1961632000000.0
 permalink: /category.html
 title: Categories
-total_num_programs: 2437
-total_obs: 6437040970482.449
+total_num_programs: 2441
+total_obs: 7139064083061.449
 ---

@@ -9,15 +9,15 @@
     {% else %}
     const obligationsJson = [];
   {% endif %}
-  {% if page.tax_expenditures %}
-    const taxExpendJson = {{ page.tax_expenditures }};
+  {% if page.other_program_spending %}
+    const otherSpendingJson = {{ page.other_program_spending }};
     {% else %}
-    const taxExpendJson = [];
+    const otherSpendingJson = [];
   {% endif %}
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
-  const isTaxExpenditure = "{{ page.program_type }}" === "tax_expenditure";
-  const hasTaxExpenditures = taxExpendJson && taxExpendJson.length > 0;
+  const isOtherProgram = !isAssistanceListing;
+  const hasOtherProgramExpenditure = otherSpendingJson && otherSpendingJson.length > 0;
   const hasObligations = obligationsJson && obligationsJson.length > 0;
   const hasOutlays = outlaysJson && outlaysJson.length > 0;
   function getYearBars(yearData) {
@@ -517,15 +517,15 @@
     window.addEventListener("resize", handleResize);
   }
 
-  function createTaxCreditOutlaysChart(
-    taxExpendJson,
-    { container = "#taxExpendChart" } = {}
+  function createOtherProgramOutlaysChart(
+    otherSpendingJson,
+    { container = "#otherProgramChart" } = {}
   ) {
     // Parse data if needed
     const outlays =
-      typeof taxExpendJson === "string"
-        ? JSON.parse(taxExpendJson)
-        : taxExpendJson;
+      typeof otherSpendingJson === "string"
+        ? JSON.parse(otherSpendingJson)
+        : otherSpendingJson;
 
     // Clear existing chart
     d3.select(container).selectAll("*").remove();
@@ -711,7 +711,7 @@
 
     // Add resize handler
     const resizeChart = () => {
-      createTaxCreditOutlaysChart(taxExpendJson, { container });
+      createOtherProgramOutlaysChart(otherSpendingJson, { container });
     };
 
     let resizeTimer;
@@ -727,14 +727,14 @@
   function initializeViewControls(
     hasObligations,
     hasOutlays,
-    hasTaxExpenditures
+    hasOtherProgramExpenditure
   ) {
     const viewControls = document.querySelector(
       ".display-flex.flex-align-center"
     );
     const obligationsChart = document.querySelector("#obligationsChart");
     const outlaysChart = document.querySelector("#outlaysChart");
-    const taxExpendChart = document.querySelector("#taxExpendChart");
+    const otherProgramChart = document.querySelector("#otherProgramChart");
 
     // Handle view controls visibility
     if (isAssistanceListing && hasObligations && hasOutlays) {
@@ -778,7 +778,7 @@
           });
         });
       }
-    } else if (isTaxExpenditure && hasTaxExpenditures) {
+    } else if (isOtherProgram && hasOtherProgramExpenditure) {
       // Handle tax expenditure program type
       // Hide the view controls since we only show one chart type
       if (viewControls) {
@@ -786,11 +786,11 @@
       }
 
       // Show and create the tax expenditure chart
-      if (taxExpendChart) {
-        taxExpendChart.classList.remove("display-none");
-        console.log("Tax Expend Data:", taxExpendJson);
-        createTaxCreditOutlaysChart(taxExpendJson, {
-          container: "#taxExpendChart",
+      if (otherProgramChart) {
+        otherProgramChart.classList.remove("display-none");
+        console.log("Tax Expend Data:", otherSpendingJson);
+        createOtherProgramOutlaysChart(otherSpendingJson, {
+          container: "#otherProgramChart",
         });
       }
     }
@@ -950,9 +950,9 @@
       downloadButton.addEventListener("click", function () {
         let data, filename, csvContent;
 
-        if (isTaxExpenditure && hasTaxExpenditures) {
+        if (isOtherProgram && hasOtherProgramExpenditure) {
           // Handle tax expenditure data
-          data = taxExpendJson;
+          data = otherSpendingJson;
           filename = "program-tax-expenditures.csv";
           csvContent = formatTaxExpendituresForCSV(data);
         } else {
@@ -984,7 +984,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initializeViewControls(hasObligations, hasOutlays, hasTaxExpenditures);
+    initializeViewControls(hasObligations, hasOutlays, hasOtherProgramExpenditure);
 
     initializeDownloadButton();
     initializeProgramFilters();

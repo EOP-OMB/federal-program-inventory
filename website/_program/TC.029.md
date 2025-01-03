@@ -23,6 +23,7 @@ objective: The baseline tax system would not allow credits for particular activi
   31, 2027. A sustainable aviation fuel-specific credit is available for fuel produced
   after December 31, 2022 and before January 1, 2025.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.029.html
 popular_name: ''
@@ -31,7 +32,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 title: Clean fuel production credit
 usaspending_url: null
 ---

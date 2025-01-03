@@ -22,6 +22,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   14 percent of qualified research expenses that exceed 50 percent of the average
   qualified research expenses for the three preceding taxable years.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":23260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":28220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30040000000.0}]'
 outlays: null
 permalink: /program/TC.008.html
 popular_name: ''
@@ -30,7 +31,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":23260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":28220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30040000000.0}]'
-title: 'Credit for increasing research activities '
+title: Credit for increasing research activities
 usaspending_url: null
 ---

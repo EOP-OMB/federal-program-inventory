@@ -11,12 +11,14 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system limits to $3,000 the write-off of losses from capital
-  assets, with carryover of the excess to future years. In contrast, the Tax Code
-  allows up to $100,000 in losses from the sale of small business corporate stock
-  (capitalization less than $1 million) to be treated as ordinary losses and fully
-  deducted.
+objective: Under the baseline tax system, unrealized capital gains would be taxed
+  when assets are transferred at death. It would not allow for exempting gains upon
+  transfer of the underlying assets to the heirs. In contrast, capital gains on assets
+  held at the owner’s death are not subject to capital gains tax under current law.
+  The cost basis of the appreciated assets is adjusted to the market value at the
+  owner’s date of death which becomes the basis for the heirs.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":46750000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":49240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":33560000000.0}]'
 outlays: null
 permalink: /program/TC.077.html
 popular_name: ''
@@ -25,7 +27,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0}]'
-title: 'Ordinary income treatment of loss from small business corporation stock sale '
+title: Step-up basis of capital gains at death
 usaspending_url: null
 ---

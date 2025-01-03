@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":30,"total_obs":21880000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":31,"total_obs":22962000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -426,6 +429,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -455,22 +460,22 @@ permalink: /category/tax-expenditures/energy
 programs: '[{"cfda":"TC.009","permalink":"/program/TC.009","title":"Expensing of exploration
   and development costs, oil and gas","popular_name":null,"agency":"Department of
   the Treasury","total_obs":720000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.010","permalink":"/program/TC.010","title":"Expensing
-  of exploration and development costs, coal ","popular_name":null,"agency":"Department
+  of exploration and development costs, coal","popular_name":null,"agency":"Department
   of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.011","permalink":"/program/TC.011","title":"Excess
   of percentage over cost depletion, oil and gas","popular_name":null,"agency":"Department
   of the Treasury","total_obs":910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.012","permalink":"/program/TC.012","title":"Excess
   of percentage over cost depletion, coal","popular_name":null,"agency":"Department
   of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.013","permalink":"/program/TC.013","title":"Exception
-  from passive loss limitation for working interests in oil and gas properties ","popular_name":null,"agency":"Department
+  from passive loss limitation for working interests in oil and gas properties","popular_name":null,"agency":"Department
   of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.014","permalink":"/program/TC.014","title":"Enhanced
   oil recovery credit","popular_name":null,"agency":"Department of the Treasury","total_obs":390000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.015","permalink":"/program/TC.015","title":"Marginal
   wells credit","popular_name":null,"agency":"Department of the Treasury","total_obs":280000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.016","permalink":"/program/TC.016","title":"Amortize
   all geological and geophysical expenditures over 2 years","popular_name":null,"agency":"Department
   of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.017","permalink":"/program/TC.017","title":"Capital
-  gains treatment of royalties on coal ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.018","permalink":"/program/TC.018","title":"Exclusion
-  of interest on energy facility bonds ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.019","permalink":"/program/TC.019","title":"Qualified
+  gains treatment of royalties on coal","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.018","permalink":"/program/TC.018","title":"Exclusion
+  of interest on energy facility bonds","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.019","permalink":"/program/TC.019","title":"Qualified
   energy conservation bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.020","permalink":"/program/TC.020","title":"Exclusion
   of utility conservation subsidies","popular_name":null,"agency":"Department of the
   Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.021","permalink":"/program/TC.021","title":"Credit
@@ -491,21 +496,23 @@ programs: '[{"cfda":"TC.009","permalink":"/program/TC.009","title":"Expensing of
   hydrogen production credit","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.031","permalink":"/program/TC.031","title":"Tax
   credit for clean vehicles","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.032","permalink":"/program/TC.032","title":"Tax
   credits for refueling property","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.033","permalink":"/program/TC.033","title":"Allowance
+  Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.033","permalink":"/program/TC.033","title":"Tax
+  credits for clean-fuel burning vehicles and refueling property","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":1082000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.034","permalink":"/program/TC.034","title":"Allowance
   of deduction for certain energy efficient commercial building property","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.034","permalink":"/program/TC.034","title":"Credit
+  of the Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.035","permalink":"/program/TC.035","title":"Credit
   for construction of new energy efficient homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.035","permalink":"/program/TC.035","title":"Credit
+  of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.036","permalink":"/program/TC.036","title":"Credit
   for energy efficiency improvements to existing homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":450000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.036","permalink":"/program/TC.036","title":"Credit
-  for residential energy efficient property ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":2700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.037","permalink":"/program/TC.037","title":"Advanced
-  energy property credit","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.038","permalink":"/program/TC.038","title":"Advanced
+  of the Treasury","total_obs":450000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.037","permalink":"/program/TC.037","title":"Credit
+  for residential energy efficient property","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":2700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.038","permalink":"/program/TC.038","title":"Advanced
+  energy property credit","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.039","permalink":"/program/TC.039","title":"Advanced
   manufacturing production credit","popular_name":null,"agency":"Department of the
   Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
 title: Energy
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 30
-total_obs: 21880000000.0
+total_num_programs: 31
+total_obs: 22962000000.0
 ---

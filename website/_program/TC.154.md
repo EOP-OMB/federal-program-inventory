@@ -11,12 +11,12 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, should be included in taxable income. Under current law, employers
-  may establish associations, or VEBAs, to pay employee benefits, which may include
-  health benefit plans, life insurance, and disability insurance, among other employee
-  benefits. Investment income earned by such trusts is exempt from taxation.
+objective: The baseline tax system would not allow credits for particular activities
+  or targeted at specific groups. However, under current law, certain small employers
+  are eligible for a tax credit for the start-up cost of a new plan for the first
+  three years in which the plan is maintained.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.154.html
 popular_name: ''
@@ -25,7 +25,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":1240000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1500000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1350000000.0}]'
-title: 'Income of trusts to finance voluntary employee benefits associations '
+title: Small employer pension plan startup credit
 usaspending_url: null
 ---

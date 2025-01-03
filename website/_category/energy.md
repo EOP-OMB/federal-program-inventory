@@ -1,49 +1,36 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":1,"total_obs":63978351819.0},{"title":"Department
-  of Energy","total_num_programs":30,"total_obs":6142229885.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":3931717211.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":2736666154.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":2324100000.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":695290000.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":638050025.0},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":248394671.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":209000000.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":92000000.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":26296252.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":8759626.109},{"title":"Department of
-  Housing and Urban Development","total_num_programs":2,"total_obs":6103180.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":7,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":30,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":48},{"title":"Sale, Exchange,
-  or Donation of Property or Goods","total_num_programs":48},{"title":"Direct Loans","total_num_programs":42},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":42},{"title":"Private
+  of higher education and hospitals)","total_num_programs":48},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":42},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":37},{"title":"Guaranteed / Insured Loans","total_num_programs":36},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":36},{"title":"Profit organization","total_num_programs":30},{"title":"State","total_num_programs":29},{"title":"Federally
+  hospitals)","total_num_programs":37},{"title":"Local (includes State-designated
+  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":36},{"title":"Profit
+  organization","total_num_programs":30},{"title":"State","total_num_programs":29},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":26},{"title":"Other public
-  institution/organization","total_num_programs":26},{"title":"Provision of Specialized
-  Services","total_num_programs":26},{"title":"Use of Property, Facilities, or Equipment","total_num_programs":26},{"title":"U.S.
-  Territories and possessions","total_num_programs":23},{"title":"Advisory Services
-  and Counseling","total_num_programs":21},{"title":"U.S. Territories and possessions
+  institution/organization","total_num_programs":26},{"title":"U.S. Territories and
+  possessions","total_num_programs":23},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":20},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":20},{"title":"Small
-  business (less than 500 employees)","total_num_programs":20},{"title":"Dissemination
-  of Technical Information","total_num_programs":18},{"title":"Non-Government - General","total_num_programs":18},{"title":"Other
-  private institutions/organizations","total_num_programs":15},{"title":"Anyone/general
-  public","total_num_programs":14},{"title":"Formula Grants","total_num_programs":13},{"title":"Government
-  - General","total_num_programs":13},{"title":"Federal","total_num_programs":12},{"title":"Individual/Family","total_num_programs":12},{"title":"Project
-  Grants","total_num_programs":12},{"title":"Training","total_num_programs":12},{"title":"Direct
-  Payments for a Specified Use","total_num_programs":10},{"title":"Interstate","total_num_programs":10},{"title":"Direct
-  Payments with Unrestricted Use","total_num_programs":8},{"title":"Federal Employment","total_num_programs":8},{"title":"Intrastate","total_num_programs":8},{"title":"Investigation
-  of Complaints","total_num_programs":8},{"title":"Minority group","total_num_programs":8},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":8},{"title":"Insurance","total_num_programs":7},{"title":"Sponsored
-  organization","total_num_programs":7}]'
+  business (less than 500 employees)","total_num_programs":20},{"title":"Non-Government
+  - General","total_num_programs":18},{"title":"Other private institutions/organizations","total_num_programs":15},{"title":"Anyone/general
+  public","total_num_programs":14},{"title":"Government - General","total_num_programs":13},{"title":"Federal","total_num_programs":12},{"title":"Individual/Family","total_num_programs":12},{"title":"Interstate","total_num_programs":10},{"title":"Intrastate","total_num_programs":8},{"title":"Minority
+  group","total_num_programs":8},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":8},{"title":"Sponsored organization","total_num_programs":7}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -375,6 +362,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -447,8 +439,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -469,6 +459,8 @@ categories_subcategories:
     title: Interest
   - permalink: /category/tax-expenditures/international-affairs
     title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
   - permalink: /category/tax-expenditures/natural-resources-and-environment
     title: Natural Resources and Environment
   - permalink: /category/tax-expenditures/social-security
@@ -493,11 +485,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/energy
-sub_cats: '[{"title":"Research and Development","permalink":"/category/energy/research-and-development","total_num_programs":46,"total_obs":4496440099.0},{"title":"Education
-  and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":1224229232.0},{"title":"General
-  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":746919369.0},{"title":"Specialized
-  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":4052696796.0},{"title":"Facilities
-  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":68880664541.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":36,"total_obs":9460901378.109}]'
+sub_cats: '[{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":36,"total_obs":9460901378.109},{"title":"Specialized
+  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":4052696796.0},{"title":"General
+  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":746919369.0},{"title":"Education
+  and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":1224229232.0},{"title":"Facilities
+  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":68880664541.0},{"title":"Research
+  and Development","permalink":"/category/energy/research-and-development","total_num_programs":46,"total_obs":4496440099.0}]'
 title: Energy
 total_num_agencies: 18
 total_num_applicant_types: 39

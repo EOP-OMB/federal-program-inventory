@@ -5,17 +5,27 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Income Security
+- Tax Expenditures - Health
 cfda: TC.139
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow credits for particular activities
-  or targeted at specific groups. Under current law, however, taxpayers with dependents
-  who don’t qualify for the child tax credit may be able to claim a maximum of $500
-  in credits for each dependent who meets certain conditions.
+objective: The baseline tax system generally would tax all profits under the regular
+  tax rate schedule using broadly applicable measures of baseline income. It would
+  not allow preferentially low tax rates to apply to certain types or sources of income.
+  In contrast, certain Blue Cross and Blue Shield (BC/BS) health insurance providers
+  and certain other health insurers are provided with special tax benefits, provided
+  that their percentage of total premium revenue expended on reimbursement for clinical
+  services provided to enrollees or for activities that improve health care quality
+  is not less than 85 percent for the taxable year. A qualifying insurer may take
+  as a deduction 100 percent of any net increase in its unearned premium reserves,
+  instead of the 80 percent allowed other insurers. A qualifying insurer is also allowed
+  a special deduction equal to the amount by which 25 percent of its health-claim
+  expenses exceeds its beginning-of-the-year accounting surplus. The deduction is
+  limited to the insurer’s taxable income determined without the special deduction.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0}]'
 outlays: null
 permalink: /program/TC.139.html
 popular_name: ''
@@ -24,7 +34,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":10870000000.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0}]'
-title: Other Dependent Tax Credit
+title: Special Blue Cross/Blue Shield tax benefits
 usaspending_url: null
 ---

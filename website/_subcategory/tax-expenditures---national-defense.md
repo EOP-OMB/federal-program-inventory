@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":14830000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -332,6 +332,11 @@ categories_subcategories:
   - permalink: /category/information-and-statistics/library-of-congress
     title: Library of Congress
   title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/law--justice-and-legal-services
   subcategories:
   - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
@@ -404,8 +409,6 @@ categories_subcategories:
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
     title: Agriculture
-  - permalink: /category/tax-expenditures/aid-to-state-and-local-governments
-    title: Aid to State and Local Governments
   - permalink: /category/tax-expenditures/commerce-and-housing
     title: Commerce and Housing
   - permalink: /category/tax-expenditures/community-and-regional-development
@@ -455,11 +458,11 @@ parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/national-defense
 programs: '[{"cfda":"TC.001","permalink":"/program/TC.001","title":"Exclusion of benefits
-  and allowances to armed forces personnel ","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
+  and allowances to armed forces personnel","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":14830000000.0,"program_type":"tax_expenditure"}]'
 title: National Defense
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 1
-total_obs: 0.0
+total_obs: 14830000000.0
 ---

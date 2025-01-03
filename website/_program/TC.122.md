@@ -5,21 +5,22 @@ assistance_types: []
 authorizations: []
 beneficiary_types: []
 categories:
-- 'Tax Expenditures - Education, Training, Employment, and Social Services '
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.122
 fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: The baseline tax system would not allow a deduction for personal expenditures
-  including charitable contributions. In contrast, the Tax Code provides taxpayers
-  a deduction for contributions to charitable, religious, and certain other nonprofit
-  organizations. Taxpayers who donate capital assets to charitable organizations can
-  deduct the assets’ current value without being taxed on any appreciation in value.
-  An individual’s total charitable contribution generally may not exceed 50 percent
-  (60 percent between 2018 and 2025) of adjusted gross income; a corporation’s total
-  charitable contributions generally may not exceed 10 percent of pre-tax income.
+objective: Under the baseline tax system, all compensation, including dedicated payments
+  and in-kind benefits, should be included in taxable income. Furthermore, all compensation
+  would generally be deductible by the employer. In contrast, under current law employer-provided
+  meals and lodging are excluded from an employee’s gross income. Additionally, beginning
+  in 2018, employers are allowed a deduction for only 50 percent of the expenses of
+  employer-provided meals, except that in 2021 and 2022, employers are eligible for
+  a full deduction on restaurant meals provided to employees. Employer-provided lodging
+  is fully deductible by the employer, in general.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":6440000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7530000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6690000000.0}]'
 outlays: null
 permalink: /program/TC.122.html
 popular_name: ''
@@ -28,7 +29,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":55500000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":47410000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":46240000000.0}]'
-title: Deductibility of charitable contributions, other than education and health
+title: Exclusion of employee meals and lodging (other than military)
 usaspending_url: null
 ---

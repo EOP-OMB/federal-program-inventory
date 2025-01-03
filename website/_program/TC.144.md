@@ -11,11 +11,15 @@ fiscal_year: '2022'
 grants_url: null
 is_subpart_f: null
 layout: program
-objective: Under the baseline tax system, all compensation, including dedicated payments
-  and in-kind benefits, should be included in taxable income. In contrast, most of
-  the military disability pension income received by current disabled military retirees
-  is excluded from their income subject to tax.
+objective: Under the baseline tax system, all compensation, including dedicated and
+  deferred payments, should be included in taxable income. In contrast, the Social
+  Security Equivalent Benefit paid to railroad retirees and the disabled is not generally
+  subject to the income tax unless the recipient’s modified gross income reaches a
+  certain threshold under current law. See provision number 161, Social Security benefits
+  for retired and disabled workers and spouses, dependents, and survivors, for a discussion
+  of the threshold.
 obligations: null
+other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":300000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":300000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":230000000.0}]'
 outlays: null
 permalink: /program/TC.144.html
 popular_name: ''
@@ -24,7 +28,6 @@ results: []
 rules_regulations: null
 sam_url: null
 sub-agency: Internal Revenue Service (IRS)
-tax_expenditures: '[{"x":"2022","outlays":0.0,"forgone_revenue":180000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":200000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":250000000.0}]'
-title: 'Exclusion of military disability pensions '
+title: Exclusion of railroad retirement (Social Security equivalent) benefits
 usaspending_url: null
 ---
