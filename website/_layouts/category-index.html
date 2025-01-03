@@ -40,12 +40,11 @@ footer_include: _footer-category-index.html
       All Categories
     </div>
     <div class="grid-col-8 line-height-sans-3 padding-top-1">
-      Programs (assistance listings), their functions (categories), and
-      sub-functions (sub-categories) listed on this page use data pulled from
-      SAM.gov and [other].
+      Programs and the related information listed on this page use data pulled from
+      SAM.gov, USASpending.gov, and Treasury.gov.
       <br />
       <br />
-      Select from the dropdown below to view a category. Once you’ve selected a
+      Select from the dropdown below to view a category. Once you've selected a
       category, you can select a sub-category under it.
     </div>
   </div>
@@ -72,14 +71,18 @@ footer_include: _footer-category-index.html
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
       <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        Categories by FY {{ page.fiscal_year }} obligations
+        Categories by FY {{ page.fiscal_year }} expenditures
       </h3>
 
       <p class="text-ink font-sans-sm line-height-body-3">
-        This chart shows total program obligations by category, for the top categories. To view data for all categories,
-        download the .csv file below. All data for this chart was provided by the administering agency and sourced from
-        <a href="https://sam.gov" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a>.
+        This chart shows total program expenditures by category, for the top categories. For Federal financial
+        assistance and interest on the public debt, expenditures are obligations. For tax expenditures, expenditures
+        are the sum of outlays and revenue losses. To view data for all categories, download the .csv file below. All
+        data for this chart was provided by the administering agency and sourced from
+        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">SAM.gov</a> and
+        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
+          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
       </p>
 
       <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection"
@@ -101,13 +104,17 @@ footer_include: _footer-category-index.html
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
       <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        Obligations by Type of Program
+        Expenditures by Type of Program
       </h3>
       <p class="text-ink font-sans-sm line-height-body-3">
-        This chart shows total program obligations by category, for the top categories. To view data for all categories,
-        download the .csv file below. All data for this chart was provided by the administering agency and sourced from
-        <a href="https://sam.gov" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a>.
+        This chart shows total program expenditures by type of program. For Federal financial
+        assistance and interest on the public debt, expenditures are obligations. For tax expenditures, expenditures
+        are the sum of outlays and revenue losses. To view data for all types of programs, download the .csv file below. All
+        data for this chart was provided by the administering agency and sourced from
+        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">SAM.gov</a> and
+        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
+          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
       </p>
 
       <div id="obligations-pie-chart" class="width-full"></div>
