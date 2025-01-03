@@ -508,16 +508,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/community-development
-sub_cats: '[{"title":"Planning and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":9629427573.0},{"title":"Fire
+sub_cats: '[{"title":"Indian Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":42,"total_obs":14984411024.0},{"title":"Site
+  Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":4073058439.0},{"title":"Land
+  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":22,"total_obs":4104076030.95},{"title":"Construction,
+  Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":56,"total_obs":68209437595.0},{"title":"Planning
+  and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":9629427573.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":37,"total_obs":6107801301.91},{"title":"Rural
+  Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":42998718092.0},{"title":"Fire
   Protection","permalink":"/category/community-development/fire-protection","total_num_programs":28,"total_obs":17897387550.0},{"title":"Technical
-  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":7774720976.21},{"title":"Land
-  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":22,"total_obs":4104076030.95},{"title":"Federal
-  Surplus Property","permalink":"/category/community-development/federal-surplus-property","total_num_programs":21,"total_obs":2425066154.0},{"title":"Construction,
-  Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":56,"total_obs":68209437595.0},{"title":"Rural
-  Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":42998718092.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":37,"total_obs":6107801301.91},{"title":"Historical
-  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":37,"total_obs":3223549771.0},{"title":"Site
-  Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":4073058439.0},{"title":"Indian
-  Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":42,"total_obs":14984411024.0}]'
+  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":7774720976.21},{"title":"Historical
+  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":37,"total_obs":3223549771.0},{"title":"Federal
+  Surplus Property","permalink":"/category/community-development/federal-surplus-property","total_num_programs":21,"total_obs":2425066154.0}]'
 title: Community Development
 total_num_agencies: 31
 total_num_applicant_types: 46

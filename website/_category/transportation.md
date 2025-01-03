@@ -483,11 +483,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/transportation
-sub_cats: '[{"title":"Urban Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":45,"total_obs":45677010796.0},{"title":"Highways,
-  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":61,"total_obs":74167058382.59},{"title":"Rail
-  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":20491141611.0},{"title":"Air
-  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":25,"total_obs":13418520577.67},{"title":"Water
-  Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":27,"total_obs":5562096315.0}]'
+sub_cats: '[{"title":"Water Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":27,"total_obs":5562096315.0},{"title":"Rail
+  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":20491141611.0},{"title":"Urban
+  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":45,"total_obs":45677010796.0},{"title":"Highways,
+  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":61,"total_obs":74167058382.59},{"title":"Air
+  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":25,"total_obs":13418520577.67}]'
 title: Transportation
 total_num_agencies: 13
 total_num_applicant_types: 37

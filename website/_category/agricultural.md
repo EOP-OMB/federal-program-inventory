@@ -494,12 +494,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":81,"total_obs":7925363767.95},{"title":"Resource
-  Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":76,"total_obs":11396919268.95},{"title":"Research
-  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":76,"total_obs":7556257382.0},{"title":"Stabilization
+sub_cats: '[{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":6754912083.0},{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":81,"total_obs":7925363767.95},{"title":"Stabilization
   and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":25334298798.95},{"title":"Production
-  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":34450982497.0},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":6754912083.0},{"title":"Technical
-  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":113,"total_obs":8992149238.0}]'
+  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":34450982497.0},{"title":"Technical
+  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":113,"total_obs":8992149238.0},{"title":"Research
+  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":76,"total_obs":7556257382.0},{"title":"Resource
+  Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":76,"total_obs":11396919268.95}]'
 title: Agricultural
 total_num_agencies: 16
 total_num_applicant_types: 47

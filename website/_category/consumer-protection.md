@@ -485,8 +485,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/consumer-protection
-sub_cats: '[{"title":"Information and Educational Services","permalink":"/category/consumer-protection/information-and-educational-services","total_num_programs":15,"total_obs":5689815727.0},{"title":"Complaint
-  Investigation","permalink":"/category/consumer-protection/complaint-investigation","total_num_programs":4,"total_obs":73396000.0},{"title":"Regulation,
+sub_cats: '[{"title":"Complaint Investigation","permalink":"/category/consumer-protection/complaint-investigation","total_num_programs":4,"total_obs":73396000.0},{"title":"Information
+  and Educational Services","permalink":"/category/consumer-protection/information-and-educational-services","total_num_programs":15,"total_obs":5689815727.0},{"title":"Regulation,
   Inspection, Enforcement","permalink":"/category/consumer-protection/regulation--inspection--enforcement","total_num_programs":20,"total_obs":744719149.0}]'
 title: Consumer Protection
 total_num_agencies: 13
