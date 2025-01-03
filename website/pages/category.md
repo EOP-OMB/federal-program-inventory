@@ -496,8 +496,9 @@ categories_hierarchy:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-categories_json: '[{"title":"Income Security and Social Services","total_num_programs":215,"total_obs":2955452388891.61,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":451,"total_obs":2085107449445.38,"permalink":"/category/health"},{"title":"Interest
-  on the Public Debt","total_num_programs":1,"total_obs":717611000000.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Disaster
+categories_json: '[{"title":"Income Security and Social Services","total_num_programs":215,"total_obs":2955452388891.61,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":451,"total_obs":2085107449445.38,"permalink":"/category/health"},{"title":"Tax
+  Expenditures","total_num_programs":174,"total_obs":1961632000000.0,"permalink":"/category/tax-expenditures"},{"title":"Interest
+  on the Public Debt","total_num_programs":1,"total_obs":717611112579.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Disaster
   Prevention and Relief","total_num_programs":160,"total_obs":364666692357.57,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Business
   and Commerce","total_num_programs":237,"total_obs":284321981774.67,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":466,"total_obs":265996772706.29,"permalink":"/category/education"},{"title":"Employment,
   Labor, and Training","total_num_programs":143,"total_obs":230131106308.14,"permalink":"/category/employment--labor--and-training"},{"title":"Food
@@ -517,11 +518,11 @@ obligations_by_type:
 - title: Federal Financial Assistance
   total_obs: 4459820970482.449
 - title: Interest on the Public Debt
-  total_obs: 717611000000.0
+  total_obs: 717611112579.0
 - title: Tax Expenditures
   total_obs: 1961632000000.0
 permalink: /category.html
 title: Categories
 total_num_programs: 2441
-total_obs: 7139063970482.449
+total_obs: 7139064083061.449
 ---
