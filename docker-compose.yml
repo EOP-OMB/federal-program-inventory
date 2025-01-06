@@ -9,8 +9,6 @@ services:
       - xpack.security.enabled=false
     ports:
       - "9200:9200"
-    volumes:
-      - esdata:/usr/share/elasticsearch/data
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
       interval: 30s
@@ -49,10 +47,6 @@ services:
         condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
-
-volumes:
-  esdata:
-    driver: local
 
 networks:
   internal:
