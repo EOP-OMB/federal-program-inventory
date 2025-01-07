@@ -493,15 +493,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/law--justice-and-legal-services
-sub_cats: '[{"title":"Legal Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":51,"total_obs":3868766101.0},{"title":"Law
-  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":2814078034.21},{"title":"Legal
-  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":120177642.0},{"title":"Legal
-  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0},{"title":"Legal
-  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1091815228.0},{"title":"Law
-  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":3139530542.21},{"title":"Law
-  Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":89,"total_obs":7690336365.21},{"title":"Law
+sub_cats: '[{"title":"Legal Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":120177642.0},{"title":"Legal
+  Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":51,"total_obs":3868766101.0},{"title":"Law
   Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":100,"total_obs":4399304341.8},{"title":"Legal
-  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":156745704.0}]'
+  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":156745704.0},{"title":"Law
+  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":2814078034.21},{"title":"Law
+  Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":89,"total_obs":7690336365.21},{"title":"Legal
+  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1091815228.0},{"title":"Law
+  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":3139530542.21},{"title":"Legal
+  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":120177642.0}]'
 title: Law, Justice and Legal Services
 total_num_agencies: 16
 total_num_applicant_types: 46

@@ -495,16 +495,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/employment--labor--and-training
-sub_cats: '[{"title":"Labor Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":507907762.0},{"title":"Planning,
+sub_cats: '[{"title":"Facilities, Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":12636559948.0},{"title":"Labor
+  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":507907762.0},{"title":"Planning,
   Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":25,"total_obs":944417115.0},{"title":"Equal
-  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":11,"total_obs":818655652.0},{"title":"Job
-  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":170480835090.14},{"title":"Assistance
-  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":32,"total_obs":62691200543.0},{"title":"Bonding
-  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":284854962.0},{"title":"Program
-  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":4522242329.0},{"title":"Federal
-  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":28433849.0},{"title":"Facilities,
-  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":12636559948.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":683323073.0},{"title":"Assistance
-  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6948422829.0}]'
+  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":11,"total_obs":818655652.0},{"title":"Program
+  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":4522242329.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":683323073.0},{"title":"Job
+  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":170480835090.14},{"title":"Federal
+  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":28433849.0},{"title":"Assistance
+  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":32,"total_obs":62691200543.0},{"title":"Assistance
+  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6948422829.0},{"title":"Bonding
+  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":284854962.0}]'
 title: Employment, Labor, and Training
 total_num_agencies: 25
 total_num_applicant_types: 39

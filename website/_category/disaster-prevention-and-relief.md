@@ -493,8 +493,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/disaster-prevention-and-relief
-sub_cats: '[{"title":"Flood Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12797106601.0},{"title":"Disaster
-  Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":86,"total_obs":184294633397.67},{"title":"Emergency
+sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":86,"total_obs":184294633397.67},{"title":"Flood
+  Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12797106601.0},{"title":"Emergency
   Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":77,"total_obs":8866258998.9},{"title":"Emergency
   Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":177045178243.0}]'
 title: Disaster Prevention and Relief

@@ -498,13 +498,13 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":37,"total_obs":29846866156.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":756687153.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":29,"total_obs":2368538342.0},{"title":"Special
+sub_cats: '[{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":37,"total_obs":29846866156.0},{"title":"Special
   Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":2318209001.0},{"title":"Minority
   Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":6177534111.0},{"title":"Economic
-  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":155240805290.67},{"title":"Small
-  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":174006942281.0},{"title":"Commercial
-  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":381410525.0},{"title":"Economic
-  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":62144707341.0}]'
+  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":155240805290.67},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":756687153.0},{"title":"Economic
+  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":62144707341.0},{"title":"Small
+  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":174006942281.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":29,"total_obs":2368538342.0},{"title":"Commercial
+  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":381410525.0}]'
 title: Business and Commerce
 total_num_agencies: 28
 total_num_applicant_types: 39

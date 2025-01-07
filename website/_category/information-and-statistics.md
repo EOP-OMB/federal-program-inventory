@@ -491,8 +491,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/information-and-statistics
-sub_cats: '[{"title":"Library of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"Libraries,
-  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":14598832121.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":13132913956.25},{"title":"Census
+sub_cats: '[{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":13132913956.25},{"title":"Libraries,
+  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":14598832121.0},{"title":"Library
+  of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"Census
   Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":685553413.0}]'
 title: Information and Statistics
 total_num_agencies: 19

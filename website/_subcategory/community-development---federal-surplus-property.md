@@ -483,51 +483,51 @@ fiscal_year: '2022'
 parent_permalink: /category/community-development
 parent_title: Community Development
 permalink: /category/community-development/federal-surplus-property
-programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community Development
-  Block Grants/Entitlement Grants","popular_name":"Community Development Block Grant
-  Program for Entitlement Communities.","agency":"Department of Housing and Urban
-  Development","total_obs":1933000000.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.617","permalink":"/program/12.617","title":"Economic
-  Adjustment Assistance for State Governments","popular_name":null,"agency":"Department
-  of Defense","total_obs":6820057.0,"program_type":"assistance_listing"},{"cfda":"39.007","permalink":"/program/39.007","title":"Sale
-  of Federal Surplus Personal Property","popular_name":"(Sales Program)","agency":"General
-  Services Administration","total_obs":11243958.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
+programs: '[{"cfda":"39.007","permalink":"/program/39.007","title":"Sale of Federal
+  Surplus Personal Property","popular_name":"(Sales Program)","agency":"General Services
+  Administration","total_obs":11243958.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
+  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":145000.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
-  Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":170168508.0,"program_type":"assistance_listing"},{"cfda":"93.291","permalink":"/program/93.291","title":"Surplus
-  Property Utilization","popular_name":"(Federal Real Property Assistance Program)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.618","permalink":"/program/12.618","title":"Community
-  Economic Adjustment Assistance for Establishment or Expansion of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":4617172.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
-  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
-  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.003","permalink":"/program/39.003","title":"Donation
+  Protection Agency","total_obs":145000.0,"program_type":"assistance_listing"},{"cfda":"39.003","permalink":"/program/39.003","title":"Donation
   of Federal Surplus Personal Property","popular_name":"(Donation Program)","agency":"General
-  Services Administration","total_obs":7038522.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
-  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
-  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.002","permalink":"/program/39.002","title":"Disposal
+  Services Administration","total_obs":7038522.0,"program_type":"assistance_listing"},{"cfda":"12.617","permalink":"/program/12.617","title":"Economic
+  Adjustment Assistance for State Governments","popular_name":null,"agency":"Department
+  of Defense","total_obs":6820057.0,"program_type":"assistance_listing"},{"cfda":"39.002","permalink":"/program/39.002","title":"Disposal
   of Federal Surplus Real Property","popular_name":null,"agency":"General Services
   Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
   Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
-  of the Interior","total_obs":227722447.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  of the Interior","total_obs":227722447.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  Development Block Grants/Entitlement Grants","popular_name":"Community Development
+  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
+  and Urban Development","total_obs":1933000000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
-  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":53369096.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.291","permalink":"/program/93.291","title":"Surplus
+  Property Utilization","popular_name":"(Federal Real Property Assistance Program)","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
   Economic Adjustment Assistance for Realignment or Closure of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":3679991.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
+  of Defense","total_obs":3679991.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
+  Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
+  of Defense","total_obs":170168508.0,"program_type":"assistance_listing"},{"cfda":"12.618","permalink":"/program/12.618","title":"Community
+  Economic Adjustment Assistance for Establishment or Expansion of a Military Installation","popular_name":null,"agency":"Department
+  of Defense","total_obs":4617172.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
+  of Housing and Urban Development","total_obs":53369096.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
   Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
-  Agency","total_obs":7261403.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Agency","total_obs":7261403.0,"program_type":"assistance_listing"}]'
 title: Federal Surplus Property
 total_num_agencies: 11
 total_num_applicant_types: 39

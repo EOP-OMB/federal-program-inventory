@@ -492,23 +492,23 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/income-security-and-social-services
-sub_cats: '[{"title":"Specialized Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":1423323789.0},{"title":"Nutrition","permalink":"/category/income-security-and-social-services/nutrition","total_num_programs":23,"total_obs":905101087850.0},{"title":"Information
-  and Referral Services","permalink":"/category/income-security-and-social-services/information-and-referral-services","total_num_programs":36,"total_obs":886028662408.0},{"title":"Disabled
-  Veterans","permalink":"/category/income-security-and-social-services/disabled-veterans","total_num_programs":20,"total_obs":3304811722.0},{"title":"Veterans
-  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":15607047922.0},{"title":"Social
-  Security and Insurance","permalink":"/category/income-security-and-social-services/social-security-and-insurance","total_num_programs":15,"total_obs":1679242005818.0},{"title":"Old
-  Age Assistance","permalink":"/category/income-security-and-social-services/old-age-assistance","total_num_programs":25,"total_obs":1899270666697.0},{"title":"Emergency
-  and Crisis Assistance","permalink":"/category/income-security-and-social-services/emergency-and-crisis-assistance","total_num_programs":29,"total_obs":15470456718.0},{"title":"Youth
-  Services","permalink":"/category/income-security-and-social-services/youth-services","total_num_programs":17,"total_obs":5415249362.0},{"title":"Prevention","permalink":"/category/income-security-and-social-services/prevention","total_num_programs":26,"total_obs":1524444143579.0},{"title":"Specialized
-  Family and Child Welfare Services","permalink":"/category/income-security-and-social-services/specialized-family-and-child-welfare-services","total_num_programs":26,"total_obs":17835472997.0},{"title":"Disabled
-  and Handicapped Services","permalink":"/category/income-security-and-social-services/disabled-and-handicapped-services","total_num_programs":26,"total_obs":1174882030626.0},{"title":"Public
-  Assistance","permalink":"/category/income-security-and-social-services/public-assistance","total_num_programs":21,"total_obs":7433209823.0},{"title":"Research,
-  Demonstration","permalink":"/category/income-security-and-social-services/research--demonstration","total_num_programs":16,"total_obs":173512633.0},{"title":"Training
-  Assistance","permalink":"/category/income-security-and-social-services/training-assistance","total_num_programs":23,"total_obs":28634037811.0},{"title":"Legal
-  and Advocacy Services","permalink":"/category/income-security-and-social-services/legal-and-advocacy-services","total_num_programs":18,"total_obs":11292838709.0},{"title":"Refugees,
-  Alien Services","permalink":"/category/income-security-and-social-services/refugees--alien-services","total_num_programs":18,"total_obs":5600293657.61},{"title":"Families
-  and Child Welfare Services","permalink":"/category/income-security-and-social-services/families-and-child-welfare-services","total_num_programs":42,"total_obs":45830121037.0},{"title":"Indian
-  Services","permalink":"/category/income-security-and-social-services/indian-services","total_num_programs":21,"total_obs":4055846191.0}]'
+sub_cats: '[{"title":"Specialized Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":1423323789.0},{"title":"Youth
+  Services","permalink":"/category/income-security-and-social-services/youth-services","total_num_programs":17,"total_obs":5415249362.0},{"title":"Legal
+  and Advocacy Services","permalink":"/category/income-security-and-social-services/legal-and-advocacy-services","total_num_programs":18,"total_obs":11292838709.0},{"title":"Disabled
+  Veterans","permalink":"/category/income-security-and-social-services/disabled-veterans","total_num_programs":20,"total_obs":3304811722.0},{"title":"Indian
+  Services","permalink":"/category/income-security-and-social-services/indian-services","total_num_programs":21,"total_obs":4055846191.0},{"title":"Training
+  Assistance","permalink":"/category/income-security-and-social-services/training-assistance","total_num_programs":23,"total_obs":28634037811.0},{"title":"Specialized
+  Family and Child Welfare Services","permalink":"/category/income-security-and-social-services/specialized-family-and-child-welfare-services","total_num_programs":26,"total_obs":17835472997.0},{"title":"Refugees,
+  Alien Services","permalink":"/category/income-security-and-social-services/refugees--alien-services","total_num_programs":18,"total_obs":5600293657.61},{"title":"Old
+  Age Assistance","permalink":"/category/income-security-and-social-services/old-age-assistance","total_num_programs":25,"total_obs":1899270666697.0},{"title":"Information
+  and Referral Services","permalink":"/category/income-security-and-social-services/information-and-referral-services","total_num_programs":36,"total_obs":886028662408.0},{"title":"Research,
+  Demonstration","permalink":"/category/income-security-and-social-services/research--demonstration","total_num_programs":16,"total_obs":173512633.0},{"title":"Families
+  and Child Welfare Services","permalink":"/category/income-security-and-social-services/families-and-child-welfare-services","total_num_programs":42,"total_obs":45830121037.0},{"title":"Social
+  Security and Insurance","permalink":"/category/income-security-and-social-services/social-security-and-insurance","total_num_programs":15,"total_obs":1679242005818.0},{"title":"Nutrition","permalink":"/category/income-security-and-social-services/nutrition","total_num_programs":23,"total_obs":905101087850.0},{"title":"Public
+  Assistance","permalink":"/category/income-security-and-social-services/public-assistance","total_num_programs":21,"total_obs":7433209823.0},{"title":"Prevention","permalink":"/category/income-security-and-social-services/prevention","total_num_programs":26,"total_obs":1524444143579.0},{"title":"Disabled
+  and Handicapped Services","permalink":"/category/income-security-and-social-services/disabled-and-handicapped-services","total_num_programs":26,"total_obs":1174882030626.0},{"title":"Veterans
+  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":15607047922.0},{"title":"Emergency
+  and Crisis Assistance","permalink":"/category/income-security-and-social-services/emergency-and-crisis-assistance","total_num_programs":29,"total_obs":15470456718.0}]'
 title: Income Security and Social Services
 total_num_agencies: 22
 total_num_applicant_types: 39

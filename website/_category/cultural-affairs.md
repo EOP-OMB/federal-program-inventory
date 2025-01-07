@@ -480,8 +480,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2022'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Promotion of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":36,"total_obs":663786044.0},{"title":"Promotion
-  of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":39,"total_obs":590149910.0}]'
+sub_cats: '[{"title":"Promotion of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":39,"total_obs":590149910.0},{"title":"Promotion
+  of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":36,"total_obs":663786044.0}]'
 title: Cultural Affairs
 total_num_agencies: 11
 total_num_applicant_types: 39
