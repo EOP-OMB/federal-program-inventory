@@ -172,3 +172,12 @@ th.gridjs-th {
 #myChart {
   word-wrap: break-word;
 }
+
+.no-numbers {
+  list-style-type: none;
+  counter-reset: none;
+}
+
+.no-numbers .usa-process-list__item::before {
+  content: "";
+}
