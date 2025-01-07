@@ -13,7 +13,7 @@ CURRENT_DIR = os.getcwd()
 DB_FILE_PATH = os.path.join("transformed", "transformed_data.db")
 MARKDOWN_DIR = os.path.join(CURRENT_DIR, "..", "website", "_program")
 full_path = os.path.join(CURRENT_DIR, DB_FILE_PATH)
-FISCAL_YEARS = ['2022', '2023', '2024']
+FISCAL_YEARS = ['2023', '2024', '2025']
 
 def ensure_directory_exists(directory_path):
     if not os.path.exists(directory_path):
@@ -34,8 +34,8 @@ def get_assistance_program_obligations(cursor, program_id, fiscal_years):
         cursor.execute("""
             SELECT SUM(amount) as actual_amount
             FROM program_sam_spending
-            WHERE program_id = ? 
-            AND fiscal_year = ? 
+            WHERE program_id = ?
+            AND fiscal_year = ?
             AND is_actual = 1
             GROUP BY fiscal_year
         """, (program_id, year))

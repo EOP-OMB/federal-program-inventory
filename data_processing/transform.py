@@ -11,7 +11,7 @@ import constants
 import pandas as pd
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "./Volumes/CER01/"
+TEMP_DB_DISK_DIRECTORY = "/Volumes/CER01/"
 TEMP_DB_FILE_PATH = "temp_data.db"
 
 # transformed database, for use in the load / generate stage
@@ -20,19 +20,21 @@ TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "./Volumes/CER01/"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract"
-CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract"
+USASPENDING_DISK_DIRECTORY = "/Volumes/CER01/"
+ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance/"
+ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance/"
+CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract/"
+CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
 
 # extracted file paths
-REPO_DISK_DIRECTORY = \
-    ""#.//Users/codyreinold/Code/omb/offm/federal-program-inventory/"
+REPO_DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/" \
+                      + "will-fpi/federal-program-inventory/"
 EXTRACTED_FILES_DIRECTORY = "extracted/"
 
 # additional programs dataset path
-ADDITIONAL_PROGRAMS_DATA_PATH = './extracted/additional-programs.csv'
+ADDITIONAL_PROGRAMS_DATA_PATH = REPO_DISK_DIRECTORY \
+                                + EXTRACTED_FILES_DIRECTORY \
+                                + "additional-programs.csv"
 
 USASPENDING_ASSISTANCE_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance;
@@ -357,6 +359,7 @@ def load_usaspending_initial_files():
     temp_conn.commit()
 
     # create contracts table for USASpending.gov data
+    temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
     temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
     temp_conn.commit()
 
@@ -774,12 +777,13 @@ def load_category_and_sub_category():
                         convert_to_url_string(p[1]+p[2]), "category"])
         conn.commit()
 
+
 def load_additional_programs():
     """Loads additional programs data from CSV and updates database tables."""
     if not os.path.exists(ADDITIONAL_PROGRAMS_DATA_PATH):
         print(f"{ADDITIONAL_PROGRAMS_DATA_PATH} - Not Found")
         return
-    
+
     cur.execute(OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL)
     cur.execute(OTHER_PROGRAM_SPENDING_CREATE_TABLE_SQL)
 
@@ -792,14 +796,14 @@ def load_additional_programs():
 
     agency_names = df[df.agency.notnull()]['agency'].unique().tolist() + df[df.subagency.notnull()]['subagency'].unique().tolist()
     agency_names.append('Internal Revenue Service (IRS)') if 'Internal Revenue Service (IRS)' not in agency_names else agency_names
-    
+
     try:
         cur.execute(f"SELECT * FROM agency WHERE agency_name in {tuple(agency_names)};")
     except Exception as e:
         print(str(e))
         print(f"ERROR - Unable to query for agency_name ID's")
         return
-        
+
     response = cur.fetchall()
     agency_id_map = {val[1]: val[0] for val in response}
 
@@ -834,7 +838,7 @@ def load_additional_programs():
     df.insert(df.shape[1], 'category.name', None)
     df.insert(df.shape[1], 'category.id', None)
     df.insert(df.shape[1], 'category.parent_id', None)
-    
+
     for ind, record in df.iterrows():
         if not pd.isna(record.subagency):
             df.at[ind, 'program.agency_id'] = agency_id_map[record.subagency]
@@ -850,9 +854,9 @@ def load_additional_programs():
             df.at[ind, 'category.name'] = record.category
 
     df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
-    
+
     unique_categories = []
-    
+
     for ind, record in df.iterrows():
         if not pd.isna(record.category):
             parent_category_entry = {
@@ -863,7 +867,7 @@ def load_additional_programs():
             }
             if not any(c['id'] == parent_category_entry['id'] for c in unique_categories):
                 unique_categories.append(parent_category_entry)
-    
+
     for ind, record in df.iterrows():
         if not pd.isna(record.category) and not pd.isna(record.subcategory):
             subcategory_entry = {
@@ -884,7 +888,7 @@ def load_additional_programs():
         except Exception as e:
             print(str(e))
             print(f"ERROR - Category Insert Error\n{category_query}")
-    
+
     for ind, record in df[df['program.id'].notnull()].iterrows():
         program_query = f"""INSERT INTO program 
         (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type) 
@@ -897,7 +901,7 @@ def load_additional_programs():
         except Exception as e:
             print(str(e))
             print(f"ERROR - {ind}\n{program_query}")
-        
+
         # Insert regular category relation
         if not pd.isna(record['category.id']):
             program_to_category_query = f"""INSERT INTO program_to_category 
@@ -908,7 +912,7 @@ def load_additional_programs():
             except Exception as e:
                 print(str(e))
                 print(f"ERROR - {ind}\n{program_to_category_query}")
-        
+
         # Insert assistance type relation
         if not pd.isna(record['assistance_type']):
             # Map the assistance type from the CSV to the category ID
@@ -917,7 +921,7 @@ def load_additional_programs():
                 category_id = 'interest'
             elif assistance_value == 'Tax Expenditures':
                 category_id = 'tax_expenditure'
-            
+
             if category_id:
                 program_to_assistance_query = """INSERT INTO program_to_category 
                     (program_id, category_id, category_type) VALUES (?, ?, ?) ON CONFLICT DO NOTHING;"""
@@ -933,7 +937,7 @@ def load_additional_programs():
         if '_outlays' in col:
             year = col.split('_')[0]
             fiscal_years[year] = [f'{year}_outlays', f'{year}_foregone_revenue']
-    
+
     for ind, record in df[df['program.id'].notnull()].iterrows():
         for year, columns in fiscal_years.items():
             cur.execute(OTHER_PROGRAM_SPENDING_INSERT_SQL, [
@@ -945,17 +949,18 @@ def load_additional_programs():
             ])
 
     conn.commit()
-         
+
+
 # uncomment the necessary functions to database with data
 #
-# load_usaspending_initial_files()
+load_usaspending_initial_files()
 # load_usaspending_delta_files()
 # transform_and_insert_usaspending_aggregation_data()
 # load_agency()
-load_sam_category()
-load_sam_programs()
-load_category_and_sub_category()
-load_additional_programs()
+# load_sam_category()
+# load_sam_programs()
+# load_category_and_sub_category()
+# load_additional_programs()
 
 # close the db connection
 conn.close()
