@@ -8,12 +8,8 @@ ENV NVM_DIR=/root/.nvm
 ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 
 WORKDIR /app
-
-# Copy necessary files for build
 COPY ./Gemfile /app/Gemfile
 COPY ./package.json /app/package.json
-
-# Install required dependencies
 RUN apt-get clean && \
     apt-get update && \
     apt-get install -y curl git && \
@@ -23,21 +19,15 @@ RUN apt-get clean && \
     npm install --legacy-peer-deps chart.js && \
     bundle install
 
-# Copy the rest of the source code
 COPY . /app
-
-# Build the Jekyll site and run additional tasks
 RUN bundle exec jekyll build && \
     npx gulp updateUswds
+
 
 # Stage 2: Build the final nginx image
 #          This stage is responsible for building the final nginx image that
 #          contains the static files generated in Stage 1.
 FROM nginxinc/nginx-unprivileged:alpine AS runtime-image
-
-# Copy nginx configuration and built site from Stage 1
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build-image /app/_site /usr/share/nginx/html
-
-# Expose the necessary port
+COPY --from=0 /app/_site /usr/share/nginx/html
 EXPOSE 8080
