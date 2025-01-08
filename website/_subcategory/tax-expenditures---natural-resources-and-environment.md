@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":8,"total_obs":1980000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":8,"total_obs":2150000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,7 +453,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/natural-resources-and-environment
@@ -461,21 +461,21 @@ programs: '[{"cfda":"TC.040","permalink":"/program/TC.040","title":"Expensing of
   and development costs, nonfuel minerals","popular_name":null,"agency":"Department
   of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.041","permalink":"/program/TC.041","title":"Excess
   of percentage over cost depletion, nonfuel minerals","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":190000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.042","permalink":"/program/TC.042","title":"Exclusion
+  of the Treasury","total_obs":310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.042","permalink":"/program/TC.042","title":"Exclusion
   of interest on bonds for water, sewage, and hazardous waste facilities","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":370000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.043","permalink":"/program/TC.043","title":"Capital
+  of the Treasury","total_obs":290000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.043","permalink":"/program/TC.043","title":"Capital
   gains treatment of certain timber income","popular_name":null,"agency":"Department
   of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.044","permalink":"/program/TC.044","title":"Expensing
   of multiperiod timber growing costs","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax
+  the Treasury","total_obs":260000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax
   incentives for preservation of historic structures","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":580000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Carbon
-  oxide sequestration credit","popular_name":null,"agency":"Department of the Treasury","total_obs":360000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.047","permalink":"/program/TC.047","title":"Deduction
+  of the Treasury","total_obs":710000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Carbon
+  oxide sequestration credit","popular_name":null,"agency":"Department of the Treasury","total_obs":330000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.047","permalink":"/program/TC.047","title":"Deduction
   for endangered species recovery expenditures","popular_name":null,"agency":"Department
   of the Treasury","total_obs":30000000.0,"program_type":"tax_expenditure"}]'
 title: Natural Resources and Environment
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 8
-total_obs: 1980000000.0
+total_obs: 2150000000.0
 ---

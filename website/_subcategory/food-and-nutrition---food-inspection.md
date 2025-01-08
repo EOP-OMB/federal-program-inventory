@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Agency for International Development","total_num_programs":3,"total_obs":527300000.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":7300000.0},{"title":"Southeast
+agencies: '[{"title":"Department of Agriculture","total_num_programs":2,"total_obs":7199999.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
+  for International Development","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":6},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":4},{"title":"State (includes
@@ -472,36 +472,36 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/food-and-nutrition
 parent_title: Food and Nutrition
 permalink: /category/food-and-nutrition/food-inspection
-programs: '[{"cfda":"98.007","permalink":"/program/98.007","title":"Food for Peace
-  Development Assistance Program (DAP)","popular_name":null,"agency":"Agency for International
-  Development","total_obs":208000000.0,"program_type":"assistance_listing"},{"cfda":"10.225","permalink":"/program/10.225","title":"Community
-  Food Projects","popular_name":"Community Foods","agency":"Department of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"93.053","permalink":"/program/93.053","title":"Nutrition
-  Services Incentive Program ","popular_name":"NSIP","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
-  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":2500000.0,"program_type":"assistance_listing"},{"cfda":"98.008","permalink":"/program/98.008","title":"Food
-  for Peace Emergency Program (EP)","popular_name":null,"agency":"Agency for International
-  Development","total_obs":313200000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.413","permalink":"/program/11.413","title":"Fishery
-  Products Inspection and Certification","popular_name":"(Inspection and Grading of
-  Fishery Products)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.005","permalink":"/program/98.005","title":"Institutional
+programs: '[{"cfda":"10.518","permalink":"/program/10.518","title":"Food Animal Residue
+  Avoidance Databank","popular_name":"FARAD","agency":"Department of Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"98.005","permalink":"/program/98.005","title":"Institutional
   Capacity Building (ICB)","popular_name":"(Institutional Capacity Building)","agency":"Agency
-  for International Development","total_obs":6100000.0,"program_type":"assistance_listing"},{"cfda":"93.367","permalink":"/program/93.367","title":"Flexible
+  for International Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.367","permalink":"/program/93.367","title":"Flexible
   Funding Model - Infrastructure Development and Maintenance for State Manufactured
   Food Regulatory Programs","popular_name":"Flexible Funding Model - Infrastructure
   Development and Maintenance for State Manufactured Food Regulatory Programs","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.876","permalink":"/program/93.876","title":"Antimicrobial
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.225","permalink":"/program/10.225","title":"Community
+  Food Projects","popular_name":"Community Food Projects Competitive Grant Program
+  (CFPCGP); Community Foods","agency":"Department of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"11.413","permalink":"/program/11.413","title":"Fishery
+  Products Inspection and Certification","popular_name":"(Inspection and Grading of
+  Fishery Products)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.876","permalink":"/program/93.876","title":"Antimicrobial
   Resistance Surveillance in Retail Food Specimens","popular_name":"NARMS Retail Food
-  Surveillance","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Surveillance","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.053","permalink":"/program/93.053","title":"Nutrition
+  Services Incentive Program ","popular_name":"NSIP","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.008","permalink":"/program/98.008","title":"Food
+  for Peace Emergency Program (EP)","popular_name":null,"agency":"Agency for International
+  Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.007","permalink":"/program/98.007","title":"Food
+  for Peace Development Assistance Program (DAP)","popular_name":null,"agency":"Agency
+  for International Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Food Inspection
 total_num_agencies: 6
 total_num_applicant_types: 35
 total_num_programs: 11
-total_obs: 534600000.0
+total_obs: 7199999.0
 ---

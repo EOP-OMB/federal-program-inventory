@@ -29,7 +29,7 @@ CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
 # extracted file paths
 REPO_DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/" \
                       + "will-fpi/federal-program-inventory/"
-EXTRACTED_FILES_DIRECTORY = "extracted/"
+EXTRACTED_FILES_DIRECTORY = "data_processing/extracted/"
 
 # additional programs dataset path
 ADDITIONAL_PROGRAMS_DATA_PATH = REPO_DISK_DIRECTORY \
@@ -953,7 +953,7 @@ def load_additional_programs():
 
 # uncomment the necessary functions to database with data
 #
-load_usaspending_initial_files()
+# load_usaspending_initial_files()
 # load_usaspending_delta_files()
 # transform_and_insert_usaspending_aggregation_data()
 # load_agency()

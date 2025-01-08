@@ -1,28 +1,27 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":32,"total_obs":45469028749.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":288787000.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":15990000.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":14191208.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":4955371.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":4000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":24},{"title":"Federally Recognized
-  lndian Tribal Governments","total_num_programs":23},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":17},{"title":"Private
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":32,"total_obs":49426117180.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":92003598.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":15272361.0},{"title":"Social Security
+  Administration","total_num_programs":1,"total_obs":11937059.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":24},{"title":"State","total_num_programs":24},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":15},{"title":"Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":14},{"title":"U.S.
-  Territories and possessions","total_num_programs":12},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"State
+  hospitals)","total_num_programs":17},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":15},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":14},{"title":"U.S. Territories and possessions","total_num_programs":12},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":7},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Other
   private institutions/organizations","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Non-Government
-  - General","total_num_programs":3},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Sponsored
+  - General","total_num_programs":3},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
+  business (less than 500 employees)","total_num_programs":2},{"title":"Anyone/general
+  public","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Sponsored
   organization","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -476,99 +475,102 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/families-and-child-welfare-services
-programs: '[{"cfda":"93.086","permalink":"/program/93.086","title":"Healthy Marriage
-  Promotion and Responsible Fatherhood Grants","popular_name":"(HMRF)","agency":"Department
-  of Health and Human Services","total_obs":117853591.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
-  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
-  of Justice","total_obs":14191208.0,"program_type":"assistance_listing"},{"cfda":"96.007","permalink":"/program/96.007","title":"Social
-  Security Research and Demonstration","popular_name":"(SSA Research and Demonstration)","agency":"Social
-  Security Administration","total_obs":15990000.0,"program_type":"assistance_listing"},{"cfda":"93.269","permalink":"/program/93.269","title":"Complex
-  Humanitarian Emergency and War-Related Injury Public Health Activities","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":952572.0,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
-  Living for Homeless Youth","popular_name":"Transitional Living Program (TLP) and
-  Maternity Group Homes (MGH)","agency":"Department of Health and Human Services","total_obs":51549589.0,"program_type":"assistance_listing"},{"cfda":"14.880","permalink":"/program/14.880","title":"Family
-  Unification Program (FUP)","popular_name":null,"agency":"Department of Housing and
-  Urban Development","total_obs":21000000.0,"program_type":"assistance_listing"},{"cfda":"93.228","permalink":"/program/93.228","title":"Indian
-  Health Service, Health Management Development Program","popular_name":"(Indian Health)","agency":"Department
-  of Health and Human Services","total_obs":735423.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.557","permalink":"/program/93.557","title":"Education
-  and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless and Street Youth","popular_name":"Street
-  Outreach Program (SOP)","agency":"Department of Health and Human Services","total_obs":18729065.0,"program_type":"assistance_listing"},{"cfda":"12.369","permalink":"/program/12.369","title":"Marine
-  Corps Systems Command Federal Assistance Program","popular_name":null,"agency":"Department
-  of Defense","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
-  Care Mandatory and Matching Funds of the Child Care and Development Fund","popular_name":"Child
-  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":3625974547.0,"program_type":"assistance_listing"},{"cfda":"93.556","permalink":"/program/93.556","title":"MaryLee
-  Allen Promoting Safe and Stable Families Program","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":351746197.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
-  Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
-  of Housing and Urban Development","total_obs":267787000.0,"program_type":"assistance_listing"},{"cfda":"93.670","permalink":"/program/93.670","title":"Child
-  Abuse and Neglect Discretionary Activities","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":12669507.0,"program_type":"assistance_listing"},{"cfda":"93.667","permalink":"/program/93.667","title":"Social
-  Services Block Grant","popular_name":"SSBG Program, SSBG-Consolidated Block Grant
-  (CBG) Program","agency":"Department of Health and Human Services","total_obs":1603100000.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":10862653587.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
-  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3742843861.0,"program_type":"assistance_listing"},{"cfda":"93.631","permalink":"/program/93.631","title":"Developmental
-  Disabilities Projects of National Significance","popular_name":"Developmental Disabilities
-  Projects of National Significance \r\n","agency":"Department of Health and Human
-  Services","total_obs":13000000.0,"program_type":"assistance_listing"},{"cfda":"93.645","permalink":"/program/93.645","title":"Stephanie
-  Tubbs Jones Child Welfare Services Program","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":268735000.0,"program_type":"assistance_listing"},{"cfda":"93.597","permalink":"/program/93.597","title":"Grants
-  to States for Access and Visitation Programs","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
-  Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
-  to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.605","permalink":"/program/93.605","title":"Family
-  Connection Grants","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":600000.0,"program_type":"assistance_listing"},{"cfda":"93.865","permalink":"/program/93.865","title":"Child
-  Health and Human Development Extramural Research","popular_name":"Child Health and
-  Human Development\r\n","agency":"Department of Health and Human Services","total_obs":1239193314.0,"program_type":"assistance_listing"},{"cfda":"93.471","permalink":"/program/93.471","title":"Title
-  IV-E Kinship Navigator Program","popular_name":"Kinship Navigator","agency":"Department
-  of Health and Human Services","total_obs":12692569.0,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
+programs: '[{"cfda":"93.563","permalink":"/program/93.563","title":"Child Support
+  Services","popular_name":"Child Support Services","agency":"Department of Health
+  and Human Services","total_obs":3951337686.0,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
   Center Grant","popular_name":"Basic Center Program (BCP)","agency":"Department of
-  Health and Human Services","total_obs":74232742.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
+  Health and Human Services","total_obs":63637585.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.669","permalink":"/program/93.669","title":"Child
+  Abuse and Neglect State Grants","popular_name":"CAPTA State Grants","agency":"Department
+  of Health and Human Services","total_obs":103466000.0,"program_type":"assistance_listing"},{"cfda":"93.090","permalink":"/program/93.090","title":"Guardianship
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":305915785.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
+  Care Mandatory and Matching Funds of the Child Care and Development Fund","popular_name":"Child
+  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":3682101430.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
+  Social Services Welfare Assistance","popular_name":null,"agency":"Department of
+  the Interior","total_obs":13908947.0,"program_type":"assistance_listing"},{"cfda":"93.558","permalink":"/program/93.558","title":"Temporary
+  Assistance for Needy Families","popular_name":"TANF","agency":"Department of Health
+  and Human Services","total_obs":17112193133.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.865","permalink":"/program/93.865","title":"Child
+  Health and Human Development Extramural Research","popular_name":"Child Health and
+  Human Development\r\n","agency":"Department of Health and Human Services","total_obs":1345259046.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":11711959734.0,"program_type":"assistance_listing"},{"cfda":"93.590","permalink":"/program/93.590","title":"Community-Based
+  Child Abuse Prevention Grants","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":70411000.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
+  Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.645","permalink":"/program/93.645","title":"Stephanie
+  Tubbs Jones Child Welfare Services Program","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":268735000.0,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
+  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":32099997.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
-  Support Services Research","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":3638381.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
-  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":3187783.0,"program_type":"assistance_listing"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
-  Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
-  Program previously published as Immunization Grants and Vaccines for Children Program","agency":"Department
-  of Health and Human Services","total_obs":467918189.0,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
-  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":32438125.0,"program_type":"assistance_listing"},{"cfda":"93.669","permalink":"/program/93.669","title":"Child
-  Abuse and Neglect State Grants","popular_name":"CAPTA State Grants","agency":"Department
-  of Health and Human Services","total_obs":93487502.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.558","permalink":"/program/93.558","title":"Temporary
-  Assistance for Needy Families","popular_name":"TANF","agency":"Department of Health
-  and Human Services","total_obs":17119836875.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
+  Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
+  to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.590","permalink":"/program/93.590","title":"Community-Based
-  Child Abuse Prevention Grants","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":65411001.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.471","permalink":"/program/93.471","title":"Title
+  IV-E Kinship Navigator Program","popular_name":"Kinship Navigator","agency":"Department
+  of Health and Human Services","total_obs":2041692.0,"program_type":"assistance_listing"},{"cfda":"93.086","permalink":"/program/93.086","title":"Healthy
+  Marriage Promotion and Responsible Fatherhood Grants","popular_name":"(HMRF)","agency":"Department
+  of Health and Human Services","total_obs":117853591.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
   and Entrant Assistance State/Replacement Designee Administered Programs","popular_name":"Refugee
   Cash and Medical Assistance Program and Refugee Support Services Program","agency":"Department
-  of Health and Human Services","total_obs":1959866955.0,"program_type":"assistance_listing"},{"cfda":"93.563","permalink":"/program/93.563","title":"Child
-  Support Services","popular_name":"Child Support Services","agency":"Department of
-  Health and Human Services","total_obs":3394597048.0,"program_type":"assistance_listing"},{"cfda":"93.090","permalink":"/program/93.090","title":"Guardianship
-  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":324573109.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  of Health and Human Services","total_obs":3994109452.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
-  of the Treasury","total_obs":30445198.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
-  to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
-  of the Interior","total_obs":1767588.0,"program_type":"assistance_listing"},{"cfda":"93.714","permalink":"/program/93.714","title":"ARRA
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.557","permalink":"/program/93.557","title":"Education
+  and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless and Street Youth","popular_name":"Street
+  Outreach Program (SOP)","agency":"Department of Health and Human Services","total_obs":19482179.0,"program_type":"assistance_listing"},{"cfda":"14.880","permalink":"/program/14.880","title":"Family
+  Unification Program (FUP)","popular_name":null,"agency":"Department of Housing and
+  Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
+  Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
+  Program previously published as Immunization Grants and Vaccines for Children Program","agency":"Department
+  of Health and Human Services","total_obs":640712307.0,"program_type":"assistance_listing"},{"cfda":"96.007","permalink":"/program/96.007","title":"Social
+  Security Research and Demonstration","popular_name":"Retirement and Disability Research
+  Consortium (RDRC)","agency":"Social Security Administration","total_obs":11937059.0,"program_type":"assistance_listing"},{"cfda":"93.670","permalink":"/program/93.670","title":"Child
+  Abuse and Neglect Discretionary Activities","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":18901255.0,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
+  Living for Homeless Youth","popular_name":"Transitional Living Program (TLP) and
+  Maternity Group Homes (MGH)","agency":"Department of Health and Human Services","total_obs":53050436.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
+  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
+  of Justice","total_obs":15272361.0,"program_type":"assistance_listing"},{"cfda":"93.228","permalink":"/program/93.228","title":"Indian
+  Health Service, Health Management Development Program","popular_name":"(Indian Health)","agency":"Department
+  of Health and Human Services","total_obs":341106.0,"program_type":"assistance_listing"},{"cfda":"93.556","permalink":"/program/93.556","title":"MaryLee
+  Allen Promoting Safe and Stable Families Program","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":354145305.0,"program_type":"assistance_listing"},{"cfda":"93.269","permalink":"/program/93.269","title":"Complex
+  Humanitarian Emergency and War-Related Injury Public Health Activities","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":719291.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
+  Support Services Research","popular_name":null,"agency":"Department of Health and
+  Human Services","total_obs":3999999.0,"program_type":"assistance_listing"},{"cfda":"93.714","permalink":"/program/93.714","title":"ARRA
   \u2013 Emergency Contingency Fund for Temporary Assistance for Needy Families (TANF)
   State Program","popular_name":"TANF Emergency Fund, Recovery Act\r\n","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.597","permalink":"/program/93.597","title":"Grants
+  to States for Access and Visitation Programs","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3959944171.0,"program_type":"assistance_listing"},{"cfda":"93.667","permalink":"/program/93.667","title":"Social
+  Services Block Grant","popular_name":"SSBG Program, SSBG-Consolidated Block Grant
+  (CBG) Program","agency":"Department of Health and Human Services","total_obs":1603100000.0,"program_type":"assistance_listing"},{"cfda":"93.605","permalink":"/program/93.605","title":"Family
+  Connection Grants","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":600000.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
+  to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
+  of the Interior","total_obs":75941710.0,"program_type":"assistance_listing"},{"cfda":"12.369","permalink":"/program/12.369","title":"Marine
+  Corps Systems Command Federal Assistance Program","popular_name":null,"agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.631","permalink":"/program/93.631","title":"Developmental
+  Disabilities Projects of National Significance","popular_name":"Developmental Disabilities
+  Projects of National Significance \r\n","agency":"Department of Health and Human
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":2152941.0,"program_type":"assistance_listing"}]'
 title: Families and Child Welfare Services
 total_num_agencies: 9
-total_num_applicant_types: 33
-total_num_programs: 42
-total_obs: 45830121037.0
+total_num_applicant_types: 35
+total_num_programs: 43
+total_obs: 49547520485.0
 ---

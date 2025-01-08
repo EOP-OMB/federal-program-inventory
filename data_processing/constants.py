@@ -2,7 +2,7 @@
 Store various constants used across the data processing process.
 """
 
-FISCAL_YEAR = "2023"
+FISCAL_YEAR = "2024"
 
 AGENCY_DISPLAY_NAMES = {
     "IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE":

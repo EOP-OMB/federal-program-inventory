@@ -1,16 +1,16 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":10896365777.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":3224900000.0},{"title":"Department
-  of Agriculture","total_num_programs":13,"total_obs":1098557735.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":866281272.0},{"title":"Department
-  of Labor","total_num_programs":4,"total_obs":624070917.0},{"title":"The Institute
-  of Museum and Library Services","total_num_programs":4,"total_obs":205585000.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":125900008.0},{"title":"Department
-  of Commerce","total_num_programs":7,"total_obs":79845509.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Department
-  of Justice","total_num_programs":4,"total_obs":42929453.0},{"title":"United States
-  Institute of Peace","total_num_programs":1,"total_obs":1304045.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":450000.0},{"title":"Southeast
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":11748960552.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":2731000000.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":819640964.0},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":660580597.0},{"title":"Department of
+  Agriculture","total_num_programs":13,"total_obs":631285698.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":491390557.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":219647592.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":77596626.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":63495735.0},{"title":"Department
+  of Justice","total_num_programs":4,"total_obs":19659367.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":197284.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
   Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"National
   Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
@@ -18,25 +18,24 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
-  of higher education and hospitals)","total_num_programs":24},{"title":"Public nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":19},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":19},{"title":"Anyone/general
-  public","total_num_programs":18},{"title":"U.S. Territories and possessions (includes
-  institutions of higher education and hospitals)","total_num_programs":14},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":12},{"title":"State","total_num_programs":11},{"title":"Other
-  public institution/organization","total_num_programs":10},{"title":"Individual/Family","total_num_programs":9},{"title":"Other
+  of higher education and hospitals)","total_num_programs":26},{"title":"Public nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":20},{"title":"Local (includes State-designated
+  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":19},{"title":"Anyone/general
+  public","total_num_programs":16},{"title":"U.S. Territories and possessions (includes
+  institutions of higher education and hospitals)","total_num_programs":15},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":13},{"title":"Other public
+  institution/organization","total_num_programs":10},{"title":"State","total_num_programs":10},{"title":"Other
   private institutions/organizations","total_num_programs":9},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":9},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":8},{"title":"U.S.
-  Territories and possessions","total_num_programs":8},{"title":"Profit organization","total_num_programs":7},{"title":"Intrastate","total_num_programs":6},{"title":"Native
+  nonprofit institution/organization","total_num_programs":9},{"title":"Individual/Family","total_num_programs":7},{"title":"Profit
+  organization","total_num_programs":7},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":7},{"title":"U.S. Territories and possessions","total_num_programs":7},{"title":"Intrastate","total_num_programs":6},{"title":"Native
   American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":6},{"title":"Federal","total_num_programs":5},{"title":"Government
-  - General","total_num_programs":4},{"title":"Interstate","total_num_programs":4},{"title":"Minority
-  group","total_num_programs":2},{"title":"Non-Government - General","total_num_programs":2},{"title":"Small
-  business (less than 500 employees)","total_num_programs":2},{"title":"Sponsored
-  organization","total_num_programs":2}]'
+  - General","total_num_programs":4},{"title":"Interstate","total_num_programs":4},{"title":"Sponsored
+  organization","total_num_programs":3},{"title":"Minority group","total_num_programs":2},{"title":"Non-Government
+  - General","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -489,15 +488,15 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 permalink: /category/information-and-statistics
-sub_cats: '[{"title":"Library of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"Libraries,
-  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":14598832121.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":13132913956.25},{"title":"Census
-  Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":685553413.0}]'
+sub_cats: '[{"title":"Library of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14011936850.0},{"title":"Census
+  Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":511546152.0},{"title":"Libraries,
+  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":14682651450.0}]'
 title: Information and Statistics
 total_num_agencies: 19
 total_num_applicant_types: 39
 total_num_programs: 54
 total_num_sub_cats: 4
-total_obs: 17235960886.25
+total_obs: 17463454972.0
 ---

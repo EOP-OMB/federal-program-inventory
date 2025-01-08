@@ -10,6 +10,7 @@ applicant_types:
 - title: Government - General
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
+- title: Independent School District
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
 - title: Individual/Family
@@ -32,6 +33,7 @@ applicant_types:
 - title: Profit organization
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
+- title: Public/Indian Housing Authority
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
 - title: Small business (less than 500 employees)
@@ -317,6 +319,7 @@ cfo_agencies:
   - title: U.S. Census Bureau
   title: Department of Commerce
 - sub_categories:
+  - title: DEFENSE HUMAN RESOURCES ACTIVITY
   - title: DEFENSE INTELLIGENCE AGENCY (DIA)
   - title: DEFENSE POW-MIA ACCOUNTING AGENCY (DPAA)
   - title: DEFENSE SECURITY COOPERATION AGENCY (DSCA)
@@ -330,8 +333,6 @@ cfo_agencies:
   - title: Immediate Office of the Secretary of Defense
   - title: NATIONAL SECURITY AGENCY (NSA)
   - title: Office of Local Defense Community Cooperation
-  - title: Office of the Secretary of Defense
-  - title: U.S. Army Corps of Engineers - Civil Program Financing Only
   - title: Uniformed Services University of the Health Sciences
   - title: Washington Headquarters Services (WHS)
   title: Department of Defense
@@ -344,10 +345,7 @@ cfo_agencies:
   - title: Office of Human Resources and Administration
   - title: Office of Special Education and Rehabilitative Services
   title: Department of Education
-- sub_categories:
-  - title: Department of Energy
-  - title: NNSA
-  title: Department of Energy
+- title: Department of Energy
 - sub_categories:
   - title: ADMINISTRATION FOR STRATEGIC PREPAREDNESS AND RESPONSE
   - title: Administration for Children and Families
@@ -440,6 +438,7 @@ cfo_agencies:
   - title: Bureau of Land Management
   - title: Bureau of Reclamation
   - title: Bureau of Safety and Environmental Enforcement
+  - title: Department of the Interior
   - title: Departmental Offices
   - title: Fish and Wildlife Service
   - title: National Park Service
@@ -460,7 +459,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2022'
+fiscal_year: '2023'
 layout: home
 other_agencies:
 - title: Appalachian Regional Commission

@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":33,"total_obs":547310000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":33,"total_obs":557040000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,73 +453,73 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/commerce-and-housing
 programs: '[{"cfda":"TC.055","permalink":"/program/TC.055","title":"Exemption of credit
-  union income","popular_name":null,"agency":"Department of the Treasury","total_obs":3070000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.056","permalink":"/program/TC.056","title":"Exclusion
+  union income","popular_name":null,"agency":"Department of the Treasury","total_obs":2970000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.056","permalink":"/program/TC.056","title":"Exclusion
   of life insurance death benefits","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":16020000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.057","permalink":"/program/TC.057","title":"Exemption
+  Treasury","total_obs":15320000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.057","permalink":"/program/TC.057","title":"Exemption
   or special alternative tax for small property and casualty insurance companies","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.058","permalink":"/program/TC.058","title":"Tax
+  of the Treasury","total_obs":1400000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.058","permalink":"/program/TC.058","title":"Tax
   exemption of insurance income earned by tax-exempt organizations","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":350000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.059","permalink":"/program/TC.059","title":"Exclusion
+  of the Treasury","total_obs":370000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.059","permalink":"/program/TC.059","title":"Exclusion
   of interest spread of financial institutions","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":7330000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.060","permalink":"/program/TC.060","title":"Exclusion
+  of the Treasury","total_obs":11100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.060","permalink":"/program/TC.060","title":"Exclusion
   of interest on owner-occupied mortgage subsidy bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1130000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.061","permalink":"/program/TC.061","title":"Exclusion
+  of the Treasury","total_obs":880000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.061","permalink":"/program/TC.061","title":"Exclusion
   of interest on rental housing bonds","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":2090000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.062","permalink":"/program/TC.062","title":"Deductibility
+  the Treasury","total_obs":1610000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.062","permalink":"/program/TC.062","title":"Deductibility
   of mortgage interest on owner-occupied homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":34430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.063","permalink":"/program/TC.063","title":"Deductibility
+  of the Treasury","total_obs":31820000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.063","permalink":"/program/TC.063","title":"Deductibility
   of State and local property tax on owner-occupied homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":5110000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.064","permalink":"/program/TC.064","title":"Deferral
+  of the Treasury","total_obs":6910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.064","permalink":"/program/TC.064","title":"Deferral
   of income from installment sales","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":1720000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.065","permalink":"/program/TC.065","title":"Capital
-  gains exclusion on home sales","popular_name":null,"agency":"Department of the Treasury","total_obs":49200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion
-  of net imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":129000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.067","permalink":"/program/TC.067","title":"Exception
+  Treasury","total_obs":1750000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.065","permalink":"/program/TC.065","title":"Capital
+  gains exclusion on home sales","popular_name":null,"agency":"Department of the Treasury","total_obs":54410000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion
+  of net imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":147000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.067","permalink":"/program/TC.067","title":"Exception
   from passive loss rules for $25,000 of rental loss","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":4970000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.068","permalink":"/program/TC.068","title":"Credit
+  of the Treasury","total_obs":5470000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.068","permalink":"/program/TC.068","title":"Credit
   for low-income housing investments","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":11280000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.069","permalink":"/program/TC.069","title":"Accelerated
+  the Treasury","total_obs":12800000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.069","permalink":"/program/TC.069","title":"Accelerated
   depreciation on rental housing (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3490000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.070","permalink":"/program/TC.070","title":"Discharge
-  of mortgage indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":380000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.071","permalink":"/program/TC.071","title":"Premiums
+  of the Treasury","total_obs":2440000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.070","permalink":"/program/TC.070","title":"Discharge
+  of mortgage indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.071","permalink":"/program/TC.071","title":"Premiums
   for mortgage insurance deductible as interest","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.072","permalink":"/program/TC.072","title":"Discharge
-  of business indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
-  from imputed interest rules","popular_name":null,"agency":"Department of the Treasury","total_obs":30000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.074","permalink":"/program/TC.074","title":"Treatment
-  of qualified dividends","popular_name":null,"agency":"Department of the Treasury","total_obs":33290000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
+  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.072","permalink":"/program/TC.072","title":"Discharge
+  of business indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":-10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
+  from imputed interest rules","popular_name":null,"agency":"Department of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.074","permalink":"/program/TC.074","title":"Treatment
+  of qualified dividends","popular_name":null,"agency":"Department of the Treasury","total_obs":35880000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
   gains (except agriculture, timber, iron ore, and coal)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":112000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.076","permalink":"/program/TC.076","title":"Capital
+  of the Treasury","total_obs":116000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.076","permalink":"/program/TC.076","title":"Capital
   gains exclusion of small corporation stock","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1680000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.077","permalink":"/program/TC.077","title":"Step-up
+  of the Treasury","total_obs":1780000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.077","permalink":"/program/TC.077","title":"Step-up
   basis of capital gains at death","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":46750000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.078","permalink":"/program/TC.078","title":"Carryover
+  Treasury","total_obs":49240000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.078","permalink":"/program/TC.078","title":"Carryover
   basis of capital gains on gifts","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":2700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.079","permalink":"/program/TC.079","title":"Ordinary
+  Treasury","total_obs":4590000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.079","permalink":"/program/TC.079","title":"Ordinary
   income treatment of loss from small business corporation stock sale","popular_name":null,"agency":"Department
   of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.080","permalink":"/program/TC.080","title":"Deferral
   of capital gains from like-kind exchanges","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3830000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.081","permalink":"/program/TC.081","title":"Depreciation
+  of the Treasury","total_obs":4020000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.081","permalink":"/program/TC.081","title":"Depreciation
   of buildings other than rental housing (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":2720000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.082","permalink":"/program/TC.082","title":"Accelerated
+  of the Treasury","total_obs":920000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.082","permalink":"/program/TC.082","title":"Accelerated
   depreciation of machinery and equipment (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":22780000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.083","permalink":"/program/TC.083","title":"Expensing
+  of the Treasury","total_obs":10430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.083","permalink":"/program/TC.083","title":"Expensing
   of certain small investments (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":-910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.084","permalink":"/program/TC.084","title":"Exclusion
+  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.084","permalink":"/program/TC.084","title":"Exclusion
   of interest on small issue bonds","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":320000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.085","permalink":"/program/TC.085","title":"Special
+  Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.085","permalink":"/program/TC.085","title":"Special
   rules for certain film and TV production","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow
+  of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow
   20-percent deduction to certain pass-through income","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":51070000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.087","permalink":"/program/TC.087","title":"Advanced
+  of the Treasury","total_obs":37240000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.087","permalink":"/program/TC.087","title":"Advanced
   manufacturing investment credit","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
+  Treasury","total_obs":190000000.0,"program_type":"tax_expenditure"}]'
 title: Commerce and Housing
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 33
-total_obs: 547310000000.0
+total_obs: 557040000000.0
 ---

@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":4176924048.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":668967000.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":303422017.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":210000000.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":21000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":1767588.0},{"title":"Denali
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":4456221911.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":659826258.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":218486819.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":75941710.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":15557000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":9},{"title":"State","total_num_programs":9},{"title":"Federally
@@ -475,45 +475,46 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/youth-services
 programs: '[{"cfda":"12.404","permalink":"/program/12.404","title":"National Guard
   ChalleNGe Program","popular_name":"National Guard Youth ChalleNGe Program","agency":"Department
-  of Defense","total_obs":210000000.0,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
-  Center Grant","popular_name":"Basic Center Program (BCP)","agency":"Department of
-  Health and Human Services","total_obs":74232742.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
-  Extension Service","popular_name":"(CES)","agency":"Department of Agriculture","total_obs":303422017.0,"program_type":"assistance_listing"},{"cfda":"84.044","permalink":"/program/84.044","title":"TRIO
-  Talent Search","popular_name":null,"agency":"Department of Education","total_obs":208452000.0,"program_type":"assistance_listing"},{"cfda":"84.047","permalink":"/program/84.047","title":"TRIO
-  Upward Bound","popular_name":null,"agency":"Department of Education","total_obs":460515000.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
-  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
-  H. Chafee Foster Care Program for Successful Transition to Adulthood","popular_name":"The
-  Chafee Program","agency":"Department of Health and Human Services","total_obs":144968791.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
-  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
-  of the Treasury","total_obs":30445198.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
-  to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
-  of the Interior","total_obs":1767588.0,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
+  of Defense","total_obs":218486819.0,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
   Living for Homeless Youth","popular_name":"Transitional Living Program (TLP) and
-  Maternity Group Homes (MGH)","agency":"Department of Health and Human Services","total_obs":51549589.0,"program_type":"assistance_listing"},{"cfda":"14.880","permalink":"/program/14.880","title":"Family
+  Maternity Group Homes (MGH)","agency":"Department of Health and Human Services","total_obs":53050436.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3959944171.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
+  to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
+  of the Interior","total_obs":75941710.0,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
+  H. Chafee Foster Care Program for Successful Transition to Adulthood","popular_name":"The
+  Chafee Program","agency":"Department of Health and Human Services","total_obs":196007540.0,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
+  Center Grant","popular_name":"Basic Center Program (BCP)","agency":"Department of
+  Health and Human Services","total_obs":63637585.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.880","permalink":"/program/14.880","title":"Family
   Unification Program (FUP)","popular_name":null,"agency":"Department of Housing and
-  Urban Development","total_obs":21000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.044","permalink":"/program/84.044","title":"TRIO
+  Talent Search","popular_name":null,"agency":"Department of Education","total_obs":177378711.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.671","permalink":"/program/93.671","title":"Family
   Violence Prevention and Services/Domestic Violence Shelter and Supportive Services
   ","popular_name":"Family Violence Prevention and Services Act Formula Grants for
   States and Native American Tribes (including Alaska Native Villages) and Tribal
-  Organizations","agency":"Department of Health and Human Services","total_obs":144600000.0,"program_type":"assistance_listing"},{"cfda":"93.557","permalink":"/program/93.557","title":"Education
+  Organizations","agency":"Department of Health and Human Services","total_obs":164100000.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
+  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.047","permalink":"/program/84.047","title":"TRIO
+  Upward Bound","popular_name":null,"agency":"Department of Education","total_obs":482447547.0,"program_type":"assistance_listing"},{"cfda":"93.557","permalink":"/program/93.557","title":"Education
   and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless and Street Youth","popular_name":"Street
-  Outreach Program (SOP)","agency":"Department of Health and Human Services","total_obs":18729065.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
-  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3742843861.0,"program_type":"assistance_listing"}]'
+  Outreach Program (SOP)","agency":"Department of Health and Human Services","total_obs":19482179.0,"program_type":"assistance_listing"}]'
 title: Youth Services
 total_num_agencies: 9
 total_num_applicant_types: 31
 total_num_programs: 17
-total_obs: 5415249362.0
+total_obs: 5428223985.0
 ---

@@ -1,50 +1,50 @@
 ---
-agencies: '[{"title":"National Science Foundation","total_num_programs":11,"total_obs":8024724820.0},{"title":"Department
-  of Defense","total_num_programs":20,"total_obs":4260958610.0},{"title":"Department
-  of Health and Human Services","total_num_programs":21,"total_obs":2386486668.0},{"title":"Department
-  of Energy","total_num_programs":8,"total_obs":1761377791.0},{"title":"Department
-  of Commerce","total_num_programs":42,"total_obs":1416529027.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":7,"total_obs":1211343091.78},{"title":"Department
-  of Agriculture","total_num_programs":20,"total_obs":946684716.0},{"title":"Department
-  of the Interior","total_num_programs":11,"total_obs":267850071.0},{"title":"Environmental
-  Protection Agency","total_num_programs":9,"total_obs":142516022.0},{"title":"Department
-  of State","total_num_programs":9,"total_obs":101328329.0},{"title":"Department of
-  the Treasury","total_num_programs":1,"total_obs":91374127.0},{"title":"U.S. Election
-  Assistance Commission","total_num_programs":2,"total_obs":75000000.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":2,"total_obs":49418000.0},{"title":"Department
-  of Transportation","total_num_programs":3,"total_obs":46140887.0},{"title":"Department
-  of Homeland Security","total_num_programs":3,"total_obs":39002885.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":21960000.0},{"title":"Small Business
-  Administration","total_num_programs":1,"total_obs":5500000.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":3426746.0},{"title":"Executive Office
-  of the President","total_num_programs":1,"total_obs":3150000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2723511.0},{"title":"Nuclear
-  Regulatory Commission","total_num_programs":1,"total_obs":277675.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":200000.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Defense","total_num_programs":20,"total_obs":4648026839.48},{"title":"Department
+  of Health and Human Services","total_num_programs":19,"total_obs":3146158588.0},{"title":"Department
+  of Commerce","total_num_programs":41,"total_obs":3084664361.0},{"title":"Department
+  of Energy","total_num_programs":8,"total_obs":1921245394.84},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":7,"total_obs":1163064705.0},{"title":"Department
+  of Agriculture","total_num_programs":20,"total_obs":522417243.0},{"title":"Department
+  of the Interior","total_num_programs":14,"total_obs":356646612.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":158975612.0},{"title":"Environmental
+  Protection Agency","total_num_programs":9,"total_obs":75424295.0},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":2,"total_obs":75000000.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":2,"total_obs":55993853.0},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":53929384.0},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":44527383.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":20055552.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":3140580.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Executive
+  Office of the President","total_num_programs":1,"total_obs":1625000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":397324.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Nuclear
+  Regulatory Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Science Foundation","total_num_programs":11,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":9,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":139},{"title":"Private
+  of higher education and hospitals)","total_num_programs":138},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":125},{"title":"State (includes District of Columbia,
+  hospitals)","total_num_programs":124},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":113},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":90},{"title":"Other public institution/organization","total_num_programs":86},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":68},{"title":"Profit
-  organization","total_num_programs":66},{"title":"Federally Recognized lndian Tribal
-  Governments","total_num_programs":65},{"title":"Other private institutions/organizations","total_num_programs":64},{"title":"State","total_num_programs":63},{"title":"Quasi-public
+  and hospitals","total_num_programs":92},{"title":"Other public institution/organization","total_num_programs":84},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":67},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":66},{"title":"Profit
+  organization","total_num_programs":64},{"title":"State","total_num_programs":64},{"title":"Other
+  private institutions/organizations","total_num_programs":63},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":51},{"title":"Native American
   Organizations (includes lndian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":48},{"title":"Small business (less than 500
-  employees)","total_num_programs":48},{"title":"Federal","total_num_programs":46},{"title":"U.S.
-  Territories and possessions","total_num_programs":43},{"title":"Non-Government -
-  General","total_num_programs":34},{"title":"Individual/Family","total_num_programs":33},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":31},{"title":"Anyone/general
-  public","total_num_programs":30},{"title":"Minority group","total_num_programs":30},{"title":"Government
-  - General","total_num_programs":26},{"title":"Interstate","total_num_programs":26},{"title":"Intrastate","total_num_programs":24},{"title":"Sponsored
-  organization","total_num_programs":24},{"title":"Historically Black Colleges and
-  Universities (HBCUs)","total_num_programs":1},{"title":"Non-domestic (non-US) Entity","total_num_programs":1},{"title":"Tribally
-  Controlled Colleges and Universities (TCCUs)","total_num_programs":1}]'
+  associations)","total_num_programs":48},{"title":"Federal","total_num_programs":46},{"title":"Small
+  business (less than 500 employees)","total_num_programs":46},{"title":"U.S. Territories
+  and possessions","total_num_programs":42},{"title":"Individual/Family","total_num_programs":32},{"title":"Non-Government
+  - General","total_num_programs":32},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":31},{"title":"Minority group","total_num_programs":30},{"title":"Anyone/general
+  public","total_num_programs":29},{"title":"Government - General","total_num_programs":26},{"title":"Interstate","total_num_programs":26},{"title":"Sponsored
+  organization","total_num_programs":26},{"title":"Intrastate","total_num_programs":24},{"title":"Historically
+  Black Colleges and Universities (HBCUs)","total_num_programs":1},{"title":"Non-domestic
+  (non-US) Entity","total_num_programs":1},{"title":"Tribally Controlled Colleges
+  and Universities (TCCUs)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -497,15 +497,15 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 permalink: /category/science-and-technology
-sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":13258277920.78},{"title":"Research
-  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":121,"total_obs":17776170389.78},{"title":"Information
-  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":76,"total_obs":6655743350.11}]'
+sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":10007931932.630001},{"title":"Research
+  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":13002463499.32},{"title":"Information
+  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":5721625545.79}]'
 title: Science and Technology
 total_num_agencies: 24
 total_num_applicant_types: 42
 total_num_programs: 179
 total_num_sub_cats: 3
-total_obs: 20857972976.78
+total_obs: 15333483013.32
 ---

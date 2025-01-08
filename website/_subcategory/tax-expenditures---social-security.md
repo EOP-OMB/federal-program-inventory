@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":2,"total_obs":30930000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":2,"total_obs":32220000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,19 +453,19 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/social-security
 programs: '[{"cfda":"TC.165","permalink":"/program/TC.165","title":"Exclusion of social
   security benefits: Social Security benefits for retired and disabled workers and
   spouses, dependents and survivors","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":29760000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.166","permalink":"/program/TC.166","title":"Exclusion
+  Treasury","total_obs":30700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.166","permalink":"/program/TC.166","title":"Exclusion
   of social security benefits: Credit for certain employer contributions to social
-  security","popular_name":null,"agency":"Department of the Treasury","total_obs":1170000000.0,"program_type":"tax_expenditure"}]'
+  security","popular_name":null,"agency":"Department of the Treasury","total_obs":1520000000.0,"program_type":"tax_expenditure"}]'
 title: Social Security
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 2
-total_obs: 30930000000.0
+total_obs: 32220000000.0
 ---

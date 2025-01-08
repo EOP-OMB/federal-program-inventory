@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":2,"total_obs":3440000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":2,"total_obs":-10440000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,18 +453,18 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/general-science--space--and-technology
 programs: '[{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing of research
   and experimentation expenditures (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":-19820000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.008","permalink":"/program/TC.008","title":"Credit
+  of the Treasury","total_obs":-38660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.008","permalink":"/program/TC.008","title":"Credit
   for increasing research activities","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":23260000000.0,"program_type":"tax_expenditure"}]'
+  the Treasury","total_obs":28220000000.0,"program_type":"tax_expenditure"}]'
 title: General Science, Space, and Technology
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 2
-total_obs: 3440000000.0
+total_obs: -10440000000.0
 ---

@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":10,"total_obs":117021504.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":30445198.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":15990000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":10055931.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":10,"total_obs":72818262.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":11937059.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":11063520.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Justice","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":12},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Federally
@@ -472,43 +472,44 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/research--demonstration
-programs: '[{"cfda":"93.564","permalink":"/program/93.564","title":"Child Support
-  Services Research","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":3638381.0,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
-  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":32438125.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+programs: '[{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections Training
+  and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.779","permalink":"/program/93.779","title":"Centers
+  for Medicare and Medicaid Services (CMS) Research, Demonstrations and Evaluations","popular_name":"(CMS
+  Research)","agency":"Department of Health and Human Services","total_obs":990228.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.007","permalink":"/program/96.007","title":"Social
+  Security Research and Demonstration","popular_name":"Retirement and Disability Research
+  Consortium (RDRC)","agency":"Social Security Administration","total_obs":11937059.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.647","permalink":"/program/93.647","title":"Social
   Services Research and Demonstration","popular_name":"SSRD","agency":"Department
-  of Health and Human Services","total_obs":9375000.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
-  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.239","permalink":"/program/93.239","title":"Policy
+  of Health and Human Services","total_obs":20881098.0,"program_type":"assistance_listing"},{"cfda":"93.239","permalink":"/program/93.239","title":"Policy
   Research and Evaluation Grants","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.632","permalink":"/program/93.632","title":"University
-  Centers for Excellence in Developmental Disabilities Education, Research, and Service","popular_name":"(University
-  Centers (UCEDD))","agency":"Department of Health and Human Services","total_obs":47173000.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
-  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
-  of the Treasury","total_obs":30445198.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
-  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.017","permalink":"/program/94.017","title":"AmeriCorps
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
+  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":32099997.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.017","permalink":"/program/94.017","title":"AmeriCorps
   Seniors Senior Demonstration Program (FGP) 94.017","popular_name":"Senior Demonstration
-  Program (FGP) 94.017","agency":"Corporation for National and Community Service","total_obs":7332420.0,"program_type":"assistance_listing"},{"cfda":"96.007","permalink":"/program/96.007","title":"Social
-  Security Research and Demonstration","popular_name":"(SSA Research and Demonstration)","agency":"Social
-  Security Administration","total_obs":15990000.0,"program_type":"assistance_listing"},{"cfda":"93.595","permalink":"/program/93.595","title":"Welfare
+  Program (FGP) 94.017","agency":"Corporation for National and Community Service","total_obs":8873233.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
+  Support Services Research","popular_name":null,"agency":"Department of Health and
+  Human Services","total_obs":3999999.0,"program_type":"assistance_listing"},{"cfda":"93.632","permalink":"/program/93.632","title":"University
+  Centers for Excellence in Developmental Disabilities Education, Research, and Service","popular_name":"(University
+  Centers (UCEDD))","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.595","permalink":"/program/93.595","title":"Welfare
   Reform Research, Evaluations and National Studies","popular_name":"Welfare Research","agency":"Department
-  of Health and Human Services","total_obs":6634366.0,"program_type":"assistance_listing"},{"cfda":"93.779","permalink":"/program/93.779","title":"Centers
-  for Medicare and Medicaid Services (CMS) Research, Demonstrations and Evaluations","popular_name":"(CMS
-  Research)","agency":"Department of Health and Human Services","total_obs":999412.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
+  of Health and Human Services","total_obs":2984703.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
   Welfare Research Training or Demonstration ","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":16763220.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":null,"agency":"Corporation
-  for National and Community Service","total_obs":2723511.0,"program_type":"assistance_listing"}]'
+  of Health and Human Services","total_obs":11862237.0,"program_type":"assistance_listing"}]'
 title: Research, Demonstration
 total_num_agencies: 6
 total_num_applicant_types: 35
 total_num_programs: 16
-total_obs: 173512633.0
+total_obs: 95818841.0
 ---

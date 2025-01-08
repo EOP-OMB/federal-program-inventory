@@ -1,14 +1,14 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":1,"total_obs":63978351819.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":2200000000.0},{"title":"Department
-  of Agriculture","total_num_programs":7,"total_obs":1703047032.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":637550025.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":195460230.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":92000000.0},{"title":"Department
-  of Energy","total_num_programs":7,"total_obs":65851491.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":8403924.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Southeast
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":1,"total_obs":38486828943.0},{"title":"Department
+  of Energy","total_num_programs":7,"total_obs":15713908785.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":2741857728.0},{"title":"Department
+  of Agriculture","total_num_programs":7,"total_obs":862399614.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":491511151.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":5359786.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":892645.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0}]'
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":14},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Local
@@ -479,73 +479,73 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/energy
 parent_title: Energy
 permalink: /category/energy/facilities-and-equipment
-programs: '[{"cfda":"81.010","permalink":"/program/81.010","title":"Office of Technology
-  Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.400","permalink":"/program/12.400","title":"Military
-  Construction, National Guard","popular_name":"Military Construction, National Guard","agency":"Department
-  of Defense","total_obs":100000000.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
-  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":64400000.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
-  Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
-  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
-  of the Interior","total_obs":300000.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
-  and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
-  of Energy","total_obs":16591327.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
-  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":20.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
-  Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program","agency":"Department
-  of Agriculture","total_obs":8685731.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
-  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
-  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.253","permalink":"/program/81.253","title":"Manufacturing
-  and Energy Supply Chain Demonstrations and Commercial Applications","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
-  Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
-  Guard Military Operations and Maintenance Projects","agency":"Department of Defense","total_obs":2100000000.0,"program_type":"assistance_listing"},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
-  Affordable Clean Energy (PACE) Program","popular_name":"22001","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
-  Gas Distribution Infrastructure Safety and Modernization Grant Program","popular_name":null,"agency":"Department
-  of Transportation","total_obs":195460230.0,"program_type":"assistance_listing"},{"cfda":"81.119","permalink":"/program/81.119","title":"State
-  Energy Program Special Projects","popular_name":"SEP Competitive Grants","agency":"Department
-  of Energy","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"81.113","permalink":"/program/81.113","title":"Defense
-  Nuclear Nonproliferation Research","popular_name":"Defense Nuclear Nonproliferation","agency":"Department
-  of Energy","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"10.378","permalink":"/program/10.378","title":"Biofuel
-  Producer Program","popular_name":"Biofuel Producer Relief Program","agency":"Department
-  of Agriculture","total_obs":700000000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
-  Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
-  Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
-  Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.255","permalink":"/program/81.255","title":"Clean
-  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"64.114","permalink":"/program/64.114","title":"Veterans
-  Housing Guaranteed and Insured Loans","popular_name":"(VA Home Loans)","agency":"Department
-  of Veterans Affairs","total_obs":63978351819.0,"program_type":"assistance_listing"},{"cfda":"81.008","permalink":"/program/81.008","title":"Cybersecurity,
-  Energy Security & Emergency Response (CESER)","popular_name":null,"agency":"Department
-  of Energy","total_obs":34160164.0,"program_type":"assistance_listing"},{"cfda":"10.868","permalink":"/program/10.868","title":"Rural
-  Energy for America Program","popular_name":" (REAP)","agency":"Department of Agriculture","total_obs":849375790.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
-  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
-  of Agriculture","total_obs":131577523.0,"program_type":"assistance_listing"},{"cfda":"10.708","permalink":"/program/10.708","title":"Community
-  Wood Energy and Wood Innovation Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":13407988.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
-  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":27600000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+programs: '[{"cfda":"15.875","permalink":"/program/15.875","title":"Economic, Social,
+  and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
+  Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program
+  (9005)","agency":"Department of Agriculture","total_obs":8718153.0,"program_type":"assistance_listing"},{"cfda":"12.400","permalink":"/program/12.400","title":"Military
+  Construction, National Guard","popular_name":"Military Construction, National Guard","agency":"Department
+  of Defense","total_obs":338302010.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.008","permalink":"/program/81.008","title":"Cybersecurity,
+  Energy Security & Emergency Response (CESER)","popular_name":null,"agency":"Department
+  of Energy","total_obs":19785499.0,"program_type":"assistance_listing"},{"cfda":"81.113","permalink":"/program/81.113","title":"Defense
+  Nuclear Nonproliferation Research","popular_name":"Defense Nuclear Nonproliferation","agency":"Department
+  of Energy","total_obs":25000000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
+  of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":"OTT","agency":"Department
+  of Energy","total_obs":132406707.0,"program_type":"assistance_listing"},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
+  Gas Distribution Infrastructure Safety and Modernization Grant Program","popular_name":null,"agency":"Department
+  of Transportation","total_obs":892645.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
+  Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2403555718.0,"program_type":"assistance_listing"},{"cfda":"10.378","permalink":"/program/10.378","title":"Biofuel
+  Producer Program","popular_name":"Biofuel Producer Relief Program","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
+  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
+  of Agriculture","total_obs":124185309.0,"program_type":"assistance_listing"},{"cfda":"64.114","permalink":"/program/64.114","title":"Veterans
+  Housing Guaranteed and Insured Loans","popular_name":"(VA Home Loans)","agency":"Department
+  of Veterans Affairs","total_obs":38486828943.0,"program_type":"assistance_listing"},{"cfda":"81.119","permalink":"/program/81.119","title":"State
+  Energy Program Special Projects","popular_name":"SEP Competitive Grants","agency":"Department
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.708","permalink":"/program/10.708","title":"Community
+  Wood Energy and Wood Innovation Program","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":18496152.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
+  Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
+  Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
+  Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.868","permalink":"/program/10.868","title":"Rural
+  Energy for America Program","popular_name":"REAP","agency":"Department of Agriculture","total_obs":711000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.255","permalink":"/program/81.255","title":"Clean
+  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":13185241.0,"program_type":"assistance_listing"},{"cfda":"81.253","permalink":"/program/81.253","title":"Manufacturing
+  and Energy Supply Chain Demonstrations and Commercial Applications","popular_name":null,"agency":"Department
+  of Energy","total_obs":15505542328.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
+  Protection Agency","total_obs":163433.0,"program_type":"assistance_listing"},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
+  Affordable Clean Energy (PACE) Program","popular_name":"22001","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
+  Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
+  and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
+  of Energy","total_obs":17989010.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
+  Protection Agency","total_obs":5196353.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
+  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
+  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
+  of the Interior","total_obs":2499261.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
   School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
+  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Facilities and Equipment
 total_num_agencies: 11
 total_num_applicant_types: 39
 total_num_programs: 30
-total_obs: 68880664541.0
+total_obs: 58302758652.0
 ---

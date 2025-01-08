@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":4,"total_obs":12320000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":4,"total_obs":13400000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,20 +453,20 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/veterans-benefits-and-services
 programs: '[{"cfda":"TC.167","permalink":"/program/TC.167","title":"Exclusion of veterans
   death benefits and disability compensation","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":10430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
-  of veterans pensions","popular_name":null,"agency":"Department of the Treasury","total_obs":250000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
-  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1540000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.170","permalink":"/program/TC.170","title":"Exclusion
+  of the Treasury","total_obs":11640000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
+  of veterans pensions","popular_name":null,"agency":"Department of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
+  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1460000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.170","permalink":"/program/TC.170","title":"Exclusion
   of interest on veterans housing bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"}]'
 title: Veterans Benefits and Services
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 4
-total_obs: 12320000000.0
+total_obs: 13400000000.0
 ---

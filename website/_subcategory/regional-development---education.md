@@ -1,15 +1,15 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3809000000.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":637250025.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":463194300.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":209000000.0},{"title":"Department of
-  Housing and Urban Development","total_num_programs":7,"total_obs":92069266.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":69771170.25},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":17359022.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":16000000.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":10997453.0},{"title":"Department
-  of State","total_num_programs":4,"total_obs":10872674.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3694000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":830319372.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":489011890.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":204253067.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":7,"total_obs":141121136.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":74111468.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":63495735.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":19146386.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":18116052.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":19},{"title":"Local (includes
@@ -480,70 +480,69 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/education
-programs: '[{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL SERVICE
-  FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":3224900000.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
-  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.942","permalink":"/program/15.942","title":"Environmental
-  Outreach and Conservation - North Cascades","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
-  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":209000000.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":2468750.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
-  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
-  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
-  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":17359022.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+programs: '[{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict and Stabilization
+  Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
+  Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department
+  of Defense","total_obs":74111468.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":13659829.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":22376854.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":69771170.25,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
-  Housing Organization Initiatives","popular_name":"(FHIP FHOI) Federal Agency  Department
-  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
-  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.416","permalink":"/program/14.416","title":"Education
-  and Outreach Initiatives","popular_name":"(FHIP EOI) Federal Agency   Department
-  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":637250025.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
+  To America","agency":"Corporation for National and Community Service","total_obs":44023292.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
+  Communications Commission","total_obs":963000000.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
   in People in The Middle East and North Africa","popular_name":"Investing in people/
   cultural/educational/alumni/information and media efforts in the Middle East and
-  North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.418","permalink":"/program/14.418","title":"Private
+  North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
+  Aeronautics and Space Administration","total_obs":63495735.0,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
+  Housing Organization Initiatives","popular_name":"(FHIP FHOI) Federal Agency  Department
+  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
+  of Housing and Urban Development","total_obs":3750000.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.418","permalink":"/program/14.418","title":"Private
   Enforcement Initiatives ","popular_name":"(FHIP PEI) United States Department of
   Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":46034633.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
-  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":584100000.0,"program_type":"assistance_listing"},{"cfda":"14.408","permalink":"/program/14.408","title":"Fair
+  of Housing and Urban Development","total_obs":56871449.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
+  Labor","total_obs":204253067.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.408","permalink":"/program/14.408","title":"Fair
   Housing Initiatives Program","popular_name":"(FHIP) Department of Housing and Urban
   Development, Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":46034633.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":"National Technical Assistance","agency":"Department
-  of Commerce","total_obs":14000000.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
-  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
-  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  of Housing and Urban Development","total_obs":70610068.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.942","permalink":"/program/15.942","title":"Environmental
+  Outreach and Conservation - North Cascades","popular_name":null,"agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
-  Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department
-  of Defense","total_obs":10997453.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
+  Communications Commission","total_obs":2731000000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
+  Talent Challenge","agency":"Department of Commerce","total_obs":4456223.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":440817446.0,"program_type":"assistance_listing"}]'
+  for National and Community Service","total_obs":786296080.0,"program_type":"assistance_listing"},{"cfda":"14.416","permalink":"/program/14.416","title":"Education
+  and Outreach Initiatives","popular_name":"(FHIP EOI) Federal Agency   Department
+  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
+  of Housing and Urban Development","total_obs":9889619.0,"program_type":"assistance_listing"}]'
 title: Education
 total_num_agencies: 13
 total_num_applicant_types: 39
 total_num_programs: 27
-total_obs: 5335513910.25
+total_obs: 5533575106.0
 ---

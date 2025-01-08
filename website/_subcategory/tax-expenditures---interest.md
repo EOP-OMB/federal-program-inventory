@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":830000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":820000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,15 +453,15 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2023'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/interest
 programs: '[{"cfda":"TC.174","permalink":"/program/TC.174","title":"Deferral of interest
-  on U.S. savings bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":830000000.0,"program_type":"tax_expenditure"}]'
+  on U.S. savings bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":820000000.0,"program_type":"tax_expenditure"}]'
 title: Interest
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 1
-total_obs: 830000000.0
+total_obs: 820000000.0
 ---
