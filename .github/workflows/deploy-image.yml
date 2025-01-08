@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - context: /elasticsearch-custom
+          - context: ./elasticsearch-custom
             image_tag: elasticsearch
-          - context: /api
+          - context: ./api
             image_tag: api
-          - context: /website
+          - context: ./website
             image_tag: website
     steps:
       -
