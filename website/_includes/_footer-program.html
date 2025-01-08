@@ -29,13 +29,6 @@
         color: "rgb(255, 127, 42)",
       });
     }
-    if (yearData.sam_estimate > 0) {
-      bars.push({
-        type: "estimate",
-        value: yearData.sam_estimate,
-        color: "rgb(41, 171, 226)",
-      });
-    }
     if (yearData.usa_spending_actual > 0) {
       bars.push({
         type: "usaspending",
@@ -116,7 +109,6 @@
     const maxValue = d3.max(obligations, (d) =>
       Math.max(
         d.sam_actual || 0,
-        d.sam_estimate || 0,
         d.usa_spending_actual || 0
       )
     );
@@ -219,8 +211,6 @@
 
       if (d.sam_actual > 0)
         bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
-      if (d.sam_estimate > 0)
-        bars.push({ value: d.sam_estimate, color: "rgb(34, 186, 229)" });
       if (d.usa_spending_actual > 0)
         bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
 
@@ -232,8 +222,7 @@
     // Add legend
     // Add legend
     const legendData = [
-      { label: "SAM.gov (Actual)", color: "rgb(250, 146, 65)" },
-      { label: "SAM.gov (Estimate)", color: "rgb(34, 186, 229)" },
+      { label: "SAM.gov", color: "rgb(250, 146, 65)" },
       { label: "USASpending.gov", color: "rgb(21, 96, 130)" },
     ];
 
@@ -809,8 +798,7 @@
     // Create headers for the CSV
     const headers = [
       "Fiscal Year",
-      "SAM.gov (Actual)",
-      "SAM.gov (Estimate)",
+      "SAM.gov",
       "USASpending.gov",
     ];
 
@@ -821,7 +809,6 @@
       const formattedRow = [
         `"${row.x}"`,
         `"${formatCurrency(row.sam_actual || 0)}"`,
-        `"${formatCurrency(row.sam_estimate || 0)}"`,
         `"${formatCurrency(row.usa_spending_actual || 0)}"`,
       ];
       csvContent += formattedRow.join(",") + "\n";
