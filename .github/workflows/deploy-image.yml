@@ -34,6 +34,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Extract metadata (tags, labels) for Docker
+        id: meta
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/William-Yu1/federal-program-inventory
