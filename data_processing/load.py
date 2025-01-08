@@ -899,15 +899,15 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     # Get simple categories for assistance types
     cursor.execute("""
         WITH assistance_names AS (
-            SELECT DISTINCT
-                CASE
-                    WHEN c.parent_id IS NOT NULL THEN pc.name
-                    ELSE c.name
+            SELECT DISTINCT 
+                CASE 
+                    WHEN c.parent_id IS NOT NULL AND pc.id = c.parent_id AND pc.type = c.type THEN pc.name
+                    ELSE c.name 
                 END as title
             FROM program p
             JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id AND c.type = 'assistance'
-            LEFT JOIN category pc ON c.parent_id = pc.id
+            JOIN category c ON ptc.category_id = c.id AND c.type = 'assistance' 
+            LEFT JOIN category pc ON c.parent_id = pc.id AND c.type = pc.type
             WHERE c.type = ptc.category_type
             AND title IS NOT NULL
         )
@@ -1390,9 +1390,9 @@ try:
 
     shared_data = generate_shared_data(cursor)
 
-    # generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
+    generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
 
-    # generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
+    generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, FISCAL_YEARS[0])
@@ -1403,8 +1403,8 @@ try:
     home_path = os.path.join('../website', 'pages', 'home.md')
     generate_home_page(home_path, shared_data, FISCAL_YEARS[0])
 
-    # programs_json_path = os.path.join('../elasticsearch-custom', 'data', 'programs-table.json')
-    # generate_programs_table_json(programs_json_path, programs_data, FISCAL_YEARS[0])
+    programs_json_path = os.path.join('../elasticsearch-custom', 'data', 'programs-table.json')
+    generate_programs_table_json(programs_json_path, programs_data, FISCAL_YEARS[0])
 
     category_dir = os.path.join('../website', '_category')
     generate_category_markdown_files(cursor, category_dir, FISCAL_YEARS[0])
