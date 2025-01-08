@@ -26,9 +26,9 @@ jobs:
             image_tag: website
     steps:
       -
-        name: Lowercase Github repository
+        name: Lowercase Github repository owner
         run: |
-          echo "REPO=${GITHUB_REPOSITORY@L}" >> ${GITHUB_ENV}
+          echo "REPO_OWNER=${GITHUB_REPOSITORY_OWNER@L}" >> ${GITHUB_ENV}
       -
         name: Checkout
         uses: actions/checkout@v4
@@ -44,6 +44,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ${{ matrix.context }}
-          tags: ${{ env.REGISTRY }}/${{ env.REPO }}:${{ github.ref_name }}-${{matrix.image_tag}}
+          tags: ${{ env.REGISTRY }}/${{ env.REPO_OWNER }}/${{matrix.image_tag}}:${{ github.ref_name }}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
