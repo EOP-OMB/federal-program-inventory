@@ -37,6 +37,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ${{ matrix.context }}
-          tags: ghcr.io/william-yu1/federal-program-inventory:$${{ github.ref }}-{{matrix.image_tag}}
+          tags: ghcr.io/william-yu1/federal-program-inventory:$${{ github.ref }}-${{matrix.image_tag}}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
