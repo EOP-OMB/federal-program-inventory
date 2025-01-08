@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - dockerfile: /elasticsearch/Dockerfile
+          - dockerfile: /elasticsearch-custom/Dockerfile
             image_tag: elasticsearch
           - dockerfile: ./api/Dockerfile
             image_tag: api
