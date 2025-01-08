@@ -1,13 +1,13 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":59,"total_obs":69074194299.0},{"title":"Department
-  of Health and Human Services","total_num_programs":11,"total_obs":815251964.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":491390557.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":57232098.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":3,"total_obs":47720817.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of the
+  Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of Homeland
+  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
+  and Human Services","total_num_programs":11,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":59,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":3,"total_obs":0.0},{"title":"Agency
   for International Development","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":40},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":36},{"title":"Private
@@ -484,15 +484,15 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":41288443845.0},{"title":"Food
-  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":7199999.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":530607120.0},{"title":"Food
-  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":57456839705.0}]'
+sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":0.0},{"title":"Food
+  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":0.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":0.0},{"title":"Food
+  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":0.0}]'
 title: Food and Nutrition
 total_num_agencies: 12
 total_num_applicant_types: 47
 total_num_programs: 87
 total_num_sub_cats: 4
-total_obs: 70485789735.0
+total_obs: 0.0
 ---

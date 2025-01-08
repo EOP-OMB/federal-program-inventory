@@ -459,7 +459,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2023'
+fiscal_year: '2024'
 layout: home
 other_agencies:
 - title: Appalachian Regional Commission

@@ -1,16 +1,15 @@
 ---
-agencies: '[{"title":"Corporation for National and Community Service","total_num_programs":1,"total_obs":786296080.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":489011890.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":263320531.0},{"title":"Department
-  of Transportation","total_num_programs":3,"total_obs":7008086.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":4807280.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Other public institution/organization","total_num_programs":14},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":12},{"title":"Local (includes State-designated
@@ -482,7 +481,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/energy
@@ -490,9 +489,9 @@ programs: '[{"cfda":"81.012","permalink":"/program/81.012","title":"Artificial I
   and Technology Office Financial Assistance Program","popular_name":null,"agency":"Department
   of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
   Materials State Inspection (HMSI) Grant","popular_name":"HMSI Grant","agency":"Department
-  of Transportation","total_obs":290593.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
   Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":244174145.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
@@ -508,23 +507,23 @@ programs: '[{"cfda":"81.012","permalink":"/program/81.012","title":"Artificial I
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
   Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
-  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":3252480.0,"program_type":"assistance_listing"},{"cfda":"10.858","permalink":"/program/10.858","title":"Denali
+  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.858","permalink":"/program/10.858","title":"Denali
   Commission Grants and Loans ","popular_name":"RUS - Denali Commission Grants","agency":"Department
-  of Agriculture","total_obs":1554800.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
   Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":786296080.0,"program_type":"assistance_listing"},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
   Gas Distribution Infrastructure Safety and Modernization Grant Program","popular_name":null,"agency":"Department
-  of Transportation","total_obs":892645.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
   Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.706","permalink":"/program/20.706","title":"Pipeline
-  Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":5824848.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
   Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
@@ -538,5 +537,5 @@ title: Energy
 total_num_agencies: 13
 total_num_applicant_types: 40
 total_num_programs: 25
-total_obs: 1550443867.0
+total_obs: 0.0
 ---

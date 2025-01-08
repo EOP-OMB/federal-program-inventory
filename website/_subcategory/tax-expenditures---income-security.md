@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":23,"total_obs":482940000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":23,"total_obs":452601000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,53 +453,53 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/income-security
 programs: '[{"cfda":"TC.142","permalink":"/program/TC.142","title":"Child credit","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":108360000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.143","permalink":"/program/TC.143","title":"Other
-  Dependent Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.144","permalink":"/program/TC.144","title":"Exclusion
+  of the Treasury","total_obs":68460000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.143","permalink":"/program/TC.143","title":"Other
+  Dependent Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":3380000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.144","permalink":"/program/TC.144","title":"Exclusion
   of railroad retirement (Social Security equivalent) benefits","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":300000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.145","permalink":"/program/TC.145","title":"Exclusion
+  of the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.145","permalink":"/program/TC.145","title":"Exclusion
   of workers'' compensation benefits","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":8870000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.146","permalink":"/program/TC.146","title":"Exclusion
+  the Treasury","total_obs":8780000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.146","permalink":"/program/TC.146","title":"Exclusion
   of public assistance benefits (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":760000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.147","permalink":"/program/TC.147","title":"Exclusion
+  of the Treasury","total_obs":790000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.147","permalink":"/program/TC.147","title":"Exclusion
   of special benefits for disabled coal miners","popular_name":null,"agency":"Department
   of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.148","permalink":"/program/TC.148","title":"Exclusion
   of military disability pensions","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.149","permalink":"/program/TC.149","title":"Net
+  Treasury","total_obs":250000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.149","permalink":"/program/TC.149","title":"Net
   exclusion of pension contributions and earnings: Defined benefit employer plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":70100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.150","permalink":"/program/TC.150","title":"Net
+  of the Treasury","total_obs":68430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.150","permalink":"/program/TC.150","title":"Net
   exclusion of pension contributions and earnings: Defined contribution employer plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":134000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.151","permalink":"/program/TC.151","title":"Net
+  of the Treasury","total_obs":145000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.151","permalink":"/program/TC.151","title":"Net
   exclusion of pension contributions and earnings: Individual Retirement Accounts","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":32690000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.152","permalink":"/program/TC.152","title":"Net
+  of the Treasury","total_obs":33550000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.152","permalink":"/program/TC.152","title":"Net
   exclusion of pension contributions and earnings: Low and moderate income savers
-  credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1860000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.153","permalink":"/program/TC.153","title":"Net
+  credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1870000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.153","permalink":"/program/TC.153","title":"Net
   exclusion of pension contributions and earnings: Self-Employed plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":43180000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.154","permalink":"/program/TC.154","title":"Small
+  of the Treasury","total_obs":39350000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.154","permalink":"/program/TC.154","title":"Small
   employer pension plan startup credit","popular_name":null,"agency":"Department of
   the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.155","permalink":"/program/TC.155","title":"Exclusion
   of other employee benefits: Premiums on group term life insurance","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3440000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.156","permalink":"/program/TC.156","title":"Exclusion
+  of the Treasury","total_obs":3670000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.156","permalink":"/program/TC.156","title":"Exclusion
   of other employee benefits: Premiums on accident and disability insurance","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1720000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.157","permalink":"/program/TC.157","title":"Income
+  of the Treasury","total_obs":1800000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.157","permalink":"/program/TC.157","title":"Income
   of trusts to finance supplementary unemployment benefits","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.158","permalink":"/program/TC.158","title":"Income
+  of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.158","permalink":"/program/TC.158","title":"Income
   of trusts to finance voluntary employee benefits associations","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.159","permalink":"/program/TC.159","title":"Special
+  of the Treasury","total_obs":1350000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.159","permalink":"/program/TC.159","title":"Special
   Employee Stock Ownership Plan (ESOP) rules","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.160","permalink":"/program/TC.160","title":"Additional
+  of the Treasury","total_obs":280000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.160","permalink":"/program/TC.160","title":"Additional
   deduction for the blind","popular_name":null,"agency":"Department of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.161","permalink":"/program/TC.161","title":"Additional
-  deduction for the elderly","popular_name":null,"agency":"Department of the Treasury","total_obs":7540000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.162","permalink":"/program/TC.162","title":"Deductibility
+  deduction for the elderly","popular_name":null,"agency":"Department of the Treasury","total_obs":8120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.162","permalink":"/program/TC.162","title":"Deductibility
   of casualty losses","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.163","permalink":"/program/TC.163","title":"Earned
-  income tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":62480000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.164","permalink":"/program/TC.164","title":"Recovery
-  rebate credits","popular_name":null,"agency":"Department of the Treasury","total_obs":5610000000.0,"program_type":"tax_expenditure"}]'
+  income tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":66930000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.164","permalink":"/program/TC.164","title":"Recovery
+  rebate credits","popular_name":null,"agency":"Department of the Treasury","total_obs":241000000.0,"program_type":"tax_expenditure"}]'
 title: Income Security
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 23
-total_obs: 482940000000.0
+total_obs: 452601000000.0
 ---

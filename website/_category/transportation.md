@@ -1,16 +1,15 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":82,"total_obs":102387178545.0},{"title":"Department
-  of the Interior","total_num_programs":5,"total_obs":861731541.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":316635701.03},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":284203303.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":91708311.0},{"title":"Department
-  of the Treasury","total_num_programs":3,"total_obs":45132526.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":3977041.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":0.0},{"title":"Department of
+  the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of Veterans
+  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":82,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
+  Development","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":51},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":48},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":43},{"title":"Federally
@@ -484,17 +483,17 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/transportation
-sub_cats: '[{"title":"Rail Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":18987445715.03},{"title":"Water
-  Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":26,"total_obs":5245493444.0},{"title":"Urban
-  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":42,"total_obs":19992011203.0},{"title":"Air
-  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":24,"total_obs":12750220956.0},{"title":"Highways,
-  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":60,"total_obs":73970341364.0}]'
+sub_cats: '[{"title":"Rail Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":0.0},{"title":"Water
+  Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":26,"total_obs":0.0},{"title":"Urban
+  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":42,"total_obs":0.0},{"title":"Air
+  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":24,"total_obs":0.0},{"title":"Highways,
+  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":60,"total_obs":0.0}]'
 title: Transportation
 total_num_agencies: 13
 total_num_applicant_types: 42
 total_num_programs: 109
 total_num_sub_cats: 5
-total_obs: 103990566968.03
+total_obs: 0.0
 ---

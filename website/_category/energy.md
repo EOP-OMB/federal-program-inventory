@@ -1,20 +1,17 @@
 ---
-agencies: '[{"title":"Department of Energy","total_num_programs":29,"total_obs":40112669138.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":38486828943.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":6145212190.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":3233248285.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":1140169120.99},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":715455000.0},{"title":"Department
-  of the Interior","total_num_programs":5,"total_obs":495258834.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":249533931.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":204253067.0},{"title":"Department of
-  Transportation","total_num_programs":7,"total_obs":70886040.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":5,"total_obs":0.0},{"title":"Department of
+  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":7,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":29,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":48},{"title":"State (includes
@@ -489,17 +486,17 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/energy
-sub_cats: '[{"title":"Research and Development","permalink":"/category/energy/research-and-development","total_num_programs":45,"total_obs":6780038610.99},{"title":"Specialized
-  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":19435140374.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":37,"total_obs":13931401376.0},{"title":"General
-  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":638175475.0},{"title":"Facilities
-  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":58302758652.0},{"title":"Education
-  and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":1553433935.0}]'
+sub_cats: '[{"title":"Research and Development","permalink":"/category/energy/research-and-development","total_num_programs":45,"total_obs":0.0},{"title":"Specialized
+  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":0.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":37,"total_obs":0.0},{"title":"General
+  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":0.0},{"title":"Facilities
+  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":0.0},{"title":"Education
+  and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":0.0}]'
 title: Energy
 total_num_agencies: 18
 total_num_applicant_types: 41
 total_num_programs: 85
 total_num_sub_cats: 6
-total_obs: 90853514548.98999
+total_obs: 0.0
 ---

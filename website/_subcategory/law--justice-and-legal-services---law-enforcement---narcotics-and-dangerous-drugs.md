@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":1,"total_obs":1523601458.0},{"title":"Executive
-  Office of the President","total_num_programs":1,"total_obs":271600000.0},{"title":"Department
-  of Justice","total_num_programs":13,"total_obs":260958263.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":238450785.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Executive Office of the President","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":13,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":14},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":13},{"title":"State (includes District of Columbia,
@@ -475,14 +475,14 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/law--justice-and-legal-services
 parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
 programs: '[{"cfda":"16.754","permalink":"/program/16.754","title":"Harold Rogers
   Prescription Drug Monitoring Program","popular_name":"(PDMP)","agency":"Department
-  of Justice","total_obs":39095752.0,"program_type":"assistance_listing"},{"cfda":"16.731","permalink":"/program/16.731","title":"Tribal
-  Youth Program","popular_name":"(TYP)","agency":"Department of Justice","total_obs":17000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.731","permalink":"/program/16.731","title":"Tribal
+  Youth Program","popular_name":"(TYP)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
   Crime","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.004","permalink":"/program/16.004","title":"Law
   Enforcement Assistance Narcotics and Dangerous Drugs Training","popular_name":null,"agency":"Department
@@ -494,11 +494,11 @@ programs: '[{"cfda":"16.754","permalink":"/program/16.754","title":"Harold Roger
   Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":92929376.0,"program_type":"assistance_listing"},{"cfda":"15.030","permalink":"/program/15.030","title":"Indian
-  Law Enforcement","popular_name":"Law Enforcement","agency":"Department of the Interior","total_obs":238450785.0,"program_type":"assistance_listing"},{"cfda":"16.320","permalink":"/program/16.320","title":"Services
-  for Trafficking Victims","popular_name":null,"agency":"Department of Justice","total_obs":94999999.0,"program_type":"assistance_listing"},{"cfda":"93.788","permalink":"/program/93.788","title":"Opioid
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.030","permalink":"/program/15.030","title":"Indian
+  Law Enforcement","popular_name":"Law Enforcement","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.320","permalink":"/program/16.320","title":"Services
+  for Trafficking Victims","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.788","permalink":"/program/93.788","title":"Opioid
   STR","popular_name":"State Opioid Response","agency":"Department of Health and Human
-  Services","total_obs":1523601458.0,"program_type":"assistance_listing"},{"cfda":"19.704","permalink":"/program/19.704","title":"Counter
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.704","permalink":"/program/19.704","title":"Counter
   Narcotics","popular_name":"Counter Narcotics, Interdiction, Demand Reduction","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
   Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
@@ -508,17 +508,17 @@ programs: '[{"cfda":"16.754","permalink":"/program/16.754","title":"Harold Roger
   Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
   Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
   of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"16.735","permalink":"/program/16.735","title":"PREA
+  ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.735","permalink":"/program/16.735","title":"PREA
   Program: Strategic Support for PREA Implementation ","popular_name":"Prison Rape
-  Elimination Act (PREA)","agency":"Department of Justice","total_obs":6433136.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
+  Elimination Act (PREA)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
   in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
-  in the Juvenile Justice system","agency":"Department of Justice","total_obs":5500000.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  in the Juvenile Justice system","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
   Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"95.001","permalink":"/program/95.001","title":"High
   Intensity Drug Trafficking Areas Program","popular_name":"(HIDTA)","agency":"Executive
-  Office of the President","total_obs":271600000.0,"program_type":"assistance_listing"}]'
+  Office of the President","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Law Enforcement - Narcotics and Dangerous Drugs
 total_num_agencies: 6
 total_num_applicant_types: 39
 total_num_programs: 22
-total_obs: 2294610506.0
+total_obs: 0.0
 ---

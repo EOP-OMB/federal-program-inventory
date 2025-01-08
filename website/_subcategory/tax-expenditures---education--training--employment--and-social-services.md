@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":27,"total_obs":103089000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":27,"total_obs":107840000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,58 +453,58 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/education--training--employment--and-social-services
 programs: '[{"cfda":"TC.103","permalink":"/program/TC.103","title":"Exclusion of scholarship
   and fellowship income (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":4430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.104","permalink":"/program/TC.104","title":"Tax
+  of the Treasury","total_obs":4860000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.104","permalink":"/program/TC.104","title":"Tax
   credits for post-secondary education expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":16430000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.105","permalink":"/program/TC.105","title":"Deductibility
-  of student-loan interest","popular_name":null,"agency":"Department of the Treasury","total_obs":560000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.106","permalink":"/program/TC.106","title":"Qualified
+  of the Treasury","total_obs":13650000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.105","permalink":"/program/TC.105","title":"Deductibility
+  of student-loan interest","popular_name":null,"agency":"Department of the Treasury","total_obs":500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.106","permalink":"/program/TC.106","title":"Qualified
   tuition programs (includes Education IRA)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3020000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.107","permalink":"/program/TC.107","title":"Exclusion
+  of the Treasury","total_obs":3220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.107","permalink":"/program/TC.107","title":"Exclusion
   of interest on student-loan bonds","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.108","permalink":"/program/TC.108","title":"Exclusion
+  Treasury","total_obs":130000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.108","permalink":"/program/TC.108","title":"Exclusion
   of interest on bonds for private nonprofit educational facilities","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":2280000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.109","permalink":"/program/TC.109","title":"Credit
+  of the Treasury","total_obs":2800000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.109","permalink":"/program/TC.109","title":"Credit
   for holders of zone academy bonds","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":130000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.110","permalink":"/program/TC.110","title":"Exclusion
+  Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.110","permalink":"/program/TC.110","title":"Exclusion
   of interest on savings bonds redeemed to finance educational expenses","popular_name":null,"agency":"Department
   of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.111","permalink":"/program/TC.111","title":"Parental
   personal exemption for students age 19 or over","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":2210000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.112","permalink":"/program/TC.112","title":"Deductibility
+  of the Treasury","total_obs":2130000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.112","permalink":"/program/TC.112","title":"Deductibility
   of charitable contributions to educational institutions","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":6230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.113","permalink":"/program/TC.113","title":"Exclusion
+  of the Treasury","total_obs":9090000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.113","permalink":"/program/TC.113","title":"Exclusion
   of employer-provided educational assistance","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.114","permalink":"/program/TC.114","title":"Special
+  of the Treasury","total_obs":1700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.114","permalink":"/program/TC.114","title":"Special
   deduction for teacher expenses","popular_name":null,"agency":"Department of the
   Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.115","permalink":"/program/TC.115","title":"Discharge
-  of student loan indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.116","permalink":"/program/TC.116","title":"Qualified
-  school construction bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":1050000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.117","permalink":"/program/TC.117","title":"Work
-  opportunity tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":2070000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
-  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":760000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
+  of student loan indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":5910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.116","permalink":"/program/TC.116","title":"Qualified
+  school construction bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":960000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.117","permalink":"/program/TC.117","title":"Work
+  opportunity tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":2050000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
+  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":860000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
   child care credit","popular_name":null,"agency":"Department of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.120","permalink":"/program/TC.120","title":"Assistance
-  for adopted foster children","popular_name":null,"agency":"Department of the Treasury","total_obs":880000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.121","permalink":"/program/TC.121","title":"Adoption
-  credit and exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":870000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.122","permalink":"/program/TC.122","title":"Exclusion
+  for adopted foster children","popular_name":null,"agency":"Department of the Treasury","total_obs":650000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.121","permalink":"/program/TC.121","title":"Adoption
+  credit and exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":300000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.122","permalink":"/program/TC.122","title":"Exclusion
   of employee meals and lodging (other than military)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":7530000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
+  of the Treasury","total_obs":6690000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
   for child and dependent care expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3530000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
+  of the Treasury","total_obs":3560000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
   for disabled access expenditures","popular_name":null,"agency":"Department of the
   Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.125","permalink":"/program/TC.125","title":"Deductibility
   of charitable contributions, other than education and health","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":47410000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion
+  of the Treasury","total_obs":46240000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion
   of certain foster care payments","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.127","permalink":"/program/TC.127","title":"Exclusion
-  of parsonage allowances","popular_name":null,"agency":"Department of the Treasury","total_obs":959000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.128","permalink":"/program/TC.128","title":"Indian
+  Treasury","total_obs":920000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.127","permalink":"/program/TC.127","title":"Exclusion
+  of parsonage allowances","popular_name":null,"agency":"Department of the Treasury","total_obs":1160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.128","permalink":"/program/TC.128","title":"Indian
   employment credit","popular_name":null,"agency":"Department of the Treasury","total_obs":30000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.129","permalink":"/program/TC.129","title":"Employer-provided
   paid family and medical leave credit","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"}]'
+  the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"}]'
 title: Education, Training, Employment, and Social Services
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 27
-total_obs: 103089000000.0
+total_obs: 107840000000.0
 ---

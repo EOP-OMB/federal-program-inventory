@@ -1,20 +1,18 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":2731000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":642108032.0},{"title":"Department
-  of Defense","total_num_programs":4,"total_obs":556001739.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":204253067.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":4,"total_obs":146904090.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":98863177.0},{"title":"The Institute
-  of Museum and Library Services","total_num_programs":2,"total_obs":55993853.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":22376227.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":8968459.0},{"title":"Department
-  of Commerce","total_num_programs":4,"total_obs":5907089.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Southeast
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":2,"total_obs":0.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":5,"total_obs":0.0},{"title":"Library of
-  Congress","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Barry Goldwater Scholarship
-  and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
+  Science Foundation","total_num_programs":5,"total_obs":0.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":4,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":4,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":4,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Barry Goldwater
+  Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":32},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":30},{"title":"Local
@@ -491,24 +489,24 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---sciences
 programs: '[{"cfda":"45.301","permalink":"/program/45.301","title":"Museums for America","popular_name":"MFA;
-  ME; Inspire","agency":"The Institute of Museum and Library Services","total_obs":31509007.0,"program_type":"assistance_listing"},{"cfda":"93.085","permalink":"/program/93.085","title":"Research
+  ME; Inspire","agency":"The Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.085","permalink":"/program/93.085","title":"Research
   on Research Integrity","popular_name":"Ensuring Research Integrity","agency":"Department
-  of Health and Human Services","total_obs":496653.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
   Research Manpower","popular_name":"Cancer Manpower Grants","agency":"Department
-  of Health and Human Services","total_obs":223878703.0,"program_type":"assistance_listing"},{"cfda":"15.945","permalink":"/program/15.945","title":"Cooperative
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.945","permalink":"/program/15.945","title":"Cooperative
   Research and Training Programs \u2013 Resources of the National Park System","popular_name":"Cooperative
-  Ecosystem Studies Units (CESU) Network","agency":"Department of the Interior","total_obs":70083605.0,"program_type":"assistance_listing"},{"cfda":"85.200","permalink":"/program/85.200","title":"Barry
+  Ecosystem Studies Units (CESU) Network","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.200","permalink":"/program/85.200","title":"Barry
   M. Goldwater Scholarship Program","popular_name":"Barry Goldwater Scholarship Foundation","agency":"Barry
   Goldwater Scholarship and Excellence in Education Fund","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"47.084","permalink":"/program/47.084","title":"NSF
   Technology, Innovation, and Partnerships","popular_name":"NSF Directorate for Technology,
@@ -516,60 +514,60 @@ programs: '[{"cfda":"45.301","permalink":"/program/45.301","title":"Museums for 
   and Information Science and Engineering","popular_name":"(CISE)","agency":"National
   Science Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
   and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":402392676.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":2731000000.0,"program_type":"assistance_listing"},{"cfda":"47.074","permalink":"/program/47.074","title":"Biological
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"47.074","permalink":"/program/47.074","title":"Biological
   Sciences","popular_name":"(BIO)","agency":"National Science Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
   Support","popular_name":"Safety, Security and Mission Services (Mission Support
-  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":11540260.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3154841.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
   with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":491390557.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
   Defense Education Program","popular_name":"STEM Education, Outreach, and Workforce
-  Development Initiatives","agency":"Department of Defense","total_obs":52611182.0,"program_type":"assistance_listing"},{"cfda":"47.075","permalink":"/program/47.075","title":"Social,
+  Development Initiatives","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"47.075","permalink":"/program/47.075","title":"Social,
   Behavioral, and Economic Sciences","popular_name":"(SBE)","agency":"National Science
   Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.015","permalink":"/program/11.015","title":"Broad
-  Agency Announcement","popular_name":"BAA","agency":"Department of Commerce","total_obs":1450000.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
+  Agency Announcement","popular_name":"BAA","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
   Leadership Grants","popular_name":"NLG; NLG-L; NLG-M","agency":"The Institute of
-  Museum and Library Services","total_obs":24484846.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
+  Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
   Systems Development Mission Directorate (ESDMD)","agency":"National Aeronautics
-  and Space Administration","total_obs":15091305.0,"program_type":"assistance_listing"},{"cfda":"15.013","permalink":"/program/15.013","title":"Alaska
+  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.013","permalink":"/program/15.013","title":"Alaska
   Native Science and Engineering","popular_name":"Alaska Native Science and Engineering
-  Program (ANSEP)","agency":"Department of the Interior","total_obs":50000.0,"program_type":"assistance_listing"},{"cfda":"12.902","permalink":"/program/12.902","title":"Information
+  Program (ANSEP)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.902","permalink":"/program/12.902","title":"Information
   Security Grants","popular_name":"DoD Cyber Service Academy, DoD CSA","agency":"Department
-  of Defense","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":75000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.901","permalink":"/program/12.901","title":"Mathematical
-  Sciences Grants","popular_name":"MSP","agency":"Department of Defense","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"97.062","permalink":"/program/97.062","title":"Scientific
-  Leadership Awards","popular_name":null,"agency":"Department of Homeland Security","total_obs":8968459.0,"program_type":"assistance_listing"},{"cfda":"47.076","permalink":"/program/47.076","title":"STEM
+  Sciences Grants","popular_name":"MSP","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.062","permalink":"/program/97.062","title":"Scientific
+  Leadership Awards","popular_name":null,"agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"47.076","permalink":"/program/47.076","title":"STEM
   Education (formerly Education and Human Resources)","popular_name":"(EDU)","agency":"National
   Science Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
   Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":204253067.0,"program_type":"assistance_listing"},{"cfda":"11.460","permalink":"/program/11.460","title":"Special
+  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.460","permalink":"/program/11.460","title":"Special
   Oceanic and Atmospheric Projects","popular_name":"Disaster Relief Act of 2019","agency":"Department
-  of Commerce","total_obs":866.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":63495735.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.676","permalink":"/program/15.676","title":"Youth
   Engagement, Education, and Employment ","popular_name":"YEEEP","agency":"Department
-  of the Interior","total_obs":28729572.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
   Operations","popular_name":"Space Operations","agency":"National Aeronautics and
-  Space Administration","total_obs":56776790.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
   Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":4456223.0,"program_type":"assistance_listing"}]'
+  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Resource Development and Support - Sciences
 total_num_agencies: 17
 total_num_applicant_types: 45
 total_num_programs: 39
-total_obs: 4474566020.0
+total_obs: 0.0
 ---

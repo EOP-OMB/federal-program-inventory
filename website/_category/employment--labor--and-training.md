@@ -1,27 +1,24 @@
 ---
-agencies: '[{"title":"Department of Labor","total_num_programs":35,"total_obs":42337796384.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":3694000000.0},{"title":"Department
-  of Agriculture","total_num_programs":12,"total_obs":2512616858.0},{"title":"Department
-  of Education","total_num_programs":8,"total_obs":2158513433.0},{"title":"Department
-  of Health and Human Services","total_num_programs":10,"total_obs":868343975.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":4,"total_obs":792814265.5999999},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":716409040.0},{"title":"Department
-  of the Interior","total_num_programs":12,"total_obs":582138976.0},{"title":"Department
-  of Commerce","total_num_programs":8,"total_obs":336751753.03},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":172968396.0},{"title":"Department
-  of Transportation","total_num_programs":6,"total_obs":170712431.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":3,"total_obs":47720817.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":39314781.0},{"title":"Department
-  of Energy","total_num_programs":3,"total_obs":33869198.0},{"title":"Social Security
-  Administration","total_num_programs":3,"total_obs":29725001.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":9199059.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
+  Security Administration","total_num_programs":3,"total_obs":0.0},{"title":"Small
   Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Railroad
   Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Equal Employment Opportunity
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":4,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0}]'
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
+  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Equal Employment Opportunity
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":12,"total_obs":0.0},{"title":"Department of
+  Veterans Affairs","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":6,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":6,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":35,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":4,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":10,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":3,"total_obs":0.0},{"title":"Department of Education","total_num_programs":8,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":8,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":12,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":68},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":65},{"title":"Local
@@ -492,22 +489,22 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/employment--labor--and-training
-sub_cats: '[{"title":"Federal Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":82301481.0},{"title":"Labor
-  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":391167465.0},{"title":"Bonding
-  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":354200920.0},{"title":"Job
-  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":15398281626.6},{"title":"Facilities,
-  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":900418113.0},{"title":"Assistance
-  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":42021237480.0},{"title":"Equal
-  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":1316893393.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":1143370299.0},{"title":"Assistance
-  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6617445534.0},{"title":"Program
-  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":4920681224.0},{"title":"Planning,
-  Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":26,"total_obs":1556595813.03}]'
+sub_cats: '[{"title":"Federal Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":0.0},{"title":"Labor
+  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":0.0},{"title":"Bonding
+  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":0.0},{"title":"Job
+  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":0.0},{"title":"Facilities,
+  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":0.0},{"title":"Assistance
+  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":0.0},{"title":"Equal
+  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":0.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":0.0},{"title":"Assistance
+  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":0.0},{"title":"Program
+  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":0.0},{"title":"Planning,
+  Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":26,"total_obs":0.0}]'
 title: Employment, Labor, and Training
 total_num_agencies: 25
 total_num_applicant_types: 39
 total_num_programs: 143
 total_num_sub_cats: 11
-total_obs: 54502894367.63
+total_obs: 0.0
 ---

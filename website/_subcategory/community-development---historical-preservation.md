@@ -1,14 +1,13 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":20,"total_obs":818971820.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":707598720.03},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":557786264.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":100991638.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":74259703.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":3,"total_obs":41281007.0},{"title":"Southeast
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
   Endowment for the Arts","total_num_programs":1,"total_obs":0.0},{"title":"National
   Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":20,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
@@ -481,63 +480,63 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/community-development
 parent_title: Community Development
 permalink: /category/community-development/historical-preservation
 programs: '[{"cfda":"12.777","permalink":"/program/12.777","title":"Defense Production
   Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":557769769.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
   Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
-  Agency","total_obs":795532.0,"program_type":"assistance_listing"},{"cfda":"19.036","permalink":"/program/19.036","title":"Cultural
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.036","permalink":"/program/19.036","title":"Cultural
   Antiquities Task Force","popular_name":"CATF","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.932","permalink":"/program/15.932","title":"Preservation
   of Historic Structures on the Campuses of Historically Black Colleges and Universities
-  (HBCUs).","popular_name":"HBCU Grants","agency":"Department of the Interior","total_obs":9700000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  (HBCUs).","popular_name":"HBCU Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.407","permalink":"/program/15.407","title":"Keweenaw
   National Historical Park (NHP) Preservation Grants","popular_name":"Keweenaw Heritage
-  Grants","agency":"Department of the Interior","total_obs":252000.0,"program_type":"assistance_listing"},{"cfda":"45.201","permalink":"/program/45.201","title":"Arts
+  Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.201","permalink":"/program/45.201","title":"Arts
   and Artifacts Indemnity","popular_name":null,"agency":"National Endowment for the
   Arts","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.912","permalink":"/program/15.912","title":"National
   Historic Landmark","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
   American/Native Hawaiian Museum Services Program ","popular_name":"NANH-Museums","agency":"The
-  Institute of Museum and Library Services","total_obs":3772000.0,"program_type":"assistance_listing"},{"cfda":"15.923","permalink":"/program/15.923","title":"National
+  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.923","permalink":"/program/15.923","title":"National
   Center for Preservation Technology and Training","popular_name":"NCPTT","agency":"Department
-  of the Interior","total_obs":865887.0,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
   of Japanese American Confinement Sites","popular_name":"JACS","agency":"Department
-  of the Interior","total_obs":3408083.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
   Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
   Programs for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.617","permalink":"/program/11.617","title":"Congressionally-Identified
-  Projects","popular_name":null,"agency":"Department of Commerce","total_obs":390963019.0,"program_type":"assistance_listing"},{"cfda":"12.025","permalink":"/program/12.025","title":"Native
+  Projects","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.025","permalink":"/program/12.025","title":"Native
   American Consultation to Identify Sacred Sites and Traditional Cultural Properties","popular_name":null,"agency":"Department
-  of Defense","total_obs":16495.0,"program_type":"assistance_listing"},{"cfda":"15.928","permalink":"/program/15.928","title":"Battlefield
-  Land Acquisition Grants","popular_name":"BLAGs","agency":"Department of the Interior","total_obs":17033515.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.928","permalink":"/program/15.928","title":"Battlefield
+  Land Acquisition Grants","popular_name":"BLAGs","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
   Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":1036000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
   Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
-  of the Interior","total_obs":1548319.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
   the People: Community Collections Grants","popular_name":"AFC-Mellon","agency":"Library
   of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.929","permalink":"/program/15.929","title":"Save
-  America''s Treasures","popular_name":null,"agency":"Department of the Interior","total_obs":29654152.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  America''s Treasures","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":31509007.0,"program_type":"assistance_listing"},{"cfda":"15.957","permalink":"/program/15.957","title":"Emergency
+  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.957","permalink":"/program/15.957","title":"Emergency
   Supplemental Historic Preservation Fund","popular_name":null,"agency":"Department
-  of the Interior","total_obs":90497930.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
   Preservation Fund Grants-In-Aid","popular_name":"(HPF)","agency":"Department of
-  the Interior","total_obs":140910324.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
   American Graves Protection and Repatriation Act","popular_name":"NAGPRA","agency":"Department
-  of the Interior","total_obs":3296435.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
@@ -546,34 +545,34 @@ programs: '[{"cfda":"12.777","permalink":"/program/12.777","title":"Defense Prod
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
   4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":156402941.0,"program_type":"assistance_listing"},{"cfda":"15.955","permalink":"/program/15.955","title":"Martin
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.955","permalink":"/program/15.955","title":"Martin
   Luther King Junior National Historic Site and Preservation District","popular_name":null,"agency":"Department
-  of the Interior","total_obs":971000.0,"program_type":"assistance_listing"},{"cfda":"15.939","permalink":"/program/15.939","title":"Heritage
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.939","permalink":"/program/15.939","title":"Heritage
   Partnership","popular_name":"National Heritage Areas","agency":"Department of the
-  Interior","total_obs":29243071.0,"program_type":"assistance_listing"},{"cfda":"15.956","permalink":"/program/15.956","title":"Cooperative
+  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.956","permalink":"/program/15.956","title":"Cooperative
   Management of Ebey''s Landing National Historical Reserve.","popular_name":"Cooperative
-  Management of Ebey''s Landing","agency":"Department of the Interior","total_obs":211000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Management of Ebey''s Landing","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
   Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":160232760.03,"program_type":"assistance_listing"},{"cfda":"15.961","permalink":"/program/15.961","title":"Federal
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.961","permalink":"/program/15.961","title":"Federal
   Historic Preservation Tax Incentive","popular_name":"Historic Tax Credit (HTC)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"89.003","permalink":"/program/89.003","title":"National
   Historical Publications and Records Grants","popular_name":null,"agency":"National
   Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.926","permalink":"/program/15.926","title":"American
   Battlefield Protection","popular_name":"ABPP (Planning Grants)","agency":"Department
-  of the Interior","total_obs":1332214.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
   Grants for African American History and Culture","popular_name":"AAHC","agency":"The
-  Institute of Museum and Library Services","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
+  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":73464171.0,"program_type":"assistance_listing"},{"cfda":"15.966","permalink":"/program/15.966","title":"Historic
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.966","permalink":"/program/15.966","title":"Historic
   Preservation Fund Grants-in-Aid for Competitive Grants","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Historical Preservation
 total_num_agencies: 13
 total_num_applicant_types: 39
 total_num_programs: 44
-total_obs: 2300889152.0299997
+total_obs: 0.0
 ---

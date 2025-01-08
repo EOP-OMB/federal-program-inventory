@@ -1,13 +1,12 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":8,"total_obs":265102726.0},{"title":"National
-  Endowment for the Arts","total_num_programs":3,"total_obs":159878105.0},{"title":"Department
-  of State","total_num_programs":11,"total_obs":159292873.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":36500000.0},{"title":"Department
-  of the Interior","total_num_programs":7,"total_obs":10288493.0},{"title":"Southeast
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":8,"total_obs":0.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":9,"total_obs":0.0},{"title":"Library
+  Endowment for the Humanities","total_num_programs":9,"total_obs":0.0},{"title":"National
+  Endowment for the Arts","total_num_programs":3,"total_obs":0.0},{"title":"Library
   of Congress","total_num_programs":4,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":7,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":35},{"title":"Private nonprofit
@@ -478,14 +477,14 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Promotion of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":37,"total_obs":626794762.0},{"title":"Promotion
-  of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":41,"total_obs":434684092.0}]'
+sub_cats: '[{"title":"Promotion of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":37,"total_obs":0.0},{"title":"Promotion
+  of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":41,"total_obs":0.0}]'
 title: Cultural Affairs
 total_num_agencies: 11
 total_num_applicant_types: 39
 total_num_programs: 48
 total_num_sub_cats: 2
-total_obs: 631062197.0
+total_obs: 0.0
 ---

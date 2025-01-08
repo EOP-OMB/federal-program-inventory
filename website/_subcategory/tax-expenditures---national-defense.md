@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":1599000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":16910000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,16 +453,16 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/national-defense
 programs: '[{"cfda":"TC.001","permalink":"/program/TC.001","title":"Exclusion of benefits
   and allowances to armed forces personnel","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1599000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":16910000000.0,"program_type":"tax_expenditure"}]'
 title: National Defense
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 1
-total_obs: 1599000000.0
+total_obs: 16910000000.0
 ---

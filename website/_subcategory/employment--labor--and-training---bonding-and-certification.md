@@ -1,9 +1,8 @@
 ---
-agencies: '[{"title":"Department of Labor","total_num_programs":4,"total_obs":287010633.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":65000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":5},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -473,29 +472,29 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/bonding-and-certification
 programs: '[{"cfda":"17.150","permalink":"/program/17.150","title":"Employee Benefits
-  Security Administration","popular_name":"(EBSA)","agency":"Department of Labor","total_obs":189899439.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
+  Security Administration","popular_name":"(EBSA)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":15111194.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  (ODEP)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
   Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":65000000.0,"program_type":"assistance_listing"},{"cfda":"17.273","permalink":"/program/17.273","title":"Temporary
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.273","permalink":"/program/17.273","title":"Temporary
   Labor Certification for Foreign Workers","popular_name":null,"agency":"Department
-  of Labor","total_obs":67000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"17.272","permalink":"/program/17.272","title":"Permanent
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.272","permalink":"/program/17.272","title":"Permanent
   Labor Certification for Foreign Workers","popular_name":"PERM","agency":"Department
-  of Labor","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Bonding and Certification
 total_num_agencies: 5
 total_num_applicant_types: 34
 total_num_programs: 8
-total_obs: 354200920.0
+total_obs: 0.0
 ---

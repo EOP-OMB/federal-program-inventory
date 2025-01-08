@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":8,"total_obs":8453445705.0},{"title":"Department
-  of State","total_num_programs":6,"total_obs":141290696.0},{"title":"Department of
-  Homeland Security","total_num_programs":2,"total_obs":25000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of State","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -470,20 +470,20 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/refugees--alien-services
 programs: '[{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps National
   Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.676","permalink":"/program/93.676","title":"Unaccompanied
-  Children Program","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3602437843.0,"program_type":"assistance_listing"},{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.676","permalink":"/program/93.676","title":"Unaccompanied
+  Children Program","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement
   Support Centers (RSCs) for U.S. Refugee Resettlement","popular_name":null,"agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.519","permalink":"/program/19.519","title":"Overseas
   Refugee Assistance Program for Middle East and North Africa Program","popular_name":"Overseas
   Refugee Assistance Program for Middle East and North Africa","agency":"Department
-  of State","total_obs":141290696.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.009","permalink":"/program/97.009","title":"FY
   2022 Operation Allies Welcome Airport Assistance Grant","popular_name":"FY 2022
@@ -494,7 +494,7 @@ programs: '[{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps N
   Outreach, and Awareness for Labor Trafficking (Lighthouse); Victims of Human Trafficking
   Services and Outreach Program; SOAR to Health and Wellness Training (SOAR); and
   the National Human Trafficking Hotline (NHTH)","agency":"Department of Health and
-  Human Services","total_obs":12966750.0,"program_type":"assistance_listing"},{"cfda":"19.511","permalink":"/program/19.511","title":"Overseas
+  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.511","permalink":"/program/19.511","title":"Overseas
   Refugee Assistance Programs for East Asia","popular_name":"Overseas Refugee Assistance
   Programs for East Asia","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.518","permalink":"/program/19.518","title":"Overseas
   Refugee Assistance Programs for Western Hemisphere","popular_name":"Overseas Refugee
@@ -502,11 +502,11 @@ programs: '[{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps N
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.576","permalink":"/program/93.576","title":"Refugee
   and Entrant Assistance Discretionary Grants","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":627546792.0,"program_type":"assistance_listing"},{"cfda":"93.583","permalink":"/program/93.583","title":"Refugee
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.583","permalink":"/program/93.583","title":"Refugee
   and Entrant Assistance Wilson/Fish Program","popular_name":"Wilson-Fish -TANF Coordination
-  Program","agency":"Department of Health and Human Services","total_obs":26183318.0,"program_type":"assistance_listing"},{"cfda":"93.567","permalink":"/program/93.567","title":"Refugee
+  Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.567","permalink":"/program/93.567","title":"Refugee
   and Entrant Assistance Voluntary Agency Programs","popular_name":"Voluntary Agencies
-  Matching Grant Program","agency":"Department of Health and Human Services","total_obs":190201550.0,"program_type":"assistance_listing"},{"cfda":"19.522","permalink":"/program/19.522","title":"Overseas
+  Matching Grant Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.522","permalink":"/program/19.522","title":"Overseas
   Refugee Assistance Programs for Strategic Global Priorities","popular_name":"Overseas
   Refugee Assistance Programs for Strategic Global Priorities","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
@@ -514,13 +514,13 @@ programs: '[{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps N
   Refugee Admissions Program","popular_name":"U.S. Refugee Admissions Program","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.010","permalink":"/program/97.010","title":"Citizenship
   Education and Training","popular_name":"Citizenship Education and Naturalization
-  Application Services","agency":"Department of Homeland Security","total_obs":25000000.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
+  Application Services","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
   and Entrant Assistance State/Replacement Designee Administered Programs","popular_name":"Refugee
   Cash and Medical Assistance Program and Refugee Support Services Program","agency":"Department
-  of Health and Human Services","total_obs":3994109452.0,"program_type":"assistance_listing"}]'
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Refugees, Alien Services
 total_num_agencies: 5
 total_num_applicant_types: 24
 total_num_programs: 18
-total_obs: 8621926688.0
+total_obs: 0.0
 ---

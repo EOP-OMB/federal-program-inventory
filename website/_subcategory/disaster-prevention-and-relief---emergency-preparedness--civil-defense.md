@@ -1,18 +1,16 @@
 ---
-agencies: '[{"title":"Department of Defense","total_num_programs":7,"total_obs":2916587670.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":1613277000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":706726090.0},{"title":"Department
-  of the Interior","total_num_programs":6,"total_obs":522859237.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":459367756.0},{"title":"Department
-  of Homeland Security","total_num_programs":32,"total_obs":120177254.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":100991638.0},{"title":"Department
-  of Transportation","total_num_programs":2,"total_obs":66782384.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":19221386.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":5397051.0},{"title":"Corporation for
-  National and Community Service","total_num_programs":1,"total_obs":4416470.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of State","total_num_programs":5,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":32,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":7,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":31},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":30},{"title":"Private
@@ -484,7 +482,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/disaster-prevention-and-relief
 parent_title: Disaster Prevention and Relief
 permalink: /category/disaster-prevention-and-relief/emergency-preparedness--civil-defense
@@ -492,8 +490,8 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   Systems Grants","popular_name":"National Fire Academy State Fire Training Grants","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
   Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.840","permalink":"/program/12.840","title":"Civil
-  Air Patrol Program","popular_name":null,"agency":"Department of Defense","total_obs":62170710.0,"program_type":"assistance_listing"},{"cfda":"15.065","permalink":"/program/15.065","title":"Safety
-  of Dams on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":5226430.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Air Patrol Program","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.065","permalink":"/program/15.065","title":"Safety
+  of Dams on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.040","permalink":"/program/97.040","title":"Chemical
   Stockpile Emergency Preparedness Program","popular_name":"(CSEPP)","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.821","permalink":"/program/15.821","title":"USGS
@@ -501,7 +499,7 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever
   Extension Funding","popular_name":"1862 LGI\u2019s: 1862 CES (Smith-Lever) and DCPPERA,
   1862 Smith-Lever Special Needs, and Smith-Lever Special Needs-Competitive","agency":"Department
-  of Agriculture","total_obs":310479756.0,"program_type":"assistance_listing"},{"cfda":"97.131","permalink":"/program/97.131","title":"Emergency
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.131","permalink":"/program/97.131","title":"Emergency
   Management Baseline Assessments Grant (EMBAG)","popular_name":"EMBAG","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.139","permalink":"/program/14.139","title":"Mortgage
   Insurance Rental Housing in Urban Renewal Areas","popular_name":"Multifamily Rental
@@ -513,17 +511,17 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.025","permalink":"/program/97.025","title":"National
   Urban Search and Rescue (US&R) Response System","popular_name":"(US&R)\r\n \r\n","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.061","permalink":"/program/97.061","title":"Centers
-  for Homeland Security","popular_name":"(COE)","agency":"Department of Homeland Security","total_obs":36608032.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  for Homeland Security","popular_name":"(COE)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"97.088","permalink":"/program/97.088","title":"Disaster
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.088","permalink":"/program/97.088","title":"Disaster
   Assistance Projects","popular_name":"(Earmarked Projects or Limited Scope Disaster
   Projects.\r\nRestricted to entities designated by DHS or congressional statute.)","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
   Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
-  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2403555718.0,"program_type":"assistance_listing"},{"cfda":"97.107","permalink":"/program/97.107","title":"National
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.107","permalink":"/program/97.107","title":"National
   Incident Management System (NIMS)","popular_name":null,"agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.054","permalink":"/program/10.054","title":"Emergency
-  Conservation Program","popular_name":"ECP","agency":"Department of Agriculture","total_obs":140888000.0,"program_type":"assistance_listing"},{"cfda":"97.057","permalink":"/program/97.057","title":"Intercity
+  Conservation Program","popular_name":"ECP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.057","permalink":"/program/97.057","title":"Intercity
   Bus Security Grants","popular_name":"Intercity Bus Security","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.082","permalink":"/program/97.082","title":"Earthquake
@@ -537,9 +535,9 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.120","permalink":"/program/97.120","title":"Rural
   Emergency Medical Communications Demonstration Project","popular_name":"Rural Emergency
   Medical Communications Demonstration Project (REMCDP)","agency":"Department of Homeland
-  Security","total_obs":4276023.0,"program_type":"assistance_listing"},{"cfda":"93.069","permalink":"/program/93.069","title":"Public
+  Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.069","permalink":"/program/93.069","title":"Public
   Health Emergency Preparedness","popular_name":"PUBLIC HEALTH EMERGENCY PREPAREDNESS
-  (PHEP)","agency":"Department of Health and Human Services","total_obs":660302788.0,"program_type":"assistance_listing"},{"cfda":"97.067","permalink":"/program/97.067","title":"Homeland
+  (PHEP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.067","permalink":"/program/97.067","title":"Homeland
   Security Grant Program","popular_name":"(HSGP)","agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
@@ -550,7 +548,7 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
   Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.116","permalink":"/program/12.116","title":"Department
   of Defense Appropriation Act of 2003","popular_name":null,"agency":"Department of
-  Defense","total_obs":9250000.0,"program_type":"assistance_listing"},{"cfda":"97.056","permalink":"/program/97.056","title":"Port
+  Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.056","permalink":"/program/97.056","title":"Port
   Security Grant Program ","popular_name":"PSGP","agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.137","permalink":"/program/97.137","title":"State
   and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program","popular_name":null,"agency":"Department
@@ -559,65 +557,65 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   and Nuclear Affairs","popular_name":"AVC/MNA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.684","permalink":"/program/93.684","title":"Engaging
   State and Local Emergency Management Agencies to Improve Ability to Prepare for
   and Respond to All - Hazards Events","popular_name":null,"agency":"Department of
-  Health and Human Services","total_obs":200000.0,"program_type":"assistance_listing"},{"cfda":"97.123","permalink":"/program/97.123","title":"State,
+  Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.123","permalink":"/program/97.123","title":"State,
   Local, Tribal and Territorial Security Operations Center/Information Sharing and
   Analysis Center","popular_name":"SLTT SOC / ISAC Program","agency":"Department of
-  Homeland Security","total_obs":43003000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"97.005","permalink":"/program/97.005","title":"State
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.005","permalink":"/program/97.005","title":"State
   and Local Homeland Security National Training Program","popular_name":"Homeland
   Security National Training Program National Domestic Preparedness Consortium (NDPC)
   and Continuing Training Grants (CTG)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.019","permalink":"/program/12.019","title":"Pacific
   Center Disaster (PDC) Program","popular_name":"Disaster Services and Water Resilience
-  Cooperative Agreement","agency":"Department of Defense","total_obs":18093246.0,"program_type":"assistance_listing"},{"cfda":"12.351","permalink":"/program/12.351","title":"Scientific
+  Cooperative Agreement","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.351","permalink":"/program/12.351","title":"Scientific
   Research - Combating Weapons of Mass Destruction","popular_name":null,"agency":"Department
-  of Defense","total_obs":59732359.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
   National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
-  of Defense","total_obs":25483627.0,"program_type":"assistance_listing"},{"cfda":"12.400","permalink":"/program/12.400","title":"Military
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.400","permalink":"/program/12.400","title":"Military
   Construction, National Guard","popular_name":"Military Construction, National Guard","agency":"Department
-  of Defense","total_obs":338302010.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.969","permalink":"/program/15.969","title":"National
   Wildland Fire Management and Natural Resource Training and Workforce Development","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.825","permalink":"/program/20.825","title":"Tanker
-  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":60000000.0,"program_type":"assistance_listing"},{"cfda":"97.111","permalink":"/program/97.111","title":"Regional
+  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.111","permalink":"/program/97.111","title":"Regional
   Catastrophic Preparedness Grant Program (RCPGP)","popular_name":"(RCPGP)","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
   of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns,
   Proposed Solutions","popular_name":"Transport of Transuranic Waste to the Waste
   Isolation Pilot Plant (WIPP): States and Tribal Concerns, Proposed Solutions","agency":"Department
-  of Energy","total_obs":5397051.0,"program_type":"assistance_listing"},{"cfda":"15.674","permalink":"/program/15.674","title":"National
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.674","permalink":"/program/15.674","title":"National
   Fire Plan-Wildland Urban Interface Community Fire Assistance","popular_name":null,"agency":"Department
-  of the Interior","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":75000.0,"program_type":"assistance_listing"},{"cfda":"97.138","permalink":"/program/97.138","title":"Next
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.138","permalink":"/program/97.138","title":"Next
   Generation Warning System Grant Program","popular_name":null,"agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.031","permalink":"/program/15.031","title":"Indian
   Community Fire Protection","popular_name":"(Community Fire Protection)","agency":"Department
-  of the Interior","total_obs":8620917.0,"program_type":"assistance_listing"},{"cfda":"97.039","permalink":"/program/97.039","title":"Hazard
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.039","permalink":"/program/97.039","title":"Hazard
   Mitigation Grant","popular_name":"(HMGP)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.077","permalink":"/program/97.077","title":"Homeland
   Security Research, Development, Testing, Evaluation and Demonstration of Technologies
   Related to Countering Weapons of Mass Destruction","popular_name":"Homeland Security
   Research, Development, Testing, Evaluation and Demonstration of Technologies Related
-  to Countering Weapons of Mass Destruction","agency":"Department of Homeland Security","total_obs":6958548.0,"program_type":"assistance_listing"},{"cfda":"97.133","permalink":"/program/97.133","title":"Preparing
+  to Countering Weapons of Mass Destruction","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.133","permalink":"/program/97.133","title":"Preparing
   for Emerging Threats and Hazards  ","popular_name":null,"agency":"Department of
   Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.012","permalink":"/program/94.012","title":"AmeriCorps
   September 11th National Day of Service and Remembrance Grants 94.012","popular_name":"September
   11th National Day of Service and Remembrance Grants","agency":"Corporation for National
-  and Community Service","total_obs":4416470.0,"program_type":"assistance_listing"},{"cfda":"19.108","permalink":"/program/19.108","title":"Bureau
+  and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.108","permalink":"/program/19.108","title":"Bureau
   of South and Central Asian Affairs","popular_name":"SCA","agency":"Department of
   State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA
   Pipeline Safety Research and Development \u201cOther Transaction Agreements\u201d","popular_name":null,"agency":"Department
-  of Transportation","total_obs":6782384.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons
   Removal and Abatement","popular_name":"(PM/WRA)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.354","permalink":"/program/93.354","title":"Public
   Health Emergency Response:  Cooperative Agreement for Emergency Response: Public
   Health Crisis Response","popular_name":"Public Health Crisis Response Awards","agency":"Department
-  of Health and Human Services","total_obs":46223302.0,"program_type":"assistance_listing"},{"cfda":"93.391","permalink":"/program/93.391","title":"Activities
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.391","permalink":"/program/93.391","title":"Activities
   to Support State, Tribal, Local and Territorial (STLT) Health Department Response
   to Public Health or Healthcare Crises","popular_name":"CDC Partner Crisis Response
   NOFO","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.008","permalink":"/program/97.008","title":"Non-Profit
@@ -628,13 +626,13 @@ programs: '[{"cfda":"97.043","permalink":"/program/97.043","title":"State Fire T
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.108","permalink":"/program/97.108","title":"Public
   Safety and Violence Prevention Research, Evaluation, and Implementation","popular_name":"Public
   Safety and Violence Prevention Research, Evaluation, and Implementation","agency":"Department
-  of Homeland Security","total_obs":12756651.0,"program_type":"assistance_listing"},{"cfda":"97.106","permalink":"/program/97.106","title":"Securing
-  the Cities Program","popular_name":"(STC) ","agency":"Department of Homeland Security","total_obs":16575000.0,"program_type":"assistance_listing"},{"cfda":"10.304","permalink":"/program/10.304","title":"Food
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.106","permalink":"/program/97.106","title":"Securing
+  the Cities Program","popular_name":"(STC) ","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.304","permalink":"/program/10.304","title":"Food
   and Agriculture Defense Initiative (FADI)","popular_name":"Homeland Security Program","agency":"Department
-  of Agriculture","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"97.023","permalink":"/program/97.023","title":"Community
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.023","permalink":"/program/97.023","title":"Community
   Assistance Program State Support Services Element (CAP-SSSE)","popular_name":"(CAP-SSSE)","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.041","permalink":"/program/84.041","title":"Impact
-  Aid","popular_name":null,"agency":"Department of Education","total_obs":1613277000.0,"program_type":"assistance_listing"},{"cfda":"97.139","permalink":"/program/97.139","title":"Safeguarding
+  Aid","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.139","permalink":"/program/97.139","title":"Safeguarding
   Tomorrow Revolving Loan Fund Program","popular_name":"Safeguarding Tomorrow RLF","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
@@ -643,5 +641,5 @@ title: Emergency Preparedness, Civil Defense
 total_num_agencies: 15
 total_num_applicant_types: 38
 total_num_programs: 76
-total_obs: 6535803936.0
+total_obs: 0.0
 ---

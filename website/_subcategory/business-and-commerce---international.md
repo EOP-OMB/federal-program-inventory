@@ -1,12 +1,10 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":15,"total_obs":141290696.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":41792739.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":23198848.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":5071396.0},{"title":"U.S. Agency
-  for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small Business
-  Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
+agencies: '[{"title":"U.S. Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of State","total_num_programs":15,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
   for International Development","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":21},{"title":"Private nonprofit
@@ -477,7 +475,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/business-and-commerce
 parent_title: Business and Commerce
 permalink: /category/business-and-commerce/international
@@ -489,19 +487,19 @@ programs: '[{"cfda":"19.663","permalink":"/program/19.663","title":"Global Telec
   Freight Reimbursement Program (OFR)","popular_name":null,"agency":"Agency for International
   Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.220","permalink":"/program/84.220","title":"Centers
   for International Business Education","popular_name":null,"agency":"Department of
-  Education","total_obs":5071396.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
   Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
   Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.519","permalink":"/program/19.519","title":"Overseas
   Refugee Assistance Program for Middle East and North Africa Program","popular_name":"Overseas
   Refugee Assistance Program for Middle East and North Africa","agency":"Department
-  of State","total_obs":141290696.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
   Agricultural Assistance","popular_name":"Technical Agricultural Assistance","agency":"Department
-  of Agriculture","total_obs":20955483.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
-  Container Assistance Program","popular_name":"CCAP","agency":"Department of Agriculture","total_obs":1151000.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
+  Container Assistance Program","popular_name":"CCAP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
   Fellowship Program","popular_name":"Cochran Fellowship Program","agency":"Department
-  of Agriculture","total_obs":1092365.0,"program_type":"assistance_listing"},{"cfda":"11.805","permalink":"/program/11.805","title":"MBDA
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.805","permalink":"/program/11.805","title":"MBDA
   Business Center","popular_name":"Business Center Program","agency":"Department of
-  Commerce","total_obs":23420000.0,"program_type":"assistance_listing"},{"cfda":"98.001","permalink":"/program/98.001","title":"USAID
+  Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.001","permalink":"/program/98.001","title":"USAID
   Foreign Assistance for Programs Overseas","popular_name":null,"agency":"Agency for
   International Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.520","permalink":"/program/19.520","title":"Overseas
   Refugee Assistance Programs for Europe","popular_name":"Overseas Refugee Assistance
@@ -513,12 +511,12 @@ programs: '[{"cfda":"19.663","permalink":"/program/19.663","title":"Global Telec
   and International Education Projects","popular_name":null,"agency":"Department of
   Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.313","permalink":"/program/11.313","title":"Trade
   Adjustment Assistance for Firms","popular_name":"Trade Adjustment Assistance for
-  Firms","agency":"Department of Commerce","total_obs":14025900.0,"program_type":"assistance_listing"},{"cfda":"19.511","permalink":"/program/19.511","title":"Overseas
+  Firms","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.511","permalink":"/program/19.511","title":"Overseas
   Refugee Assistance Programs for East Asia","popular_name":"Overseas Refugee Assistance
   Programs for East Asia","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.011","permalink":"/program/98.011","title":"Global
   Development Alliance","popular_name":null,"agency":"Agency for International Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.112","permalink":"/program/11.112","title":"Market
-  Development Cooperator Program","popular_name":"MDCP","agency":"Department of Commerce","total_obs":446839.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Development Cooperator Program","popular_name":"MDCP","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.517","permalink":"/program/19.517","title":"Overseas
   Refugee Assistance Programs for Africa","popular_name":"Overseas Refugee Assistance
@@ -540,7 +538,7 @@ programs: '[{"cfda":"19.663","permalink":"/program/19.663","title":"Global Telec
   of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.804","permalink":"/program/11.804","title":"MBDA
   Business Center - American Indian and Alaska Native","popular_name":"MBDA Native
-  American Business Enterprise Entrepreneurship","agency":"Department of Commerce","total_obs":3900000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  American Business Enterprise Entrepreneurship","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
   WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
@@ -549,5 +547,5 @@ title: International
 total_num_agencies: 10
 total_num_applicant_types: 39
 total_num_programs: 36
-total_obs: 211353679.0
+total_obs: 0.0
 ---

@@ -1,16 +1,14 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":4,"total_obs":4541156720.139999},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":3115425487.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":3079000000.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":156402941.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":4,"total_obs":100991638.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":74259703.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":13255608.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":11679374.0},{"title":"Department of
-  Education","total_num_programs":1,"total_obs":3449620.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":19},{"title":"Local (includes
@@ -482,30 +480,30 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/community-development
 parent_title: Community Development
 permalink: /category/community-development/fire-protection
 programs: '[{"cfda":"84.259","permalink":"/program/84.259","title":"Native Hawaiian
-  Career and Technical Education","popular_name":null,"agency":"Department of Education","total_obs":3449620.0,"program_type":"assistance_listing"},{"cfda":"10.724","permalink":"/program/10.724","title":"Wildfire
+  Career and Technical Education","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.724","permalink":"/program/10.724","title":"Wildfire
   Crisis Strategy Landscapes","popular_name":"National Priority Large Landscapes","agency":"Department
-  of Agriculture","total_obs":2325000000.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":73464171.0,"program_type":"assistance_listing"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
   SERVICE FUND - HIGH COST","popular_name":"UNIVERSAL SERVICE FUND - HIGH COST","agency":"Federal
-  Communications Commission","total_obs":3079000000.0,"program_type":"assistance_listing"},{"cfda":"15.969","permalink":"/program/15.969","title":"National
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.969","permalink":"/program/15.969","title":"National
   Wildland Fire Management and Natural Resource Training and Workforce Development","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
   Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
-  Agency","total_obs":795532.0,"program_type":"assistance_listing"},{"cfda":"97.046","permalink":"/program/97.046","title":"Fire
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.046","permalink":"/program/97.046","title":"Fire
   Management Assistance Grant","popular_name":"(FMAG)","agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.228","permalink":"/program/15.228","title":"BLM
   Fuels Management and Community Fire Assistance Program Activities","popular_name":"BLM
   Wildland Fire Fuels Management and Community Assistance Program Activities","agency":"Department
-  of the Interior","total_obs":12825143.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.083","permalink":"/program/97.083","title":"Staffing
   for Adequate Fire and Emergency Response (SAFER)","popular_name":"(SAFER)","agency":"Department
@@ -515,41 +513,41 @@ programs: '[{"cfda":"84.259","permalink":"/program/84.259","title":"Native Hawai
   to Firefighters Grant","popular_name":"(Fire Grants)","agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.652","permalink":"/program/10.652","title":"Forestry
   Research","popular_name":"Research Grants & Cooperative Agreements","agency":"Department
-  of Agriculture","total_obs":12810125.0,"program_type":"assistance_listing"},{"cfda":"10.716","permalink":"/program/10.716","title":"Infrastructure
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.716","permalink":"/program/10.716","title":"Infrastructure
   Investment and Jobs Act Prescribed Fire/Fire Recovery","popular_name":"IIJA Prescribed
-  Fire/Fire Recovery","agency":"Department of Agriculture","total_obs":53346595.14,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+  Fire/Fire Recovery","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":156402941.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.729","permalink":"/program/10.729","title":"Inflation
   Reduction Act - National Forest System","popular_name":"Inflation Reduction Act","agency":"Department
-  of Agriculture","total_obs":2150000000.0,"program_type":"assistance_listing"},{"cfda":"15.948","permalink":"/program/15.948","title":"National
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.948","permalink":"/program/15.948","title":"National
   Fire Plan-Wildland Urban Interface Community Fire Assistance","popular_name":null,"agency":"Department
-  of the Interior","total_obs":430465.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
   Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":557769769.0,"program_type":"assistance_listing"},{"cfda":"81.140","permalink":"/program/81.140","title":"Los
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.140","permalink":"/program/81.140","title":"Los
   Alamos National Laboratory - Fire Protection","popular_name":"Los Alamos Fire Department
-  Cooperative Agreement","agency":"Department of Energy","total_obs":11679374.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Cooperative Agreement","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
   Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
-  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2403555718.0,"program_type":"assistance_listing"},{"cfda":"15.160","permalink":"/program/15.160","title":"BIA
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.160","permalink":"/program/15.160","title":"BIA
   Wildland Urban Interface Community Fire Assistance","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.017","permalink":"/program/12.017","title":"Readiness
   and Environmental Protection Integration (REPI) Program","popular_name":"DoD REPI
-  Program","agency":"Department of Defense","total_obs":154100000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Program","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Fire Protection
 total_num_agencies: 14
 total_num_applicant_types: 39
 total_num_programs: 29
-total_obs: 11095621091.14
+total_obs: 0.0
 ---

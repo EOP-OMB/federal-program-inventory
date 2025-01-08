@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":6,"total_obs":2576000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":6,"total_obs":2700000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -453,24 +453,24 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/transportation
 programs: '[{"cfda":"TC.088","permalink":"/program/TC.088","title":"Tonnage tax","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":100000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.089","permalink":"/program/TC.089","title":"Deferral
-  of tax on shipping companies","popular_name":null,"agency":"Department of the Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.090","permalink":"/program/TC.090","title":"Exclusion
+  of the Treasury","total_obs":120000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.089","permalink":"/program/TC.089","title":"Deferral
+  of tax on shipping companies","popular_name":null,"agency":"Department of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.090","permalink":"/program/TC.090","title":"Exclusion
   of reimbursed employee parking expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1827000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.091","permalink":"/program/TC.091","title":"Exclusion
+  of the Treasury","total_obs":1950000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.091","permalink":"/program/TC.091","title":"Exclusion
   for employer-provided transit passes","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":369000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.092","permalink":"/program/TC.092","title":"Tax
+  the Treasury","total_obs":390000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.092","permalink":"/program/TC.092","title":"Tax
   credit for certain expenditures for maintaining railroad tracks","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":130000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.093","permalink":"/program/TC.093","title":"Exclusion
+  of the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.093","permalink":"/program/TC.093","title":"Exclusion
   of interest on bonds for Highway Projects and rail-truck transfer facilities","popular_name":null,"agency":"Department
   of the Treasury","total_obs":140000000.0,"program_type":"tax_expenditure"}]'
 title: Transportation
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 6
-total_obs: 2576000000.0
+total_obs: 2700000000.0
 ---

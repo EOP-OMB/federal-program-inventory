@@ -995,7 +995,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'title': program['name'],
             'layout': 'program',
             'permalink': f"/program/{program['id']}.html",
-            'fiscal_year': fiscal_years[0],
+            'fiscal_year': constants.FISCAL_YEAR,
             'cfda': program['id'],
             'objective': program['objective'],
             'sam_url': program['sam_url'],
@@ -1395,22 +1395,22 @@ try:
     generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
     search_path = os.path.join('../website', 'pages', 'search.md')
-    generate_search_page(search_path, shared_data, FISCAL_YEARS[0])
+    generate_search_page(search_path, shared_data, constants.FISCAL_YEAR)
 
     category_path = os.path.join('../website', 'pages', 'category.md')
-    generate_category_page(cursor, programs_data, category_path, FISCAL_YEARS[0])
+    generate_category_page(cursor, programs_data, category_path, constants.FISCAL_YEAR)
 
     home_path = os.path.join('../website', 'pages', 'home.md')
-    generate_home_page(home_path, shared_data, FISCAL_YEARS[0])
+    generate_home_page(home_path, shared_data, constants.FISCAL_YEAR)
 
     programs_json_path = os.path.join('../elasticsearch-custom', 'data', 'programs-table.json')
-    generate_programs_table_json(programs_json_path, programs_data, FISCAL_YEARS[0])
+    generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')
-    generate_category_markdown_files(cursor, category_dir, FISCAL_YEARS[0])
+    generate_category_markdown_files(cursor, category_dir, constants.FISCAL_YEAR)
 
     subcategory_dir = os.path.join('../website', '_subcategory')
-    generate_subcategory_markdown_files(cursor, subcategory_dir, FISCAL_YEARS[0])
+    generate_subcategory_markdown_files(cursor, subcategory_dir, constants.FISCAL_YEAR)
 
 except sqlite3.Error as e:
     print(f"Database error occurred: {e}")

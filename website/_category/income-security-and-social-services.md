@@ -1,25 +1,21 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":82,"total_obs":1662654401930.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":23,"total_obs":162136365298.26},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":38633069409.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":10699000000.0},{"title":"Department
-  of the Treasury","total_num_programs":9,"total_obs":2272142256.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":1362991737.0},{"title":"Department
-  of Labor","total_num_programs":6,"total_obs":977762506.0},{"title":"Department of
-  Education","total_num_programs":5,"total_obs":700810516.0},{"title":"Department
-  of Justice","total_num_programs":25,"total_obs":435906135.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":406004000.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":292598287.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":7,"total_obs":256606916.0},{"title":"Department
-  of State","total_num_programs":7,"total_obs":141290696.0},{"title":"Department of
-  the Interior","total_num_programs":6,"total_obs":113227470.0},{"title":"Social Security
-  Administration","total_num_programs":8,"total_obs":41662060.0},{"title":"Department
-  of Homeland Security","total_num_programs":4,"total_obs":25000000.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":4456223.0},{"title":"Small Business
-  Administration","total_num_programs":2,"total_obs":0.0},{"title":"Railroad Retirement
-  Board","total_num_programs":1,"total_obs":0.0},{"title":"Equal Employment Opportunity
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":8,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":2,"total_obs":0.0},{"title":"Railroad
+  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
+  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Equal Employment Opportunity
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
+  Treasury","total_num_programs":9,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":23,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":7,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":25,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":82,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":7,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":88},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":86},{"title":"Private nonprofit institution/organization
@@ -493,29 +489,29 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/income-security-and-social-services
-sub_cats: '[{"title":"Legal and Advocacy Services","permalink":"/category/income-security-and-social-services/legal-and-advocacy-services","total_num_programs":18,"total_obs":11914099854.0},{"title":"Specialized
-  Family and Child Welfare Services","permalink":"/category/income-security-and-social-services/specialized-family-and-child-welfare-services","total_num_programs":27,"total_obs":21744394837.0},{"title":"Disabled
-  and Handicapped Services","permalink":"/category/income-security-and-social-services/disabled-and-handicapped-services","total_num_programs":26,"total_obs":940290697455.0},{"title":"Families
-  and Child Welfare Services","permalink":"/category/income-security-and-social-services/families-and-child-welfare-services","total_num_programs":43,"total_obs":49547520485.0},{"title":"Refugees,
-  Alien Services","permalink":"/category/income-security-and-social-services/refugees--alien-services","total_num_programs":18,"total_obs":8621926688.0},{"title":"Research,
-  Demonstration","permalink":"/category/income-security-and-social-services/research--demonstration","total_num_programs":16,"total_obs":95818841.0},{"title":"Old
-  Age Assistance","permalink":"/category/income-security-and-social-services/old-age-assistance","total_num_programs":25,"total_obs":931246416910.0},{"title":"Youth
-  Services","permalink":"/category/income-security-and-social-services/youth-services","total_num_programs":17,"total_obs":5428223985.0},{"title":"Social
-  Security and Insurance","permalink":"/category/income-security-and-social-services/social-security-and-insurance","total_num_programs":15,"total_obs":435907817342.0},{"title":"Indian
-  Services","permalink":"/category/income-security-and-social-services/indian-services","total_num_programs":23,"total_obs":4279211734.0},{"title":"Information
-  and Referral Services","permalink":"/category/income-security-and-social-services/information-and-referral-services","total_num_programs":37,"total_obs":947457024536.0},{"title":"Training
-  Assistance","permalink":"/category/income-security-and-social-services/training-assistance","total_num_programs":22,"total_obs":18674637583.0},{"title":"Veterans
-  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":26167156022.26},{"title":"Public
-  Assistance","permalink":"/category/income-security-and-social-services/public-assistance","total_num_programs":21,"total_obs":12696185788.0},{"title":"Emergency
-  and Crisis Assistance","permalink":"/category/income-security-and-social-services/emergency-and-crisis-assistance","total_num_programs":30,"total_obs":16408597216.0},{"title":"Specialized
-  Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":828911020.0},{"title":"Prevention","permalink":"/category/income-security-and-social-services/prevention","total_num_programs":27,"total_obs":1594067154439.0},{"title":"Disabled
-  Veterans","permalink":"/category/income-security-and-social-services/disabled-veterans","total_num_programs":20,"total_obs":139396060954.6},{"title":"Nutrition","permalink":"/category/income-security-and-social-services/nutrition","total_num_programs":24,"total_obs":965126092608.0}]'
+sub_cats: '[{"title":"Legal and Advocacy Services","permalink":"/category/income-security-and-social-services/legal-and-advocacy-services","total_num_programs":18,"total_obs":0.0},{"title":"Specialized
+  Family and Child Welfare Services","permalink":"/category/income-security-and-social-services/specialized-family-and-child-welfare-services","total_num_programs":27,"total_obs":0.0},{"title":"Disabled
+  and Handicapped Services","permalink":"/category/income-security-and-social-services/disabled-and-handicapped-services","total_num_programs":26,"total_obs":0.0},{"title":"Families
+  and Child Welfare Services","permalink":"/category/income-security-and-social-services/families-and-child-welfare-services","total_num_programs":43,"total_obs":0.0},{"title":"Refugees,
+  Alien Services","permalink":"/category/income-security-and-social-services/refugees--alien-services","total_num_programs":18,"total_obs":0.0},{"title":"Research,
+  Demonstration","permalink":"/category/income-security-and-social-services/research--demonstration","total_num_programs":16,"total_obs":0.0},{"title":"Old
+  Age Assistance","permalink":"/category/income-security-and-social-services/old-age-assistance","total_num_programs":25,"total_obs":0.0},{"title":"Youth
+  Services","permalink":"/category/income-security-and-social-services/youth-services","total_num_programs":17,"total_obs":0.0},{"title":"Social
+  Security and Insurance","permalink":"/category/income-security-and-social-services/social-security-and-insurance","total_num_programs":15,"total_obs":0.0},{"title":"Indian
+  Services","permalink":"/category/income-security-and-social-services/indian-services","total_num_programs":23,"total_obs":0.0},{"title":"Information
+  and Referral Services","permalink":"/category/income-security-and-social-services/information-and-referral-services","total_num_programs":37,"total_obs":0.0},{"title":"Training
+  Assistance","permalink":"/category/income-security-and-social-services/training-assistance","total_num_programs":22,"total_obs":0.0},{"title":"Veterans
+  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":0.0},{"title":"Public
+  Assistance","permalink":"/category/income-security-and-social-services/public-assistance","total_num_programs":21,"total_obs":0.0},{"title":"Emergency
+  and Crisis Assistance","permalink":"/category/income-security-and-social-services/emergency-and-crisis-assistance","total_num_programs":30,"total_obs":0.0},{"title":"Specialized
+  Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":0.0},{"title":"Prevention","permalink":"/category/income-security-and-social-services/prevention","total_num_programs":27,"total_obs":0.0},{"title":"Disabled
+  Veterans","permalink":"/category/income-security-and-social-services/disabled-veterans","total_num_programs":20,"total_obs":0.0},{"title":"Nutrition","permalink":"/category/income-security-and-social-services/nutrition","total_num_programs":24,"total_obs":0.0}]'
 title: Income Security and Social Services
 total_num_agencies: 22
 total_num_applicant_types: 43
 total_num_programs: 216
 total_num_sub_cats: 19
-total_obs: 1881153295439.26
+total_obs: 0.0
 ---

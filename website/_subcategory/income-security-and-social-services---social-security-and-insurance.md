@@ -1,11 +1,11 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":421423000000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":2,"total_obs":13963348825.0},{"title":"Department
-  of Labor","total_num_programs":2,"total_obs":266635439.0},{"title":"Department of
-  Justice","total_num_programs":1,"total_obs":252642791.0},{"title":"Corporation for
-  National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Social
-  Security Administration","total_num_programs":4,"total_obs":0.0},{"title":"Railroad
-  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Social Security Administration","total_num_programs":4,"total_obs":0.0},{"title":"Railroad
+  Retirement Board","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
+  Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":11},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -468,7 +468,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/social-security-and-insurance
@@ -478,21 +478,21 @@ programs: '[{"cfda":"93.698","permalink":"/program/93.698","title":"Elder Justic
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.571","permalink":"/program/16.571","title":"Public
   Safety Officers'' Benefits Program","popular_name":"(PSOB)","agency":"Department
-  of Justice","total_obs":252642791.0,"program_type":"assistance_listing"},{"cfda":"64.105","permalink":"/program/64.105","title":"Pension
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.105","permalink":"/program/64.105","title":"Pension
   to Veterans Surviving Spouses, and Children","popular_name":"(Death Pension)","agency":"Department
-  of Veterans Affairs","total_obs":11781018969.0,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
+  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
   Hospital Insurance","popular_name":"(Medicare Part A)","agency":"Department of Health
-  and Human Services","total_obs":421423000000.0,"program_type":"assistance_listing"},{"cfda":"96.006","permalink":"/program/96.006","title":"Supplemental
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.006","permalink":"/program/96.006","title":"Supplemental
   Security Income","popular_name":"Supplemental Security Income  (SSI)","agency":"Social
   Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.150","permalink":"/program/17.150","title":"Employee
   Benefits Security Administration","popular_name":"(EBSA)","agency":"Department of
-  Labor","total_obs":189899439.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
+  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
   Mine Workers'' Compensation","popular_name":"Black Lung","agency":"Department of
-  Labor","total_obs":76736000.0,"program_type":"assistance_listing"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
+  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
   Security Survivors Insurance","popular_name":"Survivor Benefits","agency":"Social
   Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.104","permalink":"/program/64.104","title":"Pension
   for Non-Service-Connected Disability for Veterans","popular_name":"(Pension)","agency":"Department
-  of Veterans Affairs","total_obs":2182329856.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"57.001","permalink":"/program/57.001","title":"Social
   Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
   unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.002","permalink":"/program/96.002","title":"Social
@@ -502,10 +502,10 @@ programs: '[{"cfda":"93.698","permalink":"/program/93.698","title":"Elder Justic
   ","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"}]'
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Social Security and Insurance
 total_num_agencies: 8
 total_num_applicant_types: 19
 total_num_programs: 15
-total_obs: 435907817342.0
+total_obs: 0.0
 ---

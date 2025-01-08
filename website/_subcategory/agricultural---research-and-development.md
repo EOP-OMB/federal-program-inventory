@@ -1,12 +1,10 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":60,"total_obs":5374337855.99},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":55274639.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":21171821.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":19146386.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":1919000.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
   Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":60,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":55},{"title":"State (includes
@@ -480,151 +478,151 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/agricultural
 parent_title: Agricultural
 permalink: /category/agricultural/research-and-development
 programs: '[{"cfda":"10.310","permalink":"/program/10.310","title":"Agriculture and
   Food Research Initiative (AFRI) ","popular_name":"AFRI","agency":"Department of
-  Agriculture","total_obs":429000000.0,"program_type":"assistance_listing"},{"cfda":"10.219","permalink":"/program/10.219","title":"Biotechnology
-  Risk Assessment Research","popular_name":"(BRAG)","agency":"Department of Agriculture","total_obs":5500000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.219","permalink":"/program/10.219","title":"Biotechnology
+  Risk Assessment Research","popular_name":"(BRAG)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.433","permalink":"/program/11.433","title":"Marine
-  Fisheries Initiative","popular_name":"(MARFIN)","agency":"Department of Commerce","total_obs":1650000.0,"program_type":"assistance_listing"},{"cfda":"10.714","permalink":"/program/10.714","title":"Infrastructure
+  Fisheries Initiative","popular_name":"(MARFIN)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.714","permalink":"/program/10.714","title":"Infrastructure
   Investment and Job Act Joint Fire Science Program (Research & Development)","popular_name":"IIJA
-  Research & Development","agency":"Department of Agriculture","total_obs":1732591.0,"program_type":"assistance_listing"},{"cfda":"10.336","permalink":"/program/10.336","title":"Veterinary
-  Services Grant Program","popular_name":"VSGP","agency":"Department of Agriculture","total_obs":3822070.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Research & Development","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.336","permalink":"/program/10.336","title":"Veterinary
+  Services Grant Program","popular_name":"VSGP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
   5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
   Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
   Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":1175000.0,"program_type":"assistance_listing"},{"cfda":"10.610","permalink":"/program/10.610","title":"Export
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.610","permalink":"/program/10.610","title":"Export
   Guarantee Program ","popular_name":"The GSM-102 Program","agency":"Department of
-  Agriculture","total_obs":2919527960.0,"program_type":"assistance_listing"},{"cfda":"10.652","permalink":"/program/10.652","title":"Forestry
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.652","permalink":"/program/10.652","title":"Forestry
   Research","popular_name":"Research Grants & Cooperative Agreements","agency":"Department
-  of Agriculture","total_obs":12810125.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
-  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":597568.0,"program_type":"assistance_listing"},{"cfda":"10.707","permalink":"/program/10.707","title":"Research
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
+  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.707","permalink":"/program/10.707","title":"Research
   Joint Venture and Cost Reimbursable Agreements","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":67877297.0,"program_type":"assistance_listing"},{"cfda":"10.212","permalink":"/program/10.212","title":"Small
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.212","permalink":"/program/10.212","title":"Small
   Business Innovation Research (SBIR) Program / Small Business Technology Transfer
   (STTR) Program","popular_name":"SBIR/STTR Program - Phase I and II","agency":"Department
-  of Agriculture","total_obs":33760460.0,"program_type":"assistance_listing"},{"cfda":"10.291","permalink":"/program/10.291","title":"Agricultural
-  and Food Policy Research Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":7650000.0,"program_type":"assistance_listing"},{"cfda":"10.513","permalink":"/program/10.513","title":"Facility
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.291","permalink":"/program/10.291","title":"Agricultural
+  and Food Policy Research Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.513","permalink":"/program/10.513","title":"Facility
   Improvements at 1890 Facilities (Sec. 1447)","popular_name":"1890 FGP\r\n\r\n","agency":"Department
-  of Agriculture","total_obs":20619522.0,"program_type":"assistance_listing"},{"cfda":"10.694","permalink":"/program/10.694","title":"Southwest
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.694","permalink":"/program/10.694","title":"Southwest
   Forest Health and Wildfire Prevention","popular_name":"SWERI","agency":"Department
-  of Agriculture","total_obs":7800000.0,"program_type":"assistance_listing"},{"cfda":"10.176","permalink":"/program/10.176","title":"Dairy
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.176","permalink":"/program/10.176","title":"Dairy
   Business Innovation Initiatives","popular_name":"DBI Initiatives","agency":"Department
-  of Agriculture","total_obs":23053000.0,"program_type":"assistance_listing"},{"cfda":"10.215","permalink":"/program/10.215","title":"Sustainable
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.215","permalink":"/program/10.215","title":"Sustainable
   Agriculture Research and Education","popular_name":"(SARE)","agency":"Department
-  of Agriculture","total_obs":42000000.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
   Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"10.210","permalink":"/program/10.210","title":"Higher
+  and Safety","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.210","permalink":"/program/10.210","title":"Higher
   Education National Needs Graduate Fellowship Grants","popular_name":"Institution
   Challenge, Multicultural Scholars & Graduate Fellowships Grant Program (Graduate
   Fellowships)\r\n\r\n[Formerly: National Needs Fellowship (NFF)]","agency":"Department
-  of Agriculture","total_obs":3100000.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
   of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
-  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":8041821.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
+  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
   and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":4729056.0,"program_type":"assistance_listing"},{"cfda":"10.303","permalink":"/program/10.303","title":"Integrated
-  Programs","popular_name":"Integrated Programs","agency":"Department of Agriculture","total_obs":11672298.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
-  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":3252480.0,"program_type":"assistance_listing"},{"cfda":"15.069","permalink":"/program/15.069","title":"Zoonotic
-  Disease Initiative","popular_name":"ZDI","agency":"Department of the Interior","total_obs":13130000.0,"program_type":"assistance_listing"},{"cfda":"10.253","permalink":"/program/10.253","title":"Consumer
-  Data and Nutrition Research","popular_name":null,"agency":"Department of Agriculture","total_obs":851000.0,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
-  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":4172970.99,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.303","permalink":"/program/10.303","title":"Integrated
+  Programs","popular_name":"Integrated Programs","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
+  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.069","permalink":"/program/15.069","title":"Zoonotic
+  Disease Initiative","popular_name":"ZDI","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.253","permalink":"/program/10.253","title":"Consumer
+  Data and Nutrition Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
+  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
   Border Regional Development","popular_name":"Direct Grants","agency":"Northern Border
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.332","permalink":"/program/10.332","title":"Agricultural
   Genome to Phenome Initiative","popular_name":"Genome to Phenome","agency":"Department
-  of Agriculture","total_obs":2308369.0,"program_type":"assistance_listing"},{"cfda":"10.243","permalink":"/program/10.243","title":"American
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.243","permalink":"/program/10.243","title":"American
   Rescue Plan Centers of Excellence for Meat and Poultry Processing and Food Safety
-  Research and Innovation Phase III","popular_name":null,"agency":"Department of Agriculture","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"10.001","permalink":"/program/10.001","title":"Agricultural
+  Research and Innovation Phase III","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.001","permalink":"/program/10.001","title":"Agricultural
   Research Basic and Applied Research","popular_name":"Extramural Research","agency":"Department
-  of Agriculture","total_obs":374474444.0,"program_type":"assistance_listing"},{"cfda":"10.600","permalink":"/program/10.600","title":"Foreign
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.600","permalink":"/program/10.600","title":"Foreign
   Market Development Cooperator Program","popular_name":"FMD, Cooperator Program","agency":"Department
-  of Agriculture","total_obs":34500000.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.205","permalink":"/program/10.205","title":"Payments
   to 1890 Land-Grant Colleges and Tuskegee University","popular_name":"Evans-Allen
   Research;  Agricultural Research at 1890 Land-grant Institutions Section 1445","agency":"Department
-  of Agriculture","total_obs":75116800.0,"program_type":"assistance_listing"},{"cfda":"10.460","permalink":"/program/10.460","title":"Risk
-  Management Education Partnerships","popular_name":null,"agency":"Department of Agriculture","total_obs":4673000.0,"program_type":"assistance_listing"},{"cfda":"10.216","permalink":"/program/10.216","title":"1890
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.460","permalink":"/program/10.460","title":"Risk
+  Management Education Partnerships","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.216","permalink":"/program/10.216","title":"1890
   Institution Capacity Building Grants","popular_name":"1890 Capacity (CBG)","agency":"Department
-  of Agriculture","total_obs":28000000.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
   Fellowship Program","popular_name":"Cochran Fellowship Program","agency":"Department
-  of Agriculture","total_obs":1092365.0,"program_type":"assistance_listing"},{"cfda":"10.601","permalink":"/program/10.601","title":"Market
-  Access Program","popular_name":"MAP","agency":"Department of Agriculture","total_obs":200000000.0,"program_type":"assistance_listing"},{"cfda":"10.681","permalink":"/program/10.681","title":"Wood  Education
-  and Resource  Center (WERC)","popular_name":"WERC","agency":"Department of Agriculture","total_obs":705164.0,"program_type":"assistance_listing"},{"cfda":"10.937","permalink":"/program/10.937","title":"Partnerships
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.601","permalink":"/program/10.601","title":"Market
+  Access Program","popular_name":"MAP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.681","permalink":"/program/10.681","title":"Wood  Education
+  and Resource  Center (WERC)","popular_name":"WERC","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.937","permalink":"/program/10.937","title":"Partnerships
   for Climate-Smart Commodities","popular_name":"Partnerships for Climate-Smart Commodities","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.360","permalink":"/program/12.360","title":"Research
   on Chemical and Biological Defense","popular_name":null,"agency":"Department of
   Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.202","permalink":"/program/10.202","title":"Cooperative
   Forestry Research","popular_name":"McIntire-Stennis Cooperative Forestry Research
-  Program","agency":"Department of Agriculture","total_obs":38000000.0,"program_type":"assistance_listing"},{"cfda":"10.292","permalink":"/program/10.292","title":"Food
-  Loss and Waste Reduction","popular_name":null,"agency":"Department of Agriculture","total_obs":160000.0,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
+  Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.292","permalink":"/program/10.292","title":"Food
+  Loss and Waste Reduction","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
   Health and Disease Research","popular_name":"AHDR; Animal Health and Disease Research
-  Capacity Program","agency":"Department of Agriculture","total_obs":3717120.0,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
+  Capacity Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
   Building for Non-Land Grant Colleges of Agriculture (NLGCA)","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
   Tahoe Erosion Control Grant Program","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":1950000.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"10.203","permalink":"/program/10.203","title":"Payments
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.203","permalink":"/program/10.203","title":"Payments
   to Agricultural Experiment Stations Under the Hatch Act","popular_name":"Hatch Act
   ; The Hatch Act of 1887; The Hatch Act of 1887 (Regular Research); The Hatch Act
-  of 1887 (Multistate Research Fund)","agency":"Department of Agriculture","total_obs":244357671.0,"program_type":"assistance_listing"},{"cfda":"10.606","permalink":"/program/10.606","title":"Food
-  for Progress","popular_name":"FFPr","agency":"Department of Agriculture","total_obs":225080000.0,"program_type":"assistance_listing"},{"cfda":"10.220","permalink":"/program/10.220","title":"Higher
+  of 1887 (Multistate Research Fund)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.606","permalink":"/program/10.606","title":"Food
+  for Progress","popular_name":"FFPr","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.220","permalink":"/program/10.220","title":"Higher
   Education - Multicultural Scholars Grant Program","popular_name":"Institution Challenge,
   Multicultural Scholars & Graduate Fellowships Grant Program (Multicultural Scholars)\r\n\r\n[Formerly:
-  Minority Scholars Program]","agency":"Department of Agriculture","total_obs":1250000.0,"program_type":"assistance_listing"},{"cfda":"10.329","permalink":"/program/10.329","title":"Crop
+  Minority Scholars Program]","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.329","permalink":"/program/10.329","title":"Crop
   Protection and Pest Management Competitive Grants Program","popular_name":"Crop
-  Protection and Pest Management (CPPM)\r\n\r\n","agency":"Department of Agriculture","total_obs":19962838.0,"program_type":"assistance_listing"},{"cfda":"10.200","permalink":"/program/10.200","title":"Grants
+  Protection and Pest Management (CPPM)\r\n\r\n","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.200","permalink":"/program/10.200","title":"Grants
   for Agricultural Research, Special Research Grants","popular_name":"Special Research
-  Grants (SRGP)","agency":"Department of Agriculture","total_obs":13607309.0,"program_type":"assistance_listing"},{"cfda":"12.355","permalink":"/program/12.355","title":"Pest
+  Grants (SRGP)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.355","permalink":"/program/12.355","title":"Pest
   Management and Vector Control Research","popular_name":"Deployed WarFighter Protection
   Program","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.311","permalink":"/program/10.311","title":"Beginning
   Farmer and Rancher Development Program","popular_name":"BFRDP","agency":"Department
-  of Agriculture","total_obs":27999998.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
-  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":53623773.0,"program_type":"assistance_listing"},{"cfda":"10.328","permalink":"/program/10.328","title":"Food
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
+  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.328","permalink":"/program/10.328","title":"Food
   Safety Outreach Program","popular_name":"National Food Safety Training, Education,
-  Extension, Outreach, and Technical Assistance","agency":"Department of Agriculture","total_obs":9600000.0,"program_type":"assistance_listing"},{"cfda":"10.255","permalink":"/program/10.255","title":"Research
+  Extension, Outreach, and Technical Assistance","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.255","permalink":"/program/10.255","title":"Research
   Innovation and Development Grants in Economic (RIDGE)","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":600000.0,"program_type":"assistance_listing"},{"cfda":"10.227","permalink":"/program/10.227","title":"1994
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.227","permalink":"/program/10.227","title":"1994
   Institutions Research Grants","popular_name":"Tribal Colleges Research Grants Program
-  (TCRGP) ","agency":"Department of Agriculture","total_obs":4500000.0,"program_type":"assistance_listing"},{"cfda":"10.782","permalink":"/program/10.782","title":"Appropriate
+  (TCRGP) ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.782","permalink":"/program/10.782","title":"Appropriate
   Technology Transfer for Rural Areas","popular_name":"ATTRA","agency":"Department
-  of Agriculture","total_obs":3499999.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
   and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
-  Act","agency":"Department of Defense","total_obs":1919000.0,"program_type":"assistance_listing"},{"cfda":"10.174","permalink":"/program/10.174","title":"Acer
-  Access Development Program","popular_name":null,"agency":"Department of Agriculture","total_obs":7418000.0,"program_type":"assistance_listing"},{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever
+  Act","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.174","permalink":"/program/10.174","title":"Acer
+  Access Development Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever
   Extension Funding","popular_name":"1862 LGI\u2019s: 1862 CES (Smith-Lever) and DCPPERA,
   1862 Smith-Lever Special Needs, and Smith-Lever Special Needs-Competitive","agency":"Department
-  of Agriculture","total_obs":310479756.0,"program_type":"assistance_listing"},{"cfda":"10.969","permalink":"/program/10.969","title":"FSA
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.969","permalink":"/program/10.969","title":"FSA
   Conservation Reserve Program Transition Incentive Program: Outreach, Technical Assistance,
   and Research Agreements","popular_name":"CRP TIP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.334","permalink":"/program/10.334","title":"Enhancing
   Agricultural Opportunities for Military Veterans Competitive Grants Program","popular_name":"AgVets","agency":"Department
-  of Agriculture","total_obs":4791170.0,"program_type":"assistance_listing"},{"cfda":"11.460","permalink":"/program/11.460","title":"Special
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.460","permalink":"/program/11.460","title":"Special
   Oceanic and Atmospheric Projects","popular_name":"Disaster Relief Act of 2019","agency":"Department
-  of Commerce","total_obs":866.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.771","permalink":"/program/10.771","title":"Rural
-  Cooperative Development Grants","popular_name":"RCDG","agency":"Department of Agriculture","total_obs":5200000.0,"program_type":"assistance_listing"},{"cfda":"10.245","permalink":"/program/10.245","title":"Laying
-  Hen and Turkey Research Program","popular_name":null,"agency":"Department of Agriculture","total_obs":927258.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
+  Cooperative Development Grants","popular_name":"RCDG","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.245","permalink":"/program/10.245","title":"Laying
+  Hen and Turkey Research Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
   E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
-  Fellowship Program","agency":"Department of Agriculture","total_obs":7715.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
+  Fellowship Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
   Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
   Agricultural Assistance","popular_name":"Technical Agricultural Assistance","agency":"Department
-  of Agriculture","total_obs":20955483.0,"program_type":"assistance_listing"},{"cfda":"10.464","permalink":"/program/10.464","title":"Socially
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.464","permalink":"/program/10.464","title":"Socially
   Disadvantaged Farmers and Ranchers Policy Research Center","popular_name":"The Policy
-  Center","agency":"Department of Agriculture","total_obs":1500000.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
+  Center","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
   Research and Development Initiative Competitive Grants Program (BRDI)","popular_name":"BRDI","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.309","permalink":"/program/10.309","title":"Specialty
-  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":76000000.0,"program_type":"assistance_listing"}]'
+  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Research and Development
 total_num_agencies: 10
 total_num_applicant_types: 41
 total_num_programs: 77
-total_obs: 5471849701.99
+total_obs: 0.0
 ---

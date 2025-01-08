@@ -1,29 +1,25 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":39,"total_obs":24439699533.0},{"title":"Department
-  of Transportation","total_num_programs":12,"total_obs":8023574457.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":6665000000.0},{"title":"Department
-  of Commerce","total_num_programs":51,"total_obs":3712201034.03},{"title":"Department
-  of the Interior","total_num_programs":12,"total_obs":2865932749.0},{"title":"Small
-  Business Administration","total_num_programs":29,"total_obs":2334687000.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":918500000.0},{"title":"Department
-  of the Treasury","total_num_programs":14,"total_obs":779248303.0},{"title":"Department
-  of Labor","total_num_programs":5,"total_obs":752454597.0},{"title":"Department of
-  Defense","total_num_programs":10,"total_obs":729892946.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":252834755.0},{"title":"Department
-  of State","total_num_programs":22,"total_obs":141290696.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":7,"total_obs":100991638.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":57221245.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":10063187.0},{"title":"Department
-  of Education","total_num_programs":2,"total_obs":5071396.0},{"title":"U.S. Agency
-  for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Millennium
+agencies: '[{"title":"U.S. Agency for Global Media","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":29,"total_obs":0.0},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Millennium
   Challenge Corporation","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Export
-  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta
-  Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
+  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Federal Financial
+  Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of the Treasury","total_num_programs":14,"total_obs":0.0},{"title":"Department of
+  the Interior","total_num_programs":12,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":12,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":22,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":7,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":10,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":51,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":39,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Agency for
   International Development","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
@@ -497,18 +493,18 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"Economic Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":23148342579.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":1476632926.0},{"title":"Economic
-  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":24663200664.03},{"title":"Special
-  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":706734137.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":211353679.0},{"title":"Minority
-  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":2707859789.0},{"title":"Small
-  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":6254958821.0},{"title":"Commercial
-  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":907308091.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":713111032.0}]'
+sub_cats: '[{"title":"Economic Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":0.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":0.0},{"title":"Economic
+  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":0.0},{"title":"Special
+  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":0.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":0.0},{"title":"Minority
+  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":0.0},{"title":"Small
+  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":0.0},{"title":"Commercial
+  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":0.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":0.0}]'
 title: Business and Commerce
 total_num_agencies: 28
 total_num_applicant_types: 39
 total_num_programs: 237
 total_num_sub_cats: 9
-total_obs: 51788663536.03
+total_obs: 0.0
 ---

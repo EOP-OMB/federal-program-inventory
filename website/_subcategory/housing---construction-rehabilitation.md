@@ -1,10 +1,10 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":4,"total_obs":31297835505.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":28,"total_obs":12385529257.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":2,"total_obs":136207404.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":93532000.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":2156197.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of
+  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
+  Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":28,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":19},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
@@ -474,13 +474,13 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/construction-rehabilitation
 programs: '[{"cfda":"14.867","permalink":"/program/14.867","title":"Indian Housing
   Block Grants","popular_name":"IHBG; Native American Housing Block Grant Program
-  (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":915882053.0,"program_type":"assistance_listing"},{"cfda":"14.134","permalink":"/program/14.134","title":"Mortgage
+  (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.134","permalink":"/program/14.134","title":"Mortgage
   Insurance Rental Housing","popular_name":"Mortgage Insurance for Rental Housing
   -Section 207","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.138","permalink":"/program/14.138","title":"Mortgage
   Insurance Rental Housing for the Elderly","popular_name":"New Construction and Substantial
@@ -493,25 +493,25 @@ programs: '[{"cfda":"14.867","permalink":"/program/14.867","title":"Indian Housi
   Insurance Cooperative Projects","popular_name":"Cooperative Housing Mortgage Insurance
   - Section 213","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.410","permalink":"/program/10.410","title":"Very
   Low to Moderate Income Housing Loans and Loan Guarantees","popular_name":"(Section
-  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":31249999999.0,"program_type":"assistance_listing"},{"cfda":"14.850","permalink":"/program/14.850","title":"Public
+  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.850","permalink":"/program/14.850","title":"Public
   Housing Operating Fund","popular_name":"Operating Subsidy Grant","agency":"Department
-  of Housing and Urban Development","total_obs":5049927941.0,"program_type":"assistance_listing"},{"cfda":"14.278","permalink":"/program/14.278","title":"Veterans
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.278","permalink":"/program/14.278","title":"Veterans
   Housing Rehabilitation and Modification Program","popular_name":"Veterans Housing
   Rehabilitation and Modification Program","agency":"Department of Housing and Urban
   Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
   Labor Housing Loans and Grants","popular_name":"Labor Housing","agency":"Department
-  of Agriculture","total_obs":3060000.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.106","permalink":"/program/64.106","title":"Specially
   Adapted Housing for Disabled Veterans","popular_name":"Specially Adapted Housing","agency":"Department
-  of Veterans Affairs","total_obs":136207404.0,"program_type":"assistance_listing"},{"cfda":"14.275","permalink":"/program/14.275","title":"Housing
+  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.275","permalink":"/program/14.275","title":"Housing
   Trust Fund","popular_name":"Housing Trust Fund","agency":"Department of Housing
-  and Urban Development","total_obs":688096848.0,"program_type":"assistance_listing"},{"cfda":"14.108","permalink":"/program/14.108","title":"Rehabilitation
+  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.108","permalink":"/program/14.108","title":"Rehabilitation
   Mortgage Insurance","popular_name":"FHA Rehabilitation Mortgage- 203(k)","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
-  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":28775506.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"14.142","permalink":"/program/14.142","title":"Property
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.142","permalink":"/program/14.142","title":"Property
   Improvement Loan Insurance for Improving All Existing Structures and Building of
   New Nonresidential Structures","popular_name":"Property Improvement Loans (Title
   I-PI)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
@@ -522,11 +522,11 @@ programs: '[{"cfda":"14.867","permalink":"/program/14.867","title":"Indian Housi
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.274","permalink":"/program/17.274","title":"YouthBuild","popular_name":"YouthBuild","agency":"Department
-  of Labor","total_obs":93532000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.433","permalink":"/program/10.433","title":"Rural
   Housing Preservation Grants","popular_name":"Housing Preservation Grants","agency":"Department
-  of Agriculture","total_obs":16000000.0,"program_type":"assistance_listing"},{"cfda":"15.141","permalink":"/program/15.141","title":"Indian
-  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":2156197.0,"program_type":"assistance_listing"},{"cfda":"14.135","permalink":"/program/14.135","title":"Mortgage
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.141","permalink":"/program/15.141","title":"Indian
+  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.135","permalink":"/program/14.135","title":"Mortgage
   Insurance Rental and Cooperative Housing for Moderate Income Families and Elderly,
   Market Interest Rate","popular_name":"New Construction or Substantial Rehabilitation
   of Rental Housing -221(d)(4)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
@@ -539,7 +539,7 @@ programs: '[{"cfda":"14.867","permalink":"/program/14.867","title":"Indian Housi
   Projects in Designated Areas - Section 220","agency":"Department of Housing and
   Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.239","permalink":"/program/14.239","title":"Home
   Investment Partnerships Program","popular_name":"(HOME Program)","agency":"Department
-  of Housing and Urban Development","total_obs":1970300807.0,"program_type":"assistance_listing"},{"cfda":"14.881","permalink":"/program/14.881","title":"Moving
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.881","permalink":"/program/14.881","title":"Moving
   to Work Demonstration Program","popular_name":null,"agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.248","permalink":"/program/14.248","title":"Community
   Development Block Grants Section 108 Loan Guarantees","popular_name":"(Section 108)","agency":"Department
@@ -553,16 +553,16 @@ programs: '[{"cfda":"14.867","permalink":"/program/14.867","title":"Indian Housi
   Housing for Persons with Disabilities","popular_name":"Section 811 Capital Advance","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
   Housing Capital Fund","popular_name":"(CFP)","agency":"Department of Housing and
-  Urban Development","total_obs":3192113014.0,"program_type":"assistance_listing"},{"cfda":"14.122","permalink":"/program/14.122","title":"Mortgage
+  Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.122","permalink":"/program/14.122","title":"Mortgage
   Insurance Homes in Urban Renewal Areas","popular_name":"(220 Homes)","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.913","permalink":"/program/14.913","title":"Healthy
   Homes Production Program","popular_name":"Healthy Homes Production Grant Program","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.889","permalink":"/program/14.889","title":"Choice
   Neighborhoods Implementation Grants","popular_name":null,"agency":"Department of
-  Housing and Urban Development","total_obs":468216956.0,"program_type":"assistance_listing"}]'
+  Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Construction Rehabilitation
 total_num_agencies: 7
 total_num_applicant_types: 32
 total_num_programs: 39
-total_obs: 43915260363.0
+total_obs: 0.0
 ---

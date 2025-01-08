@@ -1,11 +1,10 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":13,"total_obs":19310379368.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":5000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":13,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":15},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":12},{"title":"Profit
@@ -476,7 +475,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/facility-loans-and-insurance
@@ -485,7 +484,7 @@ programs: '[{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing th
   Interoperability Needs","popular_name":"LOINC","agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
   Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":327384000.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
@@ -500,9 +499,9 @@ programs: '[{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing th
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
   the Technical Advancement & Readiness of Public Health via Health Information Exchange
   Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
   the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
@@ -510,7 +509,7 @@ programs: '[{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing th
   Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
   Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"14.151","permalink":"/program/14.151","title":"Supplemental
+  and Safety","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.151","permalink":"/program/14.151","title":"Supplemental
   Loan Insurance Multifamily Rental Housing","popular_name":"FHA Insured Rental Housing
   Supplemental Loans - 241(a)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted
   Exchange Framework and Common Agreement (TEFCA) Recognized Coordinating Entity (RCE)
@@ -519,7 +518,7 @@ programs: '[{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing th
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.767","permalink":"/program/93.767","title":"Children''s
   Health Insurance Program","popular_name":"(CHIP)","agency":"Department of Health
-  and Human Services","total_obs":18967655368.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
   U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
   Programs for the Aging, Title III, Part D, Disease Prevention and Health Promotion
@@ -535,5 +534,5 @@ title: Facility Loans and Insurance
 total_num_agencies: 7
 total_num_applicant_types: 35
 total_num_programs: 22
-total_obs: 19317569655.0
+total_obs: 0.0
 ---

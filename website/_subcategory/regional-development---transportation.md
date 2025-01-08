@@ -1,15 +1,14 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":14,"total_obs":4062175627.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":786296080.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":489011890.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":268680317.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":127085309.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":1016743.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":14,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":20},{"title":"State
@@ -483,27 +482,27 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/transportation
 programs: '[{"cfda":"20.938","permalink":"/program/20.938","title":"Rural Surface
-  Transportation Grant Program","popular_name":null,"agency":"Department of Transportation","total_obs":310000000.0,"program_type":"assistance_listing"},{"cfda":"20.328","permalink":"/program/20.328","title":"Interstate
+  Transportation Grant Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.328","permalink":"/program/20.328","title":"Interstate
   Rail Compacts","popular_name":"IRC","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.943","permalink":"/program/20.943","title":"Rural
   and Tribal Assistance Pilot Program","popular_name":null,"agency":"Department of
-  Transportation","total_obs":1800000.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.600","permalink":"/program/20.600","title":"State
-  and Community Highway Safety","popular_name":null,"agency":"Department of Transportation","total_obs":385485500.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
+  and Community Highway Safety","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
   Materials State Inspection (HMSI) Grant","popular_name":"HMSI Grant","agency":"Department
-  of Transportation","total_obs":290593.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
   Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":244174145.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":786296080.0,"program_type":"assistance_listing"},{"cfda":"10.167","permalink":"/program/10.167","title":"Transportation
-  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":2900000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.167","permalink":"/program/10.167","title":"Transportation
+  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
   and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
@@ -511,23 +510,23 @@ programs: '[{"cfda":"20.938","permalink":"/program/20.938","title":"Rural Surfac
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
   Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.509","permalink":"/program/20.509","title":"Formula
   Grants for Rural Areas and Tribal Transit Program","popular_name":"Section 5311","agency":"Department
-  of Transportation","total_obs":1171715000.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.316","permalink":"/program/20.316","title":"Railroad
   Rehabilitation and Improvement Financing Program","popular_name":"RRIF Loan Program","agency":"Department
-  of Transportation","total_obs":181595759.0,"program_type":"assistance_listing"},{"cfda":"20.940","permalink":"/program/20.940","title":"Reconnecting
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.940","permalink":"/program/20.940","title":"Reconnecting
   Communities Pilot (RCP) Discretionary Grant Program","popular_name":"Reconnecting
-  Communities","agency":"Department of Transportation","total_obs":185000000.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
+  Communities","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
   Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
-  of Agriculture","total_obs":124185309.0,"program_type":"assistance_listing"},{"cfda":"20.223","permalink":"/program/20.223","title":"Transportation
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.223","permalink":"/program/20.223","title":"Transportation
   Infrastructure Finance and Innovation Act (TIFIA) Program","popular_name":"TIFIA
-  Credit Program","agency":"Department of Transportation","total_obs":902853304.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  Credit Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.016","permalink":"/program/12.016","title":"Transportation
   - DASH 102X and WMATA 7M Shuttles","popular_name":"DASH 102X Route and WMATA 7M
-  Route","agency":"Department of Defense","total_obs":1016743.0,"program_type":"assistance_listing"},{"cfda":"20.939","permalink":"/program/20.939","title":"Safe
-  Streets and Roads for All","popular_name":"SS4A","agency":"Department of Transportation","total_obs":895717978.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  Route","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.939","permalink":"/program/20.939","title":"Safe
+  Streets and Roads for All","popular_name":"SS4A","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
   4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.003","permalink":"/program/23.003","title":"Appalachian
   Development Highway System","popular_name":"(Appalachian Corridors)","agency":"Appalachian
@@ -543,17 +542,17 @@ programs: '[{"cfda":"20.938","permalink":"/program/20.938","title":"Rural Surfac
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.942","permalink":"/program/20.942","title":"Thriving
   Communities Program Capacity Builders Cooperative Agreements","popular_name":null,"agency":"Department
-  of Transportation","total_obs":21000000.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
   Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
   Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":163433.0,"program_type":"assistance_listing"},{"cfda":"20.820","permalink":"/program/20.820","title":"Maritime
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.820","permalink":"/program/20.820","title":"Maritime
   Studies and Innovations","popular_name":"Ship Operations Cooperative Program (SOCP)","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.708","permalink":"/program/20.708","title":"Natural
   Gas Distribution Infrastructure Safety and Modernization Grant Program","popular_name":null,"agency":"Department
-  of Transportation","total_obs":892645.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
   Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":5196353.0,"program_type":"assistance_listing"},{"cfda":"20.706","permalink":"/program/20.706","title":"Pipeline
-  Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":5824848.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.706","permalink":"/program/20.706","title":"Pipeline
+  Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
   Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
@@ -561,5 +560,5 @@ title: Transportation
 total_num_agencies: 13
 total_num_applicant_types: 42
 total_num_programs: 38
-total_obs: 5734265966.0
+total_obs: 0.0
 ---

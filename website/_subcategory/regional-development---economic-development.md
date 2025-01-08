@@ -1,21 +1,18 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":8,"total_obs":2560575329.0},{"title":"Department
-  of Commerce","total_num_programs":11,"total_obs":2151958858.0299997},{"title":"Department
-  of the Interior","total_num_programs":6,"total_obs":1536065954.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":963000000.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":830319372.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":333574864.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":115736298.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":74111468.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":29209573.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
   Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  the Interior","total_num_programs":6,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of State","total_num_programs":8,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":3,"total_obs":0.0}]'
+  and Urban Development","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":31},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -486,27 +483,27 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/regional-development
 parent_title: Regional Development
 permalink: /category/regional-development/economic-development
 programs: '[{"cfda":"20.224","permalink":"/program/20.224","title":"Federal Lands
   Access Program","popular_name":"Federal Lands Access Program or FLAP","agency":"Department
-  of Transportation","total_obs":333574864.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
   Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
-  Protection Agency","total_obs":8741280.0,"program_type":"assistance_listing"},{"cfda":"10.755","permalink":"/program/10.755","title":"Rural
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.755","permalink":"/program/10.755","title":"Rural
   Innovation Stronger Economy","popular_name":"RISE Grant Program","agency":"Department
-  of Agriculture","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
   4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
   of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":786296080.0,"program_type":"assistance_listing"},{"cfda":"11.611","permalink":"/program/11.611","title":"Manufacturing
-  Extension Partnership","popular_name":null,"agency":"Department of Commerce","total_obs":155372000.0,"program_type":"assistance_listing"},{"cfda":"15.958","permalink":"/program/15.958","title":"Route
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.611","permalink":"/program/11.611","title":"Manufacturing
+  Extension Partnership","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.958","permalink":"/program/15.958","title":"Route
   66 Corridor Preservation ","popular_name":"Route 66 Corridor Preservation Program","agency":"Department
-  of the Interior","total_obs":248440.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":13659829.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
   in People in The Middle East and North Africa","popular_name":"Investing in people/
   cultural/educational/alumni/information and media efforts in the Middle East and
   North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
@@ -514,24 +511,24 @@ programs: '[{"cfda":"20.224","permalink":"/program/20.224","title":"Federal Land
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
   Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":160232760.03,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
-  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
+  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
   Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
-  of the Treasury","total_obs":115736298.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
   Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":4456223.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":44023292.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  To America","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
   and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
   Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
   Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.033","permalink":"/program/11.033","title":"Middle
   Mile (Broadband) Grant Program","popular_name":"Middle Mile Grant Program","agency":"Department
-  of Commerce","total_obs":979998024.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
   Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
-  of the Interior","total_obs":1046577924.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
   Technical Assistance For Business Firms","popular_name":"APEX Accelerator Program/Procurement
   Technical Assistance Program (PTAP))","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.041","permalink":"/program/59.041","title":"504
   Certified Development Loans","popular_name":"504 Loans","agency":"Small Business
@@ -544,15 +541,15 @@ programs: '[{"cfda":"20.224","permalink":"/program/20.224","title":"Federal Land
   Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
   Research)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.767","permalink":"/program/10.767","title":"Intermediary
-  Relending Program","popular_name":"IRP","agency":"Department of Agriculture","total_obs":18888256.0,"program_type":"assistance_listing"},{"cfda":"15.014","permalink":"/program/15.014","title":"Supporting
+  Relending Program","popular_name":"IRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.014","permalink":"/program/15.014","title":"Supporting
   the Lower Mississippi Delta Initiative","popular_name":"LMDI","agency":"Department
-  of the Interior","total_obs":227700.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.009","permalink":"/program/23.009","title":"Appalachian
   Local Development District Assistance","popular_name":"(LDD)","agency":"Appalachian
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
   Reduction Assistance","popular_name":"SRA Grants","agency":"Environmental Protection
-  Agency","total_obs":1321907.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
   WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
@@ -560,34 +557,34 @@ programs: '[{"cfda":"20.224","permalink":"/program/20.224","title":"Federal Land
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.752","permalink":"/program/10.752","title":"Rural
   eConnectivity Pilot Program","popular_name":"ReConnect Program","agency":"Department
-  of Agriculture","total_obs":1994687073.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
   SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":963000000.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
   Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.443","permalink":"/program/15.443","title":"Not
   For Profit","popular_name":"Environmental Studies Program (ESP)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.302","permalink":"/program/11.302","title":"Economic
   Development Support for Planning Organizations","popular_name":"Planning Investments
-  and Comprehensive Economic Development Strategies\r\n","agency":"Department of Commerce","total_obs":33858690.0,"program_type":"assistance_listing"},{"cfda":"10.381","permalink":"/program/10.381","title":"Meat
+  and Comprehensive Economic Development Strategies\r\n","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.381","permalink":"/program/10.381","title":"Meat
   and Poultry Processing Expansion Program","popular_name":"MPPEP","agency":"Department
-  of Agriculture","total_obs":337000000.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
   Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.382","permalink":"/program/10.382","title":"Meat
   and Poultry Intermediary Lending Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":200000000.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
-  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":53623773.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
+  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
   Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department
-  of Defense","total_obs":74111468.0,"program_type":"assistance_listing"},{"cfda":"11.035","permalink":"/program/11.035","title":"Broadband
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.035","permalink":"/program/11.035","title":"Broadband
   Equity, Access, and Deployment Program","popular_name":"Broadband Equity, Access,
-  and Deployment Program","agency":"Department of Commerce","total_obs":244424370.0,"program_type":"assistance_listing"},{"cfda":"19.801","permalink":"/program/19.801","title":"Office
+  and Deployment Program","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.801","permalink":"/program/19.801","title":"Office
   of Global Women''s Issues","popular_name":"Global Women''s Empowerment Programs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
   Broadband Connectivity Program","popular_name":"Tribal Broadband Connectivity Program","agency":"Department
-  of Commerce","total_obs":506333189.0,"program_type":"assistance_listing"},{"cfda":"15.444","permalink":"/program/15.444","title":"Take
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.444","permalink":"/program/15.444","title":"Take
   Pride","popular_name":"Environmental Studies Program (ESP)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
@@ -603,5 +600,5 @@ title: Economic Development
 total_num_agencies: 17
 total_num_applicant_types: 39
 total_num_programs: 58
-total_obs: 8594551716.029999
+total_obs: 0.0
 ---

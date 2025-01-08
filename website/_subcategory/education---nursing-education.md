@@ -1,13 +1,13 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":2,"total_obs":31263645000.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":3346000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":18,"total_obs":697462776.3199999},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":1,"total_obs":31509007.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":3229841.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
+  and Human Services","total_num_programs":18,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":24},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":23},{"title":"State
@@ -483,77 +483,77 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/nursing-education
 programs: '[{"cfda":"66.614","permalink":"/program/66.614","title":"Financial Assistance
   For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":75000.0,"program_type":"assistance_listing"},{"cfda":"93.303","permalink":"/program/93.303","title":"Nurse
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.303","permalink":"/program/93.303","title":"Nurse
   Corps Scholarship","popular_name":"Nurse Corps Scholarship Program (Nurse Corps
-  SP)","agency":"Department of Health and Human Services","total_obs":34078234.32,"program_type":"assistance_listing"},{"cfda":"93.925","permalink":"/program/93.925","title":"Scholarships
+  SP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.925","permalink":"/program/93.925","title":"Scholarships
   for Health Professions Students from Disadvantaged Backgrounds","popular_name":"Scholarships
-  for Disadvantaged Students (SDS)","agency":"Department of Health and Human Services","total_obs":50136772.0,"program_type":"assistance_listing"},{"cfda":"93.107","permalink":"/program/93.107","title":"Area
+  for Disadvantaged Students (SDS)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.107","permalink":"/program/93.107","title":"Area
   Health Education Centers","popular_name":"AHEC","agency":"Department of Health and
-  Human Services","total_obs":44226064.0,"program_type":"assistance_listing"},{"cfda":"93.361","permalink":"/program/93.361","title":"Nursing
-  Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":159425672.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.361","permalink":"/program/93.361","title":"Nursing
+  Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.178","permalink":"/program/93.178","title":"Nursing
   Workforce Diversity","popular_name":"Nursing Workforce Diversity (NWD) Nursing Workforce
   Diversity: Eldercare Enhancement (NWD-E2)","agency":"Department of Health and Human
-  Services","total_obs":22439015.0,"program_type":"assistance_listing"},{"cfda":"93.288","permalink":"/program/93.288","title":"National
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.288","permalink":"/program/93.288","title":"National
   Health Service Corps Scholarship Program","popular_name":"NHSC Scholarship Program
-  (SP)","agency":"Department of Health and Human Services","total_obs":48527283.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  (SP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":2731000000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.359","permalink":"/program/93.359","title":"Nurse
   Education, Practice Quality and Retention Grants","popular_name":"NEPQR Simulation
   Education Training (SET), NEPQR Mobile Health Training, NEPQR (CFPA), NEPQR (RNTP),
-  NEPQR (PRNP), NEPQR (WEP)","agency":"Department of Health and Human Services","total_obs":55738847.0,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
+  NEPQR (PRNP), NEPQR (WEP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
   Training and Technical Assistance","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":34666546.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
   Corps Loan Repayment Program","popular_name":"Nurse Corps Loan Repayment Program
-  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":61796566.0,"program_type":"assistance_listing"},{"cfda":"93.124","permalink":"/program/93.124","title":"Nurse
+  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.124","permalink":"/program/93.124","title":"Nurse
   Anesthetist Traineeship","popular_name":"Nurse Anesthetist Traineeship (NAT)","agency":"Department
-  of Health and Human Services","total_obs":2250000.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":31509007.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"84.063","permalink":"/program/84.063","title":"Federal
-  Pell Grant Program","popular_name":null,"agency":"Department of Education","total_obs":31263645000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.063","permalink":"/program/84.063","title":"Federal
+  Pell Grant Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.364","permalink":"/program/93.364","title":"Nursing
-  Student Loans","popular_name":"NSL","agency":"Department of Health and Human Services","total_obs":13000000.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
+  Student Loans","popular_name":"NSL","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
   SERVICE FUND - RURAL HEALTH CARE","popular_name":"USAC - RURAL HEALTH CARE","agency":"Federal
-  Communications Commission","total_obs":615000000.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
   Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.266","permalink":"/program/93.266","title":"Health
   Systems Strengthening and HIV/AIDS Prevention, Care and Treatment under the President''s
   Emergency Plan for AIDS Relief","popular_name":"Office of Global Health","agency":"Department
-  of Health and Human Services","total_obs":40000000.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
   5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
   Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3154841.0,"program_type":"assistance_listing"},{"cfda":"93.247","permalink":"/program/93.247","title":"Advanced
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.247","permalink":"/program/93.247","title":"Advanced
   Nursing Education Workforce Grant Program","popular_name":"ANEW, ANE-NPRF, MatCare,
-  ANE-SANE, ANE-NPR, ANE-NPRIP","agency":"Department of Health and Human Services","total_obs":87081446.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  ANE-SANE, ANE-NPR, ANE-NPRIP","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.923","permalink":"/program/93.923","title":"Disadvantaged
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.923","permalink":"/program/93.923","title":"Disadvantaged
   Health Professions Faculty Loan Repayment Program (FLRP)","popular_name":"FLRP","agency":"Department
-  of Health and Human Services","total_obs":2176331.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.264","permalink":"/program/93.264","title":"Nurse
   Faculty Loan Program (NFLP)","popular_name":"NFLP","agency":"Department of Health
-  and Human Services","total_obs":26580000.0,"program_type":"assistance_listing"}]'
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Nursing Education
 total_num_agencies: 10
 total_num_applicant_types: 45
 total_num_programs: 32
-total_obs: 35344036911.32
+total_obs: 0.0
 ---

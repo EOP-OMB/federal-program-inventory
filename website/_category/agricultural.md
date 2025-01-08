@@ -1,19 +1,17 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":244,"total_obs":59743099631.27},{"title":"Department
-  of Defense","total_num_programs":8,"total_obs":672905934.0},{"title":"Department
-  of the Interior","total_num_programs":22,"total_obs":553352575.0},{"title":"Environmental
-  Protection Agency","total_num_programs":6,"total_obs":180854956.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":145230968.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":29265102.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":5000000.0},{"title":"Department of
-  Energy","total_num_programs":1,"total_obs":4578671.0},{"title":"Southeast Crescent
-  Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
   Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
   Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":6,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":1,"total_obs":0.0}]'
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":6,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":22,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":6,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":8,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":244,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
+  Development","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":145},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -497,18 +495,18 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":11946768705.52},{"title":"Technical
-  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":8844667997.220001},{"title":"Stabilization
-  and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":31271018334.54},{"title":"Research
-  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":5471849701.99},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":6350182128.82},{"title":"Resource
-  Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":74,"total_obs":12798648627.0},{"title":"Production
-  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":36853910832.0}]'
+sub_cats: '[{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":0.0},{"title":"Technical
+  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":0.0},{"title":"Stabilization
+  and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":0.0},{"title":"Research
+  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":0.0},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":0.0},{"title":"Resource
+  Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":74,"total_obs":0.0},{"title":"Production
+  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":0.0}]'
 title: Agricultural
 total_num_agencies: 16
 total_num_applicant_types: 53
 total_num_programs: 303
 total_num_sub_cats: 7
-total_obs: 61334287837.27
+total_obs: 0.0
 ---

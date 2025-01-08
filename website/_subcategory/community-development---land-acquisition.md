@@ -1,13 +1,12 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":3,"total_obs":1871243590.0},{"title":"Department
-  of the Interior","total_num_programs":7,"total_obs":1013328249.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":583253396.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":5,"total_obs":100991638.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":74259703.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":7,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":12},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":10},{"title":"Native
@@ -483,7 +482,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/community-development
 parent_title: Community Development
 permalink: /category/community-development/land-acquisition
@@ -492,9 +491,9 @@ programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community De
   Program for Entitlement Communities.","agency":"Department of Housing and Urban
   Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.235","permalink":"/program/15.235","title":"Southern
   Nevada Public Land Management","popular_name":"SNPLMA","agency":"Department of the
-  Interior","total_obs":128050140.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
+  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
   Rural Schools and Community Self-Determination","popular_name":null,"agency":"Department
-  of the Interior","total_obs":2097064.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.421","permalink":"/program/10.421","title":"Indian
   Tribes and Tribal Corporation Loans","popular_name":"ITTCL","agency":"Department
@@ -504,23 +503,23 @@ programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community De
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":73464171.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
   National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
-  of Defense","total_obs":25483627.0,"program_type":"assistance_listing"},{"cfda":"15.941","permalink":"/program/15.941","title":"Mississippi
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.941","permalink":"/program/15.941","title":"Mississippi
   National River and Recreation Area State and Local Assistance","popular_name":null,"agency":"Department
-  of the Interior","total_obs":310980.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
   Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":557769769.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
   Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
-  Agency","total_obs":795532.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
   and Industry Guaranteed Loans","popular_name":"B&I Guaranteed Loan Program","agency":"Department
-  of Agriculture","total_obs":1871243590.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
   Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.605","permalink":"/program/15.605","title":"Sport
   Fish Restoration ","popular_name":"Dingell-Johnson Sport Fish Restoration Program","agency":"Department
-  of the Interior","total_obs":424682137.0,"program_type":"assistance_listing"},{"cfda":"10.968","permalink":"/program/10.968","title":"Increasing
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.968","permalink":"/program/10.968","title":"Increasing
   Land, Capital, and Market Access Program","popular_name":"Increasing Land Access","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.248","permalink":"/program/14.248","title":"Community
   Development Block Grants Section 108 Loan Guarantees","popular_name":"(Section 108)","agency":"Department
@@ -528,18 +527,18 @@ programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community De
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
   Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
-  of the Interior","total_obs":317277604.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
   Preservation Fund Grants-In-Aid","popular_name":"(HPF)","agency":"Department of
-  the Interior","total_obs":140910324.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Land Acquisition
 total_num_agencies: 10
 total_num_applicant_types: 45
 total_num_programs: 24
-total_obs: 3643076576.0
+total_obs: 0.0
 ---

@@ -1,26 +1,22 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":17,"total_obs":4442897491.0},{"title":"Federal
-  Communications Commission","total_num_programs":4,"total_obs":4323000000.0},{"title":"Department
-  of Agriculture","total_num_programs":19,"total_obs":2779769600.0},{"title":"Department
-  of Commerce","total_num_programs":11,"total_obs":2151958858.0299997},{"title":"Department
-  of the Interior","total_num_programs":16,"total_obs":1669465469.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":830319372.0},{"title":"Department
-  of Defense","total_num_programs":6,"total_obs":566518768.0},{"title":"Department
-  of the Treasury","total_num_programs":4,"total_obs":304650046.0},{"title":"Environmental
-  Protection Agency","total_num_programs":12,"total_obs":293675031.0},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":204253067.0},{"title":"Department of
-  Housing and Urban Development","total_num_programs":10,"total_obs":141121136.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":63495735.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":55000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":43747557.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
   Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":13,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian Regional
-  Commission","total_num_programs":4,"total_obs":0.0}]'
+  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":4,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":12,"total_obs":0.0},{"title":"Department
+  of the Treasury","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  the Interior","total_num_programs":16,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":17,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":13,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":10,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":6,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":11,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":19,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":0.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":4,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":71},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":68},{"title":"Private
@@ -493,17 +489,17 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/regional-development
-sub_cats: '[{"title":"Resources and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":1404066009.0},{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":1368415784.0},{"title":"Economic
-  Development","permalink":"/category/regional-development/economic-development","total_num_programs":58,"total_obs":8594551716.029999},{"title":"Land
-  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":22,"total_obs":2065971731.03},{"title":"Planning
-  and Technical Assistance","permalink":"/category/regional-development/planning-and-technical-assistance","total_num_programs":50,"total_obs":3460573273.0299997},{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":5533575106.0},{"title":"Health
-  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":2203232894.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":1550443867.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":5734265966.0}]'
+sub_cats: '[{"title":"Resources and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":0.0},{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":0.0},{"title":"Economic
+  Development","permalink":"/category/regional-development/economic-development","total_num_programs":58,"total_obs":0.0},{"title":"Land
+  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":22,"total_obs":0.0},{"title":"Planning
+  and Technical Assistance","permalink":"/category/regional-development/planning-and-technical-assistance","total_num_programs":50,"total_obs":0.0},{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":0.0},{"title":"Health
+  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":0.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":0.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":0.0}]'
 title: Regional Development
 total_num_agencies: 23
 total_num_applicant_types: 43
 total_num_programs: 133
 total_num_sub_cats: 9
-total_obs: 17869872130.03
+total_obs: 0.0
 ---

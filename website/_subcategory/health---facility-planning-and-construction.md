@@ -1,18 +1,16 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":615000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":489011890.0},{"title":"Department
-  of Health and Human Services","total_num_programs":16,"total_obs":422724000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":222432412.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":156402941.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":115736298.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":40276160.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":11694613.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":2190287.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":0.0}]'
+  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of Veterans
+  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":16,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":23},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"State
@@ -482,7 +480,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/facility-planning-and-construction
@@ -493,7 +491,7 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.352","permalink":"/program/93.352","title":"Construction
   Support","popular_name":"Extramural Construction; Biomedical Research Facilities","agency":"Department
-  of Health and Human Services","total_obs":80000000.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
   U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
   Programs for the Aging, Title III, Part D, Disease Prevention and Health Promotion
@@ -501,18 +499,18 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   Prevention and Health Promotion Services","agency":"Department of Health and Human
   Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":156402941.0,"program_type":"assistance_listing"},{"cfda":"10.874","permalink":"/program/10.874","title":"Delta
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.874","permalink":"/program/10.874","title":"Delta
   Health Care Services Grant Program","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":3634613.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
   the Logical Observation Identifiers Names and Codes (LOINC\u00ae) Standard to meet
   U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
   Labor Housing Loans and Grants","popular_name":"Labor Housing","agency":"Department
-  of Agriculture","total_obs":3060000.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
   Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
-  of the Treasury","total_obs":115736298.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
   Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":327384000.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
@@ -524,7 +522,7 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
   Substance Abuse Treatment for State Prisoners","popular_name":"(RSAT)","agency":"Department
-  of Justice","total_obs":40276160.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
@@ -532,29 +530,29 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.005","permalink":"/program/64.005","title":"Grants
   to States for Construction of State Home Facilities","popular_name":"State Home
-  Construction","agency":"Department of Veterans Affairs","total_obs":222432412.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  Construction","agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
   the Technical Advancement & Readiness of Public Health via Health Information Exchange
   Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
   Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
   the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
   FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
   SERVICE FUND - RURAL HEALTH CARE","popular_name":"USAC - RURAL HEALTH CARE","agency":"Federal
-  Communications Commission","total_obs":615000000.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
   Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.526","permalink":"/program/93.526","title":"Grants
   for Capital Development in Health Centers","popular_name":"Capital Development Grants","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
   Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  and Safety","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.008","permalink":"/program/93.008","title":"Medical
@@ -564,5 +562,5 @@ title: Facility Planning and Construction
 total_num_agencies: 14
 total_num_applicant_types: 39
 total_num_programs: 33
-total_obs: 2075468601.0
+total_obs: 0.0
 ---

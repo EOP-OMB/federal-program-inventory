@@ -1,16 +1,15 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":3,"total_obs":9468000000.0},{"title":"Department
-  of Transportation","total_num_programs":5,"total_obs":561108474.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":222760645.0},{"title":"Department
-  of Justice","total_num_programs":3,"total_obs":50203395.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":6744548.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":5937366.0},{"title":"Consumer Product
-  Safety Commission","total_num_programs":2,"total_obs":2000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":1493457.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":549996.0},{"title":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
+  Subcommittee","total_num_programs":3,"total_obs":0.0},{"title":"Federal Communications
+  Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental Protection
+  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Consumer
+  Product Safety Commission","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":12},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Private
@@ -483,15 +482,15 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 permalink: /category/consumer-protection
-sub_cats: '[{"title":"Information and Educational Services","permalink":"/category/consumer-protection/information-and-educational-services","total_num_programs":15,"total_obs":9494905000.0},{"title":"Regulation,
-  Inspection, Enforcement","permalink":"/category/consumer-protection/regulation--inspection--enforcement","total_num_programs":20,"total_obs":819098429.0},{"title":"Complaint
-  Investigation","permalink":"/category/consumer-protection/complaint-investigation","total_num_programs":4,"total_obs":137439000.0}]'
+sub_cats: '[{"title":"Information and Educational Services","permalink":"/category/consumer-protection/information-and-educational-services","total_num_programs":15,"total_obs":0.0},{"title":"Regulation,
+  Inspection, Enforcement","permalink":"/category/consumer-protection/regulation--inspection--enforcement","total_num_programs":20,"total_obs":0.0},{"title":"Complaint
+  Investigation","permalink":"/category/consumer-protection/complaint-investigation","total_num_programs":4,"total_obs":0.0}]'
 title: Consumer Protection
 total_num_agencies: 13
 total_num_applicant_types: 42
 total_num_programs: 33
 total_num_sub_cats: 3
-total_obs: 10318797881.0
+total_obs: 0.0
 ---

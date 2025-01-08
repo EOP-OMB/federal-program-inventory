@@ -1,15 +1,14 @@
 ---
-agencies: '[{"title":"Department of Energy","total_num_programs":17,"total_obs":5450911062.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":491511151.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":491390557.0},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":270872659.99},{"title":"Department
-  of Transportation","total_num_programs":6,"total_obs":69993395.0},{"title":"Environmental
-  Protection Agency","total_num_programs":4,"total_obs":5359786.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  Transportation","total_num_programs":6,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Housing and
+  Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Energy","total_num_programs":17,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":6,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":32},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":30},{"title":"Private
@@ -483,30 +482,30 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/energy
 parent_title: Energy
 permalink: /category/energy/research-and-development
 programs: '[{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA Pipeline
   Safety Research and Development \u201cOther Transaction Agreements\u201d","popular_name":null,"agency":"Department
-  of Transportation","total_obs":6782384.0,"program_type":"assistance_listing"},{"cfda":"81.121","permalink":"/program/81.121","title":"Nuclear
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.121","permalink":"/program/81.121","title":"Nuclear
   Energy Research, Development and Demonstration","popular_name":"(NE RD&D)","agency":"Department
-  of Energy","total_obs":973321767.0,"program_type":"assistance_listing"},{"cfda":"81.057","permalink":"/program/81.057","title":"University
-  Coal Research","popular_name":"UCR","agency":"Department of Energy","total_obs":2646815.0,"program_type":"assistance_listing"},{"cfda":"20.529","permalink":"/program/20.529","title":"Bus
-  Testing","popular_name":"FTA Bus Testing Program","agency":"Department of Transportation","total_obs":12104000.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.057","permalink":"/program/81.057","title":"University
+  Coal Research","popular_name":"UCR","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.529","permalink":"/program/20.529","title":"Bus
+  Testing","popular_name":"FTA Bus Testing Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
   Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":491390557.0,"program_type":"assistance_listing"},{"cfda":"81.104","permalink":"/program/81.104","title":"Environmental
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.104","permalink":"/program/81.104","title":"Environmental
   Remediation and Waste Processing and Disposal","popular_name":"Environmental Management","agency":"Department
-  of Energy","total_obs":15128177.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
   and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
-  of Energy","total_obs":17989010.0,"program_type":"assistance_listing"},{"cfda":"81.012","permalink":"/program/81.012","title":"Artificial
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.012","permalink":"/program/81.012","title":"Artificial
   Intelligence and Technology Office Financial Assistance Program","popular_name":null,"agency":"Department
   of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.113","permalink":"/program/81.113","title":"Defense
   Nuclear Nonproliferation Research","popular_name":"Defense Nuclear Nonproliferation","agency":"Department
-  of Energy","total_obs":25000000.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
   School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
@@ -515,52 +514,52 @@ programs: '[{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA Pipeli
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
   WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
   Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
-  of the Interior","total_obs":2499261.0,"program_type":"assistance_listing"},{"cfda":"81.049","permalink":"/program/81.049","title":"Office
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.049","permalink":"/program/81.049","title":"Office
   of Science Financial Assistance Program","popular_name":"(Advanced Scientific Computing
   Research (ASCR), Basic Energy Sciences (BES), Biological and Environmental Research
   (BER), Fusion Energy Sciences (FES), High Energy Physics (HEP), Nuclear Physics
   (NP), Workforce Development for Teachers and Scientists (WDTS), Small Business Innovation
   Research (SBIR) Program and Small Business Technology Transfer (STTR) Program),  Isotope
   R&D and Production (DOE IP), Accelerator R&D and Production (ARDAP))","agency":"Department
-  of Energy","total_obs":1716168129.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.135","permalink":"/program/81.135","title":"Advanced
   Research Projects Agency - Energy","popular_name":"(ARPA-E)","agency":"Department
-  of Energy","total_obs":361997887.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
   Research and Development Initiative Competitive Grants Program (BRDI)","popular_name":"BRDI","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.531","permalink":"/program/20.531","title":"Technical
   Assistance and Workforce Development","popular_name":"5314 Program","agency":"Department
-  of Transportation","total_obs":20243000.0,"program_type":"assistance_listing"},{"cfda":"14.506","permalink":"/program/14.506","title":"General
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.506","permalink":"/program/14.506","title":"General
   Research and Technology Activity","popular_name":null,"agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.408","permalink":"/program/15.408","title":"Bureau
   of Ocean Energy Management Renewable Energy ","popular_name":"Renewable Energy Program","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
   Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":5196353.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.089","permalink":"/program/81.089","title":"Fossil
   Energy Research and Development","popular_name":"Fossil Energy and Carbon Management
-  (FECM)","agency":"Department of Energy","total_obs":477680713.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
+  (FECM)","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
   Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program
-  (9005)","agency":"Department of Agriculture","total_obs":8718153.0,"program_type":"assistance_listing"},{"cfda":"20.530","permalink":"/program/20.530","title":"Public
+  (9005)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.530","permalink":"/program/20.530","title":"Public
   Transportation Innovation","popular_name":"5312 Research Program","agency":"Department
-  of Transportation","total_obs":26904000.0,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
   Infrastructure Deployment and Resilience","popular_name":null,"agency":"Department
-  of Energy","total_obs":754382027.0,"program_type":"assistance_listing"},{"cfda":"81.087","permalink":"/program/81.087","title":"Renewable
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.087","permalink":"/program/81.087","title":"Renewable
   Energy Research and Development","popular_name":"Renewable Energy (RE)","agency":"Department
-  of Energy","total_obs":437332515.0,"program_type":"assistance_listing"},{"cfda":"81.086","permalink":"/program/81.086","title":"Conservation
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.086","permalink":"/program/81.086","title":"Conservation
   Research and Development","popular_name":"Energy Efficiency (EE)","agency":"Department
-  of Energy","total_obs":508199165.0,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
   Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
   Research)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.122","permalink":"/program/81.122","title":"Electricity
   Research, Development and Analysis","popular_name":null,"agency":"Department of
-  Energy","total_obs":7161706.0,"program_type":"assistance_listing"},{"cfda":"81.119","permalink":"/program/81.119","title":"State
+  Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.119","permalink":"/program/81.119","title":"State
   Energy Program Special Projects","popular_name":"SEP Competitive Grants","agency":"Department
   of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
   and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":4729056.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
-  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":3252480.0,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
-  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":4172970.99,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
+  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
+  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.115","permalink":"/program/20.115","title":"Fueling
@@ -568,24 +567,24 @@ programs: '[{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA Pipeli
   and Low-Emissions Aviation Technologies (FAST-Tech) Grant","popular_name":"FAST-SAF
   and FAST-Tech","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.865","permalink":"/program/10.865","title":"Biorefinery
   Assistance","popular_name":"Section 9003- Biorefinery, Renewable Chemical, and Biobased
-  Manufacturing Assistance Program ","agency":"Department of Agriculture","total_obs":250000000.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  Manufacturing Assistance Program ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
   Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":163433.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
   of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":"OTT","agency":"Department
-  of Energy","total_obs":132406707.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"81.123","permalink":"/program/81.123","title":"National
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.123","permalink":"/program/81.123","title":"National
   Nuclear Security Administration (NNSA) Minority Serving Institutions (MSI) Program","popular_name":"Minority
   Serving Institution Partnership Program (MSIPP) & Tribal Education Partnership Program
-  (TEPP)","agency":"Department of Energy","total_obs":18511444.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  (TEPP)","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.724","permalink":"/program/20.724","title":"Pipeline
   Safety Research Competitive Academic Agreement Program (CAAP) ","popular_name":null,"agency":"Department
-  of Transportation","total_obs":3960011.0,"program_type":"assistance_listing"},{"cfda":"81.065","permalink":"/program/81.065","title":"Nuclear
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.065","permalink":"/program/81.065","title":"Nuclear
   Legacy Cleanup Program","popular_name":"(Consultation and Cooperation Financial
-  Assistance)","agency":"Department of Energy","total_obs":2985000.0,"program_type":"assistance_listing"}]'
+  Assistance)","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Research and Development
 total_num_agencies: 12
 total_num_applicant_types: 41
 total_num_programs: 45
-total_obs: 6780038610.99
+total_obs: 0.0
 ---

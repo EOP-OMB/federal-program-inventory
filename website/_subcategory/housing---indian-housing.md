@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":12,"total_obs":6406937273.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":4309138.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":0.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":12},{"title":"Native
@@ -472,7 +472,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/indian-housing
@@ -482,42 +482,42 @@ programs: '[{"cfda":"14.225","permalink":"/program/14.225","title":"Community De
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.893","permalink":"/program/14.893","title":"Office
   of Native American Programs Training and Technical Assistance for Indian Housing
   Block Grant Program","popular_name":null,"agency":"Department of Housing and Urban
-  Development","total_obs":20264143.0,"program_type":"assistance_listing"},{"cfda":"14.865","permalink":"/program/14.865","title":"Public
+  Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.865","permalink":"/program/14.865","title":"Public
   and Indian Housing Indian Loan Guarantee Program","popular_name":"Section 184","agency":"Department
-  of Housing and Urban Development","total_obs":271054146.0,"program_type":"assistance_listing"},{"cfda":"15.162","permalink":"/program/15.162","title":"Tiwahe
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.162","permalink":"/program/15.162","title":"Tiwahe
   Housing","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":915882053.0,"program_type":"assistance_listing"},{"cfda":"14.899","permalink":"/program/14.899","title":"Tribal
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.899","permalink":"/program/14.899","title":"Tribal
   HUD-VA Supportive Housing Program","popular_name":"Tribal HUD-VASH","agency":"Department
-  of Housing and Urban Development","total_obs":10260580.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
   Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":2152941.0,"program_type":"assistance_listing"},{"cfda":"14.850","permalink":"/program/14.850","title":"Public
+  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.850","permalink":"/program/14.850","title":"Public
   Housing Operating Fund","popular_name":"Operating Subsidy Grant","agency":"Department
-  of Housing and Urban Development","total_obs":5049927941.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.870","permalink":"/program/14.870","title":"Resident
   Opportunity and Supportive Services - Service Coordinators","popular_name":"(ROSS
-  Service Coordinators)","agency":"Department of Housing and Urban Development","total_obs":30556772.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
+  Service Coordinators)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
   Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
   to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
   Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.869","permalink":"/program/14.869","title":"Title
   VI Federal Guarantees for Financing Tribal Housing Activities","popular_name":"Title
-  VI","agency":"Department of Housing and Urban Development","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  VI","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.141","permalink":"/program/15.141","title":"Indian
-  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":2156197.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
   Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
   Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"}]'
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Indian Housing
 total_num_agencies: 5
 total_num_applicant_types: 28
 total_num_programs: 19
-total_obs: 6411246411.0
+total_obs: 0.0
 ---

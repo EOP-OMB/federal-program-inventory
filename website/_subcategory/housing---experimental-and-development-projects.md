@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":11,"total_obs":1016873691.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":269252000.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":11,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":6},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -472,7 +472,7 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2023'
+fiscal_year: '2024'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/experimental-and-development-projects
@@ -482,7 +482,7 @@ programs: '[{"cfda":"14.878","permalink":"/program/14.878","title":"Affordable H
   Finance Agencies (HFA) Risk Sharing","popular_name":"HFA Risk Sharing Program -
   542(c)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":915882053.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.024","permalink":"/program/97.024","title":"Emergency
   Food and Shelter National Board Program","popular_name":"(EFSP)","agency":"Department
@@ -503,15 +503,15 @@ programs: '[{"cfda":"14.878","permalink":"/program/14.878","title":"Affordable H
   Research and Technology Activity","popular_name":null,"agency":"Department of Housing
   and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
   Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.024","permalink":"/program/64.024","title":"VA
   Homeless Providers Grant and Per Diem Program","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":269252000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Experimental and Development Projects
 total_num_agencies: 6
 total_num_applicant_types: 30
 total_num_programs: 16
-total_obs: 1286125691.0
+total_obs: 0.0
 ---
