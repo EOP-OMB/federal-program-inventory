@@ -12,12 +12,12 @@ jobs:
     strategy:
       matrix:
         include:
-          - context: ./elasticsearch
+          - dockerfile: ./elasticsearch
             image_tag: elasticsearch
-          - context: ./api
-            image: api
-          - context: ./website
-            image: website
+          - dockerfile: ./api
+            image_tag: api
+          - dockerfile: ./website
+            image_tag: website
     steps:
       -
         name: Login to Docker Hub
@@ -36,6 +36,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ${{ matrix.context }}
+          context: .
+          file: ${{ matrix.dockerfile }}
           push: true
-          tags: ${{ matrix.image }}:latest
+          tags: ${{ matrix.image_tag }}:latest
