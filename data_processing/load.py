@@ -791,7 +791,6 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN agency a ON p.agency_id = a.id
         JOIN agency a1 ON a.tier_1_agency_id = a1.id
         WHERE a1.is_cfo_act_agency = 1
-        AND a.tier_1_agency_id IS NOT NULL
         ORDER BY title
     """)
     
@@ -802,26 +801,64 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             
         agency = {'title': row['title']}
         
-        # Get sub-agencies
+        # Check if this agency has any sub-agencies
         cursor.execute("""
-            SELECT DISTINCT
-                (SELECT a2.agency_name 
-                 FROM agency a2 
-                 WHERE a2.id = a.tier_2_agency_id) as title
-            FROM program p
-            JOIN agency a ON p.agency_id = a.id
+            SELECT DISTINCT a2.agency_name as title
+            FROM agency a
+            JOIN agency a2 ON a.tier_2_agency_id = a2.id
             WHERE a.tier_1_agency_id = ?
             AND a.tier_2_agency_id IS NOT NULL
-            ORDER BY title
+            AND a2.agency_name IS NOT NULL
         """, (row['id'],))
         
-        sub_agencies = [{'title': sub_row['title']} 
-                       for sub_row in cursor.fetchall() 
-                       if sub_row['title']]
+        has_sub_agencies = len(cursor.fetchall()) > 0
         
-        if sub_agencies:
-            agency['sub_categories'] = sub_agencies
+        if has_sub_agencies:
+            # Get programs associated only with the top-level agency
+            cursor.execute("""
+                SELECT DISTINCT p.id
+                FROM program p
+                JOIN agency a ON p.agency_id = a.id
+                WHERE a.tier_1_agency_id = ?
+                AND a.tier_2_agency_id IS NULL
+            """, (row['id'],))
             
+            top_level_only_programs = set(r['id'] for r in cursor.fetchall())
+            
+            # Get sub-agencies and their programs
+            cursor.execute("""
+                SELECT DISTINCT
+                    a2.agency_name as title,
+                    GROUP_CONCAT(p.id) as program_ids
+                FROM program p
+                JOIN agency a ON p.agency_id = a.id
+                JOIN agency a2 ON a.tier_2_agency_id = a2.id
+                WHERE a.tier_1_agency_id = ?
+                AND a.tier_2_agency_id IS NOT NULL
+                AND a2.agency_name IS NOT NULL
+                GROUP BY a2.agency_name
+                ORDER BY title
+            """, (row['id'],))
+            
+            sub_agencies = []
+            for sub_row in cursor.fetchall():
+                if sub_row['title']:
+                    program_ids = set(sub_row['program_ids'].split(',') if sub_row['program_ids'] else [])
+                    sub_agencies.append({
+                        'title': sub_row['title'],
+                        'programs': list(program_ids)
+                    })
+            
+            # Add Unspecified sub-agency if needed
+            if sub_agencies and top_level_only_programs:
+                sub_agencies.append({
+                    'title': 'Unspecified',
+                    'programs': list(top_level_only_programs)
+                })
+            
+            if sub_agencies:
+                agency['sub_categories'] = sub_agencies
+                
         cfo_agencies.append(agency)
     
     # Get non-CFO agencies
@@ -833,7 +870,6 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN agency a ON p.agency_id = a.id
         JOIN agency a1 ON a.tier_1_agency_id = a1.id
         WHERE a1.is_cfo_act_agency = 0
-        AND a.tier_1_agency_id IS NOT NULL
         ORDER BY title
     """)
     
@@ -844,28 +880,67 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             
         agency = {'title': row['title']}
         
+        # Check if this agency has any sub-agencies
         cursor.execute("""
-            SELECT DISTINCT
-                (SELECT a2.agency_name 
-                 FROM agency a2 
-                 WHERE a2.id = a.tier_2_agency_id) as title
-            FROM program p
-            JOIN agency a ON p.agency_id = a.id
+            SELECT DISTINCT a2.agency_name as title
+            FROM agency a
+            JOIN agency a2 ON a.tier_2_agency_id = a2.id
             WHERE a.tier_1_agency_id = ?
             AND a.tier_2_agency_id IS NOT NULL
-            ORDER BY title
+            AND a2.agency_name IS NOT NULL
         """, (row['id'],))
         
-        sub_agencies = [{'title': sub_row['title']} 
-                       for sub_row in cursor.fetchall() 
-                       if sub_row['title']]
+        has_sub_agencies = len(cursor.fetchall()) > 0
         
-        if sub_agencies:
-            agency['sub_categories'] = sub_agencies
+        if has_sub_agencies:
+            # Get programs associated only with the top-level agency
+            cursor.execute("""
+                SELECT DISTINCT p.id
+                FROM program p
+                JOIN agency a ON p.agency_id = a.id
+                WHERE a.tier_1_agency_id = ?
+                AND a.tier_2_agency_id IS NULL
+            """, (row['id'],))
             
+            top_level_only_programs = set(r['id'] for r in cursor.fetchall())
+            
+            # Get sub-agencies and their programs
+            cursor.execute("""
+                SELECT DISTINCT
+                    a2.agency_name as title,
+                    GROUP_CONCAT(p.id) as program_ids
+                FROM program p
+                JOIN agency a ON p.agency_id = a.id
+                JOIN agency a2 ON a.tier_2_agency_id = a2.id
+                WHERE a.tier_1_agency_id = ?
+                AND a.tier_2_agency_id IS NOT NULL
+                AND a2.agency_name IS NOT NULL
+                GROUP BY a2.agency_name
+                ORDER BY title
+            """, (row['id'],))
+            
+            sub_agencies = []
+            for sub_row in cursor.fetchall():
+                if sub_row['title']:
+                    program_ids = set(sub_row['program_ids'].split(',') if sub_row['program_ids'] else [])
+                    sub_agencies.append({
+                        'title': sub_row['title'],
+                        'programs': list(program_ids)
+                    })
+            
+            # Add Unspecified sub-agency if needed
+            if sub_agencies and top_level_only_programs:
+                sub_agencies.append({
+                    'title': 'Unspecified',
+                    'programs': list(top_level_only_programs)
+                })
+            
+            if sub_agencies:
+                agency['sub_categories'] = sub_agencies
+                
         other_agencies.append(agency)
     
-    # Get simple categories for applicants
+    # Get simple categories for applicant types
     cursor.execute("""
         SELECT DISTINCT 
             c.name as title
@@ -879,7 +954,6 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     """)
     applicant_types = [{'title': row['title']} for row in cursor.fetchall()]
     
-    # Get simple categories for assistance types
     # Get simple categories for assistance types
     cursor.execute("""
         WITH assistance_names AS (
@@ -900,7 +974,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         ORDER BY title
     """)
     assistance_types = [{'title': row['title']} for row in cursor.fetchall()]
-
+    
     # Get simple categories for beneficiary types
     cursor.execute("""
         SELECT DISTINCT 
@@ -916,46 +990,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     beneficiary_types = [{'title': row['title']} for row in cursor.fetchall()]
     
     # Get categories with subcategories
-    cursor.execute("""
-        SELECT DISTINCT 
-            pc.id as id,
-            pc.name as title,
-            c.name as sub_title
-        FROM program p
-        JOIN program_to_category ptc ON p.id = ptc.program_id
-        JOIN category c ON ptc.category_id = c.id
-        JOIN category pc ON c.parent_id = pc.id
-        WHERE c.type = 'category'
-        AND c.type = ptc.category_type    
-        ORDER BY pc.name, c.name
-    """)
-    
-    categories = []
-    current_category = None
-    
-    for row in cursor.fetchall():
-        if not row['title']:
-            continue
-            
-        if current_category is None or current_category['title'] != row['title']:
-            current_category = {
-                'title': row['title'],
-                'sub_categories': []
-            }
-            categories.append(current_category)
-        
-        if row['sub_title']:
-            sub_exists = False
-            for existing_sub in current_category['sub_categories']:
-                if existing_sub['title'] == row['sub_title']:
-                    sub_exists = True
-                    break
-            if not sub_exists:
-                current_category['sub_categories'].append({
-                    'title': row['sub_title']
-                })
-
-    print("Completed shared data creation")
+    categories = get_categories_hierarchy(cursor)
     
     return {
         'cfo_agencies': sorted(cfo_agencies, key=lambda x: x['title']),
@@ -1362,7 +1397,7 @@ try:
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    programs_data = generate_program_data(cursor, FISCAL_YEARS)
+    # programs_data = generate_program_data(cursor, FISCAL_YEARS)
 
     shared_data = generate_shared_data(cursor)
 
@@ -1373,8 +1408,8 @@ try:
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, FISCAL_YEARS[0])
     
-    category_path = os.path.join('../website', 'pages', 'category.md')
-    generate_category_page(cursor, programs_data, category_path, FISCAL_YEARS[0])
+    # category_path = os.path.join('../website', 'pages', 'category.md')
+    # generate_category_page(cursor, programs_data, category_path, FISCAL_YEARS[0])
     
     home_path = os.path.join('../website', 'pages', 'home.md')
     generate_home_page(home_path, shared_data, FISCAL_YEARS[0])
