@@ -6,6 +6,10 @@ on:
   push:
     branches: ['test-release', 'stag-release', 'prod-release', 'wip-language-edits']
 
+env:
+  REGISTRY: ghcr.io
+  GITHUB_REPOSITORY: ${{ github.repository }}
+
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -23,13 +27,17 @@ jobs:
             image_tag: website
     steps:
       -
+        name: Lowercase repository name
+        run: |
+          echo "REPO=${ GITHUB_REPOSITORY@L }" >> "${ GITHUB_ENV }"
+      -
         name: Checkout
         uses: actions/checkout@v4
       -
         name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          registry: ghcr.io
+          registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       -
@@ -37,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ${{ matrix.context }}
-          tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }}-${{matrix.image_tag}}
+          tags: ${{ env.REGISTRY }}/${ REPO }:${{ github.ref_name }}-${{matrix.image_tag}}
           labels: ${{ steps.meta.outputs.labels }}
           push: true
