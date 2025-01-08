@@ -484,98 +484,98 @@ fiscal_year: '2023'
 parent_permalink: /category/community-development
 parent_title: Community Development
 permalink: /category/community-development/indian-action-services
-programs: '[{"cfda":"14.225","permalink":"/program/14.225","title":"Community Development
-  Block Grants/Special Purpose Grants/Insular Areas","popular_name":"Insular CDBG","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.036","permalink":"/program/15.036","title":"Indian
-  Rights Protection","popular_name":null,"agency":"Department of the Interior","total_obs":57589507.0,"program_type":"assistance_listing"},{"cfda":"15.510","permalink":"/program/15.510","title":"Colorado
-  Ute Indian Water Rights Settlement Act","popular_name":"NNMP 2-6","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.020","permalink":"/program/15.020","title":"Aid
-  To Tribal Governments","popular_name":null,"agency":"Department of the Interior","total_obs":16184408.0,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
-  American Graves Protection and Repatriation Act","popular_name":"NAGPRA","agency":"Department
-  of the Interior","total_obs":3296435.0,"program_type":"assistance_listing"},{"cfda":"15.048","permalink":"/program/15.048","title":"Bureau
-  of Indian Affairs Facilities Operations and Maintenance","popular_name":null,"agency":"Department
-  of the Interior","total_obs":56577058.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
-  Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
-  Agency","total_obs":795532.0,"program_type":"assistance_listing"},{"cfda":"16.019","permalink":"/program/16.019","title":"Tribal
-  Registry","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
-  Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program","popular_name":"Rural
-  Program","agency":"Department of Justice","total_obs":36363957.0,"program_type":"assistance_listing"},{"cfda":"15.067","permalink":"/program/15.067","title":"Strengthening
-  Tribal Nations  ","popular_name":null,"agency":"Department of the Interior","total_obs":302372.0,"program_type":"assistance_listing"},{"cfda":"15.133","permalink":"/program/15.133","title":"Native
+programs: '[{"cfda":"15.036","permalink":"/program/15.036","title":"Indian Rights
+  Protection","popular_name":null,"agency":"Department of the Interior","total_obs":57589507.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  Development Block Grants/Entitlement Grants","popular_name":"Community Development
+  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
+  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.067","permalink":"/program/15.067","title":"Strengthening
+  Tribal Nations  ","popular_name":null,"agency":"Department of the Interior","total_obs":302372.0,"program_type":"assistance_listing"},{"cfda":"15.552","permalink":"/program/15.552","title":"Navajo-Gallup
+  Water Supply ","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.133","permalink":"/program/15.133","title":"Native
   American Business Development Institute","popular_name":"(NABDI)","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.596","permalink":"/program/16.596","title":"Trible
+  Justice Assistance","popular_name":null,"agency":"Department of Justice","total_obs":54085103.0,"program_type":"assistance_listing"},{"cfda":"15.130","permalink":"/program/15.130","title":"Indian
+  Education Assistance to Schools","popular_name":"Johnson-O''Malley","agency":"Department
+  of the Interior","total_obs":13351470.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
+  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.421","permalink":"/program/10.421","title":"Indian
+  Tribes and Tribal Corporation Loans","popular_name":"ITTCL","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
+  Communications Commission","total_obs":963000000.0,"program_type":"assistance_listing"},{"cfda":"15.020","permalink":"/program/15.020","title":"Aid
+  To Tribal Governments","popular_name":null,"agency":"Department of the Interior","total_obs":16184408.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
   Social Services Welfare Assistance","popular_name":null,"agency":"Department of
-  the Interior","total_obs":13908947.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
+  the Interior","total_obs":13908947.0,"program_type":"assistance_listing"},{"cfda":"15.021","permalink":"/program/15.021","title":"Consolidated
+  Tribal Government ","popular_name":null,"agency":"Department of the Interior","total_obs":226352331.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
+  Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
+  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":73464171.0,"program_type":"assistance_listing"},{"cfda":"16.583","permalink":"/program/16.583","title":"Children''s
+  Protection Agency","total_obs":73464171.0,"program_type":"assistance_listing"},{"cfda":"93.237","permalink":"/program/93.237","title":"Special
+  Diabetes Program for Indians Diabetes Prevention and Treatment  Projects","popular_name":"(Indian
+  Health)","agency":"Department of Health and Human Services","total_obs":141335177.0,"program_type":"assistance_listing"},{"cfda":"16.583","permalink":"/program/16.583","title":"Children''s
   Justice Act Partnerships for Indian Communities","popular_name":"(CJA)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
-  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
-  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
-  Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
-  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.048","permalink":"/program/15.048","title":"Bureau
+  of Indian Affairs Facilities Operations and Maintenance","popular_name":null,"agency":"Department
+  of the Interior","total_obs":56577058.0,"program_type":"assistance_listing"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
   SERVICE FUND - HIGH COST","popular_name":"UNIVERSAL SERVICE FUND - HIGH COST","agency":"Federal
-  Communications Commission","total_obs":3079000000.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
-  and Industry Guaranteed Loans","popular_name":"B&I Guaranteed Loan Program","agency":"Department
-  of Agriculture","total_obs":1871243590.0,"program_type":"assistance_listing"},{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal
-  Self-Governance","popular_name":null,"agency":"Department of the Interior","total_obs":1029061174.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
-  Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
-  to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
-  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
-  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.525","permalink":"/program/16.525","title":"Grants
-  to Reduce Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus","popular_name":"Campus
-  Program","agency":"Department of Justice","total_obs":21628480.0,"program_type":"assistance_listing"},{"cfda":"16.590","permalink":"/program/16.590","title":"Grants
-  to Encourage Arrest Policies and Enforcement of Protection Orders Program","popular_name":"Improving
-  Criminal Justice Responses","agency":"Department of Justice","total_obs":21538000.0,"program_type":"assistance_listing"},{"cfda":"16.587","permalink":"/program/16.587","title":"Violence
+  Communications Commission","total_obs":3079000000.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
+  Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
+  Agency","total_obs":795532.0,"program_type":"assistance_listing"},{"cfda":"16.587","permalink":"/program/16.587","title":"Violence
   Against Women Discretionary Grants for Indian Tribal Governments","popular_name":"Tribal
-  Governments","agency":"Department of Justice","total_obs":39958557.0,"program_type":"assistance_listing"},{"cfda":"15.552","permalink":"/program/15.552","title":"Navajo-Gallup
-  Water Supply ","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
-  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
-  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
-  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":1036000.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
-  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":963000000.0,"program_type":"assistance_listing"},{"cfda":"15.130","permalink":"/program/15.130","title":"Indian
-  Education Assistance to Schools","popular_name":"Johnson-O''Malley","agency":"Department
-  of the Interior","total_obs":13351470.0,"program_type":"assistance_listing"},{"cfda":"15.155","permalink":"/program/15.155","title":"Office
-  of the Special Trustee for American Indians, Field Operations","popular_name":"(OST-
-  Field Ops)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
-  Development Block Grants/Entitlement Grants","popular_name":"Community Development
-  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.529","permalink":"/program/16.529","title":"Education,
-  Training, and Enhanced Services to End Violence Against and Abuse of Women with
-  Disabilities ","popular_name":"(Disability Grant Program)","agency":"Department
-  of Justice","total_obs":8339438.0,"program_type":"assistance_listing"},{"cfda":"16.528","permalink":"/program/16.528","title":"Enhanced
-  Training and Services to End Violence and Abuse of Women Later in Life","popular_name":"Abuse
-  in Later Life ","agency":"Department of Justice","total_obs":5500000.0,"program_type":"assistance_listing"},{"cfda":"16.596","permalink":"/program/16.596","title":"Trible
-  Justice Assistance","popular_name":null,"agency":"Department of Justice","total_obs":54085103.0,"program_type":"assistance_listing"},{"cfda":"15.021","permalink":"/program/15.021","title":"Consolidated
-  Tribal Government ","popular_name":null,"agency":"Department of the Interior","total_obs":226352331.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
-  Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":557769769.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.024","permalink":"/program/15.024","title":"Indian
+  Governments","agency":"Department of Justice","total_obs":39958557.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
+  Development Block Grants/Special Purpose Grants/Insular Areas","popular_name":"Insular
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
+  Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program","popular_name":"Rural
+  Program","agency":"Department of Justice","total_obs":36363957.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
+  and Industry Guaranteed Loans","popular_name":"B&I Guaranteed Loan Program","agency":"Department
+  of Agriculture","total_obs":1871243590.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.024","permalink":"/program/15.024","title":"Indian
   Self-Determination Contract Support","popular_name":"CONTRACT SUPPORT","agency":"Department
   of the Interior","total_obs":32033113.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":2731000000.0,"program_type":"assistance_listing"},{"cfda":"93.237","permalink":"/program/93.237","title":"Special
-  Diabetes Program for Indians Diabetes Prevention and Treatment  Projects","popular_name":"(Indian
-  Health)","agency":"Department of Health and Human Services","total_obs":141335177.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.421","permalink":"/program/10.421","title":"Indian
-  Tribes and Tribal Corporation Loans","popular_name":"ITTCL","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.444","permalink":"/program/93.444","title":"Tribal
+  Communications Commission","total_obs":2731000000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.525","permalink":"/program/16.525","title":"Grants
+  to Reduce Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus","popular_name":"Campus
+  Program","agency":"Department of Justice","total_obs":21628480.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
+  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"16.528","permalink":"/program/16.528","title":"Enhanced
+  Training and Services to End Violence and Abuse of Women Later in Life","popular_name":"Abuse
+  in Later Life ","agency":"Department of Justice","total_obs":5500000.0,"program_type":"assistance_listing"},{"cfda":"15.510","permalink":"/program/15.510","title":"Colorado
+  Ute Indian Water Rights Settlement Act","popular_name":"NNMP 2-6","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
+  Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
+  Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
+  Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
+  to Native Hawaiians","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.444","permalink":"/program/93.444","title":"Tribal
   Self-Governance Program: Planning and Negotiation Cooperative Agreement","popular_name":"(Tribal
-  Self Governance)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Self Governance)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
+  of the Interior","total_obs":1036000.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.590","permalink":"/program/16.590","title":"Grants
+  to Encourage Arrest Policies and Enforcement of Protection Orders Program","popular_name":"Improving
+  Criminal Justice Responses","agency":"Department of Justice","total_obs":21538000.0,"program_type":"assistance_listing"},{"cfda":"15.155","permalink":"/program/15.155","title":"Office
+  of the Special Trustee for American Indians, Field Operations","popular_name":"(OST-
+  Field Ops)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.529","permalink":"/program/16.529","title":"Education,
+  Training, and Enhanced Services to End Violence Against and Abuse of Women with
+  Disabilities ","popular_name":"(Disability Grant Program)","agency":"Department
+  of Justice","total_obs":8339438.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
+  Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
+  of Defense","total_obs":557769769.0,"program_type":"assistance_listing"},{"cfda":"16.019","permalink":"/program/16.019","title":"Tribal
+  Registry","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal
+  Self-Governance","popular_name":null,"agency":"Department of the Interior","total_obs":1029061174.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
+  American Graves Protection and Repatriation Act","popular_name":"NAGPRA","agency":"Department
+  of the Interior","total_obs":3296435.0,"program_type":"assistance_listing"}]'
 title: Indian Action Services
 total_num_agencies: 12
 total_num_applicant_types: 39

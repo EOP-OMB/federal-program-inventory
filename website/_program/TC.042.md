@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Natural Resources and Environment
 cfda: TC.042
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: The baseline tax system generally would tax all income under the regu
   hazardous waste facilities to be exempt from tax. These bonds are generally subject
   to the State private-activity bond annual volume cap.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":290000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":350000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":290000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":360000000.0}]'
 outlays: null
 permalink: /program/TC.042.html
 popular_name: ''

@@ -514,29 +514,29 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/education
-sub_cats: '[{"title":"Resource Development and Support - Elementary, Secondary Education","permalink":"/category/education/resource-development-and-support---elementary--secondary-education","total_num_programs":42,"total_obs":6660390011.25},{"title":"Educational
-  Equipment and Resources","permalink":"/category/education/educational-equipment-and-resources","total_num_programs":44,"total_obs":7495196770.61},{"title":"Elementary
-  and Secondary","permalink":"/category/education/elementary-and-secondary","total_num_programs":84,"total_obs":33869655086.25},{"title":"Special
-  Education","permalink":"/category/education/special-education","total_num_programs":45,"total_obs":30760929213.25},{"title":"Medical
-  Education and Training","permalink":"/category/education/medical-education-and-training","total_num_programs":33,"total_obs":5339831266.0},{"title":"Resource
+sub_cats: '[{"title":"Educational Equipment and Resources","permalink":"/category/education/educational-equipment-and-resources","total_num_programs":44,"total_obs":7495196770.61},{"title":"Resource
+  Development and Support - Sciences","permalink":"/category/education/resource-development-and-support---sciences","total_num_programs":39,"total_obs":4474566020.0},{"title":"General
+  Research and Evaluation","permalink":"/category/education/general-research-and-evaluation","total_num_programs":67,"total_obs":11456569525.25},{"title":"Elementary
+  and Secondary","permalink":"/category/education/elementary-and-secondary","total_num_programs":84,"total_obs":33869655086.25},{"title":"Resource
+  Development and Support - School Aid","permalink":"/category/education/resource-development-and-support---school-aid","total_num_programs":19,"total_obs":3643205104.25},{"title":"Dental
+  Education and Training","permalink":"/category/education/dental-education-and-training","total_num_programs":25,"total_obs":4040923194.0},{"title":"Resource
+  Development and Support - Land and Equipment","permalink":"/category/education/resource-development-and-support---land-and-equipment","total_num_programs":14,"total_obs":2773293135.0},{"title":"Medical
+  Education and Training","permalink":"/category/education/medical-education-and-training","total_num_programs":33,"total_obs":5339831266.0},{"title":"Libraries
+  and Technical lnformation Services","permalink":"/category/education/libraries-and-technical-lnformation-services","total_num_programs":45,"total_obs":16942576499.25},{"title":"Higher
+  Education - General","permalink":"/category/education/higher-education---general","total_num_programs":162,"total_obs":170734755327.41998},{"title":"Indian
+  Education","permalink":"/category/education/indian-education","total_num_programs":60,"total_obs":15478559888.06},{"title":"Health
+  Education and Training","permalink":"/category/education/health-education-and-training","total_num_programs":101,"total_obs":10011930991.0},{"title":"Teacher
+  Training","permalink":"/category/education/teacher-training","total_num_programs":47,"total_obs":8655010009.81},{"title":"Resource
   Development and Support - Higher Education","permalink":"/category/education/resource-development-and-support---higher-education","total_num_programs":58,"total_obs":7061659084.61},{"title":"Nursing
-  Education","permalink":"/category/education/nursing-education","total_num_programs":32,"total_obs":35344036911.32},{"title":"General
-  Research and Evaluation","permalink":"/category/education/general-research-and-evaluation","total_num_programs":67,"total_obs":11456569525.25},{"title":"Libraries
-  and Technical lnformation Services","permalink":"/category/education/libraries-and-technical-lnformation-services","total_num_programs":45,"total_obs":16942576499.25},{"title":"Nuclear
-  Education and Training","permalink":"/category/education/nuclear-education-and-training","total_num_programs":19,"total_obs":3246504769.0},{"title":"Resource
-  Development and Support - General and Special Interest Organizations","permalink":"/category/education/resource-development-and-support---general-and-special-interest-organizations","total_num_programs":49,"total_obs":17012506097.36},{"title":"Resource
-  Development and Support - Sciences","permalink":"/category/education/resource-development-and-support---sciences","total_num_programs":39,"total_obs":4474566020.0},{"title":"Resource
-  Development and Support - School Aid","permalink":"/category/education/resource-development-and-support---school-aid","total_num_programs":19,"total_obs":3643205104.25},{"title":"Health
-  Education and Training","permalink":"/category/education/health-education-and-training","total_num_programs":101,"total_obs":10011930991.0},{"title":"Resource
-  Development and Support - Student Financial Aid","permalink":"/category/education/resource-development-and-support---student-financial-aid","total_num_programs":24,"total_obs":129174094148.0},{"title":"Teacher
-  Training","permalink":"/category/education/teacher-training","total_num_programs":47,"total_obs":8655010009.81},{"title":"Dental
-  Education and Training","permalink":"/category/education/dental-education-and-training","total_num_programs":25,"total_obs":4040923194.0},{"title":"Indian
-  Education","permalink":"/category/education/indian-education","total_num_programs":60,"total_obs":15478559888.06},{"title":"Higher
-  Education - General","permalink":"/category/education/higher-education---general","total_num_programs":162,"total_obs":170734755327.41998},{"title":"Vocational
+  Education","permalink":"/category/education/nursing-education","total_num_programs":32,"total_obs":35344036911.32},{"title":"Resource
+  Development and Support - Student Financial Aid","permalink":"/category/education/resource-development-and-support---student-financial-aid","total_num_programs":24,"total_obs":129174094148.0},{"title":"Nuclear
+  Education and Training","permalink":"/category/education/nuclear-education-and-training","total_num_programs":19,"total_obs":3246504769.0},{"title":"Educational
+  Facilities","permalink":"/category/education/educational-facilities","total_num_programs":35,"total_obs":5349032730.61},{"title":"Special
+  Education","permalink":"/category/education/special-education","total_num_programs":45,"total_obs":30760929213.25},{"title":"Vocational
   Development","permalink":"/category/education/vocational-development","total_num_programs":49,"total_obs":164886974523.36},{"title":"Resource
-  Development and Support - Land and Equipment","permalink":"/category/education/resource-development-and-support---land-and-equipment","total_num_programs":14,"total_obs":2773293135.0},{"title":"Educational
-  Facilities","permalink":"/category/education/educational-facilities","total_num_programs":35,"total_obs":5349032730.61},{"title":"Resource
-  Development and Support - Vocational Education and Handicapped Education","permalink":"/category/education/resource-development-and-support---vocational-education-and-handicapped-education","total_num_programs":33,"total_obs":6993587621.0}]'
+  Development and Support - General and Special Interest Organizations","permalink":"/category/education/resource-development-and-support---general-and-special-interest-organizations","total_num_programs":49,"total_obs":17012506097.36},{"title":"Resource
+  Development and Support - Vocational Education and Handicapped Education","permalink":"/category/education/resource-development-and-support---vocational-education-and-handicapped-education","total_num_programs":33,"total_obs":6993587621.0},{"title":"Resource
+  Development and Support - Elementary, Secondary Education","permalink":"/category/education/resource-development-and-support---elementary--secondary-education","total_num_programs":42,"total_obs":6660390011.25}]'
 title: Education
 total_num_agencies: 35
 total_num_applicant_types: 48

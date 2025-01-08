@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.057
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: The baseline tax system would require corporations to pay taxes on th
   losses and expenses) of electing companies is excluded from tax. The specified premium
   limit is indexed for inflation; for 2024, the premium limit is $2.8 million.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1220000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1400000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1830000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1400000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1830000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1880000000.0}]'
 outlays: null
 permalink: /program/TC.057.html
 popular_name: ''

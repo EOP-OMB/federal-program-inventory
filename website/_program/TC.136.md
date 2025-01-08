@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.136
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -30,7 +30,7 @@ objective: The baseline tax system would not allow credits for particular activi
   to 50 percent of premiums paid by qualified taxable employers and 35 percent of
   premiums paid by qualified tax-exempt organizations.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.136.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.067
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -24,7 +24,7 @@ objective: The baseline tax system accepts current law’s general rule limiting
   limitations. The exemption is limited to $25,000 in losses and phases out for taxpayers
   with income between $100,000 and $150,000.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4970000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5470000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8330000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":5470000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8330000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":8660000000.0}]'
 outlays: null
 permalink: /program/TC.067.html
 popular_name: ''

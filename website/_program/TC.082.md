@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.082
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -27,7 +27,7 @@ objective: Under a comprehensive economic income tax, the costs of acquiring mac
   tax baseline, in contrast, depreciation allowances reflect estimates of economic
   depreciation.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":22780000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-4040000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-4040000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":-15430000000.0}]'
 outlays: null
 permalink: /program/TC.082.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.130
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   long-term care or Health Reimbursement Accounts) are not included in employee gross
   income even though they are deducted as a business expense by the employee.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":137000000000.0,"forgone_revenue":225000000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":216000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":247000000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":216000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":247000000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":262000000000.0}]'
 outlays: null
 permalink: /program/TC.130.html
 popular_name: ''

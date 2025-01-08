@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.111
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -28,7 +28,7 @@ objective: Under the baseline tax system, a personal exemption would be allowed 
   more stringent rules for qualified relatives in order to qualify the taxpayer for
   certain benefits, including the ODC.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1910000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2130000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":2210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2130000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2020000000.0}]'
 outlays: null
 permalink: /program/TC.111.html
 popular_name: ''

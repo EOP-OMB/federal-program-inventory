@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.029
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -24,7 +24,7 @@ objective: The baseline tax system would not allow credits for particular activi
   31, 2027. A sustainable aviation fuel-specific credit is available for fuel produced
   after December 31, 2022 and before January 1, 2025.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0},{"x":"2025","outlays":210000000.0,"forgone_revenue":3550000000.0}]'
 outlays: null
 permalink: /program/TC.029.html
 popular_name: ''

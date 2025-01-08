@@ -492,12 +492,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/natural-resources
-sub_cats: '[{"title":"Community Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":11569404722.03},{"title":"Mineral
-  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":39,"total_obs":2891568413.0},{"title":"Land
-  Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":13034809601.380001},{"title":"Wildlife
-  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":7263925978.0},{"title":"Water
-  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":7449779700.02},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":52,"total_obs":2344961779.0},{"title":"Community
-  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":38,"total_obs":4358313601.0}]'
+sub_cats: '[{"title":"Community Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":11569404722.03},{"title":"Water
+  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":7449779700.02},{"title":"Wildlife
+  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":7263925978.0},{"title":"Land
+  Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":13034809601.380001},{"title":"Mineral
+  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":39,"total_obs":2891568413.0},{"title":"Community
+  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":38,"total_obs":4358313601.0},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":52,"total_obs":2344961779.0}]'
 title: Natural Resources
 total_num_agencies: 15
 total_num_applicant_types: 47

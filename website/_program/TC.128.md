@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.128
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -25,7 +25,7 @@ objective: The baseline tax system would not allow credits for particular activi
   their deduction for wages paid by the amount of the credit claimed. The credit does
   not apply to taxable years beginning after December 31, 2021.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.128.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.131
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: Under the baseline tax system, all compensation and remuneration, inc
   plan and the deduction may not exceed the self-employed individual’s earned income
   from self-employment.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":8200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":8150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8530000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":8150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8530000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":9010000000.0}]'
 outlays: null
 permalink: /program/TC.131.html
 popular_name: ''

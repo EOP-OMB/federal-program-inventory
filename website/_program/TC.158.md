@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.158
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   health benefit plans, life insurance, and disability insurance, among other employee
   benefits. Investment income earned by such trusts is exempt from taxation.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1240000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1500000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1350000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1500000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1010000000.0}]'
 outlays: null
 permalink: /program/TC.158.html
 popular_name: ''

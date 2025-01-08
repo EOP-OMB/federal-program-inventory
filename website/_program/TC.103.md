@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.103
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -24,7 +24,7 @@ objective: Scholarships and fellowships are excluded from taxable income to the 
   transfers of Government funds in gross income. (Many scholarships are derived directly
   or indirectly from Government funding.)
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":4110000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4860000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":4430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4860000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5240000000.0}]'
 outlays: null
 permalink: /program/TC.103.html
 popular_name: ''

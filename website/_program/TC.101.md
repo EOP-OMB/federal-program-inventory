@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Community and Regional Development
 cfda: TC.101
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system generally would tax all income under the regu
   capital gains from the sale or exchange of an investment in a qualified opportunity
   fund held for at least 10 years are excluded from gross income.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":3740000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2080000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3040000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":2080000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3040000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3090000000.0}]'
 outlays: null
 permalink: /program/TC.101.html
 popular_name: ''

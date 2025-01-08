@@ -491,139 +491,139 @@ fiscal_year: '2023'
 parent_permalink: /category/natural-resources
 parent_title: Natural Resources
 permalink: /category/natural-resources/community-water-supply-services
-programs: '[{"cfda":"10.760","permalink":"/program/10.760","title":"Water and Waste
-  Disposal Systems for Rural Communities","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":1649632805.0,"program_type":"assistance_listing"},{"cfda":"15.574","permalink":"/program/15.574","title":"Water
-  Storage Enhancement","popular_name":null,"agency":"Department of the Interior","total_obs":35800000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
-  River Basin Water Enhancement (YRBWE) ","popular_name":null,"agency":"Department
-  of the Interior","total_obs":4136090.0,"program_type":"assistance_listing"},{"cfda":"15.522","permalink":"/program/15.522","title":"Mni
-  Wiconi Rural Water Supply Project","popular_name":"Mni Wiconi Project","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.540","permalink":"/program/15.540","title":"Lake
-  Mead/Las Vegas Wash ","popular_name":"Las Vegas Wash (LVW Program)","agency":"Department
-  of the Interior","total_obs":6255000.0,"program_type":"assistance_listing"},{"cfda":"10.763","permalink":"/program/10.763","title":"Emergency
-  Community Water Assistance Grants","popular_name":"Emergency Community Water Assistance
-  Grants","agency":"Department of Agriculture","total_obs":17271838.0,"program_type":"assistance_listing"},{"cfda":"10.770","permalink":"/program/10.770","title":"Water
-  and Waste Grants and Loans and Loan Guarantees (Section 306C)","popular_name":"Section
-  306C","agency":"Department of Agriculture","total_obs":41064532.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.521","permalink":"/program/15.521","title":"Lower
-  Rio Grande Valley Water Resources Conservation and Improvement","popular_name":"Lower
-  Rio Grande Valley Irrigation Projects","agency":"Department of the Interior","total_obs":3273480.0,"program_type":"assistance_listing"},{"cfda":"15.514","permalink":"/program/15.514","title":"Reclamation
-  States Emergency Drought Relief","popular_name":"WaterSMART Drought Response Program","agency":"Department
-  of the Interior","total_obs":109986996.0,"program_type":"assistance_listing"},{"cfda":"81.214","permalink":"/program/81.214","title":"Environmental
-  Monitoring/Cleanup, Cultural and Resource Mgmt., Emergency Response Research, Outreach,
-  Technical Analysis","popular_name":"Savannah River Site Environmental Monitoring/Cleanup","agency":"Department
-  of Energy","total_obs":59517379.0,"program_type":"assistance_listing"},{"cfda":"15.037","permalink":"/program/15.037","title":"Water
-  Resources on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":33840913.0,"program_type":"assistance_listing"},{"cfda":"15.519","permalink":"/program/15.519","title":"Indian
-  Tribal Water Resources Development, Management, and Protection","popular_name":"Indian
-  Tribal Water Resources","agency":"Department of the Interior","total_obs":102608142.0,"program_type":"assistance_listing"},{"cfda":"66.468","permalink":"/program/66.468","title":"Drinking
-  Water State Revolving Fund","popular_name":"Drinking Water State Revolving Fund","agency":"Environmental
-  Protection Agency","total_obs":6239588546.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
-  Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
-  of the Interior","total_obs":1046577924.0,"program_type":"assistance_listing"},{"cfda":"10.608","permalink":"/program/10.608","title":"Food
-  for Education","popular_name":"McGovern-Dole International Food for Education and
-  Children Nutrition Program","agency":"Department of Agriculture","total_obs":197000000.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
-  Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
-  Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.864","permalink":"/program/10.864","title":"Grant
-  Program to Establish a Fund for Financing Water and Wastewater Projects","popular_name":"Revolving
-  Fund Program (RFP)","agency":"Department of Agriculture","total_obs":1716002.0,"program_type":"assistance_listing"},{"cfda":"66.522","permalink":"/program/66.522","title":"Enhanced
+programs: '[{"cfda":"15.519","permalink":"/program/15.519","title":"Indian Tribal
+  Water Resources Development, Management, and Protection","popular_name":"Indian
+  Tribal Water Resources","agency":"Department of the Interior","total_obs":102608142.0,"program_type":"assistance_listing"},{"cfda":"15.542","permalink":"/program/15.542","title":"Arizona
+  Water Settlement Act of 2004","popular_name":"Arizona Water Settlement Act","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.760","permalink":"/program/10.760","title":"Water
+  and Waste Disposal Systems for Rural Communities","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":1649632805.0,"program_type":"assistance_listing"},{"cfda":"66.522","permalink":"/program/66.522","title":"Enhanced
   Aquifer Use and Recharge Program","popular_name":"EAR Grant Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.076","permalink":"/program/15.076","title":"Musselshell-Judith
-  Rural Water System","popular_name":"Musselshell-Judith Rural Water System","agency":"Department
-  of the Interior","total_obs":65100000.0,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
-  Services","popular_name":null,"agency":"Department of the Interior","total_obs":4505615.0,"program_type":"assistance_listing"},{"cfda":"15.541","permalink":"/program/15.541","title":"Colorado
-  River Basin Act of 1968","popular_name":"Colorado River Basin Projects Act","agency":"Department
-  of the Interior","total_obs":225000.0,"program_type":"assistance_listing"},{"cfda":"15.543","permalink":"/program/15.543","title":"Lake
-  Tahoe Regional Wetlands Development ","popular_name":null,"agency":"Department of
-  the Interior","total_obs":30000.0,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
-  Infrastructure Finance and Innovation (WIFIA)","popular_name":"WIFIA","agency":"Environmental
-  Protection Agency","total_obs":68000000.0,"program_type":"assistance_listing"},{"cfda":"10.761","permalink":"/program/10.761","title":"Water
-  and Waste Technical Assistance and Training Grants","popular_name":"Water & Waste
-  Disposal TAT Grants","agency":"Department of Agriculture","total_obs":38924221.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
-  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":1175000.0,"program_type":"assistance_listing"},{"cfda":"10.862","permalink":"/program/10.862","title":"Rural
-  Decentralized Water Systems Grant Program","popular_name":"DWS","agency":"Department
-  of Agriculture","total_obs":2557303.0,"program_type":"assistance_listing"},{"cfda":"15.253","permalink":"/program/15.253","title":"Not-for-Profit
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
+  River Basin Water Enhancement (YRBWE) ","popular_name":null,"agency":"Department
+  of the Interior","total_obs":4136090.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
+  Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
+  Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
+  Grants","agency":"Environmental Protection Agency","total_obs":48218982.0,"program_type":"assistance_listing"},{"cfda":"15.253","permalink":"/program/15.253","title":"Not-for-Profit
   AMD Reclamation","popular_name":"Watershed Cooperative Agreement Program (WCAP)","agency":"Department
-  of the Interior","total_obs":1119988.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
-  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"15.516","permalink":"/program/15.516","title":"Fort
-  Peck Reservation Rural Water System ","popular_name":"Fort Peck \u2013 Dry Prairie
-  Rural Water System","agency":"Department of the Interior","total_obs":46300000.0,"program_type":"assistance_listing"},{"cfda":"15.524","permalink":"/program/15.524","title":"Recreation
-  Resources Management","popular_name":"Title XXVIII","agency":"Department of the
-  Interior","total_obs":17406183.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.539","permalink":"/program/15.539","title":"Equus
-  Beds Division Acquifer Storage Recharge ","popular_name":"Equus Beds Aquifer Storage
-  Recharge Project","agency":"Department of the Interior","total_obs":7920000.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
-  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.074","permalink":"/program/15.074","title":"Small
-  Surface Water and Groundwater Storage Projects","popular_name":"Small Storage Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
-  and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
-  Act","agency":"Department of Defense","total_obs":1919000.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
-  and Veteran Organizations Conservation Activities","popular_name":"21st Century
-  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":64365155.0,"program_type":"assistance_listing"},{"cfda":"14.228","permalink":"/program/14.228","title":"Community
-  Development Block Grants/State''s program and Non-Entitlement Grants in Hawaii","popular_name":"State
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
-  Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
-  Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
-  of the Interior","total_obs":317277604.0,"program_type":"assistance_listing"},{"cfda":"66.432","permalink":"/program/66.432","title":"State
-  Public Water System Supervision","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":60428520.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
-  Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.526","permalink":"/program/15.526","title":"San
-  Gabriel Basin Restoration ","popular_name":null,"agency":"Department of the Interior","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
-  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
-  Council","total_obs":37019207.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
-  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":160232760.03,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.580","permalink":"/program/15.580","title":"Aquatic
-  Ecosystem Restoration Program","popular_name":"AERP","agency":"Department of the
-  Interior","total_obs":61400000.0,"program_type":"assistance_listing"},{"cfda":"66.521","permalink":"/program/66.521","title":"Innovative
+  of the Interior","total_obs":1119988.0,"program_type":"assistance_listing"},{"cfda":"66.521","permalink":"/program/66.521","title":"Innovative
   Water Technology Grant Program","popular_name":"Not applicable","agency":"Environmental
-  Protection Agency","total_obs":998295.0,"program_type":"assistance_listing"},{"cfda":"15.553","permalink":"/program/15.553","title":"Eastern
-  New Mexico Rural Water System ","popular_name":"ENMRWS","agency":"Department of
-  the Interior","total_obs":94140000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
-  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
-  of the Interior","total_obs":52518600.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
+  Protection Agency","total_obs":998295.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":19146386.0,"program_type":"assistance_listing"},{"cfda":"66.432","permalink":"/program/66.432","title":"State
+  Public Water System Supervision","popular_name":null,"agency":"Environmental Protection
+  Agency","total_obs":60428520.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
   Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
-  Protection Agency","total_obs":24578602.0,"program_type":"assistance_listing"},{"cfda":"15.658","permalink":"/program/15.658","title":"Natural
-  Resource Damage Assessment and Restoration","popular_name":"NRDAR","agency":"Department
-  of the Interior","total_obs":16500000.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
-  Cost Share","popular_name":"National Park Service Challenge Cost Share","agency":"Department
+  Protection Agency","total_obs":24578602.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
+  Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
+  of the Interior","total_obs":1046577924.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
+  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":4238729.0,"program_type":"assistance_listing"},{"cfda":"15.540","permalink":"/program/15.540","title":"Lake
+  Mead/Las Vegas Wash ","popular_name":"Las Vegas Wash (LVW Program)","agency":"Department
+  of the Interior","total_obs":6255000.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  Development Block Grants/Entitlement Grants","popular_name":"Community Development
+  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
+  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.522","permalink":"/program/15.522","title":"Mni
+  Wiconi Rural Water Supply Project","popular_name":"Mni Wiconi Project","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.904","permalink":"/program/10.904","title":"Watershed
   Protection and Flood Prevention","popular_name":"(Watershed Program; Public Law
   566 Operations Phase)","agency":"Department of Agriculture","total_obs":374020000.0,"program_type":"assistance_listing"},{"cfda":"10.759","permalink":"/program/10.759","title":"Part
   1774 Special Evaluation Assistance for Rural Communities and Households (SEARCH)","popular_name":"SEARCH
-  Grant Program","agency":"Department of Agriculture","total_obs":1622000.0,"program_type":"assistance_listing"},{"cfda":"15.530","permalink":"/program/15.530","title":"Water
-  Conservation Field Services (WCFS) ","popular_name":"Water Conservation Field Services
-  Program (WCFSP)","agency":"Department of the Interior","total_obs":773791.0,"program_type":"assistance_listing"},{"cfda":"66.489","permalink":"/program/66.489","title":"Response
-  to Emergency Situations Affecting Public Water Systems (SDWA 1442b)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":46170000.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
-  Development Block Grants/Entitlement Grants","popular_name":"Community Development
-  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
-  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":4238729.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
-  for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":156402941.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
-  Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
-  Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
-  Grants","agency":"Environmental Protection Agency","total_obs":48218982.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.542","permalink":"/program/15.542","title":"Arizona
-  Water Settlement Act of 2004","popular_name":"Arizona Water Settlement Act","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.508","permalink":"/program/15.508","title":"Providing
-  Water to At-Risk Natural Desert Terminal Lakes","popular_name":"Desert Terminal
-  Lakes Program","agency":"Department of the Interior","total_obs":85645.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
-  Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
-  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":215815548.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Grant Program","agency":"Department of Agriculture","total_obs":1622000.0,"program_type":"assistance_listing"},{"cfda":"15.521","permalink":"/program/15.521","title":"Lower
+  Rio Grande Valley Water Resources Conservation and Improvement","popular_name":"Lower
+  Rio Grande Valley Irrigation Projects","agency":"Department of the Interior","total_obs":3273480.0,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
+  Services","popular_name":null,"agency":"Department of the Interior","total_obs":4505615.0,"program_type":"assistance_listing"},{"cfda":"15.658","permalink":"/program/15.658","title":"Natural
+  Resource Damage Assessment and Restoration","popular_name":"NRDAR","agency":"Department
+  of the Interior","total_obs":16500000.0,"program_type":"assistance_listing"},{"cfda":"10.761","permalink":"/program/10.761","title":"Water
+  and Waste Technical Assistance and Training Grants","popular_name":"Water & Waste
+  Disposal TAT Grants","agency":"Department of Agriculture","total_obs":38924221.0,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
+  Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.468","permalink":"/program/66.468","title":"Drinking
+  Water State Revolving Fund","popular_name":"Drinking Water State Revolving Fund","agency":"Environmental
+  Protection Agency","total_obs":6239588546.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"}]'
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
+  and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
+  Act","agency":"Department of Defense","total_obs":1919000.0,"program_type":"assistance_listing"},{"cfda":"15.074","permalink":"/program/15.074","title":"Small
+  Surface Water and Groundwater Storage Projects","popular_name":"Small Storage Program","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.037","permalink":"/program/15.037","title":"Water
+  Resources on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":33840913.0,"program_type":"assistance_listing"},{"cfda":"10.864","permalink":"/program/10.864","title":"Grant
+  Program to Establish a Fund for Financing Water and Wastewater Projects","popular_name":"Revolving
+  Fund Program (RFP)","agency":"Department of Agriculture","total_obs":1716002.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.508","permalink":"/program/15.508","title":"Providing
+  Water to At-Risk Natural Desert Terminal Lakes","popular_name":"Desert Terminal
+  Lakes Program","agency":"Department of the Interior","total_obs":85645.0,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
+  Infrastructure Finance and Innovation (WIFIA)","popular_name":"WIFIA","agency":"Environmental
+  Protection Agency","total_obs":68000000.0,"program_type":"assistance_listing"},{"cfda":"14.228","permalink":"/program/14.228","title":"Community
+  Development Block Grants/State''s program and Non-Entitlement Grants in Hawaii","popular_name":"State
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
+  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
+  Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
+  Council","total_obs":37019207.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
+  Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
+  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":215815548.0,"program_type":"assistance_listing"},{"cfda":"15.524","permalink":"/program/15.524","title":"Recreation
+  Resources Management","popular_name":"Title XXVIII","agency":"Department of the
+  Interior","total_obs":17406183.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
+  and Veteran Organizations Conservation Activities","popular_name":"21st Century
+  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":64365155.0,"program_type":"assistance_listing"},{"cfda":"10.608","permalink":"/program/10.608","title":"Food
+  for Education","popular_name":"McGovern-Dole International Food for Education and
+  Children Nutrition Program","agency":"Department of Agriculture","total_obs":197000000.0,"program_type":"assistance_listing"},{"cfda":"15.543","permalink":"/program/15.543","title":"Lake
+  Tahoe Regional Wetlands Development ","popular_name":null,"agency":"Department of
+  the Interior","total_obs":30000.0,"program_type":"assistance_listing"},{"cfda":"15.553","permalink":"/program/15.553","title":"Eastern
+  New Mexico Rural Water System ","popular_name":"ENMRWS","agency":"Department of
+  the Interior","total_obs":94140000.0,"program_type":"assistance_listing"},{"cfda":"66.489","permalink":"/program/66.489","title":"Response
+  to Emergency Situations Affecting Public Water Systems (SDWA 1442b)","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":46170000.0,"program_type":"assistance_listing"},{"cfda":"15.526","permalink":"/program/15.526","title":"San
+  Gabriel Basin Restoration ","popular_name":null,"agency":"Department of the Interior","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"10.763","permalink":"/program/10.763","title":"Emergency
+  Community Water Assistance Grants","popular_name":"Emergency Community Water Assistance
+  Grants","agency":"Department of Agriculture","total_obs":17271838.0,"program_type":"assistance_listing"},{"cfda":"81.214","permalink":"/program/81.214","title":"Environmental
+  Monitoring/Cleanup, Cultural and Resource Mgmt., Emergency Response Research, Outreach,
+  Technical Analysis","popular_name":"Savannah River Site Environmental Monitoring/Cleanup","agency":"Department
+  of Energy","total_obs":59517379.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
+  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":1175000.0,"program_type":"assistance_listing"},{"cfda":"15.514","permalink":"/program/15.514","title":"Reclamation
+  States Emergency Drought Relief","popular_name":"WaterSMART Drought Response Program","agency":"Department
+  of the Interior","total_obs":109986996.0,"program_type":"assistance_listing"},{"cfda":"10.770","permalink":"/program/10.770","title":"Water
+  and Waste Grants and Loans and Loan Guarantees (Section 306C)","popular_name":"Section
+  306C","agency":"Department of Agriculture","total_obs":41064532.0,"program_type":"assistance_listing"},{"cfda":"15.574","permalink":"/program/15.574","title":"Water
+  Storage Enhancement","popular_name":null,"agency":"Department of the Interior","total_obs":35800000.0,"program_type":"assistance_listing"},{"cfda":"15.516","permalink":"/program/15.516","title":"Fort
+  Peck Reservation Rural Water System ","popular_name":"Fort Peck \u2013 Dry Prairie
+  Rural Water System","agency":"Department of the Interior","total_obs":46300000.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
+  Cost Share","popular_name":"National Park Service Challenge Cost Share","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.862","permalink":"/program/10.862","title":"Rural
+  Decentralized Water Systems Grant Program","popular_name":"DWS","agency":"Department
+  of Agriculture","total_obs":2557303.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
+  Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.076","permalink":"/program/15.076","title":"Musselshell-Judith
+  Rural Water System","popular_name":"Musselshell-Judith Rural Water System","agency":"Department
+  of the Interior","total_obs":65100000.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
+  Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
+  Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
+  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.580","permalink":"/program/15.580","title":"Aquatic
+  Ecosystem Restoration Program","popular_name":"AERP","agency":"Department of the
+  Interior","total_obs":61400000.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+  for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
+  of Commerce","total_obs":156402941.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
+  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
+  of the Interior","total_obs":52518600.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.530","permalink":"/program/15.530","title":"Water
+  Conservation Field Services (WCFS) ","popular_name":"Water Conservation Field Services
+  Program (WCFSP)","agency":"Department of the Interior","total_obs":773791.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
+  Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
+  of the Interior","total_obs":317277604.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
+  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
+  of Commerce","total_obs":160232760.03,"program_type":"assistance_listing"},{"cfda":"15.541","permalink":"/program/15.541","title":"Colorado
+  River Basin Act of 1968","popular_name":"Colorado River Basin Projects Act","agency":"Department
+  of the Interior","total_obs":225000.0,"program_type":"assistance_listing"},{"cfda":"15.539","permalink":"/program/15.539","title":"Equus
+  Beds Division Acquifer Storage Recharge ","popular_name":"Equus Beds Aquifer Storage
+  Recharge Project","agency":"Department of the Interior","total_obs":7920000.0,"program_type":"assistance_listing"}]'
 title: Community Water Supply Services
 total_num_agencies: 12
 total_num_applicant_types: 46

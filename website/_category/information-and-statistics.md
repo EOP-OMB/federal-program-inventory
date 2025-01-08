@@ -490,8 +490,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/information-and-statistics
-sub_cats: '[{"title":"Library of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14011936850.0},{"title":"Census
-  Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":511546152.0},{"title":"Libraries,
+sub_cats: '[{"title":"Census Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":511546152.0},{"title":"Library
+  of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14011936850.0},{"title":"Libraries,
   Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":14682651450.0}]'
 title: Information and Statistics
 total_num_agencies: 19

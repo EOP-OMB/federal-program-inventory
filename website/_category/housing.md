@@ -488,16 +488,17 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/housing
-sub_cats: '[{"title":"Cooperatives, Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":6950990809.0},{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":11967028828.0},{"title":"Rural
-  Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":34402937513.0},{"title":"Property
+sub_cats: '[{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":11967028828.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":24,"total_obs":6185490851.0},{"title":"Site
+  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":4242822211.0},{"title":"Land
+  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":4242822211.0},{"title":"Indian
+  Housing","permalink":"/category/housing/indian-housing","total_num_programs":19,"total_obs":6411246411.0},{"title":"Experimental
+  and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":1286125691.0},{"title":"Cooperatives,
+  Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":6950990809.0},{"title":"Home
+  Improvement","permalink":"/category/housing/home-improvement","total_num_programs":35,"total_obs":72488582348.0},{"title":"Rural
+  Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":34402937513.0},{"title":"Construction
+  Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":39,"total_obs":43915260363.0},{"title":"Property
   and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":1021798232.0},{"title":"Homebuying,
-  Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":104381365443.0},{"title":"Land
-  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":4242822211.0},{"title":"Home
-  Improvement","permalink":"/category/housing/home-improvement","total_num_programs":35,"total_obs":72488582348.0},{"title":"Indian
-  Housing","permalink":"/category/housing/indian-housing","total_num_programs":19,"total_obs":6411246411.0},{"title":"Construction
-  Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":39,"total_obs":43915260363.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":24,"total_obs":6185490851.0},{"title":"Site
-  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":4242822211.0},{"title":"Experimental
-  and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":1286125691.0}]'
+  Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":104381365443.0}]'
 title: Housing
 total_num_agencies: 15
 total_num_applicant_types: 42

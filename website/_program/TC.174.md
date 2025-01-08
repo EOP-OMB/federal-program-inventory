@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Interest
 cfda: TC.174
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   industries. In contrast, taxpayers may defer paying tax on interest earned on U.S.
   savings bonds until the bonds are redeemed.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":910000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":910000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":880000000.0}]'
 outlays: null
 permalink: /program/TC.174.html
 popular_name: ''

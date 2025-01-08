@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.123
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: The baseline tax system would not allow credits for particular activi
   to $15,000. The credit is reduced to a minimum of 20 percent by one percentage point
   for each $2,000 of income in excess of $15,000.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":7000000.0,"forgone_revenue":5850000000.0},{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3660000000.0}]'
 outlays: null
 permalink: /program/TC.123.html
 popular_name: ''

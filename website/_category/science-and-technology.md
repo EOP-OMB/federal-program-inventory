@@ -499,9 +499,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/science-and-technology
-sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":10007931932.630001},{"title":"Research
-  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":13002463499.32},{"title":"Information
-  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":5721625545.79}]'
+sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":10007931932.630001},{"title":"Information
+  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":5721625545.79},{"title":"Research
+  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":13002463499.32}]'
 title: Science and Technology
 total_num_agencies: 24
 total_num_applicant_types: 42

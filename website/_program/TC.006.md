@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - International Affairs
 cfda: TC.006
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: Under the baseline tax system, taxpayer earnings are subject to tax u
   of income from exports to be taxed at the qualified dividend rate which is no higher
   than 20 percent (plus a 3.8 percent surtax for high-income taxpayers).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1140000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1620000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1860000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1620000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1860000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1930000000.0}]'
 outlays: null
 permalink: /program/TC.006.html
 popular_name: ''

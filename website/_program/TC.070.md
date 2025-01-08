@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.070
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, all income would generally be taxed un
   filing a separate return) from a qualified principal residence. The provision applies
   to debt discharged after December 31, 2020, and before January 1, 2026.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":380000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":150000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":150000000.0}]'
 outlays: null
 permalink: /program/TC.070.html
 popular_name: ''

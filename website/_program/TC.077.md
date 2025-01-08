@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.077
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: Under the baseline tax system, unrealized capital gains would be taxe
   The cost basis of the appreciated assets is adjusted to the market value at the
   owner’s date of death which becomes the basis for the heirs.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":46750000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":49240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":33560000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":49240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":33560000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":37830000000.0}]'
 outlays: null
 permalink: /program/TC.077.html
 popular_name: ''

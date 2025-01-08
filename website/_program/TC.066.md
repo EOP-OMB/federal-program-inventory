@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.066
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: Under the baseline tax system, the taxable income of a taxpayer who i
   certain circumstances allows a deduction for some costs associated with such income,
   such as for mortgage interest and property taxes.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":129000000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":147000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":165000000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":147000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":165000000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":172000000000.0}]'
 outlays: null
 permalink: /program/TC.066.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Natural Resources and Environment
 cfda: TC.044
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system requires the taxpayer to capitalize costs ass
   may be expensed under current law rather than capitalized and deducted when the
   timber is sold, thereby accelerating cost recovery.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":230000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":320000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":330000000.0}]'
 outlays: null
 permalink: /program/TC.044.html
 popular_name: ''

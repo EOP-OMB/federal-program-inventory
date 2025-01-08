@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.106
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system generally would tax all income under the regu
   per child per year of expenses for primary or secondary education, including tuition
   at religious schools.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2790000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3220000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":3020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3220000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3410000000.0}]'
 outlays: null
 permalink: /program/TC.106.html
 popular_name: ''

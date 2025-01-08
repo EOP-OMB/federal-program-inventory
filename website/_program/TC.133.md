@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.133
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: The baseline tax system would not allow a deduction for personal expe
   percent of adjusted income. Beginning in 2017, the 10 percent threshold applied
   to all taxpayers, including those over 65.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":9910000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":12640000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":12260000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":12640000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":13420000000.0}]'
 outlays: null
 permalink: /program/TC.133.html
 popular_name: ''

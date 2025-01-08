@@ -494,10 +494,10 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/disaster-prevention-and-relief
-sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":10585590291.0},{"title":"Emergency
+sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":10585590291.0},{"title":"Flood
+  Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":7178559673.0},{"title":"Emergency
   Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":4760687565.19},{"title":"Emergency
-  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":6535803936.0},{"title":"Flood
-  Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":7178559673.0}]'
+  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":6535803936.0}]'
 title: Disaster Prevention and Relief
 total_num_agencies: 21
 total_num_applicant_types: 44

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Social Security
 cfda: TC.165
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -33,7 +33,7 @@ objective: The baseline tax system would tax Social Security benefits to the ext
   benefits are treated like Social Security benefits. See also provision number 141,
   Exclusion of railroad (Social Security equivalent) benefits.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":29760000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":30700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":27270000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":30700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":27270000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":30170000000.0}]'
 outlays: null
 permalink: /program/TC.165.html
 popular_name: ''

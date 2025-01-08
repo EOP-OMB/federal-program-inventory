@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.113
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   through December 31, 2025 employer-provided student loan payments are considered
   eligible educational assistance.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1510000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1700000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1700000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1820000000.0}]'
 outlays: null
 permalink: /program/TC.113.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.039
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: The baseline tax system would not allow credits for particular activi
   out from 2030 to 2032, with components other than critical minerals no longer receiving
   any credit if sold after 2032.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":6000000000.0,"forgone_revenue":870000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":6000000000.0,"forgone_revenue":870000000.0},{"x":"2025","outlays":8980000000.0,"forgone_revenue":1290000000.0}]'
 outlays: null
 permalink: /program/TC.039.html
 popular_name: ''

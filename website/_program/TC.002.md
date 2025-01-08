@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - International Affairs
 cfda: TC.002
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: Under the baseline tax system, all compensation received by U.S. citi
   a specific allowance for housing expenses, they may deduct housing expenses up to
   the amount by which foreign earned income exceeds their foreign earned income exclusion.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":6700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5620000000.0}]'
 outlays: null
 permalink: /program/TC.002.html
 popular_name: ''

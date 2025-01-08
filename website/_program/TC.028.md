@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.028
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: The baseline tax system would not allow credits for particular activi
   credit for biodiesel production, and a separate credit is available for qualified
   renewable diesel fuel mixtures. This provision expires on December 31, 2024.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":3660000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.028.html
 popular_name: ''

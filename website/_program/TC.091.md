@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Transportation
 cfda: TC.091
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   transit exclusion is $315 per month in 2024. However, beginning in 2018, transit
   expenses are no longer deductible to employers.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":341000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":369000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":390000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":369000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":390000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":410000000.0}]'
 outlays: null
 permalink: /program/TC.091.html
 popular_name: ''

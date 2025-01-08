@@ -496,7 +496,8 @@ categories_hierarchy:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-categories_json: '[{"title":"Income Security and Social Services","total_num_programs":216,"total_obs":1881153295439.26,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":448,"total_obs":1832400270075.3,"permalink":"/category/health"},{"title":"Interest
+categories_json: '[{"title":"Income Security and Social Services","total_num_programs":216,"total_obs":1881153295439.26,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":448,"total_obs":1832400270075.3,"permalink":"/category/health"},{"title":"Tax
+  Expenditures","total_num_programs":174,"total_obs":1703706000000.0,"permalink":"/category/tax-expenditures"},{"title":"Interest
   on the Public Debt","total_num_programs":1,"total_obs":879307000000.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Education","total_num_programs":482,"total_obs":251727035068.74,"permalink":"/category/education"},{"title":"Housing","total_num_programs":119,"total_obs":120779355144.0,"permalink":"/category/housing"},{"title":"Transportation","total_num_programs":109,"total_obs":103990566968.03,"permalink":"/category/transportation"},{"title":"Energy","total_num_programs":85,"total_obs":90853514548.98999,"permalink":"/category/energy"},{"title":"Food
   and Nutrition","total_num_programs":87,"total_obs":70485789735.0,"permalink":"/category/food-and-nutrition"},{"title":"Community
   Development","total_num_programs":289,"total_obs":64268792439.17,"permalink":"/category/community-development"},{"title":"Agricultural","total_num_programs":303,"total_obs":61334287837.27,"permalink":"/category/agricultural"},{"title":"Employment,

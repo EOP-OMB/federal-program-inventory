@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.035
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system would not allow credits for particular activi
   expired on December 31, 2017, but it was increased up to $5,000 and extended to
   homes acquired in 2023 through 2032.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":210000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":210000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":220000000.0}]'
 outlays: null
 permalink: /program/TC.035.html
 popular_name: ''

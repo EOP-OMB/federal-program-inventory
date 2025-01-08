@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.059
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system generally would tax all income under the regu
   interest rates on demand deposits, which under competitive conditions should equal
   the value of deposit services.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":7330000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":11100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15800000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":11100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15800000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":16360000000.0}]'
 outlays: null
 permalink: /program/TC.059.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.080
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system generally would tax all income under the regu
   law allows the deferral of accrued gains on assets transferred in qualified likekind
   exchanges.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":3830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":7650000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":4020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":7650000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":7610000000.0}]'
 outlays: null
 permalink: /program/TC.080.html
 popular_name: ''

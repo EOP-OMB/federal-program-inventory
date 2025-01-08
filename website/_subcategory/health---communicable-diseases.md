@@ -481,159 +481,159 @@ fiscal_year: '2023'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/communicable-diseases
-programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
-  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.914","permalink":"/program/93.914","title":"HIV
-  Emergency Relief Project Grants","popular_name":"Ryan White HIV/AIDS Program (RWHAP)
-  Part A Emergency Relief for Areas with Substantial Need for Services","agency":"Department
-  of Health and Human Services","total_obs":654619562.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.032","permalink":"/program/21.032","title":"Local
-  Assistance and Tribal Consistency Fund","popular_name":"LATCF","agency":"Department
-  of the Treasury","total_obs":12099572.0,"program_type":"assistance_listing"},{"cfda":"21.019","permalink":"/program/21.019","title":"Coronavirus
-  Relief Fund","popular_name":"CRF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
-  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
-  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.118","permalink":"/program/93.118","title":"Acquired
-  Immunodeficiency Syndrome (AIDS) Activity","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":4321250.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
-  Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":327384000.0,"program_type":"assistance_listing"},{"cfda":"93.994","permalink":"/program/93.994","title":"Maternal
-  and Child Health Services Block Grant to the States","popular_name":"MCH Block Grants","agency":"Department
-  of Health and Human Services","total_obs":573854919.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
-  the Logical Observation Identifiers Names and Codes (LOINC\u00ae) Standard to meet
-  U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
-  Corps Loan Repayment Program","popular_name":"Nurse Corps Loan Repayment Program
-  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":61796566.0,"program_type":"assistance_listing"},{"cfda":"93.787","permalink":"/program/93.787","title":"Title
-  V Sexual Risk Avoidance Education Program (Discretionary Grants)","popular_name":"Title
-  V Competitive SRAE (Discretionary Grants)","agency":"Department of Health and Human
-  Services","total_obs":12107066.0,"program_type":"assistance_listing"},{"cfda":"93.068","permalink":"/program/93.068","title":"Chronic
-  Diseases:  Research, Control, and Prevention  ","popular_name":"Research, Control,
-  and Prevention","agency":"Department of Health and Human Services","total_obs":17786910.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
-  the Technical Advancement & Readiness of Public Health via Health Information Exchange
-  Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.989","permalink":"/program/93.989","title":"International
-  Research and Research Training","popular_name":"Global Health Research and Research
-  Training","agency":"Department of Health and Human Services","total_obs":133206404.0,"program_type":"assistance_listing"},{"cfda":"93.283","permalink":"/program/93.283","title":"Centers
-  for Disease Control and Prevention Investigations and Technical Assistance ","popular_name":"CDC,
-  Technical Assistance, Vital Statistics","agency":"Department of Health and Human
-  Services","total_obs":6382238.0,"program_type":"assistance_listing"},{"cfda":"93.834","permalink":"/program/93.834","title":"Capacity
-  Building Assistance (CBA) for High-Impact HIV Prevention","popular_name":"The Access
-  to Prevention and Care Capacity Building Assistant Project (APAC Project)","agency":"Department
-  of Health and Human Services","total_obs":24049992.0,"program_type":"assistance_listing"},{"cfda":"93.941","permalink":"/program/93.941","title":"HIV
-  Demonstration, Research, Public and Professional Education Projects","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":10510886.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
-  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
-  Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
-  Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
-  Transparency Project for Health IT Interoperability Services Cooperative Agreement
-  Program","popular_name":"Market Transparency Project","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.027","permalink":"/program/21.027","title":"CORONAVIRUS
-  STATE AND LOCAL FISCAL RECOVERY FUNDS","popular_name":"Coronavirus State and Local
-  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":45132526.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
-  U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
-  Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"93.947","permalink":"/program/93.947","title":"Tuberculosis
-  Demonstration, Research, Public and Professional Education","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":6181654.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
-  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.923","permalink":"/program/93.923","title":"Disadvantaged
-  Health Professions Faculty Loan Repayment Program (FLRP)","popular_name":"FLRP","agency":"Department
-  of Health and Human Services","total_obs":2176331.0,"program_type":"assistance_listing"},{"cfda":"93.686","permalink":"/program/93.686","title":"Ending
-  the HIV Epidemic:  A Plan for America \u2014 Ryan White HIV/AIDS Program Parts A
-  and B","popular_name":"EHE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.939","permalink":"/program/93.939","title":"HIV
-  Prevention Activities Non-Governmental Organization Based","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":88695595.0,"program_type":"assistance_listing"},{"cfda":"93.266","permalink":"/program/93.266","title":"Health
-  Systems Strengthening and HIV/AIDS Prevention, Care and Treatment under the President''s
-  Emergency Plan for AIDS Relief","popular_name":"Office of Global Health","agency":"Department
-  of Health and Human Services","total_obs":40000000.0,"program_type":"assistance_listing"},{"cfda":"93.079","permalink":"/program/93.079","title":"Cooperative
-  Agreements to Promote Adolescent Health through School-Based HIV/STD Prevention
-  and School-Based Surveillance","popular_name":"NA","agency":"Department of Health
-  and Human Services","total_obs":16208638.0,"program_type":"assistance_listing"},{"cfda":"93.383","permalink":"/program/93.383","title":"Public
-  Health Nursing","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1050000.0,"program_type":"assistance_listing"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
-  Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
-  Program previously published as Immunization Grants and Vaccines for Children Program","agency":"Department
-  of Health and Human Services","total_obs":640712307.0,"program_type":"assistance_listing"},{"cfda":"93.917","permalink":"/program/93.917","title":"HIV
-  Care Formula Grants","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":1344588545.0,"program_type":"assistance_listing"},{"cfda":"93.084","permalink":"/program/93.084","title":"Prevention
-  of Disease, Disability, and Death by Infectious Diseases  ","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":94294357.0,"program_type":"assistance_listing"},{"cfda":"93.899","permalink":"/program/93.899","title":"Minority
-  HIV/AIDS Fund (MHAF)","popular_name":"MHAF","agency":"Department of Health and Human
-  Services","total_obs":36000000.0,"program_type":"assistance_listing"},{"cfda":"93.323","permalink":"/program/93.323","title":"Epidemiology
-  and Laboratory Capacity for Infectious Diseases (ELC)","popular_name":"ELC Cooperative
-  Agreement","agency":"Department of Health and Human Services","total_obs":1141683969.0,"program_type":"assistance_listing"},{"cfda":"93.860","permalink":"/program/93.860","title":"Emerging
-  Infections Sentinel Networks","popular_name":"NA","agency":"Department of Health
-  and Human Services","total_obs":3726803.0,"program_type":"assistance_listing"},{"cfda":"93.977","permalink":"/program/93.977","title":"Sexually
-  Transmitted Diseases (STD) Prevention and Control Grants","popular_name":"STD Prevention","agency":"Department
-  of Health and Human Services","total_obs":323244382.0,"program_type":"assistance_listing"},{"cfda":"93.235","permalink":"/program/93.235","title":"Title
-  V State Sexual Risk Avoidance Education (Title V State SRAE) Program","popular_name":"Title
-  V State SRAE Program","agency":"Department of Health and Human Services","total_obs":46517729.0,"program_type":"assistance_listing"},{"cfda":"93.153","permalink":"/program/93.153","title":"Coordinated
-  Services and Access to Research for Women, Infants, Children, and Youth","popular_name":"Ryan
-  White HIV/AIDS Program (RWHAP) Part D Women, Infants, Children and Youth (WICY)
-  Program","agency":"Department of Health and Human Services","total_obs":70960382.0,"program_type":"assistance_listing"},{"cfda":"93.928","permalink":"/program/93.928","title":"Special
-  Projects of National Significance","popular_name":"SPNS","agency":"Department of
-  Health and Human Services","total_obs":19387561.0,"program_type":"assistance_listing"},{"cfda":"93.384","permalink":"/program/93.384","title":"ADVANCED
-  RESEARCH PROJECTS AGENCY for HEALTH (ARPA-H)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":393000000.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
-  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
-  Training and Technical Assistance","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":34666546.0,"program_type":"assistance_listing"},{"cfda":"93.345","permalink":"/program/93.345","title":"Leading
-  Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.978","permalink":"/program/93.978","title":"Sexually
-  Transmitted Diseases (STD) Provider Education Grants","popular_name":"STD Training
-  Centers","agency":"Department of Health and Human Services","total_obs":20362475.0,"program_type":"assistance_listing"},{"cfda":"93.269","permalink":"/program/93.269","title":"Complex
-  Humanitarian Emergency and War-Related Injury Public Health Activities","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":719291.0,"program_type":"assistance_listing"},{"cfda":"93.940","permalink":"/program/93.940","title":"HIV
-  Prevention Activities Health Department Based","popular_name":"Health Department
-  Based HIV Prevention and Surveillance Activities","agency":"Department of Health
-  and Human Services","total_obs":476356754.0,"program_type":"assistance_listing"},{"cfda":"93.943","permalink":"/program/93.943","title":"Epidemiologic
+programs: '[{"cfda":"93.068","permalink":"/program/93.068","title":"Chronic Diseases:  Research,
+  Control, and Prevention  ","popular_name":"Research, Control, and Prevention","agency":"Department
+  of Health and Human Services","total_obs":17786910.0,"program_type":"assistance_listing"},{"cfda":"93.943","permalink":"/program/93.943","title":"Epidemiologic
   Research Studies of Acquired Immunodeficiency Syndrome (AIDS) and Human Immunodeficiency
   Virus (HIV) Infection in Selected Population Groups","popular_name":"Minority HIV
   Research Initiative (MARI) to Support Epidemiologic and Implementation","agency":"Department
-  of Health and Human Services","total_obs":2737465.0,"program_type":"assistance_listing"},{"cfda":"93.185","permalink":"/program/93.185","title":"Immunization
-  Research, Demonstration, Public Information and Education Training and Clinical
-  Skills Improvement Projects","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":173511517.0,"program_type":"assistance_listing"},{"cfda":"93.918","permalink":"/program/93.918","title":"Grants
-  to Provide Outpatient Early Intervention Services with Respect to HIV Disease","popular_name":"Ryan
-  White HIV/AIDS Program (RWHAP) Part C Early Intervention Services (EIS)","agency":"Department
-  of Health and Human Services","total_obs":190538678.0,"program_type":"assistance_listing"},{"cfda":"93.011","permalink":"/program/93.011","title":"National
+  of Health and Human Services","total_obs":2737465.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
+  Corps Loan Repayment Program","popular_name":"Nurse Corps Loan Repayment Program
+  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":61796566.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"93.917","permalink":"/program/93.917","title":"HIV
+  Care Formula Grants","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":1344588545.0,"program_type":"assistance_listing"},{"cfda":"93.977","permalink":"/program/93.977","title":"Sexually
+  Transmitted Diseases (STD) Prevention and Control Grants","popular_name":"STD Prevention","agency":"Department
+  of Health and Human Services","total_obs":323244382.0,"program_type":"assistance_listing"},{"cfda":"93.686","permalink":"/program/93.686","title":"Ending
+  the HIV Epidemic:  A Plan for America \u2014 Ryan White HIV/AIDS Program Parts A
+  and B","popular_name":"EHE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
+  the Logical Observation Identifiers Names and Codes (LOINC\u00ae) Standard to meet
+  U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.787","permalink":"/program/93.787","title":"Title
+  V Sexual Risk Avoidance Education Program (Discretionary Grants)","popular_name":"Title
+  V Competitive SRAE (Discretionary Grants)","agency":"Department of Health and Human
+  Services","total_obs":12107066.0,"program_type":"assistance_listing"},{"cfda":"93.914","permalink":"/program/93.914","title":"HIV
+  Emergency Relief Project Grants","popular_name":"Ryan White HIV/AIDS Program (RWHAP)
+  Part A Emergency Relief for Areas with Substantial Need for Services","agency":"Department
+  of Health and Human Services","total_obs":654619562.0,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
+  Training and Technical Assistance","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":34666546.0,"program_type":"assistance_listing"},{"cfda":"93.235","permalink":"/program/93.235","title":"Title
+  V State Sexual Risk Avoidance Education (Title V State SRAE) Program","popular_name":"Title
+  V State SRAE Program","agency":"Department of Health and Human Services","total_obs":46517729.0,"program_type":"assistance_listing"},{"cfda":"93.944","permalink":"/program/93.944","title":"Human
+  Immunodeficiency Virus (HIV)/Acquired Immunodeficiency Virus Syndrome (AIDS) Surveillance","popular_name":"HIV/AIDS
+  Surveillance","agency":"Department of Health and Human Services","total_obs":32296790.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
+  Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.079","permalink":"/program/93.079","title":"Cooperative
+  Agreements to Promote Adolescent Health through School-Based HIV/STD Prevention
+  and School-Based Surveillance","popular_name":"NA","agency":"Department of Health
+  and Human Services","total_obs":16208638.0,"program_type":"assistance_listing"},{"cfda":"93.011","permalink":"/program/93.011","title":"National
   Organizations for State and Local Officials","popular_name":"NOSLO","agency":"Department
-  of Health and Human Services","total_obs":2918024.0,"program_type":"assistance_listing"},{"cfda":"93.116","permalink":"/program/93.116","title":"Project
+  of Health and Human Services","total_obs":2918024.0,"program_type":"assistance_listing"},{"cfda":"93.383","permalink":"/program/93.383","title":"Public
+  Health Nursing","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1050000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.345","permalink":"/program/93.345","title":"Leading
+  Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.940","permalink":"/program/93.940","title":"HIV
+  Prevention Activities Health Department Based","popular_name":"Health Department
+  Based HIV Prevention and Surveillance Activities","agency":"Department of Health
+  and Human Services","total_obs":476356754.0,"program_type":"assistance_listing"},{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted
+  Exchange Framework and Common Agreement (TEFCA) Recognized Coordinating Entity (RCE)
+  Cooperative Agreement","popular_name":"TEFCA RCE Cooperative Agreement","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.116","permalink":"/program/93.116","title":"Project
   Grants and Cooperative Agreements for Tuberculosis Control Programs","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":99832138.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
+  of Health and Human Services","total_obs":99832138.0,"program_type":"assistance_listing"},{"cfda":"21.027","permalink":"/program/21.027","title":"CORONAVIRUS
+  STATE AND LOCAL FISCAL RECOVERY FUNDS","popular_name":"Coronavirus State and Local
+  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":45132526.0,"program_type":"assistance_listing"},{"cfda":"93.978","permalink":"/program/93.978","title":"Sexually
+  Transmitted Diseases (STD) Provider Education Grants","popular_name":"STD Training
+  Centers","agency":"Department of Health and Human Services","total_obs":20362475.0,"program_type":"assistance_listing"},{"cfda":"12.340","permalink":"/program/12.340","title":"Naval
+  Medical Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":13007831.0,"program_type":"assistance_listing"},{"cfda":"93.994","permalink":"/program/93.994","title":"Maternal
+  and Child Health Services Block Grant to the States","popular_name":"MCH Block Grants","agency":"Department
+  of Health and Human Services","total_obs":573854919.0,"program_type":"assistance_listing"},{"cfda":"93.153","permalink":"/program/93.153","title":"Coordinated
+  Services and Access to Research for Women, Infants, Children, and Youth","popular_name":"Ryan
+  White HIV/AIDS Program (RWHAP) Part D Women, Infants, Children and Youth (WICY)
+  Program","agency":"Department of Health and Human Services","total_obs":70960382.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
   Programs for the Aging, Title III, Part D, Disease Prevention and Health Promotion
   Services","popular_name":"Special Programs for the Aging, Title III, Part D, Disease
   Prevention and Health Promotion Services","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
-  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.060","permalink":"/program/93.060","title":"Sexual
-  Risk Avoidance Education ","popular_name":"SRAE","agency":"Department of Health
-  and Human Services","total_obs":34686739.0,"program_type":"assistance_listing"},{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted
-  Exchange Framework and Common Agreement (TEFCA) Recognized Coordinating Entity (RCE)
-  Cooperative Agreement","popular_name":"TEFCA RCE Cooperative Agreement","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
-  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
-  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.092","permalink":"/program/93.092","title":"Affordable
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.118","permalink":"/program/93.118","title":"Acquired
+  Immunodeficiency Syndrome (AIDS) Activity","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":4321250.0,"program_type":"assistance_listing"},{"cfda":"93.860","permalink":"/program/93.860","title":"Emerging
+  Infections Sentinel Networks","popular_name":"NA","agency":"Department of Health
+  and Human Services","total_obs":3726803.0,"program_type":"assistance_listing"},{"cfda":"93.899","permalink":"/program/93.899","title":"Minority
+  HIV/AIDS Fund (MHAF)","popular_name":"MHAF","agency":"Department of Health and Human
+  Services","total_obs":36000000.0,"program_type":"assistance_listing"},{"cfda":"93.918","permalink":"/program/93.918","title":"Grants
+  to Provide Outpatient Early Intervention Services with Respect to HIV Disease","popular_name":"Ryan
+  White HIV/AIDS Program (RWHAP) Part C Early Intervention Services (EIS)","agency":"Department
+  of Health and Human Services","total_obs":190538678.0,"program_type":"assistance_listing"},{"cfda":"93.323","permalink":"/program/93.323","title":"Epidemiology
+  and Laboratory Capacity for Infectious Diseases (ELC)","popular_name":"ELC Cooperative
+  Agreement","agency":"Department of Health and Human Services","total_obs":1141683969.0,"program_type":"assistance_listing"},{"cfda":"93.941","permalink":"/program/93.941","title":"HIV
+  Demonstration, Research, Public and Professional Education Projects","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":10510886.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.092","permalink":"/program/93.092","title":"Affordable
   Care Act (ACA) Personal Responsibility Education Program","popular_name":"PREP","agency":"Department
-  of Health and Human Services","total_obs":69117220.0,"program_type":"assistance_listing"},{"cfda":"12.340","permalink":"/program/12.340","title":"Naval
-  Medical Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":13007831.0,"program_type":"assistance_listing"},{"cfda":"32.006","permalink":"/program/32.006","title":"COVID-19
-  Telehealth Program","popular_name":"COVID-19 Telehealth Program","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.944","permalink":"/program/93.944","title":"Human
-  Immunodeficiency Virus (HIV)/Acquired Immunodeficiency Virus Syndrome (AIDS) Surveillance","popular_name":"HIV/AIDS
-  Surveillance","agency":"Department of Health and Human Services","total_obs":32296790.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Health and Human Services","total_obs":69117220.0,"program_type":"assistance_listing"},{"cfda":"93.947","permalink":"/program/93.947","title":"Tuberculosis
+  Demonstration, Research, Public and Professional Education","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":6181654.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"93.924","permalink":"/program/93.924","title":"Ryan
+  for National and Community Service","total_obs":2190287.0,"program_type":"assistance_listing"},{"cfda":"21.032","permalink":"/program/21.032","title":"Local
+  Assistance and Tribal Consistency Fund","popular_name":"LATCF","agency":"Department
+  of the Treasury","total_obs":12099572.0,"program_type":"assistance_listing"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
+  Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
+  Program previously published as Immunization Grants and Vaccines for Children Program","agency":"Department
+  of Health and Human Services","total_obs":640712307.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
+  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
+  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
+  Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.185","permalink":"/program/93.185","title":"Immunization
+  Research, Demonstration, Public Information and Education Training and Clinical
+  Skills Improvement Projects","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":173511517.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
+  the Technical Advancement & Readiness of Public Health via Health Information Exchange
+  Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
+  Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":327384000.0,"program_type":"assistance_listing"},{"cfda":"93.283","permalink":"/program/93.283","title":"Centers
+  for Disease Control and Prevention Investigations and Technical Assistance ","popular_name":"CDC,
+  Technical Assistance, Vital Statistics","agency":"Department of Health and Human
+  Services","total_obs":6382238.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
+  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.384","permalink":"/program/93.384","title":"ADVANCED
+  RESEARCH PROJECTS AGENCY for HEALTH (ARPA-H)","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":393000000.0,"program_type":"assistance_listing"},{"cfda":"93.989","permalink":"/program/93.989","title":"International
+  Research and Research Training","popular_name":"Global Health Research and Research
+  Training","agency":"Department of Health and Human Services","total_obs":133206404.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  Transparency Project for Health IT Interoperability Services Cooperative Agreement
+  Program","popular_name":"Market Transparency Project","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.060","permalink":"/program/93.060","title":"Sexual
+  Risk Avoidance Education ","popular_name":"SRAE","agency":"Department of Health
+  and Human Services","total_obs":34686739.0,"program_type":"assistance_listing"},{"cfda":"93.924","permalink":"/program/93.924","title":"Ryan
   White HIV/AIDS Dental Reimbursement and Community Based Dental Partnership Grants","popular_name":"DRP
   and CBDPP","agency":"Department of Health and Human Services","total_obs":12867717.0,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
   Health and Disease Research","popular_name":"AHDR; Animal Health and Disease Research
-  Capacity Program","agency":"Department of Agriculture","total_obs":3717120.0,"program_type":"assistance_listing"}]'
+  Capacity Program","agency":"Department of Agriculture","total_obs":3717120.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
+  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.928","permalink":"/program/93.928","title":"Special
+  Projects of National Significance","popular_name":"SPNS","agency":"Department of
+  Health and Human Services","total_obs":19387561.0,"program_type":"assistance_listing"},{"cfda":"21.019","permalink":"/program/21.019","title":"Coronavirus
+  Relief Fund","popular_name":"CRF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.939","permalink":"/program/93.939","title":"HIV
+  Prevention Activities Non-Governmental Organization Based","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":88695595.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
+  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
+  Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
+  and Safety","agency":"Department of Agriculture","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"93.084","permalink":"/program/93.084","title":"Prevention
+  of Disease, Disability, and Death by Infectious Diseases  ","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":94294357.0,"program_type":"assistance_listing"},{"cfda":"93.266","permalink":"/program/93.266","title":"Health
+  Systems Strengthening and HIV/AIDS Prevention, Care and Treatment under the President''s
+  Emergency Plan for AIDS Relief","popular_name":"Office of Global Health","agency":"Department
+  of Health and Human Services","total_obs":40000000.0,"program_type":"assistance_listing"},{"cfda":"93.834","permalink":"/program/93.834","title":"Capacity
+  Building Assistance (CBA) for High-Impact HIV Prevention","popular_name":"The Access
+  to Prevention and Care Capacity Building Assistant Project (APAC Project)","agency":"Department
+  of Health and Human Services","total_obs":24049992.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.006","permalink":"/program/32.006","title":"COVID-19
+  Telehealth Program","popular_name":"COVID-19 Telehealth Program","agency":"Federal
+  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.269","permalink":"/program/93.269","title":"Complex
+  Humanitarian Emergency and War-Related Injury Public Health Activities","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":719291.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
+  U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.923","permalink":"/program/93.923","title":"Disadvantaged
+  Health Professions Faculty Loan Repayment Program (FLRP)","popular_name":"FLRP","agency":"Department
+  of Health and Human Services","total_obs":2176331.0,"program_type":"assistance_listing"}]'
 title: Communicable Diseases
 total_num_agencies: 10
 total_num_applicant_types: 39

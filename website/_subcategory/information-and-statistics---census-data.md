@@ -468,10 +468,10 @@ fiscal_year: '2023'
 parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/census-data
-programs: '[{"cfda":"16.750","permalink":"/program/16.750","title":"Support for Adam
-  Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
-  of Justice","total_obs":19659367.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
+  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
+  for Adam Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
+  of Justice","total_obs":19659367.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
   of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical,
   Research, and Methodology  Assistance","popular_name":null,"agency":"Department

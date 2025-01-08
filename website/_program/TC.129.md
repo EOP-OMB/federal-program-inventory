@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.129
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system would not allow credits for particular activi
   and medical leave per year for full-time workers; additionally, employers must pay
   at least 50 percent of an employee’s normal wages while they are on paid leave.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":80000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":90000000.0}]'
 outlays: null
 permalink: /program/TC.129.html
 popular_name: ''

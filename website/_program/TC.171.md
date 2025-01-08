@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - General Purpose Fiscal Assistance
 cfda: TC.171
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system generally would tax all income under the regu
   purposes is tax-exempt. The interest on bonds issued by Indian tribal governments
   for essential governmental purposes is also tax-exempt.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":38610000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":29810000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":39920000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":29810000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":39920000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":41110000000.0}]'
 outlays: null
 permalink: /program/TC.171.html
 popular_name: ''

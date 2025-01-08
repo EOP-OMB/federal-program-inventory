@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Community and Regional Development
 cfda: TC.099
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: The baseline tax system would not allow credits for particular activi
   in tax exempt Recovery Zone Facility Bonds. These bonds financed certain kinds of
   business development in areas of economic distress.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":110000000.0,"forgone_revenue":130000000.0},{"x":"2023","outlays":60000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":60000000.0,"forgone_revenue":10000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":60000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":60000000.0,"forgone_revenue":10000000.0},{"x":"2025","outlays":60000000.0,"forgone_revenue":10000000.0}]'
 outlays: null
 permalink: /program/TC.099.html
 popular_name: ''

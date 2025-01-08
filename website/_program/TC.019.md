@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.019
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   2010, issuers of the unused authorization of such bonds could opt to receive direct
   payment with the yield becoming fully taxable.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":30000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":40000000.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":30000000.0,"forgone_revenue":30000000.0},{"x":"2025","outlays":30000000.0,"forgone_revenue":30000000.0}]'
 outlays: null
 permalink: /program/TC.019.html
 popular_name: ''

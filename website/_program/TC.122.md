@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.122
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   a full deduction on restaurant meals provided to employees. Employer-provided lodging
   is fully deductible by the employer, in general.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":6440000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7530000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6690000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":7530000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6690000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":6830000000.0}]'
 outlays: null
 permalink: /program/TC.122.html
 popular_name: ''

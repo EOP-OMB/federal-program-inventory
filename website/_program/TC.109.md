@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.109
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system would not allow credits for particular activi
   taxable. An additional $0.4 billion of these bonds with a tax credit was authorized
   to be issued each year in 2011 through 2017.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":40000000.0,"forgone_revenue":110000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0},{"x":"2025","outlays":40000000.0,"forgone_revenue":60000000.0}]'
 outlays: null
 permalink: /program/TC.109.html
 popular_name: ''

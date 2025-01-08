@@ -476,39 +476,39 @@ fiscal_year: '2023'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/experimental-and-development-projects
-programs: '[{"cfda":"14.023","permalink":"/program/14.023","title":"Community Development
-  Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+programs: '[{"cfda":"14.878","permalink":"/program/14.878","title":"Affordable Housing
+  Development in Main Street Rejuvenation Projects","popular_name":"(Main Street)","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.188","permalink":"/program/14.188","title":"Housing
   Finance Agencies (HFA) Risk Sharing","popular_name":"HFA Risk Sharing Program -
-  542(c)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.506","permalink":"/program/14.506","title":"General
-  Research and Technology Activity","popular_name":null,"agency":"Department of Housing
-  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.024","permalink":"/program/64.024","title":"VA
-  Homeless Providers Grant and Per Diem Program","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":269252000.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
+  542(c)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":915882053.0,"program_type":"assistance_listing"},{"cfda":"14.267","permalink":"/program/14.267","title":"Continuum
-  of Care Program ","popular_name":"See Notice of Funding Opportunity [NOFO] for additional
-  information.","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.878","permalink":"/program/14.878","title":"Affordable
-  Housing Development in Main Street Rejuvenation Projects","popular_name":"(Main
-  Street)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":915882053.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.024","permalink":"/program/97.024","title":"Emergency
+  Food and Shelter National Board Program","popular_name":"(EFSP)","agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
+  Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.181","permalink":"/program/14.181","title":"Supportive
+  Housing for Persons with Disabilities","popular_name":"Section 811 Capital Advance","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.181","permalink":"/program/14.181","title":"Supportive
-  Housing for Persons with Disabilities","popular_name":"Section 811 Capital Advance","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
-  Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.024","permalink":"/program/97.024","title":"Emergency
-  Food and Shelter National Board Program","popular_name":"(EFSP)","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.267","permalink":"/program/14.267","title":"Continuum
+  of Care Program ","popular_name":"See Notice of Funding Opportunity [NOFO] for additional
+  information.","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.506","permalink":"/program/14.506","title":"General
+  Research and Technology Activity","popular_name":null,"agency":"Department of Housing
+  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
-  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
+  of Housing and Urban Development","total_obs":100991638.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
   Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.024","permalink":"/program/64.024","title":"VA
+  Homeless Providers Grant and Per Diem Program","popular_name":null,"agency":"Department
+  of Veterans Affairs","total_obs":269252000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Experimental and Development Projects
 total_num_agencies: 6
 total_num_applicant_types: 30

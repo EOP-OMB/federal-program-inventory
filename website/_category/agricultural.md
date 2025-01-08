@@ -499,11 +499,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Stabilization and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":31271018334.54},{"title":"Resource
+sub_cats: '[{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":11946768705.52},{"title":"Technical
+  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":8844667997.220001},{"title":"Stabilization
+  and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":31271018334.54},{"title":"Research
+  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":5471849701.99},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":6350182128.82},{"title":"Resource
   Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":74,"total_obs":12798648627.0},{"title":"Production
-  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":36853910832.0},{"title":"Research
-  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":5471849701.99},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":6350182128.82},{"title":"Technical
-  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":8844667997.220001},{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":11946768705.52}]'
+  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":36853910832.0}]'
 title: Agricultural
 total_num_agencies: 16
 total_num_applicant_types: 53

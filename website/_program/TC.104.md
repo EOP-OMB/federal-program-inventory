@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.104
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: The baseline tax system would not allow credits for particular activi
   if married filing jointly ($80,000 and $90,000 for other taxpayers), not indexed.
   Married individuals filing separate returns cannot claim either credit.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":4020000000.0,"forgone_revenue":15460000000.0},{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0},{"x":"2025","outlays":2420000000.0,"forgone_revenue":11060000000.0}]'
 outlays: null
 permalink: /program/TC.104.html
 popular_name: ''

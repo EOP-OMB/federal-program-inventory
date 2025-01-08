@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Natural Resources and Environment
 cfda: TC.046
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   using equipment which was originally placed in service before February 9, 2018,
   or thereafter.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":360000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":330000000.0},{"x":"2024","outlays":140000000.0,"forgone_revenue":180000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":330000000.0},{"x":"2024","outlays":140000000.0,"forgone_revenue":180000000.0},{"x":"2025","outlays":400000000.0,"forgone_revenue":530000000.0}]'
 outlays: null
 permalink: /program/TC.046.html
 popular_name: ''

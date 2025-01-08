@@ -499,13 +499,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2023'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":211353679.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":1476632926.0},{"title":"Economic
-  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":23148342579.0},{"title":"Small
-  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":6254958821.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":713111032.0},{"title":"Minority
-  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":2707859789.0},{"title":"Special
-  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":706734137.0},{"title":"Commercial
-  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":907308091.0},{"title":"Economic
-  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":24663200664.03}]'
+sub_cats: '[{"title":"Economic Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":23148342579.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":1476632926.0},{"title":"Economic
+  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":24663200664.03},{"title":"Special
+  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":706734137.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":211353679.0},{"title":"Minority
+  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":2707859789.0},{"title":"Small
+  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":6254958821.0},{"title":"Commercial
+  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":907308091.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":713111032.0}]'
 title: Business and Commerce
 total_num_agencies: 28
 total_num_applicant_types: 39

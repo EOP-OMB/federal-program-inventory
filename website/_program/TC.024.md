@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.024
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: The baseline tax system would not allow credits or deductions for par
   capacity limitation shall be allocated after December 31, 2020, according to prioritization
   rules set forth by statute.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":30000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":210000000.0}]'
 outlays: null
 permalink: /program/TC.024.html
 popular_name: ''

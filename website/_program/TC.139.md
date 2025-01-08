@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.139
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: The baseline tax system generally would tax all profits under the reg
   expenses exceeds its beginning-of-the-year accounting surplus. The deduction is
   limited to the insurer’s taxable income determined without the special deduction.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0}]'
 outlays: null
 permalink: /program/TC.139.html
 popular_name: ''

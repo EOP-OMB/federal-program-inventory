@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.160
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: Under the baseline tax system, the standard deduction is allowed. An 
   allowed. In contrast, the Tax Code allows taxpayers who are blind to claim an additional
   $1,950 standard deduction if single or $1,550 if married in 2024.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":60000000.0}]'
 outlays: null
 permalink: /program/TC.160.html
 popular_name: ''

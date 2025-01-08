@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Community and Regional Development
 cfda: TC.096
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system generally would tax all income under the regu
   tax-exempt financing. A taxpayer’s ability to accrue new tax benefits for empowerment
   zones expires on December 31, 2025.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":90000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":90000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":90000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":100000000.0}]'
 outlays: null
 permalink: /program/TC.096.html
 popular_name: ''

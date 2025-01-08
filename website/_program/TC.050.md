@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Agriculture
 cfda: TC.050
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: Because loan forgiveness increases a debtors net worth the baseline t
   excluded from taxation. Qualified farm debt that is forgiven, however, is excluded
   from income even when the taxpayer is solvent.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":120000000.0}]'
 outlays: null
 permalink: /program/TC.050.html
 popular_name: ''

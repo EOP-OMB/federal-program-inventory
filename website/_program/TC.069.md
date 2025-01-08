@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.069
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -22,7 +22,7 @@ objective: Under a comprehensive economic income tax, the costs of acquiring a b
   tax baseline, in contrast, depreciation allowances reflect estimates of economic
   depreciation.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":3490000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2440000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2300000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":2440000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2300000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2450000000.0}]'
 outlays: null
 permalink: /program/TC.069.html
 popular_name: ''

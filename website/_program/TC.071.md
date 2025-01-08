@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.071
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, expenses incurred in earning income wo
   as deductible mortgage interest expenses. The provision applies to premiums paid
   in 2021.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.071.html
 popular_name: ''

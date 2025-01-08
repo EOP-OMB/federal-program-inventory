@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Community and Regional Development
 cfda: TC.100
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system generally would tax all income under the regu
   in 2009 to allow Indian tribal governments to issue tax exempt “tribal economic
   development bonds.” There is a national bond limitation of $2 billion on such bonds.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.100.html
 popular_name: ''

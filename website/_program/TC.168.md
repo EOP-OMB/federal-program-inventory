@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Veterans Benefits and Services
 cfda: TC.168
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   law, however, pension payments made by the Veterans Administration are excluded
   from gross income.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":250000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":220000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":200000000.0}]'
 outlays: null
 permalink: /program/TC.168.html
 popular_name: ''

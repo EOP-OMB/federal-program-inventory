@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - General Science, Space, and Technology
 cfda: TC.008
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   14 percent of qualified research expenses that exceed 50 percent of the average
   qualified research expenses for the three preceding taxable years.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":23260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":28220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30040000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":28220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":30040000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":31890000000.0}]'
 outlays: null
 permalink: /program/TC.008.html
 popular_name: ''

@@ -482,47 +482,25 @@ fiscal_year: '2023'
 parent_permalink: /category/business-and-commerce
 parent_title: Business and Commerce
 permalink: /category/business-and-commerce/maritime
-programs: '[{"cfda":"20.807","permalink":"/program/20.807","title":"U.S. Merchant
-  Marine Academy","popular_name":"USMMA Kings Point, New York","agency":"Department
-  of Transportation","total_obs":87848000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
-  Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
-  of the Interior","total_obs":1548319.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
-  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
-  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.825","permalink":"/program/20.825","title":"Tanker
-  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":60000000.0,"program_type":"assistance_listing"},{"cfda":"20.803","permalink":"/program/20.803","title":"Maritime
-  War Risk Insurance","popular_name":"(Title XII, MMA, 1936)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.012","permalink":"/program/11.012","title":"Integrated
-  Ocean Observing System (IOOS)","popular_name":"IOOS","agency":"Department of Commerce","total_obs":22588738.0,"program_type":"assistance_listing"},{"cfda":"20.812","permalink":"/program/20.812","title":"Construction
-  Reserve Fund","popular_name":"Construction Reserve Fund (CRF)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.808","permalink":"/program/20.808","title":"Capital
-  Construction Fund","popular_name":"Capital Construction Fund (CCF)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore
-  and Harbor Workers'' Compensation","popular_name":"Longshore","agency":"Department
-  of Labor","total_obs":91874000.0,"program_type":"assistance_listing"},{"cfda":"20.823","permalink":"/program/20.823","title":"Port
-  Infrastructure Development Program","popular_name":"Port Infrastructure Development
-  Program(PIDP)","agency":"Department of Transportation","total_obs":648959442.0,"program_type":"assistance_listing"},{"cfda":"11.478","permalink":"/program/11.478","title":"Center
-  for Sponsored Coastal Ocean Research Coastal Ocean Program","popular_name":"(CRP/NCCOS)","agency":"Department
-  of Commerce","total_obs":22500000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
-  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
-  Container Assistance Program","popular_name":"CCAP","agency":"Department of Agriculture","total_obs":1151000.0,"program_type":"assistance_listing"},{"cfda":"97.140","permalink":"/program/97.140","title":"National
-  Coast Guard Museum Construction","popular_name":"NCGM Construction","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.806","permalink":"/program/20.806","title":"State
-  Maritime Schools","popular_name":"State Maritime Schools or Academies (SMA)","agency":"Department
-  of Transportation","total_obs":26700000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+programs: '[{"cfda":"20.808","permalink":"/program/20.808","title":"Capital Construction
+  Fund","popular_name":"Capital Construction Fund (CCF)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
   Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.802","permalink":"/program/20.802","title":"Federal
-  Ship Financing Guarantees","popular_name":"(Title XI)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.028","permalink":"/program/21.028","title":"Coronavirus
-  Economic Relief for Transportation Services Act","popular_name":"CERTS, CERTS Program","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.814","permalink":"/program/20.814","title":"Assistance
+  to Small Shipyards","popular_name":"(Small Shipyard Grants)","agency":"Department
+  of Transportation","total_obs":17600000.0,"program_type":"assistance_listing"},{"cfda":"20.812","permalink":"/program/20.812","title":"Construction
+  Reserve Fund","popular_name":"Construction Reserve Fund (CRF)","agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.439","permalink":"/program/11.439","title":"Marine
+  Mammal Data Program","popular_name":"Marine Mammal Data Program","agency":"Department
+  of Commerce","total_obs":6540000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":489011890.0,"program_type":"assistance_listing"},{"cfda":"11.483","permalink":"/program/11.483","title":"NOAA
+  Programs for Disaster Relief Appropriations Act - Non-construction and Construction","popular_name":null,"agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.455","permalink":"/program/11.455","title":"Cooperative
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.455","permalink":"/program/11.455","title":"Cooperative
   Science and Education Program","popular_name":"Cooperative Marine Education and
   Research Programs (CMER); Joint\r\nInstitute for Marine Observation (JIMO); Cooperative
   Unit of Fisheries\r\nEducation and Research (CUFER); Cooperative Institute of Fishery\r\nOceanography
@@ -530,17 +508,38 @@ programs: '[{"cfda":"20.807","permalink":"/program/20.807","title":"U.S. Merchan
   Agreement (CIA); Cooperative Institute for Marine\r\nResources Studies (CIMRS);
   Cooperative Institute for Marine and\r\nAtmospheric Studies (CIMAS); and Cooperative
   Institute for Arctic\r\nResearch (CIFAR); Joint Institute for the Study of the Atmosphere
-  and\r\nOceans (JISAO).","agency":"Department of Commerce","total_obs":311537.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.814","permalink":"/program/20.814","title":"Assistance
-  to Small Shipyards","popular_name":"(Small Shipyard Grants)","agency":"Department
-  of Transportation","total_obs":17600000.0,"program_type":"assistance_listing"},{"cfda":"11.483","permalink":"/program/11.483","title":"NOAA
-  Programs for Disaster Relief Appropriations Act - Non-construction and Construction","popular_name":null,"agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.439","permalink":"/program/11.439","title":"Marine
-  Mammal Data Program","popular_name":"Marine Mammal Data Program","agency":"Department
-  of Commerce","total_obs":6540000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  and\r\nOceans (JISAO).","agency":"Department of Commerce","total_obs":311537.0,"program_type":"assistance_listing"},{"cfda":"11.012","permalink":"/program/11.012","title":"Integrated
+  Ocean Observing System (IOOS)","popular_name":"IOOS","agency":"Department of Commerce","total_obs":22588738.0,"program_type":"assistance_listing"},{"cfda":"20.806","permalink":"/program/20.806","title":"State
+  Maritime Schools","popular_name":"State Maritime Schools or Academies (SMA)","agency":"Department
+  of Transportation","total_obs":26700000.0,"program_type":"assistance_listing"},{"cfda":"20.807","permalink":"/program/20.807","title":"U.S.
+  Merchant Marine Academy","popular_name":"USMMA Kings Point, New York","agency":"Department
+  of Transportation","total_obs":87848000.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.823","permalink":"/program/20.823","title":"Port
+  Infrastructure Development Program","popular_name":"Port Infrastructure Development
+  Program(PIDP)","agency":"Department of Transportation","total_obs":648959442.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"}]'
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
+  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
+  Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
+  of the Interior","total_obs":1548319.0,"program_type":"assistance_listing"},{"cfda":"20.825","permalink":"/program/20.825","title":"Tanker
+  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":60000000.0,"program_type":"assistance_listing"},{"cfda":"97.140","permalink":"/program/97.140","title":"National
+  Coast Guard Museum Construction","popular_name":"NCGM Construction","agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.028","permalink":"/program/21.028","title":"Coronavirus
+  Economic Relief for Transportation Services Act","popular_name":"CERTS, CERTS Program","agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.802","permalink":"/program/20.802","title":"Federal
+  Ship Financing Guarantees","popular_name":"(Title XI)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore
+  and Harbor Workers'' Compensation","popular_name":"Longshore","agency":"Department
+  of Labor","total_obs":91874000.0,"program_type":"assistance_listing"},{"cfda":"20.803","permalink":"/program/20.803","title":"Maritime
+  War Risk Insurance","popular_name":"(Title XII, MMA, 1936)","agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
+  Container Assistance Program","popular_name":"CCAP","agency":"Department of Agriculture","total_obs":1151000.0,"program_type":"assistance_listing"},{"cfda":"11.478","permalink":"/program/11.478","title":"Center
+  for Sponsored Coastal Ocean Research Coastal Ocean Program","popular_name":"(CRP/NCCOS)","agency":"Department
+  of Commerce","total_obs":22500000.0,"program_type":"assistance_listing"}]'
 title: Maritime
 total_num_agencies: 11
 total_num_applicant_types: 37

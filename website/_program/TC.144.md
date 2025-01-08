@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.144
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   for retired and disabled workers and spouses, dependents, and survivors, for a discussion
   of the threshold.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":300000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":300000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":230000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":300000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":230000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":230000000.0}]'
 outlays: null
 permalink: /program/TC.144.html
 popular_name: ''

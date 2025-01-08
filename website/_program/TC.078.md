@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.078
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: Under the baseline tax system, unrealized capital gains would be taxe
   to the donee. The carryover of the donor’s basis allows a continued deferral of
   unrealized capital gains.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":4590000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4830000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":4590000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":4830000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5310000000.0}]'
 outlays: null
 permalink: /program/TC.078.html
 popular_name: ''

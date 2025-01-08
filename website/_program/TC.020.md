@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.020
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system generally takes a comprehensive view of taxab
   that would be taxable to the customer under the baseline tax system. In contrast,
   the Tax Code exempts these subsidies from the non-business customer’s gross income.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":70000000.0}]'
 outlays: null
 permalink: /program/TC.020.html
 popular_name: ''

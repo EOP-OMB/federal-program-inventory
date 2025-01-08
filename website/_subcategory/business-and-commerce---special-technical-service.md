@@ -487,72 +487,72 @@ fiscal_year: '2023'
 parent_permalink: /category/business-and-commerce
 parent_title: Business and Commerce
 permalink: /category/business-and-commerce/special-technical-service
-programs: '[{"cfda":"11.407","permalink":"/program/11.407","title":"Interjurisdictional
-  Fisheries Act of 1986","popular_name":null,"agency":"Department of Commerce","total_obs":4630000.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
-  Transparency Project for Health IT Interoperability Services Cooperative Agreement
-  Program","popular_name":"Market Transparency Project","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+programs: '[{"cfda":"19.124","permalink":"/program/19.124","title":"East Asia and
+  Pacific Grants Program","popular_name":"U.S. Department of State, Bureau of East
+  Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.231","permalink":"/program/10.231","title":"Agriculture
+  Business Innovation Center at HBCU","popular_name":null,"agency":"Department of
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.022","permalink":"/program/12.022","title":"DoD
+  Mentor-Protege Program","popular_name":"DoD MP Program","agency":"Department of
+  Defense","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"10.377","permalink":"/program/10.377","title":"Agriculture
+  Innovation Center Demonstration Program","popular_name":"Agriculture Innovation
+  Center (AIC) Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.606","permalink":"/program/11.606","title":"Weights
+  and Measures Service","popular_name":null,"agency":"Department of Commerce","total_obs":5493400.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
+  Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
+  Protection Agency","total_obs":8741280.0,"program_type":"assistance_listing"},{"cfda":"59.044","permalink":"/program/59.044","title":"Veterans
+  Outreach Program","popular_name":"Veterans Business Outreach Center Program (VBOC)","agency":"Small
+  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.439","permalink":"/program/11.439","title":"Marine
+  Mammal Data Program","popular_name":"Marine Mammal Data Program","agency":"Department
+  of Commerce","total_obs":6540000.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
+  of the Interior","total_obs":1036000.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.010","permalink":"/program/32.010","title":"Supply
+  Chain Reimbursement Program","popular_name":"Supply Chain Reimbursement Program","agency":"Federal
+  Communications Commission","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"11.610","permalink":"/program/11.610","title":"Standards
+  Information Center ","popular_name":"(SIC)","agency":"Department of Commerce","total_obs":115678.0,"program_type":"assistance_listing"},{"cfda":"11.474","permalink":"/program/11.474","title":"Atlantic
+  Coastal Fisheries Cooperative Management Act","popular_name":null,"agency":"Department
+  of Commerce","total_obs":10940000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.006","permalink":"/program/38.006","title":"State
   Appraiser Agency Support Grants","popular_name":null,"agency":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.044","permalink":"/program/59.044","title":"Veterans
-  Outreach Program","popular_name":"Veterans Business Outreach Center Program (VBOC)","agency":"Small
-  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.606","permalink":"/program/11.606","title":"Weights
-  and Measures Service","popular_name":null,"agency":"Department of Commerce","total_obs":5493400.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
-  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
-  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":491390557.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
-  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":1036000.0,"program_type":"assistance_listing"},{"cfda":"20.243","permalink":"/program/20.243","title":"Commercial
-  Motor Vehicle Enforcement Training and Support","popular_name":"CMVETS","agency":"Department
-  of Transportation","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
-  Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
-  Protection Agency","total_obs":8741280.0,"program_type":"assistance_listing"},{"cfda":"59.026","permalink":"/program/59.026","title":"SCORE","popular_name":"SCORE","agency":"Small
-  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.400","permalink":"/program/11.400","title":"Geodetic
+  Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
+  Talent Challenge","agency":"Department of Commerce","total_obs":4456223.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.400","permalink":"/program/11.400","title":"Geodetic
   Surveys and Services (Geodesy and Applications of the National Geodetic Reference
   System)","popular_name":"Geodetic and Hydrographic Surveys","agency":"Department
-  of Commerce","total_obs":20200000.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.439","permalink":"/program/11.439","title":"Marine
-  Mammal Data Program","popular_name":"Marine Mammal Data Program","agency":"Department
-  of Commerce","total_obs":6540000.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
-  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
-  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
-  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.427","permalink":"/program/11.427","title":"Fisheries
+  of Commerce","total_obs":20200000.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
+  Technical Assistance For Business Firms","popular_name":"APEX Accelerator Program/Procurement
+  Technical Assistance Program (PTAP))","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.427","permalink":"/program/11.427","title":"Fisheries
   Development and Utilization Research and Development Grants and Cooperative Agreements
   Program","popular_name":"The Saltonstall-Kennedy Research Grant Program","agency":"Department
-  of Commerce","total_obs":11001000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.610","permalink":"/program/11.610","title":"Standards
-  Information Center ","popular_name":"(SIC)","agency":"Department of Commerce","total_obs":115678.0,"program_type":"assistance_listing"},{"cfda":"12.022","permalink":"/program/12.022","title":"DoD
-  Mentor-Protege Program","popular_name":"DoD MP Program","agency":"Department of
-  Defense","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
-  Technical Assistance For Business Firms","popular_name":"APEX Accelerator Program/Procurement
-  Technical Assistance Program (PTAP))","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.474","permalink":"/program/11.474","title":"Atlantic
-  Coastal Fisheries Cooperative Management Act","popular_name":null,"agency":"Department
-  of Commerce","total_obs":10940000.0,"program_type":"assistance_listing"},{"cfda":"10.377","permalink":"/program/10.377","title":"Agriculture
-  Innovation Center Demonstration Program","popular_name":"Agriculture Innovation
-  Center (AIC) Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
-  of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.010","permalink":"/program/32.010","title":"Supply
-  Chain Reimbursement Program","popular_name":"Supply Chain Reimbursement Program","agency":"Federal
-  Communications Commission","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
-  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
-  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.231","permalink":"/program/10.231","title":"Agriculture
-  Business Innovation Center at HBCU","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.438","permalink":"/program/11.438","title":"Pacific
+  of Commerce","total_obs":11001000.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
+  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
+  of Defense","total_obs":491390557.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.243","permalink":"/program/20.243","title":"Commercial
+  Motor Vehicle Enforcement Training and Support","popular_name":"CMVETS","agency":"Department
+  of Transportation","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"11.407","permalink":"/program/11.407","title":"Interjurisdictional
+  Fisheries Act of 1986","popular_name":null,"agency":"Department of Commerce","total_obs":4630000.0,"program_type":"assistance_listing"},{"cfda":"59.026","permalink":"/program/59.026","title":"SCORE","popular_name":"SCORE","agency":"Small
+  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
+  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
+  Agriculture","total_obs":2399999.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  Transparency Project for Health IT Interoperability Services Cooperative Agreement
+  Program","popular_name":"Market Transparency Project","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.438","permalink":"/program/11.438","title":"Pacific
   Coast Salmon Recovery Pacific Salmon Treaty Program","popular_name":"Pacific Coast
-  Salmon Recovery_Pacific Salmon Treaty Program","agency":"Department of Commerce","total_obs":111790000.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
-  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":4456223.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Salmon Recovery_Pacific Salmon Treaty Program","agency":"Department of Commerce","total_obs":111790000.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
+  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Special Technical Service
 total_num_agencies: 14
 total_num_applicant_types: 39

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.037
-fiscal_year: '2022'
+fiscal_year: '2023'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   placed in service in 2033, and 22 percent for property placed in service in 2034.
   The credit expires after December 31, 2034.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":6690000000.0}]'
 outlays: null
 permalink: /program/TC.037.html
 popular_name: ''
