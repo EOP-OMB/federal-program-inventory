@@ -1291,7 +1291,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
                             SELECT DISTINCT program_id, amount
                             FROM program_sam_spending
                             WHERE fiscal_year = ?
-                            AND is_actual = 1
+                            AND is_actual = 0
                             AND program_id IN ({placeholders})
                         )
                     """, [fiscal_year] + prog_ids)

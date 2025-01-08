@@ -1,5 +1,16 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch:8.15.0
 
+# Set environment variables
+ENV discovery.type=single-node
+ENV xpack.security.enabled=false
+
+# Define healthcheck to ensure container is running
+HEALTHCHECK --interval=30s --timeout=10s --retries=5 --start-interval=40s \
+    CMD curl -f http://localhost:9200/_cluster/health || exit 1
+
+# Expose port 9200
+EXPOSE 9200
+
 # Install Python and dependencies
 USER root
 RUN apt-get update && \
@@ -31,3 +42,4 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh && \
 USER elasticsearch
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
