@@ -422,6 +422,7 @@ cfo_agencies:
   - title: Office of Local Defense Community Cooperation
   - title: Uniformed Services University of the Health Sciences
   - title: Washington Headquarters Services (WHS)
+  - title: Unspecified
   title: Department of Defense
 - sub_categories:
   - title: Department of Education
@@ -431,6 +432,7 @@ cfo_agencies:
   - title: Office of Federal Student Aid
   - title: Office of Human Resources and Administration
   - title: Office of Special Education and Rehabilitative Services
+  - title: Unspecified
   title: Department of Education
 - title: Department of Energy
 - sub_categories:
@@ -449,6 +451,7 @@ cfo_agencies:
   - title: Office of the National Coordinator for Health Information Technology (ONC)
   - title: Office of the Secretary
   - title: Substance Abuse and Mental Health Services Administration
+  - title: Unspecified
   title: Department of Health and Human Services
 - sub_categories:
   - title: Citizenship & Immigration Services
@@ -459,6 +462,7 @@ cfo_agencies:
   - title: Science and Technology
   - title: United States Coast Guard (USCG)
   - title: United States Secret Service (USSS)
+  - title: Unspecified
   title: Department of Homeland Security
 - sub_categories:
   - title: Assistant Secretary for Community Planning and Development
@@ -475,6 +479,7 @@ cfo_agencies:
   - title: Drug Enforcement Administration
   - title: Federal Bureau of Investigation
   - title: Office of Justice Programs
+  - title: Unspecified
   title: Department of Justice
 - sub_categories:
   - title: Bureau of International Labor Affairs
@@ -500,6 +505,7 @@ cfo_agencies:
   - title: Political Military Affairs/ Weapons Removal and Abatement
   - title: Secretary's Office of Global Women's Issues
   - title: U.S. Permanent Mission to the Organization of American States
+  - title: Unspecified
   title: Department of State
 - sub_categories:
   - title: Federal Aviation Administration (FAA)
@@ -519,6 +525,7 @@ cfo_agencies:
   - title: Under Secretary for Benefits / Veterans Benefits Administation
   - title: VA Health Administration Center
   - title: Veterans Benefits Administration
+  - title: Unspecified
   title: Department of Veterans Affairs
 - sub_categories:
   - title: Bureau of Indian Education
@@ -533,11 +540,13 @@ cfo_agencies:
   - title: Office of Surface Mining
   - title: The Bureau of Ocean Energy Management, Regulation, and Enforcement
   - title: U. S. Geological Survey
+  - title: Unspecified
   title: Department of the Interior
 - sub_categories:
   - title: Community Development Financial Institutions Fund
   - title: Departmental Offices
   - title: Internal Revenue Service (IRS)
+  - title: Unspecified
   title: Department of the Treasury
 - title: Environmental Protection Agency
 - title: General Services Administration
@@ -558,20 +567,24 @@ other_agencies:
 - title: Delta Regional Authority
 - sub_categories:
   - title: Denali Commission
+  - title: Unspecified
   title: Denali Commission
 - title: Equal Employment Opportunity Commission
 - sub_categories:
   - title: Executive Office of the President
+  - title: Unspecified
   title: Executive Office of the President
 - title: Export - Import Bank of the United States
 - sub_categories:
   - title: Federal Communications Commission
+  - title: Unspecified
   title: Federal Communications Commission
 - title: Federal Financial Institutions Examination Council Appraisal Subcommittee
 - title: Federal Permitting Improvement Steering Council
 - title: Gulf Coast Ecosystem Restoration Council
 - sub_categories:
   - title: Inter-American Foundation
+  - title: Unspecified
   title: Inter-American Foundation
 - title: Japan-U.S. Friendship Commission
 - sub_categories:
@@ -592,6 +605,7 @@ other_agencies:
 - title: Southeast Crescent Regional Commission
 - sub_categories:
   - title: The Institute of Museum and Library Services
+  - title: Unspecified
   title: The Institute of Museum and Library Services
 - title: U.S. Agency for Global Media
 - title: U.S. Election Assistance Commission

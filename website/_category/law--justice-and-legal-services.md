@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Executive
-  Office of the President","total_num_programs":5,"total_obs":0.0},{"title":"Equal
-  Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":9,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":22,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":119,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":5026451109.0},{"title":"Department
+  of Justice","total_num_programs":119,"total_obs":3099091905.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":2577875908.0},{"title":"Department
+  of the Interior","total_num_programs":9,"total_obs":1526367724.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":2,"total_obs":824800000.0},{"title":"Department
+  of State","total_num_programs":22,"total_obs":800878993.0},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":635973717.72},{"title":"Department
+  of Homeland Security","total_num_programs":8,"total_obs":575152893.0},{"title":"Executive
+  Office of the President","total_num_programs":5,"total_obs":292329000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":251840523.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":202975232.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":13275048.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":3799548.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":95},{"title":"Local (includes
   State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":86},{"title":"Private
@@ -489,19 +492,19 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/law--justice-and-legal-services
-sub_cats: '[{"title":"Law Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":87,"total_obs":0.0},{"title":"Law
-  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":0.0},{"title":"Legal
-  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":0.0},{"title":"Legal
-  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":0.0},{"title":"Law
-  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":0.0},{"title":"Legal
-  Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":52,"total_obs":0.0},{"title":"Legal
-  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":0.0},{"title":"Legal
-  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":0.0},{"title":"Law
-  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":0.0}]'
+sub_cats: '[{"title":"Law Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":87,"total_obs":4024145648.0},{"title":"Law
+  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":6069696315.0},{"title":"Legal
+  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":102343296.0},{"title":"Legal
+  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":130280429.0},{"title":"Law
+  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":2453967773.0},{"title":"Legal
+  Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":52,"total_obs":4030581330.0},{"title":"Legal
+  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":102343296.0},{"title":"Legal
+  Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1059064654.0},{"title":"Law
+  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":4694264410.72}]'
 title: Law, Justice and Legal Services
 total_num_agencies: 16
 total_num_applicant_types: 46
 total_num_programs: 192
 total_num_sub_cats: 9
-total_obs: 0.0
+total_obs: 15861811600.72
 ---

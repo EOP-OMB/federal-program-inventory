@@ -1,27 +1,68 @@
 services:
   elasticsearch:
-    build: ./elasticsearch-custom
-    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false  # Disable security features
+      - xpack.security.transport.ssl.enabled=false  # Disable transport SSL
+    ports:
+      - "9200:9200"         # Expose Elasticsearch on port 9200
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
       - internal
-      
+
   api:
     build: ./api
+    ports:
+      - "8000:8000"
     depends_on:
       elasticsearch:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-X", "GET", "http://localhost:8000/", "-H", "accept: application/json"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - ES_HOST=elasticsearch
+      - ES_PORT=9200
+      - ES_SCHEME=http
     networks:
       - internal
 
   website:
-    build: ./website
+    build:
+      context: ./website
     ports:
-      - "8080:8080"
-    depends_on:
-      api:
-        condition: service_healthy
+      - "8080:8080"         
+    # depends_on:
+    #   api:
+    #     condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
+
+  indexer:
+    build: ./indexer
+    volumes:
+      - ./website/data:/app/data
+      - ./indexer:/app/indexer
+    working_dir: /app/indexer
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    command: ["python", "-u", "index_programs.py"]
+    networks:
+      - internal
+
+volumes:
+  esdata:
+    driver: local
 
 networks:
   internal:

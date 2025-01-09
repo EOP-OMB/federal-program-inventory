@@ -1,17 +1,19 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":5,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":5,"total_obs":0.0},{"title":"Library
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":5,"total_obs":12222610462.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":3130000000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":1224448195.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":5,"total_obs":249110877.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":5,"total_obs":237083372.0},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":222985262.0},{"title":"Environmental
+  Protection Agency","total_num_programs":4,"total_obs":46992916.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":5955342.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":116415.0},{"title":"Department of
+  Homeland Security","total_num_programs":1,"total_obs":100000.0},{"title":"Library
   of Congress","total_num_programs":5,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":4,"total_obs":0.0},{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":5,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":34},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":33},{"title":"State
@@ -494,18 +496,18 @@ permalink: /category/education/libraries-and-technical-lnformation-services
 programs: '[{"cfda":"42.015","permalink":"/program/42.015","title":"Lewis-Houghton
   Civics and Democracy Initiative","popular_name":"LHCDI","agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
   Education Technical Assistance and Dissemination to Improve Services and Results
-  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
+  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":39345000.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
   Operations","popular_name":"Space Operations","agency":"National Aeronautics and
-  Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.060","permalink":"/program/84.060","title":"Indian
+  Space Administration","total_obs":52750522.0,"program_type":"assistance_listing"},{"cfda":"84.060","permalink":"/program/84.060","title":"Indian
   Education Grants to Local Educational Agencies","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.012","permalink":"/program/42.012","title":"Connecting
+  of Education","total_obs":110381000.0,"program_type":"assistance_listing"},{"cfda":"42.012","permalink":"/program/42.012","title":"Connecting
   Communities Digital Initiative","popular_name":"CCDI","agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.230","permalink":"/program/10.230","title":"Farm
@@ -515,33 +517,33 @@ programs: '[{"cfda":"42.015","permalink":"/program/42.015","title":"Lewis-Hought
   Friendship Commission Grants","popular_name":null,"agency":"Japan-U.S. Friendship
   Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.009","permalink":"/program/32.009","title":"Emergency
   Connectivity Fund Program","popular_name":"Emergency Connectivity Fund Program","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.879","permalink":"/program/93.879","title":"Medical
+  Communications Commission","total_obs":153000000.0,"program_type":"assistance_listing"},{"cfda":"93.879","permalink":"/program/93.879","title":"Medical
   Library Assistance","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  Services","total_obs":78196782.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
   American and Native Hawaiian Library Services","popular_name":"NANH-Libraries","agency":"The
-  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
+  Institute of Museum and Library Services","total_obs":5763000.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
   Support","popular_name":"Safety, Security and Mission Services (Mission Support
-  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":13777683.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
   5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
-  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":80000.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
   with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.010","permalink":"/program/97.010","title":"Citizenship
   Education and Training","popular_name":"Citizenship Education and Naturalization
-  Application Services","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Application Services","agency":"Department of Homeland Security","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
   Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
   Programs for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
   of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
+  and Space Administration","total_obs":98831165.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
   in People in The Middle East and North Africa","popular_name":"Investing in people/
   cultural/educational/alumni/information and media efforts in the Middle East and
   North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.013","permalink":"/program/42.013","title":"Of
@@ -551,35 +553,35 @@ programs: '[{"cfda":"42.015","permalink":"/program/42.015","title":"Lewis-Hought
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
   Education, Two-Year Postsecondary Education, and Agriculture in the K-12 Classroom","popular_name":"SPECA
-  Grants Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
+  Grants Program","agency":"Department of Agriculture","total_obs":900000.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
   Bush 21st Century Librarian Program","popular_name":"LB21","agency":"The Institute
-  of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
+  of Museum and Library Services","total_obs":9647360.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
   Education - State Personnel Development","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.011","permalink":"/program/42.011","title":"Library
+  of Education","total_obs":38630000.0,"program_type":"assistance_listing"},{"cfda":"42.011","permalink":"/program/42.011","title":"Library
   of Congress Grants","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
   Leadership Grants","popular_name":"NLG; NLG-L; NLG-M","agency":"The Institute of
-  Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  Museum and Library Services","total_obs":23686119.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
   Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
+  of Education","total_obs":31138000.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
   Systems Development Mission Directorate (ESDMD)","agency":"National Aeronautics
-  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.610","permalink":"/program/11.610","title":"Standards
-  Information Center ","popular_name":"(SIC)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  and Space Administration","total_obs":15012173.0,"program_type":"assistance_listing"},{"cfda":"11.610","permalink":"/program/11.610","title":"Standards
+  Information Center ","popular_name":"(SIC)","agency":"Department of Commerce","total_obs":116415.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.016","permalink":"/program/84.016","title":"Undergraduate
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"84.016","permalink":"/program/84.016","title":"Undergraduate
   International Studies and Foreign Language Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Education","total_obs":3491262.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.310","permalink":"/program/45.310","title":"Grants
-  to States","popular_name":"G2S","agency":"The Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.217","permalink":"/program/10.217","title":"Higher
+  to States","popular_name":"G2S","agency":"The Institute of Museum and Library Services","total_obs":180000000.0,"program_type":"assistance_listing"},{"cfda":"10.217","permalink":"/program/10.217","title":"Higher
   Education - Institution Challenge Grants Program","popular_name":"Institution Challenge,
   Multicultural Scholars & Graduate Fellowships Grant Program (Institution Higher
   Education Challenge)\r\n[Formerly: Challenge or HEC Grants]","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Agriculture","total_obs":5055342.0,"program_type":"assistance_listing"}]'
 title: Libraries and Technical lnformation Services
 total_num_agencies: 16
 total_num_applicant_types: 45
 total_num_programs: 45
-total_obs: 0.0
+total_obs: 17359402841.0
 ---

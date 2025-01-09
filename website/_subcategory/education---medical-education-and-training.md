@@ -1,17 +1,17 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3760000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":12,"total_obs":1378375656.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":470758834.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":85262332.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":56711829.0},{"title":"Environmental
+  Protection Agency","total_num_programs":5,"total_obs":54144626.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":46471297.72},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":1,"total_obs":30014398.0},{"title":"Agency
+  for International Development","total_num_programs":1,"total_obs":30000000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":26},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":24},{"title":"Other
@@ -496,71 +496,71 @@ programs: '[{"cfda":"93.893","permalink":"/program/93.893","title":"Health Care 
   Public Health (HPH) Sector Information Sharing and Analysis Organization (ISAO)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
   5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
-  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":80000.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.123","permalink":"/program/93.123","title":"Health
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"93.123","permalink":"/program/93.123","title":"Health
   Professions Pre-graduate Scholarship Program for Indians","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.140","permalink":"/program/93.140","title":"Intramural
+  of Health and Human Services","total_obs":4660502.0,"program_type":"assistance_listing"},{"cfda":"93.140","permalink":"/program/93.140","title":"Intramural
   Research Training Award","popular_name":"IRTA","agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Human Services","total_obs":172988626.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.978","permalink":"/program/93.978","title":"Sexually
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"93.978","permalink":"/program/93.978","title":"Sexually
   Transmitted Diseases (STD) Provider Education Grants","popular_name":"STD Training
-  Centers","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Centers","agency":"Department of Health and Human Services","total_obs":17120133.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.137","permalink":"/program/93.137","title":"Community
   Programs to Improve Minority Health","popular_name":"Minority Health Community Programs","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
+  of Health and Human Services","total_obs":44441315.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
   SERVICE FUND - RURAL HEALTH CARE","popular_name":"USAC - RURAL HEALTH CARE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Communications Commission","total_obs":783000000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.270","permalink":"/program/93.270","title":"Viral
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"93.270","permalink":"/program/93.270","title":"Viral
   Hepatitis Prevention and Control","popular_name":"Integrated Viral Hepatitis Surveillance
-  and Prevention","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  and Prevention","agency":"Department of Health and Human Services","total_obs":25387622.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.614","permalink":"/program/20.614","title":"National
   Highway Traffic Safety Administration (NHTSA) Discretionary Safety Grants and Cooperative
   Agreements ","popular_name":"NHTSA Section 403 Discretionary Grants and Cooperative
-  Agreements","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"98.006","permalink":"/program/98.006","title":"Foreign
+  Agreements","agency":"Department of Transportation","total_obs":46471297.72,"program_type":"assistance_listing"},{"cfda":"98.006","permalink":"/program/98.006","title":"Foreign
   Assistance to American Schools and Hospitals Abroad (ASHA)","popular_name":null,"agency":"Agency
-  for International Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.855","permalink":"/program/10.855","title":"Distance
+  for International Development","total_obs":30000000.0,"program_type":"assistance_listing"},{"cfda":"10.855","permalink":"/program/10.855","title":"Distance
   Learning and Telemedicine Loans and Grants","popular_name":"DLT - Distance Learning
-  and Telemedicine ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
+  and Telemedicine ","agency":"Department of Agriculture","total_obs":83342332.0,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
   and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.007","permalink":"/program/12.007","title":"Military
-  Health Services Research (MHSR)","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  of Health and Human Services","total_obs":383555480.0,"program_type":"assistance_listing"},{"cfda":"12.007","permalink":"/program/12.007","title":"Military
+  Health Services Research (MHSR)","popular_name":null,"agency":"Department of Defense","total_obs":7848972.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.307","permalink":"/program/93.307","title":"Minority
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"93.307","permalink":"/program/93.307","title":"Minority
   Health and Health Disparities Research ","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
+  of Health and Human Services","total_obs":489444934.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
   Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.187","permalink":"/program/93.187","title":"Undergraduate
+  Agriculture","total_obs":1920000.0,"program_type":"assistance_listing"},{"cfda":"93.187","permalink":"/program/93.187","title":"Undergraduate
   Scholarship Program for Individuals from Disadvantaged Backgrounds","popular_name":"NIH
   Undergraduate Scholarship Program (UGSP)","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  Services","total_obs":4573380.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.085","permalink":"/program/93.085","title":"Research
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"93.085","permalink":"/program/93.085","title":"Research
   on Research Integrity","popular_name":"Ensuring Research Integrity","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
+  of Health and Human Services","total_obs":196305.0,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
   Research Manpower","popular_name":"Cancer Manpower Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  of Health and Human Services","total_obs":236007359.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.750","permalink":"/program/12.750","title":"Uniformed
   Services University Medical Research Projects","popular_name":"Uniformed Services
-  University (USU)","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  University (USU)","agency":"Department of Defense","total_obs":462909862.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
   Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.716","permalink":"/program/66.716","title":"Research,
   Development, Monitoring, Public Education, Outreach, Training, Demonstrations, and
-  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":7151710.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"}]'
 title: Medical Education and Training
 total_num_agencies: 15
 total_num_applicant_types: 47
 total_num_programs: 33
-total_obs: 0.0
+total_obs: 5931738972.72
 ---

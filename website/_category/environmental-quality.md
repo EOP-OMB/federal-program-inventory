@@ -1,18 +1,21 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":108,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":19,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":6,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":14,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":21,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":108,"total_obs":24485554678.0},{"title":"Department
+  of Agriculture","total_num_programs":21,"total_obs":4980501451.25},{"title":"Department
+  of the Interior","total_num_programs":19,"total_obs":3358000243.0},{"title":"Department
+  of Defense","total_num_programs":5,"total_obs":2557272280.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":2461000000.0},{"title":"Department
+  of Commerce","total_num_programs":14,"total_obs":1614483980.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":1297356134.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":532402689.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":226607582.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":1,"total_obs":56711829.0},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":56548000.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":31969215.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":28481679.14},{"title":"Department
+  of Energy","total_num_programs":6,"total_obs":22086116.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Denali
+  Commission","total_num_programs":2,"total_obs":20.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":113},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":106},{"title":"Private nonprofit institution/organization
@@ -495,16 +498,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/environmental-quality
-sub_cats: '[{"title":"Water Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":116,"total_obs":0.0},{"title":"Solid
-  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":0.0},{"title":"Air
-  Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":0.0},{"title":"Radiation
-  Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":0.0},{"title":"Pesticides
-  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":62,"total_obs":0.0},{"title":"Research,
-  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":105,"total_obs":0.0}]'
+sub_cats: '[{"title":"Water Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":116,"total_obs":15324846081.0},{"title":"Solid
+  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":12559389846.0},{"title":"Air
+  Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":25980304501.0},{"title":"Radiation
+  Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":5974991098.14},{"title":"Pesticides
+  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":62,"total_obs":6580958683.25},{"title":"Research,
+  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":105,"total_obs":8759960248.0}]'
 title: Environmental Quality
 total_num_agencies: 17
 total_num_applicant_types: 52
 total_num_programs: 198
 total_num_sub_cats: 6
-total_obs: 0.0
+total_obs: 41759975896.39
 ---

@@ -1,19 +1,22 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":4,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":12174639048.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":2977000000.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":1412699075.0},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":660092541.0},{"title":"Department of
+  Agriculture","total_num_programs":13,"total_obs":589709269.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":253706301.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":4,"total_obs":219096479.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":75642784.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":56711829.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Justice","total_num_programs":4,"total_obs":18051147.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":3100000.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":100000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":80000.0},{"title":"National
   Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":13,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  Archives and Records Administration","total_num_programs":2,"total_obs":0.0},{"title":"Library
+  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Department of the
+  Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":26},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Private
@@ -487,13 +490,13 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/information-and-statistics
-sub_cats: '[{"title":"Census Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":0.0},{"title":"Library
-  of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":0.0},{"title":"Libraries,
-  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":0.0}]'
+sub_cats: '[{"title":"Census Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":1242820811.0},{"title":"Library
+  of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14037121543.0},{"title":"Libraries,
+  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":15356147159.0}]'
 title: Information and Statistics
 total_num_agencies: 19
 total_num_applicant_types: 39
 total_num_programs: 54
 total_num_sub_cats: 4
-total_obs: 0.0
+total_obs: 18460628473.0
 ---

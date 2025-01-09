@@ -1,33 +1,38 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":8,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Office
-  of the Director Of National Intelligence","total_num_programs":1,"total_obs":0.0},{"title":"Nuclear
-  Regulatory Commission","total_num_programs":3,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":7,"total_obs":0.0},{"title":"National Endowment
-  for the Humanities","total_num_programs":4,"total_obs":0.0},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":6,"total_obs":0.0},{"title":"Morris
-  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":3,"total_obs":0.0},{"title":"Library
+agencies: '[{"title":"Department of Education","total_num_programs":110,"total_obs":259134474513.65},{"title":"Department
+  of Health and Human Services","total_num_programs":103,"total_obs":23187442804.05},{"title":"Department
+  of Veterans Affairs","total_num_programs":8,"total_obs":10398849840.0},{"title":"National
+  Science Foundation","total_num_programs":7,"total_obs":7992749998.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":3913000000.0},{"title":"Department
+  of the Interior","total_num_programs":38,"total_obs":2286170538.0},{"title":"Department
+  of Energy","total_num_programs":8,"total_obs":1597602650.0},{"title":"Department
+  of Defense","total_num_programs":30,"total_obs":1278023841.0},{"title":"Department
+  of Commerce","total_num_programs":16,"total_obs":896244247.0},{"title":"Department
+  of Agriculture","total_num_programs":38,"total_obs":668033193.0},{"title":"Department
+  of State","total_num_programs":33,"total_obs":621294969.0},{"title":"Department
+  of Transportation","total_num_programs":9,"total_obs":433920208.72},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":317814000.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":6,"total_obs":303675815.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":8,"total_obs":262382877.0},{"title":"Department
+  of Justice","total_num_programs":6,"total_obs":181266905.0},{"title":"Environmental
+  Protection Agency","total_num_programs":9,"total_obs":78908668.0},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":51929612.85},{"title":"National
+  Endowment for the Humanities","total_num_programs":4,"total_obs":40065000.0},{"title":"Agency
+  for International Development","total_num_programs":2,"total_obs":39000000.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"General Services
+  Administration","total_num_programs":3,"total_obs":25022755.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Nuclear
+  Regulatory Commission","total_num_programs":3,"total_obs":18400000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":4,"total_obs":17690876.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":13693672.0},{"title":"Office
+  of the Director Of National Intelligence","total_num_programs":1,"total_obs":4499668.0},{"title":"Barry
+  Goldwater Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":3000000.0},{"title":"Morris
+  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":3,"total_obs":610000.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":100000.0},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
   of Congress","total_num_programs":5,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"General
-  Services Administration","total_num_programs":3,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":38,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":8,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":33,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":6,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":7,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":103,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":8,"total_obs":0.0},{"title":"Department of Education","total_num_programs":110,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":30,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":16,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":38,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":4,"total_obs":0.0},{"title":"Barry
-  Goldwater Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":2,"total_obs":0.0}]'
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":294},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -509,33 +514,33 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/education
-sub_cats: '[{"title":"Educational Equipment and Resources","permalink":"/category/education/educational-equipment-and-resources","total_num_programs":44,"total_obs":0.0},{"title":"Resource
-  Development and Support - Sciences","permalink":"/category/education/resource-development-and-support---sciences","total_num_programs":39,"total_obs":0.0},{"title":"General
-  Research and Evaluation","permalink":"/category/education/general-research-and-evaluation","total_num_programs":67,"total_obs":0.0},{"title":"Elementary
-  and Secondary","permalink":"/category/education/elementary-and-secondary","total_num_programs":84,"total_obs":0.0},{"title":"Resource
-  Development and Support - School Aid","permalink":"/category/education/resource-development-and-support---school-aid","total_num_programs":19,"total_obs":0.0},{"title":"Dental
-  Education and Training","permalink":"/category/education/dental-education-and-training","total_num_programs":25,"total_obs":0.0},{"title":"Resource
-  Development and Support - Land and Equipment","permalink":"/category/education/resource-development-and-support---land-and-equipment","total_num_programs":14,"total_obs":0.0},{"title":"Medical
-  Education and Training","permalink":"/category/education/medical-education-and-training","total_num_programs":33,"total_obs":0.0},{"title":"Libraries
-  and Technical lnformation Services","permalink":"/category/education/libraries-and-technical-lnformation-services","total_num_programs":45,"total_obs":0.0},{"title":"Higher
-  Education - General","permalink":"/category/education/higher-education---general","total_num_programs":162,"total_obs":0.0},{"title":"Indian
-  Education","permalink":"/category/education/indian-education","total_num_programs":60,"total_obs":0.0},{"title":"Health
-  Education and Training","permalink":"/category/education/health-education-and-training","total_num_programs":101,"total_obs":0.0},{"title":"Teacher
-  Training","permalink":"/category/education/teacher-training","total_num_programs":47,"total_obs":0.0},{"title":"Resource
-  Development and Support - Higher Education","permalink":"/category/education/resource-development-and-support---higher-education","total_num_programs":58,"total_obs":0.0},{"title":"Nursing
-  Education","permalink":"/category/education/nursing-education","total_num_programs":32,"total_obs":0.0},{"title":"Resource
-  Development and Support - Student Financial Aid","permalink":"/category/education/resource-development-and-support---student-financial-aid","total_num_programs":24,"total_obs":0.0},{"title":"Nuclear
-  Education and Training","permalink":"/category/education/nuclear-education-and-training","total_num_programs":19,"total_obs":0.0},{"title":"Educational
-  Facilities","permalink":"/category/education/educational-facilities","total_num_programs":35,"total_obs":0.0},{"title":"Special
-  Education","permalink":"/category/education/special-education","total_num_programs":45,"total_obs":0.0},{"title":"Vocational
-  Development","permalink":"/category/education/vocational-development","total_num_programs":49,"total_obs":0.0},{"title":"Resource
-  Development and Support - General and Special Interest Organizations","permalink":"/category/education/resource-development-and-support---general-and-special-interest-organizations","total_num_programs":49,"total_obs":0.0},{"title":"Resource
-  Development and Support - Vocational Education and Handicapped Education","permalink":"/category/education/resource-development-and-support---vocational-education-and-handicapped-education","total_num_programs":33,"total_obs":0.0},{"title":"Resource
-  Development and Support - Elementary, Secondary Education","permalink":"/category/education/resource-development-and-support---elementary--secondary-education","total_num_programs":42,"total_obs":0.0}]'
+sub_cats: '[{"title":"Educational Equipment and Resources","permalink":"/category/education/educational-equipment-and-resources","total_num_programs":44,"total_obs":9039168828.65},{"title":"Resource
+  Development and Support - Sciences","permalink":"/category/education/resource-development-and-support---sciences","total_num_programs":39,"total_obs":9613392843.0},{"title":"General
+  Research and Evaluation","permalink":"/category/education/general-research-and-evaluation","total_num_programs":67,"total_obs":13183532981.0},{"title":"Elementary
+  and Secondary","permalink":"/category/education/elementary-and-secondary","total_num_programs":84,"total_obs":36453478052.0},{"title":"Resource
+  Development and Support - School Aid","permalink":"/category/education/resource-development-and-support---school-aid","total_num_programs":19,"total_obs":3958669157.0},{"title":"Dental
+  Education and Training","permalink":"/category/education/dental-education-and-training","total_num_programs":25,"total_obs":4391850112.3},{"title":"Resource
+  Development and Support - Land and Equipment","permalink":"/category/education/resource-development-and-support---land-and-equipment","total_num_programs":14,"total_obs":3080717208.0},{"title":"Medical
+  Education and Training","permalink":"/category/education/medical-education-and-training","total_num_programs":33,"total_obs":5931738972.72},{"title":"Libraries
+  and Technical lnformation Services","permalink":"/category/education/libraries-and-technical-lnformation-services","total_num_programs":45,"total_obs":17359402841.0},{"title":"Higher
+  Education - General","permalink":"/category/education/higher-education---general","total_num_programs":162,"total_obs":227735947881.65},{"title":"Indian
+  Education","permalink":"/category/education/indian-education","total_num_programs":60,"total_obs":16311066679.0},{"title":"Health
+  Education and Training","permalink":"/category/education/health-education-and-training","total_num_programs":101,"total_obs":10896382901.3},{"title":"Teacher
+  Training","permalink":"/category/education/teacher-training","total_num_programs":47,"total_obs":8735273120.0},{"title":"Resource
+  Development and Support - Higher Education","permalink":"/category/education/resource-development-and-support---higher-education","total_num_programs":58,"total_obs":8305997348.65},{"title":"Nursing
+  Education","permalink":"/category/education/nursing-education","total_num_programs":32,"total_obs":41149192412.05},{"title":"Resource
+  Development and Support - Student Financial Aid","permalink":"/category/education/resource-development-and-support---student-financial-aid","total_num_programs":24,"total_obs":168392484624.0},{"title":"Nuclear
+  Education and Training","permalink":"/category/education/nuclear-education-and-training","total_num_programs":19,"total_obs":3510765510.85},{"title":"Educational
+  Facilities","permalink":"/category/education/educational-facilities","total_num_programs":35,"total_obs":8534091836.65},{"title":"Special
+  Education","permalink":"/category/education/special-education","total_num_programs":45,"total_obs":31435627136.0},{"title":"Vocational
+  Development","permalink":"/category/education/vocational-development","total_num_programs":49,"total_obs":209204175353.65},{"title":"Resource
+  Development and Support - General and Special Interest Organizations","permalink":"/category/education/resource-development-and-support---general-and-special-interest-organizations","total_num_programs":49,"total_obs":17521849245.65},{"title":"Resource
+  Development and Support - Vocational Education and Handicapped Education","permalink":"/category/education/resource-development-and-support---vocational-education-and-handicapped-education","total_num_programs":33,"total_obs":7514901277.0},{"title":"Resource
+  Development and Support - Elementary, Secondary Education","permalink":"/category/education/resource-development-and-support---elementary--secondary-education","total_num_programs":42,"total_obs":8438915890.0}]'
 title: Education
 total_num_agencies: 35
 total_num_applicant_types: 48
 total_num_programs: 482
 total_num_sub_cats: 23
-total_obs: 0.0
+total_obs: 313816866651.27
 ---

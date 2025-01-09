@@ -1,6 +1,7 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Homeland Security","total_num_programs":1,"total_obs":3574570000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":1735109242.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":5},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":5},{"title":"Federally Recognized lndian Tribal
@@ -477,32 +478,32 @@ programs: '[{"cfda":"14.108","permalink":"/program/14.108","title":"Rehabilitati
   Mortgage Insurance","popular_name":"FHA Rehabilitation Mortgage- 203(k)","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.874","permalink":"/program/14.874","title":"Loan
+  of Housing and Urban Development","total_obs":84935898.0,"program_type":"assistance_listing"},{"cfda":"14.874","permalink":"/program/14.874","title":"Loan
   Guarantees for Native Hawaiian Housing ","popular_name":"Section 184A","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.117","permalink":"/program/14.117","title":"Mortgage
+  of Housing and Urban Development","total_obs":3271898.0,"program_type":"assistance_listing"},{"cfda":"14.117","permalink":"/program/14.117","title":"Mortgage
   Insurance Homes","popular_name":"FHA Home Mortgage Insurance- 203(b)","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.022","permalink":"/program/97.022","title":"Flood
-  Insurance","popular_name":null,"agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.169","permalink":"/program/14.169","title":"Housing
+  of Housing and Urban Development","total_obs":225000000.0,"program_type":"assistance_listing"},{"cfda":"97.022","permalink":"/program/97.022","title":"Flood
+  Insurance","popular_name":null,"agency":"Department of Homeland Security","total_obs":3574570000.0,"program_type":"assistance_listing"},{"cfda":"14.169","permalink":"/program/14.169","title":"Housing
   Counseling Assistance Program","popular_name":"Comprehensive Housing Counseling
-  NOFA","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  NOFA","agency":"Department of Housing and Urban Development","total_obs":61000000.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Housing and Urban Development","total_obs":72030085.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.175","permalink":"/program/14.175","title":"Adjustable
   Rate Mortgages","popular_name":"Home Mortgage Insurance- Adjustable Rate Mortgages","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.188","permalink":"/program/14.188","title":"Housing
   Finance Agencies (HFA) Risk Sharing","popular_name":"HFA Risk Sharing Program -
   542(c)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
   Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.183","permalink":"/program/14.183","title":"Home
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":1257621361.0,"program_type":"assistance_listing"},{"cfda":"14.183","permalink":"/program/14.183","title":"Home
   Equity Conversion Mortgages","popular_name":"Reverse Mortgage Insurance","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
+  of Housing and Urban Development","total_obs":26250000.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Housing and Urban Development","total_obs":5000000.0,"program_type":"assistance_listing"}]'
 title: Property and Mortgage Insurance
 total_num_agencies: 3
 total_num_applicant_types: 33
 total_num_programs: 14
-total_obs: 0.0
+total_obs: 5309679242.0
 ---

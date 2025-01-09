@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":2,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":10,"total_obs":161022316034.79},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":70952933.0},{"title":"Small Business
+  Administration","total_num_programs":2,"total_obs":18681205.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":200000.0},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":10,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+  Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":7},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":7},{"title":"Specialized group (e.g. health professionals,
@@ -482,26 +483,26 @@ parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/disabled-veterans
 programs: '[{"cfda":"64.126","permalink":"/program/64.126","title":"Native American
   Veteran Direct Loan Program","popular_name":"(VA Native American Veterans Housing
-  Loan Program)","agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Loan Program)","agency":"Department of Veterans Affairs","total_obs":9108140.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.044","permalink":"/program/59.044","title":"Veterans
   Outreach Program","popular_name":"Veterans Business Outreach Center Program (VBOC)","agency":"Small
-  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.020","permalink":"/program/96.020","title":"Special
+  Business Administration","total_obs":13220000.0,"program_type":"assistance_listing"},{"cfda":"96.020","permalink":"/program/96.020","title":"Special
   Benefits for Certain World War II Veterans","popular_name":"(Special Veterans Benefits;
-  SVB)","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.109","permalink":"/program/64.109","title":"Veterans
+  SVB)","agency":"Social Security Administration","total_obs":200000.0,"program_type":"assistance_listing"},{"cfda":"64.109","permalink":"/program/64.109","title":"Veterans
   Compensation for Service-Connected Disability","popular_name":"(Compensation)","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
+  of Veterans Affairs","total_obs":157593195000.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
   Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
-  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
+  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
   Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  of Defense","total_obs":70952933.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
+  of Veterans Affairs","total_obs":52500000.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
   State Domiciliary Care","popular_name":"Veterans State Home Domiciliary Care","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.118","permalink":"/program/64.118","title":"Veterans
+  of Veterans Affairs","total_obs":48716625.0,"program_type":"assistance_listing"},{"cfda":"64.118","permalink":"/program/64.118","title":"Veterans
   Housing Direct Loans for Certain Disabled Veterans","popular_name":null,"agency":"Department
   of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
@@ -510,21 +511,21 @@ programs: '[{"cfda":"64.126","permalink":"/program/64.126","title":"Native Ameri
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.106","permalink":"/program/64.106","title":"Specially
   Adapted Housing for Disabled Veterans","popular_name":"Specially Adapted Housing","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.234","permalink":"/program/93.234","title":"Traumatic
+  of Veterans Affairs","total_obs":147290170.0,"program_type":"assistance_listing"},{"cfda":"93.234","permalink":"/program/93.234","title":"Traumatic
   Brain Injury State Demonstration Grant Program","popular_name":"TBI State Partnership
   Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.066","permalink":"/program/59.066","title":"Transition
   Assistance \u2013 Entrepreneurship Track (Boots to Business)","popular_name":"Boots
-  to Business (B2B)","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.116","permalink":"/program/64.116","title":"Veteran
+  to Business (B2B)","agency":"Small Business Administration","total_obs":5461205.0,"program_type":"assistance_listing"},{"cfda":"64.116","permalink":"/program/64.116","title":"Veteran
   Readiness and Employment","popular_name":"(Vocational Rehabilitation; Veteran Readiness
-  & Employment; VR&E)","agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.104","permalink":"/program/64.104","title":"Pension
+  & Employment; VR&E)","agency":"Department of Veterans Affairs","total_obs":1005242595.7900001,"program_type":"assistance_listing"},{"cfda":"64.104","permalink":"/program/64.104","title":"Pension
   for Non-Service-Connected Disability for Veterans","popular_name":"(Pension)","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Veterans Affairs","total_obs":1996374504.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.100","permalink":"/program/64.100","title":"Automobiles
   and Adaptive Equipment for Certain Disabled Veterans and Members of the Armed Forces","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Veterans Affairs","total_obs":143089000.0,"program_type":"assistance_listing"}]'
 title: Disabled Veterans
 total_num_agencies: 8
 total_num_applicant_types: 37
 total_num_programs: 20
-total_obs: 0.0
+total_obs: 161112150172.79
 ---

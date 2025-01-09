@@ -1,8 +1,9 @@
 ---
-agencies: '[{"title":"Equal Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":6,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Justice","total_num_programs":6,"total_obs":111005382.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":13275048.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":5999999.0},{"title":"Equal Employment
+  Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":8},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":7},{"title":"Local (includes
@@ -477,22 +478,22 @@ parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
 programs: '[{"cfda":"16.830","permalink":"/program/16.830","title":"Girls in the Juvenile
   Justice System ","popular_name":"Delinquent Girls program, Girls in the Juvenile
-  Justice system","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
+  Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
   Discrimination Private Bar Program","popular_name":"Employment Discrimination \u2013
   Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
   of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
+  of State","total_obs":4999999.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
+  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
   Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
   Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
   Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
   of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
   Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"}]'
@@ -500,5 +501,5 @@ title: Legal Services - Employment Rights
 total_num_agencies: 5
 total_num_applicant_types: 29
 total_num_programs: 12
-total_obs: 0.0
+total_obs: 130280429.0
 ---

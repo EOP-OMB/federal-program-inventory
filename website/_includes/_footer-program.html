@@ -16,6 +16,7 @@
   {% endif %}
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
+  const isInterestProgram = "{{ page.program_type }}" === "interest";
   const isOtherProgram = !isAssistanceListing;
   const hasOtherProgramExpenditure = otherSpendingJson && otherSpendingJson.length > 0;
   const hasObligations = obligationsJson && obligationsJson.length > 0;
@@ -107,10 +108,7 @@
 
     // Y scale
     const maxValue = d3.max(obligations, (d) =>
-      Math.max(
-        d.sam_actual || 0,
-        d.usa_spending_actual || 0
-      )
+      Math.max(d.sam_actual || 0, d.usa_spending_actual || 0)
     );
 
     const yScale = d3
@@ -126,14 +124,72 @@
     const fontSize = Math.max(10, Math.min(12, width / 50));
     const legendFontSize = Math.max(10, Math.min(14, width / 45));
 
-    // Create axes with responsive formatting
+    // Function to add bars with specific color and data
+    function addBars(selection, d) {
+      const bars = [];
+      if (d.sam_actual > 0)
+        bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
+      if (d.usa_spending_actual > 0)
+        bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
+
+      // Create xBarScale based on actual number of bars
+      const xBarScale = d3
+        .scaleBand()
+        .domain(d3.range(Math.max(2, bars.length))) // Always allocate space for at least 2 bars
+        .range([0, xScale.bandwidth()])
+        .padding(0.1);
+
+      selection
+        .selectAll("rect")
+        .data(bars)
+        .enter()
+        .append("rect")
+        .attr("x", (d, i) => {
+          // Center single bar
+          if (bars.length === 1) {
+            return xBarScale(0) + xBarScale.bandwidth() * 1.5;
+          }
+          return xBarScale(i);
+        })
+        .attr("y", (d) => yScale(d.value))
+        .attr("width", xBarScale.bandwidth())
+        .attr("height", (d) => innerHeight - yScale(d.value))
+        .attr("fill", (d) => d.color)
+        .on("mouseover", function (event, d) {
+          const tooltip = d3
+            .select("body")
+            .selectAll(".tooltip")
+            .data([null])
+            .join("div")
+            .attr("class", "tooltip")
+            .style("position", "absolute")
+            .style("background", "white")
+            .style("padding", "8px")
+            .style("border", "1px solid #ddd")
+            .style("border-radius", "4px")
+            .style("pointer-events", "none")
+            .style("font-size", `${fontSize}px`);
+
+          tooltip
+            .style("opacity", 1)
+            .html(formatObligations(d.value))
+            .style("left", `${event.pageX + 10}px`)
+            .style("top", `${event.pageY - 28}px`);
+
+          d3.select(this).attr("fill", d3.color(d.color).darker(0.2));
+        })
+        .on("mouseout", function (event, d) {
+          d3.selectAll(".tooltip").remove();
+          d3.select(this).attr("fill", d.color);
+        });
+    }
+
+    // Add axes with styled text
     const xAxis = d3.axisBottom(xScale);
     const yAxis = d3
       .axisLeft(yScale)
       .ticks(5)
-      .tickFormat((d) => {
-        return formatAxisValues(d, divisor, suffix);
-      });
+      .tickFormat((d) => formatAxisValues(d, divisor, suffix));
 
     // Add axes with styled text
     svg
@@ -156,70 +212,11 @@
       .enter()
       .append("g")
       .attr("class", "year-group")
-      .attr("transform", (d) => `translate(${xScale(d.x)},0)`);
-
-    // Function to add bars with specific color and data
-    function addBars(selection, value, index, color, totalBars) {
-      if (value > 0) {
-        const xBarScale = d3
-          .scaleBand()
-          .domain(d3.range(totalBars))
-          .range([0, xScale.bandwidth()])
-          .padding(0.1);
-
-        selection
-          .append("rect")
-          .attr("x", xBarScale(index))
-          .attr("y", (d) => yScale(value))
-          .attr("width", xBarScale.bandwidth())
-          .attr("height", (d) => innerHeight - yScale(value))
-          .attr("fill", color)
-          .on("mouseover", function (event, d) {
-            const tooltip = d3
-              .select("body")
-              .selectAll(".tooltip")
-              .data([null])
-              .join("div")
-              .attr("class", "tooltip")
-              .style("position", "absolute")
-              .style("background", "white")
-              .style("padding", "8px")
-              .style("border", "1px solid #ddd")
-              .style("border-radius", "4px")
-              .style("pointer-events", "none")
-              .style("font-size", `${fontSize}px`);
-
-            tooltip
-              .style("opacity", 1)
-              .html(formatObligations(value))
-              .style("left", `${event.pageX + 10}px`)
-              .style("top", `${event.pageY - 28}px`);
-
-            d3.select(this).attr("fill", d3.color(color).darker(0.2));
-          })
-          .on("mouseout", function () {
-            d3.select("body").selectAll(".tooltip").remove();
-            d3.select(this).attr("fill", color);
-          });
-      }
-    }
-
-    // Add bars for each year group
-    yearGroups.each(function (d) {
-      const group = d3.select(this);
-      const bars = [];
-
-      if (d.sam_actual > 0)
-        bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
-      if (d.usa_spending_actual > 0)
-        bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
-
-      bars.forEach((bar, i) => {
-        addBars(group, bar.value, i, bar.color, bars.length);
+      .attr("transform", (d) => `translate(${xScale(d.x)},0)`)
+      .each(function (d) {
+        addBars(d3.select(this), d);
       });
-    });
 
-    // Add legend
     // Add legend
     const legendData = [
       { label: "SAM.gov", color: "rgb(250, 146, 65)" },
@@ -644,9 +641,15 @@
           .style("pointer-events", "none")
           .style("font-size", `${fontSize}px`);
 
+        let tooltipContent = formatObligations(value);
+        if ("{{ page.program_type }}" === "tax_expenditure") {
+          const totalValue = d.data.Outlays + d.data["Revenue losses"];
+          tooltipContent += ` of ${formatObligations(totalValue)}`;
+        }
+
         tooltip
           .style("opacity", 1)
-          .html(formatObligations(value))
+          .html(tooltipContent)
           .style("left", `${event.pageX + 10}px`)
           .style("top", `${event.pageY - 28}px`);
 
@@ -661,10 +664,14 @@
       });
 
     // Add legend
-    const legendData = [
-      { label: "Outlays", color: colors["Outlays"] },
-      { label: "Revenue losses", color: colors["Revenue losses"] },
-    ];
+    const legendData = [];
+    legendData.push({ label: "Outlays", color: colors["Outlays"] });
+    if ("{{ page.program_type }}" !== "interest") {
+      legendData.push({
+        label: "Revenue losses",
+        color: colors["Revenue losses"],
+      });
+    }
 
     const itemSpacing = 180;
     const legendY = innerHeight + 40;
@@ -849,6 +856,22 @@
     return csvContent;
   }
 
+
+  function formatInterestOutlaysForCSV(data) {
+    const headers = ["Fiscal Year", "Outlays"];
+    let csvContent = headers.join(",") + "\n";
+
+    data.forEach((row) => {
+      const formattedRow = [
+        `"${row.x}"`,
+        `"${formatCurrency(row.outlays || 0)}"`,
+      ];
+      csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+  }
+
   function downloadCSV(filename, csvData) {
     const blob = new Blob([csvData], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
@@ -938,10 +961,17 @@
         let data, filename, csvContent;
 
         if (isOtherProgram && hasOtherProgramExpenditure) {
-          // Handle tax expenditure data
+          // Handle tax expenditure and interest data
           data = otherSpendingJson;
-          filename = "program-tax-expenditures.csv";
-          csvContent = formatTaxExpendituresForCSV(data);
+          if (isInterestProgram){
+            filename="program-interest-outlays.csv"
+            csvContent = formatInterestOutlaysForCSV(data);
+          } else{
+            filename = "program-tax-expenditures.csv";
+            csvContent = formatTaxExpendituresForCSV(data);
+          }
+          
+          
         } else {
           // Handle assistance listing data
           const isOutlaysVisible =

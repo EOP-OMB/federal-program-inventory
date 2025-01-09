@@ -646,17 +646,12 @@
   }
 
   function updateSortButtons() {
-    const sortButtons = document.querySelectorAll(
-      ".grid-col.display-flex.flex-justify-end .usa-button"
-    );
+    const expenditureButton = document.getElementById('expenditureSort');
+    const programNameButton = document.getElementById('programNameSort');
 
-    sortButtons.forEach((button) => {
-      const buttonText = button.textContent.trim().toLowerCase();
-      const isCurrentSort =
-        (buttonText === "program name" && currentSort.field === "title") ||
-        buttonText === currentSort.field;
-      button.classList.toggle("usa-button--outline", !isCurrentSort);
-    });
+    const isExpenditure = currentSort.field === 'obligations';
+    expenditureButton.classList.toggle('usa-button--outline', !isExpenditure);
+    programNameButton.classList.toggle('usa-button--outline', isExpenditure);
   }
 
   // Function to get correct sort field
@@ -1380,56 +1375,38 @@
   }
 
   function initializeSortButtons() {
-    const sortButtons = document.querySelectorAll(
-      ".grid-col.display-flex.flex-justify-end .usa-button"
-    );
+  const expenditureButton = document.getElementById('expenditureSort');
+  const programNameButton = document.getElementById('programNameSort');
 
-    // Set initial button states
-    sortButtons.forEach((button) => {
-      const buttonText = button.textContent.trim().toLowerCase();
-      if (buttonText === "obligations") {
-        button.classList.remove("usa-button--outline");
-      } else {
-        button.classList.add("usa-button--outline");
-      }
+  // Set initial state - expenditure sort is default
+  expenditureButton.classList.remove('usa-button--outline');
+  programNameButton.classList.add('usa-button--outline');
+
+  [expenditureButton, programNameButton].forEach(button => {
+    button.addEventListener('click', async () => {
+      
+      const isExpenditure = button.id === 'expenditureSort';
+      const sortField = isExpenditure ? 'obligations' : 'title';
+
+      // Update button styles
+      expenditureButton.classList.toggle('usa-button--outline', !isExpenditure);
+      programNameButton.classList.toggle('usa-button--outline', isExpenditure);
+
+      // Update sort state
+      currentSort = {
+        field: sortField,
+        order: sortField === currentSort.field 
+          ? (currentSort.order === 'asc' ? 'desc' : 'asc')
+          : (isExpenditure ? 'desc' : 'asc')
+      };
+
+      currentPage = 1;
+      encodeFiltersToUrl();
+      await fetchProgramsData();
+      updateClearFilterButton();
     });
-
-    sortButtons.forEach((button) => {
-      button.addEventListener("click", async function () {
-        // Remove outline class from all buttons
-        sortButtons.forEach((btn) => {
-          btn.classList.add("usa-button--outline");
-        });
-
-        // Remove outline class from clicked button
-        this.classList.remove("usa-button--outline");
-
-        // Determine which sort field to use based on button text
-        const buttonText = this.textContent.trim().toLowerCase();
-        const sortField =
-          buttonText === "obligations" ? "obligations" : "title";
-
-        // Toggle sort order if clicking the same field
-        if (currentSort.field === sortField) {
-          currentSort.order = currentSort.order === "asc" ? "desc" : "asc";
-        } else {
-          // Set new sort field and default order based on field type
-          currentSort.field = sortField;
-          currentSort.order = sortField === "obligations" ? "desc" : "asc";
-        }
-
-        // Reset to first page when sorting
-        currentPage = 1;
-
-        // Update URL and fetch data
-        encodeFiltersToUrl();
-        await fetchProgramsData();
-
-        // Update clear filters button
-        updateClearFilterButton();
-      });
-    });
-  }
+  });
+}
 
   function initializeClearFiltersButton() {
     const clearFiltersBtn = document.querySelector(
@@ -1471,18 +1448,12 @@
     // Reset sort to default
     currentSort = { field: "obligations", order: "desc" };
 
-    // Reset sort button UI
-    const sortButtons = document.querySelectorAll(
-      ".grid-col.display-flex.flex-justify-end .usa-button"
-    );
-    sortButtons.forEach((button) => {
-      const buttonText = button.textContent.trim().toLowerCase();
-      if (buttonText === "obligations") {
-        button.classList.remove("usa-button--outline");
-      } else {
-        button.classList.add("usa-button--outline");
-      }
-    });
+    // Update sort button UI using IDs instead of text content
+    const expenditureButton = document.getElementById('expenditureSort');
+    const programNameButton = document.getElementById('programNameSort');
+    
+    expenditureButton.classList.remove('usa-button--outline');
+    programNameButton.classList.add('usa-button--outline');
 
     window.history.pushState({}, "", window.location.pathname);
     // Re-fetch data with cleared filters and default sort

@@ -1,6 +1,6 @@
 ---
-agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
-  Subcommittee","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Agriculture","total_num_programs":2,"total_obs":34904000.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":1,"total_obs":250000.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Nonprofit
@@ -465,13 +465,13 @@ permalink: /category/consumer-protection/complaint-investigation
 programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
   Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
   Support and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
+  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":250000.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
   Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.165","permalink":"/program/10.165","title":"Perishable
-  Agricultural Commodities Act","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Agriculture","total_obs":23700000.0,"program_type":"assistance_listing"},{"cfda":"10.165","permalink":"/program/10.165","title":"Perishable
+  Agricultural Commodities Act","popular_name":null,"agency":"Department of Agriculture","total_obs":11204000.0,"program_type":"assistance_listing"}]'
 title: Complaint Investigation
 total_num_agencies: 3
 total_num_applicant_types: 8
 total_num_programs: 4
-total_obs: 0.0
+total_obs: 35154000.0
 ---
