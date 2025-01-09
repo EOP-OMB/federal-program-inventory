@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":3,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,"total_obs":2977000000.0},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":719312473.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":3,"total_obs":165359370.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":46912916.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":1,"total_obs":30014398.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":70000.0},{"title":"Department of
+  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
   and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
@@ -490,42 +491,42 @@ parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---school-aid
 programs: '[{"cfda":"43.007","permalink":"/program/43.007","title":"Space Operations","popular_name":"Space
-  Operations","agency":"National Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  Operations","agency":"National Aeronautics and Space Administration","total_obs":52750522.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
   Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska
-  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":43668905.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
   Support","popular_name":"Safety, Security and Mission Services (Mission Support
-  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.558","permalink":"/program/12.558","title":"Department
+  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":13777683.0,"program_type":"assistance_listing"},{"cfda":"12.558","permalink":"/program/12.558","title":"Department
   of Defense Impact Aid (Supplement, CWSD, BRAC)","popular_name":"DoD Impact Aid Program","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  of Defense","total_obs":70000.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
   of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.358","permalink":"/program/84.358","title":"Rural
-  Education","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining
+  and Space Administration","total_obs":98831165.0,"program_type":"assistance_listing"},{"cfda":"84.358","permalink":"/program/84.358","title":"Rural
+  Education","popular_name":null,"agency":"Department of Education","total_obs":220081080.0,"program_type":"assistance_listing"},{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining
   Early Awareness and Readiness for Undergraduate Programs","popular_name":"(GEAR-UP)","agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  of Education","total_obs":395396439.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.217","permalink":"/program/84.217","title":"TRIO
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"84.217","permalink":"/program/84.217","title":"TRIO
   McNair Post-Baccalaureate Achievement","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  of Education","total_obs":60166049.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"}]'
 title: Resource Development and Support - School Aid
 total_num_agencies: 11
 total_num_applicant_types: 45
 total_num_programs: 19
-total_obs: 0.0
+total_obs: 3958669157.0
 ---

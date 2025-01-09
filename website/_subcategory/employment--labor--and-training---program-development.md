@@ -1,11 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of State","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Labor","total_num_programs":12,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Department of Labor","total_num_programs":12,"total_obs":3474799100.0},{"title":"Department
+  of Education","total_num_programs":4,"total_obs":750063606.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":504067331.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":251840523.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":89000000.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":50000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":46311515.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
   and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
@@ -485,7 +488,7 @@ parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/program-development
 programs: '[{"cfda":"93.612","permalink":"/program/93.612","title":"Native American
   Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
+  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
   Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
   Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
   Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
@@ -495,71 +498,71 @@ programs: '[{"cfda":"93.612","permalink":"/program/93.612","title":"Native Ameri
   and Foreign Commercial Service Pilot Fellowship Program","popular_name":"US&FCS
   Pilot Fellowship","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
   Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
+  of Commerce","total_obs":144742325.0,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
   Dislocated Worker National Reserve Technical Assistance and Training","popular_name":null,"agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.264","permalink":"/program/17.264","title":"National
-  Farmworker Jobs Program","popular_name":"NFJP","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  of Labor","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"17.264","permalink":"/program/17.264","title":"National
+  Farmworker Jobs Program","popular_name":"NFJP","agency":"Department of Labor","total_obs":98000000.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":83000000.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.277","permalink":"/program/17.277","title":"WIOA
   National Dislocated Worker Grants / WIA National Emergency Grants","popular_name":"National
-  Dislocated Worker Grants","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Dislocated Worker Grants","agency":"Department of Labor","total_obs":176000000.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.265","permalink":"/program/17.265","title":"Native
+  of Commerce","total_obs":345589964.0,"program_type":"assistance_listing"},{"cfda":"17.265","permalink":"/program/17.265","title":"Native
   American Employment and Training","popular_name":"WIOA, Section 166, Native American
-  Employment and Training Program","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Employment and Training Program","agency":"Department of Labor","total_obs":57000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
-  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":12640729.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
+  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":1094313.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
   in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
-  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
-  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.258","permalink":"/program/17.258","title":"WIOA
+  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
+  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"17.258","permalink":"/program/17.258","title":"WIOA
   Adult Program","popular_name":"Workforce Innovation and Opportunity Act (WIOA),
-  Adult Programs","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  Adult Programs","agency":"Department of Labor","total_obs":879000000.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.280","permalink":"/program/17.280","title":"WIOA
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"17.280","permalink":"/program/17.280","title":"WIOA
   Dislocated Worker National Reserve Demonstration Grants","popular_name":"Workforce
   Innovation and Opportunity Act (WIOA) Dislocated Worker National Reserve Demonstration
-  Grants","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Grants","agency":"Department of Labor","total_obs":33000000.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
   Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
   Education - Basic Grants to States","popular_name":null,"agency":"Department of
-  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.278","permalink":"/program/17.278","title":"WIOA
+  Education","total_obs":715455000.0,"program_type":"assistance_listing"},{"cfda":"17.278","permalink":"/program/17.278","title":"WIOA
   Dislocated Worker Formula Grants","popular_name":"Workforce Innovation and Opportunity
-  Act (WIOA) Dislocated Worker Program","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
-  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  Act (WIOA) Dislocated Worker Program","agency":"Department of Labor","total_obs":1091000000.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
+  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":308000.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
   Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
+  of Defense","total_obs":251840523.0,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
   Data Quality Initiative (WDQI)","popular_name":"Workforce Data Quality Initiative
-  (WDQI)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.603","permalink":"/program/16.603","title":"Corrections
+  (WDQI)","agency":"Department of Labor","total_obs":5862000.0,"program_type":"assistance_listing"},{"cfda":"16.603","permalink":"/program/16.603","title":"Corrections
   Technical Assistance/Clearinghouse","popular_name":null,"agency":"Department of
   Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
   and Technical Education -- National Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  of Education","total_obs":33757415.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
   Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.259","permalink":"/program/17.259","title":"WIOA
-  Youth Activities","popular_name":"WIOA Formula Youth","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
+  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"17.259","permalink":"/program/17.259","title":"WIOA
+  Youth Activities","popular_name":"WIOA Formula Youth","agency":"Department of Labor","total_obs":926000000.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Program Development
 total_num_agencies: 13
 total_num_applicant_types: 39
 total_num_programs: 39
-total_obs: 0.0
+total_obs: 5217082075.0
 ---

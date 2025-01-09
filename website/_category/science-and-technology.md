@@ -1,23 +1,28 @@
 ---
-agencies: '[{"title":"U.S. Election Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":2,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Nuclear
-  Regulatory Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Science Foundation","total_num_programs":11,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":7,"total_obs":0.0},{"title":"Executive
-  Office of the President","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":9,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":14,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":9,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":19,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":8,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":20,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":41,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":20,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"National Science Foundation","total_num_programs":11,"total_obs":10410309998.0},{"title":"Department
+  of Defense","total_num_programs":20,"total_obs":4760655526.87},{"title":"Department
+  of Health and Human Services","total_num_programs":19,"total_obs":2743108807.0},{"title":"Department
+  of Commerce","total_num_programs":41,"total_obs":2613728328.87},{"title":"Department
+  of Energy","total_num_programs":8,"total_obs":1813273409.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":7,"total_obs":1183282578.0},{"title":"Environmental
+  Protection Agency","total_num_programs":9,"total_obs":1160058166.0},{"title":"Department
+  of Agriculture","total_num_programs":20,"total_obs":525504407.0},{"title":"Department
+  of the Interior","total_num_programs":14,"total_obs":196084187.0},{"title":"Department
+  of State","total_num_programs":9,"total_obs":127928997.0},{"title":"U.S. Election
+  Assistance Commission","total_num_programs":2,"total_obs":55000000.0},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":54395241.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":2,"total_obs":53700517.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":50094675.0},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":42434913.85},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":31969215.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":10000000.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":8188113.0},{"title":"Executive Office
+  of the President","total_num_programs":1,"total_obs":2349801.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":399735.0},{"title":"Nuclear
+  Regulatory Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
+  and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":138},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -495,13 +500,13 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/science-and-technology
-sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":0.0},{"title":"Information
-  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":0.0},{"title":"Research
-  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":0.0}]'
+sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":15333974519.93},{"title":"Information
+  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":8647660294.93},{"title":"Research
+  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":21412685181.59}]'
 title: Science and Technology
 total_num_agencies: 24
 total_num_applicant_types: 42
 total_num_programs: 179
 total_num_sub_cats: 3
-total_obs: 0.0
+total_obs: 25862466615.59
 ---

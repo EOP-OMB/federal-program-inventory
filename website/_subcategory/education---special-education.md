@@ -1,16 +1,16 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":1,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":5,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":21,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Education","total_num_programs":21,"total_obs":15964276773.0},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":12144413680.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":2977000000.0},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":5,"total_obs":237083372.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":46912916.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":1,"total_obs":30014398.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":13275048.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":2635952.0},{"title":"Department of
+  the Interior","total_num_programs":1,"total_obs":14997.0},{"title":"Department of
+  the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of State","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":28},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":26},{"title":"Local
@@ -492,29 +492,29 @@ parent_title: Education
 permalink: /category/education/special-education
 programs: '[{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps Volunteers
   In Service to America 94.013","popular_name":"94.013 Volunteers In Service To America","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
   for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.373","permalink":"/program/84.373","title":"Special
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"84.373","permalink":"/program/84.373","title":"Special
   Education Technical Assistance on State Data Collection","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  of Education","total_obs":26700000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.129","permalink":"/program/84.129","title":"Rehabilitation
-  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.042","permalink":"/program/84.042","title":"TRIO
-  Student Support Services","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.426","permalink":"/program/84.426","title":"Randolph-Sheppard
+  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":14583184.0,"program_type":"assistance_listing"},{"cfda":"84.042","permalink":"/program/84.042","title":"TRIO
+  Student Support Services","popular_name":null,"agency":"Department of Education","total_obs":366073969.0,"program_type":"assistance_listing"},{"cfda":"84.426","permalink":"/program/84.426","title":"Randolph-Sheppard
   \u2013 Financial Relief and Restoration Payments","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.160","permalink":"/program/84.160","title":"Training
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"84.160","permalink":"/program/84.160","title":"Training
   Interpreters for Individuals who are Deaf and Individuals who are Deaf-Blind","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.632","permalink":"/program/93.632","title":"University
+  of Education","total_obs":2935390.0,"program_type":"assistance_listing"},{"cfda":"93.632","permalink":"/program/93.632","title":"University
   Centers for Excellence in Developmental Disabilities Education, Research, and Service","popular_name":"(University
   Centers (UCEDD))","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
   Support","popular_name":"Safety, Security and Mission Services (Mission Support
-  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.181","permalink":"/program/84.181","title":"Special
+  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":13777683.0,"program_type":"assistance_listing"},{"cfda":"84.181","permalink":"/program/84.181","title":"Special
   Education-Grants for Infants and Families","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  of Education","total_obs":540000000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
@@ -522,36 +522,36 @@ programs: '[{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps V
   cultural/educational/alumni/information and media efforts in the Middle East and
   North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.407","permalink":"/program/84.407","title":"Transition
   Programs for Students with Intellectual Disabilities into Higher Education","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
-  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  of Education","total_obs":13772400.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
+  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
   Education - State Personnel Development","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  of Education","total_obs":38630000.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
   Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
+  of Education","total_obs":31138000.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
   Systems Development Mission Directorate (ESDMD)","agency":"National Aeronautics
-  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.324","permalink":"/program/84.324","title":"Research
-  in Special Education","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
+  and Space Administration","total_obs":15012173.0,"program_type":"assistance_listing"},{"cfda":"84.324","permalink":"/program/84.324","title":"Research
+  in Special Education","popular_name":null,"agency":"Department of Education","total_obs":69892853.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
   Training Technical Assistance Centers","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  of Education","total_obs":6689120.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
   Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.328","permalink":"/program/84.328","title":"Special
   Education Parent Information Centers","popular_name":null,"agency":"Department of
-  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Education","total_obs":33152000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.550","permalink":"/program/15.550","title":"FISH-ABLE
   Fun with Reclamation","popular_name":"Fish-ABLE Fun with Reclamation","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.240","permalink":"/program/84.240","title":"Program
+  of the Interior","total_obs":14997.0,"program_type":"assistance_listing"},{"cfda":"84.240","permalink":"/program/84.240","title":"Program
   of Protection and Advocacy of Individual Rights","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  of Education","total_obs":20150000.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.173","permalink":"/program/84.173","title":"Special
-  Education Preschool Grants","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
-  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"84.173","permalink":"/program/84.173","title":"Special
+  Education Preschool Grants","popular_name":null,"agency":"Department of Education","total_obs":420000000.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
+  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":308000.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
   of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.618","permalink":"/program/93.618","title":"Voting
+  and Space Administration","total_obs":98831165.0,"program_type":"assistance_listing"},{"cfda":"93.618","permalink":"/program/93.618","title":"Voting
   Access for Individuals with Disabilities-Grants for Protection and Advocacy Systems","popular_name":"PAVA","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
@@ -559,21 +559,21 @@ programs: '[{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps V
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.816","permalink":"/program/16.816","title":"John
   R.  Justice Prosecutors and Defenders Incentive Act","popular_name":"JRJ Grant Program","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
+  of Justice","total_obs":2635952.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
   Education - Personnel Development to Improve Services and Results for Children with
-  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":115000000.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
+  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.027","permalink":"/program/84.027","title":"Special
-  Education Grants to States","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.027","permalink":"/program/84.027","title":"Special
+  Education Grants to States","popular_name":null,"agency":"Department of Education","total_obs":14213704000.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
   Education Technical Assistance and Dissemination to Improve Services and Results
-  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
+  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":39345000.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
   Operations","popular_name":"Space Operations","agency":"National Aeronautics and
-  Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.329","permalink":"/program/84.329","title":"Special
-  Education Studies and Evaluations","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Space Administration","total_obs":52750522.0,"program_type":"assistance_listing"},{"cfda":"84.329","permalink":"/program/84.329","title":"Special
+  Education Studies and Evaluations","popular_name":null,"agency":"Department of Education","total_obs":11659666.0,"program_type":"assistance_listing"}]'
 title: Special Education
 total_num_agencies: 14
 total_num_applicant_types: 45
 total_num_programs: 45
-total_obs: 0.0
+total_obs: 31435627136.0
 ---

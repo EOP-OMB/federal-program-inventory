@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_obs":1224448195.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":18051147.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":321469.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":2},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
@@ -471,14 +471,14 @@ permalink: /category/information-and-statistics/census-data
 programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
   Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
   for Adam Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  of Justice","total_obs":18051147.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical,
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical,
   Research, and Methodology  Assistance","popular_name":null,"agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Commerce","total_obs":321469.0,"program_type":"assistance_listing"}]'
 title: Census Data
 total_num_agencies: 4
 total_num_applicant_types: 17
 total_num_programs: 4
-total_obs: 0.0
+total_obs: 1242820811.0
 ---

@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Housing and
-  Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":6,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Energy","total_num_programs":6,"total_obs":18427193533.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":1238541722.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":1107910103.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":251840523.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":19749999.0},{"title":"Department of
+  Housing and Urban Development","total_num_programs":1,"total_obs":7000000.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":6666870.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":12},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":12},{"title":"Local
@@ -481,47 +482,47 @@ parent_title: Energy
 permalink: /category/energy/specialized-technical-services
 programs: '[{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy Program
   for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program (9005)","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
+  of Agriculture","total_obs":6666870.0,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
   Infrastructure Deployment and Resilience","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.122","permalink":"/program/81.122","title":"Electricity
+  of Energy","total_obs":4316336000.0,"program_type":"assistance_listing"},{"cfda":"81.122","permalink":"/program/81.122","title":"Electricity
   Research, Development and Analysis","popular_name":null,"agency":"Department of
-  Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Energy","total_obs":52692461.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
   Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.008","permalink":"/program/81.008","title":"Cybersecurity,
+  Protection Agency","total_obs":140325127.0,"program_type":"assistance_listing"},{"cfda":"81.008","permalink":"/program/81.008","title":"Cybersecurity,
   Energy Security & Emergency Response (CESER)","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
+  of Energy","total_obs":80055479.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
   of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":"OTT","agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  of Energy","total_obs":106865747.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
   Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Protection Agency","total_obs":28363597.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.027","permalink":"/program/19.027","title":"Energy
   Governance and Reform Programs","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.041","permalink":"/program/81.041","title":"State
-  Energy Program","popular_name":"SEP","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.901","permalink":"/program/14.901","title":"Healthy
+  of Defense","total_obs":251840523.0,"program_type":"assistance_listing"},{"cfda":"81.041","permalink":"/program/81.041","title":"State
+  Energy Program","popular_name":"SEP","agency":"Department of Energy","total_obs":2768018463.0,"program_type":"assistance_listing"},{"cfda":"14.901","permalink":"/program/14.901","title":"Healthy
   Homes Weatherization Cooperation Demonstration Grants","popular_name":"Healthy Homes
   and Weatherization Cooperation Demonstration Grants, Radon Testing and Mitigation
   Demonstration in Public Housing Grants","agency":"Department of Housing and Urban
-  Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
+  Development","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
   School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
+  Protection Agency","total_obs":939221379.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
   Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of the Interior","total_obs":14093527.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.126","permalink":"/program/81.126","title":"Federal
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"81.126","permalink":"/program/81.126","title":"Federal
   Loan Guarantees for Innovative Energy Technologies","popular_name":"Loan Programs
-  Office ","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Office ","agency":"Department of Energy","total_obs":11103225383.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Specialized Technical Services
 total_num_agencies: 9
 total_num_applicant_types: 36
 total_num_programs: 19
-total_obs: 0.0
+total_obs: 21078902750.0
 ---

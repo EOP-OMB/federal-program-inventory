@@ -17,8 +17,7 @@
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
   const isOtherProgram = !isAssistanceListing;
-  const hasOtherProgramExpenditure =
-    otherSpendingJson && otherSpendingJson.length > 0;
+  const hasOtherProgramExpenditure = otherSpendingJson && otherSpendingJson.length > 0;
   const hasObligations = obligationsJson && obligationsJson.length > 0;
   const hasOutlays = outlaysJson && outlaysJson.length > 0;
   function getYearBars(yearData) {
@@ -28,13 +27,6 @@
         type: "actual",
         value: yearData.sam_actual,
         color: "rgb(255, 127, 42)",
-      });
-    }
-    if (yearData.sam_estimate > 0) {
-      bars.push({
-        type: "estimate",
-        value: yearData.sam_estimate,
-        color: "rgb(41, 171, 226)",
       });
     }
     if (yearData.usa_spending_actual > 0) {
@@ -64,18 +56,26 @@
     obligationsJson,
     { container = "#obligationsChart" } = {}
   ) {
+    // Parse data if needed
     const obligations =
       typeof obligationsJson === "string"
         ? JSON.parse(obligationsJson)
         : obligationsJson;
+
+    // Clear existing chart
     d3.select(container).selectAll("*").remove();
 
+    // Get container width
     const containerWidth = document
       .querySelector(container)
       .getBoundingClientRect().width;
+
+    // Make height responsive to width
     const aspectRatio = 0.6;
     const width = containerWidth;
     const height = Math.max(300, width * aspectRatio);
+
+    // Responsive margins
     const margin = {
       top: Math.max(20, width * 0.05),
       right: Math.max(20, width * 0.05),
@@ -86,6 +86,7 @@
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
+    // Create SVG with viewBox for better scaling
     const svg = d3
       .select(container)
       .append("svg")
@@ -94,19 +95,20 @@
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    // Get years and create scales
     const years = obligations.map((d) => d.x);
 
-    // Match outlays chart padding exactly
+    // X scale for year groups
     const xScale = d3
       .scaleBand()
       .domain(years)
       .range([0, innerWidth])
-      .padding(0.2); // Match outlays chart
+      .padding(0.2);
 
+    // Y scale
     const maxValue = d3.max(obligations, (d) =>
       Math.max(
         d.sam_actual || 0,
-        d.sam_estimate || 0,
         d.usa_spending_actual || 0
       )
     );
@@ -117,111 +119,123 @@
       .range([innerHeight, 0])
       .nice();
 
-    function addBars(selection, d) {
-      const bars = [];
-      if (d.sam_actual > 0)
-        bars.push({
-          type: "actual",
-          value: d.sam_actual,
-          color: "rgb(250, 146, 65)",
-        });
-      if (d.sam_estimate > 0)
-        bars.push({
-          type: "estimate",
-          value: d.sam_estimate,
-          color: "rgb(34, 186, 229)",
-        });
-      if (d.usa_spending_actual > 0)
-        bars.push({
-          type: "usaspending",
-          value: d.usa_spending_actual,
-          color: "rgb(21, 96, 130)",
-        });
+    // Get formatting info for consistent formatting
+    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
 
-      // Match outlays chart bar scale exactly
-      const xBarScale = d3
-        .scaleBand()
-        .domain([0, 1]) // Always allocate space for 2 bars
-        .range([0, xScale.bandwidth()])
-        .padding(0.1);
+    // Responsive font sizes
+    const fontSize = Math.max(10, Math.min(12, width / 50));
+    const legendFontSize = Math.max(10, Math.min(14, width / 45));
 
-      selection
-        .selectAll("rect")
-        .data(bars)
-        .enter()
-        .append("rect")
-        .attr("x", (d, i) => xBarScale(i))
-        .attr("y", (d) => yScale(d.value))
-        .attr("width", xBarScale.bandwidth())
-        .attr("height", (d) => innerHeight - yScale(d.value))
-        .attr("fill", (d) => d.color)
-        .on("mouseover", function (event, d) {
-          const tooltip = d3
-            .select("body")
-            .append("div")
-            .attr("class", "tooltip")
-            .style("position", "absolute")
-            .style("background", "white")
-            .style("padding", "8px")
-            .style("border", "1px solid #ddd")
-            .style("border-radius", "4px")
-            .style("pointer-events", "none");
-
-          tooltip
-            .html(formatObligations(d.value))
-            .style("left", event.pageX + 10 + "px")
-            .style("top", event.pageY - 28 + "px");
-
-          d3.select(this).attr("fill", d3.color(d.color).darker(0.2));
-        })
-        .on("mouseout", function (event, d) {
-          d3.selectAll(".tooltip").remove();
-          d3.select(this).attr("fill", d.color);
-        });
-    }
-
-    // Create axes
+    // Create axes with responsive formatting
     const xAxis = d3.axisBottom(xScale);
     const yAxis = d3
       .axisLeft(yScale)
       .ticks(5)
-      .tickFormat((d) => formatAxisValues(d, 1, ""));
+      .tickFormat((d) => {
+        return formatAxisValues(d, divisor, suffix);
+      });
 
+    // Add axes with styled text
     svg
       .append("g")
       .attr("class", "x-axis")
       .attr("transform", `translate(0,${innerHeight})`)
-      .call(xAxis);
+      .call(xAxis)
+      .style("font-size", `${fontSize}px`);
 
-    svg.append("g").attr("class", "y-axis").call(yAxis);
+    svg
+      .append("g")
+      .attr("class", "y-axis")
+      .call(yAxis)
+      .style("font-size", `${fontSize}px`);
 
-    // Create year groups and add bars
+    // Create bar groups
     const yearGroups = svg
       .selectAll(".year-group")
       .data(obligations)
       .enter()
       .append("g")
       .attr("class", "year-group")
-      .attr("transform", (d) => `translate(${xScale(d.x)},0)`)
-      .each(function (d) {
-        addBars(d3.select(this), d);
+      .attr("transform", (d) => `translate(${xScale(d.x)},0)`);
+
+    // Function to add bars with specific color and data
+    function addBars(selection, value, index, color, totalBars) {
+      if (value > 0) {
+        const xBarScale = d3
+          .scaleBand()
+          .domain(d3.range(totalBars))
+          .range([0, xScale.bandwidth()])
+          .padding(0.1);
+
+        selection
+          .append("rect")
+          .attr("x", xBarScale(index))
+          .attr("y", (d) => yScale(value))
+          .attr("width", xBarScale.bandwidth())
+          .attr("height", (d) => innerHeight - yScale(value))
+          .attr("fill", color)
+          .on("mouseover", function (event, d) {
+            const tooltip = d3
+              .select("body")
+              .selectAll(".tooltip")
+              .data([null])
+              .join("div")
+              .attr("class", "tooltip")
+              .style("position", "absolute")
+              .style("background", "white")
+              .style("padding", "8px")
+              .style("border", "1px solid #ddd")
+              .style("border-radius", "4px")
+              .style("pointer-events", "none")
+              .style("font-size", `${fontSize}px`);
+
+            tooltip
+              .style("opacity", 1)
+              .html(formatObligations(value))
+              .style("left", `${event.pageX + 10}px`)
+              .style("top", `${event.pageY - 28}px`);
+
+            d3.select(this).attr("fill", d3.color(color).darker(0.2));
+          })
+          .on("mouseout", function () {
+            d3.select("body").selectAll(".tooltip").remove();
+            d3.select(this).attr("fill", color);
+          });
+      }
+    }
+
+    // Add bars for each year group
+    yearGroups.each(function (d) {
+      const group = d3.select(this);
+      const bars = [];
+
+      if (d.sam_actual > 0)
+        bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
+      if (d.usa_spending_actual > 0)
+        bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
+
+      bars.forEach((bar, i) => {
+        addBars(group, bar.value, i, bar.color, bars.length);
       });
+    });
 
     // Add legend
+    // Add legend
     const legendData = [
-      { label: "SAM.gov (Actual)", color: "rgb(250, 146, 65)" },
-      { label: "SAM.gov (Estimate)", color: "rgb(34, 186, 229)" },
+      { label: "SAM.gov", color: "rgb(250, 146, 65)" },
       { label: "USASpending.gov", color: "rgb(21, 96, 130)" },
     ];
 
-    const legendY = innerHeight + 40;
     const itemSpacing = 180;
+    const legendY = innerHeight + 40;
 
+    // Create legend group aligned to the right
     const legend = svg
       .append("g")
       .attr("class", "legend")
       .attr("transform", `translate(${innerWidth},${legendY})`);
 
+    // Place items from right to left
     const legendItems = legend
       .selectAll(".legend-item")
       .data(legendData)
@@ -244,7 +258,21 @@
       .attr("x", 16)
       .attr("y", 10)
       .text((d) => d.label)
-      .style("font-size", "12px");
+      .style("font-size", `${legendFontSize}px`);
+
+    // Add resize handler
+    const resizeChart = () => {
+      createFiscalYearObligationsChart(obligations, { container });
+    };
+
+    let resizeTimer;
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeChart, 250);
+    };
+
+    window.removeEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
   }
 
   function createFiscalYearOutlaysChart(
@@ -780,8 +808,7 @@
     // Create headers for the CSV
     const headers = [
       "Fiscal Year",
-      "SAM.gov (Actual)",
-      "SAM.gov (Estimate)",
+      "SAM.gov",
       "USASpending.gov",
     ];
 
@@ -792,7 +819,6 @@
       const formattedRow = [
         `"${row.x}"`,
         `"${formatCurrency(row.sam_actual || 0)}"`,
-        `"${formatCurrency(row.sam_estimate || 0)}"`,
         `"${formatCurrency(row.usa_spending_actual || 0)}"`,
       ];
       csvContent += formattedRow.join(",") + "\n";
@@ -955,11 +981,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    initializeViewControls(
-      hasObligations,
-      hasOutlays,
-      hasOtherProgramExpenditure
-    );
+    initializeViewControls(hasObligations, hasOutlays, hasOtherProgramExpenditure);
 
     initializeDownloadButton();
     initializeProgramFilters();

@@ -1,29 +1,35 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":3,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Endowment for the Arts","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Commerce","total_num_programs":19,"total_obs":26277777034.0},{"title":"Department
+  of Transportation","total_num_programs":12,"total_obs":26083003491.0},{"title":"Federal
+  Communications Commission","total_num_programs":3,"total_obs":24293000000.0},{"title":"Department
+  of Agriculture","total_num_programs":52,"total_obs":13409166273.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":17,"total_obs":8656936097.0},{"title":"Department
+  of the Interior","total_num_programs":55,"total_obs":3742439378.0},{"title":"Department
+  of Defense","total_num_programs":18,"total_obs":3339111617.0},{"title":"Department
+  of Health and Human Services","total_num_programs":12,"total_obs":1384827537.0},{"title":"Department
+  of Education","total_num_programs":4,"total_obs":1369668650.0},{"title":"Department
+  of the Treasury","total_num_programs":13,"total_obs":1294327653.0},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":994729022.0},{"title":"Environmental
+  Protection Agency","total_num_programs":15,"total_obs":422893663.0},{"title":"Department
+  of State","total_num_programs":20,"total_obs":404699998.0},{"title":"Department
+  of Justice","total_num_programs":10,"total_obs":298817831.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":4,"total_obs":66437508.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":3,"total_obs":62692337.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":56304582.0},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":3,"total_obs":39786398.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Agency for
+  International Development","total_num_programs":2,"total_obs":29100000.0},{"title":"General
+  Services Administration","total_num_programs":3,"total_obs":25022755.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":6000000.0},{"title":"Federal Permitting
+  Improvement Steering Council","total_num_programs":1,"total_obs":5000000.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":100000.0},{"title":"Denali
+  Commission","total_num_programs":3,"total_obs":20.0},{"title":"National Endowment
+  for the Arts","total_num_programs":1,"total_obs":0.0},{"title":"National Credit
+  Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
   Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American Foundation","total_num_programs":2,"total_obs":0.0},{"title":"General
-  Services Administration","total_num_programs":3,"total_obs":0.0},{"title":"Federal
-  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":3,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":15,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":13,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":55,"total_obs":0.0},{"title":"Department of Veterans
-  Affairs","total_num_programs":3,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":20,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":10,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":17,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":18,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":19,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":52,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":3,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":4,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":3,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":2,"total_obs":0.0}]'
+  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian Regional
+  Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":137},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
@@ -509,20 +515,20 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/community-development
-sub_cats: '[{"title":"Site Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":0.0},{"title":"Land
-  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":24,"total_obs":0.0},{"title":"Fire
-  Protection","permalink":"/category/community-development/fire-protection","total_num_programs":29,"total_obs":0.0},{"title":"Planning
-  and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":0.0},{"title":"Indian
-  Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":47,"total_obs":0.0},{"title":"Rural
-  Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":0.0},{"title":"Federal
-  Surplus Property","permalink":"/category/community-development/federal-surplus-property","total_num_programs":21,"total_obs":0.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":38,"total_obs":0.0},{"title":"Historical
-  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":44,"total_obs":0.0},{"title":"Construction,
-  Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":57,"total_obs":0.0},{"title":"Technical
-  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":0.0}]'
+sub_cats: '[{"title":"Site Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":6253885557.0},{"title":"Land
+  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":24,"total_obs":6546358695.0},{"title":"Fire
+  Protection","permalink":"/category/community-development/fire-protection","total_num_programs":29,"total_obs":27472592272.0},{"title":"Planning
+  and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":35878019172.0},{"title":"Indian
+  Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":47,"total_obs":31220538849.0},{"title":"Rural
+  Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":67885473222.0},{"title":"Federal
+  Surplus Property","permalink":"/category/community-development/federal-surplus-property","total_num_programs":21,"total_obs":3374246067.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":38,"total_obs":7947425930.0},{"title":"Historical
+  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":44,"total_obs":5708114158.0},{"title":"Construction,
+  Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":57,"total_obs":41469803578.0},{"title":"Technical
+  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":8600987901.0}]'
 title: Community Development
 total_num_agencies: 31
 total_num_applicant_types: 54
 total_num_programs: 289
 total_num_sub_cats: 11
-total_obs: 0.0
+total_obs: 112312841844.0
 ---

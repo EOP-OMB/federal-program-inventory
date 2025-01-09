@@ -1,14 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Gulf
-  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":72,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":15,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":5,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":3,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":7,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":72,"total_obs":8652869219.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":2293444239.0},{"title":"Department
+  of the Interior","total_num_programs":15,"total_obs":2098902837.0},{"title":"Department
+  of State","total_num_programs":5,"total_obs":1297356134.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":445732178.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":226607582.0},{"title":"Department
+  of Commerce","total_num_programs":4,"total_obs":198367350.0},{"title":"Department
+  of the Treasury","total_num_programs":1,"total_obs":31969215.0},{"title":"Department
+  of Agriculture","total_num_programs":7,"total_obs":28328302.0},{"title":"Department
+  of Energy","total_num_programs":3,"total_obs":21769025.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":9500000.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":71},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
@@ -495,247 +498,247 @@ parent_title: Environmental Quality
 permalink: /category/environmental-quality/water-pollution-control
 programs: '[{"cfda":"66.511","permalink":"/program/66.511","title":"Office of Research
   and Development Consolidated Research/Training/Fellowships","popular_name":"Not
-  applicable","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.522","permalink":"/program/66.522","title":"Enhanced
+  applicable","agency":"Environmental Protection Agency","total_obs":16905992.0,"program_type":"assistance_listing"},{"cfda":"66.522","permalink":"/program/66.522","title":"Enhanced
   Aquifer Use and Recharge Program","popular_name":"EAR Grant Program","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.309","permalink":"/program/66.309","title":"Surveys,
   Studies, Investigations, Training and Special Purpose Activities Relating to Environmental
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
+  Protection Agency","total_obs":28450000.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
   River Basin Water Enhancement (YRBWE) ","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
+  of the Interior","total_obs":9299454.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
   Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
   Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
-  Grants","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.253","permalink":"/program/15.253","title":"Not-for-Profit
+  Grants","agency":"Environmental Protection Agency","total_obs":53105559.0,"program_type":"assistance_listing"},{"cfda":"15.253","permalink":"/program/15.253","title":"Not-for-Profit
   AMD Reclamation","popular_name":"Watershed Cooperative Agreement Program (WCAP)","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.506","permalink":"/program/15.506","title":"Water
+  of the Interior","total_obs":300000.0,"program_type":"assistance_listing"},{"cfda":"15.506","permalink":"/program/15.506","title":"Water
   Desalination Research and Development ","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.815","permalink":"/program/66.815","title":"Brownfields
+  of the Interior","total_obs":2892671.0,"program_type":"assistance_listing"},{"cfda":"66.815","permalink":"/program/66.815","title":"Brownfields
   Job Training Cooperative Agreements","popular_name":"Brownfields JT Program, BFJT","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.429","permalink":"/program/11.429","title":"Marine
+  Protection Agency","total_obs":8361213.0,"program_type":"assistance_listing"},{"cfda":"11.429","permalink":"/program/11.429","title":"Marine
   Sanctuary Program","popular_name":"Office of National Marine Sanctuaries ","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  of Commerce","total_obs":32870000.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.136","permalink":"/program/81.136","title":"Long-Term
-  Surveillance and Maintenance","popular_name":null,"agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
+  Protection Agency","total_obs":14058495.0,"program_type":"assistance_listing"},{"cfda":"81.136","permalink":"/program/81.136","title":"Long-Term
+  Surveillance and Maintenance","popular_name":null,"agency":"Department of Energy","total_obs":8069883.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
   Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  of the Interior","total_obs":1211412017.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.630","permalink":"/program/15.630","title":"Coastal","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
+  of the Interior","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
   Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
-  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.110","permalink":"/program/66.110","title":"Healthy
+  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":75467833.0,"program_type":"assistance_listing"},{"cfda":"66.110","permalink":"/program/66.110","title":"Healthy
   Communities Grant Program","popular_name":"Healthy Communities","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Protection Agency","total_obs":87425.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
   Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
   Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.481","permalink":"/program/66.481","title":"Geographic
   Programs \u2013 Lake Champlain Basin Program","popular_name":"Lake Champlain Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
+  Protection Agency","total_obs":32401000.0,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
   and Ecosystems Sustainability, Tourist Opportunities, and Revived Economies of the
   Gulf Coast States","popular_name":"Gulf RESTORE - Direct Component and Centers of
-  Excellence Research Grants Programs","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Excellence Research Grants Programs","agency":"Department of the Treasury","total_obs":31969215.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
   Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.473","permalink":"/program/66.473","title":"Direct
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"66.473","permalink":"/program/66.473","title":"Direct
   Implementation Tribal Cooperative Agreements","popular_name":"DITCA","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Protection Agency","total_obs":1476128.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.456","permalink":"/program/66.456","title":"National
-  Estuary Program","popular_name":"NEP","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.113","permalink":"/program/93.113","title":"Environmental
+  Estuary Program","popular_name":"NEP","agency":"Environmental Protection Agency","total_obs":58233400.0,"program_type":"assistance_listing"},{"cfda":"93.113","permalink":"/program/93.113","title":"Environmental
   Health","popular_name":"National Institute of Environmental Health Sciences","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.763","permalink":"/program/10.763","title":"Emergency
+  of Health and Human Services","total_obs":445732178.0,"program_type":"assistance_listing"},{"cfda":"10.763","permalink":"/program/10.763","title":"Emergency
   Community Water Assistance Grants","popular_name":"Emergency Community Water Assistance
-  Grants","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.486","permalink":"/program/66.486","title":"Underground
+  Grants","agency":"Department of Agriculture","total_obs":14048600.0,"program_type":"assistance_listing"},{"cfda":"66.486","permalink":"/program/66.486","title":"Underground
   Injection Control Program Grants: Class VI Carbon Sequestration Wells","popular_name":"Underground
   Injection Control Class VI Injection Wells Grant Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.509","permalink":"/program/66.509","title":"Science
+  Protection Agency","total_obs":17370000.0,"program_type":"assistance_listing"},{"cfda":"66.509","permalink":"/program/66.509","title":"Science
   To Achieve Results (STAR) Research Program","popular_name":"STAR Grant Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.600","permalink":"/program/66.600","title":"Environmental
+  Protection Agency","total_obs":19911011.0,"program_type":"assistance_listing"},{"cfda":"66.600","permalink":"/program/66.600","title":"Environmental
   Protection Consolidated Grants for the Insular Areas - Program Support","popular_name":"Consolidated
-  Grants Under the Omnibus Territories Act","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.418","permalink":"/program/66.418","title":"Construction
+  Grants Under the Omnibus Territories Act","agency":"Environmental Protection Agency","total_obs":165737799.0,"program_type":"assistance_listing"},{"cfda":"66.418","permalink":"/program/66.418","title":"Construction
   Grants for Wastewater Treatment Works","popular_name":"Title II Construction Grants
-  Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.759","permalink":"/program/10.759","title":"Part
+  Program","agency":"Environmental Protection Agency","total_obs":7505846.0,"program_type":"assistance_listing"},{"cfda":"10.759","permalink":"/program/10.759","title":"Part
   1774 Special Evaluation Assistance for Rural Communities and Households (SEARCH)","popular_name":"SEARCH
-  Grant Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
-  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.999","permalink":"/program/11.999","title":"Marine
-  Debris Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
+  Grant Program","agency":"Department of Agriculture","total_obs":1409033.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
+  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":5634490.0,"program_type":"assistance_listing"},{"cfda":"11.999","permalink":"/program/11.999","title":"Marine
+  Debris Program","popular_name":null,"agency":"Department of Commerce","total_obs":73717244.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
   Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.436","permalink":"/program/66.436","title":"Surveys,
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":4123400.0,"program_type":"assistance_listing"},{"cfda":"66.436","permalink":"/program/66.436","title":"Surveys,
   Studies, Investigations, Demonstrations, and Training Grants and Cooperative Agreements
   - Section 104(b)(3) of the Clean Water Act","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.516","permalink":"/program/66.516","title":"P3
+  Protection Agency","total_obs":7118584.0,"program_type":"assistance_listing"},{"cfda":"66.516","permalink":"/program/66.516","title":"P3
   Award: National Student Design Competition for Sustainability","popular_name":"People,
   Prosperity, and the Planet (P3) Grant Program","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.446","permalink":"/program/66.446","title":"Technical
+  Agency","total_obs":1399688.0,"program_type":"assistance_listing"},{"cfda":"66.446","permalink":"/program/66.446","title":"Technical
   Assistance for Treatment Works (Clean Water Act [CWA] Section 104(b)(8))","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.809","permalink":"/program/66.809","title":"Superfund
+  Protection Agency","total_obs":579695.0,"program_type":"assistance_listing"},{"cfda":"66.809","permalink":"/program/66.809","title":"Superfund
   State and Indian Tribe Core Program Cooperative Agreements","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.611","permalink":"/program/66.611","title":"Environmental
+  Protection Agency","total_obs":4680176.0,"program_type":"assistance_listing"},{"cfda":"66.611","permalink":"/program/66.611","title":"Environmental
   Policy and Innovation Grants","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.202","permalink":"/program/66.202","title":"Congressionally
-  Mandated Projects","popular_name":null,"agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.615","permalink":"/program/66.615","title":"Environmental
+  Agency","total_obs":101322.0,"program_type":"assistance_listing"},{"cfda":"66.202","permalink":"/program/66.202","title":"Congressionally
+  Mandated Projects","popular_name":null,"agency":"Environmental Protection Agency","total_obs":675063889.0,"program_type":"assistance_listing"},{"cfda":"66.615","permalink":"/program/66.615","title":"Environmental
   Justice Thriving Communities Grantmaking Program (EJ TCGM)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.485","permalink":"/program/66.485","title":"Support
+  Protection Agency","total_obs":181917247.0,"program_type":"assistance_listing"},{"cfda":"66.485","permalink":"/program/66.485","title":"Support
   for the Gulf Hypoxia Action Plan","popular_name":"Gulf Hypoxia Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.462","permalink":"/program/66.462","title":"National
+  Protection Agency","total_obs":1095880.0,"program_type":"assistance_listing"},{"cfda":"66.462","permalink":"/program/66.462","title":"National
   Wetland Program Development Grants and Five-Star Restoration Training Grant","popular_name":"National
   WPDGs or the 5-Star and Urban Waters Grants","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.204","permalink":"/program/66.204","title":"Multipurpose
+  Agency","total_obs":968912.0,"program_type":"assistance_listing"},{"cfda":"66.204","permalink":"/program/66.204","title":"Multipurpose
   Grants to States and Tribes ","popular_name":"Multipurpose Grants to States and
   Tribes","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.819","permalink":"/program/20.819","title":"Ballast
-  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.487","permalink":"/program/66.487","title":"Non-State
+  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":3100000.0,"program_type":"assistance_listing"},{"cfda":"66.487","permalink":"/program/66.487","title":"Non-State
   Member Support for the Gulf Hypoxia Action Plan","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.864","permalink":"/program/10.864","title":"Grant
+  Protection Agency","total_obs":5523687.0,"program_type":"assistance_listing"},{"cfda":"10.864","permalink":"/program/10.864","title":"Grant
   Program to Establish a Fund for Financing Water and Wastewater Projects","popular_name":"Revolving
-  Fund Program (RFP)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.525","permalink":"/program/15.525","title":"Rocky
+  Fund Program (RFP)","agency":"Department of Agriculture","total_obs":1200000.0,"program_type":"assistance_listing"},{"cfda":"15.525","permalink":"/program/15.525","title":"Rocky
   Boy''s/North Central Montana Regional Water System","popular_name":"North Central
-  Montana Rural Water Supply Project","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.447","permalink":"/program/66.447","title":"Sewer
+  Montana Rural Water Supply Project","agency":"Department of the Interior","total_obs":52911000.0,"program_type":"assistance_listing"},{"cfda":"66.447","permalink":"/program/66.447","title":"Sewer
   Overflow and Stormwater Reuse Municipal Grant Program","popular_name":"Overflow
-  Stormwater Grant Program (OSG Program)","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.005","permalink":"/program/81.005","title":"Environmental
+  Stormwater Grant Program (OSG Program)","agency":"Environmental Protection Agency","total_obs":51956255.0,"program_type":"assistance_listing"},{"cfda":"81.005","permalink":"/program/81.005","title":"Environmental
   Monitoring, Independent Research, Technical Analysis","popular_name":null,"agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
+  of Energy","total_obs":4542269.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
   Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
   Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
-  Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.236","permalink":"/program/10.236","title":"Bioproduct
+  Council","total_obs":151139749.0,"program_type":"assistance_listing"},{"cfda":"10.236","permalink":"/program/10.236","title":"Bioproduct
   Pilot Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
   Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
   Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
   Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.580","permalink":"/program/15.580","title":"Aquatic
   Ecosystem Restoration Program","popular_name":"AERP","agency":"Department of the
-  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.305","permalink":"/program/66.305","title":"Compliance
+  Interior","total_obs":72000000.0,"program_type":"assistance_listing"},{"cfda":"66.305","permalink":"/program/66.305","title":"Compliance
   Assistance Support for Services to the Regulated Community and Other Assistance
   Providers ","popular_name":"Compliance Assistance Centers","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.313","permalink":"/program/66.313","title":"International
+  Protection Agency","total_obs":349500.0,"program_type":"assistance_listing"},{"cfda":"66.313","permalink":"/program/66.313","title":"International
   Compliance and Enforcement Projects","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.254","permalink":"/program/15.254","title":"OSM/VISTA
   AmeriCorps ","popular_name":"OSMRE/AmeriCorps Program; OSMRE/VISTA Program; OSMRE
   Semester Internship Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.424","permalink":"/program/66.424","title":"Surveys,
   Studies, Investigations, Demonstrations, and Training Grants - Section 1442 of the
   Safe Drinking Water Act","popular_name":null,"agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.605","permalink":"/program/66.605","title":"Performance
-  Partnership Grants","popular_name":"PPGs","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.441","permalink":"/program/66.441","title":"Healthy
+  Agency","total_obs":27384200.0,"program_type":"assistance_listing"},{"cfda":"66.605","permalink":"/program/66.605","title":"Performance
+  Partnership Grants","popular_name":"PPGs","agency":"Environmental Protection Agency","total_obs":497912123.0,"program_type":"assistance_listing"},{"cfda":"66.441","permalink":"/program/66.441","title":"Healthy
   Watersheds Consortium Grant Program ","popular_name":"Healthy Watersheds Consortium
   Grant Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.460","permalink":"/program/66.460","title":"Nonpoint
   Source Implementation Grants","popular_name":"319 Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.126","permalink":"/program/66.126","title":"Geographic
+  Protection Agency","total_obs":117674498.0,"program_type":"assistance_listing"},{"cfda":"66.126","permalink":"/program/66.126","title":"Geographic
   Programs - San Francisco Bay Water Quality Improvement Fund","popular_name":"SF
-  Bay Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.609","permalink":"/program/66.609","title":"Protection
+  Bay Program","agency":"Environmental Protection Agency","total_obs":46042328.0,"program_type":"assistance_listing"},{"cfda":"66.609","permalink":"/program/66.609","title":"Protection
   of Children from Environmental Health Risks","popular_name":"Children''s Environmental
-  Health","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.565","permalink":"/program/15.565","title":"Implementation
+  Health","agency":"Environmental Protection Agency","total_obs":40000.0,"program_type":"assistance_listing"},{"cfda":"15.565","permalink":"/program/15.565","title":"Implementation
   of the Taos Pueblo Indian water rights settlement","popular_name":"Abeyta Settlement","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.129","permalink":"/program/66.129","title":"Geographic
   Programs - Southeast New England Coastal Watershed Restoration Program","popular_name":"Southeast
-  New England Program (SNEP)","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.489","permalink":"/program/66.489","title":"Response
+  New England Program (SNEP)","agency":"Environmental Protection Agency","total_obs":5493761.0,"program_type":"assistance_listing"},{"cfda":"66.489","permalink":"/program/66.489","title":"Response
   to Emergency Situations Affecting Public Water Systems (SDWA 1442b)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.041","permalink":"/program/15.041","title":"Environmental
-  Management Indian ","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.454","permalink":"/program/66.454","title":"Water
+  Protection Agency","total_obs":102461591.0,"program_type":"assistance_listing"},{"cfda":"15.041","permalink":"/program/15.041","title":"Environmental
+  Management Indian ","popular_name":null,"agency":"Department of the Interior","total_obs":11240495.0,"program_type":"assistance_listing"},{"cfda":"66.454","permalink":"/program/66.454","title":"Water
   Quality Management Planning","popular_name":"(205(j)(2)) or 604(b) ","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.445","permalink":"/program/66.445","title":"Innovative
+  Protection Agency","total_obs":33390000.0,"program_type":"assistance_listing"},{"cfda":"66.445","permalink":"/program/66.445","title":"Innovative
   Water Infrastructure Workforce Development Program (SDWA 1459E)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.521","permalink":"/program/66.521","title":"Innovative
+  Protection Agency","total_obs":16077630.0,"program_type":"assistance_listing"},{"cfda":"66.521","permalink":"/program/66.521","title":"Innovative
   Water Technology Grant Program","popular_name":"Not applicable","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
+  Protection Agency","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
   Tahoe Erosion Control Grant Program","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
+  Agriculture","total_obs":2155269.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
   Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.437","permalink":"/program/66.437","title":"Geographic
+  Protection Agency","total_obs":106045589.0,"program_type":"assistance_listing"},{"cfda":"66.437","permalink":"/program/66.437","title":"Geographic
   Programs \u2013 Long Island Sound Program","popular_name":"Long Island Sound Study
-  (LISS) ","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.123","permalink":"/program/66.123","title":"Geographic
+  (LISS) ","agency":"Environmental Protection Agency","total_obs":61002000.0,"program_type":"assistance_listing"},{"cfda":"66.123","permalink":"/program/66.123","title":"Geographic
   Programs - Puget Sound Action Agenda: Technical Investigations and Implementation
-  Assistance Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.087","permalink":"/program/19.087","title":"International
+  Assistance Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":39010000.0,"program_type":"assistance_listing"},{"cfda":"19.087","permalink":"/program/19.087","title":"International
   Fisheries Commissions","popular_name":"International Fisheries Commissions","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.419","permalink":"/program/66.419","title":"Water
+  of State","total_obs":53804002.0,"program_type":"assistance_listing"},{"cfda":"66.419","permalink":"/program/66.419","title":"Water
   Pollution Control State, Interstate, and Tribal Program Support","popular_name":"Section
-  106 Grants","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.444","permalink":"/program/66.444","title":"Voluntary
+  106 Grants","agency":"Environmental Protection Agency","total_obs":65894197.0,"program_type":"assistance_listing"},{"cfda":"66.444","permalink":"/program/66.444","title":"Voluntary
   School and Child Care Lead Testing and Reduction Grant Program (SDWA 1464(d))","popular_name":"SDWA
-  1464(d)","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.962","permalink":"/program/66.962","title":"Geographic
+  1464(d)","agency":"Environmental Protection Agency","total_obs":46005000.0,"program_type":"assistance_listing"},{"cfda":"66.962","permalink":"/program/66.962","title":"Geographic
   Programs - Columbia River Basin Restoration (CRBR) Program","popular_name":"CWA
-  Section 123","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.812","permalink":"/program/66.812","title":"Hazardous
+  Section 123","agency":"Environmental Protection Agency","total_obs":24554688.0,"program_type":"assistance_listing"},{"cfda":"66.812","permalink":"/program/66.812","title":"Hazardous
   Waste Management Grant Program for Tribes","popular_name":"Hazardous Waste Grants","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
+  Protection Agency","total_obs":600000.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
   Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
-  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.931","permalink":"/program/66.931","title":"International
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2293444239.0,"program_type":"assistance_listing"},{"cfda":"66.931","permalink":"/program/66.931","title":"International
   Financial Assistance Projects Sponsored by the Office of International and Tribal
-  Affairs","popular_name":null,"agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.442","permalink":"/program/66.442","title":"Water
+  Affairs","popular_name":null,"agency":"Environmental Protection Agency","total_obs":6310310.0,"program_type":"assistance_listing"},{"cfda":"66.442","permalink":"/program/66.442","title":"Water
   Infrastructure Improvements for the Nation Small and Underserved Communities Emerging
   Contaminants Grant Program","popular_name":"Small, Underserved, and Disadvantaged
-  Communities (SUDC) Grant Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.926","permalink":"/program/66.926","title":"Indian
+  Communities (SUDC) Grant Program","agency":"Environmental Protection Agency","total_obs":975887392.0,"program_type":"assistance_listing"},{"cfda":"66.926","permalink":"/program/66.926","title":"Indian
   Environmental General Assistance Program (GAP)","popular_name":"GAP Grants","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.522","permalink":"/program/15.522","title":"Mni
+  Protection Agency","total_obs":70939263.0,"program_type":"assistance_listing"},{"cfda":"15.522","permalink":"/program/15.522","title":"Mni
   Wiconi Rural Water Supply Project","popular_name":"Mni Wiconi Project","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.448","permalink":"/program/66.448","title":"Drinking
+  of the Interior","total_obs":92853046.0,"program_type":"assistance_listing"},{"cfda":"66.448","permalink":"/program/66.448","title":"Drinking
   Water System Infrastructure Resilience and Sustainability Program \u2013 SDWA 1459A(l)","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.419","permalink":"/program/11.419","title":"Coastal
   Zone Management Administration Awards","popular_name":"Agency: Department of Commerce
   Office: National Oceanic and Atmospheric Administration (NOAA)","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.817","permalink":"/program/20.817","title":"Air
-  Emissions and Energy Initiative","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.451","permalink":"/program/11.451","title":"Gulf
+  of Commerce","total_obs":85500106.0,"program_type":"assistance_listing"},{"cfda":"20.817","permalink":"/program/20.817","title":"Air
+  Emissions and Energy Initiative","popular_name":null,"agency":"Department of Transportation","total_obs":6400000.0,"program_type":"assistance_listing"},{"cfda":"11.451","permalink":"/program/11.451","title":"Gulf
   Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology ","popular_name":"National
   Centers for Coastal Ocean Science \u2013 NOAA RESTORE Act Science Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
+  of Commerce","total_obs":6280000.0,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
   Programs - Puget Sound Protection and Restoration: Tribal Implementation Assistance
-  Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.610","permalink":"/program/66.610","title":"Surveys,
+  Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":16884000.0,"program_type":"assistance_listing"},{"cfda":"66.610","permalink":"/program/66.610","title":"Surveys,
   Studies, Investigations and Special Purpose Grants within the Office of the Administrator","popular_name":"ECOS
   Omnibus  and the Interstate Technology Resource Council Cooperative Agreements","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.443","permalink":"/program/66.443","title":"Reducing
+  Protection Agency","total_obs":777584.0,"program_type":"assistance_listing"},{"cfda":"66.443","permalink":"/program/66.443","title":"Reducing
   Lead in Drinking Water (SDWA 1459B)","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
   Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
   Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.961","permalink":"/program/66.961","title":"Superfund
   State and Indian Tribe Combined Cooperative Agreements (Site-Specfic and Core)","popular_name":"Superfund
   Combined, Bulk or Block Cooperative Agreements","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
+  Agency","total_obs":9382019.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
   and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.125","permalink":"/program/66.125","title":"Geographic
+  of State","total_obs":1223802133.0,"program_type":"assistance_listing"},{"cfda":"66.125","permalink":"/program/66.125","title":"Geographic
   Programs - Lake Pontchartrain Basic Restoration Program (PRP)","popular_name":"Lake
-  Pontchartrain Restoration Program ","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.203","permalink":"/program/66.203","title":"Environmental
+  Pontchartrain Restoration Program ","agency":"Environmental Protection Agency","total_obs":24576000.0,"program_type":"assistance_listing"},{"cfda":"66.203","permalink":"/program/66.203","title":"Environmental
   Finance Center Grants","popular_name":"EFC Grant Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.818","permalink":"/program/66.818","title":"Brownfields
+  Protection Agency","total_obs":4920675.0,"program_type":"assistance_listing"},{"cfda":"66.818","permalink":"/program/66.818","title":"Brownfields
   Multipurpose, Assessment, Revolving Loan Fund, and Cleanup Cooperative Agreements","popular_name":"Brownfields
-  MARC Grants","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.616","permalink":"/program/66.616","title":"Environmental
+  MARC Grants","agency":"Environmental Protection Agency","total_obs":313406497.0,"program_type":"assistance_listing"},{"cfda":"66.616","permalink":"/program/66.616","title":"Environmental
   and Climate Justice Community Change Grants Program","popular_name":"Community Change
-  Grants (CCG) Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.484","permalink":"/program/66.484","title":"Geographic
+  Grants (CCG) Program","agency":"Environmental Protection Agency","total_obs":4900000.0,"program_type":"assistance_listing"},{"cfda":"66.484","permalink":"/program/66.484","title":"Geographic
   Programs - South Florida Geographic Initiatives Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.510","permalink":"/program/66.510","title":"Surveys,
+  Protection Agency","total_obs":10787678.0,"program_type":"assistance_listing"},{"cfda":"66.510","permalink":"/program/66.510","title":"Surveys,
   Studies, Investigations and Special Purpose Grants within the Office of Research
   and Development","popular_name":"Not applicable","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.458","permalink":"/program/66.458","title":"Clean
+  Agency","total_obs":1289312.0,"program_type":"assistance_listing"},{"cfda":"66.458","permalink":"/program/66.458","title":"Clean
   Water State Revolving Fund","popular_name":"CW State Revolving Fund","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Protection Agency","total_obs":4440436433.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
   Reduction Assistance","popular_name":"SRA Grants","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.250","permalink":"/program/15.250","title":"Regulation
+  Agency","total_obs":187947.0,"program_type":"assistance_listing"},{"cfda":"15.250","permalink":"/program/15.250","title":"Regulation
   of Surface Coal Mining and Surface Effects of Underground Coal Mining","popular_name":"Regulatory
-  Grant Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Grant Program","agency":"Department of the Interior","total_obs":62136372.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.933","permalink":"/program/10.933","title":"Wetland
+  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"10.933","permalink":"/program/10.933","title":"Wetland
   Mitigation Banking Program","popular_name":"Wetland Mitigation Banking Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.092","permalink":"/program/81.092","title":"Remedial
+  of Agriculture","total_obs":5392000.0,"program_type":"assistance_listing"},{"cfda":"81.092","permalink":"/program/81.092","title":"Remedial
   Action and Waste Management","popular_name":"Federal Facility Agreement","agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.018","permalink":"/program/15.018","title":"Energy
+  of Energy","total_obs":9156873.0,"program_type":"assistance_listing"},{"cfda":"15.018","permalink":"/program/15.018","title":"Energy
   Community Revitalization Program (ECRP)","popular_name":"Orphaned Well Site Plugging
   and Remediation, Methane Reduction, and Infrastructure Grants and Assistance","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.130","permalink":"/program/66.130","title":"Geographic
+  of the Interior","total_obs":572223292.0,"program_type":"assistance_listing"},{"cfda":"66.130","permalink":"/program/66.130","title":"Geographic
   Programs - Gulf Coast Ecosystem Restoration Council Comprehensive Plan Component","popular_name":"EPA''s
   RESTORE Council Component","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.312","permalink":"/program/66.312","title":"Environmental
   Justice Government-to-Government (EJG2G) Program","popular_name":"EJG2G","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.461","permalink":"/program/66.461","title":"Regional
+  Protection Agency","total_obs":81491078.0,"program_type":"assistance_listing"},{"cfda":"66.461","permalink":"/program/66.461","title":"Regional
   Wetland Program Development Grants","popular_name":"Regional/Tribal WPDGs","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.433","permalink":"/program/66.433","title":"State
+  Protection Agency","total_obs":17386280.0,"program_type":"assistance_listing"},{"cfda":"66.433","permalink":"/program/66.433","title":"State
   Underground Water Source Protection","popular_name":"UIC Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
+  Protection Agency","total_obs":6067290.0,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
   Infrastructure Finance and Innovation (WIFIA)","popular_name":"WIFIA","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.472","permalink":"/program/66.472","title":"Beach
+  Protection Agency","total_obs":69600000.0,"program_type":"assistance_listing"},{"cfda":"66.472","permalink":"/program/66.472","title":"Beach
   Monitoring and Notification Program Implementation Grants","popular_name":"BEACH
-  Act Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.965","permalink":"/program/66.965","title":"CONTAMINATED
+  Act Program","agency":"Environmental Protection Agency","total_obs":7429384.0,"program_type":"assistance_listing"},{"cfda":"66.965","permalink":"/program/66.965","title":"CONTAMINATED
   ALASKA NATIVE CLAIMS SETTLEMENT ACT LANDS ASSISTANCE AGREEMENTS","popular_name":"ANCSA
-  Contaminated Lands Assistance Agreements","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Contaminated Lands Assistance Agreements","agency":"Environmental Protection Agency","total_obs":1971162.0,"program_type":"assistance_listing"}]'
 title: Water Pollution Control
 total_num_agencies: 14
 total_num_applicant_types: 51
 total_num_programs: 116
-total_obs: 0.0
+total_obs: 15324846081.0
 ---

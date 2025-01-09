@@ -1,12 +1,13 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":8,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"total_obs":10518797720.0},{"title":"Department
+  of Health and Human Services","total_num_programs":8,"total_obs":2915616048.0},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":1551930432.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":290000000.0},{"title":"Department
+  of Justice","total_num_programs":6,"total_obs":207976436.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":104656887.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":11066681.0},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":5604742.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":15},{"title":"Federally
@@ -492,10 +493,10 @@ programs: '[{"cfda":"93.665","permalink":"/program/93.665","title":"Emergency Gr
   Relief Fund","popular_name":"CRF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Veterans Affairs","total_obs":52500000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
   Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.050","permalink":"/program/97.050","title":"Presidential
+  of Housing and Urban Development","total_obs":290000000.0,"program_type":"assistance_listing"},{"cfda":"97.050","permalink":"/program/97.050","title":"Presidential
   Declared Disaster Assistance to Individuals and Households - Other Needs","popular_name":"(ONA)","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.518","permalink":"/program/19.518","title":"Overseas
   Refugee Assistance Programs for Western Hemisphere","popular_name":"Overseas Refugee
@@ -505,23 +506,23 @@ programs: '[{"cfda":"93.665","permalink":"/program/93.665","title":"Emergency Gr
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.571","permalink":"/program/16.571","title":"Public
   Safety Officers'' Benefits Program","popular_name":"(PSOB)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
+  of Justice","total_obs":207976436.0,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
   and Entrant Assistance State/Replacement Designee Administered Programs","popular_name":"Refugee
   Cash and Medical Assistance Program and Refugee Support Services Program","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.026","permalink":"/program/21.026","title":"Homeowner
-  Assistance Fund","popular_name":"HAF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.048","permalink":"/program/97.048","title":"Federal
+  of Health and Human Services","total_obs":2731183864.0,"program_type":"assistance_listing"},{"cfda":"21.026","permalink":"/program/21.026","title":"Homeowner
+  Assistance Fund","popular_name":"HAF","agency":"Department of the Treasury","total_obs":493530.0,"program_type":"assistance_listing"},{"cfda":"97.048","permalink":"/program/97.048","title":"Federal
   Disaster Assistance to Individuals and Households in Presidential Declared Disaster
-  Areas","popular_name":"(IHP)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.034","permalink":"/program/16.034","title":"Coronavirus
+  Areas","popular_name":"(IHP)","agency":"Department of Homeland Security","total_obs":1551930432.0,"program_type":"assistance_listing"},{"cfda":"16.034","permalink":"/program/16.034","title":"Coronavirus
   Emergency Supplemental Funding Program","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.027","permalink":"/program/21.027","title":"CORONAVIRUS
   STATE AND LOCAL FISCAL RECOVERY FUNDS","popular_name":"Coronavirus State and Local
-  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
+  Fiscal Recovery Funds (CSLFRF), SLFRF","agency":"Department of the Treasury","total_obs":5111212.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
   Social Services Welfare Assistance","popular_name":null,"agency":"Department of
-  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.982","permalink":"/program/93.982","title":"Mental
+  the Interior","total_obs":11066681.0,"program_type":"assistance_listing"},{"cfda":"93.982","permalink":"/program/93.982","title":"Mental
   Health Disaster Assistance and Emergency Mental Health","popular_name":"(Mental
   Health Disaster Assistance)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.578","permalink":"/program/10.578","title":"WIC
   Grants To States (WGS) ","popular_name":"WIC Grants to States (WGS)","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  of Agriculture","total_obs":104656887.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.001","permalink":"/program/16.001","title":"Law
   Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
@@ -531,15 +532,15 @@ programs: '[{"cfda":"93.665","permalink":"/program/93.665","title":"Emergency Gr
   Outreach, and Awareness for Labor Trafficking (Lighthouse); Victims of Human Trafficking
   Services and Outreach Program; SOAR to Health and Wellness Training (SOAR); and
   the National Human Trafficking Hotline (NHTH)","agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.301","permalink":"/program/16.301","title":"Law
+  Human Services","total_obs":12466750.0,"program_type":"assistance_listing"},{"cfda":"16.301","permalink":"/program/16.301","title":"Law
   Enforcement Assistance FBI Crime Laboratory Support","popular_name":"(FBI Laboratory)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.671","permalink":"/program/93.671","title":"Family
   Violence Prevention and Services/Domestic Violence Shelter and Supportive Services
   ","popular_name":"Family Violence Prevention and Services Act Formula Grants for
   States and Native American Tribes (including Alaska Native Villages) and Tribal
-  Organizations","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.110","permalink":"/program/64.110","title":"Veterans
+  Organizations","agency":"Department of Health and Human Services","total_obs":164100000.0,"program_type":"assistance_listing"},{"cfda":"64.110","permalink":"/program/64.110","title":"Veterans
   Dependency and Indemnity Compensation for Service-Connected Death","popular_name":"(DIC
-  and Death Compensation)","agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  and Death Compensation)","agency":"Department of Veterans Affairs","total_obs":10466297720.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.327","permalink":"/program/93.327","title":"Demonstration
@@ -547,12 +548,12 @@ programs: '[{"cfda":"93.665","permalink":"/program/93.665","title":"Emergency Gr
   of Human Trafficking, Domestic Victims of Human Trafficking- Services and Outreach
   (DVHT-SO) Program,  Victims of Human Trafficking in Native Communities (VHT-NC)
   Demonstration Program, Human Trafficking Youth Prevention Education (HTYPE) Demonstration
-  Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.032","permalink":"/program/21.032","title":"Local
+  Program","agency":"Department of Health and Human Services","total_obs":7865434.0,"program_type":"assistance_listing"},{"cfda":"21.032","permalink":"/program/21.032","title":"Local
   Assistance and Tribal Consistency Fund","popular_name":"LATCF","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Emergency and Crisis Assistance
 total_num_agencies: 11
 total_num_applicant_types: 37
 total_num_programs: 30
-total_obs: 0.0
+total_obs: 15605648946.0
 ---

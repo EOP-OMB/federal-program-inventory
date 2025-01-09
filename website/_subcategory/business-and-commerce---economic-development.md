@@ -1,21 +1,23 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":4,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Millennium
-  Challenge Corporation","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Gulf Coast Ecosystem
-  Restoration Council","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Export - Import Bank
-  of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":9,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":10,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":11,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":8,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":17,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":17,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta
-  Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
+agencies: '[{"title":"Department of Commerce","total_num_programs":17,"total_obs":25211171819.0},{"title":"Small
+  Business Administration","total_num_programs":4,"total_obs":16503600000.0},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":8377004325.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":7,"total_obs":7651965983.0},{"title":"Federal
+  Communications Commission","total_num_programs":1,"total_obs":5302000000.0},{"title":"Department
+  of the Interior","total_num_programs":10,"total_obs":3738100933.0},{"title":"Department
+  of Agriculture","total_num_programs":17,"total_obs":2219306153.0},{"title":"Department
+  of the Treasury","total_num_programs":9,"total_obs":1344044467.0},{"title":"Department
+  of Defense","total_num_programs":8,"total_obs":434877622.0},{"title":"Gulf Coast
+  Ecosystem Restoration Council","total_num_programs":1,"total_obs":75467833.0},{"title":"Department
+  of Health and Human Services","total_num_programs":6,"total_obs":60030791.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":11,"total_obs":19749999.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":17366504.0},{"title":"Millennium
+  Challenge Corporation","total_num_programs":1,"total_obs":2000000.0},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":52},{"title":"Public
@@ -495,98 +497,98 @@ programs: '[{"cfda":"44.002","permalink":"/program/44.002","title":"Community De
   Revolving Loan Fund Program for Credit Unions","popular_name":"CDRLF Program","agency":"National
   Credit Union Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.464","permalink":"/program/10.464","title":"Socially
   Disadvantaged Farmers and Ranchers Policy Research Center","popular_name":"The Policy
-  Center","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
+  Center","agency":"Department of Agriculture","total_obs":1500000.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
   American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.443","permalink":"/program/10.443","title":"Outreach
+  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"10.443","permalink":"/program/10.443","title":"Outreach
   and Assistance for Socially Disadvantaged and Veteran Farmers and Ranchers","popular_name":"USDA
-  2501 Grant Program ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
+  2501 Grant Program ","agency":"Department of Agriculture","total_obs":22600000.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
   and Industry Guaranteed Loans","popular_name":"B&I Guaranteed Loan Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.033","permalink":"/program/21.033","title":"Community
+  of Agriculture","total_obs":1828800290.0,"program_type":"assistance_listing"},{"cfda":"21.033","permalink":"/program/21.033","title":"Community
   Development Financial Institutions Fund Equitable Recovery Program (CDFI ERP)","popular_name":"CDFI
   Equitable Recovery Program (CDFI ERP)","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
   Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
   Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.024","permalink":"/program/15.024","title":"Indian
   Self-Determination Contract Support","popular_name":"CONTRACT SUPPORT","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
-  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  of the Interior","total_obs":38403469.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
+  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":400000.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
   and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.030","permalink":"/program/21.030","title":"Emergency
   Capital Investment Program","popular_name":"ECIP","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.020","permalink":"/program/21.020","title":"Community
   Development Financial Institutions Program","popular_name":"CDFI Program","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.024","permalink":"/program/21.024","title":"Community
+  of the Treasury","total_obs":356515000.0,"program_type":"assistance_listing"},{"cfda":"21.024","permalink":"/program/21.024","title":"Community
   Development Financial Institutions Rapid Response Program (CDFI RRP)","popular_name":"CDFI
   Rapid Response Program (CDFI RRP)","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.001","permalink":"/program/23.001","title":"Appalachian
   Regional Development (See individual Appalachian Programs)","popular_name":"(Appalachian
   Program)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
   Technical Assistance For Business Firms","popular_name":"APEX Accelerator Program/Procurement
-  Technical Assistance Program (PTAP))","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Technical Assistance Program (PTAP))","agency":"Department of Defense","total_obs":55000000.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
   Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
+  of Housing and Urban Development","total_obs":84935898.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
   Broadband Connectivity Program","popular_name":"Tribal Broadband Connectivity Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.008","permalink":"/program/32.008","title":"Affordable
+  of Commerce","total_obs":13557991.0,"program_type":"assistance_listing"},{"cfda":"32.008","permalink":"/program/32.008","title":"Affordable
   Connectivity Program","popular_name":"Affordable Connectivity Program","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Communications Commission","total_obs":5302000000.0,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
   Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.027","permalink":"/program/19.027","title":"Energy
+  of Commerce","total_obs":144742325.0,"program_type":"assistance_listing"},{"cfda":"19.027","permalink":"/program/19.027","title":"Energy
   Governance and Reform Programs","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.034","permalink":"/program/11.034","title":"2023
   MBDA Capital Readiness Program","popular_name":"CRP Program","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.615","permalink":"/program/12.615","title":"Research
   and Technical Assistance","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.014","permalink":"/program/21.014","title":"Community
   Development Financial Institutions Bond Guarantee Program","popular_name":"BGP","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.814","permalink":"/program/20.814","title":"Assistance
+  of the Treasury","total_obs":497999999.0,"program_type":"assistance_listing"},{"cfda":"20.814","permalink":"/program/20.814","title":"Assistance
   to Small Shipyards","popular_name":"(Small Shipyard Grants)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.600","permalink":"/program/12.600","title":"Community
-  Investment","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  of Transportation","total_obs":11000000.0,"program_type":"assistance_listing"},{"cfda":"12.600","permalink":"/program/12.600","title":"Community
+  Investment","popular_name":null,"agency":"Department of Defense","total_obs":331164000.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
-  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.767","permalink":"/program/10.767","title":"Intermediary
-  Relending Program","popular_name":"IRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"31.007","permalink":"/program/31.007","title":"Export
+  4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":83000000.0,"program_type":"assistance_listing"},{"cfda":"10.767","permalink":"/program/10.767","title":"Intermediary
+  Relending Program","popular_name":"IRP","agency":"Department of Agriculture","total_obs":9999999.0,"program_type":"assistance_listing"},{"cfda":"31.007","permalink":"/program/31.007","title":"Export
   - Loan Guarantee/Insured Loans","popular_name":"Export - Loan Guarantee/Insured
   Loans","agency":"Export - Import Bank of the United States","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.755","permalink":"/program/10.755","title":"Rural
   Innovation Stronger Economy","popular_name":"RISE Grant Program","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
+  of Commerce","total_obs":345589964.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
   Regional Authority","popular_name":"(Delta Program)","agency":"Delta Regional Authority","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.228","permalink":"/program/14.228","title":"Community
   Development Block Grants/State''s program and Non-Entitlement Grants in Hawaii","popular_name":"State
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.002","permalink":"/program/85.002","title":"MCC
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":4938000000.0,"program_type":"assistance_listing"},{"cfda":"85.002","permalink":"/program/85.002","title":"MCC
   Foreign Assistance for Overseas Programs","popular_name":null,"agency":"Millennium
-  Challenge Corporation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Challenge Corporation","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.611","permalink":"/program/11.611","title":"Manufacturing
-  Extension Partnership","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"11.611","permalink":"/program/11.611","title":"Manufacturing
+  Extension Partnership","popular_name":null,"agency":"Department of Commerce","total_obs":151675000.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
   Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
   Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
   Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
-  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.663","permalink":"/program/19.663","title":"Global
+  and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":1094313.0,"program_type":"assistance_listing"},{"cfda":"19.663","permalink":"/program/19.663","title":"Global
   Telecommunications and Emerging Technology Training","popular_name":"GTETT","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.860","permalink":"/program/10.860","title":"Rural
   Business Investment Program","popular_name":"RBIP or RBIC Program","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.032","permalink":"/program/15.032","title":"Indian
-  Economic Development","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
-  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
+  Economic Development","popular_name":null,"agency":"Department of the Interior","total_obs":24595455.0,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
+  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
   Services Block Grant Discretionary Awards","popular_name":"Community Economic Development  &
-  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
+  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":29059276.0,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
   Minority Communities Pilot Program","popular_name":null,"agency":"Department of
   Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.322","permalink":"/program/19.322","title":"Economic
   Statecraft","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
   Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
   Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.020","permalink":"/program/15.020","title":"Aid
-  To Tribal Governments","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.031","permalink":"/program/21.031","title":"State
+  To Tribal Governments","popular_name":null,"agency":"Department of the Interior","total_obs":52336165.0,"program_type":"assistance_listing"},{"cfda":"21.031","permalink":"/program/21.031","title":"State
   Small Business Credit Initiative Technical Assistance Grant Program","popular_name":"SSBCI
-  Formula TA Grant Program","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.237","permalink":"/program/10.237","title":"From
+  Formula TA Grant Program","agency":"Department of the Treasury","total_obs":80974174.0,"program_type":"assistance_listing"},{"cfda":"10.237","permalink":"/program/10.237","title":"From
   Learning to Leading: Cultivating the Next Generation of Diverse Food and Agriculture
   Professionals","popular_name":"NEXTGEN","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.662","permalink":"/program/19.662","title":"Fiscal
   Transparency Innovation Fund","popular_name":"FTIF","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal
-  Self-Governance","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  Self-Governance","popular_name":null,"agency":"Department of the Interior","total_obs":990181175.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
   the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
   FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
@@ -597,53 +599,53 @@ programs: '[{"cfda":"44.002","permalink":"/program/44.002","title":"Community De
   Mile (Broadband) Grant Program","popular_name":"Middle Mile Grant Program","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
   Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  of the Interior","total_obs":1211412017.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.041","permalink":"/program/59.041","title":"504
+  of Housing and Urban Development","total_obs":72030085.0,"program_type":"assistance_listing"},{"cfda":"59.041","permalink":"/program/59.041","title":"504
   Certified Development Loans","popular_name":"504 Loans","agency":"Small Business
-  Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
+  Administration","total_obs":16500000000.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
   Economic Adjustment Assistance for Realignment or Closure of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.618","permalink":"/program/12.618","title":"Community
+  of Defense","total_obs":5360259.0,"program_type":"assistance_listing"},{"cfda":"12.618","permalink":"/program/12.618","title":"Community
   Economic Adjustment Assistance for Establishment or Expansion of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  of Defense","total_obs":9036005.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
   Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
   Development Block Grants/Special Purpose Grants/Insular Areas","popular_name":"Insular
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.382","permalink":"/program/10.382","title":"Meat
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"10.382","permalink":"/program/10.382","title":"Meat
   and Poultry Intermediary Lending Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.232","permalink":"/program/10.232","title":"Blue
   Ribbon","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.076","permalink":"/program/59.076","title":"Lab-to-Market","popular_name":"L2M,
   Catalyst","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.052","permalink":"/program/59.052","title":"Native
-  American Outreach","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.062","permalink":"/program/59.062","title":"Intermediary
+  and Urban Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"59.052","permalink":"/program/59.052","title":"Native
+  American Outreach","popular_name":null,"agency":"Small Business Administration","total_obs":3600000.0,"program_type":"assistance_listing"},{"cfda":"59.062","permalink":"/program/59.062","title":"Intermediary
   Loan Program","popular_name":"ILP","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
   Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
   Research)","agency":"Appalachian Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.035","permalink":"/program/11.035","title":"Broadband
   Equity, Access, and Deployment Program","popular_name":"Broadband Equity, Access,
-  and Deployment Program","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.805","permalink":"/program/11.805","title":"MBDA
+  and Deployment Program","agency":"Department of Commerce","total_obs":24408576434.0,"program_type":"assistance_listing"},{"cfda":"11.805","permalink":"/program/11.805","title":"MBDA
   Business Center","popular_name":"Business Center Program","agency":"Department of
-  Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  Commerce","total_obs":14025000.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
   of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.133","permalink":"/program/15.133","title":"Native
   American Business Development Institute","popular_name":"(NABDI)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.021","permalink":"/program/21.021","title":"Bank
   Enterprise Award Program","popular_name":"BEA Program","agency":"Department of the
-  Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Treasury","total_obs":40075069.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.507","permalink":"/program/20.507","title":"Federal
   Transit Formula Grants","popular_name":"Urbanized Area Formula Program; Section
-  5307","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.804","permalink":"/program/11.804","title":"MBDA
+  5307","agency":"Department of Transportation","total_obs":8363743000.0,"program_type":"assistance_listing"},{"cfda":"11.804","permalink":"/program/11.804","title":"MBDA
   Business Center - American Indian and Alaska Native","popular_name":"MBDA Native
-  American Business Enterprise Entrepreneurship","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
+  American Business Enterprise Entrepreneurship","agency":"Department of Commerce","total_obs":3900000.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
   Reduction Assistance","popular_name":"SRA Grants","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.301","permalink":"/program/19.301","title":"The
+  Agency","total_obs":187947.0,"program_type":"assistance_listing"},{"cfda":"19.301","permalink":"/program/19.301","title":"The
   Secretary''s Office of the Global Partnership Initiative (S/GPI) Grant Programs","popular_name":"Global
   Partnership Initiative ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.012","permalink":"/program/21.012","title":"Native
-  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.022","permalink":"/program/12.022","title":"DoD
+  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":47245000.0,"program_type":"assistance_listing"},{"cfda":"12.022","permalink":"/program/12.022","title":"DoD
   Mentor-Protege Program","popular_name":"DoD MP Program","agency":"Department of
-  Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.377","permalink":"/program/10.377","title":"Agriculture
+  Defense","total_obs":30849358.0,"program_type":"assistance_listing"},{"cfda":"10.377","permalink":"/program/10.377","title":"Agriculture
   Innovation Center Demonstration Program","popular_name":"Agriculture Innovation
   Center (AIC) Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
   Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
@@ -651,42 +653,42 @@ programs: '[{"cfda":"44.002","permalink":"/program/44.002","title":"Community De
   Creek Wilderness Economic Grant Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
   Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.021","permalink":"/program/15.021","title":"Consolidated
-  Tribal Government ","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  Protection Agency","total_obs":17178557.0,"program_type":"assistance_listing"},{"cfda":"15.021","permalink":"/program/15.021","title":"Consolidated
+  Tribal Government ","popular_name":null,"agency":"Department of the Interior","total_obs":189060701.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
   Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.031","permalink":"/program/11.031","title":"Broadband
+  of the Interior","total_obs":7663756.0,"program_type":"assistance_listing"},{"cfda":"11.031","permalink":"/program/11.031","title":"Broadband
   Infrastructure Program","popular_name":"Broadband Infrastructure Program","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.617","permalink":"/program/12.617","title":"Economic
   Adjustment Assistance for State Governments","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  of Defense","total_obs":3468000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.011","permalink":"/program/21.011","title":"Capital
-  Magnet Fund","popular_name":"CMF","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
+  of Commerce","total_obs":97824471.0,"program_type":"assistance_listing"},{"cfda":"21.011","permalink":"/program/21.011","title":"Capital
+  Magnet Fund","popular_name":"CMF","agency":"Department of the Treasury","total_obs":321235225.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
   Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
-  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.771","permalink":"/program/10.771","title":"Rural
-  Cooperative Development Grants","popular_name":"RCDG","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.032","permalink":"/program/11.032","title":"State
+  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":75467833.0,"program_type":"assistance_listing"},{"cfda":"10.771","permalink":"/program/10.771","title":"Rural
+  Cooperative Development Grants","popular_name":"RCDG","agency":"Department of Agriculture","total_obs":5800000.0,"program_type":"assistance_listing"},{"cfda":"11.032","permalink":"/program/11.032","title":"State
   Digital Equity Planning and Capacity Grant","popular_name":"State Digital Equity
-  Planning and Capacity Grant","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.870","permalink":"/program/10.870","title":"Rural
+  Planning and Capacity Grant","agency":"Department of Commerce","total_obs":29786321.0,"program_type":"assistance_listing"},{"cfda":"10.870","permalink":"/program/10.870","title":"Rural
   Microentrepreneur Assistance Program","popular_name":"RMAP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.910","permalink":"/program/20.910","title":"Assistance
+  of Agriculture","total_obs":7572129.0,"program_type":"assistance_listing"},{"cfda":"20.910","permalink":"/program/20.910","title":"Assistance
   to Small and Disadvantaged Businesses","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.890","permalink":"/program/10.890","title":"Rural
+  of Transportation","total_obs":2261325.0,"program_type":"assistance_listing"},{"cfda":"10.890","permalink":"/program/10.890","title":"Rural
   Development Cooperative Agreement Program","popular_name":"Rural Development''s
   Investment Food Supply Chains","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.725","permalink":"/program/10.725","title":"Infrastructure
   and Investment Jobs Act Financial Assistance to Facilities that Purchase and Process
   Byproducts for Ecosystem Restoration","popular_name":"Assistance to Byproducts Purchasers
-  and Processors","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
+  and Processors","agency":"Department of Agriculture","total_obs":22939735.0,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
   Area Development","popular_name":"(Supplemental and Direct Grants)","agency":"Appalachian
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.056","permalink":"/program/10.056","title":"Farm
-  Storage Facility Loans","popular_name":"FSFL","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"10.056","permalink":"/program/10.056","title":"Farm
+  Storage Facility Loans","popular_name":"FSFL","agency":"Department of Agriculture","total_obs":312094000.0,"program_type":"assistance_listing"}]'
 title: Economic Development
 total_num_agencies: 21
 total_num_applicant_types: 39
 total_num_programs: 108
-total_obs: 0.0
+total_obs: 71007686429.0
 ---

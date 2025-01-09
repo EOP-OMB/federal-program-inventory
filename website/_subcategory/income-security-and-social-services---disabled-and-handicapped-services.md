@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":12,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation for National
-  and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":12,"total_obs":921004261299.0},{"title":"Social
+  Security Administration","total_num_programs":3,"total_obs":317876999999.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":1079165905.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":465492000.0},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":208488000.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":52719452.0},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":41000000.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":10},{"title":"Individual/Family","total_num_programs":9},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
@@ -484,7 +484,7 @@ parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/disabled-and-handicapped-services
 programs: '[{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore and
   Harbor Workers'' Compensation","popular_name":"Longshore","agency":"Department of
-  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons
+  Labor","total_obs":95327000.0,"program_type":"assistance_listing"},{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons
   Removal and Abatement","popular_name":"(PM/WRA)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.632","permalink":"/program/93.632","title":"University
   Centers for Excellence in Developmental Disabilities Education, Research, and Service","popular_name":"(University
@@ -494,37 +494,37 @@ programs: '[{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore an
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.009","permalink":"/program/21.009","title":"Volunteer
   Income Tax Assistance (VITA) Matching Grant Program","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.631","permalink":"/program/93.631","title":"Developmental
+  of the Treasury","total_obs":41000000.0,"program_type":"assistance_listing"},{"cfda":"93.631","permalink":"/program/93.631","title":"Developmental
   Disabilities Projects of National Significance","popular_name":"Developmental Disabilities
   Projects of National Significance \r\n","agency":"Department of Health and Human
   Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.513","permalink":"/program/20.513","title":"Enhanced
   Mobility of Seniors and Individuals with Disabilities ","popular_name":"Section
-  5310 Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
+  5310 Program","agency":"Department of Transportation","total_obs":465492000.0,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
   Hospital Insurance","popular_name":"(Medicare Part A)","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.241","permalink":"/program/14.241","title":"Housing
+  and Human Services","total_obs":388834000000.0,"program_type":"assistance_listing"},{"cfda":"14.241","permalink":"/program/14.241","title":"Housing
   Opportunities for Persons with AIDS","popular_name":"HOPWA","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.879","permalink":"/program/14.879","title":"Mainstream
-  Vouchers","popular_name":null,"agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
+  of Housing and Urban Development","total_obs":453456313.0,"program_type":"assistance_listing"},{"cfda":"14.879","permalink":"/program/14.879","title":"Mainstream
+  Vouchers","popular_name":null,"agency":"Department of Housing and Urban Development","total_obs":625709592.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
   Mine Workers'' Compensation","popular_name":"Black Lung","agency":"Department of
-  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.016","permalink":"/program/94.016","title":"AmeriCorps
+  Labor","total_obs":113161000.0,"program_type":"assistance_listing"},{"cfda":"94.016","permalink":"/program/94.016","title":"AmeriCorps
   Seniors Senior Companion Program (SCP) 94.016","popular_name":"Senior Companion
-  Program (SCP) 94.016","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
+  Program (SCP) 94.016","agency":"Corporation for National and Community Service","total_obs":52719452.0,"program_type":"assistance_listing"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
   Security Survivors Insurance","popular_name":"Survivor Benefits","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.001","permalink":"/program/96.001","title":"Social
+  Security Administration","total_obs":107093000000.0,"program_type":"assistance_listing"},{"cfda":"96.001","permalink":"/program/96.001","title":"Social
   Security Disability Insurance","popular_name":"Social Security Disability Insurance
-  ","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.560","permalink":"/program/93.560","title":"Payments
+  ","agency":"Social Security Administration","total_obs":153578000000.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"93.560","permalink":"/program/93.560","title":"Payments
   to Territories \u2013 Adults","popular_name":"Payments to Territories - Adults","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.138","permalink":"/program/93.138","title":"Protection
+  of Health and Human Services","total_obs":33000000.0,"program_type":"assistance_listing"},{"cfda":"93.138","permalink":"/program/93.138","title":"Protection
   and Advocacy for Individuals with Mental Illness","popular_name":"(PAIMI)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.774","permalink":"/program/93.774","title":"Medicare
+  of Health and Human Services","total_obs":39847619.0,"program_type":"assistance_listing"},{"cfda":"93.774","permalink":"/program/93.774","title":"Medicare
   Supplementary Medical Insurance","popular_name":"(Medicare Part B)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  of Health and Human Services","total_obs":519953000000.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
   Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.047","permalink":"/program/93.047","title":"Special
   Programs for the Aging, Title VI, Part A, Grants to Indian Tribes, Part B, Grants
@@ -534,10 +534,10 @@ programs: '[{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore an
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.006","permalink":"/program/96.006","title":"Supplemental
   Security Income","popular_name":"Supplemental Security Income  (SSI)","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Security Administration","total_obs":57205999999.0,"program_type":"assistance_listing"}]'
 title: Disabled and Handicapped Services
 total_num_agencies: 9
 total_num_applicant_types: 37
 total_num_programs: 26
-total_obs: 0.0
+total_obs: 1240728126655.0
 ---

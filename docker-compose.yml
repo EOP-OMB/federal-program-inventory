@@ -41,9 +41,9 @@ services:
       context: ./website
     ports:
       - "8080:8080"         
-    depends_on:
-      api:
-        condition: service_healthy   # Wait for `api` to be healthy
+    # depends_on:
+    #   api:
+    #     condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
 
@@ -53,9 +53,9 @@ services:
       - ./website/data:/app/data
       - ./indexer:/app/indexer
     working_dir: /app/indexer
-    # depends_on:
-    #   elasticsearch:
-    #     condition: service_healthy
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
     command: ["python", "-u", "index_programs.py"]
     networks:
       - internal
