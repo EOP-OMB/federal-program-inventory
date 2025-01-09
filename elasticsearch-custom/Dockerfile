@@ -39,7 +39,7 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh && \
     dos2unix /usr/local/bin/docker-entrypoint.sh
 
 # Now switch to elasticsearch user after all setup is done
-USER elasticsearch
+USER 1000:1000
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
