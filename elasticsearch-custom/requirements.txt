@@ -1,2 +1,0 @@
-elasticsearch==8.15
-urllib3<2.0.0

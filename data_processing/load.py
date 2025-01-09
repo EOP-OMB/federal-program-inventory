@@ -1403,7 +1403,7 @@ try:
     home_path = os.path.join('../website', 'pages', 'home.md')
     generate_home_page(home_path, shared_data, constants.FISCAL_YEAR)
 
-    programs_json_path = os.path.join('../elasticsearch-custom', 'data', 'programs-table.json')
+    programs_json_path = os.path.join('../indexer', 'programs-table.json')
     generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')

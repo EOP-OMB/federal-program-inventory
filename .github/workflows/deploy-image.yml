@@ -18,8 +18,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - context: ./elasticsearch-custom
-            image_tag: elasticsearch
+          - context: ./indexer
+            image_tag: indexer
           - context: ./api
             image_tag: api
           - context: ./website
