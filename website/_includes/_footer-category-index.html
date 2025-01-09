@@ -153,7 +153,7 @@
 
   function downloadObligationsData() {
     const dataToExport = obligationData;
-    let headers = ['Type', `Obligations (FY${fiscalYear})`, 'Percentage'];
+    let headers = ['Type', `Expenditures (FY${fiscalYear})`, 'Percentage'];
 
     let csvContent = headers.join(",") + "\n";
     const total = dataToExport.reduce((sum, item) => sum + item.total_obs, 0);
@@ -250,7 +250,7 @@
 
       function downloadTableData() {
         const dataToExport = categoriesChartData;
-        let headers = ['Category', 'Number of Programs', `Obligations (FY${fiscalYear})`];
+        let headers = ['Category', 'Number of Programs', `Expenditures (FY${fiscalYear})`];
 
         let csvContent = headers.join(",") + "\n";
         dataToExport.forEach((item) => {
@@ -329,7 +329,7 @@
         const { divisor, suffix } = getFormattingInfo(groomedCategoriesChartData);
 
         createBarChart(groomedCategoriesChartData, {
-          xLabel: "Obligations in US Dollars",
+          xLabel: "Expenditures in US Dollars",
           yLabel: "Categories",
           valueFormatter: (value) => formatObligations(value),
           xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.009
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: Under the baseline tax system, the costs of exploring and developing 
   may expense only 70 percent of intangible drilling costs and must amortize the remaining
   30 percent over five years. Non-integrated oil companies may expense all such costs.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":720000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":550000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":700000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":550000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":400000000.0}]'
 outlays: null
 permalink: /program/TC.009.html
 popular_name: ''

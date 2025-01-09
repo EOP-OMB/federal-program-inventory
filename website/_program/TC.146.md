@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.146
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: Under the reference tax law baseline, gifts and transfers are not tre
   from the Government as part of the recipients’ income, and thus, treats the exclusion
   for public assistance benefits under current law as a tax expenditure.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":810000000.0}]'
 outlays: null
 permalink: /program/TC.146.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.163
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -27,7 +27,7 @@ objective: The baseline tax system would not allow credits for particular activi
   indexed by the chained CPI, which results in a smaller inflation adjustment than
   previously.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":77290000000.0,"forgone_revenue":2410000000.0},{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0},{"x":"2025","outlays":74080000000.0,"forgone_revenue":3310000000.0}]'
 outlays: null
 permalink: /program/TC.163.html
 popular_name: ''

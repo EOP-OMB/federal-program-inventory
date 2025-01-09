@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - General Science, Space, and Technology
 cfda: TC.007
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -27,7 +27,7 @@ objective: The baseline tax system allows a deduction for the cost of producing 
   years, while allowing R&E expenditures paid or incurred in prior taxable years to
   be expensed.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":-19820000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":-38660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-25050000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":-38660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-25050000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":-17360000000.0}]'
 outlays: null
 permalink: /program/TC.007.html
 popular_name: ''

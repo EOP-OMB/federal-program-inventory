@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.076
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: The baseline tax system would not allow deductions and exemptions or 
   after September 27, 2010. A qualified small business is a corporation whose gross
   assets do not exceed $50 million as of the date of issuance of the stock.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1680000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1780000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1780000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3510000000.0}]'
 outlays: null
 permalink: /program/TC.076.html
 popular_name: ''

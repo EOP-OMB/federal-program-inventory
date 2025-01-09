@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.164
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: The baseline tax system would not allow credits for particular activi
   is phased out proportionately by $80,000 of AGI ($160,000 for married couples filing
   jointly, $120,000 for heads of household).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":13620000000.0,"forgone_revenue":19320000000.0},{"x":"2023","outlays":2150000000.0,"forgone_revenue":3460000000.0},{"x":"2024","outlays":150000000.0,"forgone_revenue":91000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":2150000000.0,"forgone_revenue":3460000000.0},{"x":"2024","outlays":150000000.0,"forgone_revenue":91000000.0},{"x":"2025","outlays":30000000.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.164.html
 popular_name: ''

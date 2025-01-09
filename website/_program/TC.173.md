@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - General Purpose Fiscal Assistance
 cfda: TC.173
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -25,7 +25,7 @@ objective: Under the baseline tax system, a deduction for personal consumption e
   year, which includes the deduction for property taxes on real property, is limited
   to $10,000 ($5,000 in the case of a married individual filing a separate return).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":5750000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7030000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6540000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":7030000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6540000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":6250000000.0}]'
 outlays: null
 permalink: /program/TC.173.html
 popular_name: ''

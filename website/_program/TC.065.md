@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.065
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system would not allow deductions and exemptions for
   a total of at least two of the five years preceding the date of sale. In addition,
   the exclusion may not be used more than once every two years.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":49200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":54410000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":59070000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":54410000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":59070000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":61740000000.0}]'
 outlays: null
 permalink: /program/TC.065.html
 popular_name: ''

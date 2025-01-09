@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.105
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system accepts current law’s general rule limiting
   for other taxpayers). Married individuals filing separate returns cannot claim the
   deduction.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":560000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":500000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":560000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2540000000.0}]'
 outlays: null
 permalink: /program/TC.105.html
 popular_name: ''

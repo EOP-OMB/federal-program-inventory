@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Health
 cfda: TC.138
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system would not allow credits for particular activi
   a tax credit of 25 percent of the costs for clinical testing required by the Food
   and Drug Administration for drugs that treat rare physical conditions or rare diseases.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1740000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1930000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1740000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1930000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2150000000.0}]'
 outlays: null
 permalink: /program/TC.138.html
 popular_name: ''

@@ -1,50 +1,25 @@
 services:
   elasticsearch:
-    build:
-      context: ./elasticsearch-custom
-      dockerfile: Dockerfile
+    build: ./elasticsearch-custom
     container_name: elasticsearch
-    environment:
-      - discovery.type=single-node
-      - xpack.security.enabled=false
-    ports:
-      - "9200:9200"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 40s
     networks:
       - internal
       
   api:
     build: ./api
-    ports:
-      - "8000:8000"
     depends_on:
       elasticsearch:
         condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-X", "GET", "http://localhost:8000/", "-H", "accept: application/json"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    environment:
-      - ES_HOST=elasticsearch
-      - ES_PORT=9200
-      - ES_SCHEME=http
     networks:
       - internal
 
   website:
-    build:
-      context: ./website
+    build: ./website
     ports:
-      - "8080:8080"         
+      - "8080:8080"
     depends_on:
       api:
-        condition: service_healthy   # Wait for `api` to be healthy
+        condition: service_healthy
     networks:
       - internal
 

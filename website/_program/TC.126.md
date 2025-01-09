@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.126
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: The baseline tax system generally would tax all income under the regu
   law, compensation received for this service is excluded from the gross incomes of
   foster parents; the expenses they incur are nondeductible.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":480000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":500000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":920000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":500000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":920000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1000000000.0}]'
 outlays: null
 permalink: /program/TC.126.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - National Defense
 cfda: TC.001
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   provided military personnel, either in cash or in kind, as well as certain amounts
   of pay related to combat service, are excluded from income subject to tax.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":14830000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1599000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":16910000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1599000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":16910000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":17570000000.0}]'
 outlays: null
 permalink: /program/TC.001.html
 popular_name: ''

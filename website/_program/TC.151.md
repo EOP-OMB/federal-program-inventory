@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.151
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -25,7 +25,7 @@ objective: Under the baseline tax system, all compensation, including deferred a
   Roth IRA contributions are not deductible, but earnings and withdrawals are exempt
   from taxation. Income limits also apply to Roth IRA contributions.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":23600000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":32690000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":33550000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":32690000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":33550000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":35110000000.0}]'
 outlays: null
 permalink: /program/TC.151.html
 popular_name: ''
