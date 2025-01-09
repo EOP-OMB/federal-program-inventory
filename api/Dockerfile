@@ -32,7 +32,7 @@ EXPOSE 8000
 RUN addgroup appgroup --gid 1000 && \
 useradd appuser --uid 1000 --gid appgroup --home-dir /app/ && \
 chown -R appuser:appgroup /app/
-USER appuser
+USER 1000:1000
 
 # Command to run the FastAPI app using Uvicorn
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
