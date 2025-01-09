@@ -262,10 +262,15 @@ if __name__ == "__main__":
 
             # If document count in ES does not equal source JSON, rebuild
             if json_program_count != es_program_count:
-                delete_index(index_name)
-                create_index_with_mapping(index_name)
-                doc_count = load_data(json_file, index_name)
-                final_count = verify_index(index_name)
+                if es_program_count != 0:
+                    delete_index(index_name)
+                    create_index_with_mapping(index_name)
+                new_es_program_count = load_data(json_file, index_name)
+                final_es_program_count = verify_index(index_name)
+                logger.info(f"Indexing complete. JSON: {json_program_count}; \
+                              Initial ES: {es_program_count}; \
+                              New ES: {new_es_program_count}; \
+                              Verified ES: {final_es_program_count}")
 
         except Exception as e:
             logger.error(f"Indexing process failed: {str(e)}")
