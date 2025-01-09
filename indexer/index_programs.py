@@ -265,3 +265,13 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"Indexing process failed: {str(e)}")
         raise
+
+    # Continuously check if Elasticsearch is available
+    status_code = 0
+    while status_code == 0:
+        time.sleep(60)
+        try:
+            r = requests.get("http://localhost:9200/")
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.ReadTimeout):
+            print("Elasticsearch service not available.")
