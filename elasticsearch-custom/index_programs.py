@@ -1,14 +1,31 @@
+print("Starting index_programs.py!")
 from elasticsearch import Elasticsearch, helpers
 import json
 import os
 import logging
+import time
+import requests
+print("Imports completed!")
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Wait until elasticsearch service is live
+status_code = 0
+while status_code != 200:
+    try:
+        r = requests.get("http://elasticsearch:9200")
+    except (requests.exceptions.ConnectionError,
+            requests.exceptions.ReadTimeout):
+        print("Elasticsearch service not available; waiting 5 seconds.")
+        time.sleep(5)
+    else:
+        status_code = r.status_code
+
 # Elasticsearch client connected to the service
 es = Elasticsearch(hosts=["http://elasticsearch:9200"])
+
 
 def delete_index(index_name):
     """Delete index if it exists"""
@@ -222,6 +239,7 @@ if __name__ == "__main__":
         index_name = "programs"
         
         # Step 1: Delete existing index
+        print("Step 1: Cleaning up old index")
         logger.info("Step 1: Cleaning up old index")
         delete_index(index_name)
         
@@ -246,3 +264,13 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"Indexing process failed: {str(e)}")
         raise
+
+    # Continuously check if Elasticsearch is available
+    status_code = 0
+    while status_code == 0:
+        time.sleep(60)
+        try:
+            r = requests.get("http://elasticsearch:9200")
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.ReadTimeout):
+            print("Elasticsearch service not available.")
