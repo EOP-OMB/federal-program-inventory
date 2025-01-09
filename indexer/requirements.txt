@@ -1,1 +1,2 @@
 elasticsearch==8.15
+requests==2.31.0

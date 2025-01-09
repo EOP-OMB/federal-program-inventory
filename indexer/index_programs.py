@@ -1,15 +1,24 @@
 from elasticsearch import Elasticsearch, helpers
 import json
-import os
 import logging
 import time
+import requests
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
-time.sleep(500)
+# Wait until elasticsearch service is live
+status_code = 0
+while status_code != 200:
+    try:
+        r = requests.get("http://localhost:9200/")
+    except (requests.exceptions.ConnectionError,
+            requests.exceptions.ReadTimeout):
+        print("Elasticsearch service not available; waiting 5 seconds.")
+        time.sleep(5)
+    else:
+        status_code = r.status_code
 
 # Elasticsearch client connected to the service
 es = Elasticsearch(hosts=["http://localhost:9200"])
