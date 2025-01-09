@@ -31,6 +31,7 @@ def delete_index(index_name):
             logger.info(f"Deleting existing index '{index_name}'")
             es.indices.delete(index=index_name)
             logger.info(f"Successfully deleted index '{index_name}'")
+            time.sleep(10)  # wait 10 seconds after deletion to proceed
             return True
         else:
             logger.info(f"Index { index_name } does not exist, no need to \
