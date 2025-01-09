@@ -272,7 +272,7 @@ if __name__ == "__main__":
     while status_code == 0:
         time.sleep(60)
         try:
-            r = requests.get("http://localhost:9200/")
+            r = requests.get("http://localhost:9200")
         except (requests.exceptions.ConnectionError,
                 requests.exceptions.ReadTimeout):
             print("Elasticsearch service not available.")

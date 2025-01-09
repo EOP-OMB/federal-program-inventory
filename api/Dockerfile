@@ -1,10 +1,5 @@
 FROM python:3.9-slim
 
-# Set environment variables for connection to elasticsearch
-ENV ES_HOST=localhost
-ENV ES_PORT=9200
-ENV ES_SCHEME=http
-
 # Define healthcheck to ensure container is running
 HEALTHCHECK --interval=10s --timeout=5s --retries=5  \
     CMD curl -X GET -H "Accept: application/json" \
