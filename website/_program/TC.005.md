@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - International Affairs
 cfda: TC.005
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: Under the baseline tax system, the United States taxes income earned 
   a deduction equal to 37.5 percent of “foreign-derived intangible income,” which
   is essentially
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":11900000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15950000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":15240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":15950000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":16420000000.0}]'
 outlays: null
 permalink: /program/TC.005.html
 popular_name: ''

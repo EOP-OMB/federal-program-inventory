@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.116
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system would not allow credits for particular activi
   As of March 2010, issuers of such bonds could opt to receive direct payment with
   the yield becoming fully taxable.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":560000000.0,"forgone_revenue":520000000.0},{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0},{"x":"2025","outlays":480000000.0,"forgone_revenue":440000000.0}]'
 outlays: null
 permalink: /program/TC.116.html
 popular_name: ''

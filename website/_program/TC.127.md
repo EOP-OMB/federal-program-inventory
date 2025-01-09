@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.127
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   income for the value of the clergyman’s housing allowance or the rental value of
   the clergyman’s parsonage.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":970000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":959000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1160000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":959000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1160000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1220000000.0}]'
 outlays: null
 permalink: /program/TC.127.html
 popular_name: ''

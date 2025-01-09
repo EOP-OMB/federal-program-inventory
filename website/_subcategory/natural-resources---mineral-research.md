@@ -1,29 +1,30 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":16,"total_obs":591188387.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":229155033.95},{"title":"Gulf Coast
-  Ecosystem Restoration Council","total_num_programs":2,"total_obs":158403307.0},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":130359022.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":24500000.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":8759626.109},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":4085000.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali
+agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":0.0},{"title":"Department
+  of the Interior","total_num_programs":24,"total_obs":0.0},{"title":"Department of
+  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":16},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":15},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":15},{"title":"Public
+applicant_types: '[{"title":"State (includes District of Columbia, public institutions
+  of higher education and hospitals)","total_num_programs":19},{"title":"Local (includes
+  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":18},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":14},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":12},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":10},{"title":"Other public
-  institution/organization","total_num_programs":10},{"title":"Federal","total_num_programs":9},{"title":"Interstate","total_num_programs":6},{"title":"Non-Government
-  - General","total_num_programs":5},{"title":"Other private institutions/organizations","total_num_programs":5},{"title":"Profit
-  organization","total_num_programs":5},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":5},{"title":"Intrastate","total_num_programs":4},{"title":"Government
-  - General","total_num_programs":3},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":3},{"title":"U.S. Territories and possessions
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
-  business (less than 500 employees)","total_num_programs":2},{"title":"U.S. Territories
-  and possessions","total_num_programs":2},{"title":"Anyone/general public","total_num_programs":1},{"title":"City
-  or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Indian/Native
+  hospitals)","total_num_programs":18},{"title":"State","total_num_programs":18},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":15},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":15},{"title":"Federal","total_num_programs":12},{"title":"Other
+  public institution/organization","total_num_programs":10},{"title":"Interstate","total_num_programs":8},{"title":"Profit
+  organization","total_num_programs":6},{"title":"Intrastate","total_num_programs":5},{"title":"Non-Government
+  - General","total_num_programs":5},{"title":"Other private institutions/organizations","total_num_programs":5},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":5},{"title":"Individual/Family","total_num_programs":4},{"title":"Native
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":4},{"title":"Sponsored organization","total_num_programs":4},{"title":"Government
+  - General","total_num_programs":3},{"title":"U.S. Territories and possessions (includes
+  institutions of higher education and hospitals)","total_num_programs":3},{"title":"Anyone/general
+  public","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"U.S.
+  Territories and possessions","total_num_programs":2},{"title":"City or Township
+  Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Indian/Native
   American Tribally Designated Organization","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Special District Government","total_num_programs":1},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":1}]'
@@ -479,78 +480,90 @@ categories_subcategories:
   - permalink: /category/transportation/water-navigation
     title: Water Navigation
   title: Transportation
-fiscal_year: '2022'
+fiscal_year: '2024'
 parent_permalink: /category/natural-resources
 parent_title: Natural Resources
 permalink: /category/natural-resources/mineral-research
-programs: '[{"cfda":"15.685","permalink":"/program/15.685","title":"National Fish
-  Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
-  of the Interior","total_obs":52020000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
-  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":17359022.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
-  Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
-  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":90448634.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
-  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
-  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":124100000.0,"program_type":"assistance_listing"},{"cfda":"15.504","permalink":"/program/15.504","title":"Water
-  Recycling and Desalination Construction Programs","popular_name":"Title XVI Water
-  Reclamation and Reuse","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.427","permalink":"/program/15.427","title":"Federal
-  Oil and Gas Royalty Management State and Tribal Coordination","popular_name":"(FOGRMA)","agency":"Department
-  of the Interior","total_obs":14274456.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
-  Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
-  Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
-  Grants","agency":"Environmental Protection Agency","total_obs":42000000.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
-  Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
-  of the Interior","total_obs":215242579.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
-  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
-  Council","total_obs":67954673.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.543","permalink":"/program/15.543","title":"Lake
-  Tahoe Regional Wetlands Development ","popular_name":null,"agency":"Department of
-  the Interior","total_obs":30000.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
-  and Veteran Organizations Conservation Activities","popular_name":"21st Century
-  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":28303582.0,"program_type":"assistance_listing"},{"cfda":"81.214","permalink":"/program/81.214","title":"Environmental
+programs: '[{"cfda":"15.543","permalink":"/program/15.543","title":"Lake Tahoe Regional
+  Wetlands Development ","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.810","permalink":"/program/15.810","title":"National
+  Cooperative Geologic Mapping ","popular_name":"(StateMap and EdMap)","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.214","permalink":"/program/81.214","title":"Environmental
   Monitoring/Cleanup, Cultural and Resource Mgmt., Emergency Response Research, Outreach,
   Technical Analysis","popular_name":"Savannah River Site Environmental Monitoring/Cleanup","agency":"Department
-  of Energy","total_obs":24500000.0,"program_type":"assistance_listing"},{"cfda":"15.978","permalink":"/program/15.978","title":"Upper
-  Mississippi River Restoration Long Term Resource Monitoring","popular_name":"LTRM","agency":"Department
-  of the Interior","total_obs":3756769.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.038","permalink":"/program/15.038","title":"Minerals
+  and Mining on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
+  Cost Share","popular_name":"National Park Service Challenge Cost Share","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
+  Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.073","permalink":"/program/15.073","title":"Earth
+  Mapping Resources Initiative","popular_name":"Earth MRI","agency":"Department of
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.808","permalink":"/program/15.808","title":"U.S.
+  Geological Survey Research and Data Collection","popular_name":null,"agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
+  National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
+  Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
+  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
+  and Veteran Organizations Conservation Activities","popular_name":"21st Century
+  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.669","permalink":"/program/15.669","title":"Cooperative
+  Landscape Conservation","popular_name":"Cooperative Landscape Conservation Landscape","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
+  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
   Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
-  Protection Agency","total_obs":71000000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.252","permalink":"/program/15.252","title":"Abandoned
+  Mine Land Reclamation (AMLR)","popular_name":"Abandoned Mine Lands (AML) Program","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.222","permalink":"/program/15.222","title":"Cooperative
+  Inspection Agreements with States and Tribes","popular_name":"Section 202 Agreements","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.670","permalink":"/program/15.670","title":"Adaptive
+  Science","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
+  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.255","permalink":"/program/15.255","title":"Science
+  and Technology Projects Related to Coal Mining and Reclamation","popular_name":"Technology
+  Development and Transfer Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.427","permalink":"/program/15.427","title":"Federal
+  Oil and Gas Royalty Management State and Tribal Coordination","popular_name":"(FOGRMA)","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.978","permalink":"/program/15.978","title":"Upper
+  Mississippi River Restoration Long Term Resource Monitoring","popular_name":"LTRM","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
+  Services","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
+  Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
+  Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.658","permalink":"/program/15.658","title":"Natural
+  Resource Damage Assessment and Restoration","popular_name":"NRDAR","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
+  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
+  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
   Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":8403924.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
-  Services","popular_name":null,"agency":"Department of the Interior","total_obs":1620704.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
-  Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
-  Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.810","permalink":"/program/15.810","title":"National
-  Cooperative Geologic Mapping ","popular_name":"(StateMap and EdMap)","agency":"Department
-  of the Interior","total_obs":15307595.0,"program_type":"assistance_listing"},{"cfda":"15.441","permalink":"/program/15.441","title":"Safety
-  and Environmental Research and Data Collection for Offshore Energy and Mineral Activities","popular_name":"OESI
-  (Ocean Energy Safety Institute)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.214","permalink":"/program/15.214","title":"Non-Sale
-  Disposals of Mineral Material","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
-  and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
-  Act","agency":"Department of Defense","total_obs":91400000.0,"program_type":"assistance_listing"},{"cfda":"15.808","permalink":"/program/15.808","title":"U.S.
-  Geological Survey Research and Data Collection","popular_name":null,"agency":"Department
-  of the Interior","total_obs":178082702.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
-  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
-  of State","total_obs":355702.109,"program_type":"assistance_listing"},{"cfda":"15.815","permalink":"/program/15.815","title":"National
+  WHA","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.815","permalink":"/program/15.815","title":"National
   Land Remote Sensing Education Outreach and Research","popular_name":"Remote Sensing
-  State Grants","agency":"Department of the Interior","total_obs":1250000.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
+  State Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
+  and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
+  Act","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.423","permalink":"/program/15.423","title":"Bureau
+  of Ocean Energy Management (BOEM) Environmental Studies (ES)","popular_name":"(ESP)","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.214","permalink":"/program/15.214","title":"Non-Sale
+  Disposals of Mineral Material","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.441","permalink":"/program/15.441","title":"Safety
+  and Environmental Research and Data Collection for Offshore Energy and Mineral Activities","popular_name":"OESI
+  (Ocean Energy Safety Institute)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
   Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":4085000.0,"program_type":"assistance_listing"},{"cfda":"15.073","permalink":"/program/15.073","title":"Earth
-  Mapping Resources Initiative","popular_name":"Earth MRI","agency":"Department of
-  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
-  National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
-  of Defense","total_obs":13655033.95,"program_type":"assistance_listing"},{"cfda":"15.669","permalink":"/program/15.669","title":"Cooperative
-  Landscape Conservation","popular_name":"Cooperative Landscape Conservation Landscape","agency":"Department
-  of the Interior","total_obs":81300000.0,"program_type":"assistance_listing"}]'
+  Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
+  Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.504","permalink":"/program/15.504","title":"Water
+  Recycling and Desalination Construction Programs","popular_name":"Title XVI Water
+  Reclamation and Reuse","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
+  Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
+  Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
+  Grants","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Mineral Research
 total_num_agencies: 9
 total_num_applicant_types: 43
-total_num_programs: 31
-total_obs: 1146450376.059
+total_num_programs: 39
+total_obs: 0.0
 ---

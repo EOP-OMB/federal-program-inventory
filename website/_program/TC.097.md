@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Community and Regional Development
 cfda: TC.097
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system would not allow credits for particular activi
   is generally $5 billion for each calendar year 2020 through 2025, the last year
   for which credit allocations are authorized.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1310000000.0}]'
 outlays: null
 permalink: /program/TC.097.html
 popular_name: ''

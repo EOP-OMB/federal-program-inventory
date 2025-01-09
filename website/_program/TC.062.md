@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.062
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -31,7 +31,7 @@ objective: Under the baseline tax system, expenses incurred in earning income wo
   December 15, 2017, and (2) the deduction for interest on home equity indebtedness
   is disallowed.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":34430000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":31820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":29060000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":31820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":29060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":29600000000.0}]'
 outlays: null
 permalink: /program/TC.062.html
 popular_name: ''

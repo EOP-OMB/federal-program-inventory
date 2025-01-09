@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.114
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system would not allow a deduction for personal expe
   instructor, counselor, principal or aide, to subtract up to $300 of qualified expenses
   when determining their adjusted gross income (AGI).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":180000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":160000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":160000000.0}]'
 outlays: null
 permalink: /program/TC.114.html
 popular_name: ''

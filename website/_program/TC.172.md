@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - General Purpose Fiscal Assistance
 cfda: TC.172
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: The baseline tax system would not allow credits for particular activi
   local governments could issue taxable bonds and the private lenders would receive
   the 35 percent credit which is included in taxable income.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":2500000000.0,"forgone_revenue":0.0},{"x":"2023","outlays":2170000000.0,"forgone_revenue":0.0},{"x":"2024","outlays":2260000000.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2023","outlays":2170000000.0,"forgone_revenue":0.0},{"x":"2024","outlays":2260000000.0,"forgone_revenue":0.0},{"x":"2025","outlays":2230000000.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.172.html
 popular_name: ''

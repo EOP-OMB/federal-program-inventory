@@ -10,6 +10,7 @@ applicant_types:
 - title: Government - General
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
+- title: Independent School District
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
 - title: Individual/Family
@@ -32,6 +33,7 @@ applicant_types:
 - title: Profit organization
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
+- title: Public/Indian Housing Authority
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
 - title: Small business (less than 500 employees)
@@ -51,35 +53,17 @@ assistance_types:
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
-- title: Federal
-- title: Federally Recognized lndian Tribal Governments
 - title: Formula Grants
-- title: Government - General
 - title: Guaranteed / Insured Loans
-- title: Individual/Family
 - title: Insurance
 - title: Interest
-- title: Interstate
-- title: Intrastate
 - title: Investigation of Complaints
-- title: Local (includes State-designated lndian Tribes, excludes institutions of
-    higher education and hospitals
-- title: Minority group
-- title: Non-Government - General
-- title: Other public institution/organization
 - title: Project Grants
 - title: Provision of Specialized Services
-- title: Public nonprofit institution/organization (includes institutions of higher
-    education and hospitals)
 - title: Salaries and Expenses
 - title: Sale, Exchange, or Donation of Property or Goods
-- title: Sponsored organization
-- title: State (includes District of Columbia, public institutions of higher education
-    and hospitals)
 - title: Tax Expenditures
 - title: Training
-- title: U.S. Territories and possessions (includes institutions of higher education
-    and hospitals)
 - title: Use of Property, Facilities, or Equipment
 beneficiary_types:
 - title: Alcoholic
@@ -422,6 +406,7 @@ cfo_agencies:
   - title: U.S. Census Bureau
   title: Department of Commerce
 - sub_categories:
+  - title: DEFENSE HUMAN RESOURCES ACTIVITY
   - title: DEFENSE INTELLIGENCE AGENCY (DIA)
   - title: DEFENSE POW-MIA ACCOUNTING AGENCY (DPAA)
   - title: DEFENSE SECURITY COOPERATION AGENCY (DSCA)
@@ -435,8 +420,6 @@ cfo_agencies:
   - title: Immediate Office of the Secretary of Defense
   - title: NATIONAL SECURITY AGENCY (NSA)
   - title: Office of Local Defense Community Cooperation
-  - title: Office of the Secretary of Defense
-  - title: U.S. Army Corps of Engineers - Civil Program Financing Only
   - title: Uniformed Services University of the Health Sciences
   - title: Washington Headquarters Services (WHS)
   title: Department of Defense
@@ -449,10 +432,7 @@ cfo_agencies:
   - title: Office of Human Resources and Administration
   - title: Office of Special Education and Rehabilitative Services
   title: Department of Education
-- sub_categories:
-  - title: Department of Energy
-  - title: NNSA
-  title: Department of Energy
+- title: Department of Energy
 - sub_categories:
   - title: ADMINISTRATION FOR STRATEGIC PREPAREDNESS AND RESPONSE
   - title: Administration for Children and Families
@@ -545,6 +525,7 @@ cfo_agencies:
   - title: Bureau of Land Management
   - title: Bureau of Reclamation
   - title: Bureau of Safety and Environmental Enforcement
+  - title: Department of the Interior
   - title: Departmental Offices
   - title: Fish and Wildlife Service
   - title: National Park Service
@@ -565,7 +546,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2022'
+fiscal_year: '2024'
 layout: search
 other_agencies:
 - title: Appalachian Regional Commission

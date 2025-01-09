@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.031
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system would not allow credits for particular activi
   for up to $7,500 for qualifying new plug-in electric vehicle or fuel cell vehicle
   purchased in 2023.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":10560000000.0},{"x":"2024","outlays":3130000000.0,"forgone_revenue":14080000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10560000000.0},{"x":"2024","outlays":3130000000.0,"forgone_revenue":14080000000.0},{"x":"2025","outlays":4060000000.0,"forgone_revenue":14700000000.0}]'
 outlays: null
 permalink: /program/TC.031.html
 popular_name: ''

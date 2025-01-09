@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.061
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system generally would tax all income under the regu
   earned on State and local government bonds used to finance multifamily rental housing
   projects to be tax-exempt.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":2090000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1610000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2750000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1610000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2750000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2830000000.0}]'
 outlays: null
 permalink: /program/TC.061.html
 popular_name: ''

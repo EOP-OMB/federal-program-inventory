@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Agriculture
 cfda: TC.051
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: The baseline tax system generally would tax all income under the regu
   preferentially low 20 percent maximum tax rate on capital gains (plus the 3.8 percent
   surtax).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1500000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1550000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1790000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1550000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2000000000.0}]'
 outlays: null
 permalink: /program/TC.051.html
 popular_name: ''

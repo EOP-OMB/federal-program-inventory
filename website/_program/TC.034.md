@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.034
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: The baseline tax system would not allow deductions in lieu of normal 
   Starting in 2021, the maximum deduction amount per square foot will be increased
   by a cost-of -living adjustment.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":510000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":430000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":510000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":590000000.0}]'
 outlays: null
 permalink: /program/TC.034.html
 popular_name: ''

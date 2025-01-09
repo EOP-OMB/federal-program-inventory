@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.072
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, all income would generally be taxed un
   If the canceled debt is not reported as current income, however, the basis of the
   underlying property must be reduced by the amount canceled.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":-10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":-10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":40000000.0}]'
 outlays: null
 permalink: /program/TC.072.html
 popular_name: ''

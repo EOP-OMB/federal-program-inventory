@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.120
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -20,7 +20,7 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   benefit even if that amount is not spent. These payments are excluded from gross
   income under current law.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":650000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":650000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":700000000.0}]'
 outlays: null
 permalink: /program/TC.120.html
 popular_name: ''

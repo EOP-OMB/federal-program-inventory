@@ -10,7 +10,7 @@ import pandas as pd
 from tabula import read_pdf
 
 # file paths
-DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/"
+DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/will-fpi/"
 SOURCE_DIRECTORY = "federal-program-inventory/data_processing/source/"
 EXTRACTED_DIRECTORY = "federal-program-inventory/data_processing/extracted/"
 
@@ -113,6 +113,8 @@ def extract_categories_from_pdf(year, debug=False):
         DISK_DIRECTORY + EXTRACTED_DIRECTORY
         + "program-to-function-sub-function.csv", index=False, header=False)
 
+    print("Extract PDF Categories Complete")
+
 
 def extract_assistance_listing():
     """Extracts assistance listings from SAM.gov and saves them as JSON."""
@@ -130,14 +132,31 @@ def extract_assistance_listing():
     # extract the JSON data for each assistance listing
     listings_json_list = []
     for listing_id in listing_ids:
-        lr = requests.get("https://sam.gov/api/prod/fac/v1/programs/"
-                          + listing_id, timeout=60)
-        listings_json_list.append(lr.text)
+        tries = 0
+        status_code = 000
+        while status_code != 200 and tries < 5:
+            tries += 1
+            try:
+                lr = requests.get("https://sam.gov/api/prod/fac/v1/programs/"
+                                  + listing_id, timeout=60)
+            except (requests.exceptions.ConnectionError,
+                    requests.exceptions.ReadTimeout):
+                print("Error: Connection / Timeout #" + str(tries) + " // "
+                      + str(listing_id))
+                status_code = 000
+                time.sleep(tries)
+            else:
+                status_code = r.status_code
+                if status_code == 200 and len(lr.text) > 0:
+                    listings_json_list.append(lr.text)
+                elif len(lr.text) == 0:
+                    print("Error: No Content " + " // " + str(listing_id))
 
     # save the JSON
     with open(DISK_DIRECTORY + EXTRACTED_DIRECTORY
               + "assistance-listings.json", "w", encoding="utf-8") as f:
         f.write("["+",".join(listings_json_list)+"]")
+    print("Extract Assistance Listings Complete")
 
 
 def extract_dictionary():
@@ -154,6 +173,7 @@ def extract_dictionary():
     with open(DISK_DIRECTORY + EXTRACTED_DIRECTORY + "dictionary.json", "w",
               encoding="utf-8") as f:
         f.write(r.text)
+    print("Extract Dictionary Complete")
 
 
 def extract_organizations():
@@ -183,6 +203,7 @@ def extract_organizations():
     with open(DISK_DIRECTORY + EXTRACTED_DIRECTORY + "organizations.json", "w",
               encoding="utf-8") as f:
         f.write("["+",".join(organizations_json_list)+"]")
+    print("Extract Organizations Complete")
 
 
 def extract_usaspending_award_hashes():
@@ -336,6 +357,8 @@ def extract_usaspending_award_hashes():
               + "usaspending-program-search-hashes.json", "w",
               encoding="utf-8") as f:
         f.write(json.dumps(hashes))
+    print("Extract USASpending.gov Hashes Complete")
+
 
 # Uncomment the necessary functions to extract new data.
 #

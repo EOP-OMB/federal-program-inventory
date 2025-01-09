@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.085
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -19,7 +19,7 @@ objective: The baseline tax system generally would tax all income under the regu
   in certain distressed areas) in non-capital expenditures incurred during the year.
   This provision is scheduled to expire at the end of 2025.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":230000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":230000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":290000000.0}]'
 outlays: null
 permalink: /program/TC.085.html
 popular_name: ''
