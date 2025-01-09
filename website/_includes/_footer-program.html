@@ -16,6 +16,7 @@
   {% endif %}
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
+  const isInterestProgram = "{{ page.program_type }}" === "interest";
   const isOtherProgram = !isAssistanceListing;
   const hasOtherProgramExpenditure = otherSpendingJson && otherSpendingJson.length > 0;
   const hasObligations = obligationsJson && obligationsJson.length > 0;
@@ -859,6 +860,22 @@
     return csvContent;
   }
 
+
+  function formatInterestOutlaysForCSV(data) {
+    const headers = ["Fiscal Year", "Outlays"];
+    let csvContent = headers.join(",") + "\n";
+
+    data.forEach((row) => {
+      const formattedRow = [
+        `"${row.x}"`,
+        `"${formatCurrency(row.outlays || 0)}"`,
+      ];
+      csvContent += formattedRow.join(",") + "\n";
+    });
+
+    return csvContent;
+  }
+
   function downloadCSV(filename, csvData) {
     const blob = new Blob([csvData], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
@@ -948,10 +965,17 @@
         let data, filename, csvContent;
 
         if (isOtherProgram && hasOtherProgramExpenditure) {
-          // Handle tax expenditure data
+          // Handle tax expenditure and interest data
           data = otherSpendingJson;
-          filename = "program-tax-expenditures.csv";
-          csvContent = formatTaxExpendituresForCSV(data);
+          if (isInterestProgram){
+            filename="program-interest-outlays.csv"
+            csvContent = formatInterestOutlaysForCSV(data);
+          } else{
+            filename = "program-tax-expenditures.csv";
+            csvContent = formatTaxExpendituresForCSV(data);
+          }
+          
+          
         } else {
           // Handle assistance listing data
           const isOutlaysVisible =
