@@ -244,6 +244,13 @@ if __name__ == "__main__":
     index_name = "programs"
     json_file = "./programs-table.json"
 
+    # Disable disk space limits in ES
+    resp = es.cluster.put_settings(
+        persistent={
+            "cluster.routing.allocation.disk.threshold_enabled": False
+        }
+    )
+
     # Continuously check if Elasticsearch is available
     status_code = 0
     while status_code == 0:
