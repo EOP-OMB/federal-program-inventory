@@ -2,10 +2,14 @@ from elasticsearch import Elasticsearch, helpers
 import json
 import os
 import logging
+import time
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+time.sleep(500)
 
 # Elasticsearch client connected to the service
 es = Elasticsearch(hosts=["http://localhost:9200"])
