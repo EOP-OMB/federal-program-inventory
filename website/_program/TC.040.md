@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Natural Resources and Environment
 cfda: TC.040
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system allows the taxpayer to deduct the depreciatio
   capital outlays associated with exploration and development of nonfuel minerals
   may be expensed rather than depreciated over the life of the asset.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":70000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":40000000.0}]'
 outlays: null
 permalink: /program/TC.040.html
 popular_name: ''

@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.015
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -25,7 +25,7 @@ objective: A credit is provided for crude oil and natural gas produced from a qu
   $15.00 per barrel and is zero for a reference price that exceeds $18.00. All dollar
   amounts are adjusted for inflation from 2004.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":180000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":180000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":300000000.0}]'
 outlays: null
 permalink: /program/TC.015.html
 popular_name: ''

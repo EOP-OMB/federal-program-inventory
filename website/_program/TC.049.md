@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Agriculture
 cfda: TC.049
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -18,7 +18,7 @@ objective: The baseline tax system requires the taxpayer to capitalize costs ass
   rules (e.g., for costs for establishing orchards or structure improvements), thereby
   accelerating cost recovery.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":250000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":270000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":250000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":270000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":280000000.0}]'
 outlays: null
 permalink: /program/TC.049.html
 popular_name: ''

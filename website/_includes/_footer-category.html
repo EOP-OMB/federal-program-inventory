@@ -108,9 +108,9 @@
 
       let headers = [];
       if (activeTable === "subCategory") {
-        headers = ["Sub-Category", "Number of Programs", `Obligations (FY${fiscalYear})`];
+        headers = ["Sub-Category", "Number of Programs", `Expenditures (FY${fiscalYear})`];
       } else if (activeTable === "agency") {
-        headers = ["Agency", "Number of Programs", `Obligations (FY${fiscalYear})`];
+        headers = ["Agency", "Number of Programs", `Expenditures (FY${fiscalYear})`];
       } else {
         headers = ["Applicant Type", "Number of Programs"];
       }
@@ -452,7 +452,7 @@
         const { divisor, suffix } = getFormattingInfo(topSubCategories);
 
       createBarChart(topSubCategories, {
-        xLabel: "Obligations in US Dollars",
+        xLabel: "Expenditures in US Dollars",
         yLabel: "Sub-categories",
         valueFormatter: (value) => formatObligations(value),
         xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
@@ -476,7 +476,7 @@
       const { divisor, suffix } = getFormattingInfo(topAgencies);
 
       createBarChart(topAgencies, {
-        xLabel: "Obligations in US Dollars",
+        xLabel: "Expenditures in US Dollars",
         yLabel: "Agencies",
         valueFormatter: (value) => formatObligations(value),
         xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),

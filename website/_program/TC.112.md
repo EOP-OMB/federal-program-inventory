@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.112
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -21,7 +21,7 @@ objective: The baseline tax system would not allow a deduction for personal expe
   through 2025) of adjusted gross income; a corporation’s total charitable contributions
   generally may not exceed 10 percent of pre-tax income.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":7270000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":6230000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":9090000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":6230000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":9090000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":9310000000.0}]'
 outlays: null
 permalink: /program/TC.112.html
 popular_name: ''

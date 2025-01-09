@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.142
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -31,7 +31,7 @@ objective: The baseline tax system would not allow credits for particular activi
   $1,000 of modified AGI above $110,000 if married filing jointly ($75,000 for single
   or head of household filers and $55,000 for married taxpayers filing separately).
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":159000000000.0,"forgone_revenue":66840000000.0},{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0},{"x":"2025","outlays":45410000000.0,"forgone_revenue":60930000000.0}]'
 outlays: null
 permalink: /program/TC.142.html
 popular_name: ''

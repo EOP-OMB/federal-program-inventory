@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Agriculture
 cfda: TC.053
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system generally subjects capital gains to taxes the
   in a farm refiner to a farmers’ cooperative to defer recognition of the gain if
   the proceeds are re-invested in a qualified replacement property.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.053.html
 popular_name: ''

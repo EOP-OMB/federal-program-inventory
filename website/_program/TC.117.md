@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.117
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -26,7 +26,7 @@ objective: The baseline tax system would not allow credits for particular activi
   of veterans are eligible for a higher maximum credit of up to $9,600. Employers
   must reduce their deduction for wages paid by the amount of the credit claimed.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":1730000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":2070000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2050000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":2070000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2050000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2110000000.0}]'
 outlays: null
 permalink: /program/TC.117.html
 popular_name: ''

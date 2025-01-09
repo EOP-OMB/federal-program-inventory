@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Income Security
 cfda: TC.143
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system would not allow credits for particular activi
   who don’t qualify for the child tax credit may be able to claim a maximum of $500
   in credits for each dependent who meets certain conditions.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":10870000000.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":3380000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":8700000000.0}]'
 outlays: null
 permalink: /program/TC.143.html
 popular_name: ''

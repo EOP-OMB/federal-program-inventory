@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Energy
 cfda: TC.026
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -17,7 +17,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   In contrast, the Tax Code provides a special 20 percent tax rate for investments
   made by Nuclear Decommissioning Reserve Funds.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":110000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":130000000.0}]'
 outlays: null
 permalink: /program/TC.026.html
 popular_name: ''

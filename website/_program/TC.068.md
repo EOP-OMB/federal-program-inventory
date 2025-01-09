@@ -8,7 +8,7 @@ beneficiary_types: []
 categories:
 - Tax Expenditures - Commerce and Housing
 cfda: TC.068
-fiscal_year: '2022'
+fiscal_year: '2024'
 grants_url: null
 is_subpart_f: null
 layout: program
@@ -23,7 +23,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   areas where project development costs are higher. The credit is allowed in equal
   amounts over 10 years and is generally subject to a volume cap.
 obligations: null
-other_program_spending: '[{"x":"2022","outlays":0.0,"forgone_revenue":11280000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12800000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13620000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":12800000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13620000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":14410000000.0}]'
 outlays: null
 permalink: /program/TC.068.html
 popular_name: ''
