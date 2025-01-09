@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 status_code = 0
 while status_code != 200:
     try:
-        r = requests.get("http://localhost:9200/")
+        r = requests.get("http://localhost:9200")
     except (requests.exceptions.ConnectionError,
             requests.exceptions.ReadTimeout):
         print("Elasticsearch service not available; waiting 5 seconds.")

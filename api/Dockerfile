@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Set environment variables for connection to elasticsearch
-ENV ES_HOST=elasticsearch
+ENV ES_HOST=localhost
 ENV ES_PORT=9200
 ENV ES_SCHEME=http
 
