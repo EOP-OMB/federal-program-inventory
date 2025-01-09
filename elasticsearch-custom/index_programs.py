@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Elasticsearch client connected to the service
-es = Elasticsearch(hosts=["http://elasticsearch:9200"])
+es = Elasticsearch(hosts=["http://localhost:9200"])
 
 def delete_index(index_name):
     """Delete index if it exists"""
