@@ -1,20 +1,24 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
-  Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Communications
-  Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":7,"total_obs":0.0},{"title":"Department of the Treasury","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":8,"total_obs":0.0},{"title":"Department of
-  Transportation","total_num_programs":4,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":7,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":43,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":15,"total_obs":0.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Education","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":8,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":4,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":35,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Homeland Security","total_num_programs":43,"total_obs":40943256809.99},{"title":"Department
+  of Agriculture","total_num_programs":35,"total_obs":9043252929.53},{"title":"Department
+  of Defense","total_num_programs":8,"total_obs":2934201015.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":6,"total_obs":2533030085.0},{"title":"Department
+  of Education","total_num_programs":2,"total_obs":1620316000.0},{"title":"Department
+  of the Interior","total_num_programs":8,"total_obs":1281850296.0},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":1100000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":15,"total_obs":879124295.0},{"title":"Federal
+  Communications Commission","total_num_programs":2,"total_obs":783000000.0},{"title":"Department
+  of Commerce","total_num_programs":4,"total_obs":471244471.0},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":443128796.0},{"title":"Environmental
+  Protection Agency","total_num_programs":7,"total_obs":393686195.0},{"title":"Department
+  of Justice","total_num_programs":2,"total_obs":39383731.0},{"title":"Department
+  of State","total_num_programs":7,"total_obs":33999999.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of the Treasury","total_num_programs":4,"total_obs":5111212.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":2,"total_obs":2910238.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":2604724.0},{"title":"National Credit
+  Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":59},{"title":"Federally
   Recognized lndian Tribal Governments","total_num_programs":58},{"title":"Public
@@ -490,14 +494,14 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/disaster-prevention-and-relief
-sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":0.0},{"title":"Flood
-  Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":0.0},{"title":"Emergency
-  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":0.0},{"title":"Emergency
-  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":0.0}]'
+sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":48008656100.53},{"title":"Flood
+  Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12096770812.0},{"title":"Emergency
+  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":7967225205.0},{"title":"Emergency
+  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":11613318313.99}]'
 title: Disaster Prevention and Relief
 total_num_agencies: 21
 total_num_applicant_types: 44
 total_num_programs: 156
 total_num_sub_cats: 4
-total_obs: 0.0
+total_obs: 62561100796.52
 ---

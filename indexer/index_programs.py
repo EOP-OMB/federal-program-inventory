@@ -24,6 +24,7 @@ while status_code != 200:
 es = Elasticsearch(hosts=["http://localhost:9200"])
 
 
+
 def delete_index(index_name):
     """Delete index if it exists"""
     try:
@@ -243,6 +244,7 @@ if __name__ == "__main__":
         index_name = "programs"
 
         # Step 1: Delete existing index
+        print("Step 1: Cleaning up old index")
         logger.info("Step 1: Cleaning up old index")
         delete_index(index_name)
 

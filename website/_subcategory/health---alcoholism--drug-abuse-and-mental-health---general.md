@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Executive
-  Office of the President","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":2,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":28,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":28,"total_obs":5209684127.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":60511950.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":52500000.0},{"title":"Department
+  of Justice","total_num_programs":1,"total_obs":30193359.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Executive
+  Office of the President","total_num_programs":1,"total_obs":13045000.0},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":3826087.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
@@ -488,24 +489,24 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
+  of Veterans Affairs","total_obs":52500000.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
   Programs for the Aging, Title III, Part D, Disease Prevention and Health Promotion
   Services","popular_name":"Special Programs for the Aging, Title III, Part D, Disease
   Prevention and Health Promotion Services","agency":"Department of Health and Human
   Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.162","permalink":"/program/93.162","title":"National
   Health Service Corps Loan Repayment","popular_name":"National Health Service Corps
   (NHSC) Loan Repayment Program (LRP), NHSC Substance Use Disorder (SUD) Workforce
-  LRP, NHSC Rural Community LRP, NH","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"95.010","permalink":"/program/95.010","title":"Congressional
+  LRP, NHSC Rural Community LRP, NH","agency":"Department of Health and Human Services","total_obs":368634765.0,"program_type":"assistance_listing"},{"cfda":"95.010","permalink":"/program/95.010","title":"Congressional
   Directives","popular_name":"Congressionally Directed Spending","agency":"Executive
-  Office of the President","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.087","permalink":"/program/93.087","title":"Enhance
+  Office of the President","total_obs":13045000.0,"program_type":"assistance_listing"},{"cfda":"93.087","permalink":"/program/93.087","title":"Enhance
   Safety of Children Affected by Substance Abuse","popular_name":"Regional Partnership
-  Grants (RPGs)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
+  Grants (RPGs)","agency":"Department of Health and Human Services","total_obs":10760675.0,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
   Risk Factor Surveillance System","popular_name":"Department of Health and Human
   Services (DHHS), Centers for Disease Control and Prevention (CDC), Center for Chronic
   Diseases and Health Promotion, Division of Population Health (DPH), Population Health
-  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":26725368.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
@@ -513,15 +514,15 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
   System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
   Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
+  of Health and Human Services","total_obs":308649000.0,"program_type":"assistance_listing"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
   to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  of the Interior","total_obs":60511950.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
   the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
   FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.384","permalink":"/program/93.384","title":"ADVANCED
   RESEARCH PROJECTS AGENCY for HEALTH (ARPA-H)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  of Health and Human Services","total_obs":983000000.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
   Transparency Project for Health IT Interoperability Services Cooperative Agreement
   Program","popular_name":"Market Transparency Project","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
@@ -530,49 +531,49 @@ programs: '[{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted Exch
   Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
   Substance Abuse Treatment for State Prisoners","popular_name":"(RSAT)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.997","permalink":"/program/93.997","title":"Assisted
+  of Justice","total_obs":30193359.0,"program_type":"assistance_listing"},{"cfda":"93.997","permalink":"/program/93.997","title":"Assisted
   Outpatient Treatment","popular_name":"Assisted Outpatient Treatment Grant Program
   for Individuals with Serious Mental Illness (Short title:  Assisted Outpatient Treatment
   [AOT])","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
-  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1018465919.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
   Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
   (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.150","permalink":"/program/93.150","title":"Projects
   for Assistance in Transition from Homelessness (PATH)","popular_name":"(PATH)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.247","permalink":"/program/93.247","title":"Advanced
+  of Health and Human Services","total_obs":66381152.0,"program_type":"assistance_listing"},{"cfda":"93.247","permalink":"/program/93.247","title":"Advanced
   Nursing Education Workforce Grant Program","popular_name":"ANEW, ANE-NPRF, MatCare,
-  ANE-SANE, ANE-NPR, ANE-NPRIP","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
+  ANE-SANE, ANE-NPR, ANE-NPRIP","agency":"Department of Health and Human Services","total_obs":86290833.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
   U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.165","permalink":"/program/93.165","title":"Grants
   to States for Loan Repayment","popular_name":"State Loan Repayment Program (SLRP)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.923","permalink":"/program/93.923","title":"Disadvantaged
   Health Professions Faculty Loan Repayment Program (FLRP)","popular_name":"FLRP","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.104","permalink":"/program/93.104","title":"Comprehensive
+  of Health and Human Services","total_obs":2172992.0,"program_type":"assistance_listing"},{"cfda":"93.104","permalink":"/program/93.104","title":"Comprehensive
   Community Mental Health Services for Children with Serious Emotional Disturbances
   (SED)","popular_name":"(CMHS Child Mental Health Service Initiative)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
+  of Health and Human Services","total_obs":110317259.0,"program_type":"assistance_listing"},{"cfda":"93.908","permalink":"/program/93.908","title":"Nurse
   Corps Loan Repayment Program","popular_name":"Nurse Corps Loan Repayment Program
-  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
+  (Nurse Corps LRP)","agency":"Department of Health and Human Services","total_obs":50133582.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
   the Technical Advancement & Readiness of Public Health via Health Information Exchange
   Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.687","permalink":"/program/93.687","title":"Maternal
   Opioid Misuse Model","popular_name":"MOM Model","agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.243","permalink":"/program/93.243","title":"Substance
+  Human Services","total_obs":8500000.0,"program_type":"assistance_listing"},{"cfda":"93.243","permalink":"/program/93.243","title":"Substance
   Abuse and Mental Health Services Projects of Regional and National Significance","popular_name":"(PRNS)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.959","permalink":"/program/93.959","title":"Block
+  of Health and Human Services","total_obs":2113246019.0,"program_type":"assistance_listing"},{"cfda":"93.959","permalink":"/program/93.959","title":"Block
   Grants for Prevention and Treatment of Substance Abuse","popular_name":"Substance
   Abuse Block Grant (SABG)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
   Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  and Safety","agency":"Department of Agriculture","total_obs":3826087.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.654","permalink":"/program/93.654","title":"Indian
   Health Service Behavioral Health Programs","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.011","permalink":"/program/93.011","title":"National
+  of Health and Human Services","total_obs":38517587.0,"program_type":"assistance_listing"},{"cfda":"93.011","permalink":"/program/93.011","title":"National
   Organizations for State and Local Officials","popular_name":"NOSLO","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Health and Human Services","total_obs":2548976.0,"program_type":"assistance_listing"}]'
 title: Alcoholism, Drug Abuse and Mental Health - General
 total_num_agencies: 10
 total_num_applicant_types: 41
 total_num_programs: 38
-total_obs: 0.0
+total_obs: 5389760523.0
 ---

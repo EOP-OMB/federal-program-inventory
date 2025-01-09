@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Federal Financial Institutions Examination Council Appraisal
-  Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Environmental Protection
-  Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":5,"total_obs":0.0},{"title":"Department
-  of Justice","total_num_programs":3,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product Safety
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":5,"total_obs":592509802.0},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":93323035.0},{"title":"Department
+  of Justice","total_num_programs":3,"total_obs":39000503.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":11761597.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":8334797.0},{"title":"Federal
+  Financial Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":2275000.0},{"title":"Consumer
+  Product Safety Commission","total_num_programs":1,"total_obs":2000000.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":9},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Local
   (includes State-designated lndian Tribes, excludes institutions of higher education
@@ -482,47 +483,47 @@ parent_title: Consumer Protection
 permalink: /category/consumer-protection/regulation--inspection--enforcement
 programs: '[{"cfda":"10.477","permalink":"/program/10.477","title":"Meat, Poultry,
   and Egg Products Inspection","popular_name":"Talmadge Aiken Program, Cooperative
-  Interstate Shipment Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.301","permalink":"/program/20.301","title":"Railroad
-  Safety","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.413","permalink":"/program/11.413","title":"Fishery
+  Interstate Shipment Program","agency":"Department of Agriculture","total_obs":19052183.0,"program_type":"assistance_listing"},{"cfda":"20.301","permalink":"/program/20.301","title":"Railroad
+  Safety","popular_name":null,"agency":"Department of Transportation","total_obs":1150000.0,"program_type":"assistance_listing"},{"cfda":"11.413","permalink":"/program/11.413","title":"Fishery
   Products Inspection and Certification","popular_name":"(Inspection and Grading of
   Fishery Products)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.529","permalink":"/program/16.529","title":"Education,
   Training, and Enhanced Services to End Violence Against and Abuse of Women with
   Disabilities ","popular_name":"(Disability Grant Program)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
+  of Justice","total_obs":1425000.0,"program_type":"assistance_listing"},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
   Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program","popular_name":"Rural
-  Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.475","permalink":"/program/10.475","title":"Cooperative
+  Program","agency":"Department of Justice","total_obs":36095132.0,"program_type":"assistance_listing"},{"cfda":"10.475","permalink":"/program/10.475","title":"Cooperative
   Agreements with States for Intrastate Meat and Poultry Inspection","popular_name":"(Meat
-  and Poultry Inspection State Programs)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  and Poultry Inspection State Programs)","agency":"Department of Agriculture","total_obs":48120852.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.009","permalink":"/program/38.009","title":"Board
   Support and Innovation Grant","popular_name":"Board Support and Innovation Grant","agency":"Federal
-  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.700","permalink":"/program/20.700","title":"Pipeline
-  Safety Program State Base Grant ","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.721","permalink":"/program/20.721","title":"PHMSA
+  Financial Institutions Examination Council Appraisal Subcommittee","total_obs":250000.0,"program_type":"assistance_listing"},{"cfda":"20.700","permalink":"/program/20.700","title":"Pipeline
+  Safety Program State Base Grant ","popular_name":null,"agency":"Department of Transportation","total_obs":82000000.0,"program_type":"assistance_listing"},{"cfda":"20.721","permalink":"/program/20.721","title":"PHMSA
   Pipeline Safety Program One Call Grant","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.725","permalink":"/program/20.725","title":"PHMSA
+  of Transportation","total_obs":1100190.0,"program_type":"assistance_listing"},{"cfda":"20.725","permalink":"/program/20.725","title":"PHMSA
   Pipeline Safety Underground Natural Gas Storage Grant ","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.528","permalink":"/program/16.528","title":"Enhanced
+  of Transportation","total_obs":3959509.0,"program_type":"assistance_listing"},{"cfda":"16.528","permalink":"/program/16.528","title":"Enhanced
   Training and Services to End Violence and Abuse of Women Later in Life","popular_name":"Abuse
-  in Later Life ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.092","permalink":"/program/81.092","title":"Remedial
+  in Later Life ","agency":"Department of Justice","total_obs":1480371.0,"program_type":"assistance_listing"},{"cfda":"81.092","permalink":"/program/81.092","title":"Remedial
   Action and Waste Management","popular_name":"Federal Facility Agreement","agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
-  Carrier Safety Assistance ","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
+  of Energy","total_obs":9156873.0,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
+  Carrier Safety Assistance ","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":504300103.0,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
   Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"38.006","permalink":"/program/38.006","title":"State
+  of Agriculture","total_obs":23700000.0,"program_type":"assistance_listing"},{"cfda":"38.006","permalink":"/program/38.006","title":"State
   Appraiser Agency Support Grants","popular_name":null,"agency":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.003","permalink":"/program/87.003","title":"Nicholas
+  Institutions Examination Council Appraisal Subcommittee","total_obs":2025000.0,"program_type":"assistance_listing"},{"cfda":"87.003","permalink":"/program/87.003","title":"Nicholas
   and Zachary Burt Memorial Carbon Monoxide Poisoning Prevention Grants","popular_name":null,"agency":"Consumer
-  Product Safety Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
+  Product Safety Commission","total_obs":2000000.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
   of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns,
   Proposed Solutions","popular_name":"Transport of Transuranic Waste to the Waste
   Isolation Pilot Plant (WIPP): States and Tribal Concerns, Proposed Solutions","agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.479","permalink":"/program/10.479","title":"Food
+  of Energy","total_obs":2604724.0,"program_type":"assistance_listing"},{"cfda":"10.479","permalink":"/program/10.479","title":"Food
   Safety Cooperative Agreements","popular_name":"FERN Cooperative Agreement Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.032","permalink":"/program/66.032","title":"State
+  of Agriculture","total_obs":2450000.0,"program_type":"assistance_listing"},{"cfda":"66.032","permalink":"/program/66.032","title":"State
   and Tribal Indoor Radon Grants","popular_name":"SIRG","agency":"Environmental Protection
-  Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Agency","total_obs":8334797.0,"program_type":"assistance_listing"}]'
 title: Regulation, Inspection, Enforcement
 total_num_agencies: 9
 total_num_applicant_types: 33
 total_num_programs: 20
-total_obs: 0.0
+total_obs: 749204734.0
 ---

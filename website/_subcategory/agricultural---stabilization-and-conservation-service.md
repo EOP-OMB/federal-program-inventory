@@ -1,14 +1,14 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Federal Permitting
-  Improvement Steering Council","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":8,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health and
-  Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  Defense","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":28,"total_obs":0.0},{"title":"Denali
-  Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":28,"total_obs":31401487133.12},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":209582541.0},{"title":"Department
+  of the Interior","total_num_programs":8,"total_obs":163719612.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":29059276.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":14058495.0},{"title":"Federal
+  Permitting Improvement Steering Council","total_num_programs":1,"total_obs":5000000.0},{"title":"Northern
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":22},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":19},{"title":"Private
@@ -485,94 +485,94 @@ parent_permalink: /category/agricultural
 parent_title: Agricultural
 permalink: /category/agricultural/stabilization-and-conservation-service
 programs: '[{"cfda":"10.610","permalink":"/program/10.610","title":"Export Guarantee
-  Program ","popular_name":"The GSM-102 Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
-  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
+  Program ","popular_name":"The GSM-102 Program","agency":"Department of Agriculture","total_obs":2655455513.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
+  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":583844.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
   and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
-  Act","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.134","permalink":"/program/10.134","title":"Oriental
-  Fruit Fly Program","popular_name":"OFF","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.244","permalink":"/program/15.244","title":"Aquatics
+  Act","agency":"Department of Defense","total_obs":592837.0,"program_type":"assistance_listing"},{"cfda":"10.134","permalink":"/program/10.134","title":"Oriental
+  Fruit Fly Program","popular_name":"OFF","agency":"Department of Agriculture","total_obs":1919.95,"program_type":"assistance_listing"},{"cfda":"15.244","permalink":"/program/15.244","title":"Aquatics
   Resources Management","popular_name":"Aquatic Resource Management: Water, Riparian,
-  Wetland, and Fisheries Resources","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
+  Wetland, and Fisheries Resources","agency":"Department of the Interior","total_obs":22149158.0,"program_type":"assistance_listing"},{"cfda":"19.600","permalink":"/program/19.600","title":"Bureau
   of Near Eastern Affairs","popular_name":"Bureau of Near Eastern Affairs","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.053","permalink":"/program/10.053","title":"Dairy
-  Indemnity Payment Program","popular_name":"DIPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.072","permalink":"/program/10.072","title":"Wetlands
-  Reserve Program","popular_name":"(WRP)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
+  Indemnity Payment Program","popular_name":"DIPP","agency":"Department of Agriculture","total_obs":1378280.25,"program_type":"assistance_listing"},{"cfda":"10.072","permalink":"/program/10.072","title":"Wetlands
+  Reserve Program","popular_name":"(WRP)","agency":"Department of Agriculture","total_obs":5053000.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
   Rural Schools and Community Self-Determination","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.051","permalink":"/program/10.051","title":"Commodity
+  of the Interior","total_obs":2234301.0,"program_type":"assistance_listing"},{"cfda":"10.051","permalink":"/program/10.051","title":"Commodity
   Loans and Loan Deficiency Payments","popular_name":"Marketing Assistance Loans (MALs)
-  and Loan Deficiency Payments (LDPs)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
+  and Loan Deficiency Payments (LDPs)","agency":"Department of Agriculture","total_obs":5357081039.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
   Border Regional Development","popular_name":"Direct Grants","agency":"Northern Border
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.450","permalink":"/program/10.450","title":"Crop
-  Insurance","popular_name":"Crop Insurance","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.102","permalink":"/program/10.102","title":"Emergency
-  Forest Restoration Program ","popular_name":"EFRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Insurance","popular_name":"Crop Insurance","agency":"Department of Agriculture","total_obs":21289063459.0,"program_type":"assistance_listing"},{"cfda":"10.102","permalink":"/program/10.102","title":"Emergency
+  Forest Restoration Program ","popular_name":"EFRP","agency":"Department of Agriculture","total_obs":100000000.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
   Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.135","permalink":"/program/10.135","title":"Supplemental
   Dairy Margin Coverage","popular_name":"Supplemental DMC","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.928","permalink":"/program/10.928","title":"Emergency
+  Agriculture","total_obs":1544292.0,"program_type":"assistance_listing"},{"cfda":"10.928","permalink":"/program/10.928","title":"Emergency
   Watershed Protection Program - Floodplain Easements \u2013 Disaster Relief Appropriations
   Act ","popular_name":"EWPP-FPE Additional Supplemental Appropriations for Disaster
-  Relief Act 2019","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
+  Relief Act 2019","agency":"Department of Agriculture","total_obs":245496000.0,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
   Fellowship Program","popular_name":"Cochran Fellowship Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.929","permalink":"/program/10.929","title":"Water
-  Bank Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.973","permalink":"/program/10.973","title":"Emergency
+  of Agriculture","total_obs":2352423.0,"program_type":"assistance_listing"},{"cfda":"10.929","permalink":"/program/10.929","title":"Water
+  Bank Program","popular_name":null,"agency":"Department of Agriculture","total_obs":2434951.0,"program_type":"assistance_listing"},{"cfda":"10.973","permalink":"/program/10.973","title":"Emergency
   Grain Storage Facility Assistance Program","popular_name":"EGSFP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
+  of Agriculture","total_obs":50251479.0,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
   Building for Non-Land Grant Colleges of Agriculture (NLGCA)","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
+  of Agriculture","total_obs":5699998.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
   Tahoe Erosion Control Grant Program","popular_name":null,"agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Agriculture","total_obs":2155269.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
   Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
   Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
   Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
+  Protection Agency","total_obs":14058495.0,"program_type":"assistance_listing"},{"cfda":"10.966","permalink":"/program/10.966","title":"Commodity
   Container Assistance Program","popular_name":"CCAP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.606","permalink":"/program/10.606","title":"Food
-  for Progress","popular_name":"FFPr","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.054","permalink":"/program/10.054","title":"Emergency
-  Conservation Program","popular_name":"ECP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.017","permalink":"/program/12.017","title":"Readiness
+  for Progress","popular_name":"FFPr","agency":"Department of Agriculture","total_obs":218500000.0,"program_type":"assistance_listing"},{"cfda":"10.054","permalink":"/program/10.054","title":"Emergency
+  Conservation Program","popular_name":"ECP","agency":"Department of Agriculture","total_obs":100000000.0,"program_type":"assistance_listing"},{"cfda":"12.017","permalink":"/program/12.017","title":"Readiness
   and Environmental Protection Integration (REPI) Program","popular_name":"DoD REPI
-  Program","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.520","permalink":"/program/15.520","title":"Lewis
+  Program","agency":"Department of Defense","total_obs":172200000.0,"program_type":"assistance_listing"},{"cfda":"15.520","permalink":"/program/15.520","title":"Lewis
   and Clark Rural Water System ","popular_name":"Lewis and Clark Project","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
+  of the Interior","total_obs":92071752.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
   Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
-  Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.666","permalink":"/program/15.666","title":"Endangered
+  and Safety","agency":"Department of Agriculture","total_obs":3826087.0,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
+  Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":11460645.0,"program_type":"assistance_listing"},{"cfda":"15.666","permalink":"/program/15.666","title":"Endangered
   Species Conservation-Wolf Livestock Loss Compensation and Prevention","popular_name":"Wolf
-  Livestock Demonstration Project Grant Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
-  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.034","permalink":"/program/15.034","title":"Agriculture
-  on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.932","permalink":"/program/10.932","title":"Regional
+  Livestock Demonstration Project Grant Program","agency":"Department of the Interior","total_obs":900000.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
+  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":5634490.0,"program_type":"assistance_listing"},{"cfda":"15.034","permalink":"/program/15.034","title":"Agriculture
+  on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":28995266.0,"program_type":"assistance_listing"},{"cfda":"10.932","permalink":"/program/10.932","title":"Regional
   Conservation Partnership Program","popular_name":"RCPP","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever
+  Agriculture","total_obs":295606000.0,"program_type":"assistance_listing"},{"cfda":"10.511","permalink":"/program/10.511","title":"Smith-Lever
   Extension Funding","popular_name":"1862 LGI\u2019s: 1862 CES (Smith-Lever) and DCPPERA,
   1862 Smith-Lever Special Needs, and Smith-Lever Special Needs-Competitive","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.093","permalink":"/program/10.093","title":"Voluntary
+  of Agriculture","total_obs":315737359.0,"program_type":"assistance_listing"},{"cfda":"10.093","permalink":"/program/10.093","title":"Voluntary
   Public Access and Habitat Incentive Program","popular_name":"VPA-HIP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.334","permalink":"/program/10.334","title":"Enhancing
+  of Agriculture","total_obs":9464937.92,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"10.334","permalink":"/program/10.334","title":"Enhancing
   Agricultural Opportunities for Military Veterans Competitive Grants Program","popular_name":"AgVets","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
+  of Agriculture","total_obs":2864576.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
   National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Defense","total_obs":36789704.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
   E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
-  Fellowship Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.533","permalink":"/program/15.533","title":"California
+  Fellowship Program","agency":"Department of Agriculture","total_obs":1187113.0,"program_type":"assistance_listing"},{"cfda":"15.533","permalink":"/program/15.533","title":"California
   Water Security and Environmental Enhancement","popular_name":"California Bay-Delta
-  Authorization Act (CALFED)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
+  Authorization Act (CALFED)","agency":"Department of the Interior","total_obs":274000.0,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
   Agricultural Assistance","popular_name":"Technical Agricultural Assistance","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
+  of Agriculture","total_obs":12931193.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
   Services Block Grant Discretionary Awards","popular_name":"Community Economic Development  &
-  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.309","permalink":"/program/10.309","title":"Specialty
-  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.931","permalink":"/program/10.931","title":"
+  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":29059276.0,"program_type":"assistance_listing"},{"cfda":"10.309","permalink":"/program/10.309","title":"Specialty
+  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":75440000.0,"program_type":"assistance_listing"},{"cfda":"10.931","permalink":"/program/10.931","title":"
   Agricultural Conservation Easement Program ","popular_name":"ACEP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  of Agriculture","total_obs":643255000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.800","permalink":"/program/90.800","title":"Federal
   Permitting Improvement Steering Council Environmental Review Improvement Fund (ERIF)
   Funding Program","popular_name":"FAST-41 ERIF Assistance Program","agency":"Federal
-  Permitting Improvement Steering Council","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Permitting Improvement Steering Council","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
   of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
   Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
-  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":4123400.0,"program_type":"assistance_listing"}]'
 title: Stabilization and Conservation Service
 total_num_agencies: 11
 total_num_applicant_types: 40
 total_num_programs: 50
-total_obs: 0.0
+total_obs: 31873907057.12
 ---

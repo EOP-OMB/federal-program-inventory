@@ -644,9 +644,15 @@
           .style("pointer-events", "none")
           .style("font-size", `${fontSize}px`);
 
+        let tooltipContent = formatObligations(value);
+        if ("{{ page.program_type }}" === "tax_expenditure") {
+          const totalValue = d.data.Outlays + d.data["Revenue losses"];
+          tooltipContent += ` of ${formatObligations(totalValue)}`;
+        }
+
         tooltip
           .style("opacity", 1)
-          .html(formatObligations(value))
+          .html(tooltipContent)
           .style("left", `${event.pageX + 10}px`)
           .style("top", `${event.pageY - 28}px`);
 
@@ -661,10 +667,14 @@
       });
 
     // Add legend
-    const legendData = [
-      { label: "Outlays", color: colors["Outlays"] },
-      { label: "Revenue losses", color: colors["Revenue losses"] },
-    ];
+    const legendData = [];
+    legendData.push({ label: "Outlays", color: colors["Outlays"] });
+    if ("{{ page.program_type }}" !== "interest") {
+      legendData.push({
+        label: "Revenue losses",
+        color: colors["Revenue losses"],
+      });
+    }
 
     const itemSpacing = 180;
     const legendY = innerHeight + 40;

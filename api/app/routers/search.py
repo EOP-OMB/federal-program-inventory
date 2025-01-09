@@ -87,6 +87,7 @@ def build_agency_filter(agency_strings: List[str]) -> Dict[str, Any]:
                 # For "Unspecified", match either:
                 # 1. No subagency exists, OR
                 # 2. Subagency title matches parent agency
+                # 3. Subagency is "N/A"
                 agency_conditions.append({
                     "nested": {
                         "path": "agency",
@@ -118,6 +119,17 @@ def build_agency_filter(agency_strings: List[str]) -> Dict[str, Any]:
                                             "query": {
                                                 "term": {
                                                     "agency.subAgency.title.keyword": agency
+                                                }
+                                            }
+                                        }
+                                    },
+                                    # OR subagency is "N/A"
+                                    {
+                                        "nested": {
+                                            "path": "agency.subAgency",
+                                            "query": {
+                                                "term": {
+                                                    "agency.subAgency.title.keyword": "N/A"
                                                 }
                                             }
                                         }

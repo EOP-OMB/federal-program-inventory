@@ -1,17 +1,20 @@
 ---
-agencies: '[{"title":"United States Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":2,"total_obs":0.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"National
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":12174639048.0},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":660092541.0},{"title":"Department of
+  Agriculture","total_num_programs":13,"total_obs":589709269.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":253706301.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":188250880.0},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":75321315.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":56711829.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":2,"total_obs":15410360.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":3100000.0},{"title":"United
+  States Institute of Peace","total_num_programs":1,"total_obs":100000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":80000.0},{"title":"National
   Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":1,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  Archives and Records Administration","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Labor","total_num_programs":4,"total_obs":0.0},{"title":"Department of Justice","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":6,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":13,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+  Justice","total_num_programs":3,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":21},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":18},{"title":"Anyone/general
@@ -486,80 +489,80 @@ parent_permalink: /category/information-and-statistics
 parent_title: Information and Statistics
 permalink: /category/information-and-statistics/general
 programs: '[{"cfda":"11.603","permalink":"/program/11.603","title":"National Standard
-  Reference Data System","popular_name":"SRD","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
+  Reference Data System","popular_name":"SRD","agency":"Department of Commerce","total_obs":9963788.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
   American and Native Hawaiian Library Services","popular_name":"NANH-Libraries","agency":"The
-  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.003","permalink":"/program/17.003","title":"Prices
-  and Cost of Living Data","popular_name":null,"agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.130","permalink":"/program/15.130","title":"Indian
+  Institute of Museum and Library Services","total_obs":5763000.0,"program_type":"assistance_listing"},{"cfda":"17.003","permalink":"/program/17.003","title":"Prices
+  and Cost of Living Data","popular_name":null,"agency":"Department of Labor","total_obs":240863247.0,"program_type":"assistance_listing"},{"cfda":"15.130","permalink":"/program/15.130","title":"Indian
   Education Assistance to Schools","popular_name":"Johnson-O''Malley","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"89.001","permalink":"/program/89.001","title":"National
+  of the Interior","total_obs":106377020.0,"program_type":"assistance_listing"},{"cfda":"89.001","permalink":"/program/89.001","title":"National
   Archives Reference Services Historical Research","popular_name":null,"agency":"National
   Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":12640729.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.233","permalink":"/program/10.233","title":"Open
-  Data Standards","popular_name":"Open Data","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.606","permalink":"/program/11.606","title":"Weights
-  and Measures Service","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
+  of Defense","total_obs":251840523.0,"program_type":"assistance_listing"},{"cfda":"10.233","permalink":"/program/10.233","title":"Open
+  Data Standards","popular_name":"Open Data","agency":"Department of Agriculture","total_obs":935000.0,"program_type":"assistance_listing"},{"cfda":"11.606","permalink":"/program/11.606","title":"Weights
+  and Measures Service","popular_name":null,"agency":"Department of Commerce","total_obs":5493400.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
   Bush 21st Century Librarian Program","popular_name":"LB21","agency":"The Institute
-  of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.700","permalink":"/program/10.700","title":"National
-  Agricultural Library","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"91.005","permalink":"/program/91.005","title":"Priority
-  Grant Competition","popular_name":null,"agency":"United States Institute of Peace","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
+  of Museum and Library Services","total_obs":9647360.0,"program_type":"assistance_listing"},{"cfda":"10.700","permalink":"/program/10.700","title":"National
+  Agricultural Library","popular_name":null,"agency":"Department of Agriculture","total_obs":6349255.0,"program_type":"assistance_listing"},{"cfda":"91.005","permalink":"/program/91.005","title":"Priority
+  Grant Competition","popular_name":null,"agency":"United States Institute of Peace","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
   Risk Factor Surveillance System","popular_name":"Department of Health and Human
   Services (DHHS), Centers for Disease Control and Prevention (CDC), Center for Chronic
   Diseases and Health Promotion, Division of Population Health (DPH), Population Health
-  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.816","permalink":"/program/93.816","title":"Preventing
+  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":26725368.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"93.816","permalink":"/program/93.816","title":"Preventing
   Heart Attacks and Strokes in High Need Areas","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.604","permalink":"/program/11.604","title":"Standard
+  of Health and Human Services","total_obs":3500000.0,"program_type":"assistance_listing"},{"cfda":"11.604","permalink":"/program/11.604","title":"Standard
   Reference Materials","popular_name":"Standard Reference Materials\r\n(SRM)","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.234","permalink":"/program/10.234","title":"American
+  of Commerce","total_obs":26734398.0,"program_type":"assistance_listing"},{"cfda":"10.234","permalink":"/program/10.234","title":"American
   Rescue Plan Technical Assistance Investment Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.230","permalink":"/program/10.230","title":"Farm
   of the Future","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.002","permalink":"/program/17.002","title":"Labor
-  Force Statistics","popular_name":null,"agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
+  Force Statistics","popular_name":null,"agency":"Department of Labor","total_obs":315848484.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
   5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
-  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":80000.0,"program_type":"assistance_listing"},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
   Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory Publications","popular_name":"(Microgram)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.603","permalink":"/program/16.603","title":"Corrections
   Technical Assistance/Clearinghouse","popular_name":null,"agency":"Department of
   Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.305","permalink":"/program/16.305","title":"Law
   Enforcement Assistance Uniform Crime Reports","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.819","permalink":"/program/20.819","title":"Ballast
-  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.025","permalink":"/program/10.025","title":"Plant
+  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":3100000.0,"program_type":"assistance_listing"},{"cfda":"10.025","permalink":"/program/10.025","title":"Plant
   and Animal Disease, Pest Control, and Animal Care","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.004","permalink":"/program/17.004","title":"Productivity
-  and Technology Data","popular_name":null,"agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.005","permalink":"/program/17.005","title":"Compensation
-  and Working Conditions","popular_name":null,"agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
-  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
+  of Agriculture","total_obs":434325038.0,"program_type":"assistance_listing"},{"cfda":"17.004","permalink":"/program/17.004","title":"Productivity
+  and Technology Data","popular_name":null,"agency":"Department of Labor","total_obs":12447536.0,"program_type":"assistance_listing"},{"cfda":"17.005","permalink":"/program/17.005","title":"Compensation
+  and Working Conditions","popular_name":null,"agency":"Department of Labor","total_obs":90933274.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
+  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
   and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.553","permalink":"/program/11.553","title":"Special
-  Projects","popular_name":" SPECIAL PROJECTS","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.950","permalink":"/program/10.950","title":"Agricultural
+  of Agriculture","total_obs":1902895.0,"program_type":"assistance_listing"},{"cfda":"11.553","permalink":"/program/11.553","title":"Special
+  Projects","popular_name":" SPECIAL PROJECTS","agency":"Department of Commerce","total_obs":289000.0,"program_type":"assistance_listing"},{"cfda":"10.950","permalink":"/program/10.950","title":"Agricultural
   Statistics Reports","popular_name":"Agricultural Estimates","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.015","permalink":"/program/12.015","title":"Past
+  of Agriculture","total_obs":3817143.0,"program_type":"assistance_listing"},{"cfda":"12.015","permalink":"/program/12.015","title":"Past
   Conflict Accounting - Vietnam","popular_name":"Cooperative program with Vietnam
   to account for Vietnamese personnel missing in action.","agency":"Department of
-  Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.903","permalink":"/program/10.903","title":"Soil
-  Survey","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Defense","total_obs":1865778.0,"program_type":"assistance_listing"},{"cfda":"10.903","permalink":"/program/10.903","title":"Soil
+  Survey","popular_name":null,"agency":"Department of Agriculture","total_obs":90250000.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
+  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
   Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.155","permalink":"/program/10.155","title":"Marketing
-  Agreements and Orders","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.292","permalink":"/program/10.292","title":"Food
+  of the Interior","total_obs":81873860.0,"program_type":"assistance_listing"},{"cfda":"10.155","permalink":"/program/10.155","title":"Marketing
+  Agreements and Orders","popular_name":null,"agency":"Department of Agriculture","total_obs":21501000.0,"program_type":"assistance_listing"},{"cfda":"10.292","permalink":"/program/10.292","title":"Food
   Loss and Waste Reduction","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.153","permalink":"/program/10.153","title":"Market
-  News","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.004","permalink":"/program/21.004","title":"Exchange
+  News","popular_name":null,"agency":"Department of Agriculture","total_obs":320938.0,"program_type":"assistance_listing"},{"cfda":"21.004","permalink":"/program/21.004","title":"Exchange
   of Federal Tax Information With State Tax Agencies","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.907","permalink":"/program/10.907","title":"Snow
   Survey and Water Supply Forecasting","popular_name":"Snow Surveys","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.400","permalink":"/program/11.400","title":"Geodetic
+  of Agriculture","total_obs":14751000.0,"program_type":"assistance_listing"},{"cfda":"11.400","permalink":"/program/11.400","title":"Geodetic
   Surveys and Services (Geodesy and Applications of the National Geodetic Reference
   System)","popular_name":"Geodetic and Hydrographic Surveys","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"92.002","permalink":"/program/92.002","title":"National
+  of Commerce","total_obs":20200000.0,"program_type":"assistance_listing"},{"cfda":"92.002","permalink":"/program/92.002","title":"National
   Council on Disability ","popular_name":"NCD","agency":"National Council on Disability","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: General
 total_num_agencies: 17
 total_num_applicant_types: 39
 total_num_programs: 44
-total_obs: 0.0
+total_obs: 14037121543.0
 ---

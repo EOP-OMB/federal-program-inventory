@@ -1,15 +1,17 @@
 ---
-agencies: '[{"title":"Southeast Crescent Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":0.0},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":0.0},{"title":"Department of
-  Veterans Affairs","total_num_programs":1,"total_obs":0.0},{"title":"Department of
-  State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":7,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":3923000000.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":1418400280.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":793143531.0},{"title":"Department
+  of Labor","total_num_programs":7,"total_obs":276799100.0},{"title":"Department of
+  Commerce","total_num_programs":1,"total_obs":97824471.0},{"title":"Department of
+  Agriculture","total_num_programs":4,"total_obs":77300000.0},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":21850000.0},{"title":"Southeast
+  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":7469210.0},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":7000000.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":5610728.0},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":2148082.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":15},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Public
@@ -486,65 +488,65 @@ parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/assistance-to-state-and-local-governments
 programs: '[{"cfda":"66.716","permalink":"/program/66.716","title":"Research, Development,
   Monitoring, Public Education, Outreach, Training, Demonstrations, and Studies ","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
+  Protection Agency","total_obs":7151710.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
   Development Block Grants/Special Purpose Grants/Insular Areas","popular_name":"Insular
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"19.878","permalink":"/program/19.878","title":"EUR-Other","popular_name":"EUR-Other","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.518","permalink":"/program/66.518","title":"State
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"66.518","permalink":"/program/66.518","title":"State
   Senior Environmental Employment Program","popular_name":"SEE","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
+  Protection Agency","total_obs":317500.0,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
   Data Quality Initiative (WDQI)","popular_name":"Workforce Data Quality Initiative
-  (WDQI)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.185","permalink":"/program/10.185","title":"Local
+  (WDQI)","agency":"Department of Labor","total_obs":5862000.0,"program_type":"assistance_listing"},{"cfda":"10.185","permalink":"/program/10.185","title":"Local
   Food for Schools Cooperative Agreement Program","popular_name":"LFS","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  of Agriculture","total_obs":3600000.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
   SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+  Communications Commission","total_obs":946000000.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.280","permalink":"/program/17.280","title":"WIOA
+  of Commerce","total_obs":97824471.0,"program_type":"assistance_listing"},{"cfda":"17.280","permalink":"/program/17.280","title":"WIOA
   Dislocated Worker National Reserve Demonstration Grants","popular_name":"Workforce
   Innovation and Opportunity Act (WIOA) Dislocated Worker National Reserve Demonstration
-  Grants","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
+  Grants","agency":"Department of Labor","total_obs":33000000.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
+  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
   Services Block Grant Discretionary Awards","popular_name":"Community Economic Development  &
-  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Rural Community Programs","agency":"Department of Health and Human Services","total_obs":29059276.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.048","permalink":"/program/84.048","title":"Career
   and Technical Education -- Basic Grants to States","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  of Education","total_obs":1418400280.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
   Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
   Dislocated Worker National Reserve Technical Assistance and Training","popular_name":null,"agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.569","permalink":"/program/93.569","title":"Community
+  of Labor","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"93.569","permalink":"/program/93.569","title":"Community
   Services Block Grant","popular_name":"(CSBG)","agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Human Services","total_obs":764084255.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
   Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.271","permalink":"/program/17.271","title":"Work
+  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"17.271","permalink":"/program/17.271","title":"Work
   Opportunity Tax Credit Program (WOTC) ","popular_name":"WOTC","agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.142","permalink":"/program/97.142","title":"National
+  of Labor","total_obs":21000000.0,"program_type":"assistance_listing"},{"cfda":"97.142","permalink":"/program/97.142","title":"National
   Computer Forensics Institute Facility Expansion Grant Program","popular_name":null,"agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Homeland Security","total_obs":21850000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.245","permalink":"/program/17.245","title":"Trade
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"17.245","permalink":"/program/17.245","title":"Trade
   Adjustment Assistance","popular_name":"Trade Adjustment Assistance (TAA) Program","agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
+  of Labor","total_obs":14000000.0,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
   to States for Programs to Promote the Hiring and Retention of Nurses at State Veterans
   Homes","popular_name":"SVH RN Grant; Nurse Retention Grant","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.079","permalink":"/program/15.079","title":"Experienced
-  Services Program (ESP)","popular_name":"BOEM ESP","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.182","permalink":"/program/10.182","title":"Pandemic
+  of Veterans Affairs","total_obs":5610728.0,"program_type":"assistance_listing"},{"cfda":"15.079","permalink":"/program/15.079","title":"Experienced
+  Services Program (ESP)","popular_name":"BOEM ESP","agency":"Department of the Interior","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"10.182","permalink":"/program/10.182","title":"Pandemic
   Relief Activities: Local Food Purchase Agreements with States, Tribes, and Local
-  Governments","popular_name":"LFPA","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.537","permalink":"/program/10.537","title":"Supplemental
+  Governments","popular_name":"LFPA","agency":"Department of Agriculture","total_obs":23700000.0,"program_type":"assistance_listing"},{"cfda":"10.537","permalink":"/program/10.537","title":"Supplemental
   Nutrition Assistance Program (SNAP) Employment and Training (E&T) Data and Technical
   Assistance Grants","popular_name":"SNAP E&T DATA Grants","agency":"Department of
   Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.969","permalink":"/program/15.969","title":"National
   Wildland Fire Management and Natural Resource Training and Workforce Development","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of the Interior","total_obs":1148082.0,"program_type":"assistance_listing"}]'
 title: Assistance to State and Local Governments
 total_num_agencies: 15
 total_num_applicant_types: 35
 total_num_programs: 28
-total_obs: 0.0
+total_obs: 6650545402.0
 ---

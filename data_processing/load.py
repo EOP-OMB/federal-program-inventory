@@ -183,7 +183,7 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
             placeholders = ','.join('?' * len(programs['regular']))
             cursor.execute(f"""
                 SELECT COALESCE(SUM(CASE
-                    WHEN fiscal_year = ? AND is_actual = 1
+                    WHEN fiscal_year = ? AND is_actual = 0
                     THEN amount
                     ELSE 0
                 END), 0) as total_obs
@@ -362,7 +362,7 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             placeholders = ','.join('?' * len(regular_program_ids))
             cursor.execute(f"""
                 SELECT COALESCE(SUM(CASE
-                    WHEN fiscal_year = ? AND is_actual = 1
+                    WHEN fiscal_year = ? AND is_actual = 0
                     THEN amount
                     ELSE 0
                 END), 0) as total_obligations
@@ -425,7 +425,7 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
                 placeholders = ','.join('?' * len(sub_regular_ids))
                 cursor.execute(f"""
                     SELECT COALESCE(SUM(CASE
-                        WHEN fiscal_year = ? AND is_actual = 1
+                        WHEN fiscal_year = ? AND is_actual = 0
                         THEN amount
                         ELSE 0
                     END), 0) as total_obligations
@@ -571,7 +571,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             cursor.execute(f"""
                 SELECT program_id,
                     COALESCE(SUM(CASE
-                        WHEN fiscal_year = ? AND is_actual = 1
+                        WHEN fiscal_year = ? AND is_actual = 0
                         THEN amount
                         ELSE 0
                     END), 0) as total_obs
@@ -800,7 +800,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     """
     # Get CFO agencies
     cursor.execute("""
-        SELECT DISTINCT
+        SELECT DISTINCT 
             a1.id,
             a1.agency_name as title
         FROM program p
@@ -810,19 +810,19 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         AND a.tier_1_agency_id IS NOT NULL
         ORDER BY title
     """)
-
+    
     cfo_agencies = []
     for row in cursor.fetchall():
         if not row['title']:
             continue
-
+            
         agency = {'title': row['title']}
-
+        
         # Get sub-agencies
         cursor.execute("""
             SELECT DISTINCT
-                (SELECT a2.agency_name
-                 FROM agency a2
+                (SELECT a2.agency_name 
+                 FROM agency a2 
                  WHERE a2.id = a.tier_2_agency_id) as title
             FROM program p
             JOIN agency a ON p.agency_id = a.id
@@ -830,19 +830,19 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             AND a.tier_2_agency_id IS NOT NULL
             ORDER BY title
         """, (row['id'],))
-
-        sub_agencies = [{'title': sub_row['title']}
-                        for sub_row in cursor.fetchall()
-                        if sub_row['title']]
-
+        
+        sub_agencies = [{'title': sub_row['title']} 
+                       for sub_row in cursor.fetchall() 
+                       if sub_row['title']]
+        
         if sub_agencies:
             agency['sub_categories'] = sub_agencies
-
+            
         cfo_agencies.append(agency)
-
+    
     # Get non-CFO agencies
     cursor.execute("""
-        SELECT DISTINCT
+        SELECT DISTINCT 
             a1.id,
             a1.agency_name as title
         FROM program p
@@ -852,18 +852,18 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         AND a.tier_1_agency_id IS NOT NULL
         ORDER BY title
     """)
-
+    
     other_agencies = []
     for row in cursor.fetchall():
         if not row['title']:
             continue
-
+            
         agency = {'title': row['title']}
-
+        
         cursor.execute("""
             SELECT DISTINCT
-                (SELECT a2.agency_name
-                 FROM agency a2
+                (SELECT a2.agency_name 
+                 FROM agency a2 
                  WHERE a2.id = a.tier_2_agency_id) as title
             FROM program p
             JOIN agency a ON p.agency_id = a.id
@@ -871,31 +871,30 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             AND a.tier_2_agency_id IS NOT NULL
             ORDER BY title
         """, (row['id'],))
-
-        sub_agencies = [{'title': sub_row['title']}
-                        for sub_row in cursor.fetchall()
-                        if sub_row['title']]
-
+        
+        sub_agencies = [{'title': sub_row['title']} 
+                       for sub_row in cursor.fetchall() 
+                       if sub_row['title']]
+        
         if sub_agencies:
             agency['sub_categories'] = sub_agencies
-
+            
         other_agencies.append(agency)
-
+    
     # Get simple categories for applicants
     cursor.execute("""
-        SELECT DISTINCT
+        SELECT DISTINCT 
             c.name as title
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         WHERE c.type = 'applicant'
         AND c.type = ptc.category_type
-        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id
-                                           AND type = ptc.category_type)
+        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id AND type = ptc.category_type)
         ORDER BY c.name
     """)
     applicant_types = [{'title': row['title']} for row in cursor.fetchall()]
-
+    
     # Get simple categories for assistance types
     cursor.execute("""
         WITH assistance_names AS (
@@ -919,22 +918,21 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
 
     # Get simple categories for beneficiary types
     cursor.execute("""
-        SELECT DISTINCT
+        SELECT DISTINCT 
             c.name as title
         FROM program p
         JOIN program_to_category ptc ON p.id = ptc.program_id
         JOIN category c ON ptc.category_id = c.id
         WHERE c.type = 'beneficiary'
         AND c.type = ptc.category_type
-        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id
-                                           AND type = ptc.category_type)
+        AND EXISTS (SELECT 1 FROM category WHERE id = ptc.category_id AND type = ptc.category_type)
         ORDER BY c.name
     """)
     beneficiary_types = [{'title': row['title']} for row in cursor.fetchall()]
-
+    
     # Get categories with subcategories
     cursor.execute("""
-        SELECT DISTINCT
+        SELECT DISTINCT 
             pc.id as id,
             pc.name as title,
             c.name as sub_title
@@ -943,25 +941,24 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         JOIN category c ON ptc.category_id = c.id
         JOIN category pc ON c.parent_id = pc.id
         WHERE c.type = 'category'
-        AND c.type = ptc.category_type
+        AND c.type = ptc.category_type    
         ORDER BY pc.name, c.name
     """)
-
+    
     categories = []
     current_category = None
-
+    
     for row in cursor.fetchall():
         if not row['title']:
             continue
-
-        if current_category is None \
-                or current_category['title'] != row['title']:
+            
+        if current_category is None or current_category['title'] != row['title']:
             current_category = {
                 'title': row['title'],
                 'sub_categories': []
             }
             categories.append(current_category)
-
+        
         if row['sub_title']:
             sub_exists = False
             for existing_sub in current_category['sub_categories']:
@@ -974,7 +971,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
                 })
 
     print("Completed shared data creation")
-
+    
     return {
         'cfo_agencies': sorted(cfo_agencies, key=lambda x: x['title']),
         'other_agencies': sorted(other_agencies, key=lambda x: x['title']),
@@ -983,7 +980,6 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         'beneficiary_types': beneficiary_types,
         'categories': sorted(categories, key=lambda x: x['title'])
     }
-
 
 def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[str, Any]], fiscal_years: list[str]):
     """Generate individual markdown files for each program using pre-generated data."""
@@ -1215,7 +1211,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
                     SELECT DISTINCT program_id, amount
                     FROM program_sam_spending
                     WHERE fiscal_year = ?
-                    AND is_actual = 1
+                    AND is_actual = 0
                     AND program_id IN ({placeholders})
                 )
             """, [fiscal_year] + prog_ids)
@@ -1386,25 +1382,25 @@ try:
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    programs_data = generate_program_data(cursor, FISCAL_YEARS)
+    # programs_data = generate_program_data(cursor, FISCAL_YEARS)
 
     shared_data = generate_shared_data(cursor)
 
-    generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
+    # generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
 
-    generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
+    # generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, constants.FISCAL_YEAR)
 
-    category_path = os.path.join('../website', 'pages', 'category.md')
-    generate_category_page(cursor, programs_data, category_path, constants.FISCAL_YEAR)
+    # category_path = os.path.join('../website', 'pages', 'category.md')
+    # generate_category_page(cursor, programs_data, category_path, constants.FISCAL_YEAR)
 
     home_path = os.path.join('../website', 'pages', 'home.md')
     generate_home_page(home_path, shared_data, constants.FISCAL_YEAR)
 
-    programs_json_path = os.path.join('../indexer', 'programs-table.json')
-    generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
+    # programs_json_path = os.path.join('../indexer', 'programs-table.json')
+    # generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')
     generate_category_markdown_files(cursor, category_dir, constants.FISCAL_YEAR)
