@@ -667,38 +667,38 @@
     const thousand = 1000; // 1K
     const hundred = 100; // 100
 
+    leading_sign = "$";
+    if (amount < 0) {
+      leading_sign = "-$"
+    }
+
     // Handle 0 case
     if (amount === 0) {
-      return "$0";
+      return leading_sign + "0";
     }
 
     // Handle trillions
     if (amount >= trillion) {
-      return `$${(amount / trillion).toFixed(2)}T`;
+      return `${leading_sign}${(amount / trillion).toFixed(2)}T`;
     }
 
     // Handle billions
     if (amount >= billion) {
-      return `$${(amount / billion).toFixed(2)}B`;
+      return `${leading_sign}${(amount / billion).toFixed(2)}B`;
     }
 
     // Handle millions
     if (amount >= million) {
-      return `$${(amount / million).toFixed(2)}M`;
+      return `${leading_sign}${(amount / million).toFixed(2)}M`;
     }
 
     // Handle thousands
     if (amount >= thousand) {
-      return `$${(amount / thousand).toFixed(2)}K`;
+      return `${leading_sign}${(amount / thousand).toFixed(2)}K`;
     }
 
-    // Handle hundreds and smaller
-    if (amount >= hundred) {
-      return `$${amount.toFixed(2)}`;
-    }
-
-    // Handle small numbers (less than 100)
-    return `$${amount.toFixed(2)}`;
+    // Handle small numbers (less than 1000)
+    return `${leading_sign}${amount.toFixed(2)}`;
   }
 
   function updatePagination(currentPage, totalPages) {
