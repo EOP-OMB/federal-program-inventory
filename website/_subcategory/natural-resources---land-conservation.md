@@ -1,235 +1,679 @@
 ---
-agencies: '[{"title": "Department of the Interior", "total_num_programs": 56, "total_obs":
-  5086552719}, {"title": "Environmental Protection Agency", "total_num_programs":
-  8, "total_obs": 324866402}, {"title": "Department of Agriculture", "total_num_programs":
-  13, "total_obs": 1609626705}, {"title": "Department of State", "total_num_programs":
-  3, "total_obs": 8759626}, {"title": "Inter-American Foundation", "total_num_programs":
-  1, "total_obs": 0}, {"title": "Gulf Coast Ecosystem Restoration Council", "total_num_programs":
-  2, "total_obs": 158403307}, {"title": "Department of Commerce", "total_num_programs":
-  2, "total_obs": 129358810}, {"title": "Department of Defense", "total_num_programs":
-  6, "total_obs": 2354315307}, {"title": "National Aeronautics and Space Administration",
-  "total_num_programs": 1, "total_obs": 953452048}, {"title": "Denali Commission",
-  "total_num_programs": 1, "total_obs": 0}, {"title": "Department of Energy", "total_num_programs":
-  1, "total_obs": 24500000}]'
-applicant_types: '[{"title": "Individual/Family", "total_num_programs": 12}, {"title":
-  "Local (includes State-designated lndian Tribes, excludes institutions of higher
-  education and hospitals", "total_num_programs": 41}, {"title": "Other public institution/organization",
-  "total_num_programs": 28}, {"title": "Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)", "total_num_programs":
-  44}, {"title": "Profit organization", "total_num_programs": 17}, {"title": "Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)", "total_num_programs": 44}, {"title": "State (includes District of Columbia,
-  public institutions of higher education and hospitals)", "total_num_programs": 40},
-  {"title": "Other private institutions/organizations", "total_num_programs": 17},
-  {"title": "Quasi-public nonprofit institution/organization", "total_num_programs":
-  15}, {"title": "Specialized group (e.g. health professionals, students, veterans)",
-  "total_num_programs": 7}, {"title": "Federal", "total_num_programs": 18}, {"title":
-  "Federally Recognized lndian Tribal Governments", "total_num_programs": 37}, {"title":
-  "Interstate", "total_num_programs": 11}, {"title": "Intrastate", "total_num_programs":
-  8}, {"title": "Minority group", "total_num_programs": 3}, {"title": "Small business
-  (less than 500 employees)", "total_num_programs": 5}, {"title": "Sponsored organization",
-  "total_num_programs": 7}, {"title": "Anyone/general public", "total_num_programs":
-  9}, {"title": "State", "total_num_programs": 45}, {"title": "Native American Organizations
-  (includes lndian groups, cooperatives, corporations, partnerships, associations)",
-  "total_num_programs": 24}, {"title": "Government - General", "total_num_programs":
-  8}, {"title": "U.S. Territories and possessions", "total_num_programs": 11}, {"title":
-  "U.S. Territories and possessions (includes institutions of higher education and
-  hospitals)", "total_num_programs": 14}, {"title": "Non-Government - General", "total_num_programs":
-  12}]'
-fiscal_year: '2022'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":14,"total_obs":2927318577.0},{"title":"Department
+  of Defense","total_num_programs":7,"total_obs":2508999545.71},{"title":"Department
+  of the Interior","total_num_programs":61,"total_obs":1484988255.8},{"title":"Department
+  of State","total_num_programs":3,"total_obs":1243552132.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":1,"total_obs":921764930.0},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":538600106.0},{"title":"Environmental
+  Protection Agency","total_num_programs":9,"total_obs":331694652.0},{"title":"Gulf
+  Coast Ecosystem Restoration Council","total_num_programs":2,"total_obs":226607582.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":69170729.0},{"title":"Inter-American
+  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Southeast Crescent
+  Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Denali
+  Commission","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"State","total_num_programs":51},{"title":"Public nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":49},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":48},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":48},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":45},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":44},{"title":"Other public
+  institution/organization","total_num_programs":28},{"title":"Native American Organizations
+  (includes lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":27},{"title":"Federal","total_num_programs":20},{"title":"Other
+  private institutions/organizations","total_num_programs":17},{"title":"Profit organization","total_num_programs":16},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":15},{"title":"Individual/Family","total_num_programs":14},{"title":"Interstate","total_num_programs":14},{"title":"Non-Government
+  - General","total_num_programs":14},{"title":"U.S. Territories and possessions (includes
+  institutions of higher education and hospitals)","total_num_programs":14},{"title":"U.S.
+  Territories and possessions","total_num_programs":13},{"title":"Intrastate","total_num_programs":11},{"title":"Anyone/general
+  public","total_num_programs":9},{"title":"Government - General","total_num_programs":9},{"title":"Sponsored
+  organization","total_num_programs":7},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":6},{"title":"Small business (less than
+  500 employees)","total_num_programs":5},{"title":"Minority group","total_num_programs":3},{"title":"City
+  or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Indian/Native
+  American Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Indian/Native
+  American Tribally Designated Organization","total_num_programs":1},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Special
+  District Government","total_num_programs":1}]'
+categories_subcategories:
+- permalink: /category/agricultural
+  subcategories:
+  - permalink: /category/agricultural/forestry
+    title: Forestry
+  - permalink: /category/agricultural/marketing
+    title: Marketing
+  - permalink: /category/agricultural/production-and-operation
+    title: Production and Operation
+  - permalink: /category/agricultural/research-and-development
+    title: Research and Development
+  - permalink: /category/agricultural/resource-conservation-and-development
+    title: Resource Conservation and Development
+  - permalink: /category/agricultural/stabilization-and-conservation-service
+    title: Stabilization and Conservation Service
+  - permalink: /category/agricultural/technical-assistance--information-and-services
+    title: Technical Assistance, Information and Services
+  title: Agricultural
+- permalink: /category/business-and-commerce
+  subcategories:
+  - permalink: /category/business-and-commerce/commercial-fisheries
+    title: Commercial Fisheries
+  - permalink: /category/business-and-commerce/economic-development
+    title: Economic Development
+  - permalink: /category/business-and-commerce/economic-injury-and-natural-disaster
+    title: Economic Injury and Natural Disaster
+  - permalink: /category/business-and-commerce/international
+    title: International
+  - permalink: /category/business-and-commerce/maritime
+    title: Maritime
+  - permalink: /category/business-and-commerce/minority-business-enterprise
+    title: Minority Business Enterprise
+  - permalink: /category/business-and-commerce/small-business
+    title: Small Business
+  - permalink: /category/business-and-commerce/special-technical-service
+    title: Special Technical Service
+  - permalink: /category/business-and-commerce/statistics
+    title: Statistics
+  title: Business and Commerce
+- permalink: /category/community-development
+  subcategories:
+  - permalink: /category/community-development/construction--renewal-and-operations
+    title: Construction, Renewal and Operations
+  - permalink: /category/community-development/federal-surplus-property
+    title: Federal Surplus Property
+  - permalink: /category/community-development/fire-protection
+    title: Fire Protection
+  - permalink: /category/community-development/historical-preservation
+    title: Historical Preservation
+  - permalink: /category/community-development/indian-action-services
+    title: Indian Action Services
+  - permalink: /category/community-development/land-acquisition
+    title: Land Acquisition
+  - permalink: /category/community-development/planning-and-research
+    title: Planning and Research
+  - permalink: /category/community-development/recreation
+    title: Recreation
+  - permalink: /category/community-development/rural-community-development
+    title: Rural Community Development
+  - permalink: /category/community-development/site-acquisition
+    title: Site Acquisition
+  - permalink: /category/community-development/technical-assistance-and-services
+    title: Technical Assistance and Services
+  title: Community Development
+- permalink: /category/consumer-protection
+  subcategories:
+  - permalink: /category/consumer-protection/complaint-investigation
+    title: Complaint Investigation
+  - permalink: /category/consumer-protection/information-and-educational-services
+    title: Information and Educational Services
+  - permalink: /category/consumer-protection/regulation--inspection--enforcement
+    title: Regulation, Inspection, Enforcement
+  title: Consumer Protection
+- permalink: /category/cultural-affairs
+  subcategories:
+  - permalink: /category/cultural-affairs/promotion-of-the-arts
+    title: Promotion of the Arts
+  - permalink: /category/cultural-affairs/promotion-of-the-humanities
+    title: Promotion of the Humanities
+  title: Cultural Affairs
+- permalink: /category/disaster-prevention-and-relief
+  subcategories:
+  - permalink: /category/disaster-prevention-and-relief/disaster-relief
+    title: Disaster Relief
+  - permalink: /category/disaster-prevention-and-relief/emergency-health-services
+    title: Emergency Health Services
+  - permalink: /category/disaster-prevention-and-relief/emergency-preparedness--civil-defense
+    title: Emergency Preparedness, Civil Defense
+  - permalink: /category/disaster-prevention-and-relief/flood-prevention-and-control
+    title: Flood Prevention and Control
+  title: Disaster Prevention and Relief
+- permalink: /category/education
+  subcategories:
+  - permalink: /category/education/dental-education-and-training
+    title: Dental Education and Training
+  - permalink: /category/education/educational-equipment-and-resources
+    title: Educational Equipment and Resources
+  - permalink: /category/education/educational-facilities
+    title: Educational Facilities
+  - permalink: /category/education/elementary-and-secondary
+    title: Elementary and Secondary
+  - permalink: /category/education/general-research-and-evaluation
+    title: General Research and Evaluation
+  - permalink: /category/education/health-education-and-training
+    title: Health Education and Training
+  - permalink: /category/education/higher-education---general
+    title: Higher Education - General
+  - permalink: /category/education/indian-education
+    title: Indian Education
+  - permalink: /category/education/libraries-and-technical-lnformation-services
+    title: Libraries and Technical lnformation Services
+  - permalink: /category/education/medical-education-and-training
+    title: Medical Education and Training
+  - permalink: /category/education/nuclear-education-and-training
+    title: Nuclear Education and Training
+  - permalink: /category/education/nursing-education
+    title: Nursing Education
+  - permalink: /category/education/resource-development-and-support---elementary--secondary-education
+    title: Resource Development and Support - Elementary, Secondary Education
+  - permalink: /category/education/resource-development-and-support---general-and-special-interest-organizations
+    title: Resource Development and Support - General and Special Interest Organizations
+  - permalink: /category/education/resource-development-and-support---higher-education
+    title: Resource Development and Support - Higher Education
+  - permalink: /category/education/resource-development-and-support---land-and-equipment
+    title: Resource Development and Support - Land and Equipment
+  - permalink: /category/education/resource-development-and-support---school-aid
+    title: Resource Development and Support - School Aid
+  - permalink: /category/education/resource-development-and-support---sciences
+    title: Resource Development and Support - Sciences
+  - permalink: /category/education/resource-development-and-support---student-financial-aid
+    title: Resource Development and Support - Student Financial Aid
+  - permalink: /category/education/resource-development-and-support---vocational-education-and-handicapped-education
+    title: Resource Development and Support - Vocational Education and Handicapped
+      Education
+  - permalink: /category/education/special-education
+    title: Special Education
+  - permalink: /category/education/teacher-training
+    title: Teacher Training
+  - permalink: /category/education/vocational-development
+    title: Vocational Development
+  title: Education
+- permalink: /category/employment--labor--and-training
+  subcategories:
+  - permalink: /category/employment--labor--and-training/assistance-and-services-for-the-unemployed
+    title: Assistance and Services for the Unemployed
+  - permalink: /category/employment--labor--and-training/assistance-to-state-and-local-governments
+    title: Assistance to State and Local Governments
+  - permalink: /category/employment--labor--and-training/bonding-and-certification
+    title: Bonding and Certification
+  - permalink: /category/employment--labor--and-training/equal-employment-opportunity
+    title: Equal Employment Opportunity
+  - permalink: /category/employment--labor--and-training/facilities--planning--construction--and-equipment
+    title: Facilities, Planning, Construction, and Equipment
+  - permalink: /category/employment--labor--and-training/federal-employment
+    title: Federal Employment
+  - permalink: /category/employment--labor--and-training/job-training--employment
+    title: Job Training, Employment
+  - permalink: /category/employment--labor--and-training/labor-management-services
+    title: Labor Management Services
+  - permalink: /category/employment--labor--and-training/planning--research--and-demonstration
+    title: Planning, Research, and Demonstration
+  - permalink: /category/employment--labor--and-training/program-development
+    title: Program Development
+  - permalink: /category/employment--labor--and-training/statistical
+    title: Statistical
+  title: Employment, Labor, and Training
+- permalink: /category/energy
+  subcategories:
+  - permalink: /category/energy/conservation
+    title: Conservation
+  - permalink: /category/energy/education-and-training
+    title: Education and Training
+  - permalink: /category/energy/facilities-and-equipment
+    title: Facilities and Equipment
+  - permalink: /category/energy/general-information-services
+    title: General Information Services
+  - permalink: /category/energy/research-and-development
+    title: Research and Development
+  - permalink: /category/energy/specialized-technical-services
+    title: Specialized Technical Services
+  title: Energy
+- permalink: /category/environmental-quality
+  subcategories:
+  - permalink: /category/environmental-quality/air-pollution-control
+    title: Air Pollution Control
+  - permalink: /category/environmental-quality/pesticides-control
+    title: Pesticides Control
+  - permalink: /category/environmental-quality/radiation-control
+    title: Radiation Control
+  - permalink: /category/environmental-quality/research--education--training
+    title: Research, Education, Training
+  - permalink: /category/environmental-quality/solid-waste-management
+    title: Solid Waste Management
+  - permalink: /category/environmental-quality/water-pollution-control
+    title: Water Pollution Control
+  title: Environmental Quality
+- permalink: /category/food-and-nutrition
+  subcategories:
+  - permalink: /category/food-and-nutrition/food-inspection
+    title: Food Inspection
+  - permalink: /category/food-and-nutrition/food-and-nutrition-for-children
+    title: Food and Nutrition for Children
+  - permalink: /category/food-and-nutrition/food-and-nutrition-for-individual-and-families
+    title: Food and Nutrition for Individual and Families
+  - permalink: /category/food-and-nutrition/research
+    title: Research
+  title: Food and Nutrition
+- permalink: /category/health
+  subcategories:
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---general
+    title: Alcoholism, Drug Abuse and Mental Health - General
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement
+    title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---planning
+    title: Alcoholism, Drug Abuse and Mental Health - Planning
+  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---research
+    title: Alcoholism, Drug Abuse and Mental Health - Research
+  - permalink: /category/health/communicable-diseases
+    title: Communicable Diseases
+  - permalink: /category/health/education-and-training
+    title: Education and Training
+  - permalink: /category/health/facility-loans-and-insurance
+    title: Facility Loans and Insurance
+  - permalink: /category/health/facility-planning-and-construction
+    title: Facility Planning and Construction
+  - permalink: /category/health/general-health-and-medical
+    title: General Health and Medical
+  - permalink: /category/health/health-research---general
+    title: Health Research - General
+  - permalink: /category/health/health-services-planning-and-technical-assistance
+    title: Health Services Planning and Technical Assistance
+  - permalink: /category/health/indian-health
+    title: Indian Health
+  - permalink: /category/health/libraries--information-and-education-services
+    title: Libraries, Information and Education Services
+  - permalink: /category/health/maternity--infants--children
+    title: Maternity, Infants, Children
+  - permalink: /category/health/mental-health
+    title: Mental Health
+  - permalink: /category/health/occupational-safety-and-health
+    title: Occupational Safety and Health
+  - permalink: /category/health/physical-fitness
+    title: Physical Fitness
+  - permalink: /category/health/prevention-and-control
+    title: Prevention and Control
+  - permalink: /category/health/program-development
+    title: Program Development
+  - permalink: /category/health/specialized-health-research-and-training
+    title: Specialized Health Research and Training
+  - permalink: /category/health/veterans-health
+    title: Veterans Health
+  title: Health
+- permalink: /category/housing
+  subcategories:
+  - permalink: /category/housing/construction-rehabilitation
+    title: Construction Rehabilitation
+  - permalink: /category/housing/cooperatives--rental
+    title: Cooperatives, Rental
+  - permalink: /category/housing/experimental-and-development-projects
+    title: Experimental and Development Projects
+  - permalink: /category/housing/home-improvement
+    title: Home Improvement
+  - permalink: /category/housing/homebuying--homeownership
+    title: Homebuying, Homeownership
+  - permalink: /category/housing/indian-housing
+    title: Indian Housing
+  - permalink: /category/housing/land-acquisition
+    title: Land Acquisition
+  - permalink: /category/housing/multifamily
+    title: Multifamily
+  - permalink: /category/housing/planning
+    title: Planning
+  - permalink: /category/housing/property-and-mortgage-insurance
+    title: Property and Mortgage Insurance
+  - permalink: /category/housing/rural-housing
+    title: Rural Housing
+  - permalink: /category/housing/site-preparation-for-housing
+    title: Site Preparation for Housing
+  title: Housing
+- permalink: /category/income-security-and-social-services
+  subcategories:
+  - permalink: /category/income-security-and-social-services/disabled-veterans
+    title: Disabled Veterans
+  - permalink: /category/income-security-and-social-services/disabled-and-handicapped-services
+    title: Disabled and Handicapped Services
+  - permalink: /category/income-security-and-social-services/emergency-and-crisis-assistance
+    title: Emergency and Crisis Assistance
+  - permalink: /category/income-security-and-social-services/families-and-child-welfare-services
+    title: Families and Child Welfare Services
+  - permalink: /category/income-security-and-social-services/indian-services
+    title: Indian Services
+  - permalink: /category/income-security-and-social-services/information-and-referral-services
+    title: Information and Referral Services
+  - permalink: /category/income-security-and-social-services/legal-and-advocacy-services
+    title: Legal and Advocacy Services
+  - permalink: /category/income-security-and-social-services/nutrition
+    title: Nutrition
+  - permalink: /category/income-security-and-social-services/old-age-assistance
+    title: Old Age Assistance
+  - permalink: /category/income-security-and-social-services/prevention
+    title: Prevention
+  - permalink: /category/income-security-and-social-services/public-assistance
+    title: Public Assistance
+  - permalink: /category/income-security-and-social-services/refugees--alien-services
+    title: Refugees, Alien Services
+  - permalink: /category/income-security-and-social-services/research--demonstration
+    title: Research, Demonstration
+  - permalink: /category/income-security-and-social-services/social-security-and-insurance
+    title: Social Security and Insurance
+  - permalink: /category/income-security-and-social-services/specialized-family-and-child-welfare-services
+    title: Specialized Family and Child Welfare Services
+  - permalink: /category/income-security-and-social-services/specialized-services
+    title: Specialized Services
+  - permalink: /category/income-security-and-social-services/training-assistance
+    title: Training Assistance
+  - permalink: /category/income-security-and-social-services/veterans-services
+    title: Veterans Services
+  - permalink: /category/income-security-and-social-services/youth-services
+    title: Youth Services
+  title: Income Security and Social Services
+- permalink: /category/information-and-statistics
+  subcategories:
+  - permalink: /category/information-and-statistics/census-data
+    title: Census Data
+  - permalink: /category/information-and-statistics/general
+    title: General
+  - permalink: /category/information-and-statistics/libraries--clearinghouses--archives
+    title: Libraries, Clearinghouses, Archives
+  - permalink: /category/information-and-statistics/library-of-congress
+    title: Library of Congress
+  title: Information and Statistics
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
+- permalink: /category/law--justice-and-legal-services
+  subcategories:
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
+    title: Law Enforcement - Crime Analysis and Data
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
+    title: Law Enforcement - Narcotics and Dangerous Drugs
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---planning-and-operations
+    title: Law Enforcement - Planning and Operations
+  - permalink: /category/law--justice-and-legal-services/law-enforcement---research--education--training
+    title: Law Enforcement - Research, Education, Training
+  - permalink: /category/law--justice-and-legal-services/legal-services---claims-against-foreign-government
+    title: Legal Services - Claims Against Foreign Government
+  - permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
+    title: Legal Services - Employment Rights
+  - permalink: /category/law--justice-and-legal-services/legal-services---general-services
+    title: Legal Services - General Services
+  - permalink: /category/law--justice-and-legal-services/legal-services---housing-rights
+    title: Legal Services - Housing Rights
+  - permalink: /category/law--justice-and-legal-services/legal-services---labor-management
+    title: Legal Services - Labor Management
+  title: Law, Justice and Legal Services
+- permalink: /category/natural-resources
+  subcategories:
+  - permalink: /category/natural-resources/community-sewage-treatment-assistance
+    title: Community Sewage Treatment Assistance
+  - permalink: /category/natural-resources/community-water-supply-services
+    title: Community Water Supply Services
+  - permalink: /category/natural-resources/land-conservation
+    title: Land Conservation
+  - permalink: /category/natural-resources/mineral-research
+    title: Mineral Research
+  - permalink: /category/natural-resources/recreation
+    title: Recreation
+  - permalink: /category/natural-resources/water-conservation-and-research
+    title: Water Conservation and Research
+  - permalink: /category/natural-resources/wildlife-research-and-preservation
+    title: Wildlife Research and Preservation
+  title: Natural Resources
+- permalink: /category/regional-development
+  subcategories:
+  - permalink: /category/regional-development/economic-development
+    title: Economic Development
+  - permalink: /category/regional-development/education
+    title: Education
+  - permalink: /category/regional-development/energy
+    title: Energy
+  - permalink: /category/regional-development/health-and-nutrition
+    title: Health and Nutrition
+  - permalink: /category/regional-development/housing
+    title: Housing
+  - permalink: /category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction
+    title: Land Acquisition and Rehabilitation and Facilities Construction
+  - permalink: /category/regional-development/planning-and-technical-assistance
+    title: Planning and Technical Assistance
+  - permalink: /category/regional-development/resources-and-development
+    title: Resources and Development
+  - permalink: /category/regional-development/transportation
+    title: Transportation
+  title: Regional Development
+- permalink: /category/science-and-technology
+  subcategories:
+  - permalink: /category/science-and-technology/information-and-technical
+    title: Information and Technical
+  - permalink: /category/science-and-technology/research---general
+    title: Research - General
+  - permalink: /category/science-and-technology/research---specialized
+    title: Research - Specialized
+  title: Science and Technology
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
+- permalink: /category/transportation
+  subcategories:
+  - permalink: /category/transportation/air-transportation
+    title: Air Transportation
+  - permalink: /category/transportation/highways--public-roads--and-bridges
+    title: Highways, Public Roads, and Bridges
+  - permalink: /category/transportation/rail-transportation
+    title: Rail Transportation
+  - permalink: /category/transportation/urban-mass-transit
+    title: Urban Mass Transit
+  - permalink: /category/transportation/water-navigation
+    title: Water Navigation
+  title: Transportation
+fiscal_year: '2024'
 parent_permalink: /category/natural-resources
 parent_title: Natural Resources
 permalink: /category/natural-resources/land-conservation
-programs: '[{"cfda": "15.807", "title": "Earthquake Hazards Program Assistance", "agency":
-  "Department of the Interior", "total_obs": 28500000, "permalink": "/program/15.807"},
-  {"cfda": "15.931", "title": "Youth and Veteran Organizations Conservation Activities",
-  "agency": "Department of the Interior", "total_obs": 28303582, "permalink": "/program/15.931"},
-  {"cfda": "15.630", "title": "Coastal", "agency": "Department of the Interior", "total_obs":
-  6000000, "permalink": "/program/15.630"}, {"cfda": "15.658", "title": "Natural Resource
-  Damage Assessment and Restoration", "agency": "Department of the Interior", "total_obs":
-  6623046, "permalink": "/program/15.658"}, {"cfda": "15.432", "title": "California
-  Refuge Account", "agency": "Department of the Interior", "total_obs": 0, "permalink":
-  "/program/15.432"}, {"cfda": "15.068", "title": "Native Hawaiian Community Guest
-  Stewardship", "agency": "Department of the Interior", "total_obs": 978824, "permalink":
-  "/program/15.068"}, {"cfda": "66.475", "title": "Geographic Programs \u2013 Gulf
-  of Mexico Program", "agency": "Environmental Protection Agency", "total_obs": 17359022,
-  "permalink": "/program/66.475"}, {"cfda": "15.237", "title": "Rangeland Resource
-  Management", "agency": "Department of the Interior", "total_obs": 3502100, "permalink":
-  "/program/15.237"}, {"cfda": "10.968", "title": "Increasing Land, Capital, and Market
-  Access Program", "agency": "Department of Agriculture", "total_obs": 0, "permalink":
-  "/program/10.968"}, {"cfda": "10.715", "title": "Infrastructure Investment and Jobs
-  Act Collaborative Forest Landscape Restoration Program", "agency": "Department of
-  Agriculture", "total_obs": 20000000, "permalink": "/program/10.715"}, {"cfda": "15.156",
-  "title": "Tribal Climate Resilience ", "agency": "Department of the Interior", "total_obs":
-  1558308, "permalink": "/program/15.156"}, {"cfda": "15.228", "title": "BLM Fuels
-  Management and Community Fire Assistance Program Activities", "agency": "Department
-  of the Interior", "total_obs": 5758362, "permalink": "/program/15.228"}, {"cfda":
-  "19.124", "title": "East Asia and Pacific Grants Program", "agency": "Department
-  of State", "total_obs": 0, "permalink": "/program/19.124"}, {"cfda": "66.485", "title":
-  "Support for the Gulf Hypoxia Action Plan", "agency": "Environmental Protection
-  Agency", "total_obs": 11580000, "permalink": "/program/66.485"}, {"cfda": "15.935",
-  "title": "National Trails System Projects", "agency": "Department of the Interior",
-  "total_obs": 6033878, "permalink": "/program/15.935"}, {"cfda": "15.682", "title":
-  "Experienced Services", "agency": "Department of the Interior", "total_obs": 1620704,
-  "permalink": "/program/15.682"}, {"cfda": "10.905", "title": "Plant Materials for
-  Conservation", "agency": "Department of Agriculture", "total_obs": 11681000, "permalink":
-  "/program/10.905"}, {"cfda": "15.433", "title": "Flood Control Act Lands", "agency":
-  "Department of the Interior", "total_obs": 83829904, "permalink": "/program/15.433"},
-  {"cfda": "15.667", "title": "Highlands Conservation ", "agency": "Department of
-  the Interior", "total_obs": 20000000, "permalink": "/program/15.667"}, {"cfda":
-  "15.963", "title": "Southwest Border Resource Protection Program", "agency": "Department
-  of the Interior", "total_obs": 464516, "permalink": "/program/15.963"}, {"cfda":
-  "15.434", "title": "Geothermal Resources", "agency": "Department of the Interior",
-  "total_obs": 5730601, "permalink": "/program/15.434"}, {"cfda": "15.933", "title":
-  "Preservation of Japanese American Confinement Sites", "agency": "Department of
-  the Interior", "total_obs": 3450167, "permalink": "/program/15.933"}, {"cfda": "85.750",
-  "title": "IAF Assistance for Overseas Programs", "agency": "Inter-American Foundation",
-  "total_obs": 0, "permalink": "/program/85.750"}, {"cfda": "15.808", "title": "U.S.
-  Geological Survey Research and Data Collection", "agency": "Department of the Interior",
-  "total_obs": 178082702, "permalink": "/program/15.808"}, {"cfda": "87.052", "title":
-  "Gulf Coast Ecosystem Restoration Council Oil Spill Impact Program", "agency": "Gulf
-  Coast Ecosystem Restoration Council", "total_obs": 90448634, "permalink": "/program/87.052"},
-  {"cfda": "15.543", "title": "Lake Tahoe Regional Wetlands Development ", "agency":
-  "Department of the Interior", "total_obs": 30000, "permalink": "/program/15.543"},
-  {"cfda": "15.066", "title": "Tribal Great Lakes Restoration Initiative", "agency":
-  "Department of the Interior", "total_obs": 1496614, "permalink": "/program/15.066"},
-  {"cfda": "15.406", "title": "National Park Service Centennial Challenge", "agency":
-  "Department of the Interior", "total_obs": 0, "permalink": "/program/15.406"}, {"cfda":
-  "11.419", "title": "Coastal Zone Management Administration Awards", "agency": "Department
-  of Commerce", "total_obs": 83275959, "permalink": "/program/11.419"}, {"cfda": "15.245",
-  "title": "Plant Conservation and Restoration Management", "agency": "Department
-  of the Interior", "total_obs": 7046681, "permalink": "/program/15.245"}, {"cfda":
-  "10.664", "title": "Cooperative Forestry Assistance", "agency": "Department of Agriculture",
-  "total_obs": 156764128, "permalink": "/program/10.664"}, {"cfda": "10.902", "title":
-  "Soil and Water Conservation", "agency": "Department of Agriculture", "total_obs":
-  634398000, "permalink": "/program/10.902"}, {"cfda": "15.017", "title": "Eastern
-  Nevada Conservation, Recreation and Development", "agency": "Department of the Interior",
-  "total_obs": 0, "permalink": "/program/15.017"}, {"cfda": "87.051", "title": "Gulf
-  Coast Ecosystem Restoration Council Comprehensive Plan Component Program", "agency":
-  "Gulf Coast Ecosystem Restoration Council", "total_obs": 67954673, "permalink":
-  "/program/87.051"}, {"cfda": "15.636", "title": "Alaska Subsistence Management",
-  "agency": "Department of the Interior", "total_obs": 6040000, "permalink": "/program/15.636"},
-  {"cfda": "15.435", "title": "GoMESA", "agency": "Department of the Interior", "total_obs":
-  252263256, "permalink": "/program/15.435"}, {"cfda": "15.239", "title": "Management
-  Initiatives", "agency": "Department of the Interior", "total_obs": 132320, "permalink":
-  "/program/15.239"}, {"cfda": "15.522", "title": "Mni Wiconi Rural Water Supply Project",
-  "agency": "Department of the Interior", "total_obs": 22574438, "permalink": "/program/15.522"},
-  {"cfda": "15.650", "title": "Research Grants (Generic)", "agency": "Department of
-  the Interior", "total_obs": 0, "permalink": "/program/15.650"}, {"cfda": "15.248",
-  "title": "National Landscape Conservation System", "agency": "Department of the
-  Interior", "total_obs": 239083, "permalink": "/program/15.248"}, {"cfda": "19.017",
-  "title": "Environmental and Scientific Partnerships and Programs", "agency": "Department
-  of State", "total_obs": 355702, "permalink": "/program/19.017"}, {"cfda": "15.623",
-  "title": "North American Wetlands Conservation Fund", "agency": "Department of the
-  Interior", "total_obs": 127999998, "permalink": "/program/15.623"}, {"cfda": "15.436",
-  "title": "Late Disbursement Interest", "agency": "Department of the Interior", "total_obs":
-  182349, "permalink": "/program/15.436"}, {"cfda": "12.632", "title": "Legacy Resource
-  Management Program", "agency": "Department of Defense", "total_obs": 9000000, "permalink":
-  "/program/12.632"}, {"cfda": "66.126", "title": "Geographic Programs - San Francisco
-  Bay Water Quality Improvement Fund", "agency": "Environmental Protection Agency",
-  "total_obs": 28800000, "permalink": "/program/66.126"}, {"cfda": "12.005", "title":
-  "Conservation and Rehabilitation of Natural Resources on Military Installations",
-  "agency": "Department of Defense", "total_obs": 91400000, "permalink": "/program/12.005"},
-  {"cfda": "10.936", "title": "Gulf Coast Ecosystem Restoration Council Comprehensive
-  Plan Component Program", "agency": "Department of Agriculture", "total_obs": 4085000,
-  "permalink": "/program/10.936"}, {"cfda": "12.021", "title": "Army National Guard
-  Army Compatible Use Buffer Program", "agency": "Department of Defense", "total_obs":
-  13655033, "permalink": "/program/12.021"}, {"cfda": "15.512", "title": "Central
-  Valley Improvement Act, Title XXXIV", "agency": "Department of the Interior", "total_obs":
-  51071672, "permalink": "/program/15.512"}, {"cfda": "66.481", "title": "Geographic
-  Programs \u2013 Lake Champlain Basin Program", "agency": "Environmental Protection
-  Agency", "total_obs": 28000000, "permalink": "/program/66.481"}, {"cfda": "19.750",
-  "title": "Bureau of Western Hemisphere Affairs (WHA) Grant Programs (including Energy
-  and Climate Partnership for the Americas)", "agency": "Department of State", "total_obs":
-  8403924, "permalink": "/program/19.750"}, {"cfda": "10.699", "title": "Partnership
-  Agreements", "agency": "Department of Agriculture", "total_obs": 133753783, "permalink":
-  "/program/10.699"}, {"cfda": "15.670", "title": "Adaptive Science", "agency": "Department
-  of the Interior", "total_obs": 20548594, "permalink": "/program/15.670"}, {"cfda":
-  "12.010", "title": "Youth Conservation Services", "agency": "Department of Defense",
-  "total_obs": 2441784, "permalink": "/program/12.010"}, {"cfda": "66.964", "title":
-  "Geographic Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability
-  and Monitoring Grants", "agency": "Environmental Protection Agency", "total_obs":
-  42000000, "permalink": "/program/66.964"}, {"cfda": "10.215", "title": "Sustainable
-  Agriculture Research and Education", "agency": "Department of Agriculture", "total_obs":
-  37478000, "permalink": "/program/10.215"}, {"cfda": "66.129", "title": "Geographic
-  Programs - Southeast New England Coastal Watershed Restoration Program", "agency":
-  "Environmental Protection Agency", "total_obs": 7734535, "permalink": "/program/66.129"},
-  {"cfda": "15.073", "title": "Earth Mapping Resources Initiative", "agency": "Department
-  of the Interior", "total_obs": 0, "permalink": "/program/15.073"}, {"cfda": "15.431",
-  "title": "Alaska Settlement Agreement", "agency": "Department of the Interior",
-  "total_obs": 0, "permalink": "/program/15.431"}, {"cfda": "10.933", "title": "Wetland
-  Mitigation Banking Program", "agency": "Department of Agriculture", "total_obs":
-  5063000, "permalink": "/program/10.933"}, {"cfda": "66.469", "title": "Geographic
-  Programs - Great Lakes Restoration Initiative", "agency": "Environmental Protection
-  Agency", "total_obs": 118392845, "permalink": "/program/66.469"}, {"cfda": "15.810",
-  "title": "National Cooperative Geologic Mapping ", "agency": "Department of the
-  Interior", "total_obs": 15307595, "permalink": "/program/15.810"}, {"cfda": "43.001",
-  "title": "Science", "agency": "National Aeronautics and Space Administration", "total_obs":
-  953452048, "permalink": "/program/43.001"}, {"cfda": "10.461", "title": "Pandemic
-  Cover Crop Program", "agency": "Department of Agriculture", "total_obs": 77903794,
-  "permalink": "/program/10.461"}, {"cfda": "15.943", "title": "Challenge Cost Share",
-  "agency": "Department of the Interior", "total_obs": 0, "permalink": "/program/15.943"},
-  {"cfda": "10.054", "title": "Emergency Conservation Program", "agency": "Department
-  of Agriculture", "total_obs": 200000000, "permalink": "/program/10.054"}, {"cfda":
-  "90.199", "title": "Shared Services", "agency": "Denali Commission", "total_obs":
-  0, "permalink": "/program/90.199"}, {"cfda": "15.430", "title": "8(g) State Coastal
-  Zone", "agency": "Department of the Interior", "total_obs": 11771430, "permalink":
-  "/program/15.430"}, {"cfda": "15.247", "title": "Wildlife Resource Management",
-  "agency": "Department of the Interior", "total_obs": 9782775, "permalink": "/program/15.247"},
-  {"cfda": "15.429", "title": "State Select", "agency": "Department of the Interior",
-  "total_obs": 0, "permalink": "/program/15.429"}, {"cfda": "15.921", "title": "Rivers,
-  Trails and Conservation Assistance", "agency": "Department of the Interior", "total_obs":
-  970685, "permalink": "/program/15.921"}, {"cfda": "12.401", "title": "National Guard
-  Military Operations and Maintenance (O&M) Projects", "agency": "Department of Defense",
-  "total_obs": 2100000000, "permalink": "/program/12.401"}, {"cfda": "15.018", "title":
-  "Energy Community Revitalization Program (ECRP)", "agency": "Department of the Interior",
-  "total_obs": 25000000, "permalink": "/program/15.018"}, {"cfda": "15.817", "title":
-  "National Geospatial Program: Building The National Map ", "agency": "Department
-  of the Interior", "total_obs": 1883613, "permalink": "/program/15.817"}, {"cfda":
-  "15.439", "title": "National Petroleum Reserve - Alaska", "agency": "Department
-  of the Interior", "total_obs": 29197347, "permalink": "/program/15.439"}, {"cfda":
-  "15.438", "title": "National Forest Acquired Lands", "agency": "Department of the
-  Interior", "total_obs": 8092896, "permalink": "/program/15.438"}, {"cfda": "10.443",
-  "title": "Outreach and Assistance for Socially Disadvantaged and Veteran Farmers
-  and Ranchers", "agency": "Department of Agriculture", "total_obs": 57500000, "permalink":
-  "/program/10.443"}, {"cfda": "11.463", "title": "Habitat Conservation", "agency":
-  "Department of Commerce", "total_obs": 46082851, "permalink": "/program/11.463"},
-  {"cfda": "15.016", "title": "Experienced Services Program", "agency": "Department
-  of the Interior", "total_obs": 11931344, "permalink": "/program/15.016"}, {"cfda":
-  "12.017", "title": "Readiness and Environmental Protection Integration (REPI) Program",
-  "agency": "Department of Defense", "total_obs": 137818490, "permalink": "/program/12.017"},
-  {"cfda": "15.224", "title": "Cultural and Paleontological Resources Management",
-  "agency": "Department of the Interior", "total_obs": 2230857, "permalink": "/program/15.224"},
-  {"cfda": "15.437", "title": "Minerals Leasing Act", "agency": "Department of the
-  Interior", "total_obs": 3967234520, "permalink": "/program/15.437"}, {"cfda": "15.241",
-  "title": "Indian Self-Determination Act Contracts, Grants and Cooperative Agreements",
-  "agency": "Department of the Interior", "total_obs": 0, "permalink": "/program/15.241"},
-  {"cfda": "15.669", "title": "Cooperative Landscape Conservation", "agency": "Department
-  of the Interior", "total_obs": 81300000, "permalink": "/program/15.669"}, {"cfda":
-  "15.930", "title": "Chesapeake Bay Gateways Network", "agency": "Department of the
-  Interior", "total_obs": 1237353, "permalink": "/program/15.930"}, {"cfda": "81.214",
-  "title": "Environmental Monitoring/Cleanup, Cultural and Resource Mgmt., Emergency
-  Response Research, Outreach, Technical Analysis", "agency": "Department of Energy",
-  "total_obs": 24500000, "permalink": "/program/81.214"}, {"cfda": "15.815", "title":
-  "National Land Remote Sensing Education Outreach and Research", "agency": "Department
-  of the Interior", "total_obs": 1250000, "permalink": "/program/15.815"}, {"cfda":
-  "15.015", "title": "Good Neighbor Authority", "agency": "Department of the Interior",
-  "total_obs": 13316466, "permalink": "/program/15.015"}, {"cfda": "15.229", "title":
-  "Wild Horse and Burro Resource Management", "agency": "Department of the Interior",
-  "total_obs": 28940048, "permalink": "/program/15.229"}, {"cfda": "66.466", "title":
-  "Geographic Programs - Chesapeake Bay Program", "agency": "Environmental Protection
-  Agency", "total_obs": 71000000, "permalink": "/program/66.466"}, {"cfda": "10.717",
-  "title": "Infrastructure Investment and Jobs Act Restoration/Revegetation", "agency":
-  "Department of Agriculture", "total_obs": 271000000, "permalink": "/program/10.717"},
-  {"cfda": "15.440", "title": "South Half of the Red River", "agency": "Department
-  of the Interior", "total_obs": 15725, "permalink": "/program/15.440"}, {"cfda":
-  "15.236", "title": "Environmental Quality and Protection", "agency": "Department
-  of the Interior", "total_obs": 294197, "permalink": "/program/15.236"}, {"cfda":
-  "15.011", "title": "Experienced Services Program", "agency": "Department of the
-  Interior", "total_obs": 6734168, "permalink": "/program/15.011"}]'
+programs: '[{"cfda":"15.630","permalink":"/program/15.630","title":"Coastal","popular_name":null,"agency":"Department
+  of the Interior","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"12.632","permalink":"/program/12.632","title":"Legacy
+  Resource Management Program","popular_name":"DoD Legacy Program","agency":"Department
+  of Defense","total_obs":5700000.0,"program_type":"assistance_listing"},{"cfda":"66.481","permalink":"/program/66.481","title":"Geographic
+  Programs \u2013 Lake Champlain Basin Program","popular_name":"Lake Champlain Program","agency":"Environmental
+  Protection Agency","total_obs":32401000.0,"program_type":"assistance_listing"},{"cfda":"15.239","permalink":"/program/15.239","title":"Management
+  Initiatives","popular_name":"Management Initiatives","agency":"Department of the
+  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.012","permalink":"/program/12.012","title":"Management
+  of Undersirable Plants on Federal Lands, 7 U.S.C. 2814","popular_name":"Invasive
+  and Noxious Plant Management","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.443","permalink":"/program/10.443","title":"Outreach
+  and Assistance for Socially Disadvantaged and Veteran Farmers and Ranchers","popular_name":"USDA
+  2501 Grant Program ","agency":"Department of Agriculture","total_obs":22600000.0,"program_type":"assistance_listing"},{"cfda":"66.126","permalink":"/program/66.126","title":"Geographic
+  Programs - San Francisco Bay Water Quality Improvement Fund","popular_name":"SF
+  Bay Program","agency":"Environmental Protection Agency","total_obs":46042328.0,"program_type":"assistance_listing"},{"cfda":"15.228","permalink":"/program/15.228","title":"BLM
+  Fuels Management and Community Fire Assistance Program Activities","popular_name":"BLM
+  Wildland Fire Fuels Management and Community Assistance Program Activities","agency":"Department
+  of the Interior","total_obs":17500000.0,"program_type":"assistance_listing"},{"cfda":"15.247","permalink":"/program/15.247","title":"Wildlife
+  Resource Management","popular_name":null,"agency":"Department of the Interior","total_obs":24568803.0,"program_type":"assistance_listing"},{"cfda":"15.241","permalink":"/program/15.241","title":"Indian
+  Self-Determination Act Contracts, Grants and Cooperative Agreements","popular_name":"638
+  Indian Self-Determination Act Contracts, Grants and Cooperative Agreements","agency":"Department
+  of the Interior","total_obs":1349412.8,"program_type":"assistance_listing"},{"cfda":"15.440","permalink":"/program/15.440","title":"South
+  Half of the Red River","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.936","permalink":"/program/10.936","title":"Gulf
+  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
+  Council-Selected Restoration Component","agency":"Department of Agriculture","total_obs":4123400.0,"program_type":"assistance_listing"},{"cfda":"15.921","permalink":"/program/15.921","title":"Rivers,
+  Trails and Conservation Assistance","popular_name":"Rivers and Trails;  RTCA","agency":"Department
+  of the Interior","total_obs":1736191.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
+  Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
+  Protection Agency","total_obs":106045589.0,"program_type":"assistance_listing"},{"cfda":"15.963","permalink":"/program/15.963","title":"Southwest
+  Border Resource Protection Program","popular_name":null,"agency":"Department of
+  the Interior","total_obs":400000.0,"program_type":"assistance_listing"},{"cfda":"10.461","permalink":"/program/10.461","title":"Pandemic
+  Cover Crop Program","popular_name":"PCCP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.433","permalink":"/program/15.433","title":"Flood
+  Control Act Lands","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.670","permalink":"/program/15.670","title":"Adaptive
+  Science","popular_name":null,"agency":"Department of the Interior","total_obs":8000000.0,"program_type":"assistance_listing"},{"cfda":"15.436","permalink":"/program/15.436","title":"Late
+  Disbursement Interest","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.224","permalink":"/program/15.224","title":"Cultural
+  and Paleontological Resources Management","popular_name":null,"agency":"Department
+  of the Interior","total_obs":1424908.0,"program_type":"assistance_listing"},{"cfda":"10.734","permalink":"/program/10.734","title":"Inflation
+  Reduction Act - Forest Legacy Program","popular_name":"IRA FLP","agency":"Department
+  of Agriculture","total_obs":114626000.0,"program_type":"assistance_listing"},{"cfda":"15.016","permalink":"/program/15.016","title":"Experienced
+  Services Program","popular_name":null,"agency":"Department of the Interior","total_obs":11269484.0,"program_type":"assistance_listing"},{"cfda":"15.434","permalink":"/program/15.434","title":"Geothermal
+  Resources","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
+  Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2293444239.0,"program_type":"assistance_listing"},{"cfda":"15.429","permalink":"/program/15.429","title":"State
+  Select","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.717","permalink":"/program/10.717","title":"Infrastructure
+  Investment and Jobs Act Restoration/Revegetation","popular_name":"IIJA Restoration/Revegetation","agency":"Department
+  of Agriculture","total_obs":56880000.0,"program_type":"assistance_listing"},{"cfda":"15.817","permalink":"/program/15.817","title":"National
+  Geospatial Program: Building The National Map ","popular_name":"The National Map","agency":"Department
+  of the Interior","total_obs":2679444.0,"program_type":"assistance_listing"},{"cfda":"10.715","permalink":"/program/10.715","title":"Infrastructure
+  Investment and Jobs Act Collaborative Forest Landscape Restoration Program","popular_name":"IIJA
+  Collaborative Forest Landscape Restoration Program","agency":"Department of Agriculture","total_obs":7053745.0,"program_type":"assistance_listing"},{"cfda":"15.522","permalink":"/program/15.522","title":"Mni
+  Wiconi Rural Water Supply Project","popular_name":"Mni Wiconi Project","agency":"Department
+  of the Interior","total_obs":92853046.0,"program_type":"assistance_listing"},{"cfda":"11.419","permalink":"/program/11.419","title":"Coastal
+  Zone Management Administration Awards","popular_name":"Agency: Department of Commerce
+  Office: National Oceanic and Atmospheric Administration (NOAA)","agency":"Department
+  of Commerce","total_obs":85500106.0,"program_type":"assistance_listing"},{"cfda":"15.098","permalink":"/program/15.098","title":"Native
+  Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau","agency":"Department
+  of the Interior","total_obs":18523745.0,"program_type":"assistance_listing"},{"cfda":"10.215","permalink":"/program/10.215","title":"Sustainable
+  Agriculture Research and Education","popular_name":"(SARE)","agency":"Department
+  of Agriculture","total_obs":45020388.0,"program_type":"assistance_listing"},{"cfda":"15.430","permalink":"/program/15.430","title":"8(g)
+  State Coastal Zone","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
+  Hardrock Mine Reclamation (AHMR/AML) Grants","popular_name":"Hardrock Abandoned
+  Mine Land Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
+  Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
+  Agency","total_obs":5266209.0,"program_type":"assistance_listing"},{"cfda":"15.658","permalink":"/program/15.658","title":"Natural
+  Resource Damage Assessment and Restoration","popular_name":"NRDAR","agency":"Department
+  of the Interior","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"66.469","permalink":"/program/66.469","title":"Geographic
+  Programs - Great Lakes Restoration Initiative","popular_name":"Great Lakes Restoration
+  Initiative (GLRI)","agency":"Environmental Protection Agency","total_obs":68185831.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
+  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
+  of State","total_obs":1223802133.0,"program_type":"assistance_listing"},{"cfda":"15.935","permalink":"/program/15.935","title":"National
+  Trails System Projects","popular_name":null,"agency":"Department of the Interior","total_obs":3176783.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
+  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
+  of the Interior","total_obs":46999998.0,"program_type":"assistance_listing"},{"cfda":"15.066","permalink":"/program/15.066","title":"Tribal
+  Great Lakes Restoration Initiative","popular_name":"Tribal GLRI","agency":"Department
+  of the Interior","total_obs":2044381.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"15.815","permalink":"/program/15.815","title":"National
+  Land Remote Sensing Education Outreach and Research","popular_name":"Remote Sensing
+  State Grants","agency":"Department of the Interior","total_obs":1477500.0,"program_type":"assistance_listing"},{"cfda":"15.623","permalink":"/program/15.623","title":"North
+  American Wetlands Conservation Fund","popular_name":"NAWCF","agency":"Department
+  of the Interior","total_obs":132549814.0,"program_type":"assistance_listing"},{"cfda":"15.156","permalink":"/program/15.156","title":"Tribal
+  Climate Resilience ","popular_name":"Climate Change","agency":"Department of the
+  Interior","total_obs":63412412.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.229","permalink":"/program/15.229","title":"Wild
+  Horse and Burro Resource Management","popular_name":null,"agency":"Department of
+  the Interior","total_obs":9009302.0,"program_type":"assistance_listing"},{"cfda":"10.933","permalink":"/program/10.933","title":"Wetland
+  Mitigation Banking Program","popular_name":"Wetland Mitigation Banking Program","agency":"Department
+  of Agriculture","total_obs":5392000.0,"program_type":"assistance_listing"},{"cfda":"15.245","permalink":"/program/15.245","title":"Plant
+  Conservation and Restoration Management","popular_name":null,"agency":"Department
+  of the Interior","total_obs":16424841.0,"program_type":"assistance_listing"},{"cfda":"15.248","permalink":"/program/15.248","title":"National
+  Landscape Conservation System","popular_name":"National Conservation Lands","agency":"Department
+  of the Interior","total_obs":157656.0,"program_type":"assistance_listing"},{"cfda":"15.018","permalink":"/program/15.018","title":"Energy
+  Community Revitalization Program (ECRP)","popular_name":"Orphaned Well Site Plugging
+  and Remediation, Methane Reduction, and Infrastructure Grants and Assistance","agency":"Department
+  of the Interior","total_obs":572223292.0,"program_type":"assistance_listing"},{"cfda":"66.129","permalink":"/program/66.129","title":"Geographic
+  Programs - Southeast New England Coastal Watershed Restoration Program","popular_name":"Southeast
+  New England Program (SNEP)","agency":"Environmental Protection Agency","total_obs":5493761.0,"program_type":"assistance_listing"},{"cfda":"15.011","permalink":"/program/15.011","title":"Experienced
+  Services Program","popular_name":"ESP","agency":"Department of the Interior","total_obs":10579256.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
+  Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
+  Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
+  Grants","agency":"Environmental Protection Agency","total_obs":53105559.0,"program_type":"assistance_listing"},{"cfda":"15.669","permalink":"/program/15.669","title":"Cooperative
+  Landscape Conservation","popular_name":"Cooperative Landscape Conservation Landscape","agency":"Department
+  of the Interior","total_obs":90000000.0,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs \u2013 Gulf of Mexico Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":14058495.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
+  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":4238729.0,"program_type":"assistance_listing"},{"cfda":"15.431","permalink":"/program/15.431","title":"Alaska
+  Settlement Agreement","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.969","permalink":"/program/15.969","title":"National
+  Wildland Fire Management and Natural Resource Training and Workforce Development","popular_name":null,"agency":"Department
+  of the Interior","total_obs":1148082.0,"program_type":"assistance_listing"},{"cfda":"10.054","permalink":"/program/10.054","title":"Emergency
+  Conservation Program","popular_name":"ECP","agency":"Department of Agriculture","total_obs":100000000.0,"program_type":"assistance_listing"},{"cfda":"15.543","permalink":"/program/15.543","title":"Lake
+  Tahoe Regional Wetlands Development ","popular_name":null,"agency":"Department of
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.017","permalink":"/program/15.017","title":"Eastern
+  Nevada Conservation, Recreation and Development","popular_name":null,"agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.905","permalink":"/program/10.905","title":"Plant
+  Materials for Conservation","popular_name":null,"agency":"Department of Agriculture","total_obs":12104000.0,"program_type":"assistance_listing"},{"cfda":"12.017","permalink":"/program/12.017","title":"Readiness
+  and Environmental Protection Integration (REPI) Program","popular_name":"DoD REPI
+  Program","agency":"Department of Defense","total_obs":172200000.0,"program_type":"assistance_listing"},{"cfda":"15.439","permalink":"/program/15.439","title":"National
+  Petroleum Reserve - Alaska","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.664","permalink":"/program/10.664","title":"Cooperative
+  Forestry Assistance","popular_name":null,"agency":"Department of Agriculture","total_obs":330599936.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.636","permalink":"/program/15.636","title":"Alaska
+  Subsistence Management","popular_name":null,"agency":"Department of the Interior","total_obs":1964117.0,"program_type":"assistance_listing"},{"cfda":"12.010","permalink":"/program/12.010","title":"Youth
+  Conservation Services","popular_name":"Youth Conservation Services","agency":"Department
+  of Defense","total_obs":272765.71,"program_type":"assistance_listing"},{"cfda":"15.512","permalink":"/program/15.512","title":"Central
+  Valley Improvement Act, Title XXXIV","popular_name":null,"agency":"Department of
+  the Interior","total_obs":62436096.0,"program_type":"assistance_listing"},{"cfda":"15.810","permalink":"/program/15.810","title":"National
+  Cooperative Geologic Mapping ","popular_name":"(StateMap and EdMap)","agency":"Department
+  of the Interior","total_obs":14666399.0,"program_type":"assistance_listing"},{"cfda":"81.214","permalink":"/program/81.214","title":"Environmental
+  Monitoring/Cleanup, Cultural and Resource Mgmt., Emergency Response Research, Outreach,
+  Technical Analysis","popular_name":"Savannah River Site Environmental Monitoring/Cleanup","agency":"Department
+  of Energy","total_obs":69170729.0,"program_type":"assistance_listing"},{"cfda":"10.902","permalink":"/program/10.902","title":"Soil
+  and Water Conservation","popular_name":null,"agency":"Department of Agriculture","total_obs":1717460546.0,"program_type":"assistance_listing"},{"cfda":"15.236","permalink":"/program/15.236","title":"Environmental
+  Quality and Protection","popular_name":null,"agency":"Department of the Interior","total_obs":5634490.0,"program_type":"assistance_listing"},{"cfda":"15.406","permalink":"/program/15.406","title":"National
+  Park Service Centennial Challenge","popular_name":null,"agency":"Department of the
+  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
+  Services","popular_name":null,"agency":"Department of the Interior","total_obs":4500000.0,"program_type":"assistance_listing"},{"cfda":"11.463","permalink":"/program/11.463","title":"Habitat
+  Conservation","popular_name":null,"agency":"Department of Commerce","total_obs":453100000.0,"program_type":"assistance_listing"},{"cfda":"15.437","permalink":"/program/15.437","title":"Minerals
+  Leasing Act","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.237","permalink":"/program/15.237","title":"Rangeland
+  Resource Management","popular_name":null,"agency":"Department of the Interior","total_obs":14467974.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
+  Cost Share","popular_name":"National Park Service Challenge Cost Share","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
+  and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
+  Act","agency":"Department of Defense","total_obs":592837.0,"program_type":"assistance_listing"},{"cfda":"15.435","permalink":"/program/15.435","title":"GoMESA","popular_name":null,"agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
+  of Japanese American Confinement Sites","popular_name":"JACS","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.930","permalink":"/program/15.930","title":"Chesapeake
+  Bay Gateways Network","popular_name":"Chesapeake Bay Gateways and Watertrails Network","agency":"Department
+  of the Interior","total_obs":200556.0,"program_type":"assistance_listing"},{"cfda":"15.965","permalink":"/program/15.965","title":"Groundwork
+  - Brownfield to Greenspace","popular_name":"Groundwork","agency":"Department of
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.073","permalink":"/program/15.073","title":"Earth
+  Mapping Resources Initiative","popular_name":"Earth MRI","agency":"Department of
+  the Interior","total_obs":15366864.0,"program_type":"assistance_listing"},{"cfda":"15.807","permalink":"/program/15.807","title":"Earthquake
+  Hazards Program Assistance","popular_name":"Earthquake Hazards Program Grants","agency":"Department
+  of the Interior","total_obs":14949531.0,"program_type":"assistance_listing"},{"cfda":"66.485","permalink":"/program/66.485","title":"Support
+  for the Gulf Hypoxia Action Plan","popular_name":"Gulf Hypoxia Program","agency":"Environmental
+  Protection Agency","total_obs":1095880.0,"program_type":"assistance_listing"},{"cfda":"10.968","permalink":"/program/10.968","title":"Increasing
+  Land, Capital, and Market Access Program","popular_name":"Increasing Land Access","agency":"Department
+  of Agriculture","total_obs":284023409.0,"program_type":"assistance_listing"},{"cfda":"15.808","permalink":"/program/15.808","title":"U.S.
+  Geological Survey Research and Data Collection","popular_name":null,"agency":"Department
+  of the Interior","total_obs":84192202.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
+  of the Interior","total_obs":7663756.0,"program_type":"assistance_listing"},{"cfda":"15.432","permalink":"/program/15.432","title":"California
+  Refuge Account","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"87.051","permalink":"/program/87.051","title":"Gulf
+  Coast Ecosystem Restoration Council Comprehensive Plan Component Program","popular_name":"RESTORE
+  Council-Selected Restoration Component ","agency":"Gulf Coast Ecosystem Restoration
+  Council","total_obs":151139749.0,"program_type":"assistance_listing"},{"cfda":"43.001","permalink":"/program/43.001","title":"Science","popular_name":"SMD","agency":"National
+  Aeronautics and Space Administration","total_obs":921764930.0,"program_type":"assistance_listing"},{"cfda":"15.438","permalink":"/program/15.438","title":"National
+  Forest Acquired Lands","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.015","permalink":"/program/15.015","title":"Good
+  Neighbor Authority","popular_name":null,"agency":"Department of the Interior","total_obs":56975719.0,"program_type":"assistance_listing"},{"cfda":"12.021","permalink":"/program/12.021","title":"Army
+  National Guard Army Compatible Use Buffer Program","popular_name":"NGB ACUB","agency":"Department
+  of Defense","total_obs":36789704.0,"program_type":"assistance_listing"},{"cfda":"10.699","permalink":"/program/10.699","title":"Partnership
+  Agreements","popular_name":"Partnership Agreements ","agency":"Department of Agriculture","total_obs":227435153.0,"program_type":"assistance_listing"},{"cfda":"87.052","permalink":"/program/87.052","title":"Gulf
+  Coast Ecosystem Restoration Council Oil Spill Impact Program","popular_name":"RESTORE
+  Council Oil Spill Impact Program","agency":"Gulf Coast Ecosystem Restoration Council","total_obs":75467833.0,"program_type":"assistance_listing"},{"cfda":"15.667","permalink":"/program/15.667","title":"Highlands
+  Conservation ","popular_name":null,"agency":"Department of the Interior","total_obs":9700000.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
+  and Veteran Organizations Conservation Activities","popular_name":"21st Century
+  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":42523472.0,"program_type":"assistance_listing"}]'
 title: Land Conservation
-total_num_agencies: 11
-total_num_applicant_types: 24
-total_num_programs: 94
-total_obs: 10649834925
+total_num_agencies: 12
+total_num_applicant_types: 45
+total_num_programs: 104
+total_obs: 10303696509.51
 ---

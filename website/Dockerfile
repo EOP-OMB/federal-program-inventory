@@ -12,12 +12,11 @@ COPY ./Gemfile /app/Gemfile
 COPY ./package.json /app/package.json
 RUN apt-get clean && \
     apt-get update && \
-    apt install -y curl && \
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && \
-    . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION} && \
+    apt-get install -y curl git && \
+    curl -k -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && \
     . "$NVM_DIR/nvm.sh" && nvm use v${NODE_VERSION} && \
     . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION} && \
-    npm install --legacy-peer-deps && \
+    npm install --legacy-peer-deps chart.js && \
     bundle install
 
 COPY . /app

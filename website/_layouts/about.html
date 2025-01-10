@@ -2,11 +2,24 @@
 layout: default
 ---
 
-<section class="bg-primary-dark">
+<section
+  class="bg-primary-darker padding-x-2 padding-y-3"
+  style="
+    background-image: url('../../assets/img/banner.png'),
+      linear-gradient(0deg, #272a63, #272a63);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  "
+>
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
-        <h1 class="margin-top-2 margin-bottom-2 text-white">{{ page.title }}</h1>
+        <h1
+          class="usa-display usa-heading text-white font-heading-2xl text-light"
+        >
+          {{ page.title }}
+        </h1>
       </div>
     </div>
   </div>
