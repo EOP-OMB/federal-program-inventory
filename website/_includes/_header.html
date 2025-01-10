@@ -1,120 +1,43 @@
-<div class="usa-overlay"></div>
-<header class="usa-header usa-header--extended">
-  <div class="usa-navbar">
-    <div class="usa-logo">
-      <em class="usa-logo__text">
-        <a href="/" title="Federal Program Inventory">
-          <img src="/assets/img/omb-logo.png" alt="Executive Office of the President, Office of Management and Budget logo">
-          <span>Federal Program Inventory</span>
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo display-flex align-items-center" id="basic-logo">
+        <a href="/" title="Federal Program Inventory" class="display-flex flex-align-end">
+          <img 
+            class="usa-identifier__logo-img" 
+            src="/assets/img/omb-logo.png" 
+            alt="Executive Office of the President, Office of Management and Budget logo" 
+            width="49" 
+            height="49"
+          >
+          <span class="text-bold font-body-lg">
+            Federal Program Inventory
+          </span>
         </a>
-      </em>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
     </div>
-    <button type="button" class="usa-menu-btn">Menu</button>
-  </div>
-  <nav aria-label="Primary navigation" class="usa-nav">
-    <div class="usa-nav__inner">
+    
+    <nav role="navigation" class="usa-nav">
       <button type="button" class="usa-nav__close">
-        <img src="/assets/img/sprite.svg#close" role="img" alt="Close" />
+        <img src="/assets/img/sprite.svg#close" role="img" alt="Close"/>
       </button>
+
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item">
-          <a href="/search" class="usa-nav-link">Program search</a>
+          <a href="/search" class="usa-nav__link">
+            <span>Program search</span>
+          </a>
         </li>
         <li class="usa-nav__primary-item">
-          <button
-            type="button"
-            class="usa-accordion__button usa-nav__link"
-            aria-expanded="false"
-            aria-controls="extended-mega-nav-section-one"
-          >
+          <a href="/category" class="usa-nav__link">
             <span>Explore programs by category</span>
-          </button>
-          <div
-            id="extended-mega-nav-section-one"
-            class="usa-nav__submenu usa-megamenu"
-          >
-            <div class="grid-row grid-gap-4">
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-
-                  {% assign nav_column_one_size = site.category.size | divided_by: 4 %}
-                  {% assign nav_column_two_size = site.category.size | divided_by: 4 %}
-                  {% assign nav_column_three_size = site.category.size | divided_by: 4 %}
-
-                  {% assign nav_column_remainder = site.category.size | modulo: 4 %}
-                  {% if nav_column_remainder == 1 %}
-                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
-                  {% endif %}
-                  {% if nav_column_remainder == 2 %}
-                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
-                    {% assign nav_column_two_size = nav_column_two_size | plus: 1 %}
-                  {% endif %}
-                  {% if nav_column_remainder == 3 %}
-                    {% assign nav_column_one_size = nav_column_one_size | plus: 1 %}
-                    {% assign nav_column_two_size = nav_column_two_size | plus: 1 %}
-                    {% assign nav_column_three_size = nav_column_three_size | plus: 1 %}
-                  {% endif %}
-
-                  <li class="usa-nav__submenu-item">
-                    <a href="/category">All Categories</a>
-                  </li>
-
-                  {% for c in site.category limit: nav_column_one_size %}
-
-                  <li class="usa-nav__submenu-item">
-                    <a href="{{ c.permalink }}">{{ c.title }}</a>
-                  </li>
-
-                  {% endfor %}
-
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-
-                  {% for c in site.category limit: nav_column_two_size offset: continue %}
-
-                  <li class="usa-nav__submenu-item">
-                    <a href="{{ c.permalink }}">{{ c.title }}</a>
-                  </li>
-
-                  {% endfor %}
-
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-
-                  {% for c in site.category limit: nav_column_three_size offset: continue %}
-
-                  <li class="usa-nav__submenu-item">
-                    <a href="{{ c.permalink }}">{{ c.title }}</a>
-                  </li>
-
-                  {% endfor %}
-
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-
-                  {% for c in site.category offset: continue %}
-
-                  <li class="usa-nav__submenu-item">
-                    <a href="{{ c.permalink }}">{{ c.title }}</a>
-                  </li>
-
-                  {% endfor %}
-
-                </ul>
-              </div>
-            </div>
-          </div>
+          </a>
         </li>
         <li class="usa-nav__primary-item">
           <button
             type="button"
-            class="usa-accordion__button usa-nav__link"
+            class="usa-accordion__button usa-nav__link custom-accordion-button"
             aria-expanded="false"
             aria-controls="extended-mega-nav-section-two"
           >
@@ -122,33 +45,19 @@
           </button>
           <div
             id="extended-mega-nav-section-two"
-            class="usa-nav__submenu usa-megamenu"
+            class="usa-nav__submenu"
           >
-            <div class="grid-row grid-gap-4">
-              <div class="usa-col">
+            <div class="grid-row horizontal-submenu">
+              <div class="usa-col margin-left-2">
                 <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
                     <a href="/about/fpi">About the FPI</a>
                   </li>
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
                     <a href="/about/background-on-the-fpi">Background on the FPI</a>
                   </li>
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
                   <li class="usa-nav__submenu-item">
                     <a href="/about/about-the-data">About the data</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="usa-col">
-                <ul class="usa-nav__submenu-list">
-                  <li class="usa-nav__primary-item">
                   </li>
                 </ul>
               </div>
@@ -156,7 +65,6 @@
           </div>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
-

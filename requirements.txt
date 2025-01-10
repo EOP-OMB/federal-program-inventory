@@ -76,6 +76,7 @@ psycopg2==2.9.7
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
+pydantic==2.9.2
 Pygments==2.16.1
 pyparsing==3.1.1
 python-dateutil==2.8.2
