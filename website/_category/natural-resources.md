@@ -493,16 +493,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/natural-resources
-sub_cats: '[{"title":"Community Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":21302999133.0},{"title":"Water
-  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":9548802589.0},{"title":"Wildlife
-  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":8030298804.0},{"title":"Land
-  Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":10303696509.51},{"title":"Mineral
-  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":39,"total_obs":3662600374.72},{"title":"Community
-  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":38,"total_obs":7491599791.0},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":52,"total_obs":3148004622.51}]'
+sub_cats: '[{"title":"Land Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":10303696509.51},{"title":"Wildlife
+  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":8030298804.0},{"title":"Community
+  Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":21302999133.0},{"title":"Community
+  Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":38,"total_obs":7491599791.0},{"title":"Water
+  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":9548802589.0},{"title":"Mineral
+  Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":39,"total_obs":3662600374.7200003},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":52,"total_obs":3148004622.51}]'
 title: Natural Resources
 total_num_agencies: 15
 total_num_applicant_types: 47
 total_num_programs: 277
 total_num_sub_cats: 7
-total_obs: 35332852565.23
+total_obs: 35332852565.229996
 ---
