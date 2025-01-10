@@ -24,7 +24,6 @@ while status_code != 200:
 es = Elasticsearch(hosts=["http://localhost:9200"])
 
 
-
 def delete_index(index_name):
     """Delete index if it exists"""
     try:
@@ -240,41 +239,48 @@ def verify_index(index_name):
 
 
 if __name__ == "__main__":
-    try:
-        index_name = "programs"
+    # Define the name of the index that stores program information and the
+    # location of the JSON file that contains all program information
+    index_name = "programs"
+    json_file = "./programs-table.json"
 
-        # Step 1: Delete existing index
-        print("Step 1: Cleaning up old index")
-        logger.info("Step 1: Cleaning up old index")
-        delete_index(index_name)
-
-        # Step 2: Create new index with mapping
-        logger.info("Step 2: Creating new index with mapping")
-        create_index_with_mapping(index_name)
-
-        # Step 3: Load data
-        logger.info("Step 3: Loading data")
-        doc_count = load_data('./programs-table.json', index_name)
-
-        # Step 4: Verify
-        logger.info("Step 4: Verifying index")
-        final_count = verify_index(index_name)
-
-        if final_count > 0:
-            logger.info(f"Successfully indexed {final_count} documents")
-        else:
-            logger.error("No documents were indexed")
-
-    except Exception as e:
-        logger.error(f"Indexing process failed: {str(e)}")
-        raise
+    # Disable disk space limits in ES
+    resp = es.cluster.put_settings(
+        persistent={
+            "cluster.routing.allocation.disk.threshold_enabled": False
+        }
+    )
 
     # Continuously check if Elasticsearch is available
     status_code = 0
     while status_code == 0:
-        time.sleep(60)
         try:
-            r = requests.get("http://localhost:9200")
-        except (requests.exceptions.ConnectionError,
-                requests.exceptions.ReadTimeout):
-            print("Elasticsearch service not available.")
+
+            # Check if index exists
+            if not es.indices.exists(index=index_name):
+                create_index_with_mapping(index_name)
+
+            # Check document count
+            with open(json_file, 'r') as f:
+                programs = json.load(f)
+            json_program_count = len(programs)
+            es_program_count = es.count(index=index_name)
+            es_program_count = int(es_program_count['count'])
+
+            # If document count in ES does not equal source JSON, rebuild
+            if json_program_count != es_program_count:
+                if es_program_count != 0:
+                    delete_index(index_name)
+                    create_index_with_mapping(index_name)
+                new_es_program_count = load_data(json_file, index_name)
+                final_es_program_count = verify_index(index_name)
+                logger.info(f"Indexing complete. JSON: {json_program_count}; \
+                              Initial ES: {es_program_count}; \
+                              New ES: {new_es_program_count}; \
+                              Verified ES: {final_es_program_count}")
+
+        except Exception as e:
+            logger.error(f"Indexing process failed: {str(e)}")
+            raise
+
+        time.sleep(60)

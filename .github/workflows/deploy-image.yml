@@ -4,7 +4,7 @@ name: Create Docker images and publish to Github Packages
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
   push:
-    branches: ['test-release', 'stag-release', 'prod-release', 'wip-language-edits']
+    branches: ['test-release', 'stag-release', 'prod-release']
 
 env:
   REGISTRY: ghcr.io
