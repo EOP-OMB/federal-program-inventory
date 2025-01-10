@@ -3,234 +3,391 @@ layout: default
 footer_include: _footer-program.html
 ---
 
-  <section class="bg-primary-dark">
-    <div class="grid-container">
-      <div class="grid-row">
-        <div class="grid-col-12">
-          <p class="margin-top-2 margin-bottom-0 text-white text-italic">{{ page.agency }}</p>
-        </div>
-        <div class="grid-col-12">
-          <h1 class="margin-top-0 margin-bottom-2 text-white">{{ page.title }}</h1>
-        </div>
+<section class="bg-secondary-lighter padding-x-2 padding-y-3">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h1 class="usa-display usa-heading text-white font-heading-2xl text-ink text-light">
+          {{ page.title }}
+        </h1>
       </div>
     </div>
-  </section>
-  <main id="main-content" role="main" class="padding-top-4 padding-bottom-4 bg-base-lightest text-base-dark">
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="desktop:grid-col-3 bg-white desktop:border-right-1 desktop:border-base-lightest">
-          <h3 class="text-base-dark">Program information</h3>
+  </div>
+</section>
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
+      <ol class="usa-breadcrumb__list">
+        <li class="usa-breadcrumb__list-item">
+          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
+        </li>
+        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+          <span>{{ page.title }}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
 
-          {% if page.popular_name.size > 0 %}
+  <div class="grid-row grid-gap">
+    <div class="grid-col-9 margin-bottom-5">
+      <h1 class="font-sans-xl text-normal text-primary margin-top-0">
+        Program Information
+      </h1>
 
-            <div>
-              <h4 class="margin-bottom-0 text-base-dark">Popular name</h4>
-              <p class="margin-top-0">{{ page.popular_name }}</p>
-            </div>
-
-          {% endif %}
-
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Assistance listing number</h4>
-            <p class="margin-top-0">{{ page.cfda }}</p>
-          </div>
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Agency</h4>
-            <p class="margin-top-0">{{ page.agency }}</p>
-          </div>
-
-          {% if page.sub-agency.size > 0 %}
-
-            <div>
-              <h4 class="margin-bottom-0 text-base-dark">Sub-agency</h4>
-              <p class="margin-top-0">{{ page.sub-agency }}</p>
-            </div>
-
-          {% endif %}
-
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Categories & sub-categories</h4>
-            <ul class="margin-top-0">
-
-              {% for x in page.categories %}
-
-                <li>{{ x }}</li>
-
-              {% endfor %}
-
-            </ul>
-          </div>
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Assistance types</h4>
-            <ul class="margin-top-0">
-
-              {% for x in page.assistance_types %}
-
-                <li>{{ x }}</li>
-
-              {% endfor %}
-
-            </ul>
-          </div>
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Eligible applicants</h4>
-            <ul class="margin-top-0">
-
-              {% for x in page.applicant_types %}
-
-                <li>{{ x }}</li>
-
-              {% endfor %}
-
-            </ul>
-          </div>
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Eligible beneficiaries</h4>
-            <ul class="margin-top-0">
-
-              {% for x in page.beneficiary_types %}
-
-                <li>{{ x }}</li>
-
-              {% endfor %}
-
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Awards & recipients</h4>
-            <p>
-              <a
-              class="usa-link usa-link--external"
-              rel="noreferrer"
-              target="_blank"
-              href="{{ page.usaspending_url }}"
-              >View this program's awards and recipients at USASpending.gov</a>    
-            </p>
-          </div>
-
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Assistance listing</h4>
-            <p>
-              <a
-              class="usa-link usa-link--external"
-              rel="noreferrer"
-              target="_blank"
-              href="{{ page.sam_url }}"
-              >View this program's assistance listing at SAM.gov</a>    
-            </p>
-          </div>
-
-          <div>
-            <h4 class="margin-bottom-0 text-base-dark">Grant opportunities</h4>
-            <p>
-              <a
-              class="usa-link usa-link--external"
-              rel="noreferrer"
-              target="_blank"
-              href="{{ page.grants_url }}"
-              >View this program's available grant opportunities at Grants.gov</a>    
-            </p>
-          </div>
-
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Popular name</h2>
+          <p class="margin-top-0 margin-bottom-0">{{page.popular_name | default: 'N/A'}}</p>
         </div>
-        <div class="desktop:grid-col-9">
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program Number</h2>
+          <p class="margin-top-0 margin-bottom-0">{{page.cfda}}</p>
+        </div>
+      </div>
 
-          <div class="grid-row">
-            <div class="grid-col-12">
-              <section class="bg-white padding-2">
-                <h2 class="margin-top-0">Program objective</h2>
-                <div class="usa-prose">
-                  <p>{{ page.objective }}</p>
-                </div>
-              </section>
-            </div>
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Program obligations, by FY (2022 - 2024)</h2>
-                <canvas id="spending-visualization"></canvas>
-                <div class="usa-accordion usa-accordion--bordered">
-                  <h4 class="usa-accordion__heading">
-                    <button
-                      type="button"
-                      class="usa-accordion__button"
-                      aria-expanded="false"
-                      aria-controls="obligations-about"
-                    >
-                      About the data
-                    </button>
-                  </h4>
-                  <div id="obligations-about" class="usa-accordion__content usa-prose">
-                    <p>
-                      This chart shows obligations for the program by fiscal year. All data for this chart was provided by the
-                      administering agency and sourced from SAM.gov or USASpending.gov.
-                    </p>
-                    <p>
-                      “SAM.gov actual” displays actual obligations for the fiscal year, as reported by the agency to SAM.gov
-                      after the fiscal year concludes.
-                    </p>
-                    <p>
-                      “SAM.gov estimate” displays estimated obligations for the fiscal year, as reported by the agency to
-                      SAM.gov before the fiscal year concludes. 
-                    </p>
-                    <p>
-                      “USAspending.gov obligations” displays the total obligations submitted by the agency to USAspending,
-                      linked to the assistance listing through its assistance listing number. USAspending.gov is the official
-                      source of Federal spending information, displaying actual obligations made by agencies as they are
-                      committed. Annual obligations reported to SAM.gov may be inconsistent with annual obligations reported to
-                      USASpending.gov. More information can be found on the “About the data” page.
-                    </p>
-                    <p>
-                      Please note that SAM.gov does not provide agencies with detailed guidance on how to report loan, loan
-                      guarentee, or insurance obligations. These figures may not be comparable arocess programs or consistent
-                      with USASpending.gov.
-                    </p>
-                    <p>
-                      For more information on each of these data sources, please see the “About the data” page.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            {% if page.authorizations.size > 0 %}
-
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Authorizing statutes</h2>
-                <div class="usa-prose">
-                  <ul>
-                  {% for a in page.authorizations %}
-                    <li>{{ a }}</li>
-                  {% endfor %}
-                  </ul>
-                </div>
-              </section>
-            </div>
-
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Agency</h2>
+          <p class="margin-top-0 margin-bottom-0">
+            <a href="#" class="usa-link program-filter" data-filter-type="agency"
+              data-agency-title="{{page.agency}}">{{page.agency}}</a>
+          </p>
+        </div>
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Sub-agency</h2>
+          <p class="margin-top-0 margin-bottom-0">
+            {% if page.sub-agency == 'N/A' or page.sub-agency == '' or page.sub-agency == nil %}
+            N/A
+            {% else %}
+            <a href="#" class="usa-link program-filter" data-filter-type="sub-agency"
+              data-agency-title="{{page.agency}}" data-subagency-title="{{page.sub-agency}}">{{page.sub-agency}}</a>
             {% endif %}
+          </p>
+        </div>
+      </div>
 
-            {% if page.results.size > 0 %}
+      <div class="grid-row grid-gap padding-bottom-205">
+        <div class="grid-col-12">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program objective</h2>
+          <p class="margin-top-0 margin-bottom-0">
+            {{page.objective}}
+          </p>
+        </div>
+      </div>
+      <div class="border-1px border-ink radius-md padding-x-2 padding-bottom-2 margin-bottom-5">
+        <!-- Header Section -->
+        <h2 class="text-primary font-sans-lg text-bold margin-bottom-1">Program expenditures, by FY (2023 - 2025)</h2>
 
-            <div class="grid-col-12">
-              <section class="bg-white margin-top-3 padding-2">
-                <h2 class="margin-top-0">Program results</h2>
-                
-                {% for r in page.results %}
+        <!-- Description -->
+        <p class="font-sans-md margin-bottom-4 margin-top-0">
+          This chart shows obligations for the program by fiscal year. All data for this chart was provided by the
+          administering agency and sourced from SAM.gov, USASpending.gov, and Treasury.gov.
+          <br />
+          <br />
+          For more information on each of these data sources, please see the
+          <a href="/about/about-the-data" class="usa-link">About the data page</a>.
+        </p>
 
-                <h3>{{ r.year }}</h3>
-                <div class="usa-prose">
-                  <p>{{ r.description }}</p>
-                </div>
+        <!-- View Controls -->
+        <div class="display-flex flex-align-center display-none">
+          <span class="font-sans-lg margin-right-2">View:</span>
+          <div class="usa-radio display-flex flex-align-center margin-right-2">
+            <input class="usa-radio__input" id="obligations" type="radio" name="view-options" checked />
+            <label class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0" for="obligations">Program
+              obligations</label>
+          </div>
 
-                {% endfor %}
-              </section>
-            </div>
+          <div class="usa-radio display-flex flex-align-center">
+            <input class="usa-radio__input" id="outlays" type="radio" name="view-options" />
+            <label class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0" for="outlays">Program
+              outlays</label>
+          </div>
+        </div>
 
+        <svg id="obligationsChart" class="width-full display-none" height="500"
+          aria-label="Chart displaying data based on selection" role="img"></svg>
+
+        <svg id="outlaysChart" class="width-full display-none" height="500"
+          aria-label="Chart displaying data based on selection" role="img"></svg>
+
+        <svg id="otherProgramChart" class="width-full display-none" height="500"
+          aria-label="Chart displaying data based on selection" role="img"></svg>
+
+        <!-- Download Button -->
+        <button id="downloadData" class="usa-button usa-button--outline border-2px">
+          <span>Download .csv file</span>
+          <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="/assets/img/sprite.svg#file_download"></use>
+          </svg>
+        </button>
+      </div>
+
+      {% if page.program_type != "interest" %}
+      <div class="text-primary font-sans-lg text-bold line-height-5 padding-bottom-205">Additional program information
+      </div>
+
+      <!-- Program Results Start -->
+      {% if page.results and page.results.size > 0 %}
+      <div class="usa-accordion" data-allow-multiple>
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="program-results">
+            Program Results
+          </button>
+        </h4>
+        <div id="program-results" class="usa-accordion__content">
+            <ol class="usa-process-list no-numbers">
+              {% assign sorted_results = page.results | sort: 'year' %}
+              {% for result in sorted_results %}
+              <li class="usa-process-list__item padding-bottom-4">
+                <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
+                  {{ result.year }}
+                </h4>
+                <p class="font-sans-md margin-top-1">
+                  {{ result.description | markdownify }}
+                </p>
+              </li>
+              {% endfor %}
+            </ol>
+        </div>
+      </div>
+      {% endif %}
+      <!-- Program Results End -->
+
+      <!-- Single Audit Start -->
+      {% if page.is_subpart_f %}
+      <div class="usa-accordion">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="program-single-audit">
+            Single Audit
+          </button>
+        </h4>
+        <div id="program-single-audit" class="usa-accordion__content">
+          <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
+            Single Audit Applies (2 CFR Part 200 Subpart F):
+            {% if page.is_subpart_f == 1 %}
+            <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
+              focusable="false" role="img">
+              <use href="/assets/img/sprite.svg#check_circle"></use>
+            </svg>
+            {% else %}
+            <svg class="usa-icon text-error margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
+              focusable="false" role="img">
+              <use href="/assets/img/sprite.svg#cancel"></use>
+            </svg>
             {% endif %}
+          </p>
 
+          <p class="font-family-sans line-height-body-4">
+            For additional information on single audit requirements for this program, review the current
+            <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
+              class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
+          </p>
+        </div>
+      </div>
+      {% endif %}
+      <!-- Single Audit End -->
+
+      <!-- Program oversight reports Start -->
+      <div class="usa-accordion">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="program-oversight">
+            Program oversight reports
+          </button>
+        </h4>
+        <div id="program-oversight" class="usa-accordion__content">
+          <div class="usa-alert usa-alert--warning">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text font-family-sans">
+                OMB is working with the U.S. Government Accountability Office (GAO) and agency offices of inspectors
+                general to include links to relevant oversight reports. This section will be updated once this
+                information is made available.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Program oversight reports End -->
+
+      <!-- Rules and regulations Start-->
+      {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
+      <div class="usa-accordion">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="program-rules-regs">
+            Associated rules and regulations
+          </button>
+        </h4>
+        <div id="program-rules-regs" class="usa-accordion__content">
+          {{ page.rules_regulations }}
+        </div>
+      </div>
+      {% endif %}
+      <!-- Rules and regulations End-->
+
+      <!-- Authorizations Start -->
+      {% if page.authorizations and page.authorizations.size > 0 %}
+      <div class="usa-accordion" data-allow-multiple>
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="program-authorizations">
+            Authorizing statutes
+          </button>
+        </h4>
+        <div id="program-authorizations" class="usa-accordion__content">
+          <ol class="usa-list">
+            {% for auth in page.authorizations %}
+            <li class="padding-bottom-2">
+              <span class="font-sans-md">
+                {% if auth.url %}
+                <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
+                  auth.text }}</a>
+                {% else %}
+                {{ auth.text }}
+                {% endif %}
+              </span>
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+      {% endif %}
+      <!-- Authorizations End -->
+      {% endif %}
     </div>
-  </main>
+    
+
+    <!--- Program Column Display Start --->
+    <div class="grid-col-3">
+      <!-- Program Details Section -->
+      <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-top-0">Program details</h2>
+
+      <!-- Categories Section -->
+      {% if page.categories and page.categories.size > 0 %}
+      <div class="margin-bottom-4">
+        <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
+
+        {% assign last_category = "" %}
+        {% assign sorted_categories = page.categories | sort %}
+
+        {% for category in sorted_categories %}
+        {% assign first_dash = category | split: " - " | first %}
+        {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
+        {% assign main_category = first_dash %}
+        {% assign sub_category = remaining | default: main_category %}
+
+        {% if main_category != last_category %}
+        {% unless forloop.first %}
+        </ul>
+      </div>
+      {% endunless %}
+
+      <div>
+        <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
+          data-category-title="{{main_category}}">{{ main_category }}</a>
+        <ul class="usa-list padding-left-3 margin-y-0 text-primary">
+          {% endif %}
+
+          {% if sub_category != "" %}
+          <li>
+            <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
+              data-category-title="{{main_category}}" data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
+          </li>
+          {% endif %}
+
+          {% assign last_category = main_category %}
+
+          {% if forloop.last %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Program Types Section -->
+    {% if page.assistance_types and page.assistance_types.size > 0 %}
+    <div class="margin-bottom-4">
+      <h3 class="font-sans-md text-bold margin-bottom-1">Program types</h3>
+      <ul class="usa-list text-primary padding-left-3 margin-y-0">
+        {% for type in page.assistance_types %}
+        <li>
+          <a href="#" class="usa-link program-filter" data-filter-type="assistance" data-assistance-title="{{type}}">{{
+            type }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- Eligible Applicants Section -->
+    {% if page.applicant_types and page.applicant_types.size > 0 %}
+    <div class="margin-bottom-4">
+      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible applicants</h3>
+      <ul class="usa-list text-primary padding-left-3 margin-y-0">
+        {% for type in page.applicant_types %}
+        <li>
+          <a href="#" class="usa-link program-filter" data-filter-type="applicant" data-applicant-title="{{type}}">{{
+            type }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- Eligible Beneficiaries Section -->
+    {% if page.beneficiary_types and page.beneficiary_types.size > 0 %}
+    <div class="margin-bottom-4">
+      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible beneficiaries</h3>
+      <ul class="usa-list padding-left-3 margin-y-0">
+        {% for type in page.beneficiary_types %}
+        <li>
+          <div>{{ type }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.program_type == "assistance_listing" %}
+    <!-- Additional Resources Section -->
+    <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-bottom-1 margin-top-0">Additional resources</h2>
+
+    <div class="display-flex flex-column font-sans-md">
+      <div class="margin-bottom-2">
+        <span>View this program's</span>
+        <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">awards and recipients at
+          USASpending.gov</a>
+        <i class="fa-solid fa-external-link margin-left-1"></i>
+      </div>
+
+      <div class="margin-bottom-2">
+        <span">View this program's</span>
+          <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">assistance listing at SAM.gov</a>
+          <i class="fa-solid fa-external-link margin-left-1"></i>
+      </div>
+
+      <div class="margin-bottom-2">
+        <span>View this program's</span>
+        <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank"
+          rel="noopener noreferrer">available grant opportunities at
+          Grants.gov</a>
+        <i class="fa-solid fa-external-link margin-left-1"></i>
+      </div>
+
+      <div class="margin-bottom-2">
+        <span>View this program's</span>
+        <a href="https://fac.gov/" class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">single
+          audits at FAC.gov</a>
+        <i class="fa-solid fa-external-link margin-left-1"></i>
+      </div>
+    </div>
+    <!-- Additional Resources Section End-->
+    {% endif %}
+  </div>
+  <!--- Program Column Display End --->
+</div>

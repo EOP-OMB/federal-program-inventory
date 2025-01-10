@@ -1,42 +1,59 @@
-<footer>
-  <div class="usa-identifier">
-    <section
-      class="usa-identifier__section usa-identifier__section--masthead"
-      aria-label="Agency identifier,"
-    >
-      <div class="usa-identifier__container">
-        <div class="usa-identifier__logos">
-          <a href="" class="usa-identifier__logo"
-            ><img
-              class="usa-identifier__logo-img"
-              src="/assets/img/omb-logo.png"
-              alt="Executive Office of the President, Office of Management and Budget logo"
-              role="img"
-          /></a>
-        </div>
-        <section
-          class="usa-identifier__identity"
-        >
-          <p class="usa-identifier__identity-domain">fpi.omb.gov</p>
-          <p class="usa-identifier__identity-disclaimer">
-            An official website of the <a href="https://www.whitehouse.gov/omb/">Executive Office of the President, Office of Management and Budget</a>
-          </p>
-        </section>
-      </div>
-    </section>
-    <section
-      class="usa-identifier__section usa-identifier__section--usagov"
-      aria-label="U.S. government information and services,"
-    >
-      <div class="usa-identifier__container">
-        <div class="usa-identifier__usagov-description">
-          Looking for U.S. government information and services?
-        </div>
-        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
-      </div>
-    </section>
-  </div>
+<!-- Secondary footer container --> 
+<footer class="usa-identifier width-full"> 
+  <!-- Navigation section -->
+  <nav class="usa-identifier__section usa-identifier__section--navigation bg-primary-darker">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__nav-list display-flex flex-row flex-align-center margin-0 padding-0" style="list-style: none;">
+        <li class="usa-identifier__nav-item margin-right-4">
+          <a href="/" class="usa-identifier__nav-link text-white text-no-underline hover:text-underline">
+            Home
+          </a>
+        </li>
+        <li class="usa-identifier__nav-item margin-right-4">
+          <a href="/search" class="usa-identifier__nav-link text-white text-no-underline hover:text-underline">
+            Program Search
+          </a>
+        </li>
+        <li class="usa-identifier__nav-item margin-right-4">
+          <a href="/category" class="usa-identifier__nav-link text-white text-no-underline hover:text-underline">
+            Explore programs by category
+          </a>
+        </li>
+        <li class="usa-identifier__nav-item">
+          <a href="/about/fpi" class="usa-identifier__nav-link text-white text-no-underline hover:text-underline">
+            About the FPI
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Masthead section -->
+  <section  
+    class="usa-identifier__section usa-identifier__section--masthead"  
+    aria-label="Agency identifier"> 
+    <div class="usa-identifier__container"> 
+      <div class="usa-identifier__logos"> 
+        <a href="/" class="usa-identifier__logo"> 
+          <img 
+            class="usa-identifier__logo-img" 
+            src="/assets/img/omb-logo.png" 
+            alt="Executive Office of the President, Office of Management and Budget logo" 
+            width="49" 
+            height="49" 
+          /> 
+        </a> 
+      </div> 
+       
+      <div class="usa-identifier__identity"> 
+        <p class="usa-identifier__identity-domain text-bold text-white font-body-lg"> 
+          Federal Program Inventory 
+        </p> 
+      </div> 
+    </div> 
+  </section> 
 </footer>
+
 <script src="{{ site.baseurl }}/assets/js/uswds.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/chart.umd.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/d3.min.js"></script>

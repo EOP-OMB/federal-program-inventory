@@ -1,0 +1,141 @@
+---
+layout: default
+footer_include: _footer-home.html
+permalink: /
+---
+
+<div class="home-background position-relative">
+  <div class="display-flex flex-column">
+    <div class="display-flex flex-justify-center padding-top-5">
+      <div class="grid-container-tablet-lg">
+        <div class="usa-layout-grid padding-3 radius-md bg-primary-darker">
+          <div class="width-full text-center text-white font-sans-3xl text-light line-height-sans-1">
+            The U.S. Federal Government administers over 2,600 federal programs, totaling over $7 trillion in FY {{ page.fiscal_year }} expenditures.
+          </div>
+          <div class="display-flex flex-justify-center margin-top-3">
+            <a href="/category" class="usa-button bg-primary hover:bg-primary-dark font-sans-lg text-bold">
+              Explore programs by category
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="width-full bg-white margin-top-4" style="background-color: rgba(255, 255, 255, 0.9);">
+      <div class="grid-container-desktop-lg padding-bottom-7">
+        <h1 class="font-heading-2xl text-light text-primary margin-bottom-0">
+          Find programs in the Federal Program Inventory
+        </h1>
+        <div class="grid-row grid-gap-6">
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="usa-label text-bold line-height-sans-1" for="agency-select">Agency</label>
+            <div class="usa-combo-box">
+              <select class="usa-select" name="agency-select" id="agency-select">
+                <option value="">Select an agency</option>
+                {% for agency in page.cfo_agencies %}
+                <option value="{{ agency.title | slugify }}">{{ agency.title }}</option>
+                {% endfor %}
+                <option value="other-agencies">Other agencies</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="usa-label text-bold line-height-sans-1" for="category-select">Category</label>
+            <div class="usa-combo-box">
+              <select class="usa-select" name="category-select" id="category-select">
+                <option value="">Select a category</option>
+                {% for category in page.categories %}
+                <option value="{{ category.title | slugify }}">{{ category.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="usa-label text-bold line-height-sans-1" for="program-type-select">Program type</label>
+            <div class="usa-combo-box">
+              <select class="usa-select" name="program-type-select" id="program-type-select">
+                <option value="">Select a program type</option>
+                {% for type in page.program_types %}
+                <option value="{{ type.title | slugify }}">{{ type.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-col-12 tablet:grid-col-3">
+            <label class="usa-label text-bold line-height-sans-1" for="applicant-select">Eligible applicant</label>
+            <div class="usa-combo-box">
+              <select class="usa-select" name="applicant-select" id="applicant-select">
+                <option value="">Select eligible applicant type</option>
+                {% for applicant in page.applicant_types %}
+                <option value="{{ applicant.title | slugify }}">{{ applicant.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button class="usa-button margin-top-205" id="find-programs-button">Find Programs</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="width-full bg-secondary">
+  <div class="grid-container padding-bottom-1">
+      <div class="width-full text-white font-sans-xl line-height-sans-3 padding-top-5">About the Federal Program Inventory
+      </div>
+      <div class="grid-row">
+          <div class="grid-col-8">
+              <p class="text-white font-sans-sm line-height-sans-3 margin-bottom-1">
+                  In 2024, building upon the successful 2020 exploratory pilot effort and recommendations published in the
+                  2021 Report to Congress, OMB launched the Federal Program Inventory, which focused on Federal financial
+                  assistance. In 2025, OMB expanded the Federal Program Inventory to include Tax Expenditures and Interest
+                  on the Public Debt.
+              </p>
+
+              <p class="text-white font-sans-sm text-bold line-height-sans-3 margin-bottom-1">
+                  Why start with Federal financial assistance and assistance listings?
+              </p>
+
+              <p class="text-white font-sans-sm line-height-sans-3 margin-bottom-1">
+                  Over the past several years, financial assistance has routinely accounted for over $3 trillion of
+                  spending and constitutes a high proportion of Federal programs. Additionally, ALs are tied to agency
+                  financial data through DATA Act reporting and to performance data through the requirement for agencies
+                  to report accomplishments within them. By starting with assistance listings, OMB can build an FPI
+                  website that accounts for a significant portion of all Federal programs.
+              </p>
+
+              <p class="text-white font-sans-sm text-bold line-height-sans-3">
+                  <a href="/about/fpi" class="text-white text-no-underline">
+                      Learn more >
+                  </a>
+              </p>
+          </div>
+          <div class="grid-col-4">
+              <div class="position-relative">
+                  <!-- First bar -->
+                  <div class="height-3 bg-primary margin-bottom-1" style="margin-left: 5%; width: 100vw"></div>
+                  <!-- Second bar -->
+                  <div class="height-3 bg-accent-warm margin-bottom-1" style="margin-left: 29%; width: 100vw"></div>
+                  <!-- Third bar -->
+                  <div class="height-3 bg-warning margin-bottom-1" style="margin-left: 7%; width: 100vw"></div>
+                  <!-- Fourth bar -->
+                  <div class="height-3 bg-secondary-dark margin-bottom-1" style="margin-left: 15%; width: 100vw"></div>
+                  <!-- Fifth bar -->
+                  <div class="height-3 bg-info-dark margin-bottom-1" style="margin-left: 27%; width: 100vw"></div>
+                  <!-- Sixth bar -->
+                  <div class="height-3 bg-primary-darker margin-bottom-1" style="margin-left: 39%; width: 100vw"></div>
+                  <!-- Seventh bar -->
+                  <div class="height-3 bg-error margin-bottom-1" style="margin-left: 5%; width: 100vw"></div>
+                  <!-- Eighth bar -->
+                  <div class="height-3 bg-info-lighter margin-bottom-1" style="margin-left: 20%; width: 100vw"></div>
+                  <!-- Ninth bar -->
+                  <div class="height-3 bg-gold margin-bottom-1" style="margin-left: 15%; width: 100vw"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
