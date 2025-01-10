@@ -904,7 +904,7 @@ def load_additional_programs():
             cur.execute(program_query, program_values)
         except Exception as e:
             print(str(e))
-            print(f"ERROR - Program Insert Error")
+            print("ERROR - Program Insert Error")
 
         program_to_category_query = """
             INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);
@@ -918,7 +918,7 @@ def load_additional_programs():
             cur.execute(program_to_category_query, program_to_category_values)
         except Exception as e:
             print(str(e))
-            print(f"ERROR - Program to Category Mapping Error")
+            print("ERROR - Program to Category Mapping Error")
 
         # Map assistance types
         if not pd.isna(record['assistance_type']):
@@ -933,7 +933,7 @@ def load_additional_programs():
                     )
                 except Exception as e:
                     print(str(e))
-                    print(f"ERROR - Program to Assistance Mapping Error")
+                    print("ERROR - Program to Assistance Mapping Error")
 
     # Insert spending data into the other_program_spending table
     fiscal_years = {}
@@ -958,13 +958,13 @@ def load_additional_programs():
 # uncomment the necessary functions to database with data
 #
 # load_usaspending_initial_files()
-# load_usaspending_delta_files()
-# transform_and_insert_usaspending_aggregation_data()
-# load_agency()
-# load_sam_category()
-# load_sam_programs()
-# load_category_and_sub_category()
-# load_additional_programs()
+load_usaspending_delta_files()
+transform_and_insert_usaspending_aggregation_data()
+load_agency()
+load_sam_category()
+load_sam_programs()
+load_category_and_sub_category()
+load_additional_programs()
 
 # close the db connection
 conn.close()
