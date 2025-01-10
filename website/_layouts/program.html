@@ -136,19 +136,19 @@ footer_include: _footer-program.html
           </button>
         </h4>
         <div id="program-results" class="usa-accordion__content">
-            <ol class="usa-process-list no-numbers">
-              {% assign sorted_results = page.results | sort: 'year' %}
-              {% for result in sorted_results %}
-              <li class="usa-process-list__item padding-bottom-4">
-                <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
-                  {{ result.year }}
-                </h4>
-                <p class="font-sans-md margin-top-1">
-                  {{ result.description | markdownify }}
-                </p>
-              </li>
-              {% endfor %}
-            </ol>
+          <ol class="usa-process-list no-numbers">
+            {% assign sorted_results = page.results | sort: 'year' %}
+            {% for result in sorted_results %}
+            <li class="usa-process-list__item padding-bottom-4">
+              <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
+                {{ result.year }}
+              </h4>
+              <p class="font-sans-md margin-top-1">
+                {{ result.description | markdownify }}
+              </p>
+            </li>
+            {% endfor %}
+          </ol>
         </div>
       </div>
       {% endif %}
@@ -257,7 +257,7 @@ footer_include: _footer-program.html
       <!-- Authorizations End -->
       {% endif %}
     </div>
-    
+
 
     <!--- Program Column Display Start --->
     <div class="grid-col-3">
@@ -273,10 +273,8 @@ footer_include: _footer-program.html
         {% assign sorted_categories = page.categories | sort %}
 
         {% for category in sorted_categories %}
-        {% assign first_dash = category | split: " - " | first %}
-        {% assign remaining = category | replace: first_dash, "" | replace_first: " - ", "" %}
-        {% assign main_category = first_dash %}
-        {% assign sub_category = remaining | default: main_category %}
+        {% assign main_category = category | split: " - " | first %}
+        {% assign sub_category = category | remove_first: main_category | remove_first: " - " %}
 
         {% if main_category != last_category %}
         {% unless forloop.first %}
@@ -293,7 +291,8 @@ footer_include: _footer-program.html
           {% if sub_category != "" %}
           <li>
             <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
-              data-category-title="{{main_category}}" data-subcategory-title="{{sub_category}}">{{ sub_category }}</a>
+              data-category-title="{{main_category}}" data-subcategory-title="{{sub_category}}">{{ sub_category
+              }}</a>
           </li>
           {% endif %}
 
@@ -390,5 +389,5 @@ footer_include: _footer-program.html
     {% endif %}
   </div>
 </div>
-  <!--- Program Column Display End --->
+<!--- Program Column Display End --->
 </div>
