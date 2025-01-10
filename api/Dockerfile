@@ -30,4 +30,4 @@ chown -R appuser:appgroup /app/
 USER 1000:1000
 
 # Command to run the FastAPI app using Uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "", "--port", "8000"]
