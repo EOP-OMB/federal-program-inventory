@@ -670,6 +670,7 @@
     leading_sign = "$";
     if (amount < 0) {
       leading_sign = "-$"
+      amount = amount * -1
     }
 
     // Handle 0 case
