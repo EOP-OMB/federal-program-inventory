@@ -334,8 +334,8 @@ cfo_agencies:
   - title: NATIONAL SECURITY AGENCY (NSA)
   - title: Office of Local Defense Community Cooperation
   - title: Uniformed Services University of the Health Sciences
-  - title: Washington Headquarters Services (WHS)
   - title: Unspecified
+  - title: Washington Headquarters Services (WHS)
   title: Department of Defense
 - sub_categories:
   - title: Department of Education
@@ -436,9 +436,9 @@ cfo_agencies:
   - title: Directory / National Cemetery Administration
   - title: National Cemetery System
   - title: Under Secretary for Benefits / Veterans Benefits Administation
+  - title: Unspecified
   - title: VA Health Administration Center
   - title: Veterans Benefits Administration
-  - title: Unspecified
   title: Department of Veterans Affairs
 - sub_categories:
   - title: Bureau of Indian Education

@@ -487,9 +487,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":114012196114.0},{"title":"Food
-  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":598720000.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":301086556.0},{"title":"Food
-  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":36984365659.0}]'
+sub_cats: '[{"title":"Food Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":598720000.0},{"title":"Food
+  and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":36984365659.0},{"title":"Food
+  and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":114012196114.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":301086556.0}]'
 title: Food and Nutrition
 total_num_agencies: 12
 total_num_applicant_types: 47
