@@ -180,18 +180,35 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
 
         # Get regular program obligations
         if programs['regular']:
-            placeholders = ','.join('?' * len(programs['regular']))
-            cursor.execute(f"""
-                SELECT COALESCE(SUM(CASE
-                    WHEN fiscal_year = ? AND is_actual = 0
-                    THEN amount
-                    ELSE 0
-                END), 0) as total_obs
+        placeholders = ','.join('?' * len(programs['regular']))
+        # Note we now need fiscal_year twice, and programs['regular'] twice
+        params = [fiscal_year] + programs['regular'] + [fiscal_year] + programs['regular']
+        cursor.execute(f"""
+            SELECT COALESCE(SUM(amount), 0) as total_obs
+            FROM (
+                SELECT program_id, amount
                 FROM program_sam_spending
-                WHERE program_id IN ({placeholders})
-            """, [fiscal_year] + programs['regular'])
-
-            total_obs += float(cursor.fetchone()['total_obs'])
+                WHERE fiscal_year = ? 
+                AND program_id IN ({placeholders})
+                AND is_actual = 1
+                
+                UNION ALL
+                
+                SELECT p1.program_id, p1.amount
+                FROM program_sam_spending p1
+                WHERE fiscal_year = ?
+                AND program_id IN ({placeholders})
+                AND is_actual = 0
+                AND NOT EXISTS (
+                    SELECT 1 
+                    FROM program_sam_spending p2
+                    WHERE p2.program_id = p1.program_id
+                    AND p2.fiscal_year = p1.fiscal_year
+                    AND p2.is_actual = 1
+                )
+            ) subquery
+        """, params)
+        total_obs += float(cursor.fetchone()['total_obs'])
 
         # Get other obligations
         if programs['other_program']:
@@ -360,15 +377,32 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         # Get obligations for regular programs
         if regular_program_ids:
             placeholders = ','.join('?' * len(regular_program_ids))
+            params = [fiscal_year] + regular_program_ids + [fiscal_year] + regular_program_ids
             cursor.execute(f"""
-                SELECT COALESCE(SUM(CASE
-                    WHEN fiscal_year = ? AND is_actual = 0
-                    THEN amount
-                    ELSE 0
-                END), 0) as total_obligations
-                FROM program_sam_spending
-                WHERE program_id IN ({placeholders})
-            """, [fiscal_year] + regular_program_ids)
+                SELECT COALESCE(SUM(amount), 0) as total_obligations
+                FROM (
+                    SELECT program_id, amount
+                    FROM program_sam_spending
+                    WHERE fiscal_year = ? 
+                    AND program_id IN ({placeholders})
+                    AND is_actual = 1
+                    
+                    UNION ALL
+                    
+                    SELECT p1.program_id, p1.amount
+                    FROM program_sam_spending p1
+                    WHERE fiscal_year = ?
+                    AND program_id IN ({placeholders})
+                    AND is_actual = 0
+                    AND NOT EXISTS (
+                        SELECT 1 
+                        FROM program_sam_spending p2
+                        WHERE p2.program_id = p1.program_id
+                        AND p2.fiscal_year = p1.fiscal_year
+                        AND p2.is_actual = 1
+                    )
+                ) subquery
+            """, params)
 
             total_category_obs += float(cursor.fetchone()['total_obligations'])
 
@@ -423,15 +457,32 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
             # Get regular program obligations
             if sub_regular_ids:
                 placeholders = ','.join('?' * len(sub_regular_ids))
+                params = [fiscal_year] + sub_regular_ids + [fiscal_year] + sub_regular_ids
                 cursor.execute(f"""
-                    SELECT COALESCE(SUM(CASE
-                        WHEN fiscal_year = ? AND is_actual = 0
-                        THEN amount
-                        ELSE 0
-                    END), 0) as total_obligations
-                    FROM program_sam_spending
-                    WHERE program_id IN ({placeholders})
-                """, [fiscal_year] + sub_regular_ids)
+                    SELECT COALESCE(SUM(amount), 0) as total_obligations
+                    FROM (
+                        SELECT program_id, amount
+                        FROM program_sam_spending
+                        WHERE fiscal_year = ? 
+                        AND program_id IN ({placeholders})
+                        AND is_actual = 1
+                        
+                        UNION ALL
+                        
+                        SELECT p1.program_id, p1.amount
+                        FROM program_sam_spending p1
+                        WHERE fiscal_year = ?
+                        AND program_id IN ({placeholders})
+                        AND is_actual = 0
+                        AND NOT EXISTS (
+                            SELECT 1 
+                            FROM program_sam_spending p2
+                            WHERE p2.program_id = p1.program_id
+                            AND p2.fiscal_year = p1.fiscal_year
+                            AND p2.is_actual = 1
+                        )
+                    ) subquery
+                """, params)
 
                 subcat_total_obs += float(cursor.fetchone()['total_obligations'])
 
@@ -568,21 +619,37 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         program_obligations = {}
         if regular_program_ids:
             placeholders = ','.join('?' * len(regular_program_ids))
+            params = [fiscal_year] + regular_program_ids + [fiscal_year] + regular_program_ids
             cursor.execute(f"""
-                SELECT program_id,
-                    COALESCE(SUM(CASE
-                        WHEN fiscal_year = ? AND is_actual = 0
-                        THEN amount
-                        ELSE 0
-                    END), 0) as total_obs
-                FROM program_sam_spending
-                WHERE program_id IN ({placeholders})
+                SELECT program_id, COALESCE(SUM(amount), 0) as total_obs
+                FROM (
+                    SELECT program_id, amount
+                    FROM program_sam_spending
+                    WHERE fiscal_year = ? 
+                    AND program_id IN ({placeholders})
+                    AND is_actual = 1
+                    
+                    UNION ALL
+                    
+                    SELECT p1.program_id, p1.amount
+                    FROM program_sam_spending p1
+                    WHERE fiscal_year = ?
+                    AND program_id IN ({placeholders})
+                    AND is_actual = 0
+                    AND NOT EXISTS (
+                        SELECT 1 
+                        FROM program_sam_spending p2
+                        WHERE p2.program_id = p1.program_id
+                        AND p2.fiscal_year = p1.fiscal_year
+                        AND p2.is_actual = 1
+                    )
+                ) subquery
                 GROUP BY program_id
-            """, [fiscal_year] + regular_program_ids)
+            """, params)
 
-            for row in cursor.fetchall():
-                program_obligations[row['program_id']] = float(row['total_obs'])
-                total_subcategory_obs += float(row['total_obs'])
+for row in cursor.fetchall():
+    program_obligations[row['program_id']] = float(row['total_obs'])
+    total_subcategory_obs += float(row['total_obs'])
 
         # Get obligations for other programs
         if other_program_ids:
@@ -1276,16 +1343,32 @@ def generate_category_page(cursor: sqlite3.Cursor,
             """, [fiscal_year] + prog_ids)
         else:
             placeholders = ','.join('?' * len(prog_ids))
+            params = [fiscal_year] + prog_ids + [fiscal_year] + prog_ids
             cursor.execute(f"""
                 SELECT SUM(amount) as total_obs
                 FROM (
                     SELECT DISTINCT program_id, amount
                     FROM program_sam_spending
                     WHERE fiscal_year = ?
-                    AND is_actual = 0
                     AND program_id IN ({placeholders})
-                )
-            """, [fiscal_year] + prog_ids)
+                    AND is_actual = 1
+                    
+                    UNION ALL
+                    
+                    SELECT DISTINCT p1.program_id, p1.amount
+                    FROM program_sam_spending p1
+                    WHERE fiscal_year = ?
+                    AND program_id IN ({placeholders})
+                    AND is_actual = 0
+                    AND NOT EXISTS (
+                        SELECT 1 
+                        FROM program_sam_spending p2
+                        WHERE p2.program_id = p1.program_id
+                        AND p2.fiscal_year = p1.fiscal_year
+                        AND p2.is_actual = 1
+                    )
+                ) subquery
+            """, [fiscal_year] + prog_ids + [fiscal_year] + prog_ids)
 
         type_total = float(cursor.fetchone()['total_obs'] or 0)
         if type_total > 0:
