@@ -503,27 +503,27 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/health
-sub_cats: '[{"title":"Mental Health","permalink":"/category/health/mental-health","total_num_programs":60,"total_obs":13948686734.0},{"title":"Veterans
-  Health","permalink":"/category/health/veterans-health","total_num_programs":38,"total_obs":5630211460.06},{"title":"Physical
-  Fitness","permalink":"/category/health/physical-fitness","total_num_programs":30,"total_obs":3300505386.0},{"title":"Facility
-  Planning and Construction","permalink":"/category/health/facility-planning-and-construction","total_num_programs":33,"total_obs":6085852970.0},{"title":"Health
-  Research - General","permalink":"/category/health/health-research---general","total_num_programs":76,"total_obs":16925381708.0},{"title":"Prevention
-  and Control","permalink":"/category/health/prevention-and-control","total_num_programs":135,"total_obs":35586428303.0},{"title":"Occupational
-  Safety and Health","permalink":"/category/health/occupational-safety-and-health","total_num_programs":38,"total_obs":1990377229.0},{"title":"Health
-  Services Planning and Technical Assistance","permalink":"/category/health/health-services-planning-and-technical-assistance","total_num_programs":114,"total_obs":21247475108.0},{"title":"Alcoholism,
+sub_cats: '[{"title":"Alcoholism, Drug Abuse and Mental Health - General","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---general","total_num_programs":38,"total_obs":5389760523.0},{"title":"Alcoholism,
+  Drug Abuse and Mental Health - Law Enforcement","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement","total_num_programs":27,"total_obs":1663828916.72},{"title":"Alcoholism,
   Drug Abuse and Mental Health - Planning","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---planning","total_num_programs":27,"total_obs":7012657674.0},{"title":"Alcoholism,
-  Drug Abuse and Mental Health - Research","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---research","total_num_programs":27,"total_obs":8121297674.72},{"title":"Program
-  Development","permalink":"/category/health/program-development","total_num_programs":87,"total_obs":8228337412.0},{"title":"Alcoholism,
-  Drug Abuse and Mental Health - General","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---general","total_num_programs":38,"total_obs":5389760523.0},{"title":"Maternity,
-  Infants, Children","permalink":"/category/health/maternity--infants--children","total_num_programs":55,"total_obs":42227357076.0},{"title":"Specialized
-  Health Research and Training","permalink":"/category/health/specialized-health-research-and-training","total_num_programs":76,"total_obs":27344932161.0},{"title":"Alcoholism,
-  Drug Abuse and Mental Health - Law Enforcement","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement","total_num_programs":27,"total_obs":1663828916.72},{"title":"Education
+  Drug Abuse and Mental Health - Research","permalink":"/category/health/alcoholism--drug-abuse-and-mental-health---research","total_num_programs":27,"total_obs":8121297674.72},{"title":"Communicable
+  Diseases","permalink":"/category/health/communicable-diseases","total_num_programs":69,"total_obs":9456860028.0},{"title":"Education
   and Training","permalink":"/category/health/education-and-training","total_num_programs":131,"total_obs":167671773016.71},{"title":"Facility
-  Loans and Insurance","permalink":"/category/health/facility-loans-and-insurance","total_num_programs":22,"total_obs":26137641802.0},{"title":"Communicable
-  Diseases","permalink":"/category/health/communicable-diseases","total_num_programs":69,"total_obs":9456860028.0},{"title":"Libraries,
-  Information and Education Services","permalink":"/category/health/libraries--information-and-education-services","total_num_programs":37,"total_obs":14301726115.0},{"title":"Indian
-  Health","permalink":"/category/health/indian-health","total_num_programs":61,"total_obs":8132852199.0},{"title":"General
-  Health and Medical","permalink":"/category/health/general-health-and-medical","total_num_programs":130,"total_obs":1763895435352.0}]'
+  Loans and Insurance","permalink":"/category/health/facility-loans-and-insurance","total_num_programs":22,"total_obs":26137641802.0},{"title":"Facility
+  Planning and Construction","permalink":"/category/health/facility-planning-and-construction","total_num_programs":33,"total_obs":6085852970.0},{"title":"General
+  Health and Medical","permalink":"/category/health/general-health-and-medical","total_num_programs":130,"total_obs":1763895435352.0},{"title":"Health
+  Research - General","permalink":"/category/health/health-research---general","total_num_programs":76,"total_obs":16925381708.0},{"title":"Health
+  Services Planning and Technical Assistance","permalink":"/category/health/health-services-planning-and-technical-assistance","total_num_programs":114,"total_obs":21247475108.0},{"title":"Indian
+  Health","permalink":"/category/health/indian-health","total_num_programs":61,"total_obs":8132852199.0},{"title":"Libraries,
+  Information and Education Services","permalink":"/category/health/libraries--information-and-education-services","total_num_programs":37,"total_obs":14301726115.0},{"title":"Maternity,
+  Infants, Children","permalink":"/category/health/maternity--infants--children","total_num_programs":55,"total_obs":42227357076.0},{"title":"Mental
+  Health","permalink":"/category/health/mental-health","total_num_programs":60,"total_obs":13948686734.0},{"title":"Occupational
+  Safety and Health","permalink":"/category/health/occupational-safety-and-health","total_num_programs":38,"total_obs":1990377229.0},{"title":"Physical
+  Fitness","permalink":"/category/health/physical-fitness","total_num_programs":30,"total_obs":3300505386.0},{"title":"Prevention
+  and Control","permalink":"/category/health/prevention-and-control","total_num_programs":135,"total_obs":35586428303.0},{"title":"Program
+  Development","permalink":"/category/health/program-development","total_num_programs":87,"total_obs":8228337412.0},{"title":"Specialized
+  Health Research and Training","permalink":"/category/health/specialized-health-research-and-training","total_num_programs":76,"total_obs":27344932161.0},{"title":"Veterans
+  Health","permalink":"/category/health/veterans-health","total_num_programs":38,"total_obs":5630211460.06}]'
 title: Health
 total_num_agencies: 23
 total_num_applicant_types: 51
