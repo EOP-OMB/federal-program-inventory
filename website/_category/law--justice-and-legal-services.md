@@ -495,7 +495,7 @@ permalink: /category/law--justice-and-legal-services
 sub_cats: '[{"title":"Law Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":2453967773.0},{"title":"Law
   Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":6069696315.0},{"title":"Law
   Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":87,"total_obs":4024145648.0},{"title":"Law
-  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":4694264410.72},{"title":"Legal
+  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":4694264410.719999},{"title":"Legal
   Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":102343296.0},{"title":"Legal
   Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":130280429.0},{"title":"Legal
   Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":52,"total_obs":4030581330.0},{"title":"Legal

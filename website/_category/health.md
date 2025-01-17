@@ -523,7 +523,7 @@ sub_cats: '[{"title":"Alcoholism, Drug Abuse and Mental Health - General","perma
   and Control","permalink":"/category/health/prevention-and-control","total_num_programs":135,"total_obs":35586428303.0},{"title":"Program
   Development","permalink":"/category/health/program-development","total_num_programs":87,"total_obs":8228337412.0},{"title":"Specialized
   Health Research and Training","permalink":"/category/health/specialized-health-research-and-training","total_num_programs":76,"total_obs":27344932161.0},{"title":"Veterans
-  Health","permalink":"/category/health/veterans-health","total_num_programs":38,"total_obs":5630211460.06}]'
+  Health","permalink":"/category/health/veterans-health","total_num_programs":38,"total_obs":5630211460.059999}]'
 title: Health
 total_num_agencies: 23
 total_num_applicant_types: 51

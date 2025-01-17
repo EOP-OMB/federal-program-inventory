@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":17,"total_obs":17999756874.17},{"title":"Department
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":17,"total_obs":17999756874.170002},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":70952933.0},{"title":"Small Business
   Administration","total_num_programs":1,"total_obs":5461205.0},{"title":"Corporation
   for National and Community Service","total_num_programs":2,"total_obs":2910238.0},{"title":"Social

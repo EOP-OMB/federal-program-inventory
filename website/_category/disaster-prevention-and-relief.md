@@ -1,6 +1,6 @@
 ---
 agencies: '[{"title":"Department of Homeland Security","total_num_programs":43,"total_obs":40943256809.99},{"title":"Department
-  of Agriculture","total_num_programs":35,"total_obs":9043252929.53},{"title":"Department
+  of Agriculture","total_num_programs":35,"total_obs":9043252929.529999},{"title":"Department
   of Defense","total_num_programs":8,"total_obs":2934201015.0},{"title":"Department
   of Housing and Urban Development","total_num_programs":6,"total_obs":2533030085.0},{"title":"Department
   of Education","total_num_programs":2,"total_obs":1620316000.0},{"title":"Department

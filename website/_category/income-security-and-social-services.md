@@ -510,7 +510,7 @@ sub_cats: '[{"title":"Disabled Veterans","permalink":"/category/income-security-
   Family and Child Welfare Services","permalink":"/category/income-security-and-social-services/specialized-family-and-child-welfare-services","total_num_programs":27,"total_obs":21486569272.0},{"title":"Specialized
   Services","permalink":"/category/income-security-and-social-services/specialized-services","total_num_programs":39,"total_obs":837202684.0},{"title":"Training
   Assistance","permalink":"/category/income-security-and-social-services/training-assistance","total_num_programs":22,"total_obs":18423215278.0},{"title":"Veterans
-  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":18079281250.17},{"title":"Youth
+  Services","permalink":"/category/income-security-and-social-services/veterans-services","total_num_programs":27,"total_obs":18079281250.170002},{"title":"Youth
   Services","permalink":"/category/income-security-and-social-services/youth-services","total_num_programs":17,"total_obs":5378126689.0}]'
 title: Income Security and Social Services
 total_num_agencies: 22
