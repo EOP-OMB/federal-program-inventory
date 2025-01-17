@@ -475,6 +475,7 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
 
         category_title = clean_string(parent['title'])
 
+        subcats.sort(key=lambda x: x['title'])
         # Create category data
         category_data = {
             'title': category_title,
@@ -637,7 +638,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
             'agencies': json.dumps(generate_agency_list(cursor, program_ids, fiscal_year), separators=(',', ':')),
             'applicant_types': json.dumps(generate_applicant_type_list(cursor, program_ids), separators=(',', ':')),
             'categories_subcategories': get_categories_hierarchy(cursor),
-            'programs': json.dumps([{
+            'programs': json.dumps(sorted([{
                 'cfda': p['id'],
                 'permalink': f"/program/{p['id']}",
                 'title': p['title'],
@@ -645,7 +646,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
                 'agency': p['agency_name'] or 'Unspecified',
                 'total_obs': program_obligations.get(p['id'], 0.0),
                 'program_type': p['program_type']
-            } for p in programs], separators=(',', ':'))
+            } for p in programs], key=lambda x: (-x['total_obs'], x['title'])), separators=(',', ':'))
         }
 
         # Write subcategory markdown file
@@ -1391,7 +1392,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
         'fiscal_year': fiscal_year,
         'total_num_programs': total_programs,
         'total_obs': total_obs,
-        'obligations_by_type': obligations_by_type,
+        'obligations_by_type': sorted(obligations_by_type, key=lambda x: x['title']),
         'categories': categories_list,
         'categories_json': categories_json,
         'categories_hierarchy': get_categories_hierarchy(cursor)
@@ -1453,25 +1454,25 @@ try:
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    # programs_data = generate_program_data(cursor, FISCAL_YEARS)
+    programs_data = generate_program_data(cursor, FISCAL_YEARS)
 
     shared_data = generate_shared_data(cursor)
 
-    # generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
+    generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
 
-    # generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
+    generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, constants.FISCAL_YEAR)
 
-    # category_path = os.path.join('../website', 'pages', 'category.md')
-    # generate_category_page(cursor, programs_data, category_path, constants.FISCAL_YEAR)
+    category_path = os.path.join('../website', 'pages', 'category.md')
+    generate_category_page(cursor, programs_data, category_path, constants.FISCAL_YEAR)
 
     home_path = os.path.join('../website', 'pages', 'home.md')
     generate_home_page(home_path, shared_data, constants.FISCAL_YEAR)
 
-    # programs_json_path = os.path.join('../indexer', 'programs-table.json')
-    # generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
+    programs_json_path = os.path.join('../indexer', 'programs-table.json')
+    generate_programs_table_json(programs_json_path, programs_data, constants.FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')
     generate_category_markdown_files(cursor, category_dir, constants.FISCAL_YEAR)
