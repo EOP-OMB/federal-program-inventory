@@ -1,18 +1,18 @@
 <script>
   {% if page.outlays %}
-    const outlaysJson = {{ page.outlays }};
-    {% else %}
-    const outlaysJson = [];
+  const outlaysJson = {{ page.outlays }};
+  {% else %}
+  const outlaysJson = [];
   {% endif %}
   {% if page.outlays %}
-    const obligationsJson = {{ page.obligations }};
-    {% else %}
-    const obligationsJson = [];
+  const obligationsJson = {{ page.obligations }};
+  {% else %}
+  const obligationsJson = [];
   {% endif %}
   {% if page.other_program_spending %}
-    const otherSpendingJson = {{ page.other_program_spending }};
-    {% else %}
-    const otherSpendingJson = [];
+  const otherSpendingJson = {{ page.other_program_spending }};
+  {% else %}
+  const otherSpendingJson = [];
   {% endif %}
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
@@ -39,18 +39,47 @@
     }
     return bars;
   }
-  function formatObligations(amount) {
-    if (!amount) return "$0";
-    const trillion = 1000000000000;
-    const billion = 1000000000;
-    const million = 1000000;
-    const thousand = 1000;
 
-    if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
-    if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
-    if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
-    if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
-    return `$${amount.toFixed(2)}`;
+  function formatObligations(amount) {
+    const trillion = 1000000000000; // 1T
+    const billion = 1000000000; // 1B
+    const million = 1000000; // 1M
+    const thousand = 1000; // 1K
+    const hundred = 100; // 100
+
+    leading_sign = "$";
+    if (amount < 0) {
+      leading_sign = "-$"
+      amount = amount * -1
+    }
+
+    // Handle 0 case
+    if (amount === 0) {
+      return leading_sign + "0";
+    }
+
+    // Handle trillions
+    if (amount >= trillion) {
+      return `${leading_sign}${(amount / trillion).toFixed(2)}T`;
+    }
+
+    // Handle billions
+    if (amount >= billion) {
+      return `${leading_sign}${(amount / billion).toFixed(2)}B`;
+    }
+
+    // Handle millions
+    if (amount >= million) {
+      return `${leading_sign}${(amount / million).toFixed(2)}M`;
+    }
+
+    // Handle thousands
+    if (amount >= thousand) {
+      return `${leading_sign}${(amount / thousand).toFixed(2)}K`;
+    }
+
+    // Handle small numbers (less than 1000)
+    return `${leading_sign}${amount.toFixed(2)}`;
   }
 
   function createFiscalYearObligationsChart(
@@ -96,6 +125,15 @@
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    svg.append("style").text(`
+      .x-axis path.domain {
+        stroke: #ccc;
+      }
+      .y-axis path.domain {
+        stroke: #ccc;
+      }
+    `);
+
     // Get years and create scales
     const years = obligations.map((d) => d.x);
 
@@ -106,19 +144,29 @@
       .range([0, innerWidth])
       .padding(0.2);
 
-    // Y scale
-    const maxValue = d3.max(obligations, (d) =>
-      Math.max(d.sam_actual || 0, d.usa_spending_actual || 0)
-    );
+    // Find min and max values including negatives
+    const allValues = obligations.flatMap(d => [
+      d.sam_actual || 0,
+      d.usa_spending_actual || 0
+    ]);
+    const minValue = Math.min(0, d3.min(allValues));
+    const maxValue = Math.max(0, d3.max(allValues));
 
+    // Add padding to domain
+    const domainPadding = (maxValue - minValue) * 0.1;
+
+    // Y scale with proper domain for negatives
     const yScale = d3
       .scaleLinear()
-      .domain([0, maxValue])
+      .domain([
+        minValue - (minValue < 0 ? domainPadding : 0),
+        maxValue > 0 ? maxValue + domainPadding : (minValue === 0 && maxValue === 0) ? 0.1 : 0
+      ])
       .range([innerHeight, 0])
       .nice();
 
     // Get formatting info for consistent formatting
-    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+    const { divisor, suffix } = getFormattingInfo([{ value: Math.max(Math.abs(minValue), Math.abs(maxValue)) }]);
 
     // Responsive font sizes
     const fontSize = Math.max(10, Math.min(12, width / 50));
@@ -127,15 +175,15 @@
     // Function to add bars with specific color and data
     function addBars(selection, d) {
       const bars = [];
-      if (d.sam_actual > 0)
+      if (d.sam_actual !== undefined && d.sam_actual !== null)
         bars.push({ value: d.sam_actual, color: "rgb(250, 146, 65)" });
-      if (d.usa_spending_actual > 0)
+      if (d.usa_spending_actual !== undefined && d.usa_spending_actual !== null)
         bars.push({ value: d.usa_spending_actual, color: "rgb(21, 96, 130)" });
 
       // Create xBarScale based on actual number of bars
       const xBarScale = d3
         .scaleBand()
-        .domain(d3.range(Math.max(2, bars.length))) // Always allocate space for at least 2 bars
+        .domain(d3.range(Math.max(2, bars.length)))
         .range([0, xScale.bandwidth()])
         .padding(0.1);
 
@@ -151,10 +199,16 @@
           }
           return xBarScale(i);
         })
-        .attr("y", (d) => yScale(d.value))
+        .attr("y", (d) => d.value >= 0 ? yScale(d.value) : yScale(0))
         .attr("width", xBarScale.bandwidth())
-        .attr("height", (d) => innerHeight - yScale(d.value))
-        .attr("fill", (d) => d.color)
+        .attr("height", (d) => Math.abs(yScale(d.value) - yScale(0)))
+        .attr("fill", (d) => {
+          // Use different colors for negative values
+          if (d.value < 0) {
+            return d3.color(d.color).darker(0.5);
+          }
+          return d.color;
+        })
         .on("mouseover", function (event, d) {
           const tooltip = d3
             .select("body")
@@ -180,22 +234,29 @@
         })
         .on("mouseout", function (event, d) {
           d3.selectAll(".tooltip").remove();
-          d3.select(this).attr("fill", d.color);
+          // Restore original color based on value
+          d3.select(this).attr("fill", d.value < 0 ? d3.color(d.color).darker(0.5) : d.color);
         });
     }
 
     // Add axes with styled text
     const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3
-      .axisLeft(yScale)
-      .ticks(5)
+    const yAxis = d3.axisLeft(yScale)
+      .tickSizeOuter(0)
       .tickFormat((d) => formatAxisValues(d, divisor, suffix));
 
-    // Add axes with styled text
+    const allZerosOrNull = allValues.every(v => v === 0 || v === null || v === undefined);
+    
+    const yExtent = yScale.domain();
+    const step = (yExtent[1] - yExtent[0]) / 5;  // 5 intervals = 6 ticks
+    const tickValues = allZerosOrNull ? [0] : d3.range(yExtent[0], yExtent[1] + step / 2, step);
+    yAxis.tickValues(tickValues);
+
+    // Add axes
     svg
       .append("g")
       .attr("class", "x-axis")
-      .attr("transform", `translate(0,${innerHeight})`)
+      .attr("transform", `translate(0,${innerHeight})`)  // Keep x-axis at bottom
       .call(xAxis)
       .style("font-size", `${fontSize}px`);
 
@@ -204,6 +265,18 @@
       .attr("class", "y-axis")
       .call(yAxis)
       .style("font-size", `${fontSize}px`);
+
+    // Add zero line if we have negative values
+    if (minValue < 0) {
+      svg.append("line")
+        .attr("class", "zero-line")
+        .attr("x1", 0)
+        .attr("x2", innerWidth)
+        .attr("y1", yScale(0))
+        .attr("y2", yScale(0))
+        .attr("stroke", "#999")
+        .attr("stroke-dasharray", "4,4");
+    }
 
     // Create bar groups
     const yearGroups = svg
@@ -313,6 +386,15 @@
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    svg.append("style").text(`
+    .x-axis path.domain {
+      stroke: #ccc;
+    }
+    .y-axis path.domain {
+      stroke: #ccc;
+    }
+  `);
+
     // Get years and create scales
     const years = outlays.map((d) => d.x);
 
@@ -330,19 +412,29 @@
       .range([0, xScale.bandwidth()])
       .padding(0.1);
 
-    // Y scale
-    const maxValue = d3.max(outlays, (d) =>
-      Math.max(d.outlay || 0, d.obligation || 0)
-    );
+    // Find min and max values including negatives
+    const allValues = outlays.flatMap(d => [
+      d.outlay || 0,
+      d.obligation || 0
+    ]);
+    const minValue = Math.min(0, d3.min(allValues));
+    const maxValue = Math.max(0, d3.max(allValues));
 
+    // Add padding to domain
+    const domainPadding = (maxValue - minValue) * 0.1;
+
+    // Y scale with proper domain for negatives
     const yScale = d3
       .scaleLinear()
-      .domain([0, maxValue])
+      .domain([
+        minValue - (minValue < 0 ? domainPadding : 0),
+        maxValue > 0 ? maxValue + domainPadding : (minValue === 0 && maxValue === 0) ? 0.1 : 0
+      ])
       .range([innerHeight, 0])
       .nice();
 
     // Get formatting info for consistent formatting
-    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+    const { divisor, suffix } = getFormattingInfo([{ value: Math.max(Math.abs(minValue), Math.abs(maxValue)) }]);
 
     // Responsive font sizes
     const fontSize = Math.max(10, Math.min(12, width / 50));
@@ -350,10 +442,16 @@
 
     // Create axes
     const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3
-      .axisLeft(yScale)
-      .ticks(5)
+    const yAxis = d3.axisLeft(yScale)
+      .tickSizeOuter(0)
       .tickFormat((d) => formatAxisValues(d, divisor, suffix));
+
+    const allZerosOrNull = allValues.every(v => v === 0 || v === null || v === undefined);
+
+    const yExtent = yScale.domain();
+    const step = (yExtent[1] - yExtent[0]) / 5;
+    const tickValues = allZerosOrNull ? [0] : d3.range(yExtent[0], yExtent[1] + step / 2, step);
+    yAxis.tickValues(tickValues);
 
     // Add axes
     svg
@@ -369,6 +467,18 @@
       .call(yAxis)
       .style("font-size", `${fontSize}px`);
 
+    // Add zero line if we have negative values
+    if (minValue < 0) {
+      svg.append("line")
+        .attr("class", "zero-line")
+        .attr("x1", 0)
+        .attr("x2", innerWidth)
+        .attr("y1", yScale(0))
+        .attr("y2", yScale(0))
+        .attr("stroke", "#999")
+        .attr("stroke-dasharray", "4,4");
+    }
+
     // Create year groups
     const yearGroups = svg
       .selectAll(".year-group")
@@ -382,10 +492,10 @@
     yearGroups
       .append("rect")
       .attr("x", xBarScale(0))
-      .attr("y", (d) => yScale(d.outlay || 0))
+      .attr("y", (d) => d.outlay >= 0 ? yScale(d.outlay || 0) : yScale(0))
       .attr("width", xBarScale.bandwidth())
-      .attr("height", (d) => innerHeight - yScale(d.outlay || 0))
-      .attr("fill", "rgb(34, 186, 229)") // Light blue for outlays
+      .attr("height", (d) => Math.abs(yScale(d.outlay || 0) - yScale(0)))
+      .attr("fill", (d) => d.outlay < 0 ? d3.color("rgb(34, 186, 229)").darker(0.5) : "rgb(34, 186, 229)")
       .on("mouseover", function (event, d) {
         const tooltip = d3
           .select("body")
@@ -409,19 +519,19 @@
 
         d3.select(this).attr("fill", d3.color("rgb(34, 186, 229)").darker(0.2));
       })
-      .on("mouseout", function () {
+      .on("mouseout", function (event, d) {
         d3.select("body").selectAll(".tooltip").remove();
-        d3.select(this).attr("fill", "rgb(34, 186, 229)");
+        d3.select(this).attr("fill", d.outlay < 0 ? d3.color("rgb(34, 186, 229)").darker(0.5) : "rgb(34, 186, 229)");
       });
 
     // Add bars for obligations
     yearGroups
       .append("rect")
       .attr("x", xBarScale(1))
-      .attr("y", (d) => yScale(d.obligation || 0))
+      .attr("y", (d) => d.obligation >= 0 ? yScale(d.obligation || 0) : yScale(0))
       .attr("width", xBarScale.bandwidth())
-      .attr("height", (d) => innerHeight - yScale(d.obligation || 0))
-      .attr("fill", "rgb(21, 96, 130)") // Dark blue for obligations
+      .attr("height", (d) => Math.abs(yScale(d.obligation || 0) - yScale(0)))
+      .attr("fill", (d) => d.obligation < 0 ? d3.color("rgb(21, 96, 130)").darker(0.5) : "rgb(21, 96, 130)")
       .on("mouseover", function (event, d) {
         const tooltip = d3
           .select("body")
@@ -445,9 +555,9 @@
 
         d3.select(this).attr("fill", d3.color("rgb(21, 96, 130)").darker(0.2));
       })
-      .on("mouseout", function () {
+      .on("mouseout", function (event, d) {
         d3.select("body").selectAll(".tooltip").remove();
-        d3.select(this).attr("fill", "rgb(21, 96, 130)");
+        d3.select(this).attr("fill", d.obligation < 0 ? d3.color("rgb(21, 96, 130)").darker(0.5) : "rgb(21, 96, 130)");
       });
 
     // Add legend
@@ -546,6 +656,15 @@
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    svg.append("style").text(`
+    .x-axis path.domain {
+      stroke: #ccc;
+    }
+    .y-axis path.domain {
+      stroke: #ccc;
+    }
+  `);
+
     // Get years and create scales
     const years = outlays.map((d) => d.x);
 
@@ -564,21 +683,31 @@
     }));
 
     const stack = d3.stack().keys(["Revenue losses", "Outlays"]);
-
     const series = stack(stackedData);
 
-    // Get max value for y scale
+    // Find min and max values including negatives
+    const allValues = outlays.flatMap(d => [
+      d.forgone_revenue || 0,
+      d.outlays || 0
+    ]);
+    const minValue = Math.min(0, d3.min(allValues));
     const maxValue = d3.max(series, (d) => d3.max(d, (d) => d[1]));
+
+    // Add padding to domain
+    const domainPadding = (maxValue - minValue) * 0.1;
 
     // Y scale
     const yScale = d3
       .scaleLinear()
-      .domain([0, maxValue])
+      .domain([
+        minValue - (minValue < 0 ? domainPadding : 0),
+        maxValue > 0 ? maxValue + domainPadding : (minValue === 0 && maxValue === 0) ? 0.1 : 0
+      ])
       .range([innerHeight, 0])
       .nice();
 
     // Get formatting info for consistent formatting
-    const { divisor, suffix } = getFormattingInfo([{ value: maxValue }]);
+    const { divisor, suffix } = getFormattingInfo([{ value: Math.max(Math.abs(minValue), Math.abs(maxValue)) }]);
 
     // Color scale
     const colors = {
@@ -592,10 +721,16 @@
 
     // Create axes
     const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3
-      .axisLeft(yScale)
-      .ticks(5)
+    const yAxis = d3.axisLeft(yScale)
+      .tickSizeOuter(0)
       .tickFormat((d) => formatAxisValues(d, divisor, suffix));
+
+    const allZerosOrNull = allValues.every(v => v === 0 || v === null || v === undefined);
+    
+    const yExtent = yScale.domain();
+    const step = (yExtent[1] - yExtent[0]) / 5;
+    const tickValues = allZerosOrNull ? [0] : d3.range(yExtent[0], yExtent[1] + step / 2, step);
+    yAxis.tickValues(tickValues);
 
     // Add axes
     svg
@@ -611,6 +746,18 @@
       .call(yAxis)
       .style("font-size", `${fontSize}px`);
 
+    // Add zero line if we have negative values
+    if (minValue < 0) {
+      svg.append("line")
+        .attr("class", "zero-line")
+        .attr("x1", 0)
+        .attr("x2", innerWidth)
+        .attr("y1", yScale(0))
+        .attr("y2", yScale(0))
+        .attr("stroke", "#999")
+        .attr("stroke-dasharray", "4,4");
+    }
+
     // Create stacked bars
     svg
       .append("g")
@@ -622,9 +769,17 @@
       .data((d) => d)
       .join("rect")
       .attr("x", (d) => xScale(d.data.year))
-      .attr("y", (d) => yScale(d[1]))
-      .attr("height", (d) => yScale(d[0]) - yScale(d[1]))
+      .attr("y", (d) => {
+        const height = yScale(d[0]) - yScale(d[1]);
+        return height >= 0 ? yScale(d[1]) : yScale(d[0]);
+      })
+      .attr("height", (d) => Math.abs(yScale(d[0]) - yScale(d[1])))
       .attr("width", xScale.bandwidth())
+      .attr("fill", (d, i, nodes) => {
+        const parentFill = d3.select(nodes[i].parentNode).attr("fill");
+        const value = d[1] - d[0];
+        return value < 0 ? d3.color(parentFill).darker(0.5) : parentFill;
+      })
       .on("mouseover", function (event, d) {
         const value = d[1] - d[0];
         const tooltip = d3
@@ -658,9 +813,11 @@
           d3.color(d3.select(this.parentNode).attr("fill")).darker(0.2)
         );
       })
-      .on("mouseout", function () {
+      .on("mouseout", function (event, d) {
         d3.select("body").selectAll(".tooltip").remove();
-        d3.select(this).attr("fill", d3.select(this.parentNode).attr("fill"));
+        const parentFill = d3.select(this.parentNode).attr("fill");
+        const value = d[1] - d[0];
+        d3.select(this).attr("fill", value < 0 ? d3.color(parentFill).darker(0.5) : parentFill);
       });
 
     // Add legend
@@ -963,15 +1120,15 @@
         if (isOtherProgram && hasOtherProgramExpenditure) {
           // Handle tax expenditure and interest data
           data = otherSpendingJson;
-          if (isInterestProgram){
-            filename="program-interest-outlays.csv"
+          if (isInterestProgram) {
+            filename = "program-interest-outlays.csv"
             csvContent = formatInterestOutlaysForCSV(data);
-          } else{
+          } else {
             filename = "program-tax-expenditures.csv";
             csvContent = formatTaxExpendituresForCSV(data);
           }
-          
-          
+
+
         } else {
           // Handle assistance listing data
           const isOutlaysVisible =
