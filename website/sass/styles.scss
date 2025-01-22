@@ -2,6 +2,18 @@
 @forward "uswds";
 @forward "uswds-theme-custom-styles";
 
+// US government banner
+.usa-banner__button {
+  &:hover {
+    color: #B8BAE8;
+  }
+
+  &::after {
+    background: white !important;
+  }
+}
+
+
 .usa-logo img {
     height: 50px;
     margin-right: 10px;
