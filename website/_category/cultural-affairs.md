@@ -14,11 +14,11 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":34},{"title":"Other
   public institution/organization","total_num_programs":14},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":12},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":12},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":11},{"title":"Other private institutions/organizations","total_num_programs":10},{"title":"Non-Government
   - General","total_num_programs":9},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Quasi-public
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":8},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"State","total_num_programs":7},{"title":"Individual/Family","total_num_programs":6},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":6},{"title":"U.S.
@@ -480,8 +480,8 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Promotion of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":37,"total_obs":741464252.0},{"title":"Promotion
-  of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":41,"total_obs":653330848.0}]'
+sub_cats: '[{"title":"Promotion of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":41,"total_obs":653330848.0},{"title":"Promotion
+  of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":37,"total_obs":741464252.0}]'
 title: Cultural Affairs
 total_num_agencies: 11
 total_num_applicant_types: 39

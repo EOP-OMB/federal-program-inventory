@@ -8,10 +8,10 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":5},{"title":"Other public
   institution/organization","total_num_programs":4},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":4},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":3},{"title":"Quasi-public
+  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":3},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Small
   business (less than 500 employees)","total_num_programs":2},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":2},{"title":"U.S.
@@ -476,19 +476,19 @@ fiscal_year: '2024'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/federal-employment
-programs: '[{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps National
-  Service and Civic Engagement Research Competition 94.026","popular_name":"National
+programs: '[{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast Crescent
+  Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
   for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
-  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
   R. Pickering Foreign Affairs Fellowship Program","popular_name":"Pickering Fellowship
   Program","agency":"Department of State","total_obs":6065979.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"19.207","permalink":"/program/19.207","title":"William
+  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"19.207","permalink":"/program/19.207","title":"William
   D. Clarke, Sr. Fellowship","popular_name":"Clarke Fellowship","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Federal Employment

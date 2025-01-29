@@ -10,11 +10,11 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":16},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":9},{"title":"State","total_num_programs":8},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":6},{"title":"U.S. Territories
+  Recognized Indian Tribal Governments","total_num_programs":6},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":5},{"title":"Other public institution/organization","total_num_programs":5},{"title":"Profit
   organization","total_num_programs":5},{"title":"U.S. Territories and possessions","total_num_programs":5},{"title":"Interstate","total_num_programs":3},{"title":"Intrastate","total_num_programs":3},{"title":"Other
   private institutions/organizations","total_num_programs":3},{"title":"Quasi-public
@@ -481,68 +481,68 @@ fiscal_year: '2024'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement
-programs: '[{"cfda":"93.732","permalink":"/program/93.732","title":"Mental and Behavioral
-  Health Education and Training Grants ","popular_name":"BHWET-Pro; BHWET-Para; BHWET-CAY;
-  OIFSP; AMF; ISTP; BHWD TA; HPSWTP; PRMHW; WRTAC","agency":"Department of Health
-  and Human Services","total_obs":135408237.0,"program_type":"assistance_listing"},{"cfda":"19.029","permalink":"/program/19.029","title":"The
-  U.S. President''s Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
-  Open Container Requirements","popular_name":null,"agency":"Department of Transportation","total_obs":61780320.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
-  the Logical Observation Identifiers Names and Codes (LOINC\u00ae) Standard to meet
-  U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.043","permalink":"/program/16.043","title":"Veterans
-  Treatment Court Discretionary Grant Program","popular_name":null,"agency":"Department
-  of Justice","total_obs":23694697.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
-  Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
-  Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+programs: '[{"cfda":"19.029","permalink":"/program/19.029","title":"The U.S. President''s
+  Emergency Plan for AIDS Relief Programs","popular_name":"(PEPFAR)","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
+  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
+  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
+  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
+  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"20.614","permalink":"/program/20.614","title":"National
+  Highway Traffic Safety Administration (NHTSA) Discretionary Safety Grants and Cooperative
+  Agreements ","popular_name":"NHTSA Section 403 Discretionary Grants and Cooperative
+  Agreements","agency":"Department of Transportation","total_obs":46471297.72,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
+  Open Container Requirements","popular_name":null,"agency":"Department of Transportation","total_obs":61780320.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
+  Transparency Project for Health IT Interoperability Services Cooperative Agreement
+  Program","popular_name":"Market Transparency Project","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
+  the Technical Advancement & Readiness of Public Health via Health Information Exchange
+  Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.001","permalink":"/program/16.001","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
+  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1018465919.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
+  Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
+  and Safety","agency":"Department of Agriculture","total_obs":3826087.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
   Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.345","permalink":"/program/93.345","title":"Leading
-  Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted
-  Exchange Framework and Common Agreement (TEFCA) Recognized Coordinating Entity (RCE)
-  Cooperative Agreement","popular_name":"TEFCA RCE Cooperative Agreement","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.997","permalink":"/program/93.997","title":"Assisted
-  Outpatient Treatment","popular_name":"Assisted Outpatient Treatment Grant Program
-  for Individuals with Serious Mental Illness (Short title:  Assisted Outpatient Treatment
-  [AOT])","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.004","permalink":"/program/16.004","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Training","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.043","permalink":"/program/93.043","title":"Special
   Programs for the Aging, Title III, Part D, Disease Prevention and Health Promotion
   Services","popular_name":"Special Programs for the Aging, Title III, Part D, Disease
   Prevention and Health Promotion Services","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
-  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.088","permalink":"/program/93.088","title":"Advancing
-  System Improvements for Key Issues in Women''s Health","popular_name":"Improving
-  Health of Women and Girls","agency":"Department of Health and Human Services","total_obs":15340000.0,"program_type":"assistance_listing"},{"cfda":"93.462","permalink":"/program/93.462","title":"Strengthening
-  the Technical Advancement & Readiness of Public Health via Health Information Exchange
-  Program","popular_name":"STAR HIE","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.004","permalink":"/program/16.004","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Training","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.796","permalink":"/program/93.796","title":"State
   Survey Certification of Health Care Providers and Suppliers (Title XIX) Medicaid","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":308649000.0,"program_type":"assistance_listing"},{"cfda":"93.691","permalink":"/program/93.691","title":"Integrating
-  the Healthcare Enterprise FHIR Cooperative Agreement Program","popular_name":"IHE
-  FHIR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.983","permalink":"/program/93.983","title":"Market
-  Transparency Project for Health IT Interoperability Services Cooperative Agreement
-  Program","popular_name":"Market Transparency Project","agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.614","permalink":"/program/20.614","title":"National
-  Highway Traffic Safety Administration (NHTSA) Discretionary Safety Grants and Cooperative
-  Agreements ","popular_name":"NHTSA Section 403 Discretionary Grants and Cooperative
-  Agreements","agency":"Department of Transportation","total_obs":46471297.72,"program_type":"assistance_listing"},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory Publications","popular_name":"(Microgram)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
+  of Health and Human Services","total_obs":308649000.0,"program_type":"assistance_listing"},{"cfda":"93.345","permalink":"/program/93.345","title":"Leading
+  Edge Acceleration Projects (LEAP) in Health Information Technology","popular_name":"LEAP","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
   Substance Abuse Treatment for State Prisoners","popular_name":"(RSAT)","agency":"Department
-  of Justice","total_obs":30193359.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
-  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1018465919.0,"program_type":"assistance_listing"},{"cfda":"10.516","permalink":"/program/10.516","title":"Rural
-  Health and Safety Education Competitive Grants Program","popular_name":"Rural Health
-  and Safety","agency":"Department of Agriculture","total_obs":3826087.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.001","permalink":"/program/16.001","title":"Law
-  Enforcement Assistance Narcotics and Dangerous Drugs Laboratory Analysis","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Justice","total_obs":30193359.0,"program_type":"assistance_listing"},{"cfda":"93.997","permalink":"/program/93.997","title":"Assisted
+  Outpatient Treatment","popular_name":"Assisted Outpatient Treatment Grant Program
+  for Individuals with Serious Mental Illness (Short title:  Assisted Outpatient Treatment
+  [AOT])","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.355","permalink":"/program/93.355","title":"Public
+  Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
+  Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.003","permalink":"/program/16.003","title":"Law
+  Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory Publications","popular_name":"(Microgram)","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.043","permalink":"/program/16.043","title":"Veterans
+  Treatment Court Discretionary Grant Program","popular_name":null,"agency":"Department
+  of Justice","total_obs":23694697.0,"program_type":"assistance_listing"},{"cfda":"93.732","permalink":"/program/93.732","title":"Mental
+  and Behavioral Health Education and Training Grants ","popular_name":"BHWET-Pro;
+  BHWET-Para; BHWET-CAY; OIFSP; AMF; ISTP; BHWD TA; HPSWTP; PRMHW; WRTAC","agency":"Department
+  of Health and Human Services","total_obs":135408237.0,"program_type":"assistance_listing"},{"cfda":"93.347","permalink":"/program/93.347","title":"Trusted
+  Exchange Framework and Common Agreement (TEFCA) Recognized Coordinating Entity (RCE)
+  Cooperative Agreement","popular_name":"TEFCA RCE Cooperative Agreement","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.346","permalink":"/program/93.346","title":"Enhancing
+  the Logical Observation Identifiers Names and Codes (LOINC\u00ae) Standard to meet
+  U.S. Interoperability Needs","popular_name":"LOINC","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
 total_num_agencies: 8
 total_num_applicant_types: 39

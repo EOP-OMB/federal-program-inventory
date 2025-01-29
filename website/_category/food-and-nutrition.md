@@ -16,11 +16,11 @@ applicant_types: '[{"title":"State","total_num_programs":40},{"title":"Public no
   hospitals)","total_num_programs":32},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":32},{"title":"U.S.
   Territories and possessions","total_num_programs":29},{"title":"Federally Recognized
-  lndian Tribal Governments","total_num_programs":27},{"title":"Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":24},{"title":"U.S.
+  Indian Tribal Governments","total_num_programs":27},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":24},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":23},{"title":"Other
   public institution/organization","total_num_programs":18},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":12},{"title":"Non-Government - General","total_num_programs":10},{"title":"Other
   private institutions/organizations","total_num_programs":10},{"title":"Profit organization","total_num_programs":8},{"title":"Federal","total_num_programs":7},{"title":"Government
   - General","total_num_programs":6},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":6},{"title":"Small
@@ -487,8 +487,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":114012196114.0},{"title":"Food
-  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":598720000.0},{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":301086556.0},{"title":"Food
+sub_cats: '[{"title":"Research","permalink":"/category/food-and-nutrition/research","total_num_programs":19,"total_obs":301086556.0},{"title":"Food
+  and Nutrition for Individual and Families","permalink":"/category/food-and-nutrition/food-and-nutrition-for-individual-and-families","total_num_programs":44,"total_obs":114012196114.0},{"title":"Food
+  Inspection","permalink":"/category/food-and-nutrition/food-inspection","total_num_programs":11,"total_obs":598720000.0},{"title":"Food
   and Nutrition for Children","permalink":"/category/food-and-nutrition/food-and-nutrition-for-children","total_num_programs":40,"total_obs":36984365659.0}]'
 title: Food and Nutrition
 total_num_agencies: 12

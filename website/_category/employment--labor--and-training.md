@@ -26,13 +26,13 @@ agencies: '[{"title":"Social Security Administration","total_num_programs":3,"to
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":68},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":65},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":58},{"title":"State","total_num_programs":55},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":53},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":43},{"title":"Other public
+  Recognized Indian Tribal Governments","total_num_programs":43},{"title":"Other public
   institution/organization","total_num_programs":40},{"title":"U.S. Territories and
   possessions","total_num_programs":34},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":31},{"title":"Profit
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":31},{"title":"Profit
   organization","total_num_programs":27},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":27},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":24},{"title":"Other private
@@ -495,15 +495,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/employment--labor--and-training
-sub_cats: '[{"title":"Federal Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":93003079.0},{"title":"Labor
-  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":360994474.0},{"title":"Bonding
+sub_cats: '[{"title":"Program Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":5217082075.0},{"title":"Assistance
+  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":72189971289.0},{"title":"Labor
+  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":360994474.0},{"title":"Facilities,
+  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":4740265657.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":907936890.0},{"title":"Equal
+  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":1275504316.0},{"title":"Bonding
   and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":358037100.0},{"title":"Job
-  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":172687292660.79},{"title":"Facilities,
-  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":4740265657.0},{"title":"Assistance
-  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":72189971289.0},{"title":"Equal
-  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":1275504316.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":907936890.0},{"title":"Assistance
-  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6650545402.0},{"title":"Program
-  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":5217082075.0},{"title":"Planning,
+  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":172687292660.79},{"title":"Federal
+  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":93003079.0},{"title":"Assistance
+  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6650545402.0},{"title":"Planning,
   Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":26,"total_obs":2088427159.0}]'
 title: Employment, Labor, and Training
 total_num_agencies: 25

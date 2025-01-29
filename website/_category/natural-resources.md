@@ -16,13 +16,13 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":140},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":130},{"title":"Public
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":130},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":129},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":126},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":118},{"title":"State","total_num_programs":104},{"title":"Other
+  Recognized Indian Tribal Governments","total_num_programs":118},{"title":"State","total_num_programs":104},{"title":"Other
   public institution/organization","total_num_programs":67},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":59},{"title":"Federal","total_num_programs":52},{"title":"Other
   private institutions/organizations","total_num_programs":44},{"title":"Profit organization","total_num_programs":41},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":40},{"title":"Quasi-public
@@ -493,11 +493,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/natural-resources
-sub_cats: '[{"title":"Community Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":21302999133.0},{"title":"Water
-  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":9548802589.0},{"title":"Wildlife
-  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":8030298804.0},{"title":"Land
-  Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":10303696509.51},{"title":"Mineral
+sub_cats: '[{"title":"Land Conservation","permalink":"/category/natural-resources/land-conservation","total_num_programs":104,"total_obs":10303696509.51},{"title":"Wildlife
+  Research and Preservation","permalink":"/category/natural-resources/wildlife-research-and-preservation","total_num_programs":109,"total_obs":8030298804.0},{"title":"Mineral
   Research","permalink":"/category/natural-resources/mineral-research","total_num_programs":39,"total_obs":3662600374.72},{"title":"Community
+  Water Supply Services","permalink":"/category/natural-resources/community-water-supply-services","total_num_programs":68,"total_obs":21302999133.0},{"title":"Water
+  Conservation and Research","permalink":"/category/natural-resources/water-conservation-and-research","total_num_programs":99,"total_obs":9548802589.0},{"title":"Community
   Sewage Treatment Assistance","permalink":"/category/natural-resources/community-sewage-treatment-assistance","total_num_programs":38,"total_obs":7491599791.0},{"title":"Recreation","permalink":"/category/natural-resources/recreation","total_num_programs":52,"total_obs":3148004622.51}]'
 title: Natural Resources
 total_num_agencies: 15

@@ -3,10 +3,10 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   of Agriculture","total_num_programs":3,"total_obs":39459103.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":7},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":7},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":5},{"title":"Private
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":5},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":5},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":5},{"title":"Government
@@ -474,34 +474,35 @@ fiscal_year: '2024'
 parent_permalink: /category/housing
 parent_title: Housing
 permalink: /category/housing/site-preparation-for-housing
-programs: '[{"cfda":"10.405","permalink":"/program/10.405","title":"Farm Labor Housing
-  Loans and Grants","popular_name":"Labor Housing","agency":"Department of Agriculture","total_obs":20646103.0,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
-  Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
-  of Housing and Urban Development","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"14.162","permalink":"/program/14.162","title":"Mortgage
+programs: '[{"cfda":"14.316","permalink":"/program/14.316","title":"Housing Counseling
+  Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
+  of Housing and Urban Development","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":84935898.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"14.162","permalink":"/program/14.162","title":"Mortgage
   Insurance Combination and Manufactured Home Lot Loans","popular_name":"Mortgage
   Insurance- Land and Manufactured Home or MH lot-(Title I)","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
-  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":18700000.0,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":84935898.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
-  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.411","permalink":"/program/10.411","title":"Rural
-  Housing Site Loans and Self Help Housing Land Development Loans","popular_name":"(Section
-  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":113000.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
-  Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
-  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
-  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":72030085.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
+  Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
+  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":1257621361.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
+  and Urban Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
+  Labor Housing Loans and Grants","popular_name":"Labor Housing","agency":"Department
+  of Agriculture","total_obs":20646103.0,"program_type":"assistance_listing"},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
   Housing Capital Fund","popular_name":"(CFP)","agency":"Department of Housing and
-  Urban Development","total_obs":3188665925.0,"program_type":"assistance_listing"},{"cfda":"14.867","permalink":"/program/14.867","title":"Indian
-  Housing Block Grants","popular_name":"IHBG; Native American Housing Block Grant
-  Program (NAHBG)","agency":"Department of Housing and Urban Development","total_obs":1257621361.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"}]'
+  Urban Development","total_obs":3188665925.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.411","permalink":"/program/10.411","title":"Rural
+  Housing Site Loans and Self Help Housing Land Development Loans","popular_name":"(Section
+  523 and 524 Site Loans)","agency":"Department of Agriculture","total_obs":113000.0,"program_type":"assistance_listing"},{"cfda":"10.415","permalink":"/program/10.415","title":"Rural
+  Rental Housing Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":18700000.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
+  of Housing and Urban Development","total_obs":72030085.0,"program_type":"assistance_listing"},{"cfda":"15.124","permalink":"/program/15.124","title":"Indian
+  Loans Economic Development","popular_name":"(Loan Guaranty, Insurance, and Interest
+  Subsidy Program)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.024","permalink":"/program/14.024","title":"Community
+  Development Block Grant- PRICE Competition","popular_name":"CDBG-PRICE","agency":"Department
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Site Preparation for Housing
 total_num_agencies: 5
 total_num_applicant_types: 35

@@ -414,7 +414,7 @@ def clean_all_data():
 # extract_assistance_listing()
 
 # extract_dictionary()
-clean_all_data()
+# clean_all_data()
 # extract_organizations()
 # extract_usaspending_award_hashes()
 
