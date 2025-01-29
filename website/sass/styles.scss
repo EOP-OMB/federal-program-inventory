@@ -23,8 +23,8 @@
     vertical-align: middle;
 }
 
-.margin-top-neg-15px {
-  margin-top: 15px; 
+.margin-top-neg-10px {
+  margin-top: 10px; 
 }
 
 .usa-header--basic .usa-nav-container {
@@ -170,6 +170,9 @@ th.gridjs-th {
 }
 
 @media (min-width: 64em) {
+  .usa-logo {
+    margin-top: 1rem;
+  }
   .usa-nav__primary > .usa-nav__primary-item > a {
     padding-top: 1rem;
     padding-right: 1rem;
