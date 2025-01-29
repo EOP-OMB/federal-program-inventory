@@ -10,9 +10,9 @@ import pandas as pd
 from tabula import read_pdf
 
 # file paths
-DISK_DIRECTORY = "./"
-SOURCE_DIRECTORY = "./source/"
-EXTRACTED_DIRECTORY = "./extracted/"
+DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/will-fpi/"
+SOURCE_DIRECTORY = "federal-program-inventory/data_processing/source/"
+EXTRACTED_DIRECTORY = "federal-program-inventory/data_processing/extracted/"
 
 
 def extract_categories_from_pdf(year, debug=False):
