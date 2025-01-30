@@ -480,44 +480,44 @@ fiscal_year: '2024'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/legal-and-advocacy-services
-programs: '[{"cfda":"30.005","permalink":"/program/30.005","title":"Employment Discrimination
-  Private Bar Program","popular_name":"Employment Discrimination \u2013 Private Attorney
-  Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
-  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
-  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"16.029","permalink":"/program/16.029","title":"Office
-  on Violence Against Women Special Projects","popular_name":"OVW Special Projects","agency":"Department
-  of Justice","total_obs":3485000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.052","permalink":"/program/16.052","title":"Restorative
-  Practices to Address Domestic Violence, Dating Violence, Sexual Assault, and Stalking","popular_name":"Restorative
-  Practices Program","agency":"Department of Justice","total_obs":30454680.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
+programs: '[{"cfda":"93.586","permalink":"/program/93.586","title":"State Court Improvement
+  Program","popular_name":"State and Tribal Court Improvement Programs","agency":"Department
+  of Health and Human Services","total_obs":30262245.0,"program_type":"assistance_listing"},{"cfda":"93.138","permalink":"/program/93.138","title":"Protection
+  and Advocacy for Individuals with Mental Illness","popular_name":"(PAIMI)","agency":"Department
+  of Health and Human Services","total_obs":39847619.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
   Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
   on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
-  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":14987201.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
+  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"93.586","permalink":"/program/93.586","title":"State
-  Court Improvement Program","popular_name":"State and Tribal Court Improvement Programs","agency":"Department
-  of Health and Human Services","total_obs":30262245.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
-  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
-  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
-  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"93.138","permalink":"/program/93.138","title":"Protection
-  and Advocacy for Individuals with Mental Illness","popular_name":"(PAIMI)","agency":"Department
-  of Health and Human Services","total_obs":39847619.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
-  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":14987201.0,"program_type":"assistance_listing"},{"cfda":"16.052","permalink":"/program/16.052","title":"Restorative
+  Practices to Address Domestic Violence, Dating Violence, Sexual Assault, and Stalking","popular_name":"Restorative
+  Practices Program","agency":"Department of Justice","total_obs":30454680.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":52500000.0,"program_type":"assistance_listing"},{"cfda":"16.056","permalink":"/program/16.056","title":"National
+  of Veterans Affairs","total_obs":52500000.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":12144413680.0,"program_type":"assistance_listing"},{"cfda":"16.056","permalink":"/program/16.056","title":"National
   Deaf Services Line","popular_name":"Deaf Services Line","agency":"Department of
-  Justice","total_obs":3000000.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
+  Justice","total_obs":3000000.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
+  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
+  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.231","permalink":"/program/14.231","title":"Emergency
   Solutions Grant Program","popular_name":"Emergency Solutions Grants Program","agency":"Department
-  of Housing and Urban Development","total_obs":290000000.0,"program_type":"assistance_listing"}]'
+  of Housing and Urban Development","total_obs":290000000.0,"program_type":"assistance_listing"},{"cfda":"16.029","permalink":"/program/16.029","title":"Office
+  on Violence Against Women Special Projects","popular_name":"OVW Special Projects","agency":"Department
+  of Justice","total_obs":3485000.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
+  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
+  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"30.005","permalink":"/program/30.005","title":"Employment
+  Discrimination Private Bar Program","popular_name":"Employment Discrimination \u2013
+  Private Attorney Referral Program","agency":"Equal Employment Opportunity Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal and Advocacy Services
 total_num_agencies: 8
 total_num_applicant_types: 34
