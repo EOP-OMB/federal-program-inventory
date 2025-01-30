@@ -204,3 +204,14 @@ th.gridjs-th {
 .no-numbers .usa-process-list__item::before {
   content: "";
 }
+
+/* Add this CSS */
+.bars-container {
+  overflow: visible;
+}
+
+@media screen and (max-width: 640px) {
+  .bars-container {
+    overflow: hidden;
+  }
+}
