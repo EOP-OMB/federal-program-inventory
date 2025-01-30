@@ -492,10 +492,10 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/energy
-sub_cats: '[{"title":"Research and Development","permalink":"/category/energy/research-and-development","total_num_programs":45,"total_obs":13452577315.0},{"title":"Specialized
-  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":21078902750.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":37,"total_obs":19262837644.0},{"title":"General
-  Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":2499917076.0},{"title":"Facilities
-  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":52871321436.0},{"title":"Education
+sub_cats: '[{"title":"General Information Services","permalink":"/category/energy/general-information-services","total_num_programs":13,"total_obs":2499917076.0},{"title":"Facilities
+  and Equipment","permalink":"/category/energy/facilities-and-equipment","total_num_programs":30,"total_obs":52871321436.0},{"title":"Conservation","permalink":"/category/energy/conservation","total_num_programs":37,"total_obs":19262837644.0},{"title":"Research
+  and Development","permalink":"/category/energy/research-and-development","total_num_programs":45,"total_obs":13452577315.0},{"title":"Specialized
+  Technical Services","permalink":"/category/energy/specialized-technical-services","total_num_programs":19,"total_obs":21078902750.0},{"title":"Education
   and Training","permalink":"/category/energy/education-and-training","total_num_programs":24,"total_obs":3254541215.0}]'
 title: Energy
 total_num_agencies: 18
