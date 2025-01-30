@@ -118,7 +118,13 @@ footer_include: _footer-category-index.html
           class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
       </p>
 
-      <div id="obligations-pie-chart" class="width-full"></div>
+      <!-- <div id="obligations-pie-chart" class="width-full maxw-full overflow-x-auto"></div> -->
+       <!-- Add a wrapper div with grid classes -->
+      <div class="grid-row">
+        <div class="grid-col-12 display-flex flex-justify-center">
+          <div id="obligations-pie-chart" class="width-full"></div>
+        </div>
+      </div>
 
       <div class="grid-row">
         <div class="grid-col-auto">
