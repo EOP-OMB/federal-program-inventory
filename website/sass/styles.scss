@@ -193,3 +193,13 @@ th.gridjs-th {
 .no-numbers .usa-process-list__item::before {
   content: "";
 }
+
+.bars-container {
+  overflow: visible;
+}
+
+@media screen and (max-width: 640px) {
+  .bars-container {
+    overflow: hidden;
+  }
+}
