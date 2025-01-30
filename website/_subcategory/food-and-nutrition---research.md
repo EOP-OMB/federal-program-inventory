@@ -477,41 +477,41 @@ fiscal_year: '2024'
 parent_permalink: /category/food-and-nutrition
 parent_title: Food and Nutrition
 permalink: /category/food-and-nutrition/research
-programs: '[{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative Extension
-  Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"10.577","permalink":"/program/10.577","title":"SNAP
-  Partnership Grant","popular_name":"SNAP Longitudinal Data Project","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.585","permalink":"/program/10.585","title":"FNS
-  Food Safety Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":1175000.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
-  and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":1902895.0,"program_type":"assistance_listing"},{"cfda":"10.253","permalink":"/program/10.253","title":"Consumer
-  Data and Nutrition Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
-  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
-  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
-  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
-  Agriculture","total_obs":1920000.0,"program_type":"assistance_listing"},{"cfda":"93.103","permalink":"/program/93.103","title":"Food
-  and Drug Administration Research","popular_name":"General Grant Funding","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.540","permalink":"/program/10.540","title":"Participant
+programs: '[{"cfda":"10.253","permalink":"/program/10.253","title":"Consumer Data
+  and Nutrition Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.540","permalink":"/program/10.540","title":"Participant
   Research Innovation Laboratory for Enhancing WIC Services","popular_name":"Hopkins/USDA
-  Participant Research Innovation Laboratory; HPRIL","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
-  Health and Disease Research","popular_name":"AHDR; Animal Health and Disease Research
-  Capacity Program","agency":"Department of Agriculture","total_obs":3665820.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
-  E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
-  Fellowship Program","agency":"Department of Agriculture","total_obs":1187113.0,"program_type":"assistance_listing"},{"cfda":"10.528","permalink":"/program/10.528","title":"USDA
+  Participant Research Innovation Laboratory; HPRIL","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
+  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
+  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":583844.0,"program_type":"assistance_listing"},{"cfda":"10.518","permalink":"/program/10.518","title":"Food
+  Animal Residue Avoidance Databank","popular_name":"FARAD","agency":"Department of
+  Agriculture","total_obs":1920000.0,"program_type":"assistance_listing"},{"cfda":"10.528","permalink":"/program/10.528","title":"USDA
   WIC Telehealth Evaluation Collaborative","popular_name":"THIS-WIC - Telehealth Intervention
-  Strategies for WIC","agency":"Department of Agriculture","total_obs":3254361.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
+  Strategies for WIC","agency":"Department of Agriculture","total_obs":3254361.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
+  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
+  and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":1902895.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
   Technology (ManTech) Program","popular_name":"OSD ManTech","agency":"Department
-  of Defense","total_obs":251840523.0,"program_type":"assistance_listing"},{"cfda":"10.533","permalink":"/program/10.533","title":"SNAP-Ed
-  Toolkit","popular_name":"Supplemental Nutrition Assistance Program Education Toolkit","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"10.255","permalink":"/program/10.255","title":"Research
+  of Defense","total_obs":251840523.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
+  E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
+  Fellowship Program","agency":"Department of Agriculture","total_obs":1187113.0,"program_type":"assistance_listing"},{"cfda":"10.255","permalink":"/program/10.255","title":"Research
   Innovation and Development Grants in Economic (RIDGE)","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
-  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":583844.0,"program_type":"assistance_listing"}]'
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.585","permalink":"/program/10.585","title":"FNS
+  Food Safety Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":1175000.0,"program_type":"assistance_listing"},{"cfda":"10.533","permalink":"/program/10.533","title":"SNAP-Ed
+  Toolkit","popular_name":"Supplemental Nutrition Assistance Program Education Toolkit","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
+  Health and Disease Research","popular_name":"AHDR; Animal Health and Disease Research
+  Capacity Program","agency":"Department of Agriculture","total_obs":3665820.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.103","permalink":"/program/93.103","title":"Food
+  and Drug Administration Research","popular_name":"General Grant Funding","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.577","permalink":"/program/10.577","title":"SNAP
+  Partnership Grant","popular_name":"SNAP Longitudinal Data Project","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Research
 total_num_agencies: 7
 total_num_applicant_types: 35

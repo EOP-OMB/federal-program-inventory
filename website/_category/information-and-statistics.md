@@ -490,9 +490,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/information-and-statistics
-sub_cats: '[{"title":"Census Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":1242820811.0},{"title":"Library
-  of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14037121543.0},{"title":"Libraries,
-  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":15356147159.0}]'
+sub_cats: '[{"title":"Library of Congress","permalink":"/category/information-and-statistics/library-of-congress","total_num_programs":3,"total_obs":0.0},{"title":"General","permalink":"/category/information-and-statistics/general","total_num_programs":44,"total_obs":14037121543.0},{"title":"Libraries,
+  Clearinghouses, Archives","permalink":"/category/information-and-statistics/libraries--clearinghouses--archives","total_num_programs":13,"total_obs":15356147159.0},{"title":"Census
+  Data","permalink":"/category/information-and-statistics/census-data","total_num_programs":4,"total_obs":1242820811.0}]'
 title: Information and Statistics
 total_num_agencies: 19
 total_num_applicant_types: 39
