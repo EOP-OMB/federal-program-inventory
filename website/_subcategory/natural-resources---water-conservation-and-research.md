@@ -11,15 +11,15 @@ agencies: '[{"title":"Department of Defense","total_num_programs":5,"total_obs":
   the Treasury","total_num_programs":1,"total_obs":31969215.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":47},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":45},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":44},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":42},{"title":"State","total_num_programs":42},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":39},{"title":"Other public
+  Recognized lndian Tribal Governments","total_num_programs":39},{"title":"Other public
   institution/organization","total_num_programs":30},{"title":"Other private institutions/organizations","total_num_programs":20},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":18},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":18},{"title":"Federal","total_num_programs":17},{"title":"Interstate","total_num_programs":17},{"title":"Profit
   organization","total_num_programs":17},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":16},{"title":"Individual/Family","total_num_programs":15},{"title":"Anyone/general

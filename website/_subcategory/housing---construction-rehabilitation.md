@@ -7,13 +7,13 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":19},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":13},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":13},{"title":"Profit
   organization","total_num_programs":12},{"title":"Individual/Family","total_num_programs":11},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":9},{"title":"State","total_num_programs":7},{"title":"Government
+  Recognized lndian Tribal Governments","total_num_programs":9},{"title":"State","total_num_programs":7},{"title":"Government
   - General","total_num_programs":6},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":6},{"title":"State
+  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":6},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":6},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":5},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Non-Government

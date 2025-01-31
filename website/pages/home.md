@@ -5,7 +5,7 @@ applicant_types:
 - title: City or Township Government
 - title: County Government
 - title: Federal
-- title: Federally Recognized Indian Tribal Governments
+- title: Federally Recognized lndian Tribal Governments
 - title: For-Profit Organization (Other than Small Business)
 - title: Government - General
 - title: Hispanic-serving Institution
@@ -16,10 +16,10 @@ applicant_types:
 - title: Individual/Family
 - title: Interstate
 - title: Intrastate
-- title: Local (includes State-designated Indian Tribes, excludes institutions of
+- title: Local (includes State-designated lndian Tribes, excludes institutions of
     higher education and hospitals
 - title: Minority group
-- title: Native American Organizations (includes Indian groups, cooperatives, corporations,
+- title: Native American Organizations (includes lndian groups, cooperatives, corporations,
     partnerships, associations)
 - title: Non-Government - General
 - title: Non-domestic (non-US) Entity

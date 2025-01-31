@@ -9,15 +9,15 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":12},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":10},{"title":"Private
+  Recognized lndian Tribal Governments","total_num_programs":10},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":10},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Other
   public institution/organization","total_num_programs":7},{"title":"Native American
-  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":6},{"title":"Government - General","total_num_programs":5},{"title":"Intrastate","total_num_programs":5},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Interstate","total_num_programs":4},{"title":"Non-Government
   - General","total_num_programs":4},{"title":"Other private institutions/organizations","total_num_programs":4},{"title":"Profit

@@ -6,13 +6,13 @@ agencies: '[{"title":"Federal Communications Commission","total_num_programs":1,
   of the Interior","total_num_programs":2,"total_obs":75499151.0},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":5111212.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":10},{"title":"State","total_num_programs":10},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":10},{"title":"State","total_num_programs":10},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":8},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"U.S.
   Territories and possessions","total_num_programs":8},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":5},{"title":"Profit organization","total_num_programs":3},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":3},{"title":"Non-Government
   - General","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"Anyone/general

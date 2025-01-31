@@ -3,10 +3,10 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   of Agriculture","total_num_programs":3,"total_obs":39459103.0},{"title":"Southeast
   Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":7},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":7},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":5},{"title":"Private
+  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":5},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":5},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":5},{"title":"Government

@@ -15,15 +15,15 @@ agencies: '[{"title":"Department of Homeland Security","total_num_programs":32,"
   of Energy","total_num_programs":1,"total_obs":2604724.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":31},{"title":"Local (includes
-  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":30},{"title":"Private
+  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":30},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":26},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":25},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":21},{"title":"Other public
+  Recognized lndian Tribal Governments","total_num_programs":21},{"title":"Other public
   institution/organization","total_num_programs":18},{"title":"U.S. Territories and
   possessions (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"State","total_num_programs":13},{"title":"U.S.
   Territories and possessions","total_num_programs":12},{"title":"Government - General","total_num_programs":9},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":9},{"title":"Profit organization","total_num_programs":9},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":8},{"title":"Individual/Family","total_num_programs":7},{"title":"Non-Government
   - General","total_num_programs":7},{"title":"Interstate","total_num_programs":5},{"title":"Other

@@ -23,13 +23,13 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":68},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":58},{"title":"Other
   public institution/organization","total_num_programs":56},{"title":"Local (includes
-  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":52},{"title":"State","total_num_programs":41},{"title":"Profit
+  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":52},{"title":"State","total_num_programs":41},{"title":"Profit
   organization","total_num_programs":39},{"title":"Other private institutions/organizations","total_num_programs":36},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":34},{"title":"Quasi-public
+  Recognized lndian Tribal Governments","total_num_programs":34},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":34},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":33},{"title":"Small
   business (less than 500 employees)","total_num_programs":28},{"title":"Native American
-  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":27},{"title":"Federal","total_num_programs":26},{"title":"U.S.
   Territories and possessions","total_num_programs":24},{"title":"Non-Government -
   General","total_num_programs":23},{"title":"Minority group","total_num_programs":19},{"title":"Anyone/general

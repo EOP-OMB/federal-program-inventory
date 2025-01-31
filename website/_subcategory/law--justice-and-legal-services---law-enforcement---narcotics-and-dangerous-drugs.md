@@ -5,15 +5,15 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   of Justice","total_num_programs":13,"total_obs":246022077.0},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":229035132.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":14},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":14},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":13},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":10},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":9},{"title":"Profit
   organization","total_num_programs":9},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Other
+  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Other
   public institution/organization","total_num_programs":7},{"title":"State","total_num_programs":7},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Other
   private institutions/organizations","total_num_programs":6},{"title":"Quasi-public

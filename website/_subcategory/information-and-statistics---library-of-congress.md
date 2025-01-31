@@ -2,8 +2,8 @@
 agencies: '[{"title":"Library of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Anyone/general public","total_num_programs":1},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+  Recognized lndian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":1},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and

@@ -14,10 +14,10 @@ applicant_types: '[{"title":"State (includes District of Columbia, public instit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":64},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":60},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":53},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":44},{"title":"Federal","total_num_programs":32},{"title":"Other
+  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":53},{"title":"Federally
+  Recognized lndian Tribal Governments","total_num_programs":44},{"title":"Federal","total_num_programs":32},{"title":"Other
   public institution/organization","total_num_programs":31},{"title":"State","total_num_programs":28},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":27},{"title":"Other private institutions/organizations","total_num_programs":24},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":23},{"title":"Profit organization","total_num_programs":22},{"title":"Individual/Family","total_num_programs":18},{"title":"Interstate","total_num_programs":13},{"title":"Non-Government
   - General","total_num_programs":13},{"title":"U.S. Territories and possessions (includes

@@ -12,9 +12,9 @@ agencies: '[{"title":"Department of Agriculture","total_num_programs":8,"total_o
   of the Treasury","total_num_programs":4,"total_obs":5111212.0},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":20},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":17},{"title":"State (includes
+  Recognized lndian Tribal Governments","total_num_programs":17},{"title":"State (includes
   District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Profit
   organization","total_num_programs":15},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Private
@@ -25,7 +25,7 @@ applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, exc
   nonprofit institution/organization","total_num_programs":9},{"title":"Interstate","total_num_programs":8},{"title":"Intrastate","total_num_programs":8},{"title":"U.S.
   Territories and possessions","total_num_programs":8},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Individual/Family","total_num_programs":7},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":7},{"title":"Small business (less than 500 employees)","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"Government
   - General","total_num_programs":6},{"title":"Specialized group (e.g. health professionals,
   students, veterans)","total_num_programs":6},{"title":"Anyone/general public","total_num_programs":5},{"title":"Sponsored

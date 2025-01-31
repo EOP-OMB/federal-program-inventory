@@ -20,14 +20,14 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":56},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":47},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":44},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":40},{"title":"Other public institution/organization","total_num_programs":39},{"title":"State","total_num_programs":35},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":33},{"title":"Other private
+  Recognized lndian Tribal Governments","total_num_programs":33},{"title":"Other private
   institutions/organizations","total_num_programs":31},{"title":"Profit organization","total_num_programs":30},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":28},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":26},{"title":"U.S. Territories
   and possessions","total_num_programs":25},{"title":"Native American Organizations
-  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":24},{"title":"Federal","total_num_programs":22},{"title":"Small
+  (includes lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":24},{"title":"Federal","total_num_programs":22},{"title":"Small
   business (less than 500 employees)","total_num_programs":22},{"title":"Anyone/general
   public","total_num_programs":17},{"title":"Non-Government - General","total_num_programs":17},{"title":"Government
   - General","total_num_programs":16},{"title":"Interstate","total_num_programs":15},{"title":"Intrastate","total_num_programs":14},{"title":"Minority

@@ -12,11 +12,11 @@ agencies: '[{"title":"Small Business Administration","total_num_programs":5,"tot
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":21},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":19},{"title":"Federally Recognized Indian Tribal
+  hospitals)","total_num_programs":19},{"title":"Federally Recognized lndian Tribal
   Governments","total_num_programs":16},{"title":"Other public institution/organization","total_num_programs":14},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":13},{"title":"Native American Organizations
-  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":12},{"title":"Other
+  (includes lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":12},{"title":"Other
   private institutions/organizations","total_num_programs":12},{"title":"Profit organization","total_num_programs":12},{"title":"Small
   business (less than 500 employees)","total_num_programs":12},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":10},{"title":"State (includes

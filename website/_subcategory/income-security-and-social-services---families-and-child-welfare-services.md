@@ -7,15 +7,15 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   of Defense","total_num_programs":1,"total_obs":4000000.0},{"title":"Department of
   the Treasury","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":24},{"title":"State","total_num_programs":24},{"title":"Public
+applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":24},{"title":"State","total_num_programs":24},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":17},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":15},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
+  (includes State-designated lndian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":14},{"title":"U.S. Territories and possessions","total_num_programs":12},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":7},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Other
   private institutions/organizations","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Non-Government
   - General","total_num_programs":3},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
