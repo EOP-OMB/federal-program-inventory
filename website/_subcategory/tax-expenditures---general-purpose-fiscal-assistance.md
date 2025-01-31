@@ -459,10 +459,10 @@ parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
 programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of interest
   on public purpose State and local bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":39920000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.172","permalink":"/program/TC.172","title":"Build
-  America Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":2260000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.173","permalink":"/program/TC.173","title":"Deductibility
+  of the Treasury","total_obs":39920000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.173","permalink":"/program/TC.173","title":"Deductibility
   of nonbusiness State and local taxes other than on owner-occupied homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":6540000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":6540000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.172","permalink":"/program/TC.172","title":"Build
+  America Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":2260000000.0,"program_type":"tax_expenditure"}]'
 title: General Purpose Fiscal Assistance
 total_num_agencies: 1
 total_num_applicant_types: 0
