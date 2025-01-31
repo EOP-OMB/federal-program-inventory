@@ -5,8 +5,8 @@ agencies: '[{"title":"Department of the Interior","total_num_programs":1,"total_
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":2},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  public","total_num_programs":1},{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":1},{"title":"Other public institution/organization","total_num_programs":1},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":1},{"title":"Public nonprofit institution/organization

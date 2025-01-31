@@ -10,11 +10,11 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":10},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":8},{"title":"State","total_num_programs":8},{"title":"U.S.
+  Recognized Indian Tribal Governments","total_num_programs":8},{"title":"State","total_num_programs":8},{"title":"U.S.
   Territories and possessions","total_num_programs":6},{"title":"Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":4},{"title":"Other
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":4},{"title":"Other
   public institution/organization","total_num_programs":4},{"title":"Individual/Family","total_num_programs":3},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":3},{"title":"Minority group","total_num_programs":2},{"title":"Profit
   organization","total_num_programs":2},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":2},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"Anyone/general

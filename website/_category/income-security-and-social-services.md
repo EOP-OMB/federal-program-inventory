@@ -20,14 +20,14 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   Employment Opportunity Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":88},{"title":"Public
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":88},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":86},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":82},{"title":"State","total_num_programs":75},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":75},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":67},{"title":"U.S. Territories and possessions","total_num_programs":43},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":42},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":42},{"title":"Individual/Family","total_num_programs":35},{"title":"Other
   public institution/organization","total_num_programs":27},{"title":"Profit organization","total_num_programs":22},{"title":"Specialized

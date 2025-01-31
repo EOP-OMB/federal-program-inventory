@@ -11,15 +11,15 @@ agencies: '[{"title":"Department of Transportation","total_num_programs":14,"tot
   Improvement Steering Council","total_num_programs":1,"total_obs":5000000.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":1047244.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Appalachian
   Regional Commission","total_num_programs":2,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":20},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":17},{"title":"Other
   public institution/organization","total_num_programs":16},{"title":"Federally Recognized
-  lndian Tribal Governments","total_num_programs":15},{"title":"Public nonprofit institution/organization
+  Indian Tribal Governments","total_num_programs":15},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":15},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":14},{"title":"State","total_num_programs":13},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":10},{"title":"Government - General","total_num_programs":9},{"title":"Other
   private institutions/organizations","total_num_programs":9},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":9},{"title":"Interstate","total_num_programs":7},{"title":"Profit

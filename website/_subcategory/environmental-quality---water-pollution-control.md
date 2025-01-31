@@ -13,16 +13,16 @@ agencies: '[{"title":"Environmental Protection Agency","total_num_programs":72,"
   of Transportation","total_num_programs":2,"total_obs":9500000.0},{"title":"Department
   of Housing and Urban Development","total_num_programs":1,"total_obs":0.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":71},{"title":"Public
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":71},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":62},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":56},{"title":"State","total_num_programs":55},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":47},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":44},{"title":"U.S.
   Territories and possessions","total_num_programs":40},{"title":"Other public institution/organization","total_num_programs":28},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":27},{"title":"Interstate","total_num_programs":25},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":24},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":18},{"title":"Non-Government
   - General","total_num_programs":14},{"title":"Profit organization","total_num_programs":10},{"title":"Federal","total_num_programs":9},{"title":"Intrastate","total_num_programs":9},{"title":"Government
   - General","total_num_programs":8},{"title":"Other private institutions/organizations","total_num_programs":8},{"title":"Small

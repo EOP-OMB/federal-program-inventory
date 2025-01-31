@@ -17,15 +17,15 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":95},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":86},{"title":"Private
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":86},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":84},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":84},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":77},{"title":"State","total_num_programs":44},{"title":"Other
+  Recognized Indian Tribal Governments","total_num_programs":77},{"title":"State","total_num_programs":44},{"title":"Other
   public institution/organization","total_num_programs":40},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":36},{"title":"Profit
   organization","total_num_programs":30},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":28},{"title":"Other
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":28},{"title":"Other
   private institutions/organizations","total_num_programs":26},{"title":"U.S. Territories
   and possessions","total_num_programs":26},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":24},{"title":"Government
   - General","total_num_programs":21},{"title":"Specialized group (e.g. health professionals,

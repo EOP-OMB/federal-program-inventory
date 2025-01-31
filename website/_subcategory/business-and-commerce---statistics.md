@@ -10,15 +10,15 @@ applicant_types: '[{"title":"Anyone/general public","total_num_programs":9},{"ti
   hospitals)","total_num_programs":9},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":8},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":7},{"title":"Local (includes State-designated lndian
+  hospitals)","total_num_programs":7},{"title":"Local (includes State-designated Indian
   Tribes, excludes institutions of higher education and hospitals","total_num_programs":6},{"title":"Other
   public institution/organization","total_num_programs":6},{"title":"Non-Government
   - General","total_num_programs":4},{"title":"Other private institutions/organizations","total_num_programs":4},{"title":"Profit
-  organization","total_num_programs":4},{"title":"Federally Recognized lndian Tribal
+  organization","total_num_programs":4},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Intrastate","total_num_programs":3},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Government
   - General","total_num_programs":2},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Small
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Small
   business (less than 500 employees)","total_num_programs":2},{"title":"Sponsored
   organization","total_num_programs":2},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Federal","total_num_programs":1},{"title":"Specialized

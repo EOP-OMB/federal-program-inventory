@@ -12,13 +12,13 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":56},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":54},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":51},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":47},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":47},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":39},{"title":"Other public institution/organization","total_num_programs":31},{"title":"State","total_num_programs":23},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Profit
   organization","total_num_programs":21},{"title":"Other private institutions/organizations","total_num_programs":19},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":17},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":15},{"title":"U.S. Territories and possessions","total_num_programs":14},{"title":"Non-Government
   - General","total_num_programs":13},{"title":"Specialized group (e.g. health professionals,
   students, veterans)","total_num_programs":13},{"title":"Government - General","total_num_programs":11},{"title":"Sponsored

@@ -16,13 +16,13 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":140},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":130},{"title":"Public
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":130},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":129},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":126},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":118},{"title":"State","total_num_programs":104},{"title":"Other
+  Recognized Indian Tribal Governments","total_num_programs":118},{"title":"State","total_num_programs":104},{"title":"Other
   public institution/organization","total_num_programs":67},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":59},{"title":"Federal","total_num_programs":52},{"title":"Other
   private institutions/organizations","total_num_programs":44},{"title":"Profit organization","total_num_programs":41},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":40},{"title":"Quasi-public

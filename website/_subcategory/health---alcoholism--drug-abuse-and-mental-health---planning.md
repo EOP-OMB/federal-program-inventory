@@ -8,10 +8,10 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":20},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":9},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":9},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":8},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Other
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Other
   public institution/organization","total_num_programs":7},{"title":"State","total_num_programs":7},{"title":"U.S.
   Territories and possessions","total_num_programs":6},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Profit

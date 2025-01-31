@@ -9,16 +9,16 @@ agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"to
   of the Treasury","total_num_programs":5,"total_obs":5604742.0},{"title":"Department
   of State","total_num_programs":2,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":15},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":13},{"title":"State","total_num_programs":11},{"title":"State
+  Recognized Indian Tribal Governments","total_num_programs":13},{"title":"State","total_num_programs":11},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":10},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":8},{"title":"U.S. Territories and possessions","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":7},{"title":"Individual/Family","total_num_programs":6},{"title":"Non-Government
   - General","total_num_programs":5},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Other
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Other
   public institution/organization","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Federal","total_num_programs":2},{"title":"Minority

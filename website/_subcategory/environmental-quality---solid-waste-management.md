@@ -9,16 +9,16 @@ agencies: '[{"title":"Environmental Protection Agency","total_num_programs":45,"
   Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
   of Energy","total_num_programs":2,"total_obs":17226756.0},{"title":"Denali Commission","total_num_programs":2,"total_obs":20.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":45},{"title":"Public
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":45},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":36},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":35},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":30},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":28},{"title":"State","total_num_programs":25},{"title":"U.S.
   Territories and possessions","total_num_programs":24},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":14},{"title":"Interstate","total_num_programs":13},{"title":"Other
   public institution/organization","total_num_programs":11},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":11},{"title":"Intrastate","total_num_programs":8},{"title":"Non-Government

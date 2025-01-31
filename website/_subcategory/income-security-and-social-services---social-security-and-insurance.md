@@ -12,7 +12,7 @@ applicant_types: '[{"title":"Individual/Family","total_num_programs":11},{"title
   hospitals)","total_num_programs":2},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
   public","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
   Territories and possessions","total_num_programs":1},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":1}]'
