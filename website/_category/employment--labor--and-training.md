@@ -495,20 +495,20 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/employment--labor--and-training
-sub_cats: '[{"title":"Federal Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":93003079.0},{"title":"Labor
-  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":360994474.0},{"title":"Bonding
-  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":358037100.0},{"title":"Job
-  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":172687292660.79},{"title":"Facilities,
-  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":4740265657.0},{"title":"Assistance
-  and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":72189971289.0},{"title":"Equal
-  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":1275504316.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":907936890.0},{"title":"Assistance
-  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6650545402.0},{"title":"Program
-  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":5217082075.0},{"title":"Planning,
-  Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":26,"total_obs":2088427159.0}]'
+sub_cats: '[{"title":"Assistance and Services for the Unemployed","permalink":"/category/employment--labor--and-training/assistance-and-services-for-the-unemployed","total_num_programs":33,"total_obs":72189971289.0},{"title":"Assistance
+  to State and Local Governments","permalink":"/category/employment--labor--and-training/assistance-to-state-and-local-governments","total_num_programs":28,"total_obs":6650545402.0},{"title":"Bonding
+  and Certification","permalink":"/category/employment--labor--and-training/bonding-and-certification","total_num_programs":8,"total_obs":358037100.0},{"title":"Equal
+  Employment Opportunity","permalink":"/category/employment--labor--and-training/equal-employment-opportunity","total_num_programs":12,"total_obs":1275504316.0},{"title":"Facilities,
+  Planning, Construction, and Equipment","permalink":"/category/employment--labor--and-training/facilities--planning--construction--and-equipment","total_num_programs":16,"total_obs":4740265657.0},{"title":"Federal
+  Employment","permalink":"/category/employment--labor--and-training/federal-employment","total_num_programs":7,"total_obs":93003079.0},{"title":"Job
+  Training, Employment","permalink":"/category/employment--labor--and-training/job-training--employment","total_num_programs":93,"total_obs":172687292660.79},{"title":"Labor
+  Management Services","permalink":"/category/employment--labor--and-training/labor-management-services","total_num_programs":12,"total_obs":360994474.0},{"title":"Planning,
+  Research, and Demonstration","permalink":"/category/employment--labor--and-training/planning--research--and-demonstration","total_num_programs":26,"total_obs":2088427159.0},{"title":"Program
+  Development","permalink":"/category/employment--labor--and-training/program-development","total_num_programs":39,"total_obs":5217082075.0},{"title":"Statistical","permalink":"/category/employment--labor--and-training/statistical","total_num_programs":11,"total_obs":907936890.0}]'
 title: Employment, Labor, and Training
 total_num_agencies: 25
 total_num_applicant_types: 39
 total_num_programs: 143
 total_num_sub_cats: 11
-total_obs: 242288098862.79
+total_obs: 242288098862.78998
 ---

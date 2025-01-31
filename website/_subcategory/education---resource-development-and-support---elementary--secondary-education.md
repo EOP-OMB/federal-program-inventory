@@ -493,83 +493,83 @@ fiscal_year: '2024'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---elementary--secondary-education
-programs: '[{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining Early
-  Awareness and Readiness for Undergraduate Programs","popular_name":"(GEAR-UP)","agency":"Department
-  of Education","total_obs":395396439.0,"program_type":"assistance_listing"},{"cfda":"84.144","permalink":"/program/84.144","title":"Migrant
-  Education Coordination Program","popular_name":null,"agency":"Department of Education","total_obs":2999997.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
-  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"84.295","permalink":"/program/84.295","title":"Ready-To-Learn
-  Television","popular_name":null,"agency":"Department of Education","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
-  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"84.283","permalink":"/program/84.283","title":"Comprehensive
-  Centers","popular_name":null,"agency":"Department of Education","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
-  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4799999.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
-  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
-  Endowment for the Humanities","total_obs":15450000.0,"program_type":"assistance_listing"},{"cfda":"12.560","permalink":"/program/12.560","title":"DOD,
-  NDEP, DOTC-STEM Education Outreach Implementation","popular_name":null,"agency":"Department
-  of Defense","total_obs":18000000.0,"program_type":"assistance_listing"},{"cfda":"47.076","permalink":"/program/47.076","title":"STEM
+programs: '[{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL SERVICE
+  FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"47.076","permalink":"/program/47.076","title":"STEM
   Education (formerly Education and Human Resources)","popular_name":"(EDU)","agency":"National
-  Science Foundation","total_obs":1496180000.0,"program_type":"assistance_listing"},{"cfda":"84.372","permalink":"/program/84.372","title":"Statewide
-  Longitudinal Data Systems","popular_name":null,"agency":"Department of Education","total_obs":48574941.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
-  Education - Personnel Development to Improve Services and Results for Children with
-  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":115000000.0,"program_type":"assistance_listing"},{"cfda":"93.981","permalink":"/program/93.981","title":"Improving
-  Student Health and Academic Achievement through Nutrition, Physical Activity and
-  the Management of Chronic Conditions in Schools","popular_name":"Improving Student
-  Health and Academic Achievement through Nutrition, Physical Activity and the Management
-  of Chronic Conditions in Schools","agency":"Department of Health and Human Services","total_obs":7800000.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.287","permalink":"/program/84.287","title":"Twenty-First
+  Science Foundation","total_obs":1496180000.0,"program_type":"assistance_listing"},{"cfda":"84.287","permalink":"/program/84.287","title":"Twenty-First
   Century Community Learning Centers","popular_name":null,"agency":"Department of
-  Education","total_obs":1330094030.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
-  Operations","popular_name":"Space Operations","agency":"National Aeronautics and
-  Space Administration","total_obs":52750522.0,"program_type":"assistance_listing"},{"cfda":"84.310","permalink":"/program/84.310","title":"Statewide
-  Family Engagement Centers","popular_name":"Statewide Family Engagement Centers","agency":"Department
-  of Education","total_obs":19615928.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
-  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"84.149","permalink":"/program/84.149","title":"Migrant
-  Education College Assistance Migrant Program","popular_name":"(CAMP)","agency":"Department
-  of Education","total_obs":28091076.0,"program_type":"assistance_listing"},{"cfda":"16.726","permalink":"/program/16.726","title":"Juvenile
-  Mentoring Program","popular_name":"Mentoring ","agency":"Department of Justice","total_obs":101523922.0,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
-  Schools","popular_name":null,"agency":"Department of Education","total_obs":452327309.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
-  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
-  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
-  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":137567785.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
-  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.047","permalink":"/program/84.047","title":"TRIO
-  Upward Bound","popular_name":null,"agency":"Department of Education","total_obs":481510664.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
-  SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
-  Support","popular_name":"Safety, Security and Mission Services (Mission Support
-  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":13777683.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
-  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
-  Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
-  with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
-  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
-  Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
-  Programs for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
-  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":98831165.0,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
-  Defense Education Program","popular_name":"STEM Education, Outreach, and Workforce
-  Development Initiatives","agency":"Department of Defense","total_obs":22845083.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
-  in People in The Middle East and North Africa","popular_name":"Investing in people/
-  cultural/educational/alumni/information and media efforts in the Middle East and
-  North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.215","permalink":"/program/84.215","title":"Innovative
+  Education","total_obs":1330094030.0,"program_type":"assistance_listing"},{"cfda":"84.047","permalink":"/program/84.047","title":"TRIO
+  Upward Bound","popular_name":null,"agency":"Department of Education","total_obs":481510664.0,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
+  Schools","popular_name":null,"agency":"Department of Education","total_obs":452327309.0,"program_type":"assistance_listing"},{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining
+  Early Awareness and Readiness for Undergraduate Programs","popular_name":"(GEAR-UP)","agency":"Department
+  of Education","total_obs":395396439.0,"program_type":"assistance_listing"},{"cfda":"84.215","permalink":"/program/84.215","title":"Innovative
   Approaches to Literacy; Promise Neighborhoods; Full-Service Community Schools; and
   Congressionally Directed Spending for Elementary and Secondary Education Community
   Projects","popular_name":"Innovative Approaches to Literacy; Promise Neighborhoods
-  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":355102983.0,"program_type":"assistance_listing"},{"cfda":"84.018","permalink":"/program/84.018","title":"Overseas
-  Programs Special Bilateral Projects","popular_name":null,"agency":"Department of
-  Education","total_obs":750000.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
+  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":355102983.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
+  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":137567785.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
+  Education - Personnel Development to Improve Services and Results for Children with
+  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":115000000.0,"program_type":"assistance_listing"},{"cfda":"16.726","permalink":"/program/16.726","title":"Juvenile
+  Mentoring Program","popular_name":"Mentoring ","agency":"Department of Justice","total_obs":101523922.0,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
+  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
+  and Space Administration","total_obs":98831165.0,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
+  Aeronautics and Space Administration","total_obs":56711829.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
+  Operations","popular_name":"Space Operations","agency":"National Aeronautics and
+  Space Administration","total_obs":52750522.0,"program_type":"assistance_listing"},{"cfda":"84.283","permalink":"/program/84.283","title":"Comprehensive
+  Centers","popular_name":null,"agency":"Department of Education","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"84.372","permalink":"/program/84.372","title":"Statewide
+  Longitudinal Data Systems","popular_name":null,"agency":"Department of Education","total_obs":48574941.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
+  Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"84.295","permalink":"/program/84.295","title":"Ready-To-Learn
+  Television","popular_name":null,"agency":"Department of Education","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"84.149","permalink":"/program/84.149","title":"Migrant
+  Education College Assistance Migrant Program","popular_name":"(CAMP)","agency":"Department
+  of Education","total_obs":28091076.0,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
+  Defense Education Program","popular_name":"STEM Education, Outreach, and Workforce
+  Development Initiatives","agency":"Department of Defense","total_obs":22845083.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.310","permalink":"/program/84.310","title":"Statewide
+  Family Engagement Centers","popular_name":"Statewide Family Engagement Centers","agency":"Department
+  of Education","total_obs":19615928.0,"program_type":"assistance_listing"},{"cfda":"12.560","permalink":"/program/12.560","title":"DOD,
+  NDEP, DOTC-STEM Education Outreach Implementation","popular_name":null,"agency":"Department
+  of Defense","total_obs":18000000.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
+  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":15450000.0,"program_type":"assistance_listing"},{"cfda":"43.003","permalink":"/program/43.003","title":"Exploration","popular_name":"Exploration
   Systems Development Mission Directorate (ESDMD)","agency":"National Aeronautics
-  and Space Administration","total_obs":15012173.0,"program_type":"assistance_listing"}]'
+  and Space Administration","total_obs":15012173.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
+  Support","popular_name":"Safety, Security and Mission Services (Mission Support
+  Directorate)","agency":"National Aeronautics and Space Administration","total_obs":13777683.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
+  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"93.981","permalink":"/program/93.981","title":"Improving
+  Student Health and Academic Achievement through Nutrition, Physical Activity and
+  the Management of Chronic Conditions in Schools","popular_name":"Improving Student
+  Health and Academic Achievement through Nutrition, Physical Activity and the Management
+  of Chronic Conditions in Schools","agency":"Department of Health and Human Services","total_obs":7800000.0,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
+  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4799999.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"84.144","permalink":"/program/84.144","title":"Migrant
+  Education Coordination Program","popular_name":null,"agency":"Department of Education","total_obs":2999997.0,"program_type":"assistance_listing"},{"cfda":"84.018","permalink":"/program/84.018","title":"Overseas
+  Programs Special Bilateral Projects","popular_name":null,"agency":"Department of
+  Education","total_obs":750000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.145","permalink":"/program/84.145","title":"Federal
+  Real Property Assistance Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
+  in People in The Middle East and North Africa","popular_name":"Investing in people/
+  cultural/educational/alumni/information and media efforts in the Middle East and
+  North Africa.","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.501","permalink":"/program/19.501","title":"Public
+  Diplomacy Programs for Afghanistan and Pakistan","popular_name":"Public Diplomacy
+  Programs for Afghanistan and Pakistan","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
+  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
+  with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Resource Development and Support - Elementary, Secondary Education
 total_num_agencies: 17
 total_num_applicant_types: 45

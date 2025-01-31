@@ -2,6 +2,18 @@
 @forward "uswds";
 @forward "uswds-theme-custom-styles";
 
+// US government banner
+.usa-banner__button {
+  &:hover {
+    color: #B8BAE8;
+  }
+
+  &::after {
+    background: white !important;
+  }
+}
+
+
 .usa-logo img {
     height: 50px;
     margin-right: 10px;
@@ -9,6 +21,14 @@
 }
 .usa-logo .usa-logo__text a span {
     vertical-align: middle;
+}
+
+.margin-top-neg-10px {
+  margin-top: 10px; 
+}
+
+.usa-header--basic .usa-nav-container {
+  align-items: center;
 }
 
 .gridjs-wrapper, .gridjs-footer {
@@ -150,6 +170,9 @@ th.gridjs-th {
 }
 
 @media (min-width: 64em) {
+  .usa-logo {
+    margin-top: 1rem;
+  }
   .usa-nav__primary > .usa-nav__primary-item > a {
     padding-top: 1rem;
     padding-right: 1rem;
@@ -180,4 +203,14 @@ th.gridjs-th {
 
 .no-numbers .usa-process-list__item::before {
   content: "";
+}
+
+.bars-container {
+  overflow: visible;
+}
+
+@media screen and (max-width: 640px) {
+  .bars-container {
+    overflow: hidden;
+  }
 }
