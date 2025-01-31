@@ -10,10 +10,10 @@ agencies: '[{"title":"Federal Communications Commission","total_num_programs":3,
   Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
   of State","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized lndian Tribal Governments","total_num_programs":32},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":32},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":24},{"title":"Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":20},{"title":"Private
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":20},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":14},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":12},{"title":"State

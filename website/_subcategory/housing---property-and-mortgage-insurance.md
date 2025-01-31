@@ -3,10 +3,10 @@ agencies: '[{"title":"Department of Homeland Security","total_num_programs":1,"t
   of Housing and Urban Development","total_num_programs":12,"total_obs":1735109242.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":5},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":5},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":5},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":3},{"title":"Government - General","total_num_programs":3},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":3},{"title":"Other public institution/organization","total_num_programs":3},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Minority

@@ -32,15 +32,15 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":106},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":67},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":41},{"title":"Other public institution/organization","total_num_programs":39},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":30},{"title":"Individual/Family","total_num_programs":28},{"title":"Other
   private institutions/organizations","total_num_programs":28},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":26},{"title":"Quasi-public
+  Recognized Indian Tribal Governments","total_num_programs":26},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":26},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":24},{"title":"State","total_num_programs":22},{"title":"Minority
   group","total_num_programs":20},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":20},{"title":"Profit
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":20},{"title":"Profit
   organization","total_num_programs":18},{"title":"Small business (less than 500 employees)","total_num_programs":17},{"title":"U.S.
   Territories and possessions","total_num_programs":17},{"title":"Anyone/general public","total_num_programs":16},{"title":"Non-Government
   - General","total_num_programs":16},{"title":"Federal","total_num_programs":15},{"title":"Sponsored

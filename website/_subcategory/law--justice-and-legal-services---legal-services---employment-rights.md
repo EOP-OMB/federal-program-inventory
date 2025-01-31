@@ -6,8 +6,8 @@ agencies: '[{"title":"Department of Justice","total_num_programs":6,"total_obs":
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":8},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":7},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":7},{"title":"Private
+  Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Local (includes
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":7},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":7},{"title":"State","total_num_programs":5},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":5},{"title":"Other
@@ -17,7 +17,7 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   private institutions/organizations","total_num_programs":2},{"title":"U.S. Territories
   and possessions","total_num_programs":2},{"title":"Anyone/general public","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Non-Government
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Non-Government
   - General","total_num_programs":1},{"title":"Small business (less than 500 employees)","total_num_programs":1},{"title":"Sponsored
   organization","total_num_programs":1}]'
 categories_subcategories:

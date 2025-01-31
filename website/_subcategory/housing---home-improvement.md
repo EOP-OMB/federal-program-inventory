@@ -8,12 +8,12 @@ agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":3,"to
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":14},{"title":"Individual/Family","total_num_programs":12},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":11},{"title":"Federally Recognized lndian Tribal
+  hospitals)","total_num_programs":11},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":9},{"title":"Specialized group (e.g. health professionals,
   students, veterans)","total_num_programs":9},{"title":"Profit organization","total_num_programs":8},{"title":"State","total_num_programs":8},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":7},{"title":"Government - General","total_num_programs":6},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":5},{"title":"Other public institution/organization","total_num_programs":5},{"title":"U.S.
   Territories and possessions","total_num_programs":5},{"title":"Other private institutions/organizations","total_num_programs":4},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":4},{"title":"State (includes

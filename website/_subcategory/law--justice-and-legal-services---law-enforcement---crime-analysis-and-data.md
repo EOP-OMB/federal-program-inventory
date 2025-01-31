@@ -7,15 +7,15 @@ agencies: '[{"title":"Department of Justice","total_num_programs":45,"total_obs"
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":38},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":33},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":31},{"title":"Private
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":33},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":31},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":25},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":23},{"title":"State","total_num_programs":19},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"Other
   public institution/organization","total_num_programs":15},{"title":"Profit organization","total_num_programs":14},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":14},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":12},{"title":"Other private institutions/organizations","total_num_programs":11},{"title":"Federal","total_num_programs":10},{"title":"U.S.
   Territories and possessions","total_num_programs":10},{"title":"Government - General","total_num_programs":8},{"title":"Individual/Family","total_num_programs":7},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":7},{"title":"Small

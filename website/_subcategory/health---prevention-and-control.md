@@ -13,12 +13,12 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   of higher education and hospitals)","total_num_programs":92},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":78},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":72},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":62},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":61},{"title":"U.S.
+  Recognized Indian Tribal Governments","total_num_programs":62},{"title":"Local (includes
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":61},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":43},{"title":"Other
   public institution/organization","total_num_programs":42},{"title":"U.S. Territories
   and possessions","total_num_programs":41},{"title":"Native American Organizations
-  (includes lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":40},{"title":"State","total_num_programs":39},{"title":"Small
+  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":40},{"title":"State","total_num_programs":39},{"title":"Small
   business (less than 500 employees)","total_num_programs":27},{"title":"Profit organization","total_num_programs":26},{"title":"Other
   private institutions/organizations","total_num_programs":23},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":20},{"title":"Individual/Family","total_num_programs":18},{"title":"Government
