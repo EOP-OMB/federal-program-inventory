@@ -483,40 +483,41 @@ fiscal_year: '2024'
 parent_permalink: /category/employment--labor--and-training
 parent_title: Employment, Labor, and Training
 permalink: /category/employment--labor--and-training/facilities--planning--construction--and-equipment
-programs: '[{"cfda":"11.039","permalink":"/program/11.039","title":"Regional Technology
-  and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department of Commerce","total_obs":345589964.0,"program_type":"assistance_listing"},{"cfda":"10.712","permalink":"/program/10.712","title":"Great
-  American Outdoors Act Deferred Maintenance Program","popular_name":"GAOA","agency":"Department
-  of Agriculture","total_obs":20494961.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
-  Development Block Grants/Entitlement Grants","popular_name":"Community Development
-  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
-  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
-  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
-  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
-  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
-  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
-  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
-  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"81.255","permalink":"/program/81.255","title":"Clean
-  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":464268369.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community Development
+  Block Grants/Entitlement Grants","popular_name":"Community Development Block Grant
+  Program for Entitlement Communities.","agency":"Department of Housing and Urban
+  Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"81.255","permalink":"/program/81.255","title":"Clean
+  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":464268369.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
+  Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
+  of Commerce","total_obs":345589964.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":97824471.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
-  Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
-  of the Interior","total_obs":148622.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
-  Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
-  on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Commerce","total_obs":97824471.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
+  pilot program or FLSPP","agency":"Department of Agriculture","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
+  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
+  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"10.712","permalink":"/program/10.712","title":"Great
+  American Outdoors Act Deferred Maintenance Program","popular_name":"GAOA","agency":"Department
+  of Agriculture","total_obs":20494961.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
   SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
+  (ODEP)","agency":"Department of Labor","total_obs":16937100.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
   Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
-  of the Treasury","total_obs":8582460.0,"program_type":"assistance_listing"}]'
+  of the Treasury","total_obs":8582460.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
+  Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
+  of the Interior","total_obs":148622.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.630","permalink":"/program/93.630","title":"Developmental
+  Disabilities Basic Support and Advocacy Grants","popular_name":"(State Councils
+  on Developmental Disabilities and Protection and Advocacy Systems)","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.721","permalink":"/program/66.721","title":"Reducing
+  Embodied Greenhouse Gas Emissions for Construction Materials and Products","popular_name":"Environmental
+  Product Declaration (EPD) Assistance for Embodied Carbon in Construction Materials","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Facilities, Planning, Construction, and Equipment
 total_num_agencies: 12
 total_num_applicant_types: 37

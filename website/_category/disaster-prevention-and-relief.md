@@ -495,8 +495,8 @@ categories_subcategories:
 fiscal_year: '2024'
 permalink: /category/disaster-prevention-and-relief
 sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":48008656100.53},{"title":"Emergency
-  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":11613318313.99},{"title":"Emergency
-  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":7967225205.0},{"title":"Flood
+  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":7967225205.0},{"title":"Emergency
+  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":11613318313.99},{"title":"Flood
   Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12096770812.0}]'
 title: Disaster Prevention and Relief
 total_num_agencies: 21

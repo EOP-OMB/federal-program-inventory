@@ -459,9 +459,9 @@ parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/veterans-benefits-and-services
 programs: '[{"cfda":"TC.167","permalink":"/program/TC.167","title":"Exclusion of veterans
   death benefits and disability compensation","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":13400000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
-  of veterans pensions","popular_name":null,"agency":"Department of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
-  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1560000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.170","permalink":"/program/TC.170","title":"Exclusion
+  of the Treasury","total_obs":13400000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
+  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1560000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
+  of veterans pensions","popular_name":null,"agency":"Department of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.170","permalink":"/program/TC.170","title":"Exclusion
   of interest on veterans housing bonds","popular_name":null,"agency":"Department
   of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"}]'
 title: Veterans Benefits and Services

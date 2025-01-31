@@ -487,68 +487,68 @@ fiscal_year: '2024'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/resource-development-and-support---vocational-education-and-handicapped-education
-programs: '[{"cfda":"90.199","permalink":"/program/90.199","title":"Shared Services","popular_name":"Shared
-  Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitation
+  Services Vocational Rehabilitation Grants to States","popular_name":null,"agency":"Department
+  of Education","total_obs":3673923701.0,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"66.716","permalink":"/program/66.716","title":"Research,
-  Development, Monitoring, Public Education, Outreach, Training, Demonstrations, and
-  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":7151710.0,"program_type":"assistance_listing"},{"cfda":"84.177","permalink":"/program/84.177","title":"Rehabilitation
-  Services Independent Living Services for Older Individuals Who are Blind","popular_name":null,"agency":"Department
-  of Education","total_obs":33260449.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
-  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"84.187","permalink":"/program/84.187","title":"Supported
-  Employment Services for Individuals with the Most Significant Disabilities","popular_name":"(Supported
-  Employment State Grants)","agency":"Department of Education","total_obs":22548000.0,"program_type":"assistance_listing"},{"cfda":"84.315","permalink":"/program/84.315","title":"Traditionally
-  Underserved Populations","popular_name":"(Capacity Building)","agency":"Department
-  of Education","total_obs":910490.0,"program_type":"assistance_listing"},{"cfda":"84.161","permalink":"/program/84.161","title":"Rehabilitation
-  Services Client Assistance Program","popular_name":"Client Assistance Program (CAP)","agency":"Department
-  of Education","total_obs":13762266.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
-  Education - Personnel Development to Improve Services and Results for Children with
-  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":115000000.0,"program_type":"assistance_listing"},{"cfda":"84.160","permalink":"/program/84.160","title":"Training
-  Interpreters for Individuals who are Deaf and Individuals who are Deaf-Blind","popular_name":null,"agency":"Department
-  of Education","total_obs":2935390.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
-  Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
-  of Education","total_obs":31138000.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
-  Education Technical Assistance and Dissemination to Improve Services and Results
-  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":39345000.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
-  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
-  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Communications Commission","total_obs":2977000000.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
   Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
-  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
-  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
-  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"84.129","permalink":"/program/84.129","title":"Rehabilitation
-  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":14583184.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.380","permalink":"/program/84.380","title":"Special
-  Education - Special Olympics Education Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":36000000.0,"program_type":"assistance_listing"},{"cfda":"84.240","permalink":"/program/84.240","title":"Program
-  of Protection and Advocacy of Individual Rights","popular_name":null,"agency":"Department
-  of Education","total_obs":20150000.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
-  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.235","permalink":"/program/84.235","title":"Rehabilitation
-  Services Demonstration and Training Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":5796000.0,"program_type":"assistance_listing"},{"cfda":"84.250","permalink":"/program/84.250","title":"American
+  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
+  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":137567785.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
+  Education - Personnel Development to Improve Services and Results for Children with
+  Disabilities","popular_name":null,"agency":"Department of Education","total_obs":115000000.0,"program_type":"assistance_listing"},{"cfda":"84.250","permalink":"/program/84.250","title":"American
   Indian Vocational Rehabilitation Services","popular_name":null,"agency":"Department
   of Education","total_obs":50650000.0,"program_type":"assistance_listing"},{"cfda":"66.306","permalink":"/program/66.306","title":"Environmental
   Justice Collaborative Problem-Solving Cooperative Agreement Program","popular_name":"EJCPS","agency":"Environmental
-  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
-  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"64.125","permalink":"/program/64.125","title":"Vocational
+  Protection Agency","total_obs":43192607.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
+  Education Technical Assistance and Dissemination to Improve Services and Results
+  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":39345000.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
+  Education - State Personnel Development","popular_name":null,"agency":"Department
+  of Education","total_obs":38630000.0,"program_type":"assistance_listing"},{"cfda":"84.380","permalink":"/program/84.380","title":"Special
+  Education - Special Olympics Education Programs","popular_name":null,"agency":"Department
+  of Education","total_obs":36000000.0,"program_type":"assistance_listing"},{"cfda":"84.177","permalink":"/program/84.177","title":"Rehabilitation
+  Services Independent Living Services for Older Individuals Who are Blind","popular_name":null,"agency":"Department
+  of Education","total_obs":33260449.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
+  of Education","total_obs":31138000.0,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"MFA; ME; Inspire","agency":"The Institute of Museum
+  and Library Services","total_obs":30014398.0,"program_type":"assistance_listing"},{"cfda":"84.187","permalink":"/program/84.187","title":"Supported
+  Employment Services for Individuals with the Most Significant Disabilities","popular_name":"(Supported
+  Employment State Grants)","agency":"Department of Education","total_obs":22548000.0,"program_type":"assistance_listing"},{"cfda":"84.240","permalink":"/program/84.240","title":"Program
+  of Protection and Advocacy of Individual Rights","popular_name":null,"agency":"Department
+  of Education","total_obs":20150000.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.129","permalink":"/program/84.129","title":"Rehabilitation
+  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":14583184.0,"program_type":"assistance_listing"},{"cfda":"84.161","permalink":"/program/84.161","title":"Rehabilitation
+  Services Client Assistance Program","popular_name":"Client Assistance Program (CAP)","agency":"Department
+  of Education","total_obs":13762266.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
+  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"66.716","permalink":"/program/66.716","title":"Research,
+  Development, Monitoring, Public Education, Outreach, Training, Demonstrations, and
+  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":7151710.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
+  Training Technical Assistance Centers","popular_name":null,"agency":"Department
+  of Education","total_obs":6689120.0,"program_type":"assistance_listing"},{"cfda":"64.125","permalink":"/program/64.125","title":"Vocational
   and Educational Counseling for Servicemembers and Veterans","popular_name":"Personalized
-  Career Planning and Guidance Program /CH36","agency":"Department of Veterans Affairs","total_obs":5806629.0,"program_type":"assistance_listing"},{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitation
-  Services Vocational Rehabilitation Grants to States","popular_name":null,"agency":"Department
-  of Education","total_obs":3673923701.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  Career Planning and Guidance Program /CH36","agency":"Department of Veterans Affairs","total_obs":5806629.0,"program_type":"assistance_listing"},{"cfda":"84.235","permalink":"/program/84.235","title":"Rehabilitation
+  Services Demonstration and Training Programs","popular_name":null,"agency":"Department
+  of Education","total_obs":5796000.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
+  Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
+  Protection Agency","total_obs":3620309.0,"program_type":"assistance_listing"},{"cfda":"84.160","permalink":"/program/84.160","title":"Training
+  Interpreters for Individuals who are Deaf and Individuals who are Deaf-Blind","popular_name":null,"agency":"Department
+  of Education","total_obs":2935390.0,"program_type":"assistance_listing"},{"cfda":"84.315","permalink":"/program/84.315","title":"Traditionally
+  Underserved Populations","popular_name":"(Capacity Building)","agency":"Department
+  of Education","total_obs":910490.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
+  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
+  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":308000.0,"program_type":"assistance_listing"},{"cfda":"66.614","permalink":"/program/66.614","title":"Financial
+  Assistance For Community Support Activities To Address Environmental Justice Issues","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
   National Service and Civic Engagement Research Competition 94.026","popular_name":"National
   Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
-  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":308000.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
-  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":137567785.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
-  Education - State Personnel Development","popular_name":null,"agency":"Department
-  of Education","total_obs":38630000.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
-  Training Technical Assistance Centers","popular_name":null,"agency":"Department
-  of Education","total_obs":6689120.0,"program_type":"assistance_listing"}]'
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.013","permalink":"/program/11.013","title":"Education
+  Quality Award Ambassadorship","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Resource Development and Support - Vocational Education and Handicapped Education
 total_num_agencies: 11
 total_num_applicant_types: 42

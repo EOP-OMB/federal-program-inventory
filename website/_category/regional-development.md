@@ -495,12 +495,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/regional-development
-sub_cats: '[{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":2900926639.0},{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":6837870544.0},{"title":"Planning
+sub_cats: '[{"title":"Economic Development","permalink":"/category/regional-development/economic-development","total_num_programs":58,"total_obs":50285864953.0},{"title":"Education","permalink":"/category/regional-development/education","total_num_programs":27,"total_obs":6837870544.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":5378033151.0},{"title":"Health
+  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":3363322450.0},{"title":"Housing","permalink":"/category/regional-development/housing","total_num_programs":22,"total_obs":2900926639.0},{"title":"Land
+  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":22,"total_obs":3331056296.0},{"title":"Planning
   and Technical Assistance","permalink":"/category/regional-development/planning-and-technical-assistance","total_num_programs":50,"total_obs":5226165506.0},{"title":"Resources
-  and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":2686646251.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":12751786242.0},{"title":"Energy","permalink":"/category/regional-development/energy","total_num_programs":25,"total_obs":5378033151.0},{"title":"Economic
-  Development","permalink":"/category/regional-development/economic-development","total_num_programs":58,"total_obs":50285864953.0},{"title":"Health
-  and Nutrition","permalink":"/category/regional-development/health-and-nutrition","total_num_programs":21,"total_obs":3363322450.0},{"title":"Land
-  Acquisition and Rehabilitation and Facilities Construction","permalink":"/category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction","total_num_programs":22,"total_obs":3331056296.0}]'
+  and Development","permalink":"/category/regional-development/resources-and-development","total_num_programs":26,"total_obs":2686646251.0},{"title":"Transportation","permalink":"/category/regional-development/transportation","total_num_programs":38,"total_obs":12751786242.0}]'
 title: Regional Development
 total_num_agencies: 23
 total_num_applicant_types: 43

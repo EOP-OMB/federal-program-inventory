@@ -485,51 +485,51 @@ fiscal_year: '2024'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/training-assistance
-programs: '[{"cfda":"96.008","permalink":"/program/96.008","title":"Social Security
-  - Work Incentives Planning and Assistance Program ","popular_name":"SSA Work Incentives
-  Planning and Assistance (WIPA) Program or Work Incentives Outreach Program","agency":"Social
-  Security Administration","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
-  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
-  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
-  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
-  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.129","permalink":"/program/84.129","title":"Rehabilitation
-  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":14583184.0,"program_type":"assistance_listing"},{"cfda":"93.234","permalink":"/program/93.234","title":"Traumatic
-  Brain Injury State Demonstration Grant Program","popular_name":"TBI State Partnership
-  Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.048","permalink":"/program/93.048","title":"Special
-  Programs for the Aging, Title IV, and Title II, Discretionary Projects","popular_name":"Home
-  and Community-Based Supportive Services","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
-  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
-  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.009","permalink":"/program/96.009","title":"Social
+programs: '[{"cfda":"93.558","permalink":"/program/93.558","title":"Temporary Assistance
+  for Needy Families","popular_name":"TANF","agency":"Department of Health and Human
+  Services","total_obs":17063536081.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
+  Communications Commission","total_obs":946000000.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
+  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
+  H. Chafee Foster Care Program for Successful Transition to Adulthood","popular_name":"The
+  Chafee Program","agency":"Department of Health and Human Services","total_obs":144882833.0,"program_type":"assistance_listing"},{"cfda":"96.008","permalink":"/program/96.008","title":"Social
+  Security - Work Incentives Planning and Assistance Program ","popular_name":"SSA
+  Work Incentives Planning and Assistance (WIPA) Program or Work Incentives Outreach
+  Program","agency":"Social Security Administration","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"15.043","permalink":"/program/15.043","title":"Indian
+  Child and Family Education","popular_name":"(FACE)","agency":"Department of the
+  Interior","total_obs":18543607.0,"program_type":"assistance_listing"},{"cfda":"84.129","permalink":"/program/84.129","title":"Rehabilitation
+  Long-Term Training","popular_name":null,"agency":"Department of Education","total_obs":14583184.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
+  Welfare Research Training or Demonstration ","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":14518921.0,"program_type":"assistance_listing"},{"cfda":"96.009","permalink":"/program/96.009","title":"Social
   Security State Grants for Work Incentives Assistance to Disabled Beneficiaries","popular_name":"Protection
   and Advocacy for Beneficiaries of Social Security (PABSS)","agency":"Social Security
-  Administration","total_obs":9725001.0,"program_type":"assistance_listing"},{"cfda":"93.558","permalink":"/program/93.558","title":"Temporary
-  Assistance for Needy Families","popular_name":"TANF","agency":"Department of Health
-  and Human Services","total_obs":17063536081.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
-  H. Chafee Foster Care Program for Successful Transition to Adulthood","popular_name":"The
-  Chafee Program","agency":"Department of Health and Human Services","total_obs":144882833.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
-  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.260","permalink":"/program/93.260","title":"Family
-  Planning Personnel Training","popular_name":"Family Planning Training","agency":"Department
-  of Health and Human Services","total_obs":5300000.0,"program_type":"assistance_listing"},{"cfda":"15.043","permalink":"/program/15.043","title":"Indian
-  Child and Family Education","popular_name":"(FACE)","agency":"Department of the
-  Interior","total_obs":18543607.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
-  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":171000000.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
-  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
-  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
-  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
-  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
-  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":946000000.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
-  Welfare Research Training or Demonstration ","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":14518921.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
+  Administration","total_obs":9725001.0,"program_type":"assistance_listing"},{"cfda":"21.029","permalink":"/program/21.029","title":"Coronavirus
   Capital Projects Fund","popular_name":"CPF, Capital Projects Fund","agency":"Department
-  of the Treasury","total_obs":8582460.0,"program_type":"assistance_listing"}]'
+  of the Treasury","total_obs":8582460.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
+  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
+  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":6000000.0,"program_type":"assistance_listing"},{"cfda":"93.260","permalink":"/program/93.260","title":"Family
+  Planning Personnel Training","popular_name":"Family Planning Training","agency":"Department
+  of Health and Human Services","total_obs":5300000.0,"program_type":"assistance_listing"},{"cfda":"84.263","permalink":"/program/84.263","title":"Innovative
+  Rehabilitation Training","popular_name":null,"agency":"Department of Education","total_obs":543191.0,"program_type":"assistance_listing"},{"cfda":"94.026","permalink":"/program/94.026","title":"AmeriCorps
+  National Service and Civic Engagement Research Competition 94.026","popular_name":"National
+  Service and Civic Engagement Research Competition 94.026","agency":"Corporation
+  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
+  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.698","permalink":"/program/93.698","title":"Elder
+  Justice Act \u2013 Adult Protective Services","popular_name":"APS Formula Grants","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
+  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
+  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"SIPPRA","agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.048","permalink":"/program/93.048","title":"Special
+  Programs for the Aging, Title IV, and Title II, Discretionary Projects","popular_name":"Home
+  and Community-Based Supportive Services","agency":"Department of Health and Human
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.234","permalink":"/program/93.234","title":"Traumatic
+  Brain Injury State Demonstration Grant Program","popular_name":"TBI State Partnership
+  Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Training Assistance
 total_num_agencies: 11
 total_num_applicant_types: 37
