@@ -151,18 +151,46 @@
       }
 
       function formatObligations(amount) {
-        if (!amount) return "$0";
-        const trillion = 1000000000000;
-        const billion = 1000000000;
-        const million = 1000000;
-        const thousand = 1000;
+    const trillion = 1000000000000; // 1T
+    const billion = 1000000000; // 1B
+    const million = 1000000; // 1M
+    const thousand = 1000; // 1K
+    const hundred = 100; // 100
 
-        if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
-        if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
-        if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
-        if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
-        return `$${amount.toFixed(2)}`;
-      }
+    leading_sign = "$";
+    if (amount < 0) {
+      leading_sign = "-$"
+      amount = amount * -1
+    }
+
+    // Handle 0 case
+    if (amount === 0) {
+      return leading_sign + "0";
+    }
+
+    // Handle trillions
+    if (amount >= trillion) {
+      return `${leading_sign}${(amount / trillion).toFixed(2)}T`;
+    }
+
+    // Handle billions
+    if (amount >= billion) {
+      return `${leading_sign}${(amount / billion).toFixed(2)}B`;
+    }
+
+    // Handle millions
+    if (amount >= million) {
+      return `${leading_sign}${(amount / million).toFixed(2)}M`;
+    }
+
+    // Handle thousands
+    if (amount >= thousand) {
+      return `${leading_sign}${(amount / thousand).toFixed(2)}K`;
+    }
+
+    // Handle small numbers (less than 1000)
+    return `${leading_sign}${amount.toFixed(2)}`;
+  }
 
       function formatCurrency(amount) {
         return new Intl.NumberFormat("en-US", {

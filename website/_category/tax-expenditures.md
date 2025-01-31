@@ -455,17 +455,18 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/tax-expenditures
-sub_cats: '[{"title":"National Defense","permalink":"/category/tax-expenditures/national-defense","total_num_programs":1,"total_obs":16910000000.0},{"title":"International
-  Affairs","permalink":"/category/tax-expenditures/international-affairs","total_num_programs":5,"total_obs":59700000000.0},{"title":"General
-  Science, Space, and Technology","permalink":"/category/tax-expenditures/general-science--space--and-technology","total_num_programs":2,"total_obs":4990000000.0},{"title":"Energy","permalink":"/category/tax-expenditures/energy","total_num_programs":31,"total_obs":74760000000.0},{"title":"Natural
-  Resources and Environment","permalink":"/category/tax-expenditures/natural-resources-and-environment","total_num_programs":8,"total_obs":2300000000.0},{"title":"Agriculture","permalink":"/category/tax-expenditures/agriculture","total_num_programs":7,"total_obs":2590000000.0},{"title":"Commerce
-  and Housing","permalink":"/category/tax-expenditures/commerce-and-housing","total_num_programs":33,"total_obs":591190000000.0},{"title":"Transportation","permalink":"/category/tax-expenditures/transportation","total_num_programs":6,"total_obs":2700000000.0},{"title":"Community
+sub_cats: '[{"title":"Agriculture","permalink":"/category/tax-expenditures/agriculture","total_num_programs":7,"total_obs":2590000000.0},{"title":"Commerce
+  and Housing","permalink":"/category/tax-expenditures/commerce-and-housing","total_num_programs":33,"total_obs":591190000000.0},{"title":"Community
   and Regional Development","permalink":"/category/tax-expenditures/community-and-regional-development","total_num_programs":9,"total_obs":6080000000.0},{"title":"Education,
-  Training, Employment, and Social Services","permalink":"/category/tax-expenditures/education--training--employment--and-social-services","total_num_programs":27,"total_obs":107840000000.0},{"title":"Health","permalink":"/category/tax-expenditures/health","total_num_programs":12,"total_obs":405483000000.0},{"title":"Income
-  Security","permalink":"/category/tax-expenditures/income-security","total_num_programs":23,"total_obs":452601000000.0},{"title":"Social
-  Security","permalink":"/category/tax-expenditures/social-security","total_num_programs":2,"total_obs":29010000000.0},{"title":"Veterans
-  Benefits and Services","permalink":"/category/tax-expenditures/veterans-benefits-and-services","total_num_programs":4,"total_obs":15220000000.0},{"title":"General
-  Purpose Fiscal Assistance","permalink":"/category/tax-expenditures/general-purpose-fiscal-assistance","total_num_programs":3,"total_obs":48720000000.0},{"title":"Interest","permalink":"/category/tax-expenditures/interest","total_num_programs":1,"total_obs":910000000.0}]'
+  Training, Employment, and Social Services","permalink":"/category/tax-expenditures/education--training--employment--and-social-services","total_num_programs":27,"total_obs":107840000000.0},{"title":"Energy","permalink":"/category/tax-expenditures/energy","total_num_programs":31,"total_obs":74760000000.0},{"title":"General
+  Purpose Fiscal Assistance","permalink":"/category/tax-expenditures/general-purpose-fiscal-assistance","total_num_programs":3,"total_obs":48720000000.0},{"title":"General
+  Science, Space, and Technology","permalink":"/category/tax-expenditures/general-science--space--and-technology","total_num_programs":2,"total_obs":4990000000.0},{"title":"Health","permalink":"/category/tax-expenditures/health","total_num_programs":12,"total_obs":405483000000.0},{"title":"Income
+  Security","permalink":"/category/tax-expenditures/income-security","total_num_programs":23,"total_obs":452601000000.0},{"title":"Interest","permalink":"/category/tax-expenditures/interest","total_num_programs":1,"total_obs":910000000.0},{"title":"International
+  Affairs","permalink":"/category/tax-expenditures/international-affairs","total_num_programs":5,"total_obs":59700000000.0},{"title":"National
+  Defense","permalink":"/category/tax-expenditures/national-defense","total_num_programs":1,"total_obs":16910000000.0},{"title":"Natural
+  Resources and Environment","permalink":"/category/tax-expenditures/natural-resources-and-environment","total_num_programs":8,"total_obs":2300000000.0},{"title":"Social
+  Security","permalink":"/category/tax-expenditures/social-security","total_num_programs":2,"total_obs":29010000000.0},{"title":"Transportation","permalink":"/category/tax-expenditures/transportation","total_num_programs":6,"total_obs":2700000000.0},{"title":"Veterans
+  Benefits and Services","permalink":"/category/tax-expenditures/veterans-benefits-and-services","total_num_programs":4,"total_obs":15220000000.0}]'
 title: Tax Expenditures
 total_num_agencies: 1
 total_num_applicant_types: 0

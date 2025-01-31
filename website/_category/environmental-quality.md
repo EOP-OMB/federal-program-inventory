@@ -498,12 +498,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/environmental-quality
-sub_cats: '[{"title":"Water Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":116,"total_obs":15324846081.0},{"title":"Solid
-  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":12559389846.0},{"title":"Air
-  Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":25980304501.0},{"title":"Radiation
-  Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":5974991098.14},{"title":"Pesticides
-  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":62,"total_obs":6580958683.25},{"title":"Research,
-  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":105,"total_obs":8759960248.0}]'
+sub_cats: '[{"title":"Air Pollution Control","permalink":"/category/environmental-quality/air-pollution-control","total_num_programs":75,"total_obs":25980304501.0},{"title":"Pesticides
+  Control","permalink":"/category/environmental-quality/pesticides-control","total_num_programs":62,"total_obs":6580958683.25},{"title":"Radiation
+  Control","permalink":"/category/environmental-quality/radiation-control","total_num_programs":50,"total_obs":5974991098.14},{"title":"Research,
+  Education, Training","permalink":"/category/environmental-quality/research--education--training","total_num_programs":105,"total_obs":8759960248.0},{"title":"Solid
+  Waste Management","permalink":"/category/environmental-quality/solid-waste-management","total_num_programs":72,"total_obs":12559389846.0},{"title":"Water
+  Pollution Control","permalink":"/category/environmental-quality/water-pollution-control","total_num_programs":116,"total_obs":15324846081.0}]'
 title: Environmental Quality
 total_num_agencies: 17
 total_num_applicant_types: 52

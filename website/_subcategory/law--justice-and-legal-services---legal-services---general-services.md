@@ -482,93 +482,93 @@ fiscal_year: '2024'
 parent_permalink: /category/law--justice-and-legal-services
 parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---general-services
-programs: '[{"cfda":"20.232","permalink":"/program/20.232","title":"Commercial Driver''s
-  License Program Implementation Grant","popular_name":"CDLPI","agency":"Department
-  of Transportation","total_obs":52030853.0,"program_type":"assistance_listing"},{"cfda":"16.812","permalink":"/program/16.812","title":"Second
-  Chance Act Reentry Initiative","popular_name":"Second Chance Act (SCA)","agency":"Department
-  of Justice","total_obs":117000000.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
-  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.758","permalink":"/program/16.758","title":"Improving
-  the Investigation and Prosecution of Child Abuse and the Regional and Local Children''s
-  Advocacy Centers","popular_name":"VOA","agency":"Department of Justice","total_obs":38447652.0,"program_type":"assistance_listing"},{"cfda":"16.828","permalink":"/program/16.828","title":"Swift,
-  Certain, and Fair Supervision Program: Applying the Principles Behind Project HOPE","popular_name":"SCF","agency":"Department
-  of Justice","total_obs":3954747.0,"program_type":"assistance_listing"},{"cfda":"15.029","permalink":"/program/15.029","title":"Tribal
-  Courts","popular_name":null,"agency":"Department of the Interior","total_obs":51051793.0,"program_type":"assistance_listing"},{"cfda":"16.836","permalink":"/program/16.836","title":"Indigent
-  Defense","popular_name":null,"agency":"Department of Justice","total_obs":2238066.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
-  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
-  in the Juvenile Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"15.052","permalink":"/program/15.052","title":"Litigation
-  Support for Indian Rights","popular_name":null,"agency":"Department of the Interior","total_obs":382847.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
-  Justice and Accountability Programming","popular_name":null,"agency":"Department
-  of State","total_obs":25999999.0,"program_type":"assistance_listing"},{"cfda":"16.608","permalink":"/program/16.608","title":"Tribal
-  Justice Systems","popular_name":"(TCAP)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
-  Case Litigation Initiative","popular_name":"(CCLI)","agency":"Department of Justice","total_obs":7790458.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
-  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
-  of State","total_obs":4999999.0,"program_type":"assistance_listing"},{"cfda":"16.738","permalink":"/program/16.738","title":"Edward
+programs: '[{"cfda":"14.218","permalink":"/program/14.218","title":"Community Development
+  Block Grants/Entitlement Grants","popular_name":"Community Development Block Grant
+  Program for Entitlement Communities.","agency":"Department of Housing and Urban
+  Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"16.738","permalink":"/program/16.738","title":"Edward
   Byrne Memorial Justice Assistance Grant Program","popular_name":"Byrne JAG Program","agency":"Department
-  of Justice","total_obs":351527188.0,"program_type":"assistance_listing"},{"cfda":"16.596","permalink":"/program/16.596","title":"Trible
-  Justice Assistance","popular_name":null,"agency":"Department of Justice","total_obs":40485652.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
-  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":14987201.0,"program_type":"assistance_listing"},{"cfda":"16.606","permalink":"/program/16.606","title":"State
+  of Justice","total_obs":351527188.0,"program_type":"assistance_listing"},{"cfda":"16.606","permalink":"/program/16.606","title":"State
   Criminal Alien Assistance Program","popular_name":"(SCAAP)","agency":"Department
-  of Justice","total_obs":210550946.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
-  Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"15.053","permalink":"/program/15.053","title":"Attorney
-  Fees Indian Rights","popular_name":null,"agency":"Department of the Interior","total_obs":686174.0,"program_type":"assistance_listing"},{"cfda":"16.543","permalink":"/program/16.543","title":"Missing
+  of Justice","total_obs":210550946.0,"program_type":"assistance_listing"},{"cfda":"16.543","permalink":"/program/16.543","title":"Missing
   Children''s Assistance","popular_name":"Missing and Exploited Children (MEC) Program","agency":"Department
-  of Justice","total_obs":128849673.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
+  of Justice","total_obs":128849673.0,"program_type":"assistance_listing"},{"cfda":"16.812","permalink":"/program/16.812","title":"Second
+  Chance Act Reentry Initiative","popular_name":"Second Chance Act (SCA)","agency":"Department
+  of Justice","total_obs":117000000.0,"program_type":"assistance_listing"},{"cfda":"16.841","permalink":"/program/16.841","title":"VOCA
+  Tribal Victim Services Set-Aside Program","popular_name":"VOCA Tribal Set-Aside
+  Program","agency":"Department of Justice","total_obs":95000000.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
+  Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
+  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"16.734","permalink":"/program/16.734","title":"Special
+  Data Collections and Statistical Studies","popular_name":"Statistics","agency":"Department
+  of Justice","total_obs":65406085.0,"program_type":"assistance_listing"},{"cfda":"16.017","permalink":"/program/16.017","title":"Sexual
+  Assault Services Formula Program ","popular_name":null,"agency":"Department of Justice","total_obs":52042135.0,"program_type":"assistance_listing"},{"cfda":"20.232","permalink":"/program/20.232","title":"Commercial
+  Driver''s License Program Implementation Grant","popular_name":"CDLPI","agency":"Department
+  of Transportation","total_obs":52030853.0,"program_type":"assistance_listing"},{"cfda":"15.029","permalink":"/program/15.029","title":"Tribal
+  Courts","popular_name":null,"agency":"Department of the Interior","total_obs":51051793.0,"program_type":"assistance_listing"},{"cfda":"16.524","permalink":"/program/16.524","title":"Legal
+  Assistance for Victims","popular_name":"LAV Program","agency":"Department of Justice","total_obs":42434215.0,"program_type":"assistance_listing"},{"cfda":"16.596","permalink":"/program/16.596","title":"Trible
+  Justice Assistance","popular_name":null,"agency":"Department of Justice","total_obs":40485652.0,"program_type":"assistance_listing"},{"cfda":"16.758","permalink":"/program/16.758","title":"Improving
+  the Investigation and Prosecution of Child Abuse and the Regional and Local Children''s
+  Advocacy Centers","popular_name":"VOA","agency":"Department of Justice","total_obs":38447652.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
+  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
+  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
+  Justice and Accountability Programming","popular_name":null,"agency":"Department
+  of State","total_obs":25999999.0,"program_type":"assistance_listing"},{"cfda":"16.838","permalink":"/program/16.838","title":"Comprehensive
+  Opioid, Stimulant, and other Substances Use Program","popular_name":"COSSUP","agency":"Department
+  of Justice","total_obs":25703059.0,"program_type":"assistance_listing"},{"cfda":"21.008","permalink":"/program/21.008","title":"Low
+  Income Taxpayer Clinics","popular_name":"LITC","agency":"Department of the Treasury","total_obs":20244020.0,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":14987201.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
   Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
-  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
-  Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
-  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.704","permalink":"/program/10.704","title":"Law
+  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"14.171","permalink":"/program/14.171","title":"Manufactured
+  Housing","popular_name":"Manufactured Housing","agency":"Department of Housing and
+  Urban Development","total_obs":14000000.0,"program_type":"assistance_listing"},{"cfda":"16.040","permalink":"/program/16.040","title":"Matthew
+  Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and Prosecution
+  Program","popular_name":"Shepard and Byrd Hate Crimes Program","agency":"Department
+  of Justice","total_obs":11159253.0,"program_type":"assistance_listing"},{"cfda":"16.047","permalink":"/program/16.047","title":"Community-Based
+  Approaches to Advancing Justice","popular_name":null,"agency":"Department of Justice","total_obs":7870928.0,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
+  Case Litigation Initiative","popular_name":"(CCLI)","agency":"Department of Justice","total_obs":7790458.0,"program_type":"assistance_listing"},{"cfda":"15.040","permalink":"/program/15.040","title":"Real
+  Estate Programs Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":5174238.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
+  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
+  of State","total_obs":4999999.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
+  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
+  in the Juvenile Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
+  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
+  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"16.828","permalink":"/program/16.828","title":"Swift,
+  Certain, and Fair Supervision Program: Applying the Principles Behind Project HOPE","popular_name":"SCF","agency":"Department
+  of Justice","total_obs":3954747.0,"program_type":"assistance_listing"},{"cfda":"10.704","permalink":"/program/10.704","title":"Law
   Enforcement Agreements","popular_name":"Law Enforcement Agreements","agency":"Department
   of Agriculture","total_obs":3799548.0,"program_type":"assistance_listing"},{"cfda":"16.015","permalink":"/program/16.015","title":"Missing
   Alzheimer''s Disease Patient Assistance Program","popular_name":"Kevin and Avonte''s
-  Law","agency":"Department of Justice","total_obs":2536071.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
-  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.524","permalink":"/program/16.524","title":"Legal
-  Assistance for Victims","popular_name":"LAV Program","agency":"Department of Justice","total_obs":42434215.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
-  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"16.841","permalink":"/program/16.841","title":"VOCA
-  Tribal Victim Services Set-Aside Program","popular_name":"VOCA Tribal Set-Aside
-  Program","agency":"Department of Justice","total_obs":95000000.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
-  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
-  Development Block Grants/Entitlement Grants","popular_name":"Community Development
-  Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":2461000000.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
-  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
-  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"19.019","permalink":"/program/19.019","title":"International
-  Programs to Combat Human Trafficking","popular_name":"International Programs to
-  Combat Human Trafficking","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.017","permalink":"/program/16.017","title":"Sexual
-  Assault Services Formula Program ","popular_name":null,"agency":"Department of Justice","total_obs":52042135.0,"program_type":"assistance_listing"},{"cfda":"16.040","permalink":"/program/16.040","title":"Matthew
-  Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and Prosecution
-  Program","popular_name":"Shepard and Byrd Hate Crimes Program","agency":"Department
-  of Justice","total_obs":11159253.0,"program_type":"assistance_listing"},{"cfda":"19.801","permalink":"/program/19.801","title":"Office
-  of Global Women''s Issues","popular_name":"Global Women''s Empowerment Programs","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.008","permalink":"/program/21.008","title":"Low
-  Income Taxpayer Clinics","popular_name":"LITC","agency":"Department of the Treasury","total_obs":20244020.0,"program_type":"assistance_listing"},{"cfda":"16.838","permalink":"/program/16.838","title":"Comprehensive
-  Opioid, Stimulant, and other Substances Use Program","popular_name":"COSSUP","agency":"Department
-  of Justice","total_obs":25703059.0,"program_type":"assistance_listing"},{"cfda":"19.979","permalink":"/program/19.979","title":"Regional
-  Peace and Security","popular_name":"African  Regional Security Affairs","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.815","permalink":"/program/16.815","title":"Tribal
+  Law","agency":"Department of Justice","total_obs":2536071.0,"program_type":"assistance_listing"},{"cfda":"16.836","permalink":"/program/16.836","title":"Indigent
+  Defense","popular_name":null,"agency":"Department of Justice","total_obs":2238066.0,"program_type":"assistance_listing"},{"cfda":"16.815","permalink":"/program/16.815","title":"Tribal
   Civil and Criminal Legal Assistance Grants, Training and Technical Assistance","popular_name":"Tribal
-  Civil and Criminal Legal Assistance (TCCLA)","agency":"Department of Justice","total_obs":1806609.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"16.047","permalink":"/program/16.047","title":"Community-Based
-  Approaches to Advancing Justice","popular_name":null,"agency":"Department of Justice","total_obs":7870928.0,"program_type":"assistance_listing"},{"cfda":"16.734","permalink":"/program/16.734","title":"Special
-  Data Collections and Statistical Studies","popular_name":"Statistics","agency":"Department
-  of Justice","total_obs":65406085.0,"program_type":"assistance_listing"},{"cfda":"15.040","permalink":"/program/15.040","title":"Real
-  Estate Programs Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":5174238.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"16.834","permalink":"/program/16.834","title":"Domestic
-  Trafficking Victim Program ","popular_name":"Domestic Trafficking Victim Program
-  ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.757","permalink":"/program/16.757","title":"Judicial
+  Civil and Criminal Legal Assistance (TCCLA)","agency":"Department of Justice","total_obs":1806609.0,"program_type":"assistance_listing"},{"cfda":"16.757","permalink":"/program/16.757","title":"Judicial
   Training on Child Maltreatment for Court Personnel Juvenile Justice Programs","popular_name":null,"agency":"Department
-  of Justice","total_obs":1014395.0,"program_type":"assistance_listing"},{"cfda":"15.057","permalink":"/program/15.057","title":"Navajo-Hopi
-  Indian Settlement ","popular_name":null,"agency":"Department of the Interior","total_obs":602144.0,"program_type":"assistance_listing"},{"cfda":"14.171","permalink":"/program/14.171","title":"Manufactured
-  Housing","popular_name":"Manufactured Housing","agency":"Department of Housing and
-  Urban Development","total_obs":14000000.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
+  of Justice","total_obs":1014395.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"15.053","permalink":"/program/15.053","title":"Attorney
+  Fees Indian Rights","popular_name":null,"agency":"Department of the Interior","total_obs":686174.0,"program_type":"assistance_listing"},{"cfda":"15.057","permalink":"/program/15.057","title":"Navajo-Hopi
+  Indian Settlement ","popular_name":null,"agency":"Department of the Interior","total_obs":602144.0,"program_type":"assistance_listing"},{"cfda":"15.052","permalink":"/program/15.052","title":"Litigation
+  Support for Indian Rights","popular_name":null,"agency":"Department of the Interior","total_obs":382847.0,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
+  and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.834","permalink":"/program/16.834","title":"Domestic
+  Trafficking Victim Program ","popular_name":"Domestic Trafficking Victim Program
+  ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.019","permalink":"/program/19.019","title":"International
+  Programs to Combat Human Trafficking","popular_name":"International Programs to
+  Combat Human Trafficking","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
+  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.801","permalink":"/program/19.801","title":"Office
+  of Global Women''s Issues","popular_name":"Global Women''s Empowerment Programs","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
+  Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.979","permalink":"/program/19.979","title":"Regional
+  Peace and Security","popular_name":"African  Regional Security Affairs","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
   Vulnerable and At-Risk Youth Transitioning out of Foster Care","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.608","permalink":"/program/16.608","title":"Tribal
+  Justice Systems","popular_name":"(TCAP)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal Services - General Services
 total_num_agencies: 10
 total_num_applicant_types: 35
