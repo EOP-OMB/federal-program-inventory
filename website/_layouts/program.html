@@ -189,6 +189,53 @@ footer_include: _footer-program.html
       {% endif %}
       <!-- Single Audit End -->
 
+      <!-- Improper Payment Information-->
+      <div class="usa-accordion">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="improper-payment">
+            Improper payment information
+          </button>
+        </h4>
+        <div id="improper-payment" class="usa-accordion__content">
+          {% if page.improper_payments == null %}
+          <div class="usa-alert usa-alert--success">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text font-family-sans">
+                This program is not associated with any Improper Payment Program Activities that were at risk of
+                significant improper payments.
+              </p>
+            </div>
+          </div>
+          {% else %}
+          <p>[Improper payments are... and affect programs by... The table below shows improper payments this program is
+            associated with, and lists other programs associated with the same improper payment listings.]</p>
+          <span>
+            View more information about improper payments at
+          </span>
+          <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">
+            paymentaccuracy.gov</a>
+            <table class="usa-table usa-table--borderless .usa-table--white-header" id="improper-payments-table">
+              <thead>
+                <tr>
+                  <th class= "text-top" scope="col">Improper Payment Program Activity for FY 2022</th>
+                  <th class= "text-top" scope="col">Related Programs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Data will be inserted here by JavaScript -->
+              </tbody>
+            </table>
+            <p>
+              <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
+              Shows Improper Payment Programs that are considered High Priority Programs
+            </p>
+            {% endif %}
+        </div>
+      </div>
+      <!-- Improper Payment Information end-->
+
       <!-- Program oversight reports Start -->
       <div class="usa-accordion">
         <h4 class="usa-accordion__heading">

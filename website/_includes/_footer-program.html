@@ -9,10 +9,17 @@
   {% else %}
   const obligationsJson = [];
   {% endif %}
+
   {% if page.other_program_spending %}
   const otherSpendingJson = {{ page.other_program_spending }};
   {% else %}
   const otherSpendingJson = [];
+  {% endif %}
+
+  {% if page.improper_payments %}
+  const improperPaymentsData = {{ page.improper_payments }};
+  {% else %}
+  const improperPaymentsData = [];
   {% endif %}
   const isAssistanceListing =
     "{{ page.program_type }}" === "assistance_listing";
@@ -1157,10 +1164,63 @@
     }
   }
 
+  function createImproperPaymentsTable() {
+  const tableBody = document.querySelector('#improper-payments-table tbody');
+  if (!tableBody || !improperPaymentsData) return;
+
+  const rows = improperPaymentsData.map(payment => {
+    const tr = document.createElement('tr');
+    
+    // First column with payment info
+    const tdInfo = document.createElement('td');
+    tdInfo.className = 'text-top';
+
+    const nameWithIcon = payment.high_priority ? 
+      `<p>
+        <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
+        ${payment.name}
+      </p>` :
+      `<p>${payment.name}</p>`
+
+    tdInfo.innerHTML = `
+      <p>${nameWithIcon}</p>
+      <ul>
+        <li>Outlays: ${formatObligations(payment.outlays)}</li>
+        <li>Improper Payments: ${formatObligations(payment.improper_payments)} (${((payment.improper_payments / payment.outlays) * 100).toFixed(1)}%)</li>
+        <li>Insufficient Documentation Payments: ${formatObligations(payment.insufficient_payment)} (${((payment.insufficient_payment / payment.outlays) * 100).toFixed(1)}%)</li>
+      </ul>
+    `;
+
+    // Second column with related programs
+    const tdPrograms = document.createElement('td');
+    tdPrograms.className = 'text-top';
+    const ul = document.createElement('ul');
+    ul.className = 'usa-list usa-list--primary';
+    payment.related_programs.forEach(program => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = program.permalink;
+      a.textContent = program.name;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    tdPrograms.appendChild(ul);
+
+    tr.appendChild(tdInfo);
+    tr.appendChild(tdPrograms);
+    return tr;
+  });
+
+  // Clear existing content and add new rows
+  tableBody.innerHTML = '';
+  rows.forEach(row => tableBody.appendChild(row));
+}
+
   document.addEventListener("DOMContentLoaded", function () {
     initializeViewControls(hasObligations, hasOutlays, hasOtherProgramExpenditure);
 
     initializeDownloadButton();
     initializeProgramFilters();
+    createImproperPaymentsTable();
   });
 </script>

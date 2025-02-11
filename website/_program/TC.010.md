@@ -10,6 +10,7 @@ categories:
 cfda: TC.010
 fiscal_year: '2024'
 grants_url: null
+improper_payments: null
 is_subpart_f: null
 layout: program
 objective: This is similar to the above provision but limited to coal. Current law

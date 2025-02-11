@@ -214,3 +214,8 @@ th.gridjs-th {
     overflow: hidden;
   }
 }
+
+#improper-payments-table.usa-table thead th,
+#improper-payments-table.usa-table thead td {
+  background-color: #ffffff !important;
+}
