@@ -386,32 +386,24 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
 
 def get_improper_payment_info(cursor: sqlite3.Cursor, program_id: str) -> List[Dict[str, Any]]:
     """Get improper payment data for a program including related programs."""
-    # First get all improper payment programs this program is associated with
+    # Get all improper payment records this program is associated with
     cursor.execute("""
-        SELECT DISTINCT improper_payment_program_name
+        SELECT 
+            improper_payment_program_name,
+            outlays,
+            improper_payment_amount as improper_payments,
+            insufficient_documentation_amount as insufficient_payment,
+            high_priority_program as high_priority
         FROM improper_payment_mapping
         WHERE program_id = ?
     """, (program_id,))
     
     improper_payments = []
-    for row in cursor.fetchall():
-        improper_name = row['improper_payment_program_name']
-        
-        # Get the basic improper payment data
-        cursor.execute("""
-            SELECT 
-                outlays,
-                improper_payment_amount as improper_payments,
-                insufficient_documentation_amount as insufficient_payment,
-                high_priority_program as high_priority
-            FROM improper_payment_mapping
-            WHERE improper_payment_program_name = ?
-            LIMIT 1
-        """, (improper_name,))
-        
-        payment_data = cursor.fetchone()
-        
-        # Get related programs separately
+    
+    for payment_row in cursor.fetchall():
+        improper_name = payment_row['improper_payment_program_name']
+            
+        # Get related programs
         cursor.execute("""
             SELECT DISTINCT 
                 p.id,
@@ -428,15 +420,14 @@ def get_improper_payment_info(cursor: sqlite3.Cursor, program_id: str) -> List[D
             'permalink': f"/program/{prog['id']}"
         } for prog in cursor.fetchall()]
         
-        if payment_data:
-            improper_payments.append({
-                'name': improper_name,
-                'outlays': float(payment_data['outlays']) if payment_data['outlays'] else 0.0,
-                'improper_payments': float(payment_data['improper_payments']) if payment_data['improper_payments'] else 0.0,
-                'insufficient_payment': float(payment_data['insufficient_payment']) if payment_data['insufficient_payment'] else 0.0,
-                'high_priority': bool(payment_data['high_priority']),
-                'related_programs': related_programs
-            })
+        improper_payments.append({
+            'name': improper_name,
+            'outlays': float(payment_row['outlays']) if payment_row['outlays'] else 0.0,
+            'improper_payments': float(payment_row['improper_payments']) if payment_row['improper_payments'] else 0.0,
+            'insufficient_payment': float(payment_row['insufficient_payment']) if payment_row['insufficient_payment'] else 0.0,
+            'high_priority': bool(payment_row['high_priority']),
+            'related_programs': related_programs
+        })
     
     return improper_payments
 
