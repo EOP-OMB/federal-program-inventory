@@ -384,6 +384,52 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
 
     return categories
 
+def get_improper_payment_info(cursor: sqlite3.Cursor, program_id: str) -> List[Dict[str, Any]]:
+    """Get improper payment data for a program including related programs."""
+    # Get all improper payment records this program is associated with
+    cursor.execute("""
+        SELECT 
+            improper_payment_program_name,
+            outlays,
+            improper_payment_amount as improper_payments,
+            insufficient_documentation_amount as insufficient_payment,
+            high_priority_program as high_priority
+        FROM improper_payment_mapping
+        WHERE program_id = ?
+    """, (program_id,))
+    
+    improper_payments = []
+    
+    for payment_row in cursor.fetchall():
+        improper_name = payment_row['improper_payment_program_name']
+            
+        # Get related programs
+        cursor.execute("""
+            SELECT DISTINCT 
+                p.id,
+                p.name
+            FROM improper_payment_mapping ip
+            JOIN program p ON ip.program_id = p.id
+            WHERE ip.improper_payment_program_name = ?
+            AND p.id != ?
+        """, (improper_name, program_id))
+        
+        related_programs = [{
+            'id': prog['id'],
+            'name': prog['name'],
+            'permalink': f"/program/{prog['id']}"
+        } for prog in cursor.fetchall()]
+        
+        improper_payments.append({
+            'name': improper_name,
+            'outlays': float(payment_row['outlays']) if payment_row['outlays'] else 0.0,
+            'improper_payments': float(payment_row['improper_payments']) if payment_row['improper_payments'] else 0.0,
+            'insufficient_payment': float(payment_row['insufficient_payment']) if payment_row['insufficient_payment'] else 0.0,
+            'high_priority': bool(payment_row['high_priority']),
+            'related_programs': related_programs
+        })
+    
+    return improper_payments
 
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for categories with obligations from both regular and other programs."""
@@ -809,6 +855,8 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
                 else:
                     program_categories['categories'][category_id] = cat['category_name']
 
+        improper_payment_data = get_improper_payment_info(cursor, program['id'])
+
         # Create comprehensive program data
         program_data = {
             'id': program['id'],
@@ -831,7 +879,8 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'authorizations': authorizations,
             'program_type': program['program_type'],
             'is_subpart_f': program['is_subpart_f'],
-            'rules_regulations': program['rules_regulations']
+            'rules_regulations': program['rules_regulations'],
+            'improper_payments': improper_payment_data
         }
 
         programs_data.append(program_data)
@@ -1128,7 +1177,8 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'program_type': program['program_type'],
             'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']],
             'is_subpart_f': program['is_subpart_f'],
-            'rules_regulations': program['rules_regulations']
+            'rules_regulations': program['rules_regulations'],
+            'improper_payments': json.dumps(program['improper_payments'], separators=(',', ':')) if program['improper_payments'] else None,
         }
 
         # Add obligations based on program type
