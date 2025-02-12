@@ -1287,7 +1287,6 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
                         'subCategory': {'title': subcategory}
                     })
 
-        # Rest of the function remains the same...
         program_json = {
             'cfda': program['id'],
             'title': program['name'],
