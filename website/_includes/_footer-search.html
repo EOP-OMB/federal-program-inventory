@@ -1054,6 +1054,13 @@
       }
 
       const data = await response.json();
+      const exactMatch = data.programs.find(program => program.cfda === keyword);
+            
+      if (exactMatch && exactMatch.permalink) {
+        window.location.href = exactMatch.permalink;
+        return;
+        
+      }
       totalCount = data.count;
       totalObligations = data.total_obligations;
       globalProgramCount = data.global_program_count;
