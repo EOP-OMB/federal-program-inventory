@@ -1054,7 +1054,9 @@
       }
 
       const data = await response.json();
-      const exactMatch = data.programs.find(program => program.cfda === keyword);
+      const exactMatch = data.programs.find(program => 
+        program.cfda?.toLowerCase() === keyword.toLowerCase()
+      );
             
       if (exactMatch && exactMatch.permalink) {
         window.location.href = exactMatch.permalink;
