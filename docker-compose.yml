@@ -37,13 +37,13 @@ services:
       - internal
 
   website:
-    build:
+    build: 
       context: ./website
     ports:
       - "8080:8080"         
-    # depends_on:
-    #   api:
-    #     condition: service_healthy   # Wait for `api` to be healthy
+    depends_on:
+      api:
+        condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
 

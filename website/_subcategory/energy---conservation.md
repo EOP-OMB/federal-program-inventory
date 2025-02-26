@@ -10,17 +10,17 @@ agencies: '[{"title":"Department of Energy","total_num_programs":8,"total_obs":4
   Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Southeast Crescent
   Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Denali
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":17},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":15},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Profit
-  organization","total_num_programs":11},{"title":"Federally Recognized lndian Tribal
+  organization","total_num_programs":11},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":10},{"title":"Other public institution/organization","total_num_programs":10},{"title":"U.S.
   Territories and possessions","total_num_programs":10},{"title":"State","total_num_programs":9},{"title":"Non-Government
   - General","total_num_programs":7},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":7},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":6},{"title":"Small business (less than 500 employees)","total_num_programs":6},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Other
   private institutions/organizations","total_num_programs":5},{"title":"Anyone/general
@@ -484,72 +484,73 @@ fiscal_year: '2024'
 parent_permalink: /category/energy
 parent_title: Energy
 permalink: /category/energy/conservation
-programs: '[{"cfda":"66.046","permalink":"/program/66.046","title":"Climate Pollution
-  Reduction Grants","popular_name":null,"agency":"Environmental Protection Agency","total_obs":5266209.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
-  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
-  Protection Agency","total_obs":140325127.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
-  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
-  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.042","permalink":"/program/81.042","title":"Weatherization
-  Assistance for Low-Income Persons","popular_name":"WAP","agency":"Department of
-  Energy","total_obs":241416626.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
-  Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program
-  (9005)","agency":"Department of Agriculture","total_obs":6666870.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
-  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
-  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
-  of the Interior","total_obs":14093527.0,"program_type":"assistance_listing"},{"cfda":"81.041","permalink":"/program/81.041","title":"State
-  Energy Program","popular_name":"SEP","agency":"Department of Energy","total_obs":2768018463.0,"program_type":"assistance_listing"},{"cfda":"81.065","permalink":"/program/81.065","title":"Nuclear
-  Legacy Cleanup Program","popular_name":"(Consultation and Cooperation Financial
-  Assistance)","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.868","permalink":"/program/10.868","title":"Rural
-  Energy for America Program","popular_name":"REAP","agency":"Department of Agriculture","total_obs":588227000.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
-  Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
-  of Agriculture","total_obs":2041000000.0,"program_type":"assistance_listing"},{"cfda":"81.128","permalink":"/program/81.128","title":"Energy
-  Efficiency and Conservation Block Grant Program (EECBG) ","popular_name":"EECBG","agency":"Department
-  of Energy","total_obs":181917850.0,"program_type":"assistance_listing"},{"cfda":"93.568","permalink":"/program/93.568","title":"Low-Income
-  Home Energy Assistance","popular_name":"LIHEAP","agency":"Department of Health and
-  Human Services","total_obs":4139779910.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
-  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
-  Affordable Clean Energy (PACE) Program","popular_name":"22001","agency":"Department
-  of Agriculture","total_obs":610000000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
-  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
-  Protection Agency","total_obs":28363597.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
-  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
-  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"10.087","permalink":"/program/10.087","title":"Biomass
-  Crop Assistance Program","popular_name":"BCAP","agency":"Department of Agriculture","total_obs":59000.0,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
-  Education - Basic Grants to States","popular_name":null,"agency":"Department of
-  Education","total_obs":715455000.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
-  Research and Development Initiative Competitive Grants Program (BRDI)","popular_name":"BRDI","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
-  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
-  of State","total_obs":1223802133.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
+programs: '[{"cfda":"93.568","permalink":"/program/93.568","title":"Low-Income Home
+  Energy Assistance","popular_name":"LIHEAP","agency":"Department of Health and Human
+  Services","total_obs":4139779910.0,"program_type":"assistance_listing"},{"cfda":"81.041","permalink":"/program/81.041","title":"State
+  Energy Program","popular_name":"SEP","agency":"Department of Energy","total_obs":2768018463.0,"program_type":"assistance_listing"},{"cfda":"12.401","permalink":"/program/12.401","title":"National
   Guard Military Operations and Maintenance (O&M) Projects","popular_name":"National
-  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2293444239.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
-  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
-  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
-  of Agriculture","total_obs":183752556.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
-  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
-  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
-  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"81.087","permalink":"/program/81.087","title":"Renewable
+  Guard Facility Operations and Maintenance Activities","agency":"Department of Defense","total_obs":2293444239.0,"program_type":"assistance_listing"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
+  Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
+  of Agriculture","total_obs":2041000000.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
+  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
+  and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
+  of State","total_obs":1223802133.0,"program_type":"assistance_listing"},{"cfda":"81.087","permalink":"/program/81.087","title":"Renewable
   Energy Research and Development","popular_name":"Renewable Energy (RE)","agency":"Department
   of Energy","total_obs":1079663502.0,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
   School Bus Program","popular_name":"Clean School Bus Program","agency":"Environmental
-  Protection Agency","total_obs":939221379.0,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
-  Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1224448195.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
-  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
-  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.424","permalink":"/program/15.424","title":"Marine
-  Minerals Activities","popular_name":"Marine Minerals Activities","agency":"Department
-  of the Interior","total_obs":3432785.0,"program_type":"assistance_listing"},{"cfda":"81.057","permalink":"/program/81.057","title":"University
-  Coal Research","popular_name":"UCR","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.859","permalink":"/program/10.859","title":"Assistance
-  to High Energy Cost Rural Communities","popular_name":"High Energy Cost Grants","agency":"Department
-  of Agriculture","total_obs":7310307.0,"program_type":"assistance_listing"},{"cfda":"81.086","permalink":"/program/81.086","title":"Conservation
+  Protection Agency","total_obs":939221379.0,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
+  Education - Basic Grants to States","popular_name":null,"agency":"Department of
+  Education","total_obs":715455000.0,"program_type":"assistance_listing"},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
+  Affordable Clean Energy (PACE) Program","popular_name":"22001","agency":"Department
+  of Agriculture","total_obs":610000000.0,"program_type":"assistance_listing"},{"cfda":"81.086","permalink":"/program/81.086","title":"Conservation
   Research and Development","popular_name":"Energy Efficiency (EE)","agency":"Department
-  of Energy","total_obs":603029108.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
+  of Energy","total_obs":603029108.0,"program_type":"assistance_listing"},{"cfda":"10.868","permalink":"/program/10.868","title":"Rural
+  Energy for America Program","popular_name":"REAP","agency":"Department of Agriculture","total_obs":588227000.0,"program_type":"assistance_listing"},{"cfda":"81.042","permalink":"/program/81.042","title":"Weatherization
+  Assistance for Low-Income Persons","popular_name":"WAP","agency":"Department of
+  Energy","total_obs":241416626.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
+  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
+  of Agriculture","total_obs":183752556.0,"program_type":"assistance_listing"},{"cfda":"81.128","permalink":"/program/81.128","title":"Energy
+  Efficiency and Conservation Block Grant Program (EECBG) ","popular_name":"EECBG","agency":"Department
+  of Energy","total_obs":181917850.0,"program_type":"assistance_listing"},{"cfda":"66.039","permalink":"/program/66.039","title":"Diesel
+  Emission Reduction Act (DERA) National Grants","popular_name":"DERA National Grants","agency":"Environmental
+  Protection Agency","total_obs":140325127.0,"program_type":"assistance_listing"},{"cfda":"81.010","permalink":"/program/81.010","title":"Office
   of Technology Transitions (OTT)-Technology Deployment, Demonstration and Commercialization","popular_name":"OTT","agency":"Department
-  of Energy","total_obs":106865747.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
+  of Energy","total_obs":106865747.0,"program_type":"assistance_listing"},{"cfda":"85.751","permalink":"/program/85.751","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
+  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
+  of Health and Human Services","total_obs":30971515.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
+  Protection Agency","total_obs":28363597.0,"program_type":"assistance_listing"},{"cfda":"90.705","permalink":"/program/90.705","title":"Southeast
   Crescent Regional Commission  - Economic and Infrastructure Development Grants","popular_name":"SCRC
-  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"}]'
+  SEID Program","agency":"Southeast Crescent Regional Commission","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
+  of Western Hemisphere Affairs (WHA) Grant Programs (including Energy and Climate
+  Partnership for the Americas)","popular_name":"Bureau of Western Hemisphere Affairs
+  WHA","agency":"Department of State","total_obs":19749999.0,"program_type":"assistance_listing"},{"cfda":"10.500","permalink":"/program/10.500","title":"Cooperative
+  Extension Service","popular_name":"CES","agency":"Department of Agriculture","total_obs":15557000.0,"program_type":"assistance_listing"},{"cfda":"15.148","permalink":"/program/15.148","title":"Tribal
+  Energy Development Capacity Grants","popular_name":"(TEDC )","agency":"Department
+  of the Interior","total_obs":14093527.0,"program_type":"assistance_listing"},{"cfda":"10.859","permalink":"/program/10.859","title":"Assistance
+  to High Energy Cost Rural Communities","popular_name":"High Energy Cost Grants","agency":"Department
+  of Agriculture","total_obs":7310307.0,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
+  Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program
+  (9005)","agency":"Department of Agriculture","total_obs":6666870.0,"program_type":"assistance_listing"},{"cfda":"66.046","permalink":"/program/66.046","title":"Climate
+  Pollution Reduction Grants","popular_name":null,"agency":"Environmental Protection
+  Agency","total_obs":5266209.0,"program_type":"assistance_listing"},{"cfda":"15.424","permalink":"/program/15.424","title":"Marine
+  Minerals Activities","popular_name":"Marine Minerals Activities","agency":"Department
+  of the Interior","total_obs":3432785.0,"program_type":"assistance_listing"},{"cfda":"10.087","permalink":"/program/10.087","title":"Biomass
+  Crop Assistance Program","popular_name":"BCAP","agency":"Department of Agriculture","total_obs":59000.0,"program_type":"assistance_listing"},{"cfda":"10.312","permalink":"/program/10.312","title":"Biomass
+  Research and Development Initiative Competitive Grants Program (BRDI)","popular_name":"BRDI","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.124","permalink":"/program/19.124","title":"East
+  Asia and Pacific Grants Program","popular_name":"U.S. Department of State, Bureau
+  of East Asian and Pacific Affairs,\r\nGrant Awards","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.750","permalink":"/program/85.750","title":"IAF
+  Assistance for Overseas Programs","popular_name":null,"agency":"Inter-American Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
+  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.065","permalink":"/program/81.065","title":"Nuclear
+  Legacy Cleanup Program","popular_name":"(Consultation and Cooperation Financial
+  Assistance)","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.989","permalink":"/program/19.989","title":"State/African
+  Regional - Other Economic Support Funds (ESF) Projects/Programs","popular_name":"African
+  Regional ESF - Other","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.057","permalink":"/program/81.057","title":"University
+  Coal Research","popular_name":"UCR","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Conservation
 total_num_agencies: 11
 total_num_applicant_types: 39

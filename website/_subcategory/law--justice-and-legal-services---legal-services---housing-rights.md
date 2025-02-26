@@ -6,16 +6,16 @@ agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":2,"to
   of State","total_num_programs":2,"total_obs":5999999.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":13},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":11},{"title":"Private
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":11},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":11},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":8},{"title":"State","total_num_programs":7},{"title":"Other
+  Recognized Indian Tribal Governments","total_num_programs":8},{"title":"State","total_num_programs":7},{"title":"Other
   public institution/organization","total_num_programs":6},{"title":"Profit organization","total_num_programs":4},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":4},{"title":"Individual/Family","total_num_programs":3},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":3},{"title":"Anyone/general
   public","total_num_programs":2},{"title":"Government - General","total_num_programs":2},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":2},{"title":"Other private institutions/organizations","total_num_programs":2},{"title":"U.S.
   Territories and possessions","total_num_programs":2},{"title":"Minority group","total_num_programs":1},{"title":"Non-Government
   - General","total_num_programs":1},{"title":"Small business (less than 500 employees)","total_num_programs":1},{"title":"Sponsored
@@ -476,42 +476,42 @@ fiscal_year: '2024'
 parent_permalink: /category/law--justice-and-legal-services
 parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---housing-rights
-programs: '[{"cfda":"14.408","permalink":"/program/14.408","title":"Fair Housing Initiatives
-  Program","popular_name":"(FHIP) Department of Housing and Urban Development, Office
-  of Fair Housing and Equal Opportunity","agency":"Department of Housing and Urban
-  Development","total_obs":38945457.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
-  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
-  in the Juvenile Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
-  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
-  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
-  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
-  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
-  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"14.416","permalink":"/program/14.416","title":"Education
-  and Outreach Initiatives","popular_name":"(FHIP EOI) Federal Agency   Department
-  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":10466207.0,"program_type":"assistance_listing"},{"cfda":"16.739","permalink":"/program/16.739","title":"National
-  Prison Rape Statistics Program ","popular_name":"PREA","agency":"Department of Justice","total_obs":1108317.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
+programs: '[{"cfda":"64.033","permalink":"/program/64.033","title":"VA Supportive
+  Services for Veteran Families Program","popular_name":null,"agency":"Department
+  of Veterans Affairs","total_obs":798000000.0,"program_type":"assistance_listing"},{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
-  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.033","permalink":"/program/64.033","title":"VA
-  Supportive Services for Veteran Families Program","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":798000000.0,"program_type":"assistance_listing"},{"cfda":"14.401","permalink":"/program/14.401","title":"Fair
+  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"14.408","permalink":"/program/14.408","title":"Fair
+  Housing Initiatives Program","popular_name":"(FHIP) Department of Housing and Urban
+  Development, Office of Fair Housing and Equal Opportunity","agency":"Department
+  of Housing and Urban Development","total_obs":38945457.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
+  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
+  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"14.401","permalink":"/program/14.401","title":"Fair
   Housing Assistance Program","popular_name":"(FHAP)","agency":"Department of Housing
   and Urban Development","total_obs":24984994.0,"program_type":"assistance_listing"},{"cfda":"14.418","permalink":"/program/14.418","title":"Private
   Enforcement Initiatives ","popular_name":"(FHIP PEI) United States Department of
   Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":24779250.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
-  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
-  Services for Veterans Grants","popular_name":"LSV-H","agency":"Department of Veterans
-  Affairs","total_obs":26800000.0,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
+  of Housing and Urban Development","total_obs":24779250.0,"program_type":"assistance_listing"},{"cfda":"16.021","permalink":"/program/16.021","title":"Justice
+  Systems Response to Families","popular_name":"Justice for Families Program","agency":"Department
+  of Justice","total_obs":14662085.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Volunteers In Service to America 94.013","popular_name":"94.013 Volunteers In Service
+  To America","agency":"Corporation for National and Community Service","total_obs":13275048.0,"program_type":"assistance_listing"},{"cfda":"14.416","permalink":"/program/14.416","title":"Education
+  and Outreach Initiatives","popular_name":"(FHIP EOI) Federal Agency   Department
+  of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
+  of Housing and Urban Development","total_obs":10466207.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
+  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
+  of State","total_obs":4999999.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
+  in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
+  in the Juvenile Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
+  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
+  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
   Housing Organization Initiatives","popular_name":"(FHIP FHOI) Federal Agency  Department
   of Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":3700000.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
-  of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
-  of State","total_obs":4999999.0,"program_type":"assistance_listing"}]'
+  of Housing and Urban Development","total_obs":3700000.0,"program_type":"assistance_listing"},{"cfda":"16.739","permalink":"/program/16.739","title":"National
+  Prison Rape Statistics Program ","popular_name":"PREA","agency":"Department of Justice","total_obs":1108317.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal Services - Housing Rights
 total_num_agencies: 6
 total_num_applicant_types: 31

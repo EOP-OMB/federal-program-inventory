@@ -32,13 +32,13 @@ agencies: '[{"title":"Department of Commerce","total_num_programs":19,"total_obs
   Commission","total_num_programs":3,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":137},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":131},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":126},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":119},{"title":"State
+  Recognized Indian Tribal Governments","total_num_programs":119},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":112},{"title":"State","total_num_programs":81},{"title":"Other
   public institution/organization","total_num_programs":71},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":61},{"title":"Other private institutions/organizations","total_num_programs":60},{"title":"U.S.
   Territories and possessions","total_num_programs":54},{"title":"Profit organization","total_num_programs":53},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":53},{"title":"Quasi-public
@@ -515,16 +515,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/community-development
-sub_cats: '[{"title":"Rural Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":67885473222.0},{"title":"Federal
+sub_cats: '[{"title":"Construction, Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":57,"total_obs":41469803578.0},{"title":"Federal
   Surplus Property","permalink":"/category/community-development/federal-surplus-property","total_num_programs":21,"total_obs":3374246067.0},{"title":"Fire
-  Protection","permalink":"/category/community-development/fire-protection","total_num_programs":29,"total_obs":27472592272.0},{"title":"Planning
-  and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":35878019172.0},{"title":"Construction,
-  Renewal and Operations","permalink":"/category/community-development/construction--renewal-and-operations","total_num_programs":57,"total_obs":41469803578.0},{"title":"Historical
-  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":44,"total_obs":5708114158.0},{"title":"Site
-  Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":6253885557.0},{"title":"Indian
-  Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":47,"total_obs":31220538849.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":38,"total_obs":7947425930.0},{"title":"Technical
-  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":8600987901.0},{"title":"Land
-  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":24,"total_obs":6546358695.0}]'
+  Protection","permalink":"/category/community-development/fire-protection","total_num_programs":29,"total_obs":27472592272.0},{"title":"Historical
+  Preservation","permalink":"/category/community-development/historical-preservation","total_num_programs":44,"total_obs":5708114158.0},{"title":"Indian
+  Action Services","permalink":"/category/community-development/indian-action-services","total_num_programs":47,"total_obs":31220538849.0},{"title":"Land
+  Acquisition","permalink":"/category/community-development/land-acquisition","total_num_programs":24,"total_obs":6546358695.0},{"title":"Planning
+  and Research","permalink":"/category/community-development/planning-and-research","total_num_programs":75,"total_obs":35878019172.0},{"title":"Recreation","permalink":"/category/community-development/recreation","total_num_programs":38,"total_obs":7947425930.0},{"title":"Rural
+  Community Development","permalink":"/category/community-development/rural-community-development","total_num_programs":97,"total_obs":67885473222.0},{"title":"Site
+  Acquisition","permalink":"/category/community-development/site-acquisition","total_num_programs":18,"total_obs":6253885557.0},{"title":"Technical
+  Assistance and Services","permalink":"/category/community-development/technical-assistance-and-services","total_num_programs":86,"total_obs":8600987901.0}]'
 title: Community Development
 total_num_agencies: 31
 total_num_applicant_types: 54

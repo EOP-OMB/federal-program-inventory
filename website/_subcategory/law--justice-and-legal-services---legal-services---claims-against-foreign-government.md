@@ -4,9 +4,9 @@ agencies: '[{"title":"Department of Justice","total_num_programs":5,"total_obs":
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":6},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":6},{"title":"Federally Recognized lndian Tribal
+  hospitals)","total_num_programs":6},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":5},{"title":"Local (includes State-designated
-  lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":5},{"title":"Profit
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":5},{"title":"Profit
   organization","total_num_programs":5},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":5},{"title":"Other
   private institutions/organizations","total_num_programs":3},{"title":"Other public
   institution/organization","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"State
@@ -14,7 +14,7 @@ applicant_types: '[{"title":"Private nonprofit institution/organization (include
   - General","total_num_programs":2},{"title":"U.S. Territories and possessions (includes
   institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
   public","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":1},{"title":"Small business (less than 500 employees)","total_num_programs":1},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"Sponsored
   organization","total_num_programs":1},{"title":"U.S. Territories and possessions","total_num_programs":1}]'
@@ -476,22 +476,22 @@ parent_title: Law, Justice and Legal Services
 permalink: /category/law--justice-and-legal-services/legal-services---claims-against-foreign-government
 programs: '[{"cfda":"16.045","permalink":"/program/16.045","title":"Community-Based
   Violence Intervention and Prevention Initiative","popular_name":"CVIPI","agency":"Department
-  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
-  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
-  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"19.701","permalink":"/program/19.701","title":"Global
-  Counterterrorism Programs","popular_name":"Countering Terrorism and Violent Extremism","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.204","permalink":"/program/19.204","title":"Fishermen''s
-  Guaranty Fund","popular_name":"(Section 7)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
-  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
-  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
+  of Justice","total_obs":86921273.0,"program_type":"assistance_listing"},{"cfda":"19.948","permalink":"/program/19.948","title":"Organization
   of American States Programs","popular_name":"Organization of American States Programs","agency":"Department
   of State","total_obs":4999999.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Girls
   in the Juvenile Justice System ","popular_name":"Delinquent Girls program, Girls
   in the Juvenile Justice system","agency":"Department of Justice","total_obs":4919335.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
   of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration
-  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"}]'
+  ","agency":"Department of Justice","total_obs":4502689.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"16.922","permalink":"/program/16.922","title":"Equitable
+  Sharing Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.204","permalink":"/program/19.204","title":"Fishermen''s
+  Guaranty Fund","popular_name":"(Section 7)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.701","permalink":"/program/19.701","title":"Global
+  Counterterrorism Programs","popular_name":"Countering Terrorism and Violent Extremism","agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.345","permalink":"/program/19.345","title":"International
+  Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
+  Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.825","permalink":"/program/16.825","title":"Smart
+  Prosecution Initiative","popular_name":"IPI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal Services - Claims Against Foreign Government
 total_num_agencies: 3
 total_num_applicant_types: 31

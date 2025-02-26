@@ -17,15 +17,15 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":95},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":86},{"title":"Private
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":86},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":84},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":84},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":77},{"title":"State","total_num_programs":44},{"title":"Other
+  Recognized Indian Tribal Governments","total_num_programs":77},{"title":"State","total_num_programs":44},{"title":"Other
   public institution/organization","total_num_programs":40},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":36},{"title":"Profit
   organization","total_num_programs":30},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":28},{"title":"Other
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":28},{"title":"Other
   private institutions/organizations","total_num_programs":26},{"title":"U.S. Territories
   and possessions","total_num_programs":26},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":24},{"title":"Government
   - General","total_num_programs":21},{"title":"Specialized group (e.g. health professionals,
@@ -492,15 +492,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/law--justice-and-legal-services
-sub_cats: '[{"title":"Legal Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":130280429.0},{"title":"Law
-  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":4694264410.719999},{"title":"Law
-  Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":87,"total_obs":4024145648.0},{"title":"Legal
-  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":102343296.0},{"title":"Law
-  Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":2453967773.0},{"title":"Law
-  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":6069696315.0},{"title":"Legal
+sub_cats: '[{"title":"Law Enforcement - Crime Analysis and Data","permalink":"/category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data","total_num_programs":58,"total_obs":2453967773.0},{"title":"Law
+  Enforcement - Narcotics and Dangerous Drugs","permalink":"/category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs","total_num_programs":22,"total_obs":6069696315.0},{"title":"Law
+  Enforcement - Planning and Operations","permalink":"/category/law--justice-and-legal-services/law-enforcement---planning-and-operations","total_num_programs":87,"total_obs":4024145648.0},{"title":"Law
+  Enforcement - Research, Education, Training","permalink":"/category/law--justice-and-legal-services/law-enforcement---research--education--training","total_num_programs":97,"total_obs":4694264410.719999},{"title":"Legal
+  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":102343296.0},{"title":"Legal
+  Services - Employment Rights","permalink":"/category/law--justice-and-legal-services/legal-services---employment-rights","total_num_programs":12,"total_obs":130280429.0},{"title":"Legal
   Services - General Services","permalink":"/category/law--justice-and-legal-services/legal-services---general-services","total_num_programs":52,"total_obs":4030581330.0},{"title":"Legal
   Services - Housing Rights","permalink":"/category/law--justice-and-legal-services/legal-services---housing-rights","total_num_programs":18,"total_obs":1059064654.0},{"title":"Legal
-  Services - Claims Against Foreign Government","permalink":"/category/law--justice-and-legal-services/legal-services---claims-against-foreign-government","total_num_programs":11,"total_obs":102343296.0}]'
+  Services - Labor Management","permalink":"/category/law--justice-and-legal-services/legal-services---labor-management","total_num_programs":10,"total_obs":102343296.0}]'
 title: Law, Justice and Legal Services
 total_num_agencies: 16
 total_num_applicant_types: 46

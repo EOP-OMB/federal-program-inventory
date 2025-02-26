@@ -15,15 +15,15 @@ agencies: '[{"title":"Department of Housing and Urban Development","total_num_pr
   of Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Private nonprofit institution/organization (includes
   institutions of higher education and hospitals)","total_num_programs":48},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":43},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":37},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":33},{"title":"Individual/Family","total_num_programs":27},{"title":"Profit
+  Recognized Indian Tribal Governments","total_num_programs":33},{"title":"Individual/Family","total_num_programs":27},{"title":"Profit
   organization","total_num_programs":26},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":23},{"title":"Other
   public institution/organization","total_num_programs":21},{"title":"State","total_num_programs":21},{"title":"Government
   - General","total_num_programs":16},{"title":"Other private institutions/organizations","total_num_programs":16},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":14},{"title":"Specialized group (e.g. health
   professionals, students, veterans)","total_num_programs":14},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":12},{"title":"Non-Government
@@ -488,16 +488,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/housing
-sub_cats: '[{"title":"Property and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":5309679242.0},{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":53302818483.0},{"title":"Cooperatives,
-  Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":22131370075.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":24,"total_obs":7023635741.0},{"title":"Construction
-  Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":39,"total_obs":40390577487.0},{"title":"Rural
-  Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":11226173218.0},{"title":"Site
-  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":7128712372.0},{"title":"Experimental
+sub_cats: '[{"title":"Construction Rehabilitation","permalink":"/category/housing/construction-rehabilitation","total_num_programs":39,"total_obs":40390577487.0},{"title":"Cooperatives,
+  Rental","permalink":"/category/housing/cooperatives--rental","total_num_programs":29,"total_obs":22131370075.0},{"title":"Experimental
   and Development Projects","permalink":"/category/housing/experimental-and-development-projects","total_num_programs":16,"total_obs":5459937344.0},{"title":"Home
   Improvement","permalink":"/category/housing/home-improvement","total_num_programs":35,"total_obs":73300747547.0},{"title":"Homebuying,
-  Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":101404039709.0},{"title":"Land
-  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":7108712372.0},{"title":"Indian
-  Housing","permalink":"/category/housing/indian-housing","total_num_programs":19,"total_obs":7322982178.0}]'
+  Homeownership","permalink":"/category/housing/homebuying--homeownership","total_num_programs":36,"total_obs":101404039709.0},{"title":"Indian
+  Housing","permalink":"/category/housing/indian-housing","total_num_programs":19,"total_obs":7322982178.0},{"title":"Land
+  Acquisition","permalink":"/category/housing/land-acquisition","total_num_programs":12,"total_obs":7108712372.0},{"title":"Multifamily","permalink":"/category/housing/multifamily","total_num_programs":37,"total_obs":53302818483.0},{"title":"Planning","permalink":"/category/housing/planning","total_num_programs":24,"total_obs":7023635741.0},{"title":"Property
+  and Mortgage Insurance","permalink":"/category/housing/property-and-mortgage-insurance","total_num_programs":14,"total_obs":5309679242.0},{"title":"Rural
+  Housing","permalink":"/category/housing/rural-housing","total_num_programs":27,"total_obs":11226173218.0},{"title":"Site
+  Preparation for Housing","permalink":"/category/housing/site-preparation-for-housing","total_num_programs":14,"total_obs":7128712372.0}]'
 title: Housing
 total_num_agencies: 15
 total_num_applicant_types: 42
