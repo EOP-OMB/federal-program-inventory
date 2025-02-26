@@ -457,17 +457,17 @@ fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/international-affairs
-programs: '[{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion of income
-  earned abroad by U.S. citizens","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":5500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.003","permalink":"/program/TC.003","title":"Exclusion
-  of certain allowances for Federal employees abroad","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":330000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced
-  tax rate on active income of controlled foreign corporations (normal tax method)","popular_name":null,"agency":"Department
+programs: '[{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced tax rate
+  on active income of controlled foreign corporations (normal tax method)","popular_name":null,"agency":"Department
   of the Treasury","total_obs":36060000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.005","permalink":"/program/TC.005","title":"Deduction
   for foreign-derived intangible income derived from trade or business within the
-  United States","popular_name":null,"agency":"Department of the Treasury","total_obs":15950000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.006","permalink":"/program/TC.006","title":"Interest
+  United States","popular_name":null,"agency":"Department of the Treasury","total_obs":15950000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion
+  of income earned abroad by U.S. citizens","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":5500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.006","permalink":"/program/TC.006","title":"Interest
   Charge Domestic International Sales Corporations (IC-DISCs)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1860000000.0,"program_type":"tax_expenditure"}]'
+  of the Treasury","total_obs":1860000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.003","permalink":"/program/TC.003","title":"Exclusion
+  of certain allowances for Federal employees abroad","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":330000000.0,"program_type":"tax_expenditure"}]'
 title: International Affairs
 total_num_agencies: 1
 total_num_applicant_types: 0

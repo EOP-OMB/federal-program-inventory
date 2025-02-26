@@ -13,9 +13,9 @@ agencies: '[{"title":"Department of Transportation","total_num_programs":82,"tot
   Commission","total_num_programs":1,"total_obs":0.0},{"title":"Agency for International
   Development","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":51},{"title":"Local (includes
-  State-designated lndian Tribes, excludes institutions of higher education and hospitals","total_num_programs":48},{"title":"State
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":48},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":43},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":32},{"title":"Public
+  Recognized Indian Tribal Governments","total_num_programs":32},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":32},{"title":"Other public institution/organization","total_num_programs":24},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -24,7 +24,7 @@ applicant_types: '[{"title":"State","total_num_programs":51},{"title":"Local (in
   - General","total_num_programs":17},{"title":"Intrastate","total_num_programs":17},{"title":"Profit
   organization","total_num_programs":15},{"title":"Other private institutions/organizations","total_num_programs":14},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":11},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":9},{"title":"Sponsored organization","total_num_programs":8},{"title":"Federal","total_num_programs":7},{"title":"Non-Government
   - General","total_num_programs":7},{"title":"Anyone/general public","total_num_programs":5},{"title":"Small
   business (less than 500 employees)","total_num_programs":4},{"title":"City or Township
@@ -487,11 +487,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/transportation
-sub_cats: '[{"title":"Water Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":26,"total_obs":5316686672.0},{"title":"Rail
-  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":30549659852.0},{"title":"Highways,
-  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":60,"total_obs":74776354729.72},{"title":"Urban
-  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":42,"total_obs":22868338043.0},{"title":"Air
-  Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":24,"total_obs":12530679333.0}]'
+sub_cats: '[{"title":"Air Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":24,"total_obs":12530679333.0},{"title":"Highways,
+  Public Roads, and Bridges","permalink":"/category/transportation/highways--public-roads--and-bridges","total_num_programs":60,"total_obs":74776354729.72},{"title":"Rail
+  Transportation","permalink":"/category/transportation/rail-transportation","total_num_programs":45,"total_obs":30549659852.0},{"title":"Urban
+  Mass Transit","permalink":"/category/transportation/urban-mass-transit","total_num_programs":42,"total_obs":22868338043.0},{"title":"Water
+  Navigation","permalink":"/category/transportation/water-navigation","total_num_programs":26,"total_obs":5316686672.0}]'
 title: Transportation
 total_num_agencies: 13
 total_num_applicant_types: 42

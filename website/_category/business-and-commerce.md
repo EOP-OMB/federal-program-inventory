@@ -31,14 +31,14 @@ applicant_types: '[{"title":"Private nonprofit institution/organization (include
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":83},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":81},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":70},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":70},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":67},{"title":"Profit organization","total_num_programs":66},{"title":"Other
   private institutions/organizations","total_num_programs":56},{"title":"Other public
   institution/organization","total_num_programs":54},{"title":"State","total_num_programs":54},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":44},{"title":"Small business
   (less than 500 employees)","total_num_programs":39},{"title":"Non-Government - General","total_num_programs":38},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":36},{"title":"U.S. Territories and possessions","total_num_programs":33},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":32},{"title":"Anyone/general
   public","total_num_programs":30},{"title":"Individual/Family","total_num_programs":29},{"title":"Federal","total_num_programs":20},{"title":"Government
@@ -499,12 +499,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"Small Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":74945360466.0},{"title":"Economic
-  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":71007686429.0},{"title":"Minority
-  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":8604828612.0},{"title":"Special
-  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":834089333.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":33045573835.0},{"title":"Commercial
-  Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":1461646875.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":897514858.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":2068500441.0},{"title":"Economic
-  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":26438227369.0}]'
+sub_cats: '[{"title":"Commercial Fisheries","permalink":"/category/business-and-commerce/commercial-fisheries","total_num_programs":30,"total_obs":1461646875.0},{"title":"Economic
+  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":108,"total_obs":71007686429.0},{"title":"Economic
+  Injury and Natural Disaster","permalink":"/category/business-and-commerce/economic-injury-and-natural-disaster","total_num_programs":42,"total_obs":26438227369.0},{"title":"International","permalink":"/category/business-and-commerce/international","total_num_programs":36,"total_obs":33045573835.0},{"title":"Maritime","permalink":"/category/business-and-commerce/maritime","total_num_programs":28,"total_obs":2068500441.0},{"title":"Minority
+  Business Enterprise","permalink":"/category/business-and-commerce/minority-business-enterprise","total_num_programs":39,"total_obs":8604828612.0},{"title":"Small
+  Business","permalink":"/category/business-and-commerce/small-business","total_num_programs":76,"total_obs":74945360466.0},{"title":"Special
+  Technical Service","permalink":"/category/business-and-commerce/special-technical-service","total_num_programs":34,"total_obs":834089333.0},{"title":"Statistics","permalink":"/category/business-and-commerce/statistics","total_num_programs":19,"total_obs":897514858.0}]'
 title: Business and Commerce
 total_num_agencies: 28
 total_num_applicant_types: 39

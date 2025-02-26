@@ -11,7 +11,7 @@ import constants
 import pandas as pd
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "/Volumes/CER01/"
+TEMP_DB_DISK_DIRECTORY = "./Volumes/CER01/"
 TEMP_DB_FILE_PATH = "temp_data.db"
 
 # transformed database, for use in the load / generate stage
@@ -20,16 +20,15 @@ TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "/Volumes/CER01/"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance/"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance/"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract/"
-CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
+USASPENDING_DISK_DIRECTORY = "./Volumes/CER01/"
+ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance"
+ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance"
+CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract"
+CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract"
 
 # extracted file paths
-REPO_DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/" \
-                      + "will-fpi/federal-program-inventory/"
-EXTRACTED_FILES_DIRECTORY = "data_processing/extracted/"
+REPO_DISK_DIRECTORY = ""
+EXTRACTED_FILES_DIRECTORY = "extracted/"
 
 # additional programs dataset path
 ADDITIONAL_PROGRAMS_DATA_PATH = REPO_DISK_DIRECTORY \
@@ -329,6 +328,22 @@ OTHER_PROGRAM_SPENDING_INSERT_SQL = """
     VALUES (?, ?, ?, ?, ?);
     """
 
+IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS improper_payment_mapping;
+"""
+
+IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL = """
+    CREATE TABLE improper_payment_mapping (
+        program_id TEXT NOT NULL,
+        improper_payment_program_name TEXT,
+        outlays DECIMAL,
+        improper_payment_amount DECIMAL,
+        insufficient_documentation_amount DECIMAL,
+        high_priority_program INTEGER,
+        FOREIGN KEY(program_id) REFERENCES program(id)
+    );
+"""
+
 # establish a database connection to store temporary working data
 temp_conn = sqlite3.connect(TEMP_DB_DISK_DIRECTORY + TEMP_DB_FILE_PATH)
 temp_cur = temp_conn.cursor()
@@ -582,7 +597,7 @@ def load_sam_programs():
                         "https://grants.gov/search-grants?cfda="
                         + d["programNumber"],
                         "assistance_listing",
-                        any(item.get("code")=="subpartF" and item.get("isSelected") is True 
+                        any(item.get("code")=="subpartF" and item.get("isSelected") is True
                             for item in d["compliance"]["CFR200Requirements"]["questions"]),
                         d["compliance"]["documents"].get("description")
                         ])
@@ -885,7 +900,7 @@ def load_additional_programs():
     for ind, record in df[df['program.id'].notnull()].iterrows():
         program_query = """
             INSERT INTO program
-            (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type) 
+            (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """
         program_values = (
@@ -954,17 +969,62 @@ def load_additional_programs():
 
     conn.commit()
 
+def load_improper_payment_mapping():
+    """Loads improper payment mapping data from CSV into the database."""
+    cur.execute(IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL)
+    cur.execute(IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL)
+    
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "improper-payment-program-mapping.csv"
+    
+    if not os.path.exists(file_path):
+        print(f"{file_path} - Not Found")
+        return
+        
+    df = pd.read_csv(file_path)
+    
+    # Strip whitespace from column names
+    df.columns = df.columns.str.strip()
+    
+    # Clean monetary columns - remove $ and commas, convert to float
+    money_columns = ['outlays', 'improper_payment_amount', 'insufficient_documentation_amount']
+    for col in money_columns:
+        # Handle potential NaN/empty values
+        df[col] = df[col].fillna('0')
+        df[col] = df[col].str.replace('$', '').str.replace(',', '').astype(float)
+    
+    # Convert boolean to integer
+    df['high_priority_program'] = df['high_priority_program'].astype(int)
+    
+    for _, row in df.iterrows():
+        cur.execute("""
+            INSERT INTO improper_payment_mapping 
+            (program_id, improper_payment_program_name, outlays, 
+             improper_payment_amount, insufficient_documentation_amount, 
+             high_priority_program)
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, (
+            row['program_id'],
+            row['improper_payment_program_name'],
+            row['outlays'],
+            row['improper_payment_amount'],
+            row['insufficient_documentation_amount'],
+            row['high_priority_program']
+        ))
+    
+    conn.commit()
+    print("Successfully loaded improper payment mapping data")
 
 # uncomment the necessary functions to database with data
 #
 # load_usaspending_initial_files()
-load_usaspending_delta_files()
-transform_and_insert_usaspending_aggregation_data()
-load_agency()
-load_sam_category()
-load_sam_programs()
-load_category_and_sub_category()
-load_additional_programs()
+# load_usaspending_delta_files()
+# transform_and_insert_usaspending_aggregation_data()
+# load_agency()
+# load_sam_category()
+# load_sam_programs()
+# load_category_and_sub_category()
+# load_additional_programs()
+# load_improper_payment_mapping()
 
 # close the db connection
 conn.close()

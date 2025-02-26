@@ -89,7 +89,7 @@ footer_include: _footer-program.html
         </p>
 
         <!-- View Controls -->
-        <div class="display-flex flex-align-center display-none">
+        <div id="viewControls" class="display-flex flex-align-center display-none">
           <span class="font-sans-lg margin-right-2">View:</span>
           <div class="usa-radio display-flex flex-align-center margin-right-2">
             <input class="usa-radio__input" id="obligations" type="radio" name="view-options" checked />
@@ -114,7 +114,7 @@ footer_include: _footer-program.html
           aria-label="Chart displaying data based on selection" role="img"></svg>
 
         <!-- Download Button -->
-        <button id="downloadData" class="usa-button usa-button--outline border-2px">
+        <button id="downloadData" class="usa-button usa-button--outline border-2px hover:border-2px">
           <span>Download .csv file</span>
           <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
             <use xlink:href="/assets/img/sprite.svg#file_download"></use>
@@ -188,6 +188,55 @@ footer_include: _footer-program.html
       </div>
       {% endif %}
       <!-- Single Audit End -->
+
+      <!-- Improper Payment Information-->
+      <div class="usa-accordion">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
+            aria-controls="improper-payment">
+            Improper payment information
+          </button>
+        </h4>
+        <div id="improper-payment" class="usa-accordion__content">
+          {% if page.improper_payments == null %}
+          <div class="usa-alert usa-alert--success">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text font-family-sans">
+                This program is not associated with any Improper Payment Program Activities that were at risk of
+                significant improper payments.
+              </p>
+            </div>
+          </div>
+          {% else %}
+          <p>Improper payments are payments that not made in the correct amount (i.e., overpayments or underpayments), not made to the correct recipient, or not made with strict adherence to agency policies and procedures. Improper payments are not a measure of fraud.
+            <br/>
+            <br/>
+            Agencies may report improper payment information for program activities that differ from the programs listed on the Federal Program Inventory. OMB is working with agencies to align this reporting. The table below shows all Improper Payment Program Activities associated with this program, as well as other programs related to each Improper Payment Program Activity.</p>
+          <span>
+            View more information 
+          </span>
+          <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
+            rel="noopener noreferrer">
+            PaymentAccuracy.gov</a>
+            <table class="usa-table usa-table--borderless .usa-table--white-header" id="improper-payments-table">
+              <thead>
+                <tr>
+                  <th class= "text-top" scope="col">Improper Payment Program Activity for FY 2024</th>
+                  <th class= "text-top" scope="col">Related Programs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Data will be inserted here by JavaScript -->
+              </tbody>
+            </table>
+            <p>
+              <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
+              Shows Improper Payment Programs that are considered High Priority Programs
+            </p>
+            {% endif %}
+        </div>
+      </div>
+      <!-- Improper Payment Information end-->
 
       <!-- Program oversight reports Start -->
       <div class="usa-accordion">

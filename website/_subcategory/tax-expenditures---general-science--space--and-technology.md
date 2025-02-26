@@ -457,11 +457,10 @@ fiscal_year: '2024'
 parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/general-science--space--and-technology
-programs: '[{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing of research
-  and experimentation expenditures (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":-25050000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.008","permalink":"/program/TC.008","title":"Credit
-  for increasing research activities","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":30040000000.0,"program_type":"tax_expenditure"}]'
+programs: '[{"cfda":"TC.008","permalink":"/program/TC.008","title":"Credit for increasing
+  research activities","popular_name":null,"agency":"Department of the Treasury","total_obs":30040000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing
+  of research and experimentation expenditures (normal tax method)","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":-25050000000.0,"program_type":"tax_expenditure"}]'
 title: General Science, Space, and Technology
 total_num_agencies: 1
 total_num_applicant_types: 0
