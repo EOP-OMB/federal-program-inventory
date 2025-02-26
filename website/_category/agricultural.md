@@ -19,11 +19,11 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":130},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":123},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":116},{"title":"Federally Recognized lndian Tribal
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":116},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":113},{"title":"State","total_num_programs":92},{"title":"Other
   public institution/organization","total_num_programs":86},{"title":"Individual/Family","total_num_programs":69},{"title":"Native
-  American Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":69},{"title":"Profit organization","total_num_programs":67},{"title":"Other
   private institutions/organizations","total_num_programs":51},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":50},{"title":"Federal","total_num_programs":44},{"title":"Quasi-public
@@ -499,11 +499,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Resource Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":74,"total_obs":16181399275.0},{"title":"Stabilization
+sub_cats: '[{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":9176615100.0},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":5107655996.25},{"title":"Production
+  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":33577664563.95},{"title":"Research
+  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":5191257639.0},{"title":"Resource
+  Conservation and Development","permalink":"/category/agricultural/resource-conservation-and-development","total_num_programs":74,"total_obs":16181399275.0},{"title":"Stabilization
   and Conservation Service","permalink":"/category/agricultural/stabilization-and-conservation-service","total_num_programs":50,"total_obs":31873907057.12},{"title":"Technical
-  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":8243878731.8},{"title":"Forestry","permalink":"/category/agricultural/forestry","total_num_programs":82,"total_obs":9176615100.0},{"title":"Research
-  and Development","permalink":"/category/agricultural/research-and-development","total_num_programs":77,"total_obs":5191257639.0},{"title":"Marketing","permalink":"/category/agricultural/marketing","total_num_programs":71,"total_obs":5107655996.25},{"title":"Production
-  and Operation","permalink":"/category/agricultural/production-and-operation","total_num_programs":79,"total_obs":33577664563.95}]'
+  Assistance, Information and Services","permalink":"/category/agricultural/technical-assistance--information-and-services","total_num_programs":112,"total_obs":8243878731.8}]'
 title: Agricultural
 total_num_agencies: 16
 total_num_applicant_types: 53

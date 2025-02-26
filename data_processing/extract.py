@@ -359,12 +359,62 @@ def extract_usaspending_award_hashes():
         f.write(json.dumps(hashes))
     print("Extract USASpending.gov Hashes Complete")
 
+def clean_json_data(filename):
+    """Cleans and standardizes JSON data by fixing common errors and 
+    standardizing text formatting.
+    """
+    import json
+    
+    # Define text corrections
+    corrections = {
+        'lndian': 'Indian',
+    }
+    
+    def clean_text(text):
+        """Helper function to clean individual text values."""
+        if not isinstance(text, str):
+            return text
+        for wrong, right in corrections.items():
+            text = text.replace(wrong, right)
+        return text
+    
+    def clean_dict(d):
+        """Recursively clean all string values in a dictionary."""
+        if isinstance(d, dict):
+            return {k: clean_dict(v) for k, v in d.items()}
+        elif isinstance(d, list):
+            return [clean_dict(item) for item in d]
+        elif isinstance(d, str):
+            return clean_text(d)
+        return d
+    
+    # Read the JSON file
+    input_file = DISK_DIRECTORY + EXTRACTED_DIRECTORY + filename
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    # Clean the data
+    cleaned_data = clean_dict(data)
+    
+    # Save cleaned data back to file
+    with open(input_file, 'w', encoding='utf-8') as f:
+        json.dump(cleaned_data, f, indent=2)
+        
+    print(f"Clean {filename} Complete")
+    
+def clean_all_data():
+    """Cleans all extracted JSON data files."""
+    clean_json_data("assistance-listings.json")
+    clean_json_data("dictionary.json")
+    print("All Data Cleaning Complete")
 
 # Uncomment the necessary functions to extract new data.
 #
 # extract_categories_from_pdf("2023")
 # extract_assistance_listing()
+
 # extract_dictionary()
+# clean_all_data()
 # extract_organizations()
 # extract_usaspending_award_hashes()
 

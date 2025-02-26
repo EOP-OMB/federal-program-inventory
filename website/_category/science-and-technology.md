@@ -28,14 +28,14 @@ applicant_types: '[{"title":"Public nonprofit institution/organization (includes
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":124},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":113},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
+  (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":92},{"title":"Other public institution/organization","total_num_programs":84},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":67},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":66},{"title":"Profit
+  Recognized Indian Tribal Governments","total_num_programs":66},{"title":"Profit
   organization","total_num_programs":64},{"title":"State","total_num_programs":64},{"title":"Other
   private institutions/organizations","total_num_programs":63},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":51},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":48},{"title":"Federal","total_num_programs":46},{"title":"Small
   business (less than 500 employees)","total_num_programs":46},{"title":"U.S. Territories
   and possessions","total_num_programs":42},{"title":"Individual/Family","total_num_programs":32},{"title":"Non-Government
@@ -500,9 +500,9 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2024'
 permalink: /category/science-and-technology
-sub_cats: '[{"title":"Research - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":15333974519.93},{"title":"Research
-  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":21412685181.59},{"title":"Information
-  and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":8647660294.93}]'
+sub_cats: '[{"title":"Information and Technical","permalink":"/category/science-and-technology/information-and-technical","total_num_programs":78,"total_obs":8647660294.93},{"title":"Research
+  - General","permalink":"/category/science-and-technology/research---general","total_num_programs":99,"total_obs":15333974519.93},{"title":"Research
+  - Specialized","permalink":"/category/science-and-technology/research---specialized","total_num_programs":123,"total_obs":21412685181.59}]'
 title: Science and Technology
 total_num_agencies: 24
 total_num_applicant_types: 42

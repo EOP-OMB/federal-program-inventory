@@ -19,9 +19,9 @@ agencies: '[{"title":"Department of Homeland Security","total_num_programs":43,"
   for National and Community Service","total_num_programs":2,"total_obs":2910238.0},{"title":"Department
   of Energy","total_num_programs":1,"total_obs":2604724.0},{"title":"National Credit
   Union Administration","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, excludes
+applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":59},{"title":"Federally
-  Recognized lndian Tribal Governments","total_num_programs":58},{"title":"Public
+  Recognized Indian Tribal Governments","total_num_programs":58},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":51},{"title":"Private nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":50},{"title":"State
@@ -30,7 +30,7 @@ applicant_types: '[{"title":"Local (includes State-designated lndian Tribes, exc
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":31},{"title":"U.S.
   Territories and possessions","total_num_programs":26},{"title":"Government - General","total_num_programs":18},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":18},{"title":"Native American
-  Organizations (includes lndian groups, cooperatives, corporations, partnerships,
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":17},{"title":"Non-Government - General","total_num_programs":12},{"title":"Other
   private institutions/organizations","total_num_programs":11},{"title":"Anyone/general
   public","total_num_programs":10},{"title":"Specialized group (e.g. health professionals,
@@ -495,8 +495,8 @@ categories_subcategories:
 fiscal_year: '2024'
 permalink: /category/disaster-prevention-and-relief
 sub_cats: '[{"title":"Disaster Relief","permalink":"/category/disaster-prevention-and-relief/disaster-relief","total_num_programs":83,"total_obs":48008656100.53},{"title":"Emergency
-  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":11613318313.99},{"title":"Emergency
-  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":7967225205.0},{"title":"Flood
+  Health Services","permalink":"/category/disaster-prevention-and-relief/emergency-health-services","total_num_programs":33,"total_obs":7967225205.0},{"title":"Emergency
+  Preparedness, Civil Defense","permalink":"/category/disaster-prevention-and-relief/emergency-preparedness--civil-defense","total_num_programs":76,"total_obs":11613318313.99},{"title":"Flood
   Prevention and Control","permalink":"/category/disaster-prevention-and-relief/flood-prevention-and-control","total_num_programs":35,"total_obs":12096770812.0}]'
 title: Disaster Prevention and Relief
 total_num_agencies: 21

@@ -10,6 +10,8 @@ categories:
 cfda: TC.104
 fiscal_year: '2024'
 grants_url: null
+improper_payments: '[{"name":"Internal Revenue Service - American Opportunity Tax
+  Credit","outlays":5176490000.0,"improper_payments":1431300000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
