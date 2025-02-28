@@ -1164,6 +1164,15 @@
     }
   }
 
+  function calculatePercentage(numerator, denominator) {
+    // Check if denominator is valid (not zero, undefined, or null)
+    if (!denominator || denominator === 0) {
+      return "0.0"; // Return zero percent if outlays are zero/invalid
+    }
+    
+    return ((numerator / denominator) * 100).toFixed(1);
+  }
+
   function createImproperPaymentsTable() {
   const tableBody = document.querySelector('#improper-payments-table tbody');
   if (!tableBody || !improperPaymentsData) return;
@@ -1186,8 +1195,8 @@
       <p>${nameWithIcon}</p>
       <ul>
         <li>Outlays: ${formatObligations(payment.outlays)}</li>
-        <li>Improper Payments: ${formatObligations(payment.improper_payments)} (${((payment.improper_payments / payment.outlays) * 100).toFixed(1)}%)</li>
-        <li>Insufficient Documentation Payments: ${formatObligations(payment.insufficient_payment)} (${((payment.insufficient_payment / payment.outlays) * 100).toFixed(1)}%)</li>
+        <li>Improper Payments: ${formatObligations(payment.improper_payments)} (${calculatePercentage(payment.improper_payments, payment.outlays)}%)</li>
+        <li>Insufficient Documentation Payments: ${formatObligations(payment.insufficient_payment)} (${calculatePercentage(payment.insufficient_payment, payment.outlays)}%)</li>
       </ul>
     `;
 
