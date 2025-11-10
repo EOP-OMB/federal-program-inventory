@@ -1,0 +1,40 @@
+<script>
+    function initializeProgramFilters() {
+    document.querySelectorAll(".program-filter").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const filterType = this.dataset.filterType;
+        let filters = {
+          category: []
+        };
+
+        switch (filterType) {
+          case "sub-category":
+            filters.category.push({
+              type: "sub-category",
+              parentTitle: this.dataset.categoryTitle,
+              title: this.dataset.subcategoryTitle,
+            });
+            break;
+
+          case "category":
+            filters.category.push({
+              type: "category",
+              selectAll: true,
+              title: this.dataset.categoryTitle,
+            });
+            break;
+        }
+
+        const compressed = compressFilters(filters);
+        const encodedFilters = btoa(JSON.stringify(compressed));
+        window.location.href = `/search?f=${encodedFilters}`;
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initializeProgramFilters();
+  });
+</script>

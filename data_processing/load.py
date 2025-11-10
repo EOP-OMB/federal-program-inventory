@@ -2,6 +2,7 @@
 
 import sqlite3
 import os
+import shutil
 import json
 import yaml
 import csv
@@ -16,9 +17,10 @@ full_path = os.path.join(CURRENT_DIR, DB_FILE_PATH)
 FISCAL_YEARS = ['2023', '2024', '2025']
 
 
-def ensure_directory_exists(directory_path):
-    if not os.path.exists(directory_path):
-        os.makedirs(directory_path)
+def recreate_directory(directory_path):
+    if os.path.isdir(directory_path):
+        shutil.rmtree(directory_path)
+    os.makedirs(directory_path)
 
 
 def get_assistance_program_obligations(cursor, program_id, fiscal_years):
@@ -343,15 +345,15 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
     # Fetch parent categories with their subcategories
     cursor.execute("""
         SELECT DISTINCT
-            pc.id as parent_id,
-            pc.name as parent_name,
-            c.name as sub_name
-        FROM category pc
-        LEFT JOIN category c ON c.parent_id = pc.id
-        JOIN program_to_category ptc ON ptc.category_id = c.id
-        JOIN program p ON ptc.program_id = p.id
-        WHERE ptc.category_type = 'category'
-        ORDER BY pc.name, c.name
+            taxonomy_category.id as parent_id,
+            taxonomy_category.category as parent_name,
+            taxonomy_focus_area.focus_area as sub_name
+        FROM taxonomy_category
+        JOIN program_taxonomy_lookup ON
+            taxonomy_category.id = program_taxonomy_lookup.taxonomy_category_id
+        LEFT JOIN taxonomy_focus_area ON
+            taxonomy_category.id = taxonomy_focus_area.category_id
+        ORDER BY taxonomy_category.category, taxonomy_focus_area.focus_area
     """)
 
     categories = []
@@ -433,41 +435,26 @@ def get_improper_payment_info(cursor: sqlite3.Cursor, program_id: str) -> List[D
 
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for categories with obligations from both regular and other programs."""
-    ensure_directory_exists(output_dir)
+    recreate_directory(output_dir)
 
     # Get all parent categories with at least one program
     cursor.execute("""
-        WITH program_counts AS (
-            SELECT
-                c.parent_id,
-                COUNT(DISTINCT p.id) as program_count
-            FROM category c
-            JOIN program_to_category ptc ON c.id = ptc.category_id
-            JOIN program p ON ptc.program_id = p.id
-            WHERE c.type = 'category'
-            AND ptc.category_type = 'category'
-            AND c.parent_id IS NOT NULL
-            GROUP BY c.parent_id
-            HAVING program_count > 0
-        )
         SELECT DISTINCT
-            c.parent_id as id,
-            pc.name as title
-        FROM category c
-        JOIN category pc ON c.parent_id = pc.id
-        JOIN program_counts pc_count ON c.parent_id = pc_count.parent_id
+            taxonomy_category.category AS title,
+            taxonomy_category.id
+        FROM taxonomy_category
+        JOIN program_taxonomy_lookup ON taxonomy_category.id = program_taxonomy_lookup.taxonomy_category_id
     """)
 
     parent_categories = cursor.fetchall()
     for parent in parent_categories:
         # Get unique program IDs in this category
         cursor.execute("""
-            SELECT DISTINCT p.id, p.program_type
-            FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id
-            WHERE c.parent_id = ?
-            AND ptc.category_type = 'category'
+            SELECT program.id, program.program_type
+            FROM program
+            JOIN program_taxonomy_lookup
+                ON program_taxonomy_lookup.program_id = program.id
+            WHERE program_taxonomy_lookup.taxonomy_category_id = ?
         """, (parent['id'],))
 
         programs = cursor.fetchall()
@@ -500,28 +487,24 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
 
         # Get subcategories with their stats
         cursor.execute("""
-            SELECT
-                c.name as title,
-                c.id as category_id
-            FROM category c
-            WHERE c.parent_id = ?
-            AND EXISTS (
-                SELECT 1
-                FROM program_to_category ptc
-                WHERE ptc.category_id = c.id
-                AND ptc.category_type = 'category'
-            )
+            SELECT DISTINCT
+                taxonomy_focus_area.focus_area AS title,
+                taxonomy_focus_area.id AS category_id
+            FROM taxonomy_focus_area
+            JOIN program_taxonomy_lookup
+                ON taxonomy_focus_area.id = program_taxonomy_lookup.taxonomy_focus_area_id
+            WHERE taxonomy_focus_area.category_id = ?
         """, (parent['id'],))
 
         subcats = []
         for subcat in cursor.fetchall():
             # Get programs for this subcategory
             cursor.execute("""
-                SELECT DISTINCT p.id, p.program_type
-                FROM program p
-                JOIN program_to_category ptc ON p.id = ptc.program_id
-                WHERE ptc.category_id = ?
-                AND ptc.category_type = 'category'
+                SELECT
+                    program.id, program.program_type FROM program
+                JOIN program_taxonomy_lookup
+                    ON program.id = program_taxonomy_lookup.program_id
+                WHERE program_taxonomy_lookup.taxonomy_focus_area_id = ?
             """, (subcat['category_id'],))
 
             subcat_programs = cursor.fetchall()
@@ -559,19 +542,18 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         # Calculate category totals including both types of programs
         cursor.execute("""
             SELECT
-                COUNT(DISTINCT p.id) as total_num_programs,
+                COUNT(DISTINCT ptl.program_id) as total_num_programs,
                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
-            FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id
+            FROM program_taxonomy_lookup ptl
+            JOIN program p ON ptl.program_id = p.id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id
-                AND ptc_app.category_type = 'applicant'
+            LEFT JOIN program_to_category ptc_app
+                ON p.id = ptc_app.program_id AND
+                ptc_app.category_type = 'applicant'
             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
-            WHERE c.parent_id = ?
-            AND ptc.category_type = 'category'
+            WHERE ptl.taxonomy_category_id = ?
         """, (parent['id'],))
 
         totals = cursor.fetchone()
@@ -612,31 +594,18 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
 
 def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for subcategories with obligations from both regular and other programs."""
-    ensure_directory_exists(output_dir)
+    recreate_directory(output_dir)
 
     # Get all subcategories that have at least one program
     cursor.execute("""
-        WITH subcategory_programs AS (
-            SELECT
-                c.id,
-                COUNT(DISTINCT p.id) as program_count
-            FROM category c
-            JOIN program_to_category ptc ON c.id = ptc.category_id
-            JOIN program p ON ptc.program_id = p.id
-            WHERE c.type = 'category'
-            AND ptc.category_type = 'category'
-            AND c.parent_id IS NOT NULL
-            GROUP BY c.id
-            HAVING program_count > 0
-        )
-        SELECT DISTINCT
-            c.id,
-            c.name as title,
-            c.parent_id,
-            pc.name as parent_title
-        FROM category c
-        JOIN category pc ON c.parent_id = pc.id
-        JOIN subcategory_programs sp ON c.id = sp.id
+        SELECT
+            ptl.taxonomy_focus_area_id AS id,
+            f.focus_area AS title,
+            ptl.taxonomy_category_id AS parent_id,
+            c.category AS parent_title
+        FROM program_taxonomy_lookup ptl
+        JOIN taxonomy_category c ON ptl.taxonomy_category_id = c.id
+        JOIN taxonomy_focus_area f ON ptl.taxonomy_focus_area_id = f.id
     """)
 
     subcategories = cursor.fetchall()
@@ -645,16 +614,15 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         cursor.execute("""
             SELECT DISTINCT
                 p.id,
-                p.name as title,
+                p.name AS title,
                 p.program_type,
                 p.popular_name,
                 a1.agency_name as agency_name
             FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
+            JOIN program_taxonomy_lookup ptl ON p.id = ptl.program_id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            WHERE ptc.category_id = ?
-            AND ptc.category_type = 'category'
+            WHERE ptl.taxonomy_focus_area_id = ?
         """, (subcat['id'],))
 
         programs = cursor.fetchall()
@@ -697,18 +665,18 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         program_ids = [p['id'] for p in programs]
         cursor.execute("""
             SELECT
-                COUNT(DISTINCT p.id) as total_num_programs,
+                COUNT(DISTINCT ptl.program_id) as total_num_programs,
                 COUNT(DISTINCT a1.agency_name) as total_num_agencies,
                 COUNT(DISTINCT c_app.name) as total_num_applicant_types
-            FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
+            FROM program_taxonomy_lookup ptl
+            JOIN program p ON ptl.program_id = p.id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            LEFT JOIN program_to_category ptc_app ON p.id = ptc_app.program_id
-                AND ptc_app.category_type = 'applicant'
+            LEFT JOIN program_to_category ptc_app
+                ON p.id = ptc_app.program_id AND
+                ptc_app.category_type = 'applicant'
             LEFT JOIN category c_app ON ptc_app.category_id = c_app.id
-            WHERE ptc.category_id = ?
-            AND ptc.category_type = 'category'
+            WHERE ptl.taxonomy_focus_area_id = ?
         """, (subcat['id'],))
 
         totals = cursor.fetchone()
@@ -751,6 +719,109 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
 
     print("Successfully generated sub-category markdown files")
 
+def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
+    """Generate markdown files for gwos with related programs."""
+    recreate_directory(output_dir)
+
+    cursor.execute("""
+        SELECT DISTINCT
+            gwo.id,
+            taxonomy_focus_area.focus_area,
+            taxonomy_category.category,
+            gwo.gwo,
+            gwo.gwo_definition
+        FROM gwo
+        JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
+        JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
+        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
+    """)
+
+    gwos = cursor.fetchall()
+
+    for gwo in gwos:
+        cursor.execute("""
+            SELECT id, name FROM program
+            JOIN program_to_gwo ON program.id = program_to_gwo.program_id
+            WHERE gwo_id = ?
+            ORDER BY name
+        """, (gwo["id"],))
+
+        where_used = cursor.fetchall()
+
+        url_friendly_id = gwo['id'].replace('#','_')
+
+        gwo_data = {
+            'permalink': f"/gwo/{url_friendly_id}",
+            'title': gwo['gwo'],
+            'gwo_id': gwo["id"],
+            'focus_area': gwo["focus_area"],
+            'category': gwo['category'],
+            'definition': gwo['gwo_definition'],
+            'where_used': [{
+                'permalink': f"/program/{p['id']}",
+                'name': p['name']
+            } for p in where_used]
+        }
+
+        file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write('---\n')
+            yaml.dump(gwo_data, file, allow_unicode=True)
+            file.write('---\n')
+
+    print("Successfully generated gwo markdown files")
+
+def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
+    """Generate markdown files for pons with related programs."""
+    recreate_directory(output_dir)
+
+    cursor.execute("""
+        SELECT DISTINCT
+            pon.id,
+            taxonomy_focus_area.focus_area,
+            taxonomy_category.category,
+            pon.pon2,
+            pon.pon_definition
+        FROM pon
+        JOIN program_to_pon ON pon.id = program_to_pon.pon_id
+        JOIN taxonomy_focus_area ON pon.focus_area_id = taxonomy_focus_area.id
+        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
+    """)
+
+    pons = cursor.fetchall()
+
+    for pon in pons:
+        cursor.execute("""
+            SELECT id, name FROM program
+            JOIN program_to_pon ON program.id = program_to_pon.program_id
+            WHERE pon_id = ?
+            ORDER BY name
+        """, (pon["id"],))
+
+        where_used = cursor.fetchall()
+
+        url_friendly_id = pon['id'].replace('#','_')
+
+        pon_data = {
+            'permalink': f"/pon/{url_friendly_id}",
+            'title': pon['pon2'],
+            'gwo_id': pon["id"],
+            'focus_area': pon["focus_area"],
+            'category': pon['category'],
+            'definition': pon['pon_definition'],
+            'where_used': [{
+                'permalink': f"/program/{p['id']}",
+                'name': p['name']
+            } for p in where_used]
+        }
+
+        file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write('---\n')
+            yaml.dump(pon_data, file, allow_unicode=True)
+            file.write('---\n')
+
+    print("Successfully generated pon markdown files")
 
 def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> List[Dict[str, Any]]:
     """
@@ -780,6 +851,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             p.rules_regulations
         FROM program p
         LEFT JOIN agency a ON p.agency_id = a.id
+        ORDER BY p.id
     """)
 
     base_programs = cursor.fetchall()
@@ -791,16 +863,27 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
                 c.type as category_type,
                 CASE
                     WHEN c.type = 'assistance' AND c.parent_id IS NOT NULL
-                        THEN pc.name
+                    THEN pc.name
                     ELSE c.name
-                END as category_name,
+                    END as category_name,
                 pc.name as parent_category_name
-            FROM program_to_category ptc
-            INNER JOIN category c ON ptc.category_id = c.id
-            LEFT JOIN category pc ON c.parent_id = pc.id
-            WHERE ptc.program_id = ?
-            AND c.type = ptc.category_type
-        """, (program['id'],))
+                FROM program_to_category ptc
+                INNER JOIN category c ON ptc.category_id = c.id
+                LEFT JOIN category pc ON c.parent_id = pc.id
+                WHERE ptc.program_id = ?
+                AND c.type = ptc.category_type
+                AND c.type <> 'category'
+            UNION
+            SELECT
+                ptl.taxonomy_category_id AS category_id,
+                'category' AS category_type,
+                f.focus_area AS category_name,
+                c.category AS parent_category_name
+            FROM program_taxonomy_lookup ptl
+            JOIN taxonomy_category c ON ptl.taxonomy_category_id = c.id
+            JOIN taxonomy_focus_area f ON ptl.taxonomy_focus_area_id = f.id
+            WHERE ptl.program_id = ?
+        """, (program['id'],program['id']))
 
         categories = cursor.fetchall()
 
@@ -832,6 +915,33 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             WHERE program_id = ?
         """, (program['id'],))
         authorizations = [{'text': row['text'], 'url': row['url']} for row in cursor.fetchall()]
+
+        # Get program objective
+        cursor.execute("""
+            SELECT id, gwo FROM gwo
+            LEFT JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
+            WHERE program_to_gwo.program_id = ?
+        """, (program['id'],))
+        gwo_row = cursor.fetchone()
+        gwo = None
+        if gwo_row is not None:
+            url_friendly_id = gwo_row['id'].replace('#','_')
+            gwo = {
+                'gwo': gwo_row['gwo'],
+                'permalink': f"/gwo/{url_friendly_id}"
+            }
+
+        # Get program outcomes
+        cursor.execute("""
+            SELECT id, pon2 FROM pon
+            LEFT JOIN program_to_pon ON pon.id = program_to_pon.pon_id
+            WHERE program_to_pon.program_id = ?
+            ORDER BY pon2
+        """, (program['id'],))
+        pons = [{
+            'pon': row['pon2'],
+            'permalink': f"/pon/{row['id'].replace('#','_')}"
+        } for row in cursor.fetchall()]
 
         # Use sets to prevent duplicates when organizing categories
         program_categories = {
@@ -880,7 +990,9 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'program_type': program['program_type'],
             'is_subpart_f': program['is_subpart_f'],
             'rules_regulations': program['rules_regulations'],
-            'improper_payments': improper_payment_data
+            'improper_payments': improper_payment_data,
+            'gwo': gwo,
+            'pons': pons
         }
 
         programs_data.append(program_data)
@@ -1100,17 +1212,16 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
     
     # Get categories with subcategories
     cursor.execute("""
-        SELECT DISTINCT 
-            pc.id as id,
-            pc.name as title,
-            c.name as sub_title
-        FROM program p
-        JOIN program_to_category ptc ON p.id = ptc.program_id
-        JOIN category c ON ptc.category_id = c.id
-        JOIN category pc ON c.parent_id = pc.id
-        WHERE c.type = 'category'
-        AND c.type = ptc.category_type    
-        ORDER BY pc.name, c.name
+        SELECT DISTINCT
+            taxonomy_category.id as id,
+            taxonomy_category.category as title,
+            taxonomy_focus_area.focus_area as sub_title
+        FROM taxonomy_category
+        JOIN program_taxonomy_lookup ON
+            taxonomy_category.id = program_taxonomy_lookup.taxonomy_category_id
+        LEFT JOIN taxonomy_focus_area ON
+            taxonomy_category.id = taxonomy_focus_area.category_id
+        ORDER BY taxonomy_category.category, taxonomy_focus_area.focus_area
     """)
     
     categories = []
@@ -1151,7 +1262,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
 
 def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[str, Any]], fiscal_years: list[str]):
     """Generate individual markdown files for each program using pre-generated data."""
-    ensure_directory_exists(output_dir)
+    recreate_directory(output_dir)
 
     for program in programs_data:
         # Create listing dictionary using pre-generated data
@@ -1179,6 +1290,8 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'is_subpart_f': program['is_subpart_f'],
             'rules_regulations': program['rules_regulations'],
             'improper_payments': json.dumps(program['improper_payments'], separators=(',', ':')) if program['improper_payments'] else None,
+            'gwo': program['gwo'],
+            'pons': program['pons']
         }
 
         # Add obligations based on program type
@@ -1293,6 +1406,8 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             'permalink': f"/program/{program['id']}",
             'obligations': float(current_year_obligation),
             'objectives': program['objective'],
+            'gwo': program['gwo']['gwo'] if program['gwo'] is not None else None,
+            'pons': ','.join([row['pon'] for row in program['pons']]),
             'popularName': program['popular_name'],
             'agency': {
                 'title': program['top_agency_name'] or 'Unspecified',
@@ -1348,15 +1463,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
             })
 
     # Get total number of unique programs
-    cursor.execute("""
-        SELECT COUNT(DISTINCT p.id) as total_programs
-        FROM program p
-        JOIN program_to_category ptc ON p.id = ptc.program_id
-        JOIN category c ON ptc.category_id = c.id
-        WHERE c.type = 'category'
-        AND ptc.category_type = 'category'
-    """)
-    total_programs = cursor.fetchone()['total_programs']
+    total_programs = len(programs_data)
 
     # Total obligations is sum of all program type obligations
     total_obs = sum(type_obj['total_obs'] for type_obj in obligations_by_type)
@@ -1368,12 +1475,9 @@ def generate_category_page(cursor: sqlite3.Cursor,
         cursor.execute("""
             SELECT DISTINCT p.id, p.program_type
             FROM program p
-            JOIN program_to_category ptc ON p.id = ptc.program_id
-            JOIN category c ON ptc.category_id = c.id
-            WHERE c.parent_id = (
-                SELECT id FROM category WHERE name = ?
-            )
-            AND ptc.category_type = 'category'
+            JOIN program_taxonomy_lookup ptl ON p.id = ptl.program_id
+            JOIN taxonomy_category c ON ptl.taxonomy_category_id = c.id
+            WHERE c.category = ?
         """, (category,))
         programs = cursor.fetchall()
 
@@ -1511,6 +1615,12 @@ try:
 
     # subcategory_dir = os.path.join('../website', '_subcategory')
     # generate_subcategory_markdown_files(cursor, subcategory_dir, constants.FISCAL_YEAR)
+
+    # gwo_dir = os.path.join('../website', '_gwo')
+    # generate_gwo_markdown_files(cursor, gwo_dir)
+
+    # pon_dir = os.path.join('../website', '_pon')
+    # generate_pon_markdown_files(cursor, pon_dir)
 
 except sqlite3.Error as e:
     print(f"Database error occurred: {e}")

@@ -15,107 +15,6 @@ SOURCE_DIRECTORY = "federal-program-inventory/data_processing/source/"
 EXTRACTED_DIRECTORY = "federal-program-inventory/data_processing/extracted/"
 
 
-def extract_categories_from_pdf(year, debug=False):
-    """Extracts the programs in each category / sub-category from the PDF."""
-    data_values = read_pdf(
-        DISK_DIRECTORY + SOURCE_DIRECTORY + year
-        + "-assistance-listing-catalog.pdf",
-        output_format="dataframe",
-        pandas_options={"header": None},
-        pages=["151-210"],
-        stream=True,
-        multiple_tables=False,
-        area=[[55, 60, 735, 90], [55, 310, 735, 340]],
-        encoding="utf-8"
-    )
-    data_values = data_values[0]
-
-    # remove a handful of outliers from page one that precede the template
-    # these are valid for 2023 but must be updated for future PDFs
-    data_values = data_values.drop(range(0, 19))
-    data_values = data_values.drop(56).reset_index(drop=True)
-
-    # load in the 2023 functions list
-    functions_df = pd.read_csv(DISK_DIRECTORY + SOURCE_DIRECTORY + year
-                               + "-functions-list.csv", header=None)
-
-    # loop through each of the values to assign the full function and
-    # sub-function
-    parent = ""  # tracks the current function
-    child = ""  # tracks the current sub-function
-    parent_col = []
-    child_col = []
-    remove_rows = []
-    all_subcategories = []  # tracks the "all subcategories" rows
-    function_index = 0
-    data_index = 0
-
-    # Two category/subcategory combinations break onto two lines in the
-    # PDF and the second line must be ignored in progression of
-    # category/subcategory.
-    # Education,Resource Development and Support -
-    #    General and Special Interest Organizations
-    # Education,Resource Development and Support -
-    #    Vocational Education and Handicapped Education
-    for row in data_values[0]:
-        if data_index in [2213, 2364]:  # if row is a two-line sub-function
-            parent_col.append("")
-            child_col.append("")
-            remove_rows.append(data_index)
-        elif row[0].isdigit():  # if row is a program number
-            parent_col.append(parent)
-            if child.startswith("All subcategories"):
-                all_subcategories.append([row, parent])
-                remove_rows.append(data_index)
-            child_col.append(child)
-        elif row.isupper():  # if row is a function
-            parent_col.append("")
-            child_col.append("")
-            remove_rows.append(data_index)
-        else:  # if row is a sub-function
-            r = functions_df.loc[function_index]
-            function_index += 1
-            if debug is True and not r[1].startswith(row):  # for debug
-                print("\n".join([data_index, function_index-1, row, r[1],
-                                 parent, "----------"]))
-            parent = r[0]
-            child = r[1]
-            parent_col.append("")
-            child_col.append("")
-            remove_rows.append(data_index)
-        data_index += 1
-
-    # create dict of functions / sub-functions
-    functions_dict = {}
-    for x in zip(functions_df[0], functions_df[1]):
-        if x[0] not in functions_dict:
-            functions_dict[x[0]] = []
-        if not x[1].startswith("All subcategories"):
-            functions_dict[x[0]].append(x[1])
-
-    # loop through those tagged as having all sub-functions apply and
-    # insert rows
-    new_vals = []
-    for val in all_subcategories:
-        for subcat in functions_dict[val[1]]:
-            new_vals.append(val[0])
-            parent_col.append(val[1])
-            child_col.append(subcat)
-
-    # append new columns to dataframe
-    data_values = pd.concat([data_values, pd.DataFrame(new_vals)],
-                            ignore_index=True)
-    data_values[1] = parent_col
-    data_values[2] = child_col
-
-    # drop the unnecessary rows and convert to csv
-    data_values.drop(remove_rows).reset_index(drop=True).to_csv(
-        DISK_DIRECTORY + EXTRACTED_DIRECTORY
-        + "program-to-function-sub-function.csv", index=False, header=False)
-
-    print("Extract PDF Categories Complete")
-
-
 def extract_assistance_listing():
     """Extracts assistance listings from SAM.gov and saves them as JSON."""
     # run an empty search on SAM.gov to get all IDs
@@ -418,7 +317,6 @@ def clean_all_data():
 
 # Uncomment the necessary functions to extract new data.
 #
-# extract_categories_from_pdf("2023")
 # extract_assistance_listing()
 
 # extract_dictionary()

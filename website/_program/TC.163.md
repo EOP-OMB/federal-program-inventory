@@ -10,6 +10,7 @@ categories:
 cfda: TC.163
 fiscal_year: '2024'
 grants_url: null
+gwo: null
 improper_payments: '[{"name":"Internal Revenue Service - Earned Income Tax Credit","outlays":58436980000.0,"improper_payments":15941610000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
 is_subpart_f: null
 layout: program
@@ -31,6 +32,7 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0},{"x":"2025","outlays":74080000000.0,"forgone_revenue":3310000000.0}]'
 outlays: null
 permalink: /program/TC.163.html
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

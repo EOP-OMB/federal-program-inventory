@@ -15,7 +15,9 @@ SEARCH_FIELDS = {
     "title": {"boost": 2},
     "objectives": {"boost": 1},
     "cfda": {"boost": 1},
-    "popularName": {"boost": 1}
+    "popularName": {"boost": 1},
+    "gwo": {"boost": 1},
+    "pons": {"boost": 1}
 }
 VALID_SORT_FIELDS = {
     "cfda": "cfda.keyword",

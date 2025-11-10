@@ -34,6 +34,8 @@ class Program(BaseModel):
     obligations: Optional[float]
     objectives: Optional[str]
     popularName: Optional[str]
+    gwo: Optional[str]
+    pons: Optional[str]
     assistanceTypes: List[str]
     applicantTypes: List[str]
     categories: List[Category]

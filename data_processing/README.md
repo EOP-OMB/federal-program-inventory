@@ -42,6 +42,11 @@ While this process may not appear optimal at face value, it is designed to: (1) 
 The FPI also uses additional data, which is sourced from several locations and should be refreshed on varying schedules. These include:
 1. [extracted/additional-programs.csv](extracted/additional-programs.csv): this contains additional programs beyond Assistance Listings, including Interest on the Public Debt ([source](https://www.usaspending.gov/explorer/), All Budget Functions > Net Interest > Interest on Treasury Debt Securities > Interest on the Public Debt > switch to table mode) and Tax Expenditures ([source](https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures), tab "Table 1 - Totals"); these should be refreshed at  annually (a manual process)
 2. [extracted/improper-payment-program-mapping.csv](extracted/improper-payment-program-mapping.csv): this contains a mapping between programs in the FPI and programs reported on [PaymentAccuracy.gov](https://paymentaccuracy.gov/), as reported by agencies via an OMB data call; this should be refreshed at least annually (a manual process)
+3. The following are sent by the OMB team annually for taxonomy updates:
+  1. [extracted/FPI_GWO_assignment.csv](extracted/FPI_GWO_assignment.csv)
+  2. [extracted/FPI_PON_assignment.csv](extracted/FPI_PON_assignment.csv)
+  3. [extracted/Taxonomy_GWO_crosswalk.csv](extracted/Taxonomy_GWO_crosswalk.csv)
+  4. [extracted/Taxonomy_PON_crosswalk.csv](extracted/Taxonomy_PON_crosswalk.csv)
 
 ## Transforming the data
 > [!NOTE]

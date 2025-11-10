@@ -199,18 +199,19 @@ PROGRAM_SAM_SPENDING_CREATE_TABLE_SQL = """
     CREATE TABLE program_sam_spending (
         program_id TEXT NOT NULL,
         assistance_type TEXT,
+        category_type TEXT,
         fiscal_year INTEGER NOT NULL,
         is_actual INTEGER NOT NULL,
         amount REAL NOT NULL,
         PRIMARY KEY (program_id, assistance_type, fiscal_year, is_actual),
         FOREIGN KEY(program_id) REFERENCES program(id)
-        FOREIGN KEY(assistance_type) REFERENCES category(id)
+        FOREIGN KEY(assistance_type, category_type) REFERENCES category(id, type)
     );
     """
 
 PROGRAM_SAM_SPENDING_INSERT_SQL = """
     INSERT INTO program_sam_spending
-    VALUES (?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?)
     ON CONFLICT DO UPDATE SET amount=amount+?;
     """
 
@@ -233,6 +234,141 @@ PROGRAM_TO_CATEGORY_INSERT_SQL = """
     INSERT INTO program_to_category
     VALUES (?, ?, ?) ON CONFLICT DO NOTHING;
     """
+
+TAXONOMY_CATEGORY_CREATE_TABLE_SQL = """
+    CREATE TABLE taxonomy_category (
+        id TEXT NOT NULL PRIMARY KEY,
+        category TEXT NOT NULL UNIQUE
+    )
+"""
+
+TAXONOMY_CATEGORY_INSERT_TABLE_SQL = """
+    INSERT INTO taxonomy_category
+    -- dash is later used as a delimiter between category and focus area
+    VALUES (?, REPLACE(?,'-','–')) ON CONFLICT DO NOTHING;
+"""
+
+TAXONOMY_CATEGORY_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS taxonomy_category;
+    """
+
+TAXONOMY_FOCUS_AREA_CREATE_TABLE_SQL = """
+    CREATE TABLE taxonomy_focus_area (
+        id TEXT NOT NULL PRIMARY KEY,
+        focus_area TEXT NOT NULL UNIQUE,
+        category_id TEXT NOT NULL,
+        FOREIGN KEY(category_id) REFERENCES taxonomy_category(id)
+    )
+"""
+
+TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL = """
+    INSERT INTO taxonomy_focus_area
+    -- dash is later used as a delimiter between category and focus area
+    VALUES (?, REPLACE(?,'-','–'), ?) ON CONFLICT DO NOTHING;
+"""
+
+TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS taxonomy_focus_area;
+    """
+
+GWO_CREATE_TABLE_SQL = """
+    CREATE TABLE gwo (
+        id TEXT NOT NULL PRIMARY KEY,
+        gwo TEXT NOT NULL,
+        gwo_definition TEXT NOT NULL,
+        focus_area_id TEXT NOT NULL,
+        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
+    );
+"""
+
+GWO_INSERT_TABLE_SQL = """
+    INSERT INTO gwo
+    VALUES (?, ?, ?, ?);
+"""
+
+GWO_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS gwo;
+    """
+
+PON_CREATE_TABLE_SQL = """
+    CREATE TABLE pon (
+        id TEXT NOT NULL PRIMARY KEY,
+        pon2 TEXT NOT NULL,
+        pon_definition TEXT NOT NULL,
+        focus_area_id TEXT NOT NULL,
+        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
+    );
+"""
+
+PON_INSERT_TABLE_SQL = """
+    INSERT INTO pon
+    VALUES (?, ?, ?, ?);
+"""
+
+PON_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS pon;
+    """
+
+PROGRAM_TO_GWO_CREATE_TABLE_SQL = """
+    CREATE TABLE program_to_gwo (
+        program_id TEXT NOT NULL,
+        gwo_id TEXT NOT NULL,
+        FOREIGN KEY(program_id) REFERENCES program(id)
+        FOREIGN KEY(gwo_id) REFERENCES gwo(id)
+    );
+"""
+
+PROGRAM_TO_GWO_INSERT_TABLE_SQL = """
+    INSERT INTO program_to_gwo
+    VALUES (?, ?);
+"""
+
+PROGRAM_TO_GWO_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS program_to_gwo;
+    """
+
+PROGRAM_TO_PON_CREATE_TABLE_SQL = """
+    CREATE TABLE program_to_pon (
+        program_id TEXT NOT NULL,
+        pon_id TEXT NOT NULL,
+        FOREIGN KEY(program_id) REFERENCES program(id)
+        FOREIGN KEY(pon_id) REFERENCES pon(id)
+    );
+"""
+
+PROGRAM_TO_PON_INSERT_TABLE_SQL = """
+    INSERT INTO program_to_pon
+    VALUES (?, ?);
+"""
+
+PROGRAM_TO_PON_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS program_to_pon;
+    """
+
+PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL = """
+    DROP VIEW IF EXISTS program_taxonomy_lookup;
+"""
+
+PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL = """
+    CREATE VIEW program_taxonomy_lookup AS
+        SELECT
+            program.id AS program_id,
+            taxonomy_focus_area.id AS taxonomy_focus_area_id,
+            taxonomy_category.id AS taxonomy_category_id
+        FROM program
+        JOIN program_to_gwo ON program.id = program_to_gwo.program_id
+        JOIN gwo on program_to_gwo.gwo_id = gwo.id
+        JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
+        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
+    UNION
+        SELECT DISTINCT
+            other_program_spending.program_id,
+            other_program_spending.focus_area_id AS taxonomy_focus_area_id,
+            taxonomy_category.id AS taxonomy_category_id
+        FROM other_program_spending
+        JOIN taxonomy_focus_area ON other_program_spending.focus_area_id = taxonomy_focus_area.id
+        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
+"""
 
 USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance_obligation_aggregation;
@@ -318,14 +454,16 @@ OTHER_PROGRAM_SPENDING_CREATE_TABLE_SQL = """
         outlays REAL,
         forgone_revenue REAL,
         source TEXT NOT NULL,
+        focus_area_id TEXT NOT NULL,
         PRIMARY KEY (program_id, fiscal_year),
         FOREIGN KEY(program_id) REFERENCES program(id)
+        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
     );
     """
 
 OTHER_PROGRAM_SPENDING_INSERT_SQL = """
     INSERT INTO other_program_spending
-    VALUES (?, ?, ?, ?, ?);
+    VALUES (?, ?, ?, ?, ?, ?);
     """
 
 IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL = """
@@ -742,12 +880,12 @@ def load_sam_programs():
                     if row.get("actual"):
                         cur.execute(PROGRAM_SAM_SPENDING_INSERT_SQL,
                                     [d["programNumber"],
-                                     o.get("assistanceType", ""), row["year"],
+                                     o.get("assistanceType", ""), 'assistance', row["year"],
                                      1, row["actual"], row["actual"]])
                     if row.get("estimate"):
                         cur.execute(PROGRAM_SAM_SPENDING_INSERT_SQL,
                                     [d["programNumber"],
-                                     o.get("assistanceType", ""), row["year"],
+                                     o.get("assistanceType", ""), 'assistance', row["year"],
                                      0, row["estimate"], row["estimate"]])
             # if the program has assistance types
             for e in listing["data"]["financial"]["obligations"]:
@@ -763,34 +901,6 @@ def load_sam_programs():
                 cur.execute(PROGRAM_TO_CATEGORY_INSERT_SQL, [
                     d["programNumber"], e, "applicant"])
     conn.commit()
-
-
-# load category and sub-category values, including program mapping,
-# from CSV exported from SAM.gov PDF
-def load_category_and_sub_category():
-    category_insert_sql = "INSERT INTO category VALUES (?, ?, ?, ?)"
-    program_to_category_insert_sql = """INSERT INTO program_to_category
-                                     VALUES (?, ?, ?)"""
-    categories = set()
-    sub_categories = set()
-    programs_to_sub_categories = set()
-    with open(REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY
-              + "program-to-function-sub-function.csv", encoding="utf-8") as f:
-        for row in csv.reader(f):
-            categories.add(row[1])
-            sub_categories.add((row[1], row[2]))
-            programs_to_sub_categories.add((row[0], row[1], row[2]))
-        for c in categories:
-            cur.execute(category_insert_sql, [convert_to_url_string(c),
-                        "category", c, None])
-        for sc in sub_categories:
-            cur.execute(category_insert_sql, [convert_to_url_string(
-                        sc[0]+sc[1]), "category", sc[1],
-                        convert_to_url_string(sc[0])])
-        for p in programs_to_sub_categories:
-            cur.execute(program_to_category_insert_sql, [p[0],
-                        convert_to_url_string(p[1]+p[2]), "category"])
-        conn.commit()
 
 
 def load_additional_programs():
@@ -828,6 +938,7 @@ def load_additional_programs():
     df.insert(df.shape[1], 'category.name', None)
     df.insert(df.shape[1], 'category.id', None)
     df.insert(df.shape[1], 'category.parent_id', None)
+    df.insert(df.shape[1], 'focus_area.id', None)
 
     for ind, record in df.iterrows():
         if not pd.isna(record.subagency):
@@ -845,41 +956,25 @@ def load_additional_programs():
 
     df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
 
-    unique_categories = []
-
-    # Add parent categories
-    for ind, record in df.iterrows():
-        if not pd.isna(record.category):
-            parent_category_entry = {
-                'id': convert_to_url_string(record.category),
-                'type': 'category',
-                'name': record.category,
-                'parent_id': None
-            }
-            if not any(c['id'] == parent_category_entry['id'] for c in unique_categories):
-                unique_categories.append(parent_category_entry)
-
-    # Add subcategories
-    for ind, record in df.iterrows():
-        if not pd.isna(record.category) and not pd.isna(record.subcategory):
-            subcategory_entry = {
-                'id': convert_to_url_string(record.category + record.subcategory),
-                'type': 'category',
-                'name': record.subcategory,
-                'parent_id': convert_to_url_string(record.category)
-            }
-            if not any(c['id'] == subcategory_entry['id'] for c in unique_categories):
-                unique_categories.append(subcategory_entry)
-
     # Insert categories into the database
-    for category in unique_categories:
-        category_query = "INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?);"
-        category_values = (category['id'], category['type'], category['name'], category['parent_id'])
-        try:
-            cur.execute(category_query, category_values)
-        except Exception as e:
-            print(str(e))
-            print(f"ERROR - Category Insert Error\n{category_query}")
+    category_lookup = {}
+    category_counter = 0
+    focus_area_lookup = {}
+    focus_area_counter = 0
+    for ind, record in df.iterrows():
+        if (record.category not in category_lookup):
+            category_lookup[record.category] = 'ADDITIONAL_' + str(category_counter)
+            cur.execute("""
+                INSERT INTO taxonomy_category
+                -- dash is later used as a delimiter between category and focus area
+                VALUES (?, REPLACE(?,'-','–'));
+            """, (category_lookup[record.category], record.category))
+            category_counter = category_counter + 1
+        if (record.subcategory not in focus_area_lookup):
+            focus_area_lookup[record.subcategory] = 'ADDITIONAL_' + str(focus_area_counter)
+            cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, (focus_area_lookup[record.subcategory], record.subcategory, category_lookup[record.category]))
+            focus_area_counter = focus_area_counter + 1
+    conn.commit()
 
     # Insert assistance types
     assistance_entries = [
@@ -921,20 +1016,6 @@ def load_additional_programs():
             print(str(e))
             print("ERROR - Program Insert Error")
 
-        program_to_category_query = """
-            INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);
-        """
-        program_to_category_values = (
-            record['program.id'],
-            record['category.id'],
-            'category'
-        )
-        try:
-            cur.execute(program_to_category_query, program_to_category_values)
-        except Exception as e:
-            print(str(e))
-            print("ERROR - Program to Category Mapping Error")
-
         # Map assistance types
         if not pd.isna(record['assistance_type']):
             assistance_value = record['assistance_type']
@@ -950,6 +1031,9 @@ def load_additional_programs():
                     print(str(e))
                     print("ERROR - Program to Assistance Mapping Error")
 
+        # Map focus area
+        df.at[ind, 'focus_area.id'] = focus_area_lookup[record.subcategory]
+
     # Insert spending data into the other_program_spending table
     fiscal_years = {}
     for col in df.columns:
@@ -964,7 +1048,8 @@ def load_additional_programs():
                 int(year),
                 0 if pd.isna(record[columns[0]]) else record[columns[0]],
                 0 if pd.isna(record[columns[1]]) else record[columns[1]],
-                'additional-programs.csv'
+                'additional-programs.csv',
+                record['focus_area.id']
             ])
 
     conn.commit()
@@ -1014,6 +1099,89 @@ def load_improper_payment_mapping():
     conn.commit()
     print("Successfully loaded improper payment mapping data")
 
+def load_taxonomy_and_assignments():
+    """Loads taxonomy categories, focus areas, gwos, pons, and assignments."""
+    cur.execute(PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL)
+    cur.execute(PROGRAM_TO_GWO_DROP_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PON_DROP_TABLE_SQL)
+    cur.execute(GWO_DROP_TABLE_SQL)
+    cur.execute(PON_DROP_TABLE_SQL)
+    cur.execute(TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL)
+    cur.execute(TAXONOMY_CATEGORY_DROP_TABLE_SQL)
+
+    cur.execute(TAXONOMY_CATEGORY_CREATE_TABLE_SQL)
+    cur.execute(TAXONOMY_FOCUS_AREA_CREATE_TABLE_SQL)
+    cur.execute(GWO_CREATE_TABLE_SQL)
+    cur.execute(PON_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TO_GWO_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PON_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL)
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_GWO_crosswalk.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
+            row['Category Code'],
+            row['Category']
+        ])
+
+        cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
+            row['FA Code'],
+            row['Focus Area'],
+            row['Category Code']
+        ])
+
+        cur.execute(GWO_INSERT_TABLE_SQL, [
+            row['GWO ID'],
+            row['GWO'],
+            row['GWO Definition'],
+            row['FA Code']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_PON_crosswalk.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
+            row['Category Code'],
+            row['Category']
+        ])
+
+        cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
+            row['FA Code'],
+            row['Focus Area'],
+            row['Category Code']
+        ])
+
+        cur.execute(PON_INSERT_TABLE_SQL, [
+            row['PON ID'],
+            row['PON2'],
+            row['PON Definition'],
+            row['FA Code']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_GWO_assignment.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(PROGRAM_TO_GWO_INSERT_TABLE_SQL, [
+            row['al_#'],
+            row['GWO ID']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_PON_assignment.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(PROGRAM_TO_PON_INSERT_TABLE_SQL, [
+            row['al_#'],
+            row['PON ID']
+        ])
+
+    conn.commit()
+    print("Successfully loaded taxonomy and assignments")
+
 # uncomment the necessary functions to database with data
 #
 # load_usaspending_initial_files()
@@ -1022,7 +1190,7 @@ def load_improper_payment_mapping():
 # load_agency()
 # load_sam_category()
 # load_sam_programs()
-# load_category_and_sub_category()
+# load_taxonomy_and_assignments()
 # load_additional_programs()
 # load_improper_payment_mapping()
 

@@ -49,7 +49,7 @@ def create_index_with_mapping(index_name):
             "index": {
                 "query": {
                     "default_field": ["title", "objectives", "cfda",
-                                      "popularName"]
+                                      "popularName", "gwo", "pons"]
                 }
             }
         },
@@ -104,6 +104,24 @@ def create_index_with_mapping(index_name):
                     "type": "float"
                 },
                 "objectives": {
+                    "type": "text",
+                    "analyzer": "english",  # Add stemming
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "gwo": {
+                    "type": "text",
+                    "analyzer": "english",  # Add stemming
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "pons": {
                     "type": "text",
                     "analyzer": "english",  # Add stemming
                     "fields": {
@@ -251,6 +269,9 @@ if __name__ == "__main__":
         }
     )
 
+    # Reload the index once after deployment
+    index_reloaded_once = False
+
     # Continuously check if Elasticsearch is available
     status_code = 0
     while status_code == 0:
@@ -268,7 +289,8 @@ if __name__ == "__main__":
             es_program_count = int(es_program_count['count'])
 
             # If document count in ES does not equal source JSON, rebuild
-            if json_program_count != es_program_count:
+            if (not index_reloaded_once) or (json_program_count != es_program_count):
+                index_reloaded_once = True
                 if es_program_count != 0:
                     delete_index(index_name)
                     create_index_with_mapping(index_name)

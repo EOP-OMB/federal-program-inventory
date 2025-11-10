@@ -1,0 +1,78 @@
+---
+layout: default
+footer_include: _footer-gwo-pon.html
+---
+
+<section class="bg-secondary-lighter padding-x-2 padding-y-3">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h1 class="usa-display usa-heading text-white font-heading-2xl text-ink text-light">
+          {{ page.title }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
+      <ol class="usa-breadcrumb__list">
+        <li class="usa-breadcrumb__list-item">
+          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
+        </li>
+        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+          <span>{{ page.title }}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="grid-row grid-gap">
+    <div class="grid-col-9 margin-bottom-5">
+      <h1 class="font-sans-xl text-normal text-primary margin-top-0">
+        GWO Information
+      </h1>
+
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Title</h2>
+          <p class="margin-top-0 margin-bottom-0">{{page.title | default: 'N/A'}}</p>
+        </div>
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Description</h2>
+          <p class="margin-top-0 margin-bottom-0">{{page.definition | default: 'N/A'}}</p>
+        </div>
+      </div>
+
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Focus Area</h2>
+          <p class="margin-top-0 margin-bottom-0">
+            <a href="#" class="usa-link program-filter text-bold" data-filter-type="sub-category"
+              data-subcategory-title="{{page.focus_area}}"
+              data-category-title="{{page.category}}">{{ page.focus_area }}</a>
+          </p>
+        </div>
+        <div class="grid-col-6">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Category</h2>
+          <p class="margin-top-0 margin-bottom-0">
+            <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
+              data-category-title="{{page.category}}">{{ page.category }}</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-12">
+          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Where Used</h2>
+          {% for program in page.where_used %}
+            <p>
+                <a href="{{ program.permalink }}">{{ program.name }}</a>
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+  </div>
+</div>
+</div>

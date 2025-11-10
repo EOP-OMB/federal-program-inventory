@@ -136,216 +136,69 @@ beneficiary_types:
 - title: Youth (16-21)
 categories:
 - sub_categories:
-  - title: Forestry
-  - title: Marketing
-  - title: Production and Operation
-  - title: Research and Development
-  - title: Resource Conservation and Development
-  - title: Stabilization and Conservation Service
-  - title: Technical Assistance, Information and Services
-  title: Agricultural
-- sub_categories:
-  - title: Commercial Fisheries
+  - title: Business Development
   - title: Economic Development
-  - title: Economic Injury and Natural Disaster
-  - title: International
-  - title: Maritime
-  - title: Minority Business Enterprise
-  - title: Small Business
-  - title: Special Technical Service
-  - title: Statistics
   title: Business and Commerce
 - sub_categories:
-  - title: Construction, Renewal and Operations
-  - title: Federal Surplus Property
-  - title: Fire Protection
-  - title: Historical Preservation
-  - title: Indian Action Services
-  - title: Land Acquisition
-  - title: Planning and Research
-  - title: Recreation
-  - title: Rural Community Development
-  - title: Site Acquisition
-  - title: Technical Assistance and Services
+  - title: Community, Area, and Regional Development
   title: Community Development
 - sub_categories:
-  - title: Complaint Investigation
-  - title: Information and Educational Services
-  - title: Regulation, Inspection, Enforcement
-  title: Consumer Protection
-- sub_categories:
-  - title: Promotion of the Arts
-  - title: Promotion of the Humanities
+  - title: Access and Appreciation
+  - title: Artistic Talent Development
+  - title: Cultural Heritage and Traditions
+  - title: Cultural Institutions
   title: Cultural Affairs
 - sub_categories:
-  - title: Disaster Relief
-  - title: Emergency Health Services
-  - title: Emergency Preparedness, Civil Defense
-  - title: Flood Prevention and Control
+  - title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
 - sub_categories:
-  - title: Dental Education and Training
-  - title: Educational Equipment and Resources
-  - title: Educational Facilities
-  - title: Elementary and Secondary
-  - title: General Research and Evaluation
-  - title: Health Education and Training
-  - title: Higher Education - General
-  - title: Indian Education
-  - title: Libraries and Technical lnformation Services
-  - title: Medical Education and Training
-  - title: Nuclear Education and Training
-  - title: Nursing Education
-  - title: Resource Development and Support - Elementary, Secondary Education
-  - title: Resource Development and Support - General and Special Interest Organizations
-  - title: Resource Development and Support - Higher Education
-  - title: Resource Development and Support - Land and Equipment
-  - title: Resource Development and Support - School Aid
-  - title: Resource Development and Support - Sciences
-  - title: Resource Development and Support - Student Financial Aid
-  - title: Resource Development and Support - Vocational Education and Handicapped
-      Education
-  - title: Special Education
-  - title: Teacher Training
-  - title: Vocational Development
+  - title: Early Childhood Education and Childcare
+  - title: Educational Environments
+  - title: K–12 Education
+  - title: Post–Secondary Education
+  - title: STEM Education
   title: Education
 - sub_categories:
-  - title: Assistance and Services for the Unemployed
-  - title: Assistance to State and Local Governments
-  - title: Bonding and Certification
-  - title: Equal Employment Opportunity
-  - title: Facilities, Planning, Construction, and Equipment
-  - title: Federal Employment
-  - title: Job Training, Employment
-  - title: Labor Management Services
-  - title: Planning, Research, and Demonstration
-  - title: Program Development
-  - title: Statistical
-  title: Employment, Labor, and Training
+  - title: Workforce Development
+  title: Employment and Labor
 - sub_categories:
-  - title: Conservation
-  - title: Education and Training
-  - title: Facilities and Equipment
-  - title: General Information Services
-  - title: Research and Development
-  - title: Specialized Technical Services
+  - title: Energy Supply
   title: Energy
 - sub_categories:
-  - title: Air Pollution Control
-  - title: Pesticides Control
-  - title: Radiation Control
-  - title: Research, Education, Training
-  - title: Solid Waste Management
-  - title: Water Pollution Control
+  - title: Pollution Control and Abatement
   title: Environmental Quality
 - sub_categories:
-  - title: Food Inspection
-  - title: Food and Nutrition for Children
-  - title: Food and Nutrition for Individual and Families
-  - title: Research
-  title: Food and Nutrition
-- sub_categories:
-  - title: Alcoholism, Drug Abuse and Mental Health - General
-  - title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
-  - title: Alcoholism, Drug Abuse and Mental Health - Planning
-  - title: Alcoholism, Drug Abuse and Mental Health - Research
-  - title: Communicable Diseases
-  - title: Education and Training
-  - title: Facility Loans and Insurance
-  - title: Facility Planning and Construction
-  - title: General Health and Medical
-  - title: Health Research - General
-  - title: Health Services Planning and Technical Assistance
-  - title: Indian Health
-  - title: Libraries, Information and Education Services
-  - title: Maternity, Infants, Children
-  - title: Mental Health
-  - title: Occupational Safety and Health
-  - title: Physical Fitness
-  - title: Prevention and Control
-  - title: Program Development
-  - title: Specialized Health Research and Training
-  - title: Veterans Health
+  - title: Child Welfare
+  - title: Health and Wellbeing
+  - title: Healthcare Access
+  - title: Healthcare Innovation
+  - title: Healthcare Quality and Delivery
+  - title: Veteran Health
   title: Health
-- sub_categories:
-  - title: Construction Rehabilitation
-  - title: Cooperatives, Rental
-  - title: Experimental and Development Projects
-  - title: Home Improvement
-  - title: Homebuying, Homeownership
-  - title: Indian Housing
-  - title: Land Acquisition
-  - title: Multifamily
-  - title: Planning
-  - title: Property and Mortgage Insurance
-  - title: Rural Housing
-  - title: Site Preparation for Housing
-  title: Housing
-- sub_categories:
-  - title: Disabled Veterans
-  - title: Disabled and Handicapped Services
-  - title: Emergency and Crisis Assistance
-  - title: Families and Child Welfare Services
-  - title: Indian Services
-  - title: Information and Referral Services
-  - title: Legal and Advocacy Services
-  - title: Nutrition
-  - title: Old Age Assistance
-  - title: Prevention
-  - title: Public Assistance
-  - title: Refugees, Alien Services
-  - title: Research, Demonstration
-  - title: Social Security and Insurance
-  - title: Specialized Family and Child Welfare Services
-  - title: Specialized Services
-  - title: Training Assistance
-  - title: Veterans Services
-  - title: Youth Services
-  title: Income Security and Social Services
-- sub_categories:
-  - title: Census Data
-  - title: General
-  - title: Libraries, Clearinghouses, Archives
-  - title: Library of Congress
-  title: Information and Statistics
 - sub_categories:
   - title: Interest on the Public Debt
   title: Interest on the Public Debt
 - sub_categories:
-  - title: Law Enforcement - Crime Analysis and Data
-  - title: Law Enforcement - Narcotics and Dangerous Drugs
-  - title: Law Enforcement - Planning and Operations
-  - title: Law Enforcement - Research, Education, Training
-  - title: Legal Services - Claims Against Foreign Government
-  - title: Legal Services - Employment Rights
-  - title: Legal Services - General Services
-  - title: Legal Services - Housing Rights
-  - title: Legal Services - Labor Management
-  title: Law, Justice and Legal Services
+  - title: International Relations and Foreign Affairs
+  title: International Affairs
 - sub_categories:
-  - title: Community Sewage Treatment Assistance
-  - title: Community Water Supply Services
-  - title: Land Conservation
-  - title: Mineral Research
-  - title: Recreation
-  - title: Water Conservation and Research
-  - title: Wildlife Research and Preservation
+  - title: Border Security
+  - title: Cybersecurity
+  - title: Domestic Threats and Hazards
+  - title: Law Enforcement Support
+  - title: Legal Services
+  - title: Tribal Independence and Autonomy
+  title: Law, Justice, and Legal Services
+- sub_categories:
+  - title: Defense Capability
+  title: National Defense
+- sub_categories:
+  - title: Conservation and Land Management
+  - title: Recreational Resources
+  - title: Water Resources
   title: Natural Resources
 - sub_categories:
-  - title: Economic Development
-  - title: Education
-  - title: Energy
-  - title: Health and Nutrition
-  - title: Housing
-  - title: Land Acquisition and Rehabilitation and Facilities Construction
-  - title: Planning and Technical Assistance
-  - title: Resources and Development
-  - title: Transportation
-  title: Regional Development
-- sub_categories:
-  - title: Information and Technical
-  - title: Research - General
-  - title: Research - Specialized
+  - title: General science and basic research
   title: Science and Technology
 - sub_categories:
   - title: Agriculture
@@ -367,10 +220,9 @@ categories:
   title: Tax Expenditures
 - sub_categories:
   - title: Air Transportation
-  - title: Highways, Public Roads, and Bridges
-  - title: Rail Transportation
-  - title: Urban Mass Transit
-  - title: Water Navigation
+  - title: Ground Transportation
+  - title: Multi–modal Transportation
+  - title: Water Transportation
   title: Transportation
 cfo_agencies:
 - title: Agency for International Development
