@@ -1,7 +1,7 @@
 # Federal Program Inventory Data Extract, Transform, and Load Process
 
 ## About the process
-The data extract, transform, and load process contained in this directory pulls data from SAM.gov, USASpending.gov, and other sources for use in the Federal Program Inventory (FPI). The FPI is designed to make information about Federal programs, including program objectives, results, and financial information, easier to access.
+The data extract, transform, and load process contained in this directory pulls data from SAM.gov, USASpending.gov, and other sources for use in the Federal Program Inventory (FPI). The FPI is designed to make information about Federal programs, including program objectives, results, and financial information, easier to access.  For details about individual fields in FPI, see the [data dictionary](DATA_DICTIONARY.md).
 
 ## Setting up your environment
 Before getting started, you need to make sure that your system is set up properly. The data extract functionality is written in Python3 and has several dependencies. To set up your system:
