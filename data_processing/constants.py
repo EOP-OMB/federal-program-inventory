@@ -354,5 +354,7 @@ CFO_ACT_AGENCY_NAMES = [
 PROGRAM_TYPE_MAPPING = {
     "tax_expenditure": "Tax Expenditures",
     "assistance_listing": "Federal Financial Assistance",
-    "interest": "Interest on the Public Debt"
+    "interest": "Interest on the Public Debt",
+    "government_service": "Government Service",
+    "acquisition_contract": "Acquisition Contract"
 }

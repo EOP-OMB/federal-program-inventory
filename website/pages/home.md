@@ -4,6 +4,8 @@ applicant_types:
 - title: Anyone/general public
 - title: City or Township Government
 - title: County Government
+- title: Example Applicant 1
+- title: Example Applicant 2
 - title: Federal
 - title: Federally Recognized Indian Tribal Governments
 - title: For-Profit Organization (Other than Small Business)
@@ -383,12 +385,14 @@ other_agencies:
   title: United States International Development Finance Corporation
 permalink: /
 program_types:
+- title: Acquisition Contract
 - title: Advisory Services and Counseling
 - title: Direct Loans
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
 - title: Formula Grants
+- title: Government Service
 - title: Guaranteed / Insured Loans
 - title: Insurance
 - title: Interest

@@ -893,6 +893,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             obligations = get_assistance_program_obligations(cursor, program['id'], fiscal_years)
             other_program_spending = None
             outlays = get_outlays_data(cursor, program['id'], fiscal_years)
+        elif program_type == 'acquisition_contract' or program_type == 'government_service':
+            obligations = None
+            other_program_spending = None
+            outlays = get_outlays_data(cursor, program['id'], fiscal_years)
         else:
             obligations = None
             other_program_spending = get_other_program_obligations(cursor, program['id'], fiscal_years, program_type)
@@ -1295,14 +1299,19 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
         }
 
         # Add obligations based on program type
-        if program['program_type'] != 'assistance_listing':
-            listing['other_program_spending'] = json.dumps(program['other_program_spending'], separators=(',', ':'))
-            listing['obligations'] = None
-            listing['outlays'] = None
-        else:
+        if program['program_type'] == 'assistance_listing':
             listing['obligations'] = json.dumps(program['obligations'], separators=(',', ':'))
             listing['outlays'] = json.dumps(program['outlays'], separators=(',', ':'))
             listing['other_program_spending'] = None
+        elif program['program_type'] == 'acquisition_contract' or \
+            program['program_type'] == 'government_service':
+                listing['obligations'] = None
+                listing['outlays'] = json.dumps(program['outlays'], separators=(',', ':'))
+                listing['other_program_spending'] = None
+        else:
+            listing['other_program_spending'] = json.dumps(program['other_program_spending'], separators=(',', ':'))
+            listing['obligations'] = None
+            listing['outlays'] = None
 
         # Write markdown file
         markdown_file_path = os.path.join(output_dir, f"{program['id']}.md")
@@ -1374,6 +1383,14 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
                 if obl['x'] == fiscal_year), 
                 0
             )
+        elif program["program_type"] == "acquisition_contract" or \
+            program["program_type"] == "government_service":
+                current_year_obligation = next(
+                    (obl['obligation']
+                    for obl in program['outlays']
+                    if obl['x'] == fiscal_year),
+                    0
+                )
         else:         
              # For other programs, sum outlays and forgone_revenue
             current_year_part_obligation = next(

@@ -4,7 +4,7 @@
   {% else %}
   const outlaysJson = [];
   {% endif %}
-  {% if page.outlays %}
+  {% if page.obligations %}
   const obligationsJson = {{ page.obligations }};
   {% else %}
   const obligationsJson = [];
@@ -903,6 +903,15 @@
         viewControls.classList.remove("display-none");
         viewControls.classList.add("display-flex");
       }
+    }
+
+    // handle acquisition programs and government services
+    if (!isAssistanceListing && !hasObligations && hasOutlays) {
+      outlaysChart.classList.remove("display-none");
+      document.getElementById("outlays").checked = true;
+      createFiscalYearOutlaysChart(outlaysJson, {
+        container: "#outlaysChart",
+      });
     }
 
     // Initialize appropriate chart based on data availability

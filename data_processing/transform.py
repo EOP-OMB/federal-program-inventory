@@ -123,6 +123,10 @@ CATEGORY_CREATE_TABLE_SQL = """
     );
     """
 
+CATEGORY_FIND_SQL = """
+    SELECT id FROM category WHERE type = ? AND name = ?
+"""
+
 CATEGORY_INSERT_SQL = """
     INSERT INTO category
     VALUES (?, ?, ?, ?);
@@ -442,6 +446,11 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL = """
     )
     GROUP BY cfda_number, award_first_fiscal_year;
     """
+
+USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL = """
+    INSERT INTO usaspending_assistance_outlay_aggregation
+    VALUES (?, ?, ?, ?);
+"""
 
 OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS other_program_spending;
@@ -900,6 +909,8 @@ def load_sam_programs():
             for e in listing["data"]["eligibility"]["applicant"]["types"]:
                 cur.execute(PROGRAM_TO_CATEGORY_INSERT_SQL, [
                     d["programNumber"], e, "applicant"])
+
+    load_acquisitions_and_services()
     conn.commit()
 
 
@@ -979,7 +990,9 @@ def load_additional_programs():
     # Insert assistance types
     assistance_entries = [
         {'id': 'interest', 'type': 'assistance', 'name': 'Interest', 'parent_id': None},
-        {'id': 'tax_expenditure', 'type': 'assistance', 'name': 'Tax Expenditures', 'parent_id': None}
+        {'id': 'tax_expenditure', 'type': 'assistance', 'name': 'Tax Expenditures', 'parent_id': None},
+        {'id': 'acquisition_contract', 'type': 'assistance', 'name': 'Acquisition Contract', 'parent_id': None},
+        {'id': 'government_service', 'type': 'assistance', 'name': 'Government Service', 'parent_id': None}
     ]
     for entry in assistance_entries:
         try:
@@ -1098,6 +1111,105 @@ def load_improper_payment_mapping():
     
     conn.commit()
     print("Successfully loaded improper payment mapping data")
+
+def load_acquisitions_and_services():
+    """Loads programs derived from contracts."""
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "acquisitions_and_services.csv"
+    df = pd.read_csv(file_path)
+
+    latest_fiscal_year = df["Fiscal Year"].max()
+    beneficiary_id_counter = 1
+    applicants_id_counter = 1
+    for _, row in df.iterrows():
+        # Only import program data for latest year
+        if row["Fiscal Year"] < latest_fiscal_year:
+            continue
+
+        beneficiary_id = None
+        if row["Beneficiary"] is not None and row["Beneficiary"] != "":
+            cur.execute(CATEGORY_FIND_SQL, ["beneficiary", row["Beneficiary"]])
+            response = cur.fetchall()
+            if (len(response) == 0):
+                beneficiary_id = str(row["Program ID"]) + "_B_" + str(beneficiary_id_counter)
+                cur.execute(CATEGORY_INSERT_SQL, [
+                    beneficiary_id,
+                    "beneficiary",
+                    row["Beneficiary"],
+                    None
+                ])
+                beneficiary_id_counter += 1
+            else:
+                beneficiary_id = response[0][0]
+
+        applicant_id = None
+        if row["Eligible applicants"] is not None and row["Eligible applicants"] != "":
+            cur.execute(CATEGORY_FIND_SQL, ["applicant", row["Eligible applicants"]])
+            response = cur.fetchall()
+            if (len(response) == 0):
+                applicant_id = str(row["Program ID"]) + "_A_" + str(applicants_id_counter)
+                cur.execute(CATEGORY_INSERT_SQL, [
+                    applicant_id,
+                    "applicant",
+                    row["Eligible applicants"],
+                    None
+                ])
+                applicants_id_counter += 1
+            else:
+                applicant_id = response[0][0]
+
+        cur.execute(PROGRAM_INSERT_SQL, [
+            row["Program ID"],
+            row["Agency ID"],
+            row["Program Name"],
+            row["Popular Name"],
+            row["Program Objective"],
+            None,
+            row["USASpending hash"],
+            None,
+            None,
+            str(row["Program Type"]).lower().replace(' ','_'),
+            0,
+            row["Associated Rules and Regulations"]
+        ])
+
+        if beneficiary_id is not None:
+            cur.execute(PROGRAM_TO_CATEGORY_INSERT_SQL, [
+                row["Program ID"],
+                beneficiary_id,
+                "beneficiary"
+            ])
+
+        if applicant_id is not None:
+            cur.execute(PROGRAM_TO_CATEGORY_INSERT_SQL, [
+                row["Program ID"],
+                applicant_id,
+                "applicant"
+            ])
+
+        cur.execute(PROGRAM_AUTHORIZATION_INSERT_SQL, [
+            row["Program ID"],
+            row["Authorizing Statues"],
+            None
+        ])
+
+        # Add category mapping to utilize existing "Program Type" filter in the UI
+        category_id = 'acquisition_contract'
+        if row["Program Type"].lower() == 'government service':
+            category_id = 'government_service'
+        cur.execute(
+            "INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?) ON CONFLICT DO NOTHING;",
+            (row["Program ID"], category_id, 'assistance')
+        )
+
+        # Taxonomy joins assumed to happen via GWO / PON assignment files
+
+    for _, row in df.iterrows():
+        cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL, [
+            row["Program ID"],
+            row["Fiscal Year"],
+            row["Outlay_Sum (USASpending.gov)"],
+            row["Obligation_Sum (USASpending.gov)"]
+        ])
 
 def load_taxonomy_and_assignments():
     """Loads taxonomy categories, focus areas, gwos, pons, and assignments."""

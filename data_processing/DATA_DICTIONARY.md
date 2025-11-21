@@ -557,6 +557,8 @@ improper_payment_mapping
 - **assistance_listing**: Standard SAM.gov assistance listings
 - **interest**: Interest on the public debt programs
 - **tax_expenditure**: Tax expenditure programs
+- **acquisition_contract**: Acquisition contracts programs (derived from contracts)
+- **government_service**: Government service programs (derived from contracts)
 
 ### Spending Data Aggregation
 - SAM.gov spending: Stored at transaction level with actual/estimate flags
