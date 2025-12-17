@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Natural Resources and Environment
+- E Cultural Affairs - Cultural Institutions
 cfda: TC.045
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: 'Preserve Culturally or Historically Significant Sites or Artifacts '
+  permalink: /gwo/E6
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -25,7 +27,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":710000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":750000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":770000000.0}]'
 outlays: null
 permalink: /program/TC.045.html
-pons: []
+pons:
+- permalink: /pon/T97
+  pon: Protect Cultural and Historical Sites and Artifacts
 popular_name: ''
 program_type: tax_expenditure
 results: []

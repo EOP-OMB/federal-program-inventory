@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Commerce and Housing
+- M Housing - Housing and Homelessness
 cfda: TC.061
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Support Affordable Housing
+  permalink: /gwo/M2
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -23,7 +25,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1610000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2750000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2830000000.0}]'
 outlays: null
 permalink: /program/TC.061.html
-pons: []
+pons:
+- permalink: /pon/835
+  pon: Develop or Convert New Affordable Housing
+- permalink: /pon/T91
+  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

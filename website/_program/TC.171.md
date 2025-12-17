@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - General Purpose Fiscal Assistance
+- C Community Development - Community, Area, and Regional Development
 cfda: TC.171
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Strengthen Community and Regional Development
+  permalink: /gwo/C1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -25,7 +27,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":29810000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":39920000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":41110000000.0}]'
 outlays: null
 permalink: /program/TC.171.html
-pons: []
+pons:
+- permalink: /pon/1C
+  pon: Construct New Community Infrastructure
 popular_name: ''
 program_type: tax_expenditure
 results: []

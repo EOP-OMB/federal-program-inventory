@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Interest on the Public Debt - Interest on the Public Debt
+- 2025 Debt Service - Fees and Receipts
 cfda: IN.001
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: 'Improved Collection of Fees and Receipts '
+  permalink: /gwo/DS1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -22,7 +24,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":879307000000.0},{"x":"2024","outlays":1133040000000.0},{"x":"2025","outlays":0.0}]'
 outlays: null
 permalink: /program/IN.001.html
-pons: []
+pons:
+- permalink: /pon/N11
+  pon: Improve Revenue Collection
 popular_name: ''
 program_type: interest
 results: []

@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - General Science, Space, and Technology
+- B Business and Commerce - Economic Development
 cfda: TC.007
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Accelerate Development of Commercial Products and Technologies
+  permalink: /gwo/B5
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -32,7 +34,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":-38660000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":-25050000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":-17360000000.0}]'
 outlays: null
 permalink: /program/TC.007.html
-pons: []
+pons:
+- permalink: /pon/36
+  pon: Increase Commercialization of Innovations
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

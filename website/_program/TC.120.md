@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- L Health - Child Welfare
 cfda: TC.120
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Ensure Stability and Security for Children Without Parents
+  permalink: /gwo/L1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -25,7 +27,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":650000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":700000000.0}]'
 outlays: null
 permalink: /program/TC.120.html
-pons: []
+pons:
+- permalink: /pon/T91
+  pon: Reduce Tax Burden
+- permalink: /pon/182
+  pon: Reduce Time in Foster System
 popular_name: ''
 program_type: tax_expenditure
 results: []

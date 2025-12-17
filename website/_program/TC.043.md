@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Natural Resources and Environment
+- B Business and Commerce - Business Development
 cfda: TC.043
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Grow American Businesses
+  permalink: /gwo/B2
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -25,7 +27,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":180000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":200000000.0}]'
 outlays: null
 permalink: /program/TC.043.html
-pons: []
+pons:
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

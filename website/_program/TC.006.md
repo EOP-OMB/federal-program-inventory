@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - International Affairs
+- B Business and Commerce - Economic Development
 cfda: TC.006
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Expand Trade and Market Access
+  permalink: /gwo/B3
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -22,7 +24,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1620000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1860000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1930000000.0}]'
 outlays: null
 permalink: /program/TC.006.html
-pons: []
+pons:
+- permalink: /pon/T72
+  pon: Expand International Economic Engagement
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []
