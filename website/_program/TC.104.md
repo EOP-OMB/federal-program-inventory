@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- G Education - Post–Secondary Education
 cfda: TC.104
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Provide Finance Options for Post-Secondary Education
+  permalink: /gwo/G7
 improper_payments: '[{"name":"Internal Revenue Service - American Opportunity Tax
   Credit","outlays":5176490000.0,"improper_payments":1431300000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
 is_subpart_f: null
@@ -32,7 +34,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0},{"x":"2025","outlays":2420000000.0,"forgone_revenue":11060000000.0}]'
 outlays: null
 permalink: /program/TC.104.html
-pons: []
+pons:
+- permalink: /pon/913
+  pon: Improve Persistence and Completion of Post-Secondary Education
+- permalink: /pon/T91
+  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

@@ -1,9 +1,9 @@
 ---
-category: National Defense
-definition: 'A beneficiary demonstrated one or more of the following results within
-  the past year: -Completed mission-critical training and certifications aligned with
-  national defense objectives; -Met physical, psychological, and technical standards
-  required for deployment in high-threat or strategic environments; -Demonstrated
+category: 2025 National Defense
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Completed mission-critical training and certifications
+  aligned with national defense objectives; -Met physical, psychological, and technical
+  standards required for deployment in high-threat or strategic environments; -Demonstrated
   proficiency in individual combat, intelligence, or support roles; -Maintained deployment
   availability and role-specific readiness for national security operations.'
 focus_area: Defense Capability
@@ -18,6 +18,8 @@ where_used:
   permalink: /program/12.024
 - name: Language Training Center
   permalink: /program/12.579
+- name: Montgomery GI Bill Selected Reserve
+  permalink: /program/64.032
 - name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
 - name: National Security Education Program David L. Boren Scholarships
@@ -26,4 +28,6 @@ where_used:
   permalink: /program/12.357
 - name: Training and Support – Combating Weapons of Mass Destruction
   permalink: /program/12.501
+- name: U.S. Military Academy Athletic Programs at West Point
+  permalink: /program/12.432
 ---

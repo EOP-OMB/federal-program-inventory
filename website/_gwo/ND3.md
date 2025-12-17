@@ -1,5 +1,5 @@
 ---
-category: National Defense
+category: 2025 National Defense
 definition: Ensuring U.S. forces remain fully prepared to respond to domestic and
   foreign threats.
 focus_area: Defense Capability
@@ -34,6 +34,8 @@ where_used:
   permalink: /program/12.004
 - name: Maritime Security Fleet Program or Ship Operations Cooperation Program
   permalink: /program/20.813
+- name: Multilateral and Nuclear Affairs
+  permalink: /program/19.808
 - name: National Guard Military Operations and Maintenance (O&M) Projects
   permalink: /program/12.401
 - name: National Security Education Program David L. Boren Fellowships

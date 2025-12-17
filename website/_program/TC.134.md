@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Health
+- L Health - Healthcare Quality and Delivery
 cfda: TC.134
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Improve Capacity of the Healthcare System
+  permalink: /gwo/L18
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -23,7 +25,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":3120000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3490000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3590000000.0}]'
 outlays: null
 permalink: /program/TC.134.html
-pons: []
+pons:
+- permalink: /pon/1C
+  pon: Construct New Community Infrastructure
+- permalink: /pon/876
+  pon: Expand High-Quality Healthcare Services
 popular_name: ''
 program_type: tax_expenditure
 results: []

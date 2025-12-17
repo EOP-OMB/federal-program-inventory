@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- G Education - Educational Environments
 cfda: TC.116
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Promote Safe and High-Quality Schools
+  permalink: /gwo/G3
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -25,7 +27,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0},{"x":"2025","outlays":480000000.0,"forgone_revenue":440000000.0}]'
 outlays: null
 permalink: /program/TC.116.html
-pons: []
+pons:
+- permalink: /pon/1C
+  pon: Construct New Community Infrastructure
+- permalink: /pon/144
+  pon: Improve School Environment
 popular_name: ''
 program_type: tax_expenditure
 results: []

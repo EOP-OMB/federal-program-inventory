@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- G Education - Early Childhood Education and Childcare
 cfda: TC.119
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Strengthen Early Childhood Education and Childcare
+  permalink: /gwo/G1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -24,7 +26,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":20000000.0}]'
 outlays: null
 permalink: /program/TC.119.html
-pons: []
+pons:
+- permalink: /pon/1G
+  pon: Increase Access to Affordable Childcare
 popular_name: ''
 program_type: tax_expenditure
 results: []

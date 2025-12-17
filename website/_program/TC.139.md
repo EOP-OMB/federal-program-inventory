@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Health
+- L Health - Healthcare Access
 cfda: TC.139
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Strengthen Healthcare Services
+  permalink: /gwo/L14
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -31,7 +33,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0}]'
 outlays: null
 permalink: /program/TC.139.html
-pons: []
+pons:
+- permalink: /pon/872
+  pon: Improve Comprehensive Healthcare Utilization
+- permalink: /pon/N68
+  pon: Increase Affordable Health Coverage
 popular_name: ''
 program_type: tax_expenditure
 results: []

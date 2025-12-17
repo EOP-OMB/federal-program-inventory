@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Community and Regional Development
+- C Community Development - Community, Area, and Regional Development
 cfda: TC.100
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Strengthen Community and Regional Development
+  permalink: /gwo/C1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -23,7 +25,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":0.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.100.html
-pons: []
+pons:
+- permalink: /pon/1C
+  pon: Construct New Community Infrastructure
+- permalink: /pon/117
+  pon: Increase Local Economic Growth
 popular_name: ''
 program_type: tax_expenditure
 results: []

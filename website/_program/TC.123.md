@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- G Education - Early Childhood Education and Childcare
 cfda: TC.123
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Strengthen Early Childhood Education and Childcare
+  permalink: /gwo/G1
 improper_payments: '[{"name":"Internal Revenue Service - Child and Dependent Care
   Tax Credit","outlays":0.0,"improper_payments":0.0,"insufficient_payment":0.0,"high_priority":false,"related_programs":[]}]'
 is_subpart_f: null
@@ -27,7 +29,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3660000000.0}]'
 outlays: null
 permalink: /program/TC.123.html
-pons: []
+pons:
+- permalink: /pon/1G
+  pon: Increase Access to Affordable Childcare
+- permalink: /pon/T91
+  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

@@ -142,37 +142,56 @@ beneficiary_types:
 - title: Youth (16-21)
 categories:
 - sub_categories:
+  - title: Fees and Receipts
+  title: 2025 Debt Service
+- sub_categories:
+  - title: International Relations and Foreign Affairs
+  title: 2025 International Affairs
+- sub_categories:
+  - title: Defense Capability
+  title: 2025 National Defense
+- sub_categories:
+  - title: Agricultural Resources and Services
+  - title: Farm Income Stabilization
+  title: A Agricultural
+- sub_categories:
   - title: Business Development
   - title: Economic Development
-  title: Business and Commerce
+  title: B Business and Commerce
 - sub_categories:
   - title: Community, Area, and Regional Development
-  title: Community Development
+  title: C Community Development
+- sub_categories:
+  - title: Consumer and Occupational Health and Safety
+  title: D Consumer Protection
 - sub_categories:
   - title: Access and Appreciation
   - title: Artistic Talent Development
   - title: Cultural Heritage and Traditions
   - title: Cultural Institutions
-  title: Cultural Affairs
+  title: E Cultural Affairs
 - sub_categories:
   - title: Disaster Readiness, Response, and Relief
-  title: Disaster Prevention and Relief
+  title: F Disaster Prevention and Relief
 - sub_categories:
   - title: Early Childhood Education and Childcare
   - title: Educational Environments
   - title: K–12 Education
   - title: Post–Secondary Education
   - title: STEM Education
-  title: Education
+  title: G Education
 - sub_categories:
   - title: Workforce Development
-  title: Employment and Labor
+  title: H Employment and Labor
 - sub_categories:
   - title: Energy Supply
-  title: Energy
+  title: I Energy
 - sub_categories:
   - title: Pollution Control and Abatement
-  title: Environmental Quality
+  title: J Environmental Quality
+- sub_categories:
+  - title: Food and Nutrition Assistance
+  title: K Food and Nutrition
 - sub_categories:
   - title: Child Welfare
   - title: Health and Wellbeing
@@ -180,13 +199,14 @@ categories:
   - title: Healthcare Innovation
   - title: Healthcare Quality and Delivery
   - title: Veteran Health
-  title: Health
+  title: L Health
 - sub_categories:
-  - title: Interest on the Public Debt
-  title: Interest on the Public Debt
+  - title: Housing and Homelessness
+  title: M Housing
 - sub_categories:
-  - title: International Relations and Foreign Affairs
-  title: International Affairs
+  - title: Burial Benefits
+  - title: Personal Financial Health
+  title: N Income Security and Social Services
 - sub_categories:
   - title: Border Security
   - title: Cybersecurity
@@ -194,42 +214,21 @@ categories:
   - title: Law Enforcement Support
   - title: Legal Services
   - title: Tribal Independence and Autonomy
-  title: Law, Justice, and Legal Services
-- sub_categories:
-  - title: Defense Capability
-  title: National Defense
+  title: P Law, Justice, and Legal Services
 - sub_categories:
   - title: Conservation and Land Management
   - title: Recreational Resources
   - title: Water Resources
-  title: Natural Resources
+  title: Q Natural Resources
 - sub_categories:
   - title: General science and basic research
-  title: Science and Technology
-- sub_categories:
-  - title: Agriculture
-  - title: Commerce and Housing
-  - title: Community and Regional Development
-  - title: Education, Training, Employment, and Social Services
-  - title: Energy
-  - title: General Purpose Fiscal Assistance
-  - title: General Science, Space, and Technology
-  - title: Health
-  - title: Income Security
-  - title: Interest
-  - title: International Affairs
-  - title: National Defense
-  - title: Natural Resources and Environment
-  - title: Social Security
-  - title: Transportation
-  - title: Veterans Benefits and Services
-  title: Tax Expenditures
+  title: S Science and Technology
 - sub_categories:
   - title: Air Transportation
   - title: Ground Transportation
   - title: Multi–modal Transportation
   - title: Water Transportation
-  title: Transportation
+  title: T Transportation
 cfo_agencies:
 - title: Agency for International Development
 - sub_categories:

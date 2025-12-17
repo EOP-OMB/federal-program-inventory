@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Community and Regional Development
+- F Disaster Prevention and Relief - Disaster Readiness, Response, and Relief
 cfda: TC.102
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Improve Direct Disaster and Emergency Relief
+  permalink: /gwo/F1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -26,7 +28,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":50000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":40000000.0}]'
 outlays: null
 permalink: /program/TC.102.html
-pons: []
+pons:
+- permalink: /pon/59
+  pon: Improve Emergency Disaster Relief
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []
