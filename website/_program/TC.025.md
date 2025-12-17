@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Energy
+- B Business and Commerce - Business Development
 cfda: TC.025
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Grow American Businesses
+  permalink: /gwo/B2
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -26,7 +28,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":0.0},{"x":"2024","outlays":0.0,"forgone_revenue":2550000000.0},{"x":"2025","outlays":1130000000.0,"forgone_revenue":3160000000.0}]'
 outlays: null
 permalink: /program/TC.025.html
-pons: []
+pons:
+- permalink: /pon/N73
+  pon: Expand Domestic Energy Production
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

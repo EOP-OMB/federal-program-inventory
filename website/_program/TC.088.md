@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Transportation
+- T Transportation - Multi–modal Transportation
 cfda: TC.088
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Improve Commercial Distribution Infrastructure
+  permalink: /gwo/T1
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -22,7 +24,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":120000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":130000000.0}]'
 outlays: null
 permalink: /program/TC.088.html
-pons: []
+pons:
+- permalink: /pon/9C
+  pon: Maintain Existing Community Infrastructure
 popular_name: ''
 program_type: tax_expenditure
 results: []

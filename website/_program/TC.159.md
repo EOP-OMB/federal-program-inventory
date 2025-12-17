@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Income Security
+- N Income Security and Social Services - Personal Financial Health
 cfda: TC.159
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Bridge Financial Gaps with Transitional Income Assistance
+  permalink: /gwo/N3
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -33,7 +35,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":220000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":290000000.0}]'
 outlays: null
 permalink: /program/TC.159.html
-pons: []
+pons:
+- permalink: /pon/828
+  pon: Improve Job Quality
+- permalink: /pon/859
+  pon: Increase Long-Term Personal Financial Stability
 popular_name: ''
 program_type: tax_expenditure
 results: []

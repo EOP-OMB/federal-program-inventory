@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Health
+- L Health - Healthcare Access
 cfda: TC.136
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Provide Healthcare Coverage
+  permalink: /gwo/L15
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -35,7 +37,13 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.136.html
-pons: []
+pons:
+- permalink: /pon/828
+  pon: Improve Job Quality
+- permalink: /pon/N68
+  pon: Increase Affordable Health Coverage
+- permalink: /pon/860
+  pon: Increase Personal Financial Resilience
 popular_name: ''
 program_type: tax_expenditure
 results: []

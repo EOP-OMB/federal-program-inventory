@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- N Income Security and Social Services - Personal Financial Health
 cfda: TC.124
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Bridge Financial Gaps with Transitional Income Assistance
+  permalink: /gwo/N3
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -23,7 +25,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":10000000.0}]'
 outlays: null
 permalink: /program/TC.124.html
-pons: []
+pons:
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
+- permalink: /pon/179
+  pon: Reduce Stigma Against Individuals with Disabilities
 popular_name: ''
 program_type: tax_expenditure
 results: []

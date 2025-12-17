@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Education, Training, Employment, and Social Services
+- G Education - Post–Secondary Education
 cfda: TC.107
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Provide Finance Options for Post-Secondary Education
+  permalink: /gwo/G7
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -24,7 +26,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":130000000.0}]'
 outlays: null
 permalink: /program/TC.107.html
-pons: []
+pons:
+- permalink: /pon/912
+  pon: Improve Financial Support for Post-Secondary Education
 popular_name: ''
 program_type: tax_expenditure
 results: []

@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Energy
+- I Energy - Energy Supply
 cfda: TC.035
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Increase Energy Reliability and Stability (Infrastructure)
+  permalink: /gwo/I4
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -28,7 +30,11 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":280000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":210000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":220000000.0}]'
 outlays: null
 permalink: /program/TC.035.html
-pons: []
+pons:
+- permalink: /pon/10E
+  pon: Increase Energy Efficiency
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

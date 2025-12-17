@@ -1,15 +1,21 @@
 ---
-category: International Affairs
-definition: 'A beneficiary demonstrated one or more of the following results within
-  the past year: -Engaged in international study or exchange programs that expand
-  educational experience; -Gained exposure to global perspectives to enhance career
-  readiness and civic understanding; -Increased cross-cultural competence, foreign
-  language proficiency, or global awareness.'
+category: 2025 International Affairs
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Engaged in international study or exchange programs
+  that expand educational experience; -Gained exposure to global perspectives to enhance
+  career readiness and civic understanding; -Increased cross-cultural competence,
+  foreign language proficiency, or global awareness.'
 focus_area: International Relations and Foreign Affairs
 gwo_id: 8IA
 permalink: /pon/8IA
 title: Facilitate International Student Exchange
 where_used:
+- name: Academic Exchange Programs - Educational Advising and Student Services
+  permalink: /program/19.432
+- name: Academic Exchange Programs - Special Academic Exchange Programs
+  permalink: /program/19.011
+- name: Academic Exchange Programs - Undergraduate Programs
+  permalink: /program/19.009
 - name: English for Heritage Language Speakers Grants to U.S. Institutions of Higher
     Education
   permalink: /program/12.554
@@ -19,6 +25,8 @@ where_used:
   permalink: /program/12.552
 - name: National Security Education Program David L. Boren Scholarships
   permalink: /program/12.551
+- name: Overseas Programs - Doctoral Dissertation Research Abroad
+  permalink: /program/84.022
 - name: ROTC Language and Culture Training Grants
   permalink: /program/12.357
 ---

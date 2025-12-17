@@ -6,11 +6,13 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Commerce and Housing
+- N Income Security and Social Services - Personal Financial Health
 cfda: TC.055
 fiscal_year: '2024'
 grants_url: null
-gwo: null
+gwo:
+  gwo: Bridge Financial Gaps with Transitional Income Assistance
+  permalink: /gwo/N3
 improper_payments: null
 is_subpart_f: null
 layout: program
@@ -22,7 +24,9 @@ obligations: null
 other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":2970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2450000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2480000000.0}]'
 outlays: null
 permalink: /program/TC.055.html
-pons: []
+pons:
+- permalink: /pon/866
+  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []
