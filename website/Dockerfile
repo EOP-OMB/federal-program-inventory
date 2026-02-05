@@ -33,6 +33,8 @@ COPY . /app
 RUN bundle exec jekyll build && \
     npx gulp updateUswds
 
+RUN BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") && \
+    echo "<!-- Deployment Date: ${BUILD_DATE} -->" >> /app/_site/index.html
 
 # Stage 2: Build the final nginx image
 #          This stage is responsible for building the final nginx image that
