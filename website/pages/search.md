@@ -4,8 +4,6 @@ applicant_types:
 - title: Anyone/general public
 - title: City or Township Government
 - title: County Government
-- title: Example Applicant 1
-- title: Example Applicant 2
 - title: Federal
 - title: Federally Recognized Indian Tribal Governments
 - title: For-Profit Organization (Other than Small Business)
@@ -50,8 +48,8 @@ applicant_types:
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
 assistance_types:
-- title: Acquisition Contract
 - title: Advisory Services and Counseling
+- title: Contracts
 - title: Direct Loans
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
@@ -86,8 +84,6 @@ beneficiary_types:
 - title: Education (9-12)
 - title: Education Professional
 - title: Engineer/Architect
-- title: Example Beneficiary 1
-- title: Example Beneficiary 2
 - title: Farmer/Rancher/Agriculture Producer
 - title: Federal
 - title: Federally Recognized Indian Tribal Governments
@@ -187,6 +183,9 @@ categories:
   - title: Energy Supply
   title: I Energy
 - sub_categories:
+  - title: Interest on the Public Debt
+  title: Interest on the Public Debt
+- sub_categories:
   - title: Pollution Control and Abatement
   title: J Environmental Quality
 - sub_categories:
@@ -229,6 +228,24 @@ categories:
   - title: Multi–modal Transportation
   - title: Water Transportation
   title: T Transportation
+- sub_categories:
+  - title: Agriculture
+  - title: Commerce and Housing
+  - title: Community and Regional Development
+  - title: Education, Training, Employment, and Social Services
+  - title: Energy
+  - title: General Purpose Fiscal Assistance
+  - title: General Science, Space, and Technology
+  - title: Health
+  - title: Income Security
+  - title: Interest
+  - title: International Affairs
+  - title: National Defense
+  - title: Natural Resources and Environment
+  - title: Social Security
+  - title: Transportation
+  - title: Veterans Benefits and Services
+  title: Tax Expenditures
 cfo_agencies:
 - title: Agency for International Development
 - sub_categories:

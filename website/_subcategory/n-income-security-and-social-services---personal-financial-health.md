@@ -116,6 +116,11 @@ categories_subcategories:
   - permalink: /category/i-energy/energy-supply
     title: Energy Supply
   title: I Energy
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/j-environmental-quality
   subcategories:
   - permalink: /category/j-environmental-quality/pollution-control-and-abatement
@@ -193,6 +198,41 @@ categories_subcategories:
   - permalink: /category/t-transportation/water-transportation
     title: Water Transportation
   title: T Transportation
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 fiscal_year: '2024'
 parent_permalink: /category/n-income-security-and-social-services
 parent_title: N Income Security and Social Services

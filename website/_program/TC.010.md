@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - I Energy - Energy Supply
+- Tax Expenditures - Energy
 cfda: TC.010
 fiscal_year: '2024'
 grants_url: null

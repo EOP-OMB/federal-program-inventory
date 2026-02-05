@@ -1,0 +1,27 @@
+<div class="bg-base-lightest padding-3 width-full margin-bottom-2 {% if include.grid %} {{ include.grid }}{% endif %} {% if include.margin %} {{ include.margin }}{% endif %}">
+  <div class="info-card-header">
+    <p class="font-sans-xs text-ink margin-bottom-2 margin-top-1 info-card-title">
+      {{ include.title }}
+    </p>
+    {% if include.show_info %}
+      <svg class="usa-icon info-card-help-trigger" aria-hidden="true" focusable="false" role="img"
+           data-help-id="{{ include.help_id }}"
+           data-help-title="{{ include.help_title }}"
+           data-help-text="{{ include.help_text }}">
+        <use href="/assets/img/sprite.svg#info_outline"></use>
+      </svg>
+    {% endif %}
+  </div>
+  <div class="font-sans-lg text-bold text-ink margin-bottom-1">
+    {{ include.display_number }}
+  </div>
+  {% if include.text %}
+  <div class="font-sans-2xs text-base-dark"> {{ include.text }} </div>
+  {% endif %}
+  {% if include.increase_decrease %}
+  <div class="font-sans-2xs text-base-dark">
+    {{ include.increase_decrease }}{{ include.percentage }} from {{ include.date
+    }}
+  </div>
+  {% endif %}
+</div>

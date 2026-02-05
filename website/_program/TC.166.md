@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - N Income Security and Social Services - Personal Financial Health
+- Tax Expenditures - Social Security
 cfda: TC.166
 fiscal_year: '2024'
 grants_url: null

@@ -7,14 +7,29 @@ gwo_id: DS1
 permalink: /gwo/DS1
 title: 'Improved Collection of Fees and Receipts '
 where_used:
-- name: California Refuge Account
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: California Refuge Account
   permalink: /program/15.432
-- name: Exchange of Federal Tax Information With State Tax Agencies
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 0.0
+  name: Exchange of Federal Tax Information With State Tax Agencies
   permalink: /program/21.004
-- name: Interest on the Public Debt
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 0.0
+  name: Interest on the Public Debt
   permalink: /program/IN.001
-- name: Late Disbursement Interest
+  program_type: interest
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Late Disbursement Interest
   permalink: /program/15.436
-- name: Sale of Federal Surplus Personal Property
+  program_type: assistance_listing
+- agency: General Services Administration
+  expenditure_amount: 0.0
+  name: Sale of Federal Surplus Personal Property
   permalink: /program/39.007
+  program_type: assistance_listing
 ---

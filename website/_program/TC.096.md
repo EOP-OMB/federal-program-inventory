@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - B Business and Commerce - Business Development
+- Tax Expenditures - Community and Regional Development
 cfda: TC.096
 fiscal_year: '2024'
 grants_url: null

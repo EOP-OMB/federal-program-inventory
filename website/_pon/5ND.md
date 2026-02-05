@@ -11,23 +11,50 @@ gwo_id: 5ND
 permalink: /pon/5ND
 title: Strengthen Operational Readiness of Defense Personnel
 where_used:
-- name: Community Economic Adjustment Assistance for Establishment or Expansion of
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Community Economic Adjustment Assistance for Establishment or Expansion of
     a Military Installation
   permalink: /program/12.618
-- name: Defense Security Cooperation University - Sponsored Research
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Defense Security Cooperation University - Sponsored Research
   permalink: /program/12.024
-- name: Language Training Center
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Language Training Center
   permalink: /program/12.579
-- name: Montgomery GI Bill Selected Reserve
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: Montgomery GI Bill Selected Reserve
   permalink: /program/64.032
-- name: National Security Education Program David L. Boren Fellowships
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
-- name: National Security Education Program David L. Boren Scholarships
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Security Education Program David L. Boren Scholarships
   permalink: /program/12.551
-- name: ROTC Language and Culture Training Grants
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ROTC Language and Culture Training Grants
   permalink: /program/12.357
-- name: Training and Support – Combating Weapons of Mass Destruction
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Training and Support – Combating Weapons of Mass Destruction
   permalink: /program/12.501
-- name: U.S. Military Academy Athletic Programs at West Point
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: U.S. Military Academy Athletic Programs at West Point
   permalink: /program/12.432
+  program_type: assistance_listing
 ---

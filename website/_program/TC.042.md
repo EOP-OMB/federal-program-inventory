@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - L Health - Health and Wellbeing
+- Tax Expenditures - Natural Resources and Environment
 cfda: TC.042
 fiscal_year: '2024'
 grants_url: null

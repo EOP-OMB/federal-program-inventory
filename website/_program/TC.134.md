@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - L Health - Healthcare Quality and Delivery
+- Tax Expenditures - Health
 cfda: TC.134
 fiscal_year: '2024'
 grants_url: null

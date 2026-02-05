@@ -7,48 +7,111 @@ gwo_id: IA2
 permalink: /gwo/IA2
 title: Promote International Education and Exchange
 where_used:
-- name: Academic Exchange Programs - Educational Advising and Student Services
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Educational Advising and Student Services
   permalink: /program/19.432
-- name: Academic Exchange Programs - English Language Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - English Language Programs
   permalink: /program/19.421
-- name: Academic Exchange Programs - Scholars
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
-- name: Academic Exchange Programs - Special Academic Exchange Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Special Academic Exchange Programs
   permalink: /program/19.011
-- name: Academic Exchange Programs - Undergraduate Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Undergraduate Programs
   permalink: /program/19.009
-- name: American Overseas Research Centers
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: American Overseas Research Centers
   permalink: /program/84.274
-- name: Cultural, Technical and Educational Centers
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Cultural, Technical and Educational Centers
   permalink: /program/19.015
-- name: ECA – American Spaces
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: ECA – American Spaces
   permalink: /program/19.441
-- name: Educational and Cultural Exchange Programs Appropriation Overseas Grants
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Educational and Cultural Exchange Programs Appropriation Overseas Grants
   permalink: /program/19.022
-- name: Faculty Exchange Program
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Faculty Exchange Program
   permalink: /program/10.613
-- name: Foreign Assistance to American Schools and Hospitals Abroad (ASHA)
+  program_type: assistance_listing
+- agency: Agency for International Development
+  expenditure_amount: 0.0
+  name: Foreign Assistance to American Schools and Hospitals Abroad (ASHA)
   permalink: /program/98.006
-- name: International Exchange Alumni Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: International Exchange Alumni Programs
   permalink: /program/19.452
-- name: Overseas Programs - Doctoral Dissertation Research Abroad
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs - Doctoral Dissertation Research Abroad
   permalink: /program/84.022
-- name: Overseas Programs - Faculty Research Abroad
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs - Faculty Research Abroad
   permalink: /program/84.019
-- name: Overseas Programs Special Bilateral Projects
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs Special Bilateral Projects
   permalink: /program/84.018
-- name: Professional and Cultural Exchange Programs - Citizen Exchanges
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Professional and Cultural Exchange Programs - Citizen Exchanges
   permalink: /program/19.415
-- name: Professional and Cultural Exchange Programs - International Visitor Leadership
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Professional and Cultural Exchange Programs - International Visitor Leadership
     Program
   permalink: /program/19.402
-- name: Professional and Cultural Exchange Programs - Special Professional and Cultural
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Professional and Cultural Exchange Programs - Special Professional and Cultural
     Programs
   permalink: /program/19.012
-- name: Special International Exchange Grant Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Special International Exchange Grant Programs
   permalink: /program/19.451
-- name: Technical Assistance and Provision for Foreign Hospitals and Health Organizations
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 1346823.74
+  name: Technical Assistance and Provision for Foreign Hospitals and Health Organizations
   permalink: /program/93.019
-- name: USAID Development Partnerships for University Cooperation and Development
+  program_type: assistance_listing
+- agency: Agency for International Development
+  expenditure_amount: 0.0
+  name: USAID Development Partnerships for University Cooperation and Development
   permalink: /program/98.012
+  program_type: assistance_listing
 ---

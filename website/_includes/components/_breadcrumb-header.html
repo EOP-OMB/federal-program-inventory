@@ -1,0 +1,23 @@
+<!-- Program Breadcrumb Navigation -->
+<div class="grid-row grid-gap margin-top-3">
+  <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
+    <ol class="usa-breadcrumb__list flex items-center gap-2 flex-wrap margin-bottom-2">
+      <li class="usa-breadcrumb__list-item">
+        <span class="font-sans-2xs text-base">{{ include.agency | default: page.agency }}</span>
+      </li>
+      <li class="usa-breadcrumb__list-item">
+        <span>
+          {% assign sub_agency = include.sub_agency | default: page.sub-agency %}
+          {% if sub_agency == 'N/A' or sub_agency == '' or sub_agency == nil %}
+          N/A
+          {% else %}
+          <span class="font-sans-2xs text-base">{{ sub_agency }}</span>
+          {% endif %}
+        </span>
+      </li>
+      <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+        <span class="font-sans-2xs text-foreground text-ink">Program {{ include.cfda | default: page.cfda }}</span>
+      </li>
+    </ol>
+  </nav>
+</div>

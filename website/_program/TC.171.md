@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - C Community Development - Community, Area, and Regional Development
+- Tax Expenditures - General Purpose Fiscal Assistance
 cfda: TC.171
 fiscal_year: '2024'
 grants_url: null

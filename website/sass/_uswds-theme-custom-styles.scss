@@ -21,3 +21,188 @@ i.e.
 */
 
 @use "uswds-core" as *;
+
+// Obligation table styles
+#obligation-table {
+  border: none;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  thead tr th {
+    border-bottom: 1px solid #ddd;
+    font-size: small;
+  }
+
+  tbody tr {
+    background-color: white;
+    transition: background-color 0.2s ease;
+    font-size: small;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
+  }
+}
+
+// Sortable table styles
+[data-sortable-table] {
+  // Set header background color to white
+  thead th {
+    background-color: white !important;
+  }
+
+  // Hide USWDS sort buttons
+  .usa-table__header__button {
+    display: none !important;
+  }
+
+  // Column text colors
+  tbody tr td {
+    &:first-child,
+    &:last-child {
+      color: #1b1b1b !important; // text-ink
+    }
+
+    &:not(:first-child):not(:last-child) {
+      color: #454545 !important; // text-base-darker
+    }
+  }
+
+  // Remove border from total row
+  tbody tr[data-total-row] {
+    border-bottom: none !important;
+    
+    td {
+      border-bottom: none !important;
+    }
+  }
+}
+
+// Cell hover targeting - the working solution
+table[data-sortable-table] tbody tr:hover td,
+.usa-table[data-sortable-table] tbody tr:hover td,
+.usa-table--numeric-right th[data-sortable] {
+  padding-right: 0;
+}
+.usa-table--borderless[data-sortable-table] tbody tr:hover td,
+table.usa-table[data-sortable-table] tbody tr:hover td,
+table.usa-table.usa-table--borderless[data-sortable-table] tbody tr:hover td,
+table.usa-table.usa-table--borderless.width-full[data-sortable-table] tbody tr:hover td {
+  background-color: #f1f1f1 !important;
+}
+
+// Help Slider Component Styles
+.help-slider {
+  position: fixed;
+  top: 0;
+  right: -380px; // Initially hidden off-screen
+  width: 380px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-left: 1px solid #dcdee0;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+
+  &.open {
+    right: 0; // Slide in when open
+  }
+}
+
+.help-slider-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: #454545;
+  z-index: 1001;
+
+  &:hover {
+    color: #1b1b1b;
+  }
+
+  .usa-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.help-slider-container {
+  padding: 0 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.help-slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.help-slider-icon {
+  margin-right: 12px;
+  color: #005ea2; // USWDS primary blue
+  width: 24px;
+  height: 24px;
+}
+
+.help-slider-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.help-slider-content {
+  margin-bottom: 20px;
+}
+
+.help-slider-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #454545;
+  margin: 0;
+}
+
+// Info Card Header Styles
+.info-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-card-title {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.info-card-help-trigger {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: #454545;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px; // Align with first line of text
+
+  &:hover {
+    color: #005ea2;
+  }
+}

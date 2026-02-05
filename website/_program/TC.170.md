@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - M Housing - Housing and Homelessness
+- Tax Expenditures - Veterans Benefits and Services
 cfda: TC.170
 fiscal_year: '2024'
 grants_url: null

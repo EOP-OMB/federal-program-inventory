@@ -11,15 +11,30 @@ gwo_id: 2ND
 permalink: /pon/2ND
 title: Advance Homeland Security Research
 where_used:
-- name: Homeland Security Biowatch Program
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Homeland Security Biowatch Program
   permalink: /program/97.091
-- name: Homeland Security Preparedness Technical Assistance Program
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Homeland Security Preparedness Technical Assistance Program
   permalink: /program/97.007
-- name: Homeland Security Research, Development, Testing, Evaluation and Demonstration
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Homeland Security Research, Development, Testing, Evaluation and Demonstration
     of Technologies Related to Countering Weapons of Mass Destruction
   permalink: /program/97.077
-- name: Public Safety and Violence Prevention Research, Evaluation, and Implementation
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Public Safety and Violence Prevention Research, Evaluation, and Implementation
   permalink: /program/97.108
-- name: Scientific Leadership Awards
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Scientific Leadership Awards
   permalink: /program/97.062
+  program_type: assistance_listing
 ---

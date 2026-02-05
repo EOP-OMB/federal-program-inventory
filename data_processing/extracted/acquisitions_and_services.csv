@@ -1,1 +1,1372 @@
-Program Name,Popular Name,Program ID,Agency ID,Program Objective,Fiscal Year,Obligation_Sum (USASpending.gov),Outlay_Sum (USASpending.gov),Focus Area Id,USASpending hash,Beneficiary,Eligible applicants,Program Type,Improper Payment ,Authorizing Statues,Associated Rules and RegulationsGeneric Acq Program 1 ,,ACQ.1,100000000,Example objective for acquisition program,2025,200,225,G.FA5,,Example Beneficiary 1,Example Applicant 1,Acquisition Contract,,Example statute,Example associated ruleGeneric Acq Program 1 ,,ACQ.1,100000000,,2024,150,175,G.FA5,,Example Beneficiary 1,Example Applicant 1,Acquisition Contract,,,Generic Acq Program 1 ,,ACQ.1,100000000,,2023,100,125,G.FA5,,Example Beneficiary 1,Example Applicant 1,Acquisition Contract,,,Generic Service 1 ,,GS.1,300000201,Example objective for generic service,2025,210,235,G.FA2,,Example Beneficiary 2,Example Applicant 2,Government Service,,Example statute,Example associated ruleGeneric Service 1 ,,GS.1,300000201,,2024,160,185,G.FA2,,Example Beneficiary 2,Example Applicant 2,Government Service,,,Generic Service 1 ,,GS.1,300000201,,2023,110,135,G.FA2,,Example Beneficiary 2,Example Applicant 2,Government Service,,,
+Program Name,Popular Name,Program ID,Agency ID,Subagency ID,Agency Name ,Subagency Name ,Program Description,Fiscal Year,Obligation_Sum,Outlay_Sum,Program Type,Count of Contracts
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2017,32684985.94,0,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2018,45929229.71,0,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2019,49054638.74,0,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2020,70505273.78,78508679.58,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2021,94527645.97,57496131.19,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2022,75516544,116637470.7,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2023,113144655.9,33971210.2,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2024,33557041.79,51730746.9,Contracts,1
+Ames Laboratory,,CON1,930,,Department of Energy,Department of Energy,,2025,56586888.47,82930553.7,Contracts,1
+Applying for Federal civilian retirement,,CON2,,,Office of Personnel Management,Office of Personnel Management,,2021,589507.2,0,Government Service,1
+Applying for Federal civilian retirement,,CON2,,,Office of Personnel Management,Office of Personnel Management,,2022,1569088.62,922398.33,Government Service,4
+Applying for Federal civilian retirement,,CON2,,,Office of Personnel Management,Office of Personnel Management,,2023,7925318.18,2631761.71,Government Service,8
+Applying for Federal civilian retirement,,CON2,,,Office of Personnel Management,Office of Personnel Management,,2024,10763673.17,8320054.87,Government Service,9
+Applying for Federal civilian retirement,,CON2,,,Office of Personnel Management,Office of Personnel Management,,2025,1986657.72,8109585.34,Government Service,12
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2017,580623088.4,0,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2018,950416237.8,0,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2019,1081538243,0,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2020,1102205046,841077961.8,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2021,1139156780,683515207.9,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2022,1120853854,1339319426,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2023,1174702536,1117183312,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2024,1158673028,990569487.6,Contracts,1
+Argonne National Laboratory,,CON3,930,,Department of Energy,Department of Energy,,2025,1050650780,1223304075,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2017,366129756.3,0,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2018,601267256.8,0,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2019,719046690.4,0,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2020,984255472.3,1134392838,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2021,732307753.7,601918483.2,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2022,1409659408,665861641.5,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2023,816801725.3,719605323.8,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2024,748133517.3,153756208.9,Contracts,1
+Brookhaven National Laboratory,,CON4,930,,Department of Energy,Department of Energy,,2025,456582039.8,870848608.1,Contracts,1
+Cancer Imaging Program (CIP),,CON5,,,Department of Health and Human Services,National Institutes of Health,,2022,35986323.35,4745528.12,Contracts,1
+Cancer Imaging Program (CIP),,CON5,,,Department of Health and Human Services,National Institutes of Health,,2023,11806436.14,15528910.96,Contracts,1
+Cancer Imaging Program (CIP),,CON5,,,Department of Health and Human Services,National Institutes of Health,,2024,3716737.7,6550741.96,Contracts,1
+Cancer Imaging Program (CIP),,CON5,,,Department of Health and Human Services,National Institutes of Health,,2025,3369480.1,6473990.44,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON6,,,Department of Health and Human Services,National Institutes of Health,,2017,35781790.94,0,Contracts,3
+Cancer Therapy Evaluation Program (CTEP),,CON6,,,Department of Health and Human Services,National Institutes of Health,,2018,8566126.92,0,Contracts,3
+Cancer Therapy Evaluation Program (CTEP),,CON6,,,Department of Health and Human Services,National Institutes of Health,,2019,-20431.88,0,Contracts,3
+Cancer Therapy Evaluation Program (CTEP),,CON6,,,Department of Health and Human Services,Food and Drug Administration,,2020,1502158,0,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON7,,,Department of Health and Human Services,National Institutes of Health,,2020,11506841.16,0,Contracts,6
+Cancer Therapy Evaluation Program (CTEP),,CON7,,,Department of Health and Human Services,National Institutes of Health,,2021,6550896.76,0,Contracts,6
+Cancer Therapy Evaluation Program (CTEP),,CON7,,,Department of Health and Human Services,Food and Drug Administration,,2022,0,88030.39,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON8,,,Department of Health and Human Services,National Institutes of Health,,2022,1621479.93,6922328.67,Contracts,7
+Cancer Therapy Evaluation Program (CTEP),,CON8,,,Department of Health and Human Services,Food and Drug Administration,,2023,0,497597.54,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON9,,,Department of Health and Human Services,National Institutes of Health,,2023,18441277,11147974.48,Contracts,7
+Cancer Therapy Evaluation Program (CTEP),,CON9,,,Department of Health and Human Services,Food and Drug Administration,,2024,0,557760.29,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON10,,,Department of Health and Human Services,National Institutes of Health,,2024,0,14952781.24,Contracts,7
+Cancer Therapy Evaluation Program (CTEP),,CON10,,,Department of Health and Human Services,Food and Drug Administration,,2025,-226796.74,81698.57,Contracts,1
+Cancer Therapy Evaluation Program (CTEP),,CON11,,,Department of Health and Human Services,National Institutes of Health,,2025,5112186.97,16507843.94,Contracts,6
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2017,480800,0,Contracts,1
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2018,608050,0,Contracts,1
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2019,485300,0,Contracts,1
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2020,8778845,0,Contracts,2
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2021,60310625.34,125463.97,Contracts,3
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2022,32772081.6,38929084.35,Contracts,7
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2023,39342396.8,42827327.75,Contracts,12
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2024,32461103.56,34661920.78,Contracts,14
+Center for Cancer Research (CCR),,CON12,,,Department of Health and Human Services,National Institutes of Health,,2025,22085022.23,28133221.9,Contracts,12
+Coast Guard Offshore Patrol Cutter,,CON13,766,,Department of Homeland Security,U.S. Coast Guard,,2017,42072511.43,0,Contracts,1
+Coast Guard Offshore Patrol Cutter,,CON13,766,,Department of Homeland Security,U.S. Coast Guard,,2018,322935516.5,0,Contracts,2
+Coast Guard Offshore Patrol Cutter,,CON13,766,,Department of Homeland Security,U.S. Coast Guard,,2019,6935590.49,0,Contracts,2
+Coast Guard Offshore Patrol Cutter,,CON13,766,,Department of Homeland Security,U.S. Coast Guard,,2020,514418332,0,Contracts,2
+Coast Guard Offshore Patrol Cutter,,CON13,766,,Department of Homeland Security,U.S. Coast Guard,,2021,463947519.9,0,Contracts,4
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2017,21067195.04,0,Government Service,3
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2018,74667275.04,0,Government Service,6
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2019,419395200.4,0,Government Service,13
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2020,435863666.4,0,Government Service,20
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2021,716068775.1,0,Government Service,40
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2022,599500641.5,236399488.9,Government Service,60
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2023,622905375.1,741158107.3,Government Service,84
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2024,779104540.4,636044954.3,Government Service,112
+Completing TSA passenger screening,,CON14,,,Department of Homeland Security,Transportation Security Administration,,2025,658656610.9,783994012.5,Government Service,120
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2018,22967014.41,0,Contracts,1
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2019,521435050.6,0,Contracts,4
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2020,138191387,0,Contracts,4
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2021,32858889.5,7140842,Contracts,5
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2022,25576874.2,32554064.14,Contracts,5
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,National Institutes of Health,,2023,5635147.89,24364296.59,Contracts,6
+Division of Cancer Prevention (DCP),,CON15,,,Department of Health and Human Services,Centers for Disease Control and Prevention,,2024,2465726.01,207803.62,Contracts,1
+Division of Cancer Prevention (DCP),,CON16,,,Department of Health and Human Services,National Institutes of Health,,2024,-6062801.54,8401185.16,Contracts,7
+Division of Cancer Prevention (DCP),,CON16,,,Department of Health and Human Services,Centers for Disease Control and Prevention,,2025,2577594.84,2450854.5,Contracts,1
+Division of Cancer Prevention (DCP),,CON17,,,Department of Health and Human Services,National Institutes of Health,,2025,-4654151.13,5902294.94,Contracts,7
+Division of Cancer Treatment and Diagnosis (DCTD),,CON18,,,Department of Health and Human Services,National Institutes of Health,,2024,1987032,0,Contracts,1
+Division of Cancer Treatment and Diagnosis (DCTD),,CON18,,,Department of Health and Human Services,National Institutes of Health,,2025,7276100,1296848.6,Contracts,2
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2017,334589858,0,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2018,787492618.4,0,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2019,1035829073,0,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2020,1126100169,490030074.7,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2021,854730437.3,1148826251,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2022,881473093.6,2546173.64,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2023,558063119.6,30074728.99,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2024,548523221.6,717312326,Contracts,1
+Fermi National Accelerator Laboratory,,CON19,930,,Department of Energy,Department of Energy,,2025,1013011945,998600463.9,Contracts,2
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2020,1656896.11,0,Government Service,1
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2021,123895065.6,96816062.26,Government Service,7
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2022,226251201.5,103914126,Government Service,20
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2023,190479414.2,140660863.5,Government Service,42
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2024,289531548.5,203923067.3,Government Service,74
+Filing an individual tax return,,CON20,,,Department of the Treasury,Internal Revenue Service,,2025,507486042.5,418952330.4,Government Service,119
+Getting help from TSA,,CON21,,,Department of Homeland Security,Transportation Security Administration,,2023,5525300.9,1306253.68,Government Service,1
+Getting help from TSA,,CON21,,,Department of Homeland Security,Transportation Security Administration,,2024,10376952,7811909.53,Government Service,1
+Getting help from TSA,,CON21,,,Department of Homeland Security,Transportation Security Administration,,2025,9982564.12,12732132.64,Government Service,2
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2017,985468365.8,0,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2018,1558755031,0,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2019,1481856794,0,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2020,1483109866,1394700233,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2021,1549446152,10652717.85,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2022,1627960689,4018663515,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2023,2895629620,1744512615,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2024,1032380071,1433268346,Contracts,1
+Idaho National Laboratory,,CON22,930,,Department of Energy,Department of Energy,,2025,1651485599,1478587213,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2017,690576770.7,0,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2018,1016710378,0,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2019,1069876183,0,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2020,1236766038,902390240.9,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2021,1352591927,814611752.7,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2022,1448926636,983513065.1,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2023,1366598210,1208294713,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2024,1246253416,1004673484,Contracts,1
+Lawrence Berkeley National Laboratory,,CON23,930,,Department of Energy,Department of Energy,,2025,1111944283,1356472793,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2017,1582624352,0,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2018,1989321752,0,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2019,2300567590,0,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2020,2788801099,2625953821,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2021,2258712414,73136368.03,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2022,3491810303,2676954272,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2023,3465648213,2959535842,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2024,3107908970,3448465062,Contracts,1
+Lawrence Livermore National Laboratory,,CON24,930,,Department of Energy,Department of Energy,,2025,3473515399,3030528966,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2018,170222736.3,0,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2019,1821420884,0,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2020,2588050384,3070973011,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2021,3872400974,95010250.49,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2022,4847369205,4033278380,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2023,5420470432,4752680882,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2024,5207296174,5236205998,Contracts,1
+Los Alamos National Laboratory,,CON25,930,,Department of Energy,Department of Energy,,2025,4769811830,4358472198,Contracts,1
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2020,30000,0,Government Service,1
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2021,23161551.22,3964756.33,Government Service,3
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2022,36630690.59,18670210.16,Government Service,6
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2023,84695937.83,57882671.75,Government Service,16
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2024,155849363.9,152735976.4,Government Service,25
+Managing an individual online account,,CON26,,,Department of the Treasury,Internal Revenue Service,,2025,122132181.3,164882748,Government Service,42
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2019,6247677.99,0,Contracts,1
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2020,27669195.45,0,Contracts,4
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2021,458521963.2,3624650.85,Contracts,6
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2022,348593108.6,409062382.3,Contracts,6
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2023,295767183.2,279100690.4,Contracts,12
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2024,299629418.7,299269984.5,Contracts,21
+Medicare/Medicaid IT,,CON27,806,,Department of Health and Human Services,Centers for Medicare and Medicaid Services,,2025,319226557.3,327726454.9,Contracts,25
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2017,4709892.69,0,Contracts,2
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2018,9550864.18,0,Contracts,3
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2019,42754819.13,0,Contracts,6
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2020,509404798.2,350000,Contracts,15
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2021,799040353.4,18151657.89,Contracts,28
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2022,965348839.5,726358476.7,Contracts,40
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2023,1148774092,955172263.4,Contracts,53
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2024,1040857416,960282395.8,Contracts,67
+National Cancer Institute (NCI) General Program,,CON28,,,Department of Health and Human Services,National Institutes of Health,,2025,735938085,952502950.1,Contracts,72
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2017,584400,0,Contracts,2
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2018,3815494,0,Contracts,5
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2019,4981932.9,0,Contracts,7
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2020,63158324.8,32527319.32,Contracts,12
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2021,64188529.67,14340.86,Contracts,10
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2022,88035317.06,92293476.84,Contracts,19
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2023,49276703.08,56842877.78,Contracts,26
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2024,43245466.66,69341867.32,Contracts,28
+National Energy Technology Laboratory,,CON29,930,,Department of Energy,Department of Energy,,2025,55705096.78,90947466.51,Contracts,28
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2017,156863589,0,Contracts,1
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2018,95534794,0,Contracts,1
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2019,207299739,0,Contracts,1
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2020,50036749.4,0,Contracts,2
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,157915330.8,509405.09,Contracts,6
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,92894877.19,12869328.53,Contracts,9
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,30336060.82,795660.24,Contracts,9
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,43934423.25,Contracts,12
+"National Environmental Satellite, Data, and Information Service (NESDIS)",,CON30,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,-18805492.45,40089627.77,Contracts,17
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2020,2127624.94,0,Contracts,2
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,2639506.49,221763.12,Contracts,2
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,5599101,1055158.33,Contracts,5
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,18592930.17,1357309.08,Contracts,9
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,17636602.45,Contracts,14
+National Marine Fisheries Service (NMFS),,CON31,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,8683671.76,21886847.27,Contracts,20
+National Ocean Service (NOS),,CON32,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,2210010,0,Contracts,1
+National Ocean Service (NOS),,CON32,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,3409709.8,0,Contracts,2
+National Ocean Service (NOS),,CON32,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,2224270.22,159076.83,Contracts,2
+National Ocean Service (NOS),,CON32,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,2012812.75,Contracts,2
+National Ocean Service (NOS),,CON32,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,3190175.76,8494393.6,Contracts,10
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2019,148000,0,Contracts,1
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2020,1258100,0,Contracts,3
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,1205413.87,0,Contracts,2
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,5867743.35,60702.11,Contracts,4
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,18412245.07,232683.76,Contracts,10
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,24622473.22,Contracts,17
+National Weather Service (NWS),,CON33,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,8569970.06,49828990.36,Contracts,32
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2017,10172762.19,0,Contracts,1
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2018,34227806.22,0,Contracts,3
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2019,43509783.33,0,Contracts,5
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2020,45080988.58,0,Contracts,8
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,73812056.32,5137477.55,Contracts,18
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,89852969.08,6991594.75,Contracts,29
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,93657974.44,8015228.64,Contracts,38
+NOAA General Program,,CON34,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,120016223.4,Contracts,49
+NOAA General Program,,CON35,,,Department of Commerce,Office of the Secretary,,2024,0,5821920.28,Contracts,1
+NOAA General Program,,CON35,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,66185915.26,153727582.4,Contracts,81
+NOAA General Program,,CON36,,,Department of Commerce,Office of the Secretary,,2025,1053002.81,6886208,Contracts,2
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2017,922432620.1,0,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2018,1843243185,0,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2019,1988885025,0,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2020,2386353281,2198433894,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2021,2323725161,1325917096,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2022,2719210700,2472786519,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2023,2855507190,2835008571,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2024,2462790193,2174601715,Contracts,1
+Oak Ridge National Laboratory,,CON37,930,,Department of Energy,Department of Energy,,2025,2480975600,2447097209,Contracts,1
+Office of Oceanic and Atmospheric Research (OAR),,CON38,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2021,1624024,0,Contracts,2
+Office of Oceanic and Atmospheric Research (OAR),,CON38,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2022,10079622.45,0,Contracts,3
+Office of Oceanic and Atmospheric Research (OAR),,CON38,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2023,20119543.12,2483476.6,Contracts,7
+Office of Oceanic and Atmospheric Research (OAR),,CON38,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2024,0,20159892,Contracts,8
+Office of Oceanic and Atmospheric Research (OAR),,CON38,,,Department of Commerce,National Oceanic and Atmospheric Administration,,2025,-1547282.63,31700227.15,Contracts,12
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2017,158535879.5,0,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2018,255898591.7,0,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2019,198169146.9,0,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2020,312056864.5,387138932,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2021,343785560.2,0,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2022,360845395.4,270419586.4,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2023,477644604.3,245586108.4,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2024,419205560.7,388642868.4,Contracts,1
+Pacific Northwest National Laboratory,,CON39,930,,Department of Energy,Department of Energy,,2025,124957798.6,216320093.3,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2017,101337605.4,0,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2018,196152627.1,0,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2019,243835912.6,0,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2020,227643643.1,221120258.3,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2021,244095548.9,246542081.2,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2022,120285850.5,128054248,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2023,41135109.99,5114190.28,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2024,108586140.1,169118636.2,Contracts,1
+Princeton Plasma Physics Laboratory,,CON40,930,,Department of Energy,Department of Energy,,2025,224248884.5,333203973.2,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2017,3001949351,0,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2018,4453297330,0,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2019,3762977302,0,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2020,3754715804,3628647156,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2021,4587410497,77803493.95,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2022,4187299340,4426392997,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2023,5033878152,3906902647,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2024,4799986914,5501765798,Contracts,1
+Sandia National Laboratory,,CON41,930,,Department of Energy,Department of Energy,,2025,5323452407,4656348436,Contracts,1
+Savannah River National Laboratory,,CON42,930,,Department of Energy,Department of Energy,,2021,162313412.8,481782.03,Contracts,1
+Savannah River National Laboratory,,CON42,930,,Department of Energy,Department of Energy,,2022,142836372.8,126946276,Contracts,1
+Savannah River National Laboratory,,CON42,930,,Department of Energy,Department of Energy,,2023,353912942.7,344816289.4,Contracts,1
+Savannah River National Laboratory,,CON42,930,,Department of Energy,Department of Energy,,2024,334745134.6,301869017.8,Contracts,1
+Savannah River National Laboratory,,CON42,930,,Department of Energy,Department of Energy,,2025,293328316,236181439.5,Contracts,1
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2018,6420758.78,0,Government Service,1
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2019,13830841.88,0,Government Service,5
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2020,47721121.47,0,Government Service,6
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2021,127626172.4,0,Government Service,11
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2022,211882748.7,38880453.78,Government Service,13
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2023,240903832.4,244449961.4,Government Service,17
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2024,253502135.1,260169157.6,Government Service,20
+Screening Partnership Program,,CON43,,,Department of Homeland Security,Transportation Security Administration,,2025,261220452.5,273951555.8,Government Service,18
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2017,354589957.7,0,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2018,959226234.4,0,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2019,766126777.8,0,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2020,477375386.2,503263885,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2021,610515932.5,460551617.3,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2022,314252771.5,612368102.6,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2023,640235856.9,582489523.4,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2024,690868582.6,622973233.7,Contracts,1
+SLAC National Accelerator Laboratory,,CON44,930,,Department of Energy,Department of Energy,,2025,679325548.6,745422187.6,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2017,65866291.71,0,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2018,217350161.9,0,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2019,246323461.1,0,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2020,318441438.4,274808329.3,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2021,246083683,318211041,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2022,92115605,1450401,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2023,142323336.7,5506564.17,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2024,208756558.8,212063056.4,Contracts,1
+Thomas Jefferson National Accelerator Facility,,CON45,930,,Department of Energy,Department of Energy,,2025,213622258.9,460774412.4,Contracts,1
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2017,44550,0,Government Service,1
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2018,124740,0,Government Service,1
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2019,14850,0,Government Service,1
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2020,12813116.89,0,Government Service,3
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2021,3715638.47,0,Government Service,4
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2022,8870782.8,3181604.09,Government Service,6
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2023,36381992.53,8235409.86,Government Service,9
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2024,16602847.19,21742807.55,Government Service,8
+TSA Credential Authentication Technology (CAT) Program,,CON46,,,Department of Homeland Security,Transportation Security Administration,,2025,21605382.2,24544990.25,Government Service,13
+155MM EXTENDED RANGE HIGH EXPLOSIVE M1128,M1128,A20,,,Department of War,,,2025,4413826.98,,Contracts,7
+155MM EXTENDED RANGE HIGH EXPLOSIVE M1128,M1128,A20,,,Department of War,,,2024,694730.43,,Contracts,5
+3KW TACTICAL QUIET GENERATOR,3KW TQG,P38,,,Department of War,,,2024,3484823.14,,Contracts,4
+3KW TACTICAL QUIET GENERATOR,3KW TQG,P38,,,Department of War,,,2025,0,,Contracts,1
+A/H/MC-130J COMMUNICATIONS MODERNIZATION PHASE I,COMMUNICATIONS MODERNIZATION PHASE I,J56,,,Department of War,,,2024,383372966.3,,Contracts,24
+A/H/MC-130J COMMUNICATIONS MODERNIZATION PHASE I,COMMUNICATIONS MODERNIZATION PHASE I,J56,,,Department of War,,,2025,160307338.3,,Contracts,40
+A/H/MC-130J COMMUNICATIONS MODERNIZATION PHASE I,COMMUNICATIONS MODERNIZATION PHASE I,J56,,,Department of War,,,2023,141997152.1,,Contracts,6
+A-10  HIGH RESOLUTION DISPLAY SYS,A-10 HRDS,H40,,,Department of War,,,2025,448247,,Contracts,1
+A-10(THUNDERBOLT II),A-10,102,,,Department of War,,,2025,-229063.99,,Contracts,6
+A-10(THUNDERBOLT II),A-10,102,,,Department of War,,,2024,-8875466.26,,Contracts,17
+A-10(THUNDERBOLT II),A-10,102,,,Department of War,,,2023,-29457403.21,,Contracts,13
+A-7D (CORSAIR II),A-7D,313,,,Department of War,,,2024,-6089.85,,Contracts,1
+A-7D (CORSAIR II),A-7D,313,,,Department of War,,,2025,-6879.26,,Contracts,2
+ABRAMS SERIES (M1/M1A1/M1A2) TANK,ABRAMS SERIES (M1/M1A1/M1A2),DJN,,,Department of War,,,2025,0,,Contracts,2
+ABRAMS TANK MODERNIZATION (M1A2SEPV3),ABRAMS MOD,460,,,Department of War,,,2023,494773142.3,,Contracts,11
+ABRAMS TANK MODERNIZATION (M1A2SEPV3),ABRAMS MOD,460,,,Department of War,,,2024,463836908,,Contracts,29
+ABRAMS TANK MODERNIZATION (M1A2SEPV3),ABRAMS MOD,460,,,Department of War,,,2025,269799385.8,,Contracts,55
+ABRAMS UPGRADE RECAPITALIZATION,ABRAMS M1A2 SEPV4,575,,,Department of War,,,2024,-1486.27,,Contracts,1
+ABRAMS UPGRADE RECAPITALIZATION,ABRAMS UPGRADE,575,,,Department of War,,,2023,-3694.95,,Contracts,1
+ABRAMS UPGRADE RECAPITALIZATION,ABRAMS UPGRADE,575,,,Department of War,,,2024,-115562.11,,Contracts,3
+AC130J SPECIAL MISSION SYSTEMS ,AC130J SMS,749,,,Department of War,,,2023,163010,,Contracts,6
+AC130J SPECIAL MISSION SYSTEMS ,AC130J SMS,749,,,Department of War,,,2025,0,,Contracts,3
+AC130J SPECIAL MISSION SYSTEMS ,AC130J SMS,749,,,Department of War,,,2024,-4032,,Contracts,3
+ACTIVE ELECTRONICALLY SCANNED ARRAY (AESA) RADAR AN/APG-79,AESA,330,,,Department of War,,,2023,0,,Contracts,1
+ACTIVE ELECTRONICALLY SCANNED ARRAY (AESA) RADAR AN/APG-79,AESA,330,,,Department of War,,,2024,0,,Contracts,1
+ACTIVE ELECTRONICALLY SCANNED ARRAY (AESA) RADAR AN/APG-79,AESA,330,,,Department of War,,,2025,-47797.03,,Contracts,3
+ADA TARGETS,ADA TARGETS,G51,,,Department of War,,,2025,16672702.59,,Contracts,13
+ADVANCED ANTI-TANK WEAPON SYSTEM - MEDIUM (JAVELIN),JAVELIN,280,,,Department of War,,,2024,6510.76,,Contracts,5
+ADVANCED ANTI-TANK WEAPON SYSTEM - MEDIUM (JAVELIN),JAVELIN,280,,,Department of War,,,2023,438.12,,Contracts,2
+ADVANCED ANTI-TANK WEAPON SYSTEM - MEDIUM (JAVELIN),JAVELIN,280,,,Department of War,,,2025,-5702.36,,Contracts,1
+ADVANCED ARRESTING GEAR,AAG,529,,,Department of War,,,2023,0,,Contracts,2
+ADVANCED ARRESTING GEAR,AAG,529,,,Department of War,,,2024,0,,Contracts,1
+ADVANCED BOMB SUIT,ABS,A74,,,Department of War,,,2024,9767708.32,,Contracts,7
+ADVANCED BOMB SUIT,ABS,A74,,,Department of War,,,2023,6797525.53,,Contracts,4
+ADVANCED BOMB SUIT,ABS,A74,,,Department of War,,,2025,2394501.87,,Contracts,9
+ADVANCED CAPABILITY TORPEDO (MK 48 ADCAP),MK 48 ADCAP,138,,,Department of War,,,2023,89523.54,,Contracts,3
+ADVANCED CAPABILITY TORPEDO (MK 48 ADCAP),MK 48 ADCAP,138,,,Department of War,,,2024,-433667.75,,Contracts,3
+ADVANCED EXTREMELY HIGH FREQUENCY SATELLITE,AEHF,261,,,Department of War,,,2025,40487700,,Contracts,9
+ADVANCED EXTREMELY HIGH FREQUENCY SATELLITE,AEHF,261,,,Department of War,,,2024,18003154.48,,Contracts,22
+ADVANCED EXTREMELY HIGH FREQUENCY SATELLITE,AEHF,261,,,Department of War,,,2023,13742766.99,,Contracts,19
+ADVANCED MEDIUM RANGE AIR-TO-AIR MISSILE (AIM-120C) ELECTRONIC PROTECTION IMPROVEMENT - BASIC,AMRAAM EPIP - BASIC,A28,,,Department of War,,,2025,61398667,,Contracts,5
+ADVANCED MEDIUM-RANGE AIR-TO-AIR MISSILE (AMRAAM) - AIM-120A,AMRAAM (NAVY),184,,,Department of War,,,2025,0,,Contracts,1
+ADVANCED SEAL DELIVERY SYSTEM (ASDS),ASDS,381,,,Department of War,,,2023,0,,Contracts,1
+ADVANCED TARGETING POD MODERNIZATION PROGRAM,ATP-MP,C65,,,Department of War,,,2025,155952,,Contracts,1
+ADVANCED THREAT INFRARED COUNTERMEASURE/COMMON MISSILE WARNING SYSTEM,ATIRCM/CMWS,219,,,Department of War,,,2024,0,,Contracts,7
+AEGIS MK 7 ADVANCED SHIPBOARD WEAPON SYSTEM,AEGIS,110,,,Department of War,,,2023,113786692.5,,Contracts,33
+AEGIS MK 7 ADVANCED SHIPBOARD WEAPON SYSTEM,AEGIS,110,,,Department of War,,,2024,27602236.5,,Contracts,35
+AEGIS MK 7 ADVANCED SHIPBOARD WEAPON SYSTEM,AEGIS,110,,,Department of War,,,2025,-8118787.09,,Contracts,21
+AERIAL COMMON SENSOR,ACS,371,,,Department of War,,,2024,30000,,Contracts,4
+AERIAL COMMON SENSOR,ACS,371,,,Department of War,,,2025,0,,Contracts,1
+AERIAL COMMON SENSOR,ACS,371,,,Department of War,,,2023,-6368813,,Contracts,1
+AGM 114 HELLFIRE AIR-TO-GROUND MISSLE,LASER HELLFIRE,108,,,Department of War,,,2023,4642775.2,,Contracts,3
+AGM-86B INERTIAL NAVIGATION ELEMENT,AGM-86B INE,S01,,,Department of War,,,2024,1070000,,Contracts,4
+AGM-86B INERTIAL NAVIGATION ELEMENT,AGM-86B INE,S01,,,Department of War,,,2025,222972.24,,Contracts,4
+AGM-86B INERTIAL NAVIGATION ELEMENT,AGM-86B INE,S01,,,Department of War,,,2023,91494.82,,Contracts,1
+AGM-88E ADVANCED ANTI-RADIATION GUIDED MISSILE,AGM-88E AARGM,368,,,Department of War,,,2023,36904800.75,,Contracts,31
+AGM-88E ADVANCED ANTI-RADIATION GUIDED MISSILE,AGM-88E AARGM,368,,,Department of War,,,2024,14722920.6,,Contracts,17
+AGM-88E ADVANCED ANTI-RADIATION GUIDED MISSILE,AGM-88E AARGM,368,,,Department of War,,,2025,9961456.48,,Contracts,11
+AH-64E APACHE NEW BUILD,AH-64E NEW BUILD,437,,,Department of War,,,2023,278895775.1,,Contracts,80
+AH-64E APACHE NEW BUILD,AH-64E NEW BUILD,437,,,Department of War,,,2024,40968020.51,,Contracts,53
+AH-64E APACHE NEW BUILD,AH-64E NEW BUILD,437,,,Department of War,,,2025,-31446021.31,,Contracts,52
+AH-64E APACHE REMANUFACTURE,AH-64E REMANUFACTURE,202,,,Department of War,,,2024,526698764.4,,Contracts,159
+AH-64E APACHE REMANUFACTURE,AH-64E REMANUFACTURE,202,,,Department of War,,,2025,493356535.3,,Contracts,134
+AH-64E APACHE REMANUFACTURE,AH-64E REMANUFACTURE,202,,,Department of War,,,2023,469770764.3,,Contracts,147
+AIM-120 ADVANCED MEDIUM RANGE AIR-TO-AIR MISSILE,AMRAAM,185,,,Department of War,,,2025,1420264176,,Contracts,228
+AIM-120 ADVANCED MEDIUM RANGE AIR-TO-AIR MISSILE,AMRAAM,185,,,Department of War,,,2024,1407126201,,Contracts,317
+AIM-120 ADVANCED MEDIUM RANGE AIR-TO-AIR MISSILE,AMRAAM,185,,,Department of War,,,2023,1309199536,,Contracts,312
+AIM-9X AIR-TO-AIR MISSILE BLOCK I,AIM-9X BLOCK I,581,,,Department of War,,,2023,462675,,Contracts,4
+AIM-9X BLOCK II SIDEWINDER,AIM-9X BLK II,442,,,Department of War,,,2025,1123636495,,Contracts,49
+AIM-9X BLOCK II SIDEWINDER,AIM-9X BLK II,442,,,Department of War,,,2023,813348128.4,,Contracts,62
+AIM-9X BLOCK II SIDEWINDER,AIM-9X BLK II,442,,,Department of War,,,2024,812119202,,Contracts,56
+AIR AND MISSILE DEFENSE RADAR FAMILY OF RADARS,AMDR FOR,384,,,Department of War,,,2023,283650572.8,,Contracts,34
+AIR AND MISSILE DEFENSE RADAR FAMILY OF RADARS,AMDR FOR,384,,,Department of War,,,2025,204251948,,Contracts,26
+AIR AND MISSILE DEFENSE RADAR FAMILY OF RADARS,AMDR FOR,384,,,Department of War,,,2024,32368727.51,,Contracts,40
+AIR ASSAULT HEAVY GRADER,130G HEAVY GRADER,86L,,,Department of War,,,2025,42910.21,,Contracts,2
+AIR FORCE & ARMY ANTI-JAM MODEM,A3M,J97,,,Department of War,,,2023,17629605,,Contracts,2
+AIR FORCE & ARMY ANTI-JAM MODEM,A3M,J97,,,Department of War,,,2024,12717675.89,,Contracts,4
+AIR FORCE & ARMY ANTI-JAM MODEM,A3M,J97,,,Department of War,,,2025,-1635783.28,,Contracts,16
+AIR FORCE DISTRIBUTED COMMON GROUND SYSTEM,AF DCGS,291,,,Department of War,,,2024,72641.87,,Contracts,1
+AIR FORCE DISTRIBUTED COMMON GROUND SYSTEM,AF DCGS,291,,,Department of War,,,2025,-2792.54,,Contracts,1
+AIR FORCE DISTRIBUTED COMMON GROUND SYSTEM (AF DCGS) DATA LINKS-1,AF DCGS DATA LINKS-1,Z03,,,Department of War,,,2024,10437474.15,,Contracts,1
+AIR FORCE DISTRIBUTED COMMON GROUND SYSTEM (AF DCGS) DATA LINKS-1,AF DCGS DATA LINKS-1,Z03,,,Department of War,,,2025,5721710.85,,Contracts,4
+AIR FORCE INTRANET INCREMENT 1,AFNET INC 1,N75,,,Department of War,,,2025,599755.41,,Contracts,2
+AIR FORCE NEXT GENERATION AIR DOMINANCE,AIR FORCE NGAD,558,,,Department of War,,,2024,5636495.56,,Contracts,10
+AIR FORCE NEXT GENERATION AIR DOMINANCE,AIR FORCE NGAD,558,,,Department of War,,,2025,3517660.15,,Contracts,9
+AIR FORCE NEXT GENERATION AIR DOMINANCE,AIR FORCE NGAD,558,,,Department of War,,,2023,1159971.22,,Contracts,7
+Air Force Records Information Management System,AFRIMS,M0X,,,Department of War,,,2023,38926.2,,Contracts,1
+AIR FORCE WAY,AFWAY,Z46,,,Department of War,,,2023,35250,,Contracts,1
+AIR FORCE WAY,AFWAY,Z46,,,Department of War,,,2024,1500,,Contracts,2
+AIR OPERATIONS CENTER - WEAPON SYSTEM (AOC-WS),AOC-WS,369,,,Department of War,,,2025,36651148.44,,Contracts,27
+AIR OPERATIONS CENTER - WEAPON SYSTEM (AOC-WS),AOC-WS,369,,,Department of War,,,2024,23106986.23,,Contracts,14
+AIR OPERATIONS CENTER - WEAPON SYSTEM (AOC-WS),AOC-WS,369,,,Department of War,,,2023,370068,,Contracts,3
+AIR SOLDIER SYSTEMS,AIR SS,J09,,,Department of War,,,2025,40433.85,,Contracts,1
+AIRBORNE RECON LOW (ARL),AIRBORNE RECON LOW (ARL),GHL,,,Department of War,,,2024,0,,Contracts,1
+AIRBORNE RESUPPLY/ LOGISTICS FOR SEA BASING AIRCRAFT,AR/LSB,320,,,Department of War,,,2025,232630,,Contracts,1
+AIRBORNE WARNING AND CONTROL SYSTEM (AWACS) BLOCK UPGRADE PROGRAM (RSIP) (E-3),AWACS RSIP (E-3),524,,,Department of War,,,2023,7445461.25,,Contracts,13
+AIRBORNE WARNING AND CONTROL SYSTEM (AWACS) BLOCK UPGRADE PROGRAM (RSIP) (E-3),AWACS RSIP (E-3),524,,,Department of War,,,2024,841304.96,,Contracts,33
+AIRBORNE WARNING AND CONTROL SYSTEM (AWACS) BLOCK UPGRADE PROGRAM (RSIP) (E-3),AWACS RSIP (E-3),524,,,Department of War,,,2025,-2392782.74,,Contracts,6
+AIRBORNE WARNING AND CONTROL SYSTEM BLOCK 40/45 UPGRADE,AWACS BLK 40/45 UPGRADE,277,,,Department of War,,,2025,106108273.2,,Contracts,109
+AIRBORNE WARNING AND CONTROL SYSTEM BLOCK 40/45 UPGRADE,AWACS BLK 40/45 UPGRADE,277,,,Department of War,,,2023,104246270.9,,Contracts,108
+AIRBORNE WARNING AND CONTROL SYSTEM BLOCK 40/45 UPGRADE,AWACS BLK 40/45 UPGRADE,277,,,Department of War,,,2024,55123627.84,,Contracts,113
+AIR-LAUNCHED CRUISE MISSILE (ALCM) (AGM-86B),ALCM,111,,,Department of War,,,2025,491674.49,,Contracts,7
+ALAM,ALAM,331,,,Department of War,,,2023,5208871.39,,Contracts,11
+ALAM,ALAM,331,,,Department of War,,,2024,0,,Contracts,1
+AMPHIBIOUS COMBAT VEHICLE FAMILY OF VEHICLES,ACV FOV,472,,,Department of War,,,2025,182124601,,Contracts,46
+AMPHIBIOUS COMBAT VEHICLE FAMILY OF VEHICLES,ACV FOV,472,,,Department of War,,,2023,24265146.7,,Contracts,9
+AMPHIBIOUS COMBAT VEHICLE FAMILY OF VEHICLES,ACV FOV,472,,,Department of War,,,2024,23677402.76,,Contracts,7
+AN/ALR-67 COUNT WARNING SYSTEM,AN/ALR-67 COUNT WARNING SYSTEM,GHT,,,Department of War,,,2023,0,,Contracts,1
+AN/SLQ-25 TORPEDO CM TRANS SYS,AN/SLQ-25 TORPEDO CM TRANS SYS,GCA,,,Department of War,,,2024,0,,Contracts,1
+AN/TPQ-50 LIGHTWEIGHT COUNTER MORTAR RADAR,AN/TPQ-50,X27,,,Department of War,,,2023,14865756.18,,Contracts,3
+AN/TPQ-50 LIGHTWEIGHT COUNTER MORTAR RADAR,AN/TPQ-50,X27,,,Department of War,,,2024,4009472.83,,Contracts,9
+AN/TPQ-50 LIGHTWEIGHT COUNTER MORTAR RADAR,AN/TPQ-50,X27,,,Department of War,,,2025,2089919.22,,Contracts,14
+AN/TPQ-53 COUNTERFIRE TARGET ACQUISITION RADAR,AN/TPQ-53,602,,,Department of War,,,2023,123352103,,Contracts,14
+AN/TPQ-53 COUNTERFIRE TARGET ACQUISITION RADAR,AN/TPQ-53,602,,,Department of War,,,2024,70665633.55,,Contracts,15
+AN/TPQ-53 COUNTERFIRE TARGET ACQUISITION RADAR,AN/TPQ-53,602,,,Department of War,,,2025,30703808.77,,Contracts,8
+APACHE ADVANCED ATTACK HELICOPTER (AH-64),APACHE (AH-64A),158,,,Department of War,,,2025,-14200,,Contracts,10
+APACHE ADVANCED ATTACK HELICOPTER (AH-64),APACHE (AH-64A),158,,,Department of War,,,2023,-19873.05,,Contracts,2
+APACHE ADVANCED ATTACK HELICOPTER (AH-64),APACHE (AH-64A),158,,,Department of War,,,2024,-2524631.49,,Contracts,12
+ARMED OH-58D,KIOWA WARRIOR,174,,,Department of War,,,2024,2458250.6,,Contracts,26
+ARMED OH-58D,KIOWA WARRIOR,174,,,Department of War,,,2025,1254400,,Contracts,26
+ARMED OH-58D,KIOWA WARRIOR,174,,,Department of War,,,2023,-14071364.56,,Contracts,38
+ARMED RECONNAISSANCE HELICOPTER (ARH),ARH,179,,,Department of War,,,2024,-51108.86,,Contracts,1
+ARMED RECONNAISSANCE HELICOPTER (ARH),ARH,179,,,Department of War,,,2023,-356531.34,,Contracts,1
+"ARMORED KNIGHT, M1200",KNIGHT,E30,,,Department of War,,,2023,234990.02,,Contracts,2
+ARMORED MULTI-PURPOSE VEHICLE,AMPV,471,,,Department of War,,,2024,1023460648,,Contracts,261
+ARMORED MULTI-PURPOSE VEHICLE,AMPV,471,,,Department of War,,,2023,879428340.4,,Contracts,195
+ARMORED MULTI-PURPOSE VEHICLE,AMPV,471,,,Department of War,,,2025,584613102.8,,Contracts,196
+ARMORED RECONNAISSANCE SCOUT VEHICLE,SCOUT,193,,,Department of War,,,2024,0,,Contracts,2
+ARMORED RECONNAISSANCE SCOUT VEHICLE,SCOUT,193,,,Department of War,,,2023,-2933831.09,,Contracts,2
+ARMORED SECURITY VEHICLE,ASV,D56,,,Department of War,,,2024,728058.25,,Contracts,2
+ARMORED SECURITY VEHICLE,ASV,D56,,,Department of War,,,2025,0,,Contracts,2
+ARMY CONTRACT WRITING SYSTEM (HISTORICAL UNBASELINED MAIS),ACWS,512,,,Department of War,,,2025,7589689.23,,Contracts,91
+ARMY CONTRACT WRITING SYSTEM (HISTORICAL UNBASELINED MAIS),ACWS,512,,,Department of War,,,2024,1186355.98,,Contracts,48
+ARMY CONTRACT WRITING SYSTEM (HISTORICAL UNBASELINED MAIS),ACWS,512,,,Department of War,,,2023,136480.43,,Contracts,12
+ARMY IGNITED,ARMY IGNITED,87C,,,Department of War,,,2024,28094509.85,,Contracts,11
+ARMY IGNITED,ARMY IGNITED,87C,,,Department of War,,,2025,13765739.05,,Contracts,19
+ARMY TACTICAL MISSILE SYSTEM-ANTI-PERSONNEL ANTI-MATERIEL (ATACMS-APAM,ATACMS-APAM,211,,,Department of War,,,2023,6534,,Contracts,4
+ARMY TACTICAL MISSILE SYSTEM-ANTI-PERSONNEL ANTI-MATERIEL (ATACMS-APAM,ATACMS-APAM,211,,,Department of War,,,2024,0,,Contracts,1
+ARMY TACTICAL MISSILE SYSTEM-BRILLIANT ANTI-TANK (ATACMS-BAT),ATACMS-BAT,545,,,Department of War,,,2024,226850900.8,,Contracts,1
+ARMY TACTICAL MISSILE SYSTEM-BRILLIANT ANTI-TANK (ATACMS-BAT),ATACMS-BAT,545,,,Department of War,,,2025,4961254.43,,Contracts,4
+ASIP PROCESSOR UPGRADE CHASSIS (APUC),APUC,900,,,Department of War,,,2023,4663459.32,,Contracts,1
+ASIP PROCESSOR UPGRADE CHASSIS (APUC),APUC,900,,,Department of War,,,2024,2098348.41,,Contracts,1
+ASSAULT BREACHER VEHICLE,ABV,X34,,,Department of War,,,2024,9858250,,Contracts,1
+ASSAULT BREACHER VEHICLE,ABV,X34,,,Department of War,,,2025,1431341.16,,Contracts,1
+ATTACK AIRCRAFT CARRIER,CVN-68,414,,,Department of War,,,2025,75890962.42,,Contracts,12
+ATTACK AIRCRAFT CARRIER,CVN-68,414,,,Department of War,,,2024,14662940.9,,Contracts,2
+ATTACK AIRCRAFT CARRIER,CVN-69,415,,,Department of War,,,2023,0,,Contracts,1
+ATTACK AIRCRAFT CARRIER,CVN-69,415,,,Department of War,,,2024,0,,Contracts,1
+AUTOMATED INSTALLATION ENTRY INCREMENT 3,AIE INC3,M52,,,Department of War,,,2023,876855.04,,Contracts,1
+AUTOMATED INSTALLATION ENTRY INCREMENT 3,AIE INC3,M52,,,Department of War,,,2025,-8690.95,,Contracts,1
+AUTOMATED INTERSITE GATEWAY,AISG,N55,,,Department of War,,,2025,3346365.01,,Contracts,3
+AUTOMATED INTERSITE GATEWAY,AISG,N55,,,Department of War,,,2024,3017533.99,,Contracts,3
+AV-8B HARRIER II V/STOL CLOSE-AIR-SUPPORT FIGHTER,AV-8B,167,,,Department of War,,,2024,0,,Contracts,3
+AVIATION AND TRANSPORTATION,AVIATION,4EB,,,Department of War,,,2025,3143016.08,,Contracts,5
+AVIATION RESOURCE MANAGEMENT SYSTEM SUP V7.0,ARMS SUP V7.0,C86,,,Department of War,,,2024,80899.28,,Contracts,1
+B-1 ADVANCED DIGITAL TEST STATION,B-1 ADTS,F22,,,Department of War,,,2025,22923168.06,,Contracts,13
+B-1 ADVANCED DIGITAL TEST STATION,B-1 ADTS,F22,,,Department of War,,,2024,21545887,,Contracts,11
+B-1 ADVANCED DIGITAL TEST STATION,B-1 ADTS,F22,,,Department of War,,,2023,12704807,,Contracts,4
+B-1 CONVENTIONAL MISSION UPGRADE PROGRAM-COMPUTER UPGRADE,B-1 CMUP-COMPUTER UPGRADE,262,,,Department of War,,,2025,31800,,Contracts,1
+B-1 DIGITAL COMMUNICATION IMPROVEMENT,B-1 DCI,M00,,,Department of War,,,2025,28335,,Contracts,1
+B-1B LANCER PENETRATING BOMBER,B-1B,168,,,Department of War,,,2025,24077230.42,,Contracts,6
+B-1B LANCER PENETRATING BOMBER,B-1B,168,,,Department of War,,,2023,8997602.62,,Contracts,8
+B-1B LANCER PENETRATING BOMBER,B-1B,168,,,Department of War,,,2024,0,,Contracts,3
+B-2 ADAPTABLE COMMUNICATIONS SUITE,B-2 ACS,W40,,,Department of War,,,2025,27048133.16,,Contracts,8
+B-2 COMMON VERY LOW FREQUENCY RECEIVER,B-2 CVR,F98,,,Department of War,,,2025,4729856,,Contracts,6
+B-2 COMMON VERY LOW FREQUENCY RECEIVER,B-2 CVR,F98,,,Department of War,,,2024,3032409,,Contracts,7
+B-2 COMMON VERY LOW FREQUENCY RECEIVER,B-2 CVR,F98,,,Department of War,,,2023,2062893,,Contracts,1
+B-2 DISPLAY MODERNIZATION PROGRAM,B-2 BDM,431,,,Department of War,,,2024,54091196.46,,Contracts,20
+B-2 DISPLAY MODERNIZATION PROGRAM,B-2 BDM,431,,,Department of War,,,2025,3089371.25,,Contracts,10
+B-2 DISPLAY MODERNIZATION PROGRAM,B-2 BDM,431,,,Department of War,,,2023,1717379.55,,Contracts,22
+B-2 RADAR MODERNIZATION PROGRAM,B-2 RMP,376,,,Department of War,,,2024,610957,,Contracts,1
+B-2 RADAR MODERNIZATION PROGRAM,B-2 RMP,376,,,Department of War,,,2025,0,,Contracts,2
+B-2A SPIRIT STEALTH BOMBER,B-2A,755,,,Department of War,,,2024,704690.16,,Contracts,7
+B-2A SPIRIT STEALTH BOMBER,B-2A,755,,,Department of War,,,2025,0,,Contracts,3
+B-2A SPIRIT STEALTH BOMBER,B-2A,755,,,Department of War,,,2023,-1092100.22,,Contracts,8
+B-52 OTHER MODS,B-52 LCM,P28,,,Department of War,,,2024,466202.72,,Contracts,2
+B-52 RADAR MODERNIZATION PROGRAM (RMP),B-52 RMP,574,,,Department of War,,,2023,26172441.73,,Contracts,12
+B-52 RADAR MODERNIZATION PROGRAM (RMP),B-52 RMP,574,,,Department of War,,,2024,3642152,,Contracts,3
+B-52 RADAR MODERNIZATION PROGRAM (RMP),B-52 RMP,574,,,Department of War,,,2025,1834183.31,,Contracts,4
+B-52 VERY LOW FREQUENCY/LOW FREQUENCY MODERNIZATION,B-52 VLF/LF MODERNIZATION,Y63,,,Department of War,,,2025,12906307.04,,Contracts,5
+B61 MOD 12 LIFE EXTENSION PROGRAM TAILKIT ASSEMBLY,B61 MOD 12 LEP TKA,468,,,Department of War,,,2023,756349.61,,Contracts,5
+B61 MOD 12 LIFE EXTENSION PROGRAM TAILKIT ASSEMBLY,B61 MOD 12 LEP TKA,468,,,Department of War,,,2024,336473,,Contracts,2
+BASE INFORMATION TRANSPORT INFRASTRUCTURE WIRED,BITI WIRED,N78,,,Department of War,,,2025,642301.28,,Contracts,2
+BASE REALIGNMENT AND CLOSURE ENVIRONMENTAL ACTIVITIES,BRAC ACTIVITIES,ZBC,,,Department of War,,,2024,30556279.77,,Contracts,56
+BASE REALIGNMENT AND CLOSURE ENVIRONMENTAL ACTIVITIES,BRAC ACTIVITIES,ZBC,,,Department of War,,,2023,27163267.44,,Contracts,51
+BASE REALIGNMENT AND CLOSURE ENVIRONMENTAL ACTIVITIES,BRAC ACTIVITIES,ZBC,,,Department of War,,,2025,17897552.7,,Contracts,38
+BATTLEFIELD AIRBORNE COMMUNICATIONS NODE E-11A,BACN E-11A,G97,,,Department of War,,,2025,2300044,,Contracts,1
+BINOCULAR NIGHT OBSERVATION DEVICE,BINOD,UAJ,,,Department of War,,,2024,36861.2,,Contracts,1
+BIOMETRICS ENABLING CAPABILITY INCREMENT-1,BEC INC 1,N16,,,Department of War,,,2023,18947992.88,,Contracts,10
+BIOMETRICS ENABLING CAPABILITY INCREMENT-1,BEC INC 1,N16,,,Department of War,,,2024,16773723.68,,Contracts,3
+BIOMETRICS ENABLING CAPABILITY INCREMENT-1,BEC INC 1,N16,,,Department of War,,,2025,13452757.04,,Contracts,3
+BIOMETRICS ENABLING CAPABILITY INCREMENT-1,BEC INC 1_,N16,,,Department of War,,,2024,0,,Contracts,1
+BIOMETRICS ENABLING CAPABILITY INCREMENT-1,BEC INC 1_,N16,,,Department of War,,,2023,-615728.77,,Contracts,1
+BLACK HAWK UTILITY HELICOPTER (UH-60L),BLACK HAWK (UH-60A/L),156,,,Department of War,,,2023,440598126,,Contracts,159
+BLACK HAWK UTILITY HELICOPTER (UH-60L),BLACK HAWK (UH-60A/L),156,,,Department of War,,,2024,149726457.1,,Contracts,113
+BLACK HAWK UTILITY HELICOPTER (UH-60L),BLACK HAWK (UH-60A/L),156,,,Department of War,,,2025,-39402805.04,,Contracts,86
+BLACKHAWK (UH-60) UTTAS HELICOPTER,BLACKHAWK,AIA,,,Department of War,,,2023,0,,Contracts,1
+BLACKHAWK (UH-60) UTTAS HELICOPTER,BLACKHAWK,AIA,,,Department of War,,,2024,0,,Contracts,1
+"BODY ARMOR, CONCEALABLE",CBA,51E,,,Department of War,,,2024,74561.42,,Contracts,1
+BRADLEY FIGHTING VEHICLE SYSTEM (BFVS),BRADLEY FVS,128,,,Department of War,,,2024,1531925,,Contracts,11
+BRADLEY FIGHTING VEHICLE SYSTEM (BFVS),BRADLEY FVS,128,,,Department of War,,,2025,1460433.92,,Contracts,6
+BRADLEY FIGHTING VEHICLE SYSTEM (BFVS),BRADLEY FVS,128,,,Department of War,,,2023,416550.22,,Contracts,15
+BRADLEY FIGHTING VEHICLE SYSTEMS (BFVS) UPGRADE,BRADLEY UPGRADE,601,,,Department of War,,,2024,8152846.11,,Contracts,5
+BRADLEY FIGHTING VEHICLE SYSTEMS (BFVS) UPGRADE,BRADLEY UPGRADE,601,,,Department of War,,,2023,0,,Contracts,1
+BRADLEY FIGHTING VEHICLE SYSTEMS (BFVS) UPGRADE,BRADLEY UPGRADE,601,,,Department of War,,,2025,0,,Contracts,1
+C130 LOW COST MODIFICATIONS RP,C130 MODS,783,,,Department of War,,,2024,16759217.99,,Contracts,5
+C130 LOW COST MODIFICATIONS RP,C130 MODS,783,,,Department of War,,,2023,16726233.28,,Contracts,2
+C130 LOW COST MODIFICATIONS RP,C130 MODS,783,,,Department of War,,,2025,4462044.13,,Contracts,8
+C-130H T56 3.5 ENGINE MODIFICATION (SRM_RBT),C-130H T56 3.5 ENG MOD (SRM_RBT),C20,,,Department of War,,,2025,89804792.43,,Contracts,90
+C-130H T56 3.5 ENGINE MODIFICATION (SRM_RBT),C-130H T56 3.5 ENG MOD (SRM_RBT),C20,,,Department of War,,,2023,11455143.43,,Contracts,31
+C-130H T56 3.5 ENGINE MODIFICATION (SRM_RBT),C-130H T56 3.5 ENG MOD (SRM_RBT),C20,,,Department of War,,,2024,7811075.54,,Contracts,19
+C-130J BLOCK UPGRADE 7.0/8.1 RETROFIT,C-130J BU,Y49,,,Department of War,,,2023,3517172.03,,Contracts,3
+C-130J BLOCK UPGRADE 7.0/8.1 RETROFIT,C-130J BU,Y49,,,Department of War,,,2025,888322.16,,Contracts,3
+C-130J BLOCK UPGRADE 7.0/8.1 RETROFIT,C-130J BU,Y49,,,Department of War,,,2024,13310,,Contracts,3
+C-130J HERCULES TRANSPORT AIRCRAFT,C-130J,220,,,Department of War,,,2023,2274385944,,Contracts,590
+C-130J HERCULES TRANSPORT AIRCRAFT,C-130J,220,,,Department of War,,,2025,2167837963,,Contracts,529
+C-130J HERCULES TRANSPORT AIRCRAFT,C-130J,220,,,Department of War,,,2024,1568668132,,Contracts,630
+C-130J LARGE AIRCRAFT INFRARED COUNTERMEASURES - BLOCK 30,C-130J LAIRCM - BLOCK 30,X00,,,Department of War,,,2025,2859706,,Contracts,5
+C-17 BEYOND LINE OF SIGHT 1,C-17 BLOS 1,W38,,,Department of War,,,2024,47313020.12,,Contracts,3
+C-17 BEYOND LINE OF SIGHT 1,C-17 BLOS 1,W38,,,Department of War,,,2025,-6794284.99,,Contracts,10
+C-17 FLIGHT DECK REPLACEMENT,C-17 FDR,D01,,,Department of War,,,2025,23803.74,,Contracts,2
+C-17 REPLACEMENT HEADS UP DISPLAY,C-17 RHUD,V14,,,Department of War,,,2025,50500476.23,,Contracts,1
+C-17 Training System (Training Mods),C-17 TRAINING SYSTEM (TRAINING MODS),56F,,,Department of War,,,2024,5062220.4,,Contracts,2
+C-17 Training System (Training Mods),C-17 TRAINING SYSTEM (TRAINING MODS),56F,,,Department of War,,,2025,4413.75,,Contracts,4
+C-17A GLOBEMASTER III,C-17A,200,,,Department of War,,,2023,-132093.69,,Contracts,24
+C-17A GLOBEMASTER III,C-17A,200,,,Department of War,,,2025,-1245718.88,,Contracts,31
+C-17A GLOBEMASTER III,C-17A,200,,,Department of War,,,2024,-5980960.35,,Contracts,43
+C-3 CARGO/TRANSPORT AIRCRAFT,C-3,ACC,,,Department of War,,,2024,0,,Contracts,1
+C-32 Senior Leader Command Control Communication System,C-32  SLC3S,0AS,,,Department of War,,,2025,73153.54,,Contracts,3
+C-5 AVIONICS MODERNIZATION PROGRAM,C-5 AMP,273,,,Department of War,,,2024,945595.97,,Contracts,2
+C-5 AVIONICS MODERNIZATION PROGRAM,C-5 AMP,273,,,Department of War,,,2025,0,,Contracts,1
+C-5 RELIABILITY ENHANCEMENT AND RE-ENGINING PROGRAM,C-5 RERP,327,,,Department of War,,,2023,6581255.34,,Contracts,42
+C-5 RELIABILITY ENHANCEMENT AND RE-ENGINING PROGRAM,C-5 RERP,327,,,Department of War,,,2024,1051497.27,,Contracts,17
+C-5 RELIABILITY ENHANCEMENT AND RE-ENGINING PROGRAM,C-5 RERP,327,,,Department of War,,,2025,-437968.78,,Contracts,12
+C-5B GALAXY INTER-THEATER AIRLIFT AIRCRAFT,C-5B,201,,,Department of War,,,2025,1933589,,Contracts,7
+C-5B GALAXY INTER-THEATER AIRLIFT AIRCRAFT,C-5B,201,,,Department of War,,,2024,33844,,Contracts,6
+CH-47F IMPROVED CARGO HELICOPTER,CH-47F,278,,,Department of War,,,2024,-1675050.92,,Contracts,58
+CH-47F IMPROVED CARGO HELICOPTER,CH-47F,278,,,Department of War,,,2025,-3035545.03,,Contracts,35
+CH-47F IMPROVED CARGO HELICOPTER,CH-47F,278,,,Department of War,,,2023,-7354446.15,,Contracts,40
+CH-47F MODERNIZED CARGO HELICOPTER,CH-47F BLOCK II,577,,,Department of War,,,2023,578361970.3,,Contracts,378
+CH-47F MODERNIZED CARGO HELICOPTER,CH-47F BLOCK II,577,,,Department of War,,,2024,527333302.6,,Contracts,418
+CH-47F MODERNIZED CARGO HELICOPTER,CH-47F BLOCK II,577,,,Department of War,,,2025,176575829.1,,Contracts,334
+CH-53K KING STALLION,CH-53K,390,,,Department of War,,,2023,2326431834,,Contracts,207
+CH-53K KING STALLION,CH-53K,390,,,Department of War,,,2024,2166630407,,Contracts,195
+CH-53K KING STALLION,CH-53K,390,,,Department of War,,,2025,364734361.5,,Contracts,132
+CHEMICAL DEMILITARIZATION-ASSEMBLED CHEMICAL WEAPONS ALTERNATIVES,CHEM DEMIL-ACWA,243,,,Department of War,,,2024,900580496.3,,Contracts,39
+CHEMICAL DEMILITARIZATION-ASSEMBLED CHEMICAL WEAPONS ALTERNATIVES,CHEM DEMIL-ACWA,243,,,Department of War,,,2023,837311213.4,,Contracts,45
+CHEMICAL DEMILITARIZATION-ASSEMBLED CHEMICAL WEAPONS ALTERNATIVES,CHEM DEMIL-ACWA,243,,,Department of War,,,2025,363269987.4,,Contracts,22
+CHEMICAL DEMILITARIZATION-CHEMICAL MATERIALS AGENCY,CHEM DEMIL-CMA,285,,,Department of War,,,2023,570972,,Contracts,9
+CHEMICAL DEMILITARIZATION-CHEMICAL MATERIALS AGENCY,CHEM DEMIL-CMA,285,,,Department of War,,,2024,186934,,Contracts,7
+CHEMICAL DEMILITARIZATION-CHEMICAL MATERIALS AGENCY,CHEM DEMIL-CMA,285,,,Department of War,,,2025,0,,Contracts,5
+CHINOOK (CH-47D),CH-47D,115,,,Department of War,,,2024,130163691.5,,Contracts,69
+CHINOOK (CH-47D),CH-47D,115,,,Department of War,,,2023,69745477.4,,Contracts,50
+CHINOOK (CH-47D),CH-47D,115,,,Department of War,,,2025,35516868.57,,Contracts,74
+COMANCHE,COMANCHE,254,,,Department of War,,,2024,-8244.08,,Contracts,1
+COMBAT SEARCH AND RESCUE REPLACEMENT VEHICLE (CSAR-X),CSAR-X,329,,,Department of War,,,2023,937067428,,Contracts,52
+COMBAT SEARCH AND RESCUE REPLACEMENT VEHICLE (CSAR-X),CSAR-X,329,,,Department of War,,,2024,836175830.1,,Contracts,43
+COMBAT SEARCH AND RESCUE REPLACEMENT VEHICLE (CSAR-X),CSAR-X,329,,,Department of War,,,2025,258245091.5,,Contracts,29
+COMBAT SERVICE SUPPORT CONTROL SYSTEM (ATCCS),CSSCS (ATCCS),543,,,Department of War,,,2023,0,,Contracts,1
+"Command and Control, Battle Management, and Communications",C2BMC,3YD,,,Department of War,,,2024,35668890.43,,Contracts,2
+"Command and Control, Battle Management, and Communications",C2BMC,3YD,,,Department of War,,,2025,49143.24,,Contracts,3
+COMMERCIAL ASSET VISIBILITY - AIR FORCE,CAV AF,909,,,Department of War,,,2024,130364.55,,Contracts,15
+COMMERCIAL ASSET VISIBILITY - AIR FORCE,CAV AF,909,,,Department of War,,,2025,49374,,Contracts,4
+COMMON GROUND STATION (FORMERLY JSTARS CGS),CGS (JSTARS GSM),525,,,Department of War,,,2025,0,,Contracts,2
+COMMON INFRARED COUNTERMEASURE,CIRCM,446,,,Department of War,,,2025,203689102.1,,Contracts,24
+COMMON INFRARED COUNTERMEASURE,CIRCM,446,,,Department of War,,,2024,189380234,,Contracts,14
+COMMON INFRARED COUNTERMEASURE,CIRCM,446,,,Department of War,,,2023,153643427.2,,Contracts,15
+COMMON REMOTELY OPERATED WEAPON STATION,CROWS,480,,,Department of War,,,2023,246925,,Contracts,2
+COMMON REMOTELY OPERATED WEAPON STATION,CROWS,480,,,Department of War,,,2024,0,,Contracts,1
+COMMON ROBOTIC SYSTEM - HEAVY,CRS-H,K25,,,Department of War,,,2024,11541.06,,Contracts,1
+COMPUTED TOMOGRAPHY (CT) SCANNER,CTS,8WP,,,Department of War,,,2025,43021.42,,Contracts,1
+CONDOR(AGM-53B),CONDOR,310,,,Department of War,,,2024,0,,Contracts,1
+CONSOLIDATED AFLOAT NETWORKS AND ENTERPRISE SERVICES,CANES,417,,,Department of War,,,2023,158439531.8,,Contracts,87
+CONSOLIDATED AFLOAT NETWORKS AND ENTERPRISE SERVICES,CANES,417,,,Department of War,,,2024,119685096.2,,Contracts,67
+CONSOLIDATED AFLOAT NETWORKS AND ENTERPRISE SERVICES,CANES,417,,,Department of War,,,2025,117362019.9,,Contracts,50
+CONTAMINATED HUMAN REMAINS SYSTEM,CHRS,A01,,,Department of War,,,2023,4621141,,Contracts,3
+CONTAMINATED HUMAN REMAINS SYSTEM,CHRS,A01,,,Department of War,,,2025,3685458.55,,Contracts,11
+CONTAMINATED HUMAN REMAINS SYSTEM,CHRS,A01,,,Department of War,,,2024,2537137.1,,Contracts,6
+CONTRACTING INFORMATION DATABASE SYSTEM (J018R),CIDS,D10,,,Department of War,,,2025,422827.38,,Contracts,1
+CONTRACTING INFORMATION TECHNOLOGY,CON-IT,F14,,,Department of War,,,2024,13433548.32,,Contracts,14
+CONTRACTING INFORMATION TECHNOLOGY,CON-IT,F14,,,Department of War,,,2025,605958.63,,Contracts,21
+CONTRACTING INFORMATION TECHNOLOGY,CON-IT,F14,,,Department of War,,,2023,60000,,Contracts,1
+COOPERATIVE ENGAGEMENT CAPABILITY,CEC,582,,,Department of War,,,2023,231481881.2,,Contracts,67
+COOPERATIVE ENGAGEMENT CAPABILITY,CEC,582,,,Department of War,,,2025,173470837.5,,Contracts,48
+COOPERATIVE ENGAGEMENT CAPABILITY,CEC,582,,,Department of War,,,2024,172910921.1,,Contracts,52
+COUNTER COMMUNICATION SYSTEM,CCS,L8U,,,Department of War,,,2024,239920.8,,Contracts,2
+COUNTER-SMALL UNMANNED AIRCRAFT SYSTEMS PHASE 0 RAPID FIELDING,C-SUAS PHASE 0 RF,616,,,Department of War,,,2023,3127860.19,,Contracts,1
+COUNTER-SMALL UNMANNED AIRCRAFT SYSTEMS PHASE 0 RAPID FIELDING,C-SUAS PHASE 0 RF,616,,,Department of War,,,2025,544090.45,,Contracts,5
+COUNTER-SMALL UNMANNED AIRCRAFT SYSTEMS PHASE 0 RAPID FIELDING,C-SUAS PHASE 0 RF,616,,,Department of War,,,2024,305914.47,,Contracts,3
+CVN 68 NIMITZ CLASS CARRIER,CVN 68,161,,,Department of War,,,2023,7253761.48,,Contracts,20
+CVN 68 NIMITZ CLASS CARRIER,CVN 68,161,,,Department of War,,,2025,0,,Contracts,11
+CVN 68 NIMITZ CLASS CARRIER,CVN 68,161,,,Department of War,,,2024,-1038.41,,Contracts,17
+CVN 78 GERALD R. FORD CLASS NUCLEAR AIRCRAFT CARRIER,CVN 78,223,,,Department of War,,,2023,2523601058,,Contracts,311
+CVN 78 GERALD R. FORD CLASS NUCLEAR AIRCRAFT CARRIER,CVN 78,223,,,Department of War,,,2025,2140106744,,Contracts,257
+CVN 78 GERALD R. FORD CLASS NUCLEAR AIRCRAFT CARRIER,CVN 78,223,,,Department of War,,,2024,1748025147,,Contracts,279
+CYBER SITUATIONAL UNDERSTANDING,CYBER SU,K47,,,Department of War,,,2024,1287630.1,,Contracts,2
+CYBER SITUATIONAL UNDERSTANDING,CYBER SU,K47,,,Department of War,,,2025,997052.88,,Contracts,1
+DDG 1000 ZUMWALT CLASS DESTROYER,DDG 1000,197,,,Department of War,,,2024,341045297.9,,Contracts,102
+DDG 1000 ZUMWALT CLASS DESTROYER,DDG 1000,197,,,Department of War,,,2023,128140434.4,,Contracts,115
+DDG 1000 ZUMWALT CLASS DESTROYER,DDG 1000,197,,,Department of War,,,2025,100874398,,Contracts,108
+DDG 51 ARLEIGH BURKE CLASS GUIDED MISSILE DESTROYER,DDG 51,180,,,Department of War,,,2023,5422264101,,Contracts,597
+DDG 51 ARLEIGH BURKE CLASS GUIDED MISSILE DESTROYER,DDG 51,180,,,Department of War,,,2025,4774603567,,Contracts,465
+DDG 51 ARLEIGH BURKE CLASS GUIDED MISSILE DESTROYER,DDG 51,180,,,Department of War,,,2024,3586119719,,Contracts,508
+DEFENSE ENTERPRISE ACCOUNTING & MANAGEMENT SYSTEM,DEAMS,N87,,,Department of War,,,2023,41788552.65,,Contracts,33
+DEFENSE ENTERPRISE ACCOUNTING & MANAGEMENT SYSTEM,DEAMS,N87,,,Department of War,,,2024,41601622.56,,Contracts,29
+DEFENSE ENTERPRISE ACCOUNTING & MANAGEMENT SYSTEM,DEAMS,N87,,,Department of War,,,2025,37278147.88,,Contracts,25
+DEFENSE ENTERPRISE OFFICE SOLUTION,DEOS,600,,,Department of War,,,2024,1580423.25,,Contracts,3
+DEFENSE ENTERPRISE OFFICE SOLUTION,DEOS,600,,,Department of War,,,2023,307246.9,,Contracts,1
+DEFENSE ENVIRONMENTAL AND RESTORATION PROGRAM,DERP,ZDE,,,Department of War,,,2024,109625994.2,,Contracts,326
+DEFENSE ENVIRONMENTAL AND RESTORATION PROGRAM,DERP,ZDE,,,Department of War,,,2023,109120014.7,,Contracts,345
+DEFENSE ENVIRONMENTAL AND RESTORATION PROGRAM,DERP,ZDE,,,Department of War,,,2025,58780806.45,,Contracts,264
+DEFENSE MEDICAL LOGISTICS - ENTERPRISE SOLUTION,DML-ES,NT7,,,Department of War,,,2025,8634684.11,,Contracts,3
+DEFENSE METEOROLOGICAL SATELLITE PROGRAM,DMSP,203,,,Department of War,,,2024,0,,Contracts,3
+DEFENSE SUPPORT PROGRAM SATELLITE SYSTEM,DSP,204,,,Department of War,,,2024,6001320.41,,Contracts,8
+DEFENSE SUPPORT PROGRAM SATELLITE SYSTEM,DSP,204,,,Department of War,,,2025,3775431.7,,Contracts,6
+DEFENSE SUPPORT PROGRAM SATELLITE SYSTEM,DSP,204,,,Department of War,,,2023,43664.66,,Contracts,1
+DEPARTMENT OF DEFENSE HEALTHCARE MANAGEMENT SYSTEM MODERNIZATION,DHMSM,496,,,Department of War,,,2023,495706208.4,,Contracts,86
+DEPARTMENT OF DEFENSE HEALTHCARE MANAGEMENT SYSTEM MODERNIZATION,DHMSM,496,,,Department of War,,,2024,335481400.8,,Contracts,93
+DEPARTMENT OF DEFENSE HEALTHCARE MANAGEMENT SYSTEM MODERNIZATION,DHMSM,496,,,Department of War,,,2025,311336460.6,,Contracts,73
+DEPLOYABLE JOINT COMMAND AND CONTROL SYSTEM,DJC2,N02,,,Department of War,,,2024,0,,Contracts,2
+DEPLOYED THEATER ACCOUNTABILITY SYSTEM,DTAS,EI6,,,Department of War,,,2025,33092.93,,Contracts,1
+DEPLOYED THEATER ACCOUNTABILITY SYSTEM,DTAS,EI6,,,Department of War,,,2024,29636.12,,Contracts,1
+DEPT OF THE NAVY-LARGE AIRCRAFT-INFRARED COUNTER MEASURES,DON-LAIRCM,426,,,Department of War,,,2025,521.28,,Contracts,1
+DESTROYER DDG-51,DESTROYER DDG-51,SCY,,,Department of War,,,2025,0,,Contracts,1
+DISABLEMENT MANAGEMENT SYSTEM,DMS,H1B,,,Department of War,,,2024,0,,Contracts,1
+DISABLEMENT MANAGEMENT SYSTEM,DMS,H1B,,,Department of War,,,2025,0,,Contracts,1
+"DISCHARGER, GRENADE, SMOKE, COUNTERMEASURE: M6",M6,CNU,,,Department of War,,,2024,0,,Contracts,2
+DISTRIBUTED COMMON GROUND SYSTEM - ARMY INCREMENT 2,DCGS-A INC 2,502,,,Department of War,,,2023,225254.31,,Contracts,18
+DISTRIBUTED COMMON GROUND SYSTEM - ARMY INCREMENT 2,DCGS-A INC 2,502,,,Department of War,,,2025,108530.07,,Contracts,4
+DISTRIBUTED COMMON GROUND SYSTEM - ARMY INCREMENT 2,DCGS-A INC 2,502,,,Department of War,,,2024,90451.45,,Contracts,8
+DISTRIBUTED COMMON GROUND SYSTEM-ARMY INCREMENT 1,DCGS-A INC 1,389,,,Department of War,,,2025,15005451.19,,Contracts,15
+DISTRIBUTED COMMON GROUND SYSTEM-ARMY INCREMENT 1,DCGS-A INC 1,389,,,Department of War,,,2023,10037258.93,,Contracts,10
+DISTRIBUTED COMMON GROUND SYSTEM-ARMY INCREMENT 1,DCGS-A INC 1,389,,,Department of War,,,2024,8723745.79,,Contracts,18
+DISTRIBUTED COMMON GROUND SYSTEM-NAVY INCREMENT 2,DCGS-N INC 2,464,,,Department of War,,,2025,-10973.56,,Contracts,1
+DISTRIBUTED COMMON GROUND/SURFACE SYSTEM SOF,DCGS (SOF),837,,,Department of War,,,2024,3058134,,Contracts,2
+DISTRIBUTED COMMON GROUND/SURFACE SYSTEM SOF,DCGS (SOF),837,,,Department of War,,,2025,1631367.39,,Contracts,7
+DLA DISTRIBUTION STANDARD SYSTEM,DSS,DUZ,,,Department of War,,,2025,1005148,,Contracts,1
+DLA MAP CATALOG,DLA MAP,8BC,,,Department of War,,,2025,914489.96,,Contracts,1
+E-2C,E-2C,397,,,Department of War,,,2023,0,,Contracts,1
+E-2C REPRODUCTION,E-2C REPRODUCTION,276,,,Department of War,,,2023,0,,Contracts,3
+E-2C REPRODUCTION,E-2C REPRODUCTION,276,,,Department of War,,,2024,0,,Contracts,2
+E-2D ADVANCED HAWKEYE AIRCRAFT,E-2D AHE,364,,,Department of War,,,2024,1936022282,,Contracts,195
+E-2D ADVANCED HAWKEYE AIRCRAFT,E-2D AHE,364,,,Department of War,,,2023,1527179119,,Contracts,232
+E-2D ADVANCED HAWKEYE AIRCRAFT,E-2D AHE,364,,,Department of War,,,2025,574599241.4,,Contracts,190
+E-3 AWACS SUPPORT TO THE WARFIGHTER,E-3 STWF,876,,,Department of War,,,2024,15500573.08,,Contracts,4
+E-3 AWACS SUPPORT TO THE WARFIGHTER,E-3 STWF,876,,,Department of War,,,2025,0,,Contracts,4
+E-3A,E-3A,103,,,Department of War,,,2025,2417991.93,,Contracts,5
+E-3A,E-3A,103,,,Department of War,,,2024,1856922.95,,Contracts,8
+E-3A,E-3A,103,,,Department of War,,,2023,967439.88,,Contracts,1
+E-3G AWACS COMMUNICATIONS INTEGRATION PROGRAM RAPID PROTOTYPING,E-3 ACIP-MTA RP,675,,,Department of War,,,2025,27454388,,Contracts,2
+E-6A TACAMO AIRBORNE STRATEGIC COMMUNICATIONS AIRCRAFT,E-6A (TACAMO),207,,,Department of War,,,2025,-38233.53,,Contracts,2
+E-6A TACAMO AIRBORNE STRATEGIC COMMUNICATIONS AIRCRAFT,E-6A (TACAMO),207,,,Department of War,,,2023,-105061.29,,Contracts,2
+E-6A TACAMO AIRBORNE STRATEGIC COMMUNICATIONS AIRCRAFT,E-6A (TACAMO),207,,,Department of War,,,2024,-262254.92,,Contracts,2
+E-6B RECAPITALIZATION,E-XX,701,,,Department of War,,,2023,499999.96,,Contracts,3
+E-7A RAPID PROTOTYPING,E-7A RP,707,,,Department of War,,,2024,780552490,,Contracts,12
+E-7A RAPID PROTOTYPING,E-7A RP,707,,,Department of War,,,2025,573896189.2,,Contracts,11
+E-7A RAPID PROTOTYPING,E-7A RP,707,,,Department of War,,,2023,256559453.1,,Contracts,4
+E-7A RAPID PROTOTYPING,E-7 RP,707,,,Department of War,,,2023,134079602,,Contracts,1
+EA-18G GROWLER AIRCRAFT,EA-18G,378,,,Department of War,,,2025,1434006502,,Contracts,177
+EA-18G GROWLER AIRCRAFT,EA-18G,378,,,Department of War,,,2023,1078001547,,Contracts,180
+EA-18G GROWLER AIRCRAFT,EA-18G,378,,,Department of War,,,2024,354538385.8,,Contracts,184
+EARLY ENTRY FLUID DISTRIBUTION SYSTEM,E2FDS,D29,,,Department of War,,,2025,2892069.04,,Contracts,1
+ELECTRONIC MILITARY PERSONNEL OFFICE,EMILPO,EI5,,,Department of War,,,2025,1415000,,Contracts,4
+ELECTRONIC MILITARY PERSONNEL OFFICE,EMILPO,EI5,,,Department of War,,,2024,1200000,,Contracts,3
+ELECTRONIC WARFARE PLANNING AND MANAGEMENT TOOL,EWPMT,559,,,Department of War,,,2023,16907.97,,Contracts,2
+ENHANCED MAINTENANCE OPERATIONS CENTER SOFTWARE UPGRADE PROGRAM VERSION 4.2,EMOC SUP V4.2,N09,,,Department of War,,,2025,0,,Contracts,1
+ENHANCED MAINTENANCE OPERATIONS CENTER SOFTWARE UPGRADE PROGRAM VERSION 4.2,EMOC SUP V4.2,N09,,,Department of War,,,2024,-60670.22,,Contracts,2
+ENHANCED MAINTENANCE OPERATIONS CENTER SOFTWARE UPGRADE PROGRAM VERSION 4.2,EMOC SUP V4.2,N09,,,Department of War,,,2023,-733621.38,,Contracts,6
+ENHANCED NIGHT VISION GOGGLES,ENVG,W91,,,Department of War,,,2023,1796163.27,,Contracts,5
+ENHANCED NIGHT VISION GOGGLES,ENVG,W91,,,Department of War,,,2025,1625525.43,,Contracts,3
+ENHANCED NIGHT VISION GOGGLES,ENVG,W91,,,Department of War,,,2024,1340360.44,,Contracts,1
+ENHANCED POLAR SYSTEM,EPS,121,,,Department of War,,,2024,121330742.7,,Contracts,161
+ENHANCED POLAR SYSTEM,EPS,121,,,Department of War,,,2023,111800813.1,,Contracts,184
+ENHANCED POLAR SYSTEM,EPS,121,,,Department of War,,,2025,90030923.81,,Contracts,122
+ENVIRONMENTAL PROTECTION AGENCY SUPERFUND,EPA SUPERFUND,ZSE,,,Department of War,,,2024,250173561.8,,Contracts,187
+ENVIRONMENTAL PROTECTION AGENCY SUPERFUND,EPA SUPERFUND,ZSE,,,Department of War,,,2023,154293889.2,,Contracts,162
+ENVIRONMENTAL PROTECTION AGENCY SUPERFUND,EPA SUPERFUND,ZSE,,,Department of War,,,2025,140107229.5,,Contracts,180
+EVOLVED STRATEGIC SATCOM SPACE SEGMENT RAPID PROTOTYPE,ESS SPACE SEGMENT RP,586,,,Department of War,,,2023,300455194.5,,Contracts,31
+EVOLVED STRATEGIC SATCOM SPACE SEGMENT RAPID PROTOTYPE,ESS SPACE SEGMENT RP,586,,,Department of War,,,2024,284413760.6,,Contracts,34
+EVOLVED STRATEGIC SATCOM SPACE SEGMENT RAPID PROTOTYPE,ESS SPACE SEGMENT RP,586,,,Department of War,,,2025,125538141.1,,Contracts,16
+EXCALIBUR PRECISION 155MM PROJECTILES,EXCALIBUR,366,,,Department of War,,,2023,19221.86,,Contracts,9
+EXCALIBUR PRECISION 155MM PROJECTILES,EXCALIBUR,366,,,Department of War,,,2024,-230882.25,,Contracts,3
+EXCALIBUR PRECISION 155MM PROJECTILES,EXCALIBUR,366,,,Department of War,,,2025,-929621.22,,Contracts,2
+EXPEDITIONARY FAST TRANSPORT,EPF,247,,,Department of War,,,2025,2486932,,Contracts,1
+EXPEDITIONARY FIGHTING VEHICLE,EFV,515,,,Department of War,,,2023,0,,Contracts,1
+EXPEDITIONARY FIGHTING VEHICLE,EFV,515,,,Department of War,,,2025,0,,Contracts,1
+EXPEDITIONARY SEA BASE,ESB_,335,,,Department of War,,,2023,34080,,Contracts,2
+EXPEDITIONARY SEA BASE,ESB,335,,,Department of War,,,2024,11118,,Contracts,1
+EXPENSE ASSIGNMENT SYSTEM,EAS,A07,,,Department of War,,,2024,3160643.02,,Contracts,7
+EXPENSE ASSIGNMENT SYSTEM,EAS,A07,,,Department of War,,,2025,2813840.58,,Contracts,8
+EXPENSE ASSIGNMENT SYSTEM,EAS,A07,,,Department of War,,,2023,2527971.88,,Contracts,7
+EXTENDED COLD WEATHER CLOTHING SYSTEM,ECWCS,W76,,,Department of War,,,2024,64150.95,,Contracts,1
+F/A-18E/F SUPER HORNET AIRCRAFT,F/A-18E/F,549,,,Department of War,,,2024,42602780.93,,Contracts,48
+F/A-18E/F SUPER HORNET AIRCRAFT,F/A-18E/F,549,,,Department of War,,,2025,29650152.99,,Contracts,65
+F/A-18E/F SUPER HORNET AIRCRAFT,F/A-18E/F,549,,,Department of War,,,2023,2371918.26,,Contracts,15
+F-14D,F-14D,123,,,Department of War,,,2025,41913,,Contracts,1
+F-15 EAGLE AIR-SUPERIORITY/DUAL-ROLE FIGHTER,F-15,124,,,Department of War,,,2024,217574425.4,,Contracts,78
+F-15 EAGLE AIR-SUPERIORITY/DUAL-ROLE FIGHTER,F-15,124,,,Department of War,,,2023,209157481.2,,Contracts,49
+F-15 EAGLE AIR-SUPERIORITY/DUAL-ROLE FIGHTER,F-15,124,,,Department of War,,,2025,168486284.7,,Contracts,74
+F-15E DATA TRANSFER MODULE II,F-15E DTM II,X86,,,Department of War,,,2025,9580097.28,,Contracts,2
+F-15E MOBILE USER OBJECTIVE SYSTEM/SECOND GENERATION ANTI-JAM TACTICAL UHF RADIO FOR NATO,F-15E MUOS/SATURN,C90,,,Department of War,,,2024,4380024.61,,Contracts,6
+F-15E MOBILE USER OBJECTIVE SYSTEM/SECOND GENERATION ANTI-JAM TACTICAL UHF RADIO FOR NATO,F-15E MUOS/SATURN,C90,,,Department of War,,,2025,907272.84,,Contracts,3
+F-15E MOBILE USER OBJECTIVE SYSTEM/SECOND GENERATION ANTI-JAM TACTICAL UHF RADIO FOR NATO,F-15 E MUOS/SATURN,C90,,,Department of War,,,2023,40000,,Contracts,1
+F-16 ADVANCED DATA TRANSFER EQUIPMENT,F-16 ADTE,917,,,Department of War,,,2024,62100,,Contracts,4
+F-16 BLK 40/42 WIDE ANGLE CONVENTIONAL (WAC) HEADS-UP DISPLAY (HUD) REPLACEMENT,F-16 HUD,BLP,,,Department of War,,,2025,4641620.1,,Contracts,1
+F-16 FALCON FIGHTER,F-16 FALCON,AFH,,,Department of War,,,2024,-3134962.72,,Contracts,3
+F-16 FALCON FIGHTER,F-16 FALCON,AFH,,,Department of War,,,2023,-4438783.93,,Contracts,3
+F-16 M CODE,F16 M CODE,Y88,,,Department of War,,,2023,629248,,Contracts,1
+F-16 M CODE,F16 M CODE,Y88,,,Department of War,,,2024,0,,Contracts,1
+F-16 M CODE,F-16 M CODE,Y88,,,Department of War,,,2025,0,,Contracts,1
+F-16 MODULAR MISSION COMPUTER/PROGRAMMABLE DISPLAY GENERATOR,F-16 MMC/PDG,V52,,,Department of War,,,2025,199383.05,,Contracts,1
+F-22 INCREMENT 3.2B MODERNIZATION,F-22 INC 3.2B MOD,474,,,Department of War,,,2025,395289914.7,,Contracts,83
+F-22 INCREMENT 3.2B MODERNIZATION,F-22 INC 3.2B MOD,474,,,Department of War,,,2023,286432197.2,,Contracts,98
+F-22 INCREMENT 3.2B MODERNIZATION,F-22 INC 3.2B MOD,474,,,Department of War,,,2024,252633784.1,,Contracts,79
+F-22 RAPID FIELDING,F-22 RAPID FIELDING,689,,,Department of War,,,2023,12036960,,Contracts,3
+F-22 RAPID FIELDING,F-22 RAPID FIELDING,689,,,Department of War,,,2024,2723783.91,,Contracts,6
+F-22 RAPID FIELDING,F-22 RAPID FIELDING,689,,,Department of War,,,2025,0,,Contracts,4
+F-22 RAPID PROTOTYPING,F-22 RAPID PROTOTYPING,684,,,Department of War,,,2025,74588136,,Contracts,4
+F-22 RAPID PROTOTYPING,F-22 RAPID PROTOTYPING,684,,,Department of War,,,2024,70275000,,Contracts,1
+F-22 RAPID PROTOTYPING,F-22 RAPID PROTOTYPING,684,,,Department of War,,,2023,59092851.43,,Contracts,1
+F-22 RAPTOR ADVANCED TACTICAL FIGHTER AIRCRAFT,F-22,265,,,Department of War,,,2025,130820007.3,,Contracts,37
+F-22 RAPTOR ADVANCED TACTICAL FIGHTER AIRCRAFT,F-22,265,,,Department of War,,,2024,123931133.9,,Contracts,51
+F-22 RAPTOR ADVANCED TACTICAL FIGHTER AIRCRAFT,F-22,265,,,Department of War,,,2023,108809545.9,,Contracts,48
+F-35 LIGHTNING II JOINT STRIKE FIGHTER (JSF) PROGRAM,F-35,198,,,Department of War,,,2023,36450239480,,Contracts,875
+F-35 LIGHTNING II JOINT STRIKE FIGHTER (JSF) PROGRAM,F-35,198,,,Department of War,,,2025,20003596951,,Contracts,741
+F-35 LIGHTNING II JOINT STRIKE FIGHTER (JSF) PROGRAM,F-35,198,,,Department of War,,,2024,12443629340,,Contracts,867
+F-5E,F-5E,316,,,Department of War,,,2024,-1253816.25,,Contracts,3
+F-5E,F-5E,316,,,Department of War,,,2023,-1920424.07,,Contracts,8
+FACILITIES AND EQUIPMENT MAINTENANCE,FEM,T66,,,Department of War,,,2024,109221.73,,Contracts,2
+FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS,FAB-T,199,,,Department of War,,,2024,102888486.2,,Contracts,41
+FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS,FAB-T,199,,,Department of War,,,2023,99329076.88,,Contracts,21
+FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS,FAB-T,199,,,Department of War,,,2025,61173329.96,,Contracts,26
+FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS FORCE ELEMENT TERMINAL RAPID PROTOTYPING,FAB-T FET,610,,,Department of War,,,2023,498641,,Contracts,2
+FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS FORCE ELEMENT TERMINAL RAPID PROTOTYPING,FAB-T FET,610,,,Department of War,,,2024,0,,Contracts,1
+FAMILY OF LOADERS (LIGHT & HEAVY),LIGHT & HEAVY LOADER,K80,,,Department of War,,,2023,343326,,Contracts,1
+FAMILY OF MEDIUM TACTICAL VEHICLES,FMTV,746,,,Department of War,,,2025,59241895.05,,Contracts,9
+FAMILY OF MEDIUM TACTICAL VEHICLES,FMTV,746,,,Department of War,,,2024,1892575.2,,Contracts,2
+FAMILY OF RESTRAINT SYSTEM,FORS,B10,,,Department of War,,,2025,30870,,Contracts,2
+FEDERAL LOGISTICS INFORMATION SYSTEM,FLIS,7Y3,,,Department of War,,,2025,2781436.8,,Contracts,1
+FEDERAL MALL,FEDMALL,9WQ,,,Department of War,,,2025,16512355,,Contracts,3
+FFG 62 GUIDED MISSILE FRIGATE,FFG(62),606,,,Department of War,,,2024,1079946395,,Contracts,16
+FFG 62 GUIDED MISSILE FRIGATE,FFG(62),606,,,Department of War,,,2023,611909135,,Contracts,12
+FFG 62 GUIDED MISSILE FRIGATE,FFG 62,606,,,Department of War,,,2025,112507098,,Contracts,18
+FFG 62 GUIDED MISSILE FRIGATE,FFG 62,606,,,Department of War,,,2024,37880157,,Contracts,5
+FFG-7 PERRY CLASS,FFG-7,127,,,Department of War,,,2025,432604.92,,Contracts,1
+FFG-7 PERRY CLASS,FFG-7,127,,,Department of War,,,2023,-1767.72,,Contracts,1
+FIGHTING FALCON/INTEGRATED WEAPON SYSTEM MODERNIZATION,F-16,125,,,Department of War,,,2025,259191930.7,,Contracts,91
+FIGHTING FALCON/INTEGRATED WEAPON SYSTEM MODERNIZATION,F-16,125,,,Department of War,,,2024,213566874,,Contracts,57
+FIGHTING FALCON/INTEGRATED WEAPON SYSTEM MODERNIZATION,F-16,125,,,Department of War,,,2023,174112699.5,,Contracts,33
+FIREFIGHTER INDIVIDUAL REQUIREMENTS EQUIPMENT SET,FIRES,N58,,,Department of War,,,2023,116849.69,,Contracts,3
+FIREFIGHTER INDIVIDUAL REQUIREMENTS EQUIPMENT SET,FIRES,N58,,,Department of War,,,2025,82241.48,,Contracts,1
+FORCE MANAGEMENT SYSTEM,FMS,U71,,,Department of War,,,2023,8450856.06,,Contracts,3
+FORCE MANAGEMENT SYSTEM,FMS,U71,,,Department of War,,,2025,27371.94,,Contracts,1
+FORCE PROVIDER,FORCE PROVIDER,A86,,,Department of War,,,2025,356473.23,,Contracts,7
+FORCE XXI BATTLE COMMAND BRIGADE AND BELOW PROGRAM,FBCB2,294,,,Department of War,,,2023,0,,Contracts,7
+FOREIGN MILITARY SALES - ARMY CASE EXECUTION SYSTEM,FMS-ACES,88E,,,Department of War,,,2024,11555439.2,,Contracts,2
+FOREIGN MILITARY SALES - ARMY CASE EXECUTION SYSTEM,FMS-ACES,88E,,,Department of War,,,2025,3404424.89,,Contracts,13
+"FORWARD AREA AIR DEFENSE SYSTEM, LINE-OF-SIGHT, REAR (PED MNT STINGER)",AVENGER (FAADS LOS-R),ZZE,,,Department of War,,,2024,3338875.6,,Contracts,4
+"FORWARD AREA AIR DEFENSE SYSTEM, LINE-OF-SIGHT, REAR (PED MNT STINGER)",AVENGER (FAADS LOS-R),ZZE,,,Department of War,,,2025,97800,,Contracts,1
+"FORWARD AREA AIR DEFENSE SYSTEM, LINE-OF-SIGHT, REAR (PED MNT STINGER) (LEGACY)",AVENGER (FAADS LOS-R) (LEGACY),948,,,Department of War,,,2025,0,,Contracts,2
+FULL MOTION VIDEO,FMV,E37,,,Department of War,,,2025,10300,,Contracts,1
+FUTURE LONG RANGE ASSAULT AIRCRAFT,FLRAA,550,,,Department of War,,,2025,1147757895,,Contracts,56
+FUTURE LONG RANGE ASSAULT AIRCRAFT,FLRAA,550,,,Department of War,,,2024,904986492.5,,Contracts,54
+FUTURE LONG RANGE ASSAULT AIRCRAFT,FLRAA,550,,,Department of War,,,2023,620494050.8,,Contracts,53
+GENERAL FUND ENTERPRISE BUSINESS SYSTEMS,GFEBS,N06,,,Department of War,,,2025,6930079.29,,Contracts,9
+GENERAL FUND ENTERPRISE BUSINESS SYSTEMS,GFEBS,N06,,,Department of War,,,2024,269114.49,,Contracts,3
+GENERAL FUND ENTERPRISE BUSINESS SYSTEMS,GFEBS,N06,,,Department of War,,,2023,261278.98,,Contracts,1
+GEOSPATIAL ENGINEERING OPERATIONS MAPPING & ANALYSIS PORTAL,AFGIMS,Z90,,,Department of War,,,2023,211604.64,,Contracts,1
+GLOBAL AIRCREW STRATEGIC NETWORK TERMINAL INCREMENT 1,GLOBAL ASNT INC 1,D88,,,Department of War,,,2024,29561108,,Contracts,6
+GLOBAL AIRCREW STRATEGIC NETWORK TERMINAL INCREMENT 1,GLOBAL ASNT INC 1,D88,,,Department of War,,,2025,23895329.16,,Contracts,7
+GLOBAL BROADCAST SERVICE,GBS,237,,,Department of War,,,2024,0,,Contracts,7
+GLOBAL BROADCAST SERVICE,GBS,237,,,Department of War,,,2025,0,,Contracts,3
+GLOBAL COMBAT SUPPORT SYSTEM - ARMY INCREMENT 2,GCSS-ARMY INC 2,501,,,Department of War,,,2025,6166869,,Contracts,9
+GLOBAL COMBAT SUPPORT SYSTEM - ARMY INCREMENT 2,GCSS-ARMY INC 2,501,,,Department of War,,,2024,2160000,,Contracts,1
+GLOBAL COMBAT SUPPORT SYSTEM (GCSS) - AIR FORCE,GCSS - AF,M91,,,Department of War,,,2024,-581572.18,,Contracts,1
+GLOBAL COMBAT SUPPORT SYSTEM ARMY,GCSS-A,402,,,Department of War,,,2025,-35228.12,,Contracts,1
+GLOBAL COMBAT SUPPORT SYSTEM ARMY,GCSS-A INC 1,402,,,Department of War,,,2023,-224285,,Contracts,2
+GLOBAL COMBAT SUPPORT SYSTEM-MARINE CORPS LOGISTICS CHAIN MANAGEMENT INCREMENT 1,GCSS-MC LCM INC 1,N12,,,Department of War,,,2023,3302687.41,,Contracts,5
+GLOBAL COMMAND & CONTROL SYSTEM (GCCS) - AF (INFRASTRUCTURE),GCCS-AF(I),N21,,,Department of War,,,2023,16136.76,,Contracts,1
+GLOBAL COMMAND & CONTROL SYSTEM (GCCS) - AF (INFRASTRUCTURE),GCCS-AF(I),N21,,,Department of War,,,2024,-10234.54,,Contracts,2
+GLOBAL COMMAND AND CONTROL SYSTEM-JOINT,GCCS-J,M01,,,Department of War,,,2024,0,,Contracts,1
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 1,GCCS-M INC 1,M90,,,Department of War,,,2023,-44687.61,,Contracts,2
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 1,GCCS-M INC 1,M90,,,Department of War,,,2025,-149000,,Contracts,2
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 1,GCCS-M INC 1,M90,,,Department of War,,,2024,-210053.71,,Contracts,2
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 2,GCCS-M INC 2,M89,,,Department of War,,,2024,-44861.32,,Contracts,1
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 2,GCCS-M INC 2,M89,,,Department of War,,,2025,-119327.22,,Contracts,1
+GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 2,GCCS-M INC 2,M89,,,Department of War,,,2023,-201634.53,,Contracts,2
+GLOBAL INFORMATION GRID BANDWIDTH EXPANSION,GIG BE,N01,,,Department of War,,,2024,0,,Contracts,2
+GLOBAL POSITIONING SYSTEM III,GPS III,292,,,Department of War,,,2024,47563980.84,,Contracts,11
+GLOBAL POSITIONING SYSTEM III,GPS III,292,,,Department of War,,,2025,5250172.7,,Contracts,10
+GLOBAL POSITIONING SYSTEM III,GPS III,292,,,Department of War,,,2023,3090975.02,,Contracts,13
+GLOBAL POSITIONING SYSTEM III FOLLOW-ON PRODUCTION,GPS IIIF,590,,,Department of War,,,2025,1900000,,Contracts,3
+GROUND/AIR TASK ORIENTED RADAR,G/ATOR,386,,,Department of War,,,2023,403024998.9,,Contracts,14
+GROUND/AIR TASK ORIENTED RADAR,G/ATOR,386,,,Department of War,,,2024,162312042,,Contracts,9
+GROUND/AIR TASK ORIENTED RADAR,G/ATOR,386,,,Department of War,,,2025,-71516.39,,Contracts,8
+GUIDED MISSILE SURFACE ATTACK MGM51C,SHILLELAGH MISSILE,379,,,Department of War,,,2024,59058254.58,,Contracts,20
+GUIDED MISSILE SURFACE ATTACK MGM51C,SHILLELAGH MISSILE,379,,,Department of War,,,2025,35870304.71,,Contracts,19
+GUIDED MISSILE SURFACE ATTACK MGM51C,SHILLELAGH MISSILE,379,,,Department of War,,,2023,31825986.36,,Contracts,20
+GUIDED MULTIPLE LAUNCH ROCKET SYSTEM/GUIDED MULTIPLE LAUNCH ROCKET SYSTEM ALTERNATIVE WARHEAD,GMLRS/GMLRS AW,260,,,Department of War,,,2023,3208501403,,Contracts,247
+GUIDED MULTIPLE LAUNCH ROCKET SYSTEM/GUIDED MULTIPLE LAUNCH ROCKET SYSTEM ALTERNATIVE WARHEAD,GMLRS/GMLRS AW,260,,,Department of War,,,2024,1622036093,,Contracts,233
+GUIDED MULTIPLE LAUNCH ROCKET SYSTEM/GUIDED MULTIPLE LAUNCH ROCKET SYSTEM ALTERNATIVE WARHEAD,GMLRS/GMLRS AW,260,,,Department of War,,,2025,411705134.5,,Contracts,186
+H-1 UPGRADES (4BW/4BN),H-1 UPGRADES,101,,,Department of War,,,2023,199278321.8,,Contracts,217
+H-1 UPGRADES (4BW/4BN),H-1 UPGRADES,101,,,Department of War,,,2024,172848601.4,,Contracts,191
+H-1 UPGRADES (4BW/4BN),H-1 UPGRADES,101,,,Department of War,,,2025,119268517,,Contracts,144
+"HANDHELD, MANPACK, AND SMALL FORM FIT RADIOS",HMS,385,,,Department of War,,,2023,454554284.5,,Contracts,42
+"HANDHELD, MANPACK, AND SMALL FORM FIT RADIOS",HMS,385,,,Department of War,,,2024,324129785.6,,Contracts,42
+"HANDHELD, MANPACK, AND SMALL FORM FIT RADIOS",HMS,385,,,Department of War,,,2025,235339429.3,,Contracts,43
+HARM (AIR FORCE),HARM (AIR FORCE),132,,,Department of War,,,2024,1030603.2,,Contracts,5
+HARM (AIR FORCE),HARM (AIR FORCE),132,,,Department of War,,,2023,895686.41,,Contracts,3
+HARM (AIR FORCE),HARM (AIR FORCE),132,,,Department of War,,,2025,822528.66,,Contracts,9
+HAWK IMPROVED,HAWK IMPROVED,307,,,Department of War,,,2024,28853569.59,,Contracts,21
+HAWK IMPROVED,HAWK IMPROVED,307,,,Department of War,,,2025,14986158.72,,Contracts,16
+HAWK IMPROVED,HAWK IMPROVED,307,,,Department of War,,,2023,12174925.6,,Contracts,22
+HC/MC-130 RECAPITALIZATION AIRCRAFT,HC/MC-130 RECAP,257,,,Department of War,,,2025,30891766.36,,Contracts,29
+HC/MC-130 RECAPITALIZATION AIRCRAFT,HC/MC-130 RECAP,257,,,Department of War,,,2023,22798071.84,,Contracts,23
+HC/MC-130 RECAPITALIZATION AIRCRAFT,HC/MC-130 RECAP,257,,,Department of War,,,2024,20164648.99,,Contracts,21
+HC/MC-130J WIRELESS PROGRAM,WIRELESS,E27,,,Department of War,,,2024,146861.15,,Contracts,1
+HC/MC-130J WIRELESS PROGRAM,WIRELESS,E27,,,Department of War,,,2025,73377.47,,Contracts,9
+HC/MC-130J WIRELESS PROGRAM,WIRELESS,E27,,,Department of War,,,2023,16078.12,,Contracts,1
+HEADQUARTERS ARMY ENVIRONMENTAL SYSTEM,HQAES,G70,,,Department of War,,,2025,49653.8,,Contracts,1
+HEAVY DUMP TRUCK (HDT),HDT,U30,,,Department of War,,,2024,415308.05,,Contracts,1
+HEAVY LOGISTIC SUPPORT,C-5A,351,,,Department of War,,,2024,16087556.95,,Contracts,5
+HEAVY LOGISTIC SUPPORT,C-5A,351,,,Department of War,,,2025,8079059.84,,Contracts,11
+HEMTT-LHS COMPATIBLE WATER TANK RACK,HIPPO,S86,,,Department of War,,,2025,13555090.95,,Contracts,4
+HEMTT-LHS COMPATIBLE WATER TANK RACK,HIPPO,S86,,,Department of War,,,2024,9854475,,Contracts,2
+HERCULES CARGO PLANE,C-130H,548,,,Department of War,,,2025,804640,,Contracts,4
+HERCULES CARGO PLANE,C-130H,548,,,Department of War,,,2024,169565,,Contracts,1
+HERCULES CARGO PLANE,C-130H,548,,,Department of War,,,2023,23360,,Contracts,1
+HH-53 SUPER JOLLY HELICOPTER,HH-53 SUPER JOLLY,AHL,,,Department of War,,,2024,0,,Contracts,1
+HH-60G LOW COST MODS,HH-60G LCM,B70,,,Department of War,,,2024,95910,,Contracts,1
+HH-60W JOLLY GREEN II,HH-60W,479,,,Department of War,,,2024,38402847.38,,Contracts,13
+HH-60W JOLLY GREEN II,HH-60W,479,,,Department of War,,,2025,11700067.63,,Contracts,12
+HH-60W JOLLY GREEN II,HH-60W,479,,,Department of War,,,2023,3987850,,Contracts,6
+HIGH MOBILITY ARTILLERY ROCKET SYSTEM,HIMARS,367,,,Department of War,,,2025,-421214.4,,Contracts,5
+HIGH MOBILITY ARTILLERY ROCKET SYSTEM,HIMARS,367,,,Department of War,,,2024,-1268231.51,,Contracts,4
+HIGH MOBILITY ARTILLERY ROCKET SYSTEM,HIMARS,367,,,Department of War,,,2023,-2935209.43,,Contracts,7
+HIGH PERFORMANCE COMPUTING MODERNIZATION (HPCM),HPCM,352,,,Department of War,,,2024,1475000,,Contracts,3
+HIGH PERFORMANCE COMPUTING MODERNIZATION (HPCM),HPCM,352,,,Department of War,,,2025,138548.3,,Contracts,3
+HIGH PERFORMANCE COMPUTING MODERNIZATION (HPCM),HPCM,352,,,Department of War,,,2023,0,,Contracts,3
+HMMLTV,HMMLTV,246,,,Department of War,,,2025,565789,,Contracts,33
+HMMLTV,HMMLTV,246,,,Department of War,,,2024,344325.4,,Contracts,35
+HMMLTV,HMMLTV,246,,,Department of War,,,2023,68941.96,,Contracts,4
+HORNET NAVAL STRIKE FIGHTER,F/A-18A/B/C/D,126,,,Department of War,,,2024,42702051.58,,Contracts,19
+HORNET NAVAL STRIKE FIGHTER,F/A-18A/B/C/D,126,,,Department of War,,,2025,2682982.48,,Contracts,6
+HORNET NAVAL STRIKE FIGHTER,F/A-18A/B/C/D,126,,,Department of War,,,2023,-499493.05,,Contracts,6
+HYPERSONIC ATTACK CRUISE MISSILE RAPID PROTOTYPING,HACM,S41,,,Department of War,,,2024,774311.13,,Contracts,1
+HYPERSONIC ATTACK CRUISE MISSILE RAPID PROTOTYPING,HACM,S41,,,Department of War,,,2025,0,,Contracts,1
+IMPROVED RIBBON BRIDGE,IRB,F74,,,Department of War,,,2025,480678.67,,Contracts,1
+IMPROVED TARGET ACQUISITION SYSTEMS,ITAS,A53,,,Department of War,,,2024,289460,,Contracts,3
+IMPROVED TARGET ACQUISITION SYSTEMS,ITAS,A53,,,Department of War,,,2023,282040,,Contracts,1
+IMPROVED TARGET ACQUISITION SYSTEMS,ITAS,A53,,,Department of War,,,2025,178272,,Contracts,2
+IMPROVED TURBINE ENGINE PROGRAM,ITEP,487,,,Department of War,,,2023,146738894.9,,Contracts,15
+IMPROVED TURBINE ENGINE PROGRAM,ITEP,487,,,Department of War,,,2024,125733889.2,,Contracts,14
+IMPROVED TURBINE ENGINE PROGRAM,ITEP,487,,,Department of War,,,2025,12154164.06,,Contracts,10
+INDIRECT FIRE PROTECTION CAPABILITY INCREMENT 2,IFPC INC 2,473,,,Department of War,,,2025,30466064,,Contracts,1
+INFANTRY SQUAD VEHICLE,ISV,5R0,,,Department of War,,,2024,3919164.38,,Contracts,8
+INFANTRY SQUAD VEHICLE,ISV,5R0,,,Department of War,,,2025,81320.12,,Contracts,1
+INFRARED COUNTERMEASURES,IRCM,825,,,Department of War,,,2023,2642321.48,,Contracts,3
+INFRARED COUNTERMEASURES,IRCM,825,,,Department of War,,,2025,2374000,,Contracts,2
+INFRARED COUNTERMEASURES,IRCM,825,,,Department of War,,,2024,0,,Contracts,5
+INFRARED SEARCH AND TRACK,IRST,510,,,Department of War,,,2025,72566,,Contracts,2
+INTEGRATED AIR AND MISSILE DEFENSE,IAMD,205,,,Department of War,,,2025,23564417.98,,Contracts,35
+INTEGRATED AIR AND MISSILE DEFENSE,IAMD,205,,,Department of War,,,2023,19162327.93,,Contracts,42
+INTEGRATED AIR AND MISSILE DEFENSE,IAMD,205,,,Department of War,,,2024,14830695.77,,Contracts,38
+INTEGRATED DEFENSIVE ELECTRONIC COUNTERMEASURES,IDECM,418,,,Department of War,,,2023,18576198.6,,Contracts,10
+INTEGRATED DEFENSIVE ELECTRONIC COUNTERMEASURES,IDECM,418,,,Department of War,,,2025,18473730.5,,Contracts,5
+INTEGRATED DEFENSIVE ELECTRONIC COUNTERMEASURES,IDECM,418,,,Department of War,,,2024,10273754.37,,Contracts,7
+INTEGRATED LOGISTICS SYSTEMS - SUPPLY SOFTWARE MODIFICATION-RE-PLATFORM,ILS-S SM-RP,A96,,,Department of War,,,2023,105128.21,,Contracts,1
+INTEGRATED LOGISTICS SYSTEMS - SUPPLY SOFTWARE MODIFICATION-RE-PLATFORM,ILS-S SM-RP,A96,,,Department of War,,,2024,72834.45,,Contracts,1
+INTEGRATED LOGISTICS SYSTEMS - SUPPLY SOFTWARE MODIFICATION-RE-PLATFORM,ILS-S SM-RP,A96,,,Department of War,,,2025,-11572.96,,Contracts,2
+INTEGRATED LOGISTICS SYSTEM-SUPPLY,ILS-S,M87,,,Department of War,,,2024,0,,Contracts,1
+INTEGRATED LOGISTICS SYSTEM-SUPPLY,ILS-S,M87,,,Department of War,,,2023,-226141.35,,Contracts,2
+INTEGRATED PERSONNEL AND PAY SYSTEM-ARMY INCREMENT 2,IPPS-A INC 2,467,,,Department of War,,,2024,3617870.9,,Contracts,6
+INTEGRATED PERSONNEL AND PAY SYSTEM-ARMY INCREMENT 2,IPPS-A INC 2,467,,,Department of War,,,2025,3028662.47,,Contracts,4
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 4,ISPAN INC 4,481,,,Department of War,,,2024,962396.79,,Contracts,4
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 4,ISPAN INC 4,481,,,Department of War,,,2023,501590.6,,Contracts,4
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 4,ISPAN INC 4,481,,,Department of War,,,2025,49200,,Contracts,1
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 5 RAPID FIELDING,ISPAN INC 5 RF,522,,,Department of War,,,2024,15170202.27,,Contracts,24
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 5 RAPID FIELDING,ISPAN INC 5 RF,522,,,Department of War,,,2025,13952805.32,,Contracts,9
+INTEGRATED STRATEGIC PLANNING AND ANALYSIS NETWORK INCREMENT 5 RAPID FIELDING,ISPAN INC 5 RF,522,,,Department of War,,,2023,13894869.29,,Contracts,28
+INTEGRATED TACTICAL MISSION SYSTEM RF,ITMS,780,,,Department of War,,,2023,36911.35,,Contracts,1
+INTEGRATED TACTICAL NETWORK - RAPID PROTOTYPING,ITN - RP,860,,,Department of War,,,2024,907453.39,,Contracts,2
+INTEGRATED TACTICAL NETWORK - RAPID PROTOTYPING,ITN - RP,860,,,Department of War,,,2023,445930.04,,Contracts,1
+INTEGRATED TACTICAL NETWORK - RAPID PROTOTYPING,ITN-RP,860,,,Department of War,,,2023,0,,Contracts,2
+J-85,J-85,BJL,,,Department of War,,,2023,-522865.21,,Contracts,3
+JOINT AIR-TO-SURFACE STANDOFF MISSILE,JASSM,555,,,Department of War,,,2024,3410138000,,Contracts,260
+JOINT AIR-TO-SURFACE STANDOFF MISSILE,JASSM,555,,,Department of War,,,2025,3374813901,,Contracts,220
+JOINT AIR-TO-SURFACE STANDOFF MISSILE,JASSM,555,,,Department of War,,,2023,1458348045,,Contracts,225
+JOINT COMMAND AND CONTROL CAPABILITY AREA,JOINT C2,476,,,Department of War,,,2023,-89214.8,,Contracts,2
+JOINT COMMON MISSILE,JOINT COMMON MISSILE,370,,,Department of War,,,2024,437622.94,,Contracts,1
+JOINT CONTINGENCY AND EXPEDITIONARY SERVICES,JCXS,E9C,,,Department of War,,,2025,887490.04,,Contracts,1
+JOINT CYBER COMMAND AND CONTROL,JCC2,X03,,,Department of War,,,2024,12814142.56,,Contracts,16
+JOINT CYBER COMMAND AND CONTROL,JCC2,X03,,,Department of War,,,2025,5287218.36,,Contracts,12
+JOINT CYBER COMMAND AND CONTROL,JCC2,X03,,,Department of War,,,2023,967685.23,,Contracts,1
+JOINT DIRECT ATTACK MUNITION,JDAM,503,,,Department of War,,,2023,581126240.3,,Contracts,130
+JOINT DIRECT ATTACK MUNITION,JDAM,503,,,Department of War,,,2024,308616203.5,,Contracts,131
+JOINT DIRECT ATTACK MUNITION,JDAM,503,,,Department of War,,,2025,115631790.7,,Contracts,72
+JOINT LAND ATTACK CRUISE MISSILE DEFENSE ELEVATED NETTED SENSOR SYSTEM,JLENS,372,,,Department of War,,,2025,0,,Contracts,2
+JOINT LIGHT TACTICAL VEHICLE,JLTV,279,,,Department of War,,,2023,1696739112,,Contracts,418
+JOINT LIGHT TACTICAL VEHICLE,JLTV,279,,,Department of War,,,2024,1346934391,,Contracts,358
+JOINT LIGHT TACTICAL VEHICLE,JLTV,279,,,Department of War,,,2025,937470936.2,,Contracts,236
+JOINT MISSION PLANNING SYSTEMS,JMPS,Z5X,,,Department of War,,,2023,-68047.07,,Contracts,1
+JOINT OPERATIONAL MEDICINE INFORMATION SYSTEMS,JOMIS,521,,,Department of War,,,2023,79894853.57,,Contracts,54
+JOINT OPERATIONAL MEDICINE INFORMATION SYSTEMS,JOMIS,521,,,Department of War,,,2024,48637080.02,,Contracts,33
+JOINT OPERATIONAL MEDICINE INFORMATION SYSTEMS,JOMIS,521,,,Department of War,,,2025,32358369.25,,Contracts,14
+JOINT SERVICE AIRCREW MASK APACHE,JSAM APACHE,S20,,,Department of War,,,2025,79228.5,,Contracts,1
+JOINT SPACE OPERATIONS CENTER (JSPOC) MISSION SYSTEM INCREMENT 2,JMS INC 2,470,,,Department of War,,,2024,0,,Contracts,2
+JOINT SPACE OPERATIONS CENTER (JSPOC) MISSION SYSTEM INCREMENT 2,JMS INC 2,470,,,Department of War,,,2025,0,,Contracts,1
+JOINT SPACE OPERATIONS CENTER (JSPOC) MISSION SYSTEM INCREMENT 2,JMS INC 2,470,,,Department of War,,,2023,-263513.87,,Contracts,3
+JOINT STANDOFF WEAPON - BASELINE VARIANT AND UNITARY WARHEAD VARIANT,JSOW,766,,,Department of War,,,2024,89182678.08,,Contracts,12
+JOINT STANDOFF WEAPON - BASELINE VARIANT AND UNITARY WARHEAD VARIANT,JSOW,766,,,Department of War,,,2025,-1006.33,,Contracts,2
+JOINT STANDOFF WEAPON - BASELINE VARIANT AND UNITARY WARHEAD VARIANT,JSOW,766,,,Department of War,,,2023,-1215255.72,,Contracts,9
+JOINT STRIKE MISSILE,JSM,E10,,,Department of War,,,2025,105290049,,Contracts,5
+JOINT STRIKE MISSILE,JSM,E10,,,Department of War,,,2024,103000000,,Contracts,2
+JOINT SURVEILLANCE TARGET ATTACK RADAR SYSTEM RECAPITALIZATION,JSTARS RECAP,513,,,Department of War,,,2025,-19179.25,,Contracts,1
+JOINT TACTICAL NETWORKS,JTN,284,,,Department of War,,,2025,115803.83,,Contracts,5
+JOINT TACTICAL NETWORKS,JTN,284,,,Department of War,,,2024,0,,Contracts,3
+JOINT TACTICAL NETWORKS,JTN,284,,,Department of War,,,2023,-302512.05,,Contracts,2
+JOINT TACTICAL RADIO SYSTEM GROUND MOBILE RADIO (FORMERLY CLUSTER 1),JTRS GMR,360,,,Department of War,,,2024,0,,Contracts,1
+JOINT TACTICAL UNMANNED AERIAL VEHICLES,JTUAV,514,,,Department of War,,,2024,7163469.85,,Contracts,7
+JOINT TACTICAL UNMANNED AERIAL VEHICLES,JTUAV,514,,,Department of War,,,2023,3408293.62,,Contracts,6
+JOINT TACTICAL UNMANNED AERIAL VEHICLES,JTUAV,514,,,Department of War,,,2025,0,,Contracts,1
+JOINT TRANSPORTATION MANAGEMENT SYSTEM,JTMS,3G2,,,Department of War,,,2025,2350690.1,,Contracts,1
+JTIDS NAVY,JTIDS (NAVY),171,,,Department of War,,,2024,77102,,Contracts,2
+JTIDS NAVY,JTIDS (NAVY),171,,,Department of War,,,2023,14440.71,,Contracts,3
+JTIDS NAVY,JTIDS (NAVY),171,,,Department of War,,,2025,0,,Contracts,1
+KC-130J TRANSPORT AIRCRAFT,KC-130J,433,,,Department of War,,,2023,263081.57,,Contracts,1
+KC-135 LEGACY TANKER AIRCRAFT,KC-135R,181,,,Department of War,,,2025,21955888.08,,Contracts,8
+KC-135 LEGACY TANKER AIRCRAFT,KC-135R,181,,,Department of War,,,2024,0.01,,Contracts,8
+KC-135 LEGACY TANKER AIRCRAFT,KC-135R,181,,,Department of War,,,2023,-171816.59,,Contracts,7
+KC-46A TANKER MODERNIZATION,KC-46A,387,,,Department of War,,,2025,2929954990,,Contracts,121
+KC-46A TANKER MODERNIZATION,KC-46A,387,,,Department of War,,,2024,2814937386,,Contracts,170
+KC-46A TANKER MODERNIZATION,KC-46A,387,,,Department of War,,,2023,2802929141,,Contracts,95
+KESSEL RUN ALL DOMAIN COMMON PLATFORM,KR ADCP,B68,,,Department of War,,,2023,554089,,Contracts,1
+KESSEL RUN ALL DOMAIN COMMON PLATFORM,KR ADCP,B68,,,Department of War,,,2024,-14723.87,,Contracts,2
+KEY MANAGEMENT INFRASTRUCTURE INCREMENT 2,KMI INC 2,N26,,,Department of War,,,2023,434120.53,,Contracts,4
+KEY MANAGEMENT INFRASTRUCTURE INCREMENT 2,KMI INC 2,N26,,,Department of War,,,2025,-252403.94,,Contracts,2
+KEY MANAGEMENT INFRASTRUCTURE INCREMENT 2,KMI INC 2,N26,,,Department of War,,,2024,-630293.48,,Contracts,2
+KEY MANAGEMENT INFRASTRUCTURE INCREMENT 3,KMI INC 3,540,,,Department of War,,,2023,910736.97,,Contracts,5
+KEY MANAGEMENT INFRASTRUCTURE INCREMENT 3,KMI INC 3,540,,,Department of War,,,2025,-994511.23,,Contracts,1
+KG-3X CRYPTO MODERNIZATION,KG-3X CRYPTO,S11,,,Department of War,,,2024,79180,,Contracts,2
+KG-3X CRYPTO MODERNIZATION,KG-3X CRYPTO,S11,,,Department of War,,,2025,42500,,Contracts,1
+KNOX CLASS,DE 1052,361,,,Department of War,,,2025,391205,,Contracts,1
+LANDING CRAFT AIR CUSHION,LCAC,216,,,Department of War,,,2025,1334110.5,,Contracts,1
+LANDING CRAFT UTILITY (LCU) 2000,LCU-2000,T90,,,Department of War,,,2024,1174371.46,,Contracts,3
+LANDING CRAFT UTILITY (LCU) 2000,LCU-2000,T90,,,Department of War,,,2025,296395.15,,Contracts,11
+LARGE AIRCRAFT INFRARED COUNTERMEASURES,LAIRCM,357,,,Department of War,,,2023,78396006.06,,Contracts,2
+LARGE AIRCRAFT INFRARED COUNTERMEASURES,LAIRCM,357,,,Department of War,,,2024,6050321.49,,Contracts,2
+LARGE AIRCRAFT INFRARED COUNTERMEASURES,LAIRCM,357,,,Department of War,,,2025,22240.35,,Contracts,1
+LAV (ARMY),LAV (ARMY),175,,,Department of War,,,2024,35983.15,,Contracts,3
+LAV (ARMY),LAV (ARMY),175,,,Department of War,,,2023,11110,,Contracts,1
+LAV (ARMY),LAV (ARMY),175,,,Department of War,,,2025,3025.05,,Contracts,1
+LAV (NAVY),LAV (NAVY),769,,,Department of War,,,2025,85146.64,,Contracts,5
+LAV (NAVY),LAV (NAVY),769,,,Department of War,,,2024,-98254.48,,Contracts,3
+LAV (NAVY),LAV (NAVY),769,,,Department of War,,,2023,-2572656.68,,Contracts,7
+LGM-30G ELECTRICAL ELECTRONIC EQUIPMENT TEST SET,LGM-30G EEETS,H55,,,Department of War,,,2025,6488,,Contracts,1
+LGM-35A SENTINEL,GBSD,493,,,Department of War,,,2024,3168906914,,Contracts,7
+LGM-35A SENTINEL,GBSD,493,,,Department of War,,,2023,2840754002,,Contracts,7
+LGM-35A SENTINEL,LGM-35A SENTINEL,493,,,Department of War,,,2025,1241227574,,Contracts,12
+LGM-35A SENTINEL,LGM-35A SENTINEL,493,,,Department of War,,,2024,320288806.3,,Contracts,8
+LGM-35A SENTINEL,LGM-35A SENTINEL,493,,,Department of War,,,2023,32935906.91,,Contracts,1
+LHA 6 AMERICA CLASS AMPHIBIOUS ASSAULT SHIP,LHA 6,333,,,Department of War,,,2024,1366731083,,Contracts,127
+LHA 6 AMERICA CLASS AMPHIBIOUS ASSAULT SHIP,LHA 6,333,,,Department of War,,,2023,837333577.7,,Contracts,108
+LHA 6 AMERICA CLASS AMPHIBIOUS ASSAULT SHIP,LHA 6,333,,,Department of War,,,2025,736469769.9,,Contracts,117
+LHD 1,LHD 1,217,,,Department of War,,,2025,2196000,,Contracts,13
+LHD 1,LHD 1,217,,,Department of War,,,2023,455340.78,,Contracts,5
+LHD 1,LHD 1,217,,,Department of War,,,2024,169829.26,,Contracts,13
+LITTORAL COMBAT SHIP,LCS,374,,,Department of War,,,2025,348436870.4,,Contracts,472
+LITTORAL COMBAT SHIP,LCS,374,,,Department of War,,,2023,302965472.7,,Contracts,620
+LITTORAL COMBAT SHIP,LCS,374,,,Department of War,,,2024,274153306,,Contracts,568
+LITTORAL COMBAT SHIP MISSION MODULES,LCS MM,443,,,Department of War,,,2025,55836058.7,,Contracts,16
+LITTORAL COMBAT SHIP MISSION MODULES,LCS MM,443,,,Department of War,,,2023,55043514.8,,Contracts,21
+LITTORAL COMBAT SHIP MISSION MODULES,LCS MM,443,,,Department of War,,,2024,40222696.98,,Contracts,17
+Live Mission Operations Capability,LMOC,HFS,,,Department of War,,,2024,312211.52,,Contracts,2
+Live Mission Operations Capability,LMOC,HFS,,,Department of War,,,2025,249259.64,,Contracts,1
+LOAD BANK SYSTEM,LBS,B90,,,Department of War,,,2024,24000,,Contracts,1
+LOAD BANK SYSTEM,LBS,B90,,,Department of War,,,2025,22030.36,,Contracts,1
+LOAD BANK SYSTEM,LBS,B90,,,Department of War,,,2023,15720.31,,Contracts,1
+LOCATION & AZIMUTH DETERMINING SYSTEM,LADS (2),28L,,,Department of War,,,2023,25132296,,Contracts,2
+LOCATION & AZIMUTH DETERMINING SYSTEM,LADS (2),28L,,,Department of War,,,2024,0,,Contracts,2
+LOGISTIC SUPPORT VESSEL,LSV,S89,,,Department of War,,,2025,153528,,Contracts,1
+LONG RANGE STAND OFF WEAPON,LRSO,489,,,Department of War,,,2025,63816022.6,,Contracts,16
+LONG RANGE STAND OFF WEAPON,LRSO,489,,,Department of War,,,2024,46807550.92,,Contracts,11
+LONG RANGE STAND OFF WEAPON,LRSO,489,,,Department of War,,,2023,41690924.08,,Contracts,9
+LOS ANGELES CLASS NUCLEAR ATTACK SUBMARINE,SSN 688,149,,,Department of War,,,2024,622461.8,,Contracts,3
+LOS ANGELES CLASS NUCLEAR ATTACK SUBMARINE,SSN 688,149,,,Department of War,,,2023,133021,,Contracts,3
+LOS ANGELES CLASS NUCLEAR ATTACK SUBMARINE,SSN 688,149,,,Department of War,,,2025,0,,Contracts,1
+LPD 17 SAN ANTONIO CLASS AMPHIBIOUS TRANSPORT DOCK ,LPD 17,542,,,Department of War,,,2025,805897625.1,,Contracts,17
+LPD 17 SAN ANTONIO CLASS AMPHIBIOUS TRANSPORT DOCK ,LPD 17,542,,,Department of War,,,2024,512164124.9,,Contracts,53
+LPD 17 SAN ANTONIO CLASS AMPHIBIOUS TRANSPORT DOCK ,LPD 17,542,,,Department of War,,,2023,23854078.77,,Contracts,68
+M1/M1A1 ABRAMS TANK (W/ 120MM GUN),M1/M1A1 ABRAMS TANK,157,,,Department of War,,,2023,5244082.74,,Contracts,17
+M1/M1A1 ABRAMS TANK (W/ 120MM GUN),M1/M1A1 ABRAMS TANK,157,,,Department of War,,,2024,870715.65,,Contracts,11
+M1/M1A1 ABRAMS TANK (W/ 120MM GUN),M1/M1A1 ABRAMS TANK,157,,,Department of War,,,2025,-3799167.79,,Contracts,15
+M10 BOOKER,BOOKER,738,,,Department of War,,,2024,10026237.91,,Contracts,1
+M10 BOOKER,BOOKER,738,,,Department of War,,,2025,-3388436.84,,Contracts,7
+M119 105MM TOWED HOWITZER,M119,Y85,,,Department of War,,,2024,35359.92,,Contracts,1
+M119 105MM TOWED HOWITZER,M119,Y85,,,Department of War,,,2023,16038,,Contracts,1
+M119 105MM TOWED HOWITZER,M119,Y85,,,Department of War,,,2025,0,,Contracts,1
+M198 HOWITZER (155MM),M198 TOWED HOWITZER (155MM),136,,,Department of War,,,2024,4352687.68,,Contracts,7
+M198 HOWITZER (155MM),M198 TOWED HOWITZER (155MM),136,,,Department of War,,,2023,1974382.68,,Contracts,8
+M198 HOWITZER (155MM),M198 TOWED HOWITZER (155MM),136,,,Department of War,,,2025,0,,Contracts,2
+"M200A1, 2-1/2 TON 2-WHEEL TRAILER",M200A1,U99,,,Department of War,,,2025,711406.08,,Contracts,6
+M777 155MM TOWED HOWITZER,M777,A48,,,Department of War,,,2024,35532,,Contracts,1
+M777 155MM TOWED HOWITZER,M777,A48,,,Department of War,,,2025,35532,,Contracts,1
+"M870A4 SEMITRAILER, LOWBED, CONSTRUCTION EQUIPMENT TRANSPORTER",M870A4 STLB,F67,,,Department of War,,,2024,289755,,Contracts,1
+M88A2 HEAVY EQUIPMENT RECOVERY COMBAT UTILITY LIFT EVACUATION SYSTEM,M88A2 HERCULES,539,,,Department of War,,,2023,128210928.8,,Contracts,4
+M88A2 HEAVY EQUIPMENT RECOVERY COMBAT UTILITY LIFT EVACUATION SYSTEM,M88A2 HERCULES,539,,,Department of War,,,2024,290094.35,,Contracts,7
+M88A2 HEAVY EQUIPMENT RECOVERY COMBAT UTILITY LIFT EVACUATION SYSTEM,M88A2 HERCULES,539,,,Department of War,,,2025,59038.24,,Contracts,7
+M939A2 5-TON TRUCK SERIES MOD PROGRAM,M939A2,F59,,,Department of War,,,2023,168414.78,,Contracts,1
+M939A2 5-TON TRUCK SERIES MOD PROGRAM,M939A2,F59,,,Department of War,,,2025,24598.86,,Contracts,1
+MAINTENANCE REPAIR AND OVERHAUL,MRO,523,,,Department of War,,,2025,290379722.4,,Contracts,146
+MAINTENANCE REPAIR AND OVERHAUL,MRO,523,,,Department of War,,,2024,89704064.91,,Contracts,54
+MAINTENANCE REPAIR AND OVERHAUL,MROI,523,,,Department of War,,,2023,60717163.39,,Contracts,135
+MAINTENANCE REPAIR AND OVERHAUL,MROI,523,,,Department of War,,,2024,37941393.64,,Contracts,107
+MAINTENANCE REPAIR AND OVERHAUL,MRO,523,,,Department of War,,,2023,52413.49,,Contracts,8
+MAN TRANSPORTABLE ROBOTIC SYSTEM INC II,MTRS INC II,R53,,,Department of War,,,2024,254925.42,,Contracts,1
+MASSIVE ORDNANCE PENETRATOR,MOP,527,,,Department of War,,,2023,21669866,,Contracts,17
+MASSIVE ORDNANCE PENETRATOR,MOP,527,,,Department of War,,,2024,1758602.49,,Contracts,13
+MASSIVE ORDNANCE PENETRATOR,MOP,527,,,Department of War,,,2025,1568375,,Contracts,11
+MC/AC-130J RADIO FREQUENCY COUNTERMEASURES (RFCM),EW-RFCM,768,,,Department of War,,,2023,10028553,,Contracts,1
+MC2S MOD - BLOCK 05,MC2S MOD - BLOCK 05,Y19,,,Department of War,,,2024,15798821.11,,Contracts,14
+MC2S MOD - BLOCK 05,MC2S MOD - BLOCK 05,Y19,,,Department of War,,,2025,5792709.03,,Contracts,12
+Medium Landing Ship,LSM,W9B,,,Department of War,,,2025,7496356,,Contracts,2
+MEDIUM RANGE INTERCEPT CAPABILITY,MRIC,505,,,Department of War,,,2023,3589945263,,Contracts,113
+MEDIUM RANGE INTERCEPT CAPABILITY,MRIC,505,,,Department of War,,,2024,2912918431,,Contracts,161
+MEDIUM RANGE INTERCEPT CAPABILITY,MRIC,505,,,Department of War,,,2025,2404485198,,Contracts,113
+METAL WORKING AND MACHINING SHOP SET,MWMSS,Z52,,,Department of War,,,2024,107875.1,,Contracts,2
+MH-139A  GREY WOLF,MH-139A,562,,,Department of War,,,2023,330300543.1,,Contracts,34
+MH-139A  GREY WOLF,MH-139A,562,,,Department of War,,,2024,233105724.7,,Contracts,35
+MH-139A  GREY WOLF,MH-139A,562,,,Department of War,,,2025,75008102.84,,Contracts,32
+MH-60R MULTI-MISSION HELICOPTER,MH-60R,191,,,Department of War,,,2024,424365325.7,,Contracts,88
+MH-60R MULTI-MISSION HELICOPTER,MH-60R,191,,,Department of War,,,2023,17591822.15,,Contracts,68
+MH-60R MULTI-MISSION HELICOPTER,MH-60R,191,,,Department of War,,,2025,7803629.61,,Contracts,39
+MH-60S FLEET COMBAT SUPPORT HELICOPTER,MH-60S,282,,,Department of War,,,2023,3646368.69,,Contracts,8
+MH-60S FLEET COMBAT SUPPORT HELICOPTER,MH-60S,282,,,Department of War,,,2025,683502.84,,Contracts,2
+MH-60S FLEET COMBAT SUPPORT HELICOPTER,MH-60S,282,,,Department of War,,,2024,72051.02,,Contracts,5
+MID-RANGE CAPABILITY,MRC,WBN,,,Department of War,,,2025,41099689.38,,Contracts,1
+MILITARY SATELLITE COMMUNICATIONS (MILSATCOM) COMMAND AND CONTROL SYSTEM-CONSOLIDATED (CCS-C),CCS-C,ET9,,,Department of War,,,2024,48970.22,,Contracts,1
+MIM-104 PATRIOT SURFACE TO AIR MISSILE,PATRIOT,106,,,Department of War,,,2025,4446.99,,Contracts,19
+MIM-104 PATRIOT SURFACE TO AIR MISSILE,PATRIOT,106,,,Department of War,,,2023,-8787623.96,,Contracts,21
+MIM-104 PATRIOT SURFACE TO AIR MISSILE,PATRIOT,106,,,Department of War,,,2024,-23059153.93,,Contracts,30
+MINE RESISTANT AMBUSH PROTECTED VEHICLES RF,MRAP RF,802,,,Department of War,,,2024,68856,,Contracts,1
+MINUTEMAN II,MINUTEMAN II,359,,,Department of War,,,2023,6705868.36,,Contracts,6
+MINUTEMAN II,MINUTEMAN II,359,,,Department of War,,,2024,3764534.62,,Contracts,5
+MINUTEMAN II,MINUTEMAN II,359,,,Department of War,,,2025,0,,Contracts,1
+MINUTEMAN III,MINUTEMAN III,401,,,Department of War,,,2024,342062743.4,,Contracts,82
+MINUTEMAN III,MINUTEMAN III,401,,,Department of War,,,2025,303698374.8,,Contracts,80
+MINUTEMAN III,MINUTEMAN III,401,,,Department of War,,,2023,275507437.3,,Contracts,87
+MINUTEMAN III GUIDANCE REPLACEMENT PROGRAM (GRP),MINUTEMAN III GRP,302,,,Department of War,,,2024,1791067.56,,Contracts,3
+MINUTEMAN III GUIDANCE REPLACEMENT PROGRAM (GRP),MINUTEMAN III GRP,302,,,Department of War,,,2025,0,,Contracts,4
+MINUTEMAN III PROPULSION REPLACEMENT PROGRAM (PRP),MINUTEMAN III PRP,248,,,Department of War,,,2024,0,,Contracts,2
+MISSILE DEFENSE AGENCY SUPPORT,MDA SUPPORT,CAA,,,Department of War,,,2023,5977593566,,Contracts,3660
+MISSILE DEFENSE AGENCY SUPPORT,MDA SUPPORT,CAA,,,Department of War,,,2024,5849599923,,Contracts,3349
+MISSILE DEFENSE AGENCY SUPPORT,MDA SUPPORT,CAA,,,Department of War,,,2025,5661733916,,Contracts,2729
+MISSILE DEFENSE SYSTEM,MDS,362,,,Department of War,,,2025,618332209.7,,Contracts,268
+MISSILE DEFENSE SYSTEM,BMDS,362,,,Department of War,,,2023,560943499.7,,Contracts,235
+MISSILE DEFENSE SYSTEM,BMDS,362,,,Department of War,,,2024,479876364.9,,Contracts,158
+MISSILE DEFENSE SYSTEM,MDS,362,,,Department of War,,,2024,71321437.03,,Contracts,82
+MISSILE DEFENSE SYSTEM,MDS,362,,,Department of War,,,2023,6654566.8,,Contracts,6
+MISSION PLANNING SYSTEM,MPS,394,,,Department of War,,,2025,775971.32,,Contracts,4
+MK 48 TORPEDO,MK 48 TORPEDO,139,,,Department of War,,,2025,565866.56,,Contracts,2
+MK15 CLOSE IN WEAPON SYSTEM,MK15 CLOSE IN WPN SYS,EBE,,,Department of War,,,2024,0,,Contracts,2
+MK15 CLOSE IN WEAPON SYSTEM,MK15 CLOSE IN WPN SYS,EBE,,,Department of War,,,2023,-324460.95,,Contracts,2
+MK19 GRENADE MACHINE GUN,MK19,J29,,,Department of War,,,2025,32361003.68,,Contracts,3
+MK19 GRENADE MACHINE GUN,MK19,J29,,,Department of War,,,2024,16175989.69,,Contracts,3
+MK21A REENTRY VEHICLE,MK21A RV,576,,,Department of War,,,2024,246285602.4,,Contracts,20
+MK21A REENTRY VEHICLE,MK21A RV,576,,,Department of War,,,2025,221053714.9,,Contracts,15
+MK21A REENTRY VEHICLE,MK21A RV,576,,,Department of War,,,2023,76224990.81,,Contracts,16
+MK21A REENTRY VEHICLE,MK21A REENTRY VEHICLE,576,,,Department of War,,,2023,0,,Contracts,1
+MOBILE SUBSCRIBER EQUIPMENT,MSE,255,,,Department of War,,,2024,54246.4,,Contracts,2
+MOBILE USER OBJECTIVE SYSTEM,MUOS,345,,,Department of War,,,2025,14823304.37,,Contracts,13
+MOBILE USER OBJECTIVE SYSTEM,MUOS,345,,,Department of War,,,2023,4140134.54,,Contracts,15
+MOBILE USER OBJECTIVE SYSTEM,MUOS,345,,,Department of War,,,2024,2334765,,Contracts,2
+MODULAR AND GHILLIE SUIT ACCESSORY KIT,GSAK,C88,,,Department of War,,,2024,2608932.08,,Contracts,3
+MODULAR AND GHILLIE SUIT ACCESSORY KIT,GSAK,C88,,,Department of War,,,2025,713325.24,,Contracts,1
+MQ- 9 REAPER UNMANNED AIRCRAFT SYSTEM,MQ-9 REAPER,424,,,Department of War,,,2024,824719911.6,,Contracts,218
+MQ- 9 REAPER UNMANNED AIRCRAFT SYSTEM,MQ-9 REAPER,424,,,Department of War,,,2023,566286463.8,,Contracts,243
+MQ- 9 REAPER UNMANNED AIRCRAFT SYSTEM,MQ-9 REAPER,424,,,Department of War,,,2025,452205829.3,,Contracts,216
+MQ-1B UNMANNED AIRCRAFT SYSTEM PREDATOR,MQ-1B UAS PREDATOR,271,,,Department of War,,,2024,2223946.85,,Contracts,1
+MQ-1B UNMANNED AIRCRAFT SYSTEM PREDATOR,MQ-1B UAS PREDATOR,271,,,Department of War,,,2025,7670,,Contracts,3
+MQ-1C GRAY EAGLE UNMANNED AIRCRAFT SYSTEM,MQ-1C GRAY EAGLE,420,,,Department of War,,,2024,577664083.8,,Contracts,123
+MQ-1C GRAY EAGLE UNMANNED AIRCRAFT SYSTEM,MQ-1C GRAY EAGLE,420,,,Department of War,,,2023,485835567.9,,Contracts,155
+MQ-1C GRAY EAGLE UNMANNED AIRCRAFT SYSTEM,MQ-1C GRAY EAGLE,420,,,Department of War,,,2025,389883000.9,,Contracts,113
+MQ-25 STINGRAY,MQ-25,462,,,Department of War,,,2023,115471340,,Contracts,8
+MQ-25 STINGRAY,MQ-25,462,,,Department of War,,,2024,13516341,,Contracts,14
+MQ-25 STINGRAY,MQ-25,462,,,Department of War,,,2025,0,,Contracts,20
+MQ-4C TRITON UNMANNED AIRCRAFT SYSTEM,MQ-4C TRITON,373,,,Department of War,,,2024,789560962.9,,Contracts,119
+MQ-4C TRITON UNMANNED AIRCRAFT SYSTEM,MQ-4C TRITON,373,,,Department of War,,,2025,560783809.5,,Contracts,92
+MQ-4C TRITON UNMANNED AIRCRAFT SYSTEM,MQ-4C TRITON,373,,,Department of War,,,2023,358324583.7,,Contracts,112
+MQ-8 FIRE SCOUT UNMANNED AIRCRAFT SYSTEM,MQ-8 FIRE SCOUT,253,,,Department of War,,,2023,53026870.33,,Contracts,40
+MQ-8 FIRE SCOUT UNMANNED AIRCRAFT SYSTEM,MQ-8 FIRE SCOUT,253,,,Department of War,,,2024,3357274.35,,Contracts,19
+MQ-8 FIRE SCOUT UNMANNED AIRCRAFT SYSTEM,MQ-8 FIRE SCOUT,253,,,Department of War,,,2025,-12413600.53,,Contracts,6
+MQ-9 REAPER UNMANNED AIRCRAFT SYSTEM,HISTORICAL MQ-9 REAPER,395,,,Department of War,,,2024,2873544.54,,Contracts,3
+MQ-9 REAPER UNMANNED AIRCRAFT SYSTEM,HISTORICAL MQ-9 REAPER,395,,,Department of War,,,2023,1181643.46,,Contracts,3
+MULTIFUNCTIONAL INFORMATION DISTRIBUTION SYSTEM,MIDS,554,,,Department of War,,,2023,627849232.2,,Contracts,398
+MULTIFUNCTIONAL INFORMATION DISTRIBUTION SYSTEM,MIDS,554,,,Department of War,,,2024,599331078.4,,Contracts,389
+MULTIFUNCTIONAL INFORMATION DISTRIBUTION SYSTEM,MIDS,554,,,Department of War,,,2025,338369705,,Contracts,289
+MULTI-NATIONAL AVIATION SPECIAL PROJECT OFFICE,MASPO,484,,,Department of War,,,2025,25857157.35,,Contracts,35
+MULTI-NATIONAL AVIATION SPECIAL PROJECT OFFICE,MASPO,484,,,Department of War,,,2024,21213116.72,,Contracts,24
+MULTI-NATIONAL AVIATION SPECIAL PROJECT OFFICE,MASPO,484,,,Department of War,,,2023,5765666.71,,Contracts,12
+MULTIPLE LAUNCH ROCKET SYSTEM,MLRS,130,,,Department of War,,,2025,399131096,,Contracts,16
+MULTIPLE LAUNCH ROCKET SYSTEM,MLRS,130,,,Department of War,,,2023,194897511,,Contracts,4
+MULTIPLE LAUNCH ROCKET SYSTEM,MLRS,130,,,Department of War,,,2024,173741664.4,,Contracts,16
+MULTI-TEMPERATURE REFRIGERATED CONTAINER SYSTEM,MTRCS,G16,,,Department of War,,,2025,34000,,Contracts,9
+NATIONAL AIRSPACE SYSTEM,NAS,537,,,Department of War,,,2024,0,,Contracts,1
+NATIONAL MISSILE DEFENSE SYSTEM,NMD,963,,,Department of War,,,2024,0,,Contracts,2
+NATIONAL SECURITY SPACE LAUNCH,NSSL,176,,,Department of War,,,2023,368658914.8,,Contracts,59
+NATIONAL SECURITY SPACE LAUNCH,NSSL,176,,,Department of War,,,2024,296839691.3,,Contracts,69
+NATIONAL SECURITY SPACE LAUNCH,NSSL,176,,,Department of War,,,2025,254295042.5,,Contracts,45
+NAVSTAR GLOBAL POSITIONING SYSTEM,NAVSTAR GPS,166,,,Department of War,,,2023,290036243.8,,Contracts,90
+NAVSTAR GLOBAL POSITIONING SYSTEM,NAVSTAR GPS,166,,,Department of War,,,2025,284416108.7,,Contracts,89
+NAVSTAR GLOBAL POSITIONING SYSTEM,NAVSTAR GPS,166,,,Department of War,,,2024,265571807.7,,Contracts,84
+NAVY ELECTRONIC PROCUREMENT SYSTEM,NAVY EPS,547,,,Department of War,,,2025,11879151.03,,Contracts,10
+NAVY ELECTRONIC PROCUREMENT SYSTEM,NAVY EPS,547,,,Department of War,,,2024,3119871.27,,Contracts,2
+NAVY ELECTRONIC PROCUREMENT SYSTEM,NAVY EPS,547,,,Department of War,,,2023,284991.53,,Contracts,6
+NAVY ENTERPRISE RESOURCE PLANNING,NAVY ERP,N08,,,Department of War,,,2025,19045380.18,,Contracts,35
+NAVY ENTERPRISE RESOURCE PLANNING,NAVY ERP,N08,,,Department of War,,,2024,878999.48,,Contracts,158
+NAVY ENTERPRISE RESOURCE PLANNING,NAVY ERP,N08,,,Department of War,,,2023,-55548.46,,Contracts,5
+NAVY MULTIBAND TERMINAL,NMT,290,,,Department of War,,,2023,-9832.58,,Contracts,1
+NAVY UNMANNED COMBAT AIR SYSTEM,NAVY UCAS,388,,,Department of War,,,2025,392000,,Contracts,5
+NAVY UNMANNED COMBAT AIR SYSTEM,NAVY UCAS,388,,,Department of War,,,2023,207392.69,,Contracts,1
+NAVY UNMANNED COMBAT AIR SYSTEM,NAVY UCAS,388,,,Department of War,,,2024,-84598.71,,Contracts,1
+NESP,NESP,551,,,Department of War,,,2023,0,,Contracts,1
+NEXT GENERATION AIR DOMINANCE FAMILY OF SYSTEMS,NAVY NGAD,535,,,Department of War,,,2024,0,,Contracts,1
+NEXT GENERATION AIR DOMINANCE FAMILY OF SYSTEMS,NAVY NGAD,535,,,Department of War,,,2025,0,,Contracts,2
+NEXT GENERATION ENTERPRISE NETWORK INCREMENT 1,NGEN INC 1,N61,,,Department of War,,,2024,-267271.95,,Contracts,3
+NEXT GENERATION OPERATIONAL CONTROL SYSTEM,OCX,456,,,Department of War,,,2023,13596658.02,,Contracts,8
+NEXT GENERATION OPERATIONAL CONTROL SYSTEM,OCX,456,,,Department of War,,,2025,10669617.17,,Contracts,5
+NEXT GENERATION OPERATIONAL CONTROL SYSTEM,OCX,456,,,Department of War,,,2024,9822251.67,,Contracts,6
+NGA MAVEN,NGA MAVEN,07D,,,Department of War,,,2025,606099.71,,Contracts,3
+NONE OF THE DOD ACQUISITION PROGRAM CODES APPLY,NONE,000,,,Department of War,,,2024,357279143967.98,,Contracts,4316521
+NONE OF THE DOD ACQUISITION PROGRAM CODES APPLY,NONE,000,,,Department of War,,,2023,343642310806.24,,Contracts,4299924
+NONE OF THE DOD ACQUISITION PROGRAM CODES APPLY,NONE,000,,,Department of War,,,2025,309723939472.13,,Contracts,4002546
+Non-Intrusive Inspection System,NIIS,0MR,,,Department of War,,,2024,327485.46,,Contracts,1
+Non-Intrusive Inspection System,NIIS,0MR,,,Department of War,,,2025,0,,Contracts,1
+NON-INVASIVE WARMING & COOLING DEVICE,NIWCD,A00,,,Department of War,,,2025,254909498,,Contracts,5
+NORAD CMC INTEGRATED TACTICAL WARNING/ATTACK ASSESSMENT (NCMC-ITW/AA) MISSILE WARNING/MISSILE TRACK ,NCMC_MW/MT ENHANCEMENT,9PJ,,,Department of War,,,2025,817572,,Contracts,3
+NUCLEAR PLANNING AND EXECUTION SYSTEM RECAPITALIZATION RAPID PROTOTYPING,NPES RECAP RP,643,,,Department of War,,,2024,8000400,,Contracts,4
+NUCLEAR PLANNING AND EXECUTION SYSTEM RECAPITALIZATION RAPID PROTOTYPING,NPES RECAP RP,643,,,Department of War,,,2023,3894000,,Contracts,3
+OHIO CLASS SUBMARINE,TRIDENT II SUB,177,,,Department of War,,,2025,3779176.98,,Contracts,1
+OHIO CLASS SUBMARINE,TRIDENT II SUB,177,,,Department of War,,,2023,0,,Contracts,2
+OPFOR SURROGATE WHEELED VEHICLES,OSWV,GYY,,,Department of War,,,2023,0,,Contracts,4
+OTHER ENVIRONMENTAL PROGRAMS,OTHER ENVIRONMENTAL PROGRAMS,ZOP,,,Department of War,,,2023,556574198.8,,Contracts,1176
+OTHER ENVIRONMENTAL PROGRAMS,OTHER ENVIRONMENTAL PROGRAMS,ZOP,,,Department of War,,,2024,488457523.1,,Contracts,1105
+OTHER ENVIRONMENTAL PROGRAMS,OTHER ENVIRONMENTAL PROGRAMS,ZOP,,,Department of War,,,2025,223026729.5,,Contracts,818
+"OXYGEN GENERATOR, FIELD PORTABLE",OGFP,1F3,,,Department of War,,,2024,7335,,Contracts,1
+"P-3C ORION LAND-BASED,ANTI-SUB WARFARE PATROL ACFT(UPDATE IV AVIONICS)",P-3C,324,,,Department of War,,,2023,123923,,Contracts,2
+"P-3C ORION LAND-BASED,ANTI-SUB WARFARE PATROL ACFT(UPDATE IV AVIONICS)",P-3C,324,,,Department of War,,,2024,-72215,,Contracts,6
+P5 COMBAT TRAINING SYSTEMS,P5CTS,H65,,,Department of War,,,2024,17584960.35,,Contracts,3
+P5 COMBAT TRAINING SYSTEMS,P5CTS,H65,,,Department of War,,,2025,5167391.93,,Contracts,5
+P-8A POSEIDON MULTI-MISSION MARITIME AIRCRAFT,P-8A,334,,,Department of War,,,2024,1956159585,,Contracts,520
+P-8A POSEIDON MULTI-MISSION MARITIME AIRCRAFT,P-8A,334,,,Department of War,,,2025,1708666671,,Contracts,514
+P-8A POSEIDON MULTI-MISSION MARITIME AIRCRAFT,P-8A,334,,,Department of War,,,2023,632942099,,Contracts,435
+PALADIN INTEGRATED MANAGEMENT,PIM,466,,,Department of War,,,2024,639783133.7,,Contracts,56
+PALADIN INTEGRATED MANAGEMENT,PIM,466,,,Department of War,,,2023,242994000.2,,Contracts,54
+PALADIN INTEGRATED MANAGEMENT,PIM,466,,,Department of War,,,2025,6358164.56,,Contracts,41
+PALADIN/FIELD ARTILLERY AMMUNITION SUPPORT VEHICLE,PALADIN,A64,,,Department of War,,,2025,224394943.3,,Contracts,11
+PALADIN/FIELD ARTILLERY AMMUNITION SUPPORT VEHICLE,PALADIN,A64,,,Department of War,,,2024,42080064,,Contracts,4
+PALADIN/FIELD ARTILLERY AMMUNITION SUPPORT VEHICLE,PALADIN,A64,,,Department of War,,,2023,0,,Contracts,1
+PATRIOT ADVANCED CAPABILITY-3,PAC-3,148,,,Department of War,,,2024,8529774.14,,Contracts,32
+PATRIOT ADVANCED CAPABILITY-3,PAC-3,148,,,Department of War,,,2025,-254107.57,,Contracts,25
+PATRIOT ADVANCED CAPABILITY-3,PAC-3,148,,,Department of War,,,2023,-7087909.48,,Contracts,40
+PATRIOT ADVANCED CAPABILITY-3 MISSILE SEGMENT ENHANCEMENT,PAC-3 MSE,492,,,Department of War,,,2025,327244467.2,,Contracts,237
+PATRIOT ADVANCED CAPABILITY-3 MISSILE SEGMENT ENHANCEMENT,PAC-3 MSE,492,,,Department of War,,,2023,310674698.2,,Contracts,260
+PATRIOT ADVANCED CAPABILITY-3 MISSILE SEGMENT ENHANCEMENT,PAC-3 MSE,492,,,Department of War,,,2024,309733118.5,,Contracts,279
+PATRIOT/MEDIUM EXTENDED AIR DEFENSE SYSTEM COMBINED AGGREGATE PROGRAM,PATRIOT/MEADS CAP,531,,,Department of War,,,2023,8978864.07,,Contracts,87
+PATRIOT/MEDIUM EXTENDED AIR DEFENSE SYSTEM COMBINED AGGREGATE PROGRAM,PATRIOT/MEADS CAP,531,,,Department of War,,,2025,4388405.67,,Contracts,23
+PATRIOT/MEDIUM EXTENDED AIR DEFENSE SYSTEM COMBINED AGGREGATE PROGRAM,PATRIOT/MEADS CAP,531,,,Department of War,,,2024,-26680186.6,,Contracts,41
+PERFORMANCE BASED LOGISTICS (PBL),PERFORMANCE BASED LOGISTICS (PBL),ZBL,,,Department of War,,,2023,197280626.8,,Contracts,80
+PERFORMANCE BASED LOGISTICS (PBL),PERFORMANCE BASED LOGISTICS (PBL),ZBL,,,Department of War,,,2024,137710880.6,,Contracts,58
+PERFORMANCE BASED LOGISTICS (PBL),PERFORMANCE BASED LOGISTICS (PBL),ZBL,,,Department of War,,,2025,89597490.99,,Contracts,46
+PETROLEUM EXPEDITIONARY ANALYSIS KIT,PEAK,F97,,,Department of War,,,2025,20321994.97,,Contracts,11
+PETROLEUM EXPEDITIONARY ANALYSIS KIT,PEAK,F97,,,Department of War,,,2024,7247836.68,,Contracts,6
+POSEIDON (QGM-73A),POSEIDON,311,,,Department of War,,,2025,0,,Contracts,1
+POSEIDON (QGM-73A),POSEIDON,311,,,Department of War,,,2024,-161291.93,,Contracts,2
+POSEIDON (QGM-73A),POSEIDON,311,,,Department of War,,,2023,-12074229.04,,Contracts,3
+PRECISION STRIKE MISSILE INCREMENT 1,PRSM INC 1,494,,,Department of War,,,2025,777449847.5,,Contracts,12
+PRECISION STRIKE MISSILE INCREMENT 1,PRSM,494,,,Department of War,,,2024,471551577.9,,Contracts,21
+PRECISION STRIKE MISSILE INCREMENT 1,PRSM,494,,,Department of War,,,2023,289533145.2,,Contracts,15
+PROCUREMENT INTEGRATED ENTERPRISE ENVIRONMENT,PIEE,Q85,,,Department of War,,,2025,26990163.26,,Contracts,6
+PROGRAM BUDGET ENTERPRISE SYSTEM,PBES,W55,,,Department of War,,,2025,29532.24,,Contracts,2
+PROPHET,PROPHET,A18,,,Department of War,,,2025,1963790.62,,Contracts,7
+PROPHET,PROPHET,A18,,,Department of War,,,2023,1527159.93,,Contracts,6
+PROPHET,PROPHET,A18,,,Department of War,,,2024,1387757.07,,Contracts,6
+PROTECTED TACTICAL SATCOM - GLOBAL,PTS-G,MBA,,,Department of War,,,2025,29796480,,Contracts,4
+PROTECTED TACTICAL SATCOM RAPID PROTOTYPE,PTS RP,589,,,Department of War,,,2023,26419440.87,,Contracts,23
+PROTECTED TACTICAL SATCOM RAPID PROTOTYPE,PTS RP,589,,,Department of War,,,2024,19006806.52,,Contracts,8
+PROTECTED TACTICAL SATCOM RAPID PROTOTYPE,PTS RP,589,,,Department of War,,,2025,16169013.56,,Contracts,20
+RANDOLPH SHEPPARD ACT DINING FACILITY,RSA DINING FACILITY,ZRS,,,Department of War,,,2023,109176860,,Contracts,384
+RANDOLPH SHEPPARD ACT DINING FACILITY,RSA DINING FACILITY,ZRS,,,Department of War,,,2024,98322350.95,,Contracts,332
+RANDOLPH SHEPPARD ACT DINING FACILITY,RSA DINING FACILITY,ZRS,,,Department of War,,,2025,55262818.39,,Contracts,243
+RELIABILITY AND MAINTAINABILITY INFORMATION SYSTEM,REMIS,Y97,,,Department of War,,,2023,19388.96,,Contracts,6
+REMOTE INTERCEPTOR GUIDANCE 360,RIG-360,T15,,,Department of War,,,2025,53836508.8,,Contracts,3
+RIM 7-H-2 NATO SEA SPARROW MISSILE,RIM 7-H-2 NATO SEA SPARROW,CNA,,,Department of War,,,2024,0,,Contracts,1
+RIM-66 STANDARD MISSILE (MED),RIM-66 STANDARD MISSILE (MED),CMN,,,Department of War,,,2024,0,,Contracts,1
+ROLAND AIR DEFENSE MISSILE,ROLAND,143,,,Department of War,,,2024,10007770.34,,Contracts,2
+RQ-4A/B GLOBAL HAWK UNMANNED AIRCRAFT SYSTEM,RQ-4A/B GLOBAL HAWK,252,,,Department of War,,,2023,14204147.66,,Contracts,62
+RQ-4A/B GLOBAL HAWK UNMANNED AIRCRAFT SYSTEM,RQ-4A/B GLOBAL HAWK,252,,,Department of War,,,2024,-637002.67,,Contracts,34
+RQ-4A/B GLOBAL HAWK UNMANNED AIRCRAFT SYSTEM,RQ-4A/B GLOBAL HAWK,252,,,Department of War,,,2025,-753623.23,,Contracts,22
+RQ-7B SHADOW TACTICAL UNMANNED AIRCRAFT SYSTEM,RQ-7B SHADOW,451,,,Department of War,,,2023,100793367,,Contracts,58
+RQ-7B SHADOW TACTICAL UNMANNED AIRCRAFT SYSTEM,RQ-7B SHADOW,451,,,Department of War,,,2024,21958920.3,,Contracts,22
+RQ-7B SHADOW TACTICAL UNMANNED AIRCRAFT SYSTEM,RQ-7B SHADOW,451,,,Department of War,,,2025,-114187.04,,Contracts,9
+SAFEGUARD BALLISTIC MISSILE DEFENSE (BMD) SYSTEM,SAFEGUARD,336,,,Department of War,,,2025,36195636,,Contracts,2
+SDS (STRATEGIC DEFENSE SYSTEM),GPALS (SDS),100,,,Department of War,,,2024,3378958.86,,Contracts,17
+SDS (STRATEGIC DEFENSE SYSTEM),GPALS (SDS),100,,,Department of War,,,2023,2599959.68,,Contracts,7
+SDS (STRATEGIC DEFENSE SYSTEM),GPALS (SDS),100,,,Department of War,,,2025,2401447.74,,Contracts,3
+SEA LAUNCHED CRUISE MISSILE,TOMAHAWK,154,,,Department of War,,,2025,17188892.6,,Contracts,15
+SEA LAUNCHED CRUISE MISSILE,TOMAHAWK,154,,,Department of War,,,2024,0,,Contracts,1
+SEAWOLF CLASS NUCLEAR ATTACK SUBMARINE/COMBAT SYSTEM,SSN 21 / AN/BSY-2,258,,,Department of War,,,2024,2981435.5,,Contracts,1
+SEAWOLF CLASS NUCLEAR ATTACK SUBMARINE/COMBAT SYSTEM,SSN 21 / AN/BSY-2,258,,,Department of War,,,2025,0,,Contracts,1
+"SECOND GENERATION FLIR, HORIZONTAL TECHNOLOGY INTEGRATION",2GEN FLIR,A29,,,Department of War,,,2024,13198337,,Contracts,32
+"SECOND GENERATION FLIR, HORIZONTAL TECHNOLOGY INTEGRATION",2GEN FLIR,A29,,,Department of War,,,2025,2519635,,Contracts,13
+SENSOR FUSED WEAPON,SFW,275,,,Department of War,,,2025,407943.79,,Contracts,2
+SENTINEL A3,SENTINEL A3,B72,,,Department of War,,,2025,646484.64,,Contracts,3
+SHIP SELF DEFENSE SYSTEM (SSDS),SSDS,241,,,Department of War,,,2025,32146.93,,Contracts,1
+SHIP TO SHORE CONNECTOR AMPHIBIOUS CRAFT,SSC,303,,,Department of War,,,2025,225473771,,Contracts,17
+SHIP TO SHORE CONNECTOR AMPHIBIOUS CRAFT,SSC,303,,,Department of War,,,2024,3040826,,Contracts,10
+SHIP TO SHORE CONNECTOR AMPHIBIOUS CRAFT,SSC,303,,,Department of War,,,2023,1335623,,Contracts,4
+SHOP EQUIPMENT CONTACT MAINTENANCE - AVIATION,SECM-AVN,CSX,,,Department of War,,,2025,109913642.4,,Contracts,3
+SILENT NIGHT RADAR,SKR,748,,,Department of War,,,2025,161307512.7,,Contracts,30
+SILENT NIGHT RADAR,SKR,748,,,Department of War,,,2024,151618208.4,,Contracts,18
+SINGLE-CHANNEL GROUND AND AIRBORNE RADIO SYSTEM-VHF,SINCGARS,233,,,Department of War,,,2023,154764021.2,,Contracts,21
+SINGLE-CHANNEL GROUND AND AIRBORNE RADIO SYSTEM-VHF,SINCGARS,233,,,Department of War,,,2025,546442.41,,Contracts,8
+SINGLE-CHANNEL GROUND AND AIRBORNE RADIO SYSTEM-VHF,SINCGARS,233,,,Department of War,,,2024,-946396.96,,Contracts,17
+SM 2 (BLKS I-IV),SM 2 (BLKS I-IV),234,,,Department of War,,,2024,2498348,,Contracts,8
+SM 2 (BLKS I-IV),SM 2 (BLKS I-IV),234,,,Department of War,,,2023,0,,Contracts,5
+SM 2 (BLKS I-IV),SM 2 (BLKS I-IV),234,,,Department of War,,,2025,0,,Contracts,2
+SMALL DIAMETER BOMB INCREMENT I (SDB),SDB I,354,,,Department of War,,,2024,39795237.86,,Contracts,10
+SMALL DIAMETER BOMB INCREMENT I (SDB),SDB I,354,,,Department of War,,,2023,6216099,,Contracts,13
+SMALL DIAMETER BOMB INCREMENT I (SDB),SDB I,354,,,Department of War,,,2025,2491742.08,,Contracts,10
+SMALL DIAMETER BOMB INCREMENT II,SDB II,439,,,Department of War,,,2025,500103946.6,,Contracts,91
+SMALL DIAMETER BOMB INCREMENT II,SDB II,439,,,Department of War,,,2023,486289954.1,,Contracts,117
+SMALL DIAMETER BOMB INCREMENT II,SDB II,439,,,Department of War,,,2024,483099024.1,,Contracts,122
+SOF COMBAT DIVING PROPULSION,SOF CD PROPULSION,999,,,Department of War,,,2023,55495.6,,Contracts,1
+SOF COMBAT DIVING PROPULSION,SOF CD PROPULSION,999,,,Department of War,,,2024,-14008.34,,Contracts,1
+SOF COUNTER UNCREWED SYSTEMS ,CUS RF,717,,,Department of War,,,2024,2207182.16,,Contracts,3
+SOF COUNTER UNCREWED SYSTEMS ,CUS RF,717,,,Department of War,,,2025,0,,Contracts,1
+SPACE BASED INFRARED SYSTEM HIGH,SBIRS HIGH,210,,,Department of War,,,2024,416565204,,Contracts,326
+SPACE BASED INFRARED SYSTEM HIGH,SBIRS HIGH,210,,,Department of War,,,2025,396599257.3,,Contracts,702
+SPACE BASED INFRARED SYSTEM HIGH,SBIRS HIGH,210,,,Department of War,,,2023,354267454.6,,Contracts,108
+SPACE BASED SPACE SURVEILLANCE BLOCK 10,SBSS BLOCK 10,328,,,Department of War,,,2024,0,,Contracts,1
+Space Command and Control,SPACE C2,D37,,,Department of War,,,2025,3883918.29,,Contracts,5
+SPACE FENCE GROUND-BASED RADAR SYSTEM INCREMENT 1,SPACE FENCE INC 1,438,,,Department of War,,,2023,4438087,,Contracts,12
+SPACE FENCE GROUND-BASED RADAR SYSTEM INCREMENT 1,SPACE FENCE INC 1,438,,,Department of War,,,2024,3300000,,Contracts,4
+SPACE FENCE GROUND-BASED RADAR SYSTEM INCREMENT 1,SPACE FENCE INC 1,438,,,Department of War,,,2025,2418000,,Contracts,4
+SPACE RADAR (SR),SR,358,,,Department of War,,,2023,0,,Contracts,1
+Spares and Repair Parts,SPARES,S9E,,,Department of War,,,2024,358835.05,,Contracts,1
+"SPARROW AIM-7F, NAVY",SPARROW (AIM-7F) (N),164,,,Department of War,,,2024,0,,Contracts,1
+"SPARROW AIM-7F, NAVY",SPARROW (AIM-7F) (N),164,,,Department of War,,,2023,-21837.23,,Contracts,3
+SSBN 826 COLUMBIA CLASS SUBMARINE,SSBN 826,444,,,Department of War,,,2024,195770,,Contracts,1
+SSBN 826 COLUMBIA CLASS SUBMARINE,SSBN 826,444,,,Department of War,,,2025,28510,,Contracts,3
+SSGN OHIO CLASS CONVERSION,SSGN,337,,,Department of War,,,2025,1243848.7,,Contracts,3
+SSN 774 VIRGINIA CLASS SUBMARINE,SSN 774,516,,,Department of War,,,2025,13929996439,,Contracts,369
+SSN 774 VIRGINIA CLASS SUBMARINE,SSN 774,516,,,Department of War,,,2023,5517106264,,Contracts,433
+SSN 774 VIRGINIA CLASS SUBMARINE,SSN 774,516,,,Department of War,,,2024,3013733577,,Contracts,439
+STANDARD MISSILE-6,SM-6,391,,,Department of War,,,2025,655620884.5,,Contracts,37
+STANDARD MISSILE-6,SM-6,391,,,Department of War,,,2024,428578117,,Contracts,133
+STANDARD MISSILE-6,SM-6,391,,,Department of War,,,2023,400659809,,Contracts,31
+Standard Procurement System,SPS,JGL,,,Department of War,,,2023,11317.38,,Contracts,1
+STATUS OF FORCES AGREEMENT,STATUS OF FORCES AGREEMENT,ZSF,,,Department of War,,,2023,2793480833,,Contracts,1768
+STATUS OF FORCES AGREEMENT,STATUS OF FORCES AGREEMENT,ZSF,,,Department of War,,,2024,2678993135,,Contracts,1711
+STATUS OF FORCES AGREEMENT,STATUS OF FORCES AGREEMENT,ZSF,,,Department of War,,,2025,1220312328,,Contracts,1449
+STINGER MAN-PORTABLE SURFACE-TO-AIR MISSILE (FIM-92A/B),STINGER,150,,,Department of War,,,2025,449909459.2,,Contracts,14
+STINGER MAN-PORTABLE SURFACE-TO-AIR MISSILE (FIM-92A/B),STINGER,150,,,Department of War,,,2023,370806874.1,,Contracts,9
+STINGER MAN-PORTABLE SURFACE-TO-AIR MISSILE (FIM-92A/B),STINGER,150,,,Department of War,,,2024,161781582.1,,Contracts,16
+STRYKER FAMILY OF VEHICLES,STRYKER,299,,,Department of War,,,2023,98758166.27,,Contracts,31
+STRYKER FAMILY OF VEHICLES,STRYKER,299,,,Department of War,,,2024,80082374.64,,Contracts,42
+STRYKER FAMILY OF VEHICLES,STRYKER,299,,,Department of War,,,2025,50051069.33,,Contracts,55
+SUBMARINE LAUNCHED UNMANNED AERIAL SYSTEM PHASE 1,SLUAS PHASE 1,611,,,Department of War,,,2023,1413760,,Contracts,1
+SUBMARINE NUCLEAR - SSN,SUBMARINE NUCLEAR - SSN,SDN,,,Department of War,,,2023,0,,Contracts,2
+SUBMARINE NUCLEAR - SSN,SUBMARINE NUCLEAR - SSN,SDN,,,Department of War,,,2024,0,,Contracts,2
+SUBMARINE NUCLEAR - SSN,SUBMARINE NUCLEAR - SSN,SDN,,,Department of War,,,2025,0,,Contracts,2
+SUPER STALLION HELICOPTER,C/MH-53E,116,,,Department of War,,,2023,361552.75,,Contracts,4
+SUPER STALLION HELICOPTER,C/MH-53E,116,,,Department of War,,,2024,0,,Contracts,1
+SURFACE SHIP ANTISUBMARINE WARFARE SYSTEM (AN/SQQ-89),AN/SQQ-89,153,,,Department of War,,,2025,121780.24,,Contracts,2
+SURFACE-TO-AIR MISSILE PRODUCT IMPROVEMENT,PATRIOT P3I,564,,,Department of War,,,2024,1912546902,,Contracts,52
+SURFACE-TO-AIR MISSILE PRODUCT IMPROVEMENT,PATRIOT P3I,564,,,Department of War,,,2025,1684387844,,Contracts,74
+SURFACE-TO-AIR MISSILE PRODUCT IMPROVEMENT,PATRIOT P3I,564,,,Department of War,,,2023,1336030065,,Contracts,15
+SURTASS (T-AGOS)(SURVEILLANCE TOWED ARRAY SENSOR),SURTASS (T-AGOS),775,,,Department of War,,,2025,54020.46,,Contracts,1
+SURTASS (T-AGOS)(SURVEILLANCE TOWED ARRAY SENSOR),SURTASS (T-AGOS),775,,,Department of War,,,2023,-765660.97,,Contracts,3
+SURVIVABLE AIRBORNE OPERATIONS CENTER,SAOC,691,,,Department of War,,,2024,3787379.22,,Contracts,4
+SURVIVABLE AIRBORNE OPERATIONS CENTER,SAOC,691,,,Department of War,,,2023,3231720,,Contracts,2
+SURVIVABLE AIRBORNE OPERATIONS CENTER,SAOC,691,,,Department of War,,,2025,-241488,,Contracts,2
+SYNTHETIC TRAINING ENVIRONMENT - INFORMATION SYSTEM,STE-IS,1ZN,,,Department of War,,,2024,4472,,Contracts,1
+SYNTHETIC TRAINING ENVIRONMENT - INFORMATION SYSTEM,STE-IS,1ZN,,,Department of War,,,2025,4472,,Contracts,1
+T-38 AVIONICS,T-38 AVIONICS,G86,,,Department of War,,,2024,309765,,Contracts,3
+T-38 AVIONICS,T-38 AVIONICS,G86,,,Department of War,,,2025,305910.19,,Contracts,3
+T-38 STUDIES AND DEVELOPMENT,STUDIES AND DEVELOPMENT,H17,,,Department of War,,,2024,2417891.25,,Contracts,16
+T-38 STUDIES AND DEVELOPMENT,T-38 STUDIES AND DEVELOPMENT,H17,,,Department of War,,,2025,1931408.81,,Contracts,12
+T-38 STUDIES AND DEVELOPMENT,T-38 STUDIES AND DEVELOPMENT,H17,,,Department of War,,,2024,1879829.72,,Contracts,12
+T-6 AIRCREW TRAINING DEVICE MOD,T-6 ATD,B57,,,Department of War,,,2025,12893978,,Contracts,16
+T-7 ADVANCED PILOT TRAINING,T-7 APT,436,,,Department of War,,,2025,124174600.9,,Contracts,8
+T-7 ADVANCED PILOT TRAINING,T-7 APT,436,,,Department of War,,,2024,1378051.03,,Contracts,7
+T-7 ADVANCED PILOT TRAINING,T-7 APT,436,,,Department of War,,,2023,433547.51,,Contracts,6
+TACFIRE,TACFIRE,152,,,Department of War,,,2023,5978634.21,,Contracts,3
+TACFIRE,TACFIRE,152,,,Department of War,,,2024,2855629,,Contracts,5
+TACTICAL JAMMING SYSTEM,EA-6B,206,,,Department of War,,,2024,0,,Contracts,2
+TACTICAL MISSION COMMAND,TMC,724,,,Department of War,,,2025,0,,Contracts,1
+TACTICAL MISSION COMMAND,TMC,724,,,Department of War,,,2023,-6302.83,,Contracts,3
+TACTICAL MISSION NETWORK,LW MAN-TRANSP RADIO DIR FND SYS,GHR,,,Department of War,,,2024,0,,Contracts,2
+TACTICAL TOMAHAWK RGM-109E/UGM-109E MISSILE,TACTOM,289,,,Department of War,,,2023,531967141,,Contracts,260
+TACTICAL TOMAHAWK RGM-109E/UGM-109E MISSILE,TACTOM,289,,,Department of War,,,2024,351138479.9,,Contracts,215
+TACTICAL TOMAHAWK RGM-109E/UGM-109E MISSILE,TACTOM,289,,,Department of War,,,2025,280257959.6,,Contracts,154
+TACTICAL UNMANNED AERIAL VEHICLE,TACTICAL UAV,272,,,Department of War,,,2023,2713357.9,,Contracts,11
+TACTICAL UNMANNED AERIAL VEHICLE,TACTICAL UAV,272,,,Department of War,,,2024,0,,Contracts,4
+TACTICAL UNMANNED AERIAL VEHICLE,TACTICAL UAV,272,,,Department of War,,,2025,-2356367.31,,Contracts,6
+T-AKE LEWIS AND CLARK CLASS DRY CARGO/AMMUNITION SHIP,T-AKE,592,,,Department of War,,,2024,-11630,,Contracts,1
+T-AO 205 JOHN LEWIS CLASS FLEET REPLENISHMENT OILER,T-AO 205 CLASS,452,,,Department of War,,,2024,760804.72,,Contracts,11
+T-AO 205 JOHN LEWIS CLASS FLEET REPLENISHMENT OILER,T-AO 205 CLASS,452,,,Department of War,,,2023,45920.76,,Contracts,3
+T-AO 205 JOHN LEWIS CLASS FLEET REPLENISHMENT OILER,T-AO 205 CLASS,452,,,Department of War,,,2025,40212.7,,Contracts,3
+TARGET ENGAGEMENT,TE,709,,,Department of War,,,2023,62068,,Contracts,2
+TH-1H HUEY II MODERNIZATION,TH-1H HUEY II MOD,L24,,,Department of War,,,2025,4613786.27,,Contracts,4
+THEATER BATTLE MANAGEMENT CORE SYSTEM (TBMCS),TBMCS,M73,,,Department of War,,,2023,6323558,,Contracts,3
+THEATER BATTLE MANAGEMENT CORE SYSTEM (TBMCS),TBMCS,M73,,,Department of War,,,2024,5991857,,Contracts,5
+THEATER BATTLE MANAGEMENT CORE SYSTEM (TBMCS),TBMCS,M73,,,Department of War,,,2025,2567087.45,,Contracts,8
+THEATER DEPLOYABLE COMMUNICATIONS (TDC),TDC,N30,,,Department of War,,,2025,604604.45,,Contracts,3
+THEATER DEPLOYABLE COMMUNICATIONS (TDC),TDC,N30,,,Department of War,,,2024,0,,Contracts,1
+THREE-DIMENSIONAL EXPEDITIONARY LONG-RANGE RADAR RAPID PROTOTYPING,3DELRR MTA RP,393,,,Department of War,,,2024,157493889,,Contracts,23
+THREE-DIMENSIONAL EXPEDITIONARY LONG-RANGE RADAR RAPID PROTOTYPING,3DELRR MTA RP,393,,,Department of War,,,2025,126274340.2,,Contracts,22
+THREE-DIMENSIONAL EXPEDITIONARY LONG-RANGE RADAR RAPID PROTOTYPING,3DELRR MTA RP,393,,,Department of War,,,2023,94143959,,Contracts,11
+TICONDEROGA CLASS AEGIS GUIDED MISSILE CRUISER,CG-47,159,,,Department of War,,,2023,6375152.59,,Contracts,10
+"TOW (TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED) MISSILE",TOW,308,,,Department of War,,,2023,17108866.92,,Contracts,15
+"TOW (TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED) MISSILE",TOW,308,,,Department of War,,,2025,-4586,,Contracts,9
+"TOW (TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED) MISSILE",TOW,308,,,Department of War,,,2024,-163281.36,,Contracts,7
+TRANSPORTATION COORDINATORS (TC) AUTOMATED INFORMATION FOR MOVEMENTS SYSTEM (AIMS) II,TC-AIMS II,T48,,,Department of War,,,2024,7428.48,,Contracts,1
+TRANSPORTATION COORDINATORS (TC) AUTOMATED INFORMATION FOR MOVEMENTS SYSTEM (AIMS) II (LEGACY),TC-AIMS II (LEGACY),M12,,,Department of War,,,2025,282.1,,Contracts,2
+TRIDENT I SUBMARINE,TRIDENT SUB,155,,,Department of War,,,2025,8124278.36,,Contracts,10
+TRIDENT I SUBMARINE,TRIDENT SUB,155,,,Department of War,,,2024,4627958,,Contracts,3
+TRIDENT I SUBMARINE,TRIDENT SUB,155,,,Department of War,,,2023,692595,,Contracts,1
+TRIDENT II (D-5) SEA-LAUNCHED BALLISTIC MISSILE UGM 133A,TRIDENT II MISSILE,178,,,Department of War,,,2024,3619798193,,Contracts,1190
+TRIDENT II (D-5) SEA-LAUNCHED BALLISTIC MISSILE UGM 133A,TRIDENT II MISSILE,178,,,Department of War,,,2025,3211857353,,Contracts,951
+TRIDENT II (D-5) SEA-LAUNCHED BALLISTIC MISSILE UGM 133A,TRIDENT II MISSILE,178,,,Department of War,,,2023,2804538064,,Contracts,1128
+"TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED-2 MISSILE",TOW-2,236,,,Department of War,,,2025,6190998.65,,Contracts,10
+"TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED-2 MISSILE",TOW-2,236,,,Department of War,,,2023,5462849.33,,Contracts,10
+"TUBE-LAUNCHED, OPTICALLY-TRACKED, WIRE-GUIDED-2 MISSILE",TOW-2,236,,,Department of War,,,2024,4520923.52,,Contracts,16
+UGM-96 TRIDENT MISSILE,UGM-96 TRIDENT,CNJ,,,Department of War,,,2024,0,,Contracts,1
+UH-60M BLACK HAWK HELICOPTER,UH-60M BLACK HAWK,341,,,Department of War,,,2023,467288202.9,,Contracts,972
+UH-60M BLACK HAWK HELICOPTER,UH-60M BLACK HAWK,341,,,Department of War,,,2024,381860206.5,,Contracts,854
+UH-60M BLACK HAWK HELICOPTER,UH-60M BLACK HAWK,341,,,Department of War,,,2025,245407064.2,,Contracts,533
+UH-72 LIGHT UTILITY HELICOPTER,UH-72 LUH,182,,,Department of War,,,2023,350717079.3,,Contracts,69
+UH-72 LIGHT UTILITY HELICOPTER,UH-72 LUH,182,,,Department of War,,,2024,342500059.7,,Contracts,70
+UH-72 LIGHT UTILITY HELICOPTER,UH-72 LUH,182,,,Department of War,,,2025,296560463.9,,Contracts,38
+UNIT WATER TRAILER (INCREMENT II),WATER BISON,D05,,,Department of War,,,2025,7378217.74,,Contracts,3
+V-22 OSPREY JOINT SERVICES ADVANCED VERTICAL LIFT AIRCRAFT,V-22,212,,,Department of War,,,2025,932734637,,Contracts,404
+V-22 OSPREY JOINT SERVICES ADVANCED VERTICAL LIFT AIRCRAFT,V-22,212,,,Department of War,,,2023,926186691.9,,Contracts,499
+V-22 OSPREY JOINT SERVICES ADVANCED VERTICAL LIFT AIRCRAFT,V-22,212,,,Department of War,,,2024,523038253,,Contracts,428
+V22 VERTICAL LIFT AIRCRAFT,V22 VERTICAL LIFT AIRCRAFT,AVQ,,,Department of War,,,2023,0,,Contracts,1
+V22 VERTICAL LIFT AIRCRAFT,V22 VERTICAL LIFT AIRCRAFT,AVQ,,,Department of War,,,2025,0,,Contracts,1
+VC-25B,VC-25B,425,,,Department of War,,,2024,1848853,,Contracts,2
+VC-25B,VC-25B,425,,,Department of War,,,2025,1750000,,Contracts,3
+VEHICLE BLAST OVERPRESSURE TOOL,VBOT,A10,,,Department of War,,,2025,222682.56,,Contracts,2
+VEHICLE BLAST OVERPRESSURE TOOL,VBOT,A10,,,Department of War,,,2024,13093.35,,Contracts,2
+VEHICLE PROTECTION SYSTEMS (VPS) SIGNATURE MANAGEMENT PAINT (SIGMAN),VPS SIGMAN,H71,,,Department of War,,,2024,39744,,Contracts,1
+Vertical Skills Engineer Construction Kits,VSECK,CHA,,,Department of War,,,2025,2879996.59,,Contracts,2
+Vertical Skills Engineer Construction Kits,VSECK,CHA,,,Department of War,,,2024,1544884.98,,Contracts,2
+VH-92A PRESIDENTIAL HELICOPTER,VH-92A,429,,,Department of War,,,2025,108154688,,Contracts,78
+VH-92A PRESIDENTIAL HELICOPTER,VH-92A,429,,,Department of War,,,2024,106139907.4,,Contracts,85
+VH-92A PRESIDENTIAL HELICOPTER,VH-92A,429,,,Department of War,,,2023,93347153.34,,Contracts,69
+VIRTUAL CONTRACTING ENTERPRISE,VCE,Z72,,,Department of War,,,2023,116953.36,,Contracts,3
+WARFIGHTER INFORMATION NETWORK - TACTICAL (WIN -T),WIN -T,296,,,Department of War,,,2025,181711,,Contracts,1
+WARFIGHTER INFORMATION NETWORK - TACTICAL (WIN -T),WIN -T,296,,,Department of War,,,2023,-114173,,Contracts,3
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 1,WIN-T INC 1,346,,,Department of War,,,2023,2930534.58,,Contracts,8
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 1,WIN-T INC 1,346,,,Department of War,,,2024,1254844.65,,Contracts,5
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 1,WIN-T INC 1,346,,,Department of War,,,2025,-8885.25,,Contracts,6
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 2,WIN-T INC 2,349,,,Department of War,,,2024,15896501.7,,Contracts,30
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 2,WIN-T INC 2,349,,,Department of War,,,2025,12394932.72,,Contracts,19
+WARFIGHTER INFORMATION NETWORK-TACTICAL INCREMENT 2,WIN-T INC 2,349,,,Department of War,,,2023,-3881327.49,,Contracts,27
+WIDE AREA SURVEILLANCE,WAS,519,,,Department of War,,,2023,93170,,Contracts,3
+WIDE AREA SURVEILLANCE,WAS,519,,,Department of War,,,2024,0,,Contracts,6
+WIDE AREA SURVEILLANCE,WAS,519,,,Department of War,,,2025,0,,Contracts,1
+WIDEBAND COMMUNICATIONS SERVICES,WCS,552,,,Department of War,,,2024,7438685.13,,Contracts,10
+WIDEBAND COMMUNICATIONS SERVICES,WCS,552,,,Department of War,,,2023,7180525.98,,Contracts,7
+WIDEBAND COMMUNICATIONS SERVICES,WCS,552,,,Department of War,,,2025,0,,Contracts,10
+WIDEBAND GLOBAL SATCOM,WGS,326,,,Department of War,,,2024,455296564,,Contracts,15
+WIDEBAND GLOBAL SATCOM,WGS,326,,,Department of War,,,2023,67930023.21,,Contracts,18
+WIDEBAND GLOBAL SATCOM,WGS,326,,,Department of War,,,2025,22700812.53,,Contracts,7
+XM1166 40MM LOW VELOCITY HIGH EXPLOSIVE AIRBURST (HEAB),40MM HEAB,A60,,,Department of War,,,2023,3834937.72,,Contracts,2
+XM1166 40MM LOW VELOCITY HIGH EXPLOSIVE AIRBURST (HEAB),40MM HEAB,A60,,,Department of War,,,2025,247801.5,,Contracts,2
+XM1166 40MM LOW VELOCITY HIGH EXPLOSIVE AIRBURST (HEAB),40MM HEAB,A60,,,Department of War,,,2024,0,,Contracts,2
+XM30 COMBAT VEHICLE MTA RP,XM30 MTA RP,850,,,Department of War,,,2025,427422580.6,,Contracts,20
+XM30 COMBAT VEHICLE MTA RP,XM30 MTA RP,850,,,Department of War,,,2024,332979592.4,,Contracts,5
+XM30 COMBAT VEHICLE MTA RP,OMFV,850,,,Department of War,,,2023,201951348,,Contracts,6
+XM30 COMBAT VEHICLE MTA RP,XM30,850,,,Department of War,,,2024,35258630,,Contracts,4

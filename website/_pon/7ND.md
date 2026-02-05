@@ -11,10 +11,19 @@ gwo_id: 7ND
 permalink: /pon/7ND
 title: Strengthen Operational Readiness of Defense Units
 where_used:
-- name: Cable Security Fleet Program
+- agency: Department of Transportation
+  expenditure_amount: 4166666.6
+  name: Cable Security Fleet Program
   permalink: /program/20.824
-- name: Tanker Security Program
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 22500000.0
+  name: Tanker Security Program
   permalink: /program/20.825
-- name: Training and Support – Combating Weapons of Mass Destruction
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Training and Support – Combating Weapons of Mass Destruction
   permalink: /program/12.501
+  program_type: assistance_listing
 ---
