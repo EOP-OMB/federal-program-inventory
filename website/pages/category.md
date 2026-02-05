@@ -24,6 +24,8 @@ categories:
   title: H Employment and Labor
 - permalink: /category/i-energy
   title: I Energy
+- permalink: /category/interest-on-the-public-debt
+  title: Interest on the Public Debt
 - permalink: /category/j-environmental-quality
   title: J Environmental Quality
 - permalink: /category/k-food-and-nutrition
@@ -42,6 +44,8 @@ categories:
   title: S Science and Technology
 - permalink: /category/t-transportation
   title: T Transportation
+- permalink: /category/tax-expenditures
+  title: Tax Expenditures
 categories_hierarchy:
 - permalink: /category/2025-debt-service
   subcategories:
@@ -121,6 +125,11 @@ categories_hierarchy:
   - permalink: /category/i-energy/energy-supply
     title: Energy Supply
   title: I Energy
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/j-environmental-quality
   subcategories:
   - permalink: /category/j-environmental-quality/pollution-control-and-abatement
@@ -198,14 +207,51 @@ categories_hierarchy:
   - permalink: /category/t-transportation/water-transportation
     title: Water Transportation
   title: T Transportation
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 categories_json: '[{"title":"N Income Security and Social Services","total_num_programs":113,"total_obs":3173324428901.38,"permalink":"/category/n-income-security-and-social-services"},{"title":"L
-  Health","total_num_programs":409,"total_obs":1844420415123.05,"permalink":"/category/l-health"},{"title":"2025
-  Debt Service","total_num_programs":5,"total_obs":1133053352812.0,"permalink":"/category/2025-debt-service"},{"title":"G
+  Health","total_num_programs":409,"total_obs":1844420415123.05,"permalink":"/category/l-health"},{"title":"Tax
+  Expenditures","total_num_programs":174,"total_obs":1821004000000.0,"permalink":"/category/tax-expenditures"},{"title":"2025
+  Debt Service","total_num_programs":5,"total_obs":1133053352812.0,"permalink":"/category/2025-debt-service"},{"title":"Interest
+  on the Public Debt","total_num_programs":1,"total_obs":1133040000000.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"G
   Education","total_num_programs":157,"total_obs":290118923921.65,"permalink":"/category/g-education"},{"title":"B
   Business and Commerce","total_num_programs":135,"total_obs":208404953969.0,"permalink":"/category/b-business-and-commerce"},{"title":"M
   Housing","total_num_programs":111,"total_obs":150160962016.0,"permalink":"/category/m-housing"},{"title":"K
   Food and Nutrition","total_num_programs":59,"total_obs":145012466733.0,"permalink":"/category/k-food-and-nutrition"},{"title":"T
-  Transportation","total_num_programs":79,"total_obs":114630936292.72,"permalink":"/category/t-transportation"},{"title":"C
+  Transportation","total_num_programs":80,"total_obs":114630936292.72,"permalink":"/category/t-transportation"},{"title":"C
   Community Development","total_num_programs":91,"total_obs":110963329989.0,"permalink":"/category/c-community-development"},{"title":"I
   Energy","total_num_programs":72,"total_obs":73322189345.72,"permalink":"/category/i-energy"},{"title":"F
   Disaster Prevention and Relief","total_num_programs":99,"total_obs":46130193407.14,"permalink":"/category/f-disaster-prevention-and-relief"},{"title":"2025
@@ -230,6 +276,6 @@ obligations_by_type:
   total_obs: 1821004000000.0
 permalink: /category.html
 title: Categories
-total_num_programs: 2650
+total_num_programs: 3076
 total_obs: 7670751465294.949
 ---

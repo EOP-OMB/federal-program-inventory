@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - B Business and Commerce - Economic Development
+- Tax Expenditures - International Affairs
 cfda: TC.006
 fiscal_year: '2024'
 grants_url: null

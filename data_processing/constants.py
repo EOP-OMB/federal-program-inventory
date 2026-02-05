@@ -2,7 +2,13 @@
 Store various constants used across the data processing process.
 """
 
-FISCAL_YEAR = "2024"
+LAST_COMPLETED_FISCAL_YEAR = "2024"
+CURRENT_FISCAL_YEAR = "2025"
+SITE_UPDATE_DATE = "January 28, 2026"
+SAMGOV_ASSISTANCE_LISTINGS_DATE = "June 6, 2025"
+USASPENDING_TRANSACTION_DATE = "June 6, 2025"
+TREASURYGOV_TAX_EXPEND_DATE = "December 30, 2024"
+PAYMENTACCURACY_FY_DATE = "2024"
 
 AGENCY_DISPLAY_NAMES = {
     "IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE":
@@ -356,5 +362,5 @@ PROGRAM_TYPE_MAPPING = {
     "assistance_listing": "Federal Financial Assistance",
     "interest": "Interest on the Public Debt",
     "government_service": "Government Service",
-    "acquisition_contract": "Acquisition Contract"
+    "contracts": "Contracts"
 }

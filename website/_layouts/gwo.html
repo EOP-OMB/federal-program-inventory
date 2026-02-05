@@ -3,76 +3,112 @@ layout: default
 footer_include: _footer-gwo-pon.html
 ---
 
-<section class="bg-secondary-lighter padding-x-2 padding-y-3">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12">
-        <h1 class="usa-display usa-heading text-white font-heading-2xl text-ink text-light">
-          {{ page.title }}
-        </h1>
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="grid-col-9 margin-bottom-2">
+      <!-- Header -->
+      <div
+        class="display-flex flex-align-center gap-1 font-sans-sm text-ink margin-bottom-4 margin-top-4"
+      >
+        <svg
+          class="usa-icon margin-right-1"
+          aria-hidden="true"
+          focusable="false"
+          role="img"
+        >
+          <use href="/assets/img/sprite.svg#flag"></use>
+        </svg>
+        <span>Government-wide Objective</span>
+      </div>
+      <!-- Page Title -->
+      {% include components/_page-title.html display_aka=false %}
+
+      <div class="grid-row grid-gap margin-bottom-2">
+        <p class="margin-top-0 margin-bottom-0">
+          {{page.definition | default: 'N/A'}}
+        </p>
+      </div>
+
+      {% assign gwo_categories = page.category | split: ',' %} {% assign
+      gwo_focus_areas = page.focus_area | split: ',' %} {% include
+      components/_subcategory-tags.html categories=gwo_categories
+      sub_categories=gwo_focus_areas %}
+
+      {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
+      {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
+      {% assign current_fy_outlays_title = "FY " | append: current_fiscal_year | append: " Outlays" %}
+      {% assign fy_date_text = "FY " | append: fiscal_year %}
+
+      <!-- Tab Navigation -->
+      {% assign program_tabs = "Programs,Goals" | split: "," %} {% include
+      components/_tab-navigation.html tabs=program_tabs %}
+
+      <!-- Programs Panel-->
+      <div
+        id="programs-panel"
+        role="tabpanel"
+        aria-labelledby="programs-tab"
+        class="tab-panel"
+      >
+        {% include scripts/_data-utils.html programs=page.where_used %}
+
+        <div class="grid-row grid-gap margin-y-2">
+          <div class="grid-col-8 grid-row">
+            {% assign program_count = page.where_used.size | default: 0 %}
+            {% include components/_info-card.html title="Programs"
+            display_number=program_count grid="grid-col" margin="margin-right-1" %} 
+            <div data-dollar-amount="{{ total_expenditure }}" class="info-card-total-expenditure" style="display: none;">{{ total_expenditure }}</div>
+            {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
+            {% include components/_info-card.html title=current_fy_outlays_title
+            display_number=total_expenditure_formatted text="Expended so far this year" grid="grid-col" %}
+            {% include components/_info-card.html title="Agencies"
+            display_number=total_agencies grid="grid-col" margin="margin-left-1" %}
+          </div>
+          <div class="grid-col">
+            {% include components/_insight-section.html program_number=program_count
+            expenditure_total=total_expenditure_formatted 
+            largest_program_title=largest_program.name 
+            largest_program_link=largest_program.permalink
+            largest_program_expenditure=largest_program_expenditure 
+            smallest_program_title=smallest_program.name 
+            smallest_program_link=smallest_program.permalink
+            smallest_program_expenditure=smallest_program_expenditure %}
+          </div>
+          <div class="grid-col-12 padding-y-4 border-bottom-2px border-base" style="border-bottom: 1px dotted #000;">
+            <div id="objectiveChartContainer" class="width-full">
+              <div id="objectiveChart" class="width-full"></div>
+            </div>
+          </div>
+          <div class="grid-col-12 padding-y-2">
+            <h2 class="text-bold font-sans-lg margin-bottom-4">Related Programs</h2>
+            <div class="width-full">
+              {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
+              {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | append: " Expenditure" | split: "," %}
+              {% assign table_widths = "40%,30%,30%" | split: "," %}
+              {% assign table_alignments = "left,left,right" | split: "," %}
+              {% assign table_types = "text,text,currency" | split: "," %}
+              {% assign table_bold = "true,false,true" | split: "," %}
+              {% include components/_sortable-table.html data=page.where_used columns=table_columns labels=table_labels widths=table_widths alignments=table_alignments types=table_types bold=table_bold show_total=true total_value=total_expenditure clickable=true permalink_field="permalink" %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goals Panel-->
+      <div
+        id="goals-panel"
+        role="tabpanel"
+        aria-labelledby="goals-tab"
+        class="tab-panel display-none"
+      >
+        <span> Outcomes content coming soon. </span>
       </div>
     </div>
   </div>
-</section>
-<div class="grid-container">
-  <div class="grid-row grid-gap">
-    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
-      <ol class="usa-breadcrumb__list">
-        <li class="usa-breadcrumb__list-item">
-          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
-        </li>
-        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-          <span>{{ page.title }}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
-
-  <div class="grid-row grid-gap">
-    <div class="grid-col-9 margin-bottom-5">
-      <h1 class="font-sans-xl text-normal text-primary margin-top-0">
-        GWO Information
-      </h1>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Title</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.title | default: 'N/A'}}</p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Description</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.definition | default: 'N/A'}}</p>
-        </div>
-      </div>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Focus Area</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            <a href="#" class="usa-link program-filter text-bold" data-filter-type="sub-category"
-              data-subcategory-title="{{page.focus_area}}"
-              data-category-title="{{page.category}}">{{ page.focus_area }}</a>
-          </p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Category</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
-              data-category-title="{{page.category}}">{{ page.category }}</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-12">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Where Used</h2>
-          {% for program in page.where_used %}
-            <p>
-                <a href="{{ program.permalink }}">{{ program.name }}</a>
-            </p>
-          {% endfor %}
-        </div>
-      </div>
-  </div>
 </div>
-</div>
+
+{% include scripts/_tab-navigation.html %}
+{% include scripts/_dollar-standardization.html %}
+{% include scripts/_table-utils.html %}
+{% include scripts/_chart-utils.html %}
+{% include scripts/_gwo-charts.html %}

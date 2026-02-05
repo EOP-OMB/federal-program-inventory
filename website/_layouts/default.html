@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include _head.html %}
+{% include layout/_head.html %}
 
 <body>
 
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-  {% include _banner.html %}
+  {% include layout/_banner.html %}
 
-  {% include _header.html %}
+  {% include layout/_header.html %}
 
   {{ content}}
 
-  {% include _footer.html %}
+  {% include footers/_footer.html %}
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="{{ '/assets/js/script.js' | relative_url }}"></script>

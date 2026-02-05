@@ -10,10 +10,19 @@ gwo_id: 5IA
 permalink: /pon/5IA
 title: Improve Regional Security Stability and Cooperation
 where_used:
-- name: Global Threat Reduction
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Global Threat Reduction
   permalink: /program/19.033
-- name: Middle East Regional Cooperation Program
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Middle East Regional Cooperation Program
   permalink: /program/19.502
-- name: Trans-Sahara Counterterrorism Partnership (TSCTP)
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Trans-Sahara Counterterrorism Partnership (TSCTP)
   permalink: /program/19.222
+  program_type: assistance_listing
 ---

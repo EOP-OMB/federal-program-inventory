@@ -1,0 +1,17 @@
+<!-- Program Page Title -->
+<header class="margin-bottom-3">
+  <h1 class="font-sans-xl text-normal text-primary margin-top-0 margin-bottom-1">
+    {{ include.title | default: page.title }}
+  </h1>
+  {% if include.display_aka %}
+  <p class="font-sans-md text-italic text-secondary margin-top-0 margin-bottom-1">
+    Known as {{ include.popular_name | default: page.popular_name | default: 'N/A'}}
+  </p>
+  {% endif %}
+  <p class="font-sans-2xs margin-top-0 text-base margin-bottom-1">
+    <svg class="usa-icon text-base" aria-hidden="true" focusable="false" role="img">
+      <use href="/assets/img/sprite.svg#schedule"></use>
+    </svg>
+    As of {{ include.updated_date | default: site.data.constants_global_dates.SITE_UPDATE_DATE }}
+  </p>
+</header>

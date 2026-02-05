@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - N Income Security and Social Services - Personal Financial Health
+- Tax Expenditures - Veterans Benefits and Services
 cfda: TC.168
 fiscal_year: '2024'
 grants_url: null

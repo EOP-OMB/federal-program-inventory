@@ -3,76 +3,106 @@ layout: default
 footer_include: _footer-gwo-pon.html
 ---
 
-<section class="bg-secondary-lighter padding-x-2 padding-y-3">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12">
-        <h1 class="usa-display usa-heading text-white font-heading-2xl text-ink text-light">
-          {{ page.title }}
-        </h1>
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <div class="grid-col-9 margin-bottom-2">
+      <div class="font-sans-sm text-ink margin-bottom-4 margin-top-4">
+        Program Outcome
+      </div>
+
+      <!-- Page Title -->
+      {% include components/_page-title.html display_aka=false %}
+
+      <!-- Show description with bullet points -->
+      {% assign bullet_points = page.definition | split: ' -' %}
+      <div class="grid-row margin-bottom-2">
+        <p class="margin-top-0 margin-bottom-1">
+          {{ bullet_points[0] | strip }}
+        </p>
+        {% if bullet_points.size > 1 %}
+        <ul class="margin-top-0">
+          {% for point in bullet_points offset: 1%} {% assign bullet_text =
+          point | strip | remove_last: ";" %} {% if bullet_text != blank %}
+          <li>{{ bullet_text }}</li>
+          {% endif %} {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+      {% include components/_subcategory-tags.html categories=page.category
+      sub_categories=page.focus_area %}
+
+      <div class="grid-row margin-bottom-2 border-top-2px border-base-light">
+        {% include scripts/_data-utils.html programs=page.where_used %}
+        
+        <!-- Data Display-->
+        <div class="grid-row grid-gap margin-y-2">
+          <div class="grid-col-8 grid-row">
+            {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
+            {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
+            {% assign current_fy_outlays_title = "FY " | append: current_fiscal_year | append: " Outlays" %}
+            {% assign fy_date_text = "FY " | append: fiscal_year %}
+            
+            {% assign program_count = page.where_used.size | default: 0 %}
+            {% include components/_info-card.html title="Programs"
+            display_number=program_count
+            grid="grid-col" margin="margin-right-1" show_info=true 
+            help_id="programs" help_title="What are Programs?" 
+            help_text="Programs are discrete activities or services funded by the federal government to achieve specific policy objectives. Each program has its own budget allocation and serves particular beneficiaries or purposes as defined by legislation or agency mission." %} 
+            
+            <div data-dollar-amount="{{ total_expenditure }}" class="info-card-total-expenditure" style="display: none;">{{ total_expenditure }}</div>
+            {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
+
+            {% include components/_info-card.html title=current_fy_outlays_title
+       display_number=total_expenditure_formatted text="Expended so far this year" grid="grid-col" show_info=true 
+            help_id="fy-2025-outlays" help_title="What is an Outlay?" 
+            help_text="An outlay is money actually paid out by the government to fulfill its obligations, such as funding programs, paying salaries, or servicing debt. It represents when funds are spent, not just when they are authorized or promised. This figure represents all the money paid out by the treasury as reported by USA Spending." %}
+            
+            {% include components/_info-card.html title="Agencies"
+            display_number=total_agencies
+            grid="grid-col" margin="margin-left-1" show_info=true 
+            help_id="agencies" help_title="What are Agencies?" 
+            help_text="Agencies are federal departments, bureaus, or independent organizations responsible for implementing and managing government programs. Each agency has specific missions and authorities granted by Congress to carry out federal policies and services." %}
+          </div>
+          <div class="grid-col">
+            {% include components/_insight-section.html program_number=program_count
+            expenditure_total=total_expenditure_formatted 
+            largest_program_title=largest_program.name 
+            largest_program_link=largest_program.permalink
+            largest_program_expenditure=largest_program_expenditure 
+            smallest_program_title=smallest_program.name 
+            smallest_program_link=smallest_program.permalink
+            smallest_program_expenditure=smallest_program_expenditure %}
+          </div>
+          <div class="grid-col-12 padding-y-4">
+            <div id="outcomeChartContainer" class="width-full">
+              <div id="outcomeChart" class="width-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Programs Table -->
+        <div class="grid-col-12 padding-y-2 border-top-2px border-base" style="border-top: 1px dotted #000;">
+          <h2 class="text-bold font-sans-lg margin-y-3">Related Programs</h2>
+          <div class="width-full">
+            {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
+            {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | append: " Outlay" | split: "," %}
+            {% assign table_widths = "40%,30%,30%" | split: "," %}
+            {% assign table_alignments = "left,left,right" | split: "," %}
+            {% assign table_types = "text,text,currency" | split: "," %}
+            {% assign table_bold = "true,false,true" | split: "," %}
+            {% include components/_sortable-table.html data=page.where_used columns=table_columns labels=table_labels widths=table_widths alignments=table_alignments types=table_types bold=table_bold show_total=true total_value=total_expenditure clickable=true permalink_field="permalink" %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>
-<div class="grid-container">
-  <div class="grid-row grid-gap">
-    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
-      <ol class="usa-breadcrumb__list">
-        <li class="usa-breadcrumb__list-item">
-          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
-        </li>
-        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-          <span>{{ page.title }}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
-
-  <div class="grid-row grid-gap">
-    <div class="grid-col-9 margin-bottom-5">
-      <h1 class="font-sans-xl text-normal text-primary margin-top-0">
-        PON Information
-      </h1>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Title</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.title | default: 'N/A'}}</p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Description</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.definition | default: 'N/A'}}</p>
-        </div>
-      </div>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Focus Area</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            <a href="#" class="usa-link program-filter text-bold" data-filter-type="sub-category"
-              data-subcategory-title="{{page.focus_area}}"
-              data-category-title="{{page.category}}">{{ page.focus_area }}</a>
-          </p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Category</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
-              data-category-title="{{page.category}}">{{ page.category }}</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-12">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Where Used</h2>
-          {% for program in page.where_used %}
-            <p>
-                <a href="{{ program.permalink }}">{{ program.name }}</a>
-            </p>
-          {% endfor %}
-        </div>
-      </div>
-  </div>
 </div>
-</div>
+
+<!-- Help Slider -->
+{% include components/_help-slider.html %}
+
+{% include scripts/_dollar-standardization.html %}
+{% include scripts/_table-utils.html %}
+{% include scripts/_chart-utils.html %}
+{% include scripts/_pon-charts.html %}

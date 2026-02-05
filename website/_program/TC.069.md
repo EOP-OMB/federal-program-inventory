@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - M Housing - Housing and Homelessness
+- Tax Expenditures - Commerce and Housing
 cfda: TC.069
 fiscal_year: '2024'
 grants_url: null

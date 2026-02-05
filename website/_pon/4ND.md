@@ -10,8 +10,14 @@ gwo_id: 4ND
 permalink: /pon/4ND
 title: Strengthen Nuclear Security Infrastructure
 where_used:
-- name: Multilateral and Nuclear Affairs
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Multilateral and Nuclear Affairs
   permalink: /program/19.808
-- name: Nonproliferation and Arms Control
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 1648153.26
+  name: Nonproliferation and Arms Control
   permalink: /program/81.505
+  program_type: assistance_listing
 ---

@@ -3,443 +3,325 @@ layout: default
 footer_include: _footer-program.html
 ---
 
-<section class="bg-secondary-lighter padding-x-2 padding-y-3">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12">
-        <h1 class="usa-display usa-heading text-white font-heading-2xl text-ink text-light">
-          {{ page.title }}
-        </h1>
-      </div>
-    </div>
-  </div>
-</section>
 <div class="grid-container">
-  <div class="grid-row grid-gap">
-    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs">
-      <ol class="usa-breadcrumb__list">
-        <li class="usa-breadcrumb__list-item">
-          <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
-        </li>
-        <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-          <span>{{ page.title }}</span>
-        </li>
-      </ol>
-    </nav>
-  </div>
 
   <div class="grid-row grid-gap">
-    <div class="grid-col-9 margin-bottom-5">
-      <h1 class="font-sans-xl text-normal text-primary margin-top-0">
-        Program Information
-      </h1>
+    <!-- Main Column -->
+    <div class="grid-col-9 margin-bottom-5 border-top border-base-lightest">
+      <!-- Breadcrumb Header -->
+      {% include components/_breadcrumb-header.html %}
+      <!-- Page Title -->
+      {% include components/_page-title.html display_aka=true %}
 
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Popular name</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.popular_name | default: 'N/A'}}</p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program Number</h2>
-          <p class="margin-top-0 margin-bottom-0">{{page.cfda}}</p>
-        </div>
-      </div>
+      <!-- Tab Navigation -->
+      {% assign program_tabs = "Overview,Spending,Results,Policies,Oversight" | split: "," %}
+      {% include components/_tab-navigation.html tabs=program_tabs %}
 
-      <div class="grid-row grid-gap margin-bottom-2">
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Agency</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            <a href="#" class="usa-link program-filter" data-filter-type="agency"
-              data-agency-title="{{page.agency}}">{{page.agency}}</a>
-          </p>
-        </div>
-        <div class="grid-col-6">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Sub-agency</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            {% if page.sub-agency == 'N/A' or page.sub-agency == '' or page.sub-agency == nil %}
-            N/A
-            {% else %}
-            <a href="#" class="usa-link program-filter" data-filter-type="sub-agency"
-              data-agency-title="{{page.agency}}" data-subagency-title="{{page.sub-agency}}">{{page.sub-agency}}</a>
-            {% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-row grid-gap padding-bottom-205">
-        <div class="grid-col-12">
-          <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program description</h2>
-          <p class="margin-top-0 margin-bottom-0">
-            {{page.objective}}
-          </p>
-        </div>
-      </div>
-
-      {% if page.gwo != nil %}
+      <!-- Tab Panels -->
+      
+      <!-- Overview Panel -->
+      <div id="overview-panel" role="tabpanel" aria-labelledby="overview-tab" class="tab-panel">
         <div class="grid-row grid-gap padding-bottom-205">
-          <div class="grid-col-12">
-            <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program objective</h2>
-            <p class="margin-top-0 margin-bottom-0">
-              <a href="{{page.gwo.permalink}}">{{page.gwo.gwo}}</a>
+          <!-- Overview Header -->
+          <div class="grid-col-10 margin-bottom-2">
+            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Overview</h2>
+            <p class="font-sans-sm margin-top-0 margin-bottom-3">
+              {{page.objective}}
             </p>
+            
+            <!-- Sub-categories Tags -->
+            {% assign parsed_categories = page.categories | parse_categories %}
+            {% include components/_subcategory-tags.html categories=parsed_categories.main sub_categories=parsed_categories.sub %}
           </div>
-        </div>
-      {% endif %}
+          <!-- Overview Content -->
+          <div class="grid-col-12 grid-row grid-gap margin-bottom-4">
+            <!-- Side bar -->
+            <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;">
+              
+              {% if page.gwo != nil %}
+              <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
+                <h2 class="font-sans-md text-bold">Purpose</h2>
+                {% include components/_view-results.html href="#" %}
+              </div>
+              <h4 class="font-sans-xs text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
+                {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=32 icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
+              {% endif %}
 
-      {% if page.pons != nil and page.pons.size > 0 %}
-        <div class="grid-row grid-gap padding-bottom-205">
-          <div class="grid-col-12">
-            <h2 class="font-sans-md text-bold margin-top-0 margin-bottom-1">Program outcomes</h2>
-            <ul>
-              {% for pon in page.pons %}
-                <li class="padding-bottom-2"><a href="{{pon.permalink}}">{{pon.pon}}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      {% endif %}
-
-      <div class="border-1px border-ink radius-md padding-x-2 padding-bottom-2 margin-bottom-5">
-        <!-- Header Section -->
-        <h2 class="text-primary font-sans-lg text-bold margin-bottom-1">Program expenditures, by FY (2023 - 2025)</h2>
-
-        <!-- Description -->
-        <p class="font-sans-md margin-bottom-4 margin-top-0">
-          This chart shows obligations for the program by fiscal year. All data for this chart was provided by the
-          administering agency and sourced from SAM.gov, USASpending.gov, and Treasury.gov.
-          <br />
-          <br />
-          For more information on each of these data sources, please see the
-          <a href="/about/about-the-data" class="usa-link">About the data page</a>.
-        </p>
-
-        <!-- View Controls -->
-        <div id="viewControls" class="display-flex flex-align-center display-none">
-          <span class="font-sans-lg margin-right-2">View:</span>
-          <div class="usa-radio display-flex flex-align-center margin-right-2">
-            <input class="usa-radio__input" id="obligations" type="radio" name="view-options" checked />
-            <label class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0" for="obligations">Program
-              obligations</label>
-          </div>
-
-          <div class="usa-radio display-flex flex-align-center">
-            <input class="usa-radio__input" id="outlays" type="radio" name="view-options" />
-            <label class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0" for="outlays">Program
-              outlays</label>
-          </div>
-        </div>
-
-        <svg id="obligationsChart" class="width-full display-none" height="500"
-          aria-label="Chart displaying data based on selection" role="img"></svg>
-
-        <svg id="outlaysChart" class="width-full display-none" height="500"
-          aria-label="Chart displaying data based on selection" role="img"></svg>
-
-        <svg id="otherProgramChart" class="width-full display-none" height="500"
-          aria-label="Chart displaying data based on selection" role="img"></svg>
-
-        <!-- Download Button -->
-        <button id="downloadData" class="usa-button usa-button--outline border-2px hover:border-2px">
-          <span>Download .csv file</span>
-          <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
-            <use xlink:href="/assets/img/sprite.svg#file_download"></use>
-          </svg>
-        </button>
-      </div>
-
-      {% if page.program_type != "interest" %}
-      <div class="text-primary font-sans-lg text-bold line-height-5 padding-bottom-205">Additional program information
-      </div>
-
-      <!-- Program Results Start -->
-      {% if page.results and page.results.size > 0 %}
-      <div class="usa-accordion" data-allow-multiple>
-        <h4 class="usa-accordion__heading">
-          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
-            aria-controls="program-results">
-            Program Results
-          </button>
-        </h4>
-        <div id="program-results" class="usa-accordion__content">
-          <ol class="usa-process-list no-numbers">
-            {% assign sorted_results = page.results | sort: 'year' %}
-            {% for result in sorted_results %}
-            <li class="usa-process-list__item padding-bottom-4">
-              <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
-                {{ result.year }}
-              </h4>
-              <p class="font-sans-md margin-top-1">
-                {{ result.description | markdownify }}
-              </p>
-            </li>
-            {% endfor %}
-          </ol>
-        </div>
-      </div>
-      {% endif %}
-      <!-- Program Results End -->
-
-      <!-- Single Audit Start -->
-      {% if page.is_subpart_f %}
-      <div class="usa-accordion">
-        <h4 class="usa-accordion__heading">
-          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
-            aria-controls="program-single-audit">
-            Single Audit
-          </button>
-        </h4>
-        <div id="program-single-audit" class="usa-accordion__content">
-          <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
-            Single Audit Applies (2 CFR Part 200 Subpart F):
-            {% if page.is_subpart_f == 1 %}
-            <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
-              focusable="false" role="img">
-              <use href="/assets/img/sprite.svg#check_circle"></use>
-            </svg>
-            {% else %}
-            <svg class="usa-icon text-error margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
-              focusable="false" role="img">
-              <use href="/assets/img/sprite.svg#cancel"></use>
-            </svg>
+              {% if page.pons != nil and page.pons.size > 0 %}
+              <h4 class="font-sans-xs text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
+              <ul class="usa-list usa-list--unstyled ">
+                {% for pon in page.pons %}
+                  <li>
+                    {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=12 icon="radio_button_unchecked" %}
+                  </li>
+                {% endfor %}
+              </ul>
             {% endif %}
-          </p>
 
-          <p class="font-family-sans line-height-body-4">
-            For additional information on single audit requirements for this program, review the current
-            <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
-              class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
-          </p>
-        </div>
-      </div>
-      {% endif %}
-      <!-- Single Audit End -->
+            </div>
+            <!-- Data Display -->
+            <div class="grid-col-8 border-top-2px border-base" style="border-top: 1px dotted #000;">
+              <!-- Header -->
+              <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
+                <h2 class="font-sans-md text-bold">Expenditures</h2>
+                {% include components/_view-results.html href="#" %}
+              </div>
+              <!-- Graph Start -->
+              <div class="grid grid-row bg-base-lightest gap-2 radius-md padding-x-2 padding-bottom-4 margin-bottom-6">
 
-      <!-- Improper Payment Information-->
-      <div class="usa-accordion">
-        <h4 class="usa-accordion__heading">
-          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
-            aria-controls="improper-payment">
-            Improper payment information
-          </button>
-        </h4>
-        <div id="improper-payment" class="usa-accordion__content">
-          {% if page.improper_payments == null %}
-          <div class="usa-alert usa-alert--success">
-            <div class="usa-alert__body">
-              <p class="usa-alert__text font-family-sans">
-                This program is not associated with any Improper Payment Program Activities that were at risk of
-                significant improper payments.
-              </p>
+                <!-- Summary Card -->
+                <div style="width: 232px;" class="margin-top-4 grid-col-5">
+                  <div class="bg-white padding-4 radius-sm border-1px border-base-lighter" style="height: 304px; display: flex; flex-direction: column;">
+                    <!-- Header with indicator -->
+                    <div class="display-flex flex-align-center gap-2 margin-bottom-2">
+                      <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #FF8060; margin-right: 4px;"></div>
+                      <p class="font-sans-xs text-base-darker margin-0" id="expenditure-year">Loading...</p>
+                    </div>
+                    
+                    <!-- Main value -->
+                    <p class="font-sans-xl text-bold text-ink margin-bottom-1 margin-top-0" id="expenditure-amount">Loading...</p>
+                    <p class="text-base-darker margin-top-0" style="font-size: 12px;" id="expenditure-change">Loading...</p>
+                    
+                    <!-- Improper Payment Section -->
+                    <div class="bg-white margin-top-4 padding-2 padding-y-2 radius-md border-1px border-base-lighter margin-top-auto">
+                      <p class="font-sans-sm text-base-dark margin-bottom-1 margin-top-0">Improper Payment Rate</p>
+                      <p class="font-sans-xl text-bold text-ink margin-top-0 margin-bottom-0">10%</p>
+                      
+                      <!-- Progress bar -->
+                      <div class="bg-base-lightest radius-pill margin-top-2" style="width: 100%; height: 8px;">
+                        <div class="bg-base-darkest radius-pill" style="height: 8px; width: 10%; border-radius: 4px 0 0 4px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chart Container -->
+                <div id="outlaysChartContainer" style="width: 248px;" class="grid-col-7 display-flex flex-column flex-align-center flex-justify-center">
+                  <div id="outlaysChart" style="height: 200px;" class="margin-top-4"></div>
+                    <!-- Chart Header -->
+                      <div class="padding-top-4 margin-bottom-2">
+                        <h3 class="font-sans-xs text-base-darker">Expenditure by Fiscal Year</h3>
+                      </div>
+                </div>
+
+              </div>
+              <!-- Graph End -->
             </div>
           </div>
-          {% else %}
-          <p>Improper payments are payments that not made in the correct amount (i.e., overpayments or underpayments), not made to the correct recipient, or not made with strict adherence to agency policies and procedures. Improper payments are not a measure of fraud.
-            <br/>
-            <br/>
-            Agencies may report improper payment information for program activities that differ from the programs listed on the Federal Program Inventory. OMB is working with agencies to align this reporting. The table below shows all Improper Payment Program Activities associated with this program, as well as other programs related to each Improper Payment Program Activity.</p>
-          <span>
-            View more information 
-          </span>
-          <a href="https://www.paymentaccuracy.gov/" class="usa-link usa-link--external" target="_blank"
-            rel="noopener noreferrer">
-            PaymentAccuracy.gov</a>
-            <table class="usa-table usa-table--borderless .usa-table--white-header" id="improper-payments-table">
-              <thead>
-                <tr>
-                  <th class= "text-top" scope="col">Improper Payment Program Activity for FY 2024</th>
-                  <th class= "text-top" scope="col">Related Programs</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Data will be inserted here by JavaScript -->
-              </tbody>
-            </table>
-            <p>
-              <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
-              Shows Improper Payment Programs that are considered High Priority Programs
-            </p>
-            {% endif %}
         </div>
       </div>
-      <!-- Improper Payment Information end-->
+      <!-- End Overview Panel -->
+      
+      <!-- Spending Panel -->
+      <div id="spending-panel" role="tabpanel" aria-labelledby="spending-tab" class="tab-panel display-none">
+        <div class="grid-row grid-gap padding-bottom-205">
+          <div class="grid-col-12">
+            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-3">Program Spending</h2>
 
-      <!-- Rules and regulations Start-->
-      {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
-      <div class="usa-accordion">
-        <h4 class="usa-accordion__heading">
-          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
-            aria-controls="program-rules-regs">
-            Associated rules and regulations
-          </button>
-        </h4>
-        <div id="program-rules-regs" class="usa-accordion__content">
-          {{ page.rules_regulations }}
-        </div>
-      </div>
-      {% endif %}
-      <!-- Rules and regulations End-->
-
-      <!-- Authorizations Start -->
-      {% if page.authorizations and page.authorizations.size > 0 %}
-      <div class="usa-accordion" data-allow-multiple>
-        <h4 class="usa-accordion__heading">
-          <button type="button" class="usa-accordion__button bg-secondary-lighter" aria-expanded="false"
-            aria-controls="program-authorizations">
-            Authorizing statutes
-          </button>
-        </h4>
-        <div id="program-authorizations" class="usa-accordion__content">
-          <ol class="usa-list">
-            {% for auth in page.authorizations %}
-            <li class="padding-bottom-2">
-              <span class="font-sans-md">
-                {% if auth.url %}
-                <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
-                  auth.text }}</a>
-                {% else %}
-                {{ auth.text }}
-                {% endif %}
+            <!-- Legacy Notification Bar -->
+            <div id="improper-payment">
+              {% if page.improper_payments == null %}
+              <div class="usa-alert usa-alert--success">
+                <div class="usa-alert__body">
+                  <p class="usa-alert__text font-family-sans">
+                    This program is not associated with any Improper Payment Program Activities that were at risk of
+                    significant improper payments.
+                  </p>
+                </div>
+              </div>
+              {% else %}
+              <p>Improper payments are payments that not made in the correct amount (i.e., overpayments or underpayments), not made to the correct recipient, or not made with strict adherence to agency policies and procedures. Improper payments are not a measure of fraud.
+                <br/>
+                <br/>
+                Agencies may report improper payment information for program activities that differ from the programs listed on the Federal Program Inventory. OMB is working with agencies to align this reporting. The table below shows all Improper Payment Program Activities associated with this program, as well as other programs related to each Improper Payment Program Activity.</p>
+              <span>
+                View more information 
               </span>
-            </li>
-            {% endfor %}
-          </ol>
+              <a href="https://www.paymentaccuracy.gov/" class="usa-link usa-link--external" target="_blank"
+                rel="noopener noreferrer">
+                PaymentAccuracy.gov</a>
+                <table class="usa-table usa-table--borderless .usa-table--white-header" id="improper-payments-table">
+                  <thead>
+                    <tr>
+                      <th class= "text-top" scope="col">Improper Payment Program Activity for FY 2024</th>
+                      <th class= "text-top" scope="col">Related Programs</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Data will be inserted here by JavaScript -->
+                  </tbody>
+                </table>
+                <p>
+                  <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
+                  Shows Improper Payment Programs that are considered High Priority Programs
+                </p>
+                {% endif %}
+            </div>
+
+            <!-- Data Display-->
+            <div class="display-flex margin-bottom-4" style="gap: 1rem;">
+              <!-- Obligation History Chart -->
+              <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md">
+                <h3 id="obligationChartTitle" class="font-sans-md margin-bottom-2">Obligation History</h3>
+                <div id="obligationChartContainer" class="display-flex flex-column flex-align-center flex-justify-center">
+                  <div id="obligationChart" class="width-full"></div>
+                </div>
+              </div>
+              <!-- Detailed Obligations Table -->
+              <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md padding-left-2">
+                <h3 id="obligationTableTitle" class="font-sans-md margin-bottom-3">Detailed Obligations</h3>
+                <table class="usa-table usa-table--unstyled width-full" id="obligation-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-left text-base padding-2 font-sans-sm" style="width: 50%;">FISCAL YEAR</th>
+                      <th scope="col" class="text-right text-base padding-2 font-sans-sm" style="width: 50%;">AMOUNT</th>
+                    </tr>
+                  </thead>
+                  <tbody id="obligation-table-body">
+                    <!-- Data will be inserted here by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {% endif %}
-      <!-- Authorizations End -->
-      {% endif %}
+      
+      <!-- Results Panel -->
+      <div id="results-panel" role="tabpanel" aria-labelledby="results-tab" class="tab-panel display-none">
+        <div class="grid-row grid-gap padding-bottom-205">
+          <div class="grid-col-12">
+            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Program Results</h2>
+            <!-- Program Results Start -->
+            {% if page.results and page.results.size > 0 %}
+            <div id="program-results">
+                <ol class="usa-process-list no-numbers">
+                  {% assign sorted_results = page.results | sort: 'year' %}
+                  {% for result in sorted_results %}
+                  <li class="usa-process-list__item padding-bottom-4">
+                    <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
+                      {{ result.year }}
+                    </h4>
+                    <p class="font-sans-md margin-top-1">
+                      {{ result.description | markdownify }}
+                    </p>
+                  </li>
+                  {% endfor %}
+                </ol>
+            </div>
+            {% endif %}
+            <!-- Program Results End -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Policies Panel -->
+      <div id="policies-panel" role="tabpanel" aria-labelledby="policies-tab" class="tab-panel display-none">
+        <div class="grid-row grid-gap padding-bottom-205">
+          <div class="grid-col-12">
+            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Policies & Regulations</h2>
+            <p>Policy information and regulatory details will be displayed here.</p>
+            {% if page.authorizations and page.authorizations.size > 0 %}
+            <div id="program-authorizations">
+                <ol class="usa-list">
+                  {% for auth in page.authorizations %}
+                  <li class="padding-bottom-2">
+                    <span class="font-sans-md">
+                      {% if auth.url %}
+                      <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
+                        auth.text }}</a>
+                      {% else %}
+                      {{ auth.text }}
+                      {% endif %}
+                    </span>
+                  </li>
+                  {% endfor %}
+                </ol>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Oversight Panel -->
+      <div id="oversight-panel" role="tabpanel" aria-labelledby="oversight-tab" class="tab-panel display-none">
+        <div class="grid-row grid-gap padding-bottom-205">
+          <div class="grid-col-12">
+            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Oversight & Audits</h2>
+            <p>Oversight activities and compliance information will be displayed here.</p>
+            <div id="program-single-audit">
+              <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
+                Single Audit Applies (2 CFR Part 200 Subpart F):
+                {% if page.is_subpart_f == 1 %}
+                <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
+                  focusable="false" role="img">
+                  <use href="/assets/img/sprite.svg#check_circle"></use>
+                </svg>
+                {% else %}
+                <svg class="usa-icon text-error margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
+                  focusable="false" role="img">
+                  <use href="/assets/img/sprite.svg#cancel"></use>
+                </svg>
+                {% endif %}
+              </p>
+              <p class="font-family-sans line-height-body-4">
+                For additional information on single audit requirements for this program, review the current
+                <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
+                  class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
+              </p>
+            </div>
+            {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
+              <div id="program-rules-regs" >
+                {{ page.rules_regulations }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
     </div>
 
 
     <!--- Program Column Display Start --->
-    <div class="grid-col-3">
-      <!-- Program Details Section -->
-      <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-top-0">Program details</h2>
-
+    <div class="grid-col-3 border-left border-base-lightest border-top padding-left-3">
       <!-- Categories Section -->
-      {% if page.categories and page.categories.size > 0 %}
-      <div class="margin-bottom-4">
-        <h3 class="font-sans-md text-bold margin-bottom-1">Categories & sub-categories</h3>
+      {% assign main_categories = page.categories | group_by_exp: "item", "item | split: ' - ' | first" | map: "name" %}
+      {% include components/_list-section.html 
+         title="Categories" 
+         title_weight="text-bold"
+         items=main_categories 
+         icon="assessment" 
+         margin_class="margin-bottom-2" 
+         icon_class="margin-right-1" %}
 
-        {% assign last_category = "" %}
-        {% assign sorted_categories = page.categories | sort %}
-
-        {% for category in sorted_categories %}
-        {% assign main_category = category | split: " - " | first %}
-        {% assign sub_category = category | remove_first: main_category | remove_first: " - " %}
-
-        {% if main_category != last_category %}
-        {% unless forloop.first %}
-        </ul>
-      </div>
-      {% endunless %}
-
-      <div>
-        <a href="#" class="usa-link program-filter text-bold" data-filter-type="category"
-          data-category-title="{{main_category}}">{{ main_category }}</a>
-        <ul class="usa-list padding-left-3 margin-y-0 text-primary">
-          {% endif %}
-
-          {% if sub_category != "" %}
-          <li>
-            <a href="#" class="usa-link program-filter" data-filter-type="sub-category"
-              data-category-title="{{main_category}}" data-subcategory-title="{{sub_category}}">{{ sub_category
-              }}</a>
-          </li>
-          {% endif %}
-
-          {% assign last_category = main_category %}
-
-          {% if forloop.last %}
-        </ul>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <!-- Program Types Section -->
-    {% if page.assistance_types and page.assistance_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Program types</h3>
-      <ul class="usa-list text-primary padding-left-3 margin-y-0">
-        {% for type in page.assistance_types %}
-        <li>
-          <a href="#" class="usa-link program-filter" data-filter-type="assistance" data-assistance-title="{{type}}">{{
-            type }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    <!-- Eligible Applicants Section -->
-    {% if page.applicant_types and page.applicant_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible applicants</h3>
-      <ul class="usa-list text-primary padding-left-3 margin-y-0">
-        {% for type in page.applicant_types %}
-        <li>
-          <a href="#" class="usa-link program-filter" data-filter-type="applicant" data-applicant-title="{{type}}">{{
-            type }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+      <!-- Program Types Section -->
+    {% include components/_list-section.html 
+       title="Program Type" 
+       data_key="assistance_types" 
+       icon="settings" 
+       icon_style="min-width: 1rem; width: 1rem; height: 1rem;" 
+       additional_class="margin-top-0" %}
 
     <!-- Eligible Beneficiaries Section -->
-    {% if page.beneficiary_types and page.beneficiary_types.size > 0 %}
-    <div class="margin-bottom-4">
-      <h3 class="font-sans-md text-bold margin-bottom-1">Eligible beneficiaries</h3>
-      <ul class="usa-list padding-left-3 margin-y-0">
-        {% for type in page.beneficiary_types %}
-        <li>
-          <div>{{ type }}</div>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+    {% include components/_list-section.html 
+       title="Beneficiaries" 
+       data_key="beneficiary_types" 
+       icon="person" 
+       icon_style="min-width: 1rem; width: 1rem; height: 1rem;" 
+       span_class="flex-fill" %}
 
-    {% if page.program_type == "assistance_listing" %}
-    <!-- Additional Resources Section -->
-    <h2 class="text-primary font-sans-lg text-bold line-height-4 margin-bottom-1 margin-top-0">Additional resources</h2>
-
-    <div class="display-flex flex-column font-sans-md">
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="{{ page.usaspending_url }}" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">awards and recipients at
-          USASpending.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
-
-      <div class="margin-bottom-2">
-        <span">View this program's</span>
-          <a href="{{ page.sam_url }}" class="usa-link usa-link--external" target="_blank"
-            rel="noopener noreferrer">assistance listing at SAM.gov</a>
-          <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
-
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="{{ page.grants_url }}" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">available grant opportunities at
-          Grants.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
-
-      <div class="margin-bottom-2">
-        <span>View this program's</span>
-        <a href="https://fac.gov/" class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">single
-          audits at FAC.gov</a>
-        <i class="fa-solid fa-external-link margin-left-1"></i>
-      </div>
-    </div>
-    <!-- Additional Resources Section End-->
-    {% endif %}
+        <!-- Eligible Applicants Section -->
+    {% include components/_list-section.html 
+       title="Applicants" 
+       title_weight="text-bold" 
+       data_key="applicant_types" 
+       icon="grid_view" 
+       icon_style="min-width: 1rem; width: 1rem; height: 1rem;" %}
   </div>
 </div>
 <!--- Program Column Display End --->
 </div>
+
+<!-- Include modular JavaScript functionality -->
+{% include scripts/_chart-utils.html %}
+{% include scripts/_tab-navigation.html %}
+{% include scripts/_program-charts.html %}

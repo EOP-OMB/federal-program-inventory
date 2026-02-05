@@ -11,10 +11,19 @@ gwo_id: 7IA
 permalink: /pon/7IA
 title: Support International Mobility of Faculty
 where_used:
-- name: Academic Exchange Programs - Scholars
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
-- name: Overseas Programs - Faculty Research Abroad
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs - Faculty Research Abroad
   permalink: /program/84.019
-- name: Overseas Programs Special Bilateral Projects
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs Special Bilateral Projects
   permalink: /program/84.018
+  program_type: assistance_listing
 ---
