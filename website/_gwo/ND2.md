@@ -7,31 +7,64 @@ gwo_id: ND2
 permalink: /gwo/ND2
 title: Advance Defense Research
 where_used:
-- name: Advanced Manufacturing Technology - Office of the Secretary of Defense (OSD),
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Advanced Manufacturing Technology - Office of the Secretary of Defense (OSD),
     Manufacturing Technology (ManTech) Program
   permalink: /program/12.333
-- name: Basic Scientific Research
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Basic Scientific Research
   permalink: /program/12.431
-- name: Centers for Homeland Security
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Centers for Homeland Security
   permalink: /program/97.061
-- name: Defense Nuclear Nonproliferation Research
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Defense Nuclear Nonproliferation Research
   permalink: /program/81.113
-- name: Homeland Security Research, Development, Testing, Evaluation and Demonstration
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Homeland Security Research, Development, Testing, Evaluation and Demonstration
     of Technologies Related to Countering Weapons of Mass Destruction
   permalink: /program/97.077
-- name: National Laboratory Jobs Apprenticeship for Complete and Committed Employment
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: National Laboratory Jobs Apprenticeship for Complete and Committed Employment
     for Specialized Skills
   permalink: /program/81.251
-- name: National Nuclear Security Administration (NNSA) Minority Serving Institutions
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: National Nuclear Security Administration (NNSA) Minority Serving Institutions
     (MSI) Program
   permalink: /program/81.123
-- name: 'Navy  Command, Control, Communications, Computers, Intelligence, Surveillance,
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: 'Navy  Command, Control, Communications, Computers, Intelligence, Surveillance,
     and Reconnaissance '
   permalink: /program/12.335
-- name: Predictive Science Academic Alliance Program
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Predictive Science Academic Alliance Program
   permalink: /program/81.124
-- name: Scientific Research - Combating Weapons of Mass Destruction
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Scientific Research - Combating Weapons of Mass Destruction
   permalink: /program/12.351
-- name: Stewardship Science Grant Program
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 1522.35
+  name: Stewardship Science Grant Program
   permalink: /program/81.112
+  program_type: assistance_listing
 ---

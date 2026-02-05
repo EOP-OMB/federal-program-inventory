@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - 2025 Debt Service - Fees and Receipts
+- Interest on the Public Debt - Interest on the Public Debt
 cfda: IN.001
 fiscal_year: '2024'
 grants_url: null

@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - F Disaster Prevention and Relief - Disaster Readiness, Response, and Relief
+- Tax Expenditures - Community and Regional Development
 cfda: TC.102
 fiscal_year: '2024'
 grants_url: null

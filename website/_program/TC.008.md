@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - B Business and Commerce - Business Development
+- Tax Expenditures - General Science, Space, and Technology
 cfda: TC.008
 fiscal_year: '2024'
 grants_url: null

@@ -1,20 +1,35 @@
 # Federal Program Inventory Data Extract, Transform, and Load Process
-
 ## About the process
 The data extract, transform, and load process contained in this directory pulls data from SAM.gov, USASpending.gov, and other sources for use in the Federal Program Inventory (FPI). The FPI is designed to make information about Federal programs, including program objectives, results, and financial information, easier to access.  For details about individual fields in FPI, see the [data dictionary](DATA_DICTIONARY.md).
 
 ## Setting up your environment
+Note: Ensure computer has enough ram to support running docker for fpi. Under 20 GB may not be sufficient enough ram.
+Note: Some versions of Python such as 3.14 may not have compatible wheels. In this case, try using other versions such as 3.13 or 3.11.
+
 Before getting started, you need to make sure that your system is set up properly. The data extract functionality is written in Python3 and has several dependencies. To set up your system:
 1. Navigate to the root directory of this repository (one level above this directory), and establish a virtual environment using `python3 -m venv venv` (note that different environments may use different aliases for Python3; e.g., `python` versus `python3`)
 2. Activate the virtual environment using `source venv/bin/activate`
+Note: For PC Users, run `venv\Scripts\Activate`
+Note: You may face common issues wth PowerShell blocking script execution by default. If this occurs, try runnning `Get-ExecutedPolicy` and if text returns 'Restricted', then set Execution Policy for Current User using `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`. This will allow scripts only for your account and not system-wide. With this fix, try activating the virtual environment again.
 3. Install dependencies using `pip install -r requirements.txt`
+Note: In the requirements.txt file, you may need to comment out this line: tabula.py
 
 ## Running the extract
 > [!NOTE]
 > This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh the data, it is likely sufficient to use these pre-existing files and skip the extract steps below.
 
+### Global fiscal year and date variables
+
+The pipeline now eliminates hardcoded fiscal year and date values. All global fiscal year and date variables are defined centrally in `constants.py`. To update these values on the website, use the `export_global_dates_to_yml()` function in `load.py`. Running this function will automatically generate or update the `constants_global_dates.yml` file in the `website/_data` directory. The website then uses this YAML file to provide current fiscal year and date information to the website including the Program, PON, GWO, and About the Data pages. This ensures all date-related variables are managed and updated consistently across the project.
+
+To update the fiscal year and date values:
+1. Edit the fiscal year or date variables in `constants.py` as needed.
+2. In `load.py`, uncomment the call to `export_global_dates_to_yml()` and run the script, or call the function directly. This will export the updated variables to `constants_global_dates.yml`.
+
 ### SAM.gov
-Assistance Listing data can be updated at any time by agencies. However, updates occur most commonly in the fall, following OMB's data call to agencies. This update should be performed at least once per year. To extract the data from SAM.gov, ensure your system is set up and, with your virtual environment enabled, and return to this directory. You should uncomment the appropriate functions in [extract.py](extract.py) and then execute the script. Relevant functions include:
+Assistance Listing data can be updated at any time by agencies. However, updates occur most commonly in the fall, following OMB's data call to agencies. This update should be performed at least once per year. To extract the data from SAM.gov, ensure your system is set up and, with your virtual environment enabled, and return to this directory. You should uncomment the appropriate functions in [extract.py](extract.py) and then execute the script. 
+Note: In extract.py, you may need to update file paths to ensure that files are saved to your local directories i.e. paths for DISK_DIRECTORY, EXTRACTED_DIRECTORY. 
+Relevant functions include:
 1. `extract_assistance_listing()`: downloads all Assistance Listings from SAM.gov using the API that powers their frontend (this approach is necessary, as their publicly documented APIs and data extracts do not provide usable data), and saves the result to [extracted/assistance_listings.json](extracted/assistance_listings.json)
 2. `extract_dictionary()`: downloads the various enum lookup values that are referenced in the extracted Assistance Listing data, and saves the result to [extracted/dictionary.json](extracted/dictionary.json); this should generally be run whenever `extract_assistance_listing()` is run
 3. `extract_organizations()`: downloads the organization lookup values that are referenced in the extracted Assistance Listing data, and saves the result to [extracted/organizations.json](extracted/organizations.json); this should generally be run whenever `extract_assistance_listing()` is run 

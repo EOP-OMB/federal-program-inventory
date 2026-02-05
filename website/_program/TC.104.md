@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - G Education - Post–Secondary Education
+- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.104
 fiscal_year: '2024'
 grants_url: null

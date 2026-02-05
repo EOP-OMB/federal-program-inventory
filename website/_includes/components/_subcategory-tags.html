@@ -1,0 +1,17 @@
+<!-- Sub-category Tags Component -->
+<div class="display-flex flex-wrap margin-bottom-2">
+  {% for category in include.categories %}
+    {% if category and category != "" %}
+      <span class="display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill font-sans-2xs text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1">
+        {{ category }}
+      </span>
+    {% endif %}
+  {% endfor %}
+  {% for sub_category in include.sub_categories %}
+    {% if sub_category and sub_category != "" %}
+      <span class="display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill font-sans-2xs text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1">
+        {{ sub_category }}
+      </span>
+    {% endif %}
+  {% endfor %}
+</div>

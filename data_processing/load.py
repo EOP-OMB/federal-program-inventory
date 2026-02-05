@@ -1,5 +1,6 @@
 """Creates markdown files for static site generation."""
 
+from pathlib import Path
 import sqlite3
 import os
 import shutil
@@ -7,6 +8,8 @@ import json
 import yaml
 import csv
 import constants
+import yaml as yml
+from pathlib import Path
 from typing import List, Dict, Any
 
 # Constants
@@ -15,7 +18,9 @@ DB_FILE_PATH = os.path.join("transformed", "transformed_data.db")
 MARKDOWN_DIR = os.path.join(CURRENT_DIR, "..", "website", "_program")
 full_path = os.path.join(CURRENT_DIR, DB_FILE_PATH)
 FISCAL_YEARS = ['2023', '2024', '2025']
-
+WEBSITE_DATA_DIR = os.path.join(CURRENT_DIR, "..", "website", "_data")
+INFLATION_POPULATION_FILE_PATH = os.path.join(CURRENT_DIR, "extracted", "inflation_and_population_growth.csv")
+GLOBAL_DATA_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "global_data.yml")
 
 def recreate_directory(directory_path):
     if os.path.isdir(directory_path):
@@ -740,8 +745,15 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
     for gwo in gwos:
         cursor.execute("""
-            SELECT id, name FROM program
-            JOIN program_to_gwo ON program.id = program_to_gwo.program_id
+            SELECT 
+                p.id, 
+                p.name,
+                a1.agency_name,
+                p.program_type
+            FROM program p
+            JOIN program_to_gwo ON p.id = program_to_gwo.program_id
+            LEFT JOIN agency a ON p.agency_id = a.id
+            LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
             WHERE gwo_id = ?
             ORDER BY name
         """, (gwo["id"],))
@@ -750,6 +762,27 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
         url_friendly_id = gwo['id'].replace('#','_')
 
+        # Enhance where_used with agency and expenditure data
+        where_used_enhanced = []
+        for p in where_used:
+            program_data = {
+                'permalink': f"/program/{p['id']}",
+                'name': p['name'],
+                'agency': p['agency_name'] or 'Unspecified',
+                'program_type': p['program_type'] or ''
+            }
+            
+            # Get actual expenditure amount from outlays data (money leaving Treasury)
+            expenditure_amount = 0.0
+            outlays = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
+            # Get the most recent fiscal year data (even if it's 0.0)
+            if outlays:
+                # expenditure_amount = outlays[-1].get('outlay', 0.0)
+                expenditure_amount = next((o.get('outlay', 0.0) for o in outlays if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+            
+            program_data['expenditure_amount'] = expenditure_amount
+            where_used_enhanced.append(program_data)
+
         gwo_data = {
             'permalink': f"/gwo/{url_friendly_id}",
             'title': gwo['gwo'],
@@ -757,10 +790,7 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
             'focus_area': gwo["focus_area"],
             'category': gwo['category'],
             'definition': gwo['gwo_definition'],
-            'where_used': [{
-                'permalink': f"/program/{p['id']}",
-                'name': p['name']
-            } for p in where_used]
+            'where_used': where_used_enhanced
         }
 
         file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
@@ -792,15 +822,43 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
     for pon in pons:
         cursor.execute("""
-            SELECT id, name FROM program
-            JOIN program_to_pon ON program.id = program_to_pon.program_id
-            WHERE pon_id = ?
-            ORDER BY name
+            SELECT 
+                p.id,
+                p.name,
+                a1.agency_name,
+                p.program_type
+            FROM program p
+            JOIN program_to_pon ON p.id = program_to_pon.program_id
+            LEFT JOIN agency a ON p.agency_id = a.id
+            LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
+            WHERE program_to_pon.pon_id = ?
+            ORDER BY p.name
         """, (pon["id"],))
 
         where_used = cursor.fetchall()
 
         url_friendly_id = pon['id'].replace('#','_')
+
+        # Enhance where_used with agency and expenditure data
+        where_used_enhanced = []
+        for p in where_used:
+            program_data = {
+                'permalink': f"/program/{p['id']}",
+                'name': p['name'],
+                'agency': p['agency_name'] or 'Unspecified',
+                'program_type': p['program_type'] or ''
+            }
+
+            # Get actual expenditure amount from outlays data (money leaving Treasury)
+            expenditure_amount = 0.0
+            outlays = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
+            # Get the most recent fiscal year data (even if it's 0.0)
+            if outlays:
+                # expenditure_amount = outlays[-1].get('outlay', 0.0)
+                expenditure_amount = next((o.get('outlay', 0.0) for o in outlays if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+
+            program_data['expenditure_amount'] = expenditure_amount
+            where_used_enhanced.append(program_data)
 
         pon_data = {
             'permalink': f"/pon/{url_friendly_id}",
@@ -809,10 +867,7 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
             'focus_area': pon["focus_area"],
             'category': pon['category'],
             'definition': pon['pon_definition'],
-            'where_used': [{
-                'permalink': f"/program/{p['id']}",
-                'name': p['name']
-            } for p in where_used]
+            'where_used': where_used_enhanced
         }
 
         file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
@@ -893,7 +948,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             obligations = get_assistance_program_obligations(cursor, program['id'], fiscal_years)
             other_program_spending = None
             outlays = get_outlays_data(cursor, program['id'], fiscal_years)
-        elif program_type == 'acquisition_contract' or program_type == 'government_service':
+        elif program_type == 'contracts' or program_type == 'government_service':
             obligations = None
             other_program_spending = None
             outlays = get_outlays_data(cursor, program['id'], fiscal_years)
@@ -1274,7 +1329,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'title': program['name'],
             'layout': 'program',
             'permalink': f"/program/{program['id']}.html",
-            'fiscal_year': constants.FISCAL_YEAR,
+            'fiscal_year': constants.LAST_COMPLETED_FISCAL_YEAR,
             'cfda': program['id'],
             'objective': program['objective'],
             'sam_url': program['sam_url'],
@@ -1303,7 +1358,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             listing['obligations'] = json.dumps(program['obligations'], separators=(',', ':'))
             listing['outlays'] = json.dumps(program['outlays'], separators=(',', ':'))
             listing['other_program_spending'] = None
-        elif program['program_type'] == 'acquisition_contract' or \
+        elif program['program_type'] == 'contracts' or \
             program['program_type'] == 'government_service':
                 listing['obligations'] = None
                 listing['outlays'] = json.dumps(program['outlays'], separators=(',', ':'))
@@ -1383,7 +1438,7 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
                 if obl['x'] == fiscal_year), 
                 0
             )
-        elif program["program_type"] == "acquisition_contract" or \
+        elif program["program_type"] == "contracts" or \
             program["program_type"] == "government_service":
                 current_year_obligation = next(
                     (obl['obligation']
@@ -1599,6 +1654,49 @@ def generate_program_csv(output_path: str, programs_data: List[Dict[str, Any]], 
 
     print(f"Generated CSV file with {len(programs_data)} programs")
 
+def export_inflation_population_from_csv():
+    inflation_population_data = []
+
+    #csv into memory
+    with open(INFLATION_POPULATION_FILE_PATH, newline="", encoding='utf-8') as file:
+        csvreader = csv.DictReader(file)
+        for row in csvreader:
+            inflation_population_data.append({
+                "Year": int(row["Year"]),
+                "InflationRatePercentage": float(row["Inflation Rate Percentage"]),
+                "PopulationGrowthPercentage": float(row["Population Growth Percentage"])
+            })
+
+        #write to yml
+        with open(GLOBAL_DATA_YML_PATH, 'w', encoding='utf-8') as file:
+            yml_data = {
+                "InflationPopulation": inflation_population_data
+            }
+            file.write("---\n")
+            yml.dump(yml_data, file, allow_unicode=True)
+            file.write("...\n")
+
+def export_global_dates_to_yml():
+    """Export LAST_COMPLETED_FISCAL_YEAR, CURRENT_FISCAL_YEAR, SITE_UPDATE_DATE, 
+    SAMGOV_ASSISTANCE_LISTINGS_DATE, USASPENDING_TRANSACTION_DATE, TREASURYGOV_TAX_EXPEND_DATE, 
+    and PAYMENTACCURACY_FY_DATE from constants.py to website/_data/constants_global_dates.yml for Jekyll."""
+    data_path = Path(__file__).resolve().parents[1] / 'website' / '_data'
+    data_path.mkdir(parents=True, exist_ok=True)
+    constants_data = {
+        "CURRENT_FISCAL_YEAR": constants.CURRENT_FISCAL_YEAR,
+        "LAST_COMPLETED_FISCAL_YEAR": constants.LAST_COMPLETED_FISCAL_YEAR,
+        "SITE_UPDATE_DATE": constants.SITE_UPDATE_DATE,
+        "SAMGOV_ASSISTANCE_LISTINGS_DATE": constants.SAMGOV_ASSISTANCE_LISTINGS_DATE,
+        "USASPENDING_TRANSACTION_DATE": constants.USASPENDING_TRANSACTION_DATE,
+        "TREASURYGOV_TAX_EXPEND_DATE": constants.TREASURYGOV_TAX_EXPEND_DATE,
+        "PAYMENTACCURACY_FY_DATE": constants.PAYMENTACCURACY_FY_DATE
+    }
+    output_file = data_path / 'constants_global_dates.yml'
+    with open(output_file, 'w', encoding='utf-8') as file:
+        yaml.dump(constants_data, file, default_flow_style=False, allow_unicode=True)
+    print(f"Exported global date variables to {output_file}")
+    return output_file
+
 
 try:
     conn = sqlite3.connect(full_path)
@@ -1613,31 +1711,35 @@ try:
 
     # generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
+    # export_inflation_population_from_csv()
+
+    # export_global_dates_to_yml()
+
     # search_path = os.path.join('../website', 'pages', 'search.md')
-    # generate_search_page(search_path, shared_data, constants.FISCAL_YEAR)
+    # generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # category_path = os.path.join('../website', 'pages', 'category.md')
     # generate_category_page(cursor, programs_data, category_path,
-    #                        constants.FISCAL_YEAR)
+    #                        constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # home_path = os.path.join('../website', 'pages', 'home.md')
-    # generate_home_page(home_path, shared_data, constants.FISCAL_YEAR)
+    # generate_home_page(home_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # programs_json_path = os.path.join('../indexer', 'programs-table.json')
     # generate_programs_table_json(programs_json_path, programs_data,
-    #                              constants.FISCAL_YEAR)
+    #                              constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # category_dir = os.path.join('../website', '_category')
-    # generate_category_markdown_files(cursor, category_dir, constants.FISCAL_YEAR)
+    # generate_category_markdown_files(cursor, category_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # subcategory_dir = os.path.join('../website', '_subcategory')
-    # generate_subcategory_markdown_files(cursor, subcategory_dir, constants.FISCAL_YEAR)
+    # generate_subcategory_markdown_files(cursor, subcategory_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     # gwo_dir = os.path.join('../website', '_gwo')
     # generate_gwo_markdown_files(cursor, gwo_dir)
 
-    # pon_dir = os.path.join('../website', '_pon')
-    # generate_pon_markdown_files(cursor, pon_dir)
+    pon_dir = os.path.join('../website', '_pon')
+    generate_pon_markdown_files(cursor, pon_dir)
 
 except sqlite3.Error as e:
     print(f"Database error occurred: {e}")

@@ -2,7 +2,7 @@
 agencies: '[{"title":"Department of Transportation","total_num_programs":54,"total_obs":94629206040.72},{"title":"Department
   of the Interior","total_num_programs":2,"total_obs":44667907.0},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":4250466.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":1047244.0},{"title":"Appalachian
+  of Defense","total_num_programs":1,"total_obs":1047244.0},{"title":"Unspecified","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":30},{"title":"Local (includes
   State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":22},{"title":"State
@@ -103,6 +103,11 @@ categories_subcategories:
   - permalink: /category/i-energy/energy-supply
     title: Energy Supply
   title: I Energy
+- permalink: /category/interest-on-the-public-debt
+  subcategories:
+  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
+    title: Interest on the Public Debt
+  title: Interest on the Public Debt
 - permalink: /category/j-environmental-quality
   subcategories:
   - permalink: /category/j-environmental-quality/pollution-control-and-abatement
@@ -180,6 +185,41 @@ categories_subcategories:
   - permalink: /category/t-transportation/water-transportation
     title: Water Transportation
   title: T Transportation
+- permalink: /category/tax-expenditures
+  subcategories:
+  - permalink: /category/tax-expenditures/agriculture
+    title: Agriculture
+  - permalink: /category/tax-expenditures/commerce-and-housing
+    title: Commerce and Housing
+  - permalink: /category/tax-expenditures/community-and-regional-development
+    title: Community and Regional Development
+  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
+    title: Education, Training, Employment, and Social Services
+  - permalink: /category/tax-expenditures/energy
+    title: Energy
+  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
+    title: General Purpose Fiscal Assistance
+  - permalink: /category/tax-expenditures/general-science--space--and-technology
+    title: General Science, Space, and Technology
+  - permalink: /category/tax-expenditures/health
+    title: Health
+  - permalink: /category/tax-expenditures/income-security
+    title: Income Security
+  - permalink: /category/tax-expenditures/interest
+    title: Interest
+  - permalink: /category/tax-expenditures/international-affairs
+    title: International Affairs
+  - permalink: /category/tax-expenditures/national-defense
+    title: National Defense
+  - permalink: /category/tax-expenditures/natural-resources-and-environment
+    title: Natural Resources and Environment
+  - permalink: /category/tax-expenditures/social-security
+    title: Social Security
+  - permalink: /category/tax-expenditures/transportation
+    title: Transportation
+  - permalink: /category/tax-expenditures/veterans-benefits-and-services
+    title: Veterans Benefits and Services
+  title: Tax Expenditures
 fiscal_year: '2024'
 parent_permalink: /category/t-transportation
 parent_title: T Transportation
@@ -261,7 +301,8 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   of Transportation","total_obs":390888.0,"program_type":"assistance_listing"},{"cfda":"20.328","permalink":"/program/20.328","title":"Interstate
   Rail Compacts","popular_name":"IRC","agency":"Department of Transportation","total_obs":300000.0,"program_type":"assistance_listing"},{"cfda":"20.617","permalink":"/program/20.617","title":"State
   Electronic Data Collection (SEDC) Program Grant","popular_name":"State Electronic
-  Data Collection (SEDC) Program Grant","agency":"Department of Transportation","total_obs":70000.0,"program_type":"assistance_listing"},{"cfda":"23.003","permalink":"/program/23.003","title":"Appalachian
+  Data Collection (SEDC) Program Grant","agency":"Department of Transportation","total_obs":70000.0,"program_type":"assistance_listing"},{"cfda":"CON1","permalink":"/program/CON1","title":"Ames
+  Laboratory","popular_name":null,"agency":"Unspecified","total_obs":0.0,"program_type":"contracts"},{"cfda":"23.003","permalink":"/program/23.003","title":"Appalachian
   Development Highway System","popular_name":"(Appalachian Corridors)","agency":"Appalachian
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.944","permalink":"/program/20.944","title":"Autonomous
   Vehicle Research in Rural Communities Program","popular_name":"Rural Autonomous
@@ -292,6 +333,6 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
 title: Ground Transportation
 total_num_agencies: 5
 total_num_applicant_types: 41
-total_num_programs: 59
+total_num_programs: 60
 total_obs: 94679171657.72
 ---

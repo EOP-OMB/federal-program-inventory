@@ -7,6 +7,7 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Q Natural Resources - Conservation and Land Management
+- Tax Expenditures - Agriculture
 cfda: TC.054
 fiscal_year: '2024'
 grants_url: null

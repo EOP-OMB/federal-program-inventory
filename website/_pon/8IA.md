@@ -10,23 +10,50 @@ gwo_id: 8IA
 permalink: /pon/8IA
 title: Facilitate International Student Exchange
 where_used:
-- name: Academic Exchange Programs - Educational Advising and Student Services
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Educational Advising and Student Services
   permalink: /program/19.432
-- name: Academic Exchange Programs - Special Academic Exchange Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Special Academic Exchange Programs
   permalink: /program/19.011
-- name: Academic Exchange Programs - Undergraduate Programs
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Academic Exchange Programs - Undergraduate Programs
   permalink: /program/19.009
-- name: English for Heritage Language Speakers Grants to U.S. Institutions of Higher
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: English for Heritage Language Speakers Grants to U.S. Institutions of Higher
     Education
   permalink: /program/12.554
-- name: Language Training Center
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Language Training Center
   permalink: /program/12.579
-- name: National Security Education Program David L. Boren Fellowships
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
-- name: National Security Education Program David L. Boren Scholarships
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Security Education Program David L. Boren Scholarships
   permalink: /program/12.551
-- name: Overseas Programs - Doctoral Dissertation Research Abroad
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Overseas Programs - Doctoral Dissertation Research Abroad
   permalink: /program/84.022
-- name: ROTC Language and Culture Training Grants
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ROTC Language and Culture Training Grants
   permalink: /program/12.357
+  program_type: assistance_listing
 ---
