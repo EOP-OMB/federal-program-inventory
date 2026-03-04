@@ -8,7 +8,7 @@
       const tbody = table.querySelector('tbody');
       const totalRow = tbody.querySelector('tr[data-total-row]');
       let rows = Array.from(tbody.querySelectorAll('tr:not([data-total-row])'));
-      
+
       // Add JavaScript-based hover effects as fallback
       rows.forEach(row => {
         row.addEventListener('mouseenter', function() {
@@ -52,21 +52,21 @@
         rows.sort((a, b) => {
           const aValue = getCellValue(a, columnIndex, columnType);
           const bValue = getCellValue(b, columnIndex, columnType);
-          
+
           let comparison;
           if (columnType === 'currency') {
             comparison = parseFloat(aValue) - parseFloat(bValue);
           } else {
             comparison = aValue.localeCompare(bValue, undefined, { numeric: true, sensitivity: 'base' });
           }
-          
+
           // Tie breaker: use first column (name) value
           if (comparison === 0 && columnIndex !== 0) {
             const aFirstCol = getCellValue(a, 0, 'text');
             const bFirstCol = getCellValue(b, 0, 'text');
             comparison = aFirstCol.localeCompare(bFirstCol, undefined, { numeric: true, sensitivity: 'base' });
           }
-          
+
           return direction === 'desc' ? -comparison : comparison;
         });
         

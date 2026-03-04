@@ -16,7 +16,7 @@ where_used:
   permalink: /program/19.808
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 1648153.26
+  expenditure_amount: 977999.0
   name: Nonproliferation and Arms Control
   permalink: /program/81.505
   program_type: assistance_listing

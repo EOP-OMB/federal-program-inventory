@@ -2,6 +2,29 @@
 @forward "uswds";
 @forward "uswds-theme-custom-styles";
 
+// Site-wide variables
+$site-default-font: "Public Sans", Helvetica, Arial, sans-serif;
+$site-header-font-family: "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+$site-subheader-font-family: "New Century Schoolbook Italic", "Century Schoolbook Italic", "Century Schoolbook", Georgia, serif;
+$site-bg-color: #F9F9EF;
+$site-font-color: #1B1B1B;
+$gwo-treemap-bg: #542A3F;
+$pon-treemap-bg:  #A8D9EF;
+$dark-cream-underlay: #F2F1E6;
+$sub-tag-info-card-bg: #F0EFE3;
+
+// Color scheme variables for future use
+//gold used for spending
+$gold-spending: #E4DBA9;
+//pop growth shading in spending panel
+$pop-growth-shade:#D47556;
+//red used for improper payments
+$improper-payments-red:#962225;
+
+.hide {
+  display: none !important;
+}
+
 // US government banner
 .usa-banner__button {
   &:hover {
@@ -13,6 +36,35 @@
   }
 }
 
+.site-title-font {
+  font-family: $site-header-font-family !important;
+  color: $site-font-color !important;
+}
+.site-subheader-font {
+  font-family: $site-subheader-font-family !important;
+  color: $site-font-color !important;
+  font-style: italic !important;
+  font-size: 20px !important;
+}
+
+body {
+  font-family: $site-default-font !important;
+  background-color: $site-bg-color !important;
+}
+
+.subcategory-tag {
+  font-size: 0.875rem;
+  background-color: $sub-tag-info-card-bg;
+}
+
+.info-card-bg {
+  background-color: $sub-tag-info-card-bg;
+}
+
+:root {
+  --gwo-treemap-bg: #{$gwo-treemap-bg};
+  --pon-treemap-bg: #{$pon-treemap-bg};
+}
 
 .usa-logo img {
     height: 50px;
@@ -50,6 +102,7 @@ th.gridjs-th {
 }
 #search-filters .usa-checkbox {
     position: relative;
+    background-color: $dark-cream-underlay;
 }
 #search-filters input:disabled+label {
     color: #a9aeb1;
@@ -84,6 +137,47 @@ th.gridjs-th {
     display: block;
     width: auto;
     word-wrap: break-word;
+}
+
+.usa-sidenav,.program-search-container,.program-title {
+  background-color: $dark-cream-underlay;
+  color: $site-font-color !important;
+}
+
+.usa-breadcrumb, .usa-input, .usa-table td, .usa-table thead td, .usa-table thead th, .usa-radio {
+  background-color: $site-bg-color !important;
+  color: $site-font-color !important;
+  font-family: $site-default-font !important;
+}
+
+.font-heading-2xs,.font-heading-sm,.font-heading-md,
+.font-heading-lg,.font-heading-xl,.font-heading-3xl,
+.usa-button,.usa-select,.usa-prose,.usa-alert__text,
+.usa-process-list__item,.usa-process-list__heading
+{
+  font-family: $site-default-font !important;
+}
+
+.usa-pagination__list {
+  font-family: $site-default-font !important;
+  background-color: $site-bg-color !important;
+}
+
+.usa-label {
+  font-family: $site-default-font !important;
+  font-weight: bold !important;
+}
+
+.about-fed-program {
+  font-family: $site-default-font !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+}
+
+.about-data-header {
+  font-family: $site-default-font !important;
+  color: #1A3A52 !important;
+  font-weight: bold !important;
 }
 
 .objectives-container {
@@ -188,9 +282,6 @@ th.gridjs-th {
   }
 }
 
-.usa-table thead td, .usa-table thead th {
-  background-color: #D3F1FA;
-}
 
 #myChart {
   word-wrap: break-word;
@@ -215,7 +306,15 @@ th.gridjs-th {
   }
 }
 
-#improper-payments-table.usa-table thead th,
-#improper-payments-table.usa-table thead td {
-  background-color: #ffffff !important;
+.tree-label-dark {
+  fill: #1b1b1b;
+}
+
+.tree-label-light {
+  fill: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.program-filter {
+  cursor: pointer;
 }

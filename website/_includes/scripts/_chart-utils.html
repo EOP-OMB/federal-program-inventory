@@ -236,6 +236,7 @@ function renderTreeMap(data, chartId, dataKey, color){
     .padding(1)
     (root);
 
+
   // Create clipPath definitions for text clipping
   svg.append("defs").selectAll("clipPath")
     .data(root.leaves())
@@ -259,6 +260,12 @@ function renderTreeMap(data, chartId, dataKey, color){
       .style("stroke-width", 2)
       .style("fill", color)
       .style("cursor", "pointer")
+    // Navigate to the program detail when a tile is clicked.
+    .on('click', function(event, d) {
+      if (d.data && d.data.permalink) {
+        window.location.href = d.data.permalink;
+      }
+    })
     .on('mouseover', function(event, d) {
       // Create tooltip
       const tooltip = d3.select('body').append('div')
@@ -281,8 +288,24 @@ function renderTreeMap(data, chartId, dataKey, color){
         minimumFractionDigits: 0,
         maximumFractionDigits: 1
       }).format(d.value);
-      
-      tooltip.html(`<strong>${d.data.name}</strong><br/>Expenditure: ${formattedValue}`)
+
+      // Add percent-of-total info to the tooltip content.
+      const tooltipName = d.data.name;
+      const percentValue = totalValue > 0 ? (d.value / totalValue) * 100 : 0;
+      // Increase decimal places for tiny percentages so they don't round to 0%.
+      const formatPercent = (value) => {
+        // if (value === 0) return '0%';
+        let decimals = 1;
+        let text = value.toFixed(decimals);
+        while (Number(text) === 0 && decimals < 6) {
+          decimals += 1;
+          text = value.toFixed(decimals);
+        }
+        return `${text}%`;
+      };
+      const percentText = totalValue > 0 ? formatPercent(percentValue) : '';
+      const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
+      tooltip.html(`<strong>${tooltipName}</strong><br/>Expenditure: ${formattedValue}${percentLine}`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 10) + 'px')
         .transition()
@@ -307,7 +330,11 @@ function renderTreeMap(data, chartId, dataKey, color){
         .style('stroke-width', 2);
     });
 
-  // Add text labels with word wrapping
+  // Cache the total value for percent calculations.
+  const totalValue = root.value || 0;
+
+  // Add text labels centered in each rectangle and hide when they don't fit.
+  const textMargin = 8;
   const textGroups = g.selectAll("g.text-group")
     .data(root.leaves())
     .enter()
@@ -318,54 +345,44 @@ function renderTreeMap(data, chartId, dataKey, color){
   textGroups.each(function(d) {
     const rectWidth = d.x1 - d.x0;
     const rectHeight = d.y1 - d.y0;
-    
-    // Only show text if rectangle is large enough
-    if (rectWidth >= 60 && rectHeight >= 20) {
-      const textGroup = d3.select(this);
-      const words = d.data.name.split(/\s+/);
-      const lineHeight = 20; // pixels
-      const maxWidth = rectWidth - 6; // 3px padding on each side
-      const maxLines = Math.floor((rectHeight - 6) / lineHeight); // 3px top/bottom padding
-      
-      let line = [];
-      let lineNumber = 0;
-      let tspan = textGroup.append("text")
-        .attr("x", d.x0 + 3)
-        .attr("y", d.y0 + 15)
-        .attr("font-size", "16px")
-        .attr("font-weight", "500")
-        .attr("fill", "white")
-        .style("text-shadow", "1px 1px 2px rgba(0,0,0,0.8)")
-        .style("pointer-events", "none")
-        .append("tspan")
-        .attr("x", d.x0 + 3)
-        .attr("dy", 0);
+    const centerX = d.x0 + rectWidth / 2;
+    const centerY = d.y0 + rectHeight / 2;
+    const textGroup = d3.select(this);
+    const labelName = d.data.name;
+    const percentValue = totalValue > 0 ? (d.value / totalValue) * 100 : 0;
+    const percentText = totalValue > 0 ? `${percentValue.toFixed(1)}%` : '';
 
-      words.forEach(function(word, i) {
-        line.push(word);
-        tspan.text(line.join(" "));
-        
-        // Check if line is too wide
-        if (tspan.node().getComputedTextLength() > maxWidth) {
-          line.pop(); // Remove the word that made it too wide
-          tspan.text(line.join(" ")); // Set text without the overflowing word
-          
-          // Start new line if we haven't exceeded max lines
-          if (lineNumber < maxLines - 1) {
-            lineNumber++;
-            line = [word]; // Start new line with the word that didn't fit
-            tspan = textGroup.select("text")
-              .append("tspan")
-              .attr("x", d.x0 + 3)
-              .attr("dy", lineHeight)
-              .text(word);
-          } else {
-            // No more room for lines, stop adding text
-            return;
-          }
-        }
+    const text = textGroup.append("text")
+      .attr("x", centerX)
+      .attr("y", centerY)
+      .attr("dy", percentText ? "-0.35em" : ".35em")
+      .attr("text-anchor", "middle")
+      .attr("font-size", "12px")
+      .attr("font-weight", "500")
+      .style("pointer-events", "none")
+      .attr("class", function() {
+        return chartId === 'outcomeChart'
+          ? "tree-label-dark"
+          : (d.data && d.data.colorRaw < 0.07) ? "tree-label-dark" : "tree-label-light";
       });
+
+    text.append("tspan")
+      .attr("x", centerX)
+      .text(labelName);
+
+    if (percentText) {
+      text.append("tspan")
+        .attr("x", centerX)
+        .attr("dy", "1.1em")
+        .text(percentText);
     }
+
+    text.style("opacity", function() {
+      const bounds = this.getBBox();
+      const fitsHeight = bounds.height < rectHeight - textMargin;
+      const fitsWidth = bounds.width < rectWidth - textMargin;
+      return (fitsHeight && fitsWidth) ? 1 : 0;
+    });
   });
 }
 

@@ -12,12 +12,12 @@ permalink: /pon/3IA
 title: Improve Humanitarian Aid Delivery
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 759704174.0
   name: Contributions to International Organizations for Overseas Assistance
   permalink: /program/19.515
   program_type: assistance_listing
 - agency: Millennium Challenge Corporation
-  expenditure_amount: 3654544.66
+  expenditure_amount: 76419051.61
   name: MCC Foreign Assistance for Overseas Programs
   permalink: /program/85.002
   program_type: assistance_listing
@@ -27,7 +27,7 @@ where_used:
   permalink: /program/98.003
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: -15666.0
+  expenditure_amount: -65252.0
   name: Overseas Refugee Assistance Programs for Africa
   permalink: /program/19.517
   program_type: assistance_listing
@@ -42,7 +42,7 @@ where_used:
   permalink: /program/19.522
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 16810.95
+  expenditure_amount: -55189.05
   name: Overseas Refugee Assistance Programs for Western Hemisphere
   permalink: /program/19.518
   program_type: assistance_listing

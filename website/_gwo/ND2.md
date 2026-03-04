@@ -14,7 +14,7 @@ where_used:
   permalink: /program/12.333
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 68267966.85
   name: Basic Scientific Research
   permalink: /program/12.431
   program_type: assistance_listing
@@ -24,7 +24,7 @@ where_used:
   permalink: /program/97.061
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 9900000.0
   name: Defense Nuclear Nonproliferation Research
   permalink: /program/81.113
   program_type: assistance_listing
@@ -58,12 +58,12 @@ where_used:
   permalink: /program/81.124
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 1860701.0
   name: Scientific Research - Combating Weapons of Mass Destruction
   permalink: /program/12.351
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 1522.35
+  expenditure_amount: 6539546.48
   name: Stewardship Science Grant Program
   permalink: /program/81.112
   program_type: assistance_listing

@@ -10,7 +10,7 @@ permalink: /pon/3ND
 title: Strengthen Defense Academic Partnerships
 where_used:
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 9303735.45
   name: National Defense Education Program
   permalink: /program/12.006
   program_type: assistance_listing

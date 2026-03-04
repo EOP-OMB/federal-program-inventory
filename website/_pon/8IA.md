@@ -11,17 +11,17 @@ permalink: /pon/8IA
 title: Facilitate International Student Exchange
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 8529597.0
   name: Academic Exchange Programs - Educational Advising and Student Services
   permalink: /program/19.432
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 700000.0
   name: Academic Exchange Programs - Special Academic Exchange Programs
   permalink: /program/19.011
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 8990000.0
   name: Academic Exchange Programs - Undergraduate Programs
   permalink: /program/19.009
   program_type: assistance_listing

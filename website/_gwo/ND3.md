@@ -8,7 +8,7 @@ permalink: /gwo/ND3
 title: Strengthen Military Readiness
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 4166666.6
+  expenditure_amount: 6164000.0
   name: Cable Security Fleet Program
   permalink: /program/20.824
   program_type: assistance_listing
@@ -19,18 +19,18 @@ where_used:
   permalink: /program/12.618
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 1247351.0
   name: Community Economic Adjustment Assistance for Responding to Threats to the
     Resilience of a Military Installation
   permalink: /program/12.003
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 8441353.0
   name: Community Noise Mitigation Program
   permalink: /program/12.029
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 28000000.0
   name: Congressionally Directed Assistance
   permalink: /program/12.599
   program_type: assistance_listing
@@ -40,12 +40,12 @@ where_used:
   permalink: /program/12.027
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 239040180.0
   name: Defense Production Act Title III (DPA Title III)
   permalink: /program/12.777
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 1247700.0
   name: Defense Security Cooperation University - Sponsored Research
   permalink: /program/12.024
   program_type: assistance_listing
@@ -66,7 +66,7 @@ where_used:
   permalink: /program/12.004
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 129086389.62
+  expenditure_amount: 195579496.43
   name: Maritime Security Fleet Program or Ship Operations Cooperation Program
   permalink: /program/20.813
   program_type: assistance_listing
@@ -76,7 +76,7 @@ where_used:
   permalink: /program/19.808
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 1150006186.79
   name: National Guard Military Operations and Maintenance (O&M) Projects
   permalink: /program/12.401
   program_type: assistance_listing
@@ -91,7 +91,7 @@ where_used:
   permalink: /program/12.551
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 22500000.0
+  expenditure_amount: 36983987.0
   name: Tanker Security Program
   permalink: /program/20.825
   program_type: assistance_listing

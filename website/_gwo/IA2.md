@@ -8,27 +8,27 @@ permalink: /gwo/IA2
 title: Promote International Education and Exchange
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 8529597.0
   name: Academic Exchange Programs - Educational Advising and Student Services
   permalink: /program/19.432
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 29665.0
   name: Academic Exchange Programs - English Language Programs
   permalink: /program/19.421
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 12573473.0
   name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 700000.0
   name: Academic Exchange Programs - Special Academic Exchange Programs
   permalink: /program/19.011
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 8990000.0
   name: Academic Exchange Programs - Undergraduate Programs
   permalink: /program/19.009
   program_type: assistance_listing
@@ -38,17 +38,17 @@ where_used:
   permalink: /program/84.274
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 13560800.0
   name: Cultural, Technical and Educational Centers
   permalink: /program/19.015
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 104324.5
   name: ECA – American Spaces
   permalink: /program/19.441
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 1067800.6
   name: Educational and Cultural Exchange Programs Appropriation Overseas Grants
   permalink: /program/19.022
   program_type: assistance_listing
@@ -83,18 +83,18 @@ where_used:
   permalink: /program/84.018
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 2600000.0
   name: Professional and Cultural Exchange Programs - Citizen Exchanges
   permalink: /program/19.415
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 9632394.0
   name: Professional and Cultural Exchange Programs - International Visitor Leadership
     Program
   permalink: /program/19.402
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 3072.25
   name: Professional and Cultural Exchange Programs - Special Professional and Cultural
     Programs
   permalink: /program/19.012
@@ -105,7 +105,7 @@ where_used:
   permalink: /program/19.451
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 1346823.74
+  expenditure_amount: 0.0
   name: Technical Assistance and Provision for Foreign Hospitals and Health Organizations
   permalink: /program/93.019
   program_type: assistance_listing

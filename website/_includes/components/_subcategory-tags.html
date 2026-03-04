@@ -1,15 +1,25 @@
 <!-- Sub-category Tags Component -->
 <div class="display-flex flex-wrap margin-bottom-2">
-  {% for category in include.categories %}
+  {% for combined_category_subcategory in include.categories %}
+    {% assign parsed_category = combined_category_subcategory | parse_category %}
+    {% assign category = parsed_category.main %}
+    {% assign sub_category = parsed_category.sub %}
     {% if category and category != "" %}
-      <span class="display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill font-sans-2xs text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1">
+      <span
+        class="subcategory-tag display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1 program-filter"
+        data-category-title="{{ category }}"
+        data-filter-type="category"
+      >
         {{ category }}
       </span>
     {% endif %}
-  {% endfor %}
-  {% for sub_category in include.sub_categories %}
     {% if sub_category and sub_category != "" %}
-      <span class="display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill font-sans-2xs text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1">
+      <span
+        class="subcategory-tag display-inline-flex flex-align-center padding-x-2 padding-y-05 radius-pill text-bold bg-base-lightest text-base-dark margin-right-1 margin-bottom-1 program-filter"
+        data-category-title="{{ category }}"
+        data-subcategory-title="{{ sub_category }}"
+        data-filter-type="sub-category"
+      >
         {{ sub_category }}
       </span>
     {% endif %}

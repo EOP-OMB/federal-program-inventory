@@ -905,15 +905,6 @@
       }
     }
 
-    // handle acquisition programs and government services
-    if (!isAssistanceListing && !hasObligations && hasOutlays) {
-      outlaysChart.classList.remove("display-none");
-      document.getElementById("outlays").checked = true;
-      createFiscalYearOutlaysChart(outlaysJson, {
-        container: "#outlaysChart",
-      });
-    }
-
     // Initialize appropriate chart based on data availability
     if (isAssistanceListing) {
       // Show obligations by default

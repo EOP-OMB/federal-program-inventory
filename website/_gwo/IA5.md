@@ -23,7 +23,7 @@ where_used:
   permalink: /program/87.005
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 4576263.13
   name: EUR-Other
   permalink: /program/19.878
   program_type: assistance_listing
@@ -53,7 +53,7 @@ where_used:
   permalink: /program/85.751
   program_type: assistance_listing
 - agency: Millennium Challenge Corporation
-  expenditure_amount: 3654544.66
+  expenditure_amount: 76419051.61
   name: MCC Foreign Assistance for Overseas Programs
   permalink: /program/85.002
   program_type: assistance_listing
@@ -78,12 +78,12 @@ where_used:
   permalink: /program/10.617
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 0.0
+  expenditure_amount: 80000000.0
   name: Political Risk Insurance
   permalink: /program/87.006
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 184692.92
+  expenditure_amount: 6968424.2
   name: Project Development
   permalink: /program/87.101
   program_type: assistance_listing
@@ -99,7 +99,7 @@ where_used:
   permalink: /program/19.301
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 19544840.27
+  expenditure_amount: 371989008.0
   name: USAID Foreign Assistance for Programs Overseas
   permalink: /program/98.001
   program_type: assistance_listing

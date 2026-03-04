@@ -178,3 +178,15 @@ For questions or issues with the ALN change detection script:
 
 # ALN Detection Script
 This script pulls all ALNs from SAM.gov and flattens the data into a single csv in the reports directory.
+
+# download-usaspending-files.py
+
+This downloads award data archive files from https://www.usaspending.gov/download_center/award_data_archive.  Note that the years and suffix may change over time.  Also note that usaspending.gov will throttle after ~10 files, so the script may take multiple runs.
+
+# summarize-usaspending-files.py
+
+This opens the downloaded zip files in memory, summarizes all of the csv data by ALN, and saves the output to a csv file.
+
+# summarize-sam-data.py
+
+This opens the extracted assistance-listings.json file, summarizes available data by ALN, and saves the output to a csv file.

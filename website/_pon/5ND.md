@@ -18,7 +18,7 @@ where_used:
   permalink: /program/12.618
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 1247700.0
   name: Defense Security Cooperation University - Sponsored Research
   permalink: /program/12.024
   program_type: assistance_listing
@@ -28,7 +28,7 @@ where_used:
   permalink: /program/12.579
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 0.0
+  expenditure_amount: 83342825.0
   name: Montgomery GI Bill Selected Reserve
   permalink: /program/64.032
   program_type: assistance_listing
