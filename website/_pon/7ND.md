@@ -12,12 +12,12 @@ permalink: /pon/7ND
 title: Strengthen Operational Readiness of Defense Units
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 4166666.6
+  expenditure_amount: 6164000.0
   name: Cable Security Fleet Program
   permalink: /program/20.824
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 22500000.0
+  expenditure_amount: 36983987.0
   name: Tanker Security Program
   permalink: /program/20.825
   program_type: assistance_listing

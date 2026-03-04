@@ -12,7 +12,7 @@ permalink: /pon/7IA
 title: Support International Mobility of Faculty
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 12573473.0
   name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
   program_type: assistance_listing

@@ -771,15 +771,13 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'agency': p['agency_name'] or 'Unspecified',
                 'program_type': p['program_type'] or ''
             }
-            
-            # Get actual expenditure amount from outlays data (money leaving Treasury)
+
+            # Get actual expenditure amount from obligations data
             expenditure_amount = 0.0
-            outlays = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
-            # Get the most recent fiscal year data (even if it's 0.0)
-            if outlays:
-                # expenditure_amount = outlays[-1].get('outlay', 0.0)
-                expenditure_amount = next((o.get('outlay', 0.0) for o in outlays if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
-            
+            spending = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
+            if spending:
+                expenditure_amount = next((o.get('obligation', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
 
@@ -849,13 +847,11 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'program_type': p['program_type'] or ''
             }
 
-            # Get actual expenditure amount from outlays data (money leaving Treasury)
+            # Get actual expenditure amount from obligations data
             expenditure_amount = 0.0
-            outlays = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
-            # Get the most recent fiscal year data (even if it's 0.0)
-            if outlays:
-                # expenditure_amount = outlays[-1].get('outlay', 0.0)
-                expenditure_amount = next((o.get('outlay', 0.0) for o in outlays if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+            spending = get_outlays_data(cursor, p['id'], FISCAL_YEARS)
+            if spending:
+                expenditure_amount = next((o.get('obligation', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
 
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
@@ -924,7 +920,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
                 pc.name as parent_category_name
                 FROM program_to_category ptc
                 INNER JOIN category c ON ptc.category_id = c.id
-                LEFT JOIN category pc ON c.parent_id = pc.id
+                LEFT JOIN category pc ON c.parent_id = pc.id AND c.type = pc.type
                 WHERE ptc.program_id = ?
                 AND c.type = ptc.category_type
                 AND c.type <> 'category'
@@ -1037,10 +1033,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'grants_url': program['grants_url'],
             'top_agency_name': program['top_agency_name'],
             'sub_agency_name': program['sub_agency_name'],
-            'assistance_types': sorted(list(program_categories['assistance'].values())),
-            'beneficiary_types': sorted(list(program_categories['beneficiary'].values())),
-            'applicant_types': sorted(list(program_categories['applicant'].values())),
-            'categories': sorted(list(program_categories['categories'].values())),
+            'assistance_types': sorted(list(set(program_categories['assistance'].values()))),
+            'beneficiary_types': sorted(list(set(program_categories['beneficiary'].values()))),
+            'applicant_types': sorted(list(set(program_categories['applicant'].values()))),
+            'categories': sorted(list(set(program_categories['categories'].values()))),
             'obligations': obligations,
             'other_program_spending': other_program_spending,
             'outlays': outlays,

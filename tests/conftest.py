@@ -17,9 +17,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 # Making sure constants is in the path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data_processing')))
 
-# Import modules for patching
-import constants
-
 @pytest.fixture(autouse=True)
 def patch_paths():
     """Patch file paths to prevent file access issues."""

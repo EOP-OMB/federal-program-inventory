@@ -23,7 +23,7 @@ function assembleHierarchyData(unstructuredData, numberCategory, itemCategory) {
   nonZeroItems.forEach(item => {
     const identifier = item[itemCategory] || 'Unknown Item';
     const value = parseFloat(item[numberCategory]) || 0;
-    
+
     if (!itemGroups[identifier]) {
       itemGroups[identifier] = {
         name: identifier,
@@ -31,12 +31,14 @@ function assembleHierarchyData(unstructuredData, numberCategory, itemCategory) {
       };
     }
     
+    // Persist permalink so treemap tiles can navigate to program pages.
     itemGroups[identifier].children.push({
       name: item.name || 'Unknown Item',
-      value: value
+      value: value,
+      permalink: item.permalink || null
     });
   });
-  
+
   // Convert to the required hierarchical structure
   const hierarchyData = {
     name: 'root',

@@ -4,13 +4,12 @@ layout: default
 header_title: Program Search
 footer_include: _footer-search.html
 ---
-<section class="bg-primary-darker padding-x-2 padding-y-3" style="background-image: url('../assets/img/banner.png'), linear-gradient(0deg, #272A63, #272A63);
-         background-position: center right; background-repeat: no-repeat; background-size: contain;">
+<section class="padding-x-2 padding-y-3">
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
 
-        <h1 class="usa-display usa-heading text-white font-heading-2xl text-light">{{
+        <h1 class="site-title-font font-heading-2xl text-light">{{
           layout.header_title }}</h1>
       </div>
     </div>
@@ -30,10 +29,10 @@ footer_include: _footer-search.html
       </ol>
     </nav>
   </div>
-  <div class="grid-row grid-gap padding-top-1">
-    <div class="desktop:grid-col-3 bg-white desktop:border-base-lightest">
+  <div class="grid-row grid-gap padding-top-1 ">
+    <div class="desktop:grid-col-3 desktop:border-base-lightest">
       <form id="search-filters">
-        <h3 class="usa-display usa-heading font-heading-lg text-primary line-height-heading-3 text-light margin-0">
+        <h3 class="font-heading-lg text-primary line-height-heading-3 margin-0 padding-bottom-2">
           Filters</h3>
         <div class="line-height-sans-3 padding-bottom-2">
           Expand the filters below to select the filters you wish to apply.
@@ -50,7 +49,7 @@ footer_include: _footer-search.html
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="agency-section" data-content-id="agency-section">
-                <span class="font-sans-sm text-ink line-height-body-3">Agency</span>
+                <span class="text-ink line-height-body-3">Agency</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -91,7 +90,7 @@ footer_include: _footer-search.html
                         id="check-agency-{{ forloop.index }}" type="checkbox" name="agencies" data-filter-type="agency"
                         data-agency-title="{{ a.title }}"
                         data-children-id="children-for-check-agency-{{ forloop.index }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-agency-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
@@ -107,7 +106,7 @@ footer_include: _footer-search.html
                         id="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
                         name="agencies" data-filter-type="sub-agency" data-agency-title="{{ a.title }}"
                         data-subagency-title="{{ sa.title }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-agency-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                         {{ sa.title }}
                       </label>
@@ -134,7 +133,7 @@ footer_include: _footer-search.html
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2" id="check-agency-other"
                         type="checkbox" name="agencies" data-filter-type="agency" data-agency-title="Other agencies"
                         data-children-id="children-for-check-agency-other" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-agency-other">
                         Other agencies
                       </label>
@@ -148,7 +147,7 @@ footer_include: _footer-search.html
                         id="check-agency-other-{{ forloop.index }}" type="checkbox" name="agencies"
                         data-filter-type="sub-agency" data-agency-title="Other agencies"
                         data-subagency-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-agency-other-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
@@ -170,7 +169,7 @@ footer_include: _footer-search.html
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="categories-section" data-content-id="categories-section">
-                <span class="font-sans-sm text-ink line-height-body-3">Categories</span>
+                <span class="font-heading-sm text-ink line-height-body-3">Categories</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -211,7 +210,7 @@ footer_include: _footer-search.html
                         id="check-category-{{ forloop.index }}" type="checkbox" name="categories"
                         data-filter-type="category" data-category-id="{{ c.id }}" data-category-title="{{ c.title }}"
                         data-children-id="children-for-check-category-{{ forloop.index }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-category-{{ forloop.index }}">
                         {{ c.title }}
                       </label>
@@ -228,7 +227,7 @@ footer_include: _footer-search.html
                         name="categories" data-filter-type="sub-category" data-category-id="{{ c.id }}"
                         data-category-title="{{ c.title }}" data-subcategory-id="{{ sc.id }}"
                         data-subcategory-title="{{ sc.title }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                         {{ sc.title }}
                       </label>
@@ -251,7 +250,7 @@ footer_include: _footer-search.html
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="program-type-section" data-content-id="program-type-section">
-                <span class="font-sans-sm text-ink line-height-body-3">Program type</span>
+                <span class="font-heading-sm text-ink line-height-body-3">Program type</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -276,7 +275,7 @@ footer_include: _footer-search.html
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
                         id="check-assistancetype-{{ forloop.index }}" type="checkbox" name="assistancetypes"
                         data-filter-type="assistance" data-assistance-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-assistancetype-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
@@ -299,7 +298,7 @@ footer_include: _footer-search.html
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="eligible-applicants-section"
                 data-content-id="eligible-applicants-section">
-                <span class="font-sans-sm text-ink line-height-body-3">Eligible applicants</span>
+                <span class="font-heading-sm text-ink line-height-body-3">Eligible applicants</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -324,7 +323,7 @@ footer_include: _footer-search.html
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
                         id="check-applicant-{{ forloop.index }}" type="checkbox" name="applicants"
                         data-filter-type="applicant" data-applicant-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-sans-2xs line-height-body-3 padding-top-0"
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
                         for="check-applicant-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
@@ -340,23 +339,23 @@ footer_include: _footer-search.html
       </form>
     </div>
     <div class="desktop:grid-col-9">
-      <div class="width-full text-primary font-sans-xl line-height-sans-2">Search for programs</div>
-      <div class="width-full text-ink font-sans-lg line-height-sans-3 padding-top-2">Programs listed here use data
+      <div class="width-full text-primary font-heading-xl line-height-sans-2">Search for programs</div>
+      <div class="width-full text-ink font-heading-lg line-height-sans-3 padding-top-2">Programs listed here use data
         pulled from SAM.gov, USASpending.gov, and Treasury.gov</div>
-      <div class="width-full text-ink font-sans-sm text-bold padding-top-2">Search by program name, popular name,
+      <div class="width-full text-ink font-heading-sm text-bold padding-top-2">Search by program name, popular name,
         objectives, or outcomes</div>
 
       <form class="usa-search usa-search--small padding-top-1 padding-bottom-2" role="search">
         <label class="usa-sr-only" for="search-field-en-small">Search</label>
-        <input class="usa-input" id="search-field-en-small" type="search" name="search" />
+        <input class="usa-input" id="search-field-en-small" type="search" name="search" placeholder="Enter search terms..." />
         <button class="usa-button" type="submit">
           <img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
         </button>
       </form>
 
-      <div class="bg-secondary-lighter padding-2">
-        <div class="width-full text-primary font-sans-lg text-bold">Programs at a glance</div>
-        <div class="width-full font-sans-sm padding-top-1 line-height-body-3">
+      <div class="program-search-container padding-2">
+        <div class="width-full text-primary font-heading-lg text-bold">Programs at a glance</div>
+        <div class="width-full font-heading-sm padding-top-1 line-height-body-3">
           <span class="text-ink">The numbers below show </span>
           <span class="text-ink text-bold">Programs</span>
           <span class="text-ink">and </span>
@@ -373,7 +372,7 @@ footer_include: _footer-search.html
               <span class="text-primary font-heading-xl" id="total-programs"> of <span id="global-count"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-sans-lg line-height-sans-4">programs</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">programs</span>
             </div>
           </div>
           <div class="grid-col-5">
@@ -383,7 +382,7 @@ footer_include: _footer-search.html
                   id="global-obligations"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-sans-lg line-height-sans-4">in FY {{ page.fiscal_year }} expenditures</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">in FY {{ page.fiscal_year }} expenditures</span>
             </div>
           </div>
         </div>
@@ -395,7 +394,7 @@ footer_include: _footer-search.html
             </button>
 
           <div class="display-flex tablet:flex-row flex-wrap gap-1">
-            <span class="padding-right-2 padding-top-2 tablet:padding-top-1 text-bold font-sans-sm">Sort results by:</span>
+            <span class="padding-right-2 padding-top-2 tablet:padding-top-1 text-bold font-heading-sm">Sort results by:</span>
             <div class="display-flex">
               <button id="expenditureSort"
                 class="usa-button height-5 margin-right-0 radius-left-lg radius-right-0 text-bold">
@@ -417,7 +416,7 @@ footer_include: _footer-search.html
         <div class="grid-row">
 
           <div class="grid-col-fill text-left padding-y-3">
-            <span class="font-sans-sm" id="pagination-info">
+            <span class="font-heading-sm" id="pagination-info">
               Showing <span class="text-bold" id="results-start">1</span> to
               <span class="text-bold" id="results-end">10</span> of
               <span class="text-bold" id="results-total">0</span> results
@@ -454,8 +453,8 @@ footer_include: _footer-search.html
       </div>
       <!-- Template for each program -->
       <template id="program-template">
-        <div class="padding-y-2 border-bottom border-base-lighter">
-          <div class="grid-row grid-gap">
+        <div class="padding-y-2">
+          <div class="padding-y-2 program-search-container grid-row grid-gap">
             <div class="tablet:grid-col-8">
               <a href="#" class="usa-link text-bold program-title">
               </a>
