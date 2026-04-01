@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- B Business and Commerce - Business Development
+- Business and Commerce - Business Development
 - Tax Expenditures - Commerce and Housing
 cfda: TC.086
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Grow American Businesses
   permalink: /gwo/B2
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
   tax rate schedule. It would not allow deductions and exemptions or preferentially
@@ -24,7 +27,7 @@ objective: The baseline tax system generally would tax all income under the regu
   percent of income attributable to domestic pass-through businesses, subject to certain
   limitations.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":37240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40230000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":69250000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":51070000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":37240000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40230000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":69250000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.086.html
 pons:

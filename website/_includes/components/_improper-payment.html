@@ -1,0 +1,103 @@
+{% assign last_completed_fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
+{% assign paymentaccuracy_fy_date = site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE %}
+
+{% if page.improper_payments == nil or page.improper_payments == false %}
+<!-- Gray background improper payment box with NA values -->
+<div id="improper-payment-card-container">
+  <div class="improper-payment-card">
+    <div class="improper-payment-card-container ip-rate-na">
+      <div class="payment-info">
+          <div class="font-heading-md ip-outlay-text">
+            <span class="ip-outlay-dot">•</span>
+            <span>FY {{ last_completed_fiscal_year }} Outlay</span>
+          </div>
+          <div class="font-heading-xl ip-fy-outlay-amount">
+            <span id="last-completed-year-outlay" data-dollar-amount="{{ page.last_completed_year_outlay | default: 0 }}"> 
+              {{ page.last_completed_year_outlay | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
+            </span>
+          </div>
+      </div>
+      <div class="payment-rate-box">
+        <div class="usa-label">Improper Payment Estimate</div>
+        <div class="usa-label font-heading-2xs ip-last-reported-subheader">Last Reported</div>
+        <div class="font-heading-md">
+          <span class="usa-tag ip-box-na">
+            <span id="improper-payments-percent">Rate: N/A</span>  |  
+            <span> Amount: </span><span id="improper-payments-total">
+              N/A
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% elsif page.improper_payments_total == 0 or page.improper_payments_total == nil %}
+<div id="improper-payment-card-container">
+  <div class="improper-payment-card">
+    <div class="improper-payment-card-container ip-rate-na">
+      <div class="payment-info">
+          <div class="font-heading-md ip-outlay-text">
+            <span class="ip-outlay-dot">•</span>
+            <span>FY {{ last_completed_fiscal_year }} Outlay</span>
+          </div>
+          <div class="font-heading-xl ip-fy-outlay-amount">
+            <span id="last-completed-year-outlay" data-dollar-amount="{{ page.last_completed_year_outlay | default: 0 }}"> 
+              {{ page.last_completed_year_outlay | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
+            </span>
+          </div>
+      </div>
+      <div class="payment-rate-box">
+        <div class="usa-label">Improper Payment Estimate</div>
+        <div class="usa-label font-heading-2xs ip-last-reported-subheader">Last Reported</div>
+        <div class="font-heading-md">
+          <span class="usa-tag ip-box">
+            <span id="improper-payments-percent">Rate: {{ page.improper_payments_percent | default: 0 | round: 0}}</span>%  |  
+            <span> Amount: </span><span id="improper-payments-total" data-dollar-amount="{{ page.improper_payments_total | default: 0 }}">
+              {{ page.improper_payments_total | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% else %}
+<div id="improper-payment-card-container">
+  <div class="improper-payment-card">
+    <div class="improper-payment-card-container" style="align-items: flex-start;">
+
+      <!-- Left Side: Fiscal Year and Outlays -->
+      <div class="payment-info">
+          <div class="font-heading-md ip-outlay-text">
+            <span class="ip-outlay-dot">•</span>
+            <span>FY {{ last_completed_fiscal_year }} Outlay</span>
+          </div>
+          <div class="font-heading-xl ip-fy-outlay-amount">
+            <span id="last-completed-year-outlay" data-dollar-amount="{{ page.last_completed_year_outlay | default: 0 }}"> 
+              {{ page.last_completed_year_outlay | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
+            </span>
+          </div>
+          <!-- Add text for "Expended so far this year" if needed -->
+      </div>
+
+      <!-- Right Side: Improper Payment Amount Box -->
+      <div class="payment-rate-box">
+        <div class="usa-label">Improper Payment Estimate</div>
+        <div class="usa-label font-heading-2xs ip-last-reported-subheader">Last Reported</div>
+        <div class="font-heading-md">
+          <span class="usa-tag ip-box">
+            <span id="improper-payments-percent">Rate: {{ page.improper_payments_percent | default: 0 | round: 0}}</span>%  |  
+            <span> Amount: </span><span id="improper-payments-total" data-dollar-amount="{{ page.improper_payments_total | default: 0 }}">
+              {{ page.improper_payments_total | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
+            </span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,41 +1,77 @@
 ---
 applicant_types:
+- title: Active-Duty Service Person (including dependents
+- title: Airport Authority
 - title: Alaska Native and Native Hawaiian Serving Institutions
 - title: Anyone/general public
+- title: Builder/Contractor/Developer
 - title: City or Township Government
 - title: County Government
+- title: County Government (inclusive of boroughs in Alaska, parishes and other governmental
+    entities with geographic regional control and authority)
+- title: Department or Agency of a U.S. State Government
+- title: Department or Agency of a U.S. Territorial Government
+- title: Farmworker
 - title: Federal
 - title: Federally Recognized Indian Tribal Governments
+- title: Federally Recognized Indian/Native American/Alaska Native Tribal Government
+- title: For-Profit Organization
 - title: For-Profit Organization (Other than Small Business)
+- title: Foreign Government
+- title: Foreign Non-Government Nonprofit Organization
+- title: Foreign Non-Government Not-for-Profit Organization
+- title: Foreign Non-Governmental For-Profit Organization
 - title: Government - General
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
+- title: Homeowner
 - title: Independent School District
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
+- title: Indian/Native American/Alaska Native Tribal Government (Other than Federally
+    Recognized)
 - title: Individual/Family
+- title: International Organization
 - title: Interstate
+- title: Interstate Organization
 - title: Intrastate
+- title: Land/Property Owner
+- title: Local
 - title: Local (includes State-designated Indian Tribes, excludes institutions of
     higher education and hospitals
 - title: Minority group
+- title: Municipality or Township government (inclusive of cities, towns, boroughs
+    (except in Alaska), and villages)
 - title: Native American Organizations (includes Indian groups, cooperatives, corporations,
     partnerships, associations)
 - title: Non-Government - General
 - title: Non-domestic (non-US) Entity
+- title: Nonprofit Organization
 - title: Nonprofit with 501C3 IRS Status (Other than Institution of Higher Education)
 - title: Nonprofit without 501C3 IRS Status (Other than Institution of Higher Education)
+- title: Not-for-Profit Organization
+- title: Other
 - title: Other (specify)
+- title: Other Local Government Consortium, Regional Organization (Intrastate), or
+    Other Local Government Combination
+- title: Other Special Disctrict Government
 - title: Other private institutions/organizations
 - title: Other public institution/organization
+- title: Planning Commission
+- title: Port Authority
 - title: Private nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Profit organization
+- title: Public Housing Authority
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Public/Indian Housing Authority
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
+- title: Reservist (including dependents)
+- title: School District
+- title: School District Government
+- title: Small Business Person
 - title: Small business (less than 500 employees)
 - title: Special District Government
 - title: Specialized group (e.g. health professionals, students, veterans)
@@ -43,65 +79,67 @@ applicant_types:
 - title: State
 - title: State (includes District of Columbia, public institutions of higher education
     and hospitals)
+- title: Territorial
+- title: Transit Authority
+- title: Tribal
 - title: Tribally Controlled Colleges and Universities (TCCUs)
+- title: Tribally Designated Housing Authority
+- title: U.S. Federal Government
+- title: U.S. State Government (including the District of Columbia)
 - title: U.S. Territories and possessions
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
+- title: U.S. Territory (or Possession) Government (including freely-associated states)
+- title: Unrestricted by Entity Type
+- title: Unrestricted by Individual Type
+- title: Veteran (including dependents)
+- title: Water Delivery Authority
 categories:
-- sub_categories:
-  - title: Fees and Receipts
-  title: 2025 Debt Service
-- sub_categories:
-  - title: International Relations and Foreign Affairs
-  title: 2025 International Affairs
-- sub_categories:
-  - title: Defense Capability
-  title: 2025 National Defense
 - sub_categories:
   - title: Agricultural Resources and Services
   - title: Farm Income Stabilization
-  title: A Agricultural
+  title: Agricultural
 - sub_categories:
   - title: Business Development
   - title: Economic Development
-  title: B Business and Commerce
+  title: Business and Commerce
 - sub_categories:
   - title: Community, Area, and Regional Development
-  title: C Community Development
+  title: Community Development
 - sub_categories:
   - title: Consumer and Occupational Health and Safety
-  title: D Consumer Protection
+  title: Consumer Protection
 - sub_categories:
   - title: Access and Appreciation
   - title: Artistic Talent Development
   - title: Cultural Heritage and Traditions
   - title: Cultural Institutions
-  title: E Cultural Affairs
+  title: Cultural Affairs
+- sub_categories:
+  - title: Fees and Receipts
+  title: Debt Service
 - sub_categories:
   - title: Disaster Readiness, Response, and Relief
-  title: F Disaster Prevention and Relief
+  title: Disaster Prevention and Relief
 - sub_categories:
   - title: Early Childhood Education and Childcare
   - title: Educational Environments
   - title: K–12 Education
   - title: Post–Secondary Education
   - title: STEM Education
-  title: G Education
+  title: Education
 - sub_categories:
   - title: Workforce Development
-  title: H Employment and Labor
+  title: Employment and Labor
 - sub_categories:
   - title: Energy Supply
-  title: I Energy
-- sub_categories:
-  - title: Interest on the Public Debt
-  title: Interest on the Public Debt
+  title: Energy
 - sub_categories:
   - title: Pollution Control and Abatement
-  title: J Environmental Quality
+  title: Environmental Quality
 - sub_categories:
   - title: Food and Nutrition Assistance
-  title: K Food and Nutrition
+  title: Food and Nutrition
 - sub_categories:
   - title: Child Welfare
   - title: Health and Wellbeing
@@ -109,14 +147,20 @@ categories:
   - title: Healthcare Innovation
   - title: Healthcare Quality and Delivery
   - title: Veteran Health
-  title: L Health
+  title: Health
 - sub_categories:
   - title: Housing and Homelessness
-  title: M Housing
+  title: Housing
 - sub_categories:
   - title: Burial Benefits
   - title: Personal Financial Health
-  title: N Income Security and Social Services
+  title: Income Security and Social Services
+- sub_categories:
+  - title: Interest on the Public Debt
+  title: Interest on the Public Debt
+- sub_categories:
+  - title: International Relations and Foreign Affairs
+  title: International Affairs
 - sub_categories:
   - title: Border Security
   - title: Cybersecurity
@@ -124,21 +168,18 @@ categories:
   - title: Law Enforcement Support
   - title: Legal Services
   - title: Tribal Independence and Autonomy
-  title: P Law, Justice, and Legal Services
+  title: Law, Justice, and Legal Services
+- sub_categories:
+  - title: Defense Capability
+  title: National Defense
 - sub_categories:
   - title: Conservation and Land Management
   - title: Recreational Resources
   - title: Water Resources
-  title: Q Natural Resources
+  title: Natural Resources
 - sub_categories:
   - title: General science and basic research
-  title: S Science and Technology
-- sub_categories:
-  - title: Air Transportation
-  - title: Ground Transportation
-  - title: Multi–modal Transportation
-  - title: Water Transportation
-  title: T Transportation
+  title: Science and Technology
 - sub_categories:
   - title: Agriculture
   - title: Commerce and Housing
@@ -157,6 +198,12 @@ categories:
   - title: Transportation
   - title: Veterans Benefits and Services
   title: Tax Expenditures
+- sub_categories:
+  - title: Air Transportation
+  - title: Ground Transportation
+  - title: Multi–modal Transportation
+  - title: Water Transportation
+  title: Transportation
 cfo_agencies:
 - title: Agency for International Development
 - sub_categories:
@@ -192,7 +239,6 @@ cfo_agencies:
   title: Department of Commerce
 - sub_categories:
   - title: DEFENSE HUMAN RESOURCES ACTIVITY
-  - title: DEFENSE INTELLIGENCE AGENCY (DIA)
   - title: DEFENSE POW-MIA ACCOUNTING AGENCY (DPAA)
   - title: DEFENSE SECURITY COOPERATION AGENCY (DSCA)
   - title: Defense Advanced Research Projects Agency  (DARPA)
@@ -233,7 +279,6 @@ cfo_agencies:
   - title: National Institutes of Health
   - title: Office Of The Assistant Secretary For Administration (ASA)
   - title: Office of Assistant Secretary for Health
-  - title: Office of the National Coordinator for Health Information Technology (ONC)
   - title: Office of the Secretary
   - title: Substance Abuse and Mental Health Services Administration
   - title: Unspecified
@@ -268,7 +313,6 @@ cfo_agencies:
 - sub_categories:
   - title: Bureau of International Labor Affairs
   - title: Bureau of Labor Statistics
-  - title: Employee Benefits Security Administration
   - title: Employment Training Administration
   - title: Mine Safety and Health Administration
   - title: Occupational Safety and Health Administration
@@ -339,7 +383,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2024'
+fiscal_year: '2025'
 layout: home
 other_agencies:
 - title: Appalachian Regional Commission
@@ -353,7 +397,6 @@ other_agencies:
   - title: Denali Commission
   - title: Unspecified
   title: Denali Commission
-- title: Equal Employment Opportunity Commission
 - sub_categories:
   - title: Executive Office of the President
   - title: Unspecified
@@ -364,7 +407,6 @@ other_agencies:
   - title: Unspecified
   title: Federal Communications Commission
 - title: Federal Financial Institutions Examination Council Appraisal Subcommittee
-- title: Federal Permitting Improvement Steering Council
 - title: Gulf Coast Ecosystem Restoration Council
 - sub_categories:
   - title: Inter-American Foundation
@@ -381,10 +423,7 @@ other_agencies:
 - title: National Council on Disability
 - title: National Credit Union Administration
 - title: National Endowment for the Arts
-- sub_categories:
-  - title: National Endowment for the Humanities
-  - title: Unspecified
-  title: National Endowment for the Humanities
+- title: National Endowment for the Humanities
 - title: Northern Border Regional Commission
 - title: Office of the Director Of National Intelligence
 - title: Pension Benefit Guaranty Corporation
@@ -409,12 +448,13 @@ program_types:
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
+- title: Financial
 - title: Formula Grants
 - title: Government Service
 - title: Guaranteed / Insured Loans
 - title: Insurance
 - title: Interest
-- title: Investigation of Complaints
+- title: Non-Financial
 - title: Project Grants
 - title: Provision of Specialized Services
 - title: Salaries and Expenses

@@ -3,6 +3,8 @@ layout: default
 footer_include: _footer-program.html
 ---
 
+{% include scripts/_dollar-standardization.html %}
+
 <div class="grid-container">
 
   <div class="grid-row grid-gap">
@@ -14,7 +16,7 @@ footer_include: _footer-program.html
       {% include components/_page-title.html display_aka=true %}
 
       <!-- Tab Navigation -->
-      {% assign program_tabs = "Overview,Spending,Results,Policies,Oversight" | split: "," %}
+      {% assign program_tabs = "Overview,Spending,Results,Authorization,Oversight" | split: "," %}
       {% include components/_tab-navigation.html tabs=program_tabs %}
 
       <!-- Tab Panels -->
@@ -24,86 +26,87 @@ footer_include: _footer-program.html
         <div class="grid-row grid-gap padding-bottom-205">
           <!-- Overview Header -->
           <div class="grid-col-10 margin-bottom-2">
-            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Overview</h2>
-            <p class="font-sans-sm margin-top-0 margin-bottom-3">
-              {{page.objective}}
+            <h2 class="text-bold margin-top-0 margin-bottom-1">Overview</h2>
+            <p class="margin-top-0 margin-bottom-3" style="line-height: 1.5;">
+              {% assign program_description = "Description not yet available." %}
+              {% if page.objective != nil and page.objective != '' %}
+                {% assign program_description = page.objective %}
+              {% endif %}
+              {{ program_description }}
             </p>
             
             <!-- Sub-categories Tags -->
-            {% assign parsed_categories = page.categories | parse_categories %}
-            {% include components/_subcategory-tags.html categories=parsed_categories.main sub_categories=parsed_categories.sub %}
+            {% include components/_subcategory-tags.html categories=page.categories %}
           </div>
           <!-- Overview Content -->
-          <div class="grid-col-12 grid-row grid-gap margin-bottom-4">
+          <div class="grid-col-12 grid-row grid-gap margin-bottom-4" style="margin:0;">
             <!-- Side bar -->
-            <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;">
-              
-              {% if page.gwo != nil %}
-              <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
-                <h2 class="font-sans-md text-bold">Purpose</h2>
-                {% include components/_view-results.html href="#" %}
-              </div>
-              <h4 class="font-sans-xs text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
-                {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=32 icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
-              {% endif %}
-
-              {% if page.pons != nil and page.pons.size > 0 %}
-              <h4 class="font-sans-xs text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
-              <ul class="usa-list usa-list--unstyled ">
-                {% for pon in page.pons %}
-                  <li>
-                    {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=12 icon="radio_button_unchecked" %}
-                  </li>
-                {% endfor %}
-              </ul>
+            {% assign has_pons = true %}
+            {% assign has_purpose = true %}
+            {% if page.pons == nil or page.pons.size == 0 %}
+              {% assign has_pons = false %}
+            {% endif %}
+            {% if page.gwo == nil and has_pons == false %}
+              {% assign has_purpose = false %}
             {% endif %}
 
-            </div>
-            <!-- Data Display -->
-            <div class="grid-col-8 border-top-2px border-base" style="border-top: 1px dotted #000;">
-              <!-- Header -->
-              <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
-                <h2 class="font-sans-md text-bold">Expenditures</h2>
-                {% include components/_view-results.html href="#" %}
+            {% if has_purpose == true %}
+              <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;">
+                <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
+                  <h2 class="text-bold">Purpose</h2>
+                </div>
+                {% if page.gwo != nil %}
+                <h4 class="text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
+                  {% assign gwo_target_count = 0 %}
+                  {% if page.gwo and page.gwo.permalink %}
+                    {% assign gwo_id = page.gwo.permalink | split: '/' | last %}
+                    {% assign gwo_data = site.gwo | where: "permalink", page.gwo.permalink | first %}
+                    {% if gwo_data and gwo_data.where_used %}
+                      {% assign gwo_target_count = gwo_data.where_used | size %}
+                    {% endif %}
+                  {% endif %}
+                  {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=gwo_target_count icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
+                {% endif %}
+
+                {% if has_pons == true %}
+                <h4 class="text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
+                <ul class="usa-list usa-list--unstyled ">
+                  {% for pon in page.pons %}
+                    {% assign pon_target_count = 0 %}
+                    {% if pon.permalink %}
+                      {% assign pon_data = site.pon | where: "permalink", pon.permalink | first %}
+                      {% if pon_data and pon_data.where_used %}
+                        {% assign pon_target_count = pon_data.where_used | size %}
+                      {% endif %}
+                    {% endif %}
+                    <li>
+                      {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=pon_target_count icon="radio_button_unchecked" %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
               </div>
+            {% endif %}
+            <!-- Data Display -->
+            <div class="grid-col-fill border-top-2px border-base" style="border-top: 1px dotted #000;">
+              <!-- Header -->
+              <div class="display-flex flex-justify flex-align-center margin-top-2">
+                <h2 class="text-bold">Spending</h2>
+                {% include components/_view-results.html href="#" text="View spending details" onclick="document.getElementById('spending-tab').click();" %}
+              </div>
+              <!-- FY Outlay & Improper Payment Rate -->
+              {% include components/_improper-payment.html %}
               <!-- Graph Start -->
-              <div class="grid grid-row bg-base-lightest gap-2 radius-md padding-x-2 padding-bottom-4 margin-bottom-6">
-
-                <!-- Summary Card -->
-                <div style="width: 232px;" class="margin-top-4 grid-col-5">
-                  <div class="bg-white padding-4 radius-sm border-1px border-base-lighter" style="height: 304px; display: flex; flex-direction: column;">
-                    <!-- Header with indicator -->
-                    <div class="display-flex flex-align-center gap-2 margin-bottom-2">
-                      <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #FF8060; margin-right: 4px;"></div>
-                      <p class="font-sans-xs text-base-darker margin-0" id="expenditure-year">Loading...</p>
-                    </div>
-                    
-                    <!-- Main value -->
-                    <p class="font-sans-xl text-bold text-ink margin-bottom-1 margin-top-0" id="expenditure-amount">Loading...</p>
-                    <p class="text-base-darker margin-top-0" style="font-size: 12px;" id="expenditure-change">Loading...</p>
-                    
-                    <!-- Improper Payment Section -->
-                    <div class="bg-white margin-top-4 padding-2 padding-y-2 radius-md border-1px border-base-lighter margin-top-auto">
-                      <p class="font-sans-sm text-base-dark margin-bottom-1 margin-top-0">Improper Payment Rate</p>
-                      <p class="font-sans-xl text-bold text-ink margin-top-0 margin-bottom-0">10%</p>
-                      
-                      <!-- Progress bar -->
-                      <div class="bg-base-lightest radius-pill margin-top-2" style="width: 100%; height: 8px;">
-                        <div class="bg-base-darkest radius-pill" style="height: 8px; width: 10%; border-radius: 4px 0 0 4px;"></div>
-                      </div>
-                    </div>
-                  </div>
+              {% assign outlays = page.outlays %}
+              {% if outlays == nil and page.other_program_spending != nil %}
+                {% assign outlays = page.other_program_spending %}
+              {% endif %}
+              <h3 id="chart-header" class="font-heading-sm">Outlays by Fiscal Year</h3>
+              <div class="grid grid-row radius-md">
+                <div class="grid-col-12">
+                  <div id="chart" style="width:100%" data-outlays='{{ outlays }}'></div>
+                  <p id="no-chart" class="hide">Expenditures not yet available.</p>
                 </div>
-
-                <!-- Chart Container -->
-                <div id="outlaysChartContainer" style="width: 248px;" class="grid-col-7 display-flex flex-column flex-align-center flex-justify-center">
-                  <div id="outlaysChart" style="height: 200px;" class="margin-top-4"></div>
-                    <!-- Chart Header -->
-                      <div class="padding-top-4 margin-bottom-2">
-                        <h3 class="font-sans-xs text-base-darker">Expenditure by Fiscal Year</h3>
-                      </div>
-                </div>
-
               </div>
               <!-- Graph End -->
             </div>
@@ -116,14 +119,18 @@ footer_include: _footer-program.html
       <div id="spending-panel" role="tabpanel" aria-labelledby="spending-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-3">Program Spending</h2>
+            <h2 class="text-bold margin-top-0 margin-bottom-3">Spending</h2>
+            {% include components/_spending-chart.html
+              outlays=outlays %}
+
+            <h2 class="text-bold margin-top-0 margin-bottom-3">Program Spending</h2>
 
             <!-- Legacy Notification Bar -->
             <div id="improper-payment">
               {% if page.improper_payments == null %}
               <div class="usa-alert usa-alert--success">
                 <div class="usa-alert__body">
-                  <p class="usa-alert__text font-family-sans">
+                  <p class="usa-alert__text">
                     This program is not associated with any Improper Payment Program Activities that were at risk of
                     significant improper payments.
                   </p>
@@ -162,19 +169,19 @@ footer_include: _footer-program.html
             <div class="display-flex margin-bottom-4" style="gap: 1rem;">
               <!-- Obligation History Chart -->
               <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md">
-                <h3 id="obligationChartTitle" class="font-sans-md margin-bottom-2">Obligation History</h3>
+                <h3 id="obligationChartTitle" class="margin-bottom-2">Obligation History</h3>
                 <div id="obligationChartContainer" class="display-flex flex-column flex-align-center flex-justify-center">
                   <div id="obligationChart" class="width-full"></div>
                 </div>
               </div>
               <!-- Detailed Obligations Table -->
               <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md padding-left-2">
-                <h3 id="obligationTableTitle" class="font-sans-md margin-bottom-3">Detailed Obligations</h3>
+                <h3 id="obligationTableTitle" class="margin-bottom-3">Detailed Obligations</h3>
                 <table class="usa-table usa-table--unstyled width-full" id="obligation-table">
                   <thead>
                     <tr>
-                      <th scope="col" class="text-left text-base padding-2 font-sans-sm" style="width: 50%;">FISCAL YEAR</th>
-                      <th scope="col" class="text-right text-base padding-2 font-sans-sm" style="width: 50%;">AMOUNT</th>
+                      <th scope="col" class="text-left text-base padding-2" style="width: 50%;">FISCAL YEAR</th>
+                      <th scope="col" class="text-right text-base padding-2" style="width: 50%;">AMOUNT</th>
                     </tr>
                   </thead>
                   <tbody id="obligation-table-body">
@@ -191,54 +198,31 @@ footer_include: _footer-program.html
       <div id="results-panel" role="tabpanel" aria-labelledby="results-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Program Results</h2>
+            <h2 class="text-bold margin-top-0 margin-bottom-1 padding-bottom-4">Program Results</h2>
             <!-- Program Results Start -->
             {% if page.results and page.results.size > 0 %}
-            <div id="program-results">
-                <ol class="usa-process-list no-numbers">
-                  {% assign sorted_results = page.results | sort: 'year' %}
-                  {% for result in sorted_results %}
-                  <li class="usa-process-list__item padding-bottom-4">
-                    <h4 class="usa-process-list__heading font-sans-xl line-height-sans-1">
-                      {{ result.year }}
-                    </h4>
-                    <p class="font-sans-md margin-top-1">
-                      {{ result.description | markdownify }}
-                    </p>
-                  </li>
-                  {% endfor %}
-                </ol>
-            </div>
+              <div id="program-results">
+                {% assign sorted_results = page.results | sort: 'year' %}
+                {% for result in sorted_results %}
+                  <div class="padding-bottom-4">
+                    <div class="font-heading-lg text-bold">{{ result.year }}</div>
+                    <p class="margin-top-1 desc-line-spacing">{{ result.description | markdownify }}</p>
+                  </div>
+                {% endfor %}
+              </div>
             {% endif %}
             <!-- Program Results End -->
           </div>
         </div>
       </div>
       
-      <!-- Policies Panel -->
-      <div id="policies-panel" role="tabpanel" aria-labelledby="policies-tab" class="tab-panel display-none">
+      <!-- Authorization Panel -->
+      <div id="authorization-panel" role="tabpanel" aria-labelledby="authorization-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Policies & Regulations</h2>
-            <p>Policy information and regulatory details will be displayed here.</p>
-            {% if page.authorizations and page.authorizations.size > 0 %}
-            <div id="program-authorizations">
-                <ol class="usa-list">
-                  {% for auth in page.authorizations %}
-                  <li class="padding-bottom-2">
-                    <span class="font-sans-md">
-                      {% if auth.url %}
-                      <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
-                        auth.text }}</a>
-                      {% else %}
-                      {{ auth.text }}
-                      {% endif %}
-                    </span>
-                  </li>
-                  {% endfor %}
-                </ol>
-            </div>
-            {% endif %}
+            {% include components/_authorization-tab.html
+              authorizations=page.authorizations
+              rules_regulations=page.rules_regulations %}
           </div>
         </div>
       </div>
@@ -247,10 +231,10 @@ footer_include: _footer-program.html
       <div id="oversight-panel" role="tabpanel" aria-labelledby="oversight-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="font-sans-lg text-bold margin-top-0 margin-bottom-1">Oversight & Audits</h2>
+            <h2 class="text-bold margin-top-0 margin-bottom-1">Oversight & Audits</h2>
             <p>Oversight activities and compliance information will be displayed here.</p>
             <div id="program-single-audit">
-              <p class="font-family-sans line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
+              <p class="line-height-body-4 text-bold margin-bottom-1 display-flex flex-align-center">
                 Single Audit Applies (2 CFR Part 200 Subpart F):
                 {% if page.is_subpart_f == 1 %}
                 <svg class="usa-icon text-success margin-left-1" style="width: 1.5rem; height: 1.5rem;" aria-hidden="true"
@@ -264,7 +248,7 @@ footer_include: _footer-program.html
                 </svg>
                 {% endif %}
               </p>
-              <p class="font-family-sans line-height-body-4">
+              <p class="line-height-body-4">
                 For additional information on single audit requirements for this program, review the current
                 <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
                   class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
@@ -290,31 +274,36 @@ footer_include: _footer-program.html
          title_weight="text-bold"
          items=main_categories 
          icon="assessment" 
-         margin_class="margin-bottom-2" 
+         margin_class="margin-bottom-2"
+         data_filter_type="category"
          icon_class="margin-right-1" %}
 
       <!-- Program Types Section -->
-    {% include components/_list-section.html 
-       title="Program Type" 
-       data_key="assistance_types" 
-       icon="settings" 
-       icon_style="min-width: 1rem; width: 1rem; height: 1rem;" 
-       additional_class="margin-top-0" %}
+      {% include components/_list-section.html
+         title="Program Type"
+         title_weight="text-bold"
+         data_key="assistance_types"
+         icon="settings"
+         icon_style="min-width: 1rem; width: 1rem; height: 1rem;"
+         margin_class="margin-bottom-2"
+         data_filter_type="assistance"
+         icon_class="margin-right-1" %}
 
-    <!-- Eligible Beneficiaries Section -->
-    {% include components/_list-section.html 
-       title="Beneficiaries" 
-       data_key="beneficiary_types" 
-       icon="person" 
-       icon_style="min-width: 1rem; width: 1rem; height: 1rem;" 
+      <!-- Eligible Beneficiaries Section -->
+      {% include components/_list-section.html
+       title="Beneficiaries"
+       data_key="beneficiary_types"
+       icon="person"
+       icon_style="min-width: 1rem; width: 1rem; height: 1rem;"
        span_class="flex-fill" %}
 
-        <!-- Eligible Applicants Section -->
-    {% include components/_list-section.html 
-       title="Applicants" 
-       title_weight="text-bold" 
-       data_key="applicant_types" 
-       icon="grid_view" 
+      <!-- Eligible Applicants Section -->
+      {% include components/_list-section.html
+       title="Applicants"
+       title_weight="text-bold"
+       data_key="applicant_types"
+       icon="grid_view"
+       data_filter_type="applicant"
        icon_style="min-width: 1rem; width: 1rem; height: 1rem;" %}
   </div>
 </div>

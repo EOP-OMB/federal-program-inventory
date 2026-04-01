@@ -1,5 +1,5 @@
 ---
-category: 2025 International Affairs
+category: International Affairs
 definition: 'A program whose beneficiaries demonstrated one or more of the following
   results within the past year: -Facilitated partnerships between local small businesses
   and international investors or markets; -Strengthened support systems, including

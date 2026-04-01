@@ -3,12 +3,10 @@
 #          files that are ultimately served by nginx. This is not the final
 #          image.
 FROM ruby:3.2.2 AS build-image
-ENV NODE_VERSION=18.17.1
-ENV NVM_DIR=/root/.nvm
-ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 ARG http_proxy
 ARG https_proxy
 ARG no_proxy
+ARG TEST_ENV=false
 
 ENV http_proxy=$http_proxy \
     https_proxy=$https_proxy \
@@ -16,6 +14,9 @@ ENV http_proxy=$http_proxy \
     HTTP_PROXY=$http_proxy \
     HTTPS_PROXY=$https_proxy \
     NO_PROXY=$no_proxy
+ENV NODE_VERSION=18.17.1
+ENV NVM_DIR=/root/.nvm
+ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 
 WORKDIR /app
 COPY ./Gemfile /app/Gemfile
@@ -29,7 +30,20 @@ RUN apt-get clean && \
     npm install --legacy-peer-deps chart.js && \
     bundle install
 
-COPY . /app
+COPY ./prepare-test-files-website.sh /prepare-test-files-website.sh
+COPY ./cypress /cypress
+COPY ./ /app
+
+# Use test data and md files in test environment
+RUN if [ "${TEST_ENV}" = "true" ]; then \
+        echo "Test profile detected. Preparing test markdown files..."; \
+        chmod +x /prepare-test-files-website.sh && \
+        cd / && \
+        TEST_ENV=true /prepare-test-files-website.sh || echo "Warning: prepare-test-files-website.sh failed"; \
+    else \
+        echo "Test profile not active. Skipping test file preparation."; \
+    fi
+
 RUN bundle exec jekyll build && \
     npx gulp updateUswds
 
@@ -43,6 +57,7 @@ FROM nginxinc/nginx-unprivileged:alpine AS runtime-image
 ARG http_proxy
 ARG https_proxy
 ARG no_proxy
+ARG TEST_ENV=false
 
 ENV http_proxy=$http_proxy \
     https_proxy=$https_proxy \
@@ -51,6 +66,12 @@ ENV http_proxy=$http_proxy \
     HTTPS_PROXY=$https_proxy \
     NO_PROXY=$no_proxy
 
-COPY nginx.conf /etc/nginx/nginx.conf
+# Use local api in test environment
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf.local /etc/nginx/nginx.conf.local
+RUN if [ "${TEST_ENV}" = "true" ]; then \
+    cp -rf /etc/nginx/nginx.conf.local /etc/nginx/nginx.conf; \
+    fi
+
 COPY --from=0 /app/_site /usr/share/nginx/html
 EXPOSE 8080

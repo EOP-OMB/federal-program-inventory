@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- L Health - Healthcare Access
+- Health - Healthcare Access
 - Tax Expenditures - Health
 cfda: TC.139
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Strengthen Healthcare Services
   permalink: /gwo/L14
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all profits under the regular
   tax rate schedule using broadly applicable measures of baseline income. It would
@@ -31,7 +34,7 @@ objective: The baseline tax system generally would tax all profits under the reg
   expenses exceeds its beginning-of-the-year accounting surplus. The deduction is
   limited to the insurer’s taxable income determined without the special deduction.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.139.html
 pons:

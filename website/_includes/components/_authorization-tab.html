@@ -1,0 +1,39 @@
+{% assign authorization_and_rules_missing = true %}
+{% if include.authorizations and include.authorizations.size > 0 %}
+    {% assign authorization_and_rules_missing = false %}
+    <h2 class="text-bold margin-top-0 margin-bottom-1">Authorizing Statutes</h2>
+    <div id="program-authorizations">
+        <ul class="usa-list">
+        {% for auth in include.authorizations %}
+        <li class="padding-bottom-2">
+            <span>
+            {% if auth.url %}
+                <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
+            {% else %}
+                {{ auth.text }}
+            {% endif %}
+            </span>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+{% if include.rules_regulations != nil and include.rules_regulations != '' %}
+    {% assign authorization_and_rules_missing = false %}
+    <h2 class="text-bold margin-top-0 margin-bottom-1">Rules & Regulations</h2>
+    <div id="rules-and-regulations">
+    <ul class="usa-list">
+        <!-- single list item is intentional -->
+        <li class="padding-bottom-2">
+        <span>
+            {{ include.rules_regulations }}
+        </span>
+        </li>
+    </ul>
+    </div>
+{% endif %}
+
+{% if authorization_and_rules_missing == true %}
+    <p>Not available.</p>
+{% endif %}

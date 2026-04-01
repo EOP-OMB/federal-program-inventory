@@ -6,23 +6,26 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Income Security
 cfda: TC.146
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: Under the reference tax law baseline, gifts and transfers are not treated
   as income to the recipients. In contrast, the normal tax method considers cash transfers
   from the Government as part of the recipients’ income, and thus, treats the exclusion
   for public assistance benefits under current law as a tax expenditure.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":810000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":810000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.146.html
 pons:

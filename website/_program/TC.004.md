@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- B Business and Commerce - Economic Development
+- Business and Commerce - Economic Development
 - Tax Expenditures - International Affairs
 cfda: TC.004
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Expand Trade and Market Access
   permalink: /gwo/B3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: Under the baseline tax system, worldwide income forms the tax base of U.S.
   corporations. In contrast, U.S. tax law exempts or preferentially taxes certain
@@ -29,7 +32,7 @@ objective: Under the baseline tax system, worldwide income forms the tax base of
   tax, and distributions out of active income are no longer taxed upon repatriation.
   These reductions and exemptions from U.S. taxation are considered tax expenditures.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":45190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":36060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":37140000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":30540000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":45190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":36060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":37140000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.004.html
 pons:

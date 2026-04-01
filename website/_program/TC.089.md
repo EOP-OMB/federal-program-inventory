@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- T Transportation - Multi–modal Transportation
 - Tax Expenditures - Transportation
+- Transportation - Multi–modal Transportation
 cfda: TC.089
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Improve Commercial Distribution Infrastructure
   permalink: /gwo/T1
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all profits and income under
   the regular tax rate schedule. It would not allow preferentially low (or zero) tax
@@ -25,7 +28,7 @@ objective: The baseline tax system generally would tax all profits and income un
   modernization and major repairs to ships, and repayment of loans to finance these
   investments).
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":60000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":10000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":60000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.089.html
 pons:

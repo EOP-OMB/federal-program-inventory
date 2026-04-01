@@ -8,47 +8,45 @@ footer_include: _footer-gwo-pon.html
     <div class="grid-col-9 margin-bottom-2">
       <!-- Header -->
       <div
-        class="display-flex flex-align-center gap-1 font-sans-sm text-ink margin-bottom-4 margin-top-4"
+        class="display-flex flex-align-center gap-1 text-ink margin-bottom-4 margin-top-4"
       >
-        <svg
-          class="usa-icon margin-right-1"
-          aria-hidden="true"
-          focusable="false"
-          role="img"
-        >
-          <use href="/assets/img/sprite.svg#flag"></use>
-        </svg>
-        <span>Government-wide Objective</span>
+        Government-wide Objective
       </div>
       <!-- Page Title -->
       {% include components/_page-title.html display_aka=false %}
 
+      {% assign default_page_description = "Description not yet available" %}
+      {% if page.definition == '' or page.definition == nil %}
+        {% assign page_definition = default_page_description %}
+      {% else %}
+        {% assign page_definition = page.definition %}
+      {% endif %}
+
       <div class="grid-row grid-gap margin-bottom-2">
         <p class="margin-top-0 margin-bottom-0">
-          {{page.definition | default: 'N/A'}}
+          {{ page_definition }}
         </p>
       </div>
 
-      {% assign gwo_categories = page.category | split: ',' %} {% assign
-      gwo_focus_areas = page.focus_area | split: ',' %} {% include
-      components/_subcategory-tags.html categories=gwo_categories
-      sub_categories=gwo_focus_areas %}
+      {% assign combined_category_subcategory = page.category %}
+      {% if page.focus_area != nil and page.focus_area != "" %}
+        {% assign combined_category_subcategory = combined_category_subcategory | append: " - " | append: page.focus_area %}
+      {% endif %}
+      {% assign combined_category_subcategories = "" | split: ',' %}
+      {% assign combined_category_subcategories = combined_category_subcategories | push: combined_category_subcategory %}
+      {% include components/_subcategory-tags.html categories=combined_category_subcategories %}
 
       {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
       {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
-      {% assign current_fy_outlays_title = "FY " | append: current_fiscal_year | append: " Outlays" %}
+      {% assign current_fy_obligations_title = "FY " | append: current_fiscal_year | append: " Obligations" %}
       {% assign fy_date_text = "FY " | append: fiscal_year %}
-
-      <!-- Tab Navigation -->
-      {% assign program_tabs = "Programs,Goals" | split: "," %} {% include
-      components/_tab-navigation.html tabs=program_tabs %}
 
       <!-- Programs Panel-->
       <div
         id="programs-panel"
         role="tabpanel"
         aria-labelledby="programs-tab"
-        class="tab-panel"
+        class="tab-panel border-top-2px border-base-light"
       >
         {% include scripts/_data-utils.html programs=page.where_used %}
 
@@ -59,14 +57,15 @@ footer_include: _footer-gwo-pon.html
             display_number=program_count grid="grid-col" margin="margin-right-1" %} 
             <div data-dollar-amount="{{ total_expenditure }}" class="info-card-total-expenditure" style="display: none;">{{ total_expenditure }}</div>
             {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
-            {% include components/_info-card.html title=current_fy_outlays_title
-            display_number=total_expenditure_formatted text="Expended so far this year" grid="grid-col" %}
+            {% include components/_info-card.html title=current_fy_obligations_title
+            display_number=total_expenditure_formatted grid="grid-col" %}
             {% include components/_info-card.html title="Agencies"
             display_number=total_agencies grid="grid-col" margin="margin-left-1" %}
           </div>
           <div class="grid-col">
             {% include components/_insight-section.html program_number=program_count
-            expenditure_total=total_expenditure_formatted 
+            expenditure_total=total_expenditure_formatted
+            expenditure_total_value=total_expenditure
             largest_program_title=largest_program.name 
             largest_program_link=largest_program.permalink
             largest_program_expenditure=largest_program_expenditure 
@@ -75,15 +74,20 @@ footer_include: _footer-gwo-pon.html
             smallest_program_expenditure=smallest_program_expenditure %}
           </div>
           <div class="grid-col-12 padding-y-4 border-bottom-2px border-base" style="border-bottom: 1px dotted #000;">
+            <!-- Link to jump to the related programs table below. -->
+            <div class="text-left margin-bottom-1">
+                <a href="#related-programs" class="text-underline">View All Programs</a>
+            </div>
             <div id="objectiveChartContainer" class="width-full">
               <div id="objectiveChart" class="width-full"></div>
             </div>
           </div>
-          <div class="grid-col-12 padding-y-2">
-            <h2 class="text-bold font-sans-lg margin-bottom-4">Related Programs</h2>
+          <!-- Anchor target for the View All Programs link. -->
+          <div id="related-programs" class="grid-col-12 padding-y-2">
+            <h2 class="text-bold margin-bottom-4">Related Programs</h2>
             <div class="width-full">
               {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
-              {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | append: " Expenditure" | split: "," %}
+              {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | append: " Obligations" | split: "," %}
               {% assign table_widths = "40%,30%,30%" | split: "," %}
               {% assign table_alignments = "left,left,right" | split: "," %}
               {% assign table_types = "text,text,currency" | split: "," %}
@@ -92,16 +96,6 @@ footer_include: _footer-gwo-pon.html
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Goals Panel-->
-      <div
-        id="goals-panel"
-        role="tabpanel"
-        aria-labelledby="goals-tab"
-        class="tab-panel display-none"
-      >
-        <span> Outcomes content coming soon. </span>
       </div>
     </div>
   </div>

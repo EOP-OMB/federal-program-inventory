@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Income Security
 cfda: TC.152
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Tax Code provides an additional
@@ -26,7 +29,7 @@ objective: The baseline tax system would not allow credits for particular activi
   other filers in 2024. Starting in Tax Year 2027, the Saver’s Credit, which is nonrefundable,
   is replaced with the Saver’s Match, which is refundable.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1860000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1870000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1910000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":1260000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1860000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1870000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1910000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.152.html
 pons:

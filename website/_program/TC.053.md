@@ -6,23 +6,26 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- A Agricultural - Farm Income Stabilization
+- Agricultural - Farm Income Stabilization
 - Tax Expenditures - Agriculture
 cfda: TC.053
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
-  gwo: 'Provide Agricultural Incentives and Support '
+  gwo: Provide Agricultural Incentives and Support
   permalink: /gwo/A3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally subjects capital gains to taxes the year
   that they are realized. However, the Tax Code allows a taxpayer who sells stock
   in a farm refiner to a farmers’ cooperative to defer recognition of the gain if
   the proceeds are re-invested in a qualified replacement property.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":20000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":15000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.053.html
 pons:

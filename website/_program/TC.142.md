@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Income Security
 cfda: TC.142
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. Under current law, however, taxpayers with children
@@ -36,7 +39,7 @@ objective: The baseline tax system would not allow credits for particular activi
   $1,000 of modified AGI above $110,000 if married filing jointly ($75,000 for single
   or head of household filers and $55,000 for married taxpayers filing separately).
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0},{"x":"2025","outlays":45410000000.0,"forgone_revenue":60930000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":159000000000.0,"forgone_revenue":66840000000.0},{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0},{"x":"2025","outlays":45410000000.0,"forgone_revenue":60930000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.142.html
 pons:

@@ -14,7 +14,9 @@ function renderObjectiveTreeMap() {
 
   // Render the treemap using the utility function
   try {
-    renderTreeMap(treeMapData, 'objectiveChart', 'expenditure_amount', "#5A1645");
+    const rootStyle = getComputedStyle(document.documentElement);
+    const gwoTreemapBgColor = rootStyle.getPropertyValue('--gwo-treemap-bg').trim();
+    renderTreeMap(treeMapData, 'objectiveChart', 'expenditure_amount', gwoTreemapBgColor);
   } catch (error) {
     console.error('Error rendering treemap:', error);
   }

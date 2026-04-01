@@ -1,0 +1,51 @@
+---
+agency: Social Security Administration
+applicant_types:
+- Individual/Family
+assistance_types:
+- Direct Payments with Unrestricted Use
+authorizations:
+- text: II, Social Security Act of 1935. Pub. L. 401, 208. 42 U.S.C. &sect; 401-433.
+    II, as amended.
+  url: https://www.govinfo.gov/link/plaw/401/public/208
+beneficiary_types:
+- Child (6-15)
+- Individual/Family
+- Infant (0-5)
+- Pension Recipient
+- Senior Citizen (60+)
+- Women
+- Youth (16-21)
+categories:
+- N Income Security and Social Services - Personal Financial Health
+cfda: '96.002'
+fiscal_year: '2024'
+grants_url: https://grants.gov/search-grants?cfda=96.002
+gwo:
+  gwo: Bridge Financial Gaps with Transitional Income Assistance
+  permalink: /gwo/N3
+improper_payments: '[{"name":"Old-Age, Survivors, and Disability Insurance (OASDI)","outlays":1352425845053.0,"improper_payments":4092673091.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[{"id":"96.001","name":"Social
+  Security Disability Insurance","permalink":"/program/96.001"},{"id":"96.004","name":"Social
+  Security Survivors Insurance","permalink":"/program/96.004"}]}]'
+is_subpart_f: 0
+layout: program
+objective: The Social Security Retirement benefit is a monthly payment that replaces
+  part of your income when you reduce your hours or stop working altogether. The monthly
+  payment does not replace all of your income.
+obligations: '[{"x":"2023","sam_estimate":0.0,"sam_actual":1088924000000.0,"usa_spending_actual":1087609426151.0},{"x":"2024","sam_estimate":0.0,"sam_actual":1182463000000.0,"usa_spending_actual":1184564536138.0},{"x":"2025","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":745323247313.0}]'
+other_program_spending: null
+outlays: '[{"x":"2023","outlay":1087609426151.0,"obligation":1087609426151.0},{"x":"2024","outlay":1184564536138.0,"obligation":1184564536138.0},{"x":"2025","outlay":745323247313.0,"obligation":745323247313.0}]'
+pons:
+- permalink: /pon/861
+  pon: Increase Current Personal Financial Stability
+popular_name: Retirement (RIB)
+program_type: assistance_listing
+results: []
+rules_regulations: Code of Federal Regulations, Title 20, Parts 401, 404, and 422.
+  "Your Social Security", "Thinking About Retiring", and many other publications are
+  available from any Social Security office without charge.
+sam_url: https://sam.gov/fal/ff1bbbecfef04ab4ae2502f5f6c03524/view
+sub-agency: N/A
+title: Social Security Retirement Insurance
+usaspending_url: https://www.usaspending.gov/search/?hash=df3a96a46ba0184a79cc06d67bd85a34
+---

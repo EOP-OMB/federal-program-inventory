@@ -1,5 +1,5 @@
 ---
-category: 2025 Debt Service
+category: Debt Service
 definition: Ensuring government fees, taxes, and receipts are collected effectively,
   efficiently, and in full compliance with the law.
 focus_area: Fees and Receipts
@@ -8,14 +8,9 @@ permalink: /gwo/DS1
 title: 'Improved Collection of Fees and Receipts '
 where_used:
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: California Refuge Account
   permalink: /program/15.432
-  program_type: assistance_listing
-- agency: Department of the Treasury
-  expenditure_amount: 0.0
-  name: Exchange of Federal Tax Information With State Tax Agencies
-  permalink: /program/21.004
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 0.0
@@ -23,12 +18,12 @@ where_used:
   permalink: /program/IN.001
   program_type: interest
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Late Disbursement Interest
   permalink: /program/15.436
   program_type: assistance_listing
 - agency: General Services Administration
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Sale of Federal Surplus Personal Property
   permalink: /program/39.007
   program_type: assistance_listing

@@ -1,0 +1,45 @@
+<div class="grid-row">
+    <div class="grid-col-3" id="spending-chart-card">
+        <div class="spending-card-header">Spend Projections</div>
+        <div id="legend">
+            <div class="spending-card-item">
+                {% assign initial_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR | to_integer | minus: site.data.constants_global_dates.SPENDING_CHART_YEAR_RANGE %}
+                <span class="spending-card-subheader">Since FY {{ initial_year }}</span>
+            </div>
+            <div class="spending-card-item">
+                <span class="spending-card-line obligations"></span>
+                <span class="spending-card-label">Obligations</span>
+            </div>
+            <div class="spending-card-item">
+                <span class="spending-card-line outlays"></span>
+                <span class="spending-card-label">Outlays</span>
+            </div>
+            <div class="spending-card-item">
+                <span class="spending-card-line cy-outlays"></span>
+                <span class="spending-card-label">Current Year Outlays</span>
+            </div>
+            <div class="spending-card-item has-toggle" id="projection-legend-entry-heading">
+                <span class="spending-card-subheader">Since FY {{ site.data.constants_global_dates.BASELINE_INFLATION_YEAR }}</span>
+                <label class="switch" id="projection-toggle">
+                    <input type="checkbox" class="spending-chart-toggle" data-series="Identified" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="spending-card-item" id="projection-legend-entry">
+                <span class="spending-card-dots"></span>
+                <span class="spending-card-label">Inflation + Population Growth</span>
+            </div>
+        </div>
+    </div>
+    <div class="grid-col-fill">
+        <div
+            id="spending-chart"
+            data-inflation='{{ site.data.global_data.InflationPopulation | jsonify }}'
+            data-outlays='{{ include.outlays }}'
+            data-current-year="{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}"
+            data-baseline-inflation-year="{{ site.data.constants_global_dates.BASELINE_INFLATION_YEAR }}"
+            data-initial-year='{{ initial_year }}'>
+        </div>
+        <p id="no-spending-chart" class="hide">Expenditures not yet available.</p>
+    </div>
+</div>

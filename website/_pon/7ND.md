@@ -1,5 +1,5 @@
 ---
-category: 2025 National Defense
+category: National Defense
 definition: 'A program whose beneficiaries demonstrated one or more of the following
   results within the past year: -Conducted unit-level exercises or simulations to
   validate readiness for joint or strategic defense missions; -Met operational benchmarks
@@ -12,17 +12,17 @@ permalink: /pon/7ND
 title: Strengthen Operational Readiness of Defense Units
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 4166666.6
+  expenditure_amount: 10000000.0
   name: Cable Security Fleet Program
   permalink: /program/20.824
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 22500000.0
+  expenditure_amount: 0
   name: Tanker Security Program
   permalink: /program/20.825
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 5160000.0
   name: Training and Support – Combating Weapons of Mass Destruction
   permalink: /program/12.501
   program_type: assistance_listing
