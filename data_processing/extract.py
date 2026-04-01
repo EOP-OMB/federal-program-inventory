@@ -3,6 +3,8 @@ Extracts program information from various sources (e.g., SAM.gov).
 """
 
 import json
+import os
+import sys
 import time
 from string import ascii_lowercase
 import requests
@@ -10,10 +12,18 @@ import pandas as pd
 from tabula import read_pdf
 
 # file paths
-DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/will-fpi/"
-SOURCE_DIRECTORY = "federal-program-inventory/data_processing/source/"
-EXTRACTED_DIRECTORY = "federal-program-inventory/data_processing/extracted/"
+DISK_DIRECTORY = os.getenv('ETL_EXTRACT_DISK_DIRECTORY')
+SOURCE_DIRECTORY = os.getenv('ETL_EXTRACT_SOURCE_DIRECTORY')
+EXTRACTED_DIRECTORY = os.getenv('ETL_EXTRACT_EXTRACTED_DIRECTORY')
 
+if (DISK_DIRECTORY is None or
+    SOURCE_DIRECTORY is None or
+    EXTRACTED_DIRECTORY is None):
+    print("Error:  set the following environment variables:")
+    print("  ETL_EXTRACT_DISK_DIRECTORY")
+    print("  ETL_EXTRACT_SOURCE_DIRECTORY")
+    print("  ETL_EXTRACT_EXTRACTED_DIRECTORY")
+    sys.exit(1)
 
 def extract_assistance_listing():
     """Extracts assistance listings from SAM.gov and saves them as JSON."""
@@ -315,14 +325,11 @@ def clean_all_data():
     clean_json_data("dictionary.json")
     print("All Data Cleaning Complete")
 
-# Uncomment the necessary functions to extract new data.
-#
-# extract_assistance_listing()
-
-# extract_dictionary()
-# clean_all_data()
-# extract_organizations()
-# extract_usaspending_award_hashes()
+extract_assistance_listing()
+extract_dictionary()
+clean_all_data()
+extract_organizations()
+extract_usaspending_award_hashes()
 
 # In addition to functions above, data must be downloaded from USASpending.gov
 # at: https://www.usaspending.gov/download_center/award_data_archive

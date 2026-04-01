@@ -10,3 +10,5 @@ If baseline screenshots need to be updated:
 * Run `docker compose --profile test up --build`
 * Review the screenshots in `cypress/cypress-image-diff-screenshots/baseline`
 * Stage the changes to `cypress/cypress-image-diff-screenshots/baseline` with other changes
+
+Data updates typically should not impact tests.  However, when / if they do, consider updating `website/prepare-test-files-website.sh` or `website/cypress` to ensure that a stable dataset is used for each batch of tests.  The `website/cypress/data` directory is used to override global variables, and `website/cypress/pages` is used to overwrite data for specific pages.

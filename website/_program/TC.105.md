@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.105
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system accepts current law’s general rule limiting taxpayers’
   ability to deduct non-business interest expenses. In contrast, taxpayers may claim
@@ -25,7 +28,7 @@ objective: The baseline tax system accepts current law’s general rule limiting
   for other taxpayers). Married individuals filing separate returns cannot claim the
   deduction.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":560000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2540000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":560000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2540000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.105.html
 pons:

@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- C Community Development - Community, Area, and Regional Development
+- Community Development - Community, Area, and Regional Development
 - Tax Expenditures - Community and Regional Development
 cfda: TC.097
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Strengthen Community and Regional Development
   permalink: /gwo/C1
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. However, the Tax Code allows taxpayers who make qualified
@@ -25,7 +28,7 @@ objective: The baseline tax system would not allow credits for particular activi
   is generally $5 billion for each calendar year 2020 through 2025, the last year
   for which credit allocations are authorized.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1310000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1310000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.097.html
 pons:

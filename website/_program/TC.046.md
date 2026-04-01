@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- I Energy - Energy Supply
+- Energy - Energy Supply
 - Tax Expenditures - Natural Resources and Environment
 cfda: TC.046
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Increase Energy Reliability and Stability (Infrastructure)
   permalink: /gwo/I4
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would uniformly tax all returns to investments
   and not allow credits for particular activities, investments, or industries. In
@@ -27,7 +30,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   using equipment which was originally placed in service before February 9, 2018,
   or thereafter.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":330000000.0},{"x":"2024","outlays":140000000.0,"forgone_revenue":180000000.0},{"x":"2025","outlays":400000000.0,"forgone_revenue":530000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":360000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":330000000.0},{"x":"2024","outlays":140000000.0,"forgone_revenue":180000000.0},{"x":"2025","outlays":400000000.0,"forgone_revenue":530000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.046.html
 pons:

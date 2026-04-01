@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- G Education - Post–Secondary Education
+- Education - Post–Secondary Education
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.107
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Provide Finance Options for Post-Secondary Education
   permalink: /gwo/G7
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
   tax rate schedule. It would not allow preferentially low (or zero) tax rates to
@@ -24,7 +27,7 @@ objective: The baseline tax system generally would tax all income under the regu
   The volume of all such private activity bonds that each State may issue annually
   is limited.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":130000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":190000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":130000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.107.html
 pons:

@@ -4,6 +4,7 @@ set -e
 
 CYPRESS_MD_DIR="cypress/md"
 CYPRESS_DATA_DIR="cypress/data"
+CYPRESS_PAGES_DIR="cypress/pages"
 WEBSITE_PAGES_DIR="app/pages"
 WEBSITE_DATA_DIR="app/_data"
 TEST_PAGES_DIR="${WEBSITE_PAGES_DIR}/tests"
@@ -59,7 +60,7 @@ permalink: test/${markdown_filename}.html
     fi
 done
 
-# Copy data files
+# Copy data files for stable global data between tests
 if [ -d "${CYPRESS_DATA_DIR}" ]; then
     echo "Copying test environment data files..."
     for data_file in "${CYPRESS_DATA_DIR}"/*.yml; do
@@ -67,6 +68,18 @@ if [ -d "${CYPRESS_DATA_DIR}" ]; then
             filename=$(basename "${data_file}")
             echo "  → Copying ${filename} to ${WEBSITE_DATA_DIR}/"
             cp -f "${data_file}" "${WEBSITE_DATA_DIR}/${filename}"
+        fi
+    done
+fi
+
+# Copy page files for page data between tests
+if [ -d "${CYPRESS_PAGES_DIR}" ]; then
+    echo "Copying test environment page files..."
+    for md_file in "${CYPRESS_PAGES_DIR}"/*.yml; do
+        if [ -f "${md_file}" ]; then
+            filename=$(basename "${md_file}")
+            echo "  → Copying ${filename} to ${WEBSITE_PAGES_DIR}/"
+            cp -f "${md_file}" "${WEBSITE_PAGES_DIR}/${filename}"
         fi
     done
 fi

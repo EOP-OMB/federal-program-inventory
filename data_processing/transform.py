@@ -6,29 +6,58 @@ information in a SQLite database for generation of markdown files.
 import csv
 import json
 import os
+import shutil
 import sqlite3
+import sys
 import constants
 import pandas as pd
+import zipfile
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "./Volumes/CER01/"
-TEMP_DB_FILE_PATH = "temp_data.db"
+TEMP_DB_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY')
+TEMP_DB_FILE_PATH = os.getenv('ETL_TRANSFORM_TEMP_DB_FILE_PATH')
 
 # transformed database, for use in the load / generate stage
-TRANSFORMED_FILES_DIRECTORY = "transformed/"
-TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
+TRANSFORMED_FILES_DIRECTORY = os.getenv('ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY')
+TRANSFORMED_DB_FILE_PATH = os.getenv('ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH')
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "./Volumes/CER01/"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract"
-CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract"
+USASPENDING_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY')
 
 # extracted file paths
-REPO_DISK_DIRECTORY = ""
-EXTRACTED_FILES_DIRECTORY = "extracted/"
+REPO_DISK_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
+EXTRACTED_FILES_DIRECTORY = os.getenv('ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY')
+
+ASSISTANCE_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY')
+CONTRACT_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY')
+UNZIP_TMP_DIRECTORY = os.getenv('ETL_TRANSFORM_UNZIP_TMP_DIRECTORY')
+
+# optional
+SINGLE_ASSISTANCE_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_ASSISTANCE_YEAR')
+SINGLE_CONTRACT_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_CONTRACT_YEAR')
+SINGLE_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_YEAR')
+
+if (TEMP_DB_DISK_DIRECTORY is None or
+    TEMP_DB_FILE_PATH is None or
+    TRANSFORMED_FILES_DIRECTORY is None or
+    TRANSFORMED_DB_FILE_PATH is None or
+    USASPENDING_DISK_DIRECTORY is None or
+    EXTRACTED_FILES_DIRECTORY is None or
+    ASSISTANCE_ZIP_FILE_DIRECTORY is None or
+    CONTRACT_ZIP_FILE_DIRECTORY is None or
+    UNZIP_TMP_DIRECTORY is None):
+    print("Error:  set the following environment variables:")
+    print("  TEMP_DB_DISK_DIRECTORY")
+    print("  TEMP_DB_FILE_PATH")
+    print("  TRANSFORMED_FILES_DIRECTORY")
+    print("  TRANSFORMED_DB_FILE_PATH")
+    print("  USASPENDING_DISK_DIRECTORY")
+    print("  EXTRACTED_FILES_DIRECTORY")
+    print("  ASSISTANCE_ZIP_FILE_DIRECTORY")
+    print("  CONTRACT_ZIP_FILE_DIRECTORY")
+    print("  UNZIP_TMP_DIRECTORY")
+    sys.exit(1)
 
 # additional programs dataset path
 ADDITIONAL_PROGRAMS_DATA_PATH = REPO_DISK_DIRECTORY \
@@ -49,6 +78,10 @@ USASPENDING_ASSISTANCE_CREATE_TABLE_SQL = """
     );
     """
 
+USASPENDING_ASSISTANCE_DELETE_YEAR_SQL = """
+    DELETE FROM usaspending_assistance WHERE [action_date_fiscal_year] = ?;
+    """
+
 USASPENDING_CONTRACT_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_contract;
     """
@@ -63,6 +96,10 @@ USASPENDING_CONTRACT_CREATE_TABLE_SQL = """
         prime_award_transaction_place_of_performance_cd_current,
         award_type_code
     );
+    """
+
+USASPENDING_CONTRACT_DELETE_YEAR_SQL = """
+    DELETE FROM usaspending_contract WHERE [action_date_fiscal_year] = ?;
     """
 
 USASPENDING_ASSISTANCE_INSERT_SQL = """
@@ -519,140 +556,122 @@ def convert_to_url_string(s):
 def load_usaspending_initial_files():
     """Loads non-delta USASpending.gov CSV files into a SQLite Database for
     further transformation."""
+    print("Starting load_usaspending_initial_files")
 
-    # create assistance table for USASpending.gov data
-    temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
-    temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
-    temp_conn.commit()
+    drop_all = True
+    if (SINGLE_ASSISTANCE_YEAR is not None and SINGLE_CONTRACT_YEAR is not None and SINGLE_YEAR is not None):
+        if (os.path.exists(ASSISTANCE_ZIP_FILE_DIRECTORY + SINGLE_ASSISTANCE_YEAR) and
+            os.path.exists(CONTRACT_ZIP_FILE_DIRECTORY + SINGLE_CONTRACT_YEAR)):
+            drop_all = False
+        else:
+            print("Error:  file not found SINGLE_ASSISTANCE_YEAR or SINGLE_CONTRACT_YEAR")
+            sys.exit(1)
 
-    # create contracts table for USASpending.gov data
-    temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
-    temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
-    temp_conn.commit()
+    if (drop_all):
+        print("Dropping all tables from temp_data.db")
+
+        # create assistance table for USASpending.gov data
+        temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
+        temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
+        temp_conn.commit()
+
+        # create contracts table for USASpending.gov data
+        temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
+        temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
+        temp_conn.commit()
+    else:
+        print(f"Deleting year {SINGLE_YEAR} from temp_data.db")
+
+        temp_cur.execute(USASPENDING_ASSISTANCE_DELETE_YEAR_SQL, (SINGLE_YEAR,))
+        temp_cur.execute(USASPENDING_CONTRACT_DELETE_YEAR_SQL, (SINGLE_YEAR,))
+        temp_conn.commit()
+
+    # ensure the temporary directory is empty for later iteration
+    if os.path.exists(UNZIP_TMP_DIRECTORY):
+        shutil.rmtree(UNZIP_TMP_DIRECTORY)
+    os.makedirs(UNZIP_TMP_DIRECTORY, exist_ok=True)
+
+    zip_file_list = os.listdir(ASSISTANCE_ZIP_FILE_DIRECTORY)
+    if (not drop_all):
+        zip_file_list = [SINGLE_ASSISTANCE_YEAR]
 
     # load assistance data; the list is sorted to ensure files are processed
     # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + ASSISTANCE_EXTRACTED_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + ASSISTANCE_EXTRACTED_FILES_DIRECTORY + file, "r",
-                      encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
-                        r["assistance_transaction_unique_key"],
-                        r["assistance_award_unique_key"],
-                        r["federal_action_obligation"],
-                        r["total_outlayed_amount_for_overall_award"],
-                        r["action_date_fiscal_year"],
-                        r["prime_award_transaction_place_of_"
-                            + "performance_cd_current"],
-                        r["cfda_number"],
-                        r["assistance_type_code"]
-                    ])
-                temp_conn.commit()
+    for zip_file in sorted(zip_file_list):
+        print(zip_file)
+        if zip_file[0] != ".":
+            with zipfile.ZipFile(ASSISTANCE_ZIP_FILE_DIRECTORY + zip_file, 'r') as archive:
+                archive.extractall(UNZIP_TMP_DIRECTORY)
+            for file in sorted(os.listdir(UNZIP_TMP_DIRECTORY)):
+                print("  " + file)
+                if file[0] != ".":
+                    with open(UNZIP_TMP_DIRECTORY + file, "r",
+                            encoding="latin-1") as f:
+                        reader = csv.DictReader(f)
+                        for r in reader:
+                            temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
+                                r["assistance_transaction_unique_key"],
+                                r["assistance_award_unique_key"],
+                                r["federal_action_obligation"],
+                                r["total_outlayed_amount_for_overall_award"],
+                                r["action_date_fiscal_year"],
+                                r["prime_award_transaction_place_of_"
+                                    + "performance_cd_current"],
+                                r["cfda_number"],
+                                r["assistance_type_code"]
+                            ])
+                        temp_conn.commit()
+                    os.remove(UNZIP_TMP_DIRECTORY + file)
+
+    zip_file_list = os.listdir(CONTRACT_ZIP_FILE_DIRECTORY)
+    if (not drop_all):
+        zip_file_list = [SINGLE_CONTRACT_YEAR]
 
     # load contract data; the list is sorted to ensure files are processed
     # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                       + CONTRACT_EXTRACTED_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + CONTRACT_EXTRACTED_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
-                        r["contract_transaction_unique_key"],
-                        r["contract_award_unique_key"],
-                        r["federal_action_obligation"],
-                        r["total_outlayed_amount_for_overall_award"],
-                        r["action_date_fiscal_year"],
-                        r["funding_agency_code"],
-                        r["funding_agency_name"],
-                        r["funding_sub_agency_code"],
-                        r["funding_sub_agency_name"],
-                        r["funding_office_code"],
-                        r["funding_office_name"],
-                        r["prime_award_transaction_place_of_"
-                            + "performance_cd_current"],
-                        r["award_type_code"]
-                    ])
-                temp_conn.commit()
+    for zip_file in sorted(zip_file_list):
+        print(zip_file)
+        if zip_file[0] != ".":
+            with zipfile.ZipFile(CONTRACT_ZIP_FILE_DIRECTORY + zip_file, 'r') as archive:
+                archive.extractall(UNZIP_TMP_DIRECTORY)
+            for file in sorted(os.listdir(UNZIP_TMP_DIRECTORY)):
+                print("  " + file)
+                if file[0] != ".":
+                    with open(UNZIP_TMP_DIRECTORY + file, "r", encoding="latin-1") as f:
+                        reader = csv.DictReader(f)
+                        for r in reader:
+                            temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
+                                r["contract_transaction_unique_key"],
+                                r["contract_award_unique_key"],
+                                r["federal_action_obligation"],
+                                r["total_outlayed_amount_for_overall_award"],
+                                r["action_date_fiscal_year"],
+                                r["funding_agency_code"],
+                                r["funding_agency_name"],
+                                r["funding_sub_agency_code"],
+                                r["funding_sub_agency_name"],
+                                r["funding_office_code"],
+                                r["funding_office_name"],
+                                r["prime_award_transaction_place_of_"
+                                    + "performance_cd_current"],
+                                r["award_type_code"]
+                            ])
+                        temp_conn.commit()
+                    os.remove(UNZIP_TMP_DIRECTORY + file)
+
+    print("Finished load_usaspending_initial_files")
 
 
 def load_usaspending_delta_files():
-    """Loads delta USASpending.gov CSV files into a SQLite Database for
-    further transformation."""
-    # load assistance data; the list is sorted to ensure files are processed
-    # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + ASSISTANCE_DELTA_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + ASSISTANCE_DELTA_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_ASSISTANCE_DELETE_SQL,
-                                     [r["assistance_transaction_unique_key"]])
-                    # if "C" (change) or "" (add), insert new DB row
-                    if r["correction_delete_ind"] in ["", "C"]:
-                        temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
-                            r["assistance_transaction_unique_key"],
-                            r["assistance_award_unique_key"],
-                            r["federal_action_obligation"],
-                            r["total_outlayed_amount_for_overall_award"],
-                            r["action_date_fiscal_year"],
-                            r["prime_award_transaction_place_of_"
-                                + "performance_cd_current"],
-                            r["cfda_number"],
-                            r["assistance_type_code"],
-                        ])
-                temp_conn.commit()
-
-    # load contract data; the list is sorted to ensure files are processed
-    # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + CONTRACT_DELTA_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + CONTRACT_DELTA_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_CONTRACT_DELETE_SQL,
-                                     [r["contract_transaction_unique_key"]])
-                    temp_conn.commit()
-                    # if "C" (change) or "" (add), insert new DB row
-                    if r["correction_delete_ind"] in ["", "C"]:
-                        temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
-                            r["contract_transaction_unique_key"],
-                            r["contract_award_unique_key"],
-                            r["federal_action_obligation"],
-                            r["total_outlayed_amount_for_overall_award"],
-                            r["action_date_fiscal_year"],
-                            r["funding_agency_code"],
-                            r["funding_agency_name"],
-                            r["funding_sub_agency_code"],
-                            r["funding_sub_agency_name"],
-                            r["funding_office_code"],
-                            r["funding_office_name"],
-                            r["prime_award_transaction_place_of_"
-                                + "performance_cd_current"],
-                            r["award_type_code"]
-                        ])
-                temp_conn.commit()
+    # the previous implementation may have been duplicating some records
+    raise NotImplementedError("Delta file handling has not been implemented yet")
 
 
 def transform_and_insert_usaspending_aggregation_data():
     """Queries USASpending.gov data in the temporary database and inserts the
     results into the transformed database."""
+    print("Starting transform_and_insert_usaspending_aggregation_data")
+
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL)
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_CREATE_TABLE_SQL)
     cur.execute(
@@ -664,10 +683,14 @@ def transform_and_insert_usaspending_aggregation_data():
     cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL)
     conn.commit()
 
+    print("Finished transform_and_insert_usaspending_aggregation_data")
+
 
 def load_agency():
     """Transforms the SAM.gov agency data and inserts the cleaned data into
     the transformed database."""
+    print("Starting load_agency")
+
     cur.execute(AGENCY_DROP_TABLE_SQL)
     cur.execute(AGENCY_CREATE_TABLE_SQL)
     conn.commit()
@@ -683,10 +706,14 @@ def load_agency():
                         o.get("l2OrgKey", None), is_cfo_act])
         conn.commit()
 
+    print("Finished load_agency")
+
 
 def load_sam_category():
     """Transforms the SAM.gov assistance type, applicant type, and beneficiary
     type data and inserts the cleaned data into the transformed database."""
+    print("Starting load_sam_category")
+
     cur.execute(CATEGORY_DROP_TABLE_SQL)
     cur.execute(CATEGORY_CREATE_TABLE_SQL)
     with open(REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY
@@ -711,11 +738,15 @@ def load_sam_category():
                                 "beneficiary", e["value"], None])
         conn.commit()
 
+    print("Finished load_sam_category")
+
 
 # load assistance listing values from SAM.gov
 def load_sam_programs():
     """Transforms the SAM.gov assistance listing data and inserts the cleaned
     data into the transformed database."""
+    print("Starting load_sam_programs")
+
     cur.execute(PROGRAM_DROP_TABLE_SQL)
     cur.execute(PROGRAM_CREATE_TABLE_SQL)
     cur.execute(PROGRAM_AUTHORIZATION_DROP_TABLE_SQL)
@@ -791,11 +822,11 @@ def load_sam_programs():
                                                     if len(p) > 0]))
                     if auth_dict["authorizationTypes"]["statute"] is not None \
                             and auth_dict.get("statute", False):
-                        statute_volume = auth_dict["statute"] \
-                            .get("volume", "").strip() \
+                        statute_volume = str(auth_dict["statute"] \
+                            .get("volume", "")).strip() \
                             if auth_dict["statute"].get("volume", "") \
                             is not None else ""
-                        statute_page = auth_dict["statute"].get("page", "") \
+                        statute_page = str(auth_dict["statute"].get("page", "")) \
                             .strip() if auth_dict["statute"].get("page", "") \
                             is not None else ""
                         if len(statute_volume + statute_page) > 0:
@@ -808,12 +839,12 @@ def load_sam_programs():
                                       + statute_volume + "/" + statute_page
                     if auth_dict["authorizationTypes"]["publicLaw"] \
                             is not None and auth_dict.get("publicLaw", False):
-                        pl_congress_code = auth_dict["publicLaw"] \
-                            .get("congressCode", "").strip() \
+                        pl_congress_code = str(auth_dict["publicLaw"] \
+                            .get("congressCode", "")).strip() \
                             if auth_dict["publicLaw"] \
                             .get("congressCode", "") is not None else ""
-                        pl_number = auth_dict["publicLaw"] \
-                            .get("number",  "").strip() \
+                        pl_number = str(auth_dict["publicLaw"] \
+                            .get("number",  "")).strip() \
                             if auth_dict["publicLaw"].get("number", "") \
                             is not None else ""
                         if len(pl_congress_code + pl_number) > 0:
@@ -827,7 +858,7 @@ def load_sam_programs():
                                       + pl_number
                     if auth_dict["authorizationTypes"]["USC"] is not None \
                             and auth_dict.get("USC", False):
-                        usc_title = auth_dict["USC"].get("title", "").strip() \
+                        usc_title = str(auth_dict["USC"].get("title", "")).strip() \
                                 if auth_dict["USC"].get("title", "") \
                                 is not None else ""
                         usc_section = auth_dict["USC"] \
@@ -918,8 +949,12 @@ def load_sam_programs():
     load_acquisitions_and_services()
     conn.commit()
 
+    print("Finished load_sam_programs")
+
 
 def load_additional_programs():
+    print("Starting load_additional_programs")
+
     if not os.path.exists(ADDITIONAL_PROGRAMS_DATA_PATH):
         print(f"{ADDITIONAL_PROGRAMS_DATA_PATH} - Not Found")
         return
@@ -1014,7 +1049,18 @@ def load_additional_programs():
         program_query = """
             INSERT INTO program
             (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id)
+            DO UPDATE SET
+                agency_id = excluded.agency_id,
+                name = excluded.name,
+                popular_name = excluded.popular_name,
+                objective = excluded.objective,
+                sam_url = excluded.sam_url,
+                usaspending_awards_hash = excluded.usaspending_awards_hash,
+                usaspending_awards_url = excluded.usaspending_awards_url,
+                grants_url = excluded.grants_url,
+                program_type = excluded.program_type;
         """
         program_values = (
             record['program.id'],
@@ -1071,9 +1117,12 @@ def load_additional_programs():
             ])
 
     conn.commit()
+    print("Finished load_additional_programs")
 
 def load_improper_payment_mapping():
     """Loads improper payment mapping data from CSV into the database."""
+    print("Starting load_improper_payment_mapping")
+
     cur.execute(IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL)
     cur.execute(IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL)
     
@@ -1115,7 +1164,7 @@ def load_improper_payment_mapping():
         ))
     
     conn.commit()
-    print("Successfully loaded improper payment mapping data")
+    print("Finished load_improper_payment_mapping")
 
 def load_acquisitions_and_services():
     """Loads programs derived from contracts."""
@@ -1172,6 +1221,8 @@ def load_acquisitions_and_services():
 
 def load_taxonomy_and_assignments():
     """Loads taxonomy categories, focus areas, gwos, pons, and assignments."""
+    print("Starting load_taxonomy_and_assignments")
+
     cur.execute(PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL)
     cur.execute(PROGRAM_TO_GWO_DROP_TABLE_SQL)
     cur.execute(PROGRAM_TO_PON_DROP_TABLE_SQL)
@@ -1251,19 +1302,15 @@ def load_taxonomy_and_assignments():
         ])
 
     conn.commit()
-    print("Successfully loaded taxonomy and assignments")
+    print("Finished load_taxonomy_and_assignments")
 
-# uncomment the necessary functions to database with data
-#
-# load_usaspending_initial_files()
-# load_usaspending_delta_files()
-# transform_and_insert_usaspending_aggregation_data()
-# load_agency()
-# load_sam_category()
-# load_sam_programs()
-# load_taxonomy_and_assignments()
-# load_additional_programs()
-# load_improper_payment_mapping()
+load_usaspending_initial_files()
+transform_and_insert_usaspending_aggregation_data()
+load_agency()
+load_sam_category()
+load_sam_programs()
+load_taxonomy_and_assignments()
+load_additional_programs()
+load_improper_payment_mapping()
 
-# close the db connection
 conn.close()

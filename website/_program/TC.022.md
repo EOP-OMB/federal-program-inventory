@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- I Energy - Energy Supply
+- Energy - Energy Supply
 - Tax Expenditures - Energy
 cfda: TC.022
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Increase Energy Reliability and Stability (Infrastructure)
   permalink: /gwo/I4
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. Instead, it generally would seek to tax uniformly all
@@ -33,7 +36,7 @@ objective: The baseline tax system would not allow credits for particular activi
   communities. Starting in 2025, the credit becomes a technology neutral credit, and
   it begins to phase out as early as 2034.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":7450000000.0},{"x":"2024","outlays":370000000.0,"forgone_revenue":7220000000.0},{"x":"2025","outlays":380000000.0,"forgone_revenue":9270000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":4160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7450000000.0},{"x":"2024","outlays":370000000.0,"forgone_revenue":7220000000.0},{"x":"2025","outlays":380000000.0,"forgone_revenue":9270000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.022.html
 pons:

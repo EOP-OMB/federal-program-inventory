@@ -6,17 +6,20 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- G Education - Post–Secondary Education
+- Education - Post–Secondary Education
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.104
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Provide Finance Options for Post-Secondary Education
   permalink: /gwo/G7
 improper_payments: '[{"name":"Internal Revenue Service - American Opportunity Tax
   Credit","outlays":5176490000.0,"improper_payments":1431300000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
+improper_payments_percent: 27.7
+improper_payments_total: 1431300000.0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. Under current law in 2023, however, there are two credits
@@ -32,7 +35,7 @@ objective: The baseline tax system would not allow credits for particular activi
   if married filing jointly ($80,000 and $90,000 for other taxpayers), not indexed.
   Married individuals filing separate returns cannot claim either credit.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0},{"x":"2025","outlays":2420000000.0,"forgone_revenue":11060000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":4020000000.0,"forgone_revenue":15460000000.0},{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0},{"x":"2025","outlays":2420000000.0,"forgone_revenue":11060000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.104.html
 pons:

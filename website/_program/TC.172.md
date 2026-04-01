@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - General Purpose Fiscal Assistance
 cfda: TC.172
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeting specific groups. In contrast, the Tax Code in 2009 allowed State and
@@ -24,7 +27,7 @@ objective: The baseline tax system would not allow credits for particular activi
   local governments could issue taxable bonds and the private lenders would receive
   the 35 percent credit which is included in taxable income.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":2170000000.0,"forgone_revenue":0.0},{"x":"2024","outlays":2260000000.0,"forgone_revenue":0.0},{"x":"2025","outlays":2230000000.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":2500000000.0,"forgone_revenue":0.0},{"x":"2023","outlays":2170000000.0,"forgone_revenue":0.0},{"x":"2024","outlays":2260000000.0,"forgone_revenue":0.0},{"x":"2025","outlays":2230000000.0,"forgone_revenue":0.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.172.html
 pons:

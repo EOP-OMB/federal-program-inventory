@@ -6,17 +6,20 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- L Health - Healthcare Access
+- Health - Healthcare Access
 - Tax Expenditures - Health
 cfda: TC.135
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Provide Healthcare Coverage
   permalink: /gwo/L15
 improper_payments: '[{"name":"Internal Revenue Service - Refundable Premium Assistance
   Tax Credit","outlays":2304580000.0,"improper_payments":657730000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
+improper_payments_percent: 28.5
+improper_payments_total: 657730000.0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, for taxable years ending after 2013,
@@ -36,7 +39,7 @@ objective: The baseline tax system would not allow credits for particular activi
   level and expanded eligibility to newly include individuals and families with income
   above 400 percent of the federal poverty level.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":66670000000.0,"forgone_revenue":15047000000.0},{"x":"2024","outlays":92793000000.0,"forgone_revenue":13670000000.0},{"x":"2025","outlays":92190000000.0,"forgone_revenue":12690000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":61580000000.0,"forgone_revenue":14730000000.0},{"x":"2023","outlays":66670000000.0,"forgone_revenue":15047000000.0},{"x":"2024","outlays":92793000000.0,"forgone_revenue":13670000000.0},{"x":"2025","outlays":92190000000.0,"forgone_revenue":12690000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.135.html
 pons:

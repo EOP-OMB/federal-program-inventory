@@ -6,17 +6,20 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- G Education - Early Childhood Education and Childcare
+- Education - Early Childhood Education and Childcare
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.123
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Strengthen Early Childhood Education and Childcare
   permalink: /gwo/G1
 improper_payments: '[{"name":"Internal Revenue Service - Child and Dependent Care
   Tax Credit","outlays":0.0,"improper_payments":0.0,"insufficient_payment":0.0,"high_priority":false,"related_programs":[]}]'
+improper_payments_percent: 0.0
+improper_payments_total: 0.0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Tax Code provides a tax credit
@@ -27,7 +30,7 @@ objective: The baseline tax system would not allow credits for particular activi
   to $15,000. The credit is reduced to a minimum of 20 percent by one percentage point
   for each $2,000 of income in excess of $15,000.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3660000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":7000000.0,"forgone_revenue":5850000000.0},{"x":"2023","outlays":50000000.0,"forgone_revenue":3480000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3560000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3660000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.123.html
 pons:

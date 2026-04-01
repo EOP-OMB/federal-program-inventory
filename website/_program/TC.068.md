@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- M Housing - Housing and Homelessness
+- Housing - Housing and Homelessness
 - Tax Expenditures - Commerce and Housing
 cfda: TC.068
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Support Affordable Housing
   permalink: /gwo/M2
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would uniformly tax all returns to investments
   and not allow credits for particular activities, investments, or industries. However,
@@ -28,7 +31,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   areas where project development costs are higher. The credit is allowed in equal
   amounts over 10 years and is generally subject to a volume cap.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":12800000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13620000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":14410000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":11280000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":12800000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":13620000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":14410000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.068.html
 pons:

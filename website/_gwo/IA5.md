@@ -1,5 +1,5 @@
 ---
-category: 2025 International Affairs
+category: International Affairs
 definition: Expanding economic opportunities and strengthening conditions for growth
   in partner nations.
 focus_area: International Relations and Foreign Affairs
@@ -8,98 +8,98 @@ permalink: /gwo/IA5
 title: Foster International Economic Empowerment and Opportunities
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 2000000.0
   name: Cochran Fellowship Program
   permalink: /program/10.962
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Cooperative Development Program (CDP)
   permalink: /program/98.002
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Debt Financing
   permalink: /program/87.005
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 4576263.13
+  expenditure_amount: 0
   name: EUR-Other
   permalink: /program/19.878
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Economic Statecraft
   permalink: /program/19.322
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Equity Investments
   permalink: /program/87.004
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Fiscal Transparency Innovation Fund
   permalink: /program/19.662
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Global Development Alliance
   permalink: /program/98.011
   program_type: assistance_listing
 - agency: Inter-American Foundation
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: IAF Assistance for Overseas Programs
   permalink: /program/85.751
   program_type: assistance_listing
 - agency: Millennium Challenge Corporation
-  expenditure_amount: 76419051.61
+  expenditure_amount: 2000000.0
   name: MCC Foreign Assistance for Overseas Programs
   permalink: /program/85.002
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Middle East Regional Cooperation Program
   permalink: /program/19.502
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Non-Governmental Organization Strengthening (NGO)
   permalink: /program/98.004
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: Office of Global Women's Issues
   permalink: /program/19.801
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: PL-480 Market Development and Technical Assistance
   permalink: /program/10.617
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 80000000.0
+  expenditure_amount: 0
   name: Political Risk Insurance
   permalink: /program/87.006
   program_type: assistance_listing
 - agency: United States International Development Finance Corporation
-  expenditure_amount: 6968424.2
+  expenditure_amount: 60000000.0
   name: Project Development
   permalink: /program/87.101
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 65700000.0
   name: State/African Regional - Other Economic Support Funds (ESF) Projects/Programs
   permalink: /program/19.989
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 0
   name: The Secretary's Office of the Global Partnership Initiative (S/GPI) Grant
     Programs
   permalink: /program/19.301
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 371989008.0
+  expenditure_amount: 0
   name: USAID Foreign Assistance for Programs Overseas
   permalink: /program/98.001
   program_type: assistance_listing
