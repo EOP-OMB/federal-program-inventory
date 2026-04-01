@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.110
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
   tax rate schedule. It would not allow preferentially low (or zero) tax rates to
@@ -25,7 +28,7 @@ objective: The baseline tax system generally would tax all income under the regu
   The tax exemption is phased out for taxpayers with AGI between $145,200 and 175,200
   if married filing jointly ($96,800 and $111,800 for other taxpayers) in 2023.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":40000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":40000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.110.html
 pons:

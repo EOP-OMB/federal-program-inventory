@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- G Education - Educational Environments
+- Education - Educational Environments
 - Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.109
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Promote Safe and High-Quality Schools
   permalink: /gwo/G3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. Under current law, however, financial institutions that
@@ -28,7 +31,7 @@ objective: The baseline tax system would not allow credits for particular activi
   taxable. An additional $0.4 billion of these bonds with a tax credit was authorized
   to be issued each year in 2011 through 2017.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0},{"x":"2025","outlays":40000000.0,"forgone_revenue":60000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":40000000.0,"forgone_revenue":110000000.0},{"x":"2023","outlays":40000000.0,"forgone_revenue":90000000.0},{"x":"2024","outlays":40000000.0,"forgone_revenue":80000000.0},{"x":"2025","outlays":40000000.0,"forgone_revenue":60000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.109.html
 pons:

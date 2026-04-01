@@ -55,6 +55,12 @@ describe('Program Overview Visualization', () => {
     cy.get(svgSelector).should('be.visible').compareSnapshot('overview_viz_one_year_stacked');
   });
 
+  // outlays json is formatted differently
+  it('other program spending', () => {
+    cy.visit('test/program_overview_chart_other_program_spending.html');
+    cy.get(svgSelector).should('be.visible').compareSnapshot('overview_viz_other_program_spending');
+  });
+
   // legend + 8) coincide case
   it('legend + coincide case', () => {
     const legendItemSelector = svgSelector + ' .legend-item';

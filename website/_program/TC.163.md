@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Income Security
 cfda: TC.163
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: '[{"name":"Internal Revenue Service - Earned Income Tax Credit","outlays":58436980000.0,"improper_payments":15941610000.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[]}]'
+improper_payments_percent: 27.3
+improper_payments_total: 15941610000.0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Tax Code provides an EITC to low-income
@@ -32,7 +35,7 @@ objective: The baseline tax system would not allow credits for particular activi
   indexed by the chained CPI, which results in a smaller inflation adjustment than
   previously.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0},{"x":"2025","outlays":74080000000.0,"forgone_revenue":3310000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":77290000000.0,"forgone_revenue":2410000000.0},{"x":"2023","outlays":59780000000.0,"forgone_revenue":2700000000.0},{"x":"2024","outlays":63920000000.0,"forgone_revenue":3010000000.0},{"x":"2025","outlays":74080000000.0,"forgone_revenue":3310000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.163.html
 pons:

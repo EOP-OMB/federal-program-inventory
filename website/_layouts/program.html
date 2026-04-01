@@ -3,6 +3,8 @@ layout: default
 footer_include: _footer-program.html
 ---
 
+{% include scripts/_dollar-standardization.html %}
+
 <div class="grid-container">
 
   <div class="grid-row grid-gap">
@@ -14,7 +16,7 @@ footer_include: _footer-program.html
       {% include components/_page-title.html display_aka=true %}
 
       <!-- Tab Navigation -->
-      {% assign program_tabs = "Overview,Spending,Results,Policies,Oversight" | split: "," %}
+      {% assign program_tabs = "Overview,Spending,Results,Authorization,Oversight" | split: "," %}
       {% include components/_tab-navigation.html tabs=program_tabs %}
 
       <!-- Tab Panels -->
@@ -55,15 +57,30 @@ footer_include: _footer-program.html
                 </div>
                 {% if page.gwo != nil %}
                 <h4 class="text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
-                  {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=32 icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
+                  {% assign gwo_target_count = 0 %}
+                  {% if page.gwo and page.gwo.permalink %}
+                    {% assign gwo_id = page.gwo.permalink | split: '/' | last %}
+                    {% assign gwo_data = site.gwo | where: "permalink", page.gwo.permalink | first %}
+                    {% if gwo_data and gwo_data.where_used %}
+                      {% assign gwo_target_count = gwo_data.where_used | size %}
+                    {% endif %}
+                  {% endif %}
+                  {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=gwo_target_count icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
                 {% endif %}
 
                 {% if has_pons == true %}
                 <h4 class="text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
                 <ul class="usa-list usa-list--unstyled ">
                   {% for pon in page.pons %}
+                    {% assign pon_target_count = 0 %}
+                    {% if pon.permalink %}
+                      {% assign pon_data = site.pon | where: "permalink", pon.permalink | first %}
+                      {% if pon_data and pon_data.where_used %}
+                        {% assign pon_target_count = pon_data.where_used | size %}
+                      {% endif %}
+                    {% endif %}
                     <li>
-                      {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=12 icon="radio_button_unchecked" %}
+                      {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=pon_target_count icon="radio_button_unchecked" %}
                     </li>
                   {% endfor %}
                 </ul>
@@ -74,14 +91,20 @@ footer_include: _footer-program.html
             <div class="grid-col-fill border-top-2px border-base" style="border-top: 1px dotted #000;">
               <!-- Header -->
               <div class="display-flex flex-justify flex-align-center margin-top-2">
-                <h2 class="text-bold">Expenditures</h2>
-                {% include components/_view-results.html href="#" text="View Spending" onclick="document.getElementById('spending-tab').click();" %}
+                <h2 class="text-bold">Spending</h2>
+                {% include components/_view-results.html href="#" text="View spending details" onclick="document.getElementById('spending-tab').click();" %}
               </div>
+              <!-- FY Outlay & Improper Payment Rate -->
+              {% include components/_improper-payment.html %}
               <!-- Graph Start -->
+              {% assign outlays = page.outlays %}
+              {% if outlays == nil and page.other_program_spending != nil %}
+                {% assign outlays = page.other_program_spending %}
+              {% endif %}
               <h3 id="chart-header" class="font-heading-sm">Outlays by Fiscal Year</h3>
               <div class="grid grid-row radius-md">
                 <div class="grid-col-12">
-                  <div id="chart" style="width:100%" data-outlays='{{ page.outlays }}'></div>
+                  <div id="chart" style="width:100%" data-outlays='{{ outlays }}'></div>
                   <p id="no-chart" class="hide">Expenditures not yet available.</p>
                 </div>
               </div>
@@ -96,6 +119,10 @@ footer_include: _footer-program.html
       <div id="spending-panel" role="tabpanel" aria-labelledby="spending-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
+            <h2 class="text-bold margin-top-0 margin-bottom-3">Spending</h2>
+            {% include components/_spending-chart.html
+              outlays=outlays %}
+
             <h2 class="text-bold margin-top-0 margin-bottom-3">Program Spending</h2>
 
             <!-- Legacy Notification Bar -->
@@ -189,30 +216,13 @@ footer_include: _footer-program.html
         </div>
       </div>
       
-      <!-- Policies Panel -->
-      <div id="policies-panel" role="tabpanel" aria-labelledby="policies-tab" class="tab-panel display-none">
+      <!-- Authorization Panel -->
+      <div id="authorization-panel" role="tabpanel" aria-labelledby="authorization-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="text-bold margin-top-0 margin-bottom-1">Policies & Regulations</h2>
-            <p>Policy information and regulatory details will be displayed here.</p>
-            {% if page.authorizations and page.authorizations.size > 0 %}
-            <div id="program-authorizations">
-                <ol class="usa-list">
-                  {% for auth in page.authorizations %}
-                  <li class="padding-bottom-2">
-                    <span>
-                      {% if auth.url %}
-                      <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{
-                        auth.text }}</a>
-                      {% else %}
-                      {{ auth.text }}
-                      {% endif %}
-                    </span>
-                  </li>
-                  {% endfor %}
-                </ol>
-            </div>
-            {% endif %}
+            {% include components/_authorization-tab.html
+              authorizations=page.authorizations
+              rules_regulations=page.rules_regulations %}
           </div>
         </div>
       </div>

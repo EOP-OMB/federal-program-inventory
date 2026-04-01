@@ -1,212 +1,201 @@
 ---
 categories:
-- permalink: /category/2025-debt-service
-  title: 2025 Debt Service
-- permalink: /category/2025-international-affairs
-  title: 2025 International Affairs
-- permalink: /category/2025-national-defense
-  title: 2025 National Defense
-- permalink: /category/a-agricultural
-  title: A Agricultural
-- permalink: /category/b-business-and-commerce
-  title: B Business and Commerce
-- permalink: /category/c-community-development
-  title: C Community Development
-- permalink: /category/d-consumer-protection
-  title: D Consumer Protection
-- permalink: /category/e-cultural-affairs
-  title: E Cultural Affairs
-- permalink: /category/f-disaster-prevention-and-relief
-  title: F Disaster Prevention and Relief
-- permalink: /category/g-education
-  title: G Education
-- permalink: /category/h-employment-and-labor
-  title: H Employment and Labor
-- permalink: /category/i-energy
-  title: I Energy
+- permalink: /category/agricultural
+  title: Agricultural
+- permalink: /category/business-and-commerce
+  title: Business and Commerce
+- permalink: /category/community-development
+  title: Community Development
+- permalink: /category/consumer-protection
+  title: Consumer Protection
+- permalink: /category/cultural-affairs
+  title: Cultural Affairs
+- permalink: /category/debt-service
+  title: Debt Service
+- permalink: /category/disaster-prevention-and-relief
+  title: Disaster Prevention and Relief
+- permalink: /category/education
+  title: Education
+- permalink: /category/employment-and-labor
+  title: Employment and Labor
+- permalink: /category/energy
+  title: Energy
+- permalink: /category/environmental-quality
+  title: Environmental Quality
+- permalink: /category/food-and-nutrition
+  title: Food and Nutrition
+- permalink: /category/health
+  title: Health
+- permalink: /category/housing
+  title: Housing
+- permalink: /category/income-security-and-social-services
+  title: Income Security and Social Services
 - permalink: /category/interest-on-the-public-debt
   title: Interest on the Public Debt
-- permalink: /category/j-environmental-quality
-  title: J Environmental Quality
-- permalink: /category/k-food-and-nutrition
-  title: K Food and Nutrition
-- permalink: /category/l-health
-  title: L Health
-- permalink: /category/m-housing
-  title: M Housing
-- permalink: /category/n-income-security-and-social-services
-  title: N Income Security and Social Services
-- permalink: /category/p-law--justice--and-legal-services
-  title: P Law, Justice, and Legal Services
-- permalink: /category/q-natural-resources
-  title: Q Natural Resources
-- permalink: /category/s-science-and-technology
-  title: S Science and Technology
-- permalink: /category/t-transportation
-  title: T Transportation
+- permalink: /category/international-affairs
+  title: International Affairs
+- permalink: /category/law--justice--and-legal-services
+  title: Law, Justice, and Legal Services
+- permalink: /category/national-defense
+  title: National Defense
+- permalink: /category/natural-resources
+  title: Natural Resources
+- permalink: /category/science-and-technology
+  title: Science and Technology
 - permalink: /category/tax-expenditures
   title: Tax Expenditures
+- permalink: /category/transportation
+  title: Transportation
 categories_hierarchy:
-- permalink: /category/2025-debt-service
+- permalink: /category/agricultural
   subcategories:
-  - permalink: /category/2025-debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: 2025 Debt Service
-- permalink: /category/2025-international-affairs
-  subcategories:
-  - permalink: /category/2025-international-affairs/international-relations-and-foreign-affairs
-    title: International Relations and Foreign Affairs
-  title: 2025 International Affairs
-- permalink: /category/2025-national-defense
-  subcategories:
-  - permalink: /category/2025-national-defense/defense-capability
-    title: Defense Capability
-  title: 2025 National Defense
-- permalink: /category/a-agricultural
-  subcategories:
-  - permalink: /category/a-agricultural/agricultural-resources-and-services
+  - permalink: /category/agricultural/agricultural-resources-and-services
     title: Agricultural Resources and Services
-  - permalink: /category/a-agricultural/farm-income-stabilization
+  - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
-  title: A Agricultural
-- permalink: /category/b-business-and-commerce
+  title: Agricultural
+- permalink: /category/business-and-commerce
   subcategories:
-  - permalink: /category/b-business-and-commerce/business-development
+  - permalink: /category/business-and-commerce/business-development
     title: Business Development
-  - permalink: /category/b-business-and-commerce/economic-development
+  - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
-  title: B Business and Commerce
-- permalink: /category/c-community-development
+  title: Business and Commerce
+- permalink: /category/community-development
   subcategories:
-  - permalink: /category/c-community-development/community--area--and-regional-development
+  - permalink: /category/community-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: C Community Development
-- permalink: /category/d-consumer-protection
+  title: Community Development
+- permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/d-consumer-protection/consumer-and-occupational-health-and-safety
+  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
     title: Consumer and Occupational Health and Safety
-  title: D Consumer Protection
-- permalink: /category/e-cultural-affairs
+  title: Consumer Protection
+- permalink: /category/cultural-affairs
   subcategories:
-  - permalink: /category/e-cultural-affairs/access-and-appreciation
+  - permalink: /category/cultural-affairs/access-and-appreciation
     title: Access and Appreciation
-  - permalink: /category/e-cultural-affairs/artistic-talent-development
+  - permalink: /category/cultural-affairs/artistic-talent-development
     title: Artistic Talent Development
-  - permalink: /category/e-cultural-affairs/cultural-heritage-and-traditions
+  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
     title: Cultural Heritage and Traditions
-  - permalink: /category/e-cultural-affairs/cultural-institutions
+  - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
-  title: E Cultural Affairs
-- permalink: /category/f-disaster-prevention-and-relief
+  title: Cultural Affairs
+- permalink: /category/debt-service
   subcategories:
-  - permalink: /category/f-disaster-prevention-and-relief/disaster-readiness--response--and-relief
+  - permalink: /category/debt-service/fees-and-receipts
+    title: Fees and Receipts
+  title: Debt Service
+- permalink: /category/disaster-prevention-and-relief
+  subcategories:
+  - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
     title: Disaster Readiness, Response, and Relief
-  title: F Disaster Prevention and Relief
-- permalink: /category/g-education
+  title: Disaster Prevention and Relief
+- permalink: /category/education
   subcategories:
-  - permalink: /category/g-education/early-childhood-education-and-childcare
+  - permalink: /category/education/early-childhood-education-and-childcare
     title: Early Childhood Education and Childcare
-  - permalink: /category/g-education/educational-environments
+  - permalink: /category/education/educational-environments
     title: Educational Environments
-  - permalink: /category/g-education/k-12-education
+  - permalink: /category/education/k-12-education
     title: K–12 Education
-  - permalink: /category/g-education/post-secondary-education
+  - permalink: /category/education/post-secondary-education
     title: Post–Secondary Education
-  - permalink: /category/g-education/stem-education
+  - permalink: /category/education/stem-education
     title: STEM Education
-  title: G Education
-- permalink: /category/h-employment-and-labor
+  title: Education
+- permalink: /category/employment-and-labor
   subcategories:
-  - permalink: /category/h-employment-and-labor/workforce-development
+  - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
-  title: H Employment and Labor
-- permalink: /category/i-energy
+  title: Employment and Labor
+- permalink: /category/energy
   subcategories:
-  - permalink: /category/i-energy/energy-supply
+  - permalink: /category/energy/energy-supply
     title: Energy Supply
-  title: I Energy
+  title: Energy
+- permalink: /category/environmental-quality
+  subcategories:
+  - permalink: /category/environmental-quality/pollution-control-and-abatement
+    title: Pollution Control and Abatement
+  title: Environmental Quality
+- permalink: /category/food-and-nutrition
+  subcategories:
+  - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
+    title: Food and Nutrition Assistance
+  title: Food and Nutrition
+- permalink: /category/health
+  subcategories:
+  - permalink: /category/health/child-welfare
+    title: Child Welfare
+  - permalink: /category/health/health-and-wellbeing
+    title: Health and Wellbeing
+  - permalink: /category/health/healthcare-access
+    title: Healthcare Access
+  - permalink: /category/health/healthcare-innovation
+    title: Healthcare Innovation
+  - permalink: /category/health/healthcare-quality-and-delivery
+    title: Healthcare Quality and Delivery
+  - permalink: /category/health/veteran-health
+    title: Veteran Health
+  title: Health
+- permalink: /category/housing
+  subcategories:
+  - permalink: /category/housing/housing-and-homelessness
+    title: Housing and Homelessness
+  title: Housing
+- permalink: /category/income-security-and-social-services
+  subcategories:
+  - permalink: /category/income-security-and-social-services/burial-benefits
+    title: Burial Benefits
+  - permalink: /category/income-security-and-social-services/personal-financial-health
+    title: Personal Financial Health
+  title: Income Security and Social Services
 - permalink: /category/interest-on-the-public-debt
   subcategories:
   - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
     title: Interest on the Public Debt
   title: Interest on the Public Debt
-- permalink: /category/j-environmental-quality
+- permalink: /category/international-affairs
   subcategories:
-  - permalink: /category/j-environmental-quality/pollution-control-and-abatement
-    title: Pollution Control and Abatement
-  title: J Environmental Quality
-- permalink: /category/k-food-and-nutrition
+  - permalink: /category/international-affairs/international-relations-and-foreign-affairs
+    title: International Relations and Foreign Affairs
+  title: International Affairs
+- permalink: /category/law--justice--and-legal-services
   subcategories:
-  - permalink: /category/k-food-and-nutrition/food-and-nutrition-assistance
-    title: Food and Nutrition Assistance
-  title: K Food and Nutrition
-- permalink: /category/l-health
-  subcategories:
-  - permalink: /category/l-health/child-welfare
-    title: Child Welfare
-  - permalink: /category/l-health/health-and-wellbeing
-    title: Health and Wellbeing
-  - permalink: /category/l-health/healthcare-access
-    title: Healthcare Access
-  - permalink: /category/l-health/healthcare-innovation
-    title: Healthcare Innovation
-  - permalink: /category/l-health/healthcare-quality-and-delivery
-    title: Healthcare Quality and Delivery
-  - permalink: /category/l-health/veteran-health
-    title: Veteran Health
-  title: L Health
-- permalink: /category/m-housing
-  subcategories:
-  - permalink: /category/m-housing/housing-and-homelessness
-    title: Housing and Homelessness
-  title: M Housing
-- permalink: /category/n-income-security-and-social-services
-  subcategories:
-  - permalink: /category/n-income-security-and-social-services/burial-benefits
-    title: Burial Benefits
-  - permalink: /category/n-income-security-and-social-services/personal-financial-health
-    title: Personal Financial Health
-  title: N Income Security and Social Services
-- permalink: /category/p-law--justice--and-legal-services
-  subcategories:
-  - permalink: /category/p-law--justice--and-legal-services/border-security
+  - permalink: /category/law--justice--and-legal-services/border-security
     title: Border Security
-  - permalink: /category/p-law--justice--and-legal-services/cybersecurity
+  - permalink: /category/law--justice--and-legal-services/cybersecurity
     title: Cybersecurity
-  - permalink: /category/p-law--justice--and-legal-services/domestic-threats-and-hazards
+  - permalink: /category/law--justice--and-legal-services/domestic-threats-and-hazards
     title: Domestic Threats and Hazards
-  - permalink: /category/p-law--justice--and-legal-services/law-enforcement-support
+  - permalink: /category/law--justice--and-legal-services/law-enforcement-support
     title: Law Enforcement Support
-  - permalink: /category/p-law--justice--and-legal-services/legal-services
+  - permalink: /category/law--justice--and-legal-services/legal-services
     title: Legal Services
-  - permalink: /category/p-law--justice--and-legal-services/tribal-independence-and-autonomy
+  - permalink: /category/law--justice--and-legal-services/tribal-independence-and-autonomy
     title: Tribal Independence and Autonomy
-  title: P Law, Justice, and Legal Services
-- permalink: /category/q-natural-resources
+  title: Law, Justice, and Legal Services
+- permalink: /category/national-defense
   subcategories:
-  - permalink: /category/q-natural-resources/conservation-and-land-management
+  - permalink: /category/national-defense/defense-capability
+    title: Defense Capability
+  title: National Defense
+- permalink: /category/natural-resources
+  subcategories:
+  - permalink: /category/natural-resources/conservation-and-land-management
     title: Conservation and Land Management
-  - permalink: /category/q-natural-resources/recreational-resources
+  - permalink: /category/natural-resources/recreational-resources
     title: Recreational Resources
-  - permalink: /category/q-natural-resources/water-resources
+  - permalink: /category/natural-resources/water-resources
     title: Water Resources
-  title: Q Natural Resources
-- permalink: /category/s-science-and-technology
+  title: Natural Resources
+- permalink: /category/science-and-technology
   subcategories:
-  - permalink: /category/s-science-and-technology/general-science-and-basic-research
+  - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
-  title: S Science and Technology
-- permalink: /category/t-transportation
-  subcategories:
-  - permalink: /category/t-transportation/air-transportation
-    title: Air Transportation
-  - permalink: /category/t-transportation/ground-transportation
-    title: Ground Transportation
-  - permalink: /category/t-transportation/multi-modal-transportation
-    title: Multi–modal Transportation
-  - permalink: /category/t-transportation/water-transportation
-    title: Water Transportation
-  title: T Transportation
+  title: Science and Technology
 - permalink: /category/tax-expenditures
   subcategories:
   - permalink: /category/tax-expenditures/agriculture
@@ -242,40 +231,44 @@ categories_hierarchy:
   - permalink: /category/tax-expenditures/veterans-benefits-and-services
     title: Veterans Benefits and Services
   title: Tax Expenditures
-categories_json: '[{"title":"N Income Security and Social Services","total_num_programs":113,"total_obs":3173324428901.38,"permalink":"/category/n-income-security-and-social-services"},{"title":"L
-  Health","total_num_programs":409,"total_obs":1844420415123.05,"permalink":"/category/l-health"},{"title":"Tax
-  Expenditures","total_num_programs":174,"total_obs":1821004000000.0,"permalink":"/category/tax-expenditures"},{"title":"2025
-  Debt Service","total_num_programs":5,"total_obs":1133053352812.0,"permalink":"/category/2025-debt-service"},{"title":"Interest
-  on the Public Debt","total_num_programs":1,"total_obs":1133040000000.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"G
-  Education","total_num_programs":157,"total_obs":290118923921.65,"permalink":"/category/g-education"},{"title":"B
-  Business and Commerce","total_num_programs":135,"total_obs":208404953969.0,"permalink":"/category/b-business-and-commerce"},{"title":"M
-  Housing","total_num_programs":111,"total_obs":150160962016.0,"permalink":"/category/m-housing"},{"title":"K
-  Food and Nutrition","total_num_programs":59,"total_obs":145012466733.0,"permalink":"/category/k-food-and-nutrition"},{"title":"T
-  Transportation","total_num_programs":80,"total_obs":114630936292.72,"permalink":"/category/t-transportation"},{"title":"C
-  Community Development","total_num_programs":91,"total_obs":110963329989.0,"permalink":"/category/c-community-development"},{"title":"I
-  Energy","total_num_programs":72,"total_obs":73322189345.72,"permalink":"/category/i-energy"},{"title":"F
-  Disaster Prevention and Relief","total_num_programs":99,"total_obs":46130193407.14,"permalink":"/category/f-disaster-prevention-and-relief"},{"title":"2025
-  International Affairs","total_num_programs":77,"total_obs":34791847834.0,"permalink":"/category/2025-international-affairs"},{"title":"J
-  Environmental Quality","total_num_programs":137,"total_obs":23126838878.0,"permalink":"/category/j-environmental-quality"},{"title":"Q
-  Natural Resources","total_num_programs":228,"total_obs":19166803771.92,"permalink":"/category/q-natural-resources"},{"title":"A
-  Agricultural","total_num_programs":119,"total_obs":17593777947.73,"permalink":"/category/a-agricultural"},{"title":"H
-  Employment and Labor","total_num_programs":91,"total_obs":12256058649.08,"permalink":"/category/h-employment-and-labor"},{"title":"P
-  Law, Justice, and Legal Services","total_num_programs":224,"total_obs":11160820970.67,"permalink":"/category/p-law--justice--and-legal-services"},{"title":"S
-  Science and Technology","total_num_programs":38,"total_obs":8811081057.0,"permalink":"/category/s-science-and-technology"},{"title":"2025
-  National Defense","total_num_programs":33,"total_obs":4946482210.85,"permalink":"/category/2025-national-defense"},{"title":"E
-  Cultural Affairs","total_num_programs":56,"total_obs":1503905048.0,"permalink":"/category/e-cultural-affairs"},{"title":"D
-  Consumer Protection","total_num_programs":16,"total_obs":398805103.0,"permalink":"/category/d-consumer-protection"}]'
-fiscal_year: '2024'
+- permalink: /category/transportation
+  subcategories:
+  - permalink: /category/transportation/air-transportation
+    title: Air Transportation
+  - permalink: /category/transportation/ground-transportation
+    title: Ground Transportation
+  - permalink: /category/transportation/multi-modal-transportation
+    title: Multi–modal Transportation
+  - permalink: /category/transportation/water-transportation
+    title: Water Transportation
+  title: Transportation
+categories_json: '[{"title":"Health","total_num_programs":400,"total_obs":1986606734206.93,"permalink":"/category/health"},{"title":"Tax
+  Expenditures","total_num_programs":174,"total_obs":1984770000000.0,"permalink":"/category/tax-expenditures"},{"title":"Income
+  Security and Social Services","total_num_programs":111,"total_obs":1802945925360.71,"permalink":"/category/income-security-and-social-services"},{"title":"Business
+  and Commerce","total_num_programs":136,"total_obs":309181421596.72,"permalink":"/category/business-and-commerce"},{"title":"Housing","total_num_programs":111,"total_obs":289095206887.65,"permalink":"/category/housing"},{"title":"Education","total_num_programs":163,"total_obs":263441397570.75,"permalink":"/category/education"},{"title":"Food
+  and Nutrition","total_num_programs":58,"total_obs":147761565296.68,"permalink":"/category/food-and-nutrition"},{"title":"Energy","total_num_programs":72,"total_obs":97092121375.77,"permalink":"/category/energy"},{"title":"Community
+  Development","total_num_programs":91,"total_obs":91925205536.39,"permalink":"/category/community-development"},{"title":"Transportation","total_num_programs":127,"total_obs":77253065112.82,"permalink":"/category/transportation"},{"title":"Agricultural","total_num_programs":122,"total_obs":47535578923.5,"permalink":"/category/agricultural"},{"title":"Disaster
+  Prevention and Relief","total_num_programs":98,"total_obs":18395637168.04,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Environmental
+  Quality","total_num_programs":142,"total_obs":16343835587.2,"permalink":"/category/environmental-quality"},{"title":"Natural
+  Resources","total_num_programs":232,"total_obs":14903015253.85,"permalink":"/category/natural-resources"},{"title":"Employment
+  and Labor","total_num_programs":98,"total_obs":13633002518.240002,"permalink":"/category/employment-and-labor"},{"title":"Science
+  and Technology","total_num_programs":35,"total_obs":8046695457.809999,"permalink":"/category/science-and-technology"},{"title":"Law,
+  Justice, and Legal Services","total_num_programs":214,"total_obs":7225535040.090001,"permalink":"/category/law--justice--and-legal-services"},{"title":"National
+  Defense","total_num_programs":33,"total_obs":4624741415.940001,"permalink":"/category/national-defense"},{"title":"Cultural
+  Affairs","total_num_programs":52,"total_obs":1439814395.0,"permalink":"/category/cultural-affairs"},{"title":"International
+  Affairs","total_num_programs":76,"total_obs":529711448.15,"permalink":"/category/international-affairs"},{"title":"Consumer
+  Protection","total_num_programs":16,"total_obs":418061437.0,"permalink":"/category/consumer-protection"},{"title":"Debt
+  Service","total_num_programs":4,"total_obs":0.0,"permalink":"/category/debt-service"},{"title":"Interest
+  on the Public Debt","total_num_programs":1,"total_obs":0.0,"permalink":"/category/interest-on-the-public-debt"}]'
+fiscal_year: '2025'
 layout: category-index
 obligations_by_type:
 - title: Federal Financial Assistance
-  total_obs: 4716707465294.949
-- title: Interest on the Public Debt
-  total_obs: 1133040000000.0
+  total_obs: 3540277708199.2803
 - title: Tax Expenditures
-  total_obs: 1821004000000.0
+  total_obs: 1984770000000.0
 permalink: /category.html
 title: Categories
-total_num_programs: 3076
-total_obs: 7670751465294.949
+total_num_programs: 3400
+total_obs: 5525047708199.28
 ---

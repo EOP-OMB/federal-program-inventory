@@ -38,13 +38,13 @@ function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
 
   const { xScale, yScale } = _createScales(data, chartWidth, chartHeight);
 
-  _addXAxis(xScale, svg, chartHeight, config);
-
   const { outlayFillGenerator, lineGenerator } = _createGenerators(xScale, yScale);
+
+  let outlaysFillArea = null;
 
   // if the length is 1, this will just draw a faint vertical line
   if (data.outlays.length > 1) {
-    _addOutlaysFillArea(svg, data, config, outlayFillGenerator);
+    outlaysFillArea = _addOutlaysFillArea(svg, data, config, outlayFillGenerator);
   }
 
   const { obligationsLine, outlaysLine } = _addLines(svg, data, config, lineGenerator);
@@ -60,7 +60,9 @@ function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
     obligationsPoint = _showObligationsDataPoint(data, svg, xScale, yScale, config);
   }
 
-  _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, obligationsPoint, outlaysPoint, data);
+  _addXAxis(xScale, svg, chartHeight, config);
+
+  _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data);
 
   _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale);
 }
@@ -73,38 +75,6 @@ function _tryParsingRawData(chartElement) {
     }
   } catch (error) { }
   return rawData;
-}
-
-function _formatData(rawData) {
-  let formattedData = {
-    "obligations": [],
-    "outlays": []
-  };
-  let nonZeroDataSeen = false;
-
-  if (rawData && rawData.length > 0) {
-    for (let i = 0; i < rawData.length; ++i) {
-      // append the data if we have previously appended data,
-      //   obligations are nonzero, or outlays are nonzero
-      if (nonZeroDataSeen ||
-        rawData[i]["obligation"] != 0 ||
-        rawData[i]["outlay"] != 0) {
-
-        nonZeroDataSeen = true;
-
-        formattedData.obligations.push({
-          "year": parseInt(rawData[i]["x"], 10),
-          "value": rawData[i]["obligation"]
-        });
-
-        formattedData.outlays.push({
-          "year": parseInt(rawData[i]["x"], 10),
-          "value": rawData[i]["outlay"]
-        });
-      }
-    }
-  }
-  return formattedData;
 }
 
 function _resetContainer(containerId) {
@@ -126,18 +96,7 @@ function _createGenerators(xScale, yScale) {
 
 function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale) {
   const tooltip = d3.select("body").append("div")
-    .attr("class", "outlays-chart-tooltip")
-    .style("position", "absolute")
-    .style("background-color", "white")
-    .style("border", "1px solid #ccc")
-    .style("border-radius", "4px")
-    .style("padding", "8px 12px")
-    .style("pointer-events", "none")
-    .style("opacity", 0)
-    .style("font-family", "Inter")
-    .style("font-size", "14px")
-    .style("box-shadow", "0 2px 4px rgba(0,0,0,0.1)")
-    .style("z-index", "1000");
+    .attr("class", "outlays-chart-tooltip");
 
   // Create invisible overlay for mouse tracking
   const overlay = svg.append("rect")
@@ -188,7 +147,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
           .attr("cx", x)
           .attr("cy", y)
           .style("opacity", 1);
-        tooltipContent += `Obligations: ${_formatAmount(obligationPoint.value)}<br/>`;
+        tooltipContent += `Obligations: ${formatDollarAmount(obligationPoint.value)}<br/>`;
       } else {
         hoverCircleObligations.style("opacity", 0);
       }
@@ -199,7 +158,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
           .attr("cx", x)
           .attr("cy", y)
           .style("opacity", 1);
-        tooltipContent += `Outlays: ${_formatAmount(outlayPoint.value)}`;
+        tooltipContent += `Outlays: ${formatDollarAmount(outlayPoint.value)}`;
       } else {
         hoverCircleOutlays.style("opacity", 0);
       }
@@ -219,7 +178,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
     });
 }
 
-function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, obligationsPoint, outlaysPoint, data) {
+function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data) {
   const legend = svg.append("g")
     .attr("class", "legend")
     .attr("transform", `translate(${chartWidth + config.legendOuterLeftPadding}, ${chartHeight / 2})`)
@@ -308,7 +267,12 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
 
         // lower obligations to original place
         if (item.label === "Obligations") {
+          // line should still be drawn over fill area
           item.line.lower();
+
+          if (outlaysFillArea !== null) {
+            outlaysFillArea.lower();
+          }
 
           if (item.point) {
             item.point.raise();
@@ -353,7 +317,7 @@ function _addLines(svg, data, config, lineGenerator) {
 }
 
 function _addOutlaysFillArea(svg, data, config, outlayFillGenerator) {
-  svg.append("path")
+  return svg.append("path")
     .datum(data.outlays)
     .attr("fill", config.outlayFillColor)
     .attr("stroke", config.outlayFillColor)
@@ -398,25 +362,19 @@ function _createSvg(containerId, config) {
     .attr("transform", `translate(${config.margin.left},${config.margin.top})`);
 }
 
-function _formatAmount(amount) {
-  return "$" + new Intl.NumberFormat('en-US', {
-    notation: 'compact'
-  }).format(amount);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   const id = 'chart';
   const chartHeaderId = 'chart-header';
   const noChartId = 'no-chart';
   const chartElement = document.getElementById(id);
-  let rawData = _tryParsingRawData(chartElement);
-  let formattedData = _formatData(rawData);
+  const rawData = _tryParsingRawData(chartElement);
+  const formattedData = standardizeOutlaysAndObligationsForD3(rawData);
 
   if (formattedData.obligations.length > 0 || formattedData.outlays.length > 0) {
     createOutlaysVsSpendChart('#' + id, formattedData);
   } else {
-    document.getElementById(chartHeaderId).classList.add('hide');
-    document.getElementById(noChartId).classList.remove('hide');
+    document.getElementById(chartHeaderId)?.classList.add('hide');
+    document.getElementById(noChartId)?.classList.remove('hide');
   }
 });
 

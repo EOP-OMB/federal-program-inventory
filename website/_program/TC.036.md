@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- M Housing - Housing and Homelessness
+- Housing - Housing and Homelessness
 - Tax Expenditures - Energy
 cfda: TC.036
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Promote Safe and High-Quality Housing
   permalink: /gwo/M4
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. However, the Tax Code provided an investment tax credit
@@ -27,7 +30,7 @@ objective: The baseline tax system would not allow credits for particular activi
   taxpayers to claim tax credits retroactively for three years. The credit was further
   increased up to $3,200 and extended to homes acquired in 2023 through 2032.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2390000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":450000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2390000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.036.html
 pons:

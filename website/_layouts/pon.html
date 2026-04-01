@@ -64,7 +64,7 @@ footer_include: _footer-gwo-pon.html
             {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
 
             {% include components/_info-card.html title=current_fy_obligations_title
-       display_number=total_expenditure_formatted text="Expended so far this year" grid="grid-col" %}
+       display_number=total_expenditure_formatted grid="grid-col" %}
             
             {% include components/_info-card.html title="Agencies"
             display_number=total_agencies
@@ -110,9 +110,6 @@ footer_include: _footer-gwo-pon.html
     </div>
   </div>
 </div>
-
-<!-- Help Slider -->
-{% include components/_help-slider.html %}
 
 {% include scripts/_dollar-standardization.html %}
 {% include scripts/_table-utils.html %}

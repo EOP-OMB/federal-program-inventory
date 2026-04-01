@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Health
 cfda: TC.131
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: Under the baseline tax system, all compensation and remuneration, including
   dedicated payments and in-kind benefits, should be included in taxable income. In
@@ -26,7 +29,7 @@ objective: Under the baseline tax system, all compensation and remuneration, inc
   plan and the deduction may not exceed the self-employed individual’s earned income
   from self-employment.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":8150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8530000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":9010000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":8200000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":8150000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":8530000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":9010000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.131.html
 pons:

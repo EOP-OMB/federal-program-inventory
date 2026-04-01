@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - Income Security
 cfda: TC.164
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Coronavirus Aid, Relief, and Economic
@@ -31,7 +34,7 @@ objective: The baseline tax system would not allow credits for particular activi
   is phased out proportionately by $80,000 of AGI ($160,000 for married couples filing
   jointly, $120,000 for heads of household).
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":2150000000.0,"forgone_revenue":3460000000.0},{"x":"2024","outlays":150000000.0,"forgone_revenue":91000000.0},{"x":"2025","outlays":30000000.0,"forgone_revenue":20000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":13620000000.0,"forgone_revenue":19320000000.0},{"x":"2023","outlays":2150000000.0,"forgone_revenue":3460000000.0},{"x":"2024","outlays":150000000.0,"forgone_revenue":91000000.0},{"x":"2025","outlays":30000000.0,"forgone_revenue":20000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.164.html
 pons:

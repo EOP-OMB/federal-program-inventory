@@ -1,6 +1,112 @@
 <script>
 // Chart Utilities - Reusable Functions
 
+function formatDollarAmount(amount) {
+  if (amount === 0) {
+    return "$0";
+  }
+
+  let prefix = '$';
+  if (amount < 0) {
+    prefix = '-$';
+  }
+
+  return prefix + new Intl.NumberFormat('en-US', {
+    notation: 'compact'
+  }).format(Math.abs(amount));
+}
+
+// outlays and other program spending have different raw data representations
+// this function standardizes them for display in D3
+function standardizeOutlaysAndObligationsForD3(rawData) {
+  function formatOutlayData(rawData) {
+    let formattedData = {
+      "obligations": [],
+      "outlays": []
+    };
+    let nonZeroDataSeen = false;
+
+    if (rawData && rawData.length > 0) {
+      for (let i = 0; i < rawData.length; ++i) {
+        // append the data if we have previously appended data,
+        //   obligations are nonzero, or outlays are nonzero
+        if (nonZeroDataSeen ||
+          rawData[i]["obligation"] != 0 ||
+          rawData[i]["outlay"] != 0) {
+
+          nonZeroDataSeen = true;
+
+          formattedData.obligations.push({
+            "year": parseInt(rawData[i]["x"], 10),
+            "value": rawData[i]["obligation"]
+          });
+
+          formattedData.outlays.push({
+            "year": parseInt(rawData[i]["x"], 10),
+            "value": rawData[i]["outlay"]
+          });
+        }
+      }
+    }
+    return formattedData;
+  }
+
+  function formatOtherSpendingData(rawData) {
+    let formattedData = {
+      "obligations": [],
+      "outlays": []
+    };
+    let nonZeroDataSeen = false;
+
+    if (rawData && rawData.length > 0) {
+      for (let i = 0; i < rawData.length; ++i) {
+        let outlays = 0;
+        let forgoneRevenue = 0;
+
+        if ('outlays' in rawData[i]) {
+          outlays = rawData[i]["outlays"];
+        }
+
+        if ('forgone_revenue' in rawData[i]) {
+          forgoneRevenue = rawData[i]["forgone_revenue"];
+        }
+
+        // append the data if we have previously appended data,
+        //   obligations are nonzero, or outlays are nonzero
+        if (nonZeroDataSeen || outlays != 0 || forgoneRevenue != 0) {
+          nonZeroDataSeen = true;
+
+          formattedData.obligations.push({
+            "year": parseInt(rawData[i]["x"], 10),
+            "value": 0
+          });
+
+          formattedData.outlays.push({
+            "year": parseInt(rawData[i]["x"], 10),
+            "value": outlays + forgoneRevenue
+          });
+        }
+      }
+    }
+    return formattedData;
+  }
+
+  let spendingData = {
+    "obligations": [],
+    "outlays": []
+  };
+
+  if (rawData && rawData.length > 0) {
+    if ("outlay" in rawData[0]) {
+      spendingData = formatOutlayData(rawData);
+    } else {
+      spendingData = formatOtherSpendingData(rawData);
+    }
+  }
+
+  return spendingData;
+}
+
 // Custom vertical bar chart function - refactored for reusability
 function renderVerticalBarChart(data, chartId, dataKey, tooltipLabel = 'FY', showAxes = false, useObligationColors = false) {
   // Clear existing chart

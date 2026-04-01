@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 - Tax Expenditures - International Affairs
 cfda: TC.002
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: Under the baseline tax system, all compensation received by U.S. citizens
   and residents is properly included in their taxable income. It makes no difference
@@ -31,7 +34,7 @@ objective: Under the baseline tax system, all compensation received by U.S. citi
   a specific allowance for housing expenses, they may deduct housing expenses up to
   the amount by which foreign earned income exceeds their foreign earned income exclusion.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5620000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":6700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":5420000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5500000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5620000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.002.html
 pons:

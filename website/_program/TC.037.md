@@ -6,16 +6,19 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- I Energy - Energy Supply
+- Energy - Energy Supply
 - Tax Expenditures - Energy
 cfda: TC.037
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Expand Domestic Energy Production
   permalink: /gwo/I2
 improper_payments: null
+improper_payments_percent: 0
+improper_payments_total: 0
 is_subpart_f: null
+last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would uniformly tax all returns to investments
   and not allow credits for particular activities, investments, or industries. However,
@@ -28,7 +31,7 @@ objective: The baseline tax system would uniformly tax all returns to investment
   placed in service in 2033, and 22 percent for property placed in service in 2034.
   The credit expires after December 31, 2034.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":6690000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":2700000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7090000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":6350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":6690000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.037.html
 pons:

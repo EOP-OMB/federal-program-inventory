@@ -36,6 +36,10 @@ $improper-payments-red:#962225;
   }
 }
 
+.usa-banner__inner--no-pad {
+  padding-left: 0 !important;
+}
+
 .site-title-font {
   font-family: $site-header-font-family !important;
   color: $site-font-color !important;
@@ -52,6 +56,57 @@ body {
   background-color: $site-bg-color !important;
 }
 
+/* Visited link styling - apply to all links */
+a:visited {
+  color: #6E5841 !important;
+}
+
+/* Exception: Don't apply visited styling to header, footer, and homepage links */
+.usa-header a:visited,
+.usa-footer a:visited,
+.home-background a:visited,
+.usa-nav__link a:visited,
+.usa-logo a:visited,
+.usa-identifier__nav-list a:visited {
+  color: inherit !important;
+}
+
+/* Visited link styling - apply to test md files */
+a.test-visited {
+  color: #6E5841 !important;
+}
+
+.home-link {
+  font-family: $site-default-font !important; 
+  margin-left: 0.5rem;
+  padding-bottom:0.3rem;
+}
+
+/* Force submenu links to be white - override all visited/unvisited states */
+.usa-nav__submenu-item a,
+.usa-nav__submenu-item a:visited {
+  color: white !important;
+}
+
+/* Force About the FPI accordion button to always be #1b1b1b */
+.usa-accordion__button.usa-nav__link.custom-accordion-button {
+  color: #1b1b1b !important;
+}
+
+.footer-link {
+  font-family: $site-default-font !important; 
+  margin-left: 0.5rem;
+  padding-bottom:0.3rem;
+}
+
+/* Style the button and submenu when accordion is expanded */
+.usa-accordion__button.usa-nav__link.custom-accordion-button[aria-expanded="true"],
+.usa-accordion__button.usa-nav__link.custom-accordion-button[aria-expanded="true"] + .usa-nav__submenu,
+.usa-accordion__button.usa-nav__link.custom-accordion-button[aria-expanded="true"] + .usa-nav__submenu .usa-nav__submenu-item a {
+  background-color: $dark-cream-underlay;
+  color: $site-font-color !important;
+}
+
 .subcategory-tag {
   font-size: 0.875rem;
   background-color: $sub-tag-info-card-bg;
@@ -59,6 +114,77 @@ body {
 
 .info-card-bg {
   background-color: $sub-tag-info-card-bg;
+}
+
+.improper-payment-card-container {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: $dark-cream-underlay;
+  border: 1px solid #dfe1e2;
+  padding: 1.5rem;
+  
+  .usa-tag {
+  display: inline-block;
+  background-color: $improper-payments-red;
+  color: #ffffff;
+  font-family: $site-default-font !important;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+}
+
+.payment-rate-box {
+  min-width: 220px;
+  border: 2px solid #A8A29E80;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem 1rem 1rem;
+}
+
+.payment-rate-box .usa-label {
+  margin-top: 0;
+}
+
+.ip-outlay-dot {
+  font-size: 3em; 
+  line-height: 1; 
+  padding: .2rem .2rem 0 0; 
+  margin-left: -0.2rem;
+}
+
+.ip-outlay-text {
+  display: flex; 
+  align-items: center;
+}
+
+.ip-fy-outlay-amount {
+  font-weight: bold;
+}
+
+.ip-last-reported-subheader {
+  margin-bottom: 0.5rem;
+}
+
+.ip-rate-na {
+  align-items: flex-start;
+  background-color: #f0f0f0 !important;
+}
+
+.ip-box-na {
+  text-transform: none; 
+  background-color: #e0e0e0 !important; 
+  color: $site-font-color !important;
+}
+
+.ip-box {
+  text-transform: none;
+}
+
+.fy-outlay_subtext {
+  font-size: 0.875rem;
+  color: #737373;
+  padding-top: 0.5rem;
 }
 
 :root {
@@ -150,6 +276,55 @@ th.gridjs-th {
   font-family: $site-default-font !important;
 }
 
+/* Breadcrumb truncation styles */
+.breadcrumb-nav-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.breadcrumb-flex-list {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  min-width: 0;
+  width: 100%;
+}
+
+.breadcrumb-item-truncate,
+.breadcrumb-item-current {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-shrink: 1;
+}
+
+.breadcrumb-item-truncate {
+  min-width: 0;
+}
+
+.breadcrumb-item-current {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.breadcrumb-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* Override USWDS breadcrumb caret styling */
+.usa-breadcrumb__list-item::after {
+  bottom: auto !important;
+  height: 3ex !important;
+  margin-right: 0.5rem !important;
+}
+
 .font-heading-2xs,.font-heading-sm,.font-heading-md,
 .font-heading-lg,.font-heading-xl,.font-heading-3xl,
 .usa-button,.usa-select,.usa-prose,.usa-alert__text,
@@ -197,7 +372,6 @@ th.gridjs-th {
   }
 
   .read-more-btn {
-    color: #4D53C5;
     padding: 0;
     margin: 0;
     font-weight: normal;
@@ -282,9 +456,138 @@ th.gridjs-th {
   }
 }
 
+// Footer banner styles
+.footer-links {
+  font-family: Inter, sans-serif !important;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-banner__container {
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-primary-item a {
+  padding-left: 1.5rem;
+  color: #F9F9F9 !important;
+  
+  &:visited {
+    color: #F9F9F9 !important;
+  }
+}
+
+.footer-fpi-link {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
 
 #myChart {
   word-wrap: break-word;
+}
+
+.spending-chart-tooltip, .outlays-chart-tooltip {
+  background-color: $site-font-color;
+  color: white;
+  position: absolute;
+  border: 1px solid $site-font-color;
+  border-radius: 4px;
+  padding: 8px 12px;
+  pointer-events: none;
+  opacity: 0;
+  font-family: Inter;
+  font-size: 12px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#spending-chart-card {
+  background-color: $sub-tag-info-card-bg;
+  padding: 12px;
+  border-radius: 4px;
+  color: $site-font-color;
+
+  #legend {
+    padding: 8px;
+    border: 1px solid #A8A29E80;
+  }
+
+  .spending-card-header {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .spending-card-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.has-toggle {
+      justify-content: space-between;
+    }
+  }
+
+  .spending-card-subheader {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .spending-card-label {
+    font-size: x-small;
+    line-height: 1.2;
+  }
+
+  .spending-card-line {
+    margin-right: 8px;
+    flex-shrink: 0;
+    width: 20px;
+
+    &.obligations {
+      height: 0;
+      border-top: 3px solid $site-font-color;
+    }
+
+    &.outlays {
+      height: 0;
+      border-top: 12px solid $gold-spending;
+    }
+
+    &.cy-outlays {
+      height: 12px;
+      -webkit-background-size: 8px 8px;
+      -moz-background-size: 8px 200px;
+      background-size: 8px 8px;
+      background-color: $gold-spending;
+      background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, $site-bg-color), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, $site-bg-color), color-stop($site-bg-color), color-stop(.75, transparent), to(transparent));
+      background-image: -webkit-linear-gradient(-45deg, $site-bg-color 25%, transparent 25%, transparent 50%, $site-bg-color 50%, $site-bg-color 75%, transparent 75%, transparent);
+      background-image: -moz-linear-gradient(-45deg, $site-bg-color 25%, transparent 25%, transparent 50%, $site-bg-color 50%, $site-bg-color 75%, transparent 75%, transparent);
+      background-image: -ms-linear-gradient(-45deg, $site-bg-color 25%, transparent 25%, transparent 50%, $site-bg-color 50%, $site-bg-color 75%, transparent 75%, transparent);
+      background-image: -o-linear-gradient(-45deg, $site-bg-color 25%, transparent 25%, transparent 50%, $site-bg-color 50%, $site-bg-color 75%, transparent 75%, transparent);
+      background-image: linear-gradient(-45deg, $site-bg-color 25%, transparent 25%, transparent 50%, $site-bg-color 50%, $site-bg-color 75%, transparent 75%, transparent);
+    }
+  }
+
+  .spending-card-dots {
+    width: 20px;
+    height: 0;
+    border-top: 3px dotted $site-font-color;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+}
+
+.text-underline {
+  color: $site-font-color !important;
 }
 
 .no-numbers {
@@ -317,4 +620,59 @@ th.gridjs-th {
 
 .program-filter {
   cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+
+  input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+  }
+
+  .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+  }
+
+  .slider:before {
+      position: absolute;
+      content: "";
+      height: 13px;
+      width: 13px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+  }
+
+  input:checked + .slider {
+      background-color: $site-font-color;
+  }
+
+  input:checked + .slider:before {
+      -webkit-transform: translateX(13px);
+      -ms-transform: translateX(13px);
+      transform: translateX(13px);
+  }
+
+  .slider.round {
+      border-radius: 17px;
+  }
+
+  .slider.round:before {
+      border-radius: 50%;
+  }
 }
