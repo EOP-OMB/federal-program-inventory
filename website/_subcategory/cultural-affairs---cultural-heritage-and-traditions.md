@@ -1,37 +1,30 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":3,"total_obs":80318000.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":4,"total_obs":14270263.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":12818434.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":7087001.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":2,"total_obs":4121287.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":4,"total_obs":14270263.0},{"title":"National
+  Endowment for the Humanities","total_num_programs":2,"total_obs":3787276.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":2749117.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized Indian/Native American/Alaska Native
-  Tribal Government","total_num_programs":5},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":5},{"title":"County
+  Tribal Government","total_num_programs":4},{"title":"U.S. Territory (or Possession)
+  Government (including freely-associated states)","total_num_programs":4},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":4},{"title":"Municipality
+  with geographic regional control and authority)","total_num_programs":3},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":4},{"title":"Not-for-Profit Organization","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"Local
+  and villages)","total_num_programs":3},{"title":"Nonprofit Organization","total_num_programs":3},{"title":"Not-for-Profit
+  Organization","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Local","total_num_programs":2},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":3},{"title":"Nonprofit Organization","total_num_programs":3},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":3},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Public
+  and hospitals","total_num_programs":2},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":3},{"title":"U.S. State Government (including the
-  District of Columbia)","total_num_programs":3},{"title":"Local","total_num_programs":2},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":2},{"title":"Other public institution/organization","total_num_programs":2},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
-  private institutions/organizations","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
-  (less than 500 employees)","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"State
+  hospitals)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  public institution/organization","total_num_programs":1},{"title":"Public nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1}]'
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -68,11 +61,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -111,6 +99,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -232,38 +235,33 @@ fiscal_year: '2025'
 parent_permalink: /category/cultural-affairs
 parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-programs: '[{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska Native
-  Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":44953000.0,"program_type":"assistance_listing"},{"cfda":"84.422","permalink":"/program/84.422","title":"American
-  History and Civics Education","popular_name":"American History and Civics Academies:  National
-  Activities Grants","agency":"Department of Education","total_obs":23000000.0,"program_type":"assistance_listing"},{"cfda":"93.587","permalink":"/program/93.587","title":"Promote
-  the Survival and Continuing Vitality of Native American Languages","popular_name":"Native
-  American Language Preservation and Maintenance (P&M) and the Esther Martinez Immersion
-  (EMI)","agency":"Department of Health and Human Services","total_obs":12818434.0,"program_type":"assistance_listing"},{"cfda":"84.415","permalink":"/program/84.415","title":"Indian
-  Education National Activities (State Tribal Education Partnership (STEP) and Native
-  American Language (NAL)","popular_name":null,"agency":"Department of Education","total_obs":12365000.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
-  Grants for African American History and Culture","popular_name":"Museum Grants for
-  African American History and Culture","agency":"The Institute of Museum and Library
-  Services","total_obs":6240000.0,"program_type":"assistance_listing"},{"cfda":"15.159","permalink":"/program/15.159","title":"Cultural
-  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":4337884.0,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
+programs: '[{"cfda":"45.309","permalink":"/program/45.309","title":"Museum Grants
+  for African American History and Culture","popular_name":"Museum Grants for African
+  American History and Culture","agency":"The Institute of Museum and Library Services","total_obs":6240000.0,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
   Grants for American Latino History and Culture","popular_name":"Museum Grants for
   American Latino History and Culture","agency":"The Institute of Museum and Library
-  Services","total_obs":4258263.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
+  Services","total_obs":4258263.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
+  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":3787276.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
   American/Native Hawaiian Museum Services Program ","popular_name":"Native American/Native
   Hawaiian Museum Services Program","agency":"The Institute of Museum and Library
-  Services","total_obs":3772000.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
-  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
-  Endowment for the Humanities","total_obs":3515378.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
+  Services","total_obs":3772000.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
   Hawaiian and Alaka Native Culture and Arts Development","popular_name":null,"agency":"Department
-  of the Interior","total_obs":2749117.0,"program_type":"assistance_listing"},{"cfda":"45.164","permalink":"/program/45.164","title":"Promotion
-  of the Humanities Public Programs","popular_name":null,"agency":"National Endowment
-  for the Humanities","total_obs":605909.0,"program_type":"assistance_listing"},{"cfda":"45.031","permalink":"/program/45.031","title":"American
+  of the Interior","total_obs":2749117.0,"program_type":"assistance_listing"},{"cfda":"45.031","permalink":"/program/45.031","title":"American
   Latino Museum Internship and Fellowship Initiative","popular_name":"ALMIFI","agency":"The
-  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.025","permalink":"/program/12.025","title":"Native
+  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.415","permalink":"/program/84.415","title":"Indian
+  Education National Activities (State Tribal Education Partnership (STEP) and Native
+  American Language (NAL)","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.034","permalink":"/program/45.034","title":"National
+  Garden of American Heroes: Statues","popular_name":null,"agency":"National Endowment
+  for the Humanities","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.025","permalink":"/program/12.025","title":"Native
   American Consultation to Identify Sacred Sites and Traditional Cultural Properties","popular_name":"Native
-  American Consultation","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"}]'
+  American Consultation","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.587","permalink":"/program/93.587","title":"Promote
+  the Survival and Continuing Vitality of Native American Languages","popular_name":"Native
+  American Language Preservation and Maintenance (P&M) and the Esther Martinez Immersion
+  (EMI)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Cultural Heritage and Traditions
 total_num_agencies: 6
-total_num_applicant_types: 38
-total_num_programs: 13
-total_obs: 118614985.0
+total_num_applicant_types: 26
+total_num_programs: 10
+total_obs: 20806656.0
 ---

@@ -70,6 +70,18 @@ def extract_assistance_listing():
         f.write("["+",".join(listings_json_list)+"]")
     print("Extract Assistance Listings Complete")
 
+def extract_ip_data():
+    """Downloads the latest ALN-to-FPI mappings from paymentaccuracy.gov"""
+    r = requests.get("https://paymentaccuracy.gov/assets/files/" +
+                     "improper-payment-program-mapping.csv",
+                     timeout=60)
+
+    # save the csv
+    with open(DISK_DIRECTORY + EXTRACTED_DIRECTORY +
+              "improper-payment-program-mapping.csv", "w",
+              encoding="utf-8") as f:
+        f.write(r.text)
+    print("Extract IP Data Complete")
 
 def extract_dictionary():
     """Extracts an id-to-value mapping from SAM.gov for common picklists,
@@ -325,12 +337,15 @@ def clean_all_data():
     clean_json_data("dictionary.json")
     print("All Data Cleaning Complete")
 
-extract_assistance_listing()
-extract_dictionary()
-clean_all_data()
-extract_organizations()
-extract_usaspending_award_hashes()
-
-# In addition to functions above, data must be downloaded from USASpending.gov
+# Prior to running this script, data must be downloaded from USASpending.gov
 # at: https://www.usaspending.gov/download_center/award_data_archive
 # This data is processed in the transformation stage of the process.
+def main():
+    extract_assistance_listing()
+    extract_dictionary()
+    extract_ip_data()
+    clean_all_data()
+    extract_organizations()
+    extract_usaspending_award_hashes()
+if __name__ == "__main__":
+    main()

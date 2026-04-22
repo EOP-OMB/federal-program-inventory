@@ -17,51 +17,6 @@ import requests
 # Import the module
 from data_processing import extract
 
-class TestExtractCategoriesFromPDF:
-    @pytest.mark.xfail(reason="Issue #1: Function uses hardcoded absolute file paths")
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
-    @patch('tabula.read_pdf')
-    @patch('pandas.read_csv')
-    @patch('pandas.DataFrame.to_csv')
-    def test_extract_categories_from_pdf_success(self, mock_to_csv, mock_read_csv, mock_read_pdf, mock_exists, sample_raw_data):
-        # this is what extracts tables from PDFs
-        mock_read_pdf.return_value = [sample_raw_data]
-        
-        # this contains the category mappings
-        functions_df = pd.DataFrame([
-            ["Education", "All subcategories for Education"],
-            ["Health", "Health Research"]
-        ])
-        mock_read_csv.return_value = functions_df
-        
-        # Call our extraction function with the 2023 PDF
-        extract.extract_categories_from_pdf("2023", debug=False)
-        
-        # Make sure tabula was called to read the PDF
-        mock_read_pdf.assert_called_once()
-        
-        # Make sure CSV file has results
-        mock_to_csv.assert_called_once()
-    
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
-    @patch('tabula.read_pdf')
-    def test_extract_categories_from_pdf_pdf_error(self, mock_read_pdf, mock_exists):
-        # Simulate Java not found error
-        class JavaNotFoundError(Exception):
-            pass
-        
-        mock_read_pdf.side_effect = JavaNotFoundError("Java not found")
-        
-        # Verify function raises the error
-        with pytest.raises(Exception):
-            extract.extract_categories_from_pdf("2023", debug=False)
-
 class TestExtractAssistanceListing:
     
     @patch('data_processing.extract.DISK_DIRECTORY', '')

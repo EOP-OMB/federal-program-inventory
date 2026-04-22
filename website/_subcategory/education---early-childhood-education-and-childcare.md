@@ -1,14 +1,15 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":12817930340.0},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":8798382188.9},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":4630000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":2726362.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":1036313.2}]'
+  of the Interior","total_num_programs":1,"total_obs":14685536.71},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":3},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Native American
   Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"State","total_num_programs":1}]'
+  associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Unrestricted
+  by Entity Type","total_num_programs":1},{"title":"Unrestricted by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -45,11 +46,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -88,6 +84,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -211,21 +222,22 @@ parent_title: Education
 permalink: /category/education/early-childhood-education-and-childcare
 programs: '[{"cfda":"93.575","permalink":"/program/93.575","title":"Child Care and
   Development Block Grant","popular_name":"Child Care and Development Fund (CCDF)","agency":"Department
-  of Health and Human Services","total_obs":8950758000.0,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
+  of Health and Human Services","total_obs":8648462656.63,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
   for child and dependent care expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3660000000.0,"program_type":"tax_expenditure"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
+  of the Treasury","total_obs":3660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
+  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":950000000.0,"program_type":"tax_expenditure"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
   Care Mandatory and Matching Funds of the Child Care and Development Fund","popular_name":"Child
-  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":3560184535.0,"program_type":"assistance_listing"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
-  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":950000000.0,"program_type":"tax_expenditure"},{"cfda":"93.434","permalink":"/program/93.434","title":"Every
-  Student Succeeds Act/Preschool Development Grants","popular_name":"Preschool Development
-  Grants Birth Through 5","agency":"Department of Health and Human Services","total_obs":306987805.0,"program_type":"assistance_listing"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
+  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":147918932.27,"program_type":"assistance_listing"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
   child care credit","popular_name":null,"agency":"Department of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"15.043","permalink":"/program/15.043","title":"Indian
   Child and Family Education","popular_name":"(FACE)","agency":"Department of the
-  Interior","total_obs":2726362.0,"program_type":"assistance_listing"},{"cfda":"10.286","permalink":"/program/10.286","title":"Early
-  Learning Matters","popular_name":null,"agency":"Department of Agriculture","total_obs":1036313.2,"program_type":"assistance_listing"}]'
+  Interior","total_obs":14685536.71,"program_type":"assistance_listing"},{"cfda":"93.434","permalink":"/program/93.434","title":"Every
+  Student Succeeds Act/Preschool Development Grants","popular_name":"Preschool Development
+  Grants Birth Through 5","agency":"Department of Health and Human Services","total_obs":2000600.0,"program_type":"assistance_listing"},{"cfda":"10.337","permalink":"/program/10.337","title":"DoD
+  Virtual Lab School","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.286","permalink":"/program/10.286","title":"Early
+  Learning Matters","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Early Childhood Education and Childcare
 total_num_agencies: 4
-total_num_applicant_types: 8
-total_num_programs: 8
-total_obs: 17451693015.2
+total_num_applicant_types: 10
+total_num_programs: 9
+total_obs: 13443067725.609999
 ---

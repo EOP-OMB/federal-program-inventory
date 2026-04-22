@@ -7,6 +7,7 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 ARG TEST_ENV=false
+ARG USE_LOCAL_API=false
 
 ENV http_proxy=$http_proxy \
     https_proxy=$https_proxy \
@@ -69,7 +70,7 @@ ENV http_proxy=$http_proxy \
 # Use local api in test environment
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx.conf.local /etc/nginx/nginx.conf.local
-RUN if [ "${TEST_ENV}" = "true" ]; then \
+RUN if [ "${TEST_ENV}" = "true" ] || [ "$USE_LOCAL_API" = "true" ]; then \
     cp -rf /etc/nginx/nginx.conf.local /etc/nginx/nginx.conf; \
     fi
 

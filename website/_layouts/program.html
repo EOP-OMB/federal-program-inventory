@@ -25,7 +25,7 @@ footer_include: _footer-program.html
       <div id="overview-panel" role="tabpanel" aria-labelledby="overview-tab" class="tab-panel">
         <div class="grid-row grid-gap padding-bottom-205">
           <!-- Overview Header -->
-          <div class="grid-col-10 margin-bottom-2">
+          <div class="grid-col-12 margin-bottom-2">
             <h2 class="text-bold margin-top-0 margin-bottom-1">Overview</h2>
             <p class="margin-top-0 margin-bottom-3" style="line-height: 1.5;">
               {% assign program_description = "Description not yet available." %}
@@ -101,7 +101,7 @@ footer_include: _footer-program.html
               {% if outlays == nil and page.other_program_spending != nil %}
                 {% assign outlays = page.other_program_spending %}
               {% endif %}
-              <h3 id="chart-header" class="font-heading-sm">Outlays by Fiscal Year</h3>
+              <h3 id="chart-header" class="font-heading-sm">Expenditures by Fiscal Year</h3>
               <div class="grid grid-row radius-md">
                 <div class="grid-col-12">
                   <div id="chart" style="width:100%" data-outlays='{{ outlays }}'></div>
@@ -123,72 +123,22 @@ footer_include: _footer-program.html
             {% include components/_spending-chart.html
               outlays=outlays %}
 
-            <h2 class="text-bold margin-top-0 margin-bottom-3">Program Spending</h2>
+            <h2 class="text-bold margin-top-3 margin-bottom-3">Methodology</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
 
-            <!-- Legacy Notification Bar -->
+            <h2 class="text-bold margin-top-3 margin-bottom-3">Improper Payments</h2>
             <div id="improper-payment">
-              {% if page.improper_payments == null %}
-              <div class="usa-alert usa-alert--success">
-                <div class="usa-alert__body">
-                  <p class="usa-alert__text">
-                    This program is not associated with any Improper Payment Program Activities that were at risk of
-                    significant improper payments.
-                  </p>
-                </div>
-              </div>
-              {% else %}
-              <p>Improper payments are payments that not made in the correct amount (i.e., overpayments or underpayments), not made to the correct recipient, or not made with strict adherence to agency policies and procedures. Improper payments are not a measure of fraud.
-                <br/>
-                <br/>
-                Agencies may report improper payment information for program activities that differ from the programs listed on the Federal Program Inventory. OMB is working with agencies to align this reporting. The table below shows all Improper Payment Program Activities associated with this program, as well as other programs related to each Improper Payment Program Activity.</p>
-              <span>
-                View more information 
-              </span>
-              <a href="https://www.paymentaccuracy.gov/" class="usa-link usa-link--external" target="_blank"
-                rel="noopener noreferrer">
-                PaymentAccuracy.gov</a>
-                <table class="usa-table usa-table--borderless .usa-table--white-header" id="improper-payments-table">
-                  <thead>
-                    <tr>
-                      <th class= "text-top" scope="col">Improper Payment Program Activity for FY 2024</th>
-                      <th class= "text-top" scope="col">Related Programs</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Data will be inserted here by JavaScript -->
-                  </tbody>
-                </table>
-                <p>
-                  <img src="/assets/img/circle-up-solid.svg" alt="High Priority" width="13" height="13" />
-                  Shows Improper Payment Programs that are considered High Priority Programs
-                </p>
-                {% endif %}
-            </div>
-
-            <!-- Data Display-->
-            <div class="display-flex margin-bottom-4" style="gap: 1rem;">
-              <!-- Obligation History Chart -->
-              <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md">
-                <h3 id="obligationChartTitle" class="margin-bottom-2">Obligation History</h3>
-                <div id="obligationChartContainer" class="display-flex flex-column flex-align-center flex-justify-center">
-                  <div id="obligationChart" class="width-full"></div>
-                </div>
-              </div>
-              <!-- Detailed Obligations Table -->
-              <div class="flex-1 padding-2 padding-bottom-40 margin-top-4 border-1px border-base-lighter radius-md padding-left-2">
-                <h3 id="obligationTableTitle" class="margin-bottom-3">Detailed Obligations</h3>
-                <table class="usa-table usa-table--unstyled width-full" id="obligation-table">
-                  <thead>
-                    <tr>
-                      <th scope="col" class="text-left text-base padding-2" style="width: 50%;">FISCAL YEAR</th>
-                      <th scope="col" class="text-right text-base padding-2" style="width: 50%;">AMOUNT</th>
-                    </tr>
-                  </thead>
-                  <tbody id="obligation-table-body">
-                    <!-- Data will be inserted here by JavaScript -->
-                  </tbody>
-                </table>
-              </div>
+              {% include components/_improper-payment-section.html
+                improper_payments=page.improper_payments
+                improper_payments_related_programs=page.improper_payments_related_programs
+                improper_payments_is_multiple=page.improper_payments_is_multiple %}
             </div>
           </div>
         </div>

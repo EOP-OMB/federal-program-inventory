@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":18191845098.0}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":9024307788.63}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
@@ -47,11 +47,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -90,6 +85,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -213,13 +223,13 @@ parent_title: Transportation
 permalink: /category/transportation/air-transportation
 programs: '[{"cfda":"20.106","permalink":"/program/20.106","title":"Airport Improvement
   Program, Infrastructure Investment and Jobs Act Programs, and COVID-19 Airports
-  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":9095922549.0,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
-  Improvement Program","popular_name":"AIP","agency":"Department of Transportation","total_obs":4475920013.0,"program_type":"assistance_listing"},{"cfda":"20.117","permalink":"/program/20.117","title":"Airport
-  Infrastructure Grants","popular_name":"AIG (IIJA)","agency":"Department of Transportation","total_obs":3633329901.0,"program_type":"assistance_listing"},{"cfda":"20.118","permalink":"/program/20.118","title":"Airport
-  Terminal Program","popular_name":"ATP","agency":"Department of Transportation","total_obs":986672635.0,"program_type":"assistance_listing"}]'
+  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":9024307788.63,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
+  Improvement Program","popular_name":"AIP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.117","permalink":"/program/20.117","title":"Airport
+  Infrastructure Grants","popular_name":"AIG (IIJA)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.118","permalink":"/program/20.118","title":"Airport
+  Terminal Program","popular_name":"ATP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Air Transportation
 total_num_agencies: 1
 total_num_applicant_types: 13
 total_num_programs: 4
-total_obs: 18191845098.0
+total_obs: 9024307788.63
 ---

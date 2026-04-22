@@ -1,6 +1,5 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":1,"total_obs":36500000.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":2,"total_obs":4804916.0}]'
+agencies: '[{"title":"National Endowment for the Humanities","total_num_programs":2,"total_obs":2535375.21}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":2},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Municipality
@@ -9,13 +8,7 @@ applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska,
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":2},{"title":"U.S. State Government
   (including the District of Columbia)","total_num_programs":2},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Other
-  private institutions/organizations","total_num_programs":1},{"title":"Other public
-  institution/organization","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1}]'
+  (or Possession) Government (including freely-associated states)","total_num_programs":2}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -52,11 +45,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -95,6 +83,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -216,15 +219,13 @@ fiscal_year: '2025'
 parent_permalink: /category/cultural-affairs
 parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/artistic-talent-development
-programs: '[{"cfda":"84.351","permalink":"/program/84.351","title":"Arts in Education","popular_name":null,"agency":"Department
-  of Education","total_obs":36500000.0,"program_type":"assistance_listing"},{"cfda":"45.169","permalink":"/program/45.169","title":"Promotion
-  of the Humanities Office of Digital Humanities","popular_name":null,"agency":"National
-  Endowment for the Humanities","total_obs":2614548.0,"program_type":"assistance_listing"},{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion
-  of the Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
-  Endowment for the Humanities","total_obs":2190368.0,"program_type":"assistance_listing"}]'
+programs: '[{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion of the
+  Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
+  Endowment for the Humanities","total_obs":2535375.21,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"Collaborative
+  Research","popular_name":null,"agency":"National Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Artistic Talent Development
-total_num_agencies: 2
-total_num_applicant_types: 15
-total_num_programs: 3
-total_obs: 41304916.0
+total_num_agencies: 1
+total_num_applicant_types: 7
+total_num_programs: 2
+total_obs: 2535375.21
 ---

@@ -1,17 +1,16 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":11,"total_obs":4160424328.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":2886984.45}]'
-applicant_types: '[{"title":"Other","total_num_programs":6},{"title":"State","total_num_programs":6},{"title":"Nonprofit
-  Organization","total_num_programs":3},{"title":"For-Profit Organization","total_num_programs":2},{"title":"Not-for-Profit
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":11,"total_obs":2004168534.4499998}]'
+applicant_types: '[{"title":"Other","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"For-Profit
+  Organization","total_num_programs":2},{"title":"Nonprofit Organization","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"County Government (inclusive of
   boroughs in Alaska, parishes and other governmental entities with geographic regional
   control and authority)","total_num_programs":1},{"title":"Federally Recognized Indian/Native
   American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Interstate
   Organization","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1},{"title":"Unrestricted
-  by Individual Type","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
+  and villages)","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
+  by Entity Type","total_num_programs":1},{"title":"Unrestricted by Individual Type","total_num_programs":1},{"title":"Veteran
+  (including dependents)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -48,11 +47,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -91,6 +85,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -214,36 +223,35 @@ parent_title: Health
 permalink: /category/health/veteran-health
 programs: '[{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","popular_name":"Civilian
   Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)","agency":"Department
-  of Veterans Affairs","total_obs":2048266450.0,"program_type":"assistance_listing"},{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans
-  State Nursing Home Care","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":2007560519.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
-  State Domiciliary Care","popular_name":"Veterans State Home Domiciliary Care","agency":"Department
-  of Veterans Affairs","total_obs":52731404.0,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
+  of Veterans Affairs","total_obs":1930702459.0,"program_type":"assistance_listing"},{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans
+  State Nursing Home Care","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":32008212.83,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":20837858.0,"program_type":"assistance_listing"},{"cfda":"64.034","permalink":"/program/64.034","title":"VA
+  of Veterans Affairs","total_obs":17500000.0,"program_type":"assistance_listing"},{"cfda":"64.034","permalink":"/program/64.034","title":"VA
   Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of
   the Armed Forces","popular_name":"VA Grants for Adaptive Sports Programs for Disabled
   Veterans and Disabled Members of the Armed Forces","agency":"Department of Veterans
-  Affairs","total_obs":15634139.0,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
-  State Adult Day Health Care","popular_name":null,"agency":"Department of Veterans
-  Affairs","total_obs":6369054.0,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
+  Affairs","total_obs":14982295.12,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
   Transportation Program","popular_name":"Veterans Transportation Program/Grants for
-  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5999308.0,"program_type":"assistance_listing"},{"cfda":"10.288","permalink":"/program/10.288","title":"Clearing
-  House for Military Readiness","popular_name":null,"agency":"Department of Agriculture","total_obs":2886984.45,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
+  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5999308.63,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
   to States for Programs to Promote the Hiring and Retention of Nurses at State Veterans
   Homes","popular_name":"SVH RN Grant; Nurse Retention Grant","agency":"Department
-  of Veterans Affairs","total_obs":2075861.0,"program_type":"assistance_listing"},{"cfda":"64.037","permalink":"/program/64.037","title":"VA
+  of Veterans Affairs","total_obs":2816649.35,"program_type":"assistance_listing"},{"cfda":"64.037","permalink":"/program/64.037","title":"VA
   U.S. Paralympics Monthly Assistance Allowance Program","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":949735.0,"program_type":"assistance_listing"},{"cfda":"64.051","permalink":"/program/64.051","title":"Specially
+  of Veterans Affairs","total_obs":159609.52,"program_type":"assistance_listing"},{"cfda":"64.051","permalink":"/program/64.051","title":"Specially
   Adapted Housing Assistive Technology Grant Program","popular_name":"Specially Adapted
   Housing Assistive Technology (SAHAT) Grant Program","agency":"Department of Veterans
   Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.057","permalink":"/program/64.057","title":"Suicide
   Mortality Review Cooperative Agreements","popular_name":"SMR, SFR, SMRC, Suicide
   Fatality Review, Suicide Mortality Review Committee","agency":"Department of Veterans
-  Affairs","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
+  State Adult Day Health Care","popular_name":null,"agency":"Department of Veterans
+  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
+  State Domiciliary Care","popular_name":"Veterans State Home Domiciliary Care","agency":"Department
+  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Veteran Health
-total_num_agencies: 2
-total_num_applicant_types: 17
-total_num_programs: 12
-total_obs: 4163311312.45
+total_num_agencies: 1
+total_num_applicant_types: 16
+total_num_programs: 11
+total_obs: 2004168534.4499998
 ---

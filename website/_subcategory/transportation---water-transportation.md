@@ -1,13 +1,14 @@
 ---
-agencies: '[{"title":"Department of Homeland Security","total_num_programs":2,"total_obs":7695859.0},{"title":"Department
-  of Transportation","total_num_programs":3,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit with 501C3 IRS Status (Other than Institution
-  of Higher Education)","total_num_programs":2},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":2},{"title":"Federally Recognized
-  Indian/Native American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Other
+agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":64957616.0},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":6195859.0},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":3},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Transit
+  Authority","total_num_programs":2},{"title":"Unrestricted by Entity Type","total_num_programs":2},{"title":"Other
   (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Transit
-  Authority","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1}]'
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Port
+  Authority","total_num_programs":1},{"title":"State","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -44,11 +45,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -87,6 +83,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -208,20 +219,24 @@ fiscal_year: '2025'
 parent_permalink: /category/transportation
 parent_title: Transportation
 permalink: /category/transportation/water-transportation
-programs: '[{"cfda":"97.135","permalink":"/program/97.135","title":"National Nonprofit
-  Organization Recreational Boating Safety Grant Program","popular_name":"Nonprofit
-  RBS Program","agency":"Department of Homeland Security","total_obs":6195859.0,"program_type":"assistance_listing"},{"cfda":"97.136","permalink":"/program/97.136","title":"Boating
+programs: '[{"cfda":"20.532","permalink":"/program/20.532","title":"Passenger Ferry
+  Grant Program, Electric or Low-Emitting Ferry Pilot Program, and Ferry Service for
+  Rural Communities Program","popular_name":"Ferry Programs","agency":"Department
+  of Transportation","total_obs":64457616.0,"program_type":"assistance_listing"},{"cfda":"97.135","permalink":"/program/97.135","title":"National
+  Nonprofit Organization Recreational Boating Safety Grant Program","popular_name":"Nonprofit
+  RBS Program","agency":"Department of Homeland Security","total_obs":6195859.0,"program_type":"assistance_listing"},{"cfda":"20.826","permalink":"/program/20.826","title":"Maritime
+  Environmental and Technical Assistance","popular_name":"META","agency":"Department
+  of Transportation","total_obs":500000.0,"program_type":"assistance_listing"},{"cfda":"97.136","permalink":"/program/97.136","title":"Boating
   Safety Data Collection and Analysis Grant Program","popular_name":"National Recreational
-  Boating Safety Survey (NRBSS)","agency":"Department of Homeland Security","total_obs":1500000.0,"program_type":"assistance_listing"},{"cfda":"20.538","permalink":"/program/20.538","title":"Electric
+  Boating Safety Survey (NRBSS)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.538","permalink":"/program/20.538","title":"Electric
   or Low-Emitting Passenger Ferry Program","popular_name":"Low-No Ferry","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.539","permalink":"/program/20.539","title":"Ferry
   Service for Rural Communities","popular_name":"Ferry Service for Rural Communities
-  Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.826","permalink":"/program/20.826","title":"Maritime
-  Environmental and Technical Assistance","popular_name":"META","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.402","permalink":"/program/11.402","title":"Hydrographic
+  Services","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Water Transportation
-total_num_agencies: 2
-total_num_applicant_types: 8
-total_num_programs: 5
-total_obs: 7695859.0
+total_num_agencies: 3
+total_num_applicant_types: 9
+total_num_programs: 7
+total_obs: 71153475.0
 ---

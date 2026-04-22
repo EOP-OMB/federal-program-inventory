@@ -18,11 +18,12 @@ function formatDollarAmount(amount) {
 
 // outlays and other program spending have different raw data representations
 // this function standardizes them for display in D3
-function standardizeOutlaysAndObligationsForD3(rawData) {
+function standardizeDataForD3(rawData, combineOther) {
   function formatOutlayData(rawData) {
     let formattedData = {
       "obligations": [],
-      "outlays": []
+      "outlays": [],
+      "revenueLosses": []
     };
     let nonZeroDataSeen = false;
 
@@ -51,10 +52,11 @@ function standardizeOutlaysAndObligationsForD3(rawData) {
     return formattedData;
   }
 
-  function formatOtherSpendingData(rawData) {
+  function formatOtherSpendingData(rawData, combineForgoneRevenue) {
     let formattedData = {
       "obligations": [],
-      "outlays": []
+      "outlays": [],
+      "revenueLosses": []
     };
     let nonZeroDataSeen = false;
 
@@ -81,9 +83,14 @@ function standardizeOutlaysAndObligationsForD3(rawData) {
             "value": 0
           });
 
+          formattedData.revenueLosses.push({
+            "year": parseInt(rawData[i]["x"], 10),
+            "value": (combineForgoneRevenue ? 0 : forgoneRevenue)
+          });
+
           formattedData.outlays.push({
             "year": parseInt(rawData[i]["x"], 10),
-            "value": outlays + forgoneRevenue
+            "value": (combineForgoneRevenue ? outlays + forgoneRevenue : outlays)
           });
         }
       }
@@ -100,222 +107,14 @@ function standardizeOutlaysAndObligationsForD3(rawData) {
     if ("outlay" in rawData[0]) {
       spendingData = formatOutlayData(rawData);
     } else {
-      spendingData = formatOtherSpendingData(rawData);
+      spendingData = formatOtherSpendingData(rawData, combineOther);
     }
   }
 
   return spendingData;
 }
 
-// Custom vertical bar chart function - refactored for reusability
-function renderVerticalBarChart(data, chartId, dataKey, tooltipLabel = 'FY', showAxes = false, useObligationColors = false) {
-  // Clear existing chart
-  d3.select(`#${chartId}`).selectAll("*").remove();
-
-  // Chart dimensions - adjust margins based on whether we show axes
-  // For obligation chart, use full container width with fallback; for others use fixed width
-  const containerElement = document.getElementById(`${chartId}Container`);
-  let containerWidth;
-  if (useObligationColors) {
-    // For obligation chart, get actual width or use reasonable fallback
-    containerWidth = containerElement.offsetWidth || containerElement.clientWidth || 400;
-  } else {
-    // For expenditure chart, use existing logic
-    containerWidth = containerElement.offsetWidth || 232;
-  }
-  const containerHeight = 250;
-  const margin = showAxes ? 
-    { top: 10, right: 15, bottom: 40, left: 60 } : 
-    { top: 10, right: 15, bottom: 25, left: 15 };
-  const width = containerWidth - margin.left - margin.right;
-  const height = containerHeight - margin.top - margin.bottom;
-
-  // Create SVG
-  const svg = d3.select(`#${chartId}`)
-    .append("svg")
-    .attr("width", containerWidth)
-    .attr("height", containerHeight);
-
-  const g = svg.append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
-
-  // Scales
-  const x = d3.scaleBand()
-    .domain(data.map(d => d.year))
-    .range([0, width])
-    .padding(0.2);
-
-  const y = d3.scaleLinear()
-    .domain([0, d3.max(data, d => d.value)])
-    .nice()
-    .range([showAxes ? height : height - 20, 0]);
-
-  // Add axes if requested
-  if (showAxes) {
-    // X Axis - dotted line, no tick marks
-    g.append("g")
-      .attr("transform", `translate(0,${height})`)
-      .call(d3.axisBottom(x).tickSize(0))
-      .select(".domain")
-      .style("stroke-dasharray", "2,2")
-      .style("stroke", "#1b1b1b");
-      
-    // Remove tick marks and style x-axis text
-    g.selectAll(".tick text")
-      .style("font-size", "12px")
-      .style("fill", "#1b1b1b");
-      
-    // Y Axis - remove the main axis line, create horizontal grid lines
-    const yTicks = y.ticks(4);
-    
-    // Remove default y-axis
-    g.append("g")
-      .call(d3.axisLeft(y).ticks(4).tickSize(0).tickFormat(d => {
-        const value = d;
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD',
-          notation: 'compact',
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 1
-        }).format(value);
-      }))
-      .select(".domain")
-      .remove();
-      
-    // Add horizontal grid lines across the chart
-    g.selectAll(".grid-line")
-      .data(yTicks)
-      .enter()
-      .append("line")
-      .attr("class", "grid-line")
-      .attr("x1", 0)
-      .attr("x2", width)
-      .attr("y1", d => y(d))
-      .attr("y2", d => y(d))
-      .style("stroke", "#ddd")
-      .style("stroke-width", 1);
-      
-    // Style y-axis text
-    g.selectAll(".tick text")
-      .style("font-size", "12px")
-      .style("fill", "#1b1b1b");
-  }
-
-  // Create bars
-  g.selectAll(".bar")
-    .data(data)
-    .enter().append("rect")
-    .attr("class", "bar")
-    .attr("x", d => x(d.year))
-    .attr("width", x.bandwidth())
-    .attr("y", d => y(d.value))
-    .attr("height", d => showAxes ? height - y(d.value) : height - 20 - y(d.value))
-    .attr("fill", function(d, i) {
-      if (useObligationColors) {
-        // Most recent year: purple (#8e4ec6, text-primary), others: green (#00a91c, text-secondary)
-        return i === data.length - 1 ? '#8e4ec6' : '#00a91c';
-      } else {
-        // Default blue for outlay charts
-        return '#005ea2';
-      }
-    })
-    .attr("stroke", useObligationColors ? 'none' : "#1a4480")
-    .attr("stroke-width", useObligationColors ? 0 : 1)
-    .on('mouseover', function(event, d) {
-      // Create tooltip
-      const tooltip = d3.select('body').append('div')
-        .attr('class', 'chart-tooltip')
-        .style('opacity', 0)
-        .style('position', 'absolute')
-        .style('background', 'rgba(0, 0, 0, 0.8)')
-        .style('color', 'white')
-        .style('padding', '8px')
-        .style('border-radius', '4px')
-        .style('font-size', '12px')
-        .style('pointer-events', 'none')
-        .style('z-index', '1000');
-        
-      const formattedValue = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: useObligationColors ? 'standard' : 'compact',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 2
-      }).format(d.value);
-      
-      const tooltipText = useObligationColors ? 
-        `${d.year} - ${tooltipLabel}: ${formattedValue}` : 
-        `${tooltipLabel} ${d.year}: ${formattedValue}`;
-      
-      tooltip.html(tooltipText)
-        .style('left', (event.pageX + 10) + 'px')
-        .style('top', (event.pageY - 10) + 'px')
-        .transition()
-        .duration(200)
-        .style('opacity', 1);
-    })
-    .on('mouseout', function() {
-      d3.selectAll('.chart-tooltip')
-        .transition()
-        .duration(200)
-        .style('opacity', 0)
-        .remove();
-    });
-
-  // Add year labels below bars only if not showing axes
-  if (!showAxes) {
-    g.selectAll(".year-label")
-      .data(data)
-      .enter().append("text")
-      .attr("class", "year-label")
-      .attr("x", d => x(d.year) + x.bandwidth() / 2)
-      .attr("y", height - 5)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "12px")
-      .attr("fill", "#1b1b1b")
-      .text(d => d.year);
-  }
-}
-
-// Function to populate a two-column table with year and value data
-function populateTable(data, tableName) {
-  const tableBody = document.getElementById(`${tableName}-table-body`);
-  if (!tableBody) return;
-  
-  // Clear existing content
-  tableBody.innerHTML = '';
-  
-  // Sort data by year (ascending)
-  const sortedData = data.sort((a, b) => parseInt(a.year) - parseInt(b.year));
-  
-  // Create rows for each year
-  sortedData.forEach(item => {
-    const row = document.createElement('tr');
-    
-    // Fiscal Year column (left-aligned)
-    const yearCell = document.createElement('td');
-    yearCell.className = 'text-left text-ink padding-2';
-    yearCell.textContent = item.year;
-    
-    // Amount column (right-aligned)
-    const amountCell = document.createElement('td');
-    amountCell.className = 'text-right text-ink padding-2';
-    const formattedAmount = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0
-    }).format(item.value);
-    amountCell.textContent = formattedAmount;
-    
-    row.appendChild(yearCell);
-    row.appendChild(amountCell);
-    tableBody.appendChild(row);
-  });
-}
-
-function renderTreeMap(data, chartId, dataKey, color){
+function renderTreeMap(data, chartId, dataKey, color, textColor){
   // Clear existing chart
   d3.select(`#${chartId}`).selectAll("*").remove();
 
@@ -465,6 +264,7 @@ function renderTreeMap(data, chartId, dataKey, color){
       .attr("text-anchor", "middle")
       .attr("font-size", "12px")
       .attr("font-weight", "500")
+      .attr("fill", textColor)
       .style("pointer-events", "none")
       .attr("class", function() {
         return chartId === 'outcomeChart'
@@ -490,11 +290,6 @@ function renderTreeMap(data, chartId, dataKey, color){
       return (fitsHeight && fitsWidth) ? 1 : 0;
     });
   });
-}
-
-// Legacy function for backward compatibility
-function populateObligationsTable(data) {
-  populateTable(data, 'obligation');
 }
 
 // Function to update summary card with dynamic data

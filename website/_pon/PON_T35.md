@@ -1,0 +1,263 @@
+---
+category: Transportation
+definition: 'A program whose beneficiaries achieved one or more of the following results
+  within the past year: -Reduced transit times to key services (e.g., hospitals, schools,
+  grocery stores); -Reduced transit times to their place of work; -Expanded schedule
+  options; -Reduced transit times to recreation and community spaces; -Increased transportation
+  modality options.'
+focus_area: Multi–modal Transportation
+gwo_id: PON.T35
+permalink: /pon/PON_T35
+title: Improve Transit Connectivity
+where_used:
+- agency: Department of Transportation
+  expenditure_amount: 60000000.0
+  name: Advanced Transportation Technology and Innovation (ATTAIN) Program
+  permalink: /program/20.226
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Appalachian Development Highway System
+  permalink: /program/20.229
+  program_type: assistance_listing
+- agency: Appalachian Regional Commission
+  expenditure_amount: 0.0
+  name: Appalachian Development Highway System
+  permalink: /program/23.003
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 36000000.0
+  name: Bridge Formula Program
+  permalink: /program/20.263
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 700000000.0
+  name: Bridge Investment Program
+  permalink: /program/20.264
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Capital Assistance to States - Intercity Passenger Rail Service
+  permalink: /program/20.317
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Centers for Surface Transportation Excellence 504(h)
+  permalink: /program/20.291
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 50000000.0
+  name: Congestion Relief Program
+  permalink: /program/20.269
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1193000000.0
+  name: Consolidated Rail Infrastructure and Safety Improvements
+  permalink: /program/20.325
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Consolidated Rail Infrastructure and Safety Improvements Program
+  permalink: /program/20.337
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 39483896.0
+  name: Consolidated Rail Infrastructure and Safety Improvements Program – Special
+    Transportation Circumstances
+  permalink: /program/20.338
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 50000000.0
+  name: Corridor Identification and Development Program
+  permalink: /program/20.339
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 14425121.0
+  name: Discretionary Planning Grant Programs
+  permalink: /program/20.541
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 8535352000.0
+  name: Federal Transit Formula Grants
+  permalink: /program/20.507
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 9542000000.0
+  name: Federal-State Partnership for Intercity Passenger Rail
+  permalink: /program/20.326
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 91855000.0
+  name: Ferry Service for Rural Communities
+  permalink: /program/20.539
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1219562500.0
+  name: Formula Grants for Rural Areas and Tribal Transit Program
+  permalink: /program/20.509
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: High-Speed Rail Corridors and Intercity Passenger Rail Service – Capital Assistance
+    Grants
+  permalink: /program/20.319
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 130000000.0
+  name: Highway Research & Development Program
+  permalink: /program/20.225
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Indian Schools Student Transportation
+  permalink: /program/15.044
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 110000000.0
+  name: Intelligent Transportation Systems (ITS) Program
+  permalink: /program/20.273
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Interstate Rail Compacts
+  permalink: /program/20.328
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: MOBILITY EQUITY RESEARCH INITIATIVE
+  permalink: /program/20.948
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Maglev Project Selection Program - SAFETEA-LU
+  permalink: /program/20.318
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 37006000.0
+  name: Metropolitan Transportation Planning (Section 5303)
+  permalink: /program/20.517
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: 'Metropolitan Transportation Planning and State and Non-Metropolitan Planning
+    and Research '
+  permalink: /program/20.505
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1500000000.0
+  name: National Highway Freight Program (NHFP)
+  permalink: /program/20.278
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: National Highway Performance Program (NHPP)
+  permalink: /program/20.279
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1500000000.0
+  name: 'National Infrastructure Investments '
+  permalink: /program/20.933
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 6793000000.0
+  name: National Railroad Passenger Corporation Grants
+  permalink: /program/20.315
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 55000000.0
+  name: Nationally Significant Federal Lands and Tribal Projects (NSFLTP)
+  permalink: /program/20.281
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 10000000.0
+  name: Northeast Corridor Commission
+  permalink: /program/20.333
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Passenger Ferry Grant Program, Electric or Low-Emitting Ferry Pilot Program,
+    and Ferry Service for Rural Communities Program
+  permalink: /program/20.532
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 690000000.0
+  name: Payments for Essential Air Services
+  permalink: /program/20.901
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 551000000.0
+  name: Railroad Crossing Elimination
+  permalink: /program/20.327
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Railroad Development
+  permalink: /program/20.314
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 750000.0
+  name: Railroad Development
+  permalink: /program/20.334
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 600000000.0
+  name: Railroad Rehabilitation and Improvement Financing Program
+  permalink: /program/20.316
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 14000000.0
+  name: Restoration and Enhancement
+  permalink: /program/20.324
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Road Maintenance Indian Roads
+  permalink: /program/15.033
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 56800000000.0
+  name: Safety Related Activities
+  permalink: /program/20.299
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 4420752000.0
+  name: State of Good Repair Grants Program
+  permalink: /program/20.525
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 6000000.0
+  name: State-Amtrak Intercity Passenger Rail Committee
+  permalink: /program/20.335
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 24498000.0
+  name: Statewide and Nonmetropolitan Transportation Planning and Research (Section
+    5304)
+  permalink: /program/20.535
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 67500000.0
+  name: Technology & Innovation Deployment Program 503(c)
+  permalink: /program/20.227
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 237000000.0
+  name: Territorial and Puerto Rico Highway Program
+  permalink: /program/20.298
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 1111023.0
+  name: Transportation - DASH 102X and WMATA 7M Shuttles
+  permalink: /program/12.016
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 500000.0
+  name: Transportation Access Pilot Program
+  permalink: /program/20.288
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: United States Marine Highway Grants
+  permalink: /program/20.816
+  program_type: assistance_listing
+---

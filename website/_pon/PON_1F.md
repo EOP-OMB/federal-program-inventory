@@ -1,0 +1,45 @@
+---
+category: Disaster Prevention and Relief
+definition: 'A program whose beneficiaries attained one or more of the following results
+  within the past year: -Targeted incentives to safeguard agricultural operations
+  against unexpected disruptions (e.g., loss reimbursement programs, tax credits,
+  subsidized insurance, or technical advisory services); -Reduced vulnerability of
+  agricultural production to market fluctuations, extreme weather events, pest outbreaks,
+  or supply shortages through risk assessment and mitigation planning; -Maintained
+  stable production levels and revenue streams despite operational challenges.'
+focus_area: Disaster Readiness, Response, and Relief
+gwo_id: PON.1F
+permalink: /pon/PON_1F
+title: Improve Agricultural Resilience to Hazards
+where_used:
+- agency: Department of the Treasury
+  expenditure_amount: 2020000000.0
+  name: Capital gains treatment of certain agriculture income
+  permalink: /program/TC.051
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 20000000.0
+  name: Deferral of gain on sale of farm refiners
+  permalink: /program/TC.053
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 140000000.0
+  name: Expensing of certain capital outlays
+  permalink: /program/TC.048
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 320000000.0
+  name: Expensing of certain multiperiod production costs
+  permalink: /program/TC.049
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 220000000.0
+  name: Income averaging for farmers
+  permalink: /program/TC.052
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 140000000.0
+  name: Treatment of loans forgiven for solvent farmers
+  permalink: /program/TC.050
+  program_type: tax_expenditure
+---

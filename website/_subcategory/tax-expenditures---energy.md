@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":31,"total_obs":80650000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":30,"total_obs":80650000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -37,11 +37,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -80,6 +75,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -251,12 +261,10 @@ programs: '[{"cfda":"TC.031","permalink":"/program/TC.031","title":"Tax credit f
   from passive loss limitation for working interests in oil and gas properties","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.018","permalink":"/program/TC.018","title":"Exclusion
   of interest on energy facility bonds","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.033","permalink":"/program/TC.033","title":"Tax
-  credits for clean-fuel burning vehicles and refueling property","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
+  the Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
 title: Energy
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 31
+total_num_programs: 30
 total_obs: 80650000000.0
 ---

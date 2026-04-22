@@ -13,13 +13,25 @@ function standardizeDollarAmount(amount) {
   const absAmount = Math.abs(amount);
   const sign = amount < 0 ? '-' : '';
   
+  // Trillions (1T+)
+  if (absAmount >= 1000000000000) {
+    const trillions = absAmount / 1000000000000;
+    if (trillions >= 100) {
+      // 100T+ -> one decimal place
+      return `${sign}$${trillions.toFixed(1)}T`;
+    } else if (trillions >= 10) {
+      // 10T-99T -> one decimal place
+      return `${sign}$${trillions.toFixed(1)}T`;
+    } else {
+      // 1T-9T -> two decimal places
+      return `${sign}$${trillions.toFixed(2)}T`;
+    }
+  }
+
   // Billions (1B+)
-  if (absAmount >= 1000000000) {
+  else if (absAmount >= 1000000000) {
     const billions = absAmount / 1000000000;
-    if (billions >= 1000) {
-      // 1000B+ -> show as whole number billions
-      return `${sign}$${Math.round(billions).toLocaleString()}B`;
-    } else if (billions >= 100) {
+    if (billions >= 100) {
       // 100B-999B -> one decimal place
       return `${sign}$${billions.toFixed(1)}B`;
     } else if (billions >= 10) {

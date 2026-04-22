@@ -411,6 +411,162 @@ PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL = """
         JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
 """
 
+PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL = """
+    DROP VIEW IF EXISTS program_amounts_lookup;
+"""
+
+PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
+    CREATE VIEW program_amounts_lookup AS
+    SELECT
+        id,
+        program_type,
+        -- most queries assume string representation
+        fiscal_year || '' AS fiscal_year,
+        CASE
+            WHEN program_type = 'assistance_listing' THEN usaspending_outlay
+            WHEN program_type = 'contracts' THEN usaspending_outlay
+            WHEN program_type = 'interest' THEN other_outlay
+            WHEN program_type = 'tax_expenditure' THEN other_outlay
+        END AS outlay,
+        CASE
+            WHEN program_type = 'assistance_listing' AND is_current_year = 1 THEN sam_estimated_obligation
+            WHEN program_type = 'assistance_listing' AND is_current_year = 0 THEN usaspending_obligation
+            WHEN program_type = 'contracts' THEN usaspending_obligation
+            WHEN program_type = 'interest' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN 0
+            WHEN program_type = 'tax_expenditure' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN 0
+        END AS obligation,
+        CASE
+            WHEN program_type = 'assistance_listing' AND is_current_year = 1 THEN sam_estimated_obligation
+            WHEN program_type = 'assistance_listing' AND is_current_year = 0 THEN usaspending_obligation
+            WHEN program_type = 'contracts' THEN usaspending_obligation
+            WHEN program_type = 'interest' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN COALESCE(other_outlay,0) + COALESCE(other_forgone_revenue,0)
+            WHEN program_type = 'tax_expenditure' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN COALESCE(other_outlay,0) + COALESCE(other_forgone_revenue,0)
+        END AS expenditure,
+        other_forgone_revenue AS forgone_revenue,
+		sam_estimated_obligation,
+		sam_actual_obligation,
+		usaspending_obligation_by_action_date
+        FROM (
+            WITH RECURSIVE constants(earliest_year, latest_year) AS (
+                SELECT (SELECT MIN(val)
+                    FROM (
+                        SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        UNION ALL
+                        SELECT fiscal_year FROM program_sam_spending
+                        UNION ALL
+                        SELECT fiscal_year FROM other_program_spending
+                        UNION ALL
+                        SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                    )),
+                (SELECT MAX(val)
+                    FROM (
+                        SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        UNION ALL
+                        SELECT fiscal_year FROM program_sam_spending
+                        UNION ALL
+                        SELECT fiscal_year FROM other_program_spending
+                        UNION ALL
+                        SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                    ))
+            ),
+            year_range(n) AS (
+            SELECT (
+                SELECT MIN(val)
+                FROM (
+                    SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    UNION ALL
+                    SELECT fiscal_year FROM program_sam_spending
+                    UNION ALL
+                    SELECT fiscal_year FROM other_program_spending
+                    UNION ALL
+                    SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                )
+            )
+            UNION ALL
+            SELECT n + 1 FROM year_range WHERE n < (
+                SELECT MAX(val)
+                FROM (
+                    SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    UNION ALL
+                    SELECT fiscal_year FROM program_sam_spending
+                    UNION ALL
+                    SELECT fiscal_year FROM other_program_spending
+                    UNION ALL
+                    SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                )
+            )
+            ),
+            usa_spending_grouped(id, fiscal_year, outlay, obligation) AS (
+            SELECT
+                cfda_number AS id,
+                award_first_fiscal_year AS fiscal_year,
+                SUM(outlay) AS outlay,
+                SUM(obligation) AS obligation
+            FROM usaspending_assistance_outlay_aggregation
+            GROUP BY cfda_number, award_first_fiscal_year
+            ),
+			usa_spending_grouped_by_action_date(id, fiscal_year, obligation) AS (
+            SELECT
+                cfda_number AS id,
+                action_date_fiscal_year AS fiscal_year,
+                SUM(obligations) AS obligation
+            FROM usaspending_assistance_obligation_aggregation
+            GROUP BY cfda_number, action_date_fiscal_year
+            ),
+            sam_grouped(id, fiscal_year, estimated_obligation) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(amount) AS estimated_obligation
+            FROM program_sam_spending
+            WHERE is_actual = 0
+            GROUP BY program_id, fiscal_year
+            ),
+            sam_actual_grouped(id, fiscal_year, actual_obligation) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(amount) AS actual_obligation
+            FROM program_sam_spending
+            WHERE is_actual = 1
+            GROUP BY program_id, fiscal_year
+            ),
+            other_grouped(id, fiscal_year, outlay, forgone_revenue) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(outlays) AS outlay,
+                SUM(forgone_revenue) AS forgone_revenue
+            FROM other_program_spending
+            GROUP BY program_id, fiscal_year
+            )
+            SELECT
+                program.id,
+                program.program_type,
+                year_range.n AS fiscal_year,
+                usa_spending_grouped.outlay AS usaspending_outlay,
+                usa_spending_grouped.obligation AS usaspending_obligation,
+				usa_spending_grouped_by_action_date.obligation AS usaspending_obligation_by_action_date,
+                sam_grouped.estimated_obligation AS sam_estimated_obligation,
+				sam_actual_grouped.actual_obligation AS sam_actual_obligation,
+                other_grouped.outlay AS other_outlay,
+                other_grouped.forgone_revenue AS other_forgone_revenue,
+                constants.latest_year = year_range.n AS is_current_year
+            FROM program, constants
+            CROSS JOIN year_range
+            LEFT JOIN usa_spending_grouped ON
+                program.id = usa_spending_grouped.id AND year_range.n = usa_spending_grouped.fiscal_year
+			LEFT JOIN usa_spending_grouped_by_action_date ON
+			    program.id = usa_spending_grouped_by_action_date.id AND year_range.n = usa_spending_grouped_by_action_date.fiscal_year
+            LEFT JOIN sam_grouped ON
+                program.id = sam_grouped.id AND year_range.n = sam_grouped.fiscal_year
+			LEFT JOIN sam_actual_grouped ON
+                program.id = sam_actual_grouped.id AND year_range.n = sam_actual_grouped.fiscal_year
+            LEFT JOIN other_grouped ON
+                program.id = other_grouped.id AND year_range.n = other_grouped.fiscal_year
+        ) cube_query
+"""
+
 USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance_obligation_aggregation;
     """
@@ -524,11 +680,16 @@ IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL = """
 IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL = """
     CREATE TABLE improper_payment_mapping (
         program_id TEXT NOT NULL,
-        improper_payment_program_name TEXT,
+        improper_payment_program_name TEXT NOT NULL,
+        agency TEXT NOT NULL,
+        fiscal_year INTEGER NOT NULL,
         outlays DECIMAL,
         improper_payment_amount DECIMAL,
+        start_date TEXT,
+        end_date TEXT,
         insufficient_documentation_amount DECIMAL,
-        high_priority_program INTEGER,
+        slug TEXT,
+        PRIMARY KEY(program_id, improper_payment_program_name, fiscal_year),
         FOREIGN KEY(program_id) REFERENCES program(id)
     );
 """
@@ -1044,6 +1205,10 @@ def load_additional_programs():
             print(str(e))
             print(f"ERROR - Assistance Category Insert Error")
 
+    # Ids can change over time
+    cur.execute("DELETE FROM program WHERE program_type = 'tax_expenditure'")
+    cur.execute("DELETE FROM program WHERE program_type = 'interest'")
+
     # Insert programs and map to categories
     for ind, record in df[df['program.id'].notnull()].iterrows():
         program_query = """
@@ -1137,30 +1302,24 @@ def load_improper_payment_mapping():
     # Strip whitespace from column names
     df.columns = df.columns.str.strip()
     
-    # Clean monetary columns - remove $ and commas, convert to float
-    money_columns = ['outlays', 'improper_payment_amount', 'insufficient_documentation_amount']
-    for col in money_columns:
-        # Handle potential NaN/empty values
-        df[col] = df[col].fillna('0')
-        df[col] = df[col].str.replace('$', '').str.replace(',', '').astype(float)
-    
-    # Convert boolean to integer
-    df['high_priority_program'] = df['high_priority_program'].astype(int)
-    
     for _, row in df.iterrows():
         cur.execute("""
             INSERT INTO improper_payment_mapping 
-            (program_id, improper_payment_program_name, outlays, 
-             improper_payment_amount, insufficient_documentation_amount, 
-             high_priority_program)
-            VALUES (?, ?, ?, ?, ?, ?)
+            (program_id, improper_payment_program_name, agency, fiscal_year,
+            outlays, improper_payment_amount, start_date, end_date,
+            insufficient_documentation_amount, slug)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             row['program_id'],
             row['improper_payment_program_name'],
-            row['outlays'],
-            row['improper_payment_amount'],
-            row['insufficient_documentation_amount'],
-            row['high_priority_program']
+            row['agency'],
+            row['fiscal_year'],
+            round(row['outlays'],2) * 1000000,
+            round(row['improper_payment_amount'],2) * 1000000,
+            row['start_date'],
+            row['end_date'],
+            round(row['insufficient_documentation_amount'],2) * 1000000,
+            row['slug']
         ))
     
     conn.commit()
@@ -1174,17 +1333,22 @@ def load_acquisitions_and_services():
         'Obligation_Sum': 'float64',
         'Outlay_Sum': 'float64'
     }
-    df = pd.read_csv(file_path, dtype=data_types)
 
-    latest_fiscal_year = df["Fiscal Year"].max()
+    df = pd.read_csv(file_path, dtype=data_types)
+    # Only import program data for latest year for a particular program
+    df = df.sort_values(by=['Program ID', 'Fiscal Year'], ascending=[True, False])
+
+    seen_programs = set()
     for _, row in df.iterrows():
-        # Only import program data for latest year
-        if row["Fiscal Year"] < latest_fiscal_year:
+        # The source file contains multiple rows per program, import the latest row
+        if row["Program ID"] in seen_programs:
             continue
+
+        seen_programs.add(row["Program ID"])
 
         cur.execute(PROGRAM_INSERT_SQL, [
             row["Program ID"],
-            None,
+            row["Agency ID"],
             row["Program Name"],
             row["Popular Name"],
             row["Program Description"],
@@ -1304,6 +1468,55 @@ def load_taxonomy_and_assignments():
     conn.commit()
     print("Finished load_taxonomy_and_assignments")
 
+def load_views():
+    cur.execute(PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL)
+    cur.execute(PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL)
+
+def remove_orphaned_records():
+    """Most functions run independently without create orphaned records.
+    However, orphaned child records of programs can occur when only some
+    functions are called (common in development process)."""
+    cur.execute("""
+        DELETE FROM improper_payment_mapping
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM other_program_spending
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_authorization
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_result
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_sam_spending
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_category
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_gwo
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_pon
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM usaspending_assistance_obligation_aggregation
+        WHERE cfda_number NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM usaspending_assistance_outlay_aggregation
+        WHERE cfda_number NOT IN (SELECT id FROM program);
+    """)
+
 load_usaspending_initial_files()
 transform_and_insert_usaspending_aggregation_data()
 load_agency()
@@ -1312,5 +1525,7 @@ load_sam_programs()
 load_taxonomy_and_assignments()
 load_additional_programs()
 load_improper_payment_mapping()
+load_views()
+remove_orphaned_records()
 
 conn.close()

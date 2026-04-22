@@ -1,4 +1,5 @@
 ---
+agencies_count: '55 '
 applicant_types:
 - title: Active-Duty Service Person (including dependents
 - title: Airport Authority
@@ -116,9 +117,6 @@ categories:
   - title: Cultural Institutions
   title: Cultural Affairs
 - sub_categories:
-  - title: Fees and Receipts
-  title: Debt Service
-- sub_categories:
   - title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
 - sub_categories:
@@ -140,6 +138,14 @@ categories:
 - sub_categories:
   - title: Food and Nutrition Assistance
   title: Food and Nutrition
+- sub_categories:
+  - title: Central Personnel Management
+  - title: Debt Service
+  - title: Fees and Receipts
+  - title: General Property and Records Management
+  - title: Judiciary Branch Functions
+  - title: Legislative Branch Functions
+  title: General Government
 - sub_categories:
   - title: Child Welfare
   - title: Health and Wellbeing
@@ -440,6 +446,7 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
+outcomes_count: '307 '
 permalink: /
 program_types:
 - title: Advisory Services and Counseling
@@ -450,7 +457,6 @@ program_types:
 - title: Dissemination of Technical Information
 - title: Financial
 - title: Formula Grants
-- title: Government Service
 - title: Guaranteed / Insured Loans
 - title: Insurance
 - title: Interest
@@ -462,5 +468,7 @@ program_types:
 - title: Tax Expenditures
 - title: Training
 - title: Use of Property, Facilities, or Equipment
+programs_count: '3,447 '
+spending_total: 7666972883096.56
 title: Home
 ---

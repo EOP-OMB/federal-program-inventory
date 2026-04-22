@@ -1,33 +1,33 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":48,"total_obs":467647571.0},{"title":"United
-  States International Development Finance Corporation","total_num_programs":4,"total_obs":53000000.0},{"title":"Department
-  of Education","total_num_programs":4,"total_obs":5065346.0},{"title":"Millennium
-  Challenge Corporation","total_num_programs":1,"total_obs":2000000.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":1998531.15},{"title":"United States
+agencies: '[{"title":"Department of State","total_num_programs":54,"total_obs":2058439655.8700001},{"title":"Agency
+  for International Development","total_num_programs":10,"total_obs":583041716.0},{"title":"Millennium
+  Challenge Corporation","total_num_programs":1,"total_obs":261055003.2},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":1998531.15},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":62900.0},{"title":"United States
   Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
+  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of Homeland
   Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
   and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"Agency
-  for International Development","total_num_programs":10,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":22},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":21},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":20},{"title":"Non-Government
-  - General","total_num_programs":16},{"title":"Other private institutions/organizations","total_num_programs":11},{"title":"Not-for-Profit
-  Organization","total_num_programs":10},{"title":"Foreign Non-Government Nonprofit
-  Organization","total_num_programs":9},{"title":"Foreign Non-Government Not-for-Profit
-  Organization","total_num_programs":8},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":8},{"title":"Sponsored
-  organization","total_num_programs":8},{"title":"International Organization","total_num_programs":6},{"title":"Other
-  public institution/organization","total_num_programs":6},{"title":"Anyone/general
-  public","total_num_programs":5},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Foreign
-  Non-Governmental For-Profit Organization","total_num_programs":5},{"title":"Specialized
+  of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"United
+  States International Development Finance Corporation","total_num_programs":4,"total_obs":-1337861575.8}]'
+applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
+  of higher education and hospitals)","total_num_programs":25},{"title":"Nonprofit
+  Organization","total_num_programs":23},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Non-Government
+  - General","total_num_programs":19},{"title":"Other private institutions/organizations","total_num_programs":13},{"title":"Not-for-Profit
+  Organization","total_num_programs":11},{"title":"Foreign Non-Government Nonprofit
+  Organization","total_num_programs":10},{"title":"Foreign Non-Government Not-for-Profit
+  Organization","total_num_programs":9},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":9},{"title":"Sponsored
+  organization","total_num_programs":9},{"title":"Other public institution/organization","total_num_programs":8},{"title":"International
+  Organization","total_num_programs":7},{"title":"Anyone/general public","total_num_programs":6},{"title":"For-Profit
+  Organization","total_num_programs":5},{"title":"Foreign Non-Governmental For-Profit
+  Organization","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Non-domestic
-  (non-US) Entity","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Profit
-  organization","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"State
+  (non-US) Entity","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":3},{"title":"Government
   - General","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Minority
   group","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":2},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Foreign
   Government","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
@@ -39,8 +39,7 @@ applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":22},{"
   (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Other
   Special Disctrict Government","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":1},{"title":"Unrestricted
-  by Entity Type","total_num_programs":1}]'
+  Federal Government","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -77,11 +76,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -120,6 +114,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -239,11 +248,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/international-affairs
-sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":76,"total_obs":529711448.15}]'
+sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":83,"total_obs":1566736230.4200003}]'
 title: International Affairs
 total_num_agencies: 12
-total_num_applicant_types: 54
-total_num_programs: 76
+total_num_applicant_types: 55
+total_num_programs: 83
 total_num_sub_cats: 1
-total_obs: 529711448.15
+total_obs: 1566736230.4200003
 ---
