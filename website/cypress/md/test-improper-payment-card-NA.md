@@ -3,7 +3,7 @@ layout: default
 title: Test - Improper Payment Card (N/A)
 permalink: /test-improper-payment-card-NA.html
 improper_payments: null
-last_completed_year_outlay: 50000000.0
+headline_amount: 50000000.0
 outlays: '[{"x":"2025","outlay":50000000.0,"obligation":60000000.0}]'
 ---
 

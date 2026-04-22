@@ -17,6 +17,7 @@ echo "TEST_ENV is true. Running data pipeline tests..."
 EXIT_CODE=0
 
 python -m pytest test_constants.py
+python -m pytest test_extract.py
 
 # Exit with appropriate code
 if [ $EXIT_CODE -ne 0 ]; then

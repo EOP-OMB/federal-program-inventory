@@ -1,5 +1,5 @@
 ---
-category: N Income Security and Social Services
+category: Income Security and Social Services
 definition: Provide individuals or households with a temporary safety net through
   income security or financial assistance support.
 focus_area: Personal Financial Health

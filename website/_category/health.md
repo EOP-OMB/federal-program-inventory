@@ -1,63 +1,62 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":303,"total_obs":1855490227138.02},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":463,"total_obs":1722124552621.2903},{"title":"Department
   of the Treasury","total_num_programs":8,"total_obs":111360000000.0},{"title":"Environmental
-  Protection Agency","total_num_programs":15,"total_obs":13434458067.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":13,"total_obs":5228644328.0},{"title":"Department
-  of the Interior","total_num_programs":22,"total_obs":688863502.0},{"title":"Department
-  of Education","total_num_programs":8,"total_obs":119933798.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":110301741.24000001},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":56517611.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":50000000.0},{"title":"Federal Communications
-  Commission","total_num_programs":2,"total_obs":32000000.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":18832022.67},{"title":"Executive
-  Office of the President","total_num_programs":5,"total_obs":16955999.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing
-  and Urban Development","total_num_programs":2,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":149},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":124},{"title":"State","total_num_programs":115},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":113},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":108},{"title":"Local","total_num_programs":70},{"title":"Other","total_num_programs":65},{"title":"Not-for-Profit
-  Organization","total_num_programs":63},{"title":"For-Profit Organization","total_num_programs":60},{"title":"Tribal","total_num_programs":41},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":40},{"title":"Territorial","total_num_programs":30},{"title":"Municipality
+  Protection Agency","total_num_programs":12,"total_obs":7449385107.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":13,"total_obs":2034070058.4499998},{"title":"Department
+  of the Interior","total_num_programs":19,"total_obs":597204343.9599999},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":147459875.57999998},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":73576865.0},{"title":"Department
+  of Agriculture","total_num_programs":11,"total_obs":51204051.910000004},{"title":"Executive
+  Office of the President","total_num_programs":5,"total_obs":16955999.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":16878013.0},{"title":"Department
+  of Defense","total_num_programs":4,"total_obs":8160404.83},{"title":"Federal Communications
+  Commission","total_num_programs":2,"total_obs":4234195.92},{"title":"Department
+  of State","total_num_programs":1,"total_obs":466487.09},{"title":"Department of
+  Energy","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":255},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":189},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":182},{"title":"State","total_num_programs":152},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":145},{"title":"For-Profit
+  Organization","total_num_programs":137},{"title":"Not-for-Profit Organization","total_num_programs":136},{"title":"Local","total_num_programs":123},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":88},{"title":"Other","total_num_programs":86},{"title":"Tribal","total_num_programs":74},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":66},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":29},{"title":"County Government (inclusive of
-  boroughs in Alaska, parishes and other governmental entities with geographic regional
-  control and authority)","total_num_programs":27},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":23},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":23},{"title":"Public
+  and villages)","total_num_programs":64},{"title":"Territorial","total_num_programs":59},{"title":"International
+  Organization","total_num_programs":54},{"title":"Foreign Non-Government Nonprofit
+  Organization","total_num_programs":51},{"title":"Foreign Non-Governmental For-Profit
+  Organization","total_num_programs":50},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":49},{"title":"Unrestricted
+  by Entity Type","total_num_programs":47},{"title":"Small Business Person","total_num_programs":46},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":42},{"title":"U.S.
+  Federal Government","total_num_programs":41},{"title":"Tribally Designated Housing
+  Authority","total_num_programs":35},{"title":"Department or Agency of a U.S. State
+  Government","total_num_programs":34},{"title":"Public Housing Authority","total_num_programs":32},{"title":"School
+  District","total_num_programs":26},{"title":"School District Government","total_num_programs":26},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":24},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":23},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":23},{"title":"Unrestricted by Entity Type","total_num_programs":23},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":21},{"title":"State (includes District
-  of Columbia, public institutions of higher education and hospitals)","total_num_programs":20},{"title":"Local
+  hospitals)","total_num_programs":22},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":19},{"title":"Native American Organizations
-  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":18},{"title":"Small
-  Business Person","total_num_programs":17},{"title":"International Organization","total_num_programs":16},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":15},{"title":"Other public
-  institution/organization","total_num_programs":15},{"title":"Foreign Non-Government
-  Nonprofit Organization","total_num_programs":11},{"title":"Foreign Non-Governmental
-  For-Profit Organization","total_num_programs":11},{"title":"Department or Agency
-  of a U.S. Territorial Government","total_num_programs":10},{"title":"Profit organization","total_num_programs":10},{"title":"U.S.
-  Federal Government","total_num_programs":10},{"title":"Foreign Non-Government Not-for-Profit
-  Organization","total_num_programs":9},{"title":"Unrestricted by Individual Type","total_num_programs":9},{"title":"Other
-  private institutions/organizations","total_num_programs":8},{"title":"School District
-  Government","total_num_programs":8},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":8},{"title":"U.S. Territories and possessions
-  (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Interstate
-  Organization","total_num_programs":7},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":6},{"title":"School
-  District","total_num_programs":6},{"title":"Tribally Designated Housing Authority","total_num_programs":6},{"title":"Minority
-  group","total_num_programs":5},{"title":"Non-Government - General","total_num_programs":5},{"title":"Public
-  Housing Authority","total_num_programs":5},{"title":"U.S. Territories and possessions","total_num_programs":5},{"title":"Foreign
-  Government","total_num_programs":4},{"title":"Small business (less than 500 employees)","total_num_programs":4},{"title":"City
-  or Township Government","total_num_programs":3},{"title":"County Government","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"Individual/Family","total_num_programs":3},{"title":"Other
-  Special Disctrict Government","total_num_programs":3},{"title":"Special District
-  Government","total_num_programs":3},{"title":"Government - General","total_num_programs":2},{"title":"Indian/Native
-  American Tribally Designated Organization","total_num_programs":2},{"title":"Veteran
-  (including dependents)","total_num_programs":2},{"title":"Anyone/general public","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"Transit
-  Authority","total_num_programs":1}]'
+  and hospitals","total_num_programs":19},{"title":"Other Special Disctrict Government","total_num_programs":19},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":19},{"title":"Foreign
+  Government","total_num_programs":18},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":18},{"title":"Interstate
+  Organization","total_num_programs":17},{"title":"Unrestricted by Individual Type","total_num_programs":17},{"title":"Other
+  public institution/organization","total_num_programs":13},{"title":"Profit organization","total_num_programs":10},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":9},{"title":"Other
+  private institutions/organizations","total_num_programs":7},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":7},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":7},{"title":"U.S.
+  Territories and possessions","total_num_programs":6},{"title":"Non-Government -
+  General","total_num_programs":5},{"title":"Minority group","total_num_programs":4},{"title":"Small
+  business (less than 500 employees)","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"Individual/Family","total_num_programs":3},{"title":"Veteran
+  (including dependents)","total_num_programs":3},{"title":"Government - General","total_num_programs":2},{"title":"Anyone/general
+  public","total_num_programs":1},{"title":"City or Township Government","total_num_programs":1},{"title":"County
+  Government","total_num_programs":1},{"title":"Indian/Native American Tribally Designated
+  Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Special
+  District Government","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -94,11 +93,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -137,6 +131,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -256,16 +265,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/health
-sub_cats: '[{"title":"Child Welfare","permalink":"/category/health/child-welfare","total_num_programs":23,"total_obs":18741750141.0},{"title":"Health
-  and Wellbeing","permalink":"/category/health/health-and-wellbeing","total_num_programs":163,"total_obs":30331116563.82},{"title":"Healthcare
-  Access","permalink":"/category/health/healthcare-access","total_num_programs":29,"total_obs":1889689401151.0},{"title":"Healthcare
-  Innovation","permalink":"/category/health/healthcare-innovation","total_num_programs":62,"total_obs":35094995838.67},{"title":"Healthcare
-  Quality and Delivery","permalink":"/category/health/healthcare-quality-and-delivery","total_num_programs":111,"total_obs":8586159199.99},{"title":"Veteran
-  Health","permalink":"/category/health/veteran-health","total_num_programs":12,"total_obs":4163311312.45}]'
+sub_cats: '[{"title":"Child Welfare","permalink":"/category/health/child-welfare","total_num_programs":22,"total_obs":3013047237.75},{"title":"Health
+  and Wellbeing","permalink":"/category/health/health-and-wellbeing","total_num_programs":186,"total_obs":15324684662.439999},{"title":"Healthcare
+  Access","permalink":"/category/health/healthcare-access","total_num_programs":30,"total_obs":1808561569538.2898},{"title":"Healthcare
+  Innovation","permalink":"/category/health/healthcare-innovation","total_num_programs":172,"total_obs":8434337710.84},{"title":"Healthcare
+  Quality and Delivery","permalink":"/category/health/healthcare-quality-and-delivery","total_num_programs":127,"total_obs":6546340339.26},{"title":"Veteran
+  Health","permalink":"/category/health/veteran-health","total_num_programs":11,"total_obs":2004168534.4499998}]'
 title: Health
-total_num_agencies: 15
-total_num_applicant_types: 73
-total_num_programs: 400
+total_num_agencies: 14
+total_num_applicant_types: 75
+total_num_programs: 548
 total_num_sub_cats: 6
-total_obs: 1986606734206.93
+total_obs: 1843884148023.03
 ---

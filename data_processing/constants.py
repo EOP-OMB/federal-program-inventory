@@ -6,11 +6,11 @@ LAST_COMPLETED_FISCAL_YEAR = "2025"
 CURRENT_FISCAL_YEAR = "2026"
 BASELINE_INFLATION_YEAR = "2019"
 SPENDING_CHART_YEAR_RANGE = 10
-SITE_UPDATE_DATE = "March 6, 2026"
+SITE_UPDATE_DATE = "March 27, 2026"
 SAMGOV_ASSISTANCE_LISTINGS_DATE = "March 6, 2026"
 USASPENDING_TRANSACTION_DATE = "March 6, 2026"
 TREASURYGOV_TAX_EXPEND_DATE = "December 30, 2024"
-PAYMENTACCURACY_FY_DATE = "2024"
+PAYMENTACCURACY_FY_DATE = "2025"
 
 AGENCY_DISPLAY_NAMES = {
     "IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE":
@@ -365,6 +365,6 @@ PROGRAM_TYPE_MAPPING = {
     "tax_expenditure": "Tax Expenditures",
     "assistance_listing": "Federal Financial Assistance",
     "interest": "Interest on the Public Debt",
-    "government_service": "Government Service",
-    "contracts": "Contracts"
+    "government_service": "Government Service Programs",
+    "contracts": "Major Acquisition Programs"
 }

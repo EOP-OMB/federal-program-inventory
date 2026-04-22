@@ -1,0 +1,40 @@
+---
+category: Income Security and Social Services
+definition: Providing burial benefits, including burial assistance and memorial services,
+  to eligible veterans and their families.
+focus_area: Burial Benefits
+gwo_id: GWO.N1
+permalink: /gwo/GWO_N1
+title: Provide Burial Benefits and Services to Veterans
+where_used:
+- agency: Department of Veterans Affairs
+  expenditure_amount: 393926239.0
+  name: Burial Expenses Allowance for Veterans
+  permalink: /program/64.101
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: National Cemeteries
+  permalink: /program/64.201
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: Procurement of Headstones and Markers and/or Presidential Memorial Certificates
+  permalink: /program/64.202
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 289000.0
+  name: VA Casket or Urn Allowance Program
+  permalink: /program/64.205
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 597236.0
+  name: VA Outer Burial Receptacle Allowance Program
+  permalink: /program/64.206
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 163950497.0
+  name: Veterans Cemetery Grants Program
+  permalink: /program/64.203
+  program_type: assistance_listing
+---

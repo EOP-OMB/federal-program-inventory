@@ -17,16 +17,25 @@ beneficiary_types:
 - Women
 - Youth (16-21)
 categories:
-- N Income Security and Social Services - Personal Financial Health
+- Income Security and Social Services - Personal Financial Health
 cfda: '96.002'
 fiscal_year: '2024'
 grants_url: https://grants.gov/search-grants?cfda=96.002
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
-improper_payments: '[{"name":"Old-Age, Survivors, and Disability Insurance (OASDI)","outlays":1352425845053.0,"improper_payments":4092673091.0,"insufficient_payment":0.0,"high_priority":true,"related_programs":[{"id":"96.001","name":"Social
-  Security Disability Insurance","permalink":"/program/96.001"},{"id":"96.004","name":"Social
-  Security Survivors Insurance","permalink":"/program/96.004"}]}]'
+improper_payments: 
+- name: Old-Age, Survivors, and Disability Insurance (OASDI)
+  outlays: 1352425845053
+  improper_payments: 4092673091
+  insufficient_payment: 0
+  related_programs:
+  - id: '96.001'
+    name: Social Security Disability Insurance
+    permalink: "/program/96.001"
+  - id: '96.004'
+    name: Social Security Survivors Insurance
+    permalink: "/program/96.004"
 is_subpart_f: 0
 layout: program
 objective: The Social Security Retirement benefit is a monthly payment that replaces

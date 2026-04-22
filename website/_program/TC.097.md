@@ -13,12 +13,24 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Strengthen Community and Regional Development
-  permalink: /gwo/C1
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_C1
+headline_amount: 1360000000.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: New markets tax credit
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
   investments, or industries. However, the Tax Code allows taxpayers who make qualified
@@ -28,13 +40,13 @@ objective: The baseline tax system would not allow credits for particular activi
   is generally $5 billion for each calendar year 2020 through 2025, the last year
   for which credit allocations are authorized.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1310000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":1170000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1210000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":1250000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":1310000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":1360000000.0}]'
 outlays: null
 permalink: /program/TC.097.html
 pons:
-- permalink: /pon/863
+- permalink: /pon/PON_863
   pon: Increase Access to Personal Finance Services
-- permalink: /pon/117
+- permalink: /pon/PON_117
   pon: Increase Local Economic Growth
 popular_name: ''
 program_type: tax_expenditure

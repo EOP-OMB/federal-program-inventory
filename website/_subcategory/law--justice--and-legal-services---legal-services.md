@@ -1,13 +1,12 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":1,"total_obs":34640223.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":23628818.0},{"title":"Department
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":1,"total_obs":27889102.08},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":21610847.77},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":2,"total_obs":15000000.0},{"title":"Department
-  of Agriculture","total_num_programs":2,"total_obs":7803173.0},{"title":"Department
-  of Justice","total_num_programs":2,"total_obs":2627073.0},{"title":"Department of
-  Defense","total_num_programs":1,"total_obs":577550.0},{"title":"National Council
-  on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0}]'
+  Election Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
+  Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Department of Homeland
+  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Agriculture","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"Other","total_num_programs":4},{"title":"U.S. State Government
   (including the District of Columbia)","total_num_programs":3},{"title":"U.S. Territory
   (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"County
@@ -54,11 +53,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -97,6 +91,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -218,30 +227,29 @@ fiscal_year: '2025'
 parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/legal-services
-programs: '[{"cfda":"96.013","permalink":"/program/96.013","title":"Strengthening
-  Protections for Social Security Beneficiaries","popular_name":"Protection and Advocacy
-  (P&A) Systems: SPSSB","agency":"Social Security Administration","total_obs":34640223.0,"program_type":"assistance_listing"},{"cfda":"14.401","permalink":"/program/14.401","title":"Fair
-  Housing Assistance Program","popular_name":"(FHAP)","agency":"Department of Housing
-  and Urban Development","total_obs":23628818.0,"program_type":"assistance_listing"},{"cfda":"21.008","permalink":"/program/21.008","title":"Low
+programs: '[{"cfda":"14.401","permalink":"/program/14.401","title":"Fair Housing Assistance
+  Program","popular_name":"(FHAP)","agency":"Department of Housing and Urban Development","total_obs":27889102.08,"program_type":"assistance_listing"},{"cfda":"21.008","permalink":"/program/21.008","title":"Low
   Income Taxpayer Clinics","popular_name":"Low-income taxpayer clinics","agency":"Department
-  of the Treasury","total_obs":21610847.77,"program_type":"assistance_listing"},{"cfda":"90.404","permalink":"/program/90.404","title":"HAVA
-  Election Security Grants","popular_name":"HAVA Election Security Grants","agency":"U.S.
-  Election Assistance Commission","total_obs":15000000.0,"program_type":"assistance_listing"},{"cfda":"10.435","permalink":"/program/10.435","title":"State
-  Mediation Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":5629343.0,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
+  of the Treasury","total_obs":21610847.77,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
   Case Litigation Initiative","popular_name":"Capital Case Litigation Initiative","agency":"Department
-  of Justice","total_obs":2627073.0,"program_type":"assistance_listing"},{"cfda":"10.984","permalink":"/program/10.984","title":"Discrimination
-  Financial Assistance Program","popular_name":"DFAP","agency":"Department of Agriculture","total_obs":2173830.0,"program_type":"assistance_listing"},{"cfda":"12.219","permalink":"/program/12.219","title":"Ease
-  3.0","popular_name":"Effective Absentee Systems for Elections 2.0","agency":"Department
-  of Defense","total_obs":577550.0,"program_type":"assistance_listing"},{"cfda":"97.102","permalink":"/program/97.102","title":"Case
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.102","permalink":"/program/97.102","title":"Case
   Management Pilot Program","popular_name":"Case Management Pilot Program (CMPP)","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.401","permalink":"/program/90.401","title":"Help
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.984","permalink":"/program/10.984","title":"Discrimination
+  Financial Assistance Program","popular_name":"DFAP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.219","permalink":"/program/12.219","title":"Ease
+  3.0","popular_name":"Effective Absentee Systems for Elections 2.0","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.404","permalink":"/program/90.404","title":"HAVA
+  Election Security Grants","popular_name":"HAVA Election Security Grants","agency":"U.S.
+  Election Assistance Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.401","permalink":"/program/90.401","title":"Help
   America Vote Act Requirements Payments","popular_name":"Requirements Payment","agency":"U.S.
   Election Assistance Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.836","permalink":"/program/16.836","title":"Indigent
   Defense","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"92.002","permalink":"/program/92.002","title":"National
-  Council on Disability ","popular_name":"NCD","agency":"National Council on Disability","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Council on Disability ","popular_name":"NCD","agency":"National Council on Disability","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.435","permalink":"/program/10.435","title":"State
+  Mediation Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.013","permalink":"/program/96.013","title":"Strengthening
+  Protections for Social Security Beneficiaries","popular_name":"Protection and Advocacy
+  (P&A) Systems: SPSSB","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal Services
 total_num_agencies: 9
 total_num_applicant_types: 14
 total_num_programs: 12
-total_obs: 105887684.77
+total_obs: 49499949.849999994
 ---

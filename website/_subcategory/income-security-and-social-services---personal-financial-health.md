@@ -1,54 +1,38 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":75,"total_obs":1538233000000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":4,"total_obs":183005761889.0},{"title":"Department
-  of Labor","total_num_programs":3,"total_obs":47179192000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":7,"total_obs":19192030978.71},{"title":"Railroad
-  Retirement Board","total_num_programs":2,"total_obs":14713500000.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":3,"total_obs":125000000.0},{"title":"Social
-  Security Administration","total_num_programs":7,"total_obs":22119069.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":11482771.0},{"title":"Pension
-  Benefit Guaranty Corporation","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Individual/Family","total_num_programs":10},{"title":"State","total_num_programs":10},{"title":"Nonprofit
-  Organization","total_num_programs":7},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Not-for-Profit
-  Organization","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"For-Profit
-  Organization","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Other
-  private institutions/organizations","total_num_programs":4},{"title":"Other public
-  institution/organization","total_num_programs":4},{"title":"Indian/Native American/Alaska
-  Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":3},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Small
-  business (less than 500 employees)","total_num_programs":3},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":3},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"Veteran
-  (including dependents)","total_num_programs":3},{"title":"County Government","total_num_programs":2},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"Non-Government - General","total_num_programs":2},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Alaska
-  Native and Native Hawaiian Serving Institutions","total_num_programs":1},{"title":"City
-  or Township Government","total_num_programs":1},{"title":"County Government (inclusive
-  of boroughs in Alaska, parishes and other governmental entities with geographic
-  regional control and authority)","total_num_programs":1},{"title":"For-Profit Organization
-  (Other than Small Business)","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Hispanic-serving
-  Institution","total_num_programs":1},{"title":"Historically Black Colleges and Universities
-  (HBCUs)","total_num_programs":1},{"title":"Indian/Native American Tribal Government
-  (Other than Federally Recognized)","total_num_programs":1},{"title":"Indian/Native
-  American Tribally Designated Organization","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Municipality or Township government (inclusive
-  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":1},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":1},{"title":"Public Housing Authority","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Sponsored
-  organization","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Tribally
-  Controlled Colleges and Universities (TCCUs)","total_num_programs":1},{"title":"Unrestricted
+agencies: '[{"title":"Social Security Administration","total_num_programs":4,"total_obs":1632918384648.0},{"title":"Department
+  of the Treasury","total_num_programs":73,"total_obs":1538712781349.77},{"title":"Department
+  of Veterans Affairs","total_num_programs":4,"total_obs":177146752628.0},{"title":"Department
+  of Health and Human Services","total_num_programs":8,"total_obs":24644911587.88},{"title":"Railroad
+  Retirement Board","total_num_programs":2,"total_obs":14511445136.77},{"title":"Pension
+  Benefit Guaranty Corporation","total_num_programs":1,"total_obs":6153704179.13},{"title":"Department
+  of Labor","total_num_programs":3,"total_obs":3340745119.85},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":147358046.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":15880819.540000001}]'
+applicant_types: '[{"title":"Individual/Family","total_num_programs":10},{"title":"Nonprofit
+  Organization","total_num_programs":7},{"title":"State","total_num_programs":7},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":4},{"title":"Not-for-Profit
+  Organization","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":4},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"For-Profit
+  Organization","total_num_programs":3},{"title":"Local","total_num_programs":3},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Veteran
+  (including dependents)","total_num_programs":3},{"title":"Indian/Native American/Alaska
+  Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Government
+  - General","total_num_programs":1},{"title":"Local (includes State-designated Indian
+  Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Other
+  public institution/organization","total_num_programs":1},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
+  (less than 500 employees)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -86,11 +70,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -129,6 +108,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -250,24 +244,31 @@ fiscal_year: '2025'
 parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/personal-financial-health
-programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of employer
-  contributions for medical insurance premiums and medical care","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":262000000000.0,"program_type":"tax_expenditure"},{"cfda":"64.109","permalink":"/program/64.109","title":"Veterans
+programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Security
+  Retirement Insurance","popular_name":"Retirement (RIB)","agency":"Social Security
+  Administration","total_obs":1296300942394.0,"program_type":"assistance_listing"},{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion
+  of employer contributions for medical insurance premiums and medical care","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":262310000000.0,"program_type":"tax_expenditure"},{"cfda":"64.109","permalink":"/program/64.109","title":"Veterans
   Compensation for Service-Connected Disability","popular_name":"(Compensation)","agency":"Department
-  of Veterans Affairs","total_obs":179453865000.0,"program_type":"assistance_listing"},{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion
-  of net imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":172000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.150","permalink":"/program/TC.150","title":"Net
+  of Veterans Affairs","total_obs":174125861920.0,"program_type":"assistance_listing"},{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion
+  of net imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":172300000000.0,"program_type":"tax_expenditure"},{"cfda":"96.001","permalink":"/program/96.001","title":"Social
+  Security Disability Insurance","popular_name":"Social Security Disability Insurance
+  ","agency":"Social Security Administration","total_obs":157270744604.0,"program_type":"assistance_listing"},{"cfda":"TC.150","permalink":"/program/TC.150","title":"Net
   exclusion of pension contributions and earnings: Defined contribution employer plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":152000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
+  of the Treasury","total_obs":152190000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
   gains (except agriculture, timber, iron ore, and coal)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":150000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.142","permalink":"/program/TC.142","title":"Child
+  of the Treasury","total_obs":149680000000.0,"program_type":"tax_expenditure"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
+  Security Survivors Insurance","popular_name":"Survivor Benefits","agency":"Social
+  Security Administration","total_obs":114852732538.0,"program_type":"assistance_listing"},{"cfda":"TC.142","permalink":"/program/TC.142","title":"Child
   credit","popular_name":null,"agency":"Department of the Treasury","total_obs":106340000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.163","permalink":"/program/TC.163","title":"Earned
   income tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":77390000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.149","permalink":"/program/TC.149","title":"Net
   exclusion of pension contributions and earnings: Defined benefit employer plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":68710000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.065","permalink":"/program/TC.065","title":"Capital
+  of the Treasury","total_obs":68710000000.0,"program_type":"tax_expenditure"},{"cfda":"96.006","permalink":"/program/96.006","title":"Supplemental
+  Security Income","popular_name":"Supplemental Security Income  (SSI)","agency":"Social
+  Security Administration","total_obs":64493965112.0,"program_type":"assistance_listing"},{"cfda":"TC.065","permalink":"/program/TC.065","title":"Capital
   gains exclusion on home sales","popular_name":null,"agency":"Department of the Treasury","total_obs":61740000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.125","permalink":"/program/TC.125","title":"Deductibility
   of charitable contributions, other than education and health","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":47460000000.0,"program_type":"tax_expenditure"},{"cfda":"17.225","permalink":"/program/17.225","title":"Unemployment
-  Insurance","popular_name":"UI","agency":"Department of Labor","total_obs":46966000000.0,"program_type":"assistance_listing"},{"cfda":"TC.074","permalink":"/program/TC.074","title":"Treatment
+  of the Treasury","total_obs":47460000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.074","permalink":"/program/TC.074","title":"Treatment
   of qualified dividends","popular_name":null,"agency":"Department of the Treasury","total_obs":43580000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.153","permalink":"/program/TC.153","title":"Net
   exclusion of pension contributions and earnings: Self-Employed plans","popular_name":null,"agency":"Department
   of the Treasury","total_obs":41410000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.077","permalink":"/program/TC.077","title":"Step-up
@@ -285,13 +286,13 @@ programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of
   of life insurance death benefits","popular_name":null,"agency":"Department of the
   Treasury","total_obs":17220000000.0,"program_type":"tax_expenditure"},{"cfda":"93.558","permalink":"/program/93.558","title":"Temporary
   Assistance for Needy Families","popular_name":"TANF","agency":"Department of Health
-  and Human Services","total_obs":17119872410.0,"program_type":"assistance_listing"},{"cfda":"TC.167","permalink":"/program/TC.167","title":"Exclusion
+  and Human Services","total_obs":17036561352.4,"program_type":"assistance_listing"},{"cfda":"TC.167","permalink":"/program/TC.167","title":"Exclusion
   of veterans death benefits and disability compensation","popular_name":null,"agency":"Department
   of the Treasury","total_obs":14960000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.132","permalink":"/program/TC.132","title":"Medical
   Savings Accounts / Health Savings Accounts","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":14760000000.0,"program_type":"tax_expenditure"},{"cfda":"57.006","permalink":"/program/57.006","title":"Social
+  of the Treasury","total_obs":14760000000.0,"program_type":"tax_expenditure"},{"cfda":"57.001","permalink":"/program/57.001","title":"Social
   Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
-  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":14713500000.0,"program_type":"assistance_listing"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
+  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":14511445136.77,"program_type":"assistance_listing"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
   of medical expenses","popular_name":null,"agency":"Department of the Treasury","total_obs":13420000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.137","permalink":"/program/TC.137","title":"Deductibility
   of charitable contributions to health institutions","popular_name":null,"agency":"Department
   of the Treasury","total_obs":10660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.112","permalink":"/program/TC.112","title":"Deductibility
@@ -311,18 +312,26 @@ programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of
   of nonbusiness State and local taxes other than on owner-occupied homes","popular_name":null,"agency":"Department
   of the Treasury","total_obs":6250000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.063","permalink":"/program/TC.063","title":"Deductibility
   of State and local property tax on owner-occupied homes","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":6210000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion
+  of the Treasury","total_obs":6210000000.0,"program_type":"tax_expenditure"},{"cfda":"86.001","permalink":"/program/86.001","title":"Pension
+  Plan Termination Insurance","popular_name":"(ERISA)","agency":"Pension Benefit Guaranty
+  Corporation","total_obs":6153704179.13,"program_type":"assistance_listing"},{"cfda":"TC.002","permalink":"/program/TC.002","title":"Exclusion
   of income earned abroad by U.S. citizens","popular_name":null,"agency":"Department
   of the Treasury","total_obs":5620000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.078","permalink":"/program/TC.078","title":"Carryover
   basis of capital gains on gifts","popular_name":null,"agency":"Department of the
   Treasury","total_obs":5310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.115","permalink":"/program/TC.115","title":"Discharge
-  of student loan indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":5140000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.155","permalink":"/program/TC.155","title":"Exclusion
+  of student loan indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":5140000000.0,"program_type":"tax_expenditure"},{"cfda":"93.563","permalink":"/program/93.563","title":"Child
+  Support Services","popular_name":"Child Support Services","agency":"Department of
+  Health and Human Services","total_obs":4513134167.92,"program_type":"assistance_listing"},{"cfda":"TC.155","permalink":"/program/TC.155","title":"Exclusion
   of other employee benefits: Premiums on group term life insurance","popular_name":null,"agency":"Department
   of the Treasury","total_obs":3770000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.076","permalink":"/program/TC.076","title":"Capital
   gains exclusion of small corporation stock","popular_name":null,"agency":"Department
   of the Treasury","total_obs":3510000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.106","permalink":"/program/TC.106","title":"Qualified
   tuition programs (includes Education IRA)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3410000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.105","permalink":"/program/TC.105","title":"Deductibility
+  of the Treasury","total_obs":3410000000.0,"program_type":"tax_expenditure"},{"cfda":"17.225","permalink":"/program/17.225","title":"Unemployment
+  Insurance","popular_name":"UI","agency":"Department of Labor","total_obs":3340745119.85,"program_type":"assistance_listing"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
+  and Entrant Assistance State/Replacement Designee Administered Programs","popular_name":"Refugee
+  Cash and Medical Assistance and Refugee Support Services Program","agency":"Department
+  of Health and Human Services","total_obs":3135770992.39,"program_type":"assistance_listing"},{"cfda":"TC.105","permalink":"/program/TC.105","title":"Deductibility
   of student-loan interest","popular_name":null,"agency":"Department of the Treasury","total_obs":2540000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.055","permalink":"/program/TC.055","title":"Exemption
   of credit union income","popular_name":null,"agency":"Department of the Treasury","total_obs":2480000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.172","permalink":"/program/TC.172","title":"Build
   America Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":2230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.090","permalink":"/program/TC.090","title":"Exclusion
@@ -331,30 +340,27 @@ programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of
   personal exemption for students age 19 or over","popular_name":null,"agency":"Department
   of the Treasury","total_obs":2020000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.152","permalink":"/program/TC.152","title":"Net
   exclusion of pension contributions and earnings: Low and moderate income savers
-  credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1910000000.0,"program_type":"tax_expenditure"},{"cfda":"64.104","permalink":"/program/64.104","title":"Pension
-  for Non-Service-Connected Disability for Veterans","popular_name":"(Pension)","agency":"Department
-  of Veterans Affairs","total_obs":1875585000.0,"program_type":"assistance_listing"},{"cfda":"TC.156","permalink":"/program/TC.156","title":"Exclusion
+  credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1910000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.156","permalink":"/program/TC.156","title":"Exclusion
   of other employee benefits: Premiums on accident and disability insurance","popular_name":null,"agency":"Department
   of the Treasury","total_obs":1830000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.166","permalink":"/program/TC.166","title":"Exclusion
   of social security benefits: Credit for certain employer contributions to social
   security","popular_name":null,"agency":"Department of the Treasury","total_obs":1830000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.113","permalink":"/program/TC.113","title":"Exclusion
   of employer-provided educational assistance","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1820000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
-  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1720000000.0,"program_type":"tax_expenditure"},{"cfda":"93.566","permalink":"/program/93.566","title":"Refugee
-  and Entrant Assistance State/Replacement Designee Administered Programs","popular_name":"Refugee
-  Cash and Medical Assistance and Refugee Support Services Program","agency":"Department
-  of Health and Human Services","total_obs":1714274511.0,"program_type":"assistance_listing"},{"cfda":"TC.127","permalink":"/program/TC.127","title":"Exclusion
-  of parsonage allowances","popular_name":null,"agency":"Department of the Treasury","total_obs":1220000000.0,"program_type":"tax_expenditure"},{"cfda":"64.105","permalink":"/program/64.105","title":"Pension
-  to Veterans Surviving Spouses, and Children","popular_name":"(Death Pension)","agency":"Department
-  of Veterans Affairs","total_obs":1144915000.0,"program_type":"assistance_listing"},{"cfda":"TC.158","permalink":"/program/TC.158","title":"Income
+  of the Treasury","total_obs":1820000000.0,"program_type":"tax_expenditure"},{"cfda":"64.104","permalink":"/program/64.104","title":"Pension
+  for Non-Service-Connected Disability for Veterans","popular_name":"(Pension)","agency":"Department
+  of Veterans Affairs","total_obs":1783332767.0,"program_type":"assistance_listing"},{"cfda":"TC.169","permalink":"/program/TC.169","title":"Exclusion
+  of GI bill benefits","popular_name":null,"agency":"Department of the Treasury","total_obs":1720000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.127","permalink":"/program/TC.127","title":"Exclusion
+  of parsonage allowances","popular_name":null,"agency":"Department of the Treasury","total_obs":1220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.158","permalink":"/program/TC.158","title":"Income
   of trusts to finance voluntary employee benefits associations","popular_name":null,"agency":"Department
   of the Treasury","total_obs":1010000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.174","permalink":"/program/TC.174","title":"Deferral
   of interest on U.S. savings bonds","popular_name":null,"agency":"Department of the
   Treasury","total_obs":880000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.146","permalink":"/program/TC.146","title":"Exclusion
   of public assistance benefits (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":810000000.0,"program_type":"tax_expenditure"},{"cfda":"64.031","permalink":"/program/64.031","title":"Life
+  of the Treasury","total_obs":810000000.0,"program_type":"tax_expenditure"},{"cfda":"64.105","permalink":"/program/64.105","title":"Pension
+  to Veterans Surviving Spouses, and Children","popular_name":"(Death Pension)","agency":"Department
+  of Veterans Affairs","total_obs":701618298.0,"program_type":"assistance_listing"},{"cfda":"64.031","permalink":"/program/64.031","title":"Life
   Insurance for Veterans - Direct Payments for Insurance","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":531396889.0,"program_type":"assistance_listing"},{"cfda":"TC.140","permalink":"/program/TC.140","title":"Distributions
+  of Veterans Affairs","total_obs":535939643.0,"program_type":"assistance_listing"},{"cfda":"TC.140","permalink":"/program/TC.140","title":"Distributions
   from retirement plans for premiums for health and long-term care insurance","popular_name":null,"agency":"Department
   of the Treasury","total_obs":500000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.091","permalink":"/program/TC.091","title":"Exclusion
   for employer-provided transit passes","popular_name":null,"agency":"Department of
@@ -366,85 +372,64 @@ programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of
   of military disability pensions","popular_name":null,"agency":"Department of the
   Treasury","total_obs":270000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.144","permalink":"/program/TC.144","title":"Exclusion
   of railroad retirement (Social Security equivalent) benefits","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"93.576","permalink":"/program/93.576","title":"Refugee
-  and Entrant Assistance Discretionary Grants","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":206100333.0,"program_type":"assistance_listing"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
+  of the Treasury","total_obs":230000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.168","permalink":"/program/TC.168","title":"Exclusion
   of veterans pensions","popular_name":null,"agency":"Department of the Treasury","total_obs":200000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.114","permalink":"/program/TC.114","title":"Special
   deduction for teacher expenses","popular_name":null,"agency":"Department of the
   Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.070","permalink":"/program/TC.070","title":"Discharge
   of mortgage indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"14.896","permalink":"/program/14.896","title":"Family
   Self-Sufficiency Program","popular_name":"(FSS)","agency":"Department of Housing
-  and Urban Development","total_obs":125000000.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
-  Mine Workers'' Compensation","popular_name":"Black Lung","agency":"Department of
-  Labor","total_obs":118860000.0,"program_type":"assistance_listing"},{"cfda":"93.086","permalink":"/program/93.086","title":"Healthy
-  Marriage Promotion and Responsible Fatherhood Grants","popular_name":"(HMRF)","agency":"Department
-  of Health and Human Services","total_obs":105849075.71000001,"program_type":"assistance_listing"},{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore
-  and Harbor Workers'' Compensation","popular_name":"Longshore","agency":"Department
-  of Labor","total_obs":94332000.0,"program_type":"assistance_listing"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
+  and Urban Development","total_obs":147358046.0,"program_type":"assistance_listing"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
   from imputed interest rules","popular_name":null,"agency":"Department of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.079","permalink":"/program/TC.079","title":"Ordinary
   income treatment of loss from small business corporation stock sale","popular_name":null,"agency":"Department
   of the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.160","permalink":"/program/TC.160","title":"Additional
   deduction for the blind","popular_name":null,"agency":"Department of the Treasury","total_obs":60000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.157","permalink":"/program/TC.157","title":"Income
   of trusts to finance supplementary unemployment benefits","popular_name":null,"agency":"Department
   of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.164","permalink":"/program/TC.164","title":"Recovery
-  rebate credits","popular_name":null,"agency":"Department of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"93.567","permalink":"/program/93.567","title":"Refugee
-  and Entrant Assistance Voluntary Agency Programs","popular_name":"Voluntary Agencies
-  Matching Grant Program","agency":"Department of Health and Human Services","total_obs":44659643.0,"program_type":"assistance_listing"},{"cfda":"21.009","permalink":"/program/21.009","title":"Volunteer
+  rebate credits","popular_name":null,"agency":"Department of the Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"21.009","permalink":"/program/21.009","title":"Volunteer
   Income Tax Assistance (VITA) Matching Grant Program","popular_name":"Volunteer Income
-  Tax Assistance Matching Grant Program","agency":"Department of the Treasury","total_obs":41000000.0,"program_type":"assistance_listing"},{"cfda":"TC.110","permalink":"/program/TC.110","title":"Exclusion
+  Tax Assistance Matching Grant Program","agency":"Department of the Treasury","total_obs":40885239.62,"program_type":"assistance_listing"},{"cfda":"TC.110","permalink":"/program/TC.110","title":"Exclusion
   of interest on savings bonds redeemed to finance educational expenses","popular_name":null,"agency":"Department
   of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.147","permalink":"/program/TC.147","title":"Exclusion
   of special benefits for disabled coal miners","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"96.007","permalink":"/program/96.007","title":"Social
-  Security Research and Demonstration","popular_name":"Retirement and Disability Research
-  Consortium (RDRC)","agency":"Social Security Administration","total_obs":16719069.0,"program_type":"assistance_listing"},{"cfda":"21.006","permalink":"/program/21.006","title":"Tax
+  of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
+  to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
+  of the Interior","total_obs":13508123.22,"program_type":"assistance_listing"},{"cfda":"21.006","permalink":"/program/21.006","title":"Tax
   Counseling for the Elderly","popular_name":"Tax Counseling for the Elderly","agency":"Department
-  of the Treasury","total_obs":12000000.0,"program_type":"assistance_listing"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
-  Social Services Welfare Assistance","popular_name":null,"agency":"Department of
-  the Interior","total_obs":10026093.0,"program_type":"assistance_listing"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
+  of the Treasury","total_obs":11896110.15,"program_type":"assistance_listing"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
   for disabled access expenditures","popular_name":null,"agency":"Department of the
-  Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"96.012","permalink":"/program/96.012","title":"Interventional
-  Cooperative Agreement Program","popular_name":"Interventional Cooperative Agreement
-  Program (ICAP)","agency":"Social Security Administration","total_obs":4500000.0,"program_type":"assistance_listing"},{"cfda":"15.155","permalink":"/program/15.155","title":"Office
-  of the Special Trustee for American Indians, Field Operations","popular_name":"(OST-
-  Field Ops)","agency":"Department of the Interior","total_obs":1456678.0,"program_type":"assistance_listing"},{"cfda":"93.579","permalink":"/program/93.579","title":"U.S.
+  Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
+  Social Services Welfare Assistance","popular_name":null,"agency":"Department of
+  the Interior","total_obs":2372696.32,"program_type":"assistance_listing"},{"cfda":"93.579","permalink":"/program/93.579","title":"U.S.
   Repatriation","popular_name":"Repatriation Program","agency":"Department of Health
-  and Human Services","total_obs":1275006.0,"program_type":"assistance_listing"},{"cfda":"96.011","permalink":"/program/96.011","title":"Analyzing
-  Relationships between Disability, Rehabilitation, and Work","popular_name":"Analyzing
-  Relationships between Disability, Rehabilitation, and Work (ARDRAW)","agency":"Social
-  Security Administration","total_obs":900000.0,"program_type":"assistance_listing"},{"cfda":"44.002","permalink":"/program/44.002","title":"Community
-  Development Revolving Loan Fund Program for Credit Unions","popular_name":"CDRLF
-  Program","agency":"National Credit Union Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.141","permalink":"/program/TC.141","title":"Credit
-  for family and sick leave taken by self-employed individuals","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.162","permalink":"/program/TC.162","title":"Deductibility
+  and Human Services","total_obs":375006.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
+  Support Services Research","popular_name":null,"agency":"Department of Health and
+  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
+  Mine Workers'' Compensation","popular_name":"Black Lung","agency":"Department of
+  Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.162","permalink":"/program/TC.162","title":"Deductibility
   of casualty losses","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.013","permalink":"/program/TC.013","title":"Exception
   from passive loss limitation for working interests in oil and gas properties","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"14.183","permalink":"/program/14.183","title":"Home
   Equity Conversion Mortgages","popular_name":"Reverse Mortgage Insurance","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.169","permalink":"/program/14.169","title":"Housing
   Counseling Assistance Program","popular_name":"Comprehensive Housing Counseling
-  NOFO","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"86.001","permalink":"/program/86.001","title":"Pension
-  Plan Termination Insurance","popular_name":"(ERISA)","agency":"Pension Benefit Guaranty
-  Corporation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.071","permalink":"/program/TC.071","title":"Premiums
-  for mortgage insurance deductible as interest","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"93.583","permalink":"/program/93.583","title":"Refugee
+  NOFO","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.302","permalink":"/program/17.302","title":"Longshore
+  and Harbor Workers'' Compensation","popular_name":"Longshore","agency":"Department
+  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.155","permalink":"/program/15.155","title":"Office
+  of the Special Trustee for American Indians, Field Operations","popular_name":"(OST-
+  Field Ops)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.567","permalink":"/program/93.567","title":"Refugee
+  and Entrant Assistance Voluntary Agency Programs","popular_name":"Voluntary Agencies
+  Matching Grant Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.025","permalink":"/program/21.025","title":"Small
+  Dollar Loan Program","popular_name":"SDL Program","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"57.006","permalink":"/program/57.006","title":"Social
+  Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
+  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.576","permalink":"/program/93.576","title":"Refugee
+  and Entrant Assistance Discretionary Grants","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":-1131179.98,"program_type":"assistance_listing"},{"cfda":"93.583","permalink":"/program/93.583","title":"Refugee
   and Entrant Assistance Wilson/Fish Program","popular_name":"Wilson Fish Alternative
   Program (FY 1985 \u2013 FY 2019). Wilson Fish TANF Coordination Program (FY 2020
-  \u2013 FY 2025)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.025","permalink":"/program/21.025","title":"Small
-  Dollar Loan Program","popular_name":"SDL Program","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"57.001","permalink":"/program/57.001","title":"Social
-  Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
-  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.001","permalink":"/program/96.001","title":"Social
-  Security Disability Insurance","popular_name":"Social Security Disability Insurance
-  ","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.002","permalink":"/program/96.002","title":"Social
-  Security Retirement Insurance","popular_name":"Retirement (RIB)","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.004","permalink":"/program/96.004","title":"Social
-  Security Survivors Insurance","popular_name":"Survivor Benefits","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.006","permalink":"/program/96.006","title":"Supplemental
-  Security Income","popular_name":"Supplemental Security Income  (SSI)","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"}]'
+  \u2013 FY 2025)","agency":"Department of Health and Human Services","total_obs":-39798750.85,"program_type":"assistance_listing"}]'
 title: Personal Financial Health
-total_num_agencies: 10
-total_num_applicant_types: 59
-total_num_programs: 105
-total_obs: 1802482086707.71
+total_num_agencies: 9
+total_num_applicant_types: 40
+total_num_programs: 101
+total_obs: 3397591963514.94
 ---

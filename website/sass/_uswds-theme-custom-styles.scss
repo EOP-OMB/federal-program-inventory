@@ -22,46 +22,8 @@ i.e.
 
 @use "uswds-core" as *;
 
-// Obligation table styles
-#obligation-table {
-  border: none;
-  border-collapse: collapse;
-
-  th,
-  td {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 1px solid #ddd;
-  }
-
-  thead tr th {
-    border-bottom: 1px solid #ddd;
-    font-size: small;
-  }
-
-  tbody tr {
-    background-color: white;
-    transition: background-color 0.2s ease;
-    font-size: small;
-
-    &:hover {
-      background-color: #f0f0f0;
-    }
-
-    &:last-child td {
-      border-bottom: none;
-    }
-  }
-}
-
 // Sortable table styles
 [data-sortable-table] {
-  // Set header background color to white
-  thead th {
-    background-color: white !important;
-  }
-
   // Hide USWDS sort buttons
   .usa-table__header__button {
     display: none !important;
@@ -71,11 +33,11 @@ i.e.
   tbody tr td {
     &:first-child,
     &:last-child {
-      color: #1b1b1b !important; // text-ink
+      color: #2a2a2b !important; // text-ink
     }
 
     &:not(:first-child):not(:last-child) {
-      color: #454545 !important; // text-base-darker
+      color: #555555 !important; // text-base-darker
     }
   }
 
@@ -89,19 +51,6 @@ i.e.
   }
 }
 
-// Cell hover targeting - the working solution
-table[data-sortable-table] tbody tr:hover td,
-.usa-table[data-sortable-table] tbody tr:hover td,
-.usa-table--numeric-right th[data-sortable] {
-  padding-right: 0;
-}
-.usa-table--borderless[data-sortable-table] tbody tr:hover td,
-table.usa-table[data-sortable-table] tbody tr:hover td,
-table.usa-table.usa-table--borderless[data-sortable-table] tbody tr:hover td,
-table.usa-table.usa-table--borderless.width-full[data-sortable-table] tbody tr:hover td {
-  background-color: #f1f1f1 !important;
-}
-
 // Info Card Header Styles
 .info-card-header {
   display: flex;
@@ -113,17 +62,4 @@ table.usa-table.usa-table--borderless.width-full[data-sortable-table] tbody tr:h
 .info-card-title {
   flex: 1;
   margin-right: 8px;
-}
-
-.info-card-help-trigger {
-  flex-shrink: 0;
-  cursor: pointer;
-  color: #454545;
-  width: 16px;
-  height: 16px;
-  margin-top: 2px; // Align with first line of text
-
-  &:hover {
-    color: #005ea2;
-  }
 }

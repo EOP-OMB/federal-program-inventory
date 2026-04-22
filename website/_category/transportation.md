@@ -1,29 +1,30 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":114,"total_obs":75302380543.82},{"title":"Department
-  of the Treasury","total_num_programs":5,"total_obs":1900000000.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":22122617.0},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":19818847.0},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":7695859.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":1047246.0},{"title":"Unspecified","total_num_programs":1,"total_obs":0.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":70},{"title":"State","total_num_programs":49},{"title":"Local","total_num_programs":31},{"title":"Federally
+agencies: '[{"title":"Department of Transportation","total_num_programs":112,"total_obs":98096584529.12},{"title":"Department
+  of the Treasury","total_num_programs":5,"total_obs":1900000000.0},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":236198661.29},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":19288529.46},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":17673843.14},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":6195859.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":71},{"title":"State","total_num_programs":47},{"title":"Local","total_num_programs":31},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":29},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":27},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":27},{"title":"Nonprofit
-  Organization","total_num_programs":22},{"title":"County Government (inclusive of
+  Organization","total_num_programs":21},{"title":"County Government (inclusive of
   boroughs in Alaska, parishes and other governmental entities with geographic regional
   control and authority)","total_num_programs":20},{"title":"U.S. Territory (or Possession)
   Government (including freely-associated states)","total_num_programs":19},{"title":"Transit
-  Authority","total_num_programs":18},{"title":"Interstate Organization","total_num_programs":16},{"title":"For-Profit
-  Organization","total_num_programs":15},{"title":"Territorial","total_num_programs":10},{"title":"Tribal","total_num_programs":8},{"title":"Department
+  Authority","total_num_programs":18},{"title":"For-Profit Organization","total_num_programs":15},{"title":"Interstate
+  Organization","total_num_programs":15},{"title":"Territorial","total_num_programs":10},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":7},{"title":"Indian/Native
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":7},{"title":"Port
-  Authority","total_num_programs":7},{"title":"U.S. Federal Government","total_num_programs":7},{"title":"Airport
-  Authority","total_num_programs":6},{"title":"Other","total_num_programs":6},{"title":"Other
-  Special Disctrict Government","total_num_programs":5},{"title":"Planning Commission","total_num_programs":5},{"title":"Unrestricted
-  by Entity Type","total_num_programs":5},{"title":"Department or Agency of a U.S.
-  Territorial Government","total_num_programs":4},{"title":"Not-for-Profit Organization","total_num_programs":3},{"title":"Builder/Contractor/Developer","total_num_programs":2},{"title":"Federally
+  Authority","total_num_programs":7},{"title":"Tribal","total_num_programs":7},{"title":"U.S.
+  Federal Government","total_num_programs":7},{"title":"Airport Authority","total_num_programs":6},{"title":"Unrestricted
+  by Entity Type","total_num_programs":6},{"title":"Other","total_num_programs":5},{"title":"Other
+  Special Disctrict Government","total_num_programs":5},{"title":"Department or Agency
+  of a U.S. Territorial Government","total_num_programs":4},{"title":"Planning Commission","total_num_programs":4},{"title":"Not-for-Profit
+  Organization","total_num_programs":3},{"title":"Builder/Contractor/Developer","total_num_programs":2},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Native American
   Organizations (includes Indian groups, cooperatives, corporations, partnerships,
   associations)","total_num_programs":2},{"title":"Nonprofit with 501C3 IRS Status
@@ -31,10 +32,10 @@ applicant_types: '[{"title":"U.S. State Government (including the District of Co
   public institution/organization","total_num_programs":2},{"title":"School District","total_num_programs":2},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1}]'
+  and hospitals","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Other
+  (specify)","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Profit
+  organization","total_num_programs":1},{"title":"Small Business Person","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -71,11 +72,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -114,6 +110,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -233,14 +244,14 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/transportation
-sub_cats: '[{"title":"Air Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":4,"total_obs":18191845098.0},{"title":"Ground
-  Transportation","permalink":"/category/transportation/ground-transportation","total_num_programs":94,"total_obs":36137510129.82},{"title":"Multi\u2013modal
-  Transportation","permalink":"/category/transportation/multi-modal-transportation","total_num_programs":24,"total_obs":22916014026.0},{"title":"Water
-  Transportation","permalink":"/category/transportation/water-transportation","total_num_programs":5,"total_obs":7695859.0}]'
+sub_cats: '[{"title":"Air Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":4,"total_obs":9024307788.63},{"title":"Ground
+  Transportation","permalink":"/category/transportation/ground-transportation","total_num_programs":82,"total_obs":73464184578.44998},{"title":"Multi\u2013modal
+  Transportation","permalink":"/category/transportation/multi-modal-transportation","total_num_programs":33,"total_obs":17716295579.93},{"title":"Water
+  Transportation","permalink":"/category/transportation/water-transportation","total_num_programs":7,"total_obs":71153475.0}]'
 title: Transportation
-total_num_agencies: 7
-total_num_applicant_types: 45
-total_num_programs: 127
+total_num_agencies: 8
+total_num_applicant_types: 47
+total_num_programs: 126
 total_num_sub_cats: 4
-total_obs: 77253065112.82
+total_obs: 100275941422.01
 ---

@@ -2,10 +2,13 @@
 layout: default
 title: Test - Improper Payment Card (Positive Rate)
 permalink: /test-improper-payment-positive-rate.html
-improper_payments: '[{"name":"Test Payment Program","outlays":100000000.0,"improper_payments":15000000.0}]'
+improper_payments:
+- name: Test Payment Program
+  outlays: 100000000
+  improper_payments: 15000000
 improper_payments_total: 15000000.0
 improper_payments_percent: 15.0
-last_completed_year_outlay: 75000000.0
+headline_amount: 75000000.0
 outlays: '[{"x":"2025","outlay":75000000.0,"obligation":80000000.0}]'
 ---
 

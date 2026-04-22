@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":174,"total_obs":1984770000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":170,"total_obs":1985250000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -37,11 +37,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -80,6 +75,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -200,12 +210,12 @@ categories_subcategories:
 fiscal_year: '2025'
 permalink: /category/tax-expenditures
 sub_cats: '[{"title":"Agriculture","permalink":"/category/tax-expenditures/agriculture","total_num_programs":7,"total_obs":2820000000.0},{"title":"Commerce
-  and Housing","permalink":"/category/tax-expenditures/commerce-and-housing","total_num_programs":33,"total_obs":645340000000.0},{"title":"Community
+  and Housing","permalink":"/category/tax-expenditures/commerce-and-housing","total_num_programs":31,"total_obs":645320000000.0},{"title":"Community
   and Regional Development","permalink":"/category/tax-expenditures/community-and-regional-development","total_num_programs":9,"total_obs":6240000000.0},{"title":"Education,
-  Training, Employment, and Social Services","permalink":"/category/tax-expenditures/education--training--employment--and-social-services","total_num_programs":27,"total_obs":111660000000.0},{"title":"Energy","permalink":"/category/tax-expenditures/energy","total_num_programs":31,"total_obs":80650000000.0},{"title":"General
+  Training, Employment, and Social Services","permalink":"/category/tax-expenditures/education--training--employment--and-social-services","total_num_programs":27,"total_obs":111660000000.0},{"title":"Energy","permalink":"/category/tax-expenditures/energy","total_num_programs":30,"total_obs":80650000000.0},{"title":"General
   Purpose Fiscal Assistance","permalink":"/category/tax-expenditures/general-purpose-fiscal-assistance","total_num_programs":3,"total_obs":49590000000.0},{"title":"General
-  Science, Space, and Technology","permalink":"/category/tax-expenditures/general-science--space--and-technology","total_num_programs":2,"total_obs":14530000000.0},{"title":"Health","permalink":"/category/tax-expenditures/health","total_num_programs":12,"total_obs":421410000000.0},{"title":"Income
-  Security","permalink":"/category/tax-expenditures/income-security","total_num_programs":23,"total_obs":517900000000.0},{"title":"Interest","permalink":"/category/tax-expenditures/interest","total_num_programs":1,"total_obs":880000000.0},{"title":"International
+  Science, Space, and Technology","permalink":"/category/tax-expenditures/general-science--space--and-technology","total_num_programs":2,"total_obs":14530000000.0},{"title":"Health","permalink":"/category/tax-expenditures/health","total_num_programs":11,"total_obs":421720000000.0},{"title":"Income
+  Security","permalink":"/category/tax-expenditures/income-security","total_num_programs":23,"total_obs":518090000000.0},{"title":"Interest","permalink":"/category/tax-expenditures/interest","total_num_programs":1,"total_obs":880000000.0},{"title":"International
   Affairs","permalink":"/category/tax-expenditures/international-affairs","total_num_programs":5,"total_obs":61450000000.0},{"title":"National
   Defense","permalink":"/category/tax-expenditures/national-defense","total_num_programs":1,"total_obs":17570000000.0},{"title":"Natural
   Resources and Environment","permalink":"/category/tax-expenditures/natural-resources-and-environment","total_num_programs":8,"total_obs":2970000000.0},{"title":"Social
@@ -214,7 +224,7 @@ sub_cats: '[{"title":"Agriculture","permalink":"/category/tax-expenditures/agric
 title: Tax Expenditures
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 174
+total_num_programs: 170
 total_num_sub_cats: 16
-total_obs: 1984770000000.0
+total_obs: 1985250000000.0
 ---

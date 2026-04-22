@@ -1,18 +1,20 @@
 ---
-agencies: '[{"title":"National Endowment for the Arts","total_num_programs":3,"total_obs":121375794.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":1,"total_obs":30204784.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":3},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":2},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Municipality
+agencies: '[{"title":"National Endowment for the Arts","total_num_programs":3,"total_obs":120258374.53999999},{"title":"National
+  Endowment for the Humanities","total_num_programs":5,"total_obs":20798763.0}]'
+applicant_types: '[{"title":"Federally Recognized Indian/Native American/Alaska Native
+  Tribal Government","total_num_programs":6},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":6},{"title":"County Government (inclusive
+  of boroughs in Alaska, parishes and other governmental entities with geographic
+  regional control and authority)","total_num_programs":5},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"School
+  and villages)","total_num_programs":5},{"title":"Not-for-Profit Organization","total_num_programs":5},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":5},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":4},{"title":"Nonprofit Organization","total_num_programs":3},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"School
   District","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":1}]'
+  Federal Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -49,11 +51,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -92,6 +89,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -215,16 +227,24 @@ parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/access-and-appreciation
 programs: '[{"cfda":"45.025","permalink":"/program/45.025","title":"Promotion of the
   Arts Partnership Agreements","popular_name":null,"agency":"National Endowment for
-  the Arts","total_obs":71036900.0,"program_type":"assistance_listing"},{"cfda":"45.024","permalink":"/program/45.024","title":"Promotion
+  the Arts","total_obs":70836900.0,"program_type":"assistance_listing"},{"cfda":"45.024","permalink":"/program/45.024","title":"Promotion
   of the Arts Grants to Organizations and Individuals","popular_name":null,"agency":"National
-  Endowment for the Arts","total_obs":50338894.0,"program_type":"assistance_listing"},{"cfda":"45.129","permalink":"/program/45.129","title":"Promotion
+  Endowment for the Arts","total_obs":49421474.54,"program_type":"assistance_listing"},{"cfda":"45.129","permalink":"/program/45.129","title":"Promotion
   of the Humanities Federal/State Partnership","popular_name":null,"agency":"National
-  Endowment for the Humanities","total_obs":30204784.0,"program_type":"assistance_listing"},{"cfda":"45.201","permalink":"/program/45.201","title":"Arts
+  Endowment for the Humanities","total_obs":11290137.0,"program_type":"assistance_listing"},{"cfda":"45.164","permalink":"/program/45.164","title":"Promotion
+  of the Humanities Public Programs","popular_name":null,"agency":"National Endowment
+  for the Humanities","total_obs":6610700.0,"program_type":"assistance_listing"},{"cfda":"45.169","permalink":"/program/45.169","title":"Promotion
+  of the Humanities Office of Digital Humanities","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":2897926.0,"program_type":"assistance_listing"},{"cfda":"45.201","permalink":"/program/45.201","title":"Arts
   and Artifacts Indemnity","popular_name":"Arts and Artifacts Indemnity","agency":"National
-  Endowment for the Arts","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Endowment for the Arts","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.037","permalink":"/program/45.037","title":"National
+  Endowment for the Humanities: Collections Stewardship","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.036","permalink":"/program/45.036","title":"National
+  Endowment for the Humanities: Media Projects","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Access and Appreciation
 total_num_agencies: 2
-total_num_applicant_types: 15
-total_num_programs: 4
-total_obs: 151580578.0
+total_num_applicant_types: 16
+total_num_programs: 8
+total_obs: 141057137.54
 ---

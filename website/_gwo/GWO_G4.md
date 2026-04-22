@@ -1,0 +1,77 @@
+---
+category: Education
+definition: Building a skilled and effective educator workforce.
+focus_area: Educational Environments
+gwo_id: GWO.G4
+permalink: /gwo/GWO_G4
+title: Strengthen Educator Workforce Quality
+where_used:
+- agency: Department of Agriculture
+  expenditure_amount: 30000000.0
+  name: 1890 Institution Capacity Building Grants
+  permalink: /program/10.216
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Augustus F. Hawkins Centers of Excellence—Teacher Preparation and Development
+  permalink: /program/84.428
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 3610000.0
+  name: Environmental Education Grants Program
+  permalink: /program/66.951
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5330000.0
+  name: Higher Education - Institution Challenge Grants Program
+  permalink: /program/10.217
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Language Resource Centers
+  permalink: /program/84.229
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 125000.0
+  name: National Food and Agricultural Sciences Teaching, Extension, and Research
+    Awards
+  permalink: /program/10.279
+  program_type: assistance_listing
+- agency: National Endowment for the Humanities
+  expenditure_amount: 3499568.0
+  name: Promotion of the Humanities Professional Development
+  permalink: /program/45.163
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education - Personnel Development to Improve Services and Results
+    for Children with Disabilities
+  permalink: /program/84.325
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education - State Personnel Development
+  permalink: /program/84.323
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Supporting Effective Educator Development Program
+  permalink: /program/84.423
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: TRIO Staff Training Program
+  permalink: /program/84.103
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Teacher Quality Partnership Grants
+  permalink: /program/84.336
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Teacher and School Leader Incentive Grants (formerly the Teacher Incentive
+    Fund)
+  permalink: /program/84.374
+  program_type: assistance_listing
+---

@@ -10,8 +10,6 @@ categories:
   title: Consumer Protection
 - permalink: /category/cultural-affairs
   title: Cultural Affairs
-- permalink: /category/debt-service
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   title: Disaster Prevention and Relief
 - permalink: /category/education
@@ -24,6 +22,8 @@ categories:
   title: Environmental Quality
 - permalink: /category/food-and-nutrition
   title: Food and Nutrition
+- permalink: /category/general-government
+  title: General Government
 - permalink: /category/health
   title: Health
 - permalink: /category/housing
@@ -82,11 +82,6 @@ categories_hierarchy:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -125,6 +120,21 @@ categories_hierarchy:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -242,33 +252,36 @@ categories_hierarchy:
   - permalink: /category/transportation/water-transportation
     title: Water Transportation
   title: Transportation
-categories_json: '[{"title":"Health","total_num_programs":400,"total_obs":1986606734206.93,"permalink":"/category/health"},{"title":"Tax
-  Expenditures","total_num_programs":174,"total_obs":1984770000000.0,"permalink":"/category/tax-expenditures"},{"title":"Income
-  Security and Social Services","total_num_programs":111,"total_obs":1802945925360.71,"permalink":"/category/income-security-and-social-services"},{"title":"Business
-  and Commerce","total_num_programs":136,"total_obs":309181421596.72,"permalink":"/category/business-and-commerce"},{"title":"Housing","total_num_programs":111,"total_obs":289095206887.65,"permalink":"/category/housing"},{"title":"Education","total_num_programs":163,"total_obs":263441397570.75,"permalink":"/category/education"},{"title":"Food
-  and Nutrition","total_num_programs":58,"total_obs":147761565296.68,"permalink":"/category/food-and-nutrition"},{"title":"Energy","total_num_programs":72,"total_obs":97092121375.77,"permalink":"/category/energy"},{"title":"Community
-  Development","total_num_programs":91,"total_obs":91925205536.39,"permalink":"/category/community-development"},{"title":"Transportation","total_num_programs":127,"total_obs":77253065112.82,"permalink":"/category/transportation"},{"title":"Agricultural","total_num_programs":122,"total_obs":47535578923.5,"permalink":"/category/agricultural"},{"title":"Disaster
-  Prevention and Relief","total_num_programs":98,"total_obs":18395637168.04,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Environmental
-  Quality","total_num_programs":142,"total_obs":16343835587.2,"permalink":"/category/environmental-quality"},{"title":"Natural
-  Resources","total_num_programs":232,"total_obs":14903015253.85,"permalink":"/category/natural-resources"},{"title":"Employment
-  and Labor","total_num_programs":98,"total_obs":13633002518.240002,"permalink":"/category/employment-and-labor"},{"title":"Science
-  and Technology","total_num_programs":35,"total_obs":8046695457.809999,"permalink":"/category/science-and-technology"},{"title":"Law,
-  Justice, and Legal Services","total_num_programs":214,"total_obs":7225535040.090001,"permalink":"/category/law--justice--and-legal-services"},{"title":"National
-  Defense","total_num_programs":33,"total_obs":4624741415.940001,"permalink":"/category/national-defense"},{"title":"Cultural
-  Affairs","total_num_programs":52,"total_obs":1439814395.0,"permalink":"/category/cultural-affairs"},{"title":"International
-  Affairs","total_num_programs":76,"total_obs":529711448.15,"permalink":"/category/international-affairs"},{"title":"Consumer
-  Protection","total_num_programs":16,"total_obs":418061437.0,"permalink":"/category/consumer-protection"},{"title":"Debt
-  Service","total_num_programs":4,"total_obs":0.0,"permalink":"/category/debt-service"},{"title":"Interest
-  on the Public Debt","total_num_programs":1,"total_obs":0.0,"permalink":"/category/interest-on-the-public-debt"}]'
+categories_json: '[{"title":"Income Security and Social Services","total_num_programs":107,"total_obs":3398507278475.94,"permalink":"/category/income-security-and-social-services"},{"title":"Tax
+  Expenditures","total_num_programs":170,"total_obs":1985250000000.0,"permalink":"/category/tax-expenditures"},{"title":"Health","total_num_programs":548,"total_obs":1843884148023.03,"permalink":"/category/health"},{"title":"General
+  Government","total_num_programs":14,"total_obs":1215613829754.0,"permalink":"/category/general-government"},{"title":"Interest
+  on the Public Debt","total_num_programs":1,"total_obs":1215613829754.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Business
+  and Commerce","total_num_programs":160,"total_obs":180746277507.61,"permalink":"/category/business-and-commerce"},{"title":"Food
+  and Nutrition","total_num_programs":54,"total_obs":138062444126.08002,"permalink":"/category/food-and-nutrition"},{"title":"Education","total_num_programs":164,"total_obs":106858709130.14,"permalink":"/category/education"},{"title":"Transportation","total_num_programs":126,"total_obs":100275941422.01,"permalink":"/category/transportation"},{"title":"Housing","total_num_programs":111,"total_obs":91903612681.15,"permalink":"/category/housing"},{"title":"Energy","total_num_programs":73,"total_obs":80442736137.36,"permalink":"/category/energy"},{"title":"Community
+  Development","total_num_programs":87,"total_obs":66298736493.81999,"permalink":"/category/community-development"},{"title":"Agricultural","total_num_programs":113,"total_obs":23059316670.049995,"permalink":"/category/agricultural"},{"title":"Disaster
+  Prevention and Relief","total_num_programs":103,"total_obs":21114622562.53,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Environmental
+  Quality","total_num_programs":131,"total_obs":18365915545.84,"permalink":"/category/environmental-quality"},{"title":"Employment
+  and Labor","total_num_programs":147,"total_obs":11916551687.470001,"permalink":"/category/employment-and-labor"},{"title":"Natural
+  Resources","total_num_programs":254,"total_obs":10059803310.119993,"permalink":"/category/natural-resources"},{"title":"Law,
+  Justice, and Legal Services","total_num_programs":214,"total_obs":6382271536.83,"permalink":"/category/law--justice--and-legal-services"},{"title":"Science
+  and Technology","total_num_programs":57,"total_obs":4171607945.09,"permalink":"/category/science-and-technology"},{"title":"National
+  Defense","total_num_programs":46,"total_obs":3657725521.7499995,"permalink":"/category/national-defense"},{"title":"International
+  Affairs","total_num_programs":83,"total_obs":1566736230.4200003,"permalink":"/category/international-affairs"},{"title":"Cultural
+  Affairs","total_num_programs":54,"total_obs":1231865228.6299999,"permalink":"/category/cultural-affairs"},{"title":"Consumer
+  Protection","total_num_programs":18,"total_obs":275459981.52000004,"permalink":"/category/consumer-protection"}]'
 fiscal_year: '2025'
 layout: category-index
 obligations_by_type:
 - title: Federal Financial Assistance
-  total_obs: 3540277708199.2803
+  total_obs: 4342375690872.8984
+- title: Interest on the Public Debt
+  total_obs: 1215613829754.0
+- title: Major Acquisition Programs
+  total_obs: 123733362469.66005
 - title: Tax Expenditures
-  total_obs: 1984770000000.0
+  total_obs: 1985250000000.0
 permalink: /category.html
 title: Categories
-total_num_programs: 3400
-total_obs: 5525047708199.28
+total_num_programs: 3447
+total_obs: 7666972883096.559
 ---

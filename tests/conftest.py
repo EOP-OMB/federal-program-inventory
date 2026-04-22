@@ -17,6 +17,10 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 # Making sure constants is in the path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data_processing')))
 
+os.environ['ETL_EXTRACT_DISK_DIRECTORY'] = '/'
+os.environ['ETL_EXTRACT_SOURCE_DIRECTORY'] = 'data_processing/source'
+os.environ['ETL_EXTRACT_EXTRACTED_DIRECTORY'] = 'data_processing/extracted'
+
 @pytest.fixture(autouse=True)
 def patch_paths():
     """Patch file paths to prevent file access issues."""

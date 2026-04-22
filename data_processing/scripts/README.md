@@ -190,3 +190,13 @@ This opens the downloaded zip files in memory, summarizes all of the csv data by
 # summarize-sam-data.py
 
 This opens the extracted assistance-listings.json file, summarizes available data by ALN, and saves the output to a csv file.
+
+# verify_aln_outlays_by_first_action_year.py
+
+This pulls obligations and outlays from the API.  Example command:  `python3 verify_aln_outlays_by_first_action_year.py --aln 10.205 --year 2016 --max-action-date 2026-03-06`.
+
+Note: this pulls the latest data from the API, so if this is used for verification, there may be differences due to recent activity.
+
+# extract_assistance_outlay_aggregation_by_aln.py
+
+This pulls outlay and obligation data by ALN from the temp_db created by the data pipeline.  Example command:  `python3 extract_assistance_outlay_aggregation_by_aln.py --aln "10.205"`

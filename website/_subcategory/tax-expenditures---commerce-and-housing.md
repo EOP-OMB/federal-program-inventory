@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":33,"total_obs":645340000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":31,"total_obs":645320000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -37,11 +37,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -80,6 +75,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -202,9 +212,9 @@ parent_permalink: /category/tax-expenditures
 parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/commerce-and-housing
 programs: '[{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion of net
-  imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":172000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
+  imputed rental income","popular_name":null,"agency":"Department of the Treasury","total_obs":172300000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.075","permalink":"/program/TC.075","title":"Capital
   gains (except agriculture, timber, iron ore, and coal)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":150000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow
+  of the Treasury","total_obs":149680000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow
   20-percent deduction to certain pass-through income","popular_name":null,"agency":"Department
   of the Treasury","total_obs":69250000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.065","permalink":"/program/TC.065","title":"Capital
   gains exclusion on home sales","popular_name":null,"agency":"Department of the Treasury","total_obs":61740000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.074","permalink":"/program/TC.074","title":"Treatment
@@ -252,11 +262,7 @@ programs: '[{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion of
   of the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.084","permalink":"/program/TC.084","title":"Exclusion
   of interest on small issue bonds","popular_name":null,"agency":"Department of the
   Treasury","total_obs":50000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.072","permalink":"/program/TC.072","title":"Discharge
-  of business indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.083","permalink":"/program/TC.083","title":"Expensing
-  of certain small investments (normal tax method)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.071","permalink":"/program/TC.071","title":"Premiums
-  for mortgage insurance deductible as interest","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.081","permalink":"/program/TC.081","title":"Depreciation
+  of business indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.081","permalink":"/program/TC.081","title":"Depreciation
   of buildings other than rental housing (normal tax method)","popular_name":null,"agency":"Department
   of the Treasury","total_obs":-390000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.082","permalink":"/program/TC.082","title":"Accelerated
   depreciation of machinery and equipment (normal tax method)","popular_name":null,"agency":"Department
@@ -264,6 +270,6 @@ programs: '[{"cfda":"TC.066","permalink":"/program/TC.066","title":"Exclusion of
 title: Commerce and Housing
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 33
-total_obs: 645340000000.0
+total_num_programs: 31
+total_obs: 645320000000.0
 ---

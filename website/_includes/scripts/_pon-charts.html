@@ -16,7 +16,8 @@ function renderOutcomeTreeMap() {
   try {
     const rootStyle = getComputedStyle(document.documentElement);
     const ponTreemapBgColor = rootStyle.getPropertyValue('--pon-treemap-bg').trim();
-    renderTreeMap(treeMapData, 'outcomeChart', 'expenditure_amount', ponTreemapBgColor);
+    const ponTreemapFgColor = rootStyle.getPropertyValue('--pon-treemap-fg').trim();
+    renderTreeMap(treeMapData, 'outcomeChart', 'expenditure_amount', ponTreemapBgColor, ponTreemapFgColor);
   } catch (error) {
     console.error('Error rendering treemap:', error);
   }

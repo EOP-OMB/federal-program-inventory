@@ -154,12 +154,15 @@ erDiagram
     }
     
     improper_payment_mapping {
-        TEXT program_id FK
-        TEXT improper_payment_program_name
+        TEXT program_id PK FK
+        TEXT improper_payment_program_name PK
+        INTEGER fiscal_year PK
         DECIMAL outlays
+        TEXT start_date
+        TEXT end_date
         DECIMAL improper_payment_amount
         DECIMAL insufficient_documentation_amount
-        INTEGER high_priority_program
+        TEXT slug
     }
 ```
 

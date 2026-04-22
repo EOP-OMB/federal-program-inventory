@@ -1,0 +1,40 @@
+---
+category: Law, Justice, and Legal Services
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Decreased dispatch or response time of emergency
+  responders or law enforcement personnel; -Eliminated any wait time upon calling
+  an emergency call center; -Established or enhanced public reporting systems for
+  crimes or concerns that may not require immediate response (e.g., law enforcement
+  tip lines, digital reporting platforms); -Established or upgraded crime-specific
+  reporting hotlines (e.g., human trafficking hotlines).'
+focus_area: Law Enforcement Support
+gwo_id: PON.T87
+permalink: /pon/PON_T87
+title: Improve Crime Reporting Infrastructure
+where_used:
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Community-Based Approaches to Advancing Justice
+  permalink: /program/16.047
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Khalid Jabara and Heather Heyer NO HATE Act
+  permalink: /program/16.048
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Assistance National Instant Criminal Background Check System
+  permalink: /program/16.309
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Rural Violent Crime Initiative
+  permalink: /program/16.039
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 12497442.0
+  name: Services to Victims of a Severe Form of Trafficking
+  permalink: /program/93.598
+  program_type: assistance_listing
+---

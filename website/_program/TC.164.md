@@ -13,12 +13,24 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/N3
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_N3
+headline_amount: 0.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Internal Revenue Service - US Coronavirus Refundable Credits
+  outlays: 0.0
+  slug: treasury-internal-revenue-service-us-coronavirus-refundable--d7f596f0
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2021","rate":0.0},{"x":"2022","rate":0.0},{"x":"2024","rate":0.0},{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Coronavirus Aid, Relief, and Economic
@@ -27,7 +39,7 @@ objective: The baseline tax system would not allow credits for particular activi
   gross income over $75,000 ($150,000 for married couples filing jointly, $112,500
   for heads of household). This was followed by the Consolidated Appropriations Act
   which provided rebates of $600 per eligible taxpayer ($1,200 for married couples
-  filing jointly) plus an additional $600 per child, with phase-out features similar
+  filing jointly) plus an additional $600 per child, with phaseout features similar
   to the CARES Act. The American Rescue Plan act provided another rebate credit of
   $1,400 ($2,800 for married couples filing jointly) and $1,400 per dependent in 2021.
   The phase out begins at the same thresholds as the CARES Act, but the full credit
@@ -38,7 +50,7 @@ other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":
 outlays: null
 permalink: /program/TC.164.html
 pons:
-- permalink: /pon/T91
+- permalink: /pon/PON_T91
   pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure

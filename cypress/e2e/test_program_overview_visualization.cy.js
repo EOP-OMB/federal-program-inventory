@@ -11,8 +11,8 @@ describe('Program Overview Visualization', () => {
   const originX = 0;
   const originY = 0;
   const legendItemX = 530;
-  const legendItemY1 = 290;
-  const legendItemY2 = 310;
+  const legendItemY1 = 265;
+  const legendItemY2 = 285;
   const tooltipX1 = 300;
   const tooltipY1 = 500;
   const tooltipX2 = 400;
@@ -90,17 +90,17 @@ describe('Program Overview Visualization', () => {
     cy.get(tooltipOverlaySelector).should('be.visible');
     cy.get(tooltipSelector).should('not.be.visible');
 
-    // move near 2021 datapoint
+    // move near 2022 datapoint
     cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX1, clientY: tooltipY1 });
     cy.get(tooltipSelector).compareSnapshot('overview_viz_tooltip');
     cy.get(tooltipSelector).should('contain.text', 'Year');
-    cy.get(tooltipSelector).should('contain.text', '2021');
+    cy.get(tooltipSelector).should('contain.text', '2022');
     cy.get(tooltipSelector).should('contain.text', 'Obligations');
     cy.get(tooltipSelector).should('contain.text', 'Outlays');
 
-    // move near 2023 datapoint (tooltip should be x-driven, so y should not matter)
+    // move near 2025 datapoint (tooltip should be x-driven, so y should not matter)
     cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX2, clientY: tooltipY2, force: true });
-    cy.get(tooltipSelector).should('contain.text', '2023');
+    cy.get(tooltipSelector).should('contain.text', '2025');
 
     // move mouse out of chart
     cy.get('body').trigger('mousemove', { clientX: originX, clientY: originY, force: true });

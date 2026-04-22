@@ -1,24 +1,28 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":26,"total_obs":1784369401151.0},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":27,"total_obs":1703241569538.2898},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":105320000000.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":13},{"title":"State","total_num_programs":9},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":6},{"title":"Not-for-Profit
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":14},{"title":"State","total_num_programs":9},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Not-for-Profit
   Organization","total_num_programs":6},{"title":"U.S. State Government (including
   the District of Columbia)","total_num_programs":6},{"title":"U.S. Territory (or
   Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"For-Profit
   Organization","total_num_programs":5},{"title":"Indian/Native American/Alaska Native
-  Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Local (includes
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  associations)","total_num_programs":2},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Territories and possessions","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":1},{"title":"Other Special Disctrict
-  Government","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
-  Territories and possessions","total_num_programs":1},{"title":"Unrestricted by Individual
-  Type","total_num_programs":1}]'
+  Government","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -55,11 +59,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -98,6 +97,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -221,69 +235,70 @@ parent_title: Health
 permalink: /category/health/healthcare-access
 programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to States
   for Medicaid","popular_name":"(Medicaid; Title XIX)","agency":"Department of Health
-  and Human Services","total_obs":724366753000.0,"program_type":"assistance_listing"},{"cfda":"93.774","permalink":"/program/93.774","title":"Medicare
+  and Human Services","total_obs":680459228023.08,"program_type":"assistance_listing"},{"cfda":"93.774","permalink":"/program/93.774","title":"Medicare
   Supplementary Medical Insurance","popular_name":"(Medicare Part B)","agency":"Department
-  of Health and Human Services","total_obs":574505000000.0,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
+  of Health and Human Services","total_obs":568590835738.81,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
   Hospital Insurance","popular_name":"(Medicare Part A)","agency":"Department of Health
-  and Human Services","total_obs":441403000000.0,"program_type":"assistance_listing"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
+  and Human Services","total_obs":432516213604.68,"program_type":"assistance_listing"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
   Premium Assistance Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":104880000000.0,"program_type":"tax_expenditure"},{"cfda":"93.767","permalink":"/program/93.767","title":"Children''s
   Health Insurance Program","popular_name":"(CHIP)","agency":"Department of Health
-  and Human Services","total_obs":21420872143.0,"program_type":"assistance_listing"},{"cfda":"93.423","permalink":"/program/93.423","title":"1332
-  State Innovation Waivers","popular_name":"Section 1332 Waiver Program","agency":"Department
-  of Health and Human Services","total_obs":16089981136.0,"program_type":"assistance_listing"},{"cfda":"93.224","permalink":"/program/93.224","title":"Health
-  Center Program","popular_name":"Health Center Program","agency":"Department of Health
-  and Human Services","total_obs":5407524000.0,"program_type":"assistance_listing"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
+  and Human Services","total_obs":21243874394.0,"program_type":"assistance_listing"},{"cfda":"TC.139","permalink":"/program/TC.139","title":"Special
+  Blue Cross/Blue Shield tax benefits","popular_name":null,"agency":"Department of
+  the Treasury","total_obs":440000000.0,"program_type":"tax_expenditure"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
   Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
   Program previously published as Immunization Grants and Vaccines for Children Program","agency":"Department
-  of Health and Human Services","total_obs":640712307.0,"program_type":"assistance_listing"},{"cfda":"TC.139","permalink":"/program/TC.139","title":"Special
-  Blue Cross/Blue Shield tax benefits","popular_name":null,"agency":"Department of
-  the Treasury","total_obs":440000000.0,"program_type":"tax_expenditure"},{"cfda":"93.217","permalink":"/program/93.217","title":"Family
-  Planning Services","popular_name":"Title X Services","agency":"Department of Health
-  and Human Services","total_obs":256924733.0,"program_type":"assistance_listing"},{"cfda":"93.297","permalink":"/program/93.297","title":"Teenage
-  Pregnancy Prevention Program","popular_name":"TPP Program","agency":"Department
-  of Health and Human Services","total_obs":92755000.0,"program_type":"assistance_listing"},{"cfda":"93.694","permalink":"/program/93.694","title":"Section
-  206 Consolidated Appropriations Act, 2024: State Planning Grants to Promote Continuity
-  of Care for Medicaid & CHIP Beneficiaries","popular_name":"N/A","agency":"Department
-  of Health and Human Services","total_obs":34748561.0,"program_type":"assistance_listing"},{"cfda":"93.899","permalink":"/program/93.899","title":"Minority
-  HIV/AIDS Fund (MHAF)","popular_name":"MHAF","agency":"Department of Health and Human
-  Services","total_obs":31575000.0,"program_type":"assistance_listing"},{"cfda":"93.137","permalink":"/program/93.137","title":"Community
-  Programs to Improve Minority Health","popular_name":"Minority Health Community Programs","agency":"Department
-  of Health and Human Services","total_obs":27435264.0,"program_type":"assistance_listing"},{"cfda":"93.932","permalink":"/program/93.932","title":"Native
-  Hawaiian Health Care Systems","popular_name":"Native Hawaiian Health Care Improvement
-  Act (NHHCIA)","agency":"Department of Health and Human Services","total_obs":25000000.0,"program_type":"assistance_listing"},{"cfda":"93.771","permalink":"/program/93.771","title":"State
-  Grants for the Implementation, Enhancement, and Expansion of Medicaid and CHIP School-Based
-  Services","popular_name":"N/A","agency":"Department of Health and Human Services","total_obs":17000000.0,"program_type":"assistance_listing"},{"cfda":"93.965","permalink":"/program/93.965","title":"Coal
-  Miners Respiratory Impairment Treatment Clinics and Services","popular_name":"Black
-  Lung Clinics Program (BLCP) and the Black Lung Data and Resource Center (BLDRC)","agency":"Department
-  of Health and Human Services","total_obs":11913399.0,"program_type":"assistance_listing"},{"cfda":"93.134","permalink":"/program/93.134","title":"Grants
-  to Increase Organ Donation","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":10949200.0,"program_type":"assistance_listing"},{"cfda":"93.193","permalink":"/program/93.193","title":"Urban
-  Indian Health Services","popular_name":"Urban Indian Health Services (4-in-1)","agency":"Department
-  of Health and Human Services","total_obs":9707858.0,"program_type":"assistance_listing"},{"cfda":"93.653","permalink":"/program/93.653","title":"Indian
-  Health Service Domestic Violence Prevention Programs","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":7400000.0,"program_type":"assistance_listing"},{"cfda":"93.885","permalink":"/program/93.885","title":"Cell
-  and Gene Therapy (CGT) Access Model","popular_name":"CGT Access Model","agency":"Department
-  of Health and Human Services","total_obs":3998000.0,"program_type":"assistance_listing"},{"cfda":"93.257","permalink":"/program/93.257","title":"Grants
-  for Education, Prevention, and Early Detection of Radiogenic Cancers and Diseases","popular_name":"Radiation
-  Exposure Screening and Education Program","agency":"Department of Health and Human
-  Services","total_obs":1651488.0,"program_type":"assistance_listing"},{"cfda":"93.971","permalink":"/program/93.971","title":"Health
-  Professions Preparatory Scholarship Program for Indians","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":1500000.0,"program_type":"assistance_listing"},{"cfda":"93.382","permalink":"/program/93.382","title":"Indian
-  Health Service Community Health Aide Program","popular_name":"Tribal Planning &
-  Implementation","agency":"Department of Health and Human Services","total_obs":1140062.0,"program_type":"assistance_listing"},{"cfda":"93.383","permalink":"/program/93.383","title":"Public
-  Health Nursing","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1050000.0,"program_type":"assistance_listing"},{"cfda":"93.007","permalink":"/program/93.007","title":"Public
-  Awareness Campaigns on Embryo Adoption","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":810000.0,"program_type":"assistance_listing"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Credit
-  for employee health insurance expenses of small business","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"93.527","permalink":"/program/93.527","title":"Grants
+  of Health and Human Services","total_obs":252471739.35,"program_type":"assistance_listing"},{"cfda":"93.224","permalink":"/program/93.224","title":"Health
+  Center Program","popular_name":"Health Center Program","agency":"Department of Health
+  and Human Services","total_obs":63700365.0,"program_type":"assistance_listing"},{"cfda":"93.527","permalink":"/program/93.527","title":"Grants
   for New and Expanded Services under the Health Center Program","popular_name":"Grants
   for New and Expanded Services under the Health Center Program","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.344","permalink":"/program/93.344","title":"Research,
+  of Health and Human Services","total_obs":51817926.0,"program_type":"assistance_listing"},{"cfda":"93.694","permalink":"/program/93.694","title":"Section
+  206 Consolidated Appropriations Act, 2024: State Planning Grants to Promote Continuity
+  of Care for Medicaid & CHIP Beneficiaries","popular_name":"N/A","agency":"Department
+  of Health and Human Services","total_obs":38748561.38,"program_type":"assistance_listing"},{"cfda":"93.134","permalink":"/program/93.134","title":"Grants
+  to Increase Organ Donation","popular_name":null,"agency":"Department of Health and
+  Human Services","total_obs":10949200.0,"program_type":"assistance_listing"},{"cfda":"93.885","permalink":"/program/93.885","title":"Cell
+  and Gene Therapy (CGT) Access Model","popular_name":"CGT Access Model","agency":"Department
+  of Health and Human Services","total_obs":9330710.0,"program_type":"assistance_listing"},{"cfda":"93.493","permalink":"/program/93.493","title":"Congressional
+  Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":5203309.0,"program_type":"assistance_listing"},{"cfda":"93.297","permalink":"/program/93.297","title":"Teenage
+  Pregnancy Prevention Program","popular_name":"TPP Program","agency":"Department
+  of Health and Human Services","total_obs":910000.0,"program_type":"assistance_listing"},{"cfda":"93.965","permalink":"/program/93.965","title":"Coal
+  Miners Respiratory Impairment Treatment Clinics and Services","popular_name":"Black
+  Lung Clinics Program (BLCP) and the Black Lung Data and Resource Center (BLDRC)","agency":"Department
+  of Health and Human Services","total_obs":559883.0,"program_type":"assistance_listing"},{"cfda":"93.423","permalink":"/program/93.423","title":"1332
+  State Innovation Waivers","popular_name":"Section 1332 Waiver Program","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.137","permalink":"/program/93.137","title":"Community
+  Programs to Improve Minority Health","popular_name":"Minority Health Community Programs","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Credit
+  for employee health insurance expenses of small business","popular_name":null,"agency":"Department
+  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"93.217","permalink":"/program/93.217","title":"Family
+  Planning Services","popular_name":"Title X Services","agency":"Department of Health
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.257","permalink":"/program/93.257","title":"Grants
+  for Education, Prevention, and Early Detection of Radiogenic Cancers and Diseases","popular_name":"Radiation
+  Exposure Screening and Education Program","agency":"Department of Health and Human
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.382","permalink":"/program/93.382","title":"Indian
+  Health Service Community Health Aide Program","popular_name":"Tribal Planning &
+  Implementation","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.653","permalink":"/program/93.653","title":"Indian
+  Health Service Domestic Violence Prevention Programs","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.00N","permalink":"/program/93.00N","title":"Indian
+  Health Service: Dental Preventative and Clinical Support Center Program","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.932","permalink":"/program/93.932","title":"Native
+  Hawaiian Health Care Systems","popular_name":"Native Hawaiian Health Care Improvement
+  Act (NHHCIA)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.007","permalink":"/program/93.007","title":"Public
+  Awareness Campaigns on Embryo Adoption","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.383","permalink":"/program/93.383","title":"Public
+  Health Nursing","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.344","permalink":"/program/93.344","title":"Research,
   Monitoring and Outcomes Definitions for Vaccine Safety","popular_name":"Supporting
-  Vaccine Confidence","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Vaccine Confidence","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.193","permalink":"/program/93.193","title":"Urban
+  Indian Health Services","popular_name":"Urban Indian Health Services (4-in-1)","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.899","permalink":"/program/93.899","title":"Minority
+  HIV/AIDS Fund (MHAF)","popular_name":"MHAF","agency":"Department of Health and Human
+  Services","total_obs":-250163.66,"program_type":"assistance_listing"},{"cfda":"93.971","permalink":"/program/93.971","title":"Health
+  Professions Preparatory Scholarship Program for Indians","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":-2023752.35,"program_type":"assistance_listing"}]'
 title: Healthcare Access
 total_num_agencies: 2
-total_num_applicant_types: 25
-total_num_programs: 29
-total_obs: 1889689401151.0
+total_num_applicant_types: 35
+total_num_programs: 30
+total_obs: 1808561569538.2898
 ---

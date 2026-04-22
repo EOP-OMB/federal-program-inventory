@@ -13,26 +13,38 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Provide Healthcare Coverage
-  permalink: /gwo/L15
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_L15
+headline_amount: 0.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Credit for employee health insurance expenses of small business
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
   or targeted at specific groups. In contrast, the Tax Code provides a tax credit
-  to qualified small employers that make a certain level of non-elective contributions
+  to qualified small employers that make a certain level of nonelective contributions
   towards the purchase of certain health insurance coverage for its employees. To
-  receive a credit, an employer must have fewer than 25 full-time-equivalent employees
-  whose average annual full-time-equivalent wages from the employer are less than
-  $50,000 (indexed for taxable years after 2013). However, to receive a full credit,
-  an employer must have no more than 10 full-time employees, and the average wage
-  paid to these employees must be no more than $25,000 (indexed for taxable years
-  after 2013). A qualifying employer may claim the credit for any taxable year beginning
-  in 2010, 2011, 2012, and 2013 and for up to two years for insurance purchased through
-  a Health Insurance Exchange thereafter. For taxable years beginning in 2010, 2011,
-  2012, and 2013, the maximum credit is 35 percent of premiums paid by qualified taxable
+  receive a credit, an employer must have fewer than 25 fulltime equivalent employees
+  whose average annual fulltime equivalent wages from the employer are less than $50,000
+  (indexed for taxable years after 2013). However, to receive a full credit, an employer
+  must have no more than 10 fulltime employees, and the average wage paid to these
+  employees must be no more than $25,000 (indexed for taxable years after 2013). A
+  qualifying employer may claim the credit for any taxable year beginning in 2010,
+  2011, 2012, and 2013 and for up to two years for insurance purchased through a Health
+  Insurance Exchange thereafter. For taxable years beginning in 2010, 2011, 2012,
+  and 2013, the maximum credit is 35 percent of premiums paid by qualified taxable
   employers and 25 percent of premiums paid by qualified tax-exempt organizations.
   For taxable years beginning in 2014 and later years, the maximum tax credit increases
   to 50 percent of premiums paid by qualified taxable employers and 35 percent of
@@ -42,11 +54,11 @@ other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":
 outlays: null
 permalink: /program/TC.136.html
 pons:
-- permalink: /pon/828
+- permalink: /pon/PON_828
   pon: Improve Job Quality
-- permalink: /pon/N68
+- permalink: /pon/PON_N68
   pon: Increase Affordable Health Coverage
-- permalink: /pon/860
+- permalink: /pon/PON_860
   pon: Increase Personal Financial Resilience
 popular_name: ''
 program_type: tax_expenditure

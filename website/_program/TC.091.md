@@ -13,12 +13,24 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/N3
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_N3
+headline_amount: 420000000.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Exclusion for employer-provided transit passes
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: Under the baseline tax system, all compensation, including dedicated payments
   and in-kind benefits, would be included in taxable income. Dedicated payments and
@@ -30,11 +42,11 @@ objective: Under the baseline tax system, all compensation, including dedicated 
   transit exclusion is $315 per month in 2024. However, beginning in 2018, transit
   expenses are no longer deductible to employers.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":341000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":369000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":390000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":410000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":341000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":369000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":390000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":410000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":420000000.0}]'
 outlays: null
 permalink: /program/TC.091.html
 pons:
-- permalink: /pon/T91
+- permalink: /pon/PON_T91
   pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure

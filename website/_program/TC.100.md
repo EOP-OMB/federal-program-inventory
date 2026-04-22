@@ -13,12 +13,24 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Strengthen Community and Regional Development
-  permalink: /gwo/C1
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_C1
+headline_amount: 0.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Tribal Economic Development Bonds
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
   tax rate schedule. It would not allow preferentially low (or zero) tax rates to
@@ -30,9 +42,9 @@ other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":
 outlays: null
 permalink: /program/TC.100.html
 pons:
-- permalink: /pon/1C
+- permalink: /pon/PON_1C
   pon: Construct New Community Infrastructure
-- permalink: /pon/117
+- permalink: /pon/PON_117
   pon: Increase Local Economic Growth
 popular_name: ''
 program_type: tax_expenditure

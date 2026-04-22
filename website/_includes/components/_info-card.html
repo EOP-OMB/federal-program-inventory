@@ -3,14 +3,6 @@
     <p class="text-ink margin-bottom-2 margin-top-1 info-card-title">
       {{ include.title }}
     </p>
-    {% if include.show_info %}
-      <svg class="usa-icon info-card-help-trigger" aria-hidden="true" focusable="false" role="img"
-           data-help-id="{{ include.help_id }}"
-           data-help-title="{{ include.help_title }}"
-           data-help-text="{{ include.help_text }}">
-        <use href="/assets/img/sprite.svg#info_outline"></use>
-      </svg>
-    {% endif %}
   </div>
   <div class="text-bold text-ink margin-bottom-1">
     {{ include.display_number }}

@@ -15,10 +15,11 @@ Note: You may face common issues wth PowerShell blocking script execution by def
 Note: In the requirements.txt file, you may need to comment out this line: tabula.py
 
 ## Environment variables
-The following environment variables are used for building and ETL.  Consider adding these to a .env file in the root of the repo directory.  Your directories may differ, and you can use TEST_ENV=false to skip data pipeline tests and cypress e2e tests.
+The following environment variables are used for building and ETL.  Consider adding these to a .env file in the root of the repo directory.  Note that TEST_ENV uses stable global data, markdown files, and search results for testing.  Therefore, for local development on the latest data, use USE_LOCAL_API=true and TEST_ENV=false.
 
 ```
-TEST_ENV=true
+TEST_ENV=false
+USE_LOCAL_API=true
 ETL_EXTRACT_DISK_DIRECTORY=/Users/user/source/
 ETL_EXTRACT_SOURCE_DIRECTORY=omb-fpi/data_processing/source/
 ETL_EXTRACT_EXTRACTED_DIRECTORY=omb-fpi/data_processing/extracted/
@@ -78,7 +79,7 @@ While this process may not appear optimal at face value, it is designed to: (1) 
 ### Additional data
 The FPI also uses additional data, which is sourced from several locations and should be refreshed on varying schedules. These include:
 1. [extracted/additional-programs.csv](extracted/additional-programs.csv): this contains additional programs beyond Assistance Listings, including Interest on the Public Debt ([source](https://www.usaspending.gov/explorer/), All Budget Functions > Net Interest > Interest on Treasury Debt Securities > Interest on the Public Debt > switch to table mode) and Tax Expenditures ([source](https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures), tab "Table 1 - Totals"); these should be refreshed at  annually (a manual process)
-2. [extracted/improper-payment-program-mapping.csv](extracted/improper-payment-program-mapping.csv): this contains a mapping between programs in the FPI and programs reported on [PaymentAccuracy.gov](https://paymentaccuracy.gov/), as reported by agencies via an OMB data call; this should be refreshed at least annually (a manual process)
+2. [extracted/improper-payment-program-mapping.csv](extracted/improper-payment-program-mapping.csv): this contains a mapping between programs in the FPI and programs reported on [PaymentAccuracy.gov](https://paymentaccuracy.gov/), as reported by agencies via an OMB data call; this should be refreshed at least annually
 3. The following are sent by the OMB team annually for taxonomy updates:
   1. [extracted/FPI_GWO_assignment.csv](extracted/FPI_GWO_assignment.csv)
   2. [extracted/FPI_PON_assignment.csv](extracted/FPI_PON_assignment.csv)

@@ -1,0 +1,80 @@
+---
+category: Employment and Labor
+definition: 'Expanding opportunities for volunteering and civic participation for
+  youth and adults to build skills and connect to career pathways. '
+focus_area: Workforce Development
+gwo_id: GWO.H5
+permalink: /gwo/GWO_H5
+title: Strengthen Service and Civic Engagement Workforce Pathways
+where_used:
+- agency: Corporation for National and Community Service
+  expenditure_amount: 9999965.0
+  name: AmeriCorps Commission Investment Fund 94.008
+  permalink: /program/94.008
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 1045040.0
+  name: AmeriCorps Martin Luther King Jr. Day of Service Grants 94.014
+  permalink: /program/94.014
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 50191648.0
+  name: AmeriCorps Seniors Retired and Senior Volunteer Program (RSVP) 94.002
+  permalink: /program/94.002
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 89725.0
+  name: AmeriCorps Seniors Senior Demonstration Program (FGP) 94.017
+  permalink: /program/94.017
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 5511325.0
+  name: AmeriCorps September 11th National Day of Service and Remembrance Grants 94.012
+  permalink: /program/94.012
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 19538000.0
+  name: AmeriCorps State Commissions Support Grant
+  permalink: /program/94.003
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 520294755.0
+  name: AmeriCorps State and National 94.006
+  permalink: /program/94.006
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 7745735.0
+  name: AmeriCorps Volunteer Generation Fund 94.021
+  permalink: /program/94.021
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
+  expenditure_amount: 0.0
+  name: AmeriCorps Volunteers In Service to America 94.013
+  permalink: /program/94.013
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 7646600.0
+  name: Children, Youth and Families At-Risk
+  permalink: /program/10.521
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 142894411.0
+  name: John H. Chafee Foster Care Program for Successful Transition to Adulthood
+  permalink: /program/93.674
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Rural Development Policy Public Service and Leadership Development Program
+  permalink: /program/10.996
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Student Internship Programs
+  permalink: /program/10.467
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: 'Youth Conservation '
+  permalink: /program/15.546
+  program_type: assistance_listing
+---
