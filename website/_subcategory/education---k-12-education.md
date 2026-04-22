@@ -1,27 +1,31 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":28,"total_obs":9245298279.0},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":89917905.0},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":30410154.0},{"title":"Department
-  of State","total_num_programs":1,"total_obs":10534578.0}]'
+agencies: '[{"title":"Department of Education","total_num_programs":32,"total_obs":7626388662.999999},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":326334495.49},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":156322480.23},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
-  of higher education and hospitals)","total_num_programs":15},{"title":"Public nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":10},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":9},{"title":"Other
-  public institution/organization","total_num_programs":9},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":6},{"title":"Profit organization","total_num_programs":5},{"title":"Other
-  private institutions/organizations","total_num_programs":4},{"title":"Small business
+  of higher education and hospitals)","total_num_programs":17},{"title":"Public nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":11},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Other
+  public institution/organization","total_num_programs":10},{"title":"Federally Recognized
+  Indian Tribal Governments","total_num_programs":6},{"title":"Profit organization","total_num_programs":6},{"title":"Other
+  private institutions/organizations","total_num_programs":5},{"title":"Small business
   (less than 500 employees)","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"For-Profit
-  Organization (Other than Small Business)","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Not-for-Profit
-  Organization","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"School
-  District","total_num_programs":1},{"title":"U.S. State Government (including the
-  District of Columbia)","total_num_programs":1},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":1}]'
+  organization","total_num_programs":3},{"title":"Minority group","total_num_programs":2},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"For-Profit Organization (Other than
+  Small Business)","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Nonprofit
+  Organization","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"U.S.
+  Federal Government","total_num_programs":1},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":1},{"title":"U.S. Territory (or
+  Possession) Government (including freely-associated states)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -58,11 +62,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -101,6 +100,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -224,66 +238,72 @@ parent_title: Education
 permalink: /category/education/k-12-education
 programs: '[{"cfda":"84.367","permalink":"/program/84.367","title":"Supporting Effective
   Instruction State Grants (formerly Improving Teacher Quality State Grants)","popular_name":null,"agency":"Department
-  of Education","total_obs":2190080000.0,"program_type":"assistance_listing"},{"cfda":"84.424","permalink":"/program/84.424","title":"Student
+  of Education","total_obs":2178383350.0,"program_type":"assistance_listing"},{"cfda":"84.424","permalink":"/program/84.424","title":"Student
   Support and Academic Enrichment Program","popular_name":"SSAE","agency":"Department
-  of Education","total_obs":1345638000.0,"program_type":"assistance_listing"},{"cfda":"84.287","permalink":"/program/84.287","title":"Twenty-First
+  of Education","total_obs":1362869271.78,"program_type":"assistance_listing"},{"cfda":"84.287","permalink":"/program/84.287","title":"Twenty-First
   Century Community Learning Centers","popular_name":null,"agency":"Department of
-  Education","total_obs":1329673000.0,"program_type":"assistance_listing"},{"cfda":"84.365","permalink":"/program/84.365","title":"English
-  Language Acquisition State Grants","popular_name":null,"agency":"Department of Education","total_obs":855476000.0,"program_type":"assistance_listing"},{"cfda":"84.215","permalink":"/program/84.215","title":"Innovative
+  Education","total_obs":1329652590.0,"program_type":"assistance_listing"},{"cfda":"84.365","permalink":"/program/84.365","title":"English
+  Language Acquisition State Grants","popular_name":null,"agency":"Department of Education","total_obs":824089792.42,"program_type":"assistance_listing"},{"cfda":"84.369","permalink":"/program/84.369","title":"Grants
+  for State Assessments and Related Activities","popular_name":null,"agency":"Department
+  of Education","total_obs":367254500.0,"program_type":"assistance_listing"},{"cfda":"84.011","permalink":"/program/84.011","title":"Migrant
+  Education State Grant Program","popular_name":null,"agency":"Department of Education","total_obs":365626000.0,"program_type":"assistance_listing"},{"cfda":"15.042","permalink":"/program/15.042","title":"Indian
+  School Equalization ","popular_name":"(ISEP)","agency":"Department of the Interior","total_obs":326189495.49,"program_type":"assistance_listing"},{"cfda":"84.358","permalink":"/program/84.358","title":"Rural
+  Education","popular_name":null,"agency":"Department of Education","total_obs":214744963.14,"program_type":"assistance_listing"},{"cfda":"84.411","permalink":"/program/84.411","title":"Education
+  Innovation and Research (formerly Investing in Innovation (i3) Fund)","popular_name":null,"agency":"Department
+  of Education","total_obs":211626742.0,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
+  Schools","popular_name":null,"agency":"Department of Education","total_obs":189062565.17,"program_type":"assistance_listing"},{"cfda":"12.404","permalink":"/program/12.404","title":"National
+  Guard ChalleNGe Program","popular_name":"National Guard Youth ChalleNGe Program","agency":"Department
+  of Defense","total_obs":146322480.23,"program_type":"assistance_listing"},{"cfda":"84.196","permalink":"/program/84.196","title":"Education
+  for Homeless Children and Youth","popular_name":null,"agency":"Department of Education","total_obs":134333169.54,"program_type":"assistance_listing"},{"cfda":"84.422","permalink":"/program/84.422","title":"American
+  History and Civics Education","popular_name":"American History and Civics Academies:  National
+  Activities Grants","agency":"Department of Education","total_obs":129578799.0,"program_type":"assistance_listing"},{"cfda":"84.403","permalink":"/program/84.403","title":"Consolidated
+  Grant to the Outlying Areas","popular_name":null,"agency":"Department of Education","total_obs":105679926.0,"program_type":"assistance_listing"},{"cfda":"84.299","permalink":"/program/84.299","title":"Indian
+  Education -- Special Programs for Indian Children","popular_name":null,"agency":"Department
+  of Education","total_obs":48566710.0,"program_type":"assistance_listing"},{"cfda":"84.013","permalink":"/program/84.013","title":"Title
+  I State Agency Program for Neglected and Delinquent Children and Youth","popular_name":null,"agency":"Department
+  of Education","total_obs":48008025.0,"program_type":"assistance_listing"},{"cfda":"84.215","permalink":"/program/84.215","title":"Innovative
   Approaches to Literacy; Promise Neighborhoods; Full-Service Community Schools; and
   Congressionally Directed Spending for Elementary and Secondary Education Community
   Projects","popular_name":"Innovative Approaches to Literacy; Promise Neighborhoods
-  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":548153113.0,"program_type":"assistance_listing"},{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining
-  Early Awareness and Readiness for Undergraduate Programs","popular_name":"(GEAR-UP)","agency":"Department
-  of Education","total_obs":388000000.0,"program_type":"assistance_listing"},{"cfda":"84.369","permalink":"/program/84.369","title":"Grants
-  for State Assessments and Related Activities","popular_name":null,"agency":"Department
-  of Education","total_obs":369100000.0,"program_type":"assistance_listing"},{"cfda":"84.011","permalink":"/program/84.011","title":"Migrant
-  Education State Grant Program","popular_name":null,"agency":"Department of Education","total_obs":365626000.0,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
-  Schools","popular_name":null,"agency":"Department of Education","total_obs":272668973.0,"program_type":"assistance_listing"},{"cfda":"84.411","permalink":"/program/84.411","title":"Education
-  Innovation and Research (formerly Investing in Innovation (i3) Fund)","popular_name":null,"agency":"Department
-  of Education","total_obs":251000000.0,"program_type":"assistance_listing"},{"cfda":"84.305","permalink":"/program/84.305","title":"Education
+  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":33178354.09,"program_type":"assistance_listing"},{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska
+  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":25731604.0,"program_type":"assistance_listing"},{"cfda":"84.351","permalink":"/program/84.351","title":"Arts
+  in Education","popular_name":null,"agency":"Department of Education","total_obs":16868285.0,"program_type":"assistance_listing"},{"cfda":"84.305","permalink":"/program/84.305","title":"Education
   Research, Development and Dissemination","popular_name":null,"agency":"Department
-  of Education","total_obs":225638000.0,"program_type":"assistance_listing"},{"cfda":"84.358","permalink":"/program/84.358","title":"Rural
-  Education","popular_name":null,"agency":"Department of Education","total_obs":215000000.0,"program_type":"assistance_listing"},{"cfda":"84.371","permalink":"/program/84.371","title":"Comprehensive
-  Literacy Development","popular_name":null,"agency":"Department of Education","total_obs":194000000.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
-  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":137610000.0,"program_type":"assistance_listing"},{"cfda":"84.196","permalink":"/program/84.196","title":"Education
-  for Homeless Children and Youth","popular_name":null,"agency":"Department of Education","total_obs":129000000.0,"program_type":"assistance_listing"},{"cfda":"15.042","permalink":"/program/15.042","title":"Indian
-  School Equalization ","popular_name":"(ISEP)","agency":"Department of the Interior","total_obs":89265805.0,"program_type":"assistance_listing"},{"cfda":"84.299","permalink":"/program/84.299","title":"Indian
-  Education -- Special Programs for Indian Children","popular_name":null,"agency":"Department
-  of Education","total_obs":72000000.0,"program_type":"assistance_listing"},{"cfda":"84.324","permalink":"/program/84.324","title":"Research
-  in Special Education","popular_name":null,"agency":"Department of Education","total_obs":64255000.0,"program_type":"assistance_listing"},{"cfda":"84.283","permalink":"/program/84.283","title":"Comprehensive
-  Centers","popular_name":null,"agency":"Department of Education","total_obs":50000000.0,"program_type":"assistance_listing"},{"cfda":"84.013","permalink":"/program/84.013","title":"Title
-  I State Agency Program for Neglected and Delinquent Children and Youth","popular_name":null,"agency":"Department
-  of Education","total_obs":49239000.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
-  Education Technical Assistance and Dissemination to Improve Services and Results
-  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":45345000.0,"program_type":"assistance_listing"},{"cfda":"84.372","permalink":"/program/84.372","title":"Statewide
-  Longitudinal Data Systems","popular_name":null,"agency":"Department of Education","total_obs":38500000.0,"program_type":"assistance_listing"},{"cfda":"84.141","permalink":"/program/84.141","title":"Migrant
-  Education High School Equivalency Program","popular_name":"(HEP)","agency":"Department
-  of Education","total_obs":32896193.0,"program_type":"assistance_listing"},{"cfda":"84.295","permalink":"/program/84.295","title":"Ready-To-Learn
-  Television","popular_name":null,"agency":"Department of Education","total_obs":31000000.0,"program_type":"assistance_listing"},{"cfda":"12.404","permalink":"/program/12.404","title":"National
-  Guard ChalleNGe Program","popular_name":"National Guard Youth ChalleNGe Program","agency":"Department
-  of Defense","total_obs":28340156.0,"program_type":"assistance_listing"},{"cfda":"84.368","permalink":"/program/84.368","title":"Competitive
-  Grants for State Assessments","popular_name":null,"agency":"Department of Education","total_obs":20900000.0,"program_type":"assistance_listing"},{"cfda":"84.206","permalink":"/program/84.206","title":"Javits
-  Gifted and Talented Students Education","popular_name":null,"agency":"Department
-  of Education","total_obs":16500000.0,"program_type":"assistance_listing"},{"cfda":"19.023","permalink":"/program/19.023","title":"Overseas
-  Schools Program","popular_name":null,"agency":"Department of State","total_obs":10534578.0,"program_type":"assistance_listing"},{"cfda":"84.429","permalink":"/program/84.429","title":"Education
-  Evaluation and Technical Assistance Grants","popular_name":null,"agency":"Department
-  of Education","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"84.144","permalink":"/program/84.144","title":"Migrant
-  Education Coordination Program","popular_name":null,"agency":"Department of Education","total_obs":3000000.0,"program_type":"assistance_listing"},{"cfda":"12.556","permalink":"/program/12.556","title":"Competitive
+  of Education","total_obs":11341949.93,"program_type":"assistance_listing"},{"cfda":"12.556","permalink":"/program/12.556","title":"Competitive
   Grants: Promoting K-12 Student Achievement at Military-Connected Schools","popular_name":"The
   Department of Defense Education Activity (DoDEA) Educational Partnership Grant Program.","agency":"Department
-  of Defense","total_obs":1999998.0,"program_type":"assistance_listing"},{"cfda":"15.149","permalink":"/program/15.149","title":"FOCUS
-  on Student Achievement ","popular_name":"FOCUS ","agency":"Department of the Interior","total_obs":652100.0,"program_type":"assistance_listing"},{"cfda":"12.558","permalink":"/program/12.558","title":"Department
+  of Defense","total_obs":10000000.0,"program_type":"assistance_listing"},{"cfda":"84.371","permalink":"/program/84.371","title":"Comprehensive
+  Literacy Development","popular_name":null,"agency":"Department of Education","total_obs":9582392.0,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
+  Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":5213940.0,"program_type":"assistance_listing"},{"cfda":"84.326","permalink":"/program/84.326","title":"Special
+  Education Technical Assistance and Dissemination to Improve Services and Results
+  for Children with Disabilities","popular_name":null,"agency":"Department of Education","total_obs":5066357.0,"program_type":"assistance_listing"},{"cfda":"84.144","permalink":"/program/84.144","title":"Migrant
+  Education Coordination Program","popular_name":null,"agency":"Department of Education","total_obs":2999989.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
+  of Education","total_obs":2684592.0,"program_type":"assistance_listing"},{"cfda":"84.324","permalink":"/program/84.324","title":"Research
+  in Special Education","popular_name":null,"agency":"Department of Education","total_obs":2529656.93,"program_type":"assistance_listing"},{"cfda":"84.362","permalink":"/program/84.362","title":"Native
+  Hawaiian Education","popular_name":null,"agency":"Department of Education","total_obs":1715139.0,"program_type":"assistance_listing"},{"cfda":"15.149","permalink":"/program/15.149","title":"FOCUS
+  on Student Achievement ","popular_name":"FOCUS ","agency":"Department of the Interior","total_obs":145000.0,"program_type":"assistance_listing"},{"cfda":"10.278","permalink":"/program/10.278","title":"Agriculture
+  in the K-12 Classroom","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.368","permalink":"/program/84.368","title":"Competitive
+  Grants for State Assessments","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.283","permalink":"/program/84.283","title":"Comprehensive
+  Centers","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.558","permalink":"/program/12.558","title":"Department
   of Defense Impact Aid (Supplement, CWSD, BRAC)","popular_name":"DoD Impact Aid Program","agency":"Department
-  of Defense","total_obs":70000.0,"program_type":"assistance_listing"},{"cfda":"84.403","permalink":"/program/84.403","title":"Consolidated
-  Grant to the Outlying Areas","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.151","permalink":"/program/15.151","title":"Education
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.151","permalink":"/program/15.151","title":"Education
   Enhancements ","popular_name":"BIE Reads!and Math Counts","agency":"Department of
-  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.161","permalink":"/program/15.161","title":"Native
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.429","permalink":"/program/84.429","title":"Education
+  Evaluation and Technical Assistance Grants","popular_name":null,"agency":"Department
+  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.206","permalink":"/program/84.206","title":"Javits
+  Gifted and Talented Students Education","popular_name":null,"agency":"Department
+  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.141","permalink":"/program/84.141","title":"Migrant
+  Education High School Equivalency Program","popular_name":"(HEP)","agency":"Department
+  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.161","permalink":"/program/15.161","title":"Native
   Language Immersion Grant","popular_name":"Native Language Immersion Grant","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.023","permalink":"/program/19.023","title":"Overseas
+  Schools Program","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.295","permalink":"/program/84.295","title":"Ready-To-Learn
+  Television","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.372","permalink":"/program/84.372","title":"Statewide
+  Longitudinal Data Systems","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: K–12 Education
-total_num_agencies: 4
-total_num_applicant_types: 32
-total_num_programs: 36
-total_obs: 9376160916.0
+total_num_agencies: 5
+total_num_applicant_types: 39
+total_num_programs: 41
+total_obs: 8109045638.719999
 ---

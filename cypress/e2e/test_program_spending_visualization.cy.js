@@ -5,6 +5,11 @@ describe('Program Overview Visualization', () => {
   const noChartSelector = '#no-spending-chart';
   const toggleSelector = '#projection-toggle input[type="checkbox"]';
 
+  // Set desktop viewport to avoid mobile CSS breakpoints
+  beforeEach(() => {
+    cy.viewport(1280, 720);
+  });
+
   // coordinates, find in browser by executing this in console:
   // document.addEventListener('mousemove', function(event) {
   //  console.log('Mouse position (viewport): ' + event.clientX + ', ' + event.clientY);
@@ -13,9 +18,9 @@ describe('Program Overview Visualization', () => {
   const originY = 0;
   const tooltipX1 = 200;
   const tooltipY1 = 600;
-  const tooltipX2 = 600;
+  const tooltipX2 = 746;
   const tooltipY2 = 600;
-  const tooltipX3 = 650;
+  const tooltipX3 = 803;
   const tooltipY3 = 600;
 
   // base case + inflation disabled by default + also tests:
@@ -133,6 +138,7 @@ describe('Program Overview Visualization', () => {
 
     // move near 2020 datapoint (has untested magnitudes)
     cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX3, clientY: tooltipY3 });
+    // Wait for tooltip to be populated with content before asserting
     cy.get(tooltipSelector).should('contain.text', 'Year');
     cy.get(tooltipSelector).should('contain.text', '2020');
     cy.get(tooltipSelector).should('contain.text', '$52M');

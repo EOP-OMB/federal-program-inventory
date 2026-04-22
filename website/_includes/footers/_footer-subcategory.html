@@ -284,9 +284,9 @@
                 ]
               };
               console.log(filters.category);
-              const encodedFilters = btoa(
+              const encodedFilters = btoa(encodeURIComponent(
                 JSON.stringify(compressFilters(filters))
-              );
+              ));
               window.location.href = `/search?f=${encodedFilters}`;
             });
           } else if (activeTable === "applicant") {
@@ -315,9 +315,9 @@
 
                 ]
               };
-              const encodedFilters = btoa(
+              const encodedFilters = btoa(encodeURIComponent(
                 JSON.stringify(compressFilters(filters))
-              );
+              ));
               window.location.href = `/search?f=${encodedFilters}`;
             });
           }
@@ -522,7 +522,7 @@
 
                 ]
         };
-        const encodedFilters = btoa(JSON.stringify(compressFilters(filters)));
+        const encodedFilters = btoa(encodeURIComponent(JSON.stringify(compressFilters(filters))));
         window.location.href = `/search?f=${encodedFilters}`;
       }
     });
@@ -556,7 +556,7 @@
 
                 ]
         };
-        const encodedFilters = btoa(JSON.stringify(compressFilters(filters)));
+        const encodedFilters = btoa(encodeURIComponent(JSON.stringify(compressFilters(filters))));
         window.location.href = `/search?f=${encodedFilters}`;
       }
     });

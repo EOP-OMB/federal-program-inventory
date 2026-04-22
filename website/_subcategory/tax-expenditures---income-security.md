@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":23,"total_obs":517900000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":23,"total_obs":518090000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -37,11 +37,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -80,6 +75,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -203,7 +213,7 @@ parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/income-security
 programs: '[{"cfda":"TC.150","permalink":"/program/TC.150","title":"Net exclusion
   of pension contributions and earnings: Defined contribution employer plans","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":152000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.142","permalink":"/program/TC.142","title":"Child
+  of the Treasury","total_obs":152190000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.142","permalink":"/program/TC.142","title":"Child
   credit","popular_name":null,"agency":"Department of the Treasury","total_obs":106340000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.163","permalink":"/program/TC.163","title":"Earned
   income tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":77390000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.149","permalink":"/program/TC.149","title":"Net
   exclusion of pension contributions and earnings: Defined benefit employer plans","popular_name":null,"agency":"Department
@@ -245,5 +255,5 @@ title: Income Security
 total_num_agencies: 1
 total_num_applicant_types: 0
 total_num_programs: 23
-total_obs: 517900000000.0
+total_obs: 518090000000.0
 ---

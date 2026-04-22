@@ -1,22 +1,24 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":55,"total_obs":146666363323.68},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":1095201973.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":48,"total_obs":136910305334.99},{"title":"Department
+  of Health and Human Services","total_num_programs":4,"total_obs":971899620.37},{"title":"Department
+  of Homeland Security","total_num_programs":1,"total_obs":117000000.0},{"title":"Department
+  of State","total_num_programs":1,"total_obs":63239170.72}]'
 applicant_types: '[{"title":"Department or Agency of a U.S. State Government","total_num_programs":23},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":19},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":17},{"title":"Nonprofit
-  Organization","total_num_programs":15},{"title":"Other","total_num_programs":15},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"U.S.
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":16},{"title":"Nonprofit
+  Organization","total_num_programs":15},{"title":"Other","total_num_programs":10},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":5},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":5},{"title":"State","total_num_programs":4},{"title":"For-Profit
   Organization","total_num_programs":3},{"title":"School District","total_num_programs":3},{"title":"U.S.
   Federal Government","total_num_programs":3},{"title":"Local","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"Foreign
-  Government","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Municipality
-  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":1},{"title":"Other Special Disctrict Government","total_num_programs":1},{"title":"Public
-  Housing Authority","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Tribally
-  Designated Housing Authority","total_num_programs":1},{"title":"Unrestricted by
-  Individual Type","total_num_programs":1}]'
+  Government","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"International
+  Organization","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -53,11 +55,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -96,6 +93,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -215,11 +227,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition Assistance","permalink":"/category/food-and-nutrition/food-and-nutrition-assistance","total_num_programs":58,"total_obs":147761565296.68}]'
+sub_cats: '[{"title":"Food and Nutrition Assistance","permalink":"/category/food-and-nutrition/food-and-nutrition-assistance","total_num_programs":54,"total_obs":138062444126.08002}]'
 title: Food and Nutrition
-total_num_agencies: 2
-total_num_applicant_types: 23
-total_num_programs: 58
+total_num_agencies: 4
+total_num_applicant_types: 25
+total_num_programs: 54
 total_num_sub_cats: 1
-total_obs: 147761565296.68
+total_obs: 138062444126.08002
 ---

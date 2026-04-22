@@ -13,23 +13,35 @@ fiscal_year: '2025'
 grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/N3
-improper_payments: null
-improper_payments_percent: 0
-improper_payments_total: 0
+  permalink: /gwo/GWO_N3
+headline_amount: 870000000.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Exclusion of public assistance benefits (normal tax method)
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
-last_completed_year_outlay: 0
 layout: program
 objective: Under the reference tax law baseline, gifts and transfers are not treated
   as income to the recipients. In contrast, the normal tax method considers cash transfers
   from the Government as part of the recipients’ income, and thus, treats the exclusion
   for public assistance benefits under current law as a tax expenditure.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":810000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":670000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":760000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":790000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":810000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":870000000.0}]'
 outlays: null
 permalink: /program/TC.146.html
 pons:
-- permalink: /pon/T91
+- permalink: /pon/PON_T91
   pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure

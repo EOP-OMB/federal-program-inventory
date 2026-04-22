@@ -42,6 +42,7 @@ services:
       dockerfile: Dockerfile
       args:
         TEST_ENV: ${TEST_ENV:-false}
+        USE_LOCAL_API: ${USE_LOCAL_API:-false}
     ports:
       - "8080:8080"         
     depends_on:

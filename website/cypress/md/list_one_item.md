@@ -1,7 +1,7 @@
 ---
 layout: default
 categories:
-  - M Housing
+  - Housing
 ---
 
 <div class="grid-container">

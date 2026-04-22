@@ -1,5 +1,6 @@
 """Creates markdown files for static site generation."""
 
+from datetime import datetime
 from pathlib import Path
 import sqlite3
 import os
@@ -35,31 +36,83 @@ WEBSITE_DATA_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "website", "_data"
 INFLATION_POPULATION_FILE_PATH = os.path.join(CURRENT_DIR, "extracted", "inflation_and_population_growth.csv")
 GLOBAL_DATA_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "global_data.yml")
 
-def calculate_improper_payment_metrics(improper_payments_array, outlays_array, last_completed_fiscal_year):
+def calculate_improper_payment_metrics(improper_payments_array):
     """
     Calculate improper payment metrics for display.
     
     Returns dict with raw numeric values
+    - is_multiple: contains multiple timeframes for the payment accuracy fiscal year
+    - current_year_details: improper payment details for the payment accuracy fiscal year
     - improper_payments_total: raw dollar amount
     - improper_payments_percent: percentage as number (e.g., 10.6)
-    - last_completed_year_outlay: raw dollar amount
+    - sparkline: series for ip rate line chart
     """
-    total_improper_payments = sum(item.get('improper_payments', 0) for item in improper_payments_array)
-    total_outlays = sum(item.get('outlays', 0) for item in improper_payments_array)
-    improper_payments_percent = ((total_improper_payments / total_outlays) * 100) if total_outlays > 0 else 0.0
+    rate_by_year = {}
+    current_year_timeframes_seen = set()
+    current_year_details = []
+    all_programs = {}
+    for ip_row in improper_payments_array:
+        all_programs[ip_row['name']] = {
+            'agency': ip_row['agency'],
+            'slug': ip_row['slug']
+        }
 
-    # Get last completed fiscal year outlay from outlays array
-    last_completed_year_outlay = 0
-    if outlays_array:
-        for item in outlays_array:
-            if item.get('x') == str(last_completed_fiscal_year):
-                last_completed_year_outlay = item.get('outlay', 0)
-                break
+    improper_payments_array_cy = [
+        ip_row for ip_row in improper_payments_array
+        if str(ip_row['fiscal_year']) == constants.PAYMENTACCURACY_FY_DATE
+    ]
+    improper_payments_array_cy_lookup = {ip_row['name']: ip_row for ip_row in improper_payments_array_cy}
+
+    for program_name in all_programs:
+        program = all_programs[program_name]
+        if program_name in improper_payments_array_cy_lookup:
+            ip_row = improper_payments_array_cy_lookup[program_name]
+            current_year_details.append(ip_row)
+            if 'outlays' in ip_row and ip_row['outlays'] is not None and ip_row['outlays'] != 0:
+                current_year_timeframes_seen.add(ip_row['start_date'] + '-' + ip_row['end_date'])
+        else:
+            current_year_details.append({
+                'name': program_name,
+                'outlays': None,
+                'improper_payments': None,
+                'insufficient_payment': None,
+                'start_date': None,
+                'end_date': None,
+                'fiscal_year': constants.PAYMENTACCURACY_FY_DATE,
+                'agency': program['agency'],
+                'slug': program['slug']
+            })
+
+    for ip_row in improper_payments_array:
+        ip = ip_row.get('improper_payments', 0.0)
+        outlays = ip_row.get('outlays', 0.0)
+        fiscal_year = str(ip_row['fiscal_year'])
+
+        if fiscal_year not in rate_by_year:
+            rate_by_year[fiscal_year] = {
+                'total_improper_payments': ip,
+                'total_outlays': outlays,
+                'improper_payments_percent': ((ip / outlays) * 100) if outlays > 0 else 0.0,
+                'fiscal_year': fiscal_year
+            }
+        else:
+            rate_by_year[fiscal_year]['total_improper_payments'] += ip
+            rate_by_year[fiscal_year]['total_outlays'] += outlays
+            if rate_by_year[fiscal_year]['total_outlays'] > 0:
+                rate_by_year[fiscal_year]['improper_payments_percent'] = 100 * rate_by_year[fiscal_year]['total_improper_payments'] / rate_by_year[fiscal_year]['total_outlays']
+            else:
+                rate_by_year[fiscal_year]['improper_payments_percent'] = 0.0
 
     return {
-        'improper_payments_total': round(total_improper_payments, 2),
-        'improper_payments_percent': round(improper_payments_percent, 1),
-        'last_completed_year_outlay': round(last_completed_year_outlay, 2)
+        # if more than one timeframe was seen, this will convolute the aggregate ip rate
+        'is_multiple': len(current_year_timeframes_seen) > 1,
+        'improper_payments_total': round(rate_by_year[constants.PAYMENTACCURACY_FY_DATE]['total_improper_payments'] if constants.PAYMENTACCURACY_FY_DATE in rate_by_year else 0, 2),
+        'improper_payments_percent': round(rate_by_year[constants.PAYMENTACCURACY_FY_DATE]['improper_payments_percent'] if constants.PAYMENTACCURACY_FY_DATE in rate_by_year else 0, 1),
+        'current_year_details': current_year_details,
+        'sparkline': list(map(lambda x: {
+            'x': x['fiscal_year'],
+            'rate': x['improper_payments_percent']
+        }, rate_by_year.values()))
     }
 
 def recreate_directory(directory_path):
@@ -67,206 +120,105 @@ def recreate_directory(directory_path):
         shutil.rmtree(directory_path)
     os.makedirs(directory_path)
 
-
+obligations_data = {}
 def get_assistance_program_obligations(cursor, program_id, fiscal_years):
-    """Get obligations data for specified fiscal years."""
-    obligations = []
-    for year in fiscal_years:
-        year_data = {
-            'x': year,
-            'sam_estimate' : 0.0,
-            'sam_actual': 0.0,
-            'usa_spending_actual': 0.0
-        }
-
-        # Check if we have actual data first
-        cursor.execute("""
-            SELECT SUM(amount) as actual_amount
-            FROM program_sam_spending
-            WHERE program_id = ?
-            AND fiscal_year = ?
-            AND is_actual = 1
-            GROUP BY fiscal_year
-        """, (program_id, year))
-
-        actual_row = cursor.fetchone()
-
-        if actual_row and actual_row['actual_amount']:
-            # If we have actual data, use that and ignore estimates
-            year_data['sam_actual'] = float(actual_row['actual_amount'])
-        else:
-            # Only if we don't have actual data, check for estimates.
-            # Regardless of whether the value is an actual (preferred) or
-            # estimate, the value is stored as "sam_actual" and presented on
-            # the frontend as just "SAM.gov"
-            cursor.execute("""
-                SELECT SUM(amount) as estimated_amount
-                FROM program_sam_spending
-                WHERE program_id = ?
-                AND fiscal_year = ?
-                AND is_actual = 0
-                GROUP BY fiscal_year
-            """, (program_id, year))
-
-            estimate_row = cursor.fetchone()
-            if estimate_row and estimate_row['estimated_amount']:
-                year_data['sam_actual'] = float(estimate_row['estimated_amount'])
-
-        # Get USA spending obligations for reference
-        cursor.execute("""
-            SELECT ROUND(SUM(obligations), 2) as total_obligations
-            FROM usaspending_assistance_obligation_aggregation
-            WHERE cfda_number = ? AND action_date_fiscal_year = ?
-            GROUP BY cfda_number, action_date_fiscal_year
-        """, (program_id, year))
-
-        usa_row = cursor.fetchone()
-        if usa_row and usa_row['total_obligations'] is not None:
-            year_data['usa_spending_actual'] = float(usa_row['total_obligations'])
-
-        obligations.append(year_data)
-
-    return obligations
-
-def get_obligations_from_sam(cursor, program_id, year):
-    obligations = 0
-
-    cursor.execute("""
-        SELECT SUM(amount) as actual_amount
-        FROM program_sam_spending
-        WHERE program_id = ?
-        AND fiscal_year = ?
-        AND is_actual = 1
-        GROUP BY fiscal_year
-    """, (program_id, year))
-
-    actual_row = cursor.fetchone()
-
-    if actual_row and actual_row['actual_amount'] != 0:
-        obligations = float(actual_row['actual_amount'])
-    else:
-        cursor.execute("""
-            SELECT SUM(amount) as estimated_amount
-            FROM program_sam_spending
-            WHERE program_id = ?
-            AND fiscal_year = ?
-            AND is_actual = 0
-            GROUP BY fiscal_year
-        """, (program_id, year))
-
-        estimated_row = cursor.fetchone()
-
-        if estimated_row and estimated_row['estimated_amount']:
-            obligations = float(estimated_row['estimated_amount'])
-
-    return obligations
-
-def get_other_program_obligations(cursor, program_id, fiscal_years, program_type):
-    """Get obligations data for other programs."""
-    other_program_obligations = []
-    for year in fiscal_years:
-        cursor.execute("""
-            SELECT fiscal_year, outlays, forgone_revenue, source
-            FROM other_program_spending
-            WHERE program_id = ? AND fiscal_year = ?
-        """, (program_id, year))
-
-        row = cursor.fetchone()
-        year_data = {
-            'x': year,
-            'outlays': float(row['outlays']) if row and row['outlays'] is not None else 0.0,
-        }
-
-        if program_type == "tax_expenditure":
-            year_data['forgone_revenue'] = float(row['forgone_revenue']) if row and row['forgone_revenue'] is not None else 0.0
-
-        other_program_obligations.append(year_data)
-
-    return other_program_obligations
-
-
-def get_outlays_data(cursor, program_id, program_type, fiscal_years):
-    """Get outlays data for specified fiscal years."""
-    outlays = []
-    for year in fiscal_years:
-        year_data = {
-            'x': year,
-            'outlay': 0.0,
-            'obligation': 0.0
-        }
-
-        # Get outlays data
+    """Get obligations data for specified fiscal years.
+    These fields are used on all-program-data.csv.  usa_spending_actual
+    groups by transaction date; whereas, obligations on other parts of the 
+    site group by initial award date."""
+    global obligations_data
+    if not obligations_data:
+        print('Caching obligations...')
         cursor.execute("""
             SELECT
-                ROUND(SUM(outlay), 2) as total_outlay,
-                ROUND(SUM(obligation), 2) as total_obligation
-            FROM usaspending_assistance_outlay_aggregation
-            WHERE cfda_number = ?
-            AND award_first_fiscal_year = ?
-            GROUP BY cfda_number, award_first_fiscal_year
-        """, (program_id, year))
+                id,
+                fiscal_year,
+                ROUND(COALESCE(sam_estimated_obligation, 0), 2) AS sam_estimate,
+                ROUND(COALESCE(sam_actual_obligation, 0), 2) AS sam_actual,
+                ROUND(COALESCE(usaspending_obligation_by_action_date, 0), 2) AS usa_spending_actual
+            FROM program_amounts_lookup
+        """)
+        for row in cursor.fetchall():
+            if row['id'] not in obligations_data:
+                obligations_data[row['id']] = {}
+            obligations_data[row['id']][row['fiscal_year']] = {
+                'x': row['fiscal_year'],
+                'sam_estimate': float(row['sam_estimate']),
+                'sam_actual': float(row['sam_actual']),
+                'usa_spending_actual': float(row['usa_spending_actual'])
+            }
+        print('Obligations cached.')
 
-        row = cursor.fetchone()
-        if row:
-            if row['total_outlay'] is not None:
-                year_data['outlay'] = float(row['total_outlay'])
-            if row['total_obligation'] is not None:
-                year_data['obligation'] = float(row['total_obligation'])
+    obligations = []
+    for year in fiscal_years:
+        obligations.append(obligations_data[program_id][year])
 
-        # use sam.gov for current year obligations for assistance listings
-        if year == constants.CURRENT_FISCAL_YEAR and program_type == 'assistance_listing':
-            year_data['obligation'] = get_obligations_from_sam(cursor, program_id, year)
+    return obligations
 
-        outlays.append(year_data)
+def get_other_program_amounts(cursor, program_id, fiscal_years):
+    """Get obligations data for other programs."""
+    return list(map(
+        lambda amount: {
+            'x': amount['x'],
+            'outlays': amount['outlay'],
+            'forgone_revenue': amount['forgone_revenue']
+        },
+        get_amounts(cursor, program_id, fiscal_years)
+    ))
+
+outlays_data = {}
+def get_amounts(cursor, program_id, fiscal_years):
+    """Get outlays data for specified fiscal years."""
+    global outlays_data
+    if not outlays_data:
+        print('Caching amounts...')
+        cursor.execute("""
+            SELECT
+                id,
+                fiscal_year,
+                ROUND(COALESCE(outlay, 0), 2) AS outlay,
+                ROUND(COALESCE(obligation, 0), 2) AS obligation,
+                ROUND(COALESCE(expenditure, 0), 2) AS expenditure,
+                ROUND(COALESCE(forgone_revenue, 0), 2) AS forgone_revenue
+            FROM program_amounts_lookup
+        """)
+        for row in cursor.fetchall():
+            if row['id'] not in outlays_data:
+                outlays_data[row['id']] = {}
+            outlays_data[row['id']][row['fiscal_year']] = {
+                'x': row['fiscal_year'],
+                'outlay': float(row['outlay']),
+                'obligation': float(row['obligation']),
+                'expenditure': float(row['expenditure']),
+                'forgone_revenue': float(row['forgone_revenue'])
+            }
+        print('Amounts cached.')
+
+    outlays = []
+    for year in fiscal_years:
+        outlays.append(outlays_data[program_id][year])
 
     return outlays
 
-def get_assistance_listing_obligations(cursor, program_ids, fiscal_year):
+def get_assistance_listing_expenditures(cursor, program_ids, fiscal_year):
     """Get total and per-program obligations for assistance listing programs."""
     if not program_ids:
         return {}, 0.0
-        
-    placeholders = ','.join('?' * len(program_ids))
-    params = [fiscal_year] + program_ids + [fiscal_year] + program_ids
-    
-    cursor.execute(f"""
-        SELECT program_id, COALESCE(SUM(amount), 0) as total_obs
-        FROM (
-            SELECT program_id, amount
-            FROM program_sam_spending
-            WHERE fiscal_year = ? 
-            AND program_id IN ({placeholders})
-            AND is_actual = 1
-            
-            UNION ALL
-            
-            SELECT p1.program_id, p1.amount
-            FROM program_sam_spending p1
-            WHERE fiscal_year = ?
-            AND program_id IN ({placeholders})
-            AND is_actual = 0
-            AND NOT EXISTS (
-                SELECT 1 
-                FROM program_sam_spending p2
-                WHERE p2.program_id = p1.program_id
-                AND p2.fiscal_year = p1.fiscal_year
-                AND p2.is_actual = 1
-            )
-        ) subquery
-        GROUP BY program_id
-    """, params)
     
     program_obligations = {}
     total_obligations = 0.0
-    
-    for row in cursor.fetchall():
-        amount = float(row['total_obs'])
-        program_obligations[row['program_id']] = amount
-        total_obligations += amount
+
+    for program_id in program_ids:
+        outlays = get_amounts(cursor, program_id, [fiscal_year])
+        if len(outlays) > 0:
+            # Use expenditure, because we may need to compare different program types
+            amount = float(outlays[0]['expenditure'])
+            program_obligations[program_id] = amount
+            total_obligations += amount
     
     return program_obligations, total_obligations
 
-def get_program_obligations_by_type(cursor, program_ids, fiscal_year):
+def get_program_expenditures_by_type(cursor, program_ids, fiscal_year):
     """Get obligations grouped by program type."""
     if not program_ids:
         return {}
@@ -290,19 +242,7 @@ def get_program_obligations_by_type(cursor, program_ids, fiscal_year):
     # Calculate obligations for each type
     results = {}
     for prog_type, type_program_ids in programs_by_type.items():
-        if prog_type == 'assistance_listing':
-            _, total = get_assistance_listing_obligations(cursor, type_program_ids, fiscal_year)
-        else:
-            # Logic for other program types remains unchanged
-            placeholders = ','.join('?' * len(type_program_ids))
-            cursor.execute(f"""
-                SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_obs 
-                FROM other_program_spending
-                WHERE fiscal_year = ?
-                AND program_id IN ({placeholders})
-            """, [fiscal_year] + type_program_ids)
-            total = float(cursor.fetchone()['total_obs'])
-            
+        _, total = get_assistance_listing_expenditures(cursor, type_program_ids, fiscal_year)
         results[prog_type] = total
     
     return results
@@ -349,22 +289,12 @@ def generate_agency_list(cursor: sqlite3.Cursor, program_ids: List[str], fiscal_
         total_obs = 0
         total_programs = len(programs['assistance_program']) + len(programs['other_program'])
 
-        # Get assistance program obligations
-        if programs['assistance_program']:
-            _, agency_total_obs = get_assistance_listing_obligations(cursor, programs['assistance_program'], fiscal_year)
-            total_obs += agency_total_obs
-
-        # Get other obligations
-        if programs['other_program']:
-            placeholders = ','.join('?' * len(programs['other_program']))
-            cursor.execute(f"""
-                SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_obs
-                FROM other_program_spending
-                WHERE fiscal_year = ?
-                AND program_id IN ({placeholders})
-            """, [fiscal_year] + programs['other_program'])
-
-            total_obs += float(cursor.fetchone()['total_obs'])
+        _, agency_total_obs = get_assistance_listing_expenditures(
+            cursor,
+            programs['assistance_program'] + programs['other_program'],
+            fiscal_year
+        )
+        total_obs += agency_total_obs
 
         agencies.append({
             'title': agency_name,
@@ -470,49 +400,74 @@ def get_categories_hierarchy(cursor: sqlite3.Cursor) -> List[Dict[str, Any]]:
 def get_improper_payment_info(cursor: sqlite3.Cursor, program_id: str) -> List[Dict[str, Any]]:
     """Get improper payment data for a program including related programs."""
     # Get all improper payment records this program is associated with
+    initial_year = int(constants.CURRENT_FISCAL_YEAR) - constants.SPENDING_CHART_YEAR_RANGE
     cursor.execute("""
         SELECT 
             improper_payment_program_name,
+            agency,
             outlays,
             improper_payment_amount as improper_payments,
+            fiscal_year,
+            start_date,
+            end_date,
             insufficient_documentation_amount as insufficient_payment,
-            high_priority_program as high_priority
+            slug
         FROM improper_payment_mapping
-        WHERE program_id = ?
-    """, (program_id,))
+        WHERE program_id = ? AND fiscal_year >= ?
+        ORDER BY improper_payment_program_name, fiscal_year
+    """, (program_id, initial_year))
     
     improper_payments = []
     
     for payment_row in cursor.fetchall():
         improper_name = payment_row['improper_payment_program_name']
-            
-        # Get related programs
-        cursor.execute("""
-            SELECT DISTINCT 
-                p.id,
-                p.name
-            FROM improper_payment_mapping ip
-            JOIN program p ON ip.program_id = p.id
-            WHERE ip.improper_payment_program_name = ?
-            AND p.id != ?
-        """, (improper_name, program_id))
         
-        related_programs = [{
-            'id': prog['id'],
-            'name': prog['name'],
-            'permalink': f"/program/{prog['id']}"
-        } for prog in cursor.fetchall()]
-        
+        input_date_format = "%Y-%m-%d"
+        output_date_format = "%m-%Y"
         improper_payments.append({
             'name': improper_name,
             'outlays': float(payment_row['outlays']) if payment_row['outlays'] else 0.0,
             'improper_payments': float(payment_row['improper_payments']) if payment_row['improper_payments'] else 0.0,
             'insufficient_payment': float(payment_row['insufficient_payment']) if payment_row['insufficient_payment'] else 0.0,
-            'high_priority': bool(payment_row['high_priority']),
-            'related_programs': related_programs
+            'start_date': datetime.strptime(payment_row['start_date'], input_date_format)
+                .strftime(output_date_format) if payment_row['start_date'] is not None else '',
+            'end_date': datetime.strptime(payment_row['end_date'], input_date_format)
+                .strftime(output_date_format) if payment_row['end_date'] is not None else '',
+            'fiscal_year': payment_row['fiscal_year'],
+            'agency': payment_row['agency'],
+            'slug': payment_row['slug']
         })
     
     return improper_payments
+
+def get_related_programs(cursor, improper_payment_data, program_id):
+    """Get related programs in the current fiscal year."""
+    related_programs = {}
+    program_names = set()
+
+    # get unique list of program names
+    for ip_row in improper_payment_data:
+        program_names.add(ip_row['name'])
+
+    for program_name in program_names:
+        cursor.execute("""
+                SELECT DISTINCT
+                    p.id,
+                    p.name
+                FROM improper_payment_mapping ip
+                JOIN program p ON ip.program_id = p.id
+                WHERE ip.improper_payment_program_name = ?
+                AND p.id != ?
+            """, (program_name, program_id))
+        for mapping_row in cursor.fetchall():
+            if mapping_row['id'] not in related_programs:
+                related_programs[mapping_row['id']] = {
+                    'id': mapping_row['id'],
+                    'name': mapping_row['name'],
+                    'permalink': f"/program/{mapping_row['id']}"
+                }
+
+    return sorted(list(related_programs.values()), key=lambda p: p['id'])
 
 def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for categories with obligations from both regular and other programs."""
@@ -542,29 +497,15 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
         if not programs:
             continue
 
-        # Split programs by type
-        assistance_program_ids = [p['id'] for p in programs if p['program_type'] == 'assistance_listing']
-        other_program_ids = [p['id'] for p in programs if p['program_type'] != 'assistance_listing']
+        program_ids = [p['id'] for p in programs]
 
         # Calculate total category obligations
         total_category_obs = 0
 
         # Get obligations for regular programs
-        if assistance_program_ids:
-            _, total_obs = get_assistance_listing_obligations(cursor, assistance_program_ids, fiscal_year)
+        if program_ids:
+            _, total_obs = get_assistance_listing_expenditures(cursor, program_ids, fiscal_year)
             total_category_obs += total_obs
-
-        # Get obligations for other programs
-        if other_program_ids:
-            placeholders = ','.join('?' * len(other_program_ids))
-            cursor.execute(f"""
-                SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_other_obligation
-                FROM other_program_spending
-                WHERE fiscal_year = ?
-                AND program_id IN ({placeholders})
-            """, [fiscal_year] + other_program_ids)
-
-            total_category_obs += float(cursor.fetchone()['total_other_obligation'])
 
         # Get subcategories with their stats
         cursor.execute("""
@@ -590,29 +531,15 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
 
             subcat_programs = cursor.fetchall()
 
-            # Split subcategory programs by type
-            sub_assistance_ids = [p['id'] for p in subcat_programs if p['program_type'] == 'assistance_listing']
-            sub_other_ids = [p['id'] for p in subcat_programs if p['program_type'] != 'assistance_listing']
+            sub_program_ids = [p['id'] for p in subcat_programs]
 
             # Calculate total obligations for subcategory
             subcat_total_obs = 0
             program_count = len(subcat_programs)
 
-            # Get regular program obligations
-            if sub_assistance_ids:
-                _, total_obs = get_assistance_listing_obligations(cursor, sub_assistance_ids, fiscal_year)
+            if sub_program_ids:
+                _, total_obs = get_assistance_listing_expenditures(cursor, sub_program_ids, fiscal_year)
                 subcat_total_obs += total_obs
-            # Get other obligations
-            if sub_other_ids:
-                placeholders = ','.join('?' * len(sub_other_ids))
-                cursor.execute(f"""
-                    SELECT COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_other_obligation
-                    FROM other_program_spending
-                    WHERE fiscal_year = ?
-                    AND program_id IN ({placeholders})
-                """, [fiscal_year] + sub_other_ids)
-
-                subcat_total_obs += float(cursor.fetchone()['total_other_obligation'])
 
             subcats.append({
                 'title': subcat['title'],
@@ -710,40 +637,19 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         if not programs:
             continue
 
-        # Split programs by type
-        assistance_program_ids = [p['id'] for p in programs if p['program_type'] == 'assistance_listing']
-        other_program_ids = [p['id'] for p in programs if p['program_type'] != 'assistance_listing']
+        program_ids = [p['id'] for p in programs]
 
         # Initialize total obligations
         total_subcategory_obs = 0.0
         program_obligations = {}
 
-        # Get obligations for regular programs
         program_obligations = {}
-        if assistance_program_ids:
-            program_obs, total_obs = get_assistance_listing_obligations(
-                cursor, assistance_program_ids, fiscal_year)
+        if program_ids:
+            program_obs, total_obs = get_assistance_listing_expenditures(
+                cursor, program_ids, fiscal_year)
             program_obligations.update(program_obs)
             total_subcategory_obs += total_obs
 
-        # Get obligations for other programs
-        if other_program_ids:
-            placeholders = ','.join('?' * len(other_program_ids))
-            cursor.execute(f"""
-                SELECT program_id,
-                    COALESCE(SUM(outlays), 0) + COALESCE(SUM(forgone_revenue), 0) as total_obs
-                FROM other_program_spending
-                WHERE fiscal_year = ?
-                AND program_id IN ({placeholders})
-                GROUP BY program_id
-            """, [fiscal_year] + other_program_ids)
-
-            for row in cursor.fetchall():
-                program_obligations[row['program_id']] = float(row['total_obs'])
-                total_subcategory_obs += float(row['total_obs'])
-
-        # Calculate subcategory totals
-        program_ids = [p['id'] for p in programs]
         cursor.execute("""
             SELECT
                 COUNT(DISTINCT ptl.program_id) as total_num_programs,
@@ -836,7 +742,7 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
         where_used = cursor.fetchall()
 
-        url_friendly_id = gwo['id'].replace('#','_')
+        url_friendly_id = gwo['id'].replace('#','_').replace('.','_')
 
         # Enhance where_used with agency and expenditure data
         where_used_enhanced = []
@@ -848,11 +754,11 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'program_type': p['program_type'] or ''
             }
 
-            # Get actual expenditure amount from obligations data
+            # Use expenditure, because we may need to compare different program types
             expenditure_amount = 0.0
-            spending = get_outlays_data(cursor, p['id'], p['program_type'], FISCAL_YEARS)
+            spending = get_amounts(cursor, p['id'], FISCAL_YEARS)
             if spending:
-                expenditure_amount = next((o.get('obligation', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
 
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
@@ -911,7 +817,7 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
         where_used = cursor.fetchall()
 
-        url_friendly_id = pon['id'].replace('#','_')
+        url_friendly_id = pon['id'].replace('#','_').replace('.','_')
 
         # Enhance where_used with agency and expenditure data
         where_used_enhanced = []
@@ -923,11 +829,11 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'program_type': p['program_type'] or ''
             }
 
-            # Get actual expenditure amount from obligations data
+            # Use expenditure, because we may need to compare different program types
             expenditure_amount = 0.0
-            spending = get_outlays_data(cursor, p['id'], p['program_type'], FISCAL_YEARS)
+            spending = get_amounts(cursor, p['id'], FISCAL_YEARS)
             if spending:
-                expenditure_amount = next((o.get('obligation', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
 
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
@@ -1019,16 +925,16 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         if program_type == 'assistance_listing':
             obligations = get_assistance_program_obligations(cursor, program['id'], fiscal_years)
             other_program_spending = None
-            outlays = get_outlays_data(cursor, program['id'], program_type, fiscal_years)
+            outlays = get_amounts(cursor, program['id'], fiscal_years)
         elif program_type == 'contracts' or program_type == 'government_service':
             obligations = None
             other_program_spending = None
-            outlays = get_outlays_data(cursor, program['id'], program_type, fiscal_years)
+            outlays = get_amounts(cursor, program['id'], fiscal_years)
         else:
             obligations = None
-            other_program_spending = get_other_program_obligations(cursor, program['id'], fiscal_years, program_type)
+            other_program_spending = get_other_program_amounts(cursor, program['id'], fiscal_years)
             outlays = None
-            
+
         # Get program results
         cursor.execute("""
             SELECT fiscal_year, result
@@ -1056,7 +962,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         gwo_row = cursor.fetchone()
         gwo = None
         if gwo_row is not None:
-            url_friendly_id = gwo_row['id'].replace('#','_')
+            url_friendly_id = gwo_row['id'].replace('#','_').replace('.','_')
             gwo = {
                 'gwo': gwo_row['gwo'],
                 'permalink': f"/gwo/{url_friendly_id}"
@@ -1071,7 +977,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         """, (program['id'],))
         pons = [{
             'pon': row['pon2'],
-            'permalink': f"/pon/{row['id'].replace('#','_')}"
+            'permalink': f"/pon/{row['id'].replace('#','_').replace('.','_')}"
         } for row in cursor.fetchall()]
 
         # Use sets to prevent duplicates when organizing categories
@@ -1097,15 +1003,31 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
                     program_categories['categories'][category_id] = cat['category_name']
 
         improper_payment_data = get_improper_payment_info(cursor, program['id'])
+        related_programs = get_related_programs(cursor, improper_payment_data, program['id'])
 
         # Calculate improper payment metrics
         improper_payment_metrics = {}
         if improper_payment_data and len(improper_payment_data) > 0:
             improper_payment_metrics = calculate_improper_payment_metrics(
-                improper_payment_data, 
-                outlays, 
-                constants.LAST_COMPLETED_FISCAL_YEAR
+                improper_payment_data
             )
+        else:
+            # Ensure default values when no improper payment data
+            improper_payment_metrics = {
+                'has_mappings': False,
+                'is_multiple': False,
+                'improper_payments_total': 0,
+                'improper_payments_percent': 0,
+                'current_year_details': [],
+                'sparkline': []
+            }
+
+        # Use expenditure, because we may need to compare different program types
+        headline_amount = get_expenditure_for_program(
+            outlays,
+            other_program_spending,
+            constants.CURRENT_FISCAL_YEAR
+        )
 
         # Create comprehensive program data
         program_data = {
@@ -1131,7 +1053,9 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'is_subpart_f': program['is_subpart_f'],
             'rules_regulations': program['rules_regulations'],
             'improper_payments': improper_payment_data,
+            'related_programs': related_programs,
             'improper_payment_metrics': improper_payment_metrics,
+            'headline_amount': round(headline_amount, 2),
             'gwo': gwo,
             'pons': pons
         }
@@ -1390,6 +1314,24 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
                     'title': row['sub_title']
                 })
 
+    # Get GWO (Government-wide Objectives) options
+    cursor.execute("""
+        SELECT DISTINCT gwo.gwo as title
+        FROM gwo
+        JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
+        ORDER BY gwo.gwo
+    """)
+    gwo_options = [{'title': row['title']} for row in cursor.fetchall()]
+
+    # Get PON (Program Outcomes) options
+    cursor.execute("""
+        SELECT DISTINCT pon.pon2 as title
+        FROM pon
+        JOIN program_to_pon ON pon.id = program_to_pon.pon_id
+        ORDER BY pon.pon2
+    """)
+    pon_options = [{'title': row['title']} for row in cursor.fetchall()]
+
     print("Completed shared data creation")
     
     return {
@@ -1398,7 +1340,9 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         'applicant_types': applicant_types,
         'assistance_types': assistance_types,
         'beneficiary_types': beneficiary_types,
-        'categories': sorted(categories, key=lambda x: x['title'])
+        'categories': sorted(categories, key=lambda x: x['title']),
+        'gwo_options': gwo_options,
+        'pon_options': pon_options
     }
 
 def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[str, Any]], fiscal_years: list[str]):
@@ -1430,10 +1374,13 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'authorizations': [{'text': auth['text'], 'url': auth['url']} for auth in program['authorizations']],
             'is_subpart_f': program['is_subpart_f'],
             'rules_regulations': program['rules_regulations'],
-            'improper_payments': json.dumps(program['improper_payments'], separators=(',', ':')) if program['improper_payments'] else None,
+            'improper_payments': program['improper_payment_metrics'].get('current_year_details', []),
             'improper_payments_total': program['improper_payment_metrics'].get('improper_payments_total', 0),
             'improper_payments_percent': program['improper_payment_metrics'].get('improper_payments_percent', 0),
-            'last_completed_year_outlay': program['improper_payment_metrics'].get('last_completed_year_outlay', 0),
+            'improper_payments_is_multiple': program['improper_payment_metrics'].get('is_multiple', False),
+            'improper_payments_sparkline': json.dumps(program['improper_payment_metrics'].get('sparkline', []), separators=(',', ':')),
+            'improper_payments_related_programs': program['related_programs'],
+            'headline_amount': program.get('headline_amount', 0),
             'gwo': program['gwo'],
             'pons': program['pons']
         }
@@ -1475,7 +1422,9 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         'applicant_types': shared_data['applicant_types'],
         'assistance_types': shared_data['assistance_types'],
         'beneficiary_types': shared_data['beneficiary_types'],
-        'categories': shared_data['categories']
+        'categories': shared_data['categories'],
+        'gwo_options': shared_data['gwo_options'],
+        'pon_options': shared_data['pon_options']
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1485,10 +1434,36 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         file.write('---\n')
     print("Successfully generated search page")
 
+def get_expenditure_for_program(outlays, other_program_spending, fiscal_year):
+    expenditures = 0
+    other_expenditures = 0
 
-def generate_home_page(output_path: str, shared_data: Dict[str, Any],
-                       fiscal_year: str):
-    """Generate the home page using pre-generated shared data."""
+    if outlays:
+        for item in outlays:
+            if item.get('x') == str(fiscal_year):
+                expenditures = item.get('expenditure', 0)
+                break
+    elif other_program_spending:
+        for item in other_program_spending:
+            if item.get('x') == str(fiscal_year):
+                other_expenditures = item.get('outlays', 0) + item.get('forgone_revenue', 0)
+                break
+
+    return expenditures + other_expenditures
+
+def generate_home_page(output_path: str, programs_data,
+                       shared_data: Dict[str, Any], fiscal_year: str):
+    """Generate the home page using pre-generated data."""
+    spending_total = sum(map(
+        lambda p: get_expenditure_for_program(
+            p['outlays'],
+            p['other_program_spending'],
+            fiscal_year
+        ), programs_data
+    ))
+
+    agencies_count = len(shared_data['cfo_agencies']) + len(shared_data['other_agencies'])
+
     page = {
         'title': 'Home',
         'layout': 'home',
@@ -1498,7 +1473,12 @@ def generate_home_page(output_path: str, shared_data: Dict[str, Any],
         'other_agencies': shared_data['other_agencies'],
         'applicant_types': shared_data['applicant_types'],
         'program_types': shared_data['assistance_types'],
-        'categories': shared_data['categories']
+        'categories': shared_data['categories'],
+        # spaces in number formatting force jekyll to treat comma formatted numbers as strings
+        'programs_count': f"{len(programs_data):,} ",
+        'spending_total': spending_total,
+        'agencies_count': f"{agencies_count:,} ",
+        'outcomes_count': f"{len(shared_data['pon_options']):,} "
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1514,33 +1494,11 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
     programs_json = []
 
     for program in programs_data:
-        # Calculate obligations based on program type
-        if program['program_type'] == 'assistance_listing':
-           # For assistance programs, use sam_actual
-            current_year_obligation = next(
-                (obl['sam_actual']
-                for obl in program['obligations'] 
-                if obl['x'] == fiscal_year), 
-                0
-            )
-        elif program["program_type"] == "contracts" or \
-            program["program_type"] == "government_service":
-                current_year_obligation = next(
-                    (obl['obligation']
-                    for obl in program['outlays']
-                    if obl['x'] == fiscal_year),
-                    0
-                )
-        else:         
-             # For other programs, sum outlays and forgone_revenue
-            current_year_part_obligation = next(
-                (tx for tx in program['other_program_spending'] if tx['x'] == fiscal_year),
-                {'outlays': 0, 'forgone_revenue': 0}
-            )
-            if program["program_type"] == "interest":
-                current_year_obligation = current_year_part_obligation['outlays']
-            else:
-                 current_year_obligation = current_year_part_obligation['outlays'] + current_year_part_obligation['forgone_revenue']
+        current_year_obligation = get_expenditure_for_program(
+            program['outlays'],
+            program['other_program_spending'],
+            fiscal_year
+        )
 
         unique_categories = set()
         categories_json = []
@@ -1563,8 +1521,8 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             'permalink': f"/program/{program['id']}",
             'obligations': float(current_year_obligation),
             'objectives': program['objective'],
-            'gwo': program['gwo']['gwo'] if program['gwo'] is not None else None,
-            'pons': ','.join([row['pon'] for row in program['pons']]),
+            'gwo': [program['gwo']['gwo']] if program['gwo'] is not None else [],
+            'pons': [row['pon'] for row in program['pons']],
             'popularName': program['popular_name'],
             'agency': {
                 'title': program['top_agency_name'] or 'Unspecified',
@@ -1609,7 +1567,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
     program_ids = [row['id'] for row in cursor.fetchall()]
 
     # Calculate obligations by program type using the utility function
-    obligations_result = get_program_obligations_by_type(cursor, program_ids, fiscal_year)
+    obligations_result = get_program_expenditures_by_type(cursor, program_ids, fiscal_year)
     obligations_by_type = []
     
     for prog_type, total_obs in obligations_result.items():
@@ -1642,7 +1600,7 @@ def generate_category_page(cursor: sqlite3.Cursor,
             program_ids = [p['id'] for p in programs]
             
             # Use the utility function to calculate obligations
-            obligations_result = get_program_obligations_by_type(cursor, program_ids, fiscal_year)
+            obligations_result = get_program_expenditures_by_type(cursor, program_ids, fiscal_year)
             total_cat_obs = sum(total_obs for total_obs in obligations_result.values())
 
             category_stats[category] = {
@@ -1801,18 +1759,18 @@ try:
     export_global_dates_to_yml()
 
     search_path = os.path.join('../website', 'pages', 'search.md')
-    generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+    generate_search_page(search_path, shared_data, constants.CURRENT_FISCAL_YEAR)
 
     category_path = os.path.join('../website', 'pages', 'category.md')
     generate_category_page(cursor, programs_data, category_path,
                            constants.LAST_COMPLETED_FISCAL_YEAR)
 
     home_path = os.path.join('../website', 'pages', 'home.md')
-    generate_home_page(home_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+    generate_home_page(home_path, programs_data, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     programs_json_path = os.path.join('../indexer', 'programs-table.json')
     generate_programs_table_json(programs_json_path, programs_data,
-                                 constants.LAST_COMPLETED_FISCAL_YEAR)
+                                 constants.CURRENT_FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')
     generate_category_markdown_files(cursor, category_dir, constants.LAST_COMPLETED_FISCAL_YEAR)

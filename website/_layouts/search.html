@@ -332,6 +332,116 @@ footer_include: _footer-search.html
                   {% endfor %}
                 </fieldset>
               </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Government-wide Objectives sub nav -->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="gwo-section"
+                data-content-id="gwo-section">
+                <span class="font-heading-sm text-ink line-height-body-3">Government-wide objectives</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Government-wide Objectives Content -->
+              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="gwo-section" hidden>
+                <div class="padding-x-2 padding-bottom-5">
+                  <label class="usa-sr-only" for="gwo-filter-search">Search objectives</label>
+                  <div class="position-relative">
+                    <input class="usa-input border-right-1px" id="gwo-filter-search" type="search" placeholder="Search objectives"
+                      autocomplete="off" />
+                  </div>
+                </div>
+                <fieldset class="usa-fieldset margin-0" id="gwo-fieldset">
+                  {% for a in page.gwo_options %}
+                  <div class="display-flex flex-align-start">
+                    <div class="padding-left-2">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-gwo-{{ forloop.index }}" type="checkbox" name="gwos"
+                        data-filter-type="gwo" data-gwo-title="{{ a.title }}" />
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
+                        for="check-gwo-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Program outcomes sub nav -->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="pons-section"
+                data-content-id="pons-section">
+                <span class="font-heading-sm text-ink line-height-body-3">Program outcomes</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Program Outcomes Content -->
+              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="pons-section" hidden>
+                <div class="padding-x-2 padding-bottom-5">
+                  <label class="usa-sr-only" for="pon-filter-search">Search outcomes</label>
+                  <div class="position-relative">
+                    <input class="usa-input border-right-1px" id="pon-filter-search" type="search" placeholder="Search outcomes"
+                      autocomplete="off" />
+                  </div>
+                </div>
+                <fieldset class="usa-fieldset margin-0" id="pons-fieldset">
+                  {% for a in page.pon_options %}
+                  <div class="display-flex flex-align-start">
+                    <div class="padding-left-2">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-pon-{{ forloop.index }}" type="checkbox" name="pons"
+                        data-filter-type="pon" data-pon-title="{{ a.title }}" />
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
+                        for="check-pon-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
               <div class="border-bottom border-base-lighter"></div>
             </li>
           </ul>
@@ -340,8 +450,6 @@ footer_include: _footer-search.html
     </div>
     <div class="desktop:grid-col-9">
       <div class="width-full text-primary font-heading-xl line-height-sans-2">Search for programs</div>
-      <div class="width-full text-ink font-heading-lg line-height-sans-3 padding-top-2">Programs listed here use data
-        pulled from SAM.gov, USASpending.gov, and Treasury.gov</div>
       <div class="width-full text-ink font-heading-sm text-bold padding-top-2">Search by program name, popular name,
         objectives, or outcomes</div>
 

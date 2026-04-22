@@ -28,7 +28,7 @@
         }
 
         const compressed = compressFilters(filters);
-        const encodedFilters = btoa(JSON.stringify(compressed));
+        const encodedFilters = btoa(encodeURIComponent(JSON.stringify(compressed)));
         window.location.href = `/search?f=${encodedFilters}`;
       });
     });

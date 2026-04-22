@@ -113,22 +113,10 @@ def create_index_with_mapping(index_name):
                     }
                 },
                 "gwo": {
-                    "type": "text",
-                    "analyzer": "english",  # Add stemming
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword"
-                        }
-                    }
+                    "type": "keyword"
                 },
                 "pons": {
-                    "type": "text",
-                    "analyzer": "english",  # Add stemming
-                    "fields": {
-                        "keyword": {
-                            "type": "keyword"
-                        }
-                    }
+                    "type": "keyword"
                 },
                 "popularName": {
                     "type": "text",

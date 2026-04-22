@@ -20,7 +20,7 @@
            {% elsif include.data_filter_type == 'applicant' %}
              data-applicant-title="{{ item }}"
            {% endif %}>
-        <svg class="usa-icon {% if include.icon_class %}{{ include.icon_class }}{% else %}flex-shrink-0 margin-right-1{% endif %}" {% if include.icon_style %}style="{{ include.icon_style }}"{% endif %} aria-hidden="true" focusable="false" role="img">
+        <svg class="usa-icon flex-shrink-0{% if include.icon_class %} {{ include.icon_class }}{% else %} margin-right-1{% endif %}" {% if include.icon_style %}style="{{ include.icon_style }}"{% endif %} aria-hidden="true" focusable="false" role="img">
           <use href="/assets/img/sprite.svg#{{ include.icon }}"></use>
         </svg>
         <span{% if include.span_class %} class="{{ include.span_class }}"{% endif %}>{{ item }}</span>

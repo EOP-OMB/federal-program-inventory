@@ -1,34 +1,40 @@
 const defaultConfig = {
-  svgMaxWidth: "600px", // font-size can start to dominate the rest of the page
-  margin: { top: 15, right: 25, bottom: 30, left: 25 },
-  viewBoxWidth: 1000,
-  viewBoxHeight: 500,
-  legendWidth: 185,
-  svgWidth: "100%",
   axisFontSize: "20px",
-  outlayFillColor: "#E4DBA9",
-  outlayFillStrokeWidth: "2.5px",
-  outlaysStrokeColor: "#A4995B",
-  outlaysStrokeWidth: 4,
-  outlaysPointRadius: 7,
-  obligationsStrokeColor: "#0A0A0A",
-  obligationsStrokeWidth: 4,
-  obligationsPointRadius: 7,
-  legendItemHeight: 30,
+  axisTickPadding: 20,
+  endLabelFontSize: "20px",
+  endLabelLineHeight: 20,
+  endLabelXPadding: -10,
+  endLabelYPadding: 10,
+  fontFamily: "Inter",
   legendInnerPadding: 15,
-  legendOuterLeftPadding: 10,
-  legendOutlineStrokeColor: "#D6D3D1",
-  legendOutlineStrokeWidth: 2,
+  legendItemHeight: 30,
+  legendItemLabelFontSize: "20px",
+  legendItemLabelPadding: 10,
   legendItemLineX1: 10,
   legendItemLineX2: 40,
-  legendItemStrokeWidth: 4,
   legendItemPointRadius: 7,
-  legendItemLabelPadding: 10,
-  legendItemLabelFontSize: "20px"
+  legendItemStrokeWidth: 4,
+  legendOuterLeftPadding: 70,
+  legendOutlineStrokeColor: "#cdcabd",
+  legendOutlineStrokeWidth: 2,
+  legendWidth: 250,
+  margin: { top: 45, right: 25, bottom: 40, left: 90 },
+  obligationsPointRadius: 7,
+  obligationsStrokeColor: "#0A0A0A",
+  obligationsStrokeWidth: 4,
+  outlayFillColor: "#d4af3766",
+  outlayFillStrokeWidth: "2.5px",
+  outlaysPointRadius: 7,
+  outlaysStrokeColor: "#AD854A",
+  outlaysStrokeWidth: 4,
+  svgMaxWidth: "600px", // font-size can start to dominate the rest of the page
+  svgWidth: "100%",
+  viewBoxHeight: 500,
+  viewBoxWidth: 1000
 }
 
 function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
-  const chartWidth = config.viewBoxWidth - config.margin.left - config.margin.right - config.legendWidth;
+  const chartWidth = config.viewBoxWidth - config.margin.left - config.margin.right - config.legendWidth - config.legendOuterLeftPadding;
   const chartHeight = config.viewBoxHeight - config.margin.top - config.margin.bottom;
   const showOutlaysDatapoint = data.outlays.length > 0;
   const showObligationsDatapoint = data.obligations.length === 1;
@@ -61,10 +67,13 @@ function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
   }
 
   _addXAxis(xScale, svg, chartHeight, config);
+  _addYAxis(yScale, svg, chartHeight, config);
 
   _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data);
 
   _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale);
+
+  _addEndValueLabels(svg, data, xScale, yScale, config);
 }
 
 function _tryParsingRawData(chartElement) {
@@ -158,7 +167,11 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
           .attr("cx", x)
           .attr("cy", y)
           .style("opacity", 1);
-        tooltipContent += `Outlays: ${formatDollarAmount(outlayPoint.value)}`;
+        let outlayLabel = "Outlays";
+        if (data.revenueLosses.length > 0) {
+          outlayLabel += " + Rev Losses";
+        }
+        tooltipContent += `${outlayLabel}: ${formatDollarAmount(outlayPoint.value)}`;
       } else {
         hoverCircleOutlays.style("opacity", 0);
       }
@@ -186,7 +199,12 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
   const legendItems = [];
 
   if (data.outlays.length > 0) {
-    legendItems.push({ label: "Outlays", color: config.outlaysStrokeColor, style: "solid", hasPoint: showOutlaysDatapoint, line: outlaysLine, point: outlaysPoint });
+    let outlaysLabel = "Outlays";
+    if (data.revenueLosses.length > 0) {
+      outlaysLabel += " + Rev Losses";
+    }
+
+    legendItems.push({ label: outlaysLabel, color: config.outlaysStrokeColor, style: "solid", hasPoint: showOutlaysDatapoint, line: outlaysLine, point: outlaysPoint });
   }
 
   if (data.obligations.length > 0) {
@@ -277,6 +295,9 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
           if (item.point) {
             item.point.raise();
           }
+
+          d3.selectAll(".x-axis").raise();
+          d3.selectAll(".y-axis").raise();
         }
       });
   });
@@ -316,6 +337,41 @@ function _addLines(svg, data, config, lineGenerator) {
   return { obligationsLine, outlaysLine };
 }
 
+function _addEndValueLabels(svg, data, xScale, yScale, config) {
+  const lastOutlaysPoint = data.outlays?.[data.outlays.length - 1];
+  const lastObligationsPoint = data.obligations?.[data.obligations.length - 1];
+
+  const labelDefs = [
+    lastOutlaysPoint
+      ? { point: lastOutlaysPoint, color: config.outlaysStrokeColor }
+      : null,
+    lastObligationsPoint
+      ? { point: lastObligationsPoint, color: config.obligationsStrokeColor }
+      : null,
+  ].filter(Boolean);
+
+  let lastLabelY = null;
+  labelDefs.forEach(({ point, color }) => {
+    let currentLabelY = yScale(point.value) - config.endLabelYPadding;
+    if (lastLabelY && Math.abs(lastLabelY - currentLabelY) < config.endLabelLineHeight) {
+      // shift label to avoid overlap
+      const direction = (lastLabelY >= currentLabelY ? -1 : 1);
+      currentLabelY = lastLabelY + direction * config.endLabelLineHeight;
+    }
+
+    svg.append("text")
+      .attr("x", xScale(point.year) - config.endLabelXPadding)
+      .attr("y", currentLabelY)
+      .attr("text-anchor", "start")
+      .attr("font-size", config.endLabelFontSize)
+      .attr("font-family", config.fontFamily)
+      .attr("fill", color)
+      .attr("pointer-events", "none")
+      .text(formatDollarAmount(point.value));
+    lastLabelY = currentLabelY;
+  });
+}
+
 function _addOutlaysFillArea(svg, data, config, outlayFillGenerator) {
   return svg.append("path")
     .datum(data.outlays)
@@ -328,26 +384,42 @@ function _addOutlaysFillArea(svg, data, config, outlayFillGenerator) {
 function _addXAxis(xScale, svg, chartHeight, config) {
   const xAxis = d3.axisBottom(xScale)
     .tickFormat((d, i, ticks) => { return d; })
-    .tickValues([xScale.domain()[0], xScale.domain()[1]]);
+    .tickValues([xScale.domain()[0], xScale.domain()[1]])
+    .tickPadding(config.axisTickPadding);
   svg.append("g")
     .attr("class", "x-axis")
     .attr("transform", `translate(0,${chartHeight})`)
     .call(xAxis)
     .selectAll("text")
     .style("font-size", config.axisFontSize)
-    .style("font-family", "Inter");
+    .style("font-family", config.fontFamily);
+}
+
+function _addYAxis(yScale, svg, chartHeight, config) {
+  const yAxis = d3.axisLeft(yScale)
+    .tickFormat((d, i, ticks) => { return formatDollarAmount(d); })
+    .tickValues([yScale.domain()[0], yScale.domain()[1]])
+    .tickPadding(config.axisTickPadding);
+  svg.append("g")
+    .attr("class", "y-axis")
+    .attr("transform", `translate(0,0)`)
+    .call(yAxis)
+    .selectAll("text")
+    .style("font-size", config.axisFontSize)
+    .style("font-family", config.fontFamily);
 }
 
 function _createScales(data, chartWidth, chartHeight) {
   const combinedSeries = [...data.outlays, ...data.obligations];
   const xScaleMin = Math.min(...combinedSeries.map(item => item.year));
   const xScaleMax = Math.max(...combinedSeries.map(item => item.year));
+  const yScaleMin = Math.min(...combinedSeries.map(item => item.value));
   const yScaleMax = Math.max(...combinedSeries.map(item => item.value));
   const xScale = d3.scaleLinear()
     .domain([xScaleMin, xScaleMax])
     .range([0, chartWidth]);
   const yScale = d3.scaleLinear()
-    .domain([0, yScaleMax])
+    .domain([Math.min(yScaleMin, 0), Math.max(yScaleMax, 0)])
     .range([chartHeight, 0]);
   return { xScale, yScale };
 }
@@ -368,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const noChartId = 'no-chart';
   const chartElement = document.getElementById(id);
   const rawData = _tryParsingRawData(chartElement);
-  const formattedData = standardizeOutlaysAndObligationsForD3(rawData);
+  const formattedData = standardizeDataForD3(rawData, true);
 
   if (formattedData.obligations.length > 0 || formattedData.outlays.length > 0) {
     createOutlaysVsSpendChart('#' + id, formattedData);

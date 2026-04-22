@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":6,"total_obs":463838653.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":6,"total_obs":915314961.0}]'
 applicant_types: '[{"title":"Veteran (including dependents)","total_num_programs":3},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Local","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":2},{"title":"U.S.
@@ -48,11 +48,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -91,6 +86,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -213,13 +223,13 @@ parent_permalink: /category/income-security-and-social-services
 parent_title: Income Security and Social Services
 permalink: /category/income-security-and-social-services/burial-benefits
 programs: '[{"cfda":"64.101","permalink":"/program/64.101","title":"Burial Expenses
-  Allowance for Veterans","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":385867000.0,"program_type":"assistance_listing"},{"cfda":"64.203","permalink":"/program/64.203","title":"Veterans
+  Allowance for Veterans","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":837329797.0,"program_type":"assistance_listing"},{"cfda":"64.203","permalink":"/program/64.203","title":"Veterans
   Cemetery Grants Program","popular_name":"VCGP (Authority: 38 U.S.C. 501, 2408)","agency":"Department
   of Veterans Affairs","total_obs":77113054.0,"program_type":"assistance_listing"},{"cfda":"64.206","permalink":"/program/64.206","title":"VA
   Outer Burial Receptacle Allowance Program","popular_name":"OBR","agency":"Department
-  of Veterans Affairs","total_obs":584952.0,"program_type":"assistance_listing"},{"cfda":"64.205","permalink":"/program/64.205","title":"VA
+  of Veterans Affairs","total_obs":486884.0,"program_type":"assistance_listing"},{"cfda":"64.205","permalink":"/program/64.205","title":"VA
   Casket or Urn Allowance Program","popular_name":"VA Casket or Urn Allowance Program","agency":"Department
-  of Veterans Affairs","total_obs":273647.0,"program_type":"assistance_listing"},{"cfda":"64.201","permalink":"/program/64.201","title":"National
+  of Veterans Affairs","total_obs":385226.0,"program_type":"assistance_listing"},{"cfda":"64.201","permalink":"/program/64.201","title":"National
   Cemeteries","popular_name":"National Cemetery Scheduling and Eligibility","agency":"Department
   of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.202","permalink":"/program/64.202","title":"Procurement
   of Headstones and Markers and/or Presidential Memorial Certificates","popular_name":"Memorial
@@ -228,5 +238,5 @@ title: Burial Benefits
 total_num_agencies: 1
 total_num_applicant_types: 15
 total_num_programs: 6
-total_obs: 463838653.0
+total_obs: 915314961.0
 ---

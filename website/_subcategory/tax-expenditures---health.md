@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":12,"total_obs":421410000000.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":11,"total_obs":421720000000.0}]'
 applicant_types: '[]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -37,11 +37,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -80,6 +75,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -203,7 +213,7 @@ parent_title: Tax Expenditures
 permalink: /category/tax-expenditures/health
 programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of employer
   contributions for medical insurance premiums and medical care","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":262000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
+  of the Treasury","total_obs":262310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
   Premium Assistance Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":104880000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.132","permalink":"/program/TC.132","title":"Medical
   Savings Accounts / Health Savings Accounts","popular_name":null,"agency":"Department
   of the Treasury","total_obs":14760000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
@@ -220,12 +230,10 @@ programs: '[{"cfda":"TC.130","permalink":"/program/TC.130","title":"Exclusion of
   Blue Cross/Blue Shield tax benefits","popular_name":null,"agency":"Department of
   the Treasury","total_obs":440000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Credit
   for employee health insurance expenses of small business","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.141","permalink":"/program/TC.141","title":"Credit
-  for family and sick leave taken by self-employed individuals","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"}]'
 title: Health
 total_num_agencies: 1
 total_num_applicant_types: 0
-total_num_programs: 12
-total_obs: 421410000000.0
+total_num_programs: 11
+total_obs: 421720000000.0
 ---

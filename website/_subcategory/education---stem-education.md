@@ -1,15 +1,15 @@
 ---
-agencies: '[{"title":"National Science Foundation","total_num_programs":1,"total_obs":1169550000.0},{"title":"Department
-  of Transportation","total_num_programs":5,"total_obs":89781002.0},{"title":"Department
-  of Agriculture","total_num_programs":10,"total_obs":45597689.34},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":23149984.0},{"title":"Department
-  of Commerce","total_num_programs":2,"total_obs":17166852.0},{"title":"Department
-  of Homeland Security","total_num_programs":1,"total_obs":5000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":160000.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":130715.0},{"title":"Nuclear Regulatory
-  Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Other","total_num_programs":11},{"title":"Nonprofit Organization","total_num_programs":6},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":6},{"title":"State","total_num_programs":5},{"title":"Federally
+agencies: '[{"title":"National Science Foundation","total_num_programs":1,"total_obs":685667862.0},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":89915465.59},{"title":"Department
+  of Agriculture","total_num_programs":8,"total_obs":40231603.93},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":21582021.58},{"title":"Department
+  of Commerce","total_num_programs":2,"total_obs":2023649.0},{"title":"Nuclear Regulatory
+  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of the
+  Interior","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
+  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Other","total_num_programs":10},{"title":"U.S. State
+  Government (including the District of Columbia)","total_num_programs":6},{"title":"Nonprofit
+  Organization","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":3},{"title":"Local","total_num_programs":3},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":3},{"title":"School District Government","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"For-Profit
@@ -73,11 +73,6 @@ categories_subcategories:
   - permalink: /category/cultural-affairs/cultural-institutions
     title: Cultural Institutions
   title: Cultural Affairs
-- permalink: /category/debt-service
-  subcategories:
-  - permalink: /category/debt-service/fees-and-receipts
-    title: Fees and Receipts
-  title: Debt Service
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -116,6 +111,21 @@ categories_subcategories:
   - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
     title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
   - permalink: /category/health/child-welfare
@@ -239,54 +249,50 @@ parent_title: Education
 permalink: /category/education/stem-education
 programs: '[{"cfda":"47.076","permalink":"/program/47.076","title":"STEM Education
   (formerly Education and Human Resources)","popular_name":"(EDU)","agency":"National
-  Science Foundation","total_obs":1169550000.0,"program_type":"assistance_listing"},{"cfda":"20.806","permalink":"/program/20.806","title":"State
+  Science Foundation","total_obs":685667862.0,"program_type":"assistance_listing"},{"cfda":"20.806","permalink":"/program/20.806","title":"State
   Maritime Schools","popular_name":"State Maritime Schools or Academies (SMA)","agency":"Department
-  of Transportation","total_obs":89700000.0,"program_type":"assistance_listing"},{"cfda":"10.309","permalink":"/program/10.309","title":"Specialty
-  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":27343657.42,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
+  of Transportation","total_obs":89915465.59,"program_type":"assistance_listing"},{"cfda":"10.309","permalink":"/program/10.309","title":"Specialty
+  Crop Research Initiative","popular_name":"(SCRI) ","agency":"Department of Agriculture","total_obs":25934198.94,"program_type":"assistance_listing"},{"cfda":"12.903","permalink":"/program/12.903","title":"GenCyber
+  Grants Program","popular_name":"GenCyber","agency":"Department of Defense","total_obs":12099993.13,"program_type":"assistance_listing"},{"cfda":"12.006","permalink":"/program/12.006","title":"National
   Defense Education Program","popular_name":"Science, Technology, Engineering and
   Mathematics (STEM) Education, Outreach, and Workforce Development Programs","agency":"Department
-  of Defense","total_obs":22981831.0,"program_type":"assistance_listing"},{"cfda":"11.481","permalink":"/program/11.481","title":"Educational
-  Partnership Program","popular_name":"Jos\u00e9 E. Serrano Educational Partnership
-  Program with Minority Serving Institutions (EPP/MSI)","agency":"Department of Commerce","total_obs":13183053.0,"program_type":"assistance_listing"},{"cfda":"10.222","permalink":"/program/10.222","title":"Tribal
+  of Defense","total_obs":9303735.45,"program_type":"assistance_listing"},{"cfda":"10.222","permalink":"/program/10.222","title":"Tribal
   Colleges Endowment Program","popular_name":"1994 Institutions Endowment Interest
-  Program","agency":"Department of Agriculture","total_obs":7577517.0,"program_type":"assistance_listing"},{"cfda":"10.221","permalink":"/program/10.221","title":"Tribal
+  Program","agency":"Department of Agriculture","total_obs":7577516.99,"program_type":"assistance_listing"},{"cfda":"10.219","permalink":"/program/10.219","title":"Biotechnology
+  Risk Assessment Research","popular_name":"(BRAG)","agency":"Department of Agriculture","total_obs":3612085.0,"program_type":"assistance_listing"},{"cfda":"10.227","permalink":"/program/10.227","title":"1994
+  Institutions Research Grants","popular_name":"Tribal Colleges Research Grants Program","agency":"Department
+  of Agriculture","total_obs":2307803.0,"program_type":"assistance_listing"},{"cfda":"11.008","permalink":"/program/11.008","title":"NOAA
+  Mission-Related Education Awards","popular_name":null,"agency":"Department of Commerce","total_obs":2023649.0,"program_type":"assistance_listing"},{"cfda":"10.318","permalink":"/program/10.318","title":"Women
+  and Minorities in Science, Technology, Engineering, and Mathematics Fields","popular_name":"WAMS","agency":"Department
+  of Agriculture","total_obs":800000.0,"program_type":"assistance_listing"},{"cfda":"12.901","permalink":"/program/12.901","title":"Mathematical
+  Sciences Grants","popular_name":"MSP","agency":"Department of Defense","total_obs":178293.0,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
+  Building for Non-Land Grant Colleges of Agriculture (NLGCA)","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.481","permalink":"/program/11.481","title":"Educational
+  Partnership Program","popular_name":"Jos\u00e9 E. Serrano Educational Partnership
+  Program with Minority Serving Institutions (EPP/MSI)","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.293","permalink":"/program/20.293","title":"Garrett
+  A. Morgan Technology and Transportation Education Program (GAMTTEP)","popular_name":null,"agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.295","permalink":"/program/20.295","title":"Highway
+  Training & Education Research Fellowships 504(c)","popular_name":"Dwight David Eisenhower
+  Transportation Fellowship Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.223","permalink":"/program/10.223","title":"Hispanic
+  Serving Institutions Education Grants","popular_name":"HSI Grants","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.261","permalink":"/program/20.261","title":"National
+  Summer Transportation Institute Grants (NSTI)","popular_name":null,"agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.012","permalink":"/program/15.012","title":"Outdoor
+  Schools in National Parks","popular_name":"Outdoor Schools In National Parks","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.062","permalink":"/program/97.062","title":"Scientific
+  Leadership Awards","popular_name":null,"agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.102","permalink":"/program/81.102","title":"Student
+  Driven Research and Long Term Monitoring of Selected Populations in the Valley and
+  Ridge Eco-region","popular_name":"ORS - CRESO","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.221","permalink":"/program/10.221","title":"Tribal
   Colleges Education Equity Grants","popular_name":"Higher Education Native American
   Formula and/or Higher Education Native American Institutions","agency":"Department
-  of Agriculture","total_obs":5146006.26,"program_type":"assistance_listing"},{"cfda":"97.062","permalink":"/program/97.062","title":"Scientific
-  Leadership Awards","popular_name":null,"agency":"Department of Homeland Security","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"11.008","permalink":"/program/11.008","title":"NOAA
-  Mission-Related Education Awards","popular_name":null,"agency":"Department of Commerce","total_obs":3983799.0,"program_type":"assistance_listing"},{"cfda":"10.227","permalink":"/program/10.227","title":"1994
-  Institutions Research Grants","popular_name":"Tribal Colleges Research Grants Program","agency":"Department
-  of Agriculture","total_obs":2318141.04,"program_type":"assistance_listing"},{"cfda":"10.225","permalink":"/program/10.225","title":"Community
-  Food Projects","popular_name":"Community Food Projects Competitive Grant Program","agency":"Department
-  of Agriculture","total_obs":2304956.32,"program_type":"assistance_listing"},{"cfda":"10.318","permalink":"/program/10.318","title":"Women
-  and Minorities in Science, Technology, Engineering, and Mathematics Fields","popular_name":"WAMS","agency":"Department
-  of Agriculture","total_obs":1825187.0,"program_type":"assistance_listing"},{"cfda":"12.901","permalink":"/program/12.901","title":"Mathematical
-  Sciences Grants","popular_name":"MSP","agency":"Department of Defense","total_obs":168153.0,"program_type":"assistance_listing"},{"cfda":"15.012","permalink":"/program/15.012","title":"Outdoor
-  Schools in National Parks","popular_name":"Outdoor Schools In National Parks","agency":"Department
-  of the Interior","total_obs":160000.0,"program_type":"assistance_listing"},{"cfda":"81.102","permalink":"/program/81.102","title":"Student
-  Driven Research and Long Term Monitoring of Selected Populations in the Valley and
-  Ridge Eco-region","popular_name":"ORS - CRESO","agency":"Department of Energy","total_obs":130715.0,"program_type":"assistance_listing"},{"cfda":"20.807","permalink":"/program/20.807","title":"U.S.
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.807","permalink":"/program/20.807","title":"U.S.
   Merchant Marine Academy","popular_name":"USMMA Kings Point, New York","agency":"Department
-  of Transportation","total_obs":81006.0,"program_type":"assistance_listing"},{"cfda":"10.229","permalink":"/program/10.229","title":"Extension
-  Collaborative on Immunization Teaching & Engagement","popular_name":"EXCITE","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.293","permalink":"/program/20.293","title":"Garrett
-  A. Morgan Technology and Transportation Education Program (GAMTTEP)","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.903","permalink":"/program/12.903","title":"GenCyber
-  Grants Program","popular_name":"GenCyber","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"77.007","permalink":"/program/77.007","title":"U.S.
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"77.007","permalink":"/program/77.007","title":"U.S.
   Nuclear Regulatory Commission Minority Serving Institutions Program (MSIP)","popular_name":"NRC
-  Minority Serving Institutions Program","agency":"Nuclear Regulatory Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.295","permalink":"/program/20.295","title":"Highway
-  Training & Education Research Fellowships 504(c)","popular_name":"Dwight David Eisenhower
-  Transportation Fellowship Program","agency":"Department of Transportation","total_obs":-2.0,"program_type":"assistance_listing"},{"cfda":"20.261","permalink":"/program/20.261","title":"National
-  Summer Transportation Institute Grants (NSTI)","popular_name":null,"agency":"Department
-  of Transportation","total_obs":-2.0,"program_type":"assistance_listing"},{"cfda":"10.219","permalink":"/program/10.219","title":"Biotechnology
-  Risk Assessment Research","popular_name":"(BRAG)","agency":"Department of Agriculture","total_obs":-165831.85,"program_type":"assistance_listing"},{"cfda":"10.223","permalink":"/program/10.223","title":"Hispanic
-  Serving Institutions Education Grants","popular_name":"HSI Grants","agency":"Department
-  of Agriculture","total_obs":-245119.85,"program_type":"assistance_listing"},{"cfda":"10.326","permalink":"/program/10.326","title":"Capacity
-  Building for Non-Land Grant Colleges of Agriculture (NLGCA)","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":-506824.0,"program_type":"assistance_listing"}]'
+  Minority Serving Institutions Program","agency":"Nuclear Regulatory Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: STEM Education
 total_num_agencies: 9
 total_num_applicant_types: 42
-total_num_programs: 25
-total_obs: 1350536242.34
+total_num_programs: 23
+total_obs: 839420602.1
 ---

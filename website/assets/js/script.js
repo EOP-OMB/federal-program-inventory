@@ -83,7 +83,8 @@ function createBarChart(data, {
   xAxisFormatter = (d) => d3.format(",")(d),
   onClickHandler = null,
   maxWidth = 180,
-  yAxisFontSize = "11px"
+  yAxisFontSize = "11px",
+  barColor = '#314964'
 }) {
   // Clear existing chart
   d3.select(container).selectAll("*").remove();
@@ -230,8 +231,8 @@ function createBarChart(data, {
     .attr("x", d => d.value < 0 ? x(0) - Math.abs(x(d.value) - x(0)) : x(0))
     .attr("width", d => Math.abs(x(d.value) - x(0)))
     .attr("fill", d => d.value < 0 ? 
-      d3.color("rgb(17, 93, 115)") :
-      "rgb(17, 93, 115)");
+      d3.color(barColor) :
+      barColor);
 
   // Tooltips
   const tooltip = d3.select("body")
@@ -254,8 +255,8 @@ function createBarChart(data, {
     
     const bar = d3.select(event.currentTarget).select(".bar");
     bar.attr("fill", d.value < 0 ? 
-      d3.color("rgb(17, 93, 115)").darker(0.2) : 
-      d3.color("rgb(17, 93, 115)").darker(0.2));
+      d3.color(barColor).darker(0.2) :
+      d3.color(barColor).darker(0.2));
   })
   .on("mouseout", (event, d) => {
     tooltip.transition()
@@ -264,8 +265,8 @@ function createBarChart(data, {
     
     const bar = d3.select(event.currentTarget).select(".bar");
     bar.attr("fill", d.value < 0 ? 
-      "rgb(17, 93, 115)" : 
-      "rgb(17, 93, 115)");
+      barColor :
+      barColor);
   });
 }
 

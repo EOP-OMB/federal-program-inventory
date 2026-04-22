@@ -10,6 +10,8 @@
   let selectedCategorySubcategory = [];
   let selectedAssistanceTypes = [];
   let selectedApplicantTypes = [];
+  let selectedGwo = [];
+  let selectedPons = [];
 
   // Initialize programs data
   let programs = [];
@@ -27,6 +29,8 @@
     categories: [],
     assistanceTypes: [],
     applicantTypes: [],
+    gwo: [],
+    pons: [],
   };
 
   // Sort field mapping
@@ -44,11 +48,17 @@
       categories: [...selectedCategorySubcategory],
       assistanceTypes: [...selectedAssistanceTypes],
       applicantTypes: [...selectedApplicantTypes],
+      gwo: [...selectedGwo],
+      pons: [...selectedPons],
     };
   }
 
   function initializePaginationHandlers() {
     const paginationList = document.querySelector(".usa-pagination__list");
+    
+    if (!paginationList) {
+      return;
+    }
 
     paginationList.addEventListener("click", async (event) => {
       event.preventDefault();
@@ -174,6 +184,8 @@
       categories: selectedCategorySubcategory,
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
+      gwo: selectedGwo,
+      pons: selectedPons,
     };
 
     if (currentState.query !== initialFilterState.query) return true;
@@ -194,7 +206,9 @@
       !arraysEqual(
         currentState.applicantTypes,
         initialFilterState.applicantTypes
-      )
+      ) ||
+      !arraysEqual(currentState.gwo, initialFilterState.gwo) ||
+      !arraysEqual(currentState.pons, initialFilterState.pons)
     );
   }
 
@@ -332,6 +346,8 @@
       category: [],
       assistance: [],
       applicant: [],
+      gwo: [],
+      pon: [],
     };
 
     // Process agency filters
@@ -414,6 +430,26 @@
         });
       });
 
+    // Process GWO filters
+    document
+      .querySelectorAll('input[data-filter-type="gwo"]:checked')
+      .forEach((checkbox) => {
+        filters.gwo.push({
+          type: "gwo",
+          title: checkbox.getAttribute("data-gwo-title"),
+        });
+      });
+
+    // Process PON filters
+    document
+      .querySelectorAll('input[data-filter-type="pon"]:checked')
+      .forEach((checkbox) => {
+        filters.pon.push({
+          type: "pon",
+          title: checkbox.getAttribute("data-pon-title"),
+        });
+      });
+
     return filters;
   }
 
@@ -438,7 +474,7 @@
     const compressed = compressFilters(filters);
 
     if (Object.keys(compressed).some((k) => compressed[k].length > 0)) {
-      params.set("f", btoa(JSON.stringify(compressed)));
+      params.set("f", btoa(encodeURIComponent(JSON.stringify(compressed))));
     }
 
     // Update URL without reloading page
@@ -472,12 +508,14 @@
     selectedCategorySubcategory = [];
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
+    selectedGwo = [];
+    selectedPons = [];
 
     // Decode and process filters
     try {
       const encodedFilters = params.get("f");
       if (encodedFilters) {
-        const decodedData = JSON.parse(atob(encodedFilters));
+        const decodedData = JSON.parse(decodeURIComponent(atob(encodedFilters)));
         const mapping = decodedData.codes || {};
 
         // Process agencies
@@ -573,6 +611,38 @@
             }
           });
         }
+
+        // Process GWO
+        if (decodedData.gwo && Array.isArray(decodedData.gwo)) {
+          decodedData.gwo.forEach((code) => {
+            const gwoTitle = mapping[code];
+            if (gwoTitle) {
+              selectedGwo.push(gwoTitle);
+              const checkbox = document.querySelector(
+                `input[data-filter-type="gwo"][data-gwo-title="${gwoTitle}"]`
+              );
+              if (checkbox) {
+                checkbox.checked = true;
+              }
+            }
+          });
+        }
+
+        // Process PON
+        if (decodedData.pon && Array.isArray(decodedData.pon)) {
+          decodedData.pon.forEach((code) => {
+            const ponTitle = mapping[code];
+            if (ponTitle) {
+              selectedPons.push(ponTitle);
+              const checkbox = document.querySelector(
+                `input[data-filter-type="pon"][data-pon-title="${ponTitle}"]`
+              );
+              if (checkbox) {
+                checkbox.checked = true;
+              }
+            }
+          });
+        }
       }
     } catch (e) {
       console.error("Error decoding filters:", e);
@@ -648,6 +718,10 @@
   function updateSortButtons() {
     const expenditureButton = document.getElementById('expenditureSort');
     const programNameButton = document.getElementById('programNameSort');
+
+    if (!expenditureButton || !programNameButton) {
+      return;
+    }
 
     const isExpenditure = currentSort.field === 'obligations';
     expenditureButton.classList.toggle('usa-button--outline', !isExpenditure);
@@ -857,6 +931,10 @@
 
   function initializePaginationHandlers() {
     const paginationList = document.querySelector(".usa-pagination__list");
+    
+    if (!paginationList) {
+      return;
+    }
 
     paginationList.addEventListener("click", (event) => {
       event.preventDefault();
@@ -1028,6 +1106,7 @@
   }
 
   async function fetchProgramsData(keyword = currentQuery) {
+    console.log("DEBUG: fetchProgramsData called with keyword:", keyword);
     const requestBody = {
       query: keyword || "",
       page: currentPage,
@@ -1038,7 +1117,10 @@
       categorySubcategory: selectedCategorySubcategory,
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
+      gwo: selectedGwo,
+      pons: selectedPons,
     };
+console.log("DEBUG: Sending request body:", requestBody);
 
     try {
       const response = await fetch(`${apiBaseUrl}/api/search/programsTable`, {
@@ -1076,16 +1158,6 @@
       console.error("Error fetching programs:", error);
       return { programs: [], count: 0, total_obligations: 0 };
     }
-  }
-
-  // Add event listeners for filters
-  const filterInputs = document
-    .getElementById("search-filters")
-    .getElementsByTagName("input");
-  for (let input of filterInputs) {
-    input.addEventListener("change", (event) => {
-      input.addEventListener("change", handleFilterChange);
-    });
   }
 
   function handleFilterChange(event) {
@@ -1289,6 +1361,28 @@
             );
           }
           break;
+
+        case "gwo":
+          const gwoTitle = input.getAttribute("data-gwo-title");
+          if (isChecked) {
+            selectedGwo.push(gwoTitle);
+          } else {
+            selectedGwo = selectedGwo.filter(
+              (item) => item !== gwoTitle
+            );
+          }
+          break;
+
+        case "pon":
+          const ponTitle = input.getAttribute("data-pon-title");
+          if (isChecked) {
+            selectedPons.push(ponTitle);
+          } else {
+            selectedPons = selectedPons.filter(
+              (item) => item !== ponTitle
+            );
+          }
+          break;
       }
     }
 
@@ -1388,6 +1482,10 @@
   const expenditureButton = document.getElementById('expenditureSort');
   const programNameButton = document.getElementById('programNameSort');
 
+  if (!expenditureButton || !programNameButton) {
+    return;
+  }
+
   // Set initial state - expenditure sort is default
   expenditureButton.classList.remove('usa-button--outline');
   programNameButton.classList.add('usa-button--outline');
@@ -1448,6 +1546,8 @@
     selectedCategorySubcategory = [];
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
+    selectedGwo = [];
+    selectedPons = [];
 
     // Reset current query
     currentQuery = "";
@@ -1591,9 +1691,46 @@
           count > 0 ? `${baseText} (${count})` : baseText;
       }
     }
+
+    // Update Government-wide Objectives count
+    const gwoButton = document.querySelector(
+      '[data-content-id="gwo-section"]'
+    );
+    if (gwoButton) {
+      const gwoChecks = document.querySelectorAll(
+        'input[data-filter-type="gwo"]:checked'
+      );
+      const count = gwoChecks.length;
+
+      const spanElement = gwoButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Government-wide objectives";
+        spanElement.textContent =
+          count > 0 ? `${baseText} (${count})` : baseText;
+      }
+    }
+
+    // Update Program Outcomes count
+    const ponButton = document.querySelector(
+      '[data-content-id="pons-section"]'
+    );
+    if (ponButton) {
+      const ponChecks = document.querySelectorAll(
+        'input[data-filter-type="pon"]:checked'
+      );
+      const count = ponChecks.length;
+
+      const spanElement = ponButton.querySelector("span");
+      if (spanElement) {
+        const baseText = "Program outcomes";
+        spanElement.textContent =
+          count > 0 ? `${baseText} (${count})` : baseText;
+      }
+    }
   }
 
   document.addEventListener("DOMContentLoaded", async function () {
+    console.log("DEBUG: DOMContentLoaded event fired");
     initializeCaretToggles();
     initializeToggles();
     initializeCheckboxSync();
@@ -1614,13 +1751,76 @@
 
     // Initial load
     try {
+      console.log("DEBUG: Starting initial load");
       // Decode filters and fetch data
       captureInitialState();
       decodeFiltersFromUrl();
       await fetchProgramsData();
+      console.log("DEBUG: Initial load complete");
       updateClearFilterButton();
     } catch (error) {
-      console.error("Error during initialization:", error);
+      console.error("DEBUG: Error during initialization:", error);
     }
   });
+
+  // search box for search filters
+  (function () {
+    const DEBOUNCE_MS = 500;
+
+    function normalize(s) {
+      return (s || "").trim().toLowerCase();
+    }
+
+    function initOutcomeSearchFilter(searchInputId, fieldsetId) {
+      const input = document.getElementById(searchInputId);
+      const fieldset = document.getElementById(fieldsetId);
+
+      if (!input || !fieldset) return;
+
+      let debounceHandle = null;
+
+      function applyFilter() {
+        const query = normalize(input.value);
+        const rows = fieldset.querySelectorAll(".display-flex");
+
+        rows.forEach((row) => {
+          const label = row.querySelector("label");
+          const labelText = normalize(label ? label.textContent : "");
+          const matches = query.length === 0 || labelText.includes(query);
+          if (matches) {
+            row.classList.remove('hide');
+          } else {
+            row.classList.add('hide');
+          }
+        });
+      }
+
+      function scheduleApplyFilter() {
+        window.clearTimeout(debounceHandle);
+        debounceHandle = window.setTimeout(applyFilter, DEBOUNCE_MS);
+      }
+
+      input.addEventListener("input", () => {
+        scheduleApplyFilter();
+      });
+
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") e.preventDefault();
+      });
+
+      // If options are repopulated dynamically, re-apply current filter.
+      const observer = new MutationObserver(() => {
+        window.clearTimeout(debounceHandle);
+        applyFilter();
+      });
+      observer.observe(fieldset, { childList: true, subtree: true });
+
+      applyFilter();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initOutcomeSearchFilter("pon-filter-search", "pons-fieldset");
+      initOutcomeSearchFilter("gwo-filter-search", "gwo-fieldset");
+    });
+  })();
 </script>

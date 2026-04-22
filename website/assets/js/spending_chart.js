@@ -18,14 +18,19 @@ const spendingChartDefaultConfig = {
   margin: { top: 30, right: 40, bottom: 40, left: 70 },
   obligationLineColor: "#0A0A0A",
   obligationLineWidth: 3,
-  outlayBarColor: "#E4DBA9",
-  outlayBarFinalColor: "#E4DBA9",
-  outlayBarFinalFill: "url(#diagonal-stripe)",
+  outlayBarColor: "#d4af37cc",
+  outlayBarFinalColor: "#d4af37cc",
+  outlayBarFinalFill: "url(#outlays-diagonal-stripe)",
   projectedLineColor: "#0A0A0A",
   projectedLineDashArray: "8,8",
-  projectedLineWidth: 2,
+  projectedLineWidth: 4,
   projectionLegendEntry: 'projection-legend-entry',
   projectionLegendEntryHeading: 'projection-legend-entry-heading',
+  revenueLossBarColor: "#b3c1c8",
+  revenueLossBarFinalColor: "#b3c1c8",
+  revenueLossBarFinalFill: "url(#rev-losses-diagonal-stripe)",
+  revenueLossLegendEntry: 'revenue-loss-legend-entry',
+  revenueLossLegendEntryCurrentYear: 'revenue-loss-legend-entry-cy',
   svgMaxWidth: "1600px",
   svgWidth: "100%",
   tickMarkLabelX: -10,
@@ -57,11 +62,12 @@ function createSpendingChart(containerId, data, config = spendingChartDefaultCon
   const { xScale, yScale } = _createSpendingScales(data, chartWidth, chartHeight, config);
 
   _addOutlayBars(svg, data.outlays, xScale, yScale, config);
+  _addRevenueLossBars(svg, data.revenueLosses, data.outlays, xScale, yScale, config);
 
   _addSpendingYAxis(svg, yScale, chartHeight, config);
   _addSpendingXAxis(svg, xScale, yScale, chartHeight, config);
 
-  _addBarLabels(svg, data.outlays, data.obligations, xScale, yScale, config);
+  _addBarLabels(svg, data.barLabels, data.obligations, xScale, yScale, config);
 
   _addObligationLines(svg, data.obligations, xScale, yScale, config);
 
@@ -85,31 +91,46 @@ function _createSpendingSvg(containerId, config) {
 
   const defs = svg.append("defs");
 
-  const diagonalPattern = defs.append("pattern")
-    .attr("id", "diagonal-stripe")
-    .attr("patternUnits", "userSpaceOnUse")
-    .attr("width", config.diagonalPatternSquareSide)
-    .attr("height", config.diagonalPatternSquareSide)
-
-  diagonalPattern.append("rect")
-    .attr("width", config.diagonalPatternSquareSide)
-    .attr("height", config.diagonalPatternSquareSide)
-    .attr("fill", config.outlayBarFinalColor);
-
-  diagonalPattern.append("path")
-    .attr("d", "M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2") // Stripe shape
-    .attr("stroke", config.diagonalStrokeColor)
-    .attr("stroke-width", config.diagonalStrokeWidth);
+  addDiagonalPattern("outlays-diagonal-stripe", config.outlayBarFinalColor);
+  addDiagonalPattern("rev-losses-diagonal-stripe", config.revenueLossBarFinalColor);
 
   return svg;
+
+  function addDiagonalPattern(id, fillColor) {
+    const diagonalPattern = defs.append("pattern")
+      .attr("id", id)
+      .attr("patternUnits", "userSpaceOnUse")
+      .attr("width", config.diagonalPatternSquareSide)
+      .attr("height", config.diagonalPatternSquareSide);
+
+    diagonalPattern.append("rect")
+      .attr("width", config.diagonalPatternSquareSide)
+      .attr("height", config.diagonalPatternSquareSide)
+      .attr("fill", fillColor);
+
+    diagonalPattern.append("path")
+      .attr("d", "M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2") // Stripe shape
+      .attr("stroke", config.diagonalStrokeColor)
+      .attr("stroke-width", config.diagonalStrokeWidth);
+  }
+}
+
+function _valueOrZero(value) {
+  return value === null || value === undefined ? 0 : value;
 }
 
 function _createSpendingScales(data, chartWidth, chartHeight, config) {
   const years = data.outlays.map(d => d.year);
-  
+
+  const revenueLossLookup = new Map(data.revenueLosses.map(d => [d.year, _valueOrZero(d.value)]));
+
+  const stackedOutlayTotals = data.outlays.map(d => _valueOrZero(d.value) + _valueOrZero(revenueLossLookup.get(d.year)));
+
   const allValues = [
-    ...data.outlays.map(d => d.value),
-    ...data.obligations.map(d => d.value),
+    ...data.outlays.map(d => _valueOrZero(d.value)),
+    ...data.revenueLosses.map(d => _valueOrZero(d.value)),
+    ...stackedOutlayTotals,
+    ...data.obligations.map(d => _valueOrZero(d.value)),
     ...data.projectedOutlays.filter(d => d.value !== null).map(d => d.value)
   ];
   
@@ -244,9 +265,38 @@ function _addOutlayBars(svg, outlays, xScale, yScale, config) {
     .attr("fill", (d, i) => i === outlays.length - 1 ? config.outlayBarFinalFill : config.outlayBarColor);
 }
 
-function _addBarLabels(svg, outlays, obligations, xScale, yScale, config) {
+function _addRevenueLossBars(svg, revenueLosses, outlays, xScale, yScale, config) {
+  if (!Array.isArray(revenueLosses) || revenueLosses.filter(p => p.value !== 0).length === 0) {
+    document.getElementById(config.revenueLossLegendEntry).classList.add('hide');
+    document.getElementById(config.revenueLossLegendEntryCurrentYear).classList.add('hide');
+    return;
+  }
+
+  const outlayLookup = new Map((outlays || []).map(d => [d.year, _valueOrZero(d.value)]));
+
+  svg.selectAll(".revenue-loss-bar")
+    .data(revenueLosses)
+    .enter()
+    .append("rect")
+    .attr("class", "revenue-loss-bar")
+    .attr("x", d => xScale(d.year))
+    .attr("y", (d) => {
+      const base = _valueOrZero(outlayLookup.get(d.year));
+      const total = base + _valueOrZero(d.value);
+      return yScale(Math.max(base, total));
+    })
+    .attr("width", xScale.bandwidth())
+    .attr("height", (d) => {
+      const base = _valueOrZero(outlayLookup.get(d.year));
+      const total = base + _valueOrZero(d.value);
+      return Math.abs(yScale(base) - yScale(total));
+    })
+    .attr("fill", (d, i) => i === revenueLosses.length - 1 ? config.revenueLossBarFinalFill : config.revenueLossBarColor);
+}
+
+function _addBarLabels(svg, outlaysAndRevenueLosses, obligations, xScale, yScale, config) {
   svg.selectAll(".bar-label")
-    .data(outlays)
+    .data(outlaysAndRevenueLosses)
     .enter()
     .append("text")
     .attr("class", "bar-label")
@@ -257,7 +307,7 @@ function _addBarLabels(svg, outlays, obligations, xScale, yScale, config) {
     .attr("text-anchor", config.labelTextAnchor)
     .style("font-size", config.labelFontSize)
     .style("font-family", config.axisFont)
-    .style("fill", (d, i) => i === outlays.length - 1 ? config.labelFinalColor : config.labelColor)
+    .style("fill", (d, i) => i === outlaysAndRevenueLosses.length - 1 ? config.labelFinalColor : config.labelColor)
     // hide labels for small or covered bars
     .style("opacity", (d, i) => {
       const noOutlays = d.value === null || d.value === 0;
@@ -362,6 +412,8 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
       const outlayPoint = data.outlays.find(d => d.year === nearestYear);
       const obligationPoint = data.obligations.find(d => d.year === nearestYear);
       const projectedPoint = data.projectedOutlays.find(d => d.year === nearestYear && d.value !== null);
+      const revenueLossPoint = data.revenueLosses.find(d => d.year === nearestYear && d.value !== null);
+      const hasRevenueLosses = data.revenueLosses.filter(d => d.value !== null && d.value !== 0).length > 0;
 
       const x = xScale(nearestYear) + xScale.bandwidth() / 2;
 
@@ -376,6 +428,10 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
 
       if (outlayPoint) {
         tooltipContent += `Outlays: ${formatDollarAmount(outlayPoint.value)}<br/>`;
+      }
+
+      if (hasRevenueLosses && revenueLossPoint) {
+        tooltipContent += `Revenue Losses: ${formatDollarAmount(revenueLossPoint.value)}<br/>`;
       }
 
       if (obligationPoint) {
@@ -420,8 +476,13 @@ function prepareData(chartElement, spendingData, currentYear, initialYear, basel
     spendingData.obligations = [];
   }
 
+  if (!Array.isArray(spendingData.revenueLosses)) {
+    spendingData.revenueLosses = [];
+  }
+
   const originalBaseline = spendingData.outlays.find(d => d.year === baselineInflationYear && d.value !== null && d.value > 0);
   spendingData.projectedOutlays = [];
+  spendingData.barLabels = [];
 
   if (inflationData && originalBaseline !== undefined) {
     const inflationDataLookup = inflationData.reduce((accumulator, item) => {
@@ -459,13 +520,29 @@ function prepareData(chartElement, spendingData, currentYear, initialYear, basel
         value: 0
       })
     }
+
+    if (spendingData.revenueLosses.filter(d => d.year === year).length === 0) {
+      spendingData.revenueLosses.push({
+        year: year,
+        value: 0
+      })
+    }
   }
 
   spendingData.obligations = spendingData.obligations.filter(d => d.year >= initialYear && d.year <= currentYear);
   spendingData.outlays = spendingData.outlays.filter(d => d.year >= initialYear && d.year <= currentYear);
+  spendingData.revenueLosses = spendingData.revenueLosses.filter(d => d.year >= initialYear && d.year <= currentYear);
 
   spendingData.obligations.sort((a,b) => a.year - b.year);
   spendingData.outlays.sort((a,b) => a.year - b.year);
+  spendingData.revenueLosses.sort((a,b) => a.year - b.year);
+
+  for (let i = 0; i < spendingData.outlays.length; ++i) {
+    spendingData.barLabels.push({
+      year: spendingData.outlays[i].year,
+      value: spendingData.outlays[i].value + spendingData.revenueLosses[i].value
+    })
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -475,14 +552,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const toggleId = 'projection-toggle';
   const chartElement = document.getElementById(chartId);
   const rawData = _tryParsingRawData(chartElement);
-  const spendingData = standardizeOutlaysAndObligationsForD3(rawData);
+  const spendingData = standardizeDataForD3(rawData, false);
 
   const hasOutlays = spendingData && spendingData.outlays &&
     spendingData.outlays.filter(d => d.value !== null && d.value !== 0).length > 0;
   const hasObligations = spendingData && spendingData.obligations &&
     spendingData.obligations.filter(d => d.value !== null && d.value !== 0).length > 0;
+  const hasRevenueLosses = spendingData && spendingData.revenueLosses &&
+    spendingData.revenueLosses.filter(d => d.value !== null && d.value !== 0).length > 0;
 
-  if ((hasOutlays || hasObligations) && chartElement) {
+  if ((hasOutlays || hasObligations || hasRevenueLosses) && chartElement) {
     const currentYear = parseInt(chartElement.getAttribute('data-current-year'), 10);
     const initialYear = parseInt(chartElement.getAttribute('data-initial-year'), 10);
     const baselineInflationYear = parseInt(chartElement.getAttribute('data-baseline-inflation-year'), 10);
