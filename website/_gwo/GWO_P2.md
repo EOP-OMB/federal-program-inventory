@@ -33,6 +33,11 @@ where_used:
   name: Corrections Training and Staff Development
   permalink: /program/16.601
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: County of Nye, Nye County Sheriff’s Office Law Enforcement Services
+  permalink: /program/81.260
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Criminal Justice Systems
@@ -68,6 +73,11 @@ where_used:
   name: Fiscal Year 2025 Detention Support Grant Program
   permalink: /program/97.158
   program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 625000000.0
+  name: Fédération Internationale de Football Association World Cup Grant Program
+  permalink: /program/97.160
+  program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
   name: Harold Rogers Prescription Drug Monitoring Program
@@ -97,13 +107,29 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: Law Enforcement Assistance FBI Advanced Police Training
+  permalink: /program/16.300
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: Law Enforcement Assistance FBI Field Police Training
   permalink: /program/16.302
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 10000000.0
+  name: Law Enforcement Mental Health and Wellness Act
+  permalink: /program/16.070
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
   name: Law Enforcement Support of Pantex Plant
   permalink: /program/81.279
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Matthew Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and
+    Prosecution Program
+  permalink: /program/16.040
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -119,6 +145,11 @@ where_used:
   expenditure_amount: 0.0
   name: NICS Act Record Improvement Program
   permalink: /program/16.813
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Center on Restorative Justice
+  permalink: /program/16.030
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -145,6 +176,11 @@ where_used:
   expenditure_amount: 0.0
   name: State and Local Anti-Terrorism Training
   permalink: /program/16.614
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Support for Adam Walsh Act Implementation Grant Program
+  permalink: /program/16.750
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0

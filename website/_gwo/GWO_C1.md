@@ -7,11 +7,6 @@ gwo_id: GWO.C1
 permalink: /gwo/GWO_C1
 title: Strengthen Community and Regional Development
 where_used:
-- agency: Small Business Administration
-  expenditure_amount: 0.0
-  name: 8(a) Business Development Program
-  permalink: /program/59.006
-  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 134000000.0
   name: Abandoned Mine Land Economic Revitalization (AMLER) Program
@@ -110,14 +105,14 @@ where_used:
   permalink: /program/21.014
   program_type: assistance_listing
 - agency: Department of the Treasury
+  expenditure_amount: 213175000.0
+  name: Community Development Financial Institutions Program
+  permalink: /program/21.020
+  program_type: assistance_listing
+- agency: Department of the Treasury
   expenditure_amount: 5200000.0
   name: Community Development Financial Institutions Program Loan
   permalink: /program/21.035
-  program_type: assistance_listing
-- agency: National Credit Union Administration
-  expenditure_amount: 0.0
-  name: Community Development Revolving Loan Fund Program for Credit Unions
-  permalink: /program/44.002
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 2500000.0
@@ -135,15 +130,25 @@ where_used:
   name: Community Services Block Grant
   permalink: /program/93.569
   program_type: assistance_listing
-- agency: Small Business Administration
+- agency: Department of Health and Human Services
+  expenditure_amount: 29800829.0
+  name: Community Services Block Grant Discretionary Awards
+  permalink: /program/93.570
+  program_type: assistance_listing
+- agency: Delta Regional Authority
   expenditure_amount: 0.0
-  name: Congressional Grants
-  permalink: /program/59.059
+  name: Delta Regional Authority
+  permalink: /program/90.200
   program_type: assistance_listing
 - agency: Denali Commission
   expenditure_amount: 0.0
   name: Denali Commission Program
   permalink: /program/90.003
+  program_type: assistance_listing
+- agency: Denali Commission
+  expenditure_amount: 0.0
+  name: Denali Commission Program
+  permalink: /program/90.100
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 128000000.0
@@ -181,11 +186,6 @@ where_used:
   name: Forest Service 638 Authority for Tribes
   permalink: /program/10.711
   program_type: assistance_listing
-- agency: Small Business Administration
-  expenditure_amount: 0.0
-  name: HUBZone Program
-  permalink: /program/59.055
-  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Human Health and Soil Health Study
@@ -201,15 +201,15 @@ where_used:
   name: Indian Economic Development
   permalink: /program/15.032
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 100000000.0
+  name: Investments for Public Works and Economic Development Facilities
+  permalink: /program/11.300
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Native American Business Development Institute
   permalink: /program/15.133
-  program_type: assistance_listing
-- agency: Small Business Administration
-  expenditure_amount: 0.0
-  name: Native American Outreach
-  permalink: /program/59.052
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 29539807.0
@@ -267,10 +267,20 @@ where_used:
   name: Payments for Essential Air Services
   permalink: /program/20.901
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Payments for Small Community Air Service Development
+  permalink: /program/20.930
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Policy Research and Evaluation Grants
   permalink: /program/93.239
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Reconnecting Communities Pilot (RCP) Discretionary Grant Program
+  permalink: /program/20.940
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 2000000.0
@@ -297,6 +307,11 @@ where_used:
   expenditure_amount: 5000000.0
   name: Rural Community Development Initiative
   permalink: /program/10.446
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Rural Housing and Economic Development
+  permalink: /program/14.250
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 27200000.0
@@ -333,6 +348,12 @@ where_used:
   name: Southeast Crescent Regional Commission  - Economic and Infrastructure Development
     Grants
   permalink: /program/90.705
+  program_type: assistance_listing
+- agency: SOUTHWEST BORDER REGIONAL COMMISSION
+  expenditure_amount: 5000000.0
+  name: Southwest Border Regional Commission - Economic and Infrastructure Development
+    Grants
+  permalink: /program/90.900
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0

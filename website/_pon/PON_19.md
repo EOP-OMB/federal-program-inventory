@@ -25,4 +25,9 @@ where_used:
   name: Rural Decentralized Water Systems Grant Program
   permalink: /program/10.862
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 1333488564.0
+  name: Water and Waste Disposal Systems for Rural Communities
+  permalink: /program/10.760
+  program_type: assistance_listing
 ---

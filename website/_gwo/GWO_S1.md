@@ -21,6 +21,11 @@ where_used:
   name: AmeriCorps National Service and Civic Engagement Research Competition 94.026
   permalink: /program/94.026
   program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Analyzing Relationships between Disability, Rehabilitation, and Work
+  permalink: /program/96.011
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
   name: Applied Meteorological Research
@@ -76,6 +81,11 @@ where_used:
   name: Compensation and Working Conditions
   permalink: /program/17.005
   program_type: assistance_listing
+- agency: National Science Foundation
+  expenditure_amount: 331630000.0
+  name: Computer and Information Science and Engineering
+  permalink: /program/47.070
+  program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
   expenditure_amount: 0.0
   name: Congressionally Directed Programs
@@ -128,6 +138,17 @@ where_used:
   permalink: /program/43.003
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1576022.0
+  name: Geodetic Surveys and Services (Geodesy and Applications of the National Geodetic
+    Reference System)
+  permalink: /program/11.400
+  program_type: assistance_listing
+- agency: National Science Foundation
+  expenditure_amount: 374350.0
+  name: Geosciences
+  permalink: /program/47.050
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 77000000.0
   name: Integrated Ocean Observing System (IOOS)
   permalink: /program/11.012
@@ -141,6 +162,11 @@ where_used:
   expenditure_amount: 12470000.0
   name: International Science and Engineering
   permalink: /program/47.079
+  program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Interventional Cooperative Agreement Program
+  permalink: /program/96.012
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 10000000.0
@@ -177,6 +203,11 @@ where_used:
   name: National Center for Preservation Technology and Training
   permalink: /program/15.923
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 7785000.0
+  name: National Cooperative Geologic Mapping
+  permalink: /program/15.810
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 5000000.0
   name: National Food Service Management Institute Administration and Staffing Grant
@@ -184,7 +215,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2500000.0
-  name: 'National Geospatial Program: Building The National Map '
+  name: 'National Geospatial Program: Building The National Map'
   permalink: /program/15.817
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -238,6 +269,11 @@ where_used:
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Science, Technology, Business and/or Education Outreach
+  permalink: /program/11.620
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Scientific Cooperation and Research
@@ -247,6 +283,11 @@ where_used:
   expenditure_amount: 94414442.0
   name: Sea Grant Support
   permalink: /program/11.417
+  program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Social Security Research and Demonstration
+  permalink: /program/96.007
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 11750000.0
@@ -288,6 +329,11 @@ where_used:
   expenditure_amount: 0.0
   name: Unallied Industry Projects
   permalink: /program/11.452
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 5493400.0
+  name: Weights and Measures Service
+  permalink: /program/11.606
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 644873.0

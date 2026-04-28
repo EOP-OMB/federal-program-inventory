@@ -1,61 +1,64 @@
 ---
-agencies: '[{"title":"Department of Justice","total_num_programs":128,"total_obs":2609115543.54},{"title":"Department
-  of Homeland Security","total_num_programs":23,"total_obs":1761978824.96},{"title":"Department
-  of the Interior","total_num_programs":16,"total_obs":1198498123.7499998},{"title":"Executive
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2712375631.71},{"title":"Department
+  of Justice","total_num_programs":145,"total_obs":2682255278.54},{"title":"Department
+  of Homeland Security","total_num_programs":24,"total_obs":1761978824.96},{"title":"Department
+  of the Interior","total_num_programs":19,"total_obs":1288180432.4299998},{"title":"Executive
   Office of the President","total_num_programs":1,"total_obs":257057043.3},{"title":"Department
-  of Health and Human Services","total_num_programs":12,"total_obs":221788630.25},{"title":"Department
-  of State","total_num_programs":14,"total_obs":147718261.51},{"title":"Department
+  of Health and Human Services","total_num_programs":13,"total_obs":221788630.25},{"title":"Department
+  of State","total_num_programs":16,"total_obs":195610376.51},{"title":"Department
   of the Treasury","total_num_programs":2,"total_obs":73646857.06},{"title":"Department
   of Defense","total_num_programs":3,"total_obs":38624466.019999996},{"title":"Department
   of Housing and Urban Development","total_num_programs":1,"total_obs":27889102.08},{"title":"Department
   of Labor","total_num_programs":1,"total_obs":23282000.0},{"title":"Department of
-  Transportation","total_num_programs":3,"total_obs":10925000.0},{"title":"Department
-  of Agriculture","total_num_programs":3,"total_obs":8394626.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":3353058.36},{"title":"U.S. Election
+  Education","total_num_programs":1,"total_obs":19787300.0},{"title":"Department of
+  Transportation","total_num_programs":4,"total_obs":11998485.96},{"title":"Department
+  of Energy","total_num_programs":4,"total_obs":9888729.79},{"title":"Department of
+  Agriculture","total_num_programs":3,"total_obs":8394626.0},{"title":"U.S. Election
   Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
-  Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Federal
-  Communications Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Other","total_num_programs":80},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":41},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":40},{"title":"Local (includes
-  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":35},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":34},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":33},{"title":"State","total_num_programs":26},{"title":"Native
+  Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
+  Council on Disability","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Other","total_num_programs":92},{"title":"Federally Recognized
+  Indian Tribal Governments","total_num_programs":47},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":46},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":40},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":38},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":38},{"title":"State","total_num_programs":31},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":24},{"title":"Other public institution/organization","total_num_programs":22},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":14},{"title":"Other
-  private institutions/organizations","total_num_programs":13},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":13},{"title":"Profit organization","total_num_programs":12},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":12},{"title":"U.S.
-  Territories and possessions","total_num_programs":11},{"title":"Government - General","total_num_programs":10},{"title":"Non-Government
-  - General","total_num_programs":10},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":9},{"title":"Federal","total_num_programs":8},{"title":"Individual/Family","total_num_programs":8},{"title":"Nonprofit
-  Organization","total_num_programs":8},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":8},{"title":"Not-for-Profit Organization","total_num_programs":7},{"title":"Anyone/general
-  public","total_num_programs":6},{"title":"Small business (less than 500 employees)","total_num_programs":6},{"title":"Intrastate","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":5},{"title":"Sponsored
+  associations)","total_num_programs":27},{"title":"Other public institution/organization","total_num_programs":26},{"title":"Profit
+  organization","total_num_programs":17},{"title":"Other private institutions/organizations","total_num_programs":16},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":15},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":14},{"title":"U.S. Territories
+  and possessions","total_num_programs":14},{"title":"Non-Government - General","total_num_programs":13},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":13},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":10},{"title":"Government
+  - General","total_num_programs":10},{"title":"Individual/Family","total_num_programs":10},{"title":"Nonprofit
+  Organization","total_num_programs":9},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":9},{"title":"Federal","total_num_programs":8},{"title":"Not-for-Profit
+  Organization","total_num_programs":8},{"title":"Small business (less than 500 employees)","total_num_programs":8},{"title":"Anyone/general
+  public","total_num_programs":6},{"title":"Nonprofit with 501C3 IRS Status (Other
+  than Institution of Higher Education)","total_num_programs":6},{"title":"County
+  Government","total_num_programs":5},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Intrastate","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Sponsored
   organization","total_num_programs":5},{"title":"U.S. Territory (or Possession) Government
-  (including freely-associated states)","total_num_programs":5},{"title":"For-Profit
-  Organization","total_num_programs":4},{"title":"Interstate","total_num_programs":4},{"title":"County
-  Government","total_num_programs":3},{"title":"County Government (inclusive of boroughs
-  in Alaska, parishes and other governmental entities with geographic regional control
-  and authority)","total_num_programs":3},{"title":"Minority group","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"City
-  or Township Government","total_num_programs":2},{"title":"Foreign Non-Government
-  Nonprofit Organization","total_num_programs":2},{"title":"Foreign Non-Government
-  Not-for-Profit Organization","total_num_programs":2},{"title":"Indian/Native American/Alaska
-  Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"International
-  Organization","total_num_programs":2},{"title":"Unrestricted by Entity Type","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"For-Profit
-  Organization (Other than Small Business)","total_num_programs":1},{"title":"Foreign
-  Government","total_num_programs":1},{"title":"Foreign Non-Governmental For-Profit
-  Organization","total_num_programs":1},{"title":"Independent School District","total_num_programs":1},{"title":"Indian/Native
-  American Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"School
-  District","total_num_programs":1},{"title":"Small Business Person","total_num_programs":1},{"title":"U.S.
+  (including freely-associated states)","total_num_programs":5},{"title":"Interstate","total_num_programs":4},{"title":"Tribal","total_num_programs":4},{"title":"City
+  or Township Government","total_num_programs":3},{"title":"County Government (inclusive
+  of boroughs in Alaska, parishes and other governmental entities with geographic
+  regional control and authority)","total_num_programs":3},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Minority
+  group","total_num_programs":3},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":2},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":2},{"title":"International
+  Organization","total_num_programs":2},{"title":"Nonprofit without 501C3 IRS Status
+  (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Unrestricted
+  by Entity Type","total_num_programs":2},{"title":"Department or Agency of a U.S.
+  State Government","total_num_programs":1},{"title":"For-Profit Organization (Other
+  than Small Business)","total_num_programs":1},{"title":"Foreign Government","total_num_programs":1},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":1},{"title":"Independent
+  School District","total_num_programs":1},{"title":"Indian/Native American Tribal
+  Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Non-domestic
+  (non-US) Entity","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Small
+  Business Person","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
   Federal Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -265,15 +268,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/law--justice--and-legal-services
-sub_cats: '[{"title":"Border Security","permalink":"/category/law--justice--and-legal-services/border-security","total_num_programs":15,"total_obs":124399567.18},{"title":"Cybersecurity","permalink":"/category/law--justice--and-legal-services/cybersecurity","total_num_programs":14,"total_obs":426703775.97},{"title":"Domestic
+sub_cats: '[{"title":"Border Security","permalink":"/category/law--justice--and-legal-services/border-security","total_num_programs":18,"total_obs":178827353.61},{"title":"Cybersecurity","permalink":"/category/law--justice--and-legal-services/cybersecurity","total_num_programs":15,"total_obs":3139079407.68},{"title":"Domestic
   Threats and Hazards","permalink":"/category/law--justice--and-legal-services/domestic-threats-and-hazards","total_num_programs":9,"total_obs":657734184.73},{"title":"Law
-  Enforcement Support","permalink":"/category/law--justice--and-legal-services/law-enforcement-support","total_num_programs":137,"total_obs":3899533367.06},{"title":"Legal
-  Services","permalink":"/category/law--justice--and-legal-services/legal-services","total_num_programs":12,"total_obs":49499949.849999994},{"title":"Tribal
-  Independence and Autonomy","permalink":"/category/law--justice--and-legal-services/tribal-independence-and-autonomy","total_num_programs":27,"total_obs":1224400692.0399997}]'
+  Enforcement Support","permalink":"/category/law--justice--and-legal-services/law-enforcement-support","total_num_programs":157,"total_obs":3973746588.02},{"title":"Legal
+  Services","permalink":"/category/law--justice--and-legal-services/legal-services","total_num_programs":14,"total_obs":69287249.85},{"title":"Tribal
+  Independence and Autonomy","permalink":"/category/law--justice--and-legal-services/tribal-independence-and-autonomy","total_num_programs":31,"total_obs":1314083000.7199998}]'
 title: Law, Justice, and Legal Services
-total_num_agencies: 17
-total_num_applicant_types: 69
-total_num_programs: 214
+total_num_agencies: 18
+total_num_applicant_types: 71
+total_num_programs: 244
 total_num_sub_cats: 6
-total_obs: 6382271536.83
+total_obs: 9332757784.61
 ---

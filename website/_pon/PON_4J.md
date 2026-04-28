@@ -42,8 +42,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Brownfields Training, Research, and Technical Assistance Grants and Cooperative
-    Agreements '
+  name: Brownfields Training, Research, and Technical Assistance Grants and Cooperative
+    Agreements
   permalink: /program/66.814
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -59,7 +59,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 16000000.0
-  name: 'Clean Vessel Act '
+  name: Clean Vessel Act
   permalink: /program/15.616
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -69,9 +69,14 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Compliance Assistance Support for Services to the Regulated Community and
-    Other Assistance Providers '
+  name: Compliance Assistance Support for Services to the Regulated Community and
+    Other Assistance Providers
   permalink: /program/66.305
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Consolidated Pesticide Enforcement Cooperative Agreements
+  permalink: /program/66.700
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -107,7 +112,7 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Environmental Justice Small Grant Program '
+  name: Environmental Justice Small Grant Program
   permalink: /program/66.604
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -203,9 +208,19 @@ where_used:
   permalink: /program/14.912
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Lead Hazard Control for High Risk Areas
+  permalink: /program/14.920
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
   expenditure_amount: 120000000.0
   name: Lead Hazard Reduction Demonstration Grant Program
   permalink: /program/14.905
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 203000000.0
+  name: Lead Hazard Reduction Grant Program
+  permalink: /program/14.900
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
@@ -229,7 +244,7 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 52838000.0
-  name: 'Leaking Underground Storage Tank Trust Fund Corrective Action Program '
+  name: Leaking Underground Storage Tank Trust Fund Corrective Action Program
   permalink: /program/66.805
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -262,6 +277,11 @@ where_used:
   name: Railway-Highway Crossings Program
   permalink: /program/20.285
   program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 4000000.0
+  name: STATE PROGRAMS FOR CONTROL OF COAL COMBUSTION RESIDUALS
+  permalink: /program/66.820
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Safety and Environmental Research and Data Collection for Offshore Energy
@@ -272,6 +292,11 @@ where_used:
   expenditure_amount: 0.0
   name: Science and Technology Projects Related to Coal Mining and Reclamation
   permalink: /program/15.255
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1500000.0
+  name: State Damage Prevention Program Grants
+  permalink: /program/20.720
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
@@ -296,8 +321,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 75000000.0
-  name: 'Superfund State, Political Subdivision, and Indian Tribe Site-Specific Cooperative
-    Agreements '
+  name: Superfund State, Political Subdivision, and Indian Tribe Site-Specific Cooperative
+    Agreements
   permalink: /program/66.802
   program_type: assistance_listing
 - agency: Environmental Protection Agency

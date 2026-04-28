@@ -1,42 +1,40 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":28,"total_obs":137474945245.0},{"title":"Small
-  Business Administration","total_num_programs":22,"total_obs":221862759.74},{"title":"Department
+agencies: '[{"title":"Department of the Treasury","total_num_programs":29,"total_obs":137474945245.0},{"title":"Small
+  Business Administration","total_num_programs":23,"total_obs":221877759.74},{"title":"Department
   of Commerce","total_num_programs":9,"total_obs":34025823.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":25583243.75},{"title":"Department
+  of Agriculture","total_num_programs":18,"total_obs":29135440.47},{"title":"Department
   of Labor","total_num_programs":1,"total_obs":20985000.0},{"title":"Department of
-  Transportation","total_num_programs":4,"total_obs":10750000.0},{"title":"Department
+  Transportation","total_num_programs":5,"total_obs":10750000.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Small Business Person","total_num_programs":19},{"title":"Nonprofit
-  Organization","total_num_programs":12},{"title":"Unrestricted by Entity Type","total_num_programs":12},{"title":"State","total_num_programs":10},{"title":"U.S.
+applicant_types: '[{"title":"Small Business Person","total_num_programs":21},{"title":"Nonprofit
+  Organization","total_num_programs":14},{"title":"Unrestricted by Entity Type","total_num_programs":13},{"title":"State","total_num_programs":10},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":10},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":8},{"title":"Local","total_num_programs":6},{"title":"Private
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":9},{"title":"Local","total_num_programs":6},{"title":"Unrestricted
+  by Individual Type","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Other","total_num_programs":5},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Unrestricted
-  by Individual Type","total_num_programs":5},{"title":"Other","total_num_programs":4},{"title":"Public
+  hospitals)","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":4},{"title":"Small business (less than 500 employees)","total_num_programs":4},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"For-Profit
-  Organization","total_num_programs":3},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":3},{"title":"Minority
-  group","total_num_programs":3},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Other
-  private institutions/organizations","total_num_programs":3},{"title":"Quasi-public
+  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":3},{"title":"Minority group","total_num_programs":3},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":3},{"title":"Other private institutions/organizations","total_num_programs":3},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":3},{"title":"Territorial","total_num_programs":3},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":2},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Municipality
+  with geographic regional control and authority)","total_num_programs":2},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":2},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Other
-  public institution/organization","total_num_programs":2},{"title":"Specialized group
-  (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"State
+  and villages)","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":2},{"title":"Other public institution/organization","total_num_programs":2},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Other
-  Special Disctrict Government","total_num_programs":1},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Veteran
+  - General","total_num_programs":1},{"title":"Other Special Disctrict Government","total_num_programs":1},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Veteran
   (including dependents)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -295,7 +293,7 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   and Investment Jobs Act Financial Assistance to Facilities that Purchase and Process
   Byproducts for Ecosystem Restoration","popular_name":"Assistance to Byproducts Purchasers
   and Processors","agency":"Department of Agriculture","total_obs":25583243.75,"program_type":"assistance_listing"},{"cfda":"17.271","permalink":"/program/17.271","title":"Work
-  Opportunity Tax Credit Program (WOTC) ","popular_name":"WOTC","agency":"Department
+  Opportunity Tax Credit Program (WOTC)","popular_name":"WOTC","agency":"Department
   of Labor","total_obs":20985000.0,"program_type":"assistance_listing"},{"cfda":"TC.128","permalink":"/program/TC.128","title":"Indian
   employment credit","popular_name":null,"agency":"Department of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"59.044","permalink":"/program/59.044","title":"Veterans
   Outreach Program","popular_name":"Veterans Business Outreach Center Program (VBOC)","agency":"Small
@@ -307,11 +305,18 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   of Transportation","total_obs":10750000.0,"program_type":"assistance_listing"},{"cfda":"59.026","permalink":"/program/59.026","title":"SCORE","popular_name":"SCORE","agency":"Small
   Business Administration","total_obs":7638100.0,"program_type":"assistance_listing"},{"cfda":"59.043","permalink":"/program/59.043","title":"Women''s
   Business Ownership Assistance","popular_name":"Women\u2019s Business Center (WBO)","agency":"Small
-  Business Administration","total_obs":6300000.0,"program_type":"assistance_listing"},{"cfda":"59.007","permalink":"/program/59.007","title":"7(j)
-  Technical Assistance","popular_name":null,"agency":"Small Business Administration","total_obs":2560107.0,"program_type":"assistance_listing"},{"cfda":"59.041","permalink":"/program/59.041","title":"504
+  Business Administration","total_obs":6300000.0,"program_type":"assistance_listing"},{"cfda":"10.870","permalink":"/program/10.870","title":"Rural
+  Microentrepreneur Assistance Program","popular_name":"RMAP","agency":"Department
+  of Agriculture","total_obs":3456974.0,"program_type":"assistance_listing"},{"cfda":"59.007","permalink":"/program/59.007","title":"7(j)
+  Technical Assistance","popular_name":null,"agency":"Small Business Administration","total_obs":2560107.0,"program_type":"assistance_listing"},{"cfda":"10.970","permalink":"/program/10.970","title":"Farm
+  Loan Borrower Relief Program","popular_name":"FLBRP","agency":"Department of Agriculture","total_obs":95222.72,"program_type":"assistance_listing"},{"cfda":"59.041","permalink":"/program/59.041","title":"504
   Certified Development Loans","popular_name":"504 Loans","agency":"Small Business
   Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.012","permalink":"/program/59.012","title":"7(a)
-  Loan Guarantees","popular_name":"7(a) Loans","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.021","permalink":"/program/21.021","title":"Bank
+  Loan Guarantees","popular_name":"7(a) Loans","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.006","permalink":"/program/59.006","title":"8(a)
+  Business Development Program","popular_name":"8(a) Program","agency":"Small Business
+  Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.910","permalink":"/program/20.910","title":"Assistance
+  to Small and Disadvantaged Businesses","popular_name":"Small Business Transportation
+  Resource Centers","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.021","permalink":"/program/21.021","title":"Bank
   Enterprise Award Program","popular_name":"BEA Program","agency":"Department of the
   Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.449","permalink":"/program/10.449","title":"Boll
   Weevil Eradication Loan Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.768","permalink":"/program/10.768","title":"Business
@@ -320,13 +325,16 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   Incentives Program","popular_name":"CHIPS Incentives Program","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.808","permalink":"/program/20.808","title":"Capital
   Construction Fund","popular_name":"Capital Construction Fund (CCF)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.099","permalink":"/program/10.099","title":"Conservation
-  Loans ","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.812","permalink":"/program/20.812","title":"Construction
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.059","permalink":"/program/59.059","title":"Congressional
+  Grants","popular_name":"Congressionally Directed Spending (Community Project Funding)","agency":"Small
+  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.099","permalink":"/program/10.099","title":"Conservation
+  Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.812","permalink":"/program/20.812","title":"Construction
   Reserve Fund","popular_name":"Construction Reserve Fund (CRF)","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.098","permalink":"/program/TC.098","title":"Credit
   to holders of Gulf and Midwest Tax Credit Bonds .","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"59.079","permalink":"/program/59.079","title":"Cybersecurity
-  for Small Business Pilot Program","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.404","permalink":"/program/10.404","title":"Emergency
+  for Small Business Pilot Program","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.030","permalink":"/program/21.030","title":"Emergency
+  Capital Investment Program","popular_name":"ECIP","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.404","permalink":"/program/10.404","title":"Emergency
   Loans","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.406","permalink":"/program/10.406","title":"Farm
   Operating Loans and Loan Guarantees","popular_name":"Farm Operating Loans & Loan
   Guarantees","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.407","permalink":"/program/10.407","title":"Farm
@@ -339,7 +347,8 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   Finance Program","popular_name":"Fisheries Finance Program","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.408","permalink":"/program/11.408","title":"Fishermen''s
   Contingency Fund","popular_name":"Fisheries Contingency Fund","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.128","permalink":"/program/10.128","title":"Heirs\u2019
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.055","permalink":"/program/59.055","title":"HUBZone
+  Program","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.128","permalink":"/program/10.128","title":"Heirs\u2019
   Property Relending Program","popular_name":"HPRP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.968","permalink":"/program/10.968","title":"Increasing
   Land, Capital, and Market Access Program","popular_name":"Increasing Land Access","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.421","permalink":"/program/10.421","title":"Indian
@@ -353,18 +362,18 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.804","permalink":"/program/11.804","title":"MBDA
   Native American Business Enterprise Entrepreneurship Program","popular_name":"MBDA
   Native American Business Enterprise Entrepreneurship","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.802","permalink":"/program/11.802","title":"MBDA
-  Specialty Center Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.053","permalink":"/program/59.053","title":"Ombudsman
-  and Regulatory Fairness Boards ","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.147","permalink":"/program/10.147","title":"Outreach
+  Specialty Center Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.052","permalink":"/program/59.052","title":"Native
+  American Outreach","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.053","permalink":"/program/59.053","title":"Ombudsman
+  and Regulatory Fairness Boards","popular_name":null,"agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.147","permalink":"/program/10.147","title":"Outreach
   Education and Technical Assistance","popular_name":"OETA","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.073","permalink":"/program/59.073","title":"Paycheck
-  Protection Loan Program (PPP)","popular_name":"Paycheck Protection Program (PPP)
-  Loan","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.426","permalink":"/program/84.426","title":"Randolph-Sheppard
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.050","permalink":"/program/59.050","title":"Prime
+  Technical Assistance","popular_name":"PRIME","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.426","permalink":"/program/84.426","title":"Randolph-Sheppard
   \u2013 Financial Relief and Restoration Payments","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.067","permalink":"/program/59.067","title":"Regional
   Innovation Clusters","popular_name":"Regional Innovation Clusters (RIC)","agency":"Small
-  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.078","permalink":"/program/59.078","title":"Restaurant
-  Revitalization Fund","popular_name":"RRF","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.075","permalink":"/program/59.075","title":"Shuttered
-  Venue Operators Grant Program","popular_name":"SVOG","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.011","permalink":"/program/59.011","title":"Small
+  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.860","permalink":"/program/10.860","title":"Rural
+  Business Investment Program","popular_name":"RBIP or RBIC Program","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.011","permalink":"/program/59.011","title":"Small
   Business Investment Companies","popular_name":"SBIC","agency":"Small Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.034","permalink":"/program/21.034","title":"State
   Small Business Credit Initiative Competitive Technical Assistance Program","popular_name":"SSBCI
   Investing in America Small Business Opportunity Program, SSBCI Investing in America
@@ -378,9 +387,7 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
   Agriculture and Urban County Committee Outreach, Technical Assistance, and Education","popular_name":"UA-OETA","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.077","permalink":"/program/59.077","title":"Community
   Navigator Pilot Program","popular_name":"Community Navigator","agency":"Small Business
-  Administration","total_obs":-0.11,"program_type":"assistance_listing"},{"cfda":"59.072","permalink":"/program/59.072","title":"Economic
-  Injury Disaster Loan Emergency Advance","popular_name":"Emergency Federal Financial
-  Assistance; Disaster Prevention and Relief","agency":"Small Business Administration","total_obs":-15000.0,"program_type":"assistance_listing"},{"cfda":"59.058","permalink":"/program/59.058","title":"Federal
+  Administration","total_obs":-0.11,"program_type":"assistance_listing"},{"cfda":"59.058","permalink":"/program/59.058","title":"Federal
   and State Technology Partnership Program","popular_name":"FAST Partnership Program","agency":"Small
   Business Administration","total_obs":-32739.66,"program_type":"assistance_listing"},{"cfda":"TC.082","permalink":"/program/TC.082","title":"Accelerated
   depreciation of machinery and equipment (normal tax method)","popular_name":null,"agency":"Department
@@ -388,6 +395,6 @@ programs: '[{"cfda":"TC.086","permalink":"/program/TC.086","title":"Allow 20-per
 title: Business Development
 total_num_agencies: 7
 total_num_applicant_types: 47
-total_num_programs: 80
-total_obs: 137788152071.49
+total_num_programs: 86
+total_obs: 137791719268.21
 ---

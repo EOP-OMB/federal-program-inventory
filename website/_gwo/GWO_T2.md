@@ -40,6 +40,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
+  name: Federal-State Partnership for Intercity Passenger Rail Grant Program
+  permalink: /program/20.340
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
   name: High-Speed Rail Corridors and Intercity Passenger Rail Service – Capital Assistance
     Grants
   permalink: /program/20.319
@@ -63,6 +68,11 @@ where_used:
   expenditure_amount: 10000000.0
   name: Northeast Corridor Commission
   permalink: /program/20.333
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Rail Line Relocation and Improvement
+  permalink: /program/20.320
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 551000000.0
@@ -103,6 +113,11 @@ where_used:
   expenditure_amount: 1150000.0
   name: Railroad Safety
   permalink: /program/20.329
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1150000.0
+  name: Railroad Safety State Participation Grant Program
+  permalink: /program/20.330
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0

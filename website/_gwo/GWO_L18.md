@@ -25,6 +25,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
+  name: Alzheimer’s Disease Program Initiative (ADPI)
+  permalink: /program/93.470
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
   name: Area Health Education Centers
   permalink: /program/93.107
   program_type: assistance_listing
@@ -72,12 +77,6 @@ where_used:
   permalink: /program/93.491
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 12557661.0
-  name: Cooperative Agreements to Promote Adolescent Health through School-Based Surveillance
-    and Risk Behavior Reduction
-  permalink: /program/93.079
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
   expenditure_amount: 3500000.0
   name: Development and Coordination of Rural Health Services
   permalink: /program/93.223
@@ -104,6 +103,11 @@ where_used:
   name: Exclusion of interest on hospital construction bonds
   permalink: /program/TC.134
   program_type: tax_expenditure
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Geriatric Academic Career Awards Department of Health and Human Services
+  permalink: /program/93.250
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Graduate Psychology Education
@@ -177,9 +181,19 @@ where_used:
     Agreements
   permalink: /program/93.284
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Innovative Rehabilitation Training
+  permalink: /program/84.263
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 60000000.0
+  name: Medical Student Education
+  permalink: /program/93.680
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 62000000.0
-  name: 'Mental and Behavioral Health Education and Training Grants '
+  name: Mental and Behavioral Health Education and Training Grants
   permalink: /program/93.732
   program_type: assistance_listing
 - agency: Department of Defense
@@ -264,7 +278,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'PPHF Geriatric Education Centers '
+  name: PPHF Geriatric Education Centers
   permalink: /program/93.969
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -306,6 +320,11 @@ where_used:
   expenditure_amount: 0.0
   name: Rehabilitation Long-Term Training
   permalink: /program/84.129
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 134265947.0
+  name: Rural Communities Opioid Response Programs
+  permalink: /program/93.690
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 3660000.0
@@ -397,6 +416,11 @@ where_used:
   permalink: /program/93.291
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 175000000.0
+  name: Teaching Health Center Graduate Medical Education Payment
+  permalink: /program/93.530
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 8500000.0
   name: Telehealth Centers of Excellence
   permalink: /program/93.467
@@ -427,6 +451,11 @@ where_used:
     in U.S. Hospitals
   permalink: /program/93.851
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Traditionally Underserved Populations
+  permalink: /program/84.315
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Training in General, Pediatric, and Public Health Dentistry
@@ -434,7 +463,17 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
+  name: 'Tribal Self-Governance Program: IHS Compacts/Funding Agreements'
+  permalink: /program/93.210
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
   name: 'Tribal Self-Governance Program: Planning and Negotiation Cooperative Agreement'
   permalink: /program/93.444
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 134991.0
+  name: Urban Indian Health Program (Education and Research)
+  permalink: /program/93.620
   program_type: assistance_listing
 ---

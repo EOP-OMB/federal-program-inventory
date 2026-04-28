@@ -252,23 +252,23 @@ categories_hierarchy:
   - permalink: /category/transportation/water-transportation
     title: Water Transportation
   title: Transportation
-categories_json: '[{"title":"Income Security and Social Services","total_num_programs":107,"total_obs":3398507278475.94,"permalink":"/category/income-security-and-social-services"},{"title":"Tax
-  Expenditures","total_num_programs":170,"total_obs":1985250000000.0,"permalink":"/category/tax-expenditures"},{"title":"Health","total_num_programs":548,"total_obs":1843884148023.03,"permalink":"/category/health"},{"title":"General
-  Government","total_num_programs":14,"total_obs":1215613829754.0,"permalink":"/category/general-government"},{"title":"Interest
+categories_json: '[{"title":"Income Security and Social Services","total_num_programs":114,"total_obs":3409016560645.6797,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":607,"total_obs":2011149263070.1006,"permalink":"/category/health"},{"title":"Tax
+  Expenditures","total_num_programs":170,"total_obs":1985250000000.0,"permalink":"/category/tax-expenditures"},{"title":"General
+  Government","total_num_programs":16,"total_obs":1215613829754.0,"permalink":"/category/general-government"},{"title":"Interest
   on the Public Debt","total_num_programs":1,"total_obs":1215613829754.0,"permalink":"/category/interest-on-the-public-debt"},{"title":"Business
-  and Commerce","total_num_programs":160,"total_obs":180746277507.61,"permalink":"/category/business-and-commerce"},{"title":"Food
-  and Nutrition","total_num_programs":54,"total_obs":138062444126.08002,"permalink":"/category/food-and-nutrition"},{"title":"Education","total_num_programs":164,"total_obs":106858709130.14,"permalink":"/category/education"},{"title":"Transportation","total_num_programs":126,"total_obs":100275941422.01,"permalink":"/category/transportation"},{"title":"Housing","total_num_programs":111,"total_obs":91903612681.15,"permalink":"/category/housing"},{"title":"Energy","total_num_programs":73,"total_obs":80442736137.36,"permalink":"/category/energy"},{"title":"Community
-  Development","total_num_programs":87,"total_obs":66298736493.81999,"permalink":"/category/community-development"},{"title":"Agricultural","total_num_programs":113,"total_obs":23059316670.049995,"permalink":"/category/agricultural"},{"title":"Disaster
-  Prevention and Relief","total_num_programs":103,"total_obs":21114622562.53,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Environmental
-  Quality","total_num_programs":131,"total_obs":18365915545.84,"permalink":"/category/environmental-quality"},{"title":"Employment
-  and Labor","total_num_programs":147,"total_obs":11916551687.470001,"permalink":"/category/employment-and-labor"},{"title":"Natural
-  Resources","total_num_programs":254,"total_obs":10059803310.119993,"permalink":"/category/natural-resources"},{"title":"Law,
-  Justice, and Legal Services","total_num_programs":214,"total_obs":6382271536.83,"permalink":"/category/law--justice--and-legal-services"},{"title":"Science
-  and Technology","total_num_programs":57,"total_obs":4171607945.09,"permalink":"/category/science-and-technology"},{"title":"National
-  Defense","total_num_programs":46,"total_obs":3657725521.7499995,"permalink":"/category/national-defense"},{"title":"International
-  Affairs","total_num_programs":83,"total_obs":1566736230.4200003,"permalink":"/category/international-affairs"},{"title":"Cultural
-  Affairs","total_num_programs":54,"total_obs":1231865228.6299999,"permalink":"/category/cultural-affairs"},{"title":"Consumer
-  Protection","total_num_programs":18,"total_obs":275459981.52000004,"permalink":"/category/consumer-protection"}]'
+  and Commerce","total_num_programs":170,"total_obs":180713429932.34,"permalink":"/category/business-and-commerce"},{"title":"Food
+  and Nutrition","total_num_programs":59,"total_obs":138579796680.6,"permalink":"/category/food-and-nutrition"},{"title":"Education","total_num_programs":178,"total_obs":129622336007.63997,"permalink":"/category/education"},{"title":"Transportation","total_num_programs":139,"total_obs":102759382502.34,"permalink":"/category/transportation"},{"title":"Housing","total_num_programs":120,"total_obs":97194942247.06001,"permalink":"/category/housing"},{"title":"Energy","total_num_programs":78,"total_obs":80734661471.22,"permalink":"/category/energy"},{"title":"Community
+  Development","total_num_programs":91,"total_obs":66688796046.81,"permalink":"/category/community-development"},{"title":"Agricultural","total_num_programs":133,"total_obs":24208119326.049995,"permalink":"/category/agricultural"},{"title":"Disaster
+  Prevention and Relief","total_num_programs":119,"total_obs":21350967275.69,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Environmental
+  Quality","total_num_programs":149,"total_obs":18966107782.38,"permalink":"/category/environmental-quality"},{"title":"Employment
+  and Labor","total_num_programs":160,"total_obs":12286260171.630001,"permalink":"/category/employment-and-labor"},{"title":"Natural
+  Resources","total_num_programs":278,"total_obs":10324869826.069994,"permalink":"/category/natural-resources"},{"title":"Law,
+  Justice, and Legal Services","total_num_programs":244,"total_obs":9332757784.61,"permalink":"/category/law--justice--and-legal-services"},{"title":"Science
+  and Technology","total_num_programs":66,"total_obs":5414929236.929999,"permalink":"/category/science-and-technology"},{"title":"National
+  Defense","total_num_programs":58,"total_obs":4603274790.070001,"permalink":"/category/national-defense"},{"title":"International
+  Affairs","total_num_programs":102,"total_obs":2788303118.9700003,"permalink":"/category/international-affairs"},{"title":"Cultural
+  Affairs","total_num_programs":63,"total_obs":1604595975.19,"permalink":"/category/cultural-affairs"},{"title":"Consumer
+  Protection","total_num_programs":20,"total_obs":286336981.52000004,"permalink":"/category/consumer-protection"}]'
 fiscal_year: '2025'
 layout: category-index
 obligations_by_type:

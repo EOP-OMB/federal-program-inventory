@@ -137,6 +137,11 @@ where_used:
   name: H-1B Job Training Grants
   permalink: /program/17.268
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 3226650.0
+  name: Higher Education National Needs Graduate Fellowship Grants
+  permalink: /program/10.210
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 1000000.0
   name: Highway Training & Education Research Fellowships 504(c)
@@ -156,6 +161,11 @@ where_used:
   expenditure_amount: 10621000.0
   name: Human Genome Research - Training, Institutional
   permalink: /program/93.HG4
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 151722158.0
+  name: Intramural Research Training Award
+  permalink: /program/93.140
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
@@ -211,6 +221,16 @@ where_used:
   expenditure_amount: 39393000.0
   name: National Institute on Aging Training Inst Projects
   permalink: /program/93.AG5
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 95000000.0
+  name: National Institutes of Health Extramural Loan Repayment Program
+  permalink: /program/93.280
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6000000.0
+  name: National Institutes of Health Intramural Loan Repayment Program
+  permalink: /program/93.220
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0

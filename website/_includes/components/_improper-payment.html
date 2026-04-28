@@ -3,7 +3,14 @@
 
 {% assign headline_amount = page.headline_amount | default: 0 %}
 
-{% if page.improper_payments == nil or page.improper_payments.size == 0 %}
+{% assign has_nonzero_ip_outlays = false %}
+{% for ip_row in page.improper_payments %}
+  {% if ip_row.outlays != 0 and ip_row.outlays != 0.0 and ip_row.outlays != nil %}
+    {% assign has_nonzero_ip_outlays = true %}
+  {% endif %}
+{% endfor %}
+
+{% if page.improper_payments == nil or page.improper_payments.size == 0 or has_nonzero_ip_outlays == false %}
 <!-- Gray background improper payment box with NA values -->
 <div id="improper-payment-card-container">
   <div class="improper-payment-card">

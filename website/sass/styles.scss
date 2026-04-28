@@ -13,6 +13,7 @@ $pon-treemap-bg:  #B3C1C8;
 $gwo-treemap-fg: #FFFFFF;
 $pon-treemap-fg:  #0C0A09;
 $dark-cream-underlay: #f2f0e5;
+$medium-cream-underlay: #F2F1E6;
 $sub-tag-info-card-bg: #eceadd;
 $gold-spending: #d4af37cc;
 $pop-growth-shade:#366e56;
@@ -21,6 +22,12 @@ $improper-payments-red:#b91c1c;
 
 .hide {
   display: none !important;
+}
+
+// USAID Alert custom styling
+.usa-alert--usaid .usa-alert__body {
+  background-color: #e7f6f8 !important;
+  margin-bottom: 1rem;
 }
 
 // Utility classes
@@ -63,13 +70,24 @@ $improper-payments-red:#b91c1c;
   font-family: $site-header-font-family;
   font-weight: normal;
   color: $site-font-color;
-  margin-bottom: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
 }
 
-.homepage-subheader {
-  margin-bottom: 3rem;
+.homepage-subheader-description {
+  margin-bottom: 1.5rem;
   text-align: center;
   color: $site-font-color;
+}
+
+.homepage-subheader{
+  font-family: $site-subheader-font-family;
+  color: $site-font-color;
+  font-style: italic;
+  font-size: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .homepage-buttons {
@@ -83,6 +101,7 @@ $improper-payments-red:#b91c1c;
   width: 200px;
   padding: 1rem 1.5rem !important;
   font-weight: normal !important;
+  background-color: $site-font-color !important;
 }
 
 .homepage-buttons .usa-button:hover {
@@ -111,6 +130,11 @@ $improper-payments-red:#b91c1c;
   background-color: $sub-tag-info-card-bg;
 }
 
+.program-card-titles {
+  font-family: $site-header-font-family;
+  font-weight: normal;
+}
+
 .program-card-icon-wrapper {
   margin-bottom: 1.5rem;
 }
@@ -130,7 +154,7 @@ $improper-payments-red:#b91c1c;
 .how-it-works-logo {
   width: 100%;
   max-width: 75%;
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .how-it-works-content {
@@ -140,12 +164,13 @@ $improper-payments-red:#b91c1c;
 }
 
 .how-it-works-entry {
-  margin-bottom: 2.5rem;
+  margin-top: 1rem;
 }
 
 .how-it-works-number {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: normal;
 }
 
@@ -170,13 +195,24 @@ $improper-payments-red:#b91c1c;
   font-size: 20px !important;
 }
 
+.category-expend-section {
+  margin-bottom: 5rem;
+  background-color: $dark-cream-underlay;
+  color: $site-font-color;
+}
+
+.category-breadcrumb {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 body {
   font-family: $site-default-font !important;
   background-color: $site-bg-color !important;
 }
 
 /* Visited link styling - apply to all links */
-a:visited {
+a:visited:not(.override-visited) {
   color: #724a1e !important;
 }
 
@@ -200,6 +236,10 @@ a.test-visited {
 /* Footer nav link color */
 .usa-identifier__nav-link {
   color: #2a2a2b !important;
+}
+
+.usa-header {
+  border-bottom: 1px solid #DDD8D1;
 }
 
 .home-link {
@@ -366,36 +406,81 @@ th.gridjs-th {
     background-image: url('../assets/img/banner.png');
   }
 
-.usa-sidenav__sublist a:not(.usa-button) {
+#search-filters {
+  .usa-sidenav__sublist a:not(.usa-button) {
     padding-left: 5px;
   }
 
   .usa-sidenav a:not(.usa-button) {
     padding-left: 5px;
-}
+  }
 
-.usa-sidenav__sublist .usa-sidenav__sublist a:not(.usa-button) {
+  .usa-sidenav__sublist .usa-sidenav__sublist a:not(.usa-button) {
     padding-left: 5px;
-}
+  }
 
-.usa-sidenav .expandable-button.toggle {
+  .usa-sidenav .expandable-button.toggle {
     padding-right: 10px;
-}
+  }
 
-.usa-sidenav__sublist .usa-checkbox {
+  .usa-sidenav__sublist .usa-checkbox {
     display: block;
     width: 100%;
-}
+  }
 
-.usa-sidenav__sublist .usa-checkbox__label {
+  .usa-sidenav__sublist .usa-checkbox__label {
     display: block;
     width: auto;
     word-wrap: break-word;
+  }
+
+  .usa-sidenav,.program-search-container,.program-title {
+    background-color: $dark-cream-underlay;
+    color: $site-font-color !important;
+  }
 }
 
-.usa-sidenav,.program-search-container,.program-title {
-  background-color: $dark-cream-underlay;
+.about-page {
   color: $site-font-color !important;
+  a {
+    color: $site-font-color !important;
+  }
+}
+
+#about-nav {
+  a {
+    color: $site-font-color !important;
+    &:visited {
+      color: $site-font-color !important;
+    }
+  }
+}
+
+#about-accordion {
+  .usa-accordion__heading button {
+    background-color: $sub-tag-info-card-bg;
+    color: $site-font-color;
+  }
+
+  .usa-accordion__content {
+    background-color: $medium-cream-underlay;
+    color: $site-font-color;
+  }
+}
+
+#about-obligation-table-container {
+  width: 100%;
+  overflow-x: auto;
+  * {
+    color: $site-font-color;
+  }
+}
+
+.key-term {
+  background-color: $medium-cream-underlay;
+  h3 {
+    margin: 0;
+  }
 }
 
 .usa-table thead {
@@ -489,9 +574,8 @@ th.gridjs-th {
 }
 
 .about-data-header {
-  font-family: $site-default-font !important;
-  color: #314964 !important;
-  font-weight: bold !important;
+  font-family: $site-header-font-family;
+  color: $site-font-color;
 }
 
 .objectives-container {

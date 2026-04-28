@@ -1,5 +1,6 @@
 ---
-agencies: '[{"title":"National Endowment for the Humanities","total_num_programs":2,"total_obs":2535375.21}]'
+agencies: '[{"title":"Department of Education","total_num_programs":1,"total_obs":16868285.0},{"title":"National
+  Endowment for the Humanities","total_num_programs":3,"total_obs":9188223.77}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":2},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Municipality
@@ -8,7 +9,14 @@ applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska,
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":2},{"title":"U.S. State Government
   (including the District of Columbia)","total_num_programs":2},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":2}]'
+  (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":1},{"title":"Other public
+  institution/organization","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -219,13 +227,16 @@ fiscal_year: '2025'
 parent_permalink: /category/cultural-affairs
 parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/artistic-talent-development
-programs: '[{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion of the
-  Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
+programs: '[{"cfda":"84.351","permalink":"/program/84.351","title":"Arts in Education","popular_name":null,"agency":"Department
+  of Education","total_obs":16868285.0,"program_type":"assistance_listing"},{"cfda":"45.160","permalink":"/program/45.160","title":"Promotion
+  of the Humanities Fellowships and Stipends","popular_name":"Fellowships and Other
+  Awards to Individuals","agency":"National Endowment for the Humanities","total_obs":6652848.56,"program_type":"assistance_listing"},{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion
+  of the Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
   Endowment for the Humanities","total_obs":2535375.21,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"Collaborative
   Research","popular_name":null,"agency":"National Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Artistic Talent Development
-total_num_agencies: 1
-total_num_applicant_types: 7
-total_num_programs: 2
-total_obs: 2535375.21
+total_num_agencies: 2
+total_num_applicant_types: 16
+total_num_programs: 4
+total_obs: 26056508.77
 ---

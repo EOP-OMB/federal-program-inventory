@@ -7,6 +7,21 @@ gwo_id: GWO.IA5
 permalink: /gwo/GWO_IA5
 title: Foster International Economic Empowerment and Opportunities
 where_used:
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: AEECA/ESF PD Programs
+  permalink: /program/19.900
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 11265000.0
+  name: Academic Exchange Programs - Hubert H. Humphrey Fellowship Program
+  permalink: /program/19.010
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Ambassadors' Special Self Help Fund
+  permalink: /program/19.220
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2000000.0
   name: Cochran Fellowship Program
@@ -60,6 +75,11 @@ where_used:
 - agency: Inter-American Foundation
   expenditure_amount: 0.0
   name: IAF Assistance for Overseas Programs
+  permalink: /program/85.750
+  program_type: assistance_listing
+- agency: Inter-American Foundation
+  expenditure_amount: 0.0
+  name: IAF Assistance for Overseas Programs
   permalink: /program/85.751
   program_type: assistance_listing
 - agency: Inter-American Foundation
@@ -101,6 +121,11 @@ where_used:
   expenditure_amount: 60000000.0
   name: Project Development
   permalink: /program/87.101
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Scientific Exchanges Program
+  permalink: /program/10.620
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 65700000.0

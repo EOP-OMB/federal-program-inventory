@@ -75,10 +75,10 @@ where_used:
   name: Equipment Grants Program (EGP)
   permalink: /program/10.519
   program_type: assistance_listing
-- agency: Department of Labor
-  expenditure_amount: 0.0
-  name: Job Corps Experimental Projects and Technical Assistance
-  permalink: /program/17.287
+- agency: Department of Health and Human Services
+  expenditure_amount: 151722158.0
+  name: Intramural Research Training Award
+  permalink: /program/93.140
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 13329176.0

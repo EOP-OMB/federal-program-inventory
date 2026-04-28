@@ -60,14 +60,14 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: John R.  Justice Prosecutors and Defenders Incentive Act
-  permalink: /program/16.816
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
   name: Judicial Training on Child Maltreatment for Court Personnel Juvenile Justice
     Programs
   permalink: /program/16.757
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Legal Assistance for Victims
+  permalink: /program/16.524
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 41994960.0
@@ -79,6 +79,11 @@ where_used:
   expenditure_amount: 22471452.0
   name: Low Income Taxpayer Clinics
   permalink: /program/21.008
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Real Estate Programs Indian Lands
+  permalink: /program/15.040
   program_type: assistance_listing
 - agency: Social Security Administration
   expenditure_amount: 0.0
@@ -100,11 +105,10 @@ where_used:
   name: Strengthening Protections for Social Security Beneficiaries
   permalink: /program/96.013
   program_type: assistance_listing
-- agency: Department of Justice
+- agency: Department of the Interior
   expenditure_amount: 0.0
-  name: Tribal Civil and Criminal Legal Assistance Grants, Training and Technical
-    Assistance
-  permalink: /program/16.815
+  name: Tiwahe Demonstration Project-Tribal Court
+  permalink: /program/15.170
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 2872989528.0

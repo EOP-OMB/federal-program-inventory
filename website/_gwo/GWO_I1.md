@@ -13,7 +13,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Denali Commission Grants and Loans '
+  name: Denali Commission Grants and Loans
   permalink: /program/10.858
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -25,10 +25,5 @@ where_used:
   expenditure_amount: 0.0
   name: Tribal Electrification Program
   permalink: /program/15.165
-  program_type: assistance_listing
-- agency: Department of Energy
-  expenditure_amount: 0.0
-  name: Weatherization Assistance for Low-Income Persons
-  permalink: /program/81.042
   program_type: assistance_listing
 ---

@@ -52,6 +52,11 @@ where_used:
   name: Electronic and At-Sea Monitoring Programs
   permalink: /program/11.062
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Energy Policy and Systems Analysis
+  permalink: /program/81.250
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 500000.0
   name: Enhancing the Logical Observation Identifiers Names and Codes (LOINC®) Standard
@@ -87,11 +92,6 @@ where_used:
   expenditure_amount: 44000000.0
   name: General Research and Technology Activity
   permalink: /program/14.506
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Harold Rogers Prescription Drug Monitoring Program
-  permalink: /program/16.754
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 40000000.0
@@ -140,6 +140,16 @@ where_used:
   name: NIH Office of Data Science Strategy (ODSS)
   permalink: /program/93.DSS
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: National Agricultural Library
+  permalink: /program/10.700
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4950000.0
+  name: National Center for Health Workforce Analysis
+  permalink: /program/93.300
+  program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
   name: National Criminal History Improvement Program (NCHIP)
@@ -152,7 +162,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2500000.0
-  name: 'National Geospatial Program: Building The National Map '
+  name: 'National Geospatial Program: Building The National Map'
   permalink: /program/15.817
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
@@ -178,7 +188,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'National Prison Rape Statistics Program '
+  name: National Prison Rape Statistics Program
   permalink: /program/16.739
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -232,6 +242,11 @@ where_used:
   name: State Heating Oil and Propane Program
   permalink: /program/81.138
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: State Justice Statistics Program for Statistical Analysis Centers
+  permalink: /program/16.550
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
   name: State Process for Informing Consumers of Recalls
@@ -257,6 +272,17 @@ where_used:
   name: Supplemental Nutrition Assistance Program (SNAP) Employment and Training (E&T)
     Data and Technical Assistance Grants
   permalink: /program/10.537
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Supplemental Nutrition Assistance Program, Process and Technology Improvement
+    Grants
+  permalink: /program/10.580
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Support for Adam Walsh Act Implementation Grant Program
+  permalink: /program/16.750
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1200000.0

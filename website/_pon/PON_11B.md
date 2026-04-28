@@ -16,21 +16,21 @@ where_used:
   name: Abandoned Mine Land Economic Revitalization (AMLER) Program
   permalink: /program/15.258
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: CHIPS Research and Development
-  permalink: /program/11.042
-  program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 2500000.0
   name: Community Economic Adjustment Assistance for Realignment or Closure of a Military
     Installation
   permalink: /program/12.607
   program_type: assistance_listing
+- agency: Delta Regional Authority
+  expenditure_amount: 0.0
+  name: Delta Regional Authority
+  permalink: /program/90.200
+  program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 4556269.0
-  name: Cybersecurity Workforce Community-Building and Stakeholder Engagement
-  permalink: /program/11.046
+  expenditure_amount: 18000000.0
+  name: Distressed Area Recompete Pilot Program
+  permalink: /program/11.040
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 128000000.0
@@ -52,36 +52,20 @@ where_used:
   name: Gulf Coast Ecosystem Restoration Council Oil Spill Impact Program
   permalink: /program/87.052
   program_type: assistance_listing
-- agency: Small Business Administration
-  expenditure_amount: 0.0
-  name: HUBZone Program
-  permalink: /program/59.055
-  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Improvement and Repair of Indian Detention Facilities
   permalink: /program/15.063
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 4400000.0
-  name: NIST Small Business Innovation Research Program
-  permalink: /program/11.044
-  program_type: assistance_listing
-- agency: Small Business Administration
-  expenditure_amount: 0.0
-  name: Native American Outreach
-  permalink: /program/59.052
+  expenditure_amount: 100000000.0
+  name: Investments for Public Works and Economic Development Facilities
+  permalink: /program/11.300
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
   name: Neighborhood Stabilization Program (Recovery Act Funded)
   permalink: /program/14.256
-  program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 3500000.0
-  name: Regional Alliances and Multistakeholder Partnerships to Stimulate (RAMPS)
-    Cybersecurity Education and Workforce Development
-  permalink: /program/11.048
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 2000000.0

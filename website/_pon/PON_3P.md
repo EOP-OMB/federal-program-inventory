@@ -15,6 +15,11 @@ where_used:
   name: Cybersecurity Education and Training
   permalink: /program/97.127
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Local Law Enforcement Grants for Enforcement of Cybercrimes
+  permalink: /program/16.060
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: State, Local, Tribal and Territorial Security Operations Center/Information

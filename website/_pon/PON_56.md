@@ -14,7 +14,7 @@ title: Improve Quality of School Administrators
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Education Enhancements '
+  name: Education Enhancements
   permalink: /program/15.151
   program_type: assistance_listing
 - agency: Department of the Interior

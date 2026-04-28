@@ -15,6 +15,21 @@ footer_include: _footer-program.html
       <!-- Page Title -->
       {% include components/_page-title.html display_aka=true %}
 
+      <!-- USAID Alert -->
+      {% if page.agency_id == 100148640 %}      
+      <div class="usa-alert usa-alert--info usa-alert--usaid">
+        <div class="usa-alert__body">
+          <h4 class="usa-alert__heading">Important USAID Information</h4>
+          <p class="usa-alert__text">
+            All funding data for USAID, including expenditure and obligation data, is historical and does not represent the
+            current funding envelope. USAID grants are currently under review, and many activities have been terminated
+            because they are inconsistent with Trump administration priorities, or have been transferred to the Department of
+            State.
+          </p>
+        </div>
+      </div>
+      {% endif %}
+
       <!-- Tab Navigation -->
       {% assign program_tabs = "Overview,Spending,Results,Authorization,Oversight" | split: "," %}
       {% include components/_tab-navigation.html tabs=program_tabs %}
@@ -104,7 +119,7 @@ footer_include: _footer-program.html
               <h3 id="chart-header" class="font-heading-sm">Expenditures by Fiscal Year</h3>
               <div class="grid grid-row radius-md">
                 <div class="grid-col-12">
-                  <div id="chart" style="width:100%" data-outlays='{{ outlays }}'></div>
+                  <div id="chart" style="width:100%" data-outlays='{{ outlays }}' data-program-type='{{ page.program_type }}'></div>
                   <p id="no-chart" class="hide">Expenditures not yet available.</p>
                 </div>
               </div>
@@ -121,19 +136,34 @@ footer_include: _footer-program.html
           <div class="grid-col-12">
             <h2 class="text-bold margin-top-0 margin-bottom-3">Spending</h2>
             {% include components/_spending-chart.html
-              outlays=outlays %}
+              outlays=outlays
+              program_type=page.program_type %}
 
-            <h2 class="text-bold margin-top-3 margin-bottom-3">Methodology</h2>
+            <h2 class="text-bold margin-top-3 margin-bottom-3">What information is being displayed here?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+              The graph illustrates the funding level of the program for each available fiscal year. Obligation is what the federal
+              government budgeted for the program. Outlay is what the federal government actually spent. See our <a
+                href="/about/terms" class="usa-link">FPI Data, Terms & Concepts</a> page for more
+              details.
+            </p>
+            
+            <h2 class="text-bold margin-top-3 margin-bottom-3">What does the dotted line represent?</h2>
+            <p>
+              The dotted line represents an estimate of the outlays that would have maintained real per capita
+              spending at fiscal year 2019 levels, adjusting for inflation and population growth. Inflation is measured
+              using the Consumer Price Index for Urban Wage Earners and Clerical Workers <a
+                href="https://fred.stlouisfed.org/series/CWUR0000SA0" class="usa-link" target="_blank"
+                rel="noopener noreferrer">(CPI-W)</a> from the U.S.
+              Bureau of Labor Statistics (BLS). Inflation factors are computed using fiscal year fourth-quarter-over-
+              fourth-quarter growth rates. Population is the <a href="https://fred.stlouisfed.org/series/B230RC0Q173SBEA"
+                class="usa-link" target="_blank" rel="noopener noreferrer">total population</a> of the United States,
+              including the Armed
+              Forces overseas and the institutionalized population from the U.S. Bureau of Economic Analysis’ (BEA)
+              National Income and Product Accounts. Population growth factors are computed using fiscal year
+              fourth-quarter-over-fourth-quarter growth rates.
             </p>
 
-            <h2 class="text-bold margin-top-3 margin-bottom-3">Improper Payments</h2>
+            <h2 class="text-bold margin-top-3 margin-bottom-3">Improper payment program activity for FY {{ site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE }}</h2>
             <div id="improper-payment">
               {% include components/_improper-payment-section.html
                 improper_payments=page.improper_payments

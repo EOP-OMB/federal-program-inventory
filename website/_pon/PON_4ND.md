@@ -12,6 +12,11 @@ title: Strengthen Nuclear Security Infrastructure
 where_used:
 - agency: Department of Energy
   expenditure_amount: 0.0
+  name: Global Material Security
+  permalink: /program/81.210
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
   name: Nonproliferation and Arms Control
   permalink: /program/81.505
   program_type: assistance_listing

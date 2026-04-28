@@ -1,41 +1,44 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":54,"total_obs":2058439655.8700001},{"title":"Agency
-  for International Development","total_num_programs":10,"total_obs":583041716.0},{"title":"Millennium
+agencies: '[{"title":"Department of State","total_num_programs":68,"total_obs":2957822044.4200006},{"title":"Agency
+  for International Development","total_num_programs":11,"total_obs":583041716.0},{"title":"U.S.
+  Agency for Global Media","total_num_programs":1,"total_obs":321664441.0},{"title":"Millennium
   Challenge Corporation","total_num_programs":1,"total_obs":261055003.2},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":1998531.15},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":2518590.15},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":62900.0},{"title":"United States
-  Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
+  Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Japan-U.S.
+  Friendship Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
+  Foundation","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health
   and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":3,"total_obs":0.0},{"title":"United
+  of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"United
   States International Development Finance Corporation","total_num_programs":4,"total_obs":-1337861575.8}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":25},{"title":"Nonprofit
-  Organization","total_num_programs":23},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"Non-Government
-  - General","total_num_programs":19},{"title":"Other private institutions/organizations","total_num_programs":13},{"title":"Not-for-Profit
-  Organization","total_num_programs":11},{"title":"Foreign Non-Government Nonprofit
-  Organization","total_num_programs":10},{"title":"Foreign Non-Government Not-for-Profit
-  Organization","total_num_programs":9},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":9},{"title":"Sponsored
-  organization","total_num_programs":9},{"title":"Other public institution/organization","total_num_programs":8},{"title":"International
-  Organization","total_num_programs":7},{"title":"Anyone/general public","total_num_programs":6},{"title":"For-Profit
-  Organization","total_num_programs":5},{"title":"Foreign Non-Governmental For-Profit
-  Organization","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Non-domestic
-  (non-US) Entity","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":3},{"title":"Government
-  - General","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Minority
-  group","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":2},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Foreign
-  Government","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
-  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Local
+  of higher education and hospitals)","total_num_programs":32},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":29},{"title":"Nonprofit
+  Organization","total_num_programs":28},{"title":"Non-Government - General","total_num_programs":25},{"title":"Other
+  private institutions/organizations","total_num_programs":15},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":13},{"title":"Sponsored
+  organization","total_num_programs":13},{"title":"Foreign Non-Government Nonprofit
+  Organization","total_num_programs":12},{"title":"Not-for-Profit Organization","total_num_programs":12},{"title":"Other
+  public institution/organization","total_num_programs":12},{"title":"Foreign Non-Government
+  Not-for-Profit Organization","total_num_programs":11},{"title":"Other","total_num_programs":8},{"title":"International
+  Organization","total_num_programs":7},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":7},{"title":"Anyone/general
+  public","total_num_programs":6},{"title":"Foreign Non-Governmental For-Profit Organization","total_num_programs":6},{"title":"Profit
+  organization","total_num_programs":6},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Individual/Family","total_num_programs":4},{"title":"Non-domestic
+  (non-US) Entity","total_num_programs":4},{"title":"Small business (less than 500
+  employees)","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
+  and hospitals","total_num_programs":3},{"title":"Minority group","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Government
+  - General","total_num_programs":2},{"title":"U.S. State Government (including the
+  District of Columbia)","total_num_programs":2},{"title":"Department or Agency of
+  a U.S. State Government","total_num_programs":1},{"title":"Federally Recognized
+  Indian Tribal Governments","total_num_programs":1},{"title":"Foreign Government","total_num_programs":1},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":1},{"title":"Nonprofit with 501C3 IRS Status
+  (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
   (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Other
   Special Disctrict Government","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
@@ -248,11 +251,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/international-affairs
-sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":83,"total_obs":1566736230.4200003}]'
+sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":102,"total_obs":2788303118.9700003}]'
 title: International Affairs
-total_num_agencies: 12
-total_num_applicant_types: 55
-total_num_programs: 83
+total_num_agencies: 13
+total_num_applicant_types: 57
+total_num_programs: 102
 total_num_sub_cats: 1
-total_obs: 1566736230.4200003
+total_obs: 2788303118.9700003
 ---

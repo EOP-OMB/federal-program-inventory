@@ -19,12 +19,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 102105000.0
-  name: 'ACL Centers for Independent Living '
+  name: ACL Centers for Independent Living
   permalink: /program/93.432
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 26078000.0
-  name: 'ACL Independent Living State Grants '
+  name: ACL Independent Living State Grants
   permalink: /program/93.369
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -32,10 +32,20 @@ where_used:
   name: Assistive Technology Alternative Financing Program
   permalink: /program/93.469
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 4376672.0
+  name: Assistive Technology Program for Farmers with Disabilities
+  permalink: /program/10.280
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 36000000.0
   name: Autism Collaboration, Accountability, Research, Education, and Support
   permalink: /program/93.877
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 125000000.0
+  name: Developmental Disabilities Basic Support and Advocacy Grants
+  permalink: /program/93.630
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -59,7 +69,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 553828181.0
-  name: 'Money Follows the Person Rebalancing Demonstration '
+  name: Money Follows the Person Rebalancing Demonstration
   permalink: /program/93.791
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
@@ -74,7 +84,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1794463.0
-  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education '
+  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education'
   permalink: /program/93.315
   program_type: assistance_listing
 - agency: Department of Education
@@ -90,8 +100,24 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
+  name: Special Education - Special Olympics Education Programs
+  permalink: /program/84.380
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education Parent Information Centers
+  permalink: /program/84.328
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
   name: Supported Employment Services for Individuals with the Most Significant Disabilities
   permalink: /program/84.187
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Training Interpreters for Individuals who are Deaf and Individuals who are
+    Deaf-Blind
+  permalink: /program/84.160
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 40887330.0

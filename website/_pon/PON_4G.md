@@ -39,7 +39,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 290217000.0
-  name: 'Fresh Fruit and Vegetable Program '
+  name: Fresh Fruit and Vegetable Program
   permalink: /program/10.582
   program_type: assistance_listing
 - agency: Department of Agriculture

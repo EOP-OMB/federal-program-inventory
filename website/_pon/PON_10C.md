@@ -25,6 +25,11 @@ where_used:
   name: Denali Commission Program
   permalink: /program/90.003
   program_type: assistance_listing
+- agency: Denali Commission
+  expenditure_amount: 0.0
+  name: Denali Commission Program
+  permalink: /program/90.100
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 60000000.0
   name: Economic, Social, and Political Development of the Territories
@@ -37,12 +42,17 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
+  name: Federal-State Partnership for Intercity Passenger Rail Grant Program
+  permalink: /program/20.340
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
   name: Highway Planning and Construction
   permalink: /program/20.205
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 1500000000.0
-  name: 'National Infrastructure Investments '
+  name: National Infrastructure Investments
   permalink: /program/20.933
   program_type: assistance_listing
 - agency: Department of Transportation

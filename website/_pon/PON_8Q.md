@@ -31,8 +31,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Brownfields Training, Research, and Technical Assistance Grants and Cooperative
-    Agreements '
+  name: Brownfields Training, Research, and Technical Assistance Grants and Cooperative
+    Agreements
   permalink: /program/66.814
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -42,8 +42,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Compliance Assistance Support for Services to the Regulated Community and
-    Other Assistance Providers '
+  name: Compliance Assistance Support for Services to the Regulated Community and
+    Other Assistance Providers
   permalink: /program/66.305
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -55,6 +55,11 @@ where_used:
   expenditure_amount: 50000000.0
   name: Congestion Relief Program
   permalink: /program/20.269
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Consolidated Pesticide Enforcement Cooperative Agreements
+  permalink: /program/66.700
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
@@ -79,7 +84,7 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Environmental Justice Small Grant Program '
+  name: Environmental Justice Small Grant Program
   permalink: /program/66.604
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -89,13 +94,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Environmental Management Indian '
+  name: Environmental Management Indian
   permalink: /program/15.041
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
   name: Environmental Monitoring, Independent Research, Technical Analysis
   permalink: /program/81.005
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 55197980.0
+  name: Environmental Public Health and Emergency Response
+  permalink: /program/93.070
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5000000.0
@@ -160,7 +170,7 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
-  name: 'Multipurpose Grants to States and Tribes '
+  name: Multipurpose Grants to States and Tribes
   permalink: /program/66.204
   program_type: assistance_listing
 - agency: Department of Energy
@@ -177,6 +187,11 @@ where_used:
   expenditure_amount: 1000000.0
   name: Performance Partnership Grants
   permalink: /program/66.605
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 82000000.0
+  name: Pipeline Safety Program State Base Grant
+  permalink: /program/20.700
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 13900000.0
@@ -203,10 +218,21 @@ where_used:
   name: Source Reduction Assistance
   permalink: /program/66.717
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 150000.0
+  name: South Carolina Support for Foreign Research Reactor Spent Nuclear Fuel (FRRSNF)
+    Shipments
+  permalink: /program/81.180
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 169999999.0
   name: Southern Nevada Public Land Management
   permalink: /program/15.235
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 13951062.0
+  name: State Capacity Building
+  permalink: /program/93.240
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 46000000.0
@@ -220,9 +246,14 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 75000000.0
-  name: 'Superfund State, Political Subdivision, and Indian Tribe Site-Specific Cooperative
-    Agreements '
+  name: Superfund State, Political Subdivision, and Indian Tribe Site-Specific Cooperative
+    Agreements
   permalink: /program/66.802
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 2000000.0
+  name: Technical Assistance Grants
+  permalink: /program/20.710
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0

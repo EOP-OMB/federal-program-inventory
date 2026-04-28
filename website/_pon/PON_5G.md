@@ -23,11 +23,6 @@ where_used:
   name: Replacement and Repair of Indian Schools
   permalink: /program/15.062
   program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: STOP School Violence
-  permalink: /program/16.839
-  program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
   name: School Safely National Activities

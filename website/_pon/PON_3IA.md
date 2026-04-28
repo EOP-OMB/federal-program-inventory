@@ -16,6 +16,16 @@ where_used:
   name: Contributions to International Organizations for Overseas Assistance
   permalink: /program/19.515
   program_type: assistance_listing
+- agency: Agency for International Development
+  expenditure_amount: 0.0
+  name: Denton Program
+  permalink: /program/98.010
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Department of Defense HIV/AIDS Prevention Program
+  permalink: /program/12.350
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 790000000.0
   name: Food for Peace, Title II
@@ -35,6 +45,11 @@ where_used:
   expenditure_amount: 0.0
   name: Overseas Refugee Assistance Programs for East Asia
   permalink: /program/19.511
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Overseas Refugee Assistance Programs for Europe
+  permalink: /program/19.520
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

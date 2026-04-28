@@ -10,6 +10,12 @@ permalink: /pon/PON_3J
 title: Improve Quality of Environmental Water
 where_used:
 - agency: Environmental Protection Agency
+  expenditure_amount: 3548782.0
+  name: Centers of Excellence for Stormwater Control Infrastructure Technologies Grant
+    Program
+  permalink: /program/66.490
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
   expenditure_amount: 2333289868.0
   name: Clean Water State Revolving Fund
   permalink: /program/66.458
@@ -28,6 +34,12 @@ where_used:
   expenditure_amount: 300000.0
   name: Environmental Finance Center Grants
   permalink: /program/66.203
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 39010540.0
+  name: Environmental Protection Consolidated Grants for the Insular Areas - Program
+    Support
+  permalink: /program/66.600
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 56000000.0
@@ -49,6 +61,12 @@ where_used:
   expenditure_amount: 80000000.0
   name: Geographic Programs - Great Lakes Restoration Initiative
   permalink: /program/66.469
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 20000000.0
+  name: Geographic Programs - Gulf Coast Ecosystem Restoration Council Comprehensive
+    Plan Component
+  permalink: /program/66.130
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 37510615.0
@@ -116,6 +134,16 @@ where_used:
   permalink: /program/66.931
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 350000.0
+  name: Lake Mead/Las Vegas Wash
+  permalink: /program/15.540
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 100000.0
+  name: Lake Tahoe Erosion Control Grant Program
+  permalink: /program/10.690
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 0.0
   name: Mine Drainage Technology Initiative (MDTI)
   permalink: /program/15.259
@@ -140,6 +168,11 @@ where_used:
   expenditure_amount: 0.0
   name: Non-State Member Support for the Gulf Hypoxia Action Plan
   permalink: /program/66.487
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 20423485.0
+  name: Nonpoint Source Implementation Grants
+  permalink: /program/66.460
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 13100000.0
@@ -199,7 +232,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1800000.0
-  name: 'Yakima River Basin Water Enhancement (YRBWE) '
+  name: Yakima River Basin Water Enhancement (YRBWE)
   permalink: /program/15.531
   program_type: assistance_listing
 ---

@@ -39,8 +39,24 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Bureau of Near Eastern Affairs
+  permalink: /program/19.600
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Bureau of Western Hemisphere Affairs Assistance Coordination (WHA/AC) Grant
+    Programs
+  permalink: /program/19.750
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Conflict and Stabilization Operations
   permalink: /program/19.121
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Contributions to International Organizations- CIO
+  permalink: /program/19.790
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -64,8 +80,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
-  name: 'Global Peace Operations Initiative '
+  name: Global Peace Operations Initiative
   permalink: /program/19.026
+  program_type: assistance_listing
+- agency: U.S. Agency for Global Media
+  expenditure_amount: 0.0
+  name: International Broadcasting Independent Grantee Organizations
+  permalink: /program/90.500
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -76,6 +97,11 @@ where_used:
   expenditure_amount: 0.0
   name: Investing in People in The Middle East and North Africa
   permalink: /program/19.021
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Middle East Partnership Initiative
+  permalink: /program/19.500
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -101,6 +127,11 @@ where_used:
   expenditure_amount: 0.0
   name: Priority Grant Competition
   permalink: /program/91.005
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Public Diplomacy Programs
+  permalink: /program/19.040
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

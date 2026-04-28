@@ -38,6 +38,21 @@ where_used:
     Fellows Programs
   permalink: /program/10.593
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Career and Technical Education - Grants to Native Americans and Alaska Natives
+  permalink: /program/84.101
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Career and Technical Education -- National Programs
+  permalink: /program/84.051
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Charles B. Rangel International Affairs Program
+  permalink: /program/19.020
+  program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
   name: Community Project Funding/Congressionally Directed Spending
@@ -47,6 +62,11 @@ where_used:
   expenditure_amount: 21000000.0
   name: Crop Protection and Pest Management Competitive Grants Program
   permalink: /program/10.329
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Disability Employment Policy Development
+  permalink: /program/17.720
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 250000.0
@@ -69,6 +89,11 @@ where_used:
   name: Experienced Services
   permalink: /program/15.019
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Experienced Services Program
+  permalink: /program/15.070
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 20640000.0
   name: Facility Improvements at 1890 Facilities (Sec. 1447)
@@ -78,11 +103,6 @@ where_used:
   expenditure_amount: 0.0
   name: H-1B Job Training Grants
   permalink: /program/17.268
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 105849075.71
-  name: Healthy Marriage Promotion and Responsible Fatherhood Grants
-  permalink: /program/93.086
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -94,15 +114,20 @@ where_used:
   name: Indian Job Placement United Sioux Tribes Development Corporation
   permalink: /program/15.061
   program_type: assistance_listing
-- agency: Department of Education
+- agency: Department of the Interior
   expenditure_amount: 0.0
-  name: Innovative Rehabilitation Training
-  permalink: /program/84.263
+  name: Indian Vocational Training United Tribes Technical College
+  permalink: /program/15.060
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 10400000.0
   name: Innovative Water Infrastructure Workforce Development Program (SDWA 1459E)
   permalink: /program/66.445
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Job Corps Experimental Projects and Technical Assistance
+  permalink: /program/17.287
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
@@ -135,9 +160,14 @@ where_used:
   name: Native American Employment and Training
   permalink: /program/17.265
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Native Hawaiian Career and Technical Education
+  permalink: /program/84.259
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'OSM/VISTA AmeriCorps '
+  name: OSM/VISTA AmeriCorps
   permalink: /program/15.254
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -170,26 +200,25 @@ where_used:
   name: Senior Community Service Employment Program
   permalink: /program/17.235
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 300000.0
-  name: Standards Coordination Office Curricula Development Cooperative Agreement
-    Program
-  permalink: /program/11.057
+- agency: Department of Agriculture
+  expenditure_amount: 2801160.0
+  name: Sun Grant Program
+  permalink: /program/10.320
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 16564000.0
   name: Technical Assistance and Workforce Development
   permalink: /program/20.531
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Technical Assistance to Cooperatives
+  permalink: /program/10.350
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Thomas R. Pickering Foreign Affairs Fellowship Program
   permalink: /program/19.013
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Traditionally Underserved Populations
-  permalink: /program/84.315
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 7633287.0
@@ -205,6 +234,16 @@ where_used:
   expenditure_amount: 0.0
   name: WIOA Adult Program
   permalink: /program/17.258
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: WIOA Adult, Dislocated Worker and Youth Outlying Areas Consolidated Grants
+  permalink: /program/17.290
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: WIOA Dislocated Worker National Reserve Demonstration Grants
+  permalink: /program/17.280
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
@@ -229,12 +268,17 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
+  name: Women's Bureau
+  permalink: /program/17.700
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
   name: Workforce Data Quality Initiative (WDQI)
   permalink: /program/17.261
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 28000000.0
-  name: 'Youth Engagement, Education, and Employment '
+  name: Youth Engagement, Education, and Employment
   permalink: /program/15.676
   program_type: assistance_listing
 - agency: Department of the Interior

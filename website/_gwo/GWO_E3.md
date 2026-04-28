@@ -8,6 +8,16 @@ gwo_id: GWO.E3
 permalink: /gwo/GWO_E3
 title: Provide Cultural Educational Experiences
 where_used:
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Alaska Native Educational Programs
+  permalink: /program/84.356
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: American History and Civics Education
+  permalink: /program/84.422
+  program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 0.0
   name: American Latino Museum Internship and Fellowship Initiative
@@ -42,7 +52,7 @@ where_used:
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 3772000.0
-  name: 'Native American/Native Hawaiian Museum Services Program '
+  name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: Department of the Interior

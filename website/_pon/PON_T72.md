@@ -40,9 +40,24 @@ where_used:
   permalink: /program/31.007
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 5000000000.0
+  name: Export Guarantee Program
+  permalink: /program/10.610
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 240000000.0
   name: Food for Progress
   permalink: /program/10.606
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 34500000.0
+  name: Foreign Market Development Cooperator Program
+  permalink: /program/10.600
+  program_type: assistance_listing
+- agency: Inter-American Foundation
+  expenditure_amount: 0.0
+  name: IAF Assistance for Overseas Programs
+  permalink: /program/85.750
   program_type: assistance_listing
 - agency: Inter-American Foundation
   expenditure_amount: 0.0
@@ -76,7 +91,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2500000.0
-  name: 'Quality Samples Program '
+  name: Quality Samples Program
   permalink: /program/10.605
   program_type: assistance_listing
 - agency: Department of the Treasury

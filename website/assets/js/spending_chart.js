@@ -52,9 +52,10 @@ const spendingChartDefaultConfig = {
   yAxisWidth: 2
 };
 
-function createSpendingChart(containerId, data, config = spendingChartDefaultConfig) {
+function createSpendingChart(containerId, data, programType, config = spendingChartDefaultConfig) {
   const chartWidth = config.viewBoxWidth - config.margin.left - config.margin.right;
   const chartHeight = config.viewBoxHeight - config.margin.top - config.margin.bottom;
+  const showObligations = programType !== 'tax_expenditure' && programType !== 'interest'
 
   _resetSpendingContainer(containerId);
   const svg = _createSpendingSvg(containerId, config);
@@ -69,11 +70,13 @@ function createSpendingChart(containerId, data, config = spendingChartDefaultCon
 
   _addBarLabels(svg, data.barLabels, data.obligations, xScale, yScale, config);
 
-  _addObligationLines(svg, data.obligations, xScale, yScale, config);
+  if (showObligations) {
+    _addObligationLines(svg, data.obligations, xScale, yScale, config);
+  }
 
   _addProjectedLine(svg, data.projectedOutlays, xScale, yScale, config);
 
-  _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data);
+  _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations);
 }
 
 function _resetSpendingContainer(containerId) {
@@ -376,7 +379,7 @@ function _addProjectedLine(svg, projectedOutlays, xScale, yScale, config) {
   }
 }
 
-function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data) {
+function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations) {
   const tooltip = d3.select("body").append("div")
     .attr("class", "spending-chart-tooltip");
 
@@ -434,7 +437,7 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
         tooltipContent += `Revenue Losses: ${formatDollarAmount(revenueLossPoint.value)}<br/>`;
       }
 
-      if (obligationPoint) {
+      if (obligationPoint && showObligations) {
         tooltipContent += `Obligations: ${formatDollarAmount(obligationPoint.value)}<br/>`;
       }
 
@@ -565,9 +568,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = parseInt(chartElement.getAttribute('data-current-year'), 10);
     const initialYear = parseInt(chartElement.getAttribute('data-initial-year'), 10);
     const baselineInflationYear = parseInt(chartElement.getAttribute('data-baseline-inflation-year'), 10);
+    const programType = chartElement.getAttribute('data-program-type');
 
     prepareData(chartElement, spendingData, currentYear, initialYear, baselineInflationYear);
-    createSpendingChart('#' + chartId, spendingData);
+    createSpendingChart('#' + chartId, spendingData, programType);
 
     // toggle off projection by default
     document.getElementById(toggleId)?.click();

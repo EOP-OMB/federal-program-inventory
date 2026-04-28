@@ -38,14 +38,14 @@ where_used:
   permalink: /program/20.541
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Enhanced Mobility of Seniors and Individuals with Disabilities
+  permalink: /program/20.513
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 449875000.0
   name: Enhanced Mobility of Seniors and Individuals with Disabilities
   permalink: /program/20.536
-  program_type: assistance_listing
-- agency: Department of Transportation
-  expenditure_amount: 0.0
-  name: 'Enhanced Mobility of Seniors and Individuals with Disabilities '
-  permalink: /program/20.513
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 1640000000.0
@@ -58,6 +58,11 @@ where_used:
     facilities
   permalink: /program/TC.093
   program_type: tax_expenditure
+- agency: Department of Transportation
+  expenditure_amount: 4071878000.0
+  name: Federal Transit Capital Investment Grants
+  permalink: /program/20.500
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 8535352000.0
   name: Federal Transit Formula Grants
@@ -90,14 +95,24 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
-  name: 'Metropolitan Transportation Planning and State and Non-Metropolitan Planning
-    and Research '
+  name: Metropolitan Transportation Planning and State and Non-Metropolitan Planning
+    and Research
   permalink: /program/20.505
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
   name: New Freedom Program
   permalink: /program/20.521
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Paul S. Sarbanes Transit in the Parks
+  permalink: /program/20.520
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 29244000.0
+  name: Public Transportation Innovation
+  permalink: /program/20.530
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 4420752000.0

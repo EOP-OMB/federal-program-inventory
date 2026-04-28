@@ -18,6 +18,11 @@ where_used:
   permalink: /program/15.557
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 50000000.0
+  name: Aquatic Ecosystem Restoration Program
+  permalink: /program/15.580
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 10000000.0
   name: Aquatics Resources Management
   permalink: /program/15.244
@@ -33,14 +38,24 @@ where_used:
   permalink: /program/15.648
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 6000000.0
+  name: Coastal
+  permalink: /program/15.630
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 19999999.0
-  name: 'Coastal Wetlands Planning, Protection and Restoration '
+  name: Coastal Wetlands Planning, Protection and Restoration
   permalink: /program/15.614
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 85732200.0
   name: Coastal Zone Management Administration Awards
   permalink: /program/11.419
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 36109976.0
+  name: Coastal Zone Management Estuarine Research Reserves
+  permalink: /program/11.420
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 21100000.0
@@ -49,7 +64,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5000000.0
-  name: 'Cooperative Watershed Management '
+  name: Cooperative Watershed Management
   permalink: /program/15.554
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -84,8 +99,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Emergency Watershed Protection Program - Floodplain Easements – Disaster
-    Relief Appropriations Act '
+  name: Emergency Watershed Protection Program - Floodplain Easements – Disaster Relief
+    Appropriations Act
   permalink: /program/10.928
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -123,6 +138,12 @@ where_used:
   expenditure_amount: 80000000.0
   name: Geographic Programs - Great Lakes Restoration Initiative
   permalink: /program/66.469
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 20000000.0
+  name: Geographic Programs - Gulf Coast Ecosystem Restoration Council Comprehensive
+    Plan Component
+  permalink: /program/66.130
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 37510615.0
@@ -209,13 +230,18 @@ where_used:
   permalink: /program/10.721
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 350000.0
+  name: Lake Mead/Las Vegas Wash
+  permalink: /program/15.540
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Lake Tahoe Regional Wetlands Development '
+  name: Lake Tahoe Regional Wetlands Development
   permalink: /program/15.543
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 498000.0
-  name: 'Lower Colorado River Multi-Species Conservation '
+  name: Lower Colorado River Multi-Species Conservation
   permalink: /program/15.538
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -256,7 +282,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 4000000.0
-  name: 'National Wild and Scenic Rivers System '
+  name: National Wild and Scenic Rivers System
   permalink: /program/15.962
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -291,7 +317,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 267521.5
-  name: 'San Joaquin River Restoration '
+  name: San Joaquin River Restoration
   permalink: /program/15.555
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -316,7 +342,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 7294048.0
-  name: 'Title II, Colorado River Basin Salinity Control '
+  name: Title II, Colorado River Basin Salinity Control
   permalink: /program/15.509
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -331,12 +357,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Upper Colorado River Basin Fish and Wildlife Mitigation '
+  name: Upper Colorado River Basin Fish and Wildlife Mitigation
   permalink: /program/15.535
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3042284.34
-  name: 'Upper Colorado and San Juan River Basins Endangered Fish Recovery '
+  name: Upper Colorado and San Juan River Basins Endangered Fish Recovery
   permalink: /program/15.529
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -353,6 +379,11 @@ where_used:
   expenditure_amount: 4261000.0
   name: Water Bank Program
   permalink: /program/10.929
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Water Conservation Field Services (WCFS)
+  permalink: /program/15.530
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 28596000.0
@@ -378,6 +409,11 @@ where_used:
   expenditure_amount: 0.0
   name: WaterSMART (Sustain and Manage America’s Resources for Tomorrow)
   permalink: /program/15.507
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 1000000.0
+  name: WaterSMART Drought Response Program
+  permalink: /program/15.590
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 35000000.0
@@ -416,7 +452,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1800000.0
-  name: 'Yakima River Basin Water Enhancement (YRBWE) '
+  name: Yakima River Basin Water Enhancement (YRBWE)
   permalink: /program/15.531
   program_type: assistance_listing
 - agency: Department of the Interior

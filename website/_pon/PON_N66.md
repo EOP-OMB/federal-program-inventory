@@ -9,6 +9,17 @@ gwo_id: PON.N66
 permalink: /pon/PON_N66
 title: Facilitate International Infrastructure and Development Projects
 where_used:
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Ambassadors' Special Self Help Fund
+  permalink: /program/19.220
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Bureau of Western Hemisphere Affairs Assistance Coordination (WHA/AC) Grant
+    Programs
+  permalink: /program/19.750
+  program_type: assistance_listing
 - agency: Agency for International Development
   expenditure_amount: 0.0
   name: Cooperative Development Program (CDP)

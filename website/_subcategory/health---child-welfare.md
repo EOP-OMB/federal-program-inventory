@@ -1,19 +1,20 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":3,"total_obs":2090000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":17,"total_obs":918905774.29},{"title":"Department
+  of Health and Human Services","total_num_programs":20,"total_obs":997433468.29},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":4141463.46},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":16},{"title":"Federally Recognized
-  Indian/Native American/Alaska Native Tribal Government","total_num_programs":12},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":8},{"title":"Local","total_num_programs":4},{"title":"Nonprofit
-  Organization","total_num_programs":3},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Department
+applicant_types: '[{"title":"State","total_num_programs":19},{"title":"Federally Recognized
+  Indian/Native American/Alaska Native Tribal Government","total_num_programs":13},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":9},{"title":"Local","total_num_programs":5},{"title":"Nonprofit
+  Organization","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Not-for-Profit
+  Organization","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":1},{"title":"For-Profit
   Organization","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
   Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":1}]'
+  associations)","total_num_programs":1},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -233,7 +234,9 @@ programs: '[{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion of
   Tubbs Jones Child Welfare Services Program","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":266745282.0,"program_type":"assistance_listing"},{"cfda":"93.669","permalink":"/program/93.669","title":"Child
   Abuse and Neglect State Grants","popular_name":"CAPTA State Grants","agency":"Department
-  of Health and Human Services","total_obs":103219794.0,"program_type":"assistance_listing"},{"cfda":"93.603","permalink":"/program/93.603","title":"Adoption
+  of Health and Human Services","total_obs":103219794.0,"program_type":"assistance_listing"},{"cfda":"93.590","permalink":"/program/93.590","title":"Community-Based
+  Child Abuse Prevention Grants","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":66959400.0,"program_type":"assistance_listing"},{"cfda":"93.603","permalink":"/program/93.603","title":"Adoption
   and Legal Guardianship Incentive Payments Program","popular_name":"Adoption and
   Legal Guardianship Incentive Payments, ALGIPP","agency":"Department of Health and
   Human Services","total_obs":39780000.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
@@ -245,7 +248,8 @@ programs: '[{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion of
   Court Improvement Program","popular_name":"State and Tribal Court Improvement Programs","agency":"Department
   of Health and Human Services","total_obs":29319245.0,"program_type":"assistance_listing"},{"cfda":"93.643","permalink":"/program/93.643","title":"Children''s
   Justice Grants to States","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":17138358.98,"program_type":"assistance_listing"},{"cfda":"93.472","permalink":"/program/93.472","title":"Title
+  Human Services","total_obs":17138358.98,"program_type":"assistance_listing"},{"cfda":"93.090","permalink":"/program/93.090","title":"Guardianship
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":11568294.0,"program_type":"assistance_listing"},{"cfda":"93.472","permalink":"/program/93.472","title":"Title
   IV-E Prevention Program","popular_name":"Title IV-E Prevention Services","agency":"Department
   of Health and Human Services","total_obs":9538701.0,"program_type":"assistance_listing"},{"cfda":"93.597","permalink":"/program/93.597","title":"Grants
   to States for Access and Visitation Programs","popular_name":null,"agency":"Department
@@ -254,8 +258,10 @@ programs: '[{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion of
   Interior","total_obs":4141463.46,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
   Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1600000.0,"program_type":"assistance_listing"},{"cfda":"93.471","permalink":"/program/93.471","title":"Title
   IV-E Kinship Navigator Program","popular_name":"Kinship Navigator","agency":"Department
-  of Health and Human Services","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
-  Welfare Research Training or Demonstration ","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"93.670","permalink":"/program/93.670","title":"Child
+  Abuse and Neglect Discretionary Activities","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
+  Welfare Research Training or Demonstration","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.087","permalink":"/program/93.087","title":"Enhance
   Safety of Children Affected by Substance Abuse","popular_name":"Regional Partnership
   Grants (RPGs)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.338","permalink":"/program/10.338","title":"Family
@@ -267,6 +273,6 @@ programs: '[{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion of
 title: Child Welfare
 total_num_agencies: 4
 total_num_applicant_types: 15
-total_num_programs: 22
-total_obs: 3013047237.75
+total_num_programs: 25
+total_obs: 3091574931.75
 ---

@@ -33,4 +33,9 @@ where_used:
     Program
   permalink: /program/11.057
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 509927000.0
+  name: State Administrative Expenses for Child Nutrition
+  permalink: /program/10.560
+  program_type: assistance_listing
 ---

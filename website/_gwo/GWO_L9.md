@@ -8,6 +8,11 @@ permalink: /gwo/GWO_L9
 title: Ensure Safe Drinking Water
 where_used:
 - agency: Department of the Interior
+  expenditure_amount: 800000.0
+  name: Bay-Delta Restoration Program
+  permalink: /program/15.570
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 0.0
   name: Blackfeet Water Rights Settlement
   permalink: /program/15.075
@@ -16,6 +21,11 @@ where_used:
   expenditure_amount: 200000.0
   name: California Water Security and Environmental Enhancement
   permalink: /program/15.533
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Colorado Ute Indian Water Rights Settlement Act
+  permalink: /program/15.510
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 6576002419.0
@@ -30,7 +40,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 60000.0
-  name: 'Eastern New Mexico Rural Water System '
+  name: Eastern New Mexico Rural Water System
   permalink: /program/15.553
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -45,7 +55,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Equus Beds Division Acquifer Storage Recharge '
+  name: Equus Beds Division Acquifer Storage Recharge
   permalink: /program/15.539
   program_type: assistance_listing
 - agency: Department of the Treasury
@@ -55,7 +65,7 @@ where_used:
   program_type: tax_expenditure
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Fort Peck Reservation Rural Water System '
+  name: Fort Peck Reservation Rural Water System
   permalink: /program/15.516
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -67,6 +77,11 @@ where_used:
   expenditure_amount: 2000000.0
   name: Innovative Water Technology Grant Program
   permalink: /program/66.521
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Lewis and Clark Rural Water System
+  permalink: /program/15.520
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 4500000.0
@@ -85,8 +100,13 @@ where_used:
   permalink: /program/15.076
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 1000000.0
+  name: National Ground-Water Monitoring Network
+  permalink: /program/15.980
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 4099025.0
-  name: 'Navajo-Gallup Water Supply '
+  name: Navajo-Gallup Water Supply
   permalink: /program/15.552
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -101,7 +121,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'San Gabriel Basin Restoration '
+  name: SECURE Water Act – Research Agreements
+  permalink: /program/15.560
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: San Gabriel Basin Restoration
   permalink: /program/15.526
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -128,7 +153,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3300000.0
-  name: 'Water Desalination Research and Development '
+  name: Water Desalination Research and Development
   permalink: /program/15.506
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -159,7 +184,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'White Mountain Apache Tribe Rural Water System '
+  name: White Mountain Apache Tribe Rural Water System
   permalink: /program/15.558
   program_type: assistance_listing
 ---

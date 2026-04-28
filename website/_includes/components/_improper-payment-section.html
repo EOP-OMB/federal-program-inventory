@@ -22,7 +22,7 @@
 {% if has_ip == true %}
     {% if include.improper_payments_is_multiple == false %}
         <!-- Scenario 1 & 2a -->
-        <p>The last reported improper payment estimate displayed above covers the period from {{ first_item_start_date }} to {{ first_item_end_date }}.</p>
+        <p>The last reported improper payment estimate displayed covers the period from {{ first_item_start_date }} to {{ first_item_end_date }}.</p>
     {% else %}
         <!-- Scenario 2b -->
         <p>There are multiple improper payment estimates for this set of related programs.</p>
@@ -90,7 +90,7 @@
 
 {% if has_related_programs == true %}
     <!-- Scenario 2a & 4 -->
-    <p>The last reported improper payment estimate displayed above is associated with multiple programs.</p>
+    <p>The last reported improper payment estimate displayed is associated with multiple programs.</p>
     <ul>
         {% for related_program in include.improper_payments_related_programs %}
             <li><a href="{{ related_program.permalink }}">{{ related_program.name }}</a></li>

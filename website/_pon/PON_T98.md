@@ -21,6 +21,11 @@ where_used:
   name: Early Hearing Detection and Intervention
   permalink: /program/93.251
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Participant Research Innovation Laboratory for Enhancing WIC Services
+  permalink: /program/10.540
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1879010127.0
   name: Substance Abuse and Mental Health Services Projects of Regional and National

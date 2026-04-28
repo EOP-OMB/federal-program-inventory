@@ -27,14 +27,39 @@ where_used:
   permalink: /program/10.332
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Agricultural Market and Economic Research
+  permalink: /program/10.290
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 313000000.0
   name: Agricultural Research Basic and Applied Research
   permalink: /program/10.001
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Agricultural Statistics Reports
+  permalink: /program/10.950
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 8000000.0
   name: Agricultural and Food Policy Research Centers
   permalink: /program/10.291
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 500000.0
+  name: Agricultural and Rural Economic Research, Cooperative Agreements and Collaborations
+  permalink: /program/10.250
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 397335870.0
+  name: Agriculture and Food Research Initiative (AFRI)
+  permalink: /program/10.310
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 3702297.0
+  name: Alfalfa Seed and Alfalfa Forage Systems Program
+  permalink: /program/10.330
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2730780.0
@@ -107,6 +132,11 @@ where_used:
   permalink: /program/10.319
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Farm of the Future
+  permalink: /program/10.230
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 1000000.0
   name: Federal-State Marketing Improvement Program
   permalink: /program/10.156
@@ -115,6 +145,11 @@ where_used:
   expenditure_amount: 0.0
   name: Food Loss and Waste Reduction
   permalink: /program/10.292
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 4631287.0
+  name: Grants for Agricultural Research, Special Research Grants
+  permalink: /program/10.200
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
@@ -155,6 +190,11 @@ where_used:
   expenditure_amount: 13874400.0
   name: Minor Crop Pest Management
   permalink: /program/10.248
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: National Agricultural Library
+  permalink: /program/10.700
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 125000.0
@@ -224,6 +264,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
+  name: Scientific Exchanges Program
+  permalink: /program/10.620
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
   name: Socially Disadvantaged Farmers and Ranchers Policy Research Center
   permalink: /program/10.464
   program_type: assistance_listing
@@ -238,9 +283,19 @@ where_used:
   permalink: /program/10.343
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 89300000.0
+  name: Specialty Crop Block Grant Program - Farm Bill
+  permalink: /program/10.170
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 159653129.0
   name: Specialty Crop Research Initiative
   permalink: /program/10.309
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 2801160.0
+  name: Sun Grant Program
+  permalink: /program/10.320
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1815036.0
@@ -251,6 +306,11 @@ where_used:
   expenditure_amount: 45054028.0
   name: Sustainable Agriculture Research and Education
   permalink: /program/10.215
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 11269061.0
+  name: Technical Agricultural Assistance
+  permalink: /program/10.960
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0

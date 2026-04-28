@@ -10,6 +10,11 @@ gwo_id: PON.7P
 permalink: /pon/PON_7P
 title: Improve Nuclear Materials Security
 where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Chemical Stockpile Emergency Preparedness Program
+  permalink: /program/97.040
+  program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
   name: Glovebox Manufacturing Expansion Initiative

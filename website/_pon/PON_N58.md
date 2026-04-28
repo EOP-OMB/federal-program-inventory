@@ -39,4 +39,14 @@ where_used:
   name: Scientific Cooperation and Research
   permalink: /program/10.961
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Scientific Exchanges Program
+  permalink: /program/10.620
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 11269061.0
+  name: Technical Agricultural Assistance
+  permalink: /program/10.960
+  program_type: assistance_listing
 ---

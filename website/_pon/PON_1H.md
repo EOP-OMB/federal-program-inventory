@@ -12,7 +12,7 @@ definition: 'A program whose beneficiaries demonstrated one or more of the follo
 focus_area: Workforce Development
 gwo_id: PON.1H
 permalink: /pon/PON_1H
-title: Improve Workplace Health protections
+title: Improve Workplace Health Protections
 where_used:
 - agency: Department of Labor
   expenditure_amount: 0.0
@@ -28,6 +28,11 @@ where_used:
   expenditure_amount: 0.0
   name: Hazardous Waste Worker Health and Safety Training Program  – Other Research
   permalink: /program/93.WTP
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Mine Health and Safety Grants
+  permalink: /program/17.600
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -48,6 +53,11 @@ where_used:
   expenditure_amount: 0.0
   name: Occupational Safety and Health Susan Harwood Training Grants
   permalink: /program/17.502
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 700000.0
+  name: 'PRIA 5: Farm Worker and Health Care Provider Training and Education Grants'
+  permalink: /program/66.720
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0

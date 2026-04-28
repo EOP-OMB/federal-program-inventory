@@ -28,9 +28,19 @@ where_used:
   permalink: /program/45.036
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
+  expenditure_amount: 200000.0
+  name: Promotion of the Humanities Challenge Grants
+  permalink: /program/45.130
+  program_type: assistance_listing
+- agency: National Endowment for the Humanities
   expenditure_amount: 30000000.0
   name: Promotion of the Humanities Federal/State Partnership
   permalink: /program/45.129
+  program_type: assistance_listing
+- agency: National Endowment for the Humanities
+  expenditure_amount: 1910000.0
+  name: Promotion of the Humanities Fellowships and Stipends
+  permalink: /program/45.160
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
   expenditure_amount: 0.0

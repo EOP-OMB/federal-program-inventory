@@ -27,11 +27,6 @@ where_used:
   name: Education Stabilization Fund
   permalink: /program/84.425
   program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Emergency Planning for Juvenile Justice Facilities
-  permalink: /program/16.823
-  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
   name: Fiscal Year 2013 Hurricane Sandy Disaster Relief Grants to the National Railroad

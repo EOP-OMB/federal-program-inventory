@@ -14,7 +14,7 @@ title: 'Increase Knowledge of Employee Benefits and Security '
 where_used:
 - agency: Social Security Administration
   expenditure_amount: 0.0
-  name: 'Social Security - Work Incentives Planning and Assistance Program '
+  name: Social Security - Work Incentives Planning and Assistance Program
   permalink: /program/96.008
   program_type: assistance_listing
 ---

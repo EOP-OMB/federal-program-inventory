@@ -11,6 +11,11 @@ gwo_id: PON.5ND
 permalink: /pon/PON_5ND
 title: Strengthen Operational Readiness of Defense Personnel
 where_used:
+- agency: Department of Defense
+  expenditure_amount: 74999999.0
+  name: Civil Air Patrol Program
+  permalink: /program/12.840
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1966976.25
   name: Clearing House for Military Readiness
@@ -74,6 +79,11 @@ where_used:
   permalink: /program/10.287
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Guard Morale, Welfare, and Recreation Program
+  permalink: /program/12.030
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 2330000.0
   name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
@@ -84,9 +94,19 @@ where_used:
   permalink: /program/12.551
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 16365000.0
+  name: Past Conflict Accounting
+  permalink: /program/12.740
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 0.0
   name: ROTC Language and Culture Training Grants
   permalink: /program/12.357
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 13300000.0
+  name: The Language Flagship Grants to Institutions of Higher Education
+  permalink: /program/12.550
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 5160000.0

@@ -1,17 +1,18 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":102,"total_obs":20308216750.379997},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":122,"total_obs":21457019406.379997},{"title":"Department
   of the Treasury","total_num_programs":6,"total_obs":2750000000.0},{"title":"Department
   of the Interior","total_num_programs":3,"total_obs":1099919.67},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Agency for
   International Development","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":39},{"title":"Unrestricted
-  by Entity Type","total_num_programs":29},{"title":"Other","total_num_programs":25},{"title":"For-Profit
-  Organization","total_num_programs":23},{"title":"Small Business Person","total_num_programs":19},{"title":"State","total_num_programs":19},{"title":"Land/Property
-  Owner","total_num_programs":18},{"title":"Unrestricted by Individual Type","total_num_programs":17},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":16},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":14},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":8},{"title":"Not-for-Profit
-  Organization","total_num_programs":8},{"title":"U.S. Federal Government","total_num_programs":8},{"title":"Federally
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":48},{"title":"Unrestricted
+  by Entity Type","total_num_programs":36},{"title":"Other","total_num_programs":31},{"title":"For-Profit
+  Organization","total_num_programs":29},{"title":"Small Business Person","total_num_programs":22},{"title":"Land/Property
+  Owner","total_num_programs":21},{"title":"State","total_num_programs":21},{"title":"Unrestricted
+  by Individual Type","total_num_programs":18},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":16},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":14},{"title":"Not-for-Profit
+  Organization","total_num_programs":10},{"title":"U.S. Federal Government","total_num_programs":10},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":8},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"School
   District","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
@@ -21,16 +22,17 @@ applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":39},{"
   with geographic regional control and authority)","total_num_programs":3},{"title":"Farmworker","total_num_programs":3},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":3},{"title":"Tribally Designated Housing Authority","total_num_programs":3},{"title":"Veteran
-  (including dependents)","total_num_programs":3},{"title":"Interstate Organization","total_num_programs":2},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":2},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Other
-  Special Disctrict Government","total_num_programs":2},{"title":"Other public institution/organization","total_num_programs":2},{"title":"Public
+  (including dependents)","total_num_programs":3},{"title":"Department or Agency of
+  a U.S. State Government","total_num_programs":2},{"title":"International Organization","total_num_programs":2},{"title":"Interstate
+  Organization","total_num_programs":2},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":2},{"title":"Other Special Disctrict
+  Government","total_num_programs":2},{"title":"Other public institution/organization","total_num_programs":2},{"title":"Public
   Housing Authority","total_num_programs":2},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Government
-  - General","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Non-Government
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Federal","total_num_programs":1},{"title":"Foreign
+  Government","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Non-Government
   - General","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
@@ -243,12 +245,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":42,"total_obs":858672506.77},{"title":"Farm
-  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":71,"total_obs":22200644163.28}]'
+sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":53,"total_obs":1076871459.14},{"title":"Farm
+  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":80,"total_obs":23131247866.909996}]'
 title: Agricultural
 total_num_agencies: 5
-total_num_applicant_types: 52
-total_num_programs: 113
+total_num_applicant_types: 53
+total_num_programs: 133
 total_num_sub_cats: 2
-total_obs: 23059316670.049995
+total_obs: 24208119326.049995
 ---

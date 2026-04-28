@@ -6,10 +6,12 @@
                 {% assign initial_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR | to_integer | minus: site.data.constants_global_dates.SPENDING_CHART_YEAR_RANGE %}
                 <span class="spending-card-subheader">Since FY {{ initial_year }}</span>
             </div>
-            <div class="spending-card-item">
-                <span class="spending-card-line obligations"></span>
-                <span class="spending-card-label">Obligations</span>
-            </div>
+            {% if include.program_type != 'tax_expenditure' and include.program_type != 'interest' %}
+                <div class="spending-card-item">
+                    <span class="spending-card-line obligations"></span>
+                    <span class="spending-card-label">Obligations</span>
+                </div>
+            {% endif %}
             <div class="spending-card-item">
                 <span class="spending-card-line outlays"></span>
                 <span class="spending-card-label">Outlays</span>
@@ -46,7 +48,8 @@
             data-outlays='{{ include.outlays }}'
             data-current-year="{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}"
             data-baseline-inflation-year="{{ site.data.constants_global_dates.BASELINE_INFLATION_YEAR }}"
-            data-initial-year='{{ initial_year }}'>
+            data-initial-year='{{ initial_year }}'
+            data-program-type='{{ include.program_type }}'>
         </div>
         <p id="no-spending-chart" class="hide">Expenditures not yet available.</p>
     </div>

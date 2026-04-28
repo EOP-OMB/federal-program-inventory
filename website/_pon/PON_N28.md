@@ -46,6 +46,11 @@ where_used:
   name: Chesapeake Bay Studies
   permalink: /program/11.457
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 36109976.0
+  name: Coastal Zone Management Estuarine Research Reserves
+  permalink: /program/11.420
+  program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 28375.0
   name: Collaborative Research and Development
@@ -133,6 +138,11 @@ where_used:
   name: International Fisheries Commissions
   permalink: /program/19.087
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 100000.0
+  name: Lake Tahoe Erosion Control Grant Program
+  permalink: /program/10.690
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 800000000.0
   name: Low-Carbon Transportation Materials (LCTM) Program
@@ -170,7 +180,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1900000.0
-  name: 'National Geological and Geophysical Data Preservation '
+  name: National Geological and Geophysical Data Preservation
   permalink: /program/15.814
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -187,6 +197,11 @@ where_used:
   expenditure_amount: 300000000.0
   name: National Oceanic and Atmospheric Administration (NOAA) Cooperative Institutes
   permalink: /program/11.432
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: National and Regional Climate Adaptation Science Centers
+  permalink: /program/15.820
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 300000.0
@@ -220,9 +235,14 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 3845000.0
-  name: 'Research, Development, Monitoring, Public Education, Outreach, Training,
-    Demonstrations, and Studies '
+  name: Research, Development, Monitoring, Public Education, Outreach, Training, Demonstrations,
+    and Studies
   permalink: /program/66.716
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: SECURE Water Act – Research Agreements
+  permalink: /program/15.560
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
@@ -248,6 +268,18 @@ where_used:
   expenditure_amount: 350000.0
   name: Southwest Border Resource Protection Program
   permalink: /program/15.963
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Surveys, Studies, Investigations and Special Purpose Grants within the Office
+    of Research and Development
+  permalink: /program/66.510
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Surveys, Studies, Investigations and Special Purpose Grants within the Office
+    of the Administrator
+  permalink: /program/66.610
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0

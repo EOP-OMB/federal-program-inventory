@@ -19,7 +19,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Congressionally Recommended Awards '
+  name: Congressionally Recommended Awards
   permalink: /program/16.753
   program_type: assistance_listing
 - agency: Department of Justice
@@ -49,7 +49,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 7865434.0
-  name: 'Demonstration Grants for Domestic Victims of Human Trafficking '
+  name: Demonstration Grants for Domestic Victims of Human Trafficking
   permalink: /program/93.327
   program_type: assistance_listing
 - agency: Department of Justice
@@ -60,13 +60,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Domestic Trafficking Victim Program '
+  name: Domestic Trafficking Victim Program
   permalink: /program/16.834
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Education, Training, and Enhanced Services to End Violence Against and Abuse
-    of Women with Disabilities '
+  name: Education, Training, and Enhanced Services to End Violence Against and Abuse
+    of Women with Disabilities
   permalink: /program/16.529
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -88,8 +88,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 172200000.0
-  name: 'Family Violence Prevention and Services/Domestic Violence Shelter and Supportive
-    Services '
+  name: Family Violence Prevention and Services/Domestic Violence Shelter and Supportive
+    Services
   permalink: /program/93.671
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -166,6 +166,11 @@ where_used:
     Program
   permalink: /program/16.589
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Services for Trafficking Victims
+  permalink: /program/16.320
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12497442.0
   name: Services to Victims of a Severe Form of Trafficking
@@ -178,13 +183,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Sexual Assault Services Formula Program '
+  name: Sexual Assault Services Formula Program
   permalink: /program/16.017
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Transitional Housing Assistance for Victims of Domestic Violence, Dating
-    Violence, Stalking, or Sexual Assault '
+  name: Transitional Housing Assistance for Victims of Domestic Violence, Dating Violence,
+    Stalking, or Sexual Assault
   permalink: /program/16.736
   program_type: assistance_listing
 - agency: Department of Justice

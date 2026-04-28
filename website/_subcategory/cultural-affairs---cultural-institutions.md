@@ -1,47 +1,49 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":770000000.0},{"title":"Department
   of the Interior","total_num_programs":23,"total_obs":248153760.92999998},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":3,"total_obs":32381491.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":1,"total_obs":12350815.55},{"title":"National
+  Institute of Museum and Library Services","total_num_programs":4,"total_obs":212381491.0},{"title":"National
+  Endowment for the Humanities","total_num_programs":2,"total_obs":16250027.55},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":9999998.0},{"title":"National
   Archives and Records Administration","total_num_programs":2,"total_obs":2384000.0},{"title":"Department
   of Veterans Affairs","total_num_programs":1,"total_obs":2195992.4},{"title":"Library
-  of Congress","total_num_programs":1,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
-  institutions of higher education and hospitals","total_num_programs":17},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":17},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"State","total_num_programs":14},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":13},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":12},{"title":"Native
+applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
+  of higher education and hospitals)","total_num_programs":19},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":18},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":17},{"title":"State","total_num_programs":16},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":14},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":8},{"title":"Other private institutions/organizations","total_num_programs":6},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Other
-  public institution/organization","total_num_programs":5},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":5},{"title":"Anyone/general
-  public","total_num_programs":4},{"title":"Federal","total_num_programs":4},{"title":"Nonprofit
-  Organization","total_num_programs":4},{"title":"City or Township Government","total_num_programs":3},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Municipality
+  associations)","total_num_programs":9},{"title":"Other private institutions/organizations","total_num_programs":7},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":6},{"title":"Other
+  public institution/organization","total_num_programs":6},{"title":"U.S. Territories
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Anyone/general
+  public","total_num_programs":4},{"title":"County Government (inclusive of boroughs
+  in Alaska, parishes and other governmental entities with geographic regional control
+  and authority)","total_num_programs":4},{"title":"Federal","total_num_programs":4},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":3},{"title":"Not-for-Profit Organization","total_num_programs":3},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":3},{"title":"Quasi-public nonprofit
-  institution/organization","total_num_programs":3},{"title":"U.S. State Government
-  (including the District of Columbia)","total_num_programs":3},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"County
-  Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Local","total_num_programs":2},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Small
-  business (less than 500 employees)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"For-Profit
+  and villages)","total_num_programs":4},{"title":"Nonprofit Organization","total_num_programs":4},{"title":"Not-for-Profit
+  Organization","total_num_programs":4},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":4},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":4},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"City
+  or Township Government","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":3},{"title":"Small business
+  (less than 500 employees)","total_num_programs":3},{"title":"County Government","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Local","total_num_programs":2},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Profit
+  organization","total_num_programs":2},{"title":"Sponsored organization","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"For-Profit
   Organization (Other than Small Business)","total_num_programs":1},{"title":"Government
-  - General","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Profit
-  organization","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"Special
+  - General","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Nonprofit without 501C3 IRS Status
+  (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  Special Disctrict Government","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"Special
   District Government","total_num_programs":1},{"title":"Specialized group (e.g. health
-  professionals, students, veterans)","total_num_programs":1},{"title":"Sponsored
-  organization","total_num_programs":1},{"title":"U.S. Territories and possessions","total_num_programs":1}]'
+  professionals, students, veterans)","total_num_programs":1},{"title":"U.S. Territories
+  and possessions","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -254,7 +256,9 @@ parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/cultural-institutions
 programs: '[{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax incentives
   for preservation of historic structures","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":770000000.0,"program_type":"tax_expenditure"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
+  of the Treasury","total_obs":770000000.0,"program_type":"tax_expenditure"},{"cfda":"45.310","permalink":"/program/45.310","title":"Grants
+  to States","popular_name":"Grants to States","agency":"The Institute of Museum and
+  Library Services","total_obs":180000000.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
   Preservation Fund Grants-In-Aid","popular_name":"(HPF)","agency":"Department of
   the Interior","total_obs":77911445.0,"program_type":"assistance_listing"},{"cfda":"15.966","permalink":"/program/15.966","title":"Historic
   Preservation Fund Grants-in-Aid for Competitive Grants","popular_name":null,"agency":"Department
@@ -272,15 +276,19 @@ programs: '[{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax incentiv
   National Leadership Grants for Museums","agency":"The Institute of Museum and Library
   Services","total_obs":11443666.0,"program_type":"assistance_listing"},{"cfda":"15.932","permalink":"/program/15.932","title":"Preservation
   of Historic Structures on the Campuses of Historically Black Colleges and Universities
-  (HBCUs).","popular_name":"HBCU Grants","agency":"Department of the Interior","total_obs":10609606.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
+  (HBCUs).","popular_name":"HBCU Grants","agency":"Department of the Interior","total_obs":10609606.0,"program_type":"assistance_listing"},{"cfda":"97.010","permalink":"/program/97.010","title":"Citizenship
+  Education and Training","popular_name":"Citizenship Education and Naturalization
+  Application Services","agency":"Department of Homeland Security","total_obs":9999998.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
   American and Native Hawaiian Library Services","popular_name":"Native American and
   Native Hawaiian Library Services","agency":"The Institute of Museum and Library
   Services","total_obs":5641893.0,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
   of Japanese American Confinement Sites","popular_name":"JACS","agency":"Department
   of the Interior","total_obs":5414424.63,"program_type":"assistance_listing"},{"cfda":"15.964","permalink":"/program/15.964","title":"9/11
   Memorial Act Grant Program","popular_name":"9/11 Memorial Act","agency":"Department
-  of the Interior","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
-  Maritime Heritage Grants ","popular_name":"Maritime Heritage Grants","agency":"Department
+  of the Interior","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"45.130","permalink":"/program/45.130","title":"Promotion
+  of the Humanities Challenge Grants","popular_name":null,"agency":"National Endowment
+  for the Humanities","total_obs":3899212.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
+  Maritime Heritage Grants","popular_name":"Maritime Heritage Grants","agency":"Department
   of the Interior","total_obs":3712598.0,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
   American Graves Protection and Repatriation Act","popular_name":"NAGPRA","agency":"Department
   of the Interior","total_obs":3687325.0,"program_type":"assistance_listing"},{"cfda":"15.926","permalink":"/program/15.926","title":"American
@@ -295,7 +303,7 @@ programs: '[{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax incentiv
   Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":654567.0,"program_type":"assistance_listing"},{"cfda":"15.224","permalink":"/program/15.224","title":"Cultural
   and Paleontological Resources Management","popular_name":null,"agency":"Department
   of the Interior","total_obs":152469.22,"program_type":"assistance_listing"},{"cfda":"15.958","permalink":"/program/15.958","title":"Route
-  66 Corridor Preservation ","popular_name":"Route 66 Corridor Preservation Program","agency":"Department
+  66 Corridor Preservation","popular_name":"Route 66 Corridor Preservation Program","agency":"Department
   of the Interior","total_obs":85943.0,"program_type":"assistance_listing"},{"cfda":"15.938","permalink":"/program/15.938","title":"Boston
   African-American National Historic Site","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.957","permalink":"/program/15.957","title":"Emergency
@@ -307,16 +315,19 @@ programs: '[{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax incentiv
   Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.011","permalink":"/program/42.011","title":"Library
   of Congress Grants","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"89.001","permalink":"/program/89.001","title":"National
   Archives Reference Services Historical Research","popular_name":null,"agency":"National
-  Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.281","permalink":"/program/20.281","title":"Nationally
+  Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.140","permalink":"/program/97.140","title":"National
+  Coast Guard Museum Construction","popular_name":"NCGM Construction","agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.281","permalink":"/program/20.281","title":"Nationally
   Significant Federal Lands and Tribal Projects (NSFLTP)","popular_name":null,"agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.785","permalink":"/program/15.785","title":"Nicodemus
   National Historic Site","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.991","permalink":"/program/15.991","title":"September
   11 National Memorial Trail","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.014","permalink":"/program/15.014","title":"Supporting
   the Lower Mississippi Delta Initiative","popular_name":"LMDI","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
+  with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Cultural Institutions
-total_num_agencies: 9
-total_num_applicant_types: 57
-total_num_programs: 34
-total_obs: 1067466059.88
+total_num_agencies: 10
+total_num_applicant_types: 60
+total_num_programs: 39
+total_obs: 1261365269.88
 ---

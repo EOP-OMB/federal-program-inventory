@@ -19,26 +19,6 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Alaska Native Educational Programs
-  permalink: /program/84.356
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Arts in Education
-  permalink: /program/84.351
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Career and Technical Education -- Basic Grants to States
-  permalink: /program/84.048
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Charter Schools
-  permalink: /program/84.282
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
   name: Competitive Grants for State Assessments
   permalink: /program/84.368
   program_type: assistance_listing
@@ -70,7 +50,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Education Enhancements '
+  name: Education Enhancements
   permalink: /program/15.151
   program_type: assistance_listing
 - agency: Department of Education
@@ -90,17 +70,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Education for Homeless Children and Youth
-  permalink: /program/84.196
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
   name: English Language Acquisition State Grants
   permalink: /program/84.365
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'FOCUS on Student Achievement '
+  name: FOCUS on Student Achievement
   permalink: /program/15.149
   program_type: assistance_listing
 - agency: Department of Education
@@ -113,6 +88,16 @@ where_used:
   name: Indian Education -- Special Programs for Indian Children
   permalink: /program/84.299
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Indian Education Assistance to Schools
+  permalink: /program/15.130
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Indian Education Grants to Local Educational Agencies
+  permalink: /program/84.060
+  program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
   name: Indian Education National Activities (State Tribal Education Partnership (STEP)
@@ -121,7 +106,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Indian School Equalization '
+  name: Indian School Equalization
   permalink: /program/15.042
   program_type: assistance_listing
 - agency: Department of Education
@@ -136,6 +121,11 @@ where_used:
   name: Javits Gifted and Talented Students Education
   permalink: /program/84.206
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Juvenile Detention Education
+  permalink: /program/15.150
+  program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
   name: Magnet Schools Assistance
@@ -143,18 +133,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Migrant Education Coordination Program
-  permalink: /program/84.144
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
   name: Migrant Education State Grant Program
   permalink: /program/84.011
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Native Hawaiian Education
-  permalink: /program/84.362
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -202,6 +182,11 @@ where_used:
   expenditure_amount: 0.0
   name: Teacher Quality Partnership Grants
   permalink: /program/84.336
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Title I Grants to Local Educational Agencies
+  permalink: /program/84.010
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0

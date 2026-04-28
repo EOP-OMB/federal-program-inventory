@@ -34,9 +34,9 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 8000000.0
-  name: 'Empowering Older Adults and Adults with Disabilities through Chronic Disease
+  name: Empowering Older Adults and Adults with Disabilities through Chronic Disease
     Self-Management Education Programs – financed by Prevention and Public Health
-    Funds (PPHF) '
+    Funds (PPHF)
   permalink: /program/93.734
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -96,7 +96,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 55242000.0
-  name: 'State Health Insurance Assistance Program '
+  name: State Health Insurance Assistance Program
   permalink: /program/93.324
   program_type: assistance_listing
 - agency: Department of Health and Human Services

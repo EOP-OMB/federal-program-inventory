@@ -54,8 +54,18 @@ where_used:
   program_type: assistance_listing
 - agency: National Council on Disability
   expenditure_amount: 0.0
-  name: 'National Council on Disability '
+  name: National Council on Disability
   permalink: /program/92.002
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Program of Protection and Advocacy of Individual Rights
+  permalink: /program/84.240
+  program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries
+  permalink: /program/96.009
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 6500000.0

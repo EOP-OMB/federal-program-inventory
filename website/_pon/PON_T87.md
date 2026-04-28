@@ -28,6 +28,16 @@ where_used:
   permalink: /program/16.309
   program_type: assistance_listing
 - agency: Department of Justice
+  expenditure_amount: 83752293.0
+  name: Missing Children's Assistance
+  permalink: /program/16.543
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Ashanti Alert Network Training and Technical Assistance Program
+  permalink: /program/16.041
+  program_type: assistance_listing
+- agency: Department of Justice
   expenditure_amount: 0.0
   name: Rural Violent Crime Initiative
   permalink: /program/16.039
@@ -36,5 +46,10 @@ where_used:
   expenditure_amount: 12497442.0
   name: Services to Victims of a Severe Form of Trafficking
   permalink: /program/93.598
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Support for Adam Walsh Act Implementation Grant Program
+  permalink: /program/16.750
   program_type: assistance_listing
 ---

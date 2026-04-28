@@ -1,14 +1,23 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":3,"total_obs":8798382188.9},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":13191895052.9},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":4630000000.0},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":14685536.71},{"title":"Department
   of Agriculture","total_num_programs":2,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":3},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Native American
-  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Unrestricted
+applicant_types: '[{"title":"U.S. Territory (or Possession) Government (including
+  freely-associated states)","total_num_programs":4},{"title":"U.S. State Government
+  (including the District of Columbia)","total_num_programs":3},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":1},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":1},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Nonprofit
+  Organization","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1},{"title":"Unrestricted by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -222,7 +231,8 @@ parent_title: Education
 permalink: /category/education/early-childhood-education-and-childcare
 programs: '[{"cfda":"93.575","permalink":"/program/93.575","title":"Child Care and
   Development Block Grant","popular_name":"Child Care and Development Fund (CCDF)","agency":"Department
-  of Health and Human Services","total_obs":8648462656.63,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
+  of Health and Human Services","total_obs":8648462656.63,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
+  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":4393512864.0,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
   for child and dependent care expenses","popular_name":null,"agency":"Department
   of the Treasury","total_obs":3660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
   provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":950000000.0,"program_type":"tax_expenditure"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
@@ -237,7 +247,7 @@ programs: '[{"cfda":"93.575","permalink":"/program/93.575","title":"Child Care a
   Learning Matters","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Early Childhood Education and Childcare
 total_num_agencies: 4
-total_num_applicant_types: 10
-total_num_programs: 9
-total_obs: 13443067725.609999
+total_num_applicant_types: 17
+total_num_programs: 10
+total_obs: 17836580589.61
 ---

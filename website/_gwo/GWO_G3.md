@@ -63,10 +63,20 @@ where_used:
   name: Impact Aid
   permalink: /program/84.041
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Impact Aid Facilities Maintenance
+  permalink: /program/84.040
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Indian Education Facilities, Operations, and Maintenance
   permalink: /program/15.047
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Native Hawaiian Education
+  permalink: /program/84.362
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 890000000.0
@@ -105,13 +115,14 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Special Education Grants to States
-  permalink: /program/84.027
+  name: Special Education Educational Technology Media, and Materials for Individuals
+    with Disabilities
+  permalink: /program/84.327
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Special Education Parent Information Centers
-  permalink: /program/84.328
+  name: Special Education Grants to States
+  permalink: /program/84.027
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -138,6 +149,11 @@ where_used:
   name: State Grants for the Implementation, Enhancement, and Expansion of Medicaid
     and CHIP School-Based Services
   permalink: /program/93.771
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Statewide Family Engagement Centers
+  permalink: /program/84.310
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 20000000.0

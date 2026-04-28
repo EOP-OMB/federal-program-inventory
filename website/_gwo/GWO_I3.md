@@ -57,6 +57,12 @@ where_used:
   name: Nuclear Energy Research, Development and Demonstration
   permalink: /program/81.121
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Office of Technology Transitions (OTT)-Technology Deployment, Demonstration
+    and Commercialization
+  permalink: /program/81.010
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 7800000.0
   name: PHMSA Pipeline Safety Research and Development “Other Transaction Agreements”
@@ -64,7 +70,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 2500000.0
-  name: 'Pipeline Safety Research Competitive Academic Agreement Program (CAAP) '
+  name: Pipeline Safety Research Competitive Academic Agreement Program (CAAP)
   permalink: /program/20.724
   program_type: assistance_listing
 - agency: Department of Energy

@@ -33,8 +33,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Bureau of Near Eastern Affairs
+  permalink: /program/19.600
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Bureau of South and Central Asian Affairs
   permalink: /program/19.108
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Contributions to International Organizations- CIO
+  permalink: /program/19.790
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -50,6 +60,11 @@ where_used:
   expenditure_amount: 0.0
   name: Criminal Justice Systems
   permalink: /program/19.703
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 3451000.0
+  name: ECA U.S. Speaker Program
+  permalink: /program/19.440
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -79,6 +94,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Middle East Partnership Initiative
+  permalink: /program/19.500
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Office of the Biological Policy Staff
   permalink: /program/19.334
   program_type: assistance_listing
@@ -95,8 +115,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 3845000.0
-  name: 'Research, Development, Monitoring, Public Education, Outreach, Training,
-    Demonstrations, and Studies '
+  name: Research, Development, Monitoring, Public Education, Outreach, Training, Demonstrations,
+    and Studies
   permalink: /program/66.716
   program_type: assistance_listing
 - agency: Department of Commerce

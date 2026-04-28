@@ -7,6 +7,11 @@ permalink: /gwo/GWO_ND1
 title: Improve Military Training and Education
 where_used:
 - agency: Department of Defense
+  expenditure_amount: 74999999.0
+  name: Civil Air Patrol Program
+  permalink: /program/12.840
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 0.0
   name: Language Training Center
   permalink: /program/12.579

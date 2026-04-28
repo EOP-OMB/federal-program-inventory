@@ -12,9 +12,19 @@ permalink: /pon/PON_10IA
 title: Strengthen Global Policy Collaboration
 where_used:
 - agency: Department of State
+  expenditure_amount: 11265000.0
+  name: Academic Exchange Programs - Hubert H. Humphrey Fellowship Program
+  permalink: /program/19.010
+  program_type: assistance_listing
+- agency: Department of State
   expenditure_amount: 0.0
   name: Assessed Contributions for State Department
   permalink: /program/19.707
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 3451000.0
+  name: ECA U.S. Speaker Program
+  permalink: /program/19.440
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

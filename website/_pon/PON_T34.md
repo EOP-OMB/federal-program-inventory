@@ -46,6 +46,11 @@ where_used:
   permalink: /program/20.944
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 3500000.0
+  name: Behavioral Traffic Safety Cooperative Research
+  permalink: /program/20.620
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 5482000.0
   name: Bus Testing
   permalink: /program/20.529
@@ -67,7 +72,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 3400000.0
-  name: 'Commercial Motor Vehicle Operator Safety Training Grants '
+  name: Commercial Motor Vehicle Operator Safety Training Grants
   permalink: /program/20.235
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -122,6 +127,11 @@ where_used:
   permalink: /program/20.225
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 1520000000.0
+  name: Highway Research and Development Program
+  permalink: /program/20.200
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 3246000000.0
   name: Highway Safety Improvement Program (HSIP)
   permalink: /program/20.272
@@ -138,7 +148,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 520885511.0
-  name: 'Motor Carrier Safety Assistance '
+  name: Motor Carrier Safety Assistance
   permalink: /program/20.218
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -165,8 +175,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
-  name: 'National Highway Traffic Safety Administration (NHTSA) Discretionary Safety
-    Grants and Cooperative Agreements '
+  name: National Highway Traffic Safety Administration (NHTSA) Discretionary Safety
+    Grants and Cooperative Agreements
   permalink: /program/20.614
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -233,6 +243,11 @@ where_used:
   permalink: /program/20.329
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 1150000.0
+  name: Railroad Safety State Participation Grant Program
+  permalink: /program/20.330
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 0.0
   name: Railroad Safety Technology Grants
   permalink: /program/20.321
@@ -251,6 +266,11 @@ where_used:
   expenditure_amount: 980000000.0
   name: Safe Streets and Roads for All
   permalink: /program/20.939
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 409770000.0
+  name: State and Community Highway Safety
+  permalink: /program/20.600
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 6000000.0

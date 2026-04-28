@@ -10,5 +10,10 @@ focus_area: Domestic Threats and Hazards
 gwo_id: PON.8P
 permalink: /pon/PON_8P
 title: Improve Operational Readiness of Critical Assets
-where_used: []
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 625000000.0
+  name: Fédération Internationale de Football Association World Cup Grant Program
+  permalink: /program/97.160
+  program_type: assistance_listing
 ---

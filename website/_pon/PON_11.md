@@ -29,9 +29,24 @@ where_used:
   permalink: /program/93.051
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Alzheimer’s Disease Program Initiative (ADPI)
+  permalink: /program/93.470
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 2000000.0
   name: Assistive Technology Alternative Financing Program
   permalink: /program/93.469
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 4376672.0
+  name: Assistive Technology Program for Farmers with Disabilities
+  permalink: /program/10.280
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 4376672.0
+  name: Assistive Technology Program for Farmers with Disabilities
+  permalink: /program/10.280
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 36000000.0
@@ -43,10 +58,21 @@ where_used:
   name: Autism and Other Developmental Disabilities, Surveillance, Research, and Prevention
   permalink: /program/93.998
   program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 186912000.0
+  name: Automobiles and Adaptive Equipment for Certain Disabled Veterans and Members
+    of the Armed Forces
+  permalink: /program/64.100
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 9620910.0
   name: Community Integrated Service Systems (CISS)
   permalink: /program/93.491
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 125000000.0
+  name: Developmental Disabilities Basic Support and Advocacy Grants
+  permalink: /program/93.630
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -66,7 +92,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
-  name: 'Enhanced Mobility of Seniors and Individuals with Disabilities '
+  name: Enhanced Mobility of Seniors and Individuals with Disabilities
   permalink: /program/20.513
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -104,6 +130,16 @@ where_used:
   name: Paralysis Resource Center
   permalink: /program/93.325
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 33000000.0
+  name: Payments to Territories – Adults
+  permalink: /program/93.560
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Program of Protection and Advocacy of Individual Rights
+  permalink: /program/84.240
+  program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
   name: Project Rental Assistance Program of the Section 811 Supportive Housing for
@@ -112,7 +148,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1794463.0
-  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education '
+  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education'
   permalink: /program/93.315
   program_type: assistance_listing
 - agency: Department of Education
@@ -161,6 +197,12 @@ where_used:
   expenditure_amount: 0.0
   name: Supportive Housing for Persons with Disabilities
   permalink: /program/14.181
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Training Interpreters for Individuals who are Deaf and Individuals who are
+    Deaf-Blind
+  permalink: /program/84.160
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

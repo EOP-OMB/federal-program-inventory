@@ -14,13 +14,18 @@ title: Protect Aquatic Ecosystems
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 999022000.0
-  name: ' Agricultural Conservation Easement Program '
+  name: Agricultural Conservation Easement Program
   permalink: /program/10.931
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 4715000.0
   name: Agricultural Management Assistance
   permalink: /program/10.917
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 50000000.0
+  name: Aquatic Ecosystem Restoration Program
+  permalink: /program/15.580
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 10000000.0
@@ -31,6 +36,11 @@ where_used:
   expenditure_amount: 20592149.0
   name: Center for Sponsored Coastal Ocean Research Coastal Ocean Program
   permalink: /program/11.478
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 36109976.0
+  name: Coastal Zone Management Estuarine Research Reserves
+  permalink: /program/11.420
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 21100000.0
@@ -109,6 +119,11 @@ where_used:
   name: Great Lakes Sea Lamprey Control
   permalink: /program/15.687
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Lewis and Clark Rural Water System
+  permalink: /program/15.520
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 15313962.0
   name: Marine Sanctuary Program
@@ -129,6 +144,11 @@ where_used:
   name: National Culvert Removal, Replacement, & Restoration Grant
   permalink: /program/20.276
   program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 20423485.0
+  name: Nonpoint Source Implementation Grants
+  permalink: /program/66.460
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 116806376.0
   name: Pacific Coast Salmon Recovery
@@ -141,7 +161,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 455083372.0
-  name: 'Sport Fish Restoration '
+  name: Sport Fish Restoration
   permalink: /program/15.605
   program_type: assistance_listing
 - agency: Department of Agriculture

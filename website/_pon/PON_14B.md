@@ -61,6 +61,11 @@ where_used:
   permalink: /program/10.177
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Resilient Food System Infrastructure Program
+  permalink: /program/10.190
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 1000000.0
   name: Wholesale Farmers and Alternative Market Development
   permalink: /program/10.164

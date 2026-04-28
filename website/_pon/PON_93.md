@@ -12,12 +12,6 @@ title: Increase Identification and Referral of Domestic Violence Survivors
 where_used:
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Education, Training, and Enhanced Services to End Violence Against and Abuse
-    of Women with Disabilities '
-  permalink: /program/16.529
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
   name: Grants for Outreach and Services to Underserved Populations
   permalink: /program/16.889
   program_type: assistance_listing
@@ -25,5 +19,10 @@ where_used:
   expenditure_amount: 1000000.0
   name: Indian Health Service Domestic Violence Forensic Healthcare Services
   permalink: /program/93.00A
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Sexual Assault Forensic Examinations
+  permalink: /program/16.053
   program_type: assistance_listing
 ---

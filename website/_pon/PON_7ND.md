@@ -17,6 +17,12 @@ where_used:
   permalink: /program/20.824
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 1000000.0
+  name: Community Economic Adjustment Assistance for Compatible Use and Joint Land
+    Use Studies
+  permalink: /program/12.610
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 15000000.0
   name: Community Economic Adjustment Assistance for Responding to Threats to the
     Resilience of a Military Installation

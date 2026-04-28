@@ -42,6 +42,11 @@ where_used:
   name: Board Support and Innovation Grant
   permalink: /program/38.009
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 8000000.0
+  name: Bridge and Other Transportation Infrastructure Research Program
+  permalink: /program/20.950
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 50735000.0
   name: Child Health and Human Development Small Business Innovation Research & Small
@@ -62,6 +67,11 @@ where_used:
   expenditure_amount: 0.0
   name: Commercial Technologies for Maintenance Activities Program
   permalink: /program/12.225
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4670189.0
+  name: Complementary and Integrative Health - SBIR/STTR
+  permalink: /program/93.480
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 69545000.0
@@ -97,6 +107,11 @@ where_used:
   expenditure_amount: 17114000.0
   name: Human Genome Research - Small Business
   permalink: /program/93.HG6
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Maritime Studies and Innovations
+  permalink: /program/20.820
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 4400000.0

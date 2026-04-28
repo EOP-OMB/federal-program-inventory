@@ -46,6 +46,11 @@ where_used:
   name: Denali Commission Program
   permalink: /program/90.003
   program_type: assistance_listing
+- agency: Denali Commission
+  expenditure_amount: 0.0
+  name: Denali Commission Program
+  permalink: /program/90.100
+  program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 176688.49
   name: Economic Development Initiative, Community Project Funding, and Miscellaneous
@@ -123,6 +128,11 @@ where_used:
   permalink: /program/TC.116
   program_type: tax_expenditure
 - agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Reconnecting Communities Pilot (RCP) Discretionary Grant Program
+  permalink: /program/20.940
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 20000000.0
   name: Regional Infrastructure Accelerators Program
   permalink: /program/20.951
@@ -131,6 +141,11 @@ where_used:
   expenditure_amount: 29999998.0
   name: Rural Business Development Grant
   permalink: /program/10.351
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Self Help Housing Land Development Loans
+  permalink: /program/10.490
   program_type: assistance_listing
 - agency: Denali Commission
   expenditure_amount: 0.0

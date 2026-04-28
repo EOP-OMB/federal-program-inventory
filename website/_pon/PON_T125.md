@@ -24,9 +24,29 @@ where_used:
   permalink: /program/93.353
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: '21st Century Cures Act: Regenerative Medicine Initiative'
+  permalink: /program/93.370
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 10000000.0
+  name: Adaptive Science
+  permalink: /program/15.670
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 7999999.0
+  name: African Elephant Conservation Fund
+  permalink: /program/15.620
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 261814471.0
   name: Aging Research
   permalink: /program/93.866
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 397335870.0
+  name: Agriculture and Food Research Initiative (AFRI)
+  permalink: /program/10.310
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12401560.0
@@ -159,6 +179,11 @@ where_used:
   name: Complementary and Integrative Health - Research Projects
   permalink: /program/93.473
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4670189.0
+  name: Complementary and Integrative Health - SBIR/STTR
+  permalink: /program/93.480
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
   name: Congressionally-Identified Projects
@@ -272,12 +297,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'Minority Health and Health Disparities Research '
+  name: Minority Health and Health Disparities Research
   permalink: /program/93.307
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 11000000.0
-  name: 'Multistate Conservation Grant '
+  name: Multistate Conservation Grant
   permalink: /program/15.628
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -289,6 +314,11 @@ where_used:
   expenditure_amount: 52202393.0
   name: NIH Office of Research on Women's Health
   permalink: /program/93.313
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: National Center for Advancing Translational Sciences
+  permalink: /program/93.350
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -369,6 +399,17 @@ where_used:
   expenditure_amount: 4032600.0
   name: Rhinoceros and Tiger Conservation Fund
   permalink: /program/15.619
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 28100048.0
+  name: Trans-NIH Research Support
+  permalink: /program/93.310
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Translation and Implementation Science Research for Heart, Lung, Blood Diseases,
+    and Sleep Disorders
+  permalink: /program/93.840
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 863753.0

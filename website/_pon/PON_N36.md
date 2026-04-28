@@ -34,6 +34,11 @@ where_used:
   name: Corrections Training and Staff Development
   permalink: /program/16.601
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: County of Nye, Nye County Sheriff’s Office Law Enforcement Services
+  permalink: /program/81.260
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Criminal Justice Systems
@@ -69,10 +74,20 @@ where_used:
   name: Emergency Law Enforcement Assistance Grant
   permalink: /program/16.824
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Emergency Planning for Juvenile Justice Facilities
+  permalink: /program/16.823
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: Fiscal Year 2025 Detention Support Grant Program
   permalink: /program/97.158
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 625000000.0
+  name: Fédération Internationale de Football Association World Cup Grant Program
+  permalink: /program/97.160
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -81,13 +96,23 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: Harold Rogers Prescription Drug Monitoring Program
+  permalink: /program/16.754
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: John R.  Justice Prosecutors and Defenders Incentive Act
+  permalink: /program/16.816
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: Law Enforcement Assistance FBI Field Police Training
   permalink: /program/16.302
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Missing Alzheimer's Disease Patient Assistance Program
-  permalink: /program/16.015
+  expenditure_amount: 10000000.0
+  name: Law Enforcement Mental Health and Wellness Act
+  permalink: /program/16.070
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 83752293.0
@@ -99,10 +124,20 @@ where_used:
   name: NICS Act Record Improvement Program
   permalink: /program/16.813
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Center on Restorative Justice
+  permalink: /program/16.030
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: National Computer Forensics Institute Facility Expansion Grant Program
   permalink: /program/97.142
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: OVW Technical Assistance Initiative
+  permalink: /program/16.526
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -116,14 +151,30 @@ where_used:
   permalink: /program/16.742
   program_type: assistance_listing
 - agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Postconviction Testing of DNA Evidence
+  permalink: /program/16.820
+  program_type: assistance_listing
+- agency: Department of Justice
   expenditure_amount: 12000000.0
   name: Preparing for Active Shooter Situations
   permalink: /program/16.069
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Regional Information Sharing Systems
+  permalink: /program/16.610
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Regional Peace and Security
   permalink: /program/19.979
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Restorative Practices to Address Domestic Violence, Dating Violence, Sexual
+    Assault, and Stalking
+  permalink: /program/16.052
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -141,14 +192,15 @@ where_used:
   permalink: /program/16.065
   program_type: assistance_listing
 - agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Tribal Civil and Criminal Legal Assistance Grants, Training and Technical
+    Assistance
+  permalink: /program/16.815
+  program_type: assistance_listing
+- agency: Department of Justice
   expenditure_amount: 126738.0
   name: Tribal Justice Assistance
   permalink: /program/16.596
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Violence Against Women Formula Grants
-  permalink: /program/16.588
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0

@@ -23,6 +23,11 @@ where_used:
   permalink: /program/20.944
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 3500000.0
+  name: Behavioral Traffic Safety Cooperative Research
+  permalink: /program/20.620
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 0.0
   name: Commercial Driver's License Program Implementation Grant
   permalink: /program/20.232
@@ -34,7 +39,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 3400000.0
-  name: 'Commercial Motor Vehicle Operator Safety Training Grants '
+  name: Commercial Motor Vehicle Operator Safety Training Grants
   permalink: /program/20.235
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -68,6 +73,11 @@ where_used:
   permalink: /program/20.225
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 1520000000.0
+  name: Highway Research and Development Program
+  permalink: /program/20.200
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 3246000000.0
   name: Highway Safety Improvement Program (HSIP)
   permalink: /program/20.272
@@ -79,7 +89,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 520885511.0
-  name: 'Motor Carrier Safety Assistance '
+  name: Motor Carrier Safety Assistance
   permalink: /program/20.218
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -99,16 +109,16 @@ where_used:
   permalink: /program/20.606
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: National Highway Traffic Safety Administration (NHTSA) Discretionary Safety
+    Grants and Cooperative Agreements
+  permalink: /program/20.614
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 2500000.0
   name: National Highway Traffic Safety Administration (NHTSA) Discretionary Safety
     Grants and Cooperative Agreements
   permalink: /program/20.622
-  program_type: assistance_listing
-- agency: Department of Transportation
-  expenditure_amount: 0.0
-  name: 'National Highway Traffic Safety Administration (NHTSA) Discretionary Safety
-    Grants and Cooperative Agreements '
-  permalink: /program/20.614
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 382818720.0
@@ -129,6 +139,11 @@ where_used:
   expenditure_amount: 0.0
   name: State Process for Informing Consumers of Recalls
   permalink: /program/20.621
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 409770000.0
+  name: State and Community Highway Safety
+  permalink: /program/20.600
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 150000000.0

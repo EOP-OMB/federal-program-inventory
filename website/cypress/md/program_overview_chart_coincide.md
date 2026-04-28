@@ -7,7 +7,7 @@ outlays: '[{"x":"2023","outlay":1087609426151.0,"obligation":1087609426151.0},{"
 <h3 id="chart-header" class="font-sans-xs">Outlays by Fiscal Year</h3>
 <div class="grid grid-row radius-md">
     <div class="grid-col-12">
-        <div id="chart" style="width:100%" data-outlays='{{ page.outlays }}'></div>
+        <div id="chart" style="width:100%" data-outlays='{{ page.outlays }}' data-program-type='assistance_listing'></div>
         <p id="no-chart" class="hide">Expenditures not yet available.</p>
     </div>
 </div>

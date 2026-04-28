@@ -1,23 +1,27 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":48,"total_obs":136910305334.99},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":53,"total_obs":137427657889.51001},{"title":"Department
   of Health and Human Services","total_num_programs":4,"total_obs":971899620.37},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":117000000.0},{"title":"Department
   of State","total_num_programs":1,"total_obs":63239170.72}]'
-applicant_types: '[{"title":"Department or Agency of a U.S. State Government","total_num_programs":23},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":19},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":16},{"title":"Nonprofit
-  Organization","total_num_programs":15},{"title":"Other","total_num_programs":10},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":5},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":5},{"title":"State","total_num_programs":4},{"title":"For-Profit
-  Organization","total_num_programs":3},{"title":"School District","total_num_programs":3},{"title":"U.S.
-  Federal Government","total_num_programs":3},{"title":"Local","total_num_programs":2},{"title":"Not-for-Profit
-  Organization","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"Foreign
+applicant_types: '[{"title":"Department or Agency of a U.S. State Government","total_num_programs":25},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":21},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":18},{"title":"Nonprofit
+  Organization","total_num_programs":18},{"title":"Other","total_num_programs":11},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"For-Profit
+  Organization","total_num_programs":5},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":5},{"title":"State","total_num_programs":4},{"title":"Local","total_num_programs":3},{"title":"School
+  District","total_num_programs":3},{"title":"U.S. Federal Government","total_num_programs":3},{"title":"Not-for-Profit
+  Organization","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":1},{"title":"Foreign
   Government","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"International
-  Organization","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  Organization","total_num_programs":1},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
+  hospitals)","total_num_programs":1},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
   by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -234,7 +238,7 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   of Agriculture","total_obs":87125185614.68,"program_type":"assistance_listing"},{"cfda":"10.555","permalink":"/program/10.555","title":"National
   School Lunch Program","popular_name":"National School Lunch Program","agency":"Department
   of Agriculture","total_obs":29179838630.42,"program_type":"assistance_listing"},{"cfda":"10.557","permalink":"/program/10.557","title":"WIC
-  Special Supplemental Nutrition Program for Women, Infants, and Children ","popular_name":"WIC
+  Special Supplemental Nutrition Program for Women, Infants, and Children","popular_name":"WIC
   Special Supplemental Nutrition Program for Women, Infants, and Children","agency":"Department
   of Agriculture","total_obs":8075219823.68,"program_type":"assistance_listing"},{"cfda":"10.561","permalink":"/program/10.561","title":"State
   Administrative Matching Grants for the Supplemental Nutrition Assistance Program","popular_name":"State
@@ -244,15 +248,17 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   Assistance For Puerto Rico","popular_name":"Nutrition Assistance For Puerto Rico","agency":"Department
   of Agriculture","total_obs":2922936000.0,"program_type":"assistance_listing"},{"cfda":"93.045","permalink":"/program/93.045","title":"Special
   Programs for the Aging, Title III, Part C, Nutrition Services","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":866680795.37,"program_type":"assistance_listing"},{"cfda":"10.558","permalink":"/program/10.558","title":"Child
+  of Health and Human Services","total_obs":866680795.37,"program_type":"assistance_listing"},{"cfda":"10.560","permalink":"/program/10.560","title":"State
+  Administrative Expenses for Child Nutrition","popular_name":"State Administrative
+  Expenses for Child Nutrition","agency":"Department of Agriculture","total_obs":510605956.94,"program_type":"assistance_listing"},{"cfda":"10.558","permalink":"/program/10.558","title":"Child
   and Adult Care Food Program","popular_name":"Child and Adult Care Food Program","agency":"Department
   of Agriculture","total_obs":363606267.4,"program_type":"assistance_listing"},{"cfda":"10.582","permalink":"/program/10.582","title":"Fresh
-  Fruit and Vegetable Program ","popular_name":"FFVP","agency":"Department of Agriculture","total_obs":222871773.8,"program_type":"assistance_listing"},{"cfda":"10.568","permalink":"/program/10.568","title":"Emergency
+  Fruit and Vegetable Program","popular_name":"FFVP","agency":"Department of Agriculture","total_obs":222871773.8,"program_type":"assistance_listing"},{"cfda":"10.568","permalink":"/program/10.568","title":"Emergency
   Food Assistance Program (Administrative Costs)","popular_name":"Temporary Emergency
   Food Assistance Program (Administrative Costs)","agency":"Department of Agriculture","total_obs":134404728.16,"program_type":"assistance_listing"},{"cfda":"97.024","permalink":"/program/97.024","title":"Emergency
   Food and Shelter National Board Program","popular_name":"(EFSP)","agency":"Department
   of Homeland Security","total_obs":117000000.0,"program_type":"assistance_listing"},{"cfda":"93.053","permalink":"/program/93.053","title":"Nutrition
-  Services Incentive Program ","popular_name":"NSIP","agency":"Department of Health
+  Services Incentive Program","popular_name":"NSIP","agency":"Department of Health
   and Human Services","total_obs":105218825.0,"program_type":"assistance_listing"},{"cfda":"10.541","permalink":"/program/10.541","title":"Child
   Nutrition-Technology Innovation Grant","popular_name":"Child Nutrition-Technology
   Innovation Grant","agency":"Department of Agriculture","total_obs":87461405.0,"program_type":"assistance_listing"},{"cfda":"10.567","permalink":"/program/10.567","title":"Food
@@ -270,12 +276,15 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   of Agriculture","total_obs":28125029.95,"program_type":"assistance_listing"},{"cfda":"10.576","permalink":"/program/10.576","title":"Senior
   Farmers Market Nutrition Program","popular_name":"Senior Farmers Market Nutrition
   Program","agency":"Department of Agriculture","total_obs":20584771.0,"program_type":"assistance_listing"},{"cfda":"10.578","permalink":"/program/10.578","title":"WIC
-  Grants To States (WGS) ","popular_name":"WIC Grants To States (WGS)","agency":"Department
+  Grants To States (WGS)","popular_name":"WIC Grants To States (WGS)","agency":"Department
   of Agriculture","total_obs":17434224.0,"program_type":"assistance_listing"},{"cfda":"10.559","permalink":"/program/10.559","title":"Summer
   Food Service Program for Children","popular_name":"Summer Food Service Program for
   Children","agency":"Department of Agriculture","total_obs":15395080.0,"program_type":"assistance_listing"},{"cfda":"10.572","permalink":"/program/10.572","title":"WIC
   Farmers'' Market Nutrition Program (FMNP)","popular_name":"FMNP","agency":"Department
-  of Agriculture","total_obs":15042668.13,"program_type":"assistance_listing"},{"cfda":"10.535","permalink":"/program/10.535","title":"SNAP
+  of Agriculture","total_obs":15042668.13,"program_type":"assistance_listing"},{"cfda":"10.580","permalink":"/program/10.580","title":"Supplemental
+  Nutrition Assistance Program, Process and Technology Improvement Grants","popular_name":"Supplemental
+  Nutrition Assistance Program, Process and Technology Improvement Grants","agency":"Department
+  of Agriculture","total_obs":6431597.58,"program_type":"assistance_listing"},{"cfda":"10.535","permalink":"/program/10.535","title":"SNAP
   Fraud Framework Implementation Grant","popular_name":"SNAP Fraud Framework Implementation
   Grant","agency":"Department of Agriculture","total_obs":5296212.0,"program_type":"assistance_listing"},{"cfda":"10.545","permalink":"/program/10.545","title":"Farmers\u2019
   Market Supplemental Nutrition Assistance Program Support Grants","popular_name":"Mobile
@@ -287,10 +296,12 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   Credit Corporation (CCC) Funding to Alleviate Emergency Supply Chain Disruption
   in the Commodity Supplemental Food Program (CSFP)","popular_name":null,"agency":"Department
   of Agriculture","total_obs":1767949.0,"program_type":"assistance_listing"},{"cfda":"10.522","permalink":"/program/10.522","title":"Food
-  and Agriculture Service Learning Program ","popular_name":"FASLP; Food and Ag Service
+  and Agriculture Service Learning Program","popular_name":"FASLP; Food and Ag Service
   Learning","agency":"Department of Agriculture","total_obs":960000.0,"program_type":"assistance_listing"},{"cfda":"10.872","permalink":"/program/10.872","title":"Healthy
-  Food Financing Initiative","popular_name":"HFFI","agency":"Department of Agriculture","total_obs":500000.0,"program_type":"assistance_listing"},{"cfda":"10.594","permalink":"/program/10.594","title":"Food
-  Distribution Program on Indian Reservations Nutrition Education Grants ","popular_name":"Food
+  Food Financing Initiative","popular_name":"HFFI","agency":"Department of Agriculture","total_obs":500000.0,"program_type":"assistance_listing"},{"cfda":"10.890","permalink":"/program/10.890","title":"Rural
+  Development Cooperative Agreement Program","popular_name":"Rural Development''s
+  Investment Food Supply Chains","agency":"Department of Agriculture","total_obs":315000.0,"program_type":"assistance_listing"},{"cfda":"10.594","permalink":"/program/10.594","title":"Food
+  Distribution Program on Indian Reservations Nutrition Education Grants","popular_name":"Food
   Distribution Program on Indian Reservations Nutrition Education Grants","agency":"Department
   of Agriculture","total_obs":72500.0,"program_type":"assistance_listing"},{"cfda":"10.575","permalink":"/program/10.575","title":"Farm
   to School Grant Program","popular_name":"Farm to School Grant Program","agency":"Department
@@ -306,7 +317,9 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   Distribution Program on Indian Reservations (FDPIR) Nutrition Paraprofessional Training","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.486","permalink":"/program/93.486","title":"Food
   Safety and Nutrition","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.304","permalink":"/program/10.304","title":"Food
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.380","permalink":"/program/10.380","title":"Food
+  Supply Chain Guaranteed Loan Program","popular_name":null,"agency":"Department of
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.304","permalink":"/program/10.304","title":"Food
   and Agriculture Defense Initiative (FADI)","popular_name":"Homeland Security Program","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.608","permalink":"/program/10.608","title":"Food
   for Education","popular_name":"McGovern-Dole","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.384","permalink":"/program/10.384","title":"Indigenous
@@ -320,7 +333,9 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.188","permalink":"/program/10.188","title":"Organic
   Market Development Grant (OMDG) Program","popular_name":"Organic Market Development
   Grant Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.186","permalink":"/program/10.186","title":"Regional
-  Food Business Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.533","permalink":"/program/10.533","title":"SNAP-Ed
+  Food Business Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.190","permalink":"/program/10.190","title":"Resilient
+  Food System Infrastructure Program","popular_name":"Resilient Food System Infrastructure
+  Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.533","permalink":"/program/10.533","title":"SNAP-Ed
   Toolkit","popular_name":"SNAP-Ed Toolkit","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.553","permalink":"/program/10.553","title":"School
   Breakfast Program","popular_name":"School Breakfast Program","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.556","permalink":"/program/10.556","title":"Special
@@ -340,7 +355,7 @@ programs: '[{"cfda":"10.551","permalink":"/program/10.551","title":"Supplemental
   of Agriculture","total_obs":-1108036279.05,"program_type":"assistance_listing"}]'
 title: Food and Nutrition Assistance
 total_num_agencies: 4
-total_num_applicant_types: 25
-total_num_programs: 54
-total_obs: 138062444126.08002
+total_num_applicant_types: 27
+total_num_programs: 59
+total_obs: 138579796680.6
 ---

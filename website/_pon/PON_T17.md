@@ -10,6 +10,11 @@ gwo_id: PON.T17
 permalink: /pon/PON_T17
 title: Increase Utilization of Educational and Cultural Facilities
 where_used:
+- agency: The Institute of Museum and Library Services
+  expenditure_amount: 181400000.0
+  name: Grants to States
+  permalink: /program/45.310
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Heritage Partnership
@@ -27,7 +32,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1500000.0
-  name: 'National Maritime Heritage Grants '
+  name: National Maritime Heritage Grants
   permalink: /program/15.925
   program_type: assistance_listing
 - agency: Department of the Interior

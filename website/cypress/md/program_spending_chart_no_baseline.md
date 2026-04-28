@@ -6,7 +6,8 @@ outlays: '[{"x":"2015","outlay":35,"obligation":70},{"x":"2016","outlay":100.69,
 
 <h3 id="chart-header" class="font-sans-xs">Spending</h3>
 {% include components/_spending-chart.html
-    outlays=page.outlays %}
+    outlays=page.outlays
+    program_type='assistance_listing' %}
 {% include scripts/_chart-utils.html %}
 {% include scripts/_tab-navigation.html %}
 {% include scripts/_program-charts.html %}

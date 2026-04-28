@@ -49,6 +49,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
+  name: Training Interpreters for Individuals who are Deaf and Individuals who are
+    Deaf-Blind
+  permalink: /program/84.160
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
   name: Transition Programs for Students with Intellectual Disabilities into Higher
     Education
   permalink: /program/84.407

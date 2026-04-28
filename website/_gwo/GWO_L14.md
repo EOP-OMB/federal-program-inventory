@@ -23,6 +23,12 @@ where_used:
   permalink: /program/93.493
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 10999986.0
+  name: Cooperative Agreements to States/Territories for the Coordination and Development
+    of Primary Care Offices
+  permalink: /program/93.130
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 256924900.0
   name: Family Planning Services
   permalink: /program/93.217
@@ -52,6 +58,11 @@ where_used:
   expenditure_amount: 0.0
   name: Health Professions Preparatory Scholarship Program for Indians
   permalink: /program/93.971
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Health Professions Recruitment Program for Indians
+  permalink: /program/93.970
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

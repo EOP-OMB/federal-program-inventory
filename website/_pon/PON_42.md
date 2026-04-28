@@ -33,7 +33,7 @@ where_used:
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 3772000.0
-  name: 'Native American/Native Hawaiian Museum Services Program '
+  name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: Department of Health and Human Services

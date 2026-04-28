@@ -1,14 +1,17 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":64957616.0},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":6,"total_obs":64957616.0},{"title":"Department
   of Homeland Security","total_num_programs":2,"total_obs":6195859.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":3},{"title":"Federally
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":4},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Transit
-  Authority","total_num_programs":2},{"title":"Unrestricted by Entity Type","total_num_programs":2},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Port
-  Authority","total_num_programs":1},{"title":"State","total_num_programs":1}]'
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"Transit
+  Authority","total_num_programs":2},{"title":"Unrestricted by Entity Type","total_num_programs":2},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"Port Authority","total_num_programs":1},{"title":"U.S.
+  Territories and possessions","total_num_programs":1},{"title":"U.S. Territory (or
+  Possession) Government (including freely-associated states)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -228,15 +231,18 @@ programs: '[{"cfda":"20.532","permalink":"/program/20.532","title":"Passenger Fe
   Environmental and Technical Assistance","popular_name":"META","agency":"Department
   of Transportation","total_obs":500000.0,"program_type":"assistance_listing"},{"cfda":"97.136","permalink":"/program/97.136","title":"Boating
   Safety Data Collection and Analysis Grant Program","popular_name":"National Recreational
-  Boating Safety Survey (NRBSS)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.538","permalink":"/program/20.538","title":"Electric
+  Boating Safety Survey (NRBSS)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.270","permalink":"/program/20.270","title":"Construction
+  of Ferry Boats and Ferry Terminal Facilities Program (FBP)","popular_name":"The
+  Ferry Boat Program (FBP)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.538","permalink":"/program/20.538","title":"Electric
   or Low-Emitting Passenger Ferry Program","popular_name":"Low-No Ferry","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.539","permalink":"/program/20.539","title":"Ferry
   Service for Rural Communities","popular_name":"Ferry Service for Rural Communities
   Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.402","permalink":"/program/11.402","title":"Hydrographic
-  Services","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Services","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.540","permalink":"/program/20.540","title":"Passenger
+  Ferry Program","popular_name":"Ferry Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Water Transportation
 total_num_agencies: 3
-total_num_applicant_types: 9
-total_num_programs: 7
+total_num_applicant_types: 13
+total_num_programs: 9
 total_obs: 71153475.0
 ---

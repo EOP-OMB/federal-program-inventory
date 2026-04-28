@@ -23,6 +23,16 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
+  name: Community Disaster Loans
+  permalink: /program/97.030
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Cooperative Extension Service
+  permalink: /program/10.500
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
   name: Crisis Counseling
   permalink: /program/97.032
   program_type: assistance_listing
@@ -151,8 +161,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1.0
-  name: 'Strengthening Emergency Care Delivery in the United States Healthcare System
-    through Health Information and Promotion '
+  name: Strengthening Emergency Care Delivery in the United States Healthcare System
+    through Health Information and Promotion
   permalink: /program/93.078
   program_type: assistance_listing
 ---

@@ -33,11 +33,12 @@ const defaultConfig = {
   viewBoxWidth: 1000
 }
 
-function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
+function createOutlaysVsSpendChart(containerId, data, programType, config = defaultConfig) {
   const chartWidth = config.viewBoxWidth - config.margin.left - config.margin.right - config.legendWidth - config.legendOuterLeftPadding;
   const chartHeight = config.viewBoxHeight - config.margin.top - config.margin.bottom;
   const showOutlaysDatapoint = data.outlays.length > 0;
   const showObligationsDatapoint = data.obligations.length === 1;
+  const showObligations = programType !== 'tax_expenditure' && programType !== 'interest';
 
   _resetContainer(containerId);
   const svg = _createSvg(containerId, config);
@@ -53,7 +54,7 @@ function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
     outlaysFillArea = _addOutlaysFillArea(svg, data, config, outlayFillGenerator);
   }
 
-  const { obligationsLine, outlaysLine } = _addLines(svg, data, config, lineGenerator);
+  const { obligationsLine, outlaysLine } = _addLines(svg, data, config, lineGenerator, showObligations);
 
   let obligationsPoint = null;
   let outlaysPoint = null;
@@ -62,16 +63,16 @@ function createOutlaysVsSpendChart(containerId, data, config = defaultConfig) {
     outlaysPoint = _showOutlaysDataPoint(data, svg, xScale, yScale, config);
   }
 
-  if (showObligationsDatapoint) {
+  if (showObligationsDatapoint && showObligations) {
     obligationsPoint = _showObligationsDataPoint(data, svg, xScale, yScale, config);
   }
 
   _addXAxis(xScale, svg, chartHeight, config);
   _addYAxis(yScale, svg, chartHeight, config);
 
-  _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data);
+  _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data, programType);
 
-  _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale);
+  _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType);
 
   _addEndValueLabels(svg, data, xScale, yScale, config);
 }
@@ -103,7 +104,7 @@ function _createGenerators(xScale, yScale) {
   return { outlayFillGenerator, lineGenerator };
 }
 
-function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale) {
+function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType) {
   const tooltip = d3.select("body").append("div")
     .attr("class", "outlays-chart-tooltip");
 
@@ -150,7 +151,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
 
       let tooltipContent = `<strong>Year: ${nearestYear}</strong><br/>`;
 
-      if (obligationPoint) {
+      if (obligationPoint && showObligations) {
         const y = yScale(obligationPoint.value);
         hoverCircleObligations
           .attr("cx", x)
@@ -168,7 +169,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
           .attr("cy", y)
           .style("opacity", 1);
         let outlayLabel = "Outlays";
-        if (data.revenueLosses.length > 0) {
+        if (programType === 'tax_expenditure') {
           outlayLabel += " + Rev Losses";
         }
         tooltipContent += `${outlayLabel}: ${formatDollarAmount(outlayPoint.value)}`;
@@ -191,7 +192,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale)
     });
 }
 
-function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data) {
+function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data, programType) {
   const legend = svg.append("g")
     .attr("class", "legend")
     .attr("transform", `translate(${chartWidth + config.legendOuterLeftPadding}, ${chartHeight / 2})`)
@@ -200,14 +201,14 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
 
   if (data.outlays.length > 0) {
     let outlaysLabel = "Outlays";
-    if (data.revenueLosses.length > 0) {
+    if (programType === 'tax_expenditure') {
       outlaysLabel += " + Rev Losses";
     }
 
     legendItems.push({ label: outlaysLabel, color: config.outlaysStrokeColor, style: "solid", hasPoint: showOutlaysDatapoint, line: outlaysLine, point: outlaysPoint });
   }
 
-  if (data.obligations.length > 0) {
+  if (data.obligations.length > 0 && obligationsLine !== null) {
     legendItems.push({ label: "Obligations", color: config.obligationsStrokeColor, style: "solid", hasPoint: showObligationsDatapoint, line: obligationsLine, point: obligationsPoint });
   }
 
@@ -321,13 +322,17 @@ function _showOutlaysDataPoint(data, svg, xScale, yScale, config) {
     .attr("fill", config.outlaysStrokeColor);
 }
 
-function _addLines(svg, data, config, lineGenerator) {
-  const obligationsLine = svg.append("path")
-    .datum(data.obligations)
-    .attr("fill", "none")
-    .attr("stroke", config.obligationsStrokeColor)
-    .attr("stroke-width", config.obligationsStrokeWidth)
-    .attr("d", lineGenerator);
+function _addLines(svg, data, config, lineGenerator, showObligations) {
+  let obligationsLine = null;
+  if (showObligations) {
+    obligationsLine = svg.append("path")
+      .datum(data.obligations)
+      .attr("fill", "none")
+      .attr("stroke", config.obligationsStrokeColor)
+      .attr("stroke-width", config.obligationsStrokeWidth)
+      .attr("d", lineGenerator);
+  }
+
   const outlaysLine = svg.append("path")
     .datum(data.outlays)
     .attr("fill", "none")
@@ -443,7 +448,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const formattedData = standardizeDataForD3(rawData, true);
 
   if (formattedData.obligations.length > 0 || formattedData.outlays.length > 0) {
-    createOutlaysVsSpendChart('#' + id, formattedData);
+    const programType = chartElement.getAttribute('data-program-type');
+    createOutlaysVsSpendChart('#' + id, formattedData, programType);
   } else {
     document.getElementById(chartHeaderId)?.classList.add('hide');
     document.getElementById(noChartId)?.classList.remove('hide');

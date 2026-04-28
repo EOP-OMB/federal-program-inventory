@@ -11,9 +11,19 @@ permalink: /pon/PON_75
 title: Improve Self-Sufficiency of Small-Scale Farms
 where_used:
 - agency: Department of Agriculture
+  expenditure_amount: 1731333.0
+  name: 2017 Wildfires and Hurricanes Indemnity Program
+  permalink: /program/10.120
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Agriculture Innovation Center Demonstration Program
   permalink: /program/10.377
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 10000000.0
+  name: Agriculture Risk Management Education Partnerships Competitive Grants Program
+  permalink: /program/10.520
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 3750000.0
@@ -32,7 +42,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Conservation Loans '
+  name: Conservation Loans
   permalink: /program/10.099
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -55,6 +65,11 @@ where_used:
   expenditure_amount: 1913830.0
   name: Farm Business Management and Benchmarking Competitive Grants Program
   permalink: /program/10.319
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Farm Loan Borrower Relief Program
+  permalink: /program/10.970
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 3633000000.0
@@ -115,6 +130,11 @@ where_used:
   expenditure_amount: 5000000.0
   name: Micro-Grants for Food Security Program
   permalink: /program/10.179
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 1898000.0
+  name: Office of Urban Agriculture and Innovative Production
+  permalink: /program/10.940
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 5000000.0

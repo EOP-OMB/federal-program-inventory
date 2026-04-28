@@ -13,6 +13,11 @@ title: Improve Revenue Collection
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 0.0
+  name: 8(g) State Coastal Zone
+  permalink: /program/15.430
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
   name: Alaska Settlement Agreement
   permalink: /program/15.431
   program_type: assistance_listing
@@ -65,6 +70,11 @@ where_used:
   expenditure_amount: 0.0
   name: Schools and Roads - Grants to States
   permalink: /program/10.665
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: South Half of the Red River
+  permalink: /program/15.440
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0

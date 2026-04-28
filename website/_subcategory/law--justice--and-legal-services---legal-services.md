@@ -1,8 +1,9 @@
 ---
 agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":1,"total_obs":27889102.08},{"title":"Department
-  of the Treasury","total_num_programs":1,"total_obs":21610847.77},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"National
+  of the Treasury","total_num_programs":1,"total_obs":21610847.77},{"title":"Department
+  of Education","total_num_programs":1,"total_obs":19787300.0},{"title":"U.S. Election
+  Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"Social
+  Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
   Council on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Justice","total_num_programs":2,"total_obs":0.0},{"title":"Department of Homeland
   Security","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department
@@ -12,10 +13,18 @@ applicant_types: '[{"title":"Other","total_num_programs":4},{"title":"U.S. State
   (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
   with geographic regional control and authority)","total_num_programs":2},{"title":"Nonprofit
-  Organization","total_num_programs":2},{"title":"Anyone/general public","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"For-Profit
-  Organization","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Other public institution/organization","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"Unrestricted
+  Organization","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"Anyone/general
+  public","total_num_programs":1},{"title":"Department or Agency of a U.S. State Government","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Other
+  (specify)","total_num_programs":1},{"title":"Other public institution/organization","total_num_programs":1},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -230,7 +239,9 @@ permalink: /category/law--justice--and-legal-services/legal-services
 programs: '[{"cfda":"14.401","permalink":"/program/14.401","title":"Fair Housing Assistance
   Program","popular_name":"(FHAP)","agency":"Department of Housing and Urban Development","total_obs":27889102.08,"program_type":"assistance_listing"},{"cfda":"21.008","permalink":"/program/21.008","title":"Low
   Income Taxpayer Clinics","popular_name":"Low-income taxpayer clinics","agency":"Department
-  of the Treasury","total_obs":21610847.77,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
+  of the Treasury","total_obs":21610847.77,"program_type":"assistance_listing"},{"cfda":"84.240","permalink":"/program/84.240","title":"Program
+  of Protection and Advocacy of Individual Rights","popular_name":null,"agency":"Department
+  of Education","total_obs":19787300.0,"program_type":"assistance_listing"},{"cfda":"16.746","permalink":"/program/16.746","title":"Capital
   Case Litigation Initiative","popular_name":"Capital Case Litigation Initiative","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.102","permalink":"/program/97.102","title":"Case
   Management Pilot Program","popular_name":"Case Management Pilot Program (CMPP)","agency":"Department
@@ -243,13 +254,16 @@ programs: '[{"cfda":"14.401","permalink":"/program/14.401","title":"Fair Housing
   America Vote Act Requirements Payments","popular_name":"Requirements Payment","agency":"U.S.
   Election Assistance Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.836","permalink":"/program/16.836","title":"Indigent
   Defense","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"92.002","permalink":"/program/92.002","title":"National
-  Council on Disability ","popular_name":"NCD","agency":"National Council on Disability","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.435","permalink":"/program/10.435","title":"State
+  Council on Disability","popular_name":"NCD","agency":"National Council on Disability","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.009","permalink":"/program/96.009","title":"Social
+  Security State Grants for Work Incentives Assistance to Disabled Beneficiaries","popular_name":"Protection
+  and Advocacy for Beneficiaries of Social Security (PABSS)","agency":"Social Security
+  Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.435","permalink":"/program/10.435","title":"State
   Mediation Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.013","permalink":"/program/96.013","title":"Strengthening
   Protections for Social Security Beneficiaries","popular_name":"Protection and Advocacy
   (P&A) Systems: SPSSB","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Legal Services
-total_num_agencies: 9
-total_num_applicant_types: 14
-total_num_programs: 12
-total_obs: 49499949.849999994
+total_num_agencies: 10
+total_num_applicant_types: 23
+total_num_programs: 14
+total_obs: 69287249.85
 ---

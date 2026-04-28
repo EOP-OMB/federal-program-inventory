@@ -23,12 +23,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 7865434.0
-  name: 'Demonstration Grants for Domestic Victims of Human Trafficking '
+  name: Demonstration Grants for Domestic Victims of Human Trafficking
   permalink: /program/93.327
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Domestic Trafficking Victim Program '
+  name: Domestic Trafficking Victim Program
   permalink: /program/16.834
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -52,9 +52,19 @@ where_used:
   name: Preventing Trafficking of Girls
   permalink: /program/16.035
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Services for Trafficking Victims
+  permalink: /program/16.320
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12497442.0
   name: Services to Victims of a Severe Form of Trafficking
   permalink: /program/93.598
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 79739965.0
+  name: VOCA Tribal Victim Services Set-Aside Program
+  permalink: /program/16.841
   program_type: assistance_listing
 ---

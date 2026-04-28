@@ -15,6 +15,11 @@ where_used:
   permalink: /program/93.423
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 210000000.0
+  name: Basic Health Program (Affordable Care Act)
+  permalink: /program/93.640
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 22606370673.0
   name: Children's Health Insurance Program
   permalink: /program/93.767
@@ -33,6 +38,11 @@ where_used:
   expenditure_amount: 474915000000.0
   name: Medicare Hospital Insurance
   permalink: /program/93.773
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 200548000000.0
+  name: Medicare Prescription Drug Coverage
+  permalink: /program/93.770
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 632153000000.0

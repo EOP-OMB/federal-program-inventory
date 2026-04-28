@@ -12,10 +12,10 @@ where_used:
   name: All-Volunteer Force Educational Assistance
   permalink: /program/64.124
   program_type: assistance_listing
-- agency: Social Security Administration
+- agency: Department of Education
   expenditure_amount: 0.0
-  name: Analyzing Relationships between Disability, Rehabilitation, and Work
-  permalink: /program/96.011
+  name: American Indian Vocational Rehabilitation Services
+  permalink: /program/84.250
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 12000000.0
@@ -29,13 +29,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
-  name: 'Homeless Veterans’ Reintegration Program '
+  name: Homeless Veterans’ Reintegration Program
   permalink: /program/17.805
   program_type: assistance_listing
-- agency: Social Security Administration
+- agency: Department of Labor
   expenditure_amount: 0.0
-  name: Interventional Cooperative Agreement Program
-  permalink: /program/96.012
+  name: Jobs for Veterans State Grants
+  permalink: /program/17.801
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Reentry Employment Opportunities
+  permalink: /program/17.270
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -54,23 +59,18 @@ where_used:
   program_type: assistance_listing
 - agency: Social Security Administration
   expenditure_amount: 0.0
-  name: 'Social Security - Work Incentives Planning and Assistance Program '
+  name: Social Security - Work Incentives Planning and Assistance Program
   permalink: /program/96.008
-  program_type: assistance_listing
-- agency: Social Security Administration
-  expenditure_amount: 0.0
-  name: Social Security Research and Demonstration
-  permalink: /program/96.007
-  program_type: assistance_listing
-- agency: Social Security Administration
-  expenditure_amount: 0.0
-  name: Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries
-  permalink: /program/96.009
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
   name: Trade Adjustment Assistance
   permalink: /program/17.245
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: Veteran Rapid Retraining Assistance Program
+  permalink: /program/64.130
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 3364170000.0

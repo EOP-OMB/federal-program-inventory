@@ -39,11 +39,6 @@ where_used:
   name: Connected Care Pilot Program
   permalink: /program/32.007
   program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 10000000.0
-  name: Cooperative Agreement to Support Navigators in Federally-facilitated Exchanges
-  permalink: /program/93.332
-  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 3000000.0
   name: Delta Health Care Services Grant Program
@@ -53,6 +48,11 @@ where_used:
   expenditure_amount: 0.0
   name: Emergency Medical Services for Children
   permalink: /program/93.127
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4000000.0
+  name: Family Planning Personnel Training
+  permalink: /program/93.260
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1375000.0
@@ -68,6 +68,11 @@ where_used:
   expenditure_amount: 0.0
   name: Health Professions Pre-graduate Scholarship Program for Indians
   permalink: /program/93.123
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6197563.0
+  name: Improving Epilepsy Programs, Services, and Outcomes through National Partnerships
+  permalink: /program/93.850
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 8908160.0
@@ -156,8 +161,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1.0
-  name: 'Strengthening Emergency Care Delivery in the United States Healthcare System
-    through Health Information and Promotion '
+  name: Strengthening Emergency Care Delivery in the United States Healthcare System
+    through Health Information and Promotion
   permalink: /program/93.078
   program_type: assistance_listing
 - agency: Department of Health and Human Services

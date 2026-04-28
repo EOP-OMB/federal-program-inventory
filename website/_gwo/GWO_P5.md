@@ -9,13 +9,18 @@ title: End Criminal Recidivism
 where_used:
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Children of Incarcerated Parents '
+  name: Children of Incarcerated Parents
   permalink: /program/16.831
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
   name: Comprehensive Opioid, Stimulant, and other Substances Use Program
   permalink: /program/16.838
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Juvenile Justice and Delinquency Prevention
+  permalink: /program/16.540
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -26,12 +31,6 @@ where_used:
   expenditure_amount: 0.0
   name: Second Chance Act Reentry Initiative
   permalink: /program/16.812
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: 'Swift, Certain, and Fair Supervision Program: Applying the Principles Behind
-    Project HOPE'
-  permalink: /program/16.828
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 5200000.0
