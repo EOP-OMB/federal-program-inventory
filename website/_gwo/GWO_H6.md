@@ -82,7 +82,17 @@ where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 95000000.0
   name: National Institutes of Health Extramural Loan Repayment Program
+  permalink: /program/93.280
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 95000000.0
+  name: National Institutes of Health Extramural Loan Repayment Program
   permalink: /program/93.ELR
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6000000.0
+  name: National Institutes of Health Intramural Loan Repayment Program
+  permalink: /program/93.220
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 6000000.0

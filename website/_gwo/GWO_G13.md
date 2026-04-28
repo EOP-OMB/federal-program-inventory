@@ -12,6 +12,11 @@ where_used:
   name: Biotechnology Risk Assessment Research
   permalink: /program/10.219
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 44412.5
+  name: DOD, NDEP, DOTC-STEM Education Outreach Implementation
+  permalink: /program/12.560
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 15312400.0
   name: Hispanic Serving Institutions Education Grants
@@ -26,6 +31,12 @@ where_used:
   expenditure_amount: 3200000.0
   name: NOAA Mission-Related Education Awards
   permalink: /program/11.008
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 300000.0
+  name: Standards Coordination Office Curricula Development Cooperative Agreement
+    Program
+  permalink: /program/11.057
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 8000000.0

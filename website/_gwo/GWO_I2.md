@@ -34,7 +34,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Bureau of Ocean Energy Management Renewable Energy '
+  name: Bureau of Ocean Energy Management Renewable Energy
   permalink: /program/15.408
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -49,7 +49,7 @@ where_used:
   program_type: tax_expenditure
 - agency: Department of Energy
   expenditure_amount: 0.0
-  name: 'Energy Efficiency and Conservation Block Grant Program (EECBG) '
+  name: Energy Efficiency and Conservation Block Grant Program (EECBG)
   permalink: /program/81.128
   program_type: assistance_listing
 - agency: Department of Energy
@@ -88,6 +88,12 @@ where_used:
   expenditure_amount: 1190018290.0
   name: Powering Affordable Clean Energy (PACE) Program
   permalink: /program/10.757
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 52400000.0
+  name: Regulation of Surface Coal Mining and Surface Effects of Underground Coal
+    Mining
+  permalink: /program/15.250
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0

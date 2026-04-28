@@ -781,6 +781,25 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
 
     print("Successfully generated gwo markdown files")
 
+def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, programs_data, fiscal_year: str):
+    """Generate the about page using pre-generated data."""
+    spending_total = get_government_wide_spending_total(cursor, fiscal_year)
+
+    page = {
+        'title': 'About the FPI',
+        'layout': 'about-fpi',
+        'permalink': '/about/fpi',
+        'fiscal_year': fiscal_year,
+        'spending_total': spending_total,
+    }
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as file:
+        file.write('---\n')
+        yaml.dump(page, file, allow_unicode=True)
+        file.write('---\n')
+    print("Successfully generated about page")
+
 def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
     """Generate markdown files for pons with related programs."""
     recreate_directory(output_dir)
@@ -874,6 +893,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             p.usaspending_awards_url as usaspending_url,
             p.grants_url,
             p.program_type,
+            p.agency_id,
             (SELECT a2.agency_name
              FROM agency a2
              WHERE a2.id = a.tier_1_agency_id) as top_agency_name,
@@ -1038,6 +1058,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'sam_url': program['sam_url'],
             'usaspending_url': program['usaspending_url'],
             'grants_url': program['grants_url'],
+            'agency_id': program['agency_id'],
             'top_agency_name': program['top_agency_name'],
             'sub_agency_name': program['sub_agency_name'],
             'assistance_types': sorted(list(set(program_categories['assistance'].values()))),
@@ -1367,6 +1388,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'applicant_types': program['applicant_types'],
             'categories': program['categories'],
             'agency': program['top_agency_name'] or 'Unspecified',
+            'agency_id': program['agency_id'],
             'sub-agency': program['sub_agency_name'] or 'N/A',
             'obligations': json.dumps(program['obligations'], separators=(',', ':')),
             'results': program['results'],
@@ -1434,6 +1456,18 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         file.write('---\n')
     print("Successfully generated search page")
 
+def get_government_wide_spending_total(cursor, fiscal_year):
+    cursor.execute("""
+        SELECT
+            SUM(expenditure) AS total
+        FROM program_amounts_lookup
+        WHERE fiscal_year = ?
+    """, (str(fiscal_year),))
+
+    total = cursor.fetchone()
+
+    return total['total']
+
 def get_expenditure_for_program(outlays, other_program_spending, fiscal_year):
     expenditures = 0
     other_expenditures = 0
@@ -1451,16 +1485,10 @@ def get_expenditure_for_program(outlays, other_program_spending, fiscal_year):
 
     return expenditures + other_expenditures
 
-def generate_home_page(output_path: str, programs_data,
+def generate_home_page(cursor: sqlite3.Cursor, output_path: str, programs_data,
                        shared_data: Dict[str, Any], fiscal_year: str):
     """Generate the home page using pre-generated data."""
-    spending_total = sum(map(
-        lambda p: get_expenditure_for_program(
-            p['outlays'],
-            p['other_program_spending'],
-            fiscal_year
-        ), programs_data
-    ))
+    spending_total = get_government_wide_spending_total(cursor, fiscal_year)
 
     agencies_count = len(shared_data['cfo_agencies']) + len(shared_data['other_agencies'])
 
@@ -1766,7 +1794,7 @@ try:
                            constants.LAST_COMPLETED_FISCAL_YEAR)
 
     home_path = os.path.join('../website', 'pages', 'home.md')
-    generate_home_page(home_path, programs_data, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+    generate_home_page(cursor, home_path, programs_data, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     programs_json_path = os.path.join('../indexer', 'programs-table.json')
     generate_programs_table_json(programs_json_path, programs_data,
@@ -1783,6 +1811,9 @@ try:
 
     pon_dir = os.path.join('../website', '_pon')
     generate_pon_markdown_files(cursor, pon_dir)
+
+    about_path = os.path.join('../website', 'pages', 'about-fpi.md')
+    generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
 except sqlite3.Error as e:
     print(f"Database error occurred: {e}")

@@ -18,14 +18,19 @@ where_used:
   permalink: /program/93.353
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 153000000.0
+  name: 21st Century Cures Act - Precision Medicine Initiative
+  permalink: /program/93.368
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 114349999.0
   name: 21st Century Cures Act - Precision Medicine Initiative
   permalink: /program/93.463
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 153000000.0
-  name: "21st Century Cures Act - Precision Medicine Initiative\t"
-  permalink: /program/93.368
+  expenditure_amount: 0.0
+  name: '21st Century Cures Act: Regenerative Medicine Initiative'
+  permalink: /program/93.370
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 6144154.0
@@ -48,6 +53,11 @@ where_used:
   name: Aging Research
   permalink: /program/93.866
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Air Force Medical Research and Development
+  permalink: /program/12.810
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12401560.0
   name: Alcohol Research Programs
@@ -60,9 +70,9 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1549726.0
-  name: "Analyses, Research and Studies to Address the Impact of CMS’ Programs on\
-    \ American Indian/Alaska Native (AI/AN) Beneficiaries and the Health Care System\
-    \ Serving these Beneficiaries\t"
+  name: Analyses, Research and Studies to Address the Impact of CMS’ Programs on American
+    Indian/Alaska Native (AI/AN) Beneficiaries and the Health Care System Serving
+    these Beneficiaries
   permalink: /program/93.341
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -112,6 +122,12 @@ where_used:
   expenditure_amount: 13008404.0
   name: Bioengineering, Biomedical Imaging, and Technology Development - SBIR/STTR
   permalink: /program/93.EB2
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Biomedical Advanced Research and Development Authority (BARDA), Biodefense
+    Medical Countermeasure Development
+  permalink: /program/93.360
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -216,7 +232,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 13252108.0
-  name: 'Chronic Diseases:  Research, Control, and Prevention  '
+  name: 'Chronic Diseases:  Research, Control, and Prevention'
   permalink: /program/93.068
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -404,7 +420,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'Indian Health Service Sanitation Facilities Construction Program '
+  name: Indian Health Service Sanitation Facilities Construction Program
   permalink: /program/93.445
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -422,11 +438,6 @@ where_used:
   name: Laboratory Leadership, Workforce Training and Management Development, Improving
     Public Health Laboratory Infrastructure
   permalink: /program/93.065
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 2000000.0
-  name: Leading Edge Acceleration Projects (LEAP) in Health Information Technology
-  permalink: /program/93.345
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -463,9 +474,14 @@ where_used:
   name: Mental Health Research Grants
   permalink: /program/93.242
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Military Medical Research and Development
+  permalink: /program/12.420
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'Minority Health and Health Disparities Research '
+  name: Minority Health and Health Disparities Research
   permalink: /program/93.307
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -538,6 +554,11 @@ where_used:
   name: National Cancer Institute Research - Small Business Innovation Research and
     Small Business Technology Transfer
   permalink: /program/93.CA6
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: National Center for Advancing Translational Sciences
+  permalink: /program/93.350
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 562649746.0
@@ -689,6 +710,11 @@ where_used:
   name: National Partnerships to promote cancer surveillance standards and support
     data quality and operations of National Program of Cancer Registries
   permalink: /program/93.422
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 22500000.0
+  name: Naval Medical Research and Development
+  permalink: /program/12.340
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 114459241.0
@@ -850,9 +876,25 @@ where_used:
   permalink: /program/93.UDN
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 28100048.0
+  name: Trans-NIH Research Support
+  permalink: /program/93.310
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Translation and Implementation Science Research for Heart, Lung, Blood Diseases,
+    and Sleep Disorders
+  permalink: /program/93.840
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 5232404.0
   name: Tuberculosis Demonstration, Research, Public and Professional Education
   permalink: /program/93.947
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 400000000.0
+  name: Uniformed Services University Medical Research Projects
+  permalink: /program/12.750
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 863753.0

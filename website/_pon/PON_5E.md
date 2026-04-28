@@ -17,6 +17,12 @@ where_used:
   name: Nuclear Energy Research, Development and Demonstration
   permalink: /program/81.121
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 150000.0
+  name: South Carolina Support for Foreign Research Reactor Spent Nuclear Fuel (FRRSNF)
+    Shipments
+  permalink: /program/81.180
+  program_type: assistance_listing
 - agency: Nuclear Regulatory Commission
   expenditure_amount: 0.0
   name: U.S. Nuclear Regulatory Commission Office of Research Financial Assistance

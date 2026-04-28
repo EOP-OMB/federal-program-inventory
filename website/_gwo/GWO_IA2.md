@@ -13,6 +13,11 @@ where_used:
   permalink: /program/19.432
   program_type: assistance_listing
 - agency: Department of State
+  expenditure_amount: 101577500.0
+  name: Academic Exchange Programs - Graduate Students
+  permalink: /program/19.400
+  program_type: assistance_listing
+- agency: Department of State
   expenditure_amount: 37168081.0
   name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
@@ -43,6 +48,16 @@ where_used:
   permalink: /program/19.015
   program_type: assistance_listing
 - agency: Department of State
+  expenditure_amount: 120151.0
+  name: ECA Individual Grants
+  permalink: /program/19.450
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 3451000.0
+  name: ECA U.S. Speaker Program
+  permalink: /program/19.440
+  program_type: assistance_listing
+- agency: Department of State
   expenditure_amount: 5155325.0
   name: ECA – American Spaces
   permalink: /program/19.441
@@ -66,6 +81,11 @@ where_used:
   expenditure_amount: 1300000.0
   name: International Exchange Alumni Programs
   permalink: /program/19.452
+  program_type: assistance_listing
+- agency: Japan-U.S. Friendship Commission
+  expenditure_amount: 0.0
+  name: Japan-U.S. Friendship Commission Grants
+  permalink: /program/90.300
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -98,6 +118,12 @@ where_used:
   name: Professional and Cultural Exchange Programs - Special Professional and Cultural
     Programs
   permalink: /program/19.012
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Program for Study of Eastern Europe and the Independent States of the Former
+    Soviet Union
+  permalink: /program/19.300
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 5834926.0

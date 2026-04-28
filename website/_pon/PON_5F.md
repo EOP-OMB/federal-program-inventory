@@ -20,8 +20,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Emergency Watershed Protection Program - Floodplain Easements – Disaster
-    Relief Appropriations Act '
+  name: Emergency Watershed Protection Program - Floodplain Easements – Disaster Relief
+    Appropriations Act
   permalink: /program/10.928
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -31,7 +31,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 34291.0
-  name: 'Tribal Climate Resilience '
+  name: Tribal Climate Resilience
   permalink: /program/15.156
   program_type: assistance_listing
 ---

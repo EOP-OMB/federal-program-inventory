@@ -13,6 +13,11 @@ where_used:
   permalink: /program/66.921
   program_type: assistance_listing
 - agency: Environmental Protection Agency
+  expenditure_amount: 90000000.0
+  name: Solid Waste Infrastructure for Recycling Infrastructure Grants
+  permalink: /program/66.920
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
   expenditure_amount: 0.0
   name: Solid Waste Management Assistance Grants
   permalink: /program/66.808

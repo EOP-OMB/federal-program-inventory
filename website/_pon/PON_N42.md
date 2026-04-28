@@ -23,6 +23,11 @@ where_used:
   name: Export Controls and Border Security
   permalink: /program/19.317
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Global Material Security
+  permalink: /program/81.210
+  program_type: assistance_listing
 - agency: Executive Office of the President
   expenditure_amount: 275579000.0
   name: High Intensity Drug Trafficking Areas Program

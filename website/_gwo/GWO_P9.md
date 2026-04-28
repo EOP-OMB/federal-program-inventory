@@ -22,10 +22,20 @@ where_used:
   name: Global Defense Reform Program
   permalink: /program/19.888
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Global Material Security
+  permalink: /program/81.210
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Global Threat Reduction
   permalink: /program/19.033
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: International Justice and Accountability Programming
+  permalink: /program/19.990
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -39,7 +49,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
-  name: 'Nonproliferation and Disarmament Fund '
+  name: Nonproliferation and Disarmament Fund
   permalink: /program/19.224
   program_type: assistance_listing
 - agency: Department of State
@@ -56,5 +66,10 @@ where_used:
   expenditure_amount: 0.0
   name: Trans-Sahara Counterterrorism Partnership (TSCTP)
   permalink: /program/19.222
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Weapons Removal and Abatement
+  permalink: /program/19.800
   program_type: assistance_listing
 ---

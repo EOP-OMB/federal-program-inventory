@@ -30,7 +30,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Cooperative Agriculture '
+  name: Cooperative Agriculture
   permalink: /program/15.681
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -68,6 +68,11 @@ where_used:
   expenditure_amount: 166047000.0
   name: Habitat Conservation
   permalink: /program/11.463
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 4000000.0
+  name: Invasive and Noxious Plant Management
+  permalink: /program/15.230
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -109,9 +114,19 @@ where_used:
   name: Readiness and Environmental Protection Integration (REPI) Program
   permalink: /program/12.017
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 125000000.0
+  name: Wildlife Crossings Pilot Program
+  permalink: /program/20.290
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 6000000.0
   name: Youth Conservation Opportunities on Public Lands
   permalink: /program/15.243
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 2200000.0
+  name: Youth Conservation Services
+  permalink: /program/12.010
   program_type: assistance_listing
 ---

@@ -112,8 +112,13 @@ where_used:
   program_type: assistance_listing
 - agency: National Council on Disability
   expenditure_amount: 0.0
-  name: 'National Council on Disability '
+  name: National Council on Disability
   permalink: /program/92.002
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 7500000.0
+  name: National Scenic Byways Program
+  permalink: /program/20.280
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 1000000.0
@@ -127,7 +132,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 5000000.0
-  name: 'PHMSA Pipeline Safety Underground Natural Gas Storage Grant '
+  name: PHMSA Pipeline Safety Underground Natural Gas Storage Grant
   permalink: /program/20.725
   program_type: assistance_listing
 - agency: Department of Transportation

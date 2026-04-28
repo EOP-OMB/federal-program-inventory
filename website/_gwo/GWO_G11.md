@@ -22,10 +22,20 @@ where_used:
   name: Highway Training & Education Research Fellowships 504(c)
   permalink: /program/20.295
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Minority Science and Engineering Improvement
+  permalink: /program/84.120
+  program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 20000000.0
   name: National Defense Education Program
   permalink: /program/12.006
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: National Nuclear Forensics Expertise Development Program
+  permalink: /program/97.130
   program_type: assistance_listing
 - agency: National Science Foundation
   expenditure_amount: 286650000.0

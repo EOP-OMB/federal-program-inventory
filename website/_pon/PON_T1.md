@@ -46,6 +46,11 @@ where_used:
   permalink: /program/93.103
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Meat and Poultry Inspection Readiness Grants – Supplemental Funding
+  permalink: /program/10.180
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 25813195.0
   name: Meat, Poultry, and Egg Products Inspection
   permalink: /program/10.477

@@ -53,6 +53,11 @@ where_used:
   permalink: /program/10.723
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Community Project Funds - Congressionally Directed Spending
+  permalink: /program/10.730
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 1510012000.0
   name: Conservation Stewardship Program
   permalink: /program/10.924
@@ -89,7 +94,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 124000.0
-  name: 'Emergency Forest Restoration Program '
+  name: Emergency Forest Restoration Program
   permalink: /program/10.102
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -107,10 +112,20 @@ where_used:
   name: Farm and Ranch Lands Protection Program
   permalink: /program/10.913
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 456000000.0
+  name: Federal Lands Transportation Program (FLTP)
+  permalink: /program/20.260
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 47250000.0
   name: Feral Swine Eradication and Control Pilot Program
   permalink: /program/10.934
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 43000000.0
+  name: Forest Health Protection
+  permalink: /program/10.680
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 14000000.0
@@ -134,13 +149,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 200000000.0
-  name: 'Good Neighbor Authority '
+  name: Good Neighbor Authority
   permalink: /program/10.691
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Good Neighbor Authority for Restoration
   permalink: /program/15.987
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 17216000.0
+  name: Grassland Reserve Program
+  permalink: /program/10.920
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1725000.0
@@ -194,12 +214,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Navajo-Hopi Indian Settlement '
+  name: Navajo-Hopi Indian Settlement
   permalink: /program/15.057
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'OSM/VISTA AmeriCorps '
+  name: OSM/VISTA AmeriCorps
   permalink: /program/15.254
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -294,7 +314,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Youth Conservation '
+  name: Youth Conservation
   permalink: /program/15.546
   program_type: assistance_listing
 ---

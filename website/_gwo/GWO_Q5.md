@@ -8,6 +8,11 @@ permalink: /gwo/GWO_Q5
 title: Eliminate Wildfires
 where_used:
 - agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: BIA Wildland Urban Interface Community Fire Assistance
+  permalink: /program/15.160
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 17500000.0
   name: BLM Fuels Management and Community Fire Assistance Program Activities
   permalink: /program/15.228
@@ -42,6 +47,11 @@ where_used:
   name: Infrastructure Investment and Jobs Act Collaborative Forest Landscape Restoration
     Program
   permalink: /program/10.715
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 80099999.0
+  name: Infrastructure Investment and Jobs Act Community Wildfire Defense Grants
+  permalink: /program/10.720
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 17000000.0

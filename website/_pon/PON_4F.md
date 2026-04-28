@@ -20,6 +20,11 @@ where_used:
   permalink: /program/15.807
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1400000.0
+  name: Environmental Sciences, Applications, Data, and Education
+  permalink: /program/11.440
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 33348000.0
   name: Fisheries Disaster Relief
   permalink: /program/11.477
@@ -34,11 +39,6 @@ where_used:
   name: National Earthquake Hazards Reduction Program Individual State Earthquake
     Assistance
   permalink: /program/97.153
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 3500000.0
-  name: Preventing Heart Attacks and Strokes in High Need Areas
-  permalink: /program/93.816
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1000000.0

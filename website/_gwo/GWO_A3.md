@@ -8,6 +8,11 @@ permalink: /gwo/GWO_A3
 title: Provide Agricultural Incentives and Support
 where_used:
 - agency: Department of Agriculture
+  expenditure_amount: 1731333.0
+  name: 2017 Wildfires and Hurricanes Indemnity Program
+  permalink: /program/10.120
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 150000000.0
   name: 2025 Sugar Processor Block Grants
   permalink: /program/10.992
@@ -28,8 +33,13 @@ where_used:
   permalink: /program/10.113
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 10000000.0
+  name: Agriculture Risk Management Education Partnerships Competitive Grants Program
+  permalink: /program/10.520
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 30000000.0
-  name: 'Agriculture Wool Apparel Manufacturers Trust Fund '
+  name: Agriculture Wool Apparel Manufacturers Trust Fund
   permalink: /program/10.616
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -63,6 +73,11 @@ where_used:
   permalink: /program/10.051
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 12033365.0
+  name: Coronavirus Food Assistance Program 1
+  permalink: /program/10.130
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 7947103.0
   name: Coronavirus Food Assistance Program 2
   permalink: /program/10.132
@@ -83,6 +98,11 @@ where_used:
   permalink: /program/TC.053
   program_type: tax_expenditure
 - agency: Department of Agriculture
+  expenditure_amount: 603771781.0
+  name: Emergency Assistance for Livestock, Honeybees and Farm-Raised Fish Program
+  permalink: /program/10.110
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 558389950.0
   name: Emergency Commodity Assistance Program
   permalink: /program/10.121
@@ -91,6 +111,11 @@ where_used:
   expenditure_amount: 23952604.0
   name: Emergency Livestock Relief Program
   permalink: /program/10.148
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 16230732.0
+  name: Emergency Livestock Relief Program 2022
+  permalink: /program/10.980
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 14000000.0
@@ -144,6 +169,11 @@ where_used:
   permalink: /program/10.978
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 11000000000.0
+  name: Farmer Bridge Assistance Program
+  permalink: /program/10.990
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 450000000.0
   name: Fertilizer Product Expansion Program
   permalink: /program/10.383
@@ -158,11 +188,21 @@ where_used:
   name: Food for Peace, Title II
   permalink: /program/10.624
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 34500000.0
+  name: Foreign Market Development Cooperator Program
+  permalink: /program/10.600
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 220000000.0
   name: Income averaging for farmers
   permalink: /program/TC.052
   program_type: tax_expenditure
+- agency: Department of Agriculture
+  expenditure_amount: 500000000.0
+  name: Indemnity Program
+  permalink: /program/10.030
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Inflation Reduction Act Financially Distressed Borrowers Technical Assistance
@@ -202,6 +242,11 @@ where_used:
   expenditure_amount: 301926549.0
   name: Noninsured Crop Disaster Assistance Program
   permalink: /program/10.451
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 1898000.0
+  name: Office of Urban Agriculture and Innovative Production
+  permalink: /program/10.940
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 5000000.0

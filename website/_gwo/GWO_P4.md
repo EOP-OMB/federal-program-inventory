@@ -48,8 +48,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'Consolidated And Technical Assistance Grant Program to Address Children and
-    Youth Experiencing Domestic and Sexual Violence and Engage Men and Boys as Allies '
+  name: Consolidated And Technical Assistance Grant Program to Address Children and
+    Youth Experiencing Domestic and Sexual Violence and Engage Men and Boys as Allies
   permalink: /program/16.888
   program_type: assistance_listing
 - agency: Department of Justice
@@ -105,7 +105,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 75000000.0
-  name: 'Equitable  Sharing '
+  name: Equitable  Sharing
   permalink: /program/21.016
   program_type: assistance_listing
 - agency: Department of Justice
@@ -122,6 +122,16 @@ where_used:
   expenditure_amount: 0.0
   name: Financial Assistance for Targeted Violence and Terrorism Prevention
   permalink: /program/97.132
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 4000000.0
+  name: Fuel Tax Evasion-Intergovernmental Enforcement Effort
+  permalink: /program/20.240
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Grants to Encourage Arrest Policies and Enforcement of Protection Orders Program
+  permalink: /program/16.590
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -151,6 +161,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: Keep Young Athletes Safe
+  permalink: /program/16.840
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: Law Enforcement Assistance Narcotics and Dangerous Drugs Technical Laboratory
     Publications
   permalink: /program/16.003
@@ -172,12 +187,23 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: Local Law Enforcement Grants for Enforcement of Cybercrimes
+  permalink: /program/16.060
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: National Ashanti Alert Network Training and Technical Assistance Program
   permalink: /program/16.041
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'National Prison Rape Statistics Program '
+  name: National Institute of Justice Research, Evaluation, and Development Project
+    Grants
+  permalink: /program/16.560
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Prison Rape Statistics Program
   permalink: /program/16.739
   program_type: assistance_listing
 - agency: Department of Justice
@@ -207,7 +233,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: 'PREA Program: Strategic Support for PREA Implementation '
+  name: 'PREA Program: Strategic Support for PREA Implementation'
   permalink: /program/16.735
   program_type: assistance_listing
 - agency: Department of Justice
@@ -215,10 +241,25 @@ where_used:
   name: Project Safe Neighborhoods
   permalink: /program/16.609
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Public Safety Partnership and Community Policing Grants
+  permalink: /program/16.710
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: Public Safety and Violence Prevention Research, Evaluation, and Implementation
   permalink: /program/97.108
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Reducing Recidivism for Female Juvenile Delinquents
+  permalink: /program/16.830
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Regional Information Sharing Systems
+  permalink: /program/16.610
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -258,8 +299,19 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: State Justice Statistics Program for Statistical Analysis Centers
+  permalink: /program/16.550
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: Supporting Vulnerable and At-Risk Youth Transitioning out of Foster Care
   permalink: /program/16.049
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: 'Swift, Certain, and Fair Supervision Program: Applying the Principles Behind
+    Project HOPE'
+  permalink: /program/16.828
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0

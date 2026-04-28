@@ -52,6 +52,11 @@ where_used:
   name: Environmental Policy and Innovation Grants
   permalink: /program/66.611
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1400000.0
+  name: Environmental Sciences, Applications, Data, and Education
+  permalink: /program/11.440
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 4700000.0
   name: Forestry Research
@@ -85,7 +90,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1900000.0
-  name: 'National Geological and Geophysical Data Preservation '
+  name: National Geological and Geophysical Data Preservation
   permalink: /program/15.814
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -102,6 +107,11 @@ where_used:
   expenditure_amount: 200000.0
   name: National Wetlands Inventory
   permalink: /program/15.665
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: National and Regional Climate Adaptation Science Centers
+  permalink: /program/15.820
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
@@ -127,6 +137,18 @@ where_used:
   expenditure_amount: 350000.0
   name: Southwest Border Resource Protection Program
   permalink: /program/15.963
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Surveys, Studies, Investigations and Special Purpose Grants within the Office
+    of Research and Development
+  permalink: /program/66.510
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Surveys, Studies, Investigations and Special Purpose Grants within the Office
+    of the Administrator
+  permalink: /program/66.610
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 60000000.0

@@ -1,35 +1,36 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":27,"total_obs":30559802465.149998},{"title":"Department
+agencies: '[{"title":"Department of Education","total_num_programs":25,"total_obs":30408457645.149998},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":18850000000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":2,"total_obs":13386819679.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":3,"total_obs":13387380988.0},{"title":"Department
   of the Interior","total_num_programs":4,"total_obs":137277935.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":49884864.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":23668471.85},{"title":"Nuclear
+  of Agriculture","total_num_programs":9,"total_obs":26902471.85},{"title":"Nuclear
   Regulatory Commission","total_num_programs":1,"total_obs":6987884.12},{"title":"Office
   of the Director Of National Intelligence","total_num_programs":1,"total_obs":0.0},{"title":"Morris
-  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of State","total_num_programs":2,"total_obs":0.0}]'
+  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":0.0},{"title":"Barry Goldwater Scholarship
+  and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":23},{"title":"Private nonprofit
+  of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":20},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Other","total_num_programs":10},{"title":"Local
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Other","total_num_programs":13},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":7},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":6},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":6},{"title":"Individual/Family","total_num_programs":5},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Other
-  public institution/organization","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"Other
-  private institutions/organizations","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":3},{"title":"U.S. Territories and possessions
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Nonprofit
-  Organization","total_num_programs":2},{"title":"U.S. Territory (or Possession) Government
-  (including freely-associated states)","total_num_programs":2},{"title":"Active-Duty
-  Service Person (including dependents","total_num_programs":1},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Minority
+  Governments","total_num_programs":6},{"title":"Individual/Family","total_num_programs":5},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":4},{"title":"Nonprofit
+  Organization","total_num_programs":3},{"title":"Other public institution/organization","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Active-Duty
+  Service Person (including dependents","total_num_programs":2},{"title":"Reservist
+  (including dependents)","total_num_programs":2},{"title":"Sponsored organization","total_num_programs":2},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Veteran
+  (including dependents)","total_num_programs":2},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Profit
-  organization","total_num_programs":1},{"title":"Reservist (including dependents)","total_num_programs":1},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":1},{"title":"Veteran
-  (including dependents)","total_num_programs":1}]'
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Other
+  private institutions/organizations","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -256,9 +257,7 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Supplemental Educational Opportunity Grants","popular_name":"(FSEOG)","agency":"Department
   of Education","total_obs":909062456.0,"program_type":"assistance_listing"},{"cfda":"84.042","permalink":"/program/84.042","title":"TRIO
   Student Support Services","popular_name":null,"agency":"Department of Education","total_obs":374271575.0,"program_type":"assistance_listing"},{"cfda":"84.031","permalink":"/program/84.031","title":"Higher
-  Education Institutional Aid","popular_name":null,"agency":"Department of Education","total_obs":231984446.0,"program_type":"assistance_listing"},{"cfda":"84.334","permalink":"/program/84.334","title":"Gaining
-  Early Awareness and Readiness for Undergraduate Programs","popular_name":"(GEAR-UP)","agency":"Department
-  of Education","total_obs":151344820.0,"program_type":"assistance_listing"},{"cfda":"TC.107","permalink":"/program/TC.107","title":"Exclusion
+  Education Institutional Aid","popular_name":null,"agency":"Department of Education","total_obs":231984446.0,"program_type":"assistance_listing"},{"cfda":"TC.107","permalink":"/program/TC.107","title":"Exclusion
   of interest on student-loan bonds","popular_name":null,"agency":"Department of the
   Treasury","total_obs":130000000.0,"program_type":"tax_expenditure"},{"cfda":"15.027","permalink":"/program/15.027","title":"Assistance
   to Tribally Controlled Community Colleges and Universities","popular_name":null,"agency":"Department
@@ -269,30 +268,36 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   of Education","total_obs":55130675.48,"program_type":"assistance_listing"},{"cfda":"93.599","permalink":"/program/93.599","title":"Chafee
   Education and Training Vouchers Program (ETV)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":49884864.0,"program_type":"assistance_listing"},{"cfda":"15.114","permalink":"/program/15.114","title":"Indian
-  Education Higher Education Grant ","popular_name":"Higher Education","agency":"Department
+  Education Higher Education Grant","popular_name":"Higher Education","agency":"Department
   of the Interior","total_obs":24052492.0,"program_type":"assistance_listing"},{"cfda":"84.407","permalink":"/program/84.407","title":"Transition
   Programs for Students with Intellectual Disabilities into Higher Education","popular_name":null,"agency":"Department
   of Education","total_obs":13689192.0,"program_type":"assistance_listing"},{"cfda":"10.524","permalink":"/program/10.524","title":"Scholarships
   for Students at 1890 Institutions","popular_name":"1890 Scholarships","agency":"Department
   of Agriculture","total_obs":11520000.0,"program_type":"assistance_listing"},{"cfda":"10.313","permalink":"/program/10.313","title":"Veterinary
-  Medicine Loan Repayment Program ","popular_name":"VMLRP","agency":"Department of
+  Medicine Loan Repayment Program","popular_name":"VMLRP","agency":"Department of
   Agriculture","total_obs":11180428.85,"program_type":"assistance_listing"},{"cfda":"77.008","permalink":"/program/77.008","title":"U.S.
   Nuclear Regulatory Commission Scholarship and Fellowship Program","popular_name":"NRC
   Scholarship/Fellowship and Distinguished Faculty Advancement Program","agency":"Nuclear
   Regulatory Commission","total_obs":6987884.12,"program_type":"assistance_listing"},{"cfda":"84.335","permalink":"/program/84.335","title":"Child
   Care Access Means Parents in School","popular_name":null,"agency":"Department of
-  Education","total_obs":5915467.0,"program_type":"assistance_listing"},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
+  Education","total_obs":5915467.0,"program_type":"assistance_listing"},{"cfda":"10.210","permalink":"/program/10.210","title":"Higher
+  Education National Needs Graduate Fellowship Grants","popular_name":"Institution
+  Challenge, Multicultural Scholars & Graduate Fellowships Grant Program (Graduate
+  Fellowships)","agency":"Department of Agriculture","total_obs":3234000.0,"program_type":"assistance_listing"},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
   Education, Two-Year Postsecondary Education, and Agriculture in the K-12 Classroom","popular_name":"SPECA
-  Grants Program","agency":"Department of Agriculture","total_obs":718043.0,"program_type":"assistance_listing"},{"cfda":"10.527","permalink":"/program/10.527","title":"New
+  Grants Program","agency":"Department of Agriculture","total_obs":718043.0,"program_type":"assistance_listing"},{"cfda":"64.120","permalink":"/program/64.120","title":"Post-Vietnam
+  Era Veterans'' Educational Assistance","popular_name":"(Veteran''s Educational Assistance
+  Program(VEAP)-Chapter 32)","agency":"Department of Veterans Affairs","total_obs":561309.0,"program_type":"assistance_listing"},{"cfda":"10.527","permalink":"/program/10.527","title":"New
   Beginning for Tribal Students","popular_name":"NBTS","agency":"Department of Agriculture","total_obs":250000.0,"program_type":"assistance_listing"},{"cfda":"84.408","permalink":"/program/84.408","title":"Postsecondary
   Education Scholarships for Veteran''s Dependents","popular_name":"Iraq and Afghanistan
-  Service Grant (IASG)","agency":"Department of Education","total_obs":12096.0,"program_type":"assistance_listing"},{"cfda":"84.153","permalink":"/program/84.153","title":"Business
+  Service Grant (IASG)","agency":"Department of Education","total_obs":12096.0,"program_type":"assistance_listing"},{"cfda":"85.200","permalink":"/program/85.200","title":"Barry
+  M. Goldwater Scholarship Program","popular_name":"Barry Goldwater Scholarship &
+  Excellence in Education Foundation","agency":"Barry Goldwater Scholarship and Excellence
+  in Education Fund","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.153","permalink":"/program/84.153","title":"Business
   and International Education Projects","popular_name":null,"agency":"Department of
-  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.101","permalink":"/program/84.101","title":"Career
-  and Technical Education - Grants to Native Americans and Alaska Natives","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
-  and Technical Education -- National Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.938","permalink":"/program/10.938","title":"Conservation
+  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.220","permalink":"/program/84.220","title":"Centers
+  for International Business Education","popular_name":null,"agency":"Department of
+  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.938","permalink":"/program/10.938","title":"Conservation
   Outreach, Education and Technical Assistance","popular_name":"Conservation Outreach","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.322","permalink":"/program/10.322","title":"Distance
   Education Grants for Institutions of Higher Education in Insular Areas","popular_name":"DEG","agency":"Department
@@ -301,7 +306,9 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Affairs IT (FAIT) Fellowship","popular_name":"FAIT Fellowship","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.237","permalink":"/program/10.237","title":"From
   Learning to Leading: Cultivating the Next Generation of Diverse Food and Agriculture
-  Professionals","popular_name":"NEXTGEN","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.059","permalink":"/program/15.059","title":"Indian
+  Professionals","popular_name":"NEXTGEN","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.200","permalink":"/program/84.200","title":"Graduate
+  Assistance in Areas of National Need","popular_name":null,"agency":"Department of
+  Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.059","permalink":"/program/15.059","title":"Indian
   Graduate Student Scholarships","popular_name":"(Special Higher Education Scholarships)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.058","permalink":"/program/15.058","title":"Indian
   Post Secondary Schools","popular_name":"Haskell Indian Nations University (Haskell)
@@ -312,12 +319,12 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Education College Assistance Migrant Program","popular_name":"(CAMP)","agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.401","permalink":"/program/85.401","title":"Morris
   K. Udall Fellowship Program","popular_name":"Udall Graduate Fellowship Program","agency":"Morris
+  K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.400","permalink":"/program/85.400","title":"Morris
+  K. Udall Scholarship Program","popular_name":"Udall Undergraduate Scholarship","agency":"Morris
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.015","permalink":"/program/84.015","title":"National
   Resource Centers Program for Foreign Language and Area Studies or Foreign Language
   and International Studies Program and Foreign Language and Area Studies Fellowship
-  Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.259","permalink":"/program/84.259","title":"Native
-  Hawaiian Career and Technical Education","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.308","permalink":"/program/10.308","title":"Resident
+  Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.308","permalink":"/program/10.308","title":"Resident
   Instruction, Agriculture, and Food Science Facilities and Equipment Grants","popular_name":"Grants
   for Insular Areas - Resident Instruction Grants for Insular Areas","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.382","permalink":"/program/84.382","title":"Strengthening
@@ -326,7 +333,7 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   McNair Post-Baccalaureate Achievement","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.044","permalink":"/program/84.044","title":"TRIO
   Talent Search","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.245","permalink":"/program/84.245","title":"Tribally
-  Controlled Postsecondary Career and Technical Institutions ","popular_name":null,"agency":"Department
+  Controlled Postsecondary Career and Technical Institutions","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.016","permalink":"/program/84.016","title":"Undergraduate
   International Studies and Foreign Language Programs","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.207","permalink":"/program/19.207","title":"William
@@ -335,8 +342,8 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Upward Bound","popular_name":null,"agency":"Department of Education","total_obs":-55183.04,"program_type":"assistance_listing"},{"cfda":"84.021","permalink":"/program/84.021","title":"Overseas
   Programs - Group Projects Abroad","popular_name":null,"agency":"Department of Education","total_obs":-97625.0,"program_type":"assistance_listing"}]'
 title: Post–Secondary Education
-total_num_agencies: 10
-total_num_applicant_types: 34
-total_num_programs: 50
-total_obs: 63014441299.12
+total_num_agencies: 11
+total_num_applicant_types: 35
+total_num_programs: 52
+total_obs: 62866891788.12
 ---

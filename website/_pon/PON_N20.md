@@ -11,6 +11,11 @@ gwo_id: PON.N20
 permalink: /pon/PON_N20
 title: 'Expand Access to STEM Learning Opportunities '
 where_used:
+- agency: Department of Defense
+  expenditure_amount: 44412.5
+  name: DOD, NDEP, DOTC-STEM Education Outreach Implementation
+  permalink: /program/12.560
+  program_type: assistance_listing
 - agency: National Science Foundation
   expenditure_amount: 174710000.0
   name: Integrative Activities

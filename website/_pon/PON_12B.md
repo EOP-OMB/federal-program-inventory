@@ -50,6 +50,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
+  name: Maritime Studies and Innovations
+  permalink: /program/20.820
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
   name: State Maritime Schools
   permalink: /program/20.806
   program_type: assistance_listing

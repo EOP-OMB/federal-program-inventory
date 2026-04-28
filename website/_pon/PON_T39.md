@@ -9,8 +9,13 @@ title: Improve Solid Waste Management
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 16000000.0
-  name: 'Clean Vessel Act '
+  name: Clean Vessel Act
   permalink: /program/15.616
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 3000000.0
+  name: Composting and Food Waste Reduction Cooperative Agreement Program
+  permalink: /program/10.930
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 72200000.0
@@ -23,6 +28,16 @@ where_used:
   permalink: /program/66.921
   program_type: assistance_listing
 - agency: Environmental Protection Agency
+  expenditure_amount: 4000000.0
+  name: STATE PROGRAMS FOR CONTROL OF COAL COMBUSTION RESIDUALS
+  permalink: /program/66.820
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 90000000.0
+  name: Solid Waste Infrastructure for Recycling Infrastructure Grants
+  permalink: /program/66.920
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
   expenditure_amount: 0.0
   name: Solid Waste Management Assistance Grants
   permalink: /program/66.808
@@ -31,5 +46,11 @@ where_used:
   expenditure_amount: 4000000.0
   name: Solid Waste Management Grants
   permalink: /program/10.762
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 33000000.0
+  name: Water and Waste Facility Loans and Grants to Alleviate Health Risks for Colonias
+    and Tribal Lands
+  permalink: /program/10.770
   program_type: assistance_listing
 ---

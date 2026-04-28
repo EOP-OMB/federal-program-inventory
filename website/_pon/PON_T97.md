@@ -118,7 +118,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 150000.0
-  name: 'Route 66 Corridor Preservation '
+  name: Route 66 Corridor Preservation
   permalink: /program/15.958
   program_type: assistance_listing
 - agency: Department of the Interior

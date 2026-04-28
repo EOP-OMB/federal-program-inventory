@@ -19,6 +19,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
+  name: Centers for International Business Education
+  permalink: /program/84.220
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
   name: Child Care Access Means Parents in School
   permalink: /program/84.335
   program_type: assistance_listing
@@ -37,6 +42,11 @@ where_used:
   expenditure_amount: 0.0
   name: Higher Education Institutional Aid
   permalink: /program/84.031
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 3226650.0
+  name: Higher Education National Needs Graduate Fellowship Grants
+  permalink: /program/10.210
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -78,7 +88,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: 'Tribally Controlled Postsecondary Career and Technical Institutions '
+  name: Tribally Controlled Postsecondary Career and Technical Institutions
   permalink: /program/84.245
   program_type: assistance_listing
 - agency: Department of Education

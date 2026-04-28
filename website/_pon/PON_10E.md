@@ -49,7 +49,7 @@ where_used:
   program_type: tax_expenditure
 - agency: Department of Energy
   expenditure_amount: 0.0
-  name: 'Energy Efficiency and Conservation Block Grant Program (EECBG) '
+  name: Energy Efficiency and Conservation Block Grant Program (EECBG)
   permalink: /program/81.128
   program_type: assistance_listing
 - agency: Department of Energy
@@ -94,6 +94,11 @@ where_used:
   permalink: /program/20.286
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 7910000000.0
+  name: Rural Electrification Loans and Loan Guarantees
+  permalink: /program/10.850
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 11000000.0
   name: Rural Energy Savings Program (RESP)
   permalink: /program/10.751
@@ -128,6 +133,11 @@ where_used:
   name: Tax credits for refueling property
   permalink: /program/TC.032
   program_type: tax_expenditure
+- agency: Department of Transportation
+  expenditure_amount: 1321200000.0
+  name: The Charging and Fueling Infrastructure (CFI) Grant Program
+  permalink: /program/20.220
+  program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
   name: Weatherization Assistance for Low-Income Persons

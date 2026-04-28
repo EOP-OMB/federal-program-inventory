@@ -70,6 +70,16 @@ where_used:
   permalink: /program/93.654
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 7500000.0
+  name: Innovation In Behavioral Health
+  permalink: /program/93.610
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 63929601.0
+  name: Projects for Assistance in Transition from Homelessness (PATH)
+  permalink: /program/93.150
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 39040319.0
   name: Protection and Advocacy for Individuals with Mental Illness
   permalink: /program/93.138

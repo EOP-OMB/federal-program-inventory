@@ -55,7 +55,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Education Enhancements '
+  name: Education Enhancements
   permalink: /program/15.151
   program_type: assistance_listing
 - agency: Environmental Protection Agency
@@ -65,7 +65,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'FOCUS on Student Achievement '
+  name: FOCUS on Student Achievement
   permalink: /program/15.149
   program_type: assistance_listing
 - agency: Department of Defense
@@ -92,6 +92,11 @@ where_used:
   expenditure_amount: 3200000.0
   name: NOAA Mission-Related Education Awards
   permalink: /program/11.008
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 2375000.0
+  name: National Environmental Education Training Program
+  permalink: /program/66.950
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 125000.0
@@ -167,5 +172,10 @@ where_used:
   expenditure_amount: 20000000.0
   name: Team Nutrition Grants
   permalink: /program/10.574
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Title I Grants to Local Educational Agencies
+  permalink: /program/84.010
   program_type: assistance_listing
 ---

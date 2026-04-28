@@ -16,6 +16,11 @@ where_used:
   permalink: /program/19.432
   program_type: assistance_listing
 - agency: Department of State
+  expenditure_amount: 101577500.0
+  name: Academic Exchange Programs - Graduate Students
+  permalink: /program/19.400
+  program_type: assistance_listing
+- agency: Department of State
   expenditure_amount: 37168081.0
   name: Academic Exchange Programs - Scholars
   permalink: /program/19.401
@@ -65,6 +70,12 @@ where_used:
   name: Professional and Cultural Exchange Programs - International Visitor Leadership
     Program
   permalink: /program/19.402
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Program for Study of Eastern Europe and the Independent States of the Former
+    Soviet Union
+  permalink: /program/19.300
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

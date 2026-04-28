@@ -17,6 +17,11 @@ where_used:
   permalink: /program/10.992
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Agricultural Market and Economic Research
+  permalink: /program/10.290
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 8000000.0
   name: Agricultural and Food Policy Research Centers
   permalink: /program/10.291
@@ -77,6 +82,11 @@ where_used:
   permalink: /program/10.155
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Meat and Poultry Inspection Readiness Grants – Supplemental Funding
+  permalink: /program/10.180
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 44248068.0
   name: Organic Agriculture Research and Extension Initiative
   permalink: /program/10.307
@@ -93,7 +103,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2500000.0
-  name: 'Quality Samples Program '
+  name: Quality Samples Program
   permalink: /program/10.605
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -110,6 +120,11 @@ where_used:
   expenditure_amount: 3000000.0
   name: Sheep Production and Marketing Grant Program
   permalink: /program/10.173
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 89300000.0
+  name: Specialty Crop Block Grant Program - Farm Bill
+  permalink: /program/10.170
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1815036.0

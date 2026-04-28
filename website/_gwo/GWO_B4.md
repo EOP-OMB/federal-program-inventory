@@ -16,9 +16,4 @@ where_used:
   name: Perishable Agricultural Commodities Act
   permalink: /program/10.165
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 5493400.0
-  name: Weights and Measures Service
-  permalink: /program/11.606
-  program_type: assistance_listing
 ---

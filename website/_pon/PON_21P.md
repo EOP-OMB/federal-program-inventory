@@ -13,9 +13,14 @@ title: Improve Sexual Assault Response on Tribal Lands
 where_used:
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: National Clearinghouse on Sexual Assault of American Indian and Alaska Native
-    Women
-  permalink: /program/16.027
+  name: Grants to Encourage Arrest Policies and Enforcement of Protection Orders Program
+  permalink: /program/16.590
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Rural Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance
+    Program
+  permalink: /program/16.589
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
@@ -34,12 +39,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: Tribal Special Assistant United States Attorneys
-  permalink: /program/16.055
+  name: Violence Against Women Discretionary Grants for Indian Tribal Governments
+  permalink: /program/16.587
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: Violence Against Women Discretionary Grants for Indian Tribal Governments
-  permalink: /program/16.587
+  name: Violence Against Women Formula Grants
+  permalink: /program/16.588
   program_type: assistance_listing
 ---

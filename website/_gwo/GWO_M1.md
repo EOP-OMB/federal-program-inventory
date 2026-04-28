@@ -14,7 +14,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 5494072175.0
-  name: 'Continuum of Care Program '
+  name: Continuum of Care Program
   permalink: /program/14.267
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -53,6 +53,11 @@ where_used:
   expenditure_amount: 3342000.0
   name: National Homeless Data Analysis Project (NHDAP)
   permalink: /program/14.261
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 55000000.0
+  name: Transitional Living for Homeless Youth
+  permalink: /program/93.550
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 9000000.0

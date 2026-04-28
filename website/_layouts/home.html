@@ -22,8 +22,11 @@ permalink: /
         <h1 class="font-heading-2xl homepage-title">
           The Federal Program Inventory
         </h1>
-        <p class="font-heading-md homepage-subheader">
-          Federal programs, in one place. <br></br>
+        <p class="homepage-subheader">
+          Accountability starts with visibility
+        </p>
+        <p class="font-heading-md homepage-subheader-description">
+          Federal programs, in one place.<br>
           See what they cost and what they aim to achieve.
         </p>
         <div class="homepage-buttons">
@@ -44,19 +47,19 @@ permalink: /
   <div class="grid-container">
     <div class="grid-row grid-gap-4">
       <div class="grid-col-12 tablet:grid-col-3 text-center">
-        <p class="text-primary margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' -}}</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' -}}</p>
         <p class="font-body-md">Programs</p>
       </div>
       <div class="grid-col-12 tablet:grid-col-3 text-center">
-        <p class="text-primary margin-bottom-1 homepage-headline-number"><span data-dollar-amount="{{ page.spending_total }}"></span></p>
+        <p class="margin-bottom-1 homepage-headline-number"><span data-dollar-amount="{{ page.spending_total }}"></span></p>
         <p class="font-body-md">In spending in FY {{ page.fiscal_year }}</p>
       </div>
       <div class="grid-col-12 tablet:grid-col-3 text-center">
-        <p class="text-primary margin-bottom-1 homepage-headline-number">{{ page.agencies_count -}}</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.agencies_count -}}</p>
         <p class="font-body-md">Agencies</p>
       </div>
       <div class="grid-col-12 tablet:grid-col-3 text-center">
-        <p class="text-primary margin-bottom-1 homepage-headline-number">{{ page.outcomes_count -}}</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.outcomes_count -}}</p>
         <p class="font-body-md">Outcomes</p>
       </div>
     </div>
@@ -84,10 +87,10 @@ permalink: /
               <path d="m21 21-4.35-4.35"></path>
             </svg>
           </div>
-          <h3 class="font-heading-md text-primary margin-bottom-2">
+          <h3 class="program-card-titles">
             Find programs
           </h3>
-          <p class="font-body-sm margin-bottom-3">
+          <p class="font-body-sm margin-bottom-4">
             Search and filter programs by agency, category, assistance type, and more
           </p>
           <a href="/search" class="usa-link">
@@ -105,10 +108,10 @@ permalink: /
               <polyline points="17 6 23 6 23 12"></polyline>
             </svg>
           </div>
-          <h3 class="font-heading-md text-primary margin-bottom-2">
+          <h3 class="program-card-titles">
             Explore spending
           </h3>
-          <p class="font-body-sm margin-bottom-3">
+          <p class="font-body-sm margin-bottom-4">
             See where funding is concentrated across objectives and program types
           </p>
           <a href="/category" class="usa-link">
@@ -126,10 +129,10 @@ permalink: /
               <polyline points="14 2 14 8 20 8"></polyline>
             </svg>
           </div>
-          <h3 class="font-heading-md text-primary margin-bottom-2">
+          <h3 class="program-card-titles">
             Understand methodology
           </h3>
-          <p class="font-body-sm margin-bottom-3">
+          <p class="font-body-sm margin-bottom-4">
             Learn how programs are defined, categorized, and sourced
           </p>
           <a href="/about/fpi" class="usa-link">
@@ -146,13 +149,13 @@ permalink: /
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
-        <h2 class="font-heading-2xl homepage-title">
+        <h2 class="font-heading-2xl homepage-title" style="margin-bottom: 0;">
           How it works
         </h2>
       </div>
     </div>
     
-    <div class="grid-row grid-gap-6">
+    <div class="grid-row grid-gap-2">
       <!-- SVG on the left -->
       <div class="grid-col-12 tablet:grid-col-6">
         <img src="/assets/img/OMBlogo.svg" alt="OMB Logo" class="how-it-works-logo"/>
@@ -201,11 +204,11 @@ permalink: /
 <section class="program-guide-sections">
   <div class="grid-container">
     <div class="grid-row flex-justify-center">
-      <div class="grid-col-12 tablet:grid-col-8 text-center">
+      <div class="grid-col-12 tablet:grid-col-12 text-center">
         <h2 class="font-heading-2xl homepage-fed-guide">
           Your guide to federal programs
         </h2>
-        <p class="font-body-md margin-bottom-5">
+        <p class="font-body-md margin-bottom-3">
           See where the government invests tax payer dollars&mdash;and what it's meant to achieve for the nation
         </p>
         <div class="homepage-buttons">

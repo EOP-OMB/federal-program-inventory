@@ -21,12 +21,6 @@ where_used:
   name: Elder Justice Act – Adult Protective Services
   permalink: /program/93.698
   program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Enhanced Training and Services to End Violence and Abuse of Women Later in
-    Life
-  permalink: /program/16.528
-  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1603100000.0
   name: Social Services Block Grant

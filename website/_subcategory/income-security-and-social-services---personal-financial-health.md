@@ -1,38 +1,45 @@
 ---
-agencies: '[{"title":"Social Security Administration","total_num_programs":4,"total_obs":1632918384648.0},{"title":"Department
+agencies: '[{"title":"Social Security Administration","total_num_programs":5,"total_obs":1632918516143.0},{"title":"Department
   of the Treasury","total_num_programs":73,"total_obs":1538712781349.77},{"title":"Department
-  of Veterans Affairs","total_num_programs":4,"total_obs":177146752628.0},{"title":"Department
-  of Health and Human Services","total_num_programs":8,"total_obs":24644911587.88},{"title":"Railroad
+  of Veterans Affairs","total_num_programs":5,"total_obs":187477729794.0},{"title":"Department
+  of Health and Human Services","total_num_programs":10,"total_obs":24783704140.34},{"title":"Railroad
   Retirement Board","total_num_programs":2,"total_obs":14511445136.77},{"title":"Pension
   Benefit Guaranty Corporation","total_num_programs":1,"total_obs":6153704179.13},{"title":"Department
-  of Labor","total_num_programs":3,"total_obs":3340745119.85},{"title":"Department
-  of Housing and Urban Development","total_num_programs":3,"total_obs":147358046.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":15880819.540000001}]'
-applicant_types: '[{"title":"Individual/Family","total_num_programs":10},{"title":"Nonprofit
-  Organization","total_num_programs":7},{"title":"State","total_num_programs":7},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":4},{"title":"Not-for-Profit
-  Organization","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":4},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"For-Profit
-  Organization","total_num_programs":3},{"title":"Local","total_num_programs":3},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Veteran
-  (including dependents)","total_num_programs":3},{"title":"Indian/Native American/Alaska
-  Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Other
-  private institutions/organizations","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Public
+  of Labor","total_num_programs":4,"total_obs":3340745119.85},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":186170738.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":15880819.540000001},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":568264.28}]'
+applicant_types: '[{"title":"Individual/Family","total_num_programs":12},{"title":"State","total_num_programs":8},{"title":"Nonprofit
+  Organization","total_num_programs":7},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Not-for-Profit
+  Organization","total_num_programs":5},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":5},{"title":"Federally Recognized
+  Indian Tribal Governments","total_num_programs":4},{"title":"For-Profit Organization","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Department
+  hospitals)","total_num_programs":4},{"title":"U.S. Territory (or Possession) Government
+  (including freely-associated states)","total_num_programs":4},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Veteran
+  (including dependents)","total_num_programs":3},{"title":"Native American Organizations
+  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"Other public
+  institution/organization","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Active-Duty
+  Service Person (including dependents","total_num_programs":1},{"title":"County Government
+  (inclusive of boroughs in Alaska, parishes and other governmental entities with
+  geographic regional control and authority)","total_num_programs":1},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Local (includes State-designated Indian
   Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Other
-  public institution/organization","total_num_programs":1},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
-  (less than 500 employees)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  group","total_num_programs":1},{"title":"Municipality or Township government (inclusive
+  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  Housing Authority","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Reservist
+  (including dependents)","total_num_programs":1},{"title":"Small business (less than
+  500 employees)","total_num_programs":1},{"title":"U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -295,7 +302,9 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":14511445136.77,"program_type":"assistance_listing"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
   of medical expenses","popular_name":null,"agency":"Department of the Treasury","total_obs":13420000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.137","permalink":"/program/TC.137","title":"Deductibility
   of charitable contributions to health institutions","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":10660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.112","permalink":"/program/TC.112","title":"Deductibility
+  of the Treasury","total_obs":10660000000.0,"program_type":"tax_expenditure"},{"cfda":"64.110","permalink":"/program/64.110","title":"Veterans
+  Dependency and Indemnity Compensation for Service-Connected Death","popular_name":"(DIC
+  and Death Compensation)","agency":"Department of Veterans Affairs","total_obs":10330977166.0,"program_type":"assistance_listing"},{"cfda":"TC.112","permalink":"/program/TC.112","title":"Deductibility
   of charitable contributions to educational institutions","popular_name":null,"agency":"Department
   of the Treasury","total_obs":9310000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.131","permalink":"/program/TC.131","title":"Self-employed
   medical insurance premiums","popular_name":null,"agency":"Department of the Treasury","total_obs":9010000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.145","permalink":"/program/TC.145","title":"Exclusion
@@ -378,7 +387,9 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   Treasury","total_obs":160000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.070","permalink":"/program/TC.070","title":"Discharge
   of mortgage indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":150000000.0,"program_type":"tax_expenditure"},{"cfda":"14.896","permalink":"/program/14.896","title":"Family
   Self-Sufficiency Program","popular_name":"(FSS)","agency":"Department of Housing
-  and Urban Development","total_obs":147358046.0,"program_type":"assistance_listing"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
+  and Urban Development","total_obs":147358046.0,"program_type":"assistance_listing"},{"cfda":"93.086","permalink":"/program/93.086","title":"Healthy
+  Marriage Promotion and Responsible Fatherhood Grants","popular_name":"(HMRF)","agency":"Department
+  of Health and Human Services","total_obs":105849075.71,"program_type":"assistance_listing"},{"cfda":"TC.073","permalink":"/program/TC.073","title":"Exceptions
   from imputed interest rules","popular_name":null,"agency":"Department of the Treasury","total_obs":90000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.079","permalink":"/program/TC.079","title":"Ordinary
   income treatment of loss from small business corporation stock sale","popular_name":null,"agency":"Department
   of the Treasury","total_obs":80000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.160","permalink":"/program/TC.160","title":"Additional
@@ -389,7 +400,11 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   Income Tax Assistance (VITA) Matching Grant Program","popular_name":"Volunteer Income
   Tax Assistance Matching Grant Program","agency":"Department of the Treasury","total_obs":40885239.62,"program_type":"assistance_listing"},{"cfda":"TC.110","permalink":"/program/TC.110","title":"Exclusion
   of interest on savings bonds redeemed to finance educational expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.147","permalink":"/program/TC.147","title":"Exclusion
+  of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"14.870","permalink":"/program/14.870","title":"Resident
+  Opportunity and Supportive Services - Service Coordinators","popular_name":"(ROSS
+  Service Coordinators)","agency":"Department of Housing and Urban Development","total_obs":38812692.0,"program_type":"assistance_listing"},{"cfda":"93.560","permalink":"/program/93.560","title":"Payments
+  to Territories \u2013 Adults","popular_name":"Payments to Territories - Adults","agency":"Department
+  of Health and Human Services","total_obs":32943476.75,"program_type":"assistance_listing"},{"cfda":"TC.147","permalink":"/program/TC.147","title":"Exclusion
   of special benefits for disabled coal miners","popular_name":null,"agency":"Department
   of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"15.025","permalink":"/program/15.025","title":"Services
   to Indian Children, Elderly and Families","popular_name":"Social Services","agency":"Department
@@ -399,14 +414,20 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   for disabled access expenditures","popular_name":null,"agency":"Department of the
   Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"15.113","permalink":"/program/15.113","title":"Indian
   Social Services Welfare Assistance","popular_name":null,"agency":"Department of
-  the Interior","total_obs":2372696.32,"program_type":"assistance_listing"},{"cfda":"93.579","permalink":"/program/93.579","title":"U.S.
+  the Interior","total_obs":2372696.32,"program_type":"assistance_listing"},{"cfda":"44.002","permalink":"/program/44.002","title":"Community
+  Development Revolving Loan Fund Program for Credit Unions","popular_name":"CDRLF
+  Program","agency":"National Credit Union Administration","total_obs":568264.28,"program_type":"assistance_listing"},{"cfda":"93.579","permalink":"/program/93.579","title":"U.S.
   Repatriation","popular_name":"Repatriation Program","agency":"Department of Health
-  and Human Services","total_obs":375006.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
+  and Human Services","total_obs":375006.0,"program_type":"assistance_listing"},{"cfda":"96.020","permalink":"/program/96.020","title":"Special
+  Benefits for Certain World War II Veterans","popular_name":"(Special Veterans Benefits;
+  SVB)","agency":"Social Security Administration","total_obs":131495.0,"program_type":"assistance_listing"},{"cfda":"93.564","permalink":"/program/93.564","title":"Child
   Support Services Research","popular_name":null,"agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.307","permalink":"/program/17.307","title":"Coal
   Mine Workers'' Compensation","popular_name":"Black Lung","agency":"Department of
   Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.162","permalink":"/program/TC.162","title":"Deductibility
-  of casualty losses","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"TC.013","permalink":"/program/TC.013","title":"Exception
+  of casualty losses","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"17.310","permalink":"/program/17.310","title":"Energy
+  Employees Occupational Illness Compensation","popular_name":"Energy Workers","agency":"Department
+  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.013","permalink":"/program/TC.013","title":"Exception
   from passive loss limitation for working interests in oil and gas properties","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"14.183","permalink":"/program/14.183","title":"Home
   Equity Conversion Mortgages","popular_name":"Reverse Mortgage Insurance","agency":"Department
@@ -428,8 +449,8 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   Program (FY 1985 \u2013 FY 2019). Wilson Fish TANF Coordination Program (FY 2020
   \u2013 FY 2025)","agency":"Department of Health and Human Services","total_obs":-39798750.85,"program_type":"assistance_listing"}]'
 title: Personal Financial Health
-total_num_agencies: 9
-total_num_applicant_types: 40
-total_num_programs: 101
-total_obs: 3397591963514.94
+total_num_agencies: 10
+total_num_applicant_types: 46
+total_num_programs: 108
+total_obs: 3408101245684.6797
 ---

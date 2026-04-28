@@ -25,8 +25,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 153000000.0
-  name: "21st Century Cures Act - Precision Medicine Initiative\t"
+  name: 21st Century Cures Act - Precision Medicine Initiative
   permalink: /program/93.368
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: '21st Century Cures Act: Regenerative Medicine Initiative'
+  permalink: /program/93.370
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 6144154.0
@@ -48,6 +53,11 @@ where_used:
   expenditure_amount: 261814471.0
   name: Aging Research
   permalink: /program/93.866
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Air Force Medical Research and Development
+  permalink: /program/12.810
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12401560.0
@@ -148,6 +158,12 @@ where_used:
   expenditure_amount: 13008404.0
   name: Bioengineering, Biomedical Imaging, and Technology Development - SBIR/STTR
   permalink: /program/93.EB2
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Biomedical Advanced Research and Development Authority (BARDA), Biodefense
+    Medical Countermeasure Development
+  permalink: /program/93.360
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -268,7 +284,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 13252108.0
-  name: 'Chronic Diseases:  Research, Control, and Prevention  '
+  name: 'Chronic Diseases:  Research, Control, and Prevention'
   permalink: /program/93.068
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -290,6 +306,11 @@ where_used:
   expenditure_amount: 89137637.0
   name: Complementary and Integrative Health - Research Projects
   permalink: /program/93.473
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4670189.0
+  name: Complementary and Integrative Health - SBIR/STTR
+  permalink: /program/93.480
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -480,6 +501,12 @@ where_used:
   permalink: /program/93.838
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 1250000.0
+  name: Maternal, Infant, and Early Childhood Home Visiting Research and Evaluation
+    Grants
+  permalink: /program/93.320
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 70230119.0
   name: Medical Library Assistance
   permalink: /program/93.879
@@ -514,9 +541,14 @@ where_used:
   name: Mental Health Research Grants
   permalink: /program/93.242
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Military Medical Research and Development
+  permalink: /program/12.420
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'Minority Health and Health Disparities Research '
+  name: Minority Health and Health Disparities Research
   permalink: /program/93.307
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -581,6 +613,11 @@ where_used:
   permalink: /program/93.CA3
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: National Center for Advancing Translational Sciences
+  permalink: /program/93.350
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 562649746.0
   name: National Center for Advancing Translational Sciences - Clinical and Translational
     Science Awards
@@ -616,6 +653,11 @@ where_used:
   expenditure_amount: 22632414.0
   name: National Center for Advancing Translational Sciences - Small Business
   permalink: /program/93.TR5
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4950000.0
+  name: National Center for Health Workforce Analysis
+  permalink: /program/93.300
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -753,6 +795,11 @@ where_used:
     data quality and operations of National Program of Cancer Registries
   permalink: /program/93.422
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 22500000.0
+  name: Naval Medical Research and Development
+  permalink: /program/12.340
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 114459241.0
   name: Neurosciences and Neurological Disorders – Other Research (OR)
@@ -835,7 +882,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1794463.0
-  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education '
+  name: 'Rare Disorders: Research, Surveillance, Health Promotion, and Education'
   permalink: /program/93.315
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -911,6 +958,11 @@ where_used:
   name: Research and Training in Complementary and Integrative Health
   permalink: /program/93.213
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Research on Chemical and Biological Defense
+  permalink: /program/12.360
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 143320712.0
   name: Research on Healthcare Costs, Quality and Outcomes
@@ -947,6 +999,22 @@ where_used:
   expenditure_amount: 0.0
   name: Traditionally Underserved Populations
   permalink: /program/84.315
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 28100048.0
+  name: Trans-NIH Research Support
+  permalink: /program/93.310
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Translation and Implementation Science Research for Heart, Lung, Blood Diseases,
+    and Sleep Disorders
+  permalink: /program/93.840
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 400000000.0
+  name: Uniformed Services University Medical Research Projects
+  permalink: /program/12.750
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 863753.0

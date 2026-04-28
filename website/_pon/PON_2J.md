@@ -35,6 +35,11 @@ where_used:
   name: Hazardous Waste Management
   permalink: /program/10.125
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 350000.0
+  name: Lake Mead/Las Vegas Wash
+  permalink: /program/15.540
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1000000.0
   name: National Atmospheric Deposition Program

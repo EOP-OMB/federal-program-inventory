@@ -29,7 +29,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
-  name: 'Choice Neighborhoods Planning Grants '
+  name: Choice Neighborhoods Planning Grants
   permalink: /program/14.892
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
@@ -92,6 +92,11 @@ where_used:
   name: Fair Housing Organization Initiatives
   permalink: /program/14.417
   program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Family Unification Program (FUP)
+  permalink: /program/14.880
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 50000000.0
   name: Farm Labor Housing Loans and Grants
@@ -101,6 +106,11 @@ where_used:
   expenditure_amount: 0.0
   name: Farm Labor Housing Technical Assistance Grants
   permalink: /program/10.495
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Fisher House Foundation
+  permalink: /program/12.460
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 44000000.0
@@ -202,7 +212,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 41000000.0
-  name: 'Private Enforcement Initiatives '
+  name: Private Enforcement Initiatives
   permalink: /program/14.418
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
@@ -220,6 +230,11 @@ where_used:
   expenditure_amount: 3200000000.0
   name: Public Housing Capital Fund
   permalink: /program/14.872
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Public Housing Operating Fund
+  permalink: /program/14.850
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
@@ -260,6 +275,11 @@ where_used:
   expenditure_amount: 140776373.04
   name: Section 8 Moderate Rehabilitation Single Room Occupancy
   permalink: /program/14.249
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Self Help Housing Land Development Loans
+  permalink: /program/10.490
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 11072000.0

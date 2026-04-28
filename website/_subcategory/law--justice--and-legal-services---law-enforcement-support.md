@@ -1,35 +1,35 @@
 ---
-agencies: '[{"title":"Department of Justice","total_num_programs":115,"total_obs":2551495638.48},{"title":"Department
-  of Homeland Security","total_num_programs":6,"total_obs":750178671.0},{"title":"Executive
+agencies: '[{"title":"Department of Justice","total_num_programs":132,"total_obs":2624635373.48},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":750178671.0},{"title":"Executive
   Office of the President","total_num_programs":1,"total_obs":257057043.3},{"title":"Department
   of Health and Human Services","total_num_programs":8,"total_obs":221788630.25},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":52036009.29},{"title":"Department
   of State","total_num_programs":3,"total_obs":47657748.739999995},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":10925000.0},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":11998485.96},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":8394626.0},{"title":"Department
-  of Energy","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Other","total_num_programs":69},{"title":"State (includes
-  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":29},{"title":"Local
+  of Energy","total_num_programs":2,"total_obs":0.0}]'
+applicant_types: '[{"title":"Other","total_num_programs":81},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":32},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":27},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":27},{"title":"Public
+  and hospitals","total_num_programs":31},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":29},{"title":"State","total_num_programs":23},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":22},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":19},{"title":"State","total_num_programs":19},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":18},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":15},{"title":"Other public institution/organization","total_num_programs":11},{"title":"Specialized
+  hospitals)","total_num_programs":20},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":16},{"title":"Other
+  public institution/organization","total_num_programs":11},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":11},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"U.S.
-  Territories and possessions","total_num_programs":8},{"title":"Federally Recognized
-  Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Government
-  - General","total_num_programs":7},{"title":"Other private institutions/organizations","total_num_programs":7},{"title":"Individual/Family","total_num_programs":6},{"title":"Profit
-  organization","total_num_programs":6},{"title":"Federal","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Nonprofit
-  Organization","total_num_programs":5},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":5},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":5},{"title":"Not-for-Profit
-  Organization","total_num_programs":4},{"title":"Anyone/general public","total_num_programs":3},{"title":"County
-  Government","total_num_programs":3},{"title":"Small business (less than 500 employees)","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"City
-  or Township Government","total_num_programs":2},{"title":"Interstate","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Minority
+  Territories and possessions","total_num_programs":11},{"title":"U.S. Territories
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Government
+  - General","total_num_programs":7},{"title":"Individual/Family","total_num_programs":7},{"title":"Other
+  private institutions/organizations","total_num_programs":7},{"title":"Profit organization","total_num_programs":7},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":6},{"title":"County
+  Government","total_num_programs":5},{"title":"Federal","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Nonprofit
+  Organization","total_num_programs":5},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":5},{"title":"Not-for-Profit
+  Organization","total_num_programs":4},{"title":"Anyone/general public","total_num_programs":3},{"title":"City
+  or Township Government","total_num_programs":3},{"title":"Small business (less than
+  500 employees)","total_num_programs":3},{"title":"Sponsored organization","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Interstate","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Minority
   group","total_num_programs":2},{"title":"Non-Government - General","total_num_programs":2},{"title":"Nonprofit
   with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"County
@@ -265,24 +265,25 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Victim Compensation","popular_name":null,"agency":"Department of Justice","total_obs":178981000.0,"program_type":"assistance_listing"},{"cfda":"16.588","permalink":"/program/16.588","title":"Violence
   Against Women Formula Grants","popular_name":"STOP Violence Against Women Formula
   Grants","agency":"Department of Justice","total_obs":175851395.0,"program_type":"assistance_listing"},{"cfda":"93.671","permalink":"/program/93.671","title":"Family
-  Violence Prevention and Services/Domestic Violence Shelter and Supportive Services
-  ","popular_name":"Family Violence Prevention and Services Act Formula Grants for
-  States and Native American Tribes (including Alaska Native Villages) and Tribal
-  Organizations","agency":"Department of Health and Human Services","total_obs":169515019.0,"program_type":"assistance_listing"},{"cfda":"16.838","permalink":"/program/16.838","title":"Comprehensive
+  Violence Prevention and Services/Domestic Violence Shelter and Supportive Services","popular_name":"Family
+  Violence Prevention and Services Act Formula Grants for States and Native American
+  Tribes (including Alaska Native Villages) and Tribal Organizations","agency":"Department
+  of Health and Human Services","total_obs":169515019.0,"program_type":"assistance_listing"},{"cfda":"16.838","permalink":"/program/16.838","title":"Comprehensive
   Opioid, Stimulant, and other Substances Use Program","popular_name":"Title: Comprehensive
   Opioid, Stimulant, and Substance Use Program","agency":"Department of Justice","total_obs":136887688.0,"program_type":"assistance_listing"},{"cfda":"97.012","permalink":"/program/97.012","title":"Boating
   Safety Financial Assistance","popular_name":"State RBS Program","agency":"Department
   of Homeland Security","total_obs":123778671.0,"program_type":"assistance_listing"},{"cfda":"16.839","permalink":"/program/16.839","title":"STOP
   School Violence","popular_name":null,"agency":"Department of Justice","total_obs":83812534.0,"program_type":"assistance_listing"},{"cfda":"16.017","permalink":"/program/16.017","title":"Sexual
-  Assault Services Formula Program ","popular_name":null,"agency":"Department of Justice","total_obs":52061846.0,"program_type":"assistance_listing"},{"cfda":"21.016","permalink":"/program/21.016","title":"Equitable  Sharing
-  ","popular_name":"Department of the Treasury Equitable Sharing","agency":"Department
-  of the Treasury","total_obs":52036009.29,"program_type":"assistance_listing"},{"cfda":"16.833","permalink":"/program/16.833","title":"National
-  Sexual Assault Kit Initiative","popular_name":"SAKI","agency":"Department of Justice","total_obs":44532160.0,"program_type":"assistance_listing"},{"cfda":"93.591","permalink":"/program/93.591","title":"Family
+  Assault Services Formula Program","popular_name":null,"agency":"Department of Justice","total_obs":52061846.0,"program_type":"assistance_listing"},{"cfda":"21.016","permalink":"/program/21.016","title":"Equitable  Sharing","popular_name":"Department
+  of the Treasury Equitable Sharing","agency":"Department of the Treasury","total_obs":52036009.29,"program_type":"assistance_listing"},{"cfda":"16.833","permalink":"/program/16.833","title":"National
+  Sexual Assault Kit Initiative","popular_name":"SAKI","agency":"Department of Justice","total_obs":44532160.0,"program_type":"assistance_listing"},{"cfda":"16.540","permalink":"/program/16.540","title":"Juvenile
+  Justice and Delinquency Prevention","popular_name":"Title II, Part B Formula Grants","agency":"Department
+  of Justice","total_obs":42891943.0,"program_type":"assistance_listing"},{"cfda":"93.591","permalink":"/program/93.591","title":"Family
   Violence Prevention and Services/State Domestic Violence Coalitions","popular_name":"Family
   Violence Prevention and Services Act Grants to State Domestic Violence Coalitions","agency":"Department
   of Health and Human Services","total_obs":41287500.0,"program_type":"assistance_listing"},{"cfda":"16.736","permalink":"/program/16.736","title":"Transitional
   Housing Assistance for Victims of Domestic Violence, Dating Violence, Stalking,
-  or Sexual Assault ","popular_name":"Transitional Housing","agency":"Department of
+  or Sexual Assault","popular_name":"Transitional Housing","agency":"Department of
   Justice","total_obs":40371191.0,"program_type":"assistance_listing"},{"cfda":"16.589","permalink":"/program/16.589","title":"Rural
   Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance Program","popular_name":"Rural
   Program","agency":"Department of Justice","total_obs":38384148.0,"program_type":"assistance_listing"},{"cfda":"16.524","permalink":"/program/16.524","title":"Legal
@@ -296,7 +297,9 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Chance Act Reentry Initiative","popular_name":"Second Chance Act","agency":"Department
   of Justice","total_obs":23124579.0,"program_type":"assistance_listing"},{"cfda":"16.321","permalink":"/program/16.321","title":"Antiterrorism
   Emergency Reserve","popular_name":"Antiterrorism Emergency Reserve","agency":"Department
-  of Justice","total_obs":23097813.0,"program_type":"assistance_listing"},{"cfda":"19.703","permalink":"/program/19.703","title":"Criminal
+  of Justice","total_obs":23097813.0,"program_type":"assistance_listing"},{"cfda":"16.710","permalink":"/program/16.710","title":"Public
+  Safety Partnership and Community Policing Grants","popular_name":"COPS Office","agency":"Department
+  of Justice","total_obs":22864700.0,"program_type":"assistance_listing"},{"cfda":"19.703","permalink":"/program/19.703","title":"Criminal
   Justice Systems","popular_name":"Rule of Law, Justice Systems","agency":"Department
   of State","total_obs":21844609.5,"program_type":"assistance_listing"},{"cfda":"16.556","permalink":"/program/16.556","title":"State
   Domestic Violence and Sexual Assault Coalitions","popular_name":"State Coalitions
@@ -323,7 +326,11 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   to State and Tribal Courts to Implement Protection Order Pilot Programs","popular_name":"Electronic
   Service of Protection Orders","agency":"Department of Justice","total_obs":5950000.0,"program_type":"assistance_listing"},{"cfda":"16.754","permalink":"/program/16.754","title":"Harold
   Rogers Prescription Drug Monitoring Program","popular_name":"Harold Rogers Prescription
-  Drug Monitoring Program","agency":"Department of Justice","total_obs":5190964.0,"program_type":"assistance_listing"},{"cfda":"16.841","permalink":"/program/16.841","title":"VOCA
+  Drug Monitoring Program","agency":"Department of Justice","total_obs":5190964.0,"program_type":"assistance_listing"},{"cfda":"16.050","permalink":"/program/16.050","title":"Missing
+  and Unidentified Human Remains (MUHR) Program","popular_name":null,"agency":"Department
+  of Justice","total_obs":4199721.0,"program_type":"assistance_listing"},{"cfda":"16.560","permalink":"/program/16.560","title":"National
+  Institute of Justice Research, Evaluation, and Development Project Grants","popular_name":null,"agency":"Department
+  of Justice","total_obs":3183371.0,"program_type":"assistance_listing"},{"cfda":"16.841","permalink":"/program/16.841","title":"VOCA
   Tribal Victim Services Set-Aside Program","popular_name":"VOCA Tribal Set-Aside
   Program","agency":"Department of Justice","total_obs":2495704.0,"program_type":"assistance_listing"},{"cfda":"16.037","permalink":"/program/16.037","title":"Strengthening
   the Medical Examiner - Coroner System","popular_name":"ME/C","agency":"Department
@@ -335,12 +342,14 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Assault Forensic Exam Training and Services","popular_name":"SAFE Program","agency":"Department
   of Justice","total_obs":1496575.0,"program_type":"assistance_listing"},{"cfda":"16.824","permalink":"/program/16.824","title":"Emergency
   Law Enforcement Assistance Grant","popular_name":"(EFLEA)","agency":"Department
-  of Justice","total_obs":1285610.0,"program_type":"assistance_listing"},{"cfda":"16.027","permalink":"/program/16.027","title":"National
+  of Justice","total_obs":1285610.0,"program_type":"assistance_listing"},{"cfda":"20.240","permalink":"/program/20.240","title":"Fuel
+  Tax Evasion-Intergovernmental Enforcement Effort","popular_name":"Fuel Tax Evasion","agency":"Department
+  of Transportation","total_obs":1073485.96,"program_type":"assistance_listing"},{"cfda":"16.027","permalink":"/program/16.027","title":"National
   Clearinghouse on Sexual Assault of American Indian and Alaska Native Women","popular_name":"NTCSA","agency":"Department
   of Justice","total_obs":980100.0,"program_type":"assistance_listing"},{"cfda":"16.548","permalink":"/program/16.548","title":"Delinquency
   Prevention Program","popular_name":"Delinquency Prevention Program ","agency":"Department
   of Justice","total_obs":960000.0,"program_type":"assistance_listing"},{"cfda":"16.753","permalink":"/program/16.753","title":"Congressionally
-  Recommended Awards ","popular_name":"Congressionally Recommended","agency":"Department
+  Recommended Awards","popular_name":"Congressionally Recommended","agency":"Department
   of Justice","total_obs":749000.0,"program_type":"assistance_listing"},{"cfda":"93.592","permalink":"/program/93.592","title":"Family
   Violence Prevention and Services/Discretionary","popular_name":"Family Violence
   Prevention and Services Act Discretionary Grants","agency":"Department of Health
@@ -359,19 +368,21 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.818","permalink":"/program/16.818","title":"Children
   Exposed to Violence","popular_name":"Strategies to Support Children Exposed to Violence","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.831","permalink":"/program/16.831","title":"Children
-  of Incarcerated Parents ","popular_name":"Children of Incarcerated Parents Demonstration","agency":"Department
+  of Incarcerated Parents","popular_name":"Children of Incarcerated Parents Demonstration","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.307","permalink":"/program/16.307","title":"Combined
   DNA Index System","popular_name":"(CODIS)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.047","permalink":"/program/16.047","title":"Community-Based
   Approaches to Advancing Justice","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.123","permalink":"/program/16.123","title":"Community-Based
   Violence Prevention Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.888","permalink":"/program/16.888","title":"Consolidated
   And Technical Assistance Grant Program to Address Children and Youth Experiencing
-  Domestic and Sexual Violence and Engage Men and Boys as Allies ","popular_name":"Consolidated
+  Domestic and Sexual Violence and Engage Men and Boys as Allies","popular_name":"Consolidated
   Youth/Engaging Men","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.602","permalink":"/program/16.602","title":"Corrections
   Research and Evaluation and Policy Formulation","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.603","permalink":"/program/16.603","title":"Corrections
   Technical Assistance/Clearinghouse","popular_name":null,"agency":"Department of
   Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.601","permalink":"/program/16.601","title":"Corrections
-  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.756","permalink":"/program/16.756","title":"Court
+  Training and Staff Development","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.260","permalink":"/program/81.260","title":"County
+  of Nye, Nye County Sheriff\u2019s Office Law Enforcement Services","popular_name":null,"agency":"Department
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.756","permalink":"/program/16.756","title":"Court
   Appointed Special Advocates","popular_name":"CASA","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.051","permalink":"/program/16.051","title":"Crime
   Gun Intelligence Training and Education","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.745","permalink":"/program/16.745","title":"Criminal
@@ -381,22 +392,22 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   and Linguistically Specific Services Program","popular_name":"Culturally Specific
   Services Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.076","permalink":"/program/97.076","title":"CyberTipline","popular_name":"ICE/HSI","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.327","permalink":"/program/93.327","title":"Demonstration
-  Grants for Domestic Victims of Human Trafficking ","popular_name":"Domestic Victims
+  Grants for Domestic Victims of Human Trafficking","popular_name":"Domestic Victims
   of Human Trafficking, Domestic Victims of Human Trafficking- Services and Outreach
   (DVHT-SO) Program,  Victims of Human Trafficking in Native Communities (VHT-NC)
   Demonstration Program, Human Trafficking Youth Prevention Education (HTYPE) Demonstration
   Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.058","permalink":"/program/16.058","title":"Demonstration
   Program on Trauma-Informed, Victim Centered Training for Law Enforcement","popular_name":"Abby
   Honold Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.834","permalink":"/program/16.834","title":"Domestic
-  Trafficking Victim Program ","popular_name":"Domestic Trafficking Victim Program","agency":"Department
+  Trafficking Victim Program","popular_name":"Domestic Trafficking Victim Program","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.046","permalink":"/program/16.046","title":"Drug
   Data Research Center to Combat the Opioid Crisis","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.752","permalink":"/program/16.752","title":"Economic,
   High-Tech, and Cyber Crime Prevention","popular_name":"Economic, High-Tech, and
   Cyber Crime Prevention","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.529","permalink":"/program/16.529","title":"Education,
   Training, and Enhanced Services to End Violence Against and Abuse of Women with
-  Disabilities ","popular_name":"(Disability Grant Program)","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.751","permalink":"/program/16.751","title":"Edward
+  Disabilities","popular_name":"(Disability Grant Program)","agency":"Department of
+  Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.751","permalink":"/program/16.751","title":"Edward
   Byrne Memorial Competitive Grant Program","popular_name":"Byrne Competitive Program","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.823","permalink":"/program/16.823","title":"Emergency
   Planning for Juvenile Justice Facilities","popular_name":"Emergency Planning for
@@ -416,9 +427,13 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.067","permalink":"/program/16.067","title":"Family-Based
   Alternative Justice Program","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.044","permalink":"/program/16.044","title":"Forensics
   Training and Technical Assistance Program","popular_name":"Forensics TTA","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.889","permalink":"/program/16.889","title":"Grants
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.160","permalink":"/program/97.160","title":"F\u00e9d\u00e9ration
+  Internationale de Football Association World Cup Grant Program","popular_name":"FWCGP,
+  FIFA World Cup","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.889","permalink":"/program/16.889","title":"Grants
   for Outreach and Services to Underserved Populations","popular_name":"Underserved
-  Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.525","permalink":"/program/16.525","title":"Grants
+  Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.590","permalink":"/program/16.590","title":"Grants
+  to Encourage Arrest Policies and Enforcement of Protection Orders Program","popular_name":"Improving
+  Criminal Justice Responses","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.525","permalink":"/program/16.525","title":"Grants
   to Reduce Domestic Violence, Dating Violence, Sexual Assault, and Stalking on Campus","popular_name":"Campus
   Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.758","permalink":"/program/16.758","title":"Improving
   the Investigation and Prosecution of Child Abuse and the Regional and Local Children''s
@@ -428,9 +443,13 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Training on Child Maltreatment for Court Personnel Juvenile Justice Programs","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.827","permalink":"/program/16.827","title":"Justice
   Reinvestment Initiative","popular_name":"JRI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.726","permalink":"/program/16.726","title":"Juvenile
-  Mentoring Program","popular_name":"Mentoring ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.048","permalink":"/program/16.048","title":"Khalid
+  Mentoring Program","popular_name":"Mentoring ","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.840","permalink":"/program/16.840","title":"Keep
+  Young Athletes Safe","popular_name":"Kevin and Avonte''s Law","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.048","permalink":"/program/16.048","title":"Khalid
   Jabara and Heather Heyer NO HATE Act","popular_name":"Jabara-Heyer No Hate Act Program","agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.301","permalink":"/program/16.301","title":"Law
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.300","permalink":"/program/16.300","title":"Law
+  Enforcement Assistance FBI Advanced Police Training","popular_name":"(FBI Academy,
+  Advanced Specialized Courses)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.301","permalink":"/program/16.301","title":"Law
   Enforcement Assistance FBI Crime Laboratory Support","popular_name":"(FBI Laboratory)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.302","permalink":"/program/16.302","title":"Law
   Enforcement Assistance FBI Field Police Training","popular_name":"(FBI Field Police
@@ -448,13 +467,22 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Enforcement Assistance National Instant Criminal Background Check System","popular_name":"(NICS)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.305","permalink":"/program/16.305","title":"Law
   Enforcement Assistance Uniform Crime Reports","popular_name":null,"agency":"Department
-  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.279","permalink":"/program/81.279","title":"Law
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.070","permalink":"/program/16.070","title":"Law
+  Enforcement Mental Health and Wellness Act","popular_name":"Law Enforcement Mental
+  Health and Wellness Act (LEMHWA)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.279","permalink":"/program/81.279","title":"Law
   Enforcement Support of Pantex Plant","popular_name":null,"agency":"Department of
-  Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.015","permalink":"/program/16.015","title":"Missing
+  Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.060","permalink":"/program/16.060","title":"Local
+  Law Enforcement Grants for Enforcement of Cybercrimes","popular_name":"Cybercrime
+  Grants","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.040","permalink":"/program/16.040","title":"Matthew
+  Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and Prosecution
+  Program","popular_name":"Shepard and Byrd Hate Crimes Program","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.015","permalink":"/program/16.015","title":"Missing
   Alzheimer''s Disease Patient Assistance Program","popular_name":"Kevin and Avonte''s
   Law","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.813","permalink":"/program/16.813","title":"NICS
   Act Record Improvement Program","popular_name":"NARIP","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.041","permalink":"/program/16.041","title":"National
   Ashanti Alert Network Training and Technical Assistance Program","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.030","permalink":"/program/16.030","title":"National
+  Center on Restorative Justice","popular_name":"Center for Restorative Justice","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.142","permalink":"/program/97.142","title":"National
   Computer Forensics Institute Facility Expansion Grant Program","popular_name":null,"agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.554","permalink":"/program/16.554","title":"National
@@ -462,7 +490,7 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.056","permalink":"/program/16.056","title":"National
   Deaf Services Line","popular_name":"Deaf Services Line","agency":"Department of
   Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.739","permalink":"/program/16.739","title":"National
-  Prison Rape Statistics Program ","popular_name":"PREA","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.061","permalink":"/program/16.061","title":"National
+  Prison Rape Statistics Program","popular_name":"PREA","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.061","permalink":"/program/16.061","title":"National
   Resource Center on Cybercrimes Against Individuals","popular_name":"Cybercrime Resource
   Center","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.026","permalink":"/program/16.026","title":"OVW
   Research and Evaluation Program","popular_name":"R&E","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.526","permalink":"/program/16.526","title":"OVW
@@ -473,10 +501,12 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.842","permalink":"/program/16.842","title":"Opioid
   Affected Youth Initiative","popular_name":"Opioid Affected Youth Initiative","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.735","permalink":"/program/16.735","title":"PREA
-  Program: Strategic Support for PREA Implementation ","popular_name":"Prison Rape
+  Program: Strategic Support for PREA Implementation","popular_name":"Prison Rape
   Elimination Act","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.742","permalink":"/program/16.742","title":"Paul
   Coverdell Forensic Sciences Improvement Grant Program","popular_name":"Coverdell
-  Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.069","permalink":"/program/16.069","title":"Preparing
+  Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.820","permalink":"/program/16.820","title":"Postconviction
+  Testing of DNA Evidence","popular_name":"Postconviction Program","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.069","permalink":"/program/16.069","title":"Preparing
   for Active Shooter Situations","popular_name":"Preparing for Active Shooter Situations
   (PASS)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.035","permalink":"/program/16.035","title":"Preventing
   Trafficking of Girls","popular_name":"Preventing Trafficking of Girls","agency":"Department
@@ -485,7 +515,11 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Educational Assistance","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.108","permalink":"/program/97.108","title":"Public
   Safety and Violence Prevention Research, Evaluation, and Implementation","popular_name":"Public
   Safety and Violence Prevention Research, Evaluation, and Implementation","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.830","permalink":"/program/16.830","title":"Reducing
+  Recidivism for Female Juvenile Delinquents","popular_name":"Reducing Recidivism
+  for Female Juvenile Delinquents","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.610","permalink":"/program/16.610","title":"Regional
+  Information Sharing Systems","popular_name":"Regional Information Sharing Systems","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.593","permalink":"/program/16.593","title":"Residential
   Substance Abuse Treatment for State Prisoners","popular_name":"(RSAT)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.028","permalink":"/program/16.028","title":"Resource
   Center on Workplace Response to Domestic Violence, Dating Violence, Sexual Assault,
@@ -495,7 +529,8 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Practices Program","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.039","permalink":"/program/16.039","title":"Rural
   Violent Crime Initiative","popular_name":"RVCI","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.071","permalink":"/program/16.071","title":"School
   Violence Prevention Program","popular_name":"School Violence Prevention Program
-  (SVPP)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.598","permalink":"/program/93.598","title":"Services
+  (SVPP)","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.320","permalink":"/program/16.320","title":"Services
+  for Trafficking Victims","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.598","permalink":"/program/93.598","title":"Services
   to Victims of a Severe Form of Trafficking","popular_name":"Trafficking Victim Assistance
   Program (TVAP); Aspire: Child Trafficking Victim Assistance; Lighthouse: Services,
   Outreach, and Awareness for Labor Trafficking (Lighthouse); Victims of Human Trafficking
@@ -509,9 +544,13 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Data Collections and Statistical Studies","popular_name":"Statistics","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.606","permalink":"/program/16.606","title":"State
   Criminal Alien Assistance Program","popular_name":"(SCAAP)","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.550","permalink":"/program/16.550","title":"State
+  Justice Statistics Program for Statistical Analysis Centers","popular_name":"(SACs)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.614","permalink":"/program/16.614","title":"State
   and Local Anti-Terrorism Training","popular_name":"State and Local Anti-Terrorism
-  Training","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
+  Training","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.750","permalink":"/program/16.750","title":"Support
+  for Adam Walsh Act Implementation Grant Program","popular_name":"Adam Walsh Act","agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
   Vulnerable and At-Risk Youth Transitioning out of Foster Care","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.828","permalink":"/program/16.828","title":"Swift,
   Certain, and Fair Supervision Program: Applying the Principles Behind Project HOPE","popular_name":"SCF","agency":"Department
@@ -530,6 +569,6 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
 title: Law Enforcement Support
 total_num_agencies: 9
 total_num_applicant_types: 63
-total_num_programs: 137
-total_obs: 3899533367.06
+total_num_programs: 157
+total_obs: 3973746588.02
 ---

@@ -66,15 +66,36 @@ where_used:
   permalink: /program/93.994
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 536235000.0
+  name: Maternal, Infant and Early Childhood Home Visiting Grant
+  permalink: /program/93.870
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 1250000.0
+  name: Maternal, Infant, and Early Childhood Home Visiting Research and Evaluation
+    Grants
+  permalink: /program/93.320
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 500000.0
   name: NIH Office of Research on Women's Health - ORWH
   permalink: /program/93.WHR
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 2399067.0
-  name: 'National Collaboration to Support Health, Wellness and Academic Success of
-    School-Age Children  '
+  name: National Collaboration to Support Health, Wellness and Academic Success of
+    School-Age Children
   permalink: /program/93.858
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Participant Research Innovation Laboratory for Enhancing WIC Services
+  permalink: /program/10.540
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 185664902.0
+  name: Special Projects of Regional and National Significance
+  permalink: /program/93.110
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 30000000.0

@@ -18,19 +18,29 @@ where_used:
   permalink: /program/93.603
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 12499849.0
+  name: Child Abuse and Neglect Discretionary Activities
+  permalink: /program/93.670
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 103482500.0
   name: Child Abuse and Neglect State Grants
   permalink: /program/93.669
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 2198400.0
-  name: 'Child Welfare Research Training or Demonstration '
+  name: Child Welfare Research Training or Demonstration
   permalink: /program/93.648
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 17000000.0
   name: Children's Justice Grants to States
   permalink: /program/93.643
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 70365400.0
+  name: Community-Based Child Abuse Prevention Grants
+  permalink: /program/93.590
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 20745449.0
@@ -51,6 +61,11 @@ where_used:
   expenditure_amount: 10000000.0
   name: Grants to States for Access and Visitation Programs
   permalink: /program/93.597
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 273914607.0
+  name: Guardianship Assistance
+  permalink: /program/93.090
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1000000.0

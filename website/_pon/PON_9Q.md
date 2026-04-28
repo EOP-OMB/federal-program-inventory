@@ -12,18 +12,28 @@ permalink: /pon/PON_9Q
 title: Restore Aquatic Ecosystems
 where_used:
 - agency: Department of the Interior
+  expenditure_amount: 50000000.0
+  name: Aquatic Ecosystem Restoration Program
+  permalink: /program/15.580
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 8000000.0
   name: Central Valley Project Improvement Act (CVPIA)
   permalink: /program/15.648
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 6000000.0
+  name: Coastal
+  permalink: /program/15.630
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 19999999.0
-  name: 'Coastal Wetlands Planning, Protection and Restoration '
+  name: Coastal Wetlands Planning, Protection and Restoration
   permalink: /program/15.614
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5000000.0
-  name: 'Cooperative Watershed Management '
+  name: Cooperative Watershed Management
   permalink: /program/15.554
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -114,7 +124,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 267521.5
-  name: 'San Joaquin River Restoration '
+  name: San Joaquin River Restoration
   permalink: /program/15.555
   program_type: assistance_listing
 - agency: Department of Agriculture

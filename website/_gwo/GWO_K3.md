@@ -54,7 +54,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 998000.0
-  name: 'Food Distribution Program on Indian Reservations Nutrition Education Grants '
+  name: Food Distribution Program on Indian Reservations Nutrition Education Grants
   permalink: /program/10.594
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -64,7 +64,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 916700.0
-  name: 'Food and Agriculture Service Learning Program '
+  name: Food and Agriculture Service Learning Program
   permalink: /program/10.522
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -74,7 +74,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 290217000.0
-  name: 'Fresh Fruit and Vegetable Program '
+  name: Fresh Fruit and Vegetable Program
   permalink: /program/10.582
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -94,7 +94,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 110253973.0
-  name: 'Nutrition Services Incentive Program '
+  name: Nutrition Services Incentive Program
   permalink: /program/93.053
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -140,6 +140,11 @@ where_used:
   permalink: /program/10.244
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 509927000.0
+  name: State Administrative Expenses for Child Nutrition
+  permalink: /program/10.560
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 6235733000.0
   name: State Administrative Matching Grants for the Supplemental Nutrition Assistance
     Program
@@ -161,6 +166,12 @@ where_used:
   permalink: /program/10.551
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: Supplemental Nutrition Assistance Program, Process and Technology Improvement
+    Grants
+  permalink: /program/10.580
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 0.0
   name: The Emergency Food Assistance Program (TEFAP) Commodity Credit Corporation
     Eligible Recipient Funds
@@ -173,12 +184,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 133000000.0
-  name: 'WIC Grants To States (WGS) '
+  name: WIC Grants To States (WGS)
   permalink: /program/10.578
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 6585172000.0
-  name: 'WIC Special Supplemental Nutrition Program for Women, Infants, and Children '
+  name: WIC Special Supplemental Nutrition Program for Women, Infants, and Children
   permalink: /program/10.557
   program_type: assistance_listing
 ---

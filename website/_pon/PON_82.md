@@ -46,10 +46,20 @@ where_used:
   name: Artificial Intelligence and Technology Office Financial Assistance Program
   permalink: /program/81.012
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Assistance to Small and Disadvantaged Businesses
+  permalink: /program/20.910
+  program_type: assistance_listing
 - agency: Executive Office of the President
   expenditure_amount: 2500000.0
   name: DFC NATIONAL COMMUNITY ANTIDRUG COALITION INSTITUTE
   permalink: /program/95.003
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Disability Employment Policy Development
+  permalink: /program/17.720
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -139,6 +149,11 @@ where_used:
   name: Stewardship Science Grant Program
   permalink: /program/81.112
   program_type: assistance_listing
+- agency: Library of Congress
+  expenditure_amount: 0.0
+  name: Teaching with Primary Sources
+  permalink: /program/42.010
+  program_type: assistance_listing
 - agency: National Science Foundation
   expenditure_amount: 346570000.0
   name: Technology, Innovation, and Partnerships
@@ -148,5 +163,10 @@ where_used:
   expenditure_amount: 1400000.0
   name: U.S. Codex Office Support for International Activities
   permalink: /program/10.997
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 134991.0
+  name: Urban Indian Health Program (Education and Research)
+  permalink: /program/93.620
   program_type: assistance_listing
 ---

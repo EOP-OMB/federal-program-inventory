@@ -16,10 +16,15 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1549726.0
-  name: "Analyses, Research and Studies to Address the Impact of CMS’ Programs on\
-    \ American Indian/Alaska Native (AI/AN) Beneficiaries and the Health Care System\
-    \ Serving these Beneficiaries\t"
+  name: Analyses, Research and Studies to Address the Impact of CMS’ Programs on American
+    Indian/Alaska Native (AI/AN) Beneficiaries and the Health Care System Serving
+    these Beneficiaries
   permalink: /program/93.341
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 210000000.0
+  name: Basic Health Program (Affordable Care Act)
+  permalink: /program/93.640
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 2167000000.0
@@ -89,7 +94,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 55242000.0
-  name: 'State Health Insurance Assistance Program '
+  name: State Health Insurance Assistance Program
   permalink: /program/93.324
   program_type: assistance_listing
 - agency: Department of Health and Human Services

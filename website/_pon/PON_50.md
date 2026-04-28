@@ -40,6 +40,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
+  name: Chemical Stockpile Emergency Preparedness Program
+  permalink: /program/97.040
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
   name: Community Assistance Program State Support Services Element (CAP-SSSE)
   permalink: /program/97.023
   program_type: assistance_listing
@@ -52,6 +57,11 @@ where_used:
   expenditure_amount: 0.0
   name: Cooperating Technical Partners
   permalink: /program/97.045
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Cooperative Extension Service
+  permalink: /program/10.500
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
@@ -123,6 +133,11 @@ where_used:
   name: Homeland Security Preparedness Technical Assistance Program
   permalink: /program/97.007
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Los Alamos National Laboratory - Fire Protection
+  permalink: /program/81.140
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Medical Reserve Corps Small Grant Program
@@ -182,7 +197,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
-  name: 'Port Security Grant Program '
+  name: Port Security Grant Program
   permalink: /program/97.056
   program_type: assistance_listing
 - agency: Department of Homeland Security
@@ -229,6 +244,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
+  name: Rural Emergency Medical Communications Demonstration Project
+  permalink: /program/97.120
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
   name: Safeguarding Tomorrow Revolving Loan Fund Program
   permalink: /program/97.139
   program_type: assistance_listing
@@ -241,6 +261,12 @@ where_used:
   expenditure_amount: 315739320.0
   name: Smith-Lever Extension Funding
   permalink: /program/10.511
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 150000.0
+  name: South Carolina Support for Foreign Research Reactor Spent Nuclear Fuel (FRRSNF)
+    Shipments
+  permalink: /program/81.180
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -256,6 +282,11 @@ where_used:
   expenditure_amount: 0.0
   name: State and Local Homeland Security National Training Program
   permalink: /program/97.005
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Tribal Homeland Security Grant Program
+  permalink: /program/97.150
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1000000.0

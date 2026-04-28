@@ -11,7 +11,7 @@ title: Reduce Regulatory Cost and Administrative Delay
 where_used:
 - agency: Small Business Administration
   expenditure_amount: 0.0
-  name: 'Ombudsman and Regulatory Fairness Boards '
+  name: Ombudsman and Regulatory Fairness Boards
   permalink: /program/59.053
   program_type: assistance_listing
 ---

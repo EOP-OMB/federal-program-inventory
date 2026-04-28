@@ -19,12 +19,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Denali Commission Grants and Loans '
+  name: Denali Commission Grants and Loans
   permalink: /program/10.858
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
-  name: 'Energy Efficiency and Conservation Block Grant Program (EECBG) '
+  name: Energy Efficiency and Conservation Block Grant Program (EECBG)
   permalink: /program/81.128
   program_type: assistance_listing
 - agency: Department of State
@@ -36,5 +36,10 @@ where_used:
   expenditure_amount: 0.0
   name: State Energy Program Special Projects
   permalink: /program/81.119
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 2801160.0
+  name: Sun Grant Program
+  permalink: /program/10.320
   program_type: assistance_listing
 ---

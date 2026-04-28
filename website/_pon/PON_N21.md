@@ -32,6 +32,11 @@ where_used:
   name: CyberSecurity Core Curriculum
   permalink: /program/12.905
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 44412.5
+  name: DOD, NDEP, DOTC-STEM Education Outreach Implementation
+  permalink: /program/12.560
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Distance Education Grants for Institutions of Higher Education in Insular
@@ -63,6 +68,17 @@ where_used:
   expenditure_amount: 286650000.0
   name: STEM Education (formerly Education and Human Resources)
   permalink: /program/47.076
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Science, Technology, Business and/or Education Outreach
+  permalink: /program/11.620
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 300000.0
+  name: Standards Coordination Office Curricula Development Cooperative Agreement
+    Program
+  permalink: /program/11.057
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 4226871.0

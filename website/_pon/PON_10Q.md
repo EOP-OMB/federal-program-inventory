@@ -14,7 +14,7 @@ title: Restore Natural Habitats and Ecosystems
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 999022000.0
-  name: ' Agricultural Conservation Easement Program '
+  name: Agricultural Conservation Easement Program
   permalink: /program/10.931
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -34,13 +34,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Cooperative Agriculture '
+  name: Cooperative Agriculture
   permalink: /program/15.681
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
-  name: 'Emergency Watershed Protection Program - Floodplain Easements – Disaster
-    Relief Appropriations Act '
+  name: Emergency Watershed Protection Program - Floodplain Easements – Disaster Relief
+    Appropriations Act
   permalink: /program/10.928
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -81,6 +81,11 @@ where_used:
   permalink: /program/10.715
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 80099999.0
+  name: Infrastructure Investment and Jobs Act Community Wildfire Defense Grants
+  permalink: /program/10.720
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 17000000.0
   name: Infrastructure Investment and Jobs Act Prescribed Fire/Fire Recovery
   permalink: /program/10.716
@@ -90,9 +95,14 @@ where_used:
   name: Infrastructure Investment and Jobs Act Restoration/Revegetation
   permalink: /program/10.717
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 4000000.0
+  name: Invasive and Noxious Plant Management
+  permalink: /program/15.230
+  program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 52838000.0
-  name: 'Leaking Underground Storage Tank Trust Fund Corrective Action Program '
+  name: Leaking Underground Storage Tank Trust Fund Corrective Action Program
   permalink: /program/66.805
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -118,7 +128,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 267521.5
-  name: 'San Joaquin River Restoration '
+  name: San Joaquin River Restoration
   permalink: /program/15.555
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -135,5 +145,15 @@ where_used:
   expenditure_amount: 4000000.0
   name: Superfund State and Indian Tribe Core Program Cooperative Agreements
   permalink: /program/66.809
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 45100000.0
+  name: Youth Conservation Corps and Public Land Corps
+  permalink: /program/10.740
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 45100000.0
+  name: Youth Conservation Corps and Public Land Corps
+  permalink: /program/10.740
   program_type: assistance_listing
 ---

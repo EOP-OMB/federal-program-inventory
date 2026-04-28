@@ -22,11 +22,6 @@ where_used:
   name: Demolition and Revitalization of Severely Distressed Public Housing
   permalink: /program/14.866
   program_type: assistance_listing
-- agency: Department of Veterans Affairs
-  expenditure_amount: 454000000.0
-  name: Grants to States for Construction of State Home Facilities
-  permalink: /program/64.005
-  program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 1292486.0
   name: Green and Resilient Retrofit Program
@@ -58,9 +53,19 @@ where_used:
   permalink: /program/14.912
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Lead Hazard Control for High Risk Areas
+  permalink: /program/14.920
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
   expenditure_amount: 120000000.0
   name: Lead Hazard Reduction Demonstration Grant Program
   permalink: /program/14.905
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 203000000.0
+  name: Lead Hazard Reduction Grant Program
+  permalink: /program/14.900
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0

@@ -16,7 +16,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
-  name: 'Homeless Veterans’ Reintegration Program '
+  name: Homeless Veterans’ Reintegration Program
   permalink: /program/17.805
   program_type: assistance_listing
 - agency: Department of Transportation

@@ -17,6 +17,11 @@ where_used:
   name: Affordable Care Act (ACA) Personal Responsibility Education Program
   permalink: /program/93.092
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 10000000.0
+  name: Cooperative Agreement to Support Navigators in Federally-facilitated Exchanges
+  permalink: /program/93.332
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1920000.0
   name: Food Animal Residue Avoidance Databank
@@ -27,10 +32,25 @@ where_used:
   name: Medicare Enrollment Assistance Program
   permalink: /program/93.071
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4950000.0
+  name: National Center for Health Workforce Analysis
+  permalink: /program/93.300
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: National Health Promotion
+  permalink: /program/93.990
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2865050.0
   name: Rural Health and Safety Education Competitive Grants Program
   permalink: /program/10.516
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 35000000.0
+  name: Sexual Risk Avoidance Education
+  permalink: /program/93.060
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 5400000.0

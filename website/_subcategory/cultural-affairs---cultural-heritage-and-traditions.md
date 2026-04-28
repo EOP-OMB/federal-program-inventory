@@ -1,9 +1,10 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":4,"total_obs":14270263.0},{"title":"National
+agencies: '[{"title":"Department of Education","total_num_programs":3,"total_obs":155310403.0},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":4,"total_obs":14270263.0},{"title":"National
   Endowment for the Humanities","total_num_programs":2,"total_obs":3787276.0},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":2749117.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":0.0}]'
+  of Defense","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Federally Recognized Indian/Native American/Alaska Native
   Tribal Government","total_num_programs":4},{"title":"U.S. Territory (or Possession)
   Government (including freely-associated states)","total_num_programs":4},{"title":"County
@@ -16,12 +17,15 @@ applicant_types: '[{"title":"Federally Recognized Indian/Native American/Alaska 
   and hospitals","total_num_programs":2},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  hospitals)","total_num_programs":2},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
-  public institution/organization","total_num_programs":1},{"title":"Public nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"State
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  public institution/organization","total_num_programs":1},{"title":"Specialized group
+  (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Individual Type","total_num_programs":1}]'
@@ -235,15 +239,19 @@ fiscal_year: '2025'
 parent_permalink: /category/cultural-affairs
 parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-programs: '[{"cfda":"45.309","permalink":"/program/45.309","title":"Museum Grants
-  for African American History and Culture","popular_name":"Museum Grants for African
-  American History and Culture","agency":"The Institute of Museum and Library Services","total_obs":6240000.0,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
+programs: '[{"cfda":"84.422","permalink":"/program/84.422","title":"American History
+  and Civics Education","popular_name":"American History and Civics Academies:  National
+  Activities Grants","agency":"Department of Education","total_obs":129578799.0,"program_type":"assistance_listing"},{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska
+  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":25731604.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
+  Grants for African American History and Culture","popular_name":"Museum Grants for
+  African American History and Culture","agency":"The Institute of Museum and Library
+  Services","total_obs":6240000.0,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
   Grants for American Latino History and Culture","popular_name":"Museum Grants for
   American Latino History and Culture","agency":"The Institute of Museum and Library
   Services","total_obs":4258263.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
   of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
   Endowment for the Humanities","total_obs":3787276.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
-  American/Native Hawaiian Museum Services Program ","popular_name":"Native American/Native
+  American/Native Hawaiian Museum Services Program","popular_name":"Native American/Native
   Hawaiian Museum Services Program","agency":"The Institute of Museum and Library
   Services","total_obs":3772000.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
   Hawaiian and Alaka Native Culture and Arts Development","popular_name":null,"agency":"Department
@@ -261,7 +269,7 @@ programs: '[{"cfda":"45.309","permalink":"/program/45.309","title":"Museum Grant
   (EMI)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Cultural Heritage and Traditions
 total_num_agencies: 6
-total_num_applicant_types: 26
-total_num_programs: 10
-total_obs: 20806656.0
+total_num_applicant_types: 31
+total_num_programs: 12
+total_obs: 176117059.0
 ---

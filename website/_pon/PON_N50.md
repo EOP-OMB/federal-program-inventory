@@ -24,6 +24,11 @@ where_used:
   permalink: /program/12.618
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 259329412.0
+  name: Community Investment
+  permalink: /program/12.600
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 49000000.0
   name: Congressionally Directed Assistance
   permalink: /program/12.599
@@ -67,6 +72,11 @@ where_used:
   expenditure_amount: 307000000.0
   name: Maritime Security Fleet Program or Ship Operations Cooperation Program
   permalink: /program/20.813
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 162800000.0
+  name: Military Construction, National Guard
+  permalink: /program/12.400
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 2500000000.0

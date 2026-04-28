@@ -22,6 +22,11 @@ where_used:
   name: Blackfeet Water Rights Settlement
   permalink: /program/15.075
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 29800829.0
+  name: Community Services Block Grant Discretionary Awards
+  permalink: /program/93.570
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Crow Tribe Water Rights Settlement
@@ -45,12 +50,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Equus Beds Division Acquifer Storage Recharge '
+  name: Equus Beds Division Acquifer Storage Recharge
   permalink: /program/15.539
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Fort Peck Reservation Rural Water System '
+  name: Fort Peck Reservation Rural Water System
   permalink: /program/15.516
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -86,12 +91,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 4099025.0
-  name: 'Navajo-Gallup Water Supply '
+  name: Navajo-Gallup Water Supply
   permalink: /program/15.552
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'New Mexico Rio Grande Basin Pueblos Irrigation Infrastructure '
+  name: New Mexico Rio Grande Basin Pueblos Irrigation Infrastructure
   permalink: /program/15.559
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -116,7 +121,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'San Gabriel Basin Restoration '
+  name: San Gabriel Basin Restoration
   permalink: /program/15.526
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -126,12 +131,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 7294048.0
-  name: 'Title II, Colorado River Basin Salinity Control '
+  name: Title II, Colorado River Basin Salinity Control
   permalink: /program/15.509
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3300000.0
-  name: 'Water Desalination Research and Development '
+  name: Water Desalination Research and Development
   permalink: /program/15.506
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -160,6 +165,11 @@ where_used:
   permalink: /program/15.591
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 1000000.0
+  name: WaterSMART Drought Response Program
+  permalink: /program/15.590
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 35000000.0
   name: WaterSMART Enhancing Water Resources Projects
   permalink: /program/15.579
@@ -171,7 +181,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'White Mountain Apache Tribe Rural Water System '
+  name: White Mountain Apache Tribe Rural Water System
   permalink: /program/15.558
   program_type: assistance_listing
 ---

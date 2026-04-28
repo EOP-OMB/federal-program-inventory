@@ -9,6 +9,11 @@ title: Strengthen Tribal Self-Governance
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 0.0
+  name: Aid To Tribal Governments
+  permalink: /program/15.020
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
   name: Attorney Fees Indian Rights
   permalink: /program/15.053
   program_type: assistance_listing
@@ -24,7 +29,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Consolidated Tribal Government '
+  name: Consolidated Tribal Government
   permalink: /program/15.021
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -36,6 +41,11 @@ where_used:
   expenditure_amount: 0.0
   name: Indian Country Investigations
   permalink: /program/16.308
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Indian Law Enforcement
+  permalink: /program/15.030
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -57,6 +67,11 @@ where_used:
   name: Litigation Support for Indian Rights
   permalink: /program/15.052
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 16000000.0
+  name: Native American Community Research, Demonstration, and Pilot Projects
+  permalink: /program/93.340
+  program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
   name: Special Domestic Violence Criminal Jurisdiction Implementation
@@ -64,13 +79,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Strengthening Tribal Nations  '
+  name: Strengthening Tribal Nations
   permalink: /program/15.067
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Tiwahe Demonstration Project-Social Services
   permalink: /program/15.166
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Tiwahe Demonstration Project-Tribal Court
+  permalink: /program/15.170
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0

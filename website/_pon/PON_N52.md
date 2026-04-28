@@ -52,7 +52,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
-  name: 'Port Security Grant Program '
+  name: Port Security Grant Program
   permalink: /program/97.056
   program_type: assistance_listing
 - agency: Department of Homeland Security
@@ -69,5 +69,10 @@ where_used:
   expenditure_amount: 0.0
   name: Rehabilitation, Reconstruction, or Replacement of Carey Act Dams
   permalink: /program/15.077
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Tribal Homeland Security Grant Program
+  permalink: /program/97.150
   program_type: assistance_listing
 ---

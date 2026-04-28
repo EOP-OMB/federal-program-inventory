@@ -14,8 +14,8 @@ title: Reduce Risk of Illness
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 16275404.0
-  name: 'A Comprehensive Approach to Good Health and Wellness in Indian County – financed
-    solely by Prevention and Public Health '
+  name: A Comprehensive Approach to Good Health and Wellness in Indian County – financed
+    solely by Prevention and Public Health
   permalink: /program/93.762
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -36,7 +36,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 13252108.0
-  name: 'Chronic Diseases:  Research, Control, and Prevention  '
+  name: 'Chronic Diseases:  Research, Control, and Prevention'
   permalink: /program/93.068
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -134,8 +134,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 2399067.0
-  name: 'National Collaboration to Support Health, Wellness and Academic Success of
-    School-Age Children  '
+  name: National Collaboration to Support Health, Wellness and Academic Success of
+    School-Age Children
   permalink: /program/93.858
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -166,13 +166,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1588654.0
-  name: 'Provision of  Technical Assistance and Training Activities to Assure Comprehensive
-    Cancer Control Outcomes. '
+  name: Provision of  Technical Assistance and Training Activities to Assure Comprehensive
+    Cancer Control Outcomes.
   permalink: /program/93.427
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 33539308.0
-  name: 'Racial and Ethnic Approaches to Community Health '
+  name: Racial and Ethnic Approaches to Community Health
   permalink: /program/93.304
   program_type: assistance_listing
 - agency: Department of Health and Human Services

@@ -12,6 +12,11 @@ where_used:
   name: 7(j) Technical Assistance
   permalink: /program/59.007
   program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: 8(a) Business Development Program
+  permalink: /program/59.006
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: -26700000000.0
   name: Accelerated depreciation of machinery and equipment (normal tax method)
@@ -27,6 +32,11 @@ where_used:
   name: Allow 20-percent deduction to certain pass-through income
   permalink: /program/TC.086
   program_type: tax_expenditure
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Assistance to Small and Disadvantaged Businesses
+  permalink: /program/20.910
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 200000000.0
   name: Capital gains treatment of certain timber income
@@ -41,6 +51,11 @@ where_used:
   expenditure_amount: 0.0
   name: Community Navigator Pilot Program
   permalink: /program/59.077
+  program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Congressional Grants
+  permalink: /program/59.059
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 33800000000.0
@@ -114,6 +129,11 @@ where_used:
   name: Federal and State Technology Partnership Program
   permalink: /program/59.058
   program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: HUBZone Program
+  permalink: /program/59.055
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 20000000.0
   name: Indian employment credit
@@ -152,13 +172,23 @@ where_used:
   program_type: assistance_listing
 - agency: Small Business Administration
   expenditure_amount: 0.0
-  name: 'Ombudsman and Regulatory Fairness Boards '
+  name: Native American Outreach
+  permalink: /program/59.052
+  program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Ombudsman and Regulatory Fairness Boards
   permalink: /program/59.053
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Outreach Education and Technical Assistance
   permalink: /program/10.147
+  program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Prime Technical Assistance
+  permalink: /program/59.050
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -247,7 +277,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0
-  name: 'Work Opportunity Tax Credit Program (WOTC) '
+  name: Work Opportunity Tax Credit Program (WOTC)
   permalink: /program/17.271
   program_type: assistance_listing
 - agency: Department of the Treasury

@@ -27,4 +27,9 @@ where_used:
   name: National Electric Vehicle Infrastructure
   permalink: /program/20.277
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1321200000.0
+  name: The Charging and Fueling Infrastructure (CFI) Grant Program
+  permalink: /program/20.220
+  program_type: assistance_listing
 ---

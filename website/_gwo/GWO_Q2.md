@@ -9,6 +9,16 @@ permalink: /gwo/GWO_Q2
 title: Improve Conservation of Wildlife and Natural Resources
 where_used:
 - agency: Department of the Interior
+  expenditure_amount: 10000000.0
+  name: Adaptive Science
+  permalink: /program/15.670
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 7999999.0
+  name: African Elephant Conservation Fund
+  permalink: /program/15.620
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 508533.0
   name: Alaska Migratory Bird Co-Management Council
   permalink: /program/15.643
@@ -28,6 +38,11 @@ where_used:
   name: Atlantic Coastal Fisheries Cooperative Management Act
   permalink: /program/11.474
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 1050000.0
+  name: Candidate Species Conservation
+  permalink: /program/15.660
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 20592149.0
   name: Center for Sponsored Coastal Ocean Research Coastal Ocean Program
@@ -45,7 +60,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 635000.0
-  name: 'Central Valley Project Conservation '
+  name: Central Valley Project Conservation
   permalink: /program/15.564
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -90,7 +105,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Cooperative Research Units '
+  name: Cooperative Research Units
   permalink: /program/15.812
   program_type: assistance_listing
 - agency: Department of the Treasury
@@ -105,7 +120,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Fish and Wildlife Coordination and Assistance '
+  name: Fish and Wildlife Coordination and Assistance
   permalink: /program/15.664
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -125,7 +140,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 10971331.0
-  name: 'Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology '
+  name: Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology
   permalink: /program/11.451
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -143,6 +158,11 @@ where_used:
   expenditure_amount: 0.0
   name: Invasive Species
   permalink: /program/15.652
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 800000.0
+  name: Latin America and Caribbean Regional
+  permalink: /program/15.640
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 24000000.0
@@ -170,6 +190,11 @@ where_used:
   permalink: /program/11.065
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 635000.0
+  name: Mexican Wolf Recovery
+  permalink: /program/15.680
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 50000.0
   name: Migratory Bird Conservation
   permalink: /program/15.647
@@ -191,7 +216,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 4850000.0
-  name: 'Neotropical Migratory Bird Conservation '
+  name: Neotropical Migratory Bird Conservation
   permalink: /program/15.635
   program_type: assistance_listing
 - agency: Department of Commerce
@@ -211,7 +236,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5600000.0
-  name: 'Platte River Recovery Implementation '
+  name: Platte River Recovery Implementation
   permalink: /program/15.544
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -241,6 +266,11 @@ where_used:
   permalink: /program/11.441
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Rhinoceros Conservation Fund-Africa
+  permalink: /program/15.690
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 4032600.0
   name: Rhinoceros and Tiger Conservation Fund
   permalink: /program/15.619
@@ -267,7 +297,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 6100000.0
-  name: 'Tribal Wildlife Grants '
+  name: Tribal Wildlife Grants
   permalink: /program/15.639
   program_type: assistance_listing
 - agency: Department of Commerce

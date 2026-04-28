@@ -1,18 +1,20 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":14,"total_obs":1166780786.9799998},{"title":"Department
+agencies: '[{"title":"Department of the Interior","total_num_programs":17,"total_obs":1256463095.6599998},{"title":"Department
   of Justice","total_num_programs":11,"total_obs":57619905.06},{"title":"Department
   of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":17},{"title":"Native
+  of Health and Human Services","total_num_programs":2,"total_obs":0.0}]'
+applicant_types: '[{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":20},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":7},{"title":"Other","total_num_programs":5},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Federal","total_num_programs":1},{"title":"Indian/Native
-  American Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":1}]'
+  associations)","total_num_programs":8},{"title":"Other","total_num_programs":5},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":3},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Federal","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Indian/Native American Tribal Government
+  (Other than Federally Recognized)","total_num_programs":1},{"title":"Local (includes
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Nonprofit
+  Organization","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -224,16 +226,18 @@ parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/tribal-independence-and-autonomy
 programs: '[{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal Self-Governance","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1023531287.91,"program_type":"assistance_listing"},{"cfda":"16.587","permalink":"/program/16.587","title":"Violence
+  of the Interior","total_obs":1023531287.91,"program_type":"assistance_listing"},{"cfda":"15.030","permalink":"/program/15.030","title":"Indian
+  Law Enforcement","popular_name":"Law Enforcement","agency":"Department of the Interior","total_obs":72695977.24,"program_type":"assistance_listing"},{"cfda":"16.587","permalink":"/program/16.587","title":"Violence
   Against Women Discretionary Grants for Indian Tribal Governments","popular_name":"Tribal
   Governments","agency":"Department of Justice","total_obs":47365274.0,"program_type":"assistance_listing"},{"cfda":"15.048","permalink":"/program/15.048","title":"Bureau
   of Indian Affairs Facilities Operations and Maintenance","popular_name":null,"agency":"Department
   of the Interior","total_obs":39735518.76,"program_type":"assistance_listing"},{"cfda":"15.036","permalink":"/program/15.036","title":"Indian
   Rights Protection","popular_name":null,"agency":"Department of the Interior","total_obs":29930666.86,"program_type":"assistance_listing"},{"cfda":"15.029","permalink":"/program/15.029","title":"Tribal
   Courts","popular_name":null,"agency":"Department of the Interior","total_obs":27679903.56,"program_type":"assistance_listing"},{"cfda":"15.021","permalink":"/program/15.021","title":"Consolidated
-  Tribal Government ","popular_name":null,"agency":"Department of the Interior","total_obs":27311992.55,"program_type":"assistance_listing"},{"cfda":"15.024","permalink":"/program/15.024","title":"Indian
+  Tribal Government","popular_name":null,"agency":"Department of the Interior","total_obs":27311992.55,"program_type":"assistance_listing"},{"cfda":"15.024","permalink":"/program/15.024","title":"Indian
   Self-Determination Contract Support","popular_name":"CONTRACT SUPPORT","agency":"Department
-  of the Interior","total_obs":17650449.59,"program_type":"assistance_listing"},{"cfda":"16.025","permalink":"/program/16.025","title":"Special
+  of the Interior","total_obs":17650449.59,"program_type":"assistance_listing"},{"cfda":"15.020","permalink":"/program/15.020","title":"Aid
+  To Tribal Governments","popular_name":null,"agency":"Department of the Interior","total_obs":16986331.44,"program_type":"assistance_listing"},{"cfda":"16.025","permalink":"/program/16.025","title":"Special
   Domestic Violence Criminal Jurisdiction Implementation","popular_name":"STCJ Grant
   Program","agency":"Department of Justice","total_obs":7054815.0,"program_type":"assistance_listing"},{"cfda":"16.583","permalink":"/program/16.583","title":"Children''s
   Justice Act Partnerships for Indian Communities","popular_name":"CJA","agency":"Department
@@ -247,11 +251,16 @@ programs: '[{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal Self-
   Self-Determination Act Contracts, Grants and Cooperative Agreements","popular_name":"638
   Indian Self-Determination Act Contracts, Grants and Cooperative Agreements","agency":"Department
   of the Interior","total_obs":85140.0,"program_type":"assistance_listing"},{"cfda":"15.067","permalink":"/program/15.067","title":"Strengthening
-  Tribal Nations  ","popular_name":null,"agency":"Department of the Interior","total_obs":35033.75,"program_type":"assistance_listing"},{"cfda":"15.063","permalink":"/program/15.063","title":"Improvement
+  Tribal Nations","popular_name":null,"agency":"Department of the Interior","total_obs":35033.75,"program_type":"assistance_listing"},{"cfda":"15.063","permalink":"/program/15.063","title":"Improvement
   and Repair of Indian Detention Facilities","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.308","permalink":"/program/16.308","title":"Indian
-  Country Investigations","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.166","permalink":"/program/15.166","title":"Tiwahe
+  Country Investigations","popular_name":null,"agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.340","permalink":"/program/93.340","title":"Native
+  American Community Research, Demonstration, and Pilot Projects","popular_name":"Native
+  American Community Research, Training and Technical Assistance, Demonstration, and
+  Pilot Projects","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.166","permalink":"/program/15.166","title":"Tiwahe
   Demonstration Project-Social Services","popular_name":"Tiwahe Social Services","agency":"Department
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.170","permalink":"/program/15.170","title":"Tiwahe
+  Demonstration Project-Tribal Court","popular_name":"Tiwahe-Tribal Court","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.162","permalink":"/program/15.162","title":"Tiwahe
   Housing","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.815","permalink":"/program/16.815","title":"Tribal
   Civil and Criminal Legal Assistance Grants, Training and Technical Assistance","popular_name":"Tribal
@@ -269,7 +278,7 @@ programs: '[{"cfda":"15.022","permalink":"/program/15.022","title":"Tribal Self-
   Transportation Program (TTP)","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Tribal Independence and Autonomy
 total_num_agencies: 4
-total_num_applicant_types: 14
-total_num_programs: 27
-total_obs: 1224400692.0399997
+total_num_applicant_types: 19
+total_num_programs: 31
+total_obs: 1314083000.7199998
 ---

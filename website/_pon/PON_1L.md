@@ -13,12 +13,12 @@ title: 'Increase Access to Independent Living (ADD: for Individuals with Disabil
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 102105000.0
-  name: 'ACL Centers for Independent Living '
+  name: ACL Centers for Independent Living
   permalink: /program/93.432
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 26078000.0
-  name: 'ACL Independent Living State Grants '
+  name: ACL Independent Living State Grants
   permalink: /program/93.369
   program_type: assistance_listing
 - agency: Department of Veterans Affairs

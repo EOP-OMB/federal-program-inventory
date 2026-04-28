@@ -12,6 +12,11 @@ where_used:
   name: Grant Program to Establish a Fund for Financing Water and Wastewater Projects
   permalink: /program/10.864
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 2000000.0
+  name: Leading Edge Acceleration Projects (LEAP) in Health Information Technology
+  permalink: /program/93.345
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2000000.0
   name: Part 1774 Special Evaluation Assistance for Rural Communities and Households
@@ -22,6 +27,17 @@ where_used:
   expenditure_amount: 5000000.0
   name: Rural Decentralized Water Systems Grant Program
   permalink: /program/10.862
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 1333488564.0
+  name: Water and Waste Disposal Systems for Rural Communities
+  permalink: /program/10.760
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 33000000.0
+  name: Water and Waste Facility Loans and Grants to Alleviate Health Risks for Colonias
+    and Tribal Lands
+  permalink: /program/10.770
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 35000000.0

@@ -26,7 +26,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 5494072175.0
-  name: 'Continuum of Care Program '
+  name: Continuum of Care Program
   permalink: /program/14.267
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
@@ -38,6 +38,11 @@ where_used:
   expenditure_amount: 4200000000.0
   name: Low-Income Home Energy Assistance
   permalink: /program/93.568
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 63929601.0
+  name: Projects for Assistance in Transition from Homelessness (PATH)
+  permalink: /program/93.150
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -53,6 +58,16 @@ where_used:
   expenditure_amount: 17119872193.0
   name: Temporary Assistance for Needy Families
   permalink: /program/93.558
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 55000000.0
+  name: Transitional Living for Homeless Youth
+  permalink: /program/93.550
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: U.S. Refugee Admissions Program
+  permalink: /program/19.510
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 750060.0

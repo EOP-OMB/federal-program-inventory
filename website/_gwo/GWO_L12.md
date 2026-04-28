@@ -9,8 +9,8 @@ title: Eliminate Chronic Disease and Risk Factors
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 16275404.0
-  name: 'A Comprehensive Approach to Good Health and Wellness in Indian County – financed
-    solely by Prevention and Public Health '
+  name: A Comprehensive Approach to Good Health and Wellness in Indian County – financed
+    solely by Prevention and Public Health
   permalink: /program/93.762
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -23,6 +23,11 @@ where_used:
   expenditure_amount: 26755193.0
   name: Assistance Programs for Chronic Disease Prevention and Control
   permalink: /program/93.945
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 10555702.0
+  name: 'Blood Disorder Program: Prevention, Surveillance, and Research'
+  permalink: /program/93.080
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 91578991.0
@@ -73,7 +78,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 3000000.0
-  name: "National Organizations for Chronic Disease Prevention and Health Promotion\t"
+  name: National Organizations for Chronic Disease Prevention and Health Promotion
   permalink: /program/93.809
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -89,8 +94,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 675000.0
-  name: 'Nutrition and Physical Activity Programs '
+  name: Nutrition and Physical Activity Programs
   permalink: /program/93.649
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 22000000.0
+  name: Organized Approaches to Increase Colorectal Cancer Screening
+  permalink: /program/93.800
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 11385330.0
@@ -102,6 +112,12 @@ where_used:
   name: Packaging and Spreading Proven Pediatric Weight Management Interventions for
     Use by Low-Income Families
   permalink: /program/93.349
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 8085120.0
+  name: Paul Coverdell National Acute Stroke Program National Center for Chronic Disease
+    Prevention and Health Promotion
+  permalink: /program/93.810
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 3500000.0
@@ -121,13 +137,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 1588654.0
-  name: 'Provision of  Technical Assistance and Training Activities to Assure Comprehensive
-    Cancer Control Outcomes. '
+  name: Provision of  Technical Assistance and Training Activities to Assure Comprehensive
+    Cancer Control Outcomes.
   permalink: /program/93.427
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 33539308.0
-  name: 'Racial and Ethnic Approaches to Community Health '
+  name: Racial and Ethnic Approaches to Community Health
   permalink: /program/93.304
   program_type: assistance_listing
 - agency: Department of Health and Human Services

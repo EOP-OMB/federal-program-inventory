@@ -66,6 +66,11 @@ where_used:
   name: Electronic and At-Sea Monitoring Programs
   permalink: /program/11.062
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 456000000.0
+  name: Federal Lands Transportation Program (FLTP)
+  permalink: /program/20.260
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: GoMESA
@@ -78,8 +83,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 10971331.0
-  name: 'Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology '
+  name: Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology
   permalink: /program/11.451
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 4000000.0
+  name: Invasive and Noxious Plant Management
+  permalink: /program/15.230
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0

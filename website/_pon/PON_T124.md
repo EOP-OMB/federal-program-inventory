@@ -22,11 +22,6 @@ where_used:
     and Evaluations
   permalink: /program/93.779
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 4556269.0
-  name: Cybersecurity Workforce Community-Building and Stakeholder Engagement
-  permalink: /program/11.046
-  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Family Smoking Prevention and Tobacco Control Act Regulatory Research
@@ -49,7 +44,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 150000.0
-  name: 'Route 66 Corridor Preservation '
+  name: Route 66 Corridor Preservation
   permalink: /program/15.958
   program_type: assistance_listing
 - agency: Social Security Administration
@@ -71,5 +66,10 @@ where_used:
   expenditure_amount: 644873.0
   name: Welfare Reform Research, Evaluations and National Studies
   permalink: /program/93.595
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Women's Bureau
+  permalink: /program/17.700
   program_type: assistance_listing
 ---
