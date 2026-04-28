@@ -14,7 +14,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'Centers for Disease Control and Prevention Investigations and Technical Assistance '
+  name: Centers for Disease Control and Prevention Investigations and Technical Assistance
   permalink: /program/93.283
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -22,6 +22,12 @@ where_used:
   name: Collaboration With the World Health Organization and its Regional Offices
     for Global Health Security and the International Health Regulations (IHR 2005)
   permalink: /program/93.099
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 12557661.0
+  name: Cooperative Agreements to Promote Adolescent Health through School-Based Surveillance
+    and Risk Behavior Reduction
+  permalink: /program/93.079
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 72000000.0
@@ -38,6 +44,11 @@ where_used:
   expenditure_amount: 65534244.0
   name: Emerging Infections Programs
   permalink: /program/93.317
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 555000.0
+  name: Emerging Infections Sentinel Networks
+  permalink: /program/93.860
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 140000000.0
@@ -70,6 +81,11 @@ where_used:
   expenditure_amount: 94995995.0
   name: HIV Prevention Activities Non-Governmental Organization Based
   permalink: /program/93.939
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 502262471.0
+  name: HIV Prevention and Surveillance Activities-Health Department Based
+  permalink: /program/93.940
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12638556.0
@@ -106,7 +122,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 31579853.0
-  name: 'Prevention of Disease, Disability, and Death by Infectious Diseases  '
+  name: Prevention of Disease, Disability, and Death by Infectious Diseases
   permalink: /program/93.084
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -130,5 +146,10 @@ where_used:
   expenditure_amount: 117841318.0
   name: Sexually Transmitted Diseases (STD) Prevention and Control Grants
   permalink: /program/93.977
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 22000000.0
+  name: Viral Hepatitis Prevention and Control
+  permalink: /program/93.270
   program_type: assistance_listing
 ---

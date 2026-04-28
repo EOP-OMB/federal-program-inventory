@@ -14,6 +14,11 @@ permalink: /pon/PON_1K
 title: Reduce Food Waste
 where_used:
 - agency: Department of Agriculture
+  expenditure_amount: 3000000.0
+  name: Composting and Food Waste Reduction Cooperative Agreement Program
+  permalink: /program/10.930
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Composting and Food Waste Reduction Program
   permalink: /program/10.339

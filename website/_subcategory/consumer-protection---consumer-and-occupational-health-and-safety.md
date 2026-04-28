@@ -1,23 +1,25 @@
 ---
-agencies: '[{"title":"Department of Labor","total_num_programs":5,"total_obs":188320564.67000002},{"title":"Department
+agencies: '[{"title":"Department of Labor","total_num_programs":6,"total_obs":198857564.67000002},{"title":"Department
   of Agriculture","total_num_programs":5,"total_obs":84168731.85000001},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":2646950.0},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":2646950.0},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":340000.0},{"title":"Department
   of Transportation","total_num_programs":1,"total_obs":323735.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product
   Safety Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
-  of higher education and hospitals)","total_num_programs":5},{"title":"U.S. State
-  Government (including the District of Columbia)","total_num_programs":5},{"title":"Local","total_num_programs":4},{"title":"Nonprofit
-  Organization","total_num_programs":4},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":4},{"title":"For-Profit
-  Organization","total_num_programs":3},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"U.S.
+  of higher education and hospitals)","total_num_programs":6},{"title":"Nonprofit
+  Organization","total_num_programs":5},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":5},{"title":"Local","total_num_programs":4},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":4},{"title":"For-Profit Organization","total_num_programs":3},{"title":"Other","total_num_programs":3},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"U.S.
   Territories and possessions","total_num_programs":3},{"title":"Department or Agency
   of a U.S. State Government","total_num_programs":2},{"title":"Federally Recognized
   Indian Tribal Governments","total_num_programs":2},{"title":"Federally Recognized
   Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Other
+  and hospitals","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Other
   private institutions/organizations","total_num_programs":2},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
@@ -250,7 +252,9 @@ programs: '[{"cfda":"17.503","permalink":"/program/17.503","title":"Occupational
   Agreements with States for Intrastate Meat and Poultry Inspection","popular_name":"State
   Inspection Program","agency":"Department of Agriculture","total_obs":54135342.28,"program_type":"assistance_listing"},{"cfda":"10.477","permalink":"/program/10.477","title":"Meat,
   Poultry, and Egg Products Inspection","popular_name":"Talmadge Aiken Program, Cooperative
-  Interstate Shipment Program","agency":"Department of Agriculture","total_obs":23549588.44,"program_type":"assistance_listing"},{"cfda":"17.502","permalink":"/program/17.502","title":"Occupational
+  Interstate Shipment Program","agency":"Department of Agriculture","total_obs":23549588.44,"program_type":"assistance_listing"},{"cfda":"17.600","permalink":"/program/17.600","title":"Mine
+  Health and Safety Grants","popular_name":"Mine Health and Safety State Grants","agency":"Department
+  of Labor","total_obs":10537000.0,"program_type":"assistance_listing"},{"cfda":"17.502","permalink":"/program/17.502","title":"Occupational
   Safety and Health Susan Harwood Training Grants","popular_name":"Susan Harwood Training
   Grants","agency":"Department of Labor","total_obs":10148142.0,"program_type":"assistance_listing"},{"cfda":"10.328","permalink":"/program/10.328","title":"Food
   Safety Outreach Program","popular_name":"National Food Safety Training, Education,
@@ -259,7 +263,9 @@ programs: '[{"cfda":"17.503","permalink":"/program/17.503","title":"Occupational
   Training Program (WTP)","agency":"Department of Health and Human Services","total_obs":2646950.0,"program_type":"assistance_listing"},{"cfda":"10.585","permalink":"/program/10.585","title":"FNS
   Food Safety Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":637500.0,"program_type":"assistance_listing"},{"cfda":"10.479","permalink":"/program/10.479","title":"Food
   Safety Cooperative Agreements","popular_name":"FERN Cooperative Agreements","agency":"Department
-  of Agriculture","total_obs":396875.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
+  of Agriculture","total_obs":396875.0,"program_type":"assistance_listing"},{"cfda":"66.720","permalink":"/program/66.720","title":"PRIA
+  5: Farm Worker and Health Care Provider Training and Education Grants","popular_name":"Pesticide
+  Registration Improvement Act 5","agency":"Environmental Protection Agency","total_obs":340000.0,"program_type":"assistance_listing"},{"cfda":"20.707","permalink":"/program/20.707","title":"Hazardous
   Materials State Inspection (HMSI) Grant","popular_name":"Hazardous Materials State
   Inspection Grant","agency":"Department of Transportation","total_obs":323735.0,"program_type":"assistance_listing"},{"cfda":"17.603","permalink":"/program/17.603","title":"Brookwood-Sago
   Grant","popular_name":null,"agency":"Department of Labor","total_obs":250000.0,"program_type":"assistance_listing"},{"cfda":"17.604","permalink":"/program/17.604","title":"Safety
@@ -281,8 +287,8 @@ programs: '[{"cfda":"17.503","permalink":"/program/17.503","title":"Occupational
   Graeme Baker Pool and Spa Safety","popular_name":null,"agency":"Consumer Product
   Safety Commission","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Consumer and Occupational Health and Safety
-total_num_agencies: 6
+total_num_agencies: 7
 total_num_applicant_types: 46
-total_num_programs: 18
-total_obs: 275459981.52000004
+total_num_programs: 20
+total_obs: 286336981.52000004
 ---

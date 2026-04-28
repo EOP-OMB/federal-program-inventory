@@ -48,9 +48,19 @@ where_used:
   permalink: /program/93.492
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 545000000.0
+  name: Center for Substance Abuse Treatment Projects of Regional and National Significance
+  permalink: /program/93.490
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 9500000.0
   name: Community Opioid Intervention Prevention Program
   permalink: /program/93.00D
+  program_type: assistance_listing
+- agency: Executive Office of the President
+  expenditure_amount: 0.0
+  name: Congressional Directives
+  permalink: /program/95.010
   program_type: assistance_listing
 - agency: Executive Office of the President
   expenditure_amount: 2500000.0

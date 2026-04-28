@@ -25,6 +25,11 @@ where_used:
   name: Cultural Resources Management
   permalink: /program/15.511
   program_type: assistance_listing
+- agency: The Institute of Museum and Library Services
+  expenditure_amount: 181400000.0
+  name: Grants to States
+  permalink: /program/45.310
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 60000000.0
   name: Historic Preservation Fund Grants-in-Aid for Competitive Grants
@@ -49,6 +54,11 @@ where_used:
   expenditure_amount: 28730000.0
   name: Museums for America
   permalink: /program/45.301
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 5000000.0
+  name: National Agricultural Library
+  permalink: /program/10.700
   program_type: assistance_listing
 - agency: National Archives and Records Administration
   expenditure_amount: 0.0
@@ -87,7 +97,7 @@ where_used:
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 3772000.0
-  name: 'Native American/Native Hawaiian Museum Services Program '
+  name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: National Endowment for the Humanities

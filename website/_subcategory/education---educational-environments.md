@@ -1,39 +1,38 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":20,"total_obs":17105330989.749998},{"title":"Department
+agencies: '[{"title":"Department of Education","total_num_programs":23,"total_obs":17103514150.749998},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":3910000000.0},{"title":"Department
   of the Interior","total_num_programs":6,"total_obs":371582897.96999997},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":40795789.0},{"title":"Department
   of Agriculture","total_num_programs":7,"total_obs":20853741.0},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":3268150.0},{"title":"National
+  Protection Agency","total_num_programs":2,"total_obs":3268150.0},{"title":"National
   Endowment for the Humanities","total_num_programs":1,"total_obs":902296.87},{"title":"Department
   of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
   and Human Services","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
-  institutions of higher education and hospitals","total_num_programs":12},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":12},{"title":"Private
+  institutions of higher education and hospitals","total_num_programs":15},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":11},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Other","total_num_programs":7},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":6},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Nonprofit
-  Organization","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Other
-  private institutions/organizations","total_num_programs":4},{"title":"Other public
-  institution/organization","total_num_programs":4},{"title":"U.S. State Government
-  (including the District of Columbia)","total_num_programs":4},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":3},{"title":"County Government (inclusive of
-  boroughs in Alaska, parishes and other governmental entities with geographic regional
-  control and authority)","total_num_programs":2},{"title":"Department or Agency of
-  a U.S. State Government","total_num_programs":2},{"title":"Department or Agency
-  of a U.S. Territorial Government","total_num_programs":2},{"title":"Indian/Native
+  hospitals)","total_num_programs":12},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Other","total_num_programs":7},{"title":"Nonprofit
+  Organization","total_num_programs":6},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Other
+  private institutions/organizations","total_num_programs":4},{"title":"Sponsored
+  organization","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":4},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Profit
+  organization","total_num_programs":3},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":3},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Indian/Native
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":2},{"title":"Native American Organizations (includes
   Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Non-Government
   - General","total_num_programs":2},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Profit
-  organization","total_num_programs":2},{"title":"School District","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"School
+  District","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
   Territories and possessions","total_num_programs":2},{"title":"U.S. Territories
   and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Local","total_num_programs":1},{"title":"Not-for-Profit
   Organization","total_num_programs":1},{"title":"Small business (less than 500 employees)","total_num_programs":1},{"title":"U.S.
@@ -267,11 +266,10 @@ programs: '[{"cfda":"84.027","permalink":"/program/84.027","title":"Special Educ
   of Education","total_obs":75375000.0,"program_type":"assistance_listing"},{"cfda":"94.011","permalink":"/program/94.011","title":"AmeriCorps
   Seniors Foster Grandparent Program (FGP) 94.011","popular_name":"AmeriCorps Seniors
   Foster Grandparent Program (FGP) 94.011","agency":"Corporation for National and
-  Community Service","total_obs":40795789.0,"program_type":"assistance_listing"},{"cfda":"84.328","permalink":"/program/84.328","title":"Special
-  Education Parent Information Centers","popular_name":null,"agency":"Department of
-  Education","total_obs":25856534.0,"program_type":"assistance_listing"},{"cfda":"10.579","permalink":"/program/10.579","title":"Child
+  Community Service","total_obs":40795789.0,"program_type":"assistance_listing"},{"cfda":"10.579","permalink":"/program/10.579","title":"Child
   Nutrition Discretionary Grants Limited Availability","popular_name":"Child Nutrition
-  Discretionary Grants Limited Availability","agency":"Department of Agriculture","total_obs":19883741.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
+  Discretionary Grants Limited Availability","agency":"Department of Agriculture","total_obs":19883741.0,"program_type":"assistance_listing"},{"cfda":"84.040","permalink":"/program/84.040","title":"Impact
+  Aid Facilities Maintenance","popular_name":null,"agency":"Department of Education","total_obs":19639964.0,"program_type":"assistance_listing"},{"cfda":"84.325","permalink":"/program/84.325","title":"Special
   Education - Personnel Development to Improve Services and Results for Children with
   Disabilities","popular_name":null,"agency":"Department of Education","total_obs":18006064.0,"program_type":"assistance_listing"},{"cfda":"84.323","permalink":"/program/84.323","title":"Special
   Education - State Personnel Development","popular_name":null,"agency":"Department
@@ -282,7 +280,10 @@ programs: '[{"cfda":"84.027","permalink":"/program/84.027","title":"Special Educ
   of Education","total_obs":6600000.0,"program_type":"assistance_listing"},{"cfda":"15.163","permalink":"/program/15.163","title":"Tribal
   Education Departments","popular_name":"TED","agency":"Department of the Interior","total_obs":5343928.0,"program_type":"assistance_listing"},{"cfda":"66.951","permalink":"/program/66.951","title":"Environmental
   Education Grants Program","popular_name":"EE Grants Program","agency":"Environmental
-  Protection Agency","total_obs":3268150.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
+  Protection Agency","total_obs":3268150.0,"program_type":"assistance_listing"},{"cfda":"84.327","permalink":"/program/84.327","title":"Special
+  Education Educational Technology Media, and Materials for Individuals with Disabilities","popular_name":null,"agency":"Department
+  of Education","total_obs":2684592.0,"program_type":"assistance_listing"},{"cfda":"84.362","permalink":"/program/84.362","title":"Native
+  Hawaiian Education","popular_name":null,"agency":"Department of Education","total_obs":1715139.0,"program_type":"assistance_listing"},{"cfda":"15.234","permalink":"/program/15.234","title":"Secure
   Rural Schools and Community Self-Determination","popular_name":"Secure Rural Schools
   and Community Self-Determination Act","agency":"Department of the Interior","total_obs":1514601.71,"program_type":"assistance_listing"},{"cfda":"84.336","permalink":"/program/84.336","title":"Teacher
   Quality Partnership Grants","popular_name":null,"agency":"Department of Education","total_obs":1426385.05,"program_type":"assistance_listing"},{"cfda":"10.246","permalink":"/program/10.246","title":"Research
@@ -302,7 +303,9 @@ programs: '[{"cfda":"84.027","permalink":"/program/84.027","title":"Special Educ
   Multicultural Scholars & Graduate Fellowships Grant Program (Institution Higher
   Education Challenge)\r\n[Formerly: Challenge or HEC Grants]","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.229","permalink":"/program/84.229","title":"Language
-  Resource Centers","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.279","permalink":"/program/10.279","title":"National
+  Resource Centers","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.950","permalink":"/program/66.950","title":"National
+  Environmental Education Training Program","popular_name":"Teacher Training Program","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.279","permalink":"/program/10.279","title":"National
   Food and Agricultural Sciences Teaching, Extension, and Research Awards","popular_name":"TERA","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.532","permalink":"/program/10.532","title":"School
   Nutrition Training Grants","popular_name":"Supporting the Use of Traditional Indigenous
@@ -311,7 +314,9 @@ programs: '[{"cfda":"84.027","permalink":"/program/84.027","title":"Special Educ
   Program (OSSGP)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.329","permalink":"/program/84.329","title":"Special
   Education Studies and Evaluations","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.771","permalink":"/program/93.771","title":"State
   Grants for the Implementation, Enhancement, and Expansion of Medicaid and CHIP School-Based
-  Services","popular_name":"N/A","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.423","permalink":"/program/84.423","title":"Supporting
+  Services","popular_name":"N/A","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.310","permalink":"/program/84.310","title":"Statewide
+  Family Engagement Centers","popular_name":"Statewide Family Engagement Centers","agency":"Department
+  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.423","permalink":"/program/84.423","title":"Supporting
   Effective Educator Development Program","popular_name":"SEED","agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.103","permalink":"/program/84.103","title":"TRIO
   Staff Training Program","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.374","permalink":"/program/84.374","title":"Teacher
@@ -322,6 +327,6 @@ programs: '[{"cfda":"84.027","permalink":"/program/84.027","title":"Special Educ
 title: Educational Environments
 total_num_agencies: 9
 total_num_applicant_types: 40
-total_num_programs: 41
-total_obs: 21452733864.59
+total_num_programs: 45
+total_obs: 21450917025.59
 ---

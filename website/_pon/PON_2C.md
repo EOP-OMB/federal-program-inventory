@@ -11,20 +11,10 @@ gwo_id: PON.2C
 permalink: /pon/PON_2C
 title: 'Improve Government Services '
 where_used:
-- agency: Department of Labor
-  expenditure_amount: 0.0
-  name: Compensation and Working Conditions
-  permalink: /program/17.005
-  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 1615353.0
   name: Coronavirus Capital Projects Fund
   permalink: /program/21.029
-  program_type: assistance_listing
-- agency: Department of Labor
-  expenditure_amount: 0.0
-  name: Labor Force Statistics
-  permalink: /program/17.002
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 474000000.0

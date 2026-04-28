@@ -12,6 +12,11 @@ gwo_id: PON.3G
 permalink: /pon/PON_3G
 title: Improve Educational Infrastructure
 where_used:
+- agency: Department of Defense
+  expenditure_amount: 259329412.0
+  name: Community Investment
+  permalink: /program/12.600
+  program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
   name: Connecting Minority Communities Pilot Program
@@ -42,6 +47,11 @@ where_used:
   expenditure_amount: 0.0
   name: Impact Aid
   permalink: /program/84.041
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Impact Aid Facilities Maintenance
+  permalink: /program/84.040
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0

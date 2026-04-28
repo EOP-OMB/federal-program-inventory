@@ -6,6 +6,11 @@ gwo_id: GWO.G7
 permalink: /gwo/GWO_G7
 title: Provide Finance Options for Post-Secondary Education
 where_used:
+- agency: Barry Goldwater Scholarship and Excellence in Education Fund
+  expenditure_amount: 3000000.0
+  name: Barry M. Goldwater Scholarship Program
+  permalink: /program/85.200
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 42608145.0
   name: Chafee Education and Training Vouchers Program (ETV)
@@ -46,9 +51,14 @@ where_used:
   name: Foreign Affairs IT (FAIT) Fellowship
   permalink: /program/19.205
   program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Graduate Assistance in Areas of National Need
+  permalink: /program/84.200
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Indian Education Higher Education Grant '
+  name: Indian Education Higher Education Grant
   permalink: /program/15.114
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -62,10 +72,21 @@ where_used:
   name: Morris K. Udall Fellowship Program
   permalink: /program/85.401
   program_type: assistance_listing
+- agency: Morris K. Udall Scholarship and Excellence in National Environmental Policy
+    Foundation
+  expenditure_amount: 487500.0
+  name: Morris K. Udall Scholarship Program
+  permalink: /program/85.400
+  program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 13942605000.0
   name: Post-9/11 Veterans Educational Assistance
   permalink: /program/64.028
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 680000.0
+  name: Post-Vietnam Era Veterans' Educational Assistance
+  permalink: /program/64.120
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
@@ -105,7 +126,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 9500000.0
-  name: 'Veterinary Medicine Loan Repayment Program '
+  name: Veterinary Medicine Loan Repayment Program
   permalink: /program/10.313
   program_type: assistance_listing
 - agency: Department of State

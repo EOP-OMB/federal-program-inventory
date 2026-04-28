@@ -22,9 +22,19 @@ where_used:
   permalink: /program/15.557
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 50000000.0
+  name: Aquatic Ecosystem Restoration Program
+  permalink: /program/15.580
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 10000000.0
   name: Aquatics Resources Management
   permalink: /program/15.244
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 800000.0
+  name: Bay-Delta Restoration Program
+  permalink: /program/15.570
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
@@ -38,7 +48,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5000000.0
-  name: 'Cooperative Watershed Management '
+  name: Cooperative Watershed Management
   permalink: /program/15.554
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -68,7 +78,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 498000.0
-  name: 'Lower Colorado River Multi-Species Conservation '
+  name: Lower Colorado River Multi-Species Conservation
   permalink: /program/15.538
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -78,7 +88,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 4000000.0
-  name: 'National Wild and Scenic Rivers System '
+  name: National Wild and Scenic Rivers System
   permalink: /program/15.962
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -88,7 +98,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 267521.5
-  name: 'San Joaquin River Restoration '
+  name: San Joaquin River Restoration
   permalink: /program/15.555
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -103,7 +113,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 7294048.0
-  name: 'Title II, Colorado River Basin Salinity Control '
+  name: Title II, Colorado River Basin Salinity Control
   permalink: /program/15.509
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -118,13 +128,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3042284.34
-  name: 'Upper Colorado and San Juan River Basins Endangered Fish Recovery '
+  name: Upper Colorado and San Juan River Basins Endangered Fish Recovery
   permalink: /program/15.529
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 9780000.0
   name: Upper Klamath Basin Water Supply Alignment
   permalink: /program/15.566
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Water Conservation Field Services (WCFS)
+  permalink: /program/15.530
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -148,7 +163,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1800000.0
-  name: 'Yakima River Basin Water Enhancement (YRBWE) '
+  name: Yakima River Basin Water Enhancement (YRBWE)
   permalink: /program/15.531
   program_type: assistance_listing
 - agency: Department of the Interior

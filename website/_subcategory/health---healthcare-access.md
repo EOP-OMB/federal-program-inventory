@@ -1,26 +1,25 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":27,"total_obs":1703241569538.2898},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":31,"total_obs":1866707160608.05},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":105320000000.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":14},{"title":"State","total_num_programs":9},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Not-for-Profit
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":14},{"title":"State","total_num_programs":12},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":7},{"title":"Not-for-Profit
   Organization","total_num_programs":6},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":6},{"title":"U.S. Territory (or
-  Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"For-Profit
-  Organization","total_num_programs":5},{"title":"Indian/Native American/Alaska Native
-  Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Local (includes
-  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":2},{"title":"State (includes District of Columbia,
+  the District of Columbia)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":3},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Minority
+  group","total_num_programs":2},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":2},{"title":"State (includes District of Columbia,
   public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
-  Territories and possessions","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  Territories and possessions","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":1},{"title":"Other Special Disctrict
-  Government","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"U.S.
+  Government","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Individual Type","total_num_programs":1}]'
 categories_subcategories:
@@ -239,10 +238,14 @@ programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to St
   Supplementary Medical Insurance","popular_name":"(Medicare Part B)","agency":"Department
   of Health and Human Services","total_obs":568590835738.81,"program_type":"assistance_listing"},{"cfda":"93.773","permalink":"/program/93.773","title":"Medicare
   Hospital Insurance","popular_name":"(Medicare Part A)","agency":"Department of Health
-  and Human Services","total_obs":432516213604.68,"program_type":"assistance_listing"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
+  and Human Services","total_obs":432516213604.68,"program_type":"assistance_listing"},{"cfda":"93.770","permalink":"/program/93.770","title":"Medicare
+  Prescription Drug Coverage","popular_name":"(Medicare Part D)","agency":"Department
+  of Health and Human Services","total_obs":162488810217.76,"program_type":"assistance_listing"},{"cfda":"TC.135","permalink":"/program/TC.135","title":"Refundable
   Premium Assistance Tax Credit","popular_name":null,"agency":"Department of the Treasury","total_obs":104880000000.0,"program_type":"tax_expenditure"},{"cfda":"93.767","permalink":"/program/93.767","title":"Children''s
   Health Insurance Program","popular_name":"(CHIP)","agency":"Department of Health
-  and Human Services","total_obs":21243874394.0,"program_type":"assistance_listing"},{"cfda":"TC.139","permalink":"/program/TC.139","title":"Special
+  and Human Services","total_obs":21243874394.0,"program_type":"assistance_listing"},{"cfda":"93.640","permalink":"/program/93.640","title":"Basic
+  Health Program (Affordable Care Act)","popular_name":"(BHP)","agency":"Department
+  of Health and Human Services","total_obs":976780852.0,"program_type":"assistance_listing"},{"cfda":"TC.139","permalink":"/program/TC.139","title":"Special
   Blue Cross/Blue Shield tax benefits","popular_name":null,"agency":"Department of
   the Treasury","total_obs":440000000.0,"program_type":"tax_expenditure"},{"cfda":"93.268","permalink":"/program/93.268","title":"Immunization
   Cooperative Agreements","popular_name":"Immunizations CoAg and Vaccines for Children
@@ -269,6 +272,9 @@ programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to St
   State Innovation Waivers","popular_name":"Section 1332 Waiver Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.137","permalink":"/program/93.137","title":"Community
   Programs to Improve Minority Health","popular_name":"Minority Health Community Programs","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.130","permalink":"/program/93.130","title":"Cooperative
+  Agreements to States/Territories for the Coordination and Development of Primary
+  Care Offices","popular_name":"State Primary Care Offices (PCO)","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.136","permalink":"/program/TC.136","title":"Credit
   for employee health insurance expenses of small business","popular_name":null,"agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"93.217","permalink":"/program/93.217","title":"Family
@@ -276,7 +282,9 @@ programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to St
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.257","permalink":"/program/93.257","title":"Grants
   for Education, Prevention, and Early Detection of Radiogenic Cancers and Diseases","popular_name":"Radiation
   Exposure Screening and Education Program","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.382","permalink":"/program/93.382","title":"Indian
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.970","permalink":"/program/93.970","title":"Health
+  Professions Recruitment Program for Indians","popular_name":"(Recruitment Program)","agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.382","permalink":"/program/93.382","title":"Indian
   Health Service Community Health Aide Program","popular_name":"Tribal Planning &
   Implementation","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.653","permalink":"/program/93.653","title":"Indian
   Health Service Domestic Violence Prevention Programs","popular_name":null,"agency":"Department
@@ -299,6 +307,6 @@ programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to St
 title: Healthcare Access
 total_num_agencies: 2
 total_num_applicant_types: 35
-total_num_programs: 30
-total_obs: 1808561569538.2898
+total_num_programs: 34
+total_obs: 1972027160608.05
 ---

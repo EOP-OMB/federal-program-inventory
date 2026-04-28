@@ -42,6 +42,7 @@ results:
 authorizations:
   - "23 U.S.C. § 101-134 - Federal-Aid Highway Program"
   - "49 U.S.C. § 5303 - Metropolitan Planning"
+program_type: "assistance_listing"
 ---
 
 <!-- Test page for mobile view rendering -->

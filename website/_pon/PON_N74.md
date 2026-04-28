@@ -54,6 +54,11 @@ where_used:
   permalink: /program/93.073
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 10555702.0
+  name: 'Blood Disorder Program: Prevention, Surveillance, and Research'
+  permalink: /program/93.080
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 7000000.0
   name: 'CDC Undergraduate Public Health Scholars Program (CUPS): A Public Health
     Experience to Expose Undergraduates Interested in Minority Health to Public Health
@@ -64,6 +69,11 @@ where_used:
   expenditure_amount: 945000000.0
   name: Center for Mental Health Services Projects of Regional and National Significance
   permalink: /program/93.532
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 545000000.0
+  name: Center for Substance Abuse Treatment Projects of Regional and National Significance
+  permalink: /program/93.490
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 3656222.0
@@ -82,6 +92,12 @@ where_used:
   permalink: /program/93.495
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 10999986.0
+  name: Cooperative Agreements to States/Territories for the Coordination and Development
+    of Primary Care Offices
+  permalink: /program/93.130
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 12635000.0
   name: Diabetes, Digestive, Kidney Extramural Research - Training, Individual
   permalink: /program/93.KTR
@@ -95,6 +111,16 @@ where_used:
   expenditure_amount: 0.0
   name: Disadvantaged Health Professions Faculty Loan Repayment Program (FLRP)
   permalink: /program/93.923
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4000000.0
+  name: Family Planning Personnel Training
+  permalink: /program/93.260
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Geriatric Academic Career Awards Department of Health and Human Services
+  permalink: /program/93.250
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -128,8 +154,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
+  name: Health Professions Recruitment Program for Indians
+  permalink: /program/93.970
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
   name: Health Professions Scholarship Program
   permalink: /program/93.972
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6197563.0
+  name: Improving Epilepsy Programs, Services, and Outcomes through National Partnerships
+  permalink: /program/93.850
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -142,19 +178,29 @@ where_used:
   permalink: /program/84.263
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 60000000.0
+  name: Medical Student Education
+  permalink: /program/93.680
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 31213344.0
   name: Mental Health Research - Training, Institutional
   permalink: /program/93.24N
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 62000000.0
-  name: 'Mental and Behavioral Health Education and Training Grants '
+  name: Mental and Behavioral Health Education and Training Grants
   permalink: /program/93.732
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 163000.0
   name: NIMHD Research – Training, Institutional (TI)
   permalink: /program/93.1T1
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4950000.0
+  name: National Center for Health Workforce Analysis
+  permalink: /program/93.300
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
@@ -243,7 +289,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
-  name: 'PPHF Geriatric Education Centers '
+  name: PPHF Geriatric Education Centers
   permalink: /program/93.969
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -258,7 +304,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 31579853.0
-  name: 'Prevention of Disease, Disability, and Death by Infectious Diseases  '
+  name: Prevention of Disease, Disability, and Death by Infectious Diseases
   permalink: /program/93.084
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -390,6 +436,11 @@ where_used:
   permalink: /program/93.892
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 175000000.0
+  name: Teaching Health Center Graduate Medical Education Payment
+  permalink: /program/93.530
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: Technical Assistance and Provision for Foreign Hospitals and Health Organizations
   permalink: /program/93.019
@@ -408,6 +459,11 @@ where_used:
   expenditure_amount: 0.0
   name: Training in General, Pediatric, and Public Health Dentistry
   permalink: /program/93.059
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: 'Tribal Self-Governance Program: IHS Compacts/Funding Agreements'
+  permalink: /program/93.210
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 5232404.0

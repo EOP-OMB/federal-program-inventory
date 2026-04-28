@@ -42,6 +42,12 @@ where_used:
   expenditure_amount: 0.0
   name: Ebola Healthcare Preparedness and Response for Select Cities with Enhanced
     Airport Entrance Screenings from Affected Countries in West Africa
+  permalink: /program/93.450
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Ebola Healthcare Preparedness and Response for Select Cities with Enhanced
+    Airport Entrance Screenings from Affected Countries in West Africa
   permalink: /program/93.801
   program_type: assistance_listing
 - agency: Department of Education
@@ -76,6 +82,11 @@ where_used:
   name: Enhance the Ability of Emergency Medical Services (EMS) to transport patients
     with highly infectious diseases (HID)
   permalink: /program/93.458
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 55197980.0
+  name: Environmental Public Health and Emergency Response
+  permalink: /program/93.070
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
@@ -153,5 +164,10 @@ where_used:
   name: Public Health Response, Forecasting, and Analytic Capacities Related to Disease
     Outbreaks, Epidemics, and Pandemics
   permalink: /program/93.823
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Research on Chemical and Biological Defense
+  permalink: /program/12.360
   program_type: assistance_listing
 ---

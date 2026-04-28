@@ -27,12 +27,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 916700.0
-  name: 'Food and Agriculture Service Learning Program '
+  name: Food and Agriculture Service Learning Program
   permalink: /program/10.522
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 290217000.0
-  name: 'Fresh Fruit and Vegetable Program '
+  name: Fresh Fruit and Vegetable Program
   permalink: /program/10.582
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -62,7 +62,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 675000.0
-  name: 'Nutrition and Physical Activity Programs '
+  name: Nutrition and Physical Activity Programs
   permalink: /program/93.649
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -70,6 +70,11 @@ where_used:
   name: 'Pandemic Relief Activities: Local Food Purchase Agreements with States, Tribes,
     and Local Governments'
   permalink: /program/10.182
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Participant Research Innovation Laboratory for Enhancing WIC Services
+  permalink: /program/10.540
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
@@ -114,7 +119,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 133000000.0
-  name: 'WIC Grants To States (WGS) '
+  name: WIC Grants To States (WGS)
   permalink: /program/10.578
   program_type: assistance_listing
 ---

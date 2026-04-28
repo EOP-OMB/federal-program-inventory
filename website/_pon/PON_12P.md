@@ -28,24 +28,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: DNA Backlog Reduction Program
-  permalink: /program/16.741
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Demonstration Program on Trauma-Informed, Victim Centered Training for Law
-    Enforcement
-  permalink: /program/16.058
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
   name: Equitable Sharing Program
   permalink: /program/16.922
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Forensics Training and Technical Assistance Program
-  permalink: /program/16.044
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
@@ -85,27 +69,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
+  name: Matthew Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and
+    Prosecution Program
+  permalink: /program/16.040
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Missing and Unidentified Human Remains (MUHR) Program
+  permalink: /program/16.050
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
   name: National Sexual Assault Kit Initiative
   permalink: /program/16.833
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: OVW Technical Assistance Initiative
-  permalink: /program/16.526
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Paul Coverdell Forensic Sciences Improvement Grant Program
-  permalink: /program/16.742
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Sexual Assault Forensic Examinations
-  permalink: /program/16.053
-  program_type: assistance_listing
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: Strengthening the Medical Examiner - Coroner System
-  permalink: /program/16.037
   program_type: assistance_listing
 ---

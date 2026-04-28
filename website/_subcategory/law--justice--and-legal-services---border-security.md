@@ -1,32 +1,33 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":10,"total_obs":97764508.82000001},{"title":"Department
+agencies: '[{"title":"Department of State","total_num_programs":12,"total_obs":145656623.82},{"title":"Department
   of Labor","total_num_programs":1,"total_obs":23282000.0},{"title":"Department of
-  Energy","total_num_programs":1,"total_obs":3353058.36},{"title":"Department of Homeland
+  Energy","total_num_programs":2,"total_obs":9888729.79},{"title":"Department of Homeland
   Security","total_num_programs":3,"total_obs":0.0}]'
-applicant_types: '[{"title":"Private nonprofit institution/organization (includes
-  institutions of higher education and hospitals)","total_num_programs":9},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":9},{"title":"Non-Government - General","total_num_programs":6},{"title":"Other
-  public institution/organization","total_num_programs":6},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":6},{"title":"Other private
-  institutions/organizations","total_num_programs":4},{"title":"Profit organization","total_num_programs":4},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":4},{"title":"Small
-  business (less than 500 employees)","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Anyone/general
+applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
+  of higher education and hospitals)","total_num_programs":12},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Other
+  public institution/organization","total_num_programs":9},{"title":"Non-Government
+  - General","total_num_programs":8},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":7},{"title":"Other
+  private institutions/organizations","total_num_programs":6},{"title":"Profit organization","total_num_programs":6},{"title":"Small
+  business (less than 500 employees)","total_num_programs":4},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":4},{"title":"Individual/Family","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Anyone/general
   public","total_num_programs":2},{"title":"Federal","total_num_programs":2},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Government
-  - General","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"U.S. Territories and possessions","total_num_programs":2},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"For-Profit
+  - General","total_num_programs":2},{"title":"Local (includes State-designated Indian
+  Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"U.S.
+  Territories and possessions","total_num_programs":2},{"title":"U.S. Territories
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"For-Profit
   Organization","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit
   Organization","total_num_programs":1},{"title":"Foreign Non-Government Not-for-Profit
   Organization","total_num_programs":1},{"title":"Foreign Non-Governmental For-Profit
   Organization","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Nonprofit
-  Organization","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"Sponsored
-  organization","total_num_programs":1}]'
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Non-domestic
+  (non-US) Entity","total_num_programs":1},{"title":"Nonprofit Organization","total_num_programs":1},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Nonprofit
+  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Not-for-Profit
+  Organization","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -237,22 +238,26 @@ fiscal_year: '2025'
 parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/border-security
-programs: '[{"cfda":"19.019","permalink":"/program/19.019","title":"International
+programs: '[{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons Removal
+  and Abatement","popular_name":"(PM/WRA)","agency":"Department of State","total_obs":47892115.0,"program_type":"assistance_listing"},{"cfda":"19.019","permalink":"/program/19.019","title":"International
   Programs to Combat Human Trafficking","popular_name":"International Programs to
   Combat Human Trafficking","agency":"Department of State","total_obs":34000000.0,"program_type":"assistance_listing"},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
   Crime","popular_name":null,"agency":"Department of State","total_obs":33434980.45,"program_type":"assistance_listing"},{"cfda":"19.701","permalink":"/program/19.701","title":"Global
   Counterterrorism Programs","popular_name":"Countering Terrorism and Violent Extremism","agency":"Department
   of State","total_obs":24596698.28,"program_type":"assistance_listing"},{"cfda":"17.273","permalink":"/program/17.273","title":"Temporary
   Labor Certification for Foreign Workers","popular_name":null,"agency":"Department
-  of Labor","total_obs":23282000.0,"program_type":"assistance_listing"},{"cfda":"81.505","permalink":"/program/81.505","title":"Nonproliferation
+  of Labor","total_obs":23282000.0,"program_type":"assistance_listing"},{"cfda":"81.210","permalink":"/program/81.210","title":"Global
+  Material Security","popular_name":null,"agency":"Department of Energy","total_obs":6535671.43,"program_type":"assistance_listing"},{"cfda":"81.505","permalink":"/program/81.505","title":"Nonproliferation
   and Arms Control","popular_name":null,"agency":"Department of Energy","total_obs":3353058.36,"program_type":"assistance_listing"},{"cfda":"19.224","permalink":"/program/19.224","title":"Nonproliferation
-  and Disarmament Fund ","popular_name":"(NDF)","agency":"Department of State","total_obs":3328174.09,"program_type":"assistance_listing"},{"cfda":"19.901","permalink":"/program/19.901","title":"Export
+  and Disarmament Fund","popular_name":"(NDF)","agency":"Department of State","total_obs":3328174.09,"program_type":"assistance_listing"},{"cfda":"19.901","permalink":"/program/19.901","title":"Export
   Control and Related Border Security","popular_name":"Export Control and Related
   Border Security (EXBS) Program","agency":"Department of State","total_obs":2404656.0,"program_type":"assistance_listing"},{"cfda":"97.154","permalink":"/program/97.154","title":"Citizenship
   Integration Training Academy","popular_name":null,"agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
   Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
-  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.706","permalink":"/program/19.706","title":"Partnership
+  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
+  Justice and Accountability Programming","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.706","permalink":"/program/19.706","title":"Partnership
   for Regional East Africa Counterterrorism","popular_name":"Partnership for Regional
   East Africa Counterterrorism (PREACT)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement
   Support Centers (RSCs) for U.S. Refugee Resettlement","popular_name":null,"agency":"Department
@@ -264,7 +269,7 @@ programs: '[{"cfda":"19.019","permalink":"/program/19.019","title":"Internationa
   Partnership (TSCTP)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Border Security
 total_num_agencies: 4
-total_num_applicant_types: 46
-total_num_programs: 15
-total_obs: 124399567.18
+total_num_applicant_types: 49
+total_num_programs: 18
+total_obs: 178827353.61
 ---

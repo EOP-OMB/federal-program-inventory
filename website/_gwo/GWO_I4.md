@@ -72,6 +72,11 @@ where_used:
   name: Electricity Research, Development and Analysis
   permalink: /program/81.122
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Energy Policy and Systems Analysis
+  permalink: /program/81.250
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 12520000000.0
   name: Energy investment credit
@@ -114,6 +119,11 @@ where_used:
   program_type: tax_expenditure
 - agency: Department of Energy
   expenditure_amount: 0.0
+  name: Grid Deployment Office - Other Direct Funding Mechanisms/Identified Transactions
+  permalink: /program/81.300
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
   name: Grid Infrastructure Deployment and Resilience
   permalink: /program/81.254
   program_type: assistance_listing
@@ -153,6 +163,11 @@ where_used:
   permalink: /program/TC.026
   program_type: tax_expenditure
 - agency: Department of Agriculture
+  expenditure_amount: 7910000000.0
+  name: Rural Electrification Loans and Loan Guarantees
+  permalink: /program/10.850
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 11000000.0
   name: Rural Energy Savings Program (RESP)
   permalink: /program/10.751
@@ -166,5 +181,10 @@ where_used:
   expenditure_amount: 0.0
   name: State Heating Oil and Propane Program
   permalink: /program/81.138
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1321200000.0
+  name: The Charging and Fueling Infrastructure (CFI) Grant Program
+  permalink: /program/20.220
   program_type: assistance_listing
 ---

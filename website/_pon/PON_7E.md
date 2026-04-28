@@ -13,4 +13,9 @@ where_used:
   name: Assistance to High Energy Cost Communities
   permalink: /program/10.859
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Grid Deployment Office - Other Direct Funding Mechanisms/Identified Transactions
+  permalink: /program/81.300
+  program_type: assistance_listing
 ---

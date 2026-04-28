@@ -22,14 +22,19 @@ where_used:
   permalink: /program/21.014
   program_type: assistance_listing
 - agency: Department of the Treasury
+  expenditure_amount: 213175000.0
+  name: Community Development Financial Institutions Program
+  permalink: /program/21.020
+  program_type: assistance_listing
+- agency: Department of the Treasury
   expenditure_amount: 5200000.0
   name: Community Development Financial Institutions Program Loan
   permalink: /program/21.035
   program_type: assistance_listing
-- agency: National Credit Union Administration
+- agency: Department of the Treasury
   expenditure_amount: 0.0
-  name: Community Development Revolving Loan Fund Program for Credit Unions
-  permalink: /program/44.002
+  name: Emergency Capital Investment Program
+  permalink: /program/21.030
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 10000000.0

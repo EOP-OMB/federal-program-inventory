@@ -18,10 +18,10 @@ where_used:
   name: Artificial Intelligence and Technology Office Financial Assistance Program
   permalink: /program/81.012
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: CHIPS Research and Development
-  permalink: /program/11.042
+- agency: National Science Foundation
+  expenditure_amount: 331630000.0
+  name: Computer and Information Science and Engineering
+  permalink: /program/47.070
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
@@ -38,15 +38,15 @@ where_used:
   name: Measurement and Engineering Research and Standards
   permalink: /program/11.609
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 4400000.0
-  name: NIST Small Business Innovation Research Program
-  permalink: /program/11.044
-  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 700000.0
   name: National Center for Preservation Technology and Training
   permalink: /program/15.923
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Science, Technology, Business and/or Education Outreach
+  permalink: /program/11.620
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0

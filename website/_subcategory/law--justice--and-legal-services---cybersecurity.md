@@ -1,20 +1,23 @@
 ---
-agencies: '[{"title":"Department of Homeland Security","total_num_programs":7,"total_obs":385783306.0},{"title":"Department
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2712375631.71},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":385783306.0},{"title":"Department
   of Defense","total_num_programs":2,"total_obs":38624466.019999996},{"title":"Department
-  of State","total_num_programs":1,"total_obs":2296003.95},{"title":"Federal Communications
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":3,"total_obs":0.0}]'
-applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":4},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":3},{"title":"Other
-  public institution/organization","total_num_programs":3},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Federally
+  of State","total_num_programs":1,"total_obs":2296003.95},{"title":"Department of
+  Health and Human Services","total_num_programs":3,"total_obs":0.0}]'
+applicant_types: '[{"title":"Other public institution/organization","total_num_programs":4},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":4},{"title":"Nonprofit with 501C3 IRS Status (Other
+  than Institution of Higher Education)","total_num_programs":3},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Profit
-  organization","total_num_programs":2},{"title":"For-Profit Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Not-for-Profit
-  Organization","total_num_programs":1},{"title":"Other private institutions/organizations","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
+  and hospitals","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
+  (less than 500 employees)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
   Territories and possessions","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -226,8 +229,10 @@ fiscal_year: '2025'
 parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/cybersecurity
-programs: '[{"cfda":"97.137","permalink":"/program/97.137","title":"State and Local
-  Cybersecurity Grant Program Tribal Cybersecurity Grant Program","popular_name":null,"agency":"Department
+programs: '[{"cfda":"32.010","permalink":"/program/32.010","title":"Supply Chain Reimbursement
+  Program","popular_name":"Supply Chain Reimbursement Program","agency":"Federal Communications
+  Commission","total_obs":2712375631.71,"program_type":"assistance_listing"},{"cfda":"97.137","permalink":"/program/97.137","title":"State
+  and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program","popular_name":null,"agency":"Department
   of Homeland Security","total_obs":385783306.0,"program_type":"assistance_listing"},{"cfda":"12.905","permalink":"/program/12.905","title":"CyberSecurity
   Core Curriculum","popular_name":"CAE Grant Program","agency":"Department of Defense","total_obs":23998124.56,"program_type":"assistance_listing"},{"cfda":"12.902","permalink":"/program/12.902","title":"Information
   Security Grants","popular_name":"Department of War Cyber Service Academy","agency":"Department
@@ -256,7 +261,7 @@ programs: '[{"cfda":"97.137","permalink":"/program/97.137","title":"State and Lo
   Security","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Cybersecurity
 total_num_agencies: 5
-total_num_applicant_types: 22
-total_num_programs: 14
-total_obs: 426703775.97
+total_num_applicant_types: 25
+total_num_programs: 15
+total_obs: 3139079407.68
 ---

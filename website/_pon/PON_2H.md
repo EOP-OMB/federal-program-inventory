@@ -13,7 +13,7 @@ definition: 'A program whose beneficiaries demonstrated one or more of the follo
 focus_area: Workforce Development
 gwo_id: PON.2H
 permalink: /pon/PON_2H
-title: Improve Workplace Safety protections
+title: Improve Workplace Safety Protections
 where_used:
 - agency: Department of Labor
   expenditure_amount: 0.0
@@ -34,6 +34,11 @@ where_used:
   expenditure_amount: 0.0
   name: Hazardous Waste Worker Health and Safety Training Program – SBIR
   permalink: /program/93.WTS
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Mine Health and Safety Grants
+  permalink: /program/17.600
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0

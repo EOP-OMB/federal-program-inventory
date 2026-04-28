@@ -599,6 +599,7 @@ gwo_options:
 - title: Increase Disaster Resilience and Response Readiness
 - title: Increase Energy Reliability and Stability (Infrastructure)
 - title: Increase Homeownership
+- title: Increase K12 School Enrollment
 - title: Increase Maritime Safety
 - title: Increase Occupational Safety and Health
 - title: Increase Post-Secondary Completion
@@ -764,6 +765,7 @@ pon_options:
 - title: Improve Conservation Partnerships
 - title: Improve Consumer Safety
 - title: Improve Crime Reporting Infrastructure
+- title: Improve Cyber Incident Detection
 - title: Improve Cyber Incident Response
 - title: Improve Cybersecurity Controls and Risk Management
 - title: Improve Data Infrastructure and Accessibility
@@ -851,7 +853,6 @@ pon_options:
 - title: Improve School Safety
 - title: Improve Security of Critical Assets
 - title: Improve Self-Sufficiency of Small-Scale Farms
-- title: Improve Sexual Assault Evidence Collection
 - title: Improve Sexual Assault Response on Tribal Lands
 - title: Improve Social Skills for Individuals with Disabilities
 - title: Improve Social and Emotional Skills for Youth
@@ -869,8 +870,8 @@ pon_options:
 - title: Improve Well-Being, Independence, and Financial Empowerment for Survivors
     of Domestic Violence
 - title: Improve Wildlife Population and Habitat Conservation
-- title: Improve Workplace Health protections
-- title: Improve Workplace Safety protections
+- title: Improve Workplace Health Protections
+- title: Improve Workplace Safety Protections
 - title: Improve or Maintain Quality of Programs
 - title: Increase Access to Affordable Childcare
 - title: Increase Access to Benefits and Services upon Veteran's death
@@ -903,7 +904,6 @@ pon_options:
 - title: Increase Cybersecurity Awareness and Information Sharing
 - title: Increase Early Childhood Language and Literacy Skills
 - title: Increase Early Childhood Learning Skills
-- title: Increase Economic Participation for Older Adults
 - title: 'Increase Emergency Food Supply '
 - title: Increase Employment for Older Adults
 - title: Increase Energy Deployment
@@ -975,6 +975,7 @@ pon_options:
 - title: Protect Aquatic Ecosystems
 - title: Protect Cultural and Historical Sites and Artifacts
 - title: Protect Natural Habitats and Ecosystems
+- title: Provide Professional Development/Training to Artists
 - title: Provide Support for Displaced and Refugee Populations
 - title: Reduce Abuse of Controlled Substances
 - title: Reduce Abuse of Older Adults
@@ -1000,7 +1001,7 @@ pon_options:
 - title: Reduce Stigma Against Individuals with Disabilities
 - title: Reduce Tax Burden
 - title: Reduce Time in Foster System
-- title: Reduce Violent Extremism
+- title: Reduce Violent extremism
 - title: Reduce the Inventory of Underutilized or Surplus Federal Property
 - title: Repair Existing Community Infrastructure
 - title: Restore Aquatic Ecosystems

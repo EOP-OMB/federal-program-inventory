@@ -105,13 +105,13 @@ function createBarChart(data, {
   // Remove bottom border
   svg.append("style").text(`
     .x-axis path.domain {
-      display: none;
+      stroke: #2a2a2b;
     }
     .x-axis .tick line {
-      stroke: #ccc;
+      stroke: #2a2a2b;
     }
     .y-axis path.domain {
-      stroke: #ccc;
+      stroke: #2a2a2b;
     }
   `);
 
@@ -138,7 +138,7 @@ function createBarChart(data, {
 
   // Create axes
   const xAxis = d3.axisBottom(x)
-    .ticks(6)
+    .ticks(4)
     .tickSizeOuter(0)
     .tickFormat(xAxisFormatter);
 

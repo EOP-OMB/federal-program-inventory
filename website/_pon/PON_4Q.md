@@ -12,6 +12,11 @@ permalink: /pon/PON_4Q
 title: Increase Wildfire Prevention Capacity
 where_used:
 - agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: BIA Wildland Urban Interface Community Fire Assistance
+  permalink: /program/15.160
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 17500000.0
   name: BLM Fuels Management and Community Fire Assistance Program Activities
   permalink: /program/15.228
@@ -79,6 +84,11 @@ where_used:
   permalink: /program/10.715
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 80099999.0
+  name: Infrastructure Investment and Jobs Act Community Wildfire Defense Grants
+  permalink: /program/10.720
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 17000000.0
   name: Infrastructure Investment and Jobs Act Prescribed Fire/Fire Recovery
   permalink: /program/10.716
@@ -133,5 +143,10 @@ where_used:
   expenditure_amount: 0.0
   name: Wildfire Crisis Strategy Landscapes
   permalink: /program/10.724
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 45100000.0
+  name: Youth Conservation Corps and Public Land Corps
+  permalink: /program/10.740
   program_type: assistance_listing
 ---

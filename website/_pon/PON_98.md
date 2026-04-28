@@ -32,6 +32,11 @@ where_used:
   permalink: /program/TC.126
   program_type: tax_expenditure
 - agency: Department of Health and Human Services
+  expenditure_amount: 273914607.0
+  name: Guardianship Assistance
+  permalink: /program/93.090
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 600000.0
   name: Kinship Navigators
   permalink: /program/93.605

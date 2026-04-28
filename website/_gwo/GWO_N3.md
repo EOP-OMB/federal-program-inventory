@@ -134,6 +134,11 @@ where_used:
   name: Earned income tax credit
   permalink: /program/TC.163
   program_type: tax_expenditure
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Energy Employees Occupational Illness Compensation
+  permalink: /program/17.310
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 0.0
   name: Exception from passive loss limitation for working interests in oil and gas
@@ -368,6 +373,11 @@ where_used:
   name: Parental personal exemption for students age 19 or over
   permalink: /program/TC.111
   program_type: tax_expenditure
+- agency: Department of Health and Human Services
+  expenditure_amount: 33000000.0
+  name: Payments to Territories – Adults
+  permalink: /program/93.560
+  program_type: assistance_listing
 - agency: Pension Benefit Guaranty Corporation
   expenditure_amount: 0.0
   name: Pension Plan Termination Insurance
@@ -453,6 +463,11 @@ where_used:
   name: Social Security Survivors Insurance
   permalink: /program/96.004
   program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Special Benefits for Certain World War II Veterans
+  permalink: /program/96.020
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 300000000.0
   name: Special Employee Stock Ownership Plan (ESOP) rules
@@ -497,5 +512,10 @@ where_used:
   expenditure_amount: 209199390000.0
   name: Veterans Compensation for Service-Connected Disability
   permalink: /program/64.109
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 12337451302.0
+  name: Veterans Dependency and Indemnity Compensation for Service-Connected Death
+  permalink: /program/64.110
   program_type: assistance_listing
 ---

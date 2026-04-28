@@ -8,6 +8,11 @@ permalink: /gwo/GWO_H5
 title: Strengthen Service and Civic Engagement Workforce Pathways
 where_used:
 - agency: Corporation for National and Community Service
+  expenditure_amount: 0.0
+  name: AmeriCorps CNCS Disaster Response Cooperative Agreement 94.020
+  permalink: /program/94.020
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
   expenditure_amount: 9999965.0
   name: AmeriCorps Commission Investment Fund 94.008
   permalink: /program/94.008
@@ -57,6 +62,11 @@ where_used:
   name: Children, Youth and Families At-Risk
   permalink: /program/10.521
   program_type: assistance_listing
+- agency: U.S. Election Assistance Commission
+  expenditure_amount: 0.0
+  name: Help America Vote College Program
+  permalink: /program/90.400
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 142894411.0
   name: John H. Chafee Foster Care Program for Successful Transition to Adulthood
@@ -74,7 +84,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Youth Conservation '
+  name: Youth Conservation
   permalink: /program/15.546
   program_type: assistance_listing
 ---

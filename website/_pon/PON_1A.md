@@ -17,6 +17,11 @@ where_used:
   permalink: /program/10.992
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 4376672.0
+  name: Assistive Technology Program for Farmers with Disabilities
+  permalink: /program/10.280
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Bison Production and Marketing Grant Program
   permalink: /program/10.192
@@ -77,6 +82,16 @@ where_used:
   name: Reimbursement Transportation Cost Payment Program for Geographically Disadvantaged
     Farmers and Ranchers
   permalink: /program/10.098
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Resilient Food System Infrastructure Program
+  permalink: /program/10.190
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 300000.0
+  name: Rural Development Cooperative Agreement Program
+  permalink: /program/10.890
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 3000000.0

@@ -35,6 +35,11 @@ where_used:
   name: BUILD TO SCALE
   permalink: /program/11.024
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Basic, Applied, and Advanced Research in Science and Engineering
+  permalink: /program/12.630
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 13008404.0
   name: Bioengineering, Biomedical Imaging, and Technology Development - SBIR/STTR
@@ -49,6 +54,11 @@ where_used:
   expenditure_amount: 0.0
   name: Bioproduct Pilot Program
   permalink: /program/10.236
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 8000000.0
+  name: Bridge and Other Transportation Infrastructure Research Program
+  permalink: /program/20.950
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
@@ -65,6 +75,11 @@ where_used:
   expenditure_amount: 0.0
   name: Commercial Technologies for Maintenance Activities Program
   permalink: /program/12.225
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 4670189.0
+  name: Complementary and Integrative Health - SBIR/STTR
+  permalink: /program/93.480
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 69545000.0
@@ -173,6 +188,12 @@ where_used:
   name: Nursing Research - SBIR-STTR
   permalink: /program/93.NR4
   program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Office of Technology Transitions (OTT)-Technology Deployment, Demonstration
+    and Commercialization
+  permalink: /program/81.010
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
   name: Partnerships for Climate-Smart Commodities
@@ -180,7 +201,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 2500000.0
-  name: 'Pipeline Safety Research Competitive Academic Agreement Program (CAAP) '
+  name: Pipeline Safety Research Competitive Academic Agreement Program (CAAP)
   permalink: /program/20.724
   program_type: assistance_listing
 - agency: Department of Commerce

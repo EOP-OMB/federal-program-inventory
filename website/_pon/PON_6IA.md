@@ -9,6 +9,11 @@ gwo_id: PON.6IA
 permalink: /pon/PON_6IA
 title: Increase International Entrepreneurship
 where_used:
+- agency: Department of State
+  expenditure_amount: 11265000.0
+  name: Academic Exchange Programs - Hubert H. Humphrey Fellowship Program
+  permalink: /program/19.010
+  program_type: assistance_listing
 - agency: Millennium Challenge Corporation
   expenditure_amount: 2000000.0
   name: MCC Foreign Assistance for Overseas Programs

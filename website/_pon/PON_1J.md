@@ -52,6 +52,11 @@ where_used:
   name: Diesel Emission Reduction Act (DERA) National Grants
   permalink: /program/66.039
   program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Diesel Emissions Reduction Act (DERA) State Grants
+  permalink: /program/66.040
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Energy Community Revitalization Program (ECRP)
@@ -61,6 +66,11 @@ where_used:
   expenditure_amount: 0.0
   name: Federal Loan Guarantees for Innovative Energy Technologies
   permalink: /program/81.126
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: 'Greenhouse Gas Reduction Fund: Clean Communities Investment Accelerator'
+  permalink: /program/66.960
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0

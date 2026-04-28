@@ -9,7 +9,7 @@ title: Increase Sustainable Agriculture
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 999022000.0
-  name: ' Agricultural Conservation Easement Program '
+  name: Agricultural Conservation Easement Program
   permalink: /program/10.931
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -44,12 +44,12 @@ where_used:
   program_type: assistance_listing
 - agency: Agency for International Development
   expenditure_amount: 0.0
-  name: 'John Ogonowski Farmer-to-Farmer Program '
+  name: John Ogonowski Farmer-to-Farmer Program
   permalink: /program/98.009
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'New Mexico Rio Grande Basin Pueblos Irrigation Infrastructure '
+  name: New Mexico Rio Grande Basin Pueblos Irrigation Infrastructure
   permalink: /program/15.559
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -71,6 +71,11 @@ where_used:
   expenditure_amount: 5577852.0
   name: Plant Pest and Disease Management (PPDM)
   permalink: /program/10.031
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Risk Management Education Partnerships
+  permalink: /program/10.460
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0

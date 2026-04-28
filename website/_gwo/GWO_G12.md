@@ -22,6 +22,17 @@ where_used:
   name: Outdoor Schools in National Parks
   permalink: /program/15.012
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 50000000.0
+  name: STARBASE Program
+  permalink: /program/12.020
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 5872588.0
+  name: Science, Technology, Engineering & Mathematics (STEM) Education, Outreach
+    and Workforce Program
+  permalink: /program/12.330
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: Scientific Leadership Awards

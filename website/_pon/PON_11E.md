@@ -25,4 +25,9 @@ where_used:
   name: Renewable Energy Research and Development
   permalink: /program/81.087
   program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1321200000.0
+  name: The Charging and Fueling Infrastructure (CFI) Grant Program
+  permalink: /program/20.220
+  program_type: assistance_listing
 ---

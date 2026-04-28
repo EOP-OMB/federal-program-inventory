@@ -22,6 +22,11 @@ where_used:
   permalink: /program/93.763
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Alzheimer’s Disease Program Initiative (ADPI)
+  permalink: /program/93.470
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 10000000.0
   name: Lifespan Respite Care Program
   permalink: /program/93.072

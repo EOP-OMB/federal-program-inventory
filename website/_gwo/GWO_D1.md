@@ -32,6 +32,11 @@ where_used:
   name: Hazardous Waste Worker Health and Safety Training Program – SBIR
   permalink: /program/93.WTS
   program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 0.0
+  name: Mine Health and Safety Grants
+  permalink: /program/17.600
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0
   name: NIEHS Hazardous Waste Worker Health and Safety Training
@@ -46,6 +51,11 @@ where_used:
   expenditure_amount: 0.0
   name: Occupational Safety and Health Susan Harwood Training Grants
   permalink: /program/17.502
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 700000.0
+  name: 'PRIA 5: Farm Worker and Health Care Provider Training and Education Grants'
+  permalink: /program/66.720
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0

@@ -16,6 +16,16 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
+  name: American History and Civics Education
+  permalink: /program/84.422
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Indian Education Grants to Local Educational Agencies
+  permalink: /program/84.060
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
   name: Indian Education National Activities (State Tribal Education Partnership (STEP)
     and Native American Language (NAL)
   permalink: /program/84.415

@@ -331,7 +331,6 @@
         const { divisor, suffix } = getFormattingInfo(groomedCategoriesChartData);
 
         createBarChart(groomedCategoriesChartData, {
-          xLabel: "Expenditures in US Dollars",
           yLabel: "Categories",
           valueFormatter: (value) => formatObligations(value),
           xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
@@ -343,9 +342,9 @@
         });
       }
 
-      document
-        .querySelector(".usa-button--outline")
-        .addEventListener("click", downloadTableData);
+        document
+    .getElementById("category-chart-download")
+    .addEventListener("click", downloadTableData);
 
         document
     .getElementById("obligations-by-type-download")

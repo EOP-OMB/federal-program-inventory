@@ -35,6 +35,11 @@ where_used:
   permalink: /program/93.485
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 151722158.0
+  name: Intramural Research Training Award
+  permalink: /program/93.140
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 22501645.0
   name: National Institute of Allergy and Infectious Diseases- Training Individual
   permalink: /program/93.8TR
@@ -62,7 +67,17 @@ where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 95000000.0
   name: National Institutes of Health Extramural Loan Repayment Program
+  permalink: /program/93.280
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 95000000.0
+  name: National Institutes of Health Extramural Loan Repayment Program
   permalink: /program/93.ELR
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6000000.0
+  name: National Institutes of Health Intramural Loan Repayment Program
+  permalink: /program/93.220
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 12368321.0
@@ -79,5 +94,10 @@ where_used:
   name: Transportation Education and Training Development  and Deployment Program
     (TETDDP) 504(f)
   permalink: /program/20.297
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 400000000.0
+  name: Uniformed Services University Medical Research Projects
+  permalink: /program/12.750
   program_type: assistance_listing
 ---

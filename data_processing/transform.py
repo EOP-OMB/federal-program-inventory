@@ -932,7 +932,7 @@ def load_sam_programs():
                     and len(d["alternativeNames"][0]) > 0:
                 popular_name = d["alternativeNames"][0]
             cur.execute(PROGRAM_INSERT_SQL, [d["programNumber"],
-                        d["organizationId"], d["title"], popular_name,
+                        d["organizationId"], d["title"].strip() if d.get("title") else d.get("title"), popular_name,
                         d["objective"],
                         "https://sam.gov/fal/" + listing["id"] + "/view",
                         usaspending_hashes.get(d["programNumber"], ""),
@@ -1349,7 +1349,7 @@ def load_acquisitions_and_services():
         cur.execute(PROGRAM_INSERT_SQL, [
             row["Program ID"],
             row["Agency ID"],
-            row["Program Name"],
+            row["Program Name"].strip() if row.get("Program Name") else row.get("Program Name"),
             row["Popular Name"],
             row["Program Description"],
             None,

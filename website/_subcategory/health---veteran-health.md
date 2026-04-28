@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":11,"total_obs":2004168534.4499998}]'
-applicant_types: '[{"title":"Other","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"For-Profit
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":13,"total_obs":2118346701.6599998}]'
+applicant_types: '[{"title":"Other","total_num_programs":6},{"title":"State","total_num_programs":6},{"title":"For-Profit
   Organization","total_num_programs":2},{"title":"Nonprofit Organization","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"County Government (inclusive of
   boroughs in Alaska, parishes and other governmental entities with geographic regional
   control and authority)","total_num_programs":1},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Interstate
+  American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Interstate
   Organization","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
@@ -223,7 +224,9 @@ parent_title: Health
 permalink: /category/health/veteran-health
 programs: '[{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","popular_name":"Civilian
   Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)","agency":"Department
-  of Veterans Affairs","total_obs":1930702459.0,"program_type":"assistance_listing"},{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans
+  of Veterans Affairs","total_obs":1930702459.0,"program_type":"assistance_listing"},{"cfda":"64.100","permalink":"/program/64.100","title":"Automobiles
+  and Adaptive Equipment for Certain Disabled Veterans and Members of the Armed Forces","popular_name":null,"agency":"Department
+  of Veterans Affairs","total_obs":108765479.0,"program_type":"assistance_listing"},{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans
   State Nursing Home Care","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":32008212.83,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
@@ -233,7 +236,9 @@ programs: '[{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","po
   Veterans and Disabled Members of the Armed Forces","agency":"Department of Veterans
   Affairs","total_obs":14982295.12,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
   Transportation Program","popular_name":"Veterans Transportation Program/Grants for
-  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5999308.63,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
+  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5999308.63,"program_type":"assistance_listing"},{"cfda":"64.005","permalink":"/program/64.005","title":"Grants
+  to States for Construction of State Home Facilities","popular_name":"Grants to States
+  for Construction of State Home Facilities","agency":"Department of Veterans Affairs","total_obs":5412688.21,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
   to States for Programs to Promote the Hiring and Retention of Nurses at State Veterans
   Homes","popular_name":"SVH RN Grant; Nurse Retention Grant","agency":"Department
   of Veterans Affairs","total_obs":2816649.35,"program_type":"assistance_listing"},{"cfda":"64.037","permalink":"/program/64.037","title":"VA
@@ -251,7 +256,7 @@ programs: '[{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","po
   of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Veteran Health
 total_num_agencies: 1
-total_num_applicant_types: 16
-total_num_programs: 11
-total_obs: 2004168534.4499998
+total_num_applicant_types: 17
+total_num_programs: 13
+total_obs: 2118346701.6599998
 ---

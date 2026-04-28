@@ -20,6 +20,11 @@ where_used:
   name: Indian Child and Family Education
   permalink: /program/15.043
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 536235000.0
+  name: Maternal, Infant and Early Childhood Home Visiting Grant
+  permalink: /program/93.870
+  program_type: assistance_listing
 - agency: Department of Education
   expenditure_amount: 0.0
   name: Special Education Parent Information Centers

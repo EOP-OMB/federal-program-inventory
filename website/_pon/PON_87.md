@@ -10,12 +10,6 @@ gwo_id: PON.87
 permalink: /pon/PON_87
 title: Improve Knowledge of Domestic Violence and Healthy Relationship Skills
 where_used:
-- agency: Department of Justice
-  expenditure_amount: 0.0
-  name: 'Consolidated And Technical Assistance Grant Program to Address Children and
-    Youth Experiencing Domestic and Sexual Violence and Engage Men and Boys as Allies '
-  permalink: /program/16.888
-  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 62625026.0
   name: Family Violence Prevention and Services/Discretionary
@@ -23,8 +17,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 172200000.0
-  name: 'Family Violence Prevention and Services/Domestic Violence Shelter and Supportive
-    Services '
+  name: Family Violence Prevention and Services/Domestic Violence Shelter and Supportive
+    Services
   permalink: /program/93.671
   program_type: assistance_listing
 - agency: Department of Justice

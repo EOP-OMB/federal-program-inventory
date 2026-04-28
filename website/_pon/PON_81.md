@@ -41,6 +41,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
+  name: Los Alamos National Laboratory - Fire Protection
+  permalink: /program/81.140
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
   name: Nuclear Counterterrorism and Incident Response Program
   permalink: /program/81.884
   program_type: assistance_listing

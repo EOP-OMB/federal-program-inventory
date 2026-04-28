@@ -23,6 +23,12 @@ where_used:
   permalink: /program/20.265
   program_type: assistance_listing
 - agency: Environmental Protection Agency
+  expenditure_amount: 3548782.0
+  name: Centers of Excellence for Stormwater Control Infrastructure Technologies Grant
+    Program
+  permalink: /program/66.490
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
   expenditure_amount: 0.0
   name: Clean Ports Program
   permalink: /program/66.051
@@ -41,6 +47,11 @@ where_used:
   expenditure_amount: 0.0
   name: Climate Pollution Reduction Grants
   permalink: /program/66.046
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 3000000.0
+  name: Composting and Food Waste Reduction Cooperative Agreement Program
+  permalink: /program/10.930
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 2746000000.0
@@ -61,6 +72,11 @@ where_used:
   expenditure_amount: 10270000.0
   name: Diesel Emission Reduction Act (DERA) National Grants
   permalink: /program/66.039
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Diesel Emissions Reduction Act (DERA) State Grants
+  permalink: /program/66.040
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
@@ -100,6 +116,11 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
+  name: 'Greenhouse Gas Reduction Fund: Clean Communities Investment Accelerator'
+  permalink: /program/66.960
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
   name: 'Greenhouse Gas Reduction Fund: National Clean Investment Fund'
   permalink: /program/66.957
   program_type: assistance_listing
@@ -118,6 +139,16 @@ where_used:
   name: Internships, Training and Workshops for the Office of Air and Radiation
   permalink: /program/66.037
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 100000.0
+  name: Lake Tahoe Erosion Control Grant Program
+  permalink: /program/10.690
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 20423485.0
+  name: Nonpoint Source Implementation Grants
+  permalink: /program/66.460
+  program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
   name: Ozone Transport Commission
@@ -130,8 +161,8 @@ where_used:
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 3845000.0
-  name: 'Research, Development, Monitoring, Public Education, Outreach, Training,
-    Demonstrations, and Studies '
+  name: Research, Development, Monitoring, Public Education, Outreach, Training, Demonstrations,
+    and Studies
   permalink: /program/66.716
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -203,5 +234,10 @@ where_used:
   expenditure_amount: 25848317.0
   name: Water Pollution Control State, Interstate, and Tribal Program Support
   permalink: /program/66.419
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Weatherization Assistance for Low-Income Persons
+  permalink: /program/81.042
   program_type: assistance_listing
 ---

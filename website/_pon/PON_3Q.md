@@ -52,7 +52,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5000000.0
-  name: 'Cooperative Watershed Management '
+  name: Cooperative Watershed Management
   permalink: /program/15.554
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -77,7 +77,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 10971331.0
-  name: 'Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology '
+  name: Gulf Coast Ecosystem Restoration Science, Observation, Monitoring, and Technology
   permalink: /program/11.451
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -87,7 +87,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 11000000.0
-  name: 'Multistate Conservation Grant '
+  name: Multistate Conservation Grant
   permalink: /program/15.628
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -102,7 +102,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2500000.0
-  name: 'National Geospatial Program: Building The National Map '
+  name: 'National Geospatial Program: Building The National Map'
   permalink: /program/15.817
   program_type: assistance_listing
 - agency: Department of Commerce

@@ -39,6 +39,12 @@ where_used:
   permalink: /program/12.614
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 1000000.0
+  name: Community Economic Adjustment Assistance for Compatible Use and Joint Land
+    Use Studies
+  permalink: /program/12.610
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 3000000.0
   name: Community Economic Adjustment Assistance for Establishment or Expansion of
     a Military Installation
@@ -49,6 +55,11 @@ where_used:
   name: Community Economic Adjustment Assistance for Responding to Threats to the
     Resilience of a Military Installation
   permalink: /program/12.003
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 259329412.0
+  name: Community Investment
+  permalink: /program/12.600
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 0.0
@@ -111,6 +122,11 @@ where_used:
   name: Maritime Security Fleet Program or Ship Operations Cooperation Program
   permalink: /program/20.813
   program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 162800000.0
+  name: Military Construction, National Guard
+  permalink: /program/12.400
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2980625.0
   name: Military Families Learning Network
@@ -132,6 +148,11 @@ where_used:
   permalink: /program/12.401
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: National Guard Morale, Welfare, and Recreation Program
+  permalink: /program/12.030
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 2330000.0
   name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
@@ -142,6 +163,11 @@ where_used:
   permalink: /program/12.551
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 16365000.0
+  name: Past Conflict Accounting
+  permalink: /program/12.740
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 59098543.0
   name: Procurement Technical Assistance For Business Firms
   permalink: /program/12.002
@@ -150,6 +176,11 @@ where_used:
   expenditure_amount: 0.0
   name: Tanker Security Program
   permalink: /program/20.825
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 13300000.0
+  name: The Language Flagship Grants to Institutions of Higher Education
+  permalink: /program/12.550
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 5160000.0

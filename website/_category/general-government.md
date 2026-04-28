@@ -1,8 +1,8 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":1215613829754.0},{"title":"General
   Services Administration","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":10,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":10},{"title":"Local (includes
+  of the Interior","total_num_programs":12,"total_obs":0.0}]'
+applicant_types: '[{"title":"State","total_num_programs":12},{"title":"Local (includes
   State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Other
   public institution/organization","total_num_programs":2},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Public
@@ -222,12 +222,12 @@ categories_subcategories:
 fiscal_year: '2025'
 permalink: /category/general-government
 sub_cats: '[{"title":"Debt Service","permalink":"/category/general-government/debt-service","total_num_programs":1,"total_obs":1215613829754.0},{"title":"Fees
-  and Receipts","permalink":"/category/general-government/fees-and-receipts","total_num_programs":10,"total_obs":0.0},{"title":"General
+  and Receipts","permalink":"/category/general-government/fees-and-receipts","total_num_programs":12,"total_obs":0.0},{"title":"General
   Property and Records Management","permalink":"/category/general-government/general-property-and-records-management","total_num_programs":3,"total_obs":0.0}]'
 title: General Government
 total_num_agencies: 3
 total_num_applicant_types: 19
-total_num_programs: 14
+total_num_programs: 16
 total_num_sub_cats: 3
 total_obs: 1215613829754.0
 ---

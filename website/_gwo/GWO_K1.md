@@ -35,6 +35,11 @@ where_used:
   permalink: /program/10.645
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Food Supply Chain Guaranteed Loan Program
+  permalink: /program/10.380
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 7680000.0
   name: Food and Agriculture Defense Initiative (FADI)
   permalink: /program/10.304
@@ -73,6 +78,16 @@ where_used:
   expenditure_amount: 0.0
   name: Regional Food Business Centers
   permalink: /program/10.186
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Resilient Food System Infrastructure Program
+  permalink: /program/10.190
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 300000.0
+  name: Rural Development Cooperative Agreement Program
+  permalink: /program/10.890
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0

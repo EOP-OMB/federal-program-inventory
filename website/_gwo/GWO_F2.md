@@ -24,6 +24,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
+  name: Chemical Stockpile Emergency Preparedness Program
+  permalink: /program/97.040
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
   name: Community Assistance Program State Support Services Element (CAP-SSSE)
   permalink: /program/97.023
   program_type: assistance_listing
@@ -42,10 +47,20 @@ where_used:
   name: Cooperating Technical Partners
   permalink: /program/97.045
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Cooperative Extension Service
+  permalink: /program/10.500
+  program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 0.0
   name: Corps Water Infrastructure Financing Program (CWIFP)
   permalink: /program/12.026
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 21747067000.0
+  name: Crop Insurance
+  permalink: /program/10.450
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
@@ -137,6 +152,11 @@ where_used:
   name: Hurricane Sandy Community Development Block Grant Disaster Recovery Grants
     (CDBG-DR)
   permalink: /program/14.269
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Los Alamos National Laboratory - Fire Protection
+  permalink: /program/81.140
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -239,6 +259,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
+  name: Rural Emergency Medical Communications Demonstration Project
+  permalink: /program/97.120
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
   name: Safeguarding Tomorrow Revolving Loan Fund Program
   permalink: /program/97.139
   program_type: assistance_listing
@@ -269,8 +294,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 34291.0
-  name: 'Tribal Climate Resilience '
+  name: Tribal Climate Resilience
   permalink: /program/15.156
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Tribal Homeland Security Grant Program
+  permalink: /program/97.150
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1000000.0

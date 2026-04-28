@@ -7,11 +7,6 @@ gwo_id: GWO.M3
 permalink: /gwo/GWO_M3
 title: Increase Homeownership
 where_used:
-- agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
-  name: Adjustable Rate Mortgages
-  permalink: /program/14.175
-  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 1220000000.0
   name: Exclusion of interest on owner-occupied mortgage subsidy bonds
@@ -29,8 +24,13 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 9000000.0
-  name: 'Loan Guarantees for Native Hawaiian Housing '
+  name: Loan Guarantees for Native Hawaiian Housing
   permalink: /program/14.874
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Manufactured Home Loan Insurance (Title I)
+  permalink: /program/14.110
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
@@ -67,6 +67,16 @@ where_used:
   name: Public and Indian Housing Indian Loan Guarantee Program
   permalink: /program/14.865
   program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: Real Estate Programs Indian Lands
+  permalink: /program/15.040
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 25000000.0
+  name: Rural Self-Help Housing Technical Assistance
+  permalink: /program/10.420
+  program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 28010400.0
   name: Self-Help Homeownership Opportunity Program
@@ -76,6 +86,11 @@ where_used:
   expenditure_amount: 0.0
   name: Single Family Property Disposition
   permalink: /program/14.311
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 26000000000.0
+  name: Very Low to Moderate Income Housing Loans and Loan Guarantees
+  permalink: /program/10.410
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 164041802.0

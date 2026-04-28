@@ -17,10 +17,25 @@ where_used:
   name: Child Support Services Research
   permalink: /program/93.564
   program_type: assistance_listing
+- agency: National Credit Union Administration
+  expenditure_amount: 0.0
+  name: Community Development Revolving Loan Fund Program for Credit Unions
+  permalink: /program/44.002
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 105849075.71
+  name: Healthy Marriage Promotion and Responsible Fatherhood Grants
+  permalink: /program/93.086
+  program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 0.0
   name: Housing Counseling Assistance Program
   permalink: /program/14.169
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Resident Opportunity and Supportive Services - Service Coordinators
+  permalink: /program/14.870
   program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 12000000.0

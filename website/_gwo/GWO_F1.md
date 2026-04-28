@@ -17,6 +17,11 @@ where_used:
   name: Child Care Disaster Relief
   permalink: /program/93.489
   program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Community Disaster Loans
+  permalink: /program/97.030
+  program_type: assistance_listing
 - agency: Department of the Treasury
   expenditure_amount: 1615353.0
   name: Coronavirus Capital Projects Fund
@@ -57,6 +62,11 @@ where_used:
   name: Disaster employee retention credit
   permalink: /program/TC.102
   program_type: tax_expenditure
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Economic Injury Disaster Loan Emergency Advance
+  permalink: /program/59.072
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2205926.0
   name: Emergency Grain Storage Facility Assistance Program
@@ -104,9 +114,36 @@ where_used:
   name: Local Assistance and Tribal Consistency Fund
   permalink: /program/21.032
   program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Paycheck Protection Loan Program (PPP)
+  permalink: /program/59.073
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Presidential Declared Disaster Assistance to Individuals and Households -
+    Other Needs
+  permalink: /program/97.050
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 225511000.0
   name: Public Transportation Emergency Relief Program
   permalink: /program/20.527
+  program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Restaurant Revitalization Fund
+  permalink: /program/59.078
+  program_type: assistance_listing
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: Shuttered Venue Operators Grant Program
+  permalink: /program/59.075
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 150000.0
+  name: South Carolina Support for Foreign Research Reactor Spent Nuclear Fuel (FRRSNF)
+    Shipments
+  permalink: /program/81.180
   program_type: assistance_listing
 ---

@@ -51,6 +51,12 @@ where_used:
   name: Medical Reserve Corps Small Grant Program
   permalink: /program/93.008
   program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Presidential Declared Disaster Assistance to Individuals and Households -
+    Other Needs
+  permalink: /program/97.050
+  program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 36000000.0
   name: Response to Water Emergencies for Systems that Ensure Clean Water (American

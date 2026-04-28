@@ -37,4 +37,9 @@ where_used:
   name: Every Student Succeeds Act/Preschool Development Grants
   permalink: /program/93.434
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 12001716254.0
+  name: Head Start
+  permalink: /program/93.600
+  program_type: assistance_listing
 ---

@@ -1,48 +1,50 @@
 ---
-agencies: '[{"title":"Environmental Protection Agency","total_num_programs":66,"total_obs":16374686388.970001},{"title":"Department
-  of the Interior","total_num_programs":26,"total_obs":1649485126.17},{"title":"Department
-  of Commerce","total_num_programs":7,"total_obs":146577087.0},{"title":"Department
-  of Agriculture","total_num_programs":8,"total_obs":114290071.3},{"title":"Department
-  of Transportation","total_num_programs":11,"total_obs":40192042.0},{"title":"Department
-  of Energy","total_num_programs":10,"total_obs":39494886.4},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":1189944.0},{"title":"Department
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":75,"total_obs":16599710888.970001},{"title":"Department
+  of the Interior","total_num_programs":27,"total_obs":1653618744.71},{"title":"Department
+  of Energy","total_num_programs":11,"total_obs":394494886.4},{"title":"Department
+  of Commerce","total_num_programs":8,"total_obs":146651431.0},{"title":"Department
+  of Agriculture","total_num_programs":10,"total_obs":116445340.3},{"title":"Department
+  of Transportation","total_num_programs":14,"total_obs":51673637.0},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":3512854.0},{"title":"Department
   of Defense","total_num_programs":2,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":61},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":56},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":48},{"title":"State","total_num_programs":42},{"title":"Nonprofit
-  Organization","total_num_programs":36},{"title":"Local","total_num_programs":20},{"title":"Other","total_num_programs":19},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":18},{"title":"Public
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":69},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":62},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":55},{"title":"State","total_num_programs":47},{"title":"Nonprofit
+  Organization","total_num_programs":42},{"title":"Other","total_num_programs":24},{"title":"Local","total_num_programs":20},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":20},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":17},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":16},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":16},{"title":"County
+  hospitals)","total_num_programs":19},{"title":"Federally Recognized Indian Tribal
+  Governments","total_num_programs":17},{"title":"Municipality or Township government
+  (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":17},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":15},{"title":"Municipality
-  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":15},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Interstate
-  Organization","total_num_programs":13},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":13},{"title":"Tribal","total_num_programs":10},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":9},{"title":"Native
+  with geographic regional control and authority)","total_num_programs":16},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":16},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"Interstate
+  Organization","total_num_programs":14},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":14},{"title":"Tribal","total_num_programs":11},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":10},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":9},{"title":"Not-for-Profit Organization","total_num_programs":8},{"title":"Other
-  public institution/organization","total_num_programs":8},{"title":"Profit organization","total_num_programs":8},{"title":"Unrestricted
-  by Entity Type","total_num_programs":8},{"title":"For-Profit Organization","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":4},{"title":"Territorial","total_num_programs":4},{"title":"U.S.
-  Territories and possessions","total_num_programs":4},{"title":"Interstate","total_num_programs":3},{"title":"Other
-  private institutions/organizations","total_num_programs":3},{"title":"U.S. Federal
-  Government","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Other
-  Special Disctrict Government","total_num_programs":2},{"title":"Small business (less
-  than 500 employees)","total_num_programs":2},{"title":"Special District Government","total_num_programs":2},{"title":"City
-  or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Government
+  associations)","total_num_programs":9},{"title":"Profit organization","total_num_programs":9},{"title":"Not-for-Profit
+  Organization","total_num_programs":8},{"title":"Other public institution/organization","total_num_programs":8},{"title":"Unrestricted
+  by Entity Type","total_num_programs":8},{"title":"For-Profit Organization","total_num_programs":7},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":5},{"title":"U.S. Territories
+  and possessions","total_num_programs":5},{"title":"Territorial","total_num_programs":4},{"title":"Interstate","total_num_programs":3},{"title":"Other
+  Special Disctrict Government","total_num_programs":3},{"title":"Other private institutions/organizations","total_num_programs":3},{"title":"U.S.
+  Federal Government","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
+  business (less than 500 employees)","total_num_programs":2},{"title":"Special District
+  Government","total_num_programs":2},{"title":"City or Township Government","total_num_programs":1},{"title":"County
+  Government","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Indian/Native American Tribally Designated
   Organization","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Nonprofit with 501C3 IRS Status (Other
   than Institution of Higher Education)","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Port
-  Authority","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1}]'
+  Authority","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"School
+  District","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Small
+  Business Person","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"Tribally
+  Designated Housing Authority","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -268,12 +270,18 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Community Revitalization Program (ECRP)","popular_name":"Orphaned Well Site Plugging
   and Remediation, and Restoration","agency":"Department of the Interior","total_obs":460626641.33,"program_type":"assistance_listing"},{"cfda":"66.615","permalink":"/program/66.615","title":"Environmental
   Justice Thriving Communities Grantmaking Program (EJ TCGM)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":458082753.0,"program_type":"assistance_listing"},{"cfda":"66.959","permalink":"/program/66.959","title":"Greenhouse
+  Protection Agency","total_obs":458082753.0,"program_type":"assistance_listing"},{"cfda":"81.042","permalink":"/program/81.042","title":"Weatherization
+  Assistance for Low-Income Persons","popular_name":"WAP","agency":"Department of
+  Energy","total_obs":355000000.0,"program_type":"assistance_listing"},{"cfda":"66.959","permalink":"/program/66.959","title":"Greenhouse
   Gas Reduction Fund: Solar for All","popular_name":null,"agency":"Environmental Protection
   Agency","total_obs":249800000.0,"program_type":"assistance_listing"},{"cfda":"66.818","permalink":"/program/66.818","title":"Brownfields
   Multipurpose, Assessment, Revolving Loan Fund, and Cleanup Cooperative Agreements","popular_name":"Brownfields
   MARC Grants","agency":"Environmental Protection Agency","total_obs":241351797.0,"program_type":"assistance_listing"},{"cfda":"66.605","permalink":"/program/66.605","title":"Performance
-  Partnership Grants","popular_name":"PPGs","agency":"Environmental Protection Agency","total_obs":179880630.0,"program_type":"assistance_listing"},{"cfda":"66.801","permalink":"/program/66.801","title":"Hazardous
+  Partnership Grants","popular_name":"PPGs","agency":"Environmental Protection Agency","total_obs":179880630.0,"program_type":"assistance_listing"},{"cfda":"66.600","permalink":"/program/66.600","title":"Environmental
+  Protection Consolidated Grants for the Insular Areas - Program Support","popular_name":"Consolidated
+  Grants Under the Omnibus Territories Act","agency":"Environmental Protection Agency","total_obs":109063000.0,"program_type":"assistance_listing"},{"cfda":"66.460","permalink":"/program/66.460","title":"Nonpoint
+  Source Implementation Grants","popular_name":"319 Program","agency":"Environmental
+  Protection Agency","total_obs":100254481.0,"program_type":"assistance_listing"},{"cfda":"66.801","permalink":"/program/66.801","title":"Hazardous
   Waste Management State Program Support","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":95776614.0,"program_type":"assistance_listing"},{"cfda":"15.657","permalink":"/program/15.657","title":"Endangered
   Species Recovery Implementation","popular_name":null,"agency":"Department of the
@@ -290,12 +298,12 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Protection Agency","total_obs":47893781.97,"program_type":"assistance_listing"},{"cfda":"66.001","permalink":"/program/66.001","title":"Air
   Pollution Control Program Support","popular_name":null,"agency":"Environmental Protection
   Agency","total_obs":47439023.0,"program_type":"assistance_listing"},{"cfda":"66.805","permalink":"/program/66.805","title":"Leaking
-  Underground Storage Tank Trust Fund Corrective Action Program ","popular_name":"Leaking
+  Underground Storage Tank Trust Fund Corrective Action Program","popular_name":"Leaking
   UST Corrective Action Program","agency":"Environmental Protection Agency","total_obs":46962104.0,"program_type":"assistance_listing"},{"cfda":"10.202","permalink":"/program/10.202","title":"Cooperative
   Forestry Research","popular_name":"McIntire-Stennis Cooperative Forestry Research
   Program","agency":"Department of Agriculture","total_obs":35474478.0,"program_type":"assistance_listing"},{"cfda":"66.802","permalink":"/program/66.802","title":"Superfund
-  State, Political Subdivision, and Indian Tribe Site-Specific Cooperative Agreements
-  ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":33792909.0,"program_type":"assistance_listing"},{"cfda":"20.703","permalink":"/program/20.703","title":"Interagency
+  State, Political Subdivision, and Indian Tribe Site-Specific Cooperative Agreements","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":33792909.0,"program_type":"assistance_listing"},{"cfda":"20.703","permalink":"/program/20.703","title":"Interagency
   Hazardous Materials Public Sector Training and Planning Grants","popular_name":"Hazardous
   Materials Emergency Preparedness Training and PlanningGrants (HMEP), Hazardous Materials
   Instructor Training Grants (HMIT), Supplemental Public Sector Training Grants (SPST),
@@ -324,13 +332,17 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   of Commerce","total_obs":16784308.0,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
   Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
   Protection Agency","total_obs":15421671.0,"program_type":"assistance_listing"},{"cfda":"15.616","permalink":"/program/15.616","title":"Clean
-  Vessel Act ","popular_name":"CVA","agency":"Department of the Interior","total_obs":14622357.01,"program_type":"assistance_listing"},{"cfda":"66.926","permalink":"/program/66.926","title":"Indian
+  Vessel Act","popular_name":"CVA","agency":"Department of the Interior","total_obs":14622357.01,"program_type":"assistance_listing"},{"cfda":"66.926","permalink":"/program/66.926","title":"Indian
   Environmental General Assistance Program (GAP)","popular_name":"GAP Grants","agency":"Environmental
   Protection Agency","total_obs":13527043.0,"program_type":"assistance_listing"},{"cfda":"66.418","permalink":"/program/66.418","title":"Construction
   Grants for Wastewater Treatment Works","popular_name":"Title II Construction Grants
   Program","agency":"Environmental Protection Agency","total_obs":13194000.0,"program_type":"assistance_listing"},{"cfda":"66.965","permalink":"/program/66.965","title":"CONTAMINATED
   ALASKA NATIVE CLAIMS SETTLEMENT ACT LANDS ASSISTANCE AGREEMENTS","popular_name":"Contaminated
-  ANCSA Lands Assistance Agreements","agency":"Environmental Protection Agency","total_obs":11461824.0,"program_type":"assistance_listing"},{"cfda":"81.258","permalink":"/program/81.258","title":"Glovebox
+  ANCSA Lands Assistance Agreements","agency":"Environmental Protection Agency","total_obs":11461824.0,"program_type":"assistance_listing"},{"cfda":"66.700","permalink":"/program/66.700","title":"Consolidated
+  Pesticide Enforcement Cooperative Agreements","popular_name":"FIFRA STAG Compliance
+  Monitoring Program","agency":"Environmental Protection Agency","total_obs":9746899.0,"program_type":"assistance_listing"},{"cfda":"20.700","permalink":"/program/20.700","title":"Pipeline
+  Safety Program State Base Grant","popular_name":"Pipeline Safety Program State Base
+  Grant","agency":"Department of Transportation","total_obs":9682872.0,"program_type":"assistance_listing"},{"cfda":"81.258","permalink":"/program/81.258","title":"Glovebox
   Manufacturing Expansion Initiative","popular_name":null,"agency":"Department of
   Energy","total_obs":9100000.0,"program_type":"assistance_listing"},{"cfda":"66.608","permalink":"/program/66.608","title":"Environmental
   Information Exchange Network Grant Program and Related Assistance","popular_name":"Exchange
@@ -348,7 +360,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Justice","popular_name":"EJSS - Surveys, Studies, Investigations, Training, and
   Special Purpose Activities Relating to Environmental Justice","agency":"Environmental
   Protection Agency","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"15.814","permalink":"/program/15.814","title":"National
-  Geological and Geophysical Data Preservation ","popular_name":"NGGDPP","agency":"Department
+  Geological and Geophysical Data Preservation","popular_name":"NGGDPP","agency":"Department
   of the Interior","total_obs":6548580.6,"program_type":"assistance_listing"},{"cfda":"66.486","permalink":"/program/66.486","title":"Underground
   Injection Control Program Grants: Class VI Carbon Sequestration Wells","popular_name":"Underground
   Injection Control Class VI Injection Wells Grant Program","agency":"Environmental
@@ -361,8 +373,12 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Environmental Employment Program","popular_name":"SEE","agency":"Environmental Protection
   Agency","total_obs":4455688.0,"program_type":"assistance_listing"},{"cfda":"15.658","permalink":"/program/15.658","title":"Natural
   Resource Damage Assessment and Restoration","popular_name":"NRDAR","agency":"Department
-  of the Interior","total_obs":4267879.0,"program_type":"assistance_listing"},{"cfda":"20.725","permalink":"/program/20.725","title":"PHMSA
-  Pipeline Safety Underground Natural Gas Storage Grant ","popular_name":"PHMSA Pipeline
+  of the Interior","total_obs":4267879.0,"program_type":"assistance_listing"},{"cfda":"15.820","permalink":"/program/15.820","title":"National
+  and Regional Climate Adaptation Science Centers","popular_name":"NRCASC","agency":"Department
+  of the Interior","total_obs":4133618.54,"program_type":"assistance_listing"},{"cfda":"66.490","permalink":"/program/66.490","title":"Centers
+  of Excellence for Stormwater Control Infrastructure Technologies Grant Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":4047845.0,"program_type":"assistance_listing"},{"cfda":"20.725","permalink":"/program/20.725","title":"PHMSA
+  Pipeline Safety Underground Natural Gas Storage Grant","popular_name":"PHMSA Pipeline
   Safety Underground Natural Gas Storage Grant","agency":"Department of Transportation","total_obs":4045418.0,"program_type":"assistance_listing"},{"cfda":"10.714","permalink":"/program/10.714","title":"Infrastructure
   Investment and Job Act Joint Fire Science Program (Research & Development)","popular_name":"IIJA
   Research & Development","agency":"Department of Agriculture","total_obs":3249105.63,"program_type":"assistance_listing"},{"cfda":"15.099","permalink":"/program/15.099","title":"Abandoned
@@ -383,13 +399,19 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Emergency Response Grant (PERG)","popular_name":"PERG","agency":"Department of Transportation","total_obs":2659500.0,"program_type":"assistance_listing"},{"cfda":"66.809","permalink":"/program/66.809","title":"Superfund
   State and Indian Tribe Core Program Cooperative Agreements","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":2483282.0,"program_type":"assistance_listing"},{"cfda":"15.636","permalink":"/program/15.636","title":"Alaska
-  Subsistence Management","popular_name":null,"agency":"Department of the Interior","total_obs":2435422.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
+  Subsistence Management","popular_name":null,"agency":"Department of the Interior","total_obs":2435422.0,"program_type":"assistance_listing"},{"cfda":"93.240","permalink":"/program/93.240","title":"State
+  Capacity Building","popular_name":"(Site Specific Activities Cooperative Agreement
+  Program)","agency":"Department of Health and Human Services","total_obs":2322910.0,"program_type":"assistance_listing"},{"cfda":"10.690","permalink":"/program/10.690","title":"Lake
+  Tahoe Erosion Control Grant Program","popular_name":null,"agency":"Department of
+  Agriculture","total_obs":2155269.0,"program_type":"assistance_listing"},{"cfda":"81.106","permalink":"/program/81.106","title":"Transport
   of Transuranic Wastes to the Waste Isolation Pilot Plant: States and Tribal Concerns,
   Proposed Solutions","popular_name":"Transport of Transuranic Waste to the Waste
   Isolation Pilot Plant (WIPP): States and Tribal Concerns, Proposed Solutions","agency":"Department
   of Energy","total_obs":2103044.68,"program_type":"assistance_listing"},{"cfda":"15.684","permalink":"/program/15.684","title":"White-nose
   Syndrome National Response Implementation","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1883009.28,"program_type":"assistance_listing"},{"cfda":"66.037","permalink":"/program/66.037","title":"Internships,
+  of the Interior","total_obs":1883009.28,"program_type":"assistance_listing"},{"cfda":"20.710","permalink":"/program/20.710","title":"Technical
+  Assistance Grants","popular_name":"Information Grants to Communities- Technical
+  Assistance Grants","agency":"Department of Transportation","total_obs":1798723.0,"program_type":"assistance_listing"},{"cfda":"66.037","permalink":"/program/66.037","title":"Internships,
   Training and Workshops for the Office of Air and Radiation","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":1600000.0,"program_type":"assistance_listing"},{"cfda":"66.813","permalink":"/program/66.813","title":"Alternative
   or Innovative Treatment Technology Research, Demonstration, Training, and Hazardous
@@ -400,7 +422,11 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Program for Toxic Substances and Disease Registry","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":1189944.0,"program_type":"assistance_listing"},{"cfda":"66.473","permalink":"/program/66.473","title":"Direct
   Implementation Tribal Cooperative Agreements","popular_name":"DITCA","agency":"Environmental
-  Protection Agency","total_obs":1127441.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
+  Protection Agency","total_obs":1127441.0,"program_type":"assistance_listing"},{"cfda":"66.820","permalink":"/program/66.820","title":"STATE
+  PROGRAMS FOR CONTROL OF COAL COMBUSTION RESIDUALS","popular_name":"CCR STATE PROGRAM
+  SUPPORT","agency":"Environmental Protection Agency","total_obs":1069479.0,"program_type":"assistance_listing"},{"cfda":"66.040","permalink":"/program/66.040","title":"Diesel
+  Emissions Reduction Act (DERA) State Grants","popular_name":"DERA State Grants","agency":"Environmental
+  Protection Agency","total_obs":842796.0,"program_type":"assistance_listing"},{"cfda":"66.717","permalink":"/program/66.717","title":"Source
   Reduction Assistance","popular_name":"SRA Grants","agency":"Environmental Protection
   Agency","total_obs":772215.0,"program_type":"assistance_listing"},{"cfda":"66.701","permalink":"/program/66.701","title":"Toxic
   Substances Compliance Monitoring Cooperative Agreements","popular_name":null,"agency":"Environmental
@@ -426,27 +452,31 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Protection Agency","total_obs":141766.0,"program_type":"assistance_listing"},{"cfda":"15.671","permalink":"/program/15.671","title":"Yukon
   River Salmon Research and Management Assistance","popular_name":"R&M Fund","agency":"Department
   of the Interior","total_obs":139488.0,"program_type":"assistance_listing"},{"cfda":"15.041","permalink":"/program/15.041","title":"Environmental
-  Management Indian ","popular_name":null,"agency":"Department of the Interior","total_obs":85679.0,"program_type":"assistance_listing"},{"cfda":"81.136","permalink":"/program/81.136","title":"Long-Term
+  Management Indian","popular_name":null,"agency":"Department of the Interior","total_obs":85679.0,"program_type":"assistance_listing"},{"cfda":"81.136","permalink":"/program/81.136","title":"Long-Term
   Surveillance and Maintenance","popular_name":null,"agency":"Department of Energy","total_obs":84000.0,"program_type":"assistance_listing"},{"cfda":"66.707","permalink":"/program/66.707","title":"TSCA
   Title IV State Lead Grants Certification of Lead-Based Paint Professionals","popular_name":"State
   Lead Certification Grants","agency":"Environmental Protection Agency","total_obs":75000.0,"program_type":"assistance_listing"},{"cfda":"66.511","permalink":"/program/66.511","title":"Office
   of Research and Development Consolidated Research/Training/Fellowships","popular_name":"Not
-  applicable","agency":"Environmental Protection Agency","total_obs":74489.0,"program_type":"assistance_listing"},{"cfda":"15.665","permalink":"/program/15.665","title":"National
+  applicable","agency":"Environmental Protection Agency","total_obs":74489.0,"program_type":"assistance_listing"},{"cfda":"11.440","permalink":"/program/11.440","title":"Environmental
+  Sciences, Applications, Data, and Education","popular_name":null,"agency":"Department
+  of Commerce","total_obs":74344.0,"program_type":"assistance_listing"},{"cfda":"15.665","permalink":"/program/15.665","title":"National
   Wetlands Inventory","popular_name":"NWI","agency":"Department of the Interior","total_obs":72250.0,"program_type":"assistance_listing"},{"cfda":"66.806","permalink":"/program/66.806","title":"Superfund
   Technical Assistance Grants (TAG) for Community Groups at National Priority List
   (NPL) Sites","popular_name":"TAG","agency":"Environmental Protection Agency","total_obs":50000.0,"program_type":"assistance_listing"},{"cfda":"66.716","permalink":"/program/66.716","title":"Research,
   Development, Monitoring, Public Education, Outreach, Training, Demonstrations, and
-  Studies ","popular_name":null,"agency":"Environmental Protection Agency","total_obs":39997.0,"program_type":"assistance_listing"},{"cfda":"66.609","permalink":"/program/66.609","title":"Protection
+  Studies","popular_name":null,"agency":"Environmental Protection Agency","total_obs":39997.0,"program_type":"assistance_listing"},{"cfda":"66.609","permalink":"/program/66.609","title":"Protection
   of Children from Environmental Health Risks","popular_name":"Children''s Environmental
   Health","agency":"Environmental Protection Agency","total_obs":22000.0,"program_type":"assistance_listing"},{"cfda":"20.709","permalink":"/program/20.709","title":"Assistance
   for Local Emergency Response Training (ALERT)","popular_name":"Assistance for Local
   Emergency Response Training","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.814","permalink":"/program/66.814","title":"Brownfields
-  Training, Research, and Technical Assistance Grants and Cooperative Agreements ","popular_name":"Brownfields
+  Training, Research, and Technical Assistance Grants and Cooperative Agreements","popular_name":"Brownfields
   104(k)(7) Grants","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.265","permalink":"/program/20.265","title":"Carbon
   Reduction Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.305","permalink":"/program/66.305","title":"Compliance
   Assistance Support for Services to the Regulated Community and Other Assistance
-  Providers ","popular_name":"Compliance Assistance Centers","agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.268","permalink":"/program/20.268","title":"Congestion
+  Providers","popular_name":"Compliance Assistance Centers","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.930","permalink":"/program/10.930","title":"Composting
+  and Food Waste Reduction Cooperative Agreement Program","popular_name":"Composting
+  and Food Waste Reduction (CFWR)","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.268","permalink":"/program/20.268","title":"Congestion
   Mitigation and Air Quality Improvement Program (CMAQ)","popular_name":"CMAQ Program","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.678","permalink":"/program/15.678","title":"Cooperative
   Ecosystem Studies Units","popular_name":"CESU","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.222","permalink":"/program/15.222","title":"Cooperative
@@ -456,7 +486,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.008","permalink":"/program/12.008","title":"Dredged
   Material Containment Area","popular_name":"Ditching Within the Dredged Material
   Containment Area","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.604","permalink":"/program/66.604","title":"Environmental
-  Justice Small Grant Program ","popular_name":"EJSG","agency":"Environmental Protection
+  Justice Small Grant Program","popular_name":"EJSG","agency":"Environmental Protection
   Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.005","permalink":"/program/81.005","title":"Environmental
   Monitoring, Independent Research, Technical Analysis","popular_name":null,"agency":"Department
   of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.256","permalink":"/program/81.256","title":"Environmental
@@ -466,7 +496,9 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Policy and Innovation Grants","popular_name":null,"agency":"Environmental Protection
   Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
   and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
-  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.957","permalink":"/program/66.957","title":"Greenhouse
+  of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.960","permalink":"/program/66.960","title":"Greenhouse
+  Gas Reduction Fund: Clean Communities Investment Accelerator","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.957","permalink":"/program/66.957","title":"Greenhouse
   Gas Reduction Fund: National Clean Investment Fund","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.705","permalink":"/program/20.705","title":"Hazardous
   Materials Emergency Preparedness (HMEP)","popular_name":"Hazardous Materials Emergency
@@ -491,8 +523,8 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.259","permalink":"/program/15.259","title":"Mine
   Drainage Technology Initiative (MDTI)","popular_name":"MDTI","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.204","permalink":"/program/66.204","title":"Multipurpose
-  Grants to States and Tribes ","popular_name":"Multipurpose Grants to States and
-  Tribe","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.273","permalink":"/program/10.273","title":"National
+  Grants to States and Tribes","popular_name":"Multipurpose Grants to States and Tribe","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.273","permalink":"/program/10.273","title":"National
   Atmospheric Deposition Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.815","permalink":"/program/15.815","title":"National
   Land Remote Sensing Education Outreach and Research","popular_name":"Remote Sensing
   State Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.065","permalink":"/program/81.065","title":"Nuclear
@@ -507,7 +539,9 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   (Ocean Energy Safety Institute)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.571","permalink":"/program/15.571","title":"Salton
   Sea Program","popular_name":"Salton Sea Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.255","permalink":"/program/15.255","title":"Science
   and Technology Projects Related to Coal Mining and Reclamation","popular_name":"Technology
-  Development and Transfer Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.113","permalink":"/program/12.113","title":"State
+  Development and Transfer Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.720","permalink":"/program/20.720","title":"State
+  Damage Prevention Program Grants","popular_name":"State Damage Prevention Grant","agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.113","permalink":"/program/12.113","title":"State
   Memorandum of Agreement Program for the Reimbursement of Technical Services","popular_name":"Defense
   and State Memorandum of Agreement Program","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.518","permalink":"/program/66.518","title":"State
   Senior Environmental Employment Program","popular_name":"SEE","agency":"Environmental
@@ -516,7 +550,13 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Combined, Bulk or Block Cooperative Agreements","agency":"Environmental Protection
   Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.713","permalink":"/program/20.713","title":"Supplemental
   Public Sector Training Grants","popular_name":"Supplemental Public Sector Training
-  Grants","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.956","permalink":"/program/66.956","title":"Targeted
+  Grants","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.510","permalink":"/program/66.510","title":"Surveys,
+  Studies, Investigations and Special Purpose Grants within the Office of Research
+  and Development","popular_name":"Not applicable","agency":"Environmental Protection
+  Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.610","permalink":"/program/66.610","title":"Surveys,
+  Studies, Investigations and Special Purpose Grants within the Office of the Administrator","popular_name":"ECOS
+  Omnibus and the Interstate Technology Resource Council Cooperative Agreements","agency":"Environmental
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.956","permalink":"/program/66.956","title":"Targeted
   Airshed Grant Program","popular_name":"Targeted Airshed","agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.982","permalink":"/program/10.982","title":"Testing,
   Mitigation, and Relief for Agricultural Contamination by Per- and Polyfluoroalkyl
@@ -525,7 +565,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Pollution Control and Abatement
 total_num_agencies: 8
-total_num_applicant_types: 62
-total_num_programs: 131
-total_obs: 18365915545.84
+total_num_applicant_types: 66
+total_num_programs: 149
+total_obs: 18966107782.38
 ---

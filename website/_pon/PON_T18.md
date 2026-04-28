@@ -15,6 +15,11 @@ where_used:
   name: Battlefield Land Acquisition Grants
   permalink: /program/15.928
   program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Citizenship Education and Training
+  permalink: /program/97.010
+  program_type: assistance_listing
 - agency: National Endowment for the Humanities
   expenditure_amount: 2308932.0
   name: Collaborative Research
@@ -24,6 +29,11 @@ where_used:
   expenditure_amount: 30000000.0
   name: Cultural Resources Management
   permalink: /program/15.946
+  program_type: assistance_listing
+- agency: The Institute of Museum and Library Services
+  expenditure_amount: 181400000.0
+  name: Grants to States
+  permalink: /program/45.310
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 60000000.0
@@ -55,6 +65,11 @@ where_used:
   name: National Archives Reference Services Historical Research
   permalink: /program/89.001
   program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: National Coast Guard Museum Construction
+  permalink: /program/97.140
+  program_type: assistance_listing
 - agency: National Endowment for the Humanities
   expenditure_amount: 2503227.0
   name: 'National Endowment for the Humanities: Media Projects'
@@ -72,7 +87,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 1500000.0
-  name: 'National Maritime Heritage Grants '
+  name: National Maritime Heritage Grants
   permalink: /program/15.925
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -87,13 +102,18 @@ where_used:
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 3772000.0
-  name: 'Native American/Native Hawaiian Museum Services Program '
+  name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3000000.0
   name: Preservation of Japanese American Confinement Sites
   permalink: /program/15.933
+  program_type: assistance_listing
+- agency: National Endowment for the Humanities
+  expenditure_amount: 200000.0
+  name: Promotion of the Humanities Challenge Grants
+  permalink: /program/45.130
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
   expenditure_amount: 454999.0
@@ -104,6 +124,11 @@ where_used:
   expenditure_amount: 0.0
   name: Socially Disadvantaged Farmers and Ranchers Policy Research Center
   permalink: /program/10.464
+  program_type: assistance_listing
+- agency: Library of Congress
+  expenditure_amount: 0.0
+  name: Teaching with Primary Sources
+  permalink: /program/42.010
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
   expenditure_amount: 2200000.0

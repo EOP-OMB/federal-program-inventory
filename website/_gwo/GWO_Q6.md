@@ -18,14 +18,24 @@ where_used:
   permalink: /program/15.943
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 1000000.0
+  name: Chesapeake Bay Gateways Network
+  permalink: /program/15.930
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 200000.0
   name: Cooperative Management of Ebey's Landing National Historical Reserve.
   permalink: /program/15.956
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
-  name: 'Enhanced Hunter Education and Safety '
+  name: Enhanced Hunter Education and Safety
   permalink: /program/15.626
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 0.0
+  name: FISH-ABLE Fun with Reclamation
+  permalink: /program/15.550
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 309000000.0
@@ -34,7 +44,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 200000000.0
-  name: 'Good Neighbor Authority '
+  name: Good Neighbor Authority
   permalink: /program/10.691
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -69,12 +79,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 11000000.0
-  name: 'Multistate Conservation Grant '
+  name: Multistate Conservation Grant
   permalink: /program/15.628
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 14000000.0
-  name: 'National Outreach and Communication '
+  name: National Outreach and Communication
   permalink: /program/15.653
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -134,7 +144,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 455083372.0
-  name: 'Sport Fish Restoration '
+  name: Sport Fish Restoration
   permalink: /program/15.605
   program_type: assistance_listing
 - agency: Department of the Interior

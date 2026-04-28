@@ -20,6 +20,11 @@ where_used:
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 12001716254.0
+  name: Head Start
+  permalink: /program/93.600
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Indian Child and Family Education

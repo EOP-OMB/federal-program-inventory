@@ -77,6 +77,11 @@ where_used:
   permalink: /program/20.541
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 4071878000.0
+  name: Federal Transit Capital Investment Grants
+  permalink: /program/20.500
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 8535352000.0
   name: Federal Transit Formula Grants
   permalink: /program/20.507
@@ -85,6 +90,11 @@ where_used:
   expenditure_amount: 9542000000.0
   name: Federal-State Partnership for Intercity Passenger Rail
   permalink: /program/20.326
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Federal-State Partnership for Intercity Passenger Rail Grant Program
+  permalink: /program/20.340
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 91855000.0
@@ -139,8 +149,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
-  name: 'Metropolitan Transportation Planning and State and Non-Metropolitan Planning
-    and Research '
+  name: Metropolitan Transportation Planning and State and Non-Metropolitan Planning
+    and Research
   permalink: /program/20.505
   program_type: assistance_listing
 - agency: Department of Transportation
@@ -155,13 +165,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 1500000000.0
-  name: 'National Infrastructure Investments '
+  name: National Infrastructure Investments
   permalink: /program/20.933
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 6793000000.0
   name: National Railroad Passenger Corporation Grants
   permalink: /program/20.315
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 7500000.0
+  name: National Scenic Byways Program
+  permalink: /program/20.280
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 55000000.0
@@ -180,9 +195,19 @@ where_used:
   permalink: /program/20.532
   program_type: assistance_listing
 - agency: Department of Transportation
+  expenditure_amount: 40925000.0
+  name: Passenger Ferry Program
+  permalink: /program/20.540
+  program_type: assistance_listing
+- agency: Department of Transportation
   expenditure_amount: 690000000.0
   name: Payments for Essential Air Services
   permalink: /program/20.901
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Rail Line Relocation and Improvement
+  permalink: /program/20.320
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 551000000.0

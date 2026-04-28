@@ -72,6 +72,11 @@ where_used:
   permalink: /program/93.HG5
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 151722158.0
+  name: Intramural Research Training Award
+  permalink: /program/93.140
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 219293.0
   name: NIMHD Research – Training, Individual (TR)
   permalink: /program/93.1TR
@@ -79,7 +84,17 @@ where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 95000000.0
   name: National Institutes of Health Extramural Loan Repayment Program
+  permalink: /program/93.280
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 95000000.0
+  name: National Institutes of Health Extramural Loan Repayment Program
   permalink: /program/93.ELR
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 6000000.0
+  name: National Institutes of Health Intramural Loan Repayment Program
+  permalink: /program/93.220
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 6942000.0
@@ -100,7 +115,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 9500000.0
-  name: 'Veterinary Medicine Loan Repayment Program '
+  name: Veterinary Medicine Loan Repayment Program
   permalink: /program/10.313
   program_type: assistance_listing
 - agency: Department of Health and Human Services

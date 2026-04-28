@@ -45,18 +45,34 @@ where_used:
   permalink: /program/15.807
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1576022.0
+  name: Geodetic Surveys and Services (Geodesy and Applications of the National Geodetic
+    Reference System)
+  permalink: /program/11.400
+  program_type: assistance_listing
+- agency: National Science Foundation
+  expenditure_amount: 374350.0
+  name: Geosciences
+  permalink: /program/47.050
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 11000000.0
   name: NOAA Small Business Innovation Research (SBIR) Program
   permalink: /program/11.021
   program_type: assistance_listing
 - agency: Department of the Interior
+  expenditure_amount: 7785000.0
+  name: National Cooperative Geologic Mapping
+  permalink: /program/15.810
+  program_type: assistance_listing
+- agency: Department of the Interior
   expenditure_amount: 1900000.0
-  name: 'National Geological and Geophysical Data Preservation '
+  name: National Geological and Geophysical Data Preservation
   permalink: /program/15.814
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2500000.0
-  name: 'National Geospatial Program: Building The National Map '
+  name: 'National Geospatial Program: Building The National Map'
   permalink: /program/15.817
   program_type: assistance_listing
 - agency: Department of the Interior

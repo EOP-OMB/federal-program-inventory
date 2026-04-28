@@ -8,18 +8,8 @@ title: Strengthen Preparation for Post-Secondary Education
 where_used:
 - agency: Department of Education
   expenditure_amount: 0.0
-  name: Career and Technical Education - Grants to Native Americans and Alaska Natives
-  permalink: /program/84.101
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
   name: Career and Technical Education -- Basic Grants to States
   permalink: /program/84.048
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Career and Technical Education -- National Programs
-  permalink: /program/84.051
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 0.0
@@ -32,11 +22,6 @@ where_used:
     and Agriculture Professionals'
   permalink: /program/10.237
   program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Gaining Early Awareness and Readiness for Undergraduate Programs
-  permalink: /program/84.334
-  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Indian Post Secondary Schools
@@ -46,11 +31,6 @@ where_used:
   expenditure_amount: 0.0
   name: Intelligence Community Centers for Academic Excellence
   permalink: /program/54.001
-  program_type: assistance_listing
-- agency: Department of Education
-  expenditure_amount: 0.0
-  name: Native Hawaiian Career and Technical Education
-  permalink: /program/84.259
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 1909715.0

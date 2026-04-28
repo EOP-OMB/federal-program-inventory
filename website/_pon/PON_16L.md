@@ -30,6 +30,12 @@ where_used:
   expenditure_amount: 0.0
   name: Biomedical Advanced Research and Development Authority (BARDA), Biodefense
     Medical Countermeasure Development
+  permalink: /program/93.360
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Biomedical Advanced Research and Development Authority (BARDA), Biodefense
+    Medical Countermeasure Development
   permalink: /program/93.388
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -117,7 +123,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 33539308.0
-  name: 'Racial and Ethnic Approaches to Community Health '
+  name: Racial and Ethnic Approaches to Community Health
   permalink: /program/93.304
   program_type: assistance_listing
 - agency: Department of Health and Human Services

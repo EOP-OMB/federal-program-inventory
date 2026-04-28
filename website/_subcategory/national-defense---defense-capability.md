@@ -1,41 +1,44 @@
 ---
-agencies: '[{"title":"Department of Defense","total_num_programs":25,"total_obs":3076049104.06},{"title":"Department
+agencies: '[{"title":"Department of Defense","total_num_programs":37,"total_obs":4021598372.38},{"title":"Department
   of Transportation","total_num_programs":3,"total_obs":403214687.47},{"title":"Department
   of Veterans Affairs","total_num_programs":1,"total_obs":117388258.0},{"title":"Department
   of Energy","total_num_programs":5,"total_obs":61073472.22},{"title":"Department
   of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
   Security","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":8,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":13},{"title":"Other","total_num_programs":12},{"title":"State","total_num_programs":11},{"title":"Unrestricted
-  by Entity Type","total_num_programs":9},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":7},{"title":"Public
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":18},{"title":"Other","total_num_programs":13},{"title":"State","total_num_programs":13},{"title":"Unrestricted
+  by Entity Type","total_num_programs":11},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":9},{"title":"Local","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":7},{"title":"Local","total_num_programs":6},{"title":"Private
+  hospitals)","total_num_programs":7},{"title":"For-Profit Organization","total_num_programs":6},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":6},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":5},{"title":"For-Profit
-  Organization","total_num_programs":4},{"title":"Other public institution/organization","total_num_programs":4},{"title":"Not-for-Profit
-  Organization","total_num_programs":3},{"title":"U.S. Territories and possessions
-  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"County
+  hospitals)","total_num_programs":6},{"title":"Not-for-Profit Organization","total_num_programs":5},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":5},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":5},{"title":"Other
+  public institution/organization","total_num_programs":4},{"title":"U.S. Territory
+  (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":2},{"title":"Foreign
-  Non-Government Nonprofit Organization","total_num_programs":2},{"title":"Foreign
-  Non-Governmental For-Profit Organization","total_num_programs":2},{"title":"Native
+  with geographic regional control and authority)","total_num_programs":3},{"title":"Foreign
+  Non-Government Nonprofit Organization","total_num_programs":3},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":3},{"title":"International
+  Organization","total_num_programs":3},{"title":"Interstate Organization","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":2},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":2},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":2},{"title":"U.S. Territory (or
-  Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Unrestricted
-  by Individual Type","total_num_programs":2},{"title":"Active-Duty Service Person
-  (including dependents","total_num_programs":1},{"title":"Federally Recognized Indian
-  Tribal Governments","total_num_programs":1},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Foreign
-  Non-Government Not-for-Profit Organization","total_num_programs":1},{"title":"International
-  Organization","total_num_programs":1},{"title":"Interstate Organization","total_num_programs":1},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Reservist (including dependents)","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1},{"title":"Small business (less than 500
-  employees)","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
+  associations)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Federal Government","total_num_programs":2},{"title":"Unrestricted by Individual
+  Type","total_num_programs":2},{"title":"Veteran (including dependents)","total_num_programs":2},{"title":"Active-Duty
+  Service Person (including dependents","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Local (includes
+  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Municipality or Township government (inclusive
+  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Reservist (including dependents)","total_num_programs":1},{"title":"School
+  District","total_num_programs":1},{"title":"Small Business Person","total_num_programs":1},{"title":"Small
+  business (less than 500 employees)","total_num_programs":1},{"title":"Sponsored
+  organization","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -252,13 +255,22 @@ programs: '[{"cfda":"12.401","permalink":"/program/12.401","title":"National Gua
   Security Fleet Program or Ship Operations Cooperation Program","popular_name":"(Maritime
   Security Program)","agency":"Department of Transportation","total_obs":313001482.68,"program_type":"assistance_listing"},{"cfda":"12.777","permalink":"/program/12.777","title":"Defense
   Production Act Title III (DPA Title III)","popular_name":"DPA Title III","agency":"Department
-  of Defense","total_obs":287879038.0,"program_type":"assistance_listing"},{"cfda":"12.431","permalink":"/program/12.431","title":"Basic
-  Scientific Research","popular_name":null,"agency":"Department of Defense","total_obs":204695213.37,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
+  of Defense","total_obs":287879038.0,"program_type":"assistance_listing"},{"cfda":"12.300","permalink":"/program/12.300","title":"Basic
+  and Applied Scientific Research","popular_name":null,"agency":"Department of Defense","total_obs":264461229.11,"program_type":"assistance_listing"},{"cfda":"12.600","permalink":"/program/12.600","title":"Community
+  Investment","popular_name":null,"agency":"Department of Defense","total_obs":256590449.0,"program_type":"assistance_listing"},{"cfda":"12.431","permalink":"/program/12.431","title":"Basic
+  Scientific Research","popular_name":null,"agency":"Department of Defense","total_obs":204695213.37,"program_type":"assistance_listing"},{"cfda":"12.910","permalink":"/program/12.910","title":"Research
+  and Technology Development","popular_name":null,"agency":"Department of Defense","total_obs":138370855.49,"program_type":"assistance_listing"},{"cfda":"12.599","permalink":"/program/12.599","title":"Congressionally
   Directed Assistance","popular_name":" Annual Congressionally Directed Assistance","agency":"Department
   of Defense","total_obs":118738217.0,"program_type":"assistance_listing"},{"cfda":"64.032","permalink":"/program/64.032","title":"Montgomery
   GI Bill Selected Reserve","popular_name":"Montgomery GI Bill - Selected Reserve
-  (MGIB-SR or Chapter 1606)","agency":"Department of Veterans Affairs","total_obs":117388258.0,"program_type":"assistance_listing"},{"cfda":"20.825","permalink":"/program/20.825","title":"Tanker
-  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":80213204.79,"program_type":"assistance_listing"},{"cfda":"12.029","permalink":"/program/12.029","title":"Community
+  (MGIB-SR or Chapter 1606)","agency":"Department of Veterans Affairs","total_obs":117388258.0,"program_type":"assistance_listing"},{"cfda":"12.800","permalink":"/program/12.800","title":"Air
+  Force Defense Research Sciences Program","popular_name":null,"agency":"Department
+  of Defense","total_obs":116315012.73,"program_type":"assistance_listing"},{"cfda":"12.400","permalink":"/program/12.400","title":"Military
+  Construction, National Guard","popular_name":"Military Construction, National Guard","agency":"Department
+  of Defense","total_obs":101211577.44,"program_type":"assistance_listing"},{"cfda":"20.825","permalink":"/program/20.825","title":"Tanker
+  Security Program","popular_name":"TSP","agency":"Department of Transportation","total_obs":80213204.79,"program_type":"assistance_listing"},{"cfda":"12.630","permalink":"/program/12.630","title":"Basic,
+  Applied, and Advanced Research in Science and Engineering","popular_name":null,"agency":"Department
+  of Defense","total_obs":66731115.55,"program_type":"assistance_listing"},{"cfda":"12.029","permalink":"/program/12.029","title":"Community
   Noise Mitigation Program","popular_name":"CNMP","agency":"Department of Defense","total_obs":59163798.0,"program_type":"assistance_listing"},{"cfda":"12.027","permalink":"/program/12.027","title":"Defense
   Community Infrastructure Program","popular_name":"DCIP","agency":"Department of
   Defense","total_obs":57351653.0,"program_type":"assistance_listing"},{"cfda":"12.002","permalink":"/program/12.002","title":"Procurement
@@ -284,13 +296,19 @@ programs: '[{"cfda":"12.401","permalink":"/program/12.401","title":"National Gua
   Serving Institution Partnership Program (MSIPP) & Tribal Education Partnership Program
   (TEPP)","agency":"Department of Energy","total_obs":4077506.0,"program_type":"assistance_listing"},{"cfda":"12.351","permalink":"/program/12.351","title":"Scientific
   Research - Combating Weapons of Mass Destruction","popular_name":null,"agency":"Department
-  of Defense","total_obs":3841675.0,"program_type":"assistance_listing"},{"cfda":"12.019","permalink":"/program/12.019","title":"Pacific
+  of Defense","total_obs":3841675.0,"program_type":"assistance_listing"},{"cfda":"12.610","permalink":"/program/12.610","title":"Community
+  Economic Adjustment Assistance for Compatible Use and Joint Land Use Studies","popular_name":null,"agency":"Department
+  of Defense","total_obs":1714029.0,"program_type":"assistance_listing"},{"cfda":"12.019","permalink":"/program/12.019","title":"Pacific
   Center Disaster (PDC) Program","popular_name":"Disaster Services and Water Resilience
   Cooperative Agreement","agency":"Department of Defense","total_obs":417317.0,"program_type":"assistance_listing"},{"cfda":"12.022","permalink":"/program/12.022","title":"DoD
   Mentor-Protege Program","popular_name":"DoD MP Program","agency":"Department of
   Defense","total_obs":415731.57,"program_type":"assistance_listing"},{"cfda":"12.614","permalink":"/program/12.614","title":"Community
   Economic Adjustment Assistance for Advance Planning and Economic Diversification","popular_name":null,"agency":"Department
-  of Defense","total_obs":179949.0,"program_type":"assistance_listing"},{"cfda":"10.277","permalink":"/program/10.277","title":"4-H
+  of Defense","total_obs":179949.0,"program_type":"assistance_listing"},{"cfda":"12.440","permalink":"/program/12.440","title":"Dissertation
+  Year Fellowship","popular_name":"CMH Dissertation Fellowship","agency":"Department
+  of Defense","total_obs":80000.0,"program_type":"assistance_listing"},{"cfda":"12.030","permalink":"/program/12.030","title":"National
+  Guard Morale, Welfare, and Recreation Program","popular_name":"NG MWR Program","agency":"Department
+  of Defense","total_obs":75000.0,"program_type":"assistance_listing"},{"cfda":"10.277","permalink":"/program/10.277","title":"4-H
   Military Extension Educator Program","popular_name":null,"agency":"Department of
   Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.333","permalink":"/program/12.333","title":"Advanced
   Manufacturing Technology - Office of the Secretary of Defense (OSD), Manufacturing
@@ -299,7 +317,8 @@ programs: '[{"cfda":"12.401","permalink":"/program/12.401","title":"National Gua
   Force 4-H Military Partnership Outreach Support Grant Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.289","permalink":"/program/10.289","title":"Army
   Youth Program Evaluation","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.061","permalink":"/program/97.061","title":"Centers
-  for Homeland Security","popular_name":"(COE)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.288","permalink":"/program/10.288","title":"Clearing
+  for Homeland Security","popular_name":"(COE)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.840","permalink":"/program/12.840","title":"Civil
+  Air Patrol Program","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.288","permalink":"/program/10.288","title":"Clearing
   House for Military Readiness","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.161","permalink":"/program/97.161","title":"Counter-Unmanned
   Aircraft Systems (C-UAS) Grant Program","popular_name":"C-UAS","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.554","permalink":"/program/12.554","title":"English
@@ -323,10 +342,15 @@ programs: '[{"cfda":"12.401","permalink":"/program/12.401","title":"National Gua
   Boren Fellowships","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.551","permalink":"/program/12.551","title":"National
   Security Education Program David L. Boren Scholarships","popular_name":"David L.
   Boren Scholarships","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.335","permalink":"/program/12.335","title":"Navy  Command,
-  Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance
-  ","popular_name":"(C4ISR)","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.357","permalink":"/program/12.357","title":"ROTC
+  Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance","popular_name":"(C4ISR)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.740","permalink":"/program/12.740","title":"Past
+  Conflict Accounting","popular_name":"Defense POW/MIA Accounting Agency (DPAA) Past
+  Conflict Accounting Grants and Cooperative Agreements Program (DPAA GCAP)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.357","permalink":"/program/12.357","title":"ROTC
   Language and Culture Training Grants","popular_name":"ROTC Project GO (Global Officers)","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.501","permalink":"/program/12.501","title":"Training
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.550","permalink":"/program/12.550","title":"The
+  Language Flagship Grants to Institutions of Higher Education","popular_name":"The
+  Language Flagship","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.501","permalink":"/program/12.501","title":"Training
   and Support \u2013 Combating Weapons of Mass Destruction","popular_name":null,"agency":"Department
   of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.432","permalink":"/program/12.432","title":"U.S.
   Military Academy Athletic Programs at West Point","popular_name":null,"agency":"Department
@@ -335,7 +359,7 @@ programs: '[{"cfda":"12.401","permalink":"/program/12.401","title":"National Gua
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Defense Capability
 total_num_agencies: 7
-total_num_applicant_types: 46
-total_num_programs: 46
-total_obs: 3657725521.7499995
+total_num_applicant_types: 50
+total_num_programs: 58
+total_obs: 4603274790.070001
 ---

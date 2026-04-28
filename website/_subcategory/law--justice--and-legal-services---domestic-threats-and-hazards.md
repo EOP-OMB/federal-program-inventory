@@ -229,8 +229,7 @@ parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/domestic-threats-and-hazards
 programs: '[{"cfda":"97.008","permalink":"/program/97.008","title":"Non-Profit Security
   Program","popular_name":"NSGP","agency":"Department of Homeland Security","total_obs":485269150.86,"program_type":"assistance_listing"},{"cfda":"97.056","permalink":"/program/97.056","title":"Port
-  Security Grant Program ","popular_name":"PSGP","agency":"Department of Homeland
-  Security","total_obs":89146197.1,"program_type":"assistance_listing"},{"cfda":"97.075","permalink":"/program/97.075","title":"Rail
+  Security Grant Program","popular_name":"PSGP","agency":"Department of Homeland Security","total_obs":89146197.1,"program_type":"assistance_listing"},{"cfda":"97.075","permalink":"/program/97.075","title":"Rail
   and Transit Security Grant Program","popular_name":"TSGP/IPR  (AMTRAK)","agency":"Department
   of Homeland Security","total_obs":49801500.0,"program_type":"assistance_listing"},{"cfda":"15.065","permalink":"/program/15.065","title":"Safety
   of Dams on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":31717336.77,"program_type":"assistance_listing"},{"cfda":"97.057","permalink":"/program/97.057","title":"Intercity

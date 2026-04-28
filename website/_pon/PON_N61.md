@@ -14,11 +14,6 @@ where_used:
   name: Contributions to International Organizations for Overseas Assistance
   permalink: /program/19.515
   program_type: assistance_listing
-- agency: Department of Homeland Security
-  expenditure_amount: 0.0
-  name: FY 2022 Operation Allies Welcome Airport Assistance Grant
-  permalink: /program/97.009
-  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Overseas Refugee Assistance Program for Middle East and North Africa Program
@@ -41,6 +36,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Overseas Refugee Assistance Programs for Europe
+  permalink: /program/19.520
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Overseas Refugee Assistance Programs for Strategic Global Priorities
   permalink: /program/19.522
   program_type: assistance_listing
@@ -53,5 +53,10 @@ where_used:
   expenditure_amount: 0.0
   name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
   permalink: /program/19.018
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: U.S. Refugee Admissions Program
+  permalink: /program/19.510
   program_type: assistance_listing
 ---

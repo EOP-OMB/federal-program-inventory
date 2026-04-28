@@ -50,6 +50,11 @@ where_used:
   permalink: /program/10.723
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Community Project Funds - Congressionally Directed Spending
+  permalink: /program/10.730
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 1510012000.0
   name: Conservation Stewardship Program
   permalink: /program/10.924
@@ -81,7 +86,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 124000.0
-  name: 'Emergency Forest Restoration Program '
+  name: Emergency Forest Restoration Program
   permalink: /program/10.102
   program_type: assistance_listing
 - agency: Department of the Treasury
@@ -93,6 +98,11 @@ where_used:
   expenditure_amount: 1000000.0
   name: Experienced Services Program
   permalink: /program/15.016
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 43000000.0
+  name: Forest Health Protection
+  permalink: /program/10.680
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 14000000.0
@@ -120,6 +130,11 @@ where_used:
   permalink: /program/15.987
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 17216000.0
+  name: Grassland Reserve Program
+  permalink: /program/10.920
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 17000000.0
   name: Grazing Lands Conservation Initiative
   permalink: /program/10.943
@@ -131,7 +146,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 9700000.0
-  name: 'Highlands Conservation '
+  name: Highlands Conservation
   permalink: /program/15.667
   program_type: assistance_listing
 - agency: Department of Agriculture
@@ -181,7 +196,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
-  name: 'Navajo-Hopi Indian Settlement '
+  name: Navajo-Hopi Indian Settlement
   permalink: /program/15.057
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -248,5 +263,10 @@ where_used:
   expenditure_amount: 7299999.0
   name: Urban and Community Forestry Program
   permalink: /program/10.675
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 45100000.0
+  name: Youth Conservation Corps and Public Land Corps
+  permalink: /program/10.740
   program_type: assistance_listing
 ---

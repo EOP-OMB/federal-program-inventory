@@ -11,9 +11,19 @@ permalink: /pon/PON_N63
 title: Cultivate International Cultural Partnerships
 where_used:
 - agency: Department of State
+  expenditure_amount: 101577500.0
+  name: Academic Exchange Programs - Graduate Students
+  permalink: /program/19.400
+  program_type: assistance_listing
+- agency: Department of State
   expenditure_amount: 23149999.0
   name: Cultural, Technical and Educational Centers
   permalink: /program/19.015
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 120151.0
+  name: ECA Individual Grants
+  permalink: /program/19.450
   program_type: assistance_listing
 - agency: Agency for International Development
   expenditure_amount: 0.0
@@ -25,10 +35,20 @@ where_used:
   name: IAF Assistance for Overseas Programs
   permalink: /program/85.752
   program_type: assistance_listing
+- agency: Japan-U.S. Friendship Commission
+  expenditure_amount: 0.0
+  name: Japan-U.S. Friendship Commission Grants
+  permalink: /program/90.300
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 86270000.0
   name: Professional and Cultural Exchange Programs - Citizen Exchanges
   permalink: /program/19.415
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Public Diplomacy Programs
+  permalink: /program/19.040
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

@@ -20,6 +20,11 @@ where_used:
   name: Corps Water Infrastructure Financing Program (CWIFP)
   permalink: /program/12.026
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 21747067000.0
+  name: Crop Insurance
+  permalink: /program/10.450
+  program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
   name: Hazard Mitigation Grant

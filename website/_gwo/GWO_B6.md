@@ -22,6 +22,11 @@ where_used:
   name: DOI - HQ Experienced Services Program
   permalink: /program/15.089
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 18000000.0
+  name: Distressed Area Recompete Pilot Program
+  permalink: /program/11.040
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 9500000.0
   name: Experienced Services Program
@@ -32,11 +37,6 @@ where_used:
   name: Experienced Services Program (ESP)
   permalink: /program/15.079
   program_type: assistance_listing
-- agency: Department of Labor
-  expenditure_amount: 0.0
-  name: Jobs for Veterans State Grants
-  permalink: /program/17.801
-  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 62000000.0
   name: Rural Economic Development Loans and Grants
@@ -46,11 +46,6 @@ where_used:
   expenditure_amount: 0.0
   name: Rural Innovation Stronger Economy
   permalink: /program/10.755
-  program_type: assistance_listing
-- agency: Department of Labor
-  expenditure_amount: 0.0
-  name: Transition Assistance Program
-  permalink: /program/17.807
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2000000.0

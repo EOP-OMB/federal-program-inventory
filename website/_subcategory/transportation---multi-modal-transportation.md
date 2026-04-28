@@ -1,24 +1,26 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":27,"total_obs":15816295579.93},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":30,"total_obs":17834790589.620003},{"title":"Department
   of the Treasury","total_num_programs":5,"total_obs":1900000000.0},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":17},{"title":"State","total_num_programs":12},{"title":"Other
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":19},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":11},{"title":"Transit Authority","total_num_programs":11},{"title":"Local","total_num_programs":9},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":5},{"title":"Nonprofit
-  Organization","total_num_programs":5},{"title":"Municipality or Township government
-  (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":4},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Planning
+  Government Combination","total_num_programs":13},{"title":"State","total_num_programs":13},{"title":"Transit
+  Authority","total_num_programs":13},{"title":"Local","total_num_programs":10},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Nonprofit
+  Organization","total_num_programs":6},{"title":"County Government (inclusive of
+  boroughs in Alaska, parishes and other governmental entities with geographic regional
+  control and authority)","total_num_programs":5},{"title":"Municipality or Township
+  government (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":4},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Other","total_num_programs":3},{"title":"Planning
   Commission","total_num_programs":3},{"title":"Unrestricted by Entity Type","total_num_programs":3},{"title":"Airport
   Authority","total_num_programs":2},{"title":"Interstate Organization","total_num_programs":2},{"title":"Other
   public institution/organization","total_num_programs":2},{"title":"Port Authority","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  and hospitals","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Other
   Special Disctrict Government","total_num_programs":1},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Profit
   organization","total_num_programs":1},{"title":"State (includes District of Columbia,
@@ -240,18 +242,20 @@ programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Tran
   of Good Repair Grants Program","popular_name":"SGR; Rail Vehicle Replacement Grant;
   Section 5337","agency":"Department of Transportation","total_obs":3124281538.0,"program_type":"assistance_listing"},{"cfda":"20.526","permalink":"/program/20.526","title":"Buses
   and Bus Facilities Formula, Competitive, and Low or No Emissions Programs","popular_name":"Bus
-  Program","agency":"Department of Transportation","total_obs":2264515403.0,"program_type":"assistance_listing"},{"cfda":"TC.094","permalink":"/program/TC.094","title":"Exclusion
+  Program","agency":"Department of Transportation","total_obs":2264515403.0,"program_type":"assistance_listing"},{"cfda":"20.500","permalink":"/program/20.500","title":"Federal
+  Transit Capital Investment Grants","popular_name":"New Starts, Small Starts, and
+  Core Capacity  ","agency":"Department of Transportation","total_obs":2006368265.69,"program_type":"assistance_listing"},{"cfda":"TC.094","permalink":"/program/TC.094","title":"Exclusion
   of interest for airport, dock, and similar bonds","popular_name":null,"agency":"Department
   of the Treasury","total_obs":1520000000.0,"program_type":"tax_expenditure"},{"cfda":"20.509","permalink":"/program/20.509","title":"Formula
   Grants for Rural Areas and Tribal Transit Program","popular_name":"Section 5311","agency":"Department
   of Transportation","total_obs":1033868722.57,"program_type":"assistance_listing"},{"cfda":"20.513","permalink":"/program/20.513","title":"Enhanced
-  Mobility of Seniors and Individuals with Disabilities ","popular_name":"Section
-  5310 Program","agency":"Department of Transportation","total_obs":372825168.0,"program_type":"assistance_listing"},{"cfda":"20.823","permalink":"/program/20.823","title":"Port
+  Mobility of Seniors and Individuals with Disabilities","popular_name":"Section 5310
+  Program","agency":"Department of Transportation","total_obs":372825168.0,"program_type":"assistance_listing"},{"cfda":"20.823","permalink":"/program/20.823","title":"Port
   Infrastructure Development Program","popular_name":"Port Infrastructure Development
   Program(PIDP)","agency":"Department of Transportation","total_obs":263674761.0,"program_type":"assistance_listing"},{"cfda":"20.534","permalink":"/program/20.534","title":"Community
   Project Funding Congressionally Directed Spending","popular_name":null,"agency":"Department
   of Transportation","total_obs":216024837.0,"program_type":"assistance_listing"},{"cfda":"20.505","permalink":"/program/20.505","title":"Metropolitan
-  Transportation Planning and State and Non-Metropolitan Planning and Research ","popular_name":"Metropolitan
+  Transportation Planning and State and Non-Metropolitan Planning and Research","popular_name":"Metropolitan
   Transportation Planning and State and Non-Metropolitan Planning","agency":"Department
   of Transportation","total_obs":189254600.27,"program_type":"assistance_listing"},{"cfda":"20.533","permalink":"/program/20.533","title":"All
   Stations Accessibility Program","popular_name":null,"agency":"Department of Transportation","total_obs":161052114.0,"program_type":"assistance_listing"},{"cfda":"20.524","permalink":"/program/20.524","title":"Passenger
@@ -270,7 +274,9 @@ programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Tran
   of Transportation","total_obs":38000000.0,"program_type":"assistance_listing"},{"cfda":"20.816","permalink":"/program/20.816","title":"United
   States Marine Highway Grants","popular_name":"Marine Highway Program","agency":"Department
   of Transportation","total_obs":14732527.0,"program_type":"assistance_listing"},{"cfda":"20.529","permalink":"/program/20.529","title":"Bus
-  Testing","popular_name":"Bus Testing Center","agency":"Department of Transportation","total_obs":12583677.0,"program_type":"assistance_listing"},{"cfda":"20.931","permalink":"/program/20.931","title":"Transportation
+  Testing","popular_name":"Bus Testing Center","agency":"Department of Transportation","total_obs":12583677.0,"program_type":"assistance_listing"},{"cfda":"20.530","permalink":"/program/20.530","title":"Public
+  Transportation Innovation","popular_name":"5312 Research Program","agency":"Department
+  of Transportation","total_obs":12126744.0,"program_type":"assistance_listing"},{"cfda":"20.931","permalink":"/program/20.931","title":"Transportation
   Planning, Research and Education","popular_name":"Innovative and Advanced Transportation
   Research","agency":"Department of Transportation","total_obs":1743000.0,"program_type":"assistance_listing"},{"cfda":"20.339","permalink":"/program/20.339","title":"Corridor
   Identification and Development Program","popular_name":"Corridor ID","agency":"Department
@@ -285,7 +291,9 @@ programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Tran
   Planning Program (MPP)","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.517","permalink":"/program/20.517","title":"Metropolitan
   Transportation Planning (Section 5303)","popular_name":"Metropolitan Transportation
   Planning","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.278","permalink":"/program/20.278","title":"National
-  Highway Freight Program (NHFP)","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.535","permalink":"/program/20.535","title":"Statewide
+  Highway Freight Program (NHFP)","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.520","permalink":"/program/20.520","title":"Paul
+  S. Sarbanes Transit in the Parks","popular_name":"Transit in the Parks ","agency":"Department
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.535","permalink":"/program/20.535","title":"Statewide
   and Nonmetropolitan Transportation Planning and Research (Section 5304)","popular_name":null,"agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.952","permalink":"/program/20.952","title":"Transportation
   Infrastructure Finance and Innovation Act (TIFIA) Program","popular_name":"TIFIA
@@ -297,7 +305,7 @@ programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Tran
   Transportation","total_obs":-1137076.25,"program_type":"assistance_listing"}]'
 title: Multi–modal Transportation
 total_num_agencies: 3
-total_num_applicant_types: 37
-total_num_programs: 33
-total_obs: 17716295579.93
+total_num_applicant_types: 38
+total_num_programs: 36
+total_obs: 19734790589.620003
 ---

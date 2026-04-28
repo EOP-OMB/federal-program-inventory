@@ -14,9 +14,24 @@ where_used:
   permalink: /program/12.333
   program_type: assistance_listing
 - agency: Department of Defense
+  expenditure_amount: 700000000.0
+  name: Air Force Defense Research Sciences Program
+  permalink: /program/12.800
+  program_type: assistance_listing
+- agency: Department of Defense
   expenditure_amount: 800000000.0
   name: Basic Scientific Research
   permalink: /program/12.431
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 333130069.0
+  name: Basic and Applied Scientific Research
+  permalink: /program/12.300
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Basic, Applied, and Advanced Research in Science and Engineering
+  permalink: /program/12.630
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 15000000.0
@@ -27,6 +42,11 @@ where_used:
   expenditure_amount: 0.0
   name: Defense Nuclear Nonproliferation Research
   permalink: /program/81.113
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 30000.0
+  name: Dissertation Year Fellowship
+  permalink: /program/12.440
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -48,8 +68,8 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 0.0
-  name: 'Navy  Command, Control, Communications, Computers, Intelligence, Surveillance,
-    and Reconnaissance '
+  name: Navy  Command, Control, Communications, Computers, Intelligence, Surveillance,
+    and Reconnaissance
   permalink: /program/12.335
   program_type: assistance_listing
 - agency: Department of Defense
@@ -61,6 +81,11 @@ where_used:
   expenditure_amount: 0.0
   name: Predictive Science Academic Alliance Program
   permalink: /program/81.124
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 352000000.0
+  name: Research and Technology Development
+  permalink: /program/12.910
   program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 33187535.0

@@ -12,6 +12,11 @@ permalink: /pon/PON_N17
 title: Increase Service and Civic Engagement to Build Workforce Skills
 where_used:
 - agency: Corporation for National and Community Service
+  expenditure_amount: 0.0
+  name: AmeriCorps CNCS Disaster Response Cooperative Agreement 94.020
+  permalink: /program/94.020
+  program_type: assistance_listing
+- agency: Corporation for National and Community Service
   expenditure_amount: 9999965.0
   name: AmeriCorps Commission Investment Fund 94.008
   permalink: /program/94.008
@@ -65,6 +70,11 @@ where_used:
   expenditure_amount: 0.0
   name: AmeriCorps Volunteers In Service to America 94.013
   permalink: /program/94.013
+  program_type: assistance_listing
+- agency: U.S. Election Assistance Commission
+  expenditure_amount: 0.0
+  name: Help America Vote College Program
+  permalink: /program/90.400
   program_type: assistance_listing
 - agency: Department of Labor
   expenditure_amount: 0.0

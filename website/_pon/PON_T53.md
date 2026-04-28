@@ -23,13 +23,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
-  name: 'Enhanced Hunter Education and Safety '
+  name: Enhanced Hunter Education and Safety
   permalink: /program/15.626
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 309000000.0
   name: Federal Lands Access Program
   permalink: /program/20.224
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 456000000.0
+  name: Federal Lands Transportation Program (FLTP)
+  permalink: /program/20.260
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -108,12 +113,17 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 455083372.0
-  name: 'Sport Fish Restoration '
+  name: Sport Fish Restoration
   permalink: /program/15.605
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 5200000.0
   name: Upper Mississippi River Restoration Long Term Resource Monitoring
   permalink: /program/15.978
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 45100000.0
+  name: Youth Conservation Corps and Public Land Corps
+  permalink: /program/10.740
   program_type: assistance_listing
 ---

@@ -31,6 +31,11 @@ where_used:
   name: Language Resource Centers
   permalink: /program/84.229
   program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 2375000.0
+  name: National Environmental Education Training Program
+  permalink: /program/66.950
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 125000.0
   name: National Food and Agricultural Sciences Teaching, Extension, and Research

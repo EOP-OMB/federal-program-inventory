@@ -11,10 +11,15 @@ where_used:
   name: Contributions to International Organizations for Overseas Assistance
   permalink: /program/19.515
   program_type: assistance_listing
-- agency: Department of Homeland Security
+- agency: Agency for International Development
   expenditure_amount: 0.0
-  name: FY 2022 Operation Allies Welcome Airport Assistance Grant
-  permalink: /program/97.009
+  name: Denton Program
+  permalink: /program/98.010
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: Department of Defense HIV/AIDS Prevention Program
+  permalink: /program/12.350
   program_type: assistance_listing
 - agency: Agency for International Development
   expenditure_amount: 0.0
@@ -58,6 +63,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Overseas Refugee Assistance Programs for Europe
+  permalink: /program/19.520
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Overseas Refugee Assistance Programs for Strategic Global Priorities
   permalink: /program/19.522
   program_type: assistance_listing
@@ -70,5 +80,10 @@ where_used:
   expenditure_amount: 0.0
   name: Regional Democracy Program
   permalink: /program/19.221
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: U.S. Refugee Admissions Program
+  permalink: /program/19.510
   program_type: assistance_listing
 ---
