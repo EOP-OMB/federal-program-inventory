@@ -1,8 +1,8 @@
 ---
 category: Natural Resources
 definition: 'A program whose beneficiaries achieved one or more of the following results
-  within the past year: -Increased acres or miles of water''such as rivers, lakes,
-  wetlands, estuaries, streams, shorelines, or coastal areas''restored through sediment
+  within the past year: -Increased acres or miles of water—such as rivers, lakes,
+  wetlands, estuaries, streams, shorelines, or coastal areas—restored through sediment
   removal, vegetation planting, erosion control, or habitat creation; -Increased aquatic
   environments rehabilitated to support fish and wildlife populations; improve water
   quality; -Increased habitat connectivity for fish passage or wildlife corridor access.'

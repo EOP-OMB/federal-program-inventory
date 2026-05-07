@@ -1,6 +1,6 @@
 ---
 category: Education
-definition: Strengthening students' academic foundation, interest, and identity in
+definition: Strengthening students’ academic foundation, interest, and identity in
   STEM fields.
 focus_area: STEM Education
 gwo_id: GWO.G12

@@ -1,6 +1,6 @@
 ---
 category: National Defense
-definition: Advancing military innovation and technology to maintain America's strategic
+definition: Advancing military innovation and technology to maintain America’s strategic
   advantage.
 focus_area: Defense Capability
 gwo_id: GWO.ND2

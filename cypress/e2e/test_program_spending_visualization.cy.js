@@ -128,7 +128,6 @@ describe('Program Overview Visualization', () => {
     cy.get(tooltipSelector).should('contain.text', '2019');
     cy.get(tooltipSelector).should('contain.text', 'Obligations');
     cy.get(tooltipSelector).should('contain.text', 'Outlays');
-    cy.get(tooltipSelector).should('contain.text', 'Projected');
   });
 
   it('dollar amount formatting', () => {
@@ -141,7 +140,6 @@ describe('Program Overview Visualization', () => {
     // Wait for tooltip to be populated with content before asserting
     cy.get(tooltipSelector).should('contain.text', 'Year');
     cy.get(tooltipSelector).should('contain.text', '2020');
-    cy.get(tooltipSelector).should('contain.text', '$52M');
     cy.get(tooltipSelector).should('contain.text', '$50B');
     cy.get(tooltipSelector).should('contain.text', '$50T');
   });

@@ -1,8 +1,8 @@
 ---
 category: Natural Resources
 definition: 'A program whose beneficiaries achieved one or more of the following results
-  within the past year: -Increased acres of natural areas''such as forests, grasslands,
-  wetlands, or waterways''preserved; -Reduced habitat loss caused by erosion, overuse,
+  within the past year: -Increased acres of natural areas—such as forests, grasslands,
+  wetlands, or waterways—preserved; -Reduced habitat loss caused by erosion, overuse,
   or poorly planned development through responsible land management; -Developed or
   strengthened long-term plans to safeguard natural resources for future generations
   and community use.'

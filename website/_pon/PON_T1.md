@@ -7,7 +7,7 @@ definition: 'A program whose beneficiaries demonstrated one or more of the follo
 focus_area: Consumer and Occupational Health and Safety
 gwo_id: PON.T1
 permalink: /pon/PON_T1
-title: Improve Production Operations and Oversight'
+title: Improve Production Operations and Oversight 
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 20145522.0

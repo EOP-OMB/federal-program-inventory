@@ -114,17 +114,12 @@
       .innerRadius(0)
       .outerRadius(radius);
 
-    // Create tooltip
-    const tooltip = d3.select("#obligations-pie-chart")
-      .append("div")
-      .attr("class", "tooltip")
-      .style("opacity", 0)
-      .style("position", "absolute")
-      .style("background-color", "white")
-      .style("padding", "8px")
-      .style("border", "1px solid #ddd")
-      .style("border-radius", "4px")
-      .style("pointer-events", "none");
+    // Create tooltip with a scoped class to avoid collisions with framework tooltip styles.
+    const tooltip = d3.select("body")
+      .selectAll(".obligations-pie-tooltip")
+      .data([null])
+      .join("div")
+      .attr("class", "obligations-pie-tooltip");
 
     // Create the pie chart
     const slices = pieGroup.selectAll("path")
@@ -136,19 +131,25 @@
       .attr("stroke", "white")
       .style("stroke-width", "2px")
       .on("mouseover", function(event, d) {
-    tooltip.transition()
-      .duration(200)
-      .style("opacity", 0.9);
-    tooltip.html(`
-      ${d.data.title}<br/>
-      ${formatObligations(d.data.total_obs)} of ${formatObligations(totalObligations)}
-    `)
-      .style("left", (event.pageX + 10) + "px")
-      .style("top", (event.pageY - 10) + "px");
-  })
+        tooltip
+          .interrupt()
+          .style("opacity", 0.95)
+          .html(`
+            ${d.data.title}<br/>
+            ${formatObligations(d.data.total_obs)} of ${formatObligations(totalObligations)}<br/>
+            ${d.data.percentage.toFixed(1)}%
+          `)
+          .style("left", `${event.clientX + 12}px`)
+          .style("top", `${event.clientY + 12}px`);
+      })
+      .on("mousemove", function(event) {
+        tooltip
+          .style("left", `${event.clientX + 12}px`)
+          .style("top", `${event.clientY + 12}px`);
+      })
       .on("mouseout", function() {
-        tooltip.transition()
-          .duration(500)
+        tooltip
+          .interrupt()
           .style("opacity", 0);
       });
   }

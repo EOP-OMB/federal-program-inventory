@@ -4,7 +4,7 @@
     <div class="display-flex flex-align-center flex-justify gap-2">
       <div>
         <p class="{% if include.title_margin %}{{ include.title_margin }}{% else %}margin-bottom-0{% endif %} text-ink text-bold">{{ include.title }}</p>
-        <p class="text-base margin-y-0">Targeted by {{ include.target_count | default: 0 }} other programs</p>
+        <p class="text-base margin-y-0">Targeted by {{ include.target_count | default: 0 }} programs</p>
       </div>
       <svg class="usa-icon flex-shrink-0 margin-left-2 text-base" {% if include.icon_style %}style="{{ include.icon_style }}"{% endif %} aria-hidden="true" focusable="false" role="img">
         <use href="/assets/img/sprite.svg#{{ include.icon }}"></use>

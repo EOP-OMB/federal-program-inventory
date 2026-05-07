@@ -8,7 +8,7 @@
         <li class="padding-bottom-2">
             <span>
             {% if auth.url %}
-                <a href="{{ auth.url }}" class="usa-link--external" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
+                <a href="{{ auth.url }}" class="usa-link--external text-base-darkest" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
             {% else %}
                 {{ auth.text }}
             {% endif %}
@@ -25,7 +25,7 @@
     <div id="rules-and-regulations">
     <ul class="usa-list">
         <!-- single list item is intentional -->
-        <li class="padding-bottom-2">
+        <li>
         <span>
             {{ include.rules_regulations }}
         </span>
@@ -35,5 +35,5 @@
 {% endif %}
 
 {% if authorization_and_rules_missing == true %}
-    <p>Not available.</p>
+    <p class="margin-top-0">Not available.</p>
 {% endif %}

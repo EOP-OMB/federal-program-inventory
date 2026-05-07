@@ -1,8 +1,8 @@
 ---
 category: Environmental Quality
 definition: 'A program whose beneficiaries demonstrated one or more of the following
-  results within the past year: -Rehabilitated dangerous physical environments''such
-  as abandoned land mines, unstable terrain, or degraded watersheds''to reduce risks
+  results within the past year: -Rehabilitated dangerous physical environments—such
+  as abandoned land mines, unstable terrain, or degraded watersheds—to reduce risks
   to people and property; -Improved safety in homes and public spaces through common-sense
   measures like installing carbon monoxide detectors, removing lead hazards, or reinforcing
   structures; -Enhanced preparedness and mitigation strategies to protect communities

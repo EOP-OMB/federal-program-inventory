@@ -49,7 +49,7 @@ footer_include: _footer-search.html
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="agency-section" data-content-id="agency-section">
-                <span class="text-ink line-height-body-3">Agency</span>
+                <span class="font-heading-sm text-ink line-height-body-3">Agency</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -242,100 +242,7 @@ footer_include: _footer-search.html
           </ul>
         </nav>
         <!-- end category sub nav-->
-        <nav class="usa-sidenav">
-          <ul class="usa-sidenav__sublist">
-            <li class="usa-sidenav__item">
-              <div class="border-top border-base-lighter"></div>
-
-              <button type="button"
-                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
-                aria-expanded="false" aria-controls="program-type-section" data-content-id="program-type-section">
-                <span class="font-heading-sm text-ink line-height-body-3">Program type</span>
-                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
-                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
-                  </svg>
-                </div>
-              </button>
-
-              <!-- Program Type Content -->
-              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="program-type-section" hidden>
-                <fieldset class="usa-fieldset margin-0">
-                  {% for a in page.assistance_types %}
-                  <div class="display-flex flex-align-start">
-                    <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
-                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="usa-checkbox flex-fill">
-                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-assistancetype-{{ forloop.index }}" type="checkbox" name="assistancetypes"
-                        data-filter-type="assistance" data-assistance-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
-                        for="check-assistancetype-{{ forloop.index }}">
-                        {{ a.title }}
-                      </label>
-                    </div>
-                  </div>
-                  {% endfor %}
-                </fieldset>
-              </div>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Eligible Applicants sub nav -->
-        <nav class="usa-sidenav">
-          <ul class="usa-sidenav__sublist">
-            <li class="usa-sidenav__item">
-              <div class="border-top border-base-lighter"></div>
-
-              <button type="button"
-                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
-                aria-expanded="false" aria-controls="eligible-applicants-section"
-                data-content-id="eligible-applicants-section">
-                <span class="font-heading-sm text-ink line-height-body-3">Eligible applicants</span>
-                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
-                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
-                  </svg>
-                </div>
-              </button>
-
-              <!-- Eligible Applicants Content -->
-              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="eligible-applicants-section" hidden>
-                <fieldset class="usa-fieldset margin-0">
-                  {% for a in page.applicant_types %}
-                  <div class="display-flex flex-align-start">
-                    <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
-                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="usa-checkbox flex-fill">
-                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-applicant-{{ forloop.index }}" type="checkbox" name="applicants"
-                        data-filter-type="applicant" data-applicant-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
-                        for="check-applicant-{{ forloop.index }}">
-                        {{ a.title }}
-                      </label>
-                    </div>
-                  </div>
-                  {% endfor %}
-                </fieldset>
-              </div>
-            </li>
-          </ul>
-        </nav>
-
+         
         <!-- Government-wide Objectives sub nav -->
         <nav class="usa-sidenav">
           <ul class="usa-sidenav__sublist">
@@ -390,6 +297,7 @@ footer_include: _footer-search.html
             </li>
           </ul>
         </nav>
+        <!-- end Government-wide Objectives sub nav-->
 
         <!-- Program outcomes sub nav -->
         <nav class="usa-sidenav">
@@ -446,12 +354,108 @@ footer_include: _footer-search.html
             </li>
           </ul>
         </nav>
+        <!-- end program outcomes sub nav-->
+
+         <!-- program type sub nav-->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="program-type-section" data-content-id="program-type-section">
+                <span class="font-heading-sm text-ink line-height-body-3">Program type</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Program Type Content -->
+              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="program-type-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for a in page.assistance_types %}
+                  <div class="display-flex flex-align-start">
+                    <div class="padding-left-2">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-assistancetype-{{ forloop.index }}" type="checkbox" name="assistancetypes"
+                        data-filter-type="assistance" data-assistance-title="{{ a.title }}" />
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
+                        for="check-assistancetype-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- end program type sub nav-->
+
+        <!-- Eligible Applicants sub nav -->
+        <nav class="usa-sidenav">
+          <ul class="usa-sidenav__sublist">
+            <li class="usa-sidenav__item">
+              <div class="border-top border-base-lighter"></div>
+
+              <button type="button"
+                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
+                aria-expanded="false" aria-controls="eligible-applicants-section"
+                data-content-id="eligible-applicants-section">
+                <span class="font-heading-sm text-ink line-height-body-3">Eligible applicants</span>
+                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Eligible Applicants Content -->
+              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="eligible-applicants-section" hidden>
+                <fieldset class="usa-fieldset margin-0">
+                  {% for a in page.applicant_types %}
+                  <div class="display-flex flex-align-start">
+                    <div class="padding-left-2">
+                      <a class="toggle expandable-button" style="pointer-events: none;">
+                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                          height="24">
+                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="usa-checkbox flex-fill">
+                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
+                        id="check-applicant-{{ forloop.index }}" type="checkbox" name="applicants"
+                        data-filter-type="applicant" data-applicant-title="{{ a.title }}" />
+                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
+                        for="check-applicant-{{ forloop.index }}">
+                        {{ a.title }}
+                      </label>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </fieldset>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- end Eligible Applicants sub nav-->
       </form>
     </div>
     <div class="desktop:grid-col-9">
       <div class="width-full text-primary font-heading-xl line-height-sans-2">Search for programs</div>
-      <div class="width-full text-ink font-heading-sm text-bold padding-top-2">Search by program name, popular name,
-        objectives, or outcomes</div>
 
       <form class="usa-search usa-search--small padding-top-1 padding-bottom-2" role="search">
         <label class="usa-sr-only" for="search-field-en-small">Search</label>
@@ -480,7 +484,7 @@ footer_include: _footer-search.html
               <span class="text-primary font-heading-xl" id="total-programs"> of <span id="global-count"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-heading-lg line-height-sans-4">programs</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">programs in FY {{ page.fiscal_year }}</span>
             </div>
           </div>
           <div class="grid-col-5">
@@ -490,7 +494,7 @@ footer_include: _footer-search.html
                   id="global-obligations"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-heading-lg line-height-sans-4">in FY {{ page.fiscal_year }} expenditures</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">in expenditures</span>
             </div>
           </div>
         </div>
