@@ -975,8 +975,8 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
 
         # Get program objective
         cursor.execute("""
-            SELECT id, gwo FROM gwo
-            LEFT JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
+            SELECT gwo.id, gwo.gwo FROM program_to_gwo
+            JOIN gwo ON program_to_gwo.gwo_id = gwo.id
             WHERE program_to_gwo.program_id = ?
         """, (program['id'],))
         gwo_row = cursor.fetchone()
@@ -990,10 +990,10 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
 
         # Get program outcomes
         cursor.execute("""
-            SELECT id, pon2 FROM pon
-            LEFT JOIN program_to_pon ON pon.id = program_to_pon.pon_id
+            SELECT pon.id, pon.pon2 FROM program_to_pon
+            JOIN pon ON program_to_pon.pon_id = pon.id
             WHERE program_to_pon.program_id = ?
-            ORDER BY pon2
+            ORDER BY pon.pon2
         """, (program['id'],))
         pons = [{
             'pon': row['pon2'],
@@ -1101,7 +1101,8 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         FROM program p
         JOIN agency a ON p.agency_id = a.id
         JOIN agency a1 ON a.tier_1_agency_id = a1.id
-        WHERE a1.is_cfo_act_agency = 1
+        -- hide USAID (aka "Agency for International Development") from search filters
+        WHERE a1.is_cfo_act_agency = 1 AND a1.id <> 100148640
         ORDER BY title
     """)
     

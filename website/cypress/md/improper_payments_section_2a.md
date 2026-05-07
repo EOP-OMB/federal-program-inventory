@@ -2,20 +2,17 @@
 layout: default
 title: Improper Payments Seection
 improper_payments:
-- agency: SSA
-  end_date: 09-2024
+- agency: TREASURY
+  end_date: ''
   fiscal_year: 2025
-  improper_payments: 1617.09514973
+  improper_payments: 0.0
   insufficient_payment: 0.0
-  name: Old-Age and Survivors Insurance (OASI)
-  outlays: 1287478.74951543
-  slug: ssa-old-age-and-survivors-insurance-oasi
-  start_date: 10-2023
+  name: Departmental Offices - Emergency Rental Assistance
+  outlays: 0.0
+  slug: treasury-departmental-offices-emergency-rental-assistance
+  start_date: ''
 improper_payments_is_multiple: false
-improper_payments_related_programs:
-- id: '96.004'
-  name: Social Security Survivors Insurance
-  permalink: /program/96.004
+improper_payments_related_programs: []
 ---
 
 <div id="improper-payment" style="margin: 10%;">

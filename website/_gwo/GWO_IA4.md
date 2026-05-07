@@ -1,6 +1,6 @@
 ---
 category: International Affairs
-definition: Strengthening America's relationships with foreign governments and international
+definition: Strengthening America’s relationships with foreign governments and international
   organizations.
 focus_area: International Relations and Foreign Affairs
 gwo_id: GWO.IA4

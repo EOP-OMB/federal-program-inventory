@@ -1,6 +1,6 @@
 ---
 category: Disaster Prevention and Relief
-definition: Strengthening communities' ability to withstand, adapt to, and recover
+definition: Strengthening communities’ ability to withstand, adapt to, and recover
   from disasters and emergencies.
 focus_area: Disaster Readiness, Response, and Relief
 gwo_id: GWO.F2

@@ -1,7 +1,7 @@
 ---
 category: Income Security and Social Services
 definition: 'A program whose beneficiaries achieved one or more of the following results
-  within the past year: -Burial in a VA-maintained national, state, or tribal veterans''
+  within the past year: -Burial in a VA-maintained national, state, or tribal veterans’
   cemetery, or receipt of a burial allowance for a private cemetery; -Provision of
   a government-furnished headstone, marker, medallion, flag, or memorial certificate;
   -Financial support for eligible burial, funeral, plot, or transportation costs.'

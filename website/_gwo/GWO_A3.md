@@ -1,6 +1,6 @@
 ---
 category: Agricultural
-definition: Advancing the competitiveness and resilience of America's farms and rural
+definition: Advancing the competitiveness and resilience of America’s farms and rural
   communities.
 focus_area: Farm Income Stabilization
 gwo_id: GWO.A3

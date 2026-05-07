@@ -1,5 +1,5 @@
 ---
-agencies_count: '55 '
+agencies_count: '54 '
 applicant_types:
 - title: Active-Duty Service Person (including dependents
 - title: Airport Authority
@@ -211,7 +211,6 @@ categories:
   - title: Water Transportation
   title: Transportation
 cfo_agencies:
-- title: Agency for International Development
 - sub_categories:
   - title: Agricultural Marketing Service
   - title: Agricultural Research Service
@@ -446,7 +445,7 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
-outcomes_count: '307 '
+outcomes_count: '306 '
 permalink: /
 program_types:
 - title: Advisory Services and Counseling

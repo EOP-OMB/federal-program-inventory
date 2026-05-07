@@ -414,7 +414,6 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
     if (nearestYear !== null) {
       const outlayPoint = data.outlays.find(d => d.year === nearestYear);
       const obligationPoint = data.obligations.find(d => d.year === nearestYear);
-      const projectedPoint = data.projectedOutlays.find(d => d.year === nearestYear && d.value !== null);
       const revenueLossPoint = data.revenueLosses.find(d => d.year === nearestYear && d.value !== null);
       const hasRevenueLosses = data.revenueLosses.filter(d => d.value !== null && d.value !== 0).length > 0;
 
@@ -439,10 +438,6 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
 
       if (obligationPoint && showObligations) {
         tooltipContent += `Obligations: ${formatDollarAmount(obligationPoint.value)}<br/>`;
-      }
-
-      if (projectedPoint) {
-        tooltipContent += `Projected Outlays: ${formatDollarAmount(projectedPoint.value)}`;
       }
 
       tooltip

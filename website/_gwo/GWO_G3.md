@@ -1,7 +1,7 @@
 ---
 category: Education
 definition: Fostering safe, supportive, and high-quality learning environments that
-  foster students' academic and social development.
+  foster students’ academic and social development.
 focus_area: Educational Environments
 gwo_id: GWO.G3
 permalink: /gwo/GWO_G3

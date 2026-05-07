@@ -1,6 +1,6 @@
 ---
 category: Cultural Affairs
-definition: Developing individuals' artistic abilities, knowledge, and creativity'within
+definition: Developing individuals' artistic abilities, knowledge, and creativity within
   the arts and humanities fields.
 focus_area: Artistic Talent Development
 gwo_id: GWO.E2

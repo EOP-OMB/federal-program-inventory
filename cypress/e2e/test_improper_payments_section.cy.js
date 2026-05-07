@@ -1,15 +1,18 @@
 describe('Improper Payments Section', () => {
   const screenshotSelector = '#improper-payment';
 
-  /*
-   * 1:  has non-zero IP, lacks related programs, and one timeframe
-   * 2a: has non-zero IP, has related programs, and one timeframe
-   * 2b: has non-zero IP, has related programs, and multiple timeframes
-   * 3:  lacks non-zero IP (has mappings), lacks related programs
-   * 4:  lacks non-zero IP (has mappings), has related programs
-   * 5:  lacks mappings
+  /* #   FPI:IP   Has Values
+   * 1a  1:1      Y
+   * 1b  M:1      Y
+   * 2a  1:1      N
+   * 2b  M:1      N
+   * 3a  1:M      Y
+   * 3b  M:M      Y
+   * 4a  1:M      N
+   * 4b  M:M      N
+   * 5   0:0      N
    */
-  const scenarios = ['1', '2a', '2b', '3', '4', '5'];
+  const scenarios = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5'];
 
   for(let i = 0; i < scenarios.length; ++i) {
     const scenarioId = 'improper_payments_section_' + scenarios[i];

@@ -1,6 +1,6 @@
 ---
 category: Energy
-definition: Ensuring America's energy systems remain reliable, stable, and resilient
+definition: Ensuring America’s energy systems remain reliable, stable, and resilient
   to disruptions.
 focus_area: Energy Supply
 gwo_id: GWO.I4
