@@ -3,7 +3,7 @@ category: Law, Justice, and Legal Services
 definition: 'A program whose beneficiaries attained one or more of the following results
   within the past year: -Advocacy, counseling, or legal assistance, including legal
   representation or accompaniment during justice system proceedings; -Disseminated
-  approved guidance on victims'' rights, justice processes, and available protections;
+  approved guidance on victims’ rights, justice processes, and available protections;
   -Provided financial assistance or compensation for crime-related expenses; -Connected
   eligible individuals with available community services.'
 focus_area: Law Enforcement Support

@@ -357,7 +357,6 @@ categories:
   - title: Water Transportation
   title: Transportation
 cfo_agencies:
-- title: Agency for International Development
 - sub_categories:
   - title: Agricultural Marketing Service
   - title: Agricultural Research Service
@@ -626,7 +625,6 @@ gwo_options:
 - title: Provide Healthcare Coverage
 - title: Provide International Development and Humanitarian Assistance
 - title: Provide Lending and Investment Opportunities
-- title: Provide Personnel and Human Capital Management
 - title: Provide Quality Sanitation Services
 - title: Provide Quality Solid Waste Management Systems
 - title: Provide Quality, Reliable Telecommunications Systems
@@ -828,7 +826,7 @@ pon_options:
 - title: 'Improve Post-Incarceration Reentry and Reintegration '
 - title: Improve Preparation for Post-Secondary Education
 - title: Improve Prevention of Child Abuse and Neglect
-- title: Improve Production Operations and Oversight'
+- title: Improve Production Operations and Oversight 
 - title: Improve Program Evaluation
 - title: Improve Prosecutorial Capacity of Criminal Activity
 - title: Improve Protection of Political Rights
@@ -931,7 +929,6 @@ pon_options:
 - title: Increase Local Economic Growth
 - title: Increase Long-Term Housing
 - title: Increase Long-Term Personal Financial Stability
-- title: Increase Manufacturing Technology Adoption
 - title: Increase Mental and Physical Well-Being Support for Individuals with Disabilities
 - title: Increase Mental and Physical Well-Being Support for Veterans
 - title: 'Increase Organizational Issue Awareness and Advocacy '

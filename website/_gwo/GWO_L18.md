@@ -1,6 +1,6 @@
 ---
 category: Health
-definition: Strengthening the healthcare system's ability to meet patient and community
+definition: Strengthening the healthcare system’s ability to meet patient and community
   needs.
 focus_area: Healthcare Quality and Delivery
 gwo_id: GWO.L18

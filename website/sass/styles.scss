@@ -35,6 +35,11 @@ $improper-payments-red:#b91c1c;
   cursor: pointer;
 }
 
+.has-tooltip {
+  cursor: help;
+  border-bottom: 1px dotted currentColor;
+}
+
 .width-full {
   width: 100%;
 }
@@ -153,8 +158,8 @@ $improper-payments-red:#b91c1c;
 
 .how-it-works-logo {
   width: 100%;
-  max-width: 75%;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
 }
 
 .how-it-works-content {
@@ -305,7 +310,7 @@ a.test-visited {
   min-width: 220px;
   border: 2px solid #cdcabd;
   border-radius: 0.5rem;
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .payment-rate-box .usa-label {
@@ -407,6 +412,15 @@ th.gridjs-th {
   }
 
 #search-filters {
+  .usa-sidenav__button {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .usa-sidenav__button > span {
+    text-align: left;
+  }
+
   .usa-sidenav__sublist a:not(.usa-button) {
     padding-left: 5px;
   }
@@ -584,6 +598,7 @@ th.gridjs-th {
 
   .text-truncate {
     display: -webkit-box;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -591,6 +606,7 @@ th.gridjs-th {
   }
 
   .text-truncate.expanded {
+    line-clamp: unset;
     -webkit-line-clamp: unset;
   }
 
@@ -753,6 +769,23 @@ th.gridjs-th {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   max-width: 150px;
   word-wrap: break-word;
+  white-space: normal;
+}
+
+.obligations-pie-tooltip {
+  background-color: $site-font-color;
+  color: white;
+  position: fixed;
+  border: 1px solid $site-font-color;
+  border-radius: 4px;
+  padding: 8px 10px;
+  pointer-events: none;
+  opacity: 0;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   white-space: normal;
 }
 

@@ -5,7 +5,7 @@ definition: 'A program whose beneficiaries attained one or more of the following
   crimes through modern investigative techniques (e.g., DNA analysis, digital forensics);
   -Successfully prosecuted or legally resolved cases that had remained open for extended
   periods; -Provided verified information or evidence that contributed to case closure
-  or reclassification; -Facilitated meaningful closure for victims'' families through
+  or reclassification; -Facilitated meaningful closure for victims’ families through
   official acknowledgment, justice processes, or public recognition.'
 focus_area: Law Enforcement Support
 gwo_id: PON.18P

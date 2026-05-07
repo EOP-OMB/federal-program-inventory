@@ -51,6 +51,15 @@ def create_index_with_mapping(index_name):
                     "default_field": ["title", "objectives", "cfda",
                                       "popularName", "gwo", "pons"]
                 }
+            },
+            "analysis": {
+                "normalizer": {
+                    "lowercase": {
+                        "type": "custom",
+                        "char_filter": [],
+                        "filter": ["lowercase"]
+                    }
+                }
             }
         },
         "mappings": {
@@ -113,10 +122,12 @@ def create_index_with_mapping(index_name):
                     }
                 },
                 "gwo": {
-                    "type": "keyword"
+                    "type": "keyword",
+                    "normalizer": "lowercase"
                 },
                 "pons": {
-                    "type": "keyword"
+                    "type": "keyword",
+                    "normalizer": "lowercase"
                 },
                 "popularName": {
                     "type": "text",

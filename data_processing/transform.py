@@ -1361,6 +1361,12 @@ def load_acquisitions_and_services():
             None
         ])
 
+        cur.execute(PROGRAM_AUTHORIZATION_INSERT_SQL, [
+            row["Program ID"],
+            row["Authorization"],
+            row["Authorization URL"]
+        ])
+
         # Add category mapping to utilize existing "Program Type" filter in the UI
         category_id = 'contracts'
         if row["Program Type"].lower() == 'government service':
@@ -1505,8 +1511,16 @@ def remove_orphaned_records():
         WHERE program_id NOT IN (SELECT id FROM program);
     """)
     cur.execute("""
+        DELETE FROM program_to_gwo
+        WHERE gwo_id NOT IN (SELECT id FROM gwo);
+    """)
+    cur.execute("""
         DELETE FROM program_to_pon
         WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_pon
+        WHERE pon_id NOT IN (SELECT id FROM pon);
     """)
     cur.execute("""
         DELETE FROM usaspending_assistance_obligation_aggregation

@@ -200,3 +200,7 @@ Note: this pulls the latest data from the API, so if this is used for verificati
 # extract_assistance_outlay_aggregation_by_aln.py
 
 This pulls outlay and obligation data by ALN from the temp_db created by the data pipeline.  Example command:  `python3 extract_assistance_outlay_aggregation_by_aln.py --aln "10.205"`
+
+# query_usaspending_csvs.py
+
+This iterates through a directory of usaspending award archive zip files and generates a detailed list of supporting files and summary lists by award and year.  Example command:  `python3 query_usaspending_csvs.py --filepath ~/usaspending-awards-data/assistance --cfda 93.778 --temp-dir ~/tmp`

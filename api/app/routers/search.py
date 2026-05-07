@@ -33,9 +33,8 @@ def build_multi_match_query(query: str) -> Dict[str, Any]:
         "multi_match": {
             "query": query,
             "fields": [f"{field}^{config['boost']}" for field, config in SEARCH_FIELDS.items()],
-            "type": "best_fields",
-            "operator": "and",
-            "fuzziness": "AUTO"
+            "type": "phrase",
+            "operator": "and"
         }
     }
 

@@ -69,6 +69,7 @@ footer_include: _footer-program.html
               <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;">
                 <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
                   <h2 class="text-bold">Purpose</h2>
+                  {% include components/_view-results.html href="#" text="View results" onclick="document.getElementById('results-tab').click();" %}
                 </div>
                 {% if page.gwo != nil %}
                 <h4 class="text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
@@ -178,18 +179,52 @@ footer_include: _footer-program.html
       <div id="results-panel" role="tabpanel" aria-labelledby="results-tab" class="tab-panel display-none">
         <div class="grid-row grid-gap padding-bottom-205">
           <div class="grid-col-12">
-            <h2 class="text-bold margin-top-0 margin-bottom-1 padding-bottom-4">Program Results</h2>
             <!-- Program Results Start -->
+            {% assign has_results = false %}
             {% if page.results and page.results.size > 0 %}
-              <div id="program-results">
-                {% assign sorted_results = page.results | sort: 'year' %}
-                {% for result in sorted_results %}
-                  <div class="padding-bottom-4">
-                    <div class="font-heading-lg text-bold">{{ result.year }}</div>
-                    <p class="margin-top-1 desc-line-spacing">{{ result.description | markdownify }}</p>
-                  </div>
-                {% endfor %}
-              </div>
+              {% assign has_results = true %}
+            {% endif %}
+
+            {% if has_pons == true or has_purpose == true or has_results == true %}
+              {% if has_pons == true or has_purpose == true %}
+                <div id="program-pon-gwo">
+                  <h2 class="text-bold margin-top-0">Objectives and Outcomes</h2>
+                  {% if has_purpose == true %}
+                    <p>Objectives:</p>
+                    <ul>
+                      <li><a class="text-base-darkest" href="{{ page.gwo.permalink }}">{{ page.gwo.gwo }}</a></li>
+                    </ul>
+                  {% else %}
+                    <p>Objectives not yet available.</p>
+                  {% endif %}
+
+                  {% if has_pons == true %}
+                    <p>Outcomes:</p>
+                    <ul>
+                      {% for pon in page.pons %}
+                        <li><a class="text-base-darkest" href="{{ pon.permalink }}">{{ pon.pon }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <p>Outcomes not yet available.</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if has_results == true %}
+                <div id="program-results">
+                  <h2 class="text-bold">Program Results</h2>
+                  {% assign sorted_results = page.results | sort: 'year' | reverse %}
+                  {% for result in sorted_results %}
+                    <div class="padding-bottom-2">
+                      <div class="font-heading-lg text-bold">{{ result.year }}</div>
+                      <p class="margin-top-1 desc-line-spacing usa-prose">{{ result.description | markdownify }}</p>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            {% else %}
+              <p class="margin-top-0">Information is not yet available.</p>
             {% endif %}
             <!-- Program Results End -->
           </div>

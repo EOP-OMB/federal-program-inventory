@@ -14,10 +14,10 @@ describe('Target Count Card Validation', () => {
   it('shows correct GWO target_count in card', () => {
     cy.visit(testUrl);
     
-    // The GWO card should show "Targeted by 5 other programs"
+    // The GWO card should show "Targeted by 5 programs"
     cy.get('[data-testid="gwo-clickable-tile"]').should('exist');
     cy.get('[data-testid="gwo-clickable-tile"]').within(() => {
-      cy.get('.text-base').should('contain.text', 'Targeted by 5 other programs');
+      cy.get('.text-base').should('contain.text', 'Targeted by 5 programs');
     });
     
     // Take a snapshot of the GWO card for visual regression
@@ -27,10 +27,10 @@ describe('Target Count Card Validation', () => {
   it('shows correct PON target_count in card', () => {
     cy.visit(testUrl);
     
-    // The PON card should show "Targeted by 3 other programs"
+    // The PON card should show "Targeted by 3 programs"
     cy.get('[data-testid="pon-clickable-tile"]').should('exist');
     cy.get('[data-testid="pon-clickable-tile"]').within(() => {
-      cy.get('.text-base').should('contain.text', 'Targeted by 3 other programs');
+      cy.get('.text-base').should('contain.text', 'Targeted by 3 programs');
     });
     
     // Take a snapshot of the PON card for visual regression

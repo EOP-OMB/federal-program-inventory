@@ -1,8 +1,8 @@
 ---
 category: Natural Resources
 definition: 'A program whose beneficiaries achieved one or more of the following results
-  within the past year: -Increased acres of natural areas''such as damaged forests,
-  drained wetlands, or fragmented habitats''rehabilitated to support healthy ecosystems
+  within the past year: -Increased acres of natural areas—such as damaged forests,
+  drained wetlands, or fragmented habitats—rehabilitated to support healthy ecosystems
   and wildlife recovery; -Increased use of practical restoration methods such as erosion
   control, replanting native vegetation, or reconnecting habitat corridors; -Increased
   local capacity to restore and maintain natural lands in ways that benefit agriculture,

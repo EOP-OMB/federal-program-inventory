@@ -2,7 +2,7 @@
 category: Health
 definition: 'A program whose beneficiaries demonstrated one or more of the following
   results within the past year: -Increased knowledge and use of developmentally appropriate
-  parenting strategies to support a child''s growth and well-being (e.g., positive
+  parenting strategies to support a child’s growth and well-being (e.g., positive
   discipline, responsive caregiving, language-rich interaction); -Increased knowledge
   of developmental milestones or age-appropriate behaviors in children.'
 focus_area: Health and Wellbeing

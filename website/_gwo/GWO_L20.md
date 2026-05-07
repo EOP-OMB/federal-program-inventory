@@ -1,7 +1,7 @@
 ---
 category: Health
 definition: Strengthening the overall effectiveness, safety, and patient experience
-  of America's healthcare systems.
+  of America’s healthcare systems.
 focus_area: Healthcare Quality and Delivery
 gwo_id: GWO.L20
 permalink: /gwo/GWO_L20

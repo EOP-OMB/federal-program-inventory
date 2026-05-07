@@ -245,9 +245,9 @@ describe('Improper Payment Rate Card', () => {
       cy.get('#improper-payments-percent').should('not.contain', '%');
     });
 
-    it('should display "Varies" instead of dollar amount when improper_payments_is_multiple is true', () => {
-      // Should show "Amount: Varies" not a dollar amount
-      cy.get('#improper-payments-total').should('contain', 'Varies');
+    it('should display "Multiple" instead of dollar amount when improper_payments_is_multiple is true', () => {
+      // Should show "Amount: Multiple" not a dollar amount
+      cy.get('#improper-payments-total').should('contain', 'Multiple');
       cy.get('#improper-payments-total').should('not.contain', '$');
     });
 
@@ -272,7 +272,7 @@ describe('Improper Payment Rate Card', () => {
       cy.get('.payment-rate-box').contains('Improper Payment').should('be.visible');
     });
 
-    it('visual regression: improper payment card displays "Multiple" and "Varies" when improper_payments_is_multiple is true', () => {
+    it('visual regression: improper payment card displays "Multiple" when improper_payments_is_multiple is true', () => {
       // Wait for any animations to complete
       cy.wait(500);
       // Capture the entire grid container to show the multiple rate card is displayed
@@ -284,7 +284,6 @@ describe('Improper Payment Rate Card', () => {
       cy.get('.usa-tag').then(($tag) => {
         const text = $tag.text();
         expect(text).to.contain('Multiple');
-        expect(text).to.contain('Varies');
         expect(text).to.contain('|'); // Verify the separator is present
       });
     });
