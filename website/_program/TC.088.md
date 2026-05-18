@@ -7,7 +7,6 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Transportation
 - Transportation - Multi–modal Transportation
 cfda: TC.088
 fiscal_year: '2025'

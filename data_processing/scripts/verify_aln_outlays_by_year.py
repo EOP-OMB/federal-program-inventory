@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
 Download USASpending transaction data for a given Assistance Listing Number (ALN),
-group by assistance_award_unique_key, and bucket summed outlays by the award's
-first (earliest) action_date fiscal year.
+group by assistance_award_unique_key, and bucket outlays by the award's first
+(earliest) action_date fiscal year.
+
+Obligations are summed by each transaction's action_date fiscal year.
 
 This script uses the USASpending "download transactions" API so we can request
 specific columns and handle larger result sets via date-range chunking.
@@ -17,6 +19,7 @@ import io
 import math
 import os
 import re
+import sqlite3
 import sys
 import time
 import zipfile
@@ -355,12 +358,42 @@ def format_money(x: float) -> str:
     return f"{x:,.2f}"
 
 
+def load_db_obligations_by_year(db_path: str, aln: str, min_year: int) -> Dict[int, float]:
+    query = """
+        SELECT fiscal_year, SUM(obligation) AS total_obligation
+        FROM usaspending_assistance_outlay_aggregation
+        WHERE cfda_number = ?
+          AND fiscal_year >= ?
+        GROUP BY fiscal_year
+    """
+    out: Dict[int, float] = {}
+    with sqlite3.connect(db_path) as conn:
+        cur = conn.execute(query, (aln, min_year))
+        for fiscal_year, total_obligation in cur.fetchall():
+            if fiscal_year is None or total_obligation is None:
+                continue
+            out[int(fiscal_year)] = float(total_obligation)
+    return out
+
+
+def print_last_modified_exceeds_years(years: set[int], max_action_date: Optional[dt.date]) -> None:
+    if max_action_date is None or not years:
+        return
+    print("")
+    years_csv = ", ".join(str(y) for y in sorted(years))
+    print(
+        "Fiscal years with at least one transaction where "
+        f"last_modified_date > {max_action_date.isoformat()}: {years_csv}"
+    )
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Verify outlays by ALN/CFDA by downloading USASpending transactions, "
-            "grouping by assistance_award_unique_key, and bucketing outlays by the "
-            "award's first (earliest) action_date fiscal year."
+            "grouping by assistance_award_unique_key, bucketing outlays by the "
+            "award's first (earliest) action_date fiscal year, and summing "
+            "obligations by transaction fiscal year."
         )
     )
     parser.add_argument("--aln", required=True, help='Assistance Listing Number (e.g. "10.555")')
@@ -421,6 +454,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         args.outlay_field,
         "federal_action_obligation",
         "last_modified_date",
+        "original_loan_subsidy_cost"
     ]
 
     session = requests.Session()
@@ -439,7 +473,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     # total_outlayed_amount_for_overall_award is an award-level total; do not sum it
     # across transactions. Use the maximum observed non-null value per award.
     award_outlay_max: Dict[str, float] = {}
-    award_obligation_sum: Dict[str, float] = {}
+    obligations_by_action_year: Dict[int, float] = {}
+    years_with_last_modified_after_max: set[int] = set()
 
     for dr in date_ranges:
         filters = build_filters(aln=args.aln, award_type_codes=args.award_type_codes, date_range=dr)
@@ -474,14 +509,13 @@ def main(argv: Optional[List[str]] = None) -> int:
             if args.max_action_date is not None and action_date > args.max_action_date:
                 continue
 
-            # Also exclude records whose last_modified_date is after the cap date.
-            # This makes it possible to run "as-of" style checks.
+            fy = fiscal_year_from_date(action_date)
+
             if args.max_action_date is not None:
                 last_mod = parse_last_modified_date(row.get("last_modified_date") or "")
                 if last_mod is not None and last_mod > args.max_action_date:
-                    continue
+                    years_with_last_modified_after_max.add(fy)
 
-            fy = fiscal_year_from_date(action_date)
             prev = award_min_year.get(award_key)
             award_min_year[award_key] = fy if prev is None else min(prev, fy)
 
@@ -490,12 +524,11 @@ def main(argv: Optional[List[str]] = None) -> int:
                 prev_outlay = award_outlay_max.get(award_key)
                 award_outlay_max[award_key] = outlay if prev_outlay is None else max(prev_outlay, outlay)
 
-            obligation = parse_float(row.get("federal_action_obligation"))
+            obligation = parse_float(row.get("federal_action_obligation")) + parse_float(row.get("original_loan_subsidy_cost"))
             if obligation is not None:
-                award_obligation_sum[award_key] = award_obligation_sum.get(award_key, 0.0) + obligation
+                obligations_by_action_year[fy] = obligations_by_action_year.get(fy, 0.0) + obligation
 
     totals_by_first_year: Dict[int, float] = {}
-    obligations_by_first_year: Dict[int, float] = {}
     counts_by_first_year: Dict[int, int] = {}
 
     for award_key, first_year in award_min_year.items():
@@ -503,17 +536,13 @@ def main(argv: Optional[List[str]] = None) -> int:
         if outlays is not None:
             totals_by_first_year[first_year] = totals_by_first_year.get(first_year, 0.0) + outlays
 
-        obligation_total = award_obligation_sum.get(award_key)
-        if obligation_total is not None:
-            obligations_by_first_year[first_year] = obligations_by_first_year.get(first_year, 0.0) + obligation_total
-
-        if outlays is None and obligation_total is None:
+        if outlays is None:
             continue
         counts_by_first_year[first_year] = counts_by_first_year.get(first_year, 0) + 1
 
     years = sorted(
         y
-        for y in (set(totals_by_first_year.keys()) | set(obligations_by_first_year.keys()))
+        for y in (set(totals_by_first_year.keys()) | set(obligations_by_action_year.keys()))
         if y >= args.year
     )
     if not years:
@@ -528,22 +557,66 @@ def main(argv: Optional[List[str]] = None) -> int:
     print(
         "Method: group by assistance_award_unique_key; "
         "take max(total_outlayed_amount_for_overall_award) per award; "
-        "bucket to fiscal year of earliest action_date per award."
+        "bucket outlays to fiscal year of earliest action_date per award; "
+        "sum obligations by each transaction action_date fiscal year."
     )
     print("")
     print("year|award_count|total_outlays|total_obligations")
     for y in years:
         total = totals_by_first_year.get(y, 0.0)
-        oblig = obligations_by_first_year.get(y, 0.0)
+        oblig = obligations_by_action_year.get(y, 0.0)
         cnt = counts_by_first_year.get(y, 0)
         print(f"{y}|{cnt}|{format_money(total)}|{format_money(oblig)}")
 
     if args.year in totals_by_first_year:
         print("")
         print(f"Requested fiscal year {args.year} total_outlays = {format_money(totals_by_first_year[args.year])}")
-    if args.year in obligations_by_first_year:
-        print(f"Requested fiscal year {args.year} total_obligations = {format_money(obligations_by_first_year[args.year])}")
+    if args.year in obligations_by_action_year:
+        print(
+            f"Requested fiscal year {args.year} total_obligations = "
+            f"{format_money(obligations_by_action_year[args.year])}"
+        )
 
+    db_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "transformed", "transformed_data.db")
+    )
+    db_obligations_by_year = load_db_obligations_by_year(db_path, args.aln, args.year)
+
+    compare_years = sorted(
+        set(obligations_by_action_year.keys()) | set(db_obligations_by_year.keys())
+    )
+    if compare_years:
+        latest_year = max(compare_years)
+        years_to_compare = [y for y in compare_years if y != latest_year]
+    else:
+        years_to_compare = []
+
+    if not years_to_compare:
+        print("")
+        print("Obligation comparison skipped: no non-latest fiscal years available.")
+        print_last_modified_exceeds_years(years_with_last_modified_after_max, args.max_action_date)
+        return 0
+
+    mismatches: List[Tuple[int, float, float]] = []
+    for y in years_to_compare:
+        api_value = obligations_by_action_year.get(y, 0.0)
+        db_value = db_obligations_by_year.get(y, 0.0)
+        if round(api_value) != round(db_value):
+            mismatches.append((y, api_value, db_value))
+
+    print("")
+    if not mismatches:
+        print("API and database obligations match to the nearest dollar for all checked years.")
+    else:
+        print("Obligation differences by year (API vs database):")
+        for y, api_value, db_value in mismatches:
+            diff = api_value - db_value
+            print(
+                f"{y}: api={format_money(api_value)}, "
+                f"database={format_money(db_value)}, diff={format_money(diff)}"
+            )
+
+    print_last_modified_exceeds_years(years_with_last_modified_after_max, args.max_action_date)
     return 0
 
 

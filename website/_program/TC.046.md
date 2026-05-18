@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Energy - Energy Supply
-- Tax Expenditures - Natural Resources and Environment
 cfda: TC.046
 fiscal_year: '2025'
 grants_url: null

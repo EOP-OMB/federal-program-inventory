@@ -1,12 +1,12 @@
 ---
-agencies: '[{"title":"Environmental Protection Agency","total_num_programs":75,"total_obs":16599710888.970001},{"title":"Department
-  of the Interior","total_num_programs":27,"total_obs":1653618744.71},{"title":"Department
-  of Energy","total_num_programs":11,"total_obs":394494886.4},{"title":"Department
-  of Commerce","total_num_programs":8,"total_obs":146651431.0},{"title":"Department
-  of Agriculture","total_num_programs":10,"total_obs":116445340.3},{"title":"Department
-  of Transportation","total_num_programs":14,"total_obs":51673637.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":3512854.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":0.0}]'
+agencies: '[{"title":"Environmental Protection Agency","total_num_programs":75,"total_obs":17198987229.989998},{"title":"Department
+  of Energy","total_num_programs":11,"total_obs":2089536910.23},{"title":"Department
+  of the Interior","total_num_programs":27,"total_obs":1702299057.65},{"title":"Department
+  of Commerce","total_num_programs":8,"total_obs":190564857.55},{"title":"Department
+  of Agriculture","total_num_programs":10,"total_obs":121622855.8},{"title":"Department
+  of Transportation","total_num_programs":14,"total_obs":49168810.690000005},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":39826938.95},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":22689629.41}]'
 applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":69},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":62},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":55},{"title":"State","total_num_programs":47},{"title":"Nonprofit
@@ -161,11 +161,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -205,41 +200,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -253,11 +213,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/environmental-quality
-sub_cats: '[{"title":"Pollution Control and Abatement","permalink":"/category/environmental-quality/pollution-control-and-abatement","total_num_programs":149,"total_obs":18966107782.38}]'
+sub_cats: '[{"title":"Pollution Control and Abatement","permalink":"/category/environmental-quality/pollution-control-and-abatement","total_num_programs":149,"total_obs":21414696290.27}]'
 title: Environmental Quality
 total_num_agencies: 8
 total_num_applicant_types: 66
 total_num_programs: 149
 total_num_sub_cats: 1
-total_obs: 18966107782.38
+total_obs: 21414696290.27
 ---

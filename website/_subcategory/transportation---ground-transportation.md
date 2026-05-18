@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":85,"total_obs":73655969615.19998},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":236198661.29},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":19288529.46},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":17673843.14},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":85,"total_obs":90140599583.40997},{"title":"Appalachian
+  Regional Commission","total_num_programs":1,"total_obs":273756822.63},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":44967721.96},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":19818847.09},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":1111023.0}]'
 applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":51},{"title":"State","total_num_programs":33},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":20},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
@@ -143,11 +143,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -187,41 +182,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -239,55 +199,59 @@ parent_title: Transportation
 permalink: /category/transportation/ground-transportation
 programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Planning
   and Construction","popular_name":"Federal-Aid Highway Program,  Federal Lands Highway
-  Program","agency":"Department of Transportation","total_obs":54533421609.1,"program_type":"assistance_listing"},{"cfda":"20.326","permalink":"/program/20.326","title":"Federal-State
+  Program","agency":"Department of Transportation","total_obs":67403332424.45,"program_type":"assistance_listing"},{"cfda":"20.326","permalink":"/program/20.326","title":"Federal-State
   Partnership for Intercity Passenger Rail","popular_name":"FEDERAL RAILROAD ADMINISTRATION","agency":"Department
-  of Transportation","total_obs":10629902625.4,"program_type":"assistance_listing"},{"cfda":"20.315","permalink":"/program/20.315","title":"National
+  of Transportation","total_obs":10596068003.67,"program_type":"assistance_listing"},{"cfda":"20.315","permalink":"/program/20.315","title":"National
   Railroad Passenger Corporation Grants","popular_name":"(Amtrak Grants)","agency":"Department
-  of Transportation","total_obs":2425975706.0,"program_type":"assistance_listing"},{"cfda":"20.934","permalink":"/program/20.934","title":"Nationally
+  of Transportation","total_obs":6742975706.0,"program_type":"assistance_listing"},{"cfda":"20.934","permalink":"/program/20.934","title":"Nationally
   Significant Freight and Highway Projects","popular_name":"Infrastructure For Rebuilding
-  America","agency":"Department of Transportation","total_obs":1408955963.26,"program_type":"assistance_listing"},{"cfda":"20.325","permalink":"/program/20.325","title":"Consolidated
+  America","agency":"Department of Transportation","total_obs":1403382173.03,"program_type":"assistance_listing"},{"cfda":"20.325","permalink":"/program/20.325","title":"Consolidated
   Rail Infrastructure and Safety Improvements","popular_name":"CRISI","agency":"Department
-  of Transportation","total_obs":944069133.0,"program_type":"assistance_listing"},{"cfda":"20.933","permalink":"/program/20.933","title":"National
+  of Transportation","total_obs":938449802.65,"program_type":"assistance_listing"},{"cfda":"20.933","permalink":"/program/20.933","title":"National
   Infrastructure Investments","popular_name":"Rebuilding Transportation Infrastructure
   with Sustainability and Equity (RAISE)/Better Utilizing Investments to Leverage
-  Development (BUILD) Grants","agency":"Department of Transportation","total_obs":889608214.2,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
-  Carrier Safety Assistance","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":484674301.0,"program_type":"assistance_listing"},{"cfda":"20.600","permalink":"/program/20.600","title":"State
-  and Community Highway Safety","popular_name":null,"agency":"Department of Transportation","total_obs":402269999.61,"program_type":"assistance_listing"},{"cfda":"20.616","permalink":"/program/20.616","title":"National
-  Priority Safety Programs","popular_name":null,"agency":"Department of Transportation","total_obs":375259519.96,"program_type":"assistance_listing"},{"cfda":"20.938","permalink":"/program/20.938","title":"Rural
+  Development (BUILD) Grants","agency":"Department of Transportation","total_obs":901648209.63,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
+  Carrier Safety Assistance","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":467018145.21,"program_type":"assistance_listing"},{"cfda":"20.600","permalink":"/program/20.600","title":"State
+  and Community Highway Safety","popular_name":null,"agency":"Department of Transportation","total_obs":400852390.01,"program_type":"assistance_listing"},{"cfda":"20.938","permalink":"/program/20.938","title":"Rural
   Surface Transportation Grant Program","popular_name":null,"agency":"Department of
-  Transportation","total_obs":354041960.2,"program_type":"assistance_listing"},{"cfda":"20.327","permalink":"/program/20.327","title":"Railroad
-  Crossing Elimination","popular_name":"Railroad Crossing Elimination","agency":"Department
-  of Transportation","total_obs":238807914.0,"program_type":"assistance_listing"},{"cfda":"23.003","permalink":"/program/23.003","title":"Appalachian
+  Transportation","total_obs":377441960.2,"program_type":"assistance_listing"},{"cfda":"20.616","permalink":"/program/20.616","title":"National
+  Priority Safety Programs","popular_name":null,"agency":"Department of Transportation","total_obs":369946101.2,"program_type":"assistance_listing"},{"cfda":"23.003","permalink":"/program/23.003","title":"Appalachian
   Development Highway System","popular_name":"(Appalachian Corridors)","agency":"Appalachian
-  Regional Commission","total_obs":236198661.29,"program_type":"assistance_listing"},{"cfda":"20.939","permalink":"/program/20.939","title":"Safe
+  Regional Commission","total_obs":273756822.63,"program_type":"assistance_listing"},{"cfda":"20.327","permalink":"/program/20.327","title":"Railroad
+  Crossing Elimination","popular_name":"Railroad Crossing Elimination","agency":"Department
+  of Transportation","total_obs":238807914.0,"program_type":"assistance_listing"},{"cfda":"20.939","permalink":"/program/20.939","title":"Safe
   Streets and Roads for All","popular_name":"Safe Streets and Roads for All","agency":"Department
-  of Transportation","total_obs":198188324.8,"program_type":"assistance_listing"},{"cfda":"20.614","permalink":"/program/20.614","title":"National
+  of Transportation","total_obs":232385623.86,"program_type":"assistance_listing"},{"cfda":"20.614","permalink":"/program/20.614","title":"National
   Highway Traffic Safety Administration (NHTSA) Discretionary Safety Grants and Cooperative
   Agreements","popular_name":"NHTSA Section 403 Discretionary Grants and Cooperative
-  Agreements","agency":"Department of Transportation","total_obs":183490288.54,"program_type":"assistance_listing"},{"cfda":"20.937","permalink":"/program/20.937","title":"National
+  Agreements","agency":"Department of Transportation","total_obs":215416717.46,"program_type":"assistance_listing"},{"cfda":"20.200","permalink":"/program/20.200","title":"Highway
+  Research and Development Program","popular_name":"Highway Research and Development
+  Program \r\nSurface Transportation Research, Development, and Technology\r\n","agency":"Department
+  of Transportation","total_obs":137034896.67,"program_type":"assistance_listing"},{"cfda":"20.937","permalink":"/program/20.937","title":"National
   Infrastructure Project Assistance (Mega Projects)","popular_name":"Mega Projects,
-  49 USC Sec. 6701","agency":"Department of Transportation","total_obs":123523094.0,"program_type":"assistance_listing"},{"cfda":"20.941","permalink":"/program/20.941","title":"Strengthening
+  49 USC Sec. 6701","agency":"Department of Transportation","total_obs":123523094.0,"program_type":"assistance_listing"},{"cfda":"20.314","permalink":"/program/20.314","title":"Railroad
+  Development","popular_name":null,"agency":"Department of Transportation","total_obs":123367703.0,"program_type":"assistance_listing"},{"cfda":"20.941","permalink":"/program/20.941","title":"Strengthening
   Mobility and Revolutionizing Transportation (SMART) Grants Program","popular_name":"SMART","agency":"Department
   of Transportation","total_obs":116032399.0,"program_type":"assistance_listing"},{"cfda":"20.608","permalink":"/program/20.608","title":"Minimum
   Penalties for Repeat Offenders for Driving While Intoxicated","popular_name":null,"agency":"Department
-  of Transportation","total_obs":83314757.0,"program_type":"assistance_listing"},{"cfda":"20.324","permalink":"/program/20.324","title":"Restoration
-  and Enhancement","popular_name":null,"agency":"Department of Transportation","total_obs":64720371.0,"program_type":"assistance_listing"},{"cfda":"20.200","permalink":"/program/20.200","title":"Highway
-  Research and Development Program","popular_name":"Highway Research and Development
-  Program \r\nSurface Transportation Research, Development, and Technology\r\n","agency":"Department
-  of Transportation","total_obs":62676071.03,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
-  Open Container Requirements","popular_name":null,"agency":"Department of Transportation","total_obs":56926323.0,"program_type":"assistance_listing"},{"cfda":"20.314","permalink":"/program/20.314","title":"Railroad
-  Development","popular_name":null,"agency":"Department of Transportation","total_obs":49791850.0,"program_type":"assistance_listing"},{"cfda":"10.705","permalink":"/program/10.705","title":"Cooperative
+  of Transportation","total_obs":82924776.45,"program_type":"assistance_listing"},{"cfda":"20.324","permalink":"/program/20.324","title":"Restoration
+  and Enhancement","popular_name":null,"agency":"Department of Transportation","total_obs":64720371.0,"program_type":"assistance_listing"},{"cfda":"20.701","permalink":"/program/20.701","title":"University
+  Transportation Centers Program","popular_name":"UTC Program","agency":"Department
+  of Transportation","total_obs":63944628.29,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
+  Open Container Requirements","popular_name":null,"agency":"Department of Transportation","total_obs":55426188.58,"program_type":"assistance_listing"},{"cfda":"15.033","permalink":"/program/15.033","title":"Road
+  Maintenance Indian Roads","popular_name":null,"agency":"Department of the Interior","total_obs":37803966.96,"program_type":"assistance_listing"},{"cfda":"10.705","permalink":"/program/10.705","title":"Cooperative
   Forest Road Agreements","popular_name":"Cooperative Forest Road Agreements","agency":"Department
-  of Agriculture","total_obs":19288529.46,"program_type":"assistance_listing"},{"cfda":"20.232","permalink":"/program/20.232","title":"Commercial
-  Driver''s License Program Implementation Grant","popular_name":"CDLPI","agency":"Department
-  of Transportation","total_obs":14063064.0,"program_type":"assistance_listing"},{"cfda":"20.215","permalink":"/program/20.215","title":"Highway
+  of Agriculture","total_obs":19818847.09,"program_type":"assistance_listing"},{"cfda":"20.215","permalink":"/program/20.215","title":"Highway
   Training and Education","popular_name":"NHI, LTAP, DDETFP, TETDDP, GAMTTEP","agency":"Department
-  of Transportation","total_obs":12253313.97,"program_type":"assistance_listing"},{"cfda":"15.033","permalink":"/program/15.033","title":"Road
-  Maintenance Indian Roads","popular_name":null,"agency":"Department of the Interior","total_obs":10510088.14,"program_type":"assistance_listing"},{"cfda":"15.044","permalink":"/program/15.044","title":"Indian
+  of Transportation","total_obs":15895917.02,"program_type":"assistance_listing"},{"cfda":"15.044","permalink":"/program/15.044","title":"Indian
   Schools Student Transportation","popular_name":"(Student Transportation)","agency":"Department
   of the Interior","total_obs":7163755.0,"program_type":"assistance_listing"},{"cfda":"20.301","permalink":"/program/20.301","title":"Railroad
   Safety","popular_name":"FEDERAL RAILROAD ADMINISTRATION","agency":"Department of
-  Transportation","total_obs":3500000.0,"program_type":"assistance_listing"},{"cfda":"20.328","permalink":"/program/20.328","title":"Interstate
+  Transportation","total_obs":3424565.12,"program_type":"assistance_listing"},{"cfda":"20.232","permalink":"/program/20.232","title":"Commercial
+  Driver''s License Program Implementation Grant","popular_name":"CDLPI","agency":"Department
+  of Transportation","total_obs":3224749.74,"program_type":"assistance_listing"},{"cfda":"12.016","permalink":"/program/12.016","title":"Transportation
+  - DASH 102X and WMATA 7M Shuttles","popular_name":"DASH 102X Route and WMATA A90
+  (formerly 7M) Route","agency":"Department of Defense","total_obs":1111023.0,"program_type":"assistance_listing"},{"cfda":"20.328","permalink":"/program/20.328","title":"Interstate
   Rail Compacts","popular_name":"IRC","agency":"Department of Transportation","total_obs":400000.0,"program_type":"assistance_listing"},{"cfda":"20.244","permalink":"/program/20.244","title":"High
   Priority-Commercial Motor Vehicle (HP-CMV) Grant","popular_name":"HP-CMV","agency":"Department
   of Transportation","total_obs":102813.13,"program_type":"assistance_listing"},{"cfda":"20.228","permalink":"/program/20.228","title":"Active
@@ -307,8 +271,6 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   for Surface Transportation Excellence 504(h)","popular_name":null,"agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.243","permalink":"/program/20.243","title":"Commercial
   Motor Vehicle Enforcement Training and Support","popular_name":"HP-ETS","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.235","permalink":"/program/20.235","title":"Commercial
-  Motor Vehicle Operator Safety Training Grants","popular_name":"CMVOST","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.266","permalink":"/program/20.266","title":"Commuter
   Authority Rail Safety Improvement (CARSI) Grant Program","popular_name":null,"agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.267","permalink":"/program/20.267","title":"Competitive
@@ -331,9 +293,7 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   Partnership for Intercity Passenger Rail Grant Program","popular_name":"FSP","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.245","permalink":"/program/20.245","title":"High
   Priority-Innovative Technology Deployment (HP-ITD) Grant","popular_name":"HP-ITD","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.319","permalink":"/program/20.319","title":"High-Speed
-  Rail Corridors and Intercity Passenger Rail Service \u2013 Capital Assistance Grants","popular_name":"HSR/IPR
-  Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.225","permalink":"/program/20.225","title":"Highway
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.225","permalink":"/program/20.225","title":"Highway
   Research & Development Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.272","permalink":"/program/20.272","title":"Highway
   Safety Improvement Program (HSIP)","popular_name":"HSI Program","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.294","permalink":"/program/20.294","title":"Highway
@@ -345,9 +305,7 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.948","permalink":"/program/20.948","title":"MOBILITY
   EQUITY RESEARCH INITIATIVE","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.318","permalink":"/program/20.318","title":"Maglev
   Project Selection Program - SAFETEA-LU","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.237","permalink":"/program/20.237","title":"Motor
-  Carrier Safety Assistance High Priority Activities Grants and Cooperative Agreements","popular_name":"HP-CMV
-  & HP-ITD","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.619","permalink":"/program/20.619","title":"Motor
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.619","permalink":"/program/20.619","title":"Motor
   Vehicle Safety Research","popular_name":"Motor Vehicle Safety Research","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.606","permalink":"/program/20.606","title":"National
   Driver Register","popular_name":"National Driver Register (NDR)","agency":"Department
@@ -362,17 +320,14 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   Process Pilot Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.320","permalink":"/program/20.320","title":"Rail
   Line Relocation and Improvement","popular_name":"FEDERAL RAILROAD ADMINISTRATION","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.334","permalink":"/program/20.334","title":"Railroad
-  Development","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.316","permalink":"/program/20.316","title":"Railroad
-  Rehabilitation and Improvement Financing Program","popular_name":"RRIF Loan Program","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.332","permalink":"/program/20.332","title":"Railroad
+  Development","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.332","permalink":"/program/20.332","title":"Railroad
   Research and Development","popular_name":"Railroad Research and Development","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.331","permalink":"/program/20.331","title":"Railroad
   Research and Development Centers of Excellence","popular_name":"Centers of Excellence","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.329","permalink":"/program/20.329","title":"Railroad
   Safety","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.330","permalink":"/program/20.330","title":"Railroad
   Safety State Participation Grant Program","popular_name":"State Participation","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.321","permalink":"/program/20.321","title":"Railroad
-  Safety Technology Grants","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.285","permalink":"/program/20.285","title":"Railway-Highway
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.285","permalink":"/program/20.285","title":"Railway-Highway
   Crossings Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.951","permalink":"/program/20.951","title":"Regional
   Infrastructure Accelerators Program","popular_name":"Regional Infrastructure Accelerators
   Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.299","permalink":"/program/20.299","title":"Safety
@@ -388,15 +343,20 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.227","permalink":"/program/20.227","title":"Technology
   & Innovation Deployment Program 503(c)","popular_name":"The 503(c) Program","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.298","permalink":"/program/20.298","title":"Territorial
-  and Puerto Rico Highway Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.016","permalink":"/program/12.016","title":"Transportation
-  - DASH 102X and WMATA 7M Shuttles","popular_name":"DASH 102X Route and WMATA A90
-  (formerly 7M) Route","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.288","permalink":"/program/20.288","title":"Transportation
-  Access Pilot Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.701","permalink":"/program/20.701","title":"University
-  Transportation Centers Program","popular_name":"UTC Program","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
+  and Puerto Rico Highway Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.288","permalink":"/program/20.288","title":"Transportation
+  Access Pilot Program","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.321","permalink":"/program/20.321","title":"Railroad
+  Safety Technology Grants","popular_name":null,"agency":"Department of Transportation","total_obs":-17874.0,"program_type":"assistance_listing"},{"cfda":"20.235","permalink":"/program/20.235","title":"Commercial
+  Motor Vehicle Operator Safety Training Grants","popular_name":"CMVOST","agency":"Department
+  of Transportation","total_obs":-171805.18,"program_type":"assistance_listing"},{"cfda":"20.316","permalink":"/program/20.316","title":"Railroad
+  Rehabilitation and Improvement Financing Program","popular_name":"RRIF Loan Program","agency":"Department
+  of Transportation","total_obs":-2678621.0,"program_type":"assistance_listing"},{"cfda":"20.237","permalink":"/program/20.237","title":"Motor
+  Carrier Safety Assistance High Priority Activities Grants and Cooperative Agreements","popular_name":"HP-CMV
+  & HP-ITD","agency":"Department of Transportation","total_obs":-5659389.78,"program_type":"assistance_listing"},{"cfda":"20.319","permalink":"/program/20.319","title":"High-Speed
+  Rail Corridors and Intercity Passenger Rail Service \u2013 Capital Assistance Grants","popular_name":"HSR/IPR
+  Program","agency":"Department of Transportation","total_obs":-928620000.0,"program_type":"assistance_listing"}]'
 title: Ground Transportation
 total_num_agencies: 5
 total_num_applicant_types: 32
 total_num_programs: 90
-total_obs: 73929130649.08998
+total_obs: 90480253998.08998
 ---

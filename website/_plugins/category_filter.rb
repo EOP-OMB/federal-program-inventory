@@ -12,6 +12,17 @@ module CategoryFilter
 
     {"main" => main_cat, "sub" => sub_cat}
   end
+
+  def whole_number_with_comma(value)
+    return '' if value.nil?
+
+    str = value.to_s.strip
+    return str if str.empty?
+
+    str.sub(/\A(-?\d+)(\.\d+)?\z/) do
+      "#{$1.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse}#{$2}"
+    end
+  end
 end
 
 Liquid::Template.register_filter(CategoryFilter)

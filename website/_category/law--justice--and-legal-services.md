@@ -1,22 +1,22 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2712375631.71},{"title":"Department
-  of Justice","total_num_programs":145,"total_obs":2682255278.54},{"title":"Department
-  of Homeland Security","total_num_programs":24,"total_obs":1761978824.96},{"title":"Department
-  of the Interior","total_num_programs":19,"total_obs":1288180432.4299998},{"title":"Executive
-  Office of the President","total_num_programs":1,"total_obs":257057043.3},{"title":"Department
-  of Health and Human Services","total_num_programs":13,"total_obs":221788630.25},{"title":"Department
-  of State","total_num_programs":16,"total_obs":195610376.51},{"title":"Department
-  of the Treasury","total_num_programs":2,"total_obs":73646857.06},{"title":"Department
-  of Defense","total_num_programs":3,"total_obs":38624466.019999996},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":27889102.08},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":23282000.0},{"title":"Department of
-  Education","total_num_programs":1,"total_obs":19787300.0},{"title":"Department of
-  Transportation","total_num_programs":4,"total_obs":11998485.96},{"title":"Department
-  of Energy","total_num_programs":4,"total_obs":9888729.79},{"title":"Department of
-  Agriculture","total_num_programs":3,"total_obs":8394626.0},{"title":"U.S. Election
-  Assistance Commission","total_num_programs":2,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":2,"total_obs":0.0},{"title":"National
-  Council on Disability","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2714598797.66},{"title":"Department
+  of Justice","total_num_programs":145,"total_obs":2665116777.1599984},{"title":"Department
+  of the Interior","total_num_programs":19,"total_obs":2091814585.8499997},{"title":"Department
+  of Homeland Security","total_num_programs":24,"total_obs":822885440.4900002},{"title":"Department
+  of State","total_num_programs":16,"total_obs":389311072.15999997},{"title":"Executive
+  Office of the President","total_num_programs":1,"total_obs":271657675.6},{"title":"Department
+  of Health and Human Services","total_num_programs":13,"total_obs":270467960.73},{"title":"Department
+  of the Treasury","total_num_programs":2,"total_obs":70898202.94},{"title":"Social
+  Security Administration","total_num_programs":2,"total_obs":40408396.61},{"title":"Department
+  of Defense","total_num_programs":3,"total_obs":38811188.519999996},{"title":"Department
+  of Housing and Urban Development","total_num_programs":1,"total_obs":26271438.48},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":23246431.33},{"title":"Department of
+  Education","total_num_programs":1,"total_obs":19563872.64},{"title":"U.S. Election
+  Assistance Commission","total_num_programs":2,"total_obs":13490013.72},{"title":"Department
+  of Transportation","total_num_programs":4,"total_obs":11572535.879999999},{"title":"Department
+  of Agriculture","total_num_programs":3,"total_obs":10958128.81},{"title":"Department
+  of Energy","total_num_programs":4,"total_obs":9354092.79},{"title":"National Council
+  on Disability","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Other","total_num_programs":92},{"title":"Federally Recognized
   Indian Tribal Governments","total_num_programs":47},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":46},{"title":"Local
@@ -176,11 +176,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -220,41 +215,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -268,15 +228,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/law--justice--and-legal-services
-sub_cats: '[{"title":"Border Security","permalink":"/category/law--justice--and-legal-services/border-security","total_num_programs":18,"total_obs":178827353.61},{"title":"Cybersecurity","permalink":"/category/law--justice--and-legal-services/cybersecurity","total_num_programs":15,"total_obs":3139079407.68},{"title":"Domestic
-  Threats and Hazards","permalink":"/category/law--justice--and-legal-services/domestic-threats-and-hazards","total_num_programs":9,"total_obs":657734184.73},{"title":"Law
-  Enforcement Support","permalink":"/category/law--justice--and-legal-services/law-enforcement-support","total_num_programs":157,"total_obs":3973746588.02},{"title":"Legal
-  Services","permalink":"/category/law--justice--and-legal-services/legal-services","total_num_programs":14,"total_obs":69287249.85},{"title":"Tribal
-  Independence and Autonomy","permalink":"/category/law--justice--and-legal-services/tribal-independence-and-autonomy","total_num_programs":31,"total_obs":1314083000.7199998}]'
+sub_cats: '[{"title":"Border Security","permalink":"/category/law--justice--and-legal-services/border-security","total_num_programs":18,"total_obs":-505905005.81},{"title":"Cybersecurity","permalink":"/category/law--justice--and-legal-services/cybersecurity","total_num_programs":15,"total_obs":3137282648.8799996},{"title":"Domestic
+  Threats and Hazards","permalink":"/category/law--justice--and-legal-services/domestic-threats-and-hazards","total_num_programs":9,"total_obs":727294423.6},{"title":"Law
+  Enforcement Support","permalink":"/category/law--justice--and-legal-services/law-enforcement-support","total_num_programs":157,"total_obs":3998660400.189999},{"title":"Legal
+  Services","permalink":"/category/law--justice--and-legal-services/legal-services","total_num_programs":14,"total_obs":87939111.83000001},{"title":"Tribal
+  Independence and Autonomy","permalink":"/category/law--justice--and-legal-services/tribal-independence-and-autonomy","total_num_programs":31,"total_obs":2045155032.6799998}]'
 title: Law, Justice, and Legal Services
 total_num_agencies: 18
 total_num_applicant_types: 71
 total_num_programs: 244
 total_num_sub_cats: 6
-total_obs: 9332757784.61
+total_obs: 9490426611.369999
 ---

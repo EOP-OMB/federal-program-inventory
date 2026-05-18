@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Income Security and Social Services - Personal Financial Health
-- Tax Expenditures - National Defense
 cfda: TC.001
 fiscal_year: '2025'
 grants_url: null

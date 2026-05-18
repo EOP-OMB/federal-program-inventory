@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Economic Development
-- Tax Expenditures - International Affairs
 cfda: TC.005
 fiscal_year: '2025'
 grants_url: null

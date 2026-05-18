@@ -1,11 +1,11 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":770000000.0},{"title":"Department
-  of the Interior","total_num_programs":23,"total_obs":248153760.92999998},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":4,"total_obs":212381491.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":2,"total_obs":16250027.55},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":9999998.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":2384000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":2195992.4},{"title":"Library
+  of the Interior","total_num_programs":23,"total_obs":263438066.42999998},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":4,"total_obs":225287789.86},{"title":"National
+  Endowment for the Humanities","total_num_programs":2,"total_obs":18605337.45},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":9514042.68},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":1920025.72},{"title":"National
+  Archives and Records Administration","total_num_programs":2,"total_obs":1738523.8},{"title":"Library
   of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Education","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
@@ -160,11 +160,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -204,41 +199,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -258,70 +218,70 @@ programs: '[{"cfda":"TC.045","permalink":"/program/TC.045","title":"Tax incentiv
   for preservation of historic structures","popular_name":null,"agency":"Department
   of the Treasury","total_obs":770000000.0,"program_type":"tax_expenditure"},{"cfda":"45.310","permalink":"/program/45.310","title":"Grants
   to States","popular_name":"Grants to States","agency":"The Institute of Museum and
-  Library Services","total_obs":180000000.0,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
+  Library Services","total_obs":179196949.15,"program_type":"assistance_listing"},{"cfda":"15.904","permalink":"/program/15.904","title":"Historic
   Preservation Fund Grants-In-Aid","popular_name":"(HPF)","agency":"Department of
-  the Interior","total_obs":77911445.0,"program_type":"assistance_listing"},{"cfda":"15.966","permalink":"/program/15.966","title":"Historic
+  the Interior","total_obs":74162626.75,"program_type":"assistance_listing"},{"cfda":"15.966","permalink":"/program/15.966","title":"Historic
   Preservation Fund Grants-in-Aid for Competitive Grants","popular_name":null,"agency":"Department
-  of the Interior","total_obs":60882280.0,"program_type":"assistance_listing"},{"cfda":"15.929","permalink":"/program/15.929","title":"Save
-  America''s Treasures","popular_name":null,"agency":"Department of the Interior","total_obs":24681000.0,"program_type":"assistance_listing"},{"cfda":"15.939","permalink":"/program/15.939","title":"Heritage
+  of the Interior","total_obs":60882280.0,"program_type":"assistance_listing"},{"cfda":"15.939","permalink":"/program/15.939","title":"Heritage
   Partnership","popular_name":"National Heritage Areas","agency":"Department of the
-  Interior","total_obs":19669606.0,"program_type":"assistance_listing"},{"cfda":"15.928","permalink":"/program/15.928","title":"Battlefield
-  Land Acquisition Grants","popular_name":"BLAG","agency":"Department of the Interior","total_obs":19205705.03,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
-  for America","popular_name":"Museums for America; Museums Empowered; Inspire Grants
-  for Small Museums","agency":"The Institute of Museum and Library Services","total_obs":15295932.0,"program_type":"assistance_listing"},{"cfda":"45.149","permalink":"/program/45.149","title":"Promotion
-  of the Humanities Division of Preservation and Access","popular_name":"National
-  Digital Newspaper Program","agency":"National Endowment for the Humanities","total_obs":12350815.55,"program_type":"assistance_listing"},{"cfda":"15.946","permalink":"/program/15.946","title":"Cultural
-  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":11603877.66,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
+  Interior","total_obs":27572714.51,"program_type":"assistance_listing"},{"cfda":"45.312","permalink":"/program/45.312","title":"National
   Leadership Grants","popular_name":"National Leadership Grants for Libraries and
   National Leadership Grants for Museums","agency":"The Institute of Museum and Library
-  Services","total_obs":11443666.0,"program_type":"assistance_listing"},{"cfda":"15.932","permalink":"/program/15.932","title":"Preservation
+  Services","total_obs":26245514.08,"program_type":"assistance_listing"},{"cfda":"15.929","permalink":"/program/15.929","title":"Save
+  America''s Treasures","popular_name":null,"agency":"Department of the Interior","total_obs":22661203.01,"program_type":"assistance_listing"},{"cfda":"15.946","permalink":"/program/15.946","title":"Cultural
+  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":19551257.26,"program_type":"assistance_listing"},{"cfda":"15.928","permalink":"/program/15.928","title":"Battlefield
+  Land Acquisition Grants","popular_name":"BLAG","agency":"Department of the Interior","total_obs":19352982.45,"program_type":"assistance_listing"},{"cfda":"45.301","permalink":"/program/45.301","title":"Museums
+  for America","popular_name":"Museums for America; Museums Empowered; Inspire Grants
+  for Small Museums","agency":"The Institute of Museum and Library Services","total_obs":14610762.27,"program_type":"assistance_listing"},{"cfda":"45.149","permalink":"/program/45.149","title":"Promotion
+  of the Humanities Division of Preservation and Access","popular_name":"National
+  Digital Newspaper Program","agency":"National Endowment for the Humanities","total_obs":12274813.52,"program_type":"assistance_listing"},{"cfda":"15.932","permalink":"/program/15.932","title":"Preservation
   of Historic Structures on the Campuses of Historically Black Colleges and Universities
   (HBCUs).","popular_name":"HBCU Grants","agency":"Department of the Interior","total_obs":10609606.0,"program_type":"assistance_listing"},{"cfda":"97.010","permalink":"/program/97.010","title":"Citizenship
   Education and Training","popular_name":"Citizenship Education and Naturalization
-  Application Services","agency":"Department of Homeland Security","total_obs":9999998.0,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
+  Application Services","agency":"Department of Homeland Security","total_obs":9514042.68,"program_type":"assistance_listing"},{"cfda":"45.130","permalink":"/program/45.130","title":"Promotion
+  of the Humanities Challenge Grants","popular_name":null,"agency":"National Endowment
+  for the Humanities","total_obs":6330523.93,"program_type":"assistance_listing"},{"cfda":"45.311","permalink":"/program/45.311","title":"Native
   American and Native Hawaiian Library Services","popular_name":"Native American and
   Native Hawaiian Library Services","agency":"The Institute of Museum and Library
-  Services","total_obs":5641893.0,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
+  Services","total_obs":5234564.36,"program_type":"assistance_listing"},{"cfda":"15.933","permalink":"/program/15.933","title":"Preservation
   of Japanese American Confinement Sites","popular_name":"JACS","agency":"Department
-  of the Interior","total_obs":5414424.63,"program_type":"assistance_listing"},{"cfda":"15.964","permalink":"/program/15.964","title":"9/11
+  of the Interior","total_obs":5178301.57,"program_type":"assistance_listing"},{"cfda":"15.159","permalink":"/program/15.159","title":"Cultural
+  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":4405960.72,"program_type":"assistance_listing"},{"cfda":"15.964","permalink":"/program/15.964","title":"9/11
   Memorial Act Grant Program","popular_name":"9/11 Memorial Act","agency":"Department
-  of the Interior","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"45.130","permalink":"/program/45.130","title":"Promotion
-  of the Humanities Challenge Grants","popular_name":null,"agency":"National Endowment
-  for the Humanities","total_obs":3899212.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
+  of the Interior","total_obs":4000000.0,"program_type":"assistance_listing"},{"cfda":"15.925","permalink":"/program/15.925","title":"National
   Maritime Heritage Grants","popular_name":"Maritime Heritage Grants","agency":"Department
-  of the Interior","total_obs":3712598.0,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
+  of the Interior","total_obs":3712059.47,"program_type":"assistance_listing"},{"cfda":"15.922","permalink":"/program/15.922","title":"Native
   American Graves Protection and Repatriation Act","popular_name":"NAGPRA","agency":"Department
-  of the Interior","total_obs":3687325.0,"program_type":"assistance_listing"},{"cfda":"15.926","permalink":"/program/15.926","title":"American
-  Battlefield Protection","popular_name":"ABPP (Planning Grants)","agency":"Department
-  of the Interior","total_obs":2407274.97,"program_type":"assistance_listing"},{"cfda":"89.003","permalink":"/program/89.003","title":"National
-  Historical Publications and Records Grants","popular_name":null,"agency":"National
-  Archives and Records Administration","total_obs":2384000.0,"program_type":"assistance_listing"},{"cfda":"64.204","permalink":"/program/64.204","title":"Veterans
-  Legacy Grants Program","popular_name":"VLGP","agency":"Department of Veterans Affairs","total_obs":2195992.4,"program_type":"assistance_listing"},{"cfda":"15.159","permalink":"/program/15.159","title":"Cultural
-  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":2180086.0,"program_type":"assistance_listing"},{"cfda":"15.955","permalink":"/program/15.955","title":"Martin
-  Luther King Junior National Historic Site and Preservation District","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1295553.42,"program_type":"assistance_listing"},{"cfda":"15.511","permalink":"/program/15.511","title":"Cultural
-  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":654567.0,"program_type":"assistance_listing"},{"cfda":"15.224","permalink":"/program/15.224","title":"Cultural
+  of the Interior","total_obs":3441931.02,"program_type":"assistance_listing"},{"cfda":"15.224","permalink":"/program/15.224","title":"Cultural
   and Paleontological Resources Management","popular_name":null,"agency":"Department
-  of the Interior","total_obs":152469.22,"program_type":"assistance_listing"},{"cfda":"15.958","permalink":"/program/15.958","title":"Route
+  of the Interior","total_obs":2875780.92,"program_type":"assistance_listing"},{"cfda":"15.926","permalink":"/program/15.926","title":"American
+  Battlefield Protection","popular_name":"ABPP (Planning Grants)","agency":"Department
+  of the Interior","total_obs":2124314.78,"program_type":"assistance_listing"},{"cfda":"64.204","permalink":"/program/64.204","title":"Veterans
+  Legacy Grants Program","popular_name":"VLGP","agency":"Department of Veterans Affairs","total_obs":1920025.72,"program_type":"assistance_listing"},{"cfda":"89.003","permalink":"/program/89.003","title":"National
+  Historical Publications and Records Grants","popular_name":null,"agency":"National
+  Archives and Records Administration","total_obs":1738523.8,"program_type":"assistance_listing"},{"cfda":"15.511","permalink":"/program/15.511","title":"Cultural
+  Resources Management","popular_name":null,"agency":"Department of the Interior","total_obs":1344659.19,"program_type":"assistance_listing"},{"cfda":"15.955","permalink":"/program/15.955","title":"Martin
+  Luther King Junior National Historic Site and Preservation District","popular_name":null,"agency":"Department
+  of the Interior","total_obs":970066.33,"program_type":"assistance_listing"},{"cfda":"15.407","permalink":"/program/15.407","title":"Keweenaw
+  National Historical Park (NHP) Preservation Grants","popular_name":"Keweenaw Heritage
+  Grants","agency":"Department of the Interior","total_obs":250000.0,"program_type":"assistance_listing"},{"cfda":"15.991","permalink":"/program/15.991","title":"September
+  11 National Memorial Trail","popular_name":null,"agency":"Department of the Interior","total_obs":247500.0,"program_type":"assistance_listing"},{"cfda":"15.958","permalink":"/program/15.958","title":"Route
   66 Corridor Preservation","popular_name":"Route 66 Corridor Preservation Program","agency":"Department
-  of the Interior","total_obs":85943.0,"program_type":"assistance_listing"},{"cfda":"15.938","permalink":"/program/15.938","title":"Boston
+  of the Interior","total_obs":84822.45,"program_type":"assistance_listing"},{"cfda":"15.785","permalink":"/program/15.785","title":"Nicodemus
+  National Historic Site","popular_name":null,"agency":"Department of the Interior","total_obs":10000.0,"program_type":"assistance_listing"},{"cfda":"15.938","permalink":"/program/15.938","title":"Boston
   African-American National Historic Site","popular_name":null,"agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.957","permalink":"/program/15.957","title":"Emergency
   Supplemental Historic Preservation Fund","popular_name":"HPF Disaster Relief Program;
   Emergency Supplemental Historic Preservation Fund Grants (ESHPF)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.017","permalink":"/program/84.017","title":"International
-  Research and Studies","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.407","permalink":"/program/15.407","title":"Keweenaw
-  National Historical Park (NHP) Preservation Grants","popular_name":"Keweenaw Heritage
-  Grants","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.011","permalink":"/program/42.011","title":"Library
+  Research and Studies","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.011","permalink":"/program/42.011","title":"Library
   of Congress Grants","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"89.001","permalink":"/program/89.001","title":"National
   Archives Reference Services Historical Research","popular_name":null,"agency":"National
   Archives and Records Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.140","permalink":"/program/97.140","title":"National
   Coast Guard Museum Construction","popular_name":"NCGM Construction","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.281","permalink":"/program/20.281","title":"Nationally
   Significant Federal Lands and Tribal Projects (NSFLTP)","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.785","permalink":"/program/15.785","title":"Nicodemus
-  National Historic Site","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.991","permalink":"/program/15.991","title":"September
-  11 National Memorial Trail","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.014","permalink":"/program/15.014","title":"Supporting
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.014","permalink":"/program/15.014","title":"Supporting
   the Lower Mississippi Delta Initiative","popular_name":"LMDI","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"42.010","permalink":"/program/42.010","title":"Teaching
   with Primary Sources","popular_name":null,"agency":"Library of Congress","total_obs":0.0,"program_type":"assistance_listing"}]'
@@ -329,5 +289,5 @@ title: Cultural Institutions
 total_num_agencies: 10
 total_num_applicant_types: 60
 total_num_programs: 39
-total_obs: 1261365269.88
+total_obs: 1290503785.94
 ---

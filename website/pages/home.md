@@ -162,9 +162,6 @@ categories:
   - title: Personal Financial Health
   title: Income Security and Social Services
 - sub_categories:
-  - title: Interest on the Public Debt
-  title: Interest on the Public Debt
-- sub_categories:
   - title: International Relations and Foreign Affairs
   title: International Affairs
 - sub_categories:
@@ -186,24 +183,6 @@ categories:
 - sub_categories:
   - title: General science and basic research
   title: Science and Technology
-- sub_categories:
-  - title: Agriculture
-  - title: Commerce and Housing
-  - title: Community and Regional Development
-  - title: Education, Training, Employment, and Social Services
-  - title: Energy
-  - title: General Purpose Fiscal Assistance
-  - title: General Science, Space, and Technology
-  - title: Health
-  - title: Income Security
-  - title: Interest
-  - title: International Affairs
-  - title: National Defense
-  - title: Natural Resources and Environment
-  - title: Social Security
-  - title: Transportation
-  - title: Veterans Benefits and Services
-  title: Tax Expenditures
 - sub_categories:
   - title: Air Transportation
   - title: Ground Transportation
@@ -468,6 +447,6 @@ program_types:
 - title: Training
 - title: Use of Property, Facilities, or Equipment
 programs_count: '3,447 '
-spending_total: 7666972883096.56
+spending_total: 7844868660269.63
 title: Home
 ---

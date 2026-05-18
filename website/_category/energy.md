@@ -1,11 +1,11 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":25,"total_obs":56020000000.0},{"title":"Department
-  of Energy","total_num_programs":20,"total_obs":13836751768.79},{"title":"Department
-  of Agriculture","total_num_programs":14,"total_obs":6025719943.22},{"title":"Department
-  of Health and Human Services","total_num_programs":1,"total_obs":4101949779.91},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":652130934.65},{"title":"Department
-  of the Interior","total_num_programs":10,"total_obs":98109044.65},{"title":"Nuclear
-  Regulatory Commission","total_num_programs":1,"total_obs":0.0}]'
+  of Energy","total_num_programs":20,"total_obs":19766260143.789997},{"title":"Department
+  of Agriculture","total_num_programs":14,"total_obs":8481858592.370001},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":4099656365.0},{"title":"Department
+  of Transportation","total_num_programs":7,"total_obs":654362513.89},{"title":"Department
+  of the Interior","total_num_programs":10,"total_obs":133565285.07},{"title":"Nuclear
+  Regulatory Commission","total_num_programs":1,"total_obs":140700.78}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":20},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":17},{"title":"Private
@@ -162,11 +162,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -206,41 +201,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -254,11 +214,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/energy
-sub_cats: '[{"title":"Energy Supply","permalink":"/category/energy/energy-supply","total_num_programs":78,"total_obs":80734661471.22}]'
+sub_cats: '[{"title":"Energy Supply","permalink":"/category/energy/energy-supply","total_num_programs":78,"total_obs":89155843600.9}]'
 title: Energy
 total_num_agencies: 7
 total_num_applicant_types: 71
 total_num_programs: 78
 total_num_sub_cats: 1
-total_obs: 80734661471.22
+total_obs: 89155843600.9
 ---

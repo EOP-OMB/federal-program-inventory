@@ -1,23 +1,24 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":10,"total_obs":5147778935.190001},{"title":"Department
-  of Labor","total_num_programs":24,"total_obs":4739647873.65},{"title":"Department
-  of Veterans Affairs","total_num_programs":6,"total_obs":1423595459.0},{"title":"Department
-  of Health and Human Services","total_num_programs":53,"total_obs":274990328.61},{"title":"Corporation
-  for National and Community Service","total_num_programs":10,"total_obs":273870589.42},{"title":"Department
-  of the Interior","total_num_programs":14,"total_obs":264667920.46000004},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":2,"total_obs":73633607.38},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":40172187.129999995},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":16354410.0},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":9216026.0},{"title":"The Institute
-  of Museum and Library Services","total_num_programs":2,"total_obs":7183453.79},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":6694138.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":4180265.0},{"title":"Department of
-  Energy","total_num_programs":2,"total_obs":4141217.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":133761.0},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Small
+agencies: '[{"title":"Department of Education","total_num_programs":10,"total_obs":4713794361.750001},{"title":"Department
+  of Labor","total_num_programs":24,"total_obs":4569492163.91},{"title":"Department
+  of Veterans Affairs","total_num_programs":6,"total_obs":1423595459.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":10,"total_obs":511695840.58},{"title":"Department
+  of Health and Human Services","total_num_programs":53,"total_obs":429871964.28},{"title":"Department
+  of the Interior","total_num_programs":14,"total_obs":292210825.3},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":101156414.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":2,"total_obs":88609019.14},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":54332257.91},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":26148649.58},{"title":"Social Security
+  Administration","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":15103735.0},{"title":"Department of
+  Transportation","total_num_programs":7,"total_obs":7392878.75},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":2,"total_obs":6945893.53},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":6711638.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":2970553.8899999997},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
   Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Morris
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0}]'
+  of Housing and Urban Development","total_num_programs":1,"total_obs":-951973.67}]'
 applicant_types: '[{"title":"State","total_num_programs":55},{"title":"Nonprofit Organization","total_num_programs":54},{"title":"Not-for-Profit
   Organization","total_num_programs":34},{"title":"Federally Recognized Indian/Native
   American/Alaska Native Tribal Government","total_num_programs":31},{"title":"Public
@@ -181,11 +182,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -225,41 +221,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -277,137 +238,148 @@ parent_title: Employment and Labor
 permalink: /category/employment-and-labor/workforce-development
 programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitation
   Services Vocational Rehabilitation Grants to States","popular_name":null,"agency":"Department
-  of Education","total_obs":4089079451.0,"program_type":"assistance_listing"},{"cfda":"64.116","permalink":"/program/64.116","title":"Veteran
+  of Education","total_obs":3928720837.8,"program_type":"assistance_listing"},{"cfda":"64.116","permalink":"/program/64.116","title":"Veteran
   Readiness and Employment","popular_name":"(Vocational Rehabilitation; Veteran Readiness
   & Employment; VR&E)","agency":"Department of Veterans Affairs","total_obs":1242203268.0,"program_type":"assistance_listing"},{"cfda":"17.278","permalink":"/program/17.278","title":"WIOA
   Dislocated Worker Formula Grants","popular_name":"Workforce Innovation and Opportunity
-  Act (WIOA) Dislocated Worker Program","agency":"Department of Labor","total_obs":1080146431.0,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
-  Education - Basic Grants to States","popular_name":null,"agency":"Department of
-  Education","total_obs":1035125331.19,"program_type":"assistance_listing"},{"cfda":"17.259","permalink":"/program/17.259","title":"WIOA
-  Youth Activities","popular_name":"WIOA Formula Youth","agency":"Department of Labor","total_obs":910653794.0,"program_type":"assistance_listing"},{"cfda":"17.258","permalink":"/program/17.258","title":"WIOA
+  Act (WIOA) Dislocated Worker Program","agency":"Department of Labor","total_obs":1088035173.53,"program_type":"assistance_listing"},{"cfda":"17.259","permalink":"/program/17.259","title":"WIOA
+  Youth Activities","popular_name":"WIOA Formula Youth","agency":"Department of Labor","total_obs":914282969.58,"program_type":"assistance_listing"},{"cfda":"17.258","permalink":"/program/17.258","title":"WIOA
   Adult Program","popular_name":"Workforce Innovation and Opportunity Act (WIOA),
-  Adult Programs","agency":"Department of Labor","total_obs":876501213.79,"program_type":"assistance_listing"},{"cfda":"17.207","permalink":"/program/17.207","title":"Employment
+  Adult Programs","agency":"Department of Labor","total_obs":888713091.32,"program_type":"assistance_listing"},{"cfda":"84.002","permalink":"/program/84.002","title":"Adult
+  Education - Basic Grants to States","popular_name":null,"agency":"Department of
+  Education","total_obs":712768965.51,"program_type":"assistance_listing"},{"cfda":"17.207","permalink":"/program/17.207","title":"Employment
   Service/Wagner-Peyser Funded Activities","popular_name":"Wagner- Peyser Act of 1933.","agency":"Department
-  of Labor","total_obs":705918020.19,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
+  of Labor","total_obs":706878796.3,"program_type":"assistance_listing"},{"cfda":"94.006","permalink":"/program/94.006","title":"AmeriCorps
   State and National 94.006","popular_name":"AmeriCorps State and National","agency":"Corporation
-  for National and Community Service","total_obs":226346384.0,"program_type":"assistance_listing"},{"cfda":"15.108","permalink":"/program/15.108","title":"Indian
+  for National and Community Service","total_obs":399080125.44,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
+  Research Manpower","popular_name":"Cancer Manpower Grants","agency":"Department
+  of Health and Human Services","total_obs":198424528.48,"program_type":"assistance_listing"},{"cfda":"15.108","permalink":"/program/15.108","title":"Indian
   Employment Assistance","popular_name":"Employment Assistance Program","agency":"Department
-  of the Interior","total_obs":183885863.56,"program_type":"assistance_listing"},{"cfda":"64.124","permalink":"/program/64.124","title":"All-Volunteer
+  of the Interior","total_obs":180415845.81,"program_type":"assistance_listing"},{"cfda":"64.124","permalink":"/program/64.124","title":"All-Volunteer
   Force Educational Assistance","popular_name":"(Montgomery GI-Bill Active Duty (MGIB)
   - Chapter 30)","agency":"Department of Veterans Affairs","total_obs":179953419.0,"program_type":"assistance_listing"},{"cfda":"17.801","permalink":"/program/17.801","title":"Jobs
   for Veterans State Grants","popular_name":"Jobs for Veterans State Grants (JVSG)","agency":"Department
-  of Labor","total_obs":174558042.0,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
-  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
-  Labor","total_obs":145442630.0,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
+  of Labor","total_obs":173812348.7,"program_type":"assistance_listing"},{"cfda":"93.674","permalink":"/program/93.674","title":"John
   H. Chafee Foster Care Program for Successful Transition to Adulthood","popular_name":"The
-  Chafee Program","agency":"Department of Health and Human Services","total_obs":143726011.0,"program_type":"assistance_listing"},{"cfda":"17.270","permalink":"/program/17.270","title":"Reentry
-  Employment Opportunities","popular_name":"Prisoner Re-entry","agency":"Department
-  of Labor","total_obs":110573928.0,"program_type":"assistance_listing"},{"cfda":"17.289","permalink":"/program/17.289","title":"Community
+  Chafee Program","agency":"Department of Health and Human Services","total_obs":139189057.22,"program_type":"assistance_listing"},{"cfda":"17.285","permalink":"/program/17.285","title":"Registered
+  Apprenticeship","popular_name":"Office of Apprenticeship","agency":"Department of
+  Labor","total_obs":131417067.77,"program_type":"assistance_listing"},{"cfda":"17.289","permalink":"/program/17.289","title":"Community
   Project Funding/Congressionally Directed Spending","popular_name":null,"agency":"Department
-  of Labor","total_obs":106698000.0,"program_type":"assistance_listing"},{"cfda":"17.274","permalink":"/program/17.274","title":"YouthBuild","popular_name":"YouthBuild","agency":"Department
-  of Labor","total_obs":100751266.0,"program_type":"assistance_listing"},{"cfda":"17.264","permalink":"/program/17.264","title":"National
-  Farmworker Jobs Program","popular_name":"NFJP","agency":"Department of Labor","total_obs":98500400.0,"program_type":"assistance_listing"},{"cfda":"93.280","permalink":"/program/93.280","title":"National
+  of Labor","total_obs":105231368.5,"program_type":"assistance_listing"},{"cfda":"17.270","permalink":"/program/17.270","title":"Reentry
+  Employment Opportunities","popular_name":"Prisoner Re-entry","agency":"Department
+  of Labor","total_obs":101764829.36,"program_type":"assistance_listing"},{"cfda":"12.631","permalink":"/program/12.631","title":"Science,
+  Technology, Engineering and Mathematics (STEM) Educational Program: Science, Mathematics
+  And Research for Transformation (SMART)","popular_name":"SMART Scholarship Program","agency":"Department
+  of Defense","total_obs":101156414.0,"program_type":"assistance_listing"},{"cfda":"17.264","permalink":"/program/17.264","title":"National
+  Farmworker Jobs Program","popular_name":"NFJP","agency":"Department of Labor","total_obs":96128692.08,"program_type":"assistance_listing"},{"cfda":"17.274","permalink":"/program/17.274","title":"YouthBuild","popular_name":"YouthBuild","agency":"Department
+  of Labor","total_obs":90942732.87,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
+  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
+  and Space Administration","total_obs":88609019.14,"program_type":"assistance_listing"},{"cfda":"93.280","permalink":"/program/93.280","title":"National
   Institutes of Health Extramural Loan Repayment Program","popular_name":"NIH Extramural
   LRP","agency":"Department of Health and Human Services","total_obs":87954322.58,"program_type":"assistance_listing"},{"cfda":"17.280","permalink":"/program/17.280","title":"WIOA
   Dislocated Worker National Reserve Demonstration Grants","popular_name":"Workforce
   Innovation and Opportunity Act (WIOA) Dislocated Worker National Reserve Demonstration
-  Grants","agency":"Department of Labor","total_obs":86389389.29,"program_type":"assistance_listing"},{"cfda":"17.235","permalink":"/program/17.235","title":"Senior
-  Community Service Employment Program","popular_name":"Senior Community Service Employment
-  Program (SCSEP)","agency":"Department of Labor","total_obs":82860895.0,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
+  Grants","agency":"Department of Labor","total_obs":82162757.31,"program_type":"assistance_listing"},{"cfda":"17.261","permalink":"/program/17.261","title":"Workforce
   Data Quality Initiative (WDQI)","popular_name":"Workforce Data Quality Initiative
-  (WDQI)","agency":"Department of Labor","total_obs":75441732.18,"program_type":"assistance_listing"},{"cfda":"43.008","permalink":"/program/43.008","title":"Office
-  of Stem Engagement (OSTEM)","popular_name":"OSTEM","agency":"National Aeronautics
-  and Space Administration","total_obs":73633607.38,"program_type":"assistance_listing"},{"cfda":"17.277","permalink":"/program/17.277","title":"WIOA
-  National Dislocated Worker Grants / WIA National Emergency Grants","popular_name":"National
-  Dislocated Worker Grants","agency":"Department of Labor","total_obs":62475301.0,"program_type":"assistance_listing"},{"cfda":"17.265","permalink":"/program/17.265","title":"Native
-  American Employment and Training","popular_name":"WIOA, Section 166, Native American
-  Employment and Training Program","agency":"Department of Labor","total_obs":52421521.0,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
+  (WDQI)","agency":"Department of Labor","total_obs":75650817.32,"program_type":"assistance_listing"},{"cfda":"17.235","permalink":"/program/17.235","title":"Senior
+  Community Service Employment Program","popular_name":"Senior Community Service Employment
+  Program (SCSEP)","agency":"Department of Labor","total_obs":58355020.24,"program_type":"assistance_listing"},{"cfda":"15.931","permalink":"/program/15.931","title":"Youth
   and Veteran Organizations Conservation Activities","popular_name":"21st Century
-  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":43252816.2,"program_type":"assistance_listing"},{"cfda":"93.398","permalink":"/program/93.398","title":"Cancer
-  Research Manpower","popular_name":"Cancer Manpower Grants","agency":"Department
-  of Health and Human Services","total_obs":39005939.03,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
-  Services","popular_name":null,"agency":"Department of the Interior","total_obs":24184544.79,"program_type":"assistance_listing"},{"cfda":"17.805","permalink":"/program/17.805","title":"Homeless
+  Conservation Service Corps Program","agency":"Department of the Interior","total_obs":56002039.77,"program_type":"assistance_listing"},{"cfda":"17.265","permalink":"/program/17.265","title":"Native
+  American Employment and Training","popular_name":"WIOA, Section 166, Native American
+  Employment and Training Program","agency":"Department of Labor","total_obs":55987888.6,"program_type":"assistance_listing"},{"cfda":"17.805","permalink":"/program/17.805","title":"Homeless
   Veterans\u2019 Reintegration Program","popular_name":"Homeless Veterans'' Reintegration
-  Program (HVRP)","agency":"Department of Labor","total_obs":23865870.92,"program_type":"assistance_listing"},{"cfda":"10.212","permalink":"/program/10.212","title":"Small
+  Program (HVRP)","agency":"Department of Labor","total_obs":50336562.38,"program_type":"assistance_listing"},{"cfda":"17.277","permalink":"/program/17.277","title":"WIOA
+  National Dislocated Worker Grants / WIA National Emergency Grants","popular_name":"National
+  Dislocated Worker Grants","agency":"Department of Labor","total_obs":49545235.55,"program_type":"assistance_listing"},{"cfda":"94.002","permalink":"/program/94.002","title":"AmeriCorps
+  Seniors Retired and Senior Volunteer Program (RSVP) 94.002","popular_name":"RSVP
+  94.002","agency":"Corporation for National and Community Service","total_obs":48590144.98,"program_type":"assistance_listing"},{"cfda":"84.250","permalink":"/program/84.250","title":"American
+  Indian Vocational Rehabilitation Services","popular_name":null,"agency":"Department
+  of Education","total_obs":35328104.47,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
+  Employment Policy Development","popular_name":"Office of Disability Employment Policy
+  (ODEP)","agency":"Department of Labor","total_obs":27187094.6,"program_type":"assistance_listing"},{"cfda":"11.467","permalink":"/program/11.467","title":"Meteorologic
+  and Hydrologic Modernization Development","popular_name":"(Hydrometeorological Development)","agency":"Department
+  of Commerce","total_obs":26148649.58,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
+  Services","popular_name":null,"agency":"Department of the Interior","total_obs":25465673.84,"program_type":"assistance_listing"},{"cfda":"15.676","permalink":"/program/15.676","title":"Youth
+  Engagement, Education, and Employment","popular_name":"YEEEP","agency":"Department
+  of the Interior","total_obs":23486222.8,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
+  Volunteers In Service to America 94.013","popular_name":"Volunteers In Service to
+  America","agency":"Corporation for National and Community Service","total_obs":22612595.42,"program_type":"assistance_listing"},{"cfda":"10.212","permalink":"/program/10.212","title":"Small
   Business Innovation Research (SBIR) Program / Small Business Technology Transfer
   (STTR) Program","popular_name":"SBIR/STTR Program - Phase I and II","agency":"Department
-  of Agriculture","total_obs":21571572.0,"program_type":"assistance_listing"},{"cfda":"94.003","permalink":"/program/94.003","title":"AmeriCorps
+  of Agriculture","total_obs":21230562.29,"program_type":"assistance_listing"},{"cfda":"96.008","permalink":"/program/96.008","title":"Social
+  Security - Work Incentives Planning and Assistance Program","popular_name":"SSA
+  Work Incentives Planning and Assistance (WIPA) Program or Work Incentives Outreach
+  Program","agency":"Social Security Administration","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"94.003","permalink":"/program/94.003","title":"AmeriCorps
   State Commissions Support Grant","popular_name":"AmeriCorps State Commissions Support
-  Grant 94.003","agency":"Corporation for National and Community Service","total_obs":20383885.0,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
+  Grant 94.003","agency":"Corporation for National and Community Service","total_obs":19534337.0,"program_type":"assistance_listing"},{"cfda":"10.329","permalink":"/program/10.329","title":"Crop
+  Protection and Pest Management Competitive Grants Program","popular_name":"Crop
+  Protection and Pest Management (CPPM)","agency":"Department of Agriculture","total_obs":18939020.54,"program_type":"assistance_listing"},{"cfda":"17.281","permalink":"/program/17.281","title":"WIOA
   Dislocated Worker National Reserve Technical Assistance and Training","popular_name":null,"agency":"Department
-  of Labor","total_obs":17978063.0,"program_type":"assistance_listing"},{"cfda":"11.467","permalink":"/program/11.467","title":"Meteorologic
-  and Hydrologic Modernization Development","popular_name":"(Hydrometeorological Development)","agency":"Department
-  of Commerce","total_obs":16354410.0,"program_type":"assistance_listing"},{"cfda":"94.002","permalink":"/program/94.002","title":"AmeriCorps
-  Seniors Retired and Senior Volunteer Program (RSVP) 94.002","popular_name":"RSVP
-  94.002","agency":"Corporation for National and Community Service","total_obs":15161196.0,"program_type":"assistance_listing"},{"cfda":"84.161","permalink":"/program/84.161","title":"Rehabilitation
+  of Labor","total_obs":17970629.34,"program_type":"assistance_listing"},{"cfda":"84.101","permalink":"/program/84.101","title":"Career
+  and Technical Education - Grants to Native Americans and Alaska Natives","popular_name":null,"agency":"Department
+  of Education","total_obs":14963541.0,"program_type":"assistance_listing"},{"cfda":"84.161","permalink":"/program/84.161","title":"Rehabilitation
   Services Client Assistance Program","popular_name":"Client Assistance Program (CAP)","agency":"Department
-  of Education","total_obs":12907444.0,"program_type":"assistance_listing"},{"cfda":"94.008","permalink":"/program/94.008","title":"AmeriCorps
+  of Education","total_obs":12503732.97,"program_type":"assistance_listing"},{"cfda":"94.008","permalink":"/program/94.008","title":"AmeriCorps
   Commission Investment Fund 94.008","popular_name":"AmeriCorps Commission Investment
-  Fund","agency":"Corporation for National and Community Service","total_obs":11075748.0,"program_type":"assistance_listing"},{"cfda":"17.245","permalink":"/program/17.245","title":"Trade
-  Adjustment Assistance","popular_name":"Trade Adjustment Assistance (TAA) Program","agency":"Department
-  of Labor","total_obs":10866014.28,"program_type":"assistance_listing"},{"cfda":"15.676","permalink":"/program/15.676","title":"Youth
-  Engagement, Education, and Employment","popular_name":"YEEEP","agency":"Department
-  of the Interior","total_obs":10435465.89,"program_type":"assistance_listing"},{"cfda":"20.531","permalink":"/program/20.531","title":"Technical
-  Assistance and Workforce Development","popular_name":"5314 Program","agency":"Department
-  of Transportation","total_obs":9216026.0,"program_type":"assistance_listing"},{"cfda":"17.290","permalink":"/program/17.290","title":"WIOA
+  Fund","agency":"Corporation for National and Community Service","total_obs":9999965.0,"program_type":"assistance_listing"},{"cfda":"17.290","permalink":"/program/17.290","title":"WIOA
   Adult, Dislocated Worker and Youth Outlying Areas Consolidated Grants","popular_name":"WIOA
   Adult, Dislocated Worker and Youth Outlying Areas Consolidated Grants","agency":"Department
-  of Labor","total_obs":7999123.0,"program_type":"assistance_listing"},{"cfda":"66.815","permalink":"/program/66.815","title":"Brownfields
+  of Labor","total_obs":7994974.0,"program_type":"assistance_listing"},{"cfda":"94.021","permalink":"/program/94.021","title":"AmeriCorps
+  Volunteer Generation Fund 94.021","popular_name":"Volunteer Generation Fund 94.021","agency":"Corporation
+  for National and Community Service","total_obs":7409181.04,"program_type":"assistance_listing"},{"cfda":"20.531","permalink":"/program/20.531","title":"Technical
+  Assistance and Workforce Development","popular_name":"5314 Program","agency":"Department
+  of Transportation","total_obs":7392878.75,"program_type":"assistance_listing"},{"cfda":"66.815","permalink":"/program/66.815","title":"Brownfields
   Job Training Cooperative Agreements","popular_name":"Brownfields MARC Grants","agency":"Environmental
-  Protection Agency","total_obs":6694138.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
+  Protection Agency","total_obs":6711638.0,"program_type":"assistance_listing"},{"cfda":"84.264","permalink":"/program/84.264","title":"Rehabilitation
   Training Technical Assistance Centers","popular_name":null,"agency":"Department
-  of Education","total_obs":5996000.0,"program_type":"assistance_listing"},{"cfda":"10.329","permalink":"/program/10.329","title":"Crop
-  Protection and Pest Management Competitive Grants Program","popular_name":"Crop
-  Protection and Pest Management (CPPM)","agency":"Department of Agriculture","total_obs":5217895.13,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
-  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
-  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
-  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4800000.0,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
+  of Education","total_obs":5996000.0,"program_type":"assistance_listing"},{"cfda":"94.012","permalink":"/program/94.012","title":"AmeriCorps
+  September 11th National Day of Service and Remembrance Grants 94.012","popular_name":"September
+  11th National Day of Service and Remembrance Grants","agency":"Corporation for National
+  and Community Service","total_obs":5754823.25,"program_type":"assistance_listing"},{"cfda":"19.020","permalink":"/program/19.020","title":"Charles
+  B. Rangel International Affairs Program","popular_name":"Rangel Program","agency":"Department
+  of State","total_obs":5562520.0,"program_type":"assistance_listing"},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
+  R. Pickering Foreign Affairs Fellowship Program","popular_name":"Pickering Fellowship
+  Program","agency":"Department of State","total_obs":5363480.0,"program_type":"assistance_listing"},{"cfda":"15.026","permalink":"/program/15.026","title":"Indian
+  Adult Education","popular_name":null,"agency":"Department of the Interior","total_obs":4945127.74,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
+  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4794775.89,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
   Bush 21st Century Librarian Program","popular_name":"Laura Bush 21st Century Librarian
-  Program","agency":"The Institute of Museum and Library Services","total_obs":4683798.79,"program_type":"assistance_listing"},{"cfda":"84.250","permalink":"/program/84.250","title":"American
-  Indian Vocational Rehabilitation Services","popular_name":null,"agency":"Department
-  of Education","total_obs":4670709.0,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
-  Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":4606239.0,"program_type":"assistance_listing"},{"cfda":"93.594","permalink":"/program/93.594","title":"Tribal
+  Program","agency":"The Institute of Museum and Library Services","total_obs":4446238.53,"program_type":"assistance_listing"},{"cfda":"93.594","permalink":"/program/93.594","title":"Tribal
   Work Grants","popular_name":"Native Employment Works (NEW) Program","agency":"Department
-  of Health and Human Services","total_obs":4304056.0,"program_type":"assistance_listing"},{"cfda":"19.421","permalink":"/program/19.421","title":"Academic
+  of Health and Human Services","total_obs":4304056.0,"program_type":"assistance_listing"},{"cfda":"17.701","permalink":"/program/17.701","title":"Women
+  in Apprenticeship and Nontraditional Occupations (\u201cWANTO\u201d) Technical Assistance
+  Grant Program","popular_name":"WANTO Grants","agency":"Department of Labor","total_obs":4223608.82,"program_type":"assistance_listing"},{"cfda":"19.421","permalink":"/program/19.421","title":"Academic
   Exchange Programs - English Language Programs","popular_name":"English Access Scholarship;
   English Language Fellow Specialist Virtual Educator; and Online Professional English
-  Network (OPEN) Programs","agency":"Department of State","total_obs":4180265.0,"program_type":"assistance_listing"},{"cfda":"10.336","permalink":"/program/10.336","title":"Veterinary
-  Services Grant Program","popular_name":"VSGP","agency":"Department of Agriculture","total_obs":3750000.0,"program_type":"assistance_listing"},{"cfda":"81.137","permalink":"/program/81.137","title":"Minority
-  Economic Impact","popular_name":"Minority Education Awards and Minority Business
-  and Economic Development Programs","agency":"Department of Energy","total_obs":3141217.0,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
-  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":2801160.0,"program_type":"assistance_listing"},{"cfda":"45.032","permalink":"/program/45.032","title":"21st
+  Network (OPEN) Programs","agency":"Department of State","total_obs":4177735.0,"program_type":"assistance_listing"},{"cfda":"84.259","permalink":"/program/84.259","title":"Native
+  Hawaiian Career and Technical Education","popular_name":null,"agency":"Department
+  of Education","total_obs":3599620.0,"program_type":"assistance_listing"},{"cfda":"10.336","permalink":"/program/10.336","title":"Veterinary
+  Services Grant Program","popular_name":"VSGP","agency":"Department of Agriculture","total_obs":3584217.85,"program_type":"assistance_listing"},{"cfda":"10.320","permalink":"/program/10.320","title":"Sun
+  Grant Program","popular_name":null,"agency":"Department of Agriculture","total_obs":2781877.76,"program_type":"assistance_listing"},{"cfda":"45.032","permalink":"/program/45.032","title":"21st
   Century Museum Professional Program","popular_name":"21st Century Museum Professional
-  Program","agency":"The Institute of Museum and Library Services","total_obs":2499655.0,"program_type":"assistance_listing"},{"cfda":"15.026","permalink":"/program/15.026","title":"Indian
-  Adult Education","popular_name":null,"agency":"Department of the Interior","total_obs":1685094.74,"program_type":"assistance_listing"},{"cfda":"64.130","permalink":"/program/64.130","title":"Veteran
-  Rapid Retraining Assistance Program","popular_name":"Veteran Rapid Retraining Assistance
-  Program","agency":"Department of Veterans Affairs","total_obs":1438772.0,"program_type":"assistance_listing"},{"cfda":"10.334","permalink":"/program/10.334","title":"Enhancing
+  Program","agency":"The Institute of Museum and Library Services","total_obs":2499655.0,"program_type":"assistance_listing"},{"cfda":"10.334","permalink":"/program/10.334","title":"Enhancing
   Agricultural Opportunities for Military Veterans Competitive Grants Program","popular_name":"AgVets","agency":"Department
-  of Agriculture","total_obs":1366428.0,"program_type":"assistance_listing"},{"cfda":"15.070","permalink":"/program/15.070","title":"Experienced
+  of Agriculture","total_obs":2443448.47,"program_type":"assistance_listing"},{"cfda":"81.137","permalink":"/program/81.137","title":"Minority
+  Economic Impact","popular_name":"Minority Education Awards and Minority Business
+  and Economic Development Programs","agency":"Department of Energy","total_obs":1970553.89,"program_type":"assistance_listing"},{"cfda":"15.546","permalink":"/program/15.546","title":"Youth
+  Conservation","popular_name":null,"agency":"Department of the Interior","total_obs":1493065.68,"program_type":"assistance_listing"},{"cfda":"64.130","permalink":"/program/64.130","title":"Veteran
+  Rapid Retraining Assistance Program","popular_name":"Veteran Rapid Retraining Assistance
+  Program","agency":"Department of Veterans Affairs","total_obs":1438772.0,"program_type":"assistance_listing"},{"cfda":"15.070","permalink":"/program/15.070","title":"Experienced
   Services Program","popular_name":"Experienced Services Program (ESP)","agency":"Department
-  of the Interior","total_obs":1149815.0,"program_type":"assistance_listing"},{"cfda":"81.281","permalink":"/program/81.281","title":"Workforce
+  of the Interior","total_obs":1154077.54,"program_type":"assistance_listing"},{"cfda":"94.014","permalink":"/program/94.014","title":"AmeriCorps
+  Martin Luther King Jr. Day of Service Grants 94.014","popular_name":"Martin Luther
+  King Jr. Day of Service Grants","agency":"Corporation for National and Community
+  Service","total_obs":1045040.0,"program_type":"assistance_listing"},{"cfda":"81.281","permalink":"/program/81.281","title":"Workforce
   Opportunities in Regional Careers II","popular_name":"WORC II","agency":"Department
   of Energy","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"10.228","permalink":"/program/10.228","title":"Alaska
   Native Serving and Native Hawaiian Serving Institutions Education Grants","popular_name":"ANNH
-  Grants Program","agency":"Department of Agriculture","total_obs":665132.0,"program_type":"assistance_listing"},{"cfda":"94.014","permalink":"/program/94.014","title":"AmeriCorps
-  Martin Luther King Jr. Day of Service Grants 94.014","popular_name":"Martin Luther
-  King Jr. Day of Service Grants","agency":"Corporation for National and Community
-  Service","total_obs":502867.0,"program_type":"assistance_listing"},{"cfda":"94.012","permalink":"/program/94.012","title":"AmeriCorps
-  September 11th National Day of Service and Remembrance Grants 94.012","popular_name":"September
-  11th National Day of Service and Remembrance Grants","agency":"Corporation for National
-  and Community Service","total_obs":243500.0,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
-  Volunteers In Service to America 94.013","popular_name":"Volunteers In Service to
-  America","agency":"Corporation for National and Community Service","total_obs":157009.42,"program_type":"assistance_listing"},{"cfda":"12.631","permalink":"/program/12.631","title":"Science,
-  Technology, Engineering and Mathematics (STEM) Educational Program: Science, Mathematics
-  And Research for Transformation (SMART)","popular_name":"SMART Scholarship Program","agency":"Department
-  of Defense","total_obs":133761.0,"program_type":"assistance_listing"},{"cfda":"15.546","permalink":"/program/15.546","title":"Youth
-  Conservation","popular_name":null,"agency":"Department of the Interior","total_obs":74320.28,"program_type":"assistance_listing"},{"cfda":"84.191","permalink":"/program/84.191","title":"Adult
+  Grants Program","agency":"Department of Agriculture","total_obs":558355.11,"program_type":"assistance_listing"},{"cfda":"15.013","permalink":"/program/15.013","title":"Alaska
+  Native Science and Engineering","popular_name":"Alaska Native Science and Engineering
+  Program (ANSEP)","agency":"Department of the Interior","total_obs":47000.0,"program_type":"assistance_listing"},{"cfda":"84.191","permalink":"/program/84.191","title":"Adult
   Education National Leadership Activities","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.111","permalink":"/program/20.111","title":"Aircraft
   Pilots Workforce Development Grant Program","popular_name":"Aircraft Pilots Workforce
-  Development Grant Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.013","permalink":"/program/15.013","title":"Alaska
-  Native Science and Engineering","popular_name":"Alaska Native Science and Engineering
-  Program (ANSEP)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.442","permalink":"/program/15.442","title":"Alaska
+  Development Grant Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.442","permalink":"/program/15.442","title":"Alaska
   Native Science and Engineering","popular_name":"ANSEP","agency":"Department of the
   Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AA3","permalink":"/program/93.AA3","title":"Alcohol
   Research Programs \u2013 Training, Individual","popular_name":null,"agency":"Department
@@ -415,12 +387,7 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Research Programs \u2013 Training, Institutional","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.020","permalink":"/program/94.020","title":"AmeriCorps
   CNCS Disaster Response Cooperative Agreement 94.020","popular_name":"AmeriCorps
-  Disaster Response Team","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.017","permalink":"/program/94.017","title":"AmeriCorps
-  Seniors Senior Demonstration Program (FGP) 94.017","popular_name":"AmeriCorps Seniors
-  Senior Demonstration Program (SDP) 94.017","agency":"Corporation for National and
-  Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.021","permalink":"/program/94.021","title":"AmeriCorps
-  Volunteer Generation Fund 94.021","popular_name":"Volunteer Generation Fund 94.021","agency":"Corporation
-  for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR3","permalink":"/program/93.AR3","title":"Arthritis,
+  Disaster Response Team","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR3","permalink":"/program/93.AR3","title":"Arthritis,
   Musculoskeletal and Skin Diseases Research - Training Individual (TR)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR4","permalink":"/program/93.AR4","title":"Arthritis,
   Musculoskeletal and Skin Diseases Research - Training Institutional (TI)","popular_name":null,"agency":"Department
@@ -436,13 +403,7 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Research - Training, Individual (TR)","popular_name":null,"agency":"Department of
   Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.GM6","permalink":"/program/93.GM6","title":"Biomedical
   Research - Training, Institutional (TI)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.101","permalink":"/program/84.101","title":"Career
-  and Technical Education - Grants to Native Americans and Alaska Natives","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
-  and Technical Education -- National Programs","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.020","permalink":"/program/19.020","title":"Charles
-  B. Rangel International Affairs Program","popular_name":"Rangel Program","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDD","permalink":"/program/93.HDD","title":"Child
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDD","permalink":"/program/93.HDD","title":"Child
   Health and Human Development Research Training \u2013 Individual Awards","popular_name":"Child
   Health and Human Development Research Training \u2013 Individual Awards","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDN","permalink":"/program/93.HDN","title":"Child
@@ -470,13 +431,9 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Health Sciences - Individual Training","popular_name":"National Institute of Environmental
   Health Sciences","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.EST","permalink":"/program/93.EST","title":"Environmental
   Health Sciences - Institutional Training","popular_name":"National Institute of
-  Environmental Health Sciences","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.019","permalink":"/program/15.019","title":"Experienced
-  Services","popular_name":"Experienced Services Program (ESP)","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.513","permalink":"/program/10.513","title":"Facility
+  Environmental Health Sciences","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.513","permalink":"/program/10.513","title":"Facility
   Improvements at 1890 Facilities (Sec. 1447)","popular_name":"1890 FGP\r\n\r\n","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.268","permalink":"/program/17.268","title":"H-1B
-  Job Training Grants","popular_name":"H-1B Skills Training Grants","agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.400","permalink":"/program/90.400","title":"Help
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.400","permalink":"/program/90.400","title":"Help
   America Vote College Program","popular_name":"Help America Vote College Poll Worker
   Grant Program; Help America Vote College Service Day Mini-Grant Program","agency":"U.S.
   Election Assistance Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HG5","permalink":"/program/93.HG5","title":"Human
@@ -486,17 +443,11 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Research Institute - Training, Institutional","agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.061","permalink":"/program/15.061","title":"Indian
   Job Placement United Sioux Tribes Development Corporation","popular_name":"(United
-  Sioux Tribes)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.060","permalink":"/program/15.060","title":"Indian
-  Vocational Training United Tribes Technical College","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.445","permalink":"/program/66.445","title":"Innovative
+  Sioux Tribes)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.445","permalink":"/program/66.445","title":"Innovative
   Water Infrastructure Workforce Development Program (SDWA 1459E)","popular_name":null,"agency":"Environmental
   Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.140","permalink":"/program/93.140","title":"Intramural
   Research Training Award","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.287","permalink":"/program/17.287","title":"Job
-  Corps Experimental Projects and Technical Assistance","popular_name":null,"agency":"Department
-  of Labor","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.895","permalink":"/program/14.895","title":"Jobs-Plus
-  Pilot Initiative","popular_name":"Jobs-Plus Iniative","agency":"Department of Housing
-  and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24T","permalink":"/program/93.24T","title":"Mental
+  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24T","permalink":"/program/93.24T","title":"Mental
   Health Research - Training, Individual","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24N","permalink":"/program/93.24N","title":"Mental
   Health Research - Training, Institutional","popular_name":null,"agency":"Department
@@ -537,9 +488,7 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Library of Medicine - Training (Institutional)","popular_name":"NLM T15 & R25","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.015","permalink":"/program/43.015","title":"National
   Space Grant and Fellowship Project","popular_name":"Space Grant","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.259","permalink":"/program/84.259","title":"Native
-  Hawaiian Career and Technical Education","popular_name":null,"agency":"Department
-  of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS5","permalink":"/program/93.NS5","title":"Neurosciences
+  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS5","permalink":"/program/93.NS5","title":"Neurosciences
   and Neurological Disorders \u2013 Training, Individual (TR)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS6","permalink":"/program/93.NS6","title":"Neurosciences
   and Neurological Disorders \u2013 Training, Institutional (TI)","popular_name":null,"agency":"Department
@@ -575,16 +524,11 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Emerging Leaders initiative","popular_name":"THRIVE Emerging Leaders","agency":"Small
   Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
   Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.008","permalink":"/program/96.008","title":"Social
-  Security - Work Incentives Planning and Assistance Program","popular_name":"SSA
-  Work Incentives Planning and Assistance (WIPA) Program or Work Incentives Outreach
-  Program","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.467","permalink":"/program/10.467","title":"Student
+  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.467","permalink":"/program/10.467","title":"Student
   Internship Programs","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.296","permalink":"/program/20.296","title":"Surface
   Transportation Workforce Development, Training, and Education 504(e)","popular_name":"504(e)
   Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.350","permalink":"/program/10.350","title":"Technical
-  Assistance to Cooperatives","popular_name":"TAC","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
-  R. Pickering Foreign Affairs Fellowship Program","popular_name":"Pickering Fellowship
-  Program","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.297","permalink":"/program/20.297","title":"Transportation
+  Assistance to Cooperatives","popular_name":"TAC","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.297","permalink":"/program/20.297","title":"Transportation
   Education and Training Development  and Deployment Program (TETDDP) 504(f)","popular_name":"Highway
   Construction Training Program (HCTP)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.049","permalink":"/program/10.049","title":"Tribal
   Youth & Workforce Development","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.187","permalink":"/program/93.187","title":"Undergraduate
@@ -597,11 +541,28 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   other Veterans","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.125","permalink":"/program/64.125","title":"Vocational
   and Educational Counseling for Servicemembers and Veterans","popular_name":"Personalized
   Career Planning and Guidance Program /CH36","agency":"Department of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.821","permalink":"/program/20.821","title":"Women
-  on the Water (WOW)","popular_name":"WOW Conference","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"17.700","permalink":"/program/17.700","title":"Women''s
-  Bureau","popular_name":"WB","agency":"Department of Labor","total_obs":0.0,"program_type":"assistance_listing"}]'
+  on the Water (WOW)","popular_name":"WOW Conference","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.051","permalink":"/program/84.051","title":"Career
+  and Technical Education -- National Programs","popular_name":null,"agency":"Department
+  of Education","total_obs":-86440.0,"program_type":"assistance_listing"},{"cfda":"15.060","permalink":"/program/15.060","title":"Indian
+  Vocational Training United Tribes Technical College","popular_name":null,"agency":"Department
+  of the Interior","total_obs":-271060.0,"program_type":"assistance_listing"},{"cfda":"17.700","permalink":"/program/17.700","title":"Women''s
+  Bureau","popular_name":"WB","agency":"Department of Labor","total_obs":-440967.76,"program_type":"assistance_listing"},{"cfda":"15.019","permalink":"/program/15.019","title":"Experienced
+  Services","popular_name":"Experienced Services Program (ESP)","agency":"Department
+  of the Interior","total_obs":-527167.88,"program_type":"assistance_listing"},{"cfda":"14.895","permalink":"/program/14.895","title":"Jobs-Plus
+  Pilot Initiative","popular_name":"Jobs-Plus Iniative","agency":"Department of Housing
+  and Urban Development","total_obs":-951973.67,"program_type":"assistance_listing"},{"cfda":"94.017","permalink":"/program/94.017","title":"AmeriCorps
+  Seniors Senior Demonstration Program (FGP) 94.017","popular_name":"AmeriCorps Seniors
+  Senior Demonstration Program (SDP) 94.017","agency":"Corporation for National and
+  Community Service","total_obs":-2330371.55,"program_type":"assistance_listing"},{"cfda":"17.287","permalink":"/program/17.287","title":"Job
+  Corps Experimental Projects and Technical Assistance","popular_name":null,"agency":"Department
+  of Labor","total_obs":-5112537.95,"program_type":"assistance_listing"},{"cfda":"17.268","permalink":"/program/17.268","title":"H-1B
+  Job Training Grants","popular_name":"H-1B Skills Training Grants","agency":"Department
+  of Labor","total_obs":-19926943.01,"program_type":"assistance_listing"},{"cfda":"17.245","permalink":"/program/17.245","title":"Trade
+  Adjustment Assistance","popular_name":"Trade Adjustment Assistance (TAA) Program","agency":"Department
+  of Labor","total_obs":-131649045.54,"program_type":"assistance_listing"}]'
 title: Workforce Development
 total_num_agencies: 20
 total_num_applicant_types: 75
 total_num_programs: 160
-total_obs: 12286260171.630001
+total_obs: 12269079680.95
 ---

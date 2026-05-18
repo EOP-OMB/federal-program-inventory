@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Natural Resources - Conservation and Land Management
-- Tax Expenditures - Natural Resources and Environment
 cfda: TC.047
 fiscal_year: '2025'
 grants_url: null

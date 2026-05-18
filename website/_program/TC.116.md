@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Education - Educational Environments
-- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.116
 fiscal_year: '2025'
 grants_url: null

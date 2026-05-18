@@ -357,19 +357,18 @@ Aggregated obligation data from USASpending.gov by program, fiscal year, assista
 
 ### usaspending_assistance_outlay_aggregation
 
-Aggregated outlay and obligation data from USASpending.gov by program and award first fiscal year.
+Aggregated outlay and obligation data from USASpending.gov by program and fiscal year.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
 | cfda_number | TEXT | FOREIGN KEY REFERENCES program(id), NOT NULL | Program identifier (CFDA number) |
-| award_first_fiscal_year | INTEGER | NOT NULL | First fiscal year of transactions for the award |
+| fiscal_year | INTEGER | NOT NULL | First fiscal year of transactions for the outlays / Action year of transactions for the obligations |
 | outlay | REAL | NOT NULL | Sum of total_outlayed_amount_for_overall_award |
 | obligation | REAL | NOT NULL | Sum of federal_action_obligation |
 
 **Source**: Aggregated from `usaspending_assistance` table
 **Notes**:
-- Uses `MIN(action_date_fiscal_year)` as `award_first_fiscal_year` to ensure consistent date attribution
-- Aggregates by award first, then by program and fiscal year
+- Aggregates by program and fiscal year
 - Methodology differs from obligation aggregation to allow consistent outlay/obligation comparison
 - Source data downloaded from USASpending.gov Award Data Archives
 
@@ -386,7 +385,6 @@ Stores spending data for programs not in SAM.gov (interest on public debt, tax e
 | outlays | REAL | | Outlay amount |
 | forgone_revenue | REAL | | Forgone revenue amount (for tax expenditures) |
 | source | TEXT | NOT NULL | Source of the data (e.g., 'additional-programs.csv') |
-| focus_area_id | TEXT | FOREIGN KEY REFERENCES taxonomy_focus_area(id), NOT NULL | Reference to the focus area for taxonomy classification |
 
 **Source**: `additional-programs.csv`  
 **Notes**:
@@ -513,8 +511,7 @@ usaspending_assistance_outlay_aggregation
   └── cfda_number → program(id)
 
 other_program_spending
-  ├── program_id → program(id)
-  └── focus_area_id → taxonomy_focus_area(id)
+  └── program_id → program(id)
 
 improper_payment_mapping
   └── program_id → program(id)

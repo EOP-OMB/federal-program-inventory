@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Natural Resources and Environment
 cfda: TC.040
 fiscal_year: '2025'
 grants_url: null

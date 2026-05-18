@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Education - Post–Secondary Education
-- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.107
 fiscal_year: '2025'
 grants_url: null

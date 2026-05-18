@@ -1,23 +1,24 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":80,"total_obs":73621331837.61},{"title":"Department
+agencies: '[{"title":"Department of Education","total_num_programs":80,"total_obs":90749452373.15999},{"title":"Department
   of the Treasury","total_num_programs":9,"total_obs":27390000000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":3,"total_obs":13387380988.0},{"title":"Department
-  of Health and Human Services","total_num_programs":6,"total_obs":13241779916.9},{"title":"Department
-  of the Interior","total_num_programs":18,"total_obs":860932198.7700001},{"title":"National
-  Science Foundation","total_num_programs":1,"total_obs":685667862.0},{"title":"Department
-  of Defense","total_num_programs":9,"total_obs":203362153.0},{"title":"Department
-  of Transportation","total_num_programs":5,"total_obs":89915465.59},{"title":"Department
-  of Agriculture","total_num_programs":27,"total_obs":87987816.78},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":40795789.0},{"title":"Nuclear
-  Regulatory Commission","total_num_programs":2,"total_obs":6987884.12},{"title":"Environmental
-  Protection Agency","total_num_programs":2,"total_obs":3268150.0},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":2023649.0},{"title":"National Endowment
-  for the Humanities","total_num_programs":1,"total_obs":902296.87},{"title":"Office
-  of the Director Of National Intelligence","total_num_programs":1,"total_obs":0.0},{"title":"Morris
+  of Health and Human Services","total_num_programs":6,"total_obs":22923111823.300003},{"title":"Department
+  of Veterans Affairs","total_num_programs":3,"total_obs":13387380988.0},{"title":"National
+  Science Foundation","total_num_programs":1,"total_obs":1437374721.0},{"title":"Department
+  of the Interior","total_num_programs":18,"total_obs":955612461.75},{"title":"Department
+  of Defense","total_num_programs":9,"total_obs":256400796.66},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":105346901.79},{"title":"Department
+  of Transportation","total_num_programs":5,"total_obs":89751527.17},{"title":"Department
+  of Agriculture","total_num_programs":27,"total_obs":71549807.70000002},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":17166851.79},{"title":"Environmental
+  Protection Agency","total_num_programs":2,"total_obs":5591730.0},{"title":"Nuclear
+  Regulatory Commission","total_num_programs":2,"total_obs":1345716.9},{"title":"National
+  Endowment for the Humanities","total_num_programs":1,"total_obs":242316.6},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":130699.16},{"title":"Office of the
+  Director Of National Intelligence","total_num_programs":1,"total_obs":0.0},{"title":"Morris
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
   of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":2,"total_obs":0.0},{"title":"Department of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Barry
-  Goldwater Scholarship and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
+  Security","total_num_programs":2,"total_obs":0.0},{"title":"Barry Goldwater Scholarship
+  and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":49},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":47},{"title":"Public
@@ -176,11 +177,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -220,41 +216,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -268,15 +229,15 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/education
-sub_cats: '[{"title":"Early Childhood Education and Childcare","permalink":"/category/education/early-childhood-education-and-childcare","total_num_programs":10,"total_obs":17836580589.61},{"title":"Educational
-  Environments","permalink":"/category/education/educational-environments","total_num_programs":45,"total_obs":21450917025.59},{"title":"K\u201312
-  Education","permalink":"/category/education/k-12-education","total_num_programs":42,"total_obs":26603068351.029995},{"title":"Post\u2013Secondary
-  Education","permalink":"/category/education/post-secondary-education","total_num_programs":52,"total_obs":62866891788.12},{"title":"STEM
-  Education","permalink":"/category/education/stem-education","total_num_programs":29,"total_obs":864878253.29}]'
+sub_cats: '[{"title":"Early Childhood Education and Childcare","permalink":"/category/education/early-childhood-education-and-childcare","total_num_programs":10,"total_obs":27511261106.36},{"title":"Educational
+  Environments","permalink":"/category/education/educational-environments","total_num_programs":45,"total_obs":21717240849.899998},{"title":"K\u201312
+  Education","permalink":"/category/education/k-12-education","total_num_programs":42,"total_obs":27731705226.029995},{"title":"Post\u2013Secondary
+  Education","permalink":"/category/education/post-secondary-education","total_num_programs":52,"total_obs":78756847004.57},{"title":"STEM
+  Education","permalink":"/category/education/stem-education","total_num_programs":29,"total_obs":1673404528.1200001}]'
 title: Education
 total_num_agencies: 20
 total_num_applicant_types: 68
 total_num_programs: 178
 total_num_sub_cats: 5
-total_obs: 129622336007.63997
+total_obs: 157390458714.97998
 ---
