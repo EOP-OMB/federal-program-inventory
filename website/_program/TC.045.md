@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Cultural Affairs - Cultural Institutions
-- Tax Expenditures - Natural Resources and Environment
 cfda: TC.045
 fiscal_year: '2025'
 grants_url: null

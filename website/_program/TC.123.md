@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Education - Early Childhood Education and Childcare
-- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.123
 fiscal_year: '2025'
 grants_url: null

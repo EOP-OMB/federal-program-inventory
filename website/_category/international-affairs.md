@@ -1,16 +1,17 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":68,"total_obs":2957822044.4200006},{"title":"Agency
-  for International Development","total_num_programs":11,"total_obs":583041716.0},{"title":"U.S.
-  Agency for Global Media","total_num_programs":1,"total_obs":321664441.0},{"title":"Millennium
-  Challenge Corporation","total_num_programs":1,"total_obs":261055003.2},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":2518590.15},{"title":"Department
+agencies: '[{"title":"Agency for International Development","total_num_programs":11,"total_obs":8109403969.0},{"title":"Department
+  of State","total_num_programs":68,"total_obs":3644142606.1299996},{"title":"U.S.
+  Agency for Global Media","total_num_programs":1,"total_obs":296535796.0},{"title":"Millennium
+  Challenge Corporation","total_num_programs":1,"total_obs":250952618.91},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":45882249.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":62900.0},{"title":"United States
   Institute of Peace","total_num_programs":1,"total_obs":0.0},{"title":"Japan-U.S.
   Friendship Commission","total_num_programs":1,"total_obs":0.0},{"title":"Inter-American
   Foundation","total_num_programs":3,"total_obs":0.0},{"title":"Department of Health
-  and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":4,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":4,"total_obs":0.0},{"title":"United
-  States International Development Finance Corporation","total_num_programs":4,"total_obs":-1337861575.8}]'
+  and Human Services","total_num_programs":1,"total_obs":-18373.91},{"title":"Department
+  of Agriculture","total_num_programs":4,"total_obs":-829838.03},{"title":"Department
+  of Education","total_num_programs":4,"total_obs":-899121.26},{"title":"United States
+  International Development Finance Corporation","total_num_programs":4,"total_obs":-1664127844.51}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":32},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":29},{"title":"Nonprofit
@@ -159,11 +160,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -203,41 +199,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -251,11 +212,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/international-affairs
-sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":102,"total_obs":2788303118.9700003}]'
+sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":102,"total_obs":10681104961.33}]'
 title: International Affairs
 total_num_agencies: 13
 total_num_applicant_types: 57
 total_num_programs: 102
 total_num_sub_cats: 1
-total_obs: 2788303118.9700003
+total_obs: 10681104961.33
 ---

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.117
 fiscal_year: '2025'
 grants_url: null

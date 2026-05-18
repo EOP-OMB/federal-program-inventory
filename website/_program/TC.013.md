@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Income Security and Social Services - Personal Financial Health
-- Tax Expenditures - Energy
 cfda: TC.013
 fiscal_year: '2025'
 grants_url: null

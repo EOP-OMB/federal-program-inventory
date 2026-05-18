@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":73,"total_obs":20380347866.909996},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":73,"total_obs":20379572206.659996},{"title":"Department
   of the Treasury","total_num_programs":6,"total_obs":2750000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":900000.0}]'
+  of the Interior","total_num_programs":1,"total_obs":863061.84}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":24},{"title":"Unrestricted
   by Entity Type","total_num_programs":24},{"title":"For-Profit Organization","total_num_programs":21},{"title":"Small
   Business Person","total_num_programs":21},{"title":"Land/Property Owner","total_num_programs":18},{"title":"Unrestricted
@@ -142,11 +142,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -186,41 +181,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -263,10 +223,10 @@ programs: '[{"cfda":"10.121","permalink":"/program/10.121","title":"Emergency Co
   Services at 1890 Colleges and Tuskegee University, West Virginia State College,
   and Central State University","popular_name":"Extension Services at 1890 Institutions
   (1890''s Institutions and Tuskegee); 1890 LGIs \u2013 Section 1444 Extension","agency":"Department
-  of Agriculture","total_obs":69120000.0,"program_type":"assistance_listing"},{"cfda":"10.108","permalink":"/program/10.108","title":"Livestock
+  of Agriculture","total_obs":69049679.44,"program_type":"assistance_listing"},{"cfda":"10.108","permalink":"/program/10.108","title":"Livestock
   Indemnity Program-2014 Farm Bill","popular_name":"LIP","agency":"Department of Agriculture","total_obs":30643731.0,"program_type":"assistance_listing"},{"cfda":"10.443","permalink":"/program/10.443","title":"Outreach
   and Assistance for Socially Disadvantaged and Veteran Farmers and Ranchers","popular_name":"USDA
-  2501 Grant Program ","agency":"Department of Agriculture","total_obs":22234202.0,"program_type":"assistance_listing"},{"cfda":"TC.053","permalink":"/program/TC.053","title":"Deferral
+  2501 Grant Program ","agency":"Department of Agriculture","total_obs":22007497.8,"program_type":"assistance_listing"},{"cfda":"TC.053","permalink":"/program/TC.053","title":"Deferral
   of gain on sale of farm refiners","popular_name":null,"agency":"Department of the
   Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"10.111","permalink":"/program/10.111","title":"Tree
   Assistance Program","popular_name":"TAP","agency":"Department of Agriculture","total_obs":17930104.18,"program_type":"assistance_listing"},{"cfda":"10.352","permalink":"/program/10.352","title":"Value-Added
@@ -277,23 +237,25 @@ programs: '[{"cfda":"10.121","permalink":"/program/10.121","title":"Emergency Co
   Livestock Relief Program 2023 and 2024","popular_name":"ELRP 2023 and 2024","agency":"Department
   of Agriculture","total_obs":7852349.12,"program_type":"assistance_listing"},{"cfda":"10.523","permalink":"/program/10.523","title":"Centers
   of Excellence at 1890 Institutions","popular_name":"1890 Centers of Excellence","agency":"Department
-  of Agriculture","total_obs":7680000.0,"program_type":"assistance_listing"},{"cfda":"10.979","permalink":"/program/10.979","title":"Emergency
-  Relief Program 2022","popular_name":"ERP 2022","agency":"Department of Agriculture","total_obs":6520979.88,"program_type":"assistance_listing"},{"cfda":"10.132","permalink":"/program/10.132","title":"Coronavirus
+  of Agriculture","total_obs":7666134.35,"program_type":"assistance_listing"},{"cfda":"10.979","permalink":"/program/10.979","title":"Emergency
+  Relief Program 2022","popular_name":"ERP 2022","agency":"Department of Agriculture","total_obs":6520979.88,"program_type":"assistance_listing"},{"cfda":"10.517","permalink":"/program/10.517","title":"Tribal
+  Colleges Extension Programs","popular_name":"TCEP; TCEP-SE; FRTEP; formerly Extension
+  Indian Reservation Program","agency":"Department of Agriculture","total_obs":6127577.67,"program_type":"assistance_listing"},{"cfda":"10.132","permalink":"/program/10.132","title":"Coronavirus
   Food Assistance Program 2","popular_name":"CFAP 2","agency":"Department of Agriculture","total_obs":5094321.32,"program_type":"assistance_listing"},{"cfda":"10.130","permalink":"/program/10.130","title":"Coronavirus
   Food Assistance Program 1","popular_name":"CFAP","agency":"Department of Agriculture","total_obs":4325531.31,"program_type":"assistance_listing"},{"cfda":"10.171","permalink":"/program/10.171","title":"Organic
   Certification Cost Share Programs","popular_name":"OCCSP","agency":"Department of
   Agriculture","total_obs":3839905.42,"program_type":"assistance_listing"},{"cfda":"10.098","permalink":"/program/10.098","title":"Reimbursement
   Transportation Cost Payment Program for Geographically Disadvantaged Farmers and
-  Ranchers","popular_name":"RTCP","agency":"Department of Agriculture","total_obs":3230665.31,"program_type":"assistance_listing"},{"cfda":"10.517","permalink":"/program/10.517","title":"Tribal
-  Colleges Extension Programs","popular_name":"TCEP; TCEP-SE; FRTEP; formerly Extension
-  Indian Reservation Program","agency":"Department of Agriculture","total_obs":3167127.0,"program_type":"assistance_listing"},{"cfda":"10.112","permalink":"/program/10.112","title":"Price
+  Ranchers","popular_name":"RTCP","agency":"Department of Agriculture","total_obs":3230665.31,"program_type":"assistance_listing"},{"cfda":"10.112","permalink":"/program/10.112","title":"Price
   Loss Coverage","popular_name":"PLC","agency":"Department of Agriculture","total_obs":3007547.0,"program_type":"assistance_listing"},{"cfda":"10.127","permalink":"/program/10.127","title":"Dairy
   Margin Coverage","popular_name":"DMC","agency":"Department of Agriculture","total_obs":2808404.05,"program_type":"assistance_listing"},{"cfda":"10.048","permalink":"/program/10.048","title":"Tribal
-  Agriculture Technical Assistance","popular_name":null,"agency":"Department of Agriculture","total_obs":2345432.0,"program_type":"assistance_listing"},{"cfda":"10.143","permalink":"/program/10.143","title":"Pandemic
+  Agriculture Technical Assistance","popular_name":null,"agency":"Department of Agriculture","total_obs":2345432.0,"program_type":"assistance_listing"},{"cfda":"10.319","permalink":"/program/10.319","title":"Farm
+  Business Management and Benchmarking Competitive Grants Program","popular_name":"FBMB","agency":"Department
+  of Agriculture","total_obs":1506839.91,"program_type":"assistance_listing"},{"cfda":"10.143","permalink":"/program/10.143","title":"Pandemic
   Assistance Revenue Program","popular_name":"PARP","agency":"Department of Agriculture","total_obs":1471025.68,"program_type":"assistance_listing"},{"cfda":"10.964","permalink":"/program/10.964","title":"Emergency
   Relief Program","popular_name":"ERP","agency":"Department of Agriculture","total_obs":1173799.66,"program_type":"assistance_listing"},{"cfda":"15.666","permalink":"/program/15.666","title":"Endangered
   Species Conservation-Wolf Livestock Loss Compensation and Prevention","popular_name":"Wolf
-  Livestock Demonstration Project Grant Program","agency":"Department of the Interior","total_obs":900000.0,"program_type":"assistance_listing"},{"cfda":"10.600","permalink":"/program/10.600","title":"Foreign
+  Livestock Demonstration Project Grant Program","agency":"Department of the Interior","total_obs":863061.84,"program_type":"assistance_listing"},{"cfda":"10.600","permalink":"/program/10.600","title":"Foreign
   Market Development Cooperator Program","popular_name":"FMD, Cooperator Program","agency":"Department
   of Agriculture","total_obs":758258.88,"program_type":"assistance_listing"},{"cfda":"10.120","permalink":"/program/10.120","title":"2017
   Wildfires and Hurricanes Indemnity Program","popular_name":"2017 WHIP","agency":"Department
@@ -314,18 +276,12 @@ programs: '[{"cfda":"10.121","permalink":"/program/10.121","title":"Emergency Co
   Innovation Center Demonstration Program","popular_name":"AIC","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.616","permalink":"/program/10.616","title":"Agriculture
   Wool Apparel Manufacturers Trust Fund","popular_name":"Agriculture Wool Apparel
-  Manufacturers Trust Fund","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.234","permalink":"/program/10.234","title":"American
-  Rescue Plan Technical Assistance Investment Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.311","permalink":"/program/10.311","title":"Beginning
-  Farmer and Rancher Development Program","popular_name":"BFRDP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.232","permalink":"/program/10.232","title":"Blue
+  Manufacturers Trust Fund","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.232","permalink":"/program/10.232","title":"Blue
   Ribbon","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.980","permalink":"/program/10.980","title":"Emergency
   Livestock Relief Program 2022","popular_name":"ELRP 2022","agency":"Department of
   Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.987","permalink":"/program/10.987","title":"Emergency
   Livestock Relief Program 2023 and 2024 Flood and Wildfire","popular_name":"ELRP
-  2023 and 2024 Flood and Wildfire","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.319","permalink":"/program/10.319","title":"Farm
-  Business Management and Benchmarking Competitive Grants Program","popular_name":"FBMB","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
+  2023 and 2024 Flood and Wildfire","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.978","permalink":"/program/10.978","title":"Farm
   Labor Stabilization and Protection Pilot Grant Program","popular_name":"Farm labor
   pilot program or FLSPP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.990","permalink":"/program/10.990","title":"Farmer
   Bridge Assistance Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.624","permalink":"/program/10.624","title":"Food
@@ -347,9 +303,7 @@ programs: '[{"cfda":"10.121","permalink":"/program/10.121","title":"Emergency Co
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.615","permalink":"/program/10.615","title":"Pima
   Agriculture Cotton Trust Fund","popular_name":"Pima Agriculture Cotton Trust Fund","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.131","permalink":"/program/10.131","title":"Seafood
-  Trade Relief Program (STRP)","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.464","permalink":"/program/10.464","title":"Socially
-  Disadvantaged Farmers and Ranchers Policy Research Center","popular_name":"The Policy
-  Center","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.985","permalink":"/program/10.985","title":"Sugar
+  Trade Relief Program (STRP)","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.985","permalink":"/program/10.985","title":"Sugar
   Processor Block Grants","popular_name":"SPBG","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.135","permalink":"/program/10.135","title":"Supplemental
   Dairy Margin Coverage","popular_name":"Supplemental DMC","agency":"Department of
   Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.972","permalink":"/program/10.972","title":"Supplemental
@@ -357,10 +311,16 @@ programs: '[{"cfda":"10.121","permalink":"/program/10.121","title":"Emergency Co
   1944 Water Treaty Grant","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.116","permalink":"/program/10.116","title":"The
   Margin Protection Program","popular_name":"MPP-Dairy","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.129","permalink":"/program/10.129","title":"Wildfires
   and Hurricanes Indemnity Program Plus","popular_name":"WHIP Plus","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.464","permalink":"/program/10.464","title":"Socially
+  Disadvantaged Farmers and Ranchers Policy Research Center","popular_name":"The Policy
+  Center","agency":"Department of Agriculture","total_obs":-391.24,"program_type":"assistance_listing"},{"cfda":"10.311","permalink":"/program/10.311","title":"Beginning
+  Farmer and Rancher Development Program","popular_name":"BFRDP","agency":"Department
+  of Agriculture","total_obs":-1211669.18,"program_type":"assistance_listing"},{"cfda":"10.234","permalink":"/program/10.234","title":"American
+  Rescue Plan Technical Assistance Investment Program","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":-3720000.0,"program_type":"assistance_listing"}]'
 title: Farm Income Stabilization
 total_num_agencies: 3
 total_num_applicant_types: 40
 total_num_programs: 80
-total_obs: 23131247866.909996
+total_obs: 23130435268.499996
 ---

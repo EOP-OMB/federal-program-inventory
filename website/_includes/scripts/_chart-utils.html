@@ -260,7 +260,6 @@ function renderTreeMap(data, chartId, dataKey, color, textColor){
     const text = textGroup.append("text")
       .attr("x", centerX)
       .attr("y", centerY)
-      .attr("dy", percentText ? "-0.35em" : ".35em")
       .attr("text-anchor", "middle")
       .attr("font-size", "12px")
       .attr("font-weight", "500")
@@ -272,22 +271,87 @@ function renderTreeMap(data, chartId, dataKey, color, textColor){
           : (d.data && d.data.colorRaw < 0.07) ? "tree-label-dark" : "tree-label-light";
       });
 
-    text.append("tspan")
-      .attr("x", centerX)
-      .text(labelName);
+    const availableWidth = rectWidth - textMargin;
+    const availableHeight = rectHeight - textMargin;
+    const lineHeightEm = 1.1;
+
+    function appendWrappedText(textSelection, value, width) {
+      const words = value.split(/\s+/).filter(Boolean);
+      if (!words.length) {
+        return { lineCount: 0, hidden: false };
+      }
+
+      let line = [];
+      let lineNumber = 0;
+      let word;
+      let tspan = textSelection.append("tspan")
+        .attr("x", centerX)
+        .attr("dy", "0em");
+
+      while ((word = words.shift())) {
+        line.push(word);
+        tspan.text(line.join(" "));
+        if (tspan.node().getComputedTextLength() > width) {
+          line.pop();
+
+          // Single words that exceed the width are not wrappable.
+          if (!line.length) {
+            return { lineCount: 0, hidden: true };
+          }
+
+          tspan.text(line.join(" "));
+          line = [word];
+          tspan = textSelection.append("tspan")
+            .attr("x", centerX)
+            .attr("dy", `${lineHeightEm}em`)
+            .text(word);
+          lineNumber += 1;
+
+          // If the new line itself is too long, hide the text block.
+          if (tspan.node().getComputedTextLength() > width) {
+            return { lineCount: 0, hidden: true };
+          }
+        }
+      }
+
+      return { lineCount: lineNumber + 1, hidden: false };
+    }
+
+    if (availableWidth <= 0 || availableHeight <= 0) {
+      text.style("opacity", 0);
+      return;
+    }
+
+    const wrapped = appendWrappedText(text, labelName, availableWidth);
+    if (wrapped.hidden) {
+      text.style("opacity", 0);
+      return;
+    }
 
     if (percentText) {
-      text.append("tspan")
+      const percentLine = text.append("tspan")
         .attr("x", centerX)
-        .attr("dy", "1.1em")
+        .attr("dy", wrapped.lineCount > 0 ? `${lineHeightEm}em` : "0em")
         .text(percentText);
+
+      if (percentLine.node().getComputedTextLength() > availableWidth) {
+        text.style("opacity", 0);
+        return;
+      }
     }
 
     text.style("opacity", function() {
       const bounds = this.getBBox();
-      const fitsHeight = bounds.height < rectHeight - textMargin;
-      const fitsWidth = bounds.width < rectWidth - textMargin;
-      return (fitsHeight && fitsWidth) ? 1 : 0;
+      const fitsHeight = bounds.height < availableHeight;
+      const fitsWidth = bounds.width < availableWidth;
+      if (!fitsHeight || !fitsWidth) {
+        return 0;
+      }
+
+      const boundsCenterY = bounds.y + bounds.height / 2;
+      const yShift = centerY - boundsCenterY;
+      d3.select(this).attr("transform", `translate(0, ${yShift})`);
+      return 1;
     });
   });
 }

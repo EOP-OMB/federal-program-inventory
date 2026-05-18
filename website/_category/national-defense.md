@@ -1,10 +1,10 @@
 ---
-agencies: '[{"title":"Department of Defense","total_num_programs":37,"total_obs":4021598372.38},{"title":"Department
-  of Transportation","total_num_programs":3,"total_obs":403214687.47},{"title":"Department
+agencies: '[{"title":"Department of Defense","total_num_programs":37,"total_obs":6317619260.55},{"title":"Department
+  of Transportation","total_num_programs":3,"total_obs":388911493.74},{"title":"Department
+  of Energy","total_num_programs":5,"total_obs":208829578.98},{"title":"Department
   of Veterans Affairs","total_num_programs":1,"total_obs":117388258.0},{"title":"Department
-  of Energy","total_num_programs":5,"total_obs":61073472.22},{"title":"Department
-  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Homeland
-  Security","total_num_programs":3,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":8,"total_obs":0.0}]'
+  of Homeland Security","total_num_programs":3,"total_obs":247789.96},{"title":"Department
+  of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":8,"total_obs":0.0}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":18},{"title":"Other","total_num_programs":13},{"title":"State","total_num_programs":13},{"title":"Unrestricted
   by Entity Type","total_num_programs":11},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":9},{"title":"Local","total_num_programs":8},{"title":"Public
@@ -155,11 +155,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -199,41 +194,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -247,11 +207,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/national-defense
-sub_cats: '[{"title":"Defense Capability","permalink":"/category/national-defense/defense-capability","total_num_programs":58,"total_obs":4603274790.070001}]'
+sub_cats: '[{"title":"Defense Capability","permalink":"/category/national-defense/defense-capability","total_num_programs":58,"total_obs":7032996381.2300005}]'
 title: National Defense
 total_num_agencies: 7
 total_num_applicant_types: 50
 total_num_programs: 58
 total_num_sub_cats: 1
-total_obs: 4603274790.070001
+total_obs: 7032996381.2300005
 ---

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Energy
 cfda: TC.031
 fiscal_year: '2025'
 grants_url: null

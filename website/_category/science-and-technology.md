@@ -1,15 +1,15 @@
 ---
-agencies: '[{"title":"National Science Foundation","total_num_programs":10,"total_obs":4098997852.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":422999793.33},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":6,"total_obs":385547535.84},{"title":"Department
-  of Commerce","total_num_programs":25,"total_obs":355405524.0},{"title":"Department
-  of Labor","total_num_programs":2,"total_obs":82794748.0},{"title":"Department of
-  the Interior","total_num_programs":7,"total_obs":52009369.1},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":8750253.01},{"title":"Department
-  of Transportation","total_num_programs":2,"total_obs":8425000.0},{"title":"Social
-  Security Administration","total_num_programs":3,"total_obs":0.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":2,"total_obs":-838.35}]'
+agencies: '[{"title":"National Science Foundation","total_num_programs":10,"total_obs":6740030158.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":1422426400.82},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":6,"total_obs":1356878247.47},{"title":"Department
+  of Commerce","total_num_programs":25,"total_obs":983865964.93},{"title":"Department
+  of Labor","total_num_programs":2,"total_obs":82504420.97999999},{"title":"Department
+  of the Interior","total_num_programs":7,"total_obs":80916309.53},{"title":"Department
+  of Health and Human Services","total_num_programs":2,"total_obs":9014791.79},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":8424999.69},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":6441967.64},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":1448274.47},{"title":"Social
+  Security Administration","total_num_programs":3,"total_obs":-2882583.97}]'
 applicant_types: '[{"title":"Other","total_num_programs":19},{"title":"Public nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
@@ -174,11 +174,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -218,41 +213,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -266,11 +226,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/science-and-technology
-sub_cats: '[{"title":"General science and basic research","permalink":"/category/science-and-technology/general-science-and-basic-research","total_num_programs":66,"total_obs":5414929236.929999}]'
+sub_cats: '[{"title":"General science and basic research","permalink":"/category/science-and-technology/general-science-and-basic-research","total_num_programs":66,"total_obs":10689068951.35}]'
 title: Science and Technology
 total_num_agencies: 11
 total_num_applicant_types: 77
 total_num_programs: 66
 total_num_sub_cats: 1
-total_obs: 5414929236.929999
+total_obs: 10689068951.35
 ---

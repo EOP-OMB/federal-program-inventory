@@ -1,23 +1,24 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":10,"total_obs":5147778935.190001},{"title":"Department
-  of Labor","total_num_programs":24,"total_obs":4739647873.65},{"title":"Department
-  of Veterans Affairs","total_num_programs":6,"total_obs":1423595459.0},{"title":"Department
-  of Health and Human Services","total_num_programs":53,"total_obs":274990328.61},{"title":"Corporation
-  for National and Community Service","total_num_programs":10,"total_obs":273870589.42},{"title":"Department
-  of the Interior","total_num_programs":14,"total_obs":264667920.46000004},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":2,"total_obs":73633607.38},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":40172187.129999995},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":16354410.0},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":9216026.0},{"title":"The Institute
-  of Museum and Library Services","total_num_programs":2,"total_obs":7183453.79},{"title":"Environmental
-  Protection Agency","total_num_programs":3,"total_obs":6694138.0},{"title":"Department
-  of State","total_num_programs":3,"total_obs":4180265.0},{"title":"Department of
-  Energy","total_num_programs":2,"total_obs":4141217.0},{"title":"Department of Defense","total_num_programs":1,"total_obs":133761.0},{"title":"U.S.
-  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Social
-  Security Administration","total_num_programs":1,"total_obs":0.0},{"title":"Small
+agencies: '[{"title":"Department of Education","total_num_programs":10,"total_obs":4713794361.750001},{"title":"Department
+  of Labor","total_num_programs":24,"total_obs":4569492163.91},{"title":"Department
+  of Veterans Affairs","total_num_programs":6,"total_obs":1423595459.0},{"title":"Corporation
+  for National and Community Service","total_num_programs":10,"total_obs":511695840.58},{"title":"Department
+  of Health and Human Services","total_num_programs":53,"total_obs":429871964.28},{"title":"Department
+  of the Interior","total_num_programs":14,"total_obs":292210825.3},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":101156414.0},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":2,"total_obs":88609019.14},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":54332257.91},{"title":"Department
+  of Commerce","total_num_programs":3,"total_obs":26148649.58},{"title":"Social Security
+  Administration","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of State","total_num_programs":3,"total_obs":15103735.0},{"title":"Department of
+  Transportation","total_num_programs":7,"total_obs":7392878.75},{"title":"The Institute
+  of Museum and Library Services","total_num_programs":2,"total_obs":6945893.53},{"title":"Environmental
+  Protection Agency","total_num_programs":3,"total_obs":6711638.0},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":2970553.8899999997},{"title":"U.S.
+  Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
   Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Morris
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":0.0}]'
+  of Housing and Urban Development","total_num_programs":1,"total_obs":-951973.67}]'
 applicant_types: '[{"title":"State","total_num_programs":55},{"title":"Nonprofit Organization","total_num_programs":54},{"title":"Not-for-Profit
   Organization","total_num_programs":34},{"title":"Federally Recognized Indian/Native
   American/Alaska Native Tribal Government","total_num_programs":31},{"title":"Public
@@ -181,11 +182,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -225,41 +221,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -273,11 +234,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/employment-and-labor
-sub_cats: '[{"title":"Workforce Development","permalink":"/category/employment-and-labor/workforce-development","total_num_programs":160,"total_obs":12286260171.630001}]'
+sub_cats: '[{"title":"Workforce Development","permalink":"/category/employment-and-labor/workforce-development","total_num_programs":160,"total_obs":12269079680.95}]'
 title: Employment and Labor
 total_num_agencies: 20
 total_num_applicant_types: 75
 total_num_programs: 160
 total_num_sub_cats: 1
-total_obs: 12286260171.630001
+total_obs: 12269079680.95
 ---

@@ -73,7 +73,7 @@ footer_include: _footer-category-index.html
       </h3>
 
       <p class="text-ink font-heading-sm line-height-body-3">
-        This chart shows total program expenditures by category, for the more than {{ page.total_num_programs }} programs included in the Federal Program
+        This chart shows total program expenditures by category, for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the Federal Program
         Inventory. To view
         data for all categories, <a href="#" id="category-chart-download" class="usa-link">download the .csv file</a>.
       </p>
@@ -89,7 +89,7 @@ footer_include: _footer-category-index.html
         FY {{ page.fiscal_year }} expenditures by type of program
       </h3>
       <p class="text-ink font-heading-sm line-height-body-3">
-        This chart shows total program expenditures by type of program for the more than {{ page.total_num_programs }} programs included in the
+        This chart shows total program expenditures by type of program for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the
         Federal Program Inventory. To view data for all
         types of programs, <a href="#" id="obligations-by-type-download" class="usa-link">download the .csv file</a>.
       </p>

@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":6,"total_obs":915314961.0}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":6,"total_obs":913515256.25}]'
 applicant_types: '[{"title":"Veteran (including dependents)","total_num_programs":3},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Local","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":2},{"title":"U.S.
@@ -128,11 +128,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -172,41 +167,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -225,7 +185,7 @@ permalink: /category/income-security-and-social-services/burial-benefits
 programs: '[{"cfda":"64.101","permalink":"/program/64.101","title":"Burial Expenses
   Allowance for Veterans","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":837329797.0,"program_type":"assistance_listing"},{"cfda":"64.203","permalink":"/program/64.203","title":"Veterans
   Cemetery Grants Program","popular_name":"VCGP (Authority: 38 U.S.C. 501, 2408)","agency":"Department
-  of Veterans Affairs","total_obs":77113054.0,"program_type":"assistance_listing"},{"cfda":"64.206","permalink":"/program/64.206","title":"VA
+  of Veterans Affairs","total_obs":75313349.25,"program_type":"assistance_listing"},{"cfda":"64.206","permalink":"/program/64.206","title":"VA
   Outer Burial Receptacle Allowance Program","popular_name":"OBR","agency":"Department
   of Veterans Affairs","total_obs":486884.0,"program_type":"assistance_listing"},{"cfda":"64.205","permalink":"/program/64.205","title":"VA
   Casket or Urn Allowance Program","popular_name":"VA Casket or Urn Allowance Program","agency":"Department
@@ -238,5 +198,5 @@ title: Burial Benefits
 total_num_agencies: 1
 total_num_applicant_types: 15
 total_num_programs: 6
-total_obs: 915314961.0
+total_obs: 913515256.25
 ---

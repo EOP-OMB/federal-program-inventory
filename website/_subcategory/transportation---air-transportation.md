@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":9024307788.63}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":8875650070.25}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
@@ -127,11 +127,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -171,41 +166,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -223,7 +183,7 @@ parent_title: Transportation
 permalink: /category/transportation/air-transportation
 programs: '[{"cfda":"20.106","permalink":"/program/20.106","title":"Airport Improvement
   Program, Infrastructure Investment and Jobs Act Programs, and COVID-19 Airports
-  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":9024307788.63,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
+  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":8875650070.25,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
   Improvement Program","popular_name":"AIP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.117","permalink":"/program/20.117","title":"Airport
   Infrastructure Grants","popular_name":"AIG (IIJA)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.118","permalink":"/program/20.118","title":"Airport
   Terminal Program","popular_name":"ATP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
@@ -231,5 +191,5 @@ title: Air Transportation
 total_num_agencies: 1
 total_num_applicant_types: 13
 total_num_programs: 4
-total_obs: 9024307788.63
+total_obs: 8875650070.25
 ---

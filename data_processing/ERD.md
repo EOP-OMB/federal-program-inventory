@@ -139,7 +139,7 @@ erDiagram
     
     usaspending_assistance_outlay_aggregation {
         TEXT cfda_number FK
-        INTEGER award_first_fiscal_year
+        INTEGER fiscal_year
         REAL outlay
         REAL obligation
     }
@@ -150,7 +150,6 @@ erDiagram
         REAL outlays
         REAL forgone_revenue
         TEXT source
-        TEXT focus_area_id FK
     }
     
     improper_payment_mapping {
@@ -244,7 +243,7 @@ erDiagram
     
     usaspending_assistance_outlay_aggregation {
         TEXT cfda_number FK
-        INTEGER award_first_fiscal_year
+        INTEGER fiscal_year
         REAL outlay
         REAL obligation
     }

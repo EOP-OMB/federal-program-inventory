@@ -1,15 +1,15 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45787218122.42},{"title":"Department
-  of Housing and Urban Development","total_num_programs":12,"total_obs":11909164754.3},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":2433398092.98},{"title":"Federal
-  Communications Commission","total_num_programs":7,"total_obs":2339450128.0800004},{"title":"Department
-  of Commerce","total_num_programs":12,"total_obs":1447964070.46},{"title":"Department
-  of the Interior","total_num_programs":10,"total_obs":881102826.5300001},{"title":"Department
-  of Transportation","total_num_programs":6,"total_obs":772976155.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":679675901.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":4,"total_obs":269639145.0},{"title":"Denali
-  Commission","total_num_programs":3,"total_obs":167233946.78},{"title":"Department
-  of State","total_num_programs":2,"total_obs":972904.26},{"title":"Southeast Crescent
+agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45818187018.37},{"title":"Department
+  of Commerce","total_num_programs":12,"total_obs":18365808388.500004},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":11981981561.37},{"title":"Federal
+  Communications Commission","total_num_programs":7,"total_obs":3552896582.2700005},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":2463330996.93},{"title":"Department
+  of the Interior","total_num_programs":10,"total_obs":901682611.05},{"title":"Department
+  of Transportation","total_num_programs":6,"total_obs":753891228.8},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":710431906.14},{"title":"Appalachian
+  Regional Commission","total_num_programs":4,"total_obs":270193450.2},{"title":"Denali
+  Commission","total_num_programs":3,"total_obs":177858558.69},{"title":"Department
+  of State","total_num_programs":2,"total_obs":2240587.01},{"title":"Southeast Crescent
   Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"SOUTHWEST
   BORDER REGIONAL COMMISSION","total_num_programs":1,"total_obs":0.0},{"title":"Northern
   Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
@@ -171,11 +171,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -215,41 +210,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -263,11 +223,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/community-development
-sub_cats: '[{"title":"Community, Area, and Regional Development","permalink":"/category/community-development/community--area--and-regional-development","total_num_programs":91,"total_obs":66688796046.81}]'
+sub_cats: '[{"title":"Community, Area, and Regional Development","permalink":"/category/community-development/community--area--and-regional-development","total_num_programs":91,"total_obs":84998502889.32999}]'
 title: Community Development
 total_num_agencies: 16
 total_num_applicant_types: 70
 total_num_programs: 91
 total_num_sub_cats: 1
-total_obs: 66688796046.81
+total_obs: 84998502889.32999
 ---

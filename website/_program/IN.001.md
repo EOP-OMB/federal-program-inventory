@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - General Government - Debt Service
-- Interest on the Public Debt - Interest on the Public Debt
 cfda: IN.001
 fiscal_year: '2025'
 grants_url: null

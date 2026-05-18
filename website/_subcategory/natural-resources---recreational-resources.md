@@ -1,8 +1,8 @@
 ---
-agencies: '[{"title":"Department of the Interior","total_num_programs":23,"total_obs":1769023435.6299999},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":372651772.67},{"title":"Department
-  of Transportation","total_num_programs":2,"total_obs":114907510.74000001},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Interior","total_num_programs":23,"total_obs":2164131400.0900006},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":463369353.83000004},{"title":"Department
+  of Transportation","total_num_programs":2,"total_obs":106646404.41999999},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":15875859.0}]'
 applicant_types: '[{"title":"State","total_num_programs":13},{"title":"Local (includes
   State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":12},{"title":"State
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Private
@@ -145,11 +145,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -189,41 +184,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -241,34 +201,37 @@ parent_title: Natural Resources
 permalink: /category/natural-resources/recreational-resources
 programs: '[{"cfda":"15.611","permalink":"/program/15.611","title":"Wildlife Restoration
   and Basic Hunter Education and Safety","popular_name":"(Pittman-Robertson Wildlife
-  Restoration Program)","agency":"Department of the Interior","total_obs":737444079.75,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
+  Restoration Program)","agency":"Department of the Interior","total_obs":1014544148.73,"program_type":"assistance_listing"},{"cfda":"15.916","permalink":"/program/15.916","title":"Outdoor
   Recreation Acquisition, Development and Planning","popular_name":"LWCF","agency":"Department
-  of the Interior","total_obs":567846950.04,"program_type":"assistance_listing"},{"cfda":"10.691","permalink":"/program/10.691","title":"Good
-  Neighbor Authority","popular_name":"Good Neighbor","agency":"Department of Agriculture","total_obs":333791273.29,"program_type":"assistance_listing"},{"cfda":"15.605","permalink":"/program/15.605","title":"Sport
+  of the Interior","total_obs":542879099.68,"program_type":"assistance_listing"},{"cfda":"15.605","permalink":"/program/15.605","title":"Sport
   Fish Restoration","popular_name":"Dingell-Johnson Sport Fish Restoration Program","agency":"Department
-  of the Interior","total_obs":308943809.34,"program_type":"assistance_listing"},{"cfda":"20.219","permalink":"/program/20.219","title":"Recreational
-  Trails Program","popular_name":"Recreational Trails Program","agency":"Department
-  of Transportation","total_obs":84338301.89,"program_type":"assistance_listing"},{"cfda":"15.654","permalink":"/program/15.654","title":"National
+  of the Interior","total_obs":376810396.95,"program_type":"assistance_listing"},{"cfda":"10.691","permalink":"/program/10.691","title":"Good
+  Neighbor Authority","popular_name":"Good Neighbor","agency":"Department of Agriculture","total_obs":346925883.13,"program_type":"assistance_listing"},{"cfda":"15.654","permalink":"/program/15.654","title":"National
   Wildlife Refuge System Enhancements","popular_name":"Refuges and Wildlife","agency":"Department
-  of the Interior","total_obs":67559851.56,"program_type":"assistance_listing"},{"cfda":"15.954","permalink":"/program/15.954","title":"National
-  Park Service Conservation, Protection, Outreach, and Education","popular_name":null,"agency":"Department
-  of the Interior","total_obs":42234314.8,"program_type":"assistance_listing"},{"cfda":"20.224","permalink":"/program/20.224","title":"Federal
-  Lands Access Program","popular_name":"Federal Lands Access Program or FLAP","agency":"Department
-  of Transportation","total_obs":30569208.85,"program_type":"assistance_listing"},{"cfda":"10.712","permalink":"/program/10.712","title":"Great
-  American Outdoors Act Deferred Maintenance Program","popular_name":"GAOA","agency":"Department
-  of Agriculture","total_obs":25552303.62,"program_type":"assistance_listing"},{"cfda":"10.665","permalink":"/program/10.665","title":"Schools
+  of the Interior","total_obs":121229937.92,"program_type":"assistance_listing"},{"cfda":"10.665","permalink":"/program/10.665","title":"Schools
   and Roads - Grants to States","popular_name":"Payments to States","agency":"Department
-  of Agriculture","total_obs":13201630.76,"program_type":"assistance_listing"},{"cfda":"15.628","permalink":"/program/15.628","title":"Multistate
-  Conservation Grant","popular_name":null,"agency":"Department of the Interior","total_obs":10980298.92,"program_type":"assistance_listing"},{"cfda":"15.622","permalink":"/program/15.622","title":"Sportfishing
-  and Boating Safety Act","popular_name":"Boating Infrastructure Grants (BIG)","agency":"Department
-  of the Interior","total_obs":9744252.57,"program_type":"assistance_listing"},{"cfda":"15.524","permalink":"/program/15.524","title":"Recreation
+  of Agriculture","total_obs":85439320.23,"program_type":"assistance_listing"},{"cfda":"20.219","permalink":"/program/20.219","title":"Recreational
+  Trails Program","popular_name":"Recreational Trails Program","agency":"Department
+  of Transportation","total_obs":68119754.88,"program_type":"assistance_listing"},{"cfda":"15.954","permalink":"/program/15.954","title":"National
+  Park Service Conservation, Protection, Outreach, and Education","popular_name":null,"agency":"Department
+  of the Interior","total_obs":58109539.32,"program_type":"assistance_listing"},{"cfda":"20.224","permalink":"/program/20.224","title":"Federal
+  Lands Access Program","popular_name":"Federal Lands Access Program or FLAP","agency":"Department
+  of Transportation","total_obs":38526649.54,"program_type":"assistance_listing"},{"cfda":"10.712","permalink":"/program/10.712","title":"Great
+  American Outdoors Act Deferred Maintenance Program","popular_name":"GAOA","agency":"Department
+  of Agriculture","total_obs":30897606.03,"program_type":"assistance_listing"},{"cfda":"12.801","permalink":"/program/12.801","title":"Air
+  Force Academy Athletic Programs","popular_name":null,"agency":"Department of Defense","total_obs":15875859.0,"program_type":"assistance_listing"},{"cfda":"15.524","permalink":"/program/15.524","title":"Recreation
   Resources Management","popular_name":"Title XXVIII","agency":"Department of the
-  Interior","total_obs":8845245.82,"program_type":"assistance_listing"},{"cfda":"15.935","permalink":"/program/15.935","title":"National
-  Trails System Projects","popular_name":null,"agency":"Department of the Interior","total_obs":7100319.18,"program_type":"assistance_listing"},{"cfda":"15.626","permalink":"/program/15.626","title":"Enhanced
-  Hunter Education and Safety","popular_name":null,"agency":"Department of the Interior","total_obs":4958805.0,"program_type":"assistance_listing"},{"cfda":"15.930","permalink":"/program/15.930","title":"Chesapeake
+  Interior","total_obs":13071054.81,"program_type":"assistance_listing"},{"cfda":"15.628","permalink":"/program/15.628","title":"Multistate
+  Conservation Grant","popular_name":null,"agency":"Department of the Interior","total_obs":10122388.33,"program_type":"assistance_listing"},{"cfda":"15.935","permalink":"/program/15.935","title":"National
+  Trails System Projects","popular_name":null,"agency":"Department of the Interior","total_obs":7917988.21,"program_type":"assistance_listing"},{"cfda":"15.978","permalink":"/program/15.978","title":"Upper
+  Mississippi River Restoration Long Term Resource Monitoring","popular_name":"LTRM","agency":"Department
+  of the Interior","total_obs":5169454.0,"program_type":"assistance_listing"},{"cfda":"15.626","permalink":"/program/15.626","title":"Enhanced
+  Hunter Education and Safety","popular_name":null,"agency":"Department of the Interior","total_obs":5161457.34,"program_type":"assistance_listing"},{"cfda":"15.225","permalink":"/program/15.225","title":"Recreation
+  and Visitor Services","popular_name":null,"agency":"Department of the Interior","total_obs":4838912.35,"program_type":"assistance_listing"},{"cfda":"15.622","permalink":"/program/15.622","title":"Sportfishing
+  and Boating Safety Act","popular_name":"Boating Infrastructure Grants (BIG)","agency":"Department
+  of the Interior","total_obs":1818507.71,"program_type":"assistance_listing"},{"cfda":"15.930","permalink":"/program/15.930","title":"Chesapeake
   Bay Gateways Network","popular_name":"Chesapeake Bay Gateways and Watertrails Network","agency":"Department
-  of the Interior","total_obs":1157442.0,"program_type":"assistance_listing"},{"cfda":"15.225","permalink":"/program/15.225","title":"Recreation
-  and Visitor Services","popular_name":null,"agency":"Department of the Interior","total_obs":791890.81,"program_type":"assistance_listing"},{"cfda":"15.941","permalink":"/program/15.941","title":"Mississippi
+  of the Interior","total_obs":1042338.9,"program_type":"assistance_listing"},{"cfda":"15.941","permalink":"/program/15.941","title":"Mississippi
   National River and Recreation Area State and Local Assistance","popular_name":null,"agency":"Department
   of the Interior","total_obs":728000.0,"program_type":"assistance_listing"},{"cfda":"15.965","permalink":"/program/15.965","title":"Groundwork
   - Brownfield to Greenspace","popular_name":"Groundwork","agency":"Department of
@@ -276,8 +239,7 @@ programs: '[{"cfda":"15.611","permalink":"/program/15.611","title":"Wildlife Res
   and Roads - Grants to Counties","popular_name":"Direct payments to States","agency":"Department
   of Agriculture","total_obs":106565.0,"program_type":"assistance_listing"},{"cfda":"15.956","permalink":"/program/15.956","title":"Cooperative
   Management of Ebey''s Landing National Historical Reserve.","popular_name":"Cooperative
-  Management of Ebey''s Landing","agency":"Department of the Interior","total_obs":93912.0,"program_type":"assistance_listing"},{"cfda":"12.801","permalink":"/program/12.801","title":"Air
-  Force Academy Athletic Programs","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
+  Management of Ebey''s Landing","agency":"Department of the Interior","total_obs":93912.0,"program_type":"assistance_listing"},{"cfda":"15.943","permalink":"/program/15.943","title":"Challenge
   Cost Share","popular_name":"National Park Service Challenge Cost Share","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.550","permalink":"/program/15.550","title":"FISH-ABLE
   Fun with Reclamation","popular_name":"Fish-ABLE Fun with Reclamation","agency":"Department
@@ -292,14 +254,12 @@ programs: '[{"cfda":"15.611","permalink":"/program/15.611","title":"Wildlife Res
   Park Service Centennial Challenge","popular_name":null,"agency":"Department of the
   Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.921","permalink":"/program/15.921","title":"Rivers,
   Trails and Conservation Assistance","popular_name":"Rivers and Trails;  RTCA","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.978","permalink":"/program/15.978","title":"Upper
-  Mississippi River Restoration Long Term Resource Monitoring","popular_name":"LTRM","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.093","permalink":"/program/10.093","title":"Voluntary
   Public Access and Habitat Incentive Program","popular_name":"Voluntary Public Access
-  and Habitat Incentive Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
+  and Habitat Incentive Program","agency":"Department of Agriculture","total_obs":-20.56,"program_type":"assistance_listing"}]'
 title: Recreational Resources
 total_num_agencies: 4
 total_num_applicant_types: 46
 total_num_programs: 32
-total_obs: 2256582719.0399995
+total_obs: 2750023017.3400006
 ---

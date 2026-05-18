@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2712375631.71},{"title":"Department
-  of Homeland Security","total_num_programs":7,"total_obs":385783306.0},{"title":"Department
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2714598797.66},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":383766558.0},{"title":"Department
   of Defense","total_num_programs":2,"total_obs":38624466.019999996},{"title":"Department
-  of State","total_num_programs":1,"total_obs":2296003.95},{"title":"Department of
-  Health and Human Services","total_num_programs":3,"total_obs":0.0}]'
+  of State","total_num_programs":1,"total_obs":296003.95},{"title":"Department of
+  Health and Human Services","total_num_programs":3,"total_obs":-3176.75}]'
 applicant_types: '[{"title":"Other public institution/organization","total_num_programs":4},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":4},{"title":"Nonprofit with 501C3 IRS Status (Other
@@ -135,11 +135,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -179,41 +174,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -231,14 +191,14 @@ parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/cybersecurity
 programs: '[{"cfda":"32.010","permalink":"/program/32.010","title":"Supply Chain Reimbursement
   Program","popular_name":"Supply Chain Reimbursement Program","agency":"Federal Communications
-  Commission","total_obs":2712375631.71,"program_type":"assistance_listing"},{"cfda":"97.137","permalink":"/program/97.137","title":"State
+  Commission","total_obs":2714598797.66,"program_type":"assistance_listing"},{"cfda":"97.137","permalink":"/program/97.137","title":"State
   and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program","popular_name":null,"agency":"Department
-  of Homeland Security","total_obs":385783306.0,"program_type":"assistance_listing"},{"cfda":"12.905","permalink":"/program/12.905","title":"CyberSecurity
+  of Homeland Security","total_obs":383766558.0,"program_type":"assistance_listing"},{"cfda":"12.905","permalink":"/program/12.905","title":"CyberSecurity
   Core Curriculum","popular_name":"CAE Grant Program","agency":"Department of Defense","total_obs":23998124.56,"program_type":"assistance_listing"},{"cfda":"12.902","permalink":"/program/12.902","title":"Information
   Security Grants","popular_name":"Department of War Cyber Service Academy","agency":"Department
   of Defense","total_obs":14626341.46,"program_type":"assistance_listing"},{"cfda":"19.035","permalink":"/program/19.035","title":"Cyber
   Capacity Building","popular_name":"Cyber Capacity Building","agency":"Department
-  of State","total_obs":2296003.95,"program_type":"assistance_listing"},{"cfda":"97.128","permalink":"/program/97.128","title":"CISA
+  of State","total_obs":296003.95,"program_type":"assistance_listing"},{"cfda":"97.128","permalink":"/program/97.128","title":"CISA
   Cyber Security Awareness Campaign","popular_name":"Cybersecurity Awareness Campaign","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.127","permalink":"/program/97.127","title":"Cybersecurity
   Education and Training","popular_name":"Cybersecurity Education and Training Assistance
@@ -251,17 +211,17 @@ programs: '[{"cfda":"32.010","permalink":"/program/32.010","title":"Supply Chain
   Cybersecurity Preparedness Consortium","popular_name":"NCPC","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.457","permalink":"/program/93.457","title":"Planning
   Grant for Healthcare and Public Health Sector Cybersecurity Information Sharing","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.835","permalink":"/program/93.835","title":"Planning
-  Grant for Healthcare and Public Health Sector Cybersecurity Information Sharing","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.123","permalink":"/program/97.123","title":"State,
   Local, Tribal and Territorial Security Operations Center/Information Sharing and
   Analysis Center","popular_name":"SLTT SOC / ISAC Program","agency":"Department of
   Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.156","permalink":"/program/97.156","title":"Tribal
   Cybersecurity Grant Program","popular_name":"TCGP","agency":"Department of Homeland
-  Security","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.835","permalink":"/program/93.835","title":"Planning
+  Grant for Healthcare and Public Health Sector Cybersecurity Information Sharing","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":-3176.75,"program_type":"assistance_listing"}]'
 title: Cybersecurity
 total_num_agencies: 5
 total_num_applicant_types: 25
 total_num_programs: 15
-total_obs: 3139079407.68
+total_obs: 3137282648.8799996
 ---

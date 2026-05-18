@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":12,"total_obs":1839558921.86},{"title":"Department
-  of the Interior","total_num_programs":48,"total_obs":737885354.4899999},{"title":"Environmental
-  Protection Agency","total_num_programs":21,"total_obs":401414255.0},{"title":"Department
-  of Commerce","total_num_programs":7,"total_obs":84779906.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":12,"total_obs":1524178853.7899997},{"title":"Department
+  of the Interior","total_num_programs":48,"total_obs":825163303.6099999},{"title":"Environmental
+  Protection Agency","total_num_programs":21,"total_obs":592547847.0},{"title":"Department
+  of Commerce","total_num_programs":7,"total_obs":118808369.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":100000.0}]'
 applicant_types: '[{"title":"State","total_num_programs":36},{"title":"Federally Recognized
   Indian Tribal Governments","total_num_programs":23},{"title":"Federally Recognized
   Indian/Native American/Alaska Native Tribal Government","total_num_programs":21},{"title":"Local","total_num_programs":21},{"title":"Local
@@ -164,11 +164,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -208,41 +203,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -259,113 +219,126 @@ parent_permalink: /category/natural-resources
 parent_title: Natural Resources
 permalink: /category/natural-resources/water-resources
 programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmental
-  Quality Incentives Program","popular_name":"EQIP","agency":"Department of Agriculture","total_obs":1784902910.2,"program_type":"assistance_listing"},{"cfda":"15.514","permalink":"/program/15.514","title":"Reclamation
+  Quality Incentives Program","popular_name":"EQIP","agency":"Department of Agriculture","total_obs":1467827108.11,"program_type":"assistance_listing"},{"cfda":"15.514","permalink":"/program/15.514","title":"Reclamation
   States Emergency Drought Relief","popular_name":"WaterSMART Drought Response Program","agency":"Department
-  of the Interior","total_obs":296867729.0,"program_type":"assistance_listing"},{"cfda":"15.507","permalink":"/program/15.507","title":"WaterSMART
+  of the Interior","total_obs":296458134.43,"program_type":"assistance_listing"},{"cfda":"15.507","permalink":"/program/15.507","title":"WaterSMART
   (Sustain and Manage America\u2019s Resources for Tomorrow)","popular_name":"WaterSMART
-  Grants","agency":"Department of the Interior","total_obs":101050082.55,"program_type":"assistance_listing"},{"cfda":"66.126","permalink":"/program/66.126","title":"Geographic
-  Programs - San Francisco Bay Water Quality Improvement Fund","popular_name":"SF
-  Bay Program","agency":"Environmental Protection Agency","total_obs":69025553.0,"program_type":"assistance_listing"},{"cfda":"66.124","permalink":"/program/66.124","title":"Geographic
-  Programs \u2013 Coastal Wetlands Planning Protection and Restoration Act","popular_name":"CWPPRA
-  also known as The Breaux Act","agency":"Environmental Protection Agency","total_obs":60037724.0,"program_type":"assistance_listing"},{"cfda":"11.419","permalink":"/program/11.419","title":"Coastal
+  Grants","agency":"Department of the Interior","total_obs":99946482.48,"program_type":"assistance_listing"},{"cfda":"11.419","permalink":"/program/11.419","title":"Coastal
   Zone Management Administration Awards","popular_name":"Agency: Department of Commerce
   Office: National Oceanic and Atmospheric Administration (NOAA)","agency":"Department
-  of Commerce","total_obs":57792758.0,"program_type":"assistance_listing"},{"cfda":"66.469","permalink":"/program/66.469","title":"Geographic
+  of Commerce","total_obs":81411558.0,"program_type":"assistance_listing"},{"cfda":"66.126","permalink":"/program/66.126","title":"Geographic
+  Programs - San Francisco Bay Water Quality Improvement Fund","popular_name":"SF
+  Bay Program","agency":"Environmental Protection Agency","total_obs":69025553.0,"program_type":"assistance_listing"},{"cfda":"66.469","permalink":"/program/66.469","title":"Geographic
   Programs - Great Lakes Restoration Initiative","popular_name":"Great Lakes Restoration
-  Initiative (GLRI)","agency":"Environmental Protection Agency","total_obs":57556778.0,"program_type":"assistance_listing"},{"cfda":"66.437","permalink":"/program/66.437","title":"Geographic
+  Initiative (GLRI)","agency":"Environmental Protection Agency","total_obs":66125365.0,"program_type":"assistance_listing"},{"cfda":"66.124","permalink":"/program/66.124","title":"Geographic
+  Programs \u2013 Coastal Wetlands Planning Protection and Restoration Act","popular_name":"CWPPRA
+  also known as The Breaux Act","agency":"Environmental Protection Agency","total_obs":60037724.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
+  Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
+  Protection Agency","total_obs":57568860.0,"program_type":"assistance_listing"},{"cfda":"66.437","permalink":"/program/66.437","title":"Geographic
   Programs \u2013 Long Island Sound Program","popular_name":"Long Island Sound Partnership
-  (LIS Partnership)","agency":"Environmental Protection Agency","total_obs":49859374.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
-  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
-  of the Interior","total_obs":41098451.99,"program_type":"assistance_listing"},{"cfda":"15.580","permalink":"/program/15.580","title":"Aquatic
-  Ecosystem Restoration Program","popular_name":"AERP","agency":"Department of the
-  Interior","total_obs":39688245.0,"program_type":"assistance_listing"},{"cfda":"66.454","permalink":"/program/66.454","title":"Water
-  Quality Management Planning","popular_name":"(205(j)(2)) or 604(b) ","agency":"Environmental
-  Protection Agency","total_obs":39386154.0,"program_type":"assistance_listing"},{"cfda":"15.623","permalink":"/program/15.623","title":"North
-  American Wetlands Conservation Fund","popular_name":"NAWCF","agency":"Department
-  of the Interior","total_obs":33734667.5,"program_type":"assistance_listing"},{"cfda":"15.577","permalink":"/program/15.577","title":"Domestic
-  Water Supply Projects","popular_name":null,"agency":"Department of the Interior","total_obs":31798772.61,"program_type":"assistance_listing"},{"cfda":"15.630","permalink":"/program/15.630","title":"Coastal","popular_name":null,"agency":"Department
-  of the Interior","total_obs":31058381.65,"program_type":"assistance_listing"},{"cfda":"15.519","permalink":"/program/15.519","title":"Indian
-  Tribal Water Resources Development, Management, and Protection","popular_name":"Indian
-  Tribal Water Resources","agency":"Department of the Interior","total_obs":28640740.28,"program_type":"assistance_listing"},{"cfda":"11.420","permalink":"/program/11.420","title":"Coastal
-  Zone Management Estuarine Research Reserves","popular_name":null,"agency":"Department
-  of Commerce","total_obs":26987148.0,"program_type":"assistance_listing"},{"cfda":"10.904","permalink":"/program/10.904","title":"Watershed
-  Protection and Flood Prevention","popular_name":"Watershed Operations Program; Public
-  Law 566","agency":"Department of Agriculture","total_obs":25446966.0,"program_type":"assistance_listing"},{"cfda":"66.456","permalink":"/program/66.456","title":"National
-  Estuary Program","popular_name":"NEP","agency":"Environmental Protection Agency","total_obs":24045266.0,"program_type":"assistance_listing"},{"cfda":"15.614","permalink":"/program/15.614","title":"Coastal
-  Wetlands Planning, Protection and Restoration","popular_name":"National Coastal
-  Wetlands Grants","agency":"Department of the Interior","total_obs":23710148.0,"program_type":"assistance_listing"},{"cfda":"66.481","permalink":"/program/66.481","title":"Geographic
-  Programs \u2013 Lake Champlain Basin Program","popular_name":"Lake Champlain Program","agency":"Environmental
-  Protection Agency","total_obs":22794081.0,"program_type":"assistance_listing"},{"cfda":"66.485","permalink":"/program/66.485","title":"Support
-  for the Gulf Hypoxia Action Plan","popular_name":"Gulf Hypoxia Program","agency":"Environmental
-  Protection Agency","total_obs":20769396.0,"program_type":"assistance_listing"},{"cfda":"15.517","permalink":"/program/15.517","title":"Fish
-  and Wildlife Coordination Act","popular_name":null,"agency":"Department of the Interior","total_obs":16542606.92,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
-  Programs - Gulf of America Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":16229474.0,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
-  Programs - Puget Sound Protection and Restoration: Tribal Implementation Assistance
-  Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":15700000.0,"program_type":"assistance_listing"},{"cfda":"10.721","permalink":"/program/10.721","title":"Infrastructure
-  Investment and Jobs Act Temporary Bridge Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":14869579.6,"program_type":"assistance_listing"},{"cfda":"15.066","permalink":"/program/15.066","title":"Tribal
-  Great Lakes Restoration Initiative","popular_name":"Tribal GLRI","agency":"Department
-  of the Interior","total_obs":14047214.0,"program_type":"assistance_listing"},{"cfda":"15.567","permalink":"/program/15.567","title":"Colorado
-  River System Conservation Pilot","popular_name":"PSCP","agency":"Department of the
-  Interior","total_obs":13957406.0,"program_type":"assistance_listing"},{"cfda":"15.037","permalink":"/program/15.037","title":"Water
-  Resources on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":12061858.35,"program_type":"assistance_listing"},{"cfda":"66.484","permalink":"/program/66.484","title":"Geographic
-  Programs - South Florida Geographic Initiatives Program","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":9490493.0,"program_type":"assistance_listing"},{"cfda":"15.566","permalink":"/program/15.566","title":"Upper
-  Klamath Basin Water Supply Alignment","popular_name":null,"agency":"Department of
-  the Interior","total_obs":9200000.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
+  (LIS Partnership)","agency":"Environmental Protection Agency","total_obs":57172432.0,"program_type":"assistance_listing"},{"cfda":"66.964","permalink":"/program/66.964","title":"Geographic
   Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
   Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
-  Grants","agency":"Environmental Protection Agency","total_obs":7784054.0,"program_type":"assistance_listing"},{"cfda":"15.662","permalink":"/program/15.662","title":"Great
+  Grants","agency":"Environmental Protection Agency","total_obs":52307767.0,"program_type":"assistance_listing"},{"cfda":"15.517","permalink":"/program/15.517","title":"Fish
+  and Wildlife Coordination Act","popular_name":null,"agency":"Department of the Interior","total_obs":51656533.54,"program_type":"assistance_listing"},{"cfda":"66.456","permalink":"/program/66.456","title":"National
+  Estuary Program","popular_name":"NEP","agency":"Environmental Protection Agency","total_obs":44868732.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
+  Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
+  of the Interior","total_obs":43252570.99,"program_type":"assistance_listing"},{"cfda":"66.454","permalink":"/program/66.454","title":"Water
+  Quality Management Planning","popular_name":"(205(j)(2)) or 604(b) ","agency":"Environmental
+  Protection Agency","total_obs":42080286.0,"program_type":"assistance_listing"},{"cfda":"11.420","permalink":"/program/11.420","title":"Coastal
+  Zone Management Estuarine Research Reserves","popular_name":null,"agency":"Department
+  of Commerce","total_obs":37396811.0,"program_type":"assistance_listing"},{"cfda":"15.623","permalink":"/program/15.623","title":"North
+  American Wetlands Conservation Fund","popular_name":"NAWCF","agency":"Department
+  of the Interior","total_obs":35532475.51,"program_type":"assistance_listing"},{"cfda":"15.519","permalink":"/program/15.519","title":"Indian
+  Tribal Water Resources Development, Management, and Protection","popular_name":"Indian
+  Tribal Water Resources","agency":"Department of the Interior","total_obs":34732313.19,"program_type":"assistance_listing"},{"cfda":"15.037","permalink":"/program/15.037","title":"Water
+  Resources on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":32618920.21,"program_type":"assistance_listing"},{"cfda":"15.577","permalink":"/program/15.577","title":"Domestic
+  Water Supply Projects","popular_name":null,"agency":"Department of the Interior","total_obs":31798772.61,"program_type":"assistance_listing"},{"cfda":"15.630","permalink":"/program/15.630","title":"Coastal","popular_name":null,"agency":"Department
+  of the Interior","total_obs":31265738.14,"program_type":"assistance_listing"},{"cfda":"10.904","permalink":"/program/10.904","title":"Watershed
+  Protection and Flood Prevention","popular_name":"Watershed Operations Program; Public
+  Law 566","agency":"Department of Agriculture","total_obs":27908905.87,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
+  Programs - Puget Sound Protection and Restoration: Tribal Implementation Assistance
+  Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":27211171.0,"program_type":"assistance_listing"},{"cfda":"66.481","permalink":"/program/66.481","title":"Geographic
+  Programs \u2013 Lake Champlain Basin Program","popular_name":"Lake Champlain Program","agency":"Environmental
+  Protection Agency","total_obs":22825866.0,"program_type":"assistance_listing"},{"cfda":"15.614","permalink":"/program/15.614","title":"Coastal
+  Wetlands Planning, Protection and Restoration","popular_name":"National Coastal
+  Wetlands Grants","agency":"Department of the Interior","total_obs":22084566.88,"program_type":"assistance_listing"},{"cfda":"15.244","permalink":"/program/15.244","title":"Aquatics
+  Resources Management","popular_name":"Aquatic Resource Management: Water, Riparian,
+  Wetland, and Fisheries Resources","agency":"Department of the Interior","total_obs":20178126.93,"program_type":"assistance_listing"},{"cfda":"15.066","permalink":"/program/15.066","title":"Tribal
+  Great Lakes Restoration Initiative","popular_name":"Tribal GLRI","agency":"Department
+  of the Interior","total_obs":18083935.0,"program_type":"assistance_listing"},{"cfda":"15.580","permalink":"/program/15.580","title":"Aquatic
+  Ecosystem Restoration Program","popular_name":"AERP","agency":"Department of the
+  Interior","total_obs":17731163.46,"program_type":"assistance_listing"},{"cfda":"66.485","permalink":"/program/66.485","title":"Support
+  for the Gulf Hypoxia Action Plan","popular_name":"Gulf Hypoxia Program","agency":"Environmental
+  Protection Agency","total_obs":16909396.0,"program_type":"assistance_listing"},{"cfda":"10.721","permalink":"/program/10.721","title":"Infrastructure
+  Investment and Jobs Act Temporary Bridge Program","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":16405529.6,"program_type":"assistance_listing"},{"cfda":"66.475","permalink":"/program/66.475","title":"Geographic
+  Programs - Gulf of America Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":16199804.0,"program_type":"assistance_listing"},{"cfda":"66.962","permalink":"/program/66.962","title":"Geographic
+  Programs - Columbia River Basin Restoration (CRBR) Program","popular_name":"CWA
+  Section 123","agency":"Environmental Protection Agency","total_obs":15173978.0,"program_type":"assistance_listing"},{"cfda":"66.125","permalink":"/program/66.125","title":"Geographic
+  Programs - Lake Pontchartrain Basic Restoration Program (PRP)","popular_name":"Lake
+  Pontchartrain Basin Restoration Program","agency":"Environmental Protection Agency","total_obs":12197000.0,"program_type":"assistance_listing"},{"cfda":"66.123","permalink":"/program/66.123","title":"Geographic
+  Programs - Puget Sound Action Agenda: Technical Investigations and Implementation
+  Assistance Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":10697000.0,"program_type":"assistance_listing"},{"cfda":"66.484","permalink":"/program/66.484","title":"Geographic
+  Programs - South Florida Geographic Initiatives Program","popular_name":null,"agency":"Environmental
+  Protection Agency","total_obs":10575493.0,"program_type":"assistance_listing"},{"cfda":"15.567","permalink":"/program/15.567","title":"Colorado
+  River System Conservation Pilot","popular_name":"PSCP","agency":"Department of the
+  Interior","total_obs":10468389.29,"program_type":"assistance_listing"},{"cfda":"15.509","permalink":"/program/15.509","title":"Title
+  II, Colorado River Basin Salinity Control","popular_name":"Basinwide Program","agency":"Department
+  of the Interior","total_obs":9804509.27,"program_type":"assistance_listing"},{"cfda":"15.566","permalink":"/program/15.566","title":"Upper
+  Klamath Basin Water Supply Alignment","popular_name":null,"agency":"Department of
+  the Interior","total_obs":9571836.0,"program_type":"assistance_listing"},{"cfda":"66.129","permalink":"/program/66.129","title":"Geographic
+  Programs - Southeast New England Coastal Watershed Restoration Program","popular_name":"Southeast
+  New England Program (SNEP)","agency":"Environmental Protection Agency","total_obs":9464781.0,"program_type":"assistance_listing"},{"cfda":"15.662","permalink":"/program/15.662","title":"Great
   Lakes Restoration","popular_name":"Great Lakes Restoration Initiative; Great Lakes
-  Restoration Program","agency":"Department of the Interior","total_obs":7760961.74,"program_type":"assistance_listing"},{"cfda":"15.554","permalink":"/program/15.554","title":"Cooperative
+  Restoration Program","agency":"Department of the Interior","total_obs":7880960.78,"program_type":"assistance_listing"},{"cfda":"15.648","permalink":"/program/15.648","title":"Central
+  Valley Project Improvement Act (CVPIA)","popular_name":"CVPIA","agency":"Department
+  of the Interior","total_obs":7136714.5,"program_type":"assistance_listing"},{"cfda":"15.554","permalink":"/program/15.554","title":"Cooperative
   Watershed Management","popular_name":"Cooperative Watershed Management Program or
-  CWMP","agency":"Department of the Interior","total_obs":7174201.0,"program_type":"assistance_listing"},{"cfda":"15.581","permalink":"/program/15.581","title":"Water
+  CWMP","agency":"Department of the Interior","total_obs":7057950.54,"program_type":"assistance_listing"},{"cfda":"15.581","permalink":"/program/15.581","title":"Water
   Resources Development Act","popular_name":null,"agency":"Department of the Interior","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"10.693","permalink":"/program/10.693","title":"Watershed
   Restoration and Enhancement Agreement Authority","popular_name":"Wyden Amendment
-  ","agency":"Department of Agriculture","total_obs":5598904.23,"program_type":"assistance_listing"},{"cfda":"66.123","permalink":"/program/66.123","title":"Geographic
-  Programs - Puget Sound Action Agenda: Technical Investigations and Implementation
-  Assistance Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":5482000.0,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
+  ","agency":"Department of Agriculture","total_obs":5587978.23,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
+  River Basin Water Enhancement (YRBWE)","popular_name":null,"agency":"Department
+  of the Interior","total_obs":5434421.28,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
   Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":4570343.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
-  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":4494221.4,"program_type":"assistance_listing"},{"cfda":"15.648","permalink":"/program/15.648","title":"Central
-  Valley Project Improvement Act (CVPIA)","popular_name":"CVPIA","agency":"Department
-  of the Interior","total_obs":4477697.5,"program_type":"assistance_listing"},{"cfda":"10.917","permalink":"/program/10.917","title":"Agricultural
-  Management Assistance","popular_name":"AMA","agency":"Department of Agriculture","total_obs":3162751.55,"program_type":"assistance_listing"},{"cfda":"10.933","permalink":"/program/10.933","title":"Wetland
-  Mitigation Banking Program","popular_name":"Wetland Mitigation Banking Program (WMBP)","agency":"Department
-  of Agriculture","total_obs":2976303.0,"program_type":"assistance_listing"},{"cfda":"10.916","permalink":"/program/10.916","title":"Watershed
-  Rehabilitation Program","popular_name":"(Watershed Rehabilitation; PL-566 Watershed
-  Program)","agency":"Department of Agriculture","total_obs":1812275.0,"program_type":"assistance_listing"},{"cfda":"15.663","permalink":"/program/15.663","title":"NFWF-USFWS
-  Conservation Partnership","popular_name":"NFWF Conservation Partnership","agency":"Department
-  of the Interior","total_obs":1745000.0,"program_type":"assistance_listing"},{"cfda":"15.557","permalink":"/program/15.557","title":"Applied
-  Science Grants","popular_name":"ASG","agency":"Department of the Interior","total_obs":1566795.0,"program_type":"assistance_listing"},{"cfda":"66.962","permalink":"/program/66.962","title":"Geographic
-  Programs - Columbia River Basin Restoration (CRBR) Program","popular_name":"CWA
-  Section 123","agency":"Environmental Protection Agency","total_obs":1373978.0,"program_type":"assistance_listing"},{"cfda":"66.466","permalink":"/program/66.466","title":"Geographic
-  Programs - Chesapeake Bay Program","popular_name":"Chesapeake Bay Program","agency":"Environmental
-  Protection Agency","total_obs":1300000.0,"program_type":"assistance_listing"},{"cfda":"15.244","permalink":"/program/15.244","title":"Aquatics
-  Resources Management","popular_name":"Aquatic Resource Management: Water, Riparian,
-  Wetland, and Fisheries Resources","agency":"Department of the Interior","total_obs":1212948.42,"program_type":"assistance_listing"},{"cfda":"15.962","permalink":"/program/15.962","title":"National
-  Wild and Scenic Rivers System","popular_name":null,"agency":"Department of the Interior","total_obs":1115000.0,"program_type":"assistance_listing"},{"cfda":"15.582","permalink":"/program/15.582","title":"Dry-Redwater
-  Rural Water Project Feasibility Study","popular_name":null,"agency":"Department
-  of the Interior","total_obs":800000.0,"program_type":"assistance_listing"},{"cfda":"10.072","permalink":"/program/10.072","title":"Wetlands
-  Reserve Program","popular_name":"(WRP)","agency":"Department of Agriculture","total_obs":715382.28,"program_type":"assistance_listing"},{"cfda":"15.535","permalink":"/program/15.535","title":"Upper
-  Colorado River Basin Fish and Wildlife Mitigation","popular_name":"Upper Colorado
-  River Basin Fish and Wildlife Mitigation Program","agency":"Department of the Interior","total_obs":676866.8,"program_type":"assistance_listing"},{"cfda":"66.461","permalink":"/program/66.461","title":"Regional
-  Wetland Program Development Grants","popular_name":"Regional/Tribal WPDGs","agency":"Environmental
-  Protection Agency","total_obs":579930.0,"program_type":"assistance_listing"},{"cfda":"15.555","permalink":"/program/15.555","title":"San
-  Joaquin River Restoration","popular_name":null,"agency":"Department of the Interior","total_obs":549995.5,"program_type":"assistance_listing"},{"cfda":"15.529","permalink":"/program/15.529","title":"Upper
+  Fish Habitat Partnership","popular_name":"NFHP","agency":"Department of the Interior","total_obs":4470400.59,"program_type":"assistance_listing"},{"cfda":"15.962","permalink":"/program/15.962","title":"National
+  Wild and Scenic Rivers System","popular_name":null,"agency":"Department of the Interior","total_obs":3969126.64,"program_type":"assistance_listing"},{"cfda":"15.529","permalink":"/program/15.529","title":"Upper
   Colorado and San Juan River Basins Endangered Fish Recovery","popular_name":"Upper
   Colorado and San Juan River Recovery Implementation Program","agency":"Department
-  of the Interior","total_obs":545048.74,"program_type":"assistance_listing"},{"cfda":"15.530","permalink":"/program/15.530","title":"Water
+  of the Interior","total_obs":3942660.54,"program_type":"assistance_listing"},{"cfda":"15.563","permalink":"/program/15.563","title":"Suisun
+  Marsh Preservation Agreement","popular_name":"SMPA","agency":"Department of the
+  Interior","total_obs":3000000.0,"program_type":"assistance_listing"},{"cfda":"10.933","permalink":"/program/10.933","title":"Wetland
+  Mitigation Banking Program","popular_name":"Wetland Mitigation Banking Program (WMBP)","agency":"Department
+  of Agriculture","total_obs":2976303.0,"program_type":"assistance_listing"},{"cfda":"66.461","permalink":"/program/66.461","title":"Regional
+  Wetland Program Development Grants","popular_name":"Regional/Tribal WPDGs","agency":"Environmental
+  Protection Agency","total_obs":2106639.0,"program_type":"assistance_listing"},{"cfda":"15.663","permalink":"/program/15.663","title":"NFWF-USFWS
+  Conservation Partnership","popular_name":"NFWF Conservation Partnership","agency":"Department
+  of the Interior","total_obs":1745000.0,"program_type":"assistance_listing"},{"cfda":"15.555","permalink":"/program/15.555","title":"San
+  Joaquin River Restoration","popular_name":null,"agency":"Department of the Interior","total_obs":1650995.5,"program_type":"assistance_listing"},{"cfda":"10.916","permalink":"/program/10.916","title":"Watershed
+  Rehabilitation Program","popular_name":"(Watershed Rehabilitation; PL-566 Watershed
+  Program)","agency":"Department of Agriculture","total_obs":1631803.62,"program_type":"assistance_listing"},{"cfda":"15.557","permalink":"/program/15.557","title":"Applied
+  Science Grants","popular_name":"ASG","agency":"Department of the Interior","total_obs":1517402.47,"program_type":"assistance_listing"},{"cfda":"10.917","permalink":"/program/10.917","title":"Agricultural
+  Management Assistance","popular_name":"AMA","agency":"Department of Agriculture","total_obs":1247328.75,"program_type":"assistance_listing"},{"cfda":"15.535","permalink":"/program/15.535","title":"Upper
+  Colorado River Basin Fish and Wildlife Mitigation","popular_name":"Upper Colorado
+  River Basin Fish and Wildlife Mitigation Program","agency":"Department of the Interior","total_obs":1154866.8,"program_type":"assistance_listing"},{"cfda":"15.521","permalink":"/program/15.521","title":"Lower
+  Rio Grande Valley Water Resources Conservation and Improvement","popular_name":"Lower
+  Rio Grande Valley Irrigation Projects","agency":"Department of the Interior","total_obs":990000.0,"program_type":"assistance_listing"},{"cfda":"15.582","permalink":"/program/15.582","title":"Dry-Redwater
+  Rural Water Project Feasibility Study","popular_name":null,"agency":"Department
+  of the Interior","total_obs":800000.0,"program_type":"assistance_listing"},{"cfda":"10.072","permalink":"/program/10.072","title":"Wetlands
+  Reserve Program","popular_name":"(WRP)","agency":"Department of Agriculture","total_obs":579758.51,"program_type":"assistance_listing"},{"cfda":"15.530","permalink":"/program/15.530","title":"Water
   Conservation Field Services (WCFS)","popular_name":"Water Conservation Field Services
-  Program (WCFSP)","agency":"Department of the Interior","total_obs":437235.0,"program_type":"assistance_listing"},{"cfda":"15.687","permalink":"/program/15.687","title":"Great
+  Program (WCFSP)","agency":"Department of the Interior","total_obs":455256.5,"program_type":"assistance_listing"},{"cfda":"15.687","permalink":"/program/15.687","title":"Great
   Lakes Sea Lamprey Control","popular_name":"SLC","agency":"Department of the Interior","total_obs":136674.9,"program_type":"assistance_listing"},{"cfda":"15.688","permalink":"/program/15.688","title":"Great
   Lakes Fish and Wildlife Restoration Act","popular_name":"GLFWRA","agency":"Department
-  of the Interior","total_obs":124912.64,"program_type":"assistance_listing"},{"cfda":"10.907","permalink":"/program/10.907","title":"Snow
+  of the Interior","total_obs":124912.64,"program_type":"assistance_listing"},{"cfda":"12.987","permalink":"/program/12.987","title":"Upper
+  San Pedro Partnership Support","popular_name":"Upper San Pedro Partnership","agency":"Department
+  of Defense","total_obs":100000.0,"program_type":"assistance_listing"},{"cfda":"10.907","permalink":"/program/10.907","title":"Snow
   Survey and Water Supply Forecasting","popular_name":"Snow Surveys","agency":"Department
   of Agriculture","total_obs":70000.0,"program_type":"assistance_listing"},{"cfda":"15.583","permalink":"/program/15.583","title":"Truckee-Carson
   Basins Research and Data Collection","popular_name":null,"agency":"Department of
-  the Interior","total_obs":41149.0,"program_type":"assistance_listing"},{"cfda":"10.929","permalink":"/program/10.929","title":"Water
-  Bank Program","popular_name":null,"agency":"Department of Agriculture","total_obs":3850.0,"program_type":"assistance_listing"},{"cfda":"11.058","permalink":"/program/11.058","title":"Bluefin
+  the Interior","total_obs":41149.0,"program_type":"assistance_listing"},{"cfda":"11.058","permalink":"/program/11.058","title":"Bluefin
   Tuna Research Program","popular_name":"Atlantic Bluefin Tuna","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.066","permalink":"/program/11.066","title":"Cost
   Recovery, Crab Rationalization and Shellfish Programs","popular_name":null,"agency":"Department
@@ -381,21 +354,13 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   Supplemental Appropriations","popular_name":"Supplemental Funding","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.130","permalink":"/program/66.130","title":"Geographic
   Programs - Gulf Coast Ecosystem Restoration Council Comprehensive Plan Component","popular_name":"EPA''s
-  RESTORE Council Component","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.125","permalink":"/program/66.125","title":"Geographic
-  Programs - Lake Pontchartrain Basic Restoration Program (PRP)","popular_name":"Lake
-  Pontchartrain Basin Restoration Program","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.129","permalink":"/program/66.129","title":"Geographic
-  Programs - Southeast New England Coastal Watershed Restoration Program","popular_name":"Southeast
-  New England Program (SNEP)","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.565","permalink":"/program/15.565","title":"Implementation
+  RESTORE Council Component","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.565","permalink":"/program/15.565","title":"Implementation
   of the Taos Pueblo Indian water rights settlement","popular_name":"Abeyta Settlement","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.540","permalink":"/program/15.540","title":"Lake
-  Mead/Las Vegas Wash","popular_name":"Las Vegas Wash (LVW Program)","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.543","permalink":"/program/15.543","title":"Lake
   Tahoe Regional Wetlands Development","popular_name":null,"agency":"Department of
   the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.538","permalink":"/program/15.538","title":"Lower
   Colorado River Multi-Species Conservation","popular_name":"MSCP","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.521","permalink":"/program/15.521","title":"Lower
-  Rio Grande Valley Water Resources Conservation and Improvement","popular_name":"Lower
-  Rio Grande Valley Irrigation Projects","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.578","permalink":"/program/15.578","title":"Multiyear
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.578","permalink":"/program/15.578","title":"Multiyear
   Drought Mitigation in Other Reclamation River Basins Program","popular_name":"Multiyear
   Drought Mitigation for Other Basins","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.462","permalink":"/program/66.462","title":"National
   Wetland Program Development Grants and Five-Star Restoration Training Grant","popular_name":"National
@@ -406,26 +371,21 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   Water to At-Risk Natural Desert Terminal Lakes","popular_name":"Desert Terminal
   Lakes Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.063","permalink":"/program/11.063","title":"Research
   Set Aside Program","popular_name":"Research Set Aside Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.563","permalink":"/program/15.563","title":"Suisun
-  Marsh Preservation Agreement","popular_name":"SMPA","agency":"Department of the
-  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.509","permalink":"/program/15.509","title":"Title
-  II, Colorado River Basin Salinity Control","popular_name":"Basinwide Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.987","permalink":"/program/12.987","title":"Upper
-  San Pedro Partnership Support","popular_name":"Upper San Pedro Partnership","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.097","permalink":"/program/10.097","title":"Water-Saving
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.097","permalink":"/program/10.097","title":"Water-Saving
   Commodities Grant","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.590","permalink":"/program/15.590","title":"WaterSMART
   Drought Response Program","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.579","permalink":"/program/15.579","title":"WaterSMART
   Enhancing Water Resources Projects","popular_name":"EWRP","agency":"Department of
   the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.592","permalink":"/program/15.592","title":"WaterSMART
   Planning and Project Design Grants","popular_name":null,"agency":"Department of
-  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
-  River Basin Water Enhancement (YRBWE)","popular_name":null,"agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.576","permalink":"/program/15.576","title":"Yakima
+  the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.576","permalink":"/program/15.576","title":"Yakima
   River Basin Water Enhancement Phase III (Yakima Basin Integrated Plan)","popular_name":"YRBWEP
-  Phase III (Yakima Basin Integrated Plan)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Phase III (Yakima Basin Integrated Plan)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.929","permalink":"/program/10.929","title":"Water
+  Bank Program","popular_name":null,"agency":"Department of Agriculture","total_obs":-55861.9,"program_type":"assistance_listing"},{"cfda":"15.540","permalink":"/program/15.540","title":"Lake
+  Mead/Las Vegas Wash","popular_name":"Las Vegas Wash (LVW Program)","agency":"Department
+  of the Interior","total_obs":-3100000.0,"program_type":"assistance_listing"}]'
 title: Water Resources
 total_num_agencies: 5
 total_num_applicant_types: 69
 total_num_programs: 89
-total_obs: 3063638437.35
+total_obs: 3060798373.4000006
 ---

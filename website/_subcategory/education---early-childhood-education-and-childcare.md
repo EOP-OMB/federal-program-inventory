@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":13191895052.9},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":4,"total_obs":22863925456.24},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":4630000000.0},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":14685536.71},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":17335650.12},{"title":"Department
   of Agriculture","total_num_programs":2,"total_obs":0.0}]'
 applicant_types: '[{"title":"U.S. Territory (or Possession) Government (including
   freely-associated states)","total_num_programs":4},{"title":"U.S. State Government
@@ -135,11 +135,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -179,41 +174,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -229,25 +189,25 @@ fiscal_year: '2025'
 parent_permalink: /category/education
 parent_title: Education
 permalink: /category/education/early-childhood-education-and-childcare
-programs: '[{"cfda":"93.575","permalink":"/program/93.575","title":"Child Care and
-  Development Block Grant","popular_name":"Child Care and Development Fund (CCDF)","agency":"Department
-  of Health and Human Services","total_obs":8648462656.63,"program_type":"assistance_listing"},{"cfda":"93.600","permalink":"/program/93.600","title":"Head
-  Start","popular_name":"Head Start","agency":"Department of Health and Human Services","total_obs":4393512864.0,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
+programs: '[{"cfda":"93.600","permalink":"/program/93.600","title":"Head Start","popular_name":"Head
+  Start","agency":"Department of Health and Human Services","total_obs":11761751679.61,"program_type":"assistance_listing"},{"cfda":"93.575","permalink":"/program/93.575","title":"Child
+  Care and Development Block Grant","popular_name":"Child Care and Development Fund
+  (CCDF)","agency":"Department of Health and Human Services","total_obs":8579785378.81,"program_type":"assistance_listing"},{"cfda":"TC.123","permalink":"/program/TC.123","title":"Credit
   for child and dependent care expenses","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":3660000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
-  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":950000000.0,"program_type":"tax_expenditure"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
+  of the Treasury","total_obs":3660000000.0,"program_type":"tax_expenditure"},{"cfda":"93.596","permalink":"/program/93.596","title":"Child
   Care Mandatory and Matching Funds of the Child Care and Development Fund","popular_name":"Child
-  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":147918932.27,"program_type":"assistance_listing"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
+  Care and Development Fund (CCDF)","agency":"Department of Health and Human Services","total_obs":2214992400.52,"program_type":"assistance_listing"},{"cfda":"TC.118","permalink":"/program/TC.118","title":"Employer
+  provided child care exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":950000000.0,"program_type":"tax_expenditure"},{"cfda":"93.434","permalink":"/program/93.434","title":"Every
+  Student Succeeds Act/Preschool Development Grants","popular_name":"Preschool Development
+  Grants Birth Through 5","agency":"Department of Health and Human Services","total_obs":307395997.3,"program_type":"assistance_listing"},{"cfda":"TC.119","permalink":"/program/TC.119","title":"Employer-provided
   child care credit","popular_name":null,"agency":"Department of the Treasury","total_obs":20000000.0,"program_type":"tax_expenditure"},{"cfda":"15.043","permalink":"/program/15.043","title":"Indian
   Child and Family Education","popular_name":"(FACE)","agency":"Department of the
-  Interior","total_obs":14685536.71,"program_type":"assistance_listing"},{"cfda":"93.434","permalink":"/program/93.434","title":"Every
-  Student Succeeds Act/Preschool Development Grants","popular_name":"Preschool Development
-  Grants Birth Through 5","agency":"Department of Health and Human Services","total_obs":2000600.0,"program_type":"assistance_listing"},{"cfda":"10.337","permalink":"/program/10.337","title":"DoD
+  Interior","total_obs":17335650.12,"program_type":"assistance_listing"},{"cfda":"10.337","permalink":"/program/10.337","title":"DoD
   Virtual Lab School","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.286","permalink":"/program/10.286","title":"Early
   Learning Matters","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Early Childhood Education and Childcare
 total_num_agencies: 4
 total_num_applicant_types: 17
 total_num_programs: 10
-total_obs: 17836580589.61
+total_obs: 27511261106.36
 ---

@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":13,"total_obs":2118346701.6599998}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":13,"total_obs":4185436198.56}]'
 applicant_types: '[{"title":"Other","total_num_programs":6},{"title":"State","total_num_programs":6},{"title":"For-Profit
   Organization","total_num_programs":2},{"title":"Nonprofit Organization","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"County Government (inclusive of
@@ -128,11 +128,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -172,41 +167,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -222,41 +182,41 @@ fiscal_year: '2025'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/veteran-health
-programs: '[{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","popular_name":"Civilian
+programs: '[{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans State
+  Nursing Home Care","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":2016329458.37,"program_type":"assistance_listing"},{"cfda":"64.039","permalink":"/program/64.039","title":"CHAMPVA","popular_name":"Civilian
   Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)","agency":"Department
   of Veterans Affairs","total_obs":1930702459.0,"program_type":"assistance_listing"},{"cfda":"64.100","permalink":"/program/64.100","title":"Automobiles
   and Adaptive Equipment for Certain Disabled Veterans and Members of the Armed Forces","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":108765479.0,"program_type":"assistance_listing"},{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans
-  State Nursing Home Care","popular_name":null,"agency":"Department of Veterans Affairs","total_obs":32008212.83,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
+  of Veterans Affairs","total_obs":108765479.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
+  State Domiciliary Care","popular_name":"Veterans State Home Domiciliary Care","agency":"Department
+  of Veterans Affairs","total_obs":55202499.57,"program_type":"assistance_listing"},{"cfda":"64.005","permalink":"/program/64.005","title":"Grants
+  to States for Construction of State Home Facilities","popular_name":"Grants to States
+  for Construction of State Home Facilities","agency":"Department of Veterans Affairs","total_obs":35621019.21,"program_type":"assistance_listing"},{"cfda":"64.055","permalink":"/program/64.055","title":"Staff
   Sergeant Parker Gordon Fox Suicide Prevention Grant Program","popular_name":"SSG
   Fox SPGP Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program","agency":"Department
-  of Veterans Affairs","total_obs":17500000.0,"program_type":"assistance_listing"},{"cfda":"64.034","permalink":"/program/64.034","title":"VA
+  of Veterans Affairs","total_obs":16842067.22,"program_type":"assistance_listing"},{"cfda":"64.034","permalink":"/program/64.034","title":"VA
   Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of
   the Armed Forces","popular_name":"VA Grants for Adaptive Sports Programs for Disabled
   Veterans and Disabled Members of the Armed Forces","agency":"Department of Veterans
-  Affairs","total_obs":14982295.12,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
+  Affairs","total_obs":7007146.16,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
+  State Adult Day Health Care","popular_name":null,"agency":"Department of Veterans
+  Affairs","total_obs":6133848.71,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
   Transportation Program","popular_name":"Veterans Transportation Program/Grants for
-  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5999308.63,"program_type":"assistance_listing"},{"cfda":"64.005","permalink":"/program/64.005","title":"Grants
-  to States for Construction of State Home Facilities","popular_name":"Grants to States
-  for Construction of State Home Facilities","agency":"Department of Veterans Affairs","total_obs":5412688.21,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
+  Transportation in Highly Rural Areas","agency":"Department of Veterans Affairs","total_obs":5568000.11,"program_type":"assistance_listing"},{"cfda":"64.037","permalink":"/program/64.037","title":"VA
+  U.S. Paralympics Monthly Assistance Allowance Program","popular_name":null,"agency":"Department
+  of Veterans Affairs","total_obs":2228835.93,"program_type":"assistance_listing"},{"cfda":"64.053","permalink":"/program/64.053","title":"Payments
   to States for Programs to Promote the Hiring and Retention of Nurses at State Veterans
   Homes","popular_name":"SVH RN Grant; Nurse Retention Grant","agency":"Department
-  of Veterans Affairs","total_obs":2816649.35,"program_type":"assistance_listing"},{"cfda":"64.037","permalink":"/program/64.037","title":"VA
-  U.S. Paralympics Monthly Assistance Allowance Program","popular_name":null,"agency":"Department
-  of Veterans Affairs","total_obs":159609.52,"program_type":"assistance_listing"},{"cfda":"64.051","permalink":"/program/64.051","title":"Specially
-  Adapted Housing Assistive Technology Grant Program","popular_name":"Specially Adapted
-  Housing Assistive Technology (SAHAT) Grant Program","agency":"Department of Veterans
-  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.057","permalink":"/program/64.057","title":"Suicide
+  of Veterans Affairs","total_obs":1627251.13,"program_type":"assistance_listing"},{"cfda":"64.057","permalink":"/program/64.057","title":"Suicide
   Mortality Review Cooperative Agreements","popular_name":"SMR, SFR, SMRC, Suicide
   Fatality Review, Suicide Mortality Review Committee","agency":"Department of Veterans
-  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
-  State Adult Day Health Care","popular_name":null,"agency":"Department of Veterans
-  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.014","permalink":"/program/64.014","title":"Veterans
-  State Domiciliary Care","popular_name":"Veterans State Home Domiciliary Care","agency":"Department
-  of Veterans Affairs","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Affairs","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"64.051","permalink":"/program/64.051","title":"Specially
+  Adapted Housing Assistive Technology Grant Program","popular_name":"Specially Adapted
+  Housing Assistive Technology (SAHAT) Grant Program","agency":"Department of Veterans
+  Affairs","total_obs":-591865.85,"program_type":"assistance_listing"}]'
 title: Veteran Health
 total_num_agencies: 1
 total_num_applicant_types: 17
 total_num_programs: 13
-total_obs: 2118346701.6599998
+total_obs: 4185436198.56
 ---

@@ -1,18 +1,18 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":500,"total_obs":1887334803793.7002},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":500,"total_obs":1942311533241.1104},{"title":"Department
   of the Treasury","total_num_programs":8,"total_obs":111360000000.0},{"title":"Environmental
-  Protection Agency","total_num_programs":13,"total_obs":7459175878.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":15,"total_obs":2148248225.66},{"title":"Department
-  of Defense","total_num_programs":8,"total_obs":1453452556.67},{"title":"Department
-  of the Interior","total_num_programs":24,"total_obs":619782134.5699999},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":445788571.90999997},{"title":"Department
-  of Housing and Urban Development","total_num_programs":3,"total_obs":147459875.57999998},{"title":"Department
-  of Education","total_num_programs":10,"total_obs":142017339.0},{"title":"Executive
-  Office of the President","total_num_programs":6,"total_obs":16955999.0},{"title":"Corporation
-  for National and Community Service","total_num_programs":1,"total_obs":16878013.0},{"title":"Federal
-  Communications Commission","total_num_programs":2,"total_obs":4234195.92},{"title":"Department
-  of State","total_num_programs":1,"total_obs":466487.09},{"title":"Department of
-  Energy","total_num_programs":1,"total_obs":0.0}]'
+  Protection Agency","total_num_programs":13,"total_obs":7114111997.0},{"title":"Department
+  of Veterans Affairs","total_num_programs":15,"total_obs":4219536142.5299997},{"title":"Department
+  of Defense","total_num_programs":8,"total_obs":1633594264.14},{"title":"Department
+  of the Interior","total_num_programs":24,"total_obs":946574887.9799999},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":512374175.14},{"title":"Department
+  of Housing and Urban Development","total_num_programs":3,"total_obs":251509021.36},{"title":"Department
+  of Education","total_num_programs":10,"total_obs":133203562.10000002},{"title":"Corporation
+  for National and Community Service","total_num_programs":1,"total_obs":51497542.63},{"title":"Department
+  of State","total_num_programs":1,"total_obs":50124369.06},{"title":"Executive Office
+  of the President","total_num_programs":6,"total_obs":16955999.0},{"title":"Department
+  of Energy","total_num_programs":1,"total_obs":0.0},{"title":"Federal Communications
+  Commission","total_num_programs":2,"total_obs":-2188960.88}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":274},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":204},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":199},{"title":"State","total_num_programs":169},{"title":"U.S.
@@ -173,11 +173,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -217,41 +212,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -265,16 +225,16 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/health
-sub_cats: '[{"title":"Child Welfare","permalink":"/category/health/child-welfare","total_num_programs":25,"total_obs":3091574931.75},{"title":"Health
-  and Wellbeing","permalink":"/category/health/health-and-wellbeing","total_num_programs":215,"total_obs":16629302637.589996},{"title":"Healthcare
-  Access","permalink":"/category/health/healthcare-access","total_num_programs":34,"total_obs":1972027160608.05},{"title":"Healthcare
-  Innovation","permalink":"/category/health/healthcare-innovation","total_num_programs":180,"total_obs":10466329788.79},{"title":"Healthcare
-  Quality and Delivery","permalink":"/category/health/healthcare-quality-and-delivery","total_num_programs":140,"total_obs":6816548402.26},{"title":"Veteran
-  Health","permalink":"/category/health/veteran-health","total_num_programs":13,"total_obs":2118346701.6599998}]'
+sub_cats: '[{"title":"Child Welfare","permalink":"/category/health/child-welfare","total_num_programs":25,"total_obs":11753973271.09},{"title":"Health
+  and Wellbeing","permalink":"/category/health/health-and-wellbeing","total_num_programs":215,"total_obs":22959062705.569996},{"title":"Healthcare
+  Access","permalink":"/category/health/healthcare-access","total_num_programs":34,"total_obs":1978437861360.68},{"title":"Healthcare
+  Innovation","permalink":"/category/health/healthcare-innovation","total_num_programs":180,"total_obs":37515456021.14},{"title":"Healthcare
+  Quality and Delivery","permalink":"/category/health/healthcare-quality-and-delivery","total_num_programs":140,"total_obs":13747036684.130005},{"title":"Veteran
+  Health","permalink":"/category/health/veteran-health","total_num_programs":13,"total_obs":4185436198.56}]'
 title: Health
 total_num_agencies: 14
 total_num_applicant_types: 75
 total_num_programs: 607
 total_num_sub_cats: 6
-total_obs: 2011149263070.1006
+total_obs: 2068598826241.1702
 ---

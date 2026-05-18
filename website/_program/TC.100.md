@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Community Development - Community, Area, and Regional Development
-- Tax Expenditures - Community and Regional Development
 cfda: TC.100
 fiscal_year: '2025'
 grants_url: null

@@ -1,6 +1,6 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":1,"total_obs":16868285.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":3,"total_obs":9188223.77}]'
+agencies: '[{"title":"Department of Education","total_num_programs":1,"total_obs":27476384.66},{"title":"National
+  Endowment for the Humanities","total_num_programs":3,"total_obs":10121762.399999999}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":2},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Municipality
@@ -133,11 +133,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -177,41 +172,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -228,15 +188,15 @@ parent_permalink: /category/cultural-affairs
 parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/artistic-talent-development
 programs: '[{"cfda":"84.351","permalink":"/program/84.351","title":"Arts in Education","popular_name":null,"agency":"Department
-  of Education","total_obs":16868285.0,"program_type":"assistance_listing"},{"cfda":"45.160","permalink":"/program/45.160","title":"Promotion
+  of Education","total_obs":27476384.66,"program_type":"assistance_listing"},{"cfda":"45.160","permalink":"/program/45.160","title":"Promotion
   of the Humanities Fellowships and Stipends","popular_name":"Fellowships and Other
   Awards to Individuals","agency":"National Endowment for the Humanities","total_obs":6652848.56,"program_type":"assistance_listing"},{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion
   of the Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
-  Endowment for the Humanities","total_obs":2535375.21,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"Collaborative
+  Endowment for the Humanities","total_obs":3468913.84,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"Collaborative
   Research","popular_name":null,"agency":"National Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Artistic Talent Development
 total_num_agencies: 2
 total_num_applicant_types: 16
 total_num_programs: 4
-total_obs: 26056508.77
+total_obs: 37598147.06
 ---
