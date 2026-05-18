@@ -7,7 +7,6 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 ARG TEST_ENV=false
-ARG USE_LOCAL_API=false
 
 ENV http_proxy=$http_proxy \
     https_proxy=$https_proxy \
@@ -59,6 +58,7 @@ ARG http_proxy
 ARG https_proxy
 ARG no_proxy
 ARG TEST_ENV=false
+ARG USE_LOCAL_API=false
 
 ENV http_proxy=$http_proxy \
     https_proxy=$https_proxy \
