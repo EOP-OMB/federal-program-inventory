@@ -1,13 +1,13 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":770000000.0},{"title":"Department
-  of the Interior","total_num_programs":24,"total_obs":250902877.92999998},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":8,"total_obs":226651754.0},{"title":"Department
-  of Education","total_num_programs":5,"total_obs":172178688.0},{"title":"National
-  Endowment for the Arts","total_num_programs":3,"total_obs":120258374.53999999},{"title":"National
-  Endowment for the Humanities","total_num_programs":12,"total_obs":50024290.32},{"title":"Department
-  of Homeland Security","total_num_programs":2,"total_obs":9999998.0},{"title":"National
-  Archives and Records Administration","total_num_programs":2,"total_obs":2384000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":2195992.4},{"title":"Library
+  of the Interior","total_num_programs":24,"total_obs":266187183.42999998},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":8,"total_obs":239025739.62},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":216193204.71},{"title":"National
+  Endowment for the Arts","total_num_programs":3,"total_obs":116320336.16},{"title":"National
+  Endowment for the Humanities","total_num_programs":12,"total_obs":70713516.11},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":9514042.68},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":1920025.72},{"title":"National
+  Archives and Records Administration","total_num_programs":2,"total_obs":1738523.8},{"title":"Library
   of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":0.0}]'
@@ -164,11 +164,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -208,41 +203,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -256,14 +216,14 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Access and Appreciation","permalink":"/category/cultural-affairs/access-and-appreciation","total_num_programs":8,"total_obs":141057137.54},{"title":"Artistic
-  Talent Development","permalink":"/category/cultural-affairs/artistic-talent-development","total_num_programs":4,"total_obs":26056508.77},{"title":"Cultural
-  Heritage and Traditions","permalink":"/category/cultural-affairs/cultural-heritage-and-traditions","total_num_programs":12,"total_obs":176117059.0},{"title":"Cultural
-  Institutions","permalink":"/category/cultural-affairs/cultural-institutions","total_num_programs":39,"total_obs":1261365269.88}]'
+sub_cats: '[{"title":"Access and Appreciation","permalink":"/category/cultural-affairs/access-and-appreciation","total_num_programs":8,"total_obs":155125913.41000003},{"title":"Artistic
+  Talent Development","permalink":"/category/cultural-affairs/artistic-talent-development","total_num_programs":4,"total_obs":37598147.06},{"title":"Cultural
+  Heritage and Traditions","permalink":"/category/cultural-affairs/cultural-heritage-and-traditions","total_num_programs":12,"total_obs":208384725.82},{"title":"Cultural
+  Institutions","permalink":"/category/cultural-affairs/cultural-institutions","total_num_programs":39,"total_obs":1290503785.94}]'
 title: Cultural Affairs
 total_num_agencies: 13
 total_num_applicant_types: 65
 total_num_programs: 63
 total_num_sub_cats: 4
-total_obs: 1604595975.19
+total_obs: 1691612572.2299998
 ---

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Housing - Housing and Homelessness
-- Tax Expenditures - Energy
 cfda: TC.036
 fiscal_year: '2025'
 grants_url: null

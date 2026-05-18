@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Health - Healthcare Access
-- Tax Expenditures - Health
 cfda: TC.135
 fiscal_year: '2025'
 grants_url: null

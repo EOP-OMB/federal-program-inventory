@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Health - Child Welfare
-- Tax Expenditures - Education, Training, Employment, and Social Services
 cfda: TC.126
 fiscal_year: '2025'
 grants_url: null

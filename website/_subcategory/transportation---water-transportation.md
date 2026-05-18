@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":6,"total_obs":64957616.0},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":6,"total_obs":103468657.0},{"title":"Department
   of Homeland Security","total_num_programs":2,"total_obs":6195859.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":4},{"title":"Federally
@@ -128,11 +128,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -172,41 +167,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -225,7 +185,7 @@ permalink: /category/transportation/water-transportation
 programs: '[{"cfda":"20.532","permalink":"/program/20.532","title":"Passenger Ferry
   Grant Program, Electric or Low-Emitting Ferry Pilot Program, and Ferry Service for
   Rural Communities Program","popular_name":"Ferry Programs","agency":"Department
-  of Transportation","total_obs":64457616.0,"program_type":"assistance_listing"},{"cfda":"97.135","permalink":"/program/97.135","title":"National
+  of Transportation","total_obs":102968657.0,"program_type":"assistance_listing"},{"cfda":"97.135","permalink":"/program/97.135","title":"National
   Nonprofit Organization Recreational Boating Safety Grant Program","popular_name":"Nonprofit
   RBS Program","agency":"Department of Homeland Security","total_obs":6195859.0,"program_type":"assistance_listing"},{"cfda":"20.826","permalink":"/program/20.826","title":"Maritime
   Environmental and Technical Assistance","popular_name":"META","agency":"Department
@@ -244,5 +204,5 @@ title: Water Transportation
 total_num_agencies: 3
 total_num_applicant_types: 13
 total_num_programs: 9
-total_obs: 71153475.0
+total_obs: 109664516.0
 ---

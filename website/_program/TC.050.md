@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Agricultural - Farm Income Stabilization
-- Tax Expenditures - Agriculture
 cfda: TC.050
 fiscal_year: '2025'
 grants_url: null

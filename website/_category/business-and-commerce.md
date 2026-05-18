@@ -1,19 +1,18 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":34,"total_obs":175604945245.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":3583739408.57},{"title":"Department
-  of Commerce","total_num_programs":18,"total_obs":674731017.47},{"title":"Department
-  of Agriculture","total_num_programs":51,"total_obs":519049226.72},{"title":"Small
-  Business Administration","total_num_programs":24,"total_obs":227577759.74},{"title":"Department
-  of Transportation","total_num_programs":12,"total_obs":38693927.58},{"title":"Department
-  of Labor","total_num_programs":2,"total_obs":32805400.61},{"title":"National Aeronautics
-  and Space Administration","total_num_programs":2,"total_obs":17710995.77},{"title":"Department
-  of the Interior","total_num_programs":4,"total_obs":7386015.88},{"title":"Department
-  of State","total_num_programs":2,"total_obs":6209535.0},{"title":"Department of
-  Defense","total_num_programs":2,"total_obs":581400.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Export
-  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Department
+agencies: '[{"title":"Department of the Treasury","total_num_programs":34,"total_obs":175580922953.11},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":7561477056.38},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":991115838.08},{"title":"Department
+  of Commerce","total_num_programs":18,"total_obs":741456761.2900001},{"title":"Department
+  of Agriculture","total_num_programs":51,"total_obs":544703415.5300001},{"title":"Small
+  Business Administration","total_num_programs":24,"total_obs":198580529.72999996},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":2,"total_obs":77603120.0},{"title":"Department
+  of Transportation","total_num_programs":12,"total_obs":67742191.5},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":13372556.139999999},{"title":"Department
+  of State","total_num_programs":2,"total_obs":4328725.5},{"title":"Federal Financial
+  Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":13,"total_obs":0.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":0.0}]'
+  of Education","total_num_programs":1,"total_obs":0.0},{"title":"Department of Labor","total_num_programs":2,"total_obs":-4324465.079999998},{"title":"Export
+  - Import Bank of the United States","total_num_programs":1,"total_obs":-189244296.82}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":32},{"title":"Small
   Business Person","total_num_programs":30},{"title":"Other","total_num_programs":28},{"title":"Unrestricted
   by Entity Type","total_num_programs":24},{"title":"U.S. State Government (including
@@ -171,11 +170,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -215,41 +209,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -263,12 +222,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/business-and-commerce
-sub_cats: '[{"title":"Business Development","permalink":"/category/business-and-commerce/business-development","total_num_programs":86,"total_obs":137791719268.21},{"title":"Economic
-  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":84,"total_obs":42921710664.13}]'
+sub_cats: '[{"title":"Business Development","permalink":"/category/business-and-commerce/business-development","total_num_programs":86,"total_obs":137817904360.01},{"title":"Economic
+  Development","permalink":"/category/business-and-commerce/economic-development","total_num_programs":84,"total_obs":47769830025.35}]'
 title: Business and Commerce
 total_num_agencies: 15
 total_num_applicant_types: 65
 total_num_programs: 170
 total_num_sub_cats: 2
-total_obs: 180713429932.34
+total_obs: 185587734385.36
 ---

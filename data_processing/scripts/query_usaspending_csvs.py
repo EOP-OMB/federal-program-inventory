@@ -4,7 +4,7 @@ Query USAspending assistance award archive CSVs within zip files.
 
 For each zip in an input directory, extracts CSVs to a temp directory,
 filters rows matching a given CFDA/ALN (`cfda_number`), writes a detail CSV,
-then creates summary rollups by award and by award first fiscal year.
+then creates summary rollups by award and by fiscal year.
 """
 
 from __future__ import annotations
@@ -191,13 +191,13 @@ def main(argv: Optional[list[str]] = None) -> int:
         .agg(
             obligations=(obligation_col, "sum"),
             outlays=(outlay_col, "first"),
-            award_first_fiscal_year=(fiscal_year_col, "min"),
+            fiscal_year=(fiscal_year_col, "min"),
         )
         .reset_index()
     )
 
     df_award = df_award[
-        [award_key_col, "award_first_fiscal_year", "obligations", "outlays"]
+        [award_key_col, "fiscal_year", "obligations", "outlays"]
     ]
 
     award_path = reports_dir / f"{today}_{cfda_safe}_cfda_summary_by_award.csv"
@@ -205,10 +205,10 @@ def main(argv: Optional[list[str]] = None) -> int:
     print(f"Saved {award_path}")
 
     df_year = (
-        df_award.groupby("award_first_fiscal_year", dropna=False, sort=False)
+        df_award.groupby("fiscal_year", dropna=False, sort=False)
         .agg(obligations=("obligations", "sum"), outlays=("outlays", "sum"))
         .reset_index()
-        .rename(columns={"award_first_fiscal_year": "year"})
+        .rename(columns={"fiscal_year": "year"})
     )
 
     year_path = reports_dir / f"{today}_{cfda_safe}_cfda_summary_by_year.csv"

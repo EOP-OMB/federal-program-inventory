@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Commerce and Housing
 cfda: TC.087
 fiscal_year: '2025'
 grants_url: null

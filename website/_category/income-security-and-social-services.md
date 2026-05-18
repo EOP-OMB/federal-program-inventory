@@ -1,14 +1,14 @@
 ---
 agencies: '[{"title":"Social Security Administration","total_num_programs":5,"total_obs":1632918516143.0},{"title":"Department
-  of the Treasury","total_num_programs":73,"total_obs":1538712781349.77},{"title":"Department
-  of Veterans Affairs","total_num_programs":11,"total_obs":188393044755.0},{"title":"Department
-  of Health and Human Services","total_num_programs":10,"total_obs":24783704140.34},{"title":"Railroad
+  of the Treasury","total_num_programs":73,"total_obs":1538711101344.03},{"title":"Department
+  of Veterans Affairs","total_num_programs":11,"total_obs":188391245050.25},{"title":"Department
+  of Health and Human Services","total_num_programs":10,"total_obs":24325695516.910004},{"title":"Railroad
   Retirement Board","total_num_programs":2,"total_obs":14511445136.77},{"title":"Pension
-  Benefit Guaranty Corporation","total_num_programs":1,"total_obs":6153704179.13},{"title":"Department
-  of Labor","total_num_programs":4,"total_obs":3340745119.85},{"title":"Department
-  of Housing and Urban Development","total_num_programs":4,"total_obs":186170738.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":15880819.540000001},{"title":"National
-  Credit Union Administration","total_num_programs":1,"total_obs":568264.28}]'
+  Benefit Guaranty Corporation","total_num_programs":1,"total_obs":6322223059.34},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":2719147868.28},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":43697554.9},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":438607.98},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":-197116769.81}]'
 applicant_types: '[{"title":"Individual/Family","total_num_programs":12},{"title":"State","total_num_programs":10},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Nonprofit
   Organization","total_num_programs":7},{"title":"U.S. State Government (including
@@ -158,11 +158,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -202,41 +197,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -250,12 +210,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/income-security-and-social-services
-sub_cats: '[{"title":"Burial Benefits","permalink":"/category/income-security-and-social-services/burial-benefits","total_num_programs":6,"total_obs":915314961.0},{"title":"Personal
-  Financial Health","permalink":"/category/income-security-and-social-services/personal-financial-health","total_num_programs":108,"total_obs":3408101245684.6797}]'
+sub_cats: '[{"title":"Burial Benefits","permalink":"/category/income-security-and-social-services/burial-benefits","total_num_programs":6,"total_obs":913515256.25},{"title":"Personal
+  Financial Health","permalink":"/category/income-security-and-social-services/personal-financial-health","total_num_programs":108,"total_obs":3406832878255.4}]'
 title: Income Security and Social Services
 total_num_agencies: 10
 total_num_applicant_types: 47
 total_num_programs: 114
 total_num_sub_cats: 2
-total_obs: 3409016560645.6797
+total_obs: 3407746393511.65
 ---

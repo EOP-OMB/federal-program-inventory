@@ -1,15 +1,15 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45787218122.42},{"title":"Department
-  of Housing and Urban Development","total_num_programs":12,"total_obs":11909164754.3},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":2433398092.98},{"title":"Federal
-  Communications Commission","total_num_programs":7,"total_obs":2339450128.0800004},{"title":"Department
-  of Commerce","total_num_programs":12,"total_obs":1447964070.46},{"title":"Department
-  of the Interior","total_num_programs":10,"total_obs":881102826.5300001},{"title":"Department
-  of Transportation","total_num_programs":6,"total_obs":772976155.0},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":679675901.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":4,"total_obs":269639145.0},{"title":"Denali
-  Commission","total_num_programs":3,"total_obs":167233946.78},{"title":"Department
-  of State","total_num_programs":2,"total_obs":972904.26},{"title":"Southeast Crescent
+agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45818187018.37},{"title":"Department
+  of Commerce","total_num_programs":12,"total_obs":18365808388.500004},{"title":"Department
+  of Housing and Urban Development","total_num_programs":12,"total_obs":11981981561.37},{"title":"Federal
+  Communications Commission","total_num_programs":7,"total_obs":3552896582.2700005},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":2463330996.93},{"title":"Department
+  of the Interior","total_num_programs":10,"total_obs":901682611.05},{"title":"Department
+  of Transportation","total_num_programs":6,"total_obs":753891228.8},{"title":"Department
+  of Agriculture","total_num_programs":15,"total_obs":710431906.14},{"title":"Appalachian
+  Regional Commission","total_num_programs":4,"total_obs":270193450.2},{"title":"Denali
+  Commission","total_num_programs":3,"total_obs":177858558.69},{"title":"Department
+  of State","total_num_programs":2,"total_obs":2240587.01},{"title":"Southeast Crescent
   Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"SOUTHWEST
   BORDER REGIONAL COMMISSION","total_num_programs":1,"total_obs":0.0},{"title":"Northern
   Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
@@ -171,11 +171,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -215,41 +210,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -267,98 +227,104 @@ parent_title: Community Development
 permalink: /category/community-development/community--area--and-regional-development
 programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of interest
   on public purpose State and local bonds","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":41110000000.0,"program_type":"tax_expenditure"},{"cfda":"14.228","permalink":"/program/14.228","title":"Community
+  of the Treasury","total_obs":41110000000.0,"program_type":"tax_expenditure"},{"cfda":"11.035","permalink":"/program/11.035","title":"Broadband
+  Equity, Access, and Deployment Program","popular_name":"Broadband Equity, Access,
+  and Deployment Program","agency":"Department of Commerce","total_obs":16936623108.2,"program_type":"assistance_listing"},{"cfda":"14.228","permalink":"/program/14.228","title":"Community
   Development Block Grants/State''s program and Non-Entitlement Grants in Hawaii","popular_name":"State
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":9812320253.0,"program_type":"assistance_listing"},{"cfda":"TC.101","permalink":"/program/TC.101","title":"Opportunity
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":9890082638.75,"program_type":"assistance_listing"},{"cfda":"TC.101","permalink":"/program/TC.101","title":"Opportunity
   Zones","popular_name":null,"agency":"Department of the Treasury","total_obs":3090000000.0,"program_type":"tax_expenditure"},{"cfda":"14.218","permalink":"/program/14.218","title":"Community
   Development Block Grants/Entitlement Grants","popular_name":"Community Development
   Block Grant Program for Entitlement Communities.","agency":"Department of Housing
-  and Urban Development","total_obs":1999178291.05,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
+  and Urban Development","total_obs":1997460497.38,"program_type":"assistance_listing"},{"cfda":"32.004","permalink":"/program/32.004","title":"UNIVERSAL
   SERVICE FUND - SCHOOLS and LIBRARIES","popular_name":"UNIVERSAL SERVICE - E-RATE","agency":"Federal
-  Communications Commission","total_obs":1980202841.5,"program_type":"assistance_listing"},{"cfda":"93.667","permalink":"/program/93.667","title":"Social
+  Communications Commission","total_obs":1925240319.84,"program_type":"assistance_listing"},{"cfda":"93.667","permalink":"/program/93.667","title":"Social
   Services Block Grant","popular_name":"SSBG Program, SSBG-Consolidated Block Grant
   (CBG) Program","agency":"Department of Health and Human Services","total_obs":1615283839.85,"program_type":"assistance_listing"},{"cfda":"TC.097","permalink":"/program/TC.097","title":"New
-  markets tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1310000000.0,"program_type":"tax_expenditure"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
+  markets tax credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1310000000.0,"program_type":"tax_expenditure"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
+  SERVICE FUND - HIGH COST","popular_name":"UNIVERSAL SERVICE FUND - HIGH COST","agency":"Federal
+  Communications Commission","total_obs":1151231473.44,"program_type":"assistance_listing"},{"cfda":"15.875","permalink":"/program/15.875","title":"Economic,
   Social, and Political Development of the Territories","popular_name":null,"agency":"Department
-  of the Interior","total_obs":878674244.46,"program_type":"assistance_listing"},{"cfda":"93.569","permalink":"/program/93.569","title":"Community
+  of the Interior","total_obs":867474507.36,"program_type":"assistance_listing"},{"cfda":"93.569","permalink":"/program/93.569","title":"Community
   Services Block Grant","popular_name":"CSBG","agency":"Department of Health and Human
-  Services","total_obs":751985414.0,"program_type":"assistance_listing"},{"cfda":"20.901","permalink":"/program/20.901","title":"Payments
-  for Essential Air Services","popular_name":"EAS","agency":"Department of Transportation","total_obs":644604338.5,"program_type":"assistance_listing"},{"cfda":"11.032","permalink":"/program/11.032","title":"State
+  Services","total_obs":765635414.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
+  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
+  Communications Commission","total_obs":748575396.0,"program_type":"assistance_listing"},{"cfda":"11.032","permalink":"/program/11.032","title":"State
   Digital Equity Planning and Capacity Grant","popular_name":"State Digital Equity
-  Planning and Capacity Grant","agency":"Department of Commerce","total_obs":550762408.33,"program_type":"assistance_listing"},{"cfda":"10.855","permalink":"/program/10.855","title":"Distance
+  Planning and Capacity Grant","agency":"Department of Commerce","total_obs":707085936.03,"program_type":"assistance_listing"},{"cfda":"20.901","permalink":"/program/20.901","title":"Payments
+  for Essential Air Services","popular_name":"EAS","agency":"Department of Transportation","total_obs":625519412.3,"program_type":"assistance_listing"},{"cfda":"10.855","permalink":"/program/10.855","title":"Distance
   Learning and Telemedicine Grants","popular_name":"DLT - Distance Learning and Telemedicine
   ","agency":"Department of Agriculture","total_obs":409936289.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
   Broadband Connectivity Program","popular_name":"Tribal Broadband Connectivity Program","agency":"Department
-  of Commerce","total_obs":360723050.0,"program_type":"assistance_listing"},{"cfda":"11.035","permalink":"/program/11.035","title":"Broadband
-  Equity, Access, and Deployment Program","popular_name":"Broadband Equity, Access,
-  and Deployment Program","agency":"Department of Commerce","total_obs":313977316.9,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
+  of Commerce","total_obs":365627846.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
+  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
+  of Commerce","total_obs":268654457.0,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
   Area Development","popular_name":"(Supplemental and Direct Grants)","agency":"Appalachian
-  Regional Commission","total_obs":253650562.0,"program_type":"assistance_listing"},{"cfda":"10.766","permalink":"/program/10.766","title":"Community
-  Facilities Loans and Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":226564752.0,"program_type":"assistance_listing"},{"cfda":"32.002","permalink":"/program/32.002","title":"UNIVERSAL
-  SERVICE FUND - HIGH COST","popular_name":"UNIVERSAL SERVICE FUND - HIGH COST","agency":"Federal
-  Communications Commission","total_obs":208056490.57,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
+  Regional Commission","total_obs":254204867.2,"program_type":"assistance_listing"},{"cfda":"10.766","permalink":"/program/10.766","title":"Community
+  Facilities Loans and Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":233310520.66,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
   and Ecosystems Sustainability, Tourist Opportunities, and Revived Economies of the
   Gulf Coast States","popular_name":"Gulf RESTORE - Direct Component and Centers of
-  Excellence Research Grants Programs","agency":"Department of the Treasury","total_obs":167530627.42,"program_type":"assistance_listing"},{"cfda":"90.100","permalink":"/program/90.100","title":"Denali
-  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":167233946.78,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
+  Excellence Research Grants Programs","agency":"Department of the Treasury","total_obs":201888218.37,"program_type":"assistance_listing"},{"cfda":"90.100","permalink":"/program/90.100","title":"Denali
+  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":177858558.69,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
   SERVICE FUND - RURAL HEALTH CARE","popular_name":"USAC - RURAL HEALTH CARE","agency":"Federal
-  Communications Commission","total_obs":137783130.17,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
-  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":112354589.0,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
+  Communications Commission","total_obs":112091160.82,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
-  of Housing and Urban Development","total_obs":78771300.0,"program_type":"assistance_listing"},{"cfda":"21.020","permalink":"/program/21.020","title":"Community
+  of Housing and Urban Development","total_obs":75757338.66,"program_type":"assistance_listing"},{"cfda":"21.020","permalink":"/program/21.020","title":"Community
   Development Financial Institutions Program","popular_name":"CDFI Program","agency":"Department
-  of the Treasury","total_obs":76027000.0,"program_type":"assistance_listing"},{"cfda":"20.940","permalink":"/program/20.940","title":"Reconnecting
+  of the Treasury","total_obs":72206686.0,"program_type":"assistance_listing"},{"cfda":"20.940","permalink":"/program/20.940","title":"Reconnecting
   Communities Pilot (RCP) Discretionary Grant Program","popular_name":"Reconnecting
   Communities Pilot Program","agency":"Department of Transportation","total_obs":67913960.0,"program_type":"assistance_listing"},{"cfda":"11.036","permalink":"/program/11.036","title":"Digital
   Equity Competitive Grant Program","popular_name":"DE Competitive Program","agency":"Department
-  of Commerce","total_obs":52881724.08,"program_type":"assistance_listing"},{"cfda":"20.945","permalink":"/program/20.945","title":"Asset
+  of Commerce","total_obs":52881724.08,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
+  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
+  of Health and Human Services","total_obs":50960912.74,"program_type":"assistance_listing"},{"cfda":"20.945","permalink":"/program/20.945","title":"Asset
   Concessions and Innovative Finance Assistance","popular_name":"Asset Concessions
   and Innovative Finance Assistance","agency":"Department of Transportation","total_obs":48462856.5,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
-  of Commerce","total_obs":37661332.15,"program_type":"assistance_listing"},{"cfda":"93.612","permalink":"/program/93.612","title":"Native
-  American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
-  of Health and Human Services","total_obs":36328009.79,"program_type":"assistance_listing"},{"cfda":"10.351","permalink":"/program/10.351","title":"Rural
+  of Commerce","total_obs":37661332.15,"program_type":"assistance_listing"},{"cfda":"10.351","permalink":"/program/10.351","title":"Rural
   Business Development Grant","popular_name":"RBDG","agency":"Department of Agriculture","total_obs":30009965.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
   Services Block Grant Discretionary Awards","popular_name":"Community Economic Development  &
   Rural Community Development Programs","agency":"Department of Health and Human Services","total_obs":29800829.34,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
   Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"Social Impact
-  Partnerships to Pay for Results Act (SIPPRA)","agency":"Department of the Treasury","total_obs":28389495.0,"program_type":"assistance_listing"},{"cfda":"11.302","permalink":"/program/11.302","title":"Economic
+  Partnerships to Pay for Results Act (SIPPRA)","agency":"Department of the Treasury","total_obs":28389495.0,"program_type":"assistance_listing"},{"cfda":"15.032","permalink":"/program/15.032","title":"Indian
+  Economic Development","popular_name":null,"agency":"Department of the Interior","total_obs":24195240.73,"program_type":"assistance_listing"},{"cfda":"10.752","permalink":"/program/10.752","title":"Rural
+  eConnectivity Pilot Program","popular_name":"ReConnect Program","agency":"Department
+  of Agriculture","total_obs":23625022.54,"program_type":"assistance_listing"},{"cfda":"11.302","permalink":"/program/11.302","title":"Economic
   Development Support for Planning Organizations","popular_name":"Planning Investments
-  and Comprehensive Economic Development Strategies","agency":"Department of Commerce","total_obs":19018250.0,"program_type":"assistance_listing"},{"cfda":"32.003","permalink":"/program/32.003","title":"UNIVERSAL
-  SERVICE FUND - LIFELINE","popular_name":"UNIVERSAL SERVICE - Lifeline","agency":"Federal
-  Communications Commission","total_obs":12352159.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
-  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
-  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":12000000.0,"program_type":"assistance_listing"},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
+  and Comprehensive Economic Development Strategies","agency":"Department of Commerce","total_obs":21034826.0,"program_type":"assistance_listing"},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
   for Small Community Air Service Development","popular_name":"Small Community Program
   or SCASDP Payments for Small Community Air Service Development","agency":"Department
-  of Transportation","total_obs":11995000.0,"program_type":"assistance_listing"},{"cfda":"10.863","permalink":"/program/10.863","title":"Community
+  of Transportation","total_obs":11995000.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
+  Capacity Building for Community Development and Affordable Housing Grants","popular_name":"Rural
+  Capacity Building Program","agency":"Department of Housing and Urban Development","total_obs":11983801.12,"program_type":"assistance_listing"},{"cfda":"10.863","permalink":"/program/10.863","title":"Community
   Connect Grant Program","popular_name":"Community Connect","agency":"Department of
   Agriculture","total_obs":11569634.0,"program_type":"assistance_listing"},{"cfda":"14.225","permalink":"/program/14.225","title":"Community
   Development Block Grants/Special Purpose Grants/Insular Areas","popular_name":"Insular
-  CDBG","agency":"Department of Housing and Urban Development","total_obs":10136447.0,"program_type":"assistance_listing"},{"cfda":"23.009","permalink":"/program/23.009","title":"Appalachian
+  CDBG","agency":"Department of Housing and Urban Development","total_obs":10020114.37,"program_type":"assistance_listing"},{"cfda":"23.009","permalink":"/program/23.009","title":"Appalachian
   Local Development District Assistance","popular_name":"(LDD)","agency":"Appalachian
-  Regional Commission","total_obs":9333048.0,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
+  Regional Commission","total_obs":9333048.0,"program_type":"assistance_listing"},{"cfda":"15.542","permalink":"/program/15.542","title":"Arizona
+  Water Settlement Act of 2004","popular_name":"Arizona Water Settlement Act","agency":"Department
+  of the Interior","total_obs":8639115.41,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
   Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
   Research)","agency":"Appalachian Regional Commission","total_obs":6655535.0,"program_type":"assistance_listing"},{"cfda":"21.012","permalink":"/program/21.012","title":"Native
-  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":5271000.0,"program_type":"assistance_listing"},{"cfda":"10.711","permalink":"/program/10.711","title":"Forest
+  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":5271000.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":2399692.0,"program_type":"assistance_listing"},{"cfda":"19.665","permalink":"/program/19.665","title":"Cyberspace
+  and Digital Policy","popular_name":null,"agency":"Department of State","total_obs":2250000.0,"program_type":"assistance_listing"},{"cfda":"93.239","permalink":"/program/93.239","title":"Policy
+  Research and Evaluation Grants","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":1650001.0,"program_type":"assistance_listing"},{"cfda":"10.711","permalink":"/program/10.711","title":"Forest
   Service 638 Authority for Tribes","popular_name":"TFPA","agency":"Department of
-  Agriculture","total_obs":1595261.0,"program_type":"assistance_listing"},{"cfda":"32.009","permalink":"/program/32.009","title":"Emergency
-  Connectivity Fund Program","popular_name":"Emergency Connectivity Fund Program","agency":"Federal
-  Communications Commission","total_obs":1055506.84,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
+  Agriculture","total_obs":1595261.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
   Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":1009797.0,"program_type":"assistance_listing"},{"cfda":"19.665","permalink":"/program/19.665","title":"Cyberspace
-  and Digital Policy","popular_name":null,"agency":"Department of State","total_obs":972904.26,"program_type":"assistance_listing"},{"cfda":"15.542","permalink":"/program/15.542","title":"Arizona
-  Water Settlement Act of 2004","popular_name":"Arizona Water Settlement Act","agency":"Department
-  of the Interior","total_obs":847795.14,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":585400.0,"program_type":"assistance_listing"},{"cfda":"15.032","permalink":"/program/15.032","title":"Indian
-  Economic Development","popular_name":null,"agency":"Department of the Interior","total_obs":570989.93,"program_type":"assistance_listing"},{"cfda":"15.258","permalink":"/program/15.258","title":"Abandoned
+  of the Interior","total_obs":1009797.0,"program_type":"assistance_listing"},{"cfda":"10.851","permalink":"/program/10.851","title":"Rural
+  Telecommunications Loans","popular_name":"Telecommunications Infrastructure Loan
+  Program","agency":"Department of Agriculture","total_obs":642814.44,"program_type":"assistance_listing"},{"cfda":"21.035","permalink":"/program/21.035","title":"Community
+  Development Financial Institutions Program Loan","popular_name":"CDFI Program Loan","agency":"Department
+  of the Treasury","total_obs":431619.0,"program_type":"assistance_listing"},{"cfda":"15.541","permalink":"/program/15.541","title":"Colorado
+  River Basin Act of 1968","popular_name":"Colorado River Basin Projects Act","agency":"Department
+  of the Interior","total_obs":322000.0,"program_type":"assistance_listing"},{"cfda":"15.133","permalink":"/program/15.133","title":"Native
+  American Business Development Institute","popular_name":"(NABDI)","agency":"Department
+  of the Interior","total_obs":41950.55,"program_type":"assistance_listing"},{"cfda":"15.258","permalink":"/program/15.258","title":"Abandoned
   Mine Land Economic Revitalization (AMLER) Program","popular_name":"AMLER Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.011","permalink":"/program/32.011","title":"Affordable
-  Connectivity Outreach Grant Program","popular_name":"Affordable Connectivity Outreach
-  Grant Program","agency":"Federal Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.008","permalink":"/program/32.008","title":"Affordable
-  Connectivity Program","popular_name":"Affordable Connectivity Program","agency":"Federal
-  Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.243","permalink":"/program/10.243","title":"American
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.243","permalink":"/program/10.243","title":"American
   Rescue Plan Centers of Excellence for Meat and Poultry Processing and Food Safety
   Research and Innovation Phase III","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.082","permalink":"/program/15.082","title":"American
   Samoa Operations","popular_name":"American Samoa Operations","agency":"Department
@@ -372,55 +338,35 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   OF FREE ASSOCIATION","popular_name":"Compact funding","agency":"Department of the
   Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.083","permalink":"/program/15.083","title":"Capital
   Improvement Program","popular_name":"Capital Improvement Program","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.541","permalink":"/program/15.541","title":"Colorado
-  River Basin Act of 1968","popular_name":"Colorado River Basin Projects Act","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.248","permalink":"/program/14.248","title":"Community
   Development Block Grants Section 108 Loan Guarantees","popular_name":"(Section 108)","agency":"Department
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.014","permalink":"/program/21.014","title":"Community
   Development Financial Institutions Bond Guarantee Program","popular_name":"Community
   Development Financial Institutions Bond Guarantee Program","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.035","permalink":"/program/21.035","title":"Community
-  Development Financial Institutions Program Loan","popular_name":"CDFI Program Loan","agency":"Department
   of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
   Economic Adjustment Assistance for Realignment or Closure of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
-  Minority Communities Pilot Program","popular_name":null,"agency":"Department of
-  Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
   Regional Authority","popular_name":"(Delta Program)","agency":"Delta Regional Authority","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
   Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.251","permalink":"/program/14.251","title":"Economic
   Development Initiative, Community Project Funding, and Miscellaneous grants","popular_name":"Congressional
-  Grants","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.663","permalink":"/program/19.663","title":"Global
-  Telecommunications and Emerging Technology Training","popular_name":"GTETT","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.239","permalink":"/program/10.239","title":"Human
-  Health and Soil Health Study","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.033","permalink":"/program/11.033","title":"Middle
-  Mile (Broadband) Grant Program","popular_name":"Middle Mile Grant Program","agency":"Department
-  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.133","permalink":"/program/15.133","title":"Native
-  American Business Development Institute","popular_name":"(NABDI)","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.256","permalink":"/program/14.256","title":"Neighborhood
+  Grants","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.239","permalink":"/program/10.239","title":"Human
+  Health and Soil Health Study","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.256","permalink":"/program/14.256","title":"Neighborhood
   Stabilization Program (Recovery Act Funded)","popular_name":null,"agency":"Department
-  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
-  E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
-  Fellowship Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
+  of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.601","permalink":"/program/90.601","title":"Northern
   Border Regional Development","popular_name":"Direct Grants","agency":"Northern Border
   Regional Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.893","permalink":"/program/14.893","title":"Office
   of Native American Programs Training and Technical Assistance for Indian Housing
   Block Grant Program","popular_name":null,"agency":"Department of Housing and Urban
   Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.726","permalink":"/program/10.726","title":"Opal
   Creek Wilderness Economic Grant Program","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.239","permalink":"/program/93.239","title":"Policy
-  Research and Evaluation Grants","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.312","permalink":"/program/11.312","title":"Research
   and Evaluation Program","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.886","permalink":"/program/10.886","title":"Rural
   Broadband Access Loans","popular_name":"Farm Bill Broadband Loans & Loan Guarantees","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.446","permalink":"/program/10.446","title":"Rural
   Community Development Initiative","popular_name":"RCDI","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.851","permalink":"/program/10.851","title":"Rural
-  Telecommunications Loans","popular_name":"Telecommunications Infrastructure Loan
-  Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.943","permalink":"/program/20.943","title":"Rural
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.943","permalink":"/program/20.943","title":"Rural
   and Tribal Assistance Pilot Program","popular_name":"Rural and Tribal Assistance
-  Pilot Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.752","permalink":"/program/10.752","title":"Rural
-  eConnectivity Pilot Program","popular_name":"ReConnect Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
+  Pilot Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.252","permalink":"/program/14.252","title":"Section
   4 Capacity Building for Community Development and Affordable Housing","popular_name":"Section
   4 Capacity Building ","agency":"Department of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.199","permalink":"/program/90.199","title":"Shared
   Services","popular_name":"Shared Services","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.871","permalink":"/program/10.871","title":"Socially-Disadvantaged
@@ -431,14 +377,28 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   SEID Program","agency":"SOUTHWEST BORDER REGIONAL COMMISSION","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.942","permalink":"/program/20.942","title":"Thriving
   Communities Program Capacity Builders Cooperative Agreements","popular_name":null,"agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"TC.100","permalink":"/program/TC.100","title":"Tribal
-  Economic Development Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"14.250","permalink":"/program/14.250","title":"Rural
+  Economic Development Bonds","popular_name":null,"agency":"Department of the Treasury","total_obs":0.0,"program_type":"tax_expenditure"},{"cfda":"19.663","permalink":"/program/19.663","title":"Global
+  Telecommunications and Emerging Technology Training","popular_name":"GTETT","agency":"Department
+  of State","total_obs":-9412.99,"program_type":"assistance_listing"},{"cfda":"14.250","permalink":"/program/14.250","title":"Rural
   Housing and Economic Development","popular_name":"Rural Housing and Economic Development","agency":"Department
-  of Housing and Urban Development","total_obs":-4251.0,"program_type":"assistance_listing"},{"cfda":"14.246","permalink":"/program/14.246","title":"Community
+  of Housing and Urban Development","total_obs":-85542.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
+  E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
+  Fellowship Program","agency":"Department of Agriculture","total_obs":-257600.5,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
+  Minority Communities Pilot Program","popular_name":null,"agency":"Department of
+  Commerce","total_obs":-1106440.33,"program_type":"assistance_listing"},{"cfda":"32.008","permalink":"/program/32.008","title":"Affordable
+  Connectivity Program","popular_name":"Affordable Connectivity Program","agency":"Federal
+  Communications Commission","total_obs":-2535419.97,"program_type":"assistance_listing"},{"cfda":"14.246","permalink":"/program/14.246","title":"Community
   Development Block Grants/Brownfields Economic Development Initiative","popular_name":"(BEDI;
-  Section 108)","agency":"Department of Housing and Urban Development","total_obs":-3237285.75,"program_type":"assistance_listing"}]'
+  Section 108)","agency":"Department of Housing and Urban Development","total_obs":-3237286.91,"program_type":"assistance_listing"},{"cfda":"11.033","permalink":"/program/11.033","title":"Middle
+  Mile (Broadband) Grant Program","popular_name":"Middle Mile Grant Program","agency":"Department
+  of Commerce","total_obs":-25054092.63,"program_type":"assistance_listing"},{"cfda":"32.011","permalink":"/program/32.011","title":"Affordable
+  Connectivity Outreach Grant Program","popular_name":"Affordable Connectivity Outreach
+  Grant Program","agency":"Federal Communications Commission","total_obs":-61439597.97,"program_type":"assistance_listing"},{"cfda":"32.009","permalink":"/program/32.009","title":"Emergency
+  Connectivity Fund Program","popular_name":"Emergency Connectivity Fund Program","agency":"Federal
+  Communications Commission","total_obs":-320266749.89,"program_type":"assistance_listing"}]'
 title: Community, Area, and Regional Development
 total_num_agencies: 16
 total_num_applicant_types: 70
 total_num_programs: 91
-total_obs: 66688796046.81
+total_obs: 84998502889.32999
 ---

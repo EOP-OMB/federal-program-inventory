@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Community and Regional Development
 cfda: TC.099
 fiscal_year: '2025'
 grants_url: null

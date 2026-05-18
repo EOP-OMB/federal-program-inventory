@@ -1,8 +1,8 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":12,"total_obs":145656623.82},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":23282000.0},{"title":"Department of
-  Energy","total_num_programs":2,"total_obs":9888729.79},{"title":"Department of Homeland
-  Security","total_num_programs":3,"total_obs":0.0}]'
+agencies: '[{"title":"Department of State","total_num_programs":12,"total_obs":348943084.01},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":23246431.33},{"title":"Department of
+  Energy","total_num_programs":2,"total_obs":9354092.79},{"title":"Department of Homeland
+  Security","total_num_programs":3,"total_obs":-887448613.94}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
   of higher education and hospitals)","total_num_programs":12},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Other
@@ -144,11 +144,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -188,41 +183,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -239,37 +199,37 @@ parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/border-security
 programs: '[{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons Removal
-  and Abatement","popular_name":"(PM/WRA)","agency":"Department of State","total_obs":47892115.0,"program_type":"assistance_listing"},{"cfda":"19.019","permalink":"/program/19.019","title":"International
+  and Abatement","popular_name":"(PM/WRA)","agency":"Department of State","total_obs":170186419.63,"program_type":"assistance_listing"},{"cfda":"19.019","permalink":"/program/19.019","title":"International
   Programs to Combat Human Trafficking","popular_name":"International Programs to
-  Combat Human Trafficking","agency":"Department of State","total_obs":34000000.0,"program_type":"assistance_listing"},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
-  Crime","popular_name":null,"agency":"Department of State","total_obs":33434980.45,"program_type":"assistance_listing"},{"cfda":"19.701","permalink":"/program/19.701","title":"Global
-  Counterterrorism Programs","popular_name":"Countering Terrorism and Violent Extremism","agency":"Department
-  of State","total_obs":24596698.28,"program_type":"assistance_listing"},{"cfda":"17.273","permalink":"/program/17.273","title":"Temporary
-  Labor Certification for Foreign Workers","popular_name":null,"agency":"Department
-  of Labor","total_obs":23282000.0,"program_type":"assistance_listing"},{"cfda":"81.210","permalink":"/program/81.210","title":"Global
-  Material Security","popular_name":null,"agency":"Department of Energy","total_obs":6535671.43,"program_type":"assistance_listing"},{"cfda":"81.505","permalink":"/program/81.505","title":"Nonproliferation
-  and Arms Control","popular_name":null,"agency":"Department of Energy","total_obs":3353058.36,"program_type":"assistance_listing"},{"cfda":"19.224","permalink":"/program/19.224","title":"Nonproliferation
-  and Disarmament Fund","popular_name":"(NDF)","agency":"Department of State","total_obs":3328174.09,"program_type":"assistance_listing"},{"cfda":"19.901","permalink":"/program/19.901","title":"Export
-  Control and Related Border Security","popular_name":"Export Control and Related
-  Border Security (EXBS) Program","agency":"Department of State","total_obs":2404656.0,"program_type":"assistance_listing"},{"cfda":"97.154","permalink":"/program/97.154","title":"Citizenship
-  Integration Training Academy","popular_name":null,"agency":"Department of Homeland
-  Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
-  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
-  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
-  Justice and Accountability Programming","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.706","permalink":"/program/19.706","title":"Partnership
-  for Regional East Africa Counterterrorism","popular_name":"Partnership for Regional
-  East Africa Counterterrorism (PREACT)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement
+  Combat Human Trafficking","agency":"Department of State","total_obs":53032758.0,"program_type":"assistance_listing"},{"cfda":"19.018","permalink":"/program/19.018","title":"Resettlement
   Support Centers (RSCs) for U.S. Refugee Resettlement","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.141","permalink":"/program/97.141","title":"Shelter
-  and Services Program","popular_name":null,"agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.149","permalink":"/program/97.149","title":"Shelter
+  of State","total_obs":51843553.6,"program_type":"assistance_listing"},{"cfda":"19.705","permalink":"/program/19.705","title":"Trans-National
+  Crime","popular_name":null,"agency":"Department of State","total_obs":51621654.19,"program_type":"assistance_listing"},{"cfda":"19.701","permalink":"/program/19.701","title":"Global
+  Counterterrorism Programs","popular_name":"Countering Terrorism and Violent Extremism","agency":"Department
+  of State","total_obs":31804877.44,"program_type":"assistance_listing"},{"cfda":"17.273","permalink":"/program/17.273","title":"Temporary
+  Labor Certification for Foreign Workers","popular_name":null,"agency":"Department
+  of Labor","total_obs":23246431.33,"program_type":"assistance_listing"},{"cfda":"81.210","permalink":"/program/81.210","title":"Global
+  Material Security","popular_name":null,"agency":"Department of Energy","total_obs":6535671.43,"program_type":"assistance_listing"},{"cfda":"81.505","permalink":"/program/81.505","title":"Nonproliferation
+  and Arms Control","popular_name":null,"agency":"Department of Energy","total_obs":2818421.36,"program_type":"assistance_listing"},{"cfda":"97.154","permalink":"/program/97.154","title":"Citizenship
+  Integration Training Academy","popular_name":null,"agency":"Department of Homeland
+  Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
+  Justice and Accountability Programming","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.149","permalink":"/program/97.149","title":"Shelter
   and Services Program \u2013 Competitive","popular_name":"SSP-C","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.222","permalink":"/program/19.222","title":"Trans-Sahara
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
+  Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":-0.01,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
+  Defense Reform Program","popular_name":"GDRP","agency":"Department of State","total_obs":-36966.57,"program_type":"assistance_listing"},{"cfda":"19.222","permalink":"/program/19.222","title":"Trans-Sahara
   Counterterrorism Partnership (TSCTP)","popular_name":"Trans-Sahara Counterterrorism
-  Partnership (TSCTP)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Partnership (TSCTP)","agency":"Department of State","total_obs":-197269.7,"program_type":"assistance_listing"},{"cfda":"19.706","permalink":"/program/19.706","title":"Partnership
+  for Regional East Africa Counterterrorism","popular_name":"Partnership for Regional
+  East Africa Counterterrorism (PREACT)","agency":"Department of State","total_obs":-246802.94,"program_type":"assistance_listing"},{"cfda":"19.224","permalink":"/program/19.224","title":"Nonproliferation
+  and Disarmament Fund","popular_name":"(NDF)","agency":"Department of State","total_obs":-365968.21,"program_type":"assistance_listing"},{"cfda":"19.901","permalink":"/program/19.901","title":"Export
+  Control and Related Border Security","popular_name":"Export Control and Related
+  Border Security (EXBS) Program","agency":"Department of State","total_obs":-8699171.42,"program_type":"assistance_listing"},{"cfda":"97.141","permalink":"/program/97.141","title":"Shelter
+  and Services Program","popular_name":null,"agency":"Department of Homeland Security","total_obs":-887448613.94,"program_type":"assistance_listing"}]'
 title: Border Security
 total_num_agencies: 4
 total_num_applicant_types: 49
 total_num_programs: 18
-total_obs: 178827353.61
+total_obs: -505905005.81
 ---

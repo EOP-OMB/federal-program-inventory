@@ -7,7 +7,6 @@ assistance_types:
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Community and Regional Development
 - Transportation - Multi–modal Transportation
 cfda: TC.094
 fiscal_year: '2025'

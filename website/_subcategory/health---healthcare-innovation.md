@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":175,"total_obs":9018151356.95},{"title":"Department
-  of Defense","total_num_programs":4,"total_obs":1445292151.8400002},{"title":"Department
-  of Veterans Affairs","total_num_programs":1,"total_obs":2886280.0}]'
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":175,"total_obs":35885716227.14},{"title":"Department
+  of Defense","total_num_programs":4,"total_obs":1622655094.0300002},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":7084699.97}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":117},{"title":"For-Profit
   Organization","total_num_programs":103},{"title":"Not-for-Profit Organization","total_num_programs":99},{"title":"Local","total_num_programs":63},{"title":"State","total_num_programs":61},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":60},{"title":"U.S.
@@ -160,11 +160,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -204,41 +199,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -254,122 +214,128 @@ fiscal_year: '2025'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/healthcare-innovation
-programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Medical
-  Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":1202762748.89,"program_type":"assistance_listing"},{"cfda":"93.855","permalink":"/program/93.855","title":"Allergy
-  and Infectious Diseases Research","popular_name":"National Institutes of Allergy
-  and Infectious Diseases","agency":"Department of Health and Human Services","total_obs":1067626861.46,"program_type":"assistance_listing"},{"cfda":"93.866","permalink":"/program/93.866","title":"Aging
-  Research","popular_name":"(Aging)","agency":"Department of Health and Human Services","total_obs":957350111.15,"program_type":"assistance_listing"},{"cfda":"93.837","permalink":"/program/93.837","title":"Cardiovascular
-  Diseases Research","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":686736005.57,"program_type":"assistance_listing"},{"cfda":"93.859","permalink":"/program/93.859","title":"Biomedical
+programs: '[{"cfda":"93.855","permalink":"/program/93.855","title":"Allergy and Infectious
+  Diseases Research","popular_name":"National Institutes of Allergy and Infectious
+  Diseases","agency":"Department of Health and Human Services","total_obs":4224792339.47,"program_type":"assistance_listing"},{"cfda":"93.866","permalink":"/program/93.866","title":"Aging
+  Research","popular_name":"(Aging)","agency":"Department of Health and Human Services","total_obs":3894582057.06,"program_type":"assistance_listing"},{"cfda":"93.859","permalink":"/program/93.859","title":"Biomedical
   Research and Research Training","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":617740092.66,"program_type":"assistance_listing"},{"cfda":"93.384","permalink":"/program/93.384","title":"ADVANCED
-  RESEARCH PROJECTS AGENCY for HEALTH (ARPA-H)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":570465005.0,"program_type":"assistance_listing"},{"cfda":"93.242","permalink":"/program/93.242","title":"Mental
-  Health Research Grants","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":537982275.87,"program_type":"assistance_listing"},{"cfda":"93.853","permalink":"/program/93.853","title":"Extramural
-  Research Programs in the Neurosciences and Neurological Disorders","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":471633356.31,"program_type":"assistance_listing"},{"cfda":"93.310","permalink":"/program/93.310","title":"Trans-NIH
-  Research Support","popular_name":"NIH OD Research Support","agency":"Department
-  of Health and Human Services","total_obs":459583572.31,"program_type":"assistance_listing"},{"cfda":"93.279","permalink":"/program/93.279","title":"Drug
-  Use and Addiction Research Programs","popular_name":null,"agency":"Department of
-  Health and Human Services","total_obs":436775608.35,"program_type":"assistance_listing"},{"cfda":"93.847","permalink":"/program/93.847","title":"Diabetes,
+  and Human Services","total_obs":3144557955.76,"program_type":"assistance_listing"},{"cfda":"93.837","permalink":"/program/93.837","title":"Cardiovascular
+  Diseases Research","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":3099171656.04,"program_type":"assistance_listing"},{"cfda":"93.847","permalink":"/program/93.847","title":"Diabetes,
   Digestive, and Kidney Diseases Extramural Research","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":413992666.55,"program_type":"assistance_listing"},{"cfda":"93.865","permalink":"/program/93.865","title":"Child
+  of Health and Human Services","total_obs":2027328665.73,"program_type":"assistance_listing"},{"cfda":"93.853","permalink":"/program/93.853","title":"Extramural
+  Research Programs in the Neurosciences and Neurological Disorders","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":1842404953.65,"program_type":"assistance_listing"},{"cfda":"93.242","permalink":"/program/93.242","title":"Mental
+  Health Research Grants","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":1798400088.44,"program_type":"assistance_listing"},{"cfda":"93.279","permalink":"/program/93.279","title":"Drug
+  Use and Addiction Research Programs","popular_name":null,"agency":"Department of
+  Health and Human Services","total_obs":1544388428.52,"program_type":"assistance_listing"},{"cfda":"93.310","permalink":"/program/93.310","title":"Trans-NIH
+  Research Support","popular_name":"NIH OD Research Support","agency":"Department
+  of Health and Human Services","total_obs":1418781533.37,"program_type":"assistance_listing"},{"cfda":"93.865","permalink":"/program/93.865","title":"Child
   Health and Human Development Extramural Research","popular_name":"Child Health and
-  Human Development\r\n","agency":"Department of Health and Human Services","total_obs":330454924.46,"program_type":"assistance_listing"},{"cfda":"93.395","permalink":"/program/93.395","title":"Cancer
+  Human Development\r\n","agency":"Department of Health and Human Services","total_obs":1299574263.8,"program_type":"assistance_listing"},{"cfda":"12.420","permalink":"/program/12.420","title":"Military
+  Medical Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":1275818505.95,"program_type":"assistance_listing"},{"cfda":"93.395","permalink":"/program/93.395","title":"Cancer
   Treatment Research","popular_name":"Cancer Treatment Research","agency":"Department
-  of Health and Human Services","total_obs":295408127.37,"program_type":"assistance_listing"},{"cfda":"12.750","permalink":"/program/12.750","title":"Uniformed
-  Services University Medical Research Projects","popular_name":"Uniformed Services
-  University (USU)","agency":"Department of Defense","total_obs":242529402.95,"program_type":"assistance_listing"},{"cfda":"93.396","permalink":"/program/93.396","title":"Cancer
-  Biology Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":184297445.0,"program_type":"assistance_listing"},{"cfda":"93.393","permalink":"/program/93.393","title":"Cancer
+  of Health and Human Services","total_obs":1244761466.15,"program_type":"assistance_listing"},{"cfda":"93.396","permalink":"/program/93.396","title":"Cancer
+  Biology Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":908866575.93,"program_type":"assistance_listing"},{"cfda":"93.393","permalink":"/program/93.393","title":"Cancer
   Cause and Prevention Research","popular_name":"Cancer Cause and Prevention Research","agency":"Department
-  of Health and Human Services","total_obs":156561302.0,"program_type":"assistance_listing"},{"cfda":"93.867","permalink":"/program/93.867","title":"Vision
-  Research","popular_name":"NEI","agency":"Department of Health and Human Services","total_obs":148180878.57,"program_type":"assistance_listing"},{"cfda":"93.394","permalink":"/program/93.394","title":"Cancer
-  Detection and Diagnosis Research","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":138071130.0,"program_type":"assistance_listing"},{"cfda":"93.113","permalink":"/program/93.113","title":"Environmental
-  Health","popular_name":"National Institute of Environmental Health Sciences","agency":"Department
-  of Health and Human Services","total_obs":136415100.48,"program_type":"assistance_listing"},{"cfda":"93.350","permalink":"/program/93.350","title":"National
+  of Health and Human Services","total_obs":836521770.68,"program_type":"assistance_listing"},{"cfda":"93.867","permalink":"/program/93.867","title":"Vision
+  Research","popular_name":"NEI","agency":"Department of Health and Human Services","total_obs":691926091.37,"program_type":"assistance_listing"},{"cfda":"93.384","permalink":"/program/93.384","title":"ADVANCED
+  RESEARCH PROJECTS AGENCY for HEALTH (ARPA-H)","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":651793120.0,"program_type":"assistance_listing"},{"cfda":"93.350","permalink":"/program/93.350","title":"National
   Center for Advancing Translational Sciences","popular_name":"NCATS","agency":"Department
-  of Health and Human Services","total_obs":129115348.8,"program_type":"assistance_listing"},{"cfda":"93.846","permalink":"/program/93.846","title":"Arthritis,
+  of Health and Human Services","total_obs":626587858.77,"program_type":"assistance_listing"},{"cfda":"93.394","permalink":"/program/93.394","title":"Cancer
+  Detection and Diagnosis Research","popular_name":null,"agency":"Department of Health
+  and Human Services","total_obs":592179161.48,"program_type":"assistance_listing"},{"cfda":"93.397","permalink":"/program/93.397","title":"Cancer
+  Centers Support Grants","popular_name":"Cancer Centers","agency":"Department of
+  Health and Human Services","total_obs":570784881.87,"program_type":"assistance_listing"},{"cfda":"93.846","permalink":"/program/93.846","title":"Arthritis,
   Musculoskeletal and Skin Diseases Research","popular_name":"NIAMS","agency":"Department
-  of Health and Human Services","total_obs":123205023.55,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
-  and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":114480059.05,"program_type":"assistance_listing"},{"cfda":"93.351","permalink":"/program/93.351","title":"Research
-  Infrastructure Programs","popular_name":"Comparative Medicine, Instrumentation,
-  Research Infrastructure","agency":"Department of Health and Human Services","total_obs":112881120.0,"program_type":"assistance_listing"},{"cfda":"93.173","permalink":"/program/93.173","title":"Research
-  Related to Deafness and Communication Disorders","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":111640840.19,"program_type":"assistance_listing"},{"cfda":"93.273","permalink":"/program/93.273","title":"Alcohol
-  Research Programs","popular_name":"Alcohol Research Programs","agency":"Department
-  of Health and Human Services","total_obs":104595839.96,"program_type":"assistance_listing"},{"cfda":"93.121","permalink":"/program/93.121","title":"Oral
-  Diseases and Disorders Research","popular_name":"Dental, Oral and Craniofacial Research.","agency":"Department
-  of Health and Human Services","total_obs":104565031.33,"program_type":"assistance_listing"},{"cfda":"93.172","permalink":"/program/93.172","title":"Human
-  Genome Research","popular_name":"National Human Genome Research Institute","agency":"Department
-  of Health and Human Services","total_obs":95987272.0,"program_type":"assistance_listing"},{"cfda":"93.352","permalink":"/program/93.352","title":"Construction
-  Support","popular_name":"Extramural Construction; Biomedical Research Facilities","agency":"Department
-  of Health and Human Services","total_obs":78559958.0,"program_type":"assistance_listing"},{"cfda":"93.103","permalink":"/program/93.103","title":"Food
-  and Drug Administration Research","popular_name":"General Grant Funding","agency":"Department
-  of Health and Human Services","total_obs":75779672.0,"program_type":"assistance_listing"},{"cfda":"93.361","permalink":"/program/93.361","title":"Nursing
-  Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":52230477.0,"program_type":"assistance_listing"},{"cfda":"93.307","permalink":"/program/93.307","title":"Minority
+  of Health and Human Services","total_obs":536683106.29,"program_type":"assistance_listing"},{"cfda":"93.113","permalink":"/program/93.113","title":"Environmental
+  Health","popular_name":"National Institute of Environmental Health Sciences","agency":"Department
+  of Health and Human Services","total_obs":463800122.96,"program_type":"assistance_listing"},{"cfda":"93.307","permalink":"/program/93.307","title":"Minority
   Health and Health Disparities Research","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":46876314.0,"program_type":"assistance_listing"},{"cfda":"93.372","permalink":"/program/93.372","title":"21st
-  Century Cures Act -\tBrain Research through Advancing Innovative Neurotechnologies","popular_name":"The
-  BRAIN Initiative","agency":"Department of Health and Human Services","total_obs":36153500.03,"program_type":"assistance_listing"},{"cfda":"93.068","permalink":"/program/93.068","title":"Chronic
-  Diseases:  Research, Control, and Prevention","popular_name":"Research, Control,
-  and Prevention","agency":"Department of Health and Human Services","total_obs":29488588.0,"program_type":"assistance_listing"},{"cfda":"93.213","permalink":"/program/93.213","title":"Research
+  of Health and Human Services","total_obs":453742113.7,"program_type":"assistance_listing"},{"cfda":"93.273","permalink":"/program/93.273","title":"Alcohol
+  Research Programs","popular_name":"Alcohol Research Programs","agency":"Department
+  of Health and Human Services","total_obs":448160096.61,"program_type":"assistance_listing"},{"cfda":"93.172","permalink":"/program/93.172","title":"Human
+  Genome Research","popular_name":"National Human Genome Research Institute","agency":"Department
+  of Health and Human Services","total_obs":441981397.75,"program_type":"assistance_listing"},{"cfda":"93.173","permalink":"/program/93.173","title":"Research
+  Related to Deafness and Communication Disorders","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":417225398.73,"program_type":"assistance_listing"},{"cfda":"93.121","permalink":"/program/93.121","title":"Oral
+  Diseases and Disorders Research","popular_name":"Dental, Oral and Craniofacial Research.","agency":"Department
+  of Health and Human Services","total_obs":379092049.82,"program_type":"assistance_listing"},{"cfda":"93.286","permalink":"/program/93.286","title":"Discovery
+  and Applied Research for Technological Innovations to Improve Human Health","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":342866875.54,"program_type":"assistance_listing"},{"cfda":"12.750","permalink":"/program/12.750","title":"Uniformed
+  Services University Medical Research Projects","popular_name":"Uniformed Services
+  University (USU)","agency":"Department of Defense","total_obs":340859155.42,"program_type":"assistance_listing"},{"cfda":"93.351","permalink":"/program/93.351","title":"Research
+  Infrastructure Programs","popular_name":"Comparative Medicine, Instrumentation,
+  Research Infrastructure","agency":"Department of Health and Human Services","total_obs":295283716.14,"program_type":"assistance_listing"},{"cfda":"93.103","permalink":"/program/93.103","title":"Food
+  and Drug Administration Research","popular_name":"General Grant Funding","agency":"Department
+  of Health and Human Services","total_obs":213021239.58,"program_type":"assistance_listing"},{"cfda":"93.399","permalink":"/program/93.399","title":"Cancer
+  Control","popular_name":"Cancer Control Grants","agency":"Department of Health and
+  Human Services","total_obs":173950358.2,"program_type":"assistance_listing"},{"cfda":"93.361","permalink":"/program/93.361","title":"Nursing
+  Research","popular_name":null,"agency":"Department of Health and Human Services","total_obs":147877656.13,"program_type":"assistance_listing"},{"cfda":"93.433","permalink":"/program/93.433","title":"ACL
+  National Institute on Disability, Independent Living, and Rehabilitation Research","popular_name":"(NIDILRR)","agency":"Department
+  of Health and Human Services","total_obs":112029766.01,"program_type":"assistance_listing"},{"cfda":"93.353","permalink":"/program/93.353","title":"21st
+  Century Cures Act - Beau Biden Cancer Moonshot","popular_name":"moonshot","agency":"Department
+  of Health and Human Services","total_obs":107961620.39,"program_type":"assistance_listing"},{"cfda":"93.213","permalink":"/program/93.213","title":"Research
   and Training in Complementary and Integrative Health","popular_name":"National Center
   for Complementary and Integrative Health","agency":"Department of Health and Human
-  Services","total_obs":27169601.49,"program_type":"assistance_listing"},{"cfda":"93.433","permalink":"/program/93.433","title":"ACL
-  National Institute on Disability, Independent Living, and Rehabilitation Research","popular_name":"(NIDILRR)","agency":"Department
-  of Health and Human Services","total_obs":24761329.85,"program_type":"assistance_listing"},{"cfda":"93.879","permalink":"/program/93.879","title":"Medical
+  Services","total_obs":107487095.51,"program_type":"assistance_listing"},{"cfda":"93.262","permalink":"/program/93.262","title":"Occupational
+  Safety and Health Program","popular_name":"Occupational Safety and Health Program","agency":"Department
+  of Health and Human Services","total_obs":104974274.25,"program_type":"assistance_listing"},{"cfda":"93.226","permalink":"/program/93.226","title":"Research
+  on Healthcare Costs, Quality and Outcomes","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":90836624.13,"program_type":"assistance_listing"},{"cfda":"93.372","permalink":"/program/93.372","title":"21st
+  Century Cures Act -\tBrain Research through Advancing Innovative Neurotechnologies","popular_name":"The
+  BRAIN Initiative","agency":"Department of Health and Human Services","total_obs":84223812.13,"program_type":"assistance_listing"},{"cfda":"93.879","permalink":"/program/93.879","title":"Medical
   Library Assistance","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":23555269.0,"program_type":"assistance_listing"},{"cfda":"93.397","permalink":"/program/93.397","title":"Cancer
-  Centers Support Grants","popular_name":"Cancer Centers","agency":"Department of
-  Health and Human Services","total_obs":23166569.0,"program_type":"assistance_listing"},{"cfda":"93.353","permalink":"/program/93.353","title":"21st
-  Century Cures Act - Beau Biden Cancer Moonshot","popular_name":"moonshot","agency":"Department
-  of Health and Human Services","total_obs":18552388.0,"program_type":"assistance_listing"},{"cfda":"93.368","permalink":"/program/93.368","title":"21st
+  Services","total_obs":79272017.77,"program_type":"assistance_listing"},{"cfda":"93.368","permalink":"/program/93.368","title":"21st
   Century Cures Act - Precision Medicine Initiative","popular_name":"All of Us Research
-  Program","agency":"Department of Health and Human Services","total_obs":16667859.0,"program_type":"assistance_listing"},{"cfda":"93.989","permalink":"/program/93.989","title":"International
+  Program","agency":"Department of Health and Human Services","total_obs":69256645.93,"program_type":"assistance_listing"},{"cfda":"93.352","permalink":"/program/93.352","title":"Construction
+  Support","popular_name":"Extramural Construction; Biomedical Research Facilities","agency":"Department
+  of Health and Human Services","total_obs":68310716.0,"program_type":"assistance_listing"},{"cfda":"93.989","permalink":"/program/93.989","title":"International
   Research and Research Training","popular_name":"Global Health Research and Research
-  Training","agency":"Department of Health and Human Services","total_obs":15075906.59,"program_type":"assistance_listing"},{"cfda":"93.185","permalink":"/program/93.185","title":"Immunization
+  Training","agency":"Department of Health and Human Services","total_obs":68056932.42,"program_type":"assistance_listing"},{"cfda":"93.077","permalink":"/program/93.077","title":"Family
+  Smoking Prevention and Tobacco Control Act Regulatory Research","popular_name":"NIH-FDA
+  Tobacco Control Regulatory Research","agency":"Department of Health and Human Services","total_obs":59211449.99,"program_type":"assistance_listing"},{"cfda":"93.185","permalink":"/program/93.185","title":"Immunization
   Research, Demonstration, Public Information and Education Training and Clinical
   Skills Improvement Projects","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":13270636.0,"program_type":"assistance_listing"},{"cfda":"93.933","permalink":"/program/93.933","title":"Demonstration
+  and Human Services","total_obs":50887079.0,"program_type":"assistance_listing"},{"cfda":"93.143","permalink":"/program/93.143","title":"NIEHS
+  Superfund Hazardous Substances_Basic Research and Education","popular_name":"NIEHS
+  Superfund Research Program","agency":"Department of Health and Human Services","total_obs":48169107.91,"program_type":"assistance_listing"},{"cfda":"93.231","permalink":"/program/93.231","title":"Epidemiology
+  Program","popular_name":null,"agency":"Department of Health and Human Services","total_obs":45567607.23,"program_type":"assistance_listing"},{"cfda":"93.068","permalink":"/program/93.068","title":"Chronic
+  Diseases:  Research, Control, and Prevention","popular_name":"Research, Control,
+  and Prevention","agency":"Department of Health and Human Services","total_obs":29387474.0,"program_type":"assistance_listing"},{"cfda":"93.933","permalink":"/program/93.933","title":"Demonstration
   Projects for Indian Health","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":9234698.0,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
+  Human Services","total_obs":10097840.14,"program_type":"assistance_listing"},{"cfda":"93.336","permalink":"/program/93.336","title":"Behavioral
   Risk Factor Surveillance System","popular_name":"Department of Health and Human
   Services (DHHS), Centers for Disease Control and Prevention (CDC), Center for Chronic
   Diseases and Health Promotion, Division of Population Health (DPH), Population Health
-  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":4976325.0,"program_type":"assistance_listing"},{"cfda":"93.065","permalink":"/program/93.065","title":"Laboratory
+  Surveillance Branch (PHSB).","agency":"Department of Health and Human Services","total_obs":9602548.0,"program_type":"assistance_listing"},{"cfda":"64.054","permalink":"/program/64.054","title":"Research
+  and Development","popular_name":"Medical and Prosthetic Research and Development","agency":"Department
+  of Veterans Affairs","total_obs":7084699.97,"program_type":"assistance_listing"},{"cfda":"93.135","permalink":"/program/93.135","title":"Centers
+  for Research and Demonstration for Health Promotion and Disease Prevention","popular_name":"(Prevention
+  Research Centers)","agency":"Department of Health and Human Services","total_obs":6925955.94,"program_type":"assistance_listing"},{"cfda":"12.340","permalink":"/program/12.340","title":"Naval
+  Medical Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":5977432.66,"program_type":"assistance_listing"},{"cfda":"93.065","permalink":"/program/93.065","title":"Laboratory
   Leadership, Workforce Training and Management Development, Improving Public Health
   Laboratory Infrastructure","popular_name":"Enhancing Disease Detection in Newborns:
   Building Capacity in Public Health Laboratories","agency":"Department of Health
-  and Human Services","total_obs":4532087.0,"program_type":"assistance_listing"},{"cfda":"93.143","permalink":"/program/93.143","title":"NIEHS
-  Superfund Hazardous Substances_Basic Research and Education","popular_name":"NIEHS
-  Superfund Research Program","agency":"Department of Health and Human Services","total_obs":4102658.0,"program_type":"assistance_listing"},{"cfda":"93.077","permalink":"/program/93.077","title":"Family
-  Smoking Prevention and Tobacco Control Act Regulatory Research","popular_name":"NIH-FDA
-  Tobacco Control Regulatory Research","agency":"Department of Health and Human Services","total_obs":3250568.0,"program_type":"assistance_listing"},{"cfda":"64.054","permalink":"/program/64.054","title":"Research
-  and Development","popular_name":"Medical and Prosthetic Research and Development","agency":"Department
-  of Veterans Affairs","total_obs":2886280.0,"program_type":"assistance_listing"},{"cfda":"93.399","permalink":"/program/93.399","title":"Cancer
-  Control","popular_name":"Cancer Control Grants","agency":"Department of Health and
-  Human Services","total_obs":2867406.0,"program_type":"assistance_listing"},{"cfda":"93.226","permalink":"/program/93.226","title":"Research
-  on Healthcare Costs, Quality and Outcomes","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":1824987.0,"program_type":"assistance_listing"},{"cfda":"93.947","permalink":"/program/93.947","title":"Tuberculosis
+  and Human Services","total_obs":4532087.0,"program_type":"assistance_listing"},{"cfda":"93.840","permalink":"/program/93.840","title":"Translation
+  and Implementation Science Research for Heart, Lung, Blood Diseases, and Sleep Disorders","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":2088040.0,"program_type":"assistance_listing"},{"cfda":"93.341","permalink":"/program/93.341","title":"Analyses,
+  Research and Studies to Address the Impact of CMS\u2019 Programs on American Indian/Alaska
+  Native (AI/AN) Beneficiaries and the Health Care System Serving these Beneficiaries","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":1549726.0,"program_type":"assistance_listing"},{"cfda":"93.947","permalink":"/program/93.947","title":"Tuberculosis
   Demonstration, Research, Public and Professional Education","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":185000.0,"program_type":"assistance_listing"},{"cfda":"93.262","permalink":"/program/93.262","title":"Occupational
-  Safety and Health Program","popular_name":"Occupational Safety and Health Program","agency":"Department
-  of Health and Human Services","total_obs":124562.0,"program_type":"assistance_listing"},{"cfda":"93.463","permalink":"/program/93.463","title":"21st
+  of Health and Human Services","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"93.370","permalink":"/program/93.370","title":"21st
+  Century Cures Act: Regenerative Medicine Initiative","popular_name":"Regenerative
+  Medicine Initiative","agency":"Department of Health and Human Services","total_obs":913996.0,"program_type":"assistance_listing"},{"cfda":"93.463","permalink":"/program/93.463","title":"21st
   Century Cures Act - Precision Medicine Initiative","popular_name":"21st Century
   Cures Act - All of Us Research Program","agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.370","permalink":"/program/93.370","title":"21st
-  Century Cures Act: Regenerative Medicine Initiative","popular_name":"Regenerative
-  Medicine Initiative","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.CRP","permalink":"/program/93.CRP","title":"21st
+  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.CRP","permalink":"/program/93.CRP","title":"21st
   Century Cures Act: Regenerative Medicine Initiative - Research Projects","popular_name":"Regenerative
   Medicine Initiative","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.810","permalink":"/program/12.810","title":"Air
   Force Medical Research and Development","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.341","permalink":"/program/93.341","title":"Analyses,
-  Research and Studies to Address the Impact of CMS\u2019 Programs on American Indian/Alaska
-  Native (AI/AN) Beneficiaries and the Health Care System Serving these Beneficiaries","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR6","permalink":"/program/93.AR6","title":"Arthritis,
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR6","permalink":"/program/93.AR6","title":"Arthritis,
   Musculoskeletal and Skin Diseases Research - Other Research (OR)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR5","permalink":"/program/93.AR5","title":"Arthritis,
   Musculoskeletal and Skin Diseases Research - Research Centers (RC)","popular_name":null,"agency":"Department
@@ -383,9 +349,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   Biomedical Imaging, and Technology Development - Research Projects","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.EB2","permalink":"/program/93.EB2","title":"Bioengineering,
   Biomedical Imaging, and Technology Development - SBIR/STTR","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.360","permalink":"/program/93.360","title":"Biomedical
-  Advanced Research and Development Authority (BARDA), Biodefense Medical Countermeasure
-  Development","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.388","permalink":"/program/93.388","title":"Biomedical
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.388","permalink":"/program/93.388","title":"Biomedical
   Advanced Research and Development Authority (BARDA), Biodefense Medical Countermeasure
   Development","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.GM7","permalink":"/program/93.GM7","title":"Biomedical
   Research - Institutional Development Award (IDeA)","popular_name":null,"agency":"Department
@@ -399,9 +363,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   Diseases and Resources Research","popular_name":"Division of Blood Diseases and
   Resources (DBDR)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.BZ1","permalink":"/program/93.BZ1","title":"Brain
   Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative","popular_name":"The
-  BRAIN Initiative","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.135","permalink":"/program/93.135","title":"Centers
-  for Research and Demonstration for Health Promotion and Disease Prevention","popular_name":"(Prevention
-  Research Centers)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDR","permalink":"/program/93.HDR","title":"Child
+  BRAIN Initiative","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDR","permalink":"/program/93.HDR","title":"Child
   Health and Human Development Extramural Research Projects","popular_name":"Child
   Health and Human Development Research Projects","agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDT","permalink":"/program/93.HDT","title":"Child
@@ -442,8 +404,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   Research Studies of Acquired Immunodeficiency Syndrome (AIDS) and Human Immunodeficiency
   Virus (HIV) Infection in Selected Population Groups","popular_name":"Minority HIV
   Research Initiative (MARI) to Support Epidemiologic and Implementation","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.231","permalink":"/program/93.231","title":"Epidemiology
-  Program","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.678","permalink":"/program/93.678","title":"Family
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.678","permalink":"/program/93.678","title":"Family
   Smoking Prevention and Tobacco Control Act Regulatory Research","popular_name":"NIH-FDA
   Tobacco Control Regulatory Research","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.00Q","permalink":"/program/93.00Q","title":"Firearm
   Injury and Mortality Prevention Research","popular_name":null,"agency":"Department
@@ -468,9 +429,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   Health Service Sanitation Facilities Construction Program","popular_name":"IHS SFC
   Program ","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.061","permalink":"/program/93.061","title":"Innovations
   in Applied Public Health Research","popular_name":"Applied Public Health Research","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.838","permalink":"/program/93.838","title":"Lung
-  Diseases Research","popular_name":null,"agency":"Department of Health and Human
-  Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24X","permalink":"/program/93.24X","title":"Mental
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24X","permalink":"/program/93.24X","title":"Mental
   Health Research - Other Research","popular_name":null,"agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24C","permalink":"/program/93.24C","title":"Mental
   Health Research - Research Centers","popular_name":null,"agency":"Department of
@@ -564,8 +523,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.422","permalink":"/program/93.422","title":"National
   Partnerships to promote cancer surveillance standards and support data quality and
   operations of National Program of Cancer Registries","popular_name":"NPCR National
-  Partnerships\r\n\r\n","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.340","permalink":"/program/12.340","title":"Naval
-  Medical Research and Development","popular_name":null,"agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS4","permalink":"/program/93.NS4","title":"Neurosciences
+  Partnerships\r\n\r\n","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS4","permalink":"/program/93.NS4","title":"Neurosciences
   and Neurological Disorders \u2013 Other Research (OR)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.NS3","permalink":"/program/93.NS3","title":"Neurosciences
   and Neurological Disorders \u2013 Research Centers (RC)","popular_name":null,"agency":"Department
@@ -612,9 +570,7 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   States","popular_name":"Chronic Kidney Disease (CKD)","agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.UDN","permalink":"/program/93.UDN","title":"The
   Undiagnosed Disease Network","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.840","permalink":"/program/93.840","title":"Translation
-  and Implementation Science Research for Heart, Lung, Blood Diseases, and Sleep Disorders","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.677","permalink":"/program/93.677","title":"Vision
+  and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.677","permalink":"/program/93.677","title":"Vision
   Research - Other Research","popular_name":null,"agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.675","permalink":"/program/93.675","title":"Vision
   Research - Research Centers","popular_name":null,"agency":"Department of Health
@@ -626,10 +582,14 @@ programs: '[{"cfda":"12.420","permalink":"/program/12.420","title":"Military Med
   Research - Training, Individual","popular_name":null,"agency":"Department of Health
   and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.642","permalink":"/program/93.642","title":"Vision
   Research - Training, Institutional","popular_name":null,"agency":"Department of
-  Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.838","permalink":"/program/93.838","title":"Lung
+  Diseases Research","popular_name":null,"agency":"Department of Health and Human
+  Services","total_obs":-276398.92,"program_type":"assistance_listing"},{"cfda":"93.360","permalink":"/program/93.360","title":"Biomedical
+  Advanced Research and Development Authority (BARDA), Biodefense Medical Countermeasure
+  Development","popular_name":null,"agency":"Department of Health and Human Services","total_obs":-7436789.23,"program_type":"assistance_listing"}]'
 title: Healthcare Innovation
 total_num_agencies: 3
 total_num_applicant_types: 67
 total_num_programs: 180
-total_obs: 10466329788.79
+total_obs: 37515456021.14
 ---

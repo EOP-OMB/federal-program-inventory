@@ -1,11 +1,11 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":78,"total_obs":70497914056.25},{"title":"Department
-  of the Treasury","total_num_programs":13,"total_obs":25396385000.0},{"title":"Department
-  of Veterans Affairs","total_num_programs":7,"total_obs":1116689558.05},{"title":"Department
-  of Agriculture","total_num_programs":14,"total_obs":122963267.49},{"title":"Department
-  of Health and Human Services","total_num_programs":3,"total_obs":55111175.0},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":3064897.27},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":2814293.0},{"title":"Department
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":78,"total_obs":66919990104.49999},{"title":"Department
+  of the Treasury","total_num_programs":13,"total_obs":25241810963.18},{"title":"Department
+  of Veterans Affairs","total_num_programs":7,"total_obs":2097275903.34},{"title":"Department
+  of Agriculture","total_num_programs":14,"total_obs":1692348552.2299998},{"title":"Department
+  of Health and Human Services","total_num_programs":3,"total_obs":129395713.66},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":11460755.41},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":6473690.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product Safety
   Commission","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":37},{"title":"Federally
@@ -161,11 +161,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -205,41 +200,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -253,11 +213,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/housing
-sub_cats: '[{"title":"Housing and Homelessness","permalink":"/category/housing/housing-and-homelessness","total_num_programs":120,"total_obs":97194942247.06001}]'
+sub_cats: '[{"title":"Housing and Homelessness","permalink":"/category/housing/housing-and-homelessness","total_num_programs":120,"total_obs":96098755682.32}]'
 title: Housing
 total_num_agencies: 9
 total_num_applicant_types: 58
 total_num_programs: 120
 total_num_sub_cats: 1
-total_obs: 97194942247.06001
+total_obs: 96098755682.32
 ---

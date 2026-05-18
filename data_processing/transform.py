@@ -33,11 +33,6 @@ ASSISTANCE_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIR
 CONTRACT_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY')
 UNZIP_TMP_DIRECTORY = os.getenv('ETL_TRANSFORM_UNZIP_TMP_DIRECTORY')
 
-# optional
-SINGLE_ASSISTANCE_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_ASSISTANCE_YEAR')
-SINGLE_CONTRACT_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_CONTRACT_YEAR')
-SINGLE_YEAR = os.getenv('ETL_TRANSFORM_SINGLE_YEAR')
-
 if (TEMP_DB_DISK_DIRECTORY is None or
     TEMP_DB_FILE_PATH is None or
     TRANSFORMED_FILES_DIRECTORY is None or
@@ -48,15 +43,15 @@ if (TEMP_DB_DISK_DIRECTORY is None or
     CONTRACT_ZIP_FILE_DIRECTORY is None or
     UNZIP_TMP_DIRECTORY is None):
     print("Error:  set the following environment variables:")
-    print("  TEMP_DB_DISK_DIRECTORY")
-    print("  TEMP_DB_FILE_PATH")
-    print("  TRANSFORMED_FILES_DIRECTORY")
-    print("  TRANSFORMED_DB_FILE_PATH")
-    print("  USASPENDING_DISK_DIRECTORY")
-    print("  EXTRACTED_FILES_DIRECTORY")
-    print("  ASSISTANCE_ZIP_FILE_DIRECTORY")
-    print("  CONTRACT_ZIP_FILE_DIRECTORY")
-    print("  UNZIP_TMP_DIRECTORY")
+    print("  ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY")
+    print("  ETL_TRANSFORM_TEMP_DB_FILE_PATH")
+    print("  ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY")
+    print("  ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH")
+    print("  ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY")
+    print("  ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY")
+    print("  ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY")
+    print("  ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY")
+    print("  ETL_TRANSFORM_UNZIP_TMP_DIRECTORY")
     sys.exit(1)
 
 # additional programs dataset path
@@ -401,14 +396,6 @@ PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL = """
         JOIN gwo on program_to_gwo.gwo_id = gwo.id
         JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
         JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
-    UNION
-        SELECT DISTINCT
-            other_program_spending.program_id,
-            other_program_spending.focus_area_id AS taxonomy_focus_area_id,
-            taxonomy_category.id AS taxonomy_category_id
-        FROM other_program_spending
-        JOIN taxonomy_focus_area ON other_program_spending.focus_area_id = taxonomy_focus_area.id
-        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
 """
 
 PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL = """
@@ -450,7 +437,7 @@ PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
             WITH RECURSIVE constants(earliest_year, latest_year) AS (
                 SELECT (SELECT MIN(val)
                     FROM (
-                        SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
                         UNION ALL
                         SELECT fiscal_year FROM program_sam_spending
                         UNION ALL
@@ -460,7 +447,7 @@ PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
                     )),
                 (SELECT MAX(val)
                     FROM (
-                        SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
                         UNION ALL
                         SELECT fiscal_year FROM program_sam_spending
                         UNION ALL
@@ -473,7 +460,7 @@ PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
             SELECT (
                 SELECT MIN(val)
                 FROM (
-                    SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
                     UNION ALL
                     SELECT fiscal_year FROM program_sam_spending
                     UNION ALL
@@ -486,7 +473,7 @@ PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
             SELECT n + 1 FROM year_range WHERE n < (
                 SELECT MAX(val)
                 FROM (
-                    SELECT award_first_fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
                     UNION ALL
                     SELECT fiscal_year FROM program_sam_spending
                     UNION ALL
@@ -499,11 +486,11 @@ PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
             usa_spending_grouped(id, fiscal_year, outlay, obligation) AS (
             SELECT
                 cfda_number AS id,
-                award_first_fiscal_year AS fiscal_year,
+                fiscal_year,
                 SUM(outlay) AS outlay,
                 SUM(obligation) AS obligation
             FROM usaspending_assistance_outlay_aggregation
-            GROUP BY cfda_number, award_first_fiscal_year
+            GROUP BY cfda_number, fiscal_year
             ),
 			usa_spending_grouped_by_action_date(id, fiscal_year, obligation) AS (
             SELECT
@@ -603,13 +590,14 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_DROP_TABLE_SQL = """
 USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
     CREATE TABLE usaspending_assistance_outlay_aggregation (
         cfda_number TEXT NOT NULL,
-        award_first_fiscal_year INT NOT NULL,
+        fiscal_year INT NOT NULL,
         outlay REAL NOT NULL,
         obligation REAL NOT NULL,
         FOREIGN KEY(cfda_number) REFERENCES program(id)
     );
     """
 
+# Previously, obligations were grouped by award first action fiscal year:
 # At this time, only the total of outlayed funds per award is available from
 # USASpending.gov. This means it is not possible to aggregate outlays in the
 # same way that obligations are aggregated (i.e., by transaction action date).
@@ -622,22 +610,44 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
 # query and the query used to power the primary display, but this methodology
 # allows for a more consistent comparison between obligated and outlayed funds,
 # by year.
+#
+# Now, in an effort to match usaspending.gov more closely, we are only grouping
+# outlays that way.  Obligations will belong to the action_date_fiscal_year in
+# which they occurred.
 USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL = """
     INSERT INTO usaspending_assistance_outlay_aggregation (cfda_number,
-        award_first_fiscal_year, outlay, obligation)
+        fiscal_year, outlay, obligation)
     SELECT
-        cfda_number, award_first_fiscal_year, SUM(award_outlay) AS outlay,
-        SUM(award_obligation) as obligation
+        cfda_number,
+        fiscal_year,
+        SUM(outlay) AS outlay,
+        SUM(obligation) AS obligation
     FROM (
         SELECT
-            cfda_number, assistance_award_unique_key,
-            MIN(action_date_fiscal_year) AS award_first_fiscal_year,
-            total_outlayed_amount_for_overall_award AS award_outlay,
-            SUM(federal_action_obligation) AS award_obligation
+            usaspending_assistance.cfda_number,
+            usaspending_assistance.assistance_award_unique_key,
+            usaspending_assistance.action_date_fiscal_year AS fiscal_year,
+            COALESCE(outlays_lookup.award_outlay,0) AS outlay,
+            SUM(usaspending_assistance.federal_action_obligation) as obligation
         FROM temp_db.usaspending_assistance
-        GROUP BY cfda_number, assistance_award_unique_key
-    )
-    GROUP BY cfda_number, award_first_fiscal_year;
+        LEFT JOIN (
+            SELECT
+                cfda_number,
+                assistance_award_unique_key,
+                MIN(action_date_fiscal_year) AS fiscal_year,
+                total_outlayed_amount_for_overall_award AS award_outlay
+            FROM temp_db.usaspending_assistance
+            GROUP BY cfda_number, assistance_award_unique_key
+        ) outlays_lookup ON
+            usaspending_assistance.cfda_number = outlays_lookup.cfda_number AND
+            usaspending_assistance.assistance_award_unique_key = outlays_lookup.assistance_award_unique_key AND
+            usaspending_assistance.action_date_fiscal_year = outlays_lookup.fiscal_year
+        GROUP BY
+            usaspending_assistance.cfda_number,
+            usaspending_assistance.assistance_award_unique_key,
+            usaspending_assistance.action_date_fiscal_year
+    ) summary_query
+    GROUP BY cfda_number, fiscal_year;
     """
 
 USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_DELETE_SQL = """
@@ -648,6 +658,15 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_DELETE_SQL = """
 USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL = """
     INSERT INTO usaspending_assistance_outlay_aggregation
     VALUES (?, ?, ?, ?);
+"""
+
+USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS = """
+    SELECT cfda_number, assistance_award_unique_key, COUNT(*) AS ct
+    FROM (
+        SELECT DISTINCT cfda_number, assistance_award_unique_key, total_outlayed_amount_for_overall_award FROM usaspending_assistance
+    ) subquery
+    GROUP BY cfda_number, assistance_award_unique_key
+    HAVING COUNT(*) > 1
 """
 
 OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL = """
@@ -661,16 +680,14 @@ OTHER_PROGRAM_SPENDING_CREATE_TABLE_SQL = """
         outlays REAL,
         forgone_revenue REAL,
         source TEXT NOT NULL,
-        focus_area_id TEXT NOT NULL,
         PRIMARY KEY (program_id, fiscal_year),
         FOREIGN KEY(program_id) REFERENCES program(id)
-        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
     );
     """
 
 OTHER_PROGRAM_SPENDING_INSERT_SQL = """
     INSERT INTO other_program_spending
-    VALUES (?, ?, ?, ?, ?, ?);
+    VALUES (?, ?, ?, ?, ?);
     """
 
 IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL = """
@@ -719,33 +736,17 @@ def load_usaspending_initial_files():
     further transformation."""
     print("Starting load_usaspending_initial_files")
 
-    drop_all = True
-    if (SINGLE_ASSISTANCE_YEAR is not None and SINGLE_CONTRACT_YEAR is not None and SINGLE_YEAR is not None):
-        if (os.path.exists(ASSISTANCE_ZIP_FILE_DIRECTORY + SINGLE_ASSISTANCE_YEAR) and
-            os.path.exists(CONTRACT_ZIP_FILE_DIRECTORY + SINGLE_CONTRACT_YEAR)):
-            drop_all = False
-        else:
-            print("Error:  file not found SINGLE_ASSISTANCE_YEAR or SINGLE_CONTRACT_YEAR")
-            sys.exit(1)
+    print("Dropping all tables from temp_data.db")
 
-    if (drop_all):
-        print("Dropping all tables from temp_data.db")
+    # create assistance table for USASpending.gov data
+    temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
+    temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
+    temp_conn.commit()
 
-        # create assistance table for USASpending.gov data
-        temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
-        temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
-        temp_conn.commit()
-
-        # create contracts table for USASpending.gov data
-        temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
-        temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
-        temp_conn.commit()
-    else:
-        print(f"Deleting year {SINGLE_YEAR} from temp_data.db")
-
-        temp_cur.execute(USASPENDING_ASSISTANCE_DELETE_YEAR_SQL, (SINGLE_YEAR,))
-        temp_cur.execute(USASPENDING_CONTRACT_DELETE_YEAR_SQL, (SINGLE_YEAR,))
-        temp_conn.commit()
+    # create contracts table for USASpending.gov data
+    temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
+    temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
+    temp_conn.commit()
 
     # ensure the temporary directory is empty for later iteration
     if os.path.exists(UNZIP_TMP_DIRECTORY):
@@ -753,8 +754,6 @@ def load_usaspending_initial_files():
     os.makedirs(UNZIP_TMP_DIRECTORY, exist_ok=True)
 
     zip_file_list = os.listdir(ASSISTANCE_ZIP_FILE_DIRECTORY)
-    if (not drop_all):
-        zip_file_list = [SINGLE_ASSISTANCE_YEAR]
 
     # load assistance data; the list is sorted to ensure files are processed
     # in chronological order
@@ -773,7 +772,7 @@ def load_usaspending_initial_files():
                             temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
                                 r["assistance_transaction_unique_key"],
                                 r["assistance_award_unique_key"],
-                                r["federal_action_obligation"],
+                                r["generated_pragmatic_obligations"],
                                 r["total_outlayed_amount_for_overall_award"],
                                 r["action_date_fiscal_year"],
                                 r["prime_award_transaction_place_of_"
@@ -785,8 +784,6 @@ def load_usaspending_initial_files():
                     os.remove(UNZIP_TMP_DIRECTORY + file)
 
     zip_file_list = os.listdir(CONTRACT_ZIP_FILE_DIRECTORY)
-    if (not drop_all):
-        zip_file_list = [SINGLE_CONTRACT_YEAR]
 
     # load contract data; the list is sorted to ensure files are processed
     # in chronological order
@@ -804,7 +801,7 @@ def load_usaspending_initial_files():
                             temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
                                 r["contract_transaction_unique_key"],
                                 r["contract_award_unique_key"],
-                                r["federal_action_obligation"],
+                                r["generated_pragmatic_obligations"],
                                 r["total_outlayed_amount_for_overall_award"],
                                 r["action_date_fiscal_year"],
                                 r["funding_agency_code"],
@@ -832,6 +829,13 @@ def transform_and_insert_usaspending_aggregation_data():
     """Queries USASpending.gov data in the temporary database and inserts the
     results into the transformed database."""
     print("Starting transform_and_insert_usaspending_aggregation_data")
+
+    # This verifies the assumption that usaspending will only have one outlay
+    #   value per assistance_award_unique_key
+    cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS)
+    if (len(cur.fetchall()) > 0):
+        print("Data quality check USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS failed")
+        exit(1)
 
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL)
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_CREATE_TABLE_SQL)
@@ -1277,8 +1281,7 @@ def load_additional_programs():
                 int(year),
                 0 if pd.isna(record[columns[0]]) else record[columns[0]],
                 0 if pd.isna(record[columns[1]]) else record[columns[1]],
-                'additional-programs.csv',
-                record['focus_area.id']
+                'additional-programs.csv'
             ])
 
     conn.commit()

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Health - Health and Wellbeing
-- Tax Expenditures - Natural Resources and Environment
 cfda: TC.042
 fiscal_year: '2025'
 grants_url: null

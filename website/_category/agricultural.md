@@ -1,9 +1,9 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":122,"total_obs":21457019406.379997},{"title":"Department
-  of the Treasury","total_num_programs":6,"total_obs":2750000000.0},{"title":"Department
-  of the Interior","total_num_programs":3,"total_obs":1099919.67},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":0.0},{"title":"Agency for
-  International Development","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of Agriculture","total_num_programs":122,"total_obs":21280234736.269993},{"title":"Department
+  of the Treasury","total_num_programs":6,"total_obs":2750000000.0},{"title":"Agency
+  for International Development","total_num_programs":1,"total_obs":14500000.0},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":985298.15},{"title":"Environmental
+  Protection Agency","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":48},{"title":"Unrestricted
   by Entity Type","total_num_programs":36},{"title":"Other","total_num_programs":31},{"title":"For-Profit
   Organization","total_num_programs":29},{"title":"Small Business Person","total_num_programs":22},{"title":"Land/Property
@@ -153,11 +153,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -197,41 +192,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -245,12 +205,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":53,"total_obs":1076871459.14},{"title":"Farm
-  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":80,"total_obs":23131247866.909996}]'
+sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":53,"total_obs":915284765.92},{"title":"Farm
+  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":80,"total_obs":23130435268.499996}]'
 title: Agricultural
 total_num_agencies: 5
 total_num_applicant_types: 53
 total_num_programs: 133
 total_num_sub_cats: 2
-total_obs: 24208119326.049995
+total_obs: 24045720034.41999
 ---

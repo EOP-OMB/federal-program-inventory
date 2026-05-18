@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":3,"total_obs":155310403.0},{"title":"The
-  Institute of Museum and Library Services","total_num_programs":4,"total_obs":14270263.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":2,"total_obs":3787276.0},{"title":"Department
+agencies: '[{"title":"Department of Education","total_num_programs":3,"total_obs":188716820.05},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":4,"total_obs":13737949.76},{"title":"National
+  Endowment for the Humanities","total_num_programs":2,"total_obs":3180839.01},{"title":"Department
   of the Interior","total_num_programs":1,"total_obs":2749117.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":0.0}]'
@@ -145,11 +145,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -189,41 +184,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -241,25 +201,25 @@ parent_title: Cultural Affairs
 permalink: /category/cultural-affairs/cultural-heritage-and-traditions
 programs: '[{"cfda":"84.422","permalink":"/program/84.422","title":"American History
   and Civics Education","popular_name":"American History and Civics Academies:  National
-  Activities Grants","agency":"Department of Education","total_obs":129578799.0,"program_type":"assistance_listing"},{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska
-  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":25731604.0,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
+  Activities Grants","agency":"Department of Education","total_obs":136392037.36,"program_type":"assistance_listing"},{"cfda":"84.356","permalink":"/program/84.356","title":"Alaska
+  Native Educational Programs","popular_name":null,"agency":"Department of Education","total_obs":42843589.3,"program_type":"assistance_listing"},{"cfda":"84.415","permalink":"/program/84.415","title":"Indian
+  Education National Activities (State Tribal Education Partnership (STEP) and Native
+  American Language (NAL)","popular_name":null,"agency":"Department of Education","total_obs":9481193.39,"program_type":"assistance_listing"},{"cfda":"45.309","permalink":"/program/45.309","title":"Museum
   Grants for African American History and Culture","popular_name":"Museum Grants for
   African American History and Culture","agency":"The Institute of Museum and Library
-  Services","total_obs":6240000.0,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
+  Services","total_obs":6003532.21,"program_type":"assistance_listing"},{"cfda":"45.033","permalink":"/program/45.033","title":"Museum
   Grants for American Latino History and Culture","popular_name":"Museum Grants for
   American Latino History and Culture","agency":"The Institute of Museum and Library
-  Services","total_obs":4258263.0,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
-  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
-  Endowment for the Humanities","total_obs":3787276.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
+  Services","total_obs":4258263.0,"program_type":"assistance_listing"},{"cfda":"45.308","permalink":"/program/45.308","title":"Native
   American/Native Hawaiian Museum Services Program","popular_name":"Native American/Native
   Hawaiian Museum Services Program","agency":"The Institute of Museum and Library
-  Services","total_obs":3772000.0,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
+  Services","total_obs":3476154.55,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
+  of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":3180839.01,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
   Hawaiian and Alaka Native Culture and Arts Development","popular_name":null,"agency":"Department
   of the Interior","total_obs":2749117.0,"program_type":"assistance_listing"},{"cfda":"45.031","permalink":"/program/45.031","title":"American
   Latino Museum Internship and Fellowship Initiative","popular_name":"ALMIFI","agency":"The
-  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.415","permalink":"/program/84.415","title":"Indian
-  Education National Activities (State Tribal Education Partnership (STEP) and Native
-  American Language (NAL)","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.034","permalink":"/program/45.034","title":"National
+  Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.034","permalink":"/program/45.034","title":"National
   Garden of American Heroes: Statues","popular_name":null,"agency":"National Endowment
   for the Humanities","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.025","permalink":"/program/12.025","title":"Native
   American Consultation to Identify Sacred Sites and Traditional Cultural Properties","popular_name":"Native
@@ -271,5 +231,5 @@ title: Cultural Heritage and Traditions
 total_num_agencies: 6
 total_num_applicant_types: 31
 total_num_programs: 12
-total_obs: 176117059.0
+total_obs: 208384725.82
 ---

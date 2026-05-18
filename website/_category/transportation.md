@@ -1,11 +1,12 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":125,"total_obs":100580025609.45},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":125,"total_obs":122501358465.04},{"title":"Department
   of the Treasury","total_num_programs":5,"total_obs":1900000000.0},{"title":"Appalachian
-  Regional Commission","total_num_programs":1,"total_obs":236198661.29},{"title":"Department
-  of Agriculture","total_num_programs":1,"total_obs":19288529.46},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":17673843.14},{"title":"Department
+  Regional Commission","total_num_programs":1,"total_obs":273756822.63},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":44967721.96},{"title":"Department
+  of Agriculture","total_num_programs":1,"total_obs":19818847.09},{"title":"Department
   of Homeland Security","total_num_programs":3,"total_obs":6195859.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Department of Commerce","total_num_programs":1,"total_obs":0.0}]'
+  of Defense","total_num_programs":1,"total_obs":1111023.0},{"title":"Department of
+  Commerce","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":78},{"title":"State","total_num_programs":52},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":32},{"title":"Local","total_num_programs":32},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
@@ -151,11 +152,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -195,41 +191,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -243,14 +204,14 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/transportation
-sub_cats: '[{"title":"Air Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":4,"total_obs":9024307788.63},{"title":"Ground
-  Transportation","permalink":"/category/transportation/ground-transportation","total_num_programs":90,"total_obs":73929130649.08998},{"title":"Multi\u2013modal
-  Transportation","permalink":"/category/transportation/multi-modal-transportation","total_num_programs":36,"total_obs":19734790589.620003},{"title":"Water
-  Transportation","permalink":"/category/transportation/water-transportation","total_num_programs":9,"total_obs":71153475.0}]'
+sub_cats: '[{"title":"Air Transportation","permalink":"/category/transportation/air-transportation","total_num_programs":4,"total_obs":8875650070.25},{"title":"Ground
+  Transportation","permalink":"/category/transportation/ground-transportation","total_num_programs":90,"total_obs":90480253998.08998},{"title":"Multi\u2013modal
+  Transportation","permalink":"/category/transportation/multi-modal-transportation","total_num_programs":36,"total_obs":25281640154.379997},{"title":"Water
+  Transportation","permalink":"/category/transportation/water-transportation","total_num_programs":9,"total_obs":109664516.0}]'
 title: Transportation
 total_num_agencies: 8
 total_num_applicant_types: 48
 total_num_programs: 139
 total_num_sub_cats: 4
-total_obs: 102759382502.34
+total_obs: 124747208738.72
 ---

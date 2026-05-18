@@ -1601,8 +1601,11 @@ def generate_category_page(cursor: sqlite3.Cursor,
     
     for prog_type, total_obs in obligations_result.items():
         if total_obs > 0:
+            title = constants.PROGRAM_TYPE_MAPPING.get(prog_type, prog_type)
+            if title == 'Major Acquisition Programs':
+                title = 'Acquisition Programs'
             obligations_by_type.append({
-                'title': constants.PROGRAM_TYPE_MAPPING.get(prog_type, prog_type),
+                'title': title,
                 'total_obs': total_obs
             })
 

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Health - Healthcare Quality and Delivery
-- Tax Expenditures - Health
 cfda: TC.134
 fiscal_year: '2025'
 grants_url: null

@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Income Security
 cfda: TC.154
 fiscal_year: '2025'
 grants_url: null

@@ -1,6 +1,6 @@
 ---
-agencies: '[{"title":"Department of Homeland Security","total_num_programs":6,"total_obs":626016847.96},{"title":"Department
-  of the Interior","total_num_programs":2,"total_obs":31717336.77},{"title":"Department
+agencies: '[{"title":"Department of Homeland Security","total_num_programs":6,"total_obs":622697928.83},{"title":"Department
+  of the Interior","total_num_programs":2,"total_obs":104596494.77000001},{"title":"Department
   of Transportation","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
   institutions of higher education and hospitals","total_num_programs":3},{"title":"Non-Government
@@ -133,11 +133,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -177,41 +172,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -228,24 +188,24 @@ parent_permalink: /category/law--justice--and-legal-services
 parent_title: Law, Justice, and Legal Services
 permalink: /category/law--justice--and-legal-services/domestic-threats-and-hazards
 programs: '[{"cfda":"97.008","permalink":"/program/97.008","title":"Non-Profit Security
-  Program","popular_name":"NSGP","agency":"Department of Homeland Security","total_obs":485269150.86,"program_type":"assistance_listing"},{"cfda":"97.056","permalink":"/program/97.056","title":"Port
-  Security Grant Program","popular_name":"PSGP","agency":"Department of Homeland Security","total_obs":89146197.1,"program_type":"assistance_listing"},{"cfda":"97.075","permalink":"/program/97.075","title":"Rail
+  Program","popular_name":"NSGP","agency":"Department of Homeland Security","total_obs":467446601.79,"program_type":"assistance_listing"},{"cfda":"97.056","permalink":"/program/97.056","title":"Port
+  Security Grant Program","popular_name":"PSGP","agency":"Department of Homeland Security","total_obs":77428282.96,"program_type":"assistance_listing"},{"cfda":"97.075","permalink":"/program/97.075","title":"Rail
   and Transit Security Grant Program","popular_name":"TSGP/IPR  (AMTRAK)","agency":"Department
-  of Homeland Security","total_obs":49801500.0,"program_type":"assistance_listing"},{"cfda":"15.065","permalink":"/program/15.065","title":"Safety
-  of Dams on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":31717336.77,"program_type":"assistance_listing"},{"cfda":"97.057","permalink":"/program/97.057","title":"Intercity
+  of Homeland Security","total_obs":76763051.81,"program_type":"assistance_listing"},{"cfda":"15.077","permalink":"/program/15.077","title":"Rehabilitation,
+  Reconstruction, or Replacement of Carey Act Dams","popular_name":"Carey Act Dams","agency":"Department
+  of the Interior","total_obs":65000000.0,"program_type":"assistance_listing"},{"cfda":"15.065","permalink":"/program/15.065","title":"Safety
+  of Dams on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":39596494.77,"program_type":"assistance_listing"},{"cfda":"97.057","permalink":"/program/97.057","title":"Intercity
   Bus Security Grants","popular_name":"Intercity Bus Security","agency":"Department
-  of Homeland Security","total_obs":1800000.0,"program_type":"assistance_listing"},{"cfda":"97.091","permalink":"/program/97.091","title":"Homeland
+  of Homeland Security","total_obs":1060677.65,"program_type":"assistance_listing"},{"cfda":"97.091","permalink":"/program/97.091","title":"Homeland
   Security Biowatch Program","popular_name":null,"agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.803","permalink":"/program/20.803","title":"Maritime
   War Risk Insurance","popular_name":"(Title XII, MMA, 1936)","agency":"Department
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.134","permalink":"/program/97.134","title":"Presidential
   Residence Protection Security Grant","popular_name":"PRPA Grant","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.077","permalink":"/program/15.077","title":"Rehabilitation,
-  Reconstruction, or Replacement of Carey Act Dams","popular_name":"Carey Act Dams","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"}]'
+  of Homeland Security","total_obs":-685.38,"program_type":"assistance_listing"}]'
 title: Domestic Threats and Hazards
 total_num_agencies: 3
 total_num_applicant_types: 24
 total_num_programs: 9
-total_obs: 657734184.73
+total_obs: 727294423.6
 ---

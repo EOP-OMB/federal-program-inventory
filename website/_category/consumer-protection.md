@@ -1,11 +1,11 @@
 ---
-agencies: '[{"title":"Department of Labor","total_num_programs":6,"total_obs":198857564.67000002},{"title":"Department
-  of Agriculture","total_num_programs":5,"total_obs":84168731.85000001},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":2646950.0},{"title":"Environmental
+agencies: '[{"title":"Department of Labor","total_num_programs":6,"total_obs":194905871.29},{"title":"Department
+  of Agriculture","total_num_programs":5,"total_obs":88079698.78},{"title":"Department
+  of Health and Human Services","total_num_programs":5,"total_obs":35125462.13},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":340000.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":323735.0},{"title":"Department
+  of Transportation","total_num_programs":1,"total_obs":77874.38},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product
-  Safety Commission","total_num_programs":1,"total_obs":0.0}]'
+  Safety Commission","total_num_programs":1,"total_obs":-784957.43}]'
 applicant_types: '[{"title":"State (includes District of Columbia, public institutions
   of higher education and hospitals)","total_num_programs":6},{"title":"Nonprofit
   Organization","total_num_programs":5},{"title":"U.S. State Government (including
@@ -150,11 +150,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -194,41 +189,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -242,11 +202,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/consumer-protection
-sub_cats: '[{"title":"Consumer and Occupational Health and Safety","permalink":"/category/consumer-protection/consumer-and-occupational-health-and-safety","total_num_programs":20,"total_obs":286336981.52000004}]'
+sub_cats: '[{"title":"Consumer and Occupational Health and Safety","permalink":"/category/consumer-protection/consumer-and-occupational-health-and-safety","total_num_programs":20,"total_obs":317743949.15}]'
 title: Consumer Protection
 total_num_agencies: 7
 total_num_applicant_types: 46
 total_num_programs: 20
 total_num_sub_cats: 1
-total_obs: 286336981.52000004
+total_obs: 317743949.15
 ---

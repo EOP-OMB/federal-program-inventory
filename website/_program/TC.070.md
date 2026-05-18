@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Income Security and Social Services - Personal Financial Health
-- Tax Expenditures - Commerce and Housing
 cfda: TC.070
 fiscal_year: '2025'
 grants_url: null

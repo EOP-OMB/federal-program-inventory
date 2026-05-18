@@ -23,9 +23,6 @@ USE_LOCAL_API=true
 ETL_EXTRACT_DISK_DIRECTORY=/Users/user/source/
 ETL_EXTRACT_SOURCE_DIRECTORY=omb-fpi/data_processing/source/
 ETL_EXTRACT_EXTRACTED_DIRECTORY=omb-fpi/data_processing/extracted/
-ETL_TRANSFORM_SINGLE_ASSISTANCE_YEAR="FY2026_All_Assistance_Full_20260206.zip"
-ETL_TRANSFORM_SINGLE_CONTRACT_YEAR="FY2026_All_Contracts_Full_20260206.zip"
-ETL_TRANSFORM_SINGLE_YEAR=2026
 ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
 ETL_TRANSFORM_TEMP_DB_FILE_PATH=temp_data.db
 ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
@@ -91,7 +88,7 @@ The FPI also uses additional data, which is sourced from several locations and s
 > [!NOTE]
 > This repository already contains copies of the latest data transformed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use the pre-existing [transformed/transformed_data.db](transformed/transformed_data.db) file and skip the process below.
 
-First, set the `ETL_` environment variables above.  If you want to do a full transform from scratch, do not specify the `ETL_TRANSFORM_SINGLE_` variables.  Otherwise, specify the files you want to load and which year they should override.  Note that delta files are not currently supported - use the full year files.
+First, set the `ETL_` environment variables above.  Then download all archive financial assistance files from constants.py years `CURRENT_FISCAL_YEAR` to `CURRENT_FISCAL_YEAR - SPENDING_CHART_YEAR_RANGE`.  Note that delta files are not currently supported - use the full year files.  Optionally, archive contract files can be imported into the temporary database; however, they are not currently used in the website or the transformed database.
 
 The data extracted above is transformed through a variety of processes into a SQLite DB ([transformed/transformed_data.db](transformed/transformed_data.db)). If new data was extracted by running functions in [extract.py](extract.py), the functions in [transform.py](transform.py) should be run to refresh [transformed/transformed_data.db](transformed/transformed_data.db). This SQLite DB is used in the next step, to generate the Markdown files used by Jekyll to build the FPI website.
 

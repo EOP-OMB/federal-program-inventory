@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":3,"total_obs":2090000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":20,"total_obs":997433468.29},{"title":"Department
-  of the Interior","total_num_programs":1,"total_obs":4141463.46},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":20,"total_obs":9651958043.57},{"title":"Department
+  of the Treasury","total_num_programs":3,"total_obs":2090000000.0},{"title":"Department
+  of the Interior","total_num_programs":1,"total_obs":12015227.52},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"State","total_num_programs":19},{"title":"Federally Recognized
   Indian/Native American/Alaska Native Tribal Government","total_num_programs":13},{"title":"U.S.
@@ -131,11 +131,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -175,41 +170,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -225,46 +185,47 @@ fiscal_year: '2025'
 parent_permalink: /category/health
 parent_title: Health
 permalink: /category/health/child-welfare
-programs: '[{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion of certain
-  foster care payments","popular_name":null,"agency":"Department of the Treasury","total_obs":1000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.120","permalink":"/program/TC.120","title":"Assistance
+programs: '[{"cfda":"93.658","permalink":"/program/93.658","title":"Foster Care Title
+  IV-E","popular_name":"Title IV-E Foster Care","agency":"Department of Health and
+  Human Services","total_obs":4014702859.04,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":3066687295.17,"program_type":"assistance_listing"},{"cfda":"93.676","permalink":"/program/93.676","title":"Unaccompanied
+  Alien Children Program","popular_name":"Unaccompanied Alien Children Bureau","agency":"Department
+  of Health and Human Services","total_obs":1238343366.96,"program_type":"assistance_listing"},{"cfda":"TC.126","permalink":"/program/TC.126","title":"Exclusion
+  of certain foster care payments","popular_name":null,"agency":"Department of the
+  Treasury","total_obs":1000000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.120","permalink":"/program/TC.120","title":"Assistance
   for adopted foster children","popular_name":null,"agency":"Department of the Treasury","total_obs":700000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.121","permalink":"/program/TC.121","title":"Adoption
   credit and exclusion","popular_name":null,"agency":"Department of the Treasury","total_obs":390000000.0,"program_type":"tax_expenditure"},{"cfda":"93.556","permalink":"/program/93.556","title":"MaryLee
   Allen Promoting Safe and Stable Families Program","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":335735056.95,"program_type":"assistance_listing"},{"cfda":"93.645","permalink":"/program/93.645","title":"Stephanie
+  of Health and Human Services","total_obs":325023415.29,"program_type":"assistance_listing"},{"cfda":"93.645","permalink":"/program/93.645","title":"Stephanie
   Tubbs Jones Child Welfare Services Program","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":266745282.0,"program_type":"assistance_listing"},{"cfda":"93.669","permalink":"/program/93.669","title":"Child
+  of Health and Human Services","total_obs":258898742.79,"program_type":"assistance_listing"},{"cfda":"93.090","permalink":"/program/93.090","title":"Guardianship
+  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":256957577.94,"program_type":"assistance_listing"},{"cfda":"93.472","permalink":"/program/93.472","title":"Title
+  IV-E Prevention Program","popular_name":"Title IV-E Prevention Services","agency":"Department
+  of Health and Human Services","total_obs":150637466.0,"program_type":"assistance_listing"},{"cfda":"93.669","permalink":"/program/93.669","title":"Child
   Abuse and Neglect State Grants","popular_name":"CAPTA State Grants","agency":"Department
-  of Health and Human Services","total_obs":103219794.0,"program_type":"assistance_listing"},{"cfda":"93.590","permalink":"/program/93.590","title":"Community-Based
+  of Health and Human Services","total_obs":100899622.3,"program_type":"assistance_listing"},{"cfda":"93.590","permalink":"/program/93.590","title":"Community-Based
   Child Abuse Prevention Grants","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":66959400.0,"program_type":"assistance_listing"},{"cfda":"93.603","permalink":"/program/93.603","title":"Adoption
+  and Human Services","total_obs":67916596.34,"program_type":"assistance_listing"},{"cfda":"93.603","permalink":"/program/93.603","title":"Adoption
   and Legal Guardianship Incentive Payments Program","popular_name":"Adoption and
   Legal Guardianship Incentive Payments, ALGIPP","agency":"Department of Health and
-  Human Services","total_obs":39780000.0,"program_type":"assistance_listing"},{"cfda":"93.659","permalink":"/program/93.659","title":"Adoption
-  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":37713033.0,"program_type":"assistance_listing"},{"cfda":"93.676","permalink":"/program/93.676","title":"Unaccompanied
-  Alien Children Program","popular_name":"Unaccompanied Alien Children Bureau","agency":"Department
-  of Health and Human Services","total_obs":35472736.0,"program_type":"assistance_listing"},{"cfda":"93.658","permalink":"/program/93.658","title":"Foster
-  Care Title IV-E","popular_name":"Title IV-E Foster Care","agency":"Department of
-  Health and Human Services","total_obs":33398071.0,"program_type":"assistance_listing"},{"cfda":"93.586","permalink":"/program/93.586","title":"State
+  Human Services","total_obs":37362780.05,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
+  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":29935360.75,"program_type":"assistance_listing"},{"cfda":"93.586","permalink":"/program/93.586","title":"State
   Court Improvement Program","popular_name":"State and Tribal Court Improvement Programs","agency":"Department
-  of Health and Human Services","total_obs":29319245.0,"program_type":"assistance_listing"},{"cfda":"93.643","permalink":"/program/93.643","title":"Children''s
+  of Health and Human Services","total_obs":28540203.12,"program_type":"assistance_listing"},{"cfda":"93.643","permalink":"/program/93.643","title":"Children''s
   Justice Grants to States","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":17138358.98,"program_type":"assistance_listing"},{"cfda":"93.090","permalink":"/program/93.090","title":"Guardianship
-  Assistance","popular_name":null,"agency":"Department of Health and Human Services","total_obs":11568294.0,"program_type":"assistance_listing"},{"cfda":"93.472","permalink":"/program/93.472","title":"Title
-  IV-E Prevention Program","popular_name":"Title IV-E Prevention Services","agency":"Department
-  of Health and Human Services","total_obs":9538701.0,"program_type":"assistance_listing"},{"cfda":"93.597","permalink":"/program/93.597","title":"Grants
-  to States for Access and Visitation Programs","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":8245496.36,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
-  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
-  Interior","total_obs":4141463.46,"program_type":"assistance_listing"},{"cfda":"93.652","permalink":"/program/93.652","title":"Adoption
-  Opportunities","popular_name":null,"agency":"Department of Health and Human Services","total_obs":1600000.0,"program_type":"assistance_listing"},{"cfda":"93.471","permalink":"/program/93.471","title":"Title
+  Human Services","total_obs":15830023.65,"program_type":"assistance_listing"},{"cfda":"93.471","permalink":"/program/93.471","title":"Title
   IV-E Kinship Navigator Program","popular_name":"Kinship Navigator","agency":"Department
-  of Health and Human Services","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"93.670","permalink":"/program/93.670","title":"Child
-  Abuse and Neglect Discretionary Activities","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
+  of Health and Human Services","total_obs":15226198.0,"program_type":"assistance_listing"},{"cfda":"93.648","permalink":"/program/93.648","title":"Child
   Welfare Research Training or Demonstration","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.087","permalink":"/program/93.087","title":"Enhance
+  of Health and Human Services","total_obs":14355781.0,"program_type":"assistance_listing"},{"cfda":"93.670","permalink":"/program/93.670","title":"Child
+  Abuse and Neglect Discretionary Activities","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":12338875.96,"program_type":"assistance_listing"},{"cfda":"15.144","permalink":"/program/15.144","title":"Indian
+  Child Welfare Act Title II Grants","popular_name":null,"agency":"Department of the
+  Interior","total_obs":12015227.52,"program_type":"assistance_listing"},{"cfda":"93.087","permalink":"/program/93.087","title":"Enhance
   Safety of Children Affected by Substance Abuse","popular_name":"Regional Partnership
-  Grants (RPGs)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.338","permalink":"/program/10.338","title":"Family
+  Grants (RPGs)","agency":"Department of Health and Human Services","total_obs":11702258.6,"program_type":"assistance_listing"},{"cfda":"93.597","permalink":"/program/93.597","title":"Grants
+  to States for Access and Visitation Programs","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":6599620.61,"program_type":"assistance_listing"},{"cfda":"10.338","permalink":"/program/10.338","title":"Family
   Advocacy","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.00A","permalink":"/program/93.00A","title":"Indian
   Health Service Domestic Violence Forensic Healthcare Services","popular_name":"Indian
   Health Service Domestic Violence Forensic Healthcare Services","agency":"Department
@@ -274,5 +235,5 @@ title: Child Welfare
 total_num_agencies: 4
 total_num_applicant_types: 15
 total_num_programs: 25
-total_obs: 3091574931.75
+total_obs: 11753973271.09
 ---

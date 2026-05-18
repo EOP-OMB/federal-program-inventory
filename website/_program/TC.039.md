@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Energy - Energy Supply
-- Tax Expenditures - Energy
 cfda: TC.039
 fiscal_year: '2025'
 grants_url: null

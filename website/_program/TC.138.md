@@ -8,7 +8,6 @@ authorizations: []
 beneficiary_types: []
 categories:
 - Business and Commerce - Business Development
-- Tax Expenditures - Health
 cfda: TC.138
 fiscal_year: '2025'
 grants_url: null

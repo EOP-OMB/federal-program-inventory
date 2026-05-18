@@ -1,18 +1,18 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":5,"total_obs":38130000000.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":3583739408.57},{"title":"Department
-  of Commerce","total_num_programs":9,"total_obs":640705194.47},{"title":"Department
-  of Agriculture","total_num_programs":33,"total_obs":489913786.25},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":27943927.58},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":2,"total_obs":17710995.77},{"title":"Department
-  of Labor","total_num_programs":1,"total_obs":11820400.61},{"title":"Department of
-  the Interior","total_num_programs":4,"total_obs":7386015.88},{"title":"Department
-  of State","total_num_programs":2,"total_obs":6209535.0},{"title":"Small Business
-  Administration","total_num_programs":1,"total_obs":5700000.0},{"title":"Department
-  of Defense","total_num_programs":2,"total_obs":581400.0},{"title":"Federal Financial
-  Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Export
-  - Import Bank of the United States","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Health and Human Services","total_num_programs":13,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":5,"total_obs":38105977708.11},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":7561477056.38},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":991115838.08},{"title":"Department
+  of Commerce","total_num_programs":9,"total_obs":660890641.53},{"title":"Department
+  of Agriculture","total_num_programs":33,"total_obs":506772686.04},{"title":"National
+  Aeronautics and Space Administration","total_num_programs":2,"total_obs":77603120.0},{"title":"Department
+  of Transportation","total_num_programs":7,"total_obs":57025140.980000004},{"title":"Department
+  of the Interior","total_num_programs":4,"total_obs":13372556.139999999},{"title":"Small
+  Business Administration","total_num_programs":1,"total_obs":5700000.0},{"title":"Department
+  of State","total_num_programs":2,"total_obs":4328725.5},{"title":"Federal Financial
+  Institutions Examination Council Appraisal Subcommittee","total_num_programs":2,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":13,"total_obs":0.0},{"title":"Department
+  of Labor","total_num_programs":1,"total_obs":-25189150.59},{"title":"Export - Import
+  Bank of the United States","total_num_programs":1,"total_obs":-189244296.82}]'
 applicant_types: '[{"title":"Other","total_num_programs":23},{"title":"Nonprofit Organization","total_num_programs":18},{"title":"Not-for-Profit
   Organization","total_num_programs":18},{"title":"For-Profit Organization","total_num_programs":16},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":12},{"title":"U.S.
@@ -171,11 +171,6 @@ categories_subcategories:
   - permalink: /category/income-security-and-social-services/personal-financial-health
     title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/interest-on-the-public-debt
-  subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
 - permalink: /category/international-affairs
   subcategories:
   - permalink: /category/international-affairs/international-relations-and-foreign-affairs
@@ -215,41 +210,6 @@ categories_subcategories:
   - permalink: /category/science-and-technology/general-science-and-basic-research
     title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
@@ -270,74 +230,79 @@ programs: '[{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced tax 
   of the Treasury","total_obs":37140000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.005","permalink":"/program/TC.005","title":"Deduction
   for foreign-derived intangible income derived from trade or business within the
   United States","popular_name":null,"agency":"Department of the Treasury","total_obs":16420000000.0,"program_type":"tax_expenditure"},{"cfda":"81.255","permalink":"/program/81.255","title":"Clean
-  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":3583739408.57,"program_type":"assistance_listing"},{"cfda":"TC.006","permalink":"/program/TC.006","title":"Interest
+  Energy Demonstrations","popular_name":null,"agency":"Department of Energy","total_obs":6159542778.74,"program_type":"assistance_listing"},{"cfda":"TC.006","permalink":"/program/TC.006","title":"Interest
   Charge Domestic International Sales Corporations (IC-DISCs)","popular_name":null,"agency":"Department
-  of the Treasury","total_obs":1930000000.0,"program_type":"tax_expenditure"},{"cfda":"11.038","permalink":"/program/11.038","title":"Public
+  of the Treasury","total_obs":1930000000.0,"program_type":"tax_expenditure"},{"cfda":"81.126","permalink":"/program/81.126","title":"Federal
+  Loan Guarantees for Innovative Energy Technologies","popular_name":"Loan Programs
+  Office ","agency":"Department of Energy","total_obs":1401934277.64,"program_type":"assistance_listing"},{"cfda":"12.225","permalink":"/program/12.225","title":"Commercial
+  Technologies for Maintenance Activities Program","popular_name":"CTMA","agency":"Department
+  of Defense","total_obs":974402683.57,"program_type":"assistance_listing"},{"cfda":"11.038","permalink":"/program/11.038","title":"Public
   Wireless Supply Chain Innovation Fund Grant Program","popular_name":"Innovation
   Fund","agency":"Department of Commerce","total_obs":409852406.47,"program_type":"assistance_listing"},{"cfda":"10.606","permalink":"/program/10.606","title":"Food
   for Progress","popular_name":"FFPr","agency":"Department of Agriculture","total_obs":271347529.0,"program_type":"assistance_listing"},{"cfda":"11.039","permalink":"/program/11.039","title":"Regional
   Technology and Innovation Hubs","popular_name":"Tech Hubs","agency":"Department
-  of Commerce","total_obs":175259151.0,"program_type":"assistance_listing"},{"cfda":"10.170","permalink":"/program/10.170","title":"Specialty
+  of Commerce","total_obs":181453723.0,"program_type":"assistance_listing"},{"cfda":"10.170","permalink":"/program/10.170","title":"Specialty
   Crop Block Grant Program - Farm Bill","popular_name":"Specialty Crop Block Grant
   Program (SCBGP) or Specialty Crop Multi-State Program (SCMP)","agency":"Department
-  of Agriculture","total_obs":72900350.01,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
-  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
-  of Commerce","total_obs":49242920.0,"program_type":"assistance_listing"},{"cfda":"10.175","permalink":"/program/10.175","title":"Farmers
-  Market and Local Food Promotion Program","popular_name":"Farmers Market Promotion
-  Program or Local Food Promotion Program","agency":"Department of Agriculture","total_obs":41427687.81,"program_type":"assistance_listing"},{"cfda":"10.674","permalink":"/program/10.674","title":"Wood
-  Utilization Assistance","popular_name":"State and Private Forestry Wood Innovation
-  Program","agency":"Department of Agriculture","total_obs":41085443.25,"program_type":"assistance_listing"},{"cfda":"10.376","permalink":"/program/10.376","title":"Biobased
-  Market Development and Access Grant Program (BDAP)","popular_name":"Biobased Market
-  Development and Access Grant Program (BDAP)","agency":"Department of Agriculture","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"20.950","permalink":"/program/20.950","title":"Bridge
-  and Other Transportation Infrastructure Research Program","popular_name":"ARPA-I
-  XBRIDGE","agency":"Department of Transportation","total_obs":16000000.0,"program_type":"assistance_listing"},{"cfda":"43.012","permalink":"/program/43.012","title":"Space
+  of Agriculture","total_obs":73783350.01,"program_type":"assistance_listing"},{"cfda":"43.012","permalink":"/program/43.012","title":"Space
   Technology","popular_name":"STMD, Space Tech","agency":"National Aeronautics and
-  Space Administration","total_obs":13804734.4,"program_type":"assistance_listing"},{"cfda":"10.601","permalink":"/program/10.601","title":"Market
-  Access Program","popular_name":"MAP","agency":"Department of Agriculture","total_obs":13591963.25,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
-  Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
-  of Agriculture","total_obs":12131000.0,"program_type":"assistance_listing"},{"cfda":"17.401","permalink":"/program/17.401","title":"International
-  Labor Programs","popular_name":null,"agency":"Department of Labor","total_obs":11820400.61,"program_type":"assistance_listing"},{"cfda":"10.176","permalink":"/program/10.176","title":"Dairy
-  Business Innovation Initiatives","popular_name":"DBI Initiatives","agency":"Department
-  of Agriculture","total_obs":11040000.0,"program_type":"assistance_listing"},{"cfda":"10.854","permalink":"/program/10.854","title":"Rural
+  Space Administration","total_obs":58206055.78,"program_type":"assistance_listing"},{"cfda":"11.040","permalink":"/program/11.040","title":"Distressed
+  Area Recompete Pilot Program","popular_name":"Recompete Pilot Program","agency":"Department
+  of Commerce","total_obs":53167068.25,"program_type":"assistance_listing"},{"cfda":"10.175","permalink":"/program/10.175","title":"Farmers
+  Market and Local Food Promotion Program","popular_name":"Farmers Market Promotion
+  Program or Local Food Promotion Program","agency":"Department of Agriculture","total_obs":41182948.81,"program_type":"assistance_listing"},{"cfda":"10.674","permalink":"/program/10.674","title":"Wood
+  Utilization Assistance","popular_name":"State and Private Forestry Wood Innovation
+  Program","agency":"Department of Agriculture","total_obs":39477355.87,"program_type":"assistance_listing"},{"cfda":"20.109","permalink":"/program/20.109","title":"Air
+  Transportation Centers of Excellence","popular_name":"FAA Centers of Excellence","agency":"Department
+  of Transportation","total_obs":20505747.89,"program_type":"assistance_listing"},{"cfda":"10.376","permalink":"/program/10.376","title":"Biobased
+  Market Development and Access Grant Program (BDAP)","popular_name":"Biobased Market
+  Development and Access Grant Program (BDAP)","agency":"Department of Agriculture","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"10.854","permalink":"/program/10.854","title":"Rural
   Economic Development Loans and Grants","popular_name":"(REDLG)","agency":"Department
-  of Agriculture","total_obs":8998597.0,"program_type":"assistance_listing"},{"cfda":"15.011","permalink":"/program/15.011","title":"Experienced
-  Services Program","popular_name":"ESP","agency":"Department of the Interior","total_obs":6932716.88,"program_type":"assistance_listing"},{"cfda":"20.819","permalink":"/program/20.819","title":"Ballast
-  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":6694427.58,"program_type":"assistance_listing"},{"cfda":"19.108","permalink":"/program/19.108","title":"Bureau
-  of South and Central Asian Affairs","popular_name":"SCA","agency":"Department of
-  State","total_obs":6209535.0,"program_type":"assistance_listing"},{"cfda":"11.427","permalink":"/program/11.427","title":"Fisheries
+  of Agriculture","total_obs":19569775.61,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
+  Operations","popular_name":"Space Operations","agency":"National Aeronautics and
+  Space Administration","total_obs":19397064.22,"program_type":"assistance_listing"},{"cfda":"12.114","permalink":"/program/12.114","title":"Collaborative
+  Research and Development","popular_name":"(Construction Productivity Advancement
+  Research (CPAR) Program)","agency":"Department of Defense","total_obs":16713154.51,"program_type":"assistance_listing"},{"cfda":"20.950","permalink":"/program/20.950","title":"Bridge
+  and Other Transportation Infrastructure Research Program","popular_name":"ARPA-I
+  XBRIDGE","agency":"Department of Transportation","total_obs":16000000.0,"program_type":"assistance_listing"},{"cfda":"20.819","permalink":"/program/20.819","title":"Ballast
+  Water Treatment Technologies","popular_name":null,"agency":"Department of Transportation","total_obs":15214893.09,"program_type":"assistance_listing"},{"cfda":"10.163","permalink":"/program/10.163","title":"Market
+  Protection and Promotion","popular_name":"Market Protection and Promotion","agency":"Department
+  of Agriculture","total_obs":13953566.4,"program_type":"assistance_listing"},{"cfda":"10.601","permalink":"/program/10.601","title":"Market
+  Access Program","popular_name":"MAP","agency":"Department of Agriculture","total_obs":13591963.25,"program_type":"assistance_listing"},{"cfda":"15.011","permalink":"/program/15.011","title":"Experienced
+  Services Program","popular_name":"ESP","agency":"Department of the Interior","total_obs":12351660.86,"program_type":"assistance_listing"},{"cfda":"10.176","permalink":"/program/10.176","title":"Dairy
+  Business Innovation Initiatives","popular_name":"DBI Initiatives","agency":"Department
+  of Agriculture","total_obs":11040000.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
+  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":10668758.0,"program_type":"assistance_listing"},{"cfda":"11.427","permalink":"/program/11.427","title":"Fisheries
   Promotion, Marketing and Development","popular_name":"The Saltonstall-Kennedy Research
-  Grant Program","agency":"Department of Commerce","total_obs":5950223.0,"program_type":"assistance_listing"},{"cfda":"59.065","permalink":"/program/59.065","title":"Growth
+  Grant Program","agency":"Department of Commerce","total_obs":5748685.81,"program_type":"assistance_listing"},{"cfda":"59.065","permalink":"/program/59.065","title":"Growth
   Accelerator Fund Competition","popular_name":null,"agency":"Small Business Administration","total_obs":5700000.0,"program_type":"assistance_listing"},{"cfda":"10.177","permalink":"/program/10.177","title":"Regional
   Food System Partnerships","popular_name":"Regional Food System Partnership Program","agency":"Department
   of Agriculture","total_obs":5224700.22,"program_type":"assistance_listing"},{"cfda":"20.949","permalink":"/program/20.949","title":"RESEARCH
   INITIATIVE ON THE USE OF STEEL SLAG IN CONCRETE AND CEMENT","popular_name":null,"agency":"Department
-  of Transportation","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"43.007","permalink":"/program/43.007","title":"Space
-  Operations","popular_name":"Space Operations","agency":"National Aeronautics and
-  Space Administration","total_obs":3906261.37,"program_type":"assistance_listing"},{"cfda":"10.604","permalink":"/program/10.604","title":"Technical
+  of Transportation","total_obs":5000000.0,"program_type":"assistance_listing"},{"cfda":"19.108","permalink":"/program/19.108","title":"Bureau
+  of South and Central Asian Affairs","popular_name":"SCA","agency":"Department of
+  State","total_obs":4328725.5,"program_type":"assistance_listing"},{"cfda":"10.604","permalink":"/program/10.604","title":"Technical
   Assistance for Specialty Crops Program","popular_name":"TASC","agency":"Department
   of Agriculture","total_obs":2805522.97,"program_type":"assistance_listing"},{"cfda":"10.997","permalink":"/program/10.997","title":"U.S.
   Codex Office Support for International Activities","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":1737499.7,"program_type":"assistance_listing"},{"cfda":"10.164","permalink":"/program/10.164","title":"Wholesale
-  Farmers and Alternative Market Development","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":1541365.0,"program_type":"assistance_listing"},{"cfda":"10.681","permalink":"/program/10.681","title":"Wood  Education
-  and Resource  Center (WERC)","popular_name":"WERC","agency":"Department of Agriculture","total_obs":1142686.0,"program_type":"assistance_listing"},{"cfda":"10.162","permalink":"/program/10.162","title":"Inspection
-  Grading and Standardization","popular_name":"Agricultural Fair Practices Act","agency":"Department
-  of Agriculture","total_obs":849166.15,"program_type":"assistance_listing"},{"cfda":"10.167","permalink":"/program/10.167","title":"Transportation
-  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":691884.96,"program_type":"assistance_listing"},{"cfda":"12.114","permalink":"/program/12.114","title":"Collaborative
-  Research and Development","popular_name":"(Construction Productivity Advancement
-  Research (CPAR) Program)","agency":"Department of Defense","total_obs":581400.0,"program_type":"assistance_listing"},{"cfda":"15.072","permalink":"/program/15.072","title":"USGS
+  of Agriculture","total_obs":1737499.7,"program_type":"assistance_listing"},{"cfda":"10.681","permalink":"/program/10.681","title":"Wood  Education
+  and Resource  Center (WERC)","popular_name":"WERC","agency":"Department of Agriculture","total_obs":1212868.0,"program_type":"assistance_listing"},{"cfda":"15.072","permalink":"/program/15.072","title":"USGS
   Experienced Services Program","popular_name":"USGS ESP","agency":"Department of
-  the Interior","total_obs":453299.0,"program_type":"assistance_listing"},{"cfda":"10.605","permalink":"/program/10.605","title":"Quality
-  Samples Program","popular_name":"QSP","agency":"Department of Agriculture","total_obs":441568.0,"program_type":"assistance_listing"},{"cfda":"11.024","permalink":"/program/11.024","title":"BUILD
-  TO SCALE","popular_name":"BUILD TO SCALE","agency":"Department of Commerce","total_obs":400494.0,"program_type":"assistance_listing"},{"cfda":"20.909","permalink":"/program/20.909","title":"Transportation
+  the Interior","total_obs":1020895.28,"program_type":"assistance_listing"},{"cfda":"10.164","permalink":"/program/10.164","title":"Wholesale
+  Farmers and Alternative Market Development","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":966245.14,"program_type":"assistance_listing"},{"cfda":"10.162","permalink":"/program/10.162","title":"Inspection
+  Grading and Standardization","popular_name":"Agricultural Fair Practices Act","agency":"Department
+  of Agriculture","total_obs":701786.6,"program_type":"assistance_listing"},{"cfda":"10.167","permalink":"/program/10.167","title":"Transportation
+  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":669547.96,"program_type":"assistance_listing"},{"cfda":"10.605","permalink":"/program/10.605","title":"Quality
+  Samples Program","popular_name":"QSP","agency":"Department of Agriculture","total_obs":441568.0,"program_type":"assistance_listing"},{"cfda":"20.909","permalink":"/program/20.909","title":"Transportation
   Research and Technology Advancement","popular_name":null,"agency":"Department of
-  Transportation","total_obs":249500.0,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
-  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":123975.71,"program_type":"assistance_listing"},{"cfda":"10.153","permalink":"/program/10.153","title":"Market
-  News","popular_name":null,"agency":"Department of Agriculture","total_obs":59129.25,"program_type":"assistance_listing"},{"cfda":"10.174","permalink":"/program/10.174","title":"Acer
+  Transportation","total_obs":249500.0,"program_type":"assistance_listing"},{"cfda":"10.153","permalink":"/program/10.153","title":"Market
+  News","popular_name":null,"agency":"Department of Agriculture","total_obs":192482.79,"program_type":"assistance_listing"},{"cfda":"10.603","permalink":"/program/10.603","title":"Emerging
+  Markets Program","popular_name":"EMP","agency":"Department of Agriculture","total_obs":123975.71,"program_type":"assistance_listing"},{"cfda":"20.820","permalink":"/program/20.820","title":"Maritime
+  Studies and Innovations","popular_name":"Ship Operations Cooperative Program (SOCP)","agency":"Department
+  of Transportation","total_obs":55000.0,"program_type":"assistance_listing"},{"cfda":"10.174","permalink":"/program/10.174","title":"Acer
   Access Development Program","popular_name":"Acer Access and Development Program","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.109","permalink":"/program/20.109","title":"Air
-  Transportation Centers of Excellence","popular_name":"FAA Centers of Excellence","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.108","permalink":"/program/20.108","title":"Aviation
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.108","permalink":"/program/20.108","title":"Aviation
   Research Grants","popular_name":null,"agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.GM2","permalink":"/program/93.GM2","title":"Biomedical
   Research - SBIR-STTR (SB)","popular_name":null,"agency":"Department of Health and
   Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.236","permalink":"/program/10.236","title":"Bioproduct
@@ -348,27 +313,18 @@ programs: '[{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced tax 
   Financial Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDS","permalink":"/program/93.HDS","title":"Child
   Health and Human Development Small Business Innovation Research & Small Business
   Technology Transfer Research","popular_name":"Child Health and Human Development
-  SBIR/ STTR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.225","permalink":"/program/12.225","title":"Commercial
-  Technologies for Maintenance Activities Program","popular_name":"CTMA","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.480","permalink":"/program/93.480","title":"Complementary
+  SBIR/ STTR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.480","permalink":"/program/93.480","title":"Complementary
   and Integrative Health - SBIR/STTR","popular_name":"National Center for Complementary
-  and Integrative Health - SBIR/STTR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.018","permalink":"/program/21.018","title":"Coronavirus
-  Relief - Pandemic Relief for Aviation Workers","popular_name":"Payroll Support Program
-  (PSP1) and Payroll Support Program Extension (PSP2), and Third Payroll Support Program
-  (PSP3)","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.046","permalink":"/program/11.046","title":"Cybersecurity
+  and Integrative Health - SBIR/STTR","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.046","permalink":"/program/11.046","title":"Cybersecurity
   Workforce Community-Building and Stakeholder Engagement","popular_name":null,"agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.089","permalink":"/program/15.089","title":"DOI
   - HQ Experienced Services Program","popular_name":"Experienced Services Program","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.KSB","permalink":"/program/93.KSB","title":"Diabetes,
   Digestive, Kidney Extramural Research - SBIR-STTR","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.079","permalink":"/program/15.079","title":"Experienced
-  Services Program (ESP)","popular_name":"BOEM ESP","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"31.007","permalink":"/program/31.007","title":"Export
-  - Loan Guarantee/Insured Loans","popular_name":"Export - Loan Guarantee/Insured
-  Loans","agency":"Export - Import Bank of the United States","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.610","permalink":"/program/10.610","title":"Export
+  Services Program (ESP)","popular_name":"BOEM ESP","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.610","permalink":"/program/10.610","title":"Export
   Guarantee Program","popular_name":"The GSM-102 Program","agency":"Department of
-  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.126","permalink":"/program/81.126","title":"Federal
-  Loan Guarantees for Innovative Energy Technologies","popular_name":"Loan Programs
-  Office ","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.156","permalink":"/program/10.156","title":"Federal-State
+  Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.156","permalink":"/program/10.156","title":"Federal-State
   Marketing Improvement Program","popular_name":"Federal- State Marketing Improvement
   Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.204","permalink":"/program/19.204","title":"Fishermen''s
   Guaranty Fund","popular_name":"(Section 7)","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.SRS","permalink":"/program/93.SRS","title":"Hazardous
@@ -378,9 +334,7 @@ programs: '[{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced tax 
   Genome Research - Small Business","popular_name":"National Human Genome Research
   Institute - Small Business","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.619","permalink":"/program/10.619","title":"International
   Agricultural Education Fellowship Program","popular_name":"IAEFP","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.820","permalink":"/program/20.820","title":"Maritime
-  Studies and Innovations","popular_name":"Ship Operations Cooperative Program (SOCP)","agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.112","permalink":"/program/11.112","title":"Market
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.112","permalink":"/program/11.112","title":"Market
   Development Cooperator Program","popular_name":"MDCP","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.155","permalink":"/program/10.155","title":"Marketing
   Agreements and Orders","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.180","permalink":"/program/10.180","title":"Meat
   and Poultry Inspection Readiness Grants \u2013 Supplemental Funding","popular_name":"Meat
@@ -414,12 +368,18 @@ programs: '[{"cfda":"TC.004","permalink":"/program/TC.004","title":"Reduced tax 
   Institutions Examination Council Appraisal Subcommittee","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.612","permalink":"/program/10.612","title":"USDA
   Local and Regional Food Aid Procurement Program","popular_name":"Local and Regional
   Food Aid Procurement Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.195","permalink":"/program/10.195","title":"Organic
-  Dairy Product Promotion","popular_name":"ODPP","agency":"Department of Agriculture","total_obs":-17226282.03,"program_type":"assistance_listing"},{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing
+  Dairy Product Promotion","popular_name":"ODPP","agency":"Department of Agriculture","total_obs":-11250000.0,"program_type":"assistance_listing"},{"cfda":"21.018","permalink":"/program/21.018","title":"Coronavirus
+  Relief - Pandemic Relief for Aviation Workers","popular_name":"Payroll Support Program
+  (PSP1) and Payroll Support Program Extension (PSP2), and Third Payroll Support Program
+  (PSP3)","agency":"Department of the Treasury","total_obs":-24022291.89,"program_type":"assistance_listing"},{"cfda":"17.401","permalink":"/program/17.401","title":"International
+  Labor Programs","popular_name":null,"agency":"Department of Labor","total_obs":-25189150.59,"program_type":"assistance_listing"},{"cfda":"31.007","permalink":"/program/31.007","title":"Export
+  - Loan Guarantee/Insured Loans","popular_name":"Export - Loan Guarantee/Insured
+  Loans","agency":"Export - Import Bank of the United States","total_obs":-189244296.82,"program_type":"assistance_listing"},{"cfda":"TC.007","permalink":"/program/TC.007","title":"Expensing
   of research and experimentation expenditures (normal tax method)","popular_name":null,"agency":"Department
   of the Treasury","total_obs":-17360000000.0,"program_type":"tax_expenditure"}]'
 title: Economic Development
 total_num_agencies: 14
 total_num_applicant_types: 62
 total_num_programs: 84
-total_obs: 42921710664.13
+total_obs: 47769830025.35
 ---
