@@ -4,13 +4,14 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=match_percent&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=match_percent&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "0",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "0",
@@ -18,6 +19,7 @@
           },
           {
             "code": "5",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "5",
@@ -25,6 +27,7 @@
           },
           {
             "code": "10",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "10",
@@ -32,6 +35,7 @@
           },
           {
             "code": "15",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "15",
@@ -39,6 +43,7 @@
           },
           {
             "code": "20",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "20",
@@ -46,6 +51,7 @@
           },
           {
             "code": "25",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "25",
@@ -53,6 +59,7 @@
           },
           {
             "code": "30",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "30",
@@ -60,6 +67,7 @@
           },
           {
             "code": "35",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "35",
@@ -67,6 +75,7 @@
           },
           {
             "code": "40",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "40",
@@ -74,6 +83,7 @@
           },
           {
             "code": "45",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "45",
@@ -81,6 +91,7 @@
           },
           {
             "code": "50",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "50",
@@ -88,6 +99,7 @@
           },
           {
             "code": "55",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "55",
@@ -95,6 +107,7 @@
           },
           {
             "code": "60",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "60",
@@ -102,6 +115,7 @@
           },
           {
             "code": "65",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "65",
@@ -109,6 +123,7 @@
           },
           {
             "code": "70",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "70",
@@ -116,6 +131,7 @@
           },
           {
             "code": "75",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "75",
@@ -123,6 +139,7 @@
           },
           {
             "code": "80",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "80",
@@ -130,6 +147,7 @@
           },
           {
             "code": "85",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "85",
@@ -137,6 +155,7 @@
           },
           {
             "code": "90",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "90",
@@ -144,6 +163,7 @@
           },
           {
             "code": "95",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "95",
@@ -151,6 +171,7 @@
           },
           {
             "code": "100",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "100",
@@ -162,16 +183,18 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=assistance_type&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=assistance_type&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "A",
+            "is_active": "N",
             "elements": [
               {
                 "code": "A",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0001001",
@@ -179,6 +202,7 @@
               },
               {
                 "code": "A",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0001002",
@@ -186,6 +210,7 @@
               },
               {
                 "code": "A",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0001003",
@@ -193,6 +218,7 @@
               },
               {
                 "code": "A",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0001004",
@@ -204,10 +230,166 @@
             "value": "FORMULA GRANTS"
           },
           {
+            "code": "FF",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "F001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F001",
+                "value": "Grant"
+              },
+              {
+                "code": "F002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F002",
+                "value": "Cooperative Agreement"
+              },
+              {
+                "code": "F003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F003",
+                "value": "Direct Loan"
+              },
+              {
+                "code": "F004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F004",
+                "value": "Loan Guarantee"
+              },
+              {
+                "code": "F005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F005",
+                "value": "Indemnity/Insurance (non-loan)"
+              },
+              {
+                "code": "F006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F006",
+                "value": "Direct Payment for Specified Use"
+              },
+              {
+                "code": "F007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F007",
+                "value": "Direct Payment with Unrestricted Use"
+              },
+              {
+                "code": "F008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F008",
+                "value": "Asset Forfeiture/Equitable Sharing"
+              },
+              {
+                "code": "F009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F009",
+                "value": "Sale, Exchange, or Donation of Property and Goods"
+              },
+              {
+                "code": "F010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "F010",
+                "value": "Other Financial Assistance"
+              }
+            ],
+            "description": null,
+            "element_id": "F",
+            "value": "Financial"
+          },
+          {
+            "code": "NN",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "N001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N001",
+                "value": "Use of Property, Facilities, and Equipment"
+              },
+              {
+                "code": "N002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N002",
+                "value": "Provision of Specialized Services"
+              },
+              {
+                "code": "N003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N003",
+                "value": "Advisory Services"
+              },
+              {
+                "code": "N004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N004",
+                "value": "Dissemination of Technical Information"
+              },
+              {
+                "code": "N005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N005",
+                "value": "Training"
+              },
+              {
+                "code": "N006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N006",
+                "value": "Investigation of Complaints"
+              },
+              {
+                "code": "N007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "N007",
+                "value": "Other Non-Financial Assistance"
+              }
+            ],
+            "description": null,
+            "element_id": "N",
+            "value": "Non-Financial"
+          },
+          {
             "code": "B",
+            "is_active": "N",
             "elements": [
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003001",
@@ -215,6 +397,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003002",
@@ -222,6 +405,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003003",
@@ -229,6 +413,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003004",
@@ -236,6 +421,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003005",
@@ -243,6 +429,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003006",
@@ -250,6 +437,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003007",
@@ -257,6 +445,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003008",
@@ -264,6 +453,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003009",
@@ -271,6 +461,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003010",
@@ -278,6 +469,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003011",
@@ -285,6 +477,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003012",
@@ -292,6 +485,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003013",
@@ -299,6 +493,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003014",
@@ -306,6 +501,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003015",
@@ -313,6 +509,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003016",
@@ -320,6 +517,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003017",
@@ -327,6 +525,7 @@
               },
               {
                 "code": "B",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0003018",
@@ -339,9 +538,11 @@
           },
           {
             "code": "C",
+            "is_active": "N",
             "elements": [
               {
                 "code": "C",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0005001",
@@ -349,6 +550,7 @@
               },
               {
                 "code": "C",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0005002",
@@ -361,9 +563,11 @@
           },
           {
             "code": "D",
+            "is_active": "N",
             "elements": [
               {
                 "code": "D",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0007001",
@@ -376,9 +580,11 @@
           },
           {
             "code": "E",
+            "is_active": "N",
             "elements": [
               {
                 "code": "E",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0009001",
@@ -391,9 +597,11 @@
           },
           {
             "code": "F",
+            "is_active": "N",
             "elements": [
               {
                 "code": "F",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0011001",
@@ -401,6 +609,7 @@
               },
               {
                 "code": "F",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0011002",
@@ -408,6 +617,7 @@
               },
               {
                 "code": "F",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0011003",
@@ -415,6 +625,7 @@
               },
               {
                 "code": "F",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0011004",
@@ -427,9 +638,11 @@
           },
           {
             "code": "G",
+            "is_active": "N",
             "elements": [
               {
                 "code": "G",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0013001",
@@ -437,6 +650,7 @@
               },
               {
                 "code": "G",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0013002",
@@ -444,6 +658,7 @@
               },
               {
                 "code": "G",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0013003",
@@ -456,9 +671,11 @@
           },
           {
             "code": "H",
+            "is_active": "N",
             "elements": [
               {
                 "code": "H",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0015001",
@@ -471,9 +688,11 @@
           },
           {
             "code": "I",
+            "is_active": "N",
             "elements": [
               {
                 "code": "I",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0017001",
@@ -486,9 +705,11 @@
           },
           {
             "code": "J",
+            "is_active": "N",
             "elements": [
               {
                 "code": "J",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0019001",
@@ -501,9 +722,11 @@
           },
           {
             "code": "K",
+            "is_active": "N",
             "elements": [
               {
                 "code": "K",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0021001",
@@ -511,6 +734,7 @@
               },
               {
                 "code": "K",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0021002",
@@ -523,9 +747,11 @@
           },
           {
             "code": "L",
+            "is_active": "N",
             "elements": [
               {
                 "code": "L",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0023001",
@@ -533,6 +759,7 @@
               },
               {
                 "code": "L",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0023002",
@@ -545,9 +772,11 @@
           },
           {
             "code": "M",
+            "is_active": "N",
             "elements": [
               {
                 "code": "M",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0025001",
@@ -560,9 +789,11 @@
           },
           {
             "code": "N",
+            "is_active": "N",
             "elements": [
               {
                 "code": "N",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0027020",
@@ -570,6 +801,7 @@
               },
               {
                 "code": "N",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0027001",
@@ -577,6 +809,7 @@
               },
               {
                 "code": "N",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0027002",
@@ -589,9 +822,11 @@
           },
           {
             "code": "O",
+            "is_active": "N",
             "elements": [
               {
                 "code": "O",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0029001",
@@ -604,9 +839,11 @@
           },
           {
             "code": "Z",
+            "is_active": "N",
             "elements": [
               {
                 "code": "Z",
+                "is_active": "N",
                 "elements": null,
                 "description": null,
                 "element_id": "0090001",
@@ -623,13 +860,14 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=applicant_types&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=applicant_types&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "24",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0020",
@@ -637,6 +875,7 @@
           },
           {
             "code": "09",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0001",
@@ -644,6 +883,7 @@
           },
           {
             "code": "10",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0003",
@@ -651,13 +891,23 @@
           },
           {
             "code": "11",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0005",
             "value": "Interstate"
           },
           {
+            "code": "ET11010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET11010",
+            "value": "Unrestricted by Entity Type"
+          },
+          {
             "code": "12",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0007",
@@ -665,6 +915,7 @@
           },
           {
             "code": "13",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0040",
@@ -672,13 +923,23 @@
           },
           {
             "code": "14",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0009",
             "value": "State (includes District of Columbia, public institutions of higher education and hospitals)"
           },
           {
+            "code": "ET11020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET11020",
+            "value": "Unrestricted by Individual Type"
+          },
+          {
             "code": "15",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0011",
@@ -686,6 +947,7 @@
           },
           {
             "code": "18",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0013",
@@ -693,13 +955,23 @@
           },
           {
             "code": "20",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0015",
             "value": "Public nonprofit institution/organization (includes institutions of higher education and hospitals)"
           },
           {
+            "code": "ET21010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET21010",
+            "value": "U.S. Federal Government"
+          },
+          {
             "code": "21",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0017",
@@ -707,13 +979,23 @@
           },
           {
             "code": "22",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0019",
             "value": "Federally Recognized Indian Tribal Governments"
           },
           {
+            "code": "ET22010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22010",
+            "value": "U.S. State Government (including the District of Columbia)"
+          },
+          {
             "code": "23",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0021",
@@ -721,13 +1003,23 @@
           },
           {
             "code": "30",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0023",
             "value": "Non-Government - General"
           },
           {
+            "code": "ET22020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22020",
+            "value": "U.S. Territory (or Possession) Government (including freely-associated states)"
+          },
+          {
             "code": "31",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0025",
@@ -735,6 +1027,7 @@
           },
           {
             "code": "32",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0027",
@@ -742,13 +1035,23 @@
           },
           {
             "code": "33",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0029",
             "value": "Specialized group (e.g. health professionals, students, veterans)"
           },
           {
+            "code": "ET22030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22030",
+            "value": "Department or Agency of a U.S. State Government"
+          },
+          {
             "code": "34",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0031",
@@ -756,6 +1059,7 @@
           },
           {
             "code": "35",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0033",
@@ -763,13 +1067,23 @@
           },
           {
             "code": "36",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0035",
             "value": "Private nonprofit institution/organization (includes institutions of higher education and hospitals)"
           },
           {
+            "code": "ET22040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22040",
+            "value": "Department or Agency of a U.S. Territorial Government"
+          },
+          {
             "code": "37",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0037",
@@ -777,13 +1091,23 @@
           },
           {
             "code": "38",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0039",
             "value": "Other private institutions/organizations"
           },
           {
+            "code": "ET22050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22050",
+            "value": "Interstate Organization"
+          },
+          {
             "code": "39",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0041",
@@ -791,13 +1115,23 @@
           },
           {
             "code": "40",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0043",
             "value": "Native American Organizations (includes Indian groups, cooperatives, corporations, partnerships, associations)"
           },
           {
+            "code": "ET23010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23010",
+            "value": "Federally Recognized Indian/Native American/Alaska Native Tribal Government"
+          },
+          {
             "code": "45",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0045",
@@ -805,6 +1139,7 @@
           },
           {
             "code": "46",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0046",
@@ -812,6 +1147,7 @@
           },
           {
             "code": "47",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0047",
@@ -819,6 +1155,7 @@
           },
           {
             "code": "48",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0048",
@@ -826,13 +1163,23 @@
           },
           {
             "code": "49",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0049",
             "value": "Independent School District"
           },
           {
+            "code": "ET23020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23020",
+            "value": "Indian/Native American/Alaska Native Tribal Government (Other than Federally Recognized)"
+          },
+          {
             "code": "50",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0050",
@@ -840,6 +1187,7 @@
           },
           {
             "code": "51",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0051",
@@ -847,6 +1195,7 @@
           },
           {
             "code": "52",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0052",
@@ -854,6 +1203,7 @@
           },
           {
             "code": "53",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0053",
@@ -861,6 +1211,7 @@
           },
           {
             "code": "54",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0054",
@@ -868,13 +1219,23 @@
           },
           {
             "code": "55",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0055",
             "value": "For-Profit Organization (Other than Small Business)"
           },
           {
+            "code": "ET23030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23030",
+            "value": "Tribally Designated Housing Authority"
+          },
+          {
             "code": "56",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0056",
@@ -882,6 +1243,7 @@
           },
           {
             "code": "57",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0057",
@@ -889,6 +1251,7 @@
           },
           {
             "code": "58",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0058",
@@ -896,13 +1259,23 @@
           },
           {
             "code": "59",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0059",
             "value": "Alaska Native and Native Hawaiian Serving Institutions"
           },
           {
+            "code": "ET24010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24010",
+            "value": "Municipality or Township government (inclusive of cities, towns, boroughs (except in Alaska), and villages)"
+          },
+          {
             "code": "60",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0060",
@@ -910,10 +1283,267 @@
           },
           {
             "code": "44",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "0044",
             "value": "Other (specify)"
+          },
+          {
+            "code": "ET24020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24020",
+            "value": "County Government (inclusive of boroughs in Alaska, parishes and other governmental entities with geographic regional control and authority)"
+          },
+          {
+            "code": "ET24030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24030",
+            "value": "School District Government"
+          },
+          {
+            "code": "ET24040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24040",
+            "value": "School District"
+          },
+          {
+            "code": "ET24050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24050",
+            "value": "Other Local Government Consortium, Regional Organization (Intrastate), or Other Local Government Combination"
+          },
+          {
+            "code": "ET25010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25010",
+            "value": "Public Housing Authority"
+          },
+          {
+            "code": "ET25020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25020",
+            "value": "Planning Commission"
+          },
+          {
+            "code": "ET25030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25030",
+            "value": "Airport Authority"
+          },
+          {
+            "code": "ET25040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25040",
+            "value": "Port Authority"
+          },
+          {
+            "code": "ET25050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25050",
+            "value": "Transit Authority"
+          },
+          {
+            "code": "ET25060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25060",
+            "value": "Water Delivery Authority"
+          },
+          {
+            "code": "ET25070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25070",
+            "value": "Other Special Disctrict Government"
+          },
+          {
+            "code": "ET26010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26010",
+            "value": "Local"
+          },
+          {
+            "code": "ET26020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26020",
+            "value": "State"
+          },
+          {
+            "code": "ET26030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26030",
+            "value": "Territorial"
+          },
+          {
+            "code": "ET26040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26040",
+            "value": "Tribal"
+          },
+          {
+            "code": "ET31010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET31010",
+            "value": "Foreign Government"
+          },
+          {
+            "code": "ET32010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32010",
+            "value": "Foreign Non-Government Nonprofit Organization"
+          },
+          {
+            "code": "ET32020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32020",
+            "value": "Foreign Non-Government Not-for-Profit Organization"
+          },
+          {
+            "code": "ET32030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32030",
+            "value": "Foreign Non-Governmental For-Profit Organization"
+          },
+          {
+            "code": "ET33010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET33010",
+            "value": "International Organization"
+          },
+          {
+            "code": "ET41010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41010",
+            "value": "Nonprofit Organization"
+          },
+          {
+            "code": "ET41020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41020",
+            "value": "Not-for-Profit Organization"
+          },
+          {
+            "code": "ET41030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41030",
+            "value": "For-Profit Organization"
+          },
+          {
+            "code": "ET51060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51060",
+            "value": "Builder/Contractor/Developer"
+          },
+          {
+            "code": "ET51100",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51100",
+            "value": "Farmworker"
+          },
+          {
+            "code": "ET51120",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51120",
+            "value": "Small Business Person"
+          },
+          {
+            "code": "ET59010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59010",
+            "value": "Homeowner"
+          },
+          {
+            "code": "ET59020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59020",
+            "value": "Land/Property Owner"
+          },
+          {
+            "code": "ET59060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59060",
+            "value": "Veteran (including dependents)"
+          },
+          {
+            "code": "ET59070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59070",
+            "value": "Active-Duty Service Person (including dependents"
+          },
+          {
+            "code": "ET59080",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59080",
+            "value": "Reservist (including dependents)"
+          },
+          {
+            "code": "ET59999",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59999",
+            "value": "Other"
           }
         ],
         "id": "applicant_types"
@@ -921,13 +1551,14 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=assistance_usage_types&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=assistance_usage_types&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "00",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "1",
@@ -935,13 +1566,32 @@
           },
           {
             "code": "12",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "2",
             "value": "Agriculture/Forestry/Fish and Game"
           },
           {
+            "code": "AD",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "AD001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "AD001",
+                "value": "Administrative Expenses"
+              }
+            ],
+            "description": null,
+            "element_id": "AD",
+            "value": "Administrative Expenses"
+          },
+          {
             "code": "14",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "3",
@@ -949,20 +1599,201 @@
           },
           {
             "code": "16",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "4",
             "value": "Civil Defense/Disaster Prevention and Relief/Emergency Preparedness"
           },
           {
+            "code": "CC",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "CC001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC001",
+                "value": "Professional Services"
+              },
+              {
+                "code": "CC002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC002",
+                "value": "Publication and Printing"
+              },
+              {
+                "code": "CC003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC003",
+                "value": "Marketing, Advertising, and Public Relations"
+              },
+              {
+                "code": "CC004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC004",
+                "value": "Computer Services"
+              },
+              {
+                "code": "CC005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC005",
+                "value": "Rehabilitation Services"
+              },
+              {
+                "code": "CC006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC006",
+                "value": "Counseling Services"
+              },
+              {
+                "code": "CC007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC007",
+                "value": "Information Services"
+              },
+              {
+                "code": "CC008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC008",
+                "value": "Labor Management"
+              },
+              {
+                "code": "CC009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC009",
+                "value": "Administrative Services"
+              },
+              {
+                "code": "CC010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC010",
+                "value": "Architectural and Engineering"
+              },
+              {
+                "code": "CC011",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC011",
+                "value": "Audit Services"
+              },
+              {
+                "code": "CC012",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC012",
+                "value": "Subrecipient"
+              },
+              {
+                "code": "CC013",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CC013",
+                "value": "Project Inspection"
+              }
+            ],
+            "description": null,
+            "element_id": "CC",
+            "value": "Consultant/Contractor"
+          },
+          {
             "code": "18",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "5",
             "value": "Communications"
           },
           {
+            "code": "CF",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "CF001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF001",
+                "value": "Rental of Facilities"
+              },
+              {
+                "code": "CF002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF002",
+                "value": "Speakers\u2019 Fees"
+              },
+              {
+                "code": "CF003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF003",
+                "value": "Costs of Meals and Refreshments"
+              },
+              {
+                "code": "CF004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF004",
+                "value": "Local Transportation"
+              },
+              {
+                "code": "CF005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF005",
+                "value": "A/V Equipment"
+              },
+              {
+                "code": "CF006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF006",
+                "value": "Conference Fees"
+              },
+              {
+                "code": "CF007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CF007",
+                "value": "Incidentals"
+              }
+            ],
+            "description": null,
+            "element_id": "CF",
+            "value": "Conferences"
+          },
+          {
             "code": "20",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "6",
@@ -970,13 +1801,120 @@
           },
           {
             "code": "22",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "7",
             "value": "Construction/Renewal/Rehabilitation"
           },
           {
+            "code": "CN",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "CN001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN001",
+                "value": "Appraisals"
+              },
+              {
+                "code": "CN002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN002",
+                "value": "Rights-of-Way"
+              },
+              {
+                "code": "CN003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN003",
+                "value": "Project Inspection Fees"
+              },
+              {
+                "code": "CN004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN004",
+                "value": "Demolition and Removal"
+              },
+              {
+                "code": "CN005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN005",
+                "value": "Normal/Ordinary Repair"
+              },
+              {
+                "code": "CN006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN006",
+                "value": "Rearrangement and reconversion costs"
+              },
+              {
+                "code": "CN007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN007",
+                "value": "New Construction"
+              },
+              {
+                "code": "CN008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN008",
+                "value": "Refinancing"
+              },
+              {
+                "code": "CN009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN009",
+                "value": "Major Renovations"
+              },
+              {
+                "code": "CN010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN010",
+                "value": "Minor Renovations/Alterations"
+              },
+              {
+                "code": "CN011",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN011",
+                "value": "Reconstruction"
+              },
+              {
+                "code": "CN012",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CN012",
+                "value": "Restoration"
+              }
+            ],
+            "description": null,
+            "element_id": "CN",
+            "value": "Construction"
+          },
+          {
             "code": "24",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "8",
@@ -984,6 +1922,7 @@
           },
           {
             "code": "26",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "9",
@@ -991,13 +1930,88 @@
           },
           {
             "code": "28",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "10",
             "value": "Economic Development"
           },
           {
+            "code": "CP",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "CP001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP001",
+                "value": "Personal Services Compensation (e.g., Salary, Stipend)"
+              },
+              {
+                "code": "CP002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP002",
+                "value": "Fringe Benefits"
+              },
+              {
+                "code": "CP003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP003",
+                "value": "Employee Health and Welfare"
+              },
+              {
+                "code": "CP004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP004",
+                "value": "Memberships, Subscriptions, and Professional Activity Costs"
+              },
+              {
+                "code": "CP005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP005",
+                "value": "Recruiting costs"
+              },
+              {
+                "code": "CP006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP006",
+                "value": "Staff Training and Development"
+              },
+              {
+                "code": "CP007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP007",
+                "value": "Fellowships"
+              },
+              {
+                "code": "CP008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "CP008",
+                "value": "Retirement"
+              }
+            ],
+            "description": null,
+            "element_id": "CP",
+            "value": "Compensation-Personal Services"
+          },
+          {
             "code": "30",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "11",
@@ -1005,20 +2019,97 @@
           },
           {
             "code": "32",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "12",
             "value": "Employment/Labor/Management"
           },
           {
+            "code": "EQ",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "EQ001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ001",
+                "value": "Equipment Rental/User Fee"
+              },
+              {
+                "code": "EQ002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ002",
+                "value": "Depreciation"
+              },
+              {
+                "code": "EQ003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ003",
+                "value": "Disposal"
+              },
+              {
+                "code": "EQ004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ004",
+                "value": "Maintenance and Repair"
+              },
+              {
+                "code": "EQ005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ005",
+                "value": "Materials and Supplies Costs, Including Costs of Computing Devices"
+              },
+              {
+                "code": "EQ006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "EQ006",
+                "value": "Telecommunication or Video Surveillance"
+              }
+            ],
+            "description": null,
+            "element_id": "EQ",
+            "value": "Equipment"
+          },
+          {
             "code": "34",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "13",
             "value": "Energy"
           },
           {
+            "code": "IC",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "IC001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "IC001",
+                "value": "Indirect Costs"
+              }
+            ],
+            "description": null,
+            "element_id": "IC",
+            "value": "Indirect Costs"
+          },
+          {
             "code": "36",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "14",
@@ -1026,6 +2117,7 @@
           },
           {
             "code": "38",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "15",
@@ -1033,20 +2125,145 @@
           },
           {
             "code": "40",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "16",
             "value": "Health/Medical"
           },
           {
+            "code": "MC",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "MC001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC001",
+                "value": "Award Termination"
+              },
+              {
+                "code": "MC002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC002",
+                "value": "Award Closeout"
+              },
+              {
+                "code": "MC003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC003",
+                "value": "Insurance"
+              },
+              {
+                "code": "MC004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC004",
+                "value": "Project Planning"
+              },
+              {
+                "code": "MC005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC005",
+                "value": "Fundraising"
+              },
+              {
+                "code": "MC006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC006",
+                "value": "Interest"
+              },
+              {
+                "code": "MC007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC007",
+                "value": "Taxes"
+              },
+              {
+                "code": "MC008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC008",
+                "value": "Publication and Printing"
+              },
+              {
+                "code": "MC009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC009",
+                "value": "Food Commodities"
+              },
+              {
+                "code": "MC010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC010",
+                "value": "Bonding"
+              },
+              {
+                "code": "MC011",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC011",
+                "value": "Postage"
+              },
+              {
+                "code": "MC012",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "MC012",
+                "value": "Depreciation"
+              }
+            ],
+            "description": null,
+            "element_id": "MC",
+            "value": "Miscellaneous"
+          },
+          {
             "code": "42",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "17",
             "value": "Higher Education (includes Research)"
           },
           {
+            "code": "PM",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "PM001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "PM001",
+                "value": "Program Management Expenses"
+              }
+            ],
+            "description": null,
+            "element_id": "PM",
+            "value": "Program Management Expenses"
+          },
+          {
             "code": "44",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "18",
@@ -1054,6 +2271,7 @@
           },
           {
             "code": "46",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "19",
@@ -1061,27 +2279,177 @@
           },
           {
             "code": "48",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "20",
-            "value": "International (includes Export/Import)"
+            "value": "International (includes Export/lmport)"
+          },
+          {
+            "code": "PR",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "PR001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "PR001",
+                "value": "Program Related Supplies"
+              }
+            ],
+            "description": null,
+            "element_id": "PR",
+            "value": "Program Related Supplies"
           },
           {
             "code": "50",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "21",
             "value": "Law, Justice, and Legal Services"
           },
           {
+            "code": "RP",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "RP001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP001",
+                "value": "Facilities Rental/User Fee"
+              },
+              {
+                "code": "RP002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP002",
+                "value": "Disposal (Including Gains and Losses)"
+              },
+              {
+                "code": "RP003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP003",
+                "value": "Maintenance and Repair"
+              },
+              {
+                "code": "RP004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP004",
+                "value": "Utilities (e.g., Power, Water, Phones)"
+              },
+              {
+                "code": "RP005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP005",
+                "value": "Specialized Service Facility"
+              },
+              {
+                "code": "RP006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP006",
+                "value": "Special Purpose Equipment"
+              },
+              {
+                "code": "RP007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP007",
+                "value": "General Purpose Equipment"
+              },
+              {
+                "code": "RP008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP008",
+                "value": "Real Property Purchase"
+              },
+              {
+                "code": "RP009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP009",
+                "value": "Real Property Depreciation"
+              },
+              {
+                "code": "RP010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP010",
+                "value": "Mortgage Principal"
+              },
+              {
+                "code": "RP011",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP011",
+                "value": "Mortgage Interest"
+              },
+              {
+                "code": "RP012",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP012",
+                "value": "Mortgage Taxes"
+              },
+              {
+                "code": "RP013",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP013",
+                "value": "Groundskeeping"
+              },
+              {
+                "code": "RP014",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP014",
+                "value": "Management"
+              },
+              {
+                "code": "RP015",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RP015",
+                "value": "Central Receiving"
+              }
+            ],
+            "description": null,
+            "element_id": "RP",
+            "value": "Real Property/Facilities"
+          },
+          {
             "code": "52",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "22",
-            "value": "Libraries/Information/Statistics"
+            "value": "Libraries/lnformation/Statistics"
           },
           {
             "code": "54",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "23",
@@ -1089,13 +2457,304 @@
           },
           {
             "code": "56",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "24",
             "value": "Natural Resources (mineral, water, wildlife, land)"
           },
           {
+            "code": "RX",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "RX001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX001",
+                "value": "Alcoholic Beverages"
+              },
+              {
+                "code": "RX002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX002",
+                "value": "Alteration and Renovations"
+              },
+              {
+                "code": "RX003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX003",
+                "value": "Animals, Animal Welfare"
+              },
+              {
+                "code": "RX004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX004",
+                "value": "Audiovisual Activities"
+              },
+              {
+                "code": "RX005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX005",
+                "value": "Books and Journals"
+              },
+              {
+                "code": "RX006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX006",
+                "value": "Building Acquisition"
+              },
+              {
+                "code": "RX007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX007",
+                "value": "Capital Expenditures"
+              },
+              {
+                "code": "RX008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX008",
+                "value": "Communications"
+              },
+              {
+                "code": "RX009",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX009",
+                "value": "Consortium Agreements"
+              },
+              {
+                "code": "RX010",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX010",
+                "value": "Customs and Import Duties"
+              },
+              {
+                "code": "RX011",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX011",
+                "value": "Donor Costs"
+              },
+              {
+                "code": "RX012",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX012",
+                "value": "Drugs"
+              },
+              {
+                "code": "RX013",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX013",
+                "value": "Equipment"
+              },
+              {
+                "code": "RX014",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX014",
+                "value": "Hazardous Waste Disposal"
+              },
+              {
+                "code": "RX015",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX015",
+                "value": "Honoraria"
+              },
+              {
+                "code": "RX016",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX016",
+                "value": "Human Subject Expenses"
+              },
+              {
+                "code": "RX017",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX017",
+                "value": "Incentive Costs"
+              },
+              {
+                "code": "RX018",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX018",
+                "value": "Institutional Animal Care and Use Committee (IACUC)"
+              },
+              {
+                "code": "RX019",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX019",
+                "value": "Institutional Review Board (IRB) costs"
+              },
+              {
+                "code": "RX020",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX020",
+                "value": "Intellectual Property"
+              },
+              {
+                "code": "RX021",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX021",
+                "value": "Laboratory Directed Research and Development"
+              },
+              {
+                "code": "RX022",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX022",
+                "value": "Legal Services"
+              },
+              {
+                "code": "RX023",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX023",
+                "value": "Library Services"
+              },
+              {
+                "code": "RX024",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX024",
+                "value": "Meals"
+              },
+              {
+                "code": "RX025",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX025",
+                "value": "Medical liability insurance"
+              },
+              {
+                "code": "RX026",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX026",
+                "value": "Participant Support Costs"
+              },
+              {
+                "code": "RX027",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX027",
+                "value": "Profit or Fee"
+              },
+              {
+                "code": "RX028",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX028",
+                "value": "Registration Fees"
+              },
+              {
+                "code": "RX029",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX029",
+                "value": "Research Patient Care Costs"
+              },
+              {
+                "code": "RX030",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX030",
+                "value": "Stipends"
+              },
+              {
+                "code": "RX031",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX031",
+                "value": "Supplies"
+              },
+              {
+                "code": "RX032",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX032",
+                "value": "Trailers and Modular Units"
+              },
+              {
+                "code": "RX033",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX033",
+                "value": "Trainee Costs, Training Related Expenses"
+              },
+              {
+                "code": "RX034",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX034",
+                "value": "Travel \u2013 Research Patients"
+              },
+              {
+                "code": "RX035",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "RX035",
+                "value": "Value Added Tax"
+              }
+            ],
+            "description": null,
+            "element_id": "RX",
+            "value": "Research Related Expenses"
+          },
+          {
             "code": "58",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "25",
@@ -1103,13 +2762,40 @@
           },
           {
             "code": "60",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "26",
             "value": "Public Works"
           },
           {
+            "code": "TE",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "TE001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TE001",
+                "value": "Scholarships, Student Aid, and Tuition"
+              },
+              {
+                "code": "TE002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TE002",
+                "value": "Special Purpose Equipment"
+              }
+            ],
+            "description": null,
+            "element_id": "TE",
+            "value": "Training & Education"
+          },
+          {
             "code": "62",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "27",
@@ -1117,13 +2803,88 @@
           },
           {
             "code": "64",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "28",
             "value": "Regional Development"
           },
           {
+            "code": "TT",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "TT001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT001",
+                "value": "Travel - Domestic"
+              },
+              {
+                "code": "TT002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT002",
+                "value": "Travel - Foreign"
+              },
+              {
+                "code": "TT003",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT003",
+                "value": "Transportation of Things"
+              },
+              {
+                "code": "TT004",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT004",
+                "value": "Relocation Costs of Employees"
+              },
+              {
+                "code": "TT005",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT005",
+                "value": "Lodging and Subsistence"
+              },
+              {
+                "code": "TT006",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT006",
+                "value": "Parking"
+              },
+              {
+                "code": "TT007",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT007",
+                "value": "Exchange Rates"
+              },
+              {
+                "code": "TT008",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "TT008",
+                "value": "Visa Costs"
+              }
+            ],
+            "description": null,
+            "element_id": "TT",
+            "value": "Travel & Transportation"
+          },
+          {
             "code": "66",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "29",
@@ -1131,13 +2892,40 @@
           },
           {
             "code": "70",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "31",
             "value": "Training"
           },
           {
+            "code": "UN",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "UN001",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "UN001",
+                "value": "Unrestricted Use"
+              },
+              {
+                "code": "UN002",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "UN002",
+                "value": "Specific Restrictions Determined at NOFO Level"
+              }
+            ],
+            "description": null,
+            "element_id": "UN",
+            "value": "Unrestricted/Undetermined Use"
+          },
+          {
             "code": "68",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "30",
@@ -1145,13 +2933,32 @@
           },
           {
             "code": "74",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "33",
             "value": "Vocational Education"
           },
           {
+            "code": "ZZ",
+            "is_active": "Y",
+            "elements": [
+              {
+                "code": "ZZ999",
+                "is_active": "Y",
+                "elements": null,
+                "description": null,
+                "element_id": "ZZ999",
+                "value": "Other"
+              }
+            ],
+            "description": null,
+            "element_id": "ZZ",
+            "value": "Other"
+          },
+          {
             "code": "76",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "34",
@@ -1159,6 +2966,7 @@
           },
           {
             "code": "72",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "32",
@@ -1170,13 +2978,14 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=beneficiary_types&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=beneficiary_types&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "10",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "1",
@@ -1184,6 +2993,7 @@
           },
           {
             "code": "11",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "2",
@@ -1191,6 +3001,7 @@
           },
           {
             "code": "12",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "3",
@@ -1198,13 +3009,23 @@
           },
           {
             "code": "14",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "4",
             "value": "State"
           },
           {
+            "code": "ET11010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET11010",
+            "value": "Unrestricted by Entity Type"
+          },
+          {
             "code": "15",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "5",
@@ -1212,6 +3033,7 @@
           },
           {
             "code": "18",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "6",
@@ -1219,6 +3041,7 @@
           },
           {
             "code": "20",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "7",
@@ -1226,6 +3049,7 @@
           },
           {
             "code": "21",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "8",
@@ -1233,13 +3057,23 @@
           },
           {
             "code": "22",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "9",
             "value": "Federally Recognized Indian Tribal Governments"
           },
           {
+            "code": "ET11020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET11020",
+            "value": "Unrestricted by Individual Type"
+          },
+          {
             "code": "23",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "10",
@@ -1247,6 +3081,7 @@
           },
           {
             "code": "31",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "11",
@@ -1254,6 +3089,7 @@
           },
           {
             "code": "32",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "12",
@@ -1261,13 +3097,23 @@
           },
           {
             "code": "33",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "13",
             "value": "Specialized group (e.g. health professionals, students, veterans)"
           },
           {
+            "code": "ET12010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET12010",
+            "value": "Specific Restrictions Determined at NOFO Level"
+          },
+          {
             "code": "34",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "14",
@@ -1275,6 +3121,7 @@
           },
           {
             "code": "35",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "15",
@@ -1282,6 +3129,7 @@
           },
           {
             "code": "36",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "16",
@@ -1289,6 +3137,7 @@
           },
           {
             "code": "37",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "17",
@@ -1296,13 +3145,23 @@
           },
           {
             "code": "38",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "18",
             "value": "Other private institution/organization"
           },
           {
+            "code": "ET21010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET21010",
+            "value": "U.S. Federal Government"
+          },
+          {
             "code": "39",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "19",
@@ -1310,6 +3169,7 @@
           },
           {
             "code": "40",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "20",
@@ -1317,6 +3177,7 @@
           },
           {
             "code": "41",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "21",
@@ -1324,6 +3185,7 @@
           },
           {
             "code": "42",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "22",
@@ -1331,13 +3193,23 @@
           },
           {
             "code": "43",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "23",
             "value": "Student/Trainee"
           },
           {
+            "code": "ET22010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22010",
+            "value": "U.S. State Government (including the District of Columbia)"
+          },
+          {
             "code": "44",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "24",
@@ -1345,6 +3217,7 @@
           },
           {
             "code": "45",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "25",
@@ -1352,6 +3225,7 @@
           },
           {
             "code": "46",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "26",
@@ -1359,6 +3233,7 @@
           },
           {
             "code": "47",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "27",
@@ -1366,6 +3241,7 @@
           },
           {
             "code": "48",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "28",
@@ -1373,13 +3249,23 @@
           },
           {
             "code": "49",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "29",
             "value": "Farmer/Rancher/Agriculture Producer"
           },
           {
+            "code": "ET22020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22020",
+            "value": "U.S. Territory (or Possession) Government (including freely-associated states)"
+          },
+          {
             "code": "50",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "30",
@@ -1387,6 +3273,7 @@
           },
           {
             "code": "51",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "31",
@@ -1394,6 +3281,7 @@
           },
           {
             "code": "52",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "32",
@@ -1401,13 +3289,23 @@
           },
           {
             "code": "53",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "33",
             "value": "Homeowner"
           },
           {
+            "code": "ET22030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22030",
+            "value": "Department or Agency of a U.S. State Government"
+          },
+          {
             "code": "54",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "34",
@@ -1415,6 +3313,7 @@
           },
           {
             "code": "57",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "35",
@@ -1422,6 +3321,7 @@
           },
           {
             "code": "58",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "36",
@@ -1429,6 +3329,7 @@
           },
           {
             "code": "59",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "37",
@@ -1436,13 +3337,23 @@
           },
           {
             "code": "60",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "38",
             "value": "Asian"
           },
           {
+            "code": "ET22040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22040",
+            "value": "Department or Agency of a U.S. Territorial Government"
+          },
+          {
             "code": "61",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "39",
@@ -1450,6 +3361,7 @@
           },
           {
             "code": "62",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "40",
@@ -1457,6 +3369,7 @@
           },
           {
             "code": "63",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "41",
@@ -1464,6 +3377,7 @@
           },
           {
             "code": "64",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "42",
@@ -1471,6 +3385,7 @@
           },
           {
             "code": "65",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "43",
@@ -1478,13 +3393,23 @@
           },
           {
             "code": "66",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "44",
             "value": "Women"
           },
           {
+            "code": "ET22050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET22050",
+            "value": "Interstate Organization"
+          },
+          {
             "code": "69",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "45",
@@ -1492,6 +3417,7 @@
           },
           {
             "code": "70",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "46",
@@ -1499,6 +3425,7 @@
           },
           {
             "code": "71",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "47",
@@ -1506,6 +3433,7 @@
           },
           {
             "code": "72",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "48",
@@ -1513,13 +3441,23 @@
           },
           {
             "code": "73",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "49",
             "value": "Alcoholic"
           },
           {
+            "code": "ET23010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23010",
+            "value": "Federally Recognized Indian/Native American/Alaska Native Tribal Government"
+          },
+          {
             "code": "74",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "50",
@@ -1527,6 +3465,7 @@
           },
           {
             "code": "77",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "51",
@@ -1534,6 +3473,7 @@
           },
           {
             "code": "78",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "52",
@@ -1541,13 +3481,23 @@
           },
           {
             "code": "76",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "53",
             "value": "Infant (0-5)"
           },
           {
+            "code": "ET23020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23020",
+            "value": "Indian/Native American/Alaska Native Tribal Government (Other than Federally Recognized)"
+          },
+          {
             "code": "79",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "54",
@@ -1555,6 +3505,7 @@
           },
           {
             "code": "80",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "55",
@@ -1562,6 +3513,7 @@
           },
           {
             "code": "81",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "56",
@@ -1569,6 +3521,7 @@
           },
           {
             "code": "84",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "57",
@@ -1576,6 +3529,7 @@
           },
           {
             "code": "85",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "58",
@@ -1583,13 +3537,23 @@
           },
           {
             "code": "86",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "59",
             "value": "Pension Recipient"
           },
           {
+            "code": "ET23030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET23030",
+            "value": "Tribally Designated Housing Authority"
+          },
+          {
             "code": "87",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "60",
@@ -1597,6 +3561,7 @@
           },
           {
             "code": "88",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "61",
@@ -1604,6 +3569,7 @@
           },
           {
             "code": "91",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "62",
@@ -1611,13 +3577,23 @@
           },
           {
             "code": "92",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "63",
             "value": "Other Urban"
           },
           {
+            "code": "ET24010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24010",
+            "value": "Municipality or Township government (inclusive of cities, towns, boroughs (except in Alaska), and villages)"
+          },
+          {
             "code": "93",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "64",
@@ -1625,6 +3601,7 @@
           },
           {
             "code": "94",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "65",
@@ -1632,6 +3609,7 @@
           },
           {
             "code": "96",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "66",
@@ -1639,6 +3617,7 @@
           },
           {
             "code": "97",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "67",
@@ -1646,10 +3625,491 @@
           },
           {
             "code": "98",
+            "is_active": "N",
             "elements": null,
             "description": null,
             "element_id": "68",
             "value": "Education (13+)"
+          },
+          {
+            "code": "ET24020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24020",
+            "value": "County Government (inclusive of boroughs in Alaska, parishes and other governmental entities with geographic regional control and authority)"
+          },
+          {
+            "code": "ET24030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24030",
+            "value": "School District Government"
+          },
+          {
+            "code": "ET24040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24040",
+            "value": "School District"
+          },
+          {
+            "code": "ET24050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET24050",
+            "value": "Other Local Government Consortium, Regional Organization (Intrastate), or Other Local Government Combination"
+          },
+          {
+            "code": "ET25010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25010",
+            "value": "Public Housing Authority"
+          },
+          {
+            "code": "ET25020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25020",
+            "value": "Planning Commission"
+          },
+          {
+            "code": "ET25030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25030",
+            "value": "Airport Authority"
+          },
+          {
+            "code": "ET25040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25040",
+            "value": "Port Authority"
+          },
+          {
+            "code": "ET25050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25050",
+            "value": "Transit Authority"
+          },
+          {
+            "code": "ET25060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25060",
+            "value": "Water Delivery Authority"
+          },
+          {
+            "code": "ET25070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET25070",
+            "value": "Other Special Disctrict Government"
+          },
+          {
+            "code": "ET26010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26010",
+            "value": "Local"
+          },
+          {
+            "code": "ET26020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26020",
+            "value": "State"
+          },
+          {
+            "code": "ET26030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26030",
+            "value": "Territorial"
+          },
+          {
+            "code": "ET26040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET26040",
+            "value": "Tribal"
+          },
+          {
+            "code": "ET31010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET31010",
+            "value": "Foreign Government"
+          },
+          {
+            "code": "ET32010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32010",
+            "value": "Foreign Non-Government Nonprofit Organization"
+          },
+          {
+            "code": "ET32020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32020",
+            "value": "Foreign Non-Government Not-for-Profit Organization"
+          },
+          {
+            "code": "ET32030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET32030",
+            "value": "Foreign Non-Governmental For-Profit Organization"
+          },
+          {
+            "code": "ET33010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET33010",
+            "value": "International Organization"
+          },
+          {
+            "code": "ET41010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41010",
+            "value": "Nonprofit Organization"
+          },
+          {
+            "code": "ET41020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41020",
+            "value": "Not-for-Profit Organization"
+          },
+          {
+            "code": "ET41030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET41030",
+            "value": "For-Profit Organization"
+          },
+          {
+            "code": "ET51010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51010",
+            "value": "Health Professional"
+          },
+          {
+            "code": "ET51020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51020",
+            "value": "Education Professional"
+          },
+          {
+            "code": "ET51030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51030",
+            "value": "Scientist/Researcher"
+          },
+          {
+            "code": "ET51040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51040",
+            "value": "Artist/Humanist"
+          },
+          {
+            "code": "ET51050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51050",
+            "value": "Engineer/Architect"
+          },
+          {
+            "code": "ET51060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51060",
+            "value": "Builder/Contractor/Developer"
+          },
+          {
+            "code": "ET51070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51070",
+            "value": "Miner"
+          },
+          {
+            "code": "ET51080",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51080",
+            "value": "Longshore and Harbor Worker"
+          },
+          {
+            "code": "ET51090",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51090",
+            "value": "Farmer/Rancher/Agriculture Producer"
+          },
+          {
+            "code": "ET51100",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51100",
+            "value": "Farmworker"
+          },
+          {
+            "code": "ET51110",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51110",
+            "value": "Industrialist/Business Person"
+          },
+          {
+            "code": "ET51120",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51120",
+            "value": "Small Business Person"
+          },
+          {
+            "code": "ET51130",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET51130",
+            "value": "Criminal Justice Personnel"
+          },
+          {
+            "code": "ET52010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52010",
+            "value": "Infant and Toddler (0-3)"
+          },
+          {
+            "code": "ET52020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52020",
+            "value": "Young Child (4-9)"
+          },
+          {
+            "code": "ET52030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52030",
+            "value": "Pre-Teen (10-12)"
+          },
+          {
+            "code": "ET52040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52040",
+            "value": "Teen (13-19)"
+          },
+          {
+            "code": "ET52050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52050",
+            "value": "Adult (20 to 64)"
+          },
+          {
+            "code": "ET52060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET52060",
+            "value": "Senior Citizen (65+)"
+          },
+          {
+            "code": "ET53010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53010",
+            "value": "Early Childhood Education"
+          },
+          {
+            "code": "ET53020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53020",
+            "value": "Primary Education"
+          },
+          {
+            "code": "ET53030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53030",
+            "value": "Lower Secondary Education"
+          },
+          {
+            "code": "ET53040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53040",
+            "value": "Upper Secondary Education"
+          },
+          {
+            "code": "ET53050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53050",
+            "value": "Non-university Higher Education"
+          },
+          {
+            "code": "ET53060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53060",
+            "value": "University Higher Education"
+          },
+          {
+            "code": "ET53070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53070",
+            "value": "Graduate and Professional Higher Education"
+          },
+          {
+            "code": "ET53080",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET53080",
+            "value": "Trainee"
+          },
+          {
+            "code": "ET59010",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59010",
+            "value": "Homeowner"
+          },
+          {
+            "code": "ET59020",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59020",
+            "value": "Land/Property Owner"
+          },
+          {
+            "code": "ET59030",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59030",
+            "value": "Refugee"
+          },
+          {
+            "code": "ET59040",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59040",
+            "value": "U.S. Citizen"
+          },
+          {
+            "code": "ET59050",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59050",
+            "value": "Resident/Citizen of a U.S. Territory"
+          },
+          {
+            "code": "ET59060",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59060",
+            "value": "Veteran (including dependents)"
+          },
+          {
+            "code": "ET59070",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59070",
+            "value": "Active-Duty Service Person (including dependents"
+          },
+          {
+            "code": "ET59080",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59080",
+            "value": "Reservist (including dependents)"
+          },
+          {
+            "code": "ET59090",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59090",
+            "value": "Consumer"
+          },
+          {
+            "code": "ET59999",
+            "is_active": "Y",
+            "elements": null,
+            "description": null,
+            "element_id": "ET59999",
+            "value": "Other"
           }
         ],
         "id": "beneficiary_types"
@@ -1657,13 +4117,14 @@
       {
         "_links": {
           "self": {
-            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=cfr200_requirements&keyword={&size}",
+            "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=cfr200_requirements&keyword={&size,isActive}",
             "templated": true
           }
         },
         "elements": [
           {
             "code": "subpartB",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "subpartB",
@@ -1671,6 +4132,7 @@
           },
           {
             "code": "subpartC",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "subpartC",
@@ -1678,6 +4140,7 @@
           },
           {
             "code": "subpartD",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "subpartD",
@@ -1685,6 +4148,7 @@
           },
           {
             "code": "subpartE",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "subpartE",
@@ -1692,6 +4156,7 @@
           },
           {
             "code": "subpartF",
+            "is_active": "Y",
             "elements": null,
             "description": null,
             "element_id": "subpartF",
@@ -1704,11 +4169,11 @@
   },
   "_links": {
     "search": {
-      "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?keyword={&ids,size}{ids}",
+      "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?keyword={&ids,size,isActive}{ids}",
       "templated": true
     },
     "self": {
-      "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=match_percent%2Cassistance_type%2Capplicant_types%2Cassistance_usage_types%2Cbeneficiary_types%2Ccfr200_requirements&keyword={&size}",
+      "href": "https://53cfdamodernization.prod.apps-internal.prod-iae.bsp.gsa.gov/fac/v1/programs/dictionaries?ids=match_percent%2Cassistance_type%2Capplicant_types%2Cassistance_usage_types%2Cbeneficiary_types%2Ccfr200_requirements&keyword={&size,isActive}",
       "templated": true
     }
   }

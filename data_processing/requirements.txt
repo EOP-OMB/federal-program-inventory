@@ -1,0 +1,4 @@
+requests
+pandas==2.3.1
+pyyaml
+tabula-py

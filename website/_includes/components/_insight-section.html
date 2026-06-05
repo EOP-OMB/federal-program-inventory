@@ -1,0 +1,43 @@
+<div
+  class="top-2"
+>
+  <h3
+    class="text-ink margin-bottom-2 margin-top-0 display-flex flex-align-center"
+    style="font-size: 1rem"
+  >
+    <svg
+      class="usa-icon margin-right-1"
+      aria-hidden="true"
+      focusable="false"
+      role="img"
+    >
+      <use href="/assets/img/sprite.svg#lightbulb_outline"></use>
+    </svg>
+    Insight
+  </h3>
+  <p class="text-base-dark margin-bottom-1" style="font-size: 0.875rem">
+    {% assign expenditure_total_value = include.expenditure_total_value | plus: 0 %}
+    {% if include.program_number == 0 %}
+      No programs are currently working toward this objective as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+    {% elsif include.program_number == 1 %}
+      1 program is working toward this objective, spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+    {% else %}
+      {% if expenditure_total_value == 0 %}
+        {{ include.program_number }} programs are working toward this objective,
+        spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+      {% else %}
+        {{ include.program_number }} programs are working toward this objective,
+        spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}. The largest
+        program is the
+        <a href="{{ include.largest_program_link }}" class="usa-link"
+          >{{ include.largest_program_title }}</a
+        >
+        ({{ include.largest_program_expenditure }}). The smallest is the
+        <a href="{{ include.smallest_program_link }}" class="usa-link"
+          >{{ include.smallest_program_title }}</a
+        >
+        ({{ include.smallest_program_expenditure }}).
+      {% endif %}
+    {% endif %}
+  </p>
+</div>

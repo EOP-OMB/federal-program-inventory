@@ -5,20 +5,13 @@ footer_include: _footer-category.html
 ---
 
 <section
-  class="bg-primary-darker padding-x-2 padding-y-3"
-  style="
-    background-image: url('../../assets/img/banner.png'),
-      linear-gradient(0deg, #272a63, #272a63);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  "
+  class="padding-x-2 padding-y-3"
 >
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
         <h1
-          class="usa-display usa-heading text-white font-heading-2xl text-light"
+          class="usa-display usa-heading site-title-font text-light"
         >
           {{ layout.header_title }}
         </h1>
@@ -46,7 +39,7 @@ footer_include: _footer-category.html
     </nav>
   </div>
   <div class="grid-row grid-gap padding-top-1">
-    <div class="width-full text-primary font-sans-xl line-height-sans-2">
+    <div class="width-full text-primary font-heading-xl line-height-sans-2">
       {{ page.title }}
     </div>
     <div class="grid-col-8 line-height-sans-3 padding-top-1">
@@ -90,7 +83,7 @@ footer_include: _footer-category.html
         {{ page.title }} expenditures
       </h3>
 
-      <p class="text-ink font-sans-sm line-height-body-3">
+      <p class="text-ink font-heading-sm line-height-body-3">
         All data for this chart was provided by the administering agency and sourced from
         <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
           rel="noopener noreferrer">SAM.gov</a> and
@@ -99,20 +92,20 @@ footer_include: _footer-category.html
       </p>
       <div class="display-flex margin-bottom-2">
         <div class="padding-right-5 display-flex flex-column">
-          <div class="text-primary font-sans-3xl text-bold">
+          <div class="text-primary font-heading-3xl text-bold">
             {{ page.total_num_programs }}
           </div>
           <div class="font-heading-lg line-height-heading-5">programs</div>
         </div>
         <div class="padding-right-5 display-flex flex-column">
-          <div id="obligations-total" class="text-primary font-sans-3xl text-bold">
+          <div id="obligations-total" class="text-primary font-heading-3xl text-bold">
           </div>
           <div class="font-heading-lg line-height-heading-5">
             in FY {{ page.fiscal_year }} expenditures
           </div>
         </div>
         <div class="display-flex flex-column">
-          <div class="text-primary font-sans-3xl text-bold">
+          <div class="text-primary font-heading-3xl text-bold">
             {{ page.total_num_sub_cats }}
           </div>
           <div class="font-heading-lg line-height-heading-5">
@@ -141,7 +134,7 @@ footer_include: _footer-category.html
             checked
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="subCategory"
             >Sub-category</label
           >
@@ -155,7 +148,7 @@ footer_include: _footer-category.html
             name="view-options"
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="agency"
             >Agency</label
           >
@@ -169,7 +162,7 @@ footer_include: _footer-category.html
             name="view-options"
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="eligible-applicant"
             >Eligible applicant type</label
           >
@@ -181,7 +174,7 @@ footer_include: _footer-category.html
 
       <!-- Three tables, hidden/shown dynamically -->
       <div id="table-container">
-        <div id="table-title" class="text-bold font-sans-lg text-primary">
+        <div id="table-title" class="text-bold font-heading-lg text-primary">
           <!-- The title will be dynamically updated here -->
         </div>
         <table class="usa-table width-full margin-bottom-0" id="sub-categories-table">
@@ -294,7 +287,7 @@ footer_include: _footer-category.html
       <div>
         <div class="grid-row grid-gap flex-align-center">
           <div class="grid-col-fill">
-            <span class="font-sans-sm" id="pagination-info">
+            <span class="font-heading-sm" id="pagination-info">
               Showing <span class="text-bold" id="results-start">1</span> to
               <span class="text-bold" id="results-end">10</span> of
               <span class="text-bold" id="results-total">0</span> results
@@ -357,4 +350,3 @@ footer_include: _footer-category.html
     </div>
   </div>
 </div>
-{% include _about-the-data.html %}

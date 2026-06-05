@@ -1,129 +1,221 @@
 ---
 layout: default
-footer_include: _footer-home.html
 permalink: /
 ---
 
-<div class="home-background position-relative">
-  <div class="display-flex flex-column">
-    <div class="display-flex flex-justify-center padding-top-5">
-      <div class="grid-container-tablet-lg">
-        <div class="usa-layout-grid padding-3 radius-md bg-primary-darker">
-          <div class="width-full text-center text-white font-sans-2xl tablet:font-sans-3xl text-light line-height-sans-1">
-            The U.S. Federal Government administers over 2,600 federal programs, totaling over $7 trillion in FY {{ page.fiscal_year }} expenditures.
-          </div>
-          <div class="display-flex flex-justify-center margin-top-3">
-            <a href="/category" class="usa-button bg-primary font-body-md tablet:font-sans-lg text-bold hover:bg-accent-cool hover:text-primary">
-              Explore programs by category 
-            </a>
-          </div>
-        </div>
+<!-- Section 1: Homepage Image -->
+<section class="width-full">
+  <div class="grid-container">
+    <div class="grid-row flex-justify-center">
+      <div class="grid-col-12">
+        <img src="/assets/img/HomepageFlag.svg" alt="Homepage Flag" class="homepage-flag"/>
       </div>
     </div>
-
-    <div class="width-full bg-white margin-top-4" style="background-color: rgba(255, 255, 255, 0.9);">
-      <div class="grid-container-desktop-lg padding-bottom-7">
-        <h1 class="font-heading-xl tablet:font-heading-2xl text-light text-primary margin-bottom-0">
-          Find programs in the Federal Program Inventory
-        </h1>
-        <div class="grid-row grid-gap-6">
-          <div class="grid-col-12 tablet:grid-col-3">
-            <label class="usa-label text-bold line-height-sans-1" for="agency-select">Agency</label>
-            <div class="usa-combo-box">
-              <select class="usa-select" name="agency-select" id="agency-select">
-                <option value="">Select an agency</option>
-                {% for agency in page.cfo_agencies %}
-                <option value="{{ agency.title | slugify }}">{{ agency.title }}</option>
-                {% endfor %}
-                <option value="other-agencies">Other agencies</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="grid-col-12 tablet:grid-col-3">
-            <label class="usa-label text-bold line-height-sans-1" for="category-select">Category</label>
-            <div class="usa-combo-box">
-              <select class="usa-select" name="category-select" id="category-select">
-                <option value="">Select a category</option>
-                {% for category in page.categories %}
-                <option value="{{ category.title | slugify }}">{{ category.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-
-          <div class="grid-col-12 tablet:grid-col-3">
-            <label class="usa-label text-bold line-height-sans-1" for="program-type-select">Program type</label>
-            <div class="usa-combo-box">
-              <select class="usa-select" name="program-type-select" id="program-type-select">
-                <option value="">Select a program type</option>
-                {% for type in page.program_types %}
-                <option value="{{ type.title | slugify }}">{{ type.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-
-          <div class="grid-col-12 tablet:grid-col-3">
-            <label class="usa-label text-bold line-height-sans-1" for="applicant-select">Eligible applicant</label>
-            <div class="usa-combo-box">
-              <select class="usa-select" name="applicant-select" id="applicant-select">
-                <option value="">Select eligible applicant type</option>
-                {% for applicant in page.applicant_types %}
-                <option value="{{ applicant.title | slugify }}">{{ applicant.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <button class="usa-button margin-top-205" id="find-programs-button">Find Programs</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="width-full bg-secondary">
-  <div class="grid-container padding-bottom-1">
-      <div class="width-full text-white font-sans-xl line-height-sans-3 padding-top-5 padding-bottom-2">About the Federal Program Inventory
-      </div>
-      <div class="grid-row">
-          <div class="grid-col-8">
-              <p class="text-white font-sans-sm line-height-sans-3 margin-bottom-1">
-                  In 2024, building upon the successful 2020 exploratory pilot effort and recommendations published in the
-                  2021 Report to Congress, OMB launched the Federal Program Inventory, which focused on Federal financial
-                  assistance. In 2025, OMB expanded the Federal Program Inventory to include Tax Expenditures and Interest
-                  on the Public Debt.
-              </p>
-
-              <p class="text-white font-sans-sm text-bold line-height-sans-3">
-                  <a href="/about/fpi" class="text-white text-no-underline">
-                      Learn more >
-                  </a>
-              </p>
-          </div>
-          <div class="grid-col-4">
-              <div class="bars-container position-relative overflow-hidden tablet:overflow-visible">
-                  <!-- First bar -->
-                  <div class="height-3 bg-primary margin-bottom-1" style="margin-left: 5%; width: 100vw"></div>
-                  <!-- Second bar -->
-                  <div class="height-3 bg-accent-warm margin-bottom-1" style="margin-left: 29%; width: 100vw"></div>
-                  <!-- Third bar -->
-                  <div class="height-3 bg-warning margin-bottom-1" style="margin-left: 7%; width: 100vw"></div>
-                  <!-- Fourth bar -->
-                  <div class="height-3 bg-secondary-dark margin-bottom-1" style="margin-left: 15%; width: 100vw"></div>
-                  <!-- Fifth bar -->
-                  <div class="height-3 bg-info-dark margin-bottom-1" style="margin-left: 27%; width: 100vw"></div>
-                  <!-- Sixth bar -->
-                  <div class="height-3 bg-primary-darker margin-bottom-1" style="margin-left: 39%; width: 100vw"></div>
-                  <!-- Seventh bar -->
-                  <div class="height-3 bg-error margin-bottom-1" style="margin-left: 5%; width: 100vw"></div>
-                  <!-- Eighth bar -->
-                  <div class="height-3 bg-info-lighter margin-bottom-1" style="margin-left: 20%; width: 100vw"></div>
-                  <!-- Ninth bar -->
-                  <div class="height-3 bg-gold margin-bottom-1" style="margin-left: 15%; width: 100vw"></div>
-              </div>
-          </div>
-      </div>
   </div>
 </section>
+
+<!-- Section 2: Introduction Section -->
+<section class="intro-section">
+  <div class="grid-container">
+    <div class="grid-row flex-justify-center">
+      <div class="grid-col-12 tablet:grid-col-8 text-center">
+        <h1 class="font-heading-2xl homepage-title">
+          The Federal Program Inventory
+        </h1>
+        <p class="homepage-subheader">
+          Accountability starts with visibility
+        </p>
+        <p class="font-heading-md homepage-subheader-description">
+          Federal programs, in one place.<br>
+          See what they cost and what they aim to achieve.
+        </p>
+        <div class="homepage-buttons">
+          <a href="/search" class="usa-button">
+            Explore programs
+          </a>
+          <a href="/about/fpi" class="usa-button">
+            About
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Program Info Section -->
+<section class="info-sections">
+  <div class="grid-container">
+    <div class="grid-row grid-gap-4">
+      <div class="grid-col-12 tablet:grid-col-3 text-center">
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' -}}</p>
+        <p class="font-body-md">Programs</p>
+      </div>
+      <div class="grid-col-12 tablet:grid-col-3 text-center">
+        <p class="margin-bottom-1 homepage-headline-number"><span data-dollar-amount="{{ page.spending_total }}"></span></p>
+        <p class="font-body-md">In spending in FY {{ page.fiscal_year }}</p>
+      </div>
+      <div class="grid-col-12 tablet:grid-col-3 text-center">
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.agencies_count -}}</p>
+        <p class="font-body-md">Agencies</p>
+      </div>
+      <div class="grid-col-12 tablet:grid-col-3 text-center">
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.outcomes_count -}}</p>
+        <p class="font-body-md">Outcomes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Cards Section -->
+<section class="program-guide-sections">
+  <div class="grid-container">
+    <div class="grid-row flex-justify-center margin-bottom-5">
+      <div class="grid-col-12">
+        <h2 class="font-heading-2xl homepage-title">
+          A clear view of Federal programs&mdash;their funding, objectives, and outcomes
+        </h2>
+      </div>
+    </div>
+    
+    <div class="grid-row grid-gap-4">
+      <!-- Card 1: Find Programs -->
+      <div class="grid-col-12 tablet:grid-col-4">
+        <div class="program-card">
+          <div class="program-card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </div>
+          <h3 class="program-card-titles">
+            Find programs
+          </h3>
+          <p class="font-body-sm margin-bottom-4">
+            Find programs by keyword, agency, objective, outcomes, and more
+          </p>
+          <a href="/search" class="usa-link">
+            Program search →
+          </a>
+        </div>
+      </div>
+      
+      <!-- Card 2: Explore Spending -->
+      <div class="grid-col-12 tablet:grid-col-4">
+        <div class="program-card">
+          <div class="program-card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24">
+              <polyline points="23 6 13.5 15.5 8 10 1 17"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="program-card-titles">
+            Explore spending
+          </h3>
+          <p class="font-body-sm margin-bottom-4">
+            See where funding is concentrated across objectives and program types
+          </p>
+          <a href="/category" class="usa-link">
+            Select trend →
+          </a>
+        </div>
+      </div>
+      
+      <!-- Card 3: Understand Methodology -->
+      <div class="grid-col-12 tablet:grid-col-4">
+        <div class="program-card">
+          <div class="program-card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="program-card-titles">
+            Understand methodology
+          </h3>
+          <p class="font-body-sm margin-bottom-4">
+            Learn how programs are defined, categorized, and sourced
+          </p>
+          <a href="/about/fpi" class="usa-link">
+            About the FPI →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: How It Works Section -->
+<section class="info-sections">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h2 class="font-heading-2xl homepage-title" style="margin-bottom: 0;">
+          How it works
+        </h2>
+      </div>
+    </div>
+    
+    <div class="grid-row">
+      <!-- SVG on the left -->
+      <div class="grid-col-12 tablet:grid-col-4">
+        <img src="/assets/img/OMBlogo.svg" alt="OMB Logo" class="how-it-works-logo"/>
+      </div>
+      
+      <!-- Entries on the right -->
+      <div class="grid-col-12 tablet:grid-col-8 how-it-works-content">
+        <!-- Entry 1 -->
+        <div class="how-it-works-entry">
+          <h3 class="how-it-works-title">
+            01 &mdash; Aggregate program data
+          </h3>
+          <p class="font-body-sm">
+            Data is aggregated from authoritative Federal sources&mdash;bringing funding, objectives, eligibility, and awards into one place
+          </p>
+        </div>
+        
+        <!-- Entry 2 -->
+        <div class="how-it-works-entry">
+          <h3 class="how-it-works-title">
+            02 &mdash; Standardize and categorize
+          </h3>
+          <p class="font-body-sm">
+            Programs are organized across agencies, categories, objectives, and more so they can be easily compared
+          </p>
+        </div>
+        
+        <!-- Entry 3 -->
+        <div class="how-it-works-entry">
+          <h3 class="how-it-works-title">
+            03 &mdash; Explore and act
+          </h3>
+          <p class="font-body-sm">
+            Users can filter, visualize trends, and access program insights&mdash;from funding levels to target outcomes&mdash;supporting research, oversight, and informed decision-making
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: Guide Section -->
+<section class="program-guide-sections">
+  <div class="grid-container">
+    <div class="grid-row flex-justify-center">
+      <div class="grid-col-12 tablet:grid-col-12 text-center">
+        <h2 class="font-heading-2xl homepage-fed-guide">
+          Your guide to Federal programs
+        </h2>
+        <p class="font-body-md margin-bottom-3">
+          See where the government invests tax payer dollars&mdash;and what it's meant to achieve for the Nation.
+        </p>
+        <div class="homepage-buttons">
+          <a href="/search" class="usa-button">
+            Explore programs
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include scripts/_dollar-standardization.html %}

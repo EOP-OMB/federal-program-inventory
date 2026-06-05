@@ -1,0 +1,33 @@
+---
+category: Housing
+definition: 'A program whose beneficiaries achieved one or more of the following results
+  within the past year: -Affordable housing or temporary housing options; -A stable
+  place to live through home ownership and has retained stable housing; -Targeted
+  support from the community (e.g., rent assistance, housing voucher, public housing,
+  etc.).'
+focus_area: Housing and Homelessness
+gwo_id: PON.5
+permalink: /pon/PON_5
+title: Expand Housing Supports for Older Adults
+where_used:
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 25195000.0
+  name: Mortgage Insurance Rental Housing for the Elderly
+  permalink: /program/14.138
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Multifamily Housing Service Coordinators
+  permalink: /program/14.191
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 30000000.0
+  name: Older Adults Home Modification Grant Program
+  permalink: /program/14.921
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 0.0
+  name: Supportive Housing for the Elderly
+  permalink: /program/14.157
+  program_type: assistance_listing
+---
