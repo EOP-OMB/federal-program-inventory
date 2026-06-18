@@ -13,7 +13,7 @@ where_used:
   permalink: /program/15.046
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 118786001.0
+  expenditure_amount: 118786011.0
   name: AmeriCorps Seniors Foster Grandparent Program (FGP) 94.011
   permalink: /program/94.011
   program_type: assistance_listing
@@ -109,7 +109,7 @@ where_used:
   permalink: /program/15.234
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 2000000.0
   name: Soft Target Program for Overseas Schools
   permalink: /program/19.024
   program_type: assistance_listing

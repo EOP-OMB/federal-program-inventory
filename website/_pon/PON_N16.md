@@ -22,7 +22,7 @@ where_used:
   permalink: /program/15.442
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4789715.0
+  expenditure_amount: 9500000.0
   name: Alaska Native Serving and Native Hawaiian Serving Institutions Education Grants
   permalink: /program/10.228
   program_type: assistance_listing
@@ -138,7 +138,7 @@ where_used:
   permalink: /program/17.268
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3226650.0
+  expenditure_amount: 3200000.0
   name: Higher Education National Needs Graduate Fellowship Grants
   permalink: /program/10.210
   program_type: assistance_listing
@@ -187,6 +187,11 @@ where_used:
   name: NIH Office of Data Science Strategy (ODSS)
   permalink: /program/93.DSS
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: NOAA Cooperative Aviation Center
+  permalink: /program/11.051
+  program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 16003000.0
   name: National Cancer Institute Research - Training, Individual
@@ -206,11 +211,6 @@ where_used:
   expenditure_amount: 90111932.0
   name: National Heart, Lung, and Blood Institute - Training/Institutional
   permalink: /program/93.HL7
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 254646999.0
-  name: National Institute on Aging Intramural Programs
-  permalink: /program/93.AG9
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 15169000.0
@@ -288,7 +288,7 @@ where_used:
   permalink: /program/93.DC6
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1909715.0
+  expenditure_amount: 2800000.0
   name: Resident Instruction, Agriculture, and Food Science Facilities and Equipment
     Grants
   permalink: /program/10.308
@@ -327,12 +327,12 @@ where_used:
   permalink: /program/20.297
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3807300.0
+  expenditure_amount: 3809708.0
   name: Veterinary Services Grant Program
   permalink: /program/10.336
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1905210.0
+  expenditure_amount: 1900000.0
   name: Women and Minorities in Science, Technology, Engineering, and Mathematics
     Fields
   permalink: /program/10.318

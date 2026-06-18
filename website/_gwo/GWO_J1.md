@@ -33,7 +33,7 @@ where_used:
   permalink: /program/15.678
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 35478890.0
+  expenditure_amount: 36000000.0
   name: Cooperative Forestry Research
   permalink: /program/10.202
   program_type: assistance_listing
@@ -70,7 +70,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
-  name: Marine Education
+  name: Marine Education and Training
   permalink: /program/11.455
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -84,7 +84,7 @@ where_used:
   permalink: /program/11.429
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1246000.0
   name: National Atmospheric Deposition Program
   permalink: /program/10.273
   program_type: assistance_listing

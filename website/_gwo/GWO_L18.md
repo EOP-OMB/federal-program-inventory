@@ -207,7 +207,7 @@ where_used:
   permalink: /program/81.009
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 739000000.0
   name: Mortgage Insurance Hospitals
   permalink: /program/14.128
   program_type: assistance_listing
@@ -272,8 +272,8 @@ where_used:
   permalink: /program/93.364
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
-  name: Nursing Workforce Diversity
+  expenditure_amount: 20000000.0
+  name: Nursing Workforce Development
   permalink: /program/93.178
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -322,7 +322,7 @@ where_used:
   permalink: /program/84.129
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 134265947.0
+  expenditure_amount: 56132485.0
   name: Rural Communities Opioid Response Programs
   permalink: /program/93.690
   program_type: assistance_listing
@@ -353,7 +353,7 @@ where_used:
   permalink: /program/93.912
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10546400.0
+  expenditure_amount: 45172341.0
   name: Rural Hospital Information Systems
   permalink: /program/93.811
   program_type: assistance_listing

@@ -27,7 +27,7 @@ where_used:
   permalink: /program/10.291
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3750000.0
+  expenditure_amount: 0.0
   name: American Rescue Plan Technical Assistance Investment Program
   permalink: /program/10.234
   program_type: assistance_listing
@@ -57,7 +57,7 @@ where_used:
   permalink: /program/10.156
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 790000000.0
+  expenditure_amount: 1062000000.0
   name: Food for Peace, Title II
   permalink: /program/10.624
   program_type: assistance_listing
@@ -87,7 +87,7 @@ where_used:
   permalink: /program/10.180
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 44248068.0
+  expenditure_amount: 66161418.0
   name: Organic Agriculture Research and Extension Initiative
   permalink: /program/10.307
   program_type: assistance_listing

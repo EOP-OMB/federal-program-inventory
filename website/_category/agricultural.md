@@ -1,18 +1,18 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":122,"total_obs":21280234736.269993},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":122,"total_obs":21304553974.52999},{"title":"Department
   of the Treasury","total_num_programs":6,"total_obs":2750000000.0},{"title":"Agency
   for International Development","total_num_programs":1,"total_obs":14500000.0},{"title":"Department
   of the Interior","total_num_programs":3,"total_obs":985298.15},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":48},{"title":"Unrestricted
-  by Entity Type","total_num_programs":36},{"title":"Other","total_num_programs":31},{"title":"For-Profit
-  Organization","total_num_programs":29},{"title":"Small Business Person","total_num_programs":22},{"title":"Land/Property
-  Owner","total_num_programs":21},{"title":"State","total_num_programs":21},{"title":"Unrestricted
-  by Individual Type","total_num_programs":18},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":16},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":14},{"title":"Not-for-Profit
-  Organization","total_num_programs":10},{"title":"U.S. Federal Government","total_num_programs":10},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":8},{"title":"Federally
+  by Entity Type","total_num_programs":34},{"title":"Other","total_num_programs":33},{"title":"For-Profit
+  Organization","total_num_programs":28},{"title":"Small Business Person","total_num_programs":22},{"title":"Land/Property
+  Owner","total_num_programs":21},{"title":"State","total_num_programs":21},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":16},{"title":"Unrestricted
+  by Individual Type","total_num_programs":16},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":14},{"title":"Not-for-Profit Organization","total_num_programs":10},{"title":"U.S.
+  Federal Government","total_num_programs":9},{"title":"Indian/Native American/Alaska
+  Native Tribal Government (Other than Federally Recognized)","total_num_programs":8},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"School
   District","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
@@ -32,10 +32,12 @@ applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":48},{"
   Housing Authority","total_num_programs":2},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Federal","total_num_programs":1},{"title":"Foreign
-  Government","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
+  Government","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":1},{"title":"Government
+  - General","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Profit
+  organization","total_num_programs":1},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":1},{"title":"State (includes District
+  of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
   Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -205,12 +207,12 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/agricultural
-sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":53,"total_obs":915284765.92},{"title":"Farm
-  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":80,"total_obs":23130435268.499996}]'
+sub_cats: '[{"title":"Agricultural Resources and Services","permalink":"/category/agricultural/agricultural-resources-and-services","total_num_programs":53,"total_obs":931795982.6700001},{"title":"Farm
+  Income Stabilization","permalink":"/category/agricultural/farm-income-stabilization","total_num_programs":80,"total_obs":23138243290.01}]'
 title: Agricultural
 total_num_agencies: 5
-total_num_applicant_types: 53
+total_num_applicant_types: 55
 total_num_programs: 133
 total_num_sub_cats: 2
-total_obs: 24045720034.41999
+total_obs: 24070039272.67999
 ---

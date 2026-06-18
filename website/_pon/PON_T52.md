@@ -27,7 +27,7 @@ where_used:
   permalink: /program/93.826
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 2610000.0
   name: Compensation and Working Conditions
   permalink: /program/17.005
   program_type: assistance_listing
@@ -64,7 +64,7 @@ where_used:
   permalink: /program/93.346
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 0.0
+  expenditure_amount: 9500000.0
   name: Environmental Information Exchange Network Grant Program and Related Assistance
   permalink: /program/66.608
   program_type: assistance_listing
@@ -104,7 +104,7 @@ where_used:
   permalink: /program/20.611
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 24804000.0
   name: Labor Force Statistics
   permalink: /program/17.002
   program_type: assistance_listing

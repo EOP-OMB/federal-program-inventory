@@ -33,7 +33,7 @@ where_used:
   permalink: /program/10.113
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 10000000.0
+  expenditure_amount: 9052800.0
   name: Agriculture Risk Management Education Partnerships Competitive Grants Program
   permalink: /program/10.520
   program_type: assistance_listing
@@ -43,12 +43,12 @@ where_used:
   permalink: /program/10.616
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3750000.0
+  expenditure_amount: 0.0
   name: American Rescue Plan Technical Assistance Investment Program
   permalink: /program/10.234
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 22138300.0
+  expenditure_amount: 44609680.0
   name: Beginning Farmer and Rancher Development Program
   permalink: /program/10.311
   program_type: assistance_listing
@@ -63,7 +63,7 @@ where_used:
   permalink: /program/TC.051
   program_type: tax_expenditure
 - agency: Department of Agriculture
-  expenditure_amount: 9545040.0
+  expenditure_amount: 9600000.0
   name: Centers of Excellence at 1890 Institutions
   permalink: /program/10.523
   program_type: assistance_listing
@@ -184,7 +184,7 @@ where_used:
   permalink: /program/10.142
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 790000000.0
+  expenditure_amount: 1062000000.0
   name: Food for Peace, Title II
   permalink: /program/10.624
   program_type: assistance_listing
@@ -397,7 +397,7 @@ where_used:
   permalink: /program/10.048
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3811800.0
+  expenditure_amount: 8000000.0
   name: Tribal Colleges Extension Programs
   permalink: /program/10.517
   program_type: assistance_listing

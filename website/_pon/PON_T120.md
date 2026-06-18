@@ -29,6 +29,11 @@ where_used:
   permalink: /program/11.617
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1500000.0
+  name: Information Technology Laboratory Grant Program
+  permalink: /program/11.059
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 10000000.0
   name: JILA
   permalink: /program/11.054

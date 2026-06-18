@@ -38,9 +38,14 @@ where_used:
   permalink: /program/19.990
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 76000000.0
   name: International Programs to Combat Human Trafficking
   permalink: /program/19.019
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Support for Combatting Criminal Aliens, Drug, and Human Trafficking
+  permalink: /program/16.076
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0
@@ -48,7 +53,7 @@ where_used:
   permalink: /program/81.505
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 127671.75
   name: Nonproliferation and Disarmament Fund
   permalink: /program/19.224
   program_type: assistance_listing
@@ -68,7 +73,7 @@ where_used:
   permalink: /program/19.222
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 258000000.0
   name: Weapons Removal and Abatement
   permalink: /program/19.800
   program_type: assistance_listing

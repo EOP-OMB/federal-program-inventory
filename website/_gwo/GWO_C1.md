@@ -54,7 +54,7 @@ where_used:
   permalink: /program/20.945
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 3000000.0
   name: Biomass Research and Development Initiative Competitive Grants Program (BRDI)
   permalink: /program/10.312
   program_type: assistance_listing
@@ -217,7 +217,7 @@ where_used:
   permalink: /program/93.612
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1200000.0
   name: Native Hawaiian Community Guest Stewardship
   permalink: /program/15.068
   program_type: assistance_listing
@@ -242,7 +242,7 @@ where_used:
   permalink: /program/10.777
   program_type: assistance_listing
 - agency: Northern Border Regional Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 50000000.0
   name: Northern Border Regional Development
   permalink: /program/90.601
   program_type: assistance_listing

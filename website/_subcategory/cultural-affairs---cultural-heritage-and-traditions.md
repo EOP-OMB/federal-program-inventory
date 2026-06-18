@@ -216,7 +216,7 @@ programs: '[{"cfda":"84.422","permalink":"/program/84.422","title":"American His
   Services","total_obs":3476154.55,"program_type":"assistance_listing"},{"cfda":"45.162","permalink":"/program/45.162","title":"Promotion
   of the Humanities Teaching and Learning Resources and Curriculum Development","popular_name":null,"agency":"National
   Endowment for the Humanities","total_obs":3180839.01,"program_type":"assistance_listing"},{"cfda":"15.071","permalink":"/program/15.071","title":"Native
-  Hawaiian and Alaka Native Culture and Arts Development","popular_name":null,"agency":"Department
+  Hawaiian and Alaska Native Culture and Arts Development","popular_name":null,"agency":"Department
   of the Interior","total_obs":2749117.0,"program_type":"assistance_listing"},{"cfda":"45.031","permalink":"/program/45.031","title":"American
   Latino Museum Internship and Fellowship Initiative","popular_name":"ALMIFI","agency":"The
   Institute of Museum and Library Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"45.034","permalink":"/program/45.034","title":"National

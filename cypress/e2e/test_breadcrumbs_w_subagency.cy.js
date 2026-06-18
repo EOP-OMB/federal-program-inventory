@@ -5,7 +5,6 @@ describe('Visual Regression: Breadcrumbs with Sub-Agency', () => {
     cy.visit(testUrl);
     // Wait for the chart to fully render
     cy.get('.usa-breadcrumb').should('be.visible');
-    cy.wait(1000); // Allow time for animations/rendering
   });
 
   it('page should match', () => {

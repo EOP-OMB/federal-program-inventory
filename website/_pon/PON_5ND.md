@@ -17,7 +17,7 @@ where_used:
   permalink: /program/12.840
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1966976.25
+  expenditure_amount: 2866984.0
   name: Clearing House for Military Readiness
   permalink: /program/10.288
   program_type: assistance_listing

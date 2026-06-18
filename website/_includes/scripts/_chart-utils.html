@@ -210,7 +210,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor){
       };
       const percentText = totalValue > 0 ? formatPercent(percentValue) : '';
       const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
-      tooltip.html(`<strong>${tooltipName}</strong><br/>Expenditure: ${formattedValue}${percentLine}`)
+      tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 10) + 'px')
         .transition()

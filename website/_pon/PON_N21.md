@@ -12,12 +12,12 @@ permalink: /pon/PON_N21
 title: Improve STEM Education
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 500000.0
+  expenditure_amount: 480000.0
   name: Agriculture in the K-12 Classroom
   permalink: /program/10.278
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4789715.0
+  expenditure_amount: 9500000.0
   name: Alaska Native Serving and Native Hawaiian Serving Institutions Education Grants
   permalink: /program/10.228
   program_type: assistance_listing
@@ -38,7 +38,7 @@ where_used:
   permalink: /program/12.560
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 1000000.0
   name: Distance Education Grants for Institutions of Higher Education in Insular
     Areas
   permalink: /program/10.322
@@ -49,12 +49,17 @@ where_used:
   permalink: /program/10.223
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: NOAA Cooperative Aviation Center
+  permalink: /program/11.051
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 3200000.0
   name: NOAA Mission-Related Education Awards
   permalink: /program/11.008
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 125000.0
+  expenditure_amount: 160200.0
   name: National Food and Agricultural Sciences Teaching, Extension, and Research
     Awards
   permalink: /program/10.279

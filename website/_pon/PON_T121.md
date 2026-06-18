@@ -13,10 +13,20 @@ gwo_id: PON.T121
 permalink: /pon/PON_T121
 title: Improve Foundational Research in Engineering
 where_used:
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Advanced Manufacturing
+  permalink: /program/11.068
+  program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
   expenditure_amount: 42524000.0
   name: Aeronautics
   permalink: /program/43.002
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Applied Materials Science and Engineering
+  permalink: /program/11.63B
   program_type: assistance_listing
 - agency: National Science Foundation
   expenditure_amount: 181990000.0
@@ -33,6 +43,11 @@ where_used:
   name: Exploration
   permalink: /program/43.003
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Fire Risk Reduction
+  permalink: /program/11.052
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 7500000.0
   name: Maritime Environmental and Technical Assistance
@@ -44,12 +59,12 @@ where_used:
   permalink: /program/20.530
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Remedial Action and Waste Management
   permalink: /program/81.092
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 16192604.3
+  expenditure_amount: 907114425.5
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing

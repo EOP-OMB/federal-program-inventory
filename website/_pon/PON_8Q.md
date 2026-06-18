@@ -184,7 +184,7 @@ where_used:
   permalink: /program/20.723
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 1000000.0
+  expenditure_amount: 460000000.0
   name: Performance Partnership Grants
   permalink: /program/66.605
   program_type: assistance_listing
@@ -209,7 +209,7 @@ where_used:
   permalink: /program/20.286
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Remedial Action and Waste Management
   permalink: /program/81.092
   program_type: assistance_listing

@@ -15,7 +15,7 @@ where_used:
     permalink: /program/test-2
   - agency: Test Agency Gamma
     expenditure_amount: 1000000
-    name: Test Program Three
+    name: Test Program Three Should Wrap
     permalink: /program/test-3
   - agency: Test Agency Zero
     expenditure_amount: 0

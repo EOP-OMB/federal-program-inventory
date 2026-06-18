@@ -211,7 +211,7 @@ where_used:
   permalink: /program/93.135
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 25336657.0
+  expenditure_amount: 184920723.0
   name: Child Health and Human Development Extramural Research
   permalink: /program/93.865
   program_type: assistance_listing
@@ -676,16 +676,6 @@ where_used:
   permalink: /program/93.AG6
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 183617000.0
-  name: National Institute on Aging Contract Projects
-  permalink: /program/93.AG8
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 254646999.0
-  name: National Institute on Aging Intramural Programs
-  permalink: /program/93.AG9
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
   expenditure_amount: 267795000.0
   name: National Institute on Aging Research Projects
   permalink: /program/93.AG3
@@ -780,11 +770,6 @@ where_used:
   expenditure_amount: 5926819.0
   name: Oral Diseases and Disorders Research - Other Research
   permalink: /program/93.DE3
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 3668600.0
-  name: Oral Diseases and Disorders Research - R & D Contracts
-  permalink: /program/93.DE7
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 8023719.0

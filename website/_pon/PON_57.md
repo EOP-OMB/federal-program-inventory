@@ -13,7 +13,7 @@ permalink: /pon/PON_57
 title: Improve Quality of Teachers
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 30000000.0
+  expenditure_amount: 55888922.0
   name: 1890 Institution Capacity Building Grants
   permalink: /program/10.216
   program_type: assistance_listing
@@ -44,12 +44,12 @@ where_used:
   permalink: /program/84.283
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 6800000.0
   name: Cybersecurity Education and Training
   permalink: /program/97.127
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 937306.1
+  expenditure_amount: 1036313.2
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing
@@ -74,7 +74,7 @@ where_used:
   permalink: /program/12.903
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5330000.0
+  expenditure_amount: 10128615.0
   name: Higher Education - Institution Challenge Grants Program
   permalink: /program/10.217
   program_type: assistance_listing
@@ -99,7 +99,7 @@ where_used:
   permalink: /program/66.950
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 125000.0
+  expenditure_amount: 160200.0
   name: National Food and Agricultural Sciences Teaching, Extension, and Research
     Awards
   permalink: /program/10.279

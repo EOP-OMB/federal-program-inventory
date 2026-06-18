@@ -9,9 +9,7 @@ describe('Visual Regression: Insight Section', () => {
   testCases.forEach(({ name, url }) => {
     it(`page should match for ${name}`, () => {
       cy.visit(url);
-      cy.waitForPageLoad();
       cy.get('h3').contains('Insight').should('be.visible');
-      cy.wait(1000); // Allow time for fonts and layout to settle
       cy.compareSnapshot(name);
     });
   });

@@ -12,7 +12,6 @@ describe('PON treemap', () => {
     cy.get('#related-programs table tbody tr')
       .not('[data-total-row]')
       .should('have.length', 4);
-    cy.wait(1000);
     cy.get('#outcomeChart').compareSnapshot('pon_treemap');
   });
 
@@ -28,11 +27,11 @@ describe('PON treemap', () => {
     cy.get('#outcomeChart').compareSnapshot('pon_treemap_labels');
   });
 
-  it('shows tooltip with name, expenditure, and percentage', () => {
+  it('shows tooltip with name, amount, and percentage', () => {
     cy.get('#outcomeChart svg > g > rect').first().trigger('mouseover');
     cy.get('.chart-tooltip').should('be.visible');
     cy.get('.chart-tooltip').should('contain.text', 'Test Program One');
-    cy.get('.chart-tooltip').should('contain.text', 'Expenditure:');
+    cy.get('.chart-tooltip').should('contain.text', 'Amount:');
     cy.get('.chart-tooltip').should('contain.text', 'Percent: 50.0%');
     cy.wait(1000);
     cy.get('#outcomeChart').compareSnapshot('pon_treemap_tooltip');

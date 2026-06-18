@@ -8,7 +8,7 @@ permalink: /gwo/GWO_G11
 title: Increase Completion of STEM Degrees, Certificates, and Credentials
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 5733760.0
+  expenditure_amount: 5700000.0
   name: Capacity Building for Non-Land Grant Colleges of Agriculture (NLGCA)
   permalink: /program/10.326
   program_type: assistance_listing
@@ -27,6 +27,11 @@ where_used:
   name: Minority Science and Engineering Improvement
   permalink: /program/84.120
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: NOAA Cooperative Aviation Center
+  permalink: /program/11.051
+  program_type: assistance_listing
 - agency: Department of Defense
   expenditure_amount: 20000000.0
   name: National Defense Education Program
@@ -43,7 +48,7 @@ where_used:
   permalink: /program/47.076
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 159653129.0
+  expenditure_amount: 159000000.0
   name: Specialty Crop Research Initiative
   permalink: /program/10.309
   program_type: assistance_listing
@@ -63,7 +68,7 @@ where_used:
   permalink: /program/77.007
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1905210.0
+  expenditure_amount: 1900000.0
   name: Women and Minorities in Science, Technology, Engineering, and Mathematics
     Fields
   permalink: /program/10.318

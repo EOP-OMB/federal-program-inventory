@@ -25,7 +25,7 @@ where_used:
   permalink: /program/19.017
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7680000.0
+  expenditure_amount: 7689341.0
   name: Food and Agriculture Defense Initiative (FADI)
   permalink: /program/10.304
   program_type: assistance_listing

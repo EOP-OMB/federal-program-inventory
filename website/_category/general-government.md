@@ -1,18 +1,17 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":1215613829754.0},{"title":"General
   Services Administration","total_num_programs":3,"total_obs":0.0},{"title":"Department
-  of the Interior","total_num_programs":12,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":12},{"title":"Local (includes
-  State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Other
-  public institution/organization","total_num_programs":2},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Public
+  of the Interior","total_num_programs":12,"total_obs":0.0},{"title":"Department of
+  Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"State","total_num_programs":13},{"title":"Individual/Family","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Nonprofit Organization","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  public institution/organization","total_num_programs":1},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":2},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Other
-  private institutions/organizations","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Sponsored
-  organization","total_num_programs":1}]'
+  hospitals)","total_num_programs":1},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -181,13 +180,14 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/general-government
-sub_cats: '[{"title":"Debt Service","permalink":"/category/general-government/debt-service","total_num_programs":1,"total_obs":1215613829754.0},{"title":"Fees
+sub_cats: '[{"title":"Central Personnel Management","permalink":"/category/general-government/central-personnel-management","total_num_programs":1,"total_obs":0.0},{"title":"Debt
+  Service","permalink":"/category/general-government/debt-service","total_num_programs":1,"total_obs":1215613829754.0},{"title":"Fees
   and Receipts","permalink":"/category/general-government/fees-and-receipts","total_num_programs":12,"total_obs":0.0},{"title":"General
   Property and Records Management","permalink":"/category/general-government/general-property-and-records-management","total_num_programs":3,"total_obs":0.0}]'
 title: General Government
-total_num_agencies: 3
-total_num_applicant_types: 19
-total_num_programs: 16
-total_num_sub_cats: 3
+total_num_agencies: 4
+total_num_applicant_types: 16
+total_num_programs: 17
+total_num_sub_cats: 4
 total_obs: 1215613829754.0
 ---

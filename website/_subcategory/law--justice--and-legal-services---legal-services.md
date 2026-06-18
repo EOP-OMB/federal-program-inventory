@@ -8,23 +8,18 @@ agencies: '[{"title":"Social Security Administration","total_num_programs":2,"to
   of Defense","total_num_programs":1,"total_obs":186722.5},{"title":"National Council
   on Disability","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":2,"total_obs":0.0},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":-32201306.15}]'
-applicant_types: '[{"title":"Other","total_num_programs":4},{"title":"U.S. State Government
-  (including the District of Columbia)","total_num_programs":3},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":2},{"title":"Nonprofit
-  Organization","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Department or Agency of a U.S. State Government","total_num_programs":1},{"title":"For-Profit
-  Organization","total_num_programs":1},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Native
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":5},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":5},{"title":"Nonprofit
+  Organization","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"Not-for-Profit
+  Organization","total_num_programs":3},{"title":"County Government (inclusive of
+  boroughs in Alaska, parishes and other governmental entities with geographic regional
+  control and authority)","total_num_programs":2},{"title":"Indian/Native American/Alaska
+  Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Anyone/general
+  public","total_num_programs":1},{"title":"Department or Agency of a U.S. State Government","total_num_programs":1},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":1},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Other public institution/organization","total_num_programs":1},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  associations)","total_num_programs":1},{"title":"Other public institution/organization","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -224,7 +219,7 @@ programs: '[{"cfda":"96.009","permalink":"/program/96.009","title":"Social Secur
   of Homeland Security","total_obs":-32201306.15,"program_type":"assistance_listing"}]'
 title: Legal Services
 total_num_agencies: 10
-total_num_applicant_types: 23
+total_num_applicant_types: 19
 total_num_programs: 14
 total_obs: 87939111.83000001
 ---
