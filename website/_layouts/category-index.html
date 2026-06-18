@@ -4,27 +4,9 @@ header_title: Explore programs by category
 footer_include: _footer-category-index.html
 ---
 
-<section class="bg-primary-darker padding-x-2 padding-y-3" style="
-    background-image: url('../../assets/img/banner.png'),
-      linear-gradient(0deg, #272a63, #272a63);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  ">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-col-12">
-        <h1 class="usa-display usa-heading text-white font-heading-2xl text-light">
-          {{ layout.header_title }}
-        </h1>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="grid-container">
+<div class="grid-container category-breadcrumb">
   <div class="grid-row grid-gap">
-    <nav class="usa-breadcrumb padding-top-1" aria-label="Breadcrumbs,,">
+    <nav class="usa-breadcrumb" aria-label="Breadcrumbs,,">
       <ol class="usa-breadcrumb__list">
         <li class="usa-breadcrumb__list-item">
           <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
@@ -35,13 +17,29 @@ footer_include: _footer-category-index.html
       </ol>
     </nav>
   </div>
-  <div class="grid-row grid-gap padding-top-1">
-    <div class="width-full text-primary font-sans-xl line-height-sans-2">
-      All Categories
+</div>
+
+<section class="padding-x-2 padding-y-1">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12">
+        <h1 class="usa-display usa-heading site-title-font text-light">
+          {{ layout.header_title }}
+        </h1>
+      </div>
     </div>
-    <div class="grid-col-8 line-height-sans-3 padding-top-1">
+  </div>
+</section>
+
+<div class="grid-container">
+  <div class="grid-row grid-gap padding-top-1">
+    <div class="grid-col-12 line-height-sans-3 padding-top-1">
       Programs and the related information listed on this page use data pulled from
-      SAM.gov, USASpending.gov, and Treasury.gov.
+      <a href="https://sam.gov/" class="usa-link" target="_blank" rel="noopener noreferrer">SAM.gov</a>, 
+      <a href="https://www.usaspending.gov/" class="usa-link" target="_blank" rel="noopener noreferrer">USASpending.gov</a>, and 
+      <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures" class="usa-link" target="_blank" rel="noopener noreferrer">Treasury.gov</a>, and other publicly available federal agency websites. For financial
+      assistance, interest on the public debt, and acquisition programs, expenditures are obligations. For tax expenditures,
+      expenditures are the sum of outlays and revenue losses.
       <br />
       <br />
       Select from the dropdown below to view a category. Once you've selected a
@@ -68,69 +66,43 @@ footer_include: _footer-category-index.html
     </button>
   </div>
 
-  <div class="border-1px border-ink radius-md margin-bottom-5">
+  <div class="category-expend-section">
     <div class="margin-205">
-      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        Categories by FY {{ page.fiscal_year }} expenditures
+      <h3 class="font-heading-lg text-bold line-height-heading-3">
+        FY {{ page.fiscal_year }} expenditures by category
       </h3>
 
-      <p class="text-ink font-sans-sm line-height-body-3">
-        This chart shows total program expenditures by category, for the top categories. For financial
-        assistance and interest on the public debt, expenditures are obligations. For tax expenditures, expenditures
-        are the sum of outlays and revenue losses. To view data for all categories, download the .csv file below. All
-        data for this chart was provided by the administering agency and sourced from
-        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a> and
-        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
-          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
+      <p class="text-ink font-heading-sm line-height-body-3">
+        This chart shows total program expenditures by category, for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the Federal Program
+        Inventory. To view
+        data for all categories, <a href="#" id="category-chart-download" class="usa-link">download the .csv file</a>.
       </p>
 
       <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection"
         role="img"></svg>
 
-      <div class="grid-row">
-        <div class="grid-col-auto">
-          <button class="usa-button usa-button--outline border-2px">
-            <span>Download .csv file</span>
-            <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/img/sprite.svg#file_download"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
     </div>
   </div>
-  <div class="border-1px border-ink radius-md margin-bottom-5">
+  <div class="category-expend-section">
     <div class="margin-205">
-      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        Expenditures by Type of Program
+      <h3 class="font-heading-lg text-bold line-height-heading-3">
+        FY {{ page.fiscal_year }} expenditures by type of program
       </h3>
-      <p class="text-ink font-sans-sm line-height-body-3">
-        This chart shows total program expenditures by type of program for the more than 2,600 programs included in the
-        Federal Program Inventory. For financial assistance and interest on the public debt, expenditures are
-        obligations. For tax expenditures, expenditures are the sum of outlays and revenue losses. To view data for all
-        types of programs, download the .csv file below. All data for this chart was provided by the administering agency
-        and sourced from
-        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a> and
-        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
-          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
+      <p class="text-ink font-heading-sm line-height-body-3">
+        This chart shows total program expenditures by type of program for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the
+        Federal Program Inventory. To view data for all
+        types of programs, <a href="#" id="obligations-by-type-download" class="usa-link">download the .csv file</a>.
       </p>
 
-      <div id="obligations-pie-chart" class="width-full"></div>
-
+      <!-- <div id="obligations-pie-chart" class="width-full maxw-full overflow-x-auto"></div> -->
+       <!-- Add a wrapper div with grid classes -->
       <div class="grid-row">
-        <div class="grid-col-auto">
-          <button id="obligations-by-type-download" class="usa-button usa-button--outline border-2px">
-            <span>Download .csv file</span>
-            <svg class="usa-icon margin-left-1" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/img/sprite.svg#file_download"></use>
-            </svg>
-          </button>
+        <div class="grid-col-12 display-flex flex-justify-center">
+          <div id="obligations-pie-chart" class="width-full"></div>
         </div>
       </div>
+
+
     </div>
   </div>
 </div>
-{% include _about-the-data.html %}

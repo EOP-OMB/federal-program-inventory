@@ -1,41 +1,78 @@
 ---
+agencies_count: '54 '
 applicant_types:
+- title: Active-Duty Service Person (including dependents
+- title: Airport Authority
 - title: Alaska Native and Native Hawaiian Serving Institutions
 - title: Anyone/general public
+- title: Builder/Contractor/Developer
 - title: City or Township Government
 - title: County Government
+- title: County Government (inclusive of boroughs in Alaska, parishes and other governmental
+    entities with geographic regional control and authority)
+- title: Department or Agency of a U.S. State Government
+- title: Department or Agency of a U.S. Territorial Government
+- title: Farmworker
 - title: Federal
-- title: Federally Recognized lndian Tribal Governments
+- title: Federally Recognized Indian Tribal Governments
+- title: Federally Recognized Indian/Native American/Alaska Native Tribal Government
+- title: For-Profit Organization
 - title: For-Profit Organization (Other than Small Business)
+- title: Foreign Government
+- title: Foreign Non-Government Nonprofit Organization
+- title: Foreign Non-Government Not-for-Profit Organization
+- title: Foreign Non-Governmental For-Profit Organization
 - title: Government - General
 - title: Hispanic-serving Institution
 - title: Historically Black Colleges and Universities (HBCUs)
+- title: Homeowner
 - title: Independent School District
 - title: Indian/Native American Tribal Government (Other than Federally Recognized)
 - title: Indian/Native American Tribally Designated Organization
+- title: Indian/Native American/Alaska Native Tribal Government (Other than Federally
+    Recognized)
 - title: Individual/Family
+- title: International Organization
 - title: Interstate
+- title: Interstate Organization
 - title: Intrastate
-- title: Local (includes State-designated lndian Tribes, excludes institutions of
+- title: Land/Property Owner
+- title: Local
+- title: Local (includes State-designated Indian Tribes, excludes institutions of
     higher education and hospitals
 - title: Minority group
-- title: Native American Organizations (includes lndian groups, cooperatives, corporations,
+- title: Municipality or Township government (inclusive of cities, towns, boroughs
+    (except in Alaska), and villages)
+- title: Native American Organizations (includes Indian groups, cooperatives, corporations,
     partnerships, associations)
 - title: Non-Government - General
 - title: Non-domestic (non-US) Entity
+- title: Nonprofit Organization
 - title: Nonprofit with 501C3 IRS Status (Other than Institution of Higher Education)
 - title: Nonprofit without 501C3 IRS Status (Other than Institution of Higher Education)
+- title: Not-for-Profit Organization
+- title: Other
 - title: Other (specify)
+- title: Other Local Government Consortium, Regional Organization (Intrastate), or
+    Other Local Government Combination
+- title: Other Special Disctrict Government
 - title: Other private institutions/organizations
 - title: Other public institution/organization
+- title: Planning Commission
+- title: Port Authority
 - title: Private nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Profit organization
+- title: Public Housing Authority
 - title: Public nonprofit institution/organization (includes institutions of higher
     education and hospitals)
 - title: Public/Indian Housing Authority
 - title: Quasi-public nonprofit institution/organization
 - title: Regional Organization
+- title: Reservist (including dependents)
+- title: School District
+- title: School District Government
+- title: Small Business Person
 - title: Small business (less than 500 employees)
 - title: Special District Government
 - title: Specialized group (e.g. health professionals, students, veterans)
@@ -43,250 +80,116 @@ applicant_types:
 - title: State
 - title: State (includes District of Columbia, public institutions of higher education
     and hospitals)
+- title: Territorial
+- title: Transit Authority
+- title: Tribal
 - title: Tribally Controlled Colleges and Universities (TCCUs)
+- title: Tribally Designated Housing Authority
+- title: U.S. Federal Government
+- title: U.S. State Government (including the District of Columbia)
 - title: U.S. Territories and possessions
 - title: U.S. Territories and possessions (includes institutions of higher education
     and hospitals)
+- title: U.S. Territory (or Possession) Government (including freely-associated states)
+- title: Unrestricted by Entity Type
+- title: Unrestricted by Individual Type
+- title: Veteran (including dependents)
+- title: Water Delivery Authority
 categories:
 - sub_categories:
-  - title: Forestry
-  - title: Marketing
-  - title: Production and Operation
-  - title: Research and Development
-  - title: Resource Conservation and Development
-  - title: Stabilization and Conservation Service
-  - title: Technical Assistance, Information and Services
+  - title: Agricultural Resources and Services
+  - title: Farm Income Stabilization
   title: Agricultural
 - sub_categories:
-  - title: Commercial Fisheries
+  - title: Business Development
   - title: Economic Development
-  - title: Economic Injury and Natural Disaster
-  - title: International
-  - title: Maritime
-  - title: Minority Business Enterprise
-  - title: Small Business
-  - title: Special Technical Service
-  - title: Statistics
   title: Business and Commerce
 - sub_categories:
-  - title: Construction, Renewal and Operations
-  - title: Federal Surplus Property
-  - title: Fire Protection
-  - title: Historical Preservation
-  - title: Indian Action Services
-  - title: Land Acquisition
-  - title: Planning and Research
-  - title: Recreation
-  - title: Rural Community Development
-  - title: Site Acquisition
-  - title: Technical Assistance and Services
+  - title: Community, Area, and Regional Development
   title: Community Development
 - sub_categories:
-  - title: Complaint Investigation
-  - title: Information and Educational Services
-  - title: Regulation, Inspection, Enforcement
+  - title: Consumer and Occupational Health and Safety
   title: Consumer Protection
 - sub_categories:
-  - title: Promotion of the Arts
-  - title: Promotion of the Humanities
+  - title: Access and Appreciation
+  - title: Artistic Talent Development
+  - title: Cultural Heritage and Traditions
+  - title: Cultural Institutions
   title: Cultural Affairs
 - sub_categories:
-  - title: Disaster Relief
-  - title: Emergency Health Services
-  - title: Emergency Preparedness, Civil Defense
-  - title: Flood Prevention and Control
+  - title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
 - sub_categories:
-  - title: Dental Education and Training
-  - title: Educational Equipment and Resources
-  - title: Educational Facilities
-  - title: Elementary and Secondary
-  - title: General Research and Evaluation
-  - title: Health Education and Training
-  - title: Higher Education - General
-  - title: Indian Education
-  - title: Libraries and Technical lnformation Services
-  - title: Medical Education and Training
-  - title: Nuclear Education and Training
-  - title: Nursing Education
-  - title: Resource Development and Support - Elementary, Secondary Education
-  - title: Resource Development and Support - General and Special Interest Organizations
-  - title: Resource Development and Support - Higher Education
-  - title: Resource Development and Support - Land and Equipment
-  - title: Resource Development and Support - School Aid
-  - title: Resource Development and Support - Sciences
-  - title: Resource Development and Support - Student Financial Aid
-  - title: Resource Development and Support - Vocational Education and Handicapped
-      Education
-  - title: Special Education
-  - title: Teacher Training
-  - title: Vocational Development
+  - title: Early Childhood Education and Childcare
+  - title: Educational Environments
+  - title: K–12 Education
+  - title: Post–Secondary Education
+  - title: STEM Education
   title: Education
 - sub_categories:
-  - title: Assistance and Services for the Unemployed
-  - title: Assistance to State and Local Governments
-  - title: Bonding and Certification
-  - title: Equal Employment Opportunity
-  - title: Facilities, Planning, Construction, and Equipment
-  - title: Federal Employment
-  - title: Job Training, Employment
-  - title: Labor Management Services
-  - title: Planning, Research, and Demonstration
-  - title: Program Development
-  - title: Statistical
-  title: Employment, Labor, and Training
+  - title: Workforce Development
+  title: Employment and Labor
 - sub_categories:
-  - title: Conservation
-  - title: Education and Training
-  - title: Facilities and Equipment
-  - title: General Information Services
-  - title: Research and Development
-  - title: Specialized Technical Services
+  - title: Energy Supply
   title: Energy
 - sub_categories:
-  - title: Air Pollution Control
-  - title: Pesticides Control
-  - title: Radiation Control
-  - title: Research, Education, Training
-  - title: Solid Waste Management
-  - title: Water Pollution Control
+  - title: Pollution Control and Abatement
   title: Environmental Quality
 - sub_categories:
-  - title: Food Inspection
-  - title: Food and Nutrition for Children
-  - title: Food and Nutrition for Individual and Families
-  - title: Research
+  - title: Food and Nutrition Assistance
   title: Food and Nutrition
 - sub_categories:
-  - title: Alcoholism, Drug Abuse and Mental Health - General
-  - title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
-  - title: Alcoholism, Drug Abuse and Mental Health - Planning
-  - title: Alcoholism, Drug Abuse and Mental Health - Research
-  - title: Communicable Diseases
-  - title: Education and Training
-  - title: Facility Loans and Insurance
-  - title: Facility Planning and Construction
-  - title: General Health and Medical
-  - title: Health Research - General
-  - title: Health Services Planning and Technical Assistance
-  - title: Indian Health
-  - title: Libraries, Information and Education Services
-  - title: Maternity, Infants, Children
-  - title: Mental Health
-  - title: Occupational Safety and Health
-  - title: Physical Fitness
-  - title: Prevention and Control
-  - title: Program Development
-  - title: Specialized Health Research and Training
-  - title: Veterans Health
+  - title: Central Personnel Management
+  - title: Debt Service
+  - title: Fees and Receipts
+  - title: General Property and Records Management
+  - title: Judiciary Branch Functions
+  - title: Legislative Branch Functions
+  title: General Government
+- sub_categories:
+  - title: Child Welfare
+  - title: Health and Wellbeing
+  - title: Healthcare Access
+  - title: Healthcare Innovation
+  - title: Healthcare Quality and Delivery
+  - title: Veteran Health
   title: Health
 - sub_categories:
-  - title: Construction Rehabilitation
-  - title: Cooperatives, Rental
-  - title: Experimental and Development Projects
-  - title: Home Improvement
-  - title: Homebuying, Homeownership
-  - title: Indian Housing
-  - title: Land Acquisition
-  - title: Multifamily
-  - title: Planning
-  - title: Property and Mortgage Insurance
-  - title: Rural Housing
-  - title: Site Preparation for Housing
+  - title: Housing and Homelessness
   title: Housing
 - sub_categories:
-  - title: Disabled Veterans
-  - title: Disabled and Handicapped Services
-  - title: Emergency and Crisis Assistance
-  - title: Families and Child Welfare Services
-  - title: Indian Services
-  - title: Information and Referral Services
-  - title: Legal and Advocacy Services
-  - title: Nutrition
-  - title: Old Age Assistance
-  - title: Prevention
-  - title: Public Assistance
-  - title: Refugees, Alien Services
-  - title: Research, Demonstration
-  - title: Social Security and Insurance
-  - title: Specialized Family and Child Welfare Services
-  - title: Specialized Services
-  - title: Training Assistance
-  - title: Veterans Services
-  - title: Youth Services
+  - title: Burial Benefits
+  - title: Personal Financial Health
   title: Income Security and Social Services
 - sub_categories:
-  - title: Census Data
-  - title: General
-  - title: Libraries, Clearinghouses, Archives
-  - title: Library of Congress
-  title: Information and Statistics
+  - title: International Relations and Foreign Affairs
+  title: International Affairs
 - sub_categories:
-  - title: Interest on the Public Debt
-  title: Interest on the Public Debt
+  - title: Border Security
+  - title: Cybersecurity
+  - title: Domestic Threats and Hazards
+  - title: Law Enforcement Support
+  - title: Legal Services
+  - title: Tribal Independence and Autonomy
+  title: Law, Justice, and Legal Services
 - sub_categories:
-  - title: Law Enforcement - Crime Analysis and Data
-  - title: Law Enforcement - Narcotics and Dangerous Drugs
-  - title: Law Enforcement - Planning and Operations
-  - title: Law Enforcement - Research, Education, Training
-  - title: Legal Services - Claims Against Foreign Government
-  - title: Legal Services - Employment Rights
-  - title: Legal Services - General Services
-  - title: Legal Services - Housing Rights
-  - title: Legal Services - Labor Management
-  title: Law, Justice and Legal Services
+  - title: Defense Capability
+  title: National Defense
 - sub_categories:
-  - title: Community Sewage Treatment Assistance
-  - title: Community Water Supply Services
-  - title: Land Conservation
-  - title: Mineral Research
-  - title: Recreation
-  - title: Water Conservation and Research
-  - title: Wildlife Research and Preservation
+  - title: Conservation and Land Management
+  - title: Recreational Resources
+  - title: Water Resources
   title: Natural Resources
 - sub_categories:
-  - title: Economic Development
-  - title: Education
-  - title: Energy
-  - title: Health and Nutrition
-  - title: Housing
-  - title: Land Acquisition and Rehabilitation and Facilities Construction
-  - title: Planning and Technical Assistance
-  - title: Resources and Development
-  - title: Transportation
-  title: Regional Development
-- sub_categories:
-  - title: Information and Technical
-  - title: Research - General
-  - title: Research - Specialized
+  - title: General science and basic research
   title: Science and Technology
 - sub_categories:
-  - title: Agriculture
-  - title: Commerce and Housing
-  - title: Community and Regional Development
-  - title: Education, Training, Employment, and Social Services
-  - title: Energy
-  - title: General Purpose Fiscal Assistance
-  - title: General Science, Space, and Technology
-  - title: Health
-  - title: Income Security
-  - title: Interest
-  - title: International Affairs
-  - title: National Defense
-  - title: Natural Resources and Environment
-  - title: Social Security
-  - title: Transportation
-  - title: Veterans Benefits and Services
-  title: Tax Expenditures
-- sub_categories:
   - title: Air Transportation
-  - title: Highways, Public Roads, and Bridges
-  - title: Rail Transportation
-  - title: Urban Mass Transit
-  - title: Water Navigation
+  - title: Ground Transportation
+  - title: Multi–modal Transportation
+  - title: Water Transportation
   title: Transportation
 cfo_agencies:
-- title: Agency for International Development
 - sub_categories:
   - title: Agricultural Marketing Service
   - title: Agricultural Research Service
@@ -320,7 +223,6 @@ cfo_agencies:
   title: Department of Commerce
 - sub_categories:
   - title: DEFENSE HUMAN RESOURCES ACTIVITY
-  - title: DEFENSE INTELLIGENCE AGENCY (DIA)
   - title: DEFENSE POW-MIA ACCOUNTING AGENCY (DPAA)
   - title: DEFENSE SECURITY COOPERATION AGENCY (DSCA)
   - title: Defense Advanced Research Projects Agency  (DARPA)
@@ -361,7 +263,6 @@ cfo_agencies:
   - title: National Institutes of Health
   - title: Office Of The Assistant Secretary For Administration (ASA)
   - title: Office of Assistant Secretary for Health
-  - title: Office of the National Coordinator for Health Information Technology (ONC)
   - title: Office of the Secretary
   - title: Substance Abuse and Mental Health Services Administration
   - title: Unspecified
@@ -383,7 +284,6 @@ cfo_agencies:
   - title: Assistant Secretary for Housing -- Federal Housing Commissioner
   - title: Assistant Secretary for Policy Development and Research
   - title: Assistant Secretary for Public and Indian Housing
-  - title: Office of Community Planning and Development
   - title: Office of Lead Hazard Control and Healthy Homes
   title: Department of Housing and Urban Development
 - sub_categories:
@@ -397,7 +297,6 @@ cfo_agencies:
 - sub_categories:
   - title: Bureau of International Labor Affairs
   - title: Bureau of Labor Statistics
-  - title: Employee Benefits Security Administration
   - title: Employment Training Administration
   - title: Mine Safety and Health Administration
   - title: Occupational Safety and Health Administration
@@ -468,7 +367,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2024'
+fiscal_year: '2025'
 layout: home
 other_agencies:
 - title: Appalachian Regional Commission
@@ -482,7 +381,6 @@ other_agencies:
   - title: Denali Commission
   - title: Unspecified
   title: Denali Commission
-- title: Equal Employment Opportunity Commission
 - sub_categories:
   - title: Executive Office of the President
   - title: Unspecified
@@ -493,7 +391,6 @@ other_agencies:
   - title: Unspecified
   title: Federal Communications Commission
 - title: Federal Financial Institutions Examination Council Appraisal Subcommittee
-- title: Federal Permitting Improvement Steering Council
 - title: Gulf Coast Ecosystem Restoration Council
 - sub_categories:
   - title: Inter-American Foundation
@@ -515,6 +412,7 @@ other_agencies:
 - title: Office of the Director Of National Intelligence
 - title: Pension Benefit Guaranty Corporation
 - title: Railroad Retirement Board
+- title: SOUTHWEST BORDER REGIONAL COMMISSION
 - title: Southeast Crescent Regional Commission
 - sub_categories:
   - title: The Institute of Museum and Library Services
@@ -526,18 +424,21 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
+outcomes_count: '306 '
 permalink: /
 program_types:
 - title: Advisory Services and Counseling
+- title: Contracts
 - title: Direct Loans
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
 - title: Dissemination of Technical Information
+- title: Financial
 - title: Formula Grants
 - title: Guaranteed / Insured Loans
 - title: Insurance
 - title: Interest
-- title: Investigation of Complaints
+- title: Non-Financial
 - title: Project Grants
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
@@ -545,5 +446,7 @@ program_types:
 - title: Tax Expenditures
 - title: Training
 - title: Use of Property, Facilities, or Equipment
+programs_count: '3,447 '
+spending_total: 7844868660269.63
 title: Home
 ---

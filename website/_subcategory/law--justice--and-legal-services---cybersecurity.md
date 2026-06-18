@@ -1,0 +1,227 @@
+---
+agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,"total_obs":2714598797.66},{"title":"Department
+  of Homeland Security","total_num_programs":7,"total_obs":383766558.0},{"title":"Department
+  of Defense","total_num_programs":2,"total_obs":38624466.019999996},{"title":"Department
+  of State","total_num_programs":1,"total_obs":296003.95},{"title":"Department of
+  Health and Human Services","total_num_programs":3,"total_obs":-3176.75}]'
+applicant_types: '[{"title":"Other public institution/organization","total_num_programs":4},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":4},{"title":"Nonprofit with 501C3 IRS Status (Other
+  than Institution of Higher Education)","total_num_programs":3},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"For-Profit
+  Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
+  (less than 500 employees)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
+  Territories and possessions","total_num_programs":1}]'
+categories_subcategories:
+- permalink: /category/agricultural
+  subcategories:
+  - permalink: /category/agricultural/agricultural-resources-and-services
+    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/farm-income-stabilization
+    title: Farm Income Stabilization
+  title: Agricultural
+- permalink: /category/business-and-commerce
+  subcategories:
+  - permalink: /category/business-and-commerce/business-development
+    title: Business Development
+  - permalink: /category/business-and-commerce/economic-development
+    title: Economic Development
+  title: Business and Commerce
+- permalink: /category/community-development
+  subcategories:
+  - permalink: /category/community-development/community--area--and-regional-development
+    title: Community, Area, and Regional Development
+  title: Community Development
+- permalink: /category/consumer-protection
+  subcategories:
+  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
+    title: Consumer and Occupational Health and Safety
+  title: Consumer Protection
+- permalink: /category/cultural-affairs
+  subcategories:
+  - permalink: /category/cultural-affairs/access-and-appreciation
+    title: Access and Appreciation
+  - permalink: /category/cultural-affairs/artistic-talent-development
+    title: Artistic Talent Development
+  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
+    title: Cultural Heritage and Traditions
+  - permalink: /category/cultural-affairs/cultural-institutions
+    title: Cultural Institutions
+  title: Cultural Affairs
+- permalink: /category/disaster-prevention-and-relief
+  subcategories:
+  - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
+    title: Disaster Readiness, Response, and Relief
+  title: Disaster Prevention and Relief
+- permalink: /category/education
+  subcategories:
+  - permalink: /category/education/early-childhood-education-and-childcare
+    title: Early Childhood Education and Childcare
+  - permalink: /category/education/educational-environments
+    title: Educational Environments
+  - permalink: /category/education/k-12-education
+    title: K–12 Education
+  - permalink: /category/education/post-secondary-education
+    title: Post–Secondary Education
+  - permalink: /category/education/stem-education
+    title: STEM Education
+  title: Education
+- permalink: /category/employment-and-labor
+  subcategories:
+  - permalink: /category/employment-and-labor/workforce-development
+    title: Workforce Development
+  title: Employment and Labor
+- permalink: /category/energy
+  subcategories:
+  - permalink: /category/energy/energy-supply
+    title: Energy Supply
+  title: Energy
+- permalink: /category/environmental-quality
+  subcategories:
+  - permalink: /category/environmental-quality/pollution-control-and-abatement
+    title: Pollution Control and Abatement
+  title: Environmental Quality
+- permalink: /category/food-and-nutrition
+  subcategories:
+  - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
+    title: Food and Nutrition Assistance
+  title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
+- permalink: /category/health
+  subcategories:
+  - permalink: /category/health/child-welfare
+    title: Child Welfare
+  - permalink: /category/health/health-and-wellbeing
+    title: Health and Wellbeing
+  - permalink: /category/health/healthcare-access
+    title: Healthcare Access
+  - permalink: /category/health/healthcare-innovation
+    title: Healthcare Innovation
+  - permalink: /category/health/healthcare-quality-and-delivery
+    title: Healthcare Quality and Delivery
+  - permalink: /category/health/veteran-health
+    title: Veteran Health
+  title: Health
+- permalink: /category/housing
+  subcategories:
+  - permalink: /category/housing/housing-and-homelessness
+    title: Housing and Homelessness
+  title: Housing
+- permalink: /category/income-security-and-social-services
+  subcategories:
+  - permalink: /category/income-security-and-social-services/burial-benefits
+    title: Burial Benefits
+  - permalink: /category/income-security-and-social-services/personal-financial-health
+    title: Personal Financial Health
+  title: Income Security and Social Services
+- permalink: /category/international-affairs
+  subcategories:
+  - permalink: /category/international-affairs/international-relations-and-foreign-affairs
+    title: International Relations and Foreign Affairs
+  title: International Affairs
+- permalink: /category/law--justice--and-legal-services
+  subcategories:
+  - permalink: /category/law--justice--and-legal-services/border-security
+    title: Border Security
+  - permalink: /category/law--justice--and-legal-services/cybersecurity
+    title: Cybersecurity
+  - permalink: /category/law--justice--and-legal-services/domestic-threats-and-hazards
+    title: Domestic Threats and Hazards
+  - permalink: /category/law--justice--and-legal-services/law-enforcement-support
+    title: Law Enforcement Support
+  - permalink: /category/law--justice--and-legal-services/legal-services
+    title: Legal Services
+  - permalink: /category/law--justice--and-legal-services/tribal-independence-and-autonomy
+    title: Tribal Independence and Autonomy
+  title: Law, Justice, and Legal Services
+- permalink: /category/national-defense
+  subcategories:
+  - permalink: /category/national-defense/defense-capability
+    title: Defense Capability
+  title: National Defense
+- permalink: /category/natural-resources
+  subcategories:
+  - permalink: /category/natural-resources/conservation-and-land-management
+    title: Conservation and Land Management
+  - permalink: /category/natural-resources/recreational-resources
+    title: Recreational Resources
+  - permalink: /category/natural-resources/water-resources
+    title: Water Resources
+  title: Natural Resources
+- permalink: /category/science-and-technology
+  subcategories:
+  - permalink: /category/science-and-technology/general-science-and-basic-research
+    title: General science and basic research
+  title: Science and Technology
+- permalink: /category/transportation
+  subcategories:
+  - permalink: /category/transportation/air-transportation
+    title: Air Transportation
+  - permalink: /category/transportation/ground-transportation
+    title: Ground Transportation
+  - permalink: /category/transportation/multi-modal-transportation
+    title: Multi–modal Transportation
+  - permalink: /category/transportation/water-transportation
+    title: Water Transportation
+  title: Transportation
+fiscal_year: '2025'
+parent_permalink: /category/law--justice--and-legal-services
+parent_title: Law, Justice, and Legal Services
+permalink: /category/law--justice--and-legal-services/cybersecurity
+programs: '[{"cfda":"32.010","permalink":"/program/32.010","title":"Supply Chain Reimbursement
+  Program","popular_name":"Supply Chain Reimbursement Program","agency":"Federal Communications
+  Commission","total_obs":2714598797.66,"program_type":"assistance_listing"},{"cfda":"97.137","permalink":"/program/97.137","title":"State
+  and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program","popular_name":null,"agency":"Department
+  of Homeland Security","total_obs":383766558.0,"program_type":"assistance_listing"},{"cfda":"12.905","permalink":"/program/12.905","title":"CyberSecurity
+  Core Curriculum","popular_name":"CAE Grant Program","agency":"Department of Defense","total_obs":23998124.56,"program_type":"assistance_listing"},{"cfda":"12.902","permalink":"/program/12.902","title":"Information
+  Security Grants","popular_name":"Department of War Cyber Service Academy","agency":"Department
+  of Defense","total_obs":14626341.46,"program_type":"assistance_listing"},{"cfda":"19.035","permalink":"/program/19.035","title":"Cyber
+  Capacity Building","popular_name":"Cyber Capacity Building","agency":"Department
+  of State","total_obs":296003.95,"program_type":"assistance_listing"},{"cfda":"97.128","permalink":"/program/97.128","title":"CISA
+  Cyber Security Awareness Campaign","popular_name":"Cybersecurity Awareness Campaign","agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.127","permalink":"/program/97.127","title":"Cybersecurity
+  Education and Training","popular_name":"Cybersecurity Education and Training Assistance
+  Program (CETAP)","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"32.012","permalink":"/program/32.012","title":"Cybersecurity
+  Pilot Program","popular_name":null,"agency":"Federal Communications Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.155","permalink":"/program/97.155","title":"Cybersecurity
+  Workforce Development and Training for Underserved Communities Program","popular_name":"CWD
+  Program","agency":"Department of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.893","permalink":"/program/93.893","title":"Health
+  Care and Public Health (HPH) Sector Information Sharing and Analysis Organization
+  (ISAO)","popular_name":null,"agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.148","permalink":"/program/97.148","title":"National
+  Cybersecurity Preparedness Consortium","popular_name":"NCPC","agency":"Department
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.457","permalink":"/program/93.457","title":"Planning
+  Grant for Healthcare and Public Health Sector Cybersecurity Information Sharing","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.123","permalink":"/program/97.123","title":"State,
+  Local, Tribal and Territorial Security Operations Center/Information Sharing and
+  Analysis Center","popular_name":"SLTT SOC / ISAC Program","agency":"Department of
+  Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.156","permalink":"/program/97.156","title":"Tribal
+  Cybersecurity Grant Program","popular_name":"TCGP","agency":"Department of Homeland
+  Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.835","permalink":"/program/93.835","title":"Planning
+  Grant for Healthcare and Public Health Sector Cybersecurity Information Sharing","popular_name":null,"agency":"Department
+  of Health and Human Services","total_obs":-3176.75,"program_type":"assistance_listing"}]'
+title: Cybersecurity
+total_num_agencies: 5
+total_num_applicant_types: 25
+total_num_programs: 15
+total_obs: 3137282648.8799996
+---

@@ -1,0 +1,90 @@
+<script>
+// Tab Navigation Functionality
+// Reusable tab switching behavior for any tabbed interface
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all tab buttons and panels
+  const tabButtons = document.querySelectorAll('[role="tab"]');
+  const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+  
+  // Function to activate a tab
+  function activateTab(targetTab, targetPanel) {
+    // Deactivate all tabs
+    tabButtons.forEach(tab => {
+      tab.setAttribute('aria-selected', 'false');
+      tab.setAttribute('tabindex', '-1');
+      tab.classList.remove('border-ink', 'text-ink', 'text-bold');
+      tab.classList.add('border-transparent', 'text-base');
+    });
+    
+    // Hide all panels
+    tabPanels.forEach(panel => {
+      panel.classList.add('display-none');
+    });
+    
+    // Activate target tab
+    targetTab.setAttribute('aria-selected', 'true');
+    targetTab.setAttribute('tabindex', '0');
+    targetTab.classList.remove('border-transparent', 'text-base');
+    targetTab.classList.add('border-ink', 'text-ink', 'text-bold');
+    
+    // Show target panel
+    targetPanel.classList.remove('display-none');
+    
+    // Focus the activated tab
+    targetTab.focus();
+  }
+  
+  // Add click handlers to tab buttons
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetPanelId = this.getAttribute('aria-controls');
+      const targetPanel = document.getElementById(targetPanelId);
+      
+      if (targetPanel) {
+        activateTab(this, targetPanel);
+      }
+    });
+    
+    // Add keyboard navigation
+    button.addEventListener('keydown', function(e) {
+      const currentIndex = Array.from(tabButtons).indexOf(this);
+      let targetIndex;
+      
+      switch(e.key) {
+        case 'ArrowRight':
+        case 'ArrowDown':
+          e.preventDefault();
+          targetIndex = (currentIndex + 1) % tabButtons.length;
+          break;
+        case 'ArrowLeft':
+        case 'ArrowUp':
+          e.preventDefault();
+          targetIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+          break;
+        case 'Home':
+          e.preventDefault();
+          targetIndex = 0;
+          break;
+        case 'End':
+          e.preventDefault();
+          targetIndex = tabButtons.length - 1;
+          break;
+        default:
+          return;
+      }
+      
+      if (targetIndex !== undefined) {
+        const targetTab = tabButtons[targetIndex];
+        const targetPanelId = targetTab.getAttribute('aria-controls');
+        const targetPanel = document.getElementById(targetPanelId);
+        
+        if (targetPanel) {
+          activateTab(targetTab, targetPanel);
+        }
+      }
+    });
+  });
+});
+</script>
