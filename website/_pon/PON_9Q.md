@@ -57,7 +57,7 @@ where_used:
   permalink: /program/66.469
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 19367949.0
+  expenditure_amount: 19366949.0
   name: 'Geographic Programs - Puget Sound Protection and Restoration: Tribal Implementation
     Assistance Program'
   permalink: /program/66.121
@@ -119,7 +119,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 116806376.0
-  name: Pacific Coast Salmon Recovery
+  name: Pacific Coast Salmon Recovery Fund
   permalink: /program/11.045
   program_type: assistance_listing
 - agency: Department of the Interior

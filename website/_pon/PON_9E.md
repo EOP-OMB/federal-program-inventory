@@ -38,7 +38,7 @@ where_used:
   permalink: /program/81.119
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2801160.0
+  expenditure_amount: 3000000.0
   name: Sun Grant Program
   permalink: /program/10.320
   program_type: assistance_listing

@@ -1,34 +1,34 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":49,"total_obs":900662529.61},{"title":"Agency
+agencies: '[{"title":"Department of Agriculture","total_num_programs":49,"total_obs":917173746.3600001},{"title":"Agency
   for International Development","total_num_programs":1,"total_obs":14500000.0},{"title":"Department
   of the Interior","total_num_programs":2,"total_obs":122236.31000000001},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":24},{"title":"Other","total_num_programs":18},{"title":"State","total_num_programs":15},{"title":"Unrestricted
-  by Entity Type","total_num_programs":12},{"title":"For-Profit Organization","total_num_programs":8},{"title":"U.S.
-  Federal Government","total_num_programs":8},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Not-for-Profit
-  Organization","total_num_programs":7},{"title":"U.S. State Government (including
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":23},{"title":"Other","total_num_programs":20},{"title":"State","total_num_programs":15},{"title":"Unrestricted
+  by Entity Type","total_num_programs":10},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":7},{"title":"For-Profit
+  Organization","total_num_programs":7},{"title":"U.S. Federal Government","total_num_programs":7},{"title":"Not-for-Profit
+  Organization","total_num_programs":6},{"title":"U.S. State Government (including
   the District of Columbia)","total_num_programs":6},{"title":"Indian/Native American/Alaska
   Native Tribal Government (Other than Federally Recognized)","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":4},{"title":"Land/Property Owner","total_num_programs":3},{"title":"School
-  District","total_num_programs":3},{"title":"Tribally Designated Housing Authority","total_num_programs":3},{"title":"Unrestricted
-  by Individual Type","total_num_programs":3},{"title":"County Government (inclusive
-  of boroughs in Alaska, parishes and other governmental entities with geographic
-  regional control and authority)","total_num_programs":2},{"title":"Department or
-  Agency of a U.S. State Government","total_num_programs":2},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":2},{"title":"Interstate Organization","total_num_programs":2},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"Other
-  Special Disctrict Government","total_num_programs":2},{"title":"Public Housing Authority","total_num_programs":2},{"title":"U.S.
+  District","total_num_programs":3},{"title":"Tribally Designated Housing Authority","total_num_programs":3},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Interstate
+  Organization","total_num_programs":2},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":2},{"title":"Other Special Disctrict
+  Government","total_num_programs":2},{"title":"Public Housing Authority","total_num_programs":2},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Farmworker","total_num_programs":1},{"title":"Foreign
   Government","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Other
   public institution/organization","total_num_programs":1},{"title":"Private nonprofit
   institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Small
   Business Person","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Veteran
-  (including dependents)","total_num_programs":1}]'
+  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"Unrestricted
+  by Individual Type","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -206,7 +206,7 @@ programs: '[{"cfda":"10.203","permalink":"/program/10.203","title":"Payments to 
   and Food Research Initiative (AFRI)","popular_name":"AFRI","agency":"Department
   of Agriculture","total_obs":176520085.44,"program_type":"assistance_listing"},{"cfda":"10.001","permalink":"/program/10.001","title":"Agricultural
   Research Basic and Applied Research","popular_name":"Extramural Research","agency":"Department
-  of Agriculture","total_obs":142912928.08,"program_type":"assistance_listing"},{"cfda":"10.931","permalink":"/program/10.931","title":"Agricultural
+  of Agriculture","total_obs":142990230.58,"program_type":"assistance_listing"},{"cfda":"10.931","permalink":"/program/10.931","title":"Agricultural
   Conservation Easement Program","popular_name":"ACEP","agency":"Department of Agriculture","total_obs":102214115.67,"program_type":"assistance_listing"},{"cfda":"10.205","permalink":"/program/10.205","title":"Payments
   to 1890 Land-Grant Colleges and Tuskegee University","popular_name":"Evans-Allen
   Research;  Agricultural Research at 1890 Land-grant Institutions Section 1445","agency":"Department
@@ -218,32 +218,33 @@ programs: '[{"cfda":"10.203","permalink":"/program/10.203","title":"Payments to 
   Grants (SRGP)","agency":"Department of Agriculture","total_obs":30126273.22,"program_type":"assistance_listing"},{"cfda":"98.009","permalink":"/program/98.009","title":"John
   Ogonowski Farmer-to-Farmer Program","popular_name":"(Development assistance program)","agency":"Agency
   for International Development","total_obs":14500000.0,"program_type":"assistance_listing"},{"cfda":"10.303","permalink":"/program/10.303","title":"Integrated
-  Programs","popular_name":"Integrated Programs","agency":"Department of Agriculture","total_obs":10406418.64,"program_type":"assistance_listing"},{"cfda":"10.028","permalink":"/program/10.028","title":"Wildlife
-  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":7437763.32,"program_type":"assistance_listing"},{"cfda":"10.935","permalink":"/program/10.935","title":"Urban
+  Programs","popular_name":"Integrated Programs","agency":"Department of Agriculture","total_obs":10406418.64,"program_type":"assistance_listing"},{"cfda":"10.291","permalink":"/program/10.291","title":"Agricultural
+  and Food Policy Research Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":9703000.0,"program_type":"assistance_listing"},{"cfda":"10.028","permalink":"/program/10.028","title":"Wildlife
+  Services","popular_name":null,"agency":"Department of Agriculture","total_obs":7088083.14,"program_type":"assistance_listing"},{"cfda":"10.935","permalink":"/program/10.935","title":"Urban
   Agriculture and Innovative Production Grants Program (UAIP)","popular_name":"Urban
-  Agriculture and Innovative Production (UAIP)","agency":"Department of Agriculture","total_obs":6970683.96,"program_type":"assistance_listing"},{"cfda":"10.937","permalink":"/program/10.937","title":"Partnerships
+  Agriculture and Innovative Production (UAIP)","agency":"Department of Agriculture","total_obs":6970683.96,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
+  Agricultural Assistance","popular_name":"Technical Agricultural Assistance","agency":"Department
+  of Agriculture","total_obs":4542871.06,"program_type":"assistance_listing"},{"cfda":"10.937","permalink":"/program/10.937","title":"Partnerships
   for Climate-Smart Commodities","popular_name":"Advancing Markets for Producers (Partnerships
   for Climate-Smart Commodities)","agency":"Department of Agriculture","total_obs":4496450.34,"program_type":"assistance_listing"},{"cfda":"10.207","permalink":"/program/10.207","title":"Animal
   Health and Disease Research","popular_name":"AHDR; Animal Health and Disease Research
   Capacity Program","agency":"Department of Agriculture","total_obs":3573512.88,"program_type":"assistance_listing"},{"cfda":"10.330","permalink":"/program/10.330","title":"Alfalfa
   Seed and Alfalfa Forage Systems Program","popular_name":"AFRP","agency":"Department
-  of Agriculture","total_obs":2989086.13,"program_type":"assistance_listing"},{"cfda":"10.333","permalink":"/program/10.333","title":"Urban,
+  of Agriculture","total_obs":2989086.13,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
+  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":2542000.0,"program_type":"assistance_listing"},{"cfda":"10.333","permalink":"/program/10.333","title":"Urban,
   Indoor, and Other Emerging Agricultural Production Research, Education, and Extension
   Initiative","popular_name":"Urban Agriculture","agency":"Department of Agriculture","total_obs":1884960.0,"program_type":"assistance_listing"},{"cfda":"10.332","permalink":"/program/10.332","title":"Agricultural
   Genome to Phenome Initiative","popular_name":"Genome to Phenome","agency":"Department
   of Agriculture","total_obs":1825317.09,"program_type":"assistance_listing"},{"cfda":"10.233","permalink":"/program/10.233","title":"Open
-  Data Standards","popular_name":"Open Data","agency":"Department of Agriculture","total_obs":957085.0,"program_type":"assistance_listing"},{"cfda":"10.245","permalink":"/program/10.245","title":"Laying
+  Data Standards","popular_name":"Open Data Framework (ODF)","agency":"Department
+  of Agriculture","total_obs":957085.0,"program_type":"assistance_listing"},{"cfda":"10.245","permalink":"/program/10.245","title":"Laying
   Hen and Turkey Research Program","popular_name":null,"agency":"Department of Agriculture","total_obs":449020.0,"program_type":"assistance_listing"},{"cfda":"15.559","permalink":"/program/15.559","title":"New
   Mexico Rio Grande Basin Pueblos Irrigation Infrastructure","popular_name":"New Mexico
   Pueblos Irrigation Project","agency":"Department of the Interior","total_obs":199919.67,"program_type":"assistance_listing"},{"cfda":"10.950","permalink":"/program/10.950","title":"Agricultural
   Statistics Reports","popular_name":"Agricultural Estimates","agency":"Department
   of Agriculture","total_obs":79728.0,"program_type":"assistance_listing"},{"cfda":"10.250","permalink":"/program/10.250","title":"Agricultural
   and Rural Economic Research, Cooperative Agreements and Collaborations","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":18117.57,"program_type":"assistance_listing"},{"cfda":"10.960","permalink":"/program/10.960","title":"Technical
-  Agricultural Assistance","popular_name":"Technical Agricultural Assistance","agency":"Department
-  of Agriculture","total_obs":4276.63,"program_type":"assistance_listing"},{"cfda":"10.290","permalink":"/program/10.290","title":"Agricultural
-  Market and Economic Research","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.291","permalink":"/program/10.291","title":"Agricultural
-  and Food Policy Research Centers","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.339","permalink":"/program/10.339","title":"Composting
+  of Agriculture","total_obs":18117.57,"program_type":"assistance_listing"},{"cfda":"10.339","permalink":"/program/10.339","title":"Composting
   and Food Waste Reduction Program","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.942","permalink":"/program/10.942","title":"Conservation
   Innovation Grants (CIG)-Classic","popular_name":"CIG Classic","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.342","permalink":"/program/10.342","title":"Conservation
@@ -275,7 +276,8 @@ programs: '[{"cfda":"10.203","permalink":"/program/10.203","title":"Payments to 
   Management Education Partnerships","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.343","permalink":"/program/10.343","title":"Special
   Research Grants Program Aquaculture Research","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.272","permalink":"/program/10.272","title":"Supplemental
-  and Alternative Crops","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.700","permalink":"/program/10.700","title":"National
+  and Alternative Crops","popular_name":"Supplemental and Alternative Crops Competitive
+  Grants Program","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.700","permalink":"/program/10.700","title":"National
   Agricultural Library","popular_name":null,"agency":"Department of Agriculture","total_obs":-0.03,"program_type":"assistance_listing"},{"cfda":"10.253","permalink":"/program/10.253","title":"Consumer
   Data and Nutrition Research","popular_name":null,"agency":"Department of Agriculture","total_obs":-8151.92,"program_type":"assistance_listing"},{"cfda":"15.572","permalink":"/program/15.572","title":"Agricultural
   Water Use Efficiency Program","popular_name":"AgWUE","agency":"Department of the
@@ -293,5 +295,5 @@ title: Agricultural Resources and Services
 total_num_agencies: 4
 total_num_applicant_types: 39
 total_num_programs: 53
-total_obs: 915284765.92
+total_obs: 931795982.6700001
 ---

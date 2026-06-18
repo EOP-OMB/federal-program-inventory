@@ -67,6 +67,11 @@ where_used:
   name: Department of Interior Wildfire Management - Preparedness
   permalink: /program/15.088
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Disaster-Resilient Buildings, Infrastructure, and Communities
+  permalink: /program/11.069
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
   name: Earthquake Hazards Program Assistance
@@ -273,7 +278,7 @@ where_used:
   permalink: /program/97.106
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 315739320.0
+  expenditure_amount: 313544003.04
   name: Smith-Lever Extension Funding
   permalink: /program/10.511
   program_type: assistance_listing

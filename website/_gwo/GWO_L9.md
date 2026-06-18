@@ -84,7 +84,7 @@ where_used:
   permalink: /program/15.520
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 4500000.0
+  expenditure_amount: 11750000.0
   name: Midsize and Large Drinking Water System Infrastructure Resilience and Sustainability
     Program – Safe Drinking Water Act 1459F
   permalink: /program/66.488
@@ -135,7 +135,7 @@ where_used:
   permalink: /program/15.074
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 16312418.0
+  expenditure_amount: 116740000.0
   name: State Public Water System Supervision
   permalink: /program/66.432
   program_type: assistance_listing
@@ -146,7 +146,7 @@ where_used:
   permalink: /program/66.424
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 51888233.0
+  expenditure_amount: 70752432.0
   name: Voluntary School and Child Care Lead Testing and Reduction Grant Program (SDWA
     1464(d))
   permalink: /program/66.444

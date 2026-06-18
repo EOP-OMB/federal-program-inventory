@@ -97,7 +97,7 @@ where_used:
   permalink: /program/81.087
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 16192604.3
+  expenditure_amount: 907114425.5
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing

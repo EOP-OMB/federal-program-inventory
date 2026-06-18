@@ -38,6 +38,11 @@
 
     function createObligationsPieChart(obligationData) {
 
+    const pieChartContainer = document.getElementById("obligations-pie-chart");
+    if (!pieChartContainer) {
+      return;
+    }
+
 
     // Set up dimensions
     const width = 800;
@@ -156,7 +161,7 @@
 
   function downloadObligationsData() {
     const dataToExport = obligationData;
-    let headers = ['Type', `Expenditures (FY${fiscalYear})`, 'Percentage'];
+    let headers = ['Type', 'Amount', 'Percentage'];
 
     let csvContent = headers.join(",") + "\n";
     const total = dataToExport.reduce((sum, item) => sum + item.total_obs, 0);
@@ -189,9 +194,16 @@
 
       const categorySelect = document.getElementById("category");
       const subcategorySelect = document.getElementById("subcategory");
+      const subcategorySelectWrap = subcategorySelect.parentElement;
       const updateButton = document.getElementById("category-button");
 
-      subcategorySelect.disabled = true;
+      function setSubcategoryDisabled(isDisabled) {
+        subcategorySelect.setAttribute("aria-disabled", isDisabled ? "true" : "false");
+        subcategorySelect.style.pointerEvents = isDisabled ? "none" : "auto";
+        subcategorySelectWrap.classList.toggle("category-select-wrap--disabled", isDisabled);
+      }
+
+      setSubcategoryDisabled(true);
 
       // Populate categories dropdown
       categorySelect.innerHTML = `
@@ -208,7 +220,7 @@
       // Reset subcategory dropdown
       function resetSubcategory() {
         subcategorySelect.innerHTML = '<option value="">-Select-</option>';
-        subcategorySelect.disabled = true;
+        setSubcategoryDisabled(true);
       }
 
       // Handle category selection
@@ -223,7 +235,7 @@
         }
 
         // Enable and populate subcategory dropdown
-        subcategorySelect.disabled = false;
+        setSubcategoryDisabled(false);
         subcategorySelect.innerHTML = `
           <option value="">-Select-</option>
           ${selectedCategory.subcategories
@@ -253,7 +265,7 @@
 
       function downloadTableData() {
         const dataToExport = categoriesChartData;
-        let headers = ['Category', 'Number of Programs', `Expenditures (FY${fiscalYear})`];
+        let headers = ['Category', 'Number of Programs', 'Amount'];
 
         let csvContent = headers.join(",") + "\n";
         dataToExport.forEach((item) => {
@@ -297,7 +309,7 @@
           categorySelect.value = matchingCategory.permalink;
 
           // Enable subcategory dropdown
-          subcategorySelect.disabled = false;
+          setSubcategoryDisabled(false);
 
           // Populate subcategories
           subcategorySelect.innerHTML = `
@@ -343,17 +355,19 @@
         });
       }
 
-        document
-    .getElementById("category-chart-download")
-    .addEventListener("click", downloadTableData);
+      const categoryDownloadButton = document.getElementById("category-chart-download");
+      if (categoryDownloadButton) {
+        categoryDownloadButton.addEventListener("click", downloadTableData);
+      }
 
-        document
-    .getElementById("obligations-by-type-download")
-    .addEventListener("click", downloadObligationsData);
+      const obligationsDownloadButton = document.getElementById("obligations-by-type-download");
+      if (obligationsDownloadButton) {
+        obligationsDownloadButton.addEventListener("click", downloadObligationsData);
+      }
 
       createCategoryChart();
+      createObligationsPieChart(obligationData);
 
       setDropdownsFromUrl();
     });
-    createObligationsPieChart(obligationData);
 </script>

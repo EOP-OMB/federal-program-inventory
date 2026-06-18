@@ -213,12 +213,10 @@
   }
 
   function updateClearFilterButton() {
-    const clearFiltersBtn = document.querySelector(
-      ".usa-button.usa-button--outline.text-bold"
-    );
+    const clearFiltersBtn = document.getElementById("clear-filters-button");
     if (clearFiltersBtn) {
       const hasChanges = hasFilterChanges();
-      clearFiltersBtn.disabled = !hasChanges;
+      clearFiltersBtn.setAttribute("aria-disabled", hasChanges ? "false" : "true");
       clearFiltersBtn.classList.toggle("usa-button--disabled", !hasChanges);
     }
   }
@@ -231,6 +229,8 @@
         category: [],
         assistance: [],
         applicant: [],
+        gwo: [],
+        pon: [],
       };
     }
 
@@ -276,6 +276,14 @@
       })),
       applicant: (compressed.p || []).map((code) => ({
         type: "applicant",
+        title: getTitle(code),
+      })),
+      gwo: (compressed.gwo || []).map((code) => ({
+        type: "gwo",
+        title: getTitle(code),
+      })),
+      pon: (compressed.pon || []).map((code) => ({
+        type: "pon",
         title: getTitle(code),
       })),
     };
@@ -488,7 +496,7 @@
     // Restore search query
     currentQuery = params.get("q") || "";
     if (currentQuery) {
-      const searchInput = document.querySelector('input[type="search"]');
+      const searchInput = document.getElementById("search-field-en-small");
       if (searchInput) {
         searchInput.value = currentQuery;
       }
@@ -716,16 +724,16 @@
   }
 
   function updateSortButtons() {
-    const expenditureButton = document.getElementById('expenditureSort');
+    const spendingButton = document.getElementById('spendingSort');
     const programNameButton = document.getElementById('programNameSort');
 
-    if (!expenditureButton || !programNameButton) {
+    if (!spendingButton || !programNameButton) {
       return;
     }
 
-    const isExpenditure = currentSort.field === 'obligations';
-    expenditureButton.classList.toggle('usa-button--outline', !isExpenditure);
-    programNameButton.classList.toggle('usa-button--outline', isExpenditure);
+    const isSpending = currentSort.field === 'obligations';
+    spendingButton.classList.toggle('usa-button--outline', !isSpending);
+    programNameButton.classList.toggle('usa-button--outline', isSpending);
   }
 
   // Function to get correct sort field
@@ -1080,7 +1088,7 @@
         program.agency?.title || "";
       clone.querySelector(
         ".program-obligations"
-      ).textContent = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year }} expenditures`;
+      ).textContent = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year }}`;
 
       const objectivesEl = clone.querySelector(".program-objectives");
       const readMoreBtn = clone.querySelector(".read-more-btn");
@@ -1479,33 +1487,33 @@ console.log("DEBUG: Sending request body:", requestBody);
   }
 
   function initializeSortButtons() {
-  const expenditureButton = document.getElementById('expenditureSort');
+  const spendingButton = document.getElementById('spendingSort');
   const programNameButton = document.getElementById('programNameSort');
 
-  if (!expenditureButton || !programNameButton) {
+  if (!spendingButton || !programNameButton) {
     return;
   }
 
-  // Set initial state - expenditure sort is default
-  expenditureButton.classList.remove('usa-button--outline');
+  // Set initial state - spending sort is default
+  spendingButton.classList.remove('usa-button--outline');
   programNameButton.classList.add('usa-button--outline');
 
-  [expenditureButton, programNameButton].forEach(button => {
+  [spendingButton, programNameButton].forEach(button => {
     button.addEventListener('click', async () => {
       
-      const isExpenditure = button.id === 'expenditureSort';
-      const sortField = isExpenditure ? 'obligations' : 'title';
+      const isSpending = button.id === 'spendingSort';
+      const sortField = isSpending ? 'obligations' : 'title';
 
       // Update button styles
-      expenditureButton.classList.toggle('usa-button--outline', !isExpenditure);
-      programNameButton.classList.toggle('usa-button--outline', isExpenditure);
+      spendingButton.classList.toggle('usa-button--outline', !isSpending);
+      programNameButton.classList.toggle('usa-button--outline', isSpending);
 
       // Update sort state
       currentSort = {
         field: sortField,
         order: sortField === currentSort.field 
           ? (currentSort.order === 'asc' ? 'desc' : 'asc')
-          : (isExpenditure ? 'desc' : 'asc')
+          : (isSpending ? 'desc' : 'asc')
       };
 
       currentPage = 1;
@@ -1517,11 +1525,15 @@ console.log("DEBUG: Sending request body:", requestBody);
 }
 
   function initializeClearFiltersButton() {
-    const clearFiltersBtn = document.querySelector(
-      ".usa-button.usa-button--outline.text-bold"
-    );
+    const clearFiltersBtn = document.getElementById("clear-filters-button");
     if (clearFiltersBtn) {
-      clearFiltersBtn.addEventListener("click", clearAllFilters);
+      clearFiltersBtn.addEventListener("click", (event) => {
+        if (clearFiltersBtn.getAttribute("aria-disabled") === "true") {
+          event.preventDefault();
+          return;
+        }
+        clearAllFilters();
+      });
     }
   }
 
@@ -1536,7 +1548,7 @@ console.log("DEBUG: Sending request body:", requestBody);
     updateAccordionCounts();
 
     // Clear search input
-    const searchInput = document.querySelector('input[type="search"]');
+    const searchInput = document.getElementById("search-field-en-small");
     if (searchInput) {
       searchInput.value = "";
     }
@@ -1559,10 +1571,10 @@ console.log("DEBUG: Sending request body:", requestBody);
     currentSort = { field: "obligations", order: "desc" };
 
     // Update sort button UI using IDs instead of text content
-    const expenditureButton = document.getElementById('expenditureSort');
+    const spendingButton = document.getElementById('spendingSort');
     const programNameButton = document.getElementById('programNameSort');
     
-    expenditureButton.classList.remove('usa-button--outline');
+    spendingButton.classList.remove('usa-button--outline');
     programNameButton.classList.add('usa-button--outline');
 
     window.history.pushState({}, "", window.location.pathname);
@@ -1656,7 +1668,7 @@ console.log("DEBUG: Sending request body:", requestBody);
       }
     }
 
-    // Update Program Type count
+    // Update Financial Assistance Type count
     const programTypeButton = document.querySelector(
       '[data-content-id="program-type-section"]'
     );
@@ -1668,7 +1680,7 @@ console.log("DEBUG: Sending request body:", requestBody);
 
       const spanElement = programTypeButton.querySelector("span");
       if (spanElement) {
-        const baseText = "Program type";
+        const baseText = "Financial assistance type";
         spanElement.textContent =
           count > 0 ? `${baseText} (${count})` : baseText;
       }
@@ -1729,6 +1741,17 @@ console.log("DEBUG: Sending request body:", requestBody);
     }
   }
 
+  function normalizeEligibleApplicantLabelBreaks() {
+    const labels = document.querySelectorAll(
+      '#eligible-applicants-section .usa-checkbox__label'
+    );
+
+    labels.forEach((label) => {
+      // Prefer wrapping at slash boundaries by inserting a zero-width space.
+      label.textContent = label.textContent.replace(/\/\u200B?/g, '/\u200B');
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", async function () {
     console.log("DEBUG: DOMContentLoaded event fired");
     initializeCaretToggles();
@@ -1738,6 +1761,7 @@ console.log("DEBUG: Sending request body:", requestBody);
     initializePaginationHandlers();
     initializeSortButtons();
     initializeClearFiltersButton();
+    normalizeEligibleApplicantLabelBreaks();
 
     updateAccordionCounts();
 

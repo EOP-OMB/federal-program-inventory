@@ -11,7 +11,7 @@ permalink: /pon/PON_N9
 title: Increase Adherence to Labor Rights and Fair Trade Regulations
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 64249000.0
   name: International Labor Programs
   permalink: /program/17.401
   program_type: assistance_listing

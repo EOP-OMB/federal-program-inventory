@@ -12,7 +12,7 @@ permalink: /pon/PON_T53
 title: Improve Maintenance of Recreational Trails and Natural Areas
 where_used:
 - agency: Environmental Protection Agency
-  expenditure_amount: 905457.0
+  expenditure_amount: 10073863.0
   name: Beach Monitoring and Notification Program Implementation Grants
   permalink: /program/66.472
   program_type: assistance_listing

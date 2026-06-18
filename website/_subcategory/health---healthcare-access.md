@@ -2,21 +2,24 @@
 agencies: '[{"title":"Department of Health and Human Services","total_num_programs":31,"total_obs":1873117861360.68},{"title":"Department
   of the Treasury","total_num_programs":3,"total_obs":105320000000.0}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":14},{"title":"State","total_num_programs":12},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":7},{"title":"Not-for-Profit
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":8},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":8},{"title":"Not-for-Profit
   Organization","total_num_programs":6},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Local
+  the District of Columbia)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Tribal","total_num_programs":4},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":3},{"title":"Local","total_num_programs":3},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":3},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Minority
-  group","total_num_programs":2},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Public
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":2},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Minority
+  group","total_num_programs":2},{"title":"Municipality or Township government (inclusive
+  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":2},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":2},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
-  Territories and possessions","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  hospitals)","total_num_programs":2},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"U.S.
+  Territories and possessions","total_num_programs":2},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":1},{"title":"Other Special Disctrict
   Government","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"U.S.
@@ -266,7 +269,7 @@ programs: '[{"cfda":"93.778","permalink":"/program/93.778","title":"Grants to St
   Directives","popular_name":null,"agency":"Department of Health and Human Services","total_obs":-10106623.19,"program_type":"assistance_listing"}]'
 title: Healthcare Access
 total_num_agencies: 2
-total_num_applicant_types: 35
+total_num_applicant_types: 37
 total_num_programs: 34
 total_obs: 1978437861360.68
 ---

@@ -1,49 +1,50 @@
 ---
-agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":78,"total_obs":66919990104.49999},{"title":"Department
+agencies: '[{"title":"Department of Housing and Urban Development","total_num_programs":78,"total_obs":67108181664.63},{"title":"Department
   of the Treasury","total_num_programs":13,"total_obs":25241810963.18},{"title":"Department
   of Veterans Affairs","total_num_programs":7,"total_obs":2097275903.34},{"title":"Department
-  of Agriculture","total_num_programs":14,"total_obs":1692348552.2299998},{"title":"Department
+  of Agriculture","total_num_programs":14,"total_obs":1692637457.4199998},{"title":"Department
   of Health and Human Services","total_num_programs":3,"total_obs":129395713.66},{"title":"Department
   of the Interior","total_num_programs":2,"total_obs":11460755.41},{"title":"Environmental
   Protection Agency","total_num_programs":1,"total_obs":6473690.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product Safety
   Commission","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":37},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":25},{"title":"County
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":48},{"title":"For-Profit
+  Organization","total_num_programs":26},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":25},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":23},{"title":"For-Profit
-  Organization","total_num_programs":22},{"title":"State","total_num_programs":22},{"title":"U.S.
+  with geographic regional control and authority)","total_num_programs":23},{"title":"State","total_num_programs":23},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":22},{"title":"Local","total_num_programs":19},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":19},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":19},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":15},{"title":"Public
-  Housing Authority","total_num_programs":13},{"title":"Department or Agency of a
-  U.S. State Government","total_num_programs":12},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":12},{"title":"Tribally
-  Designated Housing Authority","total_num_programs":12},{"title":"Other","total_num_programs":11},{"title":"Individual/Family","total_num_programs":10},{"title":"Not-for-Profit
-  Organization","total_num_programs":10},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":9},{"title":"Other Special Disctrict Government","total_num_programs":9},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":9},{"title":"Profit organization","total_num_programs":9},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Tribal","total_num_programs":9},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":8},{"title":"Public
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":19},{"title":"Public
+  Housing Authority","total_num_programs":15},{"title":"U.S. Territory (or Possession)
+  Government (including freely-associated states)","total_num_programs":15},{"title":"Not-for-Profit
+  Organization","total_num_programs":13},{"title":"Department or Agency of a U.S.
+  State Government","total_num_programs":12},{"title":"Tribally Designated Housing
+  Authority","total_num_programs":12},{"title":"Homeowner","total_num_programs":11},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":11},{"title":"Other","total_num_programs":11},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":9},{"title":"Other Special
+  Disctrict Government","total_num_programs":9},{"title":"Tribal","total_num_programs":9},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":8},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":7},{"title":"Indian/Native American/Alaska Native
   Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"Other
-  public institution/organization","total_num_programs":6},{"title":"Active-Duty Service
-  Person (including dependents","total_num_programs":4},{"title":"Reservist (including
-  dependents)","total_num_programs":4},{"title":"Territorial","total_num_programs":4},{"title":"Veteran
-  (including dependents)","total_num_programs":4},{"title":"Homeowner","total_num_programs":3},{"title":"Land/Property
-  Owner","total_num_programs":2},{"title":"Other private institutions/organizations","total_num_programs":2},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"Unrestricted
-  by Individual Type","total_num_programs":2},{"title":"Farmworker","total_num_programs":1},{"title":"Government
+  public institution/organization","total_num_programs":5},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":5},{"title":"Active-Duty
+  Service Person (including dependents","total_num_programs":4},{"title":"Profit organization","total_num_programs":4},{"title":"Reservist
+  (including dependents)","total_num_programs":4},{"title":"Territorial","total_num_programs":4},{"title":"Veteran
+  (including dependents)","total_num_programs":4},{"title":"Unrestricted by Individual
+  Type","total_num_programs":3},{"title":"Individual/Family","total_num_programs":2},{"title":"Land/Property
+  Owner","total_num_programs":2},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"Farmworker","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Interstate Organization","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Native American Organizations (includes
   Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Planning Commission","total_num_programs":1},{"title":"School
-  District","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Small
-  business (less than 500 employees)","total_num_programs":1},{"title":"U.S. Territories
+  - General","total_num_programs":1},{"title":"Other private institutions/organizations","total_num_programs":1},{"title":"Planning
+  Commission","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"School
+  District Government","total_num_programs":1},{"title":"Specialized group (e.g. health
+  professionals, students, veterans)","total_num_programs":1},{"title":"U.S. Territories
   and possessions","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -218,13 +219,13 @@ permalink: /category/housing/housing-and-homelessness
 programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Housing
   Choice Vouchers","popular_name":null,"agency":"Department of Housing and Urban Development","total_obs":37575126180.7,"program_type":"assistance_listing"},{"cfda":"14.195","permalink":"/program/14.195","title":"Project-Based
   Rental Assistance (PBRA)","popular_name":"(Project-based Section 8)","agency":"Department
-  of Housing and Urban Development","total_obs":16680214564.31,"program_type":"assistance_listing"},{"cfda":"TC.068","permalink":"/program/TC.068","title":"Credit
+  of Housing and Urban Development","total_obs":16681212188.31,"program_type":"assistance_listing"},{"cfda":"TC.068","permalink":"/program/TC.068","title":"Credit
   for low-income housing investments","popular_name":null,"agency":"Department of
   the Treasury","total_obs":14410000000.0,"program_type":"tax_expenditure"},{"cfda":"14.850","permalink":"/program/14.850","title":"Public
   Housing Operating Fund","popular_name":"Operating Subsidy Grant","agency":"Department
   of Housing and Urban Development","total_obs":5342546270.58,"program_type":"assistance_listing"},{"cfda":"14.267","permalink":"/program/14.267","title":"Continuum
   of Care Program","popular_name":"See Notice of Funding Opportunity [NOFO] for additional
-  information.","agency":"Department of Housing and Urban Development","total_obs":3410576378.43,"program_type":"assistance_listing"},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
+  information.","agency":"Department of Housing and Urban Development","total_obs":3407190537.43,"program_type":"assistance_listing"},{"cfda":"14.872","permalink":"/program/14.872","title":"Public
   Housing Capital Fund","popular_name":"(CFP)","agency":"Department of Housing and
   Urban Development","total_obs":3230567700.21,"program_type":"assistance_listing"},{"cfda":"TC.061","permalink":"/program/TC.061","title":"Exclusion
   of interest on rental housing bonds","popular_name":null,"agency":"Department of
@@ -262,22 +263,24 @@ programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Ho
   Adapted Housing for Disabled Veterans","popular_name":"Specially Adapted Housing","agency":"Department
   of Veterans Affairs","total_obs":190400121.0,"program_type":"assistance_listing"},{"cfda":"14.275","permalink":"/program/14.275","title":"Housing
   Trust Fund","popular_name":"The Housing Trust Fund","agency":"Department of Housing
-  and Urban Development","total_obs":179809084.37,"program_type":"assistance_listing"},{"cfda":"10.410","permalink":"/program/10.410","title":"Very
-  Low to Moderate Income Housing Loans and Loan Guarantees","popular_name":"(Section
-  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":114778081.14,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
-  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
-  of Housing and Urban Development","total_obs":100064100.08,"program_type":"assistance_listing"},{"cfda":"14.900","permalink":"/program/14.900","title":"Lead
+  and Urban Development","total_obs":179809084.37,"program_type":"assistance_listing"},{"cfda":"14.900","permalink":"/program/14.900","title":"Lead
   Hazard Reduction Grant Program","popular_name":"Lead Hazard Reduction Grant Program","agency":"Department
-  of Housing and Urban Development","total_obs":74568937.85,"program_type":"assistance_listing"},{"cfda":"14.856","permalink":"/program/14.856","title":"Lower
+  of Housing and Urban Development","total_obs":152086202.7,"program_type":"assistance_listing"},{"cfda":"10.410","permalink":"/program/10.410","title":"Very
+  Low to Moderate Income Housing Loans and Loan Guarantees","popular_name":"(Section
+  502 Rural Housing Loans)","agency":"Department of Agriculture","total_obs":115322272.97,"program_type":"assistance_listing"},{"cfda":"14.023","permalink":"/program/14.023","title":"Community
+  Development Block Grant- PRO Housing Competition","popular_name":"PRO Housing","agency":"Department
+  of Housing and Urban Development","total_obs":100064100.08,"program_type":"assistance_listing"},{"cfda":"14.856","permalink":"/program/14.856","title":"Lower
   Income Housing Assistance Program Section 8 Moderate Rehabilitation","popular_name":"(Section
   8 Housing Assistance Payments Program for Very Low Income Families-Moderate Rehabilitation)","agency":"Department
-  of Housing and Urban Development","total_obs":68483616.0,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
-  Center Grant","popular_name":"Basic Center Program","agency":"Department of Health
-  and Human Services","total_obs":64860026.38,"program_type":"assistance_listing"},{"cfda":"14.276","permalink":"/program/14.276","title":"Youth
+  of Housing and Urban Development","total_obs":68483616.0,"program_type":"assistance_listing"},{"cfda":"14.276","permalink":"/program/14.276","title":"Youth
   Homelessness Demonstration Program","popular_name":"Youth Homelessness Demonstration
-  Program","agency":"Department of Housing and Urban Development","total_obs":61370470.08,"program_type":"assistance_listing"},{"cfda":"14.249","permalink":"/program/14.249","title":"Section
+  Program","agency":"Department of Housing and Urban Development","total_obs":65071493.08,"program_type":"assistance_listing"},{"cfda":"93.623","permalink":"/program/93.623","title":"Basic
+  Center Grant","popular_name":"Basic Center Program","agency":"Department of Health
+  and Human Services","total_obs":64860026.38,"program_type":"assistance_listing"},{"cfda":"14.249","permalink":"/program/14.249","title":"Section
   8 Moderate Rehabilitation Single Room Occupancy","popular_name":null,"agency":"Department
-  of Housing and Urban Development","total_obs":60624323.0,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
+  of Housing and Urban Development","total_obs":60624323.0,"program_type":"assistance_listing"},{"cfda":"14.905","permalink":"/program/14.905","title":"Lead
+  Hazard Reduction Demonstration Grant Program","popular_name":"Lead Hazard Reduction
+  Demonstration Grant Program","agency":"Department of Housing and Urban Development","total_obs":59553550.48,"program_type":"assistance_listing"},{"cfda":"93.550","permalink":"/program/93.550","title":"Transitional
   Living for Homeless Youth","popular_name":"Transitional Living Program and Maternity
   Group Homes","agency":"Department of Health and Human Services","total_obs":54261365.02,"program_type":"assistance_listing"},{"cfda":"TC.084","permalink":"/program/TC.084","title":"Exclusion
   of interest on small issue bonds","popular_name":null,"agency":"Department of the
@@ -288,22 +291,22 @@ programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Ho
   Technical Assistance and Capacity Building Program","agency":"Department of Housing
   and Urban Development","total_obs":48973456.04,"program_type":"assistance_listing"},{"cfda":"10.448","permalink":"/program/10.448","title":"Rural
   Development Multi-Family Housing Rural Housing Voucher Program","popular_name":"Rural
-  Development Voucher Program","agency":"Department of Agriculture","total_obs":46615585.0,"program_type":"assistance_listing"},{"cfda":"TC.072","permalink":"/program/TC.072","title":"Discharge
+  Development Voucher Program","agency":"Department of Agriculture","total_obs":45432068.0,"program_type":"assistance_listing"},{"cfda":"TC.072","permalink":"/program/TC.072","title":"Discharge
   of business indebtedness","popular_name":null,"agency":"Department of the Treasury","total_obs":40000000.0,"program_type":"tax_expenditure"},{"cfda":"64.056","permalink":"/program/64.056","title":"Legal
   Services for Homeless Veterans and Veterans At-Risk for Homelessness Grant Program","popular_name":"LSV-H","agency":"Department
-  of Veterans Affairs","total_obs":39574028.63,"program_type":"assistance_listing"},{"cfda":"14.537","permalink":"/program/14.537","title":"Eviction
-  Protection Grant Program","popular_name":null,"agency":"Department of Housing and
-  Urban Development","total_obs":35767897.35,"program_type":"assistance_listing"},{"cfda":"14.418","permalink":"/program/14.418","title":"Private
+  of Veterans Affairs","total_obs":39574028.63,"program_type":"assistance_listing"},{"cfda":"14.418","permalink":"/program/14.418","title":"Private
   Enforcement Initiatives","popular_name":"(FHIP PEI) United States Department of
   Housing and Urban Development - Office of Fair Housing and Equal Opportunity","agency":"Department
-  of Housing and Urban Development","total_obs":29669583.36,"program_type":"assistance_listing"},{"cfda":"14.326","permalink":"/program/14.326","title":"Project
+  of Housing and Urban Development","total_obs":38082328.43,"program_type":"assistance_listing"},{"cfda":"14.537","permalink":"/program/14.537","title":"Eviction
+  Protection Grant Program","popular_name":null,"agency":"Department of Housing and
+  Urban Development","total_obs":35767897.35,"program_type":"assistance_listing"},{"cfda":"14.326","permalink":"/program/14.326","title":"Project
   Rental Assistance Program of the Section 811 Supportive Housing for Persons with  Disabilities
   (811 PRA).","popular_name":"Section 811 PRA","agency":"Department of Housing and
   Urban Development","total_obs":24570093.27,"program_type":"assistance_listing"},{"cfda":"14.873","permalink":"/program/14.873","title":"Native
   Hawaiian Housing Block Grants","popular_name":null,"agency":"Department of Housing
   and Urban Development","total_obs":22289269.83,"program_type":"assistance_listing"},{"cfda":"10.417","permalink":"/program/10.417","title":"Very
   Low-Income Housing Repair Loans and Grants","popular_name":"(Section 504 Rural Housing
-  Loans and Grants)","agency":"Department of Agriculture","total_obs":22164798.89,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
+  Loans and Grants)","agency":"Department of Agriculture","total_obs":22254560.25,"program_type":"assistance_listing"},{"cfda":"10.405","permalink":"/program/10.405","title":"Farm
   Labor Housing Loans and Grants","popular_name":"Labor Housing","agency":"Department
   of Agriculture","total_obs":17969189.15,"program_type":"assistance_listing"},{"cfda":"64.024","permalink":"/program/64.024","title":"VA
   Homeless Providers Grant and Per Diem Program","popular_name":null,"agency":"Department
@@ -311,15 +314,16 @@ programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Ho
   Self-Help Housing Technical Assistance","popular_name":"Section 523 Self-Help Housing","agency":"Department
   of Agriculture","total_obs":12945952.0,"program_type":"assistance_listing"},{"cfda":"93.557","permalink":"/program/93.557","title":"Education
   and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless and Street Youth","popular_name":"Street
-  Outreach Program","agency":"Department of Health and Human Services","total_obs":10274322.26,"program_type":"assistance_listing"},{"cfda":"10.433","permalink":"/program/10.433","title":"Rural
+  Outreach Program","agency":"Department of Health and Human Services","total_obs":10274322.26,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
+  Housing Organization Initiatives","popular_name":"FHIP FHOI","agency":"Department
+  of Housing and Urban Development","total_obs":9035577.13,"program_type":"assistance_listing"},{"cfda":"10.433","permalink":"/program/10.433","title":"Rural
   Housing Preservation Grants","popular_name":"Housing Preservation Grants","agency":"Department
-  of Agriculture","total_obs":6661356.0,"program_type":"assistance_listing"},{"cfda":"66.032","permalink":"/program/66.032","title":"State
+  of Agriculture","total_obs":7499825.0,"program_type":"assistance_listing"},{"cfda":"66.032","permalink":"/program/66.032","title":"State
   and Tribal Indoor Radon Grants","popular_name":"SIRG","agency":"Environmental Protection
   Agency","total_obs":6473690.0,"program_type":"assistance_listing"},{"cfda":"15.040","permalink":"/program/15.040","title":"Real
   Estate Programs Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":5789943.11,"program_type":"assistance_listing"},{"cfda":"15.141","permalink":"/program/15.141","title":"Indian
-  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":5670812.3,"program_type":"assistance_listing"},{"cfda":"14.021","permalink":"/program/14.021","title":"Green
-  and Resilient Retrofit Program","popular_name":"GRRP","agency":"Department of Housing
-  and Urban Development","total_obs":4232524.46,"program_type":"assistance_listing"},{"cfda":"14.171","permalink":"/program/14.171","title":"Manufactured
+  Housing Assistance","popular_name":null,"agency":"Department of the Interior","total_obs":5670812.3,"program_type":"assistance_listing"},{"cfda":"14.021","permalink":"/program/14.021","title":"GRRP","popular_name":"GRRP","agency":"Department
+  of Housing and Urban Development","total_obs":4232524.46,"program_type":"assistance_listing"},{"cfda":"14.171","permalink":"/program/14.171","title":"Manufactured
   Housing","popular_name":"Manufactured Housing","agency":"Department of Housing and
   Urban Development","total_obs":3897694.5,"program_type":"assistance_listing"},{"cfda":"14.316","permalink":"/program/14.316","title":"Housing
   Counseling Training Program","popular_name":"Housing Counseling Training Grant","agency":"Department
@@ -418,9 +422,7 @@ programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Ho
   Homeownership Opportunity Program","popular_name":"Self-Help Homeownership Opportunity
   Program (SHOP)","agency":"Department of Housing and Urban Development","total_obs":-75869.84,"program_type":"assistance_listing"},{"cfda":"14.889","permalink":"/program/14.889","title":"Choice
   Neighborhoods Implementation Grants","popular_name":null,"agency":"Department of
-  Housing and Urban Development","total_obs":-175965.12,"program_type":"assistance_listing"},{"cfda":"14.417","permalink":"/program/14.417","title":"Fair
-  Housing Organization Initiatives","popular_name":"FHIP FHOI","agency":"Department
-  of Housing and Urban Development","total_obs":-204661.89,"program_type":"assistance_listing"},{"cfda":"14.142","permalink":"/program/14.142","title":"Property
+  Housing and Urban Development","total_obs":-175965.12,"program_type":"assistance_listing"},{"cfda":"14.142","permalink":"/program/14.142","title":"Property
   Improvement Loan Insurance for Improving All Existing Structures and Building of
   New Nonresidential Structures","popular_name":"Property Improvement Loans (Title
   I-PI)","agency":"Department of Housing and Urban Development","total_obs":-272402.05,"program_type":"assistance_listing"},{"cfda":"14.902","permalink":"/program/14.902","title":"Lead
@@ -452,9 +454,7 @@ programs: '[{"cfda":"14.871","permalink":"/program/14.871","title":"Section 8 Ho
   and Urban Development","total_obs":-10409966.34,"program_type":"assistance_listing"},{"cfda":"14.129","permalink":"/program/14.129","title":"Mortgage
   Insurance Nursing Homes, Intermediate Care Facilities, Board and Care Homes and
   Assisted Living Facilities","popular_name":"Section (232)","agency":"Department
-  of Housing and Urban Development","total_obs":-24462718.58,"program_type":"assistance_listing"},{"cfda":"14.905","permalink":"/program/14.905","title":"Lead
-  Hazard Reduction Demonstration Grant Program","popular_name":"Lead Hazard Reduction
-  Demonstration Grant Program","agency":"Department of Housing and Urban Development","total_obs":-32154954.71,"program_type":"assistance_listing"},{"cfda":"21.023","permalink":"/program/21.023","title":"Emergency
+  of Housing and Urban Development","total_obs":-24462718.58,"program_type":"assistance_listing"},{"cfda":"21.023","permalink":"/program/21.023","title":"Emergency
   Rental Assistance Program","popular_name":"Emergency Rental Assistance (ERA 1) Program
   and Emergency Rental Assistance (ERA 2) Program","agency":"Department of the Treasury","total_obs":-150944728.42,"program_type":"assistance_listing"},{"cfda":"64.114","permalink":"/program/64.114","title":"Veterans
   Housing Guaranteed and Insured Loans","popular_name":"(VA Home Loans)","agency":"Department
@@ -467,5 +467,5 @@ title: Housing and Homelessness
 total_num_agencies: 9
 total_num_applicant_types: 58
 total_num_programs: 120
-total_obs: 96098755682.32
+total_obs: 96287236147.64
 ---

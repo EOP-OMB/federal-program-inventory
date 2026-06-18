@@ -1,7 +1,7 @@
 ---
-agencies: '[{"title":"Agency for International Development","total_num_programs":11,"total_obs":8109403969.0},{"title":"Department
-  of State","total_num_programs":68,"total_obs":3644142606.1299996},{"title":"U.S.
-  Agency for Global Media","total_num_programs":1,"total_obs":296535796.0},{"title":"Millennium
+agencies: '[{"title":"Agency for International Development","total_num_programs":11,"total_obs":8387777294.0},{"title":"Department
+  of State","total_num_programs":70,"total_obs":3644161894.93},{"title":"U.S. Agency
+  for Global Media","total_num_programs":1,"total_obs":304000355.0},{"title":"Millennium
   Challenge Corporation","total_num_programs":1,"total_obs":250952618.91},{"title":"Department
   of Defense","total_num_programs":2,"total_obs":45882249.0},{"title":"Department
   of Commerce","total_num_programs":1,"total_obs":62900.0},{"title":"United States
@@ -11,39 +11,37 @@ agencies: '[{"title":"Agency for International Development","total_num_programs"
   and Human Services","total_num_programs":1,"total_obs":-18373.91},{"title":"Department
   of Agriculture","total_num_programs":4,"total_obs":-829838.03},{"title":"Department
   of Education","total_num_programs":4,"total_obs":-899121.26},{"title":"United States
-  International Development Finance Corporation","total_num_programs":4,"total_obs":-1664127844.51}]'
-applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":32},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":29},{"title":"Nonprofit
-  Organization","total_num_programs":28},{"title":"Non-Government - General","total_num_programs":25},{"title":"Other
-  private institutions/organizations","total_num_programs":15},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":13},{"title":"Sponsored
-  organization","total_num_programs":13},{"title":"Foreign Non-Government Nonprofit
-  Organization","total_num_programs":12},{"title":"Not-for-Profit Organization","total_num_programs":12},{"title":"Other
-  public institution/organization","total_num_programs":12},{"title":"Foreign Non-Government
-  Not-for-Profit Organization","total_num_programs":11},{"title":"Other","total_num_programs":8},{"title":"International
-  Organization","total_num_programs":7},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":7},{"title":"Anyone/general
-  public","total_num_programs":6},{"title":"Foreign Non-Governmental For-Profit Organization","total_num_programs":6},{"title":"Profit
-  organization","total_num_programs":6},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Individual/Family","total_num_programs":4},{"title":"Non-domestic
-  (non-US) Entity","total_num_programs":4},{"title":"Small business (less than 500
-  employees)","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":3},{"title":"Minority group","total_num_programs":3},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Government
-  - General","total_num_programs":2},{"title":"U.S. State Government (including the
-  District of Columbia)","total_num_programs":2},{"title":"Department or Agency of
-  a U.S. State Government","total_num_programs":1},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":1},{"title":"Foreign Government","total_num_programs":1},{"title":"Indian/Native
+  International Development Finance Corporation","total_num_programs":4,"total_obs":-1914127844.51}]'
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":41},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":23},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":22},{"title":"International
+  Organization","total_num_programs":21},{"title":"Foreign Non-Government Nonprofit
+  Organization","total_num_programs":15},{"title":"Foreign Non-Government Not-for-Profit
+  Organization","total_num_programs":14},{"title":"Not-for-Profit Organization","total_num_programs":14},{"title":"Non-Government
+  - General","total_num_programs":13},{"title":"Other private institutions/organizations","total_num_programs":12},{"title":"Other
+  public institution/organization","total_num_programs":9},{"title":"Sponsored organization","total_num_programs":9},{"title":"Other","total_num_programs":8},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":7},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":7},{"title":"For-Profit
+  Organization","total_num_programs":6},{"title":"Profit organization","total_num_programs":5},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":5},{"title":"Individual/Family","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"Federal","total_num_programs":3},{"title":"Foreign
+  Government","total_num_programs":3},{"title":"Non-domestic (non-US) Entity","total_num_programs":3},{"title":"U.S.
+  Federal Government","total_num_programs":3},{"title":"U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Unrestricted
+  by Entity Type","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Government
+  - General","total_num_programs":2},{"title":"Local (includes State-designated Indian
+  Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Minority
+  group","total_num_programs":2},{"title":"Small business (less than 500 employees)","total_num_programs":2},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":2},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Indian/Native
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Nonprofit with 501C3 IRS Status
-  (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
-  (specify)","total_num_programs":1},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Other
-  Special Disctrict Government","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1}]'
+  associations)","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"Other Special Disctrict
+  Government","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -216,7 +214,7 @@ parent_title: International Affairs
 permalink: /category/international-affairs/international-relations-and-foreign-affairs
 programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreign
   Assistance for Programs Overseas","popular_name":null,"agency":"Agency for International
-  Development","total_obs":7878462366.0,"program_type":"assistance_listing"},{"cfda":"19.515","permalink":"/program/19.515","title":"Contributions
+  Development","total_obs":8156835691.0,"program_type":"assistance_listing"},{"cfda":"19.515","permalink":"/program/19.515","title":"Contributions
   to International Organizations for Overseas Assistance","popular_name":"Contributions
   to International Organizations for Overseas Assistance","agency":"Department of
   State","total_obs":1630789287.36,"program_type":"assistance_listing"},{"cfda":"19.790","permalink":"/program/19.790","title":"Contributions
@@ -225,7 +223,7 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   Programs to Support Democracy, Human Rights and Labor","popular_name":null,"agency":"Department
   of State","total_obs":314666238.68,"program_type":"assistance_listing"},{"cfda":"90.500","permalink":"/program/90.500","title":"International
   Broadcasting Independent Grantee Organizations","popular_name":null,"agency":"U.S.
-  Agency for Global Media","total_obs":296535796.0,"program_type":"assistance_listing"},{"cfda":"85.002","permalink":"/program/85.002","title":"MCC
+  Agency for Global Media","total_obs":304000355.0,"program_type":"assistance_listing"},{"cfda":"85.002","permalink":"/program/85.002","title":"MCC
   Foreign Assistance for Overseas Programs","popular_name":null,"agency":"Millennium
   Challenge Corporation","total_obs":250952618.91,"program_type":"assistance_listing"},{"cfda":"98.008","permalink":"/program/98.008","title":"Food
   for Peace Emergency Program (EP)","popular_name":null,"agency":"Agency for International
@@ -239,7 +237,7 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   Contributions to International Organizations","popular_name":"International Organizations
   and Programs (IO&P)","agency":"Department of State","total_obs":115340000.0,"program_type":"assistance_listing"},{"cfda":"19.017","permalink":"/program/19.017","title":"Environmental
   and Scientific Partnerships and Programs","popular_name":null,"agency":"Department
-  of State","total_obs":75545318.36,"program_type":"assistance_listing"},{"cfda":"19.402","permalink":"/program/19.402","title":"Professional
+  of State","total_obs":75543326.11,"program_type":"assistance_listing"},{"cfda":"19.402","permalink":"/program/19.402","title":"Professional
   and Cultural Exchange Programs - International Visitor Leadership Program","popular_name":"International
   Visitor Leadership Program","agency":"Department of State","total_obs":60717266.0,"program_type":"assistance_listing"},{"cfda":"12.350","permalink":"/program/12.350","title":"Department
   of Defense HIV/AIDS Prevention Program","popular_name":"DHAPP","agency":"Department
@@ -278,11 +276,12 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   Exchange Programs - Undergraduate Programs","popular_name":"Undergraduate Programs","agency":"Department
   of State","total_obs":10257115.0,"program_type":"assistance_listing"},{"cfda":"19.750","permalink":"/program/19.750","title":"Bureau
   of Western Hemisphere Affairs Assistance Coordination (WHA/AC) Grant Programs","popular_name":"Bureau
-  of Western Hemisphere Affairs WHA","agency":"Department of State","total_obs":10091686.81,"program_type":"assistance_listing"},{"cfda":"19.408","permalink":"/program/19.408","title":"Academic
+  of Western Hemisphere Affairs Assistance Coordination (WHA/AC) Grant Programs","agency":"Department
+  of State","total_obs":10091686.81,"program_type":"assistance_listing"},{"cfda":"19.408","permalink":"/program/19.408","title":"Academic
   Exchange Programs - Teachers","popular_name":"Teacher Exchange Programs and Community
   College Administrator Program","agency":"Department of State","total_obs":9615598.0,"program_type":"assistance_listing"},{"cfda":"19.022","permalink":"/program/19.022","title":"Educational
   and Cultural Exchange Programs Appropriation Overseas Grants","popular_name":null,"agency":"Department
-  of State","total_obs":5962231.19,"program_type":"assistance_listing"},{"cfda":"98.007","permalink":"/program/98.007","title":"Food
+  of State","total_obs":5983731.19,"program_type":"assistance_listing"},{"cfda":"98.007","permalink":"/program/98.007","title":"Food
   for Peace Development Assistance Program (DAP)","popular_name":null,"agency":"Agency
   for International Development","total_obs":5520578.0,"program_type":"assistance_listing"},{"cfda":"98.002","permalink":"/program/98.002","title":"Cooperative
   Development Program (CDP)","popular_name":null,"agency":"Agency for International
@@ -320,7 +319,7 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   of Global Women''s Issues","popular_name":"Global Women''s Empowerment Programs","agency":"Department
   of State","total_obs":794492.2,"program_type":"assistance_listing"},{"cfda":"19.121","permalink":"/program/19.121","title":"Conflict
   and Stabilization Operations","popular_name":"CSO","agency":"Department of State","total_obs":496015.0,"program_type":"assistance_listing"},{"cfda":"19.707","permalink":"/program/19.707","title":"Assessed
-  Contributions for State Department","popular_name":"AC for DOS","agency":"Department
+  Contributions for State Department","popular_name":"Assessed Contributions","agency":"Department
   of State","total_obs":312006.0,"program_type":"assistance_listing"},{"cfda":"19.300","permalink":"/program/19.300","title":"Program
   for Study of Eastern Europe and the Independent States of the Former Soviet Union","popular_name":"(Title
   VIII)","agency":"Department of State","total_obs":63672.74,"program_type":"assistance_listing"},{"cfda":"11.553","permalink":"/program/11.553","title":"Special
@@ -357,9 +356,11 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.617","permalink":"/program/10.617","title":"PL-480
   Market Development and Technical Assistance","popular_name":"Section 108","agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"91.005","permalink":"/program/91.005","title":"Priority
-  Grant Competition","popular_name":null,"agency":"United States Institute of Peace","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.221","permalink":"/program/19.221","title":"Regional
+  Grant Competition","popular_name":null,"agency":"United States Institute of Peace","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.044","permalink":"/program/19.044","title":"Refugee
+  Resettlement","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.221","permalink":"/program/19.221","title":"Regional
   Democracy Program","popular_name":"Regional Democracy Program","agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.209","permalink":"/program/19.209","title":"Student
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.041","permalink":"/program/19.041","title":"Strategic
+  Global Priorities","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.209","permalink":"/program/19.209","title":"Student
   Programs and Fellowships","popular_name":"Nancy Pelosi Fellowship Program","agency":"Department
   of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.601","permalink":"/program/19.601","title":"Syria
   Assistance Program","popular_name":"NEA Syria ","agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.450","permalink":"/program/19.450","title":"ECA
@@ -383,7 +384,8 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   Sudan and Sudan Assistance Program","popular_name":"South Sudan and Sudan Assistance
   Program","agency":"Department of State","total_obs":-164791.03,"program_type":"assistance_listing"},{"cfda":"19.220","permalink":"/program/19.220","title":"Ambassadors''
   Special Self Help Fund","popular_name":null,"agency":"Department of State","total_obs":-167040.58,"program_type":"assistance_listing"},{"cfda":"19.322","permalink":"/program/19.322","title":"Economic
-  Statecraft","popular_name":null,"agency":"Department of State","total_obs":-224850.3,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
+  Statecraft","popular_name":"Port Prosperity Partnership","agency":"Department of
+  State","total_obs":-224850.3,"program_type":"assistance_listing"},{"cfda":"10.962","permalink":"/program/10.962","title":"Cochran
   Fellowship Program","popular_name":"Cochran Fellowship Program","agency":"Department
   of Agriculture","total_obs":-282008.27,"program_type":"assistance_listing"},{"cfda":"19.027","permalink":"/program/19.027","title":"Energy
   Governance and Reform Programs","popular_name":null,"agency":"Department of State","total_obs":-298683.61,"program_type":"assistance_listing"},{"cfda":"19.979","permalink":"/program/19.979","title":"Regional
@@ -406,20 +408,21 @@ programs: '[{"cfda":"98.001","permalink":"/program/98.001","title":"USAID Foreig
   PD Programs","popular_name":"Assistance for Europe, Eurasia, and Central Asia (AEECA)
   & Economic Support Fund (ESF) Public Diplomacy Programs (EUR/PD and SCA/PPD)","agency":"Department
   of State","total_obs":-6352922.89,"program_type":"assistance_listing"},{"cfda":"19.021","permalink":"/program/19.021","title":"Investing
-  in People in The Middle East and North Africa","popular_name":"Investing in people/
-  cultural/educational/alumni/information and media efforts in the Middle East and
-  North Africa.","agency":"Department of State","total_obs":-6703001.95,"program_type":"assistance_listing"},{"cfda":"19.040","permalink":"/program/19.040","title":"Public
+  in People in The Middle East and North Africa","popular_name":"Showcasing U.S. Excellence
+  and Values. \u2022\tStrengthening U.S.-Iraqi Economic Ties. \u2022\tPromoting Investment
+  in the U.S. Economy. \u2022\tSupporting Entrepreneurship Development in Iraq.","agency":"Department
+  of State","total_obs":-6703001.95,"program_type":"assistance_listing"},{"cfda":"19.040","permalink":"/program/19.040","title":"Public
   Diplomacy Programs","popular_name":"Public Diplomacy Programs","agency":"Department
-  of State","total_obs":-16644740.76,"program_type":"assistance_listing"},{"cfda":"98.003","permalink":"/program/98.003","title":"Ocean
+  of State","total_obs":-16644959.71,"program_type":"assistance_listing"},{"cfda":"98.003","permalink":"/program/98.003","title":"Ocean
   Freight Reimbursement Program (OFR)","popular_name":null,"agency":"Agency for International
   Development","total_obs":-19834324.0,"program_type":"assistance_listing"},{"cfda":"87.005","permalink":"/program/87.005","title":"Debt
   Financing","popular_name":null,"agency":"United States International Development
   Finance Corporation","total_obs":-226266268.71,"program_type":"assistance_listing"},{"cfda":"87.006","permalink":"/program/87.006","title":"Political
   Risk Insurance","popular_name":null,"agency":"United States International Development
-  Finance Corporation","total_obs":-1462150000.0,"program_type":"assistance_listing"}]'
+  Finance Corporation","total_obs":-1712150000.0,"program_type":"assistance_listing"}]'
 title: International Relations and Foreign Affairs
 total_num_agencies: 13
-total_num_applicant_types: 57
-total_num_programs: 102
-total_obs: 10681104961.33
+total_num_applicant_types: 55
+total_num_programs: 104
+total_obs: 10716962134.130001
 ---

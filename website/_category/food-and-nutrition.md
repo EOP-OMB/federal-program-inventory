@@ -1,22 +1,22 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":53,"total_obs":134421053617.47998},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":53,"total_obs":134427773176.47998},{"title":"Department
   of Health and Human Services","total_num_programs":4,"total_obs":1015769975.38},{"title":"Department
   of State","total_num_programs":1,"total_obs":63236066.66},{"title":"Department of
   Homeland Security","total_num_programs":1,"total_obs":-134590333.26}]'
-applicant_types: '[{"title":"Department or Agency of a U.S. State Government","total_num_programs":25},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":21},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":18},{"title":"Nonprofit
+applicant_types: '[{"title":"Department or Agency of a U.S. State Government","total_num_programs":26},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":22},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":19},{"title":"Nonprofit
   Organization","total_num_programs":18},{"title":"Other","total_num_programs":11},{"title":"Indian/Native
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"U.S.
   Territory (or Possession) Government (including freely-associated states)","total_num_programs":6},{"title":"For-Profit
   Organization","total_num_programs":5},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":5},{"title":"State","total_num_programs":4},{"title":"Local","total_num_programs":3},{"title":"School
-  District","total_num_programs":3},{"title":"U.S. Federal Government","total_num_programs":3},{"title":"Not-for-Profit
+  the District of Columbia)","total_num_programs":5},{"title":"Local","total_num_programs":3},{"title":"School
+  District","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"U.S.
+  Federal Government","total_num_programs":3},{"title":"International Organization","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
   with geographic regional control and authority)","total_num_programs":1},{"title":"Foreign
-  Government","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"International
-  Organization","total_num_programs":1},{"title":"Other Local Government Consortium,
+  Government","total_num_programs":1},{"title":"Other Local Government Consortium,
   Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":1},{"title":"Public nonprofit institution/organization
@@ -191,11 +191,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/food-and-nutrition
-sub_cats: '[{"title":"Food and Nutrition Assistance","permalink":"/category/food-and-nutrition/food-and-nutrition-assistance","total_num_programs":59,"total_obs":135365469326.25998}]'
+sub_cats: '[{"title":"Food and Nutrition Assistance","permalink":"/category/food-and-nutrition/food-and-nutrition-assistance","total_num_programs":59,"total_obs":135372188885.25998}]'
 title: Food and Nutrition
 total_num_agencies: 4
-total_num_applicant_types: 27
+total_num_applicant_types: 25
 total_num_programs: 59
 total_num_sub_cats: 1
-total_obs: 135365469326.25998
+total_obs: 135372188885.25998
 ---

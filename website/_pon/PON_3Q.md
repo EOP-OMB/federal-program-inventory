@@ -16,7 +16,7 @@ where_used:
   permalink: /program/10.739
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 508533.0
+  expenditure_amount: 387676.0
   name: Alaska Migratory Bird Co-Management Council
   permalink: /program/15.643
   program_type: assistance_listing

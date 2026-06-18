@@ -57,7 +57,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2750000.0
-  name: Native Hawaiian and Alaka Native Culture and Arts Development
+  name: Native Hawaiian and Alaska Native Culture and Arts Development
   permalink: /program/15.071
   program_type: assistance_listing
 - agency: Department of Health and Human Services

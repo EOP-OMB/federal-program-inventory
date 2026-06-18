@@ -13,7 +13,7 @@ permalink: /pon/PON_96
 title: Improve K12 Academic Performance
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 500000.0
+  expenditure_amount: 480000.0
   name: Agriculture in the K-12 Classroom
   permalink: /program/10.278
   program_type: assistance_listing

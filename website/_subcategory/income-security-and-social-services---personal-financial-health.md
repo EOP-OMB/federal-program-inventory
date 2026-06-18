@@ -1,6 +1,6 @@
 ---
 agencies: '[{"title":"Social Security Administration","total_num_programs":5,"total_obs":1632918516143.0},{"title":"Department
-  of the Treasury","total_num_programs":73,"total_obs":1538711101344.03},{"title":"Department
+  of the Treasury","total_num_programs":73,"total_obs":1538711105932.24},{"title":"Department
   of Veterans Affairs","total_num_programs":5,"total_obs":187477729794.0},{"title":"Department
   of Health and Human Services","total_num_programs":10,"total_obs":24325695516.910004},{"title":"Railroad
   Retirement Board","total_num_programs":2,"total_obs":14511445136.77},{"title":"Pension
@@ -9,37 +9,37 @@ agencies: '[{"title":"Social Security Administration","total_num_programs":5,"to
   of the Interior","total_num_programs":3,"total_obs":43697554.9},{"title":"National
   Credit Union Administration","total_num_programs":1,"total_obs":438607.98},{"title":"Department
   of Housing and Urban Development","total_num_programs":4,"total_obs":-197116769.81}]'
-applicant_types: '[{"title":"Individual/Family","total_num_programs":12},{"title":"State","total_num_programs":8},{"title":"Nonprofit
-  Organization","total_num_programs":7},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Not-for-Profit
-  Organization","total_num_programs":5},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":5},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":4},{"title":"For-Profit Organization","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Public
+applicant_types: '[{"title":"Individual/Family","total_num_programs":7},{"title":"Nonprofit
+  Organization","total_num_programs":7},{"title":"State","total_num_programs":7},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":6},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Not-for-Profit
+  Organization","total_num_programs":5},{"title":"U.S. Territory (or Possession) Government
+  (including freely-associated states)","total_num_programs":5},{"title":"Unrestricted
+  by Individual Type","total_num_programs":5},{"title":"Federally Recognized Indian
+  Tribal Governments","total_num_programs":4},{"title":"For-Profit Organization","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":4},{"title":"U.S. Territory (or Possession) Government
-  (including freely-associated states)","total_num_programs":4},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Veteran
+  hospitals)","total_num_programs":4},{"title":"Indian/Native American/Alaska Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Veteran
   (including dependents)","total_num_programs":3},{"title":"Native American Organizations
   (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Other
   private institutions/organizations","total_num_programs":2},{"title":"Other public
-  institution/organization","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Active-Duty
+  institution/organization","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Reservist
+  (including dependents)","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Active-Duty
   Service Person (including dependents","total_num_programs":1},{"title":"County Government
   (inclusive of boroughs in Alaska, parishes and other governmental entities with
   geographic regional control and authority)","total_num_programs":1},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Government
-  - General","total_num_programs":1},{"title":"Local (includes State-designated Indian
-  Tribes, excludes institutions of higher education and hospitals","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Municipality or Township government (inclusive
-  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":1},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":1},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
-  Housing Authority","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Reservist
-  (including dependents)","total_num_programs":1},{"title":"Small business (less than
-  500 employees)","total_num_programs":1},{"title":"U.S. Territories and possessions
-  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
+  - General","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":1},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":1},{"title":"Public Housing Authority","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
+  (less than 500 employees)","total_num_programs":1},{"title":"U.S. Federal Government","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
@@ -258,8 +258,8 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   of the Treasury","total_obs":14960000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.132","permalink":"/program/TC.132","title":"Medical
   Savings Accounts / Health Savings Accounts","popular_name":null,"agency":"Department
   of the Treasury","total_obs":14760000000.0,"program_type":"tax_expenditure"},{"cfda":"57.001","permalink":"/program/57.001","title":"Social
-  Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
-  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":14511445136.77,"program_type":"assistance_listing"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
+  Insurance for Railroad Workers","popular_name":"Railroad Retirement Benefits","agency":"Railroad
+  Retirement Board","total_obs":14511445136.77,"program_type":"assistance_listing"},{"cfda":"TC.133","permalink":"/program/TC.133","title":"Deductibility
   of medical expenses","popular_name":null,"agency":"Department of the Treasury","total_obs":13420000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.137","permalink":"/program/TC.137","title":"Deductibility
   of charitable contributions to health institutions","popular_name":null,"agency":"Department
   of the Treasury","total_obs":10660000000.0,"program_type":"tax_expenditure"},{"cfda":"64.110","permalink":"/program/64.110","title":"Veterans
@@ -372,7 +372,7 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   Social Services Welfare Assistance","popular_name":null,"agency":"Department of
   the Interior","total_obs":12708961.27,"program_type":"assistance_listing"},{"cfda":"21.006","permalink":"/program/21.006","title":"Tax
   Counseling for the Elderly","popular_name":"Tax Counseling for the Elderly","agency":"Department
-  of the Treasury","total_obs":11823994.31,"program_type":"assistance_listing"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
+  of the Treasury","total_obs":11828582.52,"program_type":"assistance_listing"},{"cfda":"TC.124","permalink":"/program/TC.124","title":"Credit
   for disabled access expenditures","popular_name":null,"agency":"Department of the
   Treasury","total_obs":10000000.0,"program_type":"tax_expenditure"},{"cfda":"14.169","permalink":"/program/14.169","title":"Housing
   Counseling Assistance Program","popular_name":"Comprehensive Housing Counseling
@@ -399,8 +399,8 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   and Entrant Assistance Voluntary Agency Programs","popular_name":"Voluntary Agencies
   Matching Grant Program","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.025","permalink":"/program/21.025","title":"Small
   Dollar Loan Program","popular_name":"SDL Program","agency":"Department of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"57.006","permalink":"/program/57.006","title":"Social
-  Insurance for Railroad Workers","popular_name":"Railroad retirement and railroad
-  unemployment-sickness insurance programs.","agency":"Railroad Retirement Board","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.576","permalink":"/program/93.576","title":"Refugee
+  Insurance for Railroad Workers","popular_name":"Railroad Unemployment-Sickness Insurance
+  Programs","agency":"Railroad Retirement Board","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.576","permalink":"/program/93.576","title":"Refugee
   and Entrant Assistance Discretionary Grants","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":-1131278.98,"program_type":"assistance_listing"},{"cfda":"93.583","permalink":"/program/93.583","title":"Refugee
   and Entrant Assistance Wilson/Fish Program","popular_name":"Wilson Fish Alternative
@@ -410,7 +410,7 @@ programs: '[{"cfda":"96.002","permalink":"/program/96.002","title":"Social Secur
   of Housing and Urban Development","total_obs":-365153521.75,"program_type":"assistance_listing"}]'
 title: Personal Financial Health
 total_num_agencies: 10
-total_num_applicant_types: 46
+total_num_applicant_types: 45
 total_num_programs: 108
-total_obs: 3406832878255.4
+total_obs: 3406832882843.61
 ---

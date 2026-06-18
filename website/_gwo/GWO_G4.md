@@ -7,7 +7,7 @@ permalink: /gwo/GWO_G4
 title: Strengthen Educator Workforce Quality
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 30000000.0
+  expenditure_amount: 55888922.0
   name: 1890 Institution Capacity Building Grants
   permalink: /program/10.216
   program_type: assistance_listing
@@ -22,7 +22,7 @@ where_used:
   permalink: /program/66.951
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5330000.0
+  expenditure_amount: 10128615.0
   name: Higher Education - Institution Challenge Grants Program
   permalink: /program/10.217
   program_type: assistance_listing
@@ -37,7 +37,7 @@ where_used:
   permalink: /program/66.950
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 125000.0
+  expenditure_amount: 160200.0
   name: National Food and Agricultural Sciences Teaching, Extension, and Research
     Awards
   permalink: /program/10.279

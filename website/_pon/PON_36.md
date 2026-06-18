@@ -31,6 +31,11 @@ where_used:
   permalink: /program/66.813
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Applied Materials Science and Engineering
+  permalink: /program/11.63B
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 150000000.0
   name: BUILD TO SCALE
   permalink: /program/11.024
@@ -59,6 +64,11 @@ where_used:
   expenditure_amount: 8000000.0
   name: Bridge and Other Transportation Infrastructure Research Program
   permalink: /program/20.950
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 402429.0
+  name: Bycatch Reduction Engineering Program
+  permalink: /program/11.452
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
@@ -200,7 +210,7 @@ where_used:
   permalink: /program/10.937
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 2500000.0
+  expenditure_amount: 4000000.0
   name: Pipeline Safety Research Competitive Academic Agreement Program (CAAP)
   permalink: /program/20.724
   program_type: assistance_listing
@@ -259,11 +269,6 @@ where_used:
   expenditure_amount: 346570000.0
   name: Technology, Innovation, and Partnerships
   permalink: /program/47.084
-  program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Unallied Industry Projects
-  permalink: /program/11.452
   program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 12000000.0

@@ -11,7 +11,7 @@ permalink: /pon/PON_N19
 title: Increase STEM Job Attainment
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 30000000.0
+  expenditure_amount: 55888922.0
   name: 1890 Institution Capacity Building Grants
   permalink: /program/10.216
   program_type: assistance_listing

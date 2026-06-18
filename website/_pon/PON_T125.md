@@ -63,6 +63,11 @@ where_used:
   name: Anti-Doping Activities
   permalink: /program/95.004
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Applied Biological and Chemical Sciences
+  permalink: /program/11.63A
+  program_type: assistance_listing
 - agency: Department of Agriculture
   expenditure_amount: 2800000.0
   name: Appropriate Technology Transfer for Rural Areas
@@ -139,7 +144,7 @@ where_used:
   permalink: /program/93.837
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 25336657.0
+  expenditure_amount: 184920723.0
   name: Child Health and Human Development Extramural Research
   permalink: /program/93.865
   program_type: assistance_listing
@@ -277,7 +282,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
-  name: Marine Education
+  name: Marine Education and Training
   permalink: /program/11.455
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -359,11 +364,6 @@ where_used:
   expenditure_amount: 5926819.0
   name: Oral Diseases and Disorders Research - Other Research
   permalink: /program/93.DE3
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 3668600.0
-  name: Oral Diseases and Disorders Research - R & D Contracts
-  permalink: /program/93.DE7
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 8023719.0

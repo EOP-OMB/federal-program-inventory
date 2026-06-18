@@ -20,11 +20,6 @@ where_used:
   name: Citizenship Education and Training
   permalink: /program/97.010
   program_type: assistance_listing
-- agency: National Endowment for the Humanities
-  expenditure_amount: 2308932.0
-  name: Collaborative Research
-  permalink: /program/45.035
-  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 30000000.0
   name: Cultural Resources Management
@@ -69,6 +64,11 @@ where_used:
   expenditure_amount: 0.0
   name: National Coast Guard Museum Construction
   permalink: /program/97.140
+  program_type: assistance_listing
+- agency: National Endowment for the Humanities
+  expenditure_amount: 2308932.0
+  name: 'National Endowment for the Humanities: Collaborative Research'
+  permalink: /program/45.035
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
   expenditure_amount: 2503227.0

@@ -150,6 +150,11 @@ where_used:
   name: Sexual Assault Services Formula Program
   permalink: /program/16.017
   program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 1973000.0
+  name: Study of International Parental Child Abduction
+  permalink: /program/19.043
+  program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
   name: Tribal Sexual Assault Services Program

@@ -34,12 +34,6 @@ footer_include: _footer-search.html
       <form id="search-filters">
         <h3 class="font-heading-lg text-primary line-height-heading-3 margin-0 padding-bottom-2">
           Filters</h3>
-        <div class="line-height-sans-3 padding-bottom-2">
-          Expand the item(s) below to select the filters you wish to apply.
-          <br />
-          <br />
-          Sub-agencies and sub-categories are included in their respective filter.
-        </div>
         <!-- agency sub nav-->
         <nav class="usa-sidenav">
           <ul class="usa-sidenav__sublist">
@@ -76,12 +70,12 @@ footer_include: _footer-search.html
                         </svg>
                       </button>
                       {% else %}
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                       {% endif %}
                     </div>
                     <!-- Checkbox container -->
@@ -196,12 +190,12 @@ footer_include: _footer-search.html
                         </svg>
                       </button>
                       {% else %}
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                       {% endif %}
                     </div>
                     <!-- Checkbox container -->
@@ -274,12 +268,12 @@ footer_include: _footer-search.html
                   {% for a in page.gwo_options %}
                   <div class="display-flex flex-align-start">
                     <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
@@ -330,12 +324,12 @@ footer_include: _footer-search.html
                   {% for a in page.pon_options %}
                   <div class="display-flex flex-align-start">
                     <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
@@ -356,7 +350,7 @@ footer_include: _footer-search.html
         </nav>
         <!-- end program outcomes sub nav-->
 
-         <!-- program type sub nav-->
+         <!-- Financial assistance type sub nav-->
         <nav class="usa-sidenav">
           <ul class="usa-sidenav__sublist">
             <li class="usa-sidenav__item">
@@ -365,7 +359,7 @@ footer_include: _footer-search.html
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
                 aria-expanded="false" aria-controls="program-type-section" data-content-id="program-type-section">
-                <span class="font-heading-sm text-ink line-height-body-3">Program type</span>
+                <span class="font-heading-sm text-ink line-height-body-3">Financial assistance type</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
                     <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
@@ -373,18 +367,18 @@ footer_include: _footer-search.html
                 </div>
               </button>
 
-              <!-- Program Type Content -->
+              <!-- Financial Assistance Type Content -->
               <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="program-type-section" hidden>
                 <fieldset class="usa-fieldset margin-0">
                   {% for a in page.assistance_types %}
                   <div class="display-flex flex-align-start">
                     <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
@@ -402,7 +396,7 @@ footer_include: _footer-search.html
             </li>
           </ul>
         </nav>
-        <!-- end program type sub nav-->
+        <!-- end financial assistance type sub nav-->
 
         <!-- Eligible Applicants sub nav -->
         <nav class="usa-sidenav">
@@ -428,12 +422,12 @@ footer_include: _footer-search.html
                   {% for a in page.applicant_types %}
                   <div class="display-flex flex-align-start">
                     <div class="padding-left-2">
-                      <a class="toggle expandable-button" style="pointer-events: none;">
+                      <span class="toggle expandable-button" aria-hidden="true">
                         <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
                           height="24">
                           <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
@@ -466,17 +460,6 @@ footer_include: _footer-search.html
       </form>
 
       <div class="program-search-container padding-2">
-        <div class="width-full text-primary font-heading-lg text-bold">Programs at a glance</div>
-        <div class="width-full font-heading-sm padding-top-1 line-height-body-3">
-          <span class="text-ink">The numbers below show </span>
-          <span class="text-ink text-bold">Programs</span>
-          <span class="text-ink">and </span>
-          <span class="text-ink text-bold">Expenditures</span><span class="text-ink">,</span>
-          <span class="text-ink">
-            both as submitted by agencies. For financial assistance and interest on the public debt, expenditures
-            are obligations. For tax expenditures, expenditures are the sum of outlays and revenue losses.
-          </span>
-        </div>
         <div class="grid-row padding-top-2">
           <div class="grid-col-7">
             <div class="width-full">
@@ -494,23 +477,23 @@ footer_include: _footer-search.html
                   id="global-obligations"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-heading-lg line-height-sans-4">in expenditures</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">in spending</span>
             </div>
           </div>
         </div>
       </div>
       <div class="width-full">
         <div class="display-flex flex-wrap flex-justify tablet:flex-justify-between margin-y-2 mobile-lg:flex-column mobile-lg:flex-align-start">
-            <button class="usa-button usa-button--outline text-bold">
+            <button id="clear-filters-button" type="button" class="usa-button usa-button--outline text-bold usa-button--disabled" aria-disabled="true">
               Clear Filters
             </button>
 
           <div class="display-flex tablet:flex-row flex-wrap gap-1">
             <span class="padding-right-2 padding-top-2 tablet:padding-top-1 text-bold font-heading-sm">Sort results by:</span>
             <div class="display-flex">
-              <button id="expenditureSort"
+              <button id="spendingSort"
                 class="usa-button height-5 margin-right-0 radius-left-lg radius-right-0 text-bold">
-                Expenditures
+                Spending
               </button>
               <button id="programNameSort" class="usa-button usa-button--outline height-5 radius-right-lg radius-left-0 text-bold margin-right-0">
                 Program Name
@@ -572,7 +555,7 @@ footer_include: _footer-search.html
               </a>
             </div>
             <div class="tablet:grid-col-4">
-              <div class="grid-col-12 md:text-right text-left text-italic program-obligations">
+              <div class="grid-col-12 text-right text-italic program-obligations">
               </div>
             </div>
             <div class="grid-row">
@@ -606,4 +589,3 @@ footer_include: _footer-search.html
   </div>
 </div>
 </div>
-</main>

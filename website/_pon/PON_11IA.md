@@ -42,7 +42,7 @@ where_used:
   permalink: /program/19.108
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 192300000.0
   name: Contributions to International Organizations- CIO
   permalink: /program/19.790
   program_type: assistance_listing

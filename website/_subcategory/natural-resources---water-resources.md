@@ -1,48 +1,46 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":12,"total_obs":1524178853.7899997},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":12,"total_obs":1540763815.1399996},{"title":"Department
   of the Interior","total_num_programs":48,"total_obs":825163303.6099999},{"title":"Environmental
   Protection Agency","total_num_programs":21,"total_obs":592547847.0},{"title":"Department
   of Commerce","total_num_programs":7,"total_obs":118808369.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":100000.0}]'
 applicant_types: '[{"title":"State","total_num_programs":36},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":23},{"title":"Federally Recognized
-  Indian/Native American/Alaska Native Tribal Government","total_num_programs":21},{"title":"Local","total_num_programs":21},{"title":"Local
+  Indian Tribal Governments","total_num_programs":22},{"title":"Federally Recognized
+  Indian/Native American/Alaska Native Tribal Government","total_num_programs":22},{"title":"Local","total_num_programs":21},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":19},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":19},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":19},{"title":"Private
+  and hospitals","total_num_programs":19},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":19},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":18},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":16},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Native
+  hospitals)","total_num_programs":15},{"title":"Other","total_num_programs":14},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":13},{"title":"Other","total_num_programs":13},{"title":"Nonprofit
-  Organization","total_num_programs":11},{"title":"Interstate Organization","total_num_programs":10},{"title":"Special
-  District Government","total_num_programs":10},{"title":"City or Township Government","total_num_programs":9},{"title":"County
-  Government","total_num_programs":9},{"title":"Individual/Family","total_num_programs":8},{"title":"Other
+  associations)","total_num_programs":13},{"title":"Nonprofit Organization","total_num_programs":12},{"title":"Interstate
+  Organization","total_num_programs":11},{"title":"Special District Government","total_num_programs":10},{"title":"City
+  or Township Government","total_num_programs":9},{"title":"County Government","total_num_programs":9},{"title":"Unrestricted
+  by Entity Type","total_num_programs":9},{"title":"Individual/Family","total_num_programs":8},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":8},{"title":"Indian/Native American/Alaska
-  Native Tribal Government (Other than Federally Recognized)","total_num_programs":7},{"title":"Interstate","total_num_programs":7},{"title":"Other
-  private institutions/organizations","total_num_programs":7},{"title":"Tribal","total_num_programs":7},{"title":"Unrestricted
-  by Entity Type","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"Other
+  Native Tribal Government (Other than Federally Recognized)","total_num_programs":7},{"title":"Other
+  private institutions/organizations","total_num_programs":7},{"title":"Tribal","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"Interstate","total_num_programs":6},{"title":"Other
   public institution/organization","total_num_programs":6},{"title":"Territorial","total_num_programs":6},{"title":"Intrastate","total_num_programs":5},{"title":"Small
-  business (less than 500 employees)","total_num_programs":5},{"title":"Anyone/general
-  public","total_num_programs":4},{"title":"County Government (inclusive of boroughs
-  in Alaska, parishes and other governmental entities with geographic regional control
-  and authority)","total_num_programs":4},{"title":"Indian/Native American Tribal
-  Government (Other than Federally Recognized)","total_num_programs":4},{"title":"Municipality
+  business (less than 500 employees)","total_num_programs":5},{"title":"Unrestricted
+  by Individual Type","total_num_programs":5},{"title":"County Government (inclusive
+  of boroughs in Alaska, parishes and other governmental entities with geographic
+  regional control and authority)","total_num_programs":4},{"title":"Indian/Native
+  American Tribal Government (Other than Federally Recognized)","total_num_programs":4},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":4},{"title":"Profit organization","total_num_programs":4},{"title":"Sponsored
   organization","total_num_programs":4},{"title":"Indian/Native American Tribally
   Designated Organization","total_num_programs":3},{"title":"Land/Property Owner","total_num_programs":3},{"title":"Nonprofit
   with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":3},{"title":"U.S.
   Federal Government","total_num_programs":3},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":3},{"title":"Unrestricted
-  by Individual Type","total_num_programs":3},{"title":"Department or Agency of a
-  U.S. State Government","total_num_programs":2},{"title":"Minority group","total_num_programs":2},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"Other
-  Special Disctrict Government","total_num_programs":2},{"title":"Quasi-public nonprofit
-  institution/organization","total_num_programs":2},{"title":"Specialized group (e.g.
-  health professionals, students, veterans)","total_num_programs":2},{"title":"For-Profit
+  Government (including freely-associated states)","total_num_programs":3},{"title":"Anyone/general
+  public","total_num_programs":2},{"title":"Department or Agency of a U.S. State Government","total_num_programs":2},{"title":"Minority
+  group","total_num_programs":2},{"title":"Nonprofit without 501C3 IRS Status (Other
+  than Institution of Higher Education)","total_num_programs":2},{"title":"Other Special
+  Disctrict Government","total_num_programs":2},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":2},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"For-Profit
   Organization (Other than Small Business)","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Independent School District","total_num_programs":1},{"title":"Non-Government
   - General","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Public/Indian
@@ -240,7 +238,9 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability and
   Monitoring Grants","popular_name":"Chesapeake Bay Program CBIG, CBRAP and Monitoring
   Grants","agency":"Environmental Protection Agency","total_obs":52307767.0,"program_type":"assistance_listing"},{"cfda":"15.517","permalink":"/program/15.517","title":"Fish
-  and Wildlife Coordination Act","popular_name":null,"agency":"Department of the Interior","total_obs":51656533.54,"program_type":"assistance_listing"},{"cfda":"66.456","permalink":"/program/66.456","title":"National
+  and Wildlife Coordination Act","popular_name":null,"agency":"Department of the Interior","total_obs":51656533.54,"program_type":"assistance_listing"},{"cfda":"10.904","permalink":"/program/10.904","title":"Watershed
+  Protection and Flood Prevention","popular_name":"Watershed Operations Program; Public
+  Law 566","agency":"Department of Agriculture","total_obs":48676891.45,"program_type":"assistance_listing"},{"cfda":"66.456","permalink":"/program/66.456","title":"National
   Estuary Program","popular_name":"NEP","agency":"Environmental Protection Agency","total_obs":44868732.0,"program_type":"assistance_listing"},{"cfda":"15.685","permalink":"/program/15.685","title":"National
   Fish Passage","popular_name":"National Fish Passage Program, NFPP","agency":"Department
   of the Interior","total_obs":43252570.99,"program_type":"assistance_listing"},{"cfda":"66.454","permalink":"/program/66.454","title":"Water
@@ -254,9 +254,7 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   Tribal Water Resources","agency":"Department of the Interior","total_obs":34732313.19,"program_type":"assistance_listing"},{"cfda":"15.037","permalink":"/program/15.037","title":"Water
   Resources on Indian Lands","popular_name":null,"agency":"Department of the Interior","total_obs":32618920.21,"program_type":"assistance_listing"},{"cfda":"15.577","permalink":"/program/15.577","title":"Domestic
   Water Supply Projects","popular_name":null,"agency":"Department of the Interior","total_obs":31798772.61,"program_type":"assistance_listing"},{"cfda":"15.630","permalink":"/program/15.630","title":"Coastal","popular_name":null,"agency":"Department
-  of the Interior","total_obs":31265738.14,"program_type":"assistance_listing"},{"cfda":"10.904","permalink":"/program/10.904","title":"Watershed
-  Protection and Flood Prevention","popular_name":"Watershed Operations Program; Public
-  Law 566","agency":"Department of Agriculture","total_obs":27908905.87,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
+  of the Interior","total_obs":31265738.14,"program_type":"assistance_listing"},{"cfda":"66.121","permalink":"/program/66.121","title":"Geographic
   Programs - Puget Sound Protection and Restoration: Tribal Implementation Assistance
   Program","popular_name":null,"agency":"Environmental Protection Agency","total_obs":27211171.0,"program_type":"assistance_listing"},{"cfda":"66.481","permalink":"/program/66.481","title":"Geographic
   Programs \u2013 Lake Champlain Basin Program","popular_name":"Lake Champlain Program","agency":"Environmental
@@ -297,9 +295,7 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   of the Interior","total_obs":7136714.5,"program_type":"assistance_listing"},{"cfda":"15.554","permalink":"/program/15.554","title":"Cooperative
   Watershed Management","popular_name":"Cooperative Watershed Management Program or
   CWMP","agency":"Department of the Interior","total_obs":7057950.54,"program_type":"assistance_listing"},{"cfda":"15.581","permalink":"/program/15.581","title":"Water
-  Resources Development Act","popular_name":null,"agency":"Department of the Interior","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"10.693","permalink":"/program/10.693","title":"Watershed
-  Restoration and Enhancement Agreement Authority","popular_name":"Wyden Amendment
-  ","agency":"Department of Agriculture","total_obs":5587978.23,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
+  Resources Development Act","popular_name":null,"agency":"Department of the Interior","total_obs":7000000.0,"program_type":"assistance_listing"},{"cfda":"15.531","permalink":"/program/15.531","title":"Yakima
   River Basin Water Enhancement (YRBWE)","popular_name":null,"agency":"Department
   of the Interior","total_obs":5434421.28,"program_type":"assistance_listing"},{"cfda":"15.078","permalink":"/program/15.078","title":"Snow
   Water Supply Forecasting","popular_name":null,"agency":"Department of the Interior","total_obs":4570343.0,"program_type":"assistance_listing"},{"cfda":"15.686","permalink":"/program/15.686","title":"National
@@ -319,7 +315,9 @@ programs: '[{"cfda":"10.912","permalink":"/program/10.912","title":"Environmenta
   Joaquin River Restoration","popular_name":null,"agency":"Department of the Interior","total_obs":1650995.5,"program_type":"assistance_listing"},{"cfda":"10.916","permalink":"/program/10.916","title":"Watershed
   Rehabilitation Program","popular_name":"(Watershed Rehabilitation; PL-566 Watershed
   Program)","agency":"Department of Agriculture","total_obs":1631803.62,"program_type":"assistance_listing"},{"cfda":"15.557","permalink":"/program/15.557","title":"Applied
-  Science Grants","popular_name":"ASG","agency":"Department of the Interior","total_obs":1517402.47,"program_type":"assistance_listing"},{"cfda":"10.917","permalink":"/program/10.917","title":"Agricultural
+  Science Grants","popular_name":"ASG","agency":"Department of the Interior","total_obs":1517402.47,"program_type":"assistance_listing"},{"cfda":"10.693","permalink":"/program/10.693","title":"Watershed
+  Restoration and Enhancement Agreement Authority","popular_name":"Wyden Amendment
+  ","agency":"Department of Agriculture","total_obs":1404954.0,"program_type":"assistance_listing"},{"cfda":"10.917","permalink":"/program/10.917","title":"Agricultural
   Management Assistance","popular_name":"AMA","agency":"Department of Agriculture","total_obs":1247328.75,"program_type":"assistance_listing"},{"cfda":"15.535","permalink":"/program/15.535","title":"Upper
   Colorado River Basin Fish and Wildlife Mitigation","popular_name":"Upper Colorado
   River Basin Fish and Wildlife Mitigation Program","agency":"Department of the Interior","total_obs":1154866.8,"program_type":"assistance_listing"},{"cfda":"15.521","permalink":"/program/15.521","title":"Lower
@@ -387,5 +385,5 @@ title: Water Resources
 total_num_agencies: 5
 total_num_applicant_types: 69
 total_num_programs: 89
-total_obs: 3060798373.4000006
+total_obs: 3077383334.7500005
 ---

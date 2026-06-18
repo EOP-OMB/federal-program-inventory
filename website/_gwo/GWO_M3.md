@@ -38,12 +38,12 @@ where_used:
   permalink: /program/14.162
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 97403551117.0
   name: Mortgage Insurance Homes
   permalink: /program/14.117
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 11212357.0
   name: Mortgage Insurance Homes for Disaster Victims
   permalink: /program/14.119
   program_type: assistance_listing
@@ -53,7 +53,7 @@ where_used:
   permalink: /program/14.122
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 2114410722.0
   name: Mortgage Insurance Purchase of Units in Condominiums
   permalink: /program/14.133
   program_type: assistance_listing

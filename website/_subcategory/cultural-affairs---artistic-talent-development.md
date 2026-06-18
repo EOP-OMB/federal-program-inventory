@@ -192,8 +192,9 @@ programs: '[{"cfda":"84.351","permalink":"/program/84.351","title":"Arts in Educ
   of the Humanities Fellowships and Stipends","popular_name":"Fellowships and Other
   Awards to Individuals","agency":"National Endowment for the Humanities","total_obs":6652848.56,"program_type":"assistance_listing"},{"cfda":"45.161","permalink":"/program/45.161","title":"Promotion
   of the Humanities Research","popular_name":"Scholarly Editions and Translations","agency":"National
-  Endowment for the Humanities","total_obs":3468913.84,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"Collaborative
-  Research","popular_name":null,"agency":"National Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
+  Endowment for the Humanities","total_obs":3468913.84,"program_type":"assistance_listing"},{"cfda":"45.035","permalink":"/program/45.035","title":"National
+  Endowment for the Humanities: Collaborative Research","popular_name":null,"agency":"National
+  Endowment for the Humanities","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: Artistic Talent Development
 total_num_agencies: 2
 total_num_applicant_types: 16

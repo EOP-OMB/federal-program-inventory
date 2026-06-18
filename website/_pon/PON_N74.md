@@ -283,8 +283,8 @@ where_used:
   permalink: /program/93.NR2
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
-  name: Nursing Workforce Diversity
+  expenditure_amount: 20000000.0
+  name: Nursing Workforce Development
   permalink: /program/93.178
   program_type: assistance_listing
 - agency: Department of Health and Human Services
@@ -378,7 +378,7 @@ where_used:
   permalink: /program/93.912
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10546400.0
+  expenditure_amount: 45172341.0
   name: Rural Hospital Information Systems
   permalink: /program/93.811
   program_type: assistance_listing

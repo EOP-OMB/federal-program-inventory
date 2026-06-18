@@ -22,12 +22,12 @@ where_used:
   permalink: /program/93.AA6
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 9999965.0
+  expenditure_amount: 10000000.0
   name: AmeriCorps Commission Investment Fund 94.008
   permalink: /program/94.008
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 5511325.0
+  expenditure_amount: 4303600.0
   name: AmeriCorps September 11th National Day of Service and Remembrance Grants 94.012
   permalink: /program/94.012
   program_type: assistance_listing
@@ -57,7 +57,7 @@ where_used:
   permalink: /program/95.003
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 20604930.0
   name: Disability Employment Policy Development
   permalink: /program/17.720
   program_type: assistance_listing

@@ -12,7 +12,7 @@ footer_include: _footer-category-index.html
           <a href="/" class="usa-breadcrumb__link"><span>Home</span></a>
         </li>
         <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-          <span>Explore programs by category</span>
+          <span>Explore FY {{ page.fiscal_year }} spending</span>
         </li>
       </ol>
     </nav>
@@ -24,7 +24,7 @@ footer_include: _footer-category-index.html
     <div class="grid-row">
       <div class="grid-col-12">
         <h1 class="usa-display usa-heading site-title-font text-light">
-          {{ layout.header_title }}
+          Explore FY {{ page.fiscal_year }} spending
         </h1>
       </div>
     </div>
@@ -34,16 +34,14 @@ footer_include: _footer-category-index.html
 <div class="grid-container">
   <div class="grid-row grid-gap padding-top-1">
     <div class="grid-col-12 line-height-sans-3 padding-top-1">
+      This chart shows program spending in FY {{ page.fiscal_year }} for the more than {{ page.total_num_programs |
+      whole_number_with_comma }} programs included in the Federal Program Inventory.
       Programs and the related information listed on this page use data pulled from
-      <a href="https://sam.gov/" class="usa-link" target="_blank" rel="noopener noreferrer">SAM.gov</a>, 
-      <a href="https://www.usaspending.gov/" class="usa-link" target="_blank" rel="noopener noreferrer">USASpending.gov</a>, and 
-      <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures" class="usa-link" target="_blank" rel="noopener noreferrer">Treasury.gov</a>, and other publicly available federal agency websites. For financial
-      assistance, interest on the public debt, and acquisition programs, expenditures are obligations. For tax expenditures,
-      expenditures are the sum of outlays and revenue losses.
-      <br />
-      <br />
-      Select from the dropdown below to view a category. Once you've selected a
-      category, you can select a sub-category under it.
+      <a href="https://sam.gov/" class="usa-link" target="_blank" rel="noopener noreferrer">SAM.gov</a>,
+      <a href="https://www.usaspending.gov/" class="usa-link" target="_blank"
+        rel="noopener noreferrer">USASpending.gov</a>, and
+      <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures" class="usa-link" target="_blank"
+        rel="noopener noreferrer">Treasury.gov</a>, and other publicly available federal agency websites.
     </div>
   </div>
 
@@ -51,15 +49,25 @@ footer_include: _footer-category-index.html
     <div class="margin-right-205 margin-bottom-2">
       <label class="usa-label" for="category">Select category
         <span class="usa-label--required">(Required)</span></label>
-      <select class="usa-select width-mobile" name="category" id="category">
-        <option value>All categories</option>
-      </select>
+      <div class="category-select-wrap">
+        <select class="usa-select category-select-control width-mobile" name="category" id="category">
+          <option value>All categories</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <div class="margin-right-205 margin-bottom-2">
       <label class="usa-label" for="subcategory">Select sub-category</label>
-      <select class="usa-select width-mobile" name="subcategory" id="subcategory">
-        <option value>-Select-</option>
-      </select>
+      <div class="category-select-wrap">
+        <select class="usa-select category-select-control width-mobile" name="subcategory" id="subcategory">
+          <option value>-Select-</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <button id="category-button" class="usa-button bg-primary margin-bottom-2 padding-x-3">
       Update category
@@ -68,22 +76,13 @@ footer_include: _footer-category-index.html
 
   <div class="category-expend-section">
     <div class="margin-205">
-      <h3 class="font-heading-lg text-bold line-height-heading-3">
-        FY {{ page.fiscal_year }} expenditures by category
-      </h3>
-
-      <p class="text-ink font-heading-sm line-height-body-3">
-        This chart shows total program expenditures by category, for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the Federal Program
-        Inventory. To view
-        data for all categories, <a href="#" id="category-chart-download" class="usa-link">download the .csv file</a>.
-      </p>
-
       <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection"
         role="img"></svg>
-
     </div>
   </div>
-  <div class="category-expend-section">
+  <!-- Commented out pie chart for copy edit, may be updated and added later after review -->
+
+  <!-- <div class="category-expend-section">
     <div class="margin-205">
       <h3 class="font-heading-lg text-bold line-height-heading-3">
         FY {{ page.fiscal_year }} expenditures by type of program
@@ -92,11 +91,11 @@ footer_include: _footer-category-index.html
         This chart shows total program expenditures by type of program for the more than {{ page.total_num_programs | whole_number_with_comma }} programs included in the
         Federal Program Inventory. To view data for all
         types of programs, <a href="#" id="obligations-by-type-download" class="usa-link">download the .csv file</a>.
-      </p>
+      </p> -->
 
-      <!-- <div id="obligations-pie-chart" class="width-full maxw-full overflow-x-auto"></div> -->
-       <!-- Add a wrapper div with grid classes -->
-      <div class="grid-row">
+  <!-- <div id="obligations-pie-chart" class="width-full maxw-full overflow-x-auto"></div> -->
+  <!-- Add a wrapper div with grid classes -->
+  <!-- <div class="grid-row">
         <div class="grid-col-12 display-flex flex-justify-center">
           <div id="obligations-pie-chart" class="width-full"></div>
         </div>
@@ -104,5 +103,5 @@ footer_include: _footer-category-index.html
 
 
     </div>
-  </div>
+  </div> -->
 </div>

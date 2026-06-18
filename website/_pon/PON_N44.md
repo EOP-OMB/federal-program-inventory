@@ -11,7 +11,7 @@ permalink: /pon/PON_N44
 title: Improve Cybersecurity Controls and Risk Management
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 549996.0
   name: CISA Cyber Security Awareness Campaign
   permalink: /program/97.128
   program_type: assistance_listing
@@ -30,6 +30,11 @@ where_used:
   expenditure_amount: 0.0
   name: Cybersecurity for Small Business Pilot Program
   permalink: /program/59.079
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1500000.0
+  name: Information Technology Laboratory Grant Program
+  permalink: /program/11.059
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

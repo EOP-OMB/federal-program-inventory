@@ -33,7 +33,7 @@ where_used:
   permalink: /program/93.469
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4376672.0
+  expenditure_amount: 5300000.0
   name: Assistive Technology Program for Farmers with Disabilities
   permalink: /program/10.280
   program_type: assistance_listing

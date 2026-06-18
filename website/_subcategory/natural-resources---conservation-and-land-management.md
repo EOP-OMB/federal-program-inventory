@@ -1,50 +1,49 @@
 ---
-agencies: '[{"title":"Department of Agriculture","total_num_programs":56,"total_obs":4579082931.290001},{"title":"Department
+agencies: '[{"title":"Department of Agriculture","total_num_programs":58,"total_obs":4586141965.43},{"title":"Department
   of the Interior","total_num_programs":68,"total_obs":736238375.1100001},{"title":"Department
   of Commerce","total_num_programs":20,"total_obs":714255750.4699999},{"title":"Department
-  of Defense","total_num_programs":7,"total_obs":145448905.81000003},{"title":"Department
+  of Defense","total_num_programs":7,"total_obs":145798905.81000003},{"title":"Department
   of the Treasury","total_num_programs":2,"total_obs":110000000.0},{"title":"Department
   of Transportation","total_num_programs":3,"total_obs":0.0},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"State","total_num_programs":58},{"title":"Federally Recognized
-  Indian Tribal Governments","total_num_programs":39},{"title":"Nonprofit Organization","total_num_programs":39},{"title":"Public
+applicant_types: '[{"title":"State","total_num_programs":63},{"title":"Federally Recognized
+  Indian/Native American/Alaska Native Tribal Government","total_num_programs":42},{"title":"Local","total_num_programs":42},{"title":"Nonprofit
+  Organization","total_num_programs":42},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":38},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":37},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":36},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":39},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":38},{"title":"Local","total_num_programs":38},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":38},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":37},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":37},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":34},{"title":"Tribal","total_num_programs":27},{"title":"Unrestricted
-  by Entity Type","total_num_programs":23},{"title":"Federal","total_num_programs":20},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":20},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":17},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":17},{"title":"County
+  hospitals)","total_num_programs":36},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":35},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":34},{"title":"Tribal","total_num_programs":31},{"title":"Unrestricted
+  by Entity Type","total_num_programs":26},{"title":"Indian/Native American/Alaska
+  Native Tribal Government (Other than Federally Recognized)","total_num_programs":22},{"title":"Federal","total_num_programs":20},{"title":"Territorial","total_num_programs":18},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":18},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
   with geographic regional control and authority)","total_num_programs":16},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":16},{"title":"Other private institutions/organizations","total_num_programs":15},{"title":"Territorial","total_num_programs":15},{"title":"Other
+  and villages)","total_num_programs":16},{"title":"Native American Organizations
+  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":16},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":14},{"title":"Profit organization","total_num_programs":14},{"title":"Individual/Family","total_num_programs":12},{"title":"Other","total_num_programs":12},{"title":"Other
-  public institution/organization","total_num_programs":12},{"title":"Not-for-Profit
-  Organization","total_num_programs":11},{"title":"For-Profit Organization","total_num_programs":9},{"title":"U.S.
-  Federal Government","total_num_programs":9},{"title":"Anyone/general public","total_num_programs":8},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":8},{"title":"Other Special
-  Disctrict Government","total_num_programs":7},{"title":"City or Township Government","total_num_programs":5},{"title":"County
+  Government Combination","total_num_programs":16},{"title":"Other private institutions/organizations","total_num_programs":14},{"title":"Profit
+  organization","total_num_programs":14},{"title":"Not-for-Profit Organization","total_num_programs":13},{"title":"Other","total_num_programs":13},{"title":"Individual/Family","total_num_programs":11},{"title":"Other
+  public institution/organization","total_num_programs":11},{"title":"For-Profit Organization","total_num_programs":9},{"title":"U.S.
+  Federal Government","total_num_programs":9},{"title":"Anyone/general public","total_num_programs":8},{"title":"Other
+  Special Disctrict Government","total_num_programs":7},{"title":"Quasi-public nonprofit
+  institution/organization","total_num_programs":6},{"title":"City or Township Government","total_num_programs":5},{"title":"County
   Government","total_num_programs":5},{"title":"Department or Agency of a U.S. State
   Government","total_num_programs":5},{"title":"Indian/Native American Tribally Designated
   Organization","total_num_programs":5},{"title":"Interstate","total_num_programs":5},{"title":"Interstate
   Organization","total_num_programs":5},{"title":"Land/Property Owner","total_num_programs":5},{"title":"Non-Government
   - General","total_num_programs":5},{"title":"Small business (less than 500 employees)","total_num_programs":5},{"title":"Unrestricted
   by Individual Type","total_num_programs":5},{"title":"Intrastate","total_num_programs":4},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":4},{"title":"U.S.
-  Territories and possessions","total_num_programs":4},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":4},{"title":"Department
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":4},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":3},{"title":"Foreign
   Government","total_num_programs":3},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":3},{"title":"Government - General","total_num_programs":2},{"title":"Indian/Native
-  American Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Farmworker","total_num_programs":1},{"title":"Foreign
+  students, veterans)","total_num_programs":3},{"title":"U.S. Territories and possessions","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Government
+  - General","total_num_programs":2},{"title":"Indian/Native American Tribal Government
+  (Other than Federally Recognized)","total_num_programs":2},{"title":"Farmworker","total_num_programs":1},{"title":"Foreign
   Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Foreign
   Non-Governmental For-Profit Organization","total_num_programs":1},{"title":"International
   Organization","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Small
@@ -221,10 +220,10 @@ parent_permalink: /category/natural-resources
 parent_title: Natural Resources
 permalink: /category/natural-resources/conservation-and-land-management
 programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation Stewardship
-  Program","popular_name":"CSP","agency":"Department of Agriculture","total_obs":899468320.96,"program_type":"assistance_listing"},{"cfda":"10.703","permalink":"/program/10.703","title":"Cooperative
+  Program","popular_name":"CSP","agency":"Department of Agriculture","total_obs":899553190.96,"program_type":"assistance_listing"},{"cfda":"10.703","permalink":"/program/10.703","title":"Cooperative
   Fire Protection Agreement","popular_name":"Cooperative Fire Protection Agreement
-  ","agency":"Department of Agriculture","total_obs":600074566.68,"program_type":"assistance_listing"},{"cfda":"10.699","permalink":"/program/10.699","title":"Partnership
-  Agreements","popular_name":"Partnership Agreements ","agency":"Department of Agriculture","total_obs":565579367.22,"program_type":"assistance_listing"},{"cfda":"10.734","permalink":"/program/10.734","title":"Inflation
+  ","agency":"Department of Agriculture","total_obs":601888259.43,"program_type":"assistance_listing"},{"cfda":"10.699","permalink":"/program/10.699","title":"Partnership
+  Agreements","popular_name":"Partnership Agreements ","agency":"Department of Agriculture","total_obs":570752941.91,"program_type":"assistance_listing"},{"cfda":"10.734","permalink":"/program/10.734","title":"Inflation
   Reduction Act - Forest Legacy Program","popular_name":"IRA FLP","agency":"Department
   of Agriculture","total_obs":509561855.0,"program_type":"assistance_listing"},{"cfda":"10.664","permalink":"/program/10.664","title":"Cooperative
   Forestry Assistance","popular_name":null,"agency":"Department of Agriculture","total_obs":330742654.99,"program_type":"assistance_listing"},{"cfda":"10.701","permalink":"/program/10.701","title":"Stewardship
@@ -239,12 +238,12 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   Conservation","popular_name":null,"agency":"Department of Commerce","total_obs":158140962.73,"program_type":"assistance_listing"},{"cfda":"10.069","permalink":"/program/10.069","title":"Conservation
   Reserve Program","popular_name":"CRP","agency":"Department of Agriculture","total_obs":148690603.65,"program_type":"assistance_listing"},{"cfda":"10.902","permalink":"/program/10.902","title":"Soil
   and Water Conservation","popular_name":null,"agency":"Department of Agriculture","total_obs":134043380.92,"program_type":"assistance_listing"},{"cfda":"11.438","permalink":"/program/11.438","title":"Pacific
-  Coast Salmon Recovery Pacific Salmon Treaty Program","popular_name":"Pacific Coast
-  Salmon Recovery_Pacific Salmon Treaty Program","agency":"Department of Commerce","total_obs":128879254.89,"program_type":"assistance_listing"},{"cfda":"10.102","permalink":"/program/10.102","title":"Emergency
+  Salmon Treaty Program","popular_name":"Pacific Coast Salmon Recovery_Pacific Salmon
+  Treaty Program","agency":"Department of Commerce","total_obs":128879254.89,"program_type":"assistance_listing"},{"cfda":"10.102","permalink":"/program/10.102","title":"Emergency
   Forest Restoration Program","popular_name":"EFRP","agency":"Department of Agriculture","total_obs":113734339.84,"program_type":"assistance_listing"},{"cfda":"10.676","permalink":"/program/10.676","title":"Forest
   Legacy Program","popular_name":null,"agency":"Department of Agriculture","total_obs":108720379.63,"program_type":"assistance_listing"},{"cfda":"12.005","permalink":"/program/12.005","title":"Conservation
   and Rehabilitation of Natural Resources on Military Installations","popular_name":"Sikes
-  Act","agency":"Department of Defense","total_obs":102682705.3,"program_type":"assistance_listing"},{"cfda":"10.720","permalink":"/program/10.720","title":"Infrastructure
+  Act","agency":"Department of Defense","total_obs":103032705.3,"program_type":"assistance_listing"},{"cfda":"10.720","permalink":"/program/10.720","title":"Infrastructure
   Investment and Jobs Act Community Wildfire Defense Grants","popular_name":"Community
   Wildfire Defense Grant","agency":"Department of Agriculture","total_obs":95839997.73,"program_type":"assistance_listing"},{"cfda":"TC.054","permalink":"/program/TC.054","title":"Expensing
   of reforestation expenditures","popular_name":null,"agency":"Department of the Treasury","total_obs":70000000.0,"program_type":"tax_expenditure"},{"cfda":"15.634","permalink":"/program/15.634","title":"State
@@ -280,7 +279,7 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   Wildland Fire Fuels Management and Community Assistance Program Activities","agency":"Department
   of the Interior","total_obs":23324878.89,"program_type":"assistance_listing"},{"cfda":"11.434","permalink":"/program/11.434","title":"Cooperative
   Fishery Statistics","popular_name":null,"agency":"Department of Commerce","total_obs":19931414.0,"program_type":"assistance_listing"},{"cfda":"12.017","permalink":"/program/12.017","title":"Readiness
-  and Environmental Protection Integration (REPI) Program","popular_name":"DoD REPI
+  and Environmental Protection Integration (REPI) Program","popular_name":"DoW REPI
   Program","agency":"Department of Defense","total_obs":19002316.06,"program_type":"assistance_listing"},{"cfda":"15.247","permalink":"/program/15.247","title":"Wildlife
   Resource Management","popular_name":null,"agency":"Department of the Interior","total_obs":18679311.48,"program_type":"assistance_listing"},{"cfda":"12.116","permalink":"/program/12.116","title":"Department
   of Defense Appropriation Act of 2003","popular_name":"Native American Lands Environmental
@@ -317,7 +316,7 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   of Commerce","total_obs":8909233.0,"program_type":"assistance_listing"},{"cfda":"11.407","permalink":"/program/11.407","title":"Interjurisdictional
   Fisheries Act of 1986","popular_name":"Interjurisdictional Fisheries Act of 1986","agency":"Department
   of Commerce","total_obs":8693413.65,"program_type":"assistance_listing"},{"cfda":"10.684","permalink":"/program/10.684","title":"International
-  Forestry Programs","popular_name":null,"agency":"Department of Agriculture","total_obs":8687961.9,"program_type":"assistance_listing"},{"cfda":"10.724","permalink":"/program/10.724","title":"Wildfire
+  Forestry Programs","popular_name":null,"agency":"Department of Agriculture","total_obs":8674858.6,"program_type":"assistance_listing"},{"cfda":"10.724","permalink":"/program/10.724","title":"Wildfire
   Crisis Strategy Landscapes","popular_name":"National Priority Large Landscapes","agency":"Department
   of Agriculture","total_obs":8154424.47,"program_type":"assistance_listing"},{"cfda":"10.385","permalink":"/program/10.385","title":"Timber
   Production Expansion Guaranteed Loans","popular_name":"TPEP","agency":"Department
@@ -332,7 +331,7 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   Forest and Open Space Conservation Program (CFP)","popular_name":"Community Forest
   Program (CFP)\r\n\r\n","agency":"Department of Agriculture","total_obs":6318483.63,"program_type":"assistance_listing"},{"cfda":"15.639","permalink":"/program/15.639","title":"Tribal
   Wildlife Grants","popular_name":"TWG","agency":"Department of the Interior","total_obs":6004412.89,"program_type":"assistance_listing"},{"cfda":"11.454","permalink":"/program/11.454","title":"Unallied
-  Management Projects","popular_name":null,"agency":"Department of Commerce","total_obs":5201290.18,"program_type":"assistance_listing"},{"cfda":"10.675","permalink":"/program/10.675","title":"Urban
+  Projects","popular_name":"Unallied Management","agency":"Department of Commerce","total_obs":5201290.18,"program_type":"assistance_listing"},{"cfda":"10.675","permalink":"/program/10.675","title":"Urban
   and Community Forestry Program","popular_name":null,"agency":"Department of Agriculture","total_obs":5002908.86,"program_type":"assistance_listing"},{"cfda":"15.812","permalink":"/program/15.812","title":"Cooperative
   Research Units","popular_name":"CRU","agency":"Department of the Interior","total_obs":4916530.6,"program_type":"assistance_listing"},{"cfda":"15.660","permalink":"/program/15.660","title":"Candidate
   Species Conservation","popular_name":null,"agency":"Department of the Interior","total_obs":4433096.64,"program_type":"assistance_listing"},{"cfda":"10.515","permalink":"/program/10.515","title":"Renewable
@@ -423,7 +422,9 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   Agriculture","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.709","permalink":"/program/10.709","title":"Cost
   Reimbursable Agreements","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.969","permalink":"/program/10.969","title":"FSA
   Conservation Reserve Program Transition Incentive Program: Outreach, Technical Assistance,
-  and Research Agreements","popular_name":"CRP TIP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.087","permalink":"/program/15.087","title":"Fire
+  and Research Agreements","popular_name":"CRP TIP","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.741","permalink":"/program/10.741","title":"FY26
+  Community Project Funds-Congressionally Directed Spending","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.087","permalink":"/program/15.087","title":"Fire
   Protection Cooperative Agreement","popular_name":"Fire Protection Agreement","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.987","permalink":"/program/15.987","title":"Good
   Neighbor Authority for Restoration","popular_name":"Good Neighbor Authority","agency":"Department
@@ -434,7 +435,9 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   the Capability of Indian Tribal Governments to Regulate Environmental Quality","popular_name":"Environmental
   Regulatory Enhancement (ERE)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.164","permalink":"/program/15.164","title":"Land
   Acquisition Funding Program","popular_name":"Land Acquisition","agency":"Department
-  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.065","permalink":"/program/11.065","title":"Marine
+  of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.742","permalink":"/program/10.742","title":"Landscape-Scale
+  Restoration","popular_name":"State, Private, & Tribal Landscape-Scale Restoration","agency":"Department
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.065","permalink":"/program/11.065","title":"Marine
   Turtle Management and Conservation","popular_name":"Sea Turtle Conservation","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.276","permalink":"/program/20.276","title":"National
   Culvert Removal, Replacement, & Restoration Grant","popular_name":null,"agency":"Department
@@ -442,7 +445,8 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
   Hawaiian Climate Resilience Program","popular_name":"Kapapahuliau Grant Program","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.214","permalink":"/program/15.214","title":"Non-Sale
   Disposals of Mineral Material","popular_name":null,"agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.045","permalink":"/program/11.045","title":"Pacific
-  Coast Salmon Recovery","popular_name":"PCSRF","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.283","permalink":"/program/20.283","title":"Pollinator-Friendly
+  Coast Salmon Recovery Fund","popular_name":"Pacific Coast Salmon Recovery Fund","agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.283","permalink":"/program/20.283","title":"Pollinator-Friendly
   Practices on Roadsides and Highway Rights-of-Way Discretionary Grant Program","popular_name":"Roadside
   Pollinator Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.061","permalink":"/program/11.061","title":"Prescott
   Grant Program","popular_name":"John H. Prescott Marine Mammal Rescue Assistance
@@ -477,6 +481,6 @@ programs: '[{"cfda":"10.924","permalink":"/program/10.924","title":"Conservation
 title: Conservation and Land Management
 total_num_agencies: 7
 total_num_applicant_types: 72
-total_num_programs: 157
-total_obs: 6285025962.680003
+total_num_programs: 159
+total_obs: 6292434996.820003
 ---

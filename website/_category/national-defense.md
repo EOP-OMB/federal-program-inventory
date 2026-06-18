@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Defense","total_num_programs":37,"total_obs":6317619260.55},{"title":"Department
+agencies: '[{"title":"Department of Defense","total_num_programs":450,"total_obs":130122830607.18004},{"title":"Department
   of Transportation","total_num_programs":3,"total_obs":388911493.74},{"title":"Department
   of Energy","total_num_programs":5,"total_obs":208829578.98},{"title":"Department
   of Veterans Affairs","total_num_programs":1,"total_obs":117388258.0},{"title":"Department
@@ -207,11 +207,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/national-defense
-sub_cats: '[{"title":"Defense Capability","permalink":"/category/national-defense/defense-capability","total_num_programs":58,"total_obs":7032996381.2300005}]'
+sub_cats: '[{"title":"Defense Capability","permalink":"/category/national-defense/defense-capability","total_num_programs":471,"total_obs":130838207727.86006}]'
 title: National Defense
 total_num_agencies: 7
 total_num_applicant_types: 50
-total_num_programs: 58
+total_num_programs: 471
 total_num_sub_cats: 1
-total_obs: 7032996381.2300005
+total_obs: 130838207727.86006
 ---

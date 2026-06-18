@@ -18,7 +18,7 @@ where_used:
   permalink: /program/93.051
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 56517611.0
+  expenditure_amount: 53044112.0
   name: AmeriCorps Seniors Senior Companion Program (SCP) 94.016
   permalink: /program/94.016
   program_type: assistance_listing
@@ -51,7 +51,7 @@ where_used:
   permalink: /program/93.072
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 122000000.0
   name: Multifamily Housing Service Coordinators
   permalink: /program/14.191
   program_type: assistance_listing

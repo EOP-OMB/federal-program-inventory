@@ -28,11 +28,10 @@ describe('Improper Payment Rate Card', () => {
         .should('not.have.css', 'display', 'none');
     });
 
-    it('should display the payment info section with FY expenditure', () => {
-      // Check for the FY expenditure section
+    it('should display the payment info section with FY label', () => {
+      // Check for the FY section
       cy.get('.payment-info').should('be.visible');
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').contains('Expenditure').should('be.visible');
     });
 
     it('should display the improper payment rate box', () => {
@@ -57,8 +56,6 @@ describe('Improper Payment Rate Card', () => {
     });
 
     it('visual regression: improper payment card is displayed when page.improper_payments is NOT null (0% rate)', () => {
-      // Wait for any animations to complete
-      cy.wait(500);
       // Capture the entire grid container to show the card is displayed
       cy.get('.grid-container').compareSnapshot('improper_payment_card_zero_rate');
     });
@@ -83,7 +80,6 @@ describe('Improper Payment Rate Card', () => {
 
     it('should have a valid fiscal year label', () => {
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').should('contain', 'Expenditure');
     });
   });
 
@@ -111,11 +107,10 @@ describe('Improper Payment Rate Card', () => {
         .should('not.have.css', 'display', 'none');
     });
 
-    it('should display the payment info section with FY expenditure', () => {
-      // Check for the FY expenditure section
+    it('should display the payment info section with FY label', () => {
+      // Check for the FY section
       cy.get('.payment-info').should('be.visible');
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').contains('Expenditure').should('be.visible');
     });
 
     it('should display the improper payment rate box', () => {
@@ -140,8 +135,6 @@ describe('Improper Payment Rate Card', () => {
     });
 
     it('visual regression: improper payment card is displayed when page.improper_payments is NOT null (positive rate)', () => {
-      // Wait for any animations to complete
-      cy.wait(500);
       // Capture the entire grid container to show the card is displayed
       cy.get('.grid-container').compareSnapshot('improper_payment_card_positive_rate');
     });
@@ -166,7 +159,6 @@ describe('Improper Payment Rate Card', () => {
 
     it('should have a valid fiscal year label', () => {
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').should('contain', 'Expenditure');
     });
   });
 
@@ -194,11 +186,10 @@ describe('Improper Payment Rate Card', () => {
       cy.get('#improper-payments-total').should('contain', 'N/A');
     });
 
-    it('should display the payment info section with FY expenditure', () => {
-      // Check for the FY expenditure section even when improper payment data is unavailable
+    it('should display the payment info section with FY label', () => {
+      // Check for the FY section even when improper payment data is unavailable
       cy.get('.payment-info').should('be.visible');
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').contains('Expenditure').should('be.visible');
     });
 
     it('should display the improper payment rate box', () => {
@@ -215,8 +206,6 @@ describe('Improper Payment Rate Card', () => {
     });
 
     it('visual regression: improper payment card is displayed with N/A values when improper_payments is null', () => {
-      // Wait for any animations to complete
-      cy.wait(500);
       // Capture the entire grid container to show the N/A card is displayed
       cy.get('.grid-container').compareSnapshot('improper_payment_card_NA');
     });
@@ -251,11 +240,10 @@ describe('Improper Payment Rate Card', () => {
       cy.get('#improper-payments-total').should('not.contain', '$');
     });
 
-    it('should display the payment info section with FY expenditure', () => {
-      // Check for the FY expenditure section
+    it('should display the payment info section with FY label', () => {
+      // Check for the FY section
       cy.get('.payment-info').should('be.visible');
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').contains('Expenditure').should('be.visible');
     });
 
     it('should display correct alignment of left and right sections', () => {
@@ -273,8 +261,6 @@ describe('Improper Payment Rate Card', () => {
     });
 
     it('visual regression: improper payment card displays "Multiple" when improper_payments_is_multiple is true', () => {
-      // Wait for any animations to complete
-      cy.wait(500);
       // Capture the entire grid container to show the multiple rate card is displayed
       cy.get('.grid-container').compareSnapshot('improper_payment_card_multiple_rate');
     });
@@ -290,7 +276,6 @@ describe('Improper Payment Rate Card', () => {
 
     it('should have a valid fiscal year label', () => {
       cy.get('.payment-info').contains('FY').should('be.visible');
-      cy.get('.payment-info').should('contain', 'Expenditure');
     });
   });
 });

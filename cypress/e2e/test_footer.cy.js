@@ -8,7 +8,7 @@ describe('Footer and Footer Banner Components', () => {
 
   it('should display the footer banner', () => {
     cy.visit(testUrl);
-    cy.get('[role="footer-banner"]').should('be.visible');
+    cy.get('footer.usa-banner__header').should('be.visible');
   });
 
   it('should display footer links', () => {
@@ -26,14 +26,13 @@ describe('Footer and Footer Banner Components', () => {
     cy.visit(testUrl);
 
     // Wait for footer banner to load
-    cy.get('[role="footer-banner"]', { timeout: 10000 }).should('exist');
+    cy.get('footer.usa-banner__header', { timeout: 10000 }).should('exist');
     
     // Scroll to ensure footer banner is in view
     cy.scrollTo('bottom');
-    cy.wait(500);
     
     // Take a snapshot of the footer banner
-    cy.get('[role="footer-banner"]').compareSnapshot('footer_banner');
+    cy.get('footer.usa-banner__header').compareSnapshot('footer_banner');
   });
 
   it('visual regression: footer snapshot', () => {
@@ -45,7 +44,6 @@ describe('Footer and Footer Banner Components', () => {
     
     // Scroll to ensure footer is in view
     cy.scrollTo('bottom');
-    cy.wait(500);
     
     // Take a snapshot of the footer
     cy.get('footer.padding-0').compareSnapshot('footer');
@@ -72,7 +70,6 @@ describe('Footer and Footer Banner Components', () => {
 
     // Scroll to bottom to make "Return to top" link visible
     cy.scrollTo('bottom');
-    cy.wait(500);
     
     // Verify the return to top link is visible
     cy.get('#return-to-top').should('be.visible');
