@@ -96,7 +96,6 @@ applicant_types:
 - title: Water Delivery Authority
 assistance_types:
 - title: Advisory Services and Counseling
-- title: Contracts
 - title: Direct Loans
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
@@ -105,13 +104,11 @@ assistance_types:
 - title: Formula Grants
 - title: Guaranteed / Insured Loans
 - title: Insurance
-- title: Interest
 - title: Non-Financial
 - title: Project Grants
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
 - title: Sale, Exchange, or Donation of Property or Goods
-- title: Tax Expenditures
 - title: Training
 - title: Use of Property, Facilities, or Equipment
 beneficiary_types:
@@ -166,11 +163,13 @@ beneficiary_types:
 - title: Juvenile Delinquent
 - title: Land/Property Owner
 - title: Local
+- title: Longshore and Harbor Worker
 - title: Low Income
 - title: Lower Secondary Education
 - title: Major Metropolis (over 250,000)
 - title: Mentally Disabled
 - title: Migrant
+- title: Miner
 - title: Minority group
 - title: Moderate Income
 - title: Municipality or Township government (inclusive of cities, towns, boroughs
@@ -407,6 +406,7 @@ cfo_agencies:
   - title: Health Resources and Services Administration
   - title: Indian Health Service
   - title: National Institutes of Health
+  - title: OFFICE OF THE INSPECTOR GENERAL
   - title: Office Of The Assistant Secretary For Administration (ASA)
   - title: Office of Assistant Secretary for Health
   - title: Office of the Secretary
@@ -604,6 +604,7 @@ gwo_options:
 - title: Provide Healthcare Coverage
 - title: Provide International Development and Humanitarian Assistance
 - title: Provide Lending and Investment Opportunities
+- title: Provide Personnel and Human Capital Management
 - title: Provide Quality Sanitation Services
 - title: Provide Quality Solid Waste Management Systems
 - title: Provide Quality, Reliable Telecommunications Systems
@@ -908,6 +909,7 @@ pon_options:
 - title: Increase Local Economic Growth
 - title: Increase Long-Term Housing
 - title: Increase Long-Term Personal Financial Stability
+- title: Increase Manufacturing Technology Adoption
 - title: Increase Mental and Physical Well-Being Support for Individuals with Disabilities
 - title: Increase Mental and Physical Well-Being Support for Veterans
 - title: 'Increase Organizational Issue Awareness and Advocacy '

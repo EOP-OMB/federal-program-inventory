@@ -104,7 +104,7 @@ where_used:
   permalink: /program/81.256
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 39010540.0
+  expenditure_amount: 38000000.0
   name: Environmental Protection Consolidated Grants for the Insular Areas - Program
     Support
   permalink: /program/66.600
@@ -247,7 +247,7 @@ where_used:
   permalink: /program/20.725
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 1000000.0
+  expenditure_amount: 460000000.0
   name: Performance Partnership Grants
   permalink: /program/66.605
   program_type: assistance_listing
@@ -272,7 +272,7 @@ where_used:
   permalink: /program/66.609
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Remedial Action and Waste Management
   permalink: /program/81.092
   program_type: assistance_listing

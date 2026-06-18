@@ -10,7 +10,7 @@ permalink: /pon/PON_14L
 title: Increase Mental and Physical Well-Being Support for Veterans
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 1966976.25
+  expenditure_amount: 2866984.0
   name: Clearing House for Military Readiness
   permalink: /program/10.288
   program_type: assistance_listing

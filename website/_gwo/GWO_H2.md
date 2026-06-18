@@ -71,7 +71,7 @@ where_used:
   permalink: /program/93.DA6
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2880000.0
+  expenditure_amount: 2800000.0
   name: Equipment Grants Program (EGP)
   permalink: /program/10.519
   program_type: assistance_listing

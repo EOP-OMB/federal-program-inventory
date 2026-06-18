@@ -86,7 +86,7 @@ where_used:
   permalink: /program/15.040
   program_type: assistance_listing
 - agency: Social Security Administration
-  expenditure_amount: 0.0
+  expenditure_amount: 9267805.0
   name: Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries
   permalink: /program/96.009
   program_type: assistance_listing
@@ -101,7 +101,7 @@ where_used:
   permalink: /program/10.435
   program_type: assistance_listing
 - agency: Social Security Administration
-  expenditure_amount: 0.0
+  expenditure_amount: 34434342.0
   name: Strengthening Protections for Social Security Beneficiaries
   permalink: /program/96.013
   program_type: assistance_listing

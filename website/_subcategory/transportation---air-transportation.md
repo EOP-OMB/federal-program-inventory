@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":8875650070.25}]'
+agencies: '[{"title":"Department of Transportation","total_num_programs":4,"total_obs":8887716110.25}]'
 applicant_types: '[{"title":"County Government (inclusive of boroughs in Alaska, parishes
   and other governmental entities with geographic regional control and authority)","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
@@ -183,7 +183,7 @@ parent_title: Transportation
 permalink: /category/transportation/air-transportation
 programs: '[{"cfda":"20.106","permalink":"/program/20.106","title":"Airport Improvement
   Program, Infrastructure Investment and Jobs Act Programs, and COVID-19 Airports
-  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":8875650070.25,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
+  Programs","popular_name":"AIP, IIJA, CARES and ARPA","agency":"Department of Transportation","total_obs":8887716110.25,"program_type":"assistance_listing"},{"cfda":"20.116","permalink":"/program/20.116","title":"Airport
   Improvement Program","popular_name":"AIP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.117","permalink":"/program/20.117","title":"Airport
   Infrastructure Grants","popular_name":"AIG (IIJA)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.118","permalink":"/program/20.118","title":"Airport
   Terminal Program","popular_name":"ATP","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"}]'
@@ -191,5 +191,5 @@ title: Air Transportation
 total_num_agencies: 1
 total_num_applicant_types: 13
 total_num_programs: 4
-total_obs: 8875650070.25
+total_obs: 8887716110.25
 ---

@@ -23,7 +23,7 @@ where_used:
   permalink: /program/20.111
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4789715.0
+  expenditure_amount: 9500000.0
   name: Alaska Native Serving and Native Hawaiian Serving Institutions Education Grants
   permalink: /program/10.228
   program_type: assistance_listing
@@ -49,12 +49,12 @@ where_used:
   permalink: /program/84.051
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 6265020.0
   name: Charles B. Rangel International Affairs Program
   permalink: /program/19.020
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 95501000.0
   name: Community Project Funding/Congressionally Directed Spending
   permalink: /program/17.289
   program_type: assistance_listing
@@ -64,7 +64,7 @@ where_used:
   permalink: /program/10.329
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 20604930.0
   name: Disability Employment Policy Development
   permalink: /program/17.720
   program_type: assistance_listing
@@ -74,12 +74,12 @@ where_used:
   permalink: /program/15.569
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 716630983.0
   name: Employment Service/Wagner-Peyser Funded Activities
   permalink: /program/17.207
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2866640.0
+  expenditure_amount: 2866000.0
   name: Enhancing Agricultural Opportunities for Military Veterans Competitive Grants
     Program
   permalink: /program/10.334
@@ -95,7 +95,7 @@ where_used:
   permalink: /program/15.070
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20640000.0
+  expenditure_amount: 20901685.29
   name: Facility Improvements at 1890 Facilities (Sec. 1447)
   permalink: /program/10.513
   program_type: assistance_listing
@@ -151,12 +151,12 @@ where_used:
   permalink: /program/85.402
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 97396000.0
   name: National Farmworker Jobs Program
   permalink: /program/17.264
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 55429622.0
   name: Native American Employment and Training
   permalink: /program/17.265
   program_type: assistance_listing
@@ -181,7 +181,7 @@ where_used:
   permalink: /program/66.722
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 230000000.0
   name: Registered Apprenticeship
   permalink: /program/17.285
   program_type: assistance_listing
@@ -196,12 +196,12 @@ where_used:
   permalink: /program/59.069
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 389000000.0
   name: Senior Community Service Employment Program
   permalink: /program/17.235
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2801160.0
+  expenditure_amount: 3000000.0
   name: Sun Grant Program
   permalink: /program/10.320
   program_type: assistance_listing
@@ -216,7 +216,7 @@ where_used:
   permalink: /program/10.350
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 6065979.0
   name: Thomas R. Pickering Foreign Affairs Fellowship Program
   permalink: /program/19.013
   program_type: assistance_listing
@@ -231,32 +231,32 @@ where_used:
   permalink: /program/10.049
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 881142622.0
   name: WIOA Adult Program
   permalink: /program/17.258
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 7999123.0
   name: WIOA Adult, Dislocated Worker and Youth Outlying Areas Consolidated Grants
   permalink: /program/17.290
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 30085900.0
   name: WIOA Dislocated Worker National Reserve Demonstration Grants
   permalink: /program/17.280
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 148629300.0
   name: WIOA National Dislocated Worker Grants / WIA National Emergency Grants
   permalink: /program/17.277
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 920612878.0
   name: WIOA Youth Activities
   permalink: /program/17.259
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Women in Apprenticeship and Nontraditional Occupations (“WANTO”) Technical
     Assistance Grant Program
   permalink: /program/17.701
@@ -272,7 +272,7 @@ where_used:
   permalink: /program/17.700
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 6000000.0
   name: Workforce Data Quality Initiative (WDQI)
   permalink: /program/17.261
   program_type: assistance_listing
@@ -287,7 +287,7 @@ where_used:
   permalink: /program/15.931
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 98000000.0
   name: YouthBuild
   permalink: /program/17.274
   program_type: assistance_listing

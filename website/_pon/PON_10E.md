@@ -60,13 +60,18 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 1292486.0
-  name: Green and Resilient Retrofit Program
+  name: GRRP
   permalink: /program/14.021
   program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 0.0
   name: 'Greenhouse Gas Reduction Fund: Solar for All'
   permalink: /program/66.959
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: High Performance Building Systems
+  permalink: /program/11.070
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
@@ -109,7 +114,7 @@ where_used:
   permalink: /program/10.868
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 65939749.0
   name: State Energy Program
   permalink: /program/81.041
   program_type: assistance_listing

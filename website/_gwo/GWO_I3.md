@@ -28,12 +28,12 @@ where_used:
   permalink: /program/81.086
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6000000.0
   name: Cybersecurity, Energy Security & Emergency Response (CESER)
   permalink: /program/81.008
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 496500000.0
   name: Fossil Energy Research and Development
   permalink: /program/81.089
   program_type: assistance_listing
@@ -69,7 +69,7 @@ where_used:
   permalink: /program/20.723
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 2500000.0
+  expenditure_amount: 4000000.0
   name: Pipeline Safety Research Competitive Academic Agreement Program (CAAP)
   permalink: /program/20.724
   program_type: assistance_listing
@@ -79,7 +79,7 @@ where_used:
   permalink: /program/81.087
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 65939749.0
   name: State Energy Program
   permalink: /program/81.041
   program_type: assistance_listing
@@ -95,7 +95,7 @@ where_used:
   permalink: /program/77.009
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6000000.0
   name: University Coal Research
   permalink: /program/81.057
   program_type: assistance_listing

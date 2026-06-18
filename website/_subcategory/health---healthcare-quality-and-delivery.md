@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Health and Human Services","total_num_programs":128,"total_obs":10127827331.220005},{"title":"Department
+agencies: '[{"title":"Department of Health and Human Services","total_num_programs":128,"total_obs":10158412306.220005},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":3590000000.0},{"title":"Department
   of Education","total_num_programs":3,"total_obs":21081551.0},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":6683799.0},{"title":"Department of
@@ -9,36 +9,34 @@ agencies: '[{"title":"Department of Health and Human Services","total_num_progra
   Commission","total_num_programs":2,"total_obs":-2188960.88}]'
 applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":72},{"title":"Federally
   Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":55},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":52},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":43},{"title":"Other","total_num_programs":34},{"title":"Local","total_num_programs":33},{"title":"State","total_num_programs":29},{"title":"Indian/Native
+  State Government (including the District of Columbia)","total_num_programs":53},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":45},{"title":"Local","total_num_programs":35},{"title":"Other","total_num_programs":35},{"title":"State","total_num_programs":29},{"title":"Indian/Native
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":23},{"title":"For-Profit
-  Organization","total_num_programs":18},{"title":"Not-for-Profit Organization","total_num_programs":18},{"title":"Public
+  Organization","total_num_programs":19},{"title":"Not-for-Profit Organization","total_num_programs":18},{"title":"Tribal","total_num_programs":11},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":10},{"title":"Tribal","total_num_programs":9},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":8},{"title":"Territorial","total_num_programs":7},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":5},{"title":"County Government
-  (inclusive of boroughs in Alaska, parishes and other governmental entities with
-  geographic regional control and authority)","total_num_programs":4},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":4},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":4},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":4},{"title":"Unrestricted
+  hospitals)","total_num_programs":10},{"title":"County Government (inclusive of boroughs
+  in Alaska, parishes and other governmental entities with geographic regional control
+  and authority)","total_num_programs":7},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Territorial","total_num_programs":7},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":6},{"title":"Federally Recognized Indian Tribal
+  Governments","total_num_programs":5},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":4},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":4},{"title":"State (includes District
+  of Columbia, public institutions of higher education and hospitals)","total_num_programs":4},{"title":"Unrestricted
   by Entity Type","total_num_programs":4},{"title":"Local (includes State-designated
   Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":3},{"title":"Minority
-  group","total_num_programs":3},{"title":"Municipality or Township government (inclusive
-  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":3},{"title":"Other
-  public institution/organization","total_num_programs":3},{"title":"Small Business
-  Person","total_num_programs":3},{"title":"U.S. Territories and possessions (includes
-  institutions of higher education and hospitals)","total_num_programs":3},{"title":"Other
-  private institutions/organizations","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"School
-  District Government","total_num_programs":2},{"title":"Specialized group (e.g. health
-  professionals, students, veterans)","total_num_programs":2},{"title":"Unrestricted
-  by Individual Type","total_num_programs":2},{"title":"Department or Agency of a
-  U.S. State Government","total_num_programs":1},{"title":"Department or Agency of
-  a U.S. Territorial Government","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"U.S. Federal
-  Government","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
+  group","total_num_programs":3},{"title":"Other public institution/organization","total_num_programs":3},{"title":"Small
+  Business Person","total_num_programs":3},{"title":"U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"School District
+  Government","total_num_programs":2},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":2},{"title":"Unrestricted by Individual
+  Type","total_num_programs":2},{"title":"Department or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Profit
+  organization","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"U.S.
+  Federal Government","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -211,11 +209,11 @@ parent_title: Health
 permalink: /category/health/healthcare-quality-and-delivery
 programs: '[{"cfda":"93.210","permalink":"/program/93.210","title":"Tribal Self-Governance
   Program: IHS Compacts/Funding Agreements","popular_name":"(OTSG Compacts )","agency":"Department
-  of Health and Human Services","total_obs":3772921025.0,"program_type":"assistance_listing"},{"cfda":"TC.134","permalink":"/program/TC.134","title":"Exclusion
+  of Health and Human Services","total_obs":3800951210.0,"program_type":"assistance_listing"},{"cfda":"TC.134","permalink":"/program/TC.134","title":"Exclusion
   of interest on hospital construction bonds","popular_name":null,"agency":"Department
   of the Treasury","total_obs":3590000000.0,"program_type":"tax_expenditure"},{"cfda":"93.441","permalink":"/program/93.441","title":"Indian
   Self-Determination","popular_name":"(Indian Self-Determination 638 Contracts)","agency":"Department
-  of Health and Human Services","total_obs":1035426139.0,"program_type":"assistance_listing"},{"cfda":"93.421","permalink":"/program/93.421","title":"Strengthening
+  of Health and Human Services","total_obs":1037980929.0,"program_type":"assistance_listing"},{"cfda":"93.421","permalink":"/program/93.421","title":"Strengthening
   Public Health Systems and Services through National Partnerships to Improve and
   Protect the Nation\u2019s Health","popular_name":null,"agency":"Department of Health
   and Human Services","total_obs":681665345.67,"program_type":"assistance_listing"},{"cfda":"93.162","permalink":"/program/93.162","title":"National
@@ -241,14 +239,15 @@ programs: '[{"cfda":"93.210","permalink":"/program/93.210","title":"Tribal Self-
   of Health and Human Services","total_obs":240236665.0,"program_type":"assistance_listing"},{"cfda":"93.912","permalink":"/program/93.912","title":"Rural
   Healthcare Services Programs","popular_name":"Rural Health Care Services Outreach,
   Rural Maternity and Obstetrics Management Strategies Program, Small Health Care
-  Provider Quality Improvement Program, Rural Health Network Development Program,
-  Rur","agency":"Department of Health and Human Services","total_obs":217443058.79,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
+  Provider Quality Improvement Program, Rural Health Network Development Program","agency":"Department
+  of Health and Human Services","total_obs":217443058.79,"program_type":"assistance_listing"},{"cfda":"93.145","permalink":"/program/93.145","title":"HIV-Related
   Training and Technical Assistance","popular_name":null,"agency":"Department of Health
-  and Human Services","total_obs":213306267.88,"program_type":"assistance_listing"},{"cfda":"93.129","permalink":"/program/93.129","title":"Technical
-  and Non-Financial Assistance to Health Centers","popular_name":"State and Regional
-  Primary Care Associations (PCAs), National Training and Technical Assistance Partners
-  (NTTAPs), and Health Centered (HCCNs)","agency":"Department of Health and Human
-  Services","total_obs":156909812.65,"program_type":"assistance_listing"},{"cfda":"93.732","permalink":"/program/93.732","title":"Mental
+  and Human Services","total_obs":213306267.88,"program_type":"assistance_listing"},{"cfda":"93.129","permalink":"/program/93.129","title":"State
+  and Regional Primary Care Associations (PCAs), National Technical Assistance Programs
+  (NTAPs), and Health Centered Controlled Networks  (HCCNs)","popular_name":"State
+  and Regional Primary Care Associations (PCAs), National Technical Assistance Programs
+  (NTAPs), and Health Centered Controlled Networks (HCCNs)","agency":"Department of
+  Health and Human Services","total_obs":156909812.65,"program_type":"assistance_listing"},{"cfda":"93.732","permalink":"/program/93.732","title":"Mental
   and Behavioral Health Education and Training Grants","popular_name":"BHWET-Pro;
   BHWET-Para; BHWET-CAY; OIFSP; BHWD TA; HPSWTP; PRMHW; WRTAC","agency":"Department
   of Health and Human Services","total_obs":118297364.81,"program_type":"assistance_listing"},{"cfda":"93.530","permalink":"/program/93.530","title":"Teaching
@@ -441,8 +440,8 @@ programs: '[{"cfda":"93.210","permalink":"/program/93.210","title":"Tribal Self-
   Health Informatics & Technology Workforce Development Program  (The PHIT Workforce
   Development Program)","popular_name":"The PHIT Workforce Development Program","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.690","permalink":"/program/93.690","title":"Rural
-  Communities Opioid Response Programs","popular_name":null,"agency":"Department of
-  Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.692","permalink":"/program/93.692","title":"Rural
+  Communities Opioid Response Programs","popular_name":"Rural Communities Opioid Response
+  Programs","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.692","permalink":"/program/93.692","title":"Rural
   Health Delivery Information Systems","popular_name":null,"agency":"Department of
   Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.619","permalink":"/program/93.619","title":"Rural
   Health Limited Geographic  Areas: Delta, Appalachian Region, and Northern Border
@@ -504,9 +503,8 @@ programs: '[{"cfda":"93.210","permalink":"/program/93.210","title":"Tribal Self-
   for Demonstration Ombudsman Programs Serving Beneficiaries of State Demonstrations
   to Integrate Care for Medicare-Medicaid ","agency":"Department of Health and Human
   Services","total_obs":-98454.84,"program_type":"assistance_listing"},{"cfda":"93.178","permalink":"/program/93.178","title":"Nursing
-  Workforce Diversity","popular_name":"Nursing Workforce Diversity (NWD) Nursing Workforce
-  Diversity: Eldercare Enhancement (NWD-E2)","agency":"Department of Health and Human
-  Services","total_obs":-114895.14,"program_type":"assistance_listing"},{"cfda":"93.779","permalink":"/program/93.779","title":"Centers
+  Workforce Development","popular_name":"Nursing Workforce Development","agency":"Department
+  of Health and Human Services","total_obs":-114895.14,"program_type":"assistance_listing"},{"cfda":"93.779","permalink":"/program/93.779","title":"Centers
   for Medicare and Medicaid Services (CMS) Research, Demonstrations and Evaluations","popular_name":"(CMS
   Research)","agency":"Department of Health and Human Services","total_obs":-219674.66,"program_type":"assistance_listing"},{"cfda":"93.123","permalink":"/program/93.123","title":"Health
   Professions Pre-graduate Scholarship Program for Indians","popular_name":null,"agency":"Department
@@ -532,5 +530,5 @@ title: Healthcare Quality and Delivery
 total_num_agencies: 8
 total_num_applicant_types: 46
 total_num_programs: 140
-total_obs: 13747036684.130005
+total_obs: 13777621659.130005
 ---

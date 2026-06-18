@@ -48,7 +48,7 @@ where_used:
   permalink: /program/TC.142
   program_type: tax_expenditure
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 141687139.0
   name: Coal Mine Workers' Compensation
   permalink: /program/17.307
   program_type: assistance_listing
@@ -135,7 +135,7 @@ where_used:
   permalink: /program/TC.163
   program_type: tax_expenditure
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 3397934526.0
   name: Energy Employees Occupational Illness Compensation
   permalink: /program/17.310
   program_type: assistance_listing
@@ -290,7 +290,7 @@ where_used:
   permalink: /program/14.896
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 41567250.0
   name: Home Equity Conversion Mortgages
   permalink: /program/14.183
   program_type: assistance_listing
@@ -315,7 +315,7 @@ where_used:
   permalink: /program/64.031
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 93578000.0
   name: Longshore and Harbor Workers' Compensation
   permalink: /program/17.302
   program_type: assistance_listing
@@ -439,12 +439,12 @@ where_used:
   permalink: /program/21.025
   program_type: assistance_listing
 - agency: Railroad Retirement Board
-  expenditure_amount: 0.0
+  expenditure_amount: 15112000000.0
   name: Social Insurance for Railroad Workers
   permalink: /program/57.001
   program_type: assistance_listing
 - agency: Railroad Retirement Board
-  expenditure_amount: 0.0
+  expenditure_amount: 120000000.0
   name: Social Insurance for Railroad Workers
   permalink: /program/57.006
   program_type: assistance_listing
@@ -504,7 +504,7 @@ where_used:
   permalink: /program/93.579
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 44516634991.0
   name: Unemployment Insurance
   permalink: /program/17.225
   program_type: assistance_listing

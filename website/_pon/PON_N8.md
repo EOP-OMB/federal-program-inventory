@@ -12,6 +12,11 @@ permalink: /pon/PON_N8
 title: Improve Compliance with Trade Standards and Metrology Practices
 where_used:
 - agency: Department of Commerce
+  expenditure_amount: 250000.0
+  name: Measurement Science and Standards Engagement
+  permalink: /program/11.055
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 5493400.0
   name: Weights and Measures Service
   permalink: /program/11.606

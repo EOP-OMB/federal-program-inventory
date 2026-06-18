@@ -49,7 +49,7 @@ where_used:
   permalink: /program/93.665
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 10000000.0
+  expenditure_amount: 9583300.0
   name: Farm and Ranch Stress Assistance Network Competitive Grants Program
   permalink: /program/10.525
   program_type: assistance_listing

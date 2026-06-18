@@ -13,6 +13,11 @@ where_used:
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
   name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
   permalink: /program/19.018
   program_type: assistance_listing
@@ -27,7 +32,7 @@ where_used:
   permalink: /program/97.149
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 23282000.0
   name: Temporary Labor Certification for Foreign Workers
   permalink: /program/17.273
   program_type: assistance_listing

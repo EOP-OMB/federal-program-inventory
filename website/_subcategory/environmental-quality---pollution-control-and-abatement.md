@@ -1,50 +1,50 @@
 ---
 agencies: '[{"title":"Environmental Protection Agency","total_num_programs":75,"total_obs":17198987229.989998},{"title":"Department
-  of Energy","total_num_programs":11,"total_obs":2089536910.23},{"title":"Department
+  of Energy","total_num_programs":11,"total_obs":2093646910.23},{"title":"Department
   of the Interior","total_num_programs":27,"total_obs":1702299057.65},{"title":"Department
   of Commerce","total_num_programs":8,"total_obs":190564857.55},{"title":"Department
-  of Agriculture","total_num_programs":10,"total_obs":121622855.8},{"title":"Department
-  of Transportation","total_num_programs":14,"total_obs":49168810.690000005},{"title":"Department
+  of Agriculture","total_num_programs":10,"total_obs":121622815.36},{"title":"Department
+  of Transportation","total_num_programs":14,"total_obs":48355398.38},{"title":"Department
   of Defense","total_num_programs":2,"total_obs":39826938.95},{"title":"Department
   of Health and Human Services","total_num_programs":2,"total_obs":22689629.41}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":69},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":62},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":55},{"title":"State","total_num_programs":47},{"title":"Nonprofit
-  Organization","total_num_programs":42},{"title":"Other","total_num_programs":24},{"title":"Local","total_num_programs":20},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":20},{"title":"Public
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":70},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":63},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":55},{"title":"State","total_num_programs":46},{"title":"Nonprofit
+  Organization","total_num_programs":42},{"title":"Other","total_num_programs":25},{"title":"Local","total_num_programs":21},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":19},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":19},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":17},{"title":"Municipality or Township government
+  hospitals)","total_num_programs":18},{"title":"Municipality or Township government
   (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":17},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":16},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":16},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":16},{"title":"Interstate
-  Organization","total_num_programs":14},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":14},{"title":"Tribal","total_num_programs":11},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":10},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":9},{"title":"Profit organization","total_num_programs":9},{"title":"Not-for-Profit
-  Organization","total_num_programs":8},{"title":"Other public institution/organization","total_num_programs":8},{"title":"Unrestricted
-  by Entity Type","total_num_programs":8},{"title":"For-Profit Organization","total_num_programs":7},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Federal","total_num_programs":6},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":5},{"title":"U.S. Territories
-  and possessions","total_num_programs":5},{"title":"Territorial","total_num_programs":4},{"title":"Interstate","total_num_programs":3},{"title":"Other
-  Special Disctrict Government","total_num_programs":3},{"title":"Other private institutions/organizations","total_num_programs":3},{"title":"U.S.
-  Federal Government","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
+  with geographic regional control and authority)","total_num_programs":16},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":16},{"title":"Other Local
+  Government Consortium, Regional Organization (Intrastate), or Other Local Government
+  Combination","total_num_programs":16},{"title":"Interstate Organization","total_num_programs":14},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":14},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":13},{"title":"Tribal","total_num_programs":12},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":10},{"title":"Unrestricted
+  by Entity Type","total_num_programs":10},{"title":"Native American Organizations
+  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":9},{"title":"Not-for-Profit
+  Organization","total_num_programs":8},{"title":"Other public institution/organization","total_num_programs":8},{"title":"Profit
+  organization","total_num_programs":8},{"title":"For-Profit Organization","total_num_programs":7},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":6},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":5},{"title":"Federal","total_num_programs":5},{"title":"Territorial","total_num_programs":5},{"title":"U.S.
+  Territories and possessions","total_num_programs":5},{"title":"Interstate","total_num_programs":3},{"title":"Other
+  Special Disctrict Government","total_num_programs":3},{"title":"U.S. Federal Government","total_num_programs":3},{"title":"Anyone/general
+  public","total_num_programs":2},{"title":"Department or Agency of a U.S. Territorial
+  Government","total_num_programs":2},{"title":"Other private institutions/organizations","total_num_programs":2},{"title":"Small
   business (less than 500 employees)","total_num_programs":2},{"title":"Special District
   Government","total_num_programs":2},{"title":"City or Township Government","total_num_programs":1},{"title":"County
   Government","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Government
   - General","total_num_programs":1},{"title":"Indian/Native American Tribally Designated
-  Organization","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Nonprofit with 501C3 IRS Status (Other
-  than Institution of Higher Education)","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Port
-  Authority","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"School
-  District","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"Tribally
-  Designated Housing Authority","total_num_programs":1}]'
+  Organization","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"International
+  Organization","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
+  (specify)","total_num_programs":1},{"title":"Port Authority","total_num_programs":1},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"School
+  District Government","total_num_programs":1},{"title":"Small Business Person","total_num_programs":1},{"title":"Sponsored
+  organization","total_num_programs":1},{"title":"Tribally Designated Housing Authority","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -262,7 +262,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Finance Center Grants","popular_name":"EFC Grant Program","agency":"Environmental
   Protection Agency","total_obs":60375077.0,"program_type":"assistance_listing"},{"cfda":"10.707","permalink":"/program/10.707","title":"Research
   Joint Venture Agreement","popular_name":"Research Joint Venture","agency":"Department
-  of Agriculture","total_obs":56601803.28,"program_type":"assistance_listing"},{"cfda":"15.808","permalink":"/program/15.808","title":"U.S.
+  of Agriculture","total_obs":56601762.84,"program_type":"assistance_listing"},{"cfda":"15.808","permalink":"/program/15.808","title":"U.S.
   Geological Survey Research and Data Collection","popular_name":null,"agency":"Department
   of the Interior","total_obs":54859972.59,"program_type":"assistance_listing"},{"cfda":"66.419","permalink":"/program/66.419","title":"Water
   Pollution Control State, Interstate, and Tribal Program Support","popular_name":"Section
@@ -287,7 +287,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Materials Emergency Preparedness Training and PlanningGrants (HMEP), Hazardous Materials
   Instructor Training Grants (HMIT), Supplemental Public Sector Training Grants (SPST),
   Assistance for Local Emergency Response Training Grants (ALERT), Community Safety
-  Grants (CS)","agency":"Department of Transportation","total_obs":32237333.25,"program_type":"assistance_listing"},{"cfda":"11.999","permalink":"/program/11.999","title":"Marine
+  Grants (CS)","agency":"Department of Transportation","total_obs":31331153.94,"program_type":"assistance_listing"},{"cfda":"11.999","permalink":"/program/11.999","title":"Marine
   Debris Program","popular_name":null,"agency":"Department of Commerce","total_obs":29988745.0,"program_type":"assistance_listing"},{"cfda":"66.804","permalink":"/program/66.804","title":"Underground
   Storage Tank (UST) Prevention, Detection, and Compliance Program","popular_name":"UST
   Prevention, Detection and Compliance Program","agency":"Environmental Protection
@@ -301,7 +301,9 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Grants for Wastewater Treatment Works","popular_name":"Title II Construction Grants
   Program","agency":"Environmental Protection Agency","total_obs":21355807.0,"program_type":"assistance_listing"},{"cfda":"10.728","permalink":"/program/10.728","title":"Inflation
   Reduction Act Hazardous Fuels Transportation Assistance","popular_name":"Hazardous
-  Fuels Transportation Assistance","agency":"Department of Agriculture","total_obs":19925439.0,"program_type":"assistance_listing"},{"cfda":"11.459","permalink":"/program/11.459","title":"Weather
+  Fuels Transportation Assistance","agency":"Department of Agriculture","total_obs":19925439.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
+  and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
+  of Energy","total_obs":18878135.22,"program_type":"assistance_listing"},{"cfda":"11.459","permalink":"/program/11.459","title":"Weather
   and Air Quality Research","popular_name":"NOAA OAR Weather Program Office","agency":"Department
   of Commerce","total_obs":17738020.0,"program_type":"assistance_listing"},{"cfda":"15.820","permalink":"/program/15.820","title":"National
   and Regional Climate Adaptation Science Centers","popular_name":"NRCASC","agency":"Department
@@ -311,9 +313,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Remediation and Waste Processing and Disposal","popular_name":"Environmental Management","agency":"Department
   of Energy","total_obs":15479758.85,"program_type":"assistance_listing"},{"cfda":"66.708","permalink":"/program/66.708","title":"Pollution
   Prevention Grants Program","popular_name":"P2 Grant Program","agency":"Environmental
-  Protection Agency","total_obs":14993585.0,"program_type":"assistance_listing"},{"cfda":"81.108","permalink":"/program/81.108","title":"Epidemiology
-  and Other Health Studies Financial Assistance Program","popular_name":"Health Studies","agency":"Department
-  of Energy","total_obs":14768135.22,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
+  Protection Agency","total_obs":14993585.0,"program_type":"assistance_listing"},{"cfda":"66.958","permalink":"/program/66.958","title":"Water
   Infrastructure Finance and Innovation (WIFIA)","popular_name":"WIFIA","agency":"Environmental
   Protection Agency","total_obs":13671084.98,"program_type":"assistance_listing"},{"cfda":"81.136","permalink":"/program/81.136","title":"Long-Term
   Surveillance and Maintenance","popular_name":null,"agency":"Department of Energy","total_obs":12529968.13,"program_type":"assistance_listing"},{"cfda":"66.045","permalink":"/program/66.045","title":"Clean
@@ -327,7 +327,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Monitoring Program","agency":"Environmental Protection Agency","total_obs":10667169.0,"program_type":"assistance_listing"},{"cfda":"15.041","permalink":"/program/15.041","title":"Environmental
   Management Indian","popular_name":null,"agency":"Department of the Interior","total_obs":10415315.31,"program_type":"assistance_listing"},{"cfda":"20.700","permalink":"/program/20.700","title":"Pipeline
   Safety Program State Base Grant","popular_name":"Pipeline Safety Program State Base
-  Grant","agency":"Department of Transportation","total_obs":9671532.0,"program_type":"assistance_listing"},{"cfda":"15.616","permalink":"/program/15.616","title":"Clean
+  Grant","agency":"Department of Transportation","total_obs":9664299.0,"program_type":"assistance_listing"},{"cfda":"15.616","permalink":"/program/15.616","title":"Clean
   Vessel Act","popular_name":"CVA","agency":"Department of the Interior","total_obs":9232765.35,"program_type":"assistance_listing"},{"cfda":"15.441","permalink":"/program/15.441","title":"Safety
   and Environmental Research and Data Collection for Offshore Energy and Mineral Activities","popular_name":"OESI
   (Ocean Energy Safety Institute)","agency":"Department of the Interior","total_obs":9232657.19,"program_type":"assistance_listing"},{"cfda":"81.258","permalink":"/program/81.258","title":"Glovebox
@@ -401,11 +401,11 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Legacy Cleanup Program","popular_name":"(Consultation and Cooperation Financial
   Assistance)","agency":"Department of Energy","total_obs":1990155.0,"program_type":"assistance_listing"},{"cfda":"15.684","permalink":"/program/15.684","title":"White-nose
   Syndrome National Response Implementation","popular_name":null,"agency":"Department
-  of the Interior","total_obs":1965125.49,"program_type":"assistance_listing"},{"cfda":"66.473","permalink":"/program/66.473","title":"Direct
-  Implementation Tribal Cooperative Agreements","popular_name":"DITCA","agency":"Environmental
-  Protection Agency","total_obs":1835063.0,"program_type":"assistance_listing"},{"cfda":"20.710","permalink":"/program/20.710","title":"Technical
+  of the Interior","total_obs":1965125.49,"program_type":"assistance_listing"},{"cfda":"20.710","permalink":"/program/20.710","title":"Technical
   Assistance Grants","popular_name":"Information Grants to Communities- Technical
-  Assistance Grants","agency":"Department of Transportation","total_obs":1788819.09,"program_type":"assistance_listing"},{"cfda":"66.813","permalink":"/program/66.813","title":"Alternative
+  Assistance Grants","agency":"Department of Transportation","total_obs":1888819.09,"program_type":"assistance_listing"},{"cfda":"66.473","permalink":"/program/66.473","title":"Direct
+  Implementation Tribal Cooperative Agreements","popular_name":"DITCA","agency":"Environmental
+  Protection Agency","total_obs":1835063.0,"program_type":"assistance_listing"},{"cfda":"66.813","permalink":"/program/66.813","title":"Alternative
   or Innovative Treatment Technology Research, Demonstration, Training, and Hazardous
   Substance Research Grants","popular_name":null,"agency":"Environmental Protection
   Agency","total_obs":1659484.0,"program_type":"assistance_listing"},{"cfda":"11.457","permalink":"/program/11.457","title":"Chesapeake
@@ -440,13 +440,7 @@ programs: '[{"cfda":"66.458","permalink":"/program/66.458","title":"Clean Water 
   Assistance Support for Services to the Regulated Community and Other Assistance
   Providers","popular_name":"Compliance Assistance Centers","agency":"Environmental
   Protection Agency","total_obs":340000.0,"program_type":"assistance_listing"},{"cfda":"11.455","permalink":"/program/11.455","title":"Marine
-  Education","popular_name":"Cooperative Marine Education and Research Programs (CMER);
-  Joint\r\nInstitute for Marine Observation (JIMO); Cooperative Unit of Fisheries\r\nEducation
-  and Research (CUFER); Cooperative Institute of Fishery\r\nOceanography (CIFO); Cooperative
-  Education and Research Program (CERP);\r\nCooperative Institute Agreement (CIA);
-  Cooperative Institute for Marine\r\nResources Studies (CIMRS); Cooperative Institute
-  for Marine and\r\nAtmospheric Studies (CIMAS); and Cooperative Institute for Arctic\r\nResearch
-  (CIFAR); Joint Institute for the Study of the Atmosphere and\r\nOceans (JISAO).","agency":"Department
+  Education and Training","popular_name":"Marine Education Program","agency":"Department
   of Commerce","total_obs":254215.0,"program_type":"assistance_listing"},{"cfda":"66.510","permalink":"/program/66.510","title":"Surveys,
   Studies, Investigations and Special Purpose Grants within the Office of Research
   and Development","popular_name":"Not applicable","agency":"Environmental Protection
@@ -527,5 +521,5 @@ title: Pollution Control and Abatement
 total_num_agencies: 8
 total_num_applicant_types: 66
 total_num_programs: 149
-total_obs: 21414696290.27
+total_obs: 21417992837.52
 ---

@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Payment of Interest on Treasury Debt securities
   permalink: /gwo/GWO_GG2
-headline_amount: 519952055249.0
+headline_amount: 1230678756444.0
 improper_payments: []
 improper_payments_is_multiple: false
 improper_payments_percent: 0
@@ -28,7 +28,7 @@ objective: The federal government is charged interest for the use of lenders’ 
   How much the government pays in interest depends on the total national debt and
   the various securities’ interest rates.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":717611112579.0,"forgone_revenue":0.0},{"x":"2023","outlays":879306558151.0,"forgone_revenue":0.0},{"x":"2024","outlays":1133036890149.0,"forgone_revenue":0.0},{"x":"2025","outlays":1215613829754.0,"forgone_revenue":0.0},{"x":"2026","outlays":519952055249.0,"forgone_revenue":0.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":717611112579.0,"forgone_revenue":0.0},{"x":"2023","outlays":879306558151.0,"forgone_revenue":0.0},{"x":"2024","outlays":1133036890149.0,"forgone_revenue":0.0},{"x":"2025","outlays":1215613829754.0,"forgone_revenue":0.0},{"x":"2026","outlays":1230678756444.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/IN.001.html
 pons:

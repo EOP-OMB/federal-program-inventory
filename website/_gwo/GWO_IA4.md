@@ -8,7 +8,7 @@ permalink: /gwo/GWO_IA4
 title: Strengthen Diplomatic Relations
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 350000.0
   name: 100,000 Strong in the Americas Innovation Fund
   permalink: /program/19.777
   program_type: assistance_listing
@@ -18,7 +18,7 @@ where_used:
   permalink: /program/19.225
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 5262000.0
   name: Assessed Contributions for State Department
   permalink: /program/19.707
   program_type: assistance_listing
@@ -54,7 +54,7 @@ where_used:
   permalink: /program/19.121
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 192300000.0
   name: Contributions to International Organizations- CIO
   permalink: /program/19.790
   program_type: assistance_listing

@@ -148,7 +148,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 116806376.0
-  name: Pacific Coast Salmon Recovery
+  name: Pacific Coast Salmon Recovery Fund
   permalink: /program/11.045
   program_type: assistance_listing
 - agency: Department of the Interior

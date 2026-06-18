@@ -16,7 +16,7 @@ where_used:
   permalink: /program/15.011
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 389000000.0
   name: Senior Community Service Employment Program
   permalink: /program/17.235
   program_type: assistance_listing

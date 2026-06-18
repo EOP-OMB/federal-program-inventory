@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Deactivate all tabs
     tabButtons.forEach(tab => {
       tab.setAttribute('aria-selected', 'false');
-      tab.setAttribute('tabindex', '-1');
+      tab.setAttribute('tabindex', '0');
       tab.classList.remove('border-ink', 'text-ink', 'text-bold');
-      tab.classList.add('border-transparent', 'text-base');
+      tab.classList.add('border-transparent', 'tab-nav');
     });
     
     // Hide all panels
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Activate target tab
     targetTab.setAttribute('aria-selected', 'true');
     targetTab.setAttribute('tabindex', '0');
-    targetTab.classList.remove('border-transparent', 'text-base');
+    targetTab.classList.remove('border-transparent', 'tab-nav');
     targetTab.classList.add('border-ink', 'text-ink', 'text-bold');
     
     // Show target panel

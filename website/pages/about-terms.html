@@ -27,9 +27,9 @@ permalink: /about/terms
       </p>
       <ul>
         <li>SAM.gov assistance listings: {{ site.data.constants_global_dates.SAMGOV_ASSISTANCE_LISTINGS_DATE }}</li>
-        <li>USASpending.gov transaction data: {{ site.data.constants_global_dates.SAMGOV_ASSISTANCE_LISTINGS_DATE }}</li>
+        <li>USASpending.gov transaction data: {{ site.data.constants_global_dates.USASPENDING_TRANSACTION_DATE }}</li>
         <li>Treasury.gov tax expenditures: {{ site.data.constants_global_dates.TREASURYGOV_TAX_EXPEND_DATE }}</li>
-        <li>PaymentAccuracy.gov improper payment data: September 30, {{ site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR }}</li>
+        <li>PaymentAccuracy.gov improper payment data: September 30, {{ site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE }}</li>
       </ul>
       <p>
         OMB also drew from other publicly available Federal Government websites to gather select program-related
@@ -208,20 +208,20 @@ permalink: /about/terms
           <table class="usa-table">
             <tbody class="text-base-dark">
               <tr>
-                <th></th>
-                <th></th>
-                <th colspan="4">
+                <td></td>
+                <td></td>
+                <th scope="colgroup" colspan="4">
                   <span class="text-bold">Obligation Value</span><br />
                   Enter whole dollar amount.
                 </th>
               </tr>
               <tr>
-                <th><span class="text-bold">Assistance Type / Salaries and Expenses</span></th>
-                <th><span class="text-bold">This is a Recovery and Reinvestment Act Obligation</span></th>
-                <th></th>
-                <th><span class="text-bold">Past Fiscal Year (20YY) Actual</span></th>
-                <th><span class="text-bold">Current Fiscal Year (20YY) Estimate</span></th>
-                <th><span class="text-bold">Budget Fiscal Year (20YY) Estimate</span></th>
+                <th scope="col"><span class="text-bold">Assistance Type / Salaries and Expenses</span></th>
+                <th scope="col"><span class="text-bold">This is a Recovery and Reinvestment Act Obligation</span></th>
+                <th scope="col"><span class="usa-sr-only">Reason selection column</span></th>
+                <th scope="col"><span class="text-bold">Past Fiscal Year (20YY) Actual</span></th>
+                <th scope="col"><span class="text-bold">Current Fiscal Year (20YY) Estimate</span></th>
+                <th scope="col"><span class="text-bold">Budget Fiscal Year (20YY) Estimate</span></th>
               </tr>
               <tr>
                 <td rowspan="2"></td>

@@ -93,7 +93,7 @@ where_used:
   permalink: /program/85.002
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 7000000.0
   name: Middle East Regional Cooperation Program
   permalink: /program/19.502
   program_type: assistance_listing

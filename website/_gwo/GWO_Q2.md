@@ -19,7 +19,7 @@ where_used:
   permalink: /program/15.620
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 508533.0
+  expenditure_amount: 387676.0
   name: Alaska Migratory Bird Co-Management Council
   permalink: /program/15.643
   program_type: assistance_listing
@@ -221,12 +221,12 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 116806376.0
-  name: Pacific Coast Salmon Recovery
+  name: Pacific Coast Salmon Recovery Fund
   permalink: /program/11.045
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Pacific Coast Salmon Recovery Pacific Salmon Treaty Program
+  expenditure_amount: 39169877.0
+  name: Pacific Salmon Treaty Program
   permalink: /program/11.438
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -301,8 +301,8 @@ where_used:
   permalink: /program/15.639
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Unallied Management Projects
+  expenditure_amount: 5460000.0
+  name: Unallied Projects
   permalink: /program/11.454
   program_type: assistance_listing
 - agency: Department of the Interior

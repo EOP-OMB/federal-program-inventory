@@ -14,7 +14,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0
-  name: Comprehensive Opioid, Stimulant, and other Substances Use Program
+  name: Comprehensive Opioid, Stimulant, and Substance Use Program
   permalink: /program/16.838
   program_type: assistance_listing
 - agency: Department of Justice

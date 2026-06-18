@@ -16,7 +16,7 @@ where_used:
   permalink: /program/14.138
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 122000000.0
   name: Multifamily Housing Service Coordinators
   permalink: /program/14.191
   program_type: assistance_listing

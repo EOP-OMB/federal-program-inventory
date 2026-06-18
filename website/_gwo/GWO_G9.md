@@ -33,13 +33,13 @@ where_used:
   permalink: /program/54.001
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1909715.0
+  expenditure_amount: 2800000.0
   name: Resident Instruction, Agriculture, and Food Science Facilities and Equipment
     Grants
   permalink: /program/10.308
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 701235.0
+  expenditure_amount: 750000.0
   name: Secondary Education, Two-Year Postsecondary Education, and Agriculture in
     the K-12 Classroom
   permalink: /program/10.226

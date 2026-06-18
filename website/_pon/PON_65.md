@@ -80,6 +80,11 @@ where_used:
   name: Family Smoking Prevention and Tobacco Control Act Regulatory Research
   permalink: /program/93.678
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 700000.0
+  name: HHS OIG Hotline
+  permalink: /program/93.A92
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 9200000.0
   name: Incentive Grant Program to Prohibit Racial Profiling
@@ -99,6 +104,11 @@ where_used:
   expenditure_amount: 474000000.0
   name: Metropolitan Planning Program (MPP)
   permalink: /program/20.275
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 0.0
@@ -151,7 +161,7 @@ where_used:
   permalink: /program/96.007
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 65939749.0
   name: State Energy Program
   permalink: /program/81.041
   program_type: assistance_listing

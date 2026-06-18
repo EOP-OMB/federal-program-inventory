@@ -22,7 +22,7 @@ where_used:
   permalink: /program/10.174
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1827495.0
+  expenditure_amount: 1805070.0
   name: Agricultural Genome to Phenome Initiative
   permalink: /program/10.332
   program_type: assistance_listing
@@ -57,7 +57,7 @@ where_used:
   permalink: /program/10.310
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3702297.0
+  expenditure_amount: 3702485.0
   name: Alfalfa Seed and Alfalfa Forage Systems Program
   permalink: /program/10.330
   program_type: assistance_listing
@@ -77,12 +77,12 @@ where_used:
   permalink: /program/10.621
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 3000000.0
   name: Biomass Research and Development Initiative Competitive Grants Program (BRDI)
   permalink: /program/10.312
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Biotechnology Risk Assessment Research
   permalink: /program/10.219
   program_type: assistance_listing
@@ -122,7 +122,7 @@ where_used:
   permalink: /program/10.176
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 28000000.0
+  expenditure_amount: 23088858.0
   name: Emergency Citrus Disease Research and Extension Program
   permalink: /program/10.247
   program_type: assistance_listing
@@ -162,12 +162,12 @@ where_used:
   permalink: /program/10.238
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 4883633.0
   name: Institute of Rural Partnerships (GP 778)
   permalink: /program/10.241
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7918012.0
+  expenditure_amount: 10000000.0
   name: Integrated Programs
   permalink: /program/10.303
   program_type: assistance_listing
@@ -177,7 +177,7 @@ where_used:
   permalink: /program/10.305
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 440115.0
+  expenditure_amount: 465000.0
   name: Laying Hen and Turkey Research Program
   permalink: /program/10.245
   program_type: assistance_listing
@@ -197,7 +197,7 @@ where_used:
   permalink: /program/10.700
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 125000.0
+  expenditure_amount: 160200.0
   name: National Food and Agricultural Sciences Teaching, Extension, and Research
     Awards
   permalink: /program/10.279
@@ -213,12 +213,12 @@ where_used:
   permalink: /program/10.233
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 44248068.0
+  expenditure_amount: 66161418.0
   name: Organic Agriculture Research and Extension Initiative
   permalink: /program/10.307
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 83070765.0
+  expenditure_amount: 83053575.0
   name: Payments to 1890 Land-Grant Colleges and Tuskegee University
   permalink: /program/10.205
   program_type: assistance_listing
@@ -233,12 +233,12 @@ where_used:
   permalink: /program/10.031
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4673856.0
   name: Regional Aquaculture Center Program
   permalink: /program/10.271
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4673856.0
   name: Regional Aquaculture Center Program
   permalink: /program/10.271
   program_type: assistance_listing
@@ -278,7 +278,7 @@ where_used:
   permalink: /program/11.435
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2000000.0
+  expenditure_amount: 1813840.0
   name: Special Research Grants Program Aquaculture Research
   permalink: /program/10.343
   program_type: assistance_listing
@@ -288,12 +288,12 @@ where_used:
   permalink: /program/10.170
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 159653129.0
+  expenditure_amount: 159000000.0
   name: Specialty Crop Research Initiative
   permalink: /program/10.309
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2801160.0
+  expenditure_amount: 3000000.0
   name: Sun Grant Program
   permalink: /program/10.320
   program_type: assistance_listing

@@ -88,11 +88,6 @@ where_used:
   name: Federal Loan Guarantees for Innovative Energy Technologies
   permalink: /program/81.126
   program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Fisheries Promotion, Marketing and Development
-  permalink: /program/11.427
-  program_type: assistance_listing
 - agency: Small Business Administration
   expenditure_amount: 0.0
   name: Growth Accelerator Fund Competition
@@ -172,6 +167,11 @@ where_used:
   expenditure_amount: 220000000.0
   name: Regional Technology and Innovation Hubs
   permalink: /program/11.039
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 6037500.0
+  name: Saltonstall Kennedy Program
+  permalink: /program/11.427
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
   expenditure_amount: 19688515.0

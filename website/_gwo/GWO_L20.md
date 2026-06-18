@@ -160,6 +160,12 @@ where_used:
   permalink: /program/93.066
   program_type: assistance_listing
 - agency: Department of Health and Human Services
+  expenditure_amount: 153307000.0
+  name: State and Regional Primary Care Associations (PCAs), National Technical Assistance
+    Programs (NTAPs), and Health Centered Controlled Networks  (HCCNs)
+  permalink: /program/93.129
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
   expenditure_amount: 1.0
   name: Strengthening Emergency Care Delivery in the United States Healthcare System
     through Health Information and Promotion
@@ -170,11 +176,6 @@ where_used:
   name: Strengthening the Nation's Public Health System through a National Voluntary
     Accreditation Program for State, Tribal, Local and Territorial Health Departments
   permalink: /program/93.097
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
-  expenditure_amount: 153160000.0
-  name: Technical and Non-Financial Assistance to Health Centers
-  permalink: /program/93.129
   program_type: assistance_listing
 - agency: Department of Health and Human Services
   expenditure_amount: 385000.0

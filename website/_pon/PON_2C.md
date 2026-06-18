@@ -16,6 +16,11 @@ where_used:
   name: Coronavirus Capital Projects Fund
   permalink: /program/21.029
   program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 700000.0
+  name: HHS OIG Hotline
+  permalink: /program/93.A92
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 474000000.0
   name: Metropolitan Planning Program (MPP)

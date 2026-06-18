@@ -24,7 +24,7 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
   expenditure_amount: 1292486.0
-  name: Green and Resilient Retrofit Program
+  name: GRRP
   permalink: /program/14.021
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
@@ -88,7 +88,7 @@ where_used:
   permalink: /program/14.856
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 14000000.0
   name: Manufactured Housing
   permalink: /program/14.171
   program_type: assistance_listing
@@ -98,7 +98,7 @@ where_used:
   permalink: /program/87.003
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 2628804.0
   name: Property Improvement Loan Insurance for Improving All Existing Structures
     and Building of New Nonresidential Structures
   permalink: /program/14.142
@@ -109,7 +109,7 @@ where_used:
   permalink: /program/14.914
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 378294070.0
   name: Rehabilitation Mortgage Insurance
   permalink: /program/14.108
   program_type: assistance_listing
