@@ -17,6 +17,16 @@ ENV http_proxy=$http_proxy \
 ENV NODE_VERSION=18.17.1
 ENV NVM_DIR=/root/.nvm
 ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
+ENV http_proxy=$http_proxy \
+    https_proxy=$https_proxy \
+    no_proxy=$no_proxy \
+    HTTP_PROXY=$http_proxy \
+    HTTPS_PROXY=$https_proxy \
+    NO_PROXY=$no_proxy
 
 WORKDIR /app
 COPY ./Gemfile /app/Gemfile
