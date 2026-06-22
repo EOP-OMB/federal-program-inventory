@@ -1,0 +1,61 @@
+{% comment %}
+  Reusable sortable table component
+  Parameters:
+  - data: Array of objects to display in table
+  - columns: Array of field names
+  - labels: Array of column labels
+  - widths: Array of column widths
+  - alignments: Array of column alignments (left/right)
+  - types: Array of column types (text/currency)
+  - bold: Array of boolean strings for bold styling
+  - show_total: Boolean to show total row
+  - total_value: Value to display in total row (if show_total is true)
+  - clickable: Boolean to make rows clickable
+  - permalink_field: Field name for row links (if clickable is true)
+{% endcomment %}
+
+  <table class="usa-table usa-table--borderless width-full text-left usa-table--numeric-right" data-sortable-table>
+    <thead class="usa-table__head position-sticky top-0" style="z-index: 10;">
+      <tr>
+        {% for column in include.columns %}
+        <th scope="col" class="padding-y-2 {% if forloop.first %}padding-left-0 padding-right-2{% elsif forloop.last %}padding-left-2 padding-right-0{% else %}padding-x-2{% endif %} text-bold{% if include.alignments[forloop.index0] == 'right' %} text-right{% endif %}" style="{% if include.widths[forloop.index0] %}width: {{ include.widths[forloop.index0] }};{% endif %}{% if include.alignments[forloop.index0] == 'right' %} white-space: nowrap;{% endif %}{% if forloop.last %} padding-right: 0 !important;{% endif %} border-bottom: 2px solid #1b1b1b; cursor: pointer;" data-sortable data-column-type="{{ include.types[forloop.index0] }}" data-sort-direction="none">
+          <div class="display-flex flex-align-center {% if include.alignments[forloop.index0] == 'right' %}flex-justify-end{% endif %} gap-05">
+            {{ include.labels[forloop.index0] }}
+            <svg viewBox="0 0 10 10" class="width-105 height-105 text-base-light margin-left-1" style="transform: rotate(180deg); transition: transform 0.2s;" aria-hidden="true">
+              <path d="M5 1 L9 8 L1 8 Z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in include.data %}
+      <tr class="border-bottom-1px border-base-lighter {% if include.clickable %}cursor-pointer{% endif %}" style="transition: background-color 0.2s;{% if include.clickable and include.permalink_field %} cursor: pointer;{% endif %}" {% if include.clickable and include.permalink_field %}onclick="window.location.href='{{ item[include.permalink_field] }}'"{% endif %}>
+        {% for column in include.columns %}
+        <td class="padding-y-2 {% if forloop.first %}padding-left-0 padding-right-2{% elsif forloop.last %}padding-left-2 padding-right-0{% else %}padding-x-2{% endif %}{% if include.alignments[forloop.index0] == 'right' %} text-right{% endif %} {% if include.bold[forloop.index0] == 'true' %}text-bold{% endif %}{% if forloop.first or forloop.last %} text-ink{% else %} text-base-darker{% endif %}"{% if include.alignments[forloop.index0] == 'right' or forloop.last %} style="{% if include.alignments[forloop.index0] == 'right' %}white-space: nowrap;{% endif %}{% if forloop.last %} padding-right: 0 !important;{% endif %}"{% endif %}{% if include.types[forloop.index0] == 'currency' %} data-dollar-amount="{{ item[column] }}"{% endif %}>
+          {% if include.types[forloop.index0] == 'currency' %}
+            ${{ item[column] }}
+          {% else %}
+            {{ item[column] }}
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+      
+      {% if include.show_total %}
+      <tr class="border-top-2px border-ink" data-total-row>
+        {% for column in include.columns %}
+        <td class="padding-y-2 {% if forloop.first %}padding-left-0 padding-right-2{% elsif forloop.last %}padding-left-2 padding-right-0{% else %}padding-x-2{% endif %}{% if include.alignments[forloop.index0] == 'right' %} text-right{% endif %} text-ink"{% if include.alignments[forloop.index0] == 'right' or forloop.last %} style="{% if include.alignments[forloop.index0] == 'right' %}white-space: nowrap;{% endif %}{% if forloop.last %} padding-right: 0 !important;{% endif %}"{% endif %}{% if include.types[forloop.index0] == 'currency' and forloop.last %} data-dollar-amount="{{ include.total_value }}"{% endif %}>
+          {% if forloop.first %}
+            Total
+          {% elsif forloop.last and include.types[forloop.index0] == 'currency' %}
+            ${{ include.total_value }}
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>

@@ -1,15 +1,35 @@
 ---
 agency: Department of the Treasury
+agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
-- Tax Expenditures - Health
+- Health - Healthcare Access
 cfda: TC.139
-fiscal_year: '2024'
+fiscal_year: '2025'
 grants_url: null
+gwo:
+  gwo: Strengthen Healthcare Services
+  permalink: /gwo/GWO_L14
+headline_amount: 460000000.0
+improper_payments:
+- agency: TREASURY
+  end_date: ''
+  fiscal_year: 2025
+  improper_payments: 0.0
+  insufficient_payment: 0.0
+  name: Special Blue Cross/Blue Shield tax benefits
+  outlays: 0.0
+  slug: null
+  start_date: ''
+improper_payments_is_multiple: false
+improper_payments_percent: 0.0
+improper_payments_related_programs: []
+improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
+improper_payments_total: 0.0
 is_subpart_f: null
 layout: program
 objective: The baseline tax system generally would tax all profits under the regular
@@ -22,13 +42,18 @@ objective: The baseline tax system generally would tax all profits under the reg
   is not less than 85 percent for the taxable year. A qualifying insurer may take
   as a deduction 100 percent of any net increase in its unearned premium reserves,
   instead of the 80 percent allowed other insurers. A qualifying insurer is also allowed
-  a special deduction equal to the amount by which 25 percent of its health-claim
-  expenses exceeds its beginning-of-the-year accounting surplus. The deduction is
+  a special deduction equal to the amount by which 25 percent of its health claim
+  expenses exceeds its beginning of the year accounting surplus. The deduction is
   limited to the insurer’s taxable income determined without the special deduction.
 obligations: null
-other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0}]'
+other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":320000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":420000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":440000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":460000000.0}]'
 outlays: null
 permalink: /program/TC.139.html
+pons:
+- permalink: /pon/PON_872
+  pon: Improve Comprehensive Healthcare Utilization
+- permalink: /pon/PON_N68
+  pon: Increase Affordable Health Coverage
 popular_name: ''
 program_type: tax_expenditure
 results: []

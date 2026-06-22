@@ -1,0 +1,69 @@
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar" style="margin-bottom: -0.5rem">
+      <div class="usa-logo display-flex" id="basic-logo">
+        <a href="/" title="Federal Program Inventory" class="display-flex" style="align-items: flex-end;">
+          <img src="/assets/img/OMBlogo.svg" alt="OMB Logo" class="homepage-fpi-logo"/>
+          <h1 class="text-bold font-heading-md tablet:font-body-xl margin-0">
+            FPI
+          </h1>
+          <span class="font-heading-xs home-link">
+            Federal Program Inventory
+          </span>
+        </a>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
+    </div>
+    
+    <nav role="navigation" class="usa-nav">
+      <button type="button" class="usa-nav__close">
+        <img src="/assets/img/sprite.svg#close" role="img" alt="Close"/>
+      </button>
+
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a href="/search" class="usa-nav__link">
+            <span>Program search</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="/category" class="usa-nav__link">
+            <span>Explore FY {{ site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR }} spending</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link custom-accordion-button"
+            aria-expanded="false"
+            aria-controls="extended-mega-nav-section-two"
+          >
+            <span>About the FPI</span>
+          </button>
+          <div
+            id="extended-mega-nav-section-two"
+            class="usa-nav__submenu"
+          >
+            <div class="grid-row horizontal-submenu">
+              <div class="usa-col margin-left-2">
+                <ul class="usa-nav__submenu-list">
+                  <li class="usa-nav__submenu-item">
+                    <a href="/about/fpi">About the FPI</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="/about/terms">Data, Terms & Concepts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+

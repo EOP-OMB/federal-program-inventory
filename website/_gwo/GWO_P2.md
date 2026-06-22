@@ -1,0 +1,195 @@
+---
+category: Law, Justice, and Legal Services
+definition: Increasing the operational capacity and effectiveness of federal, state,
+  and local law enforcement to prevent, respond to, or recover from public safety
+  threats.
+focus_area: Law Enforcement Support
+gwo_id: GWO.P2
+permalink: /gwo/GWO_P2
+title: Ensure Law Enforcement Readiness
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Boating Safety Financial Assistance
+  permalink: /program/97.012
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Body Worn Camera Policy and Implementation
+  permalink: /program/16.835
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Bulletproof Vest Partnership Program
+  permalink: /program/16.607
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Corrections Technical Assistance/Clearinghouse
+  permalink: /program/16.603
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Corrections Training and Staff Development
+  permalink: /program/16.601
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: County of Nye, Nye County Sheriff’s Office Law Enforcement Services
+  permalink: /program/81.260
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Criminal Justice Systems
+  permalink: /program/19.703
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Criminal and Juvenile Justice and Mental Health Collaboration Program
+  permalink: /program/16.745
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Economic, High-Tech, and Cyber Crime Prevention
+  permalink: /program/16.752
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Edward Byrne Memorial Justice Assistance Grant Program
+  permalink: /program/16.738
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Emergency Law Enforcement Assistance Grant
+  permalink: /program/16.824
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Emergency Planning for Juvenile Justice Facilities
+  permalink: /program/16.823
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Fiscal Year 2025 Detention Support Grant Program
+  permalink: /program/97.158
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 625000000.0
+  name: Fédération Internationale de Football Association World Cup Grant Program
+  permalink: /program/97.160
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Harold Rogers Prescription Drug Monitoring Program
+  permalink: /program/16.754
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Improving the Investigation and Prosecution of Child Abuse and the Regional
+    and Local Children's Advocacy Centers
+  permalink: /program/16.758
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: John R.  Justice Prosecutors and Defenders Incentive Act
+  permalink: /program/16.816
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Judicial Training on Child Maltreatment for Court Personnel Juvenile Justice
+    Programs
+  permalink: /program/16.757
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 4000000.0
+  name: Law Enforcement Agreements
+  permalink: /program/10.704
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Assistance FBI Advanced Police Training
+  permalink: /program/16.300
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Assistance FBI Field Police Training
+  permalink: /program/16.302
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 10000000.0
+  name: Law Enforcement Mental Health and Wellness Act
+  permalink: /program/16.070
+  program_type: assistance_listing
+- agency: Department of Energy
+  expenditure_amount: 0.0
+  name: Law Enforcement Support of Pantex Plant
+  permalink: /program/81.279
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Matthew Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and
+    Prosecution Program
+  permalink: /program/16.040
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Missing Alzheimer's Disease Patient Assistance Program
+  permalink: /program/16.015
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 83752293.0
+  name: Missing Children's Assistance
+  permalink: /program/16.543
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: NICS Act Record Improvement Program
+  permalink: /program/16.813
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Center on Restorative Justice
+  permalink: /program/16.030
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: National Criminal History Improvement Program (NCHIP)
+  permalink: /program/16.554
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Officer Robert Wilson III Preventing Violence Against Law Enforcement Officers
+    and Ensuring Officer Resilience and Survivability (VALOR)
+  permalink: /program/16.066
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 12000000.0
+  name: Preparing for Active Shooter Situations
+  permalink: /program/16.069
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Special Data Collections and Statistical Studies
+  permalink: /program/16.734
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: State and Local Anti-Terrorism Training
+  permalink: /program/16.614
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Support for Adam Walsh Act Implementation Grant Program
+  permalink: /program/16.750
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Training to Improve Police-Based Responses to the People with Mental Illness
+  permalink: /program/16.065
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Virtual Reality De-escalation Training
+  permalink: /program/16.054
+  program_type: assistance_listing
+---

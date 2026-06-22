@@ -1,0 +1,117 @@
+---
+layout: default
+footer_include: _footer-gwo-pon.html
+---
+
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <div class="grid-col-9 margin-bottom-2">
+      <div class="text-ink margin-bottom-4 margin-top-4">
+        Program Outcome
+      </div>
+
+      <!-- Page Title -->
+      {% include components/_page-title.html display_aka=false %}
+
+      {% assign default_page_description = "Description not yet available" %}
+      {% if page.definition == "" or page.definition == nil%}
+        {% assign page_definition = default_page_description %}
+      {% else %}
+        {% assign page_definition = page.definition %}
+      {% endif %}
+
+      <!-- Show description with bullet points -->
+      {% assign bullet_points = page_definition | split: ' -' %}
+      <div class="grid-row margin-bottom-2">
+        <p class="margin-top-0 margin-bottom-1">
+          {{ bullet_points[0] | strip }}
+        </p>
+        {% if bullet_points.size > 1 %}
+        <ul class="margin-top-0">
+          {% for point in bullet_points offset: 1%} {% assign bullet_text =
+          point | strip | remove_last: ";" %} {% if bullet_text != blank %}
+          <li>{{ bullet_text }}</li>
+          {% endif %} {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+      {% assign combined_category_subcategory = page.category %}
+      {% if page.focus_area != nil and page.focus_area != "" %}
+        {% assign combined_category_subcategory = combined_category_subcategory | append: " - " | append: page.focus_area %}
+      {% endif %}
+      {% assign combined_category_subcategories = "" | split: ',' %}
+      {% assign combined_category_subcategories = combined_category_subcategories | push: combined_category_subcategory %}
+      {% include components/_subcategory-tags.html categories=combined_category_subcategories %}
+
+      <div class="grid-row margin-bottom-2 border-top-2px border-base-light">
+        {% include scripts/_data-utils.html programs=page.where_used %}
+        
+        <!-- Data Display-->
+        <div class="grid-row grid-gap margin-y-2">
+          <div class="grid-col-8 grid-row">
+            {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
+            {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
+            {% assign current_fy_obligations_title = "FY " | append: current_fiscal_year %}
+            {% assign fy_date_text = "FY " | append: fiscal_year %}
+            
+            {% assign program_count = page.where_used.size | default: 0 %}
+            {% include components/_info-card.html title="Programs"
+            display_number=program_count
+            grid="grid-col" margin="margin-right-1" %} 
+            
+            <div data-dollar-amount="{{ total_expenditure }}" class="info-card-total-expenditure" style="display: none;">{{ total_expenditure }}</div>
+            {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
+
+            {% include components/_info-card.html title=current_fy_obligations_title
+       display_number=total_expenditure_formatted grid="grid-col" %}
+            
+            {% include components/_info-card.html title="Agencies"
+            display_number=total_agencies
+            grid="grid-col" margin="margin-left-1" %}
+          </div>
+          <div class="grid-col">
+            {% include components/_insight-section.html program_number=program_count
+            expenditure_total=total_expenditure_formatted
+            expenditure_total_value=total_expenditure
+            largest_program_title=largest_program.name 
+            largest_program_link=largest_program.permalink
+            largest_program_expenditure=largest_program_expenditure 
+            smallest_program_title=smallest_program.name 
+            smallest_program_link=smallest_program.permalink
+            smallest_program_expenditure=smallest_program_expenditure %}
+          </div>
+          <div class="grid-col-12 padding-y-4">
+            <!-- Link to jump to the related programs table below. -->
+            <div class="text-left margin-bottom-1">
+              <a href="#related-programs" class="text-underline">View All Programs</a>
+            </div>
+            <div id="outcomeChartContainer" class="width-full">
+              <div id="outcomeChart" class="width-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Programs Table -->
+        <!-- Anchor target for the View All Programs link. -->
+        <div id="related-programs" class="grid-col-12 padding-y-2 border-top-2px border-base" style="border-top: 1px dotted #000;">
+          <h2 class="text-bold margin-y-3">Related Programs</h2>
+          <div class="width-full">
+            {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
+            {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | split: "," %}
+            {% assign table_widths = "40%,30%,30%" | split: "," %}
+            {% assign table_alignments = "left,left,right" | split: "," %}
+            {% assign table_types = "text,text,currency" | split: "," %}
+            {% assign table_bold = "true,false,true" | split: "," %}
+            {% include components/_sortable-table.html data=page.where_used columns=table_columns labels=table_labels widths=table_widths alignments=table_alignments types=table_types bold=table_bold show_total=true total_value=total_expenditure clickable=true permalink_field="permalink" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include scripts/_dollar-standardization.html %}
+{% include scripts/_table-utils.html %}
+{% include scripts/_chart-utils.html %}
+{% include scripts/_pon-charts.html %}

@@ -1,0 +1,122 @@
+<script>
+  // Table sorting utility
+  document.addEventListener('DOMContentLoaded', function() {
+    const tables = document.querySelectorAll('[data-sortable-table]');
+    
+    tables.forEach(table => {
+      const headers = table.querySelectorAll('th[data-sortable]');
+      const tbody = table.querySelector('tbody');
+      const totalRow = tbody.querySelector('tr[data-total-row]');
+      let rows = Array.from(tbody.querySelectorAll('tr:not([data-total-row])'));
+
+      // Add JavaScript-based hover effects as fallback
+      rows.forEach(row => {
+        row.addEventListener('mouseenter', function() {
+          this.style.backgroundColor = '#f1f1f1';
+        });
+        
+        row.addEventListener('mouseleave', function() {
+          this.style.backgroundColor = 'white';
+        });
+      });
+      
+      // Default sort by last column (highest to lowest)
+      const lastHeader = headers[headers.length - 1];
+      if (lastHeader) {
+        sortTable(table, headers.length - 1, 'desc');
+        updateSortIndicators(headers, headers.length - 1, 'desc');
+      }
+      
+      headers.forEach((header, columnIndex) => {
+        header.addEventListener('click', function() {
+          const currentSort = header.getAttribute('data-sort-direction') || 'none';
+          let newDirection;
+          
+          if (currentSort === 'none' || currentSort === 'asc') {
+            newDirection = 'desc';
+          } else {
+            newDirection = 'asc';
+          }
+          
+          sortTable(table, columnIndex, newDirection);
+          updateSortIndicators(headers, columnIndex, newDirection);
+        });
+      });
+      
+      function sortTable(table, columnIndex, direction) {
+        const tbody = table.querySelector('tbody');
+        const totalRow = tbody.querySelector('tr[data-total-row]');
+        let rows = Array.from(tbody.querySelectorAll('tr:not([data-total-row])'));
+        const columnType = headers[columnIndex].getAttribute('data-column-type');
+        
+        rows.sort((a, b) => {
+          const aValue = getCellValue(a, columnIndex, columnType);
+          const bValue = getCellValue(b, columnIndex, columnType);
+
+          let comparison;
+          if (columnType === 'currency') {
+            comparison = parseFloat(aValue) - parseFloat(bValue);
+          } else {
+            comparison = aValue.localeCompare(bValue, undefined, { numeric: true, sensitivity: 'base' });
+          }
+
+          // Tie breaker: use first column (name) value
+          if (comparison === 0 && columnIndex !== 0) {
+            const aFirstCol = getCellValue(a, 0, 'text');
+            const bFirstCol = getCellValue(b, 0, 'text');
+            comparison = aFirstCol.localeCompare(bFirstCol, undefined, { numeric: true, sensitivity: 'base' });
+          }
+
+          return direction === 'desc' ? -comparison : comparison;
+        });
+        
+        // Clear tbody and re-add sorted rows
+        tbody.innerHTML = '';
+        rows.forEach(row => {
+          // Re-add hover listeners after sorting
+          row.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#f1f1f1';
+          });
+          
+          row.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'white';
+          });
+          
+          tbody.appendChild(row);
+        });
+        if (totalRow) {
+          tbody.appendChild(totalRow);
+        }
+      }
+      
+      function getCellValue(row, columnIndex, columnType) {
+        const cell = row.cells[columnIndex];
+        if (columnType === 'currency') {
+          return cell.getAttribute('data-dollar-amount') || '0';
+        }
+        return cell.textContent.trim();
+      }
+      
+      function updateSortIndicators(headers, activeColumnIndex, direction) {
+        headers.forEach((header, index) => {
+          const icon = header.querySelector('svg');
+          if (index === activeColumnIndex) {
+            header.setAttribute('data-sort-direction', direction);
+            icon.classList.remove('text-base-light');
+            icon.classList.add('text-ink');
+            if (direction === 'asc') {
+              icon.style.transform = 'rotate(0deg)';
+            } else {
+              icon.style.transform = 'rotate(180deg)';
+            }
+          } else {
+            header.setAttribute('data-sort-direction', 'none');
+            icon.classList.remove('text-ink');
+            icon.classList.add('text-base-light');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      }
+    });
+  });
+</script>

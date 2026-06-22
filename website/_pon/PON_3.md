@@ -1,0 +1,62 @@
+---
+category: Health
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Development in adequate cognitive functioning (e.g.,
+  information processing, problem solving, etc.); -Higher scores, level of proficiency,
+  or growth on standards-based or norm-referenced assessments (e.g., tests, quizzes,
+  etc.).'
+focus_area: Health and Wellbeing
+gwo_id: PON.3
+permalink: /pon/PON_3
+title: Improve Academic Achievement for Individuals with Disabilities
+where_used:
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Disability Innovation Fund (DIF)
+  permalink: /program/84.421
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Research in Special Education
+  permalink: /program/84.324
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education - Personnel Development to Improve Services and Results
+    for Children with Disabilities
+  permalink: /program/84.325
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education - State Personnel Development
+  permalink: /program/84.323
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education Parent Information Centers
+  permalink: /program/84.328
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education Studies and Evaluations
+  permalink: /program/84.329
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Special Education Technical Assistance and Dissemination to Improve Services
+    and Results for Children with Disabilities
+  permalink: /program/84.326
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Training Interpreters for Individuals who are Deaf and Individuals who are
+    Deaf-Blind
+  permalink: /program/84.160
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 0.0
+  name: Transition Programs for Students with Intellectual Disabilities into Higher
+    Education
+  permalink: /program/84.407
+  program_type: assistance_listing
+---

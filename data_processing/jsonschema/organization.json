@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Organization fields used by transform.py",
+  "type": "object",
+  "properties": {
+    "agencyName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "orgKey": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "l1OrgKey": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "l2OrgKey": {
+      "type": [
+        "string",
+        "number",
+        "null"
+      ]
+    }
+  }
+}

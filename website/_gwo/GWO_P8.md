@@ -1,0 +1,39 @@
+---
+category: Law, Justice, and Legal Services
+definition: Ending unlawful entry into the United States.
+focus_area: Border Security
+gwo_id: GWO.P8
+permalink: /gwo/GWO_P8
+title: End Illegal Immigration
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Citizenship Integration Training Academy
+  permalink: /program/97.154
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
+  permalink: /program/19.018
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Shelter and Services Program
+  permalink: /program/97.141
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Shelter and Services Program – Competitive
+  permalink: /program/97.149
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 23282000.0
+  name: Temporary Labor Certification for Foreign Workers
+  permalink: /program/17.273
+  program_type: assistance_listing
+---
