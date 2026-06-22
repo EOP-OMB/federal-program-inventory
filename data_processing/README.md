@@ -1,110 +1,46 @@
-# Federal Program Inventory Data Extract, Transform, and Load Process
-## About the process
-The data extract, transform, and load process contained in this directory pulls data from SAM.gov, USASpending.gov, and other sources for use in the Federal Program Inventory (FPI). The FPI is designed to make information about Federal programs, including program objectives, results, and financial information, easier to access.  For details about individual fields in FPI, see the [data dictionary](DATA_DICTIONARY.md).
+# Federal Program Inventory Data Extraction
+
+## About the data extraction
+The data extraction contained in this directory pulls data from SAM.gov and USASpending.gov, for use in the Federal Program Inventory (FPI). The Federal Program Inventory is designed to make information about Federal programs, including program objectives and financial information, easier to access.
 
 ## Setting up your environment
-Note: Ensure computer has enough ram to support running docker for fpi. Under 20 GB may not be sufficient enough ram.
-Note: Some versions of Python such as 3.14 may not have compatible wheels. In this case, try using other versions such as 3.13 or 3.11.
-
 Before getting started, you need to make sure that your system is set up properly. The data extract functionality is written in Python3 and has several dependencies. To set up your system:
 1. Navigate to the root directory of this repository (one level above this directory), and establish a virtual environment using `python3 -m venv venv` (note that different environments may use different aliases for Python3; e.g., `python` versus `python3`)
 2. Activate the virtual environment using `source venv/bin/activate`
-Note: For PC Users, run `venv\Scripts\Activate`
-Note: You may face common issues wth PowerShell blocking script execution by default. If this occurs, try runnning `Get-ExecutedPolicy` and if text returns 'Restricted', then set Execution Policy for Current User using `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`. This will allow scripts only for your account and not system-wide. With this fix, try activating the virtual environment again.
 3. Install dependencies using `pip install -r requirements.txt`
-Note: In the requirements.txt file, you may need to comment out this line: tabula.py
-
-## Environment variables
-The following environment variables are used for building and ETL.  Consider adding these to a .env file in the root of the repo directory.  Note that TEST_ENV uses stable global data, markdown files, and search results for testing.  Therefore, for local development on the latest data, use USE_LOCAL_API=true and TEST_ENV=false.
-
-```
-TEST_ENV=false
-USE_LOCAL_API=true
-ETL_EXTRACT_DISK_DIRECTORY=/Users/user/source/
-ETL_EXTRACT_SOURCE_DIRECTORY=omb-fpi/data_processing/source/
-ETL_EXTRACT_EXTRACTED_DIRECTORY=omb-fpi/data_processing/extracted/
-ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
-ETL_TRANSFORM_TEMP_DB_FILE_PATH=temp_data.db
-ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
-ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH=transformed_data.db
-ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY="/Volumes/external/omb-fpi/award-archive-download/"
-ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY=data_processing/extracted/
-ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY=/Volumes/external/omb-fpi/award-archive-download/assistance/
-ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY=/Volumes/external/omb-fpi/award-archive-download/contracts/
-ETL_TRANSFORM_UNZIP_TMP_DIRECTORY=~/tmp/
-```
 
 ## Running the extract
 > [!NOTE]
-> This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh the data, it is likely sufficient to use these pre-existing files and skip the extract steps below.
-
-### Data quality tests
-
-We rely on undocumented APIs for some of the data, so `test_api_schemas()` runs JSON schema validation against both GET and POST API responses to detect breaking changes. The schemas are stored in `jsonschema/`.
-
-We also rely on a PaymentAccuracy.gov CSV that can change. `test_ip_data()` downloads the latest file, verifies that all columns expected by the local extracted mapping file are present, and verifies that each response row has the expected number of columns.
-
-Other aspects of extract data quality should be enforced by the transformed database's foreign key constraints.
-
-### Global fiscal year and date variables
-
-The pipeline now eliminates hardcoded fiscal year and date values. All global fiscal year and date variables are defined centrally in `constants.py`. To update these values on the website, use the `export_global_dates_to_yml()` function in `load.py`. Running this function will automatically generate or update the `constants_global_dates.yml` file in the `website/_data` directory. The website then uses this YAML file to provide current fiscal year and date information to the website including the Program, PON, GWO, and About the Data pages. This ensures all date-related variables are managed and updated consistently across the project.
-
-To update the fiscal year and date values:
-1. Edit the fiscal year or date variables in `constants.py` as needed.
-2. In `load.py`, uncomment the call to `export_global_dates_to_yml()` and run the script, or call the function directly. This will export the updated variables to `constants_global_dates.yml`.
+> This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh the data, it is likely sufficient to use these pre-existing files and skip the extract below.
 
 ### SAM.gov
-Assistance Listing data can be updated at any time by agencies. However, updates occur most commonly in the fall, following OMB's data call to agencies. This update should be performed at least once per year. To extract the data from SAM.gov, ensure your system is set up and, with your virtual environment enabled, and return to this directory. You should uncomment the appropriate functions in [extract.py](extract.py) and then execute the script. 
-Note: In extract.py, you may need to update file paths to ensure that files are saved to your local directories i.e. paths for DISK_DIRECTORY, EXTRACTED_DIRECTORY. 
-Relevant functions include:
-1. `extract_assistance_listing()`: downloads all Assistance Listings from SAM.gov using the API that powers their frontend (this approach is necessary, as their publicly documented APIs and data extracts do not provide usable data), and saves the result to [extracted/assistance_listings.json](extracted/assistance_listings.json)
-2. `extract_dictionary()`: downloads the various enum lookup values that are referenced in the extracted Assistance Listing data, and saves the result to [extracted/dictionary.json](extracted/dictionary.json); this should generally be run whenever `extract_assistance_listing()` is run
-3. `extract_organizations()`: downloads the organization lookup values that are referenced in the extracted Assistance Listing data, and saves the result to [extracted/organizations.json](extracted/organizations.json); this should generally be run whenever `extract_assistance_listing()` is run 
-4. `clean_all_data()`: fixes some idiocracies in the [extracted/assistance_listings.json](extracted/assistance_listings.json) file, which result from bad data SAM.gov data
-5. `extract_usaspending_award_hashes()`: runs searches against USASpending.gov for each Assistance Listing to generate the unique hash associated with the search results (this hash is subsequently used to generate a link on the Program page), and saves the result to [usaspending-program-search-hashes.json](usaspending-program-search-hashes.json); this should generally be run whenever `extract_assistance_listing()` is run 
+If you determine you need to extract the data from SAM.gov, ensure your system is set up and, with your virtual environment enabled, and return to this directory. To extract the necessary data from SAM.gov:
 
-Running the above fundtions process will generate four files in the [extracted](extracted) directory that contain some of the data necessary to generate the underlying FPI program pages. Note that this process will make several thousand calls to SAM.gov and USASpending.gov's APIs to retrieve the necessary data. The latest copies of this data are commited to this repo to minimize the need to run these functions.
+1. Run [01-1 - fetch-assistance-listings.py](01-1 - fetch-assistance-listings.py)
+2. Run [01-2 - fetch-dictionary.py](01-2 - fetch-dictionary.py)
+3. Run [01-3 - fetch-organizations.py](01-3 - fetch-organizations.py)
+3. Run [01-4 - fetch-usaspending-hashes.py](01-4 - fetch-usaspending-hashes.py)
 
-SAM.gov also publishes an annual PDF that is used in the FPI. The Functional Index from SAM.gov's annual PDF is extracted and used to generate the Categories and Sub-categories shown on the FPI website. Unfortunately, this information is not available from SAM.gov via API. The function in [extract.py](extract.py) used to extract these values is `extract_categories_from_pdf()`. Annually, the new PDF should be downloaded from SAM.gov and the Categories and Sub-categories should be re-extracted. Note that future PDFs are likely to have slightly different layouts and parameters, which will require tweaks to this function.
+This process will generate four files in the [source_files](source_files) directory that contain the data necessary to generate the underlying FPI program pages. Note that this process will make several thousand calls to SAM.gov and USASpending.gov's APIs to retrieve the necessary data.
+
+SAM.gov also publishes an annual PDF that is used in the FPI. The Functional Index from SAM.gov's annual PDF is extracted and used to generate the Categories and Sub-categories shown on the FPI website. Unfortunately, this information is not available from SAM.gov via API. The script used to extract these values is [00 - extract-functions-from-pdf.py](00 - extract-functions-from-pdf.py); however, future PDFs are likely to have different parameters and will need to be further customized.
 
 ### USASpending.gov
-If you determine you need to extract the data from USASpending.gov, you must download and load significant amounts of data from USASpending.gov into a SQLite database. The intial download of this information may exceed 20GB compressed. Once uncompressed, the data and database may exceed 400GB. This information should be refreshed at least annually, but may be refreshed as freqeuntly as monthly.
+If you determine you need to extract the data from USASpending.gov, you must download and load significant amounts of data from USASpending.gov into a SQLite database. The intial download of this information may exceed 20GB compressed. Once uncompressed, the data and database may exceed 400GB.
 
 The FPI uses USASpending.gov's monthly Award Data Archives that are [available for download](https://www.usaspending.gov/download_center/award_data_archive). To reduce the need to redownload the complete dataset monthly, USASpending.gov also makes monthly delta files available, which contain only the updates since the last month's release.
 
-To load this data iniatially, you should download the "Financial Assistance" data, for current year and each of the six years prior, via the link above. This should result in seven archives. The names of these archives should generally look like `FY2024_All_Contracts_Full_20250406.zip`. Note the `Full` in this file name--for the initial load, you should download the `Full` archives for each year.
 
-Once the files have been downloaded, recursively extract the archives and place all of the resulting CSV files into a single directory. This directory can then be used to run `load_usaspending_initial_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py). These functions will load the CSVs into a SQLite DB, query that DB to extract summary tables, and then insert those summary tables into the [transformed/transformed_data.db](transformed/transformed_data.db) SQLite DB.
 
-USASpending.gov releases updates monthly. Once the initial data is loaded onto your local machine, you can apply the monthly "Delta" files to your existing USASpending SQLite DB (not stored in this repo), rather than repeating this entire process. To do so, download the monthly "Delta" file at the same link about (rather than the "Full" file), and run `load_usaspending_delta_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py) instead.
-
-While this process may not appear optimal at face value, it is designed to: (1) work within the constraints of Government technology; (2) minimize the amount of data that must be downloaded (via Dalta files); and (3) result in a collection of summary tables that can be committed to this repo, for auditability and ease-of-startup for new team members and members of the public (by not requiring the download of any USASpending.gov data to build the website).
-
-### Additional data
-The FPI also uses additional data, which is sourced from several locations and should be refreshed on varying schedules. These include:
-1. [extracted/additional-programs.csv](extracted/additional-programs.csv): this contains additional programs beyond Assistance Listings, including Interest on the Public Debt ([source](https://www.usaspending.gov/explorer/), All Budget Functions > Net Interest > Interest on Treasury Debt Securities > Interest on the Public Debt > switch to table mode) and Tax Expenditures ([source](https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures), tab "Table 1 - Totals"); these should be refreshed at  annually (a manual process)
-2. [extracted/improper-payment-program-mapping.csv](extracted/improper-payment-program-mapping.csv): this contains a mapping between programs in the FPI and programs reported on [PaymentAccuracy.gov](https://paymentaccuracy.gov/), as reported by agencies via an OMB data call; this should be refreshed at least annually
-3. [constants.py](constants.py): these constants should be reviewed after each update.
-4. The following are sent by the OMB team annually for taxonomy updates:
-  1. [extracted/FPI_GWO_assignment.csv](extracted/FPI_GWO_assignment.csv)
-  2. [extracted/FPI_PON_assignment.csv](extracted/FPI_PON_assignment.csv)
-  3. [extracted/Taxonomy_GWO_crosswalk.csv](extracted/Taxonomy_GWO_crosswalk.csv)
-  4. [extracted/Taxonomy_PON_crosswalk.csv](extracted/Taxonomy_PON_crosswalk.csv)
-
-## Transforming the data
+## Processing the data
 > [!NOTE]
-> This repository already contains copies of the latest data transformed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use the pre-existing [transformed/transformed_data.db](transformed/transformed_data.db) file and skip the process below.
+> This repository already contains copies of the latest data processed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use these pre-existing files and skip the processing below.
 
-First, set the `ETL_` environment variables above.  Then download all archive financial assistance files from constants.py years `CURRENT_FISCAL_YEAR` to `CURRENT_FISCAL_YEAR - SPENDING_CHART_YEAR_RANGE`.  Note that delta files are not currently supported - use the full year files.  Optionally, archive contract files can be imported into the temporary database; however, they are not currently used in the website or the transformed database.
+The data from the SAM.gov and USASpending.gov extracts is processed into the Markdown files used by Jekyll to build the FPI website. To re-generate the Markdown files for Jekyll:
+1. Run [02 - generate-category-subcategory-md.py](02 - generate-category-subcategory-md.py)
+2. Run [02 - generate-programs-and-search-md.py](02 - generate-programs-and-search-md.py)
 
-The data extracted above is transformed through a variety of processes into a SQLite DB ([transformed/transformed_data.db](transformed/transformed_data.db)). If new data was extracted by running functions in [extract.py](extract.py), the functions in [transform.py](transform.py) should be run to refresh [transformed/transformed_data.db](transformed/transformed_data.db). This SQLite DB is used in the next step, to generate the Markdown files used by Jekyll to build the FPI website.
-
-## Loading the data
-> [!NOTE]
-> This repository already contains copies of the latest data loaded by the FPI team. Unless you refreshed the data, it is likely sufficient to use the pre-existing markdown files located in [/website](/website) generated by this process.
-
-To regenerate the Markdown files used by Jekyll to build the website, update [constants.py](constants.py) as needed and then run [load.py](load.py).
+These two files could be combined in the future, but are currently separate due to how the development of the FPI website progressed.
 
 ## A note on extraction methods
 
