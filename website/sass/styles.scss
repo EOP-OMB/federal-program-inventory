@@ -19,6 +19,7 @@ $gold-spending: #d4af37cc;
 $pop-growth-shade:#366e56;
 $revenue-losses:#b3c1c8;
 $improper-payments-red:#b91c1c;
+$gray-text-base: #5a5f62;
 
 .hide {
   display: none !important;
@@ -209,6 +210,34 @@ $improper-payments-red:#b91c1c;
 .category-breadcrumb {
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+
+.category-select-wrap {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  width: 20rem;
+}
+
+.category-select-control {
+  background-image: none !important;
+}
+
+.category-select-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 0.75rem;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.category-select-wrap--disabled {
+  cursor: not-allowed;
+}
+
+.category-select-wrap--disabled .category-select-control,
+.category-select-wrap--disabled .category-select-icon {
+  cursor: not-allowed;
 }
 
 body {
@@ -454,6 +483,10 @@ th.gridjs-th {
   }
 }
 
+#search-filters #eligible-applicants-section .usa-checkbox__label {
+  overflow-wrap: anywhere;
+}
+
 .about-page {
   color: $site-font-color !important;
   a {
@@ -474,12 +507,50 @@ th.gridjs-th {
   .usa-accordion__heading button {
     background-color: $sub-tag-info-card-bg;
     color: $site-font-color;
+    background-image: none !important;
+    padding-right: 2.5rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      background-image: none !important;
+      background-color: currentColor;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.75rem;
+    }
+
+    &::before {
+      height: 0.75rem;
+      right: 1.3125rem;
+      width: 2px;
+    }
+
+    &[aria-expanded="true"]::before,
+    &[aria-expanded="true"]::after {
+      background-image: none !important;
+    }
+
+    &[aria-expanded="true"]::before {
+      display: none;
+    }
   }
 
   .usa-accordion__content {
     background-color: $medium-cream-underlay;
     color: $site-font-color;
   }
+}
+
+.clickable-tile-target-count,
+.as-of-date,
+.tab-nav {
+  color: $gray-text-base;
 }
 
 #about-obligation-table-container {
@@ -554,6 +625,7 @@ th.gridjs-th {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 0;
+  color: $gray-text-base;
 }
 
 /* Override USWDS breadcrumb caret styling */
@@ -1329,9 +1401,16 @@ th.gridjs-th {
   height: 17px;
 
   input {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      margin: 0;
+      cursor: pointer;
       opacity: 0;
-      width: 0;
-      height: 0;
+      width: 21px;
+      height: 21px;
   }
 
   .slider {

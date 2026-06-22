@@ -38,6 +38,14 @@ ETL_TRANSFORM_UNZIP_TMP_DIRECTORY=~/tmp/
 > [!NOTE]
 > This repository already contains copies of the latest data pulled by the FPI team. Unless you need to refresh the data, it is likely sufficient to use these pre-existing files and skip the extract steps below.
 
+### Data quality tests
+
+We rely on undocumented APIs for some of the data, so `test_api_schemas()` runs JSON schema validation against both GET and POST API responses to detect breaking changes. The schemas are stored in `jsonschema/`.
+
+We also rely on a PaymentAccuracy.gov CSV that can change. `test_ip_data()` downloads the latest file, verifies that all columns expected by the local extracted mapping file are present, and verifies that each response row has the expected number of columns.
+
+Other aspects of extract data quality should be enforced by the transformed database's foreign key constraints.
+
 ### Global fiscal year and date variables
 
 The pipeline now eliminates hardcoded fiscal year and date values. All global fiscal year and date variables are defined centrally in `constants.py`. To update these values on the website, use the `export_global_dates_to_yml()` function in `load.py`. Running this function will automatically generate or update the `constants_global_dates.yml` file in the `website/_data` directory. The website then uses this YAML file to provide current fiscal year and date information to the website including the Program, PON, GWO, and About the Data pages. This ensures all date-related variables are managed and updated consistently across the project.

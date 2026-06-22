@@ -257,7 +257,7 @@ where_used:
   permalink: /program/93.135
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 25336657.0
+  expenditure_amount: 184920723.0
   name: Child Health and Human Development Extramural Research
   permalink: /program/93.865
   program_type: assistance_listing
@@ -959,7 +959,7 @@ where_used:
   permalink: /program/93.213
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 300000.0
   name: Research on Chemical and Biological Defense
   permalink: /program/12.360
   program_type: assistance_listing

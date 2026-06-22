@@ -20,17 +20,17 @@ where_used:
   permalink: /program/84.250
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4376672.0
+  expenditure_amount: 5300000.0
   name: Assistive Technology Program for Farmers with Disabilities
   permalink: /program/10.280
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 20604930.0
   name: Disability Employment Policy Development
   permalink: /program/17.720
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 93578000.0
   name: Longshore and Harbor Workers' Compensation
   permalink: /program/17.302
   program_type: assistance_listing

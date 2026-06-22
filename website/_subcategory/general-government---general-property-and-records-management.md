@@ -1,16 +1,13 @@
 ---
 agencies: '[{"title":"General Services Administration","total_num_programs":3,"total_obs":0.0}]'
-applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, excludes
-  institutions of higher education and hospitals","total_num_programs":2},{"title":"Other
-  public institution/organization","total_num_programs":2},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Public
+applicant_types: '[{"title":"Individual/Family","total_num_programs":1},{"title":"Local","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Nonprofit Organization","total_num_programs":1},{"title":"Other","total_num_programs":1},{"title":"Other
+  public institution/organization","total_num_programs":1},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":2},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":2},{"title":"Anyone/general
-  public","total_num_programs":1},{"title":"Federally Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Other
-  private institutions/organizations","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Sponsored
-  organization","total_num_programs":1}]'
+  hospitals)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -183,13 +180,13 @@ parent_title: General Government
 permalink: /category/general-government/general-property-and-records-management
 programs: '[{"cfda":"39.002","permalink":"/program/39.002","title":"Disposal of Federal
   Surplus Real Property","popular_name":null,"agency":"General Services Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.003","permalink":"/program/39.003","title":"Donation
-  of Federal Surplus Personal Property","popular_name":"(Donation Program)","agency":"General
-  Services Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.007","permalink":"/program/39.007","title":"Sale
+  of Federal Surplus Personal Property","popular_name":"Federal Surplus Personal Property
+  Donation Program","agency":"General Services Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"39.007","permalink":"/program/39.007","title":"Sale
   of Federal Surplus Personal Property","popular_name":"(Sales Program)","agency":"General
   Services Administration","total_obs":0.0,"program_type":"assistance_listing"}]'
 title: General Property and Records Management
 total_num_agencies: 1
-total_num_applicant_types: 18
+total_num_applicant_types: 15
 total_num_programs: 3
 total_obs: 0.0
 ---

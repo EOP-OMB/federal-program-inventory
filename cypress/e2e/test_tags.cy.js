@@ -2,7 +2,6 @@ describe('Tag functionality and visual regression', () => {
   let tag_test = function(url, subcategory) {
     let tag_selector = '.radius-pill.program-filter';
     cy.visit('test/program_test_4_tags.html');
-    cy.waitForPageLoad();
 
     // visual regression
     cy.get(tag_selector)
@@ -18,8 +17,6 @@ describe('Tag functionality and visual regression', () => {
       cy.get(tag_selector).first().click();
     }
 
-    // search results / functionality
-    cy.waitForPageLoad();
     cy.get('[aria-controls="categories-section"]')
       .should('be.visible')
       .first()

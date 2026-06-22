@@ -94,7 +94,7 @@ where_used:
   permalink: /program/84.408
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 9600000.0
+  expenditure_amount: 19200000.0
   name: Scholarships for Students at 1890 Institutions
   permalink: /program/10.524
   program_type: assistance_listing

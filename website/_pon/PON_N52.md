@@ -16,7 +16,7 @@ where_used:
   permalink: /program/97.061
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6000000.0
   name: Cybersecurity, Energy Security & Emergency Response (CESER)
   permalink: /program/81.008
   program_type: assistance_listing

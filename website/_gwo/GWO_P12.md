@@ -8,7 +8,7 @@ permalink: /gwo/GWO_P12
 title: Harden Cyber Defenses
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 549996.0
   name: CISA Cyber Security Awareness Campaign
   permalink: /program/97.128
   program_type: assistance_listing

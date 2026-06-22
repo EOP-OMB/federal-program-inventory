@@ -276,7 +276,7 @@ where_used:
   permalink: /program/59.043
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 13485000.0
   name: Work Opportunity Tax Credit Program (WOTC)
   permalink: /program/17.271
   program_type: assistance_listing

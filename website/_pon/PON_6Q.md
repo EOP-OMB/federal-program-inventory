@@ -63,13 +63,13 @@ where_used:
   permalink: /program/15.585
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 57000000.0
+  expenditure_amount: 62700000.0
   name: Geographic Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability
     and Monitoring Grants
   permalink: /program/66.964
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 19279752.0
+  expenditure_amount: 19232685.0
   name: Geographic Programs - Columbia River Basin Restoration (CRBR) Program
   permalink: /program/66.962
   program_type: assistance_listing
@@ -79,17 +79,17 @@ where_used:
   permalink: /program/66.469
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 37510615.0
+  expenditure_amount: 32399499.0
   name: Geographic Programs - Gulf of America Program
   permalink: /program/66.475
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 12238000.0
+  expenditure_amount: 12697000.0
   name: Geographic Programs - Lake Pontchartrain Basic Restoration Program (PRP)
   permalink: /program/66.125
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 4438145.0
+  expenditure_amount: 58421821.0
   name: 'Geographic Programs - Puget Sound Action Agenda: Technical Investigations
     and Implementation Assistance Program'
   permalink: /program/66.123
@@ -145,17 +145,17 @@ where_used:
   permalink: /program/20.276
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 20423485.0
+  expenditure_amount: 175121276.0
   name: Nonpoint Source Implementation Grants
   permalink: /program/66.460
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 116806376.0
-  name: Pacific Coast Salmon Recovery
+  name: Pacific Coast Salmon Recovery Fund
   permalink: /program/11.045
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2000000.0
+  expenditure_amount: 1813840.0
   name: Special Research Grants Program Aquaculture Research
   permalink: /program/10.343
   program_type: assistance_listing

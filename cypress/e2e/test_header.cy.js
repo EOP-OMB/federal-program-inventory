@@ -17,7 +17,7 @@ describe('Header Component', () => {
     // Verify navigation links are displayed
     cy.get('.custom-accordion-button').should('be.visible');
     cy.contains('.usa-nav__primary-item', 'Program search').should('be.visible');
-    cy.contains('.usa-nav__primary-item', 'Explore programs by category').should('be.visible');
+    cy.contains('.usa-nav__primary-item', /Explore FY \d{4} spending/).should('be.visible');
     cy.contains('.usa-nav__primary-item', 'About the FPI').should('be.visible');
     
     // Take a snapshot of the full header with navigation
@@ -45,7 +45,6 @@ describe('Header Component', () => {
     
     // Wait for the accordion content to expand and be visible
     cy.get('.usa-nav__submenu').should('be.visible');
-    cy.wait(500);
     
     // Take a snapshot of just the navigation area (excluding the logo/header)
     cy.get('nav.usa-nav').compareSnapshot('header_narrow_expanded');

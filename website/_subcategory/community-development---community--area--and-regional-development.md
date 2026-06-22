@@ -1,60 +1,61 @@
 ---
-agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45818187018.37},{"title":"Department
-  of Commerce","total_num_programs":12,"total_obs":18365808388.500004},{"title":"Department
+agencies: '[{"title":"Department of the Treasury","total_num_programs":10,"total_obs":45829627018.37},{"title":"Department
+  of Commerce","total_num_programs":12,"total_obs":18207315468.500004},{"title":"Department
   of Housing and Urban Development","total_num_programs":12,"total_obs":11981981561.37},{"title":"Federal
   Communications Commission","total_num_programs":7,"total_obs":3552896582.2700005},{"title":"Department
   of Health and Human Services","total_num_programs":5,"total_obs":2463330996.93},{"title":"Department
   of the Interior","total_num_programs":10,"total_obs":901682611.05},{"title":"Department
   of Transportation","total_num_programs":6,"total_obs":753891228.8},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":710431906.14},{"title":"Appalachian
+  of Agriculture","total_num_programs":15,"total_obs":708122159.12},{"title":"Appalachian
   Regional Commission","total_num_programs":4,"total_obs":270193450.2},{"title":"Denali
   Commission","total_num_programs":3,"total_obs":177858558.69},{"title":"Department
-  of State","total_num_programs":2,"total_obs":2240587.01},{"title":"Southeast Crescent
+  of Defense","total_num_programs":1,"total_obs":2423677.0},{"title":"Department of
+  State","total_num_programs":2,"total_obs":2240587.01},{"title":"Southeast Crescent
   Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"SOUTHWEST
   BORDER REGIONAL COMMISSION","total_num_programs":1,"total_obs":0.0},{"title":"Northern
-  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Defense","total_num_programs":1,"total_obs":0.0},{"title":"Delta Regional Authority","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":25},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":17},{"title":"State","total_num_programs":17},{"title":"Municipality
+  Border Regional Commission","total_num_programs":1,"total_obs":0.0},{"title":"Delta
+  Regional Authority","total_num_programs":1,"total_obs":0.0}]'
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":27},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":18},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":16},{"title":"County Government (inclusive of
+  and villages)","total_num_programs":17},{"title":"County Government (inclusive of
   boroughs in Alaska, parishes and other governmental entities with geographic regional
-  control and authority)","total_num_programs":15},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":15},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":15},{"title":"For-Profit Organization","total_num_programs":14},{"title":"Other
+  control and authority)","total_num_programs":16},{"title":"State","total_num_programs":16},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":14},{"title":"Indian/Native American/Alaska
-  Native Tribal Government (Other than Federally Recognized)","total_num_programs":13},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":13},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":12},{"title":"Other","total_num_programs":11},{"title":"Private
+  Government Combination","total_num_programs":15},{"title":"For-Profit Organization","total_num_programs":14},{"title":"Other","total_num_programs":14},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":13},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":11},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Tribal","total_num_programs":10},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":9},{"title":"Other public
-  institution/organization","total_num_programs":9},{"title":"Native American Organizations
-  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Local","total_num_programs":7},{"title":"Government
-  - General","total_num_programs":6},{"title":"Not-for-Profit Organization","total_num_programs":6},{"title":"Profit
+  hospitals)","total_num_programs":13},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":13},{"title":"U.S. Territory (or
+  Possession) Government (including freely-associated states)","total_num_programs":13},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":12},{"title":"Tribal","total_num_programs":10},{"title":"Private
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":9},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Local","total_num_programs":8},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Not-for-Profit
+  Organization","total_num_programs":7},{"title":"Department or Agency of a U.S. State
+  Government","total_num_programs":6},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Profit
   organization","total_num_programs":6},{"title":"Territorial","total_num_programs":6},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":5},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":5},{"title":"Anyone/general
-  public","total_num_programs":4},{"title":"Federal","total_num_programs":4},{"title":"Interstate","total_num_programs":4},{"title":"Intrastate","total_num_programs":4},{"title":"Other
-  private institutions/organizations","total_num_programs":4},{"title":"Non-Government
-  - General","total_num_programs":3},{"title":"Other Special Disctrict Government","total_num_programs":3},{"title":"Port
-  Authority","total_num_programs":3},{"title":"Public Housing Authority","total_num_programs":3},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":3},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Airport
-  Authority","total_num_programs":2},{"title":"School District","total_num_programs":2},{"title":"Small
-  Business Person","total_num_programs":2},{"title":"Small business (less than 500
-  employees)","total_num_programs":2},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":2},{"title":"Transit Authority","total_num_programs":2},{"title":"Tribally
+  or Agency of a U.S. Territorial Government","total_num_programs":5},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":5},{"title":"Federal","total_num_programs":4},{"title":"Government
+  - General","total_num_programs":4},{"title":"Anyone/general public","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Intrastate","total_num_programs":3},{"title":"Non-Government
+  - General","total_num_programs":3},{"title":"Other Special Disctrict Government","total_num_programs":3},{"title":"Other
+  private institutions/organizations","total_num_programs":3},{"title":"Port Authority","total_num_programs":3},{"title":"Public
+  Housing Authority","total_num_programs":3},{"title":"Airport Authority","total_num_programs":2},{"title":"School
+  District","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"Small
+  business (less than 500 employees)","total_num_programs":2},{"title":"Transit Authority","total_num_programs":2},{"title":"Tribally
   Designated Housing Authority","total_num_programs":2},{"title":"U.S. Territories
-  and possessions","total_num_programs":2},{"title":"City or Township Government","total_num_programs":1},{"title":"County
-  Government","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Interstate
+  and possessions","total_num_programs":2},{"title":"U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"City
+  or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Interstate
   Organization","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Planning
-  Commission","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"School
-  District Government","total_num_programs":1},{"title":"Special District Government","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"Water Delivery Authority","total_num_programs":1}]'
+  Commission","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Regional
+  Organization","total_num_programs":1},{"title":"School District Government","total_num_programs":1},{"title":"Special
+  District Government","total_num_programs":1},{"title":"Specialized group (e.g. health
+  professionals, students, veterans)","total_num_programs":1},{"title":"U.S. Federal
+  Government","total_num_programs":1},{"title":"Water Delivery Authority","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -253,18 +254,18 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   Planning and Capacity Grant","agency":"Department of Commerce","total_obs":707085936.03,"program_type":"assistance_listing"},{"cfda":"20.901","permalink":"/program/20.901","title":"Payments
   for Essential Air Services","popular_name":"EAS","agency":"Department of Transportation","total_obs":625519412.3,"program_type":"assistance_listing"},{"cfda":"10.855","permalink":"/program/10.855","title":"Distance
   Learning and Telemedicine Grants","popular_name":"DLT - Distance Learning and Telemedicine
-  ","agency":"Department of Agriculture","total_obs":409936289.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
+  ","agency":"Department of Agriculture","total_obs":408974306.0,"program_type":"assistance_listing"},{"cfda":"11.029","permalink":"/program/11.029","title":"Tribal
   Broadband Connectivity Program","popular_name":"Tribal Broadband Connectivity Program","agency":"Department
-  of Commerce","total_obs":365627846.0,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
-  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
-  of Commerce","total_obs":268654457.0,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
+  of Commerce","total_obs":365627846.0,"program_type":"assistance_listing"},{"cfda":"23.002","permalink":"/program/23.002","title":"Appalachian
   Area Development","popular_name":"(Supplemental and Direct Grants)","agency":"Appalachian
   Regional Commission","total_obs":254204867.2,"program_type":"assistance_listing"},{"cfda":"10.766","permalink":"/program/10.766","title":"Community
-  Facilities Loans and Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":233310520.66,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
+  Facilities Loans and Grants","popular_name":null,"agency":"Department of Agriculture","total_obs":232133033.21,"program_type":"assistance_listing"},{"cfda":"21.015","permalink":"/program/21.015","title":"Resources
   and Ecosystems Sustainability, Tourist Opportunities, and Revived Economies of the
   Gulf Coast States","popular_name":"Gulf RESTORE - Direct Component and Centers of
   Excellence Research Grants Programs","agency":"Department of the Treasury","total_obs":201888218.37,"program_type":"assistance_listing"},{"cfda":"90.100","permalink":"/program/90.100","title":"Denali
-  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":177858558.69,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
+  Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":177858558.69,"program_type":"assistance_listing"},{"cfda":"11.307","permalink":"/program/11.307","title":"Economic
+  Adjustment Assistance","popular_name":"Economic Adjustment Assistance","agency":"Department
+  of Commerce","total_obs":113853280.0,"program_type":"assistance_listing"},{"cfda":"32.005","permalink":"/program/32.005","title":"UNIVERSAL
   SERVICE FUND - RURAL HEALTH CARE","popular_name":"USAC - RURAL HEALTH CARE","agency":"Federal
   Communications Commission","total_obs":112091160.82,"program_type":"assistance_listing"},{"cfda":"14.862","permalink":"/program/14.862","title":"Indian
   Community Development Block Grant Program","popular_name":"ICDBG","agency":"Department
@@ -278,19 +279,19 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   American Programs","popular_name":"Social and Economic Development Strategies (SEDS)","agency":"Department
   of Health and Human Services","total_obs":50960912.74,"program_type":"assistance_listing"},{"cfda":"20.945","permalink":"/program/20.945","title":"Asset
   Concessions and Innovative Finance Assistance","popular_name":"Asset Concessions
-  and Innovative Finance Assistance","agency":"Department of Transportation","total_obs":48462856.5,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
+  and Innovative Finance Assistance","agency":"Department of Transportation","total_obs":48462856.5,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
+  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"Social Impact
+  Partnerships to Pay for Results Act (SIPPRA)","agency":"Department of the Treasury","total_obs":39829495.0,"program_type":"assistance_listing"},{"cfda":"11.300","permalink":"/program/11.300","title":"Investments
   for Public Works and Economic Development Facilities","popular_name":null,"agency":"Department
   of Commerce","total_obs":37661332.15,"program_type":"assistance_listing"},{"cfda":"10.351","permalink":"/program/10.351","title":"Rural
-  Business Development Grant","popular_name":"RBDG","agency":"Department of Agriculture","total_obs":30009965.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
+  Business Development Grant","popular_name":"RBDG","agency":"Department of Agriculture","total_obs":29873518.0,"program_type":"assistance_listing"},{"cfda":"93.570","permalink":"/program/93.570","title":"Community
   Services Block Grant Discretionary Awards","popular_name":"Community Economic Development  &
-  Rural Community Development Programs","agency":"Department of Health and Human Services","total_obs":29800829.34,"program_type":"assistance_listing"},{"cfda":"21.017","permalink":"/program/21.017","title":"Social
-  Impact Partnerships to Pay for Results Act (SIPPRA)","popular_name":"Social Impact
-  Partnerships to Pay for Results Act (SIPPRA)","agency":"Department of the Treasury","total_obs":28389495.0,"program_type":"assistance_listing"},{"cfda":"15.032","permalink":"/program/15.032","title":"Indian
+  Rural Community Development Programs","agency":"Department of Health and Human Services","total_obs":29800829.34,"program_type":"assistance_listing"},{"cfda":"15.032","permalink":"/program/15.032","title":"Indian
   Economic Development","popular_name":null,"agency":"Department of the Interior","total_obs":24195240.73,"program_type":"assistance_listing"},{"cfda":"10.752","permalink":"/program/10.752","title":"Rural
   eConnectivity Pilot Program","popular_name":"ReConnect Program","agency":"Department
   of Agriculture","total_obs":23625022.54,"program_type":"assistance_listing"},{"cfda":"11.302","permalink":"/program/11.302","title":"Economic
   Development Support for Planning Organizations","popular_name":"Planning Investments
-  and Comprehensive Economic Development Strategies","agency":"Department of Commerce","total_obs":21034826.0,"program_type":"assistance_listing"},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
+  and Comprehensive Economic Development Strategies","agency":"Department of Commerce","total_obs":19088250.0,"program_type":"assistance_listing"},{"cfda":"20.930","permalink":"/program/20.930","title":"Payments
   for Small Community Air Service Development","popular_name":"Small Community Program
   or SCASDP Payments for Small Community Air Service Development","agency":"Department
   of Transportation","total_obs":11995000.0,"program_type":"assistance_listing"},{"cfda":"14.265","permalink":"/program/14.265","title":"Rural
@@ -306,15 +307,17 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   of the Interior","total_obs":8639115.41,"program_type":"assistance_listing"},{"cfda":"23.011","permalink":"/program/23.011","title":"Appalachian
   Research, Technical Assistance, and Demonstration Projects","popular_name":"(State
   Research)","agency":"Appalachian Regional Commission","total_obs":6655535.0,"program_type":"assistance_listing"},{"cfda":"21.012","permalink":"/program/21.012","title":"Native
-  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":5271000.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
-  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":2399692.0,"program_type":"assistance_listing"},{"cfda":"19.665","permalink":"/program/19.665","title":"Cyberspace
+  Initiatives","popular_name":"NACA Program\r\n\r\n","agency":"Department of the Treasury","total_obs":5271000.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
+  Economic Adjustment Assistance for Realignment or Closure of a Military Installation","popular_name":null,"agency":"Department
+  of Defense","total_obs":2423677.0,"program_type":"assistance_listing"},{"cfda":"19.665","permalink":"/program/19.665","title":"Cyberspace
   and Digital Policy","popular_name":null,"agency":"Department of State","total_obs":2250000.0,"program_type":"assistance_listing"},{"cfda":"93.239","permalink":"/program/93.239","title":"Policy
   Research and Evaluation Grants","popular_name":null,"agency":"Department of Health
   and Human Services","total_obs":1650001.0,"program_type":"assistance_listing"},{"cfda":"10.711","permalink":"/program/10.711","title":"Forest
   Service 638 Authority for Tribes","popular_name":"TFPA","agency":"Department of
   Agriculture","total_obs":1595261.0,"program_type":"assistance_listing"},{"cfda":"15.068","permalink":"/program/15.068","title":"Native
-  Hawaiian Community Guest Stewardship","popular_name":"H\u014d\u02bbihi Grant Program","agency":"Department
-  of the Interior","total_obs":1009797.0,"program_type":"assistance_listing"},{"cfda":"10.851","permalink":"/program/10.851","title":"Rural
+  Hawaiian Community Guest Stewardship","popular_name":"Heritage Opportunities in
+  Hawai\u02bbi (H\u014c\u02bbIHI) Grant Program","agency":"Department of the Interior","total_obs":1009797.0,"program_type":"assistance_listing"},{"cfda":"11.303","permalink":"/program/11.303","title":"Economic
+  Development Technical Assistance","popular_name":null,"agency":"Department of Commerce","total_obs":654525.0,"program_type":"assistance_listing"},{"cfda":"10.851","permalink":"/program/10.851","title":"Rural
   Telecommunications Loans","popular_name":"Telecommunications Infrastructure Loan
   Program","agency":"Department of Agriculture","total_obs":642814.44,"program_type":"assistance_listing"},{"cfda":"21.035","permalink":"/program/21.035","title":"Community
   Development Financial Institutions Program Loan","popular_name":"CDFI Program Loan","agency":"Department
@@ -343,9 +346,7 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   of Housing and Urban Development","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"21.014","permalink":"/program/21.014","title":"Community
   Development Financial Institutions Bond Guarantee Program","popular_name":"Community
   Development Financial Institutions Bond Guarantee Program","agency":"Department
-  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.607","permalink":"/program/12.607","title":"Community
-  Economic Adjustment Assistance for Realignment or Closure of a Military Installation","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
+  of the Treasury","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.200","permalink":"/program/90.200","title":"Delta
   Regional Authority","popular_name":"(Delta Program)","agency":"Delta Regional Authority","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"90.003","permalink":"/program/90.003","title":"Denali
   Commission Program","popular_name":"Denali Commission","agency":"Denali Commission","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"14.251","permalink":"/program/14.251","title":"Economic
   Development Initiative, Community Project Funding, and Miscellaneous grants","popular_name":"Congressional
@@ -383,7 +384,7 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   Housing and Economic Development","popular_name":"Rural Housing and Economic Development","agency":"Department
   of Housing and Urban Development","total_obs":-85542.0,"program_type":"assistance_listing"},{"cfda":"10.777","permalink":"/program/10.777","title":"Norman
   E. Borlaug International Agricultural Science and Technology Fellowship","popular_name":"Borlaug
-  Fellowship Program","agency":"Department of Agriculture","total_obs":-257600.5,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
+  Fellowship Program","agency":"Department of Agriculture","total_obs":-291430.07,"program_type":"assistance_listing"},{"cfda":"11.028","permalink":"/program/11.028","title":"Connecting
   Minority Communities Pilot Program","popular_name":null,"agency":"Department of
   Commerce","total_obs":-1106440.33,"program_type":"assistance_listing"},{"cfda":"32.008","permalink":"/program/32.008","title":"Affordable
   Connectivity Program","popular_name":"Affordable Connectivity Program","agency":"Federal
@@ -398,7 +399,7 @@ programs: '[{"cfda":"TC.171","permalink":"/program/TC.171","title":"Exclusion of
   Communications Commission","total_obs":-320266749.89,"program_type":"assistance_listing"}]'
 title: Community, Area, and Regional Development
 total_num_agencies: 16
-total_num_applicant_types: 70
+total_num_applicant_types: 68
 total_num_programs: 91
-total_obs: 84998502889.32999
+total_obs: 84851563899.31
 ---

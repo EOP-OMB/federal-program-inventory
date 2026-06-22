@@ -19,11 +19,6 @@ where_used:
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
-  name: Fisheries Promotion, Marketing and Development
-  permalink: /program/11.427
-  program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
   name: Fishery Products Inspection and Certification
   permalink: /program/11.413
   program_type: assistance_listing
@@ -57,6 +52,11 @@ where_used:
   expenditure_amount: 0.0
   name: Rail and Transit Security Grant Program
   permalink: /program/97.075
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 6037500.0
+  name: Saltonstall Kennedy Program
+  permalink: /program/11.427
   program_type: assistance_listing
 - agency: Consumer Product Safety Commission
   expenditure_amount: 2000000.0

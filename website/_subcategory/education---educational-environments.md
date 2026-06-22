@@ -12,15 +12,14 @@ applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, exc
   (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":12},{"title":"Public nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Other","total_num_programs":7},{"title":"Nonprofit
-  Organization","total_num_programs":6},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Other
-  private institutions/organizations","total_num_programs":4},{"title":"Sponsored
-  organization","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"U.S.
+  (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Other","total_num_programs":8},{"title":"Nonprofit
+  Organization","total_num_programs":6},{"title":"Federally Recognized Indian Tribal
+  Governments","total_num_programs":5},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":5},{"title":"Other
+  public institution/organization","total_num_programs":5},{"title":"Sponsored organization","total_num_programs":4},{"title":"State","total_num_programs":4},{"title":"U.S.
   State Government (including the District of Columbia)","total_num_programs":4},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Profit
-  organization","total_num_programs":3},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":3},{"title":"County
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Other
+  private institutions/organizations","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
   with geographic regional control and authority)","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":2},{"title":"Department
@@ -28,14 +27,15 @@ applicant_types: '[{"title":"Local (includes State-designated Indian Tribes, exc
   American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
   and villages)","total_num_programs":2},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Non-Government
-  - General","total_num_programs":2},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":2},{"title":"School
-  District","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":2},{"title":"Quasi-public nonprofit
+  institution/organization","total_num_programs":2},{"title":"School District","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
   Territories and possessions","total_num_programs":2},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Local","total_num_programs":1},{"title":"Not-for-Profit
-  Organization","total_num_programs":1},{"title":"Small business (less than 500 employees)","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1}]'
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Local","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Small
+  business (less than 500 employees)","total_num_programs":1},{"title":"U.S. Federal
+  Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:

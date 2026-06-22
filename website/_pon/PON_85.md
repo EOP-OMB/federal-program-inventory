@@ -11,7 +11,7 @@ permalink: /pon/PON_85
 title: Increase Healthy Food Consumption
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 70000000.0
+  expenditure_amount: 69400680.0
   name: Expanded Food and Nutrition Education Program
   permalink: /program/10.514
   program_type: assistance_listing
@@ -36,7 +36,7 @@ where_used:
   permalink: /program/10.582
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 48583360.0
+  expenditure_amount: 48500000.0
   name: Gus Schumacher Nutrition Incentive Program
   permalink: /program/10.331
   program_type: assistance_listing
@@ -113,7 +113,7 @@ where_used:
   permalink: /program/10.559
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 10000000.0
   name: WIC Farmers' Market Nutrition Program (FMNP)
   permalink: /program/10.572
   program_type: assistance_listing

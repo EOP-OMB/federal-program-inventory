@@ -1275,6 +1275,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
             JOIN category c ON ptc.category_id = c.id AND c.type = 'assistance' 
             LEFT JOIN category pc ON c.parent_id = pc.id AND c.type = pc.type
             WHERE c.type = ptc.category_type
+            AND p.program_type = 'assistance_listing'
             AND title IS NOT NULL
         )
         SELECT title

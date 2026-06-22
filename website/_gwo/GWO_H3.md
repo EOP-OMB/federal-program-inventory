@@ -28,17 +28,17 @@ where_used:
   permalink: /program/15.682
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 65500000.0
   name: Homeless Veterans’ Reintegration Program
   permalink: /program/17.805
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 176692260.0
   name: Jobs for Veterans State Grants
   permalink: /program/17.801
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 110109427.0
   name: Reentry Employment Opportunities
   permalink: /program/17.270
   program_type: assistance_listing
@@ -58,12 +58,12 @@ where_used:
   permalink: /program/84.264
   program_type: assistance_listing
 - agency: Social Security Administration
-  expenditure_amount: 0.0
+  expenditure_amount: 20000000.0
   name: Social Security - Work Incentives Planning and Assistance Program
   permalink: /program/96.008
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 37800000.0
   name: Trade Adjustment Assistance
   permalink: /program/17.245
   program_type: assistance_listing
@@ -94,12 +94,12 @@ where_used:
   permalink: /program/64.125
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 1092519000.0
   name: WIOA Dislocated Worker Formula Grants
   permalink: /program/17.278
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 15000000.0
   name: WIOA Dislocated Worker National Reserve Technical Assistance and Training
   permalink: /program/17.281
   program_type: assistance_listing

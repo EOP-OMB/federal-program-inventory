@@ -74,7 +74,7 @@ where_used:
   permalink: /program/15.521
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 4500000.0
+  expenditure_amount: 11750000.0
   name: Midsize and Large Drinking Water System Infrastructure Resilience and Sustainability
     Program – Safe Drinking Water Act 1459F
   permalink: /program/66.488

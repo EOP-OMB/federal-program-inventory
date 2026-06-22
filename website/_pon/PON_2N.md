@@ -10,12 +10,12 @@ permalink: /pon/PON_2N
 title: 'Increase Access to Jobs '
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 716630983.0
   name: Employment Service/Wagner-Peyser Funded Activities
   permalink: /program/17.207
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 65500000.0
   name: Homeless Veterans’ Reintegration Program
   permalink: /program/17.805
   program_type: assistance_listing
@@ -30,22 +30,22 @@ where_used:
   permalink: /program/93.674
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 389000000.0
   name: Senior Community Service Employment Program
   permalink: /program/17.235
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 37800000.0
   name: Trade Adjustment Assistance
   permalink: /program/17.245
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 881142622.0
   name: WIOA Adult Program
   permalink: /program/17.258
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 15000000.0
   name: WIOA Dislocated Worker National Reserve Technical Assistance and Training
   permalink: /program/17.281
   program_type: assistance_listing

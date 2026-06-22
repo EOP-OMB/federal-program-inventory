@@ -5,7 +5,6 @@
     const applicantTypesJson = {{ page.applicant_types | jsonify }};
     const categoriesJson = {{ page.categories_subcategories | jsonify }};
     const totalObligations = {{ page.total_obs }};
-    const pageTitle = "{{ page.title }}";
     const fiscalYear = "{{ page.fiscal_year }}";
     const subCategoriesData = JSON.parse(subCategoriesJson);
     const agenciesData = JSON.parse(agenciesJson);
@@ -108,9 +107,9 @@
 
       let headers = [];
       if (activeTable === "subCategory") {
-        headers = ["Sub-Category", "Number of Programs", `Expenditures (FY${fiscalYear})`];
+        headers = ["Sub-Category", "Number of Programs", `Amount`];
       } else if (activeTable === "agency") {
-        headers = ["Agency", "Number of Programs", `Expenditures (FY${fiscalYear})`];
+        headers = ["Agency", "Number of Programs", `Amount`];
       } else {
         headers = ["Applicant Type", "Number of Programs"];
       }
@@ -425,22 +424,6 @@
       });
     }
 
-    function updateTableTitle() {
-      const titleElement = document.getElementById("table-title");
-      if (!titleElement) return;
-
-      let titleText = "";
-      if (activeTable === "subCategory") {
-        titleText = `All ${pageTitle} sub-categories`;
-      } else if (activeTable === "agency") {
-        titleText = `All ${pageTitle} agencies`;
-      } else if (activeTable === "applicant") {
-        titleText = `All ${pageTitle} eligible applicant types`;
-      }
-
-      titleElement.textContent = titleText;
-    }
-
     function updateTable() {
       const sortState = sortStates[activeTable];
       const currentData =
@@ -479,7 +462,7 @@
         const { divisor, suffix } = getFormattingInfo(topSubCategories);
 
       createBarChart(topSubCategories, {
-        xLabel: "Expenditures in US Dollars",
+        xLabel: "US Dollars",
         yLabel: "Sub-categories",
         valueFormatter: (value) => formatObligations(value),
         xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
@@ -503,7 +486,7 @@
       const { divisor, suffix } = getFormattingInfo(topAgencies);
 
       createBarChart(topAgencies, {
-        xLabel: "Expenditures in US Dollars",
+        xLabel: "US Dollars",
         yLabel: "Agencies",
         valueFormatter: (value) => formatObligations(value),
         xAxisFormatter: (value) => formatAxisValues(value, divisor, suffix),
@@ -678,7 +661,6 @@
             : event.target.id;
         currentPage = 1;
 
-        updateTableTitle();
         updateTable();
       });
     });
@@ -708,7 +690,6 @@
 
     // End Chart
     setDropdownsFromUrl();
-    updateTableTitle();
     updateTable();
   });
 </script>

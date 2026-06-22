@@ -11,12 +11,12 @@ permalink: /pon/PON_T95
 title: Improve School Readiness
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 937306.1
+  expenditure_amount: 1036313.2
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 937306.1
+  expenditure_amount: 1036313.2
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing

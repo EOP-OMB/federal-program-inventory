@@ -2,50 +2,49 @@
 agencies: '[{"title":"Department of Health and Human Services","total_num_programs":146,"total_obs":13528170278.500002},{"title":"Environmental
   Protection Agency","total_num_programs":13,"total_obs":7114111997.0},{"title":"Department
   of the Interior","total_num_programs":23,"total_obs":934559660.4599999},{"title":"Department
-  of Agriculture","total_num_programs":11,"total_obs":508741211.35},{"title":"Department
+  of Agriculture","total_num_programs":11,"total_obs":508689609.99},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":360000000.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":2,"total_obs":251509021.36},{"title":"Department
+  of Housing and Urban Development","total_num_programs":2,"total_obs":251699643.36},{"title":"Department
   of Education","total_num_programs":7,"total_obs":112122011.1},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":51497542.63},{"title":"Department
   of State","total_num_programs":1,"total_obs":50124369.06},{"title":"Department of
   Veterans Affairs","total_num_programs":1,"total_obs":27015244.0},{"title":"Executive
   Office of the President","total_num_programs":6,"total_obs":16955999.0},{"title":"Department
   of Defense","total_num_programs":3,"total_obs":4255371.11}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":84},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":68},{"title":"Nonprofit
-  Organization","total_num_programs":66},{"title":"U.S. Territory (or Possession)
-  Government (including freely-associated states)","total_num_programs":65},{"title":"State","total_num_programs":42},{"title":"Other","total_num_programs":40},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":38},{"title":"Local","total_num_programs":30},{"title":"Municipality
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":85},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":69},{"title":"Nonprofit
+  Organization","total_num_programs":68},{"title":"U.S. Territory (or Possession)
+  Government (including freely-associated states)","total_num_programs":65},{"title":"State","total_num_programs":43},{"title":"Other","total_num_programs":39},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":38},{"title":"Local","total_num_programs":31},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":27},{"title":"County Government (inclusive of
+  and villages)","total_num_programs":28},{"title":"County Government (inclusive of
   boroughs in Alaska, parishes and other governmental entities with geographic regional
-  control and authority)","total_num_programs":24},{"title":"Other Local Government
-  Consortium, Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":21},{"title":"Unrestricted
-  by Entity Type","total_num_programs":21},{"title":"For-Profit Organization","total_num_programs":18},{"title":"Not-for-Profit
-  Organization","total_num_programs":16},{"title":"Tribal","total_num_programs":14},{"title":"Federally
+  control and authority)","total_num_programs":25},{"title":"Other Local Government
+  Consortium, Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":22},{"title":"Unrestricted
+  by Entity Type","total_num_programs":21},{"title":"For-Profit Organization","total_num_programs":20},{"title":"Not-for-Profit
+  Organization","total_num_programs":16},{"title":"Tribal","total_num_programs":15},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":13},{"title":"Local (includes
   State-designated Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":11},{"title":"U.S.
-  Federal Government","total_num_programs":11},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"School
-  District","total_num_programs":10},{"title":"School District Government","total_num_programs":10},{"title":"Tribally
-  Designated Housing Authority","total_num_programs":10},{"title":"Department or Agency
-  of a U.S. State Government","total_num_programs":9},{"title":"Public Housing Authority","total_num_programs":9},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":9},{"title":"Small Business Person","total_num_programs":9},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Territorial","total_num_programs":9},{"title":"Native
+  Federal Government","total_num_programs":11},{"title":"Department or Agency of a
+  U.S. State Government","total_num_programs":10},{"title":"School District","total_num_programs":10},{"title":"School
+  District Government","total_num_programs":10},{"title":"Territorial","total_num_programs":10},{"title":"Tribally
+  Designated Housing Authority","total_num_programs":10},{"title":"Public Housing
+  Authority","total_num_programs":9},{"title":"Small Business Person","total_num_programs":9},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":9},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":8},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":8},{"title":"Department or Agency of a U.S.
-  Territorial Government","total_num_programs":7},{"title":"Foreign Non-Government
-  Nonprofit Organization","total_num_programs":6},{"title":"Foreign Non-Governmental
-  For-Profit Organization","total_num_programs":6},{"title":"Other Special Disctrict
-  Government","total_num_programs":6},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Interstate
-  Organization","total_num_programs":5},{"title":"Foreign Non-Government Not-for-Profit
-  Organization","total_num_programs":4},{"title":"Profit organization","total_num_programs":4},{"title":"Other
-  private institutions/organizations","total_num_programs":3},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Non-Government
-  - General","total_num_programs":2},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":2},{"title":"City or Township Government","total_num_programs":1},{"title":"County
-  Government","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Indian/Native
+  associations)","total_num_programs":8},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":8},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":6},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":6},{"title":"Other
+  Special Disctrict Government","total_num_programs":6},{"title":"Interstate Organization","total_num_programs":5},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":4},{"title":"Other
+  public institution/organization","total_num_programs":4},{"title":"Profit organization","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Non-Government
+  - General","total_num_programs":2},{"title":"Other private institutions/organizations","total_num_programs":2},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"City
+  or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Indian/Native
   American Tribally Designated Organization","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"International
   Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":1},{"title":"Special District
@@ -257,7 +256,7 @@ programs: '[{"cfda":"66.468","permalink":"/program/66.468","title":"Drinking Wat
   Centers","popular_name":"Home and Community-Based Supportive Services","agency":"Department
   of Health and Human Services","total_obs":451345374.06,"program_type":"assistance_listing"},{"cfda":"10.760","permalink":"/program/10.760","title":"Water
   and Waste Disposal Systems for Rural Communities","popular_name":null,"agency":"Department
-  of Agriculture","total_obs":441665044.81,"program_type":"assistance_listing"},{"cfda":"93.939","permalink":"/program/93.939","title":"HIV
+  of Agriculture","total_obs":441613443.45,"program_type":"assistance_listing"},{"cfda":"93.939","permalink":"/program/93.939","title":"HIV
   Prevention Activities Non-Governmental Organization Based","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":423273374.0,"program_type":"assistance_listing"},{"cfda":"93.696","permalink":"/program/93.696","title":"Certified
   Community Behavioral Health Clinic Expansion Grants","popular_name":"Certified Community
@@ -276,7 +275,7 @@ programs: '[{"cfda":"66.468","permalink":"/program/66.468","title":"Drinking Wat
   of Health and Human Services","total_obs":168492755.0,"program_type":"assistance_listing"},{"cfda":"15.526","permalink":"/program/15.526","title":"San
   Gabriel Basin Restoration","popular_name":null,"agency":"Department of the Interior","total_obs":154000000.0,"program_type":"assistance_listing"},{"cfda":"14.191","permalink":"/program/14.191","title":"Multifamily
   Housing Service Coordinators","popular_name":"Service Coordinator in Multifamily
-  Housing","agency":"Department of Housing and Urban Development","total_obs":148483203.66,"program_type":"assistance_listing"},{"cfda":"93.237","permalink":"/program/93.237","title":"Special
+  Housing","agency":"Department of Housing and Urban Development","total_obs":148673825.66,"program_type":"assistance_listing"},{"cfda":"93.237","permalink":"/program/93.237","title":"Special
   Diabetes Program for Indians Diabetes Prevention and Treatment  Projects","popular_name":"(Indian
   Health)","agency":"Department of Health and Human Services","total_obs":129318969.38,"program_type":"assistance_listing"},{"cfda":"93.926","permalink":"/program/93.926","title":"Healthy
   Start Initiative","popular_name":"Healthy Start","agency":"Department of Health
@@ -453,8 +452,8 @@ programs: '[{"cfda":"66.468","permalink":"/program/66.468","title":"Drinking Wat
   Human Services","total_obs":6857740.0,"program_type":"assistance_listing"},{"cfda":"10.763","permalink":"/program/10.763","title":"Emergency
   Community Water Assistance Grants","popular_name":"Emergency Community Water Assistance
   Grants","agency":"Department of Agriculture","total_obs":6695363.0,"program_type":"assistance_listing"},{"cfda":"10.525","permalink":"/program/10.525","title":"Farm
-  and Ranch Stress Assistance Network Competitive Grants Program","popular_name":"FRSAN,
-  FRSAN-SDA","agency":"Department of Agriculture","total_obs":6507490.86,"program_type":"assistance_listing"},{"cfda":"15.074","permalink":"/program/15.074","title":"Small
+  and Ranch Stress Assistance Network Competitive Grants Program","popular_name":null,"agency":"Department
+  of Agriculture","total_obs":6507490.86,"program_type":"assistance_listing"},{"cfda":"15.074","permalink":"/program/15.074","title":"Small
   Surface Water and Groundwater Storage Projects","popular_name":"Small Storage Program","agency":"Department
   of the Interior","total_obs":6494499.0,"program_type":"assistance_listing"},{"cfda":"93.365","permalink":"/program/93.365","title":"Sickle
   Cell Treatment Demonstration Program","popular_name":"SCDTDP","agency":"Department
@@ -711,5 +710,5 @@ title: Health and Wellbeing
 total_num_agencies: 12
 total_num_applicant_types: 61
 total_num_programs: 215
-total_obs: 22959062705.569996
+total_obs: 22959201726.209995
 ---

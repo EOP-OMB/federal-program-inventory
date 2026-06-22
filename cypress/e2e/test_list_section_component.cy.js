@@ -4,7 +4,6 @@ describe('Test: _list_section component: one item, category', () => {
   beforeEach(() => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
-    cy.wait(1000); // allow time for animations/rendering
   });
 
   it('should have one item', () => {
@@ -31,7 +30,6 @@ describe('Test: _list_section component: multiple items, applicant', () => {
   beforeEach(() => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
-    cy.wait(1000); // allow time for animations/rendering
   });
 
   it('should have multiple items', () => {
@@ -58,7 +56,6 @@ describe('Test: _list_section component: one item, program type', () => {
   beforeEach(() => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
-    cy.wait(1000); // allow time for animations/rendering
   });
 
   it('should have one item', () => {
@@ -85,7 +82,6 @@ describe('Test: _list_section component: no items', () => {
   beforeEach(() => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
-    cy.wait(1000); // allow time for animations/rendering
   });
 
   it('should have no items', () => {
@@ -103,7 +99,6 @@ describe('Test: _list_section component: beneficiaries', () => {
   beforeEach(() => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
-    cy.wait(1000); // allow time for animations/rendering
   });
 
   it('should have no filter items', () => {

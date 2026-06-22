@@ -71,7 +71,7 @@ where_used:
   permalink: /program/10.110
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 28000000.0
+  expenditure_amount: 23088858.0
   name: Emergency Citrus Disease Research and Extension Program
   permalink: /program/10.247
   program_type: assistance_listing
@@ -151,7 +151,7 @@ where_used:
   permalink: /program/10.383
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7680000.0
+  expenditure_amount: 7689341.0
   name: Food and Agriculture Defense Initiative (FADI)
   permalink: /program/10.304
   program_type: assistance_listing

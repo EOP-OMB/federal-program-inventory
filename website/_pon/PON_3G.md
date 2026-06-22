@@ -28,18 +28,18 @@ where_used:
   permalink: /program/84.354
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 1000000.0
   name: Distance Education Grants for Institutions of Higher Education in Insular
     Areas
   permalink: /program/10.322
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2880000.0
+  expenditure_amount: 2800000.0
   name: Equipment Grants Program (EGP)
   permalink: /program/10.519
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20640000.0
+  expenditure_amount: 20901685.29
   name: Facility Improvements at 1890 Facilities (Sec. 1447)
   permalink: /program/10.513
   program_type: assistance_listing

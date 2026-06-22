@@ -65,7 +65,7 @@ where_used:
   permalink: /program/93.550
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 61951526.0
   name: U.S. Refugee Admissions Program
   permalink: /program/19.510
   program_type: assistance_listing

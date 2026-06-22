@@ -100,6 +100,11 @@ where_used:
   name: Invasive and Noxious Plant Management
   permalink: /program/15.230
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 14000000.0
+  name: Landscape-Scale Restoration
+  permalink: /program/10.742
+  program_type: assistance_listing
 - agency: Environmental Protection Agency
   expenditure_amount: 52838000.0
   name: Leaking Underground Storage Tank Trust Fund Corrective Action Program

@@ -158,7 +158,7 @@ where_used:
   permalink: /program/14.126
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 6365000000.0
   name: Mortgage Insurance Nursing Homes, Intermediate Care Facilities, Board and
     Care Homes and Assisted Living Facilities
   permalink: /program/14.129
@@ -206,7 +206,7 @@ where_used:
   permalink: /program/14.873
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 509000000.0
   name: Performance Based Contract Administrator Program
   permalink: /program/14.327
   program_type: assistance_listing
@@ -216,13 +216,13 @@ where_used:
   permalink: /program/14.418
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 150000000.0
   name: Project Rental Assistance Program of the Section 811 Supportive Housing for
     Persons with  Disabilities (811 PRA).
   permalink: /program/14.326
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 18259939933.0
   name: Project-Based Rental Assistance (PBRA)
   permalink: /program/14.195
   program_type: assistance_listing

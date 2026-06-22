@@ -22,6 +22,16 @@ where_used:
   name: Citizenship Integration Training Academy
   permalink: /program/97.154
   program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Support for Combatting Criminal Aliens, Drug, and Human Trafficking
+  permalink: /program/16.076
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
+  program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0
   name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
@@ -38,7 +48,7 @@ where_used:
   permalink: /program/97.149
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 23282000.0
   name: Temporary Labor Certification for Foreign Workers
   permalink: /program/17.273
   program_type: assistance_listing

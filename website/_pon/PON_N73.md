@@ -151,7 +151,7 @@ where_used:
   permalink: /program/20.115
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 260525418.0
   name: Grid Infrastructure Deployment and Resilience
   permalink: /program/81.254
   program_type: assistance_listing

@@ -52,7 +52,7 @@ footer_include: _footer-gwo-pon.html
           <div class="grid-col-8 grid-row">
             {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
             {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
-            {% assign current_fy_obligations_title = "FY " | append: current_fiscal_year | append: " Obligations" %}
+            {% assign current_fy_obligations_title = "FY " | append: current_fiscal_year %}
             {% assign fy_date_text = "FY " | append: fiscal_year %}
             
             {% assign program_count = page.where_used.size | default: 0 %}
@@ -98,7 +98,7 @@ footer_include: _footer-gwo-pon.html
           <h2 class="text-bold margin-y-3">Related Programs</h2>
           <div class="width-full">
             {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
-            {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | append: " Obligations" | split: "," %}
+            {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | split: "," %}
             {% assign table_widths = "40%,30%,30%" | split: "," %}
             {% assign table_alignments = "left,left,right" | split: "," %}
             {% assign table_types = "text,text,currency" | split: "," %}

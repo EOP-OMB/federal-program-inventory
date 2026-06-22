@@ -151,6 +151,11 @@ where_used:
   name: Invasive Species
   permalink: /program/15.652
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 14000000.0
+  name: Landscape-Scale Restoration
+  permalink: /program/10.742
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 800000.0
   name: Latin America and Caribbean Regional
@@ -232,8 +237,8 @@ where_used:
   permalink: /program/15.635
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Pacific Coast Salmon Recovery Pacific Salmon Treaty Program
+  expenditure_amount: 39169877.0
+  name: Pacific Salmon Treaty Program
   permalink: /program/11.438
   program_type: assistance_listing
 - agency: Department of the Interior
@@ -313,8 +318,8 @@ where_used:
   permalink: /program/15.639
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Unallied Management Projects
+  expenditure_amount: 5460000.0
+  name: Unallied Projects
   permalink: /program/11.454
   program_type: assistance_listing
 - agency: Department of the Interior

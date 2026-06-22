@@ -4,46 +4,42 @@ agencies: '[{"title":"Department of Justice","total_num_programs":132,"total_obs
   Office of the President","total_num_programs":1,"total_obs":271657675.6},{"title":"Department
   of Health and Human Services","total_num_programs":8,"total_obs":270471137.48},{"title":"Department
   of the Treasury","total_num_programs":1,"total_obs":52394189.96},{"title":"Department
-  of State","total_num_programs":3,"total_obs":40071984.2},{"title":"Department of
+  of State","total_num_programs":4,"total_obs":40071984.2},{"title":"Department of
   Transportation","total_num_programs":2,"total_obs":11572535.879999999},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":10958128.81},{"title":"Department
   of Energy","total_num_programs":2,"total_obs":0.0}]'
-applicant_types: '[{"title":"Other","total_num_programs":81},{"title":"State (includes
-  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":32},{"title":"Local
+applicant_types: '[{"title":"Other","total_num_programs":82},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":30},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":31},{"title":"Private nonprofit institution/organization
-  (includes institutions of higher education and hospitals)","total_num_programs":29},{"title":"State","total_num_programs":23},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":22},{"title":"Public
+  and hospitals","total_num_programs":29},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":27},{"title":"State","total_num_programs":21},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":20},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":20},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":16},{"title":"Other
-  public institution/organization","total_num_programs":11},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":11},{"title":"U.S.
-  Territories and possessions","total_num_programs":11},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Government
-  - General","total_num_programs":7},{"title":"Individual/Family","total_num_programs":7},{"title":"Other
-  private institutions/organizations","total_num_programs":7},{"title":"Profit organization","total_num_programs":7},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":6},{"title":"County
-  Government","total_num_programs":5},{"title":"Federal","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Nonprofit
-  Organization","total_num_programs":5},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":5},{"title":"Not-for-Profit
-  Organization","total_num_programs":4},{"title":"Anyone/general public","total_num_programs":3},{"title":"City
-  or Township Government","total_num_programs":3},{"title":"Small business (less than
-  500 employees)","total_num_programs":3},{"title":"Sponsored organization","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Interstate","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Minority
-  group","total_num_programs":2},{"title":"Non-Government - General","total_num_programs":2},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":2},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":1},{"title":"For-Profit
-  Organization","total_num_programs":1},{"title":"For-Profit Organization (Other than
-  Small Business)","total_num_programs":1},{"title":"Foreign Government","total_num_programs":1},{"title":"Foreign
-  Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Foreign
+  hospitals)","total_num_programs":18},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":14},{"title":"Nonprofit
+  Organization","total_num_programs":9},{"title":"Other public institution/organization","total_num_programs":9},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":9},{"title":"U.S.
+  Territories and possessions","total_num_programs":9},{"title":"U.S. Territories
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":9},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":8},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"County
+  Government","total_num_programs":5},{"title":"Government - General","total_num_programs":5},{"title":"Individual/Family","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Not-for-Profit
+  Organization","total_num_programs":5},{"title":"Other private institutions/organizations","total_num_programs":5},{"title":"Profit
+  organization","total_num_programs":5},{"title":"City or Township Government","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"Foreign
+  Non-Government Nonprofit Organization","total_num_programs":3},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"For-Profit
+  Organization","total_num_programs":2},{"title":"U.S. Territory (or Possession) Government
+  (including freely-associated states)","total_num_programs":2},{"title":"Anyone/general
+  public","total_num_programs":1},{"title":"County Government (inclusive of boroughs
+  in Alaska, parishes and other governmental entities with geographic regional control
+  and authority)","total_num_programs":1},{"title":"Foreign Government","total_num_programs":1},{"title":"Foreign
   Non-Government Not-for-Profit Organization","total_num_programs":1},{"title":"Independent
   School District","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
   Government Combination","total_num_programs":1},{"title":"School District","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1},{"title":"U.S. Federal Government","total_num_programs":1}]'
+  Business Person","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1},{"title":"U.S.
+  Federal Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -229,7 +225,7 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Violence Prevention and Services Act Formula Grants for States and Native American
   Tribes (including Alaska Native Villages) and Tribal Organizations","agency":"Department
   of Health and Human Services","total_obs":155576343.29,"program_type":"assistance_listing"},{"cfda":"16.838","permalink":"/program/16.838","title":"Comprehensive
-  Opioid, Stimulant, and other Substances Use Program","popular_name":"Title: Comprehensive
+  Opioid, Stimulant, and Substance Use Program","popular_name":"Title: Comprehensive
   Opioid, Stimulant, and Substance Use Program","agency":"Department of Justice","total_obs":124833797.45,"program_type":"assistance_listing"},{"cfda":"97.012","permalink":"/program/97.012","title":"Boating
   Safety Financial Assistance","popular_name":"State RBS Program","agency":"Department
   of Homeland Security","total_obs":124657596.65,"program_type":"assistance_listing"},{"cfda":"16.839","permalink":"/program/16.839","title":"STOP
@@ -430,7 +426,9 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Criminal Alien Assistance Program","popular_name":"(SCAAP)","agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.614","permalink":"/program/16.614","title":"State
   and Local Anti-Terrorism Training","popular_name":"State and Local Anti-Terrorism
-  Training","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
+  Training","agency":"Department of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.043","permalink":"/program/19.043","title":"Study
+  of International Parental Child Abduction","popular_name":null,"agency":"Department
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.049","permalink":"/program/16.049","title":"Supporting
   Vulnerable and At-Risk Youth Transitioning out of Foster Care","popular_name":null,"agency":"Department
   of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.065","permalink":"/program/16.065","title":"Training
   to Improve Police-Based Responses to the People with Mental Illness","popular_name":"Collaborative
@@ -528,7 +526,7 @@ programs: '[{"cfda":"16.575","permalink":"/program/16.575","title":"Crime Victim
   Program","agency":"Department of Justice","total_obs":-16587263.32,"program_type":"assistance_listing"}]'
 title: Law Enforcement Support
 total_num_agencies: 9
-total_num_applicant_types: 63
-total_num_programs: 157
+total_num_applicant_types: 52
+total_num_programs: 158
 total_obs: 3998660400.189999
 ---

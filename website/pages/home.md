@@ -261,6 +261,7 @@ cfo_agencies:
   - title: Health Resources and Services Administration
   - title: Indian Health Service
   - title: National Institutes of Health
+  - title: OFFICE OF THE INSPECTOR GENERAL
   - title: Office Of The Assistant Secretary For Administration (ASA)
   - title: Office of Assistant Secretary for Health
   - title: Office of the Secretary
@@ -424,11 +425,10 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
-outcomes_count: '306 '
+outcomes_count: '307 '
 permalink: /
 program_types:
 - title: Advisory Services and Counseling
-- title: Contracts
 - title: Direct Loans
 - title: Direct Payments for a Specified Use
 - title: Direct Payments with Unrestricted Use
@@ -437,16 +437,14 @@ program_types:
 - title: Formula Grants
 - title: Guaranteed / Insured Loans
 - title: Insurance
-- title: Interest
 - title: Non-Financial
 - title: Project Grants
 - title: Provision of Specialized Services
 - title: Salaries and Expenses
 - title: Sale, Exchange, or Donation of Property or Goods
-- title: Tax Expenditures
 - title: Training
 - title: Use of Property, Facilities, or Equipment
-programs_count: '3,447 '
-spending_total: 7844868660269.63
+programs_count: '3,499 '
+spending_total: 7844853267338.97
 title: Home
 ---

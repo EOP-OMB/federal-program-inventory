@@ -37,6 +37,11 @@ where_used:
   permalink: /program/11.015
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 402429.0
+  name: Bycatch Reduction Engineering Program
+  permalink: /program/11.452
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 20592149.0
   name: Center for Sponsored Coastal Ocean Research Coastal Ocean Program
   permalink: /program/11.478
@@ -62,7 +67,7 @@ where_used:
   permalink: /program/66.202
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 35478890.0
+  expenditure_amount: 36000000.0
   name: Cooperative Forestry Research
   permalink: /program/10.202
   program_type: assistance_listing
@@ -98,7 +103,7 @@ where_used:
   permalink: /program/10.652
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 496500000.0
   name: Fossil Energy Research and Development
   permalink: /program/81.089
   program_type: assistance_listing
@@ -134,7 +139,7 @@ where_used:
   permalink: /program/11.012
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 65719000.0
   name: International Fisheries Commissions
   permalink: /program/19.087
   program_type: assistance_listing
@@ -174,7 +179,7 @@ where_used:
   permalink: /program/15.259
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1246000.0
   name: National Atmospheric Deposition Program
   permalink: /program/10.273
   program_type: assistance_listing
@@ -302,11 +307,6 @@ where_used:
   expenditure_amount: 60000000.0
   name: U.S. Geological Survey Research and Data Collection
   permalink: /program/15.808
-  program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Unallied Industry Projects
-  permalink: /program/11.452
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 3000000.0

@@ -7,7 +7,7 @@ permalink: /gwo/GWO_B4
 title: Enforce Trade Laws
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 64249000.0
   name: International Labor Programs
   permalink: /program/17.401
   program_type: assistance_listing

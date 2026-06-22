@@ -8,12 +8,12 @@ permalink: /gwo/GWO_D1
 title: Increase Occupational Safety and Health
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 250000.0
   name: Brookwood-Sago Grant
   permalink: /program/17.603
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 63160000.0
   name: Consultation Agreements
   permalink: /program/17.504
   program_type: assistance_listing
@@ -33,7 +33,7 @@ where_used:
   permalink: /program/93.WTS
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 10537000.0
   name: Mine Health and Safety Grants
   permalink: /program/17.600
   program_type: assistance_listing
@@ -43,12 +43,12 @@ where_used:
   permalink: /program/93.142
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 120000000.0
   name: Occupational Safety and Health State Program
   permalink: /program/17.503
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 12787000.0
   name: Occupational Safety and Health Susan Harwood Training Grants
   permalink: /program/17.502
   program_type: assistance_listing
@@ -58,7 +58,7 @@ where_used:
   permalink: /program/66.720
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 90000.0
   name: Safety and Health Grants
   permalink: /program/17.604
   program_type: assistance_listing

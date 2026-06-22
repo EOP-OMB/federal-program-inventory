@@ -17,10 +17,21 @@ module.exports = defineConfig({
       // Register the cypress-image-diff-js plugin
       getCompareSnapshotsPlugin(on, config)
 
+      on('before:browser:launch', (browser, launchOptions) => {
+        // Ensure screenshots capture everything on "macbook-16" viewport
+        launchOptions.args.push('--window-size=1536,960')
+
+        return launchOptions
+      });
+
       // implement node event listeners here
       on('task', {
         log(message) {
           console.log(message)
+          return null
+        },
+        table(message) {
+          console.table(message)
           return null
         }
       });

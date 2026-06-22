@@ -1,51 +1,51 @@
 ---
 agencies: '[{"title":"Department of the Treasury","total_num_programs":25,"total_obs":56020000000.0},{"title":"Department
-  of Energy","total_num_programs":20,"total_obs":19766260143.789997},{"title":"Department
-  of Agriculture","total_num_programs":14,"total_obs":8481858592.370001},{"title":"Department
+  of Energy","total_num_programs":20,"total_obs":19742423626.789997},{"title":"Department
+  of Agriculture","total_num_programs":14,"total_obs":8438946165.12},{"title":"Department
   of Health and Human Services","total_num_programs":1,"total_obs":4099656365.0},{"title":"Department
-  of Transportation","total_num_programs":7,"total_obs":654362513.89},{"title":"Department
+  of Transportation","total_num_programs":7,"total_obs":654335153.89},{"title":"Department
   of the Interior","total_num_programs":10,"total_obs":133565285.07},{"title":"Nuclear
   Regulatory Commission","total_num_programs":1,"total_obs":140700.78}]'
-applicant_types: '[{"title":"State (includes District of Columbia, public institutions
-  of higher education and hospitals)","total_num_programs":20},{"title":"Public nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":17},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":13},{"title":"State","total_num_programs":12},{"title":"Local
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":13},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":13},{"title":"State","total_num_programs":12},{"title":"For-Profit
+  Organization","total_num_programs":11},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":10},{"title":"Other","total_num_programs":9},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Native
+  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":7},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Small
+  Business Person","total_num_programs":7},{"title":"Local","total_num_programs":6},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":11},{"title":"Native American Organizations
-  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":10},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":9},{"title":"Nonprofit
-  Organization","total_num_programs":8},{"title":"Profit organization","total_num_programs":8},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Anyone/general
-  public","total_num_programs":7},{"title":"For-Profit Organization","total_num_programs":7},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":6},{"title":"Individual/Family","total_num_programs":5},{"title":"Government
-  - General","total_num_programs":4},{"title":"Municipality or Township government
-  (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":4},{"title":"Other
+  and hospitals","total_num_programs":6},{"title":"Not-for-Profit Organization","total_num_programs":6},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":6},{"title":"Anyone/general
+  public","total_num_programs":5},{"title":"Indian/Native American/Alaska Native Tribal
+  Government (Other than Federally Recognized)","total_num_programs":5},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":4},{"title":"Other public institution/organization","total_num_programs":4},{"title":"Small
-  Business Person","total_num_programs":4},{"title":"Small business (less than 500
-  employees)","total_num_programs":4},{"title":"U.S. State Government (including the
-  District of Columbia)","total_num_programs":4},{"title":"U.S. Territories and possessions","total_num_programs":4},{"title":"County
+  Government Combination","total_num_programs":5},{"title":"Profit organization","total_num_programs":5},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":5},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":4},{"title":"Other public institution/organization","total_num_programs":4},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":3},{"title":"Indian/Native
-  American Tribally Designated Organization","total_num_programs":3},{"title":"Other","total_num_programs":3},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":3},{"title":"U.S. Territory
-  (or Possession) Government (including freely-associated states)","total_num_programs":3},{"title":"Unrestricted
-  by Entity Type","total_num_programs":3},{"title":"Federal","total_num_programs":2},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":2},{"title":"Interstate
-  Organization","total_num_programs":2},{"title":"Local","total_num_programs":2},{"title":"Non-Government
-  - General","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Active-Duty
-  Service Person (including dependents","total_num_programs":1},{"title":"Airport
-  Authority","total_num_programs":1},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"City
+  with geographic regional control and authority)","total_num_programs":3},{"title":"Interstate
+  Organization","total_num_programs":3},{"title":"Unrestricted by Entity Type","total_num_programs":3},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Federal","total_num_programs":2},{"title":"Government
+  - General","total_num_programs":2},{"title":"Indian/Native American Tribally Designated
+  Organization","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Small
+  business (less than 500 employees)","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"U.S.
+  Federal Government","total_num_programs":2},{"title":"U.S. Territories and possessions
+  (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Unrestricted
+  by Individual Type","total_num_programs":2},{"title":"Active-Duty Service Person
+  (including dependents","total_num_programs":1},{"title":"Airport Authority","total_num_programs":1},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"City
   or Township Government","total_num_programs":1},{"title":"County Government","total_num_programs":1},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Farmworker","total_num_programs":1},{"title":"Historically
-  Black Colleges and Universities (HBCUs)","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Land/Property
-  Owner","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Other
-  Special Disctrict Government","total_num_programs":1},{"title":"Other private institutions/organizations","total_num_programs":1},{"title":"Reservist
+  or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"Farmworker","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Land/Property
+  Owner","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Other Special Disctrict Government","total_num_programs":1},{"title":"Other
+  private institutions/organizations","total_num_programs":1},{"title":"Reservist
   (including dependents)","total_num_programs":1},{"title":"Special District Government","total_num_programs":1},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1},{"title":"Unrestricted by Individual
-  Type","total_num_programs":1},{"title":"Veteran (including dependents)","total_num_programs":1}]'
+  Territories and possessions","total_num_programs":1},{"title":"Veteran (including
+  dependents)","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -222,10 +222,10 @@ programs: '[{"cfda":"TC.023","permalink":"/program/TC.023","title":"Energy inves
   Treasury","total_obs":10270000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.022","permalink":"/program/TC.022","title":"Energy
   production credit","popular_name":null,"agency":"Department of the Treasury","total_obs":9650000000.0,"program_type":"tax_expenditure"},{"cfda":"10.758","permalink":"/program/10.758","title":"New
   Empowering Rural America (New ERA) Program","popular_name":"22004","agency":"Department
-  of Agriculture","total_obs":7578901987.1,"program_type":"assistance_listing"},{"cfda":"TC.037","permalink":"/program/TC.037","title":"Credit
+  of Agriculture","total_obs":7556281628.92,"program_type":"assistance_listing"},{"cfda":"TC.037","permalink":"/program/TC.037","title":"Credit
   for residential energy efficient property","popular_name":null,"agency":"Department
   of the Treasury","total_obs":6690000000.0,"program_type":"tax_expenditure"},{"cfda":"81.041","permalink":"/program/81.041","title":"State
-  Energy Program","popular_name":"SEP","agency":"Department of Energy","total_obs":5903063071.44,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
+  Energy Program","popular_name":"State Energy Program","agency":"Department of Energy","total_obs":5879226554.44,"program_type":"assistance_listing"},{"cfda":"81.254","permalink":"/program/81.254","title":"Grid
   Infrastructure Deployment and Resilience","popular_name":null,"agency":"Department
   of Energy","total_obs":4841157917.0,"program_type":"assistance_listing"},{"cfda":"81.253","permalink":"/program/81.253","title":"Manufacturing
   and Energy Supply Chain Demonstrations and Commercial Applications","popular_name":null,"agency":"Department
@@ -239,8 +239,8 @@ programs: '[{"cfda":"TC.023","permalink":"/program/TC.023","title":"Energy inves
   hydrogen production credit","popular_name":null,"agency":"Department of the Treasury","total_obs":1470000000.0,"program_type":"tax_expenditure"},{"cfda":"81.121","permalink":"/program/81.121","title":"Nuclear
   Energy Research, Development and Demonstration","popular_name":"(NE RD&D)","agency":"Department
   of Energy","total_obs":1115318194.99,"program_type":"assistance_listing"},{"cfda":"81.089","permalink":"/program/81.089","title":"Fossil
-  Energy Research and Development","popular_name":"Fossil Energy and Carbon Management
-  (FECM)","agency":"Department of Energy","total_obs":966343889.21,"program_type":"assistance_listing"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Carbon
+  Energy Research and Development","popular_name":"Hydrocarbons and Geothermal Energy
+  Office (HGEO)","agency":"Department of Energy","total_obs":966343889.21,"program_type":"assistance_listing"},{"cfda":"TC.046","permalink":"/program/TC.046","title":"Carbon
   oxide sequestration credit","popular_name":null,"agency":"Department of the Treasury","total_obs":930000000.0,"program_type":"tax_expenditure"},{"cfda":"81.117","permalink":"/program/81.117","title":"Energy
   Efficiency and Renewable Energy Information Dissemination, Outreach, Training and
   Technical Analysis/Assistance","popular_name":"Education & Outreach","agency":"Department
@@ -258,10 +258,10 @@ programs: '[{"cfda":"TC.023","permalink":"/program/TC.023","title":"Energy inves
   of the Treasury","total_obs":400000000.0,"program_type":"tax_expenditure"},{"cfda":"81.087","permalink":"/program/81.087","title":"Renewable
   Energy Research and Development","popular_name":"Renewable Energy (RE)","agency":"Department
   of Energy","total_obs":377694893.09,"program_type":"assistance_listing"},{"cfda":"10.868","permalink":"/program/10.868","title":"Rural
-  Energy for America Program","popular_name":"REAP","agency":"Department of Agriculture","total_obs":377389892.72,"program_type":"assistance_listing"},{"cfda":"TC.015","permalink":"/program/TC.015","title":"Marginal
+  Energy for America Program","popular_name":"REAP","agency":"Department of Agriculture","total_obs":367215541.75,"program_type":"assistance_listing"},{"cfda":"TC.015","permalink":"/program/TC.015","title":"Marginal
   wells credit","popular_name":null,"agency":"Department of the Treasury","total_obs":300000000.0,"program_type":"tax_expenditure"},{"cfda":"10.757","permalink":"/program/10.757","title":"Powering
   Affordable Clean Energy (PACE) Program","popular_name":"Powering Affordable Clean
-  Energy","agency":"Department of Agriculture","total_obs":282945538.42,"program_type":"assistance_listing"},{"cfda":"TC.035","permalink":"/program/TC.035","title":"Credit
+  Energy","agency":"Department of Agriculture","total_obs":277924678.42,"program_type":"assistance_listing"},{"cfda":"TC.035","permalink":"/program/TC.035","title":"Credit
   for construction of new energy efficient homes","popular_name":null,"agency":"Department
   of the Treasury","total_obs":220000000.0,"program_type":"tax_expenditure"},{"cfda":"TC.024","permalink":"/program/TC.024","title":"Advanced
   nuclear power production credit","popular_name":null,"agency":"Department of the
@@ -314,15 +314,13 @@ programs: '[{"cfda":"TC.023","permalink":"/program/TC.023","title":"Energy inves
   of the Interior","total_obs":2822855.7,"program_type":"assistance_listing"},{"cfda":"81.252","permalink":"/program/81.252","title":"Legally-directed
   Academic Programs, Workforce Development and Community Support","popular_name":null,"agency":"Department
   of Energy","total_obs":2769595.0,"program_type":"assistance_listing"},{"cfda":"20.724","permalink":"/program/20.724","title":"Pipeline
-  Safety Research Competitive Academic Agreement Program (CAAP)","popular_name":null,"agency":"Department
-  of Transportation","total_obs":2646202.21,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
+  Safety Research Competitive Academic Agreement Program (CAAP)","popular_name":"Competitive
+  Academic Agreement Program (CAAP)","agency":"Department of Transportation","total_obs":2646202.21,"program_type":"assistance_listing"},{"cfda":"10.867","permalink":"/program/10.867","title":"Bioenergy
   Program for Advanced Biofuels","popular_name":"Advanced Biofuel Payments Program
   (9005)","agency":"Department of Agriculture","total_obs":1494560.76,"program_type":"assistance_listing"},{"cfda":"10.719","permalink":"/program/10.719","title":"Infrastructure
   Investment and Jobs Act Firewood Bank Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":1460000.0,"program_type":"assistance_listing"},{"cfda":"81.250","permalink":"/program/81.250","title":"Energy
-  Policy and Systems Analysis","popular_name":null,"agency":"Department of Energy","total_obs":486613.0,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
-  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
-  of Agriculture","total_obs":465000.0,"program_type":"assistance_listing"},{"cfda":"15.444","permalink":"/program/15.444","title":"Take
+  Policy and Systems Analysis","popular_name":null,"agency":"Department of Energy","total_obs":486613.0,"program_type":"assistance_listing"},{"cfda":"15.444","permalink":"/program/15.444","title":"Take
   Pride","popular_name":"Environmental Studies Program (ESP)","agency":"Department
   of the Interior","total_obs":236740.4,"program_type":"assistance_listing"},{"cfda":"77.009","permalink":"/program/77.009","title":"U.S.
   Nuclear Regulatory Commission Office of Research Financial Assistance Program","popular_name":"NRC
@@ -355,13 +353,16 @@ programs: '[{"cfda":"TC.023","permalink":"/program/TC.023","title":"Energy inves
   of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"81.138","permalink":"/program/81.138","title":"State
   Heating Oil and Propane Program","popular_name":"(SHOPP)","agency":"Department of
   Energy","total_obs":-245.27,"program_type":"assistance_listing"},{"cfda":"81.057","permalink":"/program/81.057","title":"University
-  Coal Research","popular_name":"UCR","agency":"Department of Energy","total_obs":-7902.55,"program_type":"assistance_listing"},{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA
+  Coal Research","popular_name":"University Training Research","agency":"Department
+  of Energy","total_obs":-7902.55,"program_type":"assistance_listing"},{"cfda":"20.723","permalink":"/program/20.723","title":"PHMSA
   Pipeline Safety Research and Development \u201cOther Transaction Agreements\u201d","popular_name":"Pipeline
   Safety Research and Development Awards \"Other Transaction Agreements\"","agency":"Department
-  of Transportation","total_obs":-370455.63,"program_type":"assistance_listing"}]'
+  of Transportation","total_obs":-397815.63,"program_type":"assistance_listing"},{"cfda":"10.754","permalink":"/program/10.754","title":"Higher
+  Blends Infrastructure Incentive Program","popular_name":"HBIIP","agency":"Department
+  of Agriculture","total_obs":-4631858.1,"program_type":"assistance_listing"}]'
 title: Energy Supply
 total_num_agencies: 7
-total_num_applicant_types: 71
+total_num_applicant_types: 70
 total_num_programs: 78
-total_obs: 89155843600.9
+total_obs: 89089067296.65
 ---

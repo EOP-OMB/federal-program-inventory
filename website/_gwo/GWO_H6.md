@@ -174,7 +174,7 @@ where_used:
   permalink: /program/93.187
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3807300.0
+  expenditure_amount: 3809708.0
   name: Veterinary Services Grant Program
   permalink: /program/10.336
   program_type: assistance_listing

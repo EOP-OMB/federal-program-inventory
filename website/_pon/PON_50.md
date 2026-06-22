@@ -63,6 +63,11 @@ where_used:
   name: Cooperative Extension Service
   permalink: /program/10.500
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Disaster-Resilient Buildings, Infrastructure, and Communities
+  permalink: /program/11.069
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 8000000.0
   name: Earthquake Hazards Program Assistance
@@ -102,6 +107,11 @@ where_used:
   expenditure_amount: 0.0
   name: Fire Prevention & Safety
   permalink: /program/97.151
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Fire Risk Reduction
+  permalink: /program/11.052
   program_type: assistance_listing
 - agency: Department of Homeland Security
   expenditure_amount: 0.0
@@ -258,7 +268,7 @@ where_used:
   permalink: /program/97.106
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 315739320.0
+  expenditure_amount: 313544003.04
   name: Smith-Lever Extension Funding
   permalink: /program/10.511
   program_type: assistance_listing

@@ -44,6 +44,11 @@ where_used:
   permalink: /program/81.049
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 2865000.0
+  name: Physical Measurement Laboratory (PML) Grant Program
+  permalink: /program/11.067
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 300000.0
   name: Precision Measurement Grant Program
   permalink: /program/11.053

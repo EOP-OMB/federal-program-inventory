@@ -12,7 +12,6 @@ describe('GWO treemap', () => {
     cy.get('#related-programs table tbody tr')
       .not('[data-total-row]')
       .should('have.length', 5);
-    cy.wait(1000);
     cy.get('#objectiveChart').compareSnapshot('gwo_treemap');
   });
 
@@ -24,15 +23,14 @@ describe('GWO treemap', () => {
     cy.get('#objectiveChart svg text').contains('50.0%').should('exist');
     cy.get('#objectiveChart svg text').contains('33.3%').should('exist');
     cy.get('#objectiveChart svg text').contains('16.7%').should('exist');
-    cy.wait(1000);
     cy.get('#objectiveChart').compareSnapshot('gwo_treemap_labels');
   });
 
-  it('shows tooltip with name, expenditure, and percentage', () => {
+  it('shows tooltip with name, amount, and percentage', () => {
     cy.get('#objectiveChart svg > g > rect').first().trigger('mouseover');
     cy.get('.chart-tooltip').should('be.visible');
     cy.get('.chart-tooltip').should('contain.text', 'Test Program One');
-    cy.get('.chart-tooltip').should('contain.text', 'Expenditure:');
+    cy.get('.chart-tooltip').should('contain.text', 'Amount:');
     cy.get('.chart-tooltip').should('contain.text', 'Percent: 50.0%');
     cy.wait(1000);
     cy.get('#objectiveChart').compareSnapshot('gwo_treemap_tooltip');

@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Education","total_num_programs":31,"total_obs":27165890856.619995},{"title":"Department
+agencies: '[{"title":"Department of Education","total_num_programs":31,"total_obs":27175197929.619995},{"title":"Department
   of the Interior","total_num_programs":6,"total_obs":391569727.1},{"title":"Department
   of Defense","total_num_programs":3,"total_obs":174244642.31},{"title":"Department
   of State","total_num_programs":1,"total_obs":0.0},{"title":"Department of Agriculture","total_num_programs":1,"total_obs":0.0}]'
@@ -215,7 +215,7 @@ programs: '[{"cfda":"84.010","permalink":"/program/84.010","title":"Title I Gran
   Approaches to Literacy; Promise Neighborhoods; Full-Service Community Schools; and
   Congressionally Directed Spending for Elementary and Secondary Education Community
   Projects","popular_name":"Innovative Approaches to Literacy; Promise Neighborhoods
-  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":235316076.31,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
+  (PN); and Full-service Community Schools","agency":"Department of Education","total_obs":244123149.31,"program_type":"assistance_listing"},{"cfda":"84.282","permalink":"/program/84.282","title":"Charter
   Schools","popular_name":null,"agency":"Department of Education","total_obs":224774078.62,"program_type":"assistance_listing"},{"cfda":"84.358","permalink":"/program/84.358","title":"Rural
   Education","popular_name":null,"agency":"Department of Education","total_obs":209783034.17,"program_type":"assistance_listing"},{"cfda":"84.411","permalink":"/program/84.411","title":"Education
   Innovation and Research (formerly Investing in Innovation (i3) Fund)","popular_name":null,"agency":"Department
@@ -223,7 +223,7 @@ programs: '[{"cfda":"84.010","permalink":"/program/84.010","title":"Title I Gran
   Guard ChalleNGe Program","popular_name":"National Guard Youth ChalleNGe Program","agency":"Department
   of Defense","total_obs":164319069.88,"program_type":"assistance_listing"},{"cfda":"84.305","permalink":"/program/84.305","title":"Education
   Research, Development and Dissemination","popular_name":null,"agency":"Department
-  of Education","total_obs":128132451.28,"program_type":"assistance_listing"},{"cfda":"84.196","permalink":"/program/84.196","title":"Education
+  of Education","total_obs":128632451.28,"program_type":"assistance_listing"},{"cfda":"84.196","permalink":"/program/84.196","title":"Education
   for Homeless Children and Youth","popular_name":null,"agency":"Department of Education","total_obs":126752461.58,"program_type":"assistance_listing"},{"cfda":"84.165","permalink":"/program/84.165","title":"Magnet
   Schools Assistance","popular_name":null,"agency":"Department of Education","total_obs":119262638.51,"program_type":"assistance_listing"},{"cfda":"84.403","permalink":"/program/84.403","title":"Consolidated
   Grant to the Outlying Areas","popular_name":null,"agency":"Department of Education","total_obs":105738699.0,"program_type":"assistance_listing"},{"cfda":"84.060","permalink":"/program/84.060","title":"Indian
@@ -267,5 +267,5 @@ title: K–12 Education
 total_num_agencies: 5
 total_num_applicant_types: 37
 total_num_programs: 42
-total_obs: 27731705226.029995
+total_obs: 27741012299.029995
 ---

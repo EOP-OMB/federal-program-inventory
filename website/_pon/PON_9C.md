@@ -172,7 +172,7 @@ where_used:
   permalink: /program/TC.092
   program_type: tax_expenditure
 - agency: Environmental Protection Agency
-  expenditure_amount: 35500000.0
+  expenditure_amount: 51000000.0
   name: Technical Assistance for Treatment Works (Clean Water Act [CWA] Section 104(b)(8))
   permalink: /program/66.446
   program_type: assistance_listing

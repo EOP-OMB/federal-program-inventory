@@ -1,5 +1,5 @@
 # Use a base Python image
-FROM python:3.9-slim
+FROM python:3.14-slim
 ARG http_proxy
 ARG https_proxy
 ARG no_proxy

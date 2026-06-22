@@ -14,7 +14,7 @@ title: Increase Humanities Engagement
 where_used:
 - agency: National Endowment for the Humanities
   expenditure_amount: 2308932.0
-  name: Collaborative Research
+  name: 'National Endowment for the Humanities: Collaborative Research'
   permalink: /program/45.035
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
