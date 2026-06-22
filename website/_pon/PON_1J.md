@@ -140,12 +140,12 @@ where_used:
   permalink: /program/66.034
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 67000000.0
+  expenditure_amount: 67800000.0
   name: Targeted Airshed Grant Program
   permalink: /program/66.956
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 8000000.0
+  expenditure_amount: 12000000.0
   name: Training, Investigations, and Special Purpose Activities of Federally-Recognized
     Indian Tribes Consistent With the Clean Air Act (CAA), Tribal Sovereignty and
     the Protection and Management of Air Quality

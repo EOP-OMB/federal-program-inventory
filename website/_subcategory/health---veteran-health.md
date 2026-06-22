@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":13,"total_obs":4185436198.56}]'
+agencies: '[{"title":"Department of Veterans Affairs","total_num_programs":13,"total_obs":4185477030.56}]'
 applicant_types: '[{"title":"Other","total_num_programs":6},{"title":"State","total_num_programs":6},{"title":"For-Profit
   Organization","total_num_programs":2},{"title":"Nonprofit Organization","total_num_programs":2},{"title":"Not-for-Profit
   Organization","total_num_programs":2},{"title":"County Government (inclusive of
@@ -198,7 +198,7 @@ programs: '[{"cfda":"64.015","permalink":"/program/64.015","title":"Veterans Sta
   Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of
   the Armed Forces","popular_name":"VA Grants for Adaptive Sports Programs for Disabled
   Veterans and Disabled Members of the Armed Forces","agency":"Department of Veterans
-  Affairs","total_obs":7007146.16,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
+  Affairs","total_obs":7047978.16,"program_type":"assistance_listing"},{"cfda":"64.026","permalink":"/program/64.026","title":"Veterans
   State Adult Day Health Care","popular_name":null,"agency":"Department of Veterans
   Affairs","total_obs":6133848.71,"program_type":"assistance_listing"},{"cfda":"64.035","permalink":"/program/64.035","title":"Veterans
   Transportation Program","popular_name":"Veterans Transportation Program/Grants for
@@ -218,5 +218,5 @@ title: Veteran Health
 total_num_agencies: 1
 total_num_applicant_types: 17
 total_num_programs: 13
-total_obs: 4185436198.56
+total_obs: 4185477030.56
 ---

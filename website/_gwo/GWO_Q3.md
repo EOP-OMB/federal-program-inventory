@@ -100,6 +100,11 @@ where_used:
   permalink: /program/15.016
   program_type: assistance_listing
 - agency: Department of Agriculture
+  expenditure_amount: 18094000.0
+  name: FY26 Community Project Funds-Congressionally Directed Spending
+  permalink: /program/10.741
+  program_type: assistance_listing
+- agency: Department of Agriculture
   expenditure_amount: 43000000.0
   name: Forest Health Protection
   permalink: /program/10.680
@@ -174,6 +179,11 @@ where_used:
   name: International Forestry Programs
   permalink: /program/10.684
   program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 14000000.0
+  name: Landscape-Scale Restoration
+  permalink: /program/10.742
+  program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 0.0
   name: Management Initiatives
@@ -225,7 +235,7 @@ where_used:
   permalink: /program/10.735
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3833680.0
+  expenditure_amount: 4000000.0
   name: Renewable Resources Extension Act
   permalink: /program/10.515
   program_type: assistance_listing

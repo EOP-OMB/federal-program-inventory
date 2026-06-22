@@ -7,7 +7,9 @@
     "cypress:open": "cypress open"
   },
   "devDependencies": {
+    "axe-core": "^4.10.3",
     "cypress": "^14.0.0",
+    "cypress-axe": "^1.6.0",
     "js-yaml": "^4.1.0",
     "cypress-image-diff-js": "2.7.0",
     "cypress-image-diff-html-report": "^1.0.0"

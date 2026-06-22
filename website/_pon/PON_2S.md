@@ -17,6 +17,21 @@ where_used:
   permalink: /program/11.619
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Disaster-Resilient Buildings, Infrastructure, and Communities
+  permalink: /program/11.069
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: High Performance Building Systems
+  permalink: /program/11.070
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 250000.0
+  name: Measurement Science and Standards Engagement
+  permalink: /program/11.055
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 0.0
   name: Measurement and Engineering Research and Standards
   permalink: /program/11.609

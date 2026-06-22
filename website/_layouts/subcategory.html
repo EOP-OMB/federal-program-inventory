@@ -12,7 +12,7 @@ footer_include: _footer-subcategory.html
         <h1
           class="usa-display usa-heading site-title-font text-light"
         >
-          {{ layout.header_title }}
+          Explore FY {{ page.fiscal_year }} spending
         </h1>
       </div>
     </div>
@@ -41,14 +41,6 @@ footer_include: _footer-subcategory.html
     <div class="width-full text-primary font-heading-xl line-height-sans-2">
       {{ page.title }}
     </div>
-    <div class="grid-col-8 line-height-sans-3 padding-top-1">
-      Programs and the related information listed on this page use data pulled from
-      SAM.gov, USASpending.gov, and Treasury.gov.
-      <br />
-      <br />
-      Select from the dropdown below to view a category. Once you've selected a
-      category, you can select a sub-category under it.
-    </div>
   </div>
 
   <div class="display-flex flex-wrap flex-align-end">
@@ -57,25 +49,35 @@ footer_include: _footer-subcategory.html
         >Select category
         <span class="usa-label--required">(Required)</span></label
       >
-      <select class="usa-select width-mobile" name="category" id="category">
-        <option value>All categories</option>
-        <option value="value1">Option A</option>
-        <option value="value2">Option B</option>
-        <option value="value3">Option C</option>
-      </select>
+      <div class="category-select-wrap">
+        <select class="usa-select category-select-control width-mobile" name="category" id="category">
+          <option value>All categories</option>
+          <option value="value1">Option A</option>
+          <option value="value2">Option B</option>
+          <option value="value3">Option C</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <div class="margin-right-205 margin-bottom-2">
       <label class="usa-label" for="subcategory">Select sub-category</label>
-      <select
-        class="usa-select width-mobile"
-        name="subcategory"
-        id="subcategory"
-      >
-        <option value>-Select-</option>
-        <option value="value1">Option A</option>
-        <option value="value2">Option B</option>
-        <option value="value3">Option C</option>
-      </select>
+      <div class="category-select-wrap">
+        <select
+          class="usa-select category-select-control width-mobile"
+          name="subcategory"
+          id="subcategory"
+        >
+          <option value>-Select-</option>
+          <option value="value1">Option A</option>
+          <option value="value2">Option B</option>
+          <option value="value3">Option C</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <button id="category-button" class="usa-button bg-primary margin-bottom-2 padding-x-3">
       Update category
@@ -84,17 +86,6 @@ footer_include: _footer-subcategory.html
 
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
-      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        {{ page.title }}
-      </h3>
-
-      <p class="text-ink font-heading-sm line-height-body-3">
-        All data for this chart was provided by the administering agency and sourced from
-        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a> and
-        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
-          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
-      </p>
       <div class="display-flex margin-bottom-2">
         <div class="padding-right-5 display-flex flex-column">
           <div class="text-primary font-heading-3xl text-bold">
@@ -106,7 +97,7 @@ footer_include: _footer-subcategory.html
           <div id="obligations-total" class="text-primary font-heading-3xl text-bold">
           </div>
           <div class="font-heading-lg line-height-heading-5">
-            in FY {{ page.fiscal_year }} expenditures
+            in FY {{ page.fiscal_year }}
           </div>
         </div>
       </div>
@@ -119,7 +110,7 @@ footer_include: _footer-subcategory.html
         class="display-flex flex-justify-start flex-align-center grid-row grid-gap-3"
       >
         <div class="font-heading-lg line-height-heading-2">
-          View top FY {{ page.fiscal_year }} for:
+          View by:
         </div>
 
         <div class="usa-radio display-flex flex-align-center">
@@ -171,9 +162,6 @@ footer_include: _footer-subcategory.html
 
       <!-- Three tables, hidden/shown dynamically -->
       <div id="table-container">
-        <div id="table-title" class="text-bold font-heading-lg text-primary">
-          <!-- The title will be dynamically updated here -->
-        </div>
         <table class="usa-table width-full margin-bottom-0" id="programs-table">
           <thead>
             <tr>
@@ -195,7 +183,7 @@ footer_include: _footer-subcategory.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Expenditures (FY {{ page.fiscal_year }})</span
+                  >Amount</span
                 >
               </th>
             </tr>
@@ -233,7 +221,7 @@ footer_include: _footer-subcategory.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Expenditures (FY {{ page.fiscal_year }})</span
+                  >Amount</span
                 >
               </th>
             </tr>

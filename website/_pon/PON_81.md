@@ -10,7 +10,7 @@ permalink: /pon/PON_81
 title: Improve Financial Sustainability of Programs
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 350000.0
   name: 100,000 Strong in the Americas Innovation Fund
   permalink: /program/19.777
   program_type: assistance_listing

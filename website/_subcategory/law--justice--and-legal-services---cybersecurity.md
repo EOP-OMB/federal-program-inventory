@@ -6,18 +6,16 @@ agencies: '[{"title":"Federal Communications Commission","total_num_programs":2,
   Health and Human Services","total_num_programs":3,"total_obs":-3176.75}]'
 applicant_types: '[{"title":"Other public institution/organization","total_num_programs":4},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":4},{"title":"Nonprofit with 501C3 IRS Status (Other
-  than Institution of Higher Education)","total_num_programs":3},{"title":"Private
+  hospitals)","total_num_programs":4},{"title":"Nonprofit Organization","total_num_programs":3},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
   hospitals)","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Federally
   Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Other
+  and hospitals","total_num_programs":2},{"title":"Not-for-Profit Organization","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Other
   private institutions/organizations","total_num_programs":2},{"title":"For-Profit
   Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Not-for-Profit Organization","total_num_programs":1},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":1},{"title":"Small business
-  (less than 500 employees)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
+  - General","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Small
+  business (less than 500 employees)","total_num_programs":1},{"title":"State","total_num_programs":1},{"title":"U.S.
   Territories and possessions","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural

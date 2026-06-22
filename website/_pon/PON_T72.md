@@ -75,7 +75,7 @@ where_used:
   permalink: /program/10.619
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 64249000.0
   name: International Labor Programs
   permalink: /program/17.401
   program_type: assistance_listing

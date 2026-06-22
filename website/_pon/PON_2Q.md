@@ -63,12 +63,12 @@ where_used:
   permalink: /program/66.130
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 86000000.0
+  expenditure_amount: 82129120.0
   name: Geographic Programs - San Francisco Bay Water Quality Improvement Fund
   permalink: /program/66.126
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 6912593.0
+  expenditure_amount: 7432000.0
   name: Geographic Programs - Southeast New England Coastal Watershed Restoration
     Program
   permalink: /program/66.129

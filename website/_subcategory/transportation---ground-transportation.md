@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":85,"total_obs":90140599583.40997},{"title":"Appalachian
+agencies: '[{"title":"Department of Transportation","total_num_programs":85,"total_obs":90137105240.92998},{"title":"Appalachian
   Regional Commission","total_num_programs":1,"total_obs":273756822.63},{"title":"Department
   of the Interior","total_num_programs":2,"total_obs":44967721.96},{"title":"Department
   of Agriculture","total_num_programs":1,"total_obs":19818847.09},{"title":"Department
@@ -210,7 +210,7 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   of Transportation","total_obs":938449802.65,"program_type":"assistance_listing"},{"cfda":"20.933","permalink":"/program/20.933","title":"National
   Infrastructure Investments","popular_name":"Rebuilding Transportation Infrastructure
   with Sustainability and Equity (RAISE)/Better Utilizing Investments to Leverage
-  Development (BUILD) Grants","agency":"Department of Transportation","total_obs":901648209.63,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
+  Development (BUILD) Grants","agency":"Department of Transportation","total_obs":898153817.63,"program_type":"assistance_listing"},{"cfda":"20.218","permalink":"/program/20.218","title":"Motor
   Carrier Safety Assistance","popular_name":"(MCSAP )","agency":"Department of Transportation","total_obs":467018145.21,"program_type":"assistance_listing"},{"cfda":"20.600","permalink":"/program/20.600","title":"State
   and Community Highway Safety","popular_name":null,"agency":"Department of Transportation","total_obs":400852390.01,"program_type":"assistance_listing"},{"cfda":"20.938","permalink":"/program/20.938","title":"Rural
   Surface Transportation Grant Program","popular_name":null,"agency":"Department of
@@ -237,7 +237,7 @@ programs: '[{"cfda":"20.205","permalink":"/program/20.205","title":"Highway Plan
   of Transportation","total_obs":82924776.45,"program_type":"assistance_listing"},{"cfda":"20.324","permalink":"/program/20.324","title":"Restoration
   and Enhancement","popular_name":null,"agency":"Department of Transportation","total_obs":64720371.0,"program_type":"assistance_listing"},{"cfda":"20.701","permalink":"/program/20.701","title":"University
   Transportation Centers Program","popular_name":"UTC Program","agency":"Department
-  of Transportation","total_obs":63944628.29,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
+  of Transportation","total_obs":63944677.81,"program_type":"assistance_listing"},{"cfda":"20.607","permalink":"/program/20.607","title":"Alcohol
   Open Container Requirements","popular_name":null,"agency":"Department of Transportation","total_obs":55426188.58,"program_type":"assistance_listing"},{"cfda":"15.033","permalink":"/program/15.033","title":"Road
   Maintenance Indian Roads","popular_name":null,"agency":"Department of the Interior","total_obs":37803966.96,"program_type":"assistance_listing"},{"cfda":"10.705","permalink":"/program/10.705","title":"Cooperative
   Forest Road Agreements","popular_name":"Cooperative Forest Road Agreements","agency":"Department
@@ -358,5 +358,5 @@ title: Ground Transportation
 total_num_agencies: 5
 total_num_applicant_types: 32
 total_num_programs: 90
-total_obs: 90480253998.08998
+total_obs: 90476759655.60999
 ---

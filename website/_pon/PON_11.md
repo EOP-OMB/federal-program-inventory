@@ -9,7 +9,7 @@ permalink: /pon/PON_11
 title: Increase Support Services for Individuals with Disabilities
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 213750.0
+  expenditure_amount: 225000.0
   name: 4-H Military Extension Educator Program
   permalink: /program/10.277
   program_type: assistance_listing
@@ -39,12 +39,12 @@ where_used:
   permalink: /program/93.469
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4376672.0
+  expenditure_amount: 5300000.0
   name: Assistive Technology Program for Farmers with Disabilities
   permalink: /program/10.280
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4376672.0
+  expenditure_amount: 5300000.0
   name: Assistive Technology Program for Farmers with Disabilities
   permalink: /program/10.280
   program_type: assistance_listing
@@ -111,7 +111,7 @@ where_used:
   permalink: /program/16.015
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 122000000.0
   name: Multifamily Housing Service Coordinators
   permalink: /program/14.191
   program_type: assistance_listing
@@ -141,7 +141,7 @@ where_used:
   permalink: /program/84.240
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 150000000.0
   name: Project Rental Assistance Program of the Section 811 Supportive Housing for
     Persons with  Disabilities (811 PRA).
   permalink: /program/14.326

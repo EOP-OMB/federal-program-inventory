@@ -11,13 +11,18 @@ where_used:
   name: Advanced Bridge Technology Clearinghouse (ABTC) Development
   permalink: /program/20.947
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Advanced Manufacturing
+  permalink: /program/11.068
+  program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
   expenditure_amount: 42524000.0
   name: Aeronautics
   permalink: /program/43.002
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 4332656.0
+  expenditure_amount: 2000000.0
   name: AmeriCorps National Service and Civic Engagement Research Competition 94.026
   permalink: /program/94.026
   program_type: assistance_listing
@@ -25,6 +30,16 @@ where_used:
   expenditure_amount: 0.0
   name: Analyzing Relationships between Disability, Rehabilitation, and Work
   permalink: /program/96.011
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Applied Biological and Chemical Sciences
+  permalink: /program/11.63A
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Applied Materials Science and Engineering
+  permalink: /program/11.63B
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
@@ -57,6 +72,11 @@ where_used:
   permalink: /program/47.074
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 402429.0
+  name: Bycatch Reduction Engineering Program
+  permalink: /program/11.452
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 3750000.0
   name: CHIPS R&D Science and Technology Fellowship Program  2025-NIST-CHIPS-STFP-01
   permalink: /program/11.049
@@ -77,7 +97,7 @@ where_used:
   permalink: /program/11.431
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 2610000.0
   name: Compensation and Working Conditions
   permalink: /program/17.005
   program_type: assistance_listing
@@ -138,6 +158,11 @@ where_used:
   permalink: /program/43.003
   program_type: assistance_listing
 - agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Fire Risk Reduction
+  permalink: /program/11.052
+  program_type: assistance_listing
+- agency: Department of Commerce
   expenditure_amount: 1576022.0
   name: Geodetic Surveys and Services (Geodesy and Applications of the National Geodetic
     Reference System)
@@ -147,6 +172,16 @@ where_used:
   expenditure_amount: 374350.0
   name: Geosciences
   permalink: /program/47.050
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: High Performance Building Systems
+  permalink: /program/11.070
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1500000.0
+  name: Information Technology Laboratory Grant Program
+  permalink: /program/11.059
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 77000000.0
@@ -179,7 +214,7 @@ where_used:
   permalink: /program/11.047
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 24804000.0
   name: Labor Force Statistics
   permalink: /program/17.002
   program_type: assistance_listing
@@ -187,6 +222,11 @@ where_used:
   expenditure_amount: 512280000.0
   name: Mathematical and Physical Sciences
   permalink: /program/47.049
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 250000.0
+  name: Measurement Science and Standards Engagement
+  permalink: /program/11.055
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 0.0
@@ -244,6 +284,11 @@ where_used:
   name: Office of Science Financial Assistance Program
   permalink: /program/81.049
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 2865000.0
+  name: Physical Measurement Laboratory (PML) Grant Program
+  permalink: /program/11.067
+  program_type: assistance_listing
 - agency: National Science Foundation
   expenditure_amount: 387660000.0
   name: Polar Programs
@@ -265,7 +310,7 @@ where_used:
   permalink: /program/10.577
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 16192604.3
+  expenditure_amount: 907114425.5
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing
@@ -324,11 +369,6 @@ where_used:
   expenditure_amount: 20000000.0
   name: U.S. Geological Survey Use of Space in Cooperator Facilities
   permalink: /program/15.828
-  program_type: assistance_listing
-- agency: Department of Commerce
-  expenditure_amount: 0.0
-  name: Unallied Industry Projects
-  permalink: /program/11.452
   program_type: assistance_listing
 - agency: Department of Commerce
   expenditure_amount: 5493400.0

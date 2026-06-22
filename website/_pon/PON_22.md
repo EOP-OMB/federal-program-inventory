@@ -12,17 +12,17 @@ permalink: /pon/PON_22
 title: Reduce Social Isolation of Older Adults
 where_used:
 - agency: Corporation for National and Community Service
-  expenditure_amount: 50191648.0
+  expenditure_amount: 52271027.0
   name: AmeriCorps Seniors Retired and Senior Volunteer Program (RSVP) 94.002
   permalink: /program/94.002
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 56517611.0
+  expenditure_amount: 53044112.0
   name: AmeriCorps Seniors Senior Companion Program (SCP) 94.016
   permalink: /program/94.016
   program_type: assistance_listing
 - agency: Corporation for National and Community Service
-  expenditure_amount: 89725.0
+  expenditure_amount: 9089602.0
   name: AmeriCorps Seniors Senior Demonstration Program (FGP) 94.017
   permalink: /program/94.017
   program_type: assistance_listing

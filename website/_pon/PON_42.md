@@ -42,7 +42,7 @@ where_used:
   permalink: /program/93.587
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3811800.0
+  expenditure_amount: 8000000.0
   name: Tribal Colleges Extension Programs
   permalink: /program/10.517
   program_type: assistance_listing

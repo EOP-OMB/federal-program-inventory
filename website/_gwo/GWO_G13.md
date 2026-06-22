@@ -8,7 +8,7 @@ permalink: /gwo/GWO_G13
 title: Increase Quality of STEM Education
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 5000000.0
   name: Biotechnology Risk Assessment Research
   permalink: /program/10.219
   program_type: assistance_listing

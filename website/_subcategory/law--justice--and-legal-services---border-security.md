@@ -1,33 +1,35 @@
 ---
-agencies: '[{"title":"Department of State","total_num_programs":12,"total_obs":348943084.01},{"title":"Department
+agencies: '[{"title":"Department of State","total_num_programs":13,"total_obs":348943084.01},{"title":"Department
   of Labor","total_num_programs":1,"total_obs":23246431.33},{"title":"Department of
-  Energy","total_num_programs":2,"total_obs":9354092.79},{"title":"Department of Homeland
-  Security","total_num_programs":3,"total_obs":-887448613.94}]'
+  Energy","total_num_programs":2,"total_obs":9354092.79},{"title":"Department of Justice","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Homeland Security","total_num_programs":3,"total_obs":-887448613.94}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":12},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":11},{"title":"Other
-  public institution/organization","total_num_programs":9},{"title":"Non-Government
-  - General","total_num_programs":8},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":7},{"title":"Other
-  private institutions/organizations","total_num_programs":6},{"title":"Profit organization","total_num_programs":6},{"title":"Small
-  business (less than 500 employees)","total_num_programs":4},{"title":"State (includes
-  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":4},{"title":"Individual/Family","total_num_programs":3},{"title":"State","total_num_programs":3},{"title":"Anyone/general
-  public","total_num_programs":2},{"title":"Federal","total_num_programs":2},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Government
-  - General","total_num_programs":2},{"title":"Local (includes State-designated Indian
-  Tribes, excludes institutions of higher education and hospitals","total_num_programs":2},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":2},{"title":"U.S.
-  Territories and possessions","total_num_programs":2},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"For-Profit
-  Organization","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit
-  Organization","total_num_programs":1},{"title":"Foreign Non-Government Not-for-Profit
-  Organization","total_num_programs":1},{"title":"Foreign Non-Governmental For-Profit
-  Organization","total_num_programs":1},{"title":"International Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Non-domestic
-  (non-US) Entity","total_num_programs":1},{"title":"Nonprofit Organization","total_num_programs":1},{"title":"Nonprofit
+  of higher education and hospitals)","total_num_programs":9},{"title":"Nonprofit
+  Organization","total_num_programs":7},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Other
+  public institution/organization","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"International
+  Organization","total_num_programs":5},{"title":"Non-Government - General","total_num_programs":5},{"title":"Foreign
+  Non-Government Nonprofit Organization","total_num_programs":4},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":4},{"title":"Foreign Non-Government
+  Not-for-Profit Organization","total_num_programs":3},{"title":"Not-for-Profit Organization","total_num_programs":3},{"title":"Other","total_num_programs":3},{"title":"Other
+  private institutions/organizations","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Small
+  business (less than 500 employees)","total_num_programs":2},{"title":"State","total_num_programs":2},{"title":"U.S.
+  Federal Government","total_num_programs":2},{"title":"U.S. State Government (including
+  the District of Columbia)","total_num_programs":2},{"title":"Anyone/general public","total_num_programs":1},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":1},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":1},{"title":"Foreign
+  Government","total_num_programs":1},{"title":"Foreign Non-Governmental For-Profit
+  Organization","total_num_programs":1},{"title":"Individual/Family","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Non-domestic (non-US) Entity","total_num_programs":1},{"title":"Nonprofit
   with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Not-for-Profit
-  Organization","total_num_programs":1},{"title":"Sponsored organization","total_num_programs":1}]'
+  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Small
+  Business Person","total_num_programs":1},{"title":"Specialized group (e.g. health
+  professionals, students, veterans)","total_num_programs":1},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":1},{"title":"Unrestricted
+  by Entity Type","total_num_programs":1},{"title":"Unrestricted by Individual Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -214,7 +216,10 @@ programs: '[{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons Remo
   Integration Training Academy","popular_name":null,"agency":"Department of Homeland
   Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.990","permalink":"/program/19.990","title":"International
   Justice and Accountability Programming","popular_name":null,"agency":"Department
-  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.149","permalink":"/program/97.149","title":"Shelter
+  of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"16.076","permalink":"/program/16.076","title":"Law
+  Enforcement Support for Combatting Criminal Aliens, Drug, and Human Trafficking","popular_name":null,"agency":"Department
+  of Justice","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.042","permalink":"/program/19.042","title":"Migration
+  Management","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.149","permalink":"/program/97.149","title":"Shelter
   and Services Program \u2013 Competitive","popular_name":"SSP-C","agency":"Department
   of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.033","permalink":"/program/19.033","title":"Global
   Threat Reduction","popular_name":" (GTR) ","agency":"Department of State","total_obs":-0.01,"program_type":"assistance_listing"},{"cfda":"19.888","permalink":"/program/19.888","title":"Global
@@ -228,8 +233,8 @@ programs: '[{"cfda":"19.800","permalink":"/program/19.800","title":"Weapons Remo
   Border Security (EXBS) Program","agency":"Department of State","total_obs":-8699171.42,"program_type":"assistance_listing"},{"cfda":"97.141","permalink":"/program/97.141","title":"Shelter
   and Services Program","popular_name":null,"agency":"Department of Homeland Security","total_obs":-887448613.94,"program_type":"assistance_listing"}]'
 title: Border Security
-total_num_agencies: 4
-total_num_applicant_types: 49
-total_num_programs: 18
+total_num_agencies: 5
+total_num_applicant_types: 44
+total_num_programs: 20
 total_obs: -505905005.81
 ---

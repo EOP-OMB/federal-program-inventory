@@ -10,22 +10,23 @@ agencies: '[{"title":"Department of Education","total_num_programs":25,"total_ob
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":2,"total_obs":0.0},{"title":"Department
   of State","total_num_programs":2,"total_obs":0.0},{"title":"Barry Goldwater Scholarship
   and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":20},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"Other","total_num_programs":13},{"title":"Local
+applicant_types: '[{"title":"Private nonprofit institution/organization (includes
+  institutions of higher education and hospitals)","total_num_programs":19},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":19},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":15},{"title":"Other","total_num_programs":14},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":7},{"title":"Federally Recognized Indian Tribal
   Governments","total_num_programs":6},{"title":"Individual/Family","total_num_programs":5},{"title":"Specialized
   group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":4},{"title":"Nonprofit
-  Organization","total_num_programs":3},{"title":"Other public institution/organization","total_num_programs":3},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Active-Duty
-  Service Person (including dependents","total_num_programs":2},{"title":"Reservist
+  Organization","total_num_programs":3},{"title":"Active-Duty Service Person (including
+  dependents","total_num_programs":2},{"title":"Other public institution/organization","total_num_programs":2},{"title":"Reservist
   (including dependents)","total_num_programs":2},{"title":"Sponsored organization","total_num_programs":2},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Veteran
-  (including dependents)","total_num_programs":2},{"title":"Federally Recognized Indian/Native
-  American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Minority
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Unrestricted
+  by Entity Type","total_num_programs":2},{"title":"Veteran (including dependents)","total_num_programs":2},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Minority
   group","total_num_programs":1},{"title":"Native American Organizations (includes
   Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":1},{"title":"Other
   private institutions/organizations","total_num_programs":1},{"title":"Profit organization","total_num_programs":1},{"title":"U.S.
@@ -258,8 +259,7 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Challenge, Multicultural Scholars & Graduate Fellowships Grant Program (Graduate
   Fellowships)","agency":"Department of Agriculture","total_obs":2952686.88,"program_type":"assistance_listing"},{"cfda":"77.008","permalink":"/program/77.008","title":"U.S.
   Nuclear Regulatory Commission Scholarship and Fellowship Program","popular_name":"NRC
-  Scholarship/Fellowship and Distinguished Faculty Advancement Program","agency":"Nuclear
-  Regulatory Commission","total_obs":1345716.9,"program_type":"assistance_listing"},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
+  University Nuclear Leadership Program (UNLP)","agency":"Nuclear Regulatory Commission","total_obs":1345716.9,"program_type":"assistance_listing"},{"cfda":"10.226","permalink":"/program/10.226","title":"Secondary
   Education, Two-Year Postsecondary Education, and Agriculture in the K-12 Classroom","popular_name":"SPECA
   Grants Program","agency":"Department of Agriculture","total_obs":1080566.39,"program_type":"assistance_listing"},{"cfda":"64.120","permalink":"/program/64.120","title":"Post-Vietnam
   Era Veterans'' Educational Assistance","popular_name":"(Veteran''s Educational Assistance
@@ -303,7 +303,7 @@ programs: '[{"cfda":"84.063","permalink":"/program/84.063","title":"Federal Pell
   Programs - Group Projects Abroad","popular_name":null,"agency":"Department of Education","total_obs":-250630.19,"program_type":"assistance_listing"}]'
 title: Post–Secondary Education
 total_num_agencies: 11
-total_num_applicant_types: 35
+total_num_applicant_types: 36
 total_num_programs: 52
 total_obs: 78756847004.57
 ---

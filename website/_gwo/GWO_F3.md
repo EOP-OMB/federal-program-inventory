@@ -166,7 +166,7 @@ where_used:
   permalink: /program/93.823
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 300000.0
   name: Research on Chemical and Biological Defense
   permalink: /program/12.360
   program_type: assistance_listing

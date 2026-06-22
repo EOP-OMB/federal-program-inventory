@@ -17,7 +17,7 @@ where_used:
   permalink: /program/19.010
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 5262000.0
   name: Assessed Contributions for State Department
   permalink: /program/19.707
   program_type: assistance_listing
@@ -45,6 +45,11 @@ where_used:
   expenditure_amount: 0.0
   name: International Compliance and Enforcement Projects
   permalink: /program/66.313
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
   program_type: assistance_listing
 - agency: Department of Energy
   expenditure_amount: 0.0

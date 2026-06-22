@@ -1,31 +1,24 @@
 ---
-agencies: '[{"title":"Department of Transportation","total_num_programs":30,"total_obs":23381640154.379997},{"title":"Department
+agencies: '[{"title":"Department of Transportation","total_num_programs":30,"total_obs":23374097001.949997},{"title":"Department
   of the Treasury","total_num_programs":5,"total_obs":1900000000.0},{"title":"Department
   of Homeland Security","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":19},{"title":"Other
-  Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":13},{"title":"State","total_num_programs":13},{"title":"Transit
-  Authority","total_num_programs":13},{"title":"Local","total_num_programs":10},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Nonprofit
-  Organization","total_num_programs":6},{"title":"County Government (inclusive of
-  boroughs in Alaska, parishes and other governmental entities with geographic regional
-  control and authority)","total_num_programs":5},{"title":"Municipality or Township
-  government (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":4},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Other","total_num_programs":3},{"title":"Planning
-  Commission","total_num_programs":3},{"title":"Unrestricted by Entity Type","total_num_programs":3},{"title":"Airport
-  Authority","total_num_programs":2},{"title":"Interstate Organization","total_num_programs":2},{"title":"Other
-  public institution/organization","total_num_programs":2},{"title":"Port Authority","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Tribal","total_num_programs":2},{"title":"Department
+applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":20},{"title":"Transit
+  Authority","total_num_programs":15},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":14},{"title":"State","total_num_programs":14},{"title":"Local","total_num_programs":12},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":8},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":6},{"title":"Nonprofit
+  Organization","total_num_programs":6},{"title":"Municipality or Township government
+  (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":5},{"title":"Tribal","total_num_programs":4},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":4},{"title":"Airport
+  Authority","total_num_programs":3},{"title":"Interstate Organization","total_num_programs":3},{"title":"Other","total_num_programs":3},{"title":"Planning
+  Commission","total_num_programs":3},{"title":"Port Authority","total_num_programs":3},{"title":"Unrestricted
+  by Entity Type","total_num_programs":3},{"title":"Other Special Disctrict Government","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"Department
   or Agency of a U.S. State Government","total_num_programs":1},{"title":"Department
   or Agency of a U.S. Territorial Government","total_num_programs":1},{"title":"For-Profit
   Organization","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
-  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Other
-  Special Disctrict Government","total_num_programs":1},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Profit
-  organization","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
-  Federal Government","total_num_programs":1}]'
+  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"U.S. Federal Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -198,17 +191,17 @@ parent_title: Transportation
 permalink: /category/transportation/multi-modal-transportation
 programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Transit
   Formula Grants","popular_name":"Urbanized Area Formula Funding Program","agency":"Department
-  of Transportation","total_obs":9766990329.98,"program_type":"assistance_listing"},{"cfda":"20.525","permalink":"/program/20.525","title":"State
+  of Transportation","total_obs":9766979367.55,"program_type":"assistance_listing"},{"cfda":"20.525","permalink":"/program/20.525","title":"State
   of Good Repair Grants Program","popular_name":"SGR; Rail Vehicle Replacement Grant;
   Section 5337","agency":"Department of Transportation","total_obs":4446523604.34,"program_type":"assistance_listing"},{"cfda":"20.500","permalink":"/program/20.500","title":"Federal
   Transit Capital Investment Grants","popular_name":"New Starts, Small Starts, and
   Core Capacity  ","agency":"Department of Transportation","total_obs":3975183541.98,"program_type":"assistance_listing"},{"cfda":"20.526","permalink":"/program/20.526","title":"Buses
   and Bus Facilities Formula, Competitive, and Low or No Emissions Programs","popular_name":"Bus
-  Program","agency":"Department of Transportation","total_obs":2334106376.82,"program_type":"assistance_listing"},{"cfda":"TC.094","permalink":"/program/TC.094","title":"Exclusion
+  Program","agency":"Department of Transportation","total_obs":2326588368.82,"program_type":"assistance_listing"},{"cfda":"TC.094","permalink":"/program/TC.094","title":"Exclusion
   of interest for airport, dock, and similar bonds","popular_name":null,"agency":"Department
   of the Treasury","total_obs":1520000000.0,"program_type":"tax_expenditure"},{"cfda":"20.509","permalink":"/program/20.509","title":"Formula
   Grants for Rural Areas and Tribal Transit Program","popular_name":"Section 5311","agency":"Department
-  of Transportation","total_obs":1199634264.18,"program_type":"assistance_listing"},{"cfda":"20.513","permalink":"/program/20.513","title":"Enhanced
+  of Transportation","total_obs":1199620082.18,"program_type":"assistance_listing"},{"cfda":"20.513","permalink":"/program/20.513","title":"Enhanced
   Mobility of Seniors and Individuals with Disabilities","popular_name":"Section 5310
   Program","agency":"Department of Transportation","total_obs":446391431.07,"program_type":"assistance_listing"},{"cfda":"20.823","permalink":"/program/20.823","title":"Port
   Infrastructure Development Program","popular_name":"Port Infrastructure Development
@@ -265,7 +258,7 @@ programs: '[{"cfda":"20.507","permalink":"/program/20.507","title":"Federal Tran
   Transportation","total_obs":-1466423.25,"program_type":"assistance_listing"}]'
 title: Multi–modal Transportation
 total_num_agencies: 3
-total_num_applicant_types: 38
+total_num_applicant_types: 26
 total_num_programs: 36
-total_obs: 25281640154.379997
+total_obs: 25274097001.949997
 ---

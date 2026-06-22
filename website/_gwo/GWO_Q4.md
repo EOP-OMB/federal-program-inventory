@@ -124,13 +124,13 @@ where_used:
   permalink: /program/66.466
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 57000000.0
+  expenditure_amount: 62700000.0
   name: Geographic Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability
     and Monitoring Grants
   permalink: /program/66.964
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 19279752.0
+  expenditure_amount: 19232685.0
   name: Geographic Programs - Columbia River Basin Restoration (CRBR) Program
   permalink: /program/66.962
   program_type: assistance_listing
@@ -146,29 +146,29 @@ where_used:
   permalink: /program/66.130
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 37510615.0
+  expenditure_amount: 32399499.0
   name: Geographic Programs - Gulf of America Program
   permalink: /program/66.475
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 12238000.0
+  expenditure_amount: 12697000.0
   name: Geographic Programs - Lake Pontchartrain Basic Restoration Program (PRP)
   permalink: /program/66.125
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 4438145.0
+  expenditure_amount: 58421821.0
   name: 'Geographic Programs - Puget Sound Action Agenda: Technical Investigations
     and Implementation Assistance Program'
   permalink: /program/66.123
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 19367949.0
+  expenditure_amount: 19366949.0
   name: 'Geographic Programs - Puget Sound Protection and Restoration: Tribal Implementation
     Assistance Program'
   permalink: /program/66.121
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 86000000.0
+  expenditure_amount: 82129120.0
   name: Geographic Programs - San Francisco Bay Water Quality Improvement Fund
   permalink: /program/66.126
   program_type: assistance_listing
@@ -178,7 +178,7 @@ where_used:
   permalink: /program/66.484
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 6912593.0
+  expenditure_amount: 7432000.0
   name: Geographic Programs - Southeast New England Coastal Watershed Restoration
     Program
   permalink: /program/66.129
@@ -306,7 +306,7 @@ where_used:
   permalink: /program/15.514
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 13100000.0
+  expenditure_amount: 28461000.0
   name: Regional Wetland Program Development Grants
   permalink: /program/66.461
   program_type: assistance_listing
@@ -336,7 +336,7 @@ where_used:
   permalink: /program/15.563
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 11580000.0
+  expenditure_amount: 12164116.0
   name: Support for the Gulf Hypoxia Action Plan
   permalink: /program/66.485
   program_type: assistance_listing
@@ -386,7 +386,7 @@ where_used:
   permalink: /program/15.530
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 28596000.0
+  expenditure_amount: 34214020.0
   name: Water Quality Management Planning
   permalink: /program/66.454
   program_type: assistance_listing

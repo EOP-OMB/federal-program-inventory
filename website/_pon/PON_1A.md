@@ -17,7 +17,7 @@ where_used:
   permalink: /program/10.992
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4376672.0
+  expenditure_amount: 5300000.0
   name: Assistive Technology Program for Farmers with Disabilities
   permalink: /program/10.280
   program_type: assistance_listing
@@ -57,7 +57,7 @@ where_used:
   permalink: /program/10.248
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 44248068.0
+  expenditure_amount: 66161418.0
   name: Organic Agriculture Research and Extension Initiative
   permalink: /program/10.307
   program_type: assistance_listing
@@ -73,7 +73,7 @@ where_used:
   permalink: /program/10.031
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4673856.0
   name: Regional Aquaculture Center Program
   permalink: /program/10.271
   program_type: assistance_listing

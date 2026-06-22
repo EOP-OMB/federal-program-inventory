@@ -16,7 +16,7 @@ where_used:
   permalink: /program/66.001
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 905457.0
+  expenditure_amount: 10073863.0
   name: Beach Monitoring and Notification Program Implementation Grants
   permalink: /program/66.472
   program_type: assistance_listing
@@ -26,7 +26,7 @@ where_used:
   permalink: /program/20.268
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 0.0
+  expenditure_amount: 9500000.0
   name: Environmental Information Exchange Network Grant Program and Related Assistance
   permalink: /program/66.608
   program_type: assistance_listing
@@ -41,17 +41,17 @@ where_used:
   permalink: /program/15.540
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1246000.0
   name: National Atmospheric Deposition Program
   permalink: /program/10.273
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1246000.0
   name: National Atmospheric Deposition Program
   permalink: /program/10.273
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 8000000.0
+  expenditure_amount: 12000000.0
   name: Training, Investigations, and Special Purpose Activities of Federally-Recognized
     Indian Tribes Consistent With the Clean Air Act (CAA), Tribal Sovereignty and
     the Protection and Management of Air Quality

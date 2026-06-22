@@ -36,13 +36,13 @@ where_used:
   permalink: /program/15.407
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1200000.0
   name: Native Hawaiian Community Guest Stewardship
   permalink: /program/15.068
   program_type: assistance_listing
 - agency: Department of the Interior
   expenditure_amount: 2750000.0
-  name: Native Hawaiian and Alaka Native Culture and Arts Development
+  name: Native Hawaiian and Alaska Native Culture and Arts Development
   permalink: /program/15.071
   program_type: assistance_listing
 - agency: Department of the Interior

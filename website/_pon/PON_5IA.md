@@ -41,7 +41,7 @@ where_used:
   permalink: /program/19.888
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 7000000.0
   name: Middle East Regional Cooperation Program
   permalink: /program/19.502
   program_type: assistance_listing
@@ -55,6 +55,11 @@ where_used:
   name: Professional and Cultural Exchange Programs - Special Professional and Cultural
     Programs
   permalink: /program/19.012
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Strategic Global Priorities
+  permalink: /program/19.041
   program_type: assistance_listing
 - agency: Department of State
   expenditure_amount: 0.0

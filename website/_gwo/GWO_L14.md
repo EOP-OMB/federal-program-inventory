@@ -50,7 +50,7 @@ where_used:
   permalink: /program/93.134
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 5290000000.0
+  expenditure_amount: 5342179000.0
   name: Health Center Program
   permalink: /program/93.224
   program_type: assistance_listing

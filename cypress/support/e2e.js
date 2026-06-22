@@ -15,16 +15,17 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-axe'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 // Register cypress-image-diff-js command for visual regression testing
-import compareSnapshotCommand from 'cypress-image-diff-js/command';
-compareSnapshotCommand();
+import compareSnapshotCommand from 'cypress-image-diff-js/command'
+compareSnapshotCommand()
 
 beforeEach(() => {
   // clear visited links and other state before each spec file
-  cy.clearCookies();
-  cy.clearLocalStorage();
-});
+  cy.clearCookies()
+  cy.clearLocalStorage()
+})

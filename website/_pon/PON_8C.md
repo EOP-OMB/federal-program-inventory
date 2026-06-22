@@ -37,6 +37,11 @@ where_used:
   name: Crash Causal Factors Grant Program
   permalink: /program/20.246
   program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: Disaster-Resilient Buildings, Infrastructure, and Communities
+  permalink: /program/11.069
+  program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 14425121.0
   name: Discretionary Planning Grant Programs
@@ -46,6 +51,11 @@ where_used:
   expenditure_amount: 2000000.0
   name: Exploratory Advanced Research (EAR) Program
   permalink: /program/20.221
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 1000000.0
+  name: High Performance Building Systems
+  permalink: /program/11.070
   program_type: assistance_listing
 - agency: Department of Transportation
   expenditure_amount: 130000000.0

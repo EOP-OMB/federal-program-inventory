@@ -1,63 +1,63 @@
 ---
 agencies: '[{"title":"National Science Foundation","total_num_programs":10,"total_obs":6740030158.0},{"title":"Department
-  of Energy","total_num_programs":2,"total_obs":1422426400.82},{"title":"National
-  Aeronautics and Space Administration","total_num_programs":6,"total_obs":1356878247.47},{"title":"Department
-  of Commerce","total_num_programs":25,"total_obs":983865964.93},{"title":"Department
+  of Energy","total_num_programs":2,"total_obs":1423092384.8},{"title":"National Aeronautics
+  and Space Administration","total_num_programs":6,"total_obs":1356374183.86},{"title":"Department
+  of Commerce","total_num_programs":33,"total_obs":983865964.93},{"title":"Department
   of Labor","total_num_programs":2,"total_obs":82504420.97999999},{"title":"Department
   of the Interior","total_num_programs":7,"total_obs":80916309.53},{"title":"Department
+  of Agriculture","total_num_programs":6,"total_obs":21474405.759999998},{"title":"Department
   of Health and Human Services","total_num_programs":2,"total_obs":9014791.79},{"title":"Department
-  of Transportation","total_num_programs":2,"total_obs":8424999.69},{"title":"Department
-  of Agriculture","total_num_programs":6,"total_obs":6441967.64},{"title":"Corporation
+  of Transportation","total_num_programs":2,"total_obs":8424999.69},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":1448274.47},{"title":"Social
   Security Administration","total_num_programs":3,"total_obs":-2882583.97}]'
-applicant_types: '[{"title":"Other","total_num_programs":19},{"title":"Public nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Private
+applicant_types: '[{"title":"Other","total_num_programs":19},{"title":"Unrestricted
+  by Entity Type","total_num_programs":19},{"title":"State","total_num_programs":15},{"title":"For-Profit
+  Organization","total_num_programs":12},{"title":"Nonprofit Organization","total_num_programs":12},{"title":"Local","total_num_programs":11},{"title":"Tribal","total_num_programs":10},{"title":"Not-for-Profit
+  Organization","total_num_programs":9},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":9},{"title":"Public
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":13},{"title":"State","total_num_programs":11},{"title":"State
-  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":11},{"title":"Unrestricted
-  by Entity Type","total_num_programs":11},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":10},{"title":"Other public institution/organization","total_num_programs":10},{"title":"Profit
-  organization","total_num_programs":10},{"title":"Local (includes State-designated
-  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":8},{"title":"Other
-  private institutions/organizations","total_num_programs":8},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Native
-  American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":6},{"title":"Nonprofit Organization","total_num_programs":6},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":5},{"title":"For-Profit
-  Organization","total_num_programs":5},{"title":"Local","total_num_programs":5},{"title":"Non-Government
-  - General","total_num_programs":5},{"title":"Small business (less than 500 employees)","total_num_programs":5},{"title":"Anyone/general
-  public","total_num_programs":4},{"title":"Not-for-Profit Organization","total_num_programs":4},{"title":"Tribal","total_num_programs":4},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"For-Profit
-  Organization (Other than Small Business)","total_num_programs":3},{"title":"Government
-  - General","total_num_programs":3},{"title":"Historically Black Colleges and Universities
-  (HBCUs)","total_num_programs":3},{"title":"Individual/Family","total_num_programs":3},{"title":"Nonprofit
-  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":3},{"title":"Nonprofit
-  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":3},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":3},{"title":"Sponsored
-  organization","total_num_programs":3},{"title":"Territorial","total_num_programs":3},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":3},{"title":"U.S.
-  Territories and possessions","total_num_programs":3},{"title":"Unrestricted by Individual
-  Type","total_num_programs":3},{"title":"Alaska Native and Native Hawaiian Serving
-  Institutions","total_num_programs":2},{"title":"County Government","total_num_programs":2},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":2},{"title":"Hispanic-serving
-  Institution","total_num_programs":2},{"title":"Indian/Native American Tribal Government
-  (Other than Federally Recognized)","total_num_programs":2},{"title":"School District","total_num_programs":2},{"title":"Small
-  Business Person","total_num_programs":2},{"title":"Specialized group (e.g. health
-  professionals, students, veterans)","total_num_programs":2},{"title":"Tribally Controlled
-  Colleges and Universities (TCCUs)","total_num_programs":2},{"title":"City or Township
-  Government","total_num_programs":1},{"title":"Foreign Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Foreign
-  Non-Government Not-for-Profit Organization","total_num_programs":1},{"title":"Foreign
-  Non-Governmental For-Profit Organization","total_num_programs":1},{"title":"Indian/Native
-  American Tribally Designated Organization","total_num_programs":1},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"International
-  Organization","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Interstate
-  Organization","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
-  group","total_num_programs":1},{"title":"Municipality or Township government (inclusive
-  of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":1},{"title":"Non-domestic
-  (non-US) Entity","total_num_programs":1},{"title":"Other (specify)","total_num_programs":1},{"title":"Other
+  hospitals)","total_num_programs":9},{"title":"U.S. State Government (including the
+  District of Columbia)","total_num_programs":9},{"title":"Unrestricted by Individual
+  Type","total_num_programs":8},{"title":"Territorial","total_num_programs":7},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":7},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":6},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":6},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":6},{"title":"Other public institution/organization","total_num_programs":6},{"title":"Profit
+  organization","total_num_programs":6},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":6},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":5},{"title":"Other private
+  institutions/organizations","total_num_programs":5},{"title":"Municipality or Township
+  government (inclusive of cities, towns, boroughs (except in Alaska), and villages)","total_num_programs":4},{"title":"Other
   Local Government Consortium, Regional Organization (Intrastate), or Other Local
-  Government Combination","total_num_programs":1},{"title":"U.S. Federal Government","total_num_programs":1},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":1}]'
+  Government Combination","total_num_programs":4},{"title":"School District","total_num_programs":4},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":3},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"Government
+  - General","total_num_programs":3},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":3},{"title":"Non-Government
+  - General","total_num_programs":3},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":3},{"title":"Small
+  Business Person","total_num_programs":3},{"title":"Small business (less than 500
+  employees)","total_num_programs":3},{"title":"U.S. Territories and possessions","total_num_programs":3},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":3},{"title":"Anyone/general
+  public","total_num_programs":2},{"title":"Foreign Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"International
+  Organization","total_num_programs":2},{"title":"Other Special Disctrict Government","total_num_programs":2},{"title":"School
+  District Government","total_num_programs":2},{"title":"Specialized group (e.g. health
+  professionals, students, veterans)","total_num_programs":2},{"title":"Sponsored
+  organization","total_num_programs":2},{"title":"Alaska Native and Native Hawaiian
+  Serving Institutions","total_num_programs":1},{"title":"For-Profit Organization
+  (Other than Small Business)","total_num_programs":1},{"title":"Foreign Non-Government
+  Nonprofit Organization","total_num_programs":1},{"title":"Foreign Non-Government
+  Not-for-Profit Organization","total_num_programs":1},{"title":"Foreign Non-Governmental
+  For-Profit Organization","total_num_programs":1},{"title":"Hispanic-serving Institution","total_num_programs":1},{"title":"Historically
+  Black Colleges and Universities (HBCUs)","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Interstate
+  Organization","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Minority
+  group","total_num_programs":1},{"title":"Non-domestic (non-US) Entity","total_num_programs":1},{"title":"Nonprofit
+  with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Nonprofit
+  without 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
+  (specify)","total_num_programs":1},{"title":"Tribally Controlled Colleges and Universities
+  (TCCUs)","total_num_programs":1},{"title":"U.S. Federal Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
@@ -236,8 +236,8 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   (NP), Workforce Development for Teachers and Scientists (WDTS), Small Business Innovation
   Research (SBIR) Program and Small Business Technology Transfer (STTR) Program),  Isotope
   R&D and Production (DOE IP), Accelerator R&D and Production (ARDAP))","agency":"Department
-  of Energy","total_obs":1422427337.82,"program_type":"assistance_listing"},{"cfda":"43.001","permalink":"/program/43.001","title":"Science","popular_name":"SMD","agency":"National
-  Aeronautics and Space Administration","total_obs":1172076524.22,"program_type":"assistance_listing"},{"cfda":"47.070","permalink":"/program/47.070","title":"Computer
+  of Energy","total_obs":1423093321.8,"program_type":"assistance_listing"},{"cfda":"43.001","permalink":"/program/43.001","title":"Science","popular_name":"SMD","agency":"National
+  Aeronautics and Space Administration","total_obs":1171372460.61,"program_type":"assistance_listing"},{"cfda":"47.070","permalink":"/program/47.070","title":"Computer
   and Information Science and Engineering","popular_name":"(CISE)","agency":"National
   Science Foundation","total_obs":1077040756.0,"program_type":"assistance_listing"},{"cfda":"47.050","permalink":"/program/47.050","title":"Geosciences","popular_name":"(GEO)","agency":"National
   Science Foundation","total_obs":1029719183.0,"program_type":"assistance_listing"},{"cfda":"47.074","permalink":"/program/47.074","title":"Biological
@@ -259,7 +259,7 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   and Space Administration","total_obs":86690042.22,"program_type":"assistance_listing"},{"cfda":"11.620","permalink":"/program/11.620","title":"Science,
   Technology, Business and/or Education Outreach","popular_name":null,"agency":"Department
   of Commerce","total_obs":84133266.66,"program_type":"assistance_listing"},{"cfda":"43.002","permalink":"/program/43.002","title":"Aeronautics","popular_name":"Aeronautics","agency":"National
-  Aeronautics and Space Administration","total_obs":83093711.77,"program_type":"assistance_listing"},{"cfda":"17.002","permalink":"/program/17.002","title":"Labor
+  Aeronautics and Space Administration","total_obs":83293711.77,"program_type":"assistance_listing"},{"cfda":"17.002","permalink":"/program/17.002","title":"Labor
   Force Statistics","popular_name":null,"agency":"Department of Labor","total_obs":74786080.3,"program_type":"assistance_listing"},{"cfda":"11.431","permalink":"/program/11.431","title":"Climate
   and Atmospheric Research","popular_name":null,"agency":"Department of Commerce","total_obs":68921927.64,"program_type":"assistance_listing"},{"cfda":"15.945","permalink":"/program/15.945","title":"Cooperative
   Research and Training Programs \u2013 Resources of the National Park System","popular_name":"Cooperative
@@ -274,7 +274,8 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   of Commerce","total_obs":24186171.97,"program_type":"assistance_listing"},{"cfda":"11.400","permalink":"/program/11.400","title":"Geodetic
   Surveys and Services (Geodesy and Applications of the National Geodetic Reference
   System)","popular_name":"Geodetic and Hydrographic Surveys","agency":"Department
-  of Commerce","total_obs":18304924.0,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
+  of Commerce","total_obs":18304924.0,"program_type":"assistance_listing"},{"cfda":"10.621","permalink":"/program/10.621","title":"Assisting
+  Specialty Crop Exports","popular_name":"ASCE","agency":"Department of Agriculture","total_obs":15536324.37,"program_type":"assistance_listing"},{"cfda":"43.009","permalink":"/program/43.009","title":"Mission
   Support","popular_name":"Safety, Security and Mission Services (Mission Support
   Directorate)","agency":"National Aeronautics and Space Administration","total_obs":15020782.92,"program_type":"assistance_listing"},{"cfda":"15.810","permalink":"/program/15.810","title":"National
   Cooperative Geologic Mapping","popular_name":"(StateMap and EdMap)","agency":"Department
@@ -303,15 +304,17 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   for National and Community Service","total_obs":1448274.47,"program_type":"assistance_listing"},{"cfda":"15.923","permalink":"/program/15.923","title":"National
   Center for Preservation Technology and Training","popular_name":"NCPTT","agency":"Department
   of the Interior","total_obs":687401.11,"program_type":"assistance_listing"},{"cfda":"11.011","permalink":"/program/11.011","title":"Ocean
-  Exploration","popular_name":null,"agency":"Department of Commerce","total_obs":550000.0,"program_type":"assistance_listing"},{"cfda":"10.621","permalink":"/program/10.621","title":"Assisting
-  Specialty Crop Exports","popular_name":"ASCE","agency":"Department of Agriculture","total_obs":477693.0,"program_type":"assistance_listing"},{"cfda":"11.452","permalink":"/program/11.452","title":"Unallied
-  Industry Projects","popular_name":"Unallied Industry Projects","agency":"Department
+  Exploration","popular_name":null,"agency":"Department of Commerce","total_obs":550000.0,"program_type":"assistance_listing"},{"cfda":"11.452","permalink":"/program/11.452","title":"Bycatch
+  Reduction Engineering Program","popular_name":"Bycatch Reduction Engineering Program","agency":"Department
   of Commerce","total_obs":383266.41,"program_type":"assistance_listing"},{"cfda":"11.016","permalink":"/program/11.016","title":"Statistical,
   Research, and Methodology  Assistance","popular_name":null,"agency":"Department
-  of Commerce","total_obs":208959.0,"program_type":"assistance_listing"},{"cfda":"96.011","permalink":"/program/96.011","title":"Analyzing
+  of Commerce","total_obs":208959.0,"program_type":"assistance_listing"},{"cfda":"11.068","permalink":"/program/11.068","title":"Advanced
+  Manufacturing","popular_name":"N/A","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.011","permalink":"/program/96.011","title":"Analyzing
   Relationships between Disability, Rehabilitation, and Work","popular_name":"Analyzing
   Relationships between Disability, Rehabilitation, and Work (ARDRAW)","agency":"Social
-  Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.468","permalink":"/program/11.468","title":"Applied
+  Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.63A","permalink":"/program/11.63A","title":"Applied
+  Biological and Chemical Sciences","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.63B","permalink":"/program/11.63B","title":"Applied
+  Materials Science and Engineering","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.468","permalink":"/program/11.468","title":"Applied
   Meteorological Research","popular_name":"CSTAR Program","agency":"Department of
   Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.049","permalink":"/program/11.049","title":"CHIPS
   R&D Science and Technology Fellowship Program  2025-NIST-CHIPS-STFP-01","popular_name":"NOFO
@@ -321,13 +324,20 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   Resources Grant Program (ERGP) Financial Assistance Awards","popular_name":"Earth
   Resources Grant Program (ERGP)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"43.016","permalink":"/program/43.016","title":"Established
   Program to Stimulate Competitive Research","popular_name":"EPSCoR","agency":"National
-  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.012","permalink":"/program/96.012","title":"Interventional
+  Aeronautics and Space Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.052","permalink":"/program/11.052","title":"Fire
+  Risk Reduction","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.070","permalink":"/program/11.070","title":"High
+  Performance Building Systems","popular_name":"N/A","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.059","permalink":"/program/11.059","title":"Information
+  Technology Laboratory Grant Program","popular_name":null,"agency":"Department of
+  Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"96.012","permalink":"/program/96.012","title":"Interventional
   Cooperative Agreement Program","popular_name":"Interventional Cooperative Agreement
   Program (ICAP)","agency":"Social Security Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.054","permalink":"/program/11.054","title":"JILA","popular_name":"JILA","agency":"Department
   of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.047","permalink":"/program/11.047","title":"Joint
-  Quantum Institute","popular_name":"JQI","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.043","permalink":"/program/11.043","title":"National
+  Quantum Institute","popular_name":"JQI","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.055","permalink":"/program/11.055","title":"Measurement
+  Science and Standards Engagement","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.043","permalink":"/program/11.043","title":"National
   Weather Service Office of Science and Technology Integration Modeling Program","popular_name":"NWS
-  OSTI Modeling Program","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.053","permalink":"/program/11.053","title":"Precision
+  OSTI Modeling Program","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.067","permalink":"/program/11.067","title":"Physical
+  Measurement Laboratory (PML) Grant Program","popular_name":null,"agency":"Department
+  of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.053","permalink":"/program/11.053","title":"Precision
   Measurement Grant Program","popular_name":"PMGP","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.056","permalink":"/program/11.056","title":"Standardization
   Center of Excellence","popular_name":null,"agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.828","permalink":"/program/15.828","title":"U.S.
   Geological Survey Use of Space in Cooperator Facilities","popular_name":"Space in
@@ -337,7 +347,7 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
   of Energy","total_obs":-937.0,"program_type":"assistance_listing"},{"cfda":"43.014","permalink":"/program/43.014","title":"Congressionally
   Directed Programs","popular_name":"NASA Community Projects/NASA Special Projects","agency":"National
   Aeronautics and Space Administration","total_obs":-2813.66,"program_type":"assistance_listing"},{"cfda":"10.961","permalink":"/program/10.961","title":"Scientific
-  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":-21597.34,"program_type":"assistance_listing"},{"cfda":"10.537","permalink":"/program/10.537","title":"Supplemental
+  Cooperation and Research","popular_name":"SCRP","agency":"Department of Agriculture","total_obs":-47790.59,"program_type":"assistance_listing"},{"cfda":"10.537","permalink":"/program/10.537","title":"Supplemental
   Nutrition Assistance Program (SNAP) Employment and Training (E&T) Data and Technical
   Assistance Grants","popular_name":"Supplemental Nutrition Assistance Program (SNAP)
   Employment and Training (E&T) Data and Technical Assistance Grants","agency":"Department
@@ -349,6 +359,6 @@ programs: '[{"cfda":"47.049","permalink":"/program/47.049","title":"Mathematical
 title: General science and basic research
 total_num_agencies: 11
 total_num_applicant_types: 77
-total_num_programs: 66
-total_obs: 10689068951.35
+total_num_programs: 74
+total_obs: 10704263309.84
 ---

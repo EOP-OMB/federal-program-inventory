@@ -30,12 +30,12 @@ where_used:
   permalink: /program/10.646
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 906950000.0
+  expenditure_amount: 903950000.0
   name: Supplemental Nutrition Assistance Program
   permalink: /program/10.551
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 10000000.0
   name: WIC Farmers' Market Nutrition Program (FMNP)
   permalink: /program/10.572
   program_type: assistance_listing

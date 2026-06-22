@@ -24,7 +24,7 @@ where_used:
   permalink: /program/20.526
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 225511000.0
   name: Community Project Funding Congressionally Directed Spending
   permalink: /program/20.534
   program_type: assistance_listing

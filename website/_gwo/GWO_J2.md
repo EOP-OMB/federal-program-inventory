@@ -13,7 +13,7 @@ where_used:
   permalink: /program/66.001
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 905457.0
+  expenditure_amount: 10073863.0
   name: Beach Monitoring and Notification Program Implementation Grants
   permalink: /program/66.472
   program_type: assistance_listing
@@ -39,7 +39,7 @@ where_used:
   permalink: /program/66.045
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 2333289868.0
+  expenditure_amount: 5980907298.0
   name: Clean Water State Revolving Fund
   permalink: /program/66.458
   program_type: assistance_listing
@@ -89,12 +89,12 @@ where_used:
   permalink: /program/15.018
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 300000.0
+  expenditure_amount: 4000000.0
   name: Environmental Finance Center Grants
   permalink: /program/66.203
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 0.0
+  expenditure_amount: 9500000.0
   name: Environmental Information Exchange Network Grant Program and Related Assistance
   permalink: /program/66.608
   program_type: assistance_listing
@@ -145,7 +145,7 @@ where_used:
   permalink: /program/10.690
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 20423485.0
+  expenditure_amount: 175121276.0
   name: Nonpoint Source Implementation Grants
   permalink: /program/66.460
   program_type: assistance_listing
@@ -176,7 +176,7 @@ where_used:
   permalink: /program/66.508
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 81390000.0
+  expenditure_amount: 81291075.0
   name: Sewer Overflow and Stormwater Reuse Municipal Grant Program
   permalink: /program/66.447
   program_type: assistance_listing
@@ -186,12 +186,12 @@ where_used:
   permalink: /program/66.518
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 15062838.0
+  expenditure_amount: 28699506.29
   name: State Underground Water Source Protection
   permalink: /program/66.433
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 4700000.0
+  expenditure_amount: 10974844.0
   name: Surveys, Studies, Investigations, Demonstrations, and Training Grants and
     Cooperative Agreements - Section 104(b)(3) of the Clean Water Act
   permalink: /program/66.436
@@ -203,17 +203,17 @@ where_used:
   permalink: /program/66.034
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 67000000.0
+  expenditure_amount: 67800000.0
   name: Targeted Airshed Grant Program
   permalink: /program/66.956
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 35500000.0
+  expenditure_amount: 51000000.0
   name: Technical Assistance for Treatment Works (Clean Water Act [CWA] Section 104(b)(8))
   permalink: /program/66.446
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 8000000.0
+  expenditure_amount: 12000000.0
   name: Training, Investigations, and Special Purpose Activities of Federally-Recognized
     Indian Tribes Consistent With the Clean Air Act (CAA), Tribal Sovereignty and
     the Protection and Management of Air Quality
@@ -226,12 +226,12 @@ where_used:
   permalink: /program/66.486
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 5772796361.0
+  expenditure_amount: 4711424265.0
   name: Water Infrastructure Finance and Innovation (WIFIA)
   permalink: /program/66.958
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 25848317.0
+  expenditure_amount: 188899544.0
   name: Water Pollution Control State, Interstate, and Tribal Program Support
   permalink: /program/66.419
   program_type: assistance_listing

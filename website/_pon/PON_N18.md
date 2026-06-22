@@ -50,11 +50,6 @@ where_used:
   permalink: /program/93.8TN
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 254646999.0
-  name: National Institute on Aging Intramural Programs
-  permalink: /program/93.AG9
-  program_type: assistance_listing
-- agency: Department of Health and Human Services
   expenditure_amount: 15169000.0
   name: National Institute on Aging Training Individual Projects
   permalink: /program/93.AG4

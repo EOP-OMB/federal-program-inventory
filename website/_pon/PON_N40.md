@@ -38,14 +38,19 @@ where_used:
   permalink: /program/93.557
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: 64249000.0
   name: International Labor Programs
   permalink: /program/17.401
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 76000000.0
   name: International Programs to Combat Human Trafficking
   permalink: /program/19.019
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Support for Combatting Criminal Aliens, Drug, and Human Trafficking
+  permalink: /program/16.076
   program_type: assistance_listing
 - agency: Department of Justice
   expenditure_amount: 0.0

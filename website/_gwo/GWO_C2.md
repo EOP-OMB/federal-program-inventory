@@ -98,17 +98,17 @@ where_used:
   permalink: /program/32.002
   program_type: assistance_listing
 - agency: Federal Communications Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 1047300000.0
   name: UNIVERSAL SERVICE FUND - LIFELINE
   permalink: /program/32.003
   program_type: assistance_listing
 - agency: Federal Communications Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 614400000.0
   name: UNIVERSAL SERVICE FUND - RURAL HEALTH CARE
   permalink: /program/32.005
   program_type: assistance_listing
 - agency: Federal Communications Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 3076800000.0
   name: UNIVERSAL SERVICE FUND - SCHOOLS and LIBRARIES
   permalink: /program/32.004
   program_type: assistance_listing
