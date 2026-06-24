@@ -1066,6 +1066,7 @@
     const programList = document.getElementById("program-list");
     const template = document.getElementById("program-template");
 
+    hideSharedProgramHoverTooltipIfPresent();
     programList.innerHTML = "";
 
     programs.slice(0, pageSize).forEach((program) => {
@@ -1086,9 +1087,20 @@
 
       clone.querySelector(".program-agency").textContent =
         program.agency?.title || "";
-      clone.querySelector(
-        ".program-obligations"
-      ).textContent = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year }}`;
+      const obligationsTooltipEl = clone.querySelector(
+        ".program-obligations-tooltip"
+      );
+      const obligationsText = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year }}`;
+      attachProgramDataSourceTooltip(obligationsTooltipEl, {
+        displayText: obligationsText,
+        dataSource: program?.data_source,
+        programType: program?.programType || "",
+        dataType: "expenditure",
+        year: Number("{{ page.fiscal_year }}"),
+        currentFiscalYear: Number("{{ page.fiscal_year }}"),
+        blurOnEscape: true
+      });
+      obligationsTooltipEl.textContent = obligationsText;
 
       const objectivesEl = clone.querySelector(".program-objectives");
       const readMoreBtn = clone.querySelector(".read-more-btn");
