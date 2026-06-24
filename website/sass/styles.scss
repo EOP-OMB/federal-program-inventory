@@ -41,6 +41,26 @@ $gray-text-base: #5a5f62;
   border-bottom: 1px dotted currentColor;
 }
 
+.program-obligations-tooltip {
+  cursor: default;
+}
+
+button.program-obligations-tooltip {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: #1b1b1b;
+  font-family: $site-default-font;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: inherit;
+}
+
+.usa-tooltip__body {
+  pointer-events: none;
+}
+
 .width-full {
   width: 100%;
 }
@@ -839,12 +859,13 @@ th.gridjs-th {
   font-size: 12px;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 150px;
+  max-width: 280px;
   word-wrap: break-word;
   white-space: normal;
 }
 
-.obligations-pie-tooltip {
+.obligations-pie-tooltip,
+.program-obligations-hover-tooltip {
   background-color: $site-font-color;
   color: white;
   position: fixed;
@@ -859,6 +880,23 @@ th.gridjs-th {
   z-index: 2000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   white-space: normal;
+}
+
+.program-obligations-hover-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid $site-font-color;
+}
+
+.program-obligations-hover-tooltip {
+  transform: translate(-50%, 20px);
 }
 
 #spending-chart-card {
@@ -1061,7 +1099,7 @@ th.gridjs-th {
   .spending-chart-tooltip, .outlays-chart-tooltip {
     font-size: 10px;
     padding: 6px 10px;
-    max-width: 120px;
+    max-width: 200px;
   }
 
   /* Purpose and Spending sections stack vertically */
