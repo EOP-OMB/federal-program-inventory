@@ -1,0 +1,281 @@
+<script>
+window.DATA_SOURCES = JSON.parse('{{ site.data.data_sources.data_sources | jsonify }}');
+
+function getCurrentFiscalYearFromData(data, seriesKey = 'obligations') {
+  if (!data) {
+    return null;
+  }
+
+  const seriesLookup = {
+    obligations: ['obligations'],
+    outlays: ['outlays'],
+    revenue_losses: ['revenueLosses', 'revenue_losses'],
+    expenditure: ['outlays']
+  };
+
+  const candidateKeys = seriesLookup[seriesKey] || [seriesKey];
+  const points = candidateKeys
+    .map(key => data[key])
+    .find(series => Array.isArray(series) && series.length > 0);
+
+  if (!points) {
+    return null;
+  }
+
+  const years = points
+    .map(point => Number(point.year ?? point.x))
+    .filter(year => Number.isFinite(year));
+
+  if (years.length === 0) {
+    return null;
+  }
+
+  return Math.max(...years);
+}
+
+function resolveDataSourceFromConfig({
+  programType = '',
+  dataType = null,
+  year = null,
+  currentFiscalYear = null
+} = {}) {
+  // Check if data sources config is available (injected by Jekyll)
+  if (!window.DATA_SOURCES) {
+    console.warn('DATA_SOURCES config not loaded. Data source mapping unavailable.');
+    return 'Data source not available';
+  }
+
+  const dataSourcesConfig = window.DATA_SOURCES;
+  const normalizedProgramType = programType || '';
+  
+  // Default to 'expenditure' if dataType not specified
+  const spendingType = dataType || 'expenditure';
+  let resolvedSpendingType = spendingType;
+
+  // Tax expenditure chart values come from expenditure context.
+  // Use expenditure source label for outlays/revenue_losses tooltips.
+  if (
+    normalizedProgramType === 'tax_expenditure' &&
+    (spendingType === 'outlays' || spendingType === 'revenue_losses')
+  ) {
+    resolvedSpendingType = 'expenditure';
+  }
+
+  // Only assistance_listing changes sources between current and prior year.
+  let yearType = 'current_year';
+  if (normalizedProgramType === 'assistance_listing') {
+    yearType = 'prior_year';
+    if (year !== null && currentFiscalYear !== null) {
+      yearType = Number(year) === Number(currentFiscalYear) ? 'current_year' : 'prior_year';
+    } else if (spendingType === 'expenditure') {
+      // Default to current_year for assistance_listing expenditure when no year info provided
+      yearType = 'current_year';
+    }
+  }
+
+  // Perform the lookup
+  const source = dataSourcesConfig?.[normalizedProgramType]?.[yearType]?.[resolvedSpendingType];
+  
+  return source || 'Data source not available';
+}
+
+function resolveProgramDataSource({
+  programType = '',
+  dataType = null,
+  year = null,
+  currentFiscalYear = null,
+  data = null
+} = {}) {
+  // For assistance_listing with obligations/expenditure, infer currentFiscalYear from data if not provided
+  let resolvedCurrentFiscalYear = currentFiscalYear;
+  if (!resolvedCurrentFiscalYear && data) {
+    resolvedCurrentFiscalYear = getCurrentFiscalYearFromData(data, dataType || 'obligations');
+  }
+
+  // Use the config-based lookup
+  return resolveDataSourceFromConfig({
+    programType,
+    dataType,
+    year,
+    currentFiscalYear: resolvedCurrentFiscalYear
+  });
+}
+
+function getSharedProgramHoverTooltip() {
+  let tooltip = document.querySelector('.program-obligations-hover-tooltip');
+
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.className = 'program-obligations-hover-tooltip';
+    document.body.appendChild(tooltip);
+  }
+
+  return tooltip;
+}
+
+function positionSharedProgramHoverTooltip(tooltip, event) {
+  tooltip.style.left = `${event.clientX}px`;
+  tooltip.style.top = `${event.clientY}px`;
+}
+
+function showSharedProgramHoverTooltip(tooltip, event, text) {
+  tooltip.textContent = text;
+  positionSharedProgramHoverTooltip(tooltip, event);
+  tooltip.style.opacity = '0.95';
+}
+
+function hideSharedProgramHoverTooltip(tooltip) {
+  tooltip.style.opacity = '0';
+}
+
+function hideSharedProgramHoverTooltipIfPresent() {
+  const tooltip = document.querySelector('.program-obligations-hover-tooltip');
+
+  if (tooltip) {
+    hideSharedProgramHoverTooltip(tooltip);
+  }
+}
+
+function bindSharedProgramHoverTooltip(element, tooltip, tooltipText, options = {}) {
+  const {
+    ariaLabelText = null,
+    addTabIndex = false,
+    blurOnEscape = false
+  } = options;
+
+  if (!element || !tooltip) {
+    return;
+  }
+
+  if (addTabIndex) {
+    element.setAttribute('tabindex', '0');
+  }
+
+  if (ariaLabelText) {
+    element.setAttribute('aria-label', ariaLabelText);
+  }
+
+  element.addEventListener('mouseenter', (event) => {
+    showSharedProgramHoverTooltip(tooltip, event, tooltipText);
+  });
+
+  element.addEventListener('mousemove', (event) => {
+    positionSharedProgramHoverTooltip(tooltip, event);
+  });
+
+  element.addEventListener('mouseleave', () => {
+    hideSharedProgramHoverTooltip(tooltip);
+  });
+
+  element.addEventListener('focus', (event) => {
+    showSharedProgramHoverTooltip(tooltip, event, tooltipText);
+  });
+
+  element.addEventListener('blur', () => {
+    hideSharedProgramHoverTooltip(tooltip);
+  });
+
+  element.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      hideSharedProgramHoverTooltip(tooltip);
+
+      if (blurOnEscape) {
+        element.blur();
+      }
+    }
+  });
+}
+
+function attachSharedProgramHoverTooltip(element, tooltipText, options = {}) {
+  const {
+    ariaLabelText = null,
+    addTabIndex = false,
+    blurOnEscape = false
+  } = options;
+
+  const tooltip = getSharedProgramHoverTooltip();
+
+  bindSharedProgramHoverTooltip(element, tooltip, tooltipText, {
+    ariaLabelText,
+    addTabIndex,
+    blurOnEscape
+  });
+}
+
+function getProgramDataSourceTooltipText({
+  dataSource = null,
+  programType = '',
+  dataType = null,
+  year = null,
+  currentFiscalYear = null,
+  data = null
+} = {}) {
+  const normalizedDataSource = typeof dataSource === 'string' ? dataSource.trim() : dataSource;
+  const resolvedDataSource = normalizedDataSource || resolveProgramDataSource({
+    programType,
+    dataType,
+    year,
+    currentFiscalYear,
+    data
+  });
+
+  return `Data source: ${resolvedDataSource}`;
+}
+
+function formatProgramTooltipLinesWithSharedDataSource(title, entries) {
+  const validEntries = entries.filter(entry => entry && entry.label && entry.valueText && entry.dataSource);
+
+  if (validEntries.length === 0) {
+    return `<strong>${title}</strong>`;
+  }
+
+  const uniqueDataSources = [...new Set(validEntries.map(entry => entry.dataSource))];
+  const lines = [`<strong>${title}</strong>`];
+
+  if (uniqueDataSources.length === 1) {
+    validEntries.forEach((entry) => {
+      lines.push(`${entry.label}: ${entry.valueText}`);
+    });
+    lines.push(`Data source: ${uniqueDataSources[0]}`);
+    return lines.join('<br/>');
+  }
+
+  validEntries.forEach((entry) => {
+    lines.push(`${entry.label}: ${entry.valueText} (${entry.dataSource})`);
+  });
+
+  return lines.join('<br/>');
+}
+
+function attachProgramDataSourceTooltip(element, {
+  displayText = '',
+  ariaLabelText = null,
+  dataSource = null,
+  programType = '',
+  dataType = null,
+  year = null,
+  currentFiscalYear = null,
+  data = null,
+  addTabIndex = false,
+  blurOnEscape = false
+} = {}) {
+  const tooltipText = getProgramDataSourceTooltipText({
+    dataSource,
+    programType,
+    dataType,
+    year,
+    currentFiscalYear,
+    data
+  });
+
+  const resolvedAriaLabelText = ariaLabelText || (displayText ? `${displayText}. ${tooltipText}` : tooltipText);
+
+  attachSharedProgramHoverTooltip(element, tooltipText, {
+    ariaLabelText: resolvedAriaLabelText,
+    addTabIndex,
+    blurOnEscape
+  });
+
+  return tooltipText;
+}
+</script>

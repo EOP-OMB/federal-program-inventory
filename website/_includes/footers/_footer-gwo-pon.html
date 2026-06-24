@@ -1,5 +1,22 @@
 <script>
-    function initializeProgramFilters() {
+  function initializeProgramDataSourceTooltips() {
+    const tooltipTargets = document.querySelectorAll(
+      "#related-programs tbody tr:not([data-total-row]) td[data-dollar-amount]"
+    );
+
+    tooltipTargets.forEach((cell) => {
+      const amountText = (cell.textContent || "").trim();
+      cell.classList.add("program-obligations-tooltip");
+      attachProgramDataSourceTooltip(cell, {
+        displayText: amountText,
+        dataSource: cell.dataset.source || "Data source not available",
+        addTabIndex: true,
+        blurOnEscape: true
+      });
+    });
+  }
+
+  function initializeProgramFilters() {
     document.querySelectorAll(".program-filter").forEach((link) => {
       link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -36,5 +53,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     initializeProgramFilters();
+    initializeProgramDataSourceTooltips();
   });
 </script>

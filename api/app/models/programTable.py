@@ -34,6 +34,8 @@ class Program(BaseModel):
     permalink: str
     agency: Agency
     obligations: Optional[float]
+    programType: Optional[str] = None
+    data_source: Optional[str] = None
     objectives: Optional[str]
     popularName: Optional[str]
     gwo: Optional[List[str]]

@@ -35,7 +35,9 @@ function assembleHierarchyData(unstructuredData, numberCategory, itemCategory) {
     itemGroups[identifier].children.push({
       name: item.name || 'Unknown Item',
       value: value,
-      permalink: item.permalink || null
+      permalink: item.permalink || null,
+      data_source: item.data_source || null,
+      program_type: item.program_type || null
     });
   });
 

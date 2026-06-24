@@ -149,7 +149,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
         .attr("y2", chartHeight)
         .style("opacity", 1);
 
-      let tooltipContent = `<strong>Year: ${nearestYear}</strong><br/>`;
+      const tooltipEntries = [];
 
       if (obligationPoint && showObligations) {
         const y = yScale(obligationPoint.value);
@@ -157,7 +157,17 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
           .attr("cx", x)
           .attr("cy", y)
           .style("opacity", 1);
-        tooltipContent += `Obligations: ${formatDollarAmount(obligationPoint.value)}<br/>`;
+        const obligationsDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'obligations',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: 'Obligations',
+          valueText: formatDollarAmount(obligationPoint.value),
+          dataSource: obligationsDataSource
+        });
       } else {
         hoverCircleObligations.style("opacity", 0);
       }
@@ -172,10 +182,22 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
         if (programType === 'tax_expenditure') {
           outlayLabel += " + Rev Losses";
         }
-        tooltipContent += `${outlayLabel}: ${formatDollarAmount(outlayPoint.value)}`;
+        const outlaysDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'outlays',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: outlayLabel,
+          valueText: formatDollarAmount(outlayPoint.value),
+          dataSource: outlaysDataSource
+        });
       } else {
         hoverCircleOutlays.style("opacity", 0);
       }
+
+      const tooltipContent = formatProgramTooltipLinesWithSharedDataSource(`Year: ${nearestYear}`, tooltipEntries);
 
       tooltip
         .html(tooltipContent)

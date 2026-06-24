@@ -35,6 +35,7 @@ FISCAL_YEARS = [
 WEBSITE_DATA_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "website", "_data")
 INFLATION_POPULATION_FILE_PATH = os.path.join(CURRENT_DIR, "extracted", "inflation_and_population_growth.csv")
 GLOBAL_DATA_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "global_data.yml")
+DATA_SOURCES_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "data_sources.yml")
 
 def calculate_improper_payment_metrics(improper_payments_array):
     """
@@ -751,7 +752,7 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'permalink': f"/program/{p['id']}",
                 'name': p['name'],
                 'agency': p['agency_name'] or 'Unspecified',
-                'program_type': p['program_type'] or ''
+                'program_type': p['program_type']
             }
 
             # Use expenditure, because we may need to compare different program types
@@ -845,7 +846,7 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
                 'permalink': f"/program/{p['id']}",
                 'name': p['name'],
                 'agency': p['agency_name'] or 'Unspecified',
-                'program_type': p['program_type'] or ''
+                'program_type': p['program_type']
             }
 
             # Use expenditure, because we may need to compare different program types
@@ -1487,6 +1488,91 @@ def get_expenditure_for_program(outlays, other_program_spending, fiscal_year):
 
     return expenditures + other_expenditures
 
+def build_data_sources_config() -> Dict[str, Any]:
+    """Build the data sources configuration structure.
+    
+    Returns a dictionary mapping program types, year types, and spending types to data sources.
+    This follows the pattern of other configuration exports in this module.
+    """
+    # Tax expenditure mapping (includes revenue_losses for forgone_revenue)
+    tax_expenditure_sources = {
+        'obligations': 'Treasury.gov',
+        'outlays': 'USASpending.gov',
+        'revenue_losses': 'USASpending.gov',
+        'expenditure': 'Treasury.gov'
+    }
+    
+    # Interest mapping (includes revenue_losses for forgone_revenue)
+    interest_sources = {
+        'obligations': 'USASpending.gov',
+        'outlays': 'USASpending.gov',
+        'revenue_losses': 'USASpending.gov',
+        'expenditure': 'USASpending.gov'
+    }
+    
+    # Default mapping: all spending types point to USASpending.gov (no revenue_losses)
+    default_usaspending = {
+        'obligations': 'USASpending.gov',
+        'outlays': 'USASpending.gov',
+        'expenditure': 'USASpending.gov'
+    }
+    
+    # Assistance listing current year (SAM.gov for obligations/expenditure, no revenue_losses)
+    assistance_listing_current = {
+        'obligations': 'SAM.gov',
+        'outlays': 'USASpending.gov',
+        'expenditure': 'SAM.gov'
+    }
+    
+    return {
+        'tax_expenditure': {
+            'current_year': tax_expenditure_sources,
+            'prior_year': tax_expenditure_sources
+        },
+        'interest': {
+            'current_year': interest_sources,
+            'prior_year': interest_sources
+        },
+        'contracts': {
+            'current_year': default_usaspending,
+            'prior_year': default_usaspending
+        },
+        'government_service': {
+            'current_year': default_usaspending,
+            'prior_year': default_usaspending
+        },
+        'assistance_listing': {
+            'current_year': assistance_listing_current,
+            'prior_year': default_usaspending
+        }
+    }
+
+def export_data_sources_config():
+    """Export data sources configuration to YAML file.
+    
+    Writes the configuration to website/_data/data_sources.yml with Jekyll front matter.
+    This follows the same pattern as export_inflation_population_from_csv().
+    """
+    config = build_data_sources_config()
+
+    class NoAliasDumper(yml.SafeDumper):
+        """YAML dumper that always expands mappings instead of anchors/aliases."""
+
+        def ignore_aliases(self, data):
+            return True
+    
+    try:
+        with open(DATA_SOURCES_YML_PATH, 'w', encoding='utf-8') as file:
+            yml_data = {
+                'data_sources': config
+            }
+            file.write('---\n')
+            yml.dump(yml_data, file, allow_unicode=True, Dumper=NoAliasDumper)
+            file.write('...\n')
+        print(f'Exported data sources configuration to {DATA_SOURCES_YML_PATH}')
+    except Exception as e:
+        print(f'Error exporting data sources config: {e}')
+
 def generate_home_page(cursor: sqlite3.Cursor, output_path: str, programs_data,
                        shared_data: Dict[str, Any], fiscal_year: str):
     """Generate the home page using pre-generated data."""
@@ -1550,6 +1636,7 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             'title': program['name'],
             'permalink': f"/program/{program['id']}",
             'obligations': float(current_year_obligation),
+            'programType': program['program_type'],
             'objectives': program['objective'],
             'gwo': [program['gwo']['gwo']] if program['gwo'] is not None else [],
             'pons': [row['pon'] for row in program['pons']],
@@ -1790,6 +1877,8 @@ try:
     export_inflation_population_from_csv()
 
     export_global_dates_to_yml()
+
+    export_data_sources_config()
 
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, constants.CURRENT_FISCAL_YEAR)
