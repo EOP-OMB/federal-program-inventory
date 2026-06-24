@@ -76,7 +76,7 @@ function createSpendingChart(containerId, data, programType, config = spendingCh
 
   _addProjectedLine(svg, data.projectedOutlays, xScale, yScale, config);
 
-  _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations);
+  _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations, programType);
 }
 
 function _resetSpendingContainer(containerId) {
@@ -379,7 +379,7 @@ function _addProjectedLine(svg, projectedOutlays, xScale, yScale, config) {
   }
 }
 
-function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations) {
+function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations, programType) {
   const tooltip = d3.select("body").append("div")
     .attr("class", "spending-chart-tooltip");
 
@@ -426,19 +426,51 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
         .attr("y2", chartHeight)
         .style("opacity", 1);
 
-      let tooltipContent = `<strong>Year: ${nearestYear}</strong><br/>`;
+      const tooltipEntries = [];
 
       if (outlayPoint) {
-        tooltipContent += `Outlays: ${formatDollarAmount(outlayPoint.value)}<br/>`;
+        const outlaysDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'outlays',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: 'Outlays',
+          valueText: formatDollarAmount(outlayPoint.value),
+          dataSource: outlaysDataSource
+        });
       }
 
       if (hasRevenueLosses && revenueLossPoint) {
-        tooltipContent += `Revenue Losses: ${formatDollarAmount(revenueLossPoint.value)}<br/>`;
+        const revenueLossesDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'revenue_losses',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: 'Revenue Losses',
+          valueText: formatDollarAmount(revenueLossPoint.value),
+          dataSource: revenueLossesDataSource
+        });
       }
 
       if (obligationPoint && showObligations) {
-        tooltipContent += `Obligations: ${formatDollarAmount(obligationPoint.value)}<br/>`;
+        const obligationsDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'obligations',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: 'Obligations',
+          valueText: formatDollarAmount(obligationPoint.value),
+          dataSource: obligationsDataSource
+        });
       }
+
+      const tooltipContent = formatProgramTooltipLinesWithSharedDataSource(`Year: ${nearestYear}`, tooltipEntries);
 
       tooltip
         .html(tooltipContent)

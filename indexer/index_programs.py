@@ -112,6 +112,12 @@ def create_index_with_mapping(index_name):
                 "obligations": {
                     "type": "float"
                 },
+                "programType": {
+                    "type": "keyword"
+                },
+                "data_source": {
+                    "type": "keyword"
+                },
                 "objectives": {
                     "type": "text",
                     "analyzer": "english",  # Add stemming
@@ -290,9 +296,10 @@ if __name__ == "__main__":
             # If document count in ES does not equal source JSON, rebuild
             if (not index_reloaded_once) or (json_program_count != es_program_count):
                 index_reloaded_once = True
-                if es_program_count != 0:
-                    delete_index(index_name)
-                    create_index_with_mapping(index_name)
+                # Always recreate once on startup (or any mismatch) so mapping
+                # changes are applied even when the current index has 0 docs.
+                delete_index(index_name)
+                create_index_with_mapping(index_name)
                 new_es_program_count = load_data(json_file, index_name)
                 final_es_program_count = verify_index(index_name)
                 logger.info(f"Indexing complete. JSON: {json_program_count}; \

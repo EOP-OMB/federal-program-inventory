@@ -210,7 +210,12 @@ function renderTreeMap(data, chartId, dataKey, color, textColor){
       };
       const percentText = totalValue > 0 ? formatPercent(percentValue) : '';
       const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
-      tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}`)
+      const resolvedDataSource = d.data.data_source || resolveProgramDataSource({
+        programType: d.data.program_type || d.data.programType || '',
+        dataType: 'expenditure'
+      });
+      const dataSourceLine = `<br/>Data source: ${resolvedDataSource}`;
+      tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}${dataSourceLine}`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 10) + 'px')
         .transition()

@@ -33,7 +33,11 @@
       {% for item in include.data %}
       <tr class="border-bottom-1px border-base-lighter {% if include.clickable %}cursor-pointer{% endif %}" style="transition: background-color 0.2s;{% if include.clickable and include.permalink_field %} cursor: pointer;{% endif %}" {% if include.clickable and include.permalink_field %}onclick="window.location.href='{{ item[include.permalink_field] }}'"{% endif %}>
         {% for column in include.columns %}
-        <td class="padding-y-2 {% if forloop.first %}padding-left-0 padding-right-2{% elsif forloop.last %}padding-left-2 padding-right-0{% else %}padding-x-2{% endif %}{% if include.alignments[forloop.index0] == 'right' %} text-right{% endif %} {% if include.bold[forloop.index0] == 'true' %}text-bold{% endif %}{% if forloop.first or forloop.last %} text-ink{% else %} text-base-darker{% endif %}"{% if include.alignments[forloop.index0] == 'right' or forloop.last %} style="{% if include.alignments[forloop.index0] == 'right' %}white-space: nowrap;{% endif %}{% if forloop.last %} padding-right: 0 !important;{% endif %}"{% endif %}{% if include.types[forloop.index0] == 'currency' %} data-dollar-amount="{{ item[column] }}"{% endif %}>
+        {% assign resolved_data_source = item.data_source %}
+        {% if include.types[forloop.index0] == 'currency' and resolved_data_source == nil and item.program_type %}
+          {% assign resolved_data_source = site.data.data_sources.data_sources[item.program_type].current_year.expenditure | default: 'USASpending.gov' %}
+        {% endif %}
+        <td class="padding-y-2 {% if forloop.first %}padding-left-0 padding-right-2{% elsif forloop.last %}padding-left-2 padding-right-0{% else %}padding-x-2{% endif %}{% if include.alignments[forloop.index0] == 'right' %} text-right{% endif %} {% if include.bold[forloop.index0] == 'true' %}text-bold{% endif %}{% if forloop.first or forloop.last %} text-ink{% else %} text-base-darker{% endif %}"{% if include.alignments[forloop.index0] == 'right' or forloop.last %} style="{% if include.alignments[forloop.index0] == 'right' %}white-space: nowrap;{% endif %}{% if forloop.last %} padding-right: 0 !important;{% endif %}"{% endif %}{% if include.types[forloop.index0] == 'currency' %} data-dollar-amount="{{ item[column] }}"{% if resolved_data_source %} data-source="{{ resolved_data_source }}"{% endif %}{% endif %}>
           {% if include.types[forloop.index0] == 'currency' %}
             ${{ item[column] }}
           {% else %}

@@ -352,10 +352,27 @@
     }
   }
 
+  function initializeImproperPaymentExpenditureTooltip() {
+    const expenditureElement = document.getElementById("last-completed-year-outlay");
+    if (!expenditureElement) {
+      return;
+    }
+
+    const expenditureText = (expenditureElement.textContent || "").trim();
+
+    attachProgramDataSourceTooltip(expenditureElement, {
+      displayText: expenditureText,
+      programType: "{{ page.program_type }}",
+      dataType: "expenditure",
+      blurOnEscape: true
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initializeViewControls(hasObligations, hasOutlays, hasOtherProgramExpenditure);
 
     initializeDownloadButton();
     initializeProgramFilters();
+    initializeImproperPaymentExpenditureTooltip();
   });
 </script>
