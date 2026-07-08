@@ -8,17 +8,17 @@ permalink: /gwo/GWO_G6
 title: Increase K12 School Enrollment
 where_used:
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 224774078.62
   name: Charter Schools
   permalink: /program/84.282
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 126752461.58
   name: Education for Homeless Children and Youth
   permalink: /program/84.196
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 2769616.93
   name: Migrant Education Coordination Program
   permalink: /program/84.144
   program_type: assistance_listing

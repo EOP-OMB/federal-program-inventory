@@ -8,12 +8,12 @@ permalink: /gwo/GWO_B6
 title: Create Jobs
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 0.0
+  expenditure_amount: -24022291.89
   name: Coronavirus Relief - Pandemic Relief for Aviation Workers
   permalink: /program/21.018
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 4556269.0
+  expenditure_amount: 0.0
   name: Cybersecurity Workforce Community-Building and Stakeholder Engagement
   permalink: /program/11.046
   program_type: assistance_listing
@@ -23,12 +23,12 @@ where_used:
   permalink: /program/15.089
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 18000000.0
+  expenditure_amount: 49642920.0
   name: Distressed Area Recompete Pilot Program
   permalink: /program/11.040
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 9500000.0
+  expenditure_amount: 12351660.86
   name: Experienced Services Program
   permalink: /program/15.011
   program_type: assistance_listing
@@ -38,7 +38,7 @@ where_used:
   permalink: /program/15.079
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 62000000.0
+  expenditure_amount: 19139910.69
   name: Rural Economic Development Loans and Grants
   permalink: /program/10.854
   program_type: assistance_listing
@@ -48,7 +48,7 @@ where_used:
   permalink: /program/10.755
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 2000000.0
+  expenditure_amount: 1020895.28
   name: USGS Experienced Services Program
   permalink: /program/15.072
   program_type: assistance_listing

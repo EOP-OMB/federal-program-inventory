@@ -13,7 +13,7 @@ permalink: /pon/PON_N41
 title: Enhance Border Surveillance, Infrastructure, and Capacity
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -8699171.42
   name: Export Control and Related Border Security
   permalink: /program/19.901
   program_type: assistance_listing

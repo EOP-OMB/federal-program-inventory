@@ -18,7 +18,7 @@ where_used:
   permalink: /program/97.157
   program_type: assistance_listing
 - agency: Federal Communications Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 2714598797.66
   name: Supply Chain Reimbursement Program
   permalink: /program/32.010
   program_type: assistance_listing

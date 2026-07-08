@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Increase Homeownership
   permalink: /gwo/GWO_M3
-headline_amount: 1220000000.0
+headline_amount: 1140000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

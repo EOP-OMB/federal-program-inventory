@@ -13,37 +13,37 @@ permalink: /pon/PON_4G
 title: Improve School Meal Nutrition
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 20000000.0
+  expenditure_amount: -969372.74
   name: Child Nutrition Discretionary Grants Limited Availability
   permalink: /program/10.579
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20000000.0
+  expenditure_amount: 58754821.06
   name: Child Nutrition-Technology Innovation Grant
   permalink: /program/10.541
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20000000.0
+  expenditure_amount: -1197599.62
   name: Farm to School Grant Program
   permalink: /program/10.575
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: -743946.46
   name: Farm to School State Formula Grant
   permalink: /program/10.645
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 240000000.0
+  expenditure_amount: 0.0
   name: Food for Education
   permalink: /program/10.608
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 290217000.0
+  expenditure_amount: 197280170.39
   name: Fresh Fruit and Vegetable Program
   permalink: /program/10.582
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4999801.85
   name: National Food Service Management Institute Administration and Staffing Grant
   permalink: /program/10.587
   program_type: assistance_listing
@@ -53,12 +53,12 @@ where_used:
   permalink: /program/10.532
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4655000.0
+  expenditure_amount: 0.0
   name: Special Milk Program for Children
   permalink: /program/10.556
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20000000.0
+  expenditure_amount: -1565675.42
   name: Team Nutrition Grants
   permalink: /program/10.574
   program_type: assistance_listing

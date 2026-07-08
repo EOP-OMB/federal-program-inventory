@@ -11,7 +11,7 @@ permalink: /pon/PON_95
 title: 'Improve K12 Academic Attitudes '
 where_used:
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 1334969726.51
   name: Twenty-First Century Community Learning Centers
   permalink: /program/84.287
   program_type: assistance_listing

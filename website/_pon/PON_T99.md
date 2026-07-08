@@ -11,27 +11,27 @@ permalink: /pon/PON_T99
 title: Increase Knowledge of Child Development
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 8980707.0
+  expenditure_amount: 0.0
   name: Autism and Other Developmental Disabilities, Surveillance, Research, and Prevention
   permalink: /program/93.998
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 17335650.12
   name: Indian Child and Family Education
   permalink: /program/15.043
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 536235000.0
+  expenditure_amount: 460066312.61
   name: Maternal, Infant and Early Childhood Home Visiting Grant
   permalink: /program/93.870
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 32091413.33
   name: Special Education Parent Information Centers
   permalink: /program/84.328
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 37732148.0
+  expenditure_amount: 34391888.78
   name: Tribal Maternal, Infant, and Early Childhood Home Visiting
   permalink: /program/93.872
   program_type: assistance_listing

@@ -12,48 +12,48 @@ permalink: /pon/PON_5ND
 title: Strengthen Operational Readiness of Defense Personnel
 where_used:
 - agency: Department of Defense
-  expenditure_amount: 74999999.0
+  expenditure_amount: 45344749.1
   name: Civil Air Patrol Program
   permalink: /program/12.840
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2866984.0
+  expenditure_amount: 0.0
   name: Clearing House for Military Readiness
   permalink: /program/10.288
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 3000000.0
+  expenditure_amount: 11437010.92
   name: Community Economic Adjustment Assistance for Establishment or Expansion of
     a Military Installation
   permalink: /program/12.618
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 250000000.0
+  expenditure_amount: 0.0
   name: Counter-Unmanned Aircraft Systems (C-UAS) Grant Program
   permalink: /program/97.161
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 3222590.0
+  expenditure_amount: 8185790.0
   name: Defense Security Cooperation University - Sponsored Research
   permalink: /program/12.024
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 703000.0
+  expenditure_amount: 0.0
   name: Deployed Warfighter Protection (DWFP) Program FY26
   permalink: /program/12.033
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2569192.0
+  expenditure_amount: 0.0
   name: DoD Virtual Lab School
   permalink: /program/10.337
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 3000000.0
+  expenditure_amount: 5437761.53
   name: Economic Adjustment Assistance for State Governments
   permalink: /program/12.617
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 1198000.0
+  expenditure_amount: 0.0
   name: English for Heritage Language Speakers Grants to U.S. Institutions of Higher
     Education
   permalink: /program/12.554
@@ -69,32 +69,32 @@ where_used:
   permalink: /program/12.579
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2980625.0
+  expenditure_amount: 0.0
   name: Military Families Learning Network
   permalink: /program/10.284
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 759098.0
+  expenditure_amount: 0.0
   name: Military REACH
   permalink: /program/10.287
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 75000.0
   name: National Guard Morale, Welfare, and Recreation Program
   permalink: /program/12.030
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 2330000.0
+  expenditure_amount: 0.0
   name: National Security Education Program David L. Boren Fellowships
   permalink: /program/12.552
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 2330000.0
+  expenditure_amount: 0.0
   name: National Security Education Program David L. Boren Scholarships
   permalink: /program/12.551
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 16365000.0
+  expenditure_amount: 21849394.0
   name: Past Conflict Accounting
   permalink: /program/12.740
   program_type: assistance_listing
@@ -104,17 +104,17 @@ where_used:
   permalink: /program/12.357
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 13300000.0
+  expenditure_amount: -113077.61
   name: The Language Flagship Grants to Institutions of Higher Education
   permalink: /program/12.550
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 5160000.0
+  expenditure_amount: -13265242.75
   name: Training and Support – Combating Weapons of Mass Destruction
   permalink: /program/12.501
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 15498328.0
+  expenditure_amount: 0.0
   name: U.S. Military Academy Athletic Programs at West Point
   permalink: /program/12.432
   program_type: assistance_listing

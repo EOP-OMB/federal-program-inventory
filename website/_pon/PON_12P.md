@@ -17,12 +17,12 @@ where_used:
   permalink: /program/16.307
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 36929.79
   name: Comprehensive Forensic DNA Analysis Grant Program
   permalink: /program/16.036
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 1311821.0
   name: Crime Gun Intelligence Training and Education
   permalink: /program/16.051
   program_type: assistance_listing
@@ -32,12 +32,12 @@ where_used:
   permalink: /program/16.922
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 31804877.44
   name: Global Counterterrorism Programs
   permalink: /program/19.701
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -41363.89
   name: Improving the Investigation and Prosecution of Child Abuse and the Regional
     and Local Children's Advocacy Centers
   permalink: /program/16.758
@@ -68,18 +68,18 @@ where_used:
   permalink: /program/16.305
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -300000.0
   name: Matthew Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and
     Prosecution Program
   permalink: /program/16.040
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 4199721.0
   name: Missing and Unidentified Human Remains (MUHR) Program
   permalink: /program/16.050
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 42915872.78
   name: National Sexual Assault Kit Initiative
   permalink: /program/16.833
   program_type: assistance_listing

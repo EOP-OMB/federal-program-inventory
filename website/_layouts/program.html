@@ -111,7 +111,8 @@ footer_include: _footer-program.html
                 {% include components/_view-results.html href="#" text="View spending details" onclick="document.getElementById('spending-tab').click();" %}
               </div>
               <!-- FY Outlay & Improper Payment Rate -->
-              {% include components/_improper-payment.html %}
+              {% include components/_improper-payment.html
+                last_completed_fiscal_year=page.fiscal_year %}
               <!-- Graph Start -->
               {% assign outlays = page.outlays %}
               {% if outlays == nil and page.other_program_spending != nil %}
@@ -142,8 +143,9 @@ footer_include: _footer-program.html
 
             <h2 class="text-bold margin-top-3 margin-bottom-3">What information is being displayed here?</h2>
             <p>
-              The graph illustrates the funding level of the program for each available fiscal year. Obligation is what the federal
-              government budgeted for the program. Outlay is what the federal government actually spent. See our <a
+              The graph shows the spending associated with the program for each available fiscal year. Obligations are a
+              binding agreement the government makes to spend money, either immediately or in the future, when awarding
+              funding. Outlays are what the federal government actually spent, not just promised to be paid. See our <a
                 href="/about/terms" class="usa-link">FPI Data, Terms & Concepts</a> page for more
               details.
             </p>

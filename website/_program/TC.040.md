@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Grow American Businesses
   permalink: /gwo/GWO_B2
-headline_amount: 10000000.0
+headline_amount: 40000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

@@ -11,12 +11,12 @@ permalink: /pon/PON_61
 title: Increase Employment for Older Adults
 where_used:
 - agency: Department of the Interior
-  expenditure_amount: 9500000.0
+  expenditure_amount: 12351660.86
   name: Experienced Services Program
   permalink: /program/15.011
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 389000000.0
+  expenditure_amount: 58355020.24
   name: Senior Community Service Employment Program
   permalink: /program/17.235
   program_type: assistance_listing

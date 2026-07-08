@@ -12,33 +12,33 @@ permalink: /pon/PON_2C
 title: 'Improve Government Services '
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 1615353.0
+  expenditure_amount: 1345159.72
   name: Coronavirus Capital Projects Fund
   permalink: /program/21.029
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 700000.0
+  expenditure_amount: 0.0
   name: HHS OIG Hotline
   permalink: /program/93.A92
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 474000000.0
+  expenditure_amount: 0.0
   name: Metropolitan Planning Program (MPP)
   permalink: /program/20.275
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 10000000.0
+  expenditure_amount: 0.0
   name: Prioritization Process Pilot Program
   permalink: /program/20.262
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 33776563.0
+  expenditure_amount: 38748561.38
   name: 'Section 206 Consolidated Appropriations Act, 2024: State Planning Grants
     to Promote Continuity of Care for Medicaid & CHIP Beneficiaries'
   permalink: /program/93.694
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 46809151.0
+  expenditure_amount: 39829495.0
   name: Social Impact Partnerships to Pay for Results Act (SIPPRA)
   permalink: /program/21.017
   program_type: assistance_listing

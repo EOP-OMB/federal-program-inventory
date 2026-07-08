@@ -11,12 +11,12 @@ permalink: /pon/PON_93
 title: Increase Identification and Referral of Domestic Violence Survivors
 where_used:
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -262277.19
   name: Grants for Outreach and Services to Underserved Populations
   permalink: /program/16.889
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Indian Health Service Domestic Violence Forensic Healthcare Services
   permalink: /program/93.00A
   program_type: assistance_listing

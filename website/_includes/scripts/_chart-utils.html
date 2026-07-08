@@ -114,7 +114,7 @@ function standardizeDataForD3(rawData, combineOther) {
   return spendingData;
 }
 
-function renderTreeMap(data, chartId, dataKey, color, textColor){
+function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
   // Clear existing chart
   d3.select(`#${chartId}`).selectAll("*").remove();
 
@@ -212,7 +212,9 @@ function renderTreeMap(data, chartId, dataKey, color, textColor){
       const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
       const resolvedDataSource = d.data.data_source || resolveProgramDataSource({
         programType: d.data.program_type || d.data.programType || '',
-        dataType: 'expenditure'
+        dataType: 'expenditure',
+        year: options.year,
+        currentFiscalYear: options.currentFiscalYear
       });
       const dataSourceLine = `<br/>Data source: ${resolvedDataSource}`;
       tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}${dataSourceLine}`)

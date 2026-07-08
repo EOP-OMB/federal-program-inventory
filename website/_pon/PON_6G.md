@@ -13,12 +13,12 @@ permalink: /pon/PON_6G
 title: Increase Family-School Engagement
 where_used:
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 367303816.29
   name: Gaining Early Awareness and Readiness for Undergraduate Programs
   permalink: /program/84.334
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 16323718.37
   name: Statewide Family Engagement Centers
   permalink: /program/84.310
   program_type: assistance_listing

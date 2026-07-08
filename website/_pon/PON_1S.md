@@ -18,38 +18,38 @@ where_used:
   permalink: /program/11.63A
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 36640800.0
+  expenditure_amount: 24186171.97
   name: Arrangements for Interdisciplinary Research Infrastructure
   permalink: /program/11.619
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 6895000.0
+  expenditure_amount: 0.0
   name: Calibration Program
   permalink: /program/11.601
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 250000.0
+  expenditure_amount: 0.0
   name: Measurement Science and Standards Engagement
   permalink: /program/11.055
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
+  expenditure_amount: 38325015.01
   name: Measurement and Engineering Research and Standards
   permalink: /program/11.609
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 2865000.0
+  expenditure_amount: 0.0
   name: Physical Measurement Laboratory (PML) Grant Program
   permalink: /program/11.067
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 300000.0
+  expenditure_amount: 0.0
   name: Standards Coordination Office Curricula Development Cooperative Agreement
     Program
   permalink: /program/11.057
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 509927000.0
+  expenditure_amount: 502772870.7
   name: State Administrative Expenses for Child Nutrition
   permalink: /program/10.560
   program_type: assistance_listing

@@ -11,22 +11,22 @@ permalink: /pon/PON_T95
 title: Improve School Readiness
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 1036313.2
+  expenditure_amount: 0.0
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1036313.2
+  expenditure_amount: 0.0
   name: Early Learning Matters
   permalink: /program/10.286
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 12001716254.0
+  expenditure_amount: 11761751679.61
   name: Head Start
   permalink: /program/93.600
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 17335650.12
   name: Indian Child and Family Education
   permalink: /program/15.043
   program_type: assistance_listing

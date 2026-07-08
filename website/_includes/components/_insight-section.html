@@ -17,17 +17,18 @@
   </h3>
   <p class="text-base-dark margin-bottom-1" style="font-size: 0.875rem">
     {% assign expenditure_total_value = include.expenditure_total_value | plus: 0 %}
+    {% assign insight_fiscal_year = include.last_completed_fiscal_year | default: site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
     {% if include.program_number == 0 %}
-      No programs are currently working toward this objective as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+      No programs are currently working toward this objective as of FY {{ insight_fiscal_year }}.
     {% elsif include.program_number == 1 %}
-      1 program is working toward this objective, spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+      1 program is working toward this objective, spending {{ include.expenditure_total }} in total as of FY {{ insight_fiscal_year }}.
     {% else %}
       {% if expenditure_total_value == 0 %}
         {{ include.program_number }} programs are working toward this objective,
-        spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}.
+        spending {{ include.expenditure_total }} in total as of FY {{ insight_fiscal_year }}.
       {% else %}
         {{ include.program_number }} programs are working toward this objective,
-        spending {{ include.expenditure_total }} in total as of FY {{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}. The largest
+        spending {{ include.expenditure_total }} in total as of FY {{ insight_fiscal_year }}. The largest
         program is the
         <a href="{{ include.largest_program_link }}" class="usa-link"
           >{{ include.largest_program_title }}</a

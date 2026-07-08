@@ -13,7 +13,7 @@ permalink: /pon/PON_N38
 title: Improve Immigration Enforcement and Lawful Pathways to Citizenship
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -32201306.15
   name: Case Management Pilot Program
   permalink: /program/97.102
   program_type: assistance_listing
@@ -33,12 +33,12 @@ where_used:
   permalink: /program/19.042
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 51843553.6
   name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
   permalink: /program/19.018
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -887448613.94
   name: Shelter and Services Program
   permalink: /program/97.141
   program_type: assistance_listing
@@ -48,7 +48,7 @@ where_used:
   permalink: /program/97.149
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 23282000.0
+  expenditure_amount: 23246431.33
   name: Temporary Labor Certification for Foreign Workers
   permalink: /program/17.273
   program_type: assistance_listing

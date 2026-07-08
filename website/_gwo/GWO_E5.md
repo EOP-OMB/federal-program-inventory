@@ -7,12 +7,12 @@ permalink: /gwo/GWO_E5
 title: Utilize America's Cultural Institutions
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 9514042.68
   name: Citizenship Education and Training
   permalink: /program/97.010
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 181400000.0
+  expenditure_amount: 179196949.15
   name: Grants to States
   permalink: /program/45.310
   program_type: assistance_listing
@@ -22,12 +22,12 @@ where_used:
   permalink: /program/84.017
   program_type: assistance_listing
 - agency: Library of Congress
-  expenditure_amount: 6000000.0
+  expenditure_amount: 0.0
   name: Library of Congress Grants
   permalink: /program/42.011
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 28730000.0
+  expenditure_amount: 14610762.27
   name: Museums for America
   permalink: /program/45.301
   program_type: assistance_listing
@@ -42,17 +42,17 @@ where_used:
   permalink: /program/97.140
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 24635000.0
+  expenditure_amount: 26245514.08
   name: National Leadership Grants
   permalink: /program/45.312
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 5950000.0
+  expenditure_amount: 5234564.36
   name: Native American and Native Hawaiian Library Services
   permalink: /program/45.311
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 200000.0
+  expenditure_amount: 6330523.93
   name: Promotion of the Humanities Challenge Grants
   permalink: /program/45.130
   program_type: assistance_listing

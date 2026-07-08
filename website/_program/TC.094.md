@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Sustain A Multi-modal Transportation Infrastructure System
   permalink: /gwo/GWO_T6
-headline_amount: 1640000000.0
+headline_amount: 1520000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

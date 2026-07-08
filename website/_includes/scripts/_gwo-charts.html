@@ -17,7 +17,10 @@ function renderObjectiveTreeMap() {
     const rootStyle = getComputedStyle(document.documentElement);
     const gwoTreemapBgColor = rootStyle.getPropertyValue('--gwo-treemap-bg').trim();
     const gwoTreemapFgColor = rootStyle.getPropertyValue('--gwo-treemap-fg').trim();
-    renderTreeMap(treeMapData, 'objectiveChart', 'expenditure_amount', gwoTreemapBgColor, gwoTreemapFgColor);
+    renderTreeMap(treeMapData, 'objectiveChart', 'expenditure_amount', gwoTreemapBgColor, gwoTreemapFgColor, {
+      year: Number('{{ fiscal_year }}'),
+      currentFiscalYear: Number('{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}')
+    });
   } catch (error) {
     console.error('Error rendering treemap:', error);
   }

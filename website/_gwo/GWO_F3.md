@@ -34,7 +34,7 @@ where_used:
   permalink: /program/93.269
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 13207002.78
   name: Crisis Counseling
   permalink: /program/97.032
   program_type: assistance_listing
@@ -51,7 +51,7 @@ where_used:
   permalink: /program/93.801
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: -4721826.76
   name: Education Stabilization Fund
   permalink: /program/84.425
   program_type: assistance_listing
@@ -84,7 +84,7 @@ where_used:
   permalink: /program/93.458
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 55197980.0
+  expenditure_amount: 20384649.68
   name: Environmental Public Health and Emergency Response
   permalink: /program/93.070
   program_type: assistance_listing
@@ -99,12 +99,12 @@ where_used:
   permalink: /program/93.454
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 25718038.11
   name: Hospital Preparedness Program (HPP) Ebola Preparedness and Response Activities
   permalink: /program/93.817
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 125000.0
   name: Medical Reserve Corps Small Grant Program
   permalink: /program/93.008
   program_type: assistance_listing
@@ -114,7 +114,7 @@ where_used:
   permalink: /program/93.386
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 51371643.0
+  expenditure_amount: 20282687.85
   name: Mental Health Disaster Assistance and Emergency Mental Health
   permalink: /program/93.982
   program_type: assistance_listing
@@ -124,7 +124,7 @@ where_used:
   permalink: /program/93.459
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 90300000.0
   name: National Bioterrorism Hospital Preparedness Program
   permalink: /program/93.889
   program_type: assistance_listing
@@ -134,7 +134,7 @@ where_used:
   permalink: /program/93.455
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 325064616.84
   name: National Ebola Training and Education Center (NETEC)
   permalink: /program/93.825
   program_type: assistance_listing
@@ -144,29 +144,29 @@ where_used:
   permalink: /program/10.181
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 651361448.0
+  expenditure_amount: 714456.0
   name: Public Health Emergency Preparedness
   permalink: /program/93.069
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 99614241.0
+  expenditure_amount: -938024334.15
   name: 'Public Health Emergency Response:  Cooperative Agreement for Emergency Response:
     Public Health Crisis Response'
   permalink: /program/93.354
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10020726.0
+  expenditure_amount: 5177.87
   name: Public Health Preparedness and Response Science, Research, and Practice
   permalink: /program/93.316
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10000000.0
+  expenditure_amount: 8029634.0
   name: Public Health Response, Forecasting, and Analytic Capacities Related to Disease
     Outbreaks, Epidemics, and Pandemics
   permalink: /program/93.823
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 300000.0
+  expenditure_amount: 6117564.0
   name: Research on Chemical and Biological Defense
   permalink: /program/12.360
   program_type: assistance_listing

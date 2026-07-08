@@ -11,12 +11,12 @@ permalink: /pon/PON_5T
 title: Improve Waterway Reliability
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 80000000.0
+  expenditure_amount: 60000000.0
   name: Deferral of tax on shipping companies
   permalink: /program/TC.089
   program_type: tax_expenditure
 - agency: Department of Transportation
-  expenditure_amount: 237000000.0
+  expenditure_amount: 0.0
   name: Territorial and Puerto Rico Highway Program
   permalink: /program/20.298
   program_type: assistance_listing

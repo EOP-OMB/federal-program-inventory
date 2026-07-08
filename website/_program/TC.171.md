@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Strengthen Community and Regional Development
   permalink: /gwo/GWO_C1
-headline_amount: 44080000000.0
+headline_amount: 41110000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Improve Capacity of the Healthcare System
   permalink: /gwo/GWO_L18
-headline_amount: 3850000000.0
+headline_amount: 3590000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

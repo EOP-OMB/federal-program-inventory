@@ -10,17 +10,17 @@ permalink: /pon/PON_3C
 title: 'Improve Public, Civic, and Community Spaces '
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 17000000.0
+  expenditure_amount: 11569634.0
   name: Community Connect Grant Program
   permalink: /program/10.863
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 2571160846.0
+  expenditure_amount: 232133033.21
   name: Community Facilities Loans and Grants
   permalink: /program/10.766
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 60000000.0
+  expenditure_amount: 867474507.36
   name: Economic, Social, and Political Development of the Territories
   permalink: /program/15.875
   program_type: assistance_listing

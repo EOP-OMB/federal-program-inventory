@@ -11,12 +11,12 @@ permalink: /pon/PON_T2
 title: Improve Risk Awareness to Consumers
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -3601868.61
   name: Cooperating Technical Partners
   permalink: /program/97.045
   program_type: assistance_listing
 - agency: Consumer Product Safety Commission
-  expenditure_amount: 2000000.0
+  expenditure_amount: 0.0
   name: Nicholas and Zachary Burt Memorial Carbon Monoxide Poisoning Prevention Grants
   permalink: /program/87.003
   program_type: assistance_listing
@@ -26,7 +26,7 @@ where_used:
   permalink: /program/20.621
   program_type: assistance_listing
 - agency: Consumer Product Safety Commission
-  expenditure_amount: 2000000.0
+  expenditure_amount: -784957.43
   name: Virginia Graeme Baker Pool and Spa Safety
   permalink: /program/87.002
   program_type: assistance_listing

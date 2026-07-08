@@ -10,12 +10,12 @@ permalink: /pon/PON_N70
 title: Reduce Costs of Prescription Drugs
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 5332710.0
+  expenditure_amount: 3998000.0
   name: Cell and Gene Therapy (CGT) Access Model
   permalink: /program/93.885
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 200548000000.0
+  expenditure_amount: 162488810217.76
   name: Medicare Prescription Drug Coverage
   permalink: /program/93.770
   program_type: assistance_listing

@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Promote Safe and High-Quality Schools
   permalink: /gwo/GWO_G3
-headline_amount: 3090000000.0
+headline_amount: 2890000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

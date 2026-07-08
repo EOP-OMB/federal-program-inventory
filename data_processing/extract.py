@@ -3,16 +3,14 @@ Extracts program information from various sources (e.g., SAM.gov).
 """
 
 import json
-import jsonschema
 import os
 import sys
 import time
-import csv
-import io
 from string import ascii_lowercase
 import requests
 import pandas as pd
 from tabula import read_pdf
+from data_quality_tests import test_extract_data_quality
 
 # file paths
 DISK_DIRECTORY = os.getenv('ETL_EXTRACT_DISK_DIRECTORY')
@@ -27,213 +25,6 @@ if (DISK_DIRECTORY is None or
     print("  ETL_EXTRACT_SOURCE_DIRECTORY")
     print("  ETL_EXTRACT_EXTRACTED_DIRECTORY")
     sys.exit(1)
-
-def validate_api_schema_get(url, filename):
-    schema_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "jsonschema")
-    response = requests.get(url, timeout=60)
-    response.raise_for_status()
-
-    schema = None
-    with open(os.path.join(schema_dir, filename), 'r') as file:
-        schema = json.load(file)
-
-    jsonschema.validate(instance=response.json(), schema=schema)
-
-    return
-
-def validate_api_schema_post(url, post_data, headers, filename):
-    schema_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "jsonschema")
-    response = requests.post(url, data=post_data, headers=headers, timeout=60)
-    response.raise_for_status()
-
-    schema = None
-    with open(os.path.join(schema_dir, filename), 'r') as file:
-        schema = json.load(file)
-
-    jsonschema.validate(instance=response.json(), schema=schema)
-
-    return
-
-# we rely on undocumented APIs, so this smoke test those APIs for breaking changes
-# if any validations fail, this will throw an error
-def test_api_schemas():
-    validate_api_schema_get(
-        "https://sam.gov/api/prod/sgs/v1/search/?index=cfda"
-            + "&page=0&mode=search&size=10000&is_active=true",
-        "cfda.json"
-    )
-
-    validate_api_schema_get(
-        "https://sam.gov/api/prod/fac/v1/programs/"
-            + "3615edf24a7d47c283ba24536e6cf717",
-        "program.json"
-    )
-
-    validate_api_schema_get(
-        "https://sam.gov/api/prod/fac/v1/programs/dictionaries"
-            + "?ids=match_percent,assistance_type,applicant_types,"
-            + "assistance_usage_types,beneficiary_types,"
-            + "cfr200_requirements&size=&filterElementIds=&keyword=",
-        "dictionary.json"
-    )
-
-    validate_api_schema_get(
-        "https://sam.gov/api/prod/sgs/v1/search/?index=cfda"
-            + "&page=0&mode=search&size=10000&is_active=true",
-        "organization_hierarchy.json"
-    )
-
-    validate_api_schema_get(
-        "https://sam.gov/api/prod/federalorganizations/"
-            + "v1/organizations/cf361c0196b041b7afa31dadea8d8c33",
-        "organization.json"
-    )
-
-    validate_api_schema_post(
-        "https://api.usaspending.gov/api/v2/autocomplete/cfda/",
-        {"search_text": "a", "limit": 10000},
-        {},
-        "autocomplete.json"
-    )
-
-    validate_api_schema_post(
-        "https://api.usaspending.gov/api/v2/references/filter/",
-        json.dumps(
-            {
-                "filters": {
-                    "keyword": {},
-                    "timePeriodType": "fy",
-                    "timePeriodFY": [],
-                    "timePeriodStart": None,
-                    "timePeriodEnd": None,
-                    "newAwardsOnly": False,
-                    "selectedLocations": {},
-                    "locationDomesticForeign": "all",
-                    "selectedFundingAgencies": {},
-                    "selectedAwardingAgencies": {},
-                    "selectedRecipients": [],
-                    "recipientDomesticForeign": "all",
-                    "recipientType": [],
-                    "selectedRecipientLocations": {},
-                    "awardType": [],
-                    "selectedAwardIDs": {},
-                    "awardAmounts": {},
-                    "selectedCFDA": {
-                        "84.310": {
-                            "program_number": "84.310",
-                            "identifier": "84.310"
-                        }
-                    },
-                    "naicsCodes": {
-                        "require": [],
-                        "exclude": [],
-                        "counts": []
-                    },
-                    "pscCodes": {
-                        "require": [],
-                        "exclude": [],
-                        "counts": []
-                    },
-                    "defCodes": {
-                        "require": [],
-                        "exclude": [],
-                        "counts": []
-                    },
-                    "pricingType": [],
-                    "setAside": [],
-                    "extentCompeted": [],
-                    "treasuryAccounts": {},
-                    "tasCodes": {
-                        "require": [],
-                        "exclude": [],
-                        "counts": []
-                    }
-                },
-                "version": "2020-06-01"
-            },
-            separators=(",", ":")
-        ),
-        {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; "
-                        + "rv:122.0) Gecko/20100101 Firefox/122.0",
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Content-Type": "application/json",
-            "X-Requested-With": "USASpendingFrontend",
-            "Origin": "https://www.usaspending.gov",
-            "DNT": "1",
-            "Connection": "keep-alive",
-            "Referer": "https://www.usaspending.gov/",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-site"
-        },
-        "filter.json"
-    )
-
-    print("API schemas pass")
-
-    return
-
-def test_ip_data():
-    source_path = DISK_DIRECTORY + EXTRACTED_DIRECTORY \
-                  + "improper-payment-program-mapping.csv"
-
-    if not os.path.exists(source_path):
-        raise FileNotFoundError(
-            "Expected mapping CSV not found at "
-            + source_path
-            + ". Run extract_ip_data() first, or ensure extracted seed data is present."
-        )
-
-    with open(source_path, "r", encoding="utf-8", newline="") as f:
-        expected_reader = csv.reader(f)
-        expected_columns = next(expected_reader, None)
-
-    if not expected_columns:
-        raise ValueError("Expected columns file is empty or missing header row.")
-
-    response = requests.get(
-        "https://paymentaccuracy.gov/assets/files/improper-payment-program-mapping.csv",
-        timeout=60
-    )
-    response.raise_for_status()
-
-    response_reader = csv.reader(io.StringIO(response.text))
-    response_columns = next(response_reader, None)
-
-    if not response_columns:
-        raise ValueError("Response CSV is empty or missing header row.")
-
-    missing_columns = [
-        column for column in expected_columns if column not in response_columns
-    ]
-    if missing_columns:
-        raise ValueError(
-            "Response CSV is missing expected columns: "
-            + ", ".join(missing_columns)
-        )
-
-    expected_column_count = len(response_columns)
-    for row_index, row in enumerate(response_reader, start=2):
-        # Ignore completely blank lines.
-        if not any(str(cell).strip() for cell in row):
-            continue
-        if len(row) != expected_column_count:
-            raise ValueError(
-                "Row "
-                + str(row_index)
-                + " has "
-                + str(len(row))
-                + " columns; expected "
-                + str(expected_column_count)
-                + "."
-            )
-
-    print("IP data csv pass")
-
-    return
 
 def extract_assistance_listing():
     """Extracts assistance listings from SAM.gov and saves them as JSON."""
@@ -551,8 +342,7 @@ def clean_all_data():
 # at: https://www.usaspending.gov/download_center/award_data_archive
 # This data is processed in the transformation stage of the process.
 def main():
-    test_api_schemas()
-    test_ip_data()
+    test_extract_data_quality()
     extract_assistance_listing()
     extract_dictionary()
     extract_ip_data()

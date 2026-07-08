@@ -13,7 +13,7 @@ permalink: /pon/PON_T96
 title: Increase Support for Families of Victims of Traumatic Loss
 where_used:
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 12000000.0
   name: Public Safety Officers' Benefits Program
   permalink: /program/16.571
   program_type: assistance_listing
