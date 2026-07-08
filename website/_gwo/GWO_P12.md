@@ -8,17 +8,17 @@ permalink: /gwo/GWO_P12
 title: Harden Cyber Defenses
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 549996.0
+  expenditure_amount: 0.0
   name: CISA Cyber Security Awareness Campaign
   permalink: /program/97.128
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 296003.95
   name: Cyber Capacity Building
   permalink: /program/19.035
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 23998124.56
   name: CyberSecurity Core Curriculum
   permalink: /program/12.905
   program_type: assistance_listing
@@ -34,7 +34,7 @@ where_used:
   permalink: /program/97.155
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 100000000.0
+  expenditure_amount: 14626341.46
   name: Information Security Grants
   permalink: /program/12.902
   program_type: assistance_listing
@@ -44,18 +44,18 @@ where_used:
   permalink: /program/97.148
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: -3176.75
   name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
     Sharing
   permalink: /program/93.835
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 383766558.0
   name: State and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program
   permalink: /program/97.137
   program_type: assistance_listing
 - agency: Federal Communications Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 2714598797.66
   name: Supply Chain Reimbursement Program
   permalink: /program/32.010
   program_type: assistance_listing

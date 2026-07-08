@@ -36,10 +36,8 @@ footer_include: _footer-gwo-pon.html
       {% assign combined_category_subcategories = combined_category_subcategories | push: combined_category_subcategory %}
       {% include components/_subcategory-tags.html categories=combined_category_subcategories %}
 
-      {% assign current_fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
       {% assign fiscal_year = site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
-      {% assign current_fy_obligations_title = "FY " | append: current_fiscal_year %}
-      {% assign fy_date_text = "FY " | append: fiscal_year %}
+      {% assign current_fy_obligations_title = "FY " | append: fiscal_year %}
 
       <!-- Programs Panel-->
       <div
@@ -64,6 +62,7 @@ footer_include: _footer-gwo-pon.html
           </div>
           <div class="grid-col">
             {% include components/_insight-section.html program_number=program_count
+            last_completed_fiscal_year=fiscal_year
             expenditure_total=total_expenditure_formatted
             expenditure_total_value=total_expenditure
             largest_program_title=largest_program.name 
@@ -87,12 +86,12 @@ footer_include: _footer-gwo-pon.html
             <h2 class="text-bold margin-bottom-4">Related Programs</h2>
             <div class="width-full">
               {% assign table_columns = "name,agency,expenditure_amount" | split: "," %}
-              {% assign table_labels = "Name,Agency,FY " | append: current_fiscal_year | split: "," %}
+              {% assign table_labels = "Name,Agency,FY " | append: fiscal_year | split: "," %}
               {% assign table_widths = "40%,30%,30%" | split: "," %}
               {% assign table_alignments = "left,left,right" | split: "," %}
               {% assign table_types = "text,text,currency" | split: "," %}
               {% assign table_bold = "true,false,true" | split: "," %}
-              {% include components/_sortable-table.html data=page.where_used columns=table_columns labels=table_labels widths=table_widths alignments=table_alignments types=table_types bold=table_bold show_total=true total_value=total_expenditure clickable=true permalink_field="permalink" %}
+              {% include components/_sortable-table.html data=page.where_used columns=table_columns labels=table_labels widths=table_widths alignments=table_alignments types=table_types bold=table_bold show_total=true total_value=total_expenditure clickable=true permalink_field="permalink" data_source_fiscal_year=fiscal_year %}
             </div>
           </div>
         </div>

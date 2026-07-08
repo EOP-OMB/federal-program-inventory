@@ -11,7 +11,7 @@ permalink: /pon/PON_10P
 title: Reduce Violent extremism
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -246802.94
   name: Partnership for Regional East Africa Counterterrorism
   permalink: /program/19.706
   program_type: assistance_listing

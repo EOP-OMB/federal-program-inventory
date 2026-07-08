@@ -9,12 +9,12 @@ permalink: /gwo/GWO_P2
 title: Ensure Law Enforcement Readiness
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 124657596.65
   name: Boating Safety Financial Assistance
   permalink: /program/97.012
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 16407973.24
   name: Body Worn Camera Policy and Implementation
   permalink: /program/16.835
   program_type: assistance_listing
@@ -39,27 +39,27 @@ where_used:
   permalink: /program/81.260
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 20719050.55
   name: Criminal Justice Systems
   permalink: /program/19.703
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -3554249.43
   name: Criminal and Juvenile Justice and Mental Health Collaboration Program
   permalink: /program/16.745
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -256901.26
   name: Economic, High-Tech, and Cyber Crime Prevention
   permalink: /program/16.752
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 288952170.74
   name: Edward Byrne Memorial Justice Assistance Grant Program
   permalink: /program/16.738
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 1282372.93
   name: Emergency Law Enforcement Assistance Grant
   permalink: /program/16.824
   program_type: assistance_listing
@@ -69,28 +69,28 @@ where_used:
   permalink: /program/16.823
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 608400000.0
   name: Fiscal Year 2025 Detention Support Grant Program
   permalink: /program/97.158
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 625000000.0
+  expenditure_amount: 0.0
   name: Fédération Internationale de Football Association World Cup Grant Program
   permalink: /program/97.160
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 3000233.62
   name: Harold Rogers Prescription Drug Monitoring Program
   permalink: /program/16.754
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -41363.89
   name: Improving the Investigation and Prosecution of Child Abuse and the Regional
     and Local Children's Advocacy Centers
   permalink: /program/16.758
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -117416.82
   name: John R.  Justice Prosecutors and Defenders Incentive Act
   permalink: /program/16.816
   program_type: assistance_listing
@@ -101,7 +101,7 @@ where_used:
   permalink: /program/16.757
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4000000.0
+  expenditure_amount: 10958128.81
   name: Law Enforcement Agreements
   permalink: /program/10.704
   program_type: assistance_listing
@@ -116,7 +116,7 @@ where_used:
   permalink: /program/16.302
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 10000000.0
+  expenditure_amount: 0.0
   name: Law Enforcement Mental Health and Wellness Act
   permalink: /program/16.070
   program_type: assistance_listing
@@ -126,33 +126,33 @@ where_used:
   permalink: /program/81.279
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -300000.0
   name: Matthew Shepard and James Byrd, Jr. Hate Crimes Education, Investigation and
     Prosecution Program
   permalink: /program/16.040
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -596449.85
   name: Missing Alzheimer's Disease Patient Assistance Program
   permalink: /program/16.015
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 83752293.0
+  expenditure_amount: 33184393.15
   name: Missing Children's Assistance
   permalink: /program/16.543
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -2635182.57
   name: NICS Act Record Improvement Program
   permalink: /program/16.813
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 2623643.0
   name: National Center on Restorative Justice
   permalink: /program/16.030
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -5497904.2
   name: National Criminal History Improvement Program (NCHIP)
   permalink: /program/16.554
   program_type: assistance_listing
@@ -163,12 +163,12 @@ where_used:
   permalink: /program/16.066
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 12000000.0
+  expenditure_amount: 0.0
   name: Preparing for Active Shooter Situations
   permalink: /program/16.069
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -83480.43
   name: Special Data Collections and Statistical Studies
   permalink: /program/16.734
   program_type: assistance_listing
@@ -178,7 +178,7 @@ where_used:
   permalink: /program/16.614
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -909317.92
   name: Support for Adam Walsh Act Implementation Grant Program
   permalink: /program/16.750
   program_type: assistance_listing

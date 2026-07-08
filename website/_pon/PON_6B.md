@@ -11,7 +11,7 @@ permalink: /pon/PON_6B
 title: Increase Manufacturing Technology Adoption
 where_used:
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Advanced Manufacturing
   permalink: /program/11.068
   program_type: assistance_listing

@@ -11,7 +11,7 @@ permalink: /pon/PON_9C
 title: Maintain Existing Community Infrastructure
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 44550000.0
+  expenditure_amount: 0.0
   name: Active Transportation Infrastructure Investment Program  (ATIIP)
   permalink: /program/20.228
   program_type: assistance_listing
@@ -26,22 +26,22 @@ where_used:
   permalink: /program/20.229
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 36000000.0
+  expenditure_amount: 0.0
   name: Bridge Formula Program
   permalink: /program/20.263
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 700000000.0
+  expenditure_amount: 0.0
   name: Bridge Investment Program
   permalink: /program/20.264
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 28000000.0
+  expenditure_amount: 0.0
   name: Capital Improvement Program
   permalink: /program/15.083
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 250000000.0
+  expenditure_amount: 0.0
   name: Competitive Highway Bridge Program (CHBP)
   permalink: /program/20.267
   program_type: assistance_listing
@@ -51,17 +51,17 @@ where_used:
   permalink: /program/90.003
   program_type: assistance_listing
 - agency: Denali Commission
-  expenditure_amount: 0.0
+  expenditure_amount: 177858558.69
   name: Denali Commission Program
   permalink: /program/90.100
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 100000000.0
+  expenditure_amount: 0.0
   name: Emergency Relief (ER) Program
   permalink: /program/20.271
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 1640000000.0
+  expenditure_amount: 1520000000.0
   name: Exclusion of interest for airport, dock, and similar bonds
   permalink: /program/TC.094
   program_type: tax_expenditure
@@ -77,17 +77,17 @@ where_used:
   permalink: /program/15.434
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: -6989147.12
   name: Grants for Capital Development in Health Centers
   permalink: /program/93.526
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 67403332424.45
   name: Highway Planning and Construction
   permalink: /program/20.205
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 3246000000.0
+  expenditure_amount: 0.0
   name: Highway Safety Improvement Program (HSIP)
   permalink: /program/20.272
   program_type: assistance_listing
@@ -102,7 +102,7 @@ where_used:
   permalink: /program/20.279
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1500000000.0
+  expenditure_amount: 898153817.63
   name: National Infrastructure Investments
   permalink: /program/20.933
   program_type: assistance_listing
@@ -112,42 +112,42 @@ where_used:
   permalink: /program/15.439
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 55000000.0
+  expenditure_amount: 0.0
   name: Nationally Significant Federal Lands and Tribal Projects (NSFLTP)
   permalink: /program/20.281
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1640000000.0
+  expenditure_amount: 1403382173.03
   name: Nationally Significant Freight and Highway Projects
   permalink: /program/20.934
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 196000000.0
+  expenditure_amount: 587246959.0
   name: Natural Gas Distribution Infrastructure Safety and Modernization Grant Program
   permalink: /program/20.708
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 10000000.0
+  expenditure_amount: 0.0
   name: Northeast Corridor Commission
   permalink: /program/20.333
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 68119755.0
+  expenditure_amount: 68119754.88
   name: Recreational Trails Program
   permalink: /program/20.219
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 20000000.0
+  expenditure_amount: 0.0
   name: Regional Infrastructure Accelerators Program
   permalink: /program/20.951
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 409069451.0
+  expenditure_amount: 377441960.2
   name: Rural Surface Transportation Grant Program
   permalink: /program/20.938
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 56800000000.0
+  expenditure_amount: 0.0
   name: Safety Related Activities
   permalink: /program/20.299
   program_type: assistance_listing
@@ -162,17 +162,17 @@ where_used:
   permalink: /program/15.440
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 14976000000.0
+  expenditure_amount: 0.0
   name: Surface Transportation Block Grant Program
   permalink: /program/20.287
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 40000000.0
+  expenditure_amount: 60000000.0
   name: Tax credit for certain expenditures for maintaining railroad tracks
   permalink: /program/TC.092
   program_type: tax_expenditure
 - agency: Environmental Protection Agency
-  expenditure_amount: 51000000.0
+  expenditure_amount: 49298759.0
   name: Technical Assistance for Treatment Works (Clean Water Act [CWA] Section 104(b)(8))
   permalink: /program/66.446
   program_type: assistance_listing
@@ -182,7 +182,7 @@ where_used:
   permalink: /program/TC.088
   program_type: tax_expenditure
 - agency: Department of Transportation
-  expenditure_amount: 500000.0
+  expenditure_amount: 0.0
   name: Transportation Access Pilot Program
   permalink: /program/20.288
   program_type: assistance_listing

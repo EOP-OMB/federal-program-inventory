@@ -13,27 +13,27 @@ permalink: /pon/PON_N6
 title: Increase Community Education on Disaster Preparedness
 where_used:
 - agency: Department of Commerce
-  expenditure_amount: 85732200.0
+  expenditure_amount: 81411558.0
   name: Coastal Zone Management Administration Awards
   permalink: /program/11.419
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Community Safety Grants
   permalink: /program/20.711
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 31331153.94
   name: Interagency Hazardous Materials Public Sector Training and Planning Grants
   permalink: /program/20.703
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 3362423.0
+  expenditure_amount: 2655323.8
   name: Pipeline Emergency Response Grant (PERG)
   permalink: /program/20.706
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10020726.0
+  expenditure_amount: 5177.87
   name: Public Health Preparedness and Response Science, Research, and Practice
   permalink: /program/93.316
   program_type: assistance_listing

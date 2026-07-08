@@ -9,12 +9,12 @@ permalink: /pon/PON_T33
 title: Decrease Congestion on Highways or Roads
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 50000000.0
+  expenditure_amount: 0.0
   name: Congestion Relief Program
   permalink: /program/20.269
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: -928620000.0
   name: High-Speed Rail Corridors and Intercity Passenger Rail Service – Capital Assistance
     Grants
   permalink: /program/20.319

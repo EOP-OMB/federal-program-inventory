@@ -75,8 +75,8 @@ function resolveDataSourceFromConfig({
 
   // Perform the lookup
   const source = dataSourcesConfig?.[normalizedProgramType]?.[yearType]?.[resolvedSpendingType];
-  
-  return source || 'Data source not available';
+
+  return source === 'SAM.gov' ? 'SAM.gov est.' : (source || 'Data source not available');
 }
 
 function resolveProgramDataSource({
@@ -92,7 +92,6 @@ function resolveProgramDataSource({
     resolvedCurrentFiscalYear = getCurrentFiscalYearFromData(data, dataType || 'obligations');
   }
 
-  // Use the config-based lookup
   return resolveDataSourceFromConfig({
     programType,
     dataType,

@@ -10,22 +10,22 @@ permalink: /pon/PON_3ND
 title: Strengthen Defense Academic Partnerships
 where_used:
 - agency: Department of Defense
-  expenditure_amount: 700000000.0
+  expenditure_amount: 666632001.04
   name: Air Force Defense Research Sciences Program
   permalink: /program/12.800
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 28375.0
+  expenditure_amount: 16863154.51
   name: Collaborative Research and Development
   permalink: /program/12.114
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 20000000.0
+  expenditure_amount: 18572346.0
   name: National Defense Education Program
   permalink: /program/12.006
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 16365000.0
+  expenditure_amount: 21849394.0
   name: Past Conflict Accounting
   permalink: /program/12.740
   program_type: assistance_listing

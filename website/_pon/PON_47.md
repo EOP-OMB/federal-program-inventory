@@ -12,17 +12,17 @@ permalink: /pon/PON_47
 title: Improve Basic Technology Skills
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 220000.0
+  expenditure_amount: 0.0
   name: Food and Agricultural Education Information System
   permalink: /program/10.249
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
+  expenditure_amount: 707085936.03
   name: State Digital Equity Planning and Capacity Grant
   permalink: /program/11.032
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 13000000.0
+  expenditure_amount: 365627846.0
   name: Tribal Broadband Connectivity Program
   permalink: /program/11.029
   program_type: assistance_listing

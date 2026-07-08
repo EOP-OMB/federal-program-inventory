@@ -11,22 +11,22 @@ permalink: /pon/PON_5
 title: Expand Housing Supports for Older Adults
 where_used:
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 25195000.0
+  expenditure_amount: 0.0
   name: Mortgage Insurance Rental Housing for the Elderly
   permalink: /program/14.138
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 122000000.0
+  expenditure_amount: 148673825.66
   name: Multifamily Housing Service Coordinators
   permalink: /program/14.191
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 30000000.0
+  expenditure_amount: 103025817.7
   name: Older Adults Home Modification Grant Program
   permalink: /program/14.921
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 0.0
+  expenditure_amount: 981404172.46
   name: Supportive Housing for the Elderly
   permalink: /program/14.157
   program_type: assistance_listing

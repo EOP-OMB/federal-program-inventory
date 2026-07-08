@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Expand Domestic Energy Production
   permalink: /gwo/GWO_I2
-headline_amount: 740000000.0
+headline_amount: 500000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

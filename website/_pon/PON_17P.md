@@ -16,27 +16,27 @@ where_used:
   permalink: /program/16.058
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -807478.9
   name: Grants to Encourage Arrest Policies and Enforcement of Protection Orders Program
   permalink: /program/16.590
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 38953840.94
   name: Legal Assistance for Victims
   permalink: /program/16.524
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 2270125.0
   name: 'PREA Program: Strategic Support for PREA Implementation'
   permalink: /program/16.735
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 1496575.0
   name: Sexual Assault Forensic Exam Training and Services
   permalink: /program/16.064
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 171502738.84
   name: Violence Against Women Formula Grants
   permalink: /program/16.588
   program_type: assistance_listing

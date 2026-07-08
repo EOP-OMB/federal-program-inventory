@@ -12,22 +12,22 @@ permalink: /pon/PON_11C
 title: 'Strengthen Community Financial Institutions '
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 40000000.0
+  expenditure_amount: 0.0
   name: Bank Enterprise Award Program
   permalink: /program/21.021
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 500000000.0
+  expenditure_amount: 0.0
   name: Community Development Financial Institutions Bond Guarantee Program
   permalink: /program/21.014
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 213175000.0
+  expenditure_amount: 72206686.0
   name: Community Development Financial Institutions Program
   permalink: /program/21.020
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 5200000.0
+  expenditure_amount: 431619.0
   name: Community Development Financial Institutions Program Loan
   permalink: /program/21.035
   program_type: assistance_listing
@@ -37,17 +37,17 @@ where_used:
   permalink: /program/21.030
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 10000000.0
+  expenditure_amount: 0.0
   name: Lead-Safe and Healthy Homes Financing Demonstration
   permalink: /program/14.922
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 22200000.0
+  expenditure_amount: 5271000.0
   name: Native Initiatives
   permalink: /program/21.012
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 18000000.0
+  expenditure_amount: 0.0
   name: Small Dollar Loan Program
   permalink: /program/21.025
   program_type: assistance_listing

@@ -10,7 +10,7 @@ permalink: /pon/PON_N68
 title: Increase Affordable Health Coverage
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 16089981136.0
   name: 1332 State Innovation Waivers
   permalink: /program/93.423
   program_type: assistance_listing
@@ -22,22 +22,22 @@ where_used:
   permalink: /program/93.341
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 210000000.0
+  expenditure_amount: 976780852.0
   name: Basic Health Program (Affordable Care Act)
   permalink: /program/93.640
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 2167000000.0
+  expenditure_amount: 1930702459.0
   name: CHAMPVA
   permalink: /program/64.039
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 22606370673.0
+  expenditure_amount: 20545165446.0
   name: Children's Health Insurance Program
   permalink: /program/93.767
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10000000.0
+  expenditure_amount: -15306214.45
   name: Cooperative Agreement to Support Navigators in Federally-facilitated Exchanges
   permalink: /program/93.332
   program_type: assistance_listing
@@ -52,7 +52,7 @@ where_used:
   permalink: /program/93.797
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 760419098000.0
+  expenditure_amount: 666131123061.05
   name: Grants to States for Medicaid
   permalink: /program/93.778
   program_type: assistance_listing
@@ -62,43 +62,43 @@ where_used:
   permalink: /program/TC.128
   program_type: tax_expenditure
 - agency: Department of Health and Human Services
-  expenditure_amount: 600000.0
+  expenditure_amount: 47781089.72
   name: Medicare Enrollment Assistance Program
   permalink: /program/93.071
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 474915000000.0
+  expenditure_amount: 432516213604.68
   name: Medicare Hospital Insurance
   permalink: /program/93.773
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 632153000000.0
+  expenditure_amount: 568590835738.81
   name: Medicare Supplementary Medical Insurance
   permalink: /program/93.774
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 90190000000.0
+  expenditure_amount: 104880000000.0
   name: Refundable Premium Assistance Tax Credit
   permalink: /program/TC.135
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 460000000.0
+  expenditure_amount: 440000000.0
   name: Special Blue Cross/Blue Shield tax benefits
   permalink: /program/TC.139
   program_type: tax_expenditure
 - agency: Department of Health and Human Services
-  expenditure_amount: 24000000.0
+  expenditure_amount: 18000000.0
   name: State Grants for the Implementation, Enhancement, and Expansion of Medicaid
     and CHIP School-Based Services
   permalink: /program/93.771
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 55242000.0
+  expenditure_amount: 51279311.43
   name: State Health Insurance Assistance Program
   permalink: /program/93.324
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: -98454.84
   name: Support for Ombudsman and Beneficiary Counseling Programs for States Participating
     in Financial Alignment Model Demonstrations for Dually Eligible Individuals
   permalink: /program/93.634

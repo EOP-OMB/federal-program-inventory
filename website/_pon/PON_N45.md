@@ -12,17 +12,17 @@ permalink: /pon/PON_N45
 title: Increase Cybersecurity Awareness and Information Sharing
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 296003.95
   name: Cyber Capacity Building
   permalink: /program/19.035
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 2250000.0
   name: Cyberspace and Digital Policy
   permalink: /program/19.665
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -9412.99
   name: Global Telecommunications and Emerging Technology Training
   permalink: /program/19.663
   program_type: assistance_listing
@@ -38,13 +38,13 @@ where_used:
   permalink: /program/16.061
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: -3176.75
   name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
     Sharing
   permalink: /program/93.835
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 383766558.0
   name: State and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program
   permalink: /program/97.137
   program_type: assistance_listing

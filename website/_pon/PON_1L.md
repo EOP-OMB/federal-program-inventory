@@ -12,27 +12,27 @@ permalink: /pon/PON_1L
 title: 'Increase Access to Independent Living (ADD: for Individuals with Disabilities)'
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 102105000.0
+  expenditure_amount: 97678582.81
   name: ACL Centers for Independent Living
   permalink: /program/93.432
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 26078000.0
+  expenditure_amount: 24691611.59
   name: ACL Independent Living State Grants
   permalink: /program/93.369
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 0.0
+  expenditure_amount: -591865.85
   name: Specially Adapted Housing Assistive Technology Grant Program
   permalink: /program/64.051
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 188940457.0
+  expenditure_amount: 190400121.0
   name: Specially Adapted Housing for Disabled Veterans
   permalink: /program/64.106
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 3364170000.0
+  expenditure_amount: 1242203268.0
   name: Veteran Readiness and Employment
   permalink: /program/64.116
   program_type: assistance_listing

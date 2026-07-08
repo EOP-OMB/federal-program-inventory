@@ -16,12 +16,12 @@ permalink: /pon/PON_2H
 title: Improve Workplace Safety Protections
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 250000.0
+  expenditure_amount: -106312.0
   name: Brookwood-Sago Grant
   permalink: /program/17.603
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 63160000.0
+  expenditure_amount: 60914647.13
   name: Consultation Agreements
   permalink: /program/17.504
   program_type: assistance_listing
@@ -36,17 +36,17 @@ where_used:
   permalink: /program/93.WTS
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 10537000.0
+  expenditure_amount: 8807216.73
   name: Mine Health and Safety Grants
   permalink: /program/17.600
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 120000000.0
+  expenditure_amount: 116609636.3
   name: Occupational Safety and Health State Program
   permalink: /program/17.503
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 12787000.0
+  expenditure_amount: 8590683.13
   name: Occupational Safety and Health Susan Harwood Training Grants
   permalink: /program/17.502
   program_type: assistance_listing
@@ -56,7 +56,7 @@ where_used:
   permalink: /program/17.604
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 23282000.0
+  expenditure_amount: 23246431.33
   name: Temporary Labor Certification for Foreign Workers
   permalink: /program/17.273
   program_type: assistance_listing

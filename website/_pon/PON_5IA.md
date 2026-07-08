@@ -11,7 +11,7 @@ permalink: /pon/PON_5IA
 title: Improve Regional Security Stability and Cooperation
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -6352922.89
   name: AEECA/ESF PD Programs
   permalink: /program/19.900
   program_type: assistance_listing
@@ -21,12 +21,12 @@ where_used:
   permalink: /program/19.973
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 27754274.93
   name: East Asia and Pacific Grants Program
   permalink: /program/19.124
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 75543326.11
   name: Environmental and Scientific Partnerships and Programs
   permalink: /program/19.017
   program_type: assistance_listing
@@ -36,12 +36,12 @@ where_used:
   permalink: /program/19.317
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -36966.57
   name: Global Defense Reform Program
   permalink: /program/19.888
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 7000000.0
+  expenditure_amount: 0.0
   name: Middle East Regional Cooperation Program
   permalink: /program/19.502
   program_type: assistance_listing
@@ -51,7 +51,7 @@ where_used:
   permalink: /program/19.808
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 750000.0
+  expenditure_amount: -32527.9
   name: Professional and Cultural Exchange Programs - Special Professional and Cultural
     Programs
   permalink: /program/19.012
@@ -62,7 +62,7 @@ where_used:
   permalink: /program/19.041
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -197269.7
   name: Trans-Sahara Counterterrorism Partnership (TSCTP)
   permalink: /program/19.222
   program_type: assistance_listing

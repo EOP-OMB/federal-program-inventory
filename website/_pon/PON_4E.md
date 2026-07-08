@@ -13,22 +13,22 @@ permalink: /pon/PON_4E
 title: Improve Grid Reliability
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 8000000.0
+  expenditure_amount: 18473637.0
   name: Assistance to High Energy Cost Communities
   permalink: /program/10.859
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 49920000.0
+  expenditure_amount: 31833980.88
   name: Electricity Research, Development and Analysis
   permalink: /program/81.122
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 885000000.0
+  expenditure_amount: 0.0
   name: National Electric Vehicle Infrastructure
   permalink: /program/20.277
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1321200000.0
+  expenditure_amount: 0.0
   name: The Charging and Fueling Infrastructure (CFI) Grant Program
   permalink: /program/20.220
   program_type: assistance_listing

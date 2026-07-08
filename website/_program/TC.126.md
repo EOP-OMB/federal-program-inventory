@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Ensure Stability and Security for Children Without Parents
   permalink: /gwo/GWO_L1
-headline_amount: 1080000000.0
+headline_amount: 1000000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

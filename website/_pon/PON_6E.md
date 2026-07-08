@@ -13,22 +13,22 @@ permalink: /pon/PON_6E
 title: Improve Rural Energy Infrastructure
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 8000000.0
+  expenditure_amount: 18473637.0
   name: Assistance to High Energy Cost Communities
   permalink: /program/10.859
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 233387900.0
+  expenditure_amount: 7556281628.92
   name: New Empowering Rural America (New ERA) Program
   permalink: /program/10.758
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7910000000.0
+  expenditure_amount: 204095967.74
   name: Rural Electrification Loans and Loan Guarantees
   permalink: /program/10.850
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 11000000.0
+  expenditure_amount: 0.0
   name: Rural Energy Savings Program (RESP)
   permalink: /program/10.751
   program_type: assistance_listing

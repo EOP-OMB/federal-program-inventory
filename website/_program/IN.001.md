@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Payment of Interest on Treasury Debt securities
   permalink: /gwo/GWO_GG2
-headline_amount: 1230678756444.0
+headline_amount: 1215613829754.0
 improper_payments: []
 improper_payments_is_multiple: false
 improper_payments_percent: 0

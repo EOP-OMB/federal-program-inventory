@@ -12,38 +12,38 @@ permalink: /pon/PON_21P
 title: Improve Sexual Assault Response on Tribal Lands
 where_used:
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -807478.9
   name: Grants to Encourage Arrest Policies and Enforcement of Protection Orders Program
   permalink: /program/16.590
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 36249356.13
   name: Rural Domestic Violence, Dating Violence, Sexual Assault, and Stalking Assistance
     Program
   permalink: /program/16.589
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 7054815.0
   name: Special Domestic Violence Criminal Jurisdiction Implementation
   permalink: /program/16.025
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -161647.94
   name: Tribal Domestic Violence and Sexual Assault Coalitions Grant Program
   permalink: /program/16.557
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -146873.98
   name: Tribal Sexual Assault Services Program
   permalink: /program/16.024
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 47365274.0
   name: Violence Against Women Discretionary Grants for Indian Tribal Governments
   permalink: /program/16.587
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 171502738.84
   name: Violence Against Women Formula Grants
   permalink: /program/16.588
   program_type: assistance_listing

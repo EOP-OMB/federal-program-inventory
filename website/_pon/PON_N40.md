@@ -12,7 +12,7 @@ permalink: /pon/PON_N40
 title: Prevent and Respond to Human Trafficking and Exploitation
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 17886089.0
+  expenditure_amount: 37143237.19
   name: Assistance for Torture Victims
   permalink: /program/93.604
   program_type: assistance_listing
@@ -22,7 +22,7 @@ where_used:
   permalink: /program/97.076
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 7865434.0
+  expenditure_amount: 1500000.0
   name: Demonstration Grants for Domestic Victims of Human Trafficking
   permalink: /program/93.327
   program_type: assistance_listing
@@ -32,18 +32,18 @@ where_used:
   permalink: /program/16.834
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 6100000.0
+  expenditure_amount: 10274322.26
   name: Education and Prevention Grants to Reduce Sexual Abuse of Runaway, Homeless
     and Street Youth
   permalink: /program/93.557
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 64249000.0
+  expenditure_amount: -25189150.59
   name: International Labor Programs
   permalink: /program/17.401
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 76000000.0
+  expenditure_amount: 53032758.0
   name: International Programs to Combat Human Trafficking
   permalink: /program/19.019
   program_type: assistance_listing
@@ -58,17 +58,17 @@ where_used:
   permalink: /program/16.035
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -7029595.9
   name: Services for Trafficking Victims
   permalink: /program/16.320
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 12497442.0
+  expenditure_amount: 0.0
   name: Services to Victims of a Severe Form of Trafficking
   permalink: /program/93.598
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 79739965.0
+  expenditure_amount: -16587263.32
   name: VOCA Tribal Victim Services Set-Aside Program
   permalink: /program/16.841
   program_type: assistance_listing

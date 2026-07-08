@@ -13,23 +13,23 @@ permalink: /pon/PON_5G
 title: Improve School Safety
 where_used:
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 5360522.78
   name: Civil Rights Training and Advisory Services (also known as Equity Assistance
     Centers)
   permalink: /program/84.004
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 159072797.83
   name: Replacement and Repair of Indian Schools
   permalink: /program/15.062
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 381901945.95
   name: School Safely National Activities
   permalink: /program/84.184
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 73000000.0
+  expenditure_amount: 0.0
   name: School Violence Prevention Program
   permalink: /program/16.071
   program_type: assistance_listing

@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: 'Preserve Culturally or Historically Significant Sites or Artifacts '
   permalink: /gwo/GWO_E6
-headline_amount: 820000000.0
+headline_amount: 770000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

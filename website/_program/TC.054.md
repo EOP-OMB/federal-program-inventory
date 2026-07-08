@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Improve Forest and Land Stewardship
   permalink: /gwo/GWO_Q3
-headline_amount: 80000000.0
+headline_amount: 70000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

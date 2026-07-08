@@ -14,7 +14,7 @@ permalink: /pon/PON_5F
 title: Improve Resilience of Rural Communities to Hazards
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 250000000.0
+  expenditure_amount: 0.0
   name: Competitive Highway Bridge Program (CHBP)
   permalink: /program/20.267
   program_type: assistance_listing
@@ -25,12 +25,12 @@ where_used:
   permalink: /program/10.928
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 33348000.0
+  expenditure_amount: 31757009.0
   name: Fisheries Disaster Relief
   permalink: /program/11.477
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 34291.0
+  expenditure_amount: 112774682.3
   name: Tribal Climate Resilience
   permalink: /program/15.156
   program_type: assistance_listing

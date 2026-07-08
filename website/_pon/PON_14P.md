@@ -12,18 +12,18 @@ permalink: /pon/PON_14P
 title: Improve Prosecutorial Capacity of Criminal Activity
 where_used:
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 31804877.44
   name: Global Counterterrorism Programs
   permalink: /program/19.701
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -41363.89
   name: Improving the Investigation and Prosecution of Child Abuse and the Regional
     and Local Children's Advocacy Centers
   permalink: /program/16.758
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -152033.6
   name: Smart Prosecution Initiative
   permalink: /program/16.825
   program_type: assistance_listing

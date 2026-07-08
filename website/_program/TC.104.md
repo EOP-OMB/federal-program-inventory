@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Provide Finance Options for Post-Secondary Education
   permalink: /gwo/GWO_G7
-headline_amount: 13210000000.0
+headline_amount: 13480000000.0
 improper_payments:
 - agency: TREASURY
   end_date: 12-2023

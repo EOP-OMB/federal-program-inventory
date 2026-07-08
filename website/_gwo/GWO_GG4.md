@@ -8,7 +8,7 @@ permalink: /gwo/GWO_GG4
 title: Provide Personnel and Human Capital Management
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 700000.0
+  expenditure_amount: 0.0
   name: HHS OIG Hotline
   permalink: /program/93.A92
   program_type: assistance_listing

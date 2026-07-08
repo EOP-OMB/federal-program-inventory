@@ -12,42 +12,42 @@ permalink: /pon/PON_T55
 title: Increase Tribal Self-Governance and Decision-Making Authority
 where_used:
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 56937773.81
   name: Aid To Tribal Governments
   permalink: /program/15.020
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 2000000.0
+  expenditure_amount: 8639115.41
   name: Arizona Water Settlement Act of 2004
   permalink: /program/15.542
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 588174.0
   name: Attorney Fees Indian Rights
   permalink: /program/15.053
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 100977095.82
   name: Bureau of Indian Affairs Facilities Operations and Maintenance
   permalink: /program/15.048
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 2459458.97
   name: Children's Justice Act Partnerships for Indian Communities
   permalink: /program/16.583
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 322000.0
   name: Colorado River Basin Act of 1968
   permalink: /program/15.541
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 200335224.4
   name: Consolidated Tribal Government
   permalink: /program/15.021
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 92188.34
   name: Cooperative Inspection Agreements with States and Tribes
   permalink: /program/15.222
   program_type: assistance_listing
@@ -57,22 +57,22 @@ where_used:
   permalink: /program/15.556
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 45567607.23
   name: Epidemiology Program
   permalink: /program/93.231
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 5950000.0
   name: Grants to State and Tribal Courts to Implement Protection Order Pilot Programs
   permalink: /program/16.062
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 4002306.63
   name: Improvement and Repair of Indian Detention Facilities
   permalink: /program/15.063
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 2000000.0
+  expenditure_amount: 0.0
   name: Improving the Capability of Indian Tribal Governments to Regulate Environmental
     Quality
   permalink: /program/93.581
@@ -83,83 +83,83 @@ where_used:
   permalink: /program/16.308
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 26613008.22
   name: Indian Health Service, Health Management Development Program
   permalink: /program/93.228
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 239553255.17
   name: Indian Law Enforcement
   permalink: /program/15.030
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 63643239.11
   name: Indian Rights Protection
   permalink: /program/15.036
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 1037980929.0
   name: Indian Self-Determination
   permalink: /program/93.441
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 500000.0
+  expenditure_amount: 582203.07
   name: Indian Self-Determination Act Contracts, Grants and Cooperative Agreements
   permalink: /program/15.241
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 38151220.35
   name: Indian Self-Determination Contract Support
   permalink: /program/15.024
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 34732313.19
   name: Indian Tribal Water Resources Development, Management, and Protection
   permalink: /program/15.519
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 2441225.0
   name: Injury Prevention Program for American Indians and Alaskan Natives Cooperative
     Agreements
   permalink: /program/93.284
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 327933.0
   name: Litigation Support for Indian Rights
   permalink: /program/15.052
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 16000000.0
+  expenditure_amount: 0.0
   name: Native American Community Research, Demonstration, and Pilot Projects
   permalink: /program/93.340
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 29539807.0
+  expenditure_amount: 50960912.74
   name: Native American Programs
   permalink: /program/93.612
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 4099025.0
+  expenditure_amount: -131419.58
   name: Navajo-Gallup Water Supply
   permalink: /program/15.552
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 30988593.63
   name: Services to Indian Children, Elderly and Families
   permalink: /program/15.025
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 7054815.0
   name: Special Domestic Violence Criminal Jurisdiction Implementation
   permalink: /program/16.025
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 38000000.0
+  expenditure_amount: 28540203.12
   name: State Court Improvement Program
   permalink: /program/93.586
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 372602.77
   name: Strengthening Tribal Nations
   permalink: /program/15.067
   program_type: assistance_listing
@@ -185,7 +185,7 @@ where_used:
   permalink: /program/16.815
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 51004957.83
   name: Tribal Courts
   permalink: /program/15.029
   program_type: assistance_listing
@@ -195,12 +195,12 @@ where_used:
   permalink: /program/97.156
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -161647.94
   name: Tribal Domestic Violence and Sexual Assault Coalitions Grant Program
   permalink: /program/16.557
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 3325130.02
   name: Tribal Energy Development Capacity Grants
   permalink: /program/15.148
   program_type: assistance_listing
@@ -210,27 +210,27 @@ where_used:
   permalink: /program/10.047
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 126738.0
+  expenditure_amount: 1857876.0
   name: Tribal Justice Assistance
   permalink: /program/16.596
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 360699.41
   name: Tribal Justice Systems
   permalink: /program/16.608
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 1230086682.12
   name: Tribal Self-Governance
   permalink: /program/15.022
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 3800951210.0
   name: 'Tribal Self-Governance Program: IHS Compacts/Funding Agreements'
   permalink: /program/93.210
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 662355.01
   name: 'Tribal Self-Governance Program: Planning and Negotiation Cooperative Agreement'
   permalink: /program/93.444
   program_type: assistance_listing
@@ -245,22 +245,22 @@ where_used:
   permalink: /program/16.059
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 837000000.0
+  expenditure_amount: 0.0
   name: Tribal Transportation Program (TTP)
   permalink: /program/20.289
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 12819771.0
+  expenditure_amount: -999533.84
   name: Tribal Youth Program
   permalink: /program/16.731
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 47365274.0
   name: Violence Against Women Discretionary Grants for Indian Tribal Governments
   permalink: /program/16.587
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 21500000.0
   name: White Mountain Apache Tribe Rural Water System
   permalink: /program/15.558
   program_type: assistance_listing

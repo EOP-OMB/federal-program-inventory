@@ -12,7 +12,7 @@ permalink: /pon/PON_T69
 title: Increase Access to Recreational Trails and Outdoor Areas
 where_used:
 - agency: Department of Defense
-  expenditure_amount: 15999999.0
+  expenditure_amount: 15875859.0
   name: Air Force Academy Athletic Programs
   permalink: /program/12.801
   program_type: assistance_listing
@@ -22,7 +22,7 @@ where_used:
   permalink: /program/15.943
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1042338.9
   name: Chesapeake Bay Gateways Network
   permalink: /program/15.930
   program_type: assistance_listing
@@ -32,47 +32,47 @@ where_used:
   permalink: /program/15.550
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 5000000.0
+  expenditure_amount: 0.0
   name: Good Neighbor Authority for Recreation Enhancement and Improvement
   permalink: /program/15.084
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 6000.0
+  expenditure_amount: 0.0
   name: Grey Towers Cooperative Authorities
   permalink: /program/10.706
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 14000000.0
+  expenditure_amount: 0.0
   name: National Outreach and Communication
   permalink: /program/15.653
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 7500000.0
+  expenditure_amount: 0.0
   name: National Scenic Byways Program
   permalink: /program/20.280
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 10000000.0
+  expenditure_amount: 4838912.35
   name: Recreation and Visitor Services
   permalink: /program/15.225
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 16999998.0
+  expenditure_amount: 1818507.71
   name: Sportfishing and Boating Safety Act
   permalink: /program/15.622
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 68600000.0
+  expenditure_amount: -20.56
   name: Voluntary Public Access and Habitat Incentive Program
   permalink: /program/10.093
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 927590392.0
+  expenditure_amount: 1014544148.73
   name: Wildlife Restoration and Basic Hunter Education and Safety
   permalink: /program/15.611
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 50000000.0
+  expenditure_amount: 56002039.77
   name: Youth and Veteran Organizations Conservation Activities
   permalink: /program/15.931
   program_type: assistance_listing

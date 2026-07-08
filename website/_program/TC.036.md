@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Promote Safe and High-Quality Housing
   permalink: /gwo/GWO_M4
-headline_amount: 2440000000.0
+headline_amount: 2390000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

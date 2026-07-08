@@ -8,22 +8,22 @@ permalink: /gwo/GWO_T1
 title: Improve Commercial Distribution Infrastructure
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 80000000.0
+  expenditure_amount: 60000000.0
   name: Deferral of tax on shipping companies
   permalink: /program/TC.089
   program_type: tax_expenditure
 - agency: Department of Transportation
-  expenditure_amount: 1500000000.0
+  expenditure_amount: 0.0
   name: National Highway Freight Program (NHFP)
   permalink: /program/20.278
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 85100000.0
+  expenditure_amount: 261443094.6
   name: Port Infrastructure Development Program
   permalink: /program/20.823
   program_type: assistance_listing
 - agency: Department of the Treasury
-  expenditure_amount: 40000000.0
+  expenditure_amount: 60000000.0
   name: Tax credit for certain expenditures for maintaining railroad tracks
   permalink: /program/TC.092
   program_type: tax_expenditure
@@ -33,17 +33,17 @@ where_used:
   permalink: /program/TC.088
   program_type: tax_expenditure
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 38000000.0
   name: Transportation Demonstration Program
   permalink: /program/20.936
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 1743000.0
   name: Transportation Planning, Research and Education
   permalink: /program/20.931
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 14680542.93
   name: United States Marine Highway Grants
   permalink: /program/20.816
   program_type: assistance_listing

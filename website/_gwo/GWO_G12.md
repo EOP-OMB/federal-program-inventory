@@ -8,27 +8,27 @@ permalink: /gwo/GWO_G12
 title: Strengthen Preparation for STEM Education
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 1800000.0
+  expenditure_amount: 0.0
   name: Garrett A. Morgan Technology and Transportation Education Program (GAMTTEP)
   permalink: /program/20.293
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 12099993.13
   name: GenCyber Grants Program
   permalink: /program/12.903
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 160000.0
+  expenditure_amount: 110000.0
   name: Outdoor Schools in National Parks
   permalink: /program/15.012
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 50000000.0
+  expenditure_amount: 22907751.6
   name: STARBASE Program
   permalink: /program/12.020
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 5872588.0
+  expenditure_amount: 28304631.84
   name: Science, Technology, Engineering & Mathematics (STEM) Education, Outreach
     and Workforce Program
   permalink: /program/12.330
@@ -39,7 +39,7 @@ where_used:
   permalink: /program/97.062
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 130699.16
   name: Student Driven Research and Long Term Monitoring of Selected Populations in
     the Valley and Ridge Eco-region
   permalink: /program/81.102

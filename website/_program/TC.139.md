@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Strengthen Healthcare Services
   permalink: /gwo/GWO_L14
-headline_amount: 460000000.0
+headline_amount: 440000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

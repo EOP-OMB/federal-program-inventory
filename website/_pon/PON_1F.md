@@ -13,7 +13,7 @@ permalink: /pon/PON_1F
 title: Improve Agricultural Resilience to Hazards
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 2020000000.0
+  expenditure_amount: 2000000000.0
   name: Capital gains treatment of certain agriculture income
   permalink: /program/TC.051
   program_type: tax_expenditure
@@ -23,22 +23,22 @@ where_used:
   permalink: /program/TC.053
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 140000000.0
+  expenditure_amount: 120000000.0
   name: Expensing of certain capital outlays
   permalink: /program/TC.048
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 320000000.0
+  expenditure_amount: 280000000.0
   name: Expensing of certain multiperiod production costs
   permalink: /program/TC.049
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 220000000.0
+  expenditure_amount: 210000000.0
   name: Income averaging for farmers
   permalink: /program/TC.052
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 140000000.0
+  expenditure_amount: 120000000.0
   name: Treatment of loans forgiven for solvent farmers
   permalink: /program/TC.050
   program_type: tax_expenditure
