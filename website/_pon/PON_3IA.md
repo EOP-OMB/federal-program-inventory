@@ -12,7 +12,7 @@ permalink: /pon/PON_3IA
 title: Improve Humanitarian Aid Delivery
 where_used:
 - agency: Department of State
-  expenditure_amount: 342750000.0
+  expenditure_amount: 1630789287.36
   name: Contributions to International Organizations for Overseas Assistance
   permalink: /program/19.515
   program_type: assistance_listing
@@ -22,47 +22,47 @@ where_used:
   permalink: /program/98.010
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 0.0
+  expenditure_amount: 43883717.85
   name: Department of Defense HIV/AIDS Prevention Program
   permalink: /program/12.350
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1062000000.0
+  expenditure_amount: 0.0
   name: Food for Peace, Title II
   permalink: /program/10.624
   program_type: assistance_listing
 - agency: Agency for International Development
-  expenditure_amount: 0.0
+  expenditure_amount: -19834324.0
   name: Ocean Freight Reimbursement Program (OFR)
   permalink: /program/98.003
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 1000000.0
+  expenditure_amount: 20299809.9
   name: Overseas Refugee Assistance Programs for Africa
   permalink: /program/19.517
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 19000000.0
+  expenditure_amount: 11910444.34
   name: Overseas Refugee Assistance Programs for East Asia
   permalink: /program/19.511
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -32918.89
   name: Overseas Refugee Assistance Programs for Europe
   permalink: /program/19.520
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 35249532.0
+  expenditure_amount: -632535.45
   name: Overseas Refugee Assistance Programs for Strategic Global Priorities
   permalink: /program/19.522
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 10000000.0
+  expenditure_amount: 2668469.27
   name: Overseas Refugee Assistance Programs for Western Hemisphere
   permalink: /program/19.518
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 160400000.0
+  expenditure_amount: 0.0
   name: Refugee Resettlement
   permalink: /program/19.044
   program_type: assistance_listing

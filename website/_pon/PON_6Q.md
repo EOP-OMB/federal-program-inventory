@@ -13,129 +13,129 @@ permalink: /pon/PON_6Q
 title: Protect Aquatic Ecosystems
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 999022000.0
+  expenditure_amount: 102214115.67
   name: Agricultural Conservation Easement Program
   permalink: /program/10.931
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4715000.0
+  expenditure_amount: 1247328.75
   name: Agricultural Management Assistance
   permalink: /program/10.917
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 50000000.0
+  expenditure_amount: 17731163.46
   name: Aquatic Ecosystem Restoration Program
   permalink: /program/15.580
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 10000000.0
+  expenditure_amount: 20178126.93
   name: Aquatics Resources Management
   permalink: /program/15.244
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 20592149.0
+  expenditure_amount: 14794593.0
   name: Center for Sponsored Coastal Ocean Research Coastal Ocean Program
   permalink: /program/11.478
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 36109976.0
+  expenditure_amount: 37396811.0
   name: Coastal Zone Management Estuarine Research Reserves
   permalink: /program/11.420
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 21100000.0
+  expenditure_amount: 10468389.29
   name: Colorado River System Conservation Pilot
   permalink: /program/15.567
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 9306739.0
+  expenditure_amount: 11458956.75
   name: Coral Reef Conservation Program
   permalink: /program/11.482
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 800000.0
   name: Dry-Redwater Rural Water Project Feasibility Study
   permalink: /program/15.582
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 9000000.0
+  expenditure_amount: 0.0
   name: Emergency Drought Relief for Tribes
   permalink: /program/15.585
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 62700000.0
+  expenditure_amount: 52307767.0
   name: Geographic Programs - Chesapeake Bay Program Implementation, Regulatory/Accountability
     and Monitoring Grants
   permalink: /program/66.964
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 19232685.0
+  expenditure_amount: 15173978.0
   name: Geographic Programs - Columbia River Basin Restoration (CRBR) Program
   permalink: /program/66.962
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 80000000.0
+  expenditure_amount: 66125365.0
   name: Geographic Programs - Great Lakes Restoration Initiative
   permalink: /program/66.469
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 32399499.0
+  expenditure_amount: 16199804.0
   name: Geographic Programs - Gulf of America Program
   permalink: /program/66.475
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 12697000.0
+  expenditure_amount: 12197000.0
   name: Geographic Programs - Lake Pontchartrain Basic Restoration Program (PRP)
   permalink: /program/66.125
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 58421821.0
+  expenditure_amount: 10697000.0
   name: 'Geographic Programs - Puget Sound Action Agenda: Technical Investigations
     and Implementation Assistance Program'
   permalink: /program/66.123
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 10500000.0
+  expenditure_amount: 10575493.0
   name: Geographic Programs - South Florida Geographic Initiatives Program
   permalink: /program/66.484
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 61002000.0
+  expenditure_amount: 57172432.0
   name: Geographic Programs – Long Island Sound Program
   permalink: /program/66.437
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 2910000.0
+  expenditure_amount: 124912.64
   name: Great Lakes Fish and Wildlife Restoration Act
   permalink: /program/15.688
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 35000000.0
+  expenditure_amount: 7880960.78
   name: Great Lakes Restoration
   permalink: /program/15.662
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 83656.0
+  expenditure_amount: 136674.9
   name: Great Lakes Sea Lamprey Control
   permalink: /program/15.687
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: 21000000.0
   name: Lewis and Clark Rural Water System
   permalink: /program/15.520
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 15313962.0
+  expenditure_amount: 38111861.0
   name: Marine Sanctuary Program
   permalink: /program/11.429
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 2776000.0
+  expenditure_amount: 1098569.02
   name: Marine Turtle Conservation Fund
   permalink: /program/15.645
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 18265000.0
+  expenditure_amount: 35433908.04
   name: Mni Wiconi Rural Water Supply Project
   permalink: /program/15.522
   program_type: assistance_listing
@@ -145,47 +145,47 @@ where_used:
   permalink: /program/20.276
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 175121276.0
+  expenditure_amount: 99798109.0
   name: Nonpoint Source Implementation Grants
   permalink: /program/66.460
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 116806376.0
+  expenditure_amount: 0.0
   name: Pacific Coast Salmon Recovery Fund
   permalink: /program/11.045
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1813840.0
+  expenditure_amount: 0.0
   name: Special Research Grants Program Aquaculture Research
   permalink: /program/10.343
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 455083372.0
+  expenditure_amount: 376810396.95
   name: Sport Fish Restoration
   permalink: /program/15.605
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 4261000.0
+  expenditure_amount: -55861.9
   name: Water Bank Program
   permalink: /program/10.929
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 35000000.0
+  expenditure_amount: 0.0
   name: WaterSMART Enhancing Water Resources Projects
   permalink: /program/15.579
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 414579000.0
+  expenditure_amount: 48676891.45
   name: Watershed Protection and Flood Prevention
   permalink: /program/10.904
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 13458000.0
+  expenditure_amount: 2976303.0
   name: Wetland Mitigation Banking Program
   permalink: /program/10.933
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 260000.0
+  expenditure_amount: 129962.41
   name: Yukon River Salmon Research and Management Assistance
   permalink: /program/15.671
   program_type: assistance_listing

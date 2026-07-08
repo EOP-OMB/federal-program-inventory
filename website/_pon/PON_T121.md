@@ -14,12 +14,12 @@ permalink: /pon/PON_T121
 title: Improve Foundational Research in Engineering
 where_used:
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Advanced Manufacturing
   permalink: /program/11.068
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 42524000.0
+  expenditure_amount: 83293711.77
   name: Aeronautics
   permalink: /program/43.002
   program_type: assistance_listing
@@ -29,52 +29,52 @@ where_used:
   permalink: /program/11.63B
   program_type: assistance_listing
 - agency: National Science Foundation
-  expenditure_amount: 181990000.0
+  expenditure_amount: 744157910.0
   name: Engineering
   permalink: /program/47.041
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 2156520.82
   name: Environmental Monitoring, Independent Research, Technical Analysis
   permalink: /program/81.005
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 16000000.0
+  expenditure_amount: 86690042.22
   name: Exploration
   permalink: /program/43.003
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Fire Risk Reduction
   permalink: /program/11.052
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 7500000.0
+  expenditure_amount: 500000.0
   name: Maritime Environmental and Technical Assistance
   permalink: /program/20.826
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 29244000.0
+  expenditure_amount: 15741260.67
   name: Public Transportation Innovation
   permalink: /program/20.530
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4774499.35
   name: Remedial Action and Waste Management
   permalink: /program/81.092
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 907114425.5
+  expenditure_amount: 1171372460.61
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 19688515.0
+  expenditure_amount: 19397064.22
   name: Space Operations
   permalink: /program/43.007
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 55000000.0
+  expenditure_amount: 58264998.98
   name: Space Technology
   permalink: /program/43.012
   program_type: assistance_listing

@@ -707,7 +707,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
 
     print("Successfully generated sub-category markdown files")
 
-def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
+def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for gwos with related programs."""
     recreate_directory(output_dir)
 
@@ -759,7 +759,7 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
             expenditure_amount = 0.0
             spending = get_amounts(cursor, p['id'], FISCAL_YEARS)
             if spending:
-                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == fiscal_year), 0.0)
 
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
@@ -801,7 +801,7 @@ def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, prog
         file.write('---\n')
     print("Successfully generated about page")
 
-def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
+def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for pons with related programs."""
     recreate_directory(output_dir)
 
@@ -853,7 +853,7 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str):
             expenditure_amount = 0.0
             spending = get_amounts(cursor, p['id'], FISCAL_YEARS)
             if spending:
-                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == constants.CURRENT_FISCAL_YEAR), 0.0)
+                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == fiscal_year), 0.0)
 
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
@@ -1047,7 +1047,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         headline_amount = get_expenditure_for_program(
             outlays,
             other_program_spending,
-            constants.CURRENT_FISCAL_YEAR
+            constants.LAST_COMPLETED_FISCAL_YEAR
         )
 
         # Create comprehensive program data
@@ -1881,7 +1881,7 @@ try:
     export_data_sources_config()
 
     search_path = os.path.join('../website', 'pages', 'search.md')
-    generate_search_page(search_path, shared_data, constants.CURRENT_FISCAL_YEAR)
+    generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     category_path = os.path.join('../website', 'pages', 'category.md')
     generate_category_page(cursor, programs_data, category_path,
@@ -1892,7 +1892,7 @@ try:
 
     programs_json_path = os.path.join('../indexer', 'programs-table.json')
     generate_programs_table_json(programs_json_path, programs_data,
-                                 constants.CURRENT_FISCAL_YEAR)
+                                 constants.LAST_COMPLETED_FISCAL_YEAR)
 
     category_dir = os.path.join('../website', '_category')
     generate_category_markdown_files(cursor, category_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
@@ -1901,10 +1901,10 @@ try:
     generate_subcategory_markdown_files(cursor, subcategory_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     gwo_dir = os.path.join('../website', '_gwo')
-    generate_gwo_markdown_files(cursor, gwo_dir)
+    generate_gwo_markdown_files(cursor, gwo_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     pon_dir = os.path.join('../website', '_pon')
-    generate_pon_markdown_files(cursor, pon_dir)
+    generate_pon_markdown_files(cursor, pon_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
     about_path = os.path.join('../website', 'pages', 'about-fpi.md')
     generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)

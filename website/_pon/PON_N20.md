@@ -17,12 +17,12 @@ where_used:
   permalink: /program/12.560
   program_type: assistance_listing
 - agency: National Science Foundation
-  expenditure_amount: 174710000.0
+  expenditure_amount: 473329325.0
   name: Integrative Activities
   permalink: /program/47.083
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 1748934.0
+  expenditure_amount: 178293.0
   name: Mathematical Sciences Grants
   permalink: /program/12.901
   program_type: assistance_listing

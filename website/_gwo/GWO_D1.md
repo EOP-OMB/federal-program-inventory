@@ -8,17 +8,17 @@ permalink: /gwo/GWO_D1
 title: Increase Occupational Safety and Health
 where_used:
 - agency: Department of Labor
-  expenditure_amount: 250000.0
+  expenditure_amount: -106312.0
   name: Brookwood-Sago Grant
   permalink: /program/17.603
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 63160000.0
+  expenditure_amount: 60914647.13
   name: Consultation Agreements
   permalink: /program/17.504
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 2500000.0
+  expenditure_amount: 77874.38
   name: Hazardous Materials State Inspection (HMSI) Grant
   permalink: /program/20.707
   program_type: assistance_listing
@@ -33,27 +33,27 @@ where_used:
   permalink: /program/93.WTS
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 10537000.0
+  expenditure_amount: 8807216.73
   name: Mine Health and Safety Grants
   permalink: /program/17.600
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 35804851.6
   name: NIEHS Hazardous Waste Worker Health and Safety Training
   permalink: /program/93.142
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 120000000.0
+  expenditure_amount: 116609636.3
   name: Occupational Safety and Health State Program
   permalink: /program/17.503
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 12787000.0
+  expenditure_amount: 8590683.13
   name: Occupational Safety and Health Susan Harwood Training Grants
   permalink: /program/17.502
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 700000.0
+  expenditure_amount: 340000.0
   name: 'PRIA 5: Farm Worker and Health Care Provider Training and Education Grants'
   permalink: /program/66.720
   program_type: assistance_listing

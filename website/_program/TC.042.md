@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Ensure Safe Drinking Water
   permalink: /gwo/GWO_L9
-headline_amount: 390000000.0
+headline_amount: 360000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

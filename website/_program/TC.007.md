@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Accelerate Development of Commercial Products and Technologies
   permalink: /gwo/GWO_B5
-headline_amount: -8830000000.0
+headline_amount: -17360000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

@@ -16,7 +16,7 @@ where_used:
   permalink: /program/93.876
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 59028218.0
+  expenditure_amount: 0.0
   name: National Institute of Allergy and Infectious Diseases-Antimicrobial Resistance
   permalink: /program/93.8AM
   program_type: assistance_listing

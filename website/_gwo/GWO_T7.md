@@ -18,7 +18,7 @@ where_used:
   permalink: /program/20.524
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 52694000.0
+  expenditure_amount: 51270069.0
   name: Rail Fixed Guideway Public Transportation System State Safety Oversight Formula
     Grant Program
   permalink: /program/20.528

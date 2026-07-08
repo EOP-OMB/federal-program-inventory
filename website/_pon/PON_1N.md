@@ -11,7 +11,7 @@ permalink: /pon/PON_1N
 title: Increase Access to Benefits and Services upon Veteran's death
 where_used:
 - agency: Department of Veterans Affairs
-  expenditure_amount: 393926239.0
+  expenditure_amount: 837329797.0
   name: Burial Expenses Allowance for Veterans
   permalink: /program/64.101
   program_type: assistance_listing
@@ -26,17 +26,17 @@ where_used:
   permalink: /program/64.202
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 289000.0
+  expenditure_amount: 385226.0
   name: VA Casket or Urn Allowance Program
   permalink: /program/64.205
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 597236.0
+  expenditure_amount: 486884.0
   name: VA Outer Burial Receptacle Allowance Program
   permalink: /program/64.206
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 163950497.0
+  expenditure_amount: 75313349.25
   name: Veterans Cemetery Grants Program
   permalink: /program/64.203
   program_type: assistance_listing

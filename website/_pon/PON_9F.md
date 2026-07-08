@@ -11,7 +11,7 @@ permalink: /pon/PON_9F
 title: Strengthen Emergency Coordination
 where_used:
 - agency: Department of Transportation
-  expenditure_amount: 2000000.0
+  expenditure_amount: 0.0
   name: Assistance for Local Emergency Response Training (ALERT)
   permalink: /program/20.709
   program_type: assistance_listing
@@ -22,12 +22,12 @@ where_used:
   permalink: /program/93.684
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 27999999.0
+  expenditure_amount: 0.0
   name: Hazardous Materials Emergency Preparedness (HMEP)
   permalink: /program/20.705
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 31331153.94
   name: Interagency Hazardous Materials Public Sector Training and Planning Grants
   permalink: /program/20.703
   program_type: assistance_listing
@@ -38,28 +38,28 @@ where_used:
   permalink: /program/97.153
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 3362423.0
+  expenditure_amount: 2655323.8
   name: Pipeline Emergency Response Grant (PERG)
   permalink: /program/20.706
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 876000000.0
+  expenditure_amount: 0.0
   name: Promoting Resilient Operations for Transformative, Efficient, and Cost-Saving
     Transportation (PROTECT)
   permalink: /program/20.284
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 84148059.31
   name: State and Local Homeland Security National Training Program
   permalink: /program/97.005
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 2000000.0
+  expenditure_amount: 0.0
   name: Supplemental Public Sector Training Grants
   permalink: /program/20.713
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 750060.0
+  expenditure_amount: 1275006.0
   name: U.S. Repatriation
   permalink: /program/93.579
   program_type: assistance_listing

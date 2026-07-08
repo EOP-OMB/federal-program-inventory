@@ -24,27 +24,27 @@ where_used:
   permalink: /program/97.146
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 311872519.62
   name: Assistance to Firefighters Grant
   permalink: /program/97.044
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 153927602.99
   name: 'BRIC: Building Resilient Infrastructure and Communities'
   permalink: /program/97.047
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 15000000.0
+  expenditure_amount: 250000.0
   name: Centers for Homeland Security
   permalink: /program/97.061
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -4315882.97
   name: Chemical Stockpile Emergency Preparedness Program
   permalink: /program/97.040
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 13999680.25
   name: Community Assistance Program State Support Services Element (CAP-SSSE)
   permalink: /program/97.023
   program_type: assistance_listing
@@ -54,27 +54,27 @@ where_used:
   permalink: /program/93.269
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -3601868.61
   name: Cooperating Technical Partners
   permalink: /program/97.045
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 52738163.63
   name: Cooperative Extension Service
   permalink: /program/10.500
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Disaster-Resilient Buildings, Infrastructure, and Communities
   permalink: /program/11.069
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 8000000.0
+  expenditure_amount: 23786139.45
   name: Earthquake Hazards Program Assistance
   permalink: /program/15.807
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 3166569.31
   name: Earthquake State Assistance
   permalink: /program/97.082
   program_type: assistance_listing
@@ -84,12 +84,12 @@ where_used:
   permalink: /program/97.131
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 316466451.05
   name: Emergency Management Performance Grants
   permalink: /program/97.042
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: -1000000.0
   name: Emergency Operations Center
   permalink: /program/97.052
   program_type: assistance_listing
@@ -99,7 +99,7 @@ where_used:
   permalink: /program/16.823
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 112675543.29
   name: Fire Management Assistance Grant
   permalink: /program/97.046
   program_type: assistance_listing
@@ -109,17 +109,17 @@ where_used:
   permalink: /program/97.151
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Fire Risk Reduction
   permalink: /program/11.052
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 8674204040.6
   name: Flood Insurance
   permalink: /program/97.022
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 29450510.64
   name: Flood Mitigation Assistance
   permalink: /program/97.029
   program_type: assistance_listing
@@ -129,7 +129,7 @@ where_used:
   permalink: /program/97.144
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 1084144526.03
   name: Hazard Mitigation Grant
   permalink: /program/97.039
   program_type: assistance_listing
@@ -154,7 +154,7 @@ where_used:
   permalink: /program/93.386
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 9308719.62
   name: National Dam Safety Program
   permalink: /program/97.041
   program_type: assistance_listing
@@ -176,27 +176,27 @@ where_used:
   permalink: /program/97.153
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 23716171.28
   name: National Fire Academy Training Assistance
   permalink: /program/97.018
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 800000.0
+  expenditure_amount: 1351466.0
   name: National Fire Plan-Wildland Urban Interface Community Fire Assistance
   permalink: /program/15.674
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 2249943.96
   name: National Incident Management System (NIMS)
   permalink: /program/97.107
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 167961966.67
   name: National Urban Search and Rescue (US&R) Response System
   permalink: /program/97.025
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 39936184.02
   name: Next Generation Warning System Grant Program
   permalink: /program/97.138
   program_type: assistance_listing
@@ -206,7 +206,7 @@ where_used:
   permalink: /program/81.884
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 77428282.96
   name: Port Security Grant Program
   permalink: /program/97.056
   program_type: assistance_listing
@@ -216,29 +216,29 @@ where_used:
   permalink: /program/97.143
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 876000000.0
+  expenditure_amount: 0.0
   name: Promoting Resilient Operations for Transformative, Efficient, and Cost-Saving
     Transportation (PROTECT)
   permalink: /program/20.284
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 651361448.0
+  expenditure_amount: 714456.0
   name: Public Health Emergency Preparedness
   permalink: /program/93.069
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 99614241.0
+  expenditure_amount: -938024334.15
   name: 'Public Health Emergency Response:  Cooperative Agreement for Emergency Response:
     Public Health Crisis Response'
   permalink: /program/93.354
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10020726.0
+  expenditure_amount: 5177.87
   name: Public Health Preparedness and Response Science, Research, and Practice
   permalink: /program/93.316
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 10101310.0
   name: Regional Catastrophic Preparedness Grant Program (RCPGP)
   permalink: /program/97.111
   program_type: assistance_listing
@@ -248,7 +248,7 @@ where_used:
   permalink: /program/97.152
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 0.0
+  expenditure_amount: 3700000.0
   name: Research Partnership on Climate Change and Transportation
   permalink: /program/20.946
   program_type: assistance_listing
@@ -258,38 +258,38 @@ where_used:
   permalink: /program/97.120
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 12013846.0
   name: Safeguarding Tomorrow Revolving Loan Fund Program
   permalink: /program/97.139
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 1500000.0
   name: Securing the Cities Program
   permalink: /program/97.106
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 313544003.04
+  expenditure_amount: 314729052.22
   name: Smith-Lever Extension Funding
   permalink: /program/10.511
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 150000.0
+  expenditure_amount: 300000.0
   name: South Carolina Support for Foreign Research Reactor Spent Nuclear Fuel (FRRSNF)
     Shipments
   permalink: /program/81.180
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 284502500.64
   name: Staffing for Adequate Fire and Emergency Response (SAFER)
   permalink: /program/97.083
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 439187.61
   name: State Fire Training Systems Grants
   permalink: /program/97.043
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 84148059.31
   name: State and Local Homeland Security National Training Program
   permalink: /program/97.005
   program_type: assistance_listing
@@ -299,12 +299,12 @@ where_used:
   permalink: /program/97.150
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 1000000.0
+  expenditure_amount: 1096775.28
   name: USGS Cooperative Landslide Hazard Mapping and Assessment Program
   permalink: /program/15.821
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 7000000.0
+  expenditure_amount: 0.0
   name: Wildfire Smoke Preparedness in Community Buildings Grant Program
   permalink: /program/66.044
   program_type: assistance_listing

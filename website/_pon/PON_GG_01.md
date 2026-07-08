@@ -9,7 +9,7 @@ permalink: /pon/PON_GG_01
 title: Service U.S. Treasury Debt Obligations
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 1230678756444.0
+  expenditure_amount: 1215613829754.0
   name: Interest on the Public Debt
   permalink: /program/IN.001
   program_type: interest

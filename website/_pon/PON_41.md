@@ -11,12 +11,12 @@ permalink: /pon/PON_41
 title: Increase Cultural Understanding and Tolerance
 where_used:
 - agency: Department of the Interior
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4405960.72
   name: Cultural Resources Management
   permalink: /program/15.159
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 2503227.0
+  expenditure_amount: 0.0
   name: 'National Endowment for the Humanities: Media Projects'
   permalink: /program/45.036
   program_type: assistance_listing

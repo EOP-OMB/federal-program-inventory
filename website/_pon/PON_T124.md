@@ -17,18 +17,18 @@ where_used:
   permalink: /program/96.011
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: -219674.66
   name: Centers for Medicare and Medicaid Services (CMS) Research, Demonstrations
     and Evaluations
   permalink: /program/93.779
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 54917814.99
   name: Family Smoking Prevention and Tobacco Control Act Regulatory Research
   permalink: /program/93.077
   program_type: assistance_listing
 - agency: Department of Housing and Urban Development
-  expenditure_amount: 44000000.0
+  expenditure_amount: 1743888.97
   name: General Research and Technology Activity
   permalink: /program/14.506
   program_type: assistance_listing
@@ -43,32 +43,32 @@ where_used:
   permalink: /program/14.536
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 150000.0
+  expenditure_amount: 84822.45
   name: Route 66 Corridor Preservation
   permalink: /program/15.958
   program_type: assistance_listing
 - agency: Social Security Administration
-  expenditure_amount: 0.0
+  expenditure_amount: -2882583.97
   name: Social Security Research and Demonstration
   permalink: /program/96.007
   program_type: assistance_listing
 - agency: National Science Foundation
-  expenditure_amount: 92200000.0
+  expenditure_amount: 153990670.0
   name: Social, Behavioral, and Economic Sciences
   permalink: /program/47.075
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 350000.0
+  expenditure_amount: 347517.36
   name: Southwest Border Resource Protection Program
   permalink: /program/15.963
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 644873.0
+  expenditure_amount: 2489691.53
   name: Welfare Reform Research, Evaluations and National Studies
   permalink: /program/93.595
   program_type: assistance_listing
 - agency: Department of Labor
-  expenditure_amount: 0.0
+  expenditure_amount: -440967.76
   name: Women's Bureau
   permalink: /program/17.700
   program_type: assistance_listing

@@ -18,32 +18,32 @@ where_used:
   permalink: /program/45.037
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 2503227.0
+  expenditure_amount: 0.0
   name: 'National Endowment for the Humanities: Media Projects'
   permalink: /program/45.036
   program_type: assistance_listing
 - agency: National Endowment for the Arts
-  expenditure_amount: 94545000.0
+  expenditure_amount: 46348478.84
   name: Promotion of the Arts Grants to Organizations and Individuals
   permalink: /program/45.024
   program_type: assistance_listing
 - agency: National Endowment for the Arts
-  expenditure_amount: 69230000.0
+  expenditure_amount: 69971857.32
   name: Promotion of the Arts Partnership Agreements
   permalink: /program/45.025
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 30000000.0
+  expenditure_amount: 30171706.89
   name: Promotion of the Humanities Federal/State Partnership
   permalink: /program/45.129
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 0.0
+  expenditure_amount: 2426765.61
   name: Promotion of the Humanities Office of Digital Humanities
   permalink: /program/45.169
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 454999.0
+  expenditure_amount: 6207104.75
   name: Promotion of the Humanities Public Programs
   permalink: /program/45.164
   program_type: assistance_listing

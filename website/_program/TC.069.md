@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Support Affordable Housing
   permalink: /gwo/GWO_M2
-headline_amount: 3080000000.0
+headline_amount: 2450000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

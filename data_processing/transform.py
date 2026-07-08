@@ -12,6 +12,7 @@ import sys
 import constants
 import pandas as pd
 import zipfile
+from data_quality_tests import test_transform_data_quality
 
 # temporary (large) database file paths
 TEMP_DB_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY')
@@ -1534,6 +1535,7 @@ def remove_orphaned_records():
         WHERE cfda_number NOT IN (SELECT id FROM program);
     """)
 
+test_transform_data_quality()
 load_usaspending_initial_files()
 transform_and_insert_usaspending_aggregation_data()
 load_agency()

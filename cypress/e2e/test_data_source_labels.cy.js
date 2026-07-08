@@ -18,7 +18,7 @@ describe('Data source labels', () => {
           },
           obligations: 760419098000,
           objectives: 'Test program for stable tooltip snapshot testing.',
-          data_source: 'SAM.gov',
+          data_source: 'USASpending.gov',
           programType: 'assistance_listing'
         }
       ]
@@ -33,52 +33,49 @@ describe('Data source labels', () => {
     cy.visit('test/search');
 
     cy.contains('.program-title', 'Test Medicaid Program')
-      .should('be.visible')
-      .closest('.program-search-container')
-      .as('mockProgramRow');
+      .should('be.visible');
 
-    cy.get('@mockProgramRow')
-      .find('.program-obligations-tooltip')
-      .should('be.visible')
-      .as('mockObligationsTooltip');
-
-    cy.get('@mockObligationsTooltip').then(($el) => {
-      const rect = $el[0].getBoundingClientRect();
-      hoverX = Math.floor(rect.left + (rect.width / 2));
-      hoverY = Math.floor(rect.top + (rect.height / 2));
-    });
-
-    cy.get('@mockObligationsTooltip')
-      .trigger('mouseenter', { force: true })
-      .trigger('mousemove', { clientX: hoverX, clientY: hoverY, force: true });
+    cy.get('.program-obligations').trigger('mouseenter', 'center');
 
     cy.get('.program-obligations-hover-tooltip')
       .should('exist')
       .should('contain.text', 'Data source:')
-      .should('contain.text', 'SAM.gov')
-      .then(($tooltip) => {
-        $tooltip.css({
-          position: 'fixed',
-          left: `${hoverX + 8}px`,
-          top: `${hoverY - 24}px`,
-          transform: 'none',
-          zIndex: '9999',
-          opacity: '1'
-        });
-      });
+      .should('contain.text', 'USASpending.gov');
 
-    cy.get('body').compareSnapshot('search_data_source_tooltip');
+    cy.get('.program-results').compareSnapshot('search_data_source_tooltip');
   });
 
   it('overview chart tooltip shows data source label', () => {
     cy.visit('test/program_overview_chart_base.html');
 
-    cy.get('#chart svg > g > rect').should('be.visible')
-      .trigger('mousemove', { clientX: 300, clientY: 500, force: true });
+    cy.window().then((win) => {
+      const chartElement = win.document.getElementById('chart');
+      const rawData = JSON.parse(chartElement.getAttribute('data-outlays') || '[]');
+      const has2026Point = rawData.some((point) => String(point.x) === '2026');
+      const seededData = has2026Point
+        ? rawData
+        : [...rawData, { x: '2026', outlay: 53, obligation: 65 }];
+
+      const formattedData = win.standardizeDataForD3(seededData, true);
+      win.createOutlaysVsSpendChart('#chart', formattedData, 'assistance_listing');
+    });
+
+    cy.get('#chart svg > g > rect').should('be.visible').then(($overlay) => {
+      const rect = $overlay[0].getBoundingClientRect();
+      const hoverX = Math.floor(rect.right - 2);
+      const hoverY = Math.floor(rect.top + (rect.height / 2));
+
+      cy.wrap($overlay)
+        .trigger('mousemove', { clientX: hoverX, clientY: hoverY, force: true });
+    });
 
     cy.get('.outlays-chart-tooltip')
       .should('be.visible')
-      .should('contain.text', 'Data source:');
+      .should('contain.text', 'Year: 2026')
+      .should('contain.text', 'Outlays')
+      .should('contain.text', 'Obligations')
+      .should('contain.text', 'SAM.gov est.')
+      .should('contain.text', 'USASpending.gov');
 
     cy.get('body').compareSnapshot('overview_chart_data_source_tooltip');
   });
@@ -117,7 +114,11 @@ describe('Data source labels', () => {
     cy.location('hash').should('eq', '#related-programs');
     cy.get('#related-programs').scrollIntoView().should('be.visible');
 
-    cy.contains('#related-programs th', 'FY 2025').invoke('index').then((fyColumnIndex) => {
+    cy.get('#related-programs th')
+      .filter((_, el) => (el.innerText || '').includes('FY'))
+      .first()
+      .invoke('index')
+      .then((fyColumnIndex) => {
       const column = fyColumnIndex + 1;
       cy.get(`#related-programs tbody tr:not([data-total-row]) td:nth-child(${column})`)
         .first()
@@ -135,7 +136,7 @@ describe('Data source labels', () => {
               force: true
             });
         });
-    });
+      });
 
     cy.get('.program-obligations-hover-tooltip')
       .should('have.length', 1)
@@ -171,7 +172,7 @@ describe('Data source labels', () => {
 
     cy.get('.chart-tooltip')
       .should('be.visible')
-      .should('contain.text', 'Data source:');
+      .should('contain.text', 'Data source: USASpending.gov');
 
     cy.wait(1000);
     cy.get('#outcomeChart').compareSnapshot('pon_treemap_data_source_tooltip');
@@ -181,7 +182,11 @@ describe('Data source labels', () => {
     cy.location('hash').should('eq', '#related-programs');
     cy.get('#related-programs').scrollIntoView().should('be.visible');
 
-    cy.contains('#related-programs th', 'FY 2025').invoke('index').then((fyColumnIndex) => {
+    cy.get('#related-programs th')
+      .filter((_, el) => (el.innerText || '').includes('FY'))
+      .first()
+      .invoke('index')
+      .then((fyColumnIndex) => {
       const column = fyColumnIndex + 1;
       cy.get(`#related-programs tbody tr:not([data-total-row]) td:nth-child(${column})`)
         .first()
@@ -199,12 +204,12 @@ describe('Data source labels', () => {
               force: true
             });
         });
-    });
+      });
 
     cy.get('.program-obligations-hover-tooltip')
       .should('have.length', 1)
       .should('exist')
-      .should('contain.text', 'Data source:');
+      .should('contain.text', 'Data source: USASpending.gov');
 
     cy.then(() => {
       const pinnedLeft = `${relatedTooltipX - 40}px`;

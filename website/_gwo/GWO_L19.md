@@ -8,7 +8,7 @@ permalink: /gwo/GWO_L19
 title: 'Ensure Patient Safety and Privacy '
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 21885000.0
+  expenditure_amount: 21376788.48
   name: Special Programs for the Aging, Title VII, Chapter 2, Long Term Care Ombudsman
     Services for Older Individuals
   permalink: /program/93.042

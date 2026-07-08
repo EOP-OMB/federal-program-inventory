@@ -13,7 +13,7 @@ permalink: /pon/PON_9E
 title: Increase Energy Deployment
 where_used:
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6159542778.74
   name: Clean Energy Demonstrations
   permalink: /program/81.255
   program_type: assistance_listing
@@ -23,22 +23,22 @@ where_used:
   permalink: /program/10.858
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 31080260.0
   name: Energy Efficiency and Conservation Block Grant Program (EECBG)
   permalink: /program/81.128
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -298683.61
   name: Energy Governance and Reform Programs
   permalink: /program/19.027
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 5394193.47
   name: State Energy Program Special Projects
   permalink: /program/81.119
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 3000000.0
+  expenditure_amount: 2781877.76
   name: Sun Grant Program
   permalink: /program/10.320
   program_type: assistance_listing

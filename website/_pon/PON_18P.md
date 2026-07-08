@@ -18,7 +18,7 @@ where_used:
   permalink: /program/16.031
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 42915872.78
   name: National Sexual Assault Kit Initiative
   permalink: /program/16.833
   program_type: assistance_listing

@@ -364,6 +364,8 @@
       displayText: expenditureText,
       programType: "{{ page.program_type }}",
       dataType: "expenditure",
+      year: Number("{{ site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR }}"),
+      currentFiscalYear: Number("{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}"),
       blurOnEscape: true
     });
   }

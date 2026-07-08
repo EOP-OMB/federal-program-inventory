@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Provide Agricultural Incentives and Support
   permalink: /gwo/GWO_A3
-headline_amount: 140000000.0
+headline_amount: 120000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

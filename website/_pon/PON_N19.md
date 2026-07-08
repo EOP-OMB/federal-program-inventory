@@ -11,48 +11,48 @@ permalink: /pon/PON_N19
 title: Increase STEM Job Attainment
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 55888922.0
+  expenditure_amount: -2893035.67
   name: 1890 Institution Capacity Building Grants
   permalink: /program/10.216
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 698331.0
+  expenditure_amount: 0.0
   name: Bioengineering, Biomedical Imaging, and Technology Development - Training
     Individual (TR)
   permalink: /program/93.EB3
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10949000.0
+  expenditure_amount: 0.0
   name: Biomedical Research - Training, Individual (TR)
   permalink: /program/93.GM3
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 135455000.0
+  expenditure_amount: 202558172.11
   name: Cancer Research Manpower
   permalink: /program/93.398
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 15312000.0
+  expenditure_amount: 0.0
   name: Child Health and Human Development Research Training – Individual Awards
   permalink: /program/93.HDD
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 27263000.0
+  expenditure_amount: 0.0
   name: Child Health and Human Development Research Training – Institutional Awards
   permalink: /program/93.HDN
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 1120675.0
+  expenditure_amount: 0.0
   name: Complementary and Integrative Health - Training, Individual
   permalink: /program/93.483
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 3191167.0
+  expenditure_amount: 0.0
   name: Complementary and Integrative Health - Training, Institutional
   permalink: /program/93.485
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 4556269.0
+  expenditure_amount: 0.0
   name: Cybersecurity Workforce Community-Building and Stakeholder Engagement
   permalink: /program/11.046
   program_type: assistance_listing
@@ -62,48 +62,48 @@ where_used:
   permalink: /program/93.ESF
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Highway Training & Education Research Fellowships 504(c)
   permalink: /program/20.295
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 826000.0
+  expenditure_amount: 0.0
   name: Human Genome Research - Training, Individual
   permalink: /program/93.HG5
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 151722158.0
+  expenditure_amount: 0.0
   name: Intramural Research Training Award
   permalink: /program/93.140
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 219293.0
+  expenditure_amount: 0.0
   name: NIMHD Research – Training, Individual (TR)
   permalink: /program/93.1TR
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 95000000.0
+  expenditure_amount: 87954322.58
   name: National Institutes of Health Extramural Loan Repayment Program
   permalink: /program/93.280
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 95000000.0
+  expenditure_amount: 0.0
   name: National Institutes of Health Extramural Loan Repayment Program
   permalink: /program/93.ELR
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 6000000.0
+  expenditure_amount: 0.0
   name: National Institutes of Health Intramural Loan Repayment Program
   permalink: /program/93.220
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 6942000.0
+  expenditure_amount: 0.0
   name: Research Related to Deafness and Communication Disorders - Training, Individual
     (TR)
   permalink: /program/93.DC5
   program_type: assistance_listing
 - agency: Department of Defense
-  expenditure_amount: 95000000.0
+  expenditure_amount: 101156414.0
   name: 'Science, Technology, Engineering and Mathematics (STEM) Educational Program:
     Science, Mathematics And Research for Transformation (SMART)'
   permalink: /program/12.631
@@ -114,12 +114,12 @@ where_used:
   permalink: /program/20.296
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 9500000.0
+  expenditure_amount: 10510108.29
   name: Veterinary Medicine Loan Repayment Program
   permalink: /program/10.313
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 6479544.0
+  expenditure_amount: 0.0
   name: Vision Research - Training, Individual
   permalink: /program/93.637
   program_type: assistance_listing

@@ -9,12 +9,12 @@ permalink: /pon/PON_N42
 title: Reduce Illegal Importation and Trafficking of Goods
 where_used:
 - agency: Department of the Interior
-  expenditure_amount: 0.0
+  expenditure_amount: -9119.17
   name: Combating Wildlife Trafficking
   permalink: /program/15.679
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -8699171.42
   name: Export Control and Related Border Security
   permalink: /program/19.901
   program_type: assistance_listing
@@ -24,12 +24,12 @@ where_used:
   permalink: /program/19.317
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6535671.43
   name: Global Material Security
   permalink: /program/81.210
   program_type: assistance_listing
 - agency: Executive Office of the President
-  expenditure_amount: 275579000.0
+  expenditure_amount: 271657675.6
   name: High Intensity Drug Trafficking Areas Program
   permalink: /program/95.001
   program_type: assistance_listing

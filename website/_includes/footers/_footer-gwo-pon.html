@@ -3,13 +3,19 @@
     const tooltipTargets = document.querySelectorAll(
       "#related-programs tbody tr:not([data-total-row]) td[data-dollar-amount]"
     );
+    const currentFiscalYear = Number("{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}");
 
     tooltipTargets.forEach((cell) => {
       const amountText = (cell.textContent || "").trim();
+      const resolvedYear = Number(cell.dataset.dataSourceFiscalYear) || currentFiscalYear;
       cell.classList.add("program-obligations-tooltip");
       attachProgramDataSourceTooltip(cell, {
         displayText: amountText,
-        dataSource: cell.dataset.source || "Data source not available",
+        dataSource: cell.dataset.source || null,
+        programType: cell.dataset.programType || "",
+        dataType: "expenditure",
+        year: resolvedYear,
+        currentFiscalYear,
         addTabIndex: true,
         blurOnEscape: true
       });
