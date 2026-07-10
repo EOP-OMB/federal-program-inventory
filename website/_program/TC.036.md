@@ -1,35 +1,15 @@
 ---
 agency: Department of the Treasury
-agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
-- Housing - Housing and Homelessness
+- Tax Expenditures - Energy
 cfda: TC.036
-fiscal_year: '2025'
+fiscal_year: '2024'
 grants_url: null
-gwo:
-  gwo: Promote Safe and High-Quality Housing
-  permalink: /gwo/GWO_M4
-headline_amount: 2390000000.0
-improper_payments:
-- agency: TREASURY
-  end_date: ''
-  fiscal_year: 2025
-  improper_payments: 0.0
-  insufficient_payment: 0.0
-  name: Credit for energy efficiency improvements to existing homes
-  outlays: 0.0
-  slug: null
-  start_date: ''
-improper_payments_is_multiple: false
-improper_payments_percent: 0.0
-improper_payments_related_programs: []
-improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
-improper_payments_total: 0.0
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities,
@@ -40,16 +20,11 @@ objective: The baseline tax system would not allow credits for particular activi
   or oil furnaces or hot water boilers, and other qualified energy efficient property.
   This provision expired on December 31, 2017, but legislation enacted in 2020 allowed
   taxpayers to claim tax credits retroactively for three years. The credit was further
-  increased up to $3,200 and extended to homes acquired in 2023 through 2032
+  increased up to $3,200 and extended to homes acquired in 2023 through 2032.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":450000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2390000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":2440000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":1970000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":2340000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":2390000000.0}]'
 outlays: null
 permalink: /program/TC.036.html
-pons:
-- permalink: /pon/PON_834
-  pon: Increase Retention of Current Housing
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

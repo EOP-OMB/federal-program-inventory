@@ -15,9 +15,7 @@ SEARCH_FIELDS = {
     "title": {"boost": 2},
     "objectives": {"boost": 1},
     "cfda": {"boost": 1},
-    "popularName": {"boost": 1},
-    "gwo": {"boost": 1},
-    "pons": {"boost": 1}
+    "popularName": {"boost": 1}
 }
 VALID_SORT_FIELDS = {
     "cfda": "cfda.keyword",
@@ -33,8 +31,9 @@ def build_multi_match_query(query: str) -> Dict[str, Any]:
         "multi_match": {
             "query": query,
             "fields": [f"{field}^{config['boost']}" for field, config in SEARCH_FIELDS.items()],
-            "type": "phrase",
-            "operator": "and"
+            "type": "best_fields",
+            "operator": "and",
+            "fuzziness": "AUTO"
         }
     }
 
@@ -201,22 +200,6 @@ def build_category_filter(category_strings: List[str]) -> Dict[str, Any]:
             category_conditions.append({"term": {"categories.title.keyword": category}})
     return build_nested_filter("categories", category_conditions)
 
-def build_gwo_filter(gwo_values: List[str]) -> Dict[str, Any]:
-    """Build GWO (Government-wide Objectives) filter query."""
-    if not gwo_values:
-        return {}
-    return {
-        "terms": {"gwo": gwo_values}
-    }
-
-def build_pons_filter(pons_values: List[str]) -> Dict[str, Any]:
-    """Build PON (Program Outcomes) filter query."""
-    if not pons_values:
-        return {}
-    return {
-        "terms": {"pons": pons_values}
-    }
-
 def build_aggregations() -> Dict[str, Any]:
     """Build aggregations for faceted search."""
     return {
@@ -265,9 +248,7 @@ def build_aggregations() -> Dict[str, Any]:
             }
         },
         "assistance_types": {"terms": {"field": "assistanceTypes", "size": 1000}},
-        "applicant_types": {"terms": {"field": "applicantTypes", "size": 1000}},
-        "gwo": {"terms": {"field": "gwo", "size": 1000}},
-        "pons": {"terms": {"field": "pons", "size": 1000}}
+        "applicant_types": {"terms": {"field": "applicantTypes", "size": 1000}}
     }
 
 def parse_parent_child(value_string: str) -> tuple[str, Optional[str]]:
@@ -290,8 +271,6 @@ def search_programs(
     categorySubcategory = request.categorySubcategory
     assistanceTypes = request.assistanceTypes
     applicantTypes = request.applicantTypes
-    gwo = request.gwo
-    pons = request.pons
     page = request.page
     page_size = request.page_size
     sort_field = request.sort_field
@@ -328,14 +307,6 @@ def search_programs(
             filter_conditions.append({"terms": {"assistanceTypes": assistanceTypes}})
         if applicantTypes:
             filter_conditions.append({"terms": {"applicantTypes": applicantTypes}})
-        
-        gwo_filter = build_gwo_filter(gwo or [])
-        if gwo_filter:
-            filter_conditions.append(gwo_filter)
-        
-        pons_filter = build_pons_filter(pons or [])
-        if pons_filter:
-            filter_conditions.append(pons_filter)
         
         if filter_conditions:
             search_query["bool"]["filter"] = filter_conditions
@@ -400,14 +371,6 @@ def search_programs(
             applicant_types=[
                 FacetBucket(key=bucket["key"], doc_count=bucket["doc_count"])
                 for bucket in response["aggregations"]["applicant_types"]["buckets"]
-            ],
-            gwo=[
-                FacetBucket(key=bucket["key"], doc_count=bucket["doc_count"])
-                for bucket in response["aggregations"]["gwo"]["buckets"]
-            ],
-            pons=[
-                FacetBucket(key=bucket["key"], doc_count=bucket["doc_count"])
-                for bucket in response["aggregations"]["pons"]["buckets"]
             ]
         )
 

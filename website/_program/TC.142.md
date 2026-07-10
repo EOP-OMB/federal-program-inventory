@@ -1,47 +1,15 @@
 ---
 agency: Department of the Treasury
-agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
-- Income Security and Social Services - Personal Financial Health
+- Tax Expenditures - Income Security
 cfda: TC.142
-fiscal_year: '2025'
+fiscal_year: '2024'
 grants_url: null
-gwo:
-  gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/GWO_N3
-headline_amount: 106340000000.0
-improper_payments:
-- agency: TREASURY
-  end_date: 12-2023
-  fiscal_year: 2025
-  improper_payments: 4549550000.0
-  insufficient_payment: 0.0
-  name: Internal Revenue Service - Additional Child Tax Credit
-  outlays: 33434809999.999996
-  slug: treasury-internal-revenue-service-additional-child-tax-credi-6179b194
-  start_date: 01-2023
-- agency: TREASURY
-  end_date: null
-  fiscal_year: '2025'
-  improper_payments: null
-  insufficient_payment: null
-  name: Internal Revenue Service - Child and Dependent Care Tax Credit
-  outlays: null
-  slug: treasury-internal-revenue-service-child-and-dependent-care-t-244e2e2b
-  start_date: null
-improper_payments_is_multiple: false
-improper_payments_percent: 13.6
-improper_payments_related_programs:
-- id: TC.123
-  name: Credit for child and dependent care expenses
-  permalink: /program/TC.123
-improper_payments_sparkline: '[{"x":"2016","rate":0.0},{"x":"2017","rate":0.0},{"x":"2018","rate":0.0},{"x":"2019","rate":15.15501947905768},{"x":"2020","rate":11.49864446002644},{"x":"2021","rate":13.257063282110112},{"x":"2022","rate":15.780005523521092},{"x":"2023","rate":14.479984728047896},{"x":"2024","rate":10.7300042931723},{"x":"2025","rate":13.6072255233393}]'
-improper_payments_total: 4549550000.0
 is_subpart_f: null
 layout: program
 objective: The baseline tax system would not allow credits for particular activities
@@ -63,12 +31,9 @@ objective: The baseline tax system would not allow credits for particular activi
   $1,000 of modified AGI above $110,000 if married filing jointly ($75,000 for single
   or head of household filers and $55,000 for married taxpayers filing separately).
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":159000000000.0,"forgone_revenue":66840000000.0},{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0},{"x":"2025","outlays":45410000000.0,"forgone_revenue":60930000000.0},{"x":"2026","outlays":43950000000.0,"forgone_revenue":42860000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":40840000000.0,"forgone_revenue":67520000000.0},{"x":"2024","outlays":44310000000.0,"forgone_revenue":24150000000.0},{"x":"2025","outlays":45410000000.0,"forgone_revenue":60930000000.0}]'
 outlays: null
 permalink: /program/TC.142.html
-pons:
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

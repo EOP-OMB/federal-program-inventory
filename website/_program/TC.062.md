@@ -1,43 +1,23 @@
 ---
 agency: Department of the Treasury
-agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
-- Income Security and Social Services - Personal Financial Health
+- Tax Expenditures - Commerce and Housing
 cfda: TC.062
-fiscal_year: '2025'
+fiscal_year: '2024'
 grants_url: null
-gwo:
-  gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/GWO_N3
-headline_amount: 29600000000.0
-improper_payments:
-- agency: TREASURY
-  end_date: ''
-  fiscal_year: 2025
-  improper_payments: 0.0
-  insufficient_payment: 0.0
-  name: Deductibility of mortgage interest on owner-occupied homes
-  outlays: 0.0
-  slug: null
-  start_date: ''
-improper_payments_is_multiple: false
-improper_payments_percent: 0.0
-improper_payments_related_programs: []
-improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
-improper_payments_total: 0.0
 is_subpart_f: null
 layout: program
 objective: Under the baseline tax system, expenses incurred in earning income would
   be deductible. However, such expenses would not be deductible when the income or
   the return on an investment is not taxed. In contrast, the Tax Code allows an exclusion
   from a taxpayer’s taxable income for the value of owner-occupied housing services
-  and also allows the owner occupant to deduct mortgage interest paid on his or her
-  primary residence and one secondary residence as an itemized nonbusiness deduction.
+  and also allows the owner-occupant to deduct mortgage interest paid on his or her
+  primary residence and one secondary residence as an itemized non-business deduction.
   In general, the mortgage interest deduction is limited to interest on debt no greater
   than the owner’s basis in the residence, and is also limited to interest on debt
   of no more than $1 million. Interest on up to $100,000 of other debt secured by
@@ -51,14 +31,9 @@ objective: Under the baseline tax system, expenses incurred in earning income wo
   December 15, 2017, and (2) the deduction for interest on home equity indebtedness
   is disallowed.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":34430000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":31820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":29060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":29600000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":65130000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":31820000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":29060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":29600000000.0}]'
 outlays: null
 permalink: /program/TC.062.html
-pons:
-- permalink: /pon/PON_833
-  pon: Increase Long-Term Housing
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
 popular_name: ''
 program_type: tax_expenditure
 results: []

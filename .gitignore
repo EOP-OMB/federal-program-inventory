@@ -3,23 +3,8 @@
 .jekyll-metadata
 .ruby-gemset
 .ruby-version
-.env
 node_modules
 venv
-.vscode/
 /website/.sass-cache
 /website/_site
 __pycache__/
-
-# visual regression tests
-cypress/cypress-image-diff-screenshots/comparison/
-cypress/cypress-image-diff-screenshots/diff/
-cypress/reports/
-
-# aln detection script
-data_processing/scripts/baseline/
-data_processing/scripts/logs/
-data_processing/scripts/reports/
-
-# temporary database for summarizing usaspending.gov award files
-data_processing/transformed/temp_data.db
