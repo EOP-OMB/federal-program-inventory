@@ -1,0 +1,19 @@
+---
+category: Employment and Labor
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Transformational leadership practices including providing
+  individualized direction and support, intellectual stimulation, reinforcement, visionary
+  leadership, etc.; -High ratings of leadership effectiveness from staff, volunteers
+  and stakeholders; -Fostering a culture of shared leadership by transferring transformational
+  leadership practices to others, empowering leadership among subordinates, etc.'
+focus_area: Workforce Development
+gwo_id: PON.88
+permalink: /pon/PON_88
+title: Increase Business Leadership Development
+where_used:
+- agency: Small Business Administration
+  expenditure_amount: 0.0
+  name: SBA Emerging Leaders initiative
+  permalink: /program/59.069
+  program_type: assistance_listing
+---

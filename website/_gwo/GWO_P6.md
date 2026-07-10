@@ -1,0 +1,80 @@
+---
+category: Law, Justice, and Legal Services
+definition: Safeguarding constitutional freedoms and civil rights to ensure equal
+  protection and fair treatment under the law.
+focus_area: Legal Services
+gwo_id: GWO.P6
+permalink: /gwo/GWO_P6
+title: Protect Constitutional and Civil Rights
+where_used:
+- agency: Department of Justice
+  expenditure_amount: 1922611.39
+  name: Capital Case Litigation Initiative
+  permalink: /program/16.746
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: -32201306.15
+  name: Case Management Pilot Program
+  permalink: /program/97.102
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: Discrimination Financial Assistance Program
+  permalink: /program/10.984
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 186722.5
+  name: Ease 3.0
+  permalink: /program/12.219
+  program_type: assistance_listing
+- agency: Department of Housing and Urban Development
+  expenditure_amount: 26271438.48
+  name: Fair Housing Assistance Program
+  permalink: /program/14.401
+  program_type: assistance_listing
+- agency: U.S. Election Assistance Commission
+  expenditure_amount: 13490013.72
+  name: HAVA Election Security Grants
+  permalink: /program/90.404
+  program_type: assistance_listing
+- agency: U.S. Election Assistance Commission
+  expenditure_amount: 0.0
+  name: Help America Vote Act Requirements Payments
+  permalink: /program/90.401
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: -206650.34
+  name: Indigent Defense
+  permalink: /program/16.836
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 18504012.98
+  name: Low Income Taxpayer Clinics
+  permalink: /program/21.008
+  program_type: assistance_listing
+- agency: National Council on Disability
+  expenditure_amount: 0.0
+  name: National Council on Disability
+  permalink: /program/92.002
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: 19563872.64
+  name: Program of Protection and Advocacy of Individual Rights
+  permalink: /program/84.240
+  program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 40408396.61
+  name: Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries
+  permalink: /program/96.009
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 0.0
+  name: State Mediation Grants
+  permalink: /program/10.435
+  program_type: assistance_listing
+- agency: Social Security Administration
+  expenditure_amount: 0.0
+  name: Strengthening Protections for Social Security Beneficiaries
+  permalink: /program/96.013
+  program_type: assistance_listing
+---

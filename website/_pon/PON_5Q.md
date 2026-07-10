@@ -1,0 +1,56 @@
+---
+category: Natural Resources
+definition: 'A program whose beneficiaries achieved one or more of the following results
+  within the past year: -Improved response time and resource coordination during wildfire
+  incidents; -Minimized damage to homes, infrastructure, and acreage of natural areas
+  through fire-resistant construction, evacuation planning, and effective suppression
+  strategies; -Strengthened emergency preparedness and recovery planning to support
+  community resilience.'
+focus_area: Conservation and Land Management
+gwo_id: PON.5Q
+permalink: /pon/PON_5Q
+title: Increase Wildfire Response Capacity
+where_used:
+- agency: Department of the Interior
+  expenditure_amount: 2076253.85
+  name: BIA Wildland Urban Interface Community Fire Assistance
+  permalink: /program/15.160
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 601888259.43
+  name: Cooperative Fire Protection Agreement
+  permalink: /program/10.703
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 9254826.7
+  name: Indian Community Fire Protection
+  permalink: /program/15.031
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 265000.0
+  name: Infrastructure Investment and Jobs Act Collaborative Forest Landscape Restoration
+    Program
+  permalink: /program/10.715
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 1351466.0
+  name: National Fire Plan-Wildland Urban Interface Community Fire Assistance
+  permalink: /program/15.674
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 427443.1
+  name: National Fire Plan-Wildland Urban Interface Community Fire Assistance
+  permalink: /program/15.948
+  program_type: assistance_listing
+- agency: Department of the Interior
+  expenditure_amount: 1077029.75
+  name: National Wildland Fire Management and Natural Resource Training and Workforce
+    Development
+  permalink: /program/15.969
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 46271690.75
+  name: State & Private Forestry Cooperative Fire Assistance
+  permalink: /program/10.698
+  program_type: assistance_listing
+---

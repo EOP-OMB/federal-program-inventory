@@ -1,0 +1,52 @@
+---
+data_sources:
+  assistance_listing:
+    current_year:
+      expenditure: SAM.gov
+      obligations: SAM.gov
+      outlays: USASpending.gov
+    prior_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+  contracts:
+    current_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+    prior_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+  government_service:
+    current_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+    prior_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+  interest:
+    current_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+      revenue_losses: USASpending.gov
+    prior_year:
+      expenditure: USASpending.gov
+      obligations: USASpending.gov
+      outlays: USASpending.gov
+      revenue_losses: USASpending.gov
+  tax_expenditure:
+    current_year:
+      expenditure: Treasury.gov
+      obligations: Treasury.gov
+      outlays: USASpending.gov
+      revenue_losses: USASpending.gov
+    prior_year:
+      expenditure: Treasury.gov
+      obligations: Treasury.gov
+      outlays: USASpending.gov
+      revenue_losses: USASpending.gov
+...

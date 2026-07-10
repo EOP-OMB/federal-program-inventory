@@ -1,0 +1,39 @@
+<script>
+
+function renderObjectiveTreeMap() {
+  // Get the programs data from the page
+  const programsData = {{ page.where_used | jsonify }};
+  
+  // Assemble hierarchical data structure
+  const treeMapData = assembleHierarchyData(programsData, 'expenditure_amount', 'agency');
+  
+  if (!treeMapData) {
+    console.log('No valid treemap data available');
+    return;
+  }
+
+  // Render the treemap using the utility function
+  try {
+    const rootStyle = getComputedStyle(document.documentElement);
+    const gwoTreemapBgColor = rootStyle.getPropertyValue('--gwo-treemap-bg').trim();
+    const gwoTreemapFgColor = rootStyle.getPropertyValue('--gwo-treemap-fg').trim();
+    renderTreeMap(treeMapData, 'objectiveChart', 'expenditure_amount', gwoTreemapBgColor, gwoTreemapFgColor, {
+      year: Number('{{ fiscal_year }}'),
+      currentFiscalYear: Number('{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}')
+    });
+  } catch (error) {
+    console.error('Error rendering treemap:', error);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize chart when page loads
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(renderObjectiveTreeMap, 100);
+    });
+  } else {
+    setTimeout(renderObjectiveTreeMap, 100);
+  }
+});
+</script>

@@ -6,30 +6,54 @@ information in a SQLite database for generation of markdown files.
 import csv
 import json
 import os
+import shutil
 import sqlite3
+import sys
 import constants
 import pandas as pd
+import zipfile
+from data_quality_tests import test_transform_data_quality
 
 # temporary (large) database file paths
-TEMP_DB_DISK_DIRECTORY = "/Volumes/CER01/"
-TEMP_DB_FILE_PATH = "temp_data.db"
+TEMP_DB_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY')
+TEMP_DB_FILE_PATH = os.getenv('ETL_TRANSFORM_TEMP_DB_FILE_PATH')
 
 # transformed database, for use in the load / generate stage
-TRANSFORMED_FILES_DIRECTORY = "transformed/"
-TRANSFORMED_DB_FILE_PATH = "transformed_data.db"
+TRANSFORMED_FILES_DIRECTORY = os.getenv('ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY')
+TRANSFORMED_DB_FILE_PATH = os.getenv('ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH')
 
 # usaspending file paths; these riles are not stored in the primary
 # report because of the files sizes and limits of LFS
-USASPENDING_DISK_DIRECTORY = "/Volumes/CER01/"
-ASSISTANCE_EXTRACTED_FILES_DIRECTORY = "extracted/assistance/"
-ASSISTANCE_DELTA_FILES_DIRECTORY = "extracted/delta/assistance/"
-CONTRACT_EXTRACTED_FILES_DIRECTORY = "extracted/contract/"
-CONTRACT_DELTA_FILES_DIRECTORY = "extracted/delta/contract/"
+USASPENDING_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY')
 
 # extracted file paths
-REPO_DISK_DIRECTORY = "/Users/codyreinold/Code/omb/offm/" \
-                      + "will-fpi/federal-program-inventory/"
-EXTRACTED_FILES_DIRECTORY = "data_processing/extracted/"
+REPO_DISK_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
+EXTRACTED_FILES_DIRECTORY = os.getenv('ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY')
+
+ASSISTANCE_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY')
+CONTRACT_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY')
+UNZIP_TMP_DIRECTORY = os.getenv('ETL_TRANSFORM_UNZIP_TMP_DIRECTORY')
+
+if (TEMP_DB_DISK_DIRECTORY is None or
+    TEMP_DB_FILE_PATH is None or
+    TRANSFORMED_FILES_DIRECTORY is None or
+    TRANSFORMED_DB_FILE_PATH is None or
+    USASPENDING_DISK_DIRECTORY is None or
+    EXTRACTED_FILES_DIRECTORY is None or
+    ASSISTANCE_ZIP_FILE_DIRECTORY is None or
+    CONTRACT_ZIP_FILE_DIRECTORY is None or
+    UNZIP_TMP_DIRECTORY is None):
+    print("Error:  set the following environment variables:")
+    print("  ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY")
+    print("  ETL_TRANSFORM_TEMP_DB_FILE_PATH")
+    print("  ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY")
+    print("  ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH")
+    print("  ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY")
+    print("  ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY")
+    print("  ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY")
+    print("  ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY")
+    print("  ETL_TRANSFORM_UNZIP_TMP_DIRECTORY")
+    sys.exit(1)
 
 # additional programs dataset path
 ADDITIONAL_PROGRAMS_DATA_PATH = REPO_DISK_DIRECTORY \
@@ -50,6 +74,10 @@ USASPENDING_ASSISTANCE_CREATE_TABLE_SQL = """
     );
     """
 
+USASPENDING_ASSISTANCE_DELETE_YEAR_SQL = """
+    DELETE FROM usaspending_assistance WHERE [action_date_fiscal_year] = ?;
+    """
+
 USASPENDING_CONTRACT_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_contract;
     """
@@ -64,6 +92,10 @@ USASPENDING_CONTRACT_CREATE_TABLE_SQL = """
         prime_award_transaction_place_of_performance_cd_current,
         award_type_code
     );
+    """
+
+USASPENDING_CONTRACT_DELETE_YEAR_SQL = """
+    DELETE FROM usaspending_contract WHERE [action_date_fiscal_year] = ?;
     """
 
 USASPENDING_ASSISTANCE_INSERT_SQL = """
@@ -123,6 +155,10 @@ CATEGORY_CREATE_TABLE_SQL = """
         FOREIGN KEY(parent_id, type) REFERENCES category(id, type)
     );
     """
+
+CATEGORY_FIND_SQL = """
+    SELECT id FROM category WHERE type = ? AND name = ?
+"""
 
 CATEGORY_INSERT_SQL = """
     INSERT INTO category
@@ -200,18 +236,19 @@ PROGRAM_SAM_SPENDING_CREATE_TABLE_SQL = """
     CREATE TABLE program_sam_spending (
         program_id TEXT NOT NULL,
         assistance_type TEXT,
+        category_type TEXT,
         fiscal_year INTEGER NOT NULL,
         is_actual INTEGER NOT NULL,
         amount REAL NOT NULL,
         PRIMARY KEY (program_id, assistance_type, fiscal_year, is_actual),
         FOREIGN KEY(program_id) REFERENCES program(id)
-        FOREIGN KEY(assistance_type) REFERENCES category(id)
+        FOREIGN KEY(assistance_type, category_type) REFERENCES category(id, type)
     );
     """
 
 PROGRAM_SAM_SPENDING_INSERT_SQL = """
     INSERT INTO program_sam_spending
-    VALUES (?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?)
     ON CONFLICT DO UPDATE SET amount=amount+?;
     """
 
@@ -234,6 +271,289 @@ PROGRAM_TO_CATEGORY_INSERT_SQL = """
     INSERT INTO program_to_category
     VALUES (?, ?, ?) ON CONFLICT DO NOTHING;
     """
+
+TAXONOMY_CATEGORY_CREATE_TABLE_SQL = """
+    CREATE TABLE taxonomy_category (
+        id TEXT NOT NULL PRIMARY KEY,
+        category TEXT NOT NULL UNIQUE
+    )
+"""
+
+TAXONOMY_CATEGORY_INSERT_TABLE_SQL = """
+    INSERT INTO taxonomy_category
+    -- dash is later used as a delimiter between category and focus area
+    VALUES (?, REPLACE(?,'-','–')) ON CONFLICT DO NOTHING;
+"""
+
+TAXONOMY_CATEGORY_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS taxonomy_category;
+    """
+
+TAXONOMY_FOCUS_AREA_CREATE_TABLE_SQL = """
+    CREATE TABLE taxonomy_focus_area (
+        id TEXT NOT NULL PRIMARY KEY,
+        focus_area TEXT NOT NULL UNIQUE,
+        category_id TEXT NOT NULL,
+        FOREIGN KEY(category_id) REFERENCES taxonomy_category(id)
+    )
+"""
+
+TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL = """
+    INSERT INTO taxonomy_focus_area
+    -- dash is later used as a delimiter between category and focus area
+    VALUES (?, REPLACE(?,'-','–'), ?) ON CONFLICT DO NOTHING;
+"""
+
+TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS taxonomy_focus_area;
+    """
+
+GWO_CREATE_TABLE_SQL = """
+    CREATE TABLE gwo (
+        id TEXT NOT NULL PRIMARY KEY,
+        gwo TEXT NOT NULL,
+        gwo_definition TEXT NOT NULL,
+        focus_area_id TEXT NOT NULL,
+        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
+    );
+"""
+
+GWO_INSERT_TABLE_SQL = """
+    INSERT INTO gwo
+    VALUES (?, ?, ?, ?);
+"""
+
+GWO_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS gwo;
+    """
+
+PON_CREATE_TABLE_SQL = """
+    CREATE TABLE pon (
+        id TEXT NOT NULL PRIMARY KEY,
+        pon2 TEXT NOT NULL,
+        pon_definition TEXT NOT NULL,
+        focus_area_id TEXT NOT NULL,
+        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
+    );
+"""
+
+PON_INSERT_TABLE_SQL = """
+    INSERT INTO pon
+    VALUES (?, ?, ?, ?);
+"""
+
+PON_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS pon;
+    """
+
+PROGRAM_TO_GWO_CREATE_TABLE_SQL = """
+    CREATE TABLE program_to_gwo (
+        program_id TEXT NOT NULL,
+        gwo_id TEXT NOT NULL,
+        FOREIGN KEY(program_id) REFERENCES program(id)
+        FOREIGN KEY(gwo_id) REFERENCES gwo(id)
+    );
+"""
+
+PROGRAM_TO_GWO_INSERT_TABLE_SQL = """
+    INSERT INTO program_to_gwo
+    VALUES (?, ?);
+"""
+
+PROGRAM_TO_GWO_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS program_to_gwo;
+    """
+
+PROGRAM_TO_PON_CREATE_TABLE_SQL = """
+    CREATE TABLE program_to_pon (
+        program_id TEXT NOT NULL,
+        pon_id TEXT NOT NULL,
+        FOREIGN KEY(program_id) REFERENCES program(id)
+        FOREIGN KEY(pon_id) REFERENCES pon(id)
+    );
+"""
+
+PROGRAM_TO_PON_INSERT_TABLE_SQL = """
+    INSERT INTO program_to_pon
+    VALUES (?, ?);
+"""
+
+PROGRAM_TO_PON_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS program_to_pon;
+    """
+
+PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL = """
+    DROP VIEW IF EXISTS program_taxonomy_lookup;
+"""
+
+PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL = """
+    CREATE VIEW program_taxonomy_lookup AS
+        SELECT
+            program.id AS program_id,
+            taxonomy_focus_area.id AS taxonomy_focus_area_id,
+            taxonomy_category.id AS taxonomy_category_id
+        FROM program
+        JOIN program_to_gwo ON program.id = program_to_gwo.program_id
+        JOIN gwo on program_to_gwo.gwo_id = gwo.id
+        JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
+        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
+"""
+
+PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL = """
+    DROP VIEW IF EXISTS program_amounts_lookup;
+"""
+
+PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL = """
+    CREATE VIEW program_amounts_lookup AS
+    SELECT
+        id,
+        program_type,
+        -- most queries assume string representation
+        fiscal_year || '' AS fiscal_year,
+        CASE
+            WHEN program_type = 'assistance_listing' THEN usaspending_outlay
+            WHEN program_type = 'contracts' THEN usaspending_outlay
+            WHEN program_type = 'interest' THEN other_outlay
+            WHEN program_type = 'tax_expenditure' THEN other_outlay
+        END AS outlay,
+        CASE
+            WHEN program_type = 'assistance_listing' AND is_current_year = 1 THEN sam_estimated_obligation
+            WHEN program_type = 'assistance_listing' AND is_current_year = 0 THEN usaspending_obligation
+            WHEN program_type = 'contracts' THEN usaspending_obligation
+            WHEN program_type = 'interest' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN 0
+            WHEN program_type = 'tax_expenditure' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN 0
+        END AS obligation,
+        CASE
+            WHEN program_type = 'assistance_listing' AND is_current_year = 1 THEN sam_estimated_obligation
+            WHEN program_type = 'assistance_listing' AND is_current_year = 0 THEN usaspending_obligation
+            WHEN program_type = 'contracts' THEN usaspending_obligation
+            WHEN program_type = 'interest' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN COALESCE(other_outlay,0) + COALESCE(other_forgone_revenue,0)
+            WHEN program_type = 'tax_expenditure' AND (other_outlay IS NOT NULL OR other_forgone_revenue IS NOT NULL) THEN COALESCE(other_outlay,0) + COALESCE(other_forgone_revenue,0)
+        END AS expenditure,
+        other_forgone_revenue AS forgone_revenue,
+		sam_estimated_obligation,
+		sam_actual_obligation,
+		usaspending_obligation_by_action_date
+        FROM (
+            WITH RECURSIVE constants(earliest_year, latest_year) AS (
+                SELECT (SELECT MIN(val)
+                    FROM (
+                        SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        UNION ALL
+                        SELECT fiscal_year FROM program_sam_spending
+                        UNION ALL
+                        SELECT fiscal_year FROM other_program_spending
+                        UNION ALL
+                        SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                    )),
+                (SELECT MAX(val)
+                    FROM (
+                        SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                        UNION ALL
+                        SELECT fiscal_year FROM program_sam_spending
+                        UNION ALL
+                        SELECT fiscal_year FROM other_program_spending
+                        UNION ALL
+                        SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                    ))
+            ),
+            year_range(n) AS (
+            SELECT (
+                SELECT MIN(val)
+                FROM (
+                    SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    UNION ALL
+                    SELECT fiscal_year FROM program_sam_spending
+                    UNION ALL
+                    SELECT fiscal_year FROM other_program_spending
+                    UNION ALL
+                    SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                )
+            )
+            UNION ALL
+            SELECT n + 1 FROM year_range WHERE n < (
+                SELECT MAX(val)
+                FROM (
+                    SELECT fiscal_year AS val FROM usaspending_assistance_outlay_aggregation
+                    UNION ALL
+                    SELECT fiscal_year FROM program_sam_spending
+                    UNION ALL
+                    SELECT fiscal_year FROM other_program_spending
+                    UNION ALL
+                    SELECT action_date_fiscal_year FROM usaspending_assistance_obligation_aggregation
+                )
+            )
+            ),
+            usa_spending_grouped(id, fiscal_year, outlay, obligation) AS (
+            SELECT
+                cfda_number AS id,
+                fiscal_year,
+                SUM(outlay) AS outlay,
+                SUM(obligation) AS obligation
+            FROM usaspending_assistance_outlay_aggregation
+            GROUP BY cfda_number, fiscal_year
+            ),
+			usa_spending_grouped_by_action_date(id, fiscal_year, obligation) AS (
+            SELECT
+                cfda_number AS id,
+                action_date_fiscal_year AS fiscal_year,
+                SUM(obligations) AS obligation
+            FROM usaspending_assistance_obligation_aggregation
+            GROUP BY cfda_number, action_date_fiscal_year
+            ),
+            sam_grouped(id, fiscal_year, estimated_obligation) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(amount) AS estimated_obligation
+            FROM program_sam_spending
+            WHERE is_actual = 0
+            GROUP BY program_id, fiscal_year
+            ),
+            sam_actual_grouped(id, fiscal_year, actual_obligation) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(amount) AS actual_obligation
+            FROM program_sam_spending
+            WHERE is_actual = 1
+            GROUP BY program_id, fiscal_year
+            ),
+            other_grouped(id, fiscal_year, outlay, forgone_revenue) AS (
+            SELECT
+                program_id AS id,
+                fiscal_year,
+                SUM(outlays) AS outlay,
+                SUM(forgone_revenue) AS forgone_revenue
+            FROM other_program_spending
+            GROUP BY program_id, fiscal_year
+            )
+            SELECT
+                program.id,
+                program.program_type,
+                year_range.n AS fiscal_year,
+                usa_spending_grouped.outlay AS usaspending_outlay,
+                usa_spending_grouped.obligation AS usaspending_obligation,
+				usa_spending_grouped_by_action_date.obligation AS usaspending_obligation_by_action_date,
+                sam_grouped.estimated_obligation AS sam_estimated_obligation,
+				sam_actual_grouped.actual_obligation AS sam_actual_obligation,
+                other_grouped.outlay AS other_outlay,
+                other_grouped.forgone_revenue AS other_forgone_revenue,
+                constants.latest_year = year_range.n AS is_current_year
+            FROM program, constants
+            CROSS JOIN year_range
+            LEFT JOIN usa_spending_grouped ON
+                program.id = usa_spending_grouped.id AND year_range.n = usa_spending_grouped.fiscal_year
+			LEFT JOIN usa_spending_grouped_by_action_date ON
+			    program.id = usa_spending_grouped_by_action_date.id AND year_range.n = usa_spending_grouped_by_action_date.fiscal_year
+            LEFT JOIN sam_grouped ON
+                program.id = sam_grouped.id AND year_range.n = sam_grouped.fiscal_year
+			LEFT JOIN sam_actual_grouped ON
+                program.id = sam_actual_grouped.id AND year_range.n = sam_actual_grouped.fiscal_year
+            LEFT JOIN other_grouped ON
+                program.id = other_grouped.id AND year_range.n = other_grouped.fiscal_year
+        ) cube_query
+"""
 
 USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS usaspending_assistance_obligation_aggregation;
@@ -271,13 +591,14 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_DROP_TABLE_SQL = """
 USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
     CREATE TABLE usaspending_assistance_outlay_aggregation (
         cfda_number TEXT NOT NULL,
-        award_first_fiscal_year INT NOT NULL,
+        fiscal_year INT NOT NULL,
         outlay REAL NOT NULL,
         obligation REAL NOT NULL,
         FOREIGN KEY(cfda_number) REFERENCES program(id)
     );
     """
 
+# Previously, obligations were grouped by award first action fiscal year:
 # At this time, only the total of outlayed funds per award is available from
 # USASpending.gov. This means it is not possible to aggregate outlays in the
 # same way that obligations are aggregated (i.e., by transaction action date).
@@ -290,23 +611,64 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
 # query and the query used to power the primary display, but this methodology
 # allows for a more consistent comparison between obligated and outlayed funds,
 # by year.
+#
+# Now, in an effort to match usaspending.gov more closely, we are only grouping
+# outlays that way.  Obligations will belong to the action_date_fiscal_year in
+# which they occurred.
 USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL = """
     INSERT INTO usaspending_assistance_outlay_aggregation (cfda_number,
-        award_first_fiscal_year, outlay, obligation)
+        fiscal_year, outlay, obligation)
     SELECT
-        cfda_number, award_first_fiscal_year, SUM(award_outlay) AS outlay,
-        SUM(award_obligation) as obligation
+        cfda_number,
+        fiscal_year,
+        SUM(outlay) AS outlay,
+        SUM(obligation) AS obligation
     FROM (
         SELECT
-            cfda_number, assistance_award_unique_key,
-            MIN(action_date_fiscal_year) AS award_first_fiscal_year,
-            total_outlayed_amount_for_overall_award AS award_outlay,
-            SUM(federal_action_obligation) AS award_obligation
+            usaspending_assistance.cfda_number,
+            usaspending_assistance.assistance_award_unique_key,
+            usaspending_assistance.action_date_fiscal_year AS fiscal_year,
+            COALESCE(outlays_lookup.award_outlay,0) AS outlay,
+            SUM(usaspending_assistance.federal_action_obligation) as obligation
         FROM temp_db.usaspending_assistance
-        GROUP BY cfda_number, assistance_award_unique_key
-    )
-    GROUP BY cfda_number, award_first_fiscal_year;
+        LEFT JOIN (
+            SELECT
+                cfda_number,
+                assistance_award_unique_key,
+                MIN(action_date_fiscal_year) AS fiscal_year,
+                total_outlayed_amount_for_overall_award AS award_outlay
+            FROM temp_db.usaspending_assistance
+            GROUP BY cfda_number, assistance_award_unique_key
+        ) outlays_lookup ON
+            usaspending_assistance.cfda_number = outlays_lookup.cfda_number AND
+            usaspending_assistance.assistance_award_unique_key = outlays_lookup.assistance_award_unique_key AND
+            usaspending_assistance.action_date_fiscal_year = outlays_lookup.fiscal_year
+        GROUP BY
+            usaspending_assistance.cfda_number,
+            usaspending_assistance.assistance_award_unique_key,
+            usaspending_assistance.action_date_fiscal_year
+    ) summary_query
+    GROUP BY cfda_number, fiscal_year;
     """
+
+USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_DELETE_SQL = """
+    DELETE FROM usaspending_assistance_outlay_aggregation
+    WHERE cfda_number = ?;
+"""
+
+USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL = """
+    INSERT INTO usaspending_assistance_outlay_aggregation
+    VALUES (?, ?, ?, ?);
+"""
+
+USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS = """
+    SELECT cfda_number, assistance_award_unique_key, COUNT(*) AS ct
+    FROM (
+        SELECT DISTINCT cfda_number, assistance_award_unique_key, total_outlayed_amount_for_overall_award FROM usaspending_assistance
+    ) subquery
+    GROUP BY cfda_number, assistance_award_unique_key
+    HAVING COUNT(*) > 1
+"""
 
 OTHER_PROGRAM_SPENDING_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS other_program_spending;
@@ -328,6 +690,27 @@ OTHER_PROGRAM_SPENDING_INSERT_SQL = """
     INSERT INTO other_program_spending
     VALUES (?, ?, ?, ?, ?);
     """
+
+IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS improper_payment_mapping;
+"""
+
+IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL = """
+    CREATE TABLE improper_payment_mapping (
+        program_id TEXT NOT NULL,
+        improper_payment_program_name TEXT NOT NULL,
+        agency TEXT NOT NULL,
+        fiscal_year INTEGER NOT NULL,
+        outlays DECIMAL,
+        improper_payment_amount DECIMAL,
+        start_date TEXT,
+        end_date TEXT,
+        insufficient_documentation_amount DECIMAL,
+        slug TEXT,
+        PRIMARY KEY(program_id, improper_payment_program_name, fiscal_year),
+        FOREIGN KEY(program_id) REFERENCES program(id)
+    );
+"""
 
 # establish a database connection to store temporary working data
 temp_conn = sqlite3.connect(TEMP_DB_DISK_DIRECTORY + TEMP_DB_FILE_PATH)
@@ -352,6 +735,9 @@ def convert_to_url_string(s):
 def load_usaspending_initial_files():
     """Loads non-delta USASpending.gov CSV files into a SQLite Database for
     further transformation."""
+    print("Starting load_usaspending_initial_files")
+
+    print("Dropping all tables from temp_data.db")
 
     # create assistance table for USASpending.gov data
     temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
@@ -363,129 +749,95 @@ def load_usaspending_initial_files():
     temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
     temp_conn.commit()
 
+    # ensure the temporary directory is empty for later iteration
+    if os.path.exists(UNZIP_TMP_DIRECTORY):
+        shutil.rmtree(UNZIP_TMP_DIRECTORY)
+    os.makedirs(UNZIP_TMP_DIRECTORY, exist_ok=True)
+
+    zip_file_list = os.listdir(ASSISTANCE_ZIP_FILE_DIRECTORY)
+
     # load assistance data; the list is sorted to ensure files are processed
     # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + ASSISTANCE_EXTRACTED_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + ASSISTANCE_EXTRACTED_FILES_DIRECTORY + file, "r",
-                      encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
-                        r["assistance_transaction_unique_key"],
-                        r["assistance_award_unique_key"],
-                        r["federal_action_obligation"],
-                        r["total_outlayed_amount_for_overall_award"],
-                        r["action_date_fiscal_year"],
-                        r["prime_award_transaction_place_of_"
-                            + "performance_cd_current"],
-                        r["cfda_number"],
-                        r["assistance_type_code"]
-                    ])
-                temp_conn.commit()
+    for zip_file in sorted(zip_file_list):
+        print(zip_file)
+        if zip_file[0] != ".":
+            with zipfile.ZipFile(ASSISTANCE_ZIP_FILE_DIRECTORY + zip_file, 'r') as archive:
+                archive.extractall(UNZIP_TMP_DIRECTORY)
+            for file in sorted(os.listdir(UNZIP_TMP_DIRECTORY)):
+                print("  " + file)
+                if file[0] != ".":
+                    with open(UNZIP_TMP_DIRECTORY + file, "r",
+                            encoding="latin-1") as f:
+                        reader = csv.DictReader(f)
+                        for r in reader:
+                            temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
+                                r["assistance_transaction_unique_key"],
+                                r["assistance_award_unique_key"],
+                                r["generated_pragmatic_obligations"],
+                                r["total_outlayed_amount_for_overall_award"],
+                                r["action_date_fiscal_year"],
+                                r["prime_award_transaction_place_of_"
+                                    + "performance_cd_current"],
+                                r["cfda_number"],
+                                r["assistance_type_code"]
+                            ])
+                        temp_conn.commit()
+                    os.remove(UNZIP_TMP_DIRECTORY + file)
+
+    zip_file_list = os.listdir(CONTRACT_ZIP_FILE_DIRECTORY)
 
     # load contract data; the list is sorted to ensure files are processed
     # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                       + CONTRACT_EXTRACTED_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + CONTRACT_EXTRACTED_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
-                        r["contract_transaction_unique_key"],
-                        r["contract_award_unique_key"],
-                        r["federal_action_obligation"],
-                        r["total_outlayed_amount_for_overall_award"],
-                        r["action_date_fiscal_year"],
-                        r["funding_agency_code"],
-                        r["funding_agency_name"],
-                        r["funding_sub_agency_code"],
-                        r["funding_sub_agency_name"],
-                        r["funding_office_code"],
-                        r["funding_office_name"],
-                        r["prime_award_transaction_place_of_"
-                            + "performance_cd_current"],
-                        r["award_type_code"]
-                    ])
-                temp_conn.commit()
+    for zip_file in sorted(zip_file_list):
+        print(zip_file)
+        if zip_file[0] != ".":
+            with zipfile.ZipFile(CONTRACT_ZIP_FILE_DIRECTORY + zip_file, 'r') as archive:
+                archive.extractall(UNZIP_TMP_DIRECTORY)
+            for file in sorted(os.listdir(UNZIP_TMP_DIRECTORY)):
+                print("  " + file)
+                if file[0] != ".":
+                    with open(UNZIP_TMP_DIRECTORY + file, "r", encoding="latin-1") as f:
+                        reader = csv.DictReader(f)
+                        for r in reader:
+                            temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
+                                r["contract_transaction_unique_key"],
+                                r["contract_award_unique_key"],
+                                r["generated_pragmatic_obligations"],
+                                r["total_outlayed_amount_for_overall_award"],
+                                r["action_date_fiscal_year"],
+                                r["funding_agency_code"],
+                                r["funding_agency_name"],
+                                r["funding_sub_agency_code"],
+                                r["funding_sub_agency_name"],
+                                r["funding_office_code"],
+                                r["funding_office_name"],
+                                r["prime_award_transaction_place_of_"
+                                    + "performance_cd_current"],
+                                r["award_type_code"]
+                            ])
+                        temp_conn.commit()
+                    os.remove(UNZIP_TMP_DIRECTORY + file)
+
+    print("Finished load_usaspending_initial_files")
 
 
 def load_usaspending_delta_files():
-    """Loads delta USASpending.gov CSV files into a SQLite Database for
-    further transformation."""
-    # load assistance data; the list is sorted to ensure files are processed
-    # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + ASSISTANCE_DELTA_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + ASSISTANCE_DELTA_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_ASSISTANCE_DELETE_SQL,
-                                     [r["assistance_transaction_unique_key"]])
-                    # if "C" (change) or "" (add), insert new DB row
-                    if r["correction_delete_ind"] in ["", "C"]:
-                        temp_cur.execute(USASPENDING_ASSISTANCE_INSERT_SQL, [
-                            r["assistance_transaction_unique_key"],
-                            r["assistance_award_unique_key"],
-                            r["federal_action_obligation"],
-                            r["total_outlayed_amount_for_overall_award"],
-                            r["action_date_fiscal_year"],
-                            r["prime_award_transaction_place_of_"
-                                + "performance_cd_current"],
-                            r["cfda_number"],
-                            r["assistance_type_code"],
-                        ])
-                temp_conn.commit()
-
-    # load contract data; the list is sorted to ensure files are processed
-    # in chronological order
-    for file in sorted(os.listdir(USASPENDING_DISK_DIRECTORY
-                                  + CONTRACT_DELTA_FILES_DIRECTORY)):
-        print(file)
-        if file[0] != ".":
-            with open(USASPENDING_DISK_DIRECTORY
-                      + CONTRACT_DELTA_FILES_DIRECTORY
-                      + file, "r", encoding="latin-1") as f:
-                reader = csv.DictReader(f)
-                for r in reader:
-                    temp_cur.execute(USASPENDING_CONTRACT_DELETE_SQL,
-                                     [r["contract_transaction_unique_key"]])
-                    temp_conn.commit()
-                    # if "C" (change) or "" (add), insert new DB row
-                    if r["correction_delete_ind"] in ["", "C"]:
-                        temp_cur.execute(USASPENDING_CONTRACT_INSERT_SQL, [
-                            r["contract_transaction_unique_key"],
-                            r["contract_award_unique_key"],
-                            r["federal_action_obligation"],
-                            r["total_outlayed_amount_for_overall_award"],
-                            r["action_date_fiscal_year"],
-                            r["funding_agency_code"],
-                            r["funding_agency_name"],
-                            r["funding_sub_agency_code"],
-                            r["funding_sub_agency_name"],
-                            r["funding_office_code"],
-                            r["funding_office_name"],
-                            r["prime_award_transaction_place_of_"
-                                + "performance_cd_current"],
-                            r["award_type_code"]
-                        ])
-                temp_conn.commit()
+    # the previous implementation may have been duplicating some records
+    raise NotImplementedError("Delta file handling has not been implemented yet")
 
 
 def transform_and_insert_usaspending_aggregation_data():
     """Queries USASpending.gov data in the temporary database and inserts the
     results into the transformed database."""
+    print("Starting transform_and_insert_usaspending_aggregation_data")
+
+    # This verifies the assumption that usaspending will only have one outlay
+    #   value per assistance_award_unique_key
+    cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS)
+    if (len(cur.fetchall()) > 0):
+        print("Data quality check USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DUPLICATE_OUTLAYS failed")
+        exit(1)
+
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_DROP_TABLE_SQL)
     cur.execute(USASPENDING_ASSISTANCE_OBLIGATION_AGGEGATION_CREATE_TABLE_SQL)
     cur.execute(
@@ -497,10 +849,14 @@ def transform_and_insert_usaspending_aggregation_data():
     cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_SELECT_AND_INSERT_SQL)
     conn.commit()
 
+    print("Finished transform_and_insert_usaspending_aggregation_data")
+
 
 def load_agency():
     """Transforms the SAM.gov agency data and inserts the cleaned data into
     the transformed database."""
+    print("Starting load_agency")
+
     cur.execute(AGENCY_DROP_TABLE_SQL)
     cur.execute(AGENCY_CREATE_TABLE_SQL)
     conn.commit()
@@ -516,10 +872,14 @@ def load_agency():
                         o.get("l2OrgKey", None), is_cfo_act])
         conn.commit()
 
+    print("Finished load_agency")
+
 
 def load_sam_category():
     """Transforms the SAM.gov assistance type, applicant type, and beneficiary
     type data and inserts the cleaned data into the transformed database."""
+    print("Starting load_sam_category")
+
     cur.execute(CATEGORY_DROP_TABLE_SQL)
     cur.execute(CATEGORY_CREATE_TABLE_SQL)
     with open(REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY
@@ -544,11 +904,15 @@ def load_sam_category():
                                 "beneficiary", e["value"], None])
         conn.commit()
 
+    print("Finished load_sam_category")
+
 
 # load assistance listing values from SAM.gov
 def load_sam_programs():
     """Transforms the SAM.gov assistance listing data and inserts the cleaned
     data into the transformed database."""
+    print("Starting load_sam_programs")
+
     cur.execute(PROGRAM_DROP_TABLE_SQL)
     cur.execute(PROGRAM_CREATE_TABLE_SQL)
     cur.execute(PROGRAM_AUTHORIZATION_DROP_TABLE_SQL)
@@ -573,7 +937,7 @@ def load_sam_programs():
                     and len(d["alternativeNames"][0]) > 0:
                 popular_name = d["alternativeNames"][0]
             cur.execute(PROGRAM_INSERT_SQL, [d["programNumber"],
-                        d["organizationId"], d["title"], popular_name,
+                        d["organizationId"], d["title"].strip() if d.get("title") else d.get("title"), popular_name,
                         d["objective"],
                         "https://sam.gov/fal/" + listing["id"] + "/view",
                         usaspending_hashes.get(d["programNumber"], ""),
@@ -582,7 +946,7 @@ def load_sam_programs():
                         "https://grants.gov/search-grants?cfda="
                         + d["programNumber"],
                         "assistance_listing",
-                        any(item.get("code")=="subpartF" and item.get("isSelected") is True 
+                        any(item.get("code")=="subpartF" and item.get("isSelected") is True
                             for item in d["compliance"]["CFR200Requirements"]["questions"]),
                         d["compliance"]["documents"].get("description")
                         ])
@@ -624,11 +988,11 @@ def load_sam_programs():
                                                     if len(p) > 0]))
                     if auth_dict["authorizationTypes"]["statute"] is not None \
                             and auth_dict.get("statute", False):
-                        statute_volume = auth_dict["statute"] \
-                            .get("volume", "").strip() \
+                        statute_volume = str(auth_dict["statute"] \
+                            .get("volume", "")).strip() \
                             if auth_dict["statute"].get("volume", "") \
                             is not None else ""
-                        statute_page = auth_dict["statute"].get("page", "") \
+                        statute_page = str(auth_dict["statute"].get("page", "")) \
                             .strip() if auth_dict["statute"].get("page", "") \
                             is not None else ""
                         if len(statute_volume + statute_page) > 0:
@@ -641,12 +1005,12 @@ def load_sam_programs():
                                       + statute_volume + "/" + statute_page
                     if auth_dict["authorizationTypes"]["publicLaw"] \
                             is not None and auth_dict.get("publicLaw", False):
-                        pl_congress_code = auth_dict["publicLaw"] \
-                            .get("congressCode", "").strip() \
+                        pl_congress_code = str(auth_dict["publicLaw"] \
+                            .get("congressCode", "")).strip() \
                             if auth_dict["publicLaw"] \
                             .get("congressCode", "") is not None else ""
-                        pl_number = auth_dict["publicLaw"] \
-                            .get("number",  "").strip() \
+                        pl_number = str(auth_dict["publicLaw"] \
+                            .get("number",  "")).strip() \
                             if auth_dict["publicLaw"].get("number", "") \
                             is not None else ""
                         if len(pl_congress_code + pl_number) > 0:
@@ -660,7 +1024,7 @@ def load_sam_programs():
                                       + pl_number
                     if auth_dict["authorizationTypes"]["USC"] is not None \
                             and auth_dict.get("USC", False):
-                        usc_title = auth_dict["USC"].get("title", "").strip() \
+                        usc_title = str(auth_dict["USC"].get("title", "")).strip() \
                                 if auth_dict["USC"].get("title", "") \
                                 is not None else ""
                         usc_section = auth_dict["USC"] \
@@ -727,12 +1091,12 @@ def load_sam_programs():
                     if row.get("actual"):
                         cur.execute(PROGRAM_SAM_SPENDING_INSERT_SQL,
                                     [d["programNumber"],
-                                     o.get("assistanceType", ""), row["year"],
+                                     o.get("assistanceType", ""), 'assistance', row["year"],
                                      1, row["actual"], row["actual"]])
                     if row.get("estimate"):
                         cur.execute(PROGRAM_SAM_SPENDING_INSERT_SQL,
                                     [d["programNumber"],
-                                     o.get("assistanceType", ""), row["year"],
+                                     o.get("assistanceType", ""), 'assistance', row["year"],
                                      0, row["estimate"], row["estimate"]])
             # if the program has assistance types
             for e in listing["data"]["financial"]["obligations"]:
@@ -747,38 +1111,16 @@ def load_sam_programs():
             for e in listing["data"]["eligibility"]["applicant"]["types"]:
                 cur.execute(PROGRAM_TO_CATEGORY_INSERT_SQL, [
                     d["programNumber"], e, "applicant"])
+
+    load_acquisitions_and_services()
     conn.commit()
 
-
-# load category and sub-category values, including program mapping,
-# from CSV exported from SAM.gov PDF
-def load_category_and_sub_category():
-    category_insert_sql = "INSERT INTO category VALUES (?, ?, ?, ?)"
-    program_to_category_insert_sql = """INSERT INTO program_to_category
-                                     VALUES (?, ?, ?)"""
-    categories = set()
-    sub_categories = set()
-    programs_to_sub_categories = set()
-    with open(REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY
-              + "program-to-function-sub-function.csv", encoding="utf-8") as f:
-        for row in csv.reader(f):
-            categories.add(row[1])
-            sub_categories.add((row[1], row[2]))
-            programs_to_sub_categories.add((row[0], row[1], row[2]))
-        for c in categories:
-            cur.execute(category_insert_sql, [convert_to_url_string(c),
-                        "category", c, None])
-        for sc in sub_categories:
-            cur.execute(category_insert_sql, [convert_to_url_string(
-                        sc[0]+sc[1]), "category", sc[1],
-                        convert_to_url_string(sc[0])])
-        for p in programs_to_sub_categories:
-            cur.execute(program_to_category_insert_sql, [p[0],
-                        convert_to_url_string(p[1]+p[2]), "category"])
-        conn.commit()
+    print("Finished load_sam_programs")
 
 
 def load_additional_programs():
+    print("Starting load_additional_programs")
+
     if not os.path.exists(ADDITIONAL_PROGRAMS_DATA_PATH):
         print(f"{ADDITIONAL_PROGRAMS_DATA_PATH} - Not Found")
         return
@@ -813,6 +1155,7 @@ def load_additional_programs():
     df.insert(df.shape[1], 'category.name', None)
     df.insert(df.shape[1], 'category.id', None)
     df.insert(df.shape[1], 'category.parent_id', None)
+    df.insert(df.shape[1], 'focus_area.id', None)
 
     for ind, record in df.iterrows():
         if not pd.isna(record.subagency):
@@ -830,46 +1173,32 @@ def load_additional_programs():
 
     df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
 
-    unique_categories = []
-
-    # Add parent categories
-    for ind, record in df.iterrows():
-        if not pd.isna(record.category):
-            parent_category_entry = {
-                'id': convert_to_url_string(record.category),
-                'type': 'category',
-                'name': record.category,
-                'parent_id': None
-            }
-            if not any(c['id'] == parent_category_entry['id'] for c in unique_categories):
-                unique_categories.append(parent_category_entry)
-
-    # Add subcategories
-    for ind, record in df.iterrows():
-        if not pd.isna(record.category) and not pd.isna(record.subcategory):
-            subcategory_entry = {
-                'id': convert_to_url_string(record.category + record.subcategory),
-                'type': 'category',
-                'name': record.subcategory,
-                'parent_id': convert_to_url_string(record.category)
-            }
-            if not any(c['id'] == subcategory_entry['id'] for c in unique_categories):
-                unique_categories.append(subcategory_entry)
-
     # Insert categories into the database
-    for category in unique_categories:
-        category_query = "INSERT INTO category (id, type, name, parent_id) VALUES (?, ?, ?, ?);"
-        category_values = (category['id'], category['type'], category['name'], category['parent_id'])
-        try:
-            cur.execute(category_query, category_values)
-        except Exception as e:
-            print(str(e))
-            print(f"ERROR - Category Insert Error\n{category_query}")
+    category_lookup = {}
+    category_counter = 0
+    focus_area_lookup = {}
+    focus_area_counter = 0
+    for ind, record in df.iterrows():
+        if (record.category not in category_lookup):
+            category_lookup[record.category] = 'ADDITIONAL_' + str(category_counter)
+            cur.execute("""
+                INSERT INTO taxonomy_category
+                -- dash is later used as a delimiter between category and focus area
+                VALUES (?, REPLACE(?,'-','–'));
+            """, (category_lookup[record.category], record.category))
+            category_counter = category_counter + 1
+        if (record.subcategory not in focus_area_lookup):
+            focus_area_lookup[record.subcategory] = 'ADDITIONAL_' + str(focus_area_counter)
+            cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, (focus_area_lookup[record.subcategory], record.subcategory, category_lookup[record.category]))
+            focus_area_counter = focus_area_counter + 1
+    conn.commit()
 
     # Insert assistance types
     assistance_entries = [
         {'id': 'interest', 'type': 'assistance', 'name': 'Interest', 'parent_id': None},
-        {'id': 'tax_expenditure', 'type': 'assistance', 'name': 'Tax Expenditures', 'parent_id': None}
+        {'id': 'tax_expenditure', 'type': 'assistance', 'name': 'Tax Expenditures', 'parent_id': None},
+        {'id': 'contracts', 'type': 'assistance', 'name': 'Contracts', 'parent_id': None},
+        {'id': 'government_service', 'type': 'assistance', 'name': 'Government Service', 'parent_id': None}
     ]
     for entry in assistance_entries:
         try:
@@ -881,12 +1210,27 @@ def load_additional_programs():
             print(str(e))
             print(f"ERROR - Assistance Category Insert Error")
 
+    # Ids can change over time
+    cur.execute("DELETE FROM program WHERE program_type = 'tax_expenditure'")
+    cur.execute("DELETE FROM program WHERE program_type = 'interest'")
+
     # Insert programs and map to categories
     for ind, record in df[df['program.id'].notnull()].iterrows():
         program_query = """
             INSERT INTO program
-            (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            (id, agency_id, name, popular_name, objective, sam_url, usaspending_awards_hash, usaspending_awards_url, grants_url, program_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id)
+            DO UPDATE SET
+                agency_id = excluded.agency_id,
+                name = excluded.name,
+                popular_name = excluded.popular_name,
+                objective = excluded.objective,
+                sam_url = excluded.sam_url,
+                usaspending_awards_hash = excluded.usaspending_awards_hash,
+                usaspending_awards_url = excluded.usaspending_awards_url,
+                grants_url = excluded.grants_url,
+                program_type = excluded.program_type;
         """
         program_values = (
             record['program.id'],
@@ -906,20 +1250,6 @@ def load_additional_programs():
             print(str(e))
             print("ERROR - Program Insert Error")
 
-        program_to_category_query = """
-            INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?);
-        """
-        program_to_category_values = (
-            record['program.id'],
-            record['category.id'],
-            'category'
-        )
-        try:
-            cur.execute(program_to_category_query, program_to_category_values)
-        except Exception as e:
-            print(str(e))
-            print("ERROR - Program to Category Mapping Error")
-
         # Map assistance types
         if not pd.isna(record['assistance_type']):
             assistance_value = record['assistance_type']
@@ -934,6 +1264,9 @@ def load_additional_programs():
                 except Exception as e:
                     print(str(e))
                     print("ERROR - Program to Assistance Mapping Error")
+
+        # Map focus area
+        df.at[ind, 'focus_area.id'] = focus_area_lookup[record.subcategory]
 
     # Insert spending data into the other_program_spending table
     fiscal_years = {}
@@ -953,18 +1286,265 @@ def load_additional_programs():
             ])
 
     conn.commit()
+    print("Finished load_additional_programs")
 
+def load_improper_payment_mapping():
+    """Loads improper payment mapping data from CSV into the database."""
+    print("Starting load_improper_payment_mapping")
 
-# uncomment the necessary functions to database with data
-#
-# load_usaspending_initial_files()
-load_usaspending_delta_files()
+    cur.execute(IMPROPER_PAYMENT_MAPPING_DROP_TABLE_SQL)
+    cur.execute(IMPROPER_PAYMENT_MAPPING_CREATE_TABLE_SQL)
+    
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "improper-payment-program-mapping.csv"
+    
+    if not os.path.exists(file_path):
+        print(f"{file_path} - Not Found")
+        return
+        
+    df = pd.read_csv(file_path)
+    
+    # Strip whitespace from column names
+    df.columns = df.columns.str.strip()
+    
+    for _, row in df.iterrows():
+        cur.execute("""
+            INSERT INTO improper_payment_mapping 
+            (program_id, improper_payment_program_name, agency, fiscal_year,
+            outlays, improper_payment_amount, start_date, end_date,
+            insufficient_documentation_amount, slug)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            row['program_id'],
+            row['improper_payment_program_name'],
+            row['agency'],
+            row['fiscal_year'],
+            round(row['outlays'],2) * 1000000,
+            round(row['improper_payment_amount'],2) * 1000000,
+            row['start_date'],
+            row['end_date'],
+            round(row['insufficient_documentation_amount'],2) * 1000000,
+            row['slug']
+        ))
+    
+    conn.commit()
+    print("Finished load_improper_payment_mapping")
+
+def load_acquisitions_and_services():
+    """Loads programs derived from contracts."""
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "acquisitions_and_services.csv"
+
+    data_types = {
+        'Obligation_Sum': 'float64',
+        'Outlay_Sum': 'float64'
+    }
+
+    df = pd.read_csv(file_path, dtype=data_types)
+    # Only import program data for latest year for a particular program
+    df = df.sort_values(by=['Program ID', 'Fiscal Year'], ascending=[True, False])
+
+    seen_programs = set()
+    for _, row in df.iterrows():
+        # The source file contains multiple rows per program, import the latest row
+        if row["Program ID"] in seen_programs:
+            continue
+
+        seen_programs.add(row["Program ID"])
+
+        cur.execute(PROGRAM_INSERT_SQL, [
+            row["Program ID"],
+            row["Agency ID"],
+            row["Program Name"].strip() if row.get("Program Name") else row.get("Program Name"),
+            row["Popular Name"],
+            row["Program Description"],
+            None,
+            None,
+            None,
+            None,
+            str(row["Program Type"]).lower().replace(' ','_'),
+            0,
+            None
+        ])
+
+        cur.execute(PROGRAM_AUTHORIZATION_INSERT_SQL, [
+            row["Program ID"],
+            row["Authorization"],
+            row["Authorization URL"]
+        ])
+
+        # Add category mapping to utilize existing "Program Type" filter in the UI
+        category_id = 'contracts'
+        if row["Program Type"].lower() == 'government service':
+            category_id = 'government_service'
+        cur.execute(
+            "INSERT INTO program_to_category (program_id, category_id, category_type) VALUES (?, ?, ?) ON CONFLICT DO NOTHING;",
+            (row["Program ID"], category_id, 'assistance')
+        )
+
+        # Clear out old assistance outlay records for this program, to prevent duplicates
+        cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_DELETE_SQL, [row["Program ID"]])
+
+        # Taxonomy joins assumed to happen via GWO / PON assignment files
+
+    for _, row in df.iterrows():
+        cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL, [
+            row["Program ID"],
+            row["Fiscal Year"],
+            0 if row["Outlay_Sum"] is None or pd.isna(row["Outlay_Sum"]) else row["Outlay_Sum"],
+            0 if row["Obligation_Sum"] is None or pd.isna(row["Obligation_Sum"]) else row["Obligation_Sum"]
+        ])
+
+def load_taxonomy_and_assignments():
+    """Loads taxonomy categories, focus areas, gwos, pons, and assignments."""
+    print("Starting load_taxonomy_and_assignments")
+
+    cur.execute(PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL)
+    cur.execute(PROGRAM_TO_GWO_DROP_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PON_DROP_TABLE_SQL)
+    cur.execute(GWO_DROP_TABLE_SQL)
+    cur.execute(PON_DROP_TABLE_SQL)
+    cur.execute(TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL)
+    cur.execute(TAXONOMY_CATEGORY_DROP_TABLE_SQL)
+
+    cur.execute(TAXONOMY_CATEGORY_CREATE_TABLE_SQL)
+    cur.execute(TAXONOMY_FOCUS_AREA_CREATE_TABLE_SQL)
+    cur.execute(GWO_CREATE_TABLE_SQL)
+    cur.execute(PON_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TO_GWO_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PON_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL)
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_GWO_crosswalk.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
+            row['Category Code'],
+            row['Category']
+        ])
+
+        cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
+            row['FA Code'],
+            row['Focus Area'],
+            row['Category Code']
+        ])
+
+        cur.execute(GWO_INSERT_TABLE_SQL, [
+            row['GWO ID'],
+            row['GWO'],
+            row['GWO Definition'],
+            row['FA Code']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_PON_crosswalk.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
+            row['Category Code'],
+            row['Category']
+        ])
+
+        cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
+            row['FA Code'],
+            row['Focus Area'],
+            row['Category Code']
+        ])
+
+        cur.execute(PON_INSERT_TABLE_SQL, [
+            row['PON ID'],
+            row['PON2'],
+            row['PON Definition'],
+            row['FA Code']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_GWO_assignment.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(PROGRAM_TO_GWO_INSERT_TABLE_SQL, [
+            row['al_#'],
+            row['GWO ID']
+        ])
+
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_PON_assignment.csv"
+    df = pd.read_csv(file_path)
+
+    for _, row in df.iterrows():
+        cur.execute(PROGRAM_TO_PON_INSERT_TABLE_SQL, [
+            row['al_#'],
+            row['PON ID']
+        ])
+
+    conn.commit()
+    print("Finished load_taxonomy_and_assignments")
+
+def load_views():
+    cur.execute(PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL)
+    cur.execute(PROGRAM_AMOUNTS_LOOKUP_CREATE_VIEW_SQL)
+
+def remove_orphaned_records():
+    """Most functions run independently without create orphaned records.
+    However, orphaned child records of programs can occur when only some
+    functions are called (common in development process)."""
+    cur.execute("""
+        DELETE FROM improper_payment_mapping
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM other_program_spending
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_authorization
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_result
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_sam_spending
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_category
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_gwo
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_gwo
+        WHERE gwo_id NOT IN (SELECT id FROM gwo);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_pon
+        WHERE program_id NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM program_to_pon
+        WHERE pon_id NOT IN (SELECT id FROM pon);
+    """)
+    cur.execute("""
+        DELETE FROM usaspending_assistance_obligation_aggregation
+        WHERE cfda_number NOT IN (SELECT id FROM program);
+    """)
+    cur.execute("""
+        DELETE FROM usaspending_assistance_outlay_aggregation
+        WHERE cfda_number NOT IN (SELECT id FROM program);
+    """)
+
+test_transform_data_quality()
+load_usaspending_initial_files()
 transform_and_insert_usaspending_aggregation_data()
 load_agency()
 load_sam_category()
 load_sam_programs()
-load_category_and_sub_category()
+load_taxonomy_and_assignments()
 load_additional_programs()
+load_improper_payment_mapping()
+load_views()
+remove_orphaned_records()
 
-# close the db connection
 conn.close()

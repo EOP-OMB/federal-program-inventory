@@ -1,0 +1,7 @@
+<!-- View Results Link Component -->
+<a href="{{ include.href | default: '#' }}" class="usa-link display-flex flex-align-center gap-1 text-base hover:text-ink" onclick="{{ include.onclick | default: 'javascript:void();'}}">
+  <span class="text-underline">{{ include.text | default: 'View results' }}</span>
+  <svg class="usa-icon" stroke="currentColor" aria-hidden="true" focusable="false" role="img">
+    <use href="/assets/img/sprite.svg#arrow_forward"></use>
+  </svg>
+</a>

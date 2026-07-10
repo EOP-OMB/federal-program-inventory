@@ -1,0 +1,52 @@
+---
+category: Disaster Prevention and Relief
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Sustained continuous operation of essential services
+  (e.g., water, electricity, communications) during at least one disaster or emergency
+  event; -Implemented and tested an emergency operations plan that includes backup
+  systems and alternative service provision; -Completed infrastructure upgrades or
+  repairs that improve resilience against the top three identified local hazards.'
+focus_area: Disaster Readiness, Response, and Relief
+gwo_id: PON.N2
+permalink: /pon/PON_N2
+title: Maintain Essential Public Utility Operations During Emergencies
+where_used:
+- agency: Department of the Treasury
+  expenditure_amount: 1345159.72
+  name: Coronavirus Capital Projects Fund
+  permalink: /program/21.029
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 17327369.0
+  name: Drinking Water System Infrastructure Resilience and Sustainability Program
+    – SDWA 1459A(l)
+  permalink: /program/66.448
+  program_type: assistance_listing
+- agency: Department of Education
+  expenditure_amount: -4721826.76
+  name: Education Stabilization Fund
+  permalink: /program/84.425
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Fiscal Year 2013 Hurricane Sandy Disaster Relief Grants to the National Railroad
+    Passenger Corporation
+  permalink: /program/20.323
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Midsize and Large Drinking Water System Infrastructure Resilience and Sustainability
+    Program – Safe Drinking Water Act 1459F
+  permalink: /program/66.488
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 378375126.0
+  name: Public Transportation Emergency Relief Program
+  permalink: /program/20.527
+  program_type: assistance_listing
+- agency: Environmental Protection Agency
+  expenditure_amount: 0.0
+  name: Response to Emergency Situations Affecting Public Water Systems (SDWA 1442(b))
+  permalink: /program/66.489
+  program_type: assistance_listing
+---
