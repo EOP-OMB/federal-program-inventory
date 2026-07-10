@@ -1,35 +1,15 @@
 ---
 agency: Department of the Treasury
-agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
 authorizations: []
 beneficiary_types: []
 categories:
-- Health - Health and Wellbeing
+- Tax Expenditures - Natural Resources and Environment
 cfda: TC.042
-fiscal_year: '2025'
+fiscal_year: '2024'
 grants_url: null
-gwo:
-  gwo: Ensure Safe Drinking Water
-  permalink: /gwo/GWO_L9
-headline_amount: 360000000.0
-improper_payments:
-- agency: TREASURY
-  end_date: ''
-  fiscal_year: 2025
-  improper_payments: 0.0
-  insufficient_payment: 0.0
-  name: Exclusion of interest on bonds for water, sewage, and hazardous waste facilities
-  outlays: 0.0
-  slug: null
-  start_date: ''
-improper_payments_is_multiple: false
-improper_payments_percent: 0.0
-improper_payments_related_programs: []
-improper_payments_sparkline: '[{"x":"2025","rate":0.0}]'
-improper_payments_total: 0.0
 is_subpart_f: null
 layout: program
 objective: The baseline tax system generally would tax all income under the regular
@@ -37,16 +17,11 @@ objective: The baseline tax system generally would tax all income under the regu
   apply to certain types or sources of income. In contrast, the Tax Code allows interest
   earned on State and local bonds used to finance construction of sewage, water, or
   hazardous waste facilities to be exempt from tax. These bonds are generally subject
-  to the State private activity bond annual volume cap.
+  to the State private-activity bond annual volume cap.
 obligations: null
-other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":370000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":290000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":360000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":390000000.0}]'
+other_program_spending: '[{"x":"2023","outlays":0.0,"forgone_revenue":290000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":350000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":360000000.0}]'
 outlays: null
 permalink: /program/TC.042.html
-pons:
-- permalink: /pon/PON_208
-  pon: Increase Access to Safe Drinking Water
-- permalink: /pon/PON_866
-  pon: Increase Financial Support for Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []
