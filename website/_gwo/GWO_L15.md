@@ -1,0 +1,57 @@
+---
+category: Health
+definition: Improving quality, access, and availability of affordable healthcare coverage
+  options for consumers, providing financial assistance for health insurance, enforcing
+  key consumer protections and stabilizing health insurance markets, or facilitating
+  care for vulnerable populations like seniors, people with disabilities, or children.
+focus_area: Healthcare Access
+gwo_id: GWO.L15
+permalink: /gwo/GWO_L15
+title: Provide Healthcare Coverage
+where_used:
+- agency: Department of Health and Human Services
+  expenditure_amount: 16089981136.0
+  name: 1332 State Innovation Waivers
+  permalink: /program/93.423
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 976780852.0
+  name: Basic Health Program (Affordable Care Act)
+  permalink: /program/93.640
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 20545165446.0
+  name: Children's Health Insurance Program
+  permalink: /program/93.767
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 0.0
+  name: Credit for employee health insurance expenses of small business
+  permalink: /program/TC.136
+  program_type: tax_expenditure
+- agency: Department of Health and Human Services
+  expenditure_amount: 666131123061.05
+  name: Grants to States for Medicaid
+  permalink: /program/93.778
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 432516213604.68
+  name: Medicare Hospital Insurance
+  permalink: /program/93.773
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 162488810217.76
+  name: Medicare Prescription Drug Coverage
+  permalink: /program/93.770
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 568590835738.81
+  name: Medicare Supplementary Medical Insurance
+  permalink: /program/93.774
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 104880000000.0
+  name: Refundable Premium Assistance Tax Credit
+  permalink: /program/TC.135
+  program_type: tax_expenditure
+---

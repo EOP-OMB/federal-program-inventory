@@ -5,22 +5,15 @@ footer_include: _footer-category.html
 ---
 
 <section
-  class="bg-primary-darker padding-x-2 padding-y-3"
-  style="
-    background-image: url('../../assets/img/banner.png'),
-      linear-gradient(0deg, #272a63, #272a63);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  "
+  class="padding-x-2 padding-y-3"
 >
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col-12">
         <h1
-          class="usa-display usa-heading text-white font-heading-2xl text-light"
+          class="usa-display usa-heading site-title-font text-light"
         >
-          {{ layout.header_title }}
+          Explore FY {{ page.fiscal_year }} spending
         </h1>
       </div>
     </div>
@@ -36,7 +29,7 @@ footer_include: _footer-category.html
         </li>
         <li class="usa-breadcrumb__list-item">
           <a href="/category" class="usa-breadcrumb__link"
-            ><span>Explore programs by category</span></a
+            ><span>Explore FY {{ page.fiscal_year }} spending</span></a
           >
         </li>
         <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
@@ -46,16 +39,8 @@ footer_include: _footer-category.html
     </nav>
   </div>
   <div class="grid-row grid-gap padding-top-1">
-    <div class="width-full text-primary font-sans-xl line-height-sans-2">
+    <div class="width-full text-primary font-heading-xl line-height-sans-2">
       {{ page.title }}
-    </div>
-    <div class="grid-col-8 line-height-sans-3 padding-top-1">
-      Programs and the related information listed on this page use data pulled from
-      SAM.gov, USASpending.gov, and Treasury.gov.
-      <br />
-      <br />
-      Select from the dropdown below to view a category. Once you've selected a
-      category, you can select a sub-category under it.
     </div>
   </div>
 
@@ -65,19 +50,29 @@ footer_include: _footer-category.html
         >Select category
         <span class="usa-label--required">(Required)</span></label
       >
-      <select class="usa-select width-mobile" name="category" id="category">
-        <option value>All categories</option>
-      </select>
+      <div class="category-select-wrap">
+        <select class="usa-select category-select-control width-mobile" name="category" id="category">
+          <option value>All categories</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <div class="margin-right-205 margin-bottom-2">
       <label class="usa-label" for="subcategory">Select sub-category</label>
-      <select
-        class="usa-select width-mobile"
-        name="subcategory"
-        id="subcategory"
-      >
-        <option value>-Select-</option>
-      </select>
+      <div class="category-select-wrap">
+        <select
+          class="usa-select category-select-control width-mobile"
+          name="subcategory"
+          id="subcategory"
+        >
+          <option value>-Select-</option>
+        </select>
+        <svg class="usa-icon category-select-icon" aria-hidden="true" focusable="false">
+          <use href="/assets/img/sprite.svg#expand_more"></use>
+        </svg>
+      </div>
     </div>
     <button id="category-button" class="usa-button bg-primary margin-bottom-2 padding-x-3">
       Update category
@@ -86,33 +81,22 @@ footer_include: _footer-category.html
 
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
-      <h3 class="text-primary font-heading-lg text-bold line-height-heading-3">
-        {{ page.title }} expenditures
-      </h3>
-
-      <p class="text-ink font-sans-sm line-height-body-3">
-        All data for this chart was provided by the administering agency and sourced from
-        <a href="https://sam.gov/" class="usa-link usa-link--external" target="_blank"
-          rel="noopener noreferrer">SAM.gov</a> and
-        <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures"
-          class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Treasury.gov</a>.
-      </p>
       <div class="display-flex margin-bottom-2">
         <div class="padding-right-5 display-flex flex-column">
-          <div class="text-primary font-sans-3xl text-bold">
+          <div class="text-primary font-heading-3xl text-bold">
             {{ page.total_num_programs }}
           </div>
           <div class="font-heading-lg line-height-heading-5">programs</div>
         </div>
         <div class="padding-right-5 display-flex flex-column">
-          <div id="obligations-total" class="text-primary font-sans-3xl text-bold">
+          <div id="obligations-total" class="text-primary font-heading-3xl text-bold">
           </div>
           <div class="font-heading-lg line-height-heading-5">
-            in FY {{ page.fiscal_year }} expenditures
+            in FY {{ page.fiscal_year }}
           </div>
         </div>
         <div class="display-flex flex-column">
-          <div class="text-primary font-sans-3xl text-bold">
+          <div class="text-primary font-heading-3xl text-bold">
             {{ page.total_num_sub_cats }}
           </div>
           <div class="font-heading-lg line-height-heading-5">
@@ -129,7 +113,7 @@ footer_include: _footer-category.html
         class="display-flex flex-justify-start flex-align-center grid-row grid-gap-3"
       >
         <div class="font-heading-lg line-height-heading-2">
-          View top FY {{ page.fiscal_year }} for:
+          View by:
         </div>
 
         <div class="usa-radio display-flex flex-align-center">
@@ -141,7 +125,7 @@ footer_include: _footer-category.html
             checked
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="subCategory"
             >Sub-category</label
           >
@@ -155,7 +139,7 @@ footer_include: _footer-category.html
             name="view-options"
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="agency"
             >Agency</label
           >
@@ -169,7 +153,7 @@ footer_include: _footer-category.html
             name="view-options"
           />
           <label
-            class="usa-radio__label font-sans-sm line-height-body-3 margin-top-0"
+            class="usa-radio__label font-heading-sm line-height-body-3 margin-top-0"
             for="eligible-applicant"
             >Eligible applicant type</label
           >
@@ -181,10 +165,7 @@ footer_include: _footer-category.html
 
       <!-- Three tables, hidden/shown dynamically -->
       <div id="table-container">
-        <div id="table-title" class="text-bold font-sans-lg text-primary">
-          <!-- The title will be dynamically updated here -->
-        </div>
-        <table class="usa-table width-full margin-bottom-0" id="sub-categories-table">
+        <table class="usa-table width-full margin-bottom-0 margin-top-4" id="sub-categories-table">
           <thead>
             <tr>
               <th
@@ -205,7 +186,7 @@ footer_include: _footer-category.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Expenditures (FY {{ page.fiscal_year }})</span
+                  >Amount</span
                 >
               </th>
             </tr>
@@ -243,7 +224,7 @@ footer_include: _footer-category.html
               </th>
               <th data-sortable data-column="total_obs" scope="col">
                 <span class="header-text"
-                  >Expenditures (FY {{ page.fiscal_year }})</span
+                  >Amount</span
                 >
               </th>
             </tr>
@@ -294,7 +275,7 @@ footer_include: _footer-category.html
       <div>
         <div class="grid-row grid-gap flex-align-center">
           <div class="grid-col-fill">
-            <span class="font-sans-sm" id="pagination-info">
+            <span class="font-heading-sm" id="pagination-info">
               Showing <span class="text-bold" id="results-start">1</span> to
               <span class="text-bold" id="results-end">10</span> of
               <span class="text-bold" id="results-total">0</span> results
@@ -340,7 +321,7 @@ footer_include: _footer-category.html
 
         <div class="grid-row">
           <div class="grid-col-auto">
-            <button class="usa-button usa-button--outline border-2px">
+            <button class="usa-button usa-button--outline border-2px hover:border-2px">
               <span>Download .csv file</span>
               <svg
                 class="usa-icon margin-left-1"
@@ -357,4 +338,3 @@ footer_include: _footer-category.html
     </div>
   </div>
 </div>
-{% include _about-the-data.html %}

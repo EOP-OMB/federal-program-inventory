@@ -21,6 +21,8 @@ class SearchRequest(BaseModel):
     categorySubcategory: Optional[List[str]] = None
     assistanceTypes: Optional[List[str]] = None
     applicantTypes: Optional[List[str]] = None
+    gwo: Optional[List[str]] = None
+    pons: Optional[List[str]] = None
     page: int = 1
     page_size: int = 10
     sort_field: str = "title"
@@ -32,8 +34,12 @@ class Program(BaseModel):
     permalink: str
     agency: Agency
     obligations: Optional[float]
+    programType: Optional[str] = None
+    data_source: Optional[str] = None
     objectives: Optional[str]
     popularName: Optional[str]
+    gwo: Optional[List[str]]
+    pons: Optional[List[str]]
     assistanceTypes: List[str]
     applicantTypes: List[str]
     categories: List[Category]
@@ -57,6 +63,8 @@ class SearchFacets(BaseModel):
     agencies: List[AgencyFacet]
     assistance_types: List[FacetBucket]
     applicant_types: List[FacetBucket]
+    gwo: List[FacetBucket]
+    pons: List[FacetBucket]
 
 class ProgramTableWithFacets(BaseModel):
     programs: List[Program]
