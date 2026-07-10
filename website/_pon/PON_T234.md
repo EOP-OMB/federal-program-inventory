@@ -14,37 +14,37 @@ permalink: /pon/PON_T234
 title: Improve Foundational Research in Astronomy and Space Sciences
 where_used:
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 0.0
+  expenditure_amount: -2813.66
   name: Congressionally Directed Programs
   permalink: /program/43.014
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 19900000.0
+  expenditure_amount: 0.0
   name: Established Program to Stimulate Competitive Research
   permalink: /program/43.016
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 16000000.0
+  expenditure_amount: 86690042.22
   name: Exploration
   permalink: /program/43.003
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 8236604.0
+  expenditure_amount: 15020782.92
   name: Mission Support
   permalink: /program/43.009
   program_type: assistance_listing
 - agency: National Science Foundation
-  expenditure_amount: 387660000.0
+  expenditure_amount: 114067320.0
   name: Polar Programs
   permalink: /program/47.078
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 907114425.5
+  expenditure_amount: 1171372460.61
   name: Science
   permalink: /program/43.001
   program_type: assistance_listing
 - agency: National Aeronautics and Space Administration
-  expenditure_amount: 55000000.0
+  expenditure_amount: 58264998.98
   name: Space Technology
   permalink: /program/43.012
   program_type: assistance_listing

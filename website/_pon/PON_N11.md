@@ -62,12 +62,12 @@ where_used:
   permalink: /program/15.439
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 26565.0
+  expenditure_amount: 106565.0
   name: Schools and Roads - Grants to Counties
   permalink: /program/10.666
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 85439320.23
   name: Schools and Roads - Grants to States
   permalink: /program/10.665
   program_type: assistance_listing

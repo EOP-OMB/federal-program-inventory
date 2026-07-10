@@ -33,7 +33,7 @@ describe('PON treemap', () => {
     cy.get('.chart-tooltip').should('contain.text', 'Test Program One');
     cy.get('.chart-tooltip').should('contain.text', 'Amount:');
     cy.get('.chart-tooltip').should('contain.text', 'Percent: 50.0%');
-    cy.get('.chart-tooltip').should('contain.text', 'Data source: SAM.gov');
+    cy.get('.chart-tooltip').should('contain.text', 'Data source: USASpending.gov');
     cy.wait(1000);
     cy.get('#outcomeChart').compareSnapshot('pon_treemap_tooltip');
   });

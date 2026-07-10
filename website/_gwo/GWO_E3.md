@@ -9,12 +9,12 @@ permalink: /gwo/GWO_E3
 title: Provide Cultural Educational Experiences
 where_used:
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 42843589.3
   name: Alaska Native Educational Programs
   permalink: /program/84.356
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 136392037.36
   name: American History and Civics Education
   permalink: /program/84.422
   program_type: assistance_listing
@@ -24,23 +24,23 @@ where_used:
   permalink: /program/45.031
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: 9481193.39
   name: Indian Education National Activities (State Tribal Education Partnership (STEP)
     and Native American Language (NAL)
   permalink: /program/84.415
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 6000000.0
+  expenditure_amount: 6003532.21
   name: Museum Grants for African American History and Culture
   permalink: /program/45.309
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 6000000.0
+  expenditure_amount: 4258263.0
   name: Museum Grants for American Latino History and Culture
   permalink: /program/45.033
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 40000000.0
+  expenditure_amount: 0.0
   name: 'National Garden of American Heroes: Statues'
   permalink: /program/45.034
   program_type: assistance_listing
@@ -51,22 +51,22 @@ where_used:
   permalink: /program/12.025
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 3772000.0
+  expenditure_amount: 3476154.55
   name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 2750000.0
+  expenditure_amount: 2749117.0
   name: Native Hawaiian and Alaska Native Culture and Arts Development
   permalink: /program/15.071
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 18797374.0
+  expenditure_amount: 0.0
   name: Promote the Survival and Continuing Vitality of Native American Languages
   permalink: /program/93.587
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 1176713.0
+  expenditure_amount: 3180839.01
   name: Promotion of the Humanities Teaching and Learning Resources and Curriculum
     Development
   permalink: /program/45.162

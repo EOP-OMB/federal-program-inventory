@@ -11,7 +11,7 @@ permalink: /pon/PON_3P
 title: Improve Cyber Incident Response
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 6800000.0
+  expenditure_amount: 0.0
   name: Cybersecurity Education and Training
   permalink: /program/97.127
   program_type: assistance_listing

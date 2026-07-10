@@ -20,12 +20,12 @@ where_used:
   permalink: /program/10.243
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 75543326.11
   name: Environmental and Scientific Partnerships and Programs
   permalink: /program/19.017
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7689341.0
+  expenditure_amount: 3194250.86
   name: Food and Agriculture Defense Initiative (FADI)
   permalink: /program/10.304
   program_type: assistance_listing
@@ -46,7 +46,7 @@ where_used:
   permalink: /program/10.184
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 20000000.0
+  expenditure_amount: 409852406.47
   name: Public Wireless Supply Chain Innovation Fund Grant Program
   permalink: /program/11.038
   program_type: assistance_listing
@@ -56,7 +56,7 @@ where_used:
   permalink: /program/10.186
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: 5224700.22
   name: Regional Food System Partnerships
   permalink: /program/10.177
   program_type: assistance_listing
@@ -66,7 +66,7 @@ where_used:
   permalink: /program/10.190
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 1000000.0
+  expenditure_amount: -345286.86
   name: Wholesale Farmers and Alternative Market Development
   permalink: /program/10.164
   program_type: assistance_listing

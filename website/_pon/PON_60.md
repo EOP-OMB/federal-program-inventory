@@ -11,7 +11,7 @@ permalink: /pon/PON_60
 title: 'Increase Emergency Food Supply '
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 1767949.0
   name: Commodity Credit Corporation (CCC) Funding to Alleviate Emergency Supply Chain
     Disruption in the Commodity Supplemental Food Program (CSFP)
   permalink: /program/10.194

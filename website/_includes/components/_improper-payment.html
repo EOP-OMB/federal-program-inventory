@@ -1,4 +1,4 @@
-{% assign fiscal_year = site.data.constants_global_dates.CURRENT_FISCAL_YEAR %}
+{% assign last_completed_fiscal_year = include.last_completed_fiscal_year | default: site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR %}
 {% assign paymentaccuracy_fy_date = site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE %}
 
 {% assign headline_amount = page.headline_amount | default: 0 %}
@@ -18,7 +18,7 @@
       <div class="payment-info">
           <div class="font-heading-md ip-outlay-text">
             <span class="ip-outlay-dot">•</span>
-            <span>FY {{ fiscal_year }}</span>
+            <span>FY {{ last_completed_fiscal_year }}</span>
           </div>
           <div class="font-heading-xl ip-fy-outlay-amount">
             <span id="last-completed-year-outlay" class="program-obligations-tooltip" tabindex="0" data-dollar-amount="{{ headline_amount }}"></span>
@@ -47,7 +47,7 @@
       <div class="payment-info">
           <div class="font-heading-md ip-outlay-text">
             <span class="ip-outlay-dot">•</span>
-            <span>FY {{ fiscal_year }}</span>
+            <span>FY {{ last_completed_fiscal_year }}</span>
           </div>
           <div class="font-heading-xl ip-fy-outlay-amount">
             <span id="last-completed-year-outlay" class="program-obligations-tooltip" tabindex="0" data-dollar-amount="{{ headline_amount }}"></span>
@@ -87,7 +87,7 @@
       <div class="payment-info">
           <div class="font-heading-md ip-outlay-text">
             <span class="ip-outlay-dot">•</span>
-            <span>FY {{ fiscal_year }}</span>
+            <span>FY {{ last_completed_fiscal_year }}</span>
           </div>
           <div class="font-heading-xl ip-fy-outlay-amount">
             <span id="last-completed-year-outlay" class="program-obligations-tooltip" tabindex="0" data-dollar-amount="{{ headline_amount }}"></span>

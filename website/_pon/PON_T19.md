@@ -16,22 +16,22 @@ where_used:
   permalink: /program/45.201
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 5000000.0
+  expenditure_amount: 4405960.72
   name: Cultural Resources Management
   permalink: /program/15.159
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 1200000.0
+  expenditure_amount: 1344659.19
   name: Cultural Resources Management
   permalink: /program/15.511
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 181400000.0
+  expenditure_amount: 179196949.15
   name: Grants to States
   permalink: /program/45.310
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 60000000.0
+  expenditure_amount: 60882280.0
   name: Historic Preservation Fund Grants-in-Aid for Competitive Grants
   permalink: /program/15.966
   program_type: assistance_listing
@@ -41,22 +41,22 @@ where_used:
   permalink: /program/15.407
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 6000000.0
+  expenditure_amount: 6003532.21
   name: Museum Grants for African American History and Culture
   permalink: /program/45.309
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 6000000.0
+  expenditure_amount: 4258263.0
   name: Museum Grants for American Latino History and Culture
   permalink: /program/45.033
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 28730000.0
+  expenditure_amount: 14610762.27
   name: Museums for America
   permalink: /program/45.301
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 5000000.0
+  expenditure_amount: -0.03
   name: National Agricultural Library
   permalink: /program/10.700
   program_type: assistance_listing
@@ -71,42 +71,42 @@ where_used:
   permalink: /program/45.037
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 40000000.0
+  expenditure_amount: 0.0
   name: 'National Garden of American Heroes: Statues'
   permalink: /program/45.034
   program_type: assistance_listing
 - agency: National Archives and Records Administration
-  expenditure_amount: 0.0
+  expenditure_amount: 1738523.8
   name: National Historical Publications and Records Grants
   permalink: /program/89.003
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 24635000.0
+  expenditure_amount: 26245514.08
   name: National Leadership Grants
   permalink: /program/45.312
   program_type: assistance_listing
 - agency: Department of the Interior
-  expenditure_amount: 3000000.0
+  expenditure_amount: 3441931.02
   name: Native American Graves Protection and Repatriation Act
   permalink: /program/15.922
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 5950000.0
+  expenditure_amount: 5234564.36
   name: Native American and Native Hawaiian Library Services
   permalink: /program/45.311
   program_type: assistance_listing
 - agency: The Institute of Museum and Library Services
-  expenditure_amount: 3772000.0
+  expenditure_amount: 3476154.55
   name: Native American/Native Hawaiian Museum Services Program
   permalink: /program/45.308
   program_type: assistance_listing
 - agency: National Endowment for the Humanities
-  expenditure_amount: 5690817.0
+  expenditure_amount: 12274813.52
   name: Promotion of the Humanities Division of Preservation and Access
   permalink: /program/45.149
   program_type: assistance_listing
 - agency: Department of Veterans Affairs
-  expenditure_amount: 2200000.0
+  expenditure_amount: 1920025.72
   name: Veterans Legacy Grants Program
   permalink: /program/64.204
   program_type: assistance_listing

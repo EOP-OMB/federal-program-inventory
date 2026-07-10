@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Improve Direct Disaster and Emergency Relief
   permalink: /gwo/GWO_F1
-headline_amount: 20000000.0
+headline_amount: 40000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

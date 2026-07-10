@@ -1090,14 +1090,14 @@
       const obligationsTooltipEl = clone.querySelector(
         ".program-obligations-tooltip"
       );
-      const obligationsText = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year }}`;
+      const obligationsText = `${formatObligations(program.obligations)} in FY {{ page.fiscal_year | default: site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR }}`;
       attachProgramDataSourceTooltip(obligationsTooltipEl, {
         displayText: obligationsText,
         dataSource: program?.data_source,
         programType: program?.programType || "",
         dataType: "expenditure",
-        year: Number("{{ page.fiscal_year }}"),
-        currentFiscalYear: Number("{{ page.fiscal_year }}"),
+        year: Number("{{ page.fiscal_year | default: site.data.constants_global_dates.LAST_COMPLETED_FISCAL_YEAR }}"),
+        currentFiscalYear: Number("{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}"),
         blurOnEscape: true
       });
       obligationsTooltipEl.textContent = obligationsText;

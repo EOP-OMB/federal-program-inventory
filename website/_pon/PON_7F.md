@@ -11,7 +11,7 @@ permalink: /pon/PON_7F
 title: Reduce Disaster Relief Costs
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 153927602.99
   name: 'BRIC: Building Resilient Infrastructure and Communities'
   permalink: /program/97.047
   program_type: assistance_listing
@@ -21,22 +21,22 @@ where_used:
   permalink: /program/12.026
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 21747067000.0
+  expenditure_amount: 250092281.75
   name: Crop Insurance
   permalink: /program/10.450
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 1084144526.03
   name: Hazard Mitigation Grant
   permalink: /program/97.039
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 32000000.0
+  expenditure_amount: 29988745.0
   name: Marine Debris Program
   permalink: /program/11.999
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1415500.0
+  expenditure_amount: 0.0
   name: Office of Response and Restoration
   permalink: /program/11.998
   program_type: assistance_listing

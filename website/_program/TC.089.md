@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Improve Commercial Distribution Infrastructure
   permalink: /gwo/GWO_T1
-headline_amount: 80000000.0
+headline_amount: 60000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

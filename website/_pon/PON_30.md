@@ -16,34 +16,34 @@ where_used:
   permalink: /program/93.051
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 16800000.0
+  expenditure_amount: 0.0
   name: 'Alzheimer’s Disease Initiative: Specialized Supportive Services Project (ADI-SSS)
     thru Prevention and Public Health Funds (PPHF)'
   permalink: /program/93.763
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 0.0
+  expenditure_amount: 5038998.8
   name: Alzheimer’s Disease Program Initiative (ADPI)
   permalink: /program/93.470
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 10000000.0
+  expenditure_amount: 8551188.32
   name: Lifespan Respite Care Program
   permalink: /program/93.072
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 207000000.0
+  expenditure_amount: 200128549.65
   name: National Family Caregiver Support, Title III, Part E
   permalink: /program/93.052
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 12000000.0
+  expenditure_amount: 10688251.68
   name: National Family Caregiver Support, Title VI, Part C, Grants To Indian Tribes
     And Native Hawaiians
   permalink: /program/93.054
   program_type: assistance_listing
 - agency: Department of Health and Human Services
-  expenditure_amount: 82804000.0
+  expenditure_amount: 75367302.28
   name: Special Programs for the Aging, Title IV, and Title II, Discretionary Projects
   permalink: /program/93.048
   program_type: assistance_listing

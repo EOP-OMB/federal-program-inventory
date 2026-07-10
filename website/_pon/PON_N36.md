@@ -10,7 +10,7 @@ permalink: /pon/PON_N36
 title: Increase Law Enforcement Operational Capacity
 where_used:
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 16407973.24
   name: Body Worn Camera Policy and Implementation
   permalink: /program/16.835
   program_type: assistance_listing
@@ -20,7 +20,7 @@ where_used:
   permalink: /program/16.607
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 156668839.0
+  expenditure_amount: 0.0
   name: COPS Hiring Program
   permalink: /program/16.068
   program_type: assistance_listing
@@ -40,37 +40,37 @@ where_used:
   permalink: /program/81.260
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 20719050.55
   name: Criminal Justice Systems
   permalink: /program/19.703
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -3554249.43
   name: Criminal and Juvenile Justice and Mental Health Collaboration Program
   permalink: /program/16.745
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 500000.0
+  expenditure_amount: 283561.63
   name: Cultural Antiquities Task Force
   permalink: /program/19.036
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -2602208.35
   name: DNA Backlog Reduction Program
   permalink: /program/16.741
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -256901.26
   name: Economic, High-Tech, and Cyber Crime Prevention
   permalink: /program/16.752
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 288952170.74
   name: Edward Byrne Memorial Justice Assistance Grant Program
   permalink: /program/16.738
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 1282372.93
   name: Emergency Law Enforcement Assistance Grant
   permalink: /program/16.824
   program_type: assistance_listing
@@ -80,27 +80,27 @@ where_used:
   permalink: /program/16.823
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 608400000.0
   name: Fiscal Year 2025 Detention Support Grant Program
   permalink: /program/97.158
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 625000000.0
+  expenditure_amount: 0.0
   name: Fédération Internationale de Football Association World Cup Grant Program
   permalink: /program/97.160
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: 31804877.44
   name: Global Counterterrorism Programs
   permalink: /program/19.701
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 3000233.62
   name: Harold Rogers Prescription Drug Monitoring Program
   permalink: /program/16.754
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -117416.82
   name: John R.  Justice Prosecutors and Defenders Incentive Act
   permalink: /program/16.816
   program_type: assistance_listing
@@ -110,22 +110,22 @@ where_used:
   permalink: /program/16.302
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 10000000.0
+  expenditure_amount: 0.0
   name: Law Enforcement Mental Health and Wellness Act
   permalink: /program/16.070
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 83752293.0
+  expenditure_amount: 33184393.15
   name: Missing Children's Assistance
   permalink: /program/16.543
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -2635182.57
   name: NICS Act Record Improvement Program
   permalink: /program/16.813
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 2623643.0
   name: National Center on Restorative Justice
   permalink: /program/16.030
   program_type: assistance_listing
@@ -135,7 +135,7 @@ where_used:
   permalink: /program/97.142
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -406816.87
   name: OVW Technical Assistance Initiative
   permalink: /program/16.526
   program_type: assistance_listing
@@ -146,27 +146,27 @@ where_used:
   permalink: /program/16.066
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -1542107.5
   name: Paul Coverdell Forensic Sciences Improvement Grant Program
   permalink: /program/16.742
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: -617178.47
   name: Postconviction Testing of DNA Evidence
   permalink: /program/16.820
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 12000000.0
+  expenditure_amount: 0.0
   name: Preparing for Active Shooter Situations
   permalink: /program/16.069
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 0.0
+  expenditure_amount: 38756249.0
   name: Regional Information Sharing Systems
   permalink: /program/16.610
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 0.0
+  expenditure_amount: -331195.64
   name: Regional Peace and Security
   permalink: /program/19.979
   program_type: assistance_listing
@@ -198,7 +198,7 @@ where_used:
   permalink: /program/16.815
   program_type: assistance_listing
 - agency: Department of Justice
-  expenditure_amount: 126738.0
+  expenditure_amount: 1857876.0
   name: Tribal Justice Assistance
   permalink: /program/16.596
   program_type: assistance_listing

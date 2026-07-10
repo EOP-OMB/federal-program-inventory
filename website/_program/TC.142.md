@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/GWO_N3
-headline_amount: 86810000000.0
+headline_amount: 106340000000.0
 improper_payments:
 - agency: TREASURY
   end_date: 12-2023

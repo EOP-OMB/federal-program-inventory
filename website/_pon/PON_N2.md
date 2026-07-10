@@ -12,18 +12,18 @@ permalink: /pon/PON_N2
 title: Maintain Essential Public Utility Operations During Emergencies
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 1615353.0
+  expenditure_amount: 1345159.72
   name: Coronavirus Capital Projects Fund
   permalink: /program/21.029
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 13000000.0
+  expenditure_amount: 17327369.0
   name: Drinking Water System Infrastructure Resilience and Sustainability Program
     – SDWA 1459A(l)
   permalink: /program/66.448
   program_type: assistance_listing
 - agency: Department of Education
-  expenditure_amount: 0.0
+  expenditure_amount: -4721826.76
   name: Education Stabilization Fund
   permalink: /program/84.425
   program_type: assistance_listing
@@ -34,18 +34,18 @@ where_used:
   permalink: /program/20.323
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 11750000.0
+  expenditure_amount: 0.0
   name: Midsize and Large Drinking Water System Infrastructure Resilience and Sustainability
     Program – Safe Drinking Water Act 1459F
   permalink: /program/66.488
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 225511000.0
+  expenditure_amount: 378375126.0
   name: Public Transportation Emergency Relief Program
   permalink: /program/20.527
   program_type: assistance_listing
 - agency: Environmental Protection Agency
-  expenditure_amount: 14000000.0
+  expenditure_amount: 0.0
   name: Response to Emergency Situations Affecting Public Water Systems (SDWA 1442(b))
   permalink: /program/66.489
   program_type: assistance_listing

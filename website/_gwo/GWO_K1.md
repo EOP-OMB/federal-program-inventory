@@ -8,12 +8,12 @@ permalink: /gwo/GWO_K1
 title: Improve Food Supply Chains
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 2000000.0
   name: Chesapeake Bay Blue Catfish Purchasing
   permalink: /program/10.196
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: 1767949.0
   name: Commodity Credit Corporation (CCC) Funding to Alleviate Emergency Supply Chain
     Disruption in the Commodity Supplemental Food Program (CSFP)
   permalink: /program/10.194
@@ -25,12 +25,12 @@ where_used:
   permalink: /program/10.193
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 20000000.0
+  expenditure_amount: -1197599.62
   name: Farm to School Grant Program
   permalink: /program/10.575
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 0.0
+  expenditure_amount: -743946.46
   name: Farm to School State Formula Grant
   permalink: /program/10.645
   program_type: assistance_listing
@@ -40,7 +40,7 @@ where_used:
   permalink: /program/10.380
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 7689341.0
+  expenditure_amount: 3194250.86
   name: Food and Agriculture Defense Initiative (FADI)
   permalink: /program/10.304
   program_type: assistance_listing
@@ -50,7 +50,7 @@ where_used:
   permalink: /program/10.384
   program_type: assistance_listing
 - agency: Department of State
-  expenditure_amount: 65719000.0
+  expenditure_amount: 63236066.66
   name: International Fisheries Commissions
   permalink: /program/19.087
   program_type: assistance_listing
@@ -85,7 +85,7 @@ where_used:
   permalink: /program/10.190
   program_type: assistance_listing
 - agency: Department of Agriculture
-  expenditure_amount: 300000.0
+  expenditure_amount: 315000.0
   name: Rural Development Cooperative Agreement Program
   permalink: /program/10.890
   program_type: assistance_listing

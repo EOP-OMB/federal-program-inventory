@@ -26,6 +26,10 @@ If the request is not one of these two types, ask for clarification and do nothi
 - Keep edits concise and accurate.
 - Prefer minimal diffs.
 - Ignore markdown files used by Jekyll (`website/**/*.md`) when deciding what to document.
+- Also consider these markdown files:
+  - `data_processing/ERD.md`
+  - `data_processing/DATA_DICTIONARY.md`
+  - `RUNBOOK.md`
 
 ## `add` request
 

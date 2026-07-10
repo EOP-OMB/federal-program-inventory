@@ -11,22 +11,22 @@ permalink: /pon/PON_11E
 title: Increase Energy Manufacturing
 where_used:
 - agency: Department of the Treasury
-  expenditure_amount: 14580000000.0
+  expenditure_amount: 10270000000.0
   name: Advanced manufacturing production credit
   permalink: /program/TC.039
   program_type: tax_expenditure
 - agency: Department of the Treasury
-  expenditure_amount: 12520000000.0
+  expenditure_amount: 17220000000.0
   name: Energy investment credit
   permalink: /program/TC.023
   program_type: tax_expenditure
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 377694893.09
   name: Renewable Energy Research and Development
   permalink: /program/81.087
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 1321200000.0
+  expenditure_amount: 0.0
   name: The Charging and Fueling Infrastructure (CFI) Grant Program
   permalink: /program/20.220
   program_type: assistance_listing

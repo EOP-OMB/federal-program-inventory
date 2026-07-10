@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Expand Trade and Market Access
   permalink: /gwo/GWO_B3
-headline_amount: 11200000000.0
+headline_amount: 16420000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Provide Healthcare Coverage
   permalink: /gwo/GWO_L15
-headline_amount: 90190000000.0
+headline_amount: 104880000000.0
 improper_payments:
 - agency: TREASURY
   end_date: 12-2023

@@ -11,12 +11,12 @@ permalink: /pon/PON_4ND
 title: Strengthen Nuclear Security Infrastructure
 where_used:
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 6535671.43
   name: Global Material Security
   permalink: /program/81.210
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 2818421.36
   name: Nonproliferation and Arms Control
   permalink: /program/81.505
   program_type: assistance_listing

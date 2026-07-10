@@ -12,7 +12,7 @@ permalink: /pon/PON_6L
 title: Reduce Caregiver Burden
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 3949099.0
+  expenditure_amount: 0.0
   name: 'Addressing Dementia in Tribal and Urban Indian Communities: Enhancing Sustainable
     Models of Care'
   permalink: /program/93.00J

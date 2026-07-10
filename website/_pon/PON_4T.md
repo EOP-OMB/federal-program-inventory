@@ -10,27 +10,27 @@ permalink: /pon/PON_4T
 title: Increase Waterway Safety
 where_used:
 - agency: Department of Homeland Security
-  expenditure_amount: 1500000.0
+  expenditure_amount: 0.0
   name: Boating Safety Data Collection and Analysis Grant Program
   permalink: /program/97.136
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 0.0
+  expenditure_amount: 124657596.65
   name: Boating Safety Financial Assistance
   permalink: /program/97.012
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 15000000.0
+  expenditure_amount: 0.0
   name: Hydrographic Services
   permalink: /program/11.402
   program_type: assistance_listing
 - agency: Department of Transportation
-  expenditure_amount: 7500000.0
+  expenditure_amount: 500000.0
   name: Maritime Environmental and Technical Assistance
   permalink: /program/20.826
   program_type: assistance_listing
 - agency: Department of Homeland Security
-  expenditure_amount: 6797048.0
+  expenditure_amount: 6195859.0
   name: National Nonprofit Organization Recreational Boating Safety Grant Program
   permalink: /program/97.135
   program_type: assistance_listing

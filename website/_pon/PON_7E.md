@@ -9,12 +9,12 @@ permalink: /pon/PON_7E
 title: Improve Supply of Power
 where_used:
 - agency: Department of Agriculture
-  expenditure_amount: 8000000.0
+  expenditure_amount: 18473637.0
   name: Assistance to High Energy Cost Communities
   permalink: /program/10.859
   program_type: assistance_listing
 - agency: Department of Energy
-  expenditure_amount: 0.0
+  expenditure_amount: 122031436.0
   name: Grid Deployment Office - Other Direct Funding Mechanisms/Identified Transactions
   permalink: /program/81.300
   program_type: assistance_listing

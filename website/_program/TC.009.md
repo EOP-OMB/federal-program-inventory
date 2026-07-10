@@ -14,7 +14,7 @@ grants_url: null
 gwo:
   gwo: Increase Energy Reliability and Stability (Infrastructure)
   permalink: /gwo/GWO_I4
-headline_amount: 80000000.0
+headline_amount: 400000000.0
 improper_payments:
 - agency: TREASURY
   end_date: ''

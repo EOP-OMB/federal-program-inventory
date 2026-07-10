@@ -12,32 +12,32 @@ permalink: /pon/PON_2S
 title: Create New Technical or Operational Standards
 where_used:
 - agency: Department of Commerce
-  expenditure_amount: 36640800.0
+  expenditure_amount: 24186171.97
   name: Arrangements for Interdisciplinary Research Infrastructure
   permalink: /program/11.619
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: Disaster-Resilient Buildings, Infrastructure, and Communities
   permalink: /program/11.069
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 1000000.0
+  expenditure_amount: 0.0
   name: High Performance Building Systems
   permalink: /program/11.070
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 250000.0
+  expenditure_amount: 0.0
   name: Measurement Science and Standards Engagement
   permalink: /program/11.055
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 0.0
+  expenditure_amount: 38325015.01
   name: Measurement and Engineering Research and Standards
   permalink: /program/11.609
   program_type: assistance_listing
 - agency: Department of Commerce
-  expenditure_amount: 2999861.0
+  expenditure_amount: 0.0
   name: Standardization Center of Excellence
   permalink: /program/11.056
   program_type: assistance_listing

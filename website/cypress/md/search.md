@@ -512,7 +512,7 @@ cfo_agencies:
 - title: Nuclear Regulatory Commission
 - title: Small Business Administration
 - title: Social Security Administration
-fiscal_year: '2026'
+fiscal_year: '2025'
 gwo_options:
 - title: Accelerate Development of Commercial Products and Technologies
 - title: Advance Agriculture Research

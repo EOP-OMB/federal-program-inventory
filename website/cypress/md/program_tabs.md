@@ -64,7 +64,17 @@ pons:
   pon: Increase Affordable Health Coverage
 popular_name: (Medicaid; Title XIX)
 program_type: assistance_listing
-results: []
+results:
+- description: In fiscal year 2016, the number of enrollees is estimated to be 56,646,000.
+    The source for the number of Medicare beneficiaries is the FY 2017 MSR. In fiscal
+    year 2016, the number of enrollees is estimated to be 56,482,000. The source for
+    the number of Medicare beneficiaries is the FY 2018 MSR.
+  year: '2016'
+- description: In fiscal year 2017, the number of enrollees is estimated to be 58,066,000.
+    The source for the number of Medicare beneficiaries is the FY 2019 MSR.
+  year: '2017'
+- description: N/A
+  year: '2018'
 rules_regulations: ''
 sam_url: https://sam.gov/fal/362f55f897674bb4b2fd4065ec74c6a3/view
 sub-agency: Centers for Medicare and Medicaid Services

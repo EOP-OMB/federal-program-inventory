@@ -11,7 +11,7 @@ permalink: /pon/PON_48
 title: Increase Early Childhood Learning Skills
 where_used:
 - agency: Department of Health and Human Services
-  expenditure_amount: 1250000.0
+  expenditure_amount: 0.0
   name: Maternal, Infant, and Early Childhood Home Visiting Research and Evaluation
     Grants
   permalink: /program/93.320
