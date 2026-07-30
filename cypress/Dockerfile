@@ -6,7 +6,7 @@ WORKDIR /app
 # Install browser
 # to get candidate versions:
 #   docker run --rm cypress/factory:<image version from above> bash -lc "apt-get update >/dev/null && apt-cache policy chromium"
-RUN apt update && apt install -y chromium=147.0.7727.137-1~deb13u1 chromium-common=147.0.7727.137-1~deb13u1
+RUN apt update && apt install -y chromium chromium-common
 
 # Install Node.js dependencies
 COPY package.json package-lock.json* ./

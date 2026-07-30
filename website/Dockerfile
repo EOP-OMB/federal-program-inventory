@@ -21,14 +21,22 @@ ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 WORKDIR /app
 COPY ./Gemfile /app/Gemfile
 COPY ./package.json /app/package.json
+COPY ./requirements.txt /app/requirements.txt
+COPY ./generate_csv.py /app/generate_csv.py
+COPY ./transformed_data.db /app/transformed_data.db
 RUN apt-get clean && \
     apt-get update && \
     apt-get install -y curl git && \
     curl -k -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && \
     . "$NVM_DIR/nvm.sh" && nvm use v${NODE_VERSION} && \
     . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION} && \
-    npm install --legacy-peer-deps chart.js && \
-    bundle install
+    npm install --legacy-peer-deps chart.js
+
+RUN apt-get install -y python3 python3-pip python3-venv && \
+    python3 -m venv /app/.venv && \
+    /app/.venv/bin/pip install --no-cache-dir -r /app/requirements.txt && \
+    /app/.venv/bin/python /app/generate_csv.py
+RUN bundle install
 
 COPY ./prepare-test-files-website.sh /prepare-test-files-website.sh
 COPY ./cypress /cypress
@@ -75,4 +83,5 @@ RUN if [ "${TEST_ENV}" = "true" ] || [ "$USE_LOCAL_API" = "true" ]; then \
     fi
 
 COPY --from=0 /app/_site /usr/share/nginx/html
+COPY --from=0 /app/_dynamic /usr/share/nginx/html/assets/files
 EXPOSE 8080

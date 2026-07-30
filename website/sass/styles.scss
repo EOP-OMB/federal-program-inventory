@@ -541,11 +541,228 @@ th.gridjs-th {
   overflow-wrap: anywhere;
 }
 
+//Taxonomy page layout
+.taxonomy-layout {
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 64em) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
+.taxonomy-nav-column,
+.taxonomy-content-column {
+  padding: 2rem;
+}
+
+.taxonomy-filters-section,
+.taxonomy-gwo-section {
+  margin-top: 2rem;
+}
+
+.taxonomy-update-button {
+  white-space: nowrap;
+}
+
+.taxonomy-filter-panels {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+
+  @media (min-width: 64em) {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+.taxonomy-filter-action-column {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-self: start;
+}
+
+.taxonomy-gwo-table th:first-child,
+.taxonomy-gwo-table td:first-child {
+  width: 42%;
+}
+
+.taxonomy-gwo-table th.taxonomy-sortable-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.taxonomy-gwo-table th.taxonomy-sortable-header {
+  background-color: $site-bg-color !important;
+  background-image: none !important;
+}
+
+.taxonomy-gwo-table th.taxonomy-sortable-header .header-text {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.taxonomy-gwo-table th.taxonomy-sortable-header .header-text::after {
+  content: "▲";
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.taxonomy-gwo-table th.taxonomy-sortable-header[aria-sort="descending"] .header-text::after {
+  content: "▼";
+}
+
+.taxonomy-filter-divider {
+  border-top: 1px solid #dfe1e2;
+}
+
+.taxonomy-filter-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+.taxonomy-filter-toggle-label {
+  color: $site-font-color;
+  font-size: 1.06rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.taxonomy-filter-toggle-icon-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 3rem;
+}
+
+.taxonomy-filter-toggle .usa-icon {
+  transition: transform 0.2s;
+}
+
+.taxonomy-filter-toggle[aria-expanded="true"] .usa-icon {
+  transform: rotate(180deg);
+}
+
+.taxonomy-filter-submenu {
+  max-height: 20rem;
+  margin-top: 0.25rem;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.taxonomy-filter-search-wrap {
+  padding-top: 0.5rem;
+}
+
+.taxonomy-filter-search-wrap #taxonomy-filter-search {
+  background-color: #e5e5e5 !important;
+}
+
+.taxonomy-filter-empty-message {
+  padding: 1rem 1rem 0rem;
+  font-size: 0.875rem;
+}
+
+.taxonomy-filter-fieldset {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.taxonomy-filter-option-row {
+  align-items: flex-start;
+  display: flex;
+}
+
+.taxonomy-filter-option-spacer {
+  padding-left: 0.5rem;
+}
+
+.taxonomy-filter-children {
+  margin-left: 2.5rem;
+}
+
+.taxonomy-children-toggle {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  height: 3rem;
+}
+
+.taxonomy-filter-checkbox {
+  height: 1rem;
+  width: 1rem;
+}
+
+.taxonomy-filter-option-label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  padding-top: 0;
+  width: auto;
+}
+
+.taxonomy-filter-column .usa-sidenav,
+.taxonomy-filter-column .usa-checkbox {
+  background-color: $dark-cream-underlay;
+  color: $site-font-color !important;
+}
+
+.taxonomy-filter-column .usa-sidenav__item {
+  position: relative;
+}
+
+.taxonomy-filter-column .taxonomy-filter-submenu {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 20;
+}
+
+.taxonomy-filter-column .taxonomy-filter-submenu:not([hidden]) {
+  background-color: #e5e5e5;
+}
+
+.taxonomy-filter-column .taxonomy-filter-submenu:not([hidden]) .usa-checkbox {
+  background-color: transparent;
+}
+
+.taxonomy-pagination-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.taxonomy-hidden-source {
+  display: none;
+}
+
 .about-page {
   color: $site-font-color !important;
-  a {
+  a:not(.usa-pagination__link):not(.usa-pagination__button) {
     color: $site-font-color !important;
   }
+}
+
+.about-page .taxonomy-gwo-table a.usa-link:visited {
+  color: #724a1e !important;
 }
 
 #about-nav {
@@ -1045,445 +1262,7 @@ th.gridjs-th {
   content: "";
 }
 
-/* ===== RESPONSIVE STYLES FOR MOBILE & TABLET ===== */
-
-/* Tablet Breakpoint (max-width: 1024px) */
-@media (max-width: 64em) {
-  /* Tab buttons - compact on tablet */
-  button[role="tab"] {
-    padding: 0.75rem 0.75rem;
-    font-size: 0.9rem;
-  }
-
-  /* Main layout: stack sidebar under main content */
-  .grid-col-9 {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .grid-col-3 {
-    width: 100%;
-    max-width: 100%;
-    border-left: none;
-    border-top: 1px solid #ddd8d1;
-    padding-left: 0;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  /* Charts responsive */
-  #chart,
-  #obligationChart,
-  #spending-chart,
-  canvas {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* Reduce font sizes on tablet */
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  /* Reduce padding and margins */
-  .padding-left-3 {
-    padding-left: 1rem;
-  }
-
-  .margin-bottom-205 {
-    margin-bottom: 1.5rem;
-  }
-
-  .grid-gap {
-    gap: 1rem;
-  }
-
-  /* Tables responsive */
-  .usa-table {
-    font-size: 0.875rem;
-  }
-
-  /* Improper Payment Card adjustments */
-  .improper-payment-card-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .payment-rate-box {
-    min-width: auto;
-    width: 100%;
-  }
-
-  /* Search results: keep title and amount on one row on tablet and mobile */
-  #program-list .program-search-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    column-gap: 0.75rem;
-  }
-
-  #program-list .program-search-container > .tablet\:grid-col-8 {
-    grid-column: 1;
-    min-width: 0;
-  }
-
-  #program-list .program-search-container > .tablet\:grid-col-4 {
-    grid-column: 2;
-    justify-self: end;
-    align-self: start;
-  }
-
-  #program-list .program-search-container > .grid-row {
-    grid-column: 1 / -1;
-  }
-
-  #program-list .program-title {
-    display: block;
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }
-
-  #program-list .program-obligations {
-    white-space: nowrap;
-  }
-}
-
-/* Mobile Breakpoint (max-width: 768px) */
-@media (max-width: 48em) {
-  /* Search controls: add separation between filter reset and sorting on mobile */
-  #clear-filters-button {
-    margin-bottom: 2rem;
-  }
-
-  /* Search metrics: show second program count on a new line in mobile view */
-  #total-programs #global-count {
-    display: block;
-  }
-
-  /* Tooltip responsiveness for mobile */
-  .spending-chart-tooltip, .outlays-chart-tooltip {
-    font-size: 10px;
-    padding: 6px 10px;
-    max-width: 200px;
-  }
-
-  /* Purpose and Spending sections stack vertically */
-  #overview-panel .grid-col-12.grid-row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Purpose column: full width on mobile */
-  #overview-panel .grid-col-4 {
-    width: 100%;
-    max-width: 100%;
-    border-right: none;
-    border-bottom: 1px dotted #000000;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Spending column: full width on mobile */
-  #overview-panel .grid-col-fill {
-    width: 100%;
-    max-width: 100%;
-    border-top: none;
-  }
-
-  /* Remove border-top from main content column on mobile */
-  .grid-col-9.border-top {
-    border-top: none;
-  }
-
-  /* Overview header: adjust width on mobile */
-  #overview-panel .grid-col-10 {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* Mobile-specific sidebar adjustments */
-  .grid-col-3 {
-    padding-top: 1rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  /* Sidebar sections spacing on mobile */
-  .grid-col-3 > div {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* Tab styling for mobile */
-  button[role="tab"] {
-    padding: 0.75rem 1rem;
-    font-size: 0.75rem;
-    width: 100%;
-    text-align: left;
-  }
-
-  nav[role="tablist"] {
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-  }
-
-  nav[role="tablist"] .display-flex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /* Chart and Table layout */
-  .display-flex.margin-bottom-4 {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  /* Spending chart legend and chart */
-  #spending-chart-card {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-  }
-
-  div:has(#spending-chart) {
-    width: 100%;
-  }
-
-  /* Charts: full width */
-  #chart,
-  #obligationChart,
-  #spending-chart,
-  canvas {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Significantly reduce heading sizes on mobile */
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  h4 {
-    font-size: 0.9rem;
-  }
-
-  /* Reduce padding aggressively on mobile */
-  .padding-left-3 {
-    padding-left: 0.5rem;
-  }
-
-  .padding-right-3 {
-    padding-right: 0.5rem;
-  }
-
-  .padding-2 {
-    padding: 0.75rem;
-  }
-
-  .padding-bottom-40 {
-    padding-bottom: 1.5rem;
-  }
-
-  .padding-bottom-205 {
-    padding-bottom: 1rem;
-  }
-
-  .margin-bottom-2 {
-    margin-bottom: 0.75rem;
-  }
-
-  .margin-bottom-3 {
-    margin-bottom: 1rem;
-  }
-
-  .margin-bottom-4 {
-    margin-bottom: 1.25rem;
-  }
-
-  .grid-gap {
-    gap: 0.75rem;
-  }
-
-  /* Table responsiveness */
-  .usa-table {
-    font-size: 0.8rem !important;
-    width: 100%;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-    display: table;
-  }
-
-  .usa-table thead {
-    display: table-header-group;
-  }
-
-  .usa-table tbody {
-    display: table-row-group;
-  }
-
-  .usa-table tr {
-    display: table-row;
-  }
-
-  .usa-table th,
-  .usa-table td {
-    display: table-cell;
-    text-align: left;
-    padding: 0.5rem;
-    white-space: nowrap;
-  }
-
-  .usa-table th {
-    font-weight: bold;
-    background-color: #f5f5f5;
-  }
-
-  /* Hide non-essential "Related Programs" column on mobile */
-  #improper-payments-table thead tr th:nth-child(2),
-  #improper-payments-table tbody tr td:nth-child(2) {
-    display: none;
-  }
-
-  /* Improper Payment Card: add padding on mobile */
-  .improper-payment-card-container {
-    padding: 1rem;
-  }
-
-  .payment-rate-box {
-    min-width: auto;
-    width: 100%;
-    padding: 0.75rem 1rem;
-  }
-
-  .spending-card-header {
-    font-size: 0.8rem;
-  }
-
-  .spending-card-item {
-    margin-bottom: 0.5rem;
-  }
-
-  .spending-card-label {
-    font-size: 0.7rem;
-  }
-
-  /* Ensure no horizontal scrolling for main content */
-  .grid-container {
-    overflow-x: hidden;
-  }
-
-  /* Increase chart x-axis font size for mobile readability */
-  #chart .x-axis text {
-    font-size: 26px;
-  }
-
-  /* Tab panel spacing */
-  .tab-panel {
-    padding: 0.5rem 0;
-  }
-
-  /* List sections responsive */
-  .list-section {
-    margin-bottom: 1rem;
-  }
-
-  /* Footer mobile spacing (_footer.html) */
-  .usa-identifier__nav-item {
-    margin-bottom: 1.5rem;
-  }
-
-  .home-link {
-    padding-bottom: 0.1rem;
-  }
-
-  .usa-logo {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  footer .usa-logo {
-    margin-left: 0;
-  }
-
-  .usa-identifier__section {
-    padding-top: 2rem;
-    padding-bottom: 0rem;
-  }
-
-  .usa-identifier__nav-link {
-    margin-top: 1.5rem;
-  }
-
-  .footer-link {
-    padding-bottom:0.1rem;
-  }
-}
-
-/* Extra Small mobile breakpoint (max-width: 480px) */
-@media (max-width: 30em) {
-  /* Ultra small screens: minimal padding */
-  .padding-left-3,
-  .padding-right-3 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
-  .padding-2 {
-    padding: 0.5rem;
-  }
-
-  /* Heading sizes for extra small screens */
-  h1 {
-    font-size: 1.25rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
-  /* Further reduce margins */
-  .margin-bottom-2,
-  .margin-bottom-3,
-  .margin-bottom-4 {
-    margin-bottom: 0.5rem;
-  }
-
-  /* Grid gaps for smallest screens */
-  .grid-gap {
-    gap: 0.5rem;
-  }
-}
+@import "responsive";
 
 .bars-container {
   overflow: visible;

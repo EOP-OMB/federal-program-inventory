@@ -578,7 +578,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         )
 
     db_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "transformed", "transformed_data.db")
+        os.path.join(os.path.dirname(__file__), "..", "..", "website", "transformed_data.db")
     )
     db_obligations_by_year = load_db_obligations_by_year(db_path, args.aln, args.year)
 
