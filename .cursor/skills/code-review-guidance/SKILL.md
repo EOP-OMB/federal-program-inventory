@@ -34,7 +34,7 @@ Avoid low-value nits and speculative comments unless they are likely to prevent 
 
 Exclude these files from analysis and recommendations:
 
-- `data_processing/transformed/transformed_data.db`
+- `website/transformed_data.db`
 - Jekyll markdown files under `website/**/*.md`
 
 ## No-issues behavior

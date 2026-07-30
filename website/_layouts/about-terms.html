@@ -45,7 +45,83 @@ permalink: /about/terms
         certain data is presented on the FPI website in the way it appears.
       </p>
     </div>
-    <h2 id="explanation">Explanation of terms and concepts</h2>
+    <h2 id="download-table">Data Download Table</h2>
+    <p>
+      The following datasets are available for download to reconstruct the information presented
+      on the FPI website.
+    </p>
+
+    <div id="about-download-table-container">
+      <table class="usa-table usa-table--stacked">
+        <thead>
+          <tr>
+            <th scope="col">Dataset</th>
+            <th scope="col">Update Year</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody class="text-base-dark">
+          <tr>
+            <td data-label="Dataset"><a href="/assets/files/fpi_unified_table.zip" download="fpi_unified_table.zip">FPI Unified Table</a></td>
+            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
+            <td data-label="Description">
+              <p>This dataset includes all federal assistance listings reported SAM.gov, select acquisition programs and interest on the public debt
+              from USASpending.gov, and tax expenditures from Treasury.gov.</p>
+
+              <p>For federal assistance listings, the values for current year obligations are SAM.gov estimates. The values for all outlays and
+              historical obligations are pulled from USASpending.gov. For acquisition programs, the values for obligations and outlays are
+              pulled from USASpending.gov. For interest on the public debt, the values for outlays are pulled from USASpending.gov. For tax
+              expenditures, outlays and revenue losses are pulled from Treasury.gov.</p>
+
+              <p>Likewise, each program is mapped to a Government-wide Objective (GWO).</p>
+
+              <p>Fields include Program ID, Program Name, Popular Name, Program Description, Program Type, Top Agency Name, Subagency
+              Name, GWO ID, GWO Name, Fiscal Year, Outlay, Obligation, Expenditure, Forgone Revenue, SAM Estimated Obligation, and
+              USASpending Obligation.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Dataset"><a href="/assets/files/program_to_pon.csv" download="program_to_pon.csv">FPI PON Assignment</a></td>
+            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
+            <td data-label="Description">
+              <p>This dataset includes the program outcome (PON) assignment of each program in the FPI. A program may be assigned up to three
+              program outcomes. Users may join this table with the FPI Unified Table using the Program ID field.</p>
+
+              <p>Fields include Program ID and PON ID.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Dataset"><a href="/assets/files/gwo.csv" download="gwo.csv">GWO Taxonomy</a></td>
+            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
+            <td data-label="Description">
+              <p>This table includes the {{ page.gwo_count }} Government-wide Objectives (GWOs) that make up the <a href="/about/taxonomy">FPI Taxonomy</a>.
+              Some GWOs may have zero program assignment.</p>
+
+              <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, GWO ID, Govt-wide Objective (GWO), and GWO
+              Definition.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Dataset"><a href="/assets/files/pon.csv" download="pon.csv">PON Taxonomy</a></td>
+            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
+            <td data-label="Description">
+              <p>This table includes the {{ page.pon_count }} Program Outcomes (PONs) that make up the FPI Taxonomy. Some PONs may have
+              zero program assignment.</p>
+
+              <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, PON ID, Program Outcome (PON), and PON
+              Definition.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Dataset"><a href="https://paymentaccuracy.gov" target="_blank">Payment Accuracy</a></td>
+            <td data-label="Update Year">{{ site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE }}</td>
+            <td data-label="Description">
+              <p>The dataset for improper payment and unknown payment rate is available on Paymentacurracy.gov.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div class="key-term padding-2">
       <h3>Assistance Listing</h3>
@@ -67,6 +143,7 @@ permalink: /about/terms
       </div>
     </div>
 
+    <h2 id="explanation">Explanation of terms and concepts</h2>
     <div class="key-term padding-2 margin-top-2">
       <h3>Assistance Type</h3>
       <div class="usa-prose">

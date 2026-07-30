@@ -15,7 +15,7 @@ from typing import List, Dict, Any
 
 # Constants
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_FILE_PATH = os.path.join("transformed", "transformed_data.db")
+DB_FILE_PATH = os.path.join("..", "website", "transformed_data.db")
 MARKDOWN_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "website", "_program")
 full_path = os.path.join(CURRENT_DIR, DB_FILE_PATH)
 FISCAL_YEARS = [
@@ -795,11 +795,31 @@ def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, prog
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8') as file:
+    with open(os.path.join(output_path, 'about-fpi.md'), 'w', encoding='utf-8') as file:
         file.write('---\n')
         yaml.dump(page, file, allow_unicode=True)
         file.write('---\n')
-    print("Successfully generated about page")
+
+    cursor.execute("SELECT COUNT(*) AS ct FROM gwo")
+    gwo_count = cursor.fetchone()['ct']
+
+    cursor.execute("SELECT COUNT(*) AS ct FROM pon")
+    pon_count = cursor.fetchone()['ct']
+
+    page = {
+        'title': 'FPI Data, Terms & Concepts',
+        'layout': 'about-terms',
+        'permalink': '/about/terms',
+        'gwo_count': gwo_count,
+        'pon_count': pon_count,
+    }
+
+    with open(os.path.join(output_path, 'about-terms.md'), 'w', encoding='utf-8') as file:
+        file.write('---\n')
+        yaml.dump(page, file, allow_unicode=True)
+        file.write('---\n')
+
+    print("Successfully generated about pages")
 
 def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for pons with related programs."""
@@ -1339,6 +1359,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
                 })
 
     # Get GWO (Government-wide Objectives) options
+    # Only include GWOs with program assignments (used by search page filter)
     cursor.execute("""
         SELECT DISTINCT gwo.gwo as title
         FROM gwo
@@ -1458,6 +1479,49 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         yaml.dump(search_page, file, allow_unicode=True)
         file.write('---\n')
     print("Successfully generated search page")
+
+def generate_taxonomy_page(cursor: sqlite3.Cursor, output_path: str, shared_data: Dict[str, Any]):
+    """Generate the taxonomy page with all GWOs from the crosswalk,
+    but only with permalinks for those with program assignments."""
+    # Get GWOs that have program assignments
+    cursor.execute("""
+        SELECT DISTINCT gwo_id
+        FROM program_to_gwo
+    """)
+    assigned_gwo_ids = {row['gwo_id'] for row in cursor.fetchall()}
+
+    # Get all GWOs
+    cursor.execute("""
+        SELECT gwo.id, gwo.gwo as title, gwo.gwo_definition as definition
+        FROM gwo
+        ORDER BY gwo.gwo
+    """)
+    all_gwo_options = []
+    for row in cursor.fetchall():
+        gwo_entry = {
+            'title': row['title'],
+            'definition': row['definition']
+        }
+        # Only include permalinks for GWOs with program assignments
+        if row['id'] in assigned_gwo_ids:
+            url_friendly_id = row['id'].replace('#', '_').replace('.', '_')
+            gwo_entry['permalink'] = f"/gwo/{url_friendly_id}"
+        all_gwo_options.append(gwo_entry)
+
+    taxonomy_page = {
+        'layout': 'taxonomy',
+        'title': 'FPI Taxonomy',
+        'permalink': '/about/taxonomy',
+        'categories': shared_data['categories'],
+        'gwo_options': all_gwo_options,
+    }
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as file:
+        file.write('---\n')
+        yaml.dump(taxonomy_page, file, allow_unicode=True)
+        file.write('---\n')
+    print("Successfully generated taxonomy page")
 
 def get_government_wide_spending_total(cursor, fiscal_year):
     cursor.execute("""
@@ -1883,6 +1947,9 @@ try:
     search_path = os.path.join('../website', 'pages', 'search.md')
     generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
+    taxonomy_path = os.path.join('../website', 'pages', 'taxonomy.md')
+    generate_taxonomy_page(cursor, taxonomy_path, shared_data)
+
     category_path = os.path.join('../website', 'pages', 'category.md')
     generate_category_page(cursor, programs_data, category_path,
                            constants.LAST_COMPLETED_FISCAL_YEAR)
@@ -1906,7 +1973,7 @@ try:
     pon_dir = os.path.join('../website', '_pon')
     generate_pon_markdown_files(cursor, pon_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    about_path = os.path.join('../website', 'pages', 'about-fpi.md')
+    about_path = os.path.join('../website', 'pages')
     generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
 except sqlite3.Error as e:

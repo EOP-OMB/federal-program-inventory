@@ -12,7 +12,7 @@ To run the website locally (available on port 4000):
 3. Run `docker run -p 4000:8080 --name fpiweb fpi-website`
 
 ## Data extraction
-To learn more about the data that powers the FPI website and how to update it, navigate to the [data_extraction](data_extract/README.md) sub-directory.
+To learn more about the data that powers the FPI website and how to update it, navigate to the [data_processing](data_processing/README.md) sub-directory.
 
 ## Deploying the website
 
