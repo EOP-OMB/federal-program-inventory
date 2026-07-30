@@ -19,7 +19,7 @@ Before reviewing, read and follow:
 - Never stage files (`git add`) and never create commits.
 - Review code differences from `dev` using `git diff dev`.
 - Ignore these paths in review and changes:
-  - `data_processing/transformed/transformed_data.db`
+  - `website/transformed_data.db`
   - Jekyll markdown files under `website/**/*.md`
 - Follow `.cursor/skills/code-review-guidance/SKILL.md` for review priorities and issue consolidation.
 - Apply only high-confidence, actionable improvements.
@@ -37,7 +37,7 @@ Before any review analysis:
 
 1. Confirm repository state with `git status --short`.
 2. Run diff review scope:
-   - `git diff dev -- . ':(exclude)data_processing/transformed/transformed_data.db' ':(exclude)website/**/*.md'`
+   - `git diff dev -- . ':(exclude)website/transformed_data.db' ':(exclude)website/**/*.md'`
 3. Analyze findings and identify high-impact improvements.
 4. Apply code changes directly to address the selected improvements.
 5. Re-check resulting diff to ensure changes are focused and relevant.

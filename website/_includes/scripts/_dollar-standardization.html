@@ -1,5 +1,73 @@
 <script>
 /**
+ * Formats obligations values using compact T/B/M/K suffixes.
+ * @param {number} amount
+ * @returns {string}
+ */
+function formatObligations(amount) {
+  if (amount === null || amount === undefined || Number.isNaN(Number(amount))) {
+    return "$0";
+  }
+
+  const value = Number(amount);
+  const absValue = Math.abs(value);
+  const sign = value < 0 ? "-$" : "$";
+
+  const trillion = 1000000000000;
+  const billion = 1000000000;
+  const million = 1000000;
+  const thousand = 1000;
+
+  if (absValue === 0) {
+    return "$0";
+  }
+  if (absValue >= trillion) {
+    return `${sign}${(absValue / trillion).toFixed(2)}T`;
+  }
+  if (absValue >= billion) {
+    return `${sign}${(absValue / billion).toFixed(2)}B`;
+  }
+  if (absValue >= million) {
+    return `${sign}${(absValue / million).toFixed(2)}M`;
+  }
+  if (absValue >= thousand) {
+    return `${sign}${(absValue / thousand).toFixed(2)}K`;
+  }
+
+  return `${sign}${absValue.toFixed(2)}`;
+}
+
+/**
+ * Formats dollar values as USD currency with no decimals.
+ * @param {number} amount
+ * @returns {string}
+ */
+function formatCurrency(amount) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(amount);
+}
+
+/**
+ * Formats dollar values as compact USD currency (e.g. $1.2M).
+ * @param {number} amount
+ * @param {number} maximumFractionDigits
+ * @returns {string}
+ */
+function formatCurrencyCompactly(amount, maximumFractionDigits = 1) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    notation: "compact",
+    minimumFractionDigits: 0,
+    maximumFractionDigits,
+  }).format(amount);
+}
+
+/**
  * Standardizes dollar amounts for display with K/M/B suffixes
  * Max 4 significant figures, prioritizes fewer digits over more precise units
  * @param {number} amount - The dollar amount to format

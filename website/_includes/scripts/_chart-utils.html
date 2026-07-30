@@ -186,13 +186,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
         .style('z-index', '1000')
         .style('max-width', '200px');
       
-      const formattedValue = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: 'compact',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 1
-      }).format(d.value);
+      const formattedValue = formatCurrencyCompactly(d.value, 1);
 
       // Add percent-of-total info to the tooltip content.
       const tooltipName = d.data.name;
@@ -383,13 +377,7 @@ function updateSummaryCard(outlaysData) {
 
     // 2. Update expenditure amount with formatting
     const lastOutlay = parseFloat(lastYear.outlay) || 0;
-    const formattedAmount = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      notation: 'compact',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 2
-    }).format(lastOutlay);
+    const formattedAmount = formatCurrencyCompactly(lastOutlay, 2);
     document.getElementById('expenditure-amount').textContent = formattedAmount;
 
     // 3. Calculate and display percentage change

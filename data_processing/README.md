@@ -25,7 +25,7 @@ ETL_EXTRACT_SOURCE_DIRECTORY=omb-fpi/data_processing/source/
 ETL_EXTRACT_EXTRACTED_DIRECTORY=omb-fpi/data_processing/extracted/
 ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
 ETL_TRANSFORM_TEMP_DB_FILE_PATH=temp_data.db
-ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY=/Users/user/source/omb-fpi/data_processing/transformed/
+ETL_TRANSFORM_TRANSFORMED_FILES_DIRECTORY=/Users/user/source/omb-fpi/website/
 ETL_TRANSFORM_TRANSFORMED_DB_FILE_PATH=transformed_data.db
 ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY="/Volumes/external/omb-fpi/award-archive-download/"
 ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY=data_processing/extracted/
@@ -75,7 +75,7 @@ The FPI uses USASpending.gov's monthly Award Data Archives that are [available f
 
 To load this data iniatially, you should download the "Financial Assistance" data, for current year and each of the six years prior, via the link above. This should result in seven archives. The names of these archives should generally look like `FY2024_All_Contracts_Full_20250406.zip`. Note the `Full` in this file name--for the initial load, you should download the `Full` archives for each year.
 
-Once the files have been downloaded, recursively extract the archives and place all of the resulting CSV files into a single directory. This directory can then be used to run `load_usaspending_initial_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py). These functions will load the CSVs into a SQLite DB, query that DB to extract summary tables, and then insert those summary tables into the [transformed/transformed_data.db](transformed/transformed_data.db) SQLite DB.
+Once the files have been downloaded, recursively extract the archives and place all of the resulting CSV files into a single directory. This directory can then be used to run `load_usaspending_initial_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py). These functions will load the CSVs into a SQLite DB, query that DB to extract summary tables, and then insert those summary tables into the [website/transformed_data.db](website/transformed_data.db) SQLite DB.
 
 USASpending.gov releases updates monthly. Once the initial data is loaded onto your local machine, you can apply the monthly "Delta" files to your existing USASpending SQLite DB (not stored in this repo), rather than repeating this entire process. To do so, download the monthly "Delta" file at the same link about (rather than the "Full" file), and run `load_usaspending_delta_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py) instead.
 
@@ -94,17 +94,23 @@ The FPI also uses additional data, which is sourced from several locations and s
 
 ## Transforming the data
 > [!NOTE]
-> This repository already contains copies of the latest data transformed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use the pre-existing [transformed/transformed_data.db](transformed/transformed_data.db) file and skip the process below.
+> This repository already contains copies of the latest data transformed by the FPI team. Unless you need to refresh the data or want to perform your own analysis, it is likely sufficient to use the pre-existing [website/transformed_data.db](website/transformed_data.db) file and skip the process below.
 
 First, set the `ETL_` environment variables above.  Then download all archive financial assistance files from constants.py years `CURRENT_FISCAL_YEAR` to `CURRENT_FISCAL_YEAR - SPENDING_CHART_YEAR_RANGE`.  Note that delta files are not currently supported - use the full year files.  Optionally, archive contract files can be imported into the temporary database; however, they are not currently used in the website or the transformed database.
 
-The data extracted above is transformed through a variety of processes into a SQLite DB ([transformed/transformed_data.db](transformed/transformed_data.db)). If new data was extracted by running functions in [extract.py](extract.py), the functions in [transform.py](transform.py) should be run to refresh [transformed/transformed_data.db](transformed/transformed_data.db). This SQLite DB is used in the next step, to generate the Markdown files used by Jekyll to build the FPI website.
+The data extracted above is transformed through a variety of processes into a SQLite DB ([website/transformed_data.db](website/transformed_data.db)). If new data was extracted by running functions in [extract.py](extract.py), the functions in [transform.py](transform.py) should be run to refresh [website/transformed_data.db](website/transformed_data.db). This SQLite DB is used in the next step, to generate the Markdown files used by Jekyll to build the FPI website.
 
 ## Loading the data
 > [!NOTE]
 > This repository already contains copies of the latest data loaded by the FPI team. Unless you refreshed the data, it is likely sufficient to use the pre-existing markdown files located in [/website](/website) generated by this process.
 
 To regenerate the Markdown files used by Jekyll to build the website, update [constants.py](constants.py) as needed and then run [load.py](load.py).
+
+## Dynamically generating data
+
+Some files are generated at build-time, because it is not practical to track them in the git repo.  See stage 1 of the website Dockerfile for python scripts that run when the website is built.  Dynamic data depends on the transformed_data.db generated in the transform step.
+
+Before updating the data, update the constants at the top of website/generate_csv.py and then build the site with docker.
 
 ## A note on extraction methods
 

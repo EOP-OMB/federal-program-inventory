@@ -13,29 +13,6 @@
     let currentChart = null;
     let activeTable = "category";
 
-    function formatObligations(amount) {
-        if (!amount) return "$0";
-        const trillion = 1000000000000;
-        const billion = 1000000000;
-        const million = 1000000;
-        const thousand = 1000;
-
-        if (amount >= trillion) return `$${(amount / trillion).toFixed(2)}T`;
-        if (amount >= billion) return `$${(amount / billion).toFixed(2)}B`;
-        if (amount >= million) return `$${(amount / million).toFixed(2)}M`;
-        if (amount >= thousand) return `$${(amount / thousand).toFixed(2)}K`;
-        return `$${amount.toFixed(2)}`;
-      }
-
-    function formatCurrency(amount) {
-      return new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0,
-      }).format(amount);
-    }
-
     function createObligationsPieChart(obligationData) {
 
     const pieChartContainer = document.getElementById("obligations-pie-chart");

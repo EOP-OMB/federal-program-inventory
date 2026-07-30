@@ -1,0 +1,847 @@
+/* ===== RESPONSIVE STYLES FOR MOBILE & TABLET ===== */
+
+/* Tablet Breakpoint (max-width: 1024px) */
+@media (max-width: 64em) {
+  /* Tab buttons - compact on tablet */
+  button[role="tab"] {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  /* Main layout: stack sidebar under main content */
+  .grid-col-9 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grid-col-3 {
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border-top: 1px solid #ddd8d1;
+    padding-left: 0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Charts responsive */
+  #chart,
+  #obligationChart,
+  #spending-chart,
+  canvas {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Reduce font sizes on tablet */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  /* Reduce padding and margins */
+  .padding-left-3 {
+    padding-left: 1rem;
+  }
+
+  .margin-bottom-205 {
+    margin-bottom: 1.5rem;
+  }
+
+  .grid-gap {
+    gap: 1rem;
+  }
+
+  /* Tables responsive */
+  .usa-table {
+    font-size: 0.875rem;
+  }
+
+  /* Improper Payment Card adjustments */
+  .improper-payment-card-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .payment-rate-box {
+    min-width: auto;
+    width: 100%;
+  }
+
+  /* Search results: keep title and amount on one row on tablet and mobile */
+  #program-list .program-search-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 0.75rem;
+  }
+
+  #program-list .program-search-container > .tablet\:grid-col-8 {
+    grid-column: 1;
+    min-width: 0;
+  }
+
+  #program-list .program-search-container > .tablet\:grid-col-4 {
+    grid-column: 2;
+    justify-self: end;
+    align-self: start;
+  }
+
+  #program-list .program-search-container > .grid-row {
+    grid-column: 1 / -1;
+  }
+
+  #program-list .program-title {
+    display: block;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  #program-list .program-obligations {
+    white-space: nowrap;
+  }
+
+  /* ===== TAXONOMY COMPONENT TABLET STYLES ===== */
+
+  /* Increase gap between filter panels on tablet */
+  .taxonomy-filter-panels {
+    gap: 1rem;
+  }
+
+  /* Remove absolute positioning on tablet to prevent overlap */
+  .taxonomy-filter-column {
+    margin-bottom: 1rem;
+  }
+
+  .taxonomy-filter-column .usa-sidenav__item {
+    position: static;
+  }
+
+  .taxonomy-filter-column .taxonomy-filter-submenu {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    z-index: auto;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .taxonomy-filter-fieldset {
+    padding-bottom: 1rem;
+  }
+
+  /* Optimize table on tablet */
+  .taxonomy-gwo-table {
+    font-size: 0.875rem;
+  }
+
+  .taxonomy-gwo-table th,
+  .taxonomy-gwo-table td {
+    padding: 0.5rem;
+  }
+
+  /* Ensure table doesn't overflow on tablet */
+  .taxonomy-gwo-section {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+}
+
+/* Mobile Breakpoint (max-width: 768px / 48em) */
+@media (max-width: 48em) {
+  /* Search controls: add separation between filter reset and sorting on mobile */
+  #clear-filters-button {
+    margin-bottom: 2rem;
+  }
+
+  /* Search metrics: show second program count on a new line in mobile view */
+  #total-programs #global-count {
+    display: block;
+  }
+
+  /* Tooltip responsiveness for mobile */
+  .spending-chart-tooltip, .outlays-chart-tooltip {
+    font-size: 10px;
+    padding: 6px 10px;
+    max-width: 200px;
+  }
+
+  /* Purpose and Spending sections stack vertically */
+  #overview-panel .grid-col-12.grid-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Purpose column: full width on mobile */
+  #overview-panel .grid-col-4 {
+    width: 100%;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px dotted #000000;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Spending column: full width on mobile */
+  #overview-panel .grid-col-fill {
+    width: 100%;
+    max-width: 100%;
+    border-top: none;
+  }
+
+  /* Remove border-top from main content column on mobile */
+  .grid-col-9.border-top {
+    border-top: none;
+  }
+
+  /* Overview header: adjust width on mobile */
+  #overview-panel .grid-col-10 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Mobile-specific sidebar adjustments */
+  .grid-col-3 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Sidebar sections spacing on mobile */
+  .grid-col-3 > div {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* Tab styling for mobile */
+  button[role="tab"] {
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  nav[role="tablist"] {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  nav[role="tablist"] .display-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Chart and Table layout */
+  .display-flex.margin-bottom-4 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Spending chart legend and chart */
+  #spending-chart-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+  }
+
+  div:has(#spending-chart) {
+    width: 100%;
+  }
+
+  /* Charts: full width */
+  #chart,
+  #obligationChart,
+  #spending-chart,
+  canvas {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Significantly reduce heading sizes on mobile */
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  /* Reduce padding aggressively on mobile */
+  .padding-left-3 {
+    padding-left: 0.5rem;
+  }
+
+  .padding-right-3 {
+    padding-right: 0.5rem;
+  }
+
+  .padding-2 {
+    padding: 0.75rem;
+  }
+
+  .padding-bottom-40 {
+    padding-bottom: 1.5rem;
+  }
+
+  .padding-bottom-205 {
+    padding-bottom: 1rem;
+  }
+
+  .margin-bottom-2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .margin-bottom-3 {
+    margin-bottom: 1rem;
+  }
+
+  .margin-bottom-4 {
+    margin-bottom: 1.25rem;
+  }
+
+  .grid-gap {
+    gap: 0.75rem;
+  }
+
+  /* Table responsiveness */
+  .usa-table {
+    font-size: 0.8rem !important;
+    width: 100%;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    display: table;
+  }
+
+  .usa-table thead {
+    display: table-header-group;
+  }
+
+  .usa-table tbody {
+    display: table-row-group;
+  }
+
+  .usa-table tr {
+    display: table-row;
+  }
+
+  .usa-table th,
+  .usa-table td {
+    display: table-cell;
+    text-align: left;
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .usa-table th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+
+  /* Category page tables: keep content readable and within mobile viewport */
+  #table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #sub-categories-table,
+  #programs-table,
+  #agencies-table,
+  #applicant-types-table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.75rem;
+  }
+
+  #sub-categories-table th,
+  #sub-categories-table td,
+  #programs-table th,
+  #programs-table td,
+  #agencies-table th,
+  #agencies-table td,
+  #applicant-types-table th,
+  #applicant-types-table td {
+    padding: 0.375rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    vertical-align: top;
+  }
+
+  #sub-categories-table th.width-mobile-lg,
+  #programs-table th.width-mobile-lg,
+  #agencies-table th.width-mobile-lg,
+  #applicant-types-table th.width-mobile-lg,
+  #sub-categories-table th.width-mobile,
+  #programs-table th.width-mobile,
+  #agencies-table th.width-mobile,
+  #applicant-types-table th.width-mobile {
+    width: auto;
+  }
+
+  #sub-categories-table th:nth-child(1),
+  #sub-categories-table td:nth-child(1),
+  #programs-table th:nth-child(1),
+  #programs-table td:nth-child(1),
+  #agencies-table th:nth-child(1),
+  #agencies-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  #sub-categories-table th:nth-child(2),
+  #sub-categories-table td:nth-child(2),
+  #sub-categories-table th:nth-child(3),
+  #sub-categories-table td:nth-child(3),
+  #programs-table th:nth-child(2),
+  #programs-table td:nth-child(2),
+  #programs-table th:nth-child(3),
+  #programs-table td:nth-child(3),
+  #agencies-table th:nth-child(2),
+  #agencies-table td:nth-child(2),
+  #agencies-table th:nth-child(3),
+  #agencies-table td:nth-child(3) {
+    width: 25%;
+  }
+
+  #applicant-types-table th:nth-child(1),
+  #applicant-types-table td:nth-child(1) {
+    width: 65%;
+  }
+
+  #applicant-types-table th:nth-child(2),
+  #applicant-types-table td:nth-child(2) {
+    width: 35%;
+  }
+
+  #sub-categories-table th .header-text,
+  #agencies-table th .header-text,
+  #applicant-types-table th .header-text {
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  /* GWO/PON related programs table: fit all three columns on mobile */
+  #related-programs {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #related-programs .usa-table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.75rem !important;
+  }
+
+  #related-programs .usa-table th,
+  #related-programs .usa-table td {
+    padding: 0.375rem;
+    vertical-align: top;
+  }
+
+  #related-programs .usa-table th:nth-child(1),
+  #related-programs .usa-table td:nth-child(1) {
+    width: 45%;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  #related-programs .usa-table th:nth-child(2),
+  #related-programs .usa-table td:nth-child(2) {
+    width: 30%;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  #related-programs .usa-table th:nth-child(3),
+  #related-programs .usa-table td:nth-child(3) {
+    width: 25%;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  /* Hide non-essential "Related Programs" column on mobile */
+  #improper-payments-table thead tr th:nth-child(2),
+  #improper-payments-table tbody tr td:nth-child(2) {
+    display: none;
+  }
+
+  /* Improper Payment Card: add padding on mobile */
+  .improper-payment-card-container {
+    padding: 1rem;
+  }
+
+  .payment-rate-box {
+    min-width: auto;
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .spending-card-header {
+    font-size: 0.8rem;
+  }
+
+  .spending-card-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .spending-card-label {
+    font-size: 0.7rem;
+  }
+
+  /* Ensure no horizontal scrolling for main content */
+  .grid-container {
+    overflow-x: hidden;
+  }
+
+  /* Increase chart x-axis font size for mobile readability */
+  #chart .x-axis text {
+    font-size: 26px;
+  }
+
+  /* Tab panel spacing */
+  .tab-panel {
+    padding: 0.5rem 0;
+  }
+
+  /* List sections responsive */
+  .list-section {
+    margin-bottom: 1rem;
+  }
+
+  /* Footer mobile spacing (_footer.html) */
+  .usa-identifier__nav-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-link {
+    padding-bottom: 0.1rem;
+  }
+
+  .usa-logo {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  footer .usa-logo {
+    margin-left: 0;
+  }
+
+  .usa-identifier__section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .usa-identifier__nav-link {
+    margin-top: 1.5rem;
+  }
+
+  .footer-link {
+    padding-bottom: 0.1rem;
+  }
+
+  /* ===== TAXONOMY COMPONENT MOBILE STYLES ===== */
+
+  /* Stack filters vertically on mobile */
+  .taxonomy-filters-section,
+  .taxonomy-gwo-section {
+    padding: 0 0.5rem;
+  }
+
+  .taxonomy-filter-panels {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .taxonomy-filter-column {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .taxonomy-filter-column .usa-sidenav {
+    background-color: $dark-cream-underlay;
+    margin: 0;
+    padding: 0;
+  }
+
+  .taxonomy-filter-column .usa-sidenav__sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .taxonomy-filter-column .usa-sidenav__item {
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+
+  .taxonomy-filter-column .taxonomy-filter-submenu {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    z-index: auto;
+    width: 100%;
+  }
+
+  /* Compact filter toggle on mobile */
+  .taxonomy-filter-toggle {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .taxonomy-filter-toggle-label {
+    font-size: 0.9375rem;
+  }
+
+  .taxonomy-filter-toggle-icon-wrap {
+    width: 2rem;
+  }
+
+  /* Compact filter submenu on mobile */
+  .taxonomy-filter-submenu {
+    max-height: 15rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .taxonomy-filter-fieldset {
+    padding: 0.5rem 0.5rem 1rem;
+    max-height: 12rem;
+    overflow-y: auto;
+  }
+
+  .taxonomy-filter-option-row {
+    margin-bottom: 0.25rem;
+  }
+
+  .taxonomy-filter-option-label {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .taxonomy-filter-empty-message {
+    padding: 0.5rem 0.5rem 0;
+    font-size: 0.75rem;
+  }
+
+  /* Stack action buttons vertically on mobile - same style as sub-categories-table */
+  .taxonomy-filter-action-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .taxonomy-update-button,
+  .taxonomy-clear-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Table responsive on mobile - match sub-categories-table pattern */
+  .taxonomy-gwo-table {
+    font-size: 0.75rem;
+    width: 100%;
+    table-layout: fixed;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .taxonomy-gwo-table th,
+  .taxonomy-gwo-table td {
+    padding: 0.375rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    vertical-align: top;
+  }
+
+  .taxonomy-gwo-table th:nth-child(1),
+  .taxonomy-gwo-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  .taxonomy-gwo-table th:nth-child(2),
+  .taxonomy-gwo-table td:nth-child(2) {
+    width: 50%;
+  }
+
+  .taxonomy-gwo-table th[data-sortable] {
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  /* Pagination stack on mobile */
+  .taxonomy-pagination-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .usa-pagination {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .usa-pagination__item {
+    margin: 0;
+  }
+
+  .usa-pagination__button,
+  .usa-pagination__link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    min-width: auto;
+  }
+}
+
+/* Extra Small mobile breakpoint (max-width: 480px) */
+@media (max-width: 30em) {
+  /* Ultra small screens: minimal padding */
+  .padding-left-3,
+  .padding-right-3 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .padding-2 {
+    padding: 0.5rem;
+  }
+
+  /* Heading sizes for extra small screens */
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  /* Further reduce margins */
+  .margin-bottom-2,
+  .margin-bottom-3,
+  .margin-bottom-4 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Grid gaps for smallest screens */
+  .grid-gap {
+    gap: 0.5rem;
+  }
+
+  /* ===== TAXONOMY COMPONENT EXTRA SMALL MOBILE STYLES ===== */
+
+  /* Further reduce taxonomy font sizes on extra small screens */
+  .taxonomy-filters-section .usa-prose p {
+    font-size: 0.8125rem;
+  }
+
+  .taxonomy-filter-toggle-label {
+    font-size: 0.875rem;
+  }
+
+  .taxonomy-filter-option-label {
+    font-size: 0.7rem;
+  }
+
+  /* Tighten filter spacing on extra small screens */
+  .taxonomy-filter-panels {
+    gap: 0.5rem;
+  }
+
+  .taxonomy-filter-column .usa-sidenav__sublist {
+    padding: 0;
+  }
+
+  .taxonomy-filter-toggle {
+    padding: 0.375rem 0.375rem;
+  }
+
+  .taxonomy-filter-submenu {
+    max-height: 12rem;
+  }
+
+  .taxonomy-filter-fieldset {
+    padding: 0.375rem;
+    max-height: 10rem;
+  }
+
+  .taxonomy-filter-option-row {
+    margin-bottom: 0.15rem;
+  }
+
+  .taxonomy-gwo-table {
+    font-size: 0.7rem;
+    table-layout: fixed;
+  }
+
+  .taxonomy-gwo-table th,
+  .taxonomy-gwo-table td {
+    padding: 0.25rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .taxonomy-gwo-table th:nth-child(1),
+  .taxonomy-gwo-table td:nth-child(1) {
+    width: 50%;
+  }
+
+  .taxonomy-gwo-table th:nth-child(2),
+  .taxonomy-gwo-table td:nth-child(2) {
+    width: 50%;
+  }
+
+  .taxonomy-pagination-wrap {
+    gap: 0.25rem;
+    margin-top: 1rem;
+    padding: 0 0.25rem;
+  }
+
+  .usa-pagination__button,
+  .usa-pagination__link {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+

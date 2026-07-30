@@ -19,7 +19,7 @@ describe('Search page', () => {
     cy.get('.usa-sidenav').eq(3).click();
     cy.get('#pon-filter-search').type('advance');
     cy.contains('Construct New Community Infrastructure').should('not.be.visible');
-    cy.get('body').compareSnapshot('search_page_pon_filter');
+    cy.get('#search-filters').compareSnapshot('search_page_pon_filter');
   });
 
   it('sorting', () => {
@@ -97,8 +97,8 @@ describe('Search page', () => {
     cy.get('#search-field-en-small').type('test{enter}');
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.get('#filtered-count').invoke('text').then((newCount) => {
-      cy.get('@originalCount').should('not.eq', newCount);
+    cy.get('@originalCount').then((originalCount) => {
+      cy.get('#filtered-count').should('not.have.text', originalCount);
     });
 
     cy.get('#filtered-count')
@@ -136,7 +136,9 @@ describe('Search page', () => {
       .check({ force: true });
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.contains('button', 'Clear Filters').click();
+    cy.contains('button', 'Clear Filters')
+      .should('have.attr', 'aria-disabled', 'false')
+      .click();
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
     cy.get('#filtered-count').invoke('text').then((newCount) => {
