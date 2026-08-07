@@ -141,8 +141,8 @@ describe('Search page', () => {
       .click();
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.get('#filtered-count').invoke('text').then((newCount) => {
-      cy.get('@globalCount').should('eq', newCount);
+    cy.get('@globalCount').then((globalCount) => {
+      cy.get('#filtered-count').should('have.text', globalCount);
     });
 
     cy.get('#search-field-en-small').should('have.value', '');

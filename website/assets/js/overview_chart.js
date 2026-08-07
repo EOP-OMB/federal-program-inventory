@@ -27,6 +27,11 @@ const defaultConfig = {
   outlaysPointRadius: 7,
   outlaysStrokeColor: "#AD854A",
   outlaysStrokeWidth: 4,
+  revenueLossFillColor: "#b3c1c866",
+  revenueLossFillStrokeWidth: "2.5px",
+  revenueLossPointRadius: 7,
+  revenueLossStrokeColor: "#7A878E",
+  revenueLossStrokeWidth: 4,
   svgMaxWidth: "600px", // font-size can start to dominate the rest of the page
   svgWidth: "100%",
   viewBoxHeight: 500,
@@ -36,28 +41,48 @@ const defaultConfig = {
 function createOutlaysVsSpendChart(containerId, data, programType, config = defaultConfig) {
   const chartWidth = config.viewBoxWidth - config.margin.left - config.margin.right - config.legendWidth - config.legendOuterLeftPadding;
   const chartHeight = config.viewBoxHeight - config.margin.top - config.margin.bottom;
+  const isTaxExpenditure = programType === 'tax_expenditure';
+  const hasRevenueLosses = _hasRevenueLosses(data);
+  const shouldShowRevenueLossSeries = isTaxExpenditure && hasRevenueLosses;
+  const stackedTaxExpenditureTotals = shouldShowRevenueLossSeries ? _buildTaxExpenditureStackedSeries(data) : [];
   const showOutlaysDatapoint = data.outlays.length > 0;
+  const showRevenueLossDatapoint = stackedTaxExpenditureTotals.length > 0;
   const showObligationsDatapoint = data.obligations.length === 1;
-  const showObligations = programType !== 'tax_expenditure' && programType !== 'interest';
+  const showObligations = !isTaxExpenditure && programType !== 'interest';
 
   _resetContainer(containerId);
   const svg = _createSvg(containerId, config);
 
-  const { xScale, yScale } = _createScales(data, chartWidth, chartHeight);
+  const { xScale, yScale } = _createScales(data, chartWidth, chartHeight, stackedTaxExpenditureTotals);
 
-  const { outlayFillGenerator, lineGenerator } = _createGenerators(xScale, yScale);
+  const { outlayFillGenerator, revenueLossFillGenerator, lineGenerator } = _createGenerators(xScale, yScale);
 
   let outlaysFillArea = null;
+  let revenueLossFillArea = null;
 
   // if the length is 1, this will just draw a faint vertical line
   if (data.outlays.length > 1) {
     outlaysFillArea = _addOutlaysFillArea(svg, data, config, outlayFillGenerator);
   }
 
-  const { obligationsLine, outlaysLine } = _addLines(svg, data, config, lineGenerator, showObligations);
+  if (stackedTaxExpenditureTotals.length > 1) {
+    revenueLossFillArea = _addRevenueLossFillArea(svg, stackedTaxExpenditureTotals, config, revenueLossFillGenerator);
+  }
+
+  const { obligationsLine, outlaysLine, revenueLossLine } = _addLines({
+    svg,
+    data,
+    config,
+    lineGenerator,
+    showObligations,
+    stackedTaxExpenditureTotals,
+    xScale,
+    yScale
+  });
 
   let obligationsPoint = null;
   let outlaysPoint = null;
+  let revenueLossPoint = null;
 
   if (showOutlaysDatapoint) {
     outlaysPoint = _showOutlaysDataPoint(data, svg, xScale, yScale, config);
@@ -66,15 +91,36 @@ function createOutlaysVsSpendChart(containerId, data, programType, config = defa
   if (showObligationsDatapoint && showObligations) {
     obligationsPoint = _showObligationsDataPoint(data, svg, xScale, yScale, config);
   }
+  if (showRevenueLossDatapoint) {
+    revenueLossPoint = _showRevenueLossDataPoint(stackedTaxExpenditureTotals, svg, xScale, yScale, config);
+  }
 
   _addXAxis(xScale, svg, chartHeight, config);
   _addYAxis(yScale, svg, chartHeight, config);
 
-  _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data, programType);
+  _addLegend({
+    svg,
+    chartWidth,
+    config,
+    chartHeight,
+    showObligationsDatapoint,
+    showOutlaysDatapoint,
+    showRevenueLossDatapoint,
+    obligationsLine,
+    outlaysLine,
+    revenueLossLine,
+    outlaysFillArea,
+    revenueLossFillArea,
+    obligationsPoint,
+    outlaysPoint,
+    revenueLossPoint,
+    data,
+    shouldShowRevenueLossSeries
+  });
 
-  _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType);
+  _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType, stackedTaxExpenditureTotals, shouldShowRevenueLossSeries);
 
-  _addEndValueLabels(svg, data, xScale, yScale, config);
+  _addEndValueLabels(svg, data, xScale, yScale, config, stackedTaxExpenditureTotals, shouldShowRevenueLossSeries);
 }
 
 function _tryParsingRawData(chartElement) {
@@ -101,10 +147,15 @@ function _createGenerators(xScale, yScale) {
     .y0(yScale(0))
     .y1(d => yScale(d.value))
     .curve(d3.curveMonotoneX);
-  return { outlayFillGenerator, lineGenerator };
+  const revenueLossFillGenerator = d3.area()
+    .x(d => xScale(d.year))
+    .y0(d => yScale(d.outlaysValue))
+    .y1(d => yScale(d.totalValue))
+    .curve(d3.curveMonotoneX);
+  return { outlayFillGenerator, revenueLossFillGenerator, lineGenerator };
 }
 
-function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType) {
+function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType, stackedTaxExpenditureTotals, shouldShowRevenueLossSeries) {
   const tooltip = d3.select("body").append("div")
     .attr("class", "outlays-chart-tooltip");
 
@@ -131,6 +182,14 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
     .attr("fill", config.obligationsStrokeColor)
     .style("opacity", 0);
 
+  const hoverCircleRevenueLosses = svg.append("circle")
+    .attr("r", config.revenueLossPointRadius)
+    .attr("fill", config.revenueLossStrokeColor)
+    .style("opacity", 0);
+
+  const revenueLossLookup = new Map((data.revenueLosses || []).map(d => [d.year, d]));
+  const stackedLookup = new Map(stackedTaxExpenditureTotals.map(d => [d.year, d]));
+
   overlay.on("mousemove", function (event) {
     const [mouseX] = d3.pointer(event, this);
     const year = xScale.invert(mouseX);
@@ -138,6 +197,8 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
 
     const outlayPoint = data.outlays.find(d => d.year === nearestYear);
     const obligationPoint = data.obligations.find(d => d.year === nearestYear);
+    const revenueLossPoint = revenueLossLookup.get(nearestYear);
+    const stackedPoint = stackedLookup.get(nearestYear);
 
     if (outlayPoint || obligationPoint) {
       const x = xScale(nearestYear);
@@ -178,10 +239,6 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
           .attr("cx", x)
           .attr("cy", y)
           .style("opacity", 1);
-        let outlayLabel = "Outlays";
-        if (programType === 'tax_expenditure') {
-          outlayLabel += " + Rev Losses";
-        }
         const outlaysDataSource = resolveProgramDataSource({
           programType,
           dataType: 'outlays',
@@ -189,12 +246,33 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
           data
         });
         tooltipEntries.push({
-          label: outlayLabel,
+          label: 'Outlays',
           valueText: formatDollarAmount(outlayPoint.value),
           dataSource: outlaysDataSource
         });
       } else {
         hoverCircleOutlays.style("opacity", 0);
+      }
+
+      if (shouldShowRevenueLossSeries && revenueLossPoint && stackedPoint) {
+        hoverCircleRevenueLosses
+          .attr("cx", x)
+          .attr("cy", yScale(stackedPoint.totalValue))
+          .style("opacity", 1);
+
+        const revenueLossesDataSource = resolveProgramDataSource({
+          programType,
+          dataType: 'revenue_losses',
+          year: nearestYear,
+          data
+        });
+        tooltipEntries.push({
+          label: 'Revenue Losses',
+          valueText: formatDollarAmount(revenueLossPoint.value),
+          dataSource: revenueLossesDataSource
+        });
+      } else {
+        hoverCircleRevenueLosses.style("opacity", 0);
       }
 
       const tooltipContent = formatProgramTooltipLinesWithSharedDataSource(`Year: ${nearestYear}`, tooltipEntries);
@@ -210,11 +288,30 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
       hoverLine.style("opacity", 0);
       hoverCircleOutlays.style("opacity", 0);
       hoverCircleObligations.style("opacity", 0);
+      hoverCircleRevenueLosses.style("opacity", 0);
       tooltip.style("opacity", 0);
     });
 }
 
-function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoint, showOutlaysDatapoint, obligationsLine, outlaysLine, outlaysFillArea, obligationsPoint, outlaysPoint, data, programType) {
+function _addLegend({
+  svg,
+  chartWidth,
+  config,
+  chartHeight,
+  showObligationsDatapoint,
+  showOutlaysDatapoint,
+  showRevenueLossDatapoint,
+  obligationsLine,
+  outlaysLine,
+  revenueLossLine,
+  outlaysFillArea,
+  revenueLossFillArea,
+  obligationsPoint,
+  outlaysPoint,
+  revenueLossPoint,
+  data,
+  shouldShowRevenueLossSeries
+}) {
   const legend = svg.append("g")
     .attr("class", "legend")
     .attr("transform", `translate(${chartWidth + config.legendOuterLeftPadding}, ${chartHeight / 2})`)
@@ -222,16 +319,15 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
   const legendItems = [];
 
   if (data.outlays.length > 0) {
-    let outlaysLabel = "Outlays";
-    if (programType === 'tax_expenditure') {
-      outlaysLabel += " + Rev Losses";
-    }
+    legendItems.push({ label: "Outlays", color: config.outlaysStrokeColor, hasPoint: showOutlaysDatapoint, line: outlaysLine, point: outlaysPoint, strokeWidthKey: "outlaysStrokeWidth" });
+  }
 
-    legendItems.push({ label: outlaysLabel, color: config.outlaysStrokeColor, style: "solid", hasPoint: showOutlaysDatapoint, line: outlaysLine, point: outlaysPoint });
+  if (shouldShowRevenueLossSeries) {
+    legendItems.push({ label: "Revenue Losses", color: config.revenueLossStrokeColor, hasPoint: showRevenueLossDatapoint, line: revenueLossLine, point: revenueLossPoint, strokeWidthKey: "revenueLossStrokeWidth" });
   }
 
   if (data.obligations.length > 0 && obligationsLine !== null) {
-    legendItems.push({ label: "Obligations", color: config.obligationsStrokeColor, style: "solid", hasPoint: showObligationsDatapoint, line: obligationsLine, point: obligationsPoint });
+    legendItems.push({ label: "Obligations", color: config.obligationsStrokeColor, hasPoint: showObligationsDatapoint, line: obligationsLine, point: obligationsPoint, strokeWidthKey: "obligationsStrokeWidth" });
   }
 
   const legendBoxHeight = legendItems.length * config.legendItemHeight + 2 * config.legendInnerPadding;
@@ -292,7 +388,7 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
 
           // Increase stroke width and bring to front
           item.line
-            .attr("stroke-width", config[item.label === "Obligations" ? "obligationsStrokeWidth" : "outlaysStrokeWidth"] * 2)
+            .attr("stroke-width", config[item.strokeWidthKey] * 2)
             .raise();
 
           if (item.point) {
@@ -313,6 +409,9 @@ function _addLegend(svg, chartWidth, config, chartHeight, showObligationsDatapoi
 
           if (outlaysFillArea !== null) {
             outlaysFillArea.lower();
+          }
+          if (revenueLossFillArea !== null) {
+            revenueLossFillArea.raise();
           }
 
           if (item.point) {
@@ -344,8 +443,18 @@ function _showOutlaysDataPoint(data, svg, xScale, yScale, config) {
     .attr("fill", config.outlaysStrokeColor);
 }
 
-function _addLines(svg, data, config, lineGenerator, showObligations) {
+function _showRevenueLossDataPoint(stackedTaxExpenditureTotals, svg, xScale, yScale, config) {
+  const lastStackedPoint = stackedTaxExpenditureTotals[stackedTaxExpenditureTotals.length - 1];
+  return svg.append("circle")
+    .attr("cx", xScale(lastStackedPoint.year))
+    .attr("cy", yScale(lastStackedPoint.totalValue))
+    .attr("r", config.revenueLossPointRadius)
+    .attr("fill", config.revenueLossStrokeColor);
+}
+
+function _addLines({ svg, data, config, lineGenerator, showObligations, stackedTaxExpenditureTotals, xScale, yScale }) {
   let obligationsLine = null;
+  let revenueLossLine = null;
   if (showObligations) {
     obligationsLine = svg.append("path")
       .datum(data.obligations)
@@ -361,12 +470,25 @@ function _addLines(svg, data, config, lineGenerator, showObligations) {
     .attr("stroke", config.outlaysStrokeColor)
     .attr("stroke-width", config.outlaysStrokeWidth)
     .attr("d", lineGenerator);
-  return { obligationsLine, outlaysLine };
+
+  if (stackedTaxExpenditureTotals.length > 0) {
+    revenueLossLine = svg.append("path")
+      .datum(stackedTaxExpenditureTotals)
+      .attr("fill", "none")
+      .attr("stroke", config.revenueLossStrokeColor)
+      .attr("stroke-width", config.revenueLossStrokeWidth)
+      .attr("d", d3.line()
+        .x(d => xScale(d.year))
+        .y(d => yScale(d.totalValue))
+        .curve(d3.curveMonotoneX));
+  }
+  return { obligationsLine, outlaysLine, revenueLossLine };
 }
 
-function _addEndValueLabels(svg, data, xScale, yScale, config) {
+function _addEndValueLabels(svg, data, xScale, yScale, config, stackedTaxExpenditureTotals, shouldShowRevenueLossSeries) {
   const lastOutlaysPoint = data.outlays?.[data.outlays.length - 1];
   const lastObligationsPoint = data.obligations?.[data.obligations.length - 1];
+  const lastStackedPoint = stackedTaxExpenditureTotals?.[stackedTaxExpenditureTotals.length - 1];
 
   const labelDefs = [
     lastOutlaysPoint
@@ -374,6 +496,9 @@ function _addEndValueLabels(svg, data, xScale, yScale, config) {
       : null,
     lastObligationsPoint
       ? { point: lastObligationsPoint, color: config.obligationsStrokeColor }
+      : null,
+    (shouldShowRevenueLossSeries && lastStackedPoint)
+      ? { point: { year: lastStackedPoint.year, value: lastStackedPoint.totalValue }, color: config.revenueLossStrokeColor }
       : null,
   ].filter(Boolean);
 
@@ -408,6 +533,15 @@ function _addOutlaysFillArea(svg, data, config, outlayFillGenerator) {
     .attr("d", outlayFillGenerator);
 }
 
+function _addRevenueLossFillArea(svg, stackedTaxExpenditureTotals, config, revenueLossFillGenerator) {
+  return svg.append("path")
+    .datum(stackedTaxExpenditureTotals)
+    .attr("fill", config.revenueLossFillColor)
+    .attr("stroke", config.revenueLossFillColor)
+    .attr("stroke-width", config.revenueLossFillStrokeWidth)
+    .attr("d", revenueLossFillGenerator);
+}
+
 function _addXAxis(xScale, svg, chartHeight, config) {
   const xAxis = d3.axisBottom(xScale)
     .tickFormat((d, i, ticks) => { return d; })
@@ -436,8 +570,8 @@ function _addYAxis(yScale, svg, chartHeight, config) {
     .style("font-family", config.fontFamily);
 }
 
-function _createScales(data, chartWidth, chartHeight) {
-  const combinedSeries = [...data.outlays, ...data.obligations];
+function _createScales(data, chartWidth, chartHeight, stackedTaxExpenditureTotals = []) {
+  const combinedSeries = [...data.outlays, ...data.obligations, ...stackedTaxExpenditureTotals.map(d => ({ year: d.year, value: d.totalValue }))];
   const xScaleMin = Math.min(...combinedSeries.map(item => item.year));
   const xScaleMax = Math.max(...combinedSeries.map(item => item.year));
   const yScaleMin = Math.min(...combinedSeries.map(item => item.value));
@@ -449,6 +583,22 @@ function _createScales(data, chartWidth, chartHeight) {
     .domain([Math.min(yScaleMin, 0), Math.max(yScaleMax, 0)])
     .range([chartHeight, 0]);
   return { xScale, yScale };
+}
+
+function _hasRevenueLosses(data) {
+  return Array.isArray(data.revenueLosses) && data.revenueLosses.some(d => d.value !== null && d.value !== 0);
+}
+
+function _buildTaxExpenditureStackedSeries(data) {
+  const revenueLossLookup = new Map((data.revenueLosses || []).map(d => [d.year, d.value]));
+  return (data.outlays || []).map(outlayPoint => {
+    const revenueLossValue = revenueLossLookup.get(outlayPoint.year) || 0;
+    return {
+      year: outlayPoint.year,
+      outlaysValue: outlayPoint.value,
+      totalValue: outlayPoint.value + revenueLossValue
+    };
+  });
 }
 
 function _createSvg(containerId, config) {
@@ -467,10 +617,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const noChartId = 'no-chart';
   const chartElement = document.getElementById(id);
   const rawData = _tryParsingRawData(chartElement);
-  const formattedData = standardizeDataForD3(rawData, true);
+  const programType = chartElement ? chartElement.getAttribute('data-program-type') : null;
+  const formattedData = standardizeDataForD3(rawData, programType !== 'tax_expenditure');
 
   if (formattedData.obligations.length > 0 || formattedData.outlays.length > 0) {
-    const programType = chartElement.getAttribute('data-program-type');
     createOutlaysVsSpendChart('#' + id, formattedData, programType);
   } else {
     document.getElementById(chartHeaderId)?.classList.add('hide');
