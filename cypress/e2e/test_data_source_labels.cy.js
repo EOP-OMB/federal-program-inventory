@@ -35,7 +35,7 @@ describe('Data source labels', () => {
     cy.contains('.program-title', 'Test Medicaid Program')
       .should('be.visible');
 
-    cy.get('.program-obligations').trigger('mouseenter', 'center');
+    cy.get('.program-obligations-tooltip').trigger('mouseenter', 'center');
 
     cy.get('.program-obligations-hover-tooltip')
       .should('exist')
