@@ -204,3 +204,96 @@ This pulls outlay and obligation data by ALN from the temp_db created by the dat
 # query_usaspending_csvs.py
 
 This iterates through a directory of usaspending award archive zip files and generates a detailed list of supporting files and summary lists by award and year.  Example command:  `python3 query_usaspending_csvs.py --filepath ~/usaspending-awards-data/assistance --cfda 93.778 --temp-dir ~/tmp`
+
+# website_load_test.py
+
+Standalone website load test script that issues HTTP requests through `curl` subprocess calls (requires curl 8+ available on PATH).
+
+## What it tests
+
+- CSV downloads
+- Static pages
+- Search API requests
+
+The static-page traffic always rotates through this fixed circular list:
+
+- `/`
+- `/category`
+- `/about/fpi`
+- `/about/terms`
+- `/program/96.002`
+- `/gwo/GWO_N3`
+- `/pon/PON_861`
+
+## Request mix behavior
+
+The scheduler is deterministic based on requests **issued** (not completed):
+
+- At each request slot, the script computes which traffic type is most behind its target share.
+- Tie-break preference is `static > api > csv`.
+- Any traffic type with a share of `0` is never selected.
+- Within each selected traffic type, requests rotate in circular order through that type's configured list (static paths, API bodies, and CSV paths).
+
+## Usage
+
+```bash
+python3 data_processing/scripts/website_load_test.py \
+  --base-url "https://your-site.example.gov" \
+  --csv-share 10 \
+  --static-share 30 \
+  --api-share 60 \
+  --rps 10
+```
+
+Press any key to stop the run. You can also set a fixed run time with `--duration-seconds`.
+
+## Parameters
+
+- `--base-url` (required): base URL to test
+- `--csv-share` (default `10`)
+- `--static-share` (default `30`)
+- `--api-share` (default `60`)
+- `--rps` (default `10`)
+- `--duration-seconds` (default `0`; `0` means run until keypress)
+- `--timeout-seconds` (default `30`)
+- `--connect-timeout-seconds` (default `5`)
+- `--max-workers` (default `200`)
+- `--insecure` (optional; passes `-k` to curl)
+
+If shares do not sum to exactly 100, they are normalized proportionally.
+
+## Outputs
+
+All outputs are written to the same directory as the script (`data_processing/scripts/`) and prefixed with a UTC timestamp:
+
+- `<timestamp>_input_parameters.csv`
+- `<timestamp>_request_log.csv`
+- `<timestamp>_summary.csv`
+
+### request_log CSV columns
+
+- `request_id`
+- `request_type`
+- `issued_at_utc`
+- `completed_at_utc`
+- `method`
+- `path`
+- `status_code`
+- `latency_ms`
+- `ok`
+- `curl_exit_code`
+- `error`
+
+### summary CSV contents
+
+- Per traffic type:
+  - issued count and issued share
+  - completed count
+  - failed count
+  - success count
+  - average latency
+  - p90, p95, p99 latency
+- Overall totals:
+  - total issued
+  - total completed
+  - total failed
