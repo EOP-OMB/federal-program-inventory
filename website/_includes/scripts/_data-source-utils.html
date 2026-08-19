@@ -218,7 +218,20 @@ function getProgramDataSourceTooltipText({
     data
   });
 
-  return `Data source: ${resolvedDataSource}`;
+  let metricSuffix = '';
+  if (programType === 'tax_expenditure') {
+    metricSuffix = ' (outlays and revenue losses)';
+  } else if (programType === 'interest') {
+    metricSuffix = ' (outlays)';
+  } else if (
+    programType === 'assistance_listing' ||
+    programType === 'contracts' ||
+    programType === 'government_service'
+  ) {
+    metricSuffix = ' (obligations)';
+  }
+
+  return `Data source: ${resolvedDataSource}${metricSuffix}`;
 }
 
 function formatProgramTooltipLinesWithSharedDataSource(title, entries) {

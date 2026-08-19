@@ -2,7 +2,7 @@
 
 ## Overview
 
-The data sources configuration provides a centralized, single source of truth for determining which government service (Treasury.gov, USASpending.gov, or SAM.gov) is the authoritative source for program spending data.
+The data sources configuration provides a centralized, single source of truth for determining which government service (Treasury.gov, USAspending.gov, or SAM.gov) is the authoritative source for program spending data.
 
 This replaces the complex conditional logic that was previously embedded in both Python and JavaScript code.
 
@@ -117,7 +117,7 @@ const source = resolveProgramDataSource({
   currentFiscalYear: 2024
 });
 
-console.log(source); // Output: USASpending.gov
+console.log(source); // Output: USAspending.gov
 ```
 
 #### Option D: Using CFDA
@@ -161,19 +161,19 @@ Here's how the configuration handles a specific case:
 assistance_listing:
   current_year:
     obligations: SAM.gov
-    outlays: USASpending.gov
-    revenue_losses: USASpending.gov
+    outlays: USAspending.gov
+    revenue_losses: USAspending.gov
     expenditure: SAM.gov
   prior_year:
-    obligations: USASpending.gov
-    outlays: USASpending.gov
-    revenue_losses: USASpending.gov
-    expenditure: USASpending.gov
+    obligations: USAspending.gov
+    outlays: USAspending.gov
+    revenue_losses: USAspending.gov
+    expenditure: USAspending.gov
 ```
 
 This means:
-- For assistance listings in the current fiscal year: use SAM.gov for obligations and expenditure, USASpending.gov for outlays/revenue_losses
-- For assistance listings in prior years: always use USASpending.gov
+- For assistance listings in the current fiscal year: use SAM.gov for obligations and expenditure, USAspending.gov for outlays/revenue_losses
+- For assistance listings in prior years: always use USAspending.gov
 
 ## Migration from Old Conditional Logic
 
@@ -186,7 +186,7 @@ if (programType === 'tax_expenditure') {
 }
 if (dataType === 'obligations') {
   if (programType === 'assistance_listing') {
-    return year === currentFiscalYear ? 'SAM.gov' : 'USASpending.gov';
+    return year === currentFiscalYear ? 'SAM.gov' : 'USAspending.gov';
   }
 }
 // ... more conditions

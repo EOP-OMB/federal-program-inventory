@@ -58,7 +58,7 @@ class TestLoadUSASpendingFiles:
     @patch('csv.DictReader')
     def test_load_usaspending_initial_files(self, mock_reader, mock_file, mock_listdir):
         """
-        Testing the main USASpending data load function.
+        Testing the main USAspending data load function.
         This is complex because it reads from multiple CSV files and loads into SQLite.
         """
         # Reset mocks to ensure test independence
@@ -221,7 +221,7 @@ class TestTransformAndAggregateData:
     
     def test_transform_and_insert_usaspending_aggregation_data(self):
         """
-        Test aggregation of USASpending data for analysis.
+        Test aggregation of USAspending data for analysis.
         Large SQL queries.
         """
         # Reset mock call counts

@@ -19,6 +19,7 @@
   let totalObligations = 0;
   let globalProgramCount = 0;
   let globalTotalObligations = 0;
+  let programsAbortController = null;
 
   // Initial filter state
   let initialFilterState = {
@@ -37,6 +38,7 @@
   const sortFieldMapping = {
     title: "title",
     obligations: "obligations",
+    relevancy: "relevancy",
   };
 
   function captureInitialState() {
@@ -504,7 +506,7 @@
 
     // Restore sort state with default to obligations desc
     const sortParam = params.get("s") || "od";
-    currentSort.field = sortParam[0] === "t" ? "title" : "obligations";
+    currentSort.field = sortParam[0] === "t" ? "title" : sortParam[0] === "r" ? "relevancy" : "obligations";
     currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
 
@@ -724,16 +726,20 @@
   }
 
   function updateSortButtons() {
+    const relevancyButton = document.getElementById('relevancySort');
     const spendingButton = document.getElementById('spendingSort');
     const programNameButton = document.getElementById('programNameSort');
 
-    if (!spendingButton || !programNameButton) {
+    if (!relevancyButton || !spendingButton || !programNameButton) {
       return;
     }
 
+    const isRelevancy = currentSort.field === 'relevancy';
     const isSpending = currentSort.field === 'obligations';
+    const isProgramName = currentSort.field === 'title';
+    relevancyButton.classList.toggle('usa-button--outline', !isRelevancy);
     spendingButton.classList.toggle('usa-button--outline', !isSpending);
-    programNameButton.classList.toggle('usa-button--outline', isSpending);
+    programNameButton.classList.toggle('usa-button--outline', !isProgramName);
   }
 
   // Function to get correct sort field
@@ -1019,6 +1025,7 @@
     }
   }
 
+
   function renderPrograms(programs) {
     const programList = document.getElementById("program-list");
     const template = document.getElementById("program-template");
@@ -1084,6 +1091,42 @@
 
   async function fetchProgramsData(keyword = currentQuery) {
     console.log("DEBUG: fetchProgramsData called with keyword:", keyword);
+
+    if (programsAbortController) {
+      programsAbortController.abort();
+    }
+    const abortController = new AbortController();
+    programsAbortController = abortController;
+
+    const programList = document.getElementById("program-list");
+    programList.setAttribute("aria-busy", "true");
+    programList.innerHTML = Array.from({ length: 5 }, () => `
+      <div class="padding-y-2 program-search-skeleton" aria-hidden="true">
+        <div class="padding-y-2 program-search-container grid-row grid-gap">
+          <div class="grid-col-8">
+            <div class="skeleton-line skeleton-title"></div>
+          </div>
+          <div class="grid-col-4">
+            <div class="skeleton-line skeleton-amount"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-meta"></div>
+            </div>
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-meta skeleton-meta-short"></div>
+            </div>
+          </div>
+          <div class="grid-row margin-top-1">
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-body"></div>
+              <div class="skeleton-line skeleton-body skeleton-body-short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join("");
+
     const requestBody = {
       query: keyword || "",
       page: currentPage,
@@ -1106,6 +1149,7 @@ console.log("DEBUG: Sending request body:", requestBody);
           "Content-Type": "application/json",
         },
         body: JSON.stringify(requestBody),
+        signal: abortController.signal,
       });
 
       if (!response.ok) {
@@ -1132,8 +1176,17 @@ console.log("DEBUG: Sending request body:", requestBody);
 
       return data;
     } catch (error) {
+      if (error.name === "AbortError") {
+        return;
+      }
       console.error("Error fetching programs:", error);
+      programList.innerHTML = `<p class="padding-y-2">Unable to load results. Please try again.</p>`;
       return { programs: [], count: 0, total_obligations: 0 };
+    } finally {
+      if (programsAbortController === abortController) {
+        programList.removeAttribute("aria-busy");
+        programsAbortController = null;
+      }
     }
   }
 
@@ -1456,34 +1509,33 @@ console.log("DEBUG: Sending request body:", requestBody);
   }
 
   function initializeSortButtons() {
+  const relevancyButton = document.getElementById('relevancySort');
   const spendingButton = document.getElementById('spendingSort');
   const programNameButton = document.getElementById('programNameSort');
 
-  if (!spendingButton || !programNameButton) {
+  if (!relevancyButton || !spendingButton || !programNameButton) {
     return;
   }
 
   // Set initial state - spending sort is default
-  spendingButton.classList.remove('usa-button--outline');
-  programNameButton.classList.add('usa-button--outline');
+  updateSortButtons();
 
-  [spendingButton, programNameButton].forEach(button => {
+  [relevancyButton, spendingButton, programNameButton].forEach(button => {
     button.addEventListener('click', async () => {
-      
       const isSpending = button.id === 'spendingSort';
-      const sortField = isSpending ? 'obligations' : 'title';
-
-      // Update button styles
-      spendingButton.classList.toggle('usa-button--outline', !isSpending);
-      programNameButton.classList.toggle('usa-button--outline', isSpending);
+      const isProgramName = button.id === 'programNameSort';
+      const sortField = isSpending ? 'obligations' : isProgramName ? 'title' : 'relevancy';
 
       // Update sort state
       currentSort = {
         field: sortField,
-        order: sortField === currentSort.field 
+        order: sortField === currentSort.field
           ? (currentSort.order === 'asc' ? 'desc' : 'asc')
-          : (isSpending ? 'desc' : 'asc')
+          : (isProgramName ? 'asc' : 'desc')
       };
+
+      // Update button styles
+      updateSortButtons();
 
       currentPage = 1;
       encodeFiltersToUrl();
@@ -1539,12 +1591,8 @@ console.log("DEBUG: Sending request body:", requestBody);
     // Reset sort to default
     currentSort = { field: "obligations", order: "desc" };
 
-    // Update sort button UI using IDs instead of text content
-    const spendingButton = document.getElementById('spendingSort');
-    const programNameButton = document.getElementById('programNameSort');
-    
-    spendingButton.classList.remove('usa-button--outline');
-    programNameButton.classList.add('usa-button--outline');
+    // Update sort button UI
+    updateSortButtons();
 
     window.history.pushState({}, "", window.location.pathname);
     // Re-fetch data with cleared filters and default sort

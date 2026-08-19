@@ -310,6 +310,9 @@
       }
 
       function createCategoryChart() {
+        const tabletWidthCutoff = 768;
+        const desktopBarAllowance = 40;
+        const tabletBarAllowance = 100;
         const groomedCategoriesChartData = [...categoriesChartData]
           .sort((a, b) => (b.total_obs || 0) - (a.total_obs || 0))
           .map((category) => ({
@@ -320,6 +323,19 @@
 
         const { divisor, suffix } = getFormattingInfo(groomedCategoriesChartData);
 
+        let maxWidth = 180;
+        let chartHeight = groomedCategoriesChartData.length * desktopBarAllowance;
+        let marginLeft = 250;
+        let maxLines = 2;
+
+        // for tablet and smaller, make bars taller to allow more wrapping
+        if (window.innerWidth <= tabletWidthCutoff) {
+          maxWidth = 120;
+          chartHeight = groomedCategoriesChartData.length * tabletBarAllowance;
+          marginLeft = 150;
+          maxLines = 3;
+        }
+
         createBarChart(groomedCategoriesChartData, {
           yLabel: "Categories",
           valueFormatter: (value) => formatObligations(value),
@@ -329,6 +345,10 @@
               window.location.href = category.permalink;
             }
           },
+          maxWidth: maxWidth,
+          chartHeight: chartHeight,
+          marginLeft: marginLeft,
+          maxLines: maxLines
         });
       }
 
@@ -342,6 +362,7 @@
         obligationsDownloadButton.addEventListener("click", downloadObligationsData);
       }
 
+      window.addEventListener("resize", createCategoryChart);
       createCategoryChart();
       createObligationsPieChart(obligationData);
 

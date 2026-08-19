@@ -600,7 +600,7 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
 
 # Previously, obligations were grouped by award first action fiscal year:
 # At this time, only the total of outlayed funds per award is available from
-# USASpending.gov. This means it is not possible to aggregate outlays in the
+# USAspending.gov. This means it is not possible to aggregate outlays in the
 # same way that obligations are aggregated (i.e., by transaction action date).
 # Because of this, outlays must be aggregated by a consistent date figure, to
 # ensure they're not double counted and can be displayed consistently.
@@ -733,18 +733,18 @@ def convert_to_url_string(s):
 
 
 def load_usaspending_initial_files():
-    """Loads non-delta USASpending.gov CSV files into a SQLite Database for
+    """Loads non-delta USAspending.gov CSV files into a SQLite Database for
     further transformation."""
     print("Starting load_usaspending_initial_files")
 
     print("Dropping all tables from temp_data.db")
 
-    # create assistance table for USASpending.gov data
+    # create assistance table for USAspending.gov data
     temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
     temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
     temp_conn.commit()
 
-    # create contracts table for USASpending.gov data
+    # create contracts table for USAspending.gov data
     temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
     temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
     temp_conn.commit()
@@ -827,7 +827,7 @@ def load_usaspending_delta_files():
 
 
 def transform_and_insert_usaspending_aggregation_data():
-    """Queries USASpending.gov data in the temporary database and inserts the
+    """Queries USAspending.gov data in the temporary database and inserts the
     results into the transformed database."""
     print("Starting transform_and_insert_usaspending_aggregation_data")
 

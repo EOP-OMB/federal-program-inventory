@@ -30,7 +30,7 @@ Tests check:
 # Notes on Mocking
 
 - File system operations (using unittest.mock.patch)
-- External API calls to SAM.gov and USASpending.gov
+- External API calls to SAM.gov and USAspending.gov
 - Database operations (using in-memory SQLite)
 - This way is more reliable and efficient
 

@@ -204,13 +204,14 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       };
       const percentText = totalValue > 0 ? formatPercent(percentValue) : '';
       const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
-      const resolvedDataSource = d.data.data_source || resolveProgramDataSource({
-        programType: d.data.program_type || d.data.programType || '',
+      const programType = d.data.program_type || d.data.programType || '';
+      const dataSourceLine = `<br/>${getProgramDataSourceTooltipText({
+        dataSource: d.data.data_source || null,
+        programType,
         dataType: 'expenditure',
         year: options.year,
         currentFiscalYear: options.currentFiscalYear
-      });
-      const dataSourceLine = `<br/>Data source: ${resolvedDataSource}`;
+      })}`;
       tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}${dataSourceLine}`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 10) + 'px')

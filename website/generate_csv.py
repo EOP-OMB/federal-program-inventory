@@ -6,6 +6,11 @@ from pathlib import Path
 
 BIG_UNIFIED_TABLE_FIRST_YEAR = "2015"
 
+def _strip_newlines(value):
+    if isinstance(value, str):
+        return value.replace("\r", "").replace("\n", "")
+    return value
+
 def generate_csv_from_query(query, filename, params = (), zip = False) -> None:
     db_path = Path(os.environ.get("SQLITE_DB_PATH", "/app/transformed_data.db"))
     if not db_path.exists():
@@ -27,9 +32,10 @@ def generate_csv_from_query(query, filename, params = (), zip = False) -> None:
         headers = [description[0] for description in cursor.description]
 
     with csv_file.open("w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, quotechar='"', quoting=csv.QUOTE_ALL)
         writer.writerow(headers)
-        writer.writerows(rows)
+        sanitized_rows = [[_strip_newlines(cell) for cell in row] for row in rows]
+        writer.writerows(sanitized_rows)
 
     print(f"Wrote {len(rows)} rows to {csv_file}")
 
