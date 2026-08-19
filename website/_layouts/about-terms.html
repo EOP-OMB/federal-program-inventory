@@ -12,12 +12,10 @@ permalink: /about/terms
     <h2 class="margin-top-0" id="overview">Overview</h2>
     <div class="usa-prose">
       <p>
-        This website leverages publicly accessible assistance listings (AL) data from SAM.gov and financial
-        data from USAspending.gov, linked to assistance listings through the AL number, as well as tax
-        expenditure and interest data from Treasury.gov and improper payment data from paymentaccuracy.gov.
-        The categories used to categorize programs can be found in the Annual Publication of Assistance Listings
-        Functional Index, as well as on Treasury's publication of Tax Expenditures. Agencies submit data for their
-        programs directly to these sources.
+        This website leverages already existing, publicly accessible assistance listings (AL) data from SAM.gov and financial
+        reporting data from USAspending.gov &mdash; linked through the AL number; tax
+        expenditure and interest data from Treasury.gov; and improper payment data from paymentaccuracy.gov.
+        Agencies submit data for their programs directly to these sources, which is then consolidated and organized on this site by program.
       </p>
     </div>
     <h2 id="updates">Data Updates</h2>
@@ -27,16 +25,16 @@ permalink: /about/terms
       </p>
       <ul>
         <li>SAM.gov assistance listings: {{ site.data.constants_global_dates.SAMGOV_ASSISTANCE_LISTINGS_DATE }}</li>
-        <li>USASpending.gov transaction data: {{ site.data.constants_global_dates.USASPENDING_TRANSACTION_DATE }}</li>
+        <li>USAspending.gov transaction data: {{ site.data.constants_global_dates.USASPENDING_TRANSACTION_DATE }}</li>
         <li>Treasury.gov tax expenditures: {{ site.data.constants_global_dates.TREASURYGOV_TAX_EXPEND_DATE }}</li>
         <li>PaymentAccuracy.gov improper payment data: September 30, {{ site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE }}</li>
       </ul>
       <p>
         OMB also drew from other publicly available Federal Government websites to gather select program-related
-        information reflected on this site’s most recent Spring, 2026 update.
+        information reflected on this site’s most recent 2026 update.
       </p>
       <p>
-        See <a href="https://www.usaspending.gov/data/about-the-data-download.pdf" target="_blank">USASpending’s “About the Data” resource</a> for a detailed explanation of the financial data.
+        See <a href="https://www.usaspending.gov/data/about-the-data-download.pdf" target="_blank">USAspending’s “About the Data” resource</a> for a detailed explanation of the financial data.
       </p>
       <p>
         To reduce duplicative reporting burden, the FPI has been designed to pull from other publicly available
@@ -45,7 +43,7 @@ permalink: /about/terms
         certain data is presented on the FPI website in the way it appears.
       </p>
     </div>
-    <h2 id="download-table">Data download table</h2>
+    <h2 id="download-table">Data Download Table</h2>
     <p>
       The following datasets are available for download to reconstruct the information presented
       on the FPI website.
@@ -66,18 +64,19 @@ permalink: /about/terms
             <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
             <td data-label="Description">
               <p>This dataset includes all federal assistance listings reported SAM.gov, select acquisition programs and interest on the public debt
-              from USASpending.gov, and tax expenditures from Treasury.gov.</p>
+              from USAspending.gov, and tax expenditures from Treasury.gov.</p>
 
               <p>For federal assistance listings, the values for current year obligations are SAM.gov estimates. The values for all outlays and
-              historical obligations are pulled from USASpending.gov. For acquisition programs, the values for obligations and outlays are
-              pulled from USASpending.gov. For interest on the public debt, the values for outlays are pulled from USASpending.gov. For tax
+              historical obligations are pulled from USAspending.gov. For acquisition programs, the values for obligations and outlays are
+              pulled from USAspending.gov. For interest on the public debt, the values for outlays are pulled from USAspending.gov. For tax
               expenditures, outlays and revenue losses are pulled from Treasury.gov.</p>
 
               <p>Likewise, each program is mapped to a Government-wide Objective (GWO).</p>
 
               <p>Fields include Program ID, Program Name, Popular Name, Program Description, Program Type, Top Agency Name, Subagency
               Name, GWO ID, GWO Name, Fiscal Year, Outlay, Obligation, Expenditure, Forgone Revenue, SAM Estimated Obligation, and
-              USASpending Obligation.</p>
+              USAspending Obligation. By default, Excel will ask to convert large values in the CSV into scientific notation.
+              Allow for the conversions to capture the accurate values.</p>
             </td>
           </tr>
           <tr>
@@ -124,7 +123,7 @@ permalink: /about/terms
     </div>
 
 
-    <h2 id="explanation">Explanation of terms and concepts</h2>
+    <h2 id="explanation">Explanation of Terms and Concepts</h2>
     <div class="key-term padding-2 margin-top-2">
       <h3>Assistance Listing</h3>
       <div class="usa-prose">
@@ -221,8 +220,8 @@ permalink: /about/terms
           Program Outcomes. The taxonomy makes it easier to find programs that contribute to common, shared
           Objectives and Outcomes while improving public understanding about what Federal programs currently
           operate, and how programs link to budget, performance, and other information. These linkages also
-          provide important context for agency activities. Each program in the FPI is mapped to a Government-
-          wide Objective, and up to three Program Outcome(s) to which they are best aligned.
+          provide important context for agency activities. Each program in the FPI is mapped to a Government-wide
+          Objective, and up to three Program Outcome(s) to which they are best aligned.
         </p>
       </div>
     </div>
@@ -282,7 +281,7 @@ permalink: /about/terms
           assistance listing via the table below.
         </p>
         <div id="about-obligation-table-container">
-          <table class="usa-table">
+          <table class="usa-table" id="obligations-terms-table">
             <tbody class="text-base-dark">
               <tr>
                 <td></td>
@@ -341,7 +340,7 @@ permalink: /about/terms
         </p>
         <p>
           Note that the obligations information reported on SAM.gov may not match what is reported on
-          USASpending.gov. Below is a non-exhaustive set of explanations that may explain differences between
+          USAspending.gov. Below is a non-exhaustive set of explanations that may explain differences between
           these data sources:
         </p>
         <ol>
@@ -349,20 +348,20 @@ permalink: /about/terms
             Due to the timing of reporting in the two systems, data from one system may be more up-to-date than the other.
           </li>
           <li>
-            USASpending.gov total obligations include all transactions that occur within a fiscal year,
+            USAspending.gov total obligations include all transactions that occur within a fiscal year,
             including de-obligations for awards made in prior fiscal years. SAM.gov data may or may not
             include these de-obligations.
           </li>
           <li>
             There are different ways to account for obligations made through loans or insurance. Agencies
             were not instructed on how to account for these obligations on SAM.gov, and may have chosen
-            a different method than what is reported on USASpending.gov.
+            a different method than what is reported on USAspending.gov.
           </li>
         </ol>
         <p>
-          For the purposes of this inventory, the website displays estimated obligation from sam.gov for the most
+          For the purposes of this inventory, the website displays estimated obligations from SAM.gov for the most
           current fiscal year and the obligations information from USAspending.gov for all preceding years to
-          arrive at the most accurate picture of the funding level for a given program.
+          arrive at the most accurate picture of the spending level for a given program.
         </p>
         <p>Data sources: SAM.gov and USAspending.gov</p>
       </div>
@@ -373,18 +372,20 @@ permalink: /about/terms
       <div class="usa-prose">
         <p>
           Outlay means a payment to liquidate an obligation (other than the repayment of debt principal or other
-          disbursements that are &quot;means of financing&quot; transactions). Outlays generally are equal to cash
-          disbursements but also are recorded for cash-equivalent transactions, such as the issuance of
-          debentures to pay insurance claims, and in a few cases are recorded on an accrual basis such as interest
-          on public issues of the public debt. In short, Outlays are the measure of Government spending that has
-          occurred, and generally, will lag behind obligations as a matter of order of operations.
+          disbursements that are &quot;means of financing&quot; transactions). Means of financing refers to borrowing,
+          debt repayment, the change in cash balances, and certain other transactions that are involved in financing a
+          deficit or using a surplus. By definition, the means of financing are not treated as receipts or outlays and
+          so are non-budgetary. Outlays generally are equal to cash disbursements but also are recorded for
+          cash-equivalent transactions, such as the issuance of debentures to pay insurance claims,
+          and in a few cases are recorded on an accrual basis such as interest
+          on public issues of the public debt. In short, outlays are the measure of Government spending that has
+          occurred (not just promised), and generally, will lag behind obligations as a matter of order of operations.
         </p>
         <p>
-          For the purposes of this inventory, the website displays outlay information from USAspending.gov for all
-          years for a given program.
+          For the purposes of this inventory, the website displays outlay information from USAspending.gov.
         </p>
         <p>
-          Data source: Paymentaccuracy.gov
+          Data source: USAspending.gov
         </p>
       </div>
     </div>
@@ -395,7 +396,7 @@ permalink: /about/terms
         <p>
           For the purposes of this inventory, a program is an individual assistance listing as submitted by agencies
           to SAM.gov, an individual tax expenditure as described by Treasury, or the sum of interest on the public
-          debt. With the Spring, 2026 update, select acquisition programs are also now represented.
+          debt. With the 2026 update, select acquisition programs are also now represented.
         </p>
         <ul>
           <li>
@@ -407,9 +408,14 @@ permalink: /about/terms
             <strong>Tax Expenditures.</strong> Tax expenditures are defined by law as “revenue losses attributable to
             provisions of the Federal tax laws which allow a special exclusion, exemption, or deduction from
             gross income or which provide a special credit, a preferential rate of tax, or a deferral of tax
-            liability.” These exceptions may be viewed as alternatives to other policy instruments, such as
+            liability.” Revenue losses are forgone revenue, i.e. money that never entered the Treasury.
+            These exceptions may be viewed as alternatives to other policy instruments, such as
             spending or regulatory programs. For tax expenditure programs, amounts shown are the sum of
-            revenue losses and outlays. Learn more at <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures" target="_blank">Treasury.gov</a>.
+            revenue losses and outlays. For purposes of comparison to budget data, amounts will not align
+            as budget data maintains a strict separation between reductions in revenue, which are acknowledged on the receipt
+            side of the budget, and are never combined with outlays. In addition, tax
+            expenditures are not simply addictive due to the interaction effects of multiple provisions.
+            Learn more at <a href="https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures" target="_blank">Treasury.gov</a>.
           </li>
           <li>
             <strong>Interest on the Public Debt.</strong> Interest expenses the government pays on its outstanding loans.
@@ -427,7 +433,7 @@ permalink: /about/terms
           </li>
         </ul>
         <p>
-          Data sources: Sam.gov, USAspending.gov, Treasury.gov
+          Data sources: SAM.gov, USAspending.gov, Treasury.gov
         </p>
       </div>
     </div>

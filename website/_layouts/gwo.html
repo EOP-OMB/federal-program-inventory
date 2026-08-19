@@ -49,7 +49,7 @@ footer_include: _footer-gwo-pon.html
         {% include scripts/_data-utils.html programs=page.where_used %}
 
         <div class="grid-row grid-gap margin-y-2">
-          <div class="grid-col-8 grid-row">
+          <div class="desktop:grid-col-8 tablet:grid-col-12 grid-row">
             {% assign program_count = page.where_used.size | default: 0 %}
             {% include components/_info-card.html title="Programs"
             display_number=program_count grid="grid-col" margin="margin-right-1" %} 

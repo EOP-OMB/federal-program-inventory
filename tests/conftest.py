@@ -196,7 +196,7 @@ def sample_organizations_data():
 
 @pytest.fixture
 def sample_usaspending_hash_data():
-    """Sample USASpending.gov hash data."""
+    """Sample USAspending.gov hash data."""
     return {
         "10.001": "abc123hash",
         "10.002": "def456hash"

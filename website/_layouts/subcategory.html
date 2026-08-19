@@ -84,9 +84,18 @@ footer_include: _footer-subcategory.html
     </button>
   </div>
 
+  {% if page.total_num_programs == 0 %}
   <div class="border-1px border-ink radius-md margin-bottom-5">
     <div class="margin-205">
-      <div class="display-flex margin-bottom-2">
+      <p class="font-heading-lg line-height-heading-3 margin-y-2">
+        No programs reported for this subcategory at the moment.
+      </p>
+    </div>
+  </div>
+  {% else %}
+  <div class="border-1px border-ink radius-md margin-bottom-5">
+    <div class="margin-205">
+      <div class="display-flex margin-bottom-2 flex-wrap flex-align-end">
         <div class="padding-right-5 display-flex flex-column">
           <div class="text-primary font-heading-3xl text-bold">
             {{ page.total_num_programs }}
@@ -108,8 +117,9 @@ footer_include: _footer-subcategory.html
 
       <div
         class="display-flex flex-justify-start flex-align-center grid-row grid-gap-3"
+        id="view-by-selector"
       >
-        <div class="font-heading-lg line-height-heading-2">
+        <div class="font-heading-lg line-height-heading-2 display-flex">
           View by:
         </div>
 
@@ -158,11 +168,11 @@ footer_include: _footer-subcategory.html
         {% endif %}
       </div>
 
-      <svg id="myChart" class="width-full" height="500" aria-label="Chart displaying data based on selection" role="img"></svg>
+      <svg id="myChart" class="width-full" aria-label="Chart displaying data based on selection" role="img"></svg>
 
       <!-- Three tables, hidden/shown dynamically -->
       <div id="table-container">
-        <table class="usa-table width-full margin-bottom-0" id="programs-table">
+        <table class="usa-table width-full margin-bottom-0 usa-table--stacked" id="programs-table">
           <thead>
             <tr>
               <th
@@ -197,7 +207,7 @@ footer_include: _footer-subcategory.html
         ></div>
 
         <table
-          class="usa-table width-full margin-bottom-0"
+          class="usa-table width-full margin-bottom-0 usa-table--stacked"
           id="agencies-table"
           style="display: none"
         >
@@ -235,7 +245,7 @@ footer_include: _footer-subcategory.html
         ></div>
 
         <table
-          class="usa-table width-full margin-bottom-0"
+          class="usa-table width-full margin-bottom-0 usa-table--stacked"
           id="applicant-types-table"
           style="display: none"
         >
@@ -334,4 +344,5 @@ footer_include: _footer-subcategory.html
       </div>
     </div>
   </div>
+  {% endif %}
 </div>

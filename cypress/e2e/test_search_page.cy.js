@@ -34,6 +34,16 @@ describe('Search page', () => {
       .should('contain.text', '100,000 Strong');
   });
 
+  it('relevancy sorting', () => {
+    cy.viewport('macbook-16');
+    cy.intercept('POST', '/api/search/programsTable').as('programsTable');
+    cy.visit('test/search.html');
+    cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
+
+    cy.get('#relevancySort').click();
+    cy.wait('@programsTable').its('request.body.sort_field').should('eq', 'relevancy');
+  });
+
   it('serializes and restores agency, gwo, and pon filters from URL', () => {
     cy.viewport('macbook-16');
     cy.intercept('POST', '/api/search/programsTable').as('programsTable');
@@ -153,6 +163,33 @@ describe('Search page', () => {
         expect(filteredCountText).to.eq($globalCount.text().trim());
       });
     });
+  });
+
+  it('loading results screenshot', () => {
+    cy.viewport('macbook-16');
+    cy.intercept('POST', '/api/search/programsTable', (req) => {
+      req.on('response', (res) => {
+        // Keep the response delayed long enough to capture the loading state
+        res.setDelay(5000);
+      });
+    }).as('programsTable');
+
+    cy.visit('test/search.html');
+
+    cy.get('#program-list')
+      .should('have.attr', 'aria-busy', 'true')
+      .find('.program-search-skeleton')
+      .should('have.length.at.least', 1);
+
+    // Freeze pulse animation so the snapshot is deterministic
+    cy.get('.program-search-skeleton .skeleton-line').invoke(
+      'css',
+      'animation',
+      'none'
+    );
+    cy.get('#program-list').compareSnapshot('search_page_loading');
+
+    cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
   });
 
   // full page screenshot and filtering is tested by some tag tests

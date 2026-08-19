@@ -141,16 +141,6 @@
     padding-bottom: 1rem;
   }
 
-  /* Optimize table on tablet */
-  .taxonomy-gwo-table {
-    font-size: 0.875rem;
-  }
-
-  .taxonomy-gwo-table th,
-  .taxonomy-gwo-table td {
-    padding: 0.5rem;
-  }
-
   /* Ensure table doesn't overflow on tablet */
   .taxonomy-gwo-section {
     overflow-x: auto;
@@ -332,120 +322,56 @@
   }
 
   /* Table responsiveness */
-  .usa-table {
+  .usa-table:not(.usa-table--stacked) {
     font-size: 0.8rem !important;
     width: 100%;
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
     display: table;
+
+    thead {
+      display: table-header-group;
+    }
+
+    tbody {
+      display: table-row-group;
+    }
+
+     tr {
+      display: table-row;
+    }
+
+    th, td {
+      display: table-cell;
+      text-align: left;
+      padding: 0.5rem;
+      white-space: nowrap;
+    }
   }
 
-  .usa-table thead {
-    display: table-header-group;
-  }
-
-  .usa-table tbody {
-    display: table-row-group;
-  }
-
-  .usa-table tr {
-    display: table-row;
-  }
-
-  .usa-table th,
-  .usa-table td {
-    display: table-cell;
-    text-align: left;
-    padding: 0.5rem;
-    white-space: nowrap;
-  }
-
-  .usa-table th {
+  #obligations-terms-table {
     font-weight: bold;
     background-color: #f5f5f5;
   }
 
-  /* Category page tables: keep content readable and within mobile viewport */
-  #table-container {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  #sub-categories-table,
-  #programs-table,
-  #agencies-table,
-  #applicant-types-table {
-    width: 100%;
+  #taxonomy-gwo-table {
+    font-size: 0.7em;
     table-layout: fixed;
-    font-size: 0.75rem;
-  }
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
 
-  #sub-categories-table th,
-  #sub-categories-table td,
-  #programs-table th,
-  #programs-table td,
-  #agencies-table th,
-  #agencies-table td,
-  #applicant-types-table th,
-  #applicant-types-table td {
-    padding: 0.375rem;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    vertical-align: top;
-  }
+    th, td {
+      padding: 0.25rem;
+      text-wrap-mode: wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      vertical-align: top;
+    }
 
-  #sub-categories-table th.width-mobile-lg,
-  #programs-table th.width-mobile-lg,
-  #agencies-table th.width-mobile-lg,
-  #applicant-types-table th.width-mobile-lg,
-  #sub-categories-table th.width-mobile,
-  #programs-table th.width-mobile,
-  #agencies-table th.width-mobile,
-  #applicant-types-table th.width-mobile {
-    width: auto;
-  }
-
-  #sub-categories-table th:nth-child(1),
-  #sub-categories-table td:nth-child(1),
-  #programs-table th:nth-child(1),
-  #programs-table td:nth-child(1),
-  #agencies-table th:nth-child(1),
-  #agencies-table td:nth-child(1) {
-    width: 50%;
-  }
-
-  #sub-categories-table th:nth-child(2),
-  #sub-categories-table td:nth-child(2),
-  #sub-categories-table th:nth-child(3),
-  #sub-categories-table td:nth-child(3),
-  #programs-table th:nth-child(2),
-  #programs-table td:nth-child(2),
-  #programs-table th:nth-child(3),
-  #programs-table td:nth-child(3),
-  #agencies-table th:nth-child(2),
-  #agencies-table td:nth-child(2),
-  #agencies-table th:nth-child(3),
-  #agencies-table td:nth-child(3) {
-    width: 25%;
-  }
-
-  #applicant-types-table th:nth-child(1),
-  #applicant-types-table td:nth-child(1) {
-    width: 65%;
-  }
-
-  #applicant-types-table th:nth-child(2),
-  #applicant-types-table td:nth-child(2) {
-    width: 35%;
-  }
-
-  #sub-categories-table th .header-text,
-  #agencies-table th .header-text,
-  #applicant-types-table th .header-text {
-    white-space: normal;
-    line-height: 1.2;
+    th:first-child,
+    td:first-child {
+      width: 50%;
+    }
   }
 
   /* GWO/PON related programs table: fit all three columns on mobile */
@@ -671,39 +597,6 @@
     font-size: 0.875rem;
   }
 
-  /* Table responsive on mobile - match sub-categories-table pattern */
-  .taxonomy-gwo-table {
-    font-size: 0.75rem;
-    width: 100%;
-    table-layout: fixed;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .taxonomy-gwo-table th,
-  .taxonomy-gwo-table td {
-    padding: 0.375rem;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    vertical-align: top;
-  }
-
-  .taxonomy-gwo-table th:nth-child(1),
-  .taxonomy-gwo-table td:nth-child(1) {
-    width: 50%;
-  }
-
-  .taxonomy-gwo-table th:nth-child(2),
-  .taxonomy-gwo-table td:nth-child(2) {
-    width: 50%;
-  }
-
-  .taxonomy-gwo-table th[data-sortable] {
-    font-weight: normal;
-    line-height: 1.2;
-  }
-
   /* Pagination stack on mobile */
   .taxonomy-pagination-wrap {
     display: flex;
@@ -727,6 +620,10 @@
     padding: 0.5rem 0.75rem;
     font-size: 0.75rem;
     min-width: auto;
+  }
+
+  #purpose-pane {
+    border-right: none !important;
   }
 }
 
@@ -807,29 +704,6 @@
 
   .taxonomy-filter-option-row {
     margin-bottom: 0.15rem;
-  }
-
-  .taxonomy-gwo-table {
-    font-size: 0.7rem;
-    table-layout: fixed;
-  }
-
-  .taxonomy-gwo-table th,
-  .taxonomy-gwo-table td {
-    padding: 0.25rem;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-
-  .taxonomy-gwo-table th:nth-child(1),
-  .taxonomy-gwo-table td:nth-child(1) {
-    width: 50%;
-  }
-
-  .taxonomy-gwo-table th:nth-child(2),
-  .taxonomy-gwo-table td:nth-child(2) {
-    width: 50%;
   }
 
   .taxonomy-pagination-wrap {

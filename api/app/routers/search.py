@@ -12,19 +12,20 @@ router = APIRouter(
 # Constants
 INDEX_NAME = "programs"
 SEARCH_FIELDS = {
-    "title": {"boost": 2},
+    "title": {"boost": 4},
     "objectives": {"boost": 1},
     "cfda": {"boost": 1},
-    "popularName": {"boost": 1},
-    "gwo": {"boost": 1},
-    "pons": {"boost": 1}
+    "popularName": {"boost": 3},
+    "gwo": {"boost": 2},
+    "pons": {"boost": 2}
 }
 VALID_SORT_FIELDS = {
     "cfda": "cfda.keyword",
     "title": "title.keyword",
     "objectives": "objectives.keyword",
     "popularName": "popularName.keyword",
-    "obligations": "obligations"
+    "obligations": "obligations",
+    "relevancy": "_score"
 }
 
 def build_multi_match_query(query: str) -> Dict[str, Any]:
@@ -341,9 +342,13 @@ def search_programs(
             search_query["bool"]["filter"] = filter_conditions
 
         # Build complete elasticsearch query
+        sort_clauses = [{VALID_SORT_FIELDS[sort_field]: {"order": sort_order}}]
+        if sort_field == "relevancy":
+            sort_clauses.append({"obligations": {"order": "desc"}})
+
         es_query = {
             "query": search_query,
-            "sort": [{VALID_SORT_FIELDS[sort_field]: {"order": sort_order}}],
+            "sort": sort_clauses,
             "from": (page - 1) * page_size,
             "size": page_size,
             "aggs": build_aggregations()

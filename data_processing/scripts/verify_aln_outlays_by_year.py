@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Download USASpending transaction data for a given Assistance Listing Number (ALN),
+Download USAspending transaction data for a given Assistance Listing Number (ALN),
 group by assistance_award_unique_key, and bucket outlays by the award's first
 (earliest) action_date fiscal year.
 
 Obligations are summed by each transaction's action_date fiscal year.
 
-This script uses the USASpending "download transactions" API so we can request
+This script uses the USAspending "download transactions" API so we can request
 specific columns and handle larger result sets via date-range chunking.
 """
 
@@ -151,7 +151,7 @@ def build_filters(
     date_range: DateRange,
 ) -> Dict[str, Any]:
     # The download endpoint uses the same general filter structure as advanced search downloads.
-    # For ALN/CFDA filters, USASpending uses program_numbers (e.g., "10.555").
+    # For ALN/CFDA filters, USAspending uses program_numbers (e.g., "10.555").
     return {
         "award_type_codes": award_type_codes,
         "program_numbers": [aln],
@@ -323,7 +323,7 @@ def parse_action_date(date_str: str) -> Optional[dt.date]:
 
 
 def parse_last_modified_date(value: str) -> Optional[dt.date]:
-    # USASpending commonly represents last_modified_date as an ISO date or timestamp;
+    # USAspending commonly represents last_modified_date as an ISO date or timestamp;
     # we only need the date portion.
     s = (value or "").strip()
     if not s:
@@ -390,7 +390,7 @@ def print_last_modified_exceeds_years(years: set[int], max_action_date: Optional
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Verify outlays by ALN/CFDA by downloading USASpending transactions, "
+            "Verify outlays by ALN/CFDA by downloading USAspending transactions, "
             "grouping by assistance_award_unique_key, bucketing outlays by the "
             "award's first (earliest) action_date fiscal year, and summing "
             "obligations by transaction fiscal year."

@@ -197,25 +197,25 @@
 
         if (activeTable === "subCategory") {
           row.innerHTML = `
-                        <td>
+                        <td data-label="Sub-category">
                           <a href="${item.permalink}" class="usa-link">${
             item.title
           }</a>
                         </td>
-                        <td>${item.total_num_programs || "N/A"}</td>
-                        <td>${
+                        <td data-label="Number of Programs">${item.total_num_programs || "N/A"}</td>
+                        <td data-label="Amount">${
                           item.total_obs ? formatCurrency(item.total_obs) : "$0"
                         }</td>
                         `;
         } else if (activeTable === "agency") {
           row.innerHTML = `
-                        <td>
+                        <td data-label="Agency">
                           <a href="javascript:void(0);" class="usa-link agency-link">${
                             item.title
                           }</a>
                         </td>
-                        <td>${item.total_num_programs || 0}</td>
-                        <td>${
+                        <td data-label="Number of Programs">${item.total_num_programs || 0}</td>
+                        <td data-label="Amount">${
                           item.total_obs ? formatCurrency(item.total_obs) : "$0"
                         }</td>
                         `;
@@ -242,12 +242,12 @@
           });
         } else if (activeTable === "applicant") {
           row.innerHTML = `
-                        <td>
+                        <td data-label="Applicant Type">
                           <a href="javascript:void(0);" class="usa-link applicant-link">${
                             item.title
                           }</a>
                         </td>
-                        <td>${item.total_num_programs || 0}</td>
+                        <td data-label="Number of Programs">${item.total_num_programs || 0}</td>
                         `;
           row.querySelector(".applicant-link").addEventListener("click", () => {
             const filters = {
@@ -628,15 +628,25 @@
       }
     }
 
+    function refreshChart() {
+      const selectedOption = document.querySelector(
+        "[name='view-options']:checked"
+      );
+      const selectedType = selectedOption ? selectedOption.id : "subCategory";
+      initializeChart(selectedType);
+    }
+
     // Listen for radio button changes
     document.querySelectorAll("[name='view-options']").forEach((radio) => {
-      radio.addEventListener("change", (event) => {
-        initializeChart(event.target.id);
+      radio.addEventListener("change", () => {
+        refreshChart();
       });
     });
 
+    window.addEventListener("resize", refreshChart);
+
     // Initialize the default chart
-    initializeChart("subCategory");
+    refreshChart();
 
     // End Chart
     setDropdownsFromUrl();

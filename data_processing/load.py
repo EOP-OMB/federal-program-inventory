@@ -602,19 +602,23 @@ def generate_category_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fi
 
 
 def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for subcategories with obligations from both regular and other programs."""
+    """Generate markdown files for subcategories under categories with programs, including empty ones."""
     recreate_directory(output_dir)
 
-    # Get all subcategories that have at least one program
+    # Focus areas under categories that appear in Explore (same scope as dropdown hierarchy),
+    # including empty subcategories so their permalinks resolve
     cursor.execute("""
-        SELECT
-            ptl.taxonomy_focus_area_id AS id,
+        SELECT DISTINCT
+            f.id AS id,
             f.focus_area AS title,
-            ptl.taxonomy_category_id AS parent_id,
+            c.id AS parent_id,
             c.category AS parent_title
-        FROM program_taxonomy_lookup ptl
-        JOIN taxonomy_category c ON ptl.taxonomy_category_id = c.id
-        JOIN taxonomy_focus_area f ON ptl.taxonomy_focus_area_id = f.id
+        FROM taxonomy_focus_area f
+        JOIN taxonomy_category c ON f.category_id = c.id
+        WHERE c.id IN (
+            SELECT DISTINCT taxonomy_category_id FROM program_taxonomy_lookup
+        )
+        ORDER BY c.category, f.focus_area
     """)
 
     subcategories = cursor.fetchall()
@@ -635,16 +639,12 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
         """, (subcat['id'],))
 
         programs = cursor.fetchall()
-        if not programs:
-            continue
-
         program_ids = [p['id'] for p in programs]
 
         # Initialize total obligations
         total_subcategory_obs = 0.0
         program_obligations = {}
 
-        program_obligations = {}
         if program_ids:
             program_obs, total_obs = get_assistance_listing_expenditures(
                 cursor, program_ids, fiscal_year)
@@ -1561,30 +1561,30 @@ def build_data_sources_config() -> Dict[str, Any]:
     # Tax expenditure mapping (includes revenue_losses for forgone_revenue)
     tax_expenditure_sources = {
         'obligations': 'Treasury.gov',
-        'outlays': 'USASpending.gov',
-        'revenue_losses': 'USASpending.gov',
+        'outlays': 'USAspending.gov',
+        'revenue_losses': 'USAspending.gov',
         'expenditure': 'Treasury.gov'
     }
     
     # Interest mapping (includes revenue_losses for forgone_revenue)
     interest_sources = {
-        'obligations': 'USASpending.gov',
-        'outlays': 'USASpending.gov',
-        'revenue_losses': 'USASpending.gov',
-        'expenditure': 'USASpending.gov'
+        'obligations': 'USAspending.gov',
+        'outlays': 'USAspending.gov',
+        'revenue_losses': 'USAspending.gov',
+        'expenditure': 'USAspending.gov'
     }
     
-    # Default mapping: all spending types point to USASpending.gov (no revenue_losses)
+    # Default mapping: all spending types point to USAspending.gov (no revenue_losses)
     default_usaspending = {
-        'obligations': 'USASpending.gov',
-        'outlays': 'USASpending.gov',
-        'expenditure': 'USASpending.gov'
+        'obligations': 'USAspending.gov',
+        'outlays': 'USAspending.gov',
+        'expenditure': 'USAspending.gov'
     }
     
     # Assistance listing current year (SAM.gov for obligations/expenditure, no revenue_losses)
     assistance_listing_current = {
         'obligations': 'SAM.gov',
-        'outlays': 'USASpending.gov',
+        'outlays': 'USAspending.gov',
         'expenditure': 'SAM.gov'
     }
     
