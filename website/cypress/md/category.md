@@ -1,48 +1,46 @@
 ---
-categories:
-- permalink: /category/agricultural
-  title: Agricultural
-- permalink: /category/business-and-commerce
-  title: Business and Commerce
-- permalink: /category/community-development
-  title: Community Development
-- permalink: /category/consumer-protection
-  title: Consumer Protection
-- permalink: /category/cultural-affairs
-  title: Cultural Affairs
-- permalink: /category/disaster-prevention-and-relief
-  title: Disaster Prevention and Relief
-- permalink: /category/education
-  title: Education
-- permalink: /category/employment-and-labor
-  title: Employment and Labor
-- permalink: /category/energy
-  title: Energy
-- permalink: /category/environmental-quality
-  title: Environmental Quality
-- permalink: /category/food-and-nutrition
-  title: Food and Nutrition
-- permalink: /category/general-government
-  title: General Government
-- permalink: /category/health
-  title: Health
-- permalink: /category/housing
-  title: Housing
-- permalink: /category/income-security-and-social-services
-  title: Income Security and Social Services
-- permalink: /category/international-affairs
-  title: International Affairs
-- permalink: /category/law--justice--and-legal-services
-  title: Law, Justice, and Legal Services
-- permalink: /category/national-defense
-  title: National Defense
-- permalink: /category/natural-resources
-  title: Natural Resources
-- permalink: /category/science-and-technology
-  title: Science and Technology
-- permalink: /category/transportation
-  title: Transportation
-categories_hierarchy:
+agencies: '[{"title":"Social Security Administration","total_num_programs":5,"total_obs":1632918516143.0},{"title":"Department
+  of the Treasury","total_num_programs":73,"total_obs":1538711105932.24},{"title":"Department
+  of Veterans Affairs","total_num_programs":11,"total_obs":188391245050.25},{"title":"Department
+  of Health and Human Services","total_num_programs":10,"total_obs":24325695516.910004},{"title":"Railroad
+  Retirement Board","total_num_programs":2,"total_obs":14511445136.77},{"title":"Pension
+  Benefit Guaranty Corporation","total_num_programs":1,"total_obs":6322223059.34},{"title":"Department
+  of Labor","total_num_programs":4,"total_obs":2719147868.28},{"title":"Department
+  of the Interior","total_num_programs":3,"total_obs":43697554.9},{"title":"National
+  Credit Union Administration","total_num_programs":1,"total_obs":438607.98},{"title":"Department
+  of Housing and Urban Development","total_num_programs":4,"total_obs":-197116769.81}]'
+applicant_types: '[{"title":"State","total_num_programs":9},{"title":"U.S. State Government
+  (including the District of Columbia)","total_num_programs":8},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":7},{"title":"Individual/Family","total_num_programs":7},{"title":"Nonprofit
+  Organization","total_num_programs":7},{"title":"U.S. Territory (or Possession) Government
+  (including freely-associated states)","total_num_programs":7},{"title":"Local","total_num_programs":6},{"title":"Other","total_num_programs":6},{"title":"Unrestricted
+  by Individual Type","total_num_programs":6},{"title":"Veteran (including dependents)","total_num_programs":6},{"title":"Not-for-Profit
+  Organization","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":4},{"title":"For-Profit
+  Organization","total_num_programs":4},{"title":"Indian/Native American/Alaska Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":4},{"title":"Public
+  nonprofit institution/organization (includes institutions of higher education and
+  hospitals)","total_num_programs":4},{"title":"Territorial","total_num_programs":3},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":2},{"title":"Native American Organizations (includes
+  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":2},{"title":"Other
+  private institutions/organizations","total_num_programs":2},{"title":"Other public
+  institution/organization","total_num_programs":2},{"title":"Profit organization","total_num_programs":2},{"title":"Reservist
+  (including dependents)","total_num_programs":2},{"title":"Active-Duty Service Person
+  (including dependents","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Homeowner","total_num_programs":1},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Public
+  Housing Authority","total_num_programs":1},{"title":"Quasi-public nonprofit institution/organization","total_num_programs":1},{"title":"Small
+  business (less than 500 employees)","total_num_programs":1},{"title":"U.S. Federal
+  Government","total_num_programs":1},{"title":"Unrestricted by Entity Type","total_num_programs":1}]'
+categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
   - permalink: /category/agricultural/agricultural-resources-and-services
@@ -208,33 +206,14 @@ categories_hierarchy:
   - permalink: /category/transportation/water-transportation
     title: Water Transportation
   title: Transportation
-categories_json: '[{"title":"Income Security and Social Services","total_num_programs":114,"total_obs":3407746393511.65,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":607,"total_obs":2068598826241.1702,"permalink":"/category/health"},{"title":"General
-  Government","total_num_programs":16,"total_obs":1215613829754.0,"permalink":"/category/general-government"},{"title":"Business
-  and Commerce","total_num_programs":170,"total_obs":185587734385.36,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":178,"total_obs":157390458714.97998,"permalink":"/category/education"},{"title":"Food
-  and Nutrition","total_num_programs":59,"total_obs":135365469326.25998,"permalink":"/category/food-and-nutrition"},{"title":"Transportation","total_num_programs":139,"total_obs":124747208738.72,"permalink":"/category/transportation"},{"title":"Housing","total_num_programs":120,"total_obs":96098755682.32,"permalink":"/category/housing"},{"title":"Energy","total_num_programs":78,"total_obs":89155843600.9,"permalink":"/category/energy"},{"title":"Community
-  Development","total_num_programs":91,"total_obs":84998502889.32999,"permalink":"/category/community-development"},{"title":"Disaster
-  Prevention and Relief","total_num_programs":119,"total_obs":46103978169.55999,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Agricultural","total_num_programs":133,"total_obs":24045720034.41999,"permalink":"/category/agricultural"},{"title":"Environmental
-  Quality","total_num_programs":149,"total_obs":21414696290.27,"permalink":"/category/environmental-quality"},{"title":"Employment
-  and Labor","total_num_programs":160,"total_obs":12269079680.95,"permalink":"/category/employment-and-labor"},{"title":"Natural
-  Resources","total_num_programs":278,"total_obs":12095847353.419996,"permalink":"/category/natural-resources"},{"title":"Science
-  and Technology","total_num_programs":66,"total_obs":10689068951.35,"permalink":"/category/science-and-technology"},{"title":"International
-  Affairs","total_num_programs":102,"total_obs":10681104961.33,"permalink":"/category/international-affairs"},{"title":"Law,
-  Justice, and Legal Services","total_num_programs":244,"total_obs":9490426611.369999,"permalink":"/category/law--justice--and-legal-services"},{"title":"National
-  Defense","total_num_programs":58,"total_obs":7032996381.2300005,"permalink":"/category/national-defense"},{"title":"Cultural
-  Affairs","total_num_programs":63,"total_obs":1691612572.2299998,"permalink":"/category/cultural-affairs"},{"title":"Consumer
-  Protection","total_num_programs":20,"total_obs":317743949.15,"permalink":"/category/consumer-protection"}]'
 fiscal_year: '2025'
-layout: category-index
-obligations_by_type:
-- title: Acquisition Programs
-  total_obs: 123733362469.66005
-- title: Federal Financial Assistance
-  total_obs: 4520271468045.97
-- title: Interest on the Public Debt
-  total_obs: 1215613829754.0
-- title: Tax Expenditures
-  total_obs: 1985250000000.0
-title: Categories
-total_num_programs: 3447
-total_obs: 7844868660269.63
+layout: category
+sub_cats: '[{"title":"Burial Benefits","permalink":"/category/income-security-and-social-services/burial-benefits","total_num_programs":6,"total_obs":913515256.25},{"title":"Personal
+  Financial Health","permalink":"/category/income-security-and-social-services/personal-financial-health","total_num_programs":108,"total_obs":3406832882843.61}]'
+title: Income Security and Social Services
+total_num_agencies: 10
+total_num_applicant_types: 45
+total_num_programs: 114
+total_num_sub_cats: 2
+total_obs: 3407746398099.86
 ---

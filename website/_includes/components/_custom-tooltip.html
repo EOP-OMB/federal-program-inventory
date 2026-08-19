@@ -1,0 +1,61 @@
+{% comment %}
+  Click-activated tooltip with pointer events (supports links).
+
+  Required:
+    - id: unique id for the tooltip body (used by aria-controls)
+    - content: HTML string for the tooltip body
+
+  Optional:
+    - trigger_text: visible trigger label (default: "More info")
+    - trigger_icon: USWDS sprite icon name (e.g. "info"); when set, renders an icon instead of text
+    - trigger_label: accessible name for icon triggers (default: "More information")
+    - trigger_class: extra classes on the trigger button
+    - show_close: if "false", hide the close button (default: shown)
+    - width: CSS width for the tooltip body (e.g. "80cqw", "12rem").
+      For cqw units, put class "custom-tooltip-container" on the layout
+      ancestor that should define the container size. The tooltip body
+      centers horizontally on that container.
+
+  Example:
+    {% capture tip_html %}
+      Data source: <a href="https://www.usaspending.gov">USAspending.gov</a>
+    {% endcapture %}
+    {% include components/_custom-tooltip.html
+      id="data-source-tip"
+      trigger_icon="info"
+      trigger_label="More information about spending"
+      content=tip_html
+      width="80cqw"
+    %}
+{% endcomment %}
+<span class="custom-tooltip">
+  <button
+    type="button"
+    class="custom-tooltip__trigger{% if include.trigger_icon %} custom-tooltip__trigger--icon{% endif %}{% if include.trigger_class %} {{ include.trigger_class }}{% endif %}"
+    aria-expanded="false"
+    aria-controls="{{ include.id }}"
+    {% if include.trigger_icon %}aria-label="{{ include.trigger_label | default: 'More information' }}"{% endif %}
+  >
+    {% if include.trigger_icon %}
+    <svg class="usa-icon custom-tooltip__icon" aria-hidden="true" focusable="false" role="img">
+      <use href="/assets/img/sprite.svg#{{ include.trigger_icon }}"></use>
+    </svg>
+    {% else %}
+    {{ include.trigger_text | default: "More info" }}
+    {% endif %}
+  </button>
+  <span
+    id="{{ include.id }}"
+    class="custom-tooltip__body"
+    role="region"
+    hidden
+    {% if include.width %}style="width: {{ include.width }}; max-width: none;"{% endif %}
+  >
+    {% if include.show_close != "false" %}
+    <button type="button" class="custom-tooltip__close" aria-label="Close">
+      ×
+    </button>
+    {% endif %}
+    {{ include.content }}
+  </span>
+</span>

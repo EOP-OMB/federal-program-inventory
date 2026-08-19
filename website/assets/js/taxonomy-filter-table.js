@@ -11,7 +11,7 @@ function initializeFilterTable(config = {}) {
     subcategoryCheckboxSelector = '.child-checkbox',
     definitionSourceSelector = '#taxonomy-gwo-definition-source',
     itemTableBodySelector = '#taxonomy-gwo-table-body',
-    itemTableSelector = '.taxonomy-gwo-table',
+    itemTableSelector = '#taxonomy-gwo-table',
     sortHeaderSelector = 'th[data-column="title"]',
     paginationSelector = '#taxonomy-pagination',
     searchInputSelector = '#taxonomy-filter-search',

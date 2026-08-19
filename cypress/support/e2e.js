@@ -24,6 +24,15 @@ import 'cypress-axe'
 import compareSnapshotCommand from 'cypress-image-diff-js/command'
 compareSnapshotCommand()
 
+Cypress.Commands.overwrite(
+  'compareSnapshot',
+  (originalFn, subject, ...args) => {
+    return cy
+      .waitForStableLayout('body', { stableMs: 1000, timeout: 5000 })
+      .then(() => originalFn(subject, ...args))
+  }
+)
+
 beforeEach(() => {
   // clear visited links and other state before each spec file
   cy.clearCookies()

@@ -46,19 +46,32 @@ permalink: /
 <section class="info-sections">
   <div class="grid-container">
     <div class="grid-row grid-gap-4">
-      <div class="grid-col-12 tablet:grid-col-3 text-center">
+      <div class="grid-col-12 desktop:grid-col-3 text-center">
         <p class="margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' -}}</p>
         <p class="font-body-md">Programs</p>
       </div>
-      <div class="grid-col-12 tablet:grid-col-3 text-center">
+      <div class="grid-col-12 desktop:grid-col-3 text-center custom-tooltip-container">
         <p class="margin-bottom-1 homepage-headline-number"><span data-dollar-amount="{{ page.spending_total }}"></span></p>
-        <p class="font-body-md">In spending in FY {{ page.fiscal_year }}</p>
+        <p class="font-body-md">
+          Spending
+          {% capture homepage_spending_tip %}
+            {% include components/_custom-tooltip-spending-body.html %}
+          {% endcapture %}
+          {% include components/_custom-tooltip.html
+            id="homepage-spending-tip"
+            trigger_icon="info"
+            trigger_label="More information about spending"
+            content=homepage_spending_tip
+            width="100cqw"
+          %}
+          in FY {{ page.fiscal_year }}
+        </p>
       </div>
-      <div class="grid-col-12 tablet:grid-col-3 text-center">
+      <div class="grid-col-12 desktop:grid-col-3 text-center">
         <p class="margin-bottom-1 homepage-headline-number">{{ page.agencies_count -}}</p>
         <p class="font-body-md">Agencies</p>
       </div>
-      <div class="grid-col-12 tablet:grid-col-3 text-center">
+      <div class="grid-col-12 desktop:grid-col-3 text-center">
         <p class="margin-bottom-1 homepage-headline-number">{{ page.outcomes_count -}}</p>
         <p class="font-body-md">Outcomes</p>
       </div>

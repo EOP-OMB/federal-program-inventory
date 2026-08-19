@@ -4,49 +4,49 @@ data_sources:
     current_year:
       expenditure: SAM.gov
       obligations: SAM.gov
-      outlays: USASpending.gov
+      outlays: USAspending.gov
     prior_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
   contracts:
     current_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
     prior_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
   government_service:
     current_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
     prior_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
   interest:
     current_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
-      revenue_losses: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
+      revenue_losses: USAspending.gov
     prior_year:
-      expenditure: USASpending.gov
-      obligations: USASpending.gov
-      outlays: USASpending.gov
-      revenue_losses: USASpending.gov
+      expenditure: USAspending.gov
+      obligations: USAspending.gov
+      outlays: USAspending.gov
+      revenue_losses: USAspending.gov
   tax_expenditure:
     current_year:
       expenditure: Treasury.gov
       obligations: Treasury.gov
-      outlays: USASpending.gov
-      revenue_losses: USASpending.gov
+      outlays: USAspending.gov
+      revenue_losses: USAspending.gov
     prior_year:
       expenditure: Treasury.gov
       obligations: Treasury.gov
-      outlays: USASpending.gov
-      revenue_losses: USASpending.gov
+      outlays: USAspending.gov
+      revenue_losses: USAspending.gov
 ...

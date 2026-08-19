@@ -6,9 +6,10 @@
       const categoriesJson = {{ page.categories_subcategories | jsonify }};
       const totalObligations = {{ page.total_obs }};
       const fiscalYear = "{{ page.fiscal_year }}";
-      const programsData = JSON.parse(programsJson);
-      const agenciesData = JSON.parse(agenciesJson);
-      const applicantTypesData = JSON.parse(applicantTypesJson);
+      const totalNumPrograms = {{ page.total_num_programs | default: 0 }};
+      const programsData = JSON.parse(programsJson || "[]");
+      const agenciesData = JSON.parse(agenciesJson || "[]");
+      const applicantTypesData = JSON.parse(applicantTypesJson || "[]");
       const categoriesData = categoriesJson;
       let currentCategoryTitle = '';
       let currentSubcategoryTitle = '';
@@ -79,6 +80,53 @@
         const targetUrl = subcategoryValue || categoryValue;
         window.location.href = targetUrl;
       });
+
+      function setDropdownsFromUrl() {
+        // Get the current pathname
+        const currentPath = window.location.pathname;
+
+        // Find matching category first
+        const matchingCategory = categoriesData.find(category =>
+          category.permalink === currentPath ||
+          category.subcategories.some(sub => sub.permalink === currentPath)
+        );
+
+        if (matchingCategory) {
+          // Set category dropdown
+          categorySelect.value = matchingCategory.permalink;
+          currentCategoryTitle = matchingCategory.title;
+
+          // Enable subcategory dropdown
+          subcategorySelect.disabled = false;
+
+          // Populate subcategories
+          subcategorySelect.innerHTML = `
+            <option value="">-Select-</option>
+            ${matchingCategory.subcategories
+              .map(sub => `
+                <option value="${sub.permalink}">${sub.title}</option>
+              `)
+              .join('')}
+          `;
+
+          // If we're on a subcategory page, set that too
+          const matchingSubcategory = matchingCategory.subcategories.find(
+            sub => sub.permalink === currentPath
+          );
+
+          if (matchingSubcategory) {
+            subcategorySelect.value = matchingSubcategory.permalink;
+            currentSubcategoryTitle = matchingSubcategory.title;
+          }
+        }
+      }
+
+      setDropdownsFromUrl();
+
+      // Empty subcategory pages only need the category navigation controls
+      if (totalNumPrograms === 0) {
+        return;
+      }
 
       // Store sort states for each table
       const sortStates = {
@@ -198,21 +246,21 @@
 
           if (activeTable === "program") {
             row.innerHTML = `
-        <td>
+        <td data-label="Program">
           <a href="${item.permalink}" class="usa-link">${item.title}</a>
         </td>
-        <td>${item.agency || "N/A"}</td>
-        <td>${item.total_obs ? formatCurrency(item.total_obs) : "$0"}</td>
+        <td data-label="Agency">${item.agency || "N/A"}</td>
+        <td data-label="Amount">${item.total_obs ? formatCurrency(item.total_obs) : "$0"}</td>
         `;
           } else if (activeTable === "agency") {
             row.innerHTML = `
-        <td>
+        <td data-label="Agency">
           <a href="javascript:void(0);" class="usa-link agency-link">${
             item.title
           }</a>
         </td>
-        <td>${item.total_num_programs || 0}</td>
-        <td>${item.total_obs ? formatCurrency(item.total_obs) : "$0"}</td>
+        <td data-label="Number of Programs">${item.total_num_programs || 0}</td>
+        <td data-label="Amount">${item.total_obs ? formatCurrency(item.total_obs) : "$0"}</td>
         `;
             row.querySelector(".agency-link").addEventListener("click", () => {
               const filters = {
@@ -239,12 +287,12 @@
             });
           } else if (activeTable === "applicant") {
             row.innerHTML = `
-        <td>
+        <td data-label="Applicant Type">
           <a href="javascript:void(0);" class="usa-link applicant-link">${
             item.title
           }</a>
         </td>
-        <td>${item.total_num_programs || 0}</td>
+        <td data-label="Number of Programs">${item.total_num_programs || 0}</td>
         `;
             row.querySelector(".applicant-link").addEventListener("click", () => {
               const filters = {
@@ -494,46 +542,6 @@
     });
   }
 
-  function setDropdownsFromUrl() {
-      // Get the current pathname
-      const currentPath = window.location.pathname;
-
-      // Find matching category first
-      const matchingCategory = categoriesData.find(category =>
-        category.permalink === currentPath ||
-        category.subcategories.some(sub => sub.permalink === currentPath)
-      );
-
-      if (matchingCategory) {
-        // Set category dropdown
-        categorySelect.value = matchingCategory.permalink;
-        currentCategoryTitle = matchingCategory.title;
-
-        // Enable subcategory dropdown
-        subcategorySelect.disabled = false;
-
-        // Populate subcategories
-        subcategorySelect.innerHTML = `
-          <option value="">-Select-</option>
-          ${matchingCategory.subcategories
-            .map(sub => `
-              <option value="${sub.permalink}">${sub.title}</option>
-            `)
-            .join('')}
-        `;
-
-        // If we're on a subcategory page, set that too
-        const matchingSubcategory = matchingCategory.subcategories.find(
-          sub => sub.permalink === currentPath
-        );
-
-        if (matchingSubcategory) {
-          subcategorySelect.value = matchingSubcategory.permalink;
-          currentSubcategoryTitle = matchingSubcategory.title;
-        }
-      }
-    }
-
   document.querySelectorAll("th[data-sortable]").forEach((header) => {
         header.style.pointerEvents = "auto";
         header.addEventListener("click", (event) => {
@@ -622,19 +630,28 @@
         }
       }
 
+      function refreshChart() {
+        const selectedOption = document.querySelector(
+          "[name='view-options']:checked"
+        );
+        const selectedType = selectedOption ? selectedOption.id : "subCategory";
+        initializeChart(selectedType);
+     }
+
       // Listen for radio button changes
       document.querySelectorAll("[name='view-options']").forEach((radio) => {
-        radio.addEventListener("change", (event) => {
-          initializeChart(event.target.id);
+        radio.addEventListener("change", () => {
+         refreshChart();
         });
       });
 
+      window.addEventListener("resize", refreshChart);
+
       // Initialize the default chart
-      initializeChart("program");
+      refreshChart();
 
       // End Chart
 
-      setDropdownsFromUrl();
       updateTable();
     });
 </script>

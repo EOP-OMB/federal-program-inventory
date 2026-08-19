@@ -56,7 +56,7 @@ class TestGetAssistanceProgramObligations:
     def test_get_assistance_program_obligations(self):
         """
         Test getting obligation data for assistance programs.
-        This should collect data from both SAM.gov and USASpending.
+        This should collect data from both SAM.gov and USAspending.
         """
         # Create a mock cursor
         mock_cursor = MagicMock()

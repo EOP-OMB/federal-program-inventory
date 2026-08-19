@@ -18,7 +18,7 @@ describe('Data source labels', () => {
           },
           obligations: 760419098000,
           objectives: 'Test program for stable tooltip snapshot testing.',
-          data_source: 'USASpending.gov',
+          data_source: 'USAspending.gov',
           programType: 'assistance_listing'
         }
       ]
@@ -40,7 +40,7 @@ describe('Data source labels', () => {
     cy.get('.program-obligations-hover-tooltip')
       .should('exist')
       .should('contain.text', 'Data source:')
-      .should('contain.text', 'USASpending.gov');
+      .should('contain.text', 'USAspending.gov');
 
     cy.get('.program-results').compareSnapshot('search_data_source_tooltip');
   });
@@ -75,7 +75,7 @@ describe('Data source labels', () => {
       .should('contain.text', 'Outlays')
       .should('contain.text', 'Obligations')
       .should('contain.text', 'SAM.gov est.')
-      .should('contain.text', 'USASpending.gov');
+      .should('contain.text', 'USAspending.gov');
 
     cy.get('body').compareSnapshot('overview_chart_data_source_tooltip');
   });
@@ -172,7 +172,7 @@ describe('Data source labels', () => {
 
     cy.get('.chart-tooltip')
       .should('be.visible')
-      .should('contain.text', 'Data source: USASpending.gov');
+      .should('contain.text', 'Data source: USAspending.gov');
 
     cy.wait(1000);
     cy.get('#outcomeChart').compareSnapshot('pon_treemap_data_source_tooltip');
@@ -209,7 +209,7 @@ describe('Data source labels', () => {
     cy.get('.program-obligations-hover-tooltip')
       .should('have.length', 1)
       .should('exist')
-      .should('contain.text', 'Data source: USASpending.gov');
+      .should('contain.text', 'Data source: USAspending.gov');
 
     cy.then(() => {
       const pinnedLeft = `${relatedTooltipX - 40}px`;

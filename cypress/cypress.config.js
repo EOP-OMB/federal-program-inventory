@@ -36,6 +36,13 @@ module.exports = defineConfig({
         }
       });
 
+      on('before:run', (details) => {
+        console.log(
+          `Version Information:  Cypress ${details.cypressVersion} | ` +
+          `${details.browser.displayName} ${details.browser.version}`
+        )
+      })
+
       return config;
     },
   },

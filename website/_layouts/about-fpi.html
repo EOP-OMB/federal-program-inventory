@@ -24,12 +24,23 @@ permalink: /about/fpi
       </p>
     </div>
     <h2 id="what-programs">What Federal programs are represented in the current FPI?</h2>
-    <div class="usa-prose">
+    <div class="usa-prose custom-tooltip-container">
       <p>
         The current FPI captures over <span data-dollar-amount="{{ page.spending_total }}"></span>
-        in Federal spending in Fiscal Year {{ page.fiscal_year }}. While Federal
+        in Federal spending
+        {% capture homepage_spending_tip %}
+          {% include components/_custom-tooltip-spending-body-no-link.html %}
+        {% endcapture %}
+        {% include components/_custom-tooltip.html
+          id="homepage-spending-tip"
+          trigger_icon="info"
+          trigger_label="More information about spending"
+          content=homepage_spending_tip
+          width="90cqw"
+        %}
+        in Fiscal Year {{ page.fiscal_year }}. While Federal
         Assistance Listings account for most of the programs in the FPI, tax expenditures, public interest on the
-        debt, as well as select acquisition programs are also now represented as of the Spring, 2026 release. See
+        debt, as well as select acquisition programs are also now represented as of the 2026 release. See
         the <a href="/category">Explore FY {{ page.fiscal_year }} spending</a> page for a more detailed breakdown of FPI expenditures by program
         type, and the <a href="/about/terms">FPI Data, Terms, and Concepts</a> page for how these program types are defined.
       </p>
@@ -38,7 +49,7 @@ permalink: /about/fpi
     <div class="usa-prose">
       <p>
         The FPI relies on publicly available, agency-provided data in three authoritative systems: SAM.gov,
-        USASpending.gov, and PaymentAccuracy.gov. For more information on the data used in the FPI, see the
+        USAspending.gov, and PaymentAccuracy.gov. For more information on the data used in the FPI, see the
         <a href="/about/terms">FPI Data, Terms, and Concepts</a> page.
       </p>
     </div>
@@ -82,7 +93,7 @@ permalink: /about/fpi
           aria-expanded="true"
           aria-controls="a17"
         >
-          Spring 2026
+          2026
         </button>
       </h4>
       <div id="a17" class="usa-accordion__content usa-prose">
@@ -104,10 +115,10 @@ permalink: /about/fpi
           Second, to enable comparisons of like programs within and across agencies, a more systematic
           framework was introduced for organizing Federal program spending and performance information.
           Several new Categories to the existing list previously on the website were added, while a taxonomy of
-          government-wide objectives and program outcomes has been created to better articulate in a more
+          Government-Wide Objectives and Program Outcomes has been created to better articulate in a more
           standardized, cross-government way what programs aim to achieve for the American people. With this
-          enhancement, each program in the FPI is mapped to the government-wide objective and program
-          outcomes to which they are best aligned.
+          enhancement, each program in the FPI is mapped to the Government-Wide Objective and Program
+          Outcomes to which they are best aligned.
         </p>
         <p>
           Third, the types of programs represented in the FPI have been expanded beyond Federal Assistance
@@ -336,7 +347,7 @@ permalink: /about/fpi
         <p>
           The Digital Accountability and Transparency Act (DATA Act) is signed into law, directing OMB to establish
           government-wide data standards for certain financial data and improve the quality of the data reported
-          on USASpending.gov. Meeting the DATA Act reporting requirements becomes the focal point for OMB in
+          on USAspending.gov. Meeting the DATA Act reporting requirements becomes the focal point for OMB in
           creating the FPI.
         </p>
       </div>
