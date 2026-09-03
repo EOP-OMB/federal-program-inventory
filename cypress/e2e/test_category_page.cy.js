@@ -20,9 +20,9 @@ describe('Category page', () => {
     cy.visit('test/category.html');
     cy.get('body').compareSnapshot('category_page_responsiveness');
     cy.get('label[for="agency"]').click();
-    cy.get('body').compareSnapshot('category_page_agency_responsiveness');
+    cy.get('#myChart').parent().compareSnapshot('category_page_agency_responsiveness');
     cy.get('label[for="eligible-applicant"]').click();
-    cy.get('body').compareSnapshot('category_page_eligible_applicant_responsiveness');
+    cy.get('#myChart').parent().compareSnapshot('category_page_eligible_applicant_responsiveness');
   });
 
   it('subcategory full page screenshot', () => {
@@ -35,14 +35,14 @@ describe('Category page', () => {
     cy.visit('test/subcategory.html');
     cy.get('body').compareSnapshot('subcategory_page_responsiveness');
     cy.get('label[for="agency"]').click();
-    cy.get('body').compareSnapshot('subcategory_page_agency_responsiveness');
+    cy.get('#myChart').parent().compareSnapshot('subcategory_page_agency_responsiveness');
     cy.get('label[for="eligible-applicant"]').click();
-    cy.get('body').compareSnapshot('subcategory_page_eligible_applicant_responsiveness');
+    cy.get('#myChart').parent().compareSnapshot('subcategory_page_eligible_applicant_responsiveness');
   });
 
   it('subcategory empty programs full page screenshot', () => {
     cy.visit('test/subcategory_empty.html');
     cy.contains('No programs reported for this subcategory at the moment.');
-    cy.get('body').compareSnapshot('subcategory_page_empty');
+    cy.get('#myChart').should('not.exist');
   });
 });

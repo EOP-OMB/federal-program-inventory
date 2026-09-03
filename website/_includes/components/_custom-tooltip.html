@@ -11,7 +11,9 @@
     - trigger_label: accessible name for icon triggers (default: "More information")
     - trigger_class: extra classes on the trigger button
     - show_close: if "false", hide the close button (default: shown)
-    - width: CSS width for the tooltip body (e.g. "80cqw", "12rem").
+    - width: fallback CSS width for all breakpoints (e.g. "80cqw", "12rem")
+    - width_phone / width_tablet / width_desktop: per-breakpoint widths.
+      Any omitted value falls back to `width`, then to the stylesheet default.
       For cqw units, put class "custom-tooltip-container" on the layout
       ancestor that should define the container size. The tooltip body
       centers horizontally on that container.
@@ -25,9 +27,14 @@
       trigger_icon="info"
       trigger_label="More information about spending"
       content=tip_html
-      width="80cqw"
+      width_phone="95cqw"
+      width_tablet="85cqw"
+      width_desktop="80cqw"
     %}
 {% endcomment %}
+{% assign tip_width_phone = include.width_phone | default: include.width %}
+{% assign tip_width_tablet = include.width_tablet | default: include.width %}
+{% assign tip_width_desktop = include.width_desktop | default: include.width %}
 <span class="custom-tooltip">
   <button
     type="button"
@@ -49,7 +56,14 @@
     class="custom-tooltip__body"
     role="region"
     hidden
-    {% if include.width %}style="width: {{ include.width }}; max-width: none;"{% endif %}
+    {% if tip_width_phone or tip_width_tablet or tip_width_desktop %}
+    style="
+      {% if tip_width_phone %}--custom-tooltip-width-phone: {{ tip_width_phone }};{% endif %}
+      {% if tip_width_tablet %}--custom-tooltip-width-tablet: {{ tip_width_tablet }};{% endif %}
+      {% if tip_width_desktop %}--custom-tooltip-width-desktop: {{ tip_width_desktop }};{% endif %}
+      max-width: none;
+    "
+    {% endif %}
   >
     {% if include.show_close != "false" %}
     <button type="button" class="custom-tooltip__close" aria-label="Close">

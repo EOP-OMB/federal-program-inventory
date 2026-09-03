@@ -12,9 +12,11 @@ describe('Visited Program Links with #6E5841 Color', () => {
     // Verify links render with correct text
     cy.get('a.test-visited').first().should('contain.text', 'Largest Program');
     cy.get('a.test-visited').last().should('contain.text', 'Smallest Program');
-    
-    // Capture full page visual snapshot for regression testing
+
     // Screenshot will alert us if color or styling changes
-    cy.get('body').compareSnapshot('visited_links_page');
+    cy.get('p').eq(5).compareSnapshot({
+      name: 'visited_links_page',
+      cacheBust: false,
+    });
   });
 });

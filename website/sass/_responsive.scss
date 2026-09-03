@@ -8,6 +8,10 @@
     font-size: 0.9rem;
   }
 
+  .custom-tooltip__body {
+    width: var(--custom-tooltip-width-tablet, var(--custom-tooltip-width-desktop, auto));
+  }
+
   /* Main layout: stack sidebar under main content */
   .grid-col-9 {
     width: 100%;
@@ -162,10 +166,24 @@
   }
 
   /* Tooltip responsiveness for mobile */
-  .spending-chart-tooltip, .outlays-chart-tooltip {
+  .spending-chart-tooltip,
+  .outlays-chart-tooltip,
+  .chart-tooltip,
+  .obligations-pie-tooltip,
+  .program-obligations-hover-tooltip,
+  .tooltip {
     font-size: 10px;
     padding: 6px 10px;
     max-width: 200px;
+  }
+
+  .custom-tooltip__body {
+    font-size: 10px;
+    padding: 6px 10px;
+    width: var(
+      --custom-tooltip-width-phone,
+      var(--custom-tooltip-width-tablet, var(--custom-tooltip-width-desktop, auto))
+    );
   }
 
   /* Purpose and Spending sections stack vertically */

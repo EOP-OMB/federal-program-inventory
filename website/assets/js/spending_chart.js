@@ -381,7 +381,8 @@ function _addProjectedLine(svg, projectedOutlays, xScale, yScale, config) {
 
 function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScale, data, showObligations, programType) {
   const tooltip = d3.select("body").append("div")
-    .attr("class", "spending-chart-tooltip");
+    .attr("class", "spending-chart-tooltip")
+    .property("hidden", true);
 
   const overlay = svg.append("rect")
     .attr("width", chartWidth)
@@ -476,12 +477,12 @@ function _addSpendingTooltip(svg, chartWidth, chartHeight, config, xScale, yScal
         .html(tooltipContent)
         .style("left", (event.pageX + 15) + "px")
         .style("top", (event.pageY - 15) + "px")
-        .style("opacity", 0.95);
+        .property("hidden", false);
     }
   })
     .on("mouseout", function () {
       hoverLine.style("opacity", 0);
-      tooltip.style("opacity", 0);
+      tooltip.property("hidden", true);
     });
 }
 

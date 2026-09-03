@@ -101,7 +101,8 @@
       .selectAll(".obligations-pie-tooltip")
       .data([null])
       .join("div")
-      .attr("class", "obligations-pie-tooltip");
+      .attr("class", "obligations-pie-tooltip")
+      .property("hidden", true);
 
     // Create the pie chart
     const slices = pieGroup.selectAll("path")
@@ -115,7 +116,7 @@
       .on("mouseover", function(event, d) {
         tooltip
           .interrupt()
-          .style("opacity", 0.95)
+          .property("hidden", false)
           .html(`
             ${d.data.title}<br/>
             ${formatObligations(d.data.total_obs)} of ${formatObligations(totalObligations)}<br/>
@@ -132,7 +133,7 @@
       .on("mouseout", function() {
         tooltip
           .interrupt()
-          .style("opacity", 0);
+          .property("hidden", true);
       });
   }
 

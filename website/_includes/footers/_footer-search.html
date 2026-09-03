@@ -504,8 +504,8 @@
       }
     }
 
-    // Restore sort state with default to obligations desc
-    const sortParam = params.get("s") || "od";
+    // Restore sort state; keyword searches default to relevancy when no sort is specified
+    const sortParam = params.get("s") || (currentQuery ? "rd" : "od");
     currentSort.field = sortParam[0] === "t" ? "title" : sortParam[0] === "r" ? "relevancy" : "obligations";
     currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
@@ -726,18 +726,17 @@
   }
 
   function updateSortButtons() {
-    const relevancyButton = document.getElementById('relevancySort');
     const spendingButton = document.getElementById('spendingSort');
     const programNameButton = document.getElementById('programNameSort');
 
-    if (!relevancyButton || !spendingButton || !programNameButton) {
+    if (!spendingButton || !programNameButton) {
       return;
     }
 
-    const isRelevancy = currentSort.field === 'relevancy';
+    // Relevancy is the default for keyword search and has no button; both
+    // Spending and Program Name appear unselected while relevancy is active.
     const isSpending = currentSort.field === 'obligations';
     const isProgramName = currentSort.field === 'title';
-    relevancyButton.classList.toggle('usa-button--outline', !isRelevancy);
     spendingButton.classList.toggle('usa-button--outline', !isSpending);
     programNameButton.classList.toggle('usa-button--outline', !isProgramName);
   }
@@ -1509,29 +1508,27 @@ console.log("DEBUG: Sending request body:", requestBody);
   }
 
   function initializeSortButtons() {
-  const relevancyButton = document.getElementById('relevancySort');
   const spendingButton = document.getElementById('spendingSort');
   const programNameButton = document.getElementById('programNameSort');
 
-  if (!relevancyButton || !spendingButton || !programNameButton) {
+  if (!spendingButton || !programNameButton) {
     return;
   }
 
-  // Set initial state - spending sort is default
+  // Set initial state - spending sort is default (relevancy applies for keyword search)
   updateSortButtons();
 
-  [relevancyButton, spendingButton, programNameButton].forEach(button => {
+  [spendingButton, programNameButton].forEach(button => {
     button.addEventListener('click', async () => {
       const isSpending = button.id === 'spendingSort';
-      const isProgramName = button.id === 'programNameSort';
-      const sortField = isSpending ? 'obligations' : isProgramName ? 'title' : 'relevancy';
+      const sortField = isSpending ? 'obligations' : 'title';
 
       // Update sort state
       currentSort = {
         field: sortField,
         order: sortField === currentSort.field
           ? (currentSort.order === 'asc' ? 'desc' : 'asc')
-          : (isProgramName ? 'asc' : 'desc')
+          : (isSpending ? 'desc' : 'asc')
       };
 
       // Update button styles
@@ -1610,9 +1607,16 @@ console.log("DEBUG: Sending request body:", requestBody);
         event.preventDefault();
 
         if (searchInput) {
-          const keyword = searchInput.value;
+          const keyword = searchInput.value.trim();
           currentQuery = keyword;
           currentPage = 1;
+          // Keyword searches default to relevancy; empty query falls back to spending
+          if (keyword) {
+            currentSort = { field: "relevancy", order: "desc" };
+          } else if (currentSort.field === "relevancy") {
+            currentSort = { field: "obligations", order: "desc" };
+          }
+          updateSortButtons();
           encodeFiltersToUrl();
           await fetchProgramsData(keyword);
           updateClearFilterButton();

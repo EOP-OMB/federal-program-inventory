@@ -164,8 +164,10 @@ function createBarChart(data, {
     .nice();
 
   // Create axes
+  const tickCount = width < 280 ? 2 : width < 420 ? 3 : 4;
+
   const xAxis = d3.axisBottom(x)
-    .ticks(4)
+    .ticks(tickCount)
     .tickSizeOuter(0)
     .tickFormat(xAxisFormatter);
 
@@ -278,22 +280,16 @@ function createBarChart(data, {
       d3.color(barColor) :
       barColor);
 
-  // Tooltips
+  // HTML tooltip (not SVG); appearance comes from shared .tooltip CSS
   const tooltip = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
-    .style("opacity", 0)
-    .style("position", "absolute")
-    .style("background-color", "white")
-    .style("border", "1px solid #ddd")
-    .style("padding", "10px")
-    .style("pointer-events", "none");
+    .property("hidden", true);
 
   barGroups.on("mouseover", (event, d) => {
-    tooltip.transition()
-      .duration(200)
-      .style("opacity", .9);
-    tooltip.html(valueFormatter(d.value))
+    tooltip
+      .property("hidden", false)
+      .html(valueFormatter(d.value))
       .style("left", (event.pageX + 10) + "px")
       .style("top", (event.pageY - 28) + "px");
     
@@ -303,9 +299,7 @@ function createBarChart(data, {
       d3.color(barColor).darker(0.2));
   })
   .on("mouseout", (event, d) => {
-    tooltip.transition()
-      .duration(500)
-      .style("opacity", 0);
+    tooltip.property("hidden", true);
     
     const bar = d3.select(event.currentTarget).select(".bar");
     bar.attr("fill", d.value < 0 ? 

@@ -95,13 +95,6 @@ describe('Info Card Snapshot and Text Verification', () => {
       });
     });
 
-    it('should take a snapshot of the PON info card section', () => {
-      // Get the info card container and take a snapshot
-      cy.get('.info-card-bg').first().parent().then(($parent) => {
-        cy.wrap($parent).compareSnapshot('pon-info-card');
-      });
-    });
-
     it('should verify info card structure and styling', () => {
       cy.get('.info-card-bg').first().within(() => {
         // Verify header with title

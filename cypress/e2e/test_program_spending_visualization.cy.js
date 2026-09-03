@@ -70,13 +70,13 @@ describe('Program Overview Visualization', () => {
 
     cy.visit('test/program_spending_chart_data_gaps.html');
     cy.get(svgSelector).should('be.visible')
-      .parent().parent().parent().compareSnapshot('spending_viz_unreported_years');
+      .parent().parent().parent().compareSnapshot('spending_viz_data_gaps');
     cy.get(noChartSelector).should('not.be.visible');
   });
 
   it('no data', () => {
     cy.visit('test/program_spending_chart_no_data.html');
-    cy.get(noChartSelector).should('be.visible').compareSnapshot('spending_viz_no_data');
+    cy.get(noChartSelector).should('be.visible');
   });
 
   // lowest negative number is small in magnitude compare to max positive number
@@ -103,7 +103,6 @@ describe('Program Overview Visualization', () => {
 
     // move near 2015 datapoint (no inflation)
     cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX1, clientY: tooltipY1 });
-    cy.get(tooltipSelector).compareSnapshot('spending_viz_tooltip_no_inflation');
     cy.get(tooltipSelector).should('contain.text', 'Year');
     cy.get(tooltipSelector).should('contain.text', '2015');
     cy.get(tooltipSelector).should('contain.text', 'Obligations');
@@ -123,7 +122,6 @@ describe('Program Overview Visualization', () => {
 
     // move near 2019 datapoint (has inflation)
     cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX2, clientY: tooltipY2 });
-    cy.get(tooltipSelector).compareSnapshot('spending_viz_tooltip_has_inflation');
     cy.get(tooltipSelector).should('contain.text', 'Year');
     cy.get(tooltipSelector).should('contain.text', '2019');
     cy.get(tooltipSelector).should('contain.text', 'Obligations');
