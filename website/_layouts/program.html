@@ -265,13 +265,13 @@ footer_include: _footer-program.html
               </p>
               <p class="line-height-body-4">
                 For additional information on single audit requirements for this program, review the current
-                <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
+                <a href="https://www.whitehouse.gov/omb/information-resources/guidance/compliance-supplement/"
                   class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
               </p>
             </div>
             {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
               <div id="program-rules-regs" >
-                {{ page.rules_regulations }}
+                {{ page.rules_regulations | escape }}
               </div>
             {% endif %}
           </div>

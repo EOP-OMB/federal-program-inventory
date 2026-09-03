@@ -4,7 +4,9 @@ agency_id: 100013311
 applicant_types: []
 assistance_types:
 - Interest
-authorizations: []
+authorizations:
+- text: 31 USC § 3123 - Payment of obligations and interest on the public debt
+  url: null
 beneficiary_types: []
 categories:
 - General Government - Debt Service

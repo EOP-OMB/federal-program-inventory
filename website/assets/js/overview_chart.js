@@ -157,7 +157,8 @@ function _createGenerators(xScale, yScale) {
 
 function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale, showObligations, programType, stackedTaxExpenditureTotals, shouldShowRevenueLossSeries) {
   const tooltip = d3.select("body").append("div")
-    .attr("class", "outlays-chart-tooltip");
+    .attr("class", "outlays-chart-tooltip")
+    .property("hidden", true);
 
   // Create invisible overlay for mouse tracking
   const overlay = svg.append("rect")
@@ -281,7 +282,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
         .html(tooltipContent)
         .style("left", (event.pageX + 15) + "px")
         .style("top", (event.pageY - 15) + "px")
-        .style("opacity", 0.95);
+        .property("hidden", false);
     }
   })
     .on("mouseout", function () {
@@ -289,7 +290,7 @@ function _addTooltip(svg, chartWidth, chartHeight, config, xScale, data, yScale,
       hoverCircleOutlays.style("opacity", 0);
       hoverCircleObligations.style("opacity", 0);
       hoverCircleRevenueLosses.style("opacity", 0);
-      tooltip.style("opacity", 0);
+      tooltip.property("hidden", true);
     });
 }
 

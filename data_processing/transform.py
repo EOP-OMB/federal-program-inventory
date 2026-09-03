@@ -1173,25 +1173,6 @@ def load_additional_programs():
 
     df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
 
-    # Insert categories into the database
-    category_lookup = {}
-    category_counter = 0
-    focus_area_lookup = {}
-    focus_area_counter = 0
-    for ind, record in df.iterrows():
-        if (record.category not in category_lookup):
-            category_lookup[record.category] = 'ADDITIONAL_' + str(category_counter)
-            cur.execute("""
-                INSERT INTO taxonomy_category
-                -- dash is later used as a delimiter between category and focus area
-                VALUES (?, REPLACE(?,'-','–'));
-            """, (category_lookup[record.category], record.category))
-            category_counter = category_counter + 1
-        if (record.subcategory not in focus_area_lookup):
-            focus_area_lookup[record.subcategory] = 'ADDITIONAL_' + str(focus_area_counter)
-            cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, (focus_area_lookup[record.subcategory], record.subcategory, category_lookup[record.category]))
-            focus_area_counter = focus_area_counter + 1
-    conn.commit()
 
     # Insert assistance types
     assistance_entries = [
@@ -1210,7 +1191,15 @@ def load_additional_programs():
             print(str(e))
             print(f"ERROR - Assistance Category Insert Error")
 
-    # Ids can change over time
+    # Ids can change over time; clear authorizations first so re-runs
+    # with the same program ids do not keep stale rows
+    cur.execute("""
+        DELETE FROM program_authorization
+        WHERE program_id IN (
+            SELECT id FROM program
+            WHERE program_type IN ('tax_expenditure', 'interest')
+        )
+    """)
     cur.execute("DELETE FROM program WHERE program_type = 'tax_expenditure'")
     cur.execute("DELETE FROM program WHERE program_type = 'interest'")
 
@@ -1265,8 +1254,20 @@ def load_additional_programs():
                     print(str(e))
                     print("ERROR - Program to Assistance Mapping Error")
 
-        # Map focus area
-        df.at[ind, 'focus_area.id'] = focus_area_lookup[record.subcategory]
+        # Insert authorization from additional-programs.csv when present
+        auth_text = record['authorization'] if 'authorization' in record and not pd.isna(record['authorization']) else None
+        auth_url = record['authorization_url'] if 'authorization_url' in record and not pd.isna(record['authorization_url']) else None
+        if auth_text:
+            try:
+                cur.execute(PROGRAM_AUTHORIZATION_INSERT_SQL, [
+                    record['program.id'],
+                    auth_text,
+                    auth_url if auth_url else None,
+                ])
+            except Exception as e:
+                print(str(e))
+                print("ERROR - Program Authorization Insert Error")
+
 
     # Insert spending data into the other_program_spending table
     fiscal_years = {}

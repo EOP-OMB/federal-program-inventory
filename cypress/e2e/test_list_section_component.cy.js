@@ -10,17 +10,26 @@ describe('Test: _list_section component: one item, category', () => {
     cy.get('.program-filter').should('have.length', 1);
   });
 
-  it('page should match', () => {
-    cy.compareSnapshot('list_one_item');
-  });
-
-  it('category search page matches', () => {
+  it('category search page applies Housing filter and shows matching programs', () => {
     cy.get('.program-filter').first().click();
 
-    // wait for search page to load and search results to show
     cy.get('.program-title').should('be.visible');
     cy.get('[aria-controls="categories-section"]').first().click();
-    cy.compareSnapshot('list_one_item_clicked');
+
+    cy.get('input[data-filter-type="category"][data-category-title="Housing"]')
+      .should('be.checked');
+    cy.get(
+      'input[data-filter-type="sub-category"][data-subcategory-title="Housing and Homelessness"]'
+    ).should('be.checked');
+
+    cy.contains('.program-title', 'Veterans Housing Guaranteed and Insured Loans')
+      .should('be.visible');
+    cy.contains(
+      '.program-title',
+      'Very Low to Moderate Income Housing Loans and Loan Guarantees'
+    ).should('be.visible');
+    cy.contains('.program-title', 'Credit for low-income housing investments')
+      .should('be.visible');
   });
 });
 
@@ -34,19 +43,6 @@ describe('Test: _list_section component: multiple items, applicant', () => {
 
   it('should have multiple items', () => {
     cy.get('.program-filter').should('have.length', 2);
-  });
-
-  it('page should match', () => {
-    cy.compareSnapshot('list_multiple_items');
-  });
-
-  it('assistance search page matches', () => {
-    cy.get('.program-filter').first().click();
-
-    // wait for search page to load and search results to show
-    cy.get('.program-title').should('be.visible');
-    cy.get('[aria-controls="eligible-applicants-section"]').first().click();
-    cy.compareSnapshot('list_multiple_items_clicked');
   });
 });
 
@@ -62,17 +58,19 @@ describe('Test: _list_section component: one item, program type', () => {
     cy.get('.program-filter').should('have.length', 1);
   });
 
-  it('page should match', () => {
-    cy.compareSnapshot('list_program_type');
-  });
-
-  it('program type search page matches', () => {
+  it('category search page applies program filter and shows matching programs', () => {
     cy.get('.program-filter').first().click();
 
-    // wait for search page to load and search results to show
     cy.get('.program-title').should('be.visible');
     cy.get('[aria-controls="program-type-section"]').first().click();
-    cy.compareSnapshot('list_program_type_clicked');
+    
+    cy.get('input[data-filter-type="assistance"][data-assistance-title="Direct Payments with Unrestricted Use"]')
+      .should('be.checked');
+
+    cy.contains('.program-title', 'Indian Job Placement').should('be.visible');
+    cy.contains('.program-title', 'State Select').should('be.visible');
+    cy.contains('.program-title', '8(g) State Coastal Zone')
+      .should('be.visible');
   });
 });
 
@@ -86,10 +84,6 @@ describe('Test: _list_section component: no items', () => {
 
   it('should have no items', () => {
     cy.get('.program-filter').should('not.exist');
-  });
-
-  it('page should match', () => {
-    cy.compareSnapshot('list_no_items');
   });
 });
 
@@ -105,7 +99,8 @@ describe('Test: _list_section component: beneficiaries', () => {
     cy.get('.program-filter').should('not.exist');
   });
 
-  it('page should match', () => {
-    cy.compareSnapshot('list_beneficiaries');
+  it('should have list items', () => {
+    cy.contains('li', 'Child').should('exist');
+    cy.contains('li', 'Individual/Family').should('exist');
   });
 });

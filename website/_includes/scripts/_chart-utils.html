@@ -172,20 +172,9 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       }
     })
     .on('mouseover', function(event, d) {
-      // Create tooltip
       const tooltip = d3.select('body').append('div')
-        .attr('class', 'chart-tooltip')
-        .style('opacity', 0)
-        .style('position', 'absolute')
-        .style('background', 'rgba(0, 0, 0, 0.9)')
-        .style('color', 'white')
-        .style('padding', '10px')
-        .style('border-radius', '6px')
-        .style('font-size', '12px')
-        .style('pointer-events', 'none')
-        .style('z-index', '1000')
-        .style('max-width', '200px');
-      
+        .attr('class', 'chart-tooltip');
+
       const formattedValue = formatCurrencyCompactly(d.value, 1);
 
       // Add percent-of-total info to the tooltip content.
@@ -214,10 +203,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       })}`;
       tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}${dataSourceLine}`)
         .style('left', (event.pageX + 10) + 'px')
-        .style('top', (event.pageY - 10) + 'px')
-        .transition()
-        .duration(200)
-        .style('opacity', 1);
+        .style('top', (event.pageY - 10) + 'px');
       
       // Highlight the rectangle
       d3.select(this)
@@ -225,11 +211,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
         .style('stroke-width', 3);
     })
     .on('mouseout', function() {
-      d3.selectAll('.chart-tooltip')
-        .transition()
-        .duration(200)
-        .style('opacity', 0)
-        .remove();
+      d3.selectAll('.chart-tooltip').remove();
         
       // Remove highlight
       d3.select(this)

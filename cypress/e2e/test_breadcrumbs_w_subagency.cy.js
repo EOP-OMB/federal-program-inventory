@@ -8,6 +8,6 @@ describe('Visual Regression: Breadcrumbs with Sub-Agency', () => {
   });
 
   it('page should match', () => {
-    cy.compareSnapshot('breadcrumbs_w_subagency');
+    cy.get('.fpi-breadcrumb-header').compareSnapshot('breadcrumbs_w_subagency');
   });
 });

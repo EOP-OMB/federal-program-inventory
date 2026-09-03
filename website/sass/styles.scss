@@ -4,6 +4,7 @@
 
 // Site-wide variables
 $site-default-font: "Public Sans", Helvetica, Arial, sans-serif;
+$site-default-font-size: 16px;
 $site-header-font-family: "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 $site-subheader-font-family: "New Century Schoolbook Italic", "Century Schoolbook Italic", "Century Schoolbook", Georgia, serif;
 $site-bg-color: #f5f4eb;
@@ -334,6 +335,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 54px;
+  font-size: $site-default-font-size;
 }
 
 /* Force submenu links color - override all visited/unvisited states */
@@ -345,12 +347,18 @@ footer {
 /* Force About the FPI accordion button color */
 .usa-accordion__button.usa-nav__link.custom-accordion-button {
   color: #2a2a2b !important;
+  font-size: $site-default-font-size;
+}
+
+.usa-nav__link {
+  color: $site-font-color !important;
 }
 
 .footer-link {
   font-family: $site-default-font !important; 
   margin-left: 0.5rem;
   padding-bottom:0.3rem;
+  font-size: $site-default-font-size;
 }
 
 /* Style the button and submenu when accordion is expanded */
@@ -1085,6 +1093,7 @@ th.gridjs-th {
     padding-right: 1rem;
     padding-bottom: 0.5rem; /* Different value for bottom */
     padding-left: 1rem;
+    font-size: $site-default-font-size;
   }
 
   .usa-nav__primary button {
@@ -1157,57 +1166,73 @@ th.gridjs-th {
   }
 }
 
-.spending-chart-tooltip, .outlays-chart-tooltip {
-  background-color: $site-font-color;
+// Shared tooltip appearance (hover + click tooltips sitewide)
+.spending-chart-tooltip,
+.outlays-chart-tooltip,
+.chart-tooltip,
+.obligations-pie-tooltip,
+.program-obligations-hover-tooltip,
+.tooltip,
+.custom-tooltip__body {
+  background-color: #555555;
   color: white;
-  position: absolute;
-  border: 1px solid $site-font-color;
+  border: 1px solid #555555;
   border-radius: 4px;
-  padding: 8px 12px;
-  pointer-events: none;
-  opacity: 0;
-  font-family: Inter;
+  padding: 8px 10px;
+  font-family: $site-default-font;
   font-size: 12px;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  line-height: 1.4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 280px;
   word-wrap: break-word;
   white-space: normal;
+  z-index: 2000;
+  text-align: left;
 }
 
+// Hover tooltips: non-interactive; use [hidden] (not opacity) so ANDI skips them when closed
+.spending-chart-tooltip,
+.outlays-chart-tooltip,
+.chart-tooltip,
+.obligations-pie-tooltip,
+.program-obligations-hover-tooltip,
+.tooltip {
+  pointer-events: none;
+
+  &[hidden] {
+    display: none !important;
+  }
+}
+
+// pageX/pageY positioning
+.spending-chart-tooltip,
+.outlays-chart-tooltip,
+.chart-tooltip,
+.tooltip {
+  position: absolute;
+}
+
+// clientX/clientY positioning
 .obligations-pie-tooltip,
 .program-obligations-hover-tooltip {
-  background-color: $site-font-color;
-  color: white;
   position: fixed;
-  border: 1px solid $site-font-color;
-  border-radius: 4px;
-  padding: 8px 10px;
-  font-family: Inter;
-  font-size: 12px;
-  line-height: 1.4;
-  z-index: 2000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  white-space: normal;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.program-obligations-hover-tooltip::before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid $site-font-color;
 }
 
 .program-obligations-hover-tooltip {
   transform: translate(-50%, 20px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $site-font-color;
+  }
 }
 
 // Click-activated tooltip (supports links and other pointer targets)
@@ -1263,21 +1288,11 @@ th.gridjs-th {
   margin-top: 24px;
   pointer-events: auto;
   opacity: 1;
-  max-width: 280px;
-  word-wrap: break-word;
   transform: translate(-50%, 0);
   box-sizing: border-box;
-  background-color: $site-font-color;
-  color: white;
-  border: 1px solid $site-font-color;
-  border-radius: 4px;
-  padding: 8px 10px;
-  font-family: Inter;
-  font-size: 12px;
-  line-height: 1.4;
-  z-index: 2000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  white-space: normal;
+
+  /* Desktop default; overridden below for tablet/phone */
+  width: var(--custom-tooltip-width-desktop, auto);
 
   &[hidden] {
     display: none;
