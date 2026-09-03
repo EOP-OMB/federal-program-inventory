@@ -34,14 +34,18 @@ describe('Search page', () => {
       .should('contain.text', '100,000 Strong');
   });
 
-  it('relevancy sorting', () => {
+  it('keyword search defaults to relevancy sorting', () => {
     cy.viewport('macbook-16');
     cy.intercept('POST', '/api/search/programsTable').as('programsTable');
     cy.visit('test/search.html');
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.get('#relevancySort').click();
+    cy.get('#relevancySort').should('not.exist');
+    cy.get('#search-field-en-small').type('education');
+    cy.get('.usa-search').submit();
     cy.wait('@programsTable').its('request.body.sort_field').should('eq', 'relevancy');
+    cy.get('#spendingSort').should('have.class', 'usa-button--outline');
+    cy.get('#programNameSort').should('have.class', 'usa-button--outline');
   });
 
   it('serializes and restores agency, gwo, and pon filters from URL', () => {

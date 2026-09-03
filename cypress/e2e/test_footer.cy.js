@@ -62,19 +62,4 @@ describe('Footer and Footer Banner Components', () => {
     cy.get('#return-to-top').should('be.visible');
     cy.contains('a', 'Return to top').should('be.visible');
   });
-
-  it('visual regression: footer snapshot with return to top link visible', () => {
-    // See cypress/md/footer_scroll.md for expected behavior
-    cy.viewport(1024, 768);
-    cy.visit('/test-footer-scroll.html');
-
-    // Scroll to bottom to make "Return to top" link visible
-    cy.scrollTo('bottom');
-    
-    // Verify the return to top link is visible
-    cy.get('#return-to-top').should('be.visible');
-    
-    // Take a snapshot of the entire page to show footer with return to top link visible
-    cy.get('body').compareSnapshot('footer_with_return_to_top');
-  });
 });

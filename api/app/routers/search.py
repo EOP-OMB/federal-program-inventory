@@ -11,13 +11,15 @@ router = APIRouter(
 
 # Constants
 INDEX_NAME = "programs"
+# Boosts define strict relevancy tiers: title > popularName > agency > gwo/pons > objectives/cfda.
 SEARCH_FIELDS = {
     "title": {"boost": 4},
+    "popularName": {"boost": 3},
+    "agency.title": {"boost": 2, "nested_path": "agency"},
+    "gwo": {"boost": 2},
+    "pons": {"boost": 2},
     "objectives": {"boost": 1},
     "cfda": {"boost": 1},
-    "popularName": {"boost": 3},
-    "gwo": {"boost": 2},
-    "pons": {"boost": 2}
 }
 VALID_SORT_FIELDS = {
     "cfda": "cfda.keyword",
@@ -29,15 +31,30 @@ VALID_SORT_FIELDS = {
 }
 
 def build_multi_match_query(query: str) -> Dict[str, Any]:
-    """Build elasticsearch multi-match query with field boosts."""
-    return {
-        "multi_match": {
-            "query": query,
-            "fields": [f"{field}^{config['boost']}" for field, config in SEARCH_FIELDS.items()],
-            "type": "phrase",
-            "operator": "and"
-        }
-    }
+    """Build elasticsearch query with strict field-priority scoring, including nested agency."""
+    queries: List[Dict[str, Any]] = []
+
+    for field, config in SEARCH_FIELDS.items():
+        nested_path = config.get("nested_path")
+        if nested_path:
+            match_clause: Dict[str, Any] = {
+                "nested": {
+                    "path": nested_path,
+                    "query": {"match_phrase": {field: query}},
+                }
+            }
+        else:
+            match_clause = {"match_phrase": {field: query}}
+
+        queries.append({
+            "constant_score": {
+                "filter": match_clause,
+                "boost": config["boost"],
+            }
+        })
+
+    # Only the highest-tier matching field contributes to the score.
+    return {"dis_max": {"queries": queries, "tie_breaker": 0.0}}
 
 def build_nested_filter(path: str, conditions: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Build a nested filter query with multiple conditions."""
