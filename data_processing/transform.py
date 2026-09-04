@@ -600,7 +600,7 @@ USASPENDING_ASSISTANCE_OUTLAY_AGGEGATION_CREATE_TABLE_SQL = """
 
 # Previously, obligations were grouped by award first action fiscal year:
 # At this time, only the total of outlayed funds per award is available from
-# USASpending.gov. This means it is not possible to aggregate outlays in the
+# USAspending.gov. This means it is not possible to aggregate outlays in the
 # same way that obligations are aggregated (i.e., by transaction action date).
 # Because of this, outlays must be aggregated by a consistent date figure, to
 # ensure they're not double counted and can be displayed consistently.
@@ -733,18 +733,18 @@ def convert_to_url_string(s):
 
 
 def load_usaspending_initial_files():
-    """Loads non-delta USASpending.gov CSV files into a SQLite Database for
+    """Loads non-delta USAspending.gov CSV files into a SQLite Database for
     further transformation."""
     print("Starting load_usaspending_initial_files")
 
     print("Dropping all tables from temp_data.db")
 
-    # create assistance table for USASpending.gov data
+    # create assistance table for USAspending.gov data
     temp_cur.execute(USASPENDING_ASSISTANCE_DROP_TABLE_SQL)
     temp_cur.execute(USASPENDING_ASSISTANCE_CREATE_TABLE_SQL)
     temp_conn.commit()
 
-    # create contracts table for USASpending.gov data
+    # create contracts table for USAspending.gov data
     temp_cur.execute(USASPENDING_CONTRACT_DROP_TABLE_SQL)
     temp_cur.execute(USASPENDING_CONTRACT_CREATE_TABLE_SQL)
     temp_conn.commit()
@@ -827,7 +827,7 @@ def load_usaspending_delta_files():
 
 
 def transform_and_insert_usaspending_aggregation_data():
-    """Queries USASpending.gov data in the temporary database and inserts the
+    """Queries USAspending.gov data in the temporary database and inserts the
     results into the transformed database."""
     print("Starting transform_and_insert_usaspending_aggregation_data")
 
@@ -1173,25 +1173,6 @@ def load_additional_programs():
 
     df['program.objective'] = df['description'].apply(lambda x: x if not pd.isna(x) else None)
 
-    # Insert categories into the database
-    category_lookup = {}
-    category_counter = 0
-    focus_area_lookup = {}
-    focus_area_counter = 0
-    for ind, record in df.iterrows():
-        if (record.category not in category_lookup):
-            category_lookup[record.category] = 'ADDITIONAL_' + str(category_counter)
-            cur.execute("""
-                INSERT INTO taxonomy_category
-                -- dash is later used as a delimiter between category and focus area
-                VALUES (?, REPLACE(?,'-','–'));
-            """, (category_lookup[record.category], record.category))
-            category_counter = category_counter + 1
-        if (record.subcategory not in focus_area_lookup):
-            focus_area_lookup[record.subcategory] = 'ADDITIONAL_' + str(focus_area_counter)
-            cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, (focus_area_lookup[record.subcategory], record.subcategory, category_lookup[record.category]))
-            focus_area_counter = focus_area_counter + 1
-    conn.commit()
 
     # Insert assistance types
     assistance_entries = [
@@ -1210,7 +1191,15 @@ def load_additional_programs():
             print(str(e))
             print(f"ERROR - Assistance Category Insert Error")
 
-    # Ids can change over time
+    # Ids can change over time; clear authorizations first so re-runs
+    # with the same program ids do not keep stale rows
+    cur.execute("""
+        DELETE FROM program_authorization
+        WHERE program_id IN (
+            SELECT id FROM program
+            WHERE program_type IN ('tax_expenditure', 'interest')
+        )
+    """)
     cur.execute("DELETE FROM program WHERE program_type = 'tax_expenditure'")
     cur.execute("DELETE FROM program WHERE program_type = 'interest'")
 
@@ -1265,8 +1254,20 @@ def load_additional_programs():
                     print(str(e))
                     print("ERROR - Program to Assistance Mapping Error")
 
-        # Map focus area
-        df.at[ind, 'focus_area.id'] = focus_area_lookup[record.subcategory]
+        # Insert authorization from additional-programs.csv when present
+        auth_text = record['authorization'] if 'authorization' in record and not pd.isna(record['authorization']) else None
+        auth_url = record['authorization_url'] if 'authorization_url' in record and not pd.isna(record['authorization_url']) else None
+        if auth_text:
+            try:
+                cur.execute(PROGRAM_AUTHORIZATION_INSERT_SQL, [
+                    record['program.id'],
+                    auth_text,
+                    auth_url if auth_url else None,
+                ])
+            except Exception as e:
+                print(str(e))
+                print("ERROR - Program Authorization Insert Error")
+
 
     # Insert spending data into the other_program_spending table
     fiscal_years = {}

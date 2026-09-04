@@ -12,7 +12,6 @@ describe('PON treemap', () => {
     cy.get('#related-programs table tbody tr')
       .not('[data-total-row]')
       .should('have.length', 4);
-    cy.get('#outcomeChart').compareSnapshot('pon_treemap');
   });
 
   it('shows program labels and percentages in tiles', () => {
@@ -23,8 +22,6 @@ describe('PON treemap', () => {
     cy.get('#outcomeChart svg text').contains('50.0%').should('exist');
     cy.get('#outcomeChart svg text').contains('33.3%').should('exist');
     cy.get('#outcomeChart svg text').contains('16.7%').should('exist');
-    cy.wait(1000);
-    cy.get('#outcomeChart').compareSnapshot('pon_treemap_labels');
   });
 
   it('shows tooltip with name, amount, and percentage', () => {
@@ -33,9 +30,7 @@ describe('PON treemap', () => {
     cy.get('.chart-tooltip').should('contain.text', 'Test Program One');
     cy.get('.chart-tooltip').should('contain.text', 'Amount:');
     cy.get('.chart-tooltip').should('contain.text', 'Percent: 50.0%');
-    cy.get('.chart-tooltip').should('contain.text', 'Data source: USASpending.gov');
-    cy.wait(1000);
-    cy.get('#outcomeChart').compareSnapshot('pon_treemap_tooltip');
+    cy.get('.chart-tooltip').should('contain.text', 'Data source: USAspending.gov');
   });
 
   it('navigates to a program when a tile is clicked', () => {

@@ -1,14 +1,29 @@
 <!-- Program Breadcrumb Navigation -->
 <div class="grid-row grid-gap margin-top-3">
-  <nav class="usa-breadcrumb padding-top-1 breadcrumb-nav-wrapper" aria-label="Breadcrumbs">
+  <nav class="usa-breadcrumb padding-top-1 breadcrumb-nav-wrapper fpi-breadcrumb-header" aria-label="Breadcrumbs">
     <ol class="usa-breadcrumb__list breadcrumb-flex-list margin-bottom-2">
       <li class="usa-breadcrumb__list-item breadcrumb-item-truncate">
-        <span class="text-base breadcrumb-text" title="{{ include.agency | default: page.agency }}">{{ include.agency | default: page.agency }}</span>
+        <a
+          href="/search"
+          class="usa-breadcrumb__link text-base breadcrumb-text program-filter"
+          title="{{ include.agency | default: page.agency }}"
+          data-filter-type="agency"
+          data-agency-title="{{ include.agency | default: page.agency | escape }}"
+          aria-label="View search results filtered by agency {{ include.agency | default: page.agency }}"
+        >{{ include.agency | default: page.agency }}</a>
       </li>
       {% assign sub_agency = include.sub_agency | default: page.sub-agency %}
       {% unless sub_agency == 'N/A' or sub_agency == '' or sub_agency == nil %}
       <li class="usa-breadcrumb__list-item breadcrumb-item-truncate">
-        <span class="text-base breadcrumb-text" title="{{ sub_agency }}">{{ sub_agency }}</span>
+        <a
+          href="/search"
+          class="usa-breadcrumb__link text-base breadcrumb-text program-filter"
+          title="{{ sub_agency }}"
+          data-filter-type="sub-agency"
+          data-agency-title="{{ include.agency | default: page.agency | escape }}"
+          data-subagency-title="{{ sub_agency | escape }}"
+          aria-label="View search results filtered by sub-agency {{ sub_agency }}"
+        >{{ sub_agency }}</a>
       </li>
       {% endunless %}
       <li class="usa-breadcrumb__list-item usa-current breadcrumb-item-current">

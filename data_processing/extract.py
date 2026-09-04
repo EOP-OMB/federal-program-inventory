@@ -132,7 +132,7 @@ def extract_organizations():
 
 
 def extract_usaspending_award_hashes():
-    """Extracts a hash, used for linking to USASpending.gov search results,
+    """Extracts a hash, used for linking to USAspending.gov search results,
     for each assistance listing number."""
     programs: set = set()
     with open(DISK_DIRECTORY + EXTRACTED_DIRECTORY
@@ -141,7 +141,7 @@ def extract_usaspending_award_hashes():
         for l in assistance_listings_list:
             programs.add(str(l["data"]["programNumber"]))
 
-    # function to extract the JSON data from USASpending.gov for each
+    # function to extract the JSON data from USAspending.gov for each
     # assistance listing
     def query_usaspending_cfda(q):
         status_code = 000
@@ -154,14 +154,14 @@ def extract_usaspending_award_hashes():
                 return lr.json()
 
     # extracting by first letter allows us to significantly reduce the number
-    # of calls to USASpending.gov API
+    # of calls to USAspending.gov API
     listings_json: list = []
     for c in ascii_lowercase:
         results = query_usaspending_cfda(c)
         if "results" in results:
             for r in results["results"]:
                 if r["program_number"] in programs:
-                    # USASpending.gov API requires this added attribute
+                    # USAspending.gov API requires this added attribute
                     r["identifier"] = r["program_number"]
                     programs.discard(r["program_number"])
                     listings_json.append(r)
@@ -172,7 +172,7 @@ def extract_usaspending_award_hashes():
         if "results" in results:
             for r in results["results"]:
                 if r["program_number"] == p:
-                    # USASpending.gov API requires this added attribute
+                    # USAspending.gov API requires this added attribute
                     r["identifier"] = r["program_number"]
                     programs.discard(r["program_number"])
                     listings_json.append(r)
@@ -187,7 +187,7 @@ def extract_usaspending_award_hashes():
         tries = 0
         status_code = 000
 
-        # emulate the headers of USASpending.gov frontend, to maximize
+        # emulate the headers of USAspending.gov frontend, to maximize
         # the success rate when hitting the API
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; "
@@ -206,7 +206,7 @@ def extract_usaspending_award_hashes():
             "Sec-Fetch-Site": "same-site"
         }
 
-        # per USASpending.gov API documentation, the below are required,
+        # per USAspending.gov API documentation, the below are required,
         # even if empty
         obj = {
             "filters": {
@@ -287,7 +287,7 @@ def extract_usaspending_award_hashes():
               + "usaspending-program-search-hashes.json", "w",
               encoding="utf-8") as f:
         f.write(json.dumps(hashes))
-    print("Extract USASpending.gov Hashes Complete")
+    print("Extract USAspending.gov Hashes Complete")
 
 def clean_json_data(filename):
     """Cleans and standardizes JSON data by fixing common errors and 
@@ -338,7 +338,7 @@ def clean_all_data():
     clean_json_data("dictionary.json")
     print("All Data Cleaning Complete")
 
-# Prior to running this script, data must be downloaded from USASpending.gov
+# Prior to running this script, data must be downloaded from USAspending.gov
 # at: https://www.usaspending.gov/download_center/award_data_archive
 # This data is processed in the transformation stage of the process.
 def main():

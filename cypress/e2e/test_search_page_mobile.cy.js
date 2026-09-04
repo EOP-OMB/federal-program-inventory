@@ -11,7 +11,6 @@ describe('Search Page Mobile View Snapshot', () => {
     cy.get('#program-list .program-search-container', { timeout: 10000 })
       .should('have.length.greaterThan', 0);
 
-    // Take full page snapshot
     cy.get('body').compareSnapshot('search_page_mobile_view');
   });
 });

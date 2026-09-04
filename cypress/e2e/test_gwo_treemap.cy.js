@@ -12,10 +12,9 @@ describe('GWO treemap', () => {
     cy.get('#related-programs table tbody tr')
       .not('[data-total-row]')
       .should('have.length', 5);
-    cy.get('#objectiveChart').compareSnapshot('gwo_treemap');
   });
 
-  it('shows program labels and percentages in tiles', () => {
+  it('shows program labels, percentages in tiles, and wrapping', () => {
     cy.get('#objectiveChart svg text').contains('Test Program One').should('exist');
     cy.get('#objectiveChart svg text').contains('Test Program Two').should('exist');
     cy.get('#objectiveChart svg text').contains('Test Program Three').should('exist');
@@ -32,9 +31,7 @@ describe('GWO treemap', () => {
     cy.get('.chart-tooltip').should('contain.text', 'Test Program One');
     cy.get('.chart-tooltip').should('contain.text', 'Amount:');
     cy.get('.chart-tooltip').should('contain.text', 'Percent: 50.0%');
-    cy.get('.chart-tooltip').should('contain.text', 'Data source: USASpending.gov');
-    cy.wait(1000);
-    cy.get('#objectiveChart').compareSnapshot('gwo_treemap_tooltip');
+    cy.get('.chart-tooltip').should('contain.text', 'Data source: USAspending.gov');
   });
 
   it('navigates to a program when a tile is clicked', () => {

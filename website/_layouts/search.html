@@ -462,7 +462,7 @@ footer_include: _footer-search.html
 
       <div class="program-search-container padding-2">
         <div class="grid-row padding-top-2">
-          <div class="grid-col-7">
+          <div class="desktop:grid-col-7">
             <div class="width-full">
               <span class="text-primary font-heading-xl text-bold" id="filtered-count"></span>
               <span class="text-primary font-heading-xl" id="total-programs"> of <span id="global-count"></span></span>
@@ -471,14 +471,28 @@ footer_include: _footer-search.html
               <span class="text-ink font-heading-lg line-height-sans-4">programs in FY {{ last_completed_fiscal_year }}</span>
             </div>
           </div>
-          <div class="grid-col-5">
+          <div class="desktop:grid-col-5 padding-top-2 custom-tooltip-container">
             <div class="width-full">
               <span class="text-primary font-heading-xl text-bold" id="filtered-obligations"></span>
               <span class="text-primary font-heading-xl" id="total-obligations"> of <span
                   id="global-obligations"></span></span>
             </div>
             <div class="width-full">
-              <span class="text-ink font-heading-lg line-height-sans-4">in spending</span>
+              <span class="text-ink font-heading-lg line-height-sans-4">
+                in spending
+                {% capture homepage_spending_tip %}
+                  {% include components/_custom-tooltip-spending-body.html %}
+                {% endcapture %}
+                {% include components/_custom-tooltip.html
+                  id="homepage-spending-tip"
+                  trigger_icon="info"
+                  trigger_label="More information about spending"
+                  content=homepage_spending_tip
+                  width_phone="100cqw"
+                  width_tablet="70cqw"
+                  width_desktop="90cqw"
+                %}
+              </span>
             </div>
           </div>
         </div>

@@ -106,6 +106,7 @@ function getSharedProgramHoverTooltip() {
   if (!tooltip) {
     tooltip = document.createElement('div');
     tooltip.className = 'program-obligations-hover-tooltip';
+    tooltip.hidden = true;
     document.body.appendChild(tooltip);
   }
 
@@ -120,11 +121,11 @@ function positionSharedProgramHoverTooltip(tooltip, event) {
 function showSharedProgramHoverTooltip(tooltip, event, text) {
   tooltip.textContent = text;
   positionSharedProgramHoverTooltip(tooltip, event);
-  tooltip.style.opacity = '0.95';
+  tooltip.hidden = false;
 }
 
 function hideSharedProgramHoverTooltip(tooltip) {
-  tooltip.style.opacity = '0';
+  tooltip.hidden = true;
 }
 
 function hideSharedProgramHoverTooltipIfPresent() {
@@ -218,7 +219,20 @@ function getProgramDataSourceTooltipText({
     data
   });
 
-  return `Data source: ${resolvedDataSource}`;
+  let metricSuffix = '';
+  if (programType === 'tax_expenditure') {
+    metricSuffix = ' (outlays and revenue losses)';
+  } else if (programType === 'interest') {
+    metricSuffix = ' (outlays)';
+  } else if (
+    programType === 'assistance_listing' ||
+    programType === 'contracts' ||
+    programType === 'government_service'
+  ) {
+    metricSuffix = ' (obligations)';
+  }
+
+  return `Data source: ${resolvedDataSource}${metricSuffix}`;
 }
 
 function formatProgramTooltipLinesWithSharedDataSource(title, entries) {

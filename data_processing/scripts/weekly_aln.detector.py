@@ -26,7 +26,7 @@ SCRIPT_DIR = Path(__file__).parent
 BASELINE_DIR = SCRIPT_DIR / "baseline"
 REPORTS_DIR = SCRIPT_DIR / "reports"
 LOGS_DIR = SCRIPT_DIR / "logs"
-TRANSFORMED_DB_PATH = SCRIPT_DIR.parent / "transformed" / "transformed_data.db"
+TRANSFORMED_DB_PATH = SCRIPT_DIR.parent.parent / "website" / "transformed_data.db"
 
 # SAM.gov API endpoint for ALN search
 SAM_SEARCH_URL = "https://sam.gov/api/prod/sgs/v1/search/?index=cfda&page=0&mode=search&size=10000&is_active=true"

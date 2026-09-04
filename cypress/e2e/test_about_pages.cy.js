@@ -16,4 +16,28 @@ describe('About pages', () => {
     cy.visit('test/about-fpi.html');
     cy.get('body').compareSnapshot('fpi');
   });
+
+  it('downloads all files from the about download table', () => {
+    cy.visit('about/terms');
+
+    cy.get('#about-download-table-container a[download]')
+      .should('have.length.greaterThan', 0)
+      .each(($anchor, index) => {
+        const href = $anchor.prop('href');
+        const alias = `downloadFile${index}`;
+
+        cy.intercept('GET', href).as(alias);
+        cy.wrap($anchor).click();
+        cy.wait(`@${alias}`).then((interception) => {
+          const { response } = interception;
+          const contentType = response?.headers?.['content-type'] || '';
+          const locationHeader = response?.headers?.location;
+
+          expect(response?.statusCode).to.be.oneOf([200, 304]);
+          expect(response?.statusCode, `unexpected redirect for ${href}`).to.not.be.oneOf([301, 302, 303, 307, 308]);
+          expect(locationHeader, `redirect location header should be absent for ${href}`).to.not.exist;
+          expect(contentType, `expected file content for ${href}, got HTML fallback`).to.not.include('text/html');
+        });
+      });
+  });
 });

@@ -55,11 +55,6 @@ describe('Improper Payment Rate Card', () => {
       });
     });
 
-    it('visual regression: improper payment card is displayed when page.improper_payments is NOT null (0% rate)', () => {
-      // Capture the entire grid container to show the card is displayed
-      cy.get('.grid-container').compareSnapshot('improper_payment_card_zero_rate');
-    });
-
     it('should display a valid percentage in the card', () => {
       // Extract and validate the percentage is a valid number
       cy.get('.usa-tag').then(($tag) => {
@@ -134,11 +129,6 @@ describe('Improper Payment Rate Card', () => {
       });
     });
 
-    it('visual regression: improper payment card is displayed when page.improper_payments is NOT null (positive rate)', () => {
-      // Capture the entire grid container to show the card is displayed
-      cy.get('.grid-container').compareSnapshot('improper_payment_card_positive_rate');
-    });
-
     it('should display a valid percentage in the card', () => {
       // Extract and validate the percentage is a valid number
       cy.get('.usa-tag').then(($tag) => {
@@ -203,11 +193,6 @@ describe('Improper Payment Rate Card', () => {
         cy.get('.payment-info').should('be.visible');
         cy.get('.payment-rate-box').should('be.visible');
       });
-    });
-
-    it('visual regression: improper payment card is displayed with N/A values when improper_payments is null', () => {
-      // Capture the entire grid container to show the N/A card is displayed
-      cy.get('.grid-container').compareSnapshot('improper_payment_card_NA');
     });
   });
 

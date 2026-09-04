@@ -8,7 +8,7 @@ This document describes the database schema and data structures used in the OMB 
 
 The transformation process uses SQLite databases to store:
 - Extracted program data from SAM.gov
-- USASpending.gov financial data
+- USAspending.gov financial data
 - Taxonomy classifications (GWO, PON, Categories, Focus Areas)
 - Additional program data from supplementary sources
 
@@ -73,8 +73,8 @@ Core table storing program information from SAM.gov assistance listings.
 | popular_name | TEXT | | Alternative/popular name for the program |
 | objective | TEXT | | Program description |
 | sam_url | TEXT | | URL to program page on SAM.gov |
-| usaspending_awards_hash | TEXT | | Hash for USASpending.gov search URL |
-| usaspending_awards_url | TEXT | | Full URL to USASpending.gov search results |
+| usaspending_awards_hash | TEXT | | Hash for USAspending.gov search URL |
+| usaspending_awards_url | TEXT | | Full URL to USAspending.gov search results |
 | grants_url | TEXT | | URL to Grants.gov search page |
 | program_type | TEXT | | Type: 'assistance_listing', 'interest', 'tax_expenditure' |
 | is_subpart_f | BOOLEAN | | Boolean flag indicating Subpart F compliance requirement |
@@ -86,7 +86,7 @@ Core table storing program information from SAM.gov assistance listings.
 
 **Notes**:
 - Popular name comes from `alternativeNames[0]` in SAM.gov data
-- USASpending URLs are constructed from hashes in `usaspending-program-search-hashes.json`
+- USAspending URLs are constructed from hashes in `usaspending-program-search-hashes.json`
 - Subpart F flag is determined from compliance questions in SAM.gov data
 - Data is extracted using SAM.gov's frontend APIs (not officially documented)
 
@@ -285,7 +285,7 @@ Junction table linking programs to Program Outcome Numbers (PON).
 
 ### usaspending_assistance
 
-Temporary table storing raw USASpending.gov assistance transaction data.
+Temporary table storing raw USAspending.gov assistance transaction data.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
@@ -298,18 +298,18 @@ Temporary table storing raw USASpending.gov assistance transaction data.
 | cfda_number | TEXT | | CFDA program number |
 | assistance_type_code | INTEGER | | Assistance type code |
 
-**Source**: USASpending.gov CSV files
+**Source**: USAspending.gov CSV files
 **Notes**:
 - Stored in temporary database (`temp_data.db`)
 - Used for aggregation into final tables
 - Delta files can update or delete records
-- Data downloaded from [USASpending.gov Award Data Archive](https://www.usaspending.gov/download_center/award_data_archive)
+- Data downloaded from [USAspending.gov Award Data Archive](https://www.usaspending.gov/download_center/award_data_archive)
 
 ---
 
 ### usaspending_contract
 
-Temporary table storing raw USASpending.gov contract transaction data.
+Temporary table storing raw USAspending.gov contract transaction data.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
@@ -327,17 +327,17 @@ Temporary table storing raw USASpending.gov contract transaction data.
 | prime_award_transaction_place_of_performance_cd_current | TEXT | | Congressional district code |
 | award_type_code | TEXT | | Award type code |
 
-**Source**: USASpending.gov CSV files
+**Source**: USAspending.gov CSV files
 **Notes**:
 - Stored in temporary database (`temp_data.db`)
 - Currently not aggregated into final tables (may be used for future features)
-- Data downloaded from [USASpending.gov Award Data Archive](https://www.usaspending.gov/download_center/award_data_archive)
+- Data downloaded from [USAspending.gov Award Data Archive](https://www.usaspending.gov/download_center/award_data_archive)
 
 ---
 
 ### usaspending_assistance_obligation_aggregation
 
-Aggregated obligation data from USASpending.gov by program, fiscal year, assistance type, and congressional district.
+Aggregated obligation data from USAspending.gov by program, fiscal year, assistance type, and congressional district.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
@@ -351,13 +351,13 @@ Aggregated obligation data from USASpending.gov by program, fiscal year, assista
 **Notes**:
 - Aggregated using `GROUP BY cfda_number, action_date_fiscal_year, assistance_type_code, congressional_district`
 - Sums `federal_action_obligation` for each group
-- Source data downloaded from USASpending.gov Award Data Archives
+- Source data downloaded from USAspending.gov Award Data Archives
 
 ---
 
 ### usaspending_assistance_outlay_aggregation
 
-Aggregated outlay and obligation data from USASpending.gov by program and fiscal year.
+Aggregated outlay and obligation data from USAspending.gov by program and fiscal year.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
@@ -370,7 +370,7 @@ Aggregated outlay and obligation data from USASpending.gov by program and fiscal
 **Notes**:
 - Aggregates by program and fiscal year
 - Methodology differs from obligation aggregation to allow consistent outlay/obligation comparison
-- Source data downloaded from USASpending.gov Award Data Archives
+- Source data downloaded from USAspending.gov Award Data Archives
 
 ---
 
@@ -527,8 +527,8 @@ improper_payment_mapping
 | SAM.gov | `dictionary.json` | `category` |
 | SAM.gov | `assistance-listings.json` | `program`, `program_authorization`, `program_result`, `program_sam_spending`, `program_to_category` |
 | SAM.gov | `usaspending-program-search-hashes.json` | Used to construct `program.usaspending_awards_url` |
-| USASpending.gov | CSV files in `ASSISTANCE_EXTRACTED_FILES_DIRECTORY` and `ASSISTANCE_DELTA_FILES_DIRECTORY` | `usaspending_assistance` (temporary) |
-| USASpending.gov | CSV files in `CONTRACT_EXTRACTED_FILES_DIRECTORY` and `CONTRACT_DELTA_FILES_DIRECTORY` | `usaspending_contract` (temporary) |
+| USAspending.gov | CSV files in `ASSISTANCE_EXTRACTED_FILES_DIRECTORY` and `ASSISTANCE_DELTA_FILES_DIRECTORY` | `usaspending_assistance` (temporary) |
+| USAspending.gov | CSV files in `CONTRACT_EXTRACTED_FILES_DIRECTORY` and `CONTRACT_DELTA_FILES_DIRECTORY` | `usaspending_contract` (temporary) |
 | Taxonomy Data | `Taxonomy_GWO_crosswalk.csv` | `taxonomy_category`, `taxonomy_focus_area`, `gwo` |
 | Taxonomy Data | `Taxonomy_PON_crosswalk.csv` | `taxonomy_category`, `taxonomy_focus_area`, `pon` |
 | Program Assignments | `FPI_GWO_assignment.csv` | `program_to_gwo` |
@@ -559,8 +559,8 @@ improper_payment_mapping
 
 ### Spending Data Aggregation
 - SAM.gov spending: Stored at transaction level with actual/estimate flags
-- USASpending.gov obligations: Aggregated by program, fiscal year, assistance type, and congressional district
-- USASpending.gov outlays: Aggregated by program, award key, and fiscal year
+- USAspending.gov obligations: Aggregated by program, fiscal year, assistance type, and congressional district
+- USAspending.gov outlays: Aggregated by program, award key, and fiscal year
 
 ### Taxonomy Classification
 - Programs can be classified via GWO assignments or via focus area in other_program_spending
@@ -572,6 +572,6 @@ improper_payment_mapping
 
 **Last Updated**: Generated from `transform.py` on 2025-11-17
 
-**Primary Database File**: `transformed/transformed_data.db`
+**Primary Database File**: `website/transformed_data.db`
 
 **Temporary Database File**: `transformed/temp_data.db` (deleted after processing)

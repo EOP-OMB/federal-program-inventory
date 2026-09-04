@@ -19,7 +19,7 @@ describe('Search page', () => {
     cy.get('.usa-sidenav').eq(3).click();
     cy.get('#pon-filter-search').type('advance');
     cy.contains('Construct New Community Infrastructure').should('not.be.visible');
-    cy.get('body').compareSnapshot('search_page_pon_filter');
+    cy.get('#search-filters').compareSnapshot('search_page_pon_filter');
   });
 
   it('sorting', () => {
@@ -32,6 +32,20 @@ describe('Search page', () => {
     cy.get('.program-title')
       .eq(0)
       .should('contain.text', '100,000 Strong');
+  });
+
+  it('keyword search defaults to relevancy sorting', () => {
+    cy.viewport('macbook-16');
+    cy.intercept('POST', '/api/search/programsTable').as('programsTable');
+    cy.visit('test/search.html');
+    cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
+
+    cy.get('#relevancySort').should('not.exist');
+    cy.get('#search-field-en-small').type('education');
+    cy.get('.usa-search').submit();
+    cy.wait('@programsTable').its('request.body.sort_field').should('eq', 'relevancy');
+    cy.get('#spendingSort').should('have.class', 'usa-button--outline');
+    cy.get('#programNameSort').should('have.class', 'usa-button--outline');
   });
 
   it('serializes and restores agency, gwo, and pon filters from URL', () => {
@@ -97,8 +111,8 @@ describe('Search page', () => {
     cy.get('#search-field-en-small').type('test{enter}');
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.get('#filtered-count').invoke('text').then((newCount) => {
-      cy.get('@originalCount').should('not.eq', newCount);
+    cy.get('@originalCount').then((originalCount) => {
+      cy.get('#filtered-count').should('not.have.text', originalCount);
     });
 
     cy.get('#filtered-count')
@@ -136,11 +150,13 @@ describe('Search page', () => {
       .check({ force: true });
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.contains('button', 'Clear Filters').click();
+    cy.contains('button', 'Clear Filters')
+      .should('have.attr', 'aria-disabled', 'false')
+      .click();
     cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
 
-    cy.get('#filtered-count').invoke('text').then((newCount) => {
-      cy.get('@globalCount').should('eq', newCount);
+    cy.get('@globalCount').then((globalCount) => {
+      cy.get('#filtered-count').should('have.text', globalCount);
     });
 
     cy.get('#search-field-en-small').should('have.value', '');
@@ -151,6 +167,33 @@ describe('Search page', () => {
         expect(filteredCountText).to.eq($globalCount.text().trim());
       });
     });
+  });
+
+  it('loading results screenshot', () => {
+    cy.viewport('macbook-16');
+    cy.intercept('POST', '/api/search/programsTable', (req) => {
+      req.on('response', (res) => {
+        // Keep the response delayed long enough to capture the loading state
+        res.setDelay(5000);
+      });
+    }).as('programsTable');
+
+    cy.visit('test/search.html');
+
+    cy.get('#program-list')
+      .should('have.attr', 'aria-busy', 'true')
+      .find('.program-search-skeleton')
+      .should('have.length.at.least', 1);
+
+    // Freeze pulse animation so the snapshot is deterministic
+    cy.get('.program-search-skeleton .skeleton-line').invoke(
+      'css',
+      'animation',
+      'none'
+    );
+    cy.get('#program-list').compareSnapshot('search_page_loading');
+
+    cy.wait('@programsTable').its('response.statusCode').should('eq', 200);
   });
 
   // full page screenshot and filtering is tested by some tag tests

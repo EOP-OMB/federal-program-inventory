@@ -102,17 +102,24 @@ function createBarChart(data, {
   valueFormatter = (d) => d,
   xAxisFormatter = (d) => d3.format(",")(d),
   onClickHandler = null,
-  maxWidth = 180,
+  maxWidth = 120,
   yAxisFontSize = "11px",
-  barColor = '#314964'
+  barColor = '#314964',
+  maxLines = 3,
+  chartHeight = 500,
+  marginLeft = 150
 }) {
   // Clear existing chart
   d3.select(container).selectAll("*").remove();
 
-  // Set up dimensions
-  const margin = { top: 20, right: 30, bottom: 60, left: 250 };
-  const width = 1000 - margin.left - margin.right;
-  const height = 500 - margin.top - margin.bottom;
+  const containerId = container.replace('#','');
+  document.getElementById(containerId).style.height = chartHeight + "px";
+  const containerNode = d3.select(container).node();
+  const outerWidth = containerNode?.getBoundingClientRect().width || 1000;
+
+  const margin = { top: 20, right: 30, bottom: 60, left: marginLeft };
+  const width = outerWidth - margin.left - margin.right;
+  const height = chartHeight - margin.top - margin.bottom;
 
   // Create SVG
   const svg = d3.select(container)
@@ -157,8 +164,10 @@ function createBarChart(data, {
     .nice();
 
   // Create axes
+  const tickCount = width < 280 ? 2 : width < 420 ? 3 : 4;
+
   const xAxis = d3.axisBottom(x)
-    .ticks(4)
+    .ticks(tickCount)
     .tickSizeOuter(0)
     .tickFormat(xAxisFormatter);
 
@@ -205,20 +214,37 @@ function createBarChart(data, {
         const words = text.text().match(/\S+\s*/g) || [];
         text.text(null);
         let line = [];
+        let lineCount = 1;
         let currentLine = text.append("tspan")
           .attr("x", -10)
           .attr("dy", "0em");
         words.forEach(word => {
+          if (lineCount > maxLines) {
+            // append nothing else
+            return;
+          }
+
           line.push(word);
           currentLine.text(line.join(""));
           if (currentLine.node().getComputedTextLength() > maxWidth && line.length > 1) {
             line.pop();
+            lineCount += 1;
             currentLine.text(line.join(""));
-            line = [word];
+
+            let textToAppend = word;
+            let dy = "1.2em";
+            let x = -10;
+            if (lineCount > maxLines) {
+              textToAppend = '... ';
+              dy = "0.5em";
+              x = -12;
+            }
+
+            line = [textToAppend]
             currentLine = text.append("tspan")
-              .attr("x", -10)
-              .attr("dy", "1.2em")
-              .text(word);
+              .attr("x", x)
+              .attr("dy", dy)
+              .text(textToAppend);
           }
         });
       });
@@ -254,22 +280,16 @@ function createBarChart(data, {
       d3.color(barColor) :
       barColor);
 
-  // Tooltips
+  // HTML tooltip (not SVG); appearance comes from shared .tooltip CSS
   const tooltip = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
-    .style("opacity", 0)
-    .style("position", "absolute")
-    .style("background-color", "white")
-    .style("border", "1px solid #ddd")
-    .style("padding", "10px")
-    .style("pointer-events", "none");
+    .property("hidden", true);
 
   barGroups.on("mouseover", (event, d) => {
-    tooltip.transition()
-      .duration(200)
-      .style("opacity", .9);
-    tooltip.html(valueFormatter(d.value))
+    tooltip
+      .property("hidden", false)
+      .html(valueFormatter(d.value))
       .style("left", (event.pageX + 10) + "px")
       .style("top", (event.pageY - 28) + "px");
     
@@ -279,9 +299,7 @@ function createBarChart(data, {
       d3.color(barColor).darker(0.2));
   })
   .on("mouseout", (event, d) => {
-    tooltip.transition()
-      .duration(500)
-      .style("opacity", 0);
+    tooltip.property("hidden", true);
     
     const bar = d3.select(event.currentTarget).select(".bar");
     bar.attr("fill", d.value < 0 ? 
@@ -313,4 +331,121 @@ function formatAxisValues(value, divisor, suffix) {
   return Number.isInteger(scaled)
     ? `$${scaled}${suffix}`
     : `$${scaled.toFixed(1)}${suffix}`;
+}
+
+// --- Custom click-activated tooltips ---
+
+function getCustomTooltipParts(root) {
+  if (!root) {
+    return null;
+  }
+
+  const trigger = root.querySelector(".custom-tooltip__trigger");
+  const body = root.querySelector(".custom-tooltip__body");
+
+  if (!trigger || !body) {
+    return null;
+  }
+
+  return { trigger, body };
+}
+
+function isCustomTooltipOpen(body) {
+  return body && !body.hasAttribute("hidden");
+}
+
+function closeCustomTooltip(root) {
+  const parts = getCustomTooltipParts(root);
+  if (!parts) {
+    return;
+  }
+
+  const { trigger, body } = parts;
+  body.setAttribute("hidden", "");
+  trigger.setAttribute("aria-expanded", "false");
+}
+
+function closeAllCustomTooltips(exceptRoot = null) {
+  document.querySelectorAll(".custom-tooltip").forEach((root) => {
+    if (root !== exceptRoot) {
+      closeCustomTooltip(root);
+    }
+  });
+}
+
+function openCustomTooltip(root) {
+  const parts = getCustomTooltipParts(root);
+  if (!parts) {
+    return;
+  }
+
+  const { trigger, body } = parts;
+
+  closeAllCustomTooltips(root);
+  body.removeAttribute("hidden");
+  trigger.setAttribute("aria-expanded", "true");
+}
+
+function toggleCustomTooltip(root) {
+  const parts = getCustomTooltipParts(root);
+  if (!parts) {
+    return;
+  }
+
+  if (isCustomTooltipOpen(parts.body)) {
+    closeCustomTooltip(root);
+  } else {
+    openCustomTooltip(root);
+  }
+}
+
+function initCustomTooltips() {
+  document.addEventListener("click", (event) => {
+    const closeButton = event.target.closest(".custom-tooltip__close");
+    if (closeButton) {
+      const root = closeButton.closest(".custom-tooltip");
+      closeCustomTooltip(root);
+      const parts = getCustomTooltipParts(root);
+      if (parts) {
+        parts.trigger.focus();
+      }
+      return;
+    }
+
+    const trigger = event.target.closest(".custom-tooltip__trigger");
+    if (trigger) {
+      event.preventDefault();
+      toggleCustomTooltip(trigger.closest(".custom-tooltip"));
+      return;
+    }
+
+    if (!event.target.closest(".custom-tooltip__body")) {
+      closeAllCustomTooltips();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") {
+      return;
+    }
+
+    const openBody = document.querySelector(".custom-tooltip__body:not([hidden])");
+    if (!openBody) {
+      return;
+    }
+
+    const root = openBody.closest(".custom-tooltip");
+    closeCustomTooltip(root);
+
+    const parts = getCustomTooltipParts(root);
+    if (parts) {
+      parts.trigger.focus();
+    }
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initCustomTooltips);
+} else {
+  initCustomTooltips();
 }

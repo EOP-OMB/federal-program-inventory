@@ -172,27 +172,10 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       }
     })
     .on('mouseover', function(event, d) {
-      // Create tooltip
       const tooltip = d3.select('body').append('div')
-        .attr('class', 'chart-tooltip')
-        .style('opacity', 0)
-        .style('position', 'absolute')
-        .style('background', 'rgba(0, 0, 0, 0.9)')
-        .style('color', 'white')
-        .style('padding', '10px')
-        .style('border-radius', '6px')
-        .style('font-size', '12px')
-        .style('pointer-events', 'none')
-        .style('z-index', '1000')
-        .style('max-width', '200px');
-      
-      const formattedValue = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        notation: 'compact',
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 1
-      }).format(d.value);
+        .attr('class', 'chart-tooltip');
+
+      const formattedValue = formatCurrencyCompactly(d.value, 1);
 
       // Add percent-of-total info to the tooltip content.
       const tooltipName = d.data.name;
@@ -210,19 +193,17 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       };
       const percentText = totalValue > 0 ? formatPercent(percentValue) : '';
       const percentLine = percentText ? `<br/>Percent: ${percentText}` : '';
-      const resolvedDataSource = d.data.data_source || resolveProgramDataSource({
-        programType: d.data.program_type || d.data.programType || '',
+      const programType = d.data.program_type || d.data.programType || '';
+      const dataSourceLine = `<br/>${getProgramDataSourceTooltipText({
+        dataSource: d.data.data_source || null,
+        programType,
         dataType: 'expenditure',
         year: options.year,
         currentFiscalYear: options.currentFiscalYear
-      });
-      const dataSourceLine = `<br/>Data source: ${resolvedDataSource}`;
+      })}`;
       tooltip.html(`<strong>${tooltipName}</strong><br/>Amount: ${formattedValue}${percentLine}${dataSourceLine}`)
         .style('left', (event.pageX + 10) + 'px')
-        .style('top', (event.pageY - 10) + 'px')
-        .transition()
-        .duration(200)
-        .style('opacity', 1);
+        .style('top', (event.pageY - 10) + 'px');
       
       // Highlight the rectangle
       d3.select(this)
@@ -230,11 +211,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
         .style('stroke-width', 3);
     })
     .on('mouseout', function() {
-      d3.selectAll('.chart-tooltip')
-        .transition()
-        .duration(200)
-        .style('opacity', 0)
-        .remove();
+      d3.selectAll('.chart-tooltip').remove();
         
       // Remove highlight
       d3.select(this)
@@ -383,13 +360,7 @@ function updateSummaryCard(outlaysData) {
 
     // 2. Update expenditure amount with formatting
     const lastOutlay = parseFloat(lastYear.outlay) || 0;
-    const formattedAmount = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      notation: 'compact',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 2
-    }).format(lastOutlay);
+    const formattedAmount = formatCurrencyCompactly(lastOutlay, 2);
     document.getElementById('expenditure-amount').textContent = formattedAmount;
 
     // 3. Calculate and display percentage change

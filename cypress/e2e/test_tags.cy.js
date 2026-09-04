@@ -24,9 +24,29 @@ describe('Tag functionality and visual regression', () => {
 
     cy.get('.program-title').should('be.visible');
     if (subcategory) {
-      cy.compareSnapshot('tag_click_subcategory');
+      cy.get('[aria-controls="categories-section"]').first().click();
+      
+      cy.get('input[data-filter-type="sub-category"][data-subcategory-title="Personal Financial Health"]')
+        .should('be.checked');
+
+      cy.contains('.program-title', 'Exclusion of employer contributions').should('be.visible');
+      cy.contains('.program-title', 'Veterans Compensation').should('be.visible');
+      cy.contains('.program-title', 'Exclusion of net imputed rental income')
+        .should('be.visible');
     } else {
-      cy.compareSnapshot('tag_click_category');
+      cy.get('[aria-controls="categories-section"]').first().click();
+      
+      cy.get('input[data-filter-type="category"][data-category-title="Income Security and Social Services"]')
+        .should('be.checked');
+      cy.get('input[data-filter-type="sub-category"][data-subcategory-title="Personal Financial Health"]')
+        .should('be.checked');
+      cy.get('input[data-filter-type="sub-category"][data-subcategory-title="Burial Benefits"]')
+        .should('be.checked');
+
+      cy.contains('.program-title', 'Exclusion of employer contributions').should('be.visible');
+      cy.contains('.program-title', 'Veterans Compensation').should('be.visible');
+      cy.contains('.program-title', 'Exclusion of net imputed rental income')
+        .should('be.visible');
     }
   };
 

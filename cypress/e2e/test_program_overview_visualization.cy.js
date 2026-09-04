@@ -59,6 +59,13 @@ describe('Program Overview Visualization', () => {
   it('other program spending', () => {
     cy.visit('test/program_overview_chart_other_program_spending.html');
     cy.get(svgSelector).should('be.visible').compareSnapshot('overview_viz_other_program_spending');
+
+    cy.get(svgSelector).should('contain.text', 'Outlays');
+    cy.get(svgSelector).should('contain.text', 'Revenue Losses');
+
+    cy.get(tooltipOverlaySelector).trigger('mousemove', { clientX: tooltipX1, clientY: tooltipY1, force: true });
+    cy.get(tooltipSelector).should('contain.text', 'Outlays');
+    cy.get(tooltipSelector).should('contain.text', 'Revenue Losses');
   });
 
   // legend + 8) coincide case

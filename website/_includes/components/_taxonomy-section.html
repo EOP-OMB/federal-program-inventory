@@ -1,0 +1,186 @@
+<h2 id="fpi-taxonomy">FPI Taxonomy</h2>
+<div class="usa-prose">
+  <p>
+    The FPI Taxonomy is a classification system designed to provide a more systematic framework for logically organizing
+    Federal programs and the information associated with those programs. Components of the classification system include
+    Categories, Sub-Categories, Government-wide Objectives, and Program Outcomes. There are currently 123
+    Government-wide Objectives in the taxonomy. Each program in the FPI is mapped to a Government-wide Objective, and up
+    to three Program Outcome(s) to which they are best aligned. A small number of GWOs are currently not mapped to any
+    programs. Click below to explore the program alignments.
+  </p>
+</div>
+
+<div class="taxonomy-filters-section">
+  <div class="taxonomy-filter-panels" id="taxonomy-filter-panels">
+    <div class="taxonomy-filter-column">
+      <nav class="usa-sidenav">
+        <ul class="usa-sidenav__sublist">
+          <li class="usa-sidenav__item">
+            <div class="taxonomy-filter-divider"></div>
+            <button type="button" class="usa-sidenav__button taxonomy-filter-toggle" aria-expanded="false"
+              aria-controls="taxonomy-categories-section" data-content-id="taxonomy-categories-section">
+              <span class="taxonomy-filter-toggle-label">Categories | Subcategories <span id="taxonomy-filter-count" class="font-body-xs text-bold"></span></span>
+              <div class="taxonomy-filter-toggle-icon-wrap">
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                  <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
+                </svg>
+              </div>
+            </button>
+            <div class="usa-sidenav__submenu taxonomy-filter-submenu" id="taxonomy-categories-section" hidden>
+              <div class="padding-x-2 padding-bottom-5 taxonomy-filter-search-wrap">
+                <label class="usa-sr-only" for="taxonomy-filter-search">Enter keyword</label>
+                <div class="position-relative">
+                  <input class="usa-input border-right-1px" id="taxonomy-filter-search" type="search"
+                    placeholder="Enter keyword" autocomplete="off" />
+                </div>
+              </div>
+              <fieldset class="usa-fieldset taxonomy-filter-fieldset" id="taxonomy-categories-fieldset">
+                {% for category in page.categories %}
+                <div class="taxonomy-filter-option-row">
+                  <div class="taxonomy-filter-option-spacer">
+                    {% if category.sub_categories and category.sub_categories.size > 0 %}
+                    <button type="button" class="toggle expandable-button taxonomy-children-toggle"
+                      data-content-id="taxonomy-children-for-category-{{ forloop.index }}" aria-expanded="false"
+                      aria-label="Toggle sub-items">
+                      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
+                        <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                      </svg>
+                    </button>
+                    {% else %}
+                    <span class="toggle expandable-button" aria-hidden="true">
+                      <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
+                        height="24">
+                        <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                      </svg>
+                    </span>
+                    {% endif %}
+                  </div>
+                  <div class="usa-checkbox flex-fill">
+                    <input class="usa-checkbox__input parent-checkbox taxonomy-filter-checkbox"
+                      id="taxonomy-category-{{ forloop.index }}" type="checkbox" data-filter-type="category"
+                      data-category-title="{{ category.title | escape }}"
+                      data-children-id="taxonomy-children-for-category-{{ forloop.index }}" />
+                    <label class="usa-checkbox__label taxonomy-filter-option-label"
+                      for="taxonomy-category-{{ forloop.index }}">
+                      {{ category.title }}
+                    </label>
+                  </div>
+                </div>
+
+                {% if category.sub_categories and category.sub_categories.size > 0 %}
+                <div id="taxonomy-children-for-category-{{ forloop.index }}" class="taxonomy-filter-children" hidden>
+                  {% for subcategory in category.sub_categories %}
+                  <div class="usa-checkbox">
+                    <input class="usa-checkbox__input child-checkbox taxonomy-filter-checkbox"
+                      id="taxonomy-category-{{ forloop.parentloop.index }}-{{ forloop.index }}" type="checkbox"
+                      data-filter-type="sub-category" data-category-title="{{ category.title | escape }}"
+                      data-subcategory-title="{{ subcategory.title | escape }}" />
+                    <label class="usa-checkbox__label taxonomy-filter-option-label"
+                      for="taxonomy-category-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                      {{ subcategory.title }}
+                    </label>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% endif %}
+                {% endfor %}
+              </fieldset>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="taxonomy-filter-action-column">
+      <button type="button" class="usa-button usa-button--outline taxonomy-clear-button" id="taxonomy-clear-button">
+        Clear filters
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="taxonomy-gwo-section">
+  <table class="usa-table usa-table--striped width-full" id="taxonomy-gwo-table">
+    <caption class="usa-sr-only">Government-wide objectives and definitions</caption>
+    <thead>
+      <tr>
+        <th data-column="title" scope="col" class="taxonomy-sortable-header">
+          <span class="header-text">Government-wide Objective</span>
+        </th>
+        <th scope="col">Definition</th>
+      </tr>
+    </thead>
+    <tbody id="taxonomy-gwo-table-body">
+      {% for gwo_item in page.gwo_options %}
+      <tr>
+        <td>
+          {% if gwo_item.permalink %}
+            <a href="{{ gwo_item.permalink }}">{{ gwo_item.title }}</a>
+          {% else %}
+            {{ gwo_item.title }}
+          {% endif %}
+        </td>
+        <td>{{ gwo_item.definition }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="usa-sr-only" aria-live="polite"></div>
+
+  <div class="grid-row grid-gap flex-align-center taxonomy-pagination-wrap">
+    <div class="grid-col-fill">
+      <span class="font-heading-sm" id="taxonomy-pagination-info">
+        Showing <span class="text-bold" id="taxonomy-results-start">1</span> to
+        <span class="text-bold" id="taxonomy-results-end">10</span> of
+        <span class="text-bold" id="taxonomy-results-total">0</span> results
+      </span>
+    </div>
+    <div class="grid-col-auto">
+      <nav aria-label="Taxonomy table pagination" class="usa-pagination" id="taxonomy-pagination">
+        <ul class="usa-pagination__list">
+          <li class="usa-pagination__item usa-pagination__arrow">
+            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page"
+              aria-label="Previous page">
+              <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="/assets/img/sprite.svg#navigate_before"></use>
+              </svg>
+              <span class="usa-pagination__link-text">Previous</span>
+            </a>
+          </li>
+          <li class="usa-pagination__item usa-pagination__arrow">
+            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" aria-label="Next page">
+              <span class="usa-pagination__link-text">Next </span>
+              <svg class="usa-icon" aria-hidden="true" role="img">
+                <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div id="taxonomy-program-gwo-source" class="taxonomy-hidden-source" aria-hidden="true">
+  {% for program in site.program %}
+  {% if program.gwo and program.gwo.gwo and program.categories %}
+  {% for category_entry in program.categories %}
+  {% assign category_parts = category_entry | split: ' - ' %}
+  {% assign category_name = category_parts[0] | strip %}
+  {% assign subcategory_name = category_parts[1] | default: '' | strip %}
+  <span data-category="{{ category_name | escape }}" data-subcategory="{{ subcategory_name | escape }}"
+    data-gwo="{{ program.gwo.gwo | escape }}"></span>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div id="taxonomy-gwo-definition-source" class="taxonomy-hidden-source" aria-hidden="true">
+  {% for gwo_item in page.gwo_options %}
+  {% if gwo_item.title %}
+  <span data-gwo="{{ gwo_item.title | escape }}"
+    data-definition="{{ gwo_item.definition | strip_html | normalize_whitespace | escape }}"
+    data-permalink="{{ gwo_item.permalink | escape }}"></span>
+  {% endif %}
+  {% endfor %}
+</div>

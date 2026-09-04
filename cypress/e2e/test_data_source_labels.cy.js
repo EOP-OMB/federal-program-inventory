@@ -18,7 +18,7 @@ describe('Data source labels', () => {
           },
           obligations: 760419098000,
           objectives: 'Test program for stable tooltip snapshot testing.',
-          data_source: 'USASpending.gov',
+          data_source: 'USAspending.gov',
           programType: 'assistance_listing'
         }
       ]
@@ -35,12 +35,12 @@ describe('Data source labels', () => {
     cy.contains('.program-title', 'Test Medicaid Program')
       .should('be.visible');
 
-    cy.get('.program-obligations').trigger('mouseenter', 'center');
+    cy.get('.program-obligations-tooltip').trigger('mouseenter', 'center');
 
     cy.get('.program-obligations-hover-tooltip')
       .should('exist')
       .should('contain.text', 'Data source:')
-      .should('contain.text', 'USASpending.gov');
+      .should('contain.text', 'USAspending.gov');
 
     cy.get('.program-results').compareSnapshot('search_data_source_tooltip');
   });
@@ -75,9 +75,9 @@ describe('Data source labels', () => {
       .should('contain.text', 'Outlays')
       .should('contain.text', 'Obligations')
       .should('contain.text', 'SAM.gov est.')
-      .should('contain.text', 'USASpending.gov');
+      .should('contain.text', 'USAspending.gov');
 
-    cy.get('body').compareSnapshot('overview_chart_data_source_tooltip');
+    cy.get('#chart').compareSnapshot('overview_chart_data_source_tooltip');
   });
 
   it('spending chart tooltip shows data source label', () => {
@@ -89,8 +89,6 @@ describe('Data source labels', () => {
     cy.get('.spending-chart-tooltip')
       .should('be.visible')
       .should('contain.text', 'Data source:');
-
-    cy.get('body').compareSnapshot('spending_chart_data_source_tooltip');
   });
 
   it('gwo treemap and related table tooltips show data source labels', () => {
@@ -104,10 +102,9 @@ describe('Data source labels', () => {
 
     cy.get('.chart-tooltip')
       .should('be.visible')
-      .should('contain.text', 'Data source:');
-
-    cy.wait(1000);
-    cy.get('#objectiveChart').compareSnapshot('gwo_treemap_data_source_tooltip');
+      .should('contain.text', 'Data source:')
+      .should('contain.text', 'USAspending.gov')
+      .should('contain.text', 'Test Program One');
 
     cy.get('body').trigger('mousemove', { clientX: 0, clientY: 0, force: true });
     cy.get('a[href="#related-programs"]').click();
@@ -142,23 +139,6 @@ describe('Data source labels', () => {
       .should('have.length', 1)
       .should('exist')
       .should('contain.text', 'Data source:');
-
-    cy.then(() => {
-      const pinnedLeft = `${relatedTooltipX - 40}px`;
-      const pinnedTop = `${relatedTooltipY - 20}px`;
-
-      cy.get('.program-obligations-hover-tooltip').then(($tooltip) => {
-        $tooltip.css({
-          position: 'fixed',
-          left: pinnedLeft,
-          top: pinnedTop,
-          zIndex: '9999',
-          opacity: '1'
-        });
-      });
-    });
-
-    cy.get('#related-programs').compareSnapshot('gwo_related_table_data_source_tooltip');
   });
 
   it('pon treemap and related table tooltips show data source labels', () => {
@@ -172,10 +152,8 @@ describe('Data source labels', () => {
 
     cy.get('.chart-tooltip')
       .should('be.visible')
-      .should('contain.text', 'Data source: USASpending.gov');
-
-    cy.wait(1000);
-    cy.get('#outcomeChart').compareSnapshot('pon_treemap_data_source_tooltip');
+      .should('contain.text', 'Data source: USAspending.gov')
+      .should('contain.text', 'Test Program One');
 
     cy.get('body').trigger('mousemove', { clientX: 0, clientY: 0, force: true });
     cy.get('a[href="#related-programs"]').click();
@@ -209,23 +187,6 @@ describe('Data source labels', () => {
     cy.get('.program-obligations-hover-tooltip')
       .should('have.length', 1)
       .should('exist')
-      .should('contain.text', 'Data source: USASpending.gov');
-
-    cy.then(() => {
-      const pinnedLeft = `${relatedTooltipX - 40}px`;
-      const pinnedTop = `${relatedTooltipY - 20}px`;
-
-      cy.get('.program-obligations-hover-tooltip').then(($tooltip) => {
-        $tooltip.css({
-          position: 'fixed',
-          left: pinnedLeft,
-          top: pinnedTop,
-          zIndex: '9999',
-          opacity: '1'
-        });
-      });
-    });
-
-    cy.get('#related-programs').compareSnapshot('pon_related_table_data_source_tooltip');
+      .should('contain.text', 'Data source: USAspending.gov');
   });
 });

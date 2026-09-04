@@ -19,6 +19,7 @@
   let totalObligations = 0;
   let globalProgramCount = 0;
   let globalTotalObligations = 0;
+  let programsAbortController = null;
 
   // Initial filter state
   let initialFilterState = {
@@ -37,6 +38,7 @@
   const sortFieldMapping = {
     title: "title",
     obligations: "obligations",
+    relevancy: "relevancy",
   };
 
   function captureInitialState() {
@@ -502,9 +504,9 @@
       }
     }
 
-    // Restore sort state with default to obligations desc
-    const sortParam = params.get("s") || "od";
-    currentSort.field = sortParam[0] === "t" ? "title" : "obligations";
+    // Restore sort state; keyword searches default to relevancy when no sort is specified
+    const sortParam = params.get("s") || (currentQuery ? "rd" : "od");
+    currentSort.field = sortParam[0] === "t" ? "title" : sortParam[0] === "r" ? "relevancy" : "obligations";
     currentSort.order = sortParam[1] === "a" ? "asc" : "desc";
     updateSortButtons();
 
@@ -731,57 +733,17 @@
       return;
     }
 
+    // Relevancy is the default for keyword search and has no button; both
+    // Spending and Program Name appear unselected while relevancy is active.
     const isSpending = currentSort.field === 'obligations';
+    const isProgramName = currentSort.field === 'title';
     spendingButton.classList.toggle('usa-button--outline', !isSpending);
-    programNameButton.classList.toggle('usa-button--outline', isSpending);
+    programNameButton.classList.toggle('usa-button--outline', !isProgramName);
   }
 
   // Function to get correct sort field
   function getSortField(columnId) {
     return sortFieldMapping[columnId] || columnId || "title";
-  }
-
-  // Function to format currency in billions
-  function formatObligations(amount) {
-    const trillion = 1000000000000; // 1T
-    const billion = 1000000000; // 1B
-    const million = 1000000; // 1M
-    const thousand = 1000; // 1K
-    const hundred = 100; // 100
-
-    leading_sign = "$";
-    if (amount < 0) {
-      leading_sign = "-$"
-      amount = amount * -1
-    }
-
-    // Handle 0 case
-    if (amount === 0) {
-      return leading_sign + "0";
-    }
-
-    // Handle trillions
-    if (amount >= trillion) {
-      return `${leading_sign}${(amount / trillion).toFixed(2)}T`;
-    }
-
-    // Handle billions
-    if (amount >= billion) {
-      return `${leading_sign}${(amount / billion).toFixed(2)}B`;
-    }
-
-    // Handle millions
-    if (amount >= million) {
-      return `${leading_sign}${(amount / million).toFixed(2)}M`;
-    }
-
-    // Handle thousands
-    if (amount >= thousand) {
-      return `${leading_sign}${(amount / thousand).toFixed(2)}K`;
-    }
-
-    // Handle small numbers (less than 1000)
-    return `${leading_sign}${amount.toFixed(2)}`;
   }
 
   function updatePagination(currentPage, totalPages) {
@@ -1062,6 +1024,7 @@
     }
   }
 
+
   function renderPrograms(programs) {
     const programList = document.getElementById("program-list");
     const template = document.getElementById("program-template");
@@ -1127,6 +1090,42 @@
 
   async function fetchProgramsData(keyword = currentQuery) {
     console.log("DEBUG: fetchProgramsData called with keyword:", keyword);
+
+    if (programsAbortController) {
+      programsAbortController.abort();
+    }
+    const abortController = new AbortController();
+    programsAbortController = abortController;
+
+    const programList = document.getElementById("program-list");
+    programList.setAttribute("aria-busy", "true");
+    programList.innerHTML = Array.from({ length: 5 }, () => `
+      <div class="padding-y-2 program-search-skeleton" aria-hidden="true">
+        <div class="padding-y-2 program-search-container grid-row grid-gap">
+          <div class="grid-col-8">
+            <div class="skeleton-line skeleton-title"></div>
+          </div>
+          <div class="grid-col-4">
+            <div class="skeleton-line skeleton-amount"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-meta"></div>
+            </div>
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-meta skeleton-meta-short"></div>
+            </div>
+          </div>
+          <div class="grid-row margin-top-1">
+            <div class="grid-col-12">
+              <div class="skeleton-line skeleton-body"></div>
+              <div class="skeleton-line skeleton-body skeleton-body-short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join("");
+
     const requestBody = {
       query: keyword || "",
       page: currentPage,
@@ -1149,6 +1148,7 @@ console.log("DEBUG: Sending request body:", requestBody);
           "Content-Type": "application/json",
         },
         body: JSON.stringify(requestBody),
+        signal: abortController.signal,
       });
 
       if (!response.ok) {
@@ -1175,8 +1175,17 @@ console.log("DEBUG: Sending request body:", requestBody);
 
       return data;
     } catch (error) {
+      if (error.name === "AbortError") {
+        return;
+      }
       console.error("Error fetching programs:", error);
+      programList.innerHTML = `<p class="padding-y-2">Unable to load results. Please try again.</p>`;
       return { programs: [], count: 0, total_obligations: 0 };
+    } finally {
+      if (programsAbortController === abortController) {
+        programList.removeAttribute("aria-busy");
+        programsAbortController = null;
+      }
     }
   }
 
@@ -1506,27 +1515,24 @@ console.log("DEBUG: Sending request body:", requestBody);
     return;
   }
 
-  // Set initial state - spending sort is default
-  spendingButton.classList.remove('usa-button--outline');
-  programNameButton.classList.add('usa-button--outline');
+  // Set initial state - spending sort is default (relevancy applies for keyword search)
+  updateSortButtons();
 
   [spendingButton, programNameButton].forEach(button => {
     button.addEventListener('click', async () => {
-      
       const isSpending = button.id === 'spendingSort';
       const sortField = isSpending ? 'obligations' : 'title';
-
-      // Update button styles
-      spendingButton.classList.toggle('usa-button--outline', !isSpending);
-      programNameButton.classList.toggle('usa-button--outline', isSpending);
 
       // Update sort state
       currentSort = {
         field: sortField,
-        order: sortField === currentSort.field 
+        order: sortField === currentSort.field
           ? (currentSort.order === 'asc' ? 'desc' : 'asc')
           : (isSpending ? 'desc' : 'asc')
       };
+
+      // Update button styles
+      updateSortButtons();
 
       currentPage = 1;
       encodeFiltersToUrl();
@@ -1582,12 +1588,8 @@ console.log("DEBUG: Sending request body:", requestBody);
     // Reset sort to default
     currentSort = { field: "obligations", order: "desc" };
 
-    // Update sort button UI using IDs instead of text content
-    const spendingButton = document.getElementById('spendingSort');
-    const programNameButton = document.getElementById('programNameSort');
-    
-    spendingButton.classList.remove('usa-button--outline');
-    programNameButton.classList.add('usa-button--outline');
+    // Update sort button UI
+    updateSortButtons();
 
     window.history.pushState({}, "", window.location.pathname);
     // Re-fetch data with cleared filters and default sort
@@ -1605,9 +1607,16 @@ console.log("DEBUG: Sending request body:", requestBody);
         event.preventDefault();
 
         if (searchInput) {
-          const keyword = searchInput.value;
+          const keyword = searchInput.value.trim();
           currentQuery = keyword;
           currentPage = 1;
+          // Keyword searches default to relevancy; empty query falls back to spending
+          if (keyword) {
+            currentSort = { field: "relevancy", order: "desc" };
+          } else if (currentSort.field === "relevancy") {
+            currentSort = { field: "obligations", order: "desc" };
+          }
+          updateSortButtons();
           encodeFiltersToUrl();
           await fetchProgramsData(keyword);
           updateClearFilterButton();

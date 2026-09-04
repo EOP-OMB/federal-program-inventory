@@ -4,13 +4,13 @@ describe('Program tabs', () => {
     cy.visit('test/program_tabs.html');
     cy.get('body').compareSnapshot('overview');
     cy.get('#spending-tab').click();
-    cy.get('body').compareSnapshot('spending');
+    cy.get('.grid-container').compareSnapshot('spending');
     cy.get('#results-tab').click();
-    cy.get('body').compareSnapshot('results');
+    cy.get('.grid-container').compareSnapshot('results');
     cy.get('#authorization-tab').click();
-    cy.get('body').compareSnapshot('authorization');
+    cy.get('.grid-container').compareSnapshot('authorization');
     cy.get('#oversight-tab').click();
-    cy.get('body').compareSnapshot('oversight');
+    cy.get('.grid-container').compareSnapshot('oversight');
   });
 
   it('full page screenshots - responsiveness', () => {
@@ -18,12 +18,12 @@ describe('Program tabs', () => {
     cy.visit('test/program_tabs.html');
     cy.get('body').compareSnapshot('overview_responsiveness');
     cy.get('#spending-tab').click();
-    cy.get('body').compareSnapshot('spending_responsiveness');
+    cy.get('.grid-container').compareSnapshot('spending_responsiveness');
     cy.get('#results-tab').click();
-    cy.get('body').compareSnapshot('results_responsiveness');
+    cy.get('.grid-container').compareSnapshot('results_responsiveness');
     cy.get('#authorization-tab').click();
-    cy.get('body').compareSnapshot('authorization_responsiveness');
+    cy.get('.grid-container').compareSnapshot('authorization_responsiveness');
     cy.get('#oversight-tab').click();
-    cy.get('body').compareSnapshot('oversight_responsiveness');
+    cy.get('.grid-container').compareSnapshot('oversight_responsiveness');
   });
 });

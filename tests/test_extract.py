@@ -1,5 +1,5 @@
 """
-This covers functions that pull data from SAM.gov and USASpending.gov.
+This covers functions that pull data from SAM.gov and USAspending.gov.
 I've tried to mock all external API calls
 
 KNOWN ISSUES :
@@ -252,7 +252,7 @@ class TestExtractUSASpendingAwardHashes:
     @patch('json.dumps')
     def test_extract_usaspending_award_hashes_success(self, mock_dumps, mock_get, mock_post, mock_file, mock_load, mock_exists):
         """
-        Test successful extraction of USASpending award hashes.
+        Test successful extraction of USAspending award hashes.
         """
         # Mock load assistance listings
         mock_load.return_value = [

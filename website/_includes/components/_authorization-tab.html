@@ -7,6 +7,9 @@
         {% for auth in include.authorizations %}
         <li class="padding-bottom-2">
             <span>
+            {% comment %}
+                auth.text is already escaped
+            {% endcomment %}
             {% if auth.url %}
                 <a href="{{ auth.url }}" class="usa-link--external text-base-darkest" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
             {% else %}
@@ -27,7 +30,7 @@
         <!-- single list item is intentional -->
         <li>
         <span>
-            {{ include.rules_regulations }}
+            {{ include.rules_regulations | escape }}
         </span>
         </li>
     </ul>

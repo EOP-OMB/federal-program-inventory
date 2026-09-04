@@ -2,12 +2,9 @@
 layout: default
 footer_include: _footer-program.html
 ---
-
-{% include scripts/_dollar-standardization.html %}
-
 <div class="grid-container">
 
-  <div class="grid-row grid-gap">
+  <div class="grid-row">
     <!-- Main Column -->
     <div class="grid-col-9 margin-bottom-5 border-top border-base-lightest">
       <!-- Breadcrumb Header -->
@@ -47,7 +44,7 @@ footer_include: _footer-program.html
               {% if page.objective != nil and page.objective != '' %}
                 {% assign program_description = page.objective %}
               {% endif %}
-              {{ program_description }}
+              {{ program_description | escape }}
             </p>
             
             <!-- Sub-categories Tags -->
@@ -66,7 +63,7 @@ footer_include: _footer-program.html
             {% endif %}
 
             {% if has_purpose == true %}
-              <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;">
+              <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;" id="purpose-pane">
                 <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
                   <h2 class="text-bold">Purpose</h2>
                   {% include components/_view-results.html href="#" text="View results" onclick="document.getElementById('results-tab').click();" %}
@@ -145,7 +142,8 @@ footer_include: _footer-program.html
             <p>
               The graph shows the spending associated with the program for each available fiscal year. Obligations are a
               binding agreement the government makes to spend money, either immediately or in the future, when awarding
-              funding. Outlays are what the federal government actually spent, not just promised to be paid. See our <a
+              funding. Outlays are what the federal government actually spent, not just promised to be paid.
+              For tax expenditures, outlays and revenue losses are shown. See our <a
                 href="/about/terms" class="usa-link">FPI Data, Terms & Concepts</a> page for more
               details.
             </p>
@@ -267,13 +265,13 @@ footer_include: _footer-program.html
               </p>
               <p class="line-height-body-4">
                 For additional information on single audit requirements for this program, review the current
-                <a href="https://www.whitehouse.gov/omb/office-federal-financial-management/current-compliance-supplement/"
+                <a href="https://www.whitehouse.gov/omb/information-resources/guidance/compliance-supplement/"
                   class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
               </p>
             </div>
             {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}
               <div id="program-rules-regs" >
-                {{ page.rules_regulations }}
+                {{ page.rules_regulations | escape }}
               </div>
             {% endif %}
           </div>

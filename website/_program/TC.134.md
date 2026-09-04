@@ -4,7 +4,9 @@ agency_id: 100076336
 applicant_types: []
 assistance_types:
 - Tax Expenditures
-authorizations: []
+authorizations:
+- text: See Treasury.gov
+  url: https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures
 beneficiary_types: []
 categories:
 - Health - Healthcare Quality and Delivery
