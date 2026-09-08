@@ -49,16 +49,7 @@ def create_index_with_mapping(index_name):
             "index": {
                 "query": {
                     "default_field": ["title", "objectives", "cfda",
-                                      "popularName", "gwo", "pons"]
-                }
-            },
-            "analysis": {
-                "normalizer": {
-                    "lowercase": {
-                        "type": "custom",
-                        "char_filter": [],
-                        "filter": ["lowercase"]
-                    }
+                                      "popularName"]
                 }
             }
         },
@@ -112,12 +103,6 @@ def create_index_with_mapping(index_name):
                 "obligations": {
                     "type": "float"
                 },
-                "programType": {
-                    "type": "keyword"
-                },
-                "data_source": {
-                    "type": "keyword"
-                },
                 "objectives": {
                     "type": "text",
                     "analyzer": "english",  # Add stemming
@@ -126,14 +111,6 @@ def create_index_with_mapping(index_name):
                             "type": "keyword"
                         }
                     }
-                },
-                "gwo": {
-                    "type": "keyword",
-                    "normalizer": "lowercase"
-                },
-                "pons": {
-                    "type": "keyword",
-                    "normalizer": "lowercase"
                 },
                 "popularName": {
                     "type": "text",
@@ -274,9 +251,6 @@ if __name__ == "__main__":
         }
     )
 
-    # Reload the index once after deployment
-    index_reloaded_once = False
-
     # Continuously check if Elasticsearch is available
     status_code = 0
     while status_code == 0:
@@ -294,12 +268,10 @@ if __name__ == "__main__":
             es_program_count = int(es_program_count['count'])
 
             # If document count in ES does not equal source JSON, rebuild
-            if (not index_reloaded_once) or (json_program_count != es_program_count):
-                index_reloaded_once = True
-                # Always recreate once on startup (or any mismatch) so mapping
-                # changes are applied even when the current index has 0 docs.
-                delete_index(index_name)
-                create_index_with_mapping(index_name)
+            if json_program_count != es_program_count:
+                if es_program_count != 0:
+                    delete_index(index_name)
+                    create_index_with_mapping(index_name)
                 new_es_program_count = load_data(json_file, index_name)
                 final_es_program_count = verify_index(index_name)
                 logger.info(f"Indexing complete. JSON: {json_program_count}; \
