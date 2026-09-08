@@ -1,491 +1,229 @@
 ---
-agencies: '[{"title":"The Institute of Museum and Library Services","total_num_programs":8,"total_obs":262382877.0},{"title":"Department
-  of State","total_num_programs":11,"total_obs":207730619.0},{"title":"National Endowment
-  for the Arts","total_num_programs":3,"total_obs":163162825.0},{"title":"National
-  Endowment for the Humanities","total_num_programs":9,"total_obs":141415000.0},{"title":"Department
-  of Education","total_num_programs":1,"total_obs":36500000.0},{"title":"Inter-American
-  Foundation","total_num_programs":2,"total_obs":31000000.0},{"title":"Department
-  of the Interior","total_num_programs":7,"total_obs":21802352.0},{"title":"Southeast
-  Crescent Regional Commission","total_num_programs":1,"total_obs":20000000.0},{"title":"Library
-  of Congress","total_num_programs":4,"total_obs":0.0},{"title":"Japan-U.S. Friendship
-  Commission","total_num_programs":1,"total_obs":0.0},{"title":"Denali Commission","total_num_programs":1,"total_obs":0.0}]'
+agencies: '[{"title":"Department of the Treasury","total_num_programs":1,"total_obs":770000000.0},{"title":"Department
+  of the Interior","total_num_programs":24,"total_obs":266187183.42999998},{"title":"The
+  Institute of Museum and Library Services","total_num_programs":8,"total_obs":239025739.62},{"title":"Department
+  of Education","total_num_programs":5,"total_obs":216193204.71},{"title":"National
+  Endowment for the Arts","total_num_programs":3,"total_obs":116320336.16},{"title":"National
+  Endowment for the Humanities","total_num_programs":12,"total_obs":70713516.11},{"title":"Department
+  of Homeland Security","total_num_programs":2,"total_obs":9514042.68},{"title":"Department
+  of Veterans Affairs","total_num_programs":1,"total_obs":1920025.72},{"title":"National
+  Archives and Records Administration","total_num_programs":2,"total_obs":1738523.8},{"title":"Library
+  of Congress","total_num_programs":2,"total_obs":0.0},{"title":"Department of Transportation","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Health and Human Services","total_num_programs":1,"total_obs":0.0},{"title":"Department
+  of Defense","total_num_programs":1,"total_obs":0.0}]'
 applicant_types: '[{"title":"Public nonprofit institution/organization (includes institutions
-  of higher education and hospitals)","total_num_programs":35},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":34},{"title":"Other
-  public institution/organization","total_num_programs":14},{"title":"State (includes
-  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":14},{"title":"Local
-  (includes State-designated lndian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":12},{"title":"Federally Recognized lndian Tribal
-  Governments","total_num_programs":11},{"title":"Other private institutions/organizations","total_num_programs":10},{"title":"Non-Government
-  - General","total_num_programs":9},{"title":"Native American Organizations (includes
-  lndian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":8},{"title":"Quasi-public
-  nonprofit institution/organization","total_num_programs":8},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"State","total_num_programs":7},{"title":"Individual/Family","total_num_programs":6},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":6},{"title":"U.S.
-  Territories and possessions","total_num_programs":4},{"title":"Anyone/general public","total_num_programs":3},{"title":"Minority
-  group","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Federal","total_num_programs":2},{"title":"Interstate","total_num_programs":2},{"title":"Small
-  business (less than 500 employees)","total_num_programs":2},{"title":"Sponsored
-  organization","total_num_programs":2},{"title":"Government - General","total_num_programs":1},{"title":"Intrastate","total_num_programs":1}]'
+  of higher education and hospitals)","total_num_programs":22},{"title":"Private nonprofit
+  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":21},{"title":"State","total_num_programs":20},{"title":"Local
+  (includes State-designated Indian Tribes, excludes institutions of higher education
+  and hospitals","total_num_programs":19},{"title":"Federally Recognized Indian/Native
+  American/Alaska Native Tribal Government","total_num_programs":18},{"title":"State
+  (includes District of Columbia, public institutions of higher education and hospitals)","total_num_programs":16},{"title":"U.S.
+  Territory (or Possession) Government (including freely-associated states)","total_num_programs":15},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":14},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":14},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":14},{"title":"Not-for-Profit Organization","total_num_programs":14},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":14},{"title":"Other
+  Local Government Consortium, Regional Organization (Intrastate), or Other Local
+  Government Combination","total_num_programs":12},{"title":"Native American Organizations
+  (includes Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":10},{"title":"Nonprofit
+  Organization","total_num_programs":10},{"title":"Other private institutions/organizations","total_num_programs":8},{"title":"Other
+  public institution/organization","total_num_programs":8},{"title":"U.S. Territories
+  and possessions (includes institutions of higher education and hospitals)","total_num_programs":7},{"title":"Local","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"Anyone/general
+  public","total_num_programs":4},{"title":"Department or Agency of a U.S. State Government","total_num_programs":4},{"title":"Federal","total_num_programs":4},{"title":"City
+  or Township Government","total_num_programs":3},{"title":"Department or Agency of
+  a U.S. Territorial Government","total_num_programs":3},{"title":"Interstate","total_num_programs":3},{"title":"Quasi-public
+  nonprofit institution/organization","total_num_programs":3},{"title":"Small business
+  (less than 500 employees)","total_num_programs":3},{"title":"County Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Minority
+  group","total_num_programs":2},{"title":"Nonprofit with 501C3 IRS Status (Other
+  than Institution of Higher Education)","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"Profit
+  organization","total_num_programs":2},{"title":"Specialized group (e.g. health professionals,
+  students, veterans)","total_num_programs":2},{"title":"Sponsored organization","total_num_programs":2},{"title":"Unrestricted
+  by Individual Type","total_num_programs":2},{"title":"For-Profit Organization (Other
+  than Small Business)","total_num_programs":1},{"title":"Government - General","total_num_programs":1},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Non-Government
+  - General","total_num_programs":1},{"title":"Nonprofit without 501C3 IRS Status
+  (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Other
+  Special Disctrict Government","total_num_programs":1},{"title":"Regional Organization","total_num_programs":1},{"title":"School
+  District","total_num_programs":1},{"title":"Special District Government","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"U.S.
+  Federal Government","total_num_programs":1},{"title":"U.S. Territories and possessions","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/forestry
-    title: Forestry
-  - permalink: /category/agricultural/marketing
-    title: Marketing
-  - permalink: /category/agricultural/production-and-operation
-    title: Production and Operation
-  - permalink: /category/agricultural/research-and-development
-    title: Research and Development
-  - permalink: /category/agricultural/resource-conservation-and-development
-    title: Resource Conservation and Development
-  - permalink: /category/agricultural/stabilization-and-conservation-service
-    title: Stabilization and Conservation Service
-  - permalink: /category/agricultural/technical-assistance--information-and-services
-    title: Technical Assistance, Information and Services
+  - permalink: /category/agricultural/agricultural-resources-and-services
+    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/farm-income-stabilization
+    title: Farm Income Stabilization
   title: Agricultural
 - permalink: /category/business-and-commerce
   subcategories:
-  - permalink: /category/business-and-commerce/commercial-fisheries
-    title: Commercial Fisheries
+  - permalink: /category/business-and-commerce/business-development
+    title: Business Development
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
-  - permalink: /category/business-and-commerce/economic-injury-and-natural-disaster
-    title: Economic Injury and Natural Disaster
-  - permalink: /category/business-and-commerce/international
-    title: International
-  - permalink: /category/business-and-commerce/maritime
-    title: Maritime
-  - permalink: /category/business-and-commerce/minority-business-enterprise
-    title: Minority Business Enterprise
-  - permalink: /category/business-and-commerce/small-business
-    title: Small Business
-  - permalink: /category/business-and-commerce/special-technical-service
-    title: Special Technical Service
-  - permalink: /category/business-and-commerce/statistics
-    title: Statistics
   title: Business and Commerce
 - permalink: /category/community-development
   subcategories:
-  - permalink: /category/community-development/construction--renewal-and-operations
-    title: Construction, Renewal and Operations
-  - permalink: /category/community-development/federal-surplus-property
-    title: Federal Surplus Property
-  - permalink: /category/community-development/fire-protection
-    title: Fire Protection
-  - permalink: /category/community-development/historical-preservation
-    title: Historical Preservation
-  - permalink: /category/community-development/indian-action-services
-    title: Indian Action Services
-  - permalink: /category/community-development/land-acquisition
-    title: Land Acquisition
-  - permalink: /category/community-development/planning-and-research
-    title: Planning and Research
-  - permalink: /category/community-development/recreation
-    title: Recreation
-  - permalink: /category/community-development/rural-community-development
-    title: Rural Community Development
-  - permalink: /category/community-development/site-acquisition
-    title: Site Acquisition
-  - permalink: /category/community-development/technical-assistance-and-services
-    title: Technical Assistance and Services
+  - permalink: /category/community-development/community--area--and-regional-development
+    title: Community, Area, and Regional Development
   title: Community Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/complaint-investigation
-    title: Complaint Investigation
-  - permalink: /category/consumer-protection/information-and-educational-services
-    title: Information and Educational Services
-  - permalink: /category/consumer-protection/regulation--inspection--enforcement
-    title: Regulation, Inspection, Enforcement
+  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
+    title: Consumer and Occupational Health and Safety
   title: Consumer Protection
 - permalink: /category/cultural-affairs
   subcategories:
-  - permalink: /category/cultural-affairs/promotion-of-the-arts
-    title: Promotion of the Arts
-  - permalink: /category/cultural-affairs/promotion-of-the-humanities
-    title: Promotion of the Humanities
+  - permalink: /category/cultural-affairs/access-and-appreciation
+    title: Access and Appreciation
+  - permalink: /category/cultural-affairs/artistic-talent-development
+    title: Artistic Talent Development
+  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
+    title: Cultural Heritage and Traditions
+  - permalink: /category/cultural-affairs/cultural-institutions
+    title: Cultural Institutions
   title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
-  - permalink: /category/disaster-prevention-and-relief/disaster-relief
-    title: Disaster Relief
-  - permalink: /category/disaster-prevention-and-relief/emergency-health-services
-    title: Emergency Health Services
-  - permalink: /category/disaster-prevention-and-relief/emergency-preparedness--civil-defense
-    title: Emergency Preparedness, Civil Defense
-  - permalink: /category/disaster-prevention-and-relief/flood-prevention-and-control
-    title: Flood Prevention and Control
+  - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
+    title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
 - permalink: /category/education
   subcategories:
-  - permalink: /category/education/dental-education-and-training
-    title: Dental Education and Training
-  - permalink: /category/education/educational-equipment-and-resources
-    title: Educational Equipment and Resources
-  - permalink: /category/education/educational-facilities
-    title: Educational Facilities
-  - permalink: /category/education/elementary-and-secondary
-    title: Elementary and Secondary
-  - permalink: /category/education/general-research-and-evaluation
-    title: General Research and Evaluation
-  - permalink: /category/education/health-education-and-training
-    title: Health Education and Training
-  - permalink: /category/education/higher-education---general
-    title: Higher Education - General
-  - permalink: /category/education/indian-education
-    title: Indian Education
-  - permalink: /category/education/libraries-and-technical-lnformation-services
-    title: Libraries and Technical lnformation Services
-  - permalink: /category/education/medical-education-and-training
-    title: Medical Education and Training
-  - permalink: /category/education/nuclear-education-and-training
-    title: Nuclear Education and Training
-  - permalink: /category/education/nursing-education
-    title: Nursing Education
-  - permalink: /category/education/resource-development-and-support---elementary--secondary-education
-    title: Resource Development and Support - Elementary, Secondary Education
-  - permalink: /category/education/resource-development-and-support---general-and-special-interest-organizations
-    title: Resource Development and Support - General and Special Interest Organizations
-  - permalink: /category/education/resource-development-and-support---higher-education
-    title: Resource Development and Support - Higher Education
-  - permalink: /category/education/resource-development-and-support---land-and-equipment
-    title: Resource Development and Support - Land and Equipment
-  - permalink: /category/education/resource-development-and-support---school-aid
-    title: Resource Development and Support - School Aid
-  - permalink: /category/education/resource-development-and-support---sciences
-    title: Resource Development and Support - Sciences
-  - permalink: /category/education/resource-development-and-support---student-financial-aid
-    title: Resource Development and Support - Student Financial Aid
-  - permalink: /category/education/resource-development-and-support---vocational-education-and-handicapped-education
-    title: Resource Development and Support - Vocational Education and Handicapped
-      Education
-  - permalink: /category/education/special-education
-    title: Special Education
-  - permalink: /category/education/teacher-training
-    title: Teacher Training
-  - permalink: /category/education/vocational-development
-    title: Vocational Development
+  - permalink: /category/education/early-childhood-education-and-childcare
+    title: Early Childhood Education and Childcare
+  - permalink: /category/education/educational-environments
+    title: Educational Environments
+  - permalink: /category/education/k-12-education
+    title: K–12 Education
+  - permalink: /category/education/post-secondary-education
+    title: Post–Secondary Education
+  - permalink: /category/education/stem-education
+    title: STEM Education
   title: Education
-- permalink: /category/employment--labor--and-training
+- permalink: /category/employment-and-labor
   subcategories:
-  - permalink: /category/employment--labor--and-training/assistance-and-services-for-the-unemployed
-    title: Assistance and Services for the Unemployed
-  - permalink: /category/employment--labor--and-training/assistance-to-state-and-local-governments
-    title: Assistance to State and Local Governments
-  - permalink: /category/employment--labor--and-training/bonding-and-certification
-    title: Bonding and Certification
-  - permalink: /category/employment--labor--and-training/equal-employment-opportunity
-    title: Equal Employment Opportunity
-  - permalink: /category/employment--labor--and-training/facilities--planning--construction--and-equipment
-    title: Facilities, Planning, Construction, and Equipment
-  - permalink: /category/employment--labor--and-training/federal-employment
-    title: Federal Employment
-  - permalink: /category/employment--labor--and-training/job-training--employment
-    title: Job Training, Employment
-  - permalink: /category/employment--labor--and-training/labor-management-services
-    title: Labor Management Services
-  - permalink: /category/employment--labor--and-training/planning--research--and-demonstration
-    title: Planning, Research, and Demonstration
-  - permalink: /category/employment--labor--and-training/program-development
-    title: Program Development
-  - permalink: /category/employment--labor--and-training/statistical
-    title: Statistical
-  title: Employment, Labor, and Training
+  - permalink: /category/employment-and-labor/workforce-development
+    title: Workforce Development
+  title: Employment and Labor
 - permalink: /category/energy
   subcategories:
-  - permalink: /category/energy/conservation
-    title: Conservation
-  - permalink: /category/energy/education-and-training
-    title: Education and Training
-  - permalink: /category/energy/facilities-and-equipment
-    title: Facilities and Equipment
-  - permalink: /category/energy/general-information-services
-    title: General Information Services
-  - permalink: /category/energy/research-and-development
-    title: Research and Development
-  - permalink: /category/energy/specialized-technical-services
-    title: Specialized Technical Services
+  - permalink: /category/energy/energy-supply
+    title: Energy Supply
   title: Energy
 - permalink: /category/environmental-quality
   subcategories:
-  - permalink: /category/environmental-quality/air-pollution-control
-    title: Air Pollution Control
-  - permalink: /category/environmental-quality/pesticides-control
-    title: Pesticides Control
-  - permalink: /category/environmental-quality/radiation-control
-    title: Radiation Control
-  - permalink: /category/environmental-quality/research--education--training
-    title: Research, Education, Training
-  - permalink: /category/environmental-quality/solid-waste-management
-    title: Solid Waste Management
-  - permalink: /category/environmental-quality/water-pollution-control
-    title: Water Pollution Control
+  - permalink: /category/environmental-quality/pollution-control-and-abatement
+    title: Pollution Control and Abatement
   title: Environmental Quality
 - permalink: /category/food-and-nutrition
   subcategories:
-  - permalink: /category/food-and-nutrition/food-inspection
-    title: Food Inspection
-  - permalink: /category/food-and-nutrition/food-and-nutrition-for-children
-    title: Food and Nutrition for Children
-  - permalink: /category/food-and-nutrition/food-and-nutrition-for-individual-and-families
-    title: Food and Nutrition for Individual and Families
-  - permalink: /category/food-and-nutrition/research
-    title: Research
+  - permalink: /category/food-and-nutrition/food-and-nutrition-assistance
+    title: Food and Nutrition Assistance
   title: Food and Nutrition
+- permalink: /category/general-government
+  subcategories:
+  - permalink: /category/general-government/central-personnel-management
+    title: Central Personnel Management
+  - permalink: /category/general-government/debt-service
+    title: Debt Service
+  - permalink: /category/general-government/fees-and-receipts
+    title: Fees and Receipts
+  - permalink: /category/general-government/general-property-and-records-management
+    title: General Property and Records Management
+  - permalink: /category/general-government/judiciary-branch-functions
+    title: Judiciary Branch Functions
+  - permalink: /category/general-government/legislative-branch-functions
+    title: Legislative Branch Functions
+  title: General Government
 - permalink: /category/health
   subcategories:
-  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---general
-    title: Alcoholism, Drug Abuse and Mental Health - General
-  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---law-enforcement
-    title: Alcoholism, Drug Abuse and Mental Health - Law Enforcement
-  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---planning
-    title: Alcoholism, Drug Abuse and Mental Health - Planning
-  - permalink: /category/health/alcoholism--drug-abuse-and-mental-health---research
-    title: Alcoholism, Drug Abuse and Mental Health - Research
-  - permalink: /category/health/communicable-diseases
-    title: Communicable Diseases
-  - permalink: /category/health/education-and-training
-    title: Education and Training
-  - permalink: /category/health/facility-loans-and-insurance
-    title: Facility Loans and Insurance
-  - permalink: /category/health/facility-planning-and-construction
-    title: Facility Planning and Construction
-  - permalink: /category/health/general-health-and-medical
-    title: General Health and Medical
-  - permalink: /category/health/health-research---general
-    title: Health Research - General
-  - permalink: /category/health/health-services-planning-and-technical-assistance
-    title: Health Services Planning and Technical Assistance
-  - permalink: /category/health/indian-health
-    title: Indian Health
-  - permalink: /category/health/libraries--information-and-education-services
-    title: Libraries, Information and Education Services
-  - permalink: /category/health/maternity--infants--children
-    title: Maternity, Infants, Children
-  - permalink: /category/health/mental-health
-    title: Mental Health
-  - permalink: /category/health/occupational-safety-and-health
-    title: Occupational Safety and Health
-  - permalink: /category/health/physical-fitness
-    title: Physical Fitness
-  - permalink: /category/health/prevention-and-control
-    title: Prevention and Control
-  - permalink: /category/health/program-development
-    title: Program Development
-  - permalink: /category/health/specialized-health-research-and-training
-    title: Specialized Health Research and Training
-  - permalink: /category/health/veterans-health
-    title: Veterans Health
+  - permalink: /category/health/child-welfare
+    title: Child Welfare
+  - permalink: /category/health/health-and-wellbeing
+    title: Health and Wellbeing
+  - permalink: /category/health/healthcare-access
+    title: Healthcare Access
+  - permalink: /category/health/healthcare-innovation
+    title: Healthcare Innovation
+  - permalink: /category/health/healthcare-quality-and-delivery
+    title: Healthcare Quality and Delivery
+  - permalink: /category/health/veteran-health
+    title: Veteran Health
   title: Health
 - permalink: /category/housing
   subcategories:
-  - permalink: /category/housing/construction-rehabilitation
-    title: Construction Rehabilitation
-  - permalink: /category/housing/cooperatives--rental
-    title: Cooperatives, Rental
-  - permalink: /category/housing/experimental-and-development-projects
-    title: Experimental and Development Projects
-  - permalink: /category/housing/home-improvement
-    title: Home Improvement
-  - permalink: /category/housing/homebuying--homeownership
-    title: Homebuying, Homeownership
-  - permalink: /category/housing/indian-housing
-    title: Indian Housing
-  - permalink: /category/housing/land-acquisition
-    title: Land Acquisition
-  - permalink: /category/housing/multifamily
-    title: Multifamily
-  - permalink: /category/housing/planning
-    title: Planning
-  - permalink: /category/housing/property-and-mortgage-insurance
-    title: Property and Mortgage Insurance
-  - permalink: /category/housing/rural-housing
-    title: Rural Housing
-  - permalink: /category/housing/site-preparation-for-housing
-    title: Site Preparation for Housing
+  - permalink: /category/housing/housing-and-homelessness
+    title: Housing and Homelessness
   title: Housing
 - permalink: /category/income-security-and-social-services
   subcategories:
-  - permalink: /category/income-security-and-social-services/disabled-veterans
-    title: Disabled Veterans
-  - permalink: /category/income-security-and-social-services/disabled-and-handicapped-services
-    title: Disabled and Handicapped Services
-  - permalink: /category/income-security-and-social-services/emergency-and-crisis-assistance
-    title: Emergency and Crisis Assistance
-  - permalink: /category/income-security-and-social-services/families-and-child-welfare-services
-    title: Families and Child Welfare Services
-  - permalink: /category/income-security-and-social-services/indian-services
-    title: Indian Services
-  - permalink: /category/income-security-and-social-services/information-and-referral-services
-    title: Information and Referral Services
-  - permalink: /category/income-security-and-social-services/legal-and-advocacy-services
-    title: Legal and Advocacy Services
-  - permalink: /category/income-security-and-social-services/nutrition
-    title: Nutrition
-  - permalink: /category/income-security-and-social-services/old-age-assistance
-    title: Old Age Assistance
-  - permalink: /category/income-security-and-social-services/prevention
-    title: Prevention
-  - permalink: /category/income-security-and-social-services/public-assistance
-    title: Public Assistance
-  - permalink: /category/income-security-and-social-services/refugees--alien-services
-    title: Refugees, Alien Services
-  - permalink: /category/income-security-and-social-services/research--demonstration
-    title: Research, Demonstration
-  - permalink: /category/income-security-and-social-services/social-security-and-insurance
-    title: Social Security and Insurance
-  - permalink: /category/income-security-and-social-services/specialized-family-and-child-welfare-services
-    title: Specialized Family and Child Welfare Services
-  - permalink: /category/income-security-and-social-services/specialized-services
-    title: Specialized Services
-  - permalink: /category/income-security-and-social-services/training-assistance
-    title: Training Assistance
-  - permalink: /category/income-security-and-social-services/veterans-services
-    title: Veterans Services
-  - permalink: /category/income-security-and-social-services/youth-services
-    title: Youth Services
+  - permalink: /category/income-security-and-social-services/burial-benefits
+    title: Burial Benefits
+  - permalink: /category/income-security-and-social-services/personal-financial-health
+    title: Personal Financial Health
   title: Income Security and Social Services
-- permalink: /category/information-and-statistics
+- permalink: /category/international-affairs
   subcategories:
-  - permalink: /category/information-and-statistics/census-data
-    title: Census Data
-  - permalink: /category/information-and-statistics/general
-    title: General
-  - permalink: /category/information-and-statistics/libraries--clearinghouses--archives
-    title: Libraries, Clearinghouses, Archives
-  - permalink: /category/information-and-statistics/library-of-congress
-    title: Library of Congress
-  title: Information and Statistics
-- permalink: /category/interest-on-the-public-debt
+  - permalink: /category/international-affairs/international-relations-and-foreign-affairs
+    title: International Relations and Foreign Affairs
+  title: International Affairs
+- permalink: /category/law--justice--and-legal-services
   subcategories:
-  - permalink: /category/interest-on-the-public-debt/interest-on-the-public-debt
-    title: Interest on the Public Debt
-  title: Interest on the Public Debt
-- permalink: /category/law--justice-and-legal-services
+  - permalink: /category/law--justice--and-legal-services/border-security
+    title: Border Security
+  - permalink: /category/law--justice--and-legal-services/cybersecurity
+    title: Cybersecurity
+  - permalink: /category/law--justice--and-legal-services/domestic-threats-and-hazards
+    title: Domestic Threats and Hazards
+  - permalink: /category/law--justice--and-legal-services/law-enforcement-support
+    title: Law Enforcement Support
+  - permalink: /category/law--justice--and-legal-services/legal-services
+    title: Legal Services
+  - permalink: /category/law--justice--and-legal-services/tribal-independence-and-autonomy
+    title: Tribal Independence and Autonomy
+  title: Law, Justice, and Legal Services
+- permalink: /category/national-defense
   subcategories:
-  - permalink: /category/law--justice-and-legal-services/law-enforcement---crime-analysis-and-data
-    title: Law Enforcement - Crime Analysis and Data
-  - permalink: /category/law--justice-and-legal-services/law-enforcement---narcotics-and-dangerous-drugs
-    title: Law Enforcement - Narcotics and Dangerous Drugs
-  - permalink: /category/law--justice-and-legal-services/law-enforcement---planning-and-operations
-    title: Law Enforcement - Planning and Operations
-  - permalink: /category/law--justice-and-legal-services/law-enforcement---research--education--training
-    title: Law Enforcement - Research, Education, Training
-  - permalink: /category/law--justice-and-legal-services/legal-services---claims-against-foreign-government
-    title: Legal Services - Claims Against Foreign Government
-  - permalink: /category/law--justice-and-legal-services/legal-services---employment-rights
-    title: Legal Services - Employment Rights
-  - permalink: /category/law--justice-and-legal-services/legal-services---general-services
-    title: Legal Services - General Services
-  - permalink: /category/law--justice-and-legal-services/legal-services---housing-rights
-    title: Legal Services - Housing Rights
-  - permalink: /category/law--justice-and-legal-services/legal-services---labor-management
-    title: Legal Services - Labor Management
-  title: Law, Justice and Legal Services
+  - permalink: /category/national-defense/defense-capability
+    title: Defense Capability
+  title: National Defense
 - permalink: /category/natural-resources
   subcategories:
-  - permalink: /category/natural-resources/community-sewage-treatment-assistance
-    title: Community Sewage Treatment Assistance
-  - permalink: /category/natural-resources/community-water-supply-services
-    title: Community Water Supply Services
-  - permalink: /category/natural-resources/land-conservation
-    title: Land Conservation
-  - permalink: /category/natural-resources/mineral-research
-    title: Mineral Research
-  - permalink: /category/natural-resources/recreation
-    title: Recreation
-  - permalink: /category/natural-resources/water-conservation-and-research
-    title: Water Conservation and Research
-  - permalink: /category/natural-resources/wildlife-research-and-preservation
-    title: Wildlife Research and Preservation
+  - permalink: /category/natural-resources/conservation-and-land-management
+    title: Conservation and Land Management
+  - permalink: /category/natural-resources/recreational-resources
+    title: Recreational Resources
+  - permalink: /category/natural-resources/water-resources
+    title: Water Resources
   title: Natural Resources
-- permalink: /category/regional-development
-  subcategories:
-  - permalink: /category/regional-development/economic-development
-    title: Economic Development
-  - permalink: /category/regional-development/education
-    title: Education
-  - permalink: /category/regional-development/energy
-    title: Energy
-  - permalink: /category/regional-development/health-and-nutrition
-    title: Health and Nutrition
-  - permalink: /category/regional-development/housing
-    title: Housing
-  - permalink: /category/regional-development/land-acquisition-and-rehabilitation-and-facilities-construction
-    title: Land Acquisition and Rehabilitation and Facilities Construction
-  - permalink: /category/regional-development/planning-and-technical-assistance
-    title: Planning and Technical Assistance
-  - permalink: /category/regional-development/resources-and-development
-    title: Resources and Development
-  - permalink: /category/regional-development/transportation
-    title: Transportation
-  title: Regional Development
 - permalink: /category/science-and-technology
   subcategories:
-  - permalink: /category/science-and-technology/information-and-technical
-    title: Information and Technical
-  - permalink: /category/science-and-technology/research---general
-    title: Research - General
-  - permalink: /category/science-and-technology/research---specialized
-    title: Research - Specialized
+  - permalink: /category/science-and-technology/general-science-and-basic-research
+    title: General science and basic research
   title: Science and Technology
-- permalink: /category/tax-expenditures
-  subcategories:
-  - permalink: /category/tax-expenditures/agriculture
-    title: Agriculture
-  - permalink: /category/tax-expenditures/commerce-and-housing
-    title: Commerce and Housing
-  - permalink: /category/tax-expenditures/community-and-regional-development
-    title: Community and Regional Development
-  - permalink: /category/tax-expenditures/education--training--employment--and-social-services
-    title: Education, Training, Employment, and Social Services
-  - permalink: /category/tax-expenditures/energy
-    title: Energy
-  - permalink: /category/tax-expenditures/general-purpose-fiscal-assistance
-    title: General Purpose Fiscal Assistance
-  - permalink: /category/tax-expenditures/general-science--space--and-technology
-    title: General Science, Space, and Technology
-  - permalink: /category/tax-expenditures/health
-    title: Health
-  - permalink: /category/tax-expenditures/income-security
-    title: Income Security
-  - permalink: /category/tax-expenditures/interest
-    title: Interest
-  - permalink: /category/tax-expenditures/international-affairs
-    title: International Affairs
-  - permalink: /category/tax-expenditures/national-defense
-    title: National Defense
-  - permalink: /category/tax-expenditures/natural-resources-and-environment
-    title: Natural Resources and Environment
-  - permalink: /category/tax-expenditures/social-security
-    title: Social Security
-  - permalink: /category/tax-expenditures/transportation
-    title: Transportation
-  - permalink: /category/tax-expenditures/veterans-benefits-and-services
-    title: Veterans Benefits and Services
-  title: Tax Expenditures
 - permalink: /category/transportation
   subcategories:
   - permalink: /category/transportation/air-transportation
     title: Air Transportation
-  - permalink: /category/transportation/highways--public-roads--and-bridges
-    title: Highways, Public Roads, and Bridges
-  - permalink: /category/transportation/rail-transportation
-    title: Rail Transportation
-  - permalink: /category/transportation/urban-mass-transit
-    title: Urban Mass Transit
-  - permalink: /category/transportation/water-navigation
-    title: Water Navigation
+  - permalink: /category/transportation/ground-transportation
+    title: Ground Transportation
+  - permalink: /category/transportation/multi-modal-transportation
+    title: Multi–modal Transportation
+  - permalink: /category/transportation/water-transportation
+    title: Water Transportation
   title: Transportation
-fiscal_year: '2024'
+fiscal_year: '2025'
 permalink: /category/cultural-affairs
-sub_cats: '[{"title":"Promotion of the Humanities","permalink":"/category/cultural-affairs/promotion-of-the-humanities","total_num_programs":41,"total_obs":653330848.0},{"title":"Promotion
-  of the Arts","permalink":"/category/cultural-affairs/promotion-of-the-arts","total_num_programs":37,"total_obs":741464252.0}]'
+sub_cats: '[{"title":"Access and Appreciation","permalink":"/category/cultural-affairs/access-and-appreciation","total_num_programs":8,"total_obs":155125913.41000003},{"title":"Artistic
+  Talent Development","permalink":"/category/cultural-affairs/artistic-talent-development","total_num_programs":4,"total_obs":37598147.06},{"title":"Cultural
+  Heritage and Traditions","permalink":"/category/cultural-affairs/cultural-heritage-and-traditions","total_num_programs":12,"total_obs":208384725.82},{"title":"Cultural
+  Institutions","permalink":"/category/cultural-affairs/cultural-institutions","total_num_programs":39,"total_obs":1290503785.94}]'
 title: Cultural Affairs
-total_num_agencies: 11
-total_num_applicant_types: 39
-total_num_programs: 48
-total_num_sub_cats: 2
-total_obs: 883993673.0
+total_num_agencies: 13
+total_num_applicant_types: 65
+total_num_programs: 63
+total_num_sub_cats: 4
+total_obs: 1691612572.2299998
 ---

@@ -1,0 +1,22 @@
+---
+category: Health
+definition: 'A program whose beneficiaries demonstrated one or more of the following
+  results within the past year: -Received care in facilities and from providers that
+  implemented robust technical safeguards, such as end-to-end encryption, intrusion
+  detection, secure log monitoring, and multi-factor authentication to protect electronic
+  health records; -Experienced zero incidents of unauthorized system access, data
+  tampering, or breaches of protected health information; -Benefited from prompt security
+  alerts, containment measures, and remediation support in the event of any attempted
+  cyber intrusion.'
+focus_area: Healthcare Quality and Delivery
+gwo_id: PON.12L
+permalink: /pon/PON_12L
+title: Improve Patient Security
+where_used:
+- agency: Department of Health and Human Services
+  expenditure_amount: 21376788.48
+  name: Special Programs for the Aging, Title VII, Chapter 2, Long Term Care Ombudsman
+    Services for Older Individuals
+  permalink: /program/93.042
+  program_type: assistance_listing
+---

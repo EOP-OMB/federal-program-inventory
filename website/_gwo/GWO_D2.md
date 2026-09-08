@@ -1,0 +1,56 @@
+---
+category: Consumer Protection
+definition: Protecting the public from unsafe products and services to ensure consumer
+  confidence and safety.
+focus_area: Consumer and Occupational Health and Safety
+gwo_id: GWO.D2
+permalink: /gwo/GWO_D2
+title: Strengthen Consumer Safety
+where_used:
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Antimicrobial Resistance Surveillance in Retail Food Specimens
+  permalink: /program/93.876
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 54057041.56
+  name: Cooperative Agreements with States for Intrastate Meat and Poultry Inspection
+  permalink: /program/10.475
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 271732.36
+  name: FNS Food Safety Grants
+  permalink: /program/10.585
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Fishery Products Inspection and Certification
+  permalink: /program/11.413
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: -679314.55
+  name: Flexible Funding Model - Infrastructure Development and Maintenance for State
+    Manufactured Food Regulatory Programs
+  permalink: /program/93.367
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 396875.0
+  name: Food Safety Cooperative Agreements
+  permalink: /program/10.479
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 9726160.7
+  name: Food Safety Outreach Program
+  permalink: /program/10.328
+  program_type: assistance_listing
+- agency: Department of Agriculture
+  expenditure_amount: 23627889.16
+  name: Meat, Poultry, and Egg Products Inspection
+  permalink: /program/10.477
+  program_type: assistance_listing
+- agency: Consumer Product Safety Commission
+  expenditure_amount: -784957.43
+  name: Virginia Graeme Baker Pool and Spa Safety
+  permalink: /program/87.002
+  program_type: assistance_listing
+---

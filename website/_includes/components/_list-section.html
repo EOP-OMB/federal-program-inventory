@@ -1,0 +1,32 @@
+<!-- List Section Component -->
+{% assign section_data = include.items | default: page[include.data_key] %}
+{% if section_data and section_data.size > 0 %}
+<div class="{% if include.margin_class %}{{ include.margin_class }}{% else %}margin-bottom-4{% endif %}{% if include.additional_class %} {{ include.additional_class }}{% endif %}">
+  <h4 class="{% if include.title_weight %}{{ include.title_weight }}{% endif %} margin-bottom-1">{{ include.title }}</h4>
+  <ul class="usa-list usa-list--unstyled margin-y-0">
+    {% for item in section_data %}
+    <li>
+      <!-- beneficiaries do not offer a filter, so they do not need a tab index -->
+      <div class="display-flex flex-align-center padding-x-2 padding-y-1 {% if include.data_filter_type != nil %}hover:bg-base-lightest program-filter{% endif %}"
+           data-filter-type="{{ include.data_filter_type }}"
+           role="button"
+           {% if include.data_filter_type != nil %}
+             tabindex="0"
+           {% endif %}
+           {% if include.data_filter_type == 'category' %}
+             data-category-title="{{ item }}"
+           {% elsif include.data_filter_type == 'assistance' %}
+             data-assistance-title="{{ item }}"
+           {% elsif include.data_filter_type == 'applicant' %}
+             data-applicant-title="{{ item }}"
+           {% endif %}>
+        <svg class="usa-icon flex-shrink-0{% if include.icon_class %} {{ include.icon_class }}{% else %} margin-right-1{% endif %}" {% if include.icon_style %}style="{{ include.icon_style }}"{% endif %} aria-hidden="true" focusable="false" role="img">
+          <use href="/assets/img/sprite.svg#{{ include.icon }}"></use>
+        </svg>
+        <span{% if include.span_class %} class="{{ include.span_class }}"{% endif %}>{{ item }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

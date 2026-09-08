@@ -58,6 +58,18 @@ defaults:
       type: "subcategory"
     values:
       layout: "subcategory"
+  -
+    scope:
+      path: ""
+      type: "gwo"
+    values:
+      layout: "gwo"
+  -
+    scope:
+      path: ""
+      type: "pon"
+    values:
+      layout: "pon"
 
 # Build collections
 # NOTE: The markdown files in these folders are auto-generated. See README.md for how to generate the markdown files.
@@ -67,6 +79,10 @@ collections:
   program:
     output: true
   subcategory:
+    output: true
+  gwo:
+    output: true
+  pon:
     output: true
 
 # Plugins
