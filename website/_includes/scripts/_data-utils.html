@@ -1,0 +1,105 @@
+<!-- JavaScript logic to clean data -->
+<script>
+
+function assembleHierarchyData(unstructuredData, numberCategory, itemCategory) {
+  if (!unstructuredData || unstructuredData.length === 0) {
+    console.log('No data available for hierarchy assembly');
+    return null;
+  }
+  
+  // Filter out items with zero expenditure
+  const nonZeroItems = unstructuredData.filter(item => 
+    item[numberCategory] && parseFloat(item[numberCategory]) > 0
+  );
+  
+  if (nonZeroItems.length === 0) {
+    console.log(`No items with ${numberCategory} > 0 found for hierarchy`);
+    return null;
+  }
+  
+  // Group items by agency
+  const itemGroups = {};
+  
+  nonZeroItems.forEach(item => {
+    const identifier = item[itemCategory] || 'Unknown Item';
+    const value = parseFloat(item[numberCategory]) || 0;
+
+    if (!itemGroups[identifier]) {
+      itemGroups[identifier] = {
+        name: identifier,
+        children: []
+      };
+    }
+    
+    // Persist permalink so treemap tiles can navigate to program pages.
+    itemGroups[identifier].children.push({
+      name: item.name || 'Unknown Item',
+      value: value,
+      permalink: item.permalink || null,
+      data_source: item.data_source || null,
+      program_type: item.program_type || null
+    });
+  });
+
+  // Convert to the required hierarchical structure
+  const hierarchyData = {
+    name: 'root',
+    children: Object.values(itemGroups)
+  };
+  
+  return hierarchyData;
+}
+
+</script>
+
+{% comment %}
+Jekyll Logic to clean data
+Calculate program analytics from a list of programs
+Usage: {% include scripts/_data-utils.html programs=page.where_used %}
+Sets variables: total_expenditure, total_agencies, largest_program, smallest_program
+{% endcomment %}
+
+{% assign programs = include.programs | default: page.where_used %}
+
+{% comment %} Calculate totals {% endcomment %}
+{% assign total_expenditure = 0 %}
+{% assign agencies_seen = "" | split: "" %}
+{% assign total_agencies = 0 %}
+
+{% for program in programs %}
+  {% assign total_expenditure = total_expenditure | plus: program.expenditure_amount %}
+  {% unless agencies_seen contains program.agency %}
+    {% assign agencies_seen = agencies_seen | push: program.agency %}
+    {% assign total_agencies = total_agencies | plus: 1 %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} Find largest and smallest programs {% endcomment %}
+{% assign largest_program = programs[0] %}
+{% assign smallest_program = programs[0] %}
+
+{% for program in programs %}
+  {% comment %} Find largest program {% endcomment %}
+  {% if program.expenditure_amount > largest_program.expenditure_amount %}
+    {% assign largest_program = program %}
+  {% elsif program.expenditure_amount == largest_program.expenditure_amount %}
+    {% comment %} Tie breaker: use alphabetical order {% endcomment %}
+    {% if program.name < largest_program.name %}
+      {% assign largest_program = program %}
+    {% endif %}
+  {% endif %}
+  
+  {% comment %} Find smallest program {% endcomment %}
+  {% if program.expenditure_amount < smallest_program.expenditure_amount %}
+    {% assign smallest_program = program %}
+  {% elsif program.expenditure_amount == smallest_program.expenditure_amount %}
+    {% comment %} Tie breaker: use alphabetical order {% endcomment %}
+    {% if program.name < smallest_program.name %}
+      {% assign smallest_program = program %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Format largest and smallest program expenditures {% endcomment %}
+{% capture largest_program_expenditure %}<span data-dollar-amount="{{ largest_program.expenditure_amount }}">${{ largest_program.expenditure_amount }}</span>{% endcapture %}
+{% capture smallest_program_expenditure %}<span data-dollar-amount="{{ smallest_program.expenditure_amount }}">${{ smallest_program.expenditure_amount }}</span>{% endcapture %}

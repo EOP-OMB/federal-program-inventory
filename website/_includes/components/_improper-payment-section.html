@@ -1,0 +1,141 @@
+{% assign has_ip = false %}
+{% assign has_mappings = false %}
+{% assign show_ip_definition = true %}
+{% assign first_item_start_date = '' %}
+{% assign first_item_end_date = '' %}
+{% assign has_related_programs = false %}
+{% assign has_multiple_mappings = false %}
+{% if include.improper_payments != nil and include.improper_payments.size > 0 %}
+    {% assign has_mappings = true %}
+    {% if include.improper_payments.size > 1 %}
+        {% assign has_multiple_mappings = true %}
+    {% endif %}
+{% endif %}
+
+{% for ip_row in include.improper_payments %}
+    {% if ip_row.outlays > 0 %}
+        {% assign first_item_start_date = ip_row.start_date %}
+        {% assign first_item_end_date = ip_row.end_date %}
+        {% assign has_ip = true %}
+    {% endif %}
+{% endfor %}
+
+{% if include.improper_payments_related_programs != nil and include.improper_payments_related_programs.size > 0 %}
+    {% assign has_related_programs = true %}
+{% endif %}
+
+{% if has_ip == false and has_mappings == false %}
+    <!-- Scenario 5 -->
+    {% assign show_ip_definition = false %}
+{% endif %}
+
+{% if has_ip == false and has_mappings == true %}
+    <!-- Scenario 2a, 2b, 4a, and 4b -->
+    <p>This program is not at risk of significant improper payments. </p>
+{% endif %}
+
+{% if show_ip_definition == true %}
+    <!-- All except scenario 5 -->
+    <p>Improper payments are payments that were not made in the correct amount (i.e., overpayments or underpayments), not made to the correct recipient, or not made with strict adherence to agency policies and procedures. Improper payments are not a measure of fraud.</p>
+{% endif %}
+
+{% if has_multiple_mappings == true and has_related_programs == false %}
+    <!-- Scenario 3a & 4a -->
+    <p>There are multiple Improper Payment Programs associated with this FPI Program. Agencies may report improper payment information for programs that differ from the programs listed on the FPI. OMB is working with agencies to align this reporting.</p>
+{% endif %}
+
+{% if has_related_programs == true and has_multiple_mappings == false %}
+    <!-- Scenario 1b & 2b -->
+    <p>There are multiple FPI Programs associated with the Improper Payment Program. Agencies may report improper payment information for programs that differ from the programs listed on the FPI. OMB is working with agencies to align this reporting.</p>
+{% endif %}
+
+{% if has_related_programs == true and has_multiple_mappings == true %}
+    <!-- Scenario 3b & 4b -->
+    <p>There are multiple Improper Payment Programs associated with this FPI Program and additional FPI Programs associated with the Improper Payment Programs. Agencies may report improper payment information for programs that differ from the programs listed on the FPI. OMB is working with agencies to align this reporting.</p>
+{% endif %}
+
+{% if has_ip == true %}
+    {% if has_multiple_mappings == false %}
+        <!-- Scenario 1a & 1b -->
+        <p>The table below shows the Improper Payment Program associated with this FPI Program.</p>
+    {% else %}
+        <!-- Scenario 3a & 3b -->
+        <p>The table below shows all Improper Payment Programs associated with this FPI Program.</p>
+    {% endif %}
+    <table class="usa-table">
+        <thead>
+            <tr>
+                <th>Program Name</th>
+                <th>Estimate</th>
+                <th>Estimate Timeframe</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ip_row in include.improper_payments %}
+                <tr>
+                    <td>
+                        {% if ip_row.slug != nil and ip_row.slug != '' %}
+                            <a href="https://paymentaccuracy.gov/program/{{ ip_row.slug }}" target="_blank">{{ ip_row.name }}</a>
+                        {% else %}
+                            <a href="https://paymentaccuracy.gov/agency/{{ ip_row.agency }}" target="_blank">{{ ip_row.name }}</a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% assign ip_rate = 0 %}
+                        {% assign ip_amount = 0 %}
+                        {% if ip_row.outlays > 0 %}
+                            {% assign ip_rate = 100 | times: ip_row.improper_payments | divided_by: ip_row.outlays | round: 1 %}
+                        {% endif %}
+                        {% if ip_row.improper_payments != nil %}
+                            {% assign ip_amount = ip_row.improper_payments %}
+                        {% endif %}
+                        {% if ip_amount != 0 %}
+                            {{ ip_rate }}% (<span data-dollar-amount="{{ ip_amount }}"></span>)
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if ip_row.start_date != nil and ip_row.start_date != '' and ip_row.end_date != nil and ip_row.end_date != '' %}
+                            {{ ip_row.start_date }} to {{ ip_row.end_date }}
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% elsif has_mappings == true %}
+    {% if has_multiple_mappings == false %}
+        <!-- Scenario 2a & 2b -->
+        <p>The Improper Payment Program listed below is associated with this FPI Program.</p>
+    {% else %}
+        <!-- Scenario 4a & 4b -->
+        <p>The Improper Payment Programs listed below are associated with this FPI Program.</p>
+    {% endif %}
+    <ul>
+        {% for ip_row in include.improper_payments %}
+            {% if ip_row.slug != nil and ip_row.slug != '' %}
+                <li><a href="https://paymentaccuracy.gov/program/{{ ip_row.slug }}" target="_blank">{{ ip_row.name }}</a></li>
+            {% else %}
+                <li><a href="https://paymentaccuracy.gov/agency/{{ ip_row.agency }}" target="_blank">{{ ip_row.name }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% else %}
+     <!-- Scenario 5 -->
+    <p>This is a new program or an existing program being listed for the first time. The link to the corresponding paymentaccuracy.gov data will be available when paymentaccuracy.gov is next updated.</p>
+{% endif %}
+
+{% if has_related_programs == true %}
+    <!-- Scenario 1b, 2b, 3b, & 4b -->
+    {% if has_multiple_mappings == true %}
+        <p>The FPI Programs listed below are also associated with the Improper Payment Programs.</p>
+    {% else %}
+        <p>The FPI Programs listed below are also associated with the Improper Payment Program.</p>
+    {% endif %}
+    <ul>
+        {% for related_program in include.improper_payments_related_programs %}
+            <li><a href="{{ related_program.permalink }}">{{ related_program.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<p>View more information at <a href="https://paymentaccuracy.gov" target="_blank">PaymentAccuracy.gov</a></p>

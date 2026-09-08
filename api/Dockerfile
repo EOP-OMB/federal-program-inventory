@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.10.20-slim
 ARG http_proxy
 ARG https_proxy
 ARG no_proxy
@@ -26,6 +26,10 @@ COPY ./app/ ./app/
 
 # Copy the requirements and install dependencies
 COPY requirements.txt .
+
+# CVE-2026-24049
+RUN pip install --upgrade "wheel>=0.46.2"
+
 RUN pip install -r requirements.txt
 
 RUN pip install fastapi uvicorn

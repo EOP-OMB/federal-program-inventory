@@ -1,0 +1,55 @@
+---
+category: Law, Justice, and Legal Services
+definition: 'A program whose beneficiaries achieved one or more of the following results
+  within the past year: -Increased identification, detention, or processing of noncitizens
+  engaged in criminal activity; -Increased processing times for refugee vetting, placement,
+  and lawful admission procedures in compliance with immigration law; -Offered approved
+  citizenship preparation courses, civic integration, and legal status maintenance
+  resources as a lawful permanent resident; -Increased employment verification rates
+  required by law; -Supported modernization efforts of visa tracking systems.'
+focus_area: Border Security
+gwo_id: PON.N38
+permalink: /pon/PON_N38
+title: Improve Immigration Enforcement and Lawful Pathways to Citizenship
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: -32201306.15
+  name: Case Management Pilot Program
+  permalink: /program/97.102
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Citizenship Integration Training Academy
+  permalink: /program/97.154
+  program_type: assistance_listing
+- agency: Department of Justice
+  expenditure_amount: 0.0
+  name: Law Enforcement Support for Combatting Criminal Aliens, Drug, and Human Trafficking
+  permalink: /program/16.076
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 0.0
+  name: Migration Management
+  permalink: /program/19.042
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 51843553.6
+  name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
+  permalink: /program/19.018
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: -887448613.94
+  name: Shelter and Services Program
+  permalink: /program/97.141
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Shelter and Services Program – Competitive
+  permalink: /program/97.149
+  program_type: assistance_listing
+- agency: Department of Labor
+  expenditure_amount: 23246431.33
+  name: Temporary Labor Certification for Foreign Workers
+  permalink: /program/17.273
+  program_type: assistance_listing
+---

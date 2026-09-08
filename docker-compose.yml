@@ -1,6 +1,6 @@
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.7
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false  # Disable security features
@@ -39,19 +39,32 @@ services:
   website:
     build:
       context: ./website
+      dockerfile: Dockerfile
+      args:
+        TEST_ENV: ${TEST_ENV:-false}
+        USE_LOCAL_API: ${USE_LOCAL_API:-false}
     ports:
       - "8080:8080"         
-    # depends_on:
-    #   api:
-    #     condition: service_healthy   # Wait for `api` to be healthy
+    depends_on:
+      api:
+        condition: service_healthy   # Wait for `api` to be healthy
     networks:
       - internal
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8080"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
 
   indexer:
-    build: ./indexer
+    build:
+      context: ./indexer
+      dockerfile: Dockerfile
+      args:
+        TEST_ENV: ${TEST_ENV:-false}
     volumes:
       - ./website/data:/app/data
-      - ./indexer:/app/indexer
     working_dir: /app/indexer
     depends_on:
       elasticsearch:
@@ -59,6 +72,45 @@ services:
     command: ["python", "-u", "index_programs.py"]
     networks:
       - internal
+
+  cypress:
+    build:
+      context: ./cypress
+      dockerfile: Dockerfile
+    profiles:
+      - test
+    depends_on:
+      website:
+        condition: service_healthy
+    networks:
+      - internal
+    environment:
+      - WEBSITE_URL=http://website:8080
+      - TEST_ENV=${TEST_ENV:-false}
+      - CYPRESS_baseUrl=http://website:8080
+    volumes:
+      - ./cypress:/app/cypress
+      - ./website/pages:/app/website-pages:ro
+      - ./cypress/md:/app/cypress-md:ro
+      - ./cypress/cypress-image-diff-screenshots:/app/cypress-image-diff-screenshots
+    entrypoint: ["/app/entrypoint.sh"]
+
+  data-pipeline-tests:
+    build:
+      context: ./tests
+      dockerfile: Dockerfile
+    profiles:
+      - test
+    networks:
+      - internal
+    environment:
+      - TEST_ENV=${TEST_ENV:-false}
+      - "TRANSFORMED_DB_FILE_PATH=:memory:"
+    volumes:
+      - ./tests:/app
+      - ./data_processing:/data_processing:ro
+      - ./website:/website:ro
+    entrypoint: ["/app/entrypoint.sh"]
 
 volumes:
   esdata:

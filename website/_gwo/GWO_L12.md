@@ -1,0 +1,196 @@
+---
+category: Health
+definition: Reducing the prevalence and severity of chronic diseases and associated
+  risk factors.
+focus_area: Health and Wellbeing
+gwo_id: GWO.L12
+permalink: /gwo/GWO_L12
+title: Eliminate Chronic Disease and Risk Factors
+where_used:
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: A Comprehensive Approach to Good Health and Wellness in Indian County – financed
+    solely by Prevention and Public Health
+  permalink: /program/93.762
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 2928903.0
+  name: Affordable Care Act Program for Early Detection of Certain Medical Conditions
+    Related to Environmental Health Hazards
+  permalink: /program/93.534
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 201961310.52
+  name: Assistance Programs for Chronic Disease Prevention and Control
+  permalink: /program/93.945
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 3000000.0
+  name: 'Blood Disorder Program: Prevention, Surveillance, and Research'
+  permalink: /program/93.080
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 49658328.12
+  name: Cooperative Agreements for Diabetes Control Programs
+  permalink: /program/93.988
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: -1390240.54
+  name: Good Health and Wellness in Indian Country
+  permalink: /program/93.479
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Grants to Provide Outpatient Early Intervention Services with Respect to HIV
+    Disease
+  permalink: /program/93.918
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 1289037812.3
+  name: HIV Care Formula Grants
+  permalink: /program/93.917
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 771345538.11
+  name: HIV Emergency Relief Project Grants
+  permalink: /program/93.914
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Heritable Disorders
+  permalink: /program/93.683
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Improving Student Health and Academic Achievement through Nutrition, Physical
+    Activity and the Management of Chronic Conditions in Schools
+  permalink: /program/93.981
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: 'Indian Health Service: Produce Prescription Pilot Program'
+  permalink: /program/93.00M
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 520864824.81
+  name: Injury Prevention and Control Research and State and Community Based Programs
+  permalink: /program/93.136
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: National Organizations for Chronic Disease Prevention and Health Promotion
+  permalink: /program/93.809
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: -4361.17
+  name: National and State Tobacco Control Program
+  permalink: /program/93.387
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: 'Networking2Save”:  CDC’s National Network Approach to Preventing and Controlling
+    Tobacco-related Cancers in Special Populations'
+  permalink: /program/93.431
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Nutrition and Physical Activity Programs
+  permalink: /program/93.649
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 22055933.0
+  name: Organized Approaches to Increase Colorectal Cancer Screening
+  permalink: /program/93.800
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Outreach Programs to Reduce the Prevalence of Obesity in High Risk Rural Areas
+  permalink: /program/93.319
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Packaging and Spreading Proven Pediatric Weight Management Interventions for
+    Use by Low-Income Families
+  permalink: /program/93.349
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Paul Coverdell National Acute Stroke Program National Center for Chronic Disease
+    Prevention and Health Promotion
+  permalink: /program/93.810
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Preventing Heart Attacks and Strokes in High Need Areas
+  permalink: /program/93.816
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 17227230.0
+  name: Prevention and Control of Chronic Disease and Associated Risk Factors in the
+    U.S. Affiliated Pacific Islands, U.S. Virgin Islands, and P. R.
+  permalink: /program/93.377
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 168492755.0
+  name: Preventive Health and Health Services Block Grant
+  permalink: /program/93.991
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Provision of  Technical Assistance and Training Activities to Assure Comprehensive
+    Cancer Control Outcomes.
+  permalink: /program/93.427
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Racial and Ethnic Approaches to Community Health
+  permalink: /program/93.304
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 12797446.53
+  name: Ryan White HIV/AIDS Program Dental Reimbursement and Community Based Dental
+    Partnership Grants
+  permalink: /program/93.924
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 5775000.0
+  name: Sickle Cell Treatment Demonstration Program
+  permalink: /program/93.365
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 129318969.38
+  name: Special Diabetes Program for Indians Diabetes Prevention and Treatment  Projects
+  permalink: /program/93.237
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 11285962.0
+  name: State Physical Activity and Nutrition (SPAN
+  permalink: /program/93.439
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Technical Assistance to Increase Tobacco Cessation
+  permalink: /program/93.348
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: The National Cardiovascular Health Program
+  permalink: /program/93.426
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 50124369.06
+  name: The U.S. President's Emergency Plan for AIDS Relief Programs
+  permalink: /program/19.029
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: 'Title: Multiple Approaches to Support Young Breast Cancer Survivors and Metastatic
+    Breast Cancer Patients'
+  permalink: /program/93.376
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: WELL-INTEGRATED SCREENING AND EVALUATION FOR WOMEN ACROSS THE NATION (WISEWOMAN)
+  permalink: /program/93.436
+  program_type: assistance_listing
+---

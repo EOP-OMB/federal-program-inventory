@@ -1,0 +1,27 @@
+<!-- Dynamic Tab Navigation -->
+{% assign tab_list = include.tabs | default: site.data.default_tabs %}
+<div class="margin-bottom-5 border-top border-base">
+  <nav class="border-bottom border-base-lighter" role="tablist" aria-orientation="horizontal">
+    <div class="display-flex flex-row">
+      
+      {% for tab in tab_list %}
+        {% assign tab_id = tab | downcase | replace: ' ', '-' | replace: '&', 'and' %}
+        {% assign panel_id = tab_id | append: '-panel' %}
+        {% assign is_first = forloop.first %}
+        
+        <button type="button" 
+                role="tab" 
+                aria-selected="{% if is_first %}true{% else %}false{% endif %}" 
+                aria-controls="{{ panel_id }}" 
+                id="{{ tab_id }}-tab"
+                class="usa-button usa-button--unstyled padding-x-1 padding-y-2 {% if is_first %}border-bottom-2px hover:border-bottom-2px border-ink text-ink font-heading-sm{% else %}hover:border-bottom-2px border-transparent tab-nav font-heading-sm hover:text-ink hover:border-ink focus:bg-base-lightest focus:text-base focus:border-ink focus:border-left-2px focus:border-right-2px{% endif %}"
+                style="text-decoration: none; outline: none;"
+                tabindex="0">
+          {{ tab }}
+        </button>
+        
+      {% endfor %}
+
+    </div>
+  </nav>
+</div>
