@@ -4,8 +4,18 @@ definition: Provide individuals or households with a temporary safety net throug
   income security or financial assistance support.
 focus_area: Personal Financial Health
 gwo_id: GWO.N3
+largest_program:
+  expenditure_amount: 1296300942394.0
+  name: Social Security Retirement Insurance
+  permalink: /program/96.002
 permalink: /gwo/GWO_N3
+smallest_program:
+  expenditure_amount: -365153521.75
+  name: Home Equity Conversion Mortgages
+  permalink: /program/14.183
 title: Bridge Financial Gaps with Transitional Income Assistance
+total_agencies: 9
+total_expenditure: 3402032790284.26
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: 60000000.0

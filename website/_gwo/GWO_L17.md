@@ -4,8 +4,19 @@ definition: 'Supporting medical research and innovation to improve diagnostics, 
   treatments, or preventions. '
 focus_area: Healthcare Innovation
 gwo_id: GWO.L17
+largest_program:
+  expenditure_amount: 4181886495.5
+  name: Allergy and Infectious Diseases Research
+  permalink: /program/93.855
 permalink: /gwo/GWO_L17
+smallest_program:
+  expenditure_amount: -6325730.84
+  name: Biomedical Advanced Research and Development Authority (BARDA), Biodefense
+    Medical Countermeasure Development
+  permalink: /program/93.360
 title: Advance Scientific Research in Health and Medicine
+total_agencies: 3
+total_expenditure: 37351248671.33
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 85045124.13

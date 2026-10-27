@@ -4,8 +4,18 @@ definition: Providing burial benefits, including burial assistance and memorial 
   to eligible veterans and their families.
 focus_area: Burial Benefits
 gwo_id: GWO.N1
+largest_program:
+  expenditure_amount: 837329797.0
+  name: Burial Expenses Allowance for Veterans
+  permalink: /program/64.101
 permalink: /gwo/GWO_N1
+smallest_program:
+  expenditure_amount: 0.0
+  name: National Cemeteries
+  permalink: /program/64.201
 title: Provide Burial Benefits and Services to Veterans
+total_agencies: 1
+total_expenditure: 913515256.25
 where_used:
 - agency: Department of Veterans Affairs
   expenditure_amount: 837329797.0

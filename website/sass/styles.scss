@@ -42,6 +42,12 @@ nav.usa-nav {
   }
 }
 
+body.usa-js-mobile-nav--active {
+  .usa-navbar {
+    display: none !important;
+  }
+}
+
 // USAID Alert custom styling
 .usa-alert--usaid .usa-alert__body {
   background-color: #e7f6f8 !important;
@@ -655,13 +661,10 @@ th.gridjs-th {
 }
 
 #taxonomy-gwo-table th.taxonomy-sortable-header {
-  cursor: pointer;
-  user-select: none;
-}
-
-#taxonomy-gwo-table th.taxonomy-sortable-header {
   background-color: $site-bg-color !important;
   background-image: none !important;
+  cursor: pointer;
+  user-select: none;
 }
 
 #taxonomy-gwo-table th.taxonomy-sortable-header .header-text {
@@ -670,14 +673,9 @@ th.gridjs-th {
   gap: 0.25rem;
 }
 
-#taxonomy-gwo-table th.taxonomy-sortable-header .header-text::after {
-  content: "▲";
+#taxonomy-gwo-table th.taxonomy-sortable-header .taxonomy-sort-indicator {
   font-size: 0.7rem;
   line-height: 1;
-}
-
-#taxonomy-gwo-table th.taxonomy-sortable-header[aria-sort="descending"] .header-text::after {
-  content: "▼";
 }
 
 .taxonomy-filter-divider {

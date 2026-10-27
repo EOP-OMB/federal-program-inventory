@@ -4,8 +4,18 @@ definition: Expanding pathways that enable individuals to return to work and sus
   long-term employment.
 focus_area: Workforce Development
 gwo_id: GWO.H3
+largest_program:
+  expenditure_amount: 3928720837.8
+  name: Rehabilitation Services Vocational Rehabilitation Grants to States
+  permalink: /program/84.126
 permalink: /gwo/GWO_H3
+smallest_program:
+  expenditure_amount: -131649045.54
+  name: Trade Adjustment Assistance
+  permalink: /program/17.245
 title: Foster Workforce Re-entry
+total_agencies: 6
+total_expenditure: 6758591943.85
 where_used:
 - agency: Department of Veterans Affairs
   expenditure_amount: 179953419.0

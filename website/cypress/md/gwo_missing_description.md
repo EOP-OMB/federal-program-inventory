@@ -1,4 +1,14 @@
 ---
+largest_program:
+  expenditure_amount: 23456.78
+  name: Test Program Two
+  permalink: /program/test-2
+smallest_program:
+  expenditure_amount: 12345.67
+  name: Test Program One
+  permalink: /program/test-1
+total_agencies: 2
+total_expenditure: 35802.45
 layout: gwo
 title: Test GWO Missing Description
 category: A Agricultural

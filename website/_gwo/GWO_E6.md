@@ -4,8 +4,18 @@ definition: Identifying, preserving, and increasing awareness of historic sites,
   or heritage assets - focusing specifically on the preservation of physical items.
 focus_area: Cultural Institutions
 gwo_id: GWO.E6
+largest_program:
+  expenditure_amount: 770000000.0
+  name: Tax incentives for preservation of historic structures
+  permalink: /program/TC.045
 permalink: /gwo/GWO_E6
+smallest_program:
+  expenditure_amount: 0.0
+  name: Boston African-American National Historic Site
+  permalink: /program/15.938
 title: 'Preserve Culturally or Historically Significant Sites or Artifacts '
+total_agencies: 6
+total_expenditure: 1049371429.47
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 4000000.0

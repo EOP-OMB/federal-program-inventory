@@ -4,8 +4,18 @@ definition: Raising student achievement across primary and secondary education a
   increasing high school graduation.
 focus_area: K–12 Education
 gwo_id: GWO.G5
+largest_program:
+  expenditure_amount: 18278309710.3
+  name: Title I Grants to Local Educational Agencies
+  permalink: /program/84.010
 permalink: /gwo/GWO_G5
+smallest_program:
+  expenditure_amount: -22167.88
+  name: Competitive Grants for State Assessments
+  permalink: /program/84.368
 title: Improve K-12 Academic Performance
+total_agencies: 5
+total_expenditure: 27386716141.9
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 0.0

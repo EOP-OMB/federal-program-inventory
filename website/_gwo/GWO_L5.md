@@ -4,8 +4,18 @@ definition: Improving the health and well-being of women, infants, and children 
   ensure safe pregnancies, healthy births, and strong early development.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L5
+largest_program:
+  expenditure_amount: 570438350.9
+  name: Maternal and Child Health Services Block Grant to the States
+  permalink: /program/93.994
 permalink: /gwo/GWO_L5
+smallest_program:
+  expenditure_amount: -943.21
+  name: Participant Research Innovation Laboratory for Enhancing WIC Services
+  permalink: /program/10.540
 title: Improve Maternal, Infant, and Child Health
+total_agencies: 2
+total_expenditure: 1566930400.11
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

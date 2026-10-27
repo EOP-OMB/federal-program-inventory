@@ -4,8 +4,18 @@ definition: Expanding economic opportunities and strengthening conditions for gr
   in partner nations.
 focus_area: International Relations and Foreign Affairs
 gwo_id: GWO.IA5
+largest_program:
+  expenditure_amount: 8156835691.0
+  name: USAID Foreign Assistance for Programs Overseas
+  permalink: /program/98.001
 permalink: /gwo/GWO_IA5
+smallest_program:
+  expenditure_amount: -1712150000.0
+  name: Political Risk Insurance
+  permalink: /program/87.006
 title: Foster International Economic Empowerment and Opportunities
+total_agencies: 6
+total_expenditure: 6548463160.93
 where_used:
 - agency: Department of State
   expenditure_amount: -6352922.89

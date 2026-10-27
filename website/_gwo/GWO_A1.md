@@ -5,8 +5,18 @@ definition: Expanding the quality, scope, and application of agricultural resear
   and food systems.
 focus_area: Agricultural Resources and Services
 gwo_id: GWO.A1
+largest_program:
+  expenditure_amount: 245362326.15
+  name: Payments to Agricultural Experiment Stations Under the Hatch Act
+  permalink: /program/10.203
 permalink: /gwo/GWO_A1
+smallest_program:
+  expenditure_amount: -1484087.42
+  name: Institute of Rural Partnership (GP 780)
+  permalink: /program/10.238
 title: Advance Agriculture Research
+total_agencies: 1
+total_expenditure: 758920933.52
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 1825317.09

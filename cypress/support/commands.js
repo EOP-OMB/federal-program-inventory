@@ -13,7 +13,76 @@ Cypress.Commands.add('waitForPageLoad', () => {
   cy.get('body').should('not.have.class', 'loading')
 })
 
+// Wait for D3/SVG charts to finish drawing (or show explicit no-data) before axe runs.
+Cypress.Commands.add('waitForChartsReady', () => {
+  const chartHosts = [
+    '#chart',
+    '#spending-chart',
+    '#objectiveChart',
+    '#outcomeChart',
+    '#myChart',
+  ]
+
+  cy.get('body').then(($body) => {
+    const presentHosts = chartHosts.filter((selector) => $body.find(selector).length > 0)
+
+    presentHosts.forEach((selector) => {
+      cy.get(selector, { timeout: 10000 }).should(($el) => {
+        const el = $el[0]
+        const doc = el.ownerDocument
+        const noChart =
+          doc.querySelector('#no-chart:not(.hide)') ||
+          doc.querySelector('#no-spending-chart:not(.hide)')
+        const hasDrawnContent = Boolean(
+          el.querySelector('svg, g, rect, path, text') ||
+            (el.tagName.toLowerCase() === 'svg' && el.childElementCount > 0)
+        )
+
+        expect(
+          hasDrawnContent || Boolean(noChart),
+          `${selector} should render chart content or show the no-data state`
+        ).to.eq(true)
+      })
+
+      cy.waitForStableLayout(selector, { stableMs: 400, timeout: 5000 })
+    })
+  })
+})
+
+// ANDI parity: focusables must not sit under aria-hidden=true outside the open mobile nav.
+Cypress.Commands.add('assertNoFocusableUnderAriaHidden', () => {
+  cy.document().then((doc) => {
+    const nav = doc.querySelector('.usa-nav')
+    const focusableSel =
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    const offenders = [...doc.querySelectorAll(focusableSel)].filter((el) => {
+      if (nav && (nav === el || nav.contains(el))) {
+        return false
+      }
+      let node = el
+      while (node) {
+        if (node.getAttribute && node.getAttribute('aria-hidden') === 'true') {
+          return true
+        }
+        node = node.parentElement
+      }
+      return false
+    })
+    expect(
+      offenders,
+      offenders
+        .slice(0, 5)
+        .map(
+          (el) =>
+            el.tagName + (el.className ? '.' + String(el.className).split(' ')[0] : '')
+        )
+        .join(', ')
+    ).to.have.length(0)
+  })
+})
+
 Cypress.Commands.add('checkA11yPage', (context = undefined, options = undefined) => {
+  cy.waitForChartsReady()
   cy.injectAxe()
 
   const logViolations = (violations) => {

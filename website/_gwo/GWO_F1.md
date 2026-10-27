@@ -4,8 +4,18 @@ definition: Improving capabilities to provide timely and effective relief to com
   impacted by disasters.
 focus_area: Disaster Readiness, Response, and Relief
 gwo_id: GWO.F1
+largest_program:
+  expenditure_amount: 28290790377.52
+  name: Disaster Grants - Public Assistance (Presidentially Declared Disasters)
+  permalink: /program/97.036
 permalink: /gwo/GWO_F1
+smallest_program:
+  expenditure_amount: -450645637.86
+  name: Economic Injury Disaster Loan Emergency Advance
+  permalink: /program/59.072
 title: Improve Direct Disaster and Emergency Relief
+total_agencies: 8
+total_expenditure: 33339083522.59
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: -77470846.21

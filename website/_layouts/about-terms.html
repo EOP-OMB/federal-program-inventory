@@ -51,6 +51,7 @@ permalink: /about/terms
 
     <div id="about-download-table-container">
       <table class="usa-table usa-table--stacked">
+        <caption class="usa-sr-only">Datasets available for download</caption>
         <thead>
           <tr>
             <th scope="col">Dataset</th>
@@ -94,7 +95,7 @@ permalink: /about/terms
             <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
             <td data-label="Description">
               <p>This table includes the {{ page.gwo_count }} Government-wide Objectives (GWOs) that make up the <a href="/about/taxonomy">FPI Taxonomy</a>.
-              Some GWOs may have zero program assignment.</p>
+              While included in the current version of the FPI Taxonomy, some GWOs may not, at present, have any FPI programs to which they are aligned.</p>
 
               <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, GWO ID, Govt-wide Objective (GWO), and GWO
               Definition.</p>
@@ -104,8 +105,8 @@ permalink: /about/terms
             <td data-label="Dataset"><a href="/assets/files/pon.csv" download="pon.csv">PON Taxonomy</a></td>
             <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
             <td data-label="Description">
-              <p>This table includes the {{ page.pon_count }} Program Outcomes (PONs) that make up the FPI Taxonomy. Some PONs may have
-              zero program assignment.</p>
+              <p>This table includes the {{ page.pon_count }} Program Outcomes (PONs) that make up the FPI Taxonomy. While included in the current version
+                of the FPI Taxonomy, some PONs may not, at present, have any FPI programs to which they are aligned.</p>
 
               <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, PON ID, Program Outcome (PON), and PON
               Definition.</p>
@@ -115,7 +116,7 @@ permalink: /about/terms
             <td data-label="Dataset"><a href="https://paymentaccuracy.gov" target="_blank">Payment Accuracy</a></td>
             <td data-label="Update Year">{{ site.data.constants_global_dates.PAYMENTACCURACY_FY_DATE }}</td>
             <td data-label="Description">
-              <p>The dataset for improper payment and unknown payment rate is available on Paymentacurracy.gov.</p>
+              <p>The dataset for improper payment and unknown payment rate is available on Paymentaccuracy.gov.</p>
             </td>
           </tr>
         </tbody>
@@ -282,6 +283,7 @@ permalink: /about/terms
         </p>
         <div id="about-obligation-table-container">
           <table class="usa-table" id="obligations-terms-table">
+            <caption class="usa-sr-only">Obligation value reporting terms</caption>
             <tbody class="text-base-dark">
               <tr>
                 <td></td>

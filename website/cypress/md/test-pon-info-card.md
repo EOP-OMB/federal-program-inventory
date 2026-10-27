@@ -1,4 +1,14 @@
 ---
+largest_program:
+  expenditure_amount: 5000000.0
+  name: Test Program One
+  permalink: /program/test-1
+smallest_program:
+  expenditure_amount: 0.0
+  name: Test Program Zero
+  permalink: /program/test-0
+total_agencies: 4
+total_expenditure: 10000000.0
 layout: pon
 title: Test PON Info Card
 category: Test Category

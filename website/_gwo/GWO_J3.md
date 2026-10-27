@@ -4,8 +4,18 @@ definition: Reducing risks to people, ecosystems, and communities from pollutant
   and other environmental hazards.
 focus_area: Pollution Control and Abatement
 gwo_id: GWO.J3
+largest_program:
+  expenditure_amount: 1018000731.77
+  name: Abandoned Mine Land Reclamation (AMLR)
+  permalink: /program/15.252
 permalink: /gwo/GWO_J3
+smallest_program:
+  expenditure_amount: -1346111.16
+  name: Science and Technology Projects Related to Coal Mining and Reclamation
+  permalink: /program/15.255
 title: Reduce Environmental Hazards
+total_agencies: 8
+total_expenditure: 2836689251.53
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 3239740.06

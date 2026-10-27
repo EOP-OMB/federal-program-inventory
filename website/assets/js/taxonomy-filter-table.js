@@ -194,12 +194,20 @@ function initializeFilterTable(config = {}) {
 
   const updateSortIndicators = () => {
     if (!itemTable) return;
-    itemTable.querySelectorAll('th[data-sortable]').forEach((header) => {
+    itemTable.querySelectorAll('th[data-column]').forEach((header) => {
       header.removeAttribute('aria-sort');
+      const indicator = header.querySelector('.taxonomy-sort-indicator');
+      if (indicator) {
+        indicator.textContent = '';
+      }
     });
     if (sortHeader) {
-      const direction = state.sortOrder === 'asc' ? 'ascending' : 'descending';
-      sortHeader.setAttribute('aria-sort', direction);
+      const isAsc = state.sortOrder === 'asc';
+      sortHeader.setAttribute('aria-sort', isAsc ? 'ascending' : 'descending');
+      const indicator = sortHeader.querySelector('.taxonomy-sort-indicator');
+      if (indicator) {
+        indicator.textContent = isAsc ? '▲' : '▼';
+      }
     }
   };
 

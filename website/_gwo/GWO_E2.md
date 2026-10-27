@@ -4,8 +4,18 @@ definition: Developing individuals' artistic abilities, knowledge, and creativit
   the arts and humanities fields.
 focus_area: Artistic Talent Development
 gwo_id: GWO.E2
+largest_program:
+  expenditure_amount: 27476384.66
+  name: Arts in Education
+  permalink: /program/84.351
 permalink: /gwo/GWO_E2
+smallest_program:
+  expenditure_amount: 0.0
+  name: 'National Endowment for the Humanities: Collaborative Research'
+  permalink: /program/45.035
 title: Strengthen Skill Development within Arts and Humanities Fields
+total_agencies: 2
+total_expenditure: 37598147.06
 where_used:
 - agency: Department of Education
   expenditure_amount: 27476384.66

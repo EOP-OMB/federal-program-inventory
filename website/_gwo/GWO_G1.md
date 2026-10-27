@@ -4,8 +4,18 @@ definition: Ensuring high-quality early learning and childcare for young childre
   and families.
 focus_area: Early Childhood Education and Childcare
 gwo_id: GWO.G1
+largest_program:
+  expenditure_amount: 8579785378.81
+  name: Child Care and Development Block Grant
+  permalink: /program/93.575
 permalink: /gwo/GWO_G1
+smallest_program:
+  expenditure_amount: 0.0
+  name: DoD Virtual Lab School
+  permalink: /program/10.337
 title: Strengthen Early Childhood Education and Childcare
+total_agencies: 3
+total_expenditure: 15732173776.63
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 2214992400.52

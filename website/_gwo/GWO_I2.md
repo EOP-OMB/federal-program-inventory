@@ -4,8 +4,18 @@ definition: 'Expanding conventional and renewable energy generation and producti
   within the U.S. '
 focus_area: Energy Supply
 gwo_id: GWO.I2
+largest_program:
+  expenditure_amount: 6690000000.0
+  name: Credit for residential energy efficient property
+  permalink: /program/TC.037
 permalink: /gwo/GWO_I2
+smallest_program:
+  expenditure_amount: -4631858.1
+  name: Higher Blends Infrastructure Incentive Program
+  permalink: /program/10.754
 title: Expand Domestic Energy Production
+total_agencies: 5
+total_expenditure: 8463009955.0
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 3352798.66

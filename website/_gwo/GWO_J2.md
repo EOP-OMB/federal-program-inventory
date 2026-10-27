@@ -4,8 +4,18 @@ definition: ' Improving clean water and air protection, reducing pollution, and 
   sustainable management practices to safeguard human health and water and air ecosystems. '
 focus_area: Pollution Control and Abatement
 gwo_id: GWO.J2
+largest_program:
+  expenditure_amount: 4615220689.0
+  name: Clean Water State Revolving Fund
+  permalink: /program/66.458
 permalink: /gwo/GWO_J2
+smallest_program:
+  expenditure_amount: -1293356.0
+  name: Diesel Emission Reduction Act (DERA) National Grants
+  permalink: /program/66.039
 title: Protect Clean Air and Water
+total_agencies: 5
+total_expenditure: 18126004245.9
 where_used:
 - agency: Environmental Protection Agency
   expenditure_amount: 84643763.0

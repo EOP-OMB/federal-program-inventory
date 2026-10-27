@@ -4,8 +4,18 @@ definition: Advancing the competitiveness and resilience of America’s farms an
   communities.
 focus_area: Farm Income Stabilization
 gwo_id: GWO.A3
+largest_program:
+  expenditure_amount: 9348609081.53
+  name: Emergency Commodity Assistance Program
+  permalink: /program/10.121
 permalink: /gwo/GWO_A3
+smallest_program:
+  expenditure_amount: -3720000.0
+  name: American Rescue Plan Technical Assistance Investment Program
+  permalink: /program/10.234
 title: Provide Agricultural Incentives and Support
+total_agencies: 3
+total_expenditure: 23138243290.01
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 718806.81

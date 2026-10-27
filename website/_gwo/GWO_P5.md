@@ -4,8 +4,18 @@ definition: 'Elimination of barriers that lead to instances of reincarceration r
   while supporting reentry and long-term rehabilitation. '
 focus_area: Law Enforcement Support
 gwo_id: GWO.P5
+largest_program:
+  expenditure_amount: 124833797.45
+  name: Comprehensive Opioid, Stimulant, and Substance Use Program
+  permalink: /program/16.838
 permalink: /gwo/GWO_P5
+smallest_program:
+  expenditure_amount: -4180658.17
+  name: Treatment Court Discretionary Grant Program
+  permalink: /program/16.585
 title: End Criminal Recidivism
+total_agencies: 1
+total_expenditure: 187885866.21
 where_used:
 - agency: Department of Justice
   expenditure_amount: -268570.52

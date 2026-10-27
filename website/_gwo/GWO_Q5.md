@@ -4,8 +4,18 @@ definition: Strengthening the capacity to prevent, respond to, and recover from 
   in order to protect forests, lands, and natural resources.
 focus_area: Conservation and Land Management
 gwo_id: GWO.Q5
+largest_program:
+  expenditure_amount: 601888259.43
+  name: Cooperative Fire Protection Agreement
+  permalink: /program/10.703
 permalink: /gwo/GWO_Q5
+smallest_program:
+  expenditure_amount: 0.0
+  name: Bipartisan Infrastructure Law State, Private & Tribal Agreements
+  permalink: /program/10.732
 title: Eliminate Wildfires
+total_agencies: 2
+total_expenditure: 841679066.46
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 2076253.85

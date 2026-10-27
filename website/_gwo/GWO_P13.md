@@ -4,8 +4,18 @@ definition: Strengthen or harden the physical security of critical infrastructur
   facilities and systems to ensure safe and reliable operations in the face of threats.
 focus_area: Domestic Threats and Hazards
 gwo_id: GWO.P13
+largest_program:
+  expenditure_amount: 467446601.79
+  name: Non-Profit Security Program
+  permalink: /program/97.008
 permalink: /gwo/GWO_P13
+smallest_program:
+  expenditure_amount: -685.38
+  name: Presidential Residence Protection Security Grant
+  permalink: /program/97.134
 title: Protect Critical Infrastructure
+total_agencies: 3
+total_expenditure: 727294423.6
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

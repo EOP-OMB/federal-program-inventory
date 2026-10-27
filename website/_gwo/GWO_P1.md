@@ -4,8 +4,18 @@ definition: Strengthening the accuracy, reliability, or integrity of forensic sc
   techniques that are applied in investigations or legal proceedings.
 focus_area: Law Enforcement Support
 gwo_id: GWO.P1
+largest_program:
+  expenditure_amount: 42915872.78
+  name: National Sexual Assault Kit Initiative
+  permalink: /program/16.833
 permalink: /gwo/GWO_P1
+smallest_program:
+  expenditure_amount: -2602208.35
+  name: DNA Backlog Reduction Program
+  permalink: /program/16.741
 title: Advance the Capabilities of the Forensic Sciences
+total_agencies: 2
+total_expenditure: 46035021.91
 where_used:
 - agency: Department of Justice
   expenditure_amount: 0.0

@@ -14,11 +14,14 @@ class TestConstants:
         """
         Check that the global fiscal year/date variables are defined.
         """
-        # Todo: add tests for all of the newly created global variables and run the tests. 
         assert hasattr(constants, 'LAST_COMPLETED_FISCAL_YEAR')
         assert isinstance(constants.LAST_COMPLETED_FISCAL_YEAR, str)
         assert hasattr(constants, 'CURRENT_FISCAL_YEAR')
         assert isinstance(constants.CURRENT_FISCAL_YEAR, str)
+        assert hasattr(constants, 'BASELINE_INFLATION_YEAR')
+        assert isinstance(constants.BASELINE_INFLATION_YEAR, str)
+        assert hasattr(constants, 'SPENDING_CHART_YEAR_RANGE')
+        assert isinstance(constants.SPENDING_CHART_YEAR_RANGE, int)
         assert hasattr(constants, 'SITE_UPDATE_DATE')
         assert isinstance(constants.SITE_UPDATE_DATE, str)
         assert hasattr(constants, 'SAMGOV_ASSISTANCE_LISTINGS_DATE')
@@ -34,8 +37,13 @@ class TestConstants:
         assert constants.LAST_COMPLETED_FISCAL_YEAR.isdigit()
         assert len(constants.CURRENT_FISCAL_YEAR) == 4
         assert constants.CURRENT_FISCAL_YEAR.isdigit()
+        assert len(constants.BASELINE_INFLATION_YEAR) == 4
+        assert constants.BASELINE_INFLATION_YEAR.isdigit()
         assert len(constants.PAYMENTACCURACY_FY_DATE) == 4
         assert constants.PAYMENTACCURACY_FY_DATE.isdigit()
+        assert constants.SPENDING_CHART_YEAR_RANGE > 0
+        assert int(constants.BASELINE_INFLATION_YEAR) <= int(constants.LAST_COMPLETED_FISCAL_YEAR)
+        assert int(constants.CURRENT_FISCAL_YEAR) - constants.SPENDING_CHART_YEAR_RANGE > 0
         
 
         # Helper to check 'Month Day, Year' format and real date

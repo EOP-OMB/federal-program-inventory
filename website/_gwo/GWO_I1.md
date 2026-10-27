@@ -3,8 +3,18 @@ category: Energy
 definition: 'Providing essential, affordable, and reliable utility services to households. '
 focus_area: Energy Supply
 gwo_id: GWO.I1
+largest_program:
+  expenditure_amount: 4099656365.0
+  name: Low-Income Home Energy Assistance
+  permalink: /program/93.568
 permalink: /gwo/GWO_I1
+smallest_program:
+  expenditure_amount: 0.0
+  name: Denali Commission Grants and Loans
+  permalink: /program/10.858
 title: Maintain Affordable, Reliable Utility Services
+total_agencies: 3
+total_expenditure: 4160860415.0
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 18473637.0

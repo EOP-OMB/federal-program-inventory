@@ -265,8 +265,9 @@ footer_include: _footer-program.html
               </p>
               <p class="line-height-body-4">
                 For additional information on single audit requirements for this program, review the current
-                <a href="https://www.whitehouse.gov/omb/information-resources/guidance/compliance-supplement/"
-                  class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer">Compliance Supplement.</a>
+                {% include components/_external-link.html
+                  href="https://www.whitehouse.gov/omb/information-resources/guidance/compliance-supplement/"
+                  text="Compliance Supplement" %}.
               </p>
             </div>
             {% if page.rules_regulations and page.rules_regulations != "" and page.rules_regulations != nil %}

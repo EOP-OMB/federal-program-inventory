@@ -294,63 +294,6 @@ footer_include: _footer-search.html
         </nav>
         <!-- end Government-wide Objectives sub nav-->
 
-        <!-- Program outcomes sub nav -->
-        <nav class="usa-sidenav">
-          <ul class="usa-sidenav__sublist">
-            <li class="usa-sidenav__item">
-              <div class="border-top border-base-lighter"></div>
-
-              <button type="button"
-                class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
-                aria-expanded="false" aria-controls="pons-section"
-                data-content-id="pons-section">
-                <span class="font-heading-sm text-ink line-height-body-3">Program outcomes</span>
-                <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
-                    <use xlink:href="/assets/img/sprite.svg#expand_more"></use>
-                  </svg>
-                </div>
-              </button>
-
-              <!-- Program Outcomes Content -->
-              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="pons-section" hidden>
-                <div class="padding-x-2 padding-bottom-5">
-                  <label class="usa-sr-only" for="pon-filter-search">Search outcomes</label>
-                  <div class="position-relative">
-                    <input class="usa-input border-right-1px" id="pon-filter-search" type="search" placeholder="Search outcomes"
-                      autocomplete="off" />
-                  </div>
-                </div>
-                <fieldset class="usa-fieldset margin-0" id="pons-fieldset">
-                  {% for a in page.pon_options %}
-                  <div class="display-flex flex-align-start">
-                    <div class="padding-left-2">
-                      <span class="toggle expandable-button" aria-hidden="true">
-                        <svg class="usa-icon opacity-0" aria-hidden="true" focusable="false" role="img" width="24"
-                          height="24">
-                          <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
-                        </svg>
-                      </span>
-                    </div>
-                    <div class="usa-checkbox flex-fill">
-                      <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-pon-{{ forloop.index }}" type="checkbox" name="pons"
-                        data-filter-type="pon" data-pon-title="{{ a.title }}" />
-                      <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
-                        for="check-pon-{{ forloop.index }}">
-                        {{ a.title }}
-                      </label>
-                    </div>
-                  </div>
-                  {% endfor %}
-                </fieldset>
-              </div>
-              <div class="border-bottom border-base-lighter"></div>
-            </li>
-          </ul>
-        </nav>
-        <!-- end program outcomes sub nav-->
-
          <!-- Financial assistance type sub nav-->
         <nav class="usa-sidenav">
           <ul class="usa-sidenav__sublist">

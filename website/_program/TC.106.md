@@ -48,13 +48,7 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":2790000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":3020000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":3220000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":3410000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":3800000000.0}]'
 outlays: null
 permalink: /program/TC.106.html
-pons:
-- permalink: /pon/PON_912
-  pon: Improve Financial Support for Post-Secondary Education
-- permalink: /pon/PON_914
-  pon: Increase Enrollment in K12 Schools
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

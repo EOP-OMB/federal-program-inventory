@@ -3,8 +3,19 @@ category: Education
 definition: 'Preparing students for entry into post-secondary programs. '
 focus_area: Post–Secondary Education
 gwo_id: GWO.G9
+largest_program:
+  expenditure_amount: 1414093388.11
+  name: Career and Technical Education -- Basic Grants to States
+  permalink: /program/84.048
 permalink: /gwo/GWO_G9
+smallest_program:
+  expenditure_amount: -122566.88
+  name: Resident Instruction, Agriculture, and Food Science Facilities and Equipment
+    Grants
+  permalink: /program/10.308
 title: Strengthen Preparation for Post-Secondary Education
+total_agencies: 4
+total_expenditure: 2122284713.72
 where_used:
 - agency: Department of Education
   expenditure_amount: 1414093388.11

@@ -1,4 +1,14 @@
 ---
+largest_program:
+  expenditure_amount: 745323247313.0
+  name: Social Security Retirement Insurance
+  permalink: /program/96.002
+smallest_program:
+  expenditure_amount: 0.0
+  name: Analyzing Relationships between Disability, Rehabilitation, and Work
+  permalink: /program/96.011
+total_agencies: 12
+total_expenditure: 952482869940.5
 layout: pon
 category: Income Security and Social Services
 definition: 'A program whose beneficiaries achieved one or more of the following results

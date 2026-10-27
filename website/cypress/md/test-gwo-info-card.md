@@ -1,4 +1,14 @@
 ---
+largest_program:
+  expenditure_amount: 5000000.0
+  name: Test Program One
+  permalink: /program/test-1
+smallest_program:
+  expenditure_amount: 2000000.0
+  name: Test Program Three
+  permalink: /program/test-3
+total_agencies: 3
+total_expenditure: 10000000.0
 layout: gwo
 title: Test GWO Info Card
 category: A Agricultural

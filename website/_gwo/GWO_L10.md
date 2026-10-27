@@ -3,8 +3,19 @@ category: Health
 definition: Enabling the health and independence of older adults.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L10
+largest_program:
+  expenditure_amount: 451345374.06
+  name: Special Programs for the Aging, Title III, Part B, Grants for Supportive Services
+    and Senior Centers
+  permalink: /program/93.044
 permalink: /gwo/GWO_L10
+smallest_program:
+  expenditure_amount: -1845255.03
+  name: Elder Abuse Prevention Interventions Program
+  permalink: /program/93.747
 title: Improve Older Adult Health
+total_agencies: 3
+total_expenditure: 1169248648.51
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

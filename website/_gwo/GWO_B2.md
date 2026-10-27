@@ -4,8 +4,18 @@ definition: Providing businesses with effective technical assistance to stay com
   in U.S. and global markets.
 focus_area: Business Development
 gwo_id: GWO.B2
+largest_program:
+  expenditure_amount: 69250000000.0
+  name: Allow 20-percent deduction to certain pass-through income
+  permalink: /program/TC.086
 permalink: /gwo/GWO_B2
+smallest_program:
+  expenditure_amount: -15430000000.0
+  name: Accelerated depreciation of machinery and equipment (normal tax method)
+  permalink: /program/TC.082
 title: Grow American Businesses
+total_agencies: 7
+total_expenditure: 137814678721.39
 where_used:
 - agency: Small Business Administration
   expenditure_amount: 7610107.0

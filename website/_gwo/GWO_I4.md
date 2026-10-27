@@ -4,8 +4,18 @@ definition: Ensuring America’s energy systems remain reliable, stable, and res
   to disruptions.
 focus_area: Energy Supply
 gwo_id: GWO.I4
+largest_program:
+  expenditure_amount: 17220000000.0
+  name: Energy investment credit
+  permalink: /program/TC.023
 permalink: /gwo/GWO_I4
+smallest_program:
+  expenditure_amount: -245.27
+  name: State Heating Oil and Propane Program
+  permalink: /program/81.138
 title: Increase Energy Reliability and Stability (Infrastructure)
+total_agencies: 4
+total_expenditure: 67263435364.67
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: 1630000000.0

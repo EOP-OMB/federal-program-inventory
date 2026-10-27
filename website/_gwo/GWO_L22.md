@@ -4,8 +4,18 @@ definition: Enhancing the health and well-being of veterans and their families t
   high-quality care, benefits, and support.
 focus_area: Veteran Health
 gwo_id: GWO.L22
+largest_program:
+  expenditure_amount: 2016329458.37
+  name: Veterans State Nursing Home Care
+  permalink: /program/64.015
 permalink: /gwo/GWO_L22
+smallest_program:
+  expenditure_amount: -591865.85
+  name: Specially Adapted Housing Assistive Technology Grant Program
+  permalink: /program/64.051
 title: Support Veterans' Health
+total_agencies: 1
+total_expenditure: 4185477030.56
 where_used:
 - agency: Department of Veterans Affairs
   expenditure_amount: 108765479.0

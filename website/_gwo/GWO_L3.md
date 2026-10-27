@@ -4,8 +4,19 @@ definition: Eradicating the prevalence and impact of substance use disorders whi
   supporting long-term recovery.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L3
+largest_program:
+  expenditure_amount: 2955489259.12
+  name: Substance Abuse and Mental Health Services Projects of Regional and National
+    Significance
+  permalink: /program/93.243
 permalink: /gwo/GWO_L3
+smallest_program:
+  expenditure_amount: 0.0
+  name: Alcohol Research Programs – Other Research
+  permalink: /program/93.AA5
 title: End Substance Use Disorder
+total_agencies: 3
+total_expenditure: 5025800139.56
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

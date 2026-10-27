@@ -4,8 +4,18 @@ definition: Accelerating the creation and market entry of new commercial product
   and technologies.
 focus_area: Economic Development
 gwo_id: GWO.B5
+largest_program:
+  expenditure_amount: 6159542778.74
+  name: Clean Energy Demonstrations
+  permalink: /program/81.255
 permalink: /gwo/GWO_B5
+smallest_program:
+  expenditure_amount: -17360000000.0
+  name: Expensing of research and experimentation expenditures (normal tax method)
+  permalink: /program/TC.007
 title: Accelerate Development of Commercial Products and Technologies
+total_agencies: 10
+total_expenditure: -8034422074.6
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 20505684.5

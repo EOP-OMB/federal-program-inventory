@@ -4,8 +4,18 @@ definition: Building the capacity of Tribal nations to govern effectively and ex
   autonomous, self-determination.
 focus_area: Tribal Independence and Autonomy
 gwo_id: GWO.P7
+largest_program:
+  expenditure_amount: 1230086682.12
+  name: Tribal Self-Governance
+  permalink: /program/15.022
 permalink: /gwo/GWO_P7
+smallest_program:
+  expenditure_amount: -999533.84
+  name: Tribal Youth Program
+  permalink: /program/16.731
 title: Strengthen Tribal Self-Governance
+total_agencies: 4
+total_expenditure: 2045155032.68
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 56937773.81

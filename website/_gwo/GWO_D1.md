@@ -4,8 +4,18 @@ definition: Improving workplace conditions, practices, and protections to preven
   injuries, illnesses, and fatalities.
 focus_area: Consumer and Occupational Health and Safety
 gwo_id: GWO.D1
+largest_program:
+  expenditure_amount: 116609636.3
+  name: Occupational Safety and Health State Program
+  permalink: /program/17.503
 permalink: /gwo/GWO_D1
+smallest_program:
+  expenditure_amount: -106312.0
+  name: Brookwood-Sago Grant
+  permalink: /program/17.603
 title: Increase Occupational Safety and Health
+total_agencies: 4
+total_expenditure: 231128597.27
 where_used:
 - agency: Department of Labor
   expenditure_amount: -106312.0

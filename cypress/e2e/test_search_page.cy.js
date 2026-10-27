@@ -3,7 +3,7 @@ describe('Search page', () => {
     cy.viewport('macbook-16');
     cy.visit('test/search.html');
 
-    cy.get('.usa-sidenav').eq(5).click();
+    cy.get('[data-content-id="eligible-applicants-section"]').click();
     cy.get('#check-applicant-3')
       .parent()
       .compareSnapshot('search_page_applicant_wrapped');
@@ -12,15 +12,6 @@ describe('Search page', () => {
       .compareSnapshot('search_page_applicant_not_wrapped');
   });
 
-  it('search within pon', () => {
-    cy.viewport('macbook-16');
-    cy.visit('test/search.html');
-
-    cy.get('.usa-sidenav').eq(3).click();
-    cy.get('#pon-filter-search').type('advance');
-    cy.contains('Construct New Community Infrastructure').should('not.be.visible');
-    cy.get('#search-filters').compareSnapshot('search_page_pon_filter');
-  });
 
   it('sorting', () => {
     cy.viewport('macbook-16');
@@ -48,7 +39,7 @@ describe('Search page', () => {
     cy.get('#programNameSort').should('have.class', 'usa-button--outline');
   });
 
-  it('serializes and restores agency, gwo, and pon filters from URL', () => {
+  it('serializes and restores agency and gwo filters from URL', () => {
     cy.viewport('macbook-16');
     cy.intercept('POST', '/api/search/programsTable').as('programsTable');
     cy.visit('test/search.html');
@@ -65,12 +56,6 @@ describe('Search page', () => {
       .as('selectedGwoTitle');
     cy.wait('@programsTable');
 
-    cy.get('[data-content-id="pons-section"]').click();
-    cy.get('div:not(.facet-hidden):not(.hide) > div.usa-checkbox > input[data-filter-type="pon"]')
-      .first().check({ force: true }).invoke('attr', 'data-pon-title')
-      .as('selectedPonTitle');
-    cy.wait('@programsTable');
-
     cy.url().then((urlString) => {
       const url = new URL(urlString);
       const encodedFilters = url.searchParams.get('f');
@@ -79,7 +64,6 @@ describe('Search page', () => {
       const decodedFilters = JSON.parse(decodeURIComponent(atob(encodedFilters)));
       expect(decodedFilters.a, 'agency filters').to.have.length.greaterThan(0);
       expect(decodedFilters.gwo, 'gwo filters').to.have.length.greaterThan(0);
-      expect(decodedFilters.pon, 'pon filters').to.have.length.greaterThan(0);
     });
 
     cy.reload();
@@ -89,10 +73,6 @@ describe('Search page', () => {
       .should('be.checked');
     cy.get('@selectedGwoTitle').then((selectedGwoTitle) => {
       cy.get(`input[data-filter-type="gwo"][data-gwo-title="${selectedGwoTitle}"]`)
-        .should('be.checked');
-    });
-    cy.get('@selectedPonTitle').then((selectedPonTitle) => {
-      cy.get(`input[data-filter-type="pon"][data-pon-title="${selectedPonTitle}"]`)
         .should('be.checked');
     });
   });

@@ -3,8 +3,19 @@ category: Education
 definition: Building a skilled and effective educator workforce.
 focus_area: Educational Environments
 gwo_id: GWO.G4
+largest_program:
+  expenditure_amount: 108337652.13
+  name: Special Education - Personnel Development to Improve Services and Results
+    for Children with Disabilities
+  permalink: /program/84.325
 permalink: /gwo/GWO_G4
+smallest_program:
+  expenditure_amount: -11909025.19
+  name: Supporting Effective Educator Development Program
+  permalink: /program/84.423
 title: Strengthen Educator Workforce Quality
+total_agencies: 4
+total_expenditure: 160242737.3
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: -2893035.67

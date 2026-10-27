@@ -4,8 +4,19 @@ definition: Ensuring the safety, reliability, and capacity of rail systems to me
   the needs of passengers, crew, and freight.
 focus_area: Ground Transportation
 gwo_id: GWO.T2
+largest_program:
+  expenditure_amount: 10596068003.67
+  name: Federal-State Partnership for Intercity Passenger Rail
+  permalink: /program/20.326
 permalink: /gwo/GWO_T2
+smallest_program:
+  expenditure_amount: -928620000.0
+  name: High-Speed Rail Corridors and Intercity Passenger Rail Service – Capital Assistance
+    Grants
+  permalink: /program/20.319
 title: Improve Rail Transportation Networks
+total_agencies: 1
+total_expenditure: 17776897570.44
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 0.0

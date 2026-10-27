@@ -4,8 +4,18 @@ definition: Strengthening mental and behavioral health to promote resilience and
   well-being.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L6
+largest_program:
+  expenditure_amount: 684457513.4
+  name: Block Grants for Community Mental Health Services
+  permalink: /program/93.958
 permalink: /gwo/GWO_L6
+smallest_program:
+  expenditure_amount: -12085508.94
+  name: Section 223 Demonstration Programs to Improve Community Mental Health Services
+  permalink: /program/93.829
 title: 'Improve Mental and Behavioral Health '
+total_agencies: 2
+total_expenditure: 1236616208.53
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

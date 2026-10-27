@@ -1,9 +1,11 @@
 """Creates markdown files for static site generation."""
 
+import argparse
 from datetime import datetime
 from pathlib import Path
 import sqlite3
 import os
+import sys
 import shutil
 import json
 import yaml
@@ -36,6 +38,7 @@ WEBSITE_DATA_DIR = os.path.join(os.path.dirname(CURRENT_DIR), "website", "_data"
 INFLATION_POPULATION_FILE_PATH = os.path.join(CURRENT_DIR, "extracted", "inflation_and_population_growth.csv")
 GLOBAL_DATA_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "global_data.yml")
 DATA_SOURCES_YML_PATH = os.path.join(WEBSITE_DATA_DIR, "data_sources.yml")
+QA_DIRECTORY = Path(__file__).resolve().parent / "qa"
 
 def calculate_improper_payment_metrics(improper_payments_array):
     """
@@ -707,6 +710,41 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
 
     print("Successfully generated sub-category markdown files")
 
+def summarize_related_programs(programs):
+    """Totals and extreme programs for gwo or pon page."""
+    programs = programs or []
+    if not programs:
+        return {
+            'total_expenditure': 0.0,
+            'total_agencies': 0,
+            'largest_program': None,
+            'smallest_program': None,
+        }
+
+    def amount(program):
+        value = program.get('expenditure_amount')
+        return 0.0 if value is None else float(value)
+
+    def program_name(program):
+        return program.get('name') or ''
+
+    def summary(program):
+        return {
+            'name': program.get('name'),
+            'permalink': program.get('permalink'),
+            'expenditure_amount': amount(program),
+        }
+
+    largest = min(programs, key=lambda program: (-amount(program), program_name(program)))
+    smallest = min(programs, key=lambda program: (amount(program), program_name(program)))
+    return {
+        'total_expenditure': round(sum(amount(program) for program in programs), 2),
+        'total_agencies': len({program.get('agency') for program in programs}),
+        'largest_program': summary(largest),
+        'smallest_program': summary(smallest),
+    }
+
+
 def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
     """Generate markdown files for gwos with related programs."""
     recreate_directory(output_dir)
@@ -771,7 +809,8 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_
             'focus_area': gwo["focus_area"],
             'category': gwo['category'],
             'definition': gwo['gwo_definition'],
-            'where_used': where_used_enhanced
+            'where_used': where_used_enhanced,
+            **summarize_related_programs(where_used_enhanced),
         }
 
         file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
@@ -885,7 +924,8 @@ def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_
             'focus_area': pon["focus_area"],
             'category': pon['category'],
             'definition': pon['pon_definition'],
-            'where_used': where_used_enhanced
+            'where_used': where_used_enhanced,
+            **summarize_related_programs(where_used_enhanced),
         }
 
         file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
@@ -1469,8 +1509,7 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         'assistance_types': shared_data['assistance_types'],
         'beneficiary_types': shared_data['beneficiary_types'],
         'categories': shared_data['categories'],
-        'gwo_options': shared_data['gwo_options'],
-        'pon_options': shared_data['pon_options']
+        'gwo_options': shared_data['gwo_options']
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1924,64 +1963,91 @@ def export_global_dates_to_yml():
     print(f"Exported global date variables to {output_file}")
     return output_file
 
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Create markdown files for static site generation."
+    )
+    parser.add_argument(
+        "--ignore-blockers",
+        action="store_true",
+        help="Continue when data quality checks have written qa/blockers.txt.",
+    )
+    return parser.parse_args(argv)
 
-try:
-    conn = sqlite3.connect(full_path)
-    conn.row_factory = sqlite3.Row
-    cursor = conn.cursor()
 
-    programs_data = generate_program_data(cursor, FISCAL_YEARS)
+def main(ignore_blockers=False):
+    blockers_path = QA_DIRECTORY / "blockers.txt"
+    if blockers_path.is_file():
+        if ignore_blockers:
+            print(
+                "Data quality checks found blockers. "
+                "Continuing because --ignore-blockers was specified."
+            )
+        else:
+            print("Data quality checks found blockers. Load stopped.")
+            sys.exit(1)
 
-    shared_data = generate_shared_data(cursor)
+    try:
+        conn = sqlite3.connect(full_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
 
-    generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
+        programs_data = generate_program_data(cursor, FISCAL_YEARS)
 
-    generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
+        shared_data = generate_shared_data(cursor)
 
-    export_inflation_population_from_csv()
+        generate_program_markdown_files(MARKDOWN_DIR, programs_data, FISCAL_YEARS)
 
-    export_global_dates_to_yml()
+        generate_program_csv('../website/assets/files/all-program-data.csv', programs_data, FISCAL_YEARS)
 
-    export_data_sources_config()
+        export_inflation_population_from_csv()
 
-    search_path = os.path.join('../website', 'pages', 'search.md')
-    generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+        export_global_dates_to_yml()
 
-    taxonomy_path = os.path.join('../website', 'pages', 'taxonomy.md')
-    generate_taxonomy_page(cursor, taxonomy_path, shared_data)
+        export_data_sources_config()
 
-    category_path = os.path.join('../website', 'pages', 'category.md')
-    generate_category_page(cursor, programs_data, category_path,
-                           constants.LAST_COMPLETED_FISCAL_YEAR)
+        search_path = os.path.join('../website', 'pages', 'search.md')
+        generate_search_page(search_path, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    home_path = os.path.join('../website', 'pages', 'home.md')
-    generate_home_page(cursor, home_path, programs_data, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+        taxonomy_path = os.path.join('../website', 'pages', 'taxonomy.md')
+        generate_taxonomy_page(cursor, taxonomy_path, shared_data)
 
-    programs_json_path = os.path.join('../indexer', 'programs-table.json')
-    generate_programs_table_json(programs_json_path, programs_data,
-                                 constants.LAST_COMPLETED_FISCAL_YEAR)
+        category_path = os.path.join('../website', 'pages', 'category.md')
+        generate_category_page(cursor, programs_data, category_path,
+                            constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    category_dir = os.path.join('../website', '_category')
-    generate_category_markdown_files(cursor, category_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+        home_path = os.path.join('../website', 'pages', 'home.md')
+        generate_home_page(cursor, home_path, programs_data, shared_data, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    subcategory_dir = os.path.join('../website', '_subcategory')
-    generate_subcategory_markdown_files(cursor, subcategory_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+        programs_json_path = os.path.join('../indexer', 'programs-table.json')
+        generate_programs_table_json(programs_json_path, programs_data,
+                                    constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    gwo_dir = os.path.join('../website', '_gwo')
-    generate_gwo_markdown_files(cursor, gwo_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+        category_dir = os.path.join('../website', '_category')
+        generate_category_markdown_files(cursor, category_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    pon_dir = os.path.join('../website', '_pon')
-    generate_pon_markdown_files(cursor, pon_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+        subcategory_dir = os.path.join('../website', '_subcategory')
+        generate_subcategory_markdown_files(cursor, subcategory_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-    about_path = os.path.join('../website', 'pages')
-    generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+        gwo_dir = os.path.join('../website', '_gwo')
+        generate_gwo_markdown_files(cursor, gwo_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-except sqlite3.Error as e:
-    print(f"Database error occurred: {e}")
-    raise e
-except Exception as e:
-    print(f"An error occurred: {e}")
-    raise e
-finally:
-    if 'conn' in locals():
-        conn.close()
+        pon_dir = os.path.join('../website', '_pon')
+        generate_pon_markdown_files(cursor, pon_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+
+        about_path = os.path.join('../website', 'pages')
+        generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)
+
+
+    except sqlite3.Error as e:
+        print(f"Database error occurred: {e}")
+        raise e
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        raise e
+    finally:
+        if 'conn' in locals():
+            conn.close()
+if __name__ == "__main__":
+    args = parse_args()
+    main(ignore_blockers=args.ignore_blockers)

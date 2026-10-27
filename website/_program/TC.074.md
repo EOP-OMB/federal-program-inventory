@@ -45,9 +45,7 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":33290000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":35880000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":40060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":43580000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":48300000000.0}]'
 outlays: null
 permalink: /program/TC.074.html
-pons:
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

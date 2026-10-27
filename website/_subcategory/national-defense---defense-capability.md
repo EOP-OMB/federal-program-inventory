@@ -1,5 +1,5 @@
 ---
-agencies: '[{"title":"Department of Defense","total_num_programs":450,"total_obs":130122830607.18004},{"title":"Department
+agencies: '[{"title":"Department of Defense","total_num_programs":519,"total_obs":130122830607.18004},{"title":"Department
   of Transportation","total_num_programs":3,"total_obs":388911493.74},{"title":"Department
   of Energy","total_num_programs":5,"total_obs":208829578.98},{"title":"Department
   of Veterans Affairs","total_num_programs":1,"total_obs":117388258.0},{"title":"Department
@@ -768,16 +768,42 @@ programs: '[{"cfda":"G3.C.12.198","permalink":"/program/G3.C.12.198","title":"F-
   Military Extension Educator Program","popular_name":null,"agency":"Department of
   Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.DJN","permalink":"/program/G3.C.12.DJN","title":"ABRAMS
   SERIES (M1/M1A1/M1A2) TANK","popular_name":"ABRAMS SERIES (M1/M1A1/M1A2)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.280","permalink":"/program/G3.C.12.280","title":"ADVANCED
+  ANTI-TANK WEAPON SYSTEM - MEDIUM (JAVELIN)","popular_name":"JAVELIN","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.529","permalink":"/program/G3.C.12.529","title":"ADVANCED
+  ARRESTING GEAR","popular_name":"AAG","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.138","permalink":"/program/G3.C.12.138","title":"ADVANCED
+  CAPABILITY TORPEDO (MK 48 ADCAP)","popular_name":"MK 48 ADCAP","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.219","permalink":"/program/G3.C.12.219","title":"ADVANCED
+  THREAT INFRARED COUNTERMEASURE/COMMON MISSILE WARNING SYSTEM","popular_name":"ATIRCM/CMWS","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.371","permalink":"/program/G3.C.12.371","title":"AERIAL
-  COMMON SENSOR","popular_name":"ACS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.D56","permalink":"/program/G3.C.12.D56","title":"ARMORED
-  SECURITY VEHICLE","popular_name":"ASV","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.282","permalink":"/program/10.282","title":"Air
+  COMMON SENSOR","popular_name":"ACS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.Z46","permalink":"/program/G3.C.12.Z46","title":"AIR
+  FORCE WAY","popular_name":"AFWAY","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.GHL","permalink":"/program/G3.C.12.GHL","title":"AIRBORNE
+  RECON LOW (ARL)","popular_name":"AIRBORNE RECON LOW (ARL)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.331","permalink":"/program/G3.C.12.331","title":"ALAM","popular_name":"ALAM","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.GCA","permalink":"/program/G3.C.12.GCA","title":"AN/SLQ-25
+  TORPEDO CM TRANS SYS","popular_name":"AN/SLQ-25 TORPEDO CM TRANS SYS","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.179","permalink":"/program/G3.C.12.179","title":"ARMED
+  RECONNAISSANCE HELICOPTER (ARH)","popular_name":"ARH","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.D56","permalink":"/program/G3.C.12.D56","title":"ARMORED
+  SECURITY VEHICLE","popular_name":"ASV","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.211","permalink":"/program/G3.C.12.211","title":"ARMY
+  TACTICAL MISSILE SYSTEM-ANTI-PERSONNEL ANTI-MATERIEL (ATACMS-APAM","popular_name":"ATACMS-APAM","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.900","permalink":"/program/G3.C.12.900","title":"ASIP
+  PROCESSOR UPGRADE CHASSIS (APUC)","popular_name":"APUC","agency":"Department of
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.C86","permalink":"/program/G3.C.12.C86","title":"AVIATION
+  RESOURCE MANAGEMENT SYSTEM SUP V7.0","popular_name":"ARMS SUP V7.0","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.282","permalink":"/program/10.282","title":"Air
   Force 4-H Military Partnership Outreach Support Grant Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.289","permalink":"/program/10.289","title":"Army
   Youth Program Evaluation","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.376","permalink":"/program/G3.C.12.376","title":"B-2
   RADAR MODERNIZATION PROGRAM","popular_name":"B-2 RMP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.755","permalink":"/program/G3.C.12.755","title":"B-2A
-  SPIRIT STEALTH BOMBER","popular_name":"B-2A","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.J28","permalink":"/program/G3.C.12.J28","title":"BATTLE
+  SPIRIT STEALTH BOMBER","popular_name":"B-2A","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.P28","permalink":"/program/G3.C.12.P28","title":"B-52
+  OTHER MODS","popular_name":"B-52 LCM","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.468","permalink":"/program/G3.C.12.468","title":"B61
+  MOD 12 LIFE EXTENSION PROGRAM TAILKIT ASSEMBLY","popular_name":"B61 MOD 12 LEP TKA","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.J28","permalink":"/program/G3.C.12.J28","title":"BATTLE
   CONTROL SYSTEM - FIXED MODIFICATION 1","popular_name":"BCS-F MOD 1","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.601","permalink":"/program/G3.C.12.601","title":"BRADLEY
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.UAJ","permalink":"/program/G3.C.12.UAJ","title":"BINOCULAR
+  NIGHT OBSERVATION DEVICE","popular_name":"BINOD","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.AIA","permalink":"/program/G3.C.12.AIA","title":"BLACKHAWK
+  (UH-60) UTTAS HELICOPTER","popular_name":"BLACKHAWK","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.51E","permalink":"/program/G3.C.12.51E","title":"BODY
+  ARMOR, CONCEALABLE","popular_name":"CBA","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.601","permalink":"/program/G3.C.12.601","title":"BRADLEY
   FIGHTING VEHICLE SYSTEMS (BFVS) UPGRADE","popular_name":"BRADLEY UPGRADE","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.273","permalink":"/program/G3.C.12.273","title":"C-5
   AVIONICS MODERNIZATION PROGRAM","popular_name":"C-5 AMP","agency":"Department of
@@ -785,67 +811,124 @@ programs: '[{"cfda":"G3.C.12.198","permalink":"/program/G3.C.12.198","title":"F-
   DEMILITARIZATION-CHEMICAL MATERIALS AGENCY","popular_name":"CHEM DEMIL-CMA","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.CMFF","permalink":"/program/G3.C.12.CMFF","title":"CMOSS
   MOUNTED FORM FACTOR - MOUNTED COMMON INFRASTRUCTURE","popular_name":"CMFF MCI -
-  RP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.525","permalink":"/program/G3.C.12.525","title":"COMMON
+  RP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.254","permalink":"/program/G3.C.12.254","title":"COMANCHE","popular_name":"COMANCHE","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.525","permalink":"/program/G3.C.12.525","title":"COMMON
   GROUND STATION (FORMERLY JSTARS CGS)","popular_name":"CGS (JSTARS GSM)","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.288","permalink":"/program/10.288","title":"Clearing
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.480","permalink":"/program/G3.C.12.480","title":"COMMON
+  REMOTELY OPERATED WEAPON STATION","popular_name":"CROWS","agency":"Department of
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.K25","permalink":"/program/G3.C.12.K25","title":"COMMON
+  ROBOTIC SYSTEM - HEAVY","popular_name":"CRS-H","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.310","permalink":"/program/G3.C.12.310","title":"CONDOR(AGM-53B)","popular_name":"CONDOR","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.L8U","permalink":"/program/G3.C.12.L8U","title":"COUNTER
+  COMMUNICATION SYSTEM","popular_name":"CCS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.288","permalink":"/program/10.288","title":"Clearing
   House for Military Readiness","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"97.161","permalink":"/program/97.161","title":"Counter-Unmanned
   Aircraft Systems (C-UAS) Grant Program","popular_name":"C-UAS","agency":"Department
-  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.DMLSS","permalink":"/program/G3.C.12.DMLSS","title":"DEFENSE
+  of Homeland Security","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.600","permalink":"/program/G3.C.12.600","title":"DEFENSE
+  ENTERPRISE OFFICE SOLUTION","popular_name":"DEOS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.DMLSS","permalink":"/program/G3.C.12.DMLSS","title":"DEFENSE
   MEDICAL LOGISTICS STANDARD SUPPORT-WHOLESALE","popular_name":"DMLSS-W","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.SCY","permalink":"/program/G3.C.12.SCY","title":"DESTROYER
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.203","permalink":"/program/G3.C.12.203","title":"DEFENSE
+  METEOROLOGICAL SATELLITE PROGRAM","popular_name":"DMSP","agency":"Department of
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.SCY","permalink":"/program/G3.C.12.SCY","title":"DESTROYER
   DDG-51","popular_name":"DESTROYER DDG-51","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.L6G","permalink":"/program/G3.C.12.L6G","title":"DOCUMENT
   SERVICES ONLINE","popular_name":"DSO","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.876","permalink":"/program/G3.C.12.876","title":"E-3
   AWACS SUPPORT TO THE WARFIGHTER","popular_name":"E-3 STWF","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.515","permalink":"/program/G3.C.12.515","title":"EXPEDITIONARY
-  FIGHTING VEHICLE","popular_name":"EFV","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.554","permalink":"/program/12.554","title":"English
+  FIGHTING VEHICLE","popular_name":"EFV","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.335","permalink":"/program/G3.C.12.335","title":"EXPEDITIONARY
+  SEA BASE","popular_name":"ESB","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.W76","permalink":"/program/G3.C.12.W76","title":"EXTENDED
+  COLD WEATHER CLOTHING SYSTEM","popular_name":"ECWCS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.554","permalink":"/program/12.554","title":"English
   for Heritage Language Speakers Grants to U.S. Institutions of Higher Education","popular_name":"English
   for Heritage Language Speakers","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"19.317","permalink":"/program/19.317","title":"Export
   Controls and Border Security","popular_name":null,"agency":"Department of State","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.315","permalink":"/program/G3.C.12.315","title":"F-111A/D/E/F","popular_name":"F-111A/D/E/F","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.Y88","permalink":"/program/G3.C.12.Y88","title":"F-16
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.917","permalink":"/program/G3.C.12.917","title":"F-16
+  ADVANCED DATA TRANSFER EQUIPMENT","popular_name":"F-16 ADTE","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.AFH","permalink":"/program/G3.C.12.AFH","title":"F-16
+  FALCON FIGHTER","popular_name":"F-16 FALCON","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.Y88","permalink":"/program/G3.C.12.Y88","title":"F-16
   M CODE","popular_name":"F-16 M CODE","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.689","permalink":"/program/G3.C.12.689","title":"F-22
-  RAPID FIELDING","popular_name":"F-22 RAPID FIELDING","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.948","permalink":"/program/G3.C.12.948","title":"FORWARD
+  RAPID FIELDING","popular_name":"F-22 RAPID FIELDING","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.316","permalink":"/program/G3.C.12.316","title":"F-5E","popular_name":"F-5E","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.T66","permalink":"/program/G3.C.12.T66","title":"FACILITIES
+  AND EQUIPMENT MAINTENANCE","popular_name":"FEM","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.610","permalink":"/program/G3.C.12.610","title":"FAMILY
+  OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS FORCE ELEMENT TERMINAL RAPID PROTOTYPING","popular_name":"FAB-T
+  FET RP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.948","permalink":"/program/G3.C.12.948","title":"FORWARD
   AREA AIR DEFENSE SYSTEM, LINE-OF-SIGHT, REAR (PED MNT STINGER) (LEGACY)","popular_name":"AVENGER
   (FAADS LOS-R) (LEGACY)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.301","permalink":"/program/G3.C.12.301","title":"FUTURE
   COMBAT SYSTEMS","popular_name":"FCS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.237","permalink":"/program/G3.C.12.237","title":"GLOBAL
-  BROADCAST SERVICE","popular_name":"GBS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.GQM","permalink":"/program/G3.C.12.GQM","title":"GQM-163A
+  BROADCAST SERVICE","popular_name":"GBS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.M91","permalink":"/program/G3.C.12.M91","title":"GLOBAL
+  COMBAT SUPPORT SYSTEM (GCSS) - AIR FORCE","popular_name":"GCSS - AF","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.N21","permalink":"/program/G3.C.12.N21","title":"GLOBAL
+  COMMAND & CONTROL SYSTEM (GCCS) - AF (INFRASTRUCTURE)","popular_name":"GCCS-AF(I)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.N01","permalink":"/program/G3.C.12.N01","title":"GLOBAL
+  INFORMATION GRID BANDWIDTH EXPANSION","popular_name":"GIG BE","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.GQM","permalink":"/program/G3.C.12.GQM","title":"GQM-163A
   SUPERSONIC SEA SKIMMING TARGET THREAT C","popular_name":"GQM-163A (FORMERLY SSSTTC)","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.S41","permalink":"/program/G3.C.12.S41","title":"HYPERSONIC
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.U30","permalink":"/program/G3.C.12.U30","title":"HEAVY
+  DUMP TRUCK (HDT)","popular_name":"HDT","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.B70","permalink":"/program/G3.C.12.B70","title":"HH-60G
+  LOW COST MODS","popular_name":"HH-60G LCM","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.S41","permalink":"/program/G3.C.12.S41","title":"HYPERSONIC
   ATTACK CRUISE MISSILE RAPID PROTOTYPING","popular_name":"HACM RP","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.M87","permalink":"/program/G3.C.12.M87","title":"INTEGRATED
+  LOGISTICS SYSTEM-SUPPLY","popular_name":"ILS-S","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.860","permalink":"/program/G3.C.12.860","title":"INTEGRATED
+  TACTICAL NETWORK - RAPID PROTOTYPING","popular_name":"ITN - RP","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.031","permalink":"/program/12.031","title":"Improvement
   of Navy Ship Repair or Alterations Capability","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.372","permalink":"/program/G3.C.12.372","title":"JOINT
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.370","permalink":"/program/G3.C.12.370","title":"JOINT
+  COMMON MISSILE","popular_name":"JOINT COMMON MISSILE","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.372","permalink":"/program/G3.C.12.372","title":"JOINT
   LAND ATTACK CRUISE MISSILE DEFENSE ELEVATED NETTED SENSOR SYSTEM","popular_name":"JLENS","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.470","permalink":"/program/G3.C.12.470","title":"JOINT
   SPACE OPERATIONS CENTER (JSPOC) MISSION SYSTEM INCREMENT 2","popular_name":"JMS
-  INC 2","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.514","permalink":"/program/G3.C.12.514","title":"JOINT
+  INC 2","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.360","permalink":"/program/G3.C.12.360","title":"JOINT
+  TACTICAL RADIO SYSTEM GROUND MOBILE RADIO (FORMERLY CLUSTER 1)","popular_name":"JTRS
+  GMR","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.514","permalink":"/program/G3.C.12.514","title":"JOINT
   TACTICAL UNMANNED AERIAL VEHICLES","popular_name":"JTUAV","agency":"Department of
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.171","permalink":"/program/G3.C.12.171","title":"JTIDS
+  NAVY","popular_name":"JTIDS (NAVY)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.B68","permalink":"/program/G3.C.12.B68","title":"KESSEL
+  RUN ALL DOMAIN COMMON PLATFORM","popular_name":"KR ADCP","agency":"Department of
   Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.BQT","permalink":"/program/G3.C.12.BQT","title":"LETHAL
   UNMANNED SYSTEMS FOR INFANTRY BRIGADE COMBAT TEAMS","popular_name":"LUSIBCT","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.149","permalink":"/program/G3.C.12.149","title":"LOS
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.28L","permalink":"/program/G3.C.12.28L","title":"LOCATION
+  & AZIMUTH DETERMINING SYSTEM","popular_name":"LADS (2)","agency":"Department of
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.149","permalink":"/program/G3.C.12.149","title":"LOS
   ANGELES CLASS NUCLEAR ATTACK SUBMARINE","popular_name":"SSN 688","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.579","permalink":"/program/12.579","title":"Language
   Training Center","popular_name":"Language Training Center","agency":"Department
   of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.Y85","permalink":"/program/G3.C.12.Y85","title":"M119
   105MM TOWED HOWITZER","popular_name":"M119","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.136","permalink":"/program/G3.C.12.136","title":"M198
   HOWITZER (155MM)","popular_name":"M198 TOWED HOWITZER (155MM)","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.F67","permalink":"/program/G3.C.12.F67","title":"M870A4
+  SEMITRAILER, LOWBED, CONSTRUCTION EQUIPMENT TRANSPORTER","popular_name":"M870A4
+  STLB","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.R53","permalink":"/program/G3.C.12.R53","title":"MAN
+  TRANSPORTABLE ROBOTIC SYSTEM INC II","popular_name":"MTRS INC II","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.300","permalink":"/program/G3.C.12.300","title":"MAVERICK
   (LASER)","popular_name":"MAVERICK (LASER)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.785","permalink":"/program/G3.C.12.785","title":"MC/AC-130J
   SPECIAL MISSION SYSTEM (SMS)","popular_name":"MC/AC-130J SMS RF","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.827","permalink":"/program/G3.C.12.827","title":"MH60
-  MODERNIZATION PROGRAM","popular_name":"MH60 MOD","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.359","permalink":"/program/G3.C.12.359","title":"MINUTEMAN
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.Z52","permalink":"/program/G3.C.12.Z52","title":"METAL
+  WORKING AND MACHINING SHOP SET","popular_name":"MWMSS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.827","permalink":"/program/G3.C.12.827","title":"MH60
+  MODERNIZATION PROGRAM","popular_name":"MH60 MOD","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.ET9","permalink":"/program/G3.C.12.ET9","title":"MILITARY
+  SATELLITE COMMUNICATIONS (MILSATCOM) COMMAND AND CONTROL SYSTEM-CONSOLIDATED (CCS-C)","popular_name":"CCS-C","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.802","permalink":"/program/G3.C.12.802","title":"MINE
+  RESISTANT AMBUSH PROTECTED VEHICLES RF","popular_name":"MRAP RF","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.359","permalink":"/program/G3.C.12.359","title":"MINUTEMAN
   II","popular_name":"MINUTEMAN II","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.302","permalink":"/program/G3.C.12.302","title":"MINUTEMAN
   III GUIDANCE REPLACEMENT PROGRAM (GRP)","popular_name":"MINUTEMAN III GRP","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.248","permalink":"/program/G3.C.12.248","title":"MINUTEMAN
+  III PROPULSION REPLACEMENT PROGRAM (PRP)","popular_name":"MINUTEMAN III PRP","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.C09","permalink":"/program/G3.C.12.C09","title":"MISSION
   PLANNING SYSTEM AGILE GLOBAL MOBILITY & SPECIAL MISSIONS","popular_name":"MPS GMSM","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.E88","permalink":"/program/G3.C.12.E88","title":"MUNITIONS
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.EBE","permalink":"/program/G3.C.12.EBE","title":"MK15
+  CLOSE IN WEAPON SYSTEM","popular_name":"MK15 CLOSE IN WPN SYS","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.255","permalink":"/program/G3.C.12.255","title":"MOBILE
+  SUBSCRIBER EQUIPMENT","popular_name":"MSE","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.E88","permalink":"/program/G3.C.12.E88","title":"MUNITIONS
   LOW COST MODIFICATIONS","popular_name":"MUNITIONS LCM","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.284","permalink":"/program/10.284","title":"Military
   Families Learning Network","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.287","permalink":"/program/10.287","title":"Military
   REACH","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.281","permalink":"/program/10.281","title":"Military
-  Teen Adventure Camps","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.535","permalink":"/program/G3.C.12.535","title":"NEXT
+  Teen Adventure Camps","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.537","permalink":"/program/G3.C.12.537","title":"NATIONAL
+  AIRSPACE SYSTEM","popular_name":"NAS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.563","permalink":"/program/G3.C.12.563","title":"NATIONAL
+  MISSILE DEFENSE SYSTEM","popular_name":"NMD","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.535","permalink":"/program/G3.C.12.535","title":"NEXT
   GENERATION AIR DOMINANCE FAMILY OF SYSTEMS","popular_name":"NAVY NGAD","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.N61","permalink":"/program/G3.C.12.N61","title":"NEXT
+  GENERATION ENTERPRISE NETWORK INCREMENT 1","popular_name":"NGEN INC 1","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.664","permalink":"/program/G3.C.12.664","title":"NEXT
   GENERATION FIXED WING HELMET (NGFWH)","popular_name":"NGFWH","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"81.251","permalink":"/program/81.251","title":"National
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.643","permalink":"/program/G3.C.12.643","title":"NUCLEAR
+  PLANNING AND EXECUTION SYSTEM RECAPITALIZATION RAPID PROTOTYPING","popular_name":"NPES
+  RECAP RP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"81.251","permalink":"/program/81.251","title":"National
   Laboratory Jobs Apprenticeship for Complete and Committed Employment for Specialized
   Skills","popular_name":"ACCESS Program","agency":"Department of Energy","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.552","permalink":"/program/12.552","title":"National
   Security Education Program David L. Boren Fellowships","popular_name":"David L.
@@ -854,27 +937,48 @@ programs: '[{"cfda":"G3.C.12.198","permalink":"/program/G3.C.12.198","title":"F-
   Boren Scholarships","agency":"Department of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"12.335","permalink":"/program/12.335","title":"Navy  Command,
   Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance","popular_name":"(C4ISR)","agency":"Department
   of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.0MR","permalink":"/program/G3.C.12.0MR","title":"Non-Intrusive
-  Inspection System","popular_name":"NIIS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.311","permalink":"/program/G3.C.12.311","title":"POSEIDON
+  Inspection System","popular_name":"NIIS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.1F3","permalink":"/program/G3.C.12.1F3","title":"OXYGEN
+  GENERATOR, FIELD PORTABLE","popular_name":"OGFP","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.324","permalink":"/program/G3.C.12.324","title":"P-3C
+  ORION LAND-BASED,ANTI-SUB WARFARE PATROL ACFT(UPDATE IV AVIONICS)","popular_name":"P-3C","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.311","permalink":"/program/G3.C.12.311","title":"POSEIDON
   (QGM-73A)","popular_name":"POSEIDON","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.RSS","permalink":"/program/G3.C.12.RSS","title":"RESCUE
   AND SALVAGE SHIP","popular_name":"RESCUE AND SALVAGE SHIP","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.CNA","permalink":"/program/G3.C.12.CNA","title":"RIM
+  7-H-2 NATO SEA SPARROW MISSILE","popular_name":"RIM 7-H-2 NATO SEA SPARROW","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.CMN","permalink":"/program/G3.C.12.CMN","title":"RIM-66
+  STANDARD MISSILE (MED)","popular_name":"RIM-66 STANDARD MISSILE (MED)","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.143","permalink":"/program/G3.C.12.143","title":"ROLAND
   AIR DEFENSE MISSILE","popular_name":"ROLAND","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.357","permalink":"/program/12.357","title":"ROTC
   Language and Culture Training Grants","popular_name":"ROTC Project GO (Global Officers)","agency":"Department
   of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.258","permalink":"/program/G3.C.12.258","title":"SEAWOLF
   CLASS NUCLEAR ATTACK SUBMARINE/COMBAT SYSTEM","popular_name":"SSN 21 / AN/BSY-2","agency":"Department
   of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.234","permalink":"/program/G3.C.12.234","title":"SM
-  2 (BLKS I-IV)","popular_name":"SM 2 (BLKS I-IV)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.717","permalink":"/program/G3.C.12.717","title":"SOF
-  COUNTER UNCREWED SYSTEMS","popular_name":"SOF CUXS ","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.SDN","permalink":"/program/G3.C.12.SDN","title":"SUBMARINE
+  2 (BLKS I-IV)","popular_name":"SM 2 (BLKS I-IV)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.999","permalink":"/program/G3.C.12.999","title":"SOF
+  COMBAT DIVING PROPULSION","popular_name":"SOF CD PROPULSION","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.717","permalink":"/program/G3.C.12.717","title":"SOF
+  COUNTER UNCREWED SYSTEMS","popular_name":"SOF CUXS ","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.328","permalink":"/program/G3.C.12.328","title":"SPACE
+  BASED SPACE SURVEILLANCE BLOCK 10","popular_name":"SBSS BLOCK 10","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.164","permalink":"/program/G3.C.12.164","title":"SPARROW
+  AIM-7F, NAVY","popular_name":"SPARROW (AIM-7F) (N)","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.SDN","permalink":"/program/G3.C.12.SDN","title":"SUBMARINE
   NUCLEAR - SSN","popular_name":"SUBMARINE NUCLEAR - SSN","agency":"Department of
-  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.S9E","permalink":"/program/G3.C.12.S9E","title":"Spares
+  Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.116","permalink":"/program/G3.C.12.116","title":"SUPER
+  STALLION HELICOPTER","popular_name":"C/MH-53E","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.S9E","permalink":"/program/G3.C.12.S9E","title":"Spares
   and Repair Parts","popular_name":"SPARES","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.45K","permalink":"/program/G3.C.12.45K","title":"Strategic
   Mission Planning and Execution System","popular_name":"SMPES","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.724","permalink":"/program/G3.C.12.724","title":"TACTICAL
-  MISSION COMMAND","popular_name":"TMC","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.432","permalink":"/program/12.432","title":"U.S.
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.592","permalink":"/program/G3.C.12.592","title":"T-AKE
+  LEWIS AND CLARK CLASS DRY CARGO/AMMUNITION SHIP","popular_name":"T-AKE","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.152","permalink":"/program/G3.C.12.152","title":"TACFIRE","popular_name":"TACFIRE","agency":"Department
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.206","permalink":"/program/G3.C.12.206","title":"TACTICAL
+  JAMMING SYSTEM","popular_name":"EA-6B","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.724","permalink":"/program/G3.C.12.724","title":"TACTICAL
+  MISSION COMMAND","popular_name":"TMC","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.GHR","permalink":"/program/G3.C.12.GHR","title":"TACTICAL
+  MISSION NETWORK","popular_name":"SOF TMN","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"12.432","permalink":"/program/12.432","title":"U.S.
   Military Academy Athletic Programs at West Point","popular_name":null,"agency":"Department
-  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.AVQ","permalink":"/program/G3.C.12.AVQ","title":"V22
+  of Defense","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"G3.C.12.CNJ","permalink":"/program/G3.C.12.CNJ","title":"UGM-96
+  TRIDENT MISSILE","popular_name":"UGM-96 TRIDENT","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.AVQ","permalink":"/program/G3.C.12.AVQ","title":"V22
   VERTICAL LIFT AIRCRAFT","popular_name":"V22 VERTICAL LIFT AIRCRAFT","agency":"Department
-  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.519","permalink":"/program/G3.C.12.519","title":"WIDE
+  of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.H71","permalink":"/program/G3.C.12.H71","title":"VEHICLE
+  PROTECTION SYSTEMS (VPS) SIGNATURE MANAGEMENT PAINT (SIGMAN)","popular_name":"VPS
+  SIGMAN","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.519","permalink":"/program/G3.C.12.519","title":"WIDE
   AREA SURVEILLANCE","popular_name":"WAS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"G3.C.12.552","permalink":"/program/G3.C.12.552","title":"WIDEBAND
   COMMUNICATIONS SERVICES","popular_name":"WCS","agency":"Department of Defense","total_obs":0.0,"program_type":"contracts"},{"cfda":"10.275","permalink":"/program/10.275","title":"Yellow
   Ribbon Reintegration Program and Youth Support Internship Program","popular_name":null,"agency":"Department
@@ -947,6 +1051,6 @@ programs: '[{"cfda":"G3.C.12.198","permalink":"/program/G3.C.12.198","title":"F-
 title: Defense Capability
 total_num_agencies: 7
 total_num_applicant_types: 50
-total_num_programs: 471
-total_obs: 130838207727.86006
+total_num_programs: 540
+total_obs: 130838207727.86003
 ---

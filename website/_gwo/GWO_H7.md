@@ -4,8 +4,18 @@ definition: Strengthening opportunities for individuals to gain the skills and c
   needed to secure, maintain, and advance in employment across industries.
 focus_area: Workforce Development
 gwo_id: GWO.H7
+largest_program:
+  expenditure_amount: 914282969.58
+  name: WIOA Youth Activities
+  permalink: /program/17.259
 permalink: /gwo/GWO_H7
+smallest_program:
+  expenditure_amount: -19926943.01
+  name: H-1B Job Training Grants
+  permalink: /program/17.268
 title: Foster Workforce Skill Development
+total_agencies: 12
+total_expenditure: 3605475636.67
 where_used:
 - agency: The Institute of Museum and Library Services
   expenditure_amount: 2499655.0

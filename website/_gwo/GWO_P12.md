@@ -4,8 +4,19 @@ definition: Protecting American interests against digital or cyber threats that 
   our networks, infrastructure, or workforce capabilities.
 focus_area: Cybersecurity
 gwo_id: GWO.P12
+largest_program:
+  expenditure_amount: 2714598797.66
+  name: Supply Chain Reimbursement Program
+  permalink: /program/32.010
 permalink: /gwo/GWO_P12
+smallest_program:
+  expenditure_amount: -3176.75
+  name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
+    Sharing
+  permalink: /program/93.835
 title: Harden Cyber Defenses
+total_agencies: 5
+total_expenditure: 3137282648.88
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

@@ -20,7 +20,7 @@ erDiagram
     program ||--o{ program_result : "has"
     program ||--o{ program_sam_spending : "has"
     program ||--o{ program_to_category : "belongs_to"
-    program ||--o{ program_to_gwo : "assigned_to"
+    program ||--o| program_to_gwo : "assigned_to"
     program ||--o{ program_to_pon : "assigned_to"
     program ||--o{ usaspending_assistance_obligation_aggregation : "aggregated"
     program ||--o{ usaspending_assistance_outlay_aggregation : "aggregated"
@@ -120,13 +120,13 @@ erDiagram
     }
     
     program_to_gwo {
-        TEXT program_id FK
+        TEXT program_id PK FK
         TEXT gwo_id FK
     }
     
     program_to_pon {
-        TEXT program_id FK
-        TEXT pon_id FK
+        TEXT program_id PK FK
+        TEXT pon_id PK FK
     }
     
     usaspending_assistance_obligation_aggregation {
@@ -177,7 +177,7 @@ erDiagram
     gwo ||--o{ program_to_gwo : "assigned_to"
     pon ||--o{ program_to_pon : "assigned_to"
     
-    program ||--o{ program_to_gwo : "assigned_to"
+    program ||--o| program_to_gwo : "assigned_to"
     program ||--o{ program_to_pon : "assigned_to"
     
     taxonomy_category {
@@ -284,6 +284,7 @@ erDiagram
 - **PK** = Primary Key
 - **FK** = Foreign Key
 - **||--o{** = One-to-Many relationship (one parent, many children)
+- **||--o|** = One-to-Zero-or-One relationship
 - **||--||** = One-to-One relationship
 - **}o--o{** = Many-to-Many relationship
 
@@ -295,7 +296,7 @@ erDiagram
 - One `program` can have many `program_result`s (by fiscal year)
 - One `program` can have many `program_sam_spending` records
 - One `program` can belong to many `category`s (via `program_to_category`)
-- One `program` can be assigned to many `gwo`s (via `program_to_gwo`)
+- One `program` can be assigned to at most one `gwo` (via `program_to_gwo`)
 - One `program` can be assigned to many `pon`s (via `program_to_pon`)
 - One `taxonomy_category` can contain many `taxonomy_focus_area`s
 - One `taxonomy_focus_area` can have many `gwo`s
@@ -307,7 +308,6 @@ erDiagram
 
 ### Many-to-Many Relationships
 - `program` ↔ `category` (via `program_to_category`)
-- `program` ↔ `gwo` (via `program_to_gwo`)
 - `program` ↔ `pon` (via `program_to_pon`)
 
 ## Notes
