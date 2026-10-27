@@ -3,8 +3,19 @@ category: Transportation
 definition: Protecting users of public transit systems across all modes of transportation.
 focus_area: Multi–modal Transportation
 gwo_id: GWO.T7
+largest_program:
+  expenditure_amount: 148500000.0
+  name: Passenger Rail Investment and Improvement (PRIIA)  Projects for Washington
+    Metropolitan Area Transit Authority (WMATA)
+  permalink: /program/20.524
 permalink: /gwo/GWO_T7
+smallest_program:
+  expenditure_amount: 0.0
+  name: Intercity Passenger Rail Program
+  permalink: /program/97.157
 title: Increase Safety of Public Transit
+total_agencies: 2
+total_expenditure: 199770069.0
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

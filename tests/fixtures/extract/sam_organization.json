@@ -1,0 +1,979 @@
+[
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100035122,
+          "name": "COMMERCE, DEPARTMENT OF",
+          "type": "DEPARTMENT",
+          "fullParentPath": "100035122",
+          "createdDate": "1996-07-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:04:45.675+00:00",
+          "fullParentPathName": "COMMERCE, DEPARTMENT OF",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Department of Commerce",
+          "tas2Code": "13",
+          "tas3Code": "13",
+          "fpdsCode": "1300",
+          "cfdaCode": "11",
+          "ombAgencyCode": "6",
+          "a11TacCode": "13",
+          "modStatus": "ACTIVE",
+          "cgac": "013",
+          "level": 1,
+          "fpdsOrgId": "1300",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100035122.jpg",
+          "l1ShortName": "DOC",
+          "cfdaBur": 0,
+          "cfdaOmb": 6,
+          "description": "The Department of Commerce encourages, serves, and promotes the Nation's international trade, economic growth, and technological advancement. The Department provides a wide variety of programs through the competitive free enterprise system. It offers assistance and information to increase America's competitiveness in the world economy; administers programs to prevent unfair foreign trade competition; provides social and economic statistics and analyses for business and government planners; provides research and support for the increased use of scientific, engineering, and technological development; works to improve our understanding and benefits of the Earth's physical environment and oceanic resources; grants patents and registers trademarks; develops policies and conducts research on telecommunications; provides assistance to promote domestic economic development; and assists in the growth of minority businesses.",
+          "shortName": "DOC",
+          "sourceCfdaPk": "eb778728054c2bb65dab9a6138e024c9",
+          "summary": "The Department of Commerce encourages, serves, and promotes the Nation's international trade, economic growth, and technological advancement. The Department provides a wide variety of programs through the competitive free enterprise system. It offers assistance and information to increase America's competitiveness in the world economy; administers programs to prevent unfair foreign trade competition; provides social and economic statistics and analyses for business and government planners; provides research and support for the increased use of scientific, engineering, and technological development; works to improve our understanding and benefits of the Earth's physical environment and oceanic resources; grants patents and registers trademarks; develops policies and conducts research on telecommunications; provides assistance to promote domestic economic development; and assists in the growth of minority businesses.",
+          "code": "013",
+          "categoryDesc": "DEPARTMENT",
+          "hasContracts": false,
+          "orgCode": "ORG-1072",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272456,
+              "org_key": 100035122,
+              "street_address": "",
+              "street_address_2": null,
+              "city": "",
+              "state": "",
+              "zipcode": "",
+              "country_code": "US",
+              "created_by": "bb863595cd3aee02b74b10d5ca46fe94",
+              "created_date": "2008-04-22T13:49:39",
+              "last_modified_by": "036016aa5b797617c6023036f5c2df78",
+              "last_modified_date": "2015-10-08T16:04:24",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100035122,
+              "legacy_id": "eb778728054c2bb65dab9a6138e024c9",
+              "legacy_name": "COMMERCE, DEPARTMENT OF",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4518,
+              "source": null
+            },
+            {
+              "org_key": 100035122,
+              "legacy_id": "eb778728054c2bb65dab9a6138e024c9",
+              "legacy_name": "COMMERCE, DEPARTMENT OF",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1326,
+              "source": null
+            }
+          ],
+          "l1Name": "COMMERCE, DEPARTMENT OF",
+          "l1OrgKey": 100035122,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100035122"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100035122.jpg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100109529,
+          "name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+          "type": "AGENCY",
+          "parentOrgKey": 100035122,
+          "fullParentPath": "100035122.100109529",
+          "createdDate": "2004-03-20T05:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_CIV_AGENCY_START_DATE_FIX",
+          "lastModifiedDate": "2019-09-14T23:19:47.406+00:00",
+          "fullParentPathName": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+          "startDate": "1978-10-01T04:00:00.000+00:00",
+          "agencyName": "National Institute of Standards and Technology (NIST)",
+          "fpdsCode": "1341",
+          "cfdaCode": "11",
+          "a11TacCode": "55",
+          "modStatus": "ACTIVE",
+          "cgac": "013",
+          "level": 2,
+          "fpdsOrgId": "1341",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100109529.bmp",
+          "l1ShortName": "DOC",
+          "ombBureauCode": " 55",
+          "cfdaBur": 55,
+          "cfdaOmb": 6,
+          "description": "The NIST mission is to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. Since 1901, NIST, a non-regulatory agency, has been supplying the measurements and tools\u2014from standardized high-precision gage blocks needed to manufacture interchangeable parts to the world\u2019s most accurate atomic clock\u2014to help U.S. industry compete successfully through innovation. Over the last few decades, NIST has been assigned important new roles and responsibilities, including awarding competitive grants to foster development of promising, high-risk technologies; diffusing advanced technologies and business practices to smaller manufacturers; and promoting quality management methods in key sectors.  Old and new, all NIST programs support the nation\u2019s agility, innovation, and competitiveness./nNIST Laboratory Program - For more than 100 years, NIST has maintained the national standards of measurement, a role that the U.S. Constitution assigns to the Federal Government. Today, the NIST Laboratories address increasingly complex measurement challenges. For example, NIST develops measurements focusing on the very small (e.g., nanotechnology devices) and the very large (e.g., skyscrapers), the physical\u2014methods for characterizing strands of DNA for forensic testing and the virtual\u2014methods for testing electronic health record systems, and tests the performance of walk-through metal detectors. The NIST Laboratories work at the frontiers of measurement science to ensure that the U.S. system of measurements is firmly grounded on a sound scientific and technical foundation. NIST promotes the use of measurements based on the international system of units (SI). The measurement science research at NIST is useful to all science and engineering disciplines. The NIST Laboratories work to assure that the U.S. realization of the basic and derived measurement units is consistent with the realization in other nations. NIST Laboratories engage in a number of international activities to support trade and global science, and to promote the international acceptance of U.S. measurement standards. The NIST Laboratories provide industry and academia with unique user facilities that support innovation in materials science, nanotechnology, and other emerging technology areas through the NIST Center for Neutron Research, which provides world class neutron measurement capabilities to the U.S. research community, and the NIST Center for Nanoscale Science and Technology, which supports nanotechnology development from discovery to production. The NIST Laboratories also support the development of standards and specifications that define technical and performance requirements for goods and services. These standards\u2014also known as documentary standards\u2014are often developed collaboratively with the private sector through an open, consensus-based process. NIST scientists and engineers lend their expertise to these efforts in order to promote standards that are based on sound science, and to ensure that the standards are supported by effective measurements and testing methods for conformity. In addition, NIST is designated under the National Technology Transfer Advancement Act (NTTAA) as the coordinator for all Federal agencies using documentary standards that are developed by private-sector consensus bodies to carry out their policy objectives./nInnovation and Industry Services Hollings Manufacturing Extension Partnership - Through partnerships between Federal and state governments and non-profit organizations, NIST\u2019s Hollings Manufacturing Extension Partnership (MEP) provides technical and business assistance to smaller manufacturers through a nationwide network in all 50 states and Puerto Rico. Field agents and programs are helping manufacturers understand, adopt, and apply new technologies and business practices, as well as reap the benefits through increased productivity, better performance, cost savings, waste reduction, and creation and retention of manufacturing jobs. MEP acts as a strategic advisor to promote business growth and innovation and to connect manufacturers to public and private resources essential for increased profitability and competitiveness in the global marketplace./nTechnology Innovation Program (TIP) - The TIP statute originated in the America Creating Opportunities to Meaningfully Promote Excellence in Technology, Education, and Sciences (COMPETES) Act of 2007 (P.L. 110-69). The COMPETES Act was recently reauthorized as the America COMPETES Reauthorization Act of 2010 (P.L. 111-358).   TIP was established to help U.S. businesses, institutions of higher education, and other organizations\u2014such as national laboratories and nonprofit research institutes\u2014to support, promote, and accelerate innovation in the United States through high-risk, high-reward research in areas of critical national need.    The final FY 2012 appropriations did not provide funding for TIP.  The program is currently implementing an orderly close down of the program. /nBaldrige Performance Excellence Program (BPEP) - NIST\u2019s Baldrige Performance Excellence Program (BPEP) provides global leadership in the learning and sharing of successful strategies and performance practices, principles, and methodologies to strengthen U.S. organizations. The program promotes organizational excellence through education, outreach, and an annual Presidential awards program. The Baldrige Award is given to organizations in six categories: manufacturing, service, small business, health care, education, and nonprofit. BPEP works closely with these organizations to recognize and disseminate proven best practices for management and operation, leading to organizations that are more strategic, innovative, competitive, and effective. BPEP also takes advantage of more than 20 years worth of learning from Baldrige Award recipients to identify strategies and practices that are most likely to strengthen the performance and competitiveness of U.S. industry and other organizations.  /n",
+          "shortName": "NIST",
+          "sourceCfdaPk": "7faa9909ffacb9b5e70c1c393f9ee720",
+          "sourceParentCfdaPk": "eb778728054c2bb65dab9a6138e024c9",
+          "summary": "The NIST mission is to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. Since 1901, NIST, a non-regulatory agency, has been supplying the measurements and tools\u2014from standardized high-precision gage blocks needed to manufacture interchangeable parts to the world\u2019s most accurate atomic clock\u2014to help U.S. industry compete successfully through innovation. Over the last few decades, NIST has been assigned important new roles and responsibilities, including awarding competitive grants to foster development of promising, high-risk technologies; diffusing advanced technologies and business practices to smaller manufacturers; and promoting quality management methods in key sectors.  Old and new, all NIST programs support the nation\u2019s agility, innovation, and competitiveness./nNIST Laboratory Program - For more than 100 years, NIST has maintained the national standards of measurement, a role that the U.S. Constitution assigns to the Federal Government. Today, the NIST Laboratories address increasingly complex measurement challenges. For example, NIST develops measurements focusing on the very small (e.g., nanotechnology devices) and the very large (e.g., skyscrapers), the physical\u2014methods for characterizing strands of DNA for forensic testing and the virtual\u2014methods for testing electronic health record systems, and tests the performance of walk-through metal detectors. The NIST Laboratories work at the frontiers of measurement science to ensure that the U.S. system of measurements is firmly grounded on a sound scientific and technical foundation. NIST promotes the use of measurements based on the international system of units (SI). The measurement science research at NIST is useful to all science and engineering disciplines. The NIST Laboratories work to assure that the U.S. realization of the basic and derived measurement units is consistent with the realization in other nations. NIST Laboratories engage in a number of international activities to support trade and global science, and to promote the international acceptance of U.S. measurement standards. The NIST Laboratories provide industry and academia with unique user facilities that support innovation in materials science, nanotechnology, and other emerging technology areas through the NIST Center for Neutron Research, which provides world class neutron measurement capabilities to the U.S. research community, and the NIST Center for Nanoscale Science and Technology, which supports nanotechnology development from discovery to production. The NIST Laboratories also support the development of standards and specifications that define technical and performance requirements for goods and services. These standards\u2014also known as documentary standards\u2014are often developed collaboratively with the private sector through an open, consensus-based process. NIST scientists and engineers lend their expertise to these efforts in order to promote standards that are based on sound science, and to ensure that the standards are supported by effective measurements and testing methods for conformity. In addition, NIST is designated under the National Technology Transfer Advancement Act (NTTAA) as the coordinator for all Federal agencies using documentary standards that are developed by private-sector consensus bodies to carry out their policy objectives./nInnovation and Industry Services Hollings Manufacturing Extension Partnership - Through partnerships between Federal and state governments and non-profit organizations, NIST\u2019s Hollings Manufacturing Extension Partnership (MEP) provides technical and business assistance to smaller manufacturers through a nationwide network in all 50 states and Puerto Rico. Field agents and programs are helping manufacturers understand, adopt, and apply new technologies and business practices, as well as reap the benefits through increased productivity, better performance, cost savings, waste reduction, and creation and retention of manufacturing jobs. MEP acts as a strategic advisor to promote business growth and innovation and to connect manufacturers to public and private resources essential for increased profitability and competitiveness in the global marketplace./nTechnology Innovation Program (TIP) - The TIP statute originated in the America Creating Opportunities to Meaningfully Promote Excellence in Technology, Education, and Sciences (COMPETES) Act of 2007 (P.L. 110-69). The COMPETES Act was recently reauthorized as the America COMPETES Reauthorization Act of 2010 (P.L. 111-358).   TIP was established to help U.S. businesses, institutions of higher education, and other organizations\u2014such as national laboratories and nonprofit research institutes\u2014to support, promote, and accelerate innovation in the United States through high-risk, high-reward research in areas of critical national need.    The final FY 2012 appropriations did not provide funding for TIP.  The program is currently implementing an orderly close down of the program. /nBaldrige Performance Excellence Program (BPEP) - NIST\u2019s Baldrige Performance Excellence Program (BPEP) provides global leadership in the learning and sharing of successful strategies and performance practices, principles, and methodologies to strengthen U.S. organizations. The program promotes organizational excellence through education, outreach, and an annual Presidential awards program. The Baldrige Award is given to organizations in six categories: manufacturing, service, small business, health care, education, and nonprofit. BPEP works closely with these organizations to recognize and disseminate proven best practices for management and operation, leading to organizations that are more strategic, innovative, competitive, and effective. BPEP also takes advantage of more than 20 years worth of learning from Baldrige Award recipients to identify strategies and practices that are most likely to strengthen the performance and competitiveness of U.S. industry and other organizations.  /n",
+          "code": "1341",
+          "categoryDesc": "AGENCY",
+          "hasContracts": false,
+          "codeHierarchy": "1300.1341",
+          "orgCode": "ORG-2212",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272426,
+              "org_key": 100109529,
+              "street_address": "",
+              "street_address_2": null,
+              "city": "",
+              "state": "",
+              "zipcode": "",
+              "country_code": "US",
+              "created_by": "1125d89c272cdf8459b8e1946727a25c",
+              "created_date": "2012-07-20T18:10:04",
+              "last_modified_by": "1125d89c272cdf8459b8e1946727a25c",
+              "last_modified_date": "2012-07-20T18:10:04",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100109529,
+              "legacy_id": "7faa9909ffacb9b5e70c1c393f9ee720",
+              "legacy_name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1431,
+              "source": null
+            },
+            {
+              "org_key": 100109529,
+              "legacy_id": "7faa9909ffacb9b5e70c1c393f9ee720",
+              "legacy_name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4596,
+              "source": null
+            }
+          ],
+          "parentOrg": "COMMERCE, DEPARTMENT OF",
+          "l1Name": "COMMERCE, DEPARTMENT OF",
+          "l2Name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+          "l1OrgKey": 100035122,
+          "l2OrgKey": 100109529,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100109529"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100109529.bmp"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100000391,
+          "name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+          "type": "DEPARTMENT",
+          "fullParentPath": "100000391",
+          "createdDate": "1996-07-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:04:45.675+00:00",
+          "fullParentPathName": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Department of Housing and Urban Development",
+          "tas2Code": "86",
+          "tas3Code": "86",
+          "fpdsCode": "8600",
+          "cfdaCode": "14",
+          "ombAgencyCode": "25",
+          "a11TacCode": "86",
+          "modStatus": "ACTIVE",
+          "cgac": "086",
+          "level": 1,
+          "fpdsOrgId": "8600",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100000391.bmp",
+          "l1ShortName": "HUD",
+          "cfdaBur": 0,
+          "cfdaOmb": 25,
+          "description": "The Assistant Secretary for Housing-Federal Housing Commissioner directs the Department's housing functions.  He or she oversees aid for the construction and financing of new and rehabilitated housing and the preservation of existing housing.  The Assistant Secretary is responsible for:  Underwriting single family, multifamily, property improvement, and manufactured home loans; administering special purpose programs designed specifically for the elderly, the handicapped, and the chronically mentally ill; administering assisted housing programs for low-income families who are experiencing difficulties affording standard housing; administering grants to fund resident ownership of multifamily housing properties; protecting consumers against fraudulent practices of land developers and promoters, and administering housing development grants, where HUD provides grants to cities, urban counties, and States acting on behalf of local governments to support the development of rental housing in areas with severe rental housing shortages.  Grantees use the HUD funds to provide capital grants or loans, interest-reduction payments, rental subsidies, or other types of assistance to facilitate the construction or substantial rehabilitation of rental projects by private owners. The Assistant Secretary for Community Planning and Development administers the grant programs that help communities plan and finance their growth and development, increase their capacity to govern, and provide shelter and services for homeless people.  In addition, the Assistant Secretary is responsible for: Community Development Block Grant (CDBG) Programs for Entitlement Communities, States and HUD- administered Small Cities, Section 108 Community Development Loan Guarantees, and Special Purpose Grants for Insular Areas, Historically Black Colleges and Universities, and Technical Assistance; Home Investment in Affordable Housing (HOME), providing Federal assistance for use by participating jurisdictions or Indian tribes for housing rehabilitation, tenant-based assistance, assistance to first time homebuyers and new construction when a jurisdiction is determined to need new rental housing; the Department's programs to address homelessness, including the Supportive Housing Program (Transitional Housing and Permanent Housing components), Shelter Plus Care, Surplus Property for Use to Assist the Homeless, Section 8 Moderate Rehabilitation Single Room Occupancy (SRO) Program, Housing Opportunities for Persons with AIDS, and Emergency Shelter Grants; The Youthbuild Program to provide opportunities and assistance to very low-income young adults who have dropped out of high school; Consolidated Plans; and Empowerment Zones and Enterprise Communities. The Assistant Secretary for Public and Indian Housing (PIH) directs the Department's low-income public housing program.  This program provides funds for the development, operation, and modernization of public housing, including such housing for American Indians.  It also promotes resident management and ownership of public housing.  PIH administers Public and Indian Housing Programs, including rental and homeownership programs and provides technical and financial assistance in planning, developing, and managing low-income projects; provides operating subsidies for Public Housing Agencies (PHAs) and Indian Housing Authorities (IHAs), including procedures for the review of the management of PHAs and IHAs; administers the Capital Fund Program for the modernization of low-income housing projects to upgrade living conditions, correct physical deficiencies, and achieve operating efficiency and economy; administers the Resident Initiatives Program for resident participation, resident management; homeownership, economic development and supportive services, and drug-free neighborhood programs; implements and monitors program requirements related to program eligibility and admission of families to public and assisted housing, tenant income and rent requirements pertaining to continued occupancy; administers the HOPE VI and Vacancy Reductions Programs; administers the Section 8 Housing Choice Vouchers Program and the Moderate Rehabilitation Program; coordinates all departmental housing and community development programs for Indian and Alaska Natives; and awards grants to PHAs and IHAs for the construction, acquisition and operations of Public and Indian Housing Projects. The Office is responsible for: Increasing awareness of the public and building industry of the dangers of lead-based paint poisoning and the options for detection, risk reduction, and abatement; encouraging the development of safer, more effective, and less costly methods for detection, risk reduction, and abatement; encouraging State and local governments to develop lead-based paint programs covering primary prevention, public education, certification of contractors, hazard reduction, financing, and enforcement.",
+          "shortName": "HUD",
+          "sourceCfdaPk": "00b2effb6012d0963a180ef3a7374f13",
+          "summary": "The Assistant Secretary for Housing-Federal Housing Commissioner directs the Department's housing functions.  He or she oversees aid for the construction and financing of new and rehabilitated housing and the preservation of existing housing.  The Assistant Secretary is responsible for:  Underwriting single family, multifamily, property improvement, and manufactured home loans; administering special purpose programs designed specifically for the elderly, the handicapped, and the chronically mentally ill; administering assisted housing programs for low-income families who are experiencing difficulties affording standard housing; administering grants to fund resident ownership of multifamily housing properties; protecting consumers against fraudulent practices of land developers and promoters, and administering housing development grants, where HUD provides grants to cities, urban counties, and States acting on behalf of local governments to support the development of rental housing in areas with severe rental housing shortages.  Grantees use the HUD funds to provide capital grants or loans, interest-reduction payments, rental subsidies, or other types of assistance to facilitate the construction or substantial rehabilitation of rental projects by private owners. The Assistant Secretary for Community Planning and Development administers the grant programs that help communities plan and finance their growth and development, increase their capacity to govern, and provide shelter and services for homeless people.  In addition, the Assistant Secretary is responsible for: Community Development Block Grant (CDBG) Programs for Entitlement Communities, States and HUD- administered Small Cities, Section 108 Community Development Loan Guarantees, and Special Purpose Grants for Insular Areas, Historically Black Colleges and Universities, and Technical Assistance; Home Investment in Affordable Housing (HOME), providing Federal assistance for use by participating jurisdictions or Indian tribes for housing rehabilitation, tenant-based assistance, assistance to first time homebuyers and new construction when a jurisdiction is determined to need new rental housing; the Department's programs to address homelessness, including the Supportive Housing Program (Transitional Housing and Permanent Housing components), Shelter Plus Care, Surplus Property for Use to Assist the Homeless, Section 8 Moderate Rehabilitation Single Room Occupancy (SRO) Program, Housing Opportunities for Persons with AIDS, and Emergency Shelter Grants; The Youthbuild Program to provide opportunities and assistance to very low-income young adults who have dropped out of high school; Consolidated Plans; and Empowerment Zones and Enterprise Communities. The Assistant Secretary for Public and Indian Housing (PIH) directs the Department's low-income public housing program.  This program provides funds for the development, operation, and modernization of public housing, including such housing for American Indians.  It also promotes resident management and ownership of public housing.  PIH administers Public and Indian Housing Programs, including rental and homeownership programs and provides technical and financial assistance in planning, developing, and managing low-income projects; provides operating subsidies for Public Housing Agencies (PHAs) and Indian Housing Authorities (IHAs), including procedures for the review of the management of PHAs and IHAs; administers the Capital Fund Program for the modernization of low-income housing projects to upgrade living conditions, correct physical deficiencies, and achieve operating efficiency and economy; administers the Resident Initiatives Program for resident participation, resident management; homeownership, economic development and supportive services, and drug-free neighborhood programs; implements and monitors program requirements related to program eligibility and admission of families to public and assisted housing, tenant income and rent requirements pertaining to continued occupancy; administers the HOPE VI and Vacancy Reductions Programs; administers the Section 8 Housing Choice Vouchers Program and the Moderate Rehabilitation Program; coordinates all departmental housing and community development programs for Indian and Alaska Natives; and awards grants to PHAs and IHAs for the construction, acquisition and operations of Public and Indian Housing Projects. The Office is responsible for: Increasing awareness of the public and building industry of the dangers of lead-based paint poisoning and the options for detection, risk reduction, and abatement; encouraging the development of safer, more effective, and less costly methods for detection, risk reduction, and abatement; encouraging State and local governments to develop lead-based paint programs covering primary prevention, public education, certification of contractors, hazard reduction, financing, and enforcement.",
+          "code": "086",
+          "categoryDesc": "DEPARTMENT",
+          "hasContracts": false,
+          "orgCode": "ORG-1063",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272388,
+              "org_key": 100000391,
+              "street_address": "",
+              "street_address_2": null,
+              "city": "",
+              "state": "",
+              "zipcode": "",
+              "country_code": "US",
+              "created_by": "bb863595cd3aee02b74b10d5ca46fe94",
+              "created_date": "2008-04-22T14:21:10",
+              "last_modified_by": "036016aa5b797617c6023036f5c2df78",
+              "last_modified_date": "2015-10-08T15:58:33",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100000391,
+              "legacy_id": "00b2effb6012d0963a180ef3a7374f13",
+              "legacy_name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4528,
+              "source": null
+            },
+            {
+              "org_key": 100000391,
+              "legacy_id": "00b2effb6012d0963a180ef3a7374f13",
+              "legacy_name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1477,
+              "source": null
+            }
+          ],
+          "l1Name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+          "l1OrgKey": 100000391,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100000391"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100000391.bmp"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100052551,
+          "name": "ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+          "type": "AGENCY",
+          "parentOrgKey": 100000391,
+          "fullParentPath": "100000391.100052551",
+          "createdBy": "MIGRATOR",
+          "createdDate": "2003-11-20T05:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_CIV_AGENCY_START_DATE_FIX",
+          "lastModifiedDate": "2019-09-14T23:19:49.849+00:00",
+          "fullParentPathName": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF.ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+          "startDate": "1978-10-15T04:00:00.000+00:00",
+          "fpdsCode": "8635",
+          "modStatus": "ACTIVE",
+          "cgac": "086",
+          "level": 2,
+          "fpdsOrgId": "8635",
+          "l1ShortName": "HUD",
+          "description": "ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+          "sourceParentCfdaPk": "00b2effb6012d0963a180ef3a7374f13",
+          "summary": "ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+          "code": "8635",
+          "categoryDesc": "AGENCY",
+          "hasContracts": false,
+          "codeHierarchy": "8600.8635",
+          "orgCode": "ORG-1832",
+          "hierarchy": [],
+          "parentOrg": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+          "l1Name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+          "l2Name": "ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+          "l1OrgKey": 100000391,
+          "l2OrgKey": 100052551,
+          "links": [],
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100052551"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100000000,
+          "name": "DEPT OF DEFENSE",
+          "type": "DEPARTMENT",
+          "fullParentPath": "100000000",
+          "createdDate": "2006-04-14T04:00:00.000+00:00",
+          "lastModifiedBy": "fpds subtier maj/sub command sync",
+          "lastModifiedDate": "2023-09-13T00:40:49.803+00:00",
+          "fullParentPathName": "DEPT OF DEFENSE",
+          "agencyName": "Department of Defense",
+          "fpdsCode": "9700",
+          "cfdaCode": "12",
+          "modStatus": "ACTIVE",
+          "cgac": "097",
+          "level": 1,
+          "fpdsOrgId": "9700",
+          "l1ShortName": "DOD",
+          "cfdaBur": 0,
+          "cfdaOmb": 7,
+          "description": "Principal advisor to the Under Secretary of Defense (Policy) and the Secretary of Defense on national security strategy and defense strategy and in the requirements, forces and contingency plans necessary to implement those strategies. Civil functions of the Department of the Army include the Civil Works Program, the administration of Arlington and Soldiers' Home National Cemeteries, and other related matters.  The Army's Civil Works Program, a responsibility of the Corps of Engineers is the Nation's major Federal water resources development activity and involves engineering works such as major dams, reservoirs, levees, harbors, waterways, locks, and many other types of structures.  These works provide flood protection for cities and major river valleys, reduce the cost of transportation, supply water for municipal and industrial use, generate hydroelectric power, provide recreational opportunities for vast numbers of people, regulate the rivers for many purposes including the improvement of water quality and the enhancement of fish and wildlife, protect the shores of the oceans and lakes, and provide still other types of benefits.  Planning assistance is also provided to States and other nonfederal entities for the comprehensive management of water resources, including pollution abatement works.  In addition, through the Civil Works Program the Federal government protects the navigable waters of the United States under legislation empowering the Secretary of the Army to prohibit activities which would reduce the value of such waters to the Nation.  Includes two lead offices: the Office of Naval Research and the Office of Naval Technology. The Chief of Naval Research is responsible for the Department of Navy Research (6.1) and Exploratory Development (6.2) Programs.  The Chief of Naval Research is responsible to the Secretary of the Navy through the Assistant Secretary (Research, Engineering and Systems) and is a principal adviser to the latter.  The Chief of Naval Research is also responsible for providing leadership, management, and direction to the Department of Navy research and exploratory development programs and other research, development, technology, and equipment programs assigned to and conducted by the Office of the Chief of Naval Research; developing and formulating viable and responsive naval research and technology requirements based on current and projected Navy and Marine Corps long-range objectives and considerations of national security; and coordinating naval research and promoting cooperative research efforts within the Department of the Navy with other elements of the Department of Defense, National Science Foundation, National Aeronautics and Space Administration, Department of Energy, and other government research groups.  The Office of Naval Research also conducts research in conjunction with the research and development conducted by other Department of Navy activities, coordinates the Naval Basic Research Program, and conducts a contract management program with educational institutions in support of all Federal agencies.  The Office of Naval Technology, established in October 1980, manages the Department of Navy's Exploratory Development (6.2) Program, assessing, planning, programming, budgeting, directing, and monitoring the program, and manages the oversight activities in regard to the Industrial Independent Research and Development Program. The Secretary's responsibilities include matters pertaining to organization, training, logistical support, maintenance, welfare of personnel, administrative, recruiting, research and development, and other activities prescribed by the President or the Secretary of Defense.  The principal assistant to the Secretary is the Under Secretary, who acts with the full authority of the Secretary on all affairs of the Department.  The Air Force Materiel Command researches, develops, tests, acquires, delivers, and logistically supports every Air Force weapons system.  It has responsibilities from inception of a weapons system through its operational life and final disposition.  The Air Force Materiel Command operates major product centers, logistics centers, test centers, and laboratories.  It was created in July 1992 through the integration of the Air Force Logistics Command and the Air Force Systems Command. The Defense Advanced Research Projects Agency is a separately organized agency within the Department of Defense under a Director appointed by the Secretary of Defense.  The Agency engages in advanced, basic, and applied research and development projects essential to the Department of Defense, and conducts prototype projects that embody technology that may be incorporated into joint programs, programs in support of deployed U.S. forces, or selected Military Department programs and, on request, assists the Military Departments in their prototype efforts.  In this regard, the Agency arranges, manages, and directs the performance of work connected with assigned advanced projects by the Military Departments, other government agencies, individuals, private business entities, as appropriate; recommends through the Under Secretary of Defense for Acquisition to the Secretary of Defense assignment of advanced projects to the Agency; keeps the Under Secretary, the Organization of Joint Chiefs of Staff, the Military Departments, and other Department of Defense agencies informed on significant new developments and technological advances within assigned projects; and performs other such functions as the Secretary of Defense or the Under Secretary may assign.",
+          "shortName": "DOD",
+          "sourceCfdaPk": "808c942c5a840df8cb96604f8883eafb",
+          "summary": "Principal advisor to the Under Secretary of Defense (Policy) and the Secretary of Defense on national security strategy and defense strategy and in the requirements, forces and contingency plans necessary to implement those strategies. Civil functions of the Department of the Army include the Civil Works Program, the administration of Arlington and Soldiers' Home National Cemeteries, and other related matters.  The Army's Civil Works Program, a responsibility of the Corps of Engineers is the Nation's major Federal water resources development activity and involves engineering works such as major dams, reservoirs, levees, harbors, waterways, locks, and many other types of structures.  These works provide flood protection for cities and major river valleys, reduce the cost of transportation, supply water for municipal and industrial use, generate hydroelectric power, provide recreational opportunities for vast numbers of people, regulate the rivers for many purposes including the improvement of water quality and the enhancement of fish and wildlife, protect the shores of the oceans and lakes, and provide still other types of benefits.  Planning assistance is also provided to States and other nonfederal entities for the comprehensive management of water resources, including pollution abatement works.  In addition, through the Civil Works Program the Federal government protects the navigable waters of the United States under legislation empowering the Secretary of the Army to prohibit activities which would reduce the value of such waters to the Nation.  Includes two lead offices: the Office of Naval Research and the Office of Naval Technology. The Chief of Naval Research is responsible for the Department of Navy Research (6.1) and Exploratory Development (6.2) Programs.  The Chief of Naval Research is responsible to the Secretary of the Navy through the Assistant Secretary (Research, Engineering and Systems) and is a principal adviser to the latter.  The Chief of Naval Research is also responsible for providing leadership, management, and direction to the Department of Navy research and exploratory development programs and other research, development, technology, and equipment programs assigned to and conducted by the Office of the Chief of Naval Research; developing and formulating viable and responsive naval research and technology requirements based on current and projected Navy and Marine Corps long-range objectives and considerations of national security; and coordinating naval research and promoting cooperative research efforts within the Department of the Navy with other elements of the Department of Defense, National Science Foundation, National Aeronautics and Space Administration, Department of Energy, and other government research groups.  The Office of Naval Research also conducts research in conjunction with the research and development conducted by other Department of Navy activities, coordinates the Naval Basic Research Program, and conducts a contract management program with educational institutions in support of all Federal agencies.  The Office of Naval Technology, established in October 1980, manages the Department of Navy's Exploratory Development (6.2) Program, assessing, planning, programming, budgeting, directing, and monitoring the program, and manages the oversight activities in regard to the Industrial Independent Research and Development Program. The Secretary's responsibilities include matters pertaining to organization, training, logistical support, maintenance, welfare of personnel, administrative, recruiting, research and development, and other activities prescribed by the President or the Secretary of Defense.  The principal assistant to the Secretary is the Under Secretary, who acts with the full authority of the Secretary on all affairs of the Department.  The Air Force Materiel Command researches, develops, tests, acquires, delivers, and logistically supports every Air Force weapons system.  It has responsibilities from inception of a weapons system through its operational life and final disposition.  The Air Force Materiel Command operates major product centers, logistics centers, test centers, and laboratories.  It was created in July 1992 through the integration of the Air Force Logistics Command and the Air Force Systems Command. The Defense Advanced Research Projects Agency is a separately organized agency within the Department of Defense under a Director appointed by the Secretary of Defense.  The Agency engages in advanced, basic, and applied research and development projects essential to the Department of Defense, and conducts prototype projects that embody technology that may be incorporated into joint programs, programs in support of deployed U.S. forces, or selected Military Department programs and, on request, assists the Military Departments in their prototype efforts.  In this regard, the Agency arranges, manages, and directs the performance of work connected with assigned advanced projects by the Military Departments, other government agencies, individuals, private business entities, as appropriate; recommends through the Under Secretary of Defense for Acquisition to the Secretary of Defense assignment of advanced projects to the Agency; keeps the Under Secretary, the Organization of Joint Chiefs of Staff, the Military Departments, and other Department of Defense agencies informed on significant new developments and technological advances within assigned projects; and performs other such functions as the Secretary of Defense or the Under Secretary may assign.",
+          "code": "097",
+          "categoryDesc": "DEPARTMENT",
+          "hasContracts": false,
+          "orgCode": "ORG-1144",
+          "hierarchy": [],
+          "orgLegacyList": [
+            {
+              "org_key": 100000000,
+              "legacy_id": "808c942c5a840df8cb96604f8883eafb",
+              "legacy_name": "DEPARTMENT OF DEFENSE",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4495,
+              "source": null
+            },
+            {
+              "org_key": 100000000,
+              "legacy_id": "808c942c5a840df8cb96604f8883eafb",
+              "legacy_name": "DEPARTMENT OF DEFENSE",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1438,
+              "source": null
+            },
+            {
+              "org_key": 100000000,
+              "legacy_id": "a3c4374e2851836aa07fee50d149c78a",
+              "legacy_name": "Other Defense Agencies",
+              "created_by": "nithin.john-emanuel@gsa.gov",
+              "created_date": "2019-10-23T16:49:47.066258",
+              "last_modified_by": "nithin.john-emanuel@gsa.gov",
+              "last_modified_date": "2019-10-23T16:49:47.066258",
+              "legacy_system_name": "FBO",
+              "legacy_key": 7017,
+              "source": "LEGACY_OFFICES_FBO_DODPARTII.xls"
+            }
+          ],
+          "l1Name": "DEPT OF DEFENSE",
+          "l1OrgKey": 100000000,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100000000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 300000427,
+          "name": "WASHINGTON HEADQUARTERS SERVICES (WHS)",
+          "type": "AGENCY",
+          "parentOrgKey": 100000000,
+          "fullParentPath": "100000000.300000427",
+          "createdBy": "IAE_DATA_TEAM",
+          "createdDate": "2017-10-11T18:09:07.155+00:00",
+          "lastModifiedBy": "FPDS_DOD_AGENCY_SDATE_FIX",
+          "lastModifiedDate": "2019-09-14T23:02:09.549+00:00",
+          "fullParentPathName": "DEPT OF DEFENSE.WASHINGTON HEADQUARTERS SERVICES (WHS)",
+          "startDate": "1978-10-01T04:00:00.000+00:00",
+          "fpdsCode": "97F5",
+          "modStatus": "ACTIVE",
+          "cgac": "097",
+          "level": 2,
+          "l1ShortName": "DOD",
+          "shortName": "WHS",
+          "code": "97F5",
+          "hasContracts": false,
+          "codeHierarchy": "9700.97F5",
+          "hierarchy": [],
+          "parentOrg": "DEPT OF DEFENSE",
+          "l1Name": "DEPT OF DEFENSE",
+          "l2Name": "WASHINGTON HEADQUARTERS SERVICES (WHS)",
+          "l1OrgKey": 100000000,
+          "l2OrgKey": 300000427,
+          "links": []
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/300000427"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100004222,
+          "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "type": "DEPARTMENT",
+          "fullParentPath": "100004222",
+          "createdDate": "1996-07-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:04:45.675+00:00",
+          "fullParentPathName": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Department of Health and Human Services",
+          "tas2Code": "75",
+          "tas3Code": "75",
+          "fpdsCode": "7500",
+          "cfdaCode": "93",
+          "ombAgencyCode": "9",
+          "a11TacCode": "75",
+          "modStatus": "ACTIVE",
+          "cgac": "075",
+          "level": 1,
+          "fpdsOrgId": "7500",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100004222.jpg",
+          "l1ShortName": "HHS",
+          "cfdaBur": 0,
+          "cfdaOmb": 9,
+          "description": "The Secretary of HHS advises the President on health, welfare, and income security plans, policies, and programs of the Federal government. The Secretary administers these functions through the Office of the Secretary and the Department's 11 operating divisions, including a budget of $460 billion and a workforce of 65,000 employees.  Supports cross-cutting research on health care systems, health care quality and cost issues, and effectiveness of medical treatments. Provides a system of health surveillance to monitor and prevent the outbreak of diseases.  With the assistance of States and other partners, CDC guards against international disease transmission, maintains national health statistics and provides for immunization services, and supports research into disease and injury prevention. Supports a network of 37 hospitals, 60 health centers, 3 school health centers, 46 health stations and 34 urban Indian health centers to provide services to nearly 1.5 million American Indians and Alaska Natives of 557 federally recognized tribes.  Administers the Medicare and Medicaid programs, that provide health care to America's aged and indigenous populations.  About one in every four Americans, including nearly 18 million children and nursing homes for low-income elderly persons are covered.  CMS also administers the new Children's Health Insurance Program through approved State plans that cover more than 2.2 million children.",
+          "shortName": "HHS",
+          "sourceCfdaPk": "0bebbc3b3261e255dc82002b83094717",
+          "summary": "The Secretary of HHS advises the President on health, welfare, and income security plans, policies, and programs of the Federal government. The Secretary administers these functions through the Office of the Secretary and the Department's 11 operating divisions, including a budget of $460 billion and a workforce of 65,000 employees.  Supports cross-cutting research on health care systems, health care quality and cost issues, and effectiveness of medical treatments. Provides a system of health surveillance to monitor and prevent the outbreak of diseases.  With the assistance of States and other partners, CDC guards against international disease transmission, maintains national health statistics and provides for immunization services, and supports research into disease and injury prevention. Supports a network of 37 hospitals, 60 health centers, 3 school health centers, 46 health stations and 34 urban Indian health centers to provide services to nearly 1.5 million American Indians and Alaska Natives of 557 federally recognized tribes.  Administers the Medicare and Medicaid programs, that provide health care to America's aged and indigenous populations.  About one in every four Americans, including nearly 18 million children and nursing homes for low-income elderly persons are covered.  CMS also administers the new Children's Health Insurance Program through approved State plans that cover more than 2.2 million children.",
+          "code": "075",
+          "categoryDesc": "DEPARTMENT",
+          "hasContracts": false,
+          "orgCode": "ORG-1067",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272393,
+              "org_key": 100004222,
+              "street_address": "Hubert H. Humphrey Building 200 Independence Avenue, SW ",
+              "street_address_2": null,
+              "city": "Washington",
+              "state": "DC",
+              "zipcode": "20201",
+              "country_code": "US",
+              "created_by": "bb863595cd3aee02b74b10d5ca46fe94",
+              "created_date": "2008-04-22T13:53:11",
+              "last_modified_by": "036016aa5b797617c6023036f5c2df78",
+              "last_modified_date": "2015-10-08T16:00:31",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100004222,
+              "legacy_id": "0bebbc3b3261e255dc82002b83094717",
+              "legacy_name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4533,
+              "source": null
+            },
+            {
+              "org_key": 100004222,
+              "legacy_id": "0bebbc3b3261e255dc82002b83094717",
+              "legacy_name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1474,
+              "source": null
+            }
+          ],
+          "l1Name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "l1OrgKey": 100004222,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100004222"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100004222.jpg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100008531,
+          "name": "HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+          "type": "AGENCY",
+          "parentOrgKey": 100004222,
+          "fullParentPath": "100004222.100008531",
+          "createdDate": "1996-07-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:05:54.038+00:00",
+          "fullParentPathName": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Health Resources and Services Administration",
+          "fpdsCode": "7526",
+          "cfdaCode": "93",
+          "a11TacCode": "15",
+          "modStatus": "ACTIVE",
+          "cgac": "075",
+          "level": 2,
+          "fpdsOrgId": "7526",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100008531.gif",
+          "l1ShortName": "HHS",
+          "ombBureauCode": " 15",
+          "cfdaBur": 15,
+          "cfdaOmb": 9,
+          "description": "Helps provide health resources for medically underserved populations.  HRSA Supports a nationwide network of 643 community and migrant health centers, and 144 primary care programs for the homeless and residents of public housing, serving 8.1 million Americans each year.  HRSA also works to build the health care workforce and maintains the National Health Service Corps oversees, the Nation's organ transplantation system, works to decrease infant mortality and improve child health, and provides services to people with AIDS through the Ryan White CARE Act programs.",
+          "shortName": "HRSA",
+          "sourceCfdaPk": "82403d2f961bc2a2d3b3f04405f55125",
+          "sourceParentCfdaPk": "0bebbc3b3261e255dc82002b83094717",
+          "summary": "Helps provide health resources for medically underserved populations.  HRSA Supports a nationwide network of 643 community and migrant health centers, and 144 primary care programs for the homeless and residents of public housing, serving 8.1 million Americans each year.  HRSA also works to build the health care workforce and maintains the National Health Service Corps oversees, the Nation's organ transplantation system, works to decrease infant mortality and improve child health, and provides services to people with AIDS through the Ryan White CARE Act programs.",
+          "code": "7526",
+          "categoryDesc": "AGENCY",
+          "hasContracts": false,
+          "codeHierarchy": "7500.7526",
+          "orgCode": "ORG-2133",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272430,
+              "org_key": 100008531,
+              "street_address": "5600 Fishers Lane",
+              "street_address_2": null,
+              "city": "Rockville",
+              "state": "MD",
+              "zipcode": "20857",
+              "country_code": "US",
+              "created_by": "e55633e79d4075150e695d5700c990de",
+              "created_date": "2008-04-03T12:04:45",
+              "last_modified_by": "1a162c6fe5ccf0e1aa52439e6d803d06",
+              "last_modified_date": "2015-03-12T08:35:36",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100008531,
+              "legacy_id": "82403d2f961bc2a2d3b3f04405f55125",
+              "legacy_name": "HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1407,
+              "source": null
+            },
+            {
+              "org_key": 100008531,
+              "legacy_id": "82403d2f961bc2a2d3b3f04405f55125",
+              "legacy_name": "HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4671,
+              "source": null
+            }
+          ],
+          "l1Name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "l2Name": "HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+          "l1OrgKey": 100004222,
+          "l2OrgKey": 100008531,
+          "parentOrg": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100008531"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100008531.gif"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100007448,
+          "name": "CENTERS FOR DISEASE CONTROL AND PREVENTION",
+          "type": "AGENCY",
+          "parentOrgKey": 100004222,
+          "fullParentPath": "100004222.100007448",
+          "createdDate": "1996-07-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:05:54.038+00:00",
+          "fullParentPathName": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR DISEASE CONTROL AND PREVENTION",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Centers for Disease Control and Prevention",
+          "fpdsCode": "7523",
+          "cfdaCode": "93",
+          "a11TacCode": "20",
+          "modStatus": "ACTIVE",
+          "cgac": "075",
+          "level": 2,
+          "fpdsOrgId": "7523",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100007448.jpg",
+          "l1ShortName": "HHS",
+          "ombBureauCode": " 20",
+          "cfdaBur": 20,
+          "cfdaOmb": 9,
+          "description": "Provides a system of health surveillance to monitor and prevent the outbreak of diseases. With the assistance of States and other partners, CDC guards against international disease transmission, maintains national health statistics and provides for immunization services, and supports research into disease and injury prevention.",
+          "shortName": "CDC",
+          "sourceCfdaPk": "a96db4c401b3dfaec5cd61be7ae60551",
+          "sourceParentCfdaPk": "0bebbc3b3261e255dc82002b83094717",
+          "summary": "Provides a system of health surveillance to monitor and prevent the outbreak of diseases. With the assistance of States and other partners, CDC guards against international disease transmission, maintains national health statistics and provides for immunization services, and supports research into disease and injury prevention.",
+          "code": "7523",
+          "categoryDesc": "AGENCY",
+          "hasContracts": false,
+          "codeHierarchy": "7500.7523",
+          "orgCode": "ORG-2408",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272443,
+              "org_key": 100007448,
+              "street_address": "1600 Clifton Road",
+              "street_address_2": null,
+              "city": "Atlanta",
+              "state": "GA",
+              "zipcode": "30333",
+              "country_code": "US",
+              "created_by": "e55633e79d4075150e695d5700c990de",
+              "created_date": "2008-05-01T14:18:40",
+              "last_modified_by": "e55633e79d4075150e695d5700c990de",
+              "last_modified_date": "2008-05-01T14:18:40",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100007448,
+              "legacy_id": "a96db4c401b3dfaec5cd61be7ae60551",
+              "legacy_name": "CENTERS FOR DISEASE CONTROL AND PREVENTION",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1408,
+              "source": null
+            },
+            {
+              "org_key": 100007448,
+              "legacy_id": "a96db4c401b3dfaec5cd61be7ae60551",
+              "legacy_name": "CENTERS FOR DISEASE CONTROL AND PREVENTION",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4615,
+              "source": null
+            }
+          ],
+          "parentOrg": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "l1Name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+          "l2Name": "CENTERS FOR DISEASE CONTROL AND PREVENTION",
+          "l1OrgKey": 100004222,
+          "l2OrgKey": 100007448,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100007448"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100007448.jpg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100013311,
+          "name": "TREASURY, DEPARTMENT OF THE",
+          "type": "DEPARTMENT",
+          "fullParentPath": "100013311",
+          "createdDate": "2003-09-30T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_START_DATE_FIX",
+          "lastModifiedDate": "2019-11-22T04:04:45.675+00:00",
+          "fullParentPathName": "TREASURY, DEPARTMENT OF THE",
+          "startDate": "1957-07-01T04:00:00.000+00:00",
+          "agencyName": "Department of the Treasury",
+          "tas2Code": "20",
+          "tas3Code": "20",
+          "fpdsCode": "2000",
+          "cfdaCode": "21",
+          "ombAgencyCode": "15",
+          "a11TacCode": "20",
+          "modStatus": "ACTIVE",
+          "cgac": "020",
+          "level": 1,
+          "fpdsOrgId": "2000",
+          "logoUrl": "https://s3.amazonaws.com/iae-federal-organization-icons/100013311.bmp",
+          "l1ShortName": "TREAS",
+          "cfdaBur": 0,
+          "cfdaOmb": 15,
+          "description": "The Department of the Treasury's mission highlights its role as the steward of U.S. economic and financial systems, and as an influential participant in the global economy. The Treasury Department is the executive agency responsible for promoting economic prosperity and ensuring the financial security of the United States. The Department is responsible for a wide range of activities such as advising the President on economic and financial issues, encouraging sustainable economic growth, and fostering improved governance in financial institutions. The Department of the Treasury operates and maintains systems that are critical to the nation's financial infrastructure, such as the production of coin and currency, the disbursement of payments to the American public, revenue collection, and the borrowing of funds necessary to run the federal government. The Department works with other federal agencies, foreign governments, and international financial institutions to encourage global economic growth, raise standards of living, and to the extent possible, predict and prevent economic and financial crises. The Treasury Department also performs a critical and far-reaching role in enhancing national security by implementing economic sanctions against foreign threats to the U.S., identifying and targeting the financial support networks of national security threats, and improving the safeguards of our financial systems. /n/n",
+          "shortName": "TREAS",
+          "sourceCfdaPk": "72a3b4ab05a63bed3965d31873e7868c",
+          "summary": "The Department of the Treasury's mission highlights its role as the steward of U.S. economic and financial systems, and as an influential participant in the global economy. The Treasury Department is the executive agency responsible for promoting economic prosperity and ensuring the financial security of the United States. The Department is responsible for a wide range of activities such as advising the President on economic and financial issues, encouraging sustainable economic growth, and fostering improved governance in financial institutions. The Department of the Treasury operates and maintains systems that are critical to the nation's financial infrastructure, such as the production of coin and currency, the disbursement of payments to the American public, revenue collection, and the borrowing of funds necessary to run the federal government. The Department works with other federal agencies, foreign governments, and international financial institutions to encourage global economic growth, raise standards of living, and to the extent possible, predict and prevent economic and financial crises. The Treasury Department also performs a critical and far-reaching role in enhancing national security by implementing economic sanctions against foreign threats to the U.S., identifying and targeting the financial support networks of national security threats, and improving the safeguards of our financial systems. /n/n",
+          "code": "020",
+          "categoryDesc": "DEPARTMENT",
+          "hasContracts": false,
+          "orgCode": "ORG-1179",
+          "hierarchy": [],
+          "orgAddresses": [
+            {
+              "address_key": 100272421,
+              "org_key": 100013311,
+              "street_address": "",
+              "street_address_2": null,
+              "city": "",
+              "state": "",
+              "zipcode": "",
+              "country_code": "US",
+              "created_by": "bb863595cd3aee02b74b10d5ca46fe94",
+              "created_date": "2008-04-22T14:30:01",
+              "last_modified_by": "036016aa5b797617c6023036f5c2df78",
+              "last_modified_date": "2015-10-08T15:59:24",
+              "mod_status": "active",
+              "is_source_fpds": null,
+              "is_source_cfda": true,
+              "is_source_fh_app": null,
+              "type": "M"
+            }
+          ],
+          "orgLegacyList": [
+            {
+              "org_key": 100013311,
+              "legacy_id": "72a3b4ab05a63bed3965d31873e7868c",
+              "legacy_name": "TREASURY, DEPARTMENT OF THE",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4538,
+              "source": null
+            },
+            {
+              "org_key": 100013311,
+              "legacy_id": "72a3b4ab05a63bed3965d31873e7868c",
+              "legacy_name": "TREASURY, DEPARTMENT OF THE",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1451,
+              "source": null
+            }
+          ],
+          "l1Name": "TREASURY, DEPARTMENT OF THE",
+          "l1OrgKey": 100013311,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100013311"
+          },
+          "logo": {
+            "href": "https://s3.amazonaws.com/iae-federal-organization-icons/100013311.bmp"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_embedded": [
+      {
+        "org": {
+          "orgKey": 100076336,
+          "name": "INTERNAL REVENUE SERVICE",
+          "type": "AGENCY",
+          "parentOrgKey": 100013311,
+          "fullParentPath": "100013311.100076336",
+          "createdDate": "2004-04-20T04:00:00.000+00:00",
+          "lastModifiedBy": "FPDS_CIV_AGENCY_START_DATE_FIX",
+          "lastModifiedDate": "2019-09-14T23:19:47.294+00:00",
+          "fullParentPathName": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE",
+          "startDate": "1975-01-01T05:00:00.000+00:00",
+          "agencyName": "Internal Revenue Service (IRS)",
+          "fpdsCode": "2050",
+          "cfdaCode": "21",
+          "a11TacCode": "45",
+          "modStatus": "ACTIVE",
+          "cgac": "020",
+          "level": 2,
+          "fpdsOrgId": "2050",
+          "l1ShortName": "TREAS",
+          "cfdaBur": 45,
+          "cfdaOmb": 15,
+          "description": "Administers and enforces the Internal Revenue laws and related statutes, except those relating to alcohol, tobacco, firearms, and explosives.  The IRS mission is to encourage and achieve the highest possible degree of voluntary compliance with the tax laws and regulations and to conduct itself so as to warrant the highest degree of public confidence in the integrity and efficiency of the Service.  Accomplishment of this mission involves advising the public of its rights and responsibilities; communicating requirements of the law to the public; assisting taxpayers in complying with the laws and regulations, and taking those enforcement actions necessary for fair, effective, and impartial tax administration. Basic IRS activities include ensuring satisfactory resolution of taxpayer complaints, providing taxpayer service and education; determination, assessment, and collection of internal revenue taxes; determination of pension plan qualifications and exempt organization status; and preparation and issuance of rulings and regulations to supplement the provisions of the Internal Revenue Code.",
+          "shortName": "IRS",
+          "sourceCfdaPk": "41ee0e53c6ddce63784760039de54da9",
+          "sourceParentCfdaPk": "72a3b4ab05a63bed3965d31873e7868c",
+          "summary": "Administers and enforces the Internal Revenue laws and related statutes, except those relating to alcohol, tobacco, firearms, and explosives.  The IRS mission is to encourage and achieve the highest possible degree of voluntary compliance with the tax laws and regulations and to conduct itself so as to warrant the highest degree of public confidence in the integrity and efficiency of the Service.  Accomplishment of this mission involves advising the public of its rights and responsibilities; communicating requirements of the law to the public; assisting taxpayers in complying with the laws and regulations, and taking those enforcement actions necessary for fair, effective, and impartial tax administration. Basic IRS activities include ensuring satisfactory resolution of taxpayer complaints, providing taxpayer service and education; determination, assessment, and collection of internal revenue taxes; determination of pension plan qualifications and exempt organization status; and preparation and issuance of rulings and regulations to supplement the provisions of the Internal Revenue Code.",
+          "code": "2050",
+          "categoryDesc": "AGENCY",
+          "hasContracts": false,
+          "codeHierarchy": "2000.2050",
+          "orgCode": "ORG-2164",
+          "hierarchy": [],
+          "orgLegacyList": [
+            {
+              "org_key": 100076336,
+              "legacy_id": "41ee0e53c6ddce63784760039de54da9",
+              "legacy_name": "INTERNAL REVENUE SERVICE",
+              "created_by": "IAE-DATATeam",
+              "created_date": "2018-09-17T19:16:15.284308",
+              "last_modified_by": "IAE_DATETeam",
+              "last_modified_date": "2018-09-17T19:16:15.284308",
+              "legacy_system_name": "CFDA",
+              "legacy_key": 1541,
+              "source": null
+            },
+            {
+              "org_key": 100076336,
+              "legacy_id": "41ee0e53c6ddce63784760039de54da9",
+              "legacy_name": "INTERNAL REVENUE SERVICE",
+              "created_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "created_date": "2019-10-16T19:52:25.28808",
+              "last_modified_by": "FH_FBO_DEPT_AGENCY_MAPPING",
+              "last_modified_date": "2019-10-16T19:52:25.28808",
+              "legacy_system_name": "FBO",
+              "legacy_key": 4600,
+              "source": null
+            }
+          ],
+          "parentOrg": "TREASURY, DEPARTMENT OF THE",
+          "l1Name": "TREASURY, DEPARTMENT OF THE",
+          "l2Name": "INTERNAL REVENUE SERVICE",
+          "l1OrgKey": 100013311,
+          "l2OrgKey": 100076336,
+          "links": [],
+          "isSourceCfda": true,
+          "isSourceCwCfda": true,
+          "isSourceFpds": true
+        },
+        "_link": {
+          "self": {
+            "href": "https://api.sam.gov/prod/federalorganizations/v2/organizations/100076336"
+          }
+        }
+      }
+    ]
+  }
+]

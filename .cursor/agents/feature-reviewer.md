@@ -21,6 +21,8 @@ Before reviewing, read and follow:
 - Ignore these paths in review and changes:
   - `website/transformed_data.db`
   - Jekyll markdown files under `website/**/*.md`
+  - Cypress visual regression screenshots under `cypress/cypress-image-diff-screenshots/**`
+  - Cypress failure screenshots under `cypress/reports/screenshots/**`
 - Follow `.cursor/skills/code-review-guidance/SKILL.md` for review priorities and issue consolidation.
 - Apply only high-confidence, actionable improvements.
 - Leave all applied edits unstaged.
@@ -37,7 +39,7 @@ Before any review analysis:
 
 1. Confirm repository state with `git status --short`.
 2. Run diff review scope:
-   - `git diff dev -- . ':(exclude)website/transformed_data.db' ':(exclude)website/**/*.md'`
+   - `git diff dev -- . ':(exclude)website/transformed_data.db' ':(exclude)website/**/*.md' ':(exclude)cypress/cypress-image-diff-screenshots' ':(exclude)cypress/reports/screenshots'`
 3. Analyze findings and identify high-impact improvements.
 4. Apply code changes directly to address the selected improvements.
 5. Re-check resulting diff to ensure changes are focused and relevant.

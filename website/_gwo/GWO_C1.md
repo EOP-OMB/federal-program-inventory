@@ -4,8 +4,18 @@ definition: Building stronger local economies and resilient business ecosystems 
   urban, rural, Tribal, and economically distressed regions.
 focus_area: Community, Area, and Regional Development
 gwo_id: GWO.C1
+largest_program:
+  expenditure_amount: 41110000000.0
+  name: Exclusion of interest on public purpose State and local bonds
+  permalink: /program/TC.171
 permalink: /gwo/GWO_C1
+smallest_program:
+  expenditure_amount: -3237286.91
+  name: Community Development Block Grants/Brownfields Economic Development Initiative
+  permalink: /program/14.246
 title: Strengthen Community and Regional Development
+total_agencies: 14
+total_expenditure: 62815556871.7
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 0.0

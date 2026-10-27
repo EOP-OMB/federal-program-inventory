@@ -4,8 +4,18 @@ definition: Ensuring U.S. forces remain fully prepared to respond to domestic an
   foreign threats.
 focus_area: Defense Capability
 gwo_id: GWO.ND3
+largest_program:
+  expenditure_amount: 36170896402.0
+  name: F-35 LIGHTNING II JOINT STRIKE FIGHTER (JSF) PROGRAM
+  permalink: /program/G3.C.12.198
 permalink: /gwo/GWO_ND3
+smallest_program:
+  expenditure_amount: -39409091.97
+  name: BLACK HAWK UTILITY HELICOPTER (UH-60L)
+  permalink: /program/G3.C.12.156
 title: Strengthen Military Readiness
+total_agencies: 5
+total_expenditure: 127866408531.01
 where_used:
 - agency: Department of Defense
   expenditure_amount: 4413826.98
@@ -63,9 +73,24 @@ where_used:
   permalink: /program/G3.C.12.G51
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ADVANCED ANTI-TANK WEAPON SYSTEM - MEDIUM (JAVELIN)
+  permalink: /program/G3.C.12.280
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ADVANCED ARRESTING GEAR
+  permalink: /program/G3.C.12.529
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 2394501.87
   name: ADVANCED BOMB SUIT
   permalink: /program/G3.C.12.A74
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ADVANCED CAPABILITY TORPEDO (MK 48 ADCAP)
+  permalink: /program/G3.C.12.138
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 40422268.0
@@ -82,6 +107,11 @@ where_used:
   expenditure_amount: 155952.0
   name: ADVANCED TARGETING POD MODERNIZATION PROGRAM
   permalink: /program/G3.C.12.C65
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ADVANCED THREAT INFRARED COUNTERMEASURE/COMMON MISSILE WARNING SYSTEM
+  permalink: /program/G3.C.12.219
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 15859947.0
@@ -159,6 +189,11 @@ where_used:
   permalink: /program/G3.C.12.558
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: AIR FORCE WAY
+  permalink: /program/G3.C.12.Z46
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 36651148.44
   name: AIR OPERATIONS CENTER - WEAPON SYSTEM (AOC-WS)
   permalink: /program/G3.C.12.369
@@ -172,6 +207,11 @@ where_used:
   expenditure_amount: 505138.09
   name: AIR-LAUNCHED CRUISE MISSILE (ALCM) (AGM-86B)
   permalink: /program/G3.C.12.111
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: AIRBORNE RECON LOW (ARL)
+  permalink: /program/G3.C.12.GHL
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 232630.0
@@ -189,9 +229,19 @@ where_used:
   permalink: /program/G3.C.12.277
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ALAM
+  permalink: /program/G3.C.12.331
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 193468458.8
   name: AMPHIBIOUS COMBAT VEHICLE FAMILY OF VEHICLES
   permalink: /program/G3.C.12.472
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: AN/SLQ-25 TORPEDO CM TRANS SYS
+  permalink: /program/G3.C.12.GCA
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 4765933.58
@@ -219,6 +269,11 @@ where_used:
   permalink: /program/G3.C.12.174
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ARMED RECONNAISSANCE HELICOPTER (ARH)
+  permalink: /program/G3.C.12.179
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 600399337.7
   name: ARMORED MULTI-PURPOSE VEHICLE
   permalink: /program/G3.C.12.471
@@ -244,9 +299,19 @@ where_used:
   permalink: /program/G3.C.12.87C
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ARMY TACTICAL MISSILE SYSTEM-ANTI-PERSONNEL ANTI-MATERIEL (ATACMS-APAM
+  permalink: /program/G3.C.12.211
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 4961254.43
   name: ARMY TACTICAL MISSILE SYSTEM-BRILLIANT ANTI-TANK (ATACMS-BAT)
   permalink: /program/G3.C.12.545
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: ASIP PROCESSOR UPGRADE CHASSIS (APUC)
+  permalink: /program/G3.C.12.900
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 1431341.16
@@ -272,6 +337,11 @@ where_used:
   expenditure_amount: 4839159.85
   name: AVIATION AND TRANSPORTATION
   permalink: /program/G3.C.12.4EB
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: AVIATION RESOURCE MANAGEMENT SYSTEM SUP V7.0
+  permalink: /program/G3.C.12.C86
   program_type: contracts
 - agency: Department of Agriculture
   expenditure_amount: 0.0
@@ -329,6 +399,11 @@ where_used:
   permalink: /program/G3.C.12.755
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: B-52 OTHER MODS
+  permalink: /program/G3.C.12.P28
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 1834183.31
   name: B-52 RADAR MODERNIZATION PROGRAM (RMP)
   permalink: /program/G3.C.12.574
@@ -337,6 +412,11 @@ where_used:
   expenditure_amount: 12906307.04
   name: B-52 VERY LOW FREQUENCY/LOW FREQUENCY MODERNIZATION
   permalink: /program/G3.C.12.Y63
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: B61 MOD 12 LIFE EXTENSION PROGRAM TAILKIT ASSEMBLY
+  permalink: /program/G3.C.12.468
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 642301.28
@@ -359,6 +439,11 @@ where_used:
   permalink: /program/G3.C.12.G97
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: BINOCULAR NIGHT OBSERVATION DEVICE
+  permalink: /program/G3.C.12.UAJ
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 14227800.93
   name: BIOMETRICS ENABLING CAPABILITY INCREMENT-1
   permalink: /program/G3.C.12.N16
@@ -367,6 +452,16 @@ where_used:
   expenditure_amount: -39409091.97
   name: BLACK HAWK UTILITY HELICOPTER (UH-60L)
   permalink: /program/G3.C.12.156
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: BLACKHAWK (UH-60) UTTAS HELICOPTER
+  permalink: /program/G3.C.12.AIA
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: BODY ARMOR, CONCEALABLE
+  permalink: /program/G3.C.12.51E
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 1460433.92
@@ -494,6 +589,11 @@ where_used:
   permalink: /program/G3.C.12.CMFF
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: COMANCHE
+  permalink: /program/G3.C.12.254
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 303857761.5
   name: COMBAT SEARCH AND RESCUE REPLACEMENT VEHICLE (CSAR-X)
   permalink: /program/G3.C.12.329
@@ -514,9 +614,24 @@ where_used:
   permalink: /program/G3.C.12.446
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: COMMON REMOTELY OPERATED WEAPON STATION
+  permalink: /program/G3.C.12.480
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: COMMON ROBOTIC SYSTEM - HEAVY
+  permalink: /program/G3.C.12.K25
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 43021.42
   name: COMPUTED TOMOGRAPHY (CT) SCANNER
   permalink: /program/G3.C.12.8WP
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: CONDOR(AGM-53B)
+  permalink: /program/G3.C.12.310
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 127898099.5
@@ -542,6 +657,11 @@ where_used:
   expenditure_amount: 225315407.4
   name: COOPERATIVE ENGAGEMENT CAPABILITY
   permalink: /program/G3.C.12.582
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: COUNTER COMMUNICATION SYSTEM
+  permalink: /program/G3.C.12.L8U
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 544090.45
@@ -643,6 +763,11 @@ where_used:
   permalink: /program/G3.C.12.N87
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: DEFENSE ENTERPRISE OFFICE SOLUTION
+  permalink: /program/G3.C.12.600
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 66134089.78
   name: DEFENSE ENVIRONMENTAL AND RESTORATION PROGRAM
   permalink: /program/G3.C.12.ZDE
@@ -661,6 +786,11 @@ where_used:
   expenditure_amount: -360.86
   name: DEFENSE MESSAGING SYSTEM
   permalink: /program/G3.C.12.M15
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: DEFENSE METEOROLOGICAL SATELLITE PROGRAM
+  permalink: /program/G3.C.12.203
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 10285393.7
@@ -828,9 +958,19 @@ where_used:
   permalink: /program/G3.C.12.515
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: EXPEDITIONARY SEA BASE
+  permalink: /program/G3.C.12.335
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 4374479.66
   name: EXPENSE ASSIGNMENT SYSTEM
   permalink: /program/G3.C.12.A07
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: EXTENDED COLD WEATHER CLOTHING SYSTEM
+  permalink: /program/G3.C.12.W76
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 5437761.53
@@ -875,9 +1015,19 @@ where_used:
   permalink: /program/G3.C.12.C90
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: F-16 ADVANCED DATA TRANSFER EQUIPMENT
+  permalink: /program/G3.C.12.917
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 4641620.1
   name: F-16 BLK 40/42 WIDE ANGLE CONVENTIONAL (WAC) HEADS-UP DISPLAY (HUD) REPLACEMENT
   permalink: /program/G3.C.12.BLP
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: F-16 FALCON FIGHTER
+  permalink: /program/G3.C.12.AFH
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
@@ -915,14 +1065,30 @@ where_used:
   permalink: /program/G3.C.12.198
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: F-5E
+  permalink: /program/G3.C.12.316
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 73351845.59
   name: F/A-18E/F SUPER HORNET AIRCRAFT
   permalink: /program/G3.C.12.549
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: FACILITIES AND EQUIPMENT MAINTENANCE
+  permalink: /program/G3.C.12.T66
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 76071985.3
   name: FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS
   permalink: /program/G3.C.12.199
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: FAMILY OF ADVANCED BEYOND LINE-OF-SIGHT TERMINALS FORCE ELEMENT TERMINAL RAPID
+    PROTOTYPING
+  permalink: /program/G3.C.12.610
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 148393550.7
@@ -1030,6 +1196,11 @@ where_used:
   permalink: /program/G3.C.12.237
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: GLOBAL COMBAT SUPPORT SYSTEM (GCSS) - AIR FORCE
+  permalink: /program/G3.C.12.M91
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 6166869.0
   name: GLOBAL COMBAT SUPPORT SYSTEM - ARMY INCREMENT 2
   permalink: /program/G3.C.12.501
@@ -1040,9 +1211,19 @@ where_used:
   permalink: /program/G3.C.12.402
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: GLOBAL COMMAND & CONTROL SYSTEM (GCCS) - AF (INFRASTRUCTURE)
+  permalink: /program/G3.C.12.N21
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: -149000.0
   name: GLOBAL COMMAND AND CONTROL SYSTEM-MARITIME INCREMENT 1
   permalink: /program/G3.C.12.M90
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: GLOBAL INFORMATION GRID BANDWIDTH EXPANSION
+  permalink: /program/G3.C.12.N01
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 3628239.02
@@ -1111,6 +1292,11 @@ where_used:
   permalink: /program/G3.C.12.G70
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: HEAVY DUMP TRUCK (HDT)
+  permalink: /program/G3.C.12.U30
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 8079059.84
   name: HEAVY LOGISTIC SUPPORT
   permalink: /program/G3.C.12.351
@@ -1124,6 +1310,11 @@ where_used:
   expenditure_amount: 804640.0
   name: HERCULES CARGO PLANE
   permalink: /program/G3.C.12.548
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: HH-60G LOW COST MODS
+  permalink: /program/G3.C.12.B70
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 18742967.62
@@ -1201,6 +1392,11 @@ where_used:
   permalink: /program/G3.C.12.418
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: INTEGRATED LOGISTICS SYSTEM-SUPPLY
+  permalink: /program/G3.C.12.M87
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: -11572.96
   name: INTEGRATED LOGISTICS SYSTEMS - SUPPLY SOFTWARE MODIFICATION-RE-PLATFORM
   permalink: /program/G3.C.12.A96
@@ -1222,6 +1418,11 @@ where_used:
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: INTEGRATED TACTICAL NETWORK - RAPID PROTOTYPING
+  permalink: /program/G3.C.12.860
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: Improvement of Navy Ship Repair or Alterations Capability
   permalink: /program/12.031
   program_type: assistance_listing
@@ -1229,6 +1430,11 @@ where_used:
   expenditure_amount: 3456842443.0
   name: JOINT AIR-TO-SURFACE STANDOFF MISSILE
   permalink: /program/G3.C.12.555
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: JOINT COMMON MISSILE
+  permalink: /program/G3.C.12.370
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 6165223.7
@@ -1287,6 +1493,11 @@ where_used:
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: JOINT TACTICAL RADIO SYSTEM GROUND MOBILE RADIO (FORMERLY CLUSTER 1)
+  permalink: /program/G3.C.12.360
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: JOINT TACTICAL UNMANNED AERIAL VEHICLES
   permalink: /program/G3.C.12.514
   program_type: contracts
@@ -1294,6 +1505,11 @@ where_used:
   expenditure_amount: 2350690.1
   name: JOINT TRANSPORTATION MANAGEMENT SYSTEM
   permalink: /program/G3.C.12.3G2
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: JTIDS NAVY
+  permalink: /program/G3.C.12.171
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 21955888.08
@@ -1304,6 +1520,11 @@ where_used:
   expenditure_amount: 2989906602.0
   name: KC-46A TANKER MODERNIZATION
   permalink: /program/G3.C.12.387
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: KESSEL RUN ALL DOMAIN COMMON PLATFORM
+  permalink: /program/G3.C.12.B68
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: -252403.94
@@ -1391,6 +1612,11 @@ where_used:
   permalink: /program/G3.C.12.B90
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: LOCATION & AZIMUTH DETERMINING SYSTEM
+  permalink: /program/G3.C.12.28L
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 153528.0
   name: LOGISTIC SUPPORT VESSEL
   permalink: /program/G3.C.12.S89
@@ -1446,6 +1672,11 @@ where_used:
   permalink: /program/G3.C.12.A48
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: M870A4 SEMITRAILER, LOWBED, CONSTRUCTION EQUIPMENT TRANSPORTER
+  permalink: /program/G3.C.12.F67
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 59038.24
   name: M88A2 HEAVY EQUIPMENT RECOVERY COMBAT UTILITY LIFT EVACUATION SYSTEM
   permalink: /program/G3.C.12.539
@@ -1459,6 +1690,11 @@ where_used:
   expenditure_amount: 321209694.7
   name: MAINTENANCE REPAIR AND OVERHAUL
   permalink: /program/G3.C.12.523
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MAN TRANSPORTABLE ROBOTIC SYSTEM INC II
+  permalink: /program/G3.C.12.R53
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 1568375.0
@@ -1491,6 +1727,11 @@ where_used:
   permalink: /program/G3.C.12.505
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: METAL WORKING AND MACHINING SHOP SET
+  permalink: /program/G3.C.12.Z52
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 249778075.1
   name: MH-139A  GREY WOLF
   permalink: /program/G3.C.12.562
@@ -1521,9 +1762,20 @@ where_used:
   permalink: /program/G3.C.12.WBN
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MILITARY SATELLITE COMMUNICATIONS (MILSATCOM) COMMAND AND CONTROL SYSTEM-CONSOLIDATED
+    (CCS-C)
+  permalink: /program/G3.C.12.ET9
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: -0.01
   name: MIM-104 PATRIOT SURFACE TO AIR MISSILE
   permalink: /program/G3.C.12.106
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MINE RESISTANT AMBUSH PROTECTED VEHICLES RF
+  permalink: /program/G3.C.12.802
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
@@ -1539,6 +1791,11 @@ where_used:
   expenditure_amount: 0.0
   name: MINUTEMAN III GUIDANCE REPLACEMENT PROGRAM (GRP)
   permalink: /program/G3.C.12.302
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MINUTEMAN III PROPULSION REPLACEMENT PROGRAM (PRP)
+  permalink: /program/G3.C.12.248
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 6335850091.0
@@ -1566,6 +1823,11 @@ where_used:
   permalink: /program/G3.C.12.139
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MK15 CLOSE IN WEAPON SYSTEM
+  permalink: /program/G3.C.12.EBE
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 32361003.68
   name: MK19 GRENADE MACHINE GUN
   permalink: /program/G3.C.12.J29
@@ -1574,6 +1836,11 @@ where_used:
   expenditure_amount: 352550727.3
   name: MK21A REENTRY VEHICLE
   permalink: /program/G3.C.12.576
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: MOBILE SUBSCRIBER EQUIPMENT
+  permalink: /program/G3.C.12.255
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 14759588.79
@@ -1676,6 +1943,16 @@ where_used:
   permalink: /program/G3.C.12.F58
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: NATIONAL AIRSPACE SYSTEM
+  permalink: /program/G3.C.12.537
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: NATIONAL MISSILE DEFENSE SYSTEM
+  permalink: /program/G3.C.12.563
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 298934512.6
   name: NATIONAL SECURITY SPACE LAUNCH
   permalink: /program/G3.C.12.176
@@ -1712,6 +1989,11 @@ where_used:
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: NEXT GENERATION ENTERPRISE NETWORK INCREMENT 1
+  permalink: /program/G3.C.12.N61
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: NEXT GENERATION FIXED WING HELMET (NGFWH)
   permalink: /program/G3.C.12.664
   program_type: contracts
@@ -1735,6 +2017,11 @@ where_used:
   name: NORAD CMC INTEGRATED TACTICAL WARNING/ATTACK ASSESSMENT (NCMC-ITW/AA) MISSILE
     WARNING/MISSILE TRACK
   permalink: /program/G3.C.12.9PJ
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: NUCLEAR PLANNING AND EXECUTION SYSTEM RECAPITALIZATION RAPID PROTOTYPING
+  permalink: /program/G3.C.12.643
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 2369066957.41
@@ -1770,6 +2057,16 @@ where_used:
   expenditure_amount: 255253251.1
   name: OTHER ENVIRONMENTAL PROGRAMS
   permalink: /program/G3.C.12.ZOP
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: OXYGEN GENERATOR, FIELD PORTABLE
+  permalink: /program/G3.C.12.1F3
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: P-3C ORION LAND-BASED,ANTI-SUB WARFARE PATROL ACFT(UPDATE IV AVIONICS)
+  permalink: /program/G3.C.12.324
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 1826280716.0
@@ -1878,6 +2175,16 @@ where_used:
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: RIM 7-H-2 NATO SEA SPARROW MISSILE
+  permalink: /program/G3.C.12.CNA
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: RIM-66 STANDARD MISSILE (MED)
+  permalink: /program/G3.C.12.CMN
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: ROLAND AIR DEFENSE MISSILE
   permalink: /program/G3.C.12.143
   program_type: contracts
@@ -1968,6 +2275,11 @@ where_used:
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: SOF COMBAT DIVING PROPULSION
+  permalink: /program/G3.C.12.999
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: SOF COUNTER UNCREWED SYSTEMS
   permalink: /program/G3.C.12.717
   program_type: contracts
@@ -1975,6 +2287,11 @@ where_used:
   expenditure_amount: 436781805.8
   name: SPACE BASED INFRARED SYSTEM HIGH
   permalink: /program/G3.C.12.210
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: SPACE BASED SPACE SURVEILLANCE BLOCK 10
+  permalink: /program/G3.C.12.328
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 153238.04
@@ -1985,6 +2302,11 @@ where_used:
   expenditure_amount: 2418000.0
   name: SPACE FENCE GROUND-BASED RADAR SYSTEM INCREMENT 1
   permalink: /program/G3.C.12.438
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: SPARROW AIM-7F, NAVY
+  permalink: /program/G3.C.12.164
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 28510.0
@@ -2030,6 +2352,11 @@ where_used:
   expenditure_amount: 0.0
   name: SUBMARINE NUCLEAR - SSN
   permalink: /program/G3.C.12.SDN
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: SUPER STALLION HELICOPTER
+  permalink: /program/G3.C.12.116
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 252106.96
@@ -2092,14 +2419,34 @@ where_used:
   permalink: /program/G3.C.12.436
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: T-AKE LEWIS AND CLARK CLASS DRY CARGO/AMMUNITION SHIP
+  permalink: /program/G3.C.12.592
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 40212.7
   name: T-AO 205 JOHN LEWIS CLASS FLEET REPLENISHMENT OILER
   permalink: /program/G3.C.12.452
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 0.0
+  name: TACFIRE
+  permalink: /program/G3.C.12.152
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: TACTICAL JAMMING SYSTEM
+  permalink: /program/G3.C.12.206
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
   name: TACTICAL MISSION COMMAND
   permalink: /program/G3.C.12.724
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: TACTICAL MISSION NETWORK
+  permalink: /program/G3.C.12.GHR
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 381178653.0
@@ -2178,6 +2525,11 @@ where_used:
   permalink: /program/G3.C.12.W14
   program_type: contracts
 - agency: Department of Defense
+  expenditure_amount: 0.0
+  name: UGM-96 TRIDENT MISSILE
+  permalink: /program/G3.C.12.CNJ
+  program_type: contracts
+- agency: Department of Defense
   expenditure_amount: 266996842.2
   name: UH-60M BLACK HAWK HELICOPTER
   permalink: /program/G3.C.12.341
@@ -2211,6 +2563,11 @@ where_used:
   expenditure_amount: 222682.56
   name: VEHICLE BLAST OVERPRESSURE TOOL
   permalink: /program/G3.C.12.A10
+  program_type: contracts
+- agency: Department of Defense
+  expenditure_amount: 0.0
+  name: VEHICLE PROTECTION SYSTEMS (VPS) SIGNATURE MANAGEMENT PAINT (SIGMAN)
+  permalink: /program/G3.C.12.H71
   program_type: contracts
 - agency: Department of Defense
   expenditure_amount: 121797533.2

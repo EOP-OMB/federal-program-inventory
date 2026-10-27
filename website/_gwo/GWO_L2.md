@@ -4,8 +4,18 @@ definition: Eliminating child abuse and neglect to ensure the safety and well-be
   of American children.
 focus_area: Child Welfare
 gwo_id: GWO.L2
+largest_program:
+  expenditure_amount: 4014702859.04
+  name: Foster Care Title IV-E
+  permalink: /program/93.658
 permalink: /gwo/GWO_L2
+smallest_program:
+  expenditure_amount: 0.0
+  name: Family Advocacy
+  permalink: /program/10.338
 title: End Child Abuse and Neglect
+total_agencies: 2
+total_expenditure: 5346927381.44
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 29935360.75

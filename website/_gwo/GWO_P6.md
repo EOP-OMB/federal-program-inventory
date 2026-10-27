@@ -4,8 +4,18 @@ definition: Safeguarding constitutional freedoms and civil rights to ensure equa
   protection and fair treatment under the law.
 focus_area: Legal Services
 gwo_id: GWO.P6
+largest_program:
+  expenditure_amount: 40408396.61
+  name: Social Security State Grants for Work Incentives Assistance to Disabled Beneficiaries
+  permalink: /program/96.009
 permalink: /gwo/GWO_P6
+smallest_program:
+  expenditure_amount: -32201306.15
+  name: Case Management Pilot Program
+  permalink: /program/97.102
 title: Protect Constitutional and Civil Rights
+total_agencies: 10
+total_expenditure: 87939111.83
 where_used:
 - agency: Department of Justice
   expenditure_amount: 1922611.39

@@ -4,8 +4,18 @@ definition: 'Open opportunities to affordable and safe housing for eligible indi
   and families. '
 focus_area: Housing and Homelessness
 gwo_id: GWO.M2
+largest_program:
+  expenditure_amount: 37575126180.7
+  name: Section 8 Housing Choice Vouchers
+  permalink: /program/14.871
 permalink: /gwo/GWO_M2
+smallest_program:
+  expenditure_amount: -390000000.0
+  name: Depreciation of buildings other than rental housing (normal tax method)
+  permalink: /program/TC.081
 title: Support Affordable Housing
+total_agencies: 4
+total_expenditure: 91336037240.88
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: 2450000000.0

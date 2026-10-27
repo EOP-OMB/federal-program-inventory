@@ -4,8 +4,19 @@ definition: Strengthening the ability to prevent, detect, respond to, and recove
   from public health emergencies.
 focus_area: Disaster Readiness, Response, and Relief
 gwo_id: GWO.F3
+largest_program:
+  expenditure_amount: 325064616.84
+  name: National Ebola Training and Education Center (NETEC)
+  permalink: /program/93.825
 permalink: /gwo/GWO_F3
+smallest_program:
+  expenditure_amount: -938024334.15
+  name: 'Public Health Emergency Response:  Cooperative Agreement for Emergency Response:
+    Public Health Crisis Response'
+  permalink: /program/93.354
 title: Improve Public Health Emergency Preparedness and Response
+total_agencies: 5
+total_expenditure: -432797333.78
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

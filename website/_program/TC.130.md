@@ -44,11 +44,7 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":137000000000.0,"forgone_revenue":225000000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":216000000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":247300000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":262310000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":309410000000.0}]'
 outlays: null
 permalink: /program/TC.130.html
-pons:
-- permalink: /pon/PON_860
-  pon: Increase Personal Financial Resilience
-- permalink: /pon/PON_T91
-  pon: Reduce Tax Burden
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

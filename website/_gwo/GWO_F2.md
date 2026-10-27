@@ -4,8 +4,18 @@ definition: Strengthening communities’ ability to withstand, adapt to, and rec
   from disasters and emergencies.
 focus_area: Disaster Readiness, Response, and Relief
 gwo_id: GWO.F2
+largest_program:
+  expenditure_amount: 8674204040.6
+  name: Flood Insurance
+  permalink: /program/97.022
 permalink: /gwo/GWO_F2
+smallest_program:
+  expenditure_amount: -4315882.97
+  name: Chemical Stockpile Emergency Preparedness Program
+  permalink: /program/97.040
 title: Increase Disaster Resilience and Response Readiness
+total_agencies: 11
+total_expenditure: 13197736089.98
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

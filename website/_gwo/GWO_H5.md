@@ -4,8 +4,18 @@ definition: 'Expanding opportunities for volunteering and civic participation fo
   youth and adults to build skills and connect to career pathways. '
 focus_area: Workforce Development
 gwo_id: GWO.H5
+largest_program:
+  expenditure_amount: 399080125.44
+  name: AmeriCorps State and National 94.006
+  permalink: /program/94.006
 permalink: /gwo/GWO_H5
+smallest_program:
+  expenditure_amount: -2330371.55
+  name: AmeriCorps Seniors Senior Demonstration Program (FGP) 94.017
+  permalink: /program/94.017
 title: Strengthen Service and Civic Engagement Workforce Pathways
+total_agencies: 5
+total_expenditure: 652377963.48
 where_used:
 - agency: Corporation for National and Community Service
   expenditure_amount: 0.0

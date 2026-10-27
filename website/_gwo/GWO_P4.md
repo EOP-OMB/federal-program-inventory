@@ -3,8 +3,18 @@ category: Law, Justice, and Legal Services
 definition: Build safer communities that are free from crime.
 focus_area: Law Enforcement Support
 gwo_id: GWO.P4
+largest_program:
+  expenditure_amount: 271657675.6
+  name: High Intensity Drug Trafficking Areas Program
+  permalink: /program/95.001
 permalink: /gwo/GWO_P4
+smallest_program:
+  expenditure_amount: -3225980.92
+  name: Juvenile Mentoring Program
+  permalink: /program/16.726
 title: Eliminate Crime
+total_agencies: 6
+total_expenditure: 741024783.28
 where_used:
 - agency: Department of Justice
   expenditure_amount: -892121.84

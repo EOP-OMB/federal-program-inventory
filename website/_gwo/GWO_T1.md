@@ -4,8 +4,18 @@ definition: Enhancing the efficiency, reliability, and reach of infrastructure t
   transports, stores, and delivers goods from suppliers to markets.
 focus_area: Multi–modal Transportation
 gwo_id: GWO.T1
+largest_program:
+  expenditure_amount: 261443094.6
+  name: Port Infrastructure Development Program
+  permalink: /program/20.823
 permalink: /gwo/GWO_T1
+smallest_program:
+  expenditure_amount: 0.0
+  name: National Highway Freight Program (NHFP)
+  permalink: /program/20.278
 title: Improve Commercial Distribution Infrastructure
+total_agencies: 2
+total_expenditure: 565866637.53
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: 60000000.0

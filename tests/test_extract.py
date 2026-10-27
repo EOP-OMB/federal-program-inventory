@@ -1,51 +1,36 @@
-"""
-This covers functions that pull data from SAM.gov and USAspending.gov.
-I've tried to mock all external API calls
-
-KNOWN ISSUES :
-1. Hardcoded file paths in extract_categories_from_pdf
-2. Need better error handling
-"""
-
-import io
-import json
 import pytest
-from unittest.mock import patch, MagicMock, mock_open
-import pandas as pd
+from unittest.mock import patch, mock_open
 import requests
 
-# Import the module
+from conftest import http_response
 from data_processing import extract
+
+
+@pytest.fixture(scope="class", autouse=True)
+def extract_paths():
+    """Keep extract I/O pointed at empty paths for every test class in this module."""
+    with patch("data_processing.extract.DISK_DIRECTORY", ""), \
+         patch("data_processing.extract.SOURCE_DIRECTORY", ""), \
+         patch("data_processing.extract.EXTRACTED_DIRECTORY", ""), \
+         patch("os.path.exists", return_value=True):
+        yield
+
 
 class TestExtractAssistanceListing:
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('requests.get')
     @patch('builtins.open', new_callable=mock_open)
-    def test_extract_assistance_listing_success(self, mock_file, mock_get, mock_exists):
-        # Mock search response
-        search_response = MagicMock()
-        search_response.status_code = 200
-        search_response.json.return_value = {
+    def test_extract_assistance_listing_success(self, mock_file, mock_get):
+        search_response = http_response({
             "_embedded": {
                 "results": [
                     {"_id": "listing1"},
                     {"_id": "listing2"}
                 ]
             }
-        }
-        
-        # Mock individual listing responses
-        listing_response1 = MagicMock()
-        listing_response1.status_code = 200
-        listing_response1.text = '{"data": {"programNumber": "10.001"}}'
-        
-        listing_response2 = MagicMock()
-        listing_response2.status_code = 200
-        listing_response2.text = '{"data": {"programNumber": "10.002"}}'
+        })
+        listing_response1 = http_response({"data": {"programNumber": "10.001"}})
+        listing_response2 = http_response({"data": {"programNumber": "10.002"}})
         
         # Set up the mock to return different responses
         mock_get.side_effect = [
@@ -65,26 +50,19 @@ class TestExtractAssistanceListing:
         # Check if the file was opened for writing
         mock_file.assert_called_once()
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('builtins.open', new_callable=mock_open)
     @patch('builtins.print')
-    def test_extract_assistance_listing_network_error(self, mock_print, mock_file, mock_exists):
+    def test_extract_assistance_listing_network_error(self, mock_print, mock_file):
         """
         Custom mock to handle this properly.
         """
-        # Mock search response
-        search_response = MagicMock()
-        search_response.status_code = 200
-        search_response.json.return_value = {
+        search_response = http_response({
             "_embedded": {
                 "results": [
                     {"_id": "listing1"}
                 ]
             }
-        }
+        })
         
         # Create a custom get function that handles multiple calls
         original_get = requests.get
@@ -102,10 +80,7 @@ class TestExtractAssistanceListing:
                 raise requests.exceptions.ConnectionError("Connection failed")
             # All other calls - return empty response
             else:
-                mock_response = MagicMock()
-                mock_response.status_code = 200
-                mock_response.text = '{}'
-                return mock_response
+                return http_response({})
         
         # Apply our custom mock
         with patch('requests.get', side_effect=custom_get):
@@ -117,23 +92,42 @@ class TestExtractAssistanceListing:
             calls = [call for call in mock_print.call_args_list if "Error: Connection" in str(call)]
             assert len(calls) > 0
 
-class TestExtractDictionary:
-    
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
+class TestExtractIPData:
+
     @patch('requests.get')
     @patch('builtins.open', new_callable=mock_open)
-    def test_extract_dictionary_success(self, mock_file, mock_get, mock_exists, sample_dictionary_data):
+    def test_extract_ip_data_success(self, mock_file, mock_get):
+        """
+        Test successful extraction of PaymentAccuracy.gov IP mapping data.
+        """
+        mock_get.return_value = http_response(
+            text="agency,program,aln\nUSDA,Program A,10.001\n"
+        )
+
+        extract.extract_ip_data()
+
+        mock_get.assert_called_once()
+        mock_file.assert_called_once()
+
+    @patch('requests.get')
+    def test_extract_ip_data_error(self, mock_get):
+        """
+        Test handling of errors during IP data extraction.
+        """
+        mock_get.side_effect = requests.exceptions.RequestException("Request failed")
+
+        with pytest.raises(requests.exceptions.RequestException):
+            extract.extract_ip_data()
+
+class TestExtractDictionary:
+    
+    @patch('requests.get')
+    @patch('builtins.open', new_callable=mock_open)
+    def test_extract_dictionary_success(self, mock_file, mock_get, sample_dictionary_data):
         """
         Test successful extraction of SAM.gov dictionary.
         """
-        # Mock response
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.text = json.dumps(sample_dictionary_data)
-        mock_get.return_value = mock_response
+        mock_get.return_value = http_response(sample_dictionary_data)
         
         # Call the function
         extract.extract_dictionary()
@@ -144,12 +138,8 @@ class TestExtractDictionary:
         # Check if the file was opened 
         mock_file.assert_called_once()
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('requests.get')
-    def test_extract_dictionary_error(self, mock_get, mock_exists):
+    def test_extract_dictionary_error(self, mock_get):
         """
         Test handling of errors during dictionary extraction.
         """
@@ -162,40 +152,26 @@ class TestExtractDictionary:
 
 class TestExtractOrganizations:
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('requests.get')
     @patch('builtins.open', new_callable=mock_open)
-    def test_extract_organizations_success(self, mock_file, mock_get, mock_exists, sample_organizations_data):
+    def test_extract_organizations_success(self, mock_file, mock_get, sample_organizations_data):
         """
         Test successful extraction of organizations.
         """
-        # Mock search response
-        search_response = MagicMock()
-        search_response.status_code = 200
-        search_response.json.return_value = {
+        search_response = http_response({
             "_embedded": {
                 "results": [
                     {"_id": "result1", "organizationHierarchy": [{"organizationId": "org1"}]},
                     {"_id": "result2", "organizationHierarchy": [{"organizationId": "org2"}]}
                 ]
             }
-        }
-        
-        # Mock organization responses
-        org_response1 = MagicMock()
-        org_response1.status_code = 200
-        org_response1.json.return_value = {
+        })
+        org_response1 = http_response({
             "_embedded": [{"org": sample_organizations_data[0]}]
-        }
-        
-        org_response2 = MagicMock()
-        org_response2.status_code = 200
-        org_response2.json.return_value = {
+        })
+        org_response2 = http_response({
             "_embedded": [{"org": sample_organizations_data[1]}]
-        }
+        })
         
         # Set up the mock to return different responses
         mock_get.side_effect = [search_response, org_response1, org_response2]
@@ -209,25 +185,18 @@ class TestExtractOrganizations:
         # Check if the file was opened
         mock_file.assert_called_once()
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('requests.get')
-    def test_extract_organizations_error(self, mock_get, mock_exists):
+    def test_extract_organizations_error(self, mock_get):
         """
         Test handling of errors during organization extraction.
         """
-        # Mock search response
-        search_response = MagicMock()
-        search_response.status_code = 200
-        search_response.json.return_value = {
+        search_response = http_response({
             "_embedded": {
                 "results": [
                     {"_id": "result1", "organizationHierarchy": [{"organizationId": "org1"}]}
                 ]
             }
-        }
+        })
         
         # Simulate error on second request
         mock_get.side_effect = [
@@ -241,16 +210,12 @@ class TestExtractOrganizations:
 
 class TestExtractUSASpendingAwardHashes:
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('json.load')
     @patch('builtins.open', new_callable=mock_open)
     @patch('requests.post')
     @patch('requests.get')
     @patch('json.dumps')
-    def test_extract_usaspending_award_hashes_success(self, mock_dumps, mock_get, mock_post, mock_file, mock_load, mock_exists):
+    def test_extract_usaspending_award_hashes_success(self, mock_dumps, mock_get, mock_post, mock_file, mock_load):
         """
         Test successful extraction of USAspending award hashes.
         """
@@ -259,10 +224,7 @@ class TestExtractUSASpendingAwardHashes:
             {"data": {"programNumber": "10.001"}}
         ]
         
-        # Mock CFDA autocomplete response
-        cfda_response = MagicMock()
-        cfda_response.status_code = 200
-        cfda_response.json.return_value = {
+        cfda_response = http_response({
             "results": [
                 {
                     "program_number": "10.001",
@@ -270,12 +232,8 @@ class TestExtractUSASpendingAwardHashes:
                     "identifier": "10.001"
                 }
             ]
-        }
-        
-        # Mock filter response
-        filter_response = MagicMock()
-        filter_response.status_code = 200
-        filter_response.json.return_value = {"hash": "abc123hash"}
+        })
+        filter_response = http_response({"hash": "abc123hash"})
         
         # One get and one post
         mock_get.return_value = cfda_response
@@ -290,102 +248,44 @@ class TestExtractUSASpendingAwardHashes:
         # Verify the file is written
         mock_file.assert_called()
     
-    @pytest.mark.xfail(reason="Issue #2: extract_usaspending_award_hashes doesn't handle connection errors")
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
-    @patch('json.load')
-    @patch('builtins.open', new_callable=mock_open)
-    def test_extract_usaspending_award_hashes_connection_error_current(self, mock_file, mock_load, mock_exists):
-        """
-        This test is expected to fail until error handling is implemented.
-        """
-        # Mock load assistance listings
-        mock_load.return_value = [
-            {"data": {"programNumber": "10.001"}}
-        ]
-        
-        # Set up patching for multiple components
-        with patch('requests.get') as mock_get, \
-            patch('requests.post') as mock_post:
-            
-            # Mock autocomplete response
-            cfda_response = MagicMock()
-            cfda_response.status_code = 200
-            cfda_response.json.return_value = {
-                "results": [
-                    {
-                        "program_number": "10.001",
-                        "program_title": "Sample Program",
-                        "identifier": "10.001"
-                    }
-                ]
-            }
-            mock_get.return_value = cfda_response
-            
-            # Make post raise a connection error
-            mock_post.side_effect = requests.exceptions.ConnectionError("Connection failed")
-            
-            # Shouldn't raise an exception
-            extract.extract_usaspending_award_hashes()
-
-    @pytest.mark.xfail(reason="Issue #2: extract_usaspending_award_hashes_connection_error_expected doesn't handle connection errors")
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('json.load')
     @patch('builtins.open', new_callable=mock_open)
     @patch('time.sleep')
-    @patch('builtins.print')
-    def test_extract_usaspending_award_hashes_connection_error_expected(self, mock_print, mock_sleep, mock_file, mock_load, mock_exists):
+    def test_extract_usaspending_award_hashes_connection_error_current(self, mock_sleep, mock_file, mock_load):
         """
-        This test verifies that errors are handled
+        After the hash request retries are exhausted, the function raises.
         """
         # Mock load assistance listings
         mock_load.return_value = [
             {"data": {"programNumber": "10.001"}}
         ]
-        
-        # Set up patching for multiple components
-        with patch('requests.get') as mock_get, \
-            patch('requests.post') as mock_post:
-            
-            # Mock autocomplete response
-            cfda_response = MagicMock()
-            cfda_response.status_code = 200
-            cfda_response.json.return_value = {
-                "results": [
-                    {
-                        "program_number": "10.001",
-                        "program_title": "Sample Program",
-                        "identifier": "10.001"
-                    }
-                ]
-            }
-            mock_get.return_value = cfda_response
-            
-            # Make post raise a connection error
-            mock_post.side_effect = requests.exceptions.ConnectionError("Connection failed")
-            
-            # Run the function
-            extract.extract_usaspending_award_hashes()
-            
-            # Verify error handling happened
-            assert mock_print.called, "Error was not properly logged"
-            assert mock_sleep.called, "No retry was attempted"
+
+        cfda_response = http_response({
+            "results": [
+                {
+                    "program_number": "10.001",
+                    "program_title": "Sample Program",
+                    "identifier": "10.001"
+                }
+            ]
+        })
+
+        def post_side_effect(*args, **kwargs):
+            url = args[0] if args else kwargs.get("url", "")
+            if "autocomplete/cfda" in url:
+                return cfda_response
+            raise requests.exceptions.ConnectionError("Connection failed")
+
+        with patch("requests.post", side_effect=post_side_effect):
+            with pytest.raises(RuntimeError, match="exceeded maximum tries"):
+                extract.extract_usaspending_award_hashes()
 
 class TestCleanJSONData:
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('json.load')
     @patch('json.dump')
     @patch('builtins.open', new_callable=mock_open)
-    def test_clean_json_data_success(self, mock_file, mock_dump, mock_load, mock_exists):
+    def test_clean_json_data_success(self, mock_file, mock_dump, mock_load):
         """
         Test successful cleaning of JSON data.
         """
@@ -415,9 +315,6 @@ class TestCleanJSONData:
         # Check if dumb was called and cleaned data
         mock_dump.assert_called_once()
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
     @patch('os.path.exists', return_value=False)
     @patch('builtins.open', side_effect=FileNotFoundError("File not found"))
     def test_clean_json_data_file_not_found(self, mock_file, mock_exists):
@@ -427,12 +324,8 @@ class TestCleanJSONData:
 
 class TestCleanAllData:
     
-    @patch('data_processing.extract.DISK_DIRECTORY', '')
-    @patch('data_processing.extract.SOURCE_DIRECTORY', '')
-    @patch('data_processing.extract.EXTRACTED_DIRECTORY', '')
-    @patch('os.path.exists', return_value=True)
     @patch('data_processing.extract.clean_json_data')
-    def test_clean_all_data_success(self, mock_clean_json_data, mock_exists):
+    def test_clean_all_data_success(self, mock_clean_json_data):
         """
         Test successful cleaning of all data files.
         """

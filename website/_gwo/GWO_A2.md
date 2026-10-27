@@ -4,8 +4,18 @@ definition: Developing and enhancing access to sustainable agricultural practice
   and systems.
 focus_area: Agricultural Resources and Services
 gwo_id: GWO.A2
+largest_program:
+  expenditure_amount: 102214115.67
+  name: Agricultural Conservation Easement Program
+  permalink: /program/10.931
 permalink: /gwo/GWO_A2
+smallest_program:
+  expenditure_amount: -125000.0
+  name: 'State Agency: Farm to School Program Training and Curricula'
+  permalink: /program/10.531
 title: Increase Sustainable Agriculture
+total_agencies: 4
+total_expenditure: 172875049.15
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 102214115.67

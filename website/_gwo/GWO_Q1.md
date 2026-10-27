@@ -5,8 +5,18 @@ definition: Promote adoption of practices for the protection, restoration, and m
   resilience.
 focus_area: Conservation and Land Management
 gwo_id: GWO.Q1
+largest_program:
+  expenditure_amount: 234252981.0
+  name: Office for Coastal Management
+  permalink: /program/11.473
 permalink: /gwo/GWO_Q1
+smallest_program:
+  expenditure_amount: -980826.11
+  name: Feral Swine Eradication and Control Pilot Program
+  permalink: /program/10.934
 title: Improve Conservation of Natural Habitats and Ecosystems
+total_agencies: 5
+total_expenditure: 789806843.87
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 0.0

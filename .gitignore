@@ -22,5 +22,11 @@ data_processing/scripts/baseline/
 data_processing/scripts/logs/
 data_processing/scripts/reports/
 
+# QA report of programs missing a GWO or PON assignment
+data_processing/qa/
+
 # temporary database for summarizing usaspending.gov award files
 data_processing/transformed/temp_data.db
+
+# data checks report
+data_processing/qa

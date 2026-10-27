@@ -4,8 +4,18 @@ definition: Enhancing the physical and mental health, independence, and quality 
   life of American's living with disabilities.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L4
+largest_program:
+  expenditure_amount: 567065283.0
+  name: Money Follows the Person Rebalancing Demonstration
+  permalink: /program/93.791
 permalink: /gwo/GWO_L4
+smallest_program:
+  expenditure_amount: -10582268.44
+  name: Disability Innovation Fund (DIF)
+  permalink: /program/84.421
 title: Eliminate Barriers for People with Disabilities
+total_agencies: 4
+total_expenditure: 1179718252.61
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 33421222.53

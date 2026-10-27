@@ -4,7 +4,7 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 
 ## Home (`/`)
 
-- [ ] Open the [homepage](https://fpi.omb.gov/). Confirm the four headline numbers (programs, spending, agencies, and outcomes) are filled in and that the spending figure is labeled for the fiscal year shown on the page.
+- [ ] Open the [homepage](https://fpi.omb.gov/). Confirm the three headline numbers (programs, spending, and agencies) are filled in and that the spending figure is labeled for the fiscal year shown on the page.
 - [ ] From the homepage, select **Explore programs**. Confirm the next page is Program Search and that it lists real programs rather than an error message.
 - [ ] From the homepage, select **About**. Confirm the next page is About the FPI and that it still describes SAM.gov and USAspending.gov as data sources.
 - [ ] From the homepage, follow the **Find programs**, **Explore spending**, and **Understand methodology** cards. Confirm they open Program Search, the category spending page, and About the FPI.
@@ -32,7 +32,7 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 
 ## About the FPI (`/about/fpi`)
 
-- [ ] Open [About the FPI](https://fpi.omb.gov/about/fpi). Confirm the overview still says the inventory uses SAM.gov, USAspending.gov, and PaymentAccuracy.gov, and that the fiscal-year spending total matches the homepage spending headline.
+- [ ] Open [About the FPI](https://fpi.omb.gov/about/fpi). Confirm **What data is used for the FPI?** still names SAM.gov, USAspending.gov, and PaymentAccuracy.gov, and that the fiscal-year spending total in **What Federal programs are represented in the current FPI?** matches the homepage spending headline.
 - [ ] On About the FPI, open the most recent year in **FPI Timeline and Evolution**. Confirm that year describes the same completed fiscal year shown on the homepage and category pages.
 
 ## Data, Terms & Concepts (`/about/terms`)
@@ -50,7 +50,7 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 - [ ] Open the [Supplemental Nutrition Assistance Program (10.551)](https://fpi.omb.gov/program/10.551) page. Confirm the title, assistance listing number, Department of Agriculture / Food and Nutrition Service, and overview text match the [SNAP listing on SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view).
 - [ ] On that SNAP page, note the latest fiscal-year spending on the Overview or Spending tab. Confirm it is in the same ballpark as the [SNAP results on USAspending.gov](https://www.usaspending.gov/search/?hash=468b38afca1a160cf891746a1cab58f1).
 - [ ] On that SNAP page, open the Spending tab’s improper-payment information. Confirm the program name and rate are consistent with the [SNAP entry on PaymentAccuracy.gov](https://paymentaccuracy.gov/program/usda-supplemental-nutrition-assistance-program).
-- [ ] On that SNAP page, check the Purpose section. Confirm the objective is **End Hunger** and that at least one listed outcome is **Improve Availability of Healthy Foods**, and that both links open the matching GWO and PON pages.
+- [ ] On that SNAP page, check the Overview tab. Confirm the objective is **End Hunger** and that its link opens the matching GWO page, and that no program outcome is listed.
 - [ ] On that SNAP page, open the Authorization tab. Confirm the authorizing statutes are the same ones shown on the [SNAP listing on SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view).
 
 ## Government-wide objective (`/gwo/<gwo>`)
@@ -60,8 +60,7 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 
 ## Program outcome (`/pon/<pon>`)
 
-- [ ] Open the [Improve Availability of Healthy Foods](https://fpi.omb.gov/pon/PON_455) page. Confirm the page is labeled as a program outcome, the definition describes healthier food access, and **Supplemental Nutrition Assistance Program** appears in the related programs list.
-- [ ] On that PON page, open SNAP from the related programs list. Confirm it is assistance listing **10.551** and that the title matches the [SNAP listing on SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view).
+- [ ] Open the [Improve Availability of Healthy Foods](https://fpi.omb.gov/pon/PON_455) address. Confirm it is not a published program-outcome page in the current inventory.
 
 ## Shared
 

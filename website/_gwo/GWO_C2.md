@@ -4,8 +4,18 @@ definition: Ensuring access to reliable, high-quality, and affordable internet, 
   and broadband services for communities across the country.
 focus_area: Community, Area, and Regional Development
 gwo_id: GWO.C2
+largest_program:
+  expenditure_amount: 16936623108.2
+  name: Broadband Equity, Access, and Deployment Program
+  permalink: /program/11.035
 permalink: /gwo/GWO_C2
+smallest_program:
+  expenditure_amount: -320266749.89
+  name: Emergency Connectivity Fund Program
+  permalink: /program/32.009
 title: Provide Quality, Reliable Telecommunications Systems
+total_agencies: 4
+total_expenditure: 22036007027.61
 where_used:
 - agency: Federal Communications Commission
   expenditure_amount: -61439597.97

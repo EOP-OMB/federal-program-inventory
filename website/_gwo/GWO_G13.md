@@ -4,8 +4,18 @@ definition: Advancing rigorous STEM learning, effective teaching, and environmen
   that inspire curiosity, innovation, and problem-solving.
 focus_area: STEM Education
 gwo_id: GWO.G13
+largest_program:
+  expenditure_amount: 7577516.99
+  name: Tribal Colleges Endowment Program
+  permalink: /program/10.222
 permalink: /gwo/GWO_G13
+smallest_program:
+  expenditure_amount: -331520.85
+  name: Hispanic Serving Institutions Education Grants
+  permalink: /program/10.223
 title: Increase Quality of STEM Education
+total_agencies: 3
+total_expenditure: 19981403.7
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 3382897.01

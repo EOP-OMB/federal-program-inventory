@@ -5,8 +5,18 @@ definition: Promote adoption of practices for the protection, restoration, and m
   and support resilience of ecosystems.
 focus_area: Conservation and Land Management
 gwo_id: GWO.Q2
+largest_program:
+  expenditure_amount: 128879254.89
+  name: Pacific Salmon Treaty Program
+  permalink: /program/11.438
 permalink: /gwo/GWO_Q2
+smallest_program:
+  expenditure_amount: -27385478.34
+  name: Cooperative Endangered Species Conservation Fund
+  permalink: /program/15.615
 title: Improve Conservation of Wildlife and Natural Resources
+total_agencies: 7
+total_expenditure: 813021429.46
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 24585975.8

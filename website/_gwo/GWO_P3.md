@@ -4,8 +4,18 @@ definition: Strengthening the support and advocacy for survivors of crime with t
   resources needed to empower them to rebuild, recover, or navigate the justice system.
 focus_area: Law Enforcement Support
 gwo_id: GWO.P3
+largest_program:
+  expenditure_amount: 1256708563.97
+  name: Crime Victim Assistance
+  permalink: /program/16.575
 permalink: /gwo/GWO_P3
+smallest_program:
+  expenditure_amount: -16587263.32
+  name: VOCA Tribal Victim Services Set-Aside Program
+  permalink: /program/16.841
 title: Support Survivors of Crime
+total_agencies: 3
+total_expenditure: 1927521432.47
 where_used:
 - agency: Department of Justice
   expenditure_amount: 19521126.75

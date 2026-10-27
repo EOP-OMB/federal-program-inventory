@@ -4,8 +4,19 @@ definition: Advancing military innovation and technology to maintain America’s
   advantage.
 focus_area: Defense Capability
 gwo_id: GWO.ND2
+largest_program:
+  expenditure_amount: 669476937.28
+  name: Basic and Applied Scientific Research
+  permalink: /program/12.300
 permalink: /gwo/GWO_ND2
+smallest_program:
+  expenditure_amount: -2210.04
+  name: Homeland Security Research, Development, Testing, Evaluation and Demonstration
+    of Technologies Related to Countering Weapons of Mass Destruction
+  permalink: /program/97.077
 title: Advance Defense Research
+total_agencies: 3
+total_expenditure: 2809066189.75
 where_used:
 - agency: Department of Defense
   expenditure_amount: 2646837.8

@@ -4,8 +4,18 @@ definition: 'Strengthening the quality of and opportunities for the public to pa
   in arts and humanities education and programming. '
 focus_area: Access and Appreciation
 gwo_id: GWO.E1
+largest_program:
+  expenditure_amount: 69971857.32
+  name: Promotion of the Arts Partnership Agreements
+  permalink: /program/45.025
 permalink: /gwo/GWO_E1
+smallest_program:
+  expenditure_amount: 0.0
+  name: Arts and Artifacts Indemnity
+  permalink: /program/45.201
 title: Promote the Arts and Humanities
+total_agencies: 2
+total_expenditure: 155125913.41
 where_used:
 - agency: National Endowment for the Arts
   expenditure_amount: 0.0

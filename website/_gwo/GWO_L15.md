@@ -6,8 +6,18 @@ definition: Improving quality, access, and availability of affordable healthcare
   care for vulnerable populations like seniors, people with disabilities, or children.
 focus_area: Healthcare Access
 gwo_id: GWO.L15
+largest_program:
+  expenditure_amount: 666131123061.05
+  name: Grants to States for Medicaid
+  permalink: /program/93.778
 permalink: /gwo/GWO_L15
+smallest_program:
+  expenditure_amount: 0.0
+  name: Credit for employee health insurance expenses of small business
+  permalink: /program/TC.136
 title: Provide Healthcare Coverage
+total_agencies: 2
+total_expenditure: 1972218910056.3
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 16089981136.0

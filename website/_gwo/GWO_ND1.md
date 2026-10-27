@@ -3,8 +3,18 @@ category: National Defense
 definition: Advancing the skills and readiness of U.S. service members.
 focus_area: Defense Capability
 gwo_id: GWO.ND1
+largest_program:
+  expenditure_amount: 117388258.0
+  name: Montgomery GI Bill Selected Reserve
+  permalink: /program/64.032
 permalink: /gwo/GWO_ND1
+smallest_program:
+  expenditure_amount: 0.0
+  name: Language Training Center
+  permalink: /program/12.579
 title: Improve Military Training and Education
+total_agencies: 2
+total_expenditure: 162733007.1
 where_used:
 - agency: Department of Defense
   expenditure_amount: 45344749.1

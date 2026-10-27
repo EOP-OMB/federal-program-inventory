@@ -4,8 +4,18 @@ definition: Ensuring reliability, availability, and capacity of multi-modal publ
   transit systems and modes to meet the needs of all users.
 focus_area: Multi–modal Transportation
 gwo_id: GWO.T6
+largest_program:
+  expenditure_amount: 9766979367.55
+  name: Federal Transit Formula Grants
+  permalink: /program/20.507
 permalink: /gwo/GWO_T6
+smallest_program:
+  expenditure_amount: -1466423.25
+  name: Job Access and Reverse Commute Program
+  permalink: /program/20.516
 title: Sustain A Multi-modal Transportation Infrastructure System
+total_agencies: 2
+total_expenditure: 24508460295.42
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 161052114.0

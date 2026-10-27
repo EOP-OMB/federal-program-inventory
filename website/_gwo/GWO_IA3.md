@@ -3,8 +3,18 @@ category: International Affairs
 definition: Delivering effective humanitarian aid and development assistance.
 focus_area: International Relations and Foreign Affairs
 gwo_id: GWO.IA3
+largest_program:
+  expenditure_amount: 1630789287.36
+  name: Contributions to International Organizations for Overseas Assistance
+  permalink: /program/19.515
 permalink: /gwo/GWO_IA3
+smallest_program:
+  expenditure_amount: -19834324.0
+  name: Ocean Freight Reimbursement Program (OFR)
+  permalink: /program/98.003
 title: Provide International Development and Humanitarian Assistance
+total_agencies: 3
+total_expenditure: 2100579358.87
 where_used:
 - agency: Department of State
   expenditure_amount: 1630789287.36

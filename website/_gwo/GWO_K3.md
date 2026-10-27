@@ -3,8 +3,18 @@ category: Food and Nutrition
 definition: Eliminating hunger among U.S. households.
 focus_area: Food and Nutrition Assistance
 gwo_id: GWO.K3
+largest_program:
+  expenditure_amount: 87123680426.75
+  name: Supplemental Nutrition Assistance Program
+  permalink: /program/10.551
 permalink: /gwo/GWO_K3
+smallest_program:
+  expenditure_amount: -134590333.26
+  name: Emergency Food and Shelter National Board Program
+  permalink: /program/97.024
 title: End Hunger
+total_agencies: 3
+total_expenditure: 137046350460.12
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 56397000.0

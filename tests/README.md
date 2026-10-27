@@ -9,6 +9,7 @@ test_extract.py: Tests for data extraction functionality
 test_transform.py: Tests for data transformation functionality
 test_load.py: Tests for data loading/generation functionality
 test_constants.py: Tests for constants and configuration
+test_check_data_quality.py: Tests for data quality checks before and after transform
 
 Run all tests: pytest
 Run with coverage report: pytest --cov=data_processing

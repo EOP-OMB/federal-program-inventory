@@ -4,8 +4,18 @@ definition: Strengthening the sustainable management and protection of water res
   and ecosystems to safeguard their long-term health and availability.
 focus_area: Water Resources
 gwo_id: GWO.Q4
+largest_program:
+  expenditure_amount: 1467827108.11
+  name: Environmental Quality Incentives Program
+  permalink: /program/10.912
 permalink: /gwo/GWO_Q4
+smallest_program:
+  expenditure_amount: -3100000.0
+  name: Lake Mead/Las Vegas Wash
+  permalink: /program/15.540
 title: Improve Water Resource and Ecosystem Management
+total_agencies: 5
+total_expenditure: 3077383334.75
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 1247328.75

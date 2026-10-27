@@ -46,11 +46,7 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":3660000000.0,"forgone_revenue":30000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":20000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":0.0},{"x":"2026","outlays":0.0,"forgone_revenue":0.0}]'
 outlays: null
 permalink: /program/TC.028.html
-pons:
-- permalink: /pon/PON_N73
-  pon: Expand Domestic Energy Production
-- permalink: /pon/PON_866
-  pon: Increase Financial Support for Businesses
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

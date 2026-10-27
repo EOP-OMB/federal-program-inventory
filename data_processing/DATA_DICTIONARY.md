@@ -257,13 +257,15 @@ Junction table linking programs to Government-Wide Outcomes (GWO).
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
-| program_id | TEXT | FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
+| program_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
 | gwo_id | TEXT | FOREIGN KEY REFERENCES gwo(id), NOT NULL | Reference to the GWO |
 
 **Source**: `FPI_GWO_assignment.csv`  
 **Notes**:
-- Maps programs to their assigned GWOs
-- Multiple GWOs can be assigned to a single program
+- Maps programs to their assigned GWO
+- Primary key is program_id; each program can have at most one GWO
+- Uses `ON CONFLICT DO NOTHING` to skip a second assignment for the same program
+- Foreign keys reject assignments to a missing program or GWO
 
 ---
 
@@ -273,13 +275,16 @@ Junction table linking programs to Program Outcome Numbers (PON).
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
-| program_id | TEXT | FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
-| pon_id | TEXT | FOREIGN KEY REFERENCES pon(id), NOT NULL | Reference to the PON |
+| program_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
+| pon_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES pon(id), NOT NULL | Reference to the PON |
 
 **Source**: `FPI_PON_assignment.csv`  
 **Notes**:
+- Composite primary key (program_id, pon_id)
 - Maps programs to their assigned PONs
 - Multiple PONs can be assigned to a single program
+- Uses `ON CONFLICT DO NOTHING` to prevent duplicate pairs
+- Foreign keys reject assignments to a missing program or PON
 
 ---
 

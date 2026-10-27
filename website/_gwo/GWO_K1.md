@@ -4,8 +4,18 @@ definition: 'Eliminating or minimizing disruptions in the food supply chain to e
   safe, reliable, and nutritious food is available across American communities. '
 focus_area: Food and Nutrition Assistance
 gwo_id: GWO.K1
+largest_program:
+  expenditure_amount: 63236066.66
+  name: International Fisheries Commissions
+  permalink: /program/19.087
 permalink: /gwo/GWO_K1
+smallest_program:
+  expenditure_amount: -1197599.62
+  name: Farm to School Grant Program
+  permalink: /program/10.575
 title: Improve Food Supply Chains
+total_agencies: 2
+total_expenditure: 68571720.44
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 2000000.0
