@@ -4,8 +4,18 @@ definition: 'Ensure public health with available, reliable, safe, and efficient 
   waste collection, disposal, or recycling services. '
 focus_area: Health and Wellbeing
 gwo_id: GWO.L8
+largest_program:
+  expenditure_amount: 26619044.0
+  name: Reduce, Reuse, Recycling Education and Outreach Grants
+  permalink: /program/66.921
 permalink: /gwo/GWO_L8
+smallest_program:
+  expenditure_amount: 662217.0
+  name: Solid Waste Management Assistance Grants
+  permalink: /program/66.808
 title: Provide Quality Solid Waste Management Systems
+total_agencies: 2
+total_expenditure: 50107963.17
 where_used:
 - agency: Environmental Protection Agency
   expenditure_amount: 26619044.0

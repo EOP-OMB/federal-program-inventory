@@ -4,8 +4,18 @@ definition: Enhancing the reach, quality, and reliability of healthcare so that 
   can access timely, high-quality care in their communities.
 focus_area: Healthcare Access
 gwo_id: GWO.L14
+largest_program:
+  expenditure_amount: 5294152431.37
+  name: Health Center Program
+  permalink: /program/93.224
 permalink: /gwo/GWO_L14
+smallest_program:
+  expenditure_amount: -10106623.19
+  name: Congressional Directives
+  permalink: /program/93.493
 title: Strengthen Healthcare Services
+total_agencies: 2
+total_expenditure: 6214953304.38
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 11913397.22

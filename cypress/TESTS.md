@@ -4,7 +4,7 @@ Automated tests run in the `cypress` container.
 
 ## Home
 
-- [ ] Homepage fixture loads
+- [ ] Homepage fixture loads an Outcomes count of 0
 - [ ] Spending tooltip opens and closes on desktop
 - [ ] Spending tooltip opens and closes on tablet
 - [ ] Spending tooltip closes via icon, close button, and outside click
@@ -21,11 +21,11 @@ Automated tests run in the `cypress` container.
 
 ## Search
 
+- [ ] Program outcomes filter is absent
 - [ ] Applicant filter wrapping at a wide viewport
-- [ ] Search within PON filter
 - [ ] Program name sorting
 - [ ] Keyword search defaults to relevancy sorting
-- [ ] Agency, GWO, and PON filters serialize and restore from the URL
+- [ ] Agency and GWO filters serialize and restore from the URL
 - [ ] Search text and result count restore after refresh
 - [ ] Clear filters restores search text, applicant filters, and global count
 - [ ] Loading-results skeleton screenshot

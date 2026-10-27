@@ -5,8 +5,18 @@ definition: Increasing the operational capacity and effectiveness of federal, st
   threats.
 focus_area: Law Enforcement Support
 gwo_id: GWO.P2
+largest_program:
+  expenditure_amount: 608400000.0
+  name: Fiscal Year 2025 Detention Support Grant Program
+  permalink: /program/97.158
 permalink: /gwo/GWO_P2
+smallest_program:
+  expenditure_amount: -5497904.2
+  name: National Criminal History Improvement Program (NCHIP)
+  permalink: /program/16.554
 title: Ensure Law Enforcement Readiness
+total_agencies: 5
+total_expenditure: 1096193296.32
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 124657596.65

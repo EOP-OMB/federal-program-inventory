@@ -9,7 +9,8 @@ events {
 }
 
 http {
-  include   mime.types;
+  include   /etc/nginx/mime.types;
+  types_hash_max_size 4096;
   index     index.html index.htm;
   server_tokens off;
   server {

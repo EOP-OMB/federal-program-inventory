@@ -4,8 +4,18 @@ definition: Providing businesses with access to capital and investment opportuni
   to support their growth and competitiveness.
 focus_area: Business Development
 gwo_id: GWO.B1
+largest_program:
+  expenditure_amount: 40064097.85
+  name: Microloan Program
+  permalink: /program/59.046
 permalink: /gwo/GWO_B1
+smallest_program:
+  expenditure_amount: -58751000.0
+  name: CHIPS Incentives Program
+  permalink: /program/11.037
 title: Provide Lending and Investment Opportunities
+total_agencies: 5
+total_expenditure: -28027226.3
 where_used:
 - agency: Small Business Administration
   expenditure_amount: -8498735.2

@@ -3,8 +3,18 @@ category: Science and Technology
 definition: 'Advancing science, research, and knowledge across disciplines and sectors. '
 focus_area: General science and basic research
 gwo_id: GWO.S1
+largest_program:
+  expenditure_amount: 1654004887.0
+  name: Mathematical and Physical Sciences
+  permalink: /program/47.049
 permalink: /gwo/GWO_S1
+smallest_program:
+  expenditure_amount: -2882583.97
+  name: Social Security Research and Demonstration
+  permalink: /program/96.007
 title: Increase Scientific Research and Knowledge
+total_agencies: 11
+total_expenditure: 10704263309.84
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 5000000.0

@@ -4,8 +4,18 @@ definition: Ensure public health with available, reliable, safe, and hygienic sa
   services.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L7
+largest_program:
+  expenditure_amount: 441613443.45
+  name: Water and Waste Disposal Systems for Rural Communities
+  permalink: /program/10.760
 permalink: /gwo/GWO_L7
+smallest_program:
+  expenditure_amount: 280000.0
+  name: Grant Program to Establish a Fund for Financing Water and Wastewater Projects
+  permalink: /program/10.864
 title: Provide Quality Sanitation Services
+total_agencies: 2
+total_expenditure: 495515581.17
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 280000.0

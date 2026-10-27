@@ -7,6 +7,10 @@ describe('Test: index', () => {
   it('should load the test page', () => {
     cy.visit(testUrl);
     cy.get('body').should('be.visible');
+    cy.get('.info-sections').first().within(() => {
+      cy.contains('Programs').should('be.visible');
+      cy.contains('Agencies').should('be.visible');
+ });
   });
 
   it('opens and closes the spending tooltip on desktop', () => {

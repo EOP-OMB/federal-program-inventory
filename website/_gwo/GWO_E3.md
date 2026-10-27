@@ -5,8 +5,18 @@ definition: Providing opportunities for individuals to learn about their own his
   learning.
 focus_area: Cultural Heritage and Traditions
 gwo_id: GWO.E3
+largest_program:
+  expenditure_amount: 136392037.36
+  name: American History and Civics Education
+  permalink: /program/84.422
 permalink: /gwo/GWO_E3
+smallest_program:
+  expenditure_amount: 0.0
+  name: American Latino Museum Internship and Fellowship Initiative
+  permalink: /program/45.031
 title: Provide Cultural Educational Experiences
+total_agencies: 6
+total_expenditure: 208384725.82
 where_used:
 - agency: Department of Education
   expenditure_amount: 42843589.3

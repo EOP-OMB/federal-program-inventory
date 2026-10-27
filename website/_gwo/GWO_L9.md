@@ -4,8 +4,18 @@ definition: Ensure public health with available, reliable, and safe drinking wat
   systems that meet water quality standards.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L9
+largest_program:
+  expenditure_amount: 5998545426.0
+  name: Drinking Water State Revolving Fund
+  permalink: /program/66.468
 permalink: /gwo/GWO_L9
+smallest_program:
+  expenditure_amount: -131419.58
+  name: Navajo-Gallup Water Supply
+  permalink: /program/15.552
 title: Ensure Safe Drinking Water
+total_agencies: 4
+total_expenditure: 8367230170.46
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 0.0

@@ -3,8 +3,18 @@ category: Cultural Affairs
 definition: Increasing public engagement and participation with cultural institutions.
 focus_area: Cultural Institutions
 gwo_id: GWO.E5
+largest_program:
+  expenditure_amount: 179196949.15
+  name: Grants to States
+  permalink: /program/45.310
 permalink: /gwo/GWO_E5
+smallest_program:
+  expenditure_amount: 0.0
+  name: International Research and Studies
+  permalink: /program/84.017
 title: Utilize America's Cultural Institutions
+total_agencies: 6
+total_expenditure: 241132356.47
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 9514042.68

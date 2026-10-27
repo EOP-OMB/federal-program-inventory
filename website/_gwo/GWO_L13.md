@@ -4,8 +4,18 @@ definition: Reducing the incidence and impact of infectious diseases through pre
   and treatment.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L13
+largest_program:
+  expenditure_amount: 876140652.81
+  name: Global AIDS
+  permalink: /program/93.067
 permalink: /gwo/GWO_L13
+smallest_program:
+  expenditure_amount: -1975894838.15
+  name: Epidemiology and Laboratory Capacity for Infectious Diseases (ELC)
+  permalink: /program/93.323
 title: Eliminate Infectious Diseases
+total_agencies: 2
+total_expenditure: 613554581.97
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 22928918.17

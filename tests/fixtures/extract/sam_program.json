@@ -1,0 +1,2344 @@
+[
+  {
+    "data": {
+      "title": "Manufacturing Extension Partnership",
+      "version": "2.0",
+      "website": "http://www.mep.nist.gov",
+      "contacts": {
+        "local": {
+          "flag": "none",
+          "description": ""
+        },
+        "headquarters": [
+          {
+            "fax": null,
+            "zip": "20899",
+            "city": "Gaithersburg",
+            "email": "Robert.Ivester@nist.gov",
+            "phone": "301-975-5200",
+            "state": "MD",
+            "title": null,
+            "country": "US",
+            "fullName": "Robert Ivester",
+            "contactId": "98a2f878a38b1f49cc90926ae8f0e521",
+            "streetAddress": "100 Bureau Drive \nStop 4800",
+            "streetAddress2": ""
+          }
+        ]
+      },
+      "projects": {
+        "list": [],
+        "isApplicable": false
+      },
+      "financial": {
+        "accounts": [
+          {
+            "code": "13-0525-0-1-376",
+            "description": null
+          }
+        ],
+        "description": "Individual awards for extension service planning and pilot testing and special project agreements generally range between $25,000  and $100,000. Awards for Manufacturing Extension Centers generally range between of $500,000 to $15,000,000 annually.  Competitive awards generally range between $500,000 and $1,000,000 per award.",
+        "obligations": [
+          {
+            "values": [
+              {
+                "year": 2024,
+                "actual": 151675000
+              },
+              {
+                "year": 2025,
+                "actual": 112745000
+              },
+              {
+                "year": 2026,
+                "estimate": 125000000
+              }
+            ],
+            "description": "",
+            "obligationId": "e931401e59d14edeacbfb65dd31d10a4",
+            "assistanceType": "F002",
+            "awardAmountBasisCode": [
+              "A04",
+              "A01"
+            ],
+            "awardRecipientBasisCode": [
+              "R01",
+              "R02"
+            ]
+          }
+        ],
+        "accomplishments": {
+          "list": [],
+          "isApplicable": false
+        },
+        "isFundedCurrentFY": false,
+        "additionalInformation": "Individual awards for extension service planning and pilot testing and special project agreements generally range between $25,000 and $100,000.  Awards for Manufacturing Extension Centers generally range between $500,000 to $15,000,000 annually.  Competitive awards generally range between $500,000 and $1,000,000 per award.",
+        "rangeAndAverageAssistance": [
+          {
+            "fiscalYear": "2025",
+            "averageAwardAmount": "7512500",
+            "maximumAwardAmount": "15000000",
+            "minimumAwardAmount": "25000"
+          },
+          {
+            "fiscalYear": "2026",
+            "averageAwardAmount": "7512500",
+            "maximumAwardAmount": "15000000",
+            "minimumAwardAmount": "25000"
+          }
+        ]
+      },
+      "objective": "Enhance competitiveness, productivity, and technological performance in United States manufacturing.\r\nEstablish, maintain, and support Manufacturing Extension Centers and services, the functions of which are to improve the competitiveness of firms by accelerating the usage of appropriate manufacturing technology by smaller\r\nU.S. based manufacturing firms, and partner with the States in developing such technical assistance programs and services for their manufacturing base.",
+      "assistance": {
+        "appeal": {
+          "interval": "8"
+        },
+        "renewal": {
+          "interval": "9",
+          "description": "For MEP Centers, future or continued funding will be based on availability of funds, on satisfactory performance, and are subject to re-competition every ten (10) years. Other awards are not eligible for renewal."
+        },
+        "approval": {
+          "interval": "5",
+          "description": "Consult the applicable Federal Register Notice and/or Notice of Funding Opportunity or contact the MEP headquarters for application deadlines."
+        },
+        "payments": {
+          "list": [
+            {
+              "type": "D",
+              "frequency": "D",
+              "paymentId": "e2b71b07fefc4741b222bf9c9d4d2e8c",
+              "fundingDate": "",
+              "spendingPeriod": 10,
+              "spendingPeriodType": "Y",
+              "frequencyDescription": null,
+              "spendingPeriodDescription": "For extension service planning and pilot testing agreements, one year.  For Manufacturing Extension Centers , duration of support is up to 10 years, based upon continued positive evaluations in accordance with 15 U.S.C 278k(g).  For competitive awards, up to three years.  Method of awarding/releasing assistance.  Payments are made to award recipients in accordance with 2 C.F.R. 200.305."
+            }
+          ]
+        },
+        "deadlines": {
+          "flag": "C",
+          "list": []
+        },
+        "awardProcedure": {
+          "description": "All timely submitted and qualified proposals are reviewed by a NIST selection panel. For proposals for Manufacturing Extension Centers, the finalists' proposals are selected on the basis of published evaluation criteria, and may undergo a site visit. For proposals for competitive awards, proposals are selected on the basis of published evaluation criteria, and may undergo a site visit. For proposals for extension services planning and pilot testing, proposals are selected on the basis of published evaluation criteria."
+        },
+        "selectionCriteria": {
+          "description": "Proposals are selected on the basis of merit.  For MEP Centers, selection criteria are published in the applicable Federal Register Notice and accompanying Notice of Funding Opportunity. For other programs, selection criteria are published in the Notice of Funding Opportunity.",
+          "isApplicable": true
+        },
+        "applicationProcedure": {},
+        "preApplicationCoordination": {
+          "description": "Preapplication coordination is required.  Environmental impact information is not required for this program.  This program is excluded from coverage under E.O. 12372.  The extension service planning and pilot testing portion of this program is eligible for coverage under E.O. 12372, \"Intergovernmental Review of Federal Programs\". An applicant should consult the office or official designated as  the single point of contact in his or her State for more information on the process the State requires to be   followed in applying for assistance, if the State has selected the program for review. For Manufacturing Extension Centers there is no formal preapplication process. Environmental impact information is not required for the MEP Center program. The MEP Center program is excluded from coverage under E.O. 12372.",
+          "environmentalImpact": {
+            "reports": [
+              {
+                "isSelected": true,
+                "reportCode": "otherRequired"
+              }
+            ]
+          }
+        }
+      },
+      "compliance": {
+        "maps": {
+          "basis": [],
+          "usageList": [],
+          "areCBSADelineationsUsed": "no",
+          "currentCBSADelineationAdopted": {
+            "historicalDelineationSelection": ""
+          }
+        },
+        "audit": {
+          "frequency": [
+            "T"
+          ],
+          "description": "Refer to the link below for 2 CFR Subpart F Audit Requirements.  \nhttps://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-F",
+          "isApplicable": true
+        },
+        "records": {
+          "description": "All financial and programmatic records of awardees  or subawardees are required to be retained in accordance with 2 CFR 200.333.",
+          "retentionPeriod": 10,
+          "retentionPeriodType": "Y"
+        },
+        "reports": [
+          {
+            "code": "progress",
+            "frequency": [
+              "S"
+            ],
+            "description": "Semi-annual progress and financial reports are required. Each request for reimbursement must be accompanied by a report of applicant's cost-share contribution, unless otherwise specified in the Notice of Funding Opportunity (NOFO) or in the terms and conditions of a specific award."
+          },
+          {
+            "code": "other",
+            "frequency": [
+              "S"
+            ],
+            "description": "Program Reports:  Semi-annual progress and semi-annual financial reports are required , unless otherwise specified in the Notice of Funding Opportunity  (NOFO) or in the terms and conditions of a specific award.\n\nCash Reports:  Semi-annual progress and financial reports are required.  Each request for reimbursement must be accompanied by a report of applicant's cost-share contribution, unless otherwise specified in the Notice of Funding Opportunity (NOFO) or in the terms and conditions of a specific award.\n\nExpenditure Reports:  Semi-annual progress and financial reports are required.  Each request for reimbursement must be accompanied by a report of applicant's cost-share contribution, unless otherwise specified in the Notice of Funding Opportunity (NOFO) or in the terms and conditions of a specific award.\n\nPerformance Reports:  Each awardee receives an annual performance review prior to annual renewal of Federal funding.  In addition, 15 USC 278k(g) requires each MEP Center awardee to be peer reviewed by an external panel during year three and year eight of an award and to undergo a Secretarial review in year five of an award.  Continued funding is predicated on satisfactory peer and Secretarial reviews."
+          }
+        ],
+        "documents": {
+          "description": "",
+          "isApplicable": false
+        },
+        "CFR200Requirements": {
+          "questions": [
+            {
+              "code": "subpartB",
+              "isSelected": true
+            },
+            {
+              "code": "subpartC",
+              "isSelected": true
+            },
+            {
+              "code": "subpartD",
+              "isSelected": true
+            },
+            {
+              "code": "subpartE",
+              "isSelected": true
+            },
+            {
+              "code": "subpartF",
+              "isSelected": true
+            }
+          ],
+          "description": ""
+        },
+        "formulaAndMatching": {
+          "moe": {
+            "description": ""
+          },
+          "types": {
+            "moe": false,
+            "formula": true,
+            "matching": true
+          },
+          "formula": {
+            "part": "278",
+            "title": "Statutory Formula:  Title Chapter",
+            "chapter": "15",
+            "subPart": "15 U.S.C. \u00a7 278",
+            "publicLaw": "15 U.S.C. \u00a7 278",
+            "description": "For MEP Center projects under 15 U.S.C. \u00a7 278k, applicants must contribute at least 50 percent of the capital and of the annual operating and maintenance costs required to establish and operate a MEP Center. For competitive awards under 15 U.S.C. \u00a7 278k-1, there is not a matching share requirement. For extension service planning and pilot services agreements under 15 U.S.C. \u00a7 278l, there is not a matching requirement."
+          },
+          "matching": {
+            "percent": "50",
+            "description": "For MEP Center projects under 15 U.S.C. \u00a7 278k, applicants must contribute at least 50 percent of the capital and of the annual operating and maintenance costs required to establish and operate a MEP Center. For competitive awards under 15 U.S.C. \u00a7 278k-1, there is not a matching share requirement. For extension service planning and pilot services agreements under 15 U.S.C. \u00a7 278l, there is not a matching requirement.",
+            "requirementFlag": "E"
+          },
+          "isApplicable": true
+        }
+      },
+      "fiscalYear": 2025,
+      "description": "The Manufacturing Extension Partnership (MEP) National Network is a public-private partnership that delivers comprehensive, proven solutions by helping small and medium-sized manufacturers grow, make operational improvements, and reduce risk.\n\nThe MEP is committed to supporting manufacturers and building productive partnerships in all fifty states and Puerto Rico. Our goal is to ensure the competitiveness of U.S. manufacturing in the global economy.",
+      "eligibility": {
+        "usage": {
+          "loanTerms": {
+            "description": "",
+            "isApplicable": false
+          },
+          "restrictions": {
+            "description": "",
+            "isApplicable": false
+          },
+          "discretionaryFund": {
+            "description": "",
+            "isApplicable": false
+          }
+        },
+        "applicant": {
+          "types": [
+            "ET11010",
+            "ET22020",
+            "ET26010",
+            "ET26020",
+            "ET26030",
+            "ET41010",
+            "ET23010"
+          ],
+          "description": "For MEP Center projects under 15 U.S.C. \u00a7 278k, eligible applicants shall be U.S.\u00ad-based nonprofit institutions or organizations or a consortium thereof; institutions of higher education; or a State, U.S. territory, local or tribal government. Applicants generally must contribute at least 50 percent of the proposed service's capital, annual operating and maintenance costs. For competitive awards under 15 U.S.C. \u00a7 278k-1, eligible applicants are existing MEP Centers. For extension service planning and pilot services agreements under 15 U.S.C. \u00a7 278l, eligible applicants shall be State governments or State- affiliated nonprofit organizations. For multi\u00adstate regional planning and pilot services agreements, eligible applicants shall be State and local governments, representing either themselves or a consortium of States, or appropriate private or public nonprofit organizations, operating on behalf of a consortium of States or as a representative of States."
+        },
+        "limitation": {
+          "awarded": "other",
+          "description": "For extension service planning and pilot \u00adtesting agreements, one year. For Manufacturing Extension Centers, duration of support is up to 10 years, based upon continued positive evaluations in accordance with 15 U.S.C. \u00a7 278k(g). For competitive awards, up to three years.",
+          "awardedDescription": "Method of awarding/releasing assistance: Payments are made to award recipients in accordance with 2 C.F.R. 200.305."
+        },
+        "beneficiary": {
+          "types": [
+            "ET59999"
+          ],
+          "description": "Beneficiary shall be U.S.-based manufacturing firms, especially smaller companies.",
+          "isSameAsApplicant": false
+        },
+        "documentation": {
+          "description": [
+            "An applicant for a Manufacturing Extension Center cooperative agreement must submit a proposal in accordance with the Notice of Funding Opportunity (NOFO), which generally requires that applicants provide assurance that they will contribute 50 percent or more of the proposed Center's capital, annual operating and maintenance costs. Proposals also must contain sufficient information regarding management, technical, and technology strengths sufficient for a formal merit review of the proposal in accordance with the requirements set forth in the applicable NOFO. Applicants must have and demonstrate competence in areas for which financial assistance is requested. Costs will be determined in accordance with applicable cost principles found in 2 CFR 200 - Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards."
+          ],
+          "isApplicable": true
+        },
+        "assistanceUsage": {
+          "types": [
+            "ZZ999"
+          ],
+          "description": "Federal funding provided under this program shall be used for the creation and support of manufacturing  extension centers (MEP Centers), or used by the States to plan for and pilot test state\u00adwide extension services. It may also be used to plan for and pilot test services within a multi\u00adstate region which has sufficient regional linkages to justify such services. Extension service providers shall be affiliated with a U.S. based nonprofit institution or organization, or a consortium thereof; institution of higher education; or a State, U.S. territory, local or tribal government. Funds may be used for the purpose of demonstrations, technology deployment, active transfer and dissemination of research findings and extension service expertise to a wide range of companies and enterprises, especially small manufacturers with fewer than 500 employees. Congressional funding has been provided annually since fiscal year 1988 (under Manufacturing Technology Centers and the State Technology Extension Program, which were combined into the Hollings Manufacturing Extension Partnership in fiscal year 1993)."
+        },
+        "assistanceRestriction": {
+          "types": [
+            "UN002"
+          ]
+        }
+      },
+      "programNumber": "11.611",
+      "authorizations": {
+        "list": [
+          {
+            "USC": {
+              "title": "15",
+              "section": "278k",
+              "description": ""
+            },
+            "act": {
+              "description": "National Institute of Standards and Technology (NIST) Act, 15 U.S.C. \u00a7 271 et seq., as amended by the American Innovation and Competitiveness Act (AICA), Public Law 114-329   "
+            },
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "f5d2b8a2ff1c650b61a628a4678a9928",
+            "authorizationTypes": {
+              "USC": true,
+              "act": null,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": {
+              "title": "15",
+              "section": "278k-1",
+              "description": ""
+            },
+            "act": null,
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "a50b126cc4914c06b5eb975b7deb6a86",
+            "authorizationTypes": {
+              "USC": true,
+              "act": null,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": {
+              "title": "15",
+              "section": "278l",
+              "description": ""
+            },
+            "act": null,
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "71517014901f446485fca2c9c3708f5f",
+            "authorizationTypes": {
+              "USC": true,
+              "act": null,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": {
+              "title": "42",
+              "section": "Ch. 163 Subch. II",
+              "description": ""
+            },
+            "act": null,
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "547a329595004470b08321c7af5c1031",
+            "authorizationTypes": {
+              "USC": true,
+              "act": null,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          }
+        ]
+      },
+      "organizationId": "100109529",
+      "assistanceTypes": [
+        "0003001",
+        "0023001"
+      ],
+      "functionalCodes": [
+        "0002001",
+        "0002002",
+        "0018001"
+      ],
+      "relatedPrograms": [
+        "13a3fc9beeef883d293431f07a5feb3e",
+        "4d666655a69ab557ef9dd7af9cdae16f",
+        "7e7abe25a2333e2cf75c3b86366e1f31"
+      ],
+      "missionSubCategories": [
+        {
+          "code": [
+            "0002001"
+          ],
+          "type": "Primary"
+        },
+        {
+          "code": [
+            "0002002"
+          ],
+          "type": "Other"
+        }
+      ]
+    },
+    "parentProgramId": "8294808e57f0b6b9e305379257bc9557",
+    "latest": true,
+    "revision": false,
+    "fiscalYearLatest": true,
+    "publishedDate": "2026-01-23T05:01:47.546+00:00",
+    "modifiedDate": "2026-01-23T05:01:47.546+00:00",
+    "submittedDate": "2026-01-23T05:01:49.186+00:00",
+    "autoPublishDate": null,
+    "status": {
+      "code": "published",
+      "value": "Published"
+    },
+    "archived": false,
+    "additionalProperty": null,
+    "additionalInfo": {
+      "sections": [
+        {
+          "id": "header-information",
+          "status": "updated"
+        },
+        {
+          "id": "overview",
+          "status": "updated"
+        },
+        {
+          "id": "authorization",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-obligations",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-other",
+          "status": "updated"
+        },
+        {
+          "id": "criteria-information",
+          "status": "updated"
+        },
+        {
+          "id": "applying-for-assistance",
+          "status": "updated"
+        },
+        {
+          "id": "compliance-requirements",
+          "status": "updated"
+        },
+        {
+          "id": "contact-information",
+          "status": "updated"
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/fac/v1/programs/7f35e497c11544ad8900a967a1284d89"
+      }
+    },
+    "id": "7f35e497c11544ad8900a967a1284d89"
+  },
+  {
+    "data": {
+      "title": "Family Unification Program (FUP)",
+      "website": "https://www.hud.gov/program_offices/public_indian_housing",
+      "contacts": {
+        "local": {
+          "flag": "appendix",
+          "description": "HUD Field Office listed in the Catalog Address Appendix IV that has jurisdiction over the area in which the dwellings are located."
+        },
+        "headquarters": [
+          {
+            "fax": "",
+            "zip": "20410",
+            "city": "Washington",
+            "email": "Ryan.E.Jones@hud.gov",
+            "phone": "(202) 708-0477",
+            "state": "DC",
+            "title": "",
+            "country": "USA",
+            "fullName": "Ryan Jones",
+            "contactId": "26113edb764e432488bd09a28bf69276",
+            "streetAddress": "451 7th Street, S.W., Room 4210",
+            "streetAddress2": ""
+          }
+        ]
+      },
+      "projects": {
+        "list": [],
+        "isApplicable": true
+      },
+      "financial": {
+        "accounts": [
+          {
+            "code": "86-0302-0-1-604",
+            "description": "86-0302/X"
+          }
+        ],
+        "description": "New FUP awards effective in FFY 2023 to date: 80 Awards, 885 Total Units, $16.6m HAP mount \nNew FUP awards effective in FFY 2022: 174 Awards, 1,067 Total Units, $21.1m HAP Amount\n(Both years include FYI vouchers)",
+        "obligations": [
+          {
+            "values": [
+              {
+                "year": 2022,
+                "actual": 21000000,
+                "estimate": 30000000
+              },
+              {
+                "year": 2023,
+                "estimate": 39000000
+              },
+              {
+                "year": 2024,
+                "estimate": 0
+              },
+              {
+                "year": 2021,
+                "actual": 18105149,
+                "estimate": 25000000
+              },
+              {
+                "year": 2020,
+                "actual": 24417000,
+                "estimate": 25000000
+              },
+              {
+                "year": 2019,
+                "actual": 29967000,
+                "estimate": 20000000
+              },
+              {
+                "year": 2018,
+                "actual": 0,
+                "estimate": 10000000
+              },
+              {
+                "year": 2017,
+                "actual": 3450499867
+              },
+              {
+                "year": 2012,
+                "actual": 92930,
+                "estimate": 92930
+              },
+              {
+                "year": 2013,
+                "estimate": 0
+              },
+              {
+                "year": 2014,
+                "estimate": 0
+              }
+            ],
+            "description": "",
+            "obligationId": "dd3f1e95c774e5f36002e151725f2f4b",
+            "isRecoveryAct": false,
+            "assistanceType": "0005001"
+          }
+        ],
+        "accomplishments": {
+          "list": [
+            {
+              "fiscalYear": 2012,
+              "description": "N/A\r\n N/A"
+            },
+            {
+              "fiscalYear": 2013,
+              "description": "N/A"
+            },
+            {
+              "fiscalYear": 2014,
+              "description": "N/A"
+            },
+            {
+              "fiscalYear": 2019,
+              "description": "HUD made $29.9 million available for Family Unification Program (FUP) to assist families at risk of being separated due to lack of housing."
+            },
+            {
+              "fiscalYear": 2020,
+              "description": "HUD made $25 million available for Family Unification Program (FUP) to assist families at risk of being separated due to lack of housing."
+            },
+            {
+              "fiscalYear": 2021,
+              "description": "HUD made $25 million available for Family Unification Program (FUP) to assist families at risk of being separated due to lack of housing.  In FY 2021 specifically, HUD processed 10 awards for Foster Youth to Independence (FYI), for a total of 21 vouchers, $162,042 in contract amount. Currently (July 2022), 236 PHAs have effective FYI vouchers, 3,293 vouchers are effective, At the same time, HUD processed 10 awards for Family Unification Program (FUP), for a total of 398 vouchers, worth $4,038,798.  Currently (July 2022), 469 PHAs have effective FUP vouchers; total of 28,738 vouchers are effective, while 20,223 voucher are leased up."
+            },
+            {
+              "fiscalYear": 2023,
+              "description": "Fiscal Year 2023: HUD made $30 million available for Family Unification Program (FUP) to assist families at risk of being separated due to lack of housing and for Foster Youth to Independence (FYI - youth coming out of foster care) .  The 2023 FUP and FYI awards are in process for both regular FUP and FYI participants.  For example, as of July 11, 2023, HUD had processed 17 awards for FYI (NOFO-competitive) for a total of 822 vouchers, $12.9 million in contract amount.  At the same time, HUD processed 63 awards for FYI noncompetitive, for a total of 415 vouchers, worth $3,777,979.  \n\nCurrently (July 2023), 296 PHAs have effective FUP vouchers and 286 have effective FYI vouchers; a total of 26,057 FUP vouchers are effective, while 20,401 FUP vouchers are leased up for 78.29% utilization.  A total of 4,401 FYI vouchers are effective, while 1,741 vouchers are leased up, for 43.37% utilization"
+            },
+            {
+              "fiscalYear": 2024,
+              "description": "HUD \u2018s 2024 President\u2019s Budget did not ask for FUP funding."
+            }
+          ],
+          "isApplicable": true
+        },
+        "isFundedCurrentFY": false
+      },
+      "objective": "To aid: (1) Families for whom the lack of adequate housing is a primary factor in: a. The imminent placement of the family\u2019s child or children in out-of-home care, or b. The delay in the discharge of the child or children to the family from out-of-home care. (2) For a period not to exceed 36 months, otherwise eligible youths who have attained at least 18 years and not more than 24 years of age and who have left foster care, or will leave foster care within 90 days, in accordance with a transition plan described in section 475(5)(H) of the Social Security Act and is homeless or is at risk of becoming homeless at age 16 or older. FUP- eligible families and youths may use these Housing Choice Vouchers (HVCs) to obtain decent, safe, and affordable housing units in the private rental market. Where appropriations provide for FUP assistance to be targeted to FUP-eligible youth only, HUD uses the name Foster Youth to Independence to create a distinction between regular FUP allocations and allocations targeted to FUP-eligible youth only.",
+      "assistance": {
+        "appeal": {
+          "interval": "9",
+          "description": "However, after the assistance awards are publicly announced, HUD will provide a debriefing, if requested, to unsuccessful applicants."
+        },
+        "renewal": {
+          "interval": "9",
+          "description": "Expiring increments of Section 8 housing choice voucher assistance are automatically renewed by HUD (subject to appropriations)."
+        },
+        "approval": {
+          "interval": "4"
+        },
+        "deadlines": {
+          "flag": "contact",
+          "list": []
+        },
+        "awardProcedure": {
+          "description": "The Voucher Management and Operations Division generally makes the final decision based on the results of the rating and ranking process."
+        },
+        "selectionCriteria": {
+          "isApplicable": false
+        },
+        "applicationProcedure": {
+          "description": "Submission of Funding Application, Section 8 Tenant-Based Assistance (Form HUD-52515)."
+        },
+        "preApplicationCoordination": {
+          "environmentalImpact": {
+            "reports": []
+          }
+        }
+      },
+      "compliance": {
+        "audit": {
+          "description": "Periodic fiscal, occupancy, general management and maintenance audits.",
+          "isApplicable": true
+        },
+        "records": {
+          "description": "Those necessary to indicate compliance with Annual Contributions Contract/Housing Choice Voucher Contract."
+        },
+        "reports": [
+          {
+            "code": "program",
+            "isSelected": true,
+            "description": "Voucher for Payment of Annual Contributions and Operating Statement, HUD Form 52681-B; and Family Report, HUD Form 50058."
+          },
+          {
+            "code": "cash",
+            "isSelected": false,
+            "description": ""
+          },
+          {
+            "code": "progress",
+            "isSelected": false,
+            "description": ""
+          },
+          {
+            "code": "expenditure",
+            "isSelected": true,
+            "description": "Voucher for Payment of Annual Contributions and Operating Statement, HUD Form 52681-B (Supplemental)."
+          },
+          {
+            "code": "performanceMonitoring",
+            "isSelected": false,
+            "description": ""
+          }
+        ],
+        "documents": {
+          "description": "24 CFR 982; Section 8 Housing Choice Voucher Program Forms, Legal Contracts, and Publications Handbook, 7420.8.",
+          "isApplicable": true
+        },
+        "CFR200Requirements": {
+          "questions": [
+            {
+              "code": "subpartB",
+              "isSelected": false
+            },
+            {
+              "code": "subpartC",
+              "isSelected": false
+            },
+            {
+              "code": "subpartD",
+              "isSelected": false
+            },
+            {
+              "code": "subpartE",
+              "isSelected": false
+            },
+            {
+              "code": "subpartF",
+              "isSelected": true
+            }
+          ],
+          "description": ""
+        },
+        "formulaAndMatching": {
+          "moe": {
+            "description": ""
+          },
+          "types": {
+            "moe": false,
+            "formula": false,
+            "matching": false
+          },
+          "formula": {
+            "part": "",
+            "title": "",
+            "chapter": "",
+            "subPart": "",
+            "publicLaw": "",
+            "description": ""
+          },
+          "matching": {
+            "description": ""
+          }
+        }
+      },
+      "fiscalYear": 2023,
+      "description": "",
+      "eligibility": {
+        "usage": {
+          "loanTerms": {
+            "description": "",
+            "isApplicable": false
+          },
+          "restrictions": {
+            "description": "",
+            "isApplicable": false
+          },
+          "discretionaryFund": {
+            "description": "",
+            "isApplicable": false
+          }
+        },
+        "applicant": {
+          "types": [
+            "0009",
+            "0015"
+          ],
+          "description": "Applicants are limited to PHAs that have an existing Annual Contributions Contract (ACC) with HUD for HCVs."
+        },
+        "limitation": {
+          "awarded": "other",
+          "description": "New funding is provided for 12 months.",
+          "awardedDescription": "Funds are disbursed monthly."
+        },
+        "beneficiary": {
+          "types": [
+            "11",
+            "41",
+            "42",
+            "43",
+            "44",
+            "57",
+            "58",
+            "61"
+          ],
+          "description": "Families and youths that are income eligible under the HCV program regulations at 24 CFR 982.201 may receive a voucher awarded under the FUP. Families and youths must be referred to the PHA from the local Public Child Welfare Agency (PCWA). Where appropriations provide for FUP assistance to be targeted to FUP-eligible youth only, HUD uses the name Foster Youth to Independence to create a distinction between regular FUP allocations and allocations targeted to FUP-eligible youth only.",
+          "isSameAsApplicant": false
+        },
+        "documentation": {
+          "description": "For FUP, the PHA must provide a Memorandum of Understanding (MOU), executed by the official representative of the PHA, Public Child Welfare Agency (PCWA), and Continuum of Care (CoC). The MOU must identify the actions that the PHA, PCWA, and CoC will take to identify and assist FUP-eligible families and FUP-eligible youths, and the resources for supportive services that will be provided. Where appropriations provide for FUP assistance to be targeted to FUP-eligible youth only, HUD uses the name Foster Youth to Independence to create a distinction between regular FUP allocations and allocations targeted to FUP-eligible youth only. This program is excluded from coverage under 2 CFR 200, Subpart E - Cost Principles.  \n\nThis program is excluded from coverage under 2 CFR 200, Subpart E - Cost Principles. .",
+          "isApplicable": true
+        },
+        "assistanceUsage": {
+          "types": [
+            "18"
+          ],
+          "description": "Provides housing assistance payments to participating owners on behalf of eligible tenants to provide decent, safe, and sanitary housing for very low-income families at rents they can afford. Housing assistance payments are generally the difference between the local payment standard and 30 percent of the family's adjusted income."
+        }
+      },
+      "programNumber": "14.880",
+      "authorizations": {
+        "list": [
+          {
+            "USC": null,
+            "act": {
+              "part": null,
+              "title": null,
+              "section": null,
+              "description": "Section 8 (x) of the United States Housing Act of 1937; Omnibus Appropriations Act 2009"
+            },
+            "statute": null,
+            "publicLaw": {
+              "number": "8",
+              "congressCode": "111"
+            },
+            "executiveOrder": null,
+            "authorizationId": "f9ce837cd7e1f8060aaa1424929bb2ff",
+            "authorizationTypes": {
+              "USC": null,
+              "act": true,
+              "statute": null,
+              "publicLaw": true,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": null,
+            "act": null,
+            "statute": null,
+            "publicLaw": {
+              "number": "116-94",
+              "congressCode": "Further Consolidated Appropriations Act of 2020"
+            },
+            "executiveOrder": null,
+            "authorizationId": "70604607511e4d3f83797ddfc7f4582c",
+            "authorizationTypes": {
+              "USC": null,
+              "act": null,
+              "statute": null,
+              "publicLaw": true,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": null,
+            "act": {
+              "part": null,
+              "title": null,
+              "section": null,
+              "description": "Appropriations Act, 2021, Public Law 116-260"
+            },
+            "statute": null,
+            "publicLaw": null,
+            "executiveOrder": null,
+            "authorizationId": "87a2c176577d428498299d2121c753ad",
+            "authorizationTypes": {
+              "USC": null,
+              "act": true,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": null,
+            "act": {
+              "part": null,
+              "title": null,
+              "section": null,
+              "description": "Consolidated Appropriations Act of 2022"
+            },
+            "statute": null,
+            "publicLaw": {
+              "number": "103",
+              "congressCode": "117"
+            },
+            "executiveOrder": null,
+            "authorizationId": "8f529bc50bda4473be1fdecc8d123b9a",
+            "authorizationTypes": {
+              "USC": null,
+              "act": true,
+              "statute": null,
+              "publicLaw": true,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          },
+          {
+            "USC": null,
+            "act": {
+              "part": null,
+              "title": "Consolidated Appropriation Act, 2023",
+              "section": null,
+              "description": null
+            },
+            "statute": null,
+            "publicLaw": {
+              "number": "328",
+              "congressCode": "117"
+            },
+            "executiveOrder": null,
+            "authorizationId": "a61d368f70f049209e4dce0339992084",
+            "authorizationTypes": {
+              "USC": null,
+              "act": true,
+              "statute": null,
+              "publicLaw": true,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          }
+        ]
+      },
+      "organizationId": "100052551",
+      "assistanceTypes": [
+        "0005001"
+      ],
+      "functionalCodes": [
+        "0014004",
+        "0014015",
+        "0014019"
+      ],
+      "relatedPrograms": [
+        "f9ed3a63c79e53eb0b3f555f034d6d36"
+      ]
+    },
+    "parentProgramId": "c07df81c8335b6f51cf6823a1c67d8ea",
+    "latest": true,
+    "revision": false,
+    "fiscalYearLatest": true,
+    "publishedDate": "2023-09-05T05:05:49.102+00:00",
+    "modifiedDate": "2023-09-05T05:05:49.102+00:00",
+    "submittedDate": "2023-09-05T05:05:49.161+00:00",
+    "autoPublishDate": null,
+    "status": {
+      "code": "published",
+      "value": "Published"
+    },
+    "archived": false,
+    "additionalProperty": null,
+    "additionalInfo": {
+      "sections": [
+        {
+          "id": "header-information",
+          "status": "updated"
+        },
+        {
+          "id": "overview",
+          "status": "updated"
+        },
+        {
+          "id": "authorization",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-obligations",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-other",
+          "status": "updated"
+        },
+        {
+          "id": "criteria-information",
+          "status": "updated"
+        },
+        {
+          "id": "applying-for-assistance",
+          "status": "updated"
+        },
+        {
+          "id": "compliance-requirements",
+          "status": "updated"
+        },
+        {
+          "id": "contact-information",
+          "status": "updated"
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/fac/v1/programs/396e7f72ba48442da57ea34ef2044d70"
+      }
+    },
+    "id": "396e7f72ba48442da57ea34ef2044d70"
+  },
+  {
+    "data": {
+      "title": "Procurement Technical Assistance For Business Firms",
+      "version": "2.0",
+      "website": "https://www.apexaccelerators.us/#/",
+      "contacts": {
+        "local": {
+          "flag": "none",
+          "description": ""
+        },
+        "headquarters": [
+          {
+            "fax": null,
+            "zip": "20301-3330",
+            "city": "Washington",
+            "email": "osd.pentagon.ousd-a-s.mbx.apex-accelerators@mail.mil",
+            "phone": "5713726332",
+            "state": "DC",
+            "title": null,
+            "country": "US",
+            "fullName": "Khalil Mack, Director, APEX Accelerators",
+            "contactId": "4674ebdd2940bb08d82cb275912410a3",
+            "streetAddress": "3330 Defense Pentagon, Room 3B854",
+            "streetAddress2": ""
+          }
+        ]
+      },
+      "projects": {
+        "list": [
+          {
+            "fiscalYear": 2021,
+            "description": "Funding was used to operate a center where businesses receive assistance with submitting offers and complying with terms and conditions of contracts with local or federal government agencies.  During the COVID-19 pandemic, center employees predominantly provided remote-only assistance and served businesses virtually.  Assistance includes a wide range of support including identifying which agencies buy what the business sells, applying for socioeconomic certifications, understanding the end-to-end contracting process, set-asides, terms and conditions, how to get paid, and what to do when being audited.  The centers also host events designed to help businesses network with each other and with government procurement personnel.  Due to the COVID-19 pandemic, most events were accomplished using virtual meeting and matchmaking software."
+          },
+          {
+            "fiscalYear": 2023,
+            "description": "Funded approximately 96 centers allowing them to serve as the axis for existing and new business to strengthen the defense industrial base by accelerating innovation, fostering ingenuity, and establishing resilient and diverse supply chains."
+          }
+        ],
+        "isApplicable": true
+      },
+      "financial": {
+        "accounts": [
+          {
+            "code": "97-0100-0-1-051",
+            "description": null
+          }
+        ],
+        "description": "The smallest award is about $100,000 and serves businesses in one or a few counties and the largest is $1,000,000 and serves businesses throughout an entire state.",
+        "obligations": [
+          {
+            "values": [
+              {
+                "year": 2024,
+                "actual": 55170000
+              },
+              {
+                "year": 2025,
+                "actual": 54999925
+              },
+              {
+                "year": 2026,
+                "estimate": 59098543
+              }
+            ],
+            "description": "",
+            "obligationId": "8654b0b4ccd8e23fe548ffec3d850e9d",
+            "assistanceType": "F002",
+            "awardAmountBasisCode": [
+              "A01"
+            ],
+            "awardRecipientBasisCode": [
+              "R01"
+            ]
+          }
+        ],
+        "accomplishments": {
+          "list": [
+            {
+              "fiscalYear": 2018,
+              "description": "Procurement Technical Assistance Centers (PTAC)s served over 50,000 businesses, provided more than 163,000 hours of one-on-one assistance, and facilitated over 5,000 training and networking events nationwide."
+            },
+            {
+              "fiscalYear": 2019,
+              "description": "Procurement Technical Assistance Centers (PTAC)s served over 54,000 businesses, provided 169,716 hours of one-on-one assistance, and facilitated over 5,300 training and networking events nationwide. PTAC clients received 707,689 government contracts or subcontracts valued at about $27 billion.  Using the Bureau of Labor and Statistics average value of one job ($47,060), PTAC assistance facilitated the creation or retention of 559,150 jobs."
+            },
+            {
+              "fiscalYear": 2021,
+              "description": "Procurement Technical Assistance Centers (PTAC)s provided one-on-one assistance to businesses virtually during the stay-at-home orders caused nationwide by the COVID-19 pandemic.  PTACs were designated essential critical infrastructure to the Defense Industrial Base and were used extensively to disseminate information from government to businesses.  PTACs assisted businesses entering or re-entering the government marketplace due to a downturn in their commercial business caused by the pandemic.  PTACs directed suppliers to the solicitations used by the government to procure critical supplies and equipment to support the pandemic response and helped them understand how to submit an offer to provide the supplies."
+            },
+            {
+              "fiscalYear": 2023,
+              "description": "Centers are funded which has led to tens of thousands of businesses receiving procurement assistance, allowing successful participation in federal, state, and local government contracts."
+            },
+            {
+              "fiscalYear": 2024,
+              "description": "97 applications were received. 94 agreements were awarded."
+            },
+            {
+              "fiscalYear": 2025,
+              "description": "94 applications were received. 90 agreements were awarded."
+            },
+            {
+              "fiscalYear": 2026,
+              "description": "FY26 NOFO closed 15 November. 92 applications were received from existing agreement holders. Another NOFO is anticipated in January for two more agreements. None have been awarded yet."
+            }
+          ],
+          "isApplicable": true
+        },
+        "isFundedCurrentFY": true,
+        "additionalInformation": "",
+        "rangeAndAverageAssistance": [
+          {
+            "fiscalYear": "2025",
+            "averageAwardAmount": "55000000",
+            "maximumAwardAmount": "55000000",
+            "minimumAwardAmount": "55000000"
+          },
+          {
+            "fiscalYear": "2026",
+            "averageAwardAmount": "57500000",
+            "maximumAwardAmount": "60000000",
+            "minimumAwardAmount": "55000000"
+          }
+        ]
+      },
+      "objective": "Building a strong and sustainable U.S. supply chain and supporting a wide range of diverse businesses by providing procurement assistance to businesses, fostering successful participation in federal, state, and local government contracts.",
+      "assistance": {
+        "appeal": {
+          "interval": "4"
+        },
+        "renewal": {
+          "interval": "8"
+        },
+        "approval": {
+          "interval": "6"
+        },
+        "payments": {
+          "list": [
+            {
+              "type": "N",
+              "frequency": "N",
+              "paymentId": "fa82e5e7715e42c4bf984a25c533f047",
+              "fundingDate": "",
+              "spendingPeriod": 12,
+              "spendingPeriodType": "M",
+              "frequencyDescription": null,
+              "spendingPeriodDescription": "The standard period of performance will be 1 year, but extensions may be authorized."
+            }
+          ]
+        },
+        "deadlines": {
+          "flag": "D",
+          "list": []
+        },
+        "awardProcedure": {
+          "description": "Merit-based, competitive procedures are used to evaluate applications and make awards.  Funding Opportunity Announcements include the criteria that will be used to evaluate applications submitted in response to the announcement."
+        },
+        "selectionCriteria": {
+          "description": "Merit-based, competitive procedures are used to evaluate applications and make awards. Funding Opportunity Announcements include the criteria that will be used to evaluate applications submitted in response to the announcement.",
+          "isApplicable": true
+        },
+        "applicationProcedure": {
+          "isApplicable": true
+        },
+        "preApplicationCoordination": {
+          "description": "see funding announcement listed at grants.gov",
+          "environmentalImpact": {
+            "reports": [
+              {
+                "isSelected": true,
+                "reportCode": "ExecutiveOrder12372"
+              },
+              {
+                "isSelected": true,
+                "reportCode": "otherRequired"
+              }
+            ]
+          }
+        }
+      },
+      "compliance": {
+        "maps": {
+          "basis": [],
+          "usageList": [],
+          "areCBSADelineationsUsed": "no",
+          "currentCBSADelineationAdopted": {
+            "historicalDelineationSelection": ""
+          }
+        },
+        "audit": {
+          "frequency": [],
+          "description": "",
+          "isApplicable": false
+        },
+        "records": {
+          "description": "The records retention period is 6 years.",
+          "retentionPeriod": 6,
+          "retentionPeriodType": "Y"
+        },
+        "reports": [
+          {
+            "code": "financial",
+            "frequency": [
+              "Q"
+            ],
+            "description": "Financial Reports include labor costs, fringe, travel, equipment, supplies, contractual, other direct costs and indirect costs."
+          },
+          {
+            "code": "progress",
+            "frequency": [
+              "Q",
+              "S"
+            ],
+            "description": "Performance Reports are due quarterly or semi-annually depending on the experience of the Program Manager."
+          }
+        ],
+        "documents": {
+          "description": "",
+          "isApplicable": true
+        },
+        "CFR200Requirements": {
+          "questions": [
+            {
+              "code": "subpartB",
+              "isSelected": true
+            },
+            {
+              "code": "subpartC",
+              "isSelected": true
+            },
+            {
+              "code": "subpartD",
+              "isSelected": true
+            },
+            {
+              "code": "subpartE",
+              "isSelected": true
+            },
+            {
+              "code": "subpartF",
+              "isSelected": true
+            }
+          ],
+          "description": ""
+        },
+        "formulaAndMatching": {
+          "moe": {
+            "description": ""
+          },
+          "types": {
+            "moe": false,
+            "formula": true,
+            "matching": true
+          },
+          "formula": {
+            "part": "V",
+            "title": "10",
+            "chapter": "388",
+            "subPart": "I",
+            "publicLaw": "4955",
+            "description": "Refer to the Funding Opportunity Announcement for more information. Matching requirements are mandatory."
+          },
+          "matching": {
+            "percent": "15",
+            "description": "Non-Federal cost sharing requirements generally range between 15% and 35%. Voluntary higher non-federal cost sharing is allowed. Refer to the Funding Opportunity Announcement for more information.",
+            "requirementFlag": "D"
+          }
+        },
+        "additionalRequirements": {
+          "list": [
+            {
+              "id": "8e72e3a2daa94620bfb11ac93b20e212",
+              "URL": "https://www.apexaccelerators.us",
+              "description": "refer to website"
+            }
+          ]
+        },
+        "guidelinesAndInformation": {
+          "list": []
+        }
+      },
+      "fiscalYear": 2025,
+      "description": "This program provides financial assistance to non-profit and government agencies who operate centers where any US business can receive free education and technical assistance to help them sell their products and services to US Federal, state, or local governments.",
+      "eligibility": {
+        "usage": {
+          "loanTerms": {
+            "description": "",
+            "isApplicable": false
+          },
+          "restrictions": {
+            "description": "",
+            "isApplicable": false
+          },
+          "discretionaryFund": {
+            "description": "",
+            "isApplicable": false
+          }
+        },
+        "applicant": {
+          "types": [
+            "ET23010",
+            "ET22010",
+            "ET22020",
+            "ET24020",
+            "ET41010",
+            "ET26040"
+          ],
+          "description": "Eligible applicants.  Only those entities listed in this section are eligible to apply.\r\n\r\na.\tStates.  State means a State of the United States, the District of Columbia, a territory or possession of the United States, an agency or instrumentality of a State, and a multi-State, regional, or interstate entity having governmental duties and powers (refer to 10 U.S.C. 2411(1)(A)).\r\n\r\nb.\tLocal governments.  Local government, means a unit of government in a State, a local public authority, a special district, an intrastate district, a council of governments, a sponsor group representative organization, an interstate entity, or another instrumentality of a local government (refer to 10 U.S.C. 2411(1)(B)).\r\n\r\nc.\tPrivate nonprofit organizations.  Private nonprofit organization means an entity which is exempt from federal income taxation under Section 501 of the Internal Revenue Code, and no part of its earnings inure to the benefit of any private shareholder or individual, and no substantial part of its activities is carrying on propaganda or otherwise attempting to influence legislation or participating in any political campaign on behalf of any candidate for public office (refer to 10 U.S.C. 2411(1)(C)). \r\n\r\nd.\tEconomic enterprises. Economic enterprise means any Indian-owned (as defined by the Secretary of the Interior) commercial, industrial, or business activity established or organized for profit purposes or for nonprofit purposes. Provided, that such Indian ownership constitutes not less than 51 percent of the enterprise (refer to 10 U.S.C. 2411(1)(D)).\r\n\r\ne.\tTribal organizations. Tribal organization means the recognized governing body of any Indian tribe; any legally established organization of Indians which is controlled, sanctioned, or chartered by such governing body, or which is democratically elected by the adult members of the Indian community to be served by such organization and which includes the maximum participation of Indians in all phases of its activities.  Provided, that in any case where a cooperative agreement is made to an organization to perform services benefiting more than one Indian tribe, the approval of each such Indian tribe shall be a prerequisite to the making of such cooperative agreement (refer to 10 U.S.C. 2411(1)(D))."
+        },
+        "limitation": {
+          "awarded": "other",
+          "description": "Generally, announcements are five-year funding opportunities, which will usually consist of a one-year base period and four subsequent, one-year option periods.",
+          "awardedDescription": "Awardees are eligible to receive payment in advance but most opt to receive cost reimbursement on a monthly or quarterly basis."
+        },
+        "beneficiary": {
+          "types": [
+            "14",
+            "15",
+            "20",
+            "31",
+            "28",
+            "30",
+            "9"
+          ],
+          "description": "Any established US business who wants to sell goods or services to any US government agency.",
+          "isSameAsApplicant": true
+        },
+        "documentation": {
+          "description": [
+            "Costs will be determined in accordance with OMB Circular No. A-21, \"Cost Principles for Educational Institutions,\" and OMB Circular No. A-122, \"Cost Principles for Nonprofit Organizations.\""
+          ],
+          "isApplicable": false
+        },
+        "assistanceUsage": {
+          "types": [
+            "CC006"
+          ],
+          "description": "The Department of Defense awards cooperative agreements to eligible program participants who establish and maintain Procurement Technical Assistance Centers (PTACs).  The PTACs serve as a resource for large and small businesses to obtain information and training related to contracting opportunities with DoD, other federal agencies, state and local governments and with government prime contractors."
+        },
+        "assistanceRestriction": {
+          "types": [
+            "UN002"
+          ]
+        }
+      },
+      "programNumber": "12.002",
+      "authorizations": {
+        "list": [
+          {
+            "USC": {
+              "title": "10",
+              "section": "2411-2420",
+              "description": ""
+            },
+            "act": {
+              "part": null,
+              "title": null,
+              "section": null,
+              "description": "The Procurement Technical Assistance Program was established by section 1241 of the Department of Defense Authorization Act for Fiscal Year 1985."
+            },
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "number": "525",
+              "description": "",
+              "congressCode": "98"
+            },
+            "executiveOrder": null,
+            "authorizationId": "717783fd6617f6103c82077cb5de3a88",
+            "authorizationTypes": {
+              "USC": true,
+              "act": true,
+              "statute": null,
+              "publicLaw": true,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          }
+        ]
+      },
+      "organizationId": "300000427",
+      "assistanceTypes": [
+        "0003001"
+      ],
+      "functionalCodes": [
+        "0002002",
+        "0002008",
+        "0003009",
+        "0018001"
+      ],
+      "relatedPrograms": [
+        "83cb5bfb69e04320a72aea1ca0d4bcb2",
+        "0a7052318efc4f5d97e61379b4810991",
+        "ad394a7cae5a4663942307183ebb818c",
+        "343267de34d742028cfed9494af1ecdf",
+        "2b3d1a9f4cbc4409beddaae5de6bd841",
+        "c7038adbd2534e56a7a92fd529ac4489",
+        "2d40a6893aec4b7897d74f293c1aff64"
+      ],
+      "alternativeNames": [
+        "APEX Accelerator Program/Procurement Technical Assistance Program (PTAP))"
+      ],
+      "missionSubCategories": [
+        {
+          "code": [
+            "0002002"
+          ],
+          "type": "Primary"
+        }
+      ]
+    },
+    "parentProgramId": "d3c0812c86aeb5a62eac56b30d71f177",
+    "latest": true,
+    "revision": false,
+    "fiscalYearLatest": true,
+    "publishedDate": "2026-01-16T05:02:55.083+00:00",
+    "modifiedDate": "2026-01-16T05:02:55.083+00:00",
+    "submittedDate": "2026-01-16T05:02:55.152+00:00",
+    "autoPublishDate": null,
+    "status": {
+      "code": "published",
+      "value": "Published"
+    },
+    "archived": false,
+    "additionalProperty": null,
+    "additionalInfo": {
+      "sections": [
+        {
+          "id": "header-information",
+          "status": "updated"
+        },
+        {
+          "id": "overview",
+          "status": "updated"
+        },
+        {
+          "id": "authorization",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-obligations",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-other",
+          "status": "updated"
+        },
+        {
+          "id": "criteria-information",
+          "status": "updated"
+        },
+        {
+          "id": "applying-for-assistance",
+          "status": "updated"
+        },
+        {
+          "id": "compliance-requirements",
+          "status": "updated"
+        },
+        {
+          "id": "contact-information",
+          "status": "updated"
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/fac/v1/programs/8d745b5ad52a421dbf9483c7451adec1"
+      }
+    },
+    "id": "8d745b5ad52a421dbf9483c7451adec1"
+  },
+  {
+    "data": {
+      "title": "Emergency Medical Services for Children",
+      "version": "2.0",
+      "website": "http://www.hrsa.gov",
+      "contacts": {
+        "local": {
+          "flag": "none",
+          "description": "",
+          "officeLocationURL": "http://www.hrsa.gov"
+        },
+        "headquarters": [
+          {
+            "fax": "",
+            "zip": "20857",
+            "city": "Rockville",
+            "email": "EHeppner@hrsa.gov",
+            "phone": "(301) 443-2170",
+            "state": "MD",
+            "title": "",
+            "country": "US",
+            "fullName": " Eliza Heppner, Acting Associate Administrator for Maternal and Child Health",
+            "contactId": "cdbae03a0a1d49002335edac6c05cdd3",
+            "streetAddress": "Maternal and Child Health Bureau, Health Resources and Services Administration",
+            "streetAddress2": "5600 Fishers Lane"
+          }
+        ]
+      },
+      "projects": {
+        "list": [],
+        "isApplicable": false
+      },
+      "financial": {
+        "accounts": [
+          {
+            "code": "75-0354-0-1-550",
+            "description": null
+          }
+        ],
+        "description": "(Cooperative Agreements) FY 23 $699,999-$3,200,000; $1,183,331 FY 24 $699,998-$3,700,000; $1,265,551 FY 25 $699,978-$3,200,000; $1,183,331 \n\n(Project Grants) FY 23 $3,529-$190,650; $170,142 FY 24 $4,567-$190,650; $171,697 FY 25 $$87,918-$174,250; $170,903",
+        "obligations": [
+          {
+            "values": [
+              {
+                "year": 2024,
+                "actual": 9786757
+              },
+              {
+                "year": 2025,
+                "actual": 10497021
+              },
+              {
+                "year": 2026,
+                "estimate": 0
+              }
+            ],
+            "description": "",
+            "obligationId": "4611b4fabb5de82577b0b0c854006297",
+            "assistanceType": "F001",
+            "awardAmountBasisCode": [
+              "A01"
+            ],
+            "awardRecipientBasisCode": [
+              "R01"
+            ]
+          },
+          {
+            "values": [
+              {
+                "year": 2024,
+                "actual": 11389955
+              },
+              {
+                "year": 2025,
+                "actual": 10649978
+              },
+              {
+                "year": 2026,
+                "estimate": 0
+              }
+            ],
+            "description": "",
+            "obligationId": "365b9034f3d2475cba143a58eaf42ad7",
+            "assistanceType": "F002",
+            "awardAmountBasisCode": [
+              "A01"
+            ],
+            "awardRecipientBasisCode": [
+              "R01"
+            ]
+          }
+        ],
+        "accomplishments": {
+          "list": [
+            {
+              "fiscalYear": 2016,
+              "description": "74 awards 74"
+            },
+            {
+              "fiscalYear": 2017,
+              "description": "74 awards"
+            },
+            {
+              "fiscalYear": 2018,
+              "description": "N/A"
+            },
+            {
+              "fiscalYear": 2019,
+              "description": "75 awards"
+            },
+            {
+              "fiscalYear": 2020,
+              "description": "In the past fiscal year 2020, 72 grants were awarded to state governments and accredited schools of medicine.  Fifty-eight of the grant awards were issued nationally to states, U.S. territories and the freely associated states"
+            },
+            {
+              "fiscalYear": 2021,
+              "description": "In the past fiscal year 2021, 76 grants were awarded to state governments and accredited schools of medicine.  Fifty-eight of the grant awards were issued nationally to states, U.S. territories and the freely associated states, along with four supplemental awards to support Pediatric Readiness activities in hospital emergency departments and prehospital Emergency Medical Services agencies"
+            },
+            {
+              "fiscalYear": 2022,
+              "description": "In the past fiscal year 2022, 76 grants were awarded to state governments and accredited schools of medicine.  Fifty-eight of the grant awards were issued nationally to states, U.S. territories and the freely associated states, along with four supplemental awards to support Pediatric Readiness activities in hospital emergency departments and prehospital Emergency Medical Services agencies."
+            },
+            {
+              "fiscalYear": 2023,
+              "description": "In the past fiscal year 2022, 76 grants were awarded to state governments and accredited schools of medicine.  Fifty-eight of the grant awards were issued nationally to states, U.S. territories and the freely associated states, along with four supplemental awards to support Pediatric Readiness activities in hospital emergency departments and prehospital Emergency Medical Services agencies."
+            },
+            {
+              "fiscalYear": 2025,
+              "description": "The EMSC program has demonstrated that Pediatric Readiness saves lives. An analysis showed that high ED Pediatric Readiness is independently associated with long-term survival among injured children. An additional analysis found that children who were cared for in a trauma center ED with higher Pediatric Readiness were less likely to die than children cared for in a trauma center ED with lower Pediatric Readiness.  Using predictive models, researchers found that having high levels of Pediatric Readiness could save the lives of 2,143 children each year."
+            }
+          ],
+          "isApplicable": true
+        },
+        "isFundedCurrentFY": false,
+        "additionalInformation": "Not funded in FY26",
+        "rangeAndAverageAssistance": [
+          {
+            "fiscalYear": "2025",
+            "averageAwardAmount": "1183330",
+            "maximumAwardAmount": "3200000",
+            "minimumAwardAmount": "35977"
+          },
+          {
+            "fiscalYear": "2026",
+            "averageAwardAmount": "0",
+            "maximumAwardAmount": "0",
+            "minimumAwardAmount": "0"
+          }
+        ]
+      },
+      "objective": "To support demonstration projects for the expansion and improvement of emergency medical services for children who need treatment for trauma or critical care.",
+      "assistance": {
+        "appeal": {
+          "interval": "8"
+        },
+        "renewal": {
+          "interval": "9",
+          "description": "After initial awards, annual noncompetitive awards may be made contingent upon the submission of noncompetitive applications/progress reports and availability of funds and a determination that continued funding would be in the best interest of the federal government."
+        },
+        "approval": {
+          "interval": "6",
+          "description": "Final decisions are made 4 to 6 months after receipt of applications"
+        },
+        "payments": {
+          "list": [
+            {
+              "type": "A",
+              "frequency": "D",
+              "paymentId": "6a6eab1a05dc4ab692b663f5e7277082",
+              "fundingDate": "",
+              "spendingPeriod": 1,
+              "spendingPeriodType": "Y",
+              "frequencyDescription": null,
+              "spendingPeriodDescription": "annual budget is typically one year"
+            }
+          ]
+        },
+        "deadlines": {
+          "flag": "C",
+          "list": []
+        },
+        "awardProcedure": {
+          "description": "Notification is made in writing by a Notice of Award"
+        },
+        "selectionCriteria": {
+          "description": "Evaluation criteria vary based on the grant/cooperative agreement program. Refer to criteria included in the notice of funding opportunity for each specific program. All qualified applications will be forwarded to an objective review committee. Based on the recommendations of the objective review committee, the HRSA program official with delegated authority is responsible for final selection and funding decisions.",
+          "isApplicable": true
+        },
+        "applicationProcedure": {
+          "location": "N",
+          "opportunityPostedLocation": "G"
+        },
+        "preApplicationCoordination": {
+          "environmentalImpact": {
+            "reports": []
+          }
+        }
+      },
+      "compliance": {
+        "maps": {
+          "basis": [],
+          "usageList": [],
+          "areCBSADelineationsUsed": "no",
+          "currentCBSADelineationAdopted": {
+            "historicalDelineationSelection": ""
+          }
+        },
+        "audit": {
+          "frequency": [
+            "T"
+          ],
+          "description": "In accordance with the provisions of 2 CFR 200, Subpart F - Audit Requirements, nonfederal entities that expend financial assistance of $1,000,000 or more in Federal awards will have a single or a program-specific audit conducted for that year. Non-Federal entities that expend less than $1,000,000 a year in Federal awards are exempt from Federal audit requirements for that year, except as noted in 2 CFR 200.503.",
+          "isApplicable": true
+        },
+        "records": {
+          "description": "Grantees are required to maintain grant accounting records 3 years after the date they submit the Federal Financial Report (FFR).  If any litigation, claim, negotiation, audit or other action involving the award has been started before the expiration of the 3-year period, the records shall be retained until completion of the action and resolution of all issues which arise from it, or until the end of the regular 3-year period, whichever is later.",
+          "retentionPeriod": 3,
+          "retentionPeriodType": "Y"
+        },
+        "reports": [
+          {
+            "code": "financial",
+            "frequency": [
+              "T"
+            ],
+            "description": "Recipients must submit a Federal Financial Report (FFR) or SF 425 90, 120, or 150 days after the end of each budget period based on the schedule in the Notice of Award. A final FFR is required 120 days following the end of the period of performance. No expenditure reports are required. Performance monitoring is applicable."
+          },
+          {
+            "code": "progress",
+            "frequency": [
+              "T"
+            ],
+            "description": "Recipients must submit a Federal Financial Report (FFR) or SF 425 90, 120, or 150 days after the end of each budget period based on the schedule in the Notice of Award. A final FFR is required 120 days following the end of the period of performance. No expenditure reports are required. Performance monitoring is applicable."
+          }
+        ],
+        "documents": {
+          "description": "",
+          "isApplicable": true
+        },
+        "CFR200Requirements": {
+          "questions": [
+            {
+              "code": "subpartB",
+              "isSelected": true
+            },
+            {
+              "code": "subpartC",
+              "isSelected": true
+            },
+            {
+              "code": "subpartD",
+              "isSelected": true
+            },
+            {
+              "code": "subpartE",
+              "isSelected": true
+            },
+            {
+              "code": "subpartF",
+              "isSelected": true
+            }
+          ],
+          "description": ""
+        },
+        "formulaAndMatching": {
+          "moe": {
+            "description": ""
+          },
+          "types": {
+            "moe": false,
+            "formula": false,
+            "matching": false
+          },
+          "formula": {
+            "part": "",
+            "title": "",
+            "chapter": "",
+            "subPart": "",
+            "publicLaw": "",
+            "description": ""
+          },
+          "matching": {
+            "description": ""
+          },
+          "isApplicable": false
+        },
+        "additionalRequirements": {
+          "list": [
+            {
+              "id": "50002fbe24594bb0bcfd036be0f2a3ae",
+              "URL": "https://www.hhs.gov/sites/default/files/hhs-grants-policy-statement-oct-2025.pdf",
+              "description": "All HRSA awards are subject to the Uniform Administrative Requirements, Cost Principles, and Audit Requirements at 2 CFR 200 and modifications at 2 CFR 300, and any superseding regulation. HRSA awards are subject to the requirements of the HHS Grants Policy Statement (HHS GPS) that are applicable based on recipient type and purpose of award."
+            }
+          ]
+        },
+        "guidelinesAndInformation": {
+          "list": []
+        }
+      },
+      "fiscalYear": 2025,
+      "description": "To support demonstration projects for the expansion and improvement of emergency medical services for children who need treatment for trauma or critical care.",
+      "eligibility": {
+        "usage": {
+          "loanTerms": {
+            "description": "",
+            "isApplicable": false
+          },
+          "restrictions": {
+            "description": "",
+            "isApplicable": false
+          },
+          "discretionaryFund": {
+            "description": "",
+            "isApplicable": false
+          }
+        },
+        "applicant": {
+          "types": [
+            "ET22010",
+            "ET22020",
+            "ET41010",
+            "ET59999"
+          ],
+          "description": "State Governments and Accredited Schools of Medicine",
+          "applicantTypeOther": "State (includes District of Columbia, public institutions of higher education and hospitals), Public nonprofit institution/organization (includes institutions of higher education and hospitals), U.S. Territories and possessions (includes institutions of higher education and hospitals)"
+        },
+        "limitation": {
+          "awarded": "other",
+          "description": "Refer to the notice of funding opportunity. Awards are made annually, in accordance with the project period method of awarding grants.",
+          "awardedDescription": "Payments are made through a Letter-of-Credit or Cash Demand System. Grantee drawdown funds, as necessary, from the Payment Management System (PMS). PMS is the centralized web based payment system for HHS awards."
+        },
+        "beneficiary": {
+          "types": [
+            "ET51010",
+            "ET51030"
+          ],
+          "description": "All children will benefit from the project grants administered by this program, including children from minority groups.",
+          "isSameAsApplicant": false
+        },
+        "documentation": {
+          "description": [
+            "Applicants should review the individual HRSA notice of funding opportunity (NOFO) issued under this assistance listing for any required proof or certifications which must be submitted prior to or simultaneous with submission of an application package. 2 CFR 200, Subpart E - Cost Principles applies to this program."
+          ],
+          "isApplicable": true
+        },
+        "assistanceUsage": {
+          "types": [
+            "ZZ999"
+          ],
+          "description": "All funds granted should be expended solely for carrying out the approved project in accordance with Section 1910 of the Public Health Service Act."
+        },
+        "assistanceRestriction": {
+          "types": [
+            "ZZ999"
+          ],
+          "description": "All funds granted should be expended solely for carrying out the approved project in accordance with Section 1910 of the Public Health Service Act."
+        }
+      },
+      "programNumber": "93.127",
+      "authorizations": {
+        "list": [
+          {
+            "USC": {
+              "title": 42,
+              "section": "300w-9",
+              "description": "Public Health Service Act, Title XIX, Section 1910, (42 U.S.C. 300w-9); as amended"
+            },
+            "act": {
+              "part": "B",
+              "title": "XIX",
+              "section": "1910",
+              "description": "Public Health Service Act, Title XIX, Section 1910, (42 U.S.C. 300w-9); as amended"
+            },
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "55a375526ef3224b2e123ff3aed67843",
+            "authorizationTypes": {
+              "USC": true,
+              "act": true,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          }
+        ]
+      },
+      "organizationId": "100008531",
+      "assistanceTypes": [
+        "0003001",
+        "0003003"
+      ],
+      "functionalCodes": [
+        "0012006",
+        "0012020",
+        "0012019"
+      ],
+      "relatedPrograms": [
+        "63b7c0983a667212e5aeeb0b34d6bca7",
+        "a9a2738f34f9e657f0056164b0ec9657"
+      ],
+      "alternativeNames": [
+        "EMS for Children"
+      ],
+      "popularShortName": "EMS for Children",
+      "missionSubCategories": [
+        {
+          "code": [
+            "0012009"
+          ],
+          "type": "Primary"
+        }
+      ]
+    },
+    "parentProgramId": "1a871658716da5a3102cb78bafc42165",
+    "latest": true,
+    "revision": false,
+    "fiscalYearLatest": true,
+    "publishedDate": "2026-01-20T05:02:02.565+00:00",
+    "modifiedDate": "2026-01-20T05:02:02.565+00:00",
+    "submittedDate": "2026-01-20T05:02:02.639+00:00",
+    "autoPublishDate": null,
+    "status": {
+      "code": "published",
+      "value": "Published"
+    },
+    "archived": false,
+    "additionalProperty": null,
+    "additionalInfo": {
+      "sections": [
+        {
+          "id": "header-information",
+          "status": "updated"
+        },
+        {
+          "id": "overview",
+          "status": "updated"
+        },
+        {
+          "id": "authorization",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-obligations",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-other",
+          "status": "updated"
+        },
+        {
+          "id": "criteria-information",
+          "status": "updated"
+        },
+        {
+          "id": "applying-for-assistance",
+          "status": "updated"
+        },
+        {
+          "id": "compliance-requirements",
+          "status": "updated"
+        },
+        {
+          "id": "contact-information",
+          "status": "updated"
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/fac/v1/programs/dcaf10bf581d4810bb527769d484d976"
+      }
+    },
+    "id": "dcaf10bf581d4810bb527769d484d976"
+  },
+  {
+    "data": {
+      "title": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+      "version": "2.0",
+      "website": "http://www.cdc.gov",
+      "contacts": {
+        "local": {
+          "flag": "none",
+          "description": "",
+          "officeLocationURL": ""
+        },
+        "headquarters": [
+          {
+            "fax": "",
+            "zip": "30341",
+            "city": "Atlanta",
+            "email": "LNWashington@cdc.gov",
+            "phone": "770-488-2766",
+            "state": "GA",
+            "title": "",
+            "country": "US",
+            "fullName": "LaShanda Washington",
+            "contactId": "67fc22a3c413dcb663b7a431b442fa9e",
+            "streetAddress": "4770 Buford Hwy, NE",
+            "streetAddress2": ""
+          }
+        ]
+      },
+      "projects": {
+        "list": [],
+        "isApplicable": false
+      },
+      "financial": {
+        "accounts": [
+          {
+            "code": "75-0943-0-1-550",
+            "description": null
+          }
+        ],
+        "description": "Awards range from $350,000 - $400,000\nAverage: approx. $400,000",
+        "obligations": [
+          {
+            "values": [
+              {
+                "year": 2024,
+                "actual": 2399067
+              },
+              {
+                "year": 2025,
+                "actual": 2399067
+              },
+              {
+                "year": 2026,
+                "estimate": 2399067
+              }
+            ],
+            "description": "",
+            "obligationId": "254d029af8d0fafa2a135a4a3bdacc0f",
+            "assistanceType": "F002",
+            "awardAmountBasisCode": [
+              "A01"
+            ],
+            "awardRecipientBasisCode": [
+              "R01"
+            ]
+          }
+        ],
+        "accomplishments": {
+          "list": [],
+          "isApplicable": false
+        },
+        "isFundedCurrentFY": true,
+        "additionalInformation": "",
+        "rangeAndAverageAssistance": [
+          {
+            "fiscalYear": "2025",
+            "averageAwardAmount": "400000",
+            "maximumAwardAmount": "400000",
+            "minimumAwardAmount": "350000"
+          },
+          {
+            "fiscalYear": "2026",
+            "averageAwardAmount": "400000",
+            "maximumAwardAmount": "400000",
+            "minimumAwardAmount": "350000"
+          }
+        ]
+      },
+      "objective": "The purpose of this announcement is to fund applicants to improve the health of youth by funding NGOs to assist CDC funded grantees and the organizations\u2019 constituents (e.g., states, school districts and/or schools) to implement environmental and systems changes that support and reinforce healthful behaviors and reduce disparities.  This program announcement places a strong emphasis on training and professional development, technical assistance, dissemination and communication, and program implementation and evaluation, and all activities are to be developed and delivered within the Whole School, Whole Community, Whole Child framework. ",
+      "assistance": {
+        "appeal": {
+          "interval": "8"
+        },
+        "renewal": {
+          "interval": "6",
+          "description": "Cooperative agreement period of performance is 1 to 5 years. After initial awards, and subject to availability of funds, projects may be continued non-competitively contingent upon satisfactory progress by the recipient (as documented in required reports) and the determination that continued funding is in the best interest of the Federal government."
+        },
+        "approval": {
+          "interval": "6",
+          "description": "This information will be provided in the NOFO."
+        },
+        "payments": {
+          "list": [
+            {
+              "type": "N",
+              "frequency": "N",
+              "paymentId": "7c8469306d14416ab101070607a3b8b2",
+              "fundingDate": "",
+              "spendingPeriod": 12,
+              "spendingPeriodType": "M",
+              "frequencyDescription": null,
+              "spendingPeriodDescription": "After review and approval, a Notice of Award (NoA) will be prepared and processed, along with appropriate notification to the public. Initial awards provide funds for the first budget period (usually 12 months) and the NoA will indicate support recommended for the remainder of the project period, allocation of Federal funds by budget categories, award requirements, and special conditions, if any."
+            }
+          ]
+        },
+        "deadlines": {
+          "flag": "C",
+          "list": []
+        },
+        "awardProcedure": {
+          "description": "After review and approval, a Notice of Award (NoA) will be prepared and processed, along with appropriate notification to the public. Initial awards provide funds for the first budget period (usually 12 months) and the NoA will indicate support recommended for the remainder of the project period, allocation of Federal funds by budget categories, award requirements, and special conditions, if any."
+        },
+        "selectionCriteria": {
+          "description": "Applications will be evaluated on the review criteria described in the Notice of Funding Opportunity Announcements (NOFOs). In general, the review and selection process of complete and responsive applications to the NOFO consists of determination of the scientific and technical merit by objective or peer review, availability of funds, and relevance of program priorities and the priorities of CDC.",
+          "isApplicable": true
+        },
+        "applicationProcedure": {
+          "location": "N",
+          "isApplicable": true,
+          "opportunityPostedLocation": "G"
+        },
+        "preApplicationCoordination": {
+          "environmentalImpact": {
+            "reports": []
+          }
+        }
+      },
+      "compliance": {
+        "maps": {
+          "basis": [],
+          "usageList": [],
+          "areCBSADelineationsUsed": "no",
+          "currentCBSADelineationAdopted": {
+            "historicalDelineationSelection": ""
+          }
+        },
+        "audit": {
+          "frequency": [],
+          "description": "",
+          "isApplicable": false
+        },
+        "records": {
+          "description": "In accordance with 2 CFR \u00a7200, there is a 3-year record retention requirement; records shall be retained beyond the 3-year period if final audit has not been done or findings resolved. Property records must be retained in accordance with HHS Grants Policy Statement requirements.",
+          "retentionPeriod": 3,
+          "retentionPeriodType": "Y"
+        },
+        "reports": [
+          {
+            "code": "financial",
+            "frequency": [
+              "A"
+            ],
+            "description": "Annual Federal Financial Reports (FFR) and performance/progress reports are required. Final FFRs and performance reports are required. Other reporting may be required and will be outlined in the NOFO or the Notice of Award."
+          },
+          {
+            "code": "progress",
+            "frequency": [
+              "A"
+            ],
+            "description": "Annual performance progress and monitoring reports will be expected from all recipients no later than 120 days prior to the end of each budget period. This report will serve as the continuation application for the follow-on budget period. The contents of the report should include the information specified in the solicitation from the CDC Grants Management Officer."
+          }
+        ],
+        "documents": {
+          "description": "",
+          "isApplicable": true
+        },
+        "CFR200Requirements": {
+          "questions": [
+            {
+              "code": "subpartB",
+              "isSelected": true
+            },
+            {
+              "code": "subpartC",
+              "isSelected": true
+            },
+            {
+              "code": "subpartD",
+              "isSelected": true
+            },
+            {
+              "code": "subpartE",
+              "isSelected": true
+            },
+            {
+              "code": "subpartF",
+              "isSelected": true
+            }
+          ],
+          "description": ""
+        },
+        "formulaAndMatching": {
+          "moe": {
+            "description": ""
+          },
+          "types": {
+            "moe": false,
+            "formula": false,
+            "matching": false
+          },
+          "formula": {
+            "part": "",
+            "title": "",
+            "chapter": "",
+            "subPart": "",
+            "publicLaw": "",
+            "description": ""
+          },
+          "matching": {
+            "description": ""
+          },
+          "isApplicable": false
+        },
+        "additionalRequirements": {
+          "list": []
+        },
+        "guidelinesAndInformation": {
+          "list": []
+        }
+      },
+      "fiscalYear": 2025,
+      "description": "to improve the health of youth by funding NGOs to assist CDC funded grantees and the organizations\u2019 constituents (e.g., states, school districts and/or schools) to implement environmental and systems changes that support and reinforce healthful behaviors and reduce health inconsistencies.",
+      "eligibility": {
+        "usage": {
+          "loanTerms": {
+            "description": "",
+            "isApplicable": false
+          },
+          "restrictions": {
+            "description": "Restrictions are indicated in the NOFO posted on Grants.gov",
+            "isApplicable": true
+          },
+          "discretionaryFund": {
+            "description": "",
+            "isApplicable": false
+          }
+        },
+        "applicant": {
+          "types": [
+            "ET41010",
+            "ET23020"
+          ],
+          "description": "Public nonprofit institution/organization (includes institutions of higher education and hospitals), Anyone/general public, Native American Organizations (includes lndian groups, cooperatives, corporations, partnerships, associations). Reference posted NOFOs available on Grants.gov",
+          "applicantTypeOther": "Public nonprofit institution/organization (includes institutions of higher education and hospitals), Anyone/general public, Native American Organizations (includes lndian groups, cooperatives, corporations, partnerships, associations)"
+        },
+        "limitation": {
+          "awarded": "other",
+          "description": "Financial assistance is provided for a 12-month budget period with a period of performance of up to five years subject to the availability of funds and satisfactory progress of the recipient.",
+          "awardedDescription": "Notice of Award"
+        },
+        "beneficiary": {
+          "types": [
+            "ET23020",
+            "ET41010"
+          ],
+          "description": "Nonprofit, Community-based, Faith based, American Indian/Alaska Native ",
+          "isSameAsApplicant": true
+        },
+        "documentation": {
+          "description": [
+            "Any required credentials and/or documentation will be identified in the specific Notice of Funding Opportunity (NOFO) for this Assistance Listing."
+          ],
+          "isApplicable": true
+        },
+        "assistanceUsage": {
+          "types": [
+            "UN002"
+          ],
+          "description": "Food and Nutrition, Health/Medical, Training, Community Development (includes Federal surplus property)\n. Applicants must adhere to all CDC guidelines/policy/regulations regarding allowable and unallowable cost."
+        },
+        "assistanceRestriction": {
+          "types": [
+            "UN002"
+          ]
+        }
+      },
+      "programNumber": "93.858",
+      "authorizations": {
+        "list": [
+          {
+            "USC": {
+              "description": ""
+            },
+            "act": {
+              "part": null,
+              "title": null,
+              "section": null,
+              "description": "Section 317(k)(2) of the Public Health Service Act [42 USC Section 247b(k)(2)]"
+            },
+            "statute": {
+              "description": ""
+            },
+            "publicLaw": {
+              "description": ""
+            },
+            "executiveOrder": null,
+            "authorizationId": "0c3f98addfc2666d331bde99cdd3f7f1",
+            "authorizationTypes": {
+              "USC": null,
+              "act": true,
+              "statute": null,
+              "publicLaw": null,
+              "executiveOrder": null
+            },
+            "parentAuthorizationId": null
+          }
+        ]
+      },
+      "organizationId": "100007448",
+      "assistanceTypes": [
+        "0003001"
+      ],
+      "functionalCodes": [
+        "0007004",
+        "0007007"
+      ],
+      "alternativeNames": [
+        "NA"
+      ],
+      "missionSubCategories": [
+        {
+          "code": [
+            "0007004"
+          ],
+          "type": "Primary"
+        },
+        {
+          "code": [
+            "0007007"
+          ],
+          "type": "Other"
+        }
+      ]
+    },
+    "parentProgramId": "03d127eec12f15d8090a3cb600982d82",
+    "latest": true,
+    "revision": false,
+    "fiscalYearLatest": true,
+    "publishedDate": "2026-01-12T05:02:05.469+00:00",
+    "modifiedDate": "2026-01-12T05:02:05.469+00:00",
+    "submittedDate": "2026-01-12T05:02:05.529+00:00",
+    "autoPublishDate": null,
+    "status": {
+      "code": "published",
+      "value": "Published"
+    },
+    "archived": false,
+    "additionalProperty": null,
+    "additionalInfo": {
+      "sections": [
+        {
+          "id": "header-information",
+          "status": "updated"
+        },
+        {
+          "id": "overview",
+          "status": "updated"
+        },
+        {
+          "id": "authorization",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-obligations",
+          "status": "updated"
+        },
+        {
+          "id": "financial-information-other",
+          "status": "updated"
+        },
+        {
+          "id": "criteria-information",
+          "status": "updated"
+        },
+        {
+          "id": "applying-for-assistance",
+          "status": "updated"
+        },
+        {
+          "id": "compliance-requirements",
+          "status": "updated"
+        },
+        {
+          "id": "contact-information",
+          "status": "updated"
+        }
+      ]
+    },
+    "_links": {
+      "self": {
+        "href": "/fac/v1/programs/a73b8007cd7e4783a0ab840913bbfe34"
+      }
+    },
+    "id": "a73b8007cd7e4783a0ab840913bbfe34"
+  }
+]

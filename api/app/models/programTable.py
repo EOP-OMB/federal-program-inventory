@@ -22,7 +22,6 @@ class SearchRequest(BaseModel):
     assistanceTypes: Optional[List[str]] = None
     applicantTypes: Optional[List[str]] = None
     gwo: Optional[List[str]] = None
-    pons: Optional[List[str]] = None
     page: int = 1
     page_size: int = 10
     sort_field: str = "title"
@@ -64,7 +63,6 @@ class SearchFacets(BaseModel):
     assistance_types: List[FacetBucket]
     applicant_types: List[FacetBucket]
     gwo: List[FacetBucket]
-    pons: List[FacetBucket]
 
 class ProgramTableWithFacets(BaseModel):
     programs: List[Program]

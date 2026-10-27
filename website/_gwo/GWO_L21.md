@@ -4,8 +4,18 @@ definition: Promote public understanding of health issues to connect those in ne
   with eligible health services.
 focus_area: Healthcare Quality and Delivery
 gwo_id: GWO.L21
+largest_program:
+  expenditure_amount: 292478151.01
+  name: Affordable Care Act (ACA) Personal Responsibility Education Program
+  permalink: /program/93.092
 permalink: /gwo/GWO_L21
+smallest_program:
+  expenditure_amount: -15306214.45
+  name: Cooperative Agreement to Support Navigators in Federally-facilitated Exchanges
+  permalink: /program/93.332
 title: 'Strengthen Health Education, Communication, and Outreach '
+total_agencies: 2
+total_expenditure: 453179698.84
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 2290000.0

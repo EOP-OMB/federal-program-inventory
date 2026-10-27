@@ -46,15 +46,19 @@ footer_include: _footer-gwo-pon.html
         aria-labelledby="programs-tab"
         class="tab-panel border-top-2px border-base-light"
       >
-        {% include scripts/_data-utils.html programs=page.where_used %}
+        {% include scripts/_data-utils.html %}
 
         <div class="grid-row grid-gap margin-y-2">
           <div class="desktop:grid-col-8 tablet:grid-col-12 grid-row">
             {% assign program_count = page.where_used.size | default: 0 %}
+            {% assign total_expenditure = page.total_expenditure | default: 0 %}
+            {% assign total_agencies = page.total_agencies | default: 0 %}
             {% include components/_info-card.html title="Programs"
             display_number=program_count grid="grid-col" margin="margin-right-1" %} 
             <div data-dollar-amount="{{ total_expenditure }}" class="info-card-total-expenditure" style="display: none;">{{ total_expenditure }}</div>
             {% capture total_expenditure_formatted %}<span data-dollar-amount="{{ total_expenditure }}">${{ total_expenditure }}</span>{% endcapture %}
+            {% capture largest_program_expenditure %}<span data-dollar-amount="{{ page.largest_program.expenditure_amount }}">${{ page.largest_program.expenditure_amount }}</span>{% endcapture %}
+            {% capture smallest_program_expenditure %}<span data-dollar-amount="{{ page.smallest_program.expenditure_amount }}">${{ page.smallest_program.expenditure_amount }}</span>{% endcapture %}
             {% include components/_info-card.html title=current_fy_obligations_title
             display_number=total_expenditure_formatted grid="grid-col" %}
             {% include components/_info-card.html title="Agencies"
@@ -65,11 +69,11 @@ footer_include: _footer-gwo-pon.html
             last_completed_fiscal_year=fiscal_year
             expenditure_total=total_expenditure_formatted
             expenditure_total_value=total_expenditure
-            largest_program_title=largest_program.name 
-            largest_program_link=largest_program.permalink
-            largest_program_expenditure=largest_program_expenditure 
-            smallest_program_title=smallest_program.name 
-            smallest_program_link=smallest_program.permalink
+            largest_program_title=page.largest_program.name
+            largest_program_link=page.largest_program.permalink
+            largest_program_expenditure=largest_program_expenditure
+            smallest_program_title=page.smallest_program.name
+            smallest_program_link=page.smallest_program.permalink
             smallest_program_expenditure=smallest_program_expenditure %}
           </div>
           <div class="grid-col-12 padding-y-4 border-bottom-2px border-base" style="border-bottom: 1px dotted #000;">

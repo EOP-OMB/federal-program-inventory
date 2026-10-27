@@ -4,8 +4,18 @@ definition: Combat criminal networks and syndicates that operates across interna
   borders.
 focus_area: Border Security
 gwo_id: GWO.P9
+largest_program:
+  expenditure_amount: 170186419.63
+  name: Weapons Removal and Abatement
+  permalink: /program/19.800
 permalink: /gwo/GWO_P9
+smallest_program:
+  expenditure_amount: -8699171.42
+  name: Export Control and Related Border Security
+  permalink: /program/19.901
 title: Eliminate Transnational Crime
+total_agencies: 3
+total_expenditure: 306453623.2
 where_used:
 - agency: Department of State
   expenditure_amount: -8699171.42

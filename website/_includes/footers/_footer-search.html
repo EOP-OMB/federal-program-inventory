@@ -11,7 +11,6 @@
   let selectedAssistanceTypes = [];
   let selectedApplicantTypes = [];
   let selectedGwo = [];
-  let selectedPons = [];
 
   // Initialize programs data
   let programs = [];
@@ -31,7 +30,6 @@
     assistanceTypes: [],
     applicantTypes: [],
     gwo: [],
-    pons: [],
   };
 
   // Sort field mapping
@@ -51,7 +49,6 @@
       assistanceTypes: [...selectedAssistanceTypes],
       applicantTypes: [...selectedApplicantTypes],
       gwo: [...selectedGwo],
-      pons: [...selectedPons],
     };
   }
 
@@ -187,7 +184,6 @@
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
       gwo: selectedGwo,
-      pons: selectedPons,
     };
 
     if (currentState.query !== initialFilterState.query) return true;
@@ -209,8 +205,7 @@
         currentState.applicantTypes,
         initialFilterState.applicantTypes
       ) ||
-      !arraysEqual(currentState.gwo, initialFilterState.gwo) ||
-      !arraysEqual(currentState.pons, initialFilterState.pons)
+      !arraysEqual(currentState.gwo, initialFilterState.gwo)
     );
   }
 
@@ -232,7 +227,6 @@
         assistance: [],
         applicant: [],
         gwo: [],
-        pon: [],
       };
     }
 
@@ -282,10 +276,6 @@
       })),
       gwo: (compressed.gwo || []).map((code) => ({
         type: "gwo",
-        title: getTitle(code),
-      })),
-      pon: (compressed.pon || []).map((code) => ({
-        type: "pon",
         title: getTitle(code),
       })),
     };
@@ -357,7 +347,6 @@
       assistance: [],
       applicant: [],
       gwo: [],
-      pon: [],
     };
 
     // Process agency filters
@@ -450,16 +439,6 @@
         });
       });
 
-    // Process PON filters
-    document
-      .querySelectorAll('input[data-filter-type="pon"]:checked')
-      .forEach((checkbox) => {
-        filters.pon.push({
-          type: "pon",
-          title: checkbox.getAttribute("data-pon-title"),
-        });
-      });
-
     return filters;
   }
 
@@ -519,7 +498,6 @@
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
     selectedGwo = [];
-    selectedPons = [];
 
     // Decode and process filters
     try {
@@ -638,21 +616,6 @@
           });
         }
 
-        // Process PON
-        if (decodedData.pon && Array.isArray(decodedData.pon)) {
-          decodedData.pon.forEach((code) => {
-            const ponTitle = mapping[code];
-            if (ponTitle) {
-              selectedPons.push(ponTitle);
-              const checkbox = document.querySelector(
-                `input[data-filter-type="pon"][data-pon-title="${ponTitle}"]`
-              );
-              if (checkbox) {
-                checkbox.checked = true;
-              }
-            }
-          });
-        }
       }
     } catch (e) {
       console.error("Error decoding filters:", e);
@@ -1137,7 +1100,6 @@
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
       gwo: selectedGwo,
-      pons: selectedPons,
     };
 console.log("DEBUG: Sending request body:", requestBody);
 
@@ -1402,16 +1364,6 @@ console.log("DEBUG: Sending request body:", requestBody);
           }
           break;
 
-        case "pon":
-          const ponTitle = input.getAttribute("data-pon-title");
-          if (isChecked) {
-            selectedPons.push(ponTitle);
-          } else {
-            selectedPons = selectedPons.filter(
-              (item) => item !== ponTitle
-            );
-          }
-          break;
       }
     }
 
@@ -1577,7 +1529,6 @@ console.log("DEBUG: Sending request body:", requestBody);
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
     selectedGwo = [];
-    selectedPons = [];
 
     // Reset current query
     currentQuery = "";
@@ -1743,23 +1694,6 @@ console.log("DEBUG: Sending request body:", requestBody);
       }
     }
 
-    // Update Program Outcomes count
-    const ponButton = document.querySelector(
-      '[data-content-id="pons-section"]'
-    );
-    if (ponButton) {
-      const ponChecks = document.querySelectorAll(
-        'input[data-filter-type="pon"]:checked'
-      );
-      const count = ponChecks.length;
-
-      const spanElement = ponButton.querySelector("span");
-      if (spanElement) {
-        const baseText = "Program outcomes";
-        spanElement.textContent =
-          count > 0 ? `${baseText} (${count})` : baseText;
-      }
-    }
   }
 
   function normalizeEligibleApplicantLabelBreaks() {
@@ -1864,7 +1798,6 @@ console.log("DEBUG: Sending request body:", requestBody);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      initOutcomeSearchFilter("pon-filter-search", "pons-fieldset");
       initOutcomeSearchFilter("gwo-filter-search", "gwo-fieldset");
     });
   })();

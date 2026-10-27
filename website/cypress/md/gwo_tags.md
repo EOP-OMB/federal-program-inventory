@@ -1,4 +1,15 @@
 ---
+largest_program:
+  expenditure_amount: 745323247313.0
+  name: Social Security Retirement Insurance
+  permalink: /program/96.002
+smallest_program:
+  expenditure_amount: 0.0
+  name: ARRA – Emergency Contingency Fund for Temporary Assistance for Needy Families
+    (TANF) State Program
+  permalink: /program/93.714
+total_agencies: 9
+total_expenditure: 962068198980.76
 layout: gwo
 category: Income Security and Social Services
 definition: Provide individuals or households with a temporary safety net through

@@ -4,8 +4,18 @@ definition: Strengthening the healthcare system’s ability to meet patient and 
   needs.
 focus_area: Healthcare Quality and Delivery
 gwo_id: GWO.L18
+largest_program:
+  expenditure_amount: 3800951210.0
+  name: 'Tribal Self-Governance Program: IHS Compacts/Funding Agreements'
+  permalink: /program/93.210
 permalink: /gwo/GWO_L18
+smallest_program:
+  expenditure_amount: -6989147.12
+  name: Grants for Capital Development in Health Centers
+  permalink: /program/93.526
 title: Improve Capacity of the Healthcare System
+total_agencies: 7
+total_expenditure: 11591852142.31
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

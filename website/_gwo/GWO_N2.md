@@ -4,8 +4,18 @@ definition: 'Provide financial knowledge, tools, or skills to enable individual 
   decision-making and literacy.  '
 focus_area: Personal Financial Health
 gwo_id: GWO.N2
+largest_program:
+  expenditure_amount: 4595909131.91
+  name: Child Support Services
+  permalink: /program/93.563
 permalink: /gwo/GWO_N2
+smallest_program:
+  expenditure_amount: 438607.98
+  name: Community Development Revolving Loan Fund Program for Credit Unions
+  permalink: /program/44.002
 title: Promote Personal Financial Responsibility
+total_agencies: 4
+total_expenditure: 4800092559.35
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 4595909131.91

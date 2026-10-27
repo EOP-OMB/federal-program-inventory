@@ -4,8 +4,18 @@ definition: 'Advancing energy research and innovation to enhance energy efficien
   reliability, and resilience.  '
 focus_area: Energy Supply
 gwo_id: GWO.I3
+largest_program:
+  expenditure_amount: 5879226554.44
+  name: State Energy Program
+  permalink: /program/81.041
 permalink: /gwo/GWO_I3
+smallest_program:
+  expenditure_amount: -397815.63
+  name: PHMSA Pipeline Safety Research and Development “Other Transaction Agreements”
+  permalink: /program/20.723
 title: Advance Energy Innovation (R&D)
+total_agencies: 4
+total_expenditure: 9201761561.98
 where_used:
 - agency: Department of Energy
   expenditure_amount: 101217006.35

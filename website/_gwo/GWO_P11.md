@@ -4,8 +4,18 @@ definition: Strengthening the ability to detect, respond to, or recover from cyb
   or digital attacks against critical systems and data.
 focus_area: Cybersecurity
 gwo_id: GWO.P11
+largest_program:
+  expenditure_amount: 0.0
+  name: Cybersecurity Education and Training
+  permalink: /program/97.127
 permalink: /gwo/GWO_P11
+smallest_program:
+  expenditure_amount: 0.0
+  name: Cybersecurity Education and Training
+  permalink: /program/97.127
 title: Improve Cyber Incident Response
+total_agencies: 2
+total_expenditure: 0.0
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

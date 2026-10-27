@@ -3,8 +3,18 @@ category: Education
 definition: Providing financing opportunities for higher education.
 focus_area: Post–Secondary Education
 gwo_id: GWO.G7
+largest_program:
+  expenditure_amount: 39959352172.65
+  name: Federal Pell Grant Program
+  permalink: /program/84.063
 permalink: /gwo/GWO_G7
+smallest_program:
+  expenditure_amount: 0.0
+  name: Barry M. Goldwater Scholarship Program
+  permalink: /program/85.200
 title: Provide Finance Options for Post-Secondary Education
+total_agencies: 10
+total_expenditure: 74492872298.52
 where_used:
 - agency: Barry Goldwater Scholarship and Excellence in Education Fund
   expenditure_amount: 0.0

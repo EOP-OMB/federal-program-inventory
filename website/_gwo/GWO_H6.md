@@ -4,8 +4,19 @@ definition: Increasing the number of individuals entering, advancing, and remain
   in science, technology, engineering, or mathematics (STEM) careers.
 focus_area: Workforce Development
 gwo_id: GWO.H6
+largest_program:
+  expenditure_amount: 202558172.11
+  name: Cancer Research Manpower
+  permalink: /program/93.398
 permalink: /gwo/GWO_H6
+smallest_program:
+  expenditure_amount: 0.0
+  name: Bioengineering, Biomedical Imaging, and Technology Development - Training
+    Individual (TR)
+  permalink: /program/93.EB3
 title: Grow the STEM Workforce
+total_agencies: 7
+total_expenditure: 486827776.27
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

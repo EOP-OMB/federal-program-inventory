@@ -4,8 +4,18 @@ definition: Expanding opportunities for international education, exchanges, and 
   between U.S. institutions and global partners.
 focus_area: International Relations and Foreign Affairs
 gwo_id: GWO.IA2
+largest_program:
+  expenditure_amount: 192483211.68
+  name: Academic Exchange Programs - Graduate Students
+  permalink: /program/19.400
 permalink: /gwo/GWO_IA2
+smallest_program:
+  expenditure_amount: -899121.26
+  name: Overseas Programs - Doctoral Dissertation Research Abroad
+  permalink: /program/84.022
 title: Promote International Education and Exchange
+total_agencies: 6
+total_expenditure: 417120068.36
 where_used:
 - agency: Department of State
   expenditure_amount: 14091170.49

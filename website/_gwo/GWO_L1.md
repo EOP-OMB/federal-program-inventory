@@ -4,8 +4,18 @@ definition: Supporting safe, stable, and permanent living arrangements or enviro
   for orphaned children.
 focus_area: Child Welfare
 gwo_id: GWO.L1
+largest_program:
+  expenditure_amount: 3066687295.17
+  name: Adoption Assistance
+  permalink: /program/93.659
 permalink: /gwo/GWO_L1
+smallest_program:
+  expenditure_amount: 12015227.52
+  name: Indian Child Welfare Act Title II Grants
+  permalink: /program/15.144
 title: Ensure Stability and Security for Children Without Parents
+total_agencies: 3
+total_expenditure: 6407045889.65
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 3066687295.17

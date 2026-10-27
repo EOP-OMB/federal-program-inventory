@@ -4,8 +4,18 @@ definition: Fostering safe, supportive, and high-quality learning environments t
   foster students’ academic and social development.
 focus_area: Educational Environments
 gwo_id: GWO.G3
+largest_program:
+  expenditure_amount: 14075929514.16
+  name: Special Education Grants to States
+  permalink: /program/84.027
 permalink: /gwo/GWO_G3
+smallest_program:
+  expenditure_amount: -1565675.42
+  name: Team Nutrition Grants
+  permalink: /program/10.574
 title: Promote Safe and High-Quality Schools
+total_agencies: 7
+total_expenditure: 21556998112.6
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 17050365.94

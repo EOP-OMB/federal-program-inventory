@@ -4,8 +4,18 @@ definition: Strengthen the physical condition and safety of residential structur
   to support occupant's health and well-being.
 focus_area: Housing and Homelessness
 gwo_id: GWO.M4
+largest_program:
+  expenditure_amount: 2390000000.0
+  name: Credit for energy efficiency improvements to existing homes
+  permalink: /program/TC.036
 permalink: /gwo/GWO_M4
+smallest_program:
+  expenditure_amount: -8727743.76
+  name: Lead-Based Paint Capital Fund Program
+  permalink: /program/14.888
 title: Promote Safe and High-Quality Housing
+total_agencies: 7
+total_expenditure: 3124194059.61
 where_used:
 - agency: Department of Housing and Urban Development
   expenditure_amount: 225000000.0

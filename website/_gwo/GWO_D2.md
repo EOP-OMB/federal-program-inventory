@@ -4,8 +4,18 @@ definition: Protecting the public from unsafe products and services to ensure co
   confidence and safety.
 focus_area: Consumer and Occupational Health and Safety
 gwo_id: GWO.D2
+largest_program:
+  expenditure_amount: 54057041.56
+  name: Cooperative Agreements with States for Intrastate Meat and Poultry Inspection
+  permalink: /program/10.475
 permalink: /gwo/GWO_D2
+smallest_program:
+  expenditure_amount: -784957.43
+  name: Virginia Graeme Baker Pool and Spa Safety
+  permalink: /program/87.002
 title: Strengthen Consumer Safety
+total_agencies: 4
+total_expenditure: 86615426.8
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

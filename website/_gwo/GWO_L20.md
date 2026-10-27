@@ -4,8 +4,19 @@ definition: Strengthening the overall effectiveness, safety, and patient experie
   of America’s healthcare systems.
 focus_area: Healthcare Quality and Delivery
 gwo_id: GWO.L20
+largest_program:
+  expenditure_amount: 377514643.02
+  name: State Survey and Certification of Health Care Providers and Suppliers (Title
+    XVIII) Medicare
+  permalink: /program/93.777
 permalink: /gwo/GWO_L20
+smallest_program:
+  expenditure_amount: -1749565.85
+  name: Public Health Training Centers Program
+  permalink: /program/93.516
 title: Improve the Quality of Care Provided by Healthcare Systems
+total_agencies: 3
+total_expenditure: 1711213029.5
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 3969166.0

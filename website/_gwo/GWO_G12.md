@@ -4,8 +4,19 @@ definition: Strengthening students’ academic foundation, interest, and identit
   STEM fields.
 focus_area: STEM Education
 gwo_id: GWO.G12
+largest_program:
+  expenditure_amount: 28304631.84
+  name: Science, Technology, Engineering & Mathematics (STEM) Education, Outreach
+    and Workforce Program
+  permalink: /program/12.330
 permalink: /gwo/GWO_G12
+smallest_program:
+  expenditure_amount: 0.0
+  name: Garrett A. Morgan Technology and Transportation Education Program (GAMTTEP)
+  permalink: /program/20.293
 title: Strengthen Preparation for STEM Education
+total_agencies: 5
+total_expenditure: 63553075.73
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 0.0

@@ -4,8 +4,18 @@ definition: Eliminating homelessness so that every individual and family has a s
   stable, and permanent place to live.
 focus_area: Housing and Homelessness
 gwo_id: GWO.M1
+largest_program:
+  expenditure_amount: 3407190537.43
+  name: Continuum of Care Program
+  permalink: /program/14.267
 permalink: /gwo/GWO_M1
+smallest_program:
+  expenditure_amount: -150944728.42
+  name: Emergency Rental Assistance Program
+  permalink: /program/21.023
 title: End Homelessness
+total_agencies: 4
+total_expenditure: 4621820504.78
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 64860026.38

@@ -62,7 +62,6 @@ API_BODIES = [
         "assistanceTypes": [],
         "applicantTypes": [],
         "gwo": [],
-        "pons": [],
     },
     {
         "query": "health",
@@ -75,7 +74,6 @@ API_BODIES = [
         "assistanceTypes": [],
         "applicantTypes": [],
         "gwo": [],
-        "pons": [],
     },
     {
         "query": "96.002",
@@ -88,7 +86,6 @@ API_BODIES = [
         "assistanceTypes": [],
         "applicantTypes": [],
         "gwo": [],
-        "pons": [],
     },
 ]
 

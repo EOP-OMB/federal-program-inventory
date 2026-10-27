@@ -3,8 +3,18 @@ category: Transportation
 definition: Construction or maintenance of public roadway infrastructure system.
 focus_area: Ground Transportation
 gwo_id: GWO.T3
+largest_program:
+  expenditure_amount: 67403332424.45
+  name: Highway Planning and Construction
+  permalink: /program/20.205
 permalink: /gwo/GWO_T3
+smallest_program:
+  expenditure_amount: 0.0
+  name: Active Transportation Infrastructure Investment Program  (ATIIP)
+  permalink: /program/20.228
 title: Sustain Public Roadway System
+total_agencies: 5
+total_expenditure: 70561383801.01
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 0.0

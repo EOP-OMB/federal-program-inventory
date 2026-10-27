@@ -4,8 +4,18 @@ definition: Increasing the number of students who successfully complete a colleg
   degree, certificate, or credential program.
 focus_area: Post–Secondary Education
 gwo_id: GWO.G8
+largest_program:
+  expenditure_amount: 1368094656.17
+  name: Higher Education Institutional Aid
+  permalink: /program/84.031
 permalink: /gwo/GWO_G8
+smallest_program:
+  expenditure_amount: -250630.19
+  name: Overseas Programs - Group Projects Abroad
+  permalink: /program/84.021
 title: Increase Post-Secondary Completion
+total_agencies: 3
+total_expenditure: 2141689992.33
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 128905157.0

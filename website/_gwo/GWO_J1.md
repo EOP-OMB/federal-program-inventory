@@ -4,8 +4,18 @@ definition: Expanding the quality, scope, and application of environmental resea
   to deepen understanding of ecosystems, natural resources, and environmental challenges.
 focus_area: Pollution Control and Abatement
 gwo_id: GWO.J1
+largest_program:
+  expenditure_amount: 95429861.69
+  name: Cooperative Research Program
+  permalink: /program/11.472
 permalink: /gwo/GWO_J1
+smallest_program:
+  expenditure_amount: -31448.8
+  name: Cooperative Ecosystem Studies Units
+  permalink: /program/15.678
 title: Strengthen Environmental Research
+total_agencies: 4
+total_expenditure: 455299340.09
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 2435421.98

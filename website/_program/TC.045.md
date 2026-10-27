@@ -45,9 +45,7 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":580000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":710000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":750000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":770000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":820000000.0}]'
 outlays: null
 permalink: /program/TC.045.html
-pons:
-- permalink: /pon/PON_T97
-  pon: Protect Cultural and Historical Sites and Artifacts
+pons: []
 popular_name: ''
 program_type: tax_expenditure
 results: []

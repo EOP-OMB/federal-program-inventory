@@ -4,8 +4,18 @@ definition: Enable more individuals and families can achieve the American dream 
   homeownership.
 focus_area: Housing and Homelessness
 gwo_id: GWO.M3
+largest_program:
+  expenditure_amount: 1368994572.0
+  name: Veterans Housing Direct Loans for Certain Disabled Veterans
+  permalink: /program/64.118
 permalink: /gwo/GWO_M3
+smallest_program:
+  expenditure_amount: -5078650255.51
+  name: Mortgage Insurance Homes
+  permalink: /program/14.117
 title: Increase Homeownership
+total_agencies: 5
+total_expenditure: -2794815657.63
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: 1140000000.0

@@ -4,8 +4,18 @@ definition: Reducing the prevalence and severity of chronic diseases and associa
   risk factors.
 focus_area: Health and Wellbeing
 gwo_id: GWO.L12
+largest_program:
+  expenditure_amount: 1289037812.3
+  name: HIV Care Formula Grants
+  permalink: /program/93.917
 permalink: /gwo/GWO_L12
+smallest_program:
+  expenditure_amount: -1390240.54
+  name: Good Health and Wellness in Indian Country
+  permalink: /program/93.479
 title: Eliminate Chronic Disease and Risk Factors
+total_agencies: 2
+total_expenditure: 3254479780.12
 where_used:
 - agency: Department of Health and Human Services
   expenditure_amount: 0.0

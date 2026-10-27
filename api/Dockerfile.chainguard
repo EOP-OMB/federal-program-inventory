@@ -1,0 +1,50 @@
+# Stage 1: Install Python deps. python:3.10 has no pip or shell, so
+#          packages are installed in a venv on the :3.10-dev image.
+FROM chainguard-docker.nexus.boozallencsn.com/bah-enterprise/python:3.10-dev AS build-image
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
+ENV http_proxy=$http_proxy \
+    https_proxy=$https_proxy \
+    no_proxy=$no_proxy \
+    HTTP_PROXY=$http_proxy \
+    HTTPS_PROXY=$https_proxy \
+    NO_PROXY=$no_proxy
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN python -m venv /app/venv
+ENV PATH="/app/venv/bin:$PATH"
+# CVE-2026-24049
+RUN pip install --no-cache-dir --upgrade "wheel>=0.46.2" && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Stage 2: Distroless runtime. No curl/wget/shell; healthcheck uses stdlib urllib.
+FROM chainguard-docker.nexus.boozallencsn.com/bah-enterprise/python:3.10 AS runtime-image
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
+ENV http_proxy=$http_proxy \
+    https_proxy=$https_proxy \
+    no_proxy=$no_proxy \
+    HTTP_PROXY=$http_proxy \
+    HTTPS_PROXY=$https_proxy \
+    NO_PROXY=$no_proxy \
+    PATH="/app/venv/bin:$PATH"
+
+WORKDIR /app
+
+COPY --from=build-image /app/venv /app/venv
+COPY ./app/ ./app/
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=10s --timeout=5s --retries=5 \
+    CMD ["python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/')"]
+
+# Image ENTRYPOINT is /usr/bin/python (no venv packages). Use the venv interpreter.
+ENTRYPOINT ["/app/venv/bin/python"]
+CMD ["-m", "uvicorn", "app.main:app", "--host", "", "--port", "8000"]

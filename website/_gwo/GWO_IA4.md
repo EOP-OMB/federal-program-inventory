@@ -4,8 +4,18 @@ definition: Strengthening America’s relationships with foreign governments and
   organizations.
 focus_area: International Relations and Foreign Affairs
 gwo_id: GWO.IA4
+largest_program:
+  expenditure_amount: 625111232.78
+  name: Contributions to International Organizations- CIO
+  permalink: /program/19.790
 permalink: /gwo/GWO_IA4
+smallest_program:
+  expenditure_amount: -16644959.71
+  name: Public Diplomacy Programs
+  permalink: /program/19.040
 title: Strengthen Diplomatic Relations
+total_agencies: 5
+total_expenditure: 1650799545.97
 where_used:
 - agency: Department of State
   expenditure_amount: -14924.64

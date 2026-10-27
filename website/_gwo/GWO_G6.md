@@ -4,8 +4,18 @@ definition: Increasing the enrollment and consistent attendance of school-age ch
   in K-12 education.
 focus_area: K–12 Education
 gwo_id: GWO.G6
+largest_program:
+  expenditure_amount: 224774078.62
+  name: Charter Schools
+  permalink: /program/84.282
 permalink: /gwo/GWO_G6
+smallest_program:
+  expenditure_amount: 2769616.93
+  name: Migrant Education Coordination Program
+  permalink: /program/84.144
 title: Increase K12 School Enrollment
+total_agencies: 1
+total_expenditure: 354296157.13
 where_used:
 - agency: Department of Education
   expenditure_amount: 224774078.62

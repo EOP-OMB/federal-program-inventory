@@ -4,8 +4,18 @@ definition: Enhancing the efficiency of food distribution systems and networks t
   support getting food from producers and manufacturers to consumers.
 focus_area: Food and Nutrition Assistance
 gwo_id: GWO.K2
+largest_program:
+  expenditure_amount: 131334686.68
+  name: Emergency Food Assistance Program (Administrative Costs)
+  permalink: /program/10.568
 permalink: /gwo/GWO_K2
+smallest_program:
+  expenditure_amount: -1110788124.91
+  name: Local Food for Schools Cooperative Agreement Program
+  permalink: /program/10.185
 title: Improve Food Distribution Networks
+total_agencies: 1
+total_expenditure: -1742733295.3
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 2304956.32

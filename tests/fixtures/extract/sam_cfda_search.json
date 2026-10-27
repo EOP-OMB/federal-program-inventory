@@ -1,0 +1,1012 @@
+{
+  "_embedded": {
+    "results": [
+      {
+        "_rScore": 0,
+        "_type": "assistanceListing",
+        "publishDate": "2026-01-23T00:01:47-05:00",
+        "assistanceTypes": [
+          {
+            "hierarchy": [
+              {
+                "elementId": "F",
+                "code": "FF",
+                "level": 1,
+                "value": "Financial"
+              },
+              {
+                "elementId": "F002",
+                "code": "F002",
+                "level": 2,
+                "value": "Cooperative Agreement"
+              }
+            ]
+          }
+        ],
+        "fhNames": null,
+        "relatedPrograms": [
+          {
+            "programNumber": "11.303",
+            "id": "1f512c97beb24c0b9ca2226e5844f6da",
+            "title": "Economic Development Technical Assistance"
+          },
+          {
+            "programNumber": "43.002",
+            "id": "711d631dac3943228a79a9fd88c05238",
+            "title": "Aeronautics"
+          },
+          {
+            "programNumber": "11.303",
+            "id": "9a8481e7014a4198bf5ad1f54271fa30",
+            "title": "Economic Development Technical Assistance"
+          },
+          {
+            "programNumber": "59.037",
+            "id": "e736230c233046fe940d45a0a9d1a23c",
+            "title": "Small Business Development Centers"
+          }
+        ],
+        "isActive": true,
+        "title": "Manufacturing Extension Partnership",
+        "objective": "Enhance competitiveness, productivity, and technological performance in United States lndian manufacturing.\r\nEstablish, maintain, and support Manufacturing Extension Centers and services, the functions of which are to improve the competitiveness of firms by",
+        "isFunded": true,
+        "historicalIndex": [
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2020-08-17T01:00:02.39-04:00",
+            "isManual": false,
+            "index": 8,
+            "historicalIndexId": "f9fe4b5d290947738f0eb15d0d0de964",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2018-10-01T01:00:02.256-04:00",
+            "isManual": false,
+            "index": 6,
+            "historicalIndexId": "9b7aa580c3cb402a95ceb84e32187593",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2020-09-01T01:00:06.988-04:00",
+            "isManual": false,
+            "index": 9,
+            "historicalIndexId": "d4336b2ca1f442ce98a57c84224a3d22",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "title",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 3,
+            "historicalIndexId": "3641ceb654d2bd7b44cf4705cebf9929",
+            "body": "Manufacturing Technology Centers",
+            "fiscalYear": 1993,
+            "statusCode": "U"
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "program_number",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 5,
+            "historicalIndexId": "e2a86f1b179c6022d77b6f8a811548db",
+            "body": "Consolidated from 11.613",
+            "fiscalYear": 1995,
+            "statusCode": "B"
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 1,
+            "historicalIndexId": "f4673627e0c517c0c79dd95bf41a2d38",
+            "body": "Manufacturing Technology Centers Program",
+            "fiscalYear": 1992,
+            "statusCode": "U"
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2019-08-23T01:00:07.551-04:00",
+            "isManual": false,
+            "index": 7,
+            "historicalIndexId": "dadb46a61ab34927b9a998e90823478a",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "title",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 2,
+            "historicalIndexId": "3d22559b37b9fdca9ea4f6ed2d60ad47",
+            "body": "Manufacturing Extension Program",
+            "fiscalYear": 1993,
+            "statusCode": "B"
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "title",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 4,
+            "historicalIndexId": "d09f14d92d3a7e9887ead99d705b678a",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 1994,
+            "statusCode": "B"
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2026-01-23T00:01:49.003-05:00",
+            "isManual": false,
+            "index": 14,
+            "historicalIndexId": "1b5a5d6d1ca0460fb50bbb270a82b3bf",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2026,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2023-09-12T01:04:36.712-04:00",
+            "isManual": false,
+            "index": 12,
+            "historicalIndexId": "4d497d1a453d4f03a186e19116a83d83",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2024-11-14T00:00:46.192-05:00",
+            "isManual": false,
+            "index": 13,
+            "historicalIndexId": "4f23cf0b75ef460aa53b7e6084054fdf",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2024,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2021-08-09T01:00:38.293-04:00",
+            "isManual": false,
+            "index": 10,
+            "historicalIndexId": "275ffc4026b04af282c8412b914f7aed",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2021,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100109529",
+            "actionType": "publish",
+            "createdDate": "2022-09-02T01:06:15.672-04:00",
+            "isManual": false,
+            "index": 11,
+            "historicalIndexId": "4576c54b74cb40748f847d26b6476cb6",
+            "body": "Manufacturing Extension Partnership",
+            "fiscalYear": 2022,
+            "statusCode": ""
+          }
+        ],
+        "assistanceTypeLabels": [
+          "F002 - Cooperative Agreement"
+        ],
+        "modifiedDate": "2026-01-23T00:01:47-05:00",
+        "organizationHierarchy": [
+          {
+            "organizationId": "100035122",
+            "code": "1300",
+            "level": 1,
+            "name": "COMMERCE, DEPARTMENT OF",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100109529",
+            "code": "1341",
+            "level": 2,
+            "name": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100013311",
+            "code": "2000",
+            "level": 1,
+            "name": "TREASURY, DEPARTMENT OF THE",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100076336",
+            "code": "2050",
+            "level": 2,
+            "name": "INTERNAL REVENUE SERVICE",
+            "status": "Active"
+          }
+        ],
+        "programNumber": "11.611",
+        "_id": "7f35e497c11544ad8900a967a1284d89"
+      },
+      {
+        "_rScore": 0,
+        "_type": "assistanceListing",
+        "publishDate": "2023-09-05T01:05:49-04:00",
+        "assistanceTypes": [
+          {
+            "hierarchy": [
+              {
+                "elementId": "0005",
+                "code": "C",
+                "level": 1,
+                "value": "DIRECT PAYMENTS FOR A SPECIFIED USE"
+              },
+              {
+                "elementId": "0005001",
+                "code": "C",
+                "level": 2,
+                "value": "Direct Payments for Specified Use"
+              }
+            ]
+          }
+        ],
+        "fhNames": null,
+        "relatedPrograms": [
+          {
+            "programNumber": "14.871",
+            "id": "f64360ef60214ec9b64b015783d0c5e5",
+            "title": "Section 8 Housing Choice Vouchers"
+          }
+        ],
+        "isActive": true,
+        "title": "Family Unification Program (FUP)",
+        "objective": "To aid: (1) Families for whom the lack of adequate housing is a primary factor in: a. The imminent placement of the family\u2019s child or children in out-of-home care, or b. The delay in the discharge of the child or children to the family from out-of-ho",
+        "isFunded": false,
+        "historicalIndex": [
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2018-09-14T10:17:44.485-04:00",
+            "isManual": false,
+            "index": 4,
+            "historicalIndexId": "7a64b16ef18d464e93791213bd11b1a0",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2020-07-01T01:01:00.648-04:00",
+            "isManual": false,
+            "index": 8,
+            "historicalIndexId": "81580c8da85549bf92447c2b462b4eea",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100500310",
+            "actionType": "publish",
+            "createdDate": "2008-07-03T00:00:00-04:00",
+            "isManual": false,
+            "index": 1,
+            "historicalIndexId": "93167f929b14c6ce156f4ce2205a6bd9",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2008,
+            "statusCode": null
+          },
+          {
+            "organizationId": "100500310",
+            "actionType": "archive",
+            "createdDate": "2014-06-06T15:01:51-04:00",
+            "isManual": false,
+            "index": 2,
+            "historicalIndexId": "d5c0530ae9a0786c53c64030b94a003e",
+            "body": "Archived",
+            "fiscalYear": 2014,
+            "statusCode": null
+          },
+          {
+            "organizationId": "100500310",
+            "actionType": "unarchive",
+            "createdDate": "2017-09-08T09:39:27-04:00",
+            "isManual": false,
+            "index": 3,
+            "historicalIndexId": "dc900a636057a0db266f9b86fd94cee8",
+            "body": "Reinstated",
+            "fiscalYear": 2017,
+            "statusCode": null
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2018-10-03T01:00:27.171-04:00",
+            "isManual": false,
+            "index": 6,
+            "historicalIndexId": "434756c7d4fd4d479f5783835ef9701c",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2019-09-18T01:00:18.263-04:00",
+            "isManual": false,
+            "index": 7,
+            "historicalIndexId": "e237a58a8b654fceb8cdd2c28e5a92bb",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2020-09-04T01:00:24.578-04:00",
+            "isManual": false,
+            "index": 9,
+            "historicalIndexId": "b2672f75da654b32841f205c5ae3f64f",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "agency",
+            "createdDate": "2018-09-14T10:17:44.494-04:00",
+            "isManual": false,
+            "index": 5,
+            "historicalIndexId": "82f6c3f9eac9426eb1723df7e88f73a6",
+            "body": null,
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2023-09-05T01:05:49.156-04:00",
+            "isManual": false,
+            "index": 12,
+            "historicalIndexId": "7d7ea5d1ce7c468c99e68c348a8bfd1c",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2022-08-11T01:06:31.675-04:00",
+            "isManual": false,
+            "index": 11,
+            "historicalIndexId": "875b8dce444f4e3bbb968844a93efc00",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2022,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100052551",
+            "actionType": "publish",
+            "createdDate": "2021-08-10T01:03:24.62-04:00",
+            "isManual": false,
+            "index": 10,
+            "historicalIndexId": "2d0d13d95a8b4792979718bf2b004049",
+            "body": "Family Unification Program (FUP)",
+            "fiscalYear": 2021,
+            "statusCode": ""
+          }
+        ],
+        "assistanceTypeLabels": [
+          "F006 - Direct Payment for Specified Use"
+        ],
+        "modifiedDate": "2023-09-05T01:05:49-04:00",
+        "organizationHierarchy": [
+          {
+            "organizationId": "100000391",
+            "code": "8600",
+            "level": 1,
+            "name": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100052551",
+            "code": "8635",
+            "level": 2,
+            "name": "ASSISTANT SECRETARY FOR PUBLIC AND INDIAN HOUSING",
+            "status": "Active"
+          }
+        ],
+        "programNumber": "14.880",
+        "_id": "396e7f72ba48442da57ea34ef2044d70"
+      },
+      {
+        "_rScore": 0,
+        "_type": "assistanceListing",
+        "publishDate": "2026-01-16T00:02:55-05:00",
+        "assistanceTypes": [
+          {
+            "hierarchy": [
+              {
+                "elementId": "F",
+                "code": "FF",
+                "level": 1,
+                "value": "Financial"
+              },
+              {
+                "elementId": "F002",
+                "code": "F002",
+                "level": 2,
+                "value": "Cooperative Agreement"
+              }
+            ]
+          }
+        ],
+        "fhNames": null,
+        "relatedPrograms": null,
+        "isActive": true,
+        "title": "Procurement Technical Assistance For Business Firms",
+        "objective": "Building a strong and sustainable U.S. supply chain and supporting a wide range of diverse businesses by providing procurement assistance to businesses, fostering successful participation in federal, state, and local government contracts.",
+        "isFunded": true,
+        "historicalIndex": [
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 1,
+            "historicalIndexId": "33eae288fc350b187d12e92c793384e3",
+            "body": "Procurement Technical Assistance for Business Firms",
+            "fiscalYear": 1988,
+            "statusCode": "B"
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2019-07-09T09:27:53.316-04:00",
+            "isManual": false,
+            "index": 2,
+            "historicalIndexId": "87abbf6ed2484a8bae8004496b899c67",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2021-06-15T10:14:44.006-04:00",
+            "isManual": false,
+            "index": 6,
+            "historicalIndexId": "bc15568b6c134c7f9991923b6b3e70ad",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2021,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2019-12-02T00:00:02.39-05:00",
+            "isManual": false,
+            "index": 3,
+            "historicalIndexId": "28cacb77b97a4d26b123dd03e120cbaa",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2020-08-18T09:16:39.454-04:00",
+            "isManual": false,
+            "index": 5,
+            "historicalIndexId": "5158c858736643ba925c04a1c1eff51b",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2020-06-12T12:42:16.14-04:00",
+            "isManual": false,
+            "index": 4,
+            "historicalIndexId": "3e290311af4e49f9835552d60d31a0a4",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000427",
+            "actionType": "publish",
+            "createdDate": "2023-01-24T14:14:24.128-05:00",
+            "isManual": false,
+            "index": 8,
+            "historicalIndexId": "1e9aedf6a7044e5f9fdab79ae639b059",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000427",
+            "actionType": "publish",
+            "createdDate": "2026-01-16T00:02:55.147-05:00",
+            "isManual": false,
+            "index": 12,
+            "historicalIndexId": "7474c91bf47443ac9d32a27080b45f9a",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2026,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000427",
+            "actionType": "publish",
+            "createdDate": "2024-11-20T00:06:48.791-05:00",
+            "isManual": false,
+            "index": 11,
+            "historicalIndexId": "5fee07f3c2ce46e39b727bd2ef5a86b5",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2024,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000427",
+            "actionType": "publish",
+            "createdDate": "2023-08-01T01:03:12.039-04:00",
+            "isManual": false,
+            "index": 10,
+            "historicalIndexId": "9541de08ca4146f7b8ed591bab47df58",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000415",
+            "actionType": "publish",
+            "createdDate": "2022-05-24T11:40:36.216-04:00",
+            "isManual": false,
+            "index": 7,
+            "historicalIndexId": "0dcd313b49eb40a5ab932ba969ebd093",
+            "body": "Procurement Technical Assistance For Business Firms",
+            "fiscalYear": 2022,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "300000427",
+            "actionType": "agency",
+            "createdDate": "2023-01-24T14:14:24.139-05:00",
+            "isManual": false,
+            "index": 9,
+            "historicalIndexId": "2e4ac81e1ac9415a9b98d6864ec603fc",
+            "body": null,
+            "fiscalYear": 2023,
+            "statusCode": ""
+          }
+        ],
+        "assistanceTypeLabels": [
+          "F002 - Cooperative Agreement"
+        ],
+        "modifiedDate": "2026-01-16T00:02:55-05:00",
+        "organizationHierarchy": [
+          {
+            "organizationId": "100000000",
+            "code": "9700",
+            "level": 1,
+            "name": "DEPT OF DEFENSE",
+            "status": "Active"
+          },
+          {
+            "organizationId": "300000427",
+            "code": "97F5",
+            "level": 2,
+            "name": "WASHINGTON HEADQUARTERS SERVICES (WHS)",
+            "status": "Active"
+          }
+        ],
+        "programNumber": "12.002",
+        "_id": "8d745b5ad52a421dbf9483c7451adec1"
+      },
+      {
+        "_rScore": 0,
+        "_type": "assistanceListing",
+        "publishDate": "2026-01-20T00:02:02-05:00",
+        "assistanceTypes": [
+          {
+            "hierarchy": [
+              {
+                "elementId": "F",
+                "code": "FF",
+                "level": 1,
+                "value": "Financial"
+              },
+              {
+                "elementId": "F001",
+                "code": "F001",
+                "level": 2,
+                "value": "Grant"
+              }
+            ]
+          },
+          {
+            "hierarchy": [
+              {
+                "elementId": "F",
+                "code": "FF",
+                "level": 1,
+                "value": "Financial"
+              },
+              {
+                "elementId": "F002",
+                "code": "F002",
+                "level": 2,
+                "value": "Cooperative Agreement"
+              }
+            ]
+          }
+        ],
+        "fhNames": null,
+        "relatedPrograms": [
+          {
+            "programNumber": "93.110",
+            "id": "33f317edb0734e079a4e6eeeaffafbb0",
+            "title": "Special Projects of Regional and National Significance"
+          },
+          {
+            "programNumber": "20.600",
+            "id": "89a2762e94ce4c469fcccdc7f1913ebb",
+            "title": "State and Community Highway Safety"
+          },
+          {
+            "programNumber": "93.110",
+            "id": "d335bebffca8478aba2ddb4df602a477",
+            "title": "Special Projects of Regional and National Significance"
+          }
+        ],
+        "isActive": true,
+        "title": "Emergency Medical Services for Children",
+        "objective": "To support demonstration projects for the expansion and improvement of emergency medical services for children who need treatment for trauma or critical care.",
+        "isFunded": false,
+        "historicalIndex": [
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2020-07-16T01:00:48.224-04:00",
+            "isManual": false,
+            "index": 5,
+            "historicalIndexId": "3e8dd3b360e94cad84f1723ba26e111e",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2018-07-26T01:00:02.151-04:00",
+            "isManual": false,
+            "index": 3,
+            "historicalIndexId": "5317f27545984592a0097eeb45be519d",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2019-07-11T01:00:27.246-04:00",
+            "isManual": false,
+            "index": 4,
+            "historicalIndexId": "559a454d79d040368d83d812fbbc01a3",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100500270",
+            "actionType": "publish",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 1,
+            "historicalIndexId": "d1fcaa85a0117a305e0d7bcc30cdbf9b",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 0,
+            "statusCode": null
+          },
+          {
+            "organizationId": "100500270",
+            "actionType": "program_number",
+            "createdDate": "2004-06-21T00:00:00-05:00",
+            "isManual": true,
+            "index": 2,
+            "historicalIndexId": "cf97779c7407d8f4c5ed3516fee848b2",
+            "body": "Number changed from 13.127",
+            "fiscalYear": 1990,
+            "statusCode": "U"
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2021-08-02T01:00:24.169-04:00",
+            "isManual": false,
+            "index": 6,
+            "historicalIndexId": "448f3401eac24703bdd43649d9bc49a6",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2021,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2022-08-09T01:03:36.453-04:00",
+            "isManual": false,
+            "index": 7,
+            "historicalIndexId": "8a8c1a0095ff4286ad7ffa219646e47c",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2022,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2024-11-27T00:08:42.205-05:00",
+            "isManual": false,
+            "index": 9,
+            "historicalIndexId": "41e93abbbc744bd3a6189ebc6a1737c0",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2024,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2026-01-20T00:02:02.634-05:00",
+            "isManual": false,
+            "index": 10,
+            "historicalIndexId": "100eda1f0b8944ee8a0a4a16d2abac2e",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2026,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100008531",
+            "actionType": "publish",
+            "createdDate": "2023-07-24T17:27:04.738-04:00",
+            "isManual": false,
+            "index": 8,
+            "historicalIndexId": "4b425d0cda53403ea71faa762fec39a2",
+            "body": "Emergency Medical Services for Children",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          }
+        ],
+        "assistanceTypeLabels": [
+          "F001 - Grant",
+          "F002 - Cooperative Agreement"
+        ],
+        "modifiedDate": "2026-01-20T00:02:02-05:00",
+        "organizationHierarchy": [
+          {
+            "organizationId": "100004222",
+            "code": "7500",
+            "level": 1,
+            "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100008531",
+            "code": "7526",
+            "level": 2,
+            "name": "HEALTH RESOURCES AND SERVICES ADMINISTRATION",
+            "status": "Active"
+          }
+        ],
+        "programNumber": "93.127",
+        "_id": "dcaf10bf581d4810bb527769d484d976"
+      },
+      {
+        "_rScore": 0,
+        "_type": "assistanceListing",
+        "publishDate": "2026-01-12T00:02:05-05:00",
+        "assistanceTypes": [
+          {
+            "hierarchy": [
+              {
+                "elementId": "F",
+                "code": "FF",
+                "level": 1,
+                "value": "Financial"
+              },
+              {
+                "elementId": "F002",
+                "code": "F002",
+                "level": 2,
+                "value": "Cooperative Agreement"
+              }
+            ]
+          }
+        ],
+        "fhNames": null,
+        "relatedPrograms": null,
+        "isActive": true,
+        "title": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children",
+        "objective": "The purpose of this announcement is to fund applicants to improve the health of youth by funding NGOs to assist CDC funded grantees and the organizations\u2019 constituents (e.g., states, school districts and/or schools) to implement environmental and sys",
+        "isFunded": true,
+        "historicalIndex": [
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2018-09-05T01:00:11.524-04:00",
+            "isManual": false,
+            "index": 2,
+            "historicalIndexId": "1a81ae5ecc704dacb632f982536aa5ec",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2018,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2021-07-27T01:01:03.697-04:00",
+            "isManual": false,
+            "index": 8,
+            "historicalIndexId": "2de2e0b23e7e4ba2b68623bf0ba536d0",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2021,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2019-08-28T01:01:01.169-04:00",
+            "isManual": false,
+            "index": 4,
+            "historicalIndexId": "a3bb5f67b39e4c968e1baf39e1db0348",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2020-07-17T01:02:33.541-04:00",
+            "isManual": false,
+            "index": 7,
+            "historicalIndexId": "1af2ae5e98c74e819be88d0aa6bb9f26",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2020-07-06T01:01:16.383-04:00",
+            "isManual": false,
+            "index": 6,
+            "historicalIndexId": "72ceae8836b549b8b6a535d227012127",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2019-07-25T01:00:43.37-04:00",
+            "isManual": false,
+            "index": 3,
+            "historicalIndexId": "d6a98a95ebf34bcaa062395804176887",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2019,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2020-06-24T01:01:06.638-04:00",
+            "isManual": false,
+            "index": 5,
+            "historicalIndexId": "d3a18b1f38da4ace94e8371bd927a85e",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2020,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2015-07-29T05:00:22-04:00",
+            "isManual": false,
+            "index": 1,
+            "historicalIndexId": "c81b7b1cc4a615cd447efbfc00f240ed",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2015,
+            "statusCode": null
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2026-01-12T00:02:05.526-05:00",
+            "isManual": false,
+            "index": 12,
+            "historicalIndexId": "4c99e4dea0d64348a06119ea37eda0ac",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2026,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2024-11-14T15:17:40.264-05:00",
+            "isManual": false,
+            "index": 11,
+            "historicalIndexId": "a5f80c9190bd4e5d86fb7a889817d6a0",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2024,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2022-09-05T01:03:46.894-04:00",
+            "isManual": false,
+            "index": 9,
+            "historicalIndexId": "2177d29931b04082b130ba7dabfef779",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2022,
+            "statusCode": ""
+          },
+          {
+            "organizationId": "100007448",
+            "actionType": "publish",
+            "createdDate": "2023-07-31T01:15:54.03-04:00",
+            "isManual": false,
+            "index": 10,
+            "historicalIndexId": "24189989be7b4e53b3051c346059fc77",
+            "body": "National Collaboration to Support Health, Wellness and Academic Success of School-Age Children  ",
+            "fiscalYear": 2023,
+            "statusCode": ""
+          }
+        ],
+        "assistanceTypeLabels": [
+          "F002 - Cooperative Agreement"
+        ],
+        "modifiedDate": "2026-01-12T00:02:05-05:00",
+        "organizationHierarchy": [
+          {
+            "organizationId": "100004222",
+            "code": "7500",
+            "level": 1,
+            "name": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF",
+            "status": "Active"
+          },
+          {
+            "organizationId": "100007448",
+            "code": "7523",
+            "level": 2,
+            "name": "CENTERS FOR DISEASE CONTROL AND PREVENTION",
+            "status": "Active"
+          }
+        ],
+        "programNumber": "93.858",
+        "_id": "a73b8007cd7e4783a0ab840913bbfe34"
+      }
+    ]
+  },
+  "page": {
+    "size": 5,
+    "totalElements": 2870,
+    "totalPages": 574,
+    "number": 0,
+    "maxAllowedRecords": 10000
+  }
+}

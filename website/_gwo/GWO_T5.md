@@ -4,8 +4,19 @@ definition: Ensuring the safety, reliability, and capacity of U.S. waterways and
   to meet the needs of passengers, crews, and cargo.
 focus_area: Water Transportation
 gwo_id: GWO.T5
+largest_program:
+  expenditure_amount: 102968657.0
+  name: Passenger Ferry Grant Program, Electric or Low-Emitting Ferry Pilot Program,
+    and Ferry Service for Rural Communities Program
+  permalink: /program/20.532
 permalink: /gwo/GWO_T5
+smallest_program:
+  expenditure_amount: 0.0
+  name: Boating Safety Data Collection and Analysis Grant Program
+  permalink: /program/97.136
 title: Increase Maritime Safety
+total_agencies: 3
+total_expenditure: 109664516.0
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

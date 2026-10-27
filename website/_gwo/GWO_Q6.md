@@ -4,8 +4,18 @@ definition: Expanding recreational opportunities for the public to enjoy the nat
   scenic landscapes and public lands.
 focus_area: Recreational Resources
 gwo_id: GWO.Q6
+largest_program:
+  expenditure_amount: 1014544148.73
+  name: Wildlife Restoration and Basic Hunter Education and Safety
+  permalink: /program/15.611
 permalink: /gwo/GWO_Q6
+smallest_program:
+  expenditure_amount: -20.56
+  name: Voluntary Public Access and Habitat Incentive Program
+  permalink: /program/10.093
 title: Experience America's Natural Beauty and Public Landscapes
+total_agencies: 4
+total_expenditure: 2750023017.34
 where_used:
 - agency: Department of Defense
   expenditure_amount: 15875859.0

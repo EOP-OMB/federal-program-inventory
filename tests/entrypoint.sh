@@ -18,6 +18,10 @@ EXIT_CODE=0
 
 python -m pytest test_constants.py
 python -m pytest test_extract.py
+python -m pytest test_transform.py
+python -m pytest test_load.py
+python -m pytest test_check_data_quality.py
+python -m pytest test_e2e.py
 
 # Exit with appropriate code
 if [ $EXIT_CODE -ne 0 ]; then

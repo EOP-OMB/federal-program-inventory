@@ -21,7 +21,6 @@ function compressFilters(filters) {
     t: [], // Assistance type codes
     p: [], // Applicant type codes
     gwo: [], // Government-wide objective codes
-    pon: [], // Program outcome codes
   };
 
   // Process agency filters
@@ -80,15 +79,6 @@ function compressFilters(filters) {
       const code = getCode(filter.title || filter);
       compressed.codes[code] = filter.title || filter;
       compressed.gwo.push(code);
-    });
-  }
-
-  // Process program outcomes
-  if (filters.pon && filters.pon.length > 0) {
-    filters.pon.forEach((filter) => {
-      const code = getCode(filter.title || filter);
-      compressed.codes[code] = filter.title || filter;
-      compressed.pon.push(code);
     });
   }
 

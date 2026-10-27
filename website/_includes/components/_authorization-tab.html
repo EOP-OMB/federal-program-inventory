@@ -11,7 +11,7 @@
                 auth.text is already escaped
             {% endcomment %}
             {% if auth.url %}
-                <a href="{{ auth.url }}" class="usa-link--external text-base-darkest" target="_blank" rel="noopener noreferrer">{{ auth.text }}</a>
+                {% include components/_external-link.html href=auth.url text=auth.text class="text-base-darkest" %}
             {% else %}
                 {{ auth.text }}
             {% endif %}

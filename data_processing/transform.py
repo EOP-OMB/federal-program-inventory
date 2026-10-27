@@ -3,16 +3,19 @@ Transform extracted program information and store the transformed
 information in a SQLite database for generation of markdown files.
 """
 
+import argparse
+import check_data_quality_after_transform
+import check_data_quality_before_transform
+import constants
 import csv
 import json
 import os
+import pandas as pd
+from pathlib import Path
 import shutil
 import sqlite3
 import sys
-import constants
-import pandas as pd
 import zipfile
-from data_quality_tests import test_transform_data_quality
 
 # temporary (large) database file paths
 TEMP_DB_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_TEMP_DB_DISK_DIRECTORY')
@@ -28,11 +31,13 @@ USASPENDING_DISK_DIRECTORY = os.getenv('ETL_TRANSFORM_USASPENDING_DISK_DIRECTORY
 
 # extracted file paths
 REPO_DISK_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
+
 EXTRACTED_FILES_DIRECTORY = os.getenv('ETL_TRANSFORM_EXTRACTED_FILES_DIRECTORY')
 
 ASSISTANCE_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_ASSISTANCE_ZIP_FILE_DIRECTORY')
 CONTRACT_ZIP_FILE_DIRECTORY = os.getenv('ETL_TRANSFORM_CONTRACT_ZIP_FILE_DIRECTORY')
 UNZIP_TMP_DIRECTORY = os.getenv('ETL_TRANSFORM_UNZIP_TMP_DIRECTORY')
+QA_DIRECTORY = Path(__file__).resolve().parent / "qa"
 
 if (TEMP_DB_DISK_DIRECTORY is None or
     TEMP_DB_FILE_PATH is None or
@@ -350,14 +355,16 @@ PROGRAM_TO_GWO_CREATE_TABLE_SQL = """
     CREATE TABLE program_to_gwo (
         program_id TEXT NOT NULL,
         gwo_id TEXT NOT NULL,
-        FOREIGN KEY(program_id) REFERENCES program(id)
+        PRIMARY KEY (program_id),
+        FOREIGN KEY(program_id) REFERENCES program(id),
         FOREIGN KEY(gwo_id) REFERENCES gwo(id)
     );
 """
 
 PROGRAM_TO_GWO_INSERT_TABLE_SQL = """
-    INSERT INTO program_to_gwo
-    VALUES (?, ?);
+    INSERT INTO program_to_gwo (program_id, gwo_id)
+    VALUES (?, ?)
+    ON CONFLICT DO NOTHING;
 """
 
 PROGRAM_TO_GWO_DROP_TABLE_SQL = """
@@ -368,14 +375,16 @@ PROGRAM_TO_PON_CREATE_TABLE_SQL = """
     CREATE TABLE program_to_pon (
         program_id TEXT NOT NULL,
         pon_id TEXT NOT NULL,
-        FOREIGN KEY(program_id) REFERENCES program(id)
+        PRIMARY KEY (program_id, pon_id),
+        FOREIGN KEY(program_id) REFERENCES program(id),
         FOREIGN KEY(pon_id) REFERENCES pon(id)
     );
 """
 
 PROGRAM_TO_PON_INSERT_TABLE_SQL = """
-    INSERT INTO program_to_pon
-    VALUES (?, ?);
+    INSERT INTO program_to_pon (program_id, pon_id)
+    VALUES (?, ?)
+    ON CONFLICT DO NOTHING;
 """
 
 PROGRAM_TO_PON_DROP_TABLE_SQL = """
@@ -1458,26 +1467,52 @@ def load_taxonomy_and_assignments():
             row['FA Code']
         ])
 
+    # Commit the crosswalk inserts first. SQLite ignores a foreign-key pragma
+    # while a transaction is open, and those parent tables reference a
+    # focus_area table that is not created here.
+    conn.commit()
+    cur.execute("PRAGMA foreign_keys = ON")
+    gwo_duplicates = gwo_invalid = pon_duplicates = pon_invalid = 0
     file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_GWO_assignment.csv"
     df = pd.read_csv(file_path)
-
-    for _, row in df.iterrows():
-        cur.execute(PROGRAM_TO_GWO_INSERT_TABLE_SQL, [
-            row['al_#'],
-            row['GWO ID']
-        ])
+    gwo_duplicates, gwo_invalid = _insert_assignment_rows(
+        PROGRAM_TO_GWO_INSERT_TABLE_SQL,
+        ((row['al_#'], row['GWO ID']) for _, row in df.iterrows()),
+    )
 
     file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_PON_assignment.csv"
     df = pd.read_csv(file_path)
-
-    for _, row in df.iterrows():
-        cur.execute(PROGRAM_TO_PON_INSERT_TABLE_SQL, [
-            row['al_#'],
-            row['PON ID']
-        ])
-
+    pon_duplicates, pon_invalid = _insert_assignment_rows(
+        PROGRAM_TO_PON_INSERT_TABLE_SQL,
+        ((row['al_#'], row['PON ID']) for _, row in df.iterrows()),
+    )
     conn.commit()
+    cur.execute("PRAGMA foreign_keys = OFF")
+
+    if gwo_duplicates or gwo_invalid or pon_duplicates or pon_invalid:
+        print(
+            "Skipped assignment rows:"
+            f" {gwo_duplicates} duplicate GWO,"
+            f" {gwo_invalid} invalid GWO,"
+            f" {pon_duplicates} duplicate PON,"
+            f" {pon_invalid} invalid PON"
+        )
+
     print("Finished load_taxonomy_and_assignments")
+
+def _insert_assignment_rows(insert_sql, pairs):
+    """Insert assignment pairs. A repeated pair or a missing parent is not stored."""
+    skipped_duplicates = 0
+    skipped_invalid = 0
+    for program_id, parent_id in pairs:
+        try:
+            cur.execute(insert_sql, [program_id, parent_id])
+        except sqlite3.IntegrityError:
+            skipped_invalid += 1
+            continue
+        if cur.rowcount == 0:
+            skipped_duplicates += 1
+    return skipped_duplicates, skipped_invalid
 
 def load_views():
     cur.execute(PROGRAM_AMOUNTS_LOOKUP_DROP_VIEW_SQL)
@@ -1536,16 +1571,69 @@ def remove_orphaned_records():
         WHERE cfda_number NOT IN (SELECT id FROM program);
     """)
 
-test_transform_data_quality()
-load_usaspending_initial_files()
-transform_and_insert_usaspending_aggregation_data()
-load_agency()
-load_sam_category()
-load_sam_programs()
-load_taxonomy_and_assignments()
-load_additional_programs()
-load_improper_payment_mapping()
-load_views()
-remove_orphaned_records()
+def clear_qa_directory():
+    QA_DIRECTORY.mkdir(parents=True, exist_ok=True)
+    for path in QA_DIRECTORY.iterdir():
+        if path.is_file():
+            path.unlink()
 
-conn.close()
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(
+        description=(
+            "Transform extracted program information into a SQLite database."
+        )
+    )
+    parser.add_argument(
+        "--ignore-blockers",
+        action="store_true",
+        help="Continue when data quality checks write qa/blockers.txt.",
+    )
+    return parser.parse_args(argv)
+
+
+def stop_for_blockers(blockers_path, ignore_blockers, message):
+    if not blockers_path.is_file():
+        return
+    if ignore_blockers:
+        print(
+            "Data quality checks found blockers. "
+            "Continuing because --ignore-blockers was specified."
+        )
+        return
+    print(message)
+    sys.exit(1)
+
+
+def main(ignore_blockers=False):
+    clear_qa_directory()
+    check_data_quality_before_transform.main(QA_DIRECTORY)
+    blockers_path = QA_DIRECTORY / "blockers.txt"
+    stop_for_blockers(
+        blockers_path,
+        ignore_blockers,
+        "Data quality checks found blockers. Transform stopped.",
+    )
+
+    load_usaspending_initial_files()
+    transform_and_insert_usaspending_aggregation_data()
+    load_agency()
+    load_sam_category()
+    load_sam_programs()
+    load_additional_programs()
+    load_taxonomy_and_assignments()
+    load_improper_payment_mapping()
+    load_views()
+    remove_orphaned_records()
+    check_data_quality_after_transform.main(QA_DIRECTORY, conn)
+    conn.close()
+    stop_for_blockers(
+        blockers_path,
+        ignore_blockers,
+        "Data quality checks found blockers. Resolve these blockers, and then re-run transform.",
+    )
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    main(ignore_blockers=args.ignore_blockers)

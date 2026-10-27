@@ -4,8 +4,18 @@ definition: Increasing the number of students who successfully earn degrees, cer
   or credentials in science, technology, engineering or mathematics fields.
 focus_area: STEM Education
 gwo_id: GWO.G11
+largest_program:
+  expenditure_amount: 1437374721.0
+  name: STEM Education (formerly Education and Human Resources)
+  permalink: /program/47.076
 permalink: /gwo/GWO_G11
+smallest_program:
+  expenditure_amount: -506823.79
+  name: Capacity Building for Non-Land Grant Colleges of Agriculture (NLGCA)
+  permalink: /program/10.326
 title: Increase Completion of STEM Degrees, Certificates, and Credentials
+total_agencies: 8
+total_expenditure: 1587503181.37
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: -506823.79

@@ -4,8 +4,18 @@ definition: Creating new jobs, expanding workforce participation, and supporting
   to sustained and gainful employment.
 focus_area: Economic Development
 gwo_id: GWO.B6
+largest_program:
+  expenditure_amount: 49642920.0
+  name: Distressed Area Recompete Pilot Program
+  permalink: /program/11.040
 permalink: /gwo/GWO_B6
+smallest_program:
+  expenditure_amount: -24022291.89
+  name: Coronavirus Relief - Pandemic Relief for Aviation Workers
+  permalink: /program/21.018
 title: Create Jobs
+total_agencies: 4
+total_expenditure: 58133094.94
 where_used:
 - agency: Department of the Treasury
   expenditure_amount: -24022291.89

@@ -5,8 +5,18 @@ definition: 'Promote adoption of practices for the sustainable management, prote
   and resilience. '
 focus_area: Conservation and Land Management
 gwo_id: GWO.Q3
+largest_program:
+  expenditure_amount: 899553190.96
+  name: Conservation Stewardship Program
+  permalink: /program/10.924
 permalink: /gwo/GWO_Q3
+smallest_program:
+  expenditure_amount: -46984250.27
+  name: Inflation Reduction Act Urban & Community Forestry Program
+  permalink: /program/10.727
 title: Improve Forest and Land Stewardship
+total_agencies: 4
+total_expenditure: 3847927657.03
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 0.0

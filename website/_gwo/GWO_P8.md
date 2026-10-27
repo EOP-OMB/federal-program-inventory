@@ -3,8 +3,18 @@ category: Law, Justice, and Legal Services
 definition: Ending unlawful entry into the United States.
 focus_area: Border Security
 gwo_id: GWO.P8
+largest_program:
+  expenditure_amount: 51843553.6
+  name: Resettlement Support Centers (RSCs) for U.S. Refugee Resettlement
+  permalink: /program/19.018
 permalink: /gwo/GWO_P8
+smallest_program:
+  expenditure_amount: -887448613.94
+  name: Shelter and Services Program
+  permalink: /program/97.141
 title: End Illegal Immigration
+total_agencies: 3
+total_expenditure: -812358629.01
 where_used:
 - agency: Department of Homeland Security
   expenditure_amount: 0.0

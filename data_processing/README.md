@@ -44,6 +44,8 @@ We rely on undocumented APIs for some of the data, so `test_api_schemas()` runs 
 
 We also rely on a PaymentAccuracy.gov CSV that can change. `test_ip_data()` downloads the latest file, verifies that all columns expected by the local extracted mapping file are present, and verifies that each response row has the expected number of columns.
 
+We run data quality tests before and after transform.  All discrepancies are noted in the console output, and details are written to various files in `data_processing/qa`.  Blockers are recorded in `data_processing/qa/blockers.txt`.  If any blockers are found, they will block future steps in transform and load until they are resolved.  Blockers can be ignored with the `--ignore-blockers` flag in the `transform.py` and `load.py` scripts.
+
 Other aspects of extract data quality should be enforced by the transformed database's foreign key constraints.
 
 ### Global fiscal year and date variables
@@ -66,20 +68,16 @@ Relevant functions include:
 
 Running the above fundtions process will generate four files in the [extracted](extracted) directory that contain some of the data necessary to generate the underlying FPI program pages. Note that this process will make several thousand calls to SAM.gov and USAspending.gov's APIs to retrieve the necessary data. The latest copies of this data are commited to this repo to minimize the need to run these functions.
 
-SAM.gov also publishes an annual PDF that is used in the FPI. The Functional Index from SAM.gov's annual PDF is extracted and used to generate the Categories and Sub-categories shown on the FPI website. Unfortunately, this information is not available from SAM.gov via API. The function in [extract.py](extract.py) used to extract these values is `extract_categories_from_pdf()`. Annually, the new PDF should be downloaded from SAM.gov and the Categories and Sub-categories should be re-extracted. Note that future PDFs are likely to have slightly different layouts and parameters, which will require tweaks to this function.
-
 ### USAspending.gov
 If you determine you need to extract the data from USAspending.gov, you must download and load significant amounts of data from USAspending.gov into a SQLite database. The intial download of this information may exceed 20GB compressed. Once uncompressed, the data and database may exceed 400GB. This information should be refreshed at least annually, but may be refreshed as freqeuntly as monthly.
 
-The FPI uses USAspending.gov's monthly Award Data Archives that are [available for download](https://www.usaspending.gov/download_center/award_data_archive). To reduce the need to redownload the complete dataset monthly, USAspending.gov also makes monthly delta files available, which contain only the updates since the last month's release.
+The FPI uses USAspending.gov's monthly Award Data Archives that are [available for download](https://www.usaspending.gov/download_center/award_data_archive). To reduce the need to redownload the complete dataset monthly, USAspending.gov also makes monthly delta files available.  However, they are not currently supported in this data pipeline.
 
 To load this data iniatially, you should download the "Financial Assistance" data, for current year and each of the six years prior, via the link above. This should result in seven archives. The names of these archives should generally look like `FY2024_All_Contracts_Full_20250406.zip`. Note the `Full` in this file name--for the initial load, you should download the `Full` archives for each year.
 
-Once the files have been downloaded, recursively extract the archives and place all of the resulting CSV files into a single directory. This directory can then be used to run `load_usaspending_initial_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py). These functions will load the CSVs into a SQLite DB, query that DB to extract summary tables, and then insert those summary tables into the [website/transformed_data.db](website/transformed_data.db) SQLite DB.
+Once the files have been downloaded, place all of the zip files into a single directory. This directory can then be used to run `load_usaspending_initial_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py). These functions will load the CSVs into a SQLite DB, query that DB to extract summary tables, and then insert those summary tables into the [website/transformed_data.db](website/transformed_data.db) SQLite DB.
 
-USAspending.gov releases updates monthly. Once the initial data is loaded onto your local machine, you can apply the monthly "Delta" files to your existing USAspending SQLite DB (not stored in this repo), rather than repeating this entire process. To do so, download the monthly "Delta" file at the same link about (rather than the "Full" file), and run `load_usaspending_delta_files()` and `transform_and_insert_usaspending_aggregation_data()` in [transform.py](transform.py) instead.
-
-While this process may not appear optimal at face value, it is designed to: (1) work within the constraints of Government technology; (2) minimize the amount of data that must be downloaded (via Dalta files); and (3) result in a collection of summary tables that can be committed to this repo, for auditability and ease-of-startup for new team members and members of the public (by not requiring the download of any USAspending.gov data to build the website).
+While this process may not appear optimal at face value, it is designed to: (1) work within the constraints of Government technology; and (2) result in a collection of summary tables that can be committed to this repo, for auditability and ease-of-startup for new team members and members of the public (by not requiring the download of any USAspending.gov data to build the website).
 
 ### Additional data
 The FPI also uses additional data, which is sourced from several locations and should be refreshed on varying schedules. These include:
@@ -91,6 +89,19 @@ The FPI also uses additional data, which is sourced from several locations and s
   2. [extracted/FPI_PON_assignment.csv](extracted/FPI_PON_assignment.csv)
   3. [extracted/Taxonomy_GWO_crosswalk.csv](extracted/Taxonomy_GWO_crosswalk.csv)
   4. [extracted/Taxonomy_PON_crosswalk.csv](extracted/Taxonomy_PON_crosswalk.csv)
+
+### Working with CSV files
+When opening CSV files in Excel, it's numeric conversions can truncate data:
+1. Large numbers may be converted to scientific notation, which can truncate less significant digits
+2. Assistance listing number, which have the format nnn.nn may lose trailing zeros
+
+To avoid trailing zero loss, do one of the following:
+1. Make small edits in a text editor (like notepad in Windows).
+2. If using Excel, use Excel's legacy text import and specify the ALN column as "Text".
+3. If using Excel, review columns with large numbers for any cells with scientific notation.  If you find any, format the column as a number (instead of general) and verify that less significant digits were not truncated.
+4. Consider modifying Excel's global settings around number conversion (note that this will affect all of your Excel usage).
+
+Data quality tests should capture these issues after-the-fact.
 
 ## Transforming the data
 > [!NOTE]

@@ -4,8 +4,19 @@ definition: Improving the safety and reliability of public roadways to end surfa
   transportation-related deaths and serious injuries.
 focus_area: Ground Transportation
 gwo_id: GWO.T8
+largest_program:
+  expenditure_amount: 467018145.21
+  name: Motor Carrier Safety Assistance
+  permalink: /program/20.218
 permalink: /gwo/GWO_T8
+smallest_program:
+  expenditure_amount: -5659389.78
+  name: Motor Carrier Safety Assistance High Priority Activities Grants and Cooperative
+    Agreements
+  permalink: /program/20.237
 title: End Surface Transportation-related Fatalities and Injuries
+total_agencies: 1
+total_expenditure: 2138478284.16
 where_used:
 - agency: Department of Transportation
   expenditure_amount: 0.0

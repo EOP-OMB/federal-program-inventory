@@ -5,8 +5,18 @@ definition: Expanding opportunities for individuals to gain the knowledge, techn
   technology, engineering, and mathematics (STEM) careers.
 focus_area: Workforce Development
 gwo_id: GWO.H2
+largest_program:
+  expenditure_amount: 26148649.58
+  name: Meteorologic and Hydrologic Modernization Development
+  permalink: /program/11.467
 permalink: /gwo/GWO_H2
+smallest_program:
+  expenditure_amount: 0.0
+  name: Alaska Native Science and Engineering
+  permalink: /program/15.442
 title: Improve STEM Workforce Training
+total_agencies: 5
+total_expenditure: 52220987.76
 where_used:
 - agency: Department of the Interior
   expenditure_amount: 47000.0

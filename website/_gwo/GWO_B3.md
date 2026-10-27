@@ -4,8 +4,19 @@ definition: Expanding the ability of domestic producers and businesses to gain a
   to access domestic and international markets under fair trade agreements.
 focus_area: Economic Development
 gwo_id: GWO.B3
+largest_program:
+  expenditure_amount: 37140000000.0
+  name: Reduced tax rate on active income of controlled foreign corporations (normal
+    tax method)
+  permalink: /program/TC.004
 permalink: /gwo/GWO_B3
+smallest_program:
+  expenditure_amount: -189244296.82
+  name: Export - Loan Guarantee/Insured Loans
+  permalink: /program/31.007
 title: Expand Trade and Market Access
+total_agencies: 5
+total_expenditure: 55750151308.22
 where_used:
 - agency: Department of Agriculture
   expenditure_amount: 0.0

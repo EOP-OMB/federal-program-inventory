@@ -1,0 +1,19 @@
+{% comment %}
+  Accessible external link that avoids USWDS .usa-link--external.
+  That class injects "External, opens in a new tab." via ::before, which ANDI
+  flags as CSS pseudo-element content.
+
+  Required: href, text
+  Optional: class (extra classes on the anchor)
+{% endcomment %}
+<a
+  href="{{ include.href }}"
+  class="usa-link{% if include.class %} {{ include.class }}{% endif %}"
+  target="_blank"
+  rel="noopener noreferrer"
+>{{ include.text }}<span class="usa-sr-only"> (opens in a new tab)</span><svg
+  class="usa-icon margin-left-05 text-middle width-2 height-2"
+  aria-hidden="true"
+  focusable="false"
+  role="img"
+><use href="/assets/img/sprite.svg#launch"></use></svg></a>
