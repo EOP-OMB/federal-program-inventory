@@ -47,36 +47,17 @@ def generate_csv_from_query(query, filename, params = (), zip = False) -> None:
 def main() -> None:
     generate_csv_from_query("""
         SELECT
-            gwo.id,
-            gwo.gwo,
-            gwo.gwo_definition,
+            pfa.id,
+            pfa.pfa,
+            pfa.pfa_definition,
             focus_area as subcategory,
 			taxonomy_focus_area.id as subcategory_code,
 			category,
 			taxonomy_focus_area.id as category_code
-        FROM gwo
-        JOIN taxonomy_focus_area on gwo.focus_area_id = taxonomy_focus_area.id
+        FROM pfa
+        JOIN taxonomy_focus_area on pfa.focus_area_id = taxonomy_focus_area.id
         JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
-    """, "gwo")
-
-    generate_csv_from_query("""
-        SELECT
-            pon.id,
-            pon.pon2 as pon,
-            pon.pon_definition,
-            focus_area as subcategory,
-			taxonomy_focus_area.id as subcategory_code,
-			category,
-			taxonomy_focus_area.id as category_code
-        FROM pon
-        JOIN taxonomy_focus_area on pon.focus_area_id = taxonomy_focus_area.id
-        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
-    """, "pon")
-
-    generate_csv_from_query("""
-        SELECT *
-        FROM program_to_pon
-    """, "program_to_pon")
+    """, "pfa")
 
     generate_csv_from_query("""
         SELECT
@@ -99,16 +80,16 @@ def main() -> None:
         program_amounts_lookup.sam_estimated_obligation,
         program_amounts_lookup.sam_actual_obligation,
         program_amounts_lookup.usaspending_obligation_by_action_date,
-		gwo.id as gwo_id,
-		gwo.gwo
+		pfa.id as pfa_id,
+		pfa.pfa
         FROM program
         LEFT JOIN agency a1 ON program.agency_id = a1.id
         LEFT JOIN program_amounts_lookup
         ON program.id = program_amounts_lookup.id
-		LEFT JOIN program_to_gwo
-		ON program.id = program_to_gwo.program_id
-		LEFT JOIN gwo
-		ON program_to_gwo.gwo_id = gwo.id
+		LEFT JOIN program_to_pfa
+		ON program.id = program_to_pfa.program_id
+		LEFT JOIN pfa
+		ON program_to_pfa.pfa_id = pfa.id
         WHERE program_amounts_lookup.fiscal_year >= ?
     """, "fpi_unified_table", (BIG_UNIFIED_TABLE_FIRST_YEAR, ), True)
 

@@ -1,0 +1,67 @@
+---
+category: Transportation
+definition: Programs and activities supporting U.S. waterway systems, networks, infrastructure,
+  or port facilities.
+focus_area: Water Transportation
+largest_program:
+  expenditure_amount: 102968657.0
+  name: Passenger Ferry Grant Program, Electric or Low-Emitting Ferry Pilot Program,
+    and Ferry Service for Rural Communities Program
+  permalink: /program/20.532
+permalink: /pfa/GWO_T5
+pfa_id: GWO.T5
+smallest_program:
+  expenditure_amount: 0.0
+  name: Boating Safety Data Collection and Analysis Grant Program
+  permalink: /program/97.136
+title: U.S. Maritime Safety
+total_agencies: 3
+total_expenditure: 109664516.0
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Boating Safety Data Collection and Analysis Grant Program
+  permalink: /program/97.136
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Construction of Ferry Boats and Ferry Terminal Facilities Program (FBP)
+  permalink: /program/20.270
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Electric or Low-Emitting Passenger Ferry Program
+  permalink: /program/20.538
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Ferry Service for Rural Communities
+  permalink: /program/20.539
+  program_type: assistance_listing
+- agency: Department of Commerce
+  expenditure_amount: 0.0
+  name: Hydrographic Services
+  permalink: /program/11.402
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 500000.0
+  name: Maritime Environmental and Technical Assistance
+  permalink: /program/20.826
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 6195859.0
+  name: National Nonprofit Organization Recreational Boating Safety Grant Program
+  permalink: /program/97.135
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 102968657.0
+  name: Passenger Ferry Grant Program, Electric or Low-Emitting Ferry Pilot Program,
+    and Ferry Service for Rural Communities Program
+  permalink: /program/20.532
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: Passenger Ferry Program
+  permalink: /program/20.540
+  program_type: assistance_listing
+---

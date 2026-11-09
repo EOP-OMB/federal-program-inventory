@@ -3,75 +3,83 @@ agencies: '[{"title":"Department of Education","total_num_programs":10,"total_ob
   of Labor","total_num_programs":24,"total_obs":4569492163.91},{"title":"Department
   of Veterans Affairs","total_num_programs":6,"total_obs":1423595459.0},{"title":"Corporation
   for National and Community Service","total_num_programs":10,"total_obs":511695840.58},{"title":"Department
-  of Health and Human Services","total_num_programs":53,"total_obs":434005607.90999997},{"title":"Department
-  of the Interior","total_num_programs":14,"total_obs":292210825.3},{"title":"Department
+  of Health and Human Services","total_num_programs":28,"total_obs":434005607.90999997},{"title":"Department
+  of the Interior","total_num_programs":12,"total_obs":292163825.3},{"title":"Department
   of Defense","total_num_programs":1,"total_obs":101156414.0},{"title":"National Aeronautics
   and Space Administration","total_num_programs":2,"total_obs":88604095.84},{"title":"Department
-  of Agriculture","total_num_programs":15,"total_obs":54332257.91},{"title":"Department
-  of Commerce","total_num_programs":3,"total_obs":26148649.58},{"title":"Social Security
-  Administration","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
+  of Agriculture","total_num_programs":13,"total_obs":28306919.73},{"title":"Social
+  Security Administration","total_num_programs":1,"total_obs":20000000.0},{"title":"Department
   of State","total_num_programs":3,"total_obs":15103735.0},{"title":"Department of
-  Transportation","total_num_programs":7,"total_obs":7392878.75},{"title":"The Institute
+  Transportation","total_num_programs":6,"total_obs":7392878.75},{"title":"The Institute
   of Museum and Library Services","total_num_programs":2,"total_obs":6945893.53},{"title":"Environmental
   Protection Agency","total_num_programs":3,"total_obs":6711638.0},{"title":"Department
   of Energy","total_num_programs":2,"total_obs":2970553.8899999997},{"title":"U.S.
   Election Assistance Commission","total_num_programs":1,"total_obs":0.0},{"title":"Small
   Business Administration","total_num_programs":1,"total_obs":0.0},{"title":"Morris
   K. Udall Scholarship and Excellence in National Environmental Policy Foundation","total_num_programs":1,"total_obs":0.0},{"title":"Department
-  of Housing and Urban Development","total_num_programs":1,"total_obs":-951973.67}]'
-applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":70},{"title":"State","total_num_programs":52},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":45},{"title":"Not-for-Profit
-  Organization","total_num_programs":45},{"title":"U.S. State Government (including
-  the District of Columbia)","total_num_programs":42},{"title":"For-Profit Organization","total_num_programs":33},{"title":"Other","total_num_programs":32},{"title":"Local","total_num_programs":30},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":30},{"title":"Tribal","total_num_programs":26},{"title":"County
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Housing
+  and Urban Development","total_num_programs":1,"total_obs":-951973.67}]'
+applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":53},{"title":"State","total_num_programs":41},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":36},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":33},{"title":"Not-for-Profit
+  Organization","total_num_programs":31},{"title":"Other","total_num_programs":24},{"title":"Local","total_num_programs":23},{"title":"For-Profit
+  Organization","total_num_programs":21},{"title":"U.S. Territory (or Possession)
+  Government (including freely-associated states)","total_num_programs":21},{"title":"Tribal","total_num_programs":18},{"title":"County
   Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":22},{"title":"Territorial","total_num_programs":19},{"title":"Municipality
+  with geographic regional control and authority)","total_num_programs":16},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":16},{"title":"Other Local
+  Government Consortium, Regional Organization (Intrastate), or Other Local Government
+  Combination","total_num_programs":15},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":14},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":13},{"title":"Territorial","total_num_programs":13},{"title":"Municipality
   or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":18},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":18},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":17},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":15},{"title":"Public
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":15},{"title":"Indian/Native American/Alaska Native
-  Tribal Government (Other than Federally Recognized)","total_num_programs":13},{"title":"Private
-  nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":12},{"title":"U.S. Federal Government","total_num_programs":12},{"title":"International
-  Organization","total_num_programs":11},{"title":"Small Business Person","total_num_programs":11},{"title":"Unrestricted
-  by Entity Type","total_num_programs":11},{"title":"Interstate Organization","total_num_programs":9},{"title":"Local
-  (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":9},{"title":"Public Housing Authority","total_num_programs":9},{"title":"School
-  District","total_num_programs":9},{"title":"Other private institutions/organizations","total_num_programs":8},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":7},{"title":"Foreign
-  Non-Government Nonprofit Organization","total_num_programs":7},{"title":"Foreign
-  Non-Government Not-for-Profit Organization","total_num_programs":7},{"title":"Foreign
-  Non-Governmental For-Profit Organization","total_num_programs":7},{"title":"Other
-  public institution/organization","total_num_programs":7},{"title":"State (includes
-  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":7},{"title":"Unrestricted
-  by Individual Type","total_num_programs":6},{"title":"Other Special Disctrict Government","total_num_programs":5},{"title":"Quasi-public
+  and villages)","total_num_programs":12},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":12},{"title":"Interstate
+  Organization","total_num_programs":8},{"title":"Local (includes State-designated
+  Indian Tribes, excludes institutions of higher education and hospitals","total_num_programs":8},{"title":"Other
+  private institutions/organizations","total_num_programs":8},{"title":"Other public
+  institution/organization","total_num_programs":7},{"title":"School District","total_num_programs":7},{"title":"Small
+  Business Person","total_num_programs":7},{"title":"State (includes District of Columbia,
+  public institutions of higher education and hospitals)","total_num_programs":7},{"title":"Foreign
+  Non-Government Nonprofit Organization","total_num_programs":6},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":6},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":6},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":6},{"title":"International
+  Organization","total_num_programs":6},{"title":"Public Housing Authority","total_num_programs":6},{"title":"U.S.
+  Federal Government","total_num_programs":6},{"title":"Unrestricted by Entity Type","total_num_programs":6},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":5},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":5},{"title":"Specialized
-  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Tribally
-  Designated Housing Authority","total_num_programs":5},{"title":"Veteran (including
-  dependents)","total_num_programs":5},{"title":"Active-Duty Service Person (including
-  dependents","total_num_programs":4},{"title":"Native American Organizations (includes
-  Indian groups, cooperatives, corporations, partnerships, associations)","total_num_programs":4},{"title":"Reservist
-  (including dependents)","total_num_programs":4},{"title":"School District Government","total_num_programs":4},{"title":"Non-Government
-  - General","total_num_programs":3},{"title":"Profit organization","total_num_programs":3},{"title":"Small
-  business (less than 500 employees)","total_num_programs":3},{"title":"Anyone/general
-  public","total_num_programs":2},{"title":"Federal","total_num_programs":2},{"title":"Foreign
-  Government","total_num_programs":2},{"title":"Government - General","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Minority
+  group (e.g. health professionals, students, veterans)","total_num_programs":5},{"title":"Active-Duty
+  Service Person (including dependents","total_num_programs":4},{"title":"Native American
+  Organizations (includes Indian groups, cooperatives, corporations, partnerships,
+  associations)","total_num_programs":4},{"title":"Other Special Disctrict Government","total_num_programs":4},{"title":"Reservist
+  (including dependents)","total_num_programs":4},{"title":"School District Government","total_num_programs":4},{"title":"Veteran
+  (including dependents)","total_num_programs":4},{"title":"Non-Government - General","total_num_programs":3},{"title":"Profit
+  organization","total_num_programs":3},{"title":"Small business (less than 500 employees)","total_num_programs":3},{"title":"Tribally
+  Designated Housing Authority","total_num_programs":3},{"title":"Unrestricted by
+  Individual Type","total_num_programs":3},{"title":"Anyone/general public","total_num_programs":2},{"title":"Foreign
+  Government","total_num_programs":2},{"title":"Individual/Family","total_num_programs":2},{"title":"Minority
   group","total_num_programs":2},{"title":"Sponsored organization","total_num_programs":2},{"title":"U.S.
-  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"Farmworker","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Nonprofit
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":2},{"title":"Government
+  - General","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Nonprofit
   with 501C3 IRS Status (Other than Institution of Higher Education)","total_num_programs":1},{"title":"Planning
   Commission","total_num_programs":1},{"title":"Transit Authority","total_num_programs":1},{"title":"U.S.
   Territories and possessions","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/agricultural-resources-and-services
-    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/agricultural-research-and-services
+    title: Agricultural Research and Services
   - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  subcategories:
+  - permalink: /category/arts-and-humanities/preservation
+    title: Preservation
+  - permalink: /category/arts-and-humanities/promotion-and-appreciation
+    title: Promotion and Appreciation
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   subcategories:
   - permalink: /category/business-and-commerce/business-development
@@ -79,27 +87,18 @@ categories_subcategories:
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
   title: Business and Commerce
-- permalink: /category/community-development
+- permalink: /category/community-and-regional-development
   subcategories:
-  - permalink: /category/community-development/community--area--and-regional-development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: Community Development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-infrastructure
+    title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
-    title: Consumer and Occupational Health and Safety
+  - permalink: /category/consumer-protection/consumer-safety
+    title: Consumer Safety
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  subcategories:
-  - permalink: /category/cultural-affairs/access-and-appreciation
-    title: Access and Appreciation
-  - permalink: /category/cultural-affairs/artistic-talent-development
-    title: Artistic Talent Development
-  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-    title: Cultural Heritage and Traditions
-  - permalink: /category/cultural-affairs/cultural-institutions
-    title: Cultural Institutions
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -120,6 +119,8 @@ categories_subcategories:
   title: Education
 - permalink: /category/employment-and-labor
   subcategories:
+  - permalink: /category/employment-and-labor/occupational--health-and-safety
+    title: Occupational  Health and Safety
   - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
   title: Employment and Labor
@@ -202,8 +203,10 @@ categories_subcategories:
   title: Law, Justice, and Legal Services
 - permalink: /category/national-defense
   subcategories:
-  - permalink: /category/national-defense/defense-capability
-    title: Defense Capability
+  - permalink: /category/national-defense/defense-science-and-technology
+    title: Defense Science and Technology
+  - permalink: /category/national-defense/military-personnel-and-readiness
+    title: Military Personnel and Readiness
   title: National Defense
 - permalink: /category/natural-resources
   subcategories:
@@ -295,17 +298,12 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Indian Vocational Rehabilitation Services","popular_name":null,"agency":"Department
   of Education","total_obs":35328104.47,"program_type":"assistance_listing"},{"cfda":"17.720","permalink":"/program/17.720","title":"Disability
   Employment Policy Development","popular_name":"Office of Disability Employment Policy
-  (ODEP)","agency":"Department of Labor","total_obs":27187094.6,"program_type":"assistance_listing"},{"cfda":"11.467","permalink":"/program/11.467","title":"Meteorologic
-  and Hydrologic Modernization Development","popular_name":"(Hydrometeorological Development)","agency":"Department
-  of Commerce","total_obs":26148649.58,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
+  (ODEP)","agency":"Department of Labor","total_obs":27187094.6,"program_type":"assistance_listing"},{"cfda":"15.682","permalink":"/program/15.682","title":"Experienced
   Services","popular_name":null,"agency":"Department of the Interior","total_obs":25465673.84,"program_type":"assistance_listing"},{"cfda":"15.676","permalink":"/program/15.676","title":"Youth
   Engagement, Education, and Employment","popular_name":"YEEEP","agency":"Department
   of the Interior","total_obs":23486222.8,"program_type":"assistance_listing"},{"cfda":"94.013","permalink":"/program/94.013","title":"AmeriCorps
   Volunteers In Service to America 94.013","popular_name":"Volunteers In Service to
-  America","agency":"Corporation for National and Community Service","total_obs":22612595.42,"program_type":"assistance_listing"},{"cfda":"10.212","permalink":"/program/10.212","title":"Small
-  Business Innovation Research (SBIR) Program / Small Business Technology Transfer
-  (STTR) Program","popular_name":"SBIR/STTR Program - Phase I and II","agency":"Department
-  of Agriculture","total_obs":21230562.29,"program_type":"assistance_listing"},{"cfda":"96.008","permalink":"/program/96.008","title":"Social
+  America","agency":"Corporation for National and Community Service","total_obs":22612595.42,"program_type":"assistance_listing"},{"cfda":"96.008","permalink":"/program/96.008","title":"Social
   Security - Work Incentives Planning and Assistance Program","popular_name":"SSA
   Work Incentives Planning and Assistance (WIPA) Program or Work Incentives Outreach
   Program","agency":"Social Security Administration","total_obs":20000000.0,"program_type":"assistance_listing"},{"cfda":"94.003","permalink":"/program/94.003","title":"AmeriCorps
@@ -339,8 +337,7 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   of State","total_obs":5562520.0,"program_type":"assistance_listing"},{"cfda":"19.013","permalink":"/program/19.013","title":"Thomas
   R. Pickering Foreign Affairs Fellowship Program","popular_name":"Pickering Fellowship
   Program","agency":"Department of State","total_obs":5363480.0,"program_type":"assistance_listing"},{"cfda":"15.026","permalink":"/program/15.026","title":"Indian
-  Adult Education","popular_name":null,"agency":"Department of the Interior","total_obs":4945127.74,"program_type":"assistance_listing"},{"cfda":"10.519","permalink":"/program/10.519","title":"Equipment
-  Grants Program (EGP)","popular_name":"EGP","agency":"Department of Agriculture","total_obs":4794775.89,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
+  Adult Education","popular_name":null,"agency":"Department of the Interior","total_obs":4945127.74,"program_type":"assistance_listing"},{"cfda":"45.313","permalink":"/program/45.313","title":"Laura
   Bush 21st Century Librarian Program","popular_name":"Laura Bush 21st Century Librarian
   Program","agency":"The Institute of Museum and Library Services","total_obs":4446238.53,"program_type":"assistance_listing"},{"cfda":"93.594","permalink":"/program/93.594","title":"Tribal
   Work Grants","popular_name":"Native Employment Works (NEW) Program","agency":"Department
@@ -371,25 +368,13 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Opportunities in Regional Careers II","popular_name":"WORC II","agency":"Department
   of Energy","total_obs":1000000.0,"program_type":"assistance_listing"},{"cfda":"10.228","permalink":"/program/10.228","title":"Alaska
   Native Serving and Native Hawaiian Serving Institutions Education Grants","popular_name":"ANNH
-  Grants Program","agency":"Department of Agriculture","total_obs":558355.11,"program_type":"assistance_listing"},{"cfda":"15.013","permalink":"/program/15.013","title":"Alaska
-  Native Science and Engineering","popular_name":"Alaska Native Science and Engineering
-  Program (ANSEP)","agency":"Department of the Interior","total_obs":47000.0,"program_type":"assistance_listing"},{"cfda":"84.191","permalink":"/program/84.191","title":"Adult
+  Grants Program","agency":"Department of Agriculture","total_obs":558355.11,"program_type":"assistance_listing"},{"cfda":"84.191","permalink":"/program/84.191","title":"Adult
   Education National Leadership Activities","popular_name":null,"agency":"Department
   of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.111","permalink":"/program/20.111","title":"Aircraft
   Pilots Workforce Development Grant Program","popular_name":"Aircraft Pilots Workforce
-  Development Grant Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.442","permalink":"/program/15.442","title":"Alaska
-  Native Science and Engineering","popular_name":"ANSEP","agency":"Department of the
-  Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AA3","permalink":"/program/93.AA3","title":"Alcohol
-  Research Programs \u2013 Training, Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AA4","permalink":"/program/93.AA4","title":"Alcohol
-  Research Programs \u2013 Training, Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.020","permalink":"/program/94.020","title":"AmeriCorps
+  Development Grant Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"94.020","permalink":"/program/94.020","title":"AmeriCorps
   CNCS Disaster Response Cooperative Agreement 94.020","popular_name":"AmeriCorps
-  Disaster Response Team","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR3","permalink":"/program/93.AR3","title":"Arthritis,
-  Musculoskeletal and Skin Diseases Research - Training Individual (TR)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AR4","permalink":"/program/93.AR4","title":"Arthritis,
-  Musculoskeletal and Skin Diseases Research - Training Institutional (TI)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.112","permalink":"/program/20.112","title":"Aviation
+  Disaster Response Team","agency":"Corporation for National and Community Service","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.112","permalink":"/program/20.112","title":"Aviation
   Maintenance Technical Workforce Grant Program","popular_name":"Aviation Maintenance
   Technical Workforce Grant Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.593","permalink":"/program/10.593","title":"Bill
   Emerson National Hunger Fellows and Mickey Leland International Hunger Fellows Programs","popular_name":"Bill
@@ -401,28 +386,12 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Research - Training, Individual (TR)","popular_name":null,"agency":"Department of
   Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.GM6","permalink":"/program/93.GM6","title":"Biomedical
   Research - Training, Institutional (TI)","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDD","permalink":"/program/93.HDD","title":"Child
-  Health and Human Development Research Training \u2013 Individual Awards","popular_name":"Child
-  Health and Human Development Research Training \u2013 Individual Awards","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HDN","permalink":"/program/93.HDN","title":"Child
-  Health and Human Development Research Training \u2013 Institutional Awards","popular_name":"Child
-  Health and Human Development Research Training \u2013 Institutional Awards","agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.521","permalink":"/program/10.521","title":"Children,
   Youth and Families At-Risk","popular_name":"CYFAR, CYFAR-SCP and CYFAR-PDTA","agency":"Department
-  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.483","permalink":"/program/93.483","title":"Complementary
-  and Integrative Health - Training, Individual","popular_name":"National Center for
-  Complementary and Integrative Health - Training, Individual","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.485","permalink":"/program/93.485","title":"Complementary
-  and Integrative Health - Training, Institutional","popular_name":"National Center
-  for Complementary and Integrative Health - Training Institutional","agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.KTR","permalink":"/program/93.KTR","title":"Diabetes,
+  of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.KTR","permalink":"/program/93.KTR","title":"Diabetes,
   Digestive, Kidney Extramural Research - Training, Individual","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.KTS","permalink":"/program/93.KTS","title":"Diabetes,
   Digestive, Kidney Extramural Research - Training, Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DA3","permalink":"/program/93.DA3","title":"Drug
-  Use and Addiction Research Programs - Training, Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DA6","permalink":"/program/93.DA6","title":"Drug
-  Use and Addiction Research Programs - Training, Institutional","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"15.569","permalink":"/program/15.569","title":"Educational
   Outreach","popular_name":"Water Education Foundation Outreach","agency":"Department
   of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.ESF","permalink":"/program/93.ESF","title":"Environmental
@@ -443,36 +412,14 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Job Placement United Sioux Tribes Development Corporation","popular_name":"(United
   Sioux Tribes)","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.445","permalink":"/program/66.445","title":"Innovative
   Water Infrastructure Workforce Development Program (SDWA 1459E)","popular_name":null,"agency":"Environmental
-  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.140","permalink":"/program/93.140","title":"Intramural
-  Research Training Award","popular_name":null,"agency":"Department of Health and
-  Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24T","permalink":"/program/93.24T","title":"Mental
-  Health Research - Training, Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.24N","permalink":"/program/93.24N","title":"Mental
-  Health Research - Training, Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.466","permalink":"/program/10.466","title":"Minority-Serving
+  Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.466","permalink":"/program/10.466","title":"Minority-Serving
   Institutions Partnership","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"85.402","permalink":"/program/85.402","title":"Morris
   K. Udall Native American Congressional Internship Program","popular_name":"Udall
   Native American Congressional Internship Program","agency":"Morris K. Udall Scholarship
-  and Excellence in National Environmental Policy Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.1TR","permalink":"/program/93.1TR","title":"NIMHD
-  Research \u2013 Training, Individual (TR)","popular_name":"NIMHD Research \u2013
-  Training, Individual (TR)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.1T1","permalink":"/program/93.1T1","title":"NIMHD
-  Research \u2013 Training, Institutional (TI)","popular_name":"NIMHD Research \u2013
-  Training, Institutional (TI)","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.CA4","permalink":"/program/93.CA4","title":"National
-  Cancer Institute Research - Training, Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.CA3","permalink":"/program/93.CA3","title":"National
-  Cancer Institute Research - Training, Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HL4","permalink":"/program/93.HL4","title":"National
+  and Excellence in National Environmental Policy Foundation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HL4","permalink":"/program/93.HL4","title":"National
   Heart, Lung, and Blood Institute - Training/Individual","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.HL7","permalink":"/program/93.HL7","title":"National
   Heart, Lung, and Blood Institute - Training/Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.8TR","permalink":"/program/93.8TR","title":"National
-  Institute of Allergy and Infectious Diseases- Training Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.8TN","permalink":"/program/93.8TN","title":"National
-  Institute of Allergy and Infectious Diseases- Training Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AG4","permalink":"/program/93.AG4","title":"National
-  Institute on Aging Training Individual Projects","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.AG5","permalink":"/program/93.AG5","title":"National
-  Institute on Aging Training Inst Projects","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.ELR","permalink":"/program/93.ELR","title":"National
   Institutes of Health Extramural Loan Repayment Program","popular_name":"NIH Extramural
   LRP","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.220","permalink":"/program/93.220","title":"National
@@ -498,21 +445,13 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   AmeriCorps","popular_name":"OSMRE/AmeriCorps Program; OSMRE/VISTA Program; OSMRE
   Semester Internship Program","agency":"Department of the Interior","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.282","permalink":"/program/20.282","title":"On-the-Job
   Training Program Supportive Services (OJT/SS)","popular_name":null,"agency":"Department
-  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DE5","permalink":"/program/93.DE5","title":"Oral
-  Diseases and Disorders Research - Training, Individual","popular_name":"Dental,
-  Oral and Craniofacial Research","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DE4","permalink":"/program/93.DE4","title":"Oral
-  Diseases and Disorders Research - Training, Institutional","popular_name":"Dental,
-  Oral and Craniofacial Research","agency":"Department of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.722","permalink":"/program/66.722","title":"Pesticide
+  of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"66.722","permalink":"/program/66.722","title":"Pesticide
   Registration Improvement Act Employee Training","popular_name":"PRIA 5: Employee
   Training","agency":"Environmental Protection Agency","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.048","permalink":"/program/11.048","title":"Regional
   Alliances and Multistakeholder Partnerships to Stimulate (RAMPS) Cybersecurity Education
   and Workforce Development","popular_name":"RAMPS Program","agency":"Department of
   Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"84.246","permalink":"/program/84.246","title":"Rehabilitation
-  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.3TR","permalink":"/program/93.3TR","title":"Research
-  Infrastructure Programs - Training, Individual","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.3T1","permalink":"/program/93.3T1","title":"Research
-  Infrastructure Programs - Training, Institutional","popular_name":null,"agency":"Department
-  of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DC5","permalink":"/program/93.DC5","title":"Research
+  Short-Term Training","popular_name":null,"agency":"Department of Education","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DC5","permalink":"/program/93.DC5","title":"Research
   Related to Deafness and Communication Disorders - Training, Individual (TR)","popular_name":null,"agency":"Department
   of Health and Human Services","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.DC6","permalink":"/program/93.DC6","title":"Research
   Related to Deafness and Communication Disorders - Training, Institutional (TI)","popular_name":null,"agency":"Department
@@ -520,15 +459,11 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   Development Policy Public Service and Leadership Development Program","popular_name":null,"agency":"Department
   of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"59.069","permalink":"/program/59.069","title":"SBA
   Emerging Leaders initiative","popular_name":"THRIVE Emerging Leaders","agency":"Small
-  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"11.023","permalink":"/program/11.023","title":"Science,
-  Technology, Engineering, and Mathematics (STEM) Talent Challenge Program","popular_name":"STEM
-  Talent Challenge","agency":"Department of Commerce","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.467","permalink":"/program/10.467","title":"Student
+  Business Administration","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.467","permalink":"/program/10.467","title":"Student
   Internship Programs","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.296","permalink":"/program/20.296","title":"Surface
   Transportation Workforce Development, Training, and Education 504(e)","popular_name":"504(e)
   Program","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.350","permalink":"/program/10.350","title":"Technical
-  Assistance to Cooperatives","popular_name":"TAC","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"20.297","permalink":"/program/20.297","title":"Transportation
-  Education and Training Development  and Deployment Program (TETDDP) 504(f)","popular_name":"Highway
-  Construction Training Program (HCTP)","agency":"Department of Transportation","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.049","permalink":"/program/10.049","title":"Tribal
+  Assistance to Cooperatives","popular_name":"TAC","agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"10.049","permalink":"/program/10.049","title":"Tribal
   Youth & Workforce Development","popular_name":null,"agency":"Department of Agriculture","total_obs":0.0,"program_type":"assistance_listing"},{"cfda":"93.187","permalink":"/program/93.187","title":"Undergraduate
   Scholarship Program for Individuals from Disadvantaged Backgrounds","popular_name":"NIH
   Undergraduate Scholarship Program (UGSP)","agency":"Department of Health and Human
@@ -560,7 +495,7 @@ programs: '[{"cfda":"84.126","permalink":"/program/84.126","title":"Rehabilitati
   of Labor","total_obs":-131649045.54,"program_type":"assistance_listing"}]'
 title: Workforce Development
 total_num_agencies: 20
-total_num_applicant_types: 78
-total_num_programs: 160
-total_obs: 12273208401.280003
+total_num_applicant_types: 74
+total_num_programs: 128
+total_obs: 12220987413.52
 ---

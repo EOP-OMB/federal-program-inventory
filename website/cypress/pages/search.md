@@ -514,7 +514,7 @@ cfo_agencies:
 - title: Small Business Administration
 - title: Social Security Administration
 fiscal_year: '2025'
-gwo_options:
+pfa_options:
 - title: Accelerate Development of Commercial Products and Technologies
 - title: Advance Agriculture Research
 - title: Advance Defense Research

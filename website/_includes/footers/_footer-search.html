@@ -10,7 +10,7 @@
   let selectedCategorySubcategory = [];
   let selectedAssistanceTypes = [];
   let selectedApplicantTypes = [];
-  let selectedGwo = [];
+  let selectedPfa = [];
 
   // Initialize programs data
   let programs = [];
@@ -29,7 +29,7 @@
     categories: [],
     assistanceTypes: [],
     applicantTypes: [],
-    gwo: [],
+    pfa: [],
   };
 
   // Sort field mapping
@@ -48,7 +48,7 @@
       categories: [...selectedCategorySubcategory],
       assistanceTypes: [...selectedAssistanceTypes],
       applicantTypes: [...selectedApplicantTypes],
-      gwo: [...selectedGwo],
+      pfa: [...selectedPfa],
     };
   }
 
@@ -183,7 +183,7 @@
       categories: selectedCategorySubcategory,
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
-      gwo: selectedGwo,
+      pfa: selectedPfa,
     };
 
     if (currentState.query !== initialFilterState.query) return true;
@@ -205,7 +205,7 @@
         currentState.applicantTypes,
         initialFilterState.applicantTypes
       ) ||
-      !arraysEqual(currentState.gwo, initialFilterState.gwo)
+      !arraysEqual(currentState.pfa, initialFilterState.pfa)
     );
   }
 
@@ -226,7 +226,7 @@
         category: [],
         assistance: [],
         applicant: [],
-        gwo: [],
+        pfa: [],
       };
     }
 
@@ -274,8 +274,8 @@
         type: "applicant",
         title: getTitle(code),
       })),
-      gwo: (compressed.gwo || []).map((code) => ({
-        type: "gwo",
+      pfa: (compressed.pfa || []).map((code) => ({
+        type: "pfa",
         title: getTitle(code),
       })),
     };
@@ -346,7 +346,7 @@
       category: [],
       assistance: [],
       applicant: [],
-      gwo: [],
+      pfa: [],
     };
 
     // Process agency filters
@@ -429,13 +429,13 @@
         });
       });
 
-    // Process GWO filters
+    // Process PFA filters
     document
-      .querySelectorAll('input[data-filter-type="gwo"]:checked')
+      .querySelectorAll('input[data-filter-type="pfa"]:checked')
       .forEach((checkbox) => {
-        filters.gwo.push({
-          type: "gwo",
-          title: checkbox.getAttribute("data-gwo-title"),
+        filters.pfa.push({
+          type: "pfa",
+          title: checkbox.getAttribute("data-pfa-title"),
         });
       });
 
@@ -497,7 +497,7 @@
     selectedCategorySubcategory = [];
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
-    selectedGwo = [];
+    selectedPfa = [];
 
     // Decode and process filters
     try {
@@ -600,14 +600,14 @@
           });
         }
 
-        // Process GWO
-        if (decodedData.gwo && Array.isArray(decodedData.gwo)) {
-          decodedData.gwo.forEach((code) => {
-            const gwoTitle = mapping[code];
-            if (gwoTitle) {
-              selectedGwo.push(gwoTitle);
+        // Process PFA
+        if (decodedData.pfa && Array.isArray(decodedData.pfa)) {
+          decodedData.pfa.forEach((code) => {
+            const pfaTitle = mapping[code];
+            if (pfaTitle) {
+              selectedPfa.push(pfaTitle);
               const checkbox = document.querySelector(
-                `input[data-filter-type="gwo"][data-gwo-title="${gwoTitle}"]`
+                `input[data-filter-type="pfa"][data-pfa-title="${pfaTitle}"]`
               );
               if (checkbox) {
                 checkbox.checked = true;
@@ -1099,7 +1099,7 @@
       categorySubcategory: selectedCategorySubcategory,
       assistanceTypes: selectedAssistanceTypes,
       applicantTypes: selectedApplicantTypes,
-      gwo: selectedGwo,
+      pfa: selectedPfa,
     };
 console.log("DEBUG: Sending request body:", requestBody);
 
@@ -1353,13 +1353,13 @@ console.log("DEBUG: Sending request body:", requestBody);
           }
           break;
 
-        case "gwo":
-          const gwoTitle = input.getAttribute("data-gwo-title");
+        case "pfa":
+          const pfaTitle = input.getAttribute("data-pfa-title");
           if (isChecked) {
-            selectedGwo.push(gwoTitle);
+            selectedPfa.push(pfaTitle);
           } else {
-            selectedGwo = selectedGwo.filter(
-              (item) => item !== gwoTitle
+            selectedPfa = selectedPfa.filter(
+              (item) => item !== pfaTitle
             );
           }
           break;
@@ -1528,7 +1528,7 @@ console.log("DEBUG: Sending request body:", requestBody);
     selectedCategorySubcategory = [];
     selectedAssistanceTypes = [];
     selectedApplicantTypes = [];
-    selectedGwo = [];
+    selectedPfa = [];
 
     // Reset current query
     currentQuery = "";
@@ -1677,16 +1677,16 @@ console.log("DEBUG: Sending request body:", requestBody);
     }
 
     // Update Government-wide Objectives count
-    const gwoButton = document.querySelector(
-      '[data-content-id="gwo-section"]'
+    const pfaButton = document.querySelector(
+      '[data-content-id="pfa-section"]'
     );
-    if (gwoButton) {
-      const gwoChecks = document.querySelectorAll(
-        'input[data-filter-type="gwo"]:checked'
+    if (pfaButton) {
+      const pfaChecks = document.querySelectorAll(
+        'input[data-filter-type="pfa"]:checked'
       );
-      const count = gwoChecks.length;
+      const count = pfaChecks.length;
 
-      const spanElement = gwoButton.querySelector("span");
+      const spanElement = pfaButton.querySelector("span");
       if (spanElement) {
         const baseText = "Government-wide objectives";
         spanElement.textContent =
@@ -1798,7 +1798,7 @@ console.log("DEBUG: Sending request body:", requestBody);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      initOutcomeSearchFilter("gwo-filter-search", "gwo-fieldset");
+      initOutcomeSearchFilter("pfa-filter-search", "pfa-fieldset");
     });
   })();
 </script>

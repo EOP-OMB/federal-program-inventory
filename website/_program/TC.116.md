@@ -13,9 +13,6 @@ categories:
 cfda: TC.116
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Promote Safe and High-Quality Schools
-  permalink: /gwo/GWO_G3
 headline_amount: 920000000.0
 improper_payments:
 - agency: TREASURY
@@ -46,7 +43,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":560000000.0,"forgone_revenue":520000000.0},{"x":"2023","outlays":560000000.0,"forgone_revenue":490000000.0},{"x":"2024","outlays":490000000.0,"forgone_revenue":470000000.0},{"x":"2025","outlays":480000000.0,"forgone_revenue":440000000.0},{"x":"2026","outlays":480000000.0,"forgone_revenue":410000000.0}]'
 outlays: null
 permalink: /program/TC.116.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_G3
+  pfa: School Safety and Learning Quality
 popular_name: ''
 program_type: tax_expenditure
 results: []

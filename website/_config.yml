@@ -61,15 +61,10 @@ defaults:
   -
     scope:
       path: ""
-      type: "gwo"
+      type: "pfa"
     values:
-      layout: "gwo"
+      layout: "pfa"
   -
-    scope:
-      path: ""
-      type: "pon"
-    values:
-      layout: "pon"
 
 # Build collections
 # NOTE: The markdown files in these folders are auto-generated. See README.md for how to generate the markdown files.
@@ -80,9 +75,7 @@ collections:
     output: true
   subcategory:
     output: true
-  gwo:
-    output: true
-  pon:
+  pfa:
     output: true
 
 # Plugins

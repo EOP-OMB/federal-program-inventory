@@ -80,8 +80,7 @@ Automated tests run in the `data-pipeline-tests` container (`pytest` via `tests/
 - [ ] Summarize related programs totals, largest, and smallest
 - [ ] Summarize related programs ties by name then list order
 - [ ] Summarize related programs missing expenditure as zero
-- [ ] Generate GWO markdown files
-- [ ] Generate PON markdown files
+- [ ] Generate PFA markdown files
 - [ ] Generate program markdown files
 - [ ] Generate the program CSV
 - [ ] Generate programs table JSON
@@ -96,12 +95,8 @@ Automated tests run in the `data-pipeline-tests` container (`pytest` via `tests/
 
 ## `test_check_data_quality.py`
 
-- [ ] Invalid GWOs do not create a CSV or blocker when GWOs are valid
-- [ ] Invalid GWOs create a CSV and blocker when GWOs are invalid
-- [ ] Invalid PONs do not create a CSV or blocker when PONs are valid
-- [ ] Invalid PONs create a CSV and blocker when PONs are invalid
-- [ ] Excessive PON assignments do not create a CSV or blocker when every program has 3 or fewer
-- [ ] Excessive PON assignments create a CSV and blocker when a program has more than 3
+- [ ] Invalid PFAs do not create a CSV or blocker when PFAs are valid
+- [ ] Invalid PFAs create a CSV and blocker when PFAs are invalid
 - [ ] Invalid ALNs do not create a CSV or blocker when ALNs are valid
 - [ ] Invalid ALNs create a CSV and do not write a blocker when ALNs are invalid
 - [ ] Invalid agencies do not create a CSV or blocker when agencies are valid
@@ -127,21 +122,8 @@ Automated tests run in the `data-pipeline-tests` container (`pytest` via `tests/
 - [ ] CSV column counts are correct across all files
 - [ ] CSV column count is incorrect in one file
 - [ ] An unexpected error records a blocker and returns
-- [ ] Unmapped-program report lists programs missing a GWO or PON
+- [ ] Unmapped-program report lists programs missing a PFA
 - [ ] Unmapped-program report does not raise when it cannot be written
-
-### Verify excessive PON assignments
-
-`check_data_quality_before_transform.py` flags any program in `FPI_PON_assignment.csv` with more than 3 PON assignments. `transform.py` runs that check before it loads data. A finding writes `excessive_pon_assignments.csv` (`aln`, `pon`) and appends a `BLOCKED:` line to `blockers.txt`, which stops transform unless `--ignore-blockers` is set. A program with exactly 3 assignments passes. Blank PON cells do not count.
-
-1. From the repository root, run:
-   `python -m pytest tests/test_check_data_quality.py::TestExcessivePonAssignments -q`
-2. Confirm both tests pass.
-3. In `test_does_not_create_csv_or_blocker_when_assignments_are_within_limit`, `10.001` and `10.002` each have 3 PON assignments. `10.002` also has a blank PON cell. The test expects no `excessive_pon_assignments.csv` and no `blockers.txt`.
-4. In `test_creates_csv_and_blocker_when_a_program_has_more_than_three`, `10.002` has exactly 3 assignments, `10.003` has 4, and `10.004` has 5. The test expects `excessive_pon_assignments.csv` to list only `10.003` and `10.004`, one row per assignment, with the header `aln,pon`. It also expects `blockers.txt` to contain `BLOCKED:  2 programs have more than 3 PON assignments`.
-5. Run the check against the extracted files:
-   `python data_processing/check_data_quality_before_transform.py /tmp/fpi-pon-qa`
-6. `data_processing/extracted/FPI_PON_assignment.csv` has the header `al_#,PON ID` and no assignment rows. The check must not write `/tmp/fpi-pon-qa/excessive_pon_assignments.csv`, and `blockers.txt` must not contain a line about programs having more than 3 PON assignments. Other data-quality findings can still be written.
 
 ## `test_e2e.py`
 

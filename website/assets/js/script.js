@@ -20,7 +20,7 @@ function compressFilters(filters) {
     c: [], // Category codes
     t: [], // Assistance type codes
     p: [], // Applicant type codes
-    gwo: [], // Government-wide objective codes
+    pfa: [], // Program focus area codes
   };
 
   // Process agency filters
@@ -73,12 +73,12 @@ function compressFilters(filters) {
     });
   }
 
-  // Process government-wide objectives
-  if (filters.gwo && filters.gwo.length > 0) {
-    filters.gwo.forEach((filter) => {
+  // Process program focus areas
+  if (filters.pfa && filters.pfa.length > 0) {
+    filters.pfa.forEach((filter) => {
       const code = getCode(filter.title || filter);
       compressed.codes[code] = filter.title || filter;
-      compressed.gwo.push(code);
+      compressed.pfa.push(code);
     });
   }
 

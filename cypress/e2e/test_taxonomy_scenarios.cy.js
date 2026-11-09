@@ -1,6 +1,6 @@
 describe('Taxonomy filter scenarios', () => {
   const testUrl = 'test/taxonomy_filter_scenarios.html';
-  const tableRows = '#taxonomy-gwo-table-body tr';
+  const tableRows = '#taxonomy-pfa-table-body tr';
 
   const waitForTable = () => {
     cy.get('#taxonomy-filter-panels').should('be.visible');
@@ -26,11 +26,11 @@ describe('Taxonomy filter scenarios', () => {
       'href',
       '/gwo/GWO_ALPHA'
     );
-    cy.contains('#taxonomy-gwo-table-body td', 'Delta Unmapped Objective')
+    cy.contains('#taxonomy-pfa-table-body td', 'Delta Unmapped Objective')
       .should('be.visible')
       .find('a')
       .should('not.exist');
-    cy.get('#taxonomy-gwo-table th[data-column="title"]').should(
+    cy.get('#taxonomy-pfa-table th[data-column="title"]').should(
       'have.attr',
       'aria-sort',
       'ascending'
@@ -41,8 +41,8 @@ describe('Taxonomy filter scenarios', () => {
     cy.visit(testUrl);
     waitForTable();
 
-    cy.get('#taxonomy-gwo-table th[data-column="title"]').click();
-    cy.get('#taxonomy-gwo-table th[data-column="title"]').should(
+    cy.get('#taxonomy-pfa-table th[data-column="title"]').click();
+    cy.get('#taxonomy-pfa-table th[data-column="title"]').should(
       'have.attr',
       'aria-sort',
       'descending'

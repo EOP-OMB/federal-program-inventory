@@ -425,8 +425,8 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
-outcomes_count: '0 '
 permalink: /
+pfa_count: '123 '
 program_types:
 - title: Advisory Services and Counseling
 - title: Direct Loans

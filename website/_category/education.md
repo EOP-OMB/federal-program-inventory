@@ -1,15 +1,15 @@
 ---
 agencies: '[{"title":"Department of Education","total_num_programs":80,"total_obs":90758759446.15999},{"title":"Department
   of the Treasury","total_num_programs":9,"total_obs":27390000000.0},{"title":"Department
-  of Health and Human Services","total_num_programs":6,"total_obs":22923111823.300003},{"title":"Department
+  of Health and Human Services","total_num_programs":31,"total_obs":22923111823.300003},{"title":"Department
   of Veterans Affairs","total_num_programs":3,"total_obs":13387380988.0},{"title":"National
   Science Foundation","total_num_programs":1,"total_obs":1437374721.0},{"title":"Department
-  of the Interior","total_num_programs":18,"total_obs":955612461.75},{"title":"Department
+  of the Interior","total_num_programs":20,"total_obs":955659461.75},{"title":"Department
   of Defense","total_num_programs":9,"total_obs":256352070.38},{"title":"Corporation
   for National and Community Service","total_num_programs":1,"total_obs":105346901.79},{"title":"Department
-  of Transportation","total_num_programs":5,"total_obs":89751527.17},{"title":"Department
-  of Agriculture","total_num_programs":27,"total_obs":71549807.70000002},{"title":"Department
-  of Commerce","total_num_programs":4,"total_obs":17166851.79},{"title":"Environmental
+  of Agriculture","total_num_programs":29,"total_obs":97575145.87999998},{"title":"Department
+  of Transportation","total_num_programs":6,"total_obs":89751527.17},{"title":"Department
+  of Commerce","total_num_programs":6,"total_obs":43315501.37},{"title":"Environmental
   Protection Agency","total_num_programs":2,"total_obs":5591730.0},{"title":"Nuclear
   Regulatory Commission","total_num_programs":2,"total_obs":1345716.9},{"title":"National
   Endowment for the Humanities","total_num_programs":1,"total_obs":242316.6},{"title":"Department
@@ -19,52 +19,64 @@ agencies: '[{"title":"Department of Education","total_num_programs":80,"total_ob
   of State","total_num_programs":4,"total_obs":0.0},{"title":"Department of Homeland
   Security","total_num_programs":2,"total_obs":0.0},{"title":"Barry Goldwater Scholarship
   and Excellence in Education Fund","total_num_programs":1,"total_obs":0.0}]'
-applicant_types: '[{"title":"State (includes District of Columbia, public institutions
-  of higher education and hospitals)","total_num_programs":47},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":45},{"title":"Public
+applicant_types: '[{"title":"Other","total_num_programs":47},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":47},{"title":"Private
   nonprofit institution/organization (includes institutions of higher education and
-  hospitals)","total_num_programs":42},{"title":"Other","total_num_programs":39},{"title":"Local
+  hospitals)","total_num_programs":45},{"title":"Public nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":43},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
-  and hospitals","total_num_programs":34},{"title":"Federally Recognized Indian Tribal
-  Governments","total_num_programs":22},{"title":"State","total_num_programs":18},{"title":"Nonprofit
-  Organization","total_num_programs":17},{"title":"Other public institution/organization","total_num_programs":16},{"title":"U.S.
-  State Government (including the District of Columbia)","total_num_programs":16},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":14},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":11},{"title":"Profit
+  and hospitals","total_num_programs":35},{"title":"Nonprofit Organization","total_num_programs":34},{"title":"State","total_num_programs":29},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":25},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":24},{"title":"U.S. Territory
+  (or Possession) Government (including freely-associated states)","total_num_programs":23},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":20},{"title":"Not-for-Profit
+  Organization","total_num_programs":20},{"title":"For-Profit Organization","total_num_programs":17},{"title":"Other
+  public institution/organization","total_num_programs":16},{"title":"Tribal","total_num_programs":13},{"title":"Indian/Native
+  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":11},{"title":"Local","total_num_programs":11},{"title":"County
+  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
+  with geographic regional control and authority)","total_num_programs":10},{"title":"Municipality
+  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
+  and villages)","total_num_programs":10},{"title":"U.S. Federal Government","total_num_programs":10},{"title":"Profit
   organization","total_num_programs":9},{"title":"Sponsored organization","total_num_programs":9},{"title":"Other
-  private institutions/organizations","total_num_programs":8},{"title":"U.S. Territories
-  and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Quasi-public
+  private institutions/organizations","total_num_programs":8},{"title":"School District","total_num_programs":8},{"title":"Territorial","total_num_programs":8},{"title":"U.S.
+  Territories and possessions (includes institutions of higher education and hospitals)","total_num_programs":8},{"title":"Unrestricted
+  by Entity Type","total_num_programs":8},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":7},{"title":"Quasi-public
   nonprofit institution/organization","total_num_programs":7},{"title":"Native American
   Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":6},{"title":"Not-for-Profit Organization","total_num_programs":6},{"title":"School
-  District","total_num_programs":6},{"title":"Specialized group (e.g. health professionals,
-  students, veterans)","total_num_programs":6},{"title":"For-Profit Organization","total_num_programs":5},{"title":"Individual/Family","total_num_programs":5},{"title":"Small
-  business (less than 500 employees)","total_num_programs":5},{"title":"Tribal","total_num_programs":5},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":4},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":4},{"title":"Local","total_num_programs":4},{"title":"Municipality
-  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":4},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":4},{"title":"U.S.
-  Federal Government","total_num_programs":4},{"title":"Department or Agency of a
-  U.S. State Government","total_num_programs":3},{"title":"Federal","total_num_programs":3},{"title":"Minority
-  group","total_num_programs":3},{"title":"School District Government","total_num_programs":3},{"title":"Unrestricted
-  by Entity Type","total_num_programs":3},{"title":"Unrestricted by Individual Type","total_num_programs":3},{"title":"Veteran
-  (including dependents)","total_num_programs":3},{"title":"Active-Duty Service Person
-  (including dependents","total_num_programs":2},{"title":"Department or Agency of
-  a U.S. Territorial Government","total_num_programs":2},{"title":"Interstate Organization","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Reservist
-  (including dependents)","total_num_programs":2},{"title":"Small Business Person","total_num_programs":2},{"title":"Territorial","total_num_programs":2},{"title":"U.S.
-  Territories and possessions","total_num_programs":2},{"title":"Builder/Contractor/Developer","total_num_programs":1},{"title":"Farmworker","total_num_programs":1},{"title":"For-Profit
-  Organization (Other than Small Business)","total_num_programs":1},{"title":"Non-Government
-  - General","total_num_programs":1},{"title":"Tribally Designated Housing Authority","total_num_programs":1}]'
+  associations)","total_num_programs":6},{"title":"Small Business Person","total_num_programs":6},{"title":"Specialized
+  group (e.g. health professionals, students, veterans)","total_num_programs":6},{"title":"Unrestricted
+  by Individual Type","total_num_programs":6},{"title":"Federal","total_num_programs":5},{"title":"Individual/Family","total_num_programs":5},{"title":"International
+  Organization","total_num_programs":5},{"title":"Small business (less than 500 employees)","total_num_programs":5},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":4},{"title":"Department
+  or Agency of a U.S. Territorial Government","total_num_programs":4},{"title":"Veteran
+  (including dependents)","total_num_programs":4},{"title":"Interstate Organization","total_num_programs":3},{"title":"Minority
+  group","total_num_programs":3},{"title":"Public Housing Authority","total_num_programs":3},{"title":"School
+  District Government","total_num_programs":3},{"title":"Tribally Designated Housing
+  Authority","total_num_programs":3},{"title":"Active-Duty Service Person (including
+  dependents","total_num_programs":2},{"title":"Builder/Contractor/Developer","total_num_programs":2},{"title":"Farmworker","total_num_programs":2},{"title":"Intrastate","total_num_programs":2},{"title":"Reservist
+  (including dependents)","total_num_programs":2},{"title":"U.S. Territories and possessions","total_num_programs":2},{"title":"For-Profit
+  Organization (Other than Small Business)","total_num_programs":1},{"title":"Foreign
+  Non-Government Nonprofit Organization","total_num_programs":1},{"title":"Foreign
+  Non-Government Not-for-Profit Organization","total_num_programs":1},{"title":"Foreign
+  Non-Governmental For-Profit Organization","total_num_programs":1},{"title":"Government
+  - General","total_num_programs":1},{"title":"Non-Government - General","total_num_programs":1},{"title":"Other
+  Special Disctrict Government","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/agricultural-resources-and-services
-    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/agricultural-research-and-services
+    title: Agricultural Research and Services
   - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  subcategories:
+  - permalink: /category/arts-and-humanities/preservation
+    title: Preservation
+  - permalink: /category/arts-and-humanities/promotion-and-appreciation
+    title: Promotion and Appreciation
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   subcategories:
   - permalink: /category/business-and-commerce/business-development
@@ -72,27 +84,18 @@ categories_subcategories:
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
   title: Business and Commerce
-- permalink: /category/community-development
+- permalink: /category/community-and-regional-development
   subcategories:
-  - permalink: /category/community-development/community--area--and-regional-development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: Community Development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-infrastructure
+    title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
-    title: Consumer and Occupational Health and Safety
+  - permalink: /category/consumer-protection/consumer-safety
+    title: Consumer Safety
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  subcategories:
-  - permalink: /category/cultural-affairs/access-and-appreciation
-    title: Access and Appreciation
-  - permalink: /category/cultural-affairs/artistic-talent-development
-    title: Artistic Talent Development
-  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-    title: Cultural Heritage and Traditions
-  - permalink: /category/cultural-affairs/cultural-institutions
-    title: Cultural Institutions
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -113,6 +116,8 @@ categories_subcategories:
   title: Education
 - permalink: /category/employment-and-labor
   subcategories:
+  - permalink: /category/employment-and-labor/occupational--health-and-safety
+    title: Occupational  Health and Safety
   - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
   title: Employment and Labor
@@ -195,8 +200,10 @@ categories_subcategories:
   title: Law, Justice, and Legal Services
 - permalink: /category/national-defense
   subcategories:
-  - permalink: /category/national-defense/defense-capability
-    title: Defense Capability
+  - permalink: /category/national-defense/defense-science-and-technology
+    title: Defense Science and Technology
+  - permalink: /category/national-defense/military-personnel-and-readiness
+    title: Military Personnel and Readiness
   title: National Defense
 - permalink: /category/natural-resources
   subcategories:
@@ -229,11 +236,11 @@ sub_cats: '[{"title":"Early Childhood Education and Childcare","permalink":"/cat
   Environments","permalink":"/category/education/educational-environments","total_num_programs":45,"total_obs":21717240849.899998},{"title":"K\u201312
   Education","permalink":"/category/education/k-12-education","total_num_programs":42,"total_obs":27741012299.029995},{"title":"Post\u2013Secondary
   Education","permalink":"/category/education/post-secondary-education","total_num_programs":52,"total_obs":78756847004.57},{"title":"STEM
-  Education","permalink":"/category/education/stem-education","total_num_programs":30,"total_obs":1673355801.8400002}]'
+  Education","permalink":"/category/education/stem-education","total_num_programs":62,"total_obs":1725576789.6000004}]'
 title: Education
 total_num_agencies: 20
-total_num_applicant_types: 64
-total_num_programs: 179
+total_num_applicant_types: 72
+total_num_programs: 211
 total_num_sub_cats: 5
-total_obs: 157399717061.69998
+total_obs: 157451938049.46002
 ---

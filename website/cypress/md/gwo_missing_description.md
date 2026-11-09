@@ -9,7 +9,7 @@ smallest_program:
   permalink: /program/test-1
 total_agencies: 2
 total_expenditure: 35802.45
-layout: gwo
+layout: pfa
 title: Test GWO Missing Description
 category: A Agricultural
 focus_area: Agricultural Resources and Services

@@ -1,5 +1,5 @@
 /**
- * Reusable filter-table component for taxonomy, PON, and similar structured tables.
+ * Reusable filter-table component for taxonomy and similar structured tables.
  * Handles category/subcategory filtering, search, sorting, and pagination.
  */
 
@@ -9,9 +9,9 @@ function initializeFilterTable(config = {}) {
     filterPanelsSelector = '#taxonomy-filter-panels',
     categoryCheckboxSelector = '.parent-checkbox',
     subcategoryCheckboxSelector = '.child-checkbox',
-    definitionSourceSelector = '#taxonomy-gwo-definition-source',
-    itemTableBodySelector = '#taxonomy-gwo-table-body',
-    itemTableSelector = '#taxonomy-gwo-table',
+    definitionSourceSelector = '#taxonomy-pfa-definition-source',
+    itemTableBodySelector = '#taxonomy-pfa-table-body',
+    itemTableSelector = '#taxonomy-pfa-table',
     sortHeaderSelector = 'th[data-column="title"]',
     paginationSelector = '#taxonomy-pagination',
     searchInputSelector = '#taxonomy-filter-search',
@@ -69,7 +69,7 @@ function initializeFilterTable(config = {}) {
 
   // Build maps from definition source
   definitionSourceEntries.forEach((entry) => {
-    let itemTitle = entry.dataset.gwo || entry.dataset.pon || entry.dataset.item;
+    let itemTitle = entry.dataset.pfa || entry.dataset.item;
     const definition = entry.dataset.definition;
     const permalink = entry.dataset.permalink;
 
@@ -86,13 +86,13 @@ function initializeFilterTable(config = {}) {
   });
 
   // Build category maps from program source
-  const programSourceSelector = config.programSourceSelector || '#taxonomy-program-gwo-source';
+  const programSourceSelector = config.programSourceSelector || '#taxonomy-program-pfa-source';
   const programSourceEntries = Array.from(document.querySelectorAll(`${programSourceSelector} span`));
 
   programSourceEntries.forEach((entry) => {
     const category = entry.dataset.category;
     const subcategory = entry.dataset.subcategory || '';
-    let itemTitle = entry.dataset.gwo || entry.dataset.pon || entry.dataset.item;
+    let itemTitle = entry.dataset.pfa || entry.dataset.item;
 
     if (!category || !itemTitle) return;
     
@@ -114,7 +114,7 @@ function initializeFilterTable(config = {}) {
 
   // Get all item titles
   const allItemTitles = uniqueSorted(
-    definitionSourceEntries.map((entry) => entry.dataset.gwo || entry.dataset.pon || entry.dataset.item)
+    definitionSourceEntries.map((entry) => entry.dataset.pfa || entry.dataset.item)
   );
 
   // Helper functions
@@ -603,7 +603,7 @@ function initializeFilterTable(config = {}) {
 
 // Auto-initialize on DOM ready if we're on a page with the required elements
 document.addEventListener('DOMContentLoaded', function () {
-  if (document.querySelector('#taxonomy-gwo-table-body')) {
+  if (document.querySelector('#taxonomy-pfa-table-body')) {
     initializeFilterTable();
   }
 });

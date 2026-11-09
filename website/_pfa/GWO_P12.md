@@ -1,0 +1,78 @@
+---
+category: Law, Justice, and Legal Services
+definition: Programs and activities protecting American interests against digital
+  or cyber threats on our networks, infrastructure, or workforce capabilities.
+focus_area: Cybersecurity
+largest_program:
+  expenditure_amount: 2714598797.66
+  name: Supply Chain Reimbursement Program
+  permalink: /program/32.010
+permalink: /pfa/GWO_P12
+pfa_id: GWO.P12
+smallest_program:
+  expenditure_amount: -3176.75
+  name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
+    Sharing
+  permalink: /program/93.835
+title: Cyber Defense
+total_agencies: 5
+total_expenditure: 3137282648.88
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: CISA Cyber Security Awareness Campaign
+  permalink: /program/97.128
+  program_type: assistance_listing
+- agency: Department of State
+  expenditure_amount: 296003.95
+  name: Cyber Capacity Building
+  permalink: /program/19.035
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 23998124.56
+  name: CyberSecurity Core Curriculum
+  permalink: /program/12.905
+  program_type: assistance_listing
+- agency: Federal Communications Commission
+  expenditure_amount: 0.0
+  name: Cybersecurity Pilot Program
+  permalink: /program/32.012
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Cybersecurity Workforce Development and Training for Underserved Communities
+    Program
+  permalink: /program/97.155
+  program_type: assistance_listing
+- agency: Department of Defense
+  expenditure_amount: 14626341.46
+  name: Information Security Grants
+  permalink: /program/12.902
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: National Cybersecurity Preparedness Consortium
+  permalink: /program/97.148
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: -3176.75
+  name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
+    Sharing
+  permalink: /program/93.835
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 383766558.0
+  name: State and Local Cybersecurity Grant Program Tribal Cybersecurity Grant Program
+  permalink: /program/97.137
+  program_type: assistance_listing
+- agency: Federal Communications Commission
+  expenditure_amount: 2714598797.66
+  name: Supply Chain Reimbursement Program
+  permalink: /program/32.010
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Tribal Cybersecurity Grant Program
+  permalink: /program/97.156
+  program_type: assistance_listing
+---

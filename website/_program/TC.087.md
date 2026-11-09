@@ -13,9 +13,6 @@ categories:
 cfda: TC.087
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Grow American Businesses
-  permalink: /gwo/GWO_B2
 headline_amount: 3810000000.0
 improper_payments:
 - agency: TREASURY
@@ -47,7 +44,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":0.0},{"x":"2023","outlays":0.0,"forgone_revenue":190000000.0},{"x":"2024","outlays":220000000.0,"forgone_revenue":3220000000.0},{"x":"2025","outlays":1130000000.0,"forgone_revenue":2680000000.0},{"x":"2026","outlays":1910000000.0,"forgone_revenue":2250000000.0}]'
 outlays: null
 permalink: /program/TC.087.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_B2
+  pfa: Grow American Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

@@ -12,7 +12,7 @@ categories:
 - title: Unmapped Category
   sub_categories:
   - title: Unmapped Sub
-gwo_options:
+pfa_options:
 - title: Alpha Objective
   definition: First government-wide objective.
   permalink: /gwo/GWO_ALPHA
@@ -49,16 +49,16 @@ gwo_options:
 - title: Lima Objective
   definition: Pagination filler lima.
   permalink: /gwo/GWO_LIMA
-program_gwo:
+program_pfa:
 - category: Education
   subcategory: K-12 Education
-  gwo: Alpha Objective
+  pfa: Alpha Objective
 - category: Education
   subcategory: K-12 Education
-  gwo: Bravo Objective
+  pfa: Bravo Objective
 - category: Health
   subcategory: Healthcare Access
-  gwo: Charlie Objective
+  pfa: Charlie Objective
 ---
 
 <div class="grid-container margin-bottom-5">
@@ -67,11 +67,11 @@ program_gwo:
 
 <script>
   (function replaceTaxonomyProgramSource() {
-    const source = document.getElementById('taxonomy-program-gwo-source');
+    const source = document.getElementById('taxonomy-program-pfa-source');
     if (!source) {
       return;
     }
-    source.innerHTML = `{% for mapping in page.program_gwo %}<span data-category="{{ mapping.category | escape }}" data-subcategory="{{ mapping.subcategory | escape }}" data-gwo="{{ mapping.gwo | escape }}"></span>{% endfor %}`;
+    source.innerHTML = `{% for mapping in page.program_pfa %}<span data-category="{{ mapping.category | escape }}" data-subcategory="{{ mapping.subcategory | escape }}" data-pfa="{{ mapping.pfa | escape }}"></span>{% endfor %}`;
   })();
 </script>
 <script src="/assets/js/taxonomy-filter-table.js"></script>

@@ -50,7 +50,7 @@ Other aspects of extract data quality should be enforced by the transformed data
 
 ### Global fiscal year and date variables
 
-The pipeline now eliminates hardcoded fiscal year and date values. All global fiscal year and date variables are defined centrally in `constants.py`. To update these values on the website, use the `export_global_dates_to_yml()` function in `load.py`. Running this function will automatically generate or update the `constants_global_dates.yml` file in the `website/_data` directory. The website then uses this YAML file to provide current fiscal year and date information to the website including the Program, PON, GWO, and About the Data pages. This ensures all date-related variables are managed and updated consistently across the project.
+The pipeline now eliminates hardcoded fiscal year and date values. All global fiscal year and date variables are defined centrally in `constants.py`. To update these values on the website, use the `export_global_dates_to_yml()` function in `load.py`. Running this function will automatically generate or update the `constants_global_dates.yml` file in the `website/_data` directory. The website then uses this YAML file to provide current fiscal year and date information to the website including the Program, PFA, and About the Data pages. This ensures all date-related variables are managed and updated consistently across the project.
 
 To update the fiscal year and date values:
 1. Edit the fiscal year or date variables in `constants.py` as needed.
@@ -85,10 +85,8 @@ The FPI also uses additional data, which is sourced from several locations and s
 2. [extracted/improper-payment-program-mapping.csv](extracted/improper-payment-program-mapping.csv): this contains a mapping between programs in the FPI and programs reported on [PaymentAccuracy.gov](https://paymentaccuracy.gov/), as reported by agencies via an OMB data call; this should be refreshed at least annually
 3. [constants.py](constants.py): these constants should be reviewed after each update.
 4. The following are sent by the OMB team annually for taxonomy updates:
-  1. [extracted/FPI_GWO_assignment.csv](extracted/FPI_GWO_assignment.csv)
-  2. [extracted/FPI_PON_assignment.csv](extracted/FPI_PON_assignment.csv)
-  3. [extracted/Taxonomy_GWO_crosswalk.csv](extracted/Taxonomy_GWO_crosswalk.csv)
-  4. [extracted/Taxonomy_PON_crosswalk.csv](extracted/Taxonomy_PON_crosswalk.csv)
+  1. [extracted/FPI_PFA_assignment.csv](extracted/FPI_PFA_assignment.csv)
+  2. [extracted/Taxonomy_PFA_crosswalk.csv](extracted/Taxonomy_PFA_crosswalk.csv)
 
 ### Working with CSV files
 When opening CSV files in Excel, it's numeric conversions can truncate data:

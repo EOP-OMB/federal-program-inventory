@@ -99,9 +99,9 @@
   </div>
 </div>
 
-<div class="taxonomy-gwo-section">
-  <table class="usa-table usa-table--striped width-full" id="taxonomy-gwo-table">
-    <caption class="usa-sr-only">Government-wide objectives and definitions</caption>
+<div class="taxonomy-pfa-section">
+  <table class="usa-table usa-table--striped width-full" id="taxonomy-pfa-table">
+    <caption class="usa-sr-only">Program focus areas and definitions</caption>
     <thead>
       <tr>
         <th data-column="title" scope="col" class="taxonomy-sortable-header" aria-sort="ascending">
@@ -113,17 +113,17 @@
         <th scope="col">Definition</th>
       </tr>
     </thead>
-    <tbody id="taxonomy-gwo-table-body">
-      {% for gwo_item in page.gwo_options %}
+    <tbody id="taxonomy-pfa-table-body">
+      {% for pfa_item in page.pfa_options %}
       <tr>
         <td>
-          {% if gwo_item.permalink %}
-            <a href="{{ gwo_item.permalink }}">{{ gwo_item.title }}</a>
+          {% if pfa_item.permalink %}
+            <a href="{{ pfa_item.permalink }}">{{ pfa_item.title }}</a>
           {% else %}
-            {{ gwo_item.title }}
+            {{ pfa_item.title }}
           {% endif %}
         </td>
-        <td>{{ gwo_item.definition }}</td>
+        <td>{{ pfa_item.definition }}</td>
       </tr>
       {% endfor %}
     </tbody>
@@ -164,26 +164,26 @@
   </div>
 </div>
 
-<div id="taxonomy-program-gwo-source" class="taxonomy-hidden-source" aria-hidden="true">
+<div id="taxonomy-program-pfa-source" class="taxonomy-hidden-source" aria-hidden="true">
   {% for program in site.program %}
-  {% if program.gwo and program.gwo.gwo and program.categories %}
+  {% if program.pfa and program.pfa.pfa and program.categories %}
   {% for category_entry in program.categories %}
   {% assign category_parts = category_entry | split: ' - ' %}
   {% assign category_name = category_parts[0] | strip %}
   {% assign subcategory_name = category_parts[1] | default: '' | strip %}
   <span data-category="{{ category_name | escape }}" data-subcategory="{{ subcategory_name | escape }}"
-    data-gwo="{{ program.gwo.gwo | escape }}"></span>
+    data-pfa="{{ program.pfa.pfa | escape }}"></span>
   {% endfor %}
   {% endif %}
   {% endfor %}
 </div>
 
-<div id="taxonomy-gwo-definition-source" class="taxonomy-hidden-source" aria-hidden="true">
-  {% for gwo_item in page.gwo_options %}
-  {% if gwo_item.title %}
-  <span data-gwo="{{ gwo_item.title | escape }}"
-    data-definition="{{ gwo_item.definition | strip_html | normalize_whitespace | escape }}"
-    data-permalink="{{ gwo_item.permalink | escape }}"></span>
+<div id="taxonomy-pfa-definition-source" class="taxonomy-hidden-source" aria-hidden="true">
+  {% for pfa_item in page.pfa_options %}
+  {% if pfa_item.title %}
+  <span data-pfa="{{ pfa_item.title | escape }}"
+    data-definition="{{ pfa_item.definition | strip_html | normalize_whitespace | escape }}"
+    data-permalink="{{ pfa_item.permalink | escape }}"></span>
   {% endif %}
   {% endfor %}
 </div>

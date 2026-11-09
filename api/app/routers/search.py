@@ -11,13 +11,12 @@ router = APIRouter(
 
 # Constants
 INDEX_NAME = "programs"
-# Boosts define strict relevancy tiers: title > popularName > agency > gwo/pons > objectives/cfda.
+# Boosts define strict relevancy tiers: title > popularName > agency > pfa > objectives/cfda.
 SEARCH_FIELDS = {
     "title": {"boost": 4},
     "popularName": {"boost": 3},
     "agency.title": {"boost": 2, "nested_path": "agency"},
-    "gwo": {"boost": 2},
-    "pons": {"boost": 2},
+    "pfa": {"boost": 2},
     "objectives": {"boost": 1},
     "cfda": {"boost": 1},
 }
@@ -219,12 +218,12 @@ def build_category_filter(category_strings: List[str]) -> Dict[str, Any]:
             category_conditions.append({"term": {"categories.title.keyword": category}})
     return build_nested_filter("categories", category_conditions)
 
-def build_gwo_filter(gwo_values: List[str]) -> Dict[str, Any]:
-    """Build GWO (Government-wide Objectives) filter query."""
-    if not gwo_values:
+def build_pfa_filter(pfa_values: List[str]) -> Dict[str, Any]:
+    """Build a program focus area filter query."""
+    if not pfa_values:
         return {}
     return {
-        "terms": {"gwo": gwo_values}
+        "terms": {"pfa": pfa_values}
     }
 
 def build_aggregations() -> Dict[str, Any]:
@@ -276,7 +275,7 @@ def build_aggregations() -> Dict[str, Any]:
         },
         "assistance_types": {"terms": {"field": "assistanceTypes", "size": 1000}},
         "applicant_types": {"terms": {"field": "applicantTypes", "size": 1000}},
-        "gwo": {"terms": {"field": "gwo", "size": 1000}}
+        "pfa": {"terms": {"field": "pfa", "size": 1000}}
     }
 
 def parse_parent_child(value_string: str) -> tuple[str, Optional[str]]:
@@ -299,7 +298,7 @@ def search_programs(
     categorySubcategory = request.categorySubcategory
     assistanceTypes = request.assistanceTypes
     applicantTypes = request.applicantTypes
-    gwo = request.gwo
+    pfa = request.pfa
     page = request.page
     page_size = request.page_size
     sort_field = request.sort_field
@@ -337,9 +336,9 @@ def search_programs(
         if applicantTypes:
             filter_conditions.append({"terms": {"applicantTypes": applicantTypes}})
         
-        gwo_filter = build_gwo_filter(gwo or [])
-        if gwo_filter:
-            filter_conditions.append(gwo_filter)
+        pfa_filter = build_pfa_filter(pfa or [])
+        if pfa_filter:
+            filter_conditions.append(pfa_filter)
         
         if filter_conditions:
             search_query["bool"]["filter"] = filter_conditions
@@ -409,9 +408,9 @@ def search_programs(
                 FacetBucket(key=bucket["key"], doc_count=bucket["doc_count"])
                 for bucket in response["aggregations"]["applicant_types"]["buckets"]
             ],
-            gwo=[
+            pfa=[
                 FacetBucket(key=bucket["key"], doc_count=bucket["doc_count"])
-                for bucket in response["aggregations"]["gwo"]["buckets"]
+                for bucket in response["aggregations"]["pfa"]["buckets"]
             ]
         )
 

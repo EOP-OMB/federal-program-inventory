@@ -13,9 +13,6 @@ categories:
 cfda: TC.104
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Provide Finance Options for Post-Secondary Education
-  permalink: /gwo/GWO_G7
 headline_amount: 13480000000.0
 improper_payments:
 - agency: TREASURY
@@ -51,7 +48,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":4020000000.0,"forgone_revenue":15460000000.0},{"x":"2023","outlays":2490000000.0,"forgone_revenue":13940000000.0},{"x":"2024","outlays":2460000000.0,"forgone_revenue":11190000000.0},{"x":"2025","outlays":2420000000.0,"forgone_revenue":11060000000.0},{"x":"2026","outlays":2360000000.0,"forgone_revenue":10850000000.0}]'
 outlays: null
 permalink: /program/TC.104.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_G7
+  pfa: Post-Secondary Programs
 popular_name: ''
 program_type: tax_expenditure
 results: []

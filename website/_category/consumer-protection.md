@@ -1,49 +1,49 @@
 ---
-agencies: '[{"title":"Department of Labor","total_num_programs":6,"total_obs":194905871.29},{"title":"Department
-  of Agriculture","total_num_programs":5,"total_obs":88079698.78},{"title":"Department
-  of Health and Human Services","total_num_programs":5,"total_obs":35125537.050000004},{"title":"Environmental
-  Protection Agency","total_num_programs":1,"total_obs":340000.0},{"title":"Department
-  of Transportation","total_num_programs":1,"total_obs":77874.38},{"title":"Department
-  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Consumer Product
-  Safety Commission","total_num_programs":1,"total_obs":-784957.43}]'
-applicant_types: '[{"title":"U.S. State Government (including the District of Columbia)","total_num_programs":10},{"title":"Nonprofit
-  Organization","total_num_programs":7},{"title":"Local","total_num_programs":6},{"title":"Federally
-  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":5},{"title":"State","total_num_programs":5},{"title":"Department
-  or Agency of a U.S. State Government","total_num_programs":4},{"title":"For-Profit
-  Organization","total_num_programs":4},{"title":"Other","total_num_programs":4},{"title":"County
-  Government (inclusive of boroughs in Alaska, parishes and other governmental entities
-  with geographic regional control and authority)","total_num_programs":3},{"title":"Indian/Native
-  American/Alaska Native Tribal Government (Other than Federally Recognized)","total_num_programs":3},{"title":"Not-for-Profit
-  Organization","total_num_programs":3},{"title":"Other Local Government Consortium,
-  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":3},{"title":"Territorial","total_num_programs":3},{"title":"Tribal","total_num_programs":3},{"title":"Department
-  or Agency of a U.S. Territorial Government","total_num_programs":2},{"title":"Federally
-  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Municipality
-  or Township government (inclusive of cities, towns, boroughs (except in Alaska),
-  and villages)","total_num_programs":2},{"title":"U.S. Territories and possessions","total_num_programs":2},{"title":"U.S.
-  Territory (or Possession) Government (including freely-associated states)","total_num_programs":2},{"title":"Federal","total_num_programs":1},{"title":"Government
-  - General","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
+agencies: '[{"title":"Department of Agriculture","total_num_programs":5,"total_obs":88079698.78},{"title":"Department
+  of Commerce","total_num_programs":1,"total_obs":0.0},{"title":"Department of Health
+  and Human Services","total_num_programs":2,"total_obs":-679314.55},{"title":"Consumer
+  Product Safety Commission","total_num_programs":1,"total_obs":-784957.43}]'
+applicant_types: '[{"title":"Local","total_num_programs":4},{"title":"State","total_num_programs":3},{"title":"U.S.
+  State Government (including the District of Columbia)","total_num_programs":3},{"title":"Department
+  or Agency of a U.S. State Government","total_num_programs":2},{"title":"Federally
+  Recognized Indian Tribal Governments","total_num_programs":2},{"title":"Nonprofit
+  Organization","total_num_programs":2},{"title":"Other","total_num_programs":2},{"title":"U.S.
+  Territories and possessions","total_num_programs":2},{"title":"County Government
+  (inclusive of boroughs in Alaska, parishes and other governmental entities with
+  geographic regional control and authority)","total_num_programs":1},{"title":"Federal","total_num_programs":1},{"title":"Federally
+  Recognized Indian/Native American/Alaska Native Tribal Government","total_num_programs":1},{"title":"Government
+  - General","total_num_programs":1},{"title":"Indian/Native American/Alaska Native
+  Tribal Government (Other than Federally Recognized)","total_num_programs":1},{"title":"Interstate","total_num_programs":1},{"title":"Intrastate","total_num_programs":1},{"title":"Local
   (includes State-designated Indian Tribes, excludes institutions of higher education
   and hospitals","total_num_programs":1},{"title":"Minority group","total_num_programs":1},{"title":"Native
   American Organizations (includes Indian groups, cooperatives, corporations, partnerships,
-  associations)","total_num_programs":1},{"title":"Other private institutions/organizations","total_num_programs":1},{"title":"Other
-  public institution/organization","total_num_programs":1},{"title":"Private nonprofit
-  institution/organization (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Profit
+  associations)","total_num_programs":1},{"title":"Other Local Government Consortium,
+  Regional Organization (Intrastate), or Other Local Government Combination","total_num_programs":1},{"title":"Other
+  private institutions/organizations","total_num_programs":1},{"title":"Other public
+  institution/organization","total_num_programs":1},{"title":"Private nonprofit institution/organization
+  (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Profit
   organization","total_num_programs":1},{"title":"Public nonprofit institution/organization
   (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Small
-  Business Person","total_num_programs":1},{"title":"Small business (less than 500
-  employees)","total_num_programs":1},{"title":"State (includes District of Columbia,
-  public institutions of higher education and hospitals)","total_num_programs":1},{"title":"U.S.
+  business (less than 500 employees)","total_num_programs":1},{"title":"State (includes
+  District of Columbia, public institutions of higher education and hospitals)","total_num_programs":1},{"title":"Territorial","total_num_programs":1},{"title":"Tribal","total_num_programs":1},{"title":"U.S.
   Federal Government","total_num_programs":1},{"title":"U.S. Territories and possessions
   (includes institutions of higher education and hospitals)","total_num_programs":1},{"title":"Unrestricted
   by Entity Type","total_num_programs":1}]'
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/agricultural-resources-and-services
-    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/agricultural-research-and-services
+    title: Agricultural Research and Services
   - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  subcategories:
+  - permalink: /category/arts-and-humanities/preservation
+    title: Preservation
+  - permalink: /category/arts-and-humanities/promotion-and-appreciation
+    title: Promotion and Appreciation
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   subcategories:
   - permalink: /category/business-and-commerce/business-development
@@ -51,27 +51,18 @@ categories_subcategories:
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
   title: Business and Commerce
-- permalink: /category/community-development
+- permalink: /category/community-and-regional-development
   subcategories:
-  - permalink: /category/community-development/community--area--and-regional-development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: Community Development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-infrastructure
+    title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
-    title: Consumer and Occupational Health and Safety
+  - permalink: /category/consumer-protection/consumer-safety
+    title: Consumer Safety
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  subcategories:
-  - permalink: /category/cultural-affairs/access-and-appreciation
-    title: Access and Appreciation
-  - permalink: /category/cultural-affairs/artistic-talent-development
-    title: Artistic Talent Development
-  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-    title: Cultural Heritage and Traditions
-  - permalink: /category/cultural-affairs/cultural-institutions
-    title: Cultural Institutions
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -92,6 +83,8 @@ categories_subcategories:
   title: Education
 - permalink: /category/employment-and-labor
   subcategories:
+  - permalink: /category/employment-and-labor/occupational--health-and-safety
+    title: Occupational  Health and Safety
   - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
   title: Employment and Labor
@@ -174,8 +167,10 @@ categories_subcategories:
   title: Law, Justice, and Legal Services
 - permalink: /category/national-defense
   subcategories:
-  - permalink: /category/national-defense/defense-capability
-    title: Defense Capability
+  - permalink: /category/national-defense/defense-science-and-technology
+    title: Defense Science and Technology
+  - permalink: /category/national-defense/military-personnel-and-readiness
+    title: Military Personnel and Readiness
   title: National Defense
 - permalink: /category/natural-resources
   subcategories:
@@ -204,11 +199,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/consumer-protection
-sub_cats: '[{"title":"Consumer and Occupational Health and Safety","permalink":"/category/consumer-protection/consumer-and-occupational-health-and-safety","total_num_programs":20,"total_obs":317744024.07}]'
+sub_cats: '[{"title":"Consumer Safety","permalink":"/category/consumer-protection/consumer-safety","total_num_programs":9,"total_obs":86615426.8}]'
 title: Consumer Protection
-total_num_agencies: 7
-total_num_applicant_types: 48
-total_num_programs: 20
+total_num_agencies: 4
+total_num_applicant_types: 42
+total_num_programs: 9
 total_num_sub_cats: 1
-total_obs: 317744024.07
+total_obs: 86615426.8
 ---

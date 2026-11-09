@@ -19,7 +19,6 @@ Cypress.Commands.add('waitForChartsReady', () => {
     '#chart',
     '#spending-chart',
     '#objectiveChart',
-    '#outcomeChart',
     '#myChart',
   ]
 
