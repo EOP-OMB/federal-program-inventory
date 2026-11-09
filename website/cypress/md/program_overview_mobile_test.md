@@ -20,14 +20,9 @@ applicant_types:
   - State Governments
   - Local Governments
   - Metropolitan Planning Organizations
-gwo:
-  gwo: "Improve Transportation System Efficiency"
+pfa:
+  pfa: "Improve Transportation System Efficiency"
   permalink: "/gwo/improve-transportation-efficiency"
-pons:
-  - pon: "Percentage of transportation corridors with active management"
-    permalink: "/pon/transportation-corridor-management"
-  - pon: "Average incident detection and response time"
-    permalink: "/pon/incident-response-time"
 outlays: '[{"x":"2015","outlay":450000000,"obligation":480000000},{"x":"2016","outlay":475000000,"obligation":510000000},{"x":"2017","outlay":520000000,"obligation":545000000},{"x":"2018","outlay":545000000,"obligation":570000000},{"x":"2019","outlay":580000000,"obligation":600000000},{"x":"2020","outlay":620000000,"obligation":640000000},{"x":"2021","outlay":665000000,"obligation":695000000},{"x":"2022","outlay":710000000,"obligation":750000000},{"x":"2023","outlay":750000000,"obligation":785000000},{"x":"2024","outlay":795000000,"obligation":825000000},{"x":"2025","outlay":840000000,"obligation":875000000},{"x":"2026","outlay":880000000,"obligation":920000000}]'
 improper_payments: null
 is_subpart_f: 1

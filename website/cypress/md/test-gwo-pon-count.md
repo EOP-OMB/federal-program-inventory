@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Test - GWO and PON Target Count Cards
+title: Test - GWO Target Count Card
 permalink: /test-gwo-pon-count.html
 ---
 
 <div class="grid-container">
   <div class="grid-row grid-gap">
     <div class="grid-col-12 margin-bottom-5">
-      <h1>Test Page - GWO and PON Target Count Cards</h1>
-      <p>This page tests that GWO and PON card target_count values are displayed correctly.</p>
+      <h1>Test Page - GWO Target Count Card</h1>
+      <p>This page tests that the GWO card target_count value is displayed correctly.</p>
     </div>
   </div>
 
@@ -22,13 +22,6 @@ permalink: /test-gwo-pon-count.html
       <!-- GWO Card with target_count = 5 -->
       <div data-testid="gwo-clickable-tile">
         {% include components/_clickable-tile.html href="/gwo/test" title="Test GWO Card" target_count=5 icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
-      </div>
-
-      <h4 class="text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
-      
-      <!-- PON Card with target_count = 3 -->
-      <div data-testid="pon-clickable-tile">
-        {% include components/_clickable-tile.html href="/pon/test" title="Test PON Card" target_count=3 icon="radio_button_unchecked" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
       </div>
     </div>
   </div>

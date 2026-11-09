@@ -34,9 +34,9 @@ categories:
 cfda: '93.778'
 fiscal_year: '2025'
 grants_url: https://grants.gov/search-grants?cfda=93.778
-gwo:
-  gwo: Provide Healthcare Coverage
-  permalink: /gwo/GWO_L15
+pfa:
+  pfa: Provide Healthcare Coverage
+  permalink: /pfa/GWO_L15
 headline_amount: 760419098000.0
 improper_payments: []
 improper_payments_is_multiple: false
@@ -59,9 +59,6 @@ objective: To provide financial assistance to States for payments of medical ass
 obligations: '[{"x":"2015","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":313520193906.0},{"x":"2016","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":348406723560.0},{"x":"2017","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":375386091272.0},{"x":"2018","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":390318663668.0},{"x":"2019","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":393563523896.0},{"x":"2020","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":460031533752.0},{"x":"2021","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":516009832093.0},{"x":"2022","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":592152606517.0},{"x":"2023","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":607100059446.0},{"x":"2024","sam_estimate":0.0,"sam_actual":689567730000.0,"usa_spending_actual":614886705864.91},{"x":"2025","sam_estimate":0.0,"sam_actual":724366753000.0,"usa_spending_actual":666131123061.05},{"x":"2026","sam_estimate":760419098000.0,"sam_actual":0.0,"usa_spending_actual":403015644442.0}]'
 other_program_spending: null
 outlays: '[{"x":"2015","outlay":0.0,"obligation":313520193906.0,"expenditure":313520193906.0,"forgone_revenue":0.0},{"x":"2016","outlay":190476114.45,"obligation":348406723560.0,"expenditure":348406723560.0,"forgone_revenue":0.0},{"x":"2017","outlay":509234963.86,"obligation":375386091272.0,"expenditure":375386091272.0,"forgone_revenue":0.0},{"x":"2018","outlay":-81223061.45,"obligation":390318663668.0,"expenditure":390318663668.0,"forgone_revenue":0.0},{"x":"2019","outlay":461865085.86,"obligation":393563523896.0,"expenditure":393563523896.0,"forgone_revenue":0.0},{"x":"2020","outlay":1289012683.07,"obligation":460031533752.0,"expenditure":460031533752.0,"forgone_revenue":0.0},{"x":"2021","outlay":6435040387.42,"obligation":516009832093.0,"expenditure":516009832093.0,"forgone_revenue":0.0},{"x":"2022","outlay":583768471979.56,"obligation":592152606517.0,"expenditure":592152606517.0,"forgone_revenue":0.0},{"x":"2023","outlay":613497858995.58,"obligation":607100059446.0,"expenditure":607100059446.0,"forgone_revenue":0.0},{"x":"2024","outlay":619650588777.03,"obligation":614886705864.91,"expenditure":614886705864.91,"forgone_revenue":0.0},{"x":"2025","outlay":659179855896.59,"obligation":666131123061.05,"expenditure":666131123061.05,"forgone_revenue":0.0},{"x":"2026","outlay":169022257203.14,"obligation":760419098000.0,"expenditure":760419098000.0,"forgone_revenue":0.0}]'
-pons:
-- permalink: /pon/PON_N68
-  pon: Increase Affordable Health Coverage
 popular_name: (Medicaid; Title XIX)
 program_type: assistance_listing
 results:

@@ -24,19 +24,11 @@ describe('Program page scenarios', () => {
       'href',
       '/test/gwo_treemap.html'
     );
-    cy.contains('a', 'Increase Scenario Health Coverage').should(
-      'have.attr',
-      'href',
-      '/test/pon_treemap.html'
-    );
     cy.get('#usaid-alert, .usa-alert--usaid').should('not.exist');
 
-    cy.contains('a', 'View results').click();
-    cy.get('#results-tab').should('have.attr', 'aria-selected', 'true');
-    cy.get('#results-panel').should('be.visible');
-    cy.get('#program-pon-gwo').should('be.visible');
-    cy.contains('Objectives:').should('be.visible');
-    cy.contains('Outcomes:').should('be.visible');
+    openTab('#results-tab', '#results-panel');
+    cy.get('#program-objectives').should('be.visible');
+    cy.contains('#program-objectives', 'Program Focus Area').should('be.visible');
     cy.get('#program-results').within(() => {
       cy.contains('2024').should('be.visible');
       cy.contains('Scenario result for 2024.').should('be.visible');
@@ -81,7 +73,7 @@ describe('Program page scenarios', () => {
 
     openTab('#results-tab', '#results-panel');
     cy.contains('Information is not yet available.').should('be.visible');
-    cy.get('#program-pon-gwo').should('not.exist');
+    cy.get('#program-objectives').should('not.exist');
     cy.get('#program-results').should('not.exist');
 
     openTab('#authorization-tab', '#authorization-panel');
@@ -95,7 +87,7 @@ describe('Program page scenarios', () => {
     cy.get('#program-rules-regs').should('not.exist');
   });
 
-  it('scenario: objective without outcomes or results shows fallback copy', () => {
+  it('scenario: objective without results shows fallback copy', () => {
     cy.viewport('macbook-16');
     cy.visit(objectivesOnlyUrl);
 
@@ -104,8 +96,7 @@ describe('Program page scenarios', () => {
     cy.contains('Increase Scenario Health Coverage').should('not.exist');
 
     openTab('#results-tab', '#results-panel');
-    cy.contains('Objectives:').should('be.visible');
-    cy.contains('Outcomes not yet available.').should('be.visible');
+    cy.contains('#program-objectives', 'Program Focus Area').should('be.visible');
     cy.get('#program-results').should('not.exist');
     cy.contains('Information is not yet available.').should('not.exist');
   });

@@ -222,8 +222,7 @@ The static-page traffic always rotates through this fixed circular list:
 - `/about/fpi`
 - `/about/terms`
 - `/program/96.002`
-- `/gwo/GWO_N3`
-- `/pon/PON_861`
+- `/pfa/GWO_N3`
 
 ## Request mix behavior
 

@@ -242,25 +242,24 @@ beneficiary_types:
 - title: Youth (16-21)
 categories:
 - sub_categories:
-  - title: Agricultural Resources and Services
+  - title: Agricultural Research and Services
   - title: Farm Income Stabilization
   title: Agricultural
+- sub_categories:
+  - title: Preservation
+  - title: Promotion and Appreciation
+  title: Arts and Humanities
 - sub_categories:
   - title: Business Development
   - title: Economic Development
   title: Business and Commerce
 - sub_categories:
   - title: Community, Area, and Regional Development
-  title: Community Development
+  - title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - sub_categories:
-  - title: Consumer and Occupational Health and Safety
+  - title: Consumer Safety
   title: Consumer Protection
-- sub_categories:
-  - title: Access and Appreciation
-  - title: Artistic Talent Development
-  - title: Cultural Heritage and Traditions
-  - title: Cultural Institutions
-  title: Cultural Affairs
 - sub_categories:
   - title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
@@ -272,6 +271,7 @@ categories:
   - title: STEM Education
   title: Education
 - sub_categories:
+  - title: Occupational  Health and Safety
   - title: Workforce Development
   title: Employment and Labor
 - sub_categories:
@@ -318,7 +318,8 @@ categories:
   - title: Tribal Independence and Autonomy
   title: Law, Justice, and Legal Services
 - sub_categories:
-  - title: Defense Capability
+  - title: Defense Science and Technology
+  - title: Military Personnel and Readiness
   title: National Defense
 - sub_categories:
   - title: Conservation and Land Management
@@ -514,124 +515,6 @@ cfo_agencies:
 - title: Small Business Administration
 - title: Social Security Administration
 fiscal_year: '2025'
-gwo_options:
-- title: Accelerate Development of Commercial Products and Technologies
-- title: Advance Agriculture Research
-- title: Advance Defense Research
-- title: Advance Energy Innovation (R&D)
-- title: Advance Scientific Research in Health and Medicine
-- title: Advance the Capabilities of the Forensic Sciences
-- title: Bridge Financial Gaps with Transitional Income Assistance
-- title: Create Jobs
-- title: Eliminate Barriers for People with Disabilities
-- title: Eliminate Chronic Disease and Risk Factors
-- title: Eliminate Crime
-- title: Eliminate Infectious Diseases
-- title: Eliminate Transnational Crime
-- title: Eliminate Wildfires
-- title: End Child Abuse and Neglect
-- title: End Criminal Recidivism
-- title: End Homelessness
-- title: End Hunger
-- title: End Illegal Immigration
-- title: End Substance Use Disorder
-- title: End Surface Transportation-related Fatalities and Injuries
-- title: Enforce Trade Laws
-- title: Ensure Law Enforcement Readiness
-- title: 'Ensure Patient Safety and Privacy '
-- title: Ensure Safe Drinking Water
-- title: Ensure Stability and Security for Children Without Parents
-- title: Expand Domestic Energy Production
-- title: Expand Trade and Market Access
-- title: Experience America's Natural Beauty and Public Landscapes
-- title: Foster International Economic Empowerment and Opportunities
-- title: Foster Workforce Re-entry
-- title: Foster Workforce Skill Development
-- title: Grow American Businesses
-- title: Grow the STEM Workforce
-- title: Harden Cyber Defenses
-- title: Improve Capacity of the Healthcare System
-- title: Improve Commercial Distribution Infrastructure
-- title: Improve Conservation of Natural Habitats and Ecosystems
-- title: Improve Conservation of Wildlife and Natural Resources
-- title: Improve Cyber Incident Response
-- title: Improve Direct Disaster and Emergency Relief
-- title: Improve Food Distribution Networks
-- title: Improve Food Supply Chains
-- title: Improve Forest and Land Stewardship
-- title: Improve K-12 Academic Performance
-- title: Improve Maternal, Infant, and Child Health
-- title: 'Improve Mental and Behavioral Health '
-- title: Improve Military Training and Education
-- title: Improve Older Adult Health
-- title: 'Improve Physical Health and Behaviors '
-- title: Improve Public Health Emergency Preparedness and Response
-- title: Improve Rail Transportation Networks
-- title: Improve STEM Workforce Training
-- title: Improve Water Resource and Ecosystem Management
-- title: Improve the Quality of Care Provided by Healthcare Systems
-- title: 'Improved Collection of Fees and Receipts '
-- title: Increase Adult Literacy
-- title: Increase Aviation Safety
-- title: Increase Completion of STEM Degrees, Certificates, and Credentials
-- title: Increase Disaster Resilience and Response Readiness
-- title: Increase Energy Reliability and Stability (Infrastructure)
-- title: Increase Homeownership
-- title: Increase K12 School Enrollment
-- title: Increase Maritime Safety
-- title: Increase Occupational Safety and Health
-- title: Increase Post-Secondary Completion
-- title: Increase Quality of STEM Education
-- title: Increase Safety of Public Transit
-- title: Increase Scientific Research and Knowledge
-- title: Increase Sustainable Agriculture
-- title: Maintain Affordable, Reliable Utility Services
-- title: Payment of Interest on Treasury Debt securities
-- title: 'Preserve Culturally or Historically Significant Sites or Artifacts '
-- title: Promote International Education and Exchange
-- title: Promote Personal Financial Responsibility
-- title: Promote Safe and High-Quality Housing
-- title: Promote Safe and High-Quality Schools
-- title: Promote School Readiness and Preparation
-- title: Promote the Arts and Humanities
-- title: Protect Clean Air and Water
-- title: Protect Constitutional and Civil Rights
-- title: Protect Critical Infrastructure
-- title: Provide Agricultural Incentives and Support
-- title: Provide Burial Benefits and Services to Veterans
-- title: Provide Cultural Educational Experiences
-- title: Provide Finance Options for Post-Secondary Education
-- title: Provide Healthcare Coverage
-- title: Provide International Development and Humanitarian Assistance
-- title: Provide Lending and Investment Opportunities
-- title: Provide Personnel and Human Capital Management
-- title: Provide Quality Sanitation Services
-- title: Provide Quality Solid Waste Management Systems
-- title: Provide Quality, Reliable Telecommunications Systems
-- title: Provide Stewardship of Federal Assets and Property
-- title: Reduce Drug and Healthcare Costs
-- title: Reduce Environmental Hazards
-- title: Strengthen Community and Regional Development
-- title: Strengthen Consumer Safety
-- title: Strengthen Diplomatic Relations
-- title: Strengthen Early Childhood Education and Childcare
-- title: Strengthen Educator Workforce Quality
-- title: Strengthen Environmental Research
-- title: 'Strengthen Health Education, Communication, and Outreach '
-- title: Strengthen Healthcare Services
-- title: Strengthen Military Readiness
-- title: Strengthen Preparation for Post-Secondary Education
-- title: Strengthen Preparation for STEM Education
-- title: Strengthen STEM Education
-- title: Strengthen Service and Civic Engagement Workforce Pathways
-- title: Strengthen Skill Development within Arts and Humanities Fields
-- title: Strengthen Tribal Self-Governance
-- title: Support Affordable Housing
-- title: Support Survivors of Crime
-- title: Support Veterans' Health
-- title: Sustain A Multi-modal Transportation Infrastructure System
-- title: Sustain Public Roadway System
-- title: Utilize America's Cultural Institutions
 layout: search
 other_agencies:
 - title: Appalachian Regional Commission
@@ -689,5 +572,116 @@ other_agencies:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
 permalink: /search.html
+pfa_options:
+- title: Adoption and Foster-care Assistance Programs
+- title: Adult Literacy
+- title: Agricultural Incentives and Support
+- title: Agriculture Production and Operation
+- title: Agriculture Research
+- title: America's Public Landscapes
+- title: American Job Creation and Growth
+- title: American Military Readiness
+- title: Arts Education and Programming
+- title: Aviation Safety
+- title: Chronic Disease and Risk Factors
+- title: Clean Air and Water Programs
+- title: Collection of Fees and Receipts
+- title: Combat Transnational Crime
+- title: Commercial Distribution Infrastructure
+- title: Community, Area, and Regional Economic Programs
+- title: Completion of STEM Degrees, Certificates, Credentialing, and Training
+- title: Conduct Foreign Affairs
+- title: Conservation of Natural Habitats and Ecosystems
+- title: Conservation of Wildlife and Natural Resources
+- title: Constitutional and Civil Rights
+- title: Consumer Regulation, Inspection, and Enforcement
+- title: Crime Prevention
+- title: Criminal Recidivism
+- title: Critical Infrastructure
+- title: Cultural Institution Engagement
+- title: Cyber Defense
+- title: Cyber Incident Response
+- title: Defense Research, Development, Test, and Evaluation
+- title: Development of Commercial Products and Technologies
+- title: Disaster Resilience and Response Readiness
+- title: Disaster and Emergency Relief Capabilities
+- title: Domestic Energy Production
+- title: Drinking Water
+- title: Drug and Healthcare Costs
+- title: Early Childhood Education and Childcare
+- title: Education Workforce
+- title: End Illegal Immigration
+- title: Energy Grid Reliability (Infrastructure)
+- title: Energy Research and Development (R&D)
+- title: Environmental Hazard Mitigation
+- title: Environmental Research
+- title: Food Distribution Networks
+- title: Food Supply Chains
+- title: Food and Nutrition Benefits
+- title: Foreign Information and Exchange
+- title: Forensic Sciences
+- title: Forest and Land Stewardship
+- title: Grow American Businesses
+- title: Health Education, Communication, and Outreach
+- title: Health and Medical Research
+- title: Health of People with Disabilities
+- title: Health of Veterans' and their Families
+- title: Healthcare Coverage
+- title: Healthcare Services
+- title: Healthcare System Capacity
+- title: Homeownership
+- title: Household Utility Services
+- title: Housing Programs
+- title: Humanities Education and Programming
+- title: Income Assistance
+- title: Infectious Diseases
+- title: International Development and Humanitarian Assistance
+- title: International Financial Activities
+- title: K-12 Programs
+- title: Law Enforcement Readiness
+- title: Lending and Investment Opportunities
+- title: Management of Federal Assets and Property
+- title: Maternal, Infant, and Child Health
+- title: Mental and Behavioral Health
+- title: Military Training and Education
+- title: Older Adult Health and Independence
+- title: Patient Safety and Privacy
+- title: Payment of Interest on Treasury Debt securities
+- title: Personal Financial Responsibility
+- title: Personnel and Human Capital Management
+- title: Physical Health and Wellness
+- title: Post-Secondary Programs
+- title: Preservation of Historic Sites and Artifacts
+- title: Prevention of Child Abuse and Neglect
+- title: Public Health Emergency Preparedness and Response
+- title: Public Roadways
+- title: Public Transit Safety
+- title: Public Transportation Infrastructure System
+- title: Quality of Care Provided by Healthcare Systems
+- title: Rail Transportation
+- title: Returning to the Workforce
+- title: STEM Education
+- title: STEM Education Preparedness
+- title: STEM Education Quality
+- title: STEM Workforce
+- title: Sanitation Services
+- title: School Readiness and Preparation
+- title: School Safety and Learning Quality
+- title: Scientific Research and Knowledge
+- title: Service and Civic Engagement Workforce
+- title: Solid Waste Management Services
+- title: Substance Abuse Prevention and Recovery
+- title: Support for Victims of Crime
+- title: Surface Transportation Safety
+- title: Technical and Skills Training and Development
+- title: Telecommunication Networks and Systems
+- title: Trade Policy, Enforcement, and Compliance
+- title: Trade and Market Access for American Businesses
+- title: Tribal Self-Governance
+- title: U.S. Maritime Safety
+- title: Veterans Burial Benefits
+- title: Water Resource and Ecosystem Management
+- title: Wildfire Prevention
+- title: Workplace Safety and Health
 title: Program search
 ---

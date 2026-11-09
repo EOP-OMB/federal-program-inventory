@@ -268,10 +268,8 @@ def _assert_transform_output():
         "improper_payment_mapping",
         "taxonomy_category",
         "taxonomy_focus_area",
-        "gwo",
-        "pon",
-        "program_to_gwo",
-        "program_to_pon",
+        "pfa",
+        "program_to_pfa",
     }
     assert expected_tables.issubset(tables)
 
@@ -512,8 +510,7 @@ def _assert_load_output(website, indexer):
 
     assert list((website / "_category").glob("*.md"))
     assert list((website / "_subcategory").glob("*.md"))
-    assert list((website / "_gwo").glob("*.md"))
-    assert list((website / "_pon").glob("*.md"))
+    assert list((website / "_pfa").glob("*.md"))
 
 
 def test_extract_then_transform(tmp_path, real_sqlite, monkeypatch):

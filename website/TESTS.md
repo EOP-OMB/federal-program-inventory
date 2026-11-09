@@ -4,7 +4,7 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 
 ## Home (`/`)
 
-- [ ] Open the [homepage](https://fpi.omb.gov/). Confirm the three headline numbers (programs, spending, and agencies) are filled in and that the spending figure is labeled for the fiscal year shown on the page.
+- [ ] Open the [homepage](https://fpi.omb.gov/). Confirm the four headline numbers (programs, spending, agencies, and focus areas) are filled in and that the spending figure is labeled for the fiscal year shown on the page.
 - [ ] From the homepage, select **Explore programs**. Confirm the next page is Program Search and that it lists real programs rather than an error message.
 - [ ] From the homepage, select **About**. Confirm the next page is About the FPI and that it still describes SAM.gov and USAspending.gov as data sources.
 - [ ] From the homepage, follow the **Find programs**, **Explore spending**, and **Understand methodology** cards. Confirm they open Program Search, the category spending page, and About the FPI.
@@ -42,25 +42,21 @@ Use this checklist on the live Federal Program Inventory at [https://fpi.omb.gov
 
 ## Taxonomy (`/about/taxonomy`)
 
-- [ ] Open the [FPI Taxonomy](https://fpi.omb.gov/about/taxonomy) page and find **End Hunger**. Confirm the title and definition match the [End Hunger](https://fpi.omb.gov/gwo/GWO_K3) government-wide objective page.
-- [ ] On the taxonomy page, limit the table to the **Food and Nutrition** category. Confirm **End Hunger** remains in the results and still links to the same GWO page.
+- [ ] Open the [FPI Taxonomy](https://fpi.omb.gov/about/taxonomy) page and find **Food and Nutrition Benefits**. Confirm the title and definition match the [Food and Nutrition Benefits](https://fpi.omb.gov/pfa/GWO_K3) government-wide objective page.
+- [ ] On the taxonomy page, limit the table to the **Food and Nutrition** category. Confirm **Food and Nutrition Benefits** remains in the results and still links to the same GWO page.
 
 ## Program (`/program/<program>`)
 
 - [ ] Open the [Supplemental Nutrition Assistance Program (10.551)](https://fpi.omb.gov/program/10.551) page. Confirm the title, assistance listing number, Department of Agriculture / Food and Nutrition Service, and overview text match the [SNAP listing on SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view).
 - [ ] On that SNAP page, note the latest fiscal-year spending on the Overview or Spending tab. Confirm it is in the same ballpark as the [SNAP results on USAspending.gov](https://www.usaspending.gov/search/?hash=468b38afca1a160cf891746a1cab58f1).
 - [ ] On that SNAP page, open the Spending tab’s improper-payment information. Confirm the program name and rate are consistent with the [SNAP entry on PaymentAccuracy.gov](https://paymentaccuracy.gov/program/usda-supplemental-nutrition-assistance-program).
-- [ ] On that SNAP page, check the Overview tab. Confirm the objective is **End Hunger** and that its link opens the matching GWO page, and that no program outcome is listed.
+- [ ] On that SNAP page, check the Overview tab. Confirm the Program Focus Area is **Food and Nutrition Benefits** and that its link opens the matching GWO page, and that no program outcome is listed.
 - [ ] On that SNAP page, open the Authorization tab. Confirm the authorizing statutes are the same ones shown on the [SNAP listing on SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view).
 
-## Government-wide objective (`/gwo/<gwo>`)
+## Program focus area (`/pfa/<id>`)
 
-- [ ] Open the [End Hunger](https://fpi.omb.gov/gwo/GWO_K3) page. Confirm the definition matches the taxonomy entry for End Hunger, and that **Supplemental Nutrition Assistance Program** appears in the related programs list.
+- [ ] Open the [Food and Nutrition Benefits](https://fpi.omb.gov/pfa/GWO_K3) page. Confirm the definition matches the taxonomy entry for Food and Nutrition Benefits, and that **Supplemental Nutrition Assistance Program** appears in the related programs list.
 - [ ] On that GWO page, spot-check SNAP’s name, agency, and spending against [SAM.gov](https://sam.gov/fal/b15e4e5eabfc4ee98249fec6d0044d3c/view) and [USAspending.gov](https://www.usaspending.gov/search/?hash=468b38afca1a160cf891746a1cab58f1). Confirm the program is the same listing and the spending is in the same ballpark.
-
-## Program outcome (`/pon/<pon>`)
-
-- [ ] Open the [Improve Availability of Healthy Foods](https://fpi.omb.gov/pon/PON_455) address. Confirm it is not a published program-outcome page in the current inventory.
 
 ## Shared
 

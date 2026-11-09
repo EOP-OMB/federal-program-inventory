@@ -250,9 +250,7 @@ function renderTreeMap(data, chartId, dataKey, color, textColor, options = {}){
       .attr("fill", textColor)
       .style("pointer-events", "none")
       .attr("class", function() {
-        return chartId === 'outcomeChart'
-          ? "tree-label-dark"
-          : (d.data && d.data.colorRaw < 0.07) ? "tree-label-dark" : "tree-label-light";
+        return (d.data && d.data.colorRaw < 0.07) ? "tree-label-dark" : "tree-label-light";
       });
 
     const availableWidth = rectWidth - textMargin;

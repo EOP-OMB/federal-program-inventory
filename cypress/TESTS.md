@@ -4,7 +4,7 @@ Automated tests run in the `cypress` container.
 
 ## Home
 
-- [ ] Homepage fixture loads an Outcomes count of 0
+- [ ] Homepage fixture shows Programs and Agencies
 - [ ] Spending tooltip opens and closes on desktop
 - [ ] Spending tooltip opens and closes on tablet
 - [ ] Spending tooltip closes via icon, close button, and outside click
@@ -21,11 +21,10 @@ Automated tests run in the `cypress` container.
 
 ## Search
 
-- [ ] Program outcomes filter is absent
 - [ ] Applicant filter wrapping at a wide viewport
 - [ ] Program name sorting
 - [ ] Keyword search defaults to relevancy sorting
-- [ ] Agency and GWO filters serialize and restore from the URL
+- [ ] Agency and PFA filters serialize and restore from the URL
 - [ ] Search text and result count restore after refresh
 - [ ] Clear filters restores search text, applicant filters, and global count
 - [ ] Loading-results skeleton screenshot
@@ -42,7 +41,7 @@ Automated tests run in the `cypress` container.
 
 - [ ] Populated overview, results, authorization, and oversight content
 - [ ] Empty program hides purpose, results, and authorization content
-- [ ] Objective without outcomes or results shows fallback copy
+- [ ] Objective without results shows fallback copy
 - [ ] Arrow keys move between program tabs
 - [ ] Full-page tab screenshots (overview, spending, results, authorization, oversight)
 - [ ] Responsive tab screenshots
@@ -97,7 +96,7 @@ Automated tests run in the `cypress` container.
 - [ ] Category and subcategory tags on the program page
 - [ ] Visited program links use the visited color
 
-## Government-wide objective (GWO)
+## Program focus area (PFA)
 
 - [ ] Full page screenshot
 - [ ] Full page screenshot on phone
@@ -107,8 +106,6 @@ Automated tests run in the `cypress` container.
 - [ ] Clicking a treemap tile navigates to the program
 - [ ] Jump link to the related programs table
 - [ ] Treemap and related table tooltips show data source labels
-- [ ] Default description when the GWO description is blank
-- [ ] Default description when the GWO description is missing
 - [ ] Insight copy for 0 programs
 - [ ] Insight copy for 1 program
 - [ ] Insight copy for many programs
@@ -116,24 +113,8 @@ Automated tests run in the `cypress` container.
 - [ ] Info card shows Programs, FY title, and Agencies
 - [ ] Info card does not contain "Expended so far this year"
 - [ ] Info card snapshot and structure
-- [ ] Target count card shows the GWO program count
-- [ ] Category and subcategory tags on the GWO page
-
-## Program outcome (PON)
-
-- [ ] Full page screenshot
-- [ ] Full page screenshot on phone
-- [ ] Treemap tile for each nonzero program
-- [ ] Treemap program labels and percentages
-- [ ] Treemap tooltip with name, amount, and percentage
-- [ ] Clicking a treemap tile navigates to the program
-- [ ] Jump link to the related programs table
-- [ ] Treemap and related table tooltips show data source labels
-- [ ] Info card shows Programs, FY title, and Agencies
-- [ ] Info card does not contain "Expended so far this year"
-- [ ] Info card structure
-- [ ] Target count card shows the PON program count
-- [ ] Category and subcategory tags on the PON page
+- [ ] Target count card shows the PFA program count
+- [ ] Category and subcategory tags on the PFA page
 
 ## Category and subcategory
 

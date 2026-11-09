@@ -50,10 +50,10 @@ describe('Search page', () => {
       .check({ force: true });
     cy.wait('@programsTable');
 
-    cy.get('[data-content-id="gwo-section"]').click();
-    cy.get('div:not(.facet-hidden):not(.hide) > div.usa-checkbox > input[data-filter-type="gwo"]')
-      .first().check({ force: true }).invoke('attr', 'data-gwo-title')
-      .as('selectedGwoTitle');
+    cy.get('[data-content-id="pfa-section"]').click();
+    cy.get('div:not(.facet-hidden):not(.hide) > div.usa-checkbox > input[data-filter-type="pfa"]')
+      .first().check({ force: true }).invoke('attr', 'data-pfa-title')
+      .as('selectedPfaTitle');
     cy.wait('@programsTable');
 
     cy.url().then((urlString) => {
@@ -63,7 +63,7 @@ describe('Search page', () => {
 
       const decodedFilters = JSON.parse(decodeURIComponent(atob(encodedFilters)));
       expect(decodedFilters.a, 'agency filters').to.have.length.greaterThan(0);
-      expect(decodedFilters.gwo, 'gwo filters').to.have.length.greaterThan(0);
+      expect(decodedFilters.pfa, 'pfa filters').to.have.length.greaterThan(0);
     });
 
     cy.reload();
@@ -71,8 +71,8 @@ describe('Search page', () => {
 
     cy.get('input[data-filter-type="agency"][data-agency-title="Department of Agriculture"]')
       .should('be.checked');
-    cy.get('@selectedGwoTitle').then((selectedGwoTitle) => {
-      cy.get(`input[data-filter-type="gwo"][data-gwo-title="${selectedGwoTitle}"]`)
+    cy.get('@selectedPfaTitle').then((selectedPfaTitle) => {
+      cy.get(`input[data-filter-type="pfa"][data-pfa-title="${selectedPfaTitle}"]`)
         .should('be.checked');
     });
   });

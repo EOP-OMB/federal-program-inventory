@@ -9,7 +9,7 @@ smallest_program:
   permalink: /
 total_agencies: 5
 total_expenditure: 5000000.0
-layout: gwo
+layout: pfa
 title: Test GWO Treemap
 category: A Agricultural
 focus_area: Agricultural Resources and Services

@@ -313,82 +313,54 @@ TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS taxonomy_focus_area;
     """
 
-GWO_CREATE_TABLE_SQL = """
-    CREATE TABLE gwo (
+PFA_CREATE_TABLE_SQL = """
+    CREATE TABLE pfa (
         id TEXT NOT NULL PRIMARY KEY,
-        gwo TEXT NOT NULL,
-        gwo_definition TEXT NOT NULL,
+        pfa TEXT NOT NULL,
+        pfa_definition TEXT NOT NULL,
         focus_area_id TEXT NOT NULL,
         FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
     );
 """
 
-GWO_INSERT_TABLE_SQL = """
-    INSERT INTO gwo
-    VALUES (?, ?, ?, ?);
+PFA_INSERT_TABLE_SQL = """
+    INSERT INTO pfa
+    VALUES (?, ?, ?, ?)
+    ON CONFLICT DO NOTHING;
 """
 
+# delete after running once
 GWO_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS gwo;
     """
 
-PON_CREATE_TABLE_SQL = """
-    CREATE TABLE pon (
-        id TEXT NOT NULL PRIMARY KEY,
-        pon2 TEXT NOT NULL,
-        pon_definition TEXT NOT NULL,
-        focus_area_id TEXT NOT NULL,
-        FOREIGN KEY(focus_area_id) REFERENCES focus_area(id)
-    );
-"""
-
-PON_INSERT_TABLE_SQL = """
-    INSERT INTO pon
-    VALUES (?, ?, ?, ?);
-"""
-
-PON_DROP_TABLE_SQL = """
-    DROP TABLE IF EXISTS pon;
+PFA_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS pfa;
     """
 
-PROGRAM_TO_GWO_CREATE_TABLE_SQL = """
-    CREATE TABLE program_to_gwo (
+PROGRAM_TO_PFA_CREATE_TABLE_SQL = """
+    CREATE TABLE program_to_pfa (
         program_id TEXT NOT NULL,
-        gwo_id TEXT NOT NULL,
+        pfa_id TEXT NOT NULL,
         PRIMARY KEY (program_id),
         FOREIGN KEY(program_id) REFERENCES program(id),
-        FOREIGN KEY(gwo_id) REFERENCES gwo(id)
+        FOREIGN KEY(pfa_id) REFERENCES pfa(id)
     );
 """
 
-PROGRAM_TO_GWO_INSERT_TABLE_SQL = """
-    INSERT INTO program_to_gwo (program_id, gwo_id)
+PROGRAM_TO_PFA_INSERT_TABLE_SQL = """
+    INSERT INTO program_to_pfa (program_id, pfa_id)
     VALUES (?, ?)
     ON CONFLICT DO NOTHING;
 """
 
+# delete after running once
 PROGRAM_TO_GWO_DROP_TABLE_SQL = """
     DROP TABLE IF EXISTS program_to_gwo;
     """
 
-PROGRAM_TO_PON_CREATE_TABLE_SQL = """
-    CREATE TABLE program_to_pon (
-        program_id TEXT NOT NULL,
-        pon_id TEXT NOT NULL,
-        PRIMARY KEY (program_id, pon_id),
-        FOREIGN KEY(program_id) REFERENCES program(id),
-        FOREIGN KEY(pon_id) REFERENCES pon(id)
-    );
-"""
-
-PROGRAM_TO_PON_INSERT_TABLE_SQL = """
-    INSERT INTO program_to_pon (program_id, pon_id)
-    VALUES (?, ?)
-    ON CONFLICT DO NOTHING;
-"""
-
-PROGRAM_TO_PON_DROP_TABLE_SQL = """
-    DROP TABLE IF EXISTS program_to_pon;
+PROGRAM_TO_PFA_DROP_TABLE_SQL = """
+    DROP TABLE IF EXISTS program_to_pfa;
     """
 
 PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL = """
@@ -402,9 +374,9 @@ PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL = """
             taxonomy_focus_area.id AS taxonomy_focus_area_id,
             taxonomy_category.id AS taxonomy_category_id
         FROM program
-        JOIN program_to_gwo ON program.id = program_to_gwo.program_id
-        JOIN gwo on program_to_gwo.gwo_id = gwo.id
-        JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
+        JOIN program_to_pfa ON program.id = program_to_pfa.program_id
+        JOIN pfa on program_to_pfa.pfa_id = pfa.id
+        JOIN taxonomy_focus_area ON pfa.focus_area_id = taxonomy_focus_area.id
         JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
 """
 
@@ -1393,7 +1365,7 @@ def load_acquisitions_and_services():
         # Clear out old assistance outlay records for this program, to prevent duplicates
         cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_DELETE_SQL, [row["Program ID"]])
 
-        # Taxonomy joins assumed to happen via GWO / PON assignment files
+        # Taxonomy joins assumed to happen via the PFA assignment file
 
     for _, row in df.iterrows():
         cur.execute(USASPENDING_ASSISTANCE_OUTLAY_AGGREGATION_DIRECT_INSERT_SQL, [
@@ -1403,68 +1375,59 @@ def load_acquisitions_and_services():
             0 if row["Obligation_Sum"] is None or pd.isna(row["Obligation_Sum"]) else row["Obligation_Sum"]
         ])
 
+def _csv_text(value):
+    """Return a stripped string, treating a missing CSV cell as empty."""
+    if pd.isna(value):
+        return ""
+    return str(value).strip()
+
 def load_taxonomy_and_assignments():
-    """Loads taxonomy categories, focus areas, gwos, pons, and assignments."""
+    """Loads taxonomy categories, focus areas, PFAs, and assignments."""
     print("Starting load_taxonomy_and_assignments")
 
     cur.execute(PROGRAM_TAXONOMY_LOOKUP_DROP_VIEW_SQL)
+    # One-time cleanup of the previous table names. Safe to keep until the
+    # existing transformed_data.db has been rebuilt, then delete these two.
     cur.execute(PROGRAM_TO_GWO_DROP_TABLE_SQL)
-    cur.execute(PROGRAM_TO_PON_DROP_TABLE_SQL)
     cur.execute(GWO_DROP_TABLE_SQL)
-    cur.execute(PON_DROP_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PFA_DROP_TABLE_SQL)
+    cur.execute(PFA_DROP_TABLE_SQL)
     cur.execute(TAXONOMY_FOCUS_AREA_DROP_TABLE_SQL)
     cur.execute(TAXONOMY_CATEGORY_DROP_TABLE_SQL)
 
     cur.execute(TAXONOMY_CATEGORY_CREATE_TABLE_SQL)
     cur.execute(TAXONOMY_FOCUS_AREA_CREATE_TABLE_SQL)
-    cur.execute(GWO_CREATE_TABLE_SQL)
-    cur.execute(PON_CREATE_TABLE_SQL)
-    cur.execute(PROGRAM_TO_GWO_CREATE_TABLE_SQL)
-    cur.execute(PROGRAM_TO_PON_CREATE_TABLE_SQL)
+    cur.execute(PFA_CREATE_TABLE_SQL)
+    cur.execute(PROGRAM_TO_PFA_CREATE_TABLE_SQL)
     cur.execute(PROGRAM_TAXONOMY_LOOKUP_CREATE_VIEW_SQL)
 
-    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_GWO_crosswalk.csv"
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_PFA_crosswalk.csv"
     df = pd.read_csv(file_path)
 
     for _, row in df.iterrows():
+        category_code = _csv_text(row['Category Code'])
+        focus_area_code = _csv_text(row['Sub-Category Code'])
+        pfa_code = _csv_text(row['PFA code'])
+        # Merged legacy rows, such as GWO.E2, have no category of their own.
+        if not category_code or not focus_area_code or not pfa_code:
+            continue
+
         cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
-            row['Category Code'],
-            row['Category']
+            category_code,
+            _csv_text(row['Category'])
         ])
 
         cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
-            row['FA Code'],
-            row['Focus Area'],
-            row['Category Code']
+            focus_area_code,
+            _csv_text(row['Sub-Category']),
+            category_code
         ])
 
-        cur.execute(GWO_INSERT_TABLE_SQL, [
-            row['GWO ID'],
-            row['GWO'],
-            row['GWO Definition'],
-            row['FA Code']
-        ])
-
-    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "Taxonomy_PON_crosswalk.csv"
-    df = pd.read_csv(file_path)
-
-    for _, row in df.iterrows():
-        cur.execute(TAXONOMY_CATEGORY_INSERT_TABLE_SQL, [
-            row['Category Code'],
-            row['Category']
-        ])
-
-        cur.execute(TAXONOMY_FOCUS_AREA_INSERT_TABLE_SQL, [
-            row['FA Code'],
-            row['Focus Area'],
-            row['Category Code']
-        ])
-
-        cur.execute(PON_INSERT_TABLE_SQL, [
-            row['PON ID'],
-            row['PON2'],
-            row['PON Definition'],
-            row['FA Code']
+        cur.execute(PFA_INSERT_TABLE_SQL, [
+            pfa_code,
+            _csv_text(row['Program Focus Area']),
+            _csv_text(row['Program Focus Area Definition']),
+            focus_area_code
         ])
 
     # Commit the crosswalk inserts first. SQLite ignores a foreign-key pragma
@@ -1472,30 +1435,20 @@ def load_taxonomy_and_assignments():
     # focus_area table that is not created here.
     conn.commit()
     cur.execute("PRAGMA foreign_keys = ON")
-    gwo_duplicates = gwo_invalid = pon_duplicates = pon_invalid = 0
-    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_GWO_assignment.csv"
+    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_PFA_assignment.csv"
     df = pd.read_csv(file_path)
-    gwo_duplicates, gwo_invalid = _insert_assignment_rows(
-        PROGRAM_TO_GWO_INSERT_TABLE_SQL,
-        ((row['al_#'], row['GWO ID']) for _, row in df.iterrows()),
-    )
-
-    file_path = REPO_DISK_DIRECTORY + EXTRACTED_FILES_DIRECTORY + "FPI_PON_assignment.csv"
-    df = pd.read_csv(file_path)
-    pon_duplicates, pon_invalid = _insert_assignment_rows(
-        PROGRAM_TO_PON_INSERT_TABLE_SQL,
-        ((row['al_#'], row['PON ID']) for _, row in df.iterrows()),
+    pfa_duplicates, pfa_invalid = _insert_assignment_rows(
+        PROGRAM_TO_PFA_INSERT_TABLE_SQL,
+        ((_csv_text(row['Program_ID']), _csv_text(row['PFA ID'])) for _, row in df.iterrows()),
     )
     conn.commit()
     cur.execute("PRAGMA foreign_keys = OFF")
 
-    if gwo_duplicates or gwo_invalid or pon_duplicates or pon_invalid:
+    if pfa_duplicates or pfa_invalid:
         print(
             "Skipped assignment rows:"
-            f" {gwo_duplicates} duplicate GWO,"
-            f" {gwo_invalid} invalid GWO,"
-            f" {pon_duplicates} duplicate PON,"
-            f" {pon_invalid} invalid PON"
+            f" {pfa_duplicates} duplicate PFA,"
+            f" {pfa_invalid} invalid PFA"
         )
 
     print("Finished load_taxonomy_and_assignments")
@@ -1547,20 +1500,12 @@ def remove_orphaned_records():
         WHERE program_id NOT IN (SELECT id FROM program);
     """)
     cur.execute("""
-        DELETE FROM program_to_gwo
+        DELETE FROM program_to_pfa
         WHERE program_id NOT IN (SELECT id FROM program);
     """)
     cur.execute("""
-        DELETE FROM program_to_gwo
-        WHERE gwo_id NOT IN (SELECT id FROM gwo);
-    """)
-    cur.execute("""
-        DELETE FROM program_to_pon
-        WHERE program_id NOT IN (SELECT id FROM program);
-    """)
-    cur.execute("""
-        DELETE FROM program_to_pon
-        WHERE pon_id NOT IN (SELECT id FROM pon);
+        DELETE FROM program_to_pfa
+        WHERE pfa_id NOT IN (SELECT id FROM pfa);
     """)
     cur.execute("""
         DELETE FROM usaspending_assistance_obligation_aggregation

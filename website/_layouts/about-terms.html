@@ -12,7 +12,7 @@ permalink: /about/terms
     <h2 class="margin-top-0" id="overview">Overview</h2>
     <div class="usa-prose">
       <p>
-        This website leverages publicly accessible Assistance Listings (AL) data from SAM.gov and financial data from
+        This website uses publicly accessible Assistance Listings (AL) data from SAM.gov and financial data from
         USAspending.gov, linked to Assistance Listings through the AL number, as well as tax expenditure and interest data from
         Treasury.gov and improper payment data from paymentaccuracy.gov. Agencies submit data for their programs directly to
         these sources.
@@ -34,13 +34,13 @@ permalink: /about/terms
         information reflected on this site’s most recent 2026 update.
       </p>
       <p>
-        See <a href="https://www.usaspending.gov/data/about-the-data-download.pdf" target="_blank">USAspending’s “About the Data” resource</a> for a detailed explanation of the financial data.
-      </p>
-      <p>
         To reduce duplicative reporting burden, the FPI has been designed to pull from other publicly available
         sources to populate the information and data being displayed. Users are encouraged to go to the
         applicable data source to learn more about their data sets and reporting processes to understand why
-        certain data is presented on the FPI website in the way it appears.
+        certain data is presented on the FPI website in the way it appears. See 
+        <a href="https://www.usaspending.gov/data/about-the-data-download.pdf" target="_blank">
+          USAspending’s “About the Data” resource</a> 
+        for a detailed explanation of the financial data.
       </p>
     </div>
     <h2 id="download-table">Data Download Table</h2>
@@ -72,7 +72,7 @@ permalink: /about/terms
               pulled from USAspending.gov. For interest on the public debt, the values for outlays are pulled from USAspending.gov. For tax
               expenditures, outlays and revenue losses are pulled from Treasury.gov.</p>
 
-              <p>Likewise, each program is mapped to a Government-wide Objective (GWO).</p>
+              <p>Likewise, each program is mapped to a Program Focus Area (FA).</p>
 
               <p>Fields include Program ID, Program Name, Popular Name, Program Description, Program Type, Top Agency Name, Subagency
               Name, GWO ID, GWO Name, Fiscal Year, Outlay, Obligation, Expenditure, Forgone Revenue, SAM Estimated Obligation, and
@@ -81,35 +81,13 @@ permalink: /about/terms
             </td>
           </tr>
           <tr>
-            <td data-label="Dataset"><a href="/assets/files/program_to_pon.csv" download="program_to_pon.csv">FPI PON Assignment</a></td>
+            <td data-label="Dataset"><a href="/assets/files/pfa.csv" download="pfa.csv">FPI Taxonomy</a></td>
             <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
             <td data-label="Description">
-              <p>This dataset includes the program outcome (PON) assignment of each program in the FPI. A program may be assigned up to three
-              program outcomes. Users may join this table with the FPI Unified Table using the Program ID field.</p>
-
-              <p>Fields include Program ID and PON ID.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-label="Dataset"><a href="/assets/files/gwo.csv" download="gwo.csv">GWO Taxonomy</a></td>
-            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
-            <td data-label="Description">
-              <p>This table includes the {{ page.gwo_count }} Government-wide Objectives (GWOs) that make up the <a href="/about/taxonomy">FPI Taxonomy</a>.
-              While included in the current version of the FPI Taxonomy, some GWOs may not, at present, have any FPI programs to which they are aligned.</p>
-
-              <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, GWO ID, Govt-wide Objective (GWO), and GWO
-              Definition.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-label="Dataset"><a href="/assets/files/pon.csv" download="pon.csv">PON Taxonomy</a></td>
-            <td data-label="Update Year">{{ site.data.constants_global_dates.CURRENT_FISCAL_YEAR }}</td>
-            <td data-label="Description">
-              <p>This table includes the {{ page.pon_count }} Program Outcomes (PONs) that make up the FPI Taxonomy. While included in the current version
-                of the FPI Taxonomy, some PONs may not, at present, have any FPI programs to which they are aligned.</p>
-
-              <p>Fields include Category, Category Code, Sub-Category, Sub Category Code, PON ID, Program Outcome (PON), and PON
-              Definition.</p>
+              <p>This table includes the Categories, Sub-Categories, and Program Focus Areas that are used to organize programs within
+                the <a href="/about/taxonomy">FPI Taxonomy</a>. Fields include Category, Category Code, Sub-Category, Sub Category
+                Code, Program Focus Area (FA), and FA Code.
+              </p>
             </td>
           </tr>
           <tr>
@@ -137,7 +115,7 @@ permalink: /about/terms
         </p>
         <p>
           Assistance Listings are created and maintained by the administering agency on SAM.gov and must be
-          updated annually. As a program type, ALs are the core of the FPI.
+          updated annually. As a program type, ALs are the foundation of the FPI.
         </p>
         <p>
           Data source: SAM.gov
@@ -167,7 +145,7 @@ permalink: /about/terms
           across the Federal government (e.g., National Defense, Health, Transportation).
         </p>
         <p>
-          These are further broken down into program Sub-Categories, focus areas that provide for more specific
+          These are further broken down into program Sub-Categories, providing for more specific
           groupings within each of the broader mission areas represented by the Categories.
         </p>
       </div>
@@ -216,25 +194,12 @@ permalink: /about/terms
       <div class="usa-prose">
         <p>
           The FPI Taxonomy is a classification system designed to provide a more systematic framework for
-          logically organizing Federal programs and the information associated with those programs. Components
-          of the classification system include Categories, Sub-Categories, Government-wide Objectives, and
-          Program Outcomes. The taxonomy makes it easier to find programs that contribute to common, shared
-          Objectives and Outcomes while improving public understanding about what Federal programs currently
-          operate, and how programs link to budget, performance, and other information. These linkages also
-          provide important context for agency activities. Each program in the FPI is mapped to a Government-wide
-          Objective, and up to three Program Outcome(s) to which they are best aligned.
-        </p>
-      </div>
-    </div>
-
-    <div class="key-term padding-2 margin-top-2">
-      <h3>Government-wide Objective</h3>
-      <div class="usa-prose">
-        <p>
-          Government-wide Objectives are a component of the FPI taxonomy’s classification system and
-          represent a standardized, consistent set of goals that cut across agencies and programs that the Federal
-          government aims to achieve. Each program in the FPI is mapped to one Government-wide Objective to
-          which it is best aligned.
+          logically organizing and comparing Federal programs and the information associated with those programs. Components
+          of the classification system include Categories, Sub-Categories, and Program Focus Areas. The taxonomy makes it easier
+          to find programs that contribute to a common, shared purpose while improving public understanding about what Federal
+          programs currently operate, and how programs link to budget, performance, and other information. These linkages also
+          provide important context for agency activities. Each program in the FPI is mapped to the Program Focus Area to which
+          they are best aligned based on the program's authorizing purpose.
         </p>
       </div>
     </div>
@@ -441,14 +406,13 @@ permalink: /about/terms
     </div>
 
     <div class="key-term padding-2 margin-top-2">
-      <h3>Program Outcome</h3>
+      <h3>Program Focus Area</h3>
       <div class="usa-prose">
         <p>
-          Program Outcomes are a component of the FPI taxonomy that help show how government spending
-          translates, or links, the program’s purpose and objectives into measurable results being delivered.
-          Because many programs are authorized and designed to deliver results that transcend more than one
-          outcome, programs in the FPI can be mapped to between one and three Program Outcomes to which
-          they are best aligned.
+          Program Focus Areas are a more detailed classification grouping within the FPI taxonomy’s Sub-Category level that help
+          organize various Federal government programs and activities. Each program in the FPI is mapped to the Program Focus Area
+          to which it is best aligned to better facilitate inter- and intra-agency comparisons in the programmatic areas in which
+          the Federal government seeks to have an impact.
         </p>
       </div>
     </div>

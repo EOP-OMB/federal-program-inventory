@@ -45,11 +45,18 @@ applicant_types: '[{"title":"Nonprofit Organization","total_num_programs":41},{"
 categories_subcategories:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/agricultural-resources-and-services
-    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/agricultural-research-and-services
+    title: Agricultural Research and Services
   - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  subcategories:
+  - permalink: /category/arts-and-humanities/preservation
+    title: Preservation
+  - permalink: /category/arts-and-humanities/promotion-and-appreciation
+    title: Promotion and Appreciation
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   subcategories:
   - permalink: /category/business-and-commerce/business-development
@@ -57,27 +64,18 @@ categories_subcategories:
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
   title: Business and Commerce
-- permalink: /category/community-development
+- permalink: /category/community-and-regional-development
   subcategories:
-  - permalink: /category/community-development/community--area--and-regional-development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: Community Development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-infrastructure
+    title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
-    title: Consumer and Occupational Health and Safety
+  - permalink: /category/consumer-protection/consumer-safety
+    title: Consumer Safety
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  subcategories:
-  - permalink: /category/cultural-affairs/access-and-appreciation
-    title: Access and Appreciation
-  - permalink: /category/cultural-affairs/artistic-talent-development
-    title: Artistic Talent Development
-  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-    title: Cultural Heritage and Traditions
-  - permalink: /category/cultural-affairs/cultural-institutions
-    title: Cultural Institutions
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -98,6 +96,8 @@ categories_subcategories:
   title: Education
 - permalink: /category/employment-and-labor
   subcategories:
+  - permalink: /category/employment-and-labor/occupational--health-and-safety
+    title: Occupational  Health and Safety
   - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
   title: Employment and Labor
@@ -180,8 +180,10 @@ categories_subcategories:
   title: Law, Justice, and Legal Services
 - permalink: /category/national-defense
   subcategories:
-  - permalink: /category/national-defense/defense-capability
-    title: Defense Capability
+  - permalink: /category/national-defense/defense-science-and-technology
+    title: Defense Science and Technology
+  - permalink: /category/national-defense/military-personnel-and-readiness
+    title: Military Personnel and Readiness
   title: National Defense
 - permalink: /category/natural-resources
   subcategories:
@@ -210,11 +212,11 @@ categories_subcategories:
   title: Transportation
 fiscal_year: '2025'
 permalink: /category/international-affairs
-sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":104,"total_obs":10716962134.130001}]'
+sub_cats: '[{"title":"International Relations and Foreign Affairs","permalink":"/category/international-affairs/international-relations-and-foreign-affairs","total_num_programs":104,"total_obs":10716962134.13}]'
 title: International Affairs
 total_num_agencies: 13
 total_num_applicant_types: 55
 total_num_programs: 104
 total_num_sub_cats: 1
-total_obs: 10716962134.130001
+total_obs: 10716962134.13
 ---

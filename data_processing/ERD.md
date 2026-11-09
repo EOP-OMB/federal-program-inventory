@@ -20,8 +20,7 @@ erDiagram
     program ||--o{ program_result : "has"
     program ||--o{ program_sam_spending : "has"
     program ||--o{ program_to_category : "belongs_to"
-    program ||--o| program_to_gwo : "assigned_to"
-    program ||--o{ program_to_pon : "assigned_to"
+    program ||--o| program_to_pfa : "assigned_to"
     program ||--o{ usaspending_assistance_obligation_aggregation : "aggregated"
     program ||--o{ usaspending_assistance_outlay_aggregation : "aggregated"
     program ||--o{ other_program_spending : "has"
@@ -29,13 +28,10 @@ erDiagram
     
     taxonomy_category ||--o{ taxonomy_focus_area : "contains"
     
-    taxonomy_focus_area ||--o{ gwo : "has"
-    taxonomy_focus_area ||--o{ pon : "has"
+    taxonomy_focus_area ||--o{ pfa : "has"
     taxonomy_focus_area ||--o{ other_program_spending : "classified_by"
     
-    gwo ||--o{ program_to_gwo : "assigned_to"
-    
-    pon ||--o{ program_to_pon : "assigned_to"
+    pfa ||--o{ program_to_pfa : "assigned_to"
     
     agency {
         INTEGER id PK
@@ -105,28 +101,16 @@ erDiagram
         TEXT category_id FK
     }
     
-    gwo {
+    pfa {
         TEXT id PK
-        TEXT gwo
-        TEXT gwo_definition
+        TEXT pfa
+        TEXT pfa_definition
         TEXT focus_area_id FK
     }
     
-    pon {
-        TEXT id PK
-        TEXT pon2
-        TEXT pon_definition
-        TEXT focus_area_id FK
-    }
-    
-    program_to_gwo {
+    program_to_pfa {
         TEXT program_id PK FK
-        TEXT gwo_id FK
-    }
-    
-    program_to_pon {
-        TEXT program_id PK FK
-        TEXT pon_id PK FK
+        TEXT pfa_id FK
     }
     
     usaspending_assistance_obligation_aggregation {
@@ -170,15 +154,12 @@ erDiagram
 ```mermaid
 erDiagram
     taxonomy_category ||--o{ taxonomy_focus_area : "contains"
-    taxonomy_focus_area ||--o{ gwo : "has"
-    taxonomy_focus_area ||--o{ pon : "has"
+    taxonomy_focus_area ||--o{ pfa : "has"
     taxonomy_focus_area ||--o{ other_program_spending : "classifies"
     
-    gwo ||--o{ program_to_gwo : "assigned_to"
-    pon ||--o{ program_to_pon : "assigned_to"
+    pfa ||--o{ program_to_pfa : "assigned_to"
     
-    program ||--o| program_to_gwo : "assigned_to"
-    program ||--o{ program_to_pon : "assigned_to"
+    program ||--o| program_to_pfa : "assigned_to"
     
     taxonomy_category {
         TEXT id PK
@@ -191,17 +172,10 @@ erDiagram
         TEXT category_id FK
     }
     
-    gwo {
+    pfa {
         TEXT id PK
-        TEXT gwo
-        TEXT gwo_definition
-        TEXT focus_area_id FK
-    }
-    
-    pon {
-        TEXT id PK
-        TEXT pon2
-        TEXT pon_definition
+        TEXT pfa
+        TEXT pfa_definition
         TEXT focus_area_id FK
     }
     
@@ -296,11 +270,9 @@ erDiagram
 - One `program` can have many `program_result`s (by fiscal year)
 - One `program` can have many `program_sam_spending` records
 - One `program` can belong to many `category`s (via `program_to_category`)
-- One `program` can be assigned to at most one `gwo` (via `program_to_gwo`)
-- One `program` can be assigned to many `pon`s (via `program_to_pon`)
+- One `program` can be assigned to at most one `pfa` (via `program_to_pfa`)
 - One `taxonomy_category` can contain many `taxonomy_focus_area`s
-- One `taxonomy_focus_area` can have many `gwo`s
-- One `taxonomy_focus_area` can have many `pon`s
+- One `taxonomy_focus_area` can have many `pfa`s
 
 ### Self-Referential Relationships
 - `agency` can reference itself for tier 1 and tier 2 parent agencies
@@ -308,7 +280,6 @@ erDiagram
 
 ### Many-to-Many Relationships
 - `program` ↔ `category` (via `program_to_category`)
-- `program` ↔ `pon` (via `program_to_pon`)
 
 ## Notes
 

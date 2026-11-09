@@ -97,25 +97,24 @@ applicant_types:
 - title: Water Delivery Authority
 categories:
 - sub_categories:
-  - title: Agricultural Resources and Services
+  - title: Agricultural Research and Services
   - title: Farm Income Stabilization
   title: Agricultural
+- sub_categories:
+  - title: Preservation
+  - title: Promotion and Appreciation
+  title: Arts and Humanities
 - sub_categories:
   - title: Business Development
   - title: Economic Development
   title: Business and Commerce
 - sub_categories:
   - title: Community, Area, and Regional Development
-  title: Community Development
+  - title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - sub_categories:
-  - title: Consumer and Occupational Health and Safety
+  - title: Consumer Safety
   title: Consumer Protection
-- sub_categories:
-  - title: Access and Appreciation
-  - title: Artistic Talent Development
-  - title: Cultural Heritage and Traditions
-  - title: Cultural Institutions
-  title: Cultural Affairs
 - sub_categories:
   - title: Disaster Readiness, Response, and Relief
   title: Disaster Prevention and Relief
@@ -127,6 +126,7 @@ categories:
   - title: STEM Education
   title: Education
 - sub_categories:
+  - title: Occupational  Health and Safety
   - title: Workforce Development
   title: Employment and Labor
 - sub_categories:
@@ -173,7 +173,8 @@ categories:
   - title: Tribal Independence and Autonomy
   title: Law, Justice, and Legal Services
 - sub_categories:
-  - title: Defense Capability
+  - title: Defense Science and Technology
+  - title: Military Personnel and Readiness
   title: National Defense
 - sub_categories:
   - title: Conservation and Land Management
@@ -425,8 +426,8 @@ other_agencies:
 - sub_categories:
   - title: United States International Development Finance Corporation
   title: United States International Development Finance Corporation
-outcomes_count: '0 '
 permalink: /
+pfa_count: '123 '
 program_types:
 - title: Advisory Services and Counseling
 - title: Direct Loans

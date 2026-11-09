@@ -68,14 +68,20 @@ def full_additional_row(aln, name, outlays):
     return row
 
 
+def assignment_row(program_id, pfa_id):
+    header = check_data_quality_before_transform.EXPECTED_CSV_HEADERS["FPI_PFA_assignment.csv"]
+    row = [""] * len(header)
+    row[header.index("Program_ID")] = program_id
+    row[header.index("PFA ID")] = pfa_id
+    return row
+
+
 def populate_extracted(
     extracted_dir,
     acquisitions_rows,
     additional_rows,
-    gwo_rows,
-    pon_rows,
-    taxonomy_gwo_ids=None,
-    taxonomy_pon_ids=None,
+    pfa_rows,
+    taxonomy_pfa_ids=None,
     inflation_years=None,
 ):
     extracted_dir.mkdir(parents=True)
@@ -90,36 +96,19 @@ def populate_extracted(
         [full_additional_row(*row) for row in additional_rows],
     )
     write_csv(
-        extracted_dir / "FPI_GWO_assignment.csv",
-        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["FPI_GWO_assignment.csv"],
-        gwo_rows,
+        extracted_dir / "FPI_PFA_assignment.csv",
+        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["FPI_PFA_assignment.csv"],
+        [assignment_row(*row) for row in pfa_rows],
     )
     write_csv(
-        extracted_dir / "FPI_PON_assignment.csv",
-        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["FPI_PON_assignment.csv"],
-        pon_rows,
-    )
-    write_csv(
-        extracted_dir / "Taxonomy_GWO_crosswalk.csv",
-        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["Taxonomy_GWO_crosswalk.csv"],
+        extracted_dir / "Taxonomy_PFA_crosswalk.csv",
+        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["Taxonomy_PFA_crosswalk.csv"],
         [
-            taxonomy_row("Taxonomy_GWO_crosswalk.csv", "GWO ID", gwo_id)
-            for gwo_id in (
-                sorted({row[1] for row in gwo_rows if row[1]})
-                if taxonomy_gwo_ids is None
-                else taxonomy_gwo_ids
-            )
-        ],
-    )
-    write_csv(
-        extracted_dir / "Taxonomy_PON_crosswalk.csv",
-        check_data_quality_before_transform.EXPECTED_CSV_HEADERS["Taxonomy_PON_crosswalk.csv"],
-        [
-            taxonomy_row("Taxonomy_PON_crosswalk.csv", "PON ID", pon_id)
-            for pon_id in (
-                sorted({row[1] for row in pon_rows if row[1]})
-                if taxonomy_pon_ids is None
-                else taxonomy_pon_ids
+            taxonomy_row("Taxonomy_PFA_crosswalk.csv", "PFA code", pfa_id)
+            for pfa_id in (
+                sorted({row[1] for row in pfa_rows if row[1]})
+                if taxonomy_pfa_ids is None
+                else taxonomy_pfa_ids
             )
         ],
     )
@@ -150,15 +139,10 @@ def passing_rows():
             ["IN.001", "Interest", "100.00"],
             ["TC.001", "Tax expenditure", "100.00"],
         ],
-        "gwo_rows": [
+        "pfa_rows": [
             ["10.001", "GWO.A1"],
             ["IN.001", "GWO.A1"],
             ["TC.001", "GWO.A1"],
-        ],
-        "pon_rows": [
-            ["10.001", "PON.205"],
-            ["IN.001", "PON.205"],
-            ["TC.001", "PON.205"],
         ],
     }
 
@@ -178,9 +162,7 @@ def assert_only_these_csvs(output_dir, expected_names):
         "amounts_with_scientific_notation.csv",
         "files_with_incorrect_headers.csv",
         "files_with_incorrect_column_count.csv",
-        "invalid_gwos.csv",
-        "invalid_pons.csv",
-        "excessive_pon_assignments.csv",
+        "invalid_pfas.csv",
         "invalid_alns.csv",
         "missing_inflation_year.csv",
         "missing_additional_program_prefixes.csv",
@@ -192,122 +174,28 @@ def assert_only_these_csvs(output_dir, expected_names):
         assert exists is (name in expected_names)
 
 
-class TestInvalidGwos:
-    def test_does_not_create_csv_or_blocker_when_gwos_are_valid(self, tmp_path):
+class TestInvalidPfas:
+    def test_does_not_create_csv_or_blocker_when_pfas_are_valid(self, tmp_path):
         output_dir = run_checks(tmp_path, passing_rows())
 
-        assert not (output_dir / "invalid_gwos.csv").exists()
+        assert not (output_dir / "invalid_pfas.csv").exists()
         assert not (output_dir / "blockers.txt").exists()
 
-    def test_creates_csv_and_blocker_when_gwos_are_invalid(self, tmp_path):
+    def test_creates_csv_and_blocker_when_pfas_are_invalid(self, tmp_path):
         rows = passing_rows()
         rows["acquisitions_rows"].append(["Other Program", "10.002", "50.00"])
-        rows["pon_rows"].append(["10.002", "PON.205"])
-        rows["gwo_rows"].append(["10.002", "GWO.ZZZ"])
+        rows["pfa_rows"].append(["10.002", "GWO.ZZZ"])
 
-        output_dir = run_checks(tmp_path, rows, taxonomy_gwo_ids=["GWO.A1"])
+        output_dir = run_checks(tmp_path, rows, taxonomy_pfa_ids=["GWO.A1"])
 
-        assert read_csv(output_dir / "invalid_gwos.csv") == [
-            ["GWO ID"],
+        assert read_csv(output_dir / "invalid_pfas.csv") == [
+            ["PFA ID"],
             ["GWO.ZZZ"],
         ]
         assert (output_dir / "blockers.txt").read_text(encoding="utf-8") == (
-            "BLOCKED:  1 GWOs are not in the GWO taxonomy\n"
+            "BLOCKED:  1 PFAs are not in the PFA taxonomy\n"
         )
-        assert_only_these_csvs(output_dir, {"invalid_gwos.csv"})
-
-
-class TestInvalidPons:
-    def test_does_not_create_csv_or_blocker_when_pons_are_valid(self, tmp_path):
-        output_dir = run_checks(tmp_path, passing_rows())
-
-        assert not (output_dir / "invalid_pons.csv").exists()
-        assert not (output_dir / "blockers.txt").exists()
-
-    def test_creates_csv_and_blocker_when_pons_are_invalid(self, tmp_path):
-        rows = passing_rows()
-        rows["pon_rows"].append(["10.001", "PON.ZZZ"])
-
-        output_dir = run_checks(tmp_path, rows, taxonomy_pon_ids=["PON.205"])
-
-        assert read_csv(output_dir / "invalid_pons.csv") == [
-            ["PON ID"],
-            ["PON.ZZZ"],
-        ]
-        assert (output_dir / "blockers.txt").read_text(encoding="utf-8") == (
-            "BLOCKED:  1 PONs are not in the PON taxonomy\n"
-        )
-        assert_only_these_csvs(output_dir, {"invalid_pons.csv"})
-
-
-class TestExcessivePonAssignments:
-    def test_does_not_create_csv_or_blocker_when_assignments_are_within_limit(
-        self, tmp_path
-    ):
-        rows = passing_rows()
-        rows["acquisitions_rows"].append(["Second Program", "10.002", "50.00"])
-        rows["gwo_rows"].append(["10.002", "GWO.A1"])
-        rows["pon_rows"].extend([
-            ["10.001", "PON.206"],
-            ["10.001", "PON.207"],
-            ["10.002", "PON.205"],
-            ["10.002", "PON.206"],
-            ["10.002", "PON.207"],
-            ["10.002", ""],
-        ])
-
-        output_dir = run_checks(tmp_path, rows)
-
-        assert not (output_dir / "excessive_pon_assignments.csv").exists()
-        assert not (output_dir / "blockers.txt").exists()
-
-    def test_creates_csv_and_blocker_when_a_program_has_more_than_three(
-        self, tmp_path
-    ):
-        rows = passing_rows()
-        rows["acquisitions_rows"].extend([
-            ["Second Program", "10.002", "50.00"],
-            ["Third Program", "10.003", "25.00"],
-            ["Fourth Program", "10.004", "10.00"],
-        ])
-        rows["gwo_rows"].extend([
-            ["10.002", "GWO.A1"],
-            ["10.003", "GWO.A1"],
-            ["10.004", "GWO.A1"],
-        ])
-        rows["pon_rows"].extend([
-            ["10.002", "PON.205"],
-            ["10.002", "PON.206"],
-            ["10.002", "PON.207"],
-            ["10.003", "PON.301"],
-            ["10.003", "PON.302"],
-            ["10.003", "PON.303"],
-            ["10.003", "PON.304"],
-            ["10.004", "PON.401"],
-            ["10.004", "PON.402"],
-            ["10.004", "PON.403"],
-            ["10.004", "PON.404"],
-            ["10.004", "PON.405"],
-        ])
-
-        output_dir = run_checks(tmp_path, rows)
-
-        assert read_csv(output_dir / "excessive_pon_assignments.csv") == [
-            ["aln", "pon"],
-            ["10.003", "PON.301"],
-            ["10.003", "PON.302"],
-            ["10.003", "PON.303"],
-            ["10.003", "PON.304"],
-            ["10.004", "PON.401"],
-            ["10.004", "PON.402"],
-            ["10.004", "PON.403"],
-            ["10.004", "PON.404"],
-            ["10.004", "PON.405"],
-        ]
-        assert (output_dir / "blockers.txt").read_text(encoding="utf-8") == (
-            "BLOCKED:  2 programs have more than 3 PON assignments\n"
-        )
-        assert_only_these_csvs(output_dir, {"excessive_pon_assignments.csv"})
+        assert_only_these_csvs(output_dir, {"invalid_pfas.csv"})
 
 
 class TestInvalidAlns:
@@ -319,13 +207,13 @@ class TestInvalidAlns:
 
     def test_creates_csv_and_blocker_when_alns_are_invalid(self, tmp_path):
         rows = passing_rows()
-        rows["gwo_rows"].append(["99.999", "GWO.A1"])
+        rows["pfa_rows"].append(["99.999", "GWO.A1"])
 
         output_dir = run_checks(tmp_path, rows)
 
         assert read_csv(output_dir / "invalid_alns.csv") == [
             ["invalid_aln", "filename"],
-            ["99.999", "FPI_GWO_assignment.csv"],
+            ["99.999", "FPI_PFA_assignment.csv"],
         ]
         assert_only_these_csvs(output_dir, {"invalid_alns.csv"})
         assert not (output_dir / "blockers.txt").exists()
@@ -457,8 +345,7 @@ class TestAdditionalProgramPrefixes:
     def test_creates_csv_and_blocker_when_interest_program_is_missing(self, tmp_path):
         rows = passing_rows()
         rows["additional_rows"] = [["TC.001", "Tax expenditure", "100.00"]]
-        rows["gwo_rows"] = [["10.001", "GWO.A1"], ["TC.001", "GWO.A1"]]
-        rows["pon_rows"] = [["10.001", "PON.205"], ["TC.001", "PON.205"]]
+        rows["pfa_rows"] = [["10.001", "GWO.A1"], ["TC.001", "GWO.A1"]]
 
         output_dir = run_checks(tmp_path, rows)
 
@@ -477,8 +364,7 @@ class TestAdditionalProgramPrefixes:
     def test_creates_csv_and_blocker_when_tax_program_is_missing(self, tmp_path):
         rows = passing_rows()
         rows["additional_rows"] = [["IN.001", "Interest", "100.00"]]
-        rows["gwo_rows"] = [["10.001", "GWO.A1"], ["IN.001", "GWO.A1"]]
-        rows["pon_rows"] = [["10.001", "PON.205"], ["IN.001", "PON.205"]]
+        rows["pfa_rows"] = [["10.001", "GWO.A1"], ["IN.001", "GWO.A1"]]
 
         output_dir = run_checks(tmp_path, rows)
 
@@ -505,15 +391,10 @@ class TestTruncatedAlns:
     def test_creates_csv_when_records_fail(self, tmp_path):
         rows = passing_rows()
         rows["acquisitions_rows"] = [["Example Program", "10.01", "100.00"]]
-        rows["gwo_rows"] = [
+        rows["pfa_rows"] = [
             ["10.01", "GWO.A1"],
             ["IN.001", "GWO.A1"],
             ["TC.001", "GWO.A1"],
-        ]
-        rows["pon_rows"] = [
-            ["10.01", "PON.205"],
-            ["IN.001", "PON.205"],
-            ["TC.001", "PON.205"],
         ]
 
         output_dir = run_checks(tmp_path, rows)
@@ -521,29 +402,23 @@ class TestTruncatedAlns:
         assert read_csv(output_dir / "alns_possibly_truncated.csv") == [
             ["aln", "row number", "filename"],
             ["10.01", "2", "acquisitions_and_services.csv"],
-            ["10.01", "2", "FPI_GWO_assignment.csv"],
-            ["10.01", "2", "FPI_PON_assignment.csv"],
+            ["10.01", "2", "FPI_PFA_assignment.csv"],
         ]
         assert_only_these_csvs(output_dir, {"alns_possibly_truncated.csv"})
 
     def test_writes_blockers_when_records_fail(self, tmp_path):
         rows = passing_rows()
         rows["acquisitions_rows"] = [["Example Program", "10.01", "100.00"]]
-        rows["gwo_rows"] = [
+        rows["pfa_rows"] = [
             ["10.01", "GWO.A1"],
             ["IN.001", "GWO.A1"],
             ["TC.001", "GWO.A1"],
-        ]
-        rows["pon_rows"] = [
-            ["10.01", "PON.205"],
-            ["IN.001", "PON.205"],
-            ["TC.001", "PON.205"],
         ]
 
         output_dir = run_checks(tmp_path, rows)
 
         assert (output_dir / "blockers.txt").read_text(encoding="utf-8") == (
-            "BLOCKED:  3 ALNs may be truncated\n"
+            "BLOCKED:  2 ALNs may be truncated\n"
         )
 
 
@@ -686,31 +561,23 @@ class TestUnmappedProgramReport:
                 name TEXT,
                 program_type TEXT
             );
-            CREATE TABLE program_to_gwo (
+            CREATE TABLE program_to_pfa (
                 program_id TEXT,
-                gwo_id TEXT
-            );
-            CREATE TABLE program_to_pon (
-                program_id TEXT,
-                pon_id TEXT
+                pfa_id TEXT
             );
             INSERT INTO agency VALUES (1, 'Department of Defense');
             INSERT INTO program VALUES
                 ('G3.C.12.100', 1, 'Mapped Contract', 'contracts'),
-                ('G3.C.12.138', 1, 'Missing Both', 'contracts'),
-                ('10.001', 1, 'Missing PON', 'assistance_listing'),
+                ('G3.C.12.138', 1, 'Missing GWO', 'contracts'),
+                ('10.001', 1, 'Mapped Assistance', 'assistance_listing'),
                 ('IN.001', NULL, 'Missing GWO', 'interest');
-            INSERT INTO program_to_gwo VALUES
+            INSERT INTO program_to_pfa VALUES
                 ('G3.C.12.100', 'GWO.ND3'),
                 ('10.001', 'GWO.A1');
-            INSERT INTO program_to_pon VALUES
-                ('G3.C.12.100', 'PON.7ND'),
-                ('G3.C.12.100', 'PON.N50'),
-                ('IN.001', 'PON.1');
         """)
         return connection
 
-    def test_writes_programs_missing_gwo_or_pon(self, tmp_path):
+    def test_writes_programs_missing_pfa(self, tmp_path):
         connection = self._database()
         output_dir = tmp_path / "qa"
 
@@ -721,18 +588,13 @@ class TestUnmappedProgramReport:
             rows = list(csv.DictReader(report_file))
 
         assert [row["program_id"] for row in rows] == [
-            "10.001",
             "G3.C.12.138",
             "IN.001",
         ]
         by_id = {row["program_id"]: row for row in rows}
-        assert by_id["G3.C.12.138"]["missing_gwo"] == "yes"
-        assert by_id["G3.C.12.138"]["missing_pon"] == "yes"
+        assert by_id["G3.C.12.138"]["missing_pfa"] == "yes"
         assert by_id["G3.C.12.138"]["agency_name"] == "Department of Defense"
-        assert by_id["10.001"]["missing_gwo"] == "no"
-        assert by_id["10.001"]["missing_pon"] == "yes"
-        assert by_id["IN.001"]["missing_gwo"] == "yes"
-        assert by_id["IN.001"]["missing_pon"] == "no"
+        assert by_id["IN.001"]["missing_pfa"] == "yes"
         assert by_id["IN.001"]["agency_name"] == ""
         connection.close()
 

@@ -711,7 +711,7 @@ def generate_subcategory_markdown_files(cursor: sqlite3.Cursor, output_dir: str,
     print("Successfully generated sub-category markdown files")
 
 def summarize_related_programs(programs):
-    """Totals and extreme programs for gwo or pon page."""
+    """Totals and extreme programs for a program focus area page."""
     programs = programs or []
     if not programs:
         return {
@@ -745,26 +745,26 @@ def summarize_related_programs(programs):
     }
 
 
-def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for gwos with related programs."""
+def generate_pfa_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
+    """Generate markdown files for program focus areas with related programs."""
     recreate_directory(output_dir)
 
     cursor.execute("""
         SELECT DISTINCT
-            gwo.id,
+            pfa.id,
             taxonomy_focus_area.focus_area,
             taxonomy_category.category,
-            gwo.gwo,
-            gwo.gwo_definition
-        FROM gwo
-        JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
-        JOIN taxonomy_focus_area ON gwo.focus_area_id = taxonomy_focus_area.id
+            pfa.pfa,
+            pfa.pfa_definition
+        FROM pfa
+        JOIN program_to_pfa ON pfa.id = program_to_pfa.pfa_id
+        JOIN taxonomy_focus_area ON pfa.focus_area_id = taxonomy_focus_area.id
         JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
     """)
 
-    gwos = cursor.fetchall()
+    pfas = cursor.fetchall()
 
-    for gwo in gwos:
+    for pfa in pfas:
         cursor.execute("""
             SELECT 
                 p.id, 
@@ -772,16 +772,16 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_
                 a1.agency_name,
                 p.program_type
             FROM program p
-            JOIN program_to_gwo ON p.id = program_to_gwo.program_id
+            JOIN program_to_pfa ON p.id = program_to_pfa.program_id
             LEFT JOIN agency a ON p.agency_id = a.id
             LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            WHERE gwo_id = ?
+            WHERE pfa_id = ?
             ORDER BY name
-        """, (gwo["id"],))
+        """, (pfa["id"],))
 
         where_used = cursor.fetchall()
 
-        url_friendly_id = gwo['id'].replace('#','_').replace('.','_')
+        url_friendly_id = pfa['id'].replace('#','_').replace('.','_')
 
         # Enhance where_used with agency and expenditure data
         where_used_enhanced = []
@@ -802,13 +802,13 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_
             program_data['expenditure_amount'] = expenditure_amount
             where_used_enhanced.append(program_data)
 
-        gwo_data = {
-            'permalink': f"/gwo/{url_friendly_id}",
-            'title': gwo['gwo'],
-            'gwo_id': gwo["id"],
-            'focus_area': gwo["focus_area"],
-            'category': gwo['category'],
-            'definition': gwo['gwo_definition'],
+        pfa_data = {
+            'permalink': f"/pfa/{url_friendly_id}",
+            'title': pfa['pfa'],
+            'pfa_id': pfa["id"],
+            'focus_area': pfa["focus_area"],
+            'category': pfa['category'],
+            'definition': pfa['pfa_definition'],
             'where_used': where_used_enhanced,
             **summarize_related_programs(where_used_enhanced),
         }
@@ -816,10 +816,10 @@ def generate_gwo_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_
         file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write('---\n')
-            yaml.dump(gwo_data, file, allow_unicode=True)
+            yaml.dump(pfa_data, file, allow_unicode=True)
             file.write('---\n')
 
-    print("Successfully generated gwo markdown files")
+    print("Successfully generated pfa markdown files")
 
 def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, programs_data, fiscal_year: str):
     """Generate the about page using pre-generated data."""
@@ -839,18 +839,15 @@ def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, prog
         yaml.dump(page, file, allow_unicode=True)
         file.write('---\n')
 
-    cursor.execute("SELECT COUNT(*) AS ct FROM gwo")
-    gwo_count = cursor.fetchone()['ct']
+    cursor.execute("SELECT COUNT(*) AS ct FROM pfa")
+    pfa_count = cursor.fetchone()['ct']
 
-    cursor.execute("SELECT COUNT(*) AS ct FROM pon")
-    pon_count = cursor.fetchone()['ct']
 
     page = {
         'title': 'FPI Data, Terms & Concepts',
         'layout': 'about-terms',
         'permalink': '/about/terms',
-        'gwo_count': gwo_count,
-        'pon_count': pon_count,
+        'pfa_count': pfa_count,
     }
 
     with open(os.path.join(output_path, 'about-terms.md'), 'w', encoding='utf-8') as file:
@@ -860,81 +857,6 @@ def generate_about_markdown_files(cursor: sqlite3.Cursor, output_path: str, prog
 
     print("Successfully generated about pages")
 
-def generate_pon_markdown_files(cursor: sqlite3.Cursor, output_dir: str, fiscal_year: str):
-    """Generate markdown files for pons with related programs."""
-    recreate_directory(output_dir)
-
-    cursor.execute("""
-        SELECT DISTINCT
-            pon.id,
-            taxonomy_focus_area.focus_area,
-            taxonomy_category.category,
-            pon.pon2,
-            pon.pon_definition
-        FROM pon
-        JOIN program_to_pon ON pon.id = program_to_pon.pon_id
-        JOIN taxonomy_focus_area ON pon.focus_area_id = taxonomy_focus_area.id
-        JOIN taxonomy_category ON taxonomy_focus_area.category_id = taxonomy_category.id
-    """)
-
-    pons = cursor.fetchall()
-
-    for pon in pons:
-        cursor.execute("""
-            SELECT 
-                p.id,
-                p.name,
-                a1.agency_name,
-                p.program_type
-            FROM program p
-            JOIN program_to_pon ON p.id = program_to_pon.program_id
-            LEFT JOIN agency a ON p.agency_id = a.id
-            LEFT JOIN agency a1 ON a.tier_1_agency_id = a1.id
-            WHERE program_to_pon.pon_id = ?
-            ORDER BY p.name
-        """, (pon["id"],))
-
-        where_used = cursor.fetchall()
-
-        url_friendly_id = pon['id'].replace('#','_').replace('.','_')
-
-        # Enhance where_used with agency and expenditure data
-        where_used_enhanced = []
-        for p in where_used:
-            program_data = {
-                'permalink': f"/program/{p['id']}",
-                'name': p['name'],
-                'agency': p['agency_name'] or 'Unspecified',
-                'program_type': p['program_type']
-            }
-
-            # Use expenditure, because we may need to compare different program types
-            expenditure_amount = 0.0
-            spending = get_amounts(cursor, p['id'], FISCAL_YEARS)
-            if spending:
-                expenditure_amount = next((o.get('expenditure', 0.0) for o in spending if o.get('x') == fiscal_year), 0.0)
-
-            program_data['expenditure_amount'] = expenditure_amount
-            where_used_enhanced.append(program_data)
-
-        pon_data = {
-            'permalink': f"/pon/{url_friendly_id}",
-            'title': pon['pon2'],
-            'gwo_id': pon["id"],
-            'focus_area': pon["focus_area"],
-            'category': pon['category'],
-            'definition': pon['pon_definition'],
-            'where_used': where_used_enhanced,
-            **summarize_related_programs(where_used_enhanced),
-        }
-
-        file_path = os.path.join(output_dir, f"{url_friendly_id}.md")
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write('---\n')
-            yaml.dump(pon_data, file, allow_unicode=True)
-            file.write('---\n')
-
-    print("Successfully generated pon markdown files")
 
 def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> List[Dict[str, Any]]:
     """
@@ -1034,32 +956,21 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
         """, (program['id'],))
         authorizations = [{'text': row['text'], 'url': row['url']} for row in cursor.fetchall()]
 
-        # Get program objective
+        # Get program focus area
         cursor.execute("""
-            SELECT gwo.id, gwo.gwo FROM program_to_gwo
-            JOIN gwo ON program_to_gwo.gwo_id = gwo.id
-            WHERE program_to_gwo.program_id = ?
+            SELECT pfa.id, pfa.pfa FROM program_to_pfa
+            JOIN pfa ON program_to_pfa.pfa_id = pfa.id
+            WHERE program_to_pfa.program_id = ?
         """, (program['id'],))
-        gwo_row = cursor.fetchone()
-        gwo = None
-        if gwo_row is not None:
-            url_friendly_id = gwo_row['id'].replace('#','_').replace('.','_')
-            gwo = {
-                'gwo': gwo_row['gwo'],
-                'permalink': f"/gwo/{url_friendly_id}"
+        pfa_row = cursor.fetchone()
+        pfa = None
+        if pfa_row is not None:
+            url_friendly_id = pfa_row['id'].replace('#','_').replace('.','_')
+            pfa = {
+                'pfa': pfa_row['pfa'],
+                'permalink': f"/pfa/{url_friendly_id}"
             }
 
-        # Get program outcomes
-        cursor.execute("""
-            SELECT pon.id, pon.pon2 FROM program_to_pon
-            JOIN pon ON program_to_pon.pon_id = pon.id
-            WHERE program_to_pon.program_id = ?
-            ORDER BY pon.pon2
-        """, (program['id'],))
-        pons = [{
-            'pon': row['pon2'],
-            'permalink': f"/pon/{row['id'].replace('#','_').replace('.','_')}"
-        } for row in cursor.fetchall()]
 
         # Use sets to prevent duplicates when organizing categories
         program_categories = {
@@ -1138,8 +1049,7 @@ def generate_program_data(cursor: sqlite3.Cursor, fiscal_years: list[str]) -> Li
             'related_programs': related_programs,
             'improper_payment_metrics': improper_payment_metrics,
             'headline_amount': round(headline_amount, 2),
-            'gwo': gwo,
-            'pons': pons
+            'pfa': pfa
         }
 
         programs_data.append(program_data)
@@ -1398,24 +1308,16 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
                     'title': row['sub_title']
                 })
 
-    # Get GWO (Government-wide Objectives) options
-    # Only include GWOs with program assignments (used by search page filter)
+    # Program focus area options for the search page filter.
+    # Only include focus areas with program assignments.
     cursor.execute("""
-        SELECT DISTINCT gwo.gwo as title
-        FROM gwo
-        JOIN program_to_gwo ON gwo.id = program_to_gwo.gwo_id
-        ORDER BY gwo.gwo
+        SELECT DISTINCT pfa.pfa as title
+        FROM pfa
+        JOIN program_to_pfa ON pfa.id = program_to_pfa.pfa_id
+        ORDER BY pfa.pfa
     """)
-    gwo_options = [{'title': row['title']} for row in cursor.fetchall()]
+    pfa_options = [{'title': row['title']} for row in cursor.fetchall()]
 
-    # Get PON (Program Outcomes) options
-    cursor.execute("""
-        SELECT DISTINCT pon.pon2 as title
-        FROM pon
-        JOIN program_to_pon ON pon.id = program_to_pon.pon_id
-        ORDER BY pon.pon2
-    """)
-    pon_options = [{'title': row['title']} for row in cursor.fetchall()]
 
     print("Completed shared data creation")
     
@@ -1426,8 +1328,7 @@ def generate_shared_data(cursor: sqlite3.Cursor) -> Dict[str, Any]:
         'assistance_types': assistance_types,
         'beneficiary_types': beneficiary_types,
         'categories': sorted(categories, key=lambda x: x['title']),
-        'gwo_options': gwo_options,
-        'pon_options': pon_options
+        'pfa_options': pfa_options
     }
 
 def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[str, Any]], fiscal_years: list[str]):
@@ -1467,8 +1368,7 @@ def generate_program_markdown_files(output_dir: str, programs_data: List[Dict[st
             'improper_payments_sparkline': json.dumps(program['improper_payment_metrics'].get('sparkline', []), separators=(',', ':')),
             'improper_payments_related_programs': program['related_programs'],
             'headline_amount': program.get('headline_amount', 0),
-            'gwo': program['gwo'],
-            'pons': program['pons']
+            'pfa': program['pfa']
         }
 
         # Add obligations based on program type
@@ -1509,7 +1409,7 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
         'assistance_types': shared_data['assistance_types'],
         'beneficiary_types': shared_data['beneficiary_types'],
         'categories': shared_data['categories'],
-        'gwo_options': shared_data['gwo_options']
+        'pfa_options': shared_data['pfa_options']
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1520,39 +1420,37 @@ def generate_search_page(output_path: str, shared_data: Dict[str, Any], fiscal_y
     print("Successfully generated search page")
 
 def generate_taxonomy_page(cursor: sqlite3.Cursor, output_path: str, shared_data: Dict[str, Any]):
-    """Generate the taxonomy page with all GWOs from the crosswalk,
+    """Generate the taxonomy page with all program focus areas from the crosswalk,
     but only with permalinks for those with program assignments."""
-    # Get GWOs that have program assignments
     cursor.execute("""
-        SELECT DISTINCT gwo_id
-        FROM program_to_gwo
+        SELECT DISTINCT pfa_id
+        FROM program_to_pfa
     """)
-    assigned_gwo_ids = {row['gwo_id'] for row in cursor.fetchall()}
+    assigned_pfa_ids = {row['pfa_id'] for row in cursor.fetchall()}
 
-    # Get all GWOs
     cursor.execute("""
-        SELECT gwo.id, gwo.gwo as title, gwo.gwo_definition as definition
-        FROM gwo
-        ORDER BY gwo.gwo
+        SELECT pfa.id, pfa.pfa as title, pfa.pfa_definition as definition
+        FROM pfa
+        ORDER BY pfa.pfa
     """)
-    all_gwo_options = []
+    all_pfa_options = []
     for row in cursor.fetchall():
-        gwo_entry = {
+        pfa_entry = {
             'title': row['title'],
             'definition': row['definition']
         }
-        # Only include permalinks for GWOs with program assignments
-        if row['id'] in assigned_gwo_ids:
+        # Only include permalinks for focus areas with program assignments
+        if row['id'] in assigned_pfa_ids:
             url_friendly_id = row['id'].replace('#', '_').replace('.', '_')
-            gwo_entry['permalink'] = f"/gwo/{url_friendly_id}"
-        all_gwo_options.append(gwo_entry)
+            pfa_entry['permalink'] = f"/pfa/{url_friendly_id}"
+        all_pfa_options.append(pfa_entry)
 
     taxonomy_page = {
         'layout': 'taxonomy',
         'title': 'FPI Taxonomy',
         'permalink': '/about/taxonomy',
         'categories': shared_data['categories'],
-        'gwo_options': all_gwo_options,
+        'pfa_options': all_pfa_options,
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1683,6 +1581,9 @@ def generate_home_page(cursor: sqlite3.Cursor, output_path: str, programs_data,
 
     agencies_count = len(shared_data['cfo_agencies']) + len(shared_data['other_agencies'])
 
+    cursor.execute("SELECT COUNT(*) AS ct FROM pfa")
+    pfa_count = cursor.fetchone()['ct']
+
     page = {
         'title': 'Home',
         'layout': 'home',
@@ -1697,7 +1598,7 @@ def generate_home_page(cursor: sqlite3.Cursor, output_path: str, programs_data,
         'programs_count': f"{len(programs_data):,} ",
         'spending_total': spending_total,
         'agencies_count': f"{agencies_count:,} ",
-        'outcomes_count': f"{len(shared_data['pon_options']):,} "
+        'pfa_count': f"{pfa_count:,} "
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -1741,8 +1642,7 @@ def generate_programs_table_json(output_path: str, programs_data: List[Dict[str,
             'obligations': float(current_year_obligation),
             'programType': program['program_type'],
             'objectives': program['objective'],
-            'gwo': [program['gwo']['gwo']] if program['gwo'] is not None else [],
-            'pons': [row['pon'] for row in program['pons']],
+            'pfa': [program['pfa']['pfa']] if program['pfa'] is not None else [],
             'popularName': program['popular_name'],
             'agency': {
                 'title': program['top_agency_name'] or 'Unspecified',
@@ -2029,11 +1929,9 @@ def main(ignore_blockers=False):
         subcategory_dir = os.path.join('../website', '_subcategory')
         generate_subcategory_markdown_files(cursor, subcategory_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-        gwo_dir = os.path.join('../website', '_gwo')
-        generate_gwo_markdown_files(cursor, gwo_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
+        pfa_dir = os.path.join('../website', '_pfa')
+        generate_pfa_markdown_files(cursor, pfa_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
-        pon_dir = os.path.join('../website', '_pon')
-        generate_pon_markdown_files(cursor, pon_dir, constants.LAST_COMPLETED_FISCAL_YEAR)
 
         about_path = os.path.join('../website', 'pages')
         generate_about_markdown_files(cursor, about_path, programs_data, constants.LAST_COMPLETED_FISCAL_YEAR)

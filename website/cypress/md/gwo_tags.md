@@ -10,12 +10,12 @@ smallest_program:
   permalink: /program/93.714
 total_agencies: 9
 total_expenditure: 962068198980.76
-layout: gwo
+layout: pfa
 category: Income Security and Social Services
 definition: Provide individuals or households with a temporary safety net through
   income security or financial assistance support.
 focus_area: Personal Financial Health
-gwo_id: N3
+pfa_id: N3
 title: Bridge Financial Gaps with Transitional Income Assistance
 where_used:
 - agency: Department of Health and Human Services

@@ -53,51 +53,27 @@ footer_include: _footer-program.html
           <!-- Overview Content -->
           <div class="grid-col-12 grid-row grid-gap margin-bottom-4" style="margin:0;">
             <!-- Side bar -->
-            {% assign has_pons = true %}
-            {% assign has_purpose = true %}
-            {% if page.pons == nil or page.pons.size == 0 %}
-              {% assign has_pons = false %}
-            {% endif %}
-            {% if page.gwo == nil and has_pons == false %}
-              {% assign has_purpose = false %}
+            {% assign has_purpose = false %}
+            {% if page.pfa != nil %}
+              {% assign has_purpose = true %}
             {% endif %}
 
             {% if has_purpose == true %}
               <div class="grid-col-4 border-right-2px border-top-2px border-base" style="border-right: 1px dotted #000; border-top: 1px dotted #000;" id="purpose-pane">
-                <div class="display-flex flex-justify flex-align-center margin-top-2 margin-bottom-3">
-                  <h2 class="text-bold">Purpose</h2>
-                  {% include components/_view-results.html href="#" text="View results" onclick="document.getElementById('results-tab').click();" %}
+                <div class="display-flex flex-justify flex-align-center margin-top-2">
+                  <h2 class="text-bold">Program Focus Area</h2>
                 </div>
-                {% if page.gwo != nil %}
-                <h4 class="text-base-dark margin-top-1 margin-bottom-2">Objective</h4>
-                  {% assign gwo_target_count = 0 %}
-                  {% if page.gwo and page.gwo.permalink %}
-                    {% assign gwo_id = page.gwo.permalink | split: '/' | last %}
-                    {% assign gwo_data = site.gwo | where: "permalink", page.gwo.permalink | first %}
-                    {% if gwo_data and gwo_data.where_used %}
-                      {% assign gwo_target_count = gwo_data.where_used | size %}
+                {% if page.pfa != nil %}
+                  {% assign pfa_target_count = 0 %}
+                  {% if page.pfa and page.pfa.permalink %}
+                    {% assign pfa_id = page.pfa.permalink | split: '/' | last %}
+                    {% assign pfa_data = site.pfa | where: "permalink", page.pfa.permalink | first %}
+                    {% if pfa_data and pfa_data.where_used %}
+                      {% assign pfa_target_count = pfa_data.where_used | size %}
                     {% endif %}
                   {% endif %}
-                  {% include components/_clickable-tile.html href=page.gwo.permalink title=page.gwo.gwo target_count=gwo_target_count icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
+                  {% include components/_clickable-tile.html href=page.pfa.permalink title=page.pfa.pfa target_count=pfa_target_count icon="flag" icon_style="min-width: 1rem; width: 1rem; height: 1rem;" title_margin="margin-bottom-05" padding="" %}
                 {% endif %}
-
-                {% if has_pons == true %}
-                <h4 class="text-base-dark margin-top-1 margin-bottom-1">Outcomes</h4>
-                <ul class="usa-list usa-list--unstyled ">
-                  {% for pon in page.pons %}
-                    {% assign pon_target_count = 0 %}
-                    {% if pon.permalink %}
-                      {% assign pon_data = site.pon | where: "permalink", pon.permalink | first %}
-                      {% if pon_data and pon_data.where_used %}
-                        {% assign pon_target_count = pon_data.where_used | size %}
-                      {% endif %}
-                    {% endif %}
-                    <li>
-                      {% include components/_clickable-tile.html href=pon.permalink title=pon.pon target_count=pon_target_count icon="radio_button_unchecked" %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
               </div>
             {% endif %}
             <!-- Data Display -->
@@ -185,29 +161,13 @@ footer_include: _footer-program.html
               {% assign has_results = true %}
             {% endif %}
 
-            {% if has_pons == true or has_purpose == true or has_results == true %}
-              {% if has_pons == true or has_purpose == true %}
-                <div id="program-pon-gwo">
-                  <h2 class="text-bold margin-top-0">Objectives and Outcomes</h2>
-                  {% if has_purpose == true %}
-                    <p>Objectives:</p>
-                    <ul>
-                      <li><a class="text-base-darkest" href="{{ page.gwo.permalink }}">{{ page.gwo.gwo }}</a></li>
-                    </ul>
-                  {% else %}
-                    <p>Objectives not yet available.</p>
-                  {% endif %}
-
-                  {% if has_pons == true %}
-                    <p>Outcomes:</p>
-                    <ul>
-                      {% for pon in page.pons %}
-                        <li><a class="text-base-darkest" href="{{ pon.permalink }}">{{ pon.pon }}</a></li>
-                      {% endfor %}
-                    </ul>
-                  {% else %}
-                    <p>Outcomes not yet available.</p>
-                  {% endif %}
+            {% if has_purpose == true or has_results == true %}
+              {% if has_purpose == true %}
+                <div id="program-objectives">
+                  <h2 class="text-bold margin-top-0">Program Focus Area</h2>
+                  <ul style="padding-inline-start: 20px;">
+                    <li><a class="text-base-darkest" href="{{ page.pfa.permalink }}">{{ page.pfa.pfa }}</a></li>
+                  </ul>
                 </div>
               {% endif %}
 

@@ -445,43 +445,25 @@ ASSISTANCE_TYPES = ['Formula Grants']
 BENEFICIARY_TYPES = ['Individual/Family']
 APPLICANT_TYPES = ['State Government']
 PROGRAM_CATEGORIES = ['Education - Higher Education']
-GWO = {
-    'gwo': 'Increase educational attainment',
-    'permalink': '/gwo/GWO_1_2',
+PFA = {
+    'pfa': 'Increase educational attainment',
+    'permalink': '/pfa/GWO_1_2',
 }
-ALL_GWO_ROWS = [
+ALL_PFA_ROWS = [
     {
         'id': 'GWO.1#2',
-        'title': GWO['gwo'],
+        'title': PFA['pfa'],
         'definition': 'Increase educational attainment across the population',
         'focus_area': 'Higher Education',
         'category': 'Education',
     },
     {
         'id': 'GWO.9#9',
-        'title': 'Unassigned GWO',
-        'definition': 'A government-wide objective with no program mapping',
+        'title': 'Unassigned PFA',
+        'definition': 'A program focus area with no program mapping',
     },
 ]
-ASSIGNED_GWO_ID_ROWS = [{'gwo_id': ALL_GWO_ROWS[0]['id']}]
-PONS = [
-    {'pon': 'Improve student outcomes', 'permalink': '/pon/PON_1_2'}
-]
-ALL_PON_ROWS = [
-    {
-        'id': 'PON.1#2',
-        'title': PONS[0]['pon'],
-        'definition': 'Improve student outcomes in higher education',
-        'focus_area': 'Higher Education',
-        'category': 'Education',
-    },
-    {
-        'id': 'PON.9#9',
-        'title': 'Unassigned PON',
-        'definition': 'A program outcome with no program mapping',
-    },
-]
-TOTAL_PON_COUNT = len(ALL_PON_ROWS)
+ASSIGNED_PFA_ID_ROWS = [{'pfa_id': ALL_PFA_ROWS[0]['id']}]
 SPARKLINE = [{'x': '2024', 'rate': 1.5}]
 RELATED_PROGRAMS = [
     {'id': '10.002', 'name': 'Related Program', 'permalink': '/program/10.002'}
@@ -641,8 +623,7 @@ def _program_page_data(program_id, name, program_type, **overrides):
         },
         'related_programs': [],
         'headline_amount': 0,
-        'gwo': None,
-        'pons': [],
+        'pfa': None,
     }
     data.update(overrides)
     return data
@@ -753,8 +734,7 @@ SAMPLE_PROGRAMS_DATA = [
         obligations=ASSISTANCE_OBLIGATIONS,
         outlays=ASSISTANCE_OUTLAYS,
         headline_amount=800000.0,
-        gwo=GWO,
-        pons=PONS,
+        pfa=PFA,
         improper_payment_metrics={
             'current_year_details': [
                 {'name': 'Test Payment Program', 'outlays': 10000000.0}
@@ -849,8 +829,7 @@ EXPECTED_SHARED_DATA = {
             'sub_categories': [{'title': 'Public Health'}],
         },
     ],
-    'gwo_options': [{'title': GWO['gwo']}],
-    'pon_options': [{'title': PONS[0]['pon']}],
+    'pfa_options': [{'title': PFA['pfa']}],
 }
 
 CATEGORY_PAGE_AGENCIES = [
@@ -897,7 +876,7 @@ def _amounts_from_sample(cursor, program_id, fiscal_years):
     return program.get('outlays') or []
 
 
-def _gwo_pon_related_program_rows():
+def _pfa_related_program_rows():
     return [
         {
             'id': program['id'],
@@ -1115,28 +1094,24 @@ def _shared_data_fetchall(sql, params=None):
                 'sub_title': 'Public Health',
             },
         ]
-    if 'FROM gwo' in sql:
-        return EXPECTED_SHARED_DATA['gwo_options']
-    if 'FROM pon' in sql:
-        return EXPECTED_SHARED_DATA['pon_options']
+    if 'FROM pfa' in sql:
+        return EXPECTED_SHARED_DATA['pfa_options']
     return []
 
 
 def _taxonomy_page_fetchall(sql, params=None):
-    if 'FROM program_to_gwo' in sql:
-        return ASSIGNED_GWO_ID_ROWS
-    if 'FROM gwo' in sql:
-        return ALL_GWO_ROWS
+    if 'FROM program_to_pfa' in sql:
+        return ASSIGNED_PFA_ID_ROWS
+    if 'FROM pfa' in sql:
+        return ALL_PFA_ROWS
     return []
 
 
 def _about_page_fetchone(sql, params=None):
     if 'FROM program_amounts_lookup' in sql:
         return {'total': GOVERNMENT_WIDE_SPENDING_TOTAL}
-    if 'FROM gwo' in sql:
-        return {'ct': len(ALL_GWO_ROWS)}
-    if 'FROM pon' in sql:
-        return {'ct': TOTAL_PON_COUNT}
+    if 'FROM pfa' in sql:
+        return {'ct': len(ALL_PFA_ROWS)}
     return None
 
 
@@ -1204,38 +1179,22 @@ def _subcategory_markdown_fetchall(sql, params=None):
     return []
 
 
-def _gwo_markdown_fetchall(sql, params=None):
-    assigned = ALL_GWO_ROWS[0]
-    if 'gwo.gwo_definition' in sql:
+def _pfa_markdown_fetchall(sql, params=None):
+    assigned = ALL_PFA_ROWS[0]
+    if 'pfa.pfa_definition' in sql:
         return [
             {
                 'id': assigned['id'],
                 'focus_area': assigned['focus_area'],
                 'category': assigned['category'],
-                'gwo': assigned['title'],
-                'gwo_definition': assigned['definition'],
+                'pfa': assigned['title'],
+                'pfa_definition': assigned['definition'],
             }
         ]
-    if 'WHERE gwo_id = ?' in sql:
-        return _gwo_pon_related_program_rows()
+    if 'WHERE pfa_id = ?' in sql:
+        return _pfa_related_program_rows()
     return []
 
-
-def _pon_markdown_fetchall(sql, params=None):
-    assigned = ALL_PON_ROWS[0]
-    if 'pon.pon_definition' in sql:
-        return [
-            {
-                'id': assigned['id'],
-                'focus_area': assigned['focus_area'],
-                'category': assigned['category'],
-                'pon2': assigned['title'],
-                'pon_definition': assigned['definition'],
-            }
-        ]
-    if 'pon_id = ?' in sql:
-        return _gwo_pon_related_program_rows()
-    return []
 
 
 class TestGenerateProgramData:
@@ -1288,17 +1247,12 @@ class TestGenerateSearchPage:
             load.generate_search_page(output_path, EXPECTED_SHARED_DATA, fiscal_year)
 
             page = _load_program_markdown(output_path)
-            search_filters = {
-                key: value
-                for key, value in EXPECTED_SHARED_DATA.items()
-                if key != 'pon_options'
-            }
             assert page == {
                 'title': 'Program search',
                 'layout': 'search',
                 'permalink': '/search.html',
                 'fiscal_year': fiscal_year,
-                **search_filters,
+                **EXPECTED_SHARED_DATA,
             }
 
 
@@ -1306,7 +1260,7 @@ class TestGenerateTaxonomyPage:
 
     def test_generate_taxonomy_page(self):
         """
-        Test writing the taxonomy page with permalinks only for assigned GWOs.
+        Test writing the taxonomy page with permalinks only for assigned PFAs.
         """
         with tempfile.TemporaryDirectory() as output_dir:
             output_path = os.path.join(output_dir, 'taxonomy.md')
@@ -1317,22 +1271,22 @@ class TestGenerateTaxonomyPage:
             )
 
             page = _load_program_markdown(output_path)
-            assigned_gwo = ALL_GWO_ROWS[0]
-            unassigned_gwo = ALL_GWO_ROWS[1]
+            assigned_pfa = ALL_PFA_ROWS[0]
+            unassigned_pfa = ALL_PFA_ROWS[1]
             assert page == {
                 'layout': 'taxonomy',
                 'title': 'FPI Taxonomy',
                 'permalink': '/about/taxonomy',
                 'categories': EXPECTED_SHARED_DATA['categories'],
-                'gwo_options': [
+                'pfa_options': [
                     {
-                        'title': assigned_gwo['title'],
-                        'definition': assigned_gwo['definition'],
-                        'permalink': '/gwo/GWO_1_2',
+                        'title': assigned_pfa['title'],
+                        'definition': assigned_pfa['definition'],
+                        'permalink': '/pfa/GWO_1_2',
                     },
                     {
-                        'title': unassigned_gwo['title'],
-                        'definition': unassigned_gwo['definition'],
+                        'title': unassigned_pfa['title'],
+                        'definition': unassigned_pfa['definition'],
                     },
                 ],
             }
@@ -1372,8 +1326,7 @@ class TestGenerateAboutMarkdownFiles:
                 'title': 'FPI Data, Terms & Concepts',
                 'layout': 'about-terms',
                 'permalink': '/about/terms',
-                'gwo_count': len(ALL_GWO_ROWS),
-                'pon_count': TOTAL_PON_COUNT,
+                'pfa_count': len(ALL_PFA_ROWS),
             }
 
 
@@ -1413,7 +1366,7 @@ class TestGenerateHomePage:
                 'programs_count': f"{len(SAMPLE_PROGRAMS_DATA):,} ",
                 'spending_total': GOVERNMENT_WIDE_SPENDING_TOTAL,
                 'agencies_count': f"{agencies_count:,} ",
-                'outcomes_count': f"{len(EXPECTED_SHARED_DATA['pon_options']):,} ",
+                'pfa_count': f"{len(ALL_PFA_ROWS):,} ",
             }
 
 
@@ -1751,23 +1704,23 @@ class TestSummarizeRelatedPrograms:
         assert summary['smallest_program']['expenditure_amount'] == 0.0
 
 
-class TestGenerateGwoMarkdownFiles:
+class TestGeneratePfaMarkdownFiles:
 
     @patch.object(load, 'recreate_directory')
     @patch.object(load, 'get_amounts', side_effect=_amounts_from_sample)
-    def test_generate_gwo_markdown_files(
+    def test_generate_pfa_markdown_files(
         self, mock_amounts, mock_recreate_directory
     ):
         """
-        Test writing GWO markdown for assigned objectives, including Unspecified agencies.
+        Test writing PFA markdown for assigned focus areas, including Unspecified agencies.
         """
         fiscal_year = constants.LAST_COMPLETED_FISCAL_YEAR
-        assigned = ALL_GWO_ROWS[0]
+        assigned = ALL_PFA_ROWS[0]
         related_ids = ['10.001', 'C.1']
 
         with tempfile.TemporaryDirectory() as output_dir:
-            load.generate_gwo_markdown_files(
-                _query_aware_cursor(_gwo_markdown_fetchall),
+            load.generate_pfa_markdown_files(
+                _query_aware_cursor(_pfa_markdown_fetchall),
                 output_dir,
                 fiscal_year,
             )
@@ -1780,9 +1733,9 @@ class TestGenerateGwoMarkdownFiles:
             )
             where_used = _where_used_from_sample(related_ids, fiscal_year)
             assert page == {
-                'permalink': GWO['permalink'],
+                'permalink': PFA['permalink'],
                 'title': assigned['title'],
-                'gwo_id': assigned['id'],
+                'pfa_id': assigned['id'],
                 'focus_area': assigned['focus_area'],
                 'category': assigned['category'],
                 'definition': assigned['definition'],
@@ -1801,56 +1754,6 @@ class TestGenerateGwoMarkdownFiles:
                 },
             }
 
-
-class TestGeneratePonMarkdownFiles:
-
-    @patch.object(load, 'recreate_directory')
-    @patch.object(load, 'get_amounts', side_effect=_amounts_from_sample)
-    def test_generate_pon_markdown_files(
-        self, mock_amounts, mock_recreate_directory
-    ):
-        """
-        Test writing PON markdown for assigned outcomes, including Unspecified agencies.
-        """
-        fiscal_year = constants.LAST_COMPLETED_FISCAL_YEAR
-        assigned = ALL_PON_ROWS[0]
-        related_ids = ['10.001', 'C.1']
-
-        with tempfile.TemporaryDirectory() as output_dir:
-            load.generate_pon_markdown_files(
-                _query_aware_cursor(_pon_markdown_fetchall),
-                output_dir,
-                fiscal_year,
-            )
-
-            mock_recreate_directory.assert_called_once_with(output_dir)
-            assert sorted(os.listdir(output_dir)) == ['PON_1_2.md']
-
-            page = _load_program_markdown(
-                os.path.join(output_dir, 'PON_1_2.md')
-            )
-            where_used = _where_used_from_sample(related_ids, fiscal_year)
-            assert page == {
-                'permalink': PONS[0]['permalink'],
-                'title': assigned['title'],
-                'gwo_id': assigned['id'],
-                'focus_area': assigned['focus_area'],
-                'category': assigned['category'],
-                'definition': assigned['definition'],
-                'where_used': where_used,
-                'total_expenditure': 2900000.0,
-                'total_agencies': 2,
-                'largest_program': {
-                    'name': 'Contracts Program',
-                    'permalink': '/program/C.1',
-                    'expenditure_amount': 2100000.0,
-                },
-                'smallest_program': {
-                    'name': 'Assistance Program',
-                    'permalink': '/program/10.001',
-                    'expenditure_amount': 800000.0,
-                },
-            }
 
 
 class TestGenerateProgramMarkdownFiles:
@@ -1892,8 +1795,7 @@ class TestGenerateProgramMarkdownFiles:
             assert json.loads(assistance['improper_payments_sparkline']) == SPARKLINE
             assert assistance['improper_payments_related_programs'] == RELATED_PROGRAMS
             assert assistance['headline_amount'] == assistance_src['headline_amount']
-            assert assistance['gwo'] == GWO
-            assert assistance['pons'] == PONS
+            assert assistance['pfa'] == PFA
 
             contracts = _load_program_markdown(os.path.join(output_dir, 'C.1.md'))
             assert contracts['program_type'] == 'contracts'
@@ -2027,10 +1929,9 @@ class TestGenerateProgramsTableJson:
                 assert row['obligations'] == program['headline_amount']
                 assert row['programType'] == program['program_type']
                 assert row['objectives'] == program['objective']
-                assert row['gwo'] == (
-                    [program['gwo']['gwo']] if program['gwo'] is not None else []
+                assert row['pfa'] == (
+                    [program['pfa']['pfa']] if program['pfa'] is not None else []
                 )
-                assert row['pons'] == [pon['pon'] for pon in program['pons']]
                 assert row['popularName'] == program['popular_name']
                 assert row['assistanceTypes'] == program['assistance_types']
                 assert row['applicantTypes'] == program['applicant_types']

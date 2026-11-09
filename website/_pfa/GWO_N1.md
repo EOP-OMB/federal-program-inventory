@@ -1,0 +1,50 @@
+---
+category: Income Security and Social Services
+definition: Programs and activities providing burial benefits, including burial assistance
+  and memorial services, to eligible veterans and their families.
+focus_area: Burial Benefits
+largest_program:
+  expenditure_amount: 837329797.0
+  name: Burial Expenses Allowance for Veterans
+  permalink: /program/64.101
+permalink: /pfa/GWO_N1
+pfa_id: GWO.N1
+smallest_program:
+  expenditure_amount: 0.0
+  name: National Cemeteries
+  permalink: /program/64.201
+title: Veterans Burial Benefits
+total_agencies: 1
+total_expenditure: 913515256.25
+where_used:
+- agency: Department of Veterans Affairs
+  expenditure_amount: 837329797.0
+  name: Burial Expenses Allowance for Veterans
+  permalink: /program/64.101
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: National Cemeteries
+  permalink: /program/64.201
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 0.0
+  name: Procurement of Headstones and Markers and/or Presidential Memorial Certificates
+  permalink: /program/64.202
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 385226.0
+  name: VA Casket or Urn Allowance Program
+  permalink: /program/64.205
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 486884.0
+  name: VA Outer Burial Receptacle Allowance Program
+  permalink: /program/64.206
+  program_type: assistance_listing
+- agency: Department of Veterans Affairs
+  expenditure_amount: 75313349.25
+  name: Veterans Cemetery Grants Program
+  permalink: /program/64.203
+  program_type: assistance_listing
+---

@@ -22,7 +22,7 @@ describe('Insight Section', () => {
   it('shows copy for many programs', () => {
     cy.visit('test/insight_many.html');
     cy.get('h3').contains('Insight').should('be.visible');
-    cy.contains('3 programs are working toward this objective').should('be.visible');
+    cy.contains('3 programs are working to have an impact in this focus area').should('be.visible');
     cy.contains('spending $456 in total as of FY 2024').should('be.visible');
     cy.contains('a.usa-link', 'Large Program')
       .should('be.visible')
@@ -37,7 +37,7 @@ describe('Insight Section', () => {
   it('shows copy for many programs totaling 0', () => {
     cy.visit('test/insight_many_zero.html');
     cy.get('h3').contains('Insight').should('be.visible');
-    cy.contains('3 programs are working toward this objective').should('be.visible');
+    cy.contains('3 programs are working to have an impact in this focus area').should('be.visible');
     cy.contains('spending $0 in total as of FY 2024').should('be.visible');
     cy.contains('a', 'Large Program').should('not.exist');
     cy.contains('a', 'Small Program').should('not.exist');

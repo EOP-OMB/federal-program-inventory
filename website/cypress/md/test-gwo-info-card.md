@@ -9,7 +9,7 @@ smallest_program:
   permalink: /program/test-3
 total_agencies: 3
 total_expenditure: 10000000.0
-layout: gwo
+layout: pfa
 title: Test GWO Info Card
 category: A Agricultural
 focus_area: Agricultural Resources and Services

@@ -9,13 +9,10 @@ authorizations:
   url: https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures
 beneficiary_types: []
 categories:
-- Cultural Affairs - Cultural Institutions
+- Arts and Humanities - Preservation
 cfda: TC.045
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: 'Preserve Culturally or Historically Significant Sites or Artifacts '
-  permalink: /gwo/GWO_E6
 headline_amount: 770000000.0
 improper_payments:
 - agency: TREASURY
@@ -45,7 +42,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":580000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":710000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":750000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":770000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":820000000.0}]'
 outlays: null
 permalink: /program/TC.045.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_E6
+  pfa: Preservation of Historic Sites and Artifacts
 popular_name: ''
 program_type: tax_expenditure
 results: []

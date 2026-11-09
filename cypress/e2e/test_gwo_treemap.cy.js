@@ -3,7 +3,7 @@ describe('GWO treemap', () => {
 
   beforeEach(() => {
     cy.visit(testUrl);
-    cy.contains('Government-wide Objective').should('be.visible');
+    cy.contains('Program Focus Area').should('be.visible');
     cy.get('#objectiveChart svg > g > rect', { timeout: 10000 }).should('have.length', 3);
   });
 

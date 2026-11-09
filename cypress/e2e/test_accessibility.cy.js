@@ -51,8 +51,6 @@ describe('Accessibility checks', () => {
     '/test/list_no_items.html',
     '/test/list_one_item.html',
     '/test/list_program_type.html',
-    '/test/pon_tags.html',
-    '/test/pon_treemap.html',
     '/test/program_overview_chart_base.html',
     '/test/program_overview_chart_coincide.html',
     '/test/program_overview_chart_no_data.html',
@@ -74,7 +72,6 @@ describe('Accessibility checks', () => {
     '/test/program_spending_chart_unreported_years.html',
     '/test/program_test_4_tags.html',
     '/test/test-gwo-info-card.html',
-    '/test/test-pon-info-card.html',
     '/test/taxonomy_filter_scenarios.html',
     '/test/program_page_populated.html',
     '/test/program_page_empty.html',
@@ -131,7 +128,7 @@ describe('Accessibility checks', () => {
     expandSearchFilter('categories-section')
     expandSearchFilter('program-type-section')
     expandSearchFilter('eligible-applicants-section')
-    expandSearchFilter('gwo-section')
+    expandSearchFilter('pfa-section')
 
     cy.checkA11yPage(null, a11yOptions)
   })
@@ -163,7 +160,7 @@ describe('Accessibility checks', () => {
     cy.waitForPageLoad()
 
     cy.get('#taxonomy-filter-panels', { timeout: 10000 }).should('be.visible')
-    cy.get('#taxonomy-gwo-table-body tr', { timeout: 10000 }).should(
+    cy.get('#taxonomy-pfa-table-body tr', { timeout: 10000 }).should(
       'have.length.greaterThan',
       0
     )
@@ -174,7 +171,7 @@ describe('Accessibility checks', () => {
     cy.get('button.taxonomy-children-toggle').first().should('be.visible').click()
     cy.get('.taxonomy-filter-children:not([hidden])').should('be.visible')
 
-    cy.get('#taxonomy-gwo-table th[data-column="title"]').click()
+    cy.get('#taxonomy-pfa-table th[data-column="title"]').click()
     cy.get('#taxonomy-pagination .usa-pagination__next-page').click()
     cy.get('#taxonomy-results-start').should('not.have.text', '1')
 

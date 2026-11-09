@@ -13,9 +13,6 @@ categories:
 cfda: TC.135
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Provide Healthcare Coverage
-  permalink: /gwo/GWO_L15
 headline_amount: 104880000000.0
 improper_payments:
 - agency: TREASURY
@@ -55,7 +52,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":61580000000.0,"forgone_revenue":14730000000.0},{"x":"2023","outlays":66670000000.0,"forgone_revenue":15047000000.0},{"x":"2024","outlays":92793000000.0,"forgone_revenue":13670000000.0},{"x":"2025","outlays":92190000000.0,"forgone_revenue":12690000000.0},{"x":"2026","outlays":78640000000.0,"forgone_revenue":11550000000.0}]'
 outlays: null
 permalink: /program/TC.135.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_L15
+  pfa: Healthcare Coverage
 popular_name: ''
 program_type: tax_expenditure
 results: []
