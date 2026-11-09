@@ -21,8 +21,8 @@ categories:
 cfda: '96.002'
 fiscal_year: '2024'
 grants_url: https://grants.gov/search-grants?cfda=96.002
-gwo:
-  gwo: Bridge Financial Gaps with Transitional Income Assistance
+pfa:
+  pfa: Bridge Financial Gaps with Transitional Income Assistance
   permalink: /gwo/N3
 improper_payments: 
 - name: Old-Age, Survivors, and Disability Insurance (OASDI)
@@ -44,9 +44,6 @@ objective: The Social Security Retirement benefit is a monthly payment that repl
 obligations: '[{"x":"2023","sam_estimate":0.0,"sam_actual":1088924000000.0,"usa_spending_actual":1087609426151.0},{"x":"2024","sam_estimate":0.0,"sam_actual":1182463000000.0,"usa_spending_actual":1184564536138.0},{"x":"2025","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":745323247313.0}]'
 other_program_spending: null
 outlays: '[{"x":"2023","outlay":1087609426151.0,"obligation":1087609426151.0},{"x":"2024","outlay":1184564536138.0,"obligation":1184564536138.0},{"x":"2025","outlay":745323247313.0,"obligation":745323247313.0}]'
-pons:
-- permalink: /pon/861
-  pon: Increase Current Personal Financial Stability
 popular_name: Retirement (RIB)
 program_type: assistance_listing
 results: []

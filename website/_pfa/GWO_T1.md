@@ -1,0 +1,60 @@
+---
+category: Transportation
+definition: Programs and activities supporting the infrastructure that transports,
+  stores, or delivers goods from suppliers to markets.
+focus_area: Multi–modal Transportation
+largest_program:
+  expenditure_amount: 261443094.6
+  name: Port Infrastructure Development Program
+  permalink: /program/20.823
+permalink: /pfa/GWO_T1
+pfa_id: GWO.T1
+smallest_program:
+  expenditure_amount: 0.0
+  name: National Highway Freight Program (NHFP)
+  permalink: /program/20.278
+title: Commercial Distribution Infrastructure
+total_agencies: 2
+total_expenditure: 565866637.53
+where_used:
+- agency: Department of the Treasury
+  expenditure_amount: 60000000.0
+  name: Deferral of tax on shipping companies
+  permalink: /program/TC.089
+  program_type: tax_expenditure
+- agency: Department of Transportation
+  expenditure_amount: 0.0
+  name: National Highway Freight Program (NHFP)
+  permalink: /program/20.278
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 261443094.6
+  name: Port Infrastructure Development Program
+  permalink: /program/20.823
+  program_type: assistance_listing
+- agency: Department of the Treasury
+  expenditure_amount: 60000000.0
+  name: Tax credit for certain expenditures for maintaining railroad tracks
+  permalink: /program/TC.092
+  program_type: tax_expenditure
+- agency: Department of the Treasury
+  expenditure_amount: 130000000.0
+  name: Tonnage tax
+  permalink: /program/TC.088
+  program_type: tax_expenditure
+- agency: Department of Transportation
+  expenditure_amount: 38000000.0
+  name: Transportation Demonstration Program
+  permalink: /program/20.936
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 1743000.0
+  name: Transportation Planning, Research and Education
+  permalink: /program/20.931
+  program_type: assistance_listing
+- agency: Department of Transportation
+  expenditure_amount: 14680542.93
+  name: United States Marine Highway Grants
+  permalink: /program/20.816
+  program_type: assistance_listing
+---

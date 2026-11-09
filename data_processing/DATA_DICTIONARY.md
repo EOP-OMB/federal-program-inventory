@@ -9,7 +9,7 @@ This document describes the database schema and data structures used in the OMB 
 The transformation process uses SQLite databases to store:
 - Extracted program data from SAM.gov
 - USAspending.gov financial data
-- Taxonomy classifications (GWO, PON, Categories, Focus Areas)
+- Taxonomy classifications (PFA, Categories, Focus Areas)
 - Additional program data from supplementary sources
 
 ## Tables
@@ -191,7 +191,7 @@ Stores taxonomy category classifications (e.g., "Business and Commerce", "Health
 | id | TEXT | PRIMARY KEY, NOT NULL | Unique identifier for the taxonomy category |
 | category | TEXT | NOT NULL, UNIQUE | Category name (dashes replaced with en-dashes) |
 
-**Source**: `Taxonomy_GWO_crosswalk.csv` and `Taxonomy_PON_crosswalk.csv`  
+**Source**: `Taxonomy_PFA_crosswalk.csv`  
 **Notes**:
 - Dashes are replaced with en-dashes (U+2013) for consistency
 - Used as parent for focus areas
@@ -208,83 +208,46 @@ Stores taxonomy focus area classifications (subcategories within taxonomy catego
 | focus_area | TEXT | NOT NULL, UNIQUE | Focus area name (dashes replaced with en-dashes) |
 | category_id | TEXT | FOREIGN KEY REFERENCES taxonomy_category(id), NOT NULL | Reference to parent taxonomy category |
 
-**Source**: `Taxonomy_GWO_crosswalk.csv` and `Taxonomy_PON_crosswalk.csv`  
+**Source**: `Taxonomy_PFA_crosswalk.csv`  
 **Notes**:
 - Dashes are replaced with en-dashes for consistency
 - Links to taxonomy_category as parent
 
 ---
 
-### gwo
+### pfa
 
-Stores Government-Wide Outcomes (GWO) definitions and classifications.
-
-| Column Name | Data Type | Constraints | Description |
-|------------|-----------|-------------|-------------|
-| id | TEXT | PRIMARY KEY, NOT NULL | GWO identifier |
-| gwo | TEXT | NOT NULL | GWO name/title |
-| gwo_definition | TEXT | NOT NULL | Full definition of the GWO |
-| focus_area_id | TEXT | FOREIGN KEY REFERENCES taxonomy_focus_area(id), NOT NULL | Reference to the focus area this GWO belongs to |
-
-**Source**: `Taxonomy_GWO_crosswalk.csv`  
-**Notes**:
-- Each GWO is associated with a focus area
-- Used for program classification via program_to_gwo table
-
----
-
-### pon
-
-Stores Program Outcome Numbers (PON) definitions and classifications.
+Stores Program Focus Areas (PFA) definitions and classifications.
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
-| id | TEXT | PRIMARY KEY, NOT NULL | PON identifier |
-| pon2 | TEXT | NOT NULL | PON name/title |
-| pon_definition | TEXT | NOT NULL | Full definition of the PON |
-| focus_area_id | TEXT | FOREIGN KEY REFERENCES taxonomy_focus_area(id), NOT NULL | Reference to the focus area this PON belongs to |
+| id | TEXT | PRIMARY KEY, NOT NULL | PFA identifier |
+| pfa | TEXT | NOT NULL | PFA name/title |
+| pfa_definition | TEXT | NOT NULL | Full definition of the PFA |
+| focus_area_id | TEXT | FOREIGN KEY REFERENCES taxonomy_focus_area(id), NOT NULL | Reference to the focus area this PFA belongs to |
 
-**Source**: `Taxonomy_PON_crosswalk.csv`  
+**Source**: `Taxonomy_PFA_crosswalk.csv`  
 **Notes**:
-- Each PON is associated with a focus area
-- Used for program classification via program_to_pon table
+- Each PFA is associated with a focus area
+- Used for program classification via program_to_pfa table
 
 ---
 
-### program_to_gwo
+### program_to_pfa
 
-Junction table linking programs to Government-Wide Outcomes (GWO).
+Junction table linking programs to Program Focus Areas (PFA).
 
 | Column Name | Data Type | Constraints | Description |
 |------------|-----------|-------------|-------------|
 | program_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
-| gwo_id | TEXT | FOREIGN KEY REFERENCES gwo(id), NOT NULL | Reference to the GWO |
+| pfa_id | TEXT | FOREIGN KEY REFERENCES pfa(id), NOT NULL | Reference to the PFA |
 
-**Source**: `FPI_GWO_assignment.csv`  
+**Source**: `FPI_PFA_assignment.csv`  
 **Notes**:
-- Maps programs to their assigned GWO
-- Primary key is program_id; each program can have at most one GWO
+- Maps programs to their assigned PFA
+- Primary key is program_id; each program can have at most one PFA
 - Uses `ON CONFLICT DO NOTHING` to skip a second assignment for the same program
-- Foreign keys reject assignments to a missing program or GWO
-
----
-
-### program_to_pon
-
-Junction table linking programs to Program Outcome Numbers (PON).
-
-| Column Name | Data Type | Constraints | Description |
-|------------|-----------|-------------|-------------|
-| program_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES program(id), NOT NULL | Reference to the program (CFDA number) |
-| pon_id | TEXT | PRIMARY KEY, FOREIGN KEY REFERENCES pon(id), NOT NULL | Reference to the PON |
-
-**Source**: `FPI_PON_assignment.csv`  
-**Notes**:
-- Composite primary key (program_id, pon_id)
-- Maps programs to their assigned PONs
-- Multiple PONs can be assigned to a single program
-- Uses `ON CONFLICT DO NOTHING` to prevent duplicate pairs
-- Foreign keys reject assignments to a missing program or PON
+- Foreign keys reject assignments to a missing program or PFA
 
 ---
 
@@ -434,7 +397,7 @@ A view that provides a lookup of programs to their taxonomy classifications (cat
 | taxonomy_category_id | TEXT | Taxonomy category identifier |
 
 **Definition**: Union of two queries:
-1. Programs linked via GWO assignments: `program → program_to_gwo → gwo → taxonomy_focus_area → taxonomy_category`
+1. Programs linked via PFA assignments: `program → program_to_pfa → pfa → taxonomy_focus_area → taxonomy_category`
 2. Programs linked via other_program_spending: `other_program_spending → taxonomy_focus_area → taxonomy_category`
 
 **Notes**:
@@ -495,19 +458,12 @@ program_to_category
 taxonomy_focus_area
   └── category_id → taxonomy_category(id)
 
-gwo
+pfa
   └── focus_area_id → taxonomy_focus_area(id)
 
-pon
-  └── focus_area_id → taxonomy_focus_area(id)
-
-program_to_gwo
+program_to_pfa
   ├── program_id → program(id)
-  └── gwo_id → gwo(id)
-
-program_to_pon
-  ├── program_id → program(id)
-  └── pon_id → pon(id)
+  └── pfa_id → pfa(id)
 
 usaspending_assistance_obligation_aggregation
   └── cfda_number → program(id)
@@ -534,10 +490,8 @@ improper_payment_mapping
 | SAM.gov | `usaspending-program-search-hashes.json` | Used to construct `program.usaspending_awards_url` |
 | USAspending.gov | CSV files in `ASSISTANCE_EXTRACTED_FILES_DIRECTORY` and `ASSISTANCE_DELTA_FILES_DIRECTORY` | `usaspending_assistance` (temporary) |
 | USAspending.gov | CSV files in `CONTRACT_EXTRACTED_FILES_DIRECTORY` and `CONTRACT_DELTA_FILES_DIRECTORY` | `usaspending_contract` (temporary) |
-| Taxonomy Data | `Taxonomy_GWO_crosswalk.csv` | `taxonomy_category`, `taxonomy_focus_area`, `gwo` |
-| Taxonomy Data | `Taxonomy_PON_crosswalk.csv` | `taxonomy_category`, `taxonomy_focus_area`, `pon` |
-| Program Assignments | `FPI_GWO_assignment.csv` | `program_to_gwo` |
-| Program Assignments | `FPI_PON_assignment.csv` | `program_to_pon` |
+| Taxonomy Data | `Taxonomy_PFA_crosswalk.csv` | `taxonomy_category`, `taxonomy_focus_area`, `pfa` |
+| Program Assignments | `FPI_PFA_assignment.csv` | `program_to_pfa` |
 | Additional Programs | `additional-programs.csv` | `program`, `other_program_spending`, `taxonomy_category`, `taxonomy_focus_area` |
 | Improper Payments | `improper-payment-program-mapping.csv` | `improper_payment_mapping` |
 
@@ -568,7 +522,7 @@ improper_payment_mapping
 - USAspending.gov outlays: Aggregated by program, award key, and fiscal year
 
 ### Taxonomy Classification
-- Programs can be classified via GWO assignments or via focus area in other_program_spending
+- Programs can be classified via PFA assignments or via focus area in other_program_spending
 - The `program_taxonomy_lookup` view unifies both classification methods
 
 ---

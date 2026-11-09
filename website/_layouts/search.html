@@ -246,8 +246,8 @@ footer_include: _footer-search.html
 
               <button type="button"
                 class="usa-sidenav__button text-no-underline width-full padding-y-1 padding-left-2 padding-right-1 display-flex flex-align-center hover:bg-transparent active:bg-transparent border-0 bg-transparent"
-                aria-expanded="false" aria-controls="gwo-section"
-                data-content-id="gwo-section">
+                aria-expanded="false" aria-controls="pfa-section"
+                data-content-id="pfa-section">
                 <span class="font-heading-sm text-ink line-height-body-3">Government-wide objectives</span>
                 <div class="margin-left-auto width-3 display-flex flex-justify-end flex-align-center">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" width="24" height="24">
@@ -257,16 +257,16 @@ footer_include: _footer-search.html
               </button>
 
               <!-- Government-wide Objectives Content -->
-              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="gwo-section" hidden>
+              <div class="usa-sidenav__submenu margin-top-1 padding-bottom-105" id="pfa-section" hidden>
                 <div class="padding-x-2 padding-bottom-5">
-                  <label class="usa-sr-only" for="gwo-filter-search">Search objectives</label>
+                  <label class="usa-sr-only" for="pfa-filter-search">Search objectives</label>
                   <div class="position-relative">
-                    <input class="usa-input border-right-1px" id="gwo-filter-search" type="search" placeholder="Search objectives"
+                    <input class="usa-input border-right-1px" id="pfa-filter-search" type="search" placeholder="Search objectives"
                       autocomplete="off" />
                   </div>
                 </div>
-                <fieldset class="usa-fieldset margin-0" id="gwo-fieldset">
-                  {% for a in page.gwo_options %}
+                <fieldset class="usa-fieldset margin-0" id="pfa-fieldset">
+                  {% for a in page.pfa_options %}
                   <div class="display-flex flex-align-start">
                     <div class="padding-left-2">
                       <span class="toggle expandable-button" aria-hidden="true">
@@ -278,10 +278,10 @@ footer_include: _footer-search.html
                     </div>
                     <div class="usa-checkbox flex-fill">
                       <input class="usa-checkbox__input parent-checkbox width-2 height-2"
-                        id="check-gwo-{{ forloop.index }}" type="checkbox" name="gwos"
-                        data-filter-type="gwo" data-gwo-title="{{ a.title }}" />
+                        id="check-pfa-{{ forloop.index }}" type="checkbox" name="pfas"
+                        data-filter-type="pfa" data-pfa-title="{{ a.title }}" />
                       <label class="usa-checkbox__label font-heading-2xs line-height-body-3 padding-top-0"
-                        for="check-gwo-{{ forloop.index }}">
+                        for="check-pfa-{{ forloop.index }}">
                         {{ a.title }}
                       </label>
                     </div>

@@ -40,8 +40,8 @@ If the request is not one of these two types, ask for clarification and do nothi
 Keep these files in sync with the tests they describe:
 
 - `tests/TESTS.md`: data pipeline tests run in the `data-pipeline-tests` container. Organize by test file (`test_constants.py`, `test_extract.py`, `test_transform.py`, `test_load.py`, `test_e2e.py`).
-- `cypress/TESTS.md`: e2e tests run in the `cypress` container. Organize by page (Home, Search, Program, GWO, PON, Category and subcategory, About, Shared and accessibility).
-- `website/TESTS.md`: manual tests for non-technical readers who only have the live website and source sites such as SAM.gov and USAspending.gov. Organize by page (`/`, `/search`, `/category`, `/category/<category>`, `/category/<category>/<subcategory>`, `/about/fpi`, `/about/terms`, `/about/taxonomy`, `/program/<program>`, `/gwo/<gwo>`, `/pon/<pon>`), plus a Shared section.
+- `cypress/TESTS.md`: e2e tests run in the `cypress` container. Organize by page (Home, Search, Program, PFA, Category and subcategory, About, Shared and accessibility).
+- `website/TESTS.md`: manual tests for non-technical readers who only have the live website and source sites such as SAM.gov and USAspending.gov. Organize by page (`/`, `/search`, `/category`, `/category/<category>`, `/category/<category>/<subcategory>`, `/about/fpi`, `/about/terms`, `/about/taxonomy`, `/program/<program>`, `/pfa/<pfa>`), plus a Shared section.
 
 Rules for `tests/TESTS.md` and `cypress/TESTS.md`:
 

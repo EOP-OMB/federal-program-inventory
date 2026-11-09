@@ -1,0 +1,43 @@
+---
+category: Law, Justice, and Legal Services
+definition: Programs and activities supporting the ability to detect, respond to,
+  or recover from cyber or digital attacks of critical systems or data.
+focus_area: Cybersecurity
+largest_program:
+  expenditure_amount: 0.0
+  name: Cybersecurity Education and Training
+  permalink: /program/97.127
+permalink: /pfa/GWO_P11
+pfa_id: GWO.P11
+smallest_program:
+  expenditure_amount: 0.0
+  name: Cybersecurity Education and Training
+  permalink: /program/97.127
+title: Cyber Incident Response
+total_agencies: 2
+total_expenditure: 0.0
+where_used:
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: Cybersecurity Education and Training
+  permalink: /program/97.127
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Health Care and Public Health (HPH) Sector Information Sharing and Analysis
+    Organization (ISAO)
+  permalink: /program/93.893
+  program_type: assistance_listing
+- agency: Department of Health and Human Services
+  expenditure_amount: 0.0
+  name: Planning Grant for Healthcare and Public Health Sector Cybersecurity Information
+    Sharing
+  permalink: /program/93.457
+  program_type: assistance_listing
+- agency: Department of Homeland Security
+  expenditure_amount: 0.0
+  name: State, Local, Tribal and Territorial Security Operations Center/Information
+    Sharing and Analysis Center
+  permalink: /program/97.123
+  program_type: assistance_listing
+---

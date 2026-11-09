@@ -41,8 +41,7 @@ STATIC_PATHS = [
     "/about/fpi",
     "/about/terms",
     "/program/96.002",
-    "/gwo/GWO_N3",
-    "/pon/PON_861",
+    "/pfa/GWO_N3",
 ]
 
 CSV_PATHS = [
@@ -61,7 +60,7 @@ API_BODIES = [
         "categorySubcategory": [],
         "assistanceTypes": [],
         "applicantTypes": [],
-        "gwo": [],
+        "pfa": [],
     },
     {
         "query": "health",
@@ -73,7 +72,7 @@ API_BODIES = [
         "categorySubcategory": [],
         "assistanceTypes": [],
         "applicantTypes": [],
-        "gwo": [],
+        "pfa": [],
     },
     {
         "query": "96.002",
@@ -85,7 +84,7 @@ API_BODIES = [
         "categorySubcategory": [],
         "assistanceTypes": [],
         "applicantTypes": [],
-        "gwo": [],
+        "pfa": [],
     },
 ]
 

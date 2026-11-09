@@ -85,7 +85,7 @@
                         {% assign ip_rate = 0 %}
                         {% assign ip_amount = 0 %}
                         {% if ip_row.outlays > 0 %}
-                            {% assign ip_rate = 100 | times: ip_row.improper_payments | divided_by: ip_row.outlays | round: 1 %}
+                            {% assign ip_rate = 100 | times: ip_row.improper_payments | divided_by: ip_row.outlays |  improper_payment_rate: ip_row.improper_payments | escape %}
                         {% endif %}
                         {% if ip_row.improper_payments != nil %}
                             {% assign ip_amount = ip_row.improper_payments %}

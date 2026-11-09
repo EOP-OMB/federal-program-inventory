@@ -8,9 +8,7 @@ Writes finding files to an output directory (the current directory by default):
 - amounts_with_scientific_notation.csv
 - files_with_incorrect_headers.csv
 - files_with_incorrect_column_count.csv
-- invalid_gwos.csv
-- invalid_pons.csv
-- excessive_pon_assignments.csv
+- invalid_pfas.csv
 - invalid_alns.csv
 - missing_inflation_year.csv
 - missing_additional_program_prefixes.csv
@@ -18,7 +16,7 @@ Writes finding files to an output directory (the current directory by default):
 - invalid_agencies.csv
 - invalid_program_types.csv
 
-Truncation, scientific-notation, file-structure, invalid GWO, PON, agency, or program type, missing inflation-year, duplicate-id, and excessive PON assignment findings are also appended to blockers.txt.
+Truncation, scientific-notation, file-structure, invalid PFA, agency, or program type, missing inflation-year, and duplicate-id findings are also appended to blockers.txt.
 An unexpected error is appended to blockers.txt and does not stop the caller.
 """
 
@@ -31,10 +29,8 @@ from pathlib import Path
 import constants
 
 EXTRACTED_DIR = Path(__file__).resolve().parent / "extracted"
-GWO_ASSIGNMENT_FILENAME = "FPI_GWO_assignment.csv"
-PON_ASSIGNMENT_FILENAME = "FPI_PON_assignment.csv"
-GWO_CROSSWALK_FILENAME = "Taxonomy_GWO_crosswalk.csv"
-PON_CROSSWALK_FILENAME = "Taxonomy_PON_crosswalk.csv"
+PFA_ASSIGNMENT_FILENAME = "FPI_PFA_assignment.csv"
+PFA_CROSSWALK_FILENAME = "Taxonomy_PFA_crosswalk.csv"
 ASSISTANCE_LISTINGS_FILENAME = "assistance-listings.json"
 ADDITIONAL_PROGRAMS_FILENAME = "additional-programs.csv"
 ACQUISITIONS_FILENAME = "acquisitions_and_services.csv"
@@ -45,19 +41,16 @@ IP_DATA_FILENAME = "improper-payment-program-mapping.csv"
 TRUNCATED_ALN_FILENAMES = (
     "acquisitions_and_services.csv",
     "additional-programs.csv",
-    GWO_ASSIGNMENT_FILENAME,
-    PON_ASSIGNMENT_FILENAME,
+    PFA_ASSIGNMENT_FILENAME,
 )
 # Headers that store an Assistance Listing Number or other FPI program id.
-ALN_COLUMN_NAMES = {"al_#", "Program ID", "program_id", "`"}
+ALN_COLUMN_NAMES = {"al_#", "Program ID", "Program_ID", "program_id", "`"}
 OUTPUT_FILENAMES = (
     "alns_possibly_truncated.csv",
     "amounts_with_scientific_notation.csv",
     "files_with_incorrect_headers.csv",
     "files_with_incorrect_column_count.csv",
-    "invalid_gwos.csv",
-    "invalid_pons.csv",
-    "excessive_pon_assignments.csv",
+    "invalid_pfas.csv",
     "invalid_alns.csv",
     "missing_inflation_year.csv",
     "missing_additional_program_prefixes.csv",
@@ -68,13 +61,11 @@ OUTPUT_FILENAMES = (
 )
 VALID_PROGRAM_TYPES = {"Contracts"}
 REQUIRED_ADDITIONAL_PROGRAM_PREFIXES = ("IN.", "TC.")
-MAX_PON_ASSIGNMENTS = 3
 # Columns that form a unique id in each extracted file.
 DUPLICATE_ID_COLUMNS = (
     (ADDITIONAL_PROGRAMS_FILENAME, ("`",)),
     (ACQUISITIONS_FILENAME, ("Program ID", "Fiscal Year")),
-    (GWO_ASSIGNMENT_FILENAME, ("al_#",)),
-    (PON_ASSIGNMENT_FILENAME, ("al_#", "PON ID")),
+    (PFA_ASSIGNMENT_FILENAME, ("Program_ID",)),
     (IP_DATA_FILENAME, (
         "program_id",
         "improper_payment_program_name",
@@ -82,36 +73,34 @@ DUPLICATE_ID_COLUMNS = (
         "fiscal_year",
     )),
     (INFLATION_FILENAME, ("Year",)),
-    (GWO_CROSSWALK_FILENAME, ("GWO ID",)),
-    (PON_CROSSWALK_FILENAME, ("PON ID",)),
 )
+# Taxonomy_PFA_crosswalk.csv is omitted: PFA code repeats when several rows
+# share one focus area, and the loader keeps the first row.
 # Baseline column headers for each extracted CSV, in order.
 EXPECTED_CSV_HEADERS = {
-    "FPI_GWO_assignment.csv": (
-        "al_#",
-        "GWO ID",
-    ),
-    "FPI_PON_assignment.csv": (
-        "al_#",
-        "PON ID",
-    ),
-    "Taxonomy_GWO_crosswalk.csv": (
-        "Category Code",
+    "FPI_PFA_assignment.csv": (
+        "Program_ID",
+        "Title",
+        "Agency",
+        "Sub-agency",
+        "Program_Description",
+        "Abbrev.",
+        "OMB RMO",
+        "PFA ID",
         "Category",
-        "FA Code",
-        "Focus Area",
-        "GWO ID",
-        "GWO",
-        "GWO Definition",
+        "Sub-Category",
+        "Program Focus Area",
+        "Program FA Definition",
     ),
-    "Taxonomy_PON_crosswalk.csv": (
-        "PON ID",
-        "Category Code",
+    "Taxonomy_PFA_crosswalk.csv": (
         "Category",
-        "FA Code",
-        "Focus Area",
-        "PON2",
-        "PON Definition",
+        "Category Code",
+        "Sub-Category",
+        "Sub-Category Code",
+        "Program Focus Area",
+        "Program Focus Area Definition",
+        "GWO ID",
+        "PFA code",
     ),
     "acquisitions_and_services.csv": (
         "Program Name",
@@ -192,48 +181,20 @@ def main(output_directory="."):
 
 
 def run_checks(output_dir):
-    invalid_gwos = find_invalid_ids(
-        EXTRACTED_DIR / GWO_ASSIGNMENT_FILENAME,
-        "GWO ID",
-        EXTRACTED_DIR / GWO_CROSSWALK_FILENAME,
-        "GWO ID",
+    invalid_pfas = find_invalid_ids(
+        EXTRACTED_DIR / PFA_ASSIGNMENT_FILENAME,
+        "PFA ID",
+        EXTRACTED_DIR / PFA_CROSSWALK_FILENAME,
+        "PFA code",
     )
-    if len(invalid_gwos) > 0:
-        write_single_column_csv(output_dir / "invalid_gwos.csv", "GWO ID", invalid_gwos)
-        invalid_gwo_message = (
-            f"BLOCKED:  {len(invalid_gwos)} GWOs are not in the GWO taxonomy"
+    if len(invalid_pfas) > 0:
+        write_single_column_csv(output_dir / "invalid_pfas.csv", "PFA ID", invalid_pfas)
+        invalid_pfa_message = (
+            f"BLOCKED:  {len(invalid_pfas)} PFAs are not in the PFA taxonomy"
         )
-        print(invalid_gwo_message)
-        append_blocker(output_dir, invalid_gwo_message)
+        print(invalid_pfa_message)
+        append_blocker(output_dir, invalid_pfa_message)
 
-    invalid_pons = find_invalid_ids(
-        EXTRACTED_DIR / PON_ASSIGNMENT_FILENAME,
-        "PON ID",
-        EXTRACTED_DIR / PON_CROSSWALK_FILENAME,
-        "PON ID",
-    )
-    if len(invalid_pons) > 0:
-        write_single_column_csv(output_dir / "invalid_pons.csv", "PON ID", invalid_pons)
-        invalid_pon_message = (
-            f"BLOCKED:  {len(invalid_pons)} PONs are not in the PON taxonomy"
-        )
-        print(invalid_pon_message)
-        append_blocker(output_dir, invalid_pon_message)
-
-    excessive_pon_assignments = find_excessive_pon_assignments(EXTRACTED_DIR)
-    if len(excessive_pon_assignments) > 0:
-        write_rows(
-            output_dir / "excessive_pon_assignments.csv",
-            ["aln", "pon"],
-            excessive_pon_assignments,
-        )
-        program_count = len({row[0] for row in excessive_pon_assignments})
-        excessive_pon_message = (
-            f"BLOCKED:  {program_count} programs have more than "
-            f"{MAX_PON_ASSIGNMENTS} PON assignments"
-        )
-        print(excessive_pon_message)
-        append_blocker(output_dir, excessive_pon_message)
 
     invalid_alns = find_invalid_alns(EXTRACTED_DIR)
     if len(invalid_alns) > 0:
@@ -437,10 +398,9 @@ def missing_last_completed_fiscal_year(extracted_dir):
 def find_invalid_alns(extracted_dir):
     valid_alns = load_valid_alns(extracted_dir)
     findings = []
-    for filename in (GWO_ASSIGNMENT_FILENAME, PON_ASSIGNMENT_FILENAME):
-        for aln in load_column_values(extracted_dir / filename, "al_#"):
-            if aln not in valid_alns:
-                findings.append([aln, filename])
+    for aln in load_column_values(extracted_dir / PFA_ASSIGNMENT_FILENAME, "Program_ID"):
+        if aln not in valid_alns:
+            findings.append([aln, PFA_ASSIGNMENT_FILENAME])
     with (extracted_dir / USASPENDING_HASHES_FILENAME).open(encoding="utf-8") as handle:
         hashes = json.load(handle)
     for aln in hashes:
@@ -460,31 +420,6 @@ def load_valid_alns(extracted_dir):
         load_column_values(extracted_dir / ACQUISITIONS_FILENAME, "Program ID")
     )
     return valid_alns
-
-
-def find_excessive_pon_assignments(extracted_dir):
-    path = extracted_dir / PON_ASSIGNMENT_FILENAME
-    header, rows = read_csv(path)
-    try:
-        aln_index = header.index("al_#")
-        pon_index = header.index("PON ID")
-    except ValueError:
-        raise ValueError(
-            f"No al_# or PON ID column found in {path.name}"
-        ) from None
-    assignments_by_aln = {}
-    for _row_number, row in rows:
-        aln = cell_at(row, aln_index)
-        pon = cell_at(row, pon_index)
-        if not aln or not pon:
-            continue
-        assignments_by_aln.setdefault(aln, []).append(pon)
-    findings = []
-    for aln in sorted(assignments_by_aln):
-        pons = assignments_by_aln[aln]
-        if len(pons) > MAX_PON_ASSIGNMENTS:
-            findings.extend([aln, pon] for pon in pons)
-    return findings
 
 
 def find_invalid_ids(assignment_path, assignment_column, taxonomy_path, taxonomy_column):

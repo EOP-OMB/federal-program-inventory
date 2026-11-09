@@ -13,9 +13,6 @@ categories:
 cfda: TC.004
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Expand Trade and Market Access
-  permalink: /gwo/GWO_B3
 headline_amount: 37140000000.0
 improper_payments:
 - agency: TREASURY
@@ -50,7 +47,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":30540000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":45190000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":36060000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":37140000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":34130000000.0}]'
 outlays: null
 permalink: /program/TC.004.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_B3
+  pfa: Trade and Market Access for American Businesses
 popular_name: ''
 program_type: tax_expenditure
 results: []

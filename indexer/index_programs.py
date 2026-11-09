@@ -49,7 +49,7 @@ def create_index_with_mapping(index_name):
             "index": {
                 "query": {
                     "default_field": ["title", "objectives", "cfda",
-                                      "popularName", "gwo", "pons"]
+                                      "popularName", "pfa"]
                 }
             },
             "analysis": {
@@ -127,11 +127,7 @@ def create_index_with_mapping(index_name):
                         }
                     }
                 },
-                "gwo": {
-                    "type": "keyword",
-                    "normalizer": "lowercase"
-                },
-                "pons": {
+                "pfa": {
                     "type": "keyword",
                     "normalizer": "lowercase"
                 },

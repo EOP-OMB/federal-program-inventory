@@ -744,46 +744,34 @@ class TestLoadCategoryAndSubCategory:
     @patch('pandas.read_csv')
     def test_load_category_and_sub_category(self, mock_read_csv):
         """
-        Test loading taxonomy categories and focus areas from GWO/PON
-        crosswalks and program GWO assignments.
+        Test loading taxonomy categories and focus areas from the PFA
+        crosswalk and program PFA assignments.
         """
-        gwo_crosswalk = pd.DataFrame({
-            'Category Code': ['ED', 'HE'],
+        pfa_crosswalk = pd.DataFrame({
             'Category': ['Education', 'Health'],
-            'FA Code': ['ED.FA1', 'HE.FA1'],
-            'Focus Area': ['Higher Education', 'Public Health'],
-            'GWO ID': ['GWO.ED1', 'GWO.HE1'],
-            'GWO': ['Improve Higher Education', 'Improve Public Health'],
-            'GWO Definition': ['Education GWO definition', 'Health GWO definition'],
+            'Category Code': ['ED', 'HE'],
+            'Sub-Category': ['Higher Education', 'Public Health'],
+            'Sub-Category Code': ['ED.FA1', 'HE.FA1'],
+            'Program Focus Area': ['Improve Higher Education', 'Improve Public Health'],
+            'Program Focus Area Definition': [
+                'Education PFA definition',
+                'Health PFA definition',
+            ],
+            'PFA code': ['GWO.ED1', 'GWO.HE1'],
         })
-        pon_crosswalk = pd.DataFrame({
-            'PON ID': ['PON.1'],
-            'Category Code': ['ED'],
-            'Category': ['Education'],
-            'FA Code': ['ED.FA1'],
-            'Focus Area': ['Higher Education'],
-            'PON2': ['Expand Access'],
-            'PON Definition': ['PON definition'],
-        })
-        gwo_assignment = pd.DataFrame({
-            'al_#': ['10.001', '10.002'],
-            'GWO ID': ['GWO.ED1', 'GWO.HE1'],
-        })
-        pon_assignment = pd.DataFrame({
-            'al_#': ['10.001'],
-            'PON ID': ['PON.1'],
+        pfa_assignment = pd.DataFrame({
+            'Program_ID': ['10.001', '10.002'],
+            'PFA ID': ['GWO.ED1', 'GWO.HE1'],
         })
         mock_read_csv.side_effect = [
-            gwo_crosswalk, pon_crosswalk, gwo_assignment, pon_assignment
+            pfa_crosswalk, pfa_assignment
         ]
 
         transform.load_taxonomy_and_assignments()
 
         read_paths = [call.args[0] for call in mock_read_csv.call_args_list]
-        assert any(path.endswith('Taxonomy_GWO_crosswalk.csv') for path in read_paths)
-        assert any(path.endswith('Taxonomy_PON_crosswalk.csv') for path in read_paths)
-        assert any(path.endswith('FPI_GWO_assignment.csv') for path in read_paths)
-        assert any(path.endswith('FPI_PON_assignment.csv') for path in read_paths)
+        assert any(path.endswith('Taxonomy_PFA_crosswalk.csv') for path in read_paths)
+        assert any(path.endswith('FPI_PFA_assignment.csv') for path in read_paths)
 
         sql_calls = [call.args[0] for call in transform.cur.execute.call_args_list if call.args]
         assert any('CREATE TABLE taxonomy_category' in sql for sql in sql_calls)
@@ -804,11 +792,11 @@ class TestLoadCategoryAndSubCategory:
         assert ['ED.FA1', 'Higher Education', 'ED'] in insert_params('taxonomy_focus_area')
         assert ['HE.FA1', 'Public Health', 'HE'] in insert_params('taxonomy_focus_area')
 
-        assert ['GWO.ED1', 'Improve Higher Education', 'Education GWO definition', 'ED.FA1'] in insert_params('gwo')
-        assert ['GWO.HE1', 'Improve Public Health', 'Health GWO definition', 'HE.FA1'] in insert_params('gwo')
+        assert ['GWO.ED1', 'Improve Higher Education', 'Education PFA definition', 'ED.FA1'] in insert_params('pfa')
+        assert ['GWO.HE1', 'Improve Public Health', 'Health PFA definition', 'HE.FA1'] in insert_params('pfa')
 
-        assert ['10.001', 'GWO.ED1'] in insert_params('program_to_gwo')
-        assert ['10.002', 'GWO.HE1'] in insert_params('program_to_gwo')
+        assert ['10.001', 'GWO.ED1'] in insert_params('program_to_pfa')
+        assert ['10.002', 'GWO.HE1'] in insert_params('program_to_pfa')
 
         transform.conn.commit.assert_called()
 
@@ -1098,25 +1086,22 @@ class TestAssignmentConstraints:
         connection.execute("PRAGMA foreign_keys = ON")
         connection.executescript("""
             CREATE TABLE program (id TEXT PRIMARY KEY);
-            CREATE TABLE gwo (id TEXT PRIMARY KEY);
-            CREATE TABLE pon (id TEXT PRIMARY KEY);
+            CREATE TABLE pfa (id TEXT PRIMARY KEY);
             INSERT INTO program VALUES ('10.001');
-            INSERT INTO gwo VALUES ('GWO.ND3');
-            INSERT INTO pon VALUES ('PON.N50');
+            INSERT INTO pfa VALUES ('GWO.ND3');
         """)
-        connection.execute(transform.PROGRAM_TO_GWO_CREATE_TABLE_SQL)
-        connection.execute(transform.PROGRAM_TO_PON_CREATE_TABLE_SQL)
+        connection.execute(transform.PROGRAM_TO_PFA_CREATE_TABLE_SQL)
         return connection
 
     def test_duplicate_assignment_is_not_stored(self):
         connection = self._connection()
         connection.execute(
-            transform.PROGRAM_TO_GWO_INSERT_TABLE_SQL, ("10.001", "GWO.ND3")
+            transform.PROGRAM_TO_PFA_INSERT_TABLE_SQL, ("10.001", "GWO.ND3")
         )
         connection.execute(
-            transform.PROGRAM_TO_GWO_INSERT_TABLE_SQL, ("10.001", "GWO.ND3")
+            transform.PROGRAM_TO_PFA_INSERT_TABLE_SQL, ("10.001", "GWO.ND3")
         )
-        stored = connection.execute("SELECT COUNT(*) FROM program_to_gwo").fetchone()
+        stored = connection.execute("SELECT COUNT(*) FROM program_to_pfa").fetchone()
         assert stored[0] == 1
         connection.close()
 
@@ -1124,10 +1109,6 @@ class TestAssignmentConstraints:
         connection = self._connection()
         with pytest.raises(sqlite3.IntegrityError):
             connection.execute(
-                transform.PROGRAM_TO_GWO_INSERT_TABLE_SQL, ("missing", "GWO.ND3")
-            )
-        with pytest.raises(sqlite3.IntegrityError):
-            connection.execute(
-                transform.PROGRAM_TO_PON_INSERT_TABLE_SQL, ("10.001", "PON.MISSING")
+                transform.PROGRAM_TO_PFA_INSERT_TABLE_SQL, ("missing", "GWO.ND3")
             )
         connection.close()

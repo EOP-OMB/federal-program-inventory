@@ -3,8 +3,8 @@ describe('FPI Taxonomy snapshots', () => {
 
   const waitForTaxonomy = () => {
     cy.get('#taxonomy-filter-panels', { timeout: 10000 }).should('be.visible');
-    cy.get('#taxonomy-gwo-table', { timeout: 10000 }).should('be.visible');
-    cy.get('#taxonomy-gwo-table-body tr', { timeout: 10000 }).should('have.length.greaterThan', 0);
+    cy.get('#taxonomy-pfa-table', { timeout: 10000 }).should('be.visible');
+    cy.get('#taxonomy-pfa-table-body tr', { timeout: 10000 }).should('have.length.greaterThan', 0);
   };
 
   it('captures a full taxonomy snapshot', () => {

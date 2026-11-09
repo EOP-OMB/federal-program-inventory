@@ -24,17 +24,13 @@ UNMAPPED_PROGRAMS_SQL = """
         p.name AS program_name,
         p.program_type AS program_type,
         a.agency_name AS agency_name,
-        CASE WHEN g.program_id IS NULL THEN 'yes' ELSE 'no' END AS missing_gwo,
-        CASE WHEN n.program_id IS NULL THEN 'yes' ELSE 'no' END AS missing_pon
+        CASE WHEN g.program_id IS NULL THEN 'yes' ELSE 'no' END AS missing_pfa
     FROM program p
     LEFT JOIN agency a ON p.agency_id = a.id
     LEFT JOIN (
-        SELECT DISTINCT program_id FROM program_to_gwo
+        SELECT DISTINCT program_id FROM program_to_pfa
     ) g ON g.program_id = p.id
-    LEFT JOIN (
-        SELECT DISTINCT program_id FROM program_to_pon
-    ) n ON n.program_id = p.id
-    WHERE g.program_id IS NULL OR n.program_id IS NULL
+    WHERE g.program_id IS NULL
     ORDER BY p.program_type, p.id
 """
 
@@ -86,7 +82,7 @@ def transformed_database_path():
 
 
 def report_unmapped_programs(connection, output_path):
-    """Write programs that have no GWO assignment, no PON assignment, or neither.
+    """Write programs that have no PFA assignment.
 
     This is a QA report. It does not raise, so a missing table or write error
     does not stop transform or load.

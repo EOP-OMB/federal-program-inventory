@@ -13,9 +13,6 @@ categories:
 cfda: TC.115
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Bridge Financial Gaps with Transitional Income Assistance
-  permalink: /gwo/GWO_N3
 headline_amount: 5140000000.0
 improper_payments:
 - agency: TREASURY
@@ -43,7 +40,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":80000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":100000000.0},{"x":"2024","outlays":0.0,"forgone_revenue":5910000000.0},{"x":"2025","outlays":0.0,"forgone_revenue":5140000000.0},{"x":"2026","outlays":0.0,"forgone_revenue":3880000000.0}]'
 outlays: null
 permalink: /program/TC.115.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_N3
+  pfa: Income Assistance
 popular_name: ''
 program_type: tax_expenditure
 results: []

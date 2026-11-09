@@ -47,7 +47,7 @@ permalink: /
   <div class="grid-container">
     <div class="grid-row grid-gap-4">
       <div class="grid-col-12 desktop:grid-col-3 text-center">
-        <p class="margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' -}}</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.programs_count | default: 'N/A' | approximate_count: 50 -}}</p>
         <p class="font-body-md">Programs</p>
       </div>
       <div class="grid-col-12 desktop:grid-col-3 text-center custom-tooltip-container">
@@ -70,12 +70,12 @@ permalink: /
         </p>
       </div>
       <div class="grid-col-12 desktop:grid-col-3 text-center">
-        <p class="margin-bottom-1 homepage-headline-number">{{ page.agencies_count -}}</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.agencies_count | approximate_count: 50 -}}</p>
         <p class="font-body-md">Agencies</p>
       </div>
       <div class="grid-col-12 desktop:grid-col-3 text-center">
-        <p class="margin-bottom-1 homepage-headline-number">{{ page.outcomes_count -}}</p>
-        <p class="font-body-md">Outcomes</p>
+        <p class="margin-bottom-1 homepage-headline-number">{{ page.pfa_count | approximate_count: 100 -}}</p>
+        <p class="font-body-md">Focus Areas</p>
       </div>
     </div>
   </div>
@@ -87,7 +87,7 @@ permalink: /
     <div class="grid-row flex-justify-center margin-bottom-5">
       <div class="grid-col-12">
         <h2 class="font-heading-2xl homepage-title">
-          A clear view of Federal programs&mdash;their funding, objectives, and outcomes
+          A clear view of Federal programs&mdash;their funding, focus area, and purpose
         </h2>
       </div>
     </div>
@@ -106,7 +106,7 @@ permalink: /
             Find programs
           </h3>
           <p class="font-body-sm margin-bottom-4">
-            Find programs by keyword, agency, objective, outcomes, and more
+            Find programs by keyword, agency, category, focus area, and more
           </p>
           <a href="/search" class="usa-link">
             Program search →
@@ -127,7 +127,7 @@ permalink: /
             Explore spending
           </h3>
           <p class="font-body-sm margin-bottom-4">
-            See where funding is concentrated across objectives and program types
+            See where funding is concentrated across focus areas and program types
           </p>
           <a href="/category" class="usa-link">
             Select trend →
@@ -194,7 +194,7 @@ permalink: /
             02 &mdash; Standardize and categorize
           </h3>
           <p class="font-body-sm">
-            Programs are organized across agencies, categories, objectives, and more so they can be easily compared
+            Programs are organized across agencies, categories, focus area, and more so they can be easily compared
           </p>
         </div>
         
@@ -204,7 +204,7 @@ permalink: /
             03 &mdash; Explore and act
           </h3>
           <p class="font-body-sm">
-            Users can filter, visualize trends, and access program insights&mdash;from funding levels to target outcomes&mdash;supporting research, oversight, and informed decision-making
+            Users can filter, visualize trends, and access program insights&mdash;from funding levels to program purpose, objectives, and results&mdash;supporting research, oversight, and informed decision-making
           </p>
         </div>
       </div>

@@ -21,7 +21,6 @@ objective: ''
 obligations: '[]'
 other_program_spending: null
 outlays: '[]'
-pons: []
 program_type: assistance_listing
 results: []
 rules_regulations: ''

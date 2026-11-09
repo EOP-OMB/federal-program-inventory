@@ -15,8 +15,8 @@ categories:
 - Health - Healthcare Access
 cfda: '99.001'
 fiscal_year: '2025'
-gwo:
-  gwo: Provide Scenario Healthcare
+pfa:
+  pfa: Provide Scenario Healthcare
   permalink: /test/gwo_treemap.html
 headline_amount: 1000.0
 improper_payments: []
@@ -31,9 +31,6 @@ objective: Scenario objective used to confirm the overview description renders.
 obligations: '[{"x":"2024","sam_estimate":0.0,"sam_actual":1000.0,"usa_spending_actual":1000.0},{"x":"2025","sam_estimate":0.0,"sam_actual":0.0,"usa_spending_actual":1000.0}]'
 other_program_spending: null
 outlays: '[{"x":"2024","outlay":1000.0,"obligation":1000.0,"expenditure":1000.0,"forgone_revenue":0.0},{"x":"2025","outlay":500.0,"obligation":1000.0,"expenditure":1000.0,"forgone_revenue":0.0}]'
-pons:
-- permalink: /test/pon_treemap.html
-  pon: Increase Scenario Health Coverage
 popular_name: Scenario Program
 program_type: assistance_listing
 results:

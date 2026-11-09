@@ -65,12 +65,4 @@ describe('Tag functionality and visual regression', () => {
   it('Tags search subcategory on gwo page', () => {
     tag_test('test/gwo_tags.html', true);
   });
-
-  it('Tags search category on pon page', () => {
-    tag_test('test/pon_tags.html', false);
-  });
-
-  it('Tags search subcategory on pon page', () => {
-    tag_test('test/pon_tags.html', true);
-  });
 });

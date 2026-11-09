@@ -13,9 +13,6 @@ categories:
 cfda: TC.022
 fiscal_year: '2025'
 grants_url: null
-gwo:
-  gwo: Increase Energy Reliability and Stability (Infrastructure)
-  permalink: /gwo/GWO_I4
 headline_amount: 9650000000.0
 improper_payments:
 - agency: TREASURY
@@ -78,7 +75,9 @@ obligations: null
 other_program_spending: '[{"x":"2015","outlays":0.0,"forgone_revenue":0.0},{"x":"2016","outlays":0.0,"forgone_revenue":0.0},{"x":"2017","outlays":0.0,"forgone_revenue":0.0},{"x":"2018","outlays":0.0,"forgone_revenue":0.0},{"x":"2019","outlays":0.0,"forgone_revenue":0.0},{"x":"2020","outlays":0.0,"forgone_revenue":0.0},{"x":"2021","outlays":0.0,"forgone_revenue":0.0},{"x":"2022","outlays":0.0,"forgone_revenue":4160000000.0},{"x":"2023","outlays":0.0,"forgone_revenue":7450000000.0},{"x":"2024","outlays":370000000.0,"forgone_revenue":7220000000.0},{"x":"2025","outlays":380000000.0,"forgone_revenue":9270000000.0},{"x":"2026","outlays":550000000.0,"forgone_revenue":13030000000.0}]'
 outlays: null
 permalink: /program/TC.022.html
-pons: []
+pfa:
+  permalink: /pfa/GWO_I4
+  pfa: Energy Grid Reliability (Infrastructure)
 popular_name: ''
 program_type: tax_expenditure
 results: []

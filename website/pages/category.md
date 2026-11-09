@@ -2,14 +2,14 @@
 categories:
 - permalink: /category/agricultural
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   title: Business and Commerce
-- permalink: /category/community-development
-  title: Community Development
+- permalink: /category/community-and-regional-development
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   title: Disaster Prevention and Relief
 - permalink: /category/education
@@ -45,11 +45,18 @@ categories:
 categories_hierarchy:
 - permalink: /category/agricultural
   subcategories:
-  - permalink: /category/agricultural/agricultural-resources-and-services
-    title: Agricultural Resources and Services
+  - permalink: /category/agricultural/agricultural-research-and-services
+    title: Agricultural Research and Services
   - permalink: /category/agricultural/farm-income-stabilization
     title: Farm Income Stabilization
   title: Agricultural
+- permalink: /category/arts-and-humanities
+  subcategories:
+  - permalink: /category/arts-and-humanities/preservation
+    title: Preservation
+  - permalink: /category/arts-and-humanities/promotion-and-appreciation
+    title: Promotion and Appreciation
+  title: Arts and Humanities
 - permalink: /category/business-and-commerce
   subcategories:
   - permalink: /category/business-and-commerce/business-development
@@ -57,27 +64,18 @@ categories_hierarchy:
   - permalink: /category/business-and-commerce/economic-development
     title: Economic Development
   title: Business and Commerce
-- permalink: /category/community-development
+- permalink: /category/community-and-regional-development
   subcategories:
-  - permalink: /category/community-development/community--area--and-regional-development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-development
     title: Community, Area, and Regional Development
-  title: Community Development
+  - permalink: /category/community-and-regional-development/community--area--and-regional-infrastructure
+    title: Community, Area, and Regional Infrastructure
+  title: Community and Regional Development
 - permalink: /category/consumer-protection
   subcategories:
-  - permalink: /category/consumer-protection/consumer-and-occupational-health-and-safety
-    title: Consumer and Occupational Health and Safety
+  - permalink: /category/consumer-protection/consumer-safety
+    title: Consumer Safety
   title: Consumer Protection
-- permalink: /category/cultural-affairs
-  subcategories:
-  - permalink: /category/cultural-affairs/access-and-appreciation
-    title: Access and Appreciation
-  - permalink: /category/cultural-affairs/artistic-talent-development
-    title: Artistic Talent Development
-  - permalink: /category/cultural-affairs/cultural-heritage-and-traditions
-    title: Cultural Heritage and Traditions
-  - permalink: /category/cultural-affairs/cultural-institutions
-    title: Cultural Institutions
-  title: Cultural Affairs
 - permalink: /category/disaster-prevention-and-relief
   subcategories:
   - permalink: /category/disaster-prevention-and-relief/disaster-readiness--response--and-relief
@@ -98,6 +96,8 @@ categories_hierarchy:
   title: Education
 - permalink: /category/employment-and-labor
   subcategories:
+  - permalink: /category/employment-and-labor/occupational--health-and-safety
+    title: Occupational  Health and Safety
   - permalink: /category/employment-and-labor/workforce-development
     title: Workforce Development
   title: Employment and Labor
@@ -180,8 +180,10 @@ categories_hierarchy:
   title: Law, Justice, and Legal Services
 - permalink: /category/national-defense
   subcategories:
-  - permalink: /category/national-defense/defense-capability
-    title: Defense Capability
+  - permalink: /category/national-defense/defense-science-and-technology
+    title: Defense Science and Technology
+  - permalink: /category/national-defense/military-personnel-and-readiness
+    title: Military Personnel and Readiness
   title: National Defense
 - permalink: /category/natural-resources
   subcategories:
@@ -210,19 +212,19 @@ categories_hierarchy:
   title: Transportation
 categories_json: '[{"title":"Income Security and Social Services","total_num_programs":114,"total_obs":3407746398099.86,"permalink":"/category/income-security-and-social-services"},{"title":"Health","total_num_programs":604,"total_obs":2068465383719.0005,"permalink":"/category/health"},{"title":"General
   Government","total_num_programs":17,"total_obs":1215613829754.0,"permalink":"/category/general-government"},{"title":"Business
-  and Commerce","total_num_programs":170,"total_obs":185535324673.06,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":179,"total_obs":157399717061.69998,"permalink":"/category/education"},{"title":"Food
+  and Commerce","total_num_programs":170,"total_obs":185535324673.06,"permalink":"/category/business-and-commerce"},{"title":"Education","total_num_programs":211,"total_obs":157451938049.45996,"permalink":"/category/education"},{"title":"Food
   and Nutrition","total_num_programs":59,"total_obs":135372188885.25998,"permalink":"/category/food-and-nutrition"},{"title":"National
   Defense","total_num_programs":540,"total_obs":130838207727.86005,"permalink":"/category/national-defense"},{"title":"Transportation","total_num_programs":139,"total_obs":124748237283.81001,"permalink":"/category/transportation"},{"title":"Housing","total_num_programs":120,"total_obs":96287236147.64,"permalink":"/category/housing"},{"title":"Energy","total_num_programs":78,"total_obs":89089067296.65,"permalink":"/category/energy"},{"title":"Community
-  Development","total_num_programs":91,"total_obs":84851563899.31,"permalink":"/category/community-development"},{"title":"Disaster
+  and Regional Development","total_num_programs":91,"total_obs":84851563899.31,"permalink":"/category/community-and-regional-development"},{"title":"Disaster
   Prevention and Relief","total_num_programs":120,"total_obs":46104022278.78999,"permalink":"/category/disaster-prevention-and-relief"},{"title":"Agricultural","total_num_programs":133,"total_obs":24070039272.67999,"permalink":"/category/agricultural"},{"title":"Environmental
   Quality","total_num_programs":149,"total_obs":21417992837.52,"permalink":"/category/environmental-quality"},{"title":"Employment
-  and Labor","total_num_programs":160,"total_obs":12273208401.280003,"permalink":"/category/employment-and-labor"},{"title":"Natural
+  and Labor","total_num_programs":139,"total_obs":12452116010.790003,"permalink":"/category/employment-and-labor"},{"title":"Natural
   Resources","total_num_programs":280,"total_obs":12119841348.909996,"permalink":"/category/natural-resources"},{"title":"International
   Affairs","total_num_programs":104,"total_obs":10716962134.130001,"permalink":"/category/international-affairs"},{"title":"Science
   and Technology","total_num_programs":74,"total_obs":10704263309.84,"permalink":"/category/science-and-technology"},{"title":"Law,
-  Justice, and Legal Services","total_num_programs":247,"total_obs":9490426611.369999,"permalink":"/category/law--justice--and-legal-services"},{"title":"Cultural
-  Affairs","total_num_programs":63,"total_obs":1691612572.2299998,"permalink":"/category/cultural-affairs"},{"title":"Consumer
-  Protection","total_num_programs":20,"total_obs":317744024.07,"permalink":"/category/consumer-protection"}]'
+  Justice, and Legal Services","total_num_programs":247,"total_obs":9490426611.369999,"permalink":"/category/law--justice--and-legal-services"},{"title":"Arts
+  and Humanities","total_num_programs":63,"total_obs":1691612572.2299998,"permalink":"/category/arts-and-humanities"},{"title":"Consumer
+  Protection","total_num_programs":9,"total_obs":86615426.8,"permalink":"/category/consumer-protection"}]'
 fiscal_year: '2025'
 layout: category-index
 obligations_by_type:
