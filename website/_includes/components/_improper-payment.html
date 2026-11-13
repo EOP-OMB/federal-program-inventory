@@ -66,7 +66,7 @@
           </span>
           {% else %}
           <span class="usa-tag ip-box">
-            <span id="improper-payments-percent">Rate: {{ page.improper_payments_percent | improper_payment_rate: page.improper_payments_total | escape }}</span>%  |  
+            <span id="improper-payments-percent">Rate: {{ page.improper_payments_percent | improper_payment_rate: page.improper_payments_total | escape }}</span>  |  
             <span> Amount: </span><span id="improper-payments-total" data-dollar-amount="{{ page.improper_payments_total | default: 0 }}">
               {{ page.improper_payments_total | default: 0 | prepend: '$' | replace: '$0', '$0.00' }}
             </span>
