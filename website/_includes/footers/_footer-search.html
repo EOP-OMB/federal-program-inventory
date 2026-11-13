@@ -1676,7 +1676,7 @@ console.log("DEBUG: Sending request body:", requestBody);
       }
     }
 
-    // Update Government-wide Objectives count
+    // Update Program Focus Areas count
     const pfaButton = document.querySelector(
       '[data-content-id="pfa-section"]'
     );
@@ -1688,7 +1688,7 @@ console.log("DEBUG: Sending request body:", requestBody);
 
       const spanElement = pfaButton.querySelector("span");
       if (spanElement) {
-        const baseText = "Government-wide objectives";
+        const baseText = "Program focus areas";
         spanElement.textContent =
           count > 0 ? `${baseText} (${count})` : baseText;
       }
